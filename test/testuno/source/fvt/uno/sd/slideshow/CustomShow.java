@@ -91,16 +91,16 @@ public class CustomShow {
 
 	    //add text shape to each page
 		for (int i = 0; i < aNameArray.length; i++) {
-			XDrawPage xDrawPage = (XDrawPage) UnoRuntime.queryInterface(
+			XDrawPage xDrawPage = UnoRuntime.queryInterface(
 					XDrawPage.class, drawpages.getByIndex(i));
-			XNamed xPageName = (XNamed) UnoRuntime.queryInterface(XNamed.class,
+			XNamed xPageName = UnoRuntime.queryInterface(XNamed.class,
 					xDrawPage);
 			xPageName.setName(aNameArray[i]);
 
 			XShape xTextObj = ShapeUtil.createShape(impressDocument, new Point(
 					10000, 9000), new Size(10000, 5000),
 					"com.sun.star.drawing.TextShape");
-			XShapes xShapes = (XShapes) UnoRuntime.queryInterface(
+			XShapes xShapes = UnoRuntime.queryInterface(
 					XShapes.class, xDrawPage);
 			xShapes.add(xTextObj);
 			ShapeUtil.addPortion(xTextObj, aNameArray[i], true);
@@ -127,7 +127,7 @@ public class CustomShow {
 		//instantiate an IndexContainer that will take a list of draw pages for
 		//the first custom show
 		xObj = xFactory.createInstance();
-		xContainer = (XIndexContainer) UnoRuntime.queryInterface(
+		xContainer = UnoRuntime.queryInterface(
 				XIndexContainer.class, xObj);
 		for (int i = 3; i < 5; i++)
 			xContainer.insertByIndex(xContainer.getCount(),
@@ -138,7 +138,7 @@ public class CustomShow {
 		//instantiate an IndexContainer that will take a list of draw page for
 		//the second custom show
 		xObj = xFactory.createInstance();
-		xContainer = (XIndexContainer) UnoRuntime.queryInterface(
+		xContainer = UnoRuntime.queryInterface(
 				XIndexContainer.class, xObj);
 		for (int i = 1; i < 5; i++)
 			xContainer.insertByIndex(xContainer.getCount(),
@@ -150,7 +150,7 @@ public class CustomShow {
 		XPresentationSupplier xPresSupplier = (XPresentationSupplier) UnoRuntime
 				.queryInterface(XPresentationSupplier.class, impressDocument);
 		XPresentation xPresentation = xPresSupplier.getPresentation();
-		XPropertySet xPresPropSet = (XPropertySet) UnoRuntime.queryInterface(
+		XPropertySet xPresPropSet = UnoRuntime.queryInterface(
 				XPropertySet.class, xPresentation);
 		xPresPropSet.setPropertyValue("CustomShow", "Part");
 
@@ -166,13 +166,13 @@ public class CustomShow {
 	 * @throws Exception
 	 */
 	public void createDocumentAndSlide() throws Exception {
-		impressDocument = (XComponent) UnoRuntime.queryInterface(
+		impressDocument = UnoRuntime.queryInterface(
 				XComponent.class, unoApp.newDocument("simpress"));
-		drawsupplier = (XDrawPagesSupplier) UnoRuntime.queryInterface(
+		drawsupplier = UnoRuntime.queryInterface(
 				XDrawPagesSupplier.class, impressDocument);
 		drawpages = drawsupplier.getDrawPages();
 
-		sdDocument = (XPresentationSupplier) UnoRuntime.queryInterface(
+		sdDocument = UnoRuntime.queryInterface(
 				XPresentationSupplier.class, impressDocument);
 		pre = sdDocument.getPresentation();
 	}
@@ -187,11 +187,11 @@ public class CustomShow {
 	public void saveAndLoadSlide() throws Exception {
 		reLoadFile = saveAndReloadDoc(impressDocument,
 				"StarOffice XML (Impress)", "odp");
-		drawsupplier = (XDrawPagesSupplier) UnoRuntime.queryInterface(
+		drawsupplier = UnoRuntime.queryInterface(
 				XDrawPagesSupplier.class, reLoadFile);
 		drawpages = drawsupplier.getDrawPages();
 
-		sdDocument = (XPresentationSupplier) UnoRuntime.queryInterface(
+		sdDocument = UnoRuntime.queryInterface(
 				XPresentationSupplier.class, reLoadFile);
 		pre = sdDocument.getPresentation();
 	}
@@ -215,11 +215,11 @@ public class CustomShow {
 		aStoreProperties[0].Value = true;
 		aStoreProperties[1].Name = "FilterName";
 		aStoreProperties[1].Value = sFilter;
-		XStorable xStorable = (XStorable) UnoRuntime.queryInterface(
+		XStorable xStorable = UnoRuntime.queryInterface(
 				XStorable.class, presentationDocument);
 		xStorable.storeToURL(FileUtil.getUrl(filePath), aStoreProperties);
 
-		return (XComponent) UnoRuntime.queryInterface(XComponent.class,
+		return UnoRuntime.queryInterface(XComponent.class,
 				unoApp.loadDocument(filePath));
 	}
 }

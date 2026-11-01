@@ -1610,6 +1610,14 @@ void lcl_DrawGraphic( const SvxBrushItem& rBrush, OutputDevice *pOut,
 	//Hier kein Link, wir wollen die Grafik synchron laden!
     ((SvxBrushItem&)rBrush).SetDoneLink( Link() );
 	GraphicObject *pGrf = (GraphicObject*)rBrush.GetGraphicObject();
+	if ( !pGrf )
+	{
+		// The graphic is missing, or loading it was not permitted; there is
+		// nothing to draw and nothing to draw a background behind.
+		if ( bNotInside )
+			pOut->Pop();
+		return;
+	}
 
     /// OD 17.10.2002 #103876# - outsourcing drawing of background with a background color.
     ::lcl_DrawGraphicBackgrd( rBrush, pOut, aAlignedGrfRect, *pGrf, bGrfNum, bBackgrdAlreadyDrawn );
@@ -1829,6 +1837,14 @@ void MA_FASTCALL DrawGraphic(
             // before drawing tiled graphic in loop
             // determine graphic object
             GraphicObject* pGraphicObj = const_cast< GraphicObject* >(pBrush->GetGraphicObject());
+            if ( !pGraphicObj )
+            {
+                // Nothing to tile: the graphic is missing or was not permitted
+                // to load. Leave the background colour to the code below, as
+                // for a brush with no graphic at all.
+                bDraw = sal_False;
+                break;
+            }
             // calculate aligned paint rectangle
             SwRect aAlignedPaintRect = rOut;
             ::SwAlignRect( aAlignedPaintRect, &rSh );
@@ -1918,21 +1934,27 @@ void MA_FASTCALL DrawGraphic(
              (ePos != GPOS_TILED) && (ePos != GPOS_AREA)
            )
         {
+            // A brush can name a graphic that is not there to load -- the file
+            // is missing, or loading it was not permitted -- in which case
+            // there is nothing to ask about its transparency.
             GraphicObject *pGrf = (GraphicObject*)pBrush->GetGraphicObject();
-            if ( bConsiderBackgroundTransparency )
+            if ( pGrf )
             {
-                GraphicAttr pGrfAttr = pGrf->GetAttr();
-                if ( (pGrfAttr.GetTransparency() != 0) &&
-                     ( pBrush && (pBrush->GetColor() == COL_TRANSPARENT) )
-                   )
+                if ( bConsiderBackgroundTransparency )
                 {
-                    bTransparentGrfWithNoFillBackgrd = true;
-                    nGrfTransparency = pGrfAttr.GetTransparency();
+                    GraphicAttr pGrfAttr = pGrf->GetAttr();
+                    if ( (pGrfAttr.GetTransparency() != 0) &&
+                         ( pBrush && (pBrush->GetColor() == COL_TRANSPARENT) )
+                       )
+                    {
+                        bTransparentGrfWithNoFillBackgrd = true;
+                        nGrfTransparency = pGrfAttr.GetTransparency();
+                    }
                 }
-            }
-            if ( pGrf->IsTransparent() )
-            {
-                bGrfIsTransparent = true;
+                if ( pGrf->IsTransparent() )
+                {
+                    bGrfIsTransparent = true;
+                }
             }
         }
 

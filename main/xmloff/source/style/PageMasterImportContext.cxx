@@ -36,6 +36,8 @@
 //UUUU
 #include <xmlsdtypes.hxx>
 #include <com/sun/star/beans/XPropertySetInfo.hpp>
+#include <com/sun/star/container/XNameContainer.hpp>
+#include <com/sun/star/drawing/FillStyle.hpp>
 #include <xmloff/xmlerror.hxx>
 
 using namespace ::com::sun::star;
@@ -318,6 +320,39 @@ void PageStyleContext::FillPropertySet(const uno::Reference<beans::XPropertySet 
     }
 }
 
+void PageStyleContext::FillPropertySetWithoutOldPageFill( const uno::Reference< beans::XPropertySet > & rPropSet )
+{
+    static ::rtl::OUString s_FillStyle(RTL_CONSTASCII_USTRINGPARAM("FillStyle"));
+
+    // a fill of the page layout itself already switches its old fill definitions off
+    if( doNewDrawingLayerFillStyleDefinitionsExist( s_FillStyle ) )
+    {
+        FillPropertySet( rPropSet );
+        return;
+    }
+
+    // switched off for this call only: the page layout may be shared with master pages without a drawing page fill
+    ::std::vector< XMLPropertyState >& rProperties = GetProperties();
+    ::std::vector< ::std::pair< size_t, sal_Int32 > > aSwitchedOff;
+    UniReference < SvXMLImportPropertyMapper > xImpPrMap = GetStyles()->GetImportPropertyMapper( GetFamily() );
+    if( xImpPrMap.is() )
+    {
+        const OldFillStyleDefinitionSet& rOld = getStandardSet();
+        for( size_t i = 0; i < rProperties.size(); ++i )
+        {
+            if( rProperties[i].mnIndex != -1 &&
+                rOld.find( xImpPrMap->getPropertySetMapper()->GetEntryAPIName( rProperties[i].mnIndex ) ) != rOld.end() )
+            {
+                aSwitchedOff.push_back( ::std::make_pair( i, rProperties[i].mnIndex ) );
+                rProperties[i].mnIndex = -1;
+            }
+        }
+    }
+    FillPropertySet( rPropSet );
+    for( size_t i = 0; i < aSwitchedOff.size(); ++i )
+        rProperties[aSwitchedOff[i].first].mnIndex = aSwitchedOff[i].second;
+}
+
 // text grid enhancement for better CJK support
 //set default page layout style
 void PageStyleContext::SetDefaults( )
@@ -331,6 +366,143 @@ void PageStyleContext::SetDefaults( )
 	    if ( xProperties.is() )
 	    	FillPropertySet ( xProperties );
 	}
+}
+
+TYPEINIT1( DrawingPageStyleContext, XMLPropStyleContext );
+
+DrawingPageStyleContext::DrawingPageStyleContext( SvXMLImport& rImport,
+        sal_uInt16 nPrfx, const rtl::OUString& rLName,
+        const uno::Reference< xml::sax::XAttributeList > & xAttrList,
+        SvXMLStylesContext& rStyles ) :
+    XMLPropStyleContext( rImport, nPrfx, rLName, xAttrList, rStyles, XML_STYLE_FAMILY_SD_DRAWINGPAGE_ID ),
+    mbChecked( false ),
+    mbUsable( false )
+{
+}
+
+DrawingPageStyleContext::~DrawingPageStyleContext()
+{
+}
+
+static bool lcl_FillNameExists( SvXMLImport& rImport, const Reference< container::XNameContainer >& rTable,
+                                sal_uInt16 nFamily, const rtl::OUString& rName )
+{
+    return rName.getLength() && rTable.is() && rTable->hasByName( rImport.GetStyleDisplayName( nFamily, rName ) );
+}
+
+// An incomplete fill is ignored as a whole, so the fill of the page layout stays.
+void DrawingPageStyleContext::CheckFill()
+{
+    UniReference < SvXMLImportPropertyMapper > xImpPrMap = GetStyles()->GetImportPropertyMapper( GetFamily() );
+    if( !mbChecked && xImpPrMap.is() )
+    {
+        mbChecked = true;
+        const UniReference< XMLPropertySetMapper >& rMapper = xImpPrMap->getPropertySetMapper();
+        ::std::vector< XMLPropertyState >& rProperties = GetProperties();
+        drawing::FillStyle eStyle = drawing::FillStyle_NONE;
+        bool bColor = false;
+        rtl::OUString aGradient, aHatch, aBitmap, aTrans;
+        XMLPropertyState* pTrans = NULL;
+
+        for( ::std::vector< XMLPropertyState >::iterator a = rProperties.begin(); a != rProperties.end(); ++a )
+        {
+            if( a->mnIndex == -1 )
+                continue;
+            const rtl::OUString& rName = rMapper->GetEntryAPIName( a->mnIndex );
+            if( rName.equalsAscii( "FillStyle" ) )
+            {
+                sal_Int32 nValue = 0;
+                if( !( a->maValue >>= eStyle ) && ( a->maValue >>= nValue ) )
+                    eStyle = static_cast< drawing::FillStyle >( nValue );
+            }
+            else if( rName.equalsAscii( "FillColor" ) )
+                bColor = true;
+            else if( rName.equalsAscii( "FillGradientName" ) )
+                a->maValue >>= aGradient;
+            else if( rName.equalsAscii( "FillHatchName" ) )
+                a->maValue >>= aHatch;
+            else if( rName.equalsAscii( "FillBitmapName" ) )
+                a->maValue >>= aBitmap;
+            else if( rName.equalsAscii( "FillTransparenceGradientName" ) )
+            {
+                a->maValue >>= aTrans;
+                pTrans = &(*a);
+            }
+        }
+
+        SvXMLImport& rImport = GetImport();
+        switch( eStyle )
+        {
+            case drawing::FillStyle_SOLID:
+                mbUsable = bColor;
+                break;
+            case drawing::FillStyle_GRADIENT:
+                mbUsable = lcl_FillNameExists( rImport, rImport.GetGradientHelper(), XML_STYLE_FAMILY_SD_GRADIENT_ID, aGradient );
+                break;
+            case drawing::FillStyle_HATCH:
+                mbUsable = lcl_FillNameExists( rImport, rImport.GetHatchHelper(), XML_STYLE_FAMILY_SD_HATCH_ID, aHatch );
+                break;
+            case drawing::FillStyle_BITMAP:
+                mbUsable = lcl_FillNameExists( rImport, rImport.GetBitmapHelper(), XML_STYLE_FAMILY_SD_FILL_IMAGE_ID, aBitmap );
+                break;
+            default:
+                break;
+        }
+
+        if( mbUsable && pTrans && !lcl_FillNameExists( rImport, rImport.GetTransGradientHelper(), XML_STYLE_FAMILY_SD_GRADIENT_ID, aTrans ) )
+            pTrans->mnIndex = -1;
+    }
+}
+
+void DrawingPageStyleContext::FillPropertySet( const uno::Reference< beans::XPropertySet > & rPropSet )
+{
+    UniReference < SvXMLImportPropertyMapper > xImpPrMap = GetStyles()->GetImportPropertyMapper( GetFamily() );
+    if( !xImpPrMap.is() || !HasFill() )
+        return;
+    const UniReference< XMLPropertySetMapper >& rMapper = xImpPrMap->getPropertySetMapper();
+    ::std::vector< XMLPropertyState >& rProperties = GetProperties();
+
+    // as in PageStyleContext::FillPropertySet: names set in the bulk call left gradient and hatch at their defaults
+    struct _ContextID_Index_Pair aContextIDs[] =
+    {
+        { CTF_PM_FILLGRADIENTNAME, -1 },
+        { CTF_PM_FILLTRANSNAME, -1 },
+        { CTF_PM_FILLHATCHNAME, -1 },
+        { CTF_PM_FILLBITMAPNAME, -1 },
+        { -1, -1 }
+    };
+    static const sal_uInt16 aFamilies[] =
+    {
+        XML_STYLE_FAMILY_SD_GRADIENT_ID,
+        XML_STYLE_FAMILY_SD_GRADIENT_ID,
+        XML_STYLE_FAMILY_SD_HATCH_ID,
+        XML_STYLE_FAMILY_SD_FILL_IMAGE_ID
+    };
+
+    xImpPrMap->FillPropertySet( rProperties, rPropSet, aContextIDs );
+
+    Reference< XPropertySetInfo > xInfo( rPropSet->getPropertySetInfo() );
+    for( sal_uInt16 i = 0; aContextIDs[i].nContextID != -1; i++ )
+    {
+        if( aContextIDs[i].nIndex == -1 )
+            continue;
+        const XMLPropertyState& rState = rProperties[aContextIDs[i].nIndex];
+        const rtl::OUString& rPropertyName = rMapper->GetEntryAPIName( rState.mnIndex );
+        rtl::OUString sStyleName;
+        rState.maValue >>= sStyleName;
+        sStyleName = GetImport().GetStyleDisplayName( aFamilies[i], sStyleName );
+        try
+        {
+            if( xInfo->hasPropertyByName( rPropertyName ) )
+                rPropSet->setPropertyValue( rPropertyName, Any( sStyleName ) );
+        }
+        catch( lang::IllegalArgumentException& e )
+        {
+            Sequence< rtl::OUString > aSeq( 1 );
+            aSeq[0] = sStyleName;
+            GetImport().SetError( XMLERROR_STYLE_PROP_VALUE | XMLERROR_FLAG_WARNING, aSeq, e.Message, NULL );
+        }
+    }
 }
 
 //eof

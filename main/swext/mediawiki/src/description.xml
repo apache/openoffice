@@ -20,7 +20,7 @@
  *
  ***********************************************************-->
 <description xmlns="http://openoffice.org/extensions/description/2006" xmlns:d="http://openoffice.org/extensions/description/2006" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <version value="1.2.1"/>
+    <version value="1.3.0"/>
     <identifier value="@WIKIEXTENSIONID@"/>
     <display-name>
         <name lang="en-US">@WIKIEXTENSIONPRODUCTNAME@</name>
@@ -31,8 +31,8 @@
         </simple-license>
     </registration>
     <dependencies>
-        <OpenOffice.org-minimal-version value="4.0" d:name="OpenOffice"/>
-        <OpenOffice.org-maximal-version value="4.9" d:name="OpenOffice"/>
+        <OpenOffice.org-minimal-version value="5.0" d:name="OpenOffice"/>
+        <OpenOffice.org-maximal-version value="5.9" d:name="OpenOffice"/>
     </dependencies>
     <publisher>
         <name xlink:href="https://www.openoffice.org" lang="en">Apache Software Foundation</name>

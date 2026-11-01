@@ -47,7 +47,7 @@ class SdfData:
 
     def read(self):
         try:
-            f = open(self._filename, "r")
+            f = open(self._filename, "r", encoding="utf-8")
             lines = [line.rstrip('\n') for line in f.readlines()]
         except IOError:
             print("ERROR: Trying to read "+ self._filename)
@@ -62,7 +62,7 @@ class SdfData:
 
     def write(self, filename):
         try:
-            f = open(filename, "w+")
+            f = open(filename, "w+", encoding="utf-8")
             for value in self._dict.values():
                 #f.write( repr(value)+"\n" )
                 f.write(value + "\n")

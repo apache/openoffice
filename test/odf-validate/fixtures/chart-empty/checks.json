@@ -1,0 +1,10 @@
+[
+ {
+  "name": "chart_summary",
+  "expr": "[(n, o.EmbeddedObject.HasMainTitle, o.EmbeddedObject.Title.String, o.EmbeddedObject.hasInternalDataProvider(), o.EmbeddedObject.Diagram is not None) for sh in [doc.Sheets.getByIndex(0)] for n in sh.Charts.ElementNames for o in [sh.Charts.getByName(n)]]"
+ },
+ {
+  "name": "chart_ranges",
+  "expr": "[(n, [(a.Sheet,a.StartColumn,a.StartRow,a.EndColumn,a.EndRow) for a in sh.Charts.getByName(n).Ranges]) for sh in [doc.Sheets.getByIndex(0)] for n in sh.Charts.ElementNames]"
+ }
+]

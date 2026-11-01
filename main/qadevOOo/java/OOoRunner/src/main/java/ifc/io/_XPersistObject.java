@@ -116,19 +116,19 @@ public class _XPersistObject extends MultiMethodTest {
         try {
             Object noPS = tEnv.getObjRelation("noPS");
             if ( noPS == null) {
-                XPropertySet objps = (XPropertySet)UnoRuntime.queryInterface(
+                XPropertySet objps = UnoRuntime.queryInterface(
                     XPropertySet.class, oObj);
                 XPropertySetInfo objpsi = objps.getPropertySetInfo();
                 Property[] objprops = objpsi.getProperties();
 
                 Object oCopy = ((XMultiServiceFactory)tParam.getMSF()).createInstance(sname);
 
-                XPersistObject persCopy = (XPersistObject)
+                XPersistObject persCopy =
                         UnoRuntime.queryInterface(XPersistObject.class, oCopy);
 
                 persCopy.read(iStream);
 
-                XPropertySet copyps = (XPropertySet)UnoRuntime.queryInterface(
+                XPropertySet copyps = UnoRuntime.queryInterface(
                                                     XPropertySet.class, oCopy);
 
                 XPropertySetInfo copypsi = copyps.getPropertySetInfo();
@@ -163,7 +163,7 @@ public class _XPersistObject extends MultiMethodTest {
                 }
             } else {
                 Object oCopy = ((XMultiServiceFactory)tParam.getMSF()).createInstance(sname);
-                XPersistObject persCopy = (XPersistObject)
+                XPersistObject persCopy =
                         UnoRuntime.queryInterface(XPersistObject.class, oCopy);
 
                 persCopy.read(iStream);
@@ -219,22 +219,22 @@ public class _XPersistObject extends MultiMethodTest {
             Object mostream = ((XMultiServiceFactory)tParam.getMSF()).createInstance
                 ("com.sun.star.io.MarkableOutputStream");
 
-            XActiveDataSink xdSi = (XActiveDataSink)
+            XActiveDataSink xdSi =
                 UnoRuntime.queryInterface(XActiveDataSink.class, istream);
-            XActiveDataSource xdSo = (XActiveDataSource)
+            XActiveDataSource xdSo =
                 UnoRuntime.queryInterface(XActiveDataSource.class, ostream);
-            XActiveDataSink xdSmi = (XActiveDataSink)
+            XActiveDataSink xdSmi =
                 UnoRuntime.queryInterface(XActiveDataSink.class, mistream);
-            XActiveDataSource xdSmo = (XActiveDataSource)
+            XActiveDataSource xdSmo =
                 UnoRuntime.queryInterface(XActiveDataSource.class, mostream);
 
-            XInputStream miStream = (XInputStream)
+            XInputStream miStream =
                 UnoRuntime.queryInterface(XInputStream.class, mistream);
-            XOutputStream moStream = (XOutputStream)
+            XOutputStream moStream =
                 UnoRuntime.queryInterface(XOutputStream.class, mostream);
-            XInputStream PipeIn = (XInputStream)
+            XInputStream PipeIn =
                 UnoRuntime.queryInterface(XInputStream.class, aPipe);
-            XOutputStream PipeOut = (XOutputStream)
+            XOutputStream PipeOut =
                 UnoRuntime.queryInterface(XOutputStream.class,aPipe);
 
             xdSi.setInputStream(miStream);
@@ -242,9 +242,9 @@ public class _XPersistObject extends MultiMethodTest {
             xdSmi.setInputStream(PipeIn);
             xdSmo.setOutputStream(PipeOut);
 
-            iStream = (XObjectInputStream)
+            iStream =
                 UnoRuntime.queryInterface(XObjectInputStream.class, istream);
-            oStream = (XObjectOutputStream)
+            oStream =
                 UnoRuntime.queryInterface(XObjectOutputStream.class, ostream);
 
 

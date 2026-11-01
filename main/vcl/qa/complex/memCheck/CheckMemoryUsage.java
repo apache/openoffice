@@ -398,7 +398,7 @@ public class CheckMemoryUsage
 
         private String createModeName(String _sSub, int _nCount)
         {
-            StringBuffer aBuf = new StringBuffer();
+            StringBuilder aBuf = new StringBuilder();
             aBuf.append(_sSub);
             aBuf.append('_').append(m_sDocumentName).append('_').append(m_sExtension);
             aBuf.append('_').append(_nCount);

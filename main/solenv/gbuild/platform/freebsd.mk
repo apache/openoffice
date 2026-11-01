@@ -40,6 +40,10 @@ ifeq ($(CPU),P)
 CPUNAME := POWERPC64
 endif
 
+ifeq ($(CPU),A)
+CPUNAME := AARCH64
+endif
+
 # use CC/CXX if they are nondefaults
 ifneq ($(origin CC),default)
 gb_CC := $(CC)
@@ -92,7 +96,7 @@ gb_CXXFLAGS := \
 	-fno-use-cxa-atexit \
 	-fvisibility-inlines-hidden \
 	-fvisibility=hidden \
-	-std=gnu++98 \
+	-std=gnu++11 \
 	-pipe
 ifeq ($(COM),CLANG)
 gb_CXXFLAGS += -DHAVE_STL_INCLUDE_PATH
@@ -101,8 +105,10 @@ gb_CXXFLAGS += -DBOOST_TR1_DISABLE_INCLUDE_NEXT -DBOOST_TR1_GCC_INCLUDE_PATH=c++
 endif
 
 ifneq ($(EXTERNAL_WARNINGS_NOT_ERRORS),TRUE)
-gb_CFLAGS_WERROR := -Werror
-gb_CXXFLAGS_WERROR := -Werror
+# C++11 deprecation/narrowing warnings (std::auto_ptr, dynamic exception specs,
+# braced-init narrowing) must not be fatal.  Mirrors macosx.mk.
+gb_CFLAGS_WERROR := -Werror -Wno-error=deprecated -Wno-error=deprecated-declarations -Wno-error=narrowing
+gb_CXXFLAGS_WERROR := -Werror -Wno-error=deprecated -Wno-error=deprecated-declarations -Wno-error=narrowing
 endif
 
 ifneq ($(strip $(SYSBASE)),)
@@ -143,7 +149,13 @@ gb_LinkTarget_LDFLAGS += \
 
 endif
 
-ifneq ($(filter $(CPUNAME),INTEL X86_64),)
+ifeq ($(HAVE_LD_UNDEFINED_VERSION),TRUE)
+gb_LinkTarget_LDFLAGS += \
+	-Wl,--undefined-version \
+
+endif
+
+ifneq ($(filter $(CPUNAME),INTEL X86_64 AARCH64),)
 gb_CFLAGS += -fstack-protector
 gb_CXXFLAGS += -fstack-protector
 gb_LinkTarget_LDFLAGS += -fstack-protector
@@ -462,7 +474,7 @@ endef
 
 define gb_JunitTest_JunitTest_platform
 $(call gb_JunitTest_get_target,$(1)) : DEFS := \
-	-Dorg.openoffice.test.arg.soffice="$$$${OOO_TEST_SOFFICE:-path:$(SRCDIR)/instsetoo_native/$(INPATH)/Apache_OpenOffice/installed/install/en-US/openoffice4/program/soffice}" \
+	-Dorg.openoffice.test.arg.soffice="$$$${OOO_TEST_SOFFICE:-path:$(SRCDIR)/instsetoo_native/$(INPATH)/Apache_OpenOffice/installed/install/en-US/openoffice5/program/soffice}" \
     -Dorg.openoffice.test.arg.env=LD_LIBRARY_PATH \
     -Dorg.openoffice.test.arg.user=file://$(call gb_JunitTest_get_userdir,$(1)) \
 
@@ -509,6 +521,9 @@ gb_Library_COMPONENTPREFIXES := \
     OOO:vnd.sun.star.expand:\dOOO_BASE_DIR/program/ \
     URELIB:vnd.sun.star.expand:\dURE_INTERNAL_LIB_DIR/ \
     NONE:vnd.sun.star.expand:\dOOO_INBUILD_SHAREDLIB_DIR/ \
+
+# Configuration
+gb_CFGEXPRECOMMAND := LD_LIBRARY_PATH=$(OUTDIR)/lib
 
 # UnoApiTarget
 

@@ -197,7 +197,7 @@ public class _XDocumentTemplates extends MultiMethodTest {
         String ret = "";
         try {
             statRes.first();
-            XRow row = (XRow)UnoRuntime.queryInterface(XRow.class, statRes);
+            XRow row = UnoRuntime.queryInterface(XRow.class, statRes);
             while(! statRes.isAfterLast()) {
                 ret += "\n    " + row.getString(1);
                 statRes.next();
@@ -232,13 +232,13 @@ public class _XDocumentTemplates extends MultiMethodTest {
         command.Handle = -1;
         command.Argument = comArg;
 
-        XCommandProcessor comProc = (XCommandProcessor)
+        XCommandProcessor comProc =
             UnoRuntime.queryInterface(XCommandProcessor.class, content);
 
         XDynamicResultSet DynResSet = null;
         try {
-            DynResSet = (XDynamicResultSet) AnyConverter.toObject(
-                new Type(XDynamicResultSet.class),comProc.execute(command, 0, null));
+            DynResSet = AnyConverter.toObject(
+                XDynamicResultSet.class,comProc.execute(command, 0, null));
         } catch(com.sun.star.ucb.CommandAbortedException e) {
             log.println("Couldn't execute command:" + e);
         } catch(com.sun.star.uno.Exception e) {
@@ -250,8 +250,8 @@ public class _XDocumentTemplates extends MultiMethodTest {
 
     protected XContent getSubContent(XContent content, String subName) {
         XResultSet statRes = getStatResultSet(content);
-        XRow row = (XRow)UnoRuntime.queryInterface(XRow.class, statRes);
-        XContentAccess contAcc = (XContentAccess)
+        XRow row = UnoRuntime.queryInterface(XRow.class, statRes);
+        XContentAccess contAcc =
             UnoRuntime.queryInterface(XContentAccess.class, statRes);
         XContent subContent = null;
         try {

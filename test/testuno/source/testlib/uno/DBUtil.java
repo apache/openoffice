@@ -92,7 +92,7 @@ public class DBUtil {
 						m_databaseDocument.getDataSource());
 		dsProperties.setPropertyValue("URL", "sdbc:embedded:hsqldb");
 
-		final XStorable storable = (XStorable) UnoRuntime.queryInterface(
+		final XStorable storable = UnoRuntime.queryInterface(
 				XStorable.class, m_databaseDocument);
 		storable.storeAsURL(m_databaseDocumentFile,
 				new PropertyValue[] { new PropertyValue("PickListEntry", 0,
@@ -103,10 +103,10 @@ public class DBUtil {
 	public static void getDocument(final String _docURL) throws Exception {
 		m_databaseDocumentFile = _docURL;
 
-		final XNameAccess dbContext = (XNameAccess) UnoRuntime.queryInterface(
+		final XNameAccess dbContext = UnoRuntime.queryInterface(
 				XNameAccess.class,
 				m_orb.createInstance("com.sun.star.sdb.DatabaseContext"));
-		final XDocumentDataSource dataSource = (XDocumentDataSource) UnoRuntime.queryInterface(
+		final XDocumentDataSource dataSource = UnoRuntime.queryInterface(
 				XDocumentDataSource.class, dbContext.getByName(_docURL));
 
 		m_databaseDocument = dataSource.getDatabaseDocument();
@@ -123,7 +123,7 @@ public class DBUtil {
 	 */
 	static public void dropTable(final String _name, final boolean _ifExists)
 			throws SQLException {
-		final StringBuffer dropStatement = new StringBuffer("DROP TABLE \"");
+		final StringBuilder dropStatement = new StringBuilder("DROP TABLE \"");
 		dropStatement.append(_name);
 		if (_ifExists) {
 			dropStatement.append("\" IF EXISTS");
@@ -145,7 +145,7 @@ public class DBUtil {
 	 */
 	static public void createTable(String _name, HsqlColumnDescriptor[] _columns)
 			throws SQLException {
-		StringBuffer createStatement = new StringBuffer(
+		StringBuilder createStatement = new StringBuilder(
 				"CREATE CACHED TABLE \"");
 		createStatement.append(_name);
 		createStatement.append("\" ( ");
@@ -187,7 +187,7 @@ public class DBUtil {
 				foreignKeysForTable += "\"" + columns[i].getName() + "\"";
 				foreignKeys.put(foreignTable, foreignKeysForTable);
 
-				final StringBuffer foreignKeyRefsForTable = new StringBuffer(
+				final StringBuilder foreignKeyRefsForTable = new StringBuilder(
 						foreignKeyRefs.containsKey(foreignTable) ? (String) foreignKeyRefs
 								.get(foreignTable) : "");
 				if (foreignKeyRefsForTable.length() > 0) {
@@ -259,7 +259,7 @@ public class DBUtil {
 	 */
 	static public void close() {
 		// close connection
-		final XCloseable closeConn = (XCloseable) UnoRuntime.queryInterface(
+		final XCloseable closeConn = UnoRuntime.queryInterface(
 				XCloseable.class, m_connection != null ? m_connection : null);
 		if (closeConn != null) {
 			try {

@@ -90,7 +90,7 @@ public class SmEditAccessible extends TestCase {
 
         // setting a formula in document
         final String expFormula = "sum hat a";
-        final XPropertySet xPS = (XPropertySet) UnoRuntime.queryInterface
+        final XPropertySet xPS = UnoRuntime.queryInterface
             (XPropertySet.class, xMathDoc);
         try {
             xPS.setPropertyValue("Formula", expFormula);
@@ -110,7 +110,7 @@ public class SmEditAccessible extends TestCase {
 
         XInterface oObj = null;
 
-        XModel aModel = (XModel)
+        XModel aModel =
             UnoRuntime.queryInterface(XModel.class, xMathDoc);
 
 
@@ -128,7 +128,7 @@ public class SmEditAccessible extends TestCase {
 
         tEnv.addObjRelation("Destroy", new Boolean(true));
 
-        final XAccessibleContext con = (XAccessibleContext) UnoRuntime.queryInterface(XAccessibleContext.class, oObj);
+        final XAccessibleContext con = UnoRuntime.queryInterface(XAccessibleContext.class, oObj);
         tEnv.addObjRelation("EventProducer",
             new ifc.accessibility._XAccessibleEventBroadcaster.EventProducer(){
                 public void fireEvent() {

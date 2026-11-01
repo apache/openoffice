@@ -60,7 +60,7 @@ public class _XActiveDataSink extends MultiMethodTest {
     */
     public void before() {
             XInterface x = (XInterface)tEnv.getObjRelation("InputStream");
-            iStream = (XInputStream) UnoRuntime.queryInterface
+            iStream = UnoRuntime.queryInterface
                     (XInputStream.class, x) ;
     }
 

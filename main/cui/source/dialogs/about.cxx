@@ -289,8 +289,12 @@ AboutDialog::AboutDialog( Window* pParent, const ResId & rId ) :
 //	maCopyrightTextStr( ResId( RID_CUI_ABOUT_STR_COPYRIGHT, *rId.GetResMgr() ) )
 {
 	bool bLoad = vcl::ImageRepository::loadBrandingImage(
-			rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("about")),
+			rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("about5")),
 			maAppLogo );
+	if ( !bLoad )
+		bLoad = vcl::ImageRepository::loadBrandingImage(
+				rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("about")),
+				maAppLogo );
 	OSL_ENSURE( bLoad, "Can't load about image");
 
 	bLoad = vcl::ImageRepository::loadBrandingImage(

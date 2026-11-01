@@ -50,7 +50,6 @@ import com.sun.star.accessibility.XAccessibleStateSet;
 
 import com.sun.star.awt.XExtendedToolkit;
 
-import java.util.Vector;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
@@ -570,7 +569,7 @@ public class AccessibilityWorkBench
     // XEventListener
     public void disposing( com.sun.star.lang.EventObject aSourceObj )
     {
-		XFrame xFrame = (XFrame)UnoRuntime.queryInterface(XFrame.class, aSourceObj.Source);
+		XFrame xFrame = UnoRuntime.queryInterface(XFrame.class, aSourceObj.Source);
 
 		if( xFrame != null )
 			System.out.println("frame disposed");

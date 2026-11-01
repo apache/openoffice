@@ -315,7 +315,7 @@ public class Cache
      */
     public synchronized java.lang.String getStatistics()
     {
-        java.lang.StringBuffer sBuffer = new java.lang.StringBuffer(256);
+        java.lang.StringBuilder sBuffer = new java.lang.StringBuilder(256);
 
         sBuffer.append("types                          = "+m_lTypes.size()           +"\n");
         sBuffer.append("filters                        = "+m_lFilters.size()         +"\n");
@@ -505,7 +505,7 @@ public class Cache
         if (nFormat != FORMAT_6Y)
             throw new java.lang.Exception("HTML views are supported for the new 6.y format only yet.");
 
-        java.lang.StringBuffer sRelationView = new java.lang.StringBuffer(1000);
+        java.lang.StringBuilder sRelationView = new java.lang.StringBuilder(1000);
         sRelationView.append("<html><header><title>Relation View</title></header><body>");
         sRelationView.append("<table border=1>");
         sRelationView.append("<tr><td><b>type</b></td><td><b>detect service</b></td><td><b>preferred filter</b></td><td><b>frame loader</b></td><td><b>content handler</b></td></tr>");
@@ -566,7 +566,7 @@ public class Cache
             lFilters2TypeRegistration.put(sType, lFilters);
         }
 
-        java.lang.StringBuffer sType2FiltersView = new java.lang.StringBuffer(1000);
+        java.lang.StringBuilder sType2FiltersView = new java.lang.StringBuilder(1000);
         sType2FiltersView.append("<html><header><title>Type2Filters View</title></header><body>");
         sType2FiltersView.append("<table border=1>");
         sType2FiltersView.append("<tr><td><b>type</b></td><td><b>filters</b></td></tr>");
@@ -613,7 +613,7 @@ public class Cache
                                    java.lang.String sEncoding)
         throws java.lang.Exception
     {
-        java.lang.StringBuffer sXML = new java.lang.StringBuffer(500000);
+        java.lang.StringBuilder sXML = new java.lang.StringBuilder(500000);
 
         for (int i=0; i<5; ++i)
         {
@@ -723,7 +723,7 @@ public class Cache
                 // They are not supported for 6.0 types.
 
                 // pack all other properties to one "Data" string value
-                java.lang.StringBuffer sData = new java.lang.StringBuffer(256);
+                java.lang.StringBuilder sData = new java.lang.StringBuilder(256);
 
                 sData.append(aMap.get(PROPNAME_PREFERRED));
                 sData.append(",");
@@ -820,7 +820,7 @@ public class Cache
                 aResultMap.put(PROPNAME_UINAME, aMap.get(PROPNAME_UINAME));
 
                 // but pack all other properties
-                java.lang.StringBuffer sData = new java.lang.StringBuffer(256);
+                java.lang.StringBuilder sData = new java.lang.StringBuilder(256);
 
                 sData.append(aMap.get(PROPNAME_ORDER));
                 sData.append(",");
@@ -1585,7 +1585,7 @@ public class Cache
                 lNames.add(sItemName);
             else
             {
-                java.lang.StringBuffer sBuffer = new java.lang.StringBuffer(1000);
+                java.lang.StringBuilder sBuffer = new java.lang.StringBuilder(1000);
                 sBuffer.append("entry ["+eItemType+"] \""+sItemName+"\" does not match.\n");
                 sBuffer.append("\torg items = {"+rItemProps+"}\n");
                 sBuffer.append("\treq items = {"+aPropSet+"}\n");
@@ -1730,7 +1730,7 @@ public class Cache
                 break;
         }
 
-        java.lang.StringBuffer sXML        = new java.lang.StringBuffer(1000);
+        java.lang.StringBuilder sXML        = new java.lang.StringBuilder(1000);
         int                    nPrettyTabs = 1;
         for (int t=0; t<nPrettyTabs; ++t)
             sXML.append("\t");
@@ -2199,7 +2199,7 @@ public class Cache
                     // two preferred filters for the same type! => error
                     if (preferred1 && preferred2)
                     {
-                        java.lang.StringBuffer sMsg = new java.lang.StringBuffer(256);
+                        java.lang.StringBuilder sMsg = new java.lang.StringBuilder(256);
                         sMsg.append("More the one preferred filter detected for the same type.\n");
                         sMsg.append("\ttype      = \""+sTypeReg+"\"\n");
                         sMsg.append("\tfilter[1] = \""+sAlreadyRegisteredFilter+"\"\n");
@@ -2309,7 +2309,7 @@ public class Cache
                 java.lang.Object  aAlreadyRegisteredDetector = aType.get(PROPNAME_DETECTSERVICE);
                 if (aAlreadyRegisteredDetector != null && ((java.lang.String)aAlreadyRegisteredDetector).length() > 0)
                 {
-                    java.lang.StringBuffer sMsg = new java.lang.StringBuffer(256);
+                    java.lang.StringBuilder sMsg = new java.lang.StringBuilder(256);
                     sMsg.append("type \""+sTypeReg+"\" has ambiguous registrations of a detect service\n");
                     sMsg.append("\tdetect service[1] = \""+(java.lang.String)aAlreadyRegisteredDetector+"\"\n");
                     sMsg.append("\tdetect service[2] = \""+sDetector+"\"\n");
@@ -2341,7 +2341,7 @@ public class Cache
                 java.lang.String  sAlreadyRegisteredLoader = (java.lang.String)aType.get(PROPNAME_FRAMELOADER);
                 if (sAlreadyRegisteredLoader != null && sAlreadyRegisteredLoader.length() > 0)
                 {
-                    java.lang.StringBuffer sMsg = new java.lang.StringBuffer(256);
+                    java.lang.StringBuilder sMsg = new java.lang.StringBuilder(256);
                     sMsg.append("type \""+sTypeReg+"\" has ambiguous registrations of a frame loader\n");
                     sMsg.append("\tframe loader[1] = \""+sAlreadyRegisteredLoader+"\"\n");
                     sMsg.append("\tframe loader[2] = \""+sLoader+"\"\n");
@@ -2371,7 +2371,7 @@ public class Cache
                 java.lang.String  sAlreadyRegisteredHandler = (java.lang.String)aType.get(PROPNAME_CONTENTHANDLER);
                 if (sAlreadyRegisteredHandler != null && sAlreadyRegisteredHandler.length() > 0)
                 {
-                    java.lang.StringBuffer sMsg = new java.lang.StringBuffer(256);
+                    java.lang.StringBuilder sMsg = new java.lang.StringBuilder(256);
                     sMsg.append("type \""+sTypeReg+"\" has ambiguous registrations of a content handler\n");
                     sMsg.append("\tcontent handler[1] = \""+sAlreadyRegisteredHandler+"\"\n");
                     sMsg.append("\tcontent handler[2] = \""+sHandler+"\"\n");

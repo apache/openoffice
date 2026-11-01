@@ -70,7 +70,7 @@ public class StorageFunctionality  {
 		try
 		{
 			Object oStorageFactory = xMSF.createInstance( "com.sun.star.embed.StorageFactory" );
-			xStorageFactory = (XSingleServiceFactory)UnoRuntime.queryInterface( XSingleServiceFactory.class,
+			xStorageFactory = UnoRuntime.queryInterface( XSingleServiceFactory.class,
 																				oStorageFactory );
 
 			if ( xStorageFactory == null )
@@ -143,11 +143,11 @@ public class StorageFunctionality  {
         // create a connector, so that it can contact the office
         Object  oUrlResolver  = xLocalServiceManager.createInstanceWithContext(
         "com.sun.star.bridge.UnoUrlResolver", xComponentContext );
-        XUnoUrlResolver xUrlResolver = (XUnoUrlResolver)UnoRuntime.queryInterface(
+        XUnoUrlResolver xUrlResolver = UnoRuntime.queryInterface(
             XUnoUrlResolver.class, oUrlResolver );
 
         Object oInitialObject = xUrlResolver.resolve( sConnectStr );
-        XNamingService xName = (XNamingService)UnoRuntime.queryInterface(
+        XNamingService xName = UnoRuntime.queryInterface(
             XNamingService.class, oInitialObject );
 
         XMultiServiceFactory xMSF = null;
@@ -155,7 +155,7 @@ public class StorageFunctionality  {
             System.err.println( "got the remote naming service !" );
             Object oMSF = xName.getRegisteredObject("StarOffice.ServiceManager" );
 
-            xMSF = (XMultiServiceFactory)
+            xMSF =
             UnoRuntime.queryInterface( XMultiServiceFactory.class, oMSF );
         }
 		else

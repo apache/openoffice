@@ -55,6 +55,53 @@ using namespace ::com::sun::star::beans;
 using namespace ::xmloff::token;
 
 
+namespace
+{
+    bool lcl_HasState( const ::std::vector< XMLPropertyState >& rPropState )
+    {
+        for( ::std::vector< XMLPropertyState >::const_iterator aIter = rPropState.begin(); aIter != rPropState.end(); ++aIter )
+            if( aIter->mnIndex != -1 )
+                return true;
+        return false;
+    }
+
+    class XMLPageDrawingPageExportPropMapper : public XMLPageMasterExportPropMapper
+    {
+    public:
+        XMLPageDrawingPageExportPropMapper( SvXMLExport& rExport ) :
+            XMLPageMasterExportPropMapper( new XMLPageMasterPropSetMapper(
+                aXMLPageMasterDrawingPageStyleMap, new XMLPageMasterPropHdlFactory ), rExport )
+        {
+        }
+
+        virtual void ContextFilter( ::std::vector< XMLPropertyState >& rPropState,
+                                    Reference< XPropertySet > rPropSet ) const
+        {
+            XMLPageMasterExportPropMapper::ContextFilter( rPropState, rPropSet );
+            if( lcl_HasState( rPropState ) )
+            {
+                // the page fill is painted inside the page borders
+                rPropState.push_back( XMLPropertyState( getPropertySetMapper()->FindEntryIndex(
+                    "BackgroundFullSize", XML_NAMESPACE_DRAW, GetXMLToken( XML_BACKGROUND_SIZE ) ), makeAny( sal_False ) ) );
+            }
+        }
+    };
+
+    ::std::vector< XMLPropertyState > lcl_FilterDrawingPageFill( SvXMLExport& rExport,
+        const Reference< XPropertySet >& rPropSet )
+    {
+        ::std::vector< XMLPropertyState > aPropStates;
+        if( SvtSaveOptions::IsODFExtended( rExport.getDefaultVersion() ) )
+        {
+            UniReference< SvXMLExportPropertyMapper > xMapper( new XMLPageDrawingPageExportPropMapper( rExport ) );
+            aPropStates = xMapper->Filter( rPropSet );
+            if( !lcl_HasState( aPropStates ) )
+                aPropStates.clear();
+        }
+        return aPropStates;
+    }
+}
+
 //______________________________________________________________________________
 
 sal_Bool XMLPageExport::findPageMasterName( const OUString& rStyleName, OUString& rPMName ) const
@@ -119,6 +166,10 @@ sal_Bool XMLPageExport::exportStyle(
 		aEntry.sStyleName = rStyle->getName();
 		aNameVector.push_back( aEntry );
 
+		::std::vector< XMLPropertyState > aPropStates( lcl_FilterDrawingPageFill( GetExport(), xPropSet ) );
+		if( !aPropStates.empty() )
+			GetExport().GetAutoStylePool()->Add( XML_STYLE_FAMILY_SD_DRAWINGPAGE_ID, OUString(), aPropStates );
+
 		exportMasterPageContent( xPropSet, sal_True );
 	}
 	else
@@ -135,6 +186,13 @@ sal_Bool XMLPageExport::exportStyle(
 		OUString sPMName;
 		if( findPageMasterName( sName, sPMName ) )
 			GetExport().AddAttribute( XML_NAMESPACE_STYLE, XML_PAGE_LAYOUT_NAME, GetExport().EncodeStyleName( sPMName ) );
+
+		::std::vector< XMLPropertyState > aPropStates( lcl_FilterDrawingPageFill( GetExport(), xPropSet ) );
+		OUString sDrawingPageName;
+		if( !aPropStates.empty() )
+			sDrawingPageName = GetExport().GetAutoStylePool()->Find( XML_STYLE_FAMILY_SD_DRAWINGPAGE_ID, OUString(), aPropStates );
+		if( sDrawingPageName.getLength() )
+			GetExport().AddAttribute( XML_NAMESPACE_DRAW, XML_STYLE_NAME, GetExport().EncodeStyleName( sDrawingPageName ) );
 
         Reference<XPropertySetInfo> xInfo = xPropSet->getPropertySetInfo();
         if ( xInfo.is() && xInfo->hasPropertyByName(sFollowStyle) )
@@ -179,6 +237,8 @@ XMLPageExport::XMLPageExport( SvXMLExport& rExp ) :
 
 	rExport.GetAutoStylePool()->AddFamily( XML_STYLE_FAMILY_PAGE_MASTER, OUString( RTL_CONSTASCII_USTRINGPARAM( XML_STYLE_FAMILY_PAGE_MASTER_NAME ) ),
 		xPageMasterExportPropMapper, OUString( RTL_CONSTASCII_USTRINGPARAM( XML_STYLE_FAMILY_PAGE_MASTER_PREFIX ) ), sal_False );
+	rExport.GetAutoStylePool()->AddFamily( XML_STYLE_FAMILY_SD_DRAWINGPAGE_ID, OUString( RTL_CONSTASCII_USTRINGPARAM( XML_STYLE_FAMILY_SD_DRAWINGPAGE_NAME ) ),
+		new XMLPageDrawingPageExportPropMapper( rExp ), OUString( RTL_CONSTASCII_USTRINGPARAM( XML_STYLE_FAMILY_SD_DRAWINGPAGE_PREFIX ) ) );
 
 	Reference< XStyleFamiliesSupplier > xFamiliesSupp( GetExport().GetModel(),
 													   UNO_QUERY );
@@ -231,6 +291,8 @@ void XMLPageExport::exportAutoStyles()
         , rExport.GetDocHandler(), rExport.GetMM100UnitConverter(),
 		rExport.GetNamespaceMap()
         );
+	rExport.GetAutoStylePool()->exportXML( XML_STYLE_FAMILY_SD_DRAWINGPAGE_ID,
+		rExport.GetDocHandler(), rExport.GetMM100UnitConverter(), rExport.GetNamespaceMap() );
 }
 
 void XMLPageExport::exportDefaultStyle()

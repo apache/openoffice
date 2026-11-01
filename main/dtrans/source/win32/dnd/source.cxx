@@ -162,7 +162,11 @@ void DragSource::StartDragImpl(
 void SAL_CALL DragSource::initialize( const Sequence< Any >& aArguments )
 {
 	if( aArguments.getLength() >=2)
-		m_hAppWindow= *(HWND*)aArguments[1].getValue();
+	{
+		sal_uInt64 nWindowHandle= 0;
+		aArguments[1] >>= nWindowHandle;
+		m_hAppWindow= (HWND)(sal_uIntPtr) nWindowHandle;
+	}
 	OSL_ASSERT( IsWindow( m_hAppWindow) );
 }
 

@@ -68,13 +68,13 @@ public class InsertDeleteRowAndColumn {
 
 		String sheetname = "sheet1";
 		scComponent = unoApp.newDocument("scalc");
-		scDocument = (XSpreadsheetDocument) UnoRuntime.queryInterface(XSpreadsheetDocument.class, scComponent);
+		scDocument = UnoRuntime.queryInterface(XSpreadsheetDocument.class, scComponent);
 		XSpreadsheets spreadsheets = scDocument.getSheets();
 		Object sheetObj = spreadsheets.getByName(sheetname);
 
 
-		XSpreadsheet sheet = (XSpreadsheet) UnoRuntime.queryInterface(XSpreadsheet.class, sheetObj);
-		XColumnRowRange xCRRange = (XColumnRowRange) UnoRuntime.queryInterface( XColumnRowRange.class, sheet );
+		XSpreadsheet sheet = UnoRuntime.queryInterface(XSpreadsheet.class, sheetObj);
+		XColumnRowRange xCRRange = UnoRuntime.queryInterface( XColumnRowRange.class, sheet );
 	    XTableRows xRows = xCRRange.getRows();
 
 		// Create a cell series "A2:A8" with the values 1 ... 7.
@@ -114,13 +114,13 @@ public void testInsertDeleteColumns() throws Exception {
 
 	String sheetname = "sheet1";
 	scComponent = unoApp.newDocument("scalc");
-	scDocument = (XSpreadsheetDocument) UnoRuntime.queryInterface(XSpreadsheetDocument.class, scComponent);
+	scDocument = UnoRuntime.queryInterface(XSpreadsheetDocument.class, scComponent);
 	XSpreadsheets spreadsheets = scDocument.getSheets();
 	Object sheetObj = spreadsheets.getByName(sheetname);
 
 
-	XSpreadsheet sheet = (XSpreadsheet) UnoRuntime.queryInterface(XSpreadsheet.class, sheetObj);
-	XColumnRowRange xCRRange = (XColumnRowRange) UnoRuntime.queryInterface( XColumnRowRange.class, sheet );
+	XSpreadsheet sheet = UnoRuntime.queryInterface(XSpreadsheet.class, sheetObj);
+	XColumnRowRange xCRRange = UnoRuntime.queryInterface( XColumnRowRange.class, sheet );
     XTableColumns xColumns = xCRRange.getColumns();
 
 	// Create a cell series "A2:A8" with the values 1 ... 7.

@@ -280,7 +280,7 @@ public class RadioButtons
             // close our document
             if ( m_document != null )
             {
-                XCloseable closeDoc = (XCloseable)UnoRuntime.queryInterface( XCloseable.class,
+                XCloseable closeDoc = UnoRuntime.queryInterface( XCloseable.class,
                     m_document.getDocument() );
                 closeDoc.close( true );
             }
@@ -320,7 +320,7 @@ public class RadioButtons
     {
         XPropertySet xRadio = getRadioModel( groupName, refValue, form );
 
-		XRadioButton radioButton = (XRadioButton)UnoRuntime.queryInterface(
+		XRadioButton radioButton = UnoRuntime.queryInterface(
 			XRadioButton.class, m_document.getCurrentView().getControl( xRadio ) );
 		radioButton.setState( true );
     }
@@ -340,7 +340,7 @@ public class RadioButtons
     /* ------------------------------------------------------------------ */
     private String stateString( short[] states )
     {
-		StringBuffer buf = new StringBuffer();
+		StringBuilder buf = new StringBuilder();
 		for ( int i=0; i<states.length; ++i )
 			buf.append( states[i] );
 		return buf.toString();

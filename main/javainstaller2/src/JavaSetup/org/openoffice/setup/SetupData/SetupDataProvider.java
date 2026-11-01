@@ -27,7 +27,6 @@ import org.openoffice.setup.InstallData;
 import org.openoffice.setup.Installer.Installer;
 import org.openoffice.setup.Installer.InstallerFactory;
 import java.util.Enumeration;
-import java.util.Vector;
 import javax.swing.tree.DefaultMutableTreeNode;
 
 /**

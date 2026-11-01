@@ -514,9 +514,20 @@ endif
 
 ifeq ($(OS),WNT)
 ifeq ($(USE_MINGW),)
+ifeq ($(CPUNAME),INTEL)
 $(eval $(call gb_Library_add_ldflags,vcl,\
 	/ENTRY:LibMain@12 \
 ))
+endif
+ifeq ($(CPUNAME),X86_64)
+# LibMain is WINAPI (__stdcall): x86 decorates it LibMain@12; x64 has no
+# stdcall @N decoration at all, so the entry symbol is the undecorated
+# LibMain -- not LibMain@16.  (vcl/util/makefile.mk, the dmake path, already
+# gets this right; this is the gbuild half.)
+$(eval $(call gb_Library_add_ldflags,vcl,\
+	/ENTRY:LibMain \
+))
+endif
 endif
 $(eval $(call gb_Library_add_linked_libs,vcl,\
 	advapi32 \
@@ -529,6 +540,7 @@ $(eval $(call gb_Library_add_linked_libs,vcl,\
 	shell32 \
 	user32 \
 	uuid \
+	version \
 	winspool \
 	$(gb_STDLIBS) \
 ))

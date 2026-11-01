@@ -110,7 +110,7 @@ public class SvxUnoTextContent extends TestCase {
                 5000,3500,7500,5000,"Text");
             DrawTools.getShapes(DrawTools.getDrawPage(xDrawDoc,0)).add(oShape) ;
 
-            XSimpleText text = (XSimpleText) UnoRuntime.queryInterface
+            XSimpleText text = UnoRuntime.queryInterface
                 (XSimpleText.class, oShape) ;
 
             XTextCursor cursor = text.createTextCursor() ;
@@ -125,11 +125,11 @@ public class SvxUnoTextContent extends TestCase {
             text.insertControlCharacter(cursor,
                 ControlCharacter.PARAGRAPH_BREAK, false) ;
 
-            xEA = (XEnumerationAccess) UnoRuntime.queryInterface
+            xEA = UnoRuntime.queryInterface
                 (XEnumerationAccess.class, text) ;
 
-            oObj = (XInterface) AnyConverter.toObject(
-                new Type(XInterface.class),xEA.createEnumeration().nextElement());
+            oObj = AnyConverter.toObject(
+                XInterface.class,xEA.createEnumeration().nextElement());
         } catch (Exception e) {
             log.println("Can't create test object") ;
             e.printStackTrace(log) ;

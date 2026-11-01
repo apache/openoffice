@@ -56,7 +56,7 @@ public class ProviderAcceptor extends TestCase {
         TestEnvironment tEnv = new TestEnvironment( oObj );
 
         //adding ObjRelation for XRemoteContentProviderAcceptor
-        XRemoteContentProviderAcceptor xRCPA = (XRemoteContentProviderAcceptor)
+        XRemoteContentProviderAcceptor xRCPA =
             UnoRuntime.queryInterface(XRemoteContentProviderAcceptor.class,oObj);
 
         tEnv.addObjRelation("RCPA",xRCPA);

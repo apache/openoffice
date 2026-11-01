@@ -64,7 +64,7 @@ public class DirtyTagWrapper {
     public static String unwrapString(String checkString){
         //remove the ept and bpt tags
         String[] splitted =checkString.split("(<ept ([^<>])*>)|(</ept>)|(<bpt ([^<>])*>)|(</bpt>)|(<sub([^<>])*>)|(</sub>)|(<ex ([^<>])*/>)");
-        StringBuffer workBuffer= new StringBuffer();
+        StringBuilder workBuffer= new StringBuilder();
         for(int i=0;i<splitted.length;i++){
             workBuffer.append(splitted[i]);
         }
@@ -74,7 +74,7 @@ public class DirtyTagWrapper {
 
         //remove the nsub tags
         splitted =string.split("(<sub([^<>])*>)|(</sub>)");
-        StringBuffer returnBuffer= new StringBuffer();
+        StringBuilder returnBuffer= new StringBuilder();
         for(int i=0;i<splitted.length;i++){
             returnBuffer.append(splitted[i]);
         }
@@ -182,7 +182,7 @@ public class DirtyTagWrapper {
         tagString=null;
 
         TagPair start;
-        StringBuffer returnBuffer=new StringBuffer();
+        StringBuilder returnBuffer=new StringBuilder();
         while(tagList.size()>0){
             try{
                 start=new TagPair(tagList);

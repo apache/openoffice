@@ -121,12 +121,12 @@ public class SdfEntity implements Cloneable{
 		return source_file.substring(0 , source_file.lastIndexOf( "\\" )-1 );
 	}
 	public String toString(){
-		return new StringBuffer( project ).append( "\t" ).append( source_file ).append( "\t" ).append( dummy1 ).append( "\t" ).append( resource_type ).append( "\t" ).append( gid ).append( "\t" )
+		return new StringBuilder( project ).append( "\t" ).append( source_file ).append( "\t" ).append( dummy1 ).append( "\t" ).append( resource_type ).append( "\t" ).append( gid ).append( "\t" )
 		       .append( lid ).append( "\t" ).append( helpid ).append( "\t" ).append( platform ).append( "\t" ).append( dummy2 ).append( "\t" ).append( langid ).append( "\t" )
 		       .append( text ).append( "\t" ).append( helptext ).append( "\t" ).append( quickhelptext ).append( "\t" ).append( title ).append( "\t" ).append( date ).toString();
 	}
 	public String getId(){
-		return new StringBuffer( project ).append( gid ).append( lid ).append( source_file ).append( resource_type ).append( platform ).append( helpid ).append( langid ).toString();
+		return new StringBuilder( project ).append( gid ).append( lid ).append( source_file ).append( resource_type ).append( platform ).append( helpid ).append( langid ).toString();
 	}
 
 	public String getDummy1() {

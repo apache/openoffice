@@ -124,7 +124,7 @@ public final class UrlToFileMapper {
 
 
     private static String encode(String url) {
-        StringBuffer buf = new StringBuffer();
+        StringBuilder buf = new StringBuilder();
         for (int i = 0; i < url.length(); ++i) {
             char c = url.charAt(i);
             // The RFC 2732 <uric> characters: !$&'()*+,-./:;=?@[]_~ plus digits

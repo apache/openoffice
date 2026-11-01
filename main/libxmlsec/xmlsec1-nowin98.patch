@@ -1,0 +1,20 @@
+--- misc/xmlsec1-1.2.14/win32/Makefile.msvc
++++ misc/build/xmlsec1-1.2.14/win32/Makefile.msvc
+@@ -349,11 +349,17 @@
+ 
+ # Optimisation and debug symbols.
+ !if "$(DEBUG)" == "1"
+ LDFLAGS 		= $(LDFLAGS) /DEBUG
+ !else
++# /OPT:NOWIN98 stopped the linker padding sections for Windows 9x.  It was
++# removed from link.exe after VS2008 and is now a hard error (LNK1117), so
++# a toolset that has no such option passes WIN98COMPAT=0.  Undefined means
++# "keep it", which is what every pre-existing caller gets.
++!if "$(WIN98COMPAT)" != "0"
+ LDFLAGS 		= $(LDFLAGS) /OPT:NOWIN98
++!endif
+ !endif
+ 
+ SOLIBS 			= $(LIBS) libxml2.lib 
+ ALIBS 			= $(LIBS) libxml2_a.lib 
+ 

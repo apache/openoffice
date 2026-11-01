@@ -49,6 +49,62 @@ LIB1FILES=\
 
 SHL1TARGET=$(TARGET)$(DLLPOSTFIX)
 
+.IF "$(OS)$(SYSTEM_LIBXML)"=="MACOSXYES"
+# The macOS shared-library link template (tg_shl.mk) always searches
+# $(SOLARLIB) -- which includes /usr/lib -- before any of this makefile's
+# own libs, and the SDK bundles its own older libxml2 under /usr/lib. A
+# plain "-lxml2" (as pulled in by LIBXML2LIB) resolves to that bundled
+# copy instead of the configured --with-system-libxml one, and it is
+# missing symbols (xmlXPathValuePush, xmlXPathValuePop) that xformsxpath
+# needs. Link the intended libxml2 by absolute path so the search order
+# can't shadow it.
+#
+# The path is built from $(LIBXML_PREFIX), not a live `xml2-config`
+# lookup -- see the matching comment in xmlsecurity/util/makefile.mk for
+# why: $(LIBXML_PREFIX) is resolved exactly once by `./configure`
+# (honoring the directory given to --with-system-libxml=DIR) and exported
+# via the generated *Env.Set.sh script, so it can't drift from what
+# configure actually resolved the way a fresh `xml2-config` shell-out at
+# dmake time could.
+#
+# Prefer the dylib when one is actually present at that prefix (it
+# records its own transitive links, e.g. to libz, so nothing extra needs
+# to be added); fall back to the static archive -- which carries no
+# dependency info, so zlib must be linked explicitly to satisfy libxml2's
+# HTTP/gzip symbols (deflate, inflate, gzopen, ...) -- when no dylib
+# exists there.
+#
+# The existence check is resolved into a plain macro first, then branched
+# on -- dmake's .IF does not reliably evaluate a $(shell ...) call written
+# directly inside the condition string itself.
+#
+# The leading "-" is load-bearing: dmake runs $(shell ...) as a phony
+# recipe named "Shell escape" and, same as any other recipe line, treats
+# a non-zero exit as a fatal build error unless the line is marked
+# ignore-errors (the same leading "-" convention as normal recipes,
+# handled by Rcp_attribute() in dag.c). "test -f X && echo yes" exits 1
+# whenever X does not exist -- the expected, common case here, since
+# community builds normally only install libxml2 as a static archive
+# (--enable-shared=no, no dylib at all) -- so without the "-" this aborts
+# the whole build the moment no dylib is found, instead of just leaving
+# the macro empty.
+#
+# --with-static-system-libs=libxml pins this to the archive, so a dylib
+# appearing at the prefix can't silently turn a release build dynamic.
+.IF "$(STATIC_SYSTEM_LIBXML)"=="YES"
+FORMS_LIBXML2_HAS_DYLIB:=
+.ELSE
+FORMS_LIBXML2_HAS_DYLIB:=$(shell -test -f $(LIBXML_PREFIX)/lib/libxml2.dylib && echo yes)
+.ENDIF
+.IF "$(FORMS_LIBXML2_HAS_DYLIB)"=="yes"
+FORMS_LIBXML2LIB:=$(LIBXML_PREFIX)/lib/libxml2.dylib
+.ELSE
+FORMS_LIBXML2LIB:=$(LIBXML_PREFIX)/lib/libxml2.a $(ZLIB3RDLIB)
+.ENDIF
+.ELSE
+FORMS_LIBXML2LIB=$(LIBXML2LIB)
+.ENDIF
+
 SHL1STDLIBS= \
 		$(EDITENGLIB) \
 		$(SALLIB) \
@@ -68,7 +124,7 @@ SHL1STDLIBS= \
 		$(TKLIB) \
 		$(SVXCORELIB) \
         $(UCBHELPERLIB) \
-        $(LIBXML2LIB) \
+        $(FORMS_LIBXML2LIB) \
         $(ICUUCLIB) \
         $(ICUINLIB)
 

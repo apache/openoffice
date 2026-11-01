@@ -114,17 +114,17 @@ public class FlatXml implements XImportFilter, XExportFilter, XServiceName,
 	        {
 		        sName = aSourceData[i].Name;
 		        if (sName.equals("InputStream"))
-			        xin = (XInputStream)AnyConverter.toObject(XInputStream.class, aSourceData[i].Value);
+			        xin = AnyConverter.toObject(XInputStream.class, aSourceData[i].Value);
 		        if (sName.equals("URL"))
-			        sURL=(String)AnyConverter.toObject(String.class, aSourceData[i].Value);
+			        sURL=AnyConverter.toObject(String.class, aSourceData[i].Value);
 		        if (sName.equals("FileName"))
-			        sFileName=(String)AnyConverter.toObject(String.class, aSourceData[i].Value);
+			        sFileName=AnyConverter.toObject(String.class, aSourceData[i].Value);
 		    }
 
 		    Object tmpObj=m_xServiceFactory.createInstance("com.sun.star.xml.sax.Parser");
             if (tmpObj == null) return false;
 
-		    XParser xParser = (XParser)UnoRuntime.queryInterface(XParser.class , tmpObj);
+		    XParser xParser = UnoRuntime.queryInterface(XParser.class , tmpObj);
 		    if (xParser == null) return false;
 
 		    InputSource aInput = new InputSource();
@@ -154,9 +154,9 @@ public class FlatXml implements XImportFilter, XExportFilter, XServiceName,
 	        {
 		        sName = aSourceData[i].Name;
 		        if (sName.equals("OutputStream"))
-			        xos = (XOutputStream)AnyConverter.toObject(XOutputStream.class, aSourceData[i].Value);
+			        xos = AnyConverter.toObject(XOutputStream.class, aSourceData[i].Value);
 		        if (sName.equals("URL"))
-			        sURL=(String)AnyConverter.toObject(String.class, aSourceData[i].Value);
+			        sURL=AnyConverter.toObject(String.class, aSourceData[i].Value);
 		    }
 
 		    // prepare the XML writer
@@ -165,13 +165,13 @@ public class FlatXml implements XImportFilter, XExportFilter, XServiceName,
 		    {
 		        tmpObj = m_xServiceFactory.createInstance("com.sun.star.xml.sax.Writer");
 		        if (tmpObj != null)
-		            m_xHandler = (XExtendedDocumentHandler)UnoRuntime.queryInterface(XExtendedDocumentHandler.class, tmpObj);
+		            m_xHandler = UnoRuntime.queryInterface(XExtendedDocumentHandler.class, tmpObj);
 		    }
 		    if (m_xHandler == null)
 		        return false;
 
             // Connect the provided output stream to the writer
-		    XActiveDataSource xADSource = (XActiveDataSource)UnoRuntime.queryInterface(
+		    XActiveDataSource xADSource = UnoRuntime.queryInterface(
 		            XActiveDataSource.class, m_xHandler);
 
 		    if (xADSource != null && xos != null)

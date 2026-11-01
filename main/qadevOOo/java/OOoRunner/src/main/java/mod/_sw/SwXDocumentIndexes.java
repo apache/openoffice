@@ -118,7 +118,7 @@ public class SwXDocumentIndexes extends TestCase {
             throw new StatusException("Couldn't insert the Index", e);
         }
 
-        XDocumentIndexesSupplier xDocInd = (XDocumentIndexesSupplier)
+        XDocumentIndexesSupplier xDocInd =
                 UnoRuntime.queryInterface(XDocumentIndexesSupplier.class,xTextDoc);
 
         oObj = xDocInd.getDocumentIndexes();

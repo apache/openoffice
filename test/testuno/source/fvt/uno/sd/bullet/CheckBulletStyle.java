@@ -74,16 +74,16 @@ public class CheckBulletStyle {
 		}
 		else{
 			//create a sd
-			m_xSDComponent = (XComponent) UnoRuntime.queryInterface(XComponent.class, app.newDocument("simpress"));
+			m_xSDComponent = UnoRuntime.queryInterface(XComponent.class, app.newDocument("simpress"));
 			Object firstPage = getDrawPageByIndex(m_xSDComponent, 0);
 			Object secondTextBox = SDUtil.getShapeOfPageByIndex(firstPage, 1);
-			XShape xsecondTextBox = (XShape)UnoRuntime.queryInterface(XShape.class, secondTextBox);
+			XShape xsecondTextBox = UnoRuntime.queryInterface(XShape.class, secondTextBox);
 			m_textProperty = addPortion(xsecondTextBox, "Test Bullet Style", false);
 
 			//get numberingRules
 			m_numberingRules = m_textProperty.getPropertyValue("NumberingRules");
 
-			m_xReplace = (XIndexReplace) UnoRuntime.queryInterface(
+			m_xReplace = UnoRuntime.queryInterface(
 		             XIndexReplace.class, m_numberingRules);
 
 			PropertyValue[] props = new PropertyValue[1];
@@ -99,16 +99,16 @@ public class CheckBulletStyle {
 		}
 	}
 	private XIndexReplace load() throws Exception{
-		m_xSDComponent = (XComponent) UnoRuntime.queryInterface(XComponent.class,
+		m_xSDComponent = UnoRuntime.queryInterface(XComponent.class,
 				app.loadDocument(m_filePath));
 		Object firstPage = getDrawPageByIndex(m_xSDComponent, 0);
 		Object secondTextBox = SDUtil.getShapeOfPageByIndex(firstPage, 1);
-		XShape xsecondTextBox = (XShape)UnoRuntime.queryInterface(XShape.class, secondTextBox);
+		XShape xsecondTextBox = UnoRuntime.queryInterface(XShape.class, secondTextBox);
 		m_textProperty = getPortion(xsecondTextBox, 0);
 
 		m_numberingRules = m_textProperty.getPropertyValue("NumberingRules");
 
-		XIndexReplace xReplace = (XIndexReplace) UnoRuntime.queryInterface(
+		XIndexReplace xReplace = UnoRuntime.queryInterface(
 	             XIndexReplace.class, m_numberingRules);
 		return xReplace;
 	}

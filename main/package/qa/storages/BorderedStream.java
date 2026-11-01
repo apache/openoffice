@@ -60,14 +60,14 @@ public class BorderedStream
 	public synchronized XInputStream getInputStream()
 		throws com.sun.star.uno.RuntimeException
 	{
-		return (XInputStream)UnoRuntime.queryInterface( XInputStream.class, this );
+		return UnoRuntime.queryInterface( XInputStream.class, this );
 	}
 
 	// ----------------------------------------------------------
 	public synchronized XOutputStream getOutputStream()
 		throws com.sun.star.uno.RuntimeException
 	{
-		return (XOutputStream)UnoRuntime.queryInterface( XOutputStream.class, this );
+		return UnoRuntime.queryInterface( XOutputStream.class, this );
 	}
 
 	//==============

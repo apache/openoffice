@@ -55,7 +55,7 @@ public class TextReplace {
             com.sun.star.util.XSearchDescriptor xSearchDescriptor = null;
             com.sun.star.util.XReplaceable xReplaceable = null;
 
-            xReplaceable = (com.sun.star.util.XReplaceable)
+            xReplaceable =
                 UnoRuntime.queryInterface(
                     com.sun.star.util.XReplaceable.class, xTextDocument);
 
@@ -104,7 +104,7 @@ public class TextReplace {
                 "He nervously looked all around. Suddenly he saw his ", false );
 
             xText.insertString( xTextCursor, "neighbour ", true );
-            com.sun.star.beans.XPropertySet xCPS = (com.sun.star.beans.XPropertySet)
+            com.sun.star.beans.XPropertySet xCPS =
                 UnoRuntime.queryInterface(
                     com.sun.star.beans.XPropertySet.class, xTextCursor);
             // Set the word blue
@@ -116,7 +116,7 @@ public class TextReplace {
             xText.insertString( xTextCursor, "in the alley. Like lightening he darted off to the left and disappeared between the two warehouses almost falling over the trash can lying in the ", false  );
 
             xText.insertString( xTextCursor, "centre ", true );
-            xCPS = (com.sun.star.beans.XPropertySet)UnoRuntime.queryInterface(
+            xCPS = UnoRuntime.queryInterface(
                 com.sun.star.beans.XPropertySet.class, xTextCursor);
             // Set the word blue
             xCPS.setPropertyValue( "CharColor", new Integer( 255 ) );
@@ -155,7 +155,7 @@ public class TextReplace {
 
                 Object oDesktop = xMCF.createInstanceWithContext(
                     "com.sun.star.frame.Desktop", xContext);
-                xDesktop = (com.sun.star.frame.XDesktop) UnoRuntime.queryInterface(
+                xDesktop = UnoRuntime.queryInterface(
                     com.sun.star.frame.XDesktop.class, oDesktop);
             }
             else
@@ -178,7 +178,7 @@ public class TextReplace {
         try {
             com.sun.star.lang.XComponent xComponent = CreateNewDocument(xDesktop,
                                                                         "swriter");
-            aTextDocument = (com.sun.star.text.XTextDocument)
+            aTextDocument =
                 UnoRuntime.queryInterface(
                     com.sun.star.text.XTextDocument.class, xComponent);
         }
@@ -204,7 +204,7 @@ public class TextReplace {
             new com.sun.star.beans.PropertyValue[0];
 
         try {
-            xComponentLoader = (com.sun.star.frame.XComponentLoader)
+            xComponentLoader =
                 UnoRuntime.queryInterface(
                     com.sun.star.frame.XComponentLoader.class, xDesktop);
 

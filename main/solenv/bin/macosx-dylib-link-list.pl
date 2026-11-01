@@ -59,7 +59,16 @@ foreach (@ARGV)
     if (/^-l(.*)$/)
     {
         my $loc = locate("lib$1.dylib");
-        handle($1, $loc) if defined $loc && otoolD($loc) =~ m'^(@.+/.+)\n$';
+        # A makefile's STDLIBS/STDSHL lists can legitimately name the same
+        # library twice (accumulated from more than one variable). Unlike
+        # the @todo loop below, this pass had no dedup guard, so a repeated
+        # -lfoo emitted the same -dylib_file entry twice; ld then reports
+        # that entry as "recursively loading" instead of just ignoring the
+        # duplicate.
+        if (defined $loc && otoolD($loc) =~ m'^(@.+/.+)\n$')
+        {
+            handle($1, $loc) unless defined $done{$1};
+        }
     }
 }
 foreach $file (@todo)
@@ -71,6 +80,11 @@ foreach $file (@todo)
         if (m'^\s*(@.+/([^/]+)) \(compatibility version \d+\.\d+\.\d+, current version \d+\.\d+\.\d+\)\n$')
         {
             my $full = $1;
+            # A reference into a .framework bundle (e.g. a system/SDK Python
+            # framework) isn't a flat libFOO.dylib and never will be found by
+            # locate() -- these are system frameworks, not tree-built dylibs
+            # needing a -dylib_file fixup, so just skip them.
+            next if $full =~ m'\.framework/';
             my $loc = locate($2);
             if (defined $loc)
             {

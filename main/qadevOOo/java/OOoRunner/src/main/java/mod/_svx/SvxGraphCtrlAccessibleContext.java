@@ -81,7 +81,7 @@ public class SvxGraphCtrlAccessibleContext extends TestCase{
         XInterface oObj = null;
 
 
-        XModel aModel = (XModel)
+        XModel aModel =
             UnoRuntime.queryInterface(XModel.class, xDrawDoc);
 
         XController xController = aModel.getCurrentController();
@@ -93,7 +93,7 @@ public class SvxGraphCtrlAccessibleContext extends TestCase{
 
         DrawTools.getShapes(DrawTools.getDrawPage(xDrawDoc,0)).add(oShape);
 
-        XPropertySet shapeProps = (XPropertySet)
+        XPropertySet shapeProps =
                         UnoRuntime.queryInterface(XPropertySet.class, oShape);
 
         String url = util.utils.getFullTestURL("space-metal.jpg");
@@ -116,9 +116,9 @@ public class SvxGraphCtrlAccessibleContext extends TestCase{
         //Opening ImageMapDialog
         try {
             String aSlotID = "slot:10371";
-            XDispatchProvider xDispProv = (XDispatchProvider)
+            XDispatchProvider xDispProv =
                 UnoRuntime.queryInterface( XDispatchProvider.class, xController );
-            XURLTransformer xParser = (com.sun.star.util.XURLTransformer)
+            XURLTransformer xParser =
                 UnoRuntime.queryInterface(XURLTransformer.class,
             ((XMultiServiceFactory)Param.getMSF()).createInstance("com.sun.star.util.URLTransformer"));
             // Because it's an in/out parameter we must use an array of URL objects.
@@ -145,13 +145,13 @@ public class SvxGraphCtrlAccessibleContext extends TestCase{
             throw new StatusException("Couldn't get toolkit", e );
         }
 
-        XExtendedToolkit tk = (XExtendedToolkit)
+        XExtendedToolkit tk =
                         UnoRuntime.queryInterface(XExtendedToolkit.class,oObj);
 
 
         AccessibilityTools at = new AccessibilityTools();
 
-        XWindow xWindow = (XWindow)
+        XWindow xWindow =
                 UnoRuntime.queryInterface(XWindow.class,tk.getActiveTopWindow());
 
         XAccessible xRoot = at.getAccessibleObject(xWindow);
@@ -165,7 +165,7 @@ public class SvxGraphCtrlAccessibleContext extends TestCase{
         TestEnvironment tEnv = new TestEnvironment(oObj);
 
         //selecting the inserted shape
-        final XSelectionSupplier SelSupp = (XSelectionSupplier)
+        final XSelectionSupplier SelSupp =
                 UnoRuntime.queryInterface(XSelectionSupplier.class,xController);
 
         tEnv.addObjRelation("EventProducer",
@@ -191,7 +191,7 @@ public class SvxGraphCtrlAccessibleContext extends TestCase{
     */
     protected void cleanup( TestParameters Param, PrintWriter log) {
 
-        XModel aModel = (XModel)
+        XModel aModel =
             UnoRuntime.queryInterface(XModel.class, xDrawDoc);
 
         XController xController = aModel.getCurrentController();
@@ -199,9 +199,9 @@ public class SvxGraphCtrlAccessibleContext extends TestCase{
         //Closing ImageMapDialog
         try {
             String aSlotID = "slot:10371";
-            XDispatchProvider xDispProv = (XDispatchProvider)
+            XDispatchProvider xDispProv =
                 UnoRuntime.queryInterface( XDispatchProvider.class, xController );
-            XURLTransformer xParser = (com.sun.star.util.XURLTransformer)
+            XURLTransformer xParser =
                 UnoRuntime.queryInterface(XURLTransformer.class,
             ((XMultiServiceFactory)Param.getMSF()).createInstance("com.sun.star.util.URLTransformer"));
             // Because it's an in/out parameter we must use an array of URL objects.

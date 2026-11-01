@@ -379,6 +379,11 @@ unsigned char * codeSnippet(
     // INT 0x3
     //*p++ = 0xcc;
 
+    // When it doubt about correctness,
+    // uncomment this and disassemble at runtime:
+    // INT 0x3
+    //*p++ = 0xcc;
+
     if (isArgFloat[0])
     {
         // movsd QWORD[rsp+8], XMM0

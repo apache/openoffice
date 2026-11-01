@@ -74,7 +74,7 @@ public class ScIndexEnumeration_TableConditionalEntryEnumeration extends TestCas
     */
     protected void cleanup( TestParameters tParam, PrintWriter log ) {
         log.println( "    disposing xSheetDoc " );
-        XComponent oComp = (XComponent)
+        XComponent oComp =
             UnoRuntime.queryInterface (XComponent.class, xSpreadsheetDoc) ;
         util.DesktopTools.closeDoc(oComp);
     }
@@ -87,12 +87,12 @@ public class ScIndexEnumeration_TableConditionalEntryEnumeration extends TestCas
 
         log.println("getting a sheet");
         XSpreadsheet oSheet = null;
-        XIndexAccess oIndexAccess = (XIndexAccess)
+        XIndexAccess oIndexAccess =
             UnoRuntime.queryInterface(XIndexAccess.class, xSpreadsheets);
 
         try {
-            oSheet = (XSpreadsheet) AnyConverter.toObject(
-                    new Type(XSpreadsheet.class),oIndexAccess.getByIndex(0));
+            oSheet = AnyConverter.toObject(
+                    XSpreadsheet.class,oIndexAccess.getByIndex(0));
         } catch (com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace(log);
             throw new StatusException( "Couldn't get a spreadsheet", e);
@@ -118,7 +118,7 @@ public class ScIndexEnumeration_TableConditionalEntryEnumeration extends TestCas
         XPropertySet Props = null;
 
         try {
-            Props = (XPropertySet)
+            Props =
                 UnoRuntime.queryInterface(XPropertySet.class, oSheet);
             CFormat = Props.getPropertyValue("ConditionalFormat");
             if (utils.isVoid(CFormat)) {
@@ -133,7 +133,7 @@ public class ScIndexEnumeration_TableConditionalEntryEnumeration extends TestCas
         }
 
         try {
-            XSheetConditionalEntries xSCE = (XSheetConditionalEntries)
+            XSheetConditionalEntries xSCE =
                 UnoRuntime.queryInterface(XSheetConditionalEntries.class, CFormat);
             xSCE.addNew(Conditions());
             Props.setPropertyValue("ConditionalFormat", xSCE);
@@ -157,7 +157,7 @@ public class ScIndexEnumeration_TableConditionalEntryEnumeration extends TestCas
         }
 
         log.println("creating a new environment for object");
-        XEnumerationAccess ea = (XEnumerationAccess)
+        XEnumerationAccess ea =
                     UnoRuntime.queryInterface(XEnumerationAccess.class,oObj);
 
         oObj = ea.createEnumeration();

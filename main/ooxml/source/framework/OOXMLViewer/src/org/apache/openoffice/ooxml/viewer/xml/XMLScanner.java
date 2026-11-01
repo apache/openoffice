@@ -297,7 +297,7 @@ public class XMLScanner
 
     private void ScanWhitespace ()
     {
-        final StringBuffer aBuffer = new StringBuffer();
+        final StringBuilder aBuffer = new StringBuilder();
         final int nStartOffset = mnOffset;
 
         while (true)

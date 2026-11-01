@@ -88,7 +88,7 @@ public class ScImportDescriptorBase extends TestCase {
      */
     protected void cleanup( TestParameters tParam, PrintWriter log ) {
         log.println( "    disposing xSheetDoc " );
-        XComponent oComp = (XComponent) UnoRuntime.queryInterface
+        XComponent oComp = UnoRuntime.queryInterface
             (XComponent.class, xSpreadsheetDoc) ;
         util.DesktopTools.closeDoc(oComp);
     }
@@ -124,16 +124,16 @@ public class ScImportDescriptorBase extends TestCase {
         if (xSpreadsheets == null) log.println("FAILED"); else log.println("OK");
 
         log.println("getting a sheet");
-        XIndexAccess oIndexAccess = (XIndexAccess)
+        XIndexAccess oIndexAccess =
                     UnoRuntime.queryInterface(XIndexAccess.class, xSpreadsheets);
 
         try {
-            oObj = (XInterface) UnoRuntime.queryInterface(XInterface.class,oIndexAccess.getByIndex(0));
+            oObj = UnoRuntime.queryInterface(XInterface.class,oIndexAccess.getByIndex(0));
         } catch (Exception e) {
             throw new StatusException( "Couldn't get a spreadsheet", e);
         }
 
-        xIMP = (XImportable) UnoRuntime.queryInterface(XImportable.class,oObj);
+        xIMP = UnoRuntime.queryInterface(XImportable.class,oObj);
 
         TestEnvironment tEnv = new TestEnvironment(oObj);
         tEnv.addObjRelation("xIMP",xIMP);

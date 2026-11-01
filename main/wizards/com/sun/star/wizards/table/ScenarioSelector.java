@@ -23,7 +23,6 @@
 package com.sun.star.wizards.table;
 
 import java.util.ArrayList;
-import java.util.Vector;
 
 import com.sun.star.awt.ItemEvent;
 import com.sun.star.awt.XFixedText;

@@ -39,6 +39,7 @@ $(eval $(call gb_Module_add_targets,sw,\
 ifeq ($(ENABLE_UNIT_TESTS),YES)
 $(eval $(call gb_Module_add_check_targets,sw,\
 	GoogleTest_sw_bigpointerarray \
+	GoogleTest_sw_ww8plcf \
 ))
 endif
 

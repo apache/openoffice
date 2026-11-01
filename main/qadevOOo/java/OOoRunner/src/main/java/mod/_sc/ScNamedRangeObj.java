@@ -85,7 +85,7 @@ public class ScNamedRangeObj extends TestCase {
     */
     protected void cleanup( TestParameters tParam, PrintWriter log ) {
         log.println( "    disposing xSheetDoc " );
-        XComponent oComp = (XComponent)
+        XComponent oComp =
             UnoRuntime.queryInterface(XComponent.class, xSheetDoc) ;
         util.DesktopTools.closeDoc(oComp);
     }
@@ -115,7 +115,7 @@ public class ScNamedRangeObj extends TestCase {
         log.println("Getting test object ") ;
 
         // Getting named ranges.
-        XPropertySet docProps = (XPropertySet)
+        XPropertySet docProps =
             UnoRuntime.queryInterface(XPropertySet.class, xSheetDoc);
 
         Object ranges = null;
@@ -129,7 +129,7 @@ public class ScNamedRangeObj extends TestCase {
             throw new StatusException("Couldn't get NamedRanges", e);
         }
 
-        XNamedRanges xNamedRanges = (XNamedRanges)
+        XNamedRanges xNamedRanges =
             UnoRuntime.queryInterface(XNamedRanges.class, ranges);
 
         CellRangeAddress DataArea = new CellRangeAddress((short)0, 0, 0, 1, 1);
@@ -147,8 +147,8 @@ public class ScNamedRangeObj extends TestCase {
         xNamedRanges.outputList(listOutputPosition);
 
         try {
-            oObj = (XInterface) AnyConverter.toObject(
-                new Type(XInterface.class),xNamedRanges.getByName("ANamedRange"));
+            oObj = AnyConverter.toObject(
+                XInterface.class,xNamedRanges.getByName("ANamedRange"));
         } catch(com.sun.star.lang.WrappedTargetException e){
             e.printStackTrace(log);
             throw new StatusException("Couldn't get by name", e);

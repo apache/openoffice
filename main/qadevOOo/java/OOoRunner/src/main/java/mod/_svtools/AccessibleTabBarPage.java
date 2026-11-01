@@ -115,7 +115,7 @@ public class AccessibleTabBarPage extends TestCase {
 
         try {
             log.println( "creating a calc document" );
-            xDoc = (XComponent) UnoRuntime.queryInterface(XComponent.class, SOF.createCalcDoc(null));// SOF.createDrawDoc(null);
+            xDoc = UnoRuntime.queryInterface(XComponent.class, SOF.createCalcDoc(null));// SOF.createDrawDoc(null);
         } catch ( com.sun.star.uno.Exception e ) {
             // Some exception occurred. FAILED
             e.printStackTrace( log );
@@ -136,7 +136,7 @@ public class AccessibleTabBarPage extends TestCase {
         }
 
 
-        XExtendedToolkit tk = (XExtendedToolkit)
+        XExtendedToolkit tk =
             UnoRuntime.queryInterface(XExtendedToolkit.class, oObj);
 
 
@@ -144,14 +144,14 @@ public class AccessibleTabBarPage extends TestCase {
 
         shortWait();
 
-        XWindow xWindow = (XWindow)
+        XWindow xWindow =
             UnoRuntime.queryInterface(XWindow.class,tk.getActiveTopWindow());
 
         XAccessible xRoot = at.getAccessibleObject(xWindow);
         at.printAccessibleTree(log, xRoot, tParam.getBool(util.PropertyName.DEBUG_IS_ACTIVE));
         oObj = at.getAccessibleObjectForRole(xRoot, AccessibleRole.PAGE_TAB, "Sheet1");
         XAccessibleContext acc = at.getAccessibleObjectForRole(xRoot, AccessibleRole.PAGE_TAB, "Sheet2");
-        XAccessibleComponent accComp = (XAccessibleComponent) UnoRuntime.queryInterface(
+        XAccessibleComponent accComp = UnoRuntime.queryInterface(
                                                XAccessibleComponent.class,
                                                acc);
         final Point point = accComp.getLocationOnScreen();

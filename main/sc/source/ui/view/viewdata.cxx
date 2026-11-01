@@ -2957,7 +2957,7 @@ void ScViewData::ReadUserDataSequence(const uno::Sequence <beans::PropertyValue>
 	// the pThisTab == pTabData[nTabNo] invariant before anyone dereferences it
 	// (e.g. ScTabView::SetTabNo -> GetActivePart()).  Mirrors SetTabNo (line
 	// ~1502).  Without it, a debug build AVs on document open (reads 0xDDDDDDDD);
-	// release masks it only via allocator MRU reuse.  See bug-readme.md §14.
+	// release masks it only via allocator MRU reuse.
 	CreateTabData( nTabNo );
 	pThisTab = pTabData[nTabNo];
 

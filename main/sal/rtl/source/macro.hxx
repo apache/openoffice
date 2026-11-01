@@ -77,6 +77,8 @@ this is inserted for the case that the preprocessor ignores error
 #    else
 #        define THIS_ARCH "MIPS_EL"
 #    endif
+#elif defined AARCH64
+#    define THIS_ARCH "AARCH64"
 #elif defined ARM
 #    ifdef __ARM_EABI__
 #        define THIS_ARCH "ARM_EABI"

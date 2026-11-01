@@ -655,6 +655,8 @@ static void readExtraFields( MemoryByteGrabber &rMemGrabber, sal_Int16 nLength, 
 			throw ZipException( OUString( RTL_CONSTASCII_USTRINGPARAM ( "Invalid ZIP extra fields" ) ), uno::Reference < XInterface > () );
 		switch ( nHeaderID ) {
 		case 0x7075: // Info-ZIP Unicode Path Extra Field
+			if ( nDataSize < 5 )
+				throw ZipException( OUString( RTL_CONSTASCII_USTRINGPARAM ( "Invalid size for ZIP unicode path extra field" ) ), uno::Reference < XInterface > () );
 			rMemGrabber >> n8; // Version
 			rMemGrabber.skipBytes( 4 ); // skip NameCRC32
 			s = rtl::OUString::intern ( (sal_Char *) rMemGrabber.getCurrentPos(),
@@ -980,7 +982,7 @@ sal_Int32 ZipFile::readCEN()
 				throw ZipException(OUString( RTL_CONSTASCII_USTRINGPARAM ( "ZIP file contains a hole between local descriptor and file data" ) ), uno::Reference < XInterface > () );
 			// File data
 			nPos += aIt->second.nCompressedSize;
-			if ( aIt->second.nFlag & ( 1 << 3 ) ) {
+			if ( aIt->second.bHasDataDescriptor ) {
 				// Data descriptor...
 				nPos += 16;  // ...with signature
 				nPos2 = nPos - 4; // ...without signature

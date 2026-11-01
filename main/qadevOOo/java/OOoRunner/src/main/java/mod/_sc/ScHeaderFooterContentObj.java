@@ -81,7 +81,7 @@ public class ScHeaderFooterContentObj extends TestCase {
     */
     protected void cleanup( TestParameters tParam, PrintWriter log ) {
         log.println( "    disposing xSheetDoc " );
-        XComponent oComp = (XComponent)
+        XComponent oComp =
             UnoRuntime.queryInterface (XComponent.class, xSpreadsheetDoc);
         util.DesktopTools.closeDoc(oComp);
     }
@@ -107,16 +107,16 @@ public class ScHeaderFooterContentObj extends TestCase {
         XNameAccess PageStyles = null;
         XStyle StdStyle = null;
 
-        XStyleFamiliesSupplier StyleFam = (XStyleFamiliesSupplier)
+        XStyleFamiliesSupplier StyleFam =
             UnoRuntime.queryInterface(
                 XStyleFamiliesSupplier.class,
                 xSpreadsheetDoc );
         XNameAccess StyleFamNames = StyleFam.getStyleFamilies();
         try{
-            PageStyles = (XNameAccess) AnyConverter.toObject(
-                new Type(XNameAccess.class),StyleFamNames.getByName("PageStyles"));
-            StdStyle = (XStyle) AnyConverter.toObject(
-                        new Type(XStyle.class),PageStyles.getByName("Default"));
+            PageStyles = AnyConverter.toObject(
+                XNameAccess.class,StyleFamNames.getByName("PageStyles"));
+            StdStyle = AnyConverter.toObject(
+                        XStyle.class,PageStyles.getByName("Default"));
         } catch(com.sun.star.lang.WrappedTargetException e){
             e.printStackTrace(log);
             throw new StatusException("Couldn't get by name", e);
@@ -129,7 +129,7 @@ public class ScHeaderFooterContentObj extends TestCase {
         }
 
         //get the property-set
-        PropSet = (XPropertySet)
+        PropSet =
             UnoRuntime.queryInterface(XPropertySet.class, StdStyle);
 
         XHeaderFooterContent RPHC = null;
@@ -137,8 +137,8 @@ public class ScHeaderFooterContentObj extends TestCase {
         // first we write what we are intend to do to log file
         log.println( "creating a test environment" );
         try {
-            RPHC = (XHeaderFooterContent) AnyConverter.toObject(
-                new Type(XHeaderFooterContent.class),
+            RPHC = AnyConverter.toObject(
+                XHeaderFooterContent.class,
                     PropSet.getPropertyValue("RightPageHeaderContent"));
         } catch(com.sun.star.lang.WrappedTargetException e){
             e.printStackTrace(log);

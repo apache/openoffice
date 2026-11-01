@@ -104,20 +104,20 @@ public class SdPageLinkTargets extends TestCase {
 
         // create testobject here
         XDrawPage the_page = DrawTools.getDrawPage(xDrawDoc, 0);
-        XLinkTargetSupplier oLTS = (XLinkTargetSupplier)
+        XLinkTargetSupplier oLTS =
             UnoRuntime.queryInterface(XLinkTargetSupplier.class, the_page);
         XInterface oObj = oLTS.getLinks();
 
         SOfficeFactory SOF = SOfficeFactory.getFactory(
                                     (XMultiServiceFactory)Param.getMSF());
         log.println( "inserting some Shapes" );
-        XShapes oShapes = (XShapes)
+        XShapes oShapes =
             UnoRuntime.queryInterface(XShapes.class,the_page);
         XShape oShape =
             SOF.createShape(xDrawDoc, 15000, 13500, 5000, 5000, "OLE2");
         oShapes.add(oShape);
 
-        XPropertySet shape_props = (XPropertySet)
+        XPropertySet shape_props =
                         UnoRuntime.queryInterface(XPropertySet.class,oShape);
 
         log.println("Inserting a Chart");

@@ -145,4 +145,6 @@ namespace ppc64
 {
      enum ppclimits { MAX_GPR_REGS = 8, MAX_SSE_REGS = 13 };
     bool return_in_hidden_param( typelib_TypeDescriptionReference *pTypeRef );
+    sal_Int32 return_in_fprs( typelib_TypeDescriptionReference *pTypeRef, typelib_TypeClass & eBase );
+    const typelib_TypeClass TYPECLASS_FPRS = (typelib_TypeClass) 100;
 }

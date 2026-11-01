@@ -235,19 +235,19 @@ public class OpenOfficeDatabaseReportExtractor extends Assurance
 //                assure("can't create instance of com.sun.star.sdb.DatabaseContext", x != null);
 //                GlobalLogWriter.println("createInstance com.sun.star.sdb.DatabaseContext done");
 
-//                XNameAccess xNameAccess = (XNameAccess) UnoRuntime.queryInterface(XNameAccess.class, x);
+//                XNameAccess xNameAccess = UnoRuntime.queryInterface(XNameAccess.class, x);
 //                showElements(xNameAccess);
 //                Object aObj = xNameAccess.getByName(sFileURL);
 //                    GlobalLogWriter.println("1");
 
 //                PropertySetHelper aHelper = new PropertySetHelper(aObj);
-//                XDocumentDataSource xDataSource = (XDocumentDataSource)UnoRuntime.queryInterface(XDocumentDataSource.class, aObj);
+//                XDocumentDataSource xDataSource = UnoRuntime.queryInterface(XDocumentDataSource.class, aObj);
 //                Object aDatabaseDocument = aHelper.getPropertyValueAsObject("DatabaseDocument");
 //                XOfficeDatabaseDocument xOfficeDBDoc = xDataSource.getDatabaseDocument();
 
                 XOfficeDatabaseDocument xOfficeDBDoc = UnoRuntime.queryInterface(XOfficeDatabaseDocument.class, xDocComponent);
 
-//                XOfficeDatabaseDocument xOfficeDBDoc = (XOfficeDatabaseDocument)UnoRuntime.queryInterface(XOfficeDatabaseDocument.class, xDataSource);
+//                XOfficeDatabaseDocument xOfficeDBDoc = UnoRuntime.queryInterface(XOfficeDatabaseDocument.class, xDataSource);
                 assure("can't access DatabaseDocument", xOfficeDBDoc != null);
 //                GlobalLogWriter.println("2");
 

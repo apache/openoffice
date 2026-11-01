@@ -19,8 +19,12 @@ dnl *  under the License.
 dnl *
 dnl * *************************************************************
 AC_REVISION( $Revision$ )
-AC_PREREQ(2.50)
-AC_INIT()
+dnl macOS needs autoconf 2.72 (2.71 mis-detects the toolchain there);
+dnl other platforms remain on the older 2.71 floor.
+m4_define([AOO_REQUIRED_AUTOCONF],
+  [m4_if(m4_esyscmd_s([uname]), [Darwin], [2.72], [2.71])])
+AC_PREREQ(AOO_REQUIRED_AUTOCONF)
+AC_INIT
 echo "$@" >config.parms
 AC_ARG_WITH(dmake-path,
 [  --with-dmake-path=<PATH TO EXECUTABLE>   Specify the location of dmake ],
@@ -28,7 +32,7 @@ AC_ARG_WITH(dmake-path,
 ])
 AC_ARG_WITH(dmake-url,
 [  --with-dmake-url=<URL>   Specify the location of downloadable dmake source code. For example:
-                          https://github.com/jimjag/dmake/archive/v4.13.1/dmake-4.13.1.tar.gz
+                          https://github.com/jimjag/dmake/archive/v4.13.2/dmake-4.13.2.tar.gz
                           Note that dmake is under GPL license.],
 [  DMAKE_URL="$withval"
 ])
@@ -128,7 +132,7 @@ AC_ARG_WITH(epm,
 ],,)
 AC_ARG_WITH(epm-url,
 [  --with-epm-url=<URL>    Specify the location of downloadable epm source code. For example:
-                            https://github.com/jimjag/epm/archive/v5.0.0/epm-5.0.0.tar.gz
+                            https://github.com/jimjag/epm/archive/v5.1.0/epm-5.1.0.tar.gz
                           Version 5.0.0 or later is required.
 ],[  EPM_URL="$withval"
 ])
@@ -437,6 +441,20 @@ AC_ARG_WITH(system-expat,
 AC_ARG_WITH(system-libxml,
 [  --with-system-libxml    Use libxml already on system
 ],,)
+AC_ARG_WITH(static-system-libs,
+[  --with-static-system-libs=LIST
+                          Comma-separated list of system libraries to link
+                          statically, each NAME or NAME:DIR, e.g.
+                          "libxml,libxslt,curl,libiconv:/usr/local".
+                          Supported: libxml, libxslt, curl, libiconv.
+                          NAME alone uses the prefix the matching
+                          --with-system-NAME resolved; libiconv has no such
+                          option, so it always needs the :DIR form. Without
+                          this the archive is used only when the prefix
+                          happens to have no dylib, so a dylib appearing
+                          there silently switches the build to dynamic
+                          linking.
+],,)
 AC_ARG_WITH(system-python,
 [  --with-system-python    Use python already on system
 ],,)
@@ -497,25 +515,13 @@ AC_ARG_ENABLE(pdfimport,
 AC_ARG_ENABLE(wiki-publisher,
 [  --enable-wiki-publisher      enables the build of the Wiki Publisher extension
 ],,)
-AC_ARG_WITH(commons-codec-jar,
-[  --with-commons-codec-jar=JARFILE   Specify path to jarfile manually ],
-[ COMMONS_CODEC_JAR="$withval"
-])
 AC_ARG_WITH(commons-lang-jar,
 [  --with-commons-lang-jar=JARFILE   Specify path to jarfile manually ],
 [ COMMONS_LANG_JAR="$withval"
 ])
-AC_ARG_WITH(commons-httpclient-jar,
-[  --with-commons-httpclient-jar=JARFILE   Specify path to jarfile manually ],
-[ COMMONS_HTTPCLIENT_JAR="$withval"
-])
 AC_ARG_WITH(commons-logging-jar,
 [  --with-commons-logging-jar=JARFILE   Specify path to jarfile manually ],
 [ COMMONS_LOGGING_JAR="$withval"
-])
-AC_ARG_WITH(servlet-api-jar,
-[  --servlet-api-jar=JARFILE   Specify path to jarfile manually ],
-[ SERVLETAPI_JAR="$withval"
 ])
 AC_ARG_ENABLE(report-builder,
 [  --enable-report-builder  enables the build of the Report Builder extension
@@ -714,6 +720,15 @@ AC_ARG_WITH(csc-path,
 
                           Usage: --with-csc-path=<absolute path to csc.exe>
 ],,)
+AC_ARG_WITH(host-python,
+[  --with-host-python      For Windows users on a modern MSVC, the Python 3.9 or
+                          newer used to RUN the bundled Python's build scripts.
+                          It is not the Python that gets shipped.  Autodetected
+                          from the path; supply it when that finds nothing, or
+                          the build would try to download one.
+
+                          Usage: --with-host-python=<absolute path to python.exe>
+],,)
 AC_ARG_WITH(nsis-path,
 [  --with-nsis-path        For Windows users, please supply the path to the
                           "Nullsoft Scriptable Install System" (NSIS). If NSIS
@@ -736,6 +751,31 @@ AC_ARG_WITH(frame-home,
 
                           Usage: --with-frame-home=<absolute path to Framework SDK [[home]]>
 ],,)
+AC_ARG_WITH(msbuild-path,
+[  --with-msbuild-path     For Windows users building with a VS2015-or-newer
+                          toolset: the directory holding MSBuild.exe.  Only
+                          needed when it is not beside the toolset.
+
+                          Usage: --with-msbuild-path=<absolute path to MSBuild.exe directory>
+],,)
+
+AC_ARG_WITH(windows-sdk-home,
+[  --with-windows-sdk-home For Windows users building with a VS2015-or-newer
+                          toolset: the root of the Windows 10/11 SDK, i.e. the
+                          directory holding Include/, Lib/ and bin/.  Only
+                          needed when it is not in the default location.
+
+                          Usage: --with-windows-sdk-home=<absolute path to Windows Kits\10>
+],,)
+
+AC_ARG_WITH(windows-sdk-version,
+[  --with-windows-sdk-version
+                          Pin the Windows 10/11 SDK to one version instead of
+                          taking the newest complete one that is installed.
+
+                          Usage: --with-windows-sdk-version=10.0.19041.0
+],,)
+
 AC_ARG_WITH(psdk-home,
 [  --with-psdk-home        For Windows users, please supply the path to the
                           Microsoft Platform SDK.
@@ -922,14 +962,44 @@ AC_ARG_WITH(arm-target,
 AC_ARG_WITH(macosx-target,
 [  --macosx-target            The minimal macOS/OSX deployment and build target
 
-                              Usage: --with-macosx-target=10.9
-],with_macosx_target=$withval,with_macosx_target=10.9)
+                              Usage: --with-macosx-target=11.0
+],with_macosx_target=$withval,with_macosx_target=11.0)
 AC_ARG_WITH(macosx-sdk,
 [  --macosx-sdk            The macOS SDK to build against
 
                               Usage: --with-macosx-sdk=10.11
                               (or full path: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk)
 ],with_macosx_sdk=$withval,)
+AC_ARG_WITH(macosx-codesigning-identity,
+[  --with-macosx-codesigning-identity
+                          Code-sign the macOS application bundle and disk image
+                          while packaging, with this codesign identity
+                          ("-" for ad-hoc). Unset: package unsigned, as before.
+                          Traditional macOS language packs cannot be installed
+                          into a signed application because that would invalidate
+                          its resource seal.
+
+                              Usage: --with-macosx-codesigning-identity="Developer ID Application: ..."
+],with_macosx_codesigning_identity=$withval,)
+AC_ARG_WITH(macosx-codesigning-keychain,
+[  --with-macosx-codesigning-keychain
+                          Keychain holding that identity (default: the
+                          keychain search list, i.e. normally the login keychain).
+
+                              Usage: --with-macosx-codesigning-keychain=/path/to/build.keychain-db
+],with_macosx_codesigning_keychain=$withval,)
+AC_ARG_WITH(macosx-notary-profile,
+[  --with-macosx-notary-profile
+                          After code-signing with a Developer ID identity, submit
+                          the application and disk image to Apple's notary service
+                          and staple the ticket, using this "xcrun notarytool
+                          store-credentials" keychain profile name. Requires
+                          --with-macosx-codesigning-identity to be a real
+                          Developer ID identity (not "-"). Unset: package signed
+                          but not notarized, as before.
+
+                              Usage: --with-macosx-notary-profile=my-notary-profile
+],with_macosx_notary_profile=$withval,)
 AC_ARG_WITH(rat-scan,
 [  --with-rat-scan         Scan source code for license headers.
                           Use as --with-rat-scan to automatically download pre-built Rat binaries.
@@ -987,6 +1057,40 @@ GREP=$EGREP
 fi
 AC_PROG_AWK
 AC_PATH_PROG( AWK, $AWK)
+
+dnl ===================================================================
+dnl  A space in $AWK is fatal, so take the 8.3 form when there is one
+dnl ===================================================================
+dnl  configure.ac spells $AWK unquoted in some forty places, so a path
+dnl  with a space in it does not merely look untidy -- it word-splits,
+dnl  and the build dies a long way from here with
+dnl
+dnl      ./configure: line NNNN: /cygdrive/c/Program: No such file
+dnl
+dnl  That is what a Cygwin carrying gawk-<version>.exe but no plain
+dnl  gawk gives you: the only gawk left on PATH is then Git for
+dnl  Windows' copy, under C:\Program Files.
+dnl
+dnl  Fixing it on the Cygwin side -- copying gawk-<version>.exe to
+dnl  gawk.exe -- does work, and does not survive the next Cygwin
+dnl  update, which is why it keeps coming back.  The 8.3 form of the
+dnl  very same file has no space and needs no upkeep at all.
+case "$AWK" in
+*\ *)
+   _awk_short=`cygpath -d "$AWK" 2>/dev/null`
+   if test -n "$_awk_short"; then
+      _awk_short=`cygpath -u "$_awk_short" 2>/dev/null`
+   fi
+   if test -n "$_awk_short" -a -x "$_awk_short"; then
+      AC_MSG_NOTICE([$AWK has a space in it, using $_awk_short instead])
+      AWK="$_awk_short"
+   else
+      AC_MSG_WARN([$AWK has a space in it and has no 8.3 name.
+Either put a space-free awk earlier on PATH, or enable 8.3 names on that
+volume; several checks below will fail on the space otherwise.])
+   fi
+   ;;
+esac
 if test -z "$AWK"; then
    AC_MSG_ERROR([install awk to run this script])
 fi
@@ -1048,7 +1152,7 @@ AC_SUBST(USE_PACKAGER)
 dnl ===================================================================
 dnl Checks for the operating system and processor.
 dnl ===================================================================
-AC_CANONICAL_SYSTEM
+AC_CANONICAL_TARGET
 if test "$build" != "$host" -o "$build" != "$target" \
   -o "$host" != "$target"; then
 	AC_MSG_WARN([cross-compiling by any means is not supported (yet)!])
@@ -1146,6 +1250,7 @@ case "$build_os" in
          	   enable_systray=no
       		fi
 		SDKROOT="`xcrun --sdk macosx --show-sdk-path`"
+		export SDKROOT
 		if test ! -n "$CC"; then
 		   CC="`xcrun -f clang`"
 		fi
@@ -1159,9 +1264,29 @@ case "$build_os" in
 		fi
 		# Don't use OSVERSION until we know no conflicts result from it
 		_darwin_version="`uname -r | $AWK -F . '{ print $1 }'`"
-		# FIXME: Assumes 10.x, breaks w/ Big Sur
-		_osx_version="10.`expr $_darwin_version - 4`"
+		# Map the Darwin (XNU) major version to the macOS version.
+		# Darwin 6..19  => macOS 10.(darwin-4)   (10.2 .. 10.15)
+		# Darwin 20+    => macOS (darwin-9)       (11, 12, 13, ...)
+		if test "$_darwin_version" -ge 20; then
+		   _osx_version="`expr $_darwin_version - 9`"
+		else
+		   _osx_version="10.`expr $_darwin_version - 4`"
+		fi
 		AC_MSG_NOTICE([Detected Darwin version: $_darwin_version ($_osx_version)])
+		# Detect the build CPU architecture. Apple Silicon (arm64) reports
+		# "arm64" from uname -m and maps to the aarch64 toolchain/bridge.
+		_darwin_cpu="`uname -m`"
+		case "$_darwin_cpu" in
+		   arm64|aarch64)
+		      AC_MSG_NOTICE([Detected Apple Silicon (arm64) build host])
+		      ;;
+		   x86_64|i*86)
+		      AC_MSG_NOTICE([Detected Intel (x86_64) build host])
+		      ;;
+		   *)
+		      AC_MSG_ERROR([Unsupported macOS CPU architecture: $_darwin_cpu])
+		      ;;
+		esac
 		;;
 	os2*)
 		test_x=no
@@ -1644,7 +1769,9 @@ if test $_os = "WINNT"; then
    dnl ===================================================================
    dnl As long as awk instead of $AWK is used somewhere in the sources,
    dnl check for $AWK and awk. $AWK is pointing to gawk in cygwin.
-      if test -L $AWK -o -L `which awk` ; then
+      dnl  Quoted: either side can be a path with a space in it, and an
+      dnl  unquoted one splits into "test: too many arguments" here.
+      if test -L "$AWK" -o -L "`which awk`" ; then
          AC_MSG_ERROR([$AWK / awk is a cygwin symlink!
 Native Windows programs cannot use cygwin symlinks. Remove the symbolic
 link, and copy the program to the name of the link.])
@@ -1738,6 +1865,15 @@ dnl The following checks for gcc, cc and then cl (if it weren't guarded for win3
 if test "$_os" != "WINNT" -o "$WITH_MINGWIN" = "yes"; then
    AC_PROG_CC
 fi
+
+dnl Newer autoconf (>= 2.70) probes for the highest C standard the compiler
+dnl accepts and appends it (e.g. -std=gnu23) to $CC.  That breaks bundled
+dnl module configure scripts (nss/nspr, ...) which pass CC=$(CC) unquoted as
+dnl an inline environment assignment: the embedded space makes the shell
+dnl treat -std=gnu23 as a command ("-std=gnu23: command not found").  We pin
+dnl the C dialect per-module in solenv/inc/*.mk anyway, so strip the appended
+dnl -std= token and keep $CC a single bare compiler word.
+CC=`echo "$CC" | $SED 's/ -std=[[^ ]]*//g'`
 
 COMPATH=`dirname "$CC"`
 if test "$COMPATH" = "." ; then
@@ -1883,9 +2019,9 @@ if test "$DMAKE" = "no"; then
        DMAKE_URL=$with_dmake_url
        AC_MSG_RESULT([dmake will be downloaded and compiled in bootstrap])
        DMAKE=
+       BUILD_DMAKE=YES
     else
        AC_MSG_ERROR([no URL for dmake source code specified, either. Use --with-dmake-url to supply an URL; run configure with the --help option for a list of possible URLs.])
-       BUILD_DMAKE=YES
     fi
 else
     AC_MSG_CHECKING([whether the found dmake is the right dmake])
@@ -1918,6 +2054,7 @@ if test "$DMAKE" = "no"; then
    AC_MSG_ERROR([please use --with-dmake-path or --with-dmake-url to specify dmake executable or source])
 fi
 AC_SUBST(DMAKE_URL)
+AC_SUBST(BUILD_DMAKE)
 AC_SUBST(DMAKE_PATH)
 AC_SUBST(IS_SYSTEM_DMAKE)
 
@@ -1939,6 +2076,26 @@ if test -z "$GNUTAR"; then
 fi
 
 AC_SUBST(GNUTAR)
+
+dnl ===================================================================
+dnl Search for xz, needed to unpack .tar.xz external dependency tarballs
+dnl ===================================================================
+AC_MSG_CHECKING([for xz])
+for a in $XZ xz; do
+      $a --version 2> /dev/null > /dev/null
+      if test $? -eq 0; then
+           XZ=$a
+           break
+      fi
+done
+if test -z "$XZ"; then
+    AC_MSG_RESULT([not found])
+    AC_MSG_WARN([xz not found - building with a .tar.xz external dependency will fail. Install xz-utils.])
+    echo "xz not found - building with a .tar.xz external dependency will fail. Install xz-utils." >> warn
+else
+    AC_MSG_RESULT($XZ)
+fi
+AC_SUBST(XZ)
 
 dnl ===================================================================
 dnl  Test the solaris compiler version
@@ -2096,8 +2253,29 @@ if test "$_os" = "WINNT"; then
 		AC_MSG_RESULT([done])
 
 		dnl ===========================================================
+		dnl  Which MSVC layout is --with-cl-home pointing at?
+		dnl ===========================================================
+		dnl  VS2008 (VC9) keeps cl.exe in VC/bin and its debug-info server
+		dnl  (mspdb80.dll) somewhere else entirely -- Common7/IDE, or the
+		dnl  Windows SDK's own bin.  From VS2015 on the toolset is versioned,
+		dnl  self-contained and reached as
+		dnl      VC/Tools/MSVC/<toolset>/bin/Host<host>/<target>/cl.exe
+		dnl  with its headers in <toolset>/include, its import libraries in
+		dnl  <toolset>/lib/<target>, and mspdb140.dll next to cl.exe.
+		dnl  Detecting the layout here lets the mspdb hunt and the VC/bin
+		dnl  logic below stay exactly as they were for VC9.
+		MSVC_MODERN=
+		if test -d "$with_cl_home/bin/Hostx86" -o -d "$with_cl_home/bin/Hostx64"; then
+			MSVC_MODERN="TRUE"
+		fi
+
+		dnl ===========================================================
 		dnl  Check for mspdb71.dll/mspdb80.dll
 		dnl ===========================================================
+		dnl  VC9 and older only: a modern toolset ships its mspdb*.dll in the
+		dnl  same directory as cl.exe, which the compile actions already have
+		dnl  on PATH.
+		if test -z "$MSVC_MODERN"; then
 		dnl  .NET 2003/5/8 Compiler
 		if test -n "$with_mspdb_path";then
 			with_mspdb_path=`cygpath -u "$with_mspdb_path"`
@@ -2132,8 +2310,36 @@ if test "$_os" = "WINNT"; then
 		MSPDB_PATH=`cygpath -u "$MSPDB_PATH"`
 		dnl The path needs to be added before cl is called
 		PATH="$MSPDB_PATH:$PATH"
+		fi
 
 		AC_MSG_CHECKING([the Microsoft C/C++ Compiler])
+		dnl  A modern toolset splits bin/ by HOST and then by TARGET, so the
+		dnl  cross compiler is a directory rather than VC9's "bin/amd64"
+		dnl  suffix.  Prefer a Hostx64 tree when one exists: the x64-hosted
+		dnl  compiler is not confined to a 2GB address space, which matters
+		dnl  on the larger translation units in this tree.
+		if test -n "$MSVC_MODERN"; then
+		  if test -d "$with_cl_home/bin/Hostx64"; then
+		    cl_host="Hostx64"
+		  else
+		    cl_host="Hostx86"
+		  fi
+		  case "$build_cpu" in
+		    i?86)
+		      cl_subdirectory="bin/$cl_host/x86"
+		      ;;
+		    x86_64)
+		      if test "$BUILD_WIN64" = "TRUE" ; then
+		        cl_subdirectory="bin/$cl_host/x64"
+		      else
+		        cl_subdirectory="bin/$cl_host/x86"
+		      fi
+		      ;;
+		    *)
+		      AC_MSG_ERROR([Unknown/unsupported Windows CPU $build_cpu.])
+		      ;;
+		  esac
+		else
 		case "$build_cpu" in
 		  i?86)
 		    cl_subdirectory="bin"
@@ -2149,6 +2355,7 @@ if test "$_os" = "WINNT"; then
 		    AC_MSG_ERROR([Unknown/unsupported Windows CPU $build_cpu.])
 		    ;;
 		esac
+		fi
    		if test -x "$with_cl_home/$cl_subdirectory/cl.exe"; then
    			CC="$with_cl_home/$cl_subdirectory/cl.exe"
 			COMPATH="$with_cl_home"
@@ -2159,7 +2366,14 @@ if test "$_os" = "WINNT"; then
 			COMPATH=`cygpath -u "$COMPATH"`
 			# Remove /cl.exe from CC case insensitive
 			AC_MSG_RESULT([found ($CC)])
-			export INCLUDE=`cygpath -d "$COMPATH/Include"`
+			dnl  VC9 spells it VC/Include, a modern toolset spells it
+			dnl  <toolset>/include.  NTFS is case-insensitive so either
+			dnl  name resolves, but only one of the two directories exists.
+			if test -n "$MSVC_MODERN"; then
+				export INCLUDE=`cygpath -d "$COMPATH/include"`
+			else
+				export INCLUDE=`cygpath -d "$COMPATH/Include"`
+			fi
 			dnl  Check which Microsoft C/C++ compiler is found
 			AC_MSG_CHECKING([the Version of Microsoft C/C++ Compiler])
 dnl      The following find microsoft, matches nn.nn.nnnn then pulls numbers out.
@@ -2172,13 +2386,30 @@ dnl      The following find microsoft, matches nn.nn.nnnn then pulls numbers out
 								printf (\"%04d\",vertoken[[i]] )
 							}
 							}"`
-			AC_MSG_RESULT([found Compiler version $CCNUMVER in \"$CCTXTVER\"])
-			if test "$CCNUMVER" -ge "001500000000"; then
+			AC_MSG_RESULT([found Compiler version $CCNUMVER in "$CCTXTVER"])
+			dnl  COMEX names the compiler generation the rest of the build
+			dnl  switches on: it selects solenv/inc/wntmsci<COMEX>.mk, the
+			dnl  CVER define, and the wntmsci<COMEX> output tree.  14 is the
+			dnl  UCRT generation -- VS2015 (cl 19.00) and everything since,
+			dnl  which share one CRT and one SDK layout.  There is
+			dnl  deliberately no value per Visual Studio release: nothing in
+			dnl  this tree distinguishes VS2017 from VS2022.
+			if test "$CCNUMVER" -ge "001900000000"; then
+				COMEX=14
+				MSVSVER=2015
+				AC_MSG_RESULT([found a UCRT-generation compiler (VS2015 or newer).])
+				if test -z "$MSVC_MODERN"; then
+					AC_MSG_ERROR([cl.exe reports version $CCNUMVER, i.e. VS2015 or newer, but $with_cl_home has no bin/Host* layout. Point --with-cl-home at the versioned toolset directory, e.g. .../VC/Tools/MSVC/14.29.30133])
+				fi
+			elif test "$CCNUMVER" -ge "001500000000"; then
 				COMEX=12
 				MSVSVER=2008
 				AC_MSG_RESULT([found .NET 2008 / VS 9.0.])
+				if test -n "$MSVC_MODERN"; then
+					AC_MSG_ERROR([$with_cl_home has a modern bin/Host* layout but its cl.exe reports version $CCNUMVER. Refusing to guess which of the two it is.])
+				fi
 			else
-				AC_MSG_ERROR([Compiler too old. Use Microsoft C/C++ .NET 2008.])
+				AC_MSG_ERROR([Compiler too old. Use Microsoft C/C++ .NET 2008, or a VS2015-or-newer toolset.])
 			fi
 		else
 			AC_MSG_ERROR([Microsoft C/C++ Compiler not found. Use --with-cl-home.])
@@ -2199,7 +2430,274 @@ dnl      The following find microsoft, matches nn.nn.nnnn then pulls numbers out
 fi
 AC_SUBST(COMEX)
 AC_SUBST(MSPDB_PATH)
+AC_SUBST(MSVC_MODERN)
 AC_SUBST(USE_MINGW)
+
+dnl ===================================================================
+dnl  The CLI/.NET language binding, and whether it can be built at all
+dnl ===================================================================
+dnl  cli_ure, the .NET language binding.  It was written in Managed
+dnl  Extensions for C++ -- __gc, S"...", __pin -- which needs /clr:oldSyntax,
+dnl  and that switch was removed after VS2015; it is now C++/CLI and builds
+dnl  with either compiler generation.
+dnl
+dnl  It is still optional, because it wants a .NET SDK: csc.exe to compile the
+dnl  C# half and mscoree.lib to link the C++ half.  --disable-cli is for a
+dnl  Windows box that has a compiler but no SDK.
+dnl
+dnl  One variable rather than a test in each consumer: the module makefiles,
+dnl  the SDK's file lists and its checker all need the same answer, and they
+dnl  should not each rediscover it.
+AC_ARG_ENABLE(cli,
+[  --disable-cli           Do not build the CLI (.NET) language binding.  It
+                          needs a .NET SDK -- csc.exe and mscoree.lib -- which
+                          a Windows machine need not have.
+],,)
+DISABLE_CLI=
+if test "$_os" != "WINNT" -o "$enable_cli" = "no" ; then
+	DISABLE_CLI="TRUE"
+fi
+if test "$_os" = "WINNT" ; then
+	AC_MSG_CHECKING([whether to build the CLI language binding])
+	if test -z "$DISABLE_CLI" ; then
+		AC_MSG_RESULT([yes])
+	else
+		AC_MSG_RESULT([no, --disable-cli])
+	fi
+fi
+AC_SUBST(DISABLE_CLI)
+
+dnl ===================================================================
+dnl  A host Python, for building the bundled one on Windows
+dnl ===================================================================
+dnl  Python 3's PCbuild runs generator scripts under an ALREADY EXISTING
+dnl  Python.  Its find_python.bat probes only "py -3.10" and "py -3.9"
+dnl  and then falls back to downloading a private copy through nuget,
+dnl  which an offline build cannot do.  HOST_PYTHON is the environment
+dnl  variable that batch file checks before any of that, so naming one
+dnl  here keeps the build off the network.
+dnl  AOO_CHECK_HOST_PYTHON(candidate)
+dnl
+dnl  Sets HOST_PYTHON to the Windows form of $1 when it is a NATIVE Windows
+dnl  Python 3.9 or newer, and leaves it empty otherwise.
+dnl
+dnl  os.name is the whole point of the test.  A cygwin Python passes the
+dnl  version check and is still the wrong tool: it reads the native paths
+dnl  PCbuild hands it -- C:\foo\bar -- as RELATIVE, and prepends its own
+dnl  working directory, so deepfreeze.py dies on a path with a drive letter
+dnl  in the middle of it.
+AC_DEFUN([AOO_CHECK_HOST_PYTHON], [
+	_pycand="$1"
+	dnl  cygwin's which reports the name without the .exe that Windows needs
+	if test -f "$_pycand.exe"; then
+		_pycand="$_pycand.exe"
+	fi
+	if "$_pycand" -Ec "import os, sys; assert os.name == 'nt'; assert sys.version_info[[:2]] >= (3, 9)" >/dev/null 2>&1; then
+		HOST_PYTHON=`cygpath -m "$_pycand"`
+	fi
+])
+
+HOST_PYTHON=
+if test \( "$_os" = "WINNT" \) -a \( -n "$MSVC_MODERN" \) -a \( "$SYSTEM_PYTHON" != "YES" \) ; then
+	AC_MSG_CHECKING([for a host Python to build the bundled Python with])
+	if test -n "$with_host_python"; then
+		AOO_CHECK_HOST_PYTHON([$with_host_python])
+		if test -z "$HOST_PYTHON"; then
+			AC_MSG_ERROR([--with-host-python=$with_host_python is not a native Windows Python 3.9 or newer])
+		fi
+	else
+		dnl  which -a, not which: cygwin's own python comes first on PATH and
+		dnl  is not usable here, so the search has to see past it.
+		for _pypath in `which -a python3 python py 2>/dev/null`; do
+			AOO_CHECK_HOST_PYTHON([$_pypath])
+			if test -n "$HOST_PYTHON"; then
+				break
+			fi
+		done
+	fi
+	if test -z "$HOST_PYTHON"; then
+		AC_MSG_ERROR([no Python 3.9 or newer found.  PCbuild needs one to build the bundled Python; pass --with-host-python=<path to python.exe>])
+	fi
+	AC_MSG_RESULT([$HOST_PYTHON])
+fi
+AC_SUBST(HOST_PYTHON)
+
+dnl ===================================================================
+dnl  The Windows 10 SDK, for a UCRT-generation toolset
+dnl ===================================================================
+dnl  This sits here, immediately after the compiler, rather than next to
+dnl  the Platform SDK check far below, because the SDK now supplies
+dnl  midl.exe and the Windows Installer tools -- and the .NET/midl hunt
+dnl  is only a few lines further down.
+if test \( "$_os" = "WINNT" \) -a \( -n "$MSVC_MODERN" \) ; then
+	dnl =====================================================================
+	dnl  A UCRT-generation toolset is paired with the Windows 10/11 SDK,
+	dnl  whose layout is genuinely different rather than merely renamed.
+	dnl  Platform SDK v7.0 has one Include/ and one Lib/; the Windows 10 SDK
+	dnl  has FOUR include trees (ucrt, um, shared, winrt) and TWO lib trees
+	dnl  (ucrt, um) per installed version, each under a version directory.
+	dnl  So the single PSDK_HOME/Include and PSDK_HOME/Lib that set_soenv.in
+	dnl  builds by concatenation become a version plus a fixed set of
+	dnl  subdirectories -- and that version is what has to be found here.
+	AC_MSG_CHECKING([for the Windows 10 SDK])
+	dnl  Every candidate is judged by ONE rule: does it have Include/<ver>/um?
+	dnl  That is the only cheap thing that separates a Windows 10 SDK from the
+	dnl  old Platform SDK, which also has an Include/ and a Lib/ -- so a test
+	dnl  for those two accepts v7.0 and then fails the version scan below with
+	dnl  a message naming the right directory and the wrong reason.
+	dnl
+	dnl  In order: what the user said, what the old option said, what the
+	dnl  registry says (oowintool knows only pre-Windows-8 keys, so this is
+	dnl  usually the Platform SDK and usually rejected here), then the two
+	dnl  documented install roots.
+	windows_sdk_seen=
+	WINDOWS_SDK_HOME=
+	for windows_sdk_try in \
+		"$with_windows_sdk_home" \
+		"$with_psdk_home" \
+		"`$OOWINTOOL --psdk-home 2>/dev/null`" \
+		"/cygdrive/c/Program Files (x86)/Windows Kits/10" \
+		"/cygdrive/c/Program Files/Windows Kits/10" ; do
+		test -z "$windows_sdk_try" && continue
+		windows_sdk_try=`cygpath -u "$windows_sdk_try" 2>/dev/null || echo "$windows_sdk_try"`
+		windows_sdk_try=`echo "$windows_sdk_try" | $SED 's:/$::'`
+		windows_sdk_seen="$windows_sdk_seen
+	    $windows_sdk_try"
+		if test -n "`ls -d \"$windows_sdk_try\"/Include/*/um 2>/dev/null`"; then
+			WINDOWS_SDK_HOME="$windows_sdk_try"
+			break
+		fi
+	done
+	if test -z "$WINDOWS_SDK_HOME"; then
+		AC_MSG_ERROR([No Windows 10 SDK found. A directory qualifies only when it has an Include/<version>/um; the old Platform SDK does not, and is not a substitute. Tried, in order:$windows_sdk_seen
+
+Use --with-windows-sdk-home to name one explicitly.])
+	fi
+	if test -n "$with_psdk_home" -a "$WINDOWS_SDK_HOME" != "`cygpath -u \"$with_psdk_home\" 2>/dev/null`"; then
+		AC_MSG_WARN([--with-psdk-home=$with_psdk_home is not a Windows 10 SDK; using $WINDOWS_SDK_HOME instead. It is still used for --with-frame-home purposes only if you passed it there too.])
+	fi
+
+	dnl  Pick the newest COMPLETE version.  Completeness matters more than it
+	dnl  sounds: bin/ routinely holds several versions while Include/ and
+	dnl  Lib/ hold one or two, so selecting on bin/ alone can pick a version
+	dnl  that has no headers at all.  Compare component by component as
+	dnl  integers -- a plain string compare sorts 10.0.9xxxx above
+	dnl  10.0.19041.
+	if test -n "$with_windows_sdk_version"; then
+		WINDOWS_SDK_VERSION="$with_windows_sdk_version"
+	else
+		windows_sdk_candidates=
+		for sdkver in `ls "$WINDOWS_SDK_HOME/Include" 2>/dev/null`; do
+			if test -d "$WINDOWS_SDK_HOME/Include/$sdkver/um" -a -d "$WINDOWS_SDK_HOME/Lib/$sdkver/um"; then
+				windows_sdk_candidates="$windows_sdk_candidates $sdkver"
+			fi
+		done
+		WINDOWS_SDK_VERSION=`for v in $windows_sdk_candidates; do echo $v; done | $AWK -F. '{ printf "%05d%05d%05d%05d %s\n", $1, $2, $3, $4, $0 }' | sort | tail -n 1 | $AWK '{ print $2 }'`
+	fi
+	if test -z "$WINDOWS_SDK_VERSION"; then
+		AC_MSG_ERROR([No complete Windows 10 SDK found under $WINDOWS_SDK_HOME. A version counts as complete only when it has both an Include/<version>/um and a Lib/<version>/um. Use --with-windows-sdk-home and/or --with-windows-sdk-version.])
+	fi
+	AC_MSG_RESULT([$WINDOWS_SDK_VERSION in $WINDOWS_SDK_HOME])
+
+	dnl  PSDK_HOME stays the SDK root, so everything downstream that only
+	dnl  wants a base directory keeps working.  What changes is that the
+	dnl  include and lib paths are built from the version as well; that
+	dnl  happens in set_soenv.in.
+	PSDK_HOME="$WINDOWS_SDK_HOME"
+
+	windows_sdk_um="$WINDOWS_SDK_HOME/Include/$WINDOWS_SDK_VERSION/um"
+	if test ! -f "$windows_sdk_um/adoint.h" -o ! -f "$windows_sdk_um/sqlucode.h" -o ! -f "$windows_sdk_um/usp10.h"; then
+		AC_MSG_ERROR([$windows_sdk_um is missing headers this build needs (adoint.h, sqlucode.h, usp10.h). Install the "Windows SDK for Desktop C++" component.])
+	fi
+	windows_sdk_lib="$WINDOWS_SDK_HOME/Lib/$WINDOWS_SDK_VERSION"
+	if test ! -f "$windows_sdk_lib/ucrt/x86/ucrt.lib" -a ! -f "$windows_sdk_lib/ucrt/x64/ucrt.lib"; then
+		AC_MSG_ERROR([$windows_sdk_lib has no ucrt import library for either architecture.])
+	fi
+
+	dnl  The Windows Installer tools moved into bin/<version>/<arch>.  They
+	dnl  run on the build machine, so x86 is the right choice whatever is
+	dnl  being built.
+	WINDOWS_SDK_BINDIR="$WINDOWS_SDK_HOME/bin/$WINDOWS_SDK_VERSION/x86"
+	for sdktool in msiinfo msidb uuidgen msitran; do
+		if test ! -x "$WINDOWS_SDK_BINDIR/$sdktool.exe"; then
+			AC_MSG_ERROR([$sdktool.exe is missing from $WINDOWS_SDK_BINDIR. Install the "MSI Tools" SDK component.])
+		fi
+	done
+	WINDOWS_VISTA_PSDK=TRUE
+fi
+AC_SUBST(WINDOWS_SDK_HOME)
+AC_SUBST(WINDOWS_SDK_VERSION)
+AC_SUBST(WINDOWS_SDK_BINDIR)
+
+dnl ===================================================================
+dnl  MSBuild, for dependencies that ship Visual Studio project files
+dnl ===================================================================
+dnl  vcbuild.exe built .vcproj files and shipped with VS2005 and VS2008
+dnl  only; VS2010 replaced it with MSBuild and changed the project format
+dnl  to .vcxproj at the same time, so this is not a renamed binary but a
+dnl  different tool reading different files.  CoinMP is the one bundled
+dnl  dependency that needs it.
+dnl
+dnl  MSBuild lives beside the toolset rather than inside it, and is not on
+dnl  PATH in a BuildTools installation, so it is looked for relative to
+dnl  --with-cl-home: <VS>/VC/Tools/MSVC/<ver> puts the VS root four levels
+dnl  up.  Only searched for a UCRT-generation toolset -- VC9 uses vcbuild
+dnl  and must not be given an MSBuild it would not know what to do with.
+MSBUILD_PATH=
+if test "$_os" = "WINNT" -a -n "$MSVC_MODERN"; then
+	AC_MSG_CHECKING([for MSBuild])
+	if test -n "$with_msbuild_path"; then
+		MSBUILD_PATH=`cygpath -u "$with_msbuild_path"`
+	else
+		for msbuild_try in \
+			"$with_cl_home/../../../../MSBuild/Current/Bin" \
+			"$with_cl_home/../../../../MSBuild/15.0/Bin" ; do
+			if test -x "$msbuild_try/MSBuild.exe"; then
+				MSBUILD_PATH="$msbuild_try"
+				break
+			fi
+		done
+		if test -z "$MSBUILD_PATH"; then
+			AC_PATH_PROG(MSBUILD_EXE, MSBuild.exe)
+			if test -n "$MSBUILD_EXE"; then
+				MSBUILD_PATH=`dirname "$MSBUILD_EXE"`
+			fi
+		fi
+	fi
+	if test -z "$MSBUILD_PATH" -o ! -x "$MSBUILD_PATH/MSBuild.exe"; then
+		AC_MSG_ERROR([MSBuild.exe not found.  It is needed to build CoinMP, whose Visual Studio projects can no longer be built by vcbuild.  It is normally beside the toolset, in <VisualStudio>/MSBuild/Current/Bin; use --with-msbuild-path to name it, or --disable-coinmp to do without the Calc solver.])
+	fi
+	dnl  Convert to a posix path with 8.3 names, as the other tool paths are
+	MSBUILD_PATH=`cygpath -d "$MSBUILD_PATH"`
+	MSBUILD_PATH=`cygpath -u "$MSBUILD_PATH"`
+	AC_MSG_RESULT([$MSBUILD_PATH])
+fi
+AC_SUBST(MSBUILD_PATH)
+
+dnl  The PlatformToolset MSBuild should retarget a project to.  CoinMP's
+dnl  MSBuild projects are v10, i.e. they name toolset v100 (VS2010), which is
+dnl  not installed -- so the toolset has to be passed on the command line or
+dnl  the build fails with "the build tools for v100 cannot be found".
+dnl
+dnl  It is derived from the toolset directory name rather than from cl's
+dnl  version, because that name IS the toolset version and needs no parsing
+dnl  of the four-part number configure builds elsewhere: 14.29.30133 is v142,
+dnl  14.16.x is v141, 14.0x is v140, 14.3x is v143.
+VCTOOLSET=
+if test "$_os" = "WINNT" -a -n "$MSVC_MODERN"; then
+	AC_MSG_CHECKING([which MSBuild PlatformToolset to use])
+	vctoolset_ver=`basename "$with_cl_home"`
+	vctoolset_major=`echo "$vctoolset_ver" | cut -d. -f1`
+	vctoolset_minor=`echo "$vctoolset_ver" | cut -d. -f2`
+	if test -n "$vctoolset_major" -a -n "$vctoolset_minor"; then
+		VCTOOLSET="v$vctoolset_major`expr $vctoolset_minor / 10`"
+	fi
+	if test -z "$VCTOOLSET"; then
+		AC_MSG_ERROR([Could not work out a PlatformToolset from the toolset directory name "$vctoolset_ver". --with-cl-home should name the versioned toolset directory, e.g. .../VC/Tools/MSVC/14.29.30133])
+	fi
+	AC_MSG_RESULT([$VCTOOLSET])
+fi
+AC_SUBST(VCTOOLSET)
 
 dnl Compiler detection, logic from setsoenv.in
 case "$build_os" in
@@ -2314,6 +2812,24 @@ if test "$_os" = "FreeBSD"; then
     AC_SUBST(FBSD_GCC_RPATH)
 fi
 
+if test "$_os" = "Linux" -o "$_os" = "FreeBSD" -o "$_os" = "GNU"; then
+    AC_MSG_CHECKING( for --undefined-version linker support )
+    undefined_version_ldflags_save=$LDFLAGS
+    LDFLAGS="$LDFLAGS -Wl,--undefined-version"
+    AC_LINK_IFELSE([AC_LANG_PROGRAM([
+    #include <stdio.h>
+    ],[
+     printf ("hello world\n");
+    ])], HAVE_LD_UNDEFINED_VERSION=TRUE, HAVE_LD_UNDEFINED_VERSION=FALSE)
+    if test "z$HAVE_LD_UNDEFINED_VERSION" = "zTRUE"; then
+        AC_MSG_RESULT( found )
+    else
+        AC_MSG_RESULT( not found )
+    fi
+    LDFLAGS=$undefined_version_ldflags_save
+    AC_SUBST(HAVE_LD_UNDEFINED_VERSION)
+fi
+
 dnl ===================================================================
 dnl  .NET needs special treatment
 dnl ===================================================================
@@ -2345,6 +2861,16 @@ if test "$WITH_MINGWIN" = "yes" || test "$COMEX" -ge "10"; then
 			MIDL_PATH="$psdktest/Bin"
 		fi
 	fi
+	dnl  On the Windows 10 SDK midl.exe sits with the other SDK tools in
+	dnl  bin/<version>/<arch>.  This is preferred over what the searches above
+	dnl  turn up -- an AC_PATH_PROG hit from an ambient vcvars environment is
+	dnl  exactly the kind of midl/headers mismatch that surfaces much later as
+	dnl  output the compiler cannot parse -- but NOT over --with-midl-path,
+	dnl  which is the user saying which one they mean.
+	if test -z "$with_midl_path" \
+	     -a -n "$WINDOWS_SDK_BINDIR" -a -x "$WINDOWS_SDK_BINDIR/midl.exe" ; then
+		MIDL_PATH="$WINDOWS_SDK_BINDIR"
+	fi
 	if test ! -x "$MIDL_PATH/midl.exe"; then
 		AC_MSG_ERROR([midl.exe not found. Make sure it's in the path or use --with-midl-path])
 	fi
@@ -2368,8 +2894,48 @@ if test "$WITH_MINGWIN" = "yes" || test "$COMEX" -ge "10"; then
 	      CSC_PATH="$csctest"
 	   fi
 	fi
-	if test ! -x "$CSC_PATH/csc.exe"; then
-		AC_MSG_ERROR([csc.exe not found. Make sure it's in the path or use --with-csc-path])
+	dnl  Which CLR the C# half must target is decided by the C++ half, and a
+	dnl  UCRT-generation compiler settles it: /clr has not emitted CLR 2
+	dnl  assemblies since VS2010.  Mixing the two does not fail at build time,
+	dnl  it fails when the process loads them --
+	dnl
+	dnl    System.BadImageFormatException: ... The assembly was created by a
+	dnl    runtime that is newer than the currently loaded runtime
+	dnl
+	dnl  oowintool goes looking for the v2 csc on purpose, which is right for
+	dnl  VC9 and wrong here, so take the newest compiler beside it instead.
+	dnl  This overrides an explicit --with-csc-path, because the constraint is
+	dnl  the compiler's and not a preference; hence the warning.
+	if test -n "$MSVC_MODERN" -a -z "$DISABLE_CLI"; then
+		AC_MSG_CHECKING([for a csc.exe matching the C++ compiler's CLR])
+		case "$CSC_PATH" in
+		*[[Vv]]1.*|*[[Vv]]2.*|*[[Vv]]3.*)
+			_csc_root=`dirname "$CSC_PATH"`
+			_csc_new=
+			for _c in `ls -d "$_csc_root"/[[Vv]]4* 2>/dev/null | sort -r`; do
+				if test -x "$_c/csc.exe"; then
+					_csc_new="$_c"
+					break
+				fi
+			done
+			if test -n "$_csc_new"; then
+				if test -n "$with_csc_path"; then
+					AC_MSG_WARN([--with-csc-path points at a CLR 2 compiler; using $_csc_new instead, because this C++ compiler emits CLR 4 assemblies])
+				fi
+				CSC_PATH="$_csc_new"
+				AC_MSG_RESULT([$CSC_PATH])
+			else
+				AC_MSG_RESULT([none found])
+				AC_MSG_ERROR([This C++ compiler emits CLR 4 assemblies, but only a CLR 2 csc.exe was found. Point --with-csc-path at a v4 .NET Framework directory, or configure --disable-cli.])
+			fi
+			;;
+		*)
+			AC_MSG_RESULT([$CSC_PATH])
+			;;
+		esac
+	fi
+	if test ! -x "$CSC_PATH/csc.exe" -a -z "$DISABLE_CLI"; then
+		AC_MSG_ERROR([csc.exe not found. Make sure it's in the path or use --with-csc-path, or configure --disable-cli])
 	fi
 	# Convert to posix path with 8.3 filename restrictions ( No spaces )
 	CSC_PATH=`cygpath -d "$CSC_PATH"`
@@ -2398,8 +2964,8 @@ if test "$WITH_MINGWIN" = "yes" || test "$COMEX" -ge "10"; then
              fi
           fi
 	    fi
-	    if test ! -f "$FRAME_HOME/lib/mscoree.lib"; then
-		AC_MSG_ERROR([mscoree.lib (.NET Framework) not found. Make sure you use --with-frame-home])
+	    if test ! -f "$FRAME_HOME/lib/mscoree.lib" -a -z "$DISABLE_CLI"; then
+		AC_MSG_ERROR([mscoree.lib (.NET Framework) not found. Make sure you use --with-frame-home, or configure --disable-cli])
 	    fi
 	    AC_MSG_RESULT(found)
 	# Convert to posix path with 8.3 filename restrictions ( No spaces )
@@ -2415,7 +2981,15 @@ dnl ===================================================================
 dnl Check if stdc headers are available excluding Windows.
 dnl ===================================================================
 if test "$_os" != "WINNT" -o "$WITH_MINGWIN" = "yes"; then
-   AC_HEADER_STDC
+   m4_warn([obsolete],
+[The preprocessor macro 'STDC_HEADERS' is obsolete.
+  Except in unusual embedded environments, you can safely include all
+  C89 headers unconditionally.])dnl
+# Autoupdate added the next two lines to ensure that your configure
+# script's behavior did not change.  They are probably safe to remove.
+AC_CHECK_INCLUDES_DEFAULT
+AC_PROG_EGREP
+
 fi
 
 dnl ===================================================================
@@ -2563,7 +3137,7 @@ if test "$GXX" = "yes"; then
 
    if test "$_gpp_majmin" = "304"; then
       AC_MSG_CHECKING([whether $CXX has the enum bug])
-AC_TRY_RUN([
+AC_RUN_IFELSE([AC_LANG_SOURCE([[
 extern "C" void abort (void);
 extern "C" void exit (int status);
 
@@ -2584,7 +3158,7 @@ main (void)
   test (E0);
   return 0;
 }
-],[AC_MSG_ERROR([your version of the GNU C++ compiler has a bug which prevents Apache OpenOffice from being compiled correctly - please check https://gcc.gnu.org/ml/gcc-patches/2004-07/msg00968.html for details.])], [AC_MSG_RESULT([no])])
+]])],[AC_MSG_ERROR([your version of the GNU C++ compiler has a bug which prevents Apache OpenOffice from being compiled correctly - please check https://gcc.gnu.org/ml/gcc-patches/2004-07/msg00968.html for details.])],[AC_MSG_RESULT([no])],[])
    fi
 fi
 
@@ -2723,16 +3297,12 @@ dnl *************************************************************
 AC_MSG_CHECKING([exception type])
 AC_LANG_PUSH([C++])
 if test "$WITH_MINGWIN" = "yes"; then
-  AC_TRY_LINK(
-	[#include <iostream>
+  AC_LINK_IFELSE([AC_LANG_PROGRAM([[#include <iostream>
 
 extern "C" void _Unwind_SjLj_RaiseException(void) __attribute__ ((__noreturn__));
 
-	],
-	[_Unwind_SjLj_RaiseException() ],
-	[exceptions_type="sjlj"],
-	[exceptions_type="dwarf2"]
-  )
+	]], [[_Unwind_SjLj_RaiseException() ]])],[exceptions_type="sjlj"],[exceptions_type="dwarf2"
+  ])
 fi
 
 AC_MSG_RESULT($exceptions_type)
@@ -2760,7 +3330,7 @@ if test "$GCC" = "yes"; then
    AC_MSG_CHECKING([whether $CC supports -fvisibility=hidden])
    save_CFLAGS=$CFLAGS
    CFLAGS="$CFLAGS -fvisibility=hidden"
-   AC_TRY_LINK([], [ return 0; ], [ HAVE_GCC_VISIBILITY_FEATURE=TRUE ], [])
+   AC_LINK_IFELSE([AC_LANG_PROGRAM([[]], [[ return 0; ]])],[ HAVE_GCC_VISIBILITY_FEATURE=TRUE ],[])
    CFLAGS=$save_CFLAGS
    if test "$HAVE_GCC_VISIBILITY_FEATURE" = "TRUE"; then
       AC_MSG_RESULT([yes])
@@ -2842,12 +3412,10 @@ if test "$USE_SYSTEM_STL" = "YES"; then
       LDFLAGS="$LDFLAGS -fvisibility-inlines-hidden -fpic -shared"
 
       AC_MSG_CHECKING([if gcc is -fvisibility-inlines-hidden safe with STL headers])
-      AC_TRY_LINK([#include <sstream>
+      AC_LINK_IFELSE([AC_LANG_PROGRAM([[#include <sstream>
 using namespace std;
-],[istringstream strm( "test" ); return 0;],
-      $EGREP -q  unresolvable conftest.err;
-      if test $? -eq 0; then gccvisok=no; else gccvisok=yes; fi,
-      gccvisok=no)
+]], [[istringstream strm( "test" ); return 0;]])],[$EGREP -q  unresolvable conftest.err;
+      if test $? -eq 0; then gccvisok=no; else gccvisok=yes; fi],[gccvisok=no])
       AC_MSG_RESULT([$gccvisok])
       if test "$gccvisok" = "no"; then
          AC_MSG_WARN([Your gcc is not -fvisibility-inlines-hidden safe. Disabling visibility])
@@ -2987,6 +3555,23 @@ if test "$_os" = "WINNT"; then
       fi
    else
       with_jdk_home=`cygpath -u "$with_jdk_home"`
+   fi
+fi
+
+dnl on macOS there is no reliable way to derive JAVA_HOME from the path
+dnl of the java/javac binaries (the /usr/bin/java* wrappers are no longer
+dnl symlinks into a JDK, they are dispatcher stubs that shell out to
+dnl /usr/libexec/java_home), so ask the system tool directly.
+if test "$_os" = "Darwin"; then
+   if test -z "$with_jdk_home"; then
+      AC_MSG_CHECKING([for JDK home])
+      _jdk_home=`/usr/libexec/java_home 2>/dev/null`
+      AC_MSG_RESULT([$_jdk_home])
+      if test -d "$_jdk_home"; then
+          with_jdk_home="$_jdk_home"
+      else
+          AC_MSG_WARN([/usr/libexec/java_home did not return a JDK home directory, ignoring it])
+      fi
    fi
 fi
 
@@ -3340,6 +3925,11 @@ if test "$SOLAR_JAVA" != ""; then
       save_LDFLAGS=$LDFLAGS
       save_LD_LIBRARY_PATH=$LD_LIBRARY_PATH
       CFLAGS="$CFLAGS -I$JAVA_HOME/include"
+      if test "$_os" = "Darwin"; then
+         dnl jni_md.h lives in a platform-specific subdirectory on macOS,
+         dnl matching the layout set up for the real build in set_soenv.in
+         CFLAGS="$CFLAGS -I$JAVA_HOME/include/darwin"
+      fi
       LDFLAGS="$LDFLAGS -L$JAVA_HOME/jre/bin"
       LD_LIBRARY_PATH=$JAVA_HOME/jre/bin:$JAVA_HOME/jre/bin/classic:$JAVA_HOME/jre/bin/xawt:$LD_LIBRARY_PATH
       export LD_LIBRARY_PATH
@@ -3411,13 +4001,36 @@ dnl ===================================================================
 dnl Checks for programs.
 dnl ===================================================================
 
+dnl EPM is not needed for Windows, or when every requested package format is
+dnl handled directly by the simple packager (installer/simplepackage.pm)
+dnl rather than by EPM: "archive"/"installed" on any platform, and Darwin's
+dnl "dmg" - including the empty default, which resolves to "dmg" on Darwin
+dnl below. simplepackage.pm never invokes EPM for any of these three, so
+dnl requiring EPM to be present for e.g. a plain "dmg" or "archive dmg"
+dnl build serves no purpose.
+need_epm_for_packaging=yes
+if test "$_os" = "WINNT"; then
+   need_epm_for_packaging=no
+elif test "$with_package_format" = "archive" -o "$with_package_format" = "installed"; then
+   need_epm_for_packaging=no
+elif test "$_os" = "Darwin"; then
+   need_epm_for_packaging=no
+   for pkgformat_word in $with_package_format; do
+      case "$pkgformat_word" in
+         archive|installed|dmg) ;;
+         *) need_epm_for_packaging=yes ;;
+      esac
+   done
+fi
+
 AC_MSG_CHECKING([whether to enable EPM for packing])
 if test "$enable_epm" = "yes"; then
    AC_MSG_RESULT([yes])
    dnl ================================================================================
-   dnl Check for epm - not needed for Windows or building archive or installed formats
+   dnl Check for epm - not needed for Windows, or when the requested package
+   dnl format(s) are all handled without it (see need_epm_for_packaging above)
    dnl ================================================================================
-   if test "$_os" != "WINNT" -a "$with_package_format" != "archive" -a "$with_package_format" != "installed"; then
+   if test "$need_epm_for_packaging" = "yes"; then
       if test -n "$with_epm"; then
 	      EPM=$with_epm
       else
@@ -3561,13 +4174,13 @@ msi - Windows .msi
    fi
    if echo "$PKGFORMAT" | $EGREP osx 2>&1 >/dev/null; then
       if test "$_os" = "Darwin"; then
-         if test "$_osxpkgbuild" = "no"; then
-            AC_MSG_CHECKING([for PackageMaker availability])
-            if ! test -x /Developer/Applications/Utilities/PackageMaker.app/Contents/MacOS/PackageMaker; then
-               AC_MSG_ERROR([not installed. Please install Apples Dev Tools])
-            else
-               AC_MSG_RESULT([ok])
-            fi
+         AC_MSG_CHECKING([for PackageMaker availability])
+         if ! test -x /Developer/Applications/Utilities/PackageMaker.app/Contents/MacOS/PackageMaker; then
+            AC_MSG_ERROR([not installed. Apple's PackageMaker does not exist on
+current Xcode; the "osx" EPM format is obsolete on this platform - use "dmg"
+instead, or see MACOS_PACKAGING_EPM_REVIEW.md for a modern product-PKG path.])
+         else
+            AC_MSG_RESULT([ok])
          fi
       else
          AC_MSG_ERROR([PackageMaker needed to build OSX packages and you are not on OSX...])
@@ -3587,7 +4200,15 @@ else
    AC_MSG_RESULT([no])
    BUILD_EPM=NO
    EPM=NO
-   PKGFORMAT=native
+   if test "$_os" = "Darwin" -a "$need_epm_for_packaging" = "no"; then
+      dnl simplepackage.pm builds archive/installed/dmg without EPM, so
+      dnl --disable-epm should not discard a requested "dmg" (or Darwin's
+      dnl "dmg" default) the way it must for a format that does need EPM.
+      PKGFORMAT=dmg
+      test -z "$with_package_format" || PKGFORMAT="$with_package_format"
+   else
+      PKGFORMAT=native
+   fi
 fi
 AC_SUBST(BUILD_EPM)
 AC_SUBST(EPM_URL)
@@ -3618,19 +4239,6 @@ else
 	AC_MSG_ERROR([too old, you need at least 3.0.0])
 fi
 AC_SUBST(GPERF)
-
-dnl ===================================================================
-dnl Check for building stax
-dnl ===================================================================
-AC_MSG_CHECKING([whether to build the stax])
-if test -f "./stax/download/stax-1.2.0.jar"; then
-   BUILD_STAX=NO
-   AC_MSG_RESULT([no, will use the prebuilt stax/download/stax-1.2.0.jar])
-else
-   BUILD_STAX=YES
-   AC_MSG_RESULT([yes])
-fi
-AC_SUBST(BUILD_STAX)
 
 dnl ===================================================================
 dnl Check for building ODK
@@ -3699,8 +4307,10 @@ if test "z$enable_odk" = "z" -o "$enable_odk" != "no"; then
       # do not make sense here (and 'd make the check fail)
       save_LIBS=$LIBS
       LIBS=""
-      AC_HAVE_LIBRARY(kernel32)
-      AC_HAVE_LIBRARY(advapi32)
+      AC_CHECK_LIB([kernel32],[main],[],[],[])ac_cv_lib_kernel32=ac_cv_lib_kernel32_main
+
+      AC_CHECK_LIB([advapi32],[main],[],[],[])ac_cv_lib_advapi32=ac_cv_lib_advapi32_main
+
       AC_CHECK_HEADER(windows.h, [], [AC_MSG_ERROR([windows.h missing])])
       CXXFLAGS=$save_CXXFLAGS
       CPPFLAGS=$save_CPPFLAGS
@@ -3854,8 +4464,23 @@ if test -n "$with_system_libxslt" -o -n "$with_system_libs" -o \
 	if test "$_os" != "Darwin"; then
 		PKG_CHECK_MODULES(LIBXSLT, libxslt)
 	else
-		LIBXSLT_CFLAGS=`xslt-config --cflags`
-		LIBXSLT_LIBS=`xslt-config --libs`
+		dnl See the matching libxml check below for why this pins
+		dnl xslt-config to the directory given to --with-system-libxslt
+		dnl instead of resolving a bare "xslt-config" off PATH.
+		if test "$with_system_libxslt" != "yes" -a -n "$with_system_libxslt"; then
+			XSLT_CONFIG="$with_system_libxslt/bin/xslt-config"
+			if test ! -x "$XSLT_CONFIG"; then
+				AC_MSG_ERROR([--with-system-libxslt=$with_system_libxslt given, but $XSLT_CONFIG not found or not executable])
+			fi
+		else
+			AC_PATH_PROG(XSLT_CONFIG, xslt-config, [])
+			if test -z "$XSLT_CONFIG"; then
+				AC_MSG_ERROR([xslt-config not found on PATH])
+			fi
+		fi
+		LIBXSLT_CFLAGS=`$XSLT_CONFIG --cflags`
+		LIBXSLT_LIBS=`$XSLT_CONFIG --libs`
+		LIBXSLT_PREFIX=`$XSLT_CONFIG --prefix`
 	fi
 
    dnl Check for xsltproc
@@ -3871,6 +4496,7 @@ fi
 AC_SUBST(SYSTEM_LIBXSLT)
 AC_SUBST(LIBXSLT_CFLAGS)
 AC_SUBST(LIBXSLT_LIBS)
+AC_SUBST(LIBXSLT_PREFIX)
 
 
 dnl ===================================================================
@@ -3887,8 +4513,27 @@ if test -n "$with_system_libxml" -o -n "$with_system_libs" -o \
 	if test "$_os" != "Darwin"; then
 		PKG_CHECK_MODULES(LIBXML, libxml-2.0 >= 2.0)
 	else
-		LIBXML_CFLAGS=`xml2-config --cflags`
-		LIBXML_LIBS=`xml2-config --libs`
+		dnl A bare "xml2-config" resolves off whatever happens to be
+		dnl first on PATH, which is ambiguous when several package
+		dnl managers each ship their own libxml2 (MacPorts, Homebrew,
+		dnl a hand-built static copy, ...). When --with-system-libxml
+		dnl is given an actual directory (not just a bare "yes"), pin
+		dnl xml2-config to that prefix explicitly so the intended copy
+		dnl can't be shadowed by PATH order.
+		if test "$with_system_libxml" != "yes" -a -n "$with_system_libxml"; then
+			XML2_CONFIG="$with_system_libxml/bin/xml2-config"
+			if test ! -x "$XML2_CONFIG"; then
+				AC_MSG_ERROR([--with-system-libxml=$with_system_libxml given, but $XML2_CONFIG not found or not executable])
+			fi
+		else
+			AC_PATH_PROG(XML2_CONFIG, xml2-config, [])
+			if test -z "$XML2_CONFIG"; then
+				AC_MSG_ERROR([xml2-config not found on PATH])
+			fi
+		fi
+		LIBXML_CFLAGS=`$XML2_CONFIG --cflags`
+		LIBXML_LIBS=`$XML2_CONFIG --libs`
+		LIBXML_PREFIX=`$XML2_CONFIG --prefix`
 	fi
 else
     AC_MSG_RESULT([internal])
@@ -3896,8 +4541,10 @@ else
     BUILD_TYPE="$BUILD_TYPE LIBXML2 LIBXMLSEC"
 fi
 AC_SUBST(SYSTEM_LIBXML)
+AC_SUBST(SYSTEM_LIBXML_STATIC)
 AC_SUBST(LIBXML_CFLAGS)
 AC_SUBST(LIBXML_LIBS)
+AC_SUBST(LIBXML_PREFIX)
 
 
 dnl ===================================================================
@@ -3907,40 +4554,50 @@ if test  "$_os" = "Darwin"; then
    sdk_target=$with_macosx_target
    AC_MSG_CHECKING([checking SDK compatibility with OSX $sdk_target])
 
+   sdk_major=`echo $sdk_target | cut -d"." -f1`
    sdk_minor=`echo $sdk_target | cut -d"." -f2`
+   test -z "$sdk_minor" && sdk_minor=0
 
-   if test "$sdk_minor" -lt "9"; then
-      AC_MSG_ERROR([SDK version < 10.9 is not longer supported])
+   dnl Minimum supported macOS deployment target is 11.0 (Big Sur). This is
+   dnl also the hard floor for Apple Silicon (arm64), so enforce it for every
+   dnl architecture.
+   if test "$sdk_major" -lt "11" ; then
+      AC_MSG_ERROR([macOS deployment target < 11.0 is no longer supported; use --with-macosx-target=11.0 or later])
    else
       MACOSX_DEPLOYMENT_TARGET=$sdk_target
       sdk_path=$with_macosx_sdk
       if test -z "$sdk_path"; then
-          dnl --macosx-sdk not used (or blank): We look for the SDK
-          dnl Why not MacOSX10.9.sdk? It lacks Python.h (!?)
-          dnl First look for macOS10.x SDKs (Up thru Xcode 12.1)
-          sdk_found=`xcodebuild -showsdks | $EGREP "sdk macosx10.(10|11|12|13|14|15)" | sed -e "s/.*sdk //" | tail -n1`
-          dnl If not found, look for macOS11.x SDKs (Xcode 12.2 and later)
-          if test -z "$sdk_found"; then
-             sdk_found=`xcodebuild -showsdks | $EGREP "sdk macosx11.(0|1|2|3)" | sed -e "s/.*sdk //" | tail -n1`
-          fi
-          dnl If not found, look for macOS12.x SDKs (Xcode 13.0 and later)
-          if test -z "$sdk_found"; then
-             sdk_found=`xcodebuild -showsdks | $EGREP "sdk macosx12.(0|1|2)" | sed -e "s/.*sdk //" | tail -n1`
-          fi
-          if test -z "$sdk_found"; then
-             AC_MSG_ERROR([No SDK with OSX $sdk_target compatibility found])
-          else
+          dnl --macosx-sdk not used (or blank): We look for the SDK.
+          dnl Prefer xcodebuild when full Xcode is installed, but fall back
+          dnl to xcrun so that Command Line Tools-only setups also work
+          dnl (xcodebuild is unavailable without the full Xcode app).
+          sdk_found=`xcodebuild -showsdks 2>/dev/null | $EGREP "sdk macosx(1[1-9]|[2-9][0-9])" | sed -e "s/.*sdk //" | tail -n1`
+          if test -n "$sdk_found"; then
              AC_MSG_RESULT([yes, by using SDK $sdk_found])
-          fi
-          sdk_path=`xcodebuild -version -sdk ${sdk_found} Path`
-      elif test ! -d "$sdk_path"; then
-          sdk_found=`xcodebuild -showsdks | $EGREP "sdk macosx${sdk_path}" | sed -e "s/.*sdk //" | tail -n1`
-          if test -z "$sdk_found"; then
-             AC_MSG_ERROR([SDK macosx${sdk_path} not found by xcodebuild])
+             sdk_path=`xcodebuild -version -sdk ${sdk_found} Path`
           else
-             AC_MSG_RESULT([SDK $sdk_found])
+             sdk_path=`xcrun --sdk macosx --show-sdk-path 2>/dev/null`
+             if test -z "$sdk_path"; then
+                AC_MSG_ERROR([No SDK with OSX $sdk_target compatibility found])
+             fi
+             AC_MSG_RESULT([yes, by using SDK at $sdk_path])
           fi
-          sdk_path=`xcodebuild -version -sdk ${sdk_found} Path`
+      elif test ! -d "$sdk_path"; then
+          dnl --macosx-sdk=<version> given (not a path): resolve it. Prefer
+          dnl xcodebuild, but fall back to xcrun so Command Line Tools-only
+          dnl setups (no full Xcode) also work.
+          sdk_found=`xcodebuild -showsdks 2>/dev/null | $EGREP "sdk macosx${sdk_path}" | sed -e "s/.*sdk //" | tail -n1`
+          if test -n "$sdk_found"; then
+             AC_MSG_RESULT([SDK $sdk_found])
+             sdk_path=`xcodebuild -version -sdk ${sdk_found} Path`
+          else
+             sdk_xcrun=`xcrun --sdk macosx${sdk_path} --show-sdk-path 2>/dev/null`
+             if test -z "$sdk_xcrun"; then
+                AC_MSG_ERROR([SDK macosx${sdk_path} not found])
+             fi
+             AC_MSG_RESULT([SDK at $sdk_xcrun])
+             sdk_path=$sdk_xcrun
+          fi
       fi
       AC_MSG_CHECKING([for $sdk_path])
       if test -d "$sdk_path"; then
@@ -3951,12 +4608,39 @@ if test  "$_os" = "Darwin"; then
 
       MACOSX_SDK_PATH=$sdk_path
       SDKROOT=$sdk_path
+      export SDKROOT
    fi
 
+fi
+dnl Code signing during packaging: solenv/bin/modules/installer/simplepackage.pm
+dnl reads these from the environment (via set_soenv), so a bare "yes" is an error.
+MACOSX_CODESIGNING_IDENTITY=
+MACOSX_CODESIGNING_KEYCHAIN=
+MACOSX_NOTARY_PROFILE=
+if test "$with_macosx_codesigning_identity" = "yes"; then
+   AC_MSG_ERROR([--with-macosx-codesigning-identity needs a codesign identity, or "-" for ad-hoc])
+fi
+if test -n "$with_macosx_codesigning_identity" -a "$with_macosx_codesigning_identity" != "no"; then
+   MACOSX_CODESIGNING_IDENTITY=$with_macosx_codesigning_identity
+fi
+if test -n "$with_macosx_codesigning_keychain" -a "$with_macosx_codesigning_keychain" != "no" -a "$with_macosx_codesigning_keychain" != "yes"; then
+   MACOSX_CODESIGNING_KEYCHAIN=$with_macosx_codesigning_keychain
+fi
+if test "$with_macosx_notary_profile" = "yes"; then
+   AC_MSG_ERROR([--with-macosx-notary-profile needs a notarytool keychain profile name])
+fi
+if test -n "$with_macosx_notary_profile" -a "$with_macosx_notary_profile" != "no"; then
+   if test "$MACOSX_CODESIGNING_IDENTITY" = "" -o "$MACOSX_CODESIGNING_IDENTITY" = "-"; then
+      AC_MSG_ERROR([--with-macosx-notary-profile needs --with-macosx-codesigning-identity set to a real Developer ID identity, not ad-hoc])
+   fi
+   MACOSX_NOTARY_PROFILE=$with_macosx_notary_profile
 fi
 AC_SUBST(MACOSX_DEPLOYMENT_TARGET)
 AC_SUBST(MACOSX_SDK_PATH)
 AC_SUBST(SDKROOT)
+AC_SUBST(MACOSX_CODESIGNING_IDENTITY)
+AC_SUBST(MACOSX_CODESIGNING_KEYCHAIN)
+AC_SUBST(MACOSX_NOTARY_PROFILE)
 
 
 dnl ===================================================================
@@ -3966,54 +4650,93 @@ AC_MSG_CHECKING([which python to use])
 if test "$_os" = "Darwin" && test "$with_system_python" != "no"; then
    with_system_python=yes
 
-   _python="/Library/Frameworks/Python.framework/Versions/Current/bin/python"
-   if test ! -f $_python; then
-   	  _python="/usr/bin/python"
+   dnl Recent macOS releases no longer ship a usable Python under /usr/bin,
+   dnl and even when python3 exists there it may be Apple's old CLT stub
+   dnl (< 3.11). Probe the locations where a system/user Python is typically
+   dnl found - the python.org framework build, Homebrew (Apple Silicon and
+   dnl Intel), and whatever python3 is first on PATH (MacPorts/pyenv/etc.) -
+   dnl and pick the first candidate that actually satisfies the 3.11 floor.
+   dnl hex version of Python 3.11.0 = 51118080
+   _python=""
+   for _python_candidate in \
+       "/Library/Frameworks/Python.framework/Versions/Current/bin/python3" \
+       "/Library/Frameworks/Python.framework/Versions/Current/bin/python" \
+       "/opt/homebrew/bin/python3" \
+       "/usr/local/bin/python3" \
+       `command -v python3 2>/dev/null` \
+       "/usr/bin/python3" \
+       "/usr/bin/python" ; do
+       if test -x "$_python_candidate"; then
+           _python_candidate_hexversion=`$_python_candidate -c "import sys; print(sys.hexversion)" 2>/dev/null`
+           if test -n "$_python_candidate_hexversion" && \
+              test "$_python_candidate_hexversion" -ge 51118080 2>/dev/null; then
+               _python="$_python_candidate"
+               break
+           fi
+       fi
+   done
+   if test -z "$_python"; then
+       AC_MSG_ERROR([Python 3.11 or higher is required; install it (e.g. from python.org or Homebrew), or configure with --without-system-python])
    fi
-   AC_MSG_RESULT([compiling against system python ($_python)])
 
-   _python_hexversion=`$_python -c "import sys; print(sys.hexversion);"`
+   _python_version=`$_python -c "import sys; print(sys.version);" | head -c 4`
+   AC_MSG_RESULT([compiling against system python ($_python, version $_python_version)])
 
-   dnl hex version of Python 2.7.1 = 34013680
-   if test $_python_hexversion -ge 34013680 ; then
-   	  _python_version=`$_python -c "import sys; print sys.version;" | head -c 3`
-      AC_MSG_RESULT([compiling against system python (version $_python_version)])
+   dnl Hand the interpreter we just validated to the build, so that the build
+   dnl steps that run Python scripts use it instead of whatever "python3"
+   dnl happens to be first on PATH.
+   PYTHON_BIN="$_python"
 
-	  if ! $_python -c "import distutils.sysconfig;"; then
-	      AC_MSG_ERROR([python setuptools module is required to provide distutils for python >= 3.12])
-	  fi
-	  _python_ver=`$_python -c "import distutils.sysconfig; print(distutils.sysconfig.get_config_var('VERSION'));"`
+   _python_ver=`$_python -c "import sysconfig; print(sysconfig.get_config_var('VERSION'));"`
 
-	  if test -d "/Library/Frameworks/Python.framework/Versions/$_python_ver/include/python$_python_ver"; then
-	  	 PYTHON_CFLAGS="-I/Library/Frameworks/Python.framework/Versions/$_python_ver/include/python$_python_ver"
-         elif test -d "$MACOSX_SDK_PATH/usr/include/python$_python_ver"; then
-             PYTHON_CFLAGS="-I$MACOSX_SDK_PATH/usr/include/python$_python_ver"
-	  else
-             PYTHON_CFLAGS="-I$MACOSX_SDK_PATH/System/Library/Frameworks/Python.framework/Versions/$_python_ver/include/python$_python_ver"
-	  fi
+   dnl Locate the headers. Prefer the framework/SDK locations, but fall back
+   dnl to whatever include dir the interpreter itself reports (this is what
+   dnl makes Homebrew and other non-framework installs work).
+   if test -d "/Library/Frameworks/Python.framework/Versions/$_python_ver/include/python$_python_ver"; then
+        PYTHON_CFLAGS="-I/Library/Frameworks/Python.framework/Versions/$_python_ver/include/python$_python_ver"
+   elif test -d "$MACOSX_SDK_PATH/usr/include/python$_python_ver"; then
+       PYTHON_CFLAGS="-I$MACOSX_SDK_PATH/usr/include/python$_python_ver"
+   elif test -d "$MACOSX_SDK_PATH/System/Library/Frameworks/Python.framework/Versions/$_python_ver/include/python$_python_ver"; then
+       PYTHON_CFLAGS="-I$MACOSX_SDK_PATH/System/Library/Frameworks/Python.framework/Versions/$_python_ver/include/python$_python_ver"
    else
-		AC_MSG_ERROR([Python 2.7.1 or higher is required])
+       _python_inc=`$_python -c "import sysconfig; print(sysconfig.get_path('include'));"`
+       PYTHON_CFLAGS="-I$_python_inc"
    fi
 
-   PYTHON_LIBS="-framework Python"
+   dnl A framework build links against the Python framework; any other
+   dnl install (Homebrew, etc.) links against libpython in its LIBDIR.
+   case "$_python" in
+       /Library/Frameworks/Python.framework/*|*/System/Library/Frameworks/Python.framework/*)
+           PYTHON_LIBS="-framework Python"
+           ;;
+       *)
+           dnl Use sysconfig, not distutils.sysconfig: distutils was removed in
+           dnl Python 3.12 and the interpreter we pick here may well be newer
+           dnl than the 3.11 floor.
+           _python_libdir=`$_python -c "import sysconfig; print(sysconfig.get_config_var('LIBDIR'));"`
+           PYTHON_LIBS="-L$_python_libdir -lpython$_python_ver"
+           ;;
+   esac
 elif test -n "$with_system_python" -o -n "$with_system_libs" && \
 	test "$with_system_python" != "no"; then
    with_system_python=yes
    AC_MSG_RESULT([external])
-   AM_PATH_PYTHON([2.7])
+   AM_PATH_PYTHON([3.11])
 
-   if ! $PYTHON -c "import distutils.sysconfig;"; then
-       AC_MSG_ERROR([python setuptools module is required to provide distutils for python >= 3.12])
-   fi
-   python_include=`$PYTHON -c "import distutils.sysconfig; print(distutils.sysconfig.get_config_var('INCLUDEPY'));"`
-   python_version=`$PYTHON -c "import distutils.sysconfig; print(distutils.sysconfig.get_config_var('VERSION'));"`
-   # Python 3.8 and later distinguish building Python modules from linking to the libpython:
+   dnl Hand the interpreter AM_PATH_PYTHON just validated to the build, so that
+   dnl the build steps that run Python scripts use it instead of whatever
+   dnl "python3" happens to be first on PATH.
+   PYTHON_BIN="$PYTHON"
+
+   python_include=`$PYTHON -c "import sysconfig; print(sysconfig.get_config_var('INCLUDEPY'));"`
+   python_version=`$PYTHON -c "import sysconfig; print(sysconfig.get_config_var('VERSION'));"`
+   # Python 3.8 and later distinguish building Python modules from linking to the
+   # libpython, so embedders must use the "-embed" pkg-config module:
    # (https://bugs.python.org/issue36721)
-   if test "$python_version" -lt "3.8"; then
-       PKG_CHECK_MODULES(PYTHON, python-$python_version, PYTHON_PC="TRUE", PYTHON_PC="" )
-   else
-       PKG_CHECK_MODULES(PYTHON, python-$python_version-embed, PYTHON_PC="TRUE", PYTHON_PC="" )
-   fi
+   # AM_PATH_PYTHON above already enforces a 3.11 floor, so "-embed" is always
+   # the right variant here. (The old "$python_version" -lt "3.8" test was a
+   # numeric comparison on a string like "3.11" and could never work.)
+   PKG_CHECK_MODULES(PYTHON, python-$python_version-embed, PYTHON_PC="TRUE", PYTHON_PC="" )
    if test "$PYTHON_PC" != "TRUE"; then
        PYTHON_CFLAGS="-I$python_include"
        PYTHON_LIBS="-lpython$python_version"
@@ -4035,15 +4758,12 @@ else
    if test "z$HOME" = "z"; then
       export HOME="";
    fi
-   # bz2 tarball and bzip2 is not standard
-   if test -z "$BZIP2"; then
-	AC_PATH_PROG( BZIP2, bzip2)
-	if test -z "$BZIP2"; then
-   		AC_MSG_ERROR([the internal Python module has a .tar.bz2. You need bzip2])
-   	fi
-   fi
+   dnl The internal Python tarball is a .tgz (see main/external_deps.lst), so
+   dnl gzip is all that is needed to unpack it. The old bzip2 requirement was
+   dnl for the Python 2.x .tar.bz2 and no longer applies.
 fi
 AC_SUBST(SYSTEM_PYTHON)
+AC_SUBST(PYTHON_BIN)
 AC_SUBST(PYTHON_CFLAGS)
 AC_SUBST(PYTHON_LIBS)
 HOME=`echo $HOME | sed 's:\\\\:/:g'`
@@ -4217,7 +4937,7 @@ if test -n "$with_system_mysql_cppconn" -o -n "$with_system_libs" && \
 	AC_CHECK_LIB(mysqlcppconn, main, [],
 					[AC_MSG_ERROR(MySQL C++ Connectivity lib not found or functional)], [])
    AC_MSG_CHECKING([version])
-      AC_TRY_RUN([
+      AC_RUN_IFELSE([AC_LANG_SOURCE([[
 #include <mysql_driver.h>
 
 int main(int argc, char **argv) {
@@ -4230,7 +4950,7 @@ int main(int argc, char **argv) {
       else
         return 1;
 }
-      ], [AC_MSG_RESULT(OK)], [AC_MSG_ERROR([not suitable, we need >= 1.0.6])])
+      ]])],[AC_MSG_RESULT(OK)],[AC_MSG_ERROR([not suitable, we need >= 1.0.6])],[])
         AC_LANG_POP([C++])
 
 else
@@ -4488,6 +5208,11 @@ AC_SUBST(COINMP_LIBS)
 dnl ===================================================================
 dnl Check for system curl
 dnl ===================================================================
+dnl Darwin always treats curl as external (see the "-o \"$_os\" = \"Darwin\""
+dnl clause below), regardless of whether --with-system-curl was actually
+dnl given a directory -- capture the as-given value first, before it gets
+dnl forced to a bare "yes", so a real --with-system-curl=DIR isn't lost.
+with_system_curl_dir="$with_system_curl"
 if test "$_os" = "Darwin" && test "$with_system_curl" != "no"; then
    with_system_curl=yes
 fi
@@ -4497,9 +5222,19 @@ if test -n "$with_system_curl" -o -n "$with_system_libs" && \
    AC_MSG_RESULT([external])
    SYSTEM_CURL=YES
 
-   AC_PATH_PROG( CURLCONFIG, curl-config)
-   if test -z "$CURLCONFIG"; then
-      AC_MSG_ERROR([install curl to run this script])
+   dnl See the matching libxml check above for why this pins
+   dnl curl-config to the directory given to --with-system-curl instead
+   dnl of resolving a bare "curl-config" off PATH.
+   if test "$with_system_curl_dir" != "yes" -a -n "$with_system_curl_dir"; then
+      CURLCONFIG="$with_system_curl_dir/bin/curl-config"
+      if test ! -x "$CURLCONFIG"; then
+         AC_MSG_ERROR([--with-system-curl=$with_system_curl_dir given, but $CURLCONFIG not found or not executable])
+      fi
+   else
+      AC_PATH_PROG( CURLCONFIG, curl-config)
+      if test -z "$CURLCONFIG"; then
+         AC_MSG_ERROR([install curl to run this script])
+      fi
    fi
 
    # check curl version
@@ -4522,6 +5257,7 @@ if test -n "$with_system_curl" -o -n "$with_system_libs" && \
 
    CURL_LIBS=`$CURLCONFIG --libs`
    CURL_CFLAGS=`$CURLCONFIG --cflags`
+   CURL_PREFIX=`$CURLCONFIG --prefix`
 else
    AC_MSG_RESULT([internal])
    SYSTEM_CURL=NO
@@ -4530,6 +5266,114 @@ fi
 AC_SUBST(SYSTEM_CURL)
 AC_SUBST(CURL_CFLAGS)
 AC_SUBST(CURL_LIBS)
+AC_SUBST(CURL_PREFIX)
+
+dnl ===================================================================
+dnl Pin selected system libraries to their static archives
+dnl ===================================================================
+dnl Runs after the libxml/libxslt/curl checks above, which is where the
+dnl *_PREFIX and *_LIBS values it rewrites are established.
+dnl
+dnl Without this the static-vs-dynamic choice is implicit: "-lfoo" lets the
+dnl linker take a dylib over an archive, and the libxml2 link in
+dnl forms/util and xmlsecurity/util explicitly prefers a dylib when the
+dnl prefix has one. Either way a dylib appearing at the prefix silently
+dnl turns a release build dynamic, and these dylibs carry absolute install
+dnl names that do not exist on an end user's machine.
+STATIC_SYSTEM_LIBS=
+STATIC_SYSTEM_LIBXML=NO
+STATIC_SYSTEM_LIBXSLT=NO
+STATIC_SYSTEM_CURL=NO
+if test -n "$with_static_system_libs" -a "$with_static_system_libs" != "no"; then
+   if test "$with_static_system_libs" = "yes"; then
+      AC_MSG_ERROR([--with-static-system-libs needs a list, e.g. --with-static-system-libs=libxml,libxslt,curl])
+   fi
+   for _ssentry in `echo "$with_static_system_libs" | $SED -e 's/,/ /g'`; do
+      dnl Each entry is NAME or NAME:DIR. The explicit DIR is what makes
+      dnl libiconv usable here: it has no --with-system-libiconv, so
+      dnl configure has no prefix of its own to fall back on.
+      _sslib=`echo "$_ssentry" | $SED -e 's/:.*//'`
+      _ssgiven=
+      case "$_ssentry" in
+      *:*) _ssgiven=`echo "$_ssentry" | $SED -e 's/^[[^:]]*://'` ;;
+      esac
+      AC_MSG_CHECKING([for a static system $_sslib])
+      case "$_sslib" in
+      libxml)
+         _ssenabled="$SYSTEM_LIBXML"; _ssprefix="$LIBXML_PREFIX"; _ssopt="--with-system-libxml"
+         _ssarchives="libxml2.a"; _sslflags="-lxml2"
+         ;;
+      libxslt)
+         _ssenabled="$SYSTEM_LIBXSLT"; _ssprefix="$LIBXSLT_PREFIX"; _ssopt="--with-system-libxslt"
+         _ssarchives="libxslt.a libexslt.a"; _sslflags="-lxslt -lexslt"
+         ;;
+      curl)
+         _ssenabled="$SYSTEM_CURL"; _ssprefix="$CURL_PREFIX"; _ssopt="--with-system-curl"
+         _ssarchives="libcurl.a"; _sslflags="-lcurl"
+         ;;
+      libiconv)
+         dnl The bundled XML libs are built --without-iconv, so this only
+         dnl covers a *system* libxml2/libxslt/curl whose own build enabled
+         dnl iconv and whose *-config therefore reports -liconv. There is no
+         dnl --with-system-libiconv to take a prefix from, hence libiconv:DIR.
+         _ssenabled=YES; _ssprefix="$_ssgiven"; _ssopt=
+         _ssarchives="libiconv.a"; _sslflags="-liconv"
+         ;;
+      *)
+         AC_MSG_ERROR([unsupported library "$_sslib" in --with-static-system-libs; supported: libxml, libxslt, curl, libiconv])
+         ;;
+      esac
+      test -n "$_ssgiven" && _ssprefix="$_ssgiven"
+      if test "$_ssenabled" != "YES"; then
+         AC_MSG_ERROR([--with-static-system-libs=$_sslib requires $_ssopt])
+      fi
+      if test -z "$_ssprefix"; then
+         if test -n "$_ssopt"; then
+            AC_MSG_ERROR([--with-static-system-libs=$_sslib needs a prefix; give $_ssopt=DIR (macOS only)])
+         else
+            AC_MSG_ERROR([--with-static-system-libs=$_sslib needs a prefix; write $_sslib:DIR, e.g. $_sslib:/usr/local])
+         fi
+      fi
+      for _ssa in $_ssarchives; do
+         if test ! -f "$_ssprefix/lib/$_ssa"; then
+            AC_MSG_ERROR([--with-static-system-libs=$_sslib given, but $_ssprefix/lib/$_ssa not found])
+         fi
+      done
+      dnl Replace each "-lfoo" with the archive's absolute path so the
+      dnl linker cannot pick a dylib sitting beside it. Matching on a
+      dnl trailing space (the value gets one appended, then trimmed) keeps
+      dnl this to portable BRE -- $SED is whatever sed AC_PATH_PROGS found,
+      dnl which is not required to be GNU, and \| alternation silently
+      dnl matches nothing under the BSD sed macOS ships.
+      for _ssl in $_sslflags; do
+         _ssa="lib`echo "$_ssl" | $SED -e 's/^-l//'`.a"
+         case "$_sslib" in
+         libxml)   LIBXML_LIBS=`echo "$LIBXML_LIBS " | $SED -e "s|$_ssl |$_ssprefix/lib/$_ssa |g" -e 's| *$||'` ;;
+         libxslt)  LIBXSLT_LIBS=`echo "$LIBXSLT_LIBS " | $SED -e "s|$_ssl |$_ssprefix/lib/$_ssa |g" -e 's| *$||'` ;;
+         curl)     CURL_LIBS=`echo "$CURL_LIBS " | $SED -e "s|$_ssl |$_ssprefix/lib/$_ssa |g" -e 's| *$||'` ;;
+         libiconv)
+            dnl iconv is a transitive dep, so -liconv turns up in whichever
+            dnl of these *-config reported it -- rewrite all of them.
+            LIBXML_LIBS=`echo "$LIBXML_LIBS " | $SED -e "s|$_ssl |$_ssprefix/lib/$_ssa |g" -e 's| *$||'`
+            LIBXSLT_LIBS=`echo "$LIBXSLT_LIBS " | $SED -e "s|$_ssl |$_ssprefix/lib/$_ssa |g" -e 's| *$||'`
+            CURL_LIBS=`echo "$CURL_LIBS " | $SED -e "s|$_ssl |$_ssprefix/lib/$_ssa |g" -e 's| *$||'`
+            ;;
+         esac
+      done
+      case "$_sslib" in
+      libxml)   STATIC_SYSTEM_LIBXML=YES ;;
+      libxslt)  STATIC_SYSTEM_LIBXSLT=YES ;;
+      curl)     STATIC_SYSTEM_CURL=YES ;;
+      esac
+      STATIC_SYSTEM_LIBS="$STATIC_SYSTEM_LIBS $_sslib"
+      AC_MSG_RESULT([$_ssprefix/lib])
+   done
+   STATIC_SYSTEM_LIBS=`echo $STATIC_SYSTEM_LIBS`
+fi
+AC_SUBST(STATIC_SYSTEM_LIBS)
+AC_SUBST(STATIC_SYSTEM_LIBXML)
+AC_SUBST(STATIC_SYSTEM_LIBXSLT)
+AC_SUBST(STATIC_SYSTEM_CURL)
 
 dnl ===================================================================
 dnl Check for system mdds
@@ -4569,9 +5413,8 @@ if test -n "$with_system_boost" -o -n "$with_system_headers" && \
    save_CXXFLAGS=$CXXFLAGS
    CXXFLAGS="$CXXFLAGS -fno-exceptions"
    AC_MSG_CHECKING([whether boost/function.hpp compiles with -fno-exceptions])
-   AC_TRY_COMPILE([#include <boost/function.hpp>
-], [],
-   ac_cv_cxx_boost_no_exceptons_broken=no, ac_cv_cxx_boost_no_exceptons_broken=yes)
+   AC_COMPILE_IFELSE([AC_LANG_PROGRAM([[#include <boost/function.hpp>
+]], [[]])],[ac_cv_cxx_boost_no_exceptons_broken=no],[ac_cv_cxx_boost_no_exceptons_broken=yes])
 
    if test "$ac_cv_cxx_boost_no_exceptons_broken" = "yes"; then
 	AC_MSG_ERROR([no, see https://bugzilla.redhat.com/show_bug.cgi?id=477131])
@@ -4731,7 +5574,7 @@ if test -n "$with_system_icu" -o -n "$with_system_libs" && \
    SYSTEM_ICU=YES
    AC_LANG_PUSH([C++])
    AC_MSG_CHECKING([for unicode/rbbi.h])
-   AC_TRY_CPP(unicode/rbbi.h, AC_MSG_RESULT([checked.]), AC_MSG_ERROR([icu headers not found.]))
+   AC_PREPROC_IFELSE([AC_LANG_SOURCE([[unicode/rbbi.h]])],[AC_MSG_RESULT(checked.)],[AC_MSG_ERROR(icu headers not found.)])
    AC_LANG_POP([C++])
    AC_PATH_PROG(SYSTEM_GENBRK, genbrk, [], [$PATH:/usr/sbin:/sbin])
    if test -z "$SYSTEM_GENBRK"; then
@@ -4755,6 +5598,7 @@ if test -n "$with_system_icu" -o -n "$with_system_libs" && \
       ICU_MAJOR=`$ICUCONFIG --version | cut -d"." -f1`
       ICU_MINOR=`$ICUCONFIG --version | cut -d"." -f2`
       ICU_MICRO=`$ICUCONFIG --version | cut -d"." -f3`
+      ICU_CFLAGS=`$ICUCONFIG --cppflags`
    fi
 
    if test "$ICU_MAJOR" -ge "4"; then
@@ -4775,6 +5619,7 @@ AC_SUBST(SYSTEM_GENCMN)
 AC_SUBST(ICU_MAJOR)
 AC_SUBST(ICU_MINOR)
 AC_SUBST(ICU_MICRO)
+AC_SUBST(ICU_CFLAGS)
 
 dnl ===================================================================
 dnl Graphite
@@ -4900,14 +5745,14 @@ if test "$ENABLE_FONTCONFIG" = "TRUE" ; then
     AC_CHECK_HEADER(fontconfig/fontconfig.h, [],
                     [AC_MSG_ERROR([fontconfig/fontconfig.h could not be found. libfontconfig1-dev or fontconfig???-devel missing?])], [])
     AC_MSG_CHECKING([whether fontconfig is >= 2.2.0])
-    AC_TRY_RUN([
+    AC_RUN_IFELSE([AC_LANG_SOURCE([[
 #include <fontconfig/fontconfig.h>
 
 int main(int argc, char **argv) {
 	if(FC_MAJOR > 2 || (FC_MAJOR == 2 && FC_MINOR >= 2)) return 0;
 	else return 1;
 }
-], [AC_MSG_RESULT([yes])], [AC_MSG_ERROR([no, fontconfig >= 2.2.0 needed])])
+]])],[AC_MSG_RESULT([yes])],[AC_MSG_ERROR([no, fontconfig >= 2.2.0 needed])],[])
 fi
 
 dnl ===================================================================
@@ -5223,7 +6068,7 @@ dnl Check for the Microsoft Platform SDK.
 dnl =========================================
 dnl FIXME: I don't know yet if PSDK works with MinGW, keep it until I know better,
 dnl and add "-a \( "$WITH_MINGWIN" != "yes" \)" then
-if test \( "$_os" = "WINNT" \) ; then
+if test \( "$_os" = "WINNT" \) -a \( -z "$MSVC_MODERN" \) ; then
 	AC_MSG_CHECKING([for PSDK files])
 	if test -z "$with_psdk_home"; then
 		# This first line will detect a February 2003 Microsoft Platform SDK
@@ -5629,18 +6474,35 @@ dnl ***************************************
 dnl testing ml.exe assembler path
 dnl ***************************************
 if test "$_os" = "WINNT" -a "$WITH_MINGWIN" != "yes"; then
-  AC_MSG_CHECKING([ml.exe assembler path])
+  dnl  The 64 bit assembler is a different BINARY, not just a different copy:
+  dnl  ml.exe emits 32 bit objects and ml64.exe 64 bit ones, and the x64
+  dnl  toolset directory ships only the latter.  Look for whichever one goes
+  dnl  with the target being built.
+  if test "$BUILD_WIN64" = "TRUE" ; then
+    ASM_EXE_NAME=ml64.exe
+  else
+    ASM_EXE_NAME=ml.exe
+  fi
+  AC_MSG_CHECKING([$ASM_EXE_NAME assembler path])
   if test -n "$with_asm_home"; then
     with_asm_home=`cygpath -u "$with_asm_home"`
   fi
-  if test ! -x "$with_asm_home/ml.exe"; then
-    AC_PATH_PROG(ML_EXE, ml.exe)
+  if test ! -x "$with_asm_home/$ASM_EXE_NAME"; then
+    AC_PATH_PROG(ML_EXE, $ASM_EXE_NAME)
     if test -z "$ML_EXE"; then
-      if test -x "$with_cl_home/bin/ml.exe"; then
+      if test -x "$with_cl_home/bin/$ASM_EXE_NAME"; then
         with_asm_home=$with_cl_home/bin
         AC_MSG_RESULT([found ($with_asm_home)])
+      elif test -x "$with_cl_home/$cl_subdirectory/$ASM_EXE_NAME"; then
+        dnl  A modern toolset keeps the assembler beside the compiler in the
+        dnl  split bin/Host<host>/<target> tree, and the target half matters:
+        dnl  the x86 directory has ml.exe, the x64 one has ml64.exe.  Reusing
+        dnl  $cl_subdirectory is what keeps assembler and compiler on the same
+        dnl  target rather than merely on the same toolset.
+        with_asm_home=$with_cl_home/$cl_subdirectory
+        AC_MSG_RESULT([found ($with_asm_home)])
       else
-        AC_MSG_ERROR([Configure did not find ml.exe assembler.])
+        AC_MSG_ERROR([Configure did not find $ASM_EXE_NAME assembler.])
       fi
     else
        with_asm_home="ASM_IN_PATH"
@@ -5946,7 +6808,7 @@ dnl ===================================================================
 dnl Check the ARM target
 dnl ===================================================================
 
-if echo "$build_cpu" | $GREP -q arm; then
+if echo "$build_cpu" | $GREP -q arm && test "$build_cpu" != "arm64" && test "$build_cpu" != "aarch64"; then
     # default value
     ARM_TARGET=ARMV4T
     AC_MSG_CHECKING([which ARM processor optimization to use])
@@ -5987,7 +6849,7 @@ if test  "$test_cairo" = "yes"; then
 	   fi
            if test "$with_system_xrender_headers" = "yes"; then
               AC_MSG_CHECKING([whether Xrender.h defines PictStandardA8])
-              AC_TRY_RUN([
+              AC_RUN_IFELSE([AC_LANG_SOURCE([[
 #include <X11/extensions/Xrender.h>
 
 int main(int argc, char **argv) {
@@ -5997,7 +6859,7 @@ int main(int argc, char **argv) {
       return 1;
 #endif
 }
-               ], [AC_MSG_RESULT([yes])], [AC_MSG_ERROR([no, X headers too old.])])
+               ]])],[AC_MSG_RESULT([yes])],[AC_MSG_ERROR([no, X headers too old.])],[])
            fi
         else
            BUILD_TYPE="$BUILD_TYPE CAIRO"
@@ -6091,25 +6953,6 @@ else
   ENABLE_MEDIAWIKI=NO
 fi
 AC_SUBST(ENABLE_MEDIAWIKI)
-
-if test "$ENABLE_MEDIAWIKI" = "YES"; then
-  AC_MSG_CHECKING([which Servlet API Jar to use])
-  if test -n "$with_system_servlet_api"; then
-    AC_MSG_RESULT([external])
-    SYSTEM_SERVLETAPI=YES
-      if test -z "$SERVLETAPI_JAR"; then
-	SERVLETAPI_JAR=/usr/share/java/servlet-api.jar
-      fi
-      AC_CHECK_FILE($SERVLETAPI_JAR, [],
-             [AC_MSG_ERROR(servlet-api.jar not found.)], [])
-  else
-    AC_MSG_RESULT([internal])
-    SYSTEM_SERVLETAPI=NO
-    BUILD_TYPE="$BUILD_TYPE TOMCAT"
-  fi
-fi
-AC_SUBST(SYSTEM_SERVLETAPI)
-AC_SUBST(SERVLETAPI_JAR)
 
 AC_MSG_CHECKING([whether to build the Report Builder extension])
 if test -n "$enable_report_builder" -a "$enable_report_builder" != "no" && test "$WITH_JAVA" != "no"; then
@@ -6299,9 +7142,8 @@ AC_SUBST(LIBREPOSITORY_JAR)
 AC_SUBST(LIBFONTS_JAR)
 AC_SUBST(LIBSERIALIZER_JAR)
 
-# this has to be here because both the Wiki Publisher and the Report
-# Builder use commons-logging, while the non-optional PostgreSQL
-# connector uses commons-lang.
+# this has to be here because the Report Builder uses commons-logging,
+# while the non-optional PostgreSQL connector uses commons-lang.
 AC_MSG_CHECKING([which Apache commons-* libs to use])
 if test "$with_system_apache_commons" = "yes"; then
   SYSTEM_APACHE_COMMONS=YES
@@ -6337,38 +7179,7 @@ if test "$with_system_apache_commons" = "yes"; then
       AC_MSG_ERROR([no, you need Apache Commons Lang 3.x])
   fi
 
-  if test "$ENABLE_MEDIAWIKI" = "YES"; then
-    if test -z $COMMONS_CODEC_JAR; then
-      AC_CHECK_FILE(/usr/share/java/commons-codec-1.9.jar,
-        [ COMMONS_CODEC_JAR=/usr/share/java/commons-codec-1.9.jar ],
-        [
-          AC_CHECK_FILE(/usr/share/java/commons-codec.jar,
-            [ COMMONS_CODEC_JAR=/usr/share/java/commons-codec.jar ],
-            [AC_MSG_ERROR(commons-codec.jar replacement not found.)]
-          )
-        ]
-      )
-    else
-      AC_CHECK_FILE($COMMONS_CODEC_JAR, [],
-           [AC_MSG_ERROR(commons-codec.jar not found.)], [])
-    fi
-
-    if test -z $COMMONS_HTTPCLIENT_JAR; then
-      AC_CHECK_FILE(/usr/share/java/commons-httpclient-3.1.jar,
-        [ COMMONS_HTTPCLIENT_JAR=/usr/share/java/commons-httpclient-3.1.jar ],
-        [
-          AC_CHECK_FILE(/usr/share/java/commons-httpclient.jar,
-            [ COMMONS_HTTPCLIENT_JAR=/usr/share/java/commons-httpclient.jar ],
-            [AC_MSG_ERROR(commons-httpclient.jar replacement not found.)]
-          )
-        ]
-      )
-    else
-      AC_CHECK_FILE($COMMONS_HTTPCLIENT_JAR, [],
-           [AC_MSG_ERROR(commons-httpclient.jar not found.)], [])
-    fi
-  fi
-  if test "$ENABLE_MEDIAWIKI" = "YES" -o "$ENABLE_REPORTBUILDER" = "YES"; then
+  if test "$ENABLE_REPORTBUILDER" = "YES"; then
     if test -z $COMMONS_LOGGING_JAR; then
       AC_CHECK_FILE(/usr/share/java/commons-logging-1.1.3.jar,
         [ COMMONS_LOGGING_JAR=/usr/share/java/commons-logging-1.1.3.jar ],
@@ -6387,12 +7198,10 @@ if test "$with_system_apache_commons" = "yes"; then
 else
   AC_MSG_RESULT([internal])
   SYSTEM_APACHE_COMMONS=NO
-  BUILD_TYPE="$BUILD_TYPE APACHE_COMMONS TOMCAT"
+  BUILD_TYPE="$BUILD_TYPE APACHE_COMMONS"
 fi
 AC_SUBST(SYSTEM_APACHE_COMMONS)
-AC_SUBST(COMMONS_CODEC_JAR)
 AC_SUBST(COMMONS_LANG_JAR)
-AC_SUBST(COMMONS_HTTPCLIENT_JAR)
 AC_SUBST(COMMONS_LOGGING_JAR)
 
 dnl ===================================================================
@@ -6819,7 +7628,7 @@ dnl ===================================================================
 SYSTEM_GETTEXT=YES
 AC_SUBST(SYSTEM_GETTEXT)
 
-if test "$_os" = "FreeBSD"; then
+if test "$_os" = "FreeBSD" -o "$_os" = "Darwin"; then
     LIBINTL_PREFIX=
     for dir in $CPPFLAGS; do
       if dir=`expr -- $dir : '-I\(.*\)'`; then
@@ -6828,6 +7637,11 @@ if test "$_os" = "FreeBSD"; then
         fi
       fi
     done
+    if test -z "$LIBINTL_PREFIX"; then
+       for dir in /usr/local /opt/homebrew /opt/local /usr; do
+          test -f "$dir/include/libintl.h" && LIBINTL_PREFIX=$dir && break
+       done
+    fi
     AC_SUBST(LIBINTL_PREFIX)
 fi
 
@@ -7459,5 +8273,4 @@ else
    fi
    echo
 fi
-
 

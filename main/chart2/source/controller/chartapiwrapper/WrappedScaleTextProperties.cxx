@@ -21,7 +21,7 @@
 
 
 
-#include "precompiled_chart2.hxx"
+#include "precompiled_chartcontroller.hxx"
 
 #include "WrappedScaleTextProperties.hxx"
 #include "FastPropertyIdRanges.hxx"

@@ -93,7 +93,7 @@ public class StorageUnitTest
 
 		try {
 			Object oStorageFactory = m_xMSF.createInstance( "com.sun.star.embed.StorageFactory" );
-			m_xStorageFactory = (XSingleServiceFactory)UnoRuntime.queryInterface( XSingleServiceFactory.class,
+			m_xStorageFactory = UnoRuntime.queryInterface( XSingleServiceFactory.class,
 																				oStorageFactory );
 		}
 		catch( Exception e )

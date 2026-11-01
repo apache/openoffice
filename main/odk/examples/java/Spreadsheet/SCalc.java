@@ -116,20 +116,20 @@ public class SCalc  {
         //***************************************************************************
 
         try {
-            XStyleFamiliesSupplier xSFS = (XStyleFamiliesSupplier)
+            XStyleFamiliesSupplier xSFS =
                 UnoRuntime.queryInterface(XStyleFamiliesSupplier.class, myDoc);
             XNameAccess xSF = (XNameAccess) xSFS.getStyleFamilies();
-            XNameAccess xCS = (XNameAccess) UnoRuntime.queryInterface(
+            XNameAccess xCS = UnoRuntime.queryInterface(
                 XNameAccess.class, xSF.getByName("CellStyles"));
-            XMultiServiceFactory oDocMSF = (XMultiServiceFactory)
+            XMultiServiceFactory oDocMSF =
                 UnoRuntime.queryInterface(XMultiServiceFactory.class, myDoc );
-            XNameContainer oStyleFamilyNameContainer = (XNameContainer)
+            XNameContainer oStyleFamilyNameContainer =
                 UnoRuntime.queryInterface(
                 XNameContainer.class, xCS);
             XInterface oInt1 = (XInterface) oDocMSF.createInstance(
                 "com.sun.star.style.CellStyle");
             oStyleFamilyNameContainer.insertByName("My Style", oInt1);
-            XPropertySet oCPS1 = (XPropertySet)UnoRuntime.queryInterface(
+            XPropertySet oCPS1 = UnoRuntime.queryInterface(
                 XPropertySet.class, oInt1 );
             oCPS1.setPropertyValue("IsCellBackgroundTransparent", new Boolean(false));
             oCPS1.setPropertyValue("CellBackColor",new Integer(6710932));
@@ -137,7 +137,7 @@ public class SCalc  {
             XInterface oInt2 = (XInterface) oDocMSF.createInstance(
                 "com.sun.star.style.CellStyle");
             oStyleFamilyNameContainer.insertByName("My Style2", oInt2);
-            XPropertySet oCPS2 = (XPropertySet)UnoRuntime.queryInterface(
+            XPropertySet oCPS2 = UnoRuntime.queryInterface(
                 XPropertySet.class, oInt2 );
             oCPS2.setPropertyValue("IsCellBackgroundTransparent", new Boolean(false));
             oCPS2.setPropertyValue("CellBackColor",new Integer(13421823));
@@ -161,9 +161,9 @@ public class SCalc  {
         try {
             System.out.println("Getting spreadsheet") ;
             XSpreadsheets xSheets = myDoc.getSheets() ;
-            XIndexAccess oIndexSheets = (XIndexAccess) UnoRuntime.queryInterface(
+            XIndexAccess oIndexSheets = UnoRuntime.queryInterface(
                 XIndexAccess.class, xSheets);
-            xSheet = (XSpreadsheet) UnoRuntime.queryInterface(
+            xSheet = UnoRuntime.queryInterface(
                 XSpreadsheet.class, oIndexSheets.getByIndex(0));
 
         } catch (Exception e) {
@@ -270,16 +270,16 @@ public class SCalc  {
         oRect.Width = 25000;
         oRect.Height = 11000;
 
-        XCellRange oRange = (XCellRange)UnoRuntime.queryInterface(
+        XCellRange oRange = UnoRuntime.queryInterface(
             XCellRange.class, xSheet);
         XCellRange myRange = oRange.getCellRangeByName("A1:N4");
-        XCellRangeAddressable oRangeAddr = (XCellRangeAddressable)
+        XCellRangeAddressable oRangeAddr =
             UnoRuntime.queryInterface(XCellRangeAddressable.class, myRange);
         CellRangeAddress myAddr = oRangeAddr.getRangeAddress();
 
         CellRangeAddress[] oAddr = new CellRangeAddress[1];
         oAddr[0] = myAddr;
-        XTableChartsSupplier oSupp = (XTableChartsSupplier)UnoRuntime.queryInterface(
+        XTableChartsSupplier oSupp = UnoRuntime.queryInterface(
             XTableChartsSupplier.class, xSheet);
 
         XTableChart oChart = null;
@@ -293,21 +293,21 @@ public class SCalc  {
 
         try {
             oChart = (XTableChart) (UnoRuntime.queryInterface(
-                XTableChart.class, ((XNameAccess)UnoRuntime.queryInterface(
+                XTableChart.class, (UnoRuntime.queryInterface(
                             XNameAccess.class, oCharts)).getByName("Example")));
-            XEmbeddedObjectSupplier oEOS = (XEmbeddedObjectSupplier)
+            XEmbeddedObjectSupplier oEOS =
                 UnoRuntime.queryInterface(XEmbeddedObjectSupplier.class, oChart);
             XInterface oInt = oEOS.getEmbeddedObject();
-            XChartDocument xChart = (XChartDocument) UnoRuntime.queryInterface(
+            XChartDocument xChart = UnoRuntime.queryInterface(
                 XChartDocument.class,oInt);
             XDiagram oDiag = (XDiagram) xChart.getDiagram();
             System.out.println("Change Diagramm to 3D");
-            XPropertySet oCPS = (XPropertySet)UnoRuntime.queryInterface(
+            XPropertySet oCPS = UnoRuntime.queryInterface(
                 XPropertySet.class, oDiag );
             oCPS.setPropertyValue("Dim3D", new Boolean(true));
             System.out.println("Change the title");
             Thread.sleep(200);
-            XPropertySet oTPS = (XPropertySet)UnoRuntime.queryInterface(
+            XPropertySet oTPS = UnoRuntime.queryInterface(
                 XPropertySet.class, xChart.getTitle() );
             oTPS.setPropertyValue("String","The new title");
             //oDiag.Dim3D();
@@ -337,14 +337,14 @@ public class SCalc  {
                 "com.sun.star.frame.Desktop", xContext );
 
             // query the desktop object for the XComponentLoader
-            xCLoader = ( XComponentLoader ) UnoRuntime.queryInterface(
+            xCLoader = UnoRuntime.queryInterface(
                 XComponentLoader.class, oDesktop );
 
             PropertyValue [] szEmptyArgs = new PropertyValue [0];
             String strDoc = "private:factory/scalc";
 
             xComp = xCLoader.loadComponentFromURL(strDoc, "_blank", 0, szEmptyArgs );
-            xSpreadSheetDoc = (XSpreadsheetDocument) UnoRuntime.queryInterface(
+            xSpreadSheetDoc = UnoRuntime.queryInterface(
                 XSpreadsheetDocument.class, xComp);
 
         } catch(Exception e){
@@ -387,7 +387,7 @@ public class SCalc  {
             ex.printStackTrace(System.err);
         }
 
-        XPropertySet xCPS = (XPropertySet)UnoRuntime.queryInterface(
+        XPropertySet xCPS = UnoRuntime.queryInterface(
             XPropertySet.class, xCR );
 
         try {

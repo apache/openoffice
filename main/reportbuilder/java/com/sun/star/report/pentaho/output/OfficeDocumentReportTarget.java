@@ -37,7 +37,6 @@ import com.sun.star.report.pentaho.model.OfficeStyles;
 import com.sun.star.report.pentaho.model.OfficeStylesCollection;
 import com.sun.star.report.pentaho.styles.LengthCalculator;
 import com.sun.star.report.pentaho.styles.StyleMapper;
-import com.sun.org.apache.xerces.internal.parsers.DOMParser;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.xml.transform.OutputKeys;
@@ -45,6 +44,7 @@ import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
+import javax.xml.parsers.DocumentBuilderFactory;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
@@ -1054,9 +1054,8 @@ public abstract class OfficeDocumentReportTarget extends AbstractReportTarget
             try
             {
                 inputStream = getInputRepository().createInputStream("meta.xml");
-                DOMParser dOMParser = new DOMParser();
-                dOMParser.parse(new InputSource(inputStream));
-                Document document = dOMParser.getDocument();
+                Document document = DocumentBuilderFactory.newInstance()
+                        .newDocumentBuilder().parse(new InputSource(inputStream));
                 NodeList nl = document.getElementsByTagName("document-meta/meta/generator");
                 Node node = document.getFirstChild().getFirstChild().getFirstChild().getFirstChild();
                 String creator = node.getNodeValue();
@@ -1256,7 +1255,7 @@ public abstract class OfficeDocumentReportTarget extends AbstractReportTarget
             return "";
         }
         final char[] chars = name.toCharArray();
-        final StringBuffer buffer = new StringBuffer();
+        final StringBuilder buffer = new StringBuilder();
         for (int i = 0; i < chars.length; i++)
         {
             final char aChar = chars[i];
@@ -1364,7 +1363,7 @@ public abstract class OfficeDocumentReportTarget extends AbstractReportTarget
                         {
                             final OfficeStyle imageStyle = deriveStyle(OfficeToken.GRAPHIC, OfficeToken.GRAPHICS);
                             final Element graphProperties = produceFirstChild(imageStyle, OfficeNamespaces.STYLE_NS, OfficeToken.GRAPHIC_PROPERTIES);
-                            final StringBuffer buffer = new StringBuffer();
+                            final StringBuilder buffer = new StringBuilder();
                             buffer.append("rect(");
                             buffer.append(clipHeight / 2);
                             buffer.append(imageAreaHeightVal.getType().getType());
@@ -1387,7 +1386,7 @@ public abstract class OfficeDocumentReportTarget extends AbstractReportTarget
                         {
                             final OfficeStyle imageStyle = deriveStyle(OfficeToken.GRAPHIC, OfficeToken.GRAPHICS);
                             final Element graphProperties = produceFirstChild(imageStyle, OfficeNamespaces.STYLE_NS, OfficeToken.GRAPHIC_PROPERTIES);
-                            final StringBuffer buffer = new StringBuffer();
+                            final StringBuilder buffer = new StringBuilder();
                             buffer.append("rect(0cm ");
                             buffer.append(clipWidth / 2);
                             buffer.append(imageAreaWidthVal.getType().getType());
@@ -1405,7 +1404,7 @@ public abstract class OfficeDocumentReportTarget extends AbstractReportTarget
                         {
                             final OfficeStyle imageStyle = deriveStyle(OfficeToken.GRAPHIC, OfficeToken.GRAPHICS);
                             final Element graphProperties = produceFirstChild(imageStyle, OfficeNamespaces.STYLE_NS, OfficeToken.GRAPHIC_PROPERTIES);
-                            final StringBuffer buffer = new StringBuffer();
+                            final StringBuilder buffer = new StringBuilder();
                             buffer.append("rect(");
                             buffer.append(clipHeight / 2);
                             buffer.append(imageAreaHeightVal.getType().getType());

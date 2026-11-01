@@ -84,7 +84,7 @@ public class ScTableValidationObj extends TestCase {
     */
     protected void cleanup( TestParameters tParam, PrintWriter log ) {
         log.println( "    disposing xSheetDoc " );
-        XComponent oComp = (XComponent)
+        XComponent oComp =
             UnoRuntime.queryInterface (XComponent.class, xSpreadsheetDoc) ;
         util.DesktopTools.closeDoc(oComp);
     }
@@ -106,11 +106,11 @@ public class ScTableValidationObj extends TestCase {
 
         log.println("getting a sheet");
         XSpreadsheet oSheet = null;
-        XIndexAccess oIndexAccess = (XIndexAccess)
+        XIndexAccess oIndexAccess =
             UnoRuntime.queryInterface(XIndexAccess.class, xSpreadsheets);
         try {
-            oSheet = (XSpreadsheet) AnyConverter.toObject(
-                    new Type(XSpreadsheet.class),oIndexAccess.getByIndex(0));
+            oSheet = AnyConverter.toObject(
+                    XSpreadsheet.class,oIndexAccess.getByIndex(0));
         } catch (com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace(log);
             throw new StatusException( "Couldn't get a spreadsheet", e);
@@ -136,10 +136,10 @@ public class ScTableValidationObj extends TestCase {
         XPropertySet Props = null;
 
         try {
-            Props = (XPropertySet)
+            Props =
                 UnoRuntime.queryInterface(XPropertySet.class, oSheet);
-            oObj = (XInterface) AnyConverter.toObject(
-                new Type(XInterface.class),Props.getPropertyValue("Validation"));
+            oObj = AnyConverter.toObject(
+                XInterface.class,Props.getPropertyValue("Validation"));
         } catch (com.sun.star.lang.WrappedTargetException e){
             e.printStackTrace(log);
             throw new StatusException("Couldn't get property 'Validation'", e);

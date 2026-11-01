@@ -45,30 +45,30 @@ using namespace uno;
 namespace cli_uno
 {
 
-public __gc class UnoInterfaceInfo
+public ref class UnoInterfaceInfo
 {
 public:
     UnoInterfaceInfo(Bridge const * bridge, uno_Interface* unoI,
                      typelib_InterfaceTypeDescription* td);
     ~UnoInterfaceInfo();
     uno_Interface * m_unoI; // wrapped interface
-	System::Type * m_type;
+	System::Type ^ m_type;
     typelib_InterfaceTypeDescription* m_typeDesc;
 
     Bridge const* m_bridge;
 };
 
-public __gc class  UnoInterfaceProxy: public srrp::RealProxy,
+public ref class  UnoInterfaceProxy: public srrp::RealProxy,
                                       public srr::IRemotingTypeInfo
 {
     /** used for IRemotingTypeInfo.TypeName
      */
-    System::String* m_sTypeName;
+    System::String ^ m_sTypeName;
     /** The list is filled with UnoInterfaceInfo objects. The list can only
         grow and elements are never changed. If an element was added it
         must not be changed!
      */
-    sc::ArrayList* m_listIfaces;
+    sc::ArrayList ^ m_listIfaces;
     /** The number of UNO interfaces this proxy represents. It corresponds
         to the number of elements in m_listIfaces.
     */
@@ -77,13 +77,13 @@ public __gc class  UnoInterfaceProxy: public srrp::RealProxy,
         to aggregation via bridges.  Though the latter is strongly
         discouraged, this has to be supported.
     */
-    sc::ArrayList* m_listAdditionalProxies;
+    sc::ArrayList ^ m_listAdditionalProxies;
     int m_nlistAdditionalProxies;
 
-    UnoInterfaceInfo * findInfo( ::System::Type * type );
+    UnoInterfaceInfo ^ findInfo( ::System::Type ^ type );
 
     Bridge const* m_bridge;
- 	System::String* m_oid;
+ 	System::String ^ m_oid;
 
 #if OSL_DEBUG_LEVEL >= 2
     /** The string contains all names of UNO interfaces which are
@@ -101,13 +101,13 @@ public:
 
     /** Creates a proxy and registers it on the dot NET side.
      */
-    static System::Object* create(Bridge * bridge,
+    static System::Object ^ create(Bridge * bridge,
                                   uno_Interface * pUnoI,
                                   typelib_InterfaceTypeDescription* pTd,
                                   const rtl::OUString& oid);
 
     /** RealProxy::Invoke */
-    srrm::IMessage* Invoke(srrm::IMessage* msg);
+    virtual srrm::IMessage ^ Invoke(srrm::IMessage ^ msg) override;
 
     /** Must be called from within a synchronized section.
         Add only the interface if it is not already contained.
@@ -120,19 +120,25 @@ public:
 
     /**
      */
-    inline System::String * getOid()
+    inline System::String ^ getOid()
         { return m_oid; }
 
     //IRemotingTypeInfo ----------------------------------------------
-    bool CanCastTo(System::Type* fromType, System::Object* o);
+    virtual bool CanCastTo(System::Type ^ fromType, System::Object ^ o);
 
-    __property System::String* get_TypeName()
+    // IRemotingTypeInfo::TypeName.  MC++ spelled a property as a pair of
+    // __property get_X/set_X methods; C++/CLI has property syntax, and the
+    // accessors have to be virtual because this implements an interface.
+    property System::String ^ TypeName
     {
-        return m_sTypeName;
-    }
-    __property void set_TypeName(System::String* name)
-    {
-        m_sTypeName = name;
+        virtual System::String ^ get()
+        {
+            return m_sTypeName;
+        }
+        virtual void set(System::String ^ name)
+        {
+            m_sTypeName = name;
+        }
     }
 
 
@@ -143,31 +149,31 @@ private:
         typelib_InterfaceTypeDescription* pTD,
 		const rtl::OUString& oid );
 
-    static srrm::IMessage* constructReturnMessage(System::Object* retVal,
-                           System::Object* outArgs[],
+    static srrm::IMessage ^ constructReturnMessage(System::Object ^ retVal,
+                           cli::array< System::Object ^ > ^ outArgs,
                            typelib_InterfaceMethodTypeDescription* mtd,
-                           srrm::IMessage* msg, System::Object* exc);
+                           srrm::IMessage ^ msg, System::Object ^ exc);
 
-    static System::String* m_methodNameString =
-                           new System::String("__MethodName");
-    static System::String* m_typeNameString = new System::String("__TypeName");
-    static System::String* m_ArgsString = new System::String("__Args");
-    static System::String* m_CallContextString =
-                           new System::String("__CallContext");
-    static System::String* m_system_Object_String =
-                           new System::String("System.Object");
-    static System::String* m_methodSignatureString =
-                           new System::String("__MethodSignature");
-    static System::String* m_Equals_String =  new System::String("Equals");
-    static System::String* m_GetHashCode_String =
-                           new System::String("GetHashCode");
-    static System::String* m_GetType_String = new System::String("GetType");
-    static System::String* m_ToString_String = new System::String("ToString");
+    static System::String ^ m_methodNameString =
+                           gcnew System::String("__MethodName");
+    static System::String ^ m_typeNameString = gcnew System::String("__TypeName");
+    static System::String ^ m_ArgsString = gcnew System::String("__Args");
+    static System::String ^ m_CallContextString =
+                           gcnew System::String("__CallContext");
+    static System::String ^ m_system_Object_String =
+                           gcnew System::String("System.Object");
+    static System::String ^ m_methodSignatureString =
+                           gcnew System::String("__MethodSignature");
+    static System::String ^ m_Equals_String =  gcnew System::String("Equals");
+    static System::String ^ m_GetHashCode_String =
+                           gcnew System::String("GetHashCode");
+    static System::String ^ m_GetType_String = gcnew System::String("GetType");
+    static System::String ^ m_ToString_String = gcnew System::String("ToString");
 
 protected:
-     srrm::IMessage* invokeObject(sc::IDictionary* properties,
-                                  srrm::LogicalCallContext* context,
-                                  srrm::IMethodCallMessage* mcm);
+     srrm::IMessage ^ invokeObject(sc::IDictionary ^ properties,
+                                  srrm::LogicalCallContext ^ context,
+                                  srrm::IMethodCallMessage ^ mcm);
 };
 
 
@@ -176,10 +182,10 @@ struct CliProxy: public uno_Interface
 {
     mutable oslInterlockedCount m_ref;
     const Bridge* m_bridge;
-    const gcroot<System::Object*> m_cliI;
-    gcroot<System::Type*> m_type;
+    const gcroot<System::Object ^> m_cliI;
+    gcroot<System::Type ^> m_type;
     const com::sun::star::uno::TypeDescription m_unoType;
-    const gcroot<System::String*> m_oid;
+    const gcroot<System::String ^> m_oid;
     const rtl::OUString m_usOid;
 
     enum MethodKind {MK_METHOD = 0, MK_SET, MK_GET};
@@ -204,7 +210,7 @@ struct CliProxy: public uno_Interface
         This is becaus, the cli interface does not contain the XInterface
         methods.
     */
-    gcroot<sr::MethodInfo*[]> m_arMethodInfos;
+    gcroot< cli::array< sr::MethodInfo ^ > ^ > m_arMethodInfos;
 
     /** This array is similar to m_arMethodInfos but it contains the MethodInfo
         objects of the interface (not the object). When a call is made from uno
@@ -213,7 +219,7 @@ struct CliProxy: public uno_Interface
         array. The name of the actual implemented method may not be the same as
         the interface method.
     */
-    gcroot<sr::MethodInfo*[]> m_arInterfaceMethodInfos;
+    gcroot< cli::array< sr::MethodInfo ^ > ^ > m_arInterfaceMethodInfos;
 
     /** Maps the position of the method in the UNO interface to the position of
         the corresponding MethodInfo in m_arMethodInfos. The Uno position must
@@ -226,22 +232,22 @@ struct CliProxy: public uno_Interface
         arUnoPosToCliPos[pos] contains the index for m_arMethodInfos.
 
      */
-    gcroot<System::Int32[]> m_arUnoPosToCliPos;
+    gcroot< cli::array< System::Int32 > ^ > m_arUnoPosToCliPos;
 
     /** Count of inherited interfaces of the cli interface.
      */
     int m_nInheritedInterfaces;
     /** Contains the number of methods of each interface.
      */
-    gcroot<System::Int32[]> m_arInterfaceMethodCount;
+    gcroot< cli::array< System::Int32 > ^ > m_arInterfaceMethodCount;
 
-    CliProxy( Bridge const* bridge, System::Object* cliI,
+    CliProxy( Bridge const* bridge, System::Object ^ cliI,
                  typelib_TypeDescription const* pTD,
                  const rtl::OUString& usOid);
     ~CliProxy();
 
     static uno_Interface* create(Bridge const * bridge,
-                                 System::Object* cliI,
+                                 System::Object ^ cliI,
                                  typelib_TypeDescription const * TD,
                                  rtl::OUString const & usOid );
 
@@ -277,7 +283,7 @@ struct CliProxy: public uno_Interface
        @param nUnoFunctionPos
        Position of the method in the uno interface.
      */
-    sr::MethodInfo* getMethodInfo(int nUnoFunctionPos,
+    sr::MethodInfo ^ getMethodInfo(int nUnoFunctionPos,
                                   const rtl::OUString & usMethodName,
                                   MethodKind mk);
 

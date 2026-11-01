@@ -1,0 +1,10 @@
+[
+ {
+  "name": "autoload",
+  "expr": "(doc.DocumentProperties.AutoloadURL, doc.DocumentProperties.AutoloadSecs)",
+  "expect": [
+   "file:///Users/jim/src/asf/code/follow/aoo/openoffice/test/odf-validate/fixtures/auto-reload/TEST.odt",
+   0
+  ]
+ }
+]

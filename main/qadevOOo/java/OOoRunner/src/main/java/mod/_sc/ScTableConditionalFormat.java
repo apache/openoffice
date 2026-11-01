@@ -93,7 +93,7 @@ public class ScTableConditionalFormat extends TestCase {
     */
     protected void cleanup( TestParameters tParam, PrintWriter log ) {
         log.println( "    disposing xSheetDoc " );
-        XComponent oComp = (XComponent)
+        XComponent oComp =
             UnoRuntime.queryInterface (XComponent.class, xSpreadsheetDoc) ;
         util.DesktopTools.closeDoc(oComp);
     }
@@ -118,11 +118,11 @@ public class ScTableConditionalFormat extends TestCase {
 
         log.println("getting a sheet");
         XSpreadsheet oSheet = null;
-        XIndexAccess oIndexAccess = (XIndexAccess)
+        XIndexAccess oIndexAccess =
             UnoRuntime.queryInterface(XIndexAccess.class, xSpreadsheets);
         try {
-            oSheet = (XSpreadsheet) AnyConverter.toObject(
-                    new Type(XSpreadsheet.class),oIndexAccess.getByIndex(0));
+            oSheet = AnyConverter.toObject(
+                    XSpreadsheet.class,oIndexAccess.getByIndex(0));
         } catch (com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace(log);
             throw new StatusException( "Couldn't get a spreadsheet", e);
@@ -144,11 +144,11 @@ public class ScTableConditionalFormat extends TestCase {
             e.printStackTrace(log);
         }
 
-        XPropertySet Props = (XPropertySet)
+        XPropertySet Props =
             UnoRuntime.queryInterface(XPropertySet.class, oSheet);
         try {
-            oObj = (XInterface) AnyConverter.toObject(
-                    new Type(XInterface.class),
+            oObj = AnyConverter.toObject(
+                    XInterface.class,
                         Props.getPropertyValue("ConditionalFormat"));
         } catch(com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace(log);
@@ -161,7 +161,7 @@ public class ScTableConditionalFormat extends TestCase {
             throw new StatusException("Couldn't get ConditionalFromat", e);
         }
 
-        XSheetConditionalEntries xSCE = (XSheetConditionalEntries)
+        XSheetConditionalEntries xSCE =
             UnoRuntime.queryInterface(XSheetConditionalEntries.class, oObj);
         xSCE.addNew(Conditions(5));
         xSCE.addNew(Conditions(2));

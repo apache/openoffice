@@ -37,6 +37,8 @@
 #ifndef _XMLOFF_PAGEMASTERPROPMAPPER_HXX
 #include "PageMasterPropMapper.hxx"
 #endif
+#include "PageMasterPropHdlFactory.hxx"
+#include <xmloff/PageMasterStyleMap.hxx>
 #include <tools/debug.hxx>
 #include <tools/list.hxx>
 #include <svl/cntnrsrt.hxx>
@@ -585,6 +587,11 @@ SvXMLStyleContext *SvXMLStylesContext::CreateStyleStyleChildContext(
 		case XML_STYLE_FAMILY_SD_POOL_ID:
 			pStyle = new XMLShapeStyleContext( GetImport(), nPrefix, rLocalName,
 											   xAttrList, *this, nFamily );
+			break;
+
+		case XML_STYLE_FAMILY_SD_DRAWINGPAGE_ID:
+			pStyle = new DrawingPageStyleContext( GetImport(), nPrefix, rLocalName,
+											   xAttrList, *this );
 	}
 
 	return pStyle;
@@ -736,6 +743,11 @@ UniReference < SvXMLImportPropertyMapper > SvXMLStylesContext::GetImportProperty
 									((SvXMLStylesContext*)this)->GetImport() );
 		}
 		xMapper = mxPageImpPropMapper;
+		break;
+	case XML_STYLE_FAMILY_SD_DRAWINGPAGE_ID:
+		xMapper = new SvXMLImportPropertyMapper(
+			new XMLPageMasterPropSetMapper( aXMLPageMasterDrawingPageStyleMap, new XMLPageMasterPropHdlFactory ),
+			((SvXMLStylesContext*)this)->GetImport() );
 		break;
 	}
 

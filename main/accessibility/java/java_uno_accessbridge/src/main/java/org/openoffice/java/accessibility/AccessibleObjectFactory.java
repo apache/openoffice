@@ -488,7 +488,7 @@ public class AccessibleObjectFactory {
         if (xAccessibleContext != null) {
             short role = xAccessibleContext.getAccessibleRole();
             XAccessibleStateSet xAccessibleStateSet = xAccessibleContext.getAccessibleStateSet();
-            XAccessibleComponent xAccessibleComponent = (XAccessibleComponent)
+            XAccessibleComponent xAccessibleComponent =
                 UnoRuntime.queryInterface(XAccessibleComponent.class, xAccessibleContext);
 
             java.awt.Window w;

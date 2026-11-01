@@ -143,7 +143,7 @@ public class Test07 implements StorageTest {
 				return false;
 			}
 
-			XNameAccess xClonedNameAccess = (XNameAccess) UnoRuntime.queryInterface( XNameAccess.class, xClonedSubStorage );
+			XNameAccess xClonedNameAccess = UnoRuntime.queryInterface( XNameAccess.class, xClonedSubStorage );
 			if ( xClonedNameAccess == null )
 			{
 				m_aTestHelper.Error( "XNameAccess is not implemented by the clone!" );
@@ -215,7 +215,7 @@ public class Test07 implements StorageTest {
 				return false;
 			}
 
-			XNameAccess xCloneOfRootNA = (XNameAccess) UnoRuntime.queryInterface( XNameAccess.class, xCloneOfRoot );
+			XNameAccess xCloneOfRootNA = UnoRuntime.queryInterface( XNameAccess.class, xCloneOfRoot );
 			if ( xCloneOfRootNA == null )
 			{
 				m_aTestHelper.Error( "XNameAccess is not implemented by the root clone!" );

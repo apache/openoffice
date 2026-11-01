@@ -44,7 +44,11 @@ namespace jfw_plugin
 #elif defined INTEL
 #define JFW_PLUGIN_ARCH "i386"
 #elif defined POWERPC64
+#ifdef OSL_BIGENDIAN
 #define JFW_PLUGIN_ARCH "ppc64"
+#else
+#define JFW_PLUGIN_ARCH "ppc64le"
+#endif
 #elif defined POWERPC
 #define JFW_PLUGIN_ARCH "ppc"
 #elif defined MIPS
@@ -57,6 +61,8 @@ namespace jfw_plugin
 #define JFW_PLUGIN_ARCH "s390x"
 #elif defined S390
 #define JFW_PLUGIN_ARCH "s390"
+#elif defined AARCH64
+#define JFW_PLUGIN_ARCH "aarch64"
 #elif defined ARM
 #define JFW_PLUGIN_ARCH "arm"
 #elif defined IA64

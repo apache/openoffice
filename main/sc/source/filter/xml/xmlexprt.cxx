@@ -65,6 +65,7 @@
 #include "externalrefmgr.hxx"
 #include "editutil.hxx"
 #include "tabprotection.hxx"
+#include <svl/PasswordHelper.hxx>
 
 #include <xmloff/xmltoken.hxx>
 #include <xmloff/xmlnmspe.hxx>
@@ -1509,6 +1510,22 @@ void ScXMLExport::FillColumnRowGroups()
 	}
 }
 
+// ODF 1.2 19.698: SHA-256 of the UTF-8 password; a stored SHA-1 key and ODF 1.0/1.1 keep what the model has
+static uno::Sequence<sal_Int8> lcl_GetProtectionKey( const ScPassHashProtectable& rProtect,
+        bool bODF12, rtl::OUString& rDigest )
+{
+    if (bODF12 && rProtect.hasPasswordHash(PASSHASH_SHA256))
+    {
+        uno::Sequence<sal_Int8> aKey = rProtect.getPasswordHash(PASSHASH_SHA256);
+        if (aKey.getLength())
+        {
+            rDigest = SvPasswordHelper::GetDigestAlgorithmIRI(aKey);
+            return aKey;
+        }
+    }
+    return rProtect.getPasswordHash(PASSHASH_OOO);
+}
+
 void ScXMLExport::SetBodyAttributes()
 {
 	if (pDoc && pDoc->IsDocProtected())
@@ -1516,12 +1533,17 @@ void ScXMLExport::SetBodyAttributes()
 		AddAttribute(XML_NAMESPACE_TABLE, XML_STRUCTURE_PROTECTED, XML_TRUE);
 		rtl::OUStringBuffer aBuffer;
         uno::Sequence<sal_Int8> aPassHash;
+        rtl::OUString aDigest;
         const ScDocProtection* p = pDoc->GetDocProtection();
         if (p)
-            aPassHash = p->getPasswordHash(PASSHASH_OOO);
+            aPassHash = lcl_GetProtectionKey(*p, getDefaultVersion() >= SvtSaveOptions::ODFVER_012, aDigest);
 		SvXMLUnitConverter::encodeBase64(aBuffer, aPassHash);
 		if (aBuffer.getLength())
+		{
 			AddAttribute(XML_NAMESPACE_TABLE, XML_PROTECTION_KEY, aBuffer.makeStringAndClear());
+			if (aDigest.getLength())
+				AddAttribute(XML_NAMESPACE_TABLE, XML_PROTECTION_KEY_DIGEST_ALGORITHM, aDigest);
+		}
 	}
 }
 
@@ -1725,14 +1747,19 @@ void ScXMLExport::_ExportContent()
                         {
                             AddAttribute(XML_NAMESPACE_TABLE, XML_PROTECTED, XML_TRUE);
                             rtl::OUStringBuffer aBuffer;
+                            rtl::OUString aDigest;
                             if (pDoc)
                             {
                                 ScTableProtection* pProtect = pDoc->GetTabProtection(static_cast<SCTAB>(nTable));
                                 if (pProtect)
-                                    SvXMLUnitConverter::encodeBase64(aBuffer, pProtect->getPasswordHash(PASSHASH_OOO));
+                                    SvXMLUnitConverter::encodeBase64(aBuffer, lcl_GetProtectionKey(*pProtect, getDefaultVersion() >= SvtSaveOptions::ODFVER_012, aDigest));
                             }
                             if (aBuffer.getLength())
+                            {
                                 AddAttribute(XML_NAMESPACE_TABLE, XML_PROTECTION_KEY, aBuffer.makeStringAndClear());
+                                if (aDigest.getLength())
+                                    AddAttribute(XML_NAMESPACE_TABLE, XML_PROTECTION_KEY_DIGEST_ALGORITHM, aDigest);
+                            }
                         }
                         rtl::OUString sPrintRanges;
                         table::CellRangeAddress aColumnHeaderRange;
@@ -1746,7 +1773,7 @@ void ScXMLExport::_ExportContent()
                         CheckAttrList();
 
                         if ( pDoc && pDoc->GetSheetEvents( static_cast<SCTAB>(nTable) ) &&
-                             getDefaultVersion() == SvtSaveOptions::ODFVER_LATEST )
+                             SvtSaveOptions::IsODFExtended( getDefaultVersion() ) )
                         {
                             // store sheet events
                             uno::Reference<document::XEventsSupplier> xSupplier(xTable, uno::UNO_QUERY);
@@ -4232,12 +4259,14 @@ void ScXMLExport::WriteConsolidation()
 			ScRangeStringConverter::GetStringFromAddress( sStrData, ScAddress( pCons->nCol, pCons->nRow, pCons->nTab ), pDoc, FormulaGrammar::CONV_OOO );
 			AddAttribute( XML_NAMESPACE_TABLE, XML_TARGET_CELL_ADDRESS, sStrData );
 
+			const XMLTokenEnum eUseLabel =
+				SvtSaveOptions::IsODFStrict( getDefaultVersion() ) ? XML_USE_LABELS : XML_USE_LABEL;
 			if( pCons->bByCol && !pCons->bByRow )
-				AddAttribute( XML_NAMESPACE_TABLE, XML_USE_LABEL, XML_COLUMN );
+				AddAttribute( XML_NAMESPACE_TABLE, eUseLabel, XML_COLUMN );
 			else if( !pCons->bByCol && pCons->bByRow )
-				AddAttribute( XML_NAMESPACE_TABLE, XML_USE_LABEL, XML_ROW );
+				AddAttribute( XML_NAMESPACE_TABLE, eUseLabel, XML_ROW );
 			else if( pCons->bByCol && pCons->bByRow )
-				AddAttribute( XML_NAMESPACE_TABLE, XML_USE_LABEL, XML_BOTH );
+				AddAttribute( XML_NAMESPACE_TABLE, eUseLabel, XML_BOTH );
 
 			if( pCons->bReferenceData )
 				AddAttribute( XML_NAMESPACE_TABLE, XML_LINK_TO_SOURCE_DATA, XML_TRUE );
@@ -4459,6 +4488,13 @@ void ScXMLExport::CollectUserDefinedNamespaces(const SfxItemPool* pPool, sal_uIn
         GetXMLToken( XML_NP_PRESENTATION ),
         GetXMLToken( XML_N_PRESENTATION ),
         XML_NAMESPACE_PRESENTATION );
+
+    // shapes carry drawooo:display
+    if( SvtSaveOptions::IsODFExtended( getDefaultVersion() ) )
+        _GetNamespaceMap().Add(
+            GetXMLToken( XML_NP_DRAW_EXT ),
+            GetXMLToken( XML_N_DRAW_EXT ),
+            XML_NAMESPACE_DRAW_EXT );
 }
 
 void ScXMLExport::IncrementProgressBar(sal_Bool bEditCell, sal_Int32 nInc)
@@ -4491,7 +4527,7 @@ sal_uInt32 ScXMLExport::exportDoc( enum XMLTokenEnum eClass )
 
             // sheet events use officeooo namespace
             if( (getExportFlags() & EXPORT_CONTENT) != 0 &&
-                getDefaultVersion() == SvtSaveOptions::ODFVER_LATEST )
+                SvtSaveOptions::IsODFExtended( getDefaultVersion() ) )
             {
                 bool bAnySheetEvents = false;
                 SCTAB nTabCount = pDoc->GetTableCount();

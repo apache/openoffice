@@ -1,0 +1,43 @@
+[
+ {
+  "name": "objid_type",
+  "expr": "doc.DrawPage.Forms.getByIndex(0).getByIndex(0).getPropertySetInfo().getPropertyByName('ObjIDinMSO').Type.typeName",
+  "expect": "unsigned short"
+ },
+ {
+  "name": "objid_values",
+  "expr": "[c.ObjIDinMSO for c in [doc.DrawPage.Forms.getByIndex(0).getByIndex(i) for i in range(doc.DrawPage.Forms.getByIndex(0).Count)] if c.getPropertySetInfo().hasPropertyByName('ObjIDinMSO')]",
+  "expect": [
+   65535,
+   65535,
+   65535,
+   65535,
+   65535,
+   65535,
+   65535,
+   65535,
+   65535,
+   65535,
+   65535,
+   65535
+  ]
+ },
+ {
+  "name": "ctltype_values",
+  "expr": "[c.ControlTypeinMSO for c in [doc.DrawPage.Forms.getByIndex(0).getByIndex(i) for i in range(doc.DrawPage.Forms.getByIndex(0).Count)] if c.getPropertySetInfo().hasPropertyByName('ControlTypeinMSO')]",
+  "expect": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ]
+ }
+]

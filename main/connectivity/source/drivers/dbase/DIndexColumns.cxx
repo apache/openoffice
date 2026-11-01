@@ -22,7 +22,7 @@
 
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
-#include "precompiled_connectivity.hxx"
+#include "precompiled_dbase.hxx"
 #include "dbase/DIndexColumns.hxx"
 #include "dbase/DTable.hxx"
 #include "connectivity/sdbcx/VIndexColumn.hxx"

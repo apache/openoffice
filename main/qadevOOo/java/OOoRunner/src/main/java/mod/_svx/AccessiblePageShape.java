@@ -57,7 +57,7 @@ public class AccessiblePageShape extends TestCase {
         try {
             log.println( "creating a drawdoc" );
             xDrawDoc = SOF.createDrawDoc(null);
-            aModel = (XModel)
+            aModel =
                 UnoRuntime.queryInterface(XModel.class, xDrawDoc);
 
         } catch ( com.sun.star.uno.Exception e ) {
@@ -105,7 +105,7 @@ public class AccessiblePageShape extends TestCase {
         //  UnoRuntime.queryInterface
         //    (XAccessibleValue.class, at.SearchedContext) ;
         oPage = DrawTools.getDrawPage(xDrawDoc,0);
-        final XPropertySet PageProps = (XPropertySet)
+        final XPropertySet PageProps =
             UnoRuntime.queryInterface(XPropertySet.class, oPage);
 
         tEnv.addObjRelation("EventProducer",

@@ -180,7 +180,7 @@ public class Conversion {
 					propertyValue( "FilterName", targetFilterName),
 					propertyValue( "Overwrite", true));
 			saveTime = System.currentTimeMillis() - start - nSleep;
-			XCloseable xCloseable = (XCloseable) UnoRuntime.queryInterface(XCloseable.class, doc);
+			XCloseable xCloseable = UnoRuntime.queryInterface(XCloseable.class, doc);
 			xCloseable.close(true);
 			closeTime = System.currentTimeMillis() - start - nSleep;
 		} catch (com.sun.star.task.ErrorCodeIOException e){

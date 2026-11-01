@@ -55,7 +55,7 @@ public class _FunctionDescription extends MultiMethodTest {
 
     public void _Arguments() {
         // check if Service is available
-        XServiceInfo xInfo = (XServiceInfo)
+        XServiceInfo xInfo =
             UnoRuntime.queryInterface(XServiceInfo.class, oObj );
 
         if ( ! xInfo.supportsService
@@ -69,7 +69,7 @@ public class _FunctionDescription extends MultiMethodTest {
 
             XInterface FA = (XInterface)oDocMSF.
                 createInstance("com.sun.star.sheet.FunctionArgument");
-            FunctionArgument arg = (FunctionArgument)AnyConverter.toObject
+            FunctionArgument arg = AnyConverter.toObject
                 (FunctionArgument.class, FA);
 
             arg.Description = "FunctionDescription argument description" ;

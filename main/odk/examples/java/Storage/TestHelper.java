@@ -55,7 +55,7 @@ public class TestHelper  {
 		}
 
 		// get XTrucate implementation from output stream
-		XTruncate xTruncate = (XTruncate) UnoRuntime.queryInterface( XTruncate.class, xOutput );
+		XTruncate xTruncate = UnoRuntime.queryInterface( XTruncate.class, xOutput );
 		if ( xTruncate == null )
 		{
 			Error( "Can't get XTruncate implementation from substream '" + sStreamName + "'!" );
@@ -75,7 +75,7 @@ public class TestHelper  {
 		}
 
 		// get access to the XPropertySet interface
-		XPropertySet xPropSet = (XPropertySet) UnoRuntime.queryInterface( XPropertySet.class, xStream );
+		XPropertySet xPropSet = UnoRuntime.queryInterface( XPropertySet.class, xStream );
 		if ( xPropSet == null )
 		{
 			Error( "Can't get XPropertySet implementation from substream '" + sStreamName + "'!" );
@@ -111,7 +111,7 @@ public class TestHelper  {
 		}
 
 		// free the stream resources, garbage collector may remove the object too late
-		XComponent xComponent = (XComponent) UnoRuntime.queryInterface( XComponent.class, xStream );
+		XComponent xComponent = UnoRuntime.queryInterface( XComponent.class, xStream );
 		if ( xComponent == null )
 		{
 			Error( "Can't get XComponent implementation from substream '" + sStreamName + "'!" );
@@ -134,7 +134,7 @@ public class TestHelper  {
 		try
 		{
 			Object oSubStream = xStorage.openStreamElement( sStreamName, ElementModes.ELEMENT_WRITE );
-			xSubStream = (XStream) UnoRuntime.queryInterface( XStream.class, oSubStream );
+			xSubStream = UnoRuntime.queryInterface( XStream.class, oSubStream );
 			if ( xSubStream == null )
 			{
 				Error( "Can't create substream '" + sStreamName + "'!" );
@@ -162,7 +162,7 @@ public class TestHelper  {
 		try
 		{
 			Object oSubStream = xStorage.openEncryptedStreamElement( sStreamName, ElementModes.ELEMENT_WRITE, pPass );
-			xSubStream = (XStream) UnoRuntime.queryInterface( XStream.class, oSubStream );
+			xSubStream = UnoRuntime.queryInterface( XStream.class, oSubStream );
 			if ( xSubStream == null )
 			{
 				Error( "Can't create substream '" + sStreamName + "'!" );
@@ -190,7 +190,7 @@ public class TestHelper  {
 		try
 		{
 			Object oSubStream = xStorage.openStreamElement( sStreamName, ElementModes.ELEMENT_WRITE );
-			xSubStream = (XStream) UnoRuntime.queryInterface( XStream.class, oSubStream );
+			xSubStream = UnoRuntime.queryInterface( XStream.class, oSubStream );
 			if ( xSubStream == null )
 			{
 				Error( "Can't create substream '" + sStreamName + "'!" );
@@ -204,7 +204,7 @@ public class TestHelper  {
 		}
 
 		// get access to the XPropertySet interface
-		XPropertySet xPropSet = (XPropertySet) UnoRuntime.queryInterface( XPropertySet.class, xSubStream );
+		XPropertySet xPropSet = UnoRuntime.queryInterface( XPropertySet.class, xSubStream );
 		if ( xPropSet == null )
 		{
 			Error( "Can't get XPropertySet implementation from substream '" + sStreamName + "'!" );
@@ -235,7 +235,7 @@ public class TestHelper  {
 		try
 		{
 			Object oSubStream = xStorage.openEncryptedStreamElement( sStreamName, ElementModes.ELEMENT_WRITE, pOldPass );
-			xSubStream = (XStream) UnoRuntime.queryInterface( XStream.class, oSubStream );
+			xSubStream = UnoRuntime.queryInterface( XStream.class, oSubStream );
 			if ( xSubStream == null )
 			{
 				Error( "Can't open substream '" + sStreamName + "'!" );
@@ -251,7 +251,7 @@ public class TestHelper  {
 
 		// change the password for the stream
 		XEncryptionProtectedSource xStreamEncryption =
-				(XEncryptionProtectedSource) UnoRuntime.queryInterface( XEncryptionProtectedSource.class, xSubStream );
+				UnoRuntime.queryInterface( XEncryptionProtectedSource.class, xSubStream );
 
 		if ( xStreamEncryption == null )
 		{
@@ -269,7 +269,7 @@ public class TestHelper  {
 		}
 
 		// free the stream resources, garbage collector may remove the object too late
-		XComponent xComponent = (XComponent) UnoRuntime.queryInterface( XComponent.class, xSubStream );
+		XComponent xComponent = UnoRuntime.queryInterface( XComponent.class, xSubStream );
 		if ( xComponent == null )
 		{
 			Error( "Can't get XComponent implementation from substream '" + sStreamName + "'!" );
@@ -285,7 +285,7 @@ public class TestHelper  {
 		boolean bOk = false;
 
 		// get access to the XPropertySet interface
-		XPropertySet xPropSet = (XPropertySet) UnoRuntime.queryInterface( XPropertySet.class, xStorage );
+		XPropertySet xPropSet = UnoRuntime.queryInterface( XPropertySet.class, xStorage );
 		if ( xPropSet != null )
 		{
 			try
@@ -329,7 +329,7 @@ public class TestHelper  {
 		boolean bOk = false;
 
 		// get access to the XPropertySet interface
-		XPropertySet xPropSet = (XPropertySet) UnoRuntime.queryInterface( XPropertySet.class, xStorage );
+		XPropertySet xPropSet = UnoRuntime.queryInterface( XPropertySet.class, xStorage );
 		if ( xPropSet != null )
 		{
 			try
@@ -427,7 +427,7 @@ public class TestHelper  {
 		boolean bOk = false;
 
 		// get access to the XPropertySet interface
-		XPropertySet xPropSet = (XPropertySet) UnoRuntime.queryInterface( XPropertySet.class, xStream );
+		XPropertySet xPropSet = UnoRuntime.queryInterface( XPropertySet.class, xStream );
 		if ( xPropSet != null )
 		{
 			try
@@ -473,7 +473,7 @@ public class TestHelper  {
 		try
 		{
 			Object oSubStream = xParentStorage.openStreamElement( sName, ElementModes.ELEMENT_READ );
-			xSubStream = (XStream) UnoRuntime.queryInterface( XStream.class, oSubStream );
+			xSubStream = UnoRuntime.queryInterface( XStream.class, oSubStream );
 			if ( xSubStream == null )
 			{
 				Error( "Can't open substream '" + sName + "'!" );
@@ -538,7 +538,7 @@ public class TestHelper  {
 		try
 		{
 			Object oSubStream = xParentStorage.openEncryptedStreamElement( sName, ElementModes.ELEMENT_READ, pPass );
-			xSubStream = (XStream) UnoRuntime.queryInterface( XStream.class, oSubStream );
+			xSubStream = UnoRuntime.queryInterface( XStream.class, oSubStream );
 			if ( xSubStream == null )
 			{
 				Error( "Can't open encrypted substream '" + sName + "'!" );
@@ -573,7 +573,7 @@ public class TestHelper  {
 	public boolean commitStorage( XStorage xStorage )
 	{
 		// XTransactedObject must be supported by storages
-		XTransactedObject xTransact = (XTransactedObject) UnoRuntime.queryInterface( XTransactedObject.class, xStorage );
+		XTransactedObject xTransact = UnoRuntime.queryInterface( XTransactedObject.class, xStorage );
 		if ( xTransact == null )
 		{
 			Error( "Storage doesn't implement transacted access!" );
@@ -596,7 +596,7 @@ public class TestHelper  {
 	public boolean disposeStorage( XStorage xStorage )
 	{
 		// dispose the storage
-		XComponent xComponent = (XComponent) UnoRuntime.queryInterface( XComponent.class, xStorage );
+		XComponent xComponent = UnoRuntime.queryInterface( XComponent.class, xStorage );
 		if ( xComponent == null )
 		{
 			Error( "Can't retrieve XComponent implementation from storage!" );
@@ -670,7 +670,7 @@ public class TestHelper  {
 		try
 		{
 			Object oSubStorage = xStorage.openStorageElement( sName, nMode );
-			XStorage xSubStorage = (XStorage) UnoRuntime.queryInterface( XStorage.class, oSubStorage );
+			XStorage xSubStorage = UnoRuntime.queryInterface( XStorage.class, oSubStorage );
 			return xSubStorage;
 		}
 		catch( Exception e )
@@ -688,7 +688,7 @@ public class TestHelper  {
 		try
 		{
 			Object oTempFile = xMSF.createInstance( "com.sun.star.io.TempFile" );
-			xTempFileStream = (XStream)UnoRuntime.queryInterface( XStream.class, oTempFile );
+			xTempFileStream = UnoRuntime.queryInterface( XStream.class, oTempFile );
 		}
 		catch( Exception e )
 		{}
@@ -708,7 +708,7 @@ public class TestHelper  {
 		try
 		{
 			Object oTempFile = xMSF.createInstance( "com.sun.star.io.TempFile" );
-			xTempFileProps = (XPropertySet)UnoRuntime.queryInterface( XPropertySet.class, oTempFile );
+			xTempFileProps = UnoRuntime.queryInterface( XPropertySet.class, oTempFile );
 		}
 		catch( Exception e )
 		{}
@@ -733,7 +733,7 @@ public class TestHelper  {
 		// close temporary file explicitly
 		try
 		{
-			XStream xStream = (XStream)UnoRuntime.queryInterface( XStream.class, xTempFileProps );
+			XStream xStream = UnoRuntime.queryInterface( XStream.class, xTempFileProps );
 			if ( xStream != null )
 			{
 				XOutputStream xOut = xStream.getOutputStream();
@@ -828,7 +828,7 @@ public class TestHelper  {
 		try
 		{
 			Object oSubStream = xStorage.openStreamElement( sStreamName, nMode );
-			xSubStream = (XStream) UnoRuntime.queryInterface( XStream.class, oSubStream );
+			xSubStream = UnoRuntime.queryInterface( XStream.class, oSubStream );
 			if ( xSubStream == null )
 				Error( "Can't create substream '" + sStreamName + "'!" );
 		}

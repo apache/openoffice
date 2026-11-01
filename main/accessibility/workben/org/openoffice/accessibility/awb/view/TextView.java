@@ -74,7 +74,7 @@ public class TextView
         ObjectViewContainer aContainer,
         XAccessibleContext xContext)
     {
-        XAccessibleText xText = (XAccessibleText)UnoRuntime.queryInterface(
+        XAccessibleText xText = UnoRuntime.queryInterface(
                 XAccessibleText.class, xContext);
         if (xText != null)
             return new TextView (aContainer);
@@ -130,7 +130,7 @@ public class TextView
     */
     public void SetObject (XAccessibleContext xObject)
     {
-        mxText = (XAccessibleText)UnoRuntime.queryInterface(
+        mxText = UnoRuntime.queryInterface(
             XAccessibleText.class, xObject);
         maCaretSpinnerModel = new CaretSpinnerModel(mxText);
         maCaretPositionSpinner.setModel (maCaretSpinnerModel);
@@ -178,7 +178,7 @@ public class TextView
             maCaretPositionSpinner.setValue (new Integer (mxText.getCaretPosition()));
 
             // Multi line methods.
-            XAccessibleMultiLineText xMultiText = (XAccessibleMultiLineText)
+            XAccessibleMultiLineText xMultiText =
                 UnoRuntime.queryInterface( XAccessibleMultiLineText.class, mxText );
 
             if( null != xMultiText ) {
@@ -252,7 +252,7 @@ public class TextView
         int nMaxDisplayCount = 30;
 
         // build up string
-        StringBuffer aCharacterArray = new StringBuffer();
+        StringBuilder aCharacterArray = new StringBuilder();
         int nIndex = 0;
         try
         {
@@ -281,7 +281,7 @@ public class TextView
         */
     private String GetTextBoundsString ()
     {
-        StringBuffer aBuffer = new StringBuffer ();
+        StringBuilder aBuffer = new StringBuilder ();
         try
         {
             // Iterate over all characters in the text.
@@ -340,7 +340,7 @@ public class TextView
         {
             aSegment = GetTextSegment (nIndex, nTextType, nWhere);
             DefaultMutableTreeNode aSegmentNode = new DefaultMutableTreeNode (
-                new StringBuffer (
+                new StringBuilder (
                     Integer.toString (nIndex) + " -> "
                     + Integer.toString (aSegment.SegmentStart) + " - "
                     + Integer.toString (aSegment.SegmentEnd) + " : "

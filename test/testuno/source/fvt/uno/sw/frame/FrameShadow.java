@@ -85,27 +85,27 @@ public class FrameShadow {
 
 	@Test
 	public void testFrameShadow() throws Exception {
-		xTextDocument =(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
+		xTextDocument =UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
 		xText=xTextDocument.getText();
 		XTextCursor xTextCursor = xText.createTextCursor();
 		// get internal service factory of the document
-		xWriterFactory =(XMultiServiceFactory)UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
+		xWriterFactory =UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
 		// Create a new table from the document's factory
-		XTextFrame xTextFrame1 = (XTextFrame)UnoRuntime.queryInterface(XTextFrame.class, xWriterFactory.createInstance("com.sun.star.text.TextFrame"));
+		XTextFrame xTextFrame1 = UnoRuntime.queryInterface(XTextFrame.class, xWriterFactory.createInstance("com.sun.star.text.TextFrame"));
 		xText.insertTextContent(xTextCursor,xTextFrame1,false);
-		XPropertySet xTextFrameProps1 = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, xTextFrame1);
+		XPropertySet xTextFrameProps1 = UnoRuntime.queryInterface(XPropertySet.class, xTextFrame1);
 		ShadowFormat shadowFormat=new ShadowFormat();
 		shadowFormat.Color=shadowColor;
 		shadowFormat.Location=shadowLocation;
 		shadowFormat.ShadowWidth=shadowWidth;
 		xTextFrameProps1.setPropertyValue("ShadowFormat",shadowFormat);
 		//reopen the document
-		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, SWUtil.saveTo_Override_reload(xTextDocument,"writer8", Testspace.getPath("output/test.odt"),app));
-		XTextFramesSupplier xTFS_odt = (XTextFramesSupplier) UnoRuntime.queryInterface(XTextFramesSupplier.class, assertDocument_odt);
+		XTextDocument assertDocument_odt=UnoRuntime.queryInterface(XTextDocument.class, SWUtil.saveTo_Override_reload(xTextDocument,"writer8", Testspace.getPath("output/test.odt"),app));
+		XTextFramesSupplier xTFS_odt = UnoRuntime.queryInterface(XTextFramesSupplier.class, assertDocument_odt);
 		XNameAccess xTextFrames_odt = xTFS_odt.getTextFrames();
-		XTextFrame xTextFrame_Assert1=(XTextFrame) UnoRuntime.queryInterface(XTextFrame.class, xTextFrames_odt.getByName("Frame1"));
-		XPropertySet xTextFrameProps_assert1 = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextFrame_Assert1);
-		ShadowFormat shadowFormat_Assert1=(ShadowFormat) UnoRuntime.queryInterface(ShadowFormat.class, xTextFrameProps_assert1.getPropertyValue("ShadowFormat"));
+		XTextFrame xTextFrame_Assert1=UnoRuntime.queryInterface(XTextFrame.class, xTextFrames_odt.getByName("Frame1"));
+		XPropertySet xTextFrameProps_assert1 = UnoRuntime.queryInterface(XPropertySet.class, xTextFrame_Assert1);
+		ShadowFormat shadowFormat_Assert1=UnoRuntime.queryInterface(ShadowFormat.class, xTextFrameProps_assert1.getPropertyValue("ShadowFormat"));
 		assertEquals("assert shadow color",shadowColor,shadowFormat_Assert1.Color);
 		assertEquals("assert shadow location",shadowLocation,shadowFormat_Assert1.Location);
 		assertEquals("assert shadow width",shadowWidth,shadowFormat_Assert1.ShadowWidth);

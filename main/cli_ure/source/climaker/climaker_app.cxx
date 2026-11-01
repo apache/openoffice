@@ -537,21 +537,21 @@ SAL_IMPLEMENT_MAIN()
             filename += OUSTR(".dll");
         else
             name = name.copy( 0, dot );
-        ::System::String * output_dir = ustring_to_String( sys_output_dir );
-        ::System::String * output_file = ustring_to_String( filename );
+        ::System::String ^ output_dir = ustring_to_String( sys_output_dir );
+        ::System::String ^ output_file = ustring_to_String( filename );
 
         //Get the key pair for making a strong name
-        StrongNameKeyPair* kp = NULL;
+        StrongNameKeyPair ^ kp = nullptr;
         if (keyfile.getLength() > 0)
         {
-            ::System::String * sKeyFile = ustring_to_String(keyfile);
+            ::System::String ^ sKeyFile = ustring_to_String(keyfile);
             try {
-                System::IO::FileStream* fs = new System::IO::FileStream(
+                System::IO::FileStream ^ fs = gcnew System::IO::FileStream(
                     sKeyFile, System::IO::FileMode::Open);
-                kp = new StrongNameKeyPair(fs);
+                kp = gcnew StrongNameKeyPair(fs);
                 fs->Close();
             }
-            catch (System::IO::FileNotFoundException * )
+            catch (System::IO::FileNotFoundException ^ )
             {
                 throw Exception(OUSTR("Could not find the keyfile. Verify the --keyfile argument!"), 0);
             }
@@ -561,88 +561,89 @@ SAL_IMPLEMENT_MAIN()
             if (g_verbose)
             {
                 ::System::Console::Write(
-                    S"> no key file specified. Cannot create strong name!\n");
+                    "> no key file specified. Cannot create strong name!\n");
             }
         }
         // setup assembly info: xxx todo set more? e.g. avoid strong versioning
-        AssemblyName * assembly_name = new AssemblyName();
-        assembly_name->set_CodeBase( output_dir );
-        assembly_name->set_Name( name.getStr() );
-        if (kp != NULL)
-            assembly_name->set_KeyPair(kp);
+        AssemblyName ^ assembly_name = gcnew AssemblyName();
+        assembly_name->CodeBase = output_dir;
+        // MC++ converted a const wchar_t* to String* implicitly; C++/CLI does
+        // not, so say what was always meant.
+        assembly_name->Name = ustring_to_String( name );
+        if (kp != nullptr)
+            assembly_name->KeyPair = kp;
 
         if (version.getLength() != 0)
         {
-            assembly_name->set_Version(
-                new ::System::Version( ustring_to_String( version ) ) );
+            assembly_name->Version = gcnew ::System::Version( ustring_to_String( version ) );
         }
 
         // app domain
-        ::System::AppDomain * current_appdomain =
-              ::System::AppDomain::get_CurrentDomain();
+        ::System::AppDomain ^ current_appdomain =
+              ::System::AppDomain::CurrentDomain;
         // target assembly
-        Emit::AssemblyBuilder * assembly_builder =
+        Emit::AssemblyBuilder ^ assembly_builder =
             current_appdomain->DefineDynamicAssembly(
                 assembly_name, Emit::AssemblyBuilderAccess::Save, output_dir );
         if (product.getLength() != 0)
         {
-            ::System::Type * params __gc [] = new ::System::Type * __gc [ 1 ];
-            ::System::Object * args __gc [] = new ::System::Object * __gc [ 1 ];
-            params[ 0 ] = __typeof (::System::String);
+            cli::array< ::System::Type ^ > ^ params = gcnew cli::array< ::System::Type ^ >( 1 );
+            cli::array< ::System::Object ^ > ^ args = gcnew cli::array< ::System::Object ^ >( 1 );
+            params[ 0 ] = ::System::String::typeid;
             args[ 0 ] = ustring_to_String( product );
             assembly_builder->SetCustomAttribute(
-                new Emit::CustomAttributeBuilder(
-                    __typeof (AssemblyProductAttribute)->GetConstructor(
+                gcnew Emit::CustomAttributeBuilder(
+                    AssemblyProductAttribute::typeid->GetConstructor(
                         params ), args ) );
         }
         if (description.getLength() != 0)
         {
-            ::System::Type * params __gc [] = new ::System::Type * __gc [ 1 ];
-            ::System::Object * args __gc [] = new ::System::Object * __gc [ 1 ];
-            params[ 0 ] = __typeof (::System::String);
+            cli::array< ::System::Type ^ > ^ params = gcnew cli::array< ::System::Type ^ >( 1 );
+            cli::array< ::System::Object ^ > ^ args = gcnew cli::array< ::System::Object ^ >( 1 );
+            params[ 0 ] = ::System::String::typeid;
             args[ 0 ] = ustring_to_String( description );
             assembly_builder->SetCustomAttribute(
-                new Emit::CustomAttributeBuilder(
-                    __typeof (AssemblyDescriptionAttribute)->GetConstructor(
+                gcnew Emit::CustomAttributeBuilder(
+                    AssemblyDescriptionAttribute::typeid->GetConstructor(
                         params ), args ) );
         }
         if (company.getLength() != 0)
         {
-            ::System::Type * params __gc [] = new ::System::Type * __gc [ 1 ];
-            ::System::Object * args __gc [] = new ::System::Object * __gc [ 1 ];
-            params[ 0 ] = __typeof (::System::String);
+            cli::array< ::System::Type ^ > ^ params = gcnew cli::array< ::System::Type ^ >( 1 );
+            cli::array< ::System::Object ^ > ^ args = gcnew cli::array< ::System::Object ^ >( 1 );
+            params[ 0 ] = ::System::String::typeid;
             args[ 0 ] = ustring_to_String( company );
             assembly_builder->SetCustomAttribute(
-                new Emit::CustomAttributeBuilder(
-                    __typeof (AssemblyCompanyAttribute)->GetConstructor(
+                gcnew Emit::CustomAttributeBuilder(
+                    AssemblyCompanyAttribute::typeid->GetConstructor(
                         params ), args ) );
         }
         if (copyright.getLength() != 0)
         {
-            ::System::Type * params __gc [] = new ::System::Type * __gc [ 1 ];
-            ::System::Object * args __gc [] = new ::System::Object * __gc [ 1 ];
-            params[ 0 ] = __typeof (::System::String);
+            cli::array< ::System::Type ^ > ^ params = gcnew cli::array< ::System::Type ^ >( 1 );
+            cli::array< ::System::Object ^ > ^ args = gcnew cli::array< ::System::Object ^ >( 1 );
+            params[ 0 ] = ::System::String::typeid;
             args[ 0 ] = ustring_to_String( copyright );
             assembly_builder->SetCustomAttribute(
-                new Emit::CustomAttributeBuilder(
-                    __typeof (AssemblyCopyrightAttribute)->GetConstructor(
+                gcnew Emit::CustomAttributeBuilder(
+                    AssemblyCopyrightAttribute::typeid->GetConstructor(
                         params ), args ) );
         }
         if (trademark.getLength() != 0)
         {
-            ::System::Type * params __gc [] = new ::System::Type * __gc [ 1 ];
-            ::System::Object * args __gc [] = new ::System::Object * __gc [ 1 ];
-            params[ 0 ] = __typeof (::System::String);
+            cli::array< ::System::Type ^ > ^ params = gcnew cli::array< ::System::Type ^ >( 1 );
+            cli::array< ::System::Object ^ > ^ args = gcnew cli::array< ::System::Object ^ >( 1 );
+            params[ 0 ] = ::System::String::typeid;
             args[ 0 ] = ustring_to_String( trademark );
             assembly_builder->SetCustomAttribute(
-                new Emit::CustomAttributeBuilder(
-                    __typeof (AssemblyTrademarkAttribute)->GetConstructor(
+                gcnew Emit::CustomAttributeBuilder(
+                    AssemblyTrademarkAttribute::typeid->GetConstructor(
                         params ), args ) );
         }
 
         // load extra assemblies
-        Assembly * assemblies __gc [] =
-            new Assembly * __gc [ extra_assemblies.size() ];
+        cli::array< Assembly ^ > ^ assemblies =
+            gcnew cli::array< Assembly ^ >( extra_assemblies.size() );
         for ( size_t pos = 0; pos < extra_assemblies.size(); ++pos )
         {
             assemblies[ pos ] = Assembly::LoadFrom(
@@ -650,13 +651,14 @@ SAL_IMPLEMENT_MAIN()
         }
 
         // type emitter
-        TypeEmitter * type_emitter = new TypeEmitter(
+        TypeEmitter ^ type_emitter = gcnew TypeEmitter(
             assembly_builder->DefineDynamicModule( output_file ), assemblies );
         // add handler resolving assembly's types
-        ::System::ResolveEventHandler * type_resolver =
-              new ::System::ResolveEventHandler(
+        ::System::ResolveEventHandler ^ type_resolver =
+              gcnew ::System::ResolveEventHandler(
                   type_emitter, &TypeEmitter::type_resolve );
-        current_appdomain->add_TypeResolve( type_resolver );
+        // C++/CLI subscribes to an event with += rather than add_X().
+        current_appdomain->TypeResolve += type_resolver;
 
         // and emit types to it
         if (explicit_types.empty())
@@ -685,23 +687,24 @@ SAL_IMPLEMENT_MAIN()
                         UNO_QUERY_THROW ) );
             }
         }
-        type_emitter->Dispose();
+        // Dispose() is the destructor now, and delete is how it is called.
+        delete type_emitter;
 
         if (g_verbose)
         {
             ::System::Console::Write(
-                S"> saving assembly {0}{1}{2}...",
+                "> saving assembly {0}{1}{2}...",
                 output_dir,
-                new ::System::String(
+                gcnew ::System::String(
                     ::System::IO::Path::DirectorySeparatorChar, 1 ),
                 output_file );
         }
         assembly_builder->Save( output_file );
         if (g_verbose)
         {
-            ::System::Console::WriteLine( S"ok." );
+            ::System::Console::WriteLine( "ok." );
         }
-        current_appdomain->remove_TypeResolve( type_resolver );
+        current_appdomain->TypeResolve -= type_resolver;
 	}
 	catch (Exception & exc)
 	{
@@ -711,7 +714,7 @@ SAL_IMPLEMENT_MAIN()
             stderr, "\n> error: %s\n> dying abnormally...\n", msg.getStr() );
         ret = 1;
 	}
-	catch (::System::Exception * exc)
+	catch (::System::Exception ^ exc)
 	{
         OString msg( OUStringToOString(
                          String_to_ustring( exc->ToString() ),

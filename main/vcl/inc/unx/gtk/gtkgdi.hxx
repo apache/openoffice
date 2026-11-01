@@ -27,7 +27,6 @@
 #include <tools/prex.h>
 #include <gtk/gtk.h>
 #include <gdk/gdkx.h>
-#include <gdk/gdkkeysyms.h>
 #include <tools/postx.h>
 
 #include <unx/salgdi.h>
@@ -44,8 +43,7 @@ public:
                               {}
     virtual             ~GtkSalGraphics();
 
-    inline GtkWidget*  GetGtkWidget() const { return m_pWindow; }
-    inline GdkWindow*  GetGdkWindow() const { return m_pWindow->window; }
+    inline GdkWindow*  GetGdkWindow() const { return m_pWindow ? gtk_widget_get_window( m_pWindow ) : NULL; }
     inline GtkSalFrame* GetGtkFrame() const { return static_cast<GtkSalFrame*>(m_pFrame); }
     void SetWindow( GtkWidget* window ) { m_pWindow = window; }
 

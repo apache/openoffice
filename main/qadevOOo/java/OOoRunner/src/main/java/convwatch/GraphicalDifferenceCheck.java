@@ -317,7 +317,7 @@ public class GraphicalDifferenceCheck
     {
 
         // find the adequate XML StarOffice output filter to save the document and adequate suffix
-        StringBuffer suffix = new StringBuffer();
+        StringBuilder suffix = new StringBuilder();
         String exportFilter = getXMLOutputFilterforXComponent(xComponent, suffix);
         if(resultDocName == null)
             resultDocName = "OOoTestDocument";
@@ -328,7 +328,7 @@ public class GraphicalDifferenceCheck
         String resultURL = URLHelper.getFileURLFromSystemPath(ensureEndingFileSep(_sOutputPath) + resultDocName);
 
         XStorable xStorable = null;
-        xStorable  = (com.sun.star.frame.XStorable)UnoRuntime.queryInterface(com.sun.star.frame.XStorable.class, xComponent);
+        xStorable  = UnoRuntime.queryInterface(com.sun.star.frame.XStorable.class, xComponent);
         if(xStorable == null)
         {
             throw new ConvWatchCancelException("com.sun.star.frame.XStorable could not be instantiated from the office.");
@@ -353,8 +353,8 @@ public class GraphicalDifferenceCheck
     }
 
 
-    private static String getXMLOutputFilterforXComponent(XComponent xComponent, StringBuffer suffix){
-        XServiceInfo xSI = (XServiceInfo) UnoRuntime.queryInterface(XServiceInfo.class, xComponent);
+    private static String getXMLOutputFilterforXComponent(XComponent xComponent, StringBuilder suffix){
+        XServiceInfo xSI = UnoRuntime.queryInterface(XServiceInfo.class, xComponent);
         if (xSI.supportsService("com.sun.star.text.TextDocument")){
             resetBuffer(suffix, ".sxw");
             return "swriter: StarOffice XML (Writer)";
@@ -374,7 +374,7 @@ public class GraphicalDifferenceCheck
         return null;
     }
 
-    private static StringBuffer resetBuffer(StringBuffer sb, String suffix)
+    private static StringBuilder resetBuffer(StringBuilder sb, String suffix)
         {
             if(sb != null)
             {

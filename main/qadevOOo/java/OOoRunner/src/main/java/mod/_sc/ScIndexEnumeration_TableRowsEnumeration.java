@@ -69,7 +69,7 @@ public class ScIndexEnumeration_TableRowsEnumeration extends TestCase {
     */
     protected void cleanup( TestParameters tParam, PrintWriter log ) {
         log.println( "    disposing xSheetDoc " );
-        XComponent oComp = (XComponent)
+        XComponent oComp =
             UnoRuntime.queryInterface (XComponent.class, xSheetDoc) ;
         util.DesktopTools.closeDoc(oComp);
     }
@@ -82,11 +82,11 @@ public class ScIndexEnumeration_TableRowsEnumeration extends TestCase {
         XSpreadsheet xSpreadsheet = null;
 
         XSpreadsheets xSpreadsheets = (XSpreadsheets)xSheetDoc.getSheets();
-        XNameAccess oNames = (XNameAccess)
+        XNameAccess oNames =
             UnoRuntime.queryInterface( XNameAccess.class, xSpreadsheets );
         try {
-            xSpreadsheet = (XSpreadsheet) AnyConverter.toObject(
-                new Type(XSpreadsheet.class),
+            xSpreadsheet = AnyConverter.toObject(
+                XSpreadsheet.class,
                     oNames.getByName(oNames.getElementNames()[0]));
         } catch(com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace(log);
@@ -99,7 +99,7 @@ public class ScIndexEnumeration_TableRowsEnumeration extends TestCase {
             throw new StatusException("Couldn't get spreadsheet", e);
         }
 
-        XColumnRowRange oColumnRowRange = (XColumnRowRange)
+        XColumnRowRange oColumnRowRange =
             UnoRuntime.queryInterface(XColumnRowRange.class, xSpreadsheet);
 
         XTableRows oRows = (XTableRows) oColumnRowRange.getRows();
@@ -107,7 +107,7 @@ public class ScIndexEnumeration_TableRowsEnumeration extends TestCase {
 
         log.println("creating a new environment for object");
 
-        XEnumerationAccess ea = (XEnumerationAccess)
+        XEnumerationAccess ea =
                     UnoRuntime.queryInterface(XEnumerationAccess.class,oObj);
 
         oObj = ea.createEnumeration();

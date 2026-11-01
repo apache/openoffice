@@ -72,11 +72,11 @@ public class NumberingProperty {
 		if (FileUtil.fileExists(m_filePath)) {//load
 			m_xtextProps = load();
 		} else {//new
-			m_xSDComponent = (XComponent) UnoRuntime.queryInterface(
+			m_xSDComponent = UnoRuntime.queryInterface(
 					XComponent.class, app.newDocument("simpress"));
 			Object firstPage = getDrawPageByIndex(m_xSDComponent, 0);
 			Object secondTextBox = SDUtil.getShapeOfPageByIndex(firstPage, 1);
-			XShape xsecondTextBox = (XShape)UnoRuntime.queryInterface(XShape.class, secondTextBox);
+			XShape xsecondTextBox = UnoRuntime.queryInterface(XShape.class, secondTextBox);
 			m_xtextProps = addPortion(xsecondTextBox,
 					"test the property of Numbering bullets. There are two lines in this test",
 					false);
@@ -85,12 +85,12 @@ public class NumberingProperty {
 	}
 
 	private XPropertySet load() throws Exception{
-		m_xSDComponent = (XComponent) UnoRuntime.queryInterface(XComponent.class,
+		m_xSDComponent = UnoRuntime.queryInterface(XComponent.class,
 				app.loadDocument(m_filePath));
 		Object firstPage = getDrawPageByIndex(m_xSDComponent, 0);
 		XDrawPage firstpage = getDrawPageByIndex(m_xSDComponent, 0);
 		Object secondTextBox = SDUtil.getShapeOfPageByIndex(firstPage, 1);
-		XShape xsecondTextBox = (XShape)UnoRuntime.queryInterface(XShape.class, secondTextBox);
+		XShape xsecondTextBox = UnoRuntime.queryInterface(XShape.class, secondTextBox);
 		return getPortion(xsecondTextBox, 0);
 	}
 
@@ -118,7 +118,7 @@ public class NumberingProperty {
 	 * */
 	private void setNumberingType(XPropertySet textPros, short numberingType, short level) throws Exception{
 		Object numberingRules = textPros.getPropertyValue("NumberingRules");
-		XIndexReplace xReplace = (XIndexReplace) UnoRuntime.queryInterface(
+		XIndexReplace xReplace = UnoRuntime.queryInterface(
 	             XIndexReplace.class, numberingRules);
 
 		PropertyValue[] props = new PropertyValue[1];
@@ -144,7 +144,7 @@ public class NumberingProperty {
 		String prefix = "Prefix";
 		Object numberingrules = m_xtextProps.getPropertyValue("NumberingRules");
 
-		XIndexReplace xReplace = (XIndexReplace) UnoRuntime.queryInterface(
+		XIndexReplace xReplace = UnoRuntime.queryInterface(
 	             XIndexReplace.class, numberingrules);
 
 		PropertyValue[] props = new PropertyValue[1];
@@ -163,7 +163,7 @@ public class NumberingProperty {
 
 		Object numberingrules2 = m_xtextProps.getPropertyValue("NumberingRules");
 
-		XIndexReplace xReplace2 = (XIndexReplace) UnoRuntime.queryInterface(
+		XIndexReplace xReplace2 = UnoRuntime.queryInterface(
 	             XIndexReplace.class, numberingrules2);
 
 		PropertyValue[] proValues2 = (PropertyValue[])xReplace2.getByIndex(0);
@@ -187,7 +187,7 @@ public class NumberingProperty {
 		String suffix = "--";
 		Object numberingrules = m_xtextProps.getPropertyValue("NumberingRules");
 
-		XIndexReplace xReplace = (XIndexReplace) UnoRuntime.queryInterface(
+		XIndexReplace xReplace = UnoRuntime.queryInterface(
 	             XIndexReplace.class, numberingrules);
 
 		PropertyValue[] props = new PropertyValue[1];
@@ -206,7 +206,7 @@ public class NumberingProperty {
 
 		Object numberingrules2 = m_xtextProps.getPropertyValue("NumberingRules");
 
-		XIndexReplace xReplace2 = (XIndexReplace) UnoRuntime.queryInterface(
+		XIndexReplace xReplace2 = UnoRuntime.queryInterface(
 	             XIndexReplace.class, numberingrules2);
 
 		PropertyValue[] proValues2 = (PropertyValue[])xReplace2.getByIndex(0);
@@ -231,7 +231,7 @@ public class NumberingProperty {
 		short startWith = 5;
 		Object numberingrules = m_xtextProps.getPropertyValue("NumberingRules");
 
-		XIndexReplace xReplace = (XIndexReplace) UnoRuntime.queryInterface(
+		XIndexReplace xReplace = UnoRuntime.queryInterface(
 	             XIndexReplace.class, numberingrules);
 
 		PropertyValue[] props = new PropertyValue[1];
@@ -250,7 +250,7 @@ public class NumberingProperty {
 
 		Object numberingrules2 = m_xtextProps.getPropertyValue("NumberingRules");
 
-		XIndexReplace xReplace2 = (XIndexReplace) UnoRuntime.queryInterface(
+		XIndexReplace xReplace2 = UnoRuntime.queryInterface(
 	             XIndexReplace.class, numberingrules2);
 
 		PropertyValue[] proValues2 = (PropertyValue[])xReplace2.getByIndex(0);
@@ -278,9 +278,9 @@ public class NumberingProperty {
 	public void testFirstLineOffset() throws Exception {
 		Integer firstLineOffset = -4500;
 		Object numberingrules = m_xtextProps.getPropertyValue("NumberingRules");
-		XIndexAccess xNum = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class,
+		XIndexAccess xNum = UnoRuntime.queryInterface(XIndexAccess.class,
 				numberingrules);
-		XIndexReplace xReplace = (XIndexReplace) UnoRuntime.queryInterface(
+		XIndexReplace xReplace = UnoRuntime.queryInterface(
 	             XIndexReplace.class, xNum);
 
 		PropertyValue[] props = new PropertyValue[1];
@@ -299,7 +299,7 @@ public class NumberingProperty {
 
 		Object numberingrules2 = m_xtextProps.getPropertyValue("NumberingRules");
 
-		XIndexReplace xReplace2 = (XIndexReplace) UnoRuntime.queryInterface(
+		XIndexReplace xReplace2 = UnoRuntime.queryInterface(
 	             XIndexReplace.class, numberingrules2);
 
 		PropertyValue[] proValues2 = (PropertyValue[])xReplace2.getByIndex(0);
@@ -323,9 +323,9 @@ public class NumberingProperty {
 	public void testLeftMargin() throws Exception {
 		Integer leftMargin = 2000;
 		Object numberingrules = m_xtextProps.getPropertyValue("NumberingRules");
-		XIndexAccess xNum = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class,
+		XIndexAccess xNum = UnoRuntime.queryInterface(XIndexAccess.class,
 				numberingrules);
-		XIndexReplace xReplace = (XIndexReplace) UnoRuntime.queryInterface(
+		XIndexReplace xReplace = UnoRuntime.queryInterface(
 	             XIndexReplace.class, xNum);
 
 		PropertyValue[] props = new PropertyValue[1];
@@ -344,7 +344,7 @@ public class NumberingProperty {
 
 		Object numberingrules2 = m_xtextProps.getPropertyValue("NumberingRules");
 
-		XIndexReplace xReplace2 = (XIndexReplace) UnoRuntime.queryInterface(
+		XIndexReplace xReplace2 = UnoRuntime.queryInterface(
 	             XIndexReplace.class, numberingrules2);
 
 		PropertyValue[] proValues2 = (PropertyValue[])xReplace2.getByIndex(0);
@@ -368,9 +368,9 @@ public class NumberingProperty {
 	public void testSymbolTextDistance() throws Exception {
 		Integer symbolTextDistance = -2000;
 		Object numberingrules = m_xtextProps.getPropertyValue("NumberingRules");
-		XIndexAccess xNum = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class,
+		XIndexAccess xNum = UnoRuntime.queryInterface(XIndexAccess.class,
 				numberingrules);
-		XIndexReplace xReplace = (XIndexReplace) UnoRuntime.queryInterface(
+		XIndexReplace xReplace = UnoRuntime.queryInterface(
 	             XIndexReplace.class, xNum);
 
 		PropertyValue[] props = new PropertyValue[1];
@@ -394,7 +394,7 @@ public class NumberingProperty {
 
 		Object numberingrules2 = m_xtextProps.getPropertyValue("NumberingRules");
 
-		XIndexReplace xReplace2 = (XIndexReplace) UnoRuntime.queryInterface(
+		XIndexReplace xReplace2 = UnoRuntime.queryInterface(
 	             XIndexReplace.class, numberingrules2);
 
 		PropertyValue[] proValues2 = (PropertyValue[])xReplace2.getByIndex(0);
@@ -427,7 +427,7 @@ public class NumberingProperty {
 
 		Object numberingrules2 = m_xtextProps.getPropertyValue("NumberingRules");
 
-		XIndexReplace xReplace2 = (XIndexReplace) UnoRuntime.queryInterface(
+		XIndexReplace xReplace2 = UnoRuntime.queryInterface(
 	             XIndexReplace.class, numberingrules2);
 
 		PropertyValue[] proValues2 = (PropertyValue[])xReplace2.getByIndex(0);
@@ -444,7 +444,7 @@ public class NumberingProperty {
 	private void setAjust(Short ajust) throws Exception{
 		Object numberingrules = m_xtextProps.getPropertyValue("NumberingRules");
 
-		XIndexReplace xReplace = (XIndexReplace) UnoRuntime.queryInterface(
+		XIndexReplace xReplace = UnoRuntime.queryInterface(
 	             XIndexReplace.class, numberingrules);
 
 		PropertyValue[] props = new PropertyValue[1];
@@ -472,7 +472,7 @@ public class NumberingProperty {
 
 		Object numberingrules2 = m_xtextProps.getPropertyValue("NumberingRules");
 
-		XIndexReplace xReplace2 = (XIndexReplace) UnoRuntime.queryInterface(
+		XIndexReplace xReplace2 = UnoRuntime.queryInterface(
 	             XIndexReplace.class, numberingrules2);
 
 		PropertyValue[] proValues2 = (PropertyValue[])xReplace2.getByIndex(0);
@@ -503,7 +503,7 @@ public class NumberingProperty {
 
 		Object numberingrules2 = m_xtextProps.getPropertyValue("NumberingRules");
 
-		XIndexReplace xReplace2 = (XIndexReplace) UnoRuntime.queryInterface(
+		XIndexReplace xReplace2 = UnoRuntime.queryInterface(
 	             XIndexReplace.class, numberingrules2);
 
 		PropertyValue[] proValues2 = (PropertyValue[])xReplace2.getByIndex(0);
@@ -528,7 +528,7 @@ public class NumberingProperty {
 	public void testSymbolColor() throws Exception {
 		Object numberingrules = m_xtextProps.getPropertyValue("NumberingRules");
 
-		XIndexReplace xReplace = (XIndexReplace) UnoRuntime.queryInterface(
+		XIndexReplace xReplace = UnoRuntime.queryInterface(
 	             XIndexReplace.class, numberingrules);
 
 		PropertyValue[] props = new PropertyValue[1];
@@ -547,7 +547,7 @@ public class NumberingProperty {
 
 		Object numberingrules2 = m_xtextProps.getPropertyValue("NumberingRules");
 
-		XIndexReplace xReplace2 = (XIndexReplace) UnoRuntime.queryInterface(
+		XIndexReplace xReplace2 = UnoRuntime.queryInterface(
 	             XIndexReplace.class, numberingrules2);
 
 		PropertyValue[] proValues2 = (PropertyValue[])xReplace2.getByIndex(0);
@@ -574,7 +574,7 @@ public class NumberingProperty {
 	public void testSymbolSize() throws Exception {
 		Object numberingrules = m_xtextProps.getPropertyValue("NumberingRules");
 
-		XIndexReplace xReplace = (XIndexReplace) UnoRuntime.queryInterface(
+		XIndexReplace xReplace = UnoRuntime.queryInterface(
 	             XIndexReplace.class, numberingrules);
 
 		PropertyValue[] props = new PropertyValue[1];
@@ -593,7 +593,7 @@ public class NumberingProperty {
 
 		Object numberingrules2 = m_xtextProps.getPropertyValue("NumberingRules");
 
-		XIndexReplace xReplace2 = (XIndexReplace) UnoRuntime.queryInterface(
+		XIndexReplace xReplace2 = UnoRuntime.queryInterface(
 	             XIndexReplace.class, numberingrules2);
 
 		PropertyValue[] proValues2 = (PropertyValue[])xReplace2.getByIndex(0);

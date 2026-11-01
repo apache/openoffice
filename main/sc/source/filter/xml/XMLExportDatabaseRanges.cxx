@@ -163,7 +163,9 @@ void ScXMLExportDatabaseRanges::WriteImportDescriptor(const uno::Sequence <beans
 		{
             if (sDatabaseName.getLength())
                 rExport.AddAttribute(XML_NAMESPACE_TABLE, XML_DATABASE_NAME, sDatabaseName);
-			rExport.AddAttribute(XML_NAMESPACE_TABLE, XML_TABLE_NAME, sSourceObject);
+			rExport.AddAttribute(XML_NAMESPACE_TABLE,
+				SvtSaveOptions::IsODFStrict( rExport.getDefaultVersion() ) ? XML_DATABASE_TABLE_NAME : XML_TABLE_NAME,
+				sSourceObject);
 			SvXMLElementExport aElemID(rExport, XML_NAMESPACE_TABLE, XML_DATABASE_SOURCE_TABLE, sal_True, sal_True);
             if (sConRes.getLength())
             {

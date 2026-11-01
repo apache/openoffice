@@ -25,11 +25,22 @@
 
 #if defined(WITH_VC_REDIST)
 
+// A 64 bit office contains no 32 bit native code, so it never needs the 32 bit
+// runtime.  (The 32 bit office does need both: it cross-builds 64 bit shell
+// extensions -- shlxthdl_x64, ooofilt_x64, propertyhdl_x64, so_activex_x64 -- which
+// are loaded by 64 bit Explorer and friends.)
+//
+// The CLI assemblies in a 64 bit install do show up as I386 in their PE header, but
+// they are managed: pure IL, marked architecture-neutral, and they import mscoree
+// rather than any C runtime.  gdiplus.dll imports msvcrt.dll, the operating system's
+// own legacy CRT, not the redistributable one.
+#ifndef BUILD_WIN64
 ScpAction scp_Copy_vcredist_x86
     Copy = "vcredist_x86.exe";
     Name = "vcredist_x86.exe";
     Subdir = "redist";
 End
+#endif
 
 ScpAction scp_Copy_vcredist_x64
     Copy = "vcredist_x64.exe";

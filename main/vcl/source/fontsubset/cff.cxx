@@ -414,6 +414,8 @@ private:
 	const U8* mpReadEnd;
 
 	U8*		mpWritePtr;
+	// one past the last byte of the output buffer
+	const U8*	mpWriteEnd;
 	bool	mbSawError;
 	bool	mbNeedClose;
 	bool	mbIgnoreHints;
@@ -470,10 +472,16 @@ private:
 public: // TODO: is public really needed?
 	// accessing the value stack
 	// TODO: add more checks
-	void	push( ValType nVal) { mnValStack[ mnStackIdx++] = nVal;}
+	void	push( ValType nVal) {
+		if( mnStackIdx >= NMAXSTACK) { mbSawError = true; return;}
+		mnValStack[ mnStackIdx++] = nVal;
+	}
 	ValType	popVal( void) { return ((mnStackIdx>0) ? mnValStack[ --mnStackIdx] : 0);}
 	ValType peekVal( void) const { return ((mnStackIdx>0) ? mnValStack[ mnStackIdx-1] : 0);}
-	ValType getVal( int nIndex) const { return mnValStack[ nIndex];}
+	ValType getVal( int nIndex) const {
+		if( (nIndex < 0) || (nIndex >= mnStackIdx)) return 0;
+		return mnValStack[ nIndex];
+	}
 	int		popInt( void);
 	int		peekInt( void) const;
 	int		getInt( int nIndex) const;
@@ -513,9 +521,15 @@ private:
 
 // --------------------------------------------------------------------
 
+// Abandon the charstring; convert2Type1Ops then emits a placeholder glyph.
+#define CFF_ABANDON_IF( bad ) \
+	if( bad ) { mbSawError = true; return; } else (void)0
+
 CffSubsetterContext::CffSubsetterContext( const U8* pBasePtr, int nBaseLen)
 :	mpBasePtr( pBasePtr)
 ,	mpBaseEnd( pBasePtr+nBaseLen)
+,	mpWritePtr( NULL)
+,	mpWriteEnd( NULL)
 ,	mnStackIdx(0)
 ,	mnHintSize(0)
 ,	mnHorzHintSize(0)
@@ -597,7 +611,7 @@ void CffSubsetterContext::addHints( bool bVerticalHints)
 	if( mnStackIdx & 1) --mnStackIdx;//#######
 	// TODO: if( !bSubr) assert( mnStackIdx >= 2);
 
-	assert( (mnHintSize + mnStackIdx) <= 2*NMAXHINTS);
+	CFF_ABANDON_IF( (mnHintSize + mnStackIdx) > NMAXHINTS);
 
 #ifdef IGNORE_HINTS
 	mnHintSize += mnStackIdx;
@@ -620,8 +634,11 @@ void CffSubsetterContext::addHints( bool bVerticalHints)
 void CffSubsetterContext::getHintPair( int nIndex, ValType* pMin, ValType* pEnd) const
 {
 	nIndex *= 2;
-	assert( nIndex < mnHintSize);
-	assert( nIndex >= 0);
+	// Reads a pair, so the second of the two has to be in the array too.
+	if( (nIndex < 0) || (nIndex + 1 >= mnHintSize)) {
+		*pMin = *pEnd = 0;
+		return;
+	}
 	const ValType* pHint = &mnHintStack[ nIndex ];
 	*pMin = pHint[0];
 	*pEnd = pHint[1];
@@ -814,6 +831,8 @@ void CffSubsetterContext::read2push()
 
 void CffSubsetterContext::writeType1Val( ValType aVal)
 {
+	// The longest encoding below is five bytes.
+	if( mpWritePtr + 5 > mpWriteEnd) { mbSawError = true; return;}
 	U8* pOut = mpWritePtr;
 
 	int nInt = static_cast<int>(aVal);
@@ -859,6 +878,7 @@ inline void CffSubsetterContext::pop2write( void)
 
 inline void CffSubsetterContext::writeTypeOp( int nTypeOp)
 {
+	if( mpWritePtr + 1 > mpWriteEnd) { mbSawError = true; return;}
 	*(mpWritePtr++) = static_cast<U8>(nTypeOp);
 }
 
@@ -866,6 +886,7 @@ inline void CffSubsetterContext::writeTypeOp( int nTypeOp)
 
 inline void CffSubsetterContext::writeTypeEsc( int nTypeEsc)
 {
+	if( mpWritePtr + 2 > mpWriteEnd) { mbSawError = true; return;}
 	*(mpWritePtr++) = TYPE1OP::T1ESC;
 	*(mpWritePtr++) = static_cast<U8>(nTypeEsc);
 }
@@ -1160,84 +1181,83 @@ void CffSubsetterContext::convertOneTypeEsc( void)
 	// convert each T2op
 	switch( nType2Esc) {
 	case TYPE2OP::AND:
-		assert( mnStackIdx >= 2 );
+		CFF_ABANDON_IF( mnStackIdx < 2 );
 		pTop[0] = static_cast<ValType>(static_cast<int>(pTop[0]) & static_cast<int>(pTop[-1]));
 		--mnStackIdx;
 		break;
 	case TYPE2OP::OR:
-		assert( mnStackIdx >= 2 );
+		CFF_ABANDON_IF( mnStackIdx < 2 );
 		pTop[0] = static_cast<ValType>(static_cast<int>(pTop[0]) | static_cast<int>(pTop[-1]));
 		--mnStackIdx;
 		break;
 	case TYPE2OP::NOT:
-		assert( mnStackIdx >= 1 );
+		CFF_ABANDON_IF( mnStackIdx < 1 );
 		pTop[0] = (pTop[0] == 0);
 		break;
 	case TYPE2OP::ABS:
-		assert( mnStackIdx >= 1 );
+		CFF_ABANDON_IF( mnStackIdx < 1 );
 		if( pTop[0] >= 0)
 			break;
 		// fall through
 	case TYPE2OP::NEG:
-		assert( mnStackIdx >= 1 );
+		CFF_ABANDON_IF( mnStackIdx < 1 );
 		pTop[0] = -pTop[0];
 		break;
 	case TYPE2OP::ADD:
-		assert( mnStackIdx >= 2 );
+		CFF_ABANDON_IF( mnStackIdx < 2 );
 		pTop[0] += pTop[-1];
 		--mnStackIdx;
 		break;
 	case TYPE2OP::SUB:
-		assert( mnStackIdx >= 2 );
+		CFF_ABANDON_IF( mnStackIdx < 2 );
 		pTop[0] -= pTop[-1];
 		--mnStackIdx;
 		break;
 	case TYPE2OP::MUL:
-		assert( mnStackIdx >= 2 );
+		CFF_ABANDON_IF( mnStackIdx < 2 );
 		if( pTop[-1])
 			pTop[0] *= pTop[-1];
 		--mnStackIdx;
 		break;
 	case TYPE2OP::DIV:
-		assert( mnStackIdx >= 2 );
+		CFF_ABANDON_IF( mnStackIdx < 2 );
 		if( pTop[-1])
 			pTop[0] /= pTop[-1];
 		--mnStackIdx;
 		break;
 	case TYPE2OP::EQ:
-		assert( mnStackIdx >= 2 );
+		CFF_ABANDON_IF( mnStackIdx < 2 );
 		pTop[0] = (pTop[0] == pTop[-1]);
 		--mnStackIdx;
 		break;
 	case TYPE2OP::DROP:
-		assert( mnStackIdx >= 1 );
+		CFF_ABANDON_IF( mnStackIdx < 1 );
 		--mnStackIdx;
 		break;
 	case TYPE2OP::PUT: {
-		assert( mnStackIdx >= 2 );
+		CFF_ABANDON_IF( mnStackIdx < 2 );
 		const int nIdx = static_cast<int>(pTop[0]);
-		assert( nIdx >= 0 );
-		assert( nIdx < NMAXTRANS );
+		CFF_ABANDON_IF( (nIdx < 0) || (nIdx >= NMAXTRANS) );
 		mnTransVals[ nIdx] = pTop[-1];
 		mnStackIdx -= 2;
 		break;
 		}
 	case TYPE2OP::GET: {
-		assert( mnStackIdx >= 1 );
+		CFF_ABANDON_IF( mnStackIdx < 1 );
 		const int nIdx = static_cast<int>(pTop[0]);
-		assert( nIdx >= 0 );
-		assert( nIdx < NMAXTRANS );
+		CFF_ABANDON_IF( (nIdx < 0) || (nIdx >= NMAXTRANS) );
 		pTop[0] = mnTransVals[ nIdx ];
 		break;
 		}
 	case TYPE2OP::IFELSE: {
-		assert( mnStackIdx >= 4 );
+		CFF_ABANDON_IF( mnStackIdx < 4 );
 		if( pTop[-1] > pTop[0] )
 			pTop[-3] = pTop[-2];
 		mnStackIdx -= 3;
 		break;
 		}
 	case TYPE2OP::RANDOM:
+		CFF_ABANDON_IF( mnStackIdx >= NMAXSTACK );
 		pTop[+1] = 1234; // TODO
 		++mnStackIdx;
 		break;
@@ -1245,30 +1265,29 @@ void CffSubsetterContext::convertOneTypeEsc( void)
 		// TODO: implement
 		break;
 	case TYPE2OP::DUP:
-		assert( mnStackIdx >= 1 );
+		CFF_ABANDON_IF( mnStackIdx < 1 );
+		CFF_ABANDON_IF( mnStackIdx >= NMAXSTACK );
 		pTop[+1] = pTop[0];
 		++mnStackIdx;
 		break;
 	case TYPE2OP::EXCH: {
-		assert( mnStackIdx >= 2 );
+		CFF_ABANDON_IF( mnStackIdx < 2 );
 		const ValType nVal = pTop[0];
 		pTop[0] = pTop[-1];
 		pTop[-1] = nVal;
 		break;
 		}
 	case TYPE2OP::INDEX: {
-		assert( mnStackIdx >= 1 );
+		CFF_ABANDON_IF( mnStackIdx < 1 );
 		const int nVal = static_cast<int>(pTop[0]);
-		assert( nVal >= 0 );
-		assert( nVal < mnStackIdx-1 );
+		CFF_ABANDON_IF( (nVal < 0) || (nVal >= mnStackIdx-1) );
 		pTop[0] = pTop[-1-nVal];
 		break;
 		}
 	case TYPE2OP::ROLL: {
-		assert( mnStackIdx >= 1 );
+		CFF_ABANDON_IF( mnStackIdx < 1 );
 		const int nNum = static_cast<int>(pTop[0]);
-		assert( nNum >= 0);
-		assert( nNum < mnStackIdx-2 );
+		CFF_ABANDON_IF( (nNum < 0) || (nNum >= mnStackIdx-2) );
 		(void)nNum; // TODO: implement
 		const int nOfs = static_cast<int>(pTop[-1]);
 		mnStackIdx -= 2;
@@ -1276,7 +1295,7 @@ void CffSubsetterContext::convertOneTypeEsc( void)
 		break;
 		}
 	case TYPE2OP::HFLEX1: {
-			assert( mnStackIdx == 9);
+			CFF_ABANDON_IF( mnStackIdx != 9 );
 #if 0 // emulate hflex1 as straight line
 			const ValType* pX = &mnValStack[ mnStackIdx];
 			const ValType fDX = pX[-9] + pX[-7] + pX[-5] + pX[-4] + pX[-3] + pX[-1];
@@ -1291,7 +1310,7 @@ void CffSubsetterContext::convertOneTypeEsc( void)
 		}
 		break;
 	case TYPE2OP::HFLEX: {
-			assert( mnStackIdx == 7);
+			CFF_ABANDON_IF( mnStackIdx != 7 );
 			ValType* pX = &mnValStack[ mnStackIdx];
 #if 0 // emulate hflex as straight line
 			const ValType fDX = pX[-7] + pX[-6] + pX[-4] + pX[-3] + pX[-2] + pX[-1];
@@ -1307,7 +1326,7 @@ void CffSubsetterContext::convertOneTypeEsc( void)
 		}
 		break;
 	case TYPE2OP::FLEX: {
-			assert( mnStackIdx == 13 );
+			CFF_ABANDON_IF( mnStackIdx != 13 );
 			writeCurveTo( mnStackIdx, -13, -12, -11, -10, -9, -8 );
 			writeCurveTo( mnStackIdx,  -7,  -6,  -5,  -4, -3, -2 );
 			const ValType nFlexDepth =  mnValStack[ mnStackIdx-1 ];
@@ -1316,7 +1335,7 @@ void CffSubsetterContext::convertOneTypeEsc( void)
 		}
 		break;
 	case TYPE2OP::FLEX1: {
-			assert( mnStackIdx == 11 );
+			CFF_ABANDON_IF( mnStackIdx != 11 );
 			// write the first part of the flex1-hinted curve
 			writeCurveTo( mnStackIdx, -11, -10, -9, -8, -7, -6 );
 
@@ -1338,7 +1357,7 @@ void CffSubsetterContext::convertOneTypeEsc( void)
 		break;
 	default:
 		fprintf( stderr,"unhandled type2esc %d\n", nType2Esc);
-		assert( false);
+		mbSawError = true;
 		break;
 	}
 }
@@ -1358,7 +1377,7 @@ void CffSubsetterContext::callType2Subr( bool bGlobal, int nSubrNumber)
 		seekIndexData( mpCffLocal->mnLocalSubrBase, nSubrNumber);
 	}
 
-	while( mpReadPtr < mpReadEnd)
+	while( (mpReadPtr < mpReadEnd) && !mbSawError)
 		convertOneTypeOp();
 
 	mpReadPtr = pOldReadPtr;
@@ -1380,6 +1399,8 @@ int CffSubsetterContext::convert2Type1Ops( CffLocal* pCffLocal, const U8* const 
 	if( !pT1Ops)
 		mpWritePtr = aType1Ops;
 	*const_cast<U8**>(&pT1Ops) = mpWritePtr;
+	// Both callers pass a MAX_T1OPS_SIZE buffer, as does the fallback above.
+	mpWriteEnd = mpWritePtr + MAX_T1OPS_SIZE;
 #else
 	assert( pT1Ops);
 #endif
@@ -1403,7 +1424,7 @@ mbNeedClose = false;
 mbIgnoreHints = false;
 mnHintSize=mnHorzHintSize=mnStackIdx=0; maCharWidth=-1;//#######
 mnCntrMask = 0;
-	while( mpReadPtr < mpReadEnd)
+	while( (mpReadPtr < mpReadEnd) && !mbSawError)
 		convertOneTypeOp();
 //	if( bActivePath)
 //		writeTypeOp( TYPE1OP::CLOSEPATH);
@@ -1411,6 +1432,7 @@ mnCntrMask = 0;
 //		writeTypeOp( TYPE1OP::RETURN);
 if( mbSawError) {
 	mpWritePtr = pT1Ops+4;
+	mbSawError = false;
  	// create an "idiotproof" charstring
 	writeType1Val( 0);
 	writeType1Val( 800);

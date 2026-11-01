@@ -922,7 +922,7 @@ function writeBatFile(fdir, file)
         "REM are necessary for building the examples of the Office Development Kit.\n" +
         "REM The Script was developed for the operating systems Windows.\n" +
         "REM The SDK name\n" +
-        "REM Example: @set \"OO_SDK_NAME=openoffice4.0_sdk\"\n" +
+        "REM Example: @set \"OO_SDK_NAME=openoffice5.1_sdk\"\n" +
         "@set \"OO_SDK_NAME=" + oo_sdk_name  +
         "\"\n\n" +
         "REM Installation directory of the Software Development Kit.\n" +
@@ -930,7 +930,7 @@ function writeBatFile(fdir, file)
         "@set \"OO_SDK_HOME=" + oo_sdk_home  +
         "\"\n\n" +
         "REM Office installation directory.\n" +
-        "REM Example: @set \"OFFICE_HOME=C:\\Program Files\\OpenOffice 4\"\n" +
+        "REM Example: @set \"OFFICE_HOME=C:\\Program Files\\OpenOffice 5\"\n" +
         "@set \"OFFICE_HOME=" + office_home +
         "\"\n\n" +
         "REM Directory of the make command.\n" +

@@ -116,7 +116,7 @@ ScVbaControlListener::disposing( const lang::EventObject& )
 {
     if( pControl )
     {
-        pControl->removeResouce();
+        pControl->removeResource();
         pControl = NULL;
     }
 }
@@ -155,7 +155,7 @@ ScVbaControl::setGeometryHelper( AbstractGeometryAttributes* pHelper )
     mpGeometryHelper.reset( pHelper );
 }
 
-void ScVbaControl::removeResouce()
+void ScVbaControl::removeResource()
 {
     uno::Reference< lang::XComponent > xComponent( m_xControl, uno::UNO_QUERY_THROW );
     xComponent->removeEventListener( m_xEventListener );
@@ -412,7 +412,7 @@ void SAL_CALL ScVbaControl::setTabIndex( sal_Int32 /*nTabIndex*/ )
     xProps->getPropertyValue( sClassId ) >>= nClassId;
     uno::Reference< XHelperInterface > xVbaParent; // #FIXME - should be worksheet I guess
     uno::Reference< drawing::XShape > xShape( xControlShape, uno::UNO_QUERY_THROW );
-    ::std::auto_ptr< ConcreteXShapeGeometryAttributes > xGeoHelper( new ConcreteXShapeGeometryAttributes( xContext, xShape ) );
+    ::std::unique_ptr< ConcreteXShapeGeometryAttributes > xGeoHelper( new ConcreteXShapeGeometryAttributes( xContext, xShape ) );
 
     switch( nClassId )
     {
@@ -447,7 +447,7 @@ void SAL_CALL ScVbaControl::setTabIndex( sal_Int32 /*nTabIndex*/ )
     uno::Reference< lang::XServiceInfo > xServiceInfo( xProps, uno::UNO_QUERY_THROW );
     uno::Reference< msforms::XControl > xVBAControl;
     uno::Reference< XHelperInterface > xVbaParent; // #FIXME - should be worksheet I guess
-    ::std::auto_ptr< UserFormGeometryHelper > xGeoHelper( new UserFormGeometryHelper( xContext, xControl, fOffsetX, fOffsetY ) );
+    ::std::unique_ptr< UserFormGeometryHelper > xGeoHelper( new UserFormGeometryHelper( xContext, xControl, fOffsetX, fOffsetY ) );
 
     if ( xServiceInfo->supportsService( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.awt.UnoControlCheckBoxModel") ) ) )
         xVBAControl.set( new ScVbaCheckbox( xVbaParent, xContext, xControl, xModel, xGeoHelper.release() ) );

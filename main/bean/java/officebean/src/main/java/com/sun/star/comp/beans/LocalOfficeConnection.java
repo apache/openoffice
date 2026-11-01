@@ -264,7 +264,7 @@ public class LocalOfficeConnection
         // to the office including the bridge needs to be terminated.
         if (mBridge != null)
         {
-            XComponent comp = (XComponent)UnoRuntime.queryInterface(
+            XComponent comp = UnoRuntime.queryInterface(
                     XComponent.class, mBridge);
             if (comp != null)
                comp.dispose();
@@ -350,10 +350,10 @@ public class LocalOfficeConnection
 			// XComponentContext
 			if( null != aInitialObject )
 			{
-				XPropertySet xPropertySet = (XPropertySet)
+				XPropertySet xPropertySet =
 					UnoRuntime.queryInterface( XPropertySet.class, aInitialObject);
             			Object xContext = xPropertySet.getPropertyValue("DefaultContext");
-            			XComponentContext xComponentContext = (XComponentContext) UnoRuntime.queryInterface(
+            			XComponentContext xComponentContext = UnoRuntime.queryInterface(
 					XComponentContext.class, xContext);
 				return xComponentContext;
 			}
@@ -432,7 +432,7 @@ public class LocalOfficeConnection
 
         XMultiComponentFactory xLocalServiceManager = xLocalContext.getServiceManager();
         try {
-            xBridgeFactory = (XBridgeFactory)UnoRuntime.queryInterface(
+            xBridgeFactory = UnoRuntime.queryInterface(
                     XBridgeFactory.class,
                     xLocalServiceManager.createInstanceWithContext(
                         "com.sun.star.bridge.BridgeFactory", xLocalContext));
@@ -448,7 +448,7 @@ public class LocalOfficeConnection
                 } catch (com.sun.star.uno.Exception e) {
                     throw new com.sun.star.uno.RuntimeException(e.getMessage());
                 }
-                XConnector connector_xConnector = (XConnector)UnoRuntime.queryInterface(XConnector.class, connector);
+                XConnector connector_xConnector = UnoRuntime.queryInterface(XConnector.class, connector);
                 // connect to the server
                 XConnection xConnection = connector_xConnector.connect(conDcp);
                 // create the bridge name. This should not be necessary if we pass an
@@ -539,7 +539,7 @@ public class LocalOfficeConnection
 		String	pipe	= null;
 		char	ch;
 		int		state	= 0;
-		StringBuffer	buffer	= new StringBuffer();
+		StringBuilder	buffer	= new StringBuilder();
 		for(idx = 0; idx < params.length(); idx += 1) {
 			ch	= params.charAt(idx);
 			switch (state) {
@@ -687,11 +687,11 @@ public class LocalOfficeConnection
 
 	/* replaces each substring aSearch in aString by aReplace.
 
-		StringBuffer.replaceAll() is not available in Java 1.3.x.
+		StringBuilder.replaceAll() is not available in Java 1.3.x.
 	 */
 	private static String replaceAll(String aString, String aSearch, String aReplace )
 	{
-		StringBuffer aBuffer = new StringBuffer(aString);
+		StringBuilder aBuffer = new StringBuilder(aString);
 
 		int nPos = aString.length();
 		int nOfs = aSearch.length();

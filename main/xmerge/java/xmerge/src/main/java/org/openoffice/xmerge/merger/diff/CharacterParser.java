@@ -89,7 +89,7 @@ public class CharacterParser {
 
     private void parseNodes() {
 
-        StringBuffer strBuf = new StringBuffer();
+        StringBuilder strBuf = new StringBuilder();
 
         /* create the character array by iterate the textnode iterator */
         Node currentNode = (Node)(textNodes.start());

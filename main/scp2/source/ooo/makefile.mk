@@ -37,12 +37,19 @@ TARGETTYPE=CUI
 SCPDEFS+=-D_MSC
 .ENDIF
 
+SCPDEFS+=-D$(CPUNAME)
+
 .IF "$(BUILD_SPECIAL)"!=""
 SCPDEFS+=-DBUILD_SPECIAL
 .ENDIF
 
 .IF "$(BUILD_X64)"!=""
 SCPDEFS+=-DBUILD_X64
+.ENDIF
+
+# A 64 bit build ships no 32 bit binaries, so it needs only the x64 runtime.
+.IF "$(BUILD_WIN64)"!=""
+SCPDEFS+=-DBUILD_WIN64
 .ENDIF
 
 .IF "$(PROF_EDITION)"!=""

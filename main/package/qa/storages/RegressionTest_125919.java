@@ -76,7 +76,7 @@ public class RegressionTest_125919 implements StorageTest {
 			for ( int nAvailableBytes = nMinTestLen; nAvailableBytes < nMaxTestLen; nAvailableBytes++ )
 			{
 				Object oBStream = new BorderedStream( nAvailableBytes );
-				XStream xBorderedStream = (XStream)UnoRuntime.queryInterface( XStream.class, oBStream );
+				XStream xBorderedStream = UnoRuntime.queryInterface( XStream.class, oBStream );
 				if ( xBorderedStream == null )
 				{
 					m_aTestHelper.Error( "Can't create bordered stream!" );
@@ -89,14 +89,14 @@ public class RegressionTest_125919 implements StorageTest {
 				pArgs[1] = new Integer( ElementModes.WRITE );
 
 				Object oTempStorage = m_xStorageFactory.createInstanceWithArguments( pArgs );
-				XStorage xTempStorage = (XStorage) UnoRuntime.queryInterface( XStorage.class, oTempStorage );
+				XStorage xTempStorage = UnoRuntime.queryInterface( XStorage.class, oTempStorage );
 				if ( xTempStorage == null )
 				{
 					m_aTestHelper.Error( "Can't create temporary storage representation!" );
 					return false;
 				}
 
-				XTransactedObject xTransact = (XTransactedObject) UnoRuntime.queryInterface( XTransactedObject.class, xTempStorage );
+				XTransactedObject xTransact = UnoRuntime.queryInterface( XTransactedObject.class, xTempStorage );
 				if ( xTransact == null )
 				{
 					m_aTestHelper.Error( "This test is designed for storages in transacted mode!" );

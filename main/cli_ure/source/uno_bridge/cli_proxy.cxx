@@ -115,16 +115,16 @@ UnoInterfaceProxy::UnoInterfaceProxy(
     uno_Interface * pUnoI,
     typelib_InterfaceTypeDescription* pTD,
     const OUString& oid )
-    :RealProxy(__typeof(MarshalByRefObject)),
+    :RealProxy(MarshalByRefObject::typeid),
      m_bridge(bridge),
      m_oid(mapUnoString(oid.pData)),
      m_sTypeName(m_system_Object_String)
 {
     m_bridge->acquire();
     // create the list that holds all UnoInterfaceInfos
-    m_listIfaces = new ArrayList(10);
+    m_listIfaces = gcnew ArrayList(10);
     m_numUnoIfaces = 0;
-    m_listAdditionalProxies = new ArrayList();
+    m_listAdditionalProxies = gcnew ArrayList();
     m_nlistAdditionalProxies = 0;
     //put the information of the first UNO interface into the arraylist
 #if OSL_DEBUG_LEVEL >= 2
@@ -139,8 +139,8 @@ UnoInterfaceProxy::~UnoInterfaceProxy()
 {
 #if OSL_DEBUG_LEVEL >= 2
     sd::Trace::WriteLine(System::String::Format(
-               new System::String(S"cli uno bridge: Destroying proxy "
-               S"for UNO object, OID: \n\t{0} \n\twith uno interfaces: "),
+               gcnew System::String("cli uno bridge: Destroying proxy "
+               "for UNO object, OID: \n\t{0} \n\twith uno interfaces: "),
                m_oid));
 
     sd::Trace::WriteLine( mapUnoString(_sInterfaces));
@@ -152,15 +152,15 @@ UnoInterfaceProxy::~UnoInterfaceProxy()
 }
 
 
-System::Object* UnoInterfaceProxy::create(
+System::Object ^ UnoInterfaceProxy::create(
     Bridge * bridge,
     uno_Interface * pUnoI,
     typelib_InterfaceTypeDescription* pTD,
     const OUString& oid)
 {
-    UnoInterfaceProxy* proxyHandler=
-        new UnoInterfaceProxy(bridge, pUnoI, pTD, oid);
-    System::Object* proxy= proxyHandler->GetTransparentProxy();
+    UnoInterfaceProxy ^ proxyHandler=
+        gcnew UnoInterfaceProxy(bridge, pUnoI, pTD, oid);
+    System::Object ^ proxy= proxyHandler->GetTransparentProxy();
 	CliEnvHolder::g_cli_env->registerInterface(proxy, mapUnoString(oid.pData));
     return proxy;
 }
@@ -169,17 +169,17 @@ System::Object* UnoInterfaceProxy::create(
 void UnoInterfaceProxy::addUnoInterface(uno_Interface* pUnoI,
                                         typelib_InterfaceTypeDescription* pTd)
 {
-    sc::IEnumerator* enumInfos = m_listIfaces->GetEnumerator();
+    sc::IEnumerator ^ enumInfos = m_listIfaces->GetEnumerator();
     System::Threading::Monitor::Enter(this);
     try
     {
         while (enumInfos->MoveNext())
         {
-            UnoInterfaceInfo* info = static_cast<UnoInterfaceInfo*>(
+            UnoInterfaceInfo ^ info = static_cast<UnoInterfaceInfo ^>(
                 enumInfos->Current);
 #if OSL_DEBUG_LEVEL > 1
-            System::Type * t1;
-            System::Type * t2;
+            System::Type ^ t1;
+            System::Type ^ t2;
             t1 = mapUnoType(
                 reinterpret_cast<typelib_TypeDescription*>(info->m_typeDesc) );
             t2 = mapUnoType(
@@ -197,14 +197,14 @@ void UnoInterfaceProxy::addUnoInterface(uno_Interface* pUnoI,
             m_bridge->m_uno_env, reinterpret_cast< void ** >( &pUnoI ),
             oid.pData, pTd);
         //This proxy does not contain the uno_Interface. Add it.
-        m_listIfaces->Add(new UnoInterfaceInfo(m_bridge, pUnoI, pTd));
+        m_listIfaces->Add(gcnew UnoInterfaceInfo(m_bridge, pUnoI, pTd));
         m_numUnoIfaces = m_listIfaces->Count;
 #if OSL_DEBUG_LEVEL >= 2
-        System::String * sInterfaceName = static_cast<UnoInterfaceInfo*>(
-            m_listIfaces->get_Item(m_numUnoIfaces - 1))->m_type->FullName;
+        System::String ^ sInterfaceName = static_cast<UnoInterfaceInfo ^>(
+            m_listIfaces[ m_numUnoIfaces - 1 ])->m_type->FullName;
         sd::Trace::WriteLine(System::String::Format(
-             new System::String(S"cli uno bridge: Creating proxy for uno object, "
-                 S"id:\n\t{0}\n\t{1}"), m_oid, sInterfaceName));
+             gcnew System::String("cli uno bridge: Creating proxy for uno object, "
+                 "id:\n\t{0}\n\t{1}"), m_oid, sInterfaceName));
         // add to the string that contains all interface names
          _numInterfaces ++;
          OUStringBuffer buf(512);
@@ -214,7 +214,7 @@ void UnoInterfaceProxy::addUnoInterface(uno_Interface* pUnoI,
         buf.append(mapCliString(sInterfaceName));
         buf.appendAscii("\n");
         OUString _sNewInterface = buf.makeStringAndClear();
-        rtl_uString * __pin * pp_sInterfaces = & _sInterfaces;
+        pin_ptr< rtl_uString * > pp_sInterfaces = & _sInterfaces;
         rtl_uString_newConcat( pp_sInterfaces, * pp_sInterfaces,
                                _sNewInterface.pData);
 #endif
@@ -226,34 +226,34 @@ void UnoInterfaceProxy::addUnoInterface(uno_Interface* pUnoI,
 
 
 // IRemotingTypeInfo
-bool UnoInterfaceProxy::CanCastTo(System::Type* fromType,
-                                  System::Object*)
+bool UnoInterfaceProxy::CanCastTo(System::Type ^ fromType,
+                                  System::Object ^)
 {
-    if (fromType == __typeof(System::Object)) // trivial case
+    if (fromType == System::Object::typeid) // trivial case
         return true;
 
     System::Threading::Monitor::Enter(this);
     try
     {
-        if (0 != findInfo( fromType )) // proxy supports demanded interface
+        if (nullptr != findInfo( fromType )) // proxy supports demanded interface
             return true;
 
         //query an uno interface for the required type
 
         // we use the first interface in the list (m_listIfaces) to make
         // the queryInterface call
-        UnoInterfaceInfo* info =
-            static_cast<UnoInterfaceInfo*>(m_listIfaces->get_Item(0));
+        UnoInterfaceInfo ^ info =
+            static_cast<UnoInterfaceInfo ^>(m_listIfaces[ 0 ]);
         css::uno::TypeDescription membertd(
             reinterpret_cast<typelib_InterfaceTypeDescription*>(
                 info->m_typeDesc)->ppAllMembers[0]);
-        System::Object *args[] = new System::Object*[1];
+        cli::array< System::Object ^ > ^ args = gcnew cli::array< System::Object ^ >( 1 );
 
         args[0] = fromType;
-        __box uno::Any  * pAny;
-        System::Object* pException = NULL;
+        uno::Any pAny;
+        System::Object ^ pException = nullptr;
 
-        pAny= static_cast<__box uno::Any *>(
+        pAny= safe_cast< uno::Any >(
             m_bridge->call_uno(
                 info->m_unoI,
                 membertd.get(),
@@ -262,18 +262,18 @@ bool UnoInterfaceProxy::CanCastTo(System::Type* fromType,
                 1,
                 ((typelib_InterfaceMethodTypeDescription*)
                  membertd.get())->pParams,
-                args, NULL, &pException) );
+                args, nullptr, &pException) );
 
         // handle regular exception from target
         OSL_ENSURE(
-            0 == pException,
+            nullptr == pException,
             OUStringToOString(
                 mapCliString( pException->ToString()),
                 RTL_TEXTENCODING_UTF8 ).getStr() );
 
-        if (pAny->Type != __typeof (void)) // has value?
+        if (pAny.Type != void::typeid) // has value?
         {
-            if (0 != findInfo( fromType ))
+            if (nullptr != findInfo( fromType ))
             {
                 // proxy now supports demanded interface
                 return true;
@@ -283,17 +283,17 @@ bool UnoInterfaceProxy::CanCastTo(System::Type* fromType,
             //                  and interface with a different oid.
             //                  That way, this type is supported for the CLI
             //                  interpreter (CanCastTo() returns true)
-            ::System::Object * obj = pAny->Value;
+            ::System::Object ^ obj = pAny.Value;
             OSL_ASSERT( srr::RemotingServices::IsTransparentProxy( obj ) );
             if (srr::RemotingServices::IsTransparentProxy( obj ))
             {
-                UnoInterfaceProxy * proxy =
-                    static_cast< UnoInterfaceProxy * >(
+                UnoInterfaceProxy ^ proxy =
+                    static_cast< UnoInterfaceProxy ^ >(
                         srr::RemotingServices::GetRealProxy( obj ) );
-                OSL_ASSERT( 0 != proxy->findInfo( fromType ) );
+                OSL_ASSERT( nullptr != proxy->findInfo( fromType ) );
                 m_listAdditionalProxies->Add( proxy );
                 m_nlistAdditionalProxies = m_listAdditionalProxies->Count;
-                OSL_ASSERT( 0 != findInfo( fromType ) );
+                OSL_ASSERT(nullptr != findInfo( fromType ) );
                 return true;
             }
         }
@@ -305,13 +305,13 @@ bool UnoInterfaceProxy::CanCastTo(System::Type* fromType,
             0, OUStringToOString(
                 e.m_message, RTL_TEXTENCODING_UTF8 ).getStr() );
     }
-    catch (System::Exception* e)
+    catch (System::Exception ^ e)
     {
-        System::String* msg= new System::String(
-            S"An unexpected CLI exception occurred in "
-            S"UnoInterfaceProxy::CanCastTo().  Original"
-            S"message: \n");
-        msg= System::String::Concat(msg, e->get_Message());
+        System::String ^ msg= gcnew System::String(
+            "An unexpected CLI exception occurred in "
+            "UnoInterfaceProxy::CanCastTo().  Original"
+            "message: \n");
+        msg= System::String::Concat(msg, e->Message);
         OSL_ENSURE(
             0, OUStringToOString(
                 mapCliString(msg), RTL_TEXTENCODING_UTF8 ).getStr() );
@@ -329,57 +329,57 @@ bool UnoInterfaceProxy::CanCastTo(System::Type* fromType,
     return false;
 }
 
-srrm::IMessage* UnoInterfaceProxy::invokeObject(
-    sc::IDictionary* props,
-    srrm::LogicalCallContext* context,
-    srrm::IMethodCallMessage* mcm)
+srrm::IMessage ^ UnoInterfaceProxy::invokeObject(
+    sc::IDictionary ^ props,
+    srrm::LogicalCallContext ^ context,
+    srrm::IMethodCallMessage ^ mcm)
 {
-    System::Object* retMethod = 0;
-    System::String* sMethod = static_cast<System::String*>
-        (props->get_Item(m_methodNameString));
-    System::Object* args[] = static_cast<System::Object*[]>(
-        props->get_Item(m_ArgsString));
+    System::Object ^ retMethod = nullptr;
+    System::String ^ sMethod = static_cast<System::String ^>
+        (props[ m_methodNameString ]);
+    cli::array< System::Object ^ > ^ args = safe_cast< cli::array< System::Object ^ > ^ >(
+        props[ m_ArgsString ]);
     if (m_Equals_String->Equals(sMethod))
     {
         // Object.Equals
-        OSL_ASSERT(args->get_Length() == 1);
-        srrp::RealProxy* rProxy = srr::RemotingServices::GetRealProxy(args[0]);
+        OSL_ASSERT(args->Length == 1);
+        srrp::RealProxy ^ rProxy = srr::RemotingServices::GetRealProxy(args[0]);
         bool bDone = false;
         if (rProxy)
         {
-            UnoInterfaceProxy* unoProxy =
-                dynamic_cast<UnoInterfaceProxy*>(rProxy);
+            UnoInterfaceProxy ^ unoProxy =
+                dynamic_cast<UnoInterfaceProxy ^>(rProxy);
             if (unoProxy)
             {
                 bool b = m_oid->Equals(unoProxy->getOid());
-                retMethod = __box(b);
+                retMethod = (::System::Object ^)(b);
                 bDone = true;
             }
         }
         if (bDone == false)
         {
             //no proxy or not our proxy, therefore Equals must be false
-            retMethod = __box(false);
+            retMethod = (::System::Object ^)(false);
         }
     }
     else if (m_GetHashCode_String->Equals(sMethod))
     {
         // Object.GetHashCode
         int nHash = m_oid->GetHashCode();
-        retMethod = __box(nHash);
+        retMethod = (::System::Object ^)(nHash);
     }
     else if (m_GetType_String->Equals(sMethod))
     {
         // Object.GetType
-        retMethod = __typeof(System::Object);
+        retMethod = System::Object::typeid;
     }
     else if (m_ToString_String->Equals(sMethod))
     {
         // Object.ToString
-        st::StringBuilder* sb = new st::StringBuilder(256);
-// 				sb->AppendFormat(S"Uno object proxy. Implemented interface: {0}"
-// 					S". OID: {1}", m_type->ToString(), m_oid);
-        sb->AppendFormat(S"Uno object proxy. OID: {0}", m_oid);
+        st::StringBuilder ^ sb = gcnew st::StringBuilder(256);
+// 				sb->AppendFormat("Uno object proxy. Implemented interface: {0}"
+// 					". OID: {1}", m_type->ToString(), m_oid);
+        sb->AppendFormat("Uno object proxy. OID: {0}", m_oid);
         retMethod = sb->ToString();
     }
     else
@@ -388,46 +388,46 @@ srrm::IMessage* UnoInterfaceProxy::invokeObject(
         //which should not be possible
         OSL_ASSERT(0);
     }
-    srrm::IMessage* retVal= new srrm::ReturnMessage(
-        retMethod, new System::Object*[0], 0, context, mcm);
+    srrm::IMessage ^ retVal= gcnew srrm::ReturnMessage(
+        retMethod, gcnew cli::array< System::Object ^ >( 0 ), 0, context, mcm);
     return retVal;
 }
 
-UnoInterfaceInfo * UnoInterfaceProxy::findInfo( ::System::Type * type )
+UnoInterfaceInfo ^ UnoInterfaceProxy::findInfo( ::System::Type ^ type )
 {
     for (int i = 0; i < m_numUnoIfaces; i++)
     {
-        UnoInterfaceInfo* tmpInfo = static_cast<UnoInterfaceInfo*>(
-            m_listIfaces->get_Item(i));
+        UnoInterfaceInfo ^ tmpInfo = static_cast<UnoInterfaceInfo ^>(
+            m_listIfaces[ i ]);
         if (type->IsAssignableFrom(tmpInfo->m_type))
             return tmpInfo;
     }
     for ( int i = 0; i < m_nlistAdditionalProxies; ++i )
     {
-        UnoInterfaceProxy * proxy =
-            static_cast< UnoInterfaceProxy * >(
-                m_listAdditionalProxies->get_Item( i ) );
-        UnoInterfaceInfo * info = proxy->findInfo( type );
-        if (0 != info)
+        UnoInterfaceProxy ^ proxy =
+            static_cast< UnoInterfaceProxy ^ >(
+                m_listAdditionalProxies[ i ] );
+        UnoInterfaceInfo ^ info = proxy->findInfo( type );
+        if (nullptr != info)
             return info;
     }
-    return 0;
+    return nullptr;
 }
 
-srrm::IMessage* UnoInterfaceProxy::Invoke(srrm::IMessage* callmsg)
+srrm::IMessage ^ UnoInterfaceProxy::Invoke(srrm::IMessage ^ callmsg)
 {
     try
     {
-        sc::IDictionary* props= callmsg->Properties;
-        srrm::LogicalCallContext* context=
-            static_cast<srrm::LogicalCallContext*>(
-                props->get_Item(m_CallContextString));
-        srrm::IMethodCallMessage* mcm=
-            static_cast<srrm::IMethodCallMessage*>(callmsg);
+        sc::IDictionary ^ props= callmsg->Properties;
+        srrm::LogicalCallContext ^ context=
+            static_cast<srrm::LogicalCallContext ^>(
+                props[ m_CallContextString ]);
+        srrm::IMethodCallMessage ^ mcm=
+            static_cast<srrm::IMethodCallMessage ^>(callmsg);
 
         //Find out which UNO interface is being called
-        System::String* sTypeName = static_cast<System::String*>(
-            props->get_Item(m_typeNameString));
+        System::String ^ sTypeName = static_cast<System::String ^>(
+            props[ m_typeNameString ]);
         sTypeName = sTypeName->Substring(0, sTypeName->IndexOf(','));
 
 		// Special Handling for System.Object methods
@@ -436,14 +436,14 @@ srrm::IMessage* UnoInterfaceProxy::Invoke(srrm::IMessage* callmsg)
             return invokeObject(props, context, mcm);
         }
 
-        System::Type* typeBeingCalled = loadCliType(sTypeName);
-        UnoInterfaceInfo* info = findInfo( typeBeingCalled );
-        OSL_ASSERT( 0 != info );
+        System::Type ^ typeBeingCalled = loadCliType(sTypeName);
+        UnoInterfaceInfo ^ info = findInfo( typeBeingCalled );
+        OSL_ASSERT( nullptr != info );
 
         // ToDo do without string conversion, a OUString is not needed here
         // get the type description of the call
-        OUString usMethodName(mapCliString(static_cast<System::String*>(
-                 props->get_Item(m_methodNameString))));
+        OUString usMethodName(mapCliString(static_cast<System::String ^>(
+                 props[ m_methodNameString ])));
         typelib_TypeDescriptionReference ** ppAllMembers =
             info->m_typeDesc->ppAllMembers;
         sal_Int32 numberMembers = info->m_typeDesc->nAllMembers;
@@ -458,7 +458,7 @@ srrm::IMessage* UnoInterfaceProxy::Invoke(srrm::IMessage* callmsg)
                 OUString::unacquired( & member_type->pTypeName );
 
 #if OSL_DEBUG_LEVEL >= 2
-		System::String * pTypeName;
+		System::String ^ pTypeName;
         pTypeName = mapUnoString(usTypeName.pData);
 #endif
 			sal_Int32 offset = usTypeName.indexOf( ':' ) + 2;
@@ -479,12 +479,12 @@ srrm::IMessage* UnoInterfaceProxy::Invoke(srrm::IMessage* callmsg)
                         (typelib_InterfaceMethodTypeDescription *)
                         member_td.get();
 
-                    System::Object* args[] = static_cast<System::Object*[]>(
-                        props->get_Item(m_ArgsString));
-                    System::Type* argTypes[] = static_cast<System::Type*[]>(
-                        props->get_Item(m_methodSignatureString));
-                    System::Object* pExc = NULL;
-                    System::Object * cli_ret = m_bridge->call_uno(
+                    cli::array< System::Object ^ > ^ args = safe_cast< cli::array< System::Object ^ > ^ >(
+                        props[ m_ArgsString ]);
+                    cli::array< System::Type ^ > ^ argTypes = safe_cast< cli::array< System::Type ^ > ^ >(
+                        props[ m_methodSignatureString ]);
+                    System::Object ^ pExc = nullptr;
+                    System::Object ^ cli_ret = m_bridge->call_uno(
                         info->m_unoI, member_td.get(),
                         method_td->pReturnTypeRef, method_td->nParams,
                         method_td->pParams, args, argTypes, &pExc);
@@ -516,13 +516,13 @@ srrm::IMessage* UnoInterfaceProxy::Invoke(srrm::IMessage* callmsg)
                             (typelib_InterfaceAttributeTypeDescription*)
                             member_td.get();
 
-                        System::Object* pExc = NULL;
-                        System::Object* cli_ret= m_bridge->call_uno(
+                        System::Object ^ pExc = nullptr;
+                        System::Object ^ cli_ret= m_bridge->call_uno(
                             info->m_unoI, member_td.get(),
                             attribute_td->pAttributeTypeRef,
                             0, 0,
-                            NULL, NULL, &pExc);
-                        return constructReturnMessage(cli_ret, NULL, NULL,
+                            nullptr, nullptr, &pExc);
+                        return constructReturnMessage(cli_ret, nullptr, nullptr,
                                                       callmsg, pExc);
                     }
                     else if ('s' == usMethodName[0])
@@ -538,20 +538,20 @@ srrm::IMessage* UnoInterfaceProxy::Invoke(srrm::IMessage* callmsg)
                             param.bIn = sal_True;
                             param.bOut = sal_False;
 
-                            System::Object* args[] =
-                                static_cast<System::Object*[]>(
-                                    props->get_Item(m_ArgsString));
-                            System::Object* pExc = NULL;
+                            cli::array< System::Object ^ > ^ args =
+                                safe_cast< cli::array< System::Object ^ > ^ >(
+                                    props[ m_ArgsString ]);
+                            System::Object ^ pExc = nullptr;
                             m_bridge->call_uno(
                                 info->m_unoI, member_td.get(),
                                 ::getCppuVoidType().getTypeLibType(),
-                                1, &param, args, NULL, &pExc);
-                            return constructReturnMessage(NULL, NULL, NULL,
+                                1, &param, args, nullptr, &pExc);
+                            return constructReturnMessage(NULL, nullptr, nullptr,
                                                           callmsg, pExc);
                         }
                         else
                         {
-                            return constructReturnMessage(NULL, NULL, NULL,
+                            return constructReturnMessage(NULL, nullptr, nullptr,
                                                           callmsg, NULL);
                         }
                     }
@@ -573,66 +573,66 @@ srrm::IMessage* UnoInterfaceProxy::Invoke(srrm::IMessage* callmsg)
     }
     catch (BridgeRuntimeError & err)
     {
-        srrm::IMethodCallMessage* mcm =
-            static_cast<srrm::IMethodCallMessage*>(callmsg);
-        return new srrm::ReturnMessage(new ucss::uno::RuntimeException(
-                         mapUnoString(err.m_message.pData), NULL), mcm);
+        srrm::IMethodCallMessage ^ mcm =
+            static_cast<srrm::IMethodCallMessage ^>(callmsg);
+        return gcnew srrm::ReturnMessage(gcnew ucss::uno::RuntimeException(
+                         mapUnoString(err.m_message.pData), nullptr), mcm);
     }
-    catch (System::Exception* e)
+    catch (System::Exception ^ e)
     {
-        st::StringBuilder * sb = new st::StringBuilder(512);
-        sb->Append(new System::String(
-            S"An unexpected CLI exception occurred in "
-            S"UnoInterfaceProxy::Invoke. Original"
-            S"message: \n"));
-        sb->Append(e->get_Message());
+        st::StringBuilder ^ sb = gcnew st::StringBuilder(512);
+        sb->Append(gcnew System::String(
+            "An unexpected CLI exception occurred in "
+            "UnoInterfaceProxy::Invoke. Original"
+            "message: \n"));
+        sb->Append(e->Message);
         sb->Append((__wchar_t) '\n');
-        sb->Append(e->get_StackTrace());
-        srrm::IMethodCallMessage* mcm =
-            static_cast<srrm::IMethodCallMessage*>(callmsg);
-        return new srrm::ReturnMessage(new ucss::uno::RuntimeException(
+        sb->Append(e->StackTrace);
+        srrm::IMethodCallMessage ^ mcm =
+            static_cast<srrm::IMethodCallMessage ^>(callmsg);
+        return gcnew srrm::ReturnMessage(gcnew ucss::uno::RuntimeException(
                                            sb->ToString(), NULL), mcm);
     }
     catch (...)
     {
-        System::String* msg = new System::String(
-            S"An unexpected native C++ exception occurred in "
-            S"UnoInterfaceProxy::Invoke.");
-        srrm::IMethodCallMessage* mcm =
-            static_cast<srrm::IMethodCallMessage*>(callmsg);
-        return new srrm::ReturnMessage(new ucss::uno::RuntimeException(
+        System::String ^ msg = gcnew System::String(
+            "An unexpected native C++ exception occurred in "
+            "UnoInterfaceProxy::Invoke.");
+        srrm::IMethodCallMessage ^ mcm =
+            static_cast<srrm::IMethodCallMessage ^>(callmsg);
+        return gcnew srrm::ReturnMessage(gcnew ucss::uno::RuntimeException(
                                        msg, NULL), mcm);
     }
-    return NULL;
+    return nullptr;
 }
 /** If the argument args is NULL then this function is called for an attribute
     method (either setXXX or getXXX).
     For attributes the argument mtd is also NULL.
 */
-srrm::IMessage* UnoInterfaceProxy::constructReturnMessage(
-    System::Object* cliReturn,
-    System::Object* args[],
+srrm::IMessage ^ UnoInterfaceProxy::constructReturnMessage(
+    System::Object ^ cliReturn,
+    cli::array< System::Object ^ > ^ args,
     typelib_InterfaceMethodTypeDescription* mtd,
-    srrm::IMessage* msg, System::Object* exc)
+    srrm::IMessage ^ msg, System::Object ^ exc)
 {
-    srrm::IMessage * retVal= NULL;
-    srrm::IMethodCallMessage* mcm = static_cast<srrm::IMethodCallMessage*>(msg);
+    srrm::IMessage ^ retVal= nullptr;
+    srrm::IMethodCallMessage ^ mcm = static_cast<srrm::IMethodCallMessage ^>(msg);
     if (exc)
     {
-        retVal = new srrm::ReturnMessage(
-            dynamic_cast<System::Exception*>(exc), mcm);
+        retVal = gcnew srrm::ReturnMessage(
+            dynamic_cast<System::Exception ^>(exc), mcm);
     }
     else
     {
-        sc::IDictionary* props= msg->get_Properties();
-        srrm::LogicalCallContext* context=
-            static_cast<srrm::LogicalCallContext*>(
-            props->get_Item(m_CallContextString));
-        if (args != NULL)
+        sc::IDictionary ^ props= msg->Properties;
+        srrm::LogicalCallContext ^ context=
+            static_cast<srrm::LogicalCallContext ^>(
+            props[ m_CallContextString ]);
+        if (args != nullptr)
         {
             // Method
             //build the array of out parameters, allocate max length
-            System::Object* arOut[]= new System::Object*[mtd->nParams];
+            cli::array< System::Object ^ > ^ arOut= gcnew cli::array< System::Object ^ >( mtd->nParams );
 			int nOut = 0;
             for (int i= 0; i < mtd->nParams; i++)
             {
@@ -642,13 +642,13 @@ srrm::IMessage* UnoInterfaceProxy::constructReturnMessage(
 					nOut++;
 				}
             }
-            retVal= new srrm::ReturnMessage(cliReturn, arOut, nOut,
+            retVal= gcnew srrm::ReturnMessage(cliReturn, arOut, nOut,
                                             context, mcm);
         }
         else
         {
             // Attribute  (getXXX)
-            retVal= new srrm::ReturnMessage(cliReturn, NULL, 0,
+            retVal= gcnew srrm::ReturnMessage(cliReturn, nullptr, 0,
                                             context, mcm);
         }
     }
@@ -656,7 +656,7 @@ srrm::IMessage* UnoInterfaceProxy::constructReturnMessage(
 }
 
 //################################################################################
-CliProxy::CliProxy(Bridge const* bridge, System::Object* cliI,
+CliProxy::CliProxy(Bridge const* bridge, System::Object ^ cliI,
                          typelib_TypeDescription const* td,
                          const rtl::OUString& usOid):
     m_ref(1),
@@ -678,8 +678,8 @@ CliProxy::CliProxy(Bridge const* bridge, System::Object* cliI,
     makeMethodInfos();
 #if OSL_DEBUG_LEVEL >= 2
     sd::Trace::WriteLine(System::String::Format(
-      new System::String(S"cli uno bridge: Creating proxy for cli object, "
-                         S"id:\n\t{0}\n\t{1}"), m_oid, m_type));
+      gcnew System::String("cli uno bridge: Creating proxy for cli object, "
+                         "id:\n\t{0}\n\t{1}"), m_oid, m_type));
 #endif
 
 }
@@ -687,42 +687,42 @@ CliProxy::CliProxy(Bridge const* bridge, System::Object* cliI,
 void CliProxy::makeMethodInfos()
 {
 #if OSL_DEBUG_LEVEL >= 2
-    System::Object* cliI;
-    System::Type* type;
+    System::Object ^ cliI;
+    System::Type ^ type;
     cliI = m_cliI;
     type = m_type;
 #endif
 
-    if (m_type->get_IsInterface() == false)
+    if (m_type->IsInterface == false)
         return;
-	sr::MethodInfo* arThisMethods[] = m_type->GetMethods();
+	cli::array< sr::MethodInfo ^ > ^ arThisMethods = m_type->GetMethods();
     //get the inherited interfaces
-    System::Type* arInheritedIfaces[] = m_type->GetInterfaces();
-    m_nInheritedInterfaces = arInheritedIfaces->get_Length();
+    cli::array< System::Type ^ > ^ arInheritedIfaces = m_type->GetInterfaces();
+    m_nInheritedInterfaces = arInheritedIfaces->Length;
     //array containing the number of methods for the interface and its
     //inherited interfaces
-    m_arInterfaceMethodCount = new int __gc [m_nInheritedInterfaces + 1];
+    m_arInterfaceMethodCount = gcnew cli::array< int >( m_nInheritedInterfaces + 1 );
     //determine the number of all interface methods, including the inherited
     //interfaces
-    int numMethods = arThisMethods->get_Length();
+    int numMethods = arThisMethods->Length;
     for (int i= 0; i < m_nInheritedInterfaces; i++)
     {
-        numMethods += arInheritedIfaces[i]->GetMethods()->get_Length();
+        numMethods += arInheritedIfaces[i]->GetMethods()->Length;
     }
     //array containing MethodInfos of the cli object
-    m_arMethodInfos = new sr::MethodInfo*[numMethods];
+    m_arMethodInfos = gcnew cli::array< sr::MethodInfo ^ >( numMethods );
     //array containing MethodInfos of the interface
-    m_arInterfaceMethodInfos = new sr::MethodInfo*[numMethods];
+    m_arInterfaceMethodInfos = gcnew cli::array< sr::MethodInfo ^ >( numMethods );
     //array containing the mapping of Uno interface pos to pos in
     //m_arMethodInfos
-    m_arUnoPosToCliPos = new System::Int32[numMethods];
+    m_arUnoPosToCliPos = gcnew cli::array< System::Int32 >( numMethods );
     // initialize with -1
     for (int i = 0; i < numMethods; i++)
         m_arUnoPosToCliPos[i] = -1;
 
 #if OSL_DEBUG_LEVEL >= 2
-    sr::MethodInfo* arMethodInfosDbg[];
-    sr::MethodInfo* arInterfaceMethodInfosDbg[];
+    sr::MethodInfo ^ arMethodInfosDbg[];
+    sr::MethodInfo ^ arInterfaceMethodInfosDbg[];
     System::Int32 arInterfaceMethodCountDbg[];
     arMethodInfosDbg = m_arMethodInfos;
     arInterfaceMethodInfosDbg = m_arInterfaceMethodInfos;
@@ -731,10 +731,10 @@ void CliProxy::makeMethodInfos()
 
 
     //fill m_arMethodInfos with the mappings
-    // !!! InterfaceMapping.TargetMethods should be MethodInfo*[] according
+    // !!! InterfaceMapping.TargetMethods should be MethodInfo ^[] according
     // to documentation
-    // but it is Type*[] instead. Bug in the framework?
-    System::Type* objType = m_cliI->GetType();
+    // but it is Type ^[] instead. Bug in the framework?
+    System::Type ^ objType = m_cliI->GetType();
     try
     {
         int index = 0;
@@ -742,35 +742,35 @@ void CliProxy::makeMethodInfos()
         //arInheritedIfaces[0] is the direct base interface
         //arInheritedIfaces[n] is the furthest inherited interface
         //Start with the base interface
-        int nArLength = arInheritedIfaces->get_Length();
+        int nArLength = arInheritedIfaces->Length;
         for (;nArLength > 0; nArLength--)
         {
             sr::InterfaceMapping mapInherited = objType->GetInterfaceMap(
                 arInheritedIfaces[nArLength - 1]);
-            int numMethods = mapInherited.TargetMethods->get_Length();
+            int numMethods = mapInherited.TargetMethods->Length;
             m_arInterfaceMethodCount[nArLength - 1] = numMethods;
             for (int i = 0; i < numMethods; i++, index++)
             {
-                m_arMethodInfos[index] = __try_cast<sr::MethodInfo*>(
+                m_arMethodInfos[index] = safe_cast< sr::MethodInfo ^ >(
                     mapInherited.TargetMethods[i]);
 
-                m_arInterfaceMethodInfos[index] = __try_cast<sr::MethodInfo*>(
+                m_arInterfaceMethodInfos[index] = safe_cast< sr::MethodInfo ^ >(
                     mapInherited.InterfaceMethods[i]);
             }
         }
         //At last come the methods of the furthest derived interface
         sr::InterfaceMapping map = objType->GetInterfaceMap(m_type);
-        nArLength = map.TargetMethods->get_Length();
+        nArLength = map.TargetMethods->Length;
         m_arInterfaceMethodCount[m_nInheritedInterfaces] = nArLength;
         for (int i = 0; i < nArLength; i++,index++)
         {
-            m_arMethodInfos[index]= __try_cast<sr::MethodInfo*>(
+            m_arMethodInfos[index]= safe_cast< sr::MethodInfo ^ >(
                 map.TargetMethods[i]);
-            m_arInterfaceMethodInfos[index]= __try_cast<sr::MethodInfo*>(
+            m_arInterfaceMethodInfos[index]= safe_cast< sr::MethodInfo ^ >(
                 map.InterfaceMethods[i]);
         }
     }
-    catch (System::InvalidCastException* )
+    catch (System::InvalidCastException ^ )
     {
         OUStringBuffer buf( 128 );
         buf.appendAscii(RTL_CONSTASCII_STRINGPARAM(
@@ -782,14 +782,14 @@ void CliProxy::makeMethodInfos()
     }
 }
 
-sr::MethodInfo* CliProxy::getMethodInfo(int nUnoFunctionPos,
+sr::MethodInfo ^ CliProxy::getMethodInfo(int nUnoFunctionPos,
                                            const rtl::OUString& usMethodName, MethodKind methodKind)
 {
-    sr::MethodInfo* ret = NULL;
+    sr::MethodInfo ^ ret = nullptr;
 #if OSL_DEBUG_LEVEL >= 2
-    System::String* sMethodNameDbg;
-    sr::MethodInfo* arMethodInfosDbg[];
-    sr::MethodInfo* arInterfaceMethodInfosDbg[];
+    System::String ^ sMethodNameDbg;
+    sr::MethodInfo ^ arMethodInfosDbg[];
+    sr::MethodInfo ^ arInterfaceMethodInfosDbg[];
     System::Int32 arInterfaceMethodCountDbg[];
     System::Int32 arUnoPosToCliPosDbg[];
     sMethodNameDbg = mapUnoString(usMethodName.pData);
@@ -808,26 +808,26 @@ sr::MethodInfo* CliProxy::getMethodInfo(int nUnoFunctionPos,
             return m_arMethodInfos[cliPos];
 
         //create the method function name
-        System::String* sMethodName = mapUnoString(usMethodName.pData);
+        System::String ^ sMethodName = mapUnoString(usMethodName.pData);
         switch (methodKind)
         {
         case MK_METHOD:
             break;
         case MK_SET:
             sMethodName = System::String::Concat(
-                const_cast<System::String*>(Constants::sAttributeSet),
+                const_cast<System::String ^>(Constants::sAttributeSet),
                 sMethodName);
             break;
         case MK_GET:
             sMethodName = System::String::Concat(
-                const_cast<System::String*>(Constants::sAttributeGet),
+                const_cast<System::String ^>(Constants::sAttributeGet),
                 sMethodName);
             break;
         default:
             OSL_ASSERT(0);
         }
         //Find the cli interface method that corresponds to the Uno method
-//        System::String* sMethodName= mapUnoString(usMethodName.pData);
+//        System::String ^ sMethodName= mapUnoString(usMethodName.pData);
         int indexCliMethod = -1;
         //If the cli interfaces and their methods are in the same order
         //as they were declared (inheritance chain and within the interface)
@@ -837,10 +837,10 @@ sr::MethodInfo* CliProxy::getMethodInfo(int nUnoFunctionPos,
             indexCliMethod = nUnoFunctionPos;
         else
         {
-            int cMethods = m_arInterfaceMethodInfos->get_Length();
+            int cMethods = m_arInterfaceMethodInfos->Length;
             for (int i = 0; i < cMethods; i++)
             {
-                System::String* cliMethod = m_arInterfaceMethodInfos[i]->Name;
+                System::String ^ cliMethod = m_arInterfaceMethodInfos[i]->Name;
                 if (cliMethod->Equals(sMethodName))
                 {
                     indexCliMethod = i;
@@ -856,7 +856,7 @@ sr::MethodInfo* CliProxy::getMethodInfo(int nUnoFunctionPos,
                                 "cli object does not implement interface method: "));
             buf.append(usMethodName);
             throw BridgeRuntimeError(buf.makeStringAndClear());
-            return 0;
+            return nullptr;
         }
         m_arUnoPosToCliPos[nUnoFunctionPos] = indexCliMethod;
         ret = m_arMethodInfos[indexCliMethod];
@@ -873,9 +873,9 @@ CliProxy::~CliProxy()
 {
 #if OSL_DEBUG_LEVEL >= 2
     sd::Trace::WriteLine(System::String::Format(
-                  new System::String(
-                  S"cli uno bridge: Destroying proxy for cli object, "
-                  S"id:\n\t{0}\n\t{1}\n"),
+                  gcnew System::String(
+                  "cli uno bridge: Destroying proxy for cli object, "
+                  "id:\n\t{0}\n\t{1}\n"),
                   m_oid, m_type));
 #endif
 	CliEnvHolder::g_cli_env->revokeInterface(m_oid, mapUnoType(m_unoType.get()));
@@ -883,7 +883,7 @@ CliProxy::~CliProxy()
 }
 
 uno_Interface* CliProxy::create(Bridge const * bridge,
-                                 System::Object* cliI,
+                                 System::Object ^ cliI,
                                  typelib_TypeDescription const* pTD,
                                  const rtl::OUString& ousOid)
 {
@@ -1010,7 +1010,7 @@ void SAL_CALL cli_proxy_dispatch(
                OUString const& usAttrName= *(rtl_uString**)&
                    ((typelib_InterfaceMemberTypeDescription*) member_td)
                    ->pMemberName;
-               sr::MethodInfo* info = proxy->getMethodInfo(function_pos,
+               sr::MethodInfo ^ info = proxy->getMethodInfo(function_pos,
                                              usAttrName, CliProxy::MK_GET);
                bridge->call_cli(
                     proxy->m_cliI,
@@ -1025,7 +1025,7 @@ void SAL_CALL cli_proxy_dispatch(
                 OUString const& usAttrName= *(rtl_uString**) &
                     ((typelib_InterfaceMemberTypeDescription*) member_td)
                     ->pMemberName;
-                sr::MethodInfo* info = proxy->getMethodInfo(function_pos + 1,
+                sr::MethodInfo ^ info = proxy->getMethodInfo(function_pos + 1,
                                               usAttrName, CliProxy::MK_SET);
                 typelib_MethodParameter param;
                 param.pTypeRef =
@@ -1080,7 +1080,7 @@ void SAL_CALL cli_proxy_dispatch(
 
                 if (0 == pInterface)
                 {
-                    System::Type* mgdDemandedType =
+                    System::Type ^ mgdDemandedType =
                         mapUnoType(demanded_td.get());
                     if (mgdDemandedType->IsInstanceOfType( proxy->m_cliI ))
                     {
@@ -1131,7 +1131,7 @@ void SAL_CALL cli_proxy_dispatch(
                    ((typelib_InterfaceMemberTypeDescription*) member_td)
                    ->pMemberName;
 
-               sr::MethodInfo* info = proxy->getMethodInfo(function_pos,
+               sr::MethodInfo ^ info = proxy->getMethodInfo(function_pos,
                                              usMethodName, CliProxy::MK_METHOD);
                bridge->call_cli(
                     proxy->m_cliI,

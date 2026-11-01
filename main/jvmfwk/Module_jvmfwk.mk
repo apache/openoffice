@@ -34,10 +34,12 @@ $(eval $(call gb_Module_add_targets,jvmfwk,\
 	Package_sunjavapluginrc \
 ))
 
+ifneq ($(OS),MACOSX)
 ifeq ($(GUI),UNX)
 $(eval $(call gb_Module_add_targets,jvmfwk,\
 	Executable_javaldx \
 ))
+endif
 endif
 
 # vim: set noet sw=4 ts=4:

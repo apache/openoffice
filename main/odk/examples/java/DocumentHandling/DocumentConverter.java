@@ -102,7 +102,7 @@ public class DocumentConverter {
                     // Getting an object that will offer a simple way to store
                     // a document to a URL.
                     com.sun.star.frame.XStorable xStorable =
-                        (com.sun.star.frame.XStorable)UnoRuntime.queryInterface(
+                        UnoRuntime.queryInterface(
                             com.sun.star.frame.XStorable.class, oDocToStore );
 
                     // Preparing properties for converting the document
@@ -128,14 +128,14 @@ public class DocumentConverter {
                     // Closing the converted document. Use XCloseable.clsoe if the
                     // interface is supported, otherwise use XComponent.dispose
                     com.sun.star.util.XCloseable xCloseable =
-                        (com.sun.star.util.XCloseable)UnoRuntime.queryInterface(
+                        UnoRuntime.queryInterface(
                             com.sun.star.util.XCloseable.class, xStorable);
 
                     if ( xCloseable != null ) {
                         xCloseable.close(false);
                     } else {
                         com.sun.star.lang.XComponent xComp =
-                            (com.sun.star.lang.XComponent)UnoRuntime.queryInterface(
+                            UnoRuntime.queryInterface(
                                 com.sun.star.lang.XComponent.class, xStorable);
 
                         xComp.dispose();
@@ -184,7 +184,7 @@ public class DocumentConverter {
             Object oDesktop = xMCF.createInstanceWithContext(
                 "com.sun.star.frame.Desktop", xContext);
 
-            xCompLoader = (com.sun.star.frame.XComponentLoader)
+            xCompLoader =
                 UnoRuntime.queryInterface(com.sun.star.frame.XComponentLoader.class,
                                           oDesktop);
 

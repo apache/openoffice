@@ -61,6 +61,12 @@ private:
     int m_level;
     /// preserved namespaces. necessary because we do not write the root node.
     std::vector< ::com::sun::star::beans::StringPair > m_preservedNSs;
+    /// all xmlns declarations seen in the meta DOM (name, URI); used to find foreign names in strict mode
+    std::vector< ::com::sun::star::beans::StringPair > m_nsDecls;
+    /// size of m_nsDecls before each open element's own declarations, to drop them when it closes
+    std::vector< sal_Int32 > m_nsMarks;
+    /// depth inside a foreign element that strict mode drops; 0 otherwise
+    int m_skip;
 
 	SAL_DLLPRIVATE void SimpleStringElement(
         const ::rtl::OUString& rText, sal_uInt16 nNamespace,

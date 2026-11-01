@@ -3691,6 +3691,11 @@ SvXMLImportContext* XMLAnnotationImportContext::CreateChildContext(
                 new XMLStringBufferImportContext( GetImport(), nPrefix, rLocalName, aInitialsBuffer);
         }
     }
+    else if ( XML_NAMESPACE_META == nPrefix && IsXMLToken( rLocalName, XML_CREATOR_INITIALS ) )
+    {
+        pContext =
+            new XMLStringBufferImportContext( GetImport(), nPrefix, rLocalName, aInitialsBuffer);
+    }
 
     if( !pContext )
     {

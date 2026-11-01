@@ -88,14 +88,14 @@ public class GeneralTableSample extends SpreadsheetDocHelper
 
     // *** Insert a TEXT CELL using the XText interface ***
         xCell = xSheet.getCellByPosition( 0, 3 );
-        com.sun.star.text.XText xCellText = (com.sun.star.text.XText)
+        com.sun.star.text.XText xCellText =
             UnoRuntime.queryInterface( com.sun.star.text.XText.class, xCell );
         com.sun.star.text.XTextCursor xTextCursor = xCellText.createTextCursor();
         xCellText.insertString( xTextCursor, aText, false );
 
     // *** Change cell properties ***
         int nValue = bValid ? 0x00FF00 : 0xFF4040;
-        xPropSet = (com.sun.star.beans.XPropertySet)
+        xPropSet =
             UnoRuntime.queryInterface( com.sun.star.beans.XPropertySet.class, xCell );
         xPropSet.setPropertyValue( "CellBackColor", new Integer( nValue ) );
 
@@ -107,7 +107,7 @@ public class GeneralTableSample extends SpreadsheetDocHelper
         xCellRange = xSheet.getCellRangeByPosition( 2, 0, 3, 1 );
 
         // Change properties of the range.
-        xPropSet = (com.sun.star.beans.XPropertySet)
+        xPropSet =
             UnoRuntime.queryInterface( com.sun.star.beans.XPropertySet.class, xCellRange );
         xPropSet.setPropertyValue( "CellBackColor", new Integer( 0x8080FF ) );
 
@@ -115,7 +115,7 @@ public class GeneralTableSample extends SpreadsheetDocHelper
         xCellRange = xSheet.getCellRangeByName( "C4:D5" );
 
         // Change properties of the range.
-        xPropSet = (com.sun.star.beans.XPropertySet)
+        xPropSet =
             UnoRuntime.queryInterface( com.sun.star.beans.XPropertySet.class, xCellRange );
         xPropSet.setPropertyValue( "CellBackColor", new Integer( 0xFFFF80 ) );
 
@@ -125,12 +125,12 @@ public class GeneralTableSample extends SpreadsheetDocHelper
 
         // Create a cursor using the XSpreadsheet method createCursorByRange()
         xCellRange = xSheet.getCellRangeByName( "A1" );
-        com.sun.star.sheet.XSheetCellRange xSheetCellRange = (com.sun.star.sheet.XSheetCellRange)
+        com.sun.star.sheet.XSheetCellRange xSheetCellRange =
             UnoRuntime.queryInterface( com.sun.star.sheet.XSheetCellRange.class, xCellRange );
 
         com.sun.star.sheet.XSheetCellCursor xSheetCellCursor =
             xSheet.createCursorByRange( xSheetCellRange );
-        com.sun.star.table.XCellCursor xCursor = (com.sun.star.table.XCellCursor)
+        com.sun.star.table.XCellCursor xCursor =
             UnoRuntime.queryInterface( com.sun.star.table.XCellCursor.class, xSheetCellCursor );
 
         // Move to the last filled cell.
@@ -143,35 +143,35 @@ public class GeneralTableSample extends SpreadsheetDocHelper
     // *** Modifying COLUMNS and ROWS ***
         System.out.println( "*** Sample for services table.TableRows and table.TableColumns ***" );
 
-        com.sun.star.table.XColumnRowRange xCRRange = (com.sun.star.table.XColumnRowRange)
+        com.sun.star.table.XColumnRowRange xCRRange =
             UnoRuntime.queryInterface( com.sun.star.table.XColumnRowRange.class, xSheet );
         com.sun.star.table.XTableColumns xColumns = xCRRange.getColumns();
         com.sun.star.table.XTableRows xRows = xCRRange.getRows();
 
         // Get column C by index (interface XIndexAccess).
         Object aColumnObj = xColumns.getByIndex( 2 );
-        xPropSet = (com.sun.star.beans.XPropertySet)
+        xPropSet =
             UnoRuntime.queryInterface( com.sun.star.beans.XPropertySet.class, aColumnObj );
         xPropSet.setPropertyValue( "Width", new Integer( 5000 ) );
 
         // Get the name of the column.
-        com.sun.star.container.XNamed xNamed = (com.sun.star.container.XNamed)
+        com.sun.star.container.XNamed xNamed =
             UnoRuntime.queryInterface( com.sun.star.container.XNamed.class, aColumnObj );
         aText = "The name of this column is " + xNamed.getName() + ".";
         xSheet.getCellByPosition( 2, 2 ).setFormula( aText );
 
         // Get column D by name (interface XNameAccess).
-        com.sun.star.container.XNameAccess xColumnsName = (com.sun.star.container.XNameAccess)
+        com.sun.star.container.XNameAccess xColumnsName =
             UnoRuntime.queryInterface( com.sun.star.container.XNameAccess.class, xColumns );
 
         aColumnObj = xColumnsName.getByName( "D" );
-        xPropSet = (com.sun.star.beans.XPropertySet)
+        xPropSet =
             UnoRuntime.queryInterface( com.sun.star.beans.XPropertySet.class, aColumnObj );
         xPropSet.setPropertyValue( "IsVisible", new Boolean( false ) );
 
         // Get row 7 by index (interface XIndexAccess)
         Object aRowObj = xRows.getByIndex( 6 );
-        xPropSet = (com.sun.star.beans.XPropertySet)
+        xPropSet =
             UnoRuntime.queryInterface( com.sun.star.beans.XPropertySet.class, aRowObj );
         xPropSet.setPropertyValue( "Height", new Integer( 5000 ) );
 
@@ -189,7 +189,7 @@ public class GeneralTableSample extends SpreadsheetDocHelper
         System.out.println( "*** Sample for service table.TableCharts ***" );
 
         com.sun.star.table.XTableChartsSupplier xChartsSupp =
-            (com.sun.star.table.XTableChartsSupplier) UnoRuntime.queryInterface(
+            UnoRuntime.queryInterface(
                 com.sun.star.table.XTableChartsSupplier.class, xSheet );
         com.sun.star.table.XTableCharts xCharts = xChartsSupp.getCharts();
 
@@ -207,7 +207,7 @@ public class GeneralTableSample extends SpreadsheetDocHelper
 
         // Get the chart by name.
         Object aChartObj = xCharts.getByName( aName );
-        com.sun.star.table.XTableChart xChart = (com.sun.star.table.XTableChart)
+        com.sun.star.table.XTableChart xChart =
             UnoRuntime.queryInterface( com.sun.star.table.XTableChart.class, aChartObj );
 
         // Query the state of row and column headers.

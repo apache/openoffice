@@ -5339,8 +5339,8 @@ void SwHTMLParser::ParseMoreMetaOptions()
         aName.EqualsIgnoreCaseAscii( OOO_STRING_SVTOOLS_HTML_META_content_script_type ) )
         return;
 
-    aContent.EraseAllChars( _CR );
-    aContent.EraseAllChars( _LF );
+    aContent.EraseAllChars( SAL_CR );
+    aContent.EraseAllChars( SAL_LF );
 
     if( aName.EqualsIgnoreCaseAscii( OOO_STRING_SVTOOLS_HTML_META_sdendnote ) )
     {

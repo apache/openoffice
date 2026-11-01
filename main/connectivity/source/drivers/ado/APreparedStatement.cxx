@@ -22,7 +22,7 @@
 
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
-#include "precompiled_connectivity.hxx"
+#include "precompiled_ado.hxx"
 #include "connectivity/sqlparse.hxx"
 #include "ado/APreparedStatement.hxx"
 #include <com/sun/star/sdbc/DataType.hpp>

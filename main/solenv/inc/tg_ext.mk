@@ -135,6 +135,18 @@ $(MISC)/%.unpack : $(TARFILE_LOCATION2)/%.tgz
 	@$(TYPE) $(mktmp $(UNPACKCMD)) > $@.$(INPATH)
 	@$(RENAME) $@.$(INPATH) $@
 
+$(MISC)/%.unpack : $(TARFILE_LOCATION2)/%.tar.xz
+	@-$(RM) $@
+	@noop $(assign UNPACKCMD := $(XZ) -d -c $(subst,\,/ $(TARFILE_LOCATION)/$(TARFILE_MD5)-$(TARFILE_NAME).tar.xz) $(TARFILE_FILTER) | $(GNUTAR) -x$(tar_verbose_switch)f - )
+	@$(TYPE) $(mktmp $(UNPACKCMD)) > $@.$(INPATH)
+	@$(RENAME) $@.$(INPATH) $@
+
+$(MISC)/%.unpack : $(TARFILE_LOCATION2)/%.txz
+	@-$(RM) $@
+	@noop $(assign UNPACKCMD := $(XZ) -d -c $(subst,\,/ $(TARFILE_LOCATION)/$(TARFILE_MD5)-$(TARFILE_NAME).txz) $(TARFILE_FILTER) | $(GNUTAR) -x$(tar_verbose_switch)f - )
+	@$(TYPE) $(mktmp $(UNPACKCMD)) > $@.$(INPATH)
+	@$(RENAME) $@.$(INPATH) $@
+
 $(MISC)/%.unpack : $(TARFILE_LOCATION2)/%.tar
 	@-$(RM) $@
 	@noop $(assign UNPACKCMD := $(GNUTAR) -x$(tar_verbose_switch)f $(TARFILE_LOCATION)/$(TARFILE_MD5)-$(TARFILE_NAME).tar)
@@ -219,6 +231,11 @@ CONFIG_SHELL=sh.exe
 .EXPORT: CONFIG_SHELL
 .ENDIF
 
+# the bundled config.guess/config.sub files predate aarch64 Linux
+.IF "$(OS)$(CPUNAME)" == "LINUXAARCH64"
+CONFIGURE_REFRESH=sh $(SOLARENV)/bin/refresh_config_guess.sh $(SRC_ROOT) &&
+.ENDIF
+
 $(PACKAGE_DIR)/$(CONFIGURE_FLAG_FILE) : $(PACKAGE_DIR)/$(PATCH_FLAG_FILE)
 	@@-$(RM) $@
 .IF "$(CONFIGURE_ACTION)" == "none" || "$(CONFIGURE_ACTION)"==""
@@ -228,7 +245,7 @@ $(PACKAGE_DIR)/$(CONFIGURE_FLAG_FILE) : $(PACKAGE_DIR)/$(PATCH_FLAG_FILE)
 .IF "$(OS)"=="OS2"
 	$(COMMAND_ECHO)cd $(P_CONFIGURE_DIR) && sh -c "$(CONFIGURE_ACTION:s!\!/!) $(CONFIGURE_FLAGS:s!\!/!)" && $(TOUCH) $(CONFIGURE_FLAG_FILE)
 .ELSE
-	$(COMMAND_ECHO)cd $(P_CONFIGURE_DIR) && $(CONFIGURE_ACTION) $(CONFIGURE_FLAGS) && $(TOUCH) $(CONFIGURE_FLAG_FILE)
+	$(COMMAND_ECHO)cd $(P_CONFIGURE_DIR) && $(CONFIGURE_REFRESH) $(CONFIGURE_ACTION) $(CONFIGURE_FLAGS) && $(TOUCH) $(CONFIGURE_FLAG_FILE)
 .ENDIF
 	$(COMMAND_ECHO)mv $(P_CONFIGURE_DIR)/$(CONFIGURE_FLAG_FILE) $(PACKAGE_DIR)/$(CONFIGURE_FLAG_FILE)
 .ENDIF			# "$(CONFIGURE_ACTION)"=="none" ||	"$(CONFIGURE_ACTION)"==""
@@ -261,7 +278,7 @@ $(PACKAGE_DIR)/$(PREDELIVER_FLAG_FILE) : $(PACKAGE_DIR)/$(INSTALL_FLAG_FILE)
     $(COMMAND_ECHO)$(PERL) $(SOLARENV)/bin/macosx-change-install-names.pl extshl \
         $(EXTRPATH) \
         $(shell ls $(foreach,j,$(OUT2LIB) $(LB)/$(j:f)) | \
-            (grep -v '\.a$$' || test $$? = 1))
+            (grep -vE '\.(a|pc)$$' || test $$? = 1))
 .ENDIF
 .ENDIF			# "$(OUT2LIB)"!=""
 .IF "$(OUT2INC)"!=""

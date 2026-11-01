@@ -104,7 +104,6 @@
 #include <dbaccess/dbaundomanager.hxx>
 #include <editeng/paperinf.hxx>
 #include <framework/titlehelper.hxx>
-#include <osl/thread.hxx>
 #include <svl/itempool.hxx>
 #include <svl/undo.hxx>
 #include <svx/svdlayer.hxx>
@@ -504,7 +503,9 @@ uno::Sequence< uno::Any > SAL_CALL OStyle::getPropertyDefaults( const uno::Seque
 }
 namespace
 {
-    class FactoryLoader : public ::osl::Thread
+    // Runs as a main-thread user event: as a detached thread it could outlive DeInitVCL
+    // and use the already deleted SolarMutex if the office terminated right after the first report.
+    class FactoryLoader
 	{
         ::rtl::OUString                          m_sMimeType;
 		uno::Reference< uno::XComponentContext > m_xContext;
@@ -514,15 +515,20 @@ namespace
             ,m_xContext(_xContext)
 		{}
 
-	protected:
-        virtual ~FactoryLoader(){}
+		DECL_STATIC_LINK( FactoryLoader, LoadHdl, FactoryLoader* );
 
-		/// Working method which should be overridden.
-		virtual void SAL_CALL run();
-		virtual void SAL_CALL onTerminated();
+	private:
+		void load();
 	};
 
-	void SAL_CALL FactoryLoader::run()
+	IMPL_STATIC_LINK_NOINSTANCE( FactoryLoader, LoadHdl, FactoryLoader*, pLoader )
+	{
+		pLoader->load();
+		delete pLoader;
+		return 0;
+	}
+
+	void FactoryLoader::load()
 	{
 		try
 		{
@@ -564,10 +570,6 @@ namespace
 		{
             DBG_UNHANDLED_EXCEPTION();
 		}
-	}
-	void SAL_CALL FactoryLoader::onTerminated()
-	{
-        delete this;
 	}
 }
 // -----------------------------------------------------------------------------
@@ -763,10 +765,8 @@ void OReportDefinition::init()
             const ::rtl::OUString* pEnd  = pIter + aMimeTypes.getLength();
             for ( ; pIter != pEnd; ++pIter )
             {
-                FactoryLoader* pCreatorThread = new FactoryLoader(*pIter,m_aProps->m_xContext);
-	            pCreatorThread->createSuspended();
-                pCreatorThread->setPriority(osl_Thread_PriorityBelowNormal);
-                pCreatorThread->resume();
+                FactoryLoader* pLoader = new FactoryLoader(*pIter,m_aProps->m_xContext);
+                Application::PostUserEvent( STATIC_LINK( NULL, FactoryLoader, LoadHdl ), pLoader );
             }
         }
 

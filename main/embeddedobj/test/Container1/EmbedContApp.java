@@ -176,7 +176,7 @@ public class EmbedContApp extends Applet
 
 		try {
 			Object oTransformer = m_xServiceFactory.createInstance( "com.sun.star.util.URLTransformer" );
-			m_xTransformer = (XURLTransformer)UnoRuntime.queryInterface( XURLTransformer.class, oTransformer );
+			m_xTransformer = UnoRuntime.queryInterface( XURLTransformer.class, oTransformer );
 		} catch( Exception e ) { System.exit( 0 ); }
 
 		m_oActionsNumberLock = new Object();
@@ -187,7 +187,7 @@ public class EmbedContApp extends Applet
 
 		try {
 			Object oJob = m_xServiceFactory.createInstance( "com.sun.star.comp.thread.MainThreadExecutor" );
-			m_xMainThreadExecutor = (XJob)UnoRuntime.queryInterface( XJob.class, oJob );
+			m_xMainThreadExecutor = UnoRuntime.queryInterface( XJob.class, oJob );
 		} catch( Exception e ) {}
 
 		if ( m_xMainThreadExecutor == null )
@@ -314,7 +314,7 @@ public class EmbedContApp extends Applet
 		if ( m_xEmbedObj != null )
 		{
 			try {
-				XEmbedPersist xPersist = (XEmbedPersist)UnoRuntime.queryInterface( XEmbedPersist.class, m_xEmbedObj );
+				XEmbedPersist xPersist = UnoRuntime.queryInterface( XEmbedPersist.class, m_xEmbedObj );
 				if ( xPersist != null )
 				{
 					xPersist.storeOwn();
@@ -464,7 +464,7 @@ public class EmbedContApp extends Applet
 				if ( nState == EmbedStates.EMBED_INPLACE_ACTIVE
 				|| nState == EmbedStates.EMBED_UI_ACTIVE )
 			 	{
-					XInplaceObject xInplObj = (XInplaceObject)UnoRuntime.queryInterface( XInplaceObject.class, m_xEmbedObj );
+					XInplaceObject xInplObj = UnoRuntime.queryInterface( XInplaceObject.class, m_xEmbedObj );
 			 		if ( xInplObj != null )
 					{
 						xInplObj.setObjectRects( aPosRect, aPosRect ); // show the whole object
@@ -579,7 +579,7 @@ public class EmbedContApp extends Applet
 									if ( m_bLinkObj )
 										storeLinkToStorage();
 
-									XTransactedObject xTransact = (XTransactedObject)UnoRuntime.queryInterface( XTransactedObject.class,
+									XTransactedObject xTransact = UnoRuntime.queryInterface( XTransactedObject.class,
 																												m_xStorage );
 									if ( xTransact != null )
 										xTransact.commit();
@@ -694,12 +694,12 @@ public class EmbedContApp extends Applet
 						if ( m_xStorage != null )
 						{
 							try {
-								XNameAccess xNameAccess = (XNameAccess)UnoRuntime.queryInterface( XNameAccess.class,
+								XNameAccess xNameAccess = UnoRuntime.queryInterface( XNameAccess.class,
 																								m_xStorage );
 								if ( xNameAccess != null && xNameAccess.hasByName( "LinkName" ) )
 									m_xStorage.removeElement( "LinkName" );
 
-								XLinkageSupport xLinkage = (XLinkageSupport)UnoRuntime.queryInterface( XLinkageSupport.class,
+								XLinkageSupport xLinkage = UnoRuntime.queryInterface( XLinkageSupport.class,
 																										m_xEmbedObj );
 								if ( xLinkage != null )
 								{
@@ -868,7 +868,7 @@ public class EmbedContApp extends Applet
 
 				com.sun.star.awt.Size aBitmapSize = new com.sun.star.awt.Size( 200, 100 );
 
-				XVisualObject xVisObj = (XVisualObject)UnoRuntime.queryInterface( XVisualObject.class, m_xEmbedObj );
+				XVisualObject xVisObj = UnoRuntime.queryInterface( XVisualObject.class, m_xEmbedObj );
 				try {
 					com.sun.star.awt.Size aVisSize = xVisObj.getVisAreaSize( Aspects.MSASPECT_CONTENT );
 					m_nXPixelSize = aVisSize.Width / aBitmapSize.Width;
@@ -910,13 +910,13 @@ public class EmbedContApp extends Applet
 				if ( nState == EmbedStates.EMBED_UI_ACTIVE || nState == EmbedStates.EMBED_INPLACE_ACTIVE
 				  || nState == EmbedStates.EMBED_ACTIVE || nState == EmbedStates.EMBED_RUNNING )
 				{
-					XComponentSupplier xCompProv = (XComponentSupplier)UnoRuntime.queryInterface(
+					XComponentSupplier xCompProv = UnoRuntime.queryInterface(
 																					XComponentSupplier.class,
 																					m_xEmbedObj );
 					if ( xCompProv != null )
 					{
 						XCloseable xCloseable = xCompProv.getComponent();
-						XTransferable xTransfer = (XTransferable)UnoRuntime.queryInterface(
+						XTransferable xTransfer = UnoRuntime.queryInterface(
 																					XTransferable.class,
 																					xCloseable );
 						if ( xTransfer != null )
@@ -1282,7 +1282,7 @@ public class EmbedContApp extends Applet
 			// create embedded object based on the class ID
 			try {
 				Object oEmbedCreator = m_xServiceFactory.createInstance( "com.sun.star.embed.EmbeddedObjectCreator" );
-				XEmbedObjectCreator xEmbedCreator = (XEmbedObjectCreator)UnoRuntime.queryInterface(
+				XEmbedObjectCreator xEmbedCreator = UnoRuntime.queryInterface(
 																						XEmbedObjectCreator.class,
 																						oEmbedCreator );
 				if ( xEmbedCreator != null )
@@ -1292,7 +1292,7 @@ public class EmbedContApp extends Applet
 																		m_xStorage,
 																		"EmbedSub",
 																		new PropertyValue[0] );
-					xEmbObj = (XEmbeddedObject)UnoRuntime.queryInterface( XEmbeddedObject.class, oEmbObj );
+					xEmbObj = UnoRuntime.queryInterface( XEmbeddedObject.class, oEmbObj );
 				}
 				else
 					JOptionPane.showMessageDialog( m_aFrame,
@@ -1317,7 +1317,7 @@ public class EmbedContApp extends Applet
 
 		try {
 			Object oLinkCreator = m_xServiceFactory.createInstance( "com.sun.star.embed.EmbeddedObjectCreator" );
-			XLinkCreator xLinkCreator = (XLinkCreator)UnoRuntime.queryInterface(
+			XLinkCreator xLinkCreator = UnoRuntime.queryInterface(
 																					XLinkCreator.class,
 																					oLinkCreator );
 			if ( xLinkCreator != null )
@@ -1328,7 +1328,7 @@ public class EmbedContApp extends Applet
 				aMedDescr[1].Name = "ReadOnly";
 				aMedDescr[1].Value = (Object) new Boolean( false );
 				Object oEmbObj = xLinkCreator.createInstanceLink( m_xStorage, "EmbedSub", aMedDescr, new PropertyValue[0] );
-				xEmbObj = (XEmbeddedObject)UnoRuntime.queryInterface( XEmbeddedObject.class, oEmbObj );
+				xEmbObj = UnoRuntime.queryInterface( XEmbeddedObject.class, oEmbObj );
 			}
 			else
 				JOptionPane.showMessageDialog( m_aFrame,
@@ -1351,7 +1351,7 @@ public class EmbedContApp extends Applet
 		XEmbeddedObject xEmbObj = null;
 		try {
 			Object oEmbedCreator = m_xServiceFactory.createInstance( "com.sun.star.embed.EmbeddedObjectCreator" );
-			XEmbedObjectCreator xEmbedCreator = (XEmbedObjectCreator)UnoRuntime.queryInterface(
+			XEmbedObjectCreator xEmbedCreator = UnoRuntime.queryInterface(
 																					XEmbedObjectCreator.class,
 																					oEmbedCreator );
 			if ( xEmbedCreator != null )
@@ -1365,7 +1365,7 @@ public class EmbedContApp extends Applet
 																					"EmbedSub",
 																					aMedDescr,
 																					new PropertyValue[0] );
-				xEmbObj = (XEmbeddedObject)UnoRuntime.queryInterface( XEmbeddedObject.class, oEmbObj );
+				xEmbObj = UnoRuntime.queryInterface( XEmbeddedObject.class, oEmbObj );
 			}
 			else
 				JOptionPane.showMessageDialog( m_aFrame,
@@ -1401,7 +1401,7 @@ public class EmbedContApp extends Applet
 		if ( m_xEmbedObj != null )
 		{
 			try {
-				XCloseable xClose = (XCloseable)UnoRuntime.queryInterface( XCloseable.class, m_xEmbedObj );
+				XCloseable xClose = UnoRuntime.queryInterface( XCloseable.class, m_xEmbedObj );
 				if ( xClose != null )
 					xClose.close( true );
 			}
@@ -1413,7 +1413,7 @@ public class EmbedContApp extends Applet
 		if ( m_xStorage != null )
 		{
 			try {
-				XComponent xComponent = (XComponent)UnoRuntime.queryInterface( XComponent.class, m_xStorage );
+				XComponent xComponent = UnoRuntime.queryInterface( XComponent.class, m_xStorage );
 				if ( xComponent != null )
 					xComponent.dispose();
 			}
@@ -1429,13 +1429,13 @@ public class EmbedContApp extends Applet
 
 		try {
 			Object oStorageFactory = m_xServiceFactory.createInstance( "com.sun.star.embed.StorageFactory" );
-			XSingleServiceFactory xStorageFactory = (XSingleServiceFactory)UnoRuntime.queryInterface(
+			XSingleServiceFactory xStorageFactory = UnoRuntime.queryInterface(
 																						XSingleServiceFactory.class,
 																						oStorageFactory );
 			if ( xStorageFactory != null )
 			{
 				Object oStorage = xStorageFactory.createInstance();
-				xTempStorage = (XStorage)UnoRuntime.queryInterface( XStorage.class, oStorage );
+				xTempStorage = UnoRuntime.queryInterface( XStorage.class, oStorage );
 			}
 			else
 				JOptionPane.showMessageDialog( m_aFrame,
@@ -1455,12 +1455,12 @@ public class EmbedContApp extends Applet
 	{
 		try {
 			Object oStorageFactory = m_xServiceFactory.createInstance( "com.sun.star.embed.StorageFactory" );
-			XSingleServiceFactory xStorageFactory = (XSingleServiceFactory)UnoRuntime.queryInterface(
+			XSingleServiceFactory xStorageFactory = UnoRuntime.queryInterface(
 																						XSingleServiceFactory.class,
 																						oStorageFactory );
 			if ( xStorageFactory != null )
 			{
-				XEmbedPersist xPersist = (XEmbedPersist)UnoRuntime.queryInterface( XEmbedPersist.class, m_xEmbedObj );
+				XEmbedPersist xPersist = UnoRuntime.queryInterface( XEmbedPersist.class, m_xEmbedObj );
 				if ( xPersist != null )
 				{
 					Object aArgs[] = new Object[2];
@@ -1468,7 +1468,7 @@ public class EmbedContApp extends Applet
 					aArgs[1] = new Integer( ElementModes.ELEMENT_READWRITE );
 
 					Object oStorage = xStorageFactory.createInstanceWithArguments( aArgs );
-					XStorage xTargetStorage = (XStorage)UnoRuntime.queryInterface( XStorage.class, oStorage );
+					XStorage xTargetStorage = UnoRuntime.queryInterface( XStorage.class, oStorage );
 
 					PropertyValue aProps[] = { new PropertyValue() };
 					aProps[0].Name = "StoreVisualReplacement";
@@ -1478,13 +1478,13 @@ public class EmbedContApp extends Applet
 					xPersist.saveCompleted( true );
 
 					// the object must be already based on new storage
-					XComponent xComponent = (XComponent)UnoRuntime.queryInterface( XComponent.class, m_xStorage );
+					XComponent xComponent = UnoRuntime.queryInterface( XComponent.class, m_xStorage );
 					xComponent.dispose();
 
 					m_xStorage = xTargetStorage;
 					m_bOwnFile = true;
 
-					XTransactedObject xTransact = (XTransactedObject)UnoRuntime.queryInterface( XTransactedObject.class,
+					XTransactedObject xTransact = UnoRuntime.queryInterface( XTransactedObject.class,
 																							m_xStorage );
 					if ( xTransact != null )
 						xTransact.commit();
@@ -1510,7 +1510,7 @@ public class EmbedContApp extends Applet
 		try
 		{
 			Object oStorageFactory = m_xServiceFactory.createInstance( "com.sun.star.embed.StorageFactory" );
-			XSingleServiceFactory xStorageFactory = (XSingleServiceFactory)UnoRuntime.queryInterface(
+			XSingleServiceFactory xStorageFactory = UnoRuntime.queryInterface(
 																						XSingleServiceFactory.class,
 																						oStorageFactory );
 			Object aArgs[] = new Object[2];
@@ -1518,14 +1518,14 @@ public class EmbedContApp extends Applet
 			aArgs[1] = new Integer( ElementModes.ELEMENT_READWRITE );
 
 			Object oStorage = xStorageFactory.createInstanceWithArguments( aArgs );
-			XStorage xTargetStorage = (XStorage)UnoRuntime.queryInterface( XStorage.class, oStorage );
+			XStorage xTargetStorage = UnoRuntime.queryInterface( XStorage.class, oStorage );
 
 			Object oEmbedCreator = m_xServiceFactory.createInstance( "com.sun.star.embed.EmbeddedObjectCreator" );
-			XEmbedObjectCreator xEmbedCreator = (XEmbedObjectCreator)UnoRuntime.queryInterface(
+			XEmbedObjectCreator xEmbedCreator = UnoRuntime.queryInterface(
 																					XEmbedObjectCreator.class,
 																					oEmbedCreator );
 
-			XNameAccess xNameAccess = (XNameAccess)UnoRuntime.queryInterface( XNameAccess.class,
+			XNameAccess xNameAccess = UnoRuntime.queryInterface( XNameAccess.class,
 																			xTargetStorage );
 			if ( xNameAccess == null )
 			{
@@ -1560,7 +1560,7 @@ public class EmbedContApp extends Applet
 																	false,
 																	new PropertyValue[0] );
 
-			m_xEmbedObj = (XEmbeddedObject)UnoRuntime.queryInterface( XEmbeddedObject.class, oEmbObj );
+			m_xEmbedObj = UnoRuntime.queryInterface( XEmbeddedObject.class, oEmbObj );
 
 			if ( m_xEmbedObj != null )
 			{
@@ -1589,7 +1589,7 @@ public class EmbedContApp extends Applet
 				if ( xLinkStream != null )
 				{
 					XOutputStream xLinkOutStream = xLinkStream.getOutputStream();
-					XTruncate xTruncate = (XTruncate) UnoRuntime.queryInterface( XTruncate.class,
+					XTruncate xTruncate = UnoRuntime.queryInterface( XTruncate.class,
 																			 	xLinkOutStream );
 					if ( xLinkOutStream != null && xTruncate != null )
 					{
@@ -1603,7 +1603,7 @@ public class EmbedContApp extends Applet
 						xLinkOutStream.writeBytes( aLinkBytes );
 						xLinkOutStream.closeOutput();
 
-						XComponent xComponent = (XComponent) UnoRuntime.queryInterface( XComponent.class,
+						XComponent xComponent = UnoRuntime.queryInterface( XComponent.class,
 																						xLinkStream );
 						if ( xComponent != null )
 							xComponent.dispose();
@@ -1636,7 +1636,7 @@ public class EmbedContApp extends Applet
 	{
 		try {
 			Object oStorageFactory = m_xServiceFactory.createInstance( "com.sun.star.embed.StorageFactory" );
-			XSingleServiceFactory xStorageFactory = (XSingleServiceFactory)UnoRuntime.queryInterface(
+			XSingleServiceFactory xStorageFactory = UnoRuntime.queryInterface(
 																						XSingleServiceFactory.class,
 																						oStorageFactory );
 			if ( xStorageFactory != null )
@@ -1646,9 +1646,9 @@ public class EmbedContApp extends Applet
 				aArgs[1] = new Integer( ElementModes.ELEMENT_READWRITE );
 
 				Object oStorage = xStorageFactory.createInstanceWithArguments( aArgs );
-				XStorage xTargetStorage = (XStorage)UnoRuntime.queryInterface( XStorage.class, oStorage );
+				XStorage xTargetStorage = UnoRuntime.queryInterface( XStorage.class, oStorage );
 
-				XComponent xComponent = (XComponent)UnoRuntime.queryInterface( XComponent.class, m_xStorage );
+				XComponent xComponent = UnoRuntime.queryInterface( XComponent.class, m_xStorage );
 				xComponent.dispose();
 
 				m_xStorage = xTargetStorage;
@@ -1656,7 +1656,7 @@ public class EmbedContApp extends Applet
 
 				storeLinkToStorage();
 
-				XTransactedObject xTransact = (XTransactedObject)UnoRuntime.queryInterface( XTransactedObject.class,
+				XTransactedObject xTransact = UnoRuntime.queryInterface( XTransactedObject.class,
 																							m_xStorage );
 				if ( xTransact != null )
 					xTransact.commit();

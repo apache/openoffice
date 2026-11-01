@@ -50,8 +50,7 @@
 #include <string.h>
 #include <math.h>
 
-#include <boost/math/special_functions/expm1.hpp>
-#include <boost/math/special_functions/log1p.hpp>
+#include <cmath>
 
 using namespace formula;
 // STATIC DATA -----------------------------------------------------------
@@ -219,6 +218,8 @@ void ScInterpreter::ScGetDayOfWeek()
         }
         else if (nFlag == 2)
             nVal += 1;
+        else if (nFlag >= 11 && nFlag <= 17)    // ODF 1.3: week starts on Monday (11) to Sunday (17), numbered 1-7
+            nVal = ((nVal + (18 - nFlag)) % 7) + 1;
         PushInt( nVal );
     }
 }
@@ -1136,11 +1137,11 @@ double ScInterpreter::ScGetRmz(double fRate, double fNper, double fPv,
     else
     {
         if (fPaytype > 0.0) // payment in advance
-            fPayment = (fFv + fPv * exp( fNper * ::boost::math::log1p(fRate) ) ) * fRate /
-                (::boost::math::expm1( (fNper + 1) * ::boost::math::log1p(fRate) ) - fRate);
+            fPayment = (fFv + fPv * exp( fNper * std::log1p(fRate) ) ) * fRate /
+                (std::expm1( (fNper + 1) * std::log1p(fRate) ) - fRate);
         else  // payment in arrear
-            fPayment = (fFv + fPv * exp(fNper * ::boost::math::log1p(fRate) ) ) * fRate /
-                ::boost::math::expm1( fNper * ::boost::math::log1p(fRate) );
+            fPayment = (fFv + fPv * exp(fNper * std::log1p(fRate) ) ) * fRate /
+                std::expm1( fNper * std::log1p(fRate) );
     }
     return -fPayment;
 }

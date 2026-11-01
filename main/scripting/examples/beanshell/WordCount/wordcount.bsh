@@ -55,7 +55,7 @@ int wordcount() {
 	count = xIndexAccess.getCount();
 	for(i=0;i<count;i++) {
 		// get the XTextRange of the selection
-		xTextRange = (XTextRange)
+		xTextRange =
 			UnoRuntime.queryInterface(XTextRange.class, xIndexAccess.getByIndex(i));
 		//System.out.println("string: "+xTextRange.getString());
 		// use the standard J2SE delimiters to tokenize the string
@@ -70,14 +70,14 @@ int wordcount() {
 
 // The XSCRIPTCONTEXT variable is of type XScriptContext and is available to
 // all BeanShell scripts executed by the Script Framework
-xModel = (XModel)
+xModel =
 	UnoRuntime.queryInterface(XModel.class, XSCRIPTCONTEXT.getDocument());
 //the writer controller impl supports the css.view.XSelectionSupplier interface
-xSelectionSupplier = (XSelectionSupplier)
+xSelectionSupplier =
 	UnoRuntime.queryInterface(XSelectionSupplier.class, xModel.getCurrentController());
 //see section 7.5.1 of developers' guide
 // the getSelection provides an XIndexAccess to the one or more selections
-xIndexAccess = (XIndexAccess)
+xIndexAccess =
 	UnoRuntime.queryInterface(XIndexAccess.class, xSelectionSupplier.getSelection());
 
 count = wordcount();

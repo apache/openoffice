@@ -232,7 +232,7 @@ public class FileAccess
             XPropertySet xPropertySet = UnoRuntime.queryInterface(XPropertySet.class, xPathInterface);
             // String WritePath = PropertyNames.EMPTY_STRING;
             // XInterface xUcbInterface = (XInterface) xMSF.createInstance("com.sun.star.ucb.SimpleFileAccess");
-            // XSimpleFileAccess xSimpleFileAccess = (XSimpleFileAccess) com.sun.star.uno.UnoRuntime.queryInterface(XSimpleFileAccess.class, xUcbInterface);
+            // XSimpleFileAccess xSimpleFileAccess = com.sun.star.uno.UnoRuntime.queryInterface(XSimpleFileAccess.class, xUcbInterface);
 
             Template_writable = (String) xPropertySet.getPropertyValue(_sPath + "_writable");
             Template_internal = (String[]) xPropertySet.getPropertyValue(_sPath + "_internal");
@@ -315,7 +315,7 @@ public class FileAccess
             String sVariant = aLocale.Variant;
 
             // de-DE-Bayrisch
-            StringBuffer aLocaleAll = new StringBuffer();
+            StringBuilder aLocaleAll = new StringBuilder();
             aLocaleAll.append(sLanguage).append('-').append(sCountry).append('-').append(sVariant);
             String sPath = _sPath + "/" + aLocaleAll.toString();
 
@@ -327,7 +327,7 @@ public class FileAccess
             }
 
             // de-DE
-            StringBuffer aLocaleLang_Country = new StringBuffer();
+            StringBuilder aLocaleLang_Country = new StringBuilder();
             aLocaleLang_Country.append(sLanguage).append('-').append(sCountry);
             sPath = _sPath + "/" + aLocaleLang_Country.toString();
 
@@ -337,7 +337,7 @@ public class FileAccess
             }
 
             // de
-            StringBuffer aLocaleLang = new StringBuffer();
+            StringBuilder aLocaleLang = new StringBuilder();
             aLocaleLang.append(sLanguage);
             sPath = _sPath + "/" + aLocaleLang.toString();
 
@@ -378,7 +378,7 @@ public class FileAccess
     boolean bexists = false;
     try {
     XInterface xUcbInterface = (XInterface) xMSF.createInstance("com.sun.star.ucb.SimpleFileAccess");
-    XSimpleFileAccess xSimpleFileAccess = (XSimpleFileAccess) com.sun.star.uno.UnoRuntime.queryInterface(XSimpleFileAccess.class, xUcbInterface);
+    XSimpleFileAccess xSimpleFileAccess = com.sun.star.uno.UnoRuntime.queryInterface(XSimpleFileAccess.class, xUcbInterface);
     ResultPath = getOfficePath(xMSF, sPath, xSimpleFileAccess);
     PathList = JavaTools.ArrayoutofString(ResultPath, PropertyNames.SEMI_COLON);
     if (!sType.equals(PropertyNames.EMPTY_STRING)) {

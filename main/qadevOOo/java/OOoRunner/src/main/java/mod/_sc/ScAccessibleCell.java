@@ -107,7 +107,7 @@ public class ScAccessibleCell extends TestCase {
 
         XInterface oObj = null;
 
-        XModel aModel = (XModel)
+        XModel aModel =
             UnoRuntime.queryInterface(XModel.class, xSpreadsheetDoc);
 
         XWindow xWindow = AccessibilityTools.getCurrentWindow( (XMultiServiceFactory) Param.getMSF(), aModel);
@@ -125,23 +125,23 @@ public class ScAccessibleCell extends TestCase {
         final String text = "XAccessibleText";
         try {
             XSpreadsheets oSheets = xSpreadsheetDoc.getSheets() ;
-            XIndexAccess oIndexSheets = (XIndexAccess)
+            XIndexAccess oIndexSheets =
                 UnoRuntime.queryInterface(XIndexAccess.class, oSheets);
             XSpreadsheet oSheet = null;
             try {
-                oSheet = (XSpreadsheet) AnyConverter.toObject(
-                        new Type(XSpreadsheet.class),oIndexSheets.getByIndex(0));
+                oSheet = AnyConverter.toObject(
+                        XSpreadsheet.class,oIndexSheets.getByIndex(0));
             } catch (com.sun.star.lang.IllegalArgumentException iae) {
                 throw new StatusException("couldn't get sheet",iae);
             }
             xCell = oSheet.getCellByPosition(1, 0) ;
             xCell.setFormula(text);
-            XColumnRowRange oColumnRowRange = (XColumnRowRange)
+            XColumnRowRange oColumnRowRange =
                 UnoRuntime.queryInterface(XColumnRowRange.class, oSheet);
             XTableColumns oColumns = (XTableColumns) oColumnRowRange.getColumns();
-            XIndexAccess oIndexAccess = (XIndexAccess)
+            XIndexAccess oIndexAccess =
                 UnoRuntime.queryInterface(XIndexAccess.class, oColumns);
-            XPropertySet column = (XPropertySet) UnoRuntime.queryInterface(
+            XPropertySet column = UnoRuntime.queryInterface(
                                 XPropertySet.class,oIndexAccess.getByIndex(1));
             column.setPropertyValue("OptimalWidth", new Boolean(true));
         } catch(com.sun.star.lang.WrappedTargetException e) {
@@ -188,7 +188,7 @@ public class ScAccessibleCell extends TestCase {
     */
     protected void cleanup( TestParameters Param, PrintWriter log) {
         log.println( "    disposing xSheetDoc " );
-        XComponent oComp = (XComponent)
+        XComponent oComp =
             UnoRuntime.queryInterface (XComponent.class, xSpreadsheetDoc) ;
         util.DesktopTools.closeDoc(oComp);
     }

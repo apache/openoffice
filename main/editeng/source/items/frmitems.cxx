@@ -53,6 +53,7 @@
 #include <limits.h>
 #include <comphelper/processfactory.hxx>
 #include <svtools/grfmgr.hxx>
+#include <svtools/linkpolicy.hxx>
 #include <tools/urlobj.hxx>
 #include <comphelper/types.hxx>
 #include <svl/memberid.hrc>
@@ -4091,6 +4092,15 @@ const GraphicObject* SvxBrushItem::GetGraphicObject() const
 					STATIC_LINK( this, SvxBrushItem, DoneHdl_Impl ) );
 				pImpl->aDoneLink = aTmp;
 			} */
+
+			// The link is document content, so the shared policy decides (see
+			// svtools/linkpolicy.hxx). A refusal is final for this item: no stream is
+			// opened, and no retry.
+			if( !::svt::linkpolicy::mayLoadDocumentReference( *pStrLink ) )
+			{
+				const_cast < SvxBrushItem*> (this)->bLoadAgain = sal_False;
+				return pImpl->pGraphicObject;
+			}
 
 			pImpl->pStream = utl::UcbStreamHelper::CreateStream( *pStrLink, STREAM_STD_READ );
 			if( pImpl->pStream && !pImpl->pStream->GetError() )

@@ -71,7 +71,7 @@ public class _XObjectOutputStream extends MultiMethodTest {
         if (objWrite == null) throw
             new StatusException(Status.failed("Relation 'PersistObject' failed"));
 
-        XPropertySet propObjWrite = (XPropertySet)
+        XPropertySet propObjWrite =
             UnoRuntime.queryInterface(XPropertySet.class, objWrite);
 
         // This XPersistObject has a property called 'String'
@@ -80,7 +80,7 @@ public class _XObjectOutputStream extends MultiMethodTest {
         log.println("Writing object with label 'XObjectOutputStream'");
         oObj.writeObject(objWrite);
         XPersistObject readObj = oInStream.readObject();
-        XPropertySet propSet = (XPropertySet)
+        XPropertySet propSet =
             UnoRuntime.queryInterface(XPropertySet.class, readObj);
         String label = (String)propSet.getPropertyValue("String");
         log.println("Object with label '" + label + "' was read");

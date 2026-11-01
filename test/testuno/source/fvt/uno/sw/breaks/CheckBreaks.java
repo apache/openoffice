@@ -84,7 +84,7 @@ public class CheckBreaks {
 	public void testInsertDeleteLineBreak() throws Exception
 	{
 		XComponent xComponent = unoApp.newDocument("swriter");
-		textDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, xComponent);
+		textDocument = UnoRuntime.queryInterface(XTextDocument.class, xComponent);
 		this.insertNewLine(textDocument, "Line1", true);
 		this.insertNewLine(textDocument, "Line2", false);
 		this.insertNewLine(textDocument, "Line3", false);
@@ -100,7 +100,7 @@ public class CheckBreaks {
 		SWUtil.saveAsODT(textDocument, FileUtil.getUrl(tempFilePathODT));
 		unoApp.closeDocument(xComponent);
 		xComponent = unoApp.loadDocument(tempFilePathODT);
-		textDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class,xComponent);
+		textDocument = UnoRuntime.queryInterface(XTextDocument.class,xComponent);
 		lineCount = this.getLineCount(textDocument);
 		Assert.assertEquals("Line breaks when open saved odt file.",3,lineCount);
 		this.insertNewLine(textDocument, "Line added when open saved odt file", false);
@@ -114,7 +114,7 @@ public class CheckBreaks {
 		SWUtil.saveAs(textDocument, "MS Word 97", FileUtil.getUrl(tempFilePathDOC));
 		unoApp.closeDocument(xComponent);
 		xComponent = unoApp.loadDocument(tempFilePathDOC);
-		textDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class,xComponent);
+		textDocument = UnoRuntime.queryInterface(XTextDocument.class,xComponent);
 		lineCount = this.getLineCount(textDocument);
 		Assert.assertEquals("Line breaks when open saved doc file.",3,lineCount);
 		this.insertNewLine(textDocument, "Line added when open saved doc file", false);
@@ -132,7 +132,7 @@ public class CheckBreaks {
 	{
 		//new document, test page break
 		XComponent xComponent = unoApp.newDocument("swriter");
-		textDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, xComponent);
+		textDocument = UnoRuntime.queryInterface(XTextDocument.class, xComponent);
 		this.insertNewPage(textDocument, "Page1", true);
 		this.insertNewPage(textDocument, "Page2", false);
 		this.insertNewPage(textDocument, "Page3", false);
@@ -147,7 +147,7 @@ public class CheckBreaks {
 		SWUtil.saveAsODT(textDocument, FileUtil.getUrl(tempFilePathODT));
 		unoApp.closeDocument(xComponent);
 		xComponent = unoApp.loadDocument(tempFilePathODT);
-		textDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class,xComponent);
+		textDocument = UnoRuntime.queryInterface(XTextDocument.class,xComponent);
 		pageCount = SWUtil.getPageCount(textDocument);
 		Assert.assertEquals("Page breaks after open saved odt file", 2,pageCount);
 		this.insertNewPage(textDocument, "Page4", false);
@@ -162,7 +162,7 @@ public class CheckBreaks {
 		SWUtil.saveAs(textDocument, "MS Word 97", FileUtil.getUrl(tempFilePathDOC));
 		unoApp.closeDocument(xComponent);
 		xComponent = unoApp.loadDocument(tempFilePathDOC);
-		textDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class,xComponent);
+		textDocument = UnoRuntime.queryInterface(XTextDocument.class,xComponent);
 		pageCount = SWUtil.getPageCount(textDocument);
 		Assert.assertEquals("Page breaks after open saved doc file", 2,pageCount);
 
@@ -195,7 +195,7 @@ public class CheckBreaks {
 		System.out.println("The content before insert " + pageContent + ":" + xText.getString());
 		if(!isFirstPage)
 		{
-			XPropertySet xCursorProps = (XPropertySet)UnoRuntime.queryInterface(
+			XPropertySet xCursorProps = UnoRuntime.queryInterface(
 			        XPropertySet.class, textCursor);
 			xCursorProps.setPropertyValue("BreakType", BreakType.PAGE_AFTER);
 			document.getText().insertControlCharacter(textCursor,ControlCharacter.PARAGRAPH_BREAK,false);
@@ -210,13 +210,13 @@ public class CheckBreaks {
 	 */
 	private void deleteFirstPage(XTextDocument document) throws Exception
 	{
-		XModel xModel = (XModel) UnoRuntime.queryInterface(XModel.class, document);
+		XModel xModel = UnoRuntime.queryInterface(XModel.class, document);
         XController xController = xModel.getCurrentController();
         XTextViewCursorSupplier xTextViewCursorSupplier =
-                (XTextViewCursorSupplier) UnoRuntime.queryInterface(XTextViewCursorSupplier.class, xController);
+                UnoRuntime.queryInterface(XTextViewCursorSupplier.class, xController);
         XTextViewCursor textViewCursor = xTextViewCursorSupplier.getViewCursor();
 
-        XPageCursor pageCursor = (XPageCursor) UnoRuntime.queryInterface(XPageCursor.class, textViewCursor);
+        XPageCursor pageCursor = UnoRuntime.queryInterface(XPageCursor.class, textViewCursor);
 
         // Move the cursor to the start of the document
         textViewCursor.gotoStart(false);

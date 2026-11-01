@@ -90,7 +90,7 @@ public class TabController extends TestCase {
         WriterTools.getDrawPage(xTextDoc).add((XShape) aShape);
 
         XControlModel model = aShape.getControl();
-        XControlAccess access = (XControlAccess) UnoRuntime.queryInterface(
+        XControlAccess access = UnoRuntime.queryInterface(
                                         XControlAccess.class,
                                         xTextDoc.getCurrentController());
 
@@ -102,7 +102,7 @@ public class TabController extends TestCase {
         XForm form = null;
 
         try {
-            form = (XForm) AnyConverter.toObject(new Type(XForm.class),
+            form = AnyConverter.toObject(XForm.class,
                                                  (FormTools.getForms(
                                                          WriterTools.getDrawPage(
                                                                  xTextDoc)))
@@ -112,10 +112,10 @@ public class TabController extends TestCase {
             e.printStackTrace(log);
         }
 
-        tabCtrlModel = (XTabControllerModel) UnoRuntime.queryInterface(
+        tabCtrlModel = UnoRuntime.queryInterface(
                                XTabControllerModel.class, form);
 
-        aCtrlContainer = (XControlContainer) UnoRuntime.queryInterface(
+        aCtrlContainer = UnoRuntime.queryInterface(
                                  XControlContainer.class, xCtrl1.getContext());
 
         // create object

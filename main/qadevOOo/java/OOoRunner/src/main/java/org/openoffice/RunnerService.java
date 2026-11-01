@@ -43,7 +43,7 @@ import com.sun.star.uno.Type;
 import com.sun.star.registry.XRegistryKey;
 import com.sun.star.beans.NamedValue;
 
-import java.util.Vector;
+import java.util.ArrayList;
 
 /**
  * The main class, will call ClParser and CfgParser to <br>
@@ -216,7 +216,7 @@ public class RunnerService implements XJob, XServiceInfo,
            return pVal;
         }
 
-        Vector v = new Vector(600);
+        ArrayList<String> v = new ArrayList<>(600);
         try {
             // open connection to  Jar
             java.net.JarURLConnection con =

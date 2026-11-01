@@ -178,6 +178,29 @@ oslInterlockedCount SAL_CALL osl_decrementInterlockedCount(oslInterlockedCount* 
 #endif
 }
 
+#elif (defined(__GNUC__) || defined(__clang__)) && defined ( AARCH64 )
+/* AArch64 (ARM 64-bit, e.g. Apple Silicon). Use the compiler's atomic
+   built-ins, which clang/gcc lower to the AArch64 load-exclusive/store-exclusive
+   (ldaxr/stlxr) sequence, or to LSE atomics (ldadd) on ARMv8.1+. This avoids the
+   global-mutex fallback below. __sync_*_and_fetch are full-barrier and return
+   the new value, matching the required semantics. */
+
+/*****************************************************************************/
+/* osl_incrementInterlockedCount */
+/*****************************************************************************/
+oslInterlockedCount SAL_CALL osl_incrementInterlockedCount(oslInterlockedCount* pCount)
+{
+    return __sync_add_and_fetch( pCount, 1 );
+}
+
+/*****************************************************************************/
+/* osl_decrementInterlockedCount */
+/*****************************************************************************/
+oslInterlockedCount SAL_CALL osl_decrementInterlockedCount(oslInterlockedCount* pCount)
+{
+    return __sync_sub_and_fetch( pCount, 1 );
+}
+
 #else
 /* use only if nothing else works, expensive due to single mutex for all reference counts */
 

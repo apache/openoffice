@@ -598,14 +598,28 @@ sub get_download_architecture
 	if(( $installer::globals::compiler =~ /^unxlngi/ )
 	|| ( $installer::globals::compiler =~ /^unxmac.i/ )
 	|| ( $installer::globals::issolarisx86build )
-	|| ( $installer::globals::iswindowsbuild ))
+	|| ( $installer::globals::compiler =~ /^wnt(msc|gcc)i/ ))
 	{
 		$arch = "x86";
 	}
+	elsif ( $installer::globals::compiler =~ /^wnt(msc|gcc)x/ )
+	{
+		# iswindowsbuild is true for BOTH Windows architectures, so testing it
+		# here named every Windows download x86 -- an x64 build produced
+		# Apache_OpenOffice_5.1.0_Win_x86_install_en-US.exe, a filename
+		# identical to the x86 one and differing only in its contents.
+		$arch = "x64";
+	}
 	elsif(( $installer::globals::compiler =~ /^unxlngx/ )
-	||    ( $installer::globals::compiler =~ /^unxmaccx/ ))
+	||    ( $installer::globals::compiler =~ /^unxmaccx/ )
+	||    ( $installer::globals::compiler =~ /^unxfbsdx/ ))
 	{
 		$arch = "x86-64";
+	}
+	elsif(( $installer::globals::compiler =~ /^unxmaccr/ )
+	||    ( $installer::globals::compiler =~ /^unxfbsda/ ))
+	{
+		$arch = "aarch64";
 	}
 	elsif ( $installer::globals::issolarissparcbuild )
 	{

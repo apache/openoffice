@@ -26,7 +26,6 @@ package org.openoffice.netbeans.modules.office.actions;
 import java.io.File;
 import java.io.IOException;
 import java.beans.PropertyVetoException;
-import java.util.Enumeration;
 import java.util.Calendar;
 
 import org.openide.TopManager;

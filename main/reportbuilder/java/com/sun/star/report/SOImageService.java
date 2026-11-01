@@ -65,7 +65,7 @@ public class SOImageService implements ImageService
 
 
         final XMultiComponentFactory m_xMCF = xCompContext.getServiceManager();
-        m_xGraphicProvider = (XGraphicProvider) UnoRuntime.queryInterface(XGraphicProvider.class,
+        m_xGraphicProvider = UnoRuntime.queryInterface(XGraphicProvider.class,
                 m_xMCF.createInstanceWithContext("com.sun.star.graphic.GraphicProvider", xCompContext));
 
         if (m_xGraphicProvider == null)
@@ -92,7 +92,7 @@ public class SOImageService implements ImageService
             value[0].Name = "InputStream";
             value[0].Value = image;
 
-            final XPropertySet xImage = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class,
+            final XPropertySet xImage = UnoRuntime.queryInterface(XPropertySet.class,
                     m_xGraphicProvider.queryGraphic(value));
 
             if (xImage != null)
@@ -142,7 +142,7 @@ public class SOImageService implements ImageService
             value[0].Name = "InputStream";
             value[0].Value = image;
 
-            final XPropertySet xImage = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class,
+            final XPropertySet xImage = UnoRuntime.queryInterface(XPropertySet.class,
                     m_xGraphicProvider.queryGraphic(value));
 
             if (xImage != null)

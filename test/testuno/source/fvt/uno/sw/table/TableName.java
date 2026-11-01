@@ -64,19 +64,19 @@ public class TableName {
 	 */
 	@Test@Ignore("Bug #120739 - [testUNO patch]the table name change to default name when save to doc.")
 	public void testtableName() throws Exception {
-		xTextDocument =(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
+		xTextDocument =UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
 		xText=xTextDocument.getText();
 		XTextCursor xTextCursor = xText.createTextCursor();
 		// get internal service factory of the document
-		xWriterFactory =(XMultiServiceFactory)UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
+		xWriterFactory =UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
 		// Create a new table from the document's factory
-		XTextTable xTable = (XTextTable)UnoRuntime.queryInterface(XTextTable.class, xWriterFactory.createInstance("com.sun.star.text.TextTable"));
+		XTextTable xTable = UnoRuntime.queryInterface(XTextTable.class, xWriterFactory.createInstance("com.sun.star.text.TextTable"));
 		xText.insertTextContent(xTextCursor,xTable,false);
-		XNamed tableName=(XNamed)UnoRuntime.queryInterface(XNamed.class, xTable);
+		XNamed tableName=UnoRuntime.queryInterface(XNamed.class, xTable);
 		assertEquals("assert default table name","Table1",tableName.getName());
 		tableName.setName("test_TableExample");
 		//save to odt
-		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_odt = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
 		aStoreProperties_odt[1] = new PropertyValue();
@@ -86,7 +86,7 @@ public class TableName {
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
 		//save to doc
-		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_doc = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
 		aStoreProperties_doc[1] = new PropertyValue();
@@ -98,21 +98,21 @@ public class TableName {
 		app.closeDocument(xTextDocument);
 
 		//reopen the odt document and assert table border spacing to content
-		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
-		XTextTablesSupplier xTablesSupplier_odt = (XTextTablesSupplier) UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_odt );
-		XIndexAccess xIndexedTables_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_odt.getTextTables());
+		XTextDocument assertDocument_odt=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
+		XTextTablesSupplier xTablesSupplier_odt = UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_odt );
+		XIndexAccess xIndexedTables_odt = UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_odt.getTextTables());
 		Object xTable_obj_odt=xIndexedTables_odt.getByIndex(0);
-		XTextTable xTable_Assert_odt=(XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj_odt);
-		XNamed tableName_odt=(XNamed)UnoRuntime.queryInterface(XNamed.class, xTable_Assert_odt);
+		XTextTable xTable_Assert_odt=UnoRuntime.queryInterface(XTextTable.class, xTable_obj_odt);
+		XNamed tableName_odt=UnoRuntime.queryInterface(XNamed.class, xTable_Assert_odt);
 		assertEquals("assert default table name","test_TableExample",tableName_odt.getName());
 
 		//reopen the doc document and assert table border spacing to content
-		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
-		XTextTablesSupplier xTablesSupplier_doc = (XTextTablesSupplier) UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_doc );
-		XIndexAccess xIndexedTables_doc = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_doc.getTextTables());
+		XTextDocument assertDocument_doc=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
+		XTextTablesSupplier xTablesSupplier_doc = UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_doc );
+		XIndexAccess xIndexedTables_doc = UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_doc.getTextTables());
 		Object xTable_obj_doc=xIndexedTables_doc.getByIndex(0);
-		XTextTable xTable_Assert_doc=(XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj_doc);
-		XNamed tableName_doc=(XNamed)UnoRuntime.queryInterface(XNamed.class, xTable_Assert_doc);
+		XTextTable xTable_Assert_doc=UnoRuntime.queryInterface(XTextTable.class, xTable_obj_doc);
+		XNamed tableName_doc=UnoRuntime.queryInterface(XNamed.class, xTable_Assert_doc);
 		assertEquals("assert default table name","test_TableExample",tableName_doc.getName());
 
 	}

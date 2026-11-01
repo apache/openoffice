@@ -68,7 +68,7 @@ public class ChangeOrderDemo
 
 			// create two rectangles
 			XDrawPage xPage = PageHelper.getDrawPageByIndex( xDrawDoc, 0 );
-			XShapes xShapes = (XShapes)
+			XShapes xShapes =
 					UnoRuntime.queryInterface( XShapes.class, xPage );
 
 			XShape xShape1 = ShapeHelper.createShape( xDrawDoc,
@@ -84,9 +84,9 @@ public class ChangeOrderDemo
 			ShapeHelper.addPortion( xShape1, "by changing the ZOrder it lie now on top", true );
 			xShapes.add( xShape2 );
 
-			XPropertySet xPropSet1 = (XPropertySet)
+			XPropertySet xPropSet1 =
 					UnoRuntime.queryInterface( XPropertySet.class, xShape1 );
-			XPropertySet xPropSet2 = (XPropertySet)
+			XPropertySet xPropSet2 =
 					UnoRuntime.queryInterface( XPropertySet.class, xShape2 );
 
 			int nOrderOfShape1 = ((Integer)xPropSet1.getPropertyValue( "ZOrder" )).intValue();

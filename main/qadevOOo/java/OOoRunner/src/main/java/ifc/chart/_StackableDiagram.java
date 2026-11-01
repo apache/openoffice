@@ -70,7 +70,7 @@ public class _StackableDiagram extends MultiPropertyTest {
         oldDiagram = doc.getDiagram();
 
         doc.setDiagram(stack);
-        oObj = (XPropertySet)
+        oObj =
             UnoRuntime.queryInterface( XPropertySet.class, doc.getDiagram() );
     }
 

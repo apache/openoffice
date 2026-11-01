@@ -279,6 +279,15 @@ sub setglobalvariables
 		$installer::globals::iswindowsbuild = 1;
 	}
 
+	# ... and which of the two Windows architectures.  The letter after the compiler
+	# name is the discriminator that $ENV{OUTPATH} already carries: wntmsci14 is 32 bit,
+	# wntmscx14 is 64 bit.  download.pm's get_download_architecture() keys off the same
+	# thing.
+	if ( $installer::globals::compiler =~ /wnt(msc|gcc)x/ )
+	{
+		$installer::globals::iswin64build = 1;
+	}
+
 	if ( $installer::globals::compiler =~ /unxso[lg][siux]/ )
 	{
 		$installer::globals::issolarisbuild = 1;
@@ -420,6 +429,15 @@ sub setglobalvariables
 		if ( $ENV{'TMP'} ) { $installer::globals::temppath = $ENV{'TMP'}; }
 		elsif ( $ENV{'TEMP'} )  { $installer::globals::temppath = $ENV{'TEMP'}; }
 		elsif ( $ENV{'TMPDIR'} )  { $installer::globals::temppath = $ENV{'TMPDIR'}; }
+		# On macOS, $TMPDIR (like /tmp) lives under /var, which is itself a
+		# symlink to /private/var. Archive::Zip's extraction safety check
+		# refuses to extract through a symlinked path component, so resolve
+		# it here rather than let that fail deep inside packaging.
+		if ( -e $installer::globals::temppath )
+		{
+			my $resolved = Cwd::realpath($installer::globals::temppath);
+			$installer::globals::temppath = $resolved if ( $resolved );
+		}
 		$installer::globals::temppath =~ s/\Q$installer::globals::separator\E\s*$//;	# removing ending slashes and backslashes
 		$installer::globals::temppath = $installer::globals::temppath . $installer::globals::separator . $installer::globals::globaltempdirname;
 		installer::systemactions::create_directory_with_privileges($installer::globals::temppath, "777");

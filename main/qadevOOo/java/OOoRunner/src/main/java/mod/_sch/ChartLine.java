@@ -108,8 +108,8 @@ public class ChartLine extends TestCase {
             log.println( "getting Line" );
             XPropertySet RowProps = oDiagram.getDataRowProperties(1);
             RowProps.setPropertyValue("MeanValue", new Boolean( true ));
-            oObj = (XPropertySet) AnyConverter.toObject(
-                new Type(XPropertySet.class),
+            oObj = AnyConverter.toObject(
+                XPropertySet.class,
                     RowProps.getPropertyValue("DataMeanValueProperties"));
         } catch (com.sun.star.lang.IndexOutOfBoundsException e) {
             // Some exception occurred. FAILED

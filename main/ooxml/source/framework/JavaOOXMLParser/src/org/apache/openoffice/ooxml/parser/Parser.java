@@ -22,7 +22,6 @@
 package org.apache.openoffice.ooxml.parser;
 
 import java.io.InputStream;
-import java.util.Vector;
 
 import javax.xml.stream.Location;
 import javax.xml.stream.XMLInputFactory;

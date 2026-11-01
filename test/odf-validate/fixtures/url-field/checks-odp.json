@@ -1,0 +1,14 @@
+[
+ {
+  "name": "shape_url_fields",
+  "expr": "(lambda en: [(i,j,t.TextField.URL,t.TextField.Representation) for i in range(doc.DrawPages.Count) for j in range(doc.DrawPages.getByIndex(i).Count) for s in [doc.DrawPages.getByIndex(i).getByIndex(j)] if hasattr(s,'createEnumeration') for p in en(s.createEnumeration()) for t in en(p.createEnumeration()) if t.TextPortionType=='TextField'])(lambda e:[e.nextElement() for _ in iter(e.hasMoreElements, False)])",
+  "expect": [
+   [
+    0,
+    1,
+    "http://download.openoffice.org/",
+    "Hyperlink, this is"
+   ]
+  ]
+ }
+]

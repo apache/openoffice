@@ -94,7 +94,7 @@ public class AccessibleDropDownComboBox extends TestCase {
 
         TestEnvironment tEnv = new TestEnvironment(oObj);
 
-        final XAccessibleAction editAction = (XAccessibleAction) UnoRuntime.queryInterface(
+        final XAccessibleAction editAction = UnoRuntime.queryInterface(
                                                      XAccessibleAction.class,
                                                      oObj);
 

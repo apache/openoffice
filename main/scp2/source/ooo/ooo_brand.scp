@@ -37,11 +37,10 @@ End
 
 File gid_File_Txt_Notice
     TXT_FILE_BODY;
-#ifndef MACOSX
+    // next to LICENSE in the program directory on every platform; on Mac OS X
+    // it used to go into the bundle's Contents, which cannot be signed with a
+    // stray file in it
     Dir = gid_Brand_Dir_Program;
-#else
-    Dir = gid_Dir_Bundle_Contents;
-#endif
     Name = "NOTICE";
     Styles = (PACKED);
 End

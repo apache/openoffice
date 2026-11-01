@@ -91,7 +91,7 @@ public class AccessibleTabBar extends TestCase {
 
         try {
             log.println("creating a calc document");
-            xDoc = (XComponent) UnoRuntime.queryInterface(XComponent.class,
+            xDoc = UnoRuntime.queryInterface(XComponent.class,
                                                           SOF.createCalcDoc(
                                                                   null));
         } catch (com.sun.star.uno.Exception e) {
@@ -144,7 +144,7 @@ public class AccessibleTabBar extends TestCase {
     }
 
     protected void closeDoc(XComponent xDoc) {
-        XCloseable closer = (XCloseable) UnoRuntime.queryInterface(
+        XCloseable closer = UnoRuntime.queryInterface(
                                     XCloseable.class, xDoc);
 
         try {

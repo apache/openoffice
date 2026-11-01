@@ -46,31 +46,31 @@ public class WriterSelector {
                 xContext.getServiceManager();
 
             // get a new instance of the desktop
-            com.sun.star.frame.XDesktop xDesktop = (com.sun.star.frame.XDesktop)
+            com.sun.star.frame.XDesktop xDesktop =
                 UnoRuntime.queryInterface(com.sun.star.frame.XDesktop.class,
                     xMCF.createInstanceWithContext("com.sun.star.frame.Desktop",
                                                    xContext ) );
 
             com.sun.star.frame.XComponentLoader xCompLoader =
-                (com.sun.star.frame.XComponentLoader)UnoRuntime.queryInterface(
+                UnoRuntime.queryInterface(
                     com.sun.star.frame.XComponentLoader.class, xDesktop);
 
             com.sun.star.lang.XComponent xComponent =
                 xCompLoader.loadComponentFromURL("private:factory/swriter",
                     "_blank", 0, new com.sun.star.beans.PropertyValue[0]);
             {
-            com.sun.star.text.XTextDocument xDoc =(com.sun.star.text.XTextDocument)
+            com.sun.star.text.XTextDocument xDoc =
                 UnoRuntime.queryInterface(com.sun.star.text.XTextDocument.class,
                                           xComponent);
             xDoc.getText().setString("Please select something in this text and press then \"return\" in the shell where you have started the example.\n");
 
             // ensure that the document content is optimal visible
             com.sun.star.frame.XModel xModel =
-                (com.sun.star.frame.XModel)UnoRuntime.queryInterface(
+                UnoRuntime.queryInterface(
                     com.sun.star.frame.XModel.class, xDoc);
 
             com.sun.star.view.XViewSettingsSupplier xViewSettings =
-                (com.sun.star.view.XViewSettingsSupplier)UnoRuntime.queryInterface(
+                UnoRuntime.queryInterface(
                     com.sun.star.view.XViewSettingsSupplier.class, xModel.getCurrentController());
             xViewSettings.getViewSettings().setPropertyValue(
                 "ZoomType", new Short((short)0));
@@ -90,25 +90,25 @@ public class WriterSelector {
             com.sun.star.frame.XController xController = xframe.getController();
 
             com.sun.star.view.XSelectionSupplier xSelSupplier =
-                (com.sun.star.view.XSelectionSupplier)UnoRuntime.queryInterface(
+                UnoRuntime.queryInterface(
                     com.sun.star.view.XSelectionSupplier.class, xController );
 
             Object oSelection = xSelSupplier.getSelection();
 
             com.sun.star.lang.XServiceInfo xServInfo =
-                (com.sun.star.lang.XServiceInfo)UnoRuntime.queryInterface(
+                UnoRuntime.queryInterface(
                     com.sun.star.lang.XServiceInfo.class, oSelection );
 
             if ( xServInfo.supportsService("com.sun.star.text.TextRanges") )
             {
                 com.sun.star.container.XIndexAccess xIndexAccess =
-                    (com.sun.star.container.XIndexAccess)UnoRuntime.queryInterface(
+                    UnoRuntime.queryInterface(
                         com.sun.star.container.XIndexAccess.class, oSelection);
 
                 int count = xIndexAccess.getCount();
                 com.sun.star.text.XTextRange xTextRange = null;
                 for ( int i = 0; i < count; i++ ) {
-                    xTextRange = (com.sun.star.text.XTextRange)
+                    xTextRange =
                         UnoRuntime.queryInterface(
                             com.sun.star.text.XTextRange.class,
                             xIndexAccess.getByIndex(i));
@@ -130,7 +130,7 @@ public class WriterSelector {
 
 
             // close test document
-            com.sun.star.util.XCloseable xCloseable = (com.sun.star.util.XCloseable)
+            com.sun.star.util.XCloseable xCloseable =
                 UnoRuntime.queryInterface(com.sun.star.util.XCloseable.class,
                                           xComponent );
 

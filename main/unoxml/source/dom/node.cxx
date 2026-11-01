@@ -356,6 +356,7 @@ namespace DOM
             // if res != cur, something was optimized and the newchild-wrapper
             // should be updated
             if (res && (cur != res)) {
+                pNewChild->m_bUnlinked = false; // else invalidate() frees cur again
                 pNewChild->invalidate(); // cur has been freed
             }
         }

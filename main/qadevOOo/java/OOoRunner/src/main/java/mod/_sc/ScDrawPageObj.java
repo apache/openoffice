@@ -72,7 +72,7 @@ public class ScDrawPageObj extends TestCase {
      */
     protected void cleanup( TestParameters tParam, PrintWriter log ) {
         log.println( "    disposing xSheetDoc " );
-        XComponent xComp = (XComponent)
+        XComponent xComp =
                             UnoRuntime.queryInterface(XComponent.class, xDoc);
         util.DesktopTools.closeDoc(xComp);
     }
@@ -102,7 +102,7 @@ public class ScDrawPageObj extends TestCase {
         XShape oShape = null ;
         XDrawPages oDP = null;
 
-        XComponent xComp = (XComponent)
+        XComponent xComp =
                             UnoRuntime.queryInterface(XComponent.class, xDoc);
 
         // creation of testobject here
@@ -110,13 +110,13 @@ public class ScDrawPageObj extends TestCase {
         log.println( "creating a test environment" );
         try {
             log.println( "getting Drawpages" );
-            XDrawPagesSupplier oDPS = (XDrawPagesSupplier)
+            XDrawPagesSupplier oDPS =
                 UnoRuntime.queryInterface(XDrawPagesSupplier.class,xDoc);
             oDP = (XDrawPages) oDPS.getDrawPages();
             oDP.insertNewByIndex(1);
             oDP.insertNewByIndex(2);
-            oObj = (XDrawPage) AnyConverter.toObject(
-                    new Type(XDrawPage.class),oDP.getByIndex(0));
+            oObj = AnyConverter.toObject(
+                    XDrawPage.class,oDP.getByIndex(0));
 
             SOfficeFactory SOF = SOfficeFactory.getFactory( (XMultiServiceFactory)tParam.getMSF());
 

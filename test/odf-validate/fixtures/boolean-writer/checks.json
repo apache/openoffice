@@ -1,0 +1,33 @@
+[
+ {
+  "name": "cells",
+  "expr": "[(c.Value, c.String, doc.NumberFormats.getByKey(c.NumberFormat).Type) for c in [doc.TextTables.getByIndex(0).getCellByPosition(i,0) for i in range(3)]]",
+  "expect": [
+   [
+    12345.0,
+    "TRUE",
+    1024
+   ],
+   [
+    1.0,
+    "TRUE",
+    1024
+   ],
+   [
+    0.0,
+    "FALSE",
+    1024
+   ]
+  ]
+ },
+ {
+  "name": "fields",
+  "expr": "[(f.Value, doc.NumberFormats.getByKey(f.NumberFormat).Type) for f in [e.nextElement() for e in [doc.TextFields.createEnumeration()] for _ in range(1)]]",
+  "expect": [
+   [
+    12345.0,
+    1024
+   ]
+  ]
+ }
+]

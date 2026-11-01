@@ -68,7 +68,10 @@ APP1TARGET=		loader2
 
 APP1STDLIBS=	$(GDI32LIB) $(ADVAPI32LIB) $(SHELL32LIB)
 .IF "$(COM)"!="GCC"
-APP1STDLIBS+=	libcmt.lib
+# The UCRT split the static CRT into three libraries.  This names one of them
+# directly instead of going through $(LIBCMT), so it needs the other two by
+# name too -- $(LIBCRTEXTRA_STATIC) is empty on VC9, where there is only one.
+APP1STDLIBS+=	libcmt.lib $(LIBCRTEXTRA_STATIC)
 .ENDIF
 APP1OBJS=		$(OBJFILES)
 

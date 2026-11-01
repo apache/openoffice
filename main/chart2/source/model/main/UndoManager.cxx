@@ -21,7 +21,7 @@
 
 
 
-#include "precompiled_chart2.hxx"
+#include "precompiled_chartmodel.hxx"
 
 #include "UndoManager.hxx"
 #include "ChartViewHelper.hxx"

@@ -968,7 +968,7 @@ class UnoObjectDefinition{
                     sReturn = "Object oUnoObject = " + _sObjectDescription + ";\n\t";
                     bIsPropertyUnoObjectDefined = true;
                 }
-                sReturn += _sReturnVariableName + " = (" + sShortTypeName + ") AnyConverter.toObject(" + sShortTypeName + ".class, oUnoObject);";
+                sReturn += _sReturnVariableName + " = AnyConverter.toObject(" + sShortTypeName + ".class, oUnoObject);";
 //                this.bAddTypeImport = true;
                 break;
         }

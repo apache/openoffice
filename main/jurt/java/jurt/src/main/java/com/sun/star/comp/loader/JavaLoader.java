@@ -104,12 +104,12 @@ public class JavaLoader implements XImplementationLoader,
                             "service manager does not support XPropertySet!",
                             this );
                     }
-                    XComponentContext xContext = (XComponentContext)
+                    XComponentContext xContext =
                         AnyConverter.toObject(
-                            new Type( XComponentContext.class ),
+                            XComponentContext.class,
                             xProps.getPropertyValue( "DefaultContext" ) );
-                    m_xMacroExpander = (XMacroExpander)AnyConverter.toObject(
-                        new Type( XMacroExpander.class ),
+                    m_xMacroExpander = AnyConverter.toObject(
+                        XMacroExpander.class,
                         xContext.getValueByName(
                             "/singletons/com.sun.star.util.theMacroExpander" )
                         );
@@ -184,8 +184,8 @@ public class JavaLoader implements XImplementationLoader,
         if (args.length == 0) throw new com.sun.star.lang.IllegalArgumentException("No arguments specified");
 
         try {
-            multiServiceFactory = (XMultiServiceFactory) AnyConverter.toObject(
-                new Type(XMultiServiceFactory.class), args[0]);
+            multiServiceFactory = AnyConverter.toObject(
+                XMultiServiceFactory.class, args[0]);
         }
         catch (ClassCastException castEx) {
             throw new com.sun.star.lang.IllegalArgumentException(

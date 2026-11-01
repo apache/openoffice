@@ -32,8 +32,6 @@ import java.io.File;
 import java.io.IOException;
 
 import java.util.ArrayList;
-import java.util.Enumeration;
-import java.util.Hashtable;
 import util.utils;
 
 import org.junit.After;
@@ -214,7 +212,7 @@ public class TypeDetection {
         XInterface oObj = (XInterface) oInterface ;
         System.out.println("ImplName: "+utils.getImplName(oObj));
 
-        m_xDetection = (XTypeDetection)
+        m_xDetection =
                 UnoRuntime.queryInterface(XTypeDetection.class, oInterface);
         // create instance of helper class
         helper = new Helper(xMSF);

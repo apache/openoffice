@@ -25,7 +25,7 @@
 #define VBAHELPER_VBAEVENTSHELPERBASE_HXX
 
 #include <deque>
-#include <hash_map>
+#include <unordered_map>
 #include <map>
 #include <com/sun/star/document/XEventListener.hpp>
 #include <com/sun/star/script/vba/XVBAEventProcessor.hpp>
@@ -172,7 +172,7 @@ protected:
 
 private:
     typedef ::std::map< sal_Int32, EventHandlerInfo > EventHandlerInfoMap;
-    typedef ::std::hash_map< ::rtl::OUString, ModulePathMap, ::rtl::OUStringHash > EventHandlerPathMap;
+    typedef ::std::unordered_map< ::rtl::OUString, ModulePathMap, ::rtl::OUStringHash > EventHandlerPathMap;
 
     EventHandlerInfoMap maEventInfos;
     EventHandlerPathMap maEventPaths;

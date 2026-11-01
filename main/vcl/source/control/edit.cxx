@@ -781,8 +781,8 @@ void Edit::ImplDelete( const Selection& rSelection, sal_uInt8 nDirection, sal_uI
 String Edit::ImplGetValidString( const String& rString ) const
 {
     String aValidString( rString );
-	aValidString.EraseAllChars( _LF );
-	aValidString.EraseAllChars( _CR );
+	aValidString.EraseAllChars( SAL_LF );
+	aValidString.EraseAllChars( SAL_CR );
 	aValidString.SearchAndReplaceAll( '\t', ' ' );
     return aValidString;
 }

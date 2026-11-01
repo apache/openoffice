@@ -72,7 +72,9 @@ void SAL_CALL DragSource::initialize( const Sequence< Any >& aArguments )
                         static_cast<OWeakObject*>(this));
     }
 
-    m_hWnd = *(HWND*)aArguments[1].getValue();
+    sal_uInt64 nWindowHandle = 0;
+    aArguments[1] >>= nWindowHandle;
+    m_hWnd = (HWND)(sal_uIntPtr) nWindowHandle;
     debug_printf("DragSource::initialize hwnd %x", m_hWnd);
     // init done in DropTarget, window is already subclassed
     SetWindowDragSourcePtr( m_hWnd, this);

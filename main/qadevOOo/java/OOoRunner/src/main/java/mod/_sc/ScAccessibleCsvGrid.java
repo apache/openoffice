@@ -77,11 +77,11 @@ public class ScAccessibleCsvGrid extends TestCase {
         }
 
 
-        XExtendedToolkit tk = (XExtendedToolkit)
+        XExtendedToolkit tk =
                         UnoRuntime.queryInterface(XExtendedToolkit.class,oObj);
 
 
-        XWindow xWindow = (XWindow)
+        XWindow xWindow =
                 UnoRuntime.queryInterface(XWindow.class,tk.getActiveTopWindow());
 
         XAccessible xRoot = AccessibilityTools.getAccessibleObject(xWindow);
@@ -89,7 +89,7 @@ public class ScAccessibleCsvGrid extends TestCase {
         oObj = AccessibilityTools.getAccessibleObjectForRole
             (xRoot, AccessibleRole.PUSH_BUTTON, "Cancel");
 
-        accAction = (XAccessibleAction) UnoRuntime.queryInterface(XAccessibleAction.class, oObj);
+        accAction = UnoRuntime.queryInterface(XAccessibleAction.class, oObj);
 
         /*int count = accAction.getAccessibleActionCount();
 

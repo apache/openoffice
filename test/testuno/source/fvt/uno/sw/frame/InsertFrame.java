@@ -61,23 +61,23 @@ public class InsertFrame {
 
 	@Test
 	public void testInsertFrame() throws Exception {
-		xTextDocument =(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
+		xTextDocument =UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
 		xText=xTextDocument.getText();
 		XTextCursor xTextCursor = xText.createTextCursor();
 		// get internal service factory of the document
-		xWriterFactory =(XMultiServiceFactory)UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
+		xWriterFactory =UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
 		// Create a new table from the document's factory
-		XTextFrame xTextFrame = (XTextFrame)UnoRuntime.queryInterface(XTextFrame.class, xWriterFactory.createInstance("com.sun.star.text.TextFrame"));
+		XTextFrame xTextFrame = UnoRuntime.queryInterface(XTextFrame.class, xWriterFactory.createInstance("com.sun.star.text.TextFrame"));
 		xText.insertTextContent(xTextCursor,xTextFrame,false);
 
 		//save and reopen the document
-		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class,SWUtil.saveTo_Override_reload(xTextDocument, "writer8",Testspace.getPath("output/test.odt"), app));
-		XTextFramesSupplier xTFS_odt = (XTextFramesSupplier) UnoRuntime.queryInterface(XTextFramesSupplier.class, assertDocument_odt);
+		XTextDocument assertDocument_odt=UnoRuntime.queryInterface(XTextDocument.class,SWUtil.saveTo_Override_reload(xTextDocument, "writer8",Testspace.getPath("output/test.odt"), app));
+		XTextFramesSupplier xTFS_odt = UnoRuntime.queryInterface(XTextFramesSupplier.class, assertDocument_odt);
 		XNameAccess xTextFrames_odt = xTFS_odt.getTextFrames();
 		assertTrue("Has text frame named Frame1", xTextFrames_odt.hasByName("Frame1"));
 		//save and reopen the document
-		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class,SWUtil.saveTo_Override_reload(xTextDocument, "MS Word 97",Testspace.getPath("output/test.doc"), app));
-		XTextFramesSupplier xTFS_doc = (XTextFramesSupplier) UnoRuntime.queryInterface(XTextFramesSupplier.class, assertDocument_doc);
+		XTextDocument assertDocument_doc=UnoRuntime.queryInterface(XTextDocument.class,SWUtil.saveTo_Override_reload(xTextDocument, "MS Word 97",Testspace.getPath("output/test.doc"), app));
+		XTextFramesSupplier xTFS_doc = UnoRuntime.queryInterface(XTextFramesSupplier.class, assertDocument_doc);
 		XNameAccess xTextFrames_doc = xTFS_doc.getTextFrames();
 		assertTrue("Has text frame named Frame1", xTextFrames_doc.hasByName("Frame1"));
 	}

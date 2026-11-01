@@ -128,7 +128,7 @@ public class ScCellCursorObj extends TestCase {
     protected void cleanup(TestParameters tParam, PrintWriter log) {
         log.println("    disposing xSheetDoc ");
 
-        XComponent oComp = (XComponent) UnoRuntime.queryInterface(
+        XComponent oComp = UnoRuntime.queryInterface(
                                    XComponent.class, xSheetDoc);
 
         util.DesktopTools.closeDoc(oComp);
@@ -161,19 +161,19 @@ public class ScCellCursorObj extends TestCase {
         // first we write what we are intend to do to log file
         log.println("Creating a test environment");
 
-        XSpreadsheets oSpreadsheets = ((XSpreadsheetDocument) UnoRuntime.queryInterface(
+        XSpreadsheets oSpreadsheets = (UnoRuntime.queryInterface(
                                                XSpreadsheetDocument.class,
                                                xSheetDoc)).getSheets();
 
         try {
-            oSheet = (XSpreadsheet) AnyConverter.toObject(
-                             new Type(XSpreadsheet.class),
+            oSheet = AnyConverter.toObject(
+                             XSpreadsheet.class,
                              oSpreadsheets.getByName(
                                      oSpreadsheets.getElementNames()[0]));
 
             testRange = oSheet.getCellRangeByName("$A$1:$D$4");
 
-            XSheetCellRange testSheetRange = (XSheetCellRange) UnoRuntime.queryInterface(
+            XSheetCellRange testSheetRange = UnoRuntime.queryInterface(
                                                      XSheetCellRange.class,
                                                      testRange);
             oObj = oSheet.createCursorByRange(testSheetRange);
@@ -227,7 +227,7 @@ public class ScCellCursorObj extends TestCase {
             { "", "2", "3", "4" }
         });
 
-        XPropertySet PropSet = (XPropertySet) UnoRuntime.queryInterface(
+        XPropertySet PropSet = UnoRuntime.queryInterface(
                                        XPropertySet.class, oObj);
         tEnv.addObjRelation("PropSet", PropSet);
 

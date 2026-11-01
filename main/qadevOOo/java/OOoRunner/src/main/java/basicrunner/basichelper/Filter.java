@@ -217,10 +217,10 @@ class FilterImpl implements XInitialization, XTypeProvider, XNameAccess {
      * @throws Exception Is thrown, when initialize fails.
      */
     public void initialize(Object[] parm1) throws com.sun.star.uno.Exception {
-        XFilter oFilter = (XFilter)UnoRuntime.queryInterface(
+        XFilter oFilter = UnoRuntime.queryInterface(
                                         XFilter.class, parm1[0]);
 //?        PropertyValue[] FilterDesc = (PropertyValue[])AnyConverter.toArray(parm1[1]);
-        PropertyValue[] FilterDesc = (PropertyValue[])UnoRuntime.queryInterface(PropertyValue[].class, parm1[1]);
+        PropertyValue[] FilterDesc = UnoRuntime.queryInterface(PropertyValue[].class, parm1[1]);
         aState = "just initialized";
         FilterThread aThread = new FilterThread(oFilter, FilterDesc);
         aThread.start();

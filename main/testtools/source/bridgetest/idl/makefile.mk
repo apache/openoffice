@@ -51,9 +51,16 @@ CLIMAKERFLAGS =
 CLIMAKERFLAGS += --verbose
 .ENDIF
 
+# cli_types_bridgetest.dll is made by climaker, which only exists when the CLI
+# binding was built.  Without this the rule still runs and dmake reports the
+# shell's "command not found" as error code 127.
+.IF "$(DISABLE_CLI)"==""
+CLI_TYPES_BRIDGETEST=$(BIN)$/cli_types_bridgetest.dll
+.ENDIF
+
 ALLTAR: $(MISC)$/$(TARGET).cppumaker.done \
 	$(MISC)$/$(TARGET).javamaker.done \
-	$(BIN)$/cli_types_bridgetest.dll
+	$(CLI_TYPES_BRIDGETEST)
 
 $(BIN)$/cli_types_bridgetest.dll: $(BIN)$/bridgetest.rdb
     $(CLIMAKER) $(CLIMAKERFLAGS) --out $@ -r $(SOLARBINDIR)$/cli_uretypes.dll \

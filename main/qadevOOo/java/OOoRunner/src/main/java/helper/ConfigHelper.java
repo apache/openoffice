@@ -101,7 +101,7 @@ public class ConfigHelper
     {
         m_xSMGR = xSMGR;
 
-        XMultiServiceFactory xConfigRoot = (XMultiServiceFactory)
+        XMultiServiceFactory xConfigRoot =
                         UnoRuntime.queryInterface(
                         XMultiServiceFactory.class,
                         m_xSMGR.createInstance(
@@ -122,7 +122,7 @@ public class ConfigHelper
                             "com.sun.star.configuration.ConfigurationUpdateAccess",
                             lParams);
 
-        m_xConfig = (XHierarchicalNameAccess)UnoRuntime.queryInterface(
+        m_xConfig = UnoRuntime.queryInterface(
                             XHierarchicalNameAccess.class,
                             aConfig);
 
@@ -137,7 +137,7 @@ public class ConfigHelper
     {
         try
         {
-            XPropertySet xPath = (XPropertySet)UnoRuntime.queryInterface(
+            XPropertySet xPath = UnoRuntime.queryInterface(
                                     XPropertySet.class,
                                     m_xConfig.getByHierarchicalName(sRelPath));
             return xPath.getPropertyValue(sKey);
@@ -156,7 +156,7 @@ public class ConfigHelper
     {
         try
         {
-            XPropertySet xPath = (XPropertySet)UnoRuntime.queryInterface(
+            XPropertySet xPath = UnoRuntime.queryInterface(
                                     XPropertySet.class,
                                     m_xConfig.getByHierarchicalName(sRelPath));
             xPath.setPropertyValue(sKey, aValue);
@@ -177,7 +177,7 @@ public class ConfigHelper
     {
         try
         {
-            XChangesBatch xBatch = (XChangesBatch)UnoRuntime.queryInterface(
+            XChangesBatch xBatch = UnoRuntime.queryInterface(
                                         XChangesBatch.class,
                                         m_xConfig);
             xBatch.commitChanges();
@@ -233,21 +233,21 @@ public class ConfigHelper
 
         try {
             Object xChild=xSetCont.getByName(groupName);
-            xChildAccess = (XNameReplace) UnoRuntime.queryInterface(
+            xChildAccess = UnoRuntime.queryInterface(
                             XNameReplace.class,xSetCont);
         } catch(com.sun.star.container.NoSuchElementException e) {
              // proceed with inserting
         }
 
         if (xChildAccess == null)  {
-            XSingleServiceFactory xChildfactory = (XSingleServiceFactory)
+            XSingleServiceFactory xChildfactory =
                 UnoRuntime.queryInterface(XSingleServiceFactory.class,xSetCont);
 
             Object xNewChild = xChildfactory.createInstance();
 
             xSetCont.insertByName(groupName, xNewChild);
 
-            xChildAccess = (XNameReplace)
+            xChildAccess =
                 UnoRuntime.queryInterface(XNameContainer.class,xNewChild);
        }
 
@@ -272,7 +272,7 @@ public class ConfigHelper
 
         XPropertySet xProp = null;
         try {
-        xProp = (XPropertySet)UnoRuntime.queryInterface(
+        xProp = UnoRuntime.queryInterface(
                                     XPropertySet.class,
                                     xSetCont.getByName(groupName));
         } catch (com.sun.star.container.NoSuchElementException e){
@@ -316,7 +316,7 @@ public class ConfigHelper
 
         try {
             Object xGroup=xSetCont.getByName(group);
-            xGroupAccess = (XNameReplace) UnoRuntime.queryInterface(
+            xGroupAccess = UnoRuntime.queryInterface(
                             XNameReplace.class,xGroup);
         } catch(com.sun.star.container.NoSuchElementException e) {
              throw new com.sun.star.uno.Exception(
@@ -326,7 +326,7 @@ public class ConfigHelper
 
         try {
             Object xGroup=xGroupAccess.getByName(extGroup);
-            xExtGroupCont = (XNameContainer) UnoRuntime.queryInterface(
+            xExtGroupCont = UnoRuntime.queryInterface(
                             XNameContainer.class,xGroup);
         } catch(com.sun.star.container.NoSuchElementException e) {
              throw new com.sun.star.uno.Exception(
@@ -355,7 +355,7 @@ public class ConfigHelper
     public XNameContainer getSet(String setName)
         throws com.sun.star.uno.Exception
     {
-        XNameReplace xCont = (XNameReplace)
+        XNameReplace xCont =
                     UnoRuntime.queryInterface(XNameReplace.class, m_xConfig);
 
         Object oSet = xCont.getByName(setName);
@@ -364,7 +364,7 @@ public class ConfigHelper
              throw new com.sun.star.uno.Exception(
                 "could not get set '" + setName + ": null");
 
-        return (XNameContainer) UnoRuntime.queryInterface(
+        return UnoRuntime.queryInterface(
                                                 XNameContainer.class, oSet);
 
     }

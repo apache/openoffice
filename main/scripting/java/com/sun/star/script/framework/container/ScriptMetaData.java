@@ -321,7 +321,7 @@ public class ScriptMetaData extends ScriptEntry implements Cloneable {
 
                 if ( sourceUrl != null )
                 {
-                    StringBuffer buf = new StringBuffer();
+                    StringBuilder buf = new StringBuilder();
                     InputStream in = sourceUrl.openStream();
 
                     byte[] contents = new byte[1024];
@@ -355,7 +355,7 @@ public class ScriptMetaData extends ScriptEntry implements Cloneable {
         OutputStream os = null;
         try
         {
-            XSimpleFileAccess2 xSFA2 = ( XSimpleFileAccess2 )
+            XSimpleFileAccess2 xSFA2 =
                 UnoRuntime.queryInterface( XSimpleFileAccess2.class,
                     parent.m_xSFA );
             if ( xSFA2 != null )

@@ -28,7 +28,17 @@
 #endif
 #include <windows.h>
 #include <mapi.h>
-#ifndef __MINGW32__
+// Extended MAPI left the Windows SDK after Platform SDK v7.0 -- Microsoft moved
+// it to Outlook -- so a modern SDK has no mapix.h, and none of its four
+// companions either.  Nothing here needs them: this module uses only simple
+// MAPI (MAPILogon, MAPISendMail, MAPILogoff, and the Mapi* structures and
+// MAPI_* flags), all of which mapi.h still declares.
+//
+// Dropped rather than sourced from the old SDK on purpose.  Putting v7.0's
+// include directory on the path pulls in its wtypes.h behind mapix.h, and that
+// then collides with the modern SDK's -- C2011 on every COM type in it.  The
+// two header trees do not mix inside one translation unit.
+#if !defined __MINGW32__ && !(defined _MSC_VER && _MSC_VER >= 1900)
 #include <mapix.h>
 #endif
 #if defined _MSC_VER

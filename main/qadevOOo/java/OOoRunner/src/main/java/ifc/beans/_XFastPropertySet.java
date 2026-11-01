@@ -81,7 +81,7 @@ public class _XFastPropertySet extends MultiMethodTest {
     * before and no exceptions were thrown. <p>
     */
     public void _setFastPropertyValue() {
-        XPropertySet PS = (XPropertySet)UnoRuntime.queryInterface
+        XPropertySet PS = UnoRuntime.queryInterface
             (XPropertySet.class, oObj);
         XPropertySetInfo propertySetInfo = PS.getPropertySetInfo();
 
@@ -128,7 +128,7 @@ public class _XFastPropertySet extends MultiMethodTest {
     * Has <b> OK </b> status if exceptions were thrown. <p>
     */
     public void _getFastPropertyValue() {
-        XPropertySet PS = (XPropertySet)UnoRuntime.queryInterface
+        XPropertySet PS = UnoRuntime.queryInterface
             (XPropertySet.class, oObj);
         XPropertySetInfo propertySetInfo = PS.getPropertySetInfo();
 

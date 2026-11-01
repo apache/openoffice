@@ -46,7 +46,7 @@ public class ContextMenuInterceptor implements XContextMenuInterceptor {
 
             // create a new test document
             com.sun.star.frame.XComponentLoader xCompLoader =
-                (com.sun.star.frame.XComponentLoader)UnoRuntime.queryInterface(
+                UnoRuntime.queryInterface(
                     com.sun.star.frame.XComponentLoader.class, xDesktop);
 
             com.sun.star.lang.XComponent xComponent =
@@ -56,7 +56,7 @@ public class ContextMenuInterceptor implements XContextMenuInterceptor {
             // initialize the test document
             com.sun.star.frame.XFrame xFrame = null;
             {
-            com.sun.star.text.XTextDocument xDoc =(com.sun.star.text.XTextDocument)
+            com.sun.star.text.XTextDocument xDoc =
                 UnoRuntime.queryInterface(com.sun.star.text.XTextDocument.class,
                                           xComponent);
 
@@ -65,13 +65,13 @@ public class ContextMenuInterceptor implements XContextMenuInterceptor {
 
             // ensure that the document content is optimal visible
             com.sun.star.frame.XModel xModel =
-                (com.sun.star.frame.XModel)UnoRuntime.queryInterface(
+                UnoRuntime.queryInterface(
                     com.sun.star.frame.XModel.class, xDoc);
             // get the frame for later usage
             xFrame = xModel.getCurrentController().getFrame();
 
             com.sun.star.view.XViewSettingsSupplier xViewSettings =
-                (com.sun.star.view.XViewSettingsSupplier)UnoRuntime.queryInterface(
+                UnoRuntime.queryInterface(
                     com.sun.star.view.XViewSettingsSupplier.class, xModel.getCurrentController());
             xViewSettings.getViewSettings().setPropertyValue(
                 "ZoomType", new Short((short)0));
@@ -82,12 +82,12 @@ public class ContextMenuInterceptor implements XContextMenuInterceptor {
             com.sun.star.frame.XController xController = xFrame.getController();
             if ( xController != null ) {
                 com.sun.star.ui.XContextMenuInterception xContextMenuInterception =
-                    (com.sun.star.ui.XContextMenuInterception)UnoRuntime.queryInterface(
+                    UnoRuntime.queryInterface(
                         com.sun.star.ui.XContextMenuInterception.class, xController );
                 if( xContextMenuInterception != null ) {
                     ContextMenuInterceptor aContextMenuInterceptor = new ContextMenuInterceptor();
                     com.sun.star.ui.XContextMenuInterceptor xContextMenuInterceptor =
-                        (com.sun.star.ui.XContextMenuInterceptor)UnoRuntime.queryInterface(
+                        UnoRuntime.queryInterface(
                             com.sun.star.ui.XContextMenuInterceptor.class, aContextMenuInterceptor );
                     xContextMenuInterception.registerContextMenuInterceptor( xContextMenuInterceptor );
 
@@ -104,7 +104,7 @@ public class ContextMenuInterceptor implements XContextMenuInterceptor {
             }
 
             // close test document
-            com.sun.star.util.XCloseable xCloseable = (com.sun.star.util.XCloseable)
+            com.sun.star.util.XCloseable xCloseable =
                 UnoRuntime.queryInterface(com.sun.star.util.XCloseable.class,
                                           xComponent );
 
@@ -145,18 +145,18 @@ public class ContextMenuInterceptor implements XContextMenuInterceptor {
             // create sub menus, menu entries and separators
             com.sun.star.container.XIndexContainer xContextMenu = aEvent.ActionTriggerContainer;
             com.sun.star.lang.XMultiServiceFactory xMenuElementFactory =
-                (com.sun.star.lang.XMultiServiceFactory)UnoRuntime.queryInterface(
+                UnoRuntime.queryInterface(
                 com.sun.star.lang.XMultiServiceFactory.class, xContextMenu );
             if ( xMenuElementFactory != null ) {
                 // create root menu entry and sub menu
                 com.sun.star.beans.XPropertySet xRootMenuEntry =
-                    (XPropertySet)UnoRuntime.queryInterface(
+                    UnoRuntime.queryInterface(
                         com.sun.star.beans.XPropertySet.class,
                         xMenuElementFactory.createInstance( "com.sun.star.ui.ActionTrigger" ));
 
                 // create a line separator for our new help sub menu
                 com.sun.star.beans.XPropertySet xSeparator =
-                    (com.sun.star.beans.XPropertySet)UnoRuntime.queryInterface(
+                    UnoRuntime.queryInterface(
                         com.sun.star.beans.XPropertySet.class,
                         xMenuElementFactory.createInstance( "com.sun.star.ui.ActionTriggerSeparator" ));
 
@@ -165,7 +165,7 @@ public class ContextMenuInterceptor implements XContextMenuInterceptor {
 
                 // query sub menu for index container to get access
                 com.sun.star.container.XIndexContainer xSubMenuContainer =
-                    (com.sun.star.container.XIndexContainer)UnoRuntime.queryInterface(
+                    UnoRuntime.queryInterface(
                         com.sun.star.container.XIndexContainer.class,
                             xMenuElementFactory.createInstance(
                                 "com.sun.star.ui.ActionTriggerContainer" ));
@@ -179,7 +179,7 @@ public class ContextMenuInterceptor implements XContextMenuInterceptor {
                 // create menu entries for the new sub menu
 
                 // initialize help/content menu entry
-                XPropertySet xMenuEntry = (XPropertySet)UnoRuntime.queryInterface(
+                XPropertySet xMenuEntry = UnoRuntime.queryInterface(
                                               XPropertySet.class, xMenuElementFactory.createInstance(
                                                   "com.sun.star.ui.ActionTrigger" ));
 
@@ -191,7 +191,7 @@ public class ContextMenuInterceptor implements XContextMenuInterceptor {
                 xSubMenuContainer.insertByIndex( 0, (Object)xMenuEntry );
 
                 // initialize help/help agent
-                xMenuEntry = (com.sun.star.beans.XPropertySet)UnoRuntime.queryInterface(
+                xMenuEntry = UnoRuntime.queryInterface(
                                  com.sun.star.beans.XPropertySet.class,
                                      xMenuElementFactory.createInstance(
                                          "com.sun.star.ui.ActionTrigger" ));
@@ -203,7 +203,7 @@ public class ContextMenuInterceptor implements XContextMenuInterceptor {
                 xSubMenuContainer.insertByIndex( 1, (Object)xMenuEntry );
 
                 // initialize help/tips
-                xMenuEntry = (com.sun.star.beans.XPropertySet)UnoRuntime.queryInterface(
+                xMenuEntry = UnoRuntime.queryInterface(
                                  com.sun.star.beans.XPropertySet.class,
                                      xMenuElementFactory.createInstance(
                                          "com.sun.star.ui.ActionTrigger" ));

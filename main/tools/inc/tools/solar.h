@@ -220,8 +220,8 @@ template<typename T> inline T Abs(T a) { return (a>=0?a:-a); }
 #define _MAKE_NUMSTR( n )			# n
 #define MAKE_NUMSTR( n )			_MAKE_NUMSTR( n )
 
-#define _LF 	((char)0x0A)
-#define _CR 	((char)0x0D)
+#define SAL_LF 	((char)0x0A)
+#define SAL_CR 	((char)0x0D)
 
 
 /*** pragmas ************************************************************/

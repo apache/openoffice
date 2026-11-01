@@ -262,7 +262,7 @@ sal_Int8 FmGridHeader::ExecuteDrop( const ExecuteDropEvent& _rEvt )
 	}
 
 	// extract the descriptor
-	::rtl::OUString sDatasouce, sCommand, sFieldName,sDatabaseLocation,sConnnectionResource;
+	::rtl::OUString sDatasource, sCommand, sFieldName,sDatabaseLocation,sConnnectionResource;
 	sal_Int32		nCommandType = CommandType::COMMAND;
 	Reference< XPreparedStatement > 	xStatement;
 	Reference< XResultSet > 			xResultSet;
@@ -270,7 +270,7 @@ sal_Int8 FmGridHeader::ExecuteDrop( const ExecuteDropEvent& _rEvt )
 	Reference< XConnection >			xConnection;
 
 	ODataAccessDescriptor aColumn = OColumnTransferable::extractColumnDescriptor(aDroppedData);
-	if (aColumn.has(daDataSource))	aColumn[daDataSource]	>>= sDatasouce;
+	if (aColumn.has(daDataSource))	aColumn[daDataSource]	>>= sDatasource;
 	if (aColumn.has(daDatabaseLocation))	aColumn[daDatabaseLocation]	>>= sDatabaseLocation;
 	if (aColumn.has(daConnectionResource))	aColumn[daConnectionResource] >>= sConnnectionResource;
 	if (aColumn.has(daCommand)) 	aColumn[daCommand]		>>= sCommand;
@@ -281,7 +281,7 @@ sal_Int8 FmGridHeader::ExecuteDrop( const ExecuteDropEvent& _rEvt )
 
 	if  (   !sFieldName.getLength()
         ||  !sCommand.getLength()
-        ||  (   !sDatasouce.getLength()
+        ||  (   !sDatasource.getLength()
             &&  !sDatabaseLocation.getLength()
             &&  !xConnection.is()
             )
@@ -298,11 +298,11 @@ sal_Int8 FmGridHeader::ExecuteDrop( const ExecuteDropEvent& _rEvt )
 		{	// the transferable did not contain the connection -> build an own one
 			try
 			{
-                ::rtl::OUString sSignificantSource( sDatasouce.getLength() ? sDatasouce : sDatabaseLocation );
+                ::rtl::OUString sSignificantSource( sDatasource.getLength() ? sDatasource : sDatabaseLocation );
 				xConnection = OStaticDataAccessTools().getConnection_withFeedback(sSignificantSource, ::rtl::OUString(),::rtl::OUString(),static_cast<FmGridControl*>(GetParent())->getServiceManager());
 			}
 			catch(NoSuchElementException&)
-			{	// allowed, means sDatasouce isn't a valid data source name ....
+			{	// allowed, means sDatasource isn't a valid data source name ....
 			}
 			catch(Exception&)
 			{
@@ -399,8 +399,8 @@ IMPL_LINK( FmGridHeader, OnAsyncExecuteDrop, void*, /*NOTINTERESTEDIN*/ )
 	Reference< XPropertySet >	xField;
 	Reference< XConnection >	xConnection;
 
-	::rtl::OUString sDatasouce = m_pImpl->aDropData.getDataSource();
-	if ( !sDatasouce.getLength() && m_pImpl->aDropData.has(daConnectionResource) )
+	::rtl::OUString sDatasource = m_pImpl->aDropData.getDataSource();
+	if ( !sDatasource.getLength() && m_pImpl->aDropData.has(daConnectionResource) )
 		m_pImpl->aDropData[daConnectionResource]	>>= sURL;
 	m_pImpl->aDropData[daCommand]		>>= sCommand;
 	m_pImpl->aDropData[daCommandType]	>>= nCommandType;
@@ -613,8 +613,8 @@ IMPL_LINK( FmGridHeader, OnAsyncExecuteDrop, void*, /*NOTINTERESTEDIN*/ )
 		{
 			if (!::comphelper::getString(xForm->getPropertyValue(FM_PROP_DATASOURCE)).getLength())
 			{
-				if ( sDatasouce.getLength() )
-					xForm->setPropertyValue(FM_PROP_DATASOURCE, makeAny(sDatasouce));
+				if ( sDatasource.getLength() )
+					xForm->setPropertyValue(FM_PROP_DATASOURCE, makeAny(sDatasource));
 				else
 					xForm->setPropertyValue(FM_PROP_URL, makeAny(sURL));
 			}

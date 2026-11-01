@@ -80,7 +80,7 @@ public class _XSheetAnnotation extends MultiMethodTest {
         * Has <b>OK</b> status if the method returns <code>true</code>.
         */
         public void _getIsVisible() {
-          XSimpleText oText  = (XSimpleText)
+          XSimpleText oText  =
             UnoRuntime.queryInterface(XSimpleText.class, oObj);
           oText.setString("XSheetAnnotation");
           oObj.setIsVisible(true);
@@ -117,7 +117,7 @@ public class _XSheetAnnotation extends MultiMethodTest {
         */
         public void _setIsVisible() {
           boolean bResult = true;
-          XSimpleText oText  = (XSimpleText)
+          XSimpleText oText  =
               UnoRuntime.queryInterface(XSimpleText.class, oObj);
           oText.setString("XSheetAnnotation");
           oObj.setIsVisible(false);

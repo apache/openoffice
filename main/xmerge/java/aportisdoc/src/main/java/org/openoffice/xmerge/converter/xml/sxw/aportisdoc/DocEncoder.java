@@ -41,7 +41,7 @@ import org.openoffice.xmerge.converter.palm.Record;
 final class DocEncoder implements DocConstants {
 
     /** Text buffer to contain text section. */
-    private StringBuffer textBuffer = null;
+    private StringBuilder textBuffer = null;
 
     /** Length of text section. */
     private int textLen = 0;
@@ -57,7 +57,7 @@ final class DocEncoder implements DocConstants {
      */
     DocEncoder() {
 
-        textBuffer = new StringBuffer(TEXT_RECORD_SIZE);
+        textBuffer = new StringBuilder(TEXT_RECORD_SIZE);
     }
 
 

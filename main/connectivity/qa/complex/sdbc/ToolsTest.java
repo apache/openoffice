@@ -1,0 +1,177 @@
+/**************************************************************
+ *
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ *
+ *************************************************************/
+package complex.sdbc;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.junit.Test;
+
+import com.sun.star.comp.sdbc.Tools;
+
+/**
+ * Tests for the {@link Tools} helper class.
+ */
+public final class ToolsTest {
+
+    /** Runs each entry through addClassPathURL and returns what was accepted. */
+    private static List<URL> collect(String... entries) {
+        List<URL> urls = new ArrayList<URL>();
+        for (String entry : entries) {
+            Tools.addClassPathURL(urls, entry);
+        }
+        return urls;
+    }
+
+    @Test
+    public void testAddClassPathURLAddsLocalFileEntry() {
+        List<URL> urls = collect("file:/opt/a.jar");
+        assertEquals(1, urls.size());
+        assertEquals("file", urls.get(0).getProtocol());
+    }
+
+    @Test
+    public void testAddClassPathURLTreatsSchemeCaseInsensitively() {
+        assertEquals(1, collect("FILE:/opt/a.jar").size());
+    }
+
+    @Test
+    public void testAddClassPathURLSkipsJarWrappedLocalFile() {
+        // A JAR file is added by its own file: URL; a jar: URL is never needed.
+        assertTrue(collect("jar:file:/opt/a.jar!/").isEmpty());
+    }
+
+    @Test
+    public void testAddClassPathURLSkipsRemoteEntries() {
+        assertTrue(collect(
+                "http://host/a.jar",
+                "https://host/b.jar",
+                "ftp://host/c.jar").isEmpty());
+    }
+
+    @Test
+    public void testAddClassPathURLSkipsJarWrappedRemoteEntry() {
+        assertTrue(collect("jar:http://host/a.jar!/").isEmpty());
+    }
+
+    @Test
+    public void testAddClassPathURLSkipsMalformedEntry() {
+        assertTrue(collect("::not-a-url::").isEmpty());
+    }
+
+    @Test
+    public void testAddClassPathURLSkipsUnknownScheme() {
+        // A scheme with no registered URL handler cannot be constructed, so the
+        // entry is treated as malformed and skipped.
+        assertTrue(collect(
+                "wibble:/opt/a.jar",
+                "classpath:/opt/b.jar",
+                "foo://host/c.jar").isEmpty());
+    }
+
+    @Test
+    public void testAddClassPathURLSkipsJarWrappedUnknownScheme() {
+        assertTrue(collect("jar:wibble:/opt/a.jar!/").isEmpty());
+    }
+
+    @Test
+    public void testAddClassPathURLAddsLocalhostAndEscapedLocalFile() {
+        assertEquals(1, collect("file://localhost/opt/a.jar").size());
+        assertEquals(1, collect("file:///opt/Program%20Files/a.jar").size());
+        assertEquals(1, collect("file:///opt/a%2Fb/c.jar").size());
+        // One level of decoding only: this names a file called "%5C%5Chost".
+        assertEquals(1, collect("file:///opt/%255C%255Chost/a.jar").size());
+    }
+
+    @Test
+    public void testAddClassPathURLSkipsFileOnAnotherHost() {
+        assertTrue(collect(
+                "file://host/share/a.jar",
+                "file://wsl.localhost/distro/a.jar",
+                "jar:file://host/share/b.jar!/").isEmpty());
+    }
+
+    @Test
+    public void testAddClassPathURLSkipsPathNamingAnotherHost() {
+        assertTrue(collect(
+                "file:////host/share/a.jar",
+                "file://localhost//host/share/b.jar",
+                "jar:file:////host/share/c.jar!/").isEmpty());
+    }
+
+    @Test
+    public void testAddClassPathURLSkipsEscapedSeparatorNamingAnotherHost() {
+        // The file: handler decodes the path and, on Windows, turns slashes
+        // into backslashes, so each of these would be opened as \\host\share.
+        assertTrue(collect(
+                "file:///%5C%5Chost/share/a.jar",
+                "file:///%5c%5chost/share/b.jar",
+                "file:///%2F%2Fhost/share/c.jar",
+                "file:/%2Fhost/share/d.jar",
+                "file://localhost/%5C%5Chost/share/e.jar",
+                "jar:file:///%5C%5Chost/share/f.jar!/").isEmpty());
+    }
+
+    @Test
+    public void testAddClassPathURLSkipsBackslash() {
+        assertTrue(collect(
+                "file:\\\\host\\share\\a.jar",
+                "file:///C:%5C..%5Cb.jar").isEmpty());
+    }
+
+    @Test
+    public void testAddClassPathURLKeepsOnlyLocalEntriesInOrder() {
+        List<URL> urls = collect(
+                "http://host/a.jar",
+                "file:/opt/b.jar",
+                "jar:http://host/c.jar!/",
+                "file:/opt/d.jar");
+        assertEquals(2, urls.size());
+        assertEquals("/opt/b.jar", urls.get(0).getPath());
+        assertEquals("/opt/d.jar", urls.get(1).getPath());
+    }
+
+    @Test
+    public void testAddClassPathURLAddsPathWithPlus() {
+        List<URL> urls = collect("file:/opt/c++/a.jar");
+        assertEquals(1, urls.size());
+        assertEquals("/opt/c++/a.jar", urls.get(0).getPath());
+    }
+
+    @Test
+    public void testAddClassPathURLSkipsMalformedEscape() {
+        assertTrue(collect(
+                "file:/opt/%zz.jar",
+                "file:/opt/a.jar%").isEmpty());
+    }
+
+    @Test
+    public void testAddClassPathURLSkipsJvmImageSchemes() {
+        // Unsupported schemes fail to parse and are skipped as well.
+        assertTrue(collect(
+                "jrt:/java.base/module-info.class",
+                "jmod:/x").isEmpty());
+    }
+}

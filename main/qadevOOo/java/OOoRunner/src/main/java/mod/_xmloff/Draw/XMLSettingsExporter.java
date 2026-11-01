@@ -130,15 +130,15 @@ public class XMLSettingsExporter extends TestCase {
             oObj = (XInterface) xMSF.createInstanceWithArguments(
                 "com.sun.star.comp.Draw.XMLSettingsExporter",
                 new Object[] {arg});
-            XExporter xEx = (XExporter)
+            XExporter xEx =
                 UnoRuntime.queryInterface(XExporter.class, oObj);
             xEx.setSourceDocument(xDrawDoc);
 
             //set some settings
-            XModel xDrawModel = (XModel)
+            XModel xDrawModel =
                 UnoRuntime.queryInterface(XModel.class, xDrawDoc);
             XController xController = xDrawModel.getCurrentController();
-            XPropertySet xPropSet = (XPropertySet)
+            XPropertySet xPropSet =
                 UnoRuntime.queryInterface(XPropertySet.class, xController);
             xPropSet.setPropertyValue("IsLayerMode", new Boolean("true"));
 

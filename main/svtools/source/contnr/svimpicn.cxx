@@ -256,7 +256,7 @@ long GetTextLines( OutputDevice* pDev, MultiTextLineInfo& rLineInfo,
 		c = pStr[i];
 
 		// Auf Zeilenende ermitteln
-		if ( (c == _CR) || (c == _LF) )
+		if ( (c == SAL_CR) || (c == SAL_LF) )
 			bHardBreak = sal_True;
 		else
 			bHardBreak = sal_False;
@@ -296,7 +296,7 @@ long GetTextLines( OutputDevice* pDev, MultiTextLineInfo& rLineInfo,
 					{
 						nStartPos++;
 						c2 = pStr[i+1];
-						if ( (c != c2) && ((c2 == _CR) || (c2 == _LF)) )
+						if ( (c != c2) && ((c2 == SAL_CR) || (c2 == SAL_LF)) )
 						{
 							nStartPos++;
 							i++;
@@ -499,7 +499,7 @@ void DrawText( OutputDevice* pDev, const Rectangle& rRect,
 				pLineInfo = aMultiLineInfo.GetLine( nFormatLines );
 				aLastLine = rStr.Copy( pLineInfo->GetIndex() );
 				aLastLine.ConvertLineEnd( LINEEND_LF );
-				aLastLine.SearchAndReplace( _LF, ' ' );
+				aLastLine.SearchAndReplace( SAL_LF, ' ' );
 				aLastLine = GetEllipsisString( pDev, aLastLine, nWidth, nStyle );
 				nStyle &= ~(TEXT_DRAW_VCENTER | TEXT_DRAW_BOTTOM);
 				nStyle |= TEXT_DRAW_TOP;

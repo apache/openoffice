@@ -68,7 +68,7 @@ public class RegressionTest_i27773 implements StorageTest {
 			{
 				// for debugging proposes
 
-				XPropertySet xPropSet = (XPropertySet) UnoRuntime.queryInterface( XPropertySet.class, xTempFileStream );
+				XPropertySet xPropSet = UnoRuntime.queryInterface( XPropertySet.class, xTempFileStream );
 				if ( xPropSet != null )
 				{
 					try
@@ -89,7 +89,7 @@ public class RegressionTest_i27773 implements StorageTest {
 			pArgs[1] = new Integer( ElementModes.WRITE );
 
 			Object oTempStorage = m_xStorageFactory.createInstanceWithArguments( pArgs );
-			XStorage xTempStorage = (XStorage) UnoRuntime.queryInterface( XStorage.class, oTempStorage );
+			XStorage xTempStorage = UnoRuntime.queryInterface( XStorage.class, oTempStorage );
 			if ( xTempStorage == null )
 			{
 				m_aTestHelper.Error( "Can't create temporary storage representation!" );
@@ -208,7 +208,7 @@ public class RegressionTest_i27773 implements StorageTest {
 			pArgs[1] = new Integer( ElementModes.READ );
 
 			oTempStorage = m_xStorageFactory.createInstanceWithArguments( pArgs );
-			xTempStorage = (XStorage) UnoRuntime.queryInterface( XStorage.class, oTempStorage );
+			xTempStorage = UnoRuntime.queryInterface( XStorage.class, oTempStorage );
 			if ( xTempStorage == null )
 			{
 				m_aTestHelper.Error( "Can't create temporary storage representation!" );

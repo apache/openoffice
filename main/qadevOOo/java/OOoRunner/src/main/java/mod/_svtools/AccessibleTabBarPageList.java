@@ -137,14 +137,14 @@ public class AccessibleTabBarPageList extends TestCase {
             throw new StatusException("Couldn't get toolkit", e);
         }
 
-        XExtendedToolkit tk = (XExtendedToolkit) UnoRuntime.queryInterface(
+        XExtendedToolkit tk = UnoRuntime.queryInterface(
                                       XExtendedToolkit.class, oObj);
 
         AccessibilityTools at = new AccessibilityTools();
 
         shortWait();
 
-        XWindow xWindow = (XWindow) UnoRuntime.queryInterface(XWindow.class,
+        XWindow xWindow = UnoRuntime.queryInterface(XWindow.class,
                                                               tk.getActiveTopWindow());
 
         XAccessible xRoot = at.getAccessibleObject(xWindow);
@@ -162,10 +162,10 @@ public class AccessibleTabBarPageList extends TestCase {
         tEnv.addObjRelation("XAccessibleSelection.OneAlwaysSelected",
                             new Boolean(true));
 
-        XLayerSupplier oLS = (XLayerSupplier)
+        XLayerSupplier oLS =
             UnoRuntime.queryInterface(XLayerSupplier.class, xDoc);
         XInterface oLM = oLS.getLayerManager();
-        final XLayerManager xLM = (XLayerManager) UnoRuntime.queryInterface(XLayerManager.class, oLM);
+        final XLayerManager xLM = UnoRuntime.queryInterface(XLayerManager.class, oLM);
 
 
         tEnv.addObjRelation("EventProducer",
@@ -191,7 +191,7 @@ public class AccessibleTabBarPageList extends TestCase {
     }
 
     protected void closeDoc() {
-        XCloseable closer = (XCloseable) UnoRuntime.queryInterface(
+        XCloseable closer = UnoRuntime.queryInterface(
                                     XCloseable.class, xDoc);
 
         try {

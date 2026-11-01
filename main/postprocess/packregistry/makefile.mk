@@ -79,7 +79,7 @@ MY_FILES_calc = \
     $(MY_XCS)/Office/UI/CalcWindowState.xcs \
     $(MY_XCU)/Office/UI/CalcCommands.xcu \
     $(MY_XCU)/Office/UI/CalcWindowState.xcu \
-    $(MY_MOD)/DataAccess/calc.xcu \
+    $(MY_XCU)/Office/DataAccess/calc.xcu \
     $(MY_MOD)/fcfg_calc_filters.xcu \
     $(MY_MOD)/fcfg_calc_types.xcu \
     $(MY_MOD)/org/openoffice/Office/Common-calc.xcu \
@@ -278,10 +278,10 @@ MY_FILES_main = \
     $(MY_XCU)/UserProfile.xcu \
     $(MY_XCU)/VCL.xcu \
     $(MY_XCU)/ucb/Configuration.xcu \
-    $(MY_MOD)/DataAccess/dbase.xcu \
-    $(MY_MOD)/DataAccess/flat.xcu \
-    $(MY_MOD)/DataAccess/mysql.xcu \
-    $(MY_MOD)/DataAccess/odbc.xcu \
+    $(MY_XCU)/Office/DataAccess/dbase.xcu \
+    $(MY_XCU)/Office/DataAccess/flat.xcu \
+    $(MY_XCU)/Office/DataAccess/mysql.xcu \
+    $(MY_XCU)/Office/DataAccess/odbc.xcu \
     $(MY_MOD)/fcfg_base_filters.xcu \
     $(MY_MOD)/fcfg_base_others.xcu \
     $(MY_MOD)/fcfg_base_types.xcu \
@@ -306,7 +306,7 @@ MY_FILES_main += \
 .END
 .IF "$(GUIBASE)" == "aqua"
 MY_FILES_main += \
-    $(MY_MOD)/DataAccess/macab.xcu \
+    $(MY_XCU)/Office/DataAccess/macab.xcu \
     $(MY_MOD)/org/openoffice/Inet-macosx.xcu \
     $(MY_MOD)/org/openoffice/Office/Accelerators-macosx.xcu \
     $(MY_MOD)/org/openoffice/Office/Common-macosx.xcu \
@@ -326,7 +326,7 @@ MY_FILES_main += \
         # VCL-unixdesktop.xcu must come after VCL.xcu
 .ELIF "$(GUIBASE)" == "WIN"
 MY_FILES_main += \
-    $(MY_MOD)/DataAccess/ado.xcu \
+    $(MY_XCU)/Office/DataAccess/ado.xcu \
     $(MY_MOD)/org/openoffice/Inet-wnt.xcu \
     $(MY_MOD)/org/openoffice/Office/Accelerators-unxwnt.xcu \
     $(MY_MOD)/org/openoffice/Office/Common-wnt.xcu \
@@ -342,18 +342,18 @@ MY_FILES_main += \
 .ELSE
 ERROR : unknown-GUIBASE
 .END
-.IF "$(OS)" == "WNT" || "$(OS)" == "LINUX" || "$(OS)" == "OS2" || \
-        ("$(OS)" == "SOLARIS" && "$(CPU)" == "S") || "$(OS)" == "NETBSD"
-MY_FILES_main += $(MY_MOD)/DataAccess/adabas.xcu
+.IF "$(OS)" == "WNT" || "$(GUIBASE)" == "aqua" ||\
+        "$(GUIBASE)" == "unx"
+MY_FILES_main += $(MY_XCU)/Office/DataAccess/adabas.xcu
 .END
 .IF "$(ENABLE_EVOAB2)" == "TRUE"
-MY_FILES_main += $(MY_MOD)/DataAccess/evoab2.xcu
+MY_FILES_main += $(MY_XCU)/Office/DataAccess/evoab2.xcu
 .END
 .IF "$(SOLAR_JAVA)" == "TRUE"
 MY_FILES_main += \
-    $(MY_MOD)/DataAccess/hsqldb.xcu \
-    $(MY_MOD)/DataAccess/sdbc_jdbc.xcu \
-    $(MY_MOD)/DataAccess/sdbc_postgresql.xcu
+    $(MY_XCU)/Office/DataAccess/hsqldb.xcu \
+    $(MY_XCU)/Office/DataAccess/sdbc_jdbc.xcu \
+    $(MY_XCU)/Office/DataAccess/sdbc_postgresql.xcu
 .END
 
 .IF "$(SYSTEM_LIBTEXTCAT_DATA)" != ""
@@ -520,8 +520,8 @@ $(MISC)/lang/fcfg_langpack_%.xcd .ERRREMOVE :
     $(XSLTPROC) --nonet --stringparam prefix $(PWD)/$(MISC)/ -o $@ \
         $(SOLARENV)/bin/packregistry.xslt $(MISC)/$(@:b).list
 
-$(MISC)/lang/registry_{$(alllangiso)}.xcd : $(SOLARPCKDIR)/$$(@:b).zip \
-        $(SOLARPCKDIR)/fcfg_drivers_$$(@:b:s/registry_//).zip
+#$(MISC)/lang/registry_{$(alllangiso)}.xcd : $(SOLARPCKDIR)/$$(@:b).zip \
+#        $(SOLARPCKDIR)/fcfg_drivers_$$(@:b:s/registry_//).zip
 
 $(MISC)/lang/registry_%.xcd .ERRREMOVE :
     $(MKDIRHIER) $(@:d)
@@ -530,8 +530,9 @@ $(MISC)/lang/registry_%.xcd .ERRREMOVE :
     cd $(MISC)/$(@:b).unzip && unzip $(SOLARPCKDIR)/$(@:b).zip
     rm -rf $(MISC)/fcfg_drivers_$*.unzip
     mkdir $(MISC)/fcfg_drivers_$*.unzip
+    @echo Copy from $(SOLARXMLDIR)/../workdir/XcuResTarget/connectivity/$*/org/openoffice/Office/DataAccess
     cd $(MISC)/fcfg_drivers_$*.unzip && \
-        unzip $(SOLARPCKDIR)/fcfg_drivers_$*.zip
+        cp $(SOLARXMLDIR)/../workdir/XcuResTarget/connectivity/$*/org/openoffice/Office/DataAccess/* .
     - $(RM) $(MISC)/$(@:b).list
     # filter out filenames starting with "."
     echo '<list>' $(foreach,i,$(shell cd $(MISC) && \

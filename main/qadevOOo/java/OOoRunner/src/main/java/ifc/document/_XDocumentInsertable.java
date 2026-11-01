@@ -111,7 +111,7 @@ public class _XDocumentInsertable extends MultiMethodTest {
         if (checker == null) {
             log.println("Relation not found, trying to query for "+
                 "XTextRange ...") ;
-            range = (XTextRange)
+            range =
                 UnoRuntime.queryInterface (XTextRange.class, oObj) ;
             if (range == null) {
                 log.println("XTextRange isn't supported by the component.");

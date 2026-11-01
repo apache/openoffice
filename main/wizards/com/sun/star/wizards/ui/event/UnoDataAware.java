@@ -84,7 +84,7 @@ public class UnoDataAware extends DataAware
     {
         if (value.getClass().isArray())
         {
-            StringBuffer sb = new StringBuffer("[");
+            StringBuilder sb = new StringBuilder("[");
             for (int i = 0; i < ((short[]) value).length; i++)
             {
                 sb.append(((short[]) value)[i]).append(" , ");

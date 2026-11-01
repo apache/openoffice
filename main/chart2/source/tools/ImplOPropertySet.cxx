@@ -22,12 +22,13 @@
 
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
-#include "precompiled_chart2.hxx"
+#include "precompiled_charttools.hxx"
 #include "ImplOPropertySet.hxx"
 #include "CloneHelper.hxx"
 
 #include <algorithm>
 #include <functional>
+#include <iterator>
 #include <com/sun/star/beans/XFastPropertySet.hpp>
 
 using namespace ::com::sun::star;

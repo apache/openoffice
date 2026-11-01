@@ -89,7 +89,7 @@ class CanvasShape implements XAccessibleEventListener
     {
         if (maNode instanceof XAccessible) {
             mxContext = ((XAccessible) maNode).getAccessibleContext();
-            mxComponent = (XAccessibleComponent)UnoRuntime.queryInterface(
+            mxComponent = UnoRuntime.queryInterface(
                 XAccessibleComponent.class, mxContext);
         }
 
@@ -257,7 +257,7 @@ class CanvasShape implements XAccessibleEventListener
     {
         XAccessibleText xText = null;
         // get XAccessibleText
-        xText = (XAccessibleText)UnoRuntime.queryInterface(
+        xText = UnoRuntime.queryInterface(
             XAccessibleText.class, mxContext);
 
         // Draw every character in the text string.

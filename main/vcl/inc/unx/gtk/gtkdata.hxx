@@ -24,6 +24,8 @@
 #ifndef _VCL_GTKDATA_HXX
 #define _VCL_GTKDATA_HXX
 
+#include <map>
+
 #include <tools/prex.h>
 #include <gdk/gdk.h>
 #include <gdk/gdkx.h>
@@ -33,8 +35,6 @@
 #include <unx/saldisp.hxx>
 #include <unx/saldata.hxx>
 #include <vcl/ptrstyle.hxx>
-
-#include <list>
 
 class GtkData : public X11SalData
 {
@@ -55,7 +55,12 @@ class GtkSalDisplay : public SalDisplay
     GdkDisplay*						m_pGdkDisplay;
 	GdkCursor                      *m_aCursors[ POINTER_COUNT ];
     bool                            m_bStartupCompleted;
-    std::vector< int >              m_aXineramaScreenIndexMap;
+    /*
+     * Each live X11 window ID may be associated with at most one frame.
+     * Window IDs must be deregistered before destruction or reassignment.
+     * Duplicate registration is a lifecycle error and is not overwritten.
+     */
+    std::map< XLIB_Window, GtkSalFrame* > m_aWindowFrameMap;
 
 	GdkCursor* getFromXPM( const char *pBitmap, const char *pMask,
 						   int nWidth, int nHeight, int nXHot, int nYHot );
@@ -66,6 +71,9 @@ public:
     GdkDisplay* GetGdkDisplay() const { return m_pGdkDisplay; }
 
     virtual void deregisterFrame( SalFrame* pFrame );
+    GtkSalFrame* findFrameByXWindow( XLIB_Window aWindow ) const;
+    void registerFrameWindow( XLIB_Window aWindow, GtkSalFrame* pFrame );
+    void deregisterFrameWindow( XLIB_Window aWindow, GtkSalFrame* pFrame = NULL );
 	GdkCursor *getCursor( PointerStyle ePointerStyle );
 	virtual int CaptureMouse( SalFrame* pFrame );
     virtual long Dispatch( XEvent *pEvent );

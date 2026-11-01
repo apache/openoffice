@@ -124,7 +124,7 @@ public class XMLContentImporter extends TestCase {
         try {
             oInt = xMSF.createInstance
                 ("com.sun.star.comp.Writer.XMLContentImporter") ;
-            //XImporter imp = (XImporter) UnoRuntime.queryInterface
+            //XImporter imp = UnoRuntime.queryInterface
             //    (XImporter.class, oInt) ;
             //imp.setTargetDocument(xTextDoc) ;
         } catch (com.sun.star.uno.Exception e) {
@@ -156,7 +156,7 @@ public class XMLContentImporter extends TestCase {
 
         tEnv.addObjRelation("XDocumentHandler.XMLData", xml) ;
 
-        final XTextDocument textDoc = (XTextDocument) UnoRuntime.queryInterface
+        final XTextDocument textDoc = UnoRuntime.queryInterface
             (XTextDocument.class, xTextDoc) ;
         final PrintWriter fLog = log ;
         tEnv.addObjRelation("XDocumentHandler.ImportChecker",

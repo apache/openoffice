@@ -36,6 +36,7 @@
 #include <basegfx/polygon/b2dpolygontools.hxx>
 #include <basegfx/polygon/b2dpolygon.hxx>
 #include <rtl/uri.hxx>
+#include "linkedimagepolicy.hxx"
 #include <drawinglayer/geometry/viewinformation2d.hxx>
 
 //////////////////////////////////////////////////////////////////////////////
@@ -244,9 +245,12 @@ namespace svgio
 
                         if(rPath.getLength())
                         {
-                            const rtl::OUString aAbsUrl(rtl::Uri::convertRelToAbs(rPath, maUrl));
+                            // The reference is document content: resolve it
+                            // against this file's own location and only open it
+                            // when it stays there (see linkedimagepolicy.hxx).
+                            rtl::OUString aAbsUrl;
 
-                            if(aAbsUrl.getLength())
+                            if(resolveLinkedImageUrl(rPath, maUrl, aAbsUrl))
                             {
                                 SvFileStream aStream(aAbsUrl, STREAM_STD_READ);
                                 Graphic aGraphic;

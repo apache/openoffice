@@ -108,10 +108,10 @@ public class XSLTValidate {
 			try{
 				//System.out.println("\n"+pValue[i].Name+" "+pValue[i].Value);
 				if (pValue[i].Name.compareTo("InputStream")==0){
-					xis=(com.sun.star.io.XInputStream)AnyConverter.toObject(new Type(com.sun.star.io.XInputStream.class), pValue[i].Value);
+					xis=AnyConverter.toObject(com.sun.star.io.XInputStream.class, pValue[i].Value);
 				}
 				else if (pValue[i].Name.compareTo("ErrorHandler")==0){
-					xErrorHandler=(com.sun.star.xml.sax.XErrorHandler)AnyConverter.toObject(new Type(com.sun.star.xml.sax.XErrorHandler.class), pValue[i].Value);
+					xErrorHandler=AnyConverter.toObject(com.sun.star.xml.sax.XErrorHandler.class, pValue[i].Value);
 				}
 			}
 			catch(com.sun.star.lang.IllegalArgumentException AnyExec){

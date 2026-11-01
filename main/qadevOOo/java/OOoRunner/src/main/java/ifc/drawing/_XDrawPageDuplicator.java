@@ -61,13 +61,13 @@ public class _XDrawPageDuplicator extends MultiMethodTest {
     public void _duplicate(){
         boolean result = false;
         XInterface testobj = tEnv.getTestObject();
-        XDrawPagesSupplier PS = (XDrawPagesSupplier)
+        XDrawPagesSupplier PS =
             UnoRuntime.queryInterface(XDrawPagesSupplier.class, testobj);
         XDrawPages DPs = PS.getDrawPages();
         XDrawPage DP = null;
         try {
-            DP = (XDrawPage) AnyConverter.toObject(
-                    new Type(XDrawPage.class),DPs.getByIndex(0));
+            DP = AnyConverter.toObject(
+                    XDrawPage.class,DPs.getByIndex(0));
         } catch (com.sun.star.lang.WrappedTargetException e) {
             log.println("Exception occurred while testing: " + e);
         } catch (com.sun.star.lang.IndexOutOfBoundsException e) {

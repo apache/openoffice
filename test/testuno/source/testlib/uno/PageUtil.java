@@ -67,7 +67,7 @@ public class PageUtil {
 		XDrawPagesSupplier xDrawPagesSupplier = (XDrawPagesSupplier) UnoRuntime
 				.queryInterface(XDrawPagesSupplier.class, xComponent);
 		XDrawPages xDrawPages = xDrawPagesSupplier.getDrawPages();
-		return (XDrawPage) UnoRuntime.queryInterface(XDrawPage.class,
+		return UnoRuntime.queryInterface(XDrawPage.class,
 				xDrawPages.getByIndex(nIndex));
 	}
 
@@ -153,7 +153,7 @@ public class PageUtil {
 		XMasterPagesSupplier xMasterPagesSupplier = (XMasterPagesSupplier) UnoRuntime
 				.queryInterface(XMasterPagesSupplier.class, xComponent);
 		XDrawPages xDrawPages = xMasterPagesSupplier.getMasterPages();
-		return (XDrawPage) UnoRuntime.queryInterface(XDrawPage.class,
+		return UnoRuntime.queryInterface(XDrawPage.class,
 				xDrawPages.getByIndex(nIndex));
 	}
 
@@ -205,7 +205,7 @@ public class PageUtil {
 	 * only presentation documents have notes and handout pages
 	 */
 	static public boolean isImpressDocument(XComponent xComponent) {
-		XServiceInfo xInfo = (XServiceInfo) UnoRuntime.queryInterface(
+		XServiceInfo xInfo = UnoRuntime.queryInterface(
 				XServiceInfo.class, xComponent);
 		return xInfo
 				.supportsService("com.sun.star.presentation.PresentationDocument");

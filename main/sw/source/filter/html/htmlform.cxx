@@ -1688,8 +1688,8 @@ void SwHTMLParser::InsertInput()
 	// geloescht werden.
 	if( !bKeepCRLFInValue )
 	{
-		sText.EraseAllChars( _CR );
-		sText.EraseAllChars( _LF );
+		sText.EraseAllChars( SAL_CR );
+		sText.EraseAllChars( SAL_LF );
 	}
 
 	const uno::Reference< XMultiServiceFactory > & rServiceFactory =

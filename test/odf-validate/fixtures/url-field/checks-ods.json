@@ -1,0 +1,26 @@
+[
+ {
+  "name": "cell_url_fields",
+  "expr": "(lambda en: [(r,c,t.TextField.URL,t.TextField.Representation) for sh in [doc.Sheets.getByIndex(0)] for r in range(110) for c in range(11) for p in en(sh.getCellByPosition(c,r).Text.createEnumeration()) for t in en(p.createEnumeration()) if t.TextPortionType=='TextField'])(lambda e:[e.nextElement() for _ in iter(e.hasMoreElements, False)])",
+  "expect": [
+   [
+    14,
+    0,
+    "http://www.openoffice.org/issues/show_bug.cgi?id=29123",
+    "29123"
+   ],
+   [
+    15,
+    0,
+    "http://www.openoffice.org/issues/show_bug.cgi?id=29234",
+    "29234"
+   ],
+   [
+    16,
+    0,
+    "http://www.openoffice.org/issues/show_bug.cgi?id=29245",
+    "29245"
+   ]
+  ]
+ }
+]

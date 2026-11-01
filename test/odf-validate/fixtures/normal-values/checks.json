@@ -1,0 +1,65 @@
+[
+ {
+  "name": "cell_text",
+  "expr": "[(n, doc.TextTables.getByIndex(0).getCellByName(n).String) for n in doc.TextTables.getByIndex(0).CellNames]",
+  "expect": [
+   [
+    "A1",
+    ""
+   ],
+   [
+    "B1",
+    ""
+   ],
+   [
+    "A2",
+    ""
+   ],
+   [
+    "B2",
+    ""
+   ],
+   [
+    "C2",
+    ""
+   ]
+  ]
+ },
+ {
+  "name": "frames",
+  "expr": "[(n, doc.TextFrames.getByName(n).AnchorType.value, doc.TextFrames.getByName(n).AnchorPageNo) for n in sorted(doc.TextFrames.ElementNames)]",
+  "expect": [
+   [
+    "frame_nopage",
+    "AT_PAGE",
+    2
+   ],
+   [
+    "frame_p2",
+    "AT_PAGE",
+    2
+   ]
+  ]
+ },
+ {
+  "name": "note_refs",
+  "expr": "[(f.ReferenceFieldSource, f.ReferenceFieldPart, f.CurrentPresentation) for f in (lambda e: [e.nextElement() for _ in iter(e.hasMoreElements, False)])(doc.TextFields.createEnumeration()) if f.supportsService('com.sun.star.text.TextField.GetReference')]",
+  "expect": [
+   [
+    3,
+    0,
+    ""
+   ],
+   [
+    3,
+    2,
+    ""
+   ],
+   [
+    3,
+    3,
+    ""
+   ]
+  ]
+ }
+]

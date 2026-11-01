@@ -50,7 +50,7 @@ public class ControlMenuController extends TestCase {
         log.println("    disposing xTextDoc ");
 
         try {
-            XCloseable closer = (XCloseable) UnoRuntime.queryInterface(
+            XCloseable closer = UnoRuntime.queryInterface(
             XCloseable.class, xTextDoc);
             closer.close(true);
         } catch (com.sun.star.util.CloseVetoException e) {
@@ -86,11 +86,11 @@ public class ControlMenuController extends TestCase {
             xText.insertString(xTextCursor, "A sample text and why not? ", false);
         }
 
-        XModel xModel = (XModel)UnoRuntime.queryInterface(XModel.class, xTextDoc);
+        XModel xModel = UnoRuntime.queryInterface(XModel.class, xTextDoc);
 
         // the supplier is available from the model
         XUIConfigurationManagerSupplier xSupplier =
-                (XUIConfigurationManagerSupplier)UnoRuntime.queryInterface(
+                UnoRuntime.queryInterface(
                 XUIConfigurationManagerSupplier.class, xModel);
 
         xManager = xSupplier.getUIConfigurationManager();

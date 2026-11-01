@@ -184,6 +184,7 @@
 #include "UITools.hxx"
 #endif
 #include <algorithm>
+#include <iterator>
 #ifndef _SVTREEBOX_HXX
 #include <svtools/svtreebx.hxx>
 #endif

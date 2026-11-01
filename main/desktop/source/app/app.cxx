@@ -2007,8 +2007,8 @@ void Desktop::Main()
 		// check whether the shutdown is caused by restart
 		pExecGlobals->bRestartRequested = ( xRestartManager.is() && xRestartManager->isRestartRequested( sal_True ) );
 
-        // First Start Wizard allowed ?
-        if ( ! pCmdLineArgs->IsNoFirstStartWizard() && !pExecGlobals->bRestartRequested )
+        // First Start Wizard allowed ? Headless mode cancels every dialog, so the wizard would end the office.
+        if ( ! pCmdLineArgs->IsNoFirstStartWizard() && ! pCmdLineArgs->IsHeadless() && !pExecGlobals->bRestartRequested )
         {
             RTL_LOGFILE_CONTEXT_TRACE( aLog, "{ FirstStartWizard" );
 

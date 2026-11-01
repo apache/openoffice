@@ -78,8 +78,8 @@ public class _XFramesSupplier extends MultiMethodTest {
                 try {
                    fr = null;
                    try {
-                       fr = (XFrame) AnyConverter.toObject(
-                                new Type(XFrame.class),frames.getByIndex(i));
+                       fr = AnyConverter.toObject(
+                                XFrame.class,frames.getByIndex(i));
                    } catch (com.sun.star.lang.IllegalArgumentException iae) {
                        log.println("Can't convert any");
                    }
@@ -164,15 +164,15 @@ public class _XFramesSupplier extends MultiMethodTest {
             try {
                 if (activeIdx != 0)
                    try {
-                       sFrame = (XFrame) AnyConverter.toObject(
-                                new Type(XFrame.class),frames.getByIndex(0));
+                       sFrame = AnyConverter.toObject(
+                                XFrame.class,frames.getByIndex(0));
                    } catch (com.sun.star.lang.IllegalArgumentException iae) {
                        log.println("Can't convert any");
                    }
                 else
                    try {
-                       sFrame = (XFrame) AnyConverter.toObject(
-                                new Type(XFrame.class),frames.getByIndex(1));
+                       sFrame = AnyConverter.toObject(
+                                XFrame.class,frames.getByIndex(1));
                    } catch (com.sun.star.lang.IllegalArgumentException iae) {
                        log.println("Can't convert any");
                    }

@@ -37,5 +37,6 @@ struct TableStyleElement
 extern const TableStyleElement* getTableStyleMap();
 extern const XMLPropertyMapEntry* getColumnPropertiesMap();
 extern const XMLPropertyMapEntry* getRowPropertiesMap();
+extern const XMLPropertyMapEntry* getCellPropertiesMap();
 
 #endif

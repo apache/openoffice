@@ -33,12 +33,34 @@ sub otoolD($) {
     my ($file) = @_;
     my $call = "otool -D $file";
     open(IN, "-|", $call) or die "cannot $call";
-    my $line = <IN>;
-    if( $line !~ /^\Q$file\E:\n$/ ) {
-        die "unexpected otool -D output (\"$line\", expecting \"$file:\")";
-    }
-    $line = <IN>;
-    <IN> == undef or die "unexpected otool -D output";
+    my @lines = <IN>;
     close(IN);
-    return $line;
+
+    # A fat/universal binary (e.g. a Homebrew-installed library bundling
+    # x86_64 and arm64 slices) makes otool -D print one
+    # "<path> (architecture <arch>):" stanza per slice instead of the
+    # single "<path>:" header a thin binary gets. Every slice of the same
+    # library reports the same install name, so take it from the first
+    # stanza and ignore the rest.
+    #
+    # A slice with no install name (e.g. a loadable module/bundle, such as
+    # a PKCS#11 provider that is only ever dlopen()ed) prints its header
+    # with nothing after it -- callers rely on getting undef back for that
+    # case, same as otool -D on a thin file with no install name.
+    my $header_re = qr/^\Q$file\E(?: \(architecture [^)]+\))?:\n$/;
+    my @names;
+    my $i = 0;
+    while ($i < @lines) {
+        $lines[$i] =~ $header_re or
+            die "unexpected otool -D output (\"$lines[$i]\", expecting \"$file:\")";
+        ++$i;
+        if ($i < @lines && $lines[$i] !~ $header_re) {
+            push @names, $lines[$i];
+            ++$i;
+        }
+    }
+    return undef unless @names;
+    grep($_ ne $names[0], @names) and
+        die "otool -D reported differing install names across architectures for $file";
+    return $names[0];
 }

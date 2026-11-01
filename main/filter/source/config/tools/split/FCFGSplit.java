@@ -447,7 +447,7 @@ public class FCFGSplit
         // analyze some time stamps
         long t_end = System.currentTimeMillis();
 
-        java.lang.StringBuffer sTimes = new java.lang.StringBuffer(100);
+        java.lang.StringBuilder sTimes = new java.lang.StringBuilder(100);
         sTimes.append("Needed times:\n"                  );
         sTimes.append("t [all]\t\t=\t"                   );
         sTimes.append(t_end-t_start                      );
@@ -527,7 +527,7 @@ public class FCFGSplit
      */
     private static void printCopyright()
     {
-        java.lang.StringBuffer sOut = new java.lang.StringBuffer(256);
+        java.lang.StringBuilder sOut = new java.lang.StringBuilder(256);
         sOut.append("FCFGSplit\n");
         sOut.append("Copyright: 2000 by Sun Microsystems, Inc.\n");
         sOut.append("All Rights Reserved.\n");
@@ -540,7 +540,7 @@ public class FCFGSplit
      */
     private static void printHelp()
     {
-        java.lang.StringBuffer sOut = new java.lang.StringBuffer(1000);
+        java.lang.StringBuilder sOut = new java.lang.StringBuilder(1000);
         sOut.append("_______________________________________________________________________________\n\n"   );
         sOut.append("usage: FCFGSplit "+CMD_CONFIG+"=<file name> "+CMD_DEBUG+"=<level>\n"                       );
         sOut.append("parameters:\n"                                                                         );

@@ -32,7 +32,7 @@ int replaceText(searchKey, color, bold) {
 
     try {
         // Create an XReplaceable object and an XReplaceDescriptor
-        replaceable = (XReplaceable)
+        replaceable =
             UnoRuntime.queryInterface(XReplaceable.class, xTextDocument); 
 
         descriptor =
@@ -40,7 +40,7 @@ int replaceText(searchKey, color, bold) {
 
         // Gets a XPropertyReplace object for altering the properties
         // of the replaced text
-        xPropertyReplace = (XPropertyReplace)
+        xPropertyReplace =
             UnoRuntime.queryInterface(XPropertyReplace.class, descriptor);
 
         // Sets the replaced text property fontweight value to Bold or Normal 
@@ -85,7 +85,7 @@ searchKey = "";
 
 // The XSCRIPTCONTEXT variable is of type XScriptContext and is available to
 // all BeanShell scripts executed by the Script Framework
-xTextDocument = (XTextDocument)
+xTextDocument =
     UnoRuntime.queryInterface(XTextDocument.class, XSCRIPTCONTEXT.getDocument());
 
 // Create a JButton and add an ActionListener

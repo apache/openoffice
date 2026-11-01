@@ -2280,6 +2280,10 @@ sub get_platform_name
 	{
 		$platformname = "MacOSXX86-64";
 	}
+	elsif ( $installer::globals::compiler =~ /^unxmaccr/ )
+	{
+		$platformname = "MacOSXAArch64";
+	}
 	elsif ( $installer::globals::compiler =~ /^unxmacxp/ )
 	{
 		$platformname = "MacOSXPowerPC";

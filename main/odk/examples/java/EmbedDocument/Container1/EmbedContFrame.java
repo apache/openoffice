@@ -110,15 +110,15 @@ public class EmbedContFrame extends Frame
         // create a connector, so that it can contact the office
         Object  oUrlResolver  = xLocalServiceManager.createInstanceWithContext( "com.sun.star.bridge.UnoUrlResolver",
 																				xComponentContext );
-        XUnoUrlResolver xUrlResolver = (XUnoUrlResolver)UnoRuntime.queryInterface( XUnoUrlResolver.class, oUrlResolver );
+        XUnoUrlResolver xUrlResolver = UnoRuntime.queryInterface( XUnoUrlResolver.class, oUrlResolver );
 
         Object oInitialObject = xUrlResolver.resolve( sConnectionString );
-        XNamingService xName = (XNamingService)UnoRuntime.queryInterface( XNamingService.class, oInitialObject );
+        XNamingService xName = UnoRuntime.queryInterface( XNamingService.class, oInitialObject );
 
         XMultiServiceFactory xMSF = null;
         if( xName != null ) {
             Object oMSF = xName.getRegisteredObject( "StarOffice.ServiceManager" );
-            xMSF = (XMultiServiceFactory)UnoRuntime.queryInterface( XMultiServiceFactory.class, oMSF );
+            xMSF = UnoRuntime.queryInterface( XMultiServiceFactory.class, oMSF );
         }
 		else
 			System.out.println( "Error: Can't get XNamingService interface from url resolver!" );

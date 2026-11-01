@@ -221,7 +221,7 @@ public class ConverterServlet extends HttpServlet {
                     "com.sun.star.bridge.UnoUrlResolver", xcomponentcontext );
 
             // Create a new url resolver
-            XUnoUrlResolver xurlresolver = ( XUnoUrlResolver )
+            XUnoUrlResolver xurlresolver =
                 UnoRuntime.queryInterface( XUnoUrlResolver.class,
                                            objectUrlResolver );
 
@@ -232,11 +232,11 @@ public class ConverterServlet extends HttpServlet {
                 ";urp;StarOffice.ServiceManager" );
 
             // Create a service manager from the initial object
-            xmulticomponentfactory = ( XMultiComponentFactory )
+            xmulticomponentfactory =
                 UnoRuntime.queryInterface( XMultiComponentFactory.class, objectInitial );
 
             // Query for the XPropertySet interface.
-            XPropertySet xpropertysetMultiComponentFactory = ( XPropertySet )
+            XPropertySet xpropertysetMultiComponentFactory =
                 UnoRuntime.queryInterface( XPropertySet.class, xmulticomponentfactory );
 
             // Get the default context from the office server.
@@ -244,14 +244,14 @@ public class ConverterServlet extends HttpServlet {
                 xpropertysetMultiComponentFactory.getPropertyValue( "DefaultContext" );
 
             // Query for the interface XComponentContext.
-            xcomponentcontext = ( XComponentContext ) UnoRuntime.queryInterface(
+            xcomponentcontext = UnoRuntime.queryInterface(
                 XComponentContext.class, objectDefaultContext );
 
             /* A desktop environment contains tasks with one or more
                frames in which components can be loaded. Desktop is the
                environment for components which can instantiate within
                frames. */
-            XComponentLoader xcomponentloader = ( XComponentLoader )
+            XComponentLoader xcomponentloader =
                 UnoRuntime.queryInterface( XComponentLoader.class,
                                            xmulticomponentfactory.createInstanceWithContext(
                                                "com.sun.star.frame.Desktop", xcomponentcontext ) );
@@ -270,7 +270,7 @@ public class ConverterServlet extends HttpServlet {
 
             // Getting an object that will offer a simple way to store a document to a URL.
             XStorable xstorable =
-                ( XStorable ) UnoRuntime.queryInterface( XStorable.class,
+                UnoRuntime.queryInterface( XStorable.class,
                                                          objectDocumentToStore );
 
             // Preparing properties for converting the document
@@ -295,7 +295,7 @@ public class ConverterServlet extends HttpServlet {
             // Storing and converting the document
             xstorable.storeAsURL( stringConvertedFile, propertyvalue );
 
-            XCloseable xcloseable = (XCloseable)UnoRuntime.queryInterface( XCloseable.class,xstorable );
+            XCloseable xcloseable = UnoRuntime.queryInterface( XCloseable.class,xstorable );
 
             // Closing the converted document
             if ( xcloseable != null )
@@ -303,7 +303,7 @@ public class ConverterServlet extends HttpServlet {
             else {
                 // If Xcloseable is not supported (older versions,
                 // use dispose() for closing the document
-                XComponent xComponent = ( XComponent ) UnoRuntime.queryInterface(
+                XComponent xComponent = UnoRuntime.queryInterface(
                     XComponent.class, xstorable );
                 xComponent.dispose();
             }

@@ -62,7 +62,10 @@ SHL1STDLIBS+=	$(KERNEL32LIB)\
 				$(SHELL32LIB)\
 				$(MSILIB)
 .IF "$(COM)"!="GCC"
-SHL1STDLIBS+=	libcmt.lib
+# The UCRT split the static CRT into three libraries.  This names one of them
+# directly instead of going through $(LIBCMT), so it needs the other two by
+# name too -- $(LIBCRTEXTRA_STATIC) is empty on VC9, where there is only one.
+SHL1STDLIBS+=	libcmt.lib $(LIBCRTEXTRA_STATIC)
 .ENDIF
 
 

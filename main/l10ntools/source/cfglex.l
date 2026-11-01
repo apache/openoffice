@@ -53,16 +53,16 @@
 /* external functions (C++ code, declared as extern "C" */
 extern int WorkOnTokenSet( int, char* );
 extern int InitCfgExport( char * , char *);
-extern int EndCfgExport();
-extern int GetError();
-extern int SetError();
+extern int EndCfgExport(void);
+extern int GetError(void);
+extern int SetError(void);
 extern char *GetOutputFile( int argc, char* argv[]);
-extern FILE *GetCfgFile();
-extern int isQuiet();
-extern void removeTempFile();
-extern char* getFilename();
+extern FILE *GetCfgFile(void);
+extern int isQuiet(void);
+extern void removeTempFile(void);
+extern char* getFilename(void);
 /* forwards */
-void YYWarning();
+void YYWarning(char *);
 
 int bText=0;
 %}

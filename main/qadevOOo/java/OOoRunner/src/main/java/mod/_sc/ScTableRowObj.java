@@ -86,7 +86,7 @@ public class ScTableRowObj extends TestCase {
     */
     protected void cleanup( TestParameters tParam, PrintWriter log ) {
         log.println( "    disposing xSheetDoc " );
-        XComponent oComp = (XComponent)
+        XComponent oComp =
             UnoRuntime.queryInterface (XComponent.class, xSheetDoc) ;
         util.DesktopTools.closeDoc(oComp);
     }
@@ -116,20 +116,20 @@ public class ScTableRowObj extends TestCase {
 
         XSpreadsheet xSpreadsheet = null;
         XSpreadsheets xSpreadsheets = (XSpreadsheets)xSheetDoc.getSheets();
-        XNameAccess oNames = (XNameAccess)
+        XNameAccess oNames =
             UnoRuntime.queryInterface( XNameAccess.class, xSpreadsheets );
         try {
-            xSpreadsheet = (XSpreadsheet) AnyConverter.toObject(
-                new Type(XSpreadsheet.class),
+            xSpreadsheet = AnyConverter.toObject(
+                XSpreadsheet.class,
                     oNames.getByName(oNames.getElementNames()[0]));
 
-            XColumnRowRange oColumnRowRange = (XColumnRowRange)
+            XColumnRowRange oColumnRowRange =
                 UnoRuntime.queryInterface(XColumnRowRange.class, xSpreadsheet);
             XTableRows oRows = (XTableRows) oColumnRowRange.getRows();
-            XIndexAccess oIndexAccess = (XIndexAccess)
+            XIndexAccess oIndexAccess =
                 UnoRuntime.queryInterface(XIndexAccess.class, oRows);
-            oObj = (XInterface) AnyConverter.toObject(
-                    new Type(XInterface.class),oIndexAccess.getByIndex(6));
+            oObj = AnyConverter.toObject(
+                    XInterface.class,oIndexAccess.getByIndex(6));
         } catch(com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace(log);
             throw new StatusException(

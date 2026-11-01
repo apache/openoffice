@@ -35,7 +35,6 @@ import org.openoffice.setup.Util.InstallChangeCtrl;
 import org.openoffice.setup.Util.LogManager;
 import org.openoffice.setup.Util.SystemManager;
 import java.io.File;
-import java.util.Vector;
 import javax.swing.JDialog;
 import javax.swing.JOptionPane;
 import org.openoffice.setup.Dialogs.DatabaseDialog;

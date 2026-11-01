@@ -42,6 +42,7 @@ class XMLOFF_DLLPUBLIC XMLTextMasterPageContext : public SvXMLStyleContext
 	const ::rtl::OUString sFollowStyle;
 	::rtl::OUString		  sFollow;
 	::rtl::OUString		  sPageMasterName;
+	::rtl::OUString		  sDrawingPageStyleName;
 
 	::com::sun::star::uno::Reference < ::com::sun::star::style::XStyle > xStyle;
 

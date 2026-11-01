@@ -76,7 +76,7 @@ public class DefaultNameGenerator
             name = "file";
         }
 
-        StringBuffer firstFileName = new StringBuffer();
+        StringBuilder firstFileName = new StringBuilder();
         firstFileName.append(name);
         final String suffix;
         if (mimeType != null)

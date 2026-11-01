@@ -125,6 +125,7 @@ public:
 struct SvXMLNumberInfo
 {
 	sal_Int32	nDecimals;
+	sal_Int32	nMinDecimals;
 	sal_Int32	nInteger;
 	sal_Int32	nExpDigits;
 	sal_Int32	nNumerDigits;
@@ -137,7 +138,7 @@ struct SvXMLNumberInfo
 
 	SvXMLNumberInfo()
 	{
-		nDecimals = nInteger = nExpDigits = nNumerDigits = nDenomDigits = -1;
+		nDecimals = nMinDecimals = nInteger = nExpDigits = nNumerDigits = nDenomDigits = -1;
 		bGrouping = bDecReplace = bVarDecimals = sal_False;
 		fDisplayFactor = 1.0;
 	}
@@ -264,6 +265,7 @@ enum SvXMLStyleTokens
 	XML_TOK_STYLE_SECONDS,
 	XML_TOK_STYLE_BOOLEAN,
 	XML_TOK_STYLE_TEXT_CONTENT,
+	XML_TOK_STYLE_FILL_CHARACTER,
 	XML_TOK_STYLE_PROPERTIES,
 	XML_TOK_STYLE_MAP
 };
@@ -287,6 +289,7 @@ enum SvXMLStyleAttrTokens
 enum SvXMLStyleElemAttrTokens
 {
 	XML_TOK_ELEM_ATTR_DECIMAL_PLACES,
+	XML_TOK_ELEM_ATTR_MIN_DECIMAL_PLACES,
 	XML_TOK_ELEM_ATTR_MIN_INTEGER_DIGITS,
 	XML_TOK_ELEM_ATTR_GROUPING,
 	XML_TOK_ELEM_ATTR_DISPLAY_FACTOR,
@@ -542,6 +545,7 @@ const SvXMLTokenMap& SvXMLNumImpData::GetStyleElemTokenMap()
 	        { XML_NAMESPACE_NUMBER, XML_SECONDS,			XML_TOK_STYLE_SECONDS			},
 	        { XML_NAMESPACE_NUMBER, XML_BOOLEAN,			XML_TOK_STYLE_BOOLEAN			},
 	        { XML_NAMESPACE_NUMBER, XML_TEXT_CONTENT,		XML_TOK_STYLE_TEXT_CONTENT		},
+	        { XML_NAMESPACE_NUMBER, XML_FILL_CHARACTER,	XML_TOK_STYLE_FILL_CHARACTER	},
 	        { XML_NAMESPACE_STYLE,  XML_TEXT_PROPERTIES,    XML_TOK_STYLE_PROPERTIES		},
 	        { XML_NAMESPACE_STYLE,  XML_MAP,				XML_TOK_STYLE_MAP				},
 	        XML_TOKEN_MAP_END
@@ -587,6 +591,7 @@ const SvXMLTokenMap& SvXMLNumImpData::GetStyleElemAttrTokenMap()
         {
 	        //	attributes for an element within a style
 	        { XML_NAMESPACE_NUMBER, XML_DECIMAL_PLACES,		     XML_TOK_ELEM_ATTR_DECIMAL_PLACES		},
+	        { XML_NAMESPACE_NUMBER, XML_MIN_DECIMAL_PLACES,      XML_TOK_ELEM_ATTR_MIN_DECIMAL_PLACES	},
 	        { XML_NAMESPACE_NUMBER, XML_MIN_INTEGER_DIGITS,      XML_TOK_ELEM_ATTR_MIN_INTEGER_DIGITS	},
 	        { XML_NAMESPACE_NUMBER, XML_GROUPING,			 	 XML_TOK_ELEM_ATTR_GROUPING				},
 	        { XML_NAMESPACE_NUMBER, XML_DISPLAY_FACTOR,		 	 XML_TOK_ELEM_ATTR_DISPLAY_FACTOR		},
@@ -967,6 +972,10 @@ SvXMLNumFmtElementContext::SvXMLNumFmtElementContext( SvXMLImport& rImport,
 				if ( SvXMLUnitConverter::convertNumber( nAttrVal, sValue, 0 ) )
 					aNumInfo.nDecimals = nAttrVal;
 				break;
+			case XML_TOK_ELEM_ATTR_MIN_DECIMAL_PLACES:
+				if ( SvXMLUnitConverter::convertNumber( nAttrVal, sValue, 0 ) )
+					aNumInfo.nMinDecimals = nAttrVal;
+				break;
 			case XML_TOK_ELEM_ATTR_MIN_INTEGER_DIGITS:
 				if ( SvXMLUnitConverter::convertNumber( nAttrVal, sValue, 0 ) )
 					aNumInfo.nInteger = nAttrVal;
@@ -1111,6 +1120,14 @@ void SvXMLNumFmtElementContext::EndElement()
 
 		case XML_TOK_STYLE_TEXT_CONTENT:
 			rParent.AddToCode( OUString::valueOf((sal_Unicode)'@') );
+			break;
+		case XML_TOK_STYLE_FILL_CHARACTER:
+			// the formatter accepts one '*' per format, and only a BMP character
+			if ( aContent.getLength() == 1 && !rParent.HasFillChar() )
+			{
+				rParent.SetHasFillChar();
+				rParent.AddToCode( OUString::valueOf((sal_Unicode)'*') + aContent.makeStringAndClear() );
+			}
 			break;
 		case XML_TOK_STYLE_BOOLEAN:
 			// ignored - only default boolean format is supported
@@ -1381,6 +1398,7 @@ SvXMLNumFormatContext::SvXMLNumFormatContext( SvXMLImport& rImport,
 	bAutoInt( sal_False ),
 	bHasExtraText( sal_False ),
 	bHasLongDoW( sal_False ),
+	bHasFillChar( sal_False ),
 	bHasEra( sal_False ),
 	bHasDateTime( sal_False ),
 	bRemoveAfterUse( sal_False ),
@@ -1467,6 +1485,9 @@ SvXMLNumFormatContext::SvXMLNumFormatContext( SvXMLImport& rImport,
         SvNumberFormatter* pFormatter = pData->GetNumberFormatter();
         if ( pFormatter )
         {
+            // ODF 1.2 19.364: a missing style means "short"
+            if ( !aNatNumAttr.Style.getLength() )
+                aNatNumAttr.Style = GetXMLToken( XML_SHORT );
             sal_Int32 nNatNum = pFormatter->GetNatNum()->convertFromXmlAttributes( aNatNumAttr );
             aFormatCode.appendAscii( RTL_CONSTASCII_STRINGPARAM( "[NatNum" ) );
             aFormatCode.append( nNatNum, 10 );
@@ -1504,6 +1525,7 @@ SvXMLNumFormatContext::SvXMLNumFormatContext( SvXMLImport& rImport,
 	bAutoInt( sal_False ),
 	bHasExtraText( sal_False ),
 	bHasLongDoW( sal_False ),
+	bHasFillChar( sal_False ),
 	bHasEra( sal_False ),
 	bHasDateTime( sal_False ),
 	bRemoveAfterUse( sal_False ),
@@ -1551,6 +1573,7 @@ SvXMLImportContext* SvXMLNumFormatContext::CreateChildContext(
 		case XML_TOK_STYLE_SECONDS:
 		case XML_TOK_STYLE_BOOLEAN:
 		case XML_TOK_STYLE_TEXT_CONTENT:
+		case XML_TOK_STYLE_FILL_CHARACTER:
 			pContext = new SvXMLNumFmtElementContext( GetImport(), nPrfx, rLName,
 														*this, nToken, xAttrList );
 			break;
@@ -1910,9 +1933,23 @@ void SvXMLNumFormatContext::AddNumber( const SvXMLNumberInfo& rInfo )
 		//!...
 	}
 
+	// decimals beyond the minimum are optional ('#'); a replacement string wins over a minimum
+	sal_uInt16 nMinPrec = 0;
+	if ( !rInfo.bDecReplace )
+	{
+		if ( rInfo.nMinDecimals >= 0 )
+			nMinPrec = (sal_uInt16) rInfo.nMinDecimals;
+		else if ( !rInfo.bVarDecimals )
+			nMinPrec = nPrec;
+		if ( nMinPrec > nPrec )
+			nMinPrec = nPrec;
+	}
+
 	sal_uInt16 nGenPrec = nPrec;
-	if ( rInfo.bDecReplace || rInfo.bVarDecimals )
+	if ( rInfo.bDecReplace )
 		nGenPrec = 0;				// generate format without decimals...
+	else
+		nGenPrec = nMinPrec;
 
 	sal_Bool bGrouping = rInfo.bGrouping;
 	sal_uInt16 nEmbeddedCount = rInfo.aEmbeddedElements.Count();
@@ -1978,14 +2015,18 @@ void SvXMLNumFormatContext::AddNumber( const SvXMLNumberInfo& rInfo )
 
 	aFormatCode.append( aNumStr );
 
-	if ( ( rInfo.bDecReplace || rInfo.bVarDecimals ) && nPrec )		// add decimal replacement (dashes)
+	if ( rInfo.bDecReplace && nPrec )		// add decimal replacement (dashes)
 	{
-		//	add dashes for explicit decimal replacement, # for variable decimals
-		sal_Unicode cAdd = rInfo.bDecReplace ? '-' : '#';
-
 		aFormatCode.append( pData->GetLocaleData( nFormatLang ).getNumDecimalSep() );
 		for ( sal_uInt16 i=0; i<nPrec; i++)
-			aFormatCode.append( cAdd );
+			aFormatCode.append( (sal_Unicode) '-' );
+	}
+	else if ( nPrec > nMinPrec )			// optional decimals
+	{
+		if ( nMinPrec == 0 )
+			aFormatCode.append( pData->GetLocaleData( nFormatLang ).getNumDecimalSep() );
+		for ( sal_uInt16 i=nMinPrec; i<nPrec; i++)
+			aFormatCode.append( (sal_Unicode) '#' );
 	}
 
 	//	add extra thousands separators for display factor

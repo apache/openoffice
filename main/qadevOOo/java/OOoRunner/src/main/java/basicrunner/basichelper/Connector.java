@@ -147,7 +147,7 @@ class ConnectorImpl implements XInitialization, XTypeProvider, XNameAccess {
      */
     public void initialize(Object[] parm1) throws com.sun.star.uno.Exception {
         aState = "just initialized";
-        XConnector cntr = (XConnector)UnoRuntime.queryInterface(
+        XConnector cntr = UnoRuntime.queryInterface(
                                                 XConnector.class, parm1[0]);
         ConnThread aThread = new ConnThread(cntr, (String)parm1[1]);
         aThread.start();

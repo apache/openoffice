@@ -76,7 +76,6 @@ XMLRedlineExport::XMLRedlineExport(SvXMLExport& rExp)
 ,	sRedlineAuthor(RTL_CONSTASCII_USTRINGPARAM("RedlineAuthor"))
 ,	sRedlineComment(RTL_CONSTASCII_USTRINGPARAM("RedlineComment"))
 ,	sRedlineDateTime(RTL_CONSTASCII_USTRINGPARAM("RedlineDateTime"))
-,	sRedlineSuccessorData(RTL_CONSTASCII_USTRINGPARAM("RedlineSuccessorData"))
 ,	sRedlineText(RTL_CONSTASCII_USTRINGPARAM("RedlineText"))
 ,	sRedlineType(RTL_CONSTASCII_USTRINGPARAM("RedlineType"))
 ,	sStyle(RTL_CONSTASCII_USTRINGPARAM("Style"))
@@ -405,28 +404,6 @@ void XMLRedlineExport::ExportChangedRegion(
 		// else: no text interface -> content is inline and will
 		//       be exported there
 	}
-
-	// changed change? Hierarchical changes can onl be two levels
-	// deep. Here we check for the second level.
-	aAny = rPropSet->getPropertyValue(sRedlineSuccessorData);
-	Sequence<PropertyValue> aSuccessorData;
-	aAny >>= aSuccessorData;
-
-	// if we actually got a hierarchical change, make element and
-	// process change info
-	if (aSuccessorData.getLength() > 0)
-	{
-		// The only change that can be "undone" is an insertion -
-		// after all, you can't re-insert an deletion, but you can
-		// delete an insertion. This assumption is asserted in
-		// ExportChangeInfo(Sequence<PropertyValue>&).
-		SvXMLElementExport aSecondChangeElem(
-			rExport, XML_NAMESPACE_TEXT, XML_INSERTION,
-			sal_True, sal_True);
-
-		ExportChangeInfo(aSuccessorData);
-	}
-	// else: no hierarchical change
 }
 
 
@@ -501,56 +478,6 @@ void XMLRedlineExport::ExportChangeInfo(
 	aAny = rPropSet->getPropertyValue(sRedlineComment);
 	aAny >>= sTmp;
     WriteComment( sTmp );
-}
-
-void XMLRedlineExport::ExportChangeInfo(
-	const Sequence<PropertyValue> & rPropertyValues)
-{
-    OUString sComment;
-
-	sal_Int32 nCount = rPropertyValues.getLength();
-	for(sal_Int32 i = 0; i < nCount; i++)
-	{
-		const PropertyValue& rVal = rPropertyValues[i];
-
-		if( rVal.Name.equals(sRedlineAuthor) )
-		{
-			OUString sTmp;
-			rVal.Value >>= sTmp;
-			if (sTmp.getLength() > 0)
-			{
-				rExport.AddAttribute(XML_NAMESPACE_OFFICE, XML_CHG_AUTHOR, sTmp);
-			}
-		}
-        else if( rVal.Name.equals(sRedlineComment) )
-        {
-            rVal.Value >>= sComment;
-        }
-		else if( rVal.Name.equals(sRedlineDateTime) )
-		{
-			util::DateTime aDateTime;
-			rVal.Value >>= aDateTime;
-			OUStringBuffer sBuf;
-			rExport.GetMM100UnitConverter().convertDateTime(sBuf, aDateTime);
-			rExport.AddAttribute(XML_NAMESPACE_OFFICE, XML_CHG_DATE_TIME,
-								 sBuf.makeStringAndClear());
-		}
-		else if( rVal.Name.equals(sRedlineType) )
-		{
-			// check if this is an insertion; cf. comment at calling location
-			OUString sTmp;
-			rVal.Value >>= sTmp;
-			DBG_ASSERT(sTmp.equals(sInsert),
-					   "hierarchical change must be insertion");
-		}
-		// else: unknown value -> ignore
-	}
-
-	// finally write element
-	SvXMLElementExport aChangeInfo(rExport, XML_NAMESPACE_OFFICE,
-								   XML_CHANGE_INFO, sal_True, sal_True);
-
-    WriteComment( sComment );
 }
 
 void XMLRedlineExport::ExportStartOrEndRedline(

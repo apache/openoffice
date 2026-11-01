@@ -579,7 +579,8 @@ void SvXMLNumFmtExport::WriteNumberElement_Impl(
 							sal_Int32 nDecimals, sal_Int32 nInteger,
 							const OUString& rDashStr, sal_Bool bVarDecimals,
 							sal_Bool bGrouping, sal_Int32 nTrailingThousands,
-							const SvXMLEmbeddedTextEntryArr& rEmbeddedEntries )
+							const SvXMLEmbeddedTextEntryArr& rEmbeddedEntries,
+							sal_Int32 nMinDecimals )
 {
 	FinishTextElement_Impl();
 
@@ -588,6 +589,13 @@ void SvXMLNumFmtExport::WriteNumberElement_Impl(
 	{
         rExport.AddAttribute( XML_NAMESPACE_NUMBER, XML_DECIMAL_PLACES,
                               OUString::valueOf( nDecimals ) );
+	}
+
+	//	minimum decimals (ODF 1.3), if some of the decimals are optional
+	if ( nMinDecimals > 0 && nMinDecimals < nDecimals )
+	{
+		rExport.AddAttribute( XML_NAMESPACE_NUMBER, XML_MIN_DECIMAL_PLACES,
+                              OUString::valueOf( nMinDecimals ) );
 	}
 
 	//	integer digits
@@ -654,7 +662,7 @@ void SvXMLNumFmtExport::WriteNumberElement_Impl(
 
 void SvXMLNumFmtExport::WriteScientificElement_Impl(
 							sal_Int32 nDecimals, sal_Int32 nInteger,
-							sal_Bool bGrouping, sal_Int32 nExp )
+							sal_Bool bGrouping, sal_Int32 nExp, sal_Int32 nMinDecimals )
 {
 	FinishTextElement_Impl();
 
@@ -663,6 +671,13 @@ void SvXMLNumFmtExport::WriteScientificElement_Impl(
 	{
 		rExport.AddAttribute( XML_NAMESPACE_NUMBER, XML_DECIMAL_PLACES,
                               OUString::valueOf( nDecimals ) );
+	}
+
+	//	minimum decimals (ODF 1.3); without it all decimals are mandatory
+	if ( nMinDecimals >= 0 && nMinDecimals < nDecimals )
+	{
+		rExport.AddAttribute( XML_NAMESPACE_NUMBER, XML_MIN_DECIMAL_PLACES,
+                              OUString::valueOf( nMinDecimals ) );
 	}
 
 	//	integer digits
@@ -1173,6 +1188,9 @@ void SvXMLNumFmtExport::ExportPart_Impl( const SvNumberformat& rFormat, sal_uInt
 		sal_Bool bInInteger  = sal_True;
 		sal_Int32 nExpDigits = 0;
 		sal_Int32 nIntegerSymbols = 0;			// for embedded-text, including "#"
+		sal_Int32 nDecZeros = 0;				// mandatory decimals: '0's before the first '#'
+		sal_Bool bDecHash = sal_False;			// a '#' was found in the decimals
+		sal_Bool bDecIrregular = sal_False;		// decimals other than 0... followed by #...
 		sal_Int32 nTrailingThousands = 0;		// thousands-separators after all digits
 		OUString sCurrExt;
 		OUString aCalendar;
@@ -1198,6 +1216,19 @@ void SvXMLNumFmtExport::ExportPart_Impl( const SvNumberformat& rFormat, sal_uInt
 						//	If the decimal digits string starts with a '#', variable
 						//	decimals is assumed (for 0.###, but not 0.0##).
 						bVarDecimals = sal_True;
+					}
+					if ( !bExpFound && !bInInteger && !bDecDashes && pElemStr && pElemStr->GetChar(0) != '-' )
+					{
+						for ( xub_StrLen nDec = 0; nDec < pElemStr->Len(); nDec++ )
+						{
+							sal_Unicode cDec = pElemStr->GetChar( nDec );
+							if ( cDec == '0' && !bDecHash )
+								nDecZeros++;
+							else if ( cDec == '#' )
+								bDecHash = sal_True;
+							else
+								bDecIrregular = sal_True;
+						}
 					}
 					if ( bInInteger && pElemStr )
 						nIntegerSymbols += pElemStr->Len();
@@ -1380,6 +1411,12 @@ void SvXMLNumFmtExport::ExportPart_Impl( const SvNumberformat& rFormat, sal_uInt
 				case NF_SYMBOLTYPE_DIGIT:
 					if (!bNumWritten)			// write number part
 					{
+						//	only ODF 1.3 can express mandatory decimals followed by optional ones
+						sal_Int32 nMinDecimals = -1;
+						if ( rExport.getDefaultVersion() >= SvtSaveOptions::ODFVER_013 &&
+								bDecHash && !bDecIrregular && !bDecDashes )
+							nMinDecimals = nDecZeros;
+
 						switch ( nFmtType )
 						{
 							// for type 0 (not recognized as a special type),
@@ -1413,7 +1450,7 @@ void SvXMLNumFmtExport::ExportPart_Impl( const SvNumberformat& rFormat, sal_uInt
 										sDashStr.Fill( nPrecision, '-' );
 
 									WriteNumberElement_Impl( nDecimals, nInteger, sDashStr, bVarDecimals,
-														bThousand, nTrailingThousands, aEmbeddedEntries );
+														bThousand, nTrailingThousands, aEmbeddedEntries, nMinDecimals );
 									bAnyContent = sal_True;
 								}
 								break;
@@ -1421,7 +1458,7 @@ void SvXMLNumFmtExport::ExportPart_Impl( const SvNumberformat& rFormat, sal_uInt
                                 // #i43959# for scientific numbers, count all integer symbols ("0" and "#")
                                 // as integer digits: use nIntegerSymbols instead of nLeading
                                 // (use of '#' to select multiples in exponent might be added later)
-                                WriteScientificElement_Impl( nPrecision, nIntegerSymbols, bThousand, nExpDigits );
+                                WriteScientificElement_Impl( nPrecision, nIntegerSymbols, bThousand, nExpDigits, nMinDecimals );
 								bAnyContent = sal_True;
 								break;
 							case NUMBERFORMAT_FRACTION:

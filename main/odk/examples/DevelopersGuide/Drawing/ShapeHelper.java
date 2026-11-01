@@ -55,7 +55,7 @@ public class ShapeHelper
 	{
 		XShape xShape = createShape( xDrawDoc, aPos, aSize, sShapeType );
 		xShapes.add( xShape );
-		XPropertySet xPropSet = (XPropertySet)
+		XPropertySet xPropSet =
 			UnoRuntime.queryInterface( XPropertySet.class, xShape );
 		return xPropSet;
 	}
@@ -68,10 +68,10 @@ public class ShapeHelper
 	{
 		XShape xShape = null;
 		XMultiServiceFactory xFactory =
-			(XMultiServiceFactory )UnoRuntime.queryInterface(
+			UnoRuntime.queryInterface(
 				XMultiServiceFactory.class, xDrawDoc );
 		Object xObj = xFactory.createInstance( sShapeType );
-		xShape = (XShape)UnoRuntime.queryInterface(
+		xShape = UnoRuntime.queryInterface(
 			XShape.class, xObj );
 		xShape.setPosition( aPos );
 		xShape.setSize( aSize );
@@ -85,7 +85,7 @@ public class ShapeHelper
 	public static XPropertySet addPortion( XShape xShape, String sText, boolean bNewParagraph )
 		throws com.sun.star.lang.IllegalArgumentException
 	{
-		XText xText = (XText)
+		XText xText =
 			UnoRuntime.queryInterface( XText.class, xShape );
 
 		XTextCursor xTextCursor = xText.createTextCursor();
@@ -95,11 +95,11 @@ public class ShapeHelper
 			xText.insertControlCharacter( xTextCursor, ControlCharacter.PARAGRAPH_BREAK, false );
 			xTextCursor.gotoEnd( false );
 		}
-		XTextRange xTextRange = (XTextRange)
+		XTextRange xTextRange =
 			UnoRuntime.queryInterface( XTextRange.class, xTextCursor );
 		xTextRange.setString( sText );
 		xTextCursor.gotoEnd( true );
-		XPropertySet xPropSet = (XPropertySet)
+		XPropertySet xPropSet =
 			UnoRuntime.queryInterface( XPropertySet.class, xTextRange );
 		return xPropSet;
 	}
@@ -112,7 +112,7 @@ public class ShapeHelper
 						com.sun.star.lang.WrappedTargetException,
 							com.sun.star.container.NoSuchElementException
 	{
-		XEnumerationAccess xEnumerationAccess = (XEnumerationAccess)
+		XEnumerationAccess xEnumerationAccess =
 			UnoRuntime.queryInterface( XEnumerationAccess.class, xText );
 		if ( xEnumerationAccess.hasElements() )
 		{
@@ -122,9 +122,9 @@ public class ShapeHelper
 				Object xObj = xEnumeration.nextElement();
 				if ( xEnumeration.hasMoreElements() == false )
 				{
-					XTextContent xTextContent = (XTextContent)UnoRuntime.queryInterface(
+					XTextContent xTextContent = UnoRuntime.queryInterface(
 						XTextContent.class, xObj );
-					XPropertySet xParaPropSet = (XPropertySet)
+					XPropertySet xParaPropSet =
 						UnoRuntime.queryInterface( XPropertySet.class, xTextContent );
 					xParaPropSet.setPropertyValue( sPropName, aValue );
 				}

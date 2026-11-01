@@ -29,11 +29,9 @@ import com.sun.star.beans.XPropertySet;
 import com.sun.star.uno.UnoRuntime;
 import com.sun.star.uno.XComponentContext;
 import com.sun.star.lang.EventObject;
+import java.net.URL;
 import java.util.Hashtable;
 import javax.net.ssl.SSLException;
-
-import org.apache.commons.httpclient.*;
-import org.apache.commons.httpclient.methods.*;
 
 public class WikiEditSettingDialog extends WikiDialog
 {
@@ -202,8 +200,6 @@ public class WikiEditSettingDialog extends WikiDialog
             String sUserName = ( String ) GetPropSet( "UsernameField" ).getPropertyValue( "Text" );
             String sPassword = ( String ) GetPropSet( "PasswordField" ).getPropertyValue( "Text" );
 
-            HostConfiguration aHostConfig = new HostConfiguration();
-            boolean bInitHost = true;
             boolean bAllowIndex = true;
 
             do
@@ -216,32 +212,23 @@ public class WikiEditSettingDialog extends WikiDialog
 
                 if ( sURL.length() > 0 )
                 {
-                    URI aURI = new URI( sURL );
-                    GetMethod aRequest = new GetMethod( aURI.getEscapedPathQuery() );
-                    aRequest.setFollowRedirects( false );
-                    Helper.ExecuteMethod( aRequest, aHostConfig, aURI, m_xContext, bInitHost );
-                    bInitHost = false;
+                    WikiSession.Response aResponse = new WikiSession( m_xContext, null ).Get( new URL( sURL ) );
 
-                    int nResultCode = aRequest.getStatusCode();
                     String sWebPage = null;
-                    if ( nResultCode == 200 )
-                        sWebPage = aRequest.getResponseBodyAsString();
-                    else if ( nResultCode >= 301 && nResultCode <= 303 || nResultCode == 307 )
-                        sRedirectURL = aRequest.getResponseHeader( "Location" ).getValue();
-
-                    aRequest.releaseConnection();
+                    if ( aResponse.m_nStatus == 200 )
+                        sWebPage = aResponse.m_sBody;
 
                     if ( sWebPage != null && sWebPage.length() > 0 )
                     {
                         //the URL is valid
-                        String sMainURL = Helper.GetMainURL( sWebPage, sURL );
+                        String sMainURL = Helper.GetMainURL( sWebPage, aResponse.m_aURL );
 
                         if ( sMainURL.equals( "" ) )
                         {
                             // TODO:
                             // it's not a Wiki Page, check first whether a redirect is requested
                             // happens usually in case of https
-                            sRedirectURL = Helper.GetRedirectURL( sWebPage, sURL );
+                            sRedirectURL = Helper.GetRedirectURL( sWebPage, aResponse.m_aURL );
                             if ( sRedirectURL.equals( "" ) )
                             {
                                 // show error
@@ -255,10 +242,10 @@ public class WikiEditSettingDialog extends WikiDialog
                         }
                         else
                         {
-                            URI aMainURI = new URI( sMainURL, true ); // it must be an escaped URL, otherwise an exception should be thrown
+                            URL aMainURL = new URL( sMainURL );
 
                             if ( ( sUserName.length() > 0 || sPassword.length() > 0 )
-                              && Helper.Login( aMainURI, sUserName, sPassword, m_xContext ) == null )
+                              && Helper.Login( aMainURL, sUserName, sPassword, m_xContext ) == null )
                             {
                                 // a wrong login information is provided
                                 // show error
@@ -271,7 +258,7 @@ public class WikiEditSettingDialog extends WikiDialog
                             }
                             else
                             {
-                                setting.put( "Url", aMainURI.getEscapedURI() );
+                                setting.put( "Url", aMainURL.toString() );
                                 setting.put( "Username", sUserName );
                                 setting.put( "Password", sPassword );
                                 if ( addMode )
@@ -285,7 +272,7 @@ public class WikiEditSettingDialog extends WikiDialog
                             }
                         }
                     }
-                    else if ( sRedirectURL == null || sRedirectURL.length() == 0 )
+                    else
                     {
                         if ( sURL.length() > 0 && !sURL.endsWith( "index.php" ) && bAllowIndex )
                         {

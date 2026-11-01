@@ -53,6 +53,7 @@ set IdentifyQ to "[IdentifyQText]
 set IdentifyYES to "[IdentifyYES]"
 set IdentifyNO to "[IdentifyNO]"
 set installFailed to "[InstallFailedText]"
+set installSignedFailed to "[InstallSignedPatchFailedText]"
 set installComplete to "[InstallCompleteTextPatch]"
 
 set sourcedir to (do shell script "dirname " & quoted form of POSIX path of (path to of me))
@@ -125,6 +126,16 @@ try
 on error
 	display dialog (choice as string) & appInvalid buttons {InstallLabel} default button 1 with icon 0
 	return 3 --wrong target-directory
+end try
+
+-- A patch would break a sealed application. Test for the seal itself: codesign
+-- --display also accepts the linker's ad-hoc signature on arm64.
+try
+	do shell script "test -e " & quoted form of ((choice as string) & "/Contents/_CodeSignature/CodeResources")
+	display dialog installSignedFailed buttons {OKLabel} default button 1 with icon 0
+	return 4
+on error
+	-- Preserve support for unsigned legacy installations.
 end try
 
 (*

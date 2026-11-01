@@ -29,6 +29,7 @@
 #include <hash_map>
 #include <set>
 #include <vector>
+#include <iterator>
 #include <svl/lstner.hxx>
 #include <osl/doublecheckedlocking.h>
 #include <osl/getglobalmutex.hxx>

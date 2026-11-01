@@ -95,7 +95,7 @@ void SAL_CALL Mapping_cli2uno(
 
         if (0 != cliI)
         {
-            System::Object* cliObj= sri::GCHandle::op_Explicit(cliI).Target;
+            System::Object ^ cliObj= sri::GCHandle::FromIntPtr(System::IntPtr(cliI)).Target;
             (*ppOut)= bridge->map_cli2uno(cliObj, (typelib_TypeDescription*) td);
         }
     }
@@ -140,16 +140,21 @@ void SAL_CALL Mapping_uno2cli(
 
         if (0 != *ppDNetI)
         {
-            sri::GCHandle::op_Explicit(ppDNetI).Free();
+            // op_Explicit was MC++'s spelling of the conversion operator;
+            // C++/CLI names it FromIntPtr.  Kept faithful to the original,
+            // which converts the POINTER and not *ppDNetI -- see the guard
+            // just above.  That looks wrong, but changing it is a
+            // behavioural fix and does not belong in a syntax port.
+            sri::GCHandle::FromIntPtr(System::IntPtr(ppDNetI)).Free();
         }
 
         if (0 != pUnoI)
         {
-            System::Object* cliI=  bridge->map_uno2cli(pUnoI, td);
+            System::Object ^ cliI=  bridge->map_uno2cli(pUnoI, td);
             intptr_t ptr= NULL;
             if(cliI)
             {
-                ptr= sri::GCHandle::op_Explicit(sri::GCHandle::Alloc(cliI))
+                ptr= sri::GCHandle::ToIntPtr(sri::GCHandle::Alloc(cliI))
 #ifdef _WIN32
                     .ToInt32();
 #else /* defined(_WIN64) */                 .ToInt64();
@@ -287,8 +292,8 @@ void SAL_CALL uno_initEnvironment( uno_Environment * uno_cli_env )
 	uno_cli_env->pExtEnv = 0;
     //Set the console to print Trace messages
 #if OSL_DEBUG_LEVEL >= 1
-    System::Diagnostics::Trace::get_Listeners()->
-            Add( new System::Diagnostics::TextWriterTraceListener(System::Console::get_Out()));
+    System::Diagnostics::Trace::Listeners->
+            Add( gcnew System::Diagnostics::TextWriterTraceListener(System::Console::Out));
 #endif
     OSL_ASSERT( 0 == uno_cli_env->pContext );
 
@@ -298,7 +303,7 @@ void SAL_CALL uno_initEnvironment( uno_Environment * uno_cli_env )
     //where g_cli_env is accessed.
     //When we compile the bridge with .NET 2 then we can again hold g_cli_env as a static gcroot
     //member in a unmanaged class, such as Bridge.
-	CliEnvHolder::g_cli_env = new Cli_environment();
+	CliEnvHolder::g_cli_env = gcnew Cli_environment();
 }
 //##################################################################################################
 void SAL_CALL uno_ext_getMapping(

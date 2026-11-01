@@ -49,6 +49,12 @@ en-US = "This package requires at least the version '%s' of the Windows Installe
 [%SETUP_NOT_FOUND%]
 en-US = "This package requires the Windows Installer. \nYou need at least Windows Installer '%s' on your system!"
 
+[%OS_TO_OLD%]
+en-US = "This version of %PRODUCTNAME% requires Windows 10 or later. \nIt cannot be installed on this version of Windows."
+
+[%RUNTIME_FAILED%]
+en-US = "The Microsoft Visual C++ runtime could not be installed. \n%PRODUCTNAME% cannot run without it, so the installation has been stopped."
+
 [%USAGE%]
 en-US = "Usage:\n   /? : Shows this dialog.\n   /a : Performs an administrative installation.\n   /j[u|m] : Performs an advertising installation.\n   /q[n] : Do not show any user interface (silent mode).\n"
 

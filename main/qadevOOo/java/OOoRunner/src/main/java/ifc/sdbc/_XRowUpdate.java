@@ -543,7 +543,7 @@ public class _XRowUpdate extends MultiMethodTest {
         try {
             Object oStream = ((XMultiServiceFactory)tParam.getMSF()).
                 createInstance("com.sun.star.io.DataInputStream") ;
-            XInputStream newVal = (XInputStream) UnoRuntime.queryInterface
+            XInputStream newVal = UnoRuntime.queryInterface
                 (XInputStream.class, oStream);
 
             oObj.updateBinaryStream(idx, newVal, 0) ;
@@ -580,7 +580,7 @@ public class _XRowUpdate extends MultiMethodTest {
         try {
             Object oStream = ((XMultiServiceFactory)tParam.getMSF()).
                 createInstance("com.sun.star.io.TextInputStream") ;
-            XInputStream newVal = (XInputStream) UnoRuntime.queryInterface
+            XInputStream newVal = UnoRuntime.queryInterface
                 (XInputStream.class, oStream);
 
             oObj.updateCharacterStream(idx, newVal, 0) ;

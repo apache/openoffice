@@ -77,7 +77,7 @@
   </target>
 
   <target name="compile-javainstaller" depends="prepare" unless="jarFile.uptodate">
-    <javac  srcdir="${source.dir}" source="1.4" target="1.4"
+    <javac  srcdir="${source.dir}" source="1.8" target="1.8"
             destdir="${build.dir}/${classes.dir}/${name}"
             debug="${compile.debug}"
             optimize="${compile.optimize}">

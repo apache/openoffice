@@ -44,6 +44,11 @@ import test.testtools.bridgetest.SmallStruct;
 import test.testtools.bridgetest.MediumStruct;
 import test.testtools.bridgetest.BigStruct;
 import test.testtools.bridgetest.AllFloats;
+import test.testtools.bridgetest.TwoFloats;
+import test.testtools.bridgetest.ThreeDoubles;
+import test.testtools.bridgetest.MixedFloatLong;
+import test.testtools.bridgetest.OneByte;
+import test.testtools.bridgetest.ThreeLongs;
 import test.testtools.bridgetest.XBridgeTest;
 import test.testtools.bridgetest.XBridgeTest2;
 import test.testtools.bridgetest.XCurrentContextChecker;
@@ -488,8 +493,46 @@ public class TestComponent {
 			return i_Struct;
 		}
 
+		public TwoFloats echoTwoFloats( TwoFloats i_Struct) throws com.sun.star.uno.RuntimeException {
+			return i_Struct;
+		}
+
+		public ThreeDoubles echoThreeDoubles( ThreeDoubles i_Struct) throws com.sun.star.uno.RuntimeException {
+			return i_Struct;
+		}
+
+		public MixedFloatLong echoMixedFloatLong( MixedFloatLong i_Struct) throws com.sun.star.uno.RuntimeException {
+			return i_Struct;
+		}
+
+		public OneByte echoOneByte( OneByte i_Struct) throws com.sun.star.uno.RuntimeException {
+			return i_Struct;
+		}
+
+		public ThreeLongs echoThreeLongs( ThreeLongs i_Struct) throws com.sun.star.uno.RuntimeException {
+			return i_Struct;
+		}
+
 		public int testPPCAlignment( long l1, long l2, int i1, long l3, int i2 ) throws com.sun.star.uno.RuntimeException {
 			return i2;
+		}
+
+		public long testPackedStack( long a0, long a1, long a2, long a3, long a4, long a5, long a6,
+									 byte b, byte c, short s, int l, byte d, long h )
+			throws com.sun.star.uno.RuntimeException
+		{
+			return ((((long)b) << 56) |
+					(((long)(c & 0xff)) << 48) |
+					(((long)(s & 0xffff)) << 32) |
+					(((long)l) & 0xffffffffL)) ^
+					(((long)d) << 24) ^ h;
+		}
+
+		public double testFpStack( double a0, double a1, double a2, double a3, double a4,
+								   double a5, double a6, double a7, float f8, double d9 )
+			throws com.sun.star.uno.RuntimeException
+		{
+			return (double)f8 + d9;
 		}
 
 		// Attributes

@@ -34,6 +34,13 @@ use installer::strip;
 use installer::systemactions;
 use installer::worker;
 
+sub shell_quote
+{
+	my ( $value ) = @_;
+	$value =~ s/'/'"'"'/g;
+	return "'$value'";
+}
+
 ####################################################
 # Checking if the simple packager is required.
 # This can be achieved by setting the global
@@ -416,7 +423,7 @@ sub create_package
 
 		if ( ! $allvariables->{'HIDELICENSEDIALOG'} )
 		{
-			installer::scriptitems::get_sourcepath_from_filename_and_includepath( \$sla, $includepatharrayref, 0);
+			$ref = installer::scriptitems::get_sourcepath_from_filename_and_includepath( \$sla, $includepatharrayref, 0);
 		}
 
 		my $localtempdir = $tempdir;
@@ -464,11 +471,14 @@ sub create_package
 				$installer::logger::Lang->print($infoline);
 			}
 
+			# codesign treats loose files in Contents as unsigned nested code.
+			my $resourcesfolder = $contentsfolder . "/Resources";
 			my $sourcefile = $appfolder . "/" . $tarballname;
-			my $destfile = $contentsfolder . "/" . $tarballname;
+			my $destfile = $resourcesfolder . "/" . $tarballname;
 
 			installer::systemactions::remove_complete_directory($contentsfolder);
 			installer::systemactions::create_directory($contentsfolder);
+			installer::systemactions::create_directory($resourcesfolder);
 
 			installer::systemactions::copy_one_file($sourcefile, $destfile);
 			unlink($sourcefile);
@@ -495,8 +505,10 @@ sub create_package
 			my $translationfileref = installer::scriptitems::get_sourcepath_from_filename_and_includepath( \$translationfilename, $includepatharrayref, 0);
 			if ($$translationfileref eq "") { installer::exiter::exit_program("ERROR: Could not find Apple script translation file $translationfilename!", "create_package"); }
 
-			$scriptfilename = $contentsfolder . "/" . $scriptrealfilename;
-			$scripthelperrealfilename = $contentsfolder . "/" . $scripthelperrealfilename;
+			$scriptfilename = $resourcesfolder . "/" . $scriptrealfilename;
+			my $macosfolder = $contentsfolder . "/MacOS";
+			installer::systemactions::create_directory($macosfolder);
+			$scripthelperrealfilename = $macosfolder . "/" . $scripthelperrealfilename;
 
 			installer::systemactions::copy_one_file($$scriptref, $scriptfilename);
 			installer::systemactions::copy_one_file($$scripthelperref, $scripthelperrealfilename);
@@ -520,9 +532,7 @@ sub create_package
 			my $iconfile = "ooo3_installer.icns";
 			my $iconfileref = installer::scriptitems::get_sourcepath_from_filename_and_includepath( \$iconfile, $includepatharrayref, 0);
 			if ($$iconfileref eq "") { installer::exiter::exit_program("ERROR: Could not find Apple script icon file $iconfile!", "create_package"); }
-			my $subdir = $contentsfolder . "/" . "Resources";
-			if ( ! -d $subdir ) { installer::systemactions::create_directory($subdir); }
-			$destfile = $subdir . "/" . $iconfile;
+			$destfile = $resourcesfolder . "/" . $iconfile;
 			installer::systemactions::copy_one_file($$iconfileref, $destfile);
 
 			my $infoplistfile = "Info.plist.langpack";
@@ -541,11 +551,49 @@ sub create_package
 			chdir $localfrom;
 		}
 
-		$systemcall = "cd $localtempdir && hdiutil makehybrid -hfs -hfs-openfolder $folder $folder -hfs-volume-name \"$volume_name\" -ov -o $installdir/tmp && hdiutil convert -ov -format UDZO $installdir/tmp.dmg -o $archive && ";
-        if (( $ref ne "" ) && ( $$ref ne "" )) {
-			$systemcall .= "hdiutil unflatten $archive && Rez -a $$ref -o $archive && hdiutil flatten $archive &&";
+		# A build-time load path left in a shipped Mach-O breaks at runtime, signed or not.
+		# The language-pack app is only scripts and a plist, so it has no Mach-O to check.
+		foreach my $appdir ( $installer::globals::languagepack ? () : glob("$localtempdir/$folder/*.app") )
+		{
+			my $checkreturn = system($ENV{'SOLARENV'} . "/bin/macosx-check-load-commands.sh", $appdir);
+			if ( $checkreturn ) { installer::exiter::exit_program("ERROR: Unrelocated Mach-O load commands in $appdir!", "create_package"); }
 		}
-		$systemcall .= "rm -f $installdir/tmp.dmg";
+
+		# Code-sign the .app before it is sealed into the .dmg. Opt-in: without
+		# MACOSX_CODESIGNING_IDENTITY the installation set is left as it was.
+		if ( $ENV{'MACOSX_CODESIGNING_IDENTITY'} )
+		{
+			my $signscript = $ENV{'SOLARENV'} . "/bin/macosx-codesign.sh";
+			foreach my $appdir ( glob("$localtempdir/$folder/*.app") )
+			{
+				my @signcall = ($signscript, "-i", $ENV{'MACOSX_CODESIGNING_IDENTITY'});
+				push(@signcall, "-k", $ENV{'MACOSX_CODESIGNING_KEYCHAIN'}) if $ENV{'MACOSX_CODESIGNING_KEYCHAIN'};
+				push(@signcall, "--notarize", $ENV{'MACOSX_NOTARY_PROFILE'}) if $ENV{'MACOSX_NOTARY_PROFILE'};
+				push(@signcall, $appdir);
+				my $signreturn = system(@signcall);
+				if ( $signreturn ) { installer::exiter::exit_program("ERROR: Could not code-sign $appdir!", "create_package"); }
+				$installer::logger::Lang->print("Success: Code-signed $appdir\n");
+			}
+		}
+
+		# "hdiutil makehybrid -hfs" stamps an (empty) com.apple.FinderInfo onto
+		# every file in the image, which makes "codesign --verify --strict"
+		# reject the signed application inside the .dmg and would fail
+		# notarization. "hdiutil create -srcfolder" copies the files as they
+		# are. (The -hfs-openfolder auto-open it also did is not supported on
+		# Apple Silicon any more: bless refuses it.)
+		# "-fs HFS+" is not optional: left to itself "hdiutil create" makes an
+		# APFS image on recent macOS, which will not mount before 10.12.
+		# "makehybrid -hfs" always produced HFS+.
+		$systemcall = "cd " . shell_quote($localtempdir) .
+			" && hdiutil create -srcfolder " . shell_quote($folder) .
+			" -volname " . shell_quote($volume_name) .
+			" -fs HFS+ -format UDZO -ov " . shell_quote($archive);
+        if (( $ref ne "" ) && ( $$ref ne "" )) {
+			$systemcall .= " && hdiutil unflatten " . shell_quote($archive) .
+				" && Rez -a " . shell_quote($$ref) . " -o " . shell_quote($archive) .
+				" && hdiutil flatten " . shell_quote($archive);
+		}
 	}
 	else
 	{
@@ -581,6 +629,28 @@ sub create_package
 		{
 			$infoline = "Success: Executed \"$systemcall\" successfully!\n";
 			$installer::logger::Lang->print($infoline);
+			# Sign the finished disk image. This completes the chain: the .app
+			# inside was signed before the image was built, and the image itself
+			# is signed here. It has to happen at this point rather than earlier -
+			# the Rez step above rewrites the image to attach the license
+			# resource, and that would invalidate a signature applied before it.
+			#
+			# Skipped for an ad-hoc identity: an ad-hoc signed .dmg buys nothing
+			# (Gatekeeper rejects it either way) and macosx-codesign.sh refuses
+			# it outright, which would turn a working ad-hoc build into an error.
+			if (( $archive =~ /dmg$/ ) &&
+			    ( $ENV{'MACOSX_CODESIGNING_IDENTITY'} ) &&
+			    ( $ENV{'MACOSX_CODESIGNING_IDENTITY'} ne "-" ))
+			{
+				my $signscript = $ENV{'SOLARENV'} . "/bin/macosx-codesign.sh";
+				my @signcall = ($signscript, "-i", $ENV{'MACOSX_CODESIGNING_IDENTITY'});
+				push(@signcall, "-k", $ENV{'MACOSX_CODESIGNING_KEYCHAIN'}) if $ENV{'MACOSX_CODESIGNING_KEYCHAIN'};
+				push(@signcall, "--notarize", $ENV{'MACOSX_NOTARY_PROFILE'}) if $ENV{'MACOSX_NOTARY_PROFILE'};
+				push(@signcall, $archive);
+				my $signreturn = system(@signcall);
+				if ( $signreturn ) { installer::exiter::exit_program("ERROR: Could not code-sign $archive!", "create_package"); }
+				$installer::logger::Lang->print("Success: Code-signed $archive\n");
+			}
 		}
 	}
 

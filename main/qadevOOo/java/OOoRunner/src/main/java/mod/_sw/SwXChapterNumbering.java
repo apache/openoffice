@@ -92,7 +92,7 @@ public class SwXChapterNumbering extends TestCase {
             TestParameters tParam, PrintWriter log ) throws StatusException {
         XInterface oObj = null;
 
-        XChapterNumberingSupplier oCNSupp = (XChapterNumberingSupplier)
+        XChapterNumberingSupplier oCNSupp =
             UnoRuntime.queryInterface(XChapterNumberingSupplier.class,xTextDoc);
         oObj = oCNSupp.getChapterNumberingRules();
 

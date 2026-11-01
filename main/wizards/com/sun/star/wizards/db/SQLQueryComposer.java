@@ -430,7 +430,7 @@ public class SQLQueryComposer
                 {
                     continue;
                 }
-                final StringBuffer textualValue = new StringBuffer((String) structuredFilter[i][j].Value);
+                final StringBuilder textualValue = new StringBuilder((String) structuredFilter[i][j].Value);
                 switch (structuredFilter[i][j].Handle)
                 {
                     case SQLFilterOperator.EQUAL:

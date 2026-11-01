@@ -100,7 +100,7 @@ public class ScDatabaseRangeObj extends TestCase {
     protected void cleanup(TestParameters tParam, PrintWriter log) {
         log.println("    disposing xSheetDoc ");
 
-        XComponent oComp = (XComponent) UnoRuntime.queryInterface(
+        XComponent oComp = UnoRuntime.queryInterface(
                                    XComponent.class, xSheetDoc);
         util.DesktopTools.closeDoc(oComp);
     }
@@ -135,7 +135,7 @@ public class ScDatabaseRangeObj extends TestCase {
 
         log.println("Getting test object ");
 
-        XPropertySet docProps = (XPropertySet) UnoRuntime.queryInterface(
+        XPropertySet docProps = UnoRuntime.queryInterface(
                                         XPropertySet.class, xSheetDoc);
 
         XSpreadsheets sheets = xSheetDoc.getSheets();
@@ -145,10 +145,10 @@ public class ScDatabaseRangeObj extends TestCase {
 
         try {
             Object sheet = sheets.getByName(names[0]);
-            xImp = (XImportable) UnoRuntime.queryInterface(XImportable.class,
+            xImp = UnoRuntime.queryInterface(XImportable.class,
                                                            sheet);
-            dbRanges = (XDatabaseRanges) AnyConverter.toObject(
-                               new Type(XDatabaseRanges.class),
+            dbRanges = AnyConverter.toObject(
+                               XDatabaseRanges.class,
                                docProps.getPropertyValue("DatabaseRanges"));
             _doImport(xImp);
         } catch (com.sun.star.lang.WrappedTargetException e) {
@@ -174,26 +174,26 @@ public class ScDatabaseRangeObj extends TestCase {
         CellRangeAddress aRange = null;
 
         //dbRanges.addNewByName("dbRange", aRange);
-        XNameAccess dbrNA = (XNameAccess) UnoRuntime.queryInterface(
+        XNameAccess dbrNA = UnoRuntime.queryInterface(
                                     XNameAccess.class, dbRanges);
         XNamed xNamed = null;
 
         try {
             String[] dbNames = dbrNA.getElementNames();
-            xNamed = (XNamed) UnoRuntime.queryInterface(XNamed.class,
+            xNamed = UnoRuntime.queryInterface(XNamed.class,
                                                         dbrNA.getByName(
                                                                 dbNames[0]));
             xNamed.setName("dbRange");
 
-            XCellRangeReferrer aReferrer = (XCellRangeReferrer) UnoRuntime.queryInterface(
+            XCellRangeReferrer aReferrer = UnoRuntime.queryInterface(
                                                    XCellRangeReferrer.class,
                                                    dbrNA.getByName("dbRange"));
-            XCellRangeAddressable aRangeA = (XCellRangeAddressable) UnoRuntime.queryInterface(
+            XCellRangeAddressable aRangeA = UnoRuntime.queryInterface(
                                                     XCellRangeAddressable.class,
                                                     aReferrer.getReferredCells());
             aRange = aRangeA.getRangeAddress();
-            oObj = (XInterface) AnyConverter.toObject(
-                           new Type(XInterface.class),
+            oObj = AnyConverter.toObject(
+                           XInterface.class,
                            dbrNA.getByName("dbRange"));
         } catch (com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace(log);
@@ -219,7 +219,7 @@ public class ScDatabaseRangeObj extends TestCase {
 
         try {
             Object sheet = sheets.getByName(names[0]);
-            xCellRange = (XCellRange) UnoRuntime.queryInterface(
+            xCellRange = UnoRuntime.queryInterface(
                                  XCellRange.class, sheet);
         } catch (com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace(log);

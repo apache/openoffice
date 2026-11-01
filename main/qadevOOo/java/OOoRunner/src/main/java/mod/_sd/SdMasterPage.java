@@ -137,17 +137,17 @@ public class SdMasterPage extends TestCase {
 
         // get the MasterPages here
         log.println( "getting MasterPages" );
-        XMasterPagesSupplier oMPS = (XMasterPagesSupplier)
+        XMasterPagesSupplier oMPS =
             UnoRuntime.queryInterface(XMasterPagesSupplier.class, xDrawDoc);
         XDrawPages oMPn = oMPS.getMasterPages();
-        XIndexAccess oMPi = (XIndexAccess)
+        XIndexAccess oMPi =
             UnoRuntime.queryInterface(XIndexAccess.class, oMPn);
 
         log.println( "getting MasterPage" );
         XInterface oObj = null;
         try {
-            oObj = (XDrawPage) AnyConverter.toObject(
-                        new Type(XDrawPage.class),oMPi.getByIndex(0));
+            oObj = AnyConverter.toObject(
+                        XDrawPage.class,oMPi.getByIndex(0));
         } catch (com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace( log );
             throw new StatusException("Couldn't get MasterPage by index", e);
@@ -165,7 +165,7 @@ public class SdMasterPage extends TestCase {
 
         //put something on the masterpage
         log.println( "inserting some Shapes" );
-        XShapes oShapes = (XShapes)
+        XShapes oShapes =
             UnoRuntime.queryInterface(XShapes.class, oObj);
         oShapes.add(SOF.createShape(xDrawDoc, 2000, 1500, 1000, 1000, "Line"));
         oShapes.add(SOF.createShape

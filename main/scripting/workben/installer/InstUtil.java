@@ -34,10 +34,10 @@ public class InstUtil {
 
     public static File buildSversionLocation() throws IOException {
 		File theFile = null;
-        StringBuffer str = new StringBuffer();
+        StringBuilder str = new StringBuilder();
         str.append(System.getProperty("user.home"));
         str.append(File.separator);
-		StringBuffer thePath = new StringBuffer(str.toString());
+		StringBuilder thePath = new StringBuilder(str.toString());
 
         String os = System.getProperty("os.name");
 
@@ -133,10 +133,10 @@ public class InstUtil {
 	File theFile = null;
 	Properties results = new Properties();
 
-	StringBuffer str = new StringBuffer();
+	StringBuilder str = new StringBuilder();
         str.append(System.getProperty("user.home"));
         str.append(File.separator);
-	StringBuffer thePath = new StringBuffer(str.toString());
+	StringBuilder thePath = new StringBuilder(str.toString());
 
         String os = System.getProperty("os.name");
 
@@ -191,10 +191,10 @@ public class InstUtil {
 	File theFile = null;
 	Properties results = new Properties();
 
-	StringBuffer str = new StringBuffer();
+	StringBuilder str = new StringBuilder();
         str.append(System.getProperty("user.home"));
         str.append(File.separator);
-	StringBuffer thePath = new StringBuffer(str.toString());
+	StringBuilder thePath = new StringBuilder(str.toString());
 
         String os = System.getProperty("os.name");
         thePath.append(".jedit");
@@ -338,7 +338,6 @@ public class InstUtil {
 
     public static Properties getOfficeVersions(File sversionFile) throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader(sversionFile));
-        Vector values;
         String sectionName = null;
         Properties results = new Properties();
 

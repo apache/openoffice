@@ -21,8 +21,6 @@
 
 
 
-import java.util.Vector;
-
 import java.io.File;
 import java.io.FileOutputStream;
 
@@ -70,7 +68,7 @@ public class Helper {
 
         XMultiComponentFactory xMCF = m_xContext.getServiceManager();
 
-        m_ucb = (XInterface)UnoRuntime.queryInterface(XInterface.class,
+        m_ucb = UnoRuntime.queryInterface(XInterface.class,
             xMCF.createInstanceWithContext(
                         "com.sun.star.ucb.UniversalContentBroker", m_xContext));
     }
@@ -98,10 +96,10 @@ public class Helper {
 
             // Obtain required UCB interfaces...
             XContentIdentifierFactory idFactory
-                = ( XContentIdentifierFactory )UnoRuntime.queryInterface(
+                = UnoRuntime.queryInterface(
                     XContentIdentifierFactory.class, m_ucb );
             XContentProvider provider
-                = ( XContentProvider )UnoRuntime.queryInterface(
+                = UnoRuntime.queryInterface(
                     XContentProvider.class, m_ucb );
 
             // Create identifier object for given URL.
@@ -147,7 +145,7 @@ public class Helper {
         /////////////////////////////////////////////////////////////////////
 
         XCommandProcessor cmdProcessor
-            = (XCommandProcessor)UnoRuntime.queryInterface(
+            = UnoRuntime.queryInterface(
                 XCommandProcessor.class, ifc );
 
         /////////////////////////////////////////////////////////////////////
@@ -170,7 +168,7 @@ public class Helper {
 			File file = new File( systemPath );
             String url = file.toURL().toString();
             if ( url.charAt( 6 ) != '/' ) { // file:/xxx vs. file:///xxxx
-                StringBuffer buf1 = new StringBuffer( "file:///" );
+                StringBuilder buf1 = new StringBuilder( "file:///" );
                 buf1.append( url.substring( 6 ) );
                 url = buf1.toString();
             }
@@ -187,7 +185,7 @@ public class Helper {
     {
         // get url of current dir.
         String url = getAbsoluteFileURLFromSystemPath( "" );
-		StringBuffer buf = new StringBuffer( url );
+		StringBuilder buf = new StringBuilder( url );
         if ( !url.endsWith( File.separator ) )
             buf.append( File.separator );
 		buf.append( relativeURL );
@@ -198,7 +196,7 @@ public class Helper {
     {
         try
         {
-            StringBuffer buf = new StringBuffer();
+            StringBuilder buf = new StringBuilder();
             if ( workDir != null && workDir.length() > 0 ) {
                 buf.append( workDir );
                 buf.append( File.separator );
@@ -208,7 +206,7 @@ public class Helper {
             File file = new File( buf.toString() );
             String url = file.toURL().toString();
             if ( url.charAt( 6 ) != '/' ) { // file:/xxx vs. file:///xxxx
-                StringBuffer buf1 = new StringBuffer( "file:///" );
+                StringBuilder buf1 = new StringBuilder( "file:///" );
                 buf1.append( url.substring( 6 ) );
                 url = buf1.toString();
             }

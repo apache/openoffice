@@ -266,7 +266,7 @@ public class InsertCalcSheetTest {
         XDesktop xDesktop = unoApp.getDesktop();
         // xDesktop.getCurrentComponent returns an XComponent (XModel)
         XComponent xComponent = xDesktop.getCurrentComponent();
-        XSpreadsheetDocument tempscDocument = (XSpreadsheetDocument)UnoRuntime.queryInterface(
+        XSpreadsheetDocument tempscDocument = UnoRuntime.queryInterface(
                 XSpreadsheetDocument.class, xComponent);
 
         scDocument = tempscDocument;
@@ -315,7 +315,7 @@ public class InsertCalcSheetTest {
         // get the current document as tempscdocument
         xDesktop = unoApp.getDesktop();
         xComponent = xDesktop.getCurrentComponent();
-        tempscDocument = (XSpreadsheetDocument)UnoRuntime.queryInterface(
+        tempscDocument = UnoRuntime.queryInterface(
                 XSpreadsheetDocument.class, xComponent);
 
         scDocument = tempscDocument;
@@ -328,7 +328,7 @@ public class InsertCalcSheetTest {
                 .queryInterface(XPropertySet.class, scDocument);
         Object sheetLinks = sheetpropertyset.getPropertyValue("SheetLinks");
 
-        XIndexAccess xsheetlinks = (XIndexAccess) UnoRuntime.queryInterface(
+        XIndexAccess xsheetlinks = UnoRuntime.queryInterface(
                 XIndexAccess.class, sheetLinks);
 
         // Refresh all links
@@ -485,7 +485,7 @@ public class InsertCalcSheetTest {
         // get the current document as tempscdocument
         XDesktop xDesktop = unoApp.getDesktop();
         XComponent xComponent = xDesktop.getCurrentComponent();
-        XSpreadsheetDocument tempscDocument = (XSpreadsheetDocument)UnoRuntime.queryInterface(
+        XSpreadsheetDocument tempscDocument = UnoRuntime.queryInterface(
                 XSpreadsheetDocument.class, xComponent);
 
         scDocument = tempscDocument;
@@ -532,7 +532,7 @@ public class InsertCalcSheetTest {
         // get the current document as tempscdocument
         xDesktop = unoApp.getDesktop();
         xComponent = xDesktop.getCurrentComponent();
-        tempscDocument = (XSpreadsheetDocument)UnoRuntime.queryInterface(
+        tempscDocument = UnoRuntime.queryInterface(
                 XSpreadsheetDocument.class, xComponent);
 
         scDocument = tempscDocument;
@@ -545,7 +545,7 @@ public class InsertCalcSheetTest {
                 .queryInterface(XPropertySet.class, scDocument);
         Object sheetLinks = sheetpropertyset.getPropertyValue("SheetLinks");
 
-        XIndexAccess xsheetlinks = (XIndexAccess) UnoRuntime.queryInterface(
+        XIndexAccess xsheetlinks = UnoRuntime.queryInterface(
                 XIndexAccess.class, sheetLinks);
 
         log.info("refreshing all links...");
@@ -694,7 +694,7 @@ public class InsertCalcSheetTest {
         XDesktop xDesktop = unoApp.getDesktop();
         // xDesktop.getCurrentComponent returns an XComponent (XModel)
         XComponent xComponent = xDesktop.getCurrentComponent();
-        XSpreadsheetDocument tempscDocument = (XSpreadsheetDocument)UnoRuntime.queryInterface(
+        XSpreadsheetDocument tempscDocument = UnoRuntime.queryInterface(
                 XSpreadsheetDocument.class, xComponent);
 
         scDocument = tempscDocument;
@@ -733,7 +733,7 @@ public class InsertCalcSheetTest {
         // get the current document as tempscdocument
         xDesktop = unoApp.getDesktop();
         xComponent = xDesktop.getCurrentComponent();
-        tempscDocument = (XSpreadsheetDocument)UnoRuntime.queryInterface(
+        tempscDocument = UnoRuntime.queryInterface(
                 XSpreadsheetDocument.class, xComponent);
 
         scDocument = tempscDocument;
@@ -746,7 +746,7 @@ public class InsertCalcSheetTest {
                 .queryInterface(XPropertySet.class, scDocument);
         Object sheetLinks = sheetpropertyset.getPropertyValue("SheetLinks");
 
-        XIndexAccess xsheetlinks = (XIndexAccess) UnoRuntime.queryInterface(
+        XIndexAccess xsheetlinks = UnoRuntime.queryInterface(
                 XIndexAccess.class, sheetLinks);
 
         log.info("Number of Links should be 0");

@@ -1451,6 +1451,10 @@ void XMLShapeExport::ImpExportConnectorShape(
 
             // write point array
             mrExport.AddAttribute(XML_NAMESPACE_SVG, XML_D, aPolygonString);
+
+            const basegfx::B2DRange aPathRange(basegfx::tools::getRange(aPolyPolygon));
+            SdXMLImExViewBox aViewBox(0, 0, FRound(aPathRange.getWidth()) + 1, FRound(aPathRange.getHeight()) + 1);
+            if( mrExport.getDefaultVersion() < SvtSaveOptions::ODFVER_010 || mrExport.getDefaultVersion() >= SvtSaveOptions::ODFVER_012 ) mrExport.AddAttribute(XML_NAMESPACE_SVG, XML_VIEWBOX, aViewBox.GetExportString());
         }
     }
 
@@ -1590,6 +1594,18 @@ void XMLShapeExport::ImpExportOLE2Shape(
 		sal_Bool bCreateNewline( (nFeatures & SEF_EXPORT_NO_WS) == 0 ); // #86116#/#92210#
 		sal_Bool bExportEmbedded(0 != (mrExport.getExportFlags() & EXPORT_EMBEDDED));
 		OUString sPersistName;
+		if( SvtSaveOptions::IsODFStrict( mrExport.getDefaultVersion() ) && !bIsEmptyPresObj && !bExportEmbedded )
+		{
+			// neither link nor content is invalid in 1.2, and the replacement image would only name an empty object
+			sal_Bool bIsInt = sal_False;
+			OUString sLinkURL, sObjName;
+			xPropSet->getPropertyValue(OUString(RTL_CONSTASCII_USTRINGPARAM("IsInternal"))) >>= bIsInt;
+			if( bIsInt )
+				xPropSet->getPropertyValue( OUString::createFromAscii( "LinkURL" ) ) >>= sLinkURL;
+			xPropSet->getPropertyValue(OUString(RTL_CONSTASCII_USTRINGPARAM("PersistName"))) >>= sObjName;
+			if( !sLinkURL.getLength() && !sObjName.getLength() )
+				return;
+		}
 		SvXMLElementExport aElement( mrExport, XML_NAMESPACE_DRAW,
 								  XML_FRAME, bCreateNewline, sal_True );
 
@@ -1664,7 +1680,8 @@ void XMLShapeExport::ImpExportOLE2Shape(
 			SvXMLElementExport aElem( mrExport, XML_NAMESPACE_DRAW, eElem, sal_True, sal_True );
 
             // #i118485# Add text export, the draw OLE shape allows text now
-            ImpExportText( xShape );
+            uno::Reference< text::XText > xOleText( xShape, uno::UNO_QUERY );
+            if( ( mrExport.getDefaultVersion() < SvtSaveOptions::ODFVER_010 || SvtSaveOptions::IsODFExtended( mrExport.getDefaultVersion() ) ) && xOleText.is() && xOleText->getString().getLength() ) ImpExportText( xShape );
 
 			if(bExportEmbedded && !bIsEmptyPresObj)
 			{

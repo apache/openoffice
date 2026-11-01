@@ -123,9 +123,9 @@ public class AccessibleMenu extends TestCase {
 
         TestEnvironment tEnv = new TestEnvironment(oObj);
 
-        final XAccessibleAction act1 = (XAccessibleAction) UnoRuntime.queryInterface(
+        final XAccessibleAction act1 = UnoRuntime.queryInterface(
                                                XAccessibleAction.class, oObj);
-        final XAccessibleAction act2 = (XAccessibleAction) UnoRuntime.queryInterface(
+        final XAccessibleAction act2 = UnoRuntime.queryInterface(
                                                XAccessibleAction.class, menu2);
 
         tEnv.addObjRelation("EventProducer",
@@ -145,7 +145,7 @@ public class AccessibleMenu extends TestCase {
             }
         });
 
-        XAccessibleText text = (XAccessibleText) UnoRuntime.queryInterface(
+        XAccessibleText text = UnoRuntime.queryInterface(
                                        XAccessibleText.class, oObj);
 
         tEnv.addObjRelation("XAccessibleText.Text", text.getText());

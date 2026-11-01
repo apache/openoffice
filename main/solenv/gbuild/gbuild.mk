@@ -266,6 +266,7 @@ include $(foreach class, \
 	Module \
 	UnoApiTarget \
 	Zip \
+	Configuration \
 ,$(GBUILDDIR)/$(class).mk)
 
 # optional extensions that should never be essential

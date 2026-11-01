@@ -52,7 +52,7 @@ public class CharacterUnderline {
 	}
 	@Test@Ignore("Bug #120657 - [testUNO patch]underline color lost and individual words option disable when save to doc")
 	public void testCharacterUnderlineSetting() throws Exception {
-		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
+		XTextDocument xTextDocument = UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
 		xText = xTextDocument.getText();
 		xText.setString("We are Chinese,they are American. We are all living in one earth!"
 				+ "and we all love our home very much!!!We are Chinese,they are American. " +
@@ -82,7 +82,7 @@ public class CharacterUnderline {
 				"We are all living in one earth!");
 		// create text cursor for selecting and formatting text
 		XTextCursor xTextCursor = xText.createTextCursor();
-		XPropertySet xCursorProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
+		XPropertySet xCursorProps = UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
 		xTextCursor.gotoStart(false);
 		xTextCursor.goRight((short) 100, true);
 		xCursorProps.setPropertyValue("CharWordMode", true);
@@ -196,7 +196,7 @@ public class CharacterUnderline {
 		xCursorProps.setPropertyValue("CharUnderlineHasColor", true);
 		xCursorProps.setPropertyValue("CharUnderlineColor", 0x0000FF00);
 		//save to odt
-		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_odt = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
 		aStoreProperties_odt[1] = new PropertyValue();
@@ -206,7 +206,7 @@ public class CharacterUnderline {
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
 		//save to doc
-		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_doc = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
 		aStoreProperties_doc[1] = new PropertyValue();
@@ -218,9 +218,9 @@ public class CharacterUnderline {
 		app.closeDocument(xTextDocument);
 
 		//reopen the document and assert row height setting
-		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
+		XTextDocument assertDocument_odt=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
 		XTextCursor xTextCursor_assert_odt = assertDocument_odt.getText().createTextCursor();
-		XPropertySet xCursorProps_assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor_assert_odt);
+		XPropertySet xCursorProps_assert_odt = UnoRuntime.queryInterface(XPropertySet.class, xTextCursor_assert_odt);
 
 		xTextCursor_assert_odt.gotoStart(false);
 		xTextCursor_assert_odt.goRight((short) 100, true);
@@ -334,9 +334,9 @@ public class CharacterUnderline {
 		assertEquals("assert underline color",0x0000FF00,xCursorProps_assert_odt.getPropertyValue("CharUnderlineColor"));
 
 		//reopen the document and assert row height setting
-		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
+		XTextDocument assertDocument_doc=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
 		XTextCursor xTextCursor_assert_doc = assertDocument_doc.getText().createTextCursor();
-		XPropertySet xCursorProps_assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor_assert_doc);
+		XPropertySet xCursorProps_assert_doc = UnoRuntime.queryInterface(XPropertySet.class, xTextCursor_assert_doc);
 
 		xTextCursor_assert_odt.gotoStart(false);
 		xTextCursor_assert_odt.goRight((short) 100, true);

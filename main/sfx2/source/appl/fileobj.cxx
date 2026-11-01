@@ -28,6 +28,7 @@
 #include <tools/stream.hxx>
 #include <sot/formats.hxx>
 #include <svtools/filter.hxx>
+#include <svtools/linkpolicy.hxx>
 #include <sfx2/lnkbase.hxx>
 #include <sfx2/app.hxx>
 #include <sfx2/progress.hxx>
@@ -285,6 +286,15 @@ sal_Bool SvFileObject::LoadFile_Impl()
 	if( bWaitForData || !bLoadAgain || xMed.Is() || pDownLoadData )
 		return sal_False;
 
+	// The name is document content, so the shared policy decides before the
+	// fetch (see svtools/linkpolicy.hxx). The question is the LinkManager's
+	// existing one, asked at most once per document.
+	if( !::svt::linkpolicy::mayLoadDocumentReference( sFileNm ) )
+	{
+		bLoadAgain = sal_False;
+		return sal_False;
+	}
+
 	// z.Z. nur auf die aktuelle DocShell
 	xMed = new SfxMedium( sFileNm, STREAM_STD_READ, sal_True );
     SvLinkSource::StreamToLoadFrom aStreamToLoadFrom =
@@ -328,6 +338,11 @@ sal_Bool SvFileObject::LoadFile_Impl()
 
 sal_Bool SvFileObject::GetGraphic_Impl( Graphic& rGrf, SvStream* pStream )
 {
+	// A second way out: with no stream and no medium the filter opens sFileNm
+	// itself. Ask here too; the answer is remembered per document.
+	if( !::svt::linkpolicy::mayLoadDocumentReference( sFileNm ) )
+		return sal_False;
+
 	GraphicFilter* pGF = GraphicFilter::GetGraphicFilter();
 
 	const sal_uInt16 nFilter = sFilter.Len() && pGF->GetImportFormatCount()

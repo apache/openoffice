@@ -22,7 +22,7 @@
 
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
-#include "precompiled_connectivity.hxx"
+#include "precompiled_flat.hxx"
 #include "flat/EDriver.hxx"
 #include "flat/EConnection.hxx"
 #include <com/sun/star/lang/DisposedException.hpp>

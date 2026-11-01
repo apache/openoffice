@@ -61,7 +61,7 @@ public class CheckDateTimeField {
 	private XTextDocument document = null;
 	@Before
 	public void setUpDocument() throws Exception {
-		document = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
+		document = UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
 	}
 
 	@After
@@ -122,11 +122,11 @@ public class CheckDateTimeField {
 	}
 
 	private void createTimeFiled(XTextDocument document, String url, PropertyValue[] propsValue) throws Exception {
-		XMultiServiceFactory sevriceFactory = (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, document);
-		XTextField  dateFiled = (XTextField)UnoRuntime.queryInterface(XTextField.class, sevriceFactory.createInstance("com.sun.star.text.textfield.DateTime"));
+		XMultiServiceFactory sevriceFactory = UnoRuntime.queryInterface(XMultiServiceFactory.class, document);
+		XTextField  dateFiled = UnoRuntime.queryInterface(XTextField.class, sevriceFactory.createInstance("com.sun.star.text.textfield.DateTime"));
 
 
-		XPropertySet props = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, dateFiled);
+		XPropertySet props = UnoRuntime.queryInterface(XPropertySet.class, dateFiled);
 		props.setPropertyValue("IsDate", false);
 
 		document.getText().insertTextContent(document.getText().getEnd(), dateFiled, false);
@@ -137,16 +137,16 @@ public class CheckDateTimeField {
 		assertTrue("Verify time field is created, by verify it's minutes",  dateString.indexOf(String.valueOf(dateField.Minutes).trim()) != -1);
 		int expectHour = Calendar.getInstance().get(Calendar.HOUR_OF_DAY);
 		assertEquals("Verify time field is created, value is right, by compare Hour", expectHour, dateField.Hours);
-		XStorable store = (XStorable) UnoRuntime.queryInterface(XStorable.class, document);
+		XStorable store = UnoRuntime.queryInterface(XStorable.class, document);
 		store.storeAsURL(url, propsValue);
 		app.closeDocument(document);
-		document = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.loadDocumentFromURL(url));
-		XTextFieldsSupplier fieldsSupplier = (XTextFieldsSupplier) UnoRuntime.queryInterface(XTextFieldsSupplier.class, document);
+		document = UnoRuntime.queryInterface(XTextDocument.class, app.loadDocumentFromURL(url));
+		XTextFieldsSupplier fieldsSupplier = UnoRuntime.queryInterface(XTextFieldsSupplier.class, document);
 		XEnumerationAccess xEnumeratedFields = fieldsSupplier.getTextFields();
 		XEnumeration enumeration = xEnumeratedFields.createEnumeration();
 		while (enumeration.hasMoreElements()) {
 			  Object field =  enumeration.nextElement();
-				XPropertySet props2 = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, field);
+				XPropertySet props2 = UnoRuntime.queryInterface(XPropertySet.class, field);
 				DateTime dateField2 = (DateTime) props2.getPropertyValue("DateTimeValue");
 				assertEquals("Verify time field is created correct by save and reload.", expectHour, dateField2.Hours);
 		}
@@ -190,11 +190,11 @@ public class CheckDateTimeField {
 
 	}
 	private void createDateFiled(XTextDocument document, String url, PropertyValue[] propsValue) throws Exception {
-		XMultiServiceFactory sevriceFactory = (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, document);
-		XTextField  dateFiled = (XTextField)UnoRuntime.queryInterface(XTextField.class, sevriceFactory.createInstance("com.sun.star.text.textfield.DateTime"));
+		XMultiServiceFactory sevriceFactory = UnoRuntime.queryInterface(XMultiServiceFactory.class, document);
+		XTextField  dateFiled = UnoRuntime.queryInterface(XTextField.class, sevriceFactory.createInstance("com.sun.star.text.textfield.DateTime"));
 
 
-		XPropertySet props = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, dateFiled);
+		XPropertySet props = UnoRuntime.queryInterface(XPropertySet.class, dateFiled);
 		props.setPropertyValue("IsDate", true);
 
 		document.getText().insertTextContent(document.getText().getEnd(), dateFiled, false);
@@ -205,16 +205,16 @@ public class CheckDateTimeField {
 		assertTrue("Verify date field is created, by verify it's Day",  dateString.indexOf(String.valueOf(dateField.Day).trim()) != -1);
 		int expectDay = Calendar.getInstance().get(Calendar.DAY_OF_MONTH);
 		assertEquals("Verify date field is created, value is right, by compare Day", expectDay, dateField.Day);
-		XStorable store = (XStorable) UnoRuntime.queryInterface(XStorable.class, document);
+		XStorable store = UnoRuntime.queryInterface(XStorable.class, document);
 		store.storeAsURL(url, propsValue);
 		app.closeDocument(document);
-		document = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.loadDocumentFromURL(url));
-		XTextFieldsSupplier fieldsSupplier = (XTextFieldsSupplier) UnoRuntime.queryInterface(XTextFieldsSupplier.class, document);
+		document = UnoRuntime.queryInterface(XTextDocument.class, app.loadDocumentFromURL(url));
+		XTextFieldsSupplier fieldsSupplier = UnoRuntime.queryInterface(XTextFieldsSupplier.class, document);
 		XEnumerationAccess xEnumeratedFields = fieldsSupplier.getTextFields();
 		XEnumeration enumeration = xEnumeratedFields.createEnumeration();
 		while (enumeration.hasMoreElements()) {
 			  Object field =  enumeration.nextElement();
-				XPropertySet props2 = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, field);
+				XPropertySet props2 = UnoRuntime.queryInterface(XPropertySet.class, field);
 				DateTime dateField2 = (DateTime) props2.getPropertyValue("DateTimeValue");
 				assertEquals("Verify date field is created correct by save and reload.", expectDay, dateField2.Day);
 		}

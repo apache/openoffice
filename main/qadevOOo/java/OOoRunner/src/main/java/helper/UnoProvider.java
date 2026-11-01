@@ -110,7 +110,7 @@ public class UnoProvider implements AppProvider {
                 return null;
             }
             XMultiComponentFactory xMCF = xContext.getServiceManager();
-            xMSF = (XMultiServiceFactory)UnoRuntime.queryInterface(
+            xMSF = UnoRuntime.queryInterface(
                                 XMultiServiceFactory.class, xMCF);
         }
         return xMSF;

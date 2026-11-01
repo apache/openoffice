@@ -64,7 +64,7 @@ public class Test17 implements StorageTest {
 			pArgs[1] = new Integer( ElementModes.WRITE );
 
 			Object oTempStorage = m_xStorageFactory.createInstanceWithArguments( pArgs );
-			XStorage xTempStorage = (XStorage) UnoRuntime.queryInterface( XStorage.class, oTempStorage );
+			XStorage xTempStorage = UnoRuntime.queryInterface( XStorage.class, oTempStorage );
 			if ( xTempStorage == null )
 			{
 				m_aTestHelper.Error( "Can't create temporary storage representation!" );
@@ -129,7 +129,7 @@ public class Test17 implements StorageTest {
 			pOneArg[0] = (Object) xTempInStream;
 
 			Object oResultStorage = m_xStorageFactory.createInstanceWithArguments( pOneArg );
-			XStorage xResultStorage = (XStorage) UnoRuntime.queryInterface( XStorage.class, oResultStorage );
+			XStorage xResultStorage = UnoRuntime.queryInterface( XStorage.class, oResultStorage );
 			if ( xResultStorage == null )
 			{
 				m_aTestHelper.Error( "Can't open storage based on input stream!" );

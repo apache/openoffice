@@ -462,7 +462,7 @@ bool SplashScreen::findBitmap(rtl::OUString const & path) {
     if ( !haveBitmap )
     {
         haveBitmap = loadBitmap(
-            path, rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("intro.png")));
+            path, rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("intro5.png")));
         if ( !haveBitmap )
             haveBitmap = loadBitmap(
                 path, rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("intro.bmp")));

@@ -31,9 +31,9 @@ class ChildEventHandler
     public ChildEventHandler (AccessibleEventObject aEvent, AccessibilityTreeModel aTreeModel)
     {
         super (aEvent, aTreeModel);
-        mxOldChild = (XAccessible)UnoRuntime.queryInterface(
+        mxOldChild = UnoRuntime.queryInterface(
             XAccessible.class, aEvent.OldValue);
-        mxNewChild = (XAccessible)UnoRuntime.queryInterface(
+        mxNewChild = UnoRuntime.queryInterface(
             XAccessible.class, aEvent.NewValue);
     }
 

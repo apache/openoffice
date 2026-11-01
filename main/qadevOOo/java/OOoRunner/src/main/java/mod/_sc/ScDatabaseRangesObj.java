@@ -84,7 +84,7 @@ public class ScDatabaseRangesObj extends TestCase {
     */
     protected void cleanup( TestParameters tParam, PrintWriter log ) {
         log.println( "    disposing xSheetDoc " );
-        XComponent oComp = (XComponent)
+        XComponent oComp =
             UnoRuntime.queryInterface (XComponent.class, xSheetDoc) ;
         util.DesktopTools.closeDoc(oComp);
     }
@@ -110,13 +110,13 @@ public class ScDatabaseRangesObj extends TestCase {
         log.println( "Creating a test environment" );
 
         log.println("Getting test object ") ;
-        XPropertySet docProps = (XPropertySet)
+        XPropertySet docProps =
             UnoRuntime.queryInterface(XPropertySet.class, xSheetDoc);
 
         XDatabaseRanges dbRanges = null;
         try {
-            dbRanges = (XDatabaseRanges) AnyConverter.toObject(
-                new Type(XDatabaseRanges.class),
+            dbRanges = AnyConverter.toObject(
+                XDatabaseRanges.class,
                     docProps.getPropertyValue("DatabaseRanges"));
         } catch (com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace(log) ;

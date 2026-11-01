@@ -82,7 +82,7 @@ public class _XControlShape extends MultiMethodTest {
         XInterface oNewControl = FormTools.createControl
             ((XComponent)tEnv.getObjRelation("xDoc"), "ComboBox") ;
 
-        XControlModel xControl = (XControlModel) UnoRuntime.queryInterface
+        XControlModel xControl = UnoRuntime.queryInterface
             (XControlModel.class, oNewControl) ;
 
         oObj.setControl(xControl) ;

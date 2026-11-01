@@ -47,7 +47,7 @@
 #include <com/sun/star/lang/XServiceInfo.hpp>
 #include <sfx2/objsh.hxx>
 #include <tools/urlobj.hxx>
-#include <hash_map>
+#include <unordered_map>
 #include <osl/file.hxx>
 
 #include "vbahelper/vbahelper.hxx"
@@ -59,7 +59,7 @@ using namespace ::com::sun::star;
 static const rtl::OUString sSpreadsheetDocument( rtl::OUString::createFromAscii( "com.sun.star.sheet.SpreadsheetDocument" ) );
 static const rtl::OUString sTextDocument( rtl::OUString::createFromAscii( "com.sun.star.text.TextDocument" ) );
 
-typedef  std::hash_map< rtl::OUString,
+typedef  std::unordered_map< rtl::OUString,
 sal_Int32, ::rtl::OUStringHash,
 ::std::equal_to< ::rtl::OUString > > NameIndexHash;
 

@@ -543,7 +543,7 @@ public class Type {
             return _typeName.equals(TYPE_NAME_ANY) ? Object.class : null;
 
         case TypeClass.SEQUENCE_value:
-            StringBuffer buf = new StringBuffer();
+            StringBuilder buf = new StringBuilder();
             int offset = 0;
             for (; _typeName.startsWith("[]", offset); offset += "[]".length())
             {

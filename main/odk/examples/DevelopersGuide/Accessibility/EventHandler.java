@@ -387,8 +387,8 @@ public class EventHandler
         XAccessible xAccessible = null;
         try
         {
-            xAccessible = (XAccessible)AnyConverter.toObject(
-                new Type(XAccessible.class), aObject);
+            xAccessible = AnyConverter.toObject(
+                XAccessible.class, aObject);
         }
         catch (com.sun.star.lang.IllegalArgumentException e)
         {}
@@ -397,8 +397,8 @@ public class EventHandler
         else
             try
             {
-                xContext = (XAccessibleContext)AnyConverter.toObject(
-                    new Type(XAccessibleContext.class), aObject);
+                xContext = AnyConverter.toObject(
+                    XAccessibleContext.class, aObject);
             }
             catch (com.sun.star.lang.IllegalArgumentException e)
             {}

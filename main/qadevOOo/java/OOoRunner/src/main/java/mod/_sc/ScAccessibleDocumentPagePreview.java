@@ -97,20 +97,20 @@ public class ScAccessibleDocumentPagePreview extends TestCase {
         XCell xCell = null;
         try {
             XSpreadsheets oSheets = xSpreadsheetDoc.getSheets() ;
-            XIndexAccess oIndexSheets = (XIndexAccess)
+            XIndexAccess oIndexSheets =
                 UnoRuntime.queryInterface(XIndexAccess.class, oSheets);
             XSpreadsheet oSheet = null;
             try {
-                oSheet = (XSpreadsheet) AnyConverter.toObject(
-                        new Type(XSpreadsheet.class),oIndexSheets.getByIndex(1));
+                oSheet = AnyConverter.toObject(
+                        XSpreadsheet.class,oIndexSheets.getByIndex(1));
             } catch (com.sun.star.lang.IllegalArgumentException iae) {
                 throw new StatusException("couldn't get sheet",iae);
             }
             xCell = oSheet.getCellByPosition(0, 0) ;
             xCell.setFormula("ScAccessibleDocumentPagePreview - Page 2");
             try {
-                oSheet = (XSpreadsheet) AnyConverter.toObject(
-                        new Type(XSpreadsheet.class),oIndexSheets.getByIndex(2));
+                oSheet = AnyConverter.toObject(
+                        XSpreadsheet.class,oIndexSheets.getByIndex(2));
             } catch (com.sun.star.lang.IllegalArgumentException iae) {
                 throw new StatusException("couldn't get sheet",iae);
             }
@@ -118,8 +118,8 @@ public class ScAccessibleDocumentPagePreview extends TestCase {
             xCell.setFormula("ScAccessibleDocumentPagePreview - Page 3");
 
             try {
-                oSheet = (XSpreadsheet) AnyConverter.toObject(
-                        new Type(XSpreadsheet.class),oIndexSheets.getByIndex(0));
+                oSheet = AnyConverter.toObject(
+                        XSpreadsheet.class,oIndexSheets.getByIndex(0));
             } catch (com.sun.star.lang.IllegalArgumentException iae) {
                 throw new StatusException("couldn't get sheet",iae);
             }
@@ -133,16 +133,16 @@ public class ScAccessibleDocumentPagePreview extends TestCase {
             e.printStackTrace(log);
         }
 
-        XModel aModel = (XModel)
+        XModel aModel =
             UnoRuntime.queryInterface(XModel.class, xSpreadsheetDoc);
 
         XController xController = aModel.getCurrentController();
 
         // switching to 'Page Preview' mode
         try {
-            XDispatchProvider xDispProv = (XDispatchProvider)
+            XDispatchProvider xDispProv =
                 UnoRuntime.queryInterface(XDispatchProvider.class, xController);
-            XURLTransformer xParser = (com.sun.star.util.XURLTransformer)
+            XURLTransformer xParser =
                 UnoRuntime.queryInterface(XURLTransformer.class,
             ((XMultiServiceFactory)Param.getMSF()).createInstance("com.sun.star.util.URLTransformer"));
             // Because it's an in/out parameter we must use an array of URL objects.
@@ -176,7 +176,7 @@ public class ScAccessibleDocumentPagePreview extends TestCase {
 
         TestEnvironment tEnv = new TestEnvironment(oObj);
 
-        XDesktop desk = (XDesktop) UnoRuntime.queryInterface(
+        XDesktop desk = UnoRuntime.queryInterface(
                 XDesktop.class,util.DesktopTools.createDesktop((XMultiServiceFactory)Param.getMSF()));
         final XWindow win = desk.getCurrentFrame().getComponentWindow();
 
@@ -201,7 +201,7 @@ public class ScAccessibleDocumentPagePreview extends TestCase {
     */
     protected void cleanup( TestParameters Param, PrintWriter log) {
         log.println( "    disposing xSheetDoc " );
-        XComponent oComp = (XComponent)
+        XComponent oComp =
             UnoRuntime.queryInterface (XComponent.class, xSpreadsheetDoc) ;
         util.DesktopTools.closeDoc(oComp);
     }
@@ -224,7 +224,7 @@ public class ScAccessibleDocumentPagePreview extends TestCase {
             log.println("creating a spreadsheetdocument");
             String url = utils.getFullTestURL("calcshapes.sxc");
             log.println("loading document "+url);
-            xSpreadsheetDoc = (XSpreadsheetDocument)UnoRuntime.queryInterface(
+            xSpreadsheetDoc = UnoRuntime.queryInterface(
                             XSpreadsheetDocument.class,SOF.loadDocument(url));
             try {
                 Thread.sleep(500);

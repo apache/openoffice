@@ -4823,7 +4823,7 @@ long OutputDevice::ImplGetTextLines( ImplMultiTextLineInfo& rLineInfo,
         {
             xub_StrLen nBreakPos = nPos;
 
-            while ( ( nBreakPos < nLen ) && ( rStr.GetChar( nBreakPos ) != _CR ) && ( rStr.GetChar( nBreakPos ) != _LF ) )
+            while ( ( nBreakPos < nLen ) && ( rStr.GetChar( nBreakPos ) != SAL_CR ) && ( rStr.GetChar( nBreakPos ) != SAL_LF ) )
                 nBreakPos++;
 
             long nLineWidth = _rLayout.GetTextWidth( rStr, nPos, nBreakPos-nPos );
@@ -4976,11 +4976,11 @@ long OutputDevice::ImplGetTextLines( ImplMultiTextLineInfo& rLineInfo,
                 nBreakPos++;
             nPos = nBreakPos;
 
-            if ( ( rStr.GetChar( nPos ) == _CR ) || ( rStr.GetChar( nPos ) == _LF ) )
+            if ( ( rStr.GetChar( nPos ) == SAL_CR ) || ( rStr.GetChar( nPos ) == SAL_LF ) )
             {
                 nPos++;
                 // CR/LF?
-                if ( ( nPos < nLen ) && ( rStr.GetChar( nPos ) == _LF ) && ( rStr.GetChar( nPos-1 ) == _CR ) )
+                if ( ( nPos < nLen ) && ( rStr.GetChar( nPos ) == SAL_LF ) && ( rStr.GetChar( nPos-1 ) == SAL_CR ) )
                     nPos++;
             }
         }
@@ -4990,8 +4990,8 @@ long OutputDevice::ImplGetTextLines( ImplMultiTextLineInfo& rLineInfo,
     {
         ImplTextLineInfo* pLine = rLineInfo.GetLine( nL );
         String aLine( rStr, pLine->GetIndex(), pLine->GetLen() );
-        DBG_ASSERT( aLine.Search( _CR ) == STRING_NOTFOUND, "ImplGetTextLines - Found CR!" );
-        DBG_ASSERT( aLine.Search( _LF ) == STRING_NOTFOUND, "ImplGetTextLines - Found LF!" );
+        DBG_ASSERT( aLine.Search( SAL_CR ) == STRING_NOTFOUND, "ImplGetTextLines - Found CR!" );
+        DBG_ASSERT( aLine.Search( SAL_LF ) == STRING_NOTFOUND, "ImplGetTextLines - Found LF!" );
     }
 #endif
 
@@ -6440,7 +6440,7 @@ void OutputDevice::ImplDrawText( OutputDevice& rTargetDevice, const Rectangle& r
                     xub_StrLen nLastLineLen = aLastLine.Len();
                     for ( i = 0; i < nLastLineLen; i++ )
                     {
-                        if ( aLastLine.GetChar( i ) == _LF )
+                        if ( aLastLine.GetChar( i ) == SAL_LF )
                             aLastLine.SetChar( i, ' ' );
                     }
                     aLastLine = ImplGetEllipsisString( rTargetDevice, aLastLine, nWidth, nStyle, _rLayout );

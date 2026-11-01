@@ -592,13 +592,13 @@ void ScImportExport::WriteUnicodeOrByteEndl( SvStream& rStrm )
 		switch ( rStrm.GetLineDelimiter() )
 		{
 			case LINEEND_CR :
-				rStrm << sal_Unicode(_CR);
+				rStrm << sal_Unicode(SAL_CR);
 			break;
 			case LINEEND_LF :
-				rStrm << sal_Unicode(_LF);
+				rStrm << sal_Unicode(SAL_LF);
 			break;
 			default:
-				rStrm << sal_Unicode(_CR) << sal_Unicode(_LF);
+				rStrm << sal_Unicode(SAL_CR) << sal_Unicode(SAL_LF);
 		}
 	}
 	else
@@ -672,7 +672,7 @@ void lcl_UnescapeSylk( String & rString, SylkVersion eVersion )
     else
         rString.SearchAndReplaceAll( DOUBLE_DOUBLEQUOTE, '"' );
 
-    rString.SearchAndReplaceAll( SYLK_LF, _LF );
+    rString.SearchAndReplaceAll( SYLK_LF, SAL_LF );
 }
 
 static const sal_Unicode* lcl_ScanSylkString( const sal_Unicode* p,
@@ -1117,7 +1117,7 @@ static bool lcl_PutString(
 	}
 
     // Standard or date not determined -> SetString / EditCell
-    if( rStr.Search( _LF ) == STRING_NOTFOUND )
+    if( rStr.Search( SAL_LF ) == STRING_NOTFOUND )
         pDoc->SetString( nCol, nRow, nTab, rStr, pFormatter, bDetectNumFormat );
     else
     {
@@ -1454,11 +1454,11 @@ sal_Bool ScImportExport::Doc2Text( SvStream& rStrm )
 						{
                             pDoc->GetString( nCol, nRow, aRange.aStart.Tab(), aCell );
 
-                            bool bMultiLineText = ( aCell.Search( _LF ) != STRING_NOTFOUND );
+                            bool bMultiLineText = ( aCell.Search( SAL_LF ) != STRING_NOTFOUND );
                             if( bMultiLineText )
                             {
                                 if( mExportTextOptions.meNewlineConversion == ScExportTextOptions::ToSpace )
-                                    aCell.SearchAndReplaceAll( _LF, ' ' );
+                                    aCell.SearchAndReplaceAll( SAL_LF, ' ' );
                                 else if ( mExportTextOptions.meNewlineConversion == ScExportTextOptions::ToSystem && bConvertLF )
                                     aCell.ConvertLineEnd();
                             }
@@ -1486,11 +1486,11 @@ sal_Bool ScImportExport::Doc2Text( SvStream& rStrm )
 					{
 						pDoc->GetString( nCol, nRow, aRange.aStart.Tab(), aCell );
 
-                        bool bMultiLineText = ( aCell.Search( _LF ) != STRING_NOTFOUND );
+                        bool bMultiLineText = ( aCell.Search( SAL_LF ) != STRING_NOTFOUND );
                         if( bMultiLineText )
                         {
                             if( mExportTextOptions.meNewlineConversion == ScExportTextOptions::ToSpace )
-                                aCell.SearchAndReplaceAll( _LF, ' ' );
+                                aCell.SearchAndReplaceAll( SAL_LF, ' ' );
                             else if ( mExportTextOptions.meNewlineConversion == ScExportTextOptions::ToSystem && bConvertLF )
                                 aCell.ConvertLineEnd();
                         }
@@ -1838,7 +1838,7 @@ sal_Bool ScImportExport::Doc2Sylk( SvStream& rStrm )
 				case CELLTYPE_EDIT:
 				hasstring:
 					pDoc->GetString( nCol, nRow, aRange.aStart.Tab(), aCellStr );
-                    aCellStr.SearchAndReplaceAll( _LF, SYLK_LF );
+                    aCellStr.SearchAndReplaceAll( SAL_LF, SYLK_LF );
 
 					aBufStr.AssignAscii(RTL_CONSTASCII_STRINGPARAM( "C;X" ));
 					aBufStr += String::CreateFromInt32( c );

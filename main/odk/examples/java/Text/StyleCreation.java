@@ -49,7 +49,7 @@ public class StyleCreation {
             // the service '..ParagraphStyle' is context dependend, you need
             // the multi service factory from the document to use the service
             com.sun.star.lang.XMultiServiceFactory xDocMSF =
-                (com.sun.star.lang.XMultiServiceFactory)UnoRuntime.queryInterface(
+                UnoRuntime.queryInterface(
                     com.sun.star.lang.XMultiServiceFactory.class, xTextDocument);
 
             // use the service 'com.sun.star.style.ParagraphStyle'
@@ -58,7 +58,7 @@ public class StyleCreation {
 
             // create a supplier to get the Style family collection
             com.sun.star.style.XStyleFamiliesSupplier xSupplier =
-                (com.sun.star.style.XStyleFamiliesSupplier)UnoRuntime.queryInterface(
+                UnoRuntime.queryInterface(
                     com.sun.star.style.XStyleFamiliesSupplier.class, xTextDocument );
 
             // get the NameAccess interface from the Style family collection
@@ -67,13 +67,13 @@ public class StyleCreation {
 
             // select the Paragraph styles, you get the Paragraph style collection
             com.sun.star.container.XNameContainer xParaStyleCollection =
-                (com.sun.star.container.XNameContainer) UnoRuntime.queryInterface(
+                UnoRuntime.queryInterface(
                     com.sun.star.container.XNameContainer.class,
                     xNameAccess.getByName("ParagraphStyles"));
 
             // create a PropertySet to set the properties for the new Paragraphstyle
             com.sun.star.beans.XPropertySet xPropertySet =
-                (com.sun.star.beans.XPropertySet) UnoRuntime.queryInterface(
+                UnoRuntime.queryInterface(
                     com.sun.star.beans.XPropertySet.class, xInterface );
             System.out.println( "create a PropertySet to set the properties for the new Paragraphstyle" );
 
@@ -111,7 +111,7 @@ public class StyleCreation {
 
             // get the PropertySet from the current paragraph
             com.sun.star.beans.XPropertySet xParagraphPropertySet =
-                (com.sun.star.beans.XPropertySet)UnoRuntime.queryInterface(
+                UnoRuntime.queryInterface(
                     com.sun.star.beans.XPropertySet.class, xTextRange );
             // change the value from the property 'ParaStyle' to apply the
             // Paragraph style
@@ -149,7 +149,7 @@ public class StyleCreation {
 
                 Object oDesktop = xMCF.createInstanceWithContext(
                     "com.sun.star.frame.Desktop", xContext);
-                xDesktop = (com.sun.star.frame.XDesktop) UnoRuntime.queryInterface(
+                xDesktop = UnoRuntime.queryInterface(
                     com.sun.star.frame.XDesktop.class, oDesktop);
             }
             else
@@ -172,7 +172,7 @@ public class StyleCreation {
         try {
             com.sun.star.lang.XComponent xComponent = CreateNewDocument(xDesktop,
                                                                         "swriter");
-            aTextDocument = (com.sun.star.text.XTextDocument)
+            aTextDocument =
                 UnoRuntime.queryInterface(
                     com.sun.star.text.XTextDocument.class, xComponent);
         }
@@ -198,7 +198,7 @@ public class StyleCreation {
             new com.sun.star.beans.PropertyValue[0];
 
         try {
-            xComponentLoader = (com.sun.star.frame.XComponentLoader)
+            xComponentLoader =
                 UnoRuntime.queryInterface(
                     com.sun.star.frame.XComponentLoader.class, xDesktop);
 

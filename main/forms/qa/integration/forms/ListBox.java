@@ -105,7 +105,7 @@ public class ListBox extends TestCase
             formOperations.execute( FormFeature.MoveToFirst );
             for ( int row=0; row<2; ++row )
             {
-                StringBuffer failedFieldTypes = new StringBuffer();
+                StringBuilder failedFieldTypes = new StringBuilder();
                 for ( int i=0; i<fieldTypes.length; ++i )
                 {
                     final String columnFKName = fieldTypes[i] + "_fk";
@@ -203,7 +203,7 @@ public class ListBox extends TestCase
 
             Vector< String[] > foreignKeyValues = new Vector< String[] >();
 
-            StringBuffer foreignKeyInsertSQL = new StringBuffer();
+            StringBuilder foreignKeyInsertSQL = new StringBuilder();
             foreignKeyInsertSQL.append( "INSERT INTO \"" + m_foreignKeyTableName + "\" VALUES (?" );
 
             final String[] displayValues = impl_getDisplayValues();
@@ -222,7 +222,7 @@ public class ListBox extends TestCase
                 ) );
 
                 // insert a few rows
-                StringBuffer sql = new StringBuffer();
+                StringBuilder sql = new StringBuilder();
                 sql.append( "INSERT INTO \"" );
                 sql.append( tableName );
                 sql.append( "\" VALUES (?, ?)");

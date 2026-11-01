@@ -22,7 +22,7 @@
 
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
-#include "precompiled_chart2.hxx"
+#include "precompiled_chartcontroller.hxx"
 
 #include "AccessibleBase.hxx"
 #include "AccessibleChartShape.hxx"
@@ -56,6 +56,7 @@
 #include <vcl/window.hxx>
 
 #include <algorithm>
+#include <iterator>
 
 #include "ChartElementFactory.hxx"
 

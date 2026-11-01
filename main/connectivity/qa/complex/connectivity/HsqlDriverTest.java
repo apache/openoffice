@@ -73,7 +73,7 @@ public class HsqlDriverTest {
         }
 
         try{
-            XDocumentSubStorageSupplier doc = (XDocumentSubStorageSupplier)UnoRuntime.queryInterface(XDocumentSubStorageSupplier.class,ds);
+            XDocumentSubStorageSupplier doc = UnoRuntime.queryInterface(XDocumentSubStorageSupplier.class,ds);
             XStorage stor = doc.getDocumentSubStorage("database",4);
             try{
             if ( stor.isStreamElement("db.log") )
@@ -91,9 +91,9 @@ public class HsqlDriverTest {
             if ( stor.isStreamElement("db.script.new") )
                 stor.removeElement("db.script.new");
             } catch(Exception e){}
-            XStorable mod = (XStorable)UnoRuntime.queryInterface(XStorable.class,ds);
+            XStorable mod = UnoRuntime.queryInterface(XStorable.class,ds);
             mod.store();
-            XComponent xComp = (XComponent)UnoRuntime.queryInterface(XComponent.class,stor);
+            XComponent xComp = UnoRuntime.queryInterface(XComponent.class,stor);
             if ( xComp != null )
                 xComp.dispose();
         } catch(Exception e){}
@@ -101,14 +101,14 @@ public class HsqlDriverTest {
         com.sun.star.beans.PropertyValue[] info = null;
         XDriver drv = null;
         try{
-            XDocumentSubStorageSupplier doc = (XDocumentSubStorageSupplier)UnoRuntime.queryInterface(XDocumentSubStorageSupplier.class,ds);
-            XModel mod = (XModel)UnoRuntime.queryInterface(XModel.class,ds);
+            XDocumentSubStorageSupplier doc = UnoRuntime.queryInterface(XDocumentSubStorageSupplier.class,ds);
+            XModel mod = UnoRuntime.queryInterface(XModel.class,ds);
             XStorage stor = doc.getDocumentSubStorage("database",4);
             info = new com.sun.star.beans.PropertyValue[]{
                 new com.sun.star.beans.PropertyValue("Storage",0,stor,PropertyState.DIRECT_VALUE)
                 ,new com.sun.star.beans.PropertyValue("URL",0,mod.getURL(),PropertyState.DIRECT_VALUE)
             };
-            drv = (XDriver)UnoRuntime.queryInterface(XDriver.class, xMSF.createInstance("com.sun.star.sdbcx.comp.hsqldb.Driver"));
+            drv = UnoRuntime.queryInterface(XDriver.class, xMSF.createInstance("com.sun.star.sdbcx.comp.hsqldb.Driver"));
 
 
             TestCacheSize test = new TestCacheSize(xMSF,info,drv);
@@ -124,7 +124,7 @@ public class HsqlDriverTest {
             } catch(Exception e){}
 
             try{
-                XStorable mod2 = (XStorable)UnoRuntime.queryInterface(XStorable.class,ds);
+                XStorable mod2 = UnoRuntime.queryInterface(XStorable.class,ds);
                 mod2.store();
             } catch(Exception e){}
         }catch(Exception e){}
@@ -140,7 +140,7 @@ public class HsqlDriverTest {
                 new com.sun.star.beans.PropertyValue("JavaDriverClass",0,"org.hsqldb.jdbcDriver",PropertyState.DIRECT_VALUE)
                 ,new com.sun.star.beans.PropertyValue("ParameterNameSubstitution",0, false,PropertyState.DIRECT_VALUE)
             };
-            drv = (XDriver)UnoRuntime.queryInterface(XDriver.class,xMSF.createInstance("com.sun.star.comp.sdbc.JDBCDriver"));
+            drv = UnoRuntime.queryInterface(XDriver.class,xMSF.createInstance("com.sun.star.comp.sdbc.JDBCDriver"));
             TestCacheSize test = new TestCacheSize(xMSF,info,drv);
             test.setURL("jdbc:hsqldb:g:\\hsql\\db");
 

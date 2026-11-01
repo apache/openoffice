@@ -53,7 +53,7 @@ use File::Basename;
 # IIa. Declaring variables for the system commands, etc.
 #--------------------------------------------------------
 #
-my ( $outfile, $outfile_sh, $outfile_bat, $bootfile, $newline, $comment,
+my ( $outfile, $outfile_sh, $outfile_bat, $bootfile, $cleanfile, $newline, $comment,
      $compiler, $unsetenv, $setenv, $unset, $set, $ds, $ps,
      $wps, $cur_dir, $par_dir, $I, $L, $D, $buildenv, $answer, $tmp, $MINGW,
      $USE_MINGW, $platform,
@@ -100,6 +100,7 @@ my ( $oldPATH, $SRC_ROOT, $SO_HOME, $JAVA_HOME, $JDK, $JAVAFLAGS, $OOO_SHELL,
      $PATH, $SOLAREXTRAINC, $SOLAREXTRALIB, $SOLARLIB,
      $SOLARINC, $LOCALINI, $FRAMEWORKSHOME, $COMEX, $PERL,
      $COMP_ENV, $ILIB, $JAVAHOME, $PSDK_HOME, $DIRECTXSDK_LIB, $USE_NEW_SDK, $FRAME_HOME,
+     $MSBUILD_PATH, $VCTOOLSET, $WINDOWS_SDK_VERSION,
      $USE_DIRECTX5, $ATL_LIB, $ATL_LIB_X64, $HAVE_ATLTHUNK, $ATL_INCLUDE, $MFC_LIB, $MFC_INCLUDE, $TMPDIR,
      $COMMON_BUILD_TOOLS, $WIN_GREP, $WIN_FIND, $WIN_LS,
      $WIN_GNUCOPY, $WIN_TOUCH, $MOZILLABUILD,
@@ -382,7 +383,18 @@ elsif ( $platform =~ m/freebsd/ )
          $JRETHREADDIR   = '$JAVA_HOME'.$ds."jre".$ds."lib".$ds."amd64".$ds."native_threads";
       }
    }
-   elsif ($platform =~ m/^i386/)
+   elsif (($platform =~ m/^aarch64/) || ($platform =~ m/^arm64/))
+   {  print "Setting FreeBSD AArch64 specific values... ";
+      $outfile        = "FreeBSDAARCH64Env.Set";
+      $CPU            = "A";
+      $CPUNAME        = "AARCH64";
+      $OUTPATH        = "unxfbsda";
+      $JRELIBDIR      = '$JAVA_HOME'.$ds."jre".$ds."lib".$ds."aarch64";
+      $JRETOOLKITDIR  = '$JAVA_HOME'.$ds."jre".$ds."lib".$ds."aarch64".$ds."server";
+      $JRETHREADDIR   = '$JAVA_HOME'.$ds."jre".$ds."lib".$ds."aarch64".$ds."native_threads";
+      $EPM_FLAGS      = "-a aarch64";
+   }
+   elsif ($platform =~ m/^i[3456]86/)
    {  print "Setting FreeBSD x86 specific values... ";
       $outfile        = "FreeBSDX86Env.Set";
       $CPU            = "I";
@@ -409,9 +421,10 @@ elsif ( $platform =~ m/freebsd/ )
       $CPU            = "P";
       $CPUNAME        = "POWERPC64";
       $OUTPATH        = "unxfbsdppc64";
-      $JRELIBDIR      = '$JAVA_HOME'.$ds."jre".$ds."lib".$ds."ppc64";
-      $JRETOOLKITDIR  = '$JAVA_HOME'.$ds."jre".$ds."lib".$ds."ppc64".$ds."server";
-      $JRETHREADDIR   = '$JAVA_HOME'.$ds."jre".$ds."lib".$ds."ppc64".$ds."native_threads";
+      my $jrearch   = ($platform =~ m/^powerpc64le/) ? "ppc64le" : "ppc64";
+      $JRELIBDIR      = '$JAVA_HOME'.$ds."jre".$ds."lib".$ds.$jrearch;
+      $JRETOOLKITDIR  = '$JAVA_HOME'.$ds."jre".$ds."lib".$ds.$jrearch.$ds."server";
+      $JRETHREADDIR   = '$JAVA_HOME'.$ds."jre".$ds."lib".$ds.$jrearch.$ds."native_threads";
    }
    elsif ($platform =~ m/powerpc/)
    {  print "Setting FreeBSD PPC specific values... ";
@@ -607,6 +620,17 @@ elsif ( $platform =~ m/linux/ )
       $JRETHREADDIR   = '$JAVA_HOME'.$ds."jre".$ds."lib".$ds."arm".$ds."native_threads";
       $EPM_FLAGS      = "-a arm";
    }
+   elsif ($platform =~ m/^aarch64/)
+   {  print "Setting Linux AArch64 specific values... ";
+      $outfile        = "LinuxAARCH64Env.Set";
+      $CPU            = "R";
+      $CPUNAME        = "AARCH64";
+      $OUTPATH        = "unxlngr";
+      $JRELIBDIR      = '$JAVA_HOME'.$ds."jre".$ds."lib".$ds."aarch64";
+      $JRETOOLKITDIR  = '$JAVA_HOME'.$ds."jre".$ds."lib".$ds."aarch64".$ds."server";
+      $JRETHREADDIR   = '$JAVA_HOME'.$ds."jre".$ds."lib".$ds."aarch64".$ds."native_threads";
+      $EPM_FLAGS      = "-a aarch64";
+   }
    elsif ($platform =~ m/^mips/)
    {  print "Setting Linux MIPS specific values... ";
       $outfile        = "LinuxMIPSEnv.Set";
@@ -705,9 +729,17 @@ elsif ( $platform =~ m/cygwin/ )
   else # The MSVC section starts here
   {
       $COMPATH        = PathFormat('@COMPATH@');
-      $CXX_X64_BINARY = PathFormat('@COMPATH@/bin/amd64/cl.exe');
-      $LINK_X64_BINARY = PathFormat('@COMPATH@/bin/amd64/link.exe');
-      $LIBMGR_X64_BINARY = PathFormat('@COMPATH@/bin/amd64/lib.exe');
+      if ( "@MSVC_MODERN@" ne "" ) {
+          my $x64_bin = -d '@COMPATH@/bin/Hostx64' ? 'bin/Hostx64/x64'
+                                                  : 'bin/Hostx86/x64';
+          $CXX_X64_BINARY = PathFormat('@COMPATH@/'.$x64_bin.'/cl.exe');
+          $LINK_X64_BINARY = PathFormat('@COMPATH@/'.$x64_bin.'/link.exe');
+          $LIBMGR_X64_BINARY = PathFormat('@COMPATH@/'.$x64_bin.'/lib.exe');
+      } else {
+          $CXX_X64_BINARY = PathFormat('@COMPATH@/bin/amd64/cl.exe');
+          $LINK_X64_BINARY = PathFormat('@COMPATH@/bin/amd64/link.exe');
+          $LIBMGR_X64_BINARY = PathFormat('@COMPATH@/bin/amd64/lib.exe');
+      }
       $COMEX          = '@COMEX@';
       if ( "@COMEX@" eq "10" ) { # .NET 2003 needs M1310
           $CVER        = "M1310";
@@ -716,6 +748,13 @@ elsif ( $platform =~ m/cygwin/ )
 	      $CVER        = "M1400";
 	  } elsif ( "@COMEX@" eq "12" ) {
 	      $CVER        = "M1500";
+	  } elsif ( "@COMEX@" eq "14" ) {
+	      # The UCRT generation: VS2015 (_MSC_VER 1900) and everything
+	      # since.  M1900 is the floor, not the exact toolset -- source
+	      # that needs to tell VS2019 from VS2022 does not exist here,
+	      # and source that needs to tell either from VC9 tests _MSC_VER
+	      # directly.
+	      $CVER        = "M1900";
 	  } else {                   # Unsupported
 	      die "Unsupported value for COMEX variable.\n";
 	  }
@@ -806,6 +845,14 @@ elsif ( $platform =~ m/darwin/ )
           $CPU            = "X";
           $CPUNAME        = "X86_64";
           $OUTPATH        = "unxmaccx";
+      }
+      elsif ($platform =~ m/^(aarch64|arm64)/)
+      {
+          print "Setting values for MacOSX/Darwin on aarch64 (Apple Silicon)... ";
+          $outfile        = "MacOSXAARCH64Env.Set";
+          $CPU            = "R";
+          $CPUNAME        = "AARCH64";
+          $OUTPATH        = "unxmaccr";
       }
       else
       {
@@ -1083,13 +1130,36 @@ if ($platform =~ m/cygwin|os2/)
    if ( "@COM@" eq "MSC" )
    {  $ILIB       .=    $wps.$SOLARVER.$ds.$INPATH.$LIB.
                         $wps.$JAVA_HOME.$LIB;
-      if ( ( $CPUNAME eq "INTEL" ) || ( ( $CPUNAME eq "X86_64" ) && ( "@BUILD_WIN64@" ne "TRUE" ) ) ) {
+      if ( "@MSVC_MODERN@" ne "" ) {
+          my $sdk_lib = $PSDK_HOME.$LIB.$ds.'@WINDOWS_SDK_VERSION@';
+          my $arch;
+          if ( ( $CPUNAME eq "INTEL" ) || ( ( $CPUNAME eq "X86_64" ) && ( "@BUILD_WIN64@" ne "TRUE" ) ) ) {
+              $arch = "x86";
+          } elsif ( $CPUNAME eq "X86_64" ) {
+              $arch = "x64";
+          } else {
+              print "Unsupported Windows CPU: $CPUNAME\n";
+              exit 1;
+          }
+          # ucrt before um: both ship a few of the same names and the CRT's
+          # copy is the one that matches the headers on INCLUDE.
+          # The .NET Framework SDK keeps its x86 import libraries directly in
+          # lib/ and the x64 ones in lib/x64 -- there is no lib/x86, so this
+          # cannot simply reuse $arch.  Without the suffix an x64 climaker.exe
+          # links the x86 mscoree.lib and dies LNK2001 on _CorExeMain.
+          my $frame_lib = $FRAME_HOME.$LIB;
+          $frame_lib .= $ds."x64" if ( $arch eq "x64" );
+          $ILIB   .=    $wps.$sdk_lib.$ds."ucrt".$ds.$arch.
+                        $wps.$sdk_lib.$ds."um".$ds.$arch.
+                        $wps.$frame_lib.
+                        $wps.$COMPATH.$LIB.$ds.$arch;
+      } elsif ( ( $CPUNAME eq "INTEL" ) || ( ( $CPUNAME eq "X86_64" ) && ( "@BUILD_WIN64@" ne "TRUE" ) ) ) {
           $ILIB   .=    $wps.$PSDK_HOME.$LIB.
                         $wps.$FRAME_HOME.$LIB.
                         $wps.$COMPATH.$LIB;
       } elsif ( $CPUNAME eq "X86_64" ) {
           $ILIB   .=    $wps.$PSDK_HOME.$LIB.$ds."x64".
-                        $wps.$FRAME_HOME.$LIB.
+                        $wps.$FRAME_HOME.$LIB.$ds."x64".
                         $wps.$COMPATH.$LIB.$ds."amd64";
       } else {
           print "Unsupported Windows CPU: $CPUNAME\n";
@@ -1181,11 +1251,24 @@ elsif ($platform =~ m/cygwin/)
 	  if ( -d $JAVA_HOME.$ds."jre".$ds."bin".$ds."client" ) {
 		  $PATH .= $ps.CygFormat($JAVA_HOME).$ds."jre".$ds."bin".$ds."client";
 	  }
+	  # A 64 bit HotSpot JDK ships only jre/bin/server -- there is no client
+	  # VM -- so without this no JVM directory reaches PATH at all on x64.
+	  if ( -d $JAVA_HOME.$ds."jre".$ds."bin".$ds."server" ) {
+		  $PATH .= $ps.CygFormat($JAVA_HOME).$ds."jre".$ds."bin".$ds."server";
+	  }
    }
 
    # Add path to compiler
    if ( "@COM@" eq "MSC" ) {
-       if ( ( $CPUNAME eq "INTEL" ) || ( ( $CPUNAME eq "X86_64") && ( "@BUILD_WIN64@" ne "TRUE" ) ) ) {
+       if ( "@MSVC_MODERN@" ne "" ) {
+           # bin/ is split by host and then by target.  The host half has to
+           # match what configure picked, or the compiler on PATH is not the
+           # one whose version was measured.
+           my $host = -d '@COMPATH@/bin/Hostx64' ? "Hostx64" : "Hostx86";
+           my $target = ( ( $CPUNAME eq "X86_64" ) && ( "@BUILD_WIN64@" eq "TRUE" ) )
+                        ? "x64" : "x86";
+           $tmppath = CygFormat($COMPATH).$BIN.$ds.$host.$ds.$target;
+       } elsif ( ( $CPUNAME eq "INTEL" ) || ( ( $CPUNAME eq "X86_64") && ( "@BUILD_WIN64@" ne "TRUE" ) ) ) {
            $tmppath = CygFormat($COMPATH).$BIN;
        } elsif ( $CPUNAME eq "X86_64" ) {
            $tmppath = CygFormat($COMPATH).$BIN.$ds."amd64";
@@ -1196,10 +1279,15 @@ elsif ($platform =~ m/cygwin/)
        $tmppath =~ s/^\/\//\//;
        $PATH .= $ps.$tmppath;
 
-       $tmppath = CygFormat($MSPDB_PATH);
-	   # for .NET to find mspdb71.dll (needed by CL.EXE C/C++ Compiler)
-	   if ( $PATH !~ /(?:[:]|\A)(?:$tmppath)(?:[:]|\Z)/ ) {
-		   $PATH .= $ps.$tmppath;
+	   # for .NET to find mspdb71.dll (needed by CL.EXE C/C++ Compiler).
+	   # A modern toolset keeps its mspdb next to cl.exe, so configure never
+	   # looks for one and MSPDB_PATH is empty -- adding CygFormat("") here
+	   # would put a bare "/" on PATH.
+	   if ( $MSPDB_PATH ne "" ) {
+	       $tmppath = CygFormat($MSPDB_PATH);
+	       if ( $PATH !~ /(?:[:]|\A)(?:$tmppath)(?:[:]|\Z)/ ) {
+		       $PATH .= $ps.$tmppath;
+	       }
 	   }
 	   if ( ( $COMEX ge "10" ) ) {
 		   # .NET needs midl.exe
@@ -1212,10 +1300,16 @@ elsif ($platform =~ m/cygwin/)
 		   if ( $PATH !~ /(?:[:]|\A)(?:$tmppath)(?:[:]|\Z)/ ) {
 			   $PATH .= $ps.$tmppath;
 		   }
-		   # Native installer needs some files if the Windows Installer SDK
-               $tmppath = CygFormat($PSDK_HOME);
-		   if ( $PATH !~ /(?:[:]|\A)(?:$tmppath\/bin)(?:[:]|\Z)/i ) {
-			   $PATH .= $ps.$tmppath.$BIN;
+		   # rc.exe, mt.exe and the Windows Installer tools.  On the
+		   # Windows 10 SDK they all live in bin/<version>/<arch>; on the
+		   # old Platform SDK they are directly in bin/.
+		   if ( "@MSVC_MODERN@" ne "" ) {
+		       $tmppath = CygFormat(PathFormat('@WINDOWS_SDK_BINDIR@'));
+		   } else {
+		       $tmppath = CygFormat($PSDK_HOME).$BIN;
+		   }
+		   if ( $PATH !~ /(?:[:]|\A)(?:$tmppath)(?:[:]|\Z)/i ) {
+			   $PATH .= $ps.$tmppath;
 		   }
 	   }
    } else { # Mingw is different
@@ -1325,6 +1419,11 @@ elsif ($platform =~ m/os2/)
 	  if ( -d $JAVA_HOME.$ds."jre".$ds."bin".$ds."client" ) {
 		  $PATH .= $ps.$JAVA_HOME.$ds."jre".$ds."bin".$ds."client";
 	  }
+	  # A 64 bit HotSpot JDK ships only jre/bin/server -- there is no client
+	  # VM -- so without this no JVM directory reaches PATH at all on x64.
+	  if ( -d $JAVA_HOME.$ds."jre".$ds."bin".$ds."server" ) {
+		  $PATH .= $ps.$JAVA_HOME.$ds."jre".$ds."bin".$ds."server";
+	  }
    }
 
   if ( '@ANT_HOME@' ne '' )
@@ -1414,7 +1513,7 @@ if ($platform =~ m/linux|freebsd|netbsd/)
 {
 # This simply adds an include path, so even cases that break the FHS work
 }
-if ($platform =~ m/solaris/ && ! $CC =~ "gcc")
+if ($platform =~ m/solaris/ && $CC !~ "gcc")
 {
 $SOLARINC            .= '/SC5 ';
 }
@@ -1471,8 +1570,17 @@ elsif ($platform =~ m/cygwin/)
                         $I.'$JAVA_HOME'.$ds."include";
    # Mingw is different
    if ( "@COM@" eq "MSC" )
-   {  $SOLARINC       .= $I.'$PSDK_HOME'.$INCLUDE.
+   {  if ( "@MSVC_MODERN@" ne "" ) {
+          my $sdk_inc = '$PSDK_HOME'.$INCLUDE.$ds.'@WINDOWS_SDK_VERSION@';
+          $SOLARINC   .= $I.'$COMPATH'.$ds."include".
+                         $I.$sdk_inc.$ds."ucrt".
+                         $I.$sdk_inc.$ds."um".
+                         $I.$sdk_inc.$ds."shared".
+                         $I.$sdk_inc.$ds."winrt";
+      } else {
+          $SOLARINC   .= $I.'$PSDK_HOME'.$INCLUDE.
                          $I.'$COMPATH'.$ds."include";
+      }
       if ( '@ENABLE_DIRECTX@' ne "" ) {
           $SOLARINC   .= $I.PathFormat('@DIRECTXSDK_HOME@').$INCLUDE;
           if ( '@COMEX@' eq "10" ) {
@@ -1514,7 +1622,15 @@ elsif ($platform =~ m/darwin/)
 	   # Xcode 5
 	   $STLINC = "$TOOLSPATH/Toolchains/XcodeDefault.xctoolchain/usr/lib/c++/v1/";
 	}
-    $SOLARINC .= $I.$STLINC . $I.$FRAMEWORKSHOME.$ds."JavaVM.framework".$ds."Headers";
+    $SOLARINC .= $I.$STLINC;
+    # JNI headers.  The old Apple JavaVM.framework/Headers/jni.h is gone
+    # (removed by Apple ~2017); a real JDK (Oracle/OpenJDK/Temurin/Semeru)
+    # puts them in $JAVA_HOME/include and $JAVA_HOME/include/darwin (jni_md.h),
+    # matching the layout used for the other platforms above.
+    if (!($JDK eq "gcj"))
+    {  $SOLARINC .= $I.'$JAVA_HOME'.$INCLUDE.
+                    $I.'$JAVA_HOME'.$INCLUDE.$ds."darwin";
+    }
     $GUIBASE  = "aqua";
 }
 else
@@ -1688,12 +1804,8 @@ ToFile( "LIBFONTS_JAR",      "@LIBFONTS_JAR@",     "e" );
 ToFile( "LIBSERIALIZER_JAR", "@LIBSERIALIZER_JAR@","e" );
 ToFile( "ENABLE_MEDIAWIKI",  "@ENABLE_MEDIAWIKI@", "e" );
 ToFile( "SYSTEM_APACHE_COMMONS","@SYSTEM_APACHE_COMMONS@","e" );
-ToFile( "COMMONS_CODEC_JAR", "@COMMONS_CODEC_JAR@","e" );
 ToFile( "COMMONS_LANG_JAR",  "@COMMONS_LANG_JAR@", "e" );
-ToFile( "COMMONS_HTTPCLIENT_JAR","@COMMONS_HTTPCLIENT_JAR@","e" );
 ToFile( "COMMONS_LOGGING_JAR","@COMMONS_LOGGING_JAR@","e" );
-ToFile( "SYSTEM_SERVLETAPI", "@SYSTEM_SERVLETAPI@", "e" );
-ToFile( "SERVLETAPI_JAR",    "@SERVLETAPI_JAR@",   "e" );
 ToFile( "ENABLE_DBUS",       "@ENABLE_DBUS@",      "e" );
 ToFile( "ENABLE_GCONF",      "@ENABLE_GCONF@",     "e" );
 ToFile( "ENABLE_GNOMEVFS",   "@ENABLE_GNOMEVFS@",  "e" );
@@ -1766,6 +1878,21 @@ if ( $platform =~ m/darwin/ )
     ToFile( "MACOSX_DEPLOYMENT_TARGET",       "@MACOSX_DEPLOYMENT_TARGET@",       "e" );
     ToFile( "MACOSX_SDK_PATH",       "@MACOSX_SDK_PATH@",       "e" );
     ToFile( "SDKROOT",       "@SDKROOT@",       "e" );
+# Optional code signing while packaging (simplepackage.pm). Only written when
+# configure was given a value, so an identity exported by hand is not clobbered.
+    if ( "@MACOSX_CODESIGNING_IDENTITY@" ne "" )
+    {
+        ToFile( "MACOSX_CODESIGNING_IDENTITY", "@MACOSX_CODESIGNING_IDENTITY@", "e" );
+    }
+    if ( "@MACOSX_CODESIGNING_KEYCHAIN@" ne "" )
+    {
+        ToFile( "MACOSX_CODESIGNING_KEYCHAIN", "@MACOSX_CODESIGNING_KEYCHAIN@", "e" );
+    }
+    if ( "@MACOSX_NOTARY_PROFILE@" ne "" )
+    {
+        ToFile( "MACOSX_NOTARY_PROFILE", "@MACOSX_NOTARY_PROFILE@", "e" );
+    }
+    ToFile( "LIBINTL_PREFIX",       "@LIBINTL_PREFIX@", "e" );
 }
 if ( $platform =~ m/freebsd/ )
 {
@@ -1780,6 +1907,18 @@ ToFile( "Variable values.",  $empty,             "c" );
 if ( $platform =~ m/cygwin/ )
 {  ToFile( "CYGWIN_PATH",       $CYGWIN_PATH,       "e" );
    ToFile( "PSDK_HOME",         $PSDK_HOME,         "e" );
+   # Platform SDK v7.0, which a modern SDK does not replace.  It supplies
+   # mscoree.lib for the .NET parts and rebase.exe for postprocess, neither
+   # of which is in the Windows 10 SDK.  See win10-msvc/README.md.
+   ToFile( "FRAME_HOME",        $FRAME_HOME,        "e" );
+   # The CLI binding cannot be built by a UCRT-generation compiler, and the
+   # bundled Python needs an already-installed one to build with.  Both are
+   # decided by configure and read by several unrelated modules.
+   ToFile( "DISABLE_CLI",       "@DISABLE_CLI@",    "e" );
+   ToFile( "HOST_PYTHON",       "@HOST_PYTHON@",    "e" );
+   ToFile( "MSBUILD_PATH",      "@MSBUILD_PATH@",   "e" );
+   ToFile( "VCTOOLSET",         "@VCTOOLSET@",      "e" );
+   ToFile( "WINDOWS_SDK_VERSION", "@WINDOWS_SDK_VERSION@", "e" );
    ToFile( "WINDOWS_VISTA_PSDK","@WINDOWS_VISTA_PSDK@","e" );
    ToFile( "DIRECTXSDK_LIB",    $DIRECTXSDK_LIB,    "e" );
    ToFile( "USE_DIRECTX5",      $USE_DIRECTX5,      "e" );
@@ -1810,6 +1949,7 @@ ToFile( "FAKEROOT",          "@FAKEROOT@",       "e" );
 ToFile( "PKGMK",             "@PKGMK@",          "e" );
 ToFile( "GNUMAKE",           "@GNUMAKE@",        "e" );
 ToFile( "GNUTAR",            "@GNUTAR@",         "e" );
+ToFile( "XZ",                "@XZ@",             "e" );
 ToFile( "UPD",               $UPD,               "e" );
 ToFile( "WORK_STAMP",        $WORK_STAMP,        "e" );
 ToFile( "SOLARVER",          $SOLARVER,          "e" );
@@ -1868,6 +2008,8 @@ ToFile( "HAVE_GCC_VISIBILITY_FEATURE",
 ToFile( "HAVE_LD_HASH_STYLE","@HAVE_LD_HASH_STYLE@","e" );
 ToFile( "HAVE_LD_BSYMBOLIC_FUNCTIONS",
 		"@HAVE_LD_BSYMBOLIC_FUNCTIONS@","e" );
+ToFile( "HAVE_LD_UNDEFINED_VERSION",
+		"@HAVE_LD_UNDEFINED_VERSION@","e" );
 ToFile( "CXX",               $CXX,               "e" );
 ToFile( "USE_CCACHE",        "@USE_CCACHE@",     "e" );
 ToFile( "MINGWCXX",          "@MINGWCXX@",       "e" );
@@ -1891,6 +2033,7 @@ ToFile( "GRAPHITE_LIBS",     "@GRAPHITE_LIBS@",     "e");
 ToFile( "GRAPHITE_CFLAGS",   "@GRAPHITE_CFLAGS@",   "e");
 ToFile( "VC_STANDARD",       "@VC_STANDARD@",      "e" );
 ToFile( "BUILD_X64",         "@BUILD_X64@",      "e" );
+ToFile( "BUILD_WIN64",       "@BUILD_WIN64@",    "e" );
 ToFile( "ENABLE_CATEGORY_B", "@ENABLE_CATEGORY_B@", "e");
 ToFile( "BUNDLED_EXTENSION_BLOBS", "@BUNDLED_EXTENSION_BLOBS@", "e");
 ToFile( "BUNDLED_PREREG_EXTENSIONS", "@BUNDLED_PREREG_EXTENSIONS@", "e");
@@ -1931,12 +2074,14 @@ ToFile( "SYSTEM_OPENSSL",    "@SYSTEM_OPENSSL@",   "e" );
 ToFile( "OPENSSL_CFLAGS",    "@OPENSSL_CFLAGS@",   "e" );
 ToFile( "OPENSSL_LIBS",      "@OPENSSL_LIBS@",     "e" );
 ToFile( "SYSTEM_PYTHON",     "@SYSTEM_PYTHON@",    "e" );
+ToFile( "PYTHON_BIN",        "@PYTHON_BIN@",       "e" );
 ToFile( "PYTHON_CFLAGS",     "@PYTHON_CFLAGS@",    "e" );
 ToFile( "PYTHON_LIBS",       "@PYTHON_LIBS@",      "e" );
 if ($SYSTEM_PYTHON eq "NO") {
 ToFile( "HOME",              "@HOME@",             "e" );
 }
 ToFile( "SYSTEM_ICU",        "@SYSTEM_ICU@",       "e" );
+ToFile( "ICU_CFLAGS",        "@ICU_CFLAGS@",       "e" );
 ToFile( "ICU_MAJOR",         "@ICU_MAJOR@",        "e" );
 ToFile( "ICU_MINOR",         "@ICU_MINOR@",        "e" );
 ToFile( "ICU_MICRO",         "@ICU_MICRO@",        "e" );
@@ -1963,6 +2108,11 @@ ToFile( "SYSTEM_LIBXML",     "@SYSTEM_LIBXML@",    "e" );
 ToFile( "USE_FT_EMBOLDEN",   "@USE_FT_EMBOLDEN@",  "e" );
 ToFile( "LIBXML_CFLAGS",     "@LIBXML_CFLAGS@",    "e" );
 ToFile( "LIBXML_LIBS",       "@LIBXML_LIBS@",      "e" );
+ToFile( "LIBXML_PREFIX",     "@LIBXML_PREFIX@",    "e" );
+ToFile( "STATIC_SYSTEM_LIBS", "@STATIC_SYSTEM_LIBS@",  "e" );
+ToFile( "STATIC_SYSTEM_LIBXML", "@STATIC_SYSTEM_LIBXML@", "e" );
+ToFile( "STATIC_SYSTEM_LIBXSLT","@STATIC_SYSTEM_LIBXSLT@","e" );
+ToFile( "STATIC_SYSTEM_CURL",  "@STATIC_SYSTEM_CURL@",  "e" );
 ToFile( "SYSTEM_EXPAT",      "@SYSTEM_EXPAT@",     "e" );
 ToFile( "ENABLE_MYSQLC",     "@ENABLE_MYSQLC@",    "e" );
 ToFile( "SYSTEM_MYSQL",      "@SYSTEM_MYSQL@",     "e" );
@@ -1991,11 +2141,13 @@ ToFile( "SYSTEM_ODBC_HEADERS","@SYSTEM_ODBC_HEADERS@","e" );
 ToFile( "SYSTEM_LIBXSLT",    "@SYSTEM_LIBXSLT@",   "e" );
 ToFile( "LIBXSLT_CFLAGS",    "@LIBXSLT_CFLAGS@",   "e" );
 ToFile( "LIBXSLT_LIBS",      "@LIBXSLT_LIBS@",     "e" );
+ToFile( "LIBXSLT_PREFIX",    "@LIBXSLT_PREFIX@",   "e" );
 ToFile( "SYSTEM_SANE_HEADER","@SYSTEM_SANE_HEADER@","e" );
 ToFile( "SYSTEM_XRENDER_HEADERS","@SYSTEM_XRENDER_HEADERS@","e" );
 ToFile( "SYSTEM_CURL",       "@SYSTEM_CURL@",      "e" );
 ToFile( "CURL_CFLAGS",       "@CURL_CFLAGS@",      "e" );
 ToFile( "CURL_LIBS",         "@CURL_LIBS@",        "e" );
+ToFile( "CURL_PREFIX",       "@CURL_PREFIX@",      "e" );
 ToFile( "SYSTEM_BOOST",      "@SYSTEM_BOOST@",     "e" );
 ToFile( "SYSTEM_MDDS",       "@SYSTEM_MDDS@",      "e" );
 ToFile( "SYSTEM_VIGRA",      "@SYSTEM_VIGRA@",     "e" );
@@ -2007,9 +2159,9 @@ ToFile( "SYSTEM_LIBPNG",     "@SYSTEM_LIBPNG@",   "e" );
 ToFile( "SYSTEM_LIBJPEG",    "@SYSTEM_LIBJPEG@",   "e" );
 ToFile( "RAT_JAR_HOME",      "@RAT_JAR_HOME@",     "e" );
 ToFile( "DMAKE_URL",         "@DMAKE_URL@",        "e" );
+ToFile( "BUILD_DMAKE",       "@BUILD_DMAKE@",      "e" );
 ToFile( "DMAKE_PATH",        "@DMAKE_PATH@",       "e" );
 ToFile( "IS_SYSTEM_DMAKE",   "@IS_SYSTEM_DMAKE@",  "e" );
-ToFile( "BUILD_STAX",        "@BUILD_STAX@",       "e" );
 ToFile( "BUILD_UNOWINREG",   "@BUILD_UNOWINREG@",  "e" );
 ToFile( "USE_XINERAMA",      "@USE_XINERAMA@",     "e" );
 ToFile( "XINERAMA_LINK",     "@XINERAMA_LINK@",    "e" );
@@ -2220,6 +2372,32 @@ system("chmod +x bootstrap");
 $tmp = $SRC_ROOT.$ds.$bootfile;
 if (rename( $bootfile, $tmp ) ne 1)
 {  `mv -f $bootfile $tmp`;
+}
+#
+#--------------------------------------------------------
+# Generating the clean file, which needs to know the name
+# of the platform specific environment set-up script.
+#--------------------------------------------------------
+#
+$cleanfile = "clean";
+open( OUT, ">$cleanfile" ) ||
+die "Cannot open $cleanfile: $!\n";
+print OUT "#!/bin/sh\n";
+print OUT "# Generated by set_soenv, do not edit.\n";
+print OUT "cd \"`dirname \"\$0\"`\" || exit 1\n";
+print OUT ". ./$outfile_sh\n";
+print OUT "dmake clean\n";
+print OUT "make clean\n";
+close( OUT ) || print "Can't close $cleanfile: $!";
+system("chmod +x $cleanfile");
+#
+#--------------------------------------------------------
+# Moving the clean file to the build home directory.
+#--------------------------------------------------------
+#
+$tmp = $SRC_ROOT.$ds.$cleanfile;
+if (rename( $cleanfile, $tmp ) ne 1)
+{  `mv -f $cleanfile $tmp`;
 }
 
 print "Configure completed";

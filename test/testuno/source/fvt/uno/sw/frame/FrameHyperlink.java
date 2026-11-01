@@ -62,25 +62,25 @@ public class FrameHyperlink {
 
 	@Test
 	public void testFrameHyperlink() throws Exception {
-		xTextDocument =(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
+		xTextDocument =UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
 		xText=xTextDocument.getText();
 		XTextCursor xTextCursor = xText.createTextCursor();
 		// get internal service factory of the document
-		xWriterFactory =(XMultiServiceFactory)UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
+		xWriterFactory =UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
 		// Create a new table from the document's factory
-		XTextFrame xTextFrame = (XTextFrame)UnoRuntime.queryInterface(XTextFrame.class, xWriterFactory.createInstance("com.sun.star.text.TextFrame"));
+		XTextFrame xTextFrame = UnoRuntime.queryInterface(XTextFrame.class, xWriterFactory.createInstance("com.sun.star.text.TextFrame"));
 		xText.insertTextContent(xTextCursor,xTextFrame,false);
-		XPropertySet xTextFrameProps = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, xTextFrame);
+		XPropertySet xTextFrameProps = UnoRuntime.queryInterface(XPropertySet.class, xTextFrame);
 		xTextFrameProps.setPropertyValue("HyperLinkURL","http://www.google.com.hk/");
 		xTextFrameProps.setPropertyValue("HyperLinkTarget","google");
 		xTextFrameProps.setPropertyValue("HyperLinkName","FrameHyperlinkToGoogle");
 
 		//save and reopen the document
-		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class,SWUtil.saveTo_Override_reload(xTextDocument, "writer8",Testspace.getPath("output/test.odt"), app));
-		XTextFramesSupplier xTFS_odt = (XTextFramesSupplier) UnoRuntime.queryInterface(XTextFramesSupplier.class, assertDocument_odt);
+		XTextDocument assertDocument_odt=UnoRuntime.queryInterface(XTextDocument.class,SWUtil.saveTo_Override_reload(xTextDocument, "writer8",Testspace.getPath("output/test.odt"), app));
+		XTextFramesSupplier xTFS_odt = UnoRuntime.queryInterface(XTextFramesSupplier.class, assertDocument_odt);
 		XNameAccess xTextFrames_odt = xTFS_odt.getTextFrames();
-		XTextFrame xTextFrame_Assert=(XTextFrame) UnoRuntime.queryInterface(XTextFrame.class, xTextFrames_odt.getByName("Frame1"));
-		XPropertySet xTextFrameProps_assert = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextFrame_Assert);
+		XTextFrame xTextFrame_Assert=UnoRuntime.queryInterface(XTextFrame.class, xTextFrames_odt.getByName("Frame1"));
+		XPropertySet xTextFrameProps_assert = UnoRuntime.queryInterface(XPropertySet.class, xTextFrame_Assert);
 		assertEquals("assert Frame hyperlink url","http://www.google.com.hk/", xTextFrameProps_assert.getPropertyValue("HyperLinkURL"));
 		assertEquals("assert Frame hyperlink target","google", xTextFrameProps_assert.getPropertyValue("HyperLinkTarget"));
 		assertEquals("assert Frame hyperlink name", "FrameHyperlinkToGoogle",xTextFrameProps_assert.getPropertyValue("HyperLinkName"));

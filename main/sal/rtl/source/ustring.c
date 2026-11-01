@@ -161,6 +161,8 @@ double SAL_CALL rtl_ustr_toDouble(sal_Unicode const * pStr)
 /* guards are at function entry, outside the per-character loops.          */
 /* ======================================================================= */
 
+#if OSL_DEBUG_LEVEL > 0
+
 static const sal_Char aImplGuardEmptyAscii = 0;
 
 /* Null-terminated ASCII argument: treat NULL as the empty string. */
@@ -197,6 +199,14 @@ static const sal_Char aImplGuardEmptyAscii = 0;
             (nLen) = 0;                                                     \
         }                                                                   \
     } while (0)
+
+#else /* product build: guards compile away, callers must honour contract */
+
+#define IMPL_RTL_ASCII_NULL_AS_EMPTY( pAscii )        ((void)0)
+#define IMPL_RTL_UNI_NULL_AS_EMPTY( pUni )            ((void)0)
+#define IMPL_RTL_UNI_NULL_AS_EMPTY_LEN( pUni, nLen )  ((void)0)
+
+#endif
 
 sal_Int32 SAL_CALL rtl_ustr_ascii_compare( const sal_Unicode* pStr1,
                                            const sal_Char* pStr2 )

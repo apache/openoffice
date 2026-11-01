@@ -30,7 +30,7 @@ class AccessibleExtendedComponentHandler
     public NodeHandler createHandler (XAccessibleContext xContext)
     {
         XAccessibleExtendedComponent xEComponent =
-            (XAccessibleExtendedComponent) UnoRuntime.queryInterface (
+            UnoRuntime.queryInterface (
                 XAccessibleExtendedComponent.class, xContext);
         if (xEComponent != null)
             return new AccessibleExtendedComponentHandler (xEComponent);
@@ -50,7 +50,7 @@ class AccessibleExtendedComponentHandler
 
     private static XAccessibleExtendedComponent getComponent (AccTreeNode aNode)
     {
-        return (XAccessibleExtendedComponent) UnoRuntime.queryInterface (
+        return UnoRuntime.queryInterface (
             XAccessibleExtendedComponent.class,
             aNode.getContext());
     }

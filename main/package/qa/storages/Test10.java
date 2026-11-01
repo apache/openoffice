@@ -57,7 +57,7 @@ public class Test10 implements StorageTest {
 			// create temporary storage based on arbitrary medium
 			// after such a storage is closed it is lost
 			Object oTempStorage = m_xStorageFactory.createInstance();
-			XStorage xTempStorage = (XStorage) UnoRuntime.queryInterface( XStorage.class, oTempStorage );
+			XStorage xTempStorage = UnoRuntime.queryInterface( XStorage.class, oTempStorage );
 			if ( xTempStorage == null )
 			{
 				m_aTestHelper.Error( "Can't create temporary storage representation!" );
@@ -125,7 +125,7 @@ public class Test10 implements StorageTest {
 				return false;
 			}
 
-			XNameAccess xClonedNameAccess = (XNameAccess) UnoRuntime.queryInterface( XNameAccess.class, xClonedSubStorage );
+			XNameAccess xClonedNameAccess = UnoRuntime.queryInterface( XNameAccess.class, xClonedSubStorage );
 			if ( xClonedNameAccess == null )
 			{
 				m_aTestHelper.Error( "XNameAccess is not implemented by the clone!" );
@@ -193,7 +193,7 @@ public class Test10 implements StorageTest {
 				return false;
 			}
 
-			XNameAccess xCloneOfRootNA = (XNameAccess) UnoRuntime.queryInterface( XNameAccess.class, xCloneOfRoot );
+			XNameAccess xCloneOfRootNA = UnoRuntime.queryInterface( XNameAccess.class, xCloneOfRoot );
 			if ( xCloneOfRootNA == null )
 			{
 				m_aTestHelper.Error( "XNameAccess is not implemented by the root clone!" );

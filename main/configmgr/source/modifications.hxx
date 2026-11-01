@@ -26,9 +26,10 @@
 
 #include "sal/config.h"
 
-#include <boost/unordered_map.hpp> // using the boost container because it explicitly allows recursive types
+#include <map>
 
 #include "boost/noncopyable.hpp"
+#include "boost/shared_ptr.hpp"
 
 #include "path.hxx"
 #include "rtl/ustring.hxx"
@@ -38,7 +39,8 @@ namespace configmgr {
 class Modifications: private boost::noncopyable {
 public:
     struct Node {
-        typedef boost::unordered_map< rtl::OUString, Node, rtl::OUStringHash > Children;
+        typedef boost::shared_ptr< Node > NodePtr;
+        typedef std::map< rtl::OUString, NodePtr > Children;
 
         Children children;
     };

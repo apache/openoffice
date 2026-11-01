@@ -78,7 +78,7 @@ public class BookmarkInsertion {
 
                 if( xSearchInterface != null ) {
                     // get the TextRange form the XInterface
-                    xSearchTextRange = (com.sun.star.text.XTextRange)
+                    xSearchTextRange =
                         UnoRuntime.queryInterface(
                             com.sun.star.text.XTextRange.class, xSearchInterface);
 
@@ -101,7 +101,7 @@ public class BookmarkInsertion {
         try {
             // get the MultiServiceFactory from the text document
             com.sun.star.lang.XMultiServiceFactory xDocMSF;
-            xDocMSF = (com.sun.star.lang.XMultiServiceFactory)
+            xDocMSF =
                 UnoRuntime.queryInterface(
                     com.sun.star.lang.XMultiServiceFactory.class, xTextDocument);
 
@@ -111,7 +111,7 @@ public class BookmarkInsertion {
 
             // set the name from the bookmark
             com.sun.star.container.XNamed xNameAccess = null;
-            xNameAccess = (com.sun.star.container.XNamed)
+            xNameAccess =
                 UnoRuntime.queryInterface(
                     com.sun.star.container.XNamed.class, xObject);
 
@@ -119,7 +119,7 @@ public class BookmarkInsertion {
 
             // create a XTextContent, for the method 'insertTextContent'
             com.sun.star.text.XTextContent xTextContent = null;
-            xTextContent = (com.sun.star.text.XTextContent)
+            xTextContent =
                 UnoRuntime.queryInterface(
                     com.sun.star.text.XTextContent.class, xNameAccess);
 
@@ -142,7 +142,7 @@ public class BookmarkInsertion {
         com.sun.star.uno.XInterface xSearchInterface = null;
 
         try {
-            xSearchable = (com.sun.star.util.XSearchable)
+            xSearchable =
                 UnoRuntime.queryInterface(
                     com.sun.star.util.XSearchable.class, xTextDocument);
             xSearchDescriptor = (com.sun.star.util.XSearchDescriptor)
@@ -151,7 +151,7 @@ public class BookmarkInsertion {
             xSearchDescriptor.setSearchString(sSearchString);
 
             com.sun.star.beans.XPropertySet xPropertySet = null;
-            xPropertySet = (com.sun.star.beans.XPropertySet)
+            xPropertySet =
                 UnoRuntime.queryInterface(
                     com.sun.star.beans.XPropertySet.class, xSearchDescriptor);
 
@@ -208,7 +208,7 @@ public class BookmarkInsertion {
 
                 Object oDesktop = xMCF.createInstanceWithContext(
                     "com.sun.star.frame.Desktop", xContext);
-                xDesktop = (com.sun.star.frame.XDesktop) UnoRuntime.queryInterface(
+                xDesktop = UnoRuntime.queryInterface(
                     com.sun.star.frame.XDesktop.class, oDesktop);
             }
             else
@@ -231,7 +231,7 @@ public class BookmarkInsertion {
         try {
             com.sun.star.lang.XComponent xComponent = CreateNewDocument(xDesktop,
                                                                         "swriter");
-            aTextDocument = (com.sun.star.text.XTextDocument)
+            aTextDocument =
                 UnoRuntime.queryInterface(
                     com.sun.star.text.XTextDocument.class, xComponent);
         }
@@ -257,7 +257,7 @@ public class BookmarkInsertion {
             new com.sun.star.beans.PropertyValue[0];
 
         try {
-            xComponentLoader = (com.sun.star.frame.XComponentLoader)
+            xComponentLoader =
                 UnoRuntime.queryInterface(
                     com.sun.star.frame.XComponentLoader.class, xDesktop);
 

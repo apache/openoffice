@@ -160,6 +160,10 @@
 .INCLUDE : unxmaccx.mk
 .ENDIF
 
+.IF "$(COM)$(OS)$(CPU)" == "CLANGMACOSXR"
+.INCLUDE : unxmaccr.mk
+.ENDIF
+
 .IF "$(OS)$(CPU)" == "LINUXM"
 .INCLUDE : unxlngmips.mk
 .ENDIF

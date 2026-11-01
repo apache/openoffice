@@ -22,7 +22,7 @@
 
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
-#include "precompiled_connectivity.hxx"
+#include "precompiled_ado.hxx"
 #include "ado/ATables.hxx"
 #include "ado/ATable.hxx"
 #include <com/sun/star/sdbc/XRow.hpp>

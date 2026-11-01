@@ -76,7 +76,10 @@ UNOTYPES = \
 #loader lock was solved as of VS 2005 (CCNUMVER = 0014..)
 # When compiling for CLR, disable "warning C4339: use of undefined type detected
 # in CLR meta-data - use of this type may lead to a runtime exception":
-.IF "$(CCNUMVER)" >= "001399999999"
+.IF "$(COMEX)"=="14"
+# /clr:oldSyntax went away after VS2015; these sources are C++/CLI now.
+CFLAGSCXX += -clr -AI $(BIN) -wd4339
+.ELIF "$(CCNUMVER)" >= "001399999999"
 CFLAGSCXX += -clr:oldSyntax -AI $(BIN) -wd4339
 .ELSE
 CFLAGSCXX += -clr -AI $(BIN) -wd4339
@@ -125,7 +128,9 @@ ALLTAR: \
 
 
 
-.IF "$(CCNUMVER)" >= "001399999999"
+.IF "$(COMEX)"=="14"
+CFLAGSCXX += -clr
+.ELIF "$(CCNUMVER)" >= "001399999999"
 CFLAGSCXX += -clr:oldSyntax
 .ENDIF
 

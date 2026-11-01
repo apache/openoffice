@@ -63,19 +63,19 @@ public class TableBorderSpacingtoContent {
 	 */
 	@Test
 	public void testtableBorderSpacingtoContent() throws Exception {
-		xTextDocument =(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
+		xTextDocument =UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
 		xText=xTextDocument.getText();
 		XTextCursor xTextCursor = xText.createTextCursor();
 		// get internal service factory of the document
-		xWriterFactory =(XMultiServiceFactory)UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
+		xWriterFactory =UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
 		// Create a new table from the document's factory
-		XTextTable xTable = (XTextTable)UnoRuntime.queryInterface(XTextTable.class, xWriterFactory.createInstance("com.sun.star.text.TextTable"));
+		XTextTable xTable = UnoRuntime.queryInterface(XTextTable.class, xWriterFactory.createInstance("com.sun.star.text.TextTable"));
 		xText.insertTextContent(xTextCursor,xTable,false);
 		String[] cellName=xTable.getCellNames();
 		int i=0;
 		while(cellName[i] != null)
 		{
-		XPropertySet xCursorProps = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class,xTable.getCellByName(cellName[i]));
+		XPropertySet xCursorProps = UnoRuntime.queryInterface(XPropertySet.class,xTable.getCellByName(cellName[i]));
 		xCursorProps.setPropertyValue("LeftBorderDistance",499);
 		xCursorProps.setPropertyValue("RightBorderDistance",499);
 		xCursorProps.setPropertyValue("TopBorderDistance",499);
@@ -84,7 +84,7 @@ public class TableBorderSpacingtoContent {
 		if(i==4)break;
 		}
 		//save to odt
-		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_odt = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
 		aStoreProperties_odt[1] = new PropertyValue();
@@ -94,7 +94,7 @@ public class TableBorderSpacingtoContent {
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
 		//save to doc
-		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_doc = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
 		aStoreProperties_doc[1] = new PropertyValue();
@@ -106,16 +106,16 @@ public class TableBorderSpacingtoContent {
 		app.closeDocument(xTextDocument);
 
 		//reopen the odt document and assert table border spacing to content
-		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
-		XTextTablesSupplier xTablesSupplier_odt = (XTextTablesSupplier) UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_odt );
-		XIndexAccess xIndexedTables_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_odt.getTextTables());
+		XTextDocument assertDocument_odt=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
+		XTextTablesSupplier xTablesSupplier_odt = UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_odt );
+		XIndexAccess xIndexedTables_odt = UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_odt.getTextTables());
 		Object xTable_obj_odt=xIndexedTables_odt.getByIndex(0);
-		XTextTable xTable_Assert_odt=(XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj_odt);
+		XTextTable xTable_Assert_odt=UnoRuntime.queryInterface(XTextTable.class, xTable_obj_odt);
 		String[] cellName_assert_odt=xTable_Assert_odt.getCellNames();
 		int j=0;
 		while(cellName_assert_odt[j] != null)
 		{
-		XPropertySet xCursorProps_assert_odt = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_odt.getCellByName(cellName_assert_odt[j]));
+		XPropertySet xCursorProps_assert_odt = UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_odt.getCellByName(cellName_assert_odt[j]));
 		assertEquals("assert table border spacing to content",499,xCursorProps_assert_odt.getPropertyValue("LeftBorderDistance"));
 		assertEquals("assert table border spacing to content",499,xCursorProps_assert_odt.getPropertyValue("RightBorderDistance"));
 		assertEquals("assert table border spacing to content",499,xCursorProps_assert_odt.getPropertyValue("TopBorderDistance"));
@@ -125,16 +125,16 @@ public class TableBorderSpacingtoContent {
 		}
 
 		//reopen the doc document and assert table border spacing to content
-		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
-		XTextTablesSupplier xTablesSupplier_doc = (XTextTablesSupplier) UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_doc );
-		XIndexAccess xIndexedTables_doc = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_doc.getTextTables());
+		XTextDocument assertDocument_doc=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
+		XTextTablesSupplier xTablesSupplier_doc = UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_doc );
+		XIndexAccess xIndexedTables_doc = UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_doc.getTextTables());
 		Object xTable_obj_doc=xIndexedTables_doc.getByIndex(0);
-		XTextTable xTable_Assert_doc=(XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj_doc);
+		XTextTable xTable_Assert_doc=UnoRuntime.queryInterface(XTextTable.class, xTable_obj_doc);
 		String[] cellName_assert_doc=xTable_Assert_doc.getCellNames();
 		int k=0;
 		while(cellName_assert_doc[k] != null)
 		{
-		XPropertySet xCursorProps_assert_doc = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_doc.getCellByName(cellName_assert_doc[k]));
+		XPropertySet xCursorProps_assert_doc = UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_doc.getCellByName(cellName_assert_doc[k]));
 		assertEquals("assert table border spacing to content",499,xCursorProps_assert_doc.getPropertyValue("LeftBorderDistance"));
 		assertEquals("assert table border spacing to content",499,xCursorProps_assert_doc.getPropertyValue("RightBorderDistance"));
 		assertEquals("assert table border spacing to content",499,xCursorProps_assert_doc.getPropertyValue("TopBorderDistance"));

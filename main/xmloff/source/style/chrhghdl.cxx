@@ -73,7 +73,7 @@ sal_Bool XMLCharHeightHdl::exportXML( OUString& rStrExpValue, const uno::Any& rV
 	OUStringBuffer aOut;
 
 	float fSize = 0;
-	if( rValue >>= fSize )
+	if( ( rValue >>= fSize ) && fSize > 0 )
 	{
         SvXMLUnitConverter::convertDouble( aOut, (double)fSize, sal_True, MAP_POINT, MAP_POINT );
         aOut.append( sal_Unicode('p'));

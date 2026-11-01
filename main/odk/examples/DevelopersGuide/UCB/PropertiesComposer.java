@@ -106,10 +106,10 @@ public class PropertiesComposer {
             ****     This code is for unregistered properties.     ****
 
             XPropertyContainer xPropContainer
-                    = (XPropertyContainer)UnoRuntime.queryInterface(
+                    = UnoRuntime.queryInterface(
                         XPropertyContainer.class, m_content );
 
-            XPropertySetInfo xPropSetInfo = ( XPropertySetInfo )UnoRuntime.queryInterface(
+            XPropertySetInfo xPropSetInfo = UnoRuntime.queryInterface(
                     XPropertySetInfo.class,
                     m_helper.executeCommand( m_content, "getPropertySetInfo", null ));
             */

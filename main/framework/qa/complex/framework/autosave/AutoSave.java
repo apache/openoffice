@@ -254,8 +254,8 @@ public class AutoSave
             XSpreadsheetDocument xSheetDoc   = m_aSOF.createCalcDoc("_default");
             m_aLog.log("Retrieve first sheet from calc document.");
             XSpreadsheets        xSheets     = xSheetDoc.getSheets();
-            XSpreadsheet         xSheet      = (XSpreadsheet)AnyConverter.toObject(
-                                                 new Type(XSpreadsheet.class),
+            XSpreadsheet         xSheet      = AnyConverter.toObject(
+                                                 XSpreadsheet.class,
                                                  xSheets.getByName(
                                                          xSheets.getElementNames()[0]));
             m_aLog.log("Fill two cells with value and formula.");

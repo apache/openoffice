@@ -172,7 +172,7 @@ public class TestUtil {
 	 * @return
 	 */
 	public static String connectByOperator(double[] number, String operator) throws Exception{
-		StringBuffer buffer = new StringBuffer();
+		StringBuilder buffer = new StringBuilder();
 
 		for (int i = 0; i < number.length; i++) {
 			buffer.append(number[i]);
@@ -190,7 +190,7 @@ public class TestUtil {
 	 */
 	public static void printPropertiesList(Object obj) throws Exception {
 		// Get the property set of specific object
-		XPropertySet xPropertySet = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, obj);
+		XPropertySet xPropertySet = UnoRuntime.queryInterface(XPropertySet.class, obj);
 		XPropertySetInfo xPropertySetInfo = xPropertySet.getPropertySetInfo();
 
 	    // Get all properties info

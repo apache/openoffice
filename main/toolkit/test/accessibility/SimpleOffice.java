@@ -95,7 +95,7 @@ public class SimpleOffice
         {
             //  Load the document from the specified URL.
             XComponentLoader xLoader =
-                (XComponentLoader)UnoRuntime.queryInterface(
+                UnoRuntime.queryInterface(
                     XComponentLoader.class, mxDesktop);
 
             XComponent xComponent = xLoader.loadComponentFromURL (
@@ -105,7 +105,7 @@ public class SimpleOffice
                 new PropertyValue[0]
                 );
 
-            xModel = (XModel) UnoRuntime.queryInterface(
+            xModel = UnoRuntime.queryInterface(
                 XModel.class, xComponent);
         }
         catch (java.lang.NullPointerException e)
@@ -130,13 +130,13 @@ public class SimpleOffice
         try
         {
             XTasksSupplier xTasksSupplier =
-                (XTasksSupplier) UnoRuntime.queryInterface(
+                UnoRuntime.queryInterface(
                     XTasksSupplier.class, mxDesktop);
             XEnumerationAccess xEA = xTasksSupplier.getTasks();
             XEnumeration xE = xEA.createEnumeration();
             while (xE.hasMoreElements())
             {
-                XTask xTask = (XTask) UnoRuntime.queryInterface(
+                XTask xTask = UnoRuntime.queryInterface(
                     XTask.class, xE.nextElement());
                 MessageArea.print (xTask.getName());
             }
@@ -152,7 +152,7 @@ public class SimpleOffice
 
     public XModel getModel (XDrawView xView)
     {
-        XController xController = (XController) UnoRuntime.queryInterface(
+        XController xController = UnoRuntime.queryInterface(
             XController.class, xView);
         if (xController != null)
             return xController.getModel();
@@ -180,7 +180,7 @@ public class SimpleOffice
                 MessageArea.println ("Connected successfully.");
 
             //  Create a new desktop.
-            mxDesktop = (XDesktop) UnoRuntime.queryInterface(
+            mxDesktop = UnoRuntime.queryInterface(
                 XDesktop.class,
                 xMSF.createInstance ("com.sun.star.frame.Desktop")
                 );
@@ -207,7 +207,7 @@ public class SimpleOffice
             XMultiServiceFactory xMSF = aConnection.getServiceManager ();
             if (xMSF != null)
             {
-                xToolkit = (XExtendedToolkit) UnoRuntime.queryInterface(
+                xToolkit = UnoRuntime.queryInterface(
                     XExtendedToolkit.class,
                     xMSF.createInstance ("stardiv.Toolkit.VCLXToolkit")
                     );
@@ -228,7 +228,7 @@ public class SimpleOffice
         XAccessible xAccessible = null;
         try
         {
-            xAccessible = (XAccessible) UnoRuntime.queryInterface(
+            xAccessible = UnoRuntime.queryInterface(
                 XAccessible.class, xObject);
         }
         catch (Exception e)
@@ -274,7 +274,7 @@ public class SimpleOffice
     */
     public XWindow getCurrentWindow ()
     {
-        return getCurrentWindow ((XModel) UnoRuntime.queryInterface(
+        return getCurrentWindow (UnoRuntime.queryInterface(
                 XModel.class, getDesktop()));
     }
 
@@ -312,7 +312,7 @@ public class SimpleOffice
     */
     public XDrawPage getCurrentDrawPage ()
     {
-        return getCurrentDrawPage ((XDrawView) UnoRuntime.queryInterface(
+        return getCurrentDrawPage (UnoRuntime.queryInterface(
                 XDrawView.class, getCurrentView()));
     }
 
@@ -367,7 +367,7 @@ public class SimpleOffice
             if (xController == null)
                 MessageArea.println ("can't get controller to retrieve current view");
 
-            xView = (XDrawView) UnoRuntime.queryInterface(
+            xView = UnoRuntime.queryInterface(
                 XDrawView.class, xController);
             if (xView == null)
                 MessageArea.println ("could not cast controller into view");
@@ -386,7 +386,7 @@ public class SimpleOffice
     //  Return the accessible object of the document window.
     public static XAccessible getAccessibleDocumentWindow (XDrawPage xPage)
     {
-        XIndexAccess xShapeList = (XIndexAccess) UnoRuntime.queryInterface(
+        XIndexAccess xShapeList = UnoRuntime.queryInterface(
             XIndexAccess.class, xPage);
         if (xShapeList.getCount() > 0)
         {
@@ -396,11 +396,11 @@ public class SimpleOffice
             // the object directly is implemented.
             XShape xShape = null;
             try{
-                xShape = (XShape) UnoRuntime.queryInterface(
+                xShape = UnoRuntime.queryInterface(
                     XShape.class, xShapeList.getByIndex (0));
             } catch (Exception e)
             {}
-            XAccessible xAccessible = (XAccessible) UnoRuntime.queryInterface (
+            XAccessible xAccessible = UnoRuntime.queryInterface (
                 XAccessible.class, xShape);
             return xAccessible;
         }

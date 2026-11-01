@@ -260,7 +260,7 @@ ScXMLContentValidationContext::ScXMLContentValidationContext( ScXMLImport& rImpo
 			break;
             case XML_TOK_CONTENT_VALIDATION_DISPLAY_LIST:
             {
-				if (IsXMLToken(sValue, XML_NO))
+				if (IsXMLToken(sValue, XML_NO) || IsXMLToken(sValue, XML_NONE))
                 {
                     nShowList = sheet::TableValidationVisibility::INVISIBLE;
                 }
@@ -268,7 +268,7 @@ ScXMLContentValidationContext::ScXMLContentValidationContext( ScXMLImport& rImpo
                 {
                     nShowList = sheet::TableValidationVisibility::UNSORTED;
                 }
-                else if (IsXMLToken(sValue, XML_SORTED_ASCENDING))
+                else if (IsXMLToken(sValue, XML_SORTED_ASCENDING) || IsXMLToken(sValue, XML_SORT_ASCENDING))
                 {
                     nShowList = sheet::TableValidationVisibility::SORTEDASCENDING;
                 }

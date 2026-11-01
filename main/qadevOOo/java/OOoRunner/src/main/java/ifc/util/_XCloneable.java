@@ -64,7 +64,7 @@ public class _XCloneable extends MultiMethodTest {
 
     protected byte[] getImplementationID(XInterface ifc) {
         byte[] res = new byte[0];
-        XTypeProvider provider = (XTypeProvider)
+        XTypeProvider provider =
                     UnoRuntime.queryInterface(XTypeProvider.class, ifc);
         if (provider != null) {
             res = provider.getImplementationId();
@@ -84,7 +84,7 @@ public class _XCloneable extends MultiMethodTest {
 
     protected String getImplementationName(XInterface ifc) {
         String res = "";
-        XServiceInfo info = (XServiceInfo)
+        XServiceInfo info =
                     UnoRuntime.queryInterface(XServiceInfo.class, ifc);
         if (info != null) {
             res = info.getImplementationName();

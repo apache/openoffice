@@ -224,7 +224,7 @@ public class DB extends DBHelper
     //         ExecSQL(aCon, sDeleteOld);
     //
     //         String sValueLine = "type, filename, basename, fileformat, buildid, resolution, date";
-    //         StringBuffer aDataLine = new StringBuffer();
+    //         StringBuilder aDataLine = new StringBuilder();
     //         aDataLine.append( Quote(_sSourceType) ) . append( sComma ) .
     //             append( Quote( sFilename) )   . append( sComma ) .
     //             append( Quote( _sBasename) )   . append( sComma ) .
@@ -278,7 +278,7 @@ public class DB extends DBHelper
 
                 while( aResultSet.next() )
                 {
-                    StringBuffer aResult = new StringBuffer();
+                    StringBuilder aResult = new StringBuilder();
                     try
                     {
                         Object aObj = null;
@@ -390,7 +390,7 @@ public class DB extends DBHelper
 
     private String getWhereClause()
         {
-            StringBuffer aWhereClause = new StringBuffer();
+            StringBuilder aWhereClause = new StringBuilder();
             // WHERE environment='' and referenceversion='' and currentversion='' and documentpool=''
             // aWhere.append( "environment" ). append(sEqual) . append(Quote(m_sEnvironment)) .
             //     append(sAND) .
@@ -478,7 +478,7 @@ public class DB extends DBHelper
 
             String sValueLine="dbdistinct2, environment, sourceversion, sourcename, sourcecreatortype, destinationversion, destinationname, destinationcreatortype, documentpoolpath, documentpool, mailfeedback, state, special, parentdistinct, startdate";
             String sDocumentPoolDir = _sDocumentPoolDir.replace('\\', '/');
-            StringBuffer aDataLine = new StringBuffer();
+            StringBuilder aDataLine = new StringBuilder();
             aDataLine.append( Quote(getDBDistinct()) ) . append( sComma ) .
                 append( Quote( getEnvironment()) ) . append( sComma ) .
                 append( Quote( _sSourceVersion) )   . append( sComma ) .
@@ -522,7 +522,7 @@ public class DB extends DBHelper
     //         Connection aCon = new ShareConnection().getConnection();
     //
     //         String sValueLine = "environment, referenceversion, currentversion, documentpool, name, state";
-    //         StringBuffer aDataLine = new StringBuffer();
+    //         StringBuilder aDataLine = new StringBuilder();
     //         aDataLine.append( Quote(m_sEnvironment) ) . append( sComma ) .
     //             append( Quote( m_sSourceVersion) )   . append( sComma ) .
     //             append( Quote( m_sDestinationVersion) )   . append( sComma ) .
@@ -539,7 +539,7 @@ public class DB extends DBHelper
     //         Connection aCon = new ShareConnection().getConnection();
     //
     //         String sValueLine = "type, filename, fileformat, buildid, date";
-    //         StringBuffer aDataLine = new StringBuffer();
+    //         StringBuilder aDataLine = new StringBuilder();
     //         aDataLine.append( "1" )            . append( sComma ) .
     //             append( Quote( _sFilename) )   . append( sComma ) .
     //             append( Quote( _sFileFormat) ) . append( sComma ) .

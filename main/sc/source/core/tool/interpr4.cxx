@@ -4001,6 +4001,13 @@ StackVar ScInterpreter::Interpret()
                     SetError( errUnknownStackVariable);
             }
         }
+        else if( pCur->GetOpCode() == ocMissing )
+        {   // ODF 1.3: an empty IfTrue or IfFalse of IF is 0
+            Pop();
+            PushDouble( 0.0 );
+            nRetTypeExpr = NUMBERFORMAT_NUMBER;
+            nRetIndexExpr = 0;
+        }
         else
             SetError( errUnknownStackVariable);
     }

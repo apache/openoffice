@@ -442,56 +442,23 @@ PyObject *PyUNO_str( PyObject * self )
     return PYSTR_FROMSTR( buf.getStr() );
 }
 
-#if PY_MAJOR_VERSION >= 3
 PyObject* PyUNO_getattr (PyObject* self, PyObject* attr_name)
-#else
-PyObject* PyUNO_getattr (PyObject* self, char* name)
-#endif
 {
     PyUNO* me;
 
-#if PY_VERSION_HEX >= 0x03030000 && PY_VERSION_HEX < 0x03060000
-    char *name = PyUnicode_AsUTF8(attr_name);
-#elif PY_MAJOR_VERSION >= 3
-    PyRef pUtf8(PyUnicode_AsUTF8String(attr_name), SAL_NO_ACQUIRE);
-    char *name = PyBytes_AsString(pUtf8.get());
-#endif
+    const char *name = PyUnicode_AsUTF8(attr_name);
     try
     {
 
         Runtime runtime;
 
         me = (PyUNO*) self;
-#if PY_MAJOR_VERSION < 3
-        //Handle Python dir () stuff first...
-        if (strcmp (name, "__members__") == 0)
-        {
-            PyObject* member_list;
-            Sequence<OUString> oo_member_list;
-
-            oo_member_list = me->members->xInvocation->getMemberNames ();
-            member_list = PyList_New (oo_member_list.getLength ());
-            for (int i = 0; i < oo_member_list.getLength (); i++)
-            {
-                // setitem steals a reference
-                PyList_SetItem (member_list, i, ustring2PyString(oo_member_list[i]).getAcquired() );
-            }
-            return member_list;
-        }
-#endif
 
         if (strcmp (name, "__dict__") == 0)
         {
             Py_INCREF (Py_None);
             return Py_None;
         }
-#if PY_MAJOR_VERSION < 3
-        if (strcmp (name, "__methods__") == 0)
-        {
-            Py_INCREF (Py_None);
-            return Py_None;
-        }
-#endif
         if (strcmp (name, "__class__") == 0)
         {
             if( me->members->wrappedObject.getValueTypeClass() ==
@@ -560,20 +527,11 @@ PyObject* PyUNO_getattr (PyObject* self, char* name)
     return NULL;
 }
 
-#if PY_MAJOR_VERSION >= 3
 int PyUNO_setattr (PyObject* self, PyObject* attr_name, PyObject* value)
-#else
-int PyUNO_setattr (PyObject* self, char* name, PyObject* value)
-#endif
 {
     PyUNO* me;
 
-#if PY_VERSION_HEX >= 0x03030000 && PY_VERSION_HEX < 0x03060000
-    char *name = PyUnicode_AsUTF8(attr_name);
-#elif PY_MAJOR_VERSION >= 3
-    PyRef pUtf8(PyUnicode_AsUTF8String(attr_name), SAL_NO_ACQUIRE);
-    char *name = PyBytes_AsString(pUtf8.get());
-#endif
+    const char *name = PyUnicode_AsUTF8(attr_name);
     me = (PyUNO*) self;
     try
     {
@@ -614,7 +572,6 @@ int PyUNO_setattr (PyObject* self, char* name, PyObject* value)
     return 1; //as above.
 }
 
-#if PY_MAJOR_VERSION >= 3
 static PyObject *PyUNO_dir( PyObject *self, PyObject *that )
 {
     PyUNO* me;
@@ -706,51 +663,6 @@ static struct PyMethodDef PyUNO_methods[] = {
     { NULL, NULL }
 };
 
-#else
-// ensure object identity and struct equality
-static int PyUNO_cmp( PyObject *self, PyObject *that )
-{
-    if( self == that )
-        return 0;
-    int retDefault = self > that ? 1 : -1;
-    try
-    {
-        Runtime runtime;
-        if( PyObject_IsInstance( that, getPyUnoClass().get() ) )
-        {
-
-            PyUNO *me = reinterpret_cast< PyUNO*> ( self );
-            PyUNO *other = reinterpret_cast< PyUNO *> (that );
-            com::sun::star::uno::TypeClass tcMe = me->members->wrappedObject.getValueTypeClass();
-            com::sun::star::uno::TypeClass tcOther = other->members->wrappedObject.getValueTypeClass();
-
-            if( tcMe == tcOther )
-            {
-                if( tcMe == com::sun::star::uno::TypeClass_STRUCT ||
-                    tcMe == com::sun::star::uno::TypeClass_EXCEPTION )
-                {
-                    Reference< XMaterialHolder > xMe( me->members->xInvocation,UNO_QUERY);
-                    Reference< XMaterialHolder > xOther( other->members->xInvocation,UNO_QUERY );
-                    if( xMe->getMaterial() == xOther->getMaterial() )
-                        return 0;
-                }
-                else if( tcMe == com::sun::star::uno::TypeClass_INTERFACE )
-                {
-                    if( me->members->wrappedObject == other->members->wrappedObject )
-//                     if( me->members->xInvocation == other->members->xInvocation )
-                        return 0;
-                }
-            }
-        }
-    }
-    catch( com::sun::star::uno::RuntimeException & e)
-    {
-        raisePyExceptionWithAny( makeAny( e ) );
-    }
-    return retDefault;
-}
-#endif
-
 static PyTypeObject PyUNOType =
 {
     PyVarObject_HEAD_INIT(&PyType_Type, 0)
@@ -759,15 +671,9 @@ static PyTypeObject PyUNOType =
     0,
     (destructor) PyUNO_del,
     (printfunc) 0,
-#if PY_MAJOR_VERSION >= 3
     (getattrfunc) 0,
     (setattrfunc) 0,
     0,
-#else
-    (getattrfunc) PyUNO_getattr, /* tp_getattr */
-    (setattrfunc) PyUNO_setattr, /* tp_setattr */
-    (cmpfunc) PyUNO_cmp,
-#endif
     (reprfunc) PyUNO_repr,
     0,
     0,
@@ -775,31 +681,18 @@ static PyTypeObject PyUNOType =
     (hashfunc) 0,
     (ternaryfunc) 0,
     (reprfunc) PyUNO_str,
-#if PY_MAJOR_VERSION >= 3
     (getattrofunc)PyUNO_getattr, /* tp_getattro */
     (setattrofunc)PyUNO_setattr, /* tp_setattro */
-#else
-    (getattrofunc)0,
-    (setattrofunc)0,
-#endif
     NULL,
     0,
     NULL,
     (traverseproc)0,
     (inquiry)0,
-#if PY_MAJOR_VERSION >= 3
     PyUNO_richcompare, /* tp_richcompare */
-#else
-    (richcmpfunc)0,
-#endif
     0,
     (getiterfunc)0,
     (iternextfunc)0,
-#if PY_MAJOR_VERSION >= 3
     PyUNO_methods, /* tp_methods */
-#else
-    NULL,
-#endif
     NULL,
     NULL,
     NULL,
@@ -817,10 +710,8 @@ static PyTypeObject PyUNOType =
     NULL,
     NULL,
     NULL,
-    (destructor)0
-#if PY_VERSION_HEX >= 0x02060000 && PY_VERSION_HEX < 0x03060000
-    , 0
-#endif
+    (destructor)0,
+    0
 };
 
 PyRef getPyUnoClass()

@@ -263,7 +263,7 @@ class BitmapPainter implements XPaintListener, XMouseListener, XMouseMotionListe
 		System.out.println( "The bitmap is going to be painted!" );
 
 		try {
-			XDevice xDevice = (XDevice)UnoRuntime.queryInterface( XDevice.class, m_xWindow );
+			XDevice xDevice = UnoRuntime.queryInterface( XDevice.class, m_xWindow );
 			if ( xDevice != null )
 			{
 				System.out.println( "Step1" );

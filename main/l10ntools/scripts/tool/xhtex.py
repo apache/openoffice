@@ -50,14 +50,14 @@ class Xhtex(AbstractL10nTool):
             if elem.childNodes[0].nodeType == elem.TEXT_NODE and elem.getAttribute("id").strip():
                 obj = self.prepare_sdf_line(inputfile=inputfilename, lang=lang, id=elem.getAttribute("id").strip())
                 if sdfdata[obj.get_id()]:
-                    elem.childNodes[0].data = unicode(str(sdfdata[obj.get_id()].text),"utf8")
+                    elem.childNodes[0].data = str(sdfdata[obj.get_id()].text)
 
 
     def merge_title(self, list, sdfdata, lang, inputfilename):
         for elem in list:
             obj = self.prepare_sdf_line(inputfile=inputfilename, lang=lang, id=elem.getAttribute("id").strip())
             if elem.getAttribute("id").strip() and sdfdata[obj.get_id()]:
-                elem.setAttribute("title", unicode(str(sdfdata[obj.get_id()].text),"utf8"))
+                elem.setAttribute("title", str(sdfdata[obj.get_id()].text))
 
     # L10N tool
     def __init__(self):
@@ -66,10 +66,10 @@ class Xhtex(AbstractL10nTool):
     def parse_file(self, filename):
         document = ""
         try:
-            f = open(filename, "r+")
+            f = open(filename, "r+", encoding="utf-8")
             document = f.read()
         except IOError:
-            print "ERROR: Can not read file " + filename
+            print("ERROR: Can not read file " + filename)
             sys.exit(-1)
         else:
             f.close()
@@ -90,11 +90,10 @@ class Xhtex(AbstractL10nTool):
         self.merge_title(dom.getElementsByTagName("help_section"), sdfdata, lang, inputfilename)
         self.make_dirs(outputfilename)
         try:
-            f = open(outputfilename, "w+")
-            str = dom.toxml()
-            f.write(str.encode("utf-8"))
+            f = open(outputfilename, "w+", encoding="utf-8")
+            f.write(dom.toxml())
         except IOError:
-            print "ERROR: Can not write file " + outputfilename
+            print("ERROR: Can not write file " + outputfilename)
             sys.exit(-1)
         else:
             f.close()
@@ -103,10 +102,10 @@ class Xhtex(AbstractL10nTool):
     def parse_file(self, filename):
         document = ""
         try:
-            f = open(filename,"r")
+            f = open(filename, "r", encoding="utf-8")
             document = f.read()
         except IOError:
-            print "ERROR: Can not read file " + filename
+            print("ERROR: Can not read file " + filename)
         else:
             f.close()
         return xml.dom.minidom.parseString(document)

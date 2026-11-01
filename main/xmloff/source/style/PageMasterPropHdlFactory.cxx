@@ -137,6 +137,9 @@ const XMLPropertyHandler* XMLPageMasterPropHdlFactory::GetPropertyHandler( sal_I
 			case XML_PM_TYPE_CENTER_VERTICAL:
 				pHdl = new XMLPMPropHdl_CenterVertical();
 			break;
+			case XML_PM_TYPE_BACKGROUNDSIZE:
+				pHdl = new XMLNamedBoolPropertyHdl( GetXMLToken( XML_FULL ), GetXMLToken( XML_BORDER ) );
+			break;
 			case XML_TYPE_TEXT_COLUMNS:
 				pHdl = new XMLTextColumnsPropertyHandler;
 			break;

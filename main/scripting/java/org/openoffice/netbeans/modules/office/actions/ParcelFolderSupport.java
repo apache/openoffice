@@ -229,7 +229,7 @@ public class ParcelFolderSupport implements ParcelFolderCookie
 
             if ( classpath.startsWith("\"") && classpath.endsWith("\"") )
             {
-               StringBuffer buff = new StringBuffer(classpath);
+               StringBuilder buff = new StringBuilder(classpath);
                buff.delete(0,1);
                buff.delete( buff.length() - 1, buff.length() );
                classpath = buff.toString();

@@ -83,17 +83,23 @@ else
         alpha-*-linux*)
             . ./LinuxAlphaEnv.Set.sh
         ;;
+        aarch64-*-linux*)
+            . ./LinuxAARCH64Env.Set.sh
+        ;;
         arm*-*-linux*)
             . ./LinuxARMEnv.Set.sh
         ;;
         mips-*-linux*)
             . ./LinuxMIPSEnv.Set.sh
         ;;
-        i386-*-freebsd*)
+        i[3456]86-*-freebsd*)
             . ./FreeBSDX86Env.Set.sh
         ;;
         amd64-*-freebsd*|x86_64-*-freebsd*)
             . ./FreeBSDAMDEnv.Set.sh
+        ;;
+        aarch64-*-freebsd*|arm64-*-freebsd*)
+            . ./FreeBSDAARCH64Env.Set.sh
         ;;
         arm*-*-freebsd*)
             . ./FreeBSDARMEnv.Set.sh
@@ -101,12 +107,15 @@ else
         powerpc-*-freebsd*)
             . ./FreeBSDPPCEnv.Set.sh
         ;;
-        powerpc64-*-freebsd*)
+        powerpc64-*-freebsd*|powerpc64le-*-freebsd*)
             . ./FreeBSDPPC64Env.Set.sh
         ;;
         # the result here (whether you get x86_64) seems to depend on $CC...
         i[3456]86-*-darwin*|x86_64-*-darwin*)
             . ./MacOSXX64Env.Set.sh
+        ;;
+        aarch64-*-darwin*|arm64-*-darwin*)
+            . ./MacOSXAARCH64Env.Set.sh
         ;;
         powerpc-*-darwin*)
             . ./MacOSXPPCEnv.Set.sh

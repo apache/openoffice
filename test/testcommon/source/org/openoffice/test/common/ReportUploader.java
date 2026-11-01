@@ -94,7 +94,7 @@ public class ReportUploader extends RunListener {
 			out = connection.getOutputStream();
 			fis = new FileInputStream(reportZip);
 
-			StringBuffer params = new StringBuffer();
+			StringBuilder params = new StringBuilder();
 			params.append(prefix + boundary + newLine);
 			params.append("Content-Disposition: form-data; name=\"name\"");
 			params.append(newLine + newLine);

@@ -85,8 +85,8 @@ public class CheckXCellRangesQuery {
             XSpreadsheets oSheets = m_xSheetDoc.getSheets() ;
             XIndexAccess oIndexSheets =
             UnoRuntime.queryInterface(XIndexAccess.class, oSheets);
-            m_xSpreadSheet = (XSpreadsheet) AnyConverter.toObject(
-                    new Type(XSpreadsheet.class),oIndexSheets.getByIndex(0));
+            m_xSpreadSheet = AnyConverter.toObject(
+                    XSpreadsheet.class,oIndexSheets.getByIndex(0));
 
             // get the cell
             System.out.println("Getting a cell from sheet") ;

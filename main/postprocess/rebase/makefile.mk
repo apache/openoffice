@@ -31,6 +31,18 @@ TARGET=rebase
 
 .INCLUDE : target.mk
 
+.IF "$(COMEX)"=="14"
+# Microsoft's rebase.exe is in Platform SDK v7.0 and NOT in the Windows 10 SDK,
+# and Cygwin has an unrelated tool of the same name earlier on PATH.  Name the
+# one we mean rather than letting PATH decide.  Empty on VC9, where the old
+# SDK's Bin directory is on PATH anyway and "rebase" already resolves to it.
+# := and not =, so the value is expanded HERE.  .EXPORT puts the macro's text
+# into the environment, and a lazily-expanded one arrives at the shell still
+# spelled $(FRAME_HOME), which sh then treats as a command substitution.
+REBASE_EXE:=$(FRAME_HOME)/Bin/rebase.exe
+.EXPORT : REBASE_EXE
+.ENDIF
+
 STARTADDRESS=0x68000000
 BASEADDRESSES=$(MISC)$/coffbase.txt
 EXCLUDELIST=no_rebase.txt

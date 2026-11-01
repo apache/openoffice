@@ -26,7 +26,6 @@ import javax.swing.tree.TreePath;
 
 import java.util.Vector;
 import java.util.HashMap;
-import java.util.Enumeration;
 
 import com.sun.star.accessibility.*;
 
@@ -447,7 +446,7 @@ public class AccessibilityTreeModel
     protected XAccessibleEventBroadcaster getBroadcaster (Object aObject)
     {
         if (aObject instanceof AccTreeNode)
-            return (XAccessibleEventBroadcaster) UnoRuntime.queryInterface (
+            return UnoRuntime.queryInterface (
                 XAccessibleEventBroadcaster.class, ((AccTreeNode)aObject).getContext());
         else
             return null;

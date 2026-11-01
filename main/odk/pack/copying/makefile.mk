@@ -56,12 +56,15 @@ EXELIST = \
 	$(DESTDIRBIN)/unoapploader$(EXEPOSTFIX) \
 	$(DESTDIRBIN)/uno-skeletonmaker$(EXEPOSTFIX)
 
-.IF "$(GUI)"=="WNT"
+# Both of these are products of the CLI binding, so they exist only when it
+# was built.  DISABLE_CLI is what configure sets for --disable-cli -- see
+# cli_ure/util/makefile.pmk.
+.IF "$(GUI)"=="WNT" && "$(DISABLE_CLI)"==""
 EXELIST += \
 	$(DESTDIRBIN)/climaker$(EXEPOSTFIX)
 .ENDIF
 
-.IF "$(GUI)"=="WNT"
+.IF "$(GUI)"=="WNT" && "$(DISABLE_CLI)"==""
 CLILIST = \
 	$(DESTDIRCLI)/cli_basetypes.dll 	\
 	$(DESTDIRCLI)/cli_uretypes.dll 	\
@@ -228,7 +231,7 @@ $(DESTDIRBIN)/addsym-macosx.sh : addsym-macosx.sh
 $(DESTDIRSETTINGS)/dk.mk : dk.mk
 	@@-rm -f $@
 	-$(MKDIRHIER) $(@:d)
-	tr -d "\015" < dk.mk | sed -e 's/@@RELEASE@@/$(PRODUCT_RELEASE)/' -e 's/@@BUILDID@@/$(RSCREVISION)/' -e 's/@@SCMREVISION@@/$(SCMREVISION)/'> $@
+	tr -d "\015" < dk.mk | sed -e 's/@@RELEASE@@/$(PRODUCT_RELEASE)/' -e 's/@@BUILDID@@/$(RSCREVISION)/' -e 's/@@SCMREVISION@@/$(SCMREVISION)/' -e 's/@@PLATFORMID@@/$(PLATFORMID)/' > $@
 
 $(CONVERTTAGFLAG) : $(DOCUHTMLFILES)
 #	$(PERL) $(CONVERTTAGSCRIPT) 1 "$(TITLE)" "$(OFFICEPRODUCTNAME)" $(DOCUHTMLFILES)

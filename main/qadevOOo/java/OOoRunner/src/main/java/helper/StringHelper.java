@@ -108,7 +108,7 @@ public class StringHelper
     public static String createValueString(int _nValue, int _nLen)
         {
             String sValue = String.valueOf(_nValue);
-            StringBuffer a = new StringBuffer();
+            StringBuilder a = new StringBuilder();
             while (_nLen > sValue.length())
             {
                 a.append('0');

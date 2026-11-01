@@ -33,7 +33,7 @@ import com.sun.star.beans.PropertyValue;
 import com.sun.star.uno.UnoRuntime;
 import com.sun.star.beans.NamedValue;
 
-import java.util.Vector;
+import java.util.ArrayList;
 import java.util.StringTokenizer;
 
 
@@ -104,7 +104,7 @@ public class CheckAPI  {
 
         // get the parameters for the internal test
         String paramList = (String)param.get("ParamList");
-        Vector p = new Vector();
+        ArrayList p = new ArrayList();
         StringTokenizer paramTokens = new StringTokenizer(paramList, " ");
         while(paramTokens.hasMoreTokens())
         {
@@ -128,12 +128,12 @@ public class CheckAPI  {
             if ( param.get("job1")==null )
             {
                 // get all test jobs from runner service
-                XPropertyAccess xPropAcc = (XPropertyAccess)UnoRuntime.queryInterface(XPropertyAccess.class, oObj);
+                XPropertyAccess xPropAcc = UnoRuntime.queryInterface(XPropertyAccess.class, oObj);
                 props = xPropAcc.getPropertyValues();
             }
             else  {
                 int index=1;
-                p = new Vector();
+                p = new ArrayList<>();
                 while ( param.get("job"+index) != null ) {
                     p.add(param.get("job"+index));
                     index++;

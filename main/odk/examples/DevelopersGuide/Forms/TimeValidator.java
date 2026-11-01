@@ -62,7 +62,7 @@ public class TimeValidator extends ControlValidator
             if ( isVoid( Value ) )
                 return false;
 
-            com.sun.star.util.Time timeValue = (com.sun.star.util.Time)
+            com.sun.star.util.Time timeValue =
                 com.sun.star.uno.AnyConverter.toObject(
                     com.sun.star.util.Time.class, Value);
             if ( isInvalidTime( timeValue ) )

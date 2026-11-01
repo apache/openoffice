@@ -1,0 +1,5 @@
+[
+ {"name": "series", "expr": "[(n, [(str(s.Symbol.Style.value), s.Symbol.Graphic is not None, [list(q.Values.getData()) for q in s.getDataSequences()]) for s in sh.Charts.getByName(n).EmbeddedObject.getFirstDiagram().getCoordinateSystems()[0].getChartTypes()[0].getDataSeries()]) for sh in [doc.Sheets.getByIndex(0)] for n in sh.Charts.ElementNames]"},
+ {"name": "col_c_visible", "expr": "doc.Sheets.getByIndex(0).getColumns().getByIndex(2).IsVisible"},
+ {"name": "cells", "expr": "[[doc.Sheets.getByIndex(0).getCellByPosition(c,r).String for c in range(3)] for r in range(4)]"}
+]

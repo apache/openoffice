@@ -86,7 +86,7 @@ public class ScFilterDescriptorBase extends TestCase {
     */
     protected void cleanup( TestParameters tParam, PrintWriter log ) {
         log.println( "    disposing xSheetDoc " );
-        XComponent oComp = (XComponent)
+        XComponent oComp =
             UnoRuntime.queryInterface (XComponent.class, xSheetDoc);
         util.DesktopTools.closeDoc(oComp);
     }
@@ -111,12 +111,12 @@ public class ScFilterDescriptorBase extends TestCase {
 
         log.println("getting a sheet");
         XSpreadsheet oSheet = null;
-        XIndexAccess oIndexAccess = (XIndexAccess)
+        XIndexAccess oIndexAccess =
             UnoRuntime.queryInterface(XIndexAccess.class, xSpreadsheets);
 
         try {
-            oSheet = (XSpreadsheet) AnyConverter.toObject(
-                    new Type(XSpreadsheet.class),oIndexAccess.getByIndex(0));
+            oSheet = AnyConverter.toObject(
+                    XSpreadsheet.class,oIndexAccess.getByIndex(0));
         } catch (com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace(log);
             throw new StatusException("Couldn't get a spreadsheet", e);
@@ -139,7 +139,7 @@ public class ScFilterDescriptorBase extends TestCase {
                 "Exception occurred while filling cells", e);
         }
 
-        SF = (XSheetFilterable)
+        SF =
             UnoRuntime.queryInterface(XSheetFilterable.class, oSheet);
 
         oObj = SF.createFilterDescriptor(true);

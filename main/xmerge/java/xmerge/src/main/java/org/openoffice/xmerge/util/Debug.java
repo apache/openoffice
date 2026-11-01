@@ -317,7 +317,7 @@ public final class Debug {
      */
     public static String byteArrayToHexString(byte bytes[]) {
 
-        StringBuffer buff = new StringBuffer();
+        StringBuilder buff = new StringBuilder();
 
         for (int i = 0; i < bytes.length; i++) {
 

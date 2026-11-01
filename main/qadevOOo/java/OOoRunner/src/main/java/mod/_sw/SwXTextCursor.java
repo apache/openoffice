@@ -179,12 +179,12 @@ public class SwXTextCursor extends TestCase {
 
         tEnv.addObjRelation("XTEXT", xTextDoc.getText());
 
-        XPropertySet xCursorProp = (XPropertySet) UnoRuntime.queryInterface(
+        XPropertySet xCursorProp = UnoRuntime.queryInterface(
                                            XPropertySet.class, oObj);
         tEnv.addObjRelation("PropertyNames", getPropertyNames(xCursorProp));
 
         //Adding relation for util.XSortable
-        final XParagraphCursor paragrCursor = (XParagraphCursor) UnoRuntime.queryInterface(
+        final XParagraphCursor paragrCursor = UnoRuntime.queryInterface(
                                                       XParagraphCursor.class,
                                                       oObj);
         final PrintWriter finalLog = log;

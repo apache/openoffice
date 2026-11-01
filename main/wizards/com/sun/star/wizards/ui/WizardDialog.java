@@ -255,7 +255,7 @@ public abstract class WizardDialog extends UnoDialog2 implements VetoableChangeL
 
             xSSFRoadmap = UnoRuntime.queryInterface(XSingleServiceFactory.class, oRoadmap);
             xIndexContRoadmap = UnoRuntime.queryInterface(XIndexContainer.class, oRoadmap);
-            //    XPropertySet xPropRoadmapModel = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, oRoadmap);
+            //    XPropertySet xPropRoadmapModel = UnoRuntime.queryInterface(XPropertySet.class, oRoadmap);
             //    xPropRoadmapModel.addPropertyChangeListener("CurrentItemID", new WizardDialog.RoadmapItemListener(this.xDialogModel));
 
             MethodInvocation mi = new MethodInvocation("itemStateChanged", this, com.sun.star.awt.ItemEvent.class);

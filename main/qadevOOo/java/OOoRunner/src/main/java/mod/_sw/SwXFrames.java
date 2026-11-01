@@ -102,10 +102,10 @@ public class SwXFrames extends TestCase {
 
         log.println( "creating a test environment" );
         try {
-            oDocMSF = (XMultiServiceFactory)
+            oDocMSF =
                 UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDoc);
             Object oInt = oDocMSF.createInstance("com.sun.star.text.TextFrame");
-            oFrame1 = (XTextFrame)
+            oFrame1 =
                 UnoRuntime.queryInterface( XTextFrame.class, oInt );
         } catch ( com.sun.star.uno.Exception e ) {
             e.printStackTrace(log);
@@ -124,7 +124,7 @@ public class SwXFrames extends TestCase {
                 ("Error: can't insert text content to text document", e);
         }
 
-        oInterface = (XTextFramesSupplier)
+        oInterface =
             UnoRuntime.queryInterface( XTextFramesSupplier.class, xTextDoc );
 
         oObj = oInterface.getTextFrames();

@@ -21,6 +21,7 @@
 
 
 #include "precompiled_rptui.hxx"
+#include <iterator>
 #include "GeometryHandler.hxx"
 
 #include <comphelper/sequence.hxx>

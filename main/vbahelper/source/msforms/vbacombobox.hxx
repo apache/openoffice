@@ -34,11 +34,12 @@
 #include "vbacontrol.hxx"
 #include "vbalistcontrolhelper.hxx"
 #include <vbahelper/vbahelper.hxx>
+#include <memory>
 
 typedef cppu::ImplInheritanceHelper2<ScVbaControl, ov::msforms::XComboBox, css::script::XDefaultProperty > ComboBoxImpl_BASE;
 class ScVbaComboBox : public ComboBoxImpl_BASE
 {
-	std::auto_ptr< ListControlHelper > mpListHelper;
+	std::unique_ptr< ListControlHelper > mpListHelper;
 	rtl::OUString sSourceName;
 	rtl::OUString msDftPropName;
 	bool mbDialogType;

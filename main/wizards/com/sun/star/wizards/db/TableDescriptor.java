@@ -111,7 +111,7 @@ public class TableDescriptor extends CommandMetaData implements XContainerListen
     {
         if (super.getConnection(_curPropertyValue))
         {
-            // XTablesSupplier xDBTables = (XTablesSupplier) UnoRuntime.queryInterface(XTablesSupplier.class, DBConnection);
+            // XTablesSupplier xDBTables = UnoRuntime.queryInterface(XTablesSupplier.class, DBConnection);
             // xTableNames = xDBTables.getTables();
             xTableAppend = UnoRuntime.queryInterface( XAppend.class, getTableNamesAsNameAccess() );
             xTableDrop = UnoRuntime.queryInterface( XDrop.class, getTableNamesAsNameAccess() );
@@ -775,8 +775,8 @@ public class TableDescriptor extends CommandMetaData implements XContainerListen
         {
             XPropertySet xTablePropertySet = UnoRuntime.queryInterface(XPropertySet.class, arg0.Element);
             String stablename = AnyConverter.toString(xTablePropertySet.getPropertyValue(PropertyNames.PROPERTY_NAME));
-            String sschemaname = AnyConverter.toString(xPropTableDataDescriptor.getPropertyValue("SchemaName"));
-            String scatalogname = AnyConverter.toString(xPropTableDataDescriptor.getPropertyValue("CatalogName"));
+            String sschemaname = AnyConverter.toString(xTablePropertySet.getPropertyValue("SchemaName"));
+            String scatalogname = AnyConverter.toString(xTablePropertySet.getPropertyValue("CatalogName"));
             ComposedTableName = new CommandName(this, scatalogname, sschemaname, stablename, false);
             appendTableNameToFilter(ComposedTableName.getComposedName());
         }

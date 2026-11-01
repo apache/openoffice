@@ -730,7 +730,7 @@ public class ButtonList implements XItemEventBroadcaster, XActionListener
     private void setBorder(Object control, Short border)
     {
         Helper.setUnoPropertyValue(getModel(control), PropertyNames.PROPERTY_BORDER, border);
-    //XWindowPeer peer = ((XControl)UnoRuntime.queryInterface(XControl.class,control)).getPeer();
+    //XWindowPeer peer = (UnoRuntime.queryInterface(XControl.class,control)).getPeer();
     //peer.invalidate(InvalidateStyle.CHILDREN);
     }
 

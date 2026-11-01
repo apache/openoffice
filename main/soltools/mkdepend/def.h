@@ -150,17 +150,17 @@ struct filepointer {
 char *malloc(), *realloc();
 #endif /* macII */
 #else
-char			*malloc();
-char			*realloc();
+char *malloc(size_t);
+char *realloc(void *, size_t);
 #endif
 
-char			*copy();
-char			*base_name();
-char			*get_line();
-char			*isdefined();
-struct filepointer	*getfile();
-struct inclist		*newinclude();
-struct inclist		*inc_path();
+char			*copy(char *);
+char			*base_name(char *);
+char			*get_line(struct filepointer *);
+char                    *isdefined(char *);
+struct filepointer	*getfile(char *);
+struct inclist		*newinclude(char *, char *);
+struct inclist		*inc_path(char *, char *, boolean, struct IncludesCollection*);
 
 void define( char *def, struct symhash **symbols );
 void hash_define(char *name, char * val, struct symhash **symbols);

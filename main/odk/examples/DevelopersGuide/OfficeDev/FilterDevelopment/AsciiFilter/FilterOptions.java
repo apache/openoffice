@@ -131,10 +131,10 @@ public class FilterOptions
                     m_sURL = AnyConverter.toString(lDescriptor[i].Value);
                 else
                 if (lDescriptor[i].Name.equals("InputStream"))
-                    m_xInput = (com.sun.star.io.XInputStream)AnyConverter.toObject(new com.sun.star.uno.Type(com.sun.star.io.XInputStream.class), lDescriptor[i].Value);
+                    m_xInput = AnyConverter.toObject(com.sun.star.io.XInputStream.class, lDescriptor[i].Value);
                 else
                 if (lDescriptor[i].Name.equals("OutputStream"))
-                    m_xOutput = (com.sun.star.io.XOutputStream)AnyConverter.toObject(new com.sun.star.uno.Type(com.sun.star.io.XOutputStream.class), lDescriptor[i].Value);
+                    m_xOutput = AnyConverter.toObject(com.sun.star.io.XOutputStream.class, lDescriptor[i].Value);
                 else
                 if (lDescriptor[i].Name.equals("FilterData"))
                 {
@@ -200,7 +200,7 @@ public class FilterOptions
     private void impl_openStreams( boolean bImport )
     {
         try{
-            com.sun.star.ucb.XSimpleFileAccess xHelper = (com.sun.star.ucb.XSimpleFileAccess)UnoRuntime.queryInterface(
+            com.sun.star.ucb.XSimpleFileAccess xHelper = UnoRuntime.queryInterface(
                 com.sun.star.ucb.XSimpleFileAccess.class,
                 m_xMCF.createInstanceWithContext("com.sun.star.ucb.SimpleFileAccess", m_Ctx));
             if (xHelper!=null)

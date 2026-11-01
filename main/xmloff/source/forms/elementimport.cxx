@@ -452,6 +452,9 @@ namespace xmloff
 					    case TypeClass_SHORT:
                             aPropValues->Value <<= static_cast< sal_Int16 >( nVal );
 						    break;
+					    case TypeClass_UNSIGNED_SHORT:
+                            aPropValues->Value <<= static_cast< sal_uInt16 >( nVal );
+                            break;
 					    case TypeClass_LONG:
 					    case TypeClass_ENUM:
                             aPropValues->Value <<= static_cast< sal_Int32 >( nVal );

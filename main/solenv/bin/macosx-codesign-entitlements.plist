@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- The bundled JVM/Java bridge and Basic runtime generate and run code at runtime. -->
+	<key>com.apple.security.cs.allow-jit</key>
+	<true/>
+	<key>com.apple.security.cs.allow-unsigned-executable-memory</key>
+	<true/>
+	<!-- soffice dlopens an external JDK's libjvm.dylib, user-installed UNO extensions
+	     and Python modules; none of those carry our Team ID. -->
+	<key>com.apple.security.cs.disable-library-validation</key>
+	<true/>
+	<!-- sofficerc / the launcher set DYLD_* to find the bundled URE libraries. -->
+	<key>com.apple.security.cs.allow-dyld-environment-variables</key>
+	<true/>
+	<!-- Mail merge, "Send Document as E-Mail" and the installer script drive other apps. -->
+	<key>com.apple.security.automation.apple-events</key>
+	<true/>
+</dict>
+</plist>

@@ -195,6 +195,8 @@ void XMLLineNumberingImportContext::ProcessAttribute(
 	            { XML_RIGHT,	style::LineNumberPosition::RIGHT },
 	            { XML_INSIDE,	style::LineNumberPosition::INSIDE },
 	            { XML_OUTSIDE,  style::LineNumberPosition::OUTSIDE },
+	            { XML_INNER,	style::LineNumberPosition::INSIDE },
+	            { XML_OUTER,	style::LineNumberPosition::OUTSIDE },
 	            { XML_TOKEN_INVALID, 0 }
             };
 

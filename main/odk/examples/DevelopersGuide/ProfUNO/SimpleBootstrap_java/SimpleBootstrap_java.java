@@ -48,7 +48,7 @@ public class SimpleBootstrap_java {
 
             // query the XComponentLoader interface from the desktop
             XComponentLoader xComponentLoader =
-                (XComponentLoader)UnoRuntime.queryInterface(
+                UnoRuntime.queryInterface(
                     XComponentLoader.class, desktop );
 
             // load a spreadsheet document

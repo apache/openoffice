@@ -437,6 +437,15 @@ void BigPtrArray::Remove( sal_uLong pos, sal_uLong n )
 				--nBlk1;
 		}
 		BlockDel( nBlkdel );			// es wurden Bloecke geloescht
+
+		// If the deleted block(s) reached the very end of the array, the
+		// branch above (which backs nBlk1 up to the block before the gap)
+		// never runs, so nBlk1 can be left one-or-more past the now-
+		// shrunk nBlock. ppInf[nBlk1] is then stale/uninitialized, and
+		// both UpdIndex() and the nCur cache below dereference it via
+		// that index. Clamp to the last real block, or 0 if now empty.
+		if( nBlk1 >= nBlock )
+			nBlk1 = nBlock ? nBlock - 1 : 0;
 	}
 
 	nSize -= n;

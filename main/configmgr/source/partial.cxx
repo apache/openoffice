@@ -68,6 +68,17 @@ bool parseSegment(
 
 }
 
+Partial::Node * Partial::getOrCreateChild(
+    Node * parent, rtl::OUString const & name)
+{
+    Node::Children::iterator i(parent->children.find(name));
+    if (i == parent->children.end()) {
+        i = parent->children.insert(
+            Node::Children::value_type(name, Node::NodePtr(new Node))).first;
+    }
+    return i->second.get();
+}
+
 Partial::Partial(
     std::set< rtl::OUString > const & includedPaths,
     std::set< rtl::OUString > const & excludedPaths)
@@ -79,7 +90,7 @@ Partial::Partial(
         for (Node * p = &root_;;) {
             rtl::OUString seg;
             bool end = parseSegment(*i, &n, &seg);
-            p = &p->children[seg];
+            p = getOrCreateChild(p, seg);
             if (p->startInclude) {
                 break;
             }
@@ -98,14 +109,14 @@ Partial::Partial(
             rtl::OUString seg;
             bool end = parseSegment(*i, &n, &seg);
             if (end) {
-                p->children[seg].clear();
+                getOrCreateChild(p, seg)->clear();
                 break;
             }
             Node::Children::iterator j(p->children.find(seg));
             if (j == p->children.end()) {
                 break;
             }
-            p = &j->second;
+            p = j->second.get();
         }
     }
 }
@@ -123,7 +134,7 @@ Partial::Containment Partial::contains(Path const & path) const {
         {
             break;
         }
-        p = &j->second;
+        p = j->second.get();
         includes |= p->startInclude;
     }
     return ( ( p->children.empty() || p == &root_ )

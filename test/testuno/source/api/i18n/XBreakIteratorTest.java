@@ -138,7 +138,7 @@ public class XBreakIteratorTest {
         PropertyValue[] properties = new PropertyValue[1];
         properties[0] = new PropertyValue("Hidden", -1, true, PropertyState.DIRECT_VALUE);
         XComponent docComponent = app.loadDocument(sample, properties);
-        XTextDocument textDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, docComponent);
+        XTextDocument textDocument = UnoRuntime.queryInterface(XTextDocument.class, docComponent);
         XTextRange xTextRange = (XTextRange)textDocument.getText();
         return xTextRange.getString();
     }

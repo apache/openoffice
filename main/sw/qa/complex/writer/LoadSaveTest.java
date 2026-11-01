@@ -98,15 +98,15 @@ public class LoadSaveTest
     public void before() throws Exception
     {
         m_xMSF = getMSF();
-        XPropertySet xPropertySet = (XPropertySet)
+        XPropertySet xPropertySet =
             UnoRuntime.queryInterface(XPropertySet.class, m_xMSF);
         Object defaultCtx = xPropertySet.getPropertyValue("DefaultContext");
-        m_xContext = (XComponentContext)
+        m_xContext =
             UnoRuntime.queryInterface(XComponentContext.class, defaultCtx);
         assertTrue("could not get component context.", m_xContext != null);
         Object oGEB = m_xMSF.createInstance(
                 "com.sun.star.frame.GlobalEventBroadcaster");
-        m_xGEB = (XDocumentEventBroadcaster)
+        m_xGEB =
             UnoRuntime.queryInterface(XDocumentEventBroadcaster.class, oGEB);
         assertTrue("could not get global event broadcaster.", m_xGEB != null);
         m_TmpDir = util.utils.getOfficeTemp(m_xMSF);
@@ -175,7 +175,7 @@ public class LoadSaveTest
 
             System.out.println("Storing document: " + fileName + " ...");
 
-            XStorable xStor = (XStorable) UnoRuntime.queryInterface(
+            XStorable xStor = UnoRuntime.queryInterface(
                         XStorable.class, xDoc);
 
             String targetFile = m_fileURL + m_TargetDir + fileName;

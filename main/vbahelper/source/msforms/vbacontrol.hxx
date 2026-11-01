@@ -49,7 +49,7 @@ protected:
     // whether it is necessary is another question
     ::rtl::OUString m_aControlTag;
 
-    std::auto_ptr< ov::AbstractGeometryAttributes > mpGeometryHelper;
+    std::unique_ptr< ov::AbstractGeometryAttributes > mpGeometryHelper;
     css::uno::Reference< css::beans::XPropertySet > m_xProps;
     css::uno::Reference< css::uno::XInterface > m_xControl;
     css::uno::Reference< css::frame::XModel > m_xModel;
@@ -92,7 +92,7 @@ public:
     virtual sal_Int32 SAL_CALL getTabIndex();
     virtual void SAL_CALL setTabIndex( sal_Int32 nTabIndex );
     //remove resource because ooo.vba.excel.XControl is a wrapper of com.sun.star.drawing.XControlShape
-    virtual void removeResouce();
+    virtual void removeResource();
     //XHelperInterface
     virtual rtl::OUString& getServiceImplName();
     virtual css::uno::Sequence<rtl::OUString> getServiceNames();

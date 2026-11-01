@@ -175,7 +175,7 @@ public class SvxShapeCircle extends TestCase {
         SOfficeFactory SOF = SOfficeFactory.getFactory((XMultiServiceFactory)tParam.getMSF()) ;
         oShape = SOF.createShape(xDrawDoc,5000,5000,3000,3000,"Ellipse");
 
-        XPropertySet props = (XPropertySet) UnoRuntime.queryInterface
+        XPropertySet props = UnoRuntime.queryInterface
             (XPropertySet.class, oShape) ;
 
         DrawTools.getShapes(DrawTools.getDrawPage(xDrawDoc,0)).add(oShape) ;
@@ -207,24 +207,24 @@ public class SvxShapeCircle extends TestCase {
         TestEnvironment tEnv = new TestEnvironment(oObj);
 
         log.println( "adding two styles as ObjRelation for ShapeDescriptor" );
-        XPropertySet oShapeProps = (XPropertySet)
+        XPropertySet oShapeProps =
                             UnoRuntime.queryInterface(XPropertySet.class,oObj);
         XStyle aStyle = null;
 
         try {
-            aStyle = (XStyle) AnyConverter.toObject(
-                new Type(XStyle.class),oShapeProps.getPropertyValue("Style"));
+            aStyle = AnyConverter.toObject(
+                XStyle.class,oShapeProps.getPropertyValue("Style"));
         } catch (com.sun.star.lang.WrappedTargetException e) {
         } catch (com.sun.star.beans.UnknownPropertyException e) {
         } catch (com.sun.star.lang.IllegalArgumentException e) {
         }
 
         tEnv.addObjRelation("Style1",aStyle);
-        oShapeProps = (XPropertySet)
+        oShapeProps =
             UnoRuntime.queryInterface(XPropertySet.class,oShape);
         try {
-            aStyle = (XStyle) AnyConverter.toObject(
-                new Type(XStyle.class),oShapeProps.getPropertyValue("Style"));
+            aStyle = AnyConverter.toObject(
+                XStyle.class,oShapeProps.getPropertyValue("Style"));
         } catch (com.sun.star.lang.WrappedTargetException e) {
         } catch (com.sun.star.beans.UnknownPropertyException e) {
         } catch (com.sun.star.lang.IllegalArgumentException e) {

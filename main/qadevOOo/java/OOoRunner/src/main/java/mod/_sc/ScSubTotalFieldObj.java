@@ -86,7 +86,7 @@ public class ScSubTotalFieldObj extends TestCase {
     */
     protected void cleanup( TestParameters tParam, PrintWriter log ) {
         log.println( "    disposing xSheetDoc " );
-        XComponent oComp = (XComponent)
+        XComponent oComp =
             UnoRuntime.queryInterface (XComponent.class, xSpreadsheetDoc) ;
         util.DesktopTools.closeDoc(oComp);
     }
@@ -109,11 +109,11 @@ public class ScSubTotalFieldObj extends TestCase {
 
         log.println("getting a sheet");
         XSpreadsheet oSheet = null;
-        XIndexAccess oIndexAccess = (XIndexAccess)
+        XIndexAccess oIndexAccess =
             UnoRuntime.queryInterface(XIndexAccess.class, xSpreadsheets);
         try {
-            oSheet = (XSpreadsheet) AnyConverter.toObject(
-                    new Type (XSpreadsheet.class),oIndexAccess.getByIndex(0));
+            oSheet = AnyConverter.toObject(
+                    XSpreadsheet.class,oIndexAccess.getByIndex(0));
         } catch (com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace(log);
             throw new StatusException( "Couldn't get a spreadsheet", e);
@@ -125,7 +125,7 @@ public class ScSubTotalFieldObj extends TestCase {
             throw new StatusException( "Couldn't get a spreadsheet", e);
         }
 
-        XSubTotalCalculatable xSTC = (XSubTotalCalculatable)
+        XSubTotalCalculatable xSTC =
             UnoRuntime.queryInterface(XSubTotalCalculatable.class, oSheet);
 
         XSubTotalDescriptor xSTD = xSTC.createSubTotalDescriptor(true);
@@ -137,14 +137,14 @@ public class ScSubTotalFieldObj extends TestCase {
         columns[0] = column;
         xSTD.addNew(columns, 1);
 
-        XIndexAccess oDescIndex = (XIndexAccess)
+        XIndexAccess oDescIndex =
             UnoRuntime.queryInterface(XIndexAccess.class, xSTD);
 
         XInterface oObj = null;
 
         try {
-            oObj = ( XSubTotalField ) AnyConverter.toObject(
-                    new Type(XSubTotalField.class),oDescIndex.getByIndex(0));
+            oObj = AnyConverter.toObject(
+                    XSubTotalField.class,oDescIndex.getByIndex(0));
         } catch (com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace(log);
             throw new StatusException("Couldn't get XSubTotalField", e);

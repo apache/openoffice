@@ -91,12 +91,8 @@ public class RecordParser extends QueryMetaData
     {
         try
         {
-            com.sun.star.uno.Type CurType;
-            Object oAny;
             String sValue = xResultSetRow.getString(ColIndex); //???
-            CurType = new com.sun.star.uno.Type(String.class);
-            oAny = AnyConverter.toObject(CurType, sValue);
-            return oAny;
+            return AnyConverter.toObject(String.class, sValue);
         }
         catch (Exception exception)
         {

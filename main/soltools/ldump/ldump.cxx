@@ -171,6 +171,25 @@ bool LibDump::Dump()
             }
         }
 
+        // A modern MSVC puts its SSE and AVX vector constants into the archive
+        // symbol table as __xmm@<hex>, and __ymm@/__zmm@ for the wider ones,
+        // exactly as every MSVC has done for __real@<hex>.  They are merged
+        // COMDAT constants, not exports, and a .def naming one fails to link:
+        //
+        //     icharttools.exp : error LNK2001: unresolved external symbol
+        //                       _xmm@41f00000000000000000000000000000
+        //
+        // The two modules that carry a symbol filter list _real for the same
+        // reason, but most export-all modules carry no filter at all -- ldump
+        // does no filtering when the file is absent -- so this has to be here
+        // rather than in a .flt.  VC9 emits none of these, so it is unaffected.
+        if ( !strncmp( aBuf, "__xmm@", 6 )
+             || !strncmp( aBuf, "__ymm@", 6 )
+             || !strncmp( aBuf, "__zmm@", 6 ) )
+        {
+            continue;
+        }
+
 	    if ((aBuf[0] =='?') || !strncmp(aBuf, "__CT",4))
 		{
 			nLen = (int) strlen(aBuf);
@@ -357,7 +376,7 @@ bool LibDump::Filter(char *pExportName)
 
 	for ( i=0; i<nFilterLines; i++ )
 	{
-		//Zum vergleichen muá das Plus abgeschnitteb werden
+		//Zum vergleichen muï¿½ das Plus abgeschnitteb werden
 		if(pFilterLines[i][0] != '+')
 		{
 			if ( strstr( pExportName, pFilterLines[i]))

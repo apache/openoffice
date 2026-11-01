@@ -60,20 +60,15 @@ import com.sun.star.uno.XComponentContext;
 import com.sun.star.util.XChangesBatch;
 import java.net.*;
 import java.io.*;
-import java.util.Hashtable;
-import java.util.Random;
-import javax.net.ssl.SSLException;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Set;
+import java.util.concurrent.Callable;
 import javax.swing.text.html.HTMLEditorKit;
-
-import org.apache.commons.httpclient.HttpClient;
-import org.apache.commons.httpclient.HostConfiguration;
-import org.apache.commons.httpclient.HttpMethodBase;
-import org.apache.commons.httpclient.cookie.CookiePolicy;
-import org.apache.commons.httpclient.MultiThreadedHttpConnectionManager;
-import org.apache.commons.httpclient.protocol.Protocol;
-import org.apache.commons.httpclient.URI;
-import org.apache.commons.httpclient.methods.GetMethod;
-import org.apache.commons.httpclient.methods.PostMethod;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
 
 public class Helper
 {
@@ -154,11 +149,8 @@ public class Helper
     private static final String sHTMLHeader = "<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" /><title></title></head><body>";
     private static final String sHTMLFooter = "</body></html>";
 
-    private static Random m_aRandom;
-    private static MultiThreadedHttpConnectionManager m_aConnectionManager;
-    private static HttpClient m_aClient;
+    private static Set<HttpURLConnection> m_aActiveConnections = new HashSet<HttpURLConnection>();
     private static boolean m_bAllowConnection = true;
-    private static Hashtable m_aAcceptedUnknownCerts;
 
     private static Boolean m_bShowInBrowser = null;
 
@@ -188,34 +180,28 @@ public class Helper
         return m_pConfigStrings[nID];
     }
 
-    synchronized protected static HttpClient GetHttpClient()
+    synchronized protected static void RegisterConnection( HttpURLConnection aConn )
         throws WikiCancelException
     {
         if ( !m_bAllowConnection )
             throw new WikiCancelException();
 
-        if ( m_aConnectionManager == null )
-            m_aConnectionManager = new MultiThreadedHttpConnectionManager();
+        m_aActiveConnections.add( aConn );
+    }
 
-        if ( m_aClient == null )
-        {
-            m_aClient = new HttpClient( m_aConnectionManager );
-            m_aClient.getParams().setParameter( "http.protocol.cookie-policy", CookiePolicy.BROWSER_COMPATIBILITY );
-            m_aClient.getParams().setParameter( "http.protocol.single-cookie-header", Boolean.TRUE );
-            m_aClient.getParams().setParameter( "http.protocol.content-charset", "UTF-8" );
-        }
-
-        return m_aClient;
+    synchronized protected static void UnregisterConnection( HttpURLConnection aConn )
+    {
+        m_aActiveConnections.remove( aConn );
     }
 
     synchronized protected static void AllowConnection( boolean bAllow )
     {
         m_bAllowConnection = bAllow;
-        if ( !bAllow && m_aConnectionManager != null )
+        if ( !bAllow )
         {
-            m_aClient = null;
-            m_aConnectionManager.shutdown();
-            m_aConnectionManager = null;
+            for ( Iterator<HttpURLConnection> aIter = m_aActiveConnections.iterator(); aIter.hasNext(); )
+                aIter.next().disconnect();
+            m_aActiveConnections.clear();
         }
     }
 
@@ -250,7 +236,7 @@ public class Helper
 
             XPropertySet xProps = Helper.GetConfigProps( xContext, "org.openoffice.Office.Custom.WikiExtension/Settings" );
             xProps.setPropertyValue( "PreselectShowBrowser", new Boolean( bValue ) );
-            XChangesBatch xBatch = ( XChangesBatch ) UnoRuntime.queryInterface( XChangesBatch.class, xProps );
+            XChangesBatch xBatch = UnoRuntime.queryInterface( XChangesBatch.class, xProps );
             if ( xBatch != null )
                 xBatch.commitChanges();
         }
@@ -267,7 +253,7 @@ public class Helper
         {
             XMultiComponentFactory xFactory = xContext.getServiceManager();
             if ( xFactory != null )
-                m_xPasswordContainer = (XPasswordContainer)UnoRuntime.queryInterface(
+                m_xPasswordContainer = UnoRuntime.queryInterface(
                                         XPasswordContainer.class,
                                         xFactory.createInstanceWithContext( "com.sun.star.task.PasswordContainer", xContext ) );
         }
@@ -285,7 +271,7 @@ public class Helper
         {
             XMultiComponentFactory xFactory = xContext.getServiceManager();
             if ( xFactory != null )
-                m_xInteractionHandler = ( XInteractionHandler )UnoRuntime.queryInterface(
+                m_xInteractionHandler = UnoRuntime.queryInterface(
                                         XInteractionHandler.class,
                                         xFactory.createInstanceWithContext( "com.sun.star.task.InteractionHandler", xContext ) );
         }
@@ -296,12 +282,8 @@ public class Helper
         return m_xInteractionHandler;
     }
 
-    protected static Protocol GetOwnHttps( int nPort )
-    {
-        return new Protocol( "https", new WikiProtocolSocketFactory(), ( ( nPort < 0 ) ? 443 : nPort ) );
-    }
-
-    protected static String GetMainURL( String sWebPage, String sVURL )
+    /** Returns the wiki's main URL (the directory holding index.php and api.php), or "" if the page is no MediaWiki page. */
+    protected static String GetMainURL( String sWebPage, URL aPageURL )
     {
         String sResultURL = "";
         try
@@ -311,14 +293,8 @@ public class Helper
             EditPageParser aCallback = new EditPageParser();
 
             aParser.parse( aReader, aCallback, true );
-            sResultURL = aCallback.m_sMainURL;
-
-            if ( !sResultURL.startsWith( "http" ) )
-            {
-                // if the url is only relative then complete it
-                URL aURL = new URL( sVURL );
-                sResultURL = aURL.getProtocol() + "://" + aURL.getHost() + sResultURL;
-            }
+            if ( aCallback.m_sMainURL.length() > 0 )
+                sResultURL = new URL( aPageURL, aCallback.m_sMainURL ).toString();
         }
         catch( Exception e )
         {
@@ -329,6 +305,7 @@ public class Helper
         {
             // usually that should not happen
             // workaround: try to get index.php from the provided URL
+            String sVURL = aPageURL.toString();
             int nIndex = sVURL.indexOf( "index.php" );
             if ( nIndex >= 0 )
                 sResultURL = sVURL.substring( 0, nIndex );
@@ -337,7 +314,7 @@ public class Helper
         return sResultURL;
     }
 
-    protected static String GetRedirectURL( String sWebPage, String sURL )
+    protected static String GetRedirectURL( String sWebPage, URL aPageURL )
     {
         // scrape the HTML source and find the EditURL
         // TODO/LATER: Use parser in future
@@ -360,24 +337,17 @@ public class Helper
 
             try
             {
-                URL aURL = new URL( sURL );
-                if ( !sResultURL.startsWith( aURL.getProtocol() ))
-                {
-                    // if the url is only relative then complete it
-                    if ( sResultURL.startsWith( "/" ) )
-                        sResultURL = aURL.getProtocol() + "://" + aURL.getHost() + sResultURL;
-                    else
-                        sResultURL = aURL.getProtocol() + "://" + aURL.getHost() + aURL.getPath() + sResultURL;
-                }
+                if ( sResultURL.length() > 0 )
+                    sResultURL = new URL( aPageURL, sResultURL ).toString();
             }
             catch ( MalformedURLException ex )
             {
                 ex.printStackTrace();
+                sResultURL = "";
             }
         }
 
         return sResultURL;
-
     }
 
     protected static XInputStream SaveHTMLTemp( XComponentContext xContext, String sArticle )
@@ -389,8 +359,8 @@ public class Helper
             try
             {
                 Object oTempFile = xContext.getServiceManager().createInstanceWithContext( "com.sun.star.io.TempFile", xContext );
-                XStream xStream = ( XStream ) UnoRuntime.queryInterface( XStream.class, oTempFile );
-                XSeekable xSeekable = ( XSeekable ) UnoRuntime.queryInterface( XSeekable.class, oTempFile );
+                XStream xStream = UnoRuntime.queryInterface( XStream.class, oTempFile );
+                XSeekable xSeekable = UnoRuntime.queryInterface( XSeekable.class, oTempFile );
                 if ( xStream != null && xSeekable != null )
                 {
                     XOutputStream xOutputStream = xStream.getOutputStream();
@@ -423,13 +393,13 @@ public class Helper
         try
         {
             Object oTempFile = xContext.getServiceManager().createInstanceWithContext( "com.sun.star.io.TempFile", xContext );
-            XPropertySet xPropertySet = ( XPropertySet ) UnoRuntime.queryInterface( XPropertySet.class, oTempFile );
+            XPropertySet xPropertySet = UnoRuntime.queryInterface( XPropertySet.class, oTempFile );
             xPropertySet.setPropertyValue( "RemoveFile", Boolean.FALSE );
             sURL = ( String ) xPropertySet.getPropertyValue( "Uri" );
 
-            XInputStream xInputStream = ( XInputStream ) UnoRuntime.queryInterface( XInputStream.class, oTempFile );
+            XInputStream xInputStream = UnoRuntime.queryInterface( XInputStream.class, oTempFile );
             xInputStream.closeInput();
-            XOutputStream xOutputStream = ( XOutputStream ) UnoRuntime.queryInterface( XOutputStream.class, oTempFile );
+            XOutputStream xOutputStream = UnoRuntime.queryInterface( XOutputStream.class, oTempFile );
             xOutputStream.closeOutput();
         } catch ( com.sun.star.uno.Exception ex )
         {
@@ -448,7 +418,7 @@ public class Helper
             InputStreamReader aInputReader = new InputStreamReader( new FileInputStream( aFile ), "UTF-8" );
             BufferedReader aBufReader = new BufferedReader( aInputReader );
 
-            StringBuffer aBuf = new StringBuffer();
+            StringBuilder aBuf = new StringBuilder();
             String sEachLine = aBufReader.readLine();
 
             while( sEachLine != null )
@@ -469,8 +439,8 @@ public class Helper
     protected static String GetDocTitle( XModel xDoc )
     {
         String sTitle = "";
-        XDocumentInfoSupplier xDocInfoSup = ( XDocumentInfoSupplier ) UnoRuntime.queryInterface( XDocumentInfoSupplier.class, xDoc );
-        XPropertySet xPropSet = ( XPropertySet ) UnoRuntime.queryInterface( XPropertySet.class, xDocInfoSup.getDocumentInfo() );
+        XDocumentInfoSupplier xDocInfoSup = UnoRuntime.queryInterface( XDocumentInfoSupplier.class, xDoc );
+        XPropertySet xPropSet = UnoRuntime.queryInterface( XPropertySet.class, xDocInfoSup.getDocumentInfo() );
         try
         {
             sTitle = ( String ) xPropSet.getPropertyValue( "Title" );
@@ -483,10 +453,10 @@ public class Helper
 
     protected static void SetDocTitle( XModel xDoc, String sTitle )
     {
-        XDocumentInfoSupplier xDocInfoSup = ( XDocumentInfoSupplier ) UnoRuntime.queryInterface( XDocumentInfoSupplier.class, xDoc );
+        XDocumentInfoSupplier xDocInfoSup = UnoRuntime.queryInterface( XDocumentInfoSupplier.class, xDoc );
         if ( xDocInfoSup != null )
         {
-            XPropertySet xPropSet = ( XPropertySet ) UnoRuntime.queryInterface( XPropertySet.class, xDocInfoSup.getDocumentInfo() );
+            XPropertySet xPropSet = UnoRuntime.queryInterface( XPropertySet.class, xDocInfoSup.getDocumentInfo() );
             if ( xPropSet != null )
             {
                 try
@@ -513,7 +483,7 @@ public class Helper
                     throw new com.sun.star.uno.RuntimeException();
 
                 Object oModuleManager = xFactory.createInstanceWithContext( "com.sun.star.frame.ModuleManager", xContext );
-                XModuleManager xModuleManager = ( XModuleManager ) UnoRuntime.queryInterface( XModuleManager.class, oModuleManager );
+                XModuleManager xModuleManager = UnoRuntime.queryInterface( XModuleManager.class, oModuleManager );
                 if ( xModuleManager != null )
                     aDocServiceName = xModuleManager.identify( xModel );
             }
@@ -535,7 +505,7 @@ public class Helper
             try
             {
                 Object oFilterFactory = xContext.getServiceManager().createInstanceWithContext( "com.sun.star.document.FilterFactory", xContext );
-                XContainerQuery xQuery = ( XContainerQuery )UnoRuntime.queryInterface( XContainerQuery.class, oFilterFactory );
+                XContainerQuery xQuery = UnoRuntime.queryInterface( XContainerQuery.class, oFilterFactory );
                 if ( xQuery != null )
                 {
                     NamedValue[] aRequest = new NamedValue[2];
@@ -586,7 +556,7 @@ public class Helper
         {
             XMultiComponentFactory xFactory = xContext.getServiceManager();
             Object oConfigProvider = xFactory.createInstanceWithContext( "com.sun.star.configuration.ConfigurationProvider", xContext );
-            xConfigurationProvider = ( XMultiServiceFactory ) UnoRuntime.queryInterface( XMultiServiceFactory.class, oConfigProvider );
+            xConfigurationProvider = UnoRuntime.queryInterface( XMultiServiceFactory.class, oConfigProvider );
         }
 
         if ( xConfigurationProvider == null )
@@ -616,7 +586,7 @@ public class Helper
     protected static XPropertySet GetConfigProps( XComponentContext xContext, String sNodepath )
         throws com.sun.star.uno.Exception
     {
-        XPropertySet xProps = ( XPropertySet ) UnoRuntime.queryInterface( XPropertySet.class, GetConfig( xContext, sNodepath, true ) );
+        XPropertySet xProps = UnoRuntime.queryInterface( XPropertySet.class, GetConfig( xContext, sNodepath, true ) );
         if ( xProps == null )
             throw new com.sun.star.uno.RuntimeException();
 
@@ -627,7 +597,7 @@ public class Helper
     protected static XNameContainer GetConfigNameContainer( XComponentContext xContext, String sNodepath )
         throws com.sun.star.uno.Exception
     {
-        XNameContainer xContainer = ( XNameContainer ) UnoRuntime.queryInterface( XNameContainer.class, GetConfig( xContext, sNodepath, true ) );
+        XNameContainer xContainer = UnoRuntime.queryInterface( XNameContainer.class, GetConfig( xContext, sNodepath, true ) );
         if ( xContainer == null )
             throw new com.sun.star.uno.RuntimeException();
 
@@ -637,17 +607,18 @@ public class Helper
     protected static XNameAccess GetConfigNameAccess( XComponentContext xContext, String sNodepath )
         throws com.sun.star.uno.Exception
     {
-        XNameAccess xNameAccess = ( XNameAccess ) UnoRuntime.queryInterface( XNameAccess.class, GetConfig( xContext, sNodepath, false ) );
+        XNameAccess xNameAccess = UnoRuntime.queryInterface( XNameAccess.class, GetConfig( xContext, sNodepath, false ) );
         if ( xNameAccess == null )
             throw new com.sun.star.uno.RuntimeException();
 
         return xNameAccess;
     }
 
-    protected static void SetConfigurationProxy( HostConfiguration aHostConfig, XComponentContext xContext )
+    /** Returns the proxy configured in the office for aURL, or null to use the system proxy settings. */
+    protected static Proxy GetProxy( XComponentContext xContext, URL aURL )
     {
-        if ( aHostConfig == null || xContext == null )
-            return;
+        if ( xContext == null )
+            return null;
 
         try
         {
@@ -655,45 +626,41 @@ public class Helper
 
             int nProxyType = AnyConverter.toInt( xNameAccess.getByName( "ooInetProxyType" ) );
             if ( nProxyType == 0 )
-                aHostConfig.setProxyHost( null );
-            else
+                return Proxy.NO_PROXY;
+            else if ( nProxyType == 2 )
             {
-                if ( nProxyType == 1 )
+                String aProxyNameProp = "ooInetHTTPProxyName";
+                String aProxyPortProp = "ooInetHTTPProxyPort";
+
+                if ( aURL.getProtocol().equals( "https" ) )
                 {
-                    // system proxy
+                    aProxyNameProp = "ooInetHTTPSProxyName";
+                    aProxyPortProp = "ooInetHTTPSProxyPort";
                 }
-                else if ( nProxyType == 2 )
-                {
-                    String aProxyNameProp = "ooInetHTTPProxyName";
-                    String aProxyPortProp = "ooInetHTTPProxyPort";
 
-                    if ( aHostConfig.getProtocol().getScheme().equals( "https" ) )
-                    {
-                        aProxyNameProp = "ooInetHTTPSProxyName";
-                        aProxyPortProp = "ooInetHTTPSProxyPort";
-                    }
+                String aProxyName = AnyConverter.toString( xNameAccess.getByName( aProxyNameProp ) );
+                if ( aProxyName.length() == 0 )
+                    return Proxy.NO_PROXY;
 
-                    String aNoProxyList = AnyConverter.toString( xNameAccess.getByName( "ooInetNoProxy" ) );
-                    String aProxyName = AnyConverter.toString( xNameAccess.getByName( aProxyNameProp ) );
+                int nProxyPort = 80;
 
-                    int nProxyPort = 80;
+                Object aPortNo = xNameAccess.getByName( aProxyPortProp );
+                if ( !AnyConverter.isVoid( aPortNo ) )
+                    nProxyPort = AnyConverter.toInt( aPortNo );
 
-                    Object aPortNo = xNameAccess.getByName( aProxyPortProp );
-                    if ( !AnyConverter.isVoid( aPortNo ) )
-                        nProxyPort = AnyConverter.toInt( aPortNo );
+                if ( nProxyPort == -1 )
+                    nProxyPort = 80;
 
-                    if ( nProxyPort == -1 )
-                        nProxyPort = 80;
-
-                    // TODO: check whether the URL is in the NoProxy list
-                    aHostConfig.setProxy( aProxyName, nProxyPort );
-                }
+                // TODO: check whether the URL is in the NoProxy list
+                return new Proxy( Proxy.Type.HTTP, InetSocketAddress.createUnresolved( aProxyName, nProxyPort ) );
             }
         }
         catch( java.lang.Exception e )
         {
             e.printStackTrace();
         }
+
+        return null;
     }
 
     protected static void ShowURLInBrowser( XComponentContext xContext, String sURL )
@@ -713,36 +680,6 @@ public class Helper
         }
     }
 
-    protected static void ExecuteMethod( HttpMethodBase aMethod, HostConfiguration aHostConfig, URI aURI, XComponentContext xContext, boolean bSetHost )
-        throws WikiCancelException, IOException, SSLException
-    {
-        if ( aMethod != null && aHostConfig != null && aURI != null && xContext != null )
-        {
-            if ( bSetHost )
-            {
-                aHostConfig.setHost( aURI );
-                SetConfigurationProxy( aHostConfig, xContext );
-            }
-
-            boolean bNoUnknownCertNotification = false;
-            if ( aHostConfig.getProtocol().getScheme().equals( "https" )
-              && AllowUnknownCert( xContext, aURI.getHost() ) )
-            {
-                // let unknown certificates be accepted
-                {
-                    {
-                        aHostConfig.setHost( aHostConfig.getHost(), ( aURI.getPort() < 0 ? 443 : aURI.getPort() ), Helper.GetOwnHttps( aURI.getPort() ) );
-                        Helper.GetHttpClient().executeMethod( aHostConfig, aMethod );
-                    }
-                }
-            }
-            else
-            {
-                Helper.GetHttpClient().executeMethod( aHostConfig, aMethod );
-            }
-        }
-    }
-
     static private class HTMLParse extends HTMLEditorKit
     {
 
@@ -757,133 +694,68 @@ public class Helper
         return new HTMLParse().getParser();
     }
 
-    static protected boolean LoginReportsError( String sRespond )
+    /** Logs in through the MediaWiki Action API; returns the logged-in session, or null if the login was refused. */
+    static protected WikiSession Login( URL aMainURL, String sWikiUser, String sWikiPass, XComponentContext xContext )
+        throws java.io.IOException, WikiCancelException
     {
-        boolean bResult = true;
-        if ( sRespond != null )
-        {
-            try
-            {
-                StringReader aReader = new StringReader( sRespond );
-                HTMLEditorKit.Parser aParser = GetHTMLParser();
-                EditPageParser aCallback = new EditPageParser();
+        if ( sWikiUser == null || sWikiUser.length() == 0 || sWikiPass == null || xContext == null )
+            return null;
 
-                aParser.parse( aReader, aCallback, true );
-                bResult = ( aCallback.m_nErrorInd >= 0 );
-            }
-            catch( Exception e )
-            {
-                e.printStackTrace();
-            }
+        WikiSession aSession = new WikiSession( xContext, aMainURL );
+        String sToken = aSession.GetToken( "login" );
+        if ( sToken == null )
+            return null;
+
+        List<String[]> aParams = new ArrayList<String[]>();
+        boolean bBotPassword = ( sWikiUser.indexOf( '@' ) >= 0 );
+        if ( bBotPassword )
+        {
+            // "user@botname" bot passwords are only accepted by action=login, user passwords by action=clientlogin
+            aParams.add( new String[] { "action", "login" } );
+            aParams.add( new String[] { "lgname", sWikiUser } );
+            aParams.add( new String[] { "lgpassword", sWikiPass } );
+        }
+        else
+        {
+            aParams.add( new String[] { "action", "clientlogin" } );
+            aParams.add( new String[] { "username", sWikiUser } );
+            aParams.add( new String[] { "password", sWikiPass } );
+            aParams.add( new String[] { "loginreturnurl", aMainURL.toString() } );
         }
 
-        return bResult;
-    }
+        String[][] pArgs = GetSpecialArgs( xContext, aMainURL.getHost() );
+        if ( pArgs != null )
+            for ( int nArgInd = 0; nArgInd < pArgs.length; nArgInd++ )
+                if ( pArgs[nArgInd].length == 2 && pArgs[nArgInd][0] != null && pArgs[nArgInd][1] != null )
+                    aParams.add( pArgs[nArgInd] );
 
-    static protected String GetLoginToken( String sLoginPage )
-    {
-        String sResult = "";
-        if ( sLoginPage != null && sLoginPage.length() > 0 )
+        aParams.add( new String[] { bBotPassword ? "lgtoken" : "logintoken", sToken } );
+
+        Document aResult = aSession.CallAPI( aParams.toArray( new String[aParams.size()][] ) );
+        boolean bSuccess;
+        if ( bBotPassword )
         {
-            try
-            {
-                StringReader aReader = new StringReader( sLoginPage );
-                HTMLEditorKit.Parser aParser = Helper.GetHTMLParser();
-                EditPageParser aCallbacks = new EditPageParser();
-
-                aParser.parse( aReader, aCallbacks, true );
-                sResult = aCallbacks.m_sLoginToken;
-            }
-            catch( Exception e )
-            {
-                e.printStackTrace();
-            }
+            Element aLogin = WikiSession.GetElement( aResult, "login" );
+            bSuccess = ( aLogin != null && "Success".equals( aLogin.getAttribute( "result" ) ) );
+        }
+        else
+        {
+            Element aLogin = WikiSession.GetElement( aResult, "clientlogin" );
+            bSuccess = ( aLogin != null && "PASS".equals( aLogin.getAttribute( "status" ) ) );
         }
 
-        return sResult;
-    }
-
-    static protected HostConfiguration Login( URI aMainURL, String sWikiUser, String sWikiPass, XComponentContext xContext )
-        throws com.sun.star.uno.Exception, java.io.IOException, WikiCancelException
-    {
-        HostConfiguration aHostConfig = null;
-
-        if ( sWikiUser != null && sWikiPass != null && xContext != null )
-        {
-            HostConfiguration aNewHostConfig = new HostConfiguration();
-
-            URI aURI = new URI( aMainURL.toString() + "index.php?title=Special:Userlogin" );
-            GetMethod aGetCookie = new GetMethod( aURI.getEscapedPathQuery() );
-
-            ExecuteMethod( aGetCookie, aNewHostConfig, aURI, xContext, true );
-
-            int nResultCode = aGetCookie.getStatusCode();
-            String sLoginPage = null;
-            if ( nResultCode == 200 )
-                sLoginPage = aGetCookie.getResponseBodyAsString();
-
-            aGetCookie.releaseConnection();
-
-            if ( sLoginPage != null )
-            {
-                String sLoginToken = GetLoginToken( sLoginPage );
-
-                PostMethod aPost = new PostMethod();
-                URI aPostURI = new URI( aMainURL.getPath() + "index.php?title=Special:Userlogin&action=submitlogin" );
-                aPost.setPath( aPostURI.getEscapedPathQuery() );
-
-                aPost.addParameter( "wpName", sWikiUser );
-                aPost.addParameter( "wpRemember", "1" );
-                aPost.addParameter( "wpPassword", sWikiPass );
-                if ( sLoginToken.length() > 0 )
-                    aPost.addParameter( "wpLoginToken", sLoginToken );
-
-                String[][] pArgs = GetSpecialArgs( xContext, aMainURL.getHost() );
-                if ( pArgs != null )
-                    for ( int nArgInd = 0; nArgInd < pArgs.length; nArgInd++ )
-                        if ( pArgs[nArgInd].length == 2 && pArgs[nArgInd][0] != null && pArgs[nArgInd][1] != null )
-                            aPost.addParameter( pArgs[nArgInd][0], pArgs[nArgInd][1] );
-
-                ExecuteMethod( aPost, aNewHostConfig, aPostURI, xContext, false );
-
-                nResultCode = aPost.getStatusCode();
-
-                while( nResultCode >= 301 && nResultCode <= 303 || nResultCode == 307 )
-                {
-                    String sRedirectURL = aPost.getResponseHeader( "Location" ).getValue();
-                    aPost.releaseConnection();
-
-                    aURI = new URI( sRedirectURL );
-                    aPost = new PostMethod();
-                    aPost.setPath( aURI.getEscapedPathQuery() );
-                    ExecuteMethod( aPost, aNewHostConfig, aURI, xContext, false );
-
-                    nResultCode = aPost.getStatusCode();
-                }
-
-                if ( nResultCode == 200 )
-                {
-                    String sResult = aPost.getResponseBodyAsString();
-                    if ( !LoginReportsError( sResult ) )
-                        aHostConfig = aNewHostConfig;
-                }
-
-                aPost.releaseConnection();
-            }
-        }
-
-        return aHostConfig;
+        return bSuccess ? aSession : null;
     }
 
     private static XControl GetControlFromDialog( XDialog xDialog, String aControlName )
     {
         XControl xResult = null;
-        XControlContainer xControlCont = (XControlContainer) UnoRuntime.queryInterface( XControlContainer.class, xDialog );
+        XControlContainer xControlCont = UnoRuntime.queryInterface( XControlContainer.class, xDialog );
 
         if ( xControlCont != null )
         {
             Object oControl = xControlCont.getControl( aControlName );
-            xResult = ( XControl ) UnoRuntime.queryInterface( XControl.class, oControl );
+            xResult = UnoRuntime.queryInterface( XControl.class, oControl );
         }
 
         return xResult;
@@ -893,7 +765,7 @@ public class Helper
     {
         XControl xControl = GetControlFromDialog( xDialog, aControlName );
         if ( xControl != null )
-            return ( XPropertySet ) UnoRuntime.queryInterface( XPropertySet.class, xControl.getModel() );
+            return UnoRuntime.queryInterface( XPropertySet.class, xControl.getModel() );
 
         return null;
     }
@@ -942,7 +814,7 @@ public class Helper
         boolean bResult = false;
         try
         {
-            XMasterPasswordHandling xMasterHdl = (XMasterPasswordHandling)UnoRuntime.queryInterface( XMasterPasswordHandling.class, GetPasswordContainer( xContext ) );
+            XMasterPasswordHandling xMasterHdl = UnoRuntime.queryInterface( XMasterPasswordHandling.class, GetPasswordContainer( xContext ) );
             if ( xMasterHdl != null )
                 bResult = xMasterHdl.isPersistentStoringAllowed();
         }
@@ -957,7 +829,7 @@ public class Helper
     protected static void ShowError( XComponentContext xContext, XDialog xDialog, int nTitleID, int nErrorID, String sArg, boolean bQuery )
     {
         XWindowPeer xPeer = null;
-        XControl xControl = (XControl)UnoRuntime.queryInterface( XControl.class, xDialog );
+        XControl xControl = UnoRuntime.queryInterface( XControl.class, xDialog );
         if ( xControl != null )
             xPeer = xControl.getPeer();
         ShowError( xContext, xPeer, nTitleID, nErrorID, sArg, bQuery );
@@ -969,8 +841,6 @@ public class Helper
 
         if ( xContext != null && nErrorID >= 0 && nErrorID < STRINGS_NUM )
         {
-            boolean bShown = false;
-
             String sError = null;
             String sTitle = "";
 
@@ -992,66 +862,69 @@ public class Helper
 
             if ( xParentPeer != null )
             {
-                XMessageBoxFactory xMBFactory = null;
-                XMessageBox xMB = null;
-                try
+                final XComponentContext xCtx = xContext;
+                final XWindowPeer xPeer = xParentPeer;
+                final boolean bAsk = bQuery;
+                final String sBoxTitle = sTitle;
+                final String sBoxText = sError;
+                bResult = MainThreadDialogExecutor.Run( xContext, new Callable<Boolean>()
                 {
-                    XMultiComponentFactory xFactory = xContext.getServiceManager();
-                    if ( xFactory != null )
-                        xMBFactory = (XMessageBoxFactory)UnoRuntime.queryInterface(
-                                     XMessageBoxFactory.class,
-                                     xFactory.createInstanceWithContext( "com.sun.star.awt.Toolkit", xContext ) );
-
-                    if ( xMBFactory != null )
+                    public Boolean call() throws Exception
                     {
-                        if ( bQuery )
+                        XMessageBoxFactory xMBFactory = UnoRuntime.queryInterface(
+                                     XMessageBoxFactory.class,
+                                     xCtx.getServiceManager().createInstanceWithContext( "com.sun.star.awt.Toolkit", xCtx ) );
+                        if ( xMBFactory == null )
+                            return Boolean.FALSE;
+
+                        XMessageBox xMB;
+                        if ( bAsk )
                         {
                             xMB = xMBFactory.createMessageBox(
-                                                     xParentPeer,
+                                                     xPeer,
                                                      MessageBoxType.QUERYBOX,
                                                      MessageBoxButtons.BUTTONS_YES_NO | MessageBoxButtons.DEFAULT_BUTTON_NO,
-                                                     sTitle,
-                                                     sError );
+                                                     sBoxTitle,
+                                                     sBoxText );
                         }
                         else
                         {
                             xMB = xMBFactory.createMessageBox(
-                                                     xParentPeer,
+                                                     xPeer,
                                                      MessageBoxType.ERRORBOX,
                                                      MessageBoxButtons.BUTTONS_OK,
-                                                     sTitle,
-                                                     sError );
+                                                     sBoxTitle,
+                                                     sBoxText );
                         }
-                        if ( xMB != null )
+                        if ( xMB == null )
+                            return Boolean.FALSE;
+
+                        try
                         {
-                            bResult = MainThreadDialogExecutor.Execute( xContext, xMB );
-                            bShown = true;
+                            short nRes = xMB.execute();
+                            return Boolean.valueOf( nRes == com.sun.star.awt.MessageBoxResults.OK
+                                                 || nRes == com.sun.star.awt.MessageBoxResults.YES );
+                        }
+                        finally
+                        {
+                            Dispose( xMB );
                         }
                     }
-                }
-                catch( Exception e )
-                {
-                    e.printStackTrace();
-                }
-                finally
-                {
-                    if ( xMB != null )
-                        Dispose( xMB );
-                }
+                } );
             }
         }
 
         return bResult;
     }
 
-    private static boolean AllowUnknownCert( XComponentContext xContext, String aURL )
+    protected static boolean AllowUnknownCert( XComponentContext xContext, String aURL )
     {
         try
         {
             XNameAccess xNameAccess = GetConfigNameAccess( xContext, "org.openoffice.Office.Custom.WikiExtension/SpecialData" );
             if ( xNameAccess.hasByName( aURL ) )
             {
-                XNameAccess xEntry = (XNameAccess)UnoRuntime.queryInterface( XNameAccess.class, xNameAccess.getByName( aURL ) );
+                XNameAccess xEntry = UnoRuntime.queryInterface( XNameAccess.class, xNameAccess.getByName( aURL ) );
                 if ( xEntry != null && xEntry.hasByName( "AllowUnknownCertificate" ) )
                     return AnyConverter.toBoolean( xEntry.getByName( "AllowUnknownCertificate" ) );
             }
@@ -1071,10 +944,10 @@ public class Helper
             XNameAccess xNameAccess = GetConfigNameAccess( xContext, "org.openoffice.Office.Custom.WikiExtension/SpecialData" );
             if ( xNameAccess.hasByName( aURL ) )
             {
-                XNameAccess xEntry = (XNameAccess)UnoRuntime.queryInterface( XNameAccess.class, xNameAccess.getByName( aURL ) );
+                XNameAccess xEntry = UnoRuntime.queryInterface( XNameAccess.class, xNameAccess.getByName( aURL ) );
                 if ( xEntry != null )
                 {
-                    XNameAccess xArgs = (XNameAccess)UnoRuntime.queryInterface( XNameAccess.class, xEntry.getByName( "AdditionalLoginArguments" ) );
+                    XNameAccess xArgs = UnoRuntime.queryInterface( XNameAccess.class, xEntry.getByName( "AdditionalLoginArguments" ) );
                     if ( xArgs != null )
                     {
                         String[] pNames = xArgs.getElementNames();
@@ -1083,7 +956,7 @@ public class Helper
                             String[][] pResult = new String[pNames.length][2];
                             for ( int nInd = 0; nInd < pNames.length; nInd++ )
                             {
-                                XNameAccess xArgument = (XNameAccess)UnoRuntime.queryInterface( XNameAccess.class, xArgs.getByName( pNames[nInd] ) );
+                                XNameAccess xArgument = UnoRuntime.queryInterface( XNameAccess.class, xArgs.getByName( pNames[nInd] ) );
                                 if ( xArgument == null )
                                     throw new com.sun.star.uno.RuntimeException();
 
@@ -1133,7 +1006,7 @@ public class Helper
         {
             try
             {
-                XComponent xComp = (XComponent)UnoRuntime.queryInterface( XComponent.class, oObject );
+                XComponent xComp = UnoRuntime.queryInterface( XComponent.class, oObject );
                 if ( xComp != null )
                     xComp.dispose();
             }

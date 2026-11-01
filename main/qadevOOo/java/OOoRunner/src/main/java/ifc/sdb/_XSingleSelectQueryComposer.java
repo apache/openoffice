@@ -77,7 +77,7 @@ public class _XSingleSelectQueryComposer extends MultiMethodTest {
      */
     protected void before() /* throws Exception*/ {
 
-        xQueryAna = (XSingleSelectQueryAnalyzer)
+        xQueryAna =
                       UnoRuntime.queryInterface(XSingleSelectQueryAnalyzer.class,
                       tEnv.getObjRelation("xQueryAna"));
 
@@ -87,7 +87,7 @@ public class _XSingleSelectQueryComposer extends MultiMethodTest {
 
         }
 
-        xProp = (XPropertySet)
+        xProp =
                       UnoRuntime.queryInterface(XPropertySet.class,
                       tEnv.getObjRelation("xProp"));
 

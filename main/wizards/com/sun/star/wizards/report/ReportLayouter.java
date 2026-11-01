@@ -78,7 +78,7 @@ public class ReportLayouter
             String sOrientHorizontal = CurUnoDialog.m_oResource.getResText(UIConsts.RID_REPORT + 24);
 
             // XInterface xUcbInterface = (XInterface) m_xMSF.createInstance("com.sun.star.ucb.SimpleFileAccess");
-            // XSimpleFileAccess xSimpleFileAccess = (XSimpleFileAccess) com.sun.star.uno.UnoRuntime.queryInterface(XSimpleFileAccess.class, xUcbInterface);
+            // XSimpleFileAccess xSimpleFileAccess = com.sun.star.uno.UnoRuntime.queryInterface(XSimpleFileAccess.class, xUcbInterface);
             // boolean bcntexists = xSimpleFileAccess.exists(CurReportDocument.getReportPath() + "/cnt-default.ott");
             // boolean bstlexists = xSimpleFileAccess.exists(CurReportDocument.getReportPath() + "/stl-default.ott");
             //      if ((bcntexists == false) || (bstlexists == false))

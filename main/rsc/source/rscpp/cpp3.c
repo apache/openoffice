@@ -111,7 +111,7 @@ void setincdirs()
 #endif
 
 #if HOST == SYS_VMS
-        extern char     *getenv();
+        // getenv declared in stdlib.h
 
         if (getenv("C$LIBRARY") != NULL)
             *incend++ = "C$LIBRARY:";
@@ -460,9 +460,7 @@ void initdefines()
         int                     i;
         time_t                  tvec;
 
-#if !defined( ZTC ) && !defined( WNT ) && !defined(BLC) && !defined(G3)
-        extern char             *ctime();
-#endif
+        // ctime declared in time.h
 
         /*
          * Predefine the built-in symbols.  Allow the

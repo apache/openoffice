@@ -37,6 +37,10 @@ using namespace ::xmloff::token;
 
 //UUUU
 #define GMAP(name,prefix,token,type,context) _MAP(name,prefix,token,static_cast<sal_Int32>(type|XML_TYPE_PROP_GRAPHIC),context)
+// AOO extension, not ODF 1.2: strict export keeps only fo:background-color and style:background-image
+#define _MAP_EXT(name,prefix,token,type,context) { name, sizeof(name)-1, prefix, token, static_cast<sal_Int32>(type), context, SvtSaveOptions::ODFVER_EXTENSION }
+#define PLMAP_EXT(name,prefix,token,type,context) _MAP_EXT(name,prefix,token,type|XML_TYPE_PROP_PAGE_LAYOUT,context)
+#define HFMAP_EXT(name,prefix,token,type,context) _MAP_EXT(name,prefix,token,type|XML_TYPE_PROP_HEADER_FOOTER,context)
 
 //______________________________________________________________________________
 
@@ -113,6 +117,7 @@ const XMLPropertyMapEntry aXMLPageMasterStyleMap[] =
     //text grid enhancement for better CJK support
     PLMAP( "GridBaseWidth", XML_NAMESPACE_STYLE, XML_LAYOUT_GRID_BASE_WIDTH, XML_TYPE_MEASURE, CTP_PM_GRID_BASE_WIDTH ),
     PLMAP( "GridSnapToChars", XML_NAMESPACE_STYLE, XML_LAYOUT_GRID_SNAP_TO_CHARS, XML_TYPE_BOOL, CTP_PM_GRID_SNAP_TO_CHARS ),
+    PLMAP( "GridSnapToChars", XML_NAMESPACE_STYLE, XML_LAYOUT_GRID_SNAP_TO, XML_TYPE_BOOL, CTP_PM_GRID_SNAP_TO ),
       //export as a default attribute
     PLMAP( "StandardPageMode", XML_NAMESPACE_STYLE, XML_LAYOUT_GRID_STANDARD_MODE, XML_TYPE_BOOL|MID_FLAG_DEFAULT_ITEM_EXPORT, CTF_PM_STANDARD_MODE ),
 
@@ -125,6 +130,8 @@ const XMLPropertyMapEntry aXMLPageMasterStyleMap[] =
     // Also need own defines for the used context flags (e.g. CTF_PM_FILLGRADIENTNAME instead of
     // CTF_FILLGRADIENTNAME) since these are used to *filter* up to which entry the attributes belong to the
     // 'page-layout-properties' section (!), see SvXMLAutoStylePoolP_Impl::exportXML, look for XML_STYLE_FAMILY_PAGE_MASTER
+#undef PLMAP
+#define PLMAP PLMAP_EXT
     PLMAP( "FillStyle",                     XML_NAMESPACE_DRAW,     XML_FILL,                   XML_SW_TYPE_FILLSTYLE,                                  0 ),
     PLMAP( "FillColor",                     XML_NAMESPACE_DRAW,     XML_FILL_COLOR,             XML_TYPE_COLOR,                                         0 ),
     PLMAP( "FillColor2",                    XML_NAMESPACE_DRAW,     XML_SECONDARY_FILL_COLOR,   XML_TYPE_COLOR,                                         0 ),
@@ -145,6 +152,8 @@ const XMLPropertyMapEntry aXMLPageMasterStyleMap[] =
     PLMAP( "FillBitmapRectanglePoint",      XML_NAMESPACE_DRAW,     XML_FILL_IMAGE_REF_POINT,   XML_SW_TYPE_BITMAP_REFPOINT,                            0 ),
     PLMAP( "FillBitmapOffsetX",             XML_NAMESPACE_DRAW,     XML_TILE_REPEAT_OFFSET,     XML_SW_TYPE_BITMAPREPOFFSETX|MID_FLAG_MULTI_PROPERTY,   CTF_PM_REPEAT_OFFSET_X ),
     PLMAP( "FillBitmapOffsetY",             XML_NAMESPACE_DRAW,     XML_TILE_REPEAT_OFFSET,     XML_SW_TYPE_BITMAPREPOFFSETY|MID_FLAG_MULTI_PROPERTY,   CTF_PM_REPEAT_OFFSET_Y ),
+#undef PLMAP
+#define PLMAP(name,prefix,token,type,context) _MAP(name,prefix,token,type|XML_TYPE_PROP_PAGE_LAYOUT,context)
 
     // Index 85: footnote
     PLMAP( "FootnoteHeight",            XML_NAMESPACE_STYLE,    XML_FOOTNOTE_MAX_HEIGHT, XML_TYPE_MEASURE, CTF_PM_FTN_HEIGTH ),
@@ -190,6 +199,8 @@ const XMLPropertyMapEntry aXMLPageMasterStyleMap[] =
     //UUUUIndex 121: Header DrawingLayer FillAttributes
     // Use HFMAP to get XML_TYPE_PROP_HEADER_FOOTER ORed to the 4th entry
     // Names have to begin with 'Header', all 5th entries need to be ORed with the CTF_PM_HEADERFLAG
+#undef HFMAP
+#define HFMAP HFMAP_EXT
     HFMAP( "HeaderFillStyle",                     XML_NAMESPACE_DRAW,     XML_FILL,                   XML_SW_TYPE_FILLSTYLE,                                  CTF_PM_HEADERFLAG ),
     HFMAP( "HeaderFillColor",                     XML_NAMESPACE_DRAW,     XML_FILL_COLOR,             XML_TYPE_COLOR,                                         CTF_PM_HEADERFLAG ),
     HFMAP( "HeaderFillColor2",                    XML_NAMESPACE_DRAW,     XML_SECONDARY_FILL_COLOR,   XML_TYPE_COLOR,                                         CTF_PM_HEADERFLAG ),
@@ -210,6 +221,8 @@ const XMLPropertyMapEntry aXMLPageMasterStyleMap[] =
     HFMAP( "HeaderFillBitmapRectanglePoint",      XML_NAMESPACE_DRAW,     XML_FILL_IMAGE_REF_POINT,   XML_SW_TYPE_BITMAP_REFPOINT,                            CTF_PM_HEADERFLAG ),
     HFMAP( "HeaderFillBitmapOffsetX",             XML_NAMESPACE_DRAW,     XML_TILE_REPEAT_OFFSET,     XML_SW_TYPE_BITMAPREPOFFSETX|MID_FLAG_MULTI_PROPERTY,   CTF_PM_HEADERREPEAT_OFFSET_X ),
     HFMAP( "HeaderFillBitmapOffsetY",             XML_NAMESPACE_DRAW,     XML_TILE_REPEAT_OFFSET,     XML_SW_TYPE_BITMAPREPOFFSETY|MID_FLAG_MULTI_PROPERTY,   CTF_PM_HEADERREPEAT_OFFSET_Y ),
+#undef HFMAP
+#define HFMAP(name,prefix,token,type,context) _MAP(name,prefix,token,type|XML_TYPE_PROP_HEADER_FOOTER,context)
 
     //////////////////////////////////////////////////////////////////////////
     //UUUUIndex 141: Section for 'footer-style' own section, all members *have* to use CTF_PM_FOOTERFLAG in the context entry (the 5th one)
@@ -246,6 +259,8 @@ const XMLPropertyMapEntry aXMLPageMasterStyleMap[] =
     //UUUUIndex 170: Footer DrawingLayer FillAttributes
     // Use HFMAP to get XML_TYPE_PROP_HEADER_FOOTER ORed to the 4th entry
     // Names have to begin with 'Footer', all 5th entries need to be ORed with the CTF_PM_FOOTERFLAG
+#undef HFMAP
+#define HFMAP HFMAP_EXT
     HFMAP( "FooterFillStyle",                     XML_NAMESPACE_DRAW,     XML_FILL,                   XML_SW_TYPE_FILLSTYLE,                                  CTF_PM_FOOTERFLAG ),
     HFMAP( "FooterFillColor",                     XML_NAMESPACE_DRAW,     XML_FILL_COLOR,             XML_TYPE_COLOR,                                         CTF_PM_FOOTERFLAG ),
     HFMAP( "FooterFillColor2",                    XML_NAMESPACE_DRAW,     XML_SECONDARY_FILL_COLOR,   XML_TYPE_COLOR,                                         CTF_PM_FOOTERFLAG ),
@@ -268,6 +283,35 @@ const XMLPropertyMapEntry aXMLPageMasterStyleMap[] =
     HFMAP( "FooterFillBitmapOffsetY",             XML_NAMESPACE_DRAW,     XML_TILE_REPEAT_OFFSET,     XML_SW_TYPE_BITMAPREPOFFSETY|MID_FLAG_MULTI_PROPERTY,   CTF_PM_FOOTERREPEAT_OFFSET_Y ),
 
     { 0L, 0, 0, XML_EMPTY, 0, 0, SvtSaveOptions::ODFVER_010 } // index 190
+};
+
+#define DPMAP(name,prefix,token,type,context) _MAP(name,prefix,token,type|XML_TYPE_PROP_DRAWING_PAGE,context)
+
+const XMLPropertyMapEntry aXMLPageMasterDrawingPageStyleMap[] =
+{
+    DPMAP( "FillStyle",                     XML_NAMESPACE_DRAW,     XML_FILL,                   XML_SW_TYPE_FILLSTYLE,                                  0 ),
+    DPMAP( "BackgroundFullSize",            XML_NAMESPACE_DRAW,     XML_BACKGROUND_SIZE,        XML_PM_TYPE_BACKGROUNDSIZE,                             0 ),
+    DPMAP( "FillColor",                     XML_NAMESPACE_DRAW,     XML_FILL_COLOR,             XML_TYPE_COLOR,                                         0 ),
+    DPMAP( "FillColor2",                    XML_NAMESPACE_DRAW,     XML_SECONDARY_FILL_COLOR,   XML_TYPE_COLOR,                                         0 ),
+    DPMAP( "FillGradientName",              XML_NAMESPACE_DRAW,     XML_FILL_GRADIENT_NAME,     XML_TYPE_STYLENAME|MID_FLAG_NO_PROPERTY_IMPORT,         CTF_PM_FILLGRADIENTNAME ),
+    DPMAP( "FillGradientStepCount",         XML_NAMESPACE_DRAW,     XML_GRADIENT_STEP_COUNT,    XML_TYPE_NUMBER16,                                      0 ),
+    DPMAP( "FillHatchName",                 XML_NAMESPACE_DRAW,     XML_FILL_HATCH_NAME,        XML_TYPE_STYLENAME|MID_FLAG_NO_PROPERTY_IMPORT,         CTF_PM_FILLHATCHNAME ),
+    DPMAP( "FillBackground",                XML_NAMESPACE_DRAW,     XML_FILL_HATCH_SOLID,       XML_TYPE_BOOL,                                          0 ),
+    DPMAP( "FillBitmapName",                XML_NAMESPACE_DRAW,     XML_FILL_IMAGE_NAME,        XML_TYPE_STYLENAME|MID_FLAG_NO_PROPERTY_IMPORT,         CTF_PM_FILLBITMAPNAME ),
+    DPMAP( "FillTransparence",              XML_NAMESPACE_DRAW,     XML_OPACITY,                XML_TYPE_NEG_PERCENT16|MID_FLAG_MULTI_PROPERTY,         0 ),
+    DPMAP( "FillTransparenceGradientName",  XML_NAMESPACE_DRAW,     XML_OPACITY_NAME,           XML_TYPE_STYLENAME|MID_FLAG_NO_PROPERTY_IMPORT,         CTF_PM_FILLTRANSNAME ),
+    DPMAP( "FillBitmapSizeX",               XML_NAMESPACE_DRAW,     XML_FILL_IMAGE_WIDTH,       XML_SW_TYPE_FILLBITMAPSIZE|MID_FLAG_MULTI_PROPERTY,     0 ),
+    DPMAP( "FillBitmapLogicalSize",         XML_NAMESPACE_DRAW,     XML_FILL_IMAGE_WIDTH,       XML_SW_TYPE_LOGICAL_SIZE|MID_FLAG_MULTI_PROPERTY,       0 ),
+    DPMAP( "FillBitmapSizeY",               XML_NAMESPACE_DRAW,     XML_FILL_IMAGE_HEIGHT,      XML_SW_TYPE_FILLBITMAPSIZE|MID_FLAG_MULTI_PROPERTY,     0 ),
+    DPMAP( "FillBitmapLogicalSize",         XML_NAMESPACE_DRAW,     XML_FILL_IMAGE_HEIGHT,      XML_SW_TYPE_LOGICAL_SIZE|MID_FLAG_MULTI_PROPERTY,       0 ),
+    DPMAP( "FillBitmapMode",                XML_NAMESPACE_STYLE,    XML_REPEAT,                 XML_SW_TYPE_BITMAP_MODE|MID_FLAG_MULTI_PROPERTY,        0 ),
+    DPMAP( "FillBitmapPositionOffsetX",     XML_NAMESPACE_DRAW,     XML_FILL_IMAGE_REF_POINT_X, XML_TYPE_PERCENT,                                       0 ),
+    DPMAP( "FillBitmapPositionOffsetY",     XML_NAMESPACE_DRAW,     XML_FILL_IMAGE_REF_POINT_Y, XML_TYPE_PERCENT,                                       0 ),
+    DPMAP( "FillBitmapRectanglePoint",      XML_NAMESPACE_DRAW,     XML_FILL_IMAGE_REF_POINT,   XML_SW_TYPE_BITMAP_REFPOINT,                            0 ),
+    DPMAP( "FillBitmapOffsetX",             XML_NAMESPACE_DRAW,     XML_TILE_REPEAT_OFFSET,     XML_SW_TYPE_BITMAPREPOFFSETX|MID_FLAG_MULTI_PROPERTY,   CTF_PM_REPEAT_OFFSET_X ),
+    DPMAP( "FillBitmapOffsetY",             XML_NAMESPACE_DRAW,     XML_TILE_REPEAT_OFFSET,     XML_SW_TYPE_BITMAPREPOFFSETY|MID_FLAG_MULTI_PROPERTY,   CTF_PM_REPEAT_OFFSET_Y ),
+
+    { 0L, 0, 0, XML_EMPTY, 0, 0, SvtSaveOptions::ODFVER_010 }
 };
 
 //eof

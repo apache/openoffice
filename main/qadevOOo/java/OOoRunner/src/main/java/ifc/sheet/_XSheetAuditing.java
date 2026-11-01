@@ -62,7 +62,7 @@ public class _XSheetAuditing extends MultiMethodTest {
         // get the draw page for checking the shapes
         xDrawPage = (XDrawPage)tEnv.getObjRelation("XSheetAuditing.DrawPage");
         if (xDrawPage == null) { // get from object
-            XDrawPageSupplier oDPS = (XDrawPageSupplier)
+            XDrawPageSupplier oDPS =
                 UnoRuntime.queryInterface(XDrawPageSupplier.class, oObj);
             xDrawPage = (XDrawPage) oDPS.getDrawPage();
         }
@@ -76,7 +76,7 @@ public class _XSheetAuditing extends MultiMethodTest {
         // get a sheet for changing the cells
         XSpreadsheet xSheet = (XSpreadsheet)tEnv.getObjRelation("XSheetAuditing.Spreadsheet");
         if (xSheet == null) // query on their object
-            xSheet = (XSpreadsheet)UnoRuntime.queryInterface(XSpreadsheet.class, oObj);
+            xSheet = UnoRuntime.queryInterface(XSpreadsheet.class, oObj);
         if (xSheet == null)
             throw new StatusException(Status.failed("'XSheetAuditing.Spreadsheet' object relation not found."));
         try {
@@ -125,7 +125,7 @@ public class _XSheetAuditing extends MultiMethodTest {
         xPrecedentAddress.setValue(-9);
         String cellAddress = new String(new byte[]{(byte)(precedentAddress.Column + 65)}) + (precedentAddress.Row+1);
         xAddress.setFormula("=SQRT(" + cellAddress + ")");
-        XText xText = (XText)UnoRuntime.queryInterface(XText.class, xAddress);
+        XText xText = UnoRuntime.queryInterface(XText.class, xAddress);
         // correct error in cell:
         String error = xText.getString();
         boolean erg = error.equals("Err:502");
@@ -142,9 +142,9 @@ public class _XSheetAuditing extends MultiMethodTest {
         xAddress.setValue(2.5);
         try {
             // add a validitation to a cell: only whole numbers are allowed
-            XPropertySet xPropertySet = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, xAddress);
+            XPropertySet xPropertySet = UnoRuntime.queryInterface(XPropertySet.class, xAddress);
             Object o = xPropertySet.getPropertyValue("Validation");
-            XPropertySet xValidation = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, o);
+            XPropertySet xValidation = UnoRuntime.queryInterface(XPropertySet.class, o);
             xValidation.setPropertyValue("Type", ValidationType.WHOLE);
             xPropertySet.setPropertyValue("Validation", xValidation);
             // test
@@ -188,7 +188,7 @@ public class _XSheetAuditing extends MultiMethodTest {
                 for (int i=elementCount; i<newCount; i++) {
                     try {
                         Object o = xDrawPage.getByIndex(i);
-                        XShape xShape = (XShape)UnoRuntime.queryInterface(XShape.class, o);
+                        XShape xShape = UnoRuntime.queryInterface(XShape.class, o);
                         System.out.println("Shape Type: " + xShape.getShapeType());
                     }
                     catch(com.sun.star.uno.Exception e) {

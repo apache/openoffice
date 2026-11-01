@@ -215,7 +215,7 @@ public class XMLSecurityFrameworkController
 			 */
 			if (m_bSAXEventKeeperIncluded)
 			{
-				m_xExportHandler = (XDocumentHandler)UnoRuntime.queryInterface(
+				m_xExportHandler = UnoRuntime.queryInterface(
 							XDocumentHandler.class, m_xSAXEventKeeper);
 				m_xSAXEventKeeper.setNextHandler(m_xOutputHandler);
 
@@ -232,7 +232,7 @@ public class XMLSecurityFrameworkController
 			if (m_bSAXEventKeeperIncluded)
 			{
 				m_parsingThread.setHandler(
-					(XDocumentHandler)UnoRuntime.queryInterface(XDocumentHandler.class, m_xSAXEventKeeper));
+					UnoRuntime.queryInterface(XDocumentHandler.class, m_xSAXEventKeeper));
 				m_xSAXEventKeeper.setNextHandler(this);
 				m_testTool.updatesSAXChainInformation("SAXParser -> SAXEventKeeper -> XMLImporter");
 			}
@@ -281,7 +281,7 @@ public class XMLSecurityFrameworkController
 						TestTool.XMLDOCUMENTWRAPPER_COMPONENT_C, m_xRemoteContext);
 				}
 
-				m_xXMLDocumentWrapper = (XXMLDocumentWrapper)UnoRuntime.queryInterface(
+				m_xXMLDocumentWrapper = UnoRuntime.queryInterface(
 					XXMLDocumentWrapper.class, xmlDocumentObj);
 
 				/*
@@ -291,14 +291,14 @@ public class XMLSecurityFrameworkController
 					TestTool.SAXEVENTKEEPER_COMPONENT, m_xRemoteContext);
 
 				m_xSAXEventKeeper =
-					(XSecuritySAXEventKeeper)UnoRuntime.queryInterface(
+					UnoRuntime.queryInterface(
 						XSecuritySAXEventKeeper.class, saxEventKeeperObj);
 
 	                        /*
 	                         * initializes the SAXEventKeeper component with the XMLDocumentWrapper component.
 	                         */
 				XInitialization xInitialization =
-					(XInitialization)UnoRuntime.queryInterface(
+					UnoRuntime.queryInterface(
 						XInitialization.class, m_xSAXEventKeeper);
 				Object args[]=new Object[1];
 				args[0] = m_xXMLDocumentWrapper;
@@ -313,7 +313,7 @@ public class XMLSecurityFrameworkController
 			 * configures the SAXEventKeeper's status change listener.
 			 */
 			XSAXEventKeeperStatusChangeBroadcaster xSaxEventKeeperStatusChangeBroadcaster =
-				(XSAXEventKeeperStatusChangeBroadcaster)UnoRuntime.queryInterface(
+				UnoRuntime.queryInterface(
 					XSAXEventKeeperStatusChangeBroadcaster.class, m_xSAXEventKeeper);
 			xSaxEventKeeperStatusChangeBroadcaster.addSAXEventKeeperStatusChangeListener(this);
 		}
@@ -369,7 +369,7 @@ public class XMLSecurityFrameworkController
 					 * sets the resolve listener.
 					 */
 					XReferenceResolvedBroadcaster xReferenceResolvedBroadcaster =
-						(XReferenceResolvedBroadcaster)UnoRuntime.queryInterface(
+						UnoRuntime.queryInterface(
 							XReferenceResolvedBroadcaster.class, m_xSAXEventKeeper);
 					xReferenceResolvedBroadcaster.addReferenceResolvedListener(
 						cloneKeeperId,
@@ -394,14 +394,14 @@ public class XMLSecurityFrameworkController
 					 * sets the resolve listener.
 					 */
 					XReferenceResolvedBroadcaster xReferenceResolvedBroadcaster =
-						(XReferenceResolvedBroadcaster)UnoRuntime.queryInterface(
+						UnoRuntime.queryInterface(
 							XReferenceResolvedBroadcaster.class, m_xSAXEventKeeper);
 					xReferenceResolvedBroadcaster.addReferenceResolvedListener(cloneKeeperId,
 						signatureEntity.getReferenceListener());
 
 					try{
 						XReferenceCollector xReferenceCollector =
-							(XReferenceCollector)UnoRuntime.queryInterface(
+							UnoRuntime.queryInterface(
 								XReferenceCollector.class, signatureEntity.getReferenceListener());
 						xReferenceCollector.setReferenceId(cloneKeeperId);
 					}
@@ -819,7 +819,7 @@ public class XMLSecurityFrameworkController
 		m_xSAXEventKeeper.setNextHandler(null);
 
 		XSAXEventKeeperStatusChangeBroadcaster xSaxEventKeeperStatusChangeBroadcaster =
-			(XSAXEventKeeperStatusChangeBroadcaster)UnoRuntime.queryInterface(
+			UnoRuntime.queryInterface(
 				XSAXEventKeeperStatusChangeBroadcaster.class, m_xSAXEventKeeper);
 		xSaxEventKeeperStatusChangeBroadcaster.addSAXEventKeeperStatusChangeListener(null);
 
@@ -894,7 +894,7 @@ public class XMLSecurityFrameworkController
 				m_xSAXEventKeeper.setNextHandler(null);
 
 				XDocumentHandler saxEventKeeperHandler =
-					(XDocumentHandler)UnoRuntime.queryInterface(
+					UnoRuntime.queryInterface(
 						XDocumentHandler.class, m_xSAXEventKeeper);
 				saxEventKeeperHandler.startElement(str, xattribs);
 				m_xSAXEventKeeper.setNextHandler((XDocumentHandler)this);

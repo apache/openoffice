@@ -73,7 +73,6 @@ class XMLRedlineExport
 	const ::rtl::OUString sRedlineAuthor;
 	const ::rtl::OUString sRedlineComment;
 	const ::rtl::OUString sRedlineDateTime;
-	const ::rtl::OUString sRedlineSuccessorData;
 	const ::rtl::OUString sRedlineText;
 	const ::rtl::OUString sRedlineType;
 	const ::rtl::OUString sStyle;
@@ -187,11 +186,6 @@ private:
 	void ExportChangeInfo(
 		const ::com::sun::star::uno::Reference<
 					::com::sun::star::beans::XPropertySet> & rPropSet);
-
-	/// export an change-info element (from PropertyValues)
-	void ExportChangeInfo(
-		const ::com::sun::star::uno::Sequence<
-					::com::sun::star::beans::PropertyValue> & rValues);
 
 	/// convert the change type from API to XML names
 	const ::rtl::OUString ConvertTypeName(const ::rtl::OUString& sApiName);

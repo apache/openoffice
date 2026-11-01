@@ -480,7 +480,7 @@ sal_Bool SwEditRegionDlg::CheckPasswd(CheckBox* pBox)
             {
                 String sNewPasswd( aPasswdDlg.GetPassword() );
                 UNO_NMSPC::Sequence <sal_Int8 > aNewPasswd;
-                SvPasswordHelper::GetHashPassword( aNewPasswd, sNewPasswd );
+                SvPasswordHelper::GetHashPasswordSHA256( aNewPasswd, sNewPasswd );
                 if (SvPasswordHelper::CompareHashPassword(
                         pRepr->GetSectionData().GetPassword(), sNewPasswd))
                 {
@@ -1409,7 +1409,7 @@ IMPL_LINK( SwEditRegionDlg, ChangePasswdHdl, Button *, pBox )
                     String sNewPasswd( aPasswdDlg.GetPassword() );
                     if( aPasswdDlg.GetConfirm() == sNewPasswd )
                     {
-                        SvPasswordHelper::GetHashPassword( pRepr->GetTempPasswd(), sNewPasswd );
+                        SvPasswordHelper::GetHashPasswordSHA256( pRepr->GetTempPasswd(), sNewPasswd );
                     }
                     else
                     {
@@ -1909,7 +1909,7 @@ IMPL_LINK( SwInsertSectionTabPage, ChangePasswdHdl, Button *, pButton )
                 String sNewPasswd( aPasswdDlg.GetPassword() );
                 if( aPasswdDlg.GetConfirm() == sNewPasswd )
                 {
-                    SvPasswordHelper::GetHashPassword( m_aNewPasswd, sNewPasswd );
+                    SvPasswordHelper::GetHashPasswordSHA256( m_aNewPasswd, sNewPasswd );
                 }
                 else
                 {

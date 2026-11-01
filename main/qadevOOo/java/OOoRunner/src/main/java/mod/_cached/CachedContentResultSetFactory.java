@@ -112,7 +112,7 @@ public class CachedContentResultSetFactory extends TestCase {
                 ("com.sun.star.ucb.UniversalContentBroker",
                 new Object[] {"Local", "Office"}) ;
 
-            XContentIdentifierFactory ciFac = (XContentIdentifierFactory)
+            XContentIdentifierFactory ciFac =
                 UnoRuntime.queryInterface(XContentIdentifierFactory.class, oUCB) ;
 
             String url = util.utils.getFullTestURL("SwXTextEmbeddedObject.sxw") ;
@@ -132,12 +132,12 @@ public class CachedContentResultSetFactory extends TestCase {
 
             XContentIdentifier CI = ciFac.createContentIdentifier(cntUrl) ;
 
-            XContentProvider cntProv = (XContentProvider)
+            XContentProvider cntProv =
                 UnoRuntime.queryInterface(XContentProvider.class, oUCB) ;
 
             XContent cnt = cntProv.queryContent(CI) ;
 
-            XCommandProcessor cmdProc = (XCommandProcessor)
+            XCommandProcessor cmdProc =
                 UnoRuntime.queryInterface(XCommandProcessor.class, cnt) ;
 
             Property prop = new Property() ;
@@ -149,8 +149,8 @@ public class CachedContentResultSetFactory extends TestCase {
 
             XDynamicResultSet dynResSet = null;
             try {
-                dynResSet = (XDynamicResultSet)
-                    AnyConverter.toObject(new Type(XDynamicResultSet.class),
+                dynResSet =
+                    AnyConverter.toObject(XDynamicResultSet.class,
                                         cmdProc.execute(cmd, 0, null));
             } catch (com.sun.star.lang.IllegalArgumentException iae) {
                 throw new StatusException("Couldn't convert Any ",iae);
@@ -162,7 +162,7 @@ public class CachedContentResultSetFactory extends TestCase {
                 ("com.sun.star.ucb.CachedContentResultSetStubFactory") ;
 
             XCachedContentResultSetStubFactory xStubFactory =
-                (XCachedContentResultSetStubFactory) UnoRuntime.queryInterface
+                UnoRuntime.queryInterface
                 (XCachedContentResultSetStubFactory.class, oStubFactory) ;
 
             resSetStub = xStubFactory.createCachedContentResultSetStub(resSet) ;

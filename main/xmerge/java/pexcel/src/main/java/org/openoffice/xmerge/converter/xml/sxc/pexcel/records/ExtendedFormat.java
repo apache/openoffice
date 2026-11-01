@@ -84,7 +84,7 @@ org.openoffice.xmerge.converter.xml.OfficeConstants {
 	}
 
 	/**
- 	 * Constructs a pocket Excel Document using defualt values and sets the
+ 	 * Constructs a pocket Excel Document using default values and sets the
 	 * font index using the specified attribute
  	 *
  	 * @param	ixfnt	index of the font this format should use
@@ -276,7 +276,7 @@ org.openoffice.xmerge.converter.xml.OfficeConstants {
     /**
 	 * Compare two ExtendedFormat to see if the font index is the same
 	 *
-	 * @param rhs the ExtendedFormat to be used in the comaprison
+	 * @param rhs the ExtendedFormat to be used in the comparison
 	 * @return boolean if the two are the same otherwise false
 	 */
 	public boolean compareTo(ExtendedFormat rhs) {

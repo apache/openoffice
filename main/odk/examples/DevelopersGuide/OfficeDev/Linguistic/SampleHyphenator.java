@@ -439,7 +439,7 @@ public class SampleHyphenator extends ComponentBase implements
         int nLen = aArguments.length;
         if (2 == nLen)
         {
-            XPropertySet xPropSet = (XPropertySet)UnoRuntime.queryInterface(
+            XPropertySet xPropSet = UnoRuntime.queryInterface(
                                          XPropertySet.class, aArguments[0]);
             // start listening to property changes
             aPropChgHelper.AddAsListenerTo( xPropSet );

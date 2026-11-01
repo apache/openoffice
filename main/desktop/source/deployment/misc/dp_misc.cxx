@@ -542,17 +542,18 @@ void writeConsoleError(::rtl::OString const & sText)
 
 
 
-OUString readConsole()
+bool readConsole( OUString & rLine )
 {
 #ifdef WNT
     sal_Unicode aBuffer[1024];
 	DWORD	dwRead = 0;
     //unopkg.com feeds unopkg.exe with wchar_t|s
-    if (ReadFile( GetStdHandle(STD_INPUT_HANDLE), &aBuffer, sizeof(aBuffer), &dwRead, NULL ) )
+    if (ReadFile( GetStdHandle(STD_INPUT_HANDLE), &aBuffer, sizeof(aBuffer), &dwRead, NULL ) && dwRead > 0)
 	{
         OSL_ASSERT((dwRead % 2) == 0);
         OUString value( aBuffer, dwRead / 2);
-        return value.trim();
+        rLine = value.trim();
+        return true;
 	}
 #else
 	char buf[1024];
@@ -561,10 +562,12 @@ OUString readConsole()
 	if (fgets(buf, 1024, stdin) != NULL)
     {
         OUString value = ::rtl::OStringToOUString(::rtl::OString(buf), osl_getThreadTextEncoding());
-        return value.trim();
+        rLine = value.trim();
+        return true;
     }
 #endif
-    return OUString();
+    rLine = OUString();
+    return false;
 }
 
 void TRACE(::rtl::OUString const & sText)

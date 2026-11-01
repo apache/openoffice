@@ -23,6 +23,7 @@
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_dbui.hxx"
+#include <iterator>
 #include "dbu_reghelper.hxx"
 #include <sfx2/sfxsids.hrc>
 #include "dbu_rel.hrc"

@@ -706,7 +706,7 @@ abstract public class ReportBuilderLayouter implements IReportBuilderLayouter
 
     protected String convertToFieldName(String _sElementName)
     {
-        final StringBuffer aDataField = new StringBuffer(32);
+        final StringBuilder aDataField = new StringBuilder(32);
         aDataField.append("field:[").append(_sElementName).append(']');
         return aDataField.toString();
 
@@ -1030,13 +1030,12 @@ abstract public class ReportBuilderLayouter implements IReportBuilderLayouter
 //    protected static String getDateString(String _sFormat)
 //        {
 //            GregorianCalendar aCalendar = new GregorianCalendar();
-//            StringBuffer aBuf = new StringBuffer();
 //
 //            Locale aLocale = new Locale("en","US");
 //            SimpleDateFormat aFormat = new SimpleDateFormat(_sFormat, aLocale);
-//            aBuf = aFormat.format(aCalendar.getTime(), aBuf, new FieldPosition(0) );
-//            // DebugHelper.writeInfo("Date: " + aBuf.toString());
-//            return aBuf.toString();
+//            String aBuf = aFormat.format(aCalendar.getTime());
+//            // DebugHelper.writeInfo("Date: " + aBuf);
+//            return aBuf;
 //    }
 //    protected String getCurrentDate()
 //    {
@@ -1125,7 +1124,7 @@ abstract public class ReportBuilderLayouter implements IReportBuilderLayouter
         try
         {
             // Object aControlContainer = getGlobalMSF().createInstance("com.sun.star.awt.UnoControlContainer");
-            // XControlContainer xControlContainer = (XControlContainer)UnoRuntime.queryInterface(XControlContainer.class, aControlContainer);
+            // XControlContainer xControlContainer = UnoRuntime.queryInterface(XControlContainer.class, aControlContainer);
 
             final Object aFixedTextModel = getGlobalMSF().createInstance("com.sun.star.awt.UnoControlFixedTextModel");
             final XControlModel xFixedTextModel = UnoRuntime.queryInterface(XControlModel.class, aFixedTextModel);
@@ -1135,7 +1134,7 @@ abstract public class ReportBuilderLayouter implements IReportBuilderLayouter
             aPropertySetHelper.setPropertyValueDontThrow(PropertyNames.FONT_DESCRIPTOR, _aFont);
 
             final Object aUnoCtrlFixedText = getGlobalMSF().createInstance("com.sun.star.awt.UnoControlFixedText");
-//            XServiceInfo xServiceInfo2 = (XServiceInfo)UnoRuntime.queryInterface(XServiceInfo.class, aUnoCtrlFixedText);
+//            XServiceInfo xServiceInfo2 = UnoRuntime.queryInterface(XServiceInfo.class, aUnoCtrlFixedText);
 //            String[] sServices2 = xServiceInfo2.getSupportedServiceNames();
 
             final XWindow xWindow = UnoRuntime.queryInterface(XWindow.class, aUnoCtrlFixedText);
@@ -1253,7 +1252,7 @@ abstract public class ReportBuilderLayouter implements IReportBuilderLayouter
                 Object aEnumObj = xEnum.nextElement();
                 XReportComponent aComponent = UnoRuntime.queryInterface(XReportComponent.class, aEnumObj);
 
-                // XCloneable aClone = (XCloneable)UnoRuntime.queryInterface(XCloneable.class, aEnumObj);
+                // XCloneable aClone = UnoRuntime.queryInterface(XCloneable.class, aEnumObj);
                 if (aComponent != null)
                 {
                     Object aClone = aComponent.createClone();
@@ -1574,7 +1573,7 @@ abstract public class ReportBuilderLayouter implements IReportBuilderLayouter
             m_aLabelWidthMap = new HashMap();
         }
         // At first, try to get the Width out of a HashMap (Cache)
-        StringBuffer aKey = new StringBuffer(40);
+        StringBuilder aKey = new StringBuilder(40);
         final String sKey = aKey.append(_sLabel).append(_nCharWeight).append(_nCharHeight).toString();
         if (m_aLabelWidthMap.containsKey(sKey))
         {

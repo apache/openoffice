@@ -56,12 +56,12 @@ public class Helper
 	{
 		com.sun.star.lang.XComponent xComponent = null;
 		com.sun.star.frame.XComponentLoader aLoader =
-            (com.sun.star.frame.XComponentLoader)UnoRuntime.queryInterface(
+            UnoRuntime.queryInterface(
                 com.sun.star.frame.XComponentLoader.class,
 				xOfficeContext.getServiceManager().createInstanceWithContext(
                     "com.sun.star.frame.Desktop", xOfficeContext));
 
-		xComponent = (com.sun.star.lang.XComponent)UnoRuntime.queryInterface(
+		xComponent = UnoRuntime.queryInterface(
             com.sun.star.lang.XComponent.class, aLoader.loadComponentFromURL(
 				sURL, sTargetFrame, nSearchFlags, aArgs ) );
 

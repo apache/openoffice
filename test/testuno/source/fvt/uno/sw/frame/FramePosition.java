@@ -84,27 +84,27 @@ public class FramePosition {
 
 	@Test
 	public void testFramePosition() throws Exception {
-		xTextDocument =(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
+		xTextDocument =UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
 		xText=xTextDocument.getText();
 		XTextCursor xTextCursor = xText.createTextCursor();
 		// get internal service factory of the document
-		xWriterFactory =(XMultiServiceFactory)UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
+		xWriterFactory =UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
 		// Create a new table from the document's factory
-		XTextFrame xTextFrame = (XTextFrame)UnoRuntime.queryInterface(XTextFrame.class, xWriterFactory.createInstance("com.sun.star.text.TextFrame"));
+		XTextFrame xTextFrame = UnoRuntime.queryInterface(XTextFrame.class, xWriterFactory.createInstance("com.sun.star.text.TextFrame"));
 		xText.insertTextContent(xTextCursor,xTextFrame,false);
-		XPropertySet xFrameProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextFrame);
+		XPropertySet xFrameProps = UnoRuntime.queryInterface(XPropertySet.class, xTextFrame);
 		xFrameProps.setPropertyValue("HoriOrient", HoriOrient);
 		xFrameProps.setPropertyValue("HoriOrientRelation", HoriOrientRelation);
 		xFrameProps.setPropertyValue("VertOrient", VertOrient);
 		xFrameProps.setPropertyValue("VertOrientRelation", VertOrientRelation);
 
 		//reopen the odt document
-		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class,SWUtil.saveTo_Override_reload(xTextDocument, "writer8",Testspace.getPath("output/test.odt"), app));
-		XTextFramesSupplier xTFS_odt = (XTextFramesSupplier) UnoRuntime.queryInterface(XTextFramesSupplier.class, assertDocument_odt);
+		XTextDocument assertDocument_odt=UnoRuntime.queryInterface(XTextDocument.class,SWUtil.saveTo_Override_reload(xTextDocument, "writer8",Testspace.getPath("output/test.odt"), app));
+		XTextFramesSupplier xTFS_odt = UnoRuntime.queryInterface(XTextFramesSupplier.class, assertDocument_odt);
 		XNameAccess xTextFrames_odt = xTFS_odt.getTextFrames();
 		Object xTextFrame_obj_odt=xTextFrames_odt.getByName("Frame1");
-		XTextFrame xTextFrame_Assert_odt=(XTextFrame) UnoRuntime.queryInterface(XTextFrame.class, xTextFrame_obj_odt);
-		XPropertySet xFramProps_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextFrame_Assert_odt);
+		XTextFrame xTextFrame_Assert_odt=UnoRuntime.queryInterface(XTextFrame.class, xTextFrame_obj_odt);
+		XPropertySet xFramProps_odt = UnoRuntime.queryInterface(XPropertySet.class, xTextFrame_Assert_odt);
 		assertEquals("verify Frame position",HoriOrient,xFramProps_odt.getPropertyValue("HoriOrient"));
 		assertEquals("verify Frame position",HoriOrientRelation,xFramProps_odt.getPropertyValue("HoriOrientRelation"));
 		assertEquals("verify Frame position",VertOrient,xFramProps_odt.getPropertyValue("VertOrient"));

@@ -41,6 +41,7 @@
 #include <svl/eitem.hxx>
 #include <svl/intitem.hxx>
 #include <unotools/localfilehelper.hxx>
+#include <svtools/linkpolicy.hxx>
 #include <comphelper/processfactory.hxx>
 #include <i18npool/mslangid.hxx>
 #include <sfx2/request.hxx>
@@ -577,13 +578,9 @@ sal_Bool LinkManager::urlIsSafe( const ::com::sun::star::util::URL &url )
 
 sal_Bool LinkManager::urlIsVendor( const ::rtl::OUString &url )
 {
-	if ( url.matchIgnoreAsciiCaseAsciiL( "vnd.sun.star.", 13, 0 ) ) {
-		return url.matchIgnoreAsciiCaseAsciiL ( "expand", 6, 13 ) ||
-			url.matchIgnoreAsciiCaseAsciiL ( "script", 6, 13 ) ||
-			url.matchIgnoreAsciiCaseAsciiL ( "tdoc", 4, 13 ) ||
-			url.matchIgnoreAsciiCaseAsciiL ( "uno", 3, 13 );
-	}
-	return sal_False;
+	// One definition of this scheme set, shared with the modules below sfx2
+	// that also have to apply it (see svtools/linkpolicy.hxx).
+	return ::svt::linkpolicy::isVendorUrl( url ) ? sal_True : sal_False;
 }
 
 

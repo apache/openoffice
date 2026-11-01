@@ -102,7 +102,7 @@ public class SwXDocumentIndexMark extends TestCase {
         XText oText = xTextDoc.getText();
         XTextCursor oCursor = oText.createTextCursor();
 
-        XMultiServiceFactory oDocMSF = (XMultiServiceFactory)
+        XMultiServiceFactory oDocMSF =
             UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDoc);
 
         Object oDIM = null;
@@ -116,7 +116,7 @@ public class SwXDocumentIndexMark extends TestCase {
             log.println("Error:" + e);
         }
 
-        XDocumentIndexMark xDIM = (XDocumentIndexMark)
+        XDocumentIndexMark xDIM =
             UnoRuntime.queryInterface(XDocumentIndexMark.class, oDIM);
 
         try {
@@ -129,7 +129,7 @@ public class SwXDocumentIndexMark extends TestCase {
 
         TestEnvironment tEnv = new TestEnvironment(xDIM);
 
-        tEnv.addObjRelation("CONTENT", (XTextContent)
+        tEnv.addObjRelation("CONTENT",
                         UnoRuntime.queryInterface(XTextContent.class,instance));
         tEnv.addObjRelation("RANGE", xTextDoc.getText().createTextCursor());
 

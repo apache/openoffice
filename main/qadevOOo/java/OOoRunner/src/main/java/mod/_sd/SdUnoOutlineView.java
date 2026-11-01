@@ -87,7 +87,7 @@ public class SdUnoOutlineView extends TestCase {
     * @see com.sun.star.frame.Desktop
     */
     protected void initialize(TestParameters Param, PrintWriter log) {
-        the_Desk = (XDesktop)
+        the_Desk =
             UnoRuntime.queryInterface(
                 XDesktop.class, DesktopTools.createDesktop(
                                     (XMultiServiceFactory)Param.getMSF()) );
@@ -147,13 +147,13 @@ public class SdUnoOutlineView extends TestCase {
             throw new StatusException("Couldn't create document", e);
         }
 
-        XDrawPagesSupplier oDPS = (XDrawPagesSupplier)
+        XDrawPagesSupplier oDPS =
             UnoRuntime.queryInterface(XDrawPagesSupplier.class, xImpressDoc);
         XDrawPages the_pages = oDPS.getDrawPages();
-        XIndexAccess oDPi = (XIndexAccess)
+        XIndexAccess oDPi =
             UnoRuntime.queryInterface(XIndexAccess.class,the_pages);
 
-        XModel aModel = (XModel)
+        XModel aModel =
             UnoRuntime.queryInterface(XModel.class, xImpressDoc);
 
         XInterface oObj = aModel.getCurrentController();
@@ -161,9 +161,9 @@ public class SdUnoOutlineView extends TestCase {
         //Change to Outline view
         try {
             String aSlotID = "slot:27010";
-            XDispatchProvider xDispProv = (XDispatchProvider)
+            XDispatchProvider xDispProv =
                 UnoRuntime.queryInterface( XDispatchProvider.class, oObj );
-            XURLTransformer xParser = (com.sun.star.util.XURLTransformer)
+            XURLTransformer xParser =
                 UnoRuntime.queryInterface(XURLTransformer.class,
         ((XMultiServiceFactory)Param.getMSF()).createInstance("com.sun.star.util.URLTransformer"));
             // Because it's an in/out parameter we must use an array of URL objects.
@@ -188,10 +188,10 @@ public class SdUnoOutlineView extends TestCase {
             throw new StatusException("Couldn't create document", e);
         }
 
-        XModel aModel2 = (XModel)
+        XModel aModel2 =
             UnoRuntime.queryInterface(XModel.class, xSecondDrawDoc);
 
-        XWindow anotherWindow = (XWindow) UnoRuntime.queryInterface(
+        XWindow anotherWindow = UnoRuntime.queryInterface(
                                 XWindow.class,aModel2.getCurrentController());
 
         oObj = aModel.getCurrentController();
@@ -212,7 +212,7 @@ public class SdUnoOutlineView extends TestCase {
         XFrame the_frame = the_Desk.getCurrentFrame();
         tEnv.addObjRelation("Frame", the_frame);
 
-         aModel = (XModel)
+         aModel =
             UnoRuntime.queryInterface(XModel.class, xSecondDrawDoc);
         //Adding ObjRelations for XController
         tEnv.addObjRelation("SecondModel", aModel);

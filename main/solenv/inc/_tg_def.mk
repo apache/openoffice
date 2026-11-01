@@ -41,6 +41,15 @@ $(DEF1EXPORTFILE) : $(SHL1OBJS) $(SHL1LIBS)
 
 $(DEF1EXPORTFILE) : $(SHL1VERSIONMAP)
 	$(COMMAND_ECHO)$(TYPE) $< | $(AWK) -f $(SOLARENV)/bin/getcsym.awk > $@
+.IF "$(COM)"!="GCC"
+# Wildcards in a version script are a GCC concept -- the GCC branch below
+# pulls them out into a .symbols-regexp and matches them against the real
+# objects.  MSVC has no equivalent, and asking link.exe to export a literal
+# "_ZTI*" fails with LNK2001, so drop those lines here.  Match "*" alone:
+# every MSVC-mangled C++ name begins with "?", so "[*?]" would drop the lot.
+	$(COMMAND_ECHO)-$(GREP) -v "[*]" $@ > $@.nowild
+	$(COMMAND_ECHO)$(RENAME) $@.nowild $@
+.ENDIF
 .IF "$(COM)"=="GCC"
 	$(COMMAND_ECHO)-$(GREP) -v "\*\|?" $@ | $(SED) -e 's@#.*@@' > $@.exported-symbols
 	$(COMMAND_ECHO)-$(GREP) "\*\|?" $@ > $@.symbols-regexp
@@ -103,7 +112,7 @@ $(DEF1TARGETN) .PHONY :
 .ELSE
 .IF "$(SHL1USE_EXPORTS)"==""
 	@-$(RMHACK1) $(MISC)/$(SHL1TARGET).exp
-	@$(LIBMGR) -EXTRACT:/ /OUT:$(MISC)/$(SHL1TARGET).exp $(SLB)/$(DEFLIB1NAME).lib
+	@$(SOLARENV)/bin/extract-linker-member.sh $(SLB)/$(DEFLIB1NAME).lib $(MISC)/$(SHL1TARGET).exp
 	@$(LDUMP2) -N $(EXPORT_ALL_SWITCH) -F $(MISC)/$(SHL1TARGET).flt $(MISC)/$(SHL1TARGET).exp			   >>$@.tmpfile
 	$(COMMAND_ECHO)$(RMHACK1) $(MISC)/$(SHL1TARGET).exp
 .ELSE			# "$(SHL1USE_EXPORTS)"==""
@@ -325,6 +334,15 @@ $(DEF2EXPORTFILE) : $(SHL2OBJS) $(SHL2LIBS)
 
 $(DEF2EXPORTFILE) : $(SHL2VERSIONMAP)
 	$(COMMAND_ECHO)$(TYPE) $< | $(AWK) -f $(SOLARENV)/bin/getcsym.awk > $@
+.IF "$(COM)"!="GCC"
+# Wildcards in a version script are a GCC concept -- the GCC branch below
+# pulls them out into a .symbols-regexp and matches them against the real
+# objects.  MSVC has no equivalent, and asking link.exe to export a literal
+# "_ZTI*" fails with LNK2001, so drop those lines here.  Match "*" alone:
+# every MSVC-mangled C++ name begins with "?", so "[*?]" would drop the lot.
+	$(COMMAND_ECHO)-$(GREP) -v "[*]" $@ > $@.nowild
+	$(COMMAND_ECHO)$(RENAME) $@.nowild $@
+.ENDIF
 .IF "$(COM)"=="GCC"
 	$(COMMAND_ECHO)-$(GREP) -v "\*\|?" $@ | $(SED) -e 's@#.*@@' > $@.exported-symbols
 	$(COMMAND_ECHO)-$(GREP) "\*\|?" $@ > $@.symbols-regexp
@@ -387,7 +405,7 @@ $(DEF2TARGETN) .PHONY :
 .ELSE
 .IF "$(SHL2USE_EXPORTS)"==""
 	@-$(RMHACK2) $(MISC)/$(SHL2TARGET).exp
-	@$(LIBMGR) -EXTRACT:/ /OUT:$(MISC)/$(SHL2TARGET).exp $(SLB)/$(DEFLIB2NAME).lib
+	@$(SOLARENV)/bin/extract-linker-member.sh $(SLB)/$(DEFLIB2NAME).lib $(MISC)/$(SHL2TARGET).exp
 	@$(LDUMP2) -N $(EXPORT_ALL_SWITCH) -F $(MISC)/$(SHL2TARGET).flt $(MISC)/$(SHL2TARGET).exp			   >>$@.tmpfile
 	$(COMMAND_ECHO)$(RMHACK2) $(MISC)/$(SHL2TARGET).exp
 .ELSE			# "$(SHL2USE_EXPORTS)"==""
@@ -609,6 +627,15 @@ $(DEF3EXPORTFILE) : $(SHL3OBJS) $(SHL3LIBS)
 
 $(DEF3EXPORTFILE) : $(SHL3VERSIONMAP)
 	$(COMMAND_ECHO)$(TYPE) $< | $(AWK) -f $(SOLARENV)/bin/getcsym.awk > $@
+.IF "$(COM)"!="GCC"
+# Wildcards in a version script are a GCC concept -- the GCC branch below
+# pulls them out into a .symbols-regexp and matches them against the real
+# objects.  MSVC has no equivalent, and asking link.exe to export a literal
+# "_ZTI*" fails with LNK2001, so drop those lines here.  Match "*" alone:
+# every MSVC-mangled C++ name begins with "?", so "[*?]" would drop the lot.
+	$(COMMAND_ECHO)-$(GREP) -v "[*]" $@ > $@.nowild
+	$(COMMAND_ECHO)$(RENAME) $@.nowild $@
+.ENDIF
 .IF "$(COM)"=="GCC"
 	$(COMMAND_ECHO)-$(GREP) -v "\*\|?" $@ | $(SED) -e 's@#.*@@' > $@.exported-symbols
 	$(COMMAND_ECHO)-$(GREP) "\*\|?" $@ > $@.symbols-regexp
@@ -671,7 +698,7 @@ $(DEF3TARGETN) .PHONY :
 .ELSE
 .IF "$(SHL3USE_EXPORTS)"==""
 	@-$(RMHACK3) $(MISC)/$(SHL3TARGET).exp
-	@$(LIBMGR) -EXTRACT:/ /OUT:$(MISC)/$(SHL3TARGET).exp $(SLB)/$(DEFLIB3NAME).lib
+	@$(SOLARENV)/bin/extract-linker-member.sh $(SLB)/$(DEFLIB3NAME).lib $(MISC)/$(SHL3TARGET).exp
 	@$(LDUMP2) -N $(EXPORT_ALL_SWITCH) -F $(MISC)/$(SHL3TARGET).flt $(MISC)/$(SHL3TARGET).exp			   >>$@.tmpfile
 	$(COMMAND_ECHO)$(RMHACK3) $(MISC)/$(SHL3TARGET).exp
 .ELSE			# "$(SHL3USE_EXPORTS)"==""
@@ -893,6 +920,15 @@ $(DEF4EXPORTFILE) : $(SHL4OBJS) $(SHL4LIBS)
 
 $(DEF4EXPORTFILE) : $(SHL4VERSIONMAP)
 	$(COMMAND_ECHO)$(TYPE) $< | $(AWK) -f $(SOLARENV)/bin/getcsym.awk > $@
+.IF "$(COM)"!="GCC"
+# Wildcards in a version script are a GCC concept -- the GCC branch below
+# pulls them out into a .symbols-regexp and matches them against the real
+# objects.  MSVC has no equivalent, and asking link.exe to export a literal
+# "_ZTI*" fails with LNK2001, so drop those lines here.  Match "*" alone:
+# every MSVC-mangled C++ name begins with "?", so "[*?]" would drop the lot.
+	$(COMMAND_ECHO)-$(GREP) -v "[*]" $@ > $@.nowild
+	$(COMMAND_ECHO)$(RENAME) $@.nowild $@
+.ENDIF
 .IF "$(COM)"=="GCC"
 	$(COMMAND_ECHO)-$(GREP) -v "\*\|?" $@ | $(SED) -e 's@#.*@@' > $@.exported-symbols
 	$(COMMAND_ECHO)-$(GREP) "\*\|?" $@ > $@.symbols-regexp
@@ -955,7 +991,7 @@ $(DEF4TARGETN) .PHONY :
 .ELSE
 .IF "$(SHL4USE_EXPORTS)"==""
 	@-$(RMHACK4) $(MISC)/$(SHL4TARGET).exp
-	@$(LIBMGR) -EXTRACT:/ /OUT:$(MISC)/$(SHL4TARGET).exp $(SLB)/$(DEFLIB4NAME).lib
+	@$(SOLARENV)/bin/extract-linker-member.sh $(SLB)/$(DEFLIB4NAME).lib $(MISC)/$(SHL4TARGET).exp
 	@$(LDUMP2) -N $(EXPORT_ALL_SWITCH) -F $(MISC)/$(SHL4TARGET).flt $(MISC)/$(SHL4TARGET).exp			   >>$@.tmpfile
 	$(COMMAND_ECHO)$(RMHACK4) $(MISC)/$(SHL4TARGET).exp
 .ELSE			# "$(SHL4USE_EXPORTS)"==""
@@ -1177,6 +1213,15 @@ $(DEF5EXPORTFILE) : $(SHL5OBJS) $(SHL5LIBS)
 
 $(DEF5EXPORTFILE) : $(SHL5VERSIONMAP)
 	$(COMMAND_ECHO)$(TYPE) $< | $(AWK) -f $(SOLARENV)/bin/getcsym.awk > $@
+.IF "$(COM)"!="GCC"
+# Wildcards in a version script are a GCC concept -- the GCC branch below
+# pulls them out into a .symbols-regexp and matches them against the real
+# objects.  MSVC has no equivalent, and asking link.exe to export a literal
+# "_ZTI*" fails with LNK2001, so drop those lines here.  Match "*" alone:
+# every MSVC-mangled C++ name begins with "?", so "[*?]" would drop the lot.
+	$(COMMAND_ECHO)-$(GREP) -v "[*]" $@ > $@.nowild
+	$(COMMAND_ECHO)$(RENAME) $@.nowild $@
+.ENDIF
 .IF "$(COM)"=="GCC"
 	$(COMMAND_ECHO)-$(GREP) -v "\*\|?" $@ | $(SED) -e 's@#.*@@' > $@.exported-symbols
 	$(COMMAND_ECHO)-$(GREP) "\*\|?" $@ > $@.symbols-regexp
@@ -1239,7 +1284,7 @@ $(DEF5TARGETN) .PHONY :
 .ELSE
 .IF "$(SHL5USE_EXPORTS)"==""
 	@-$(RMHACK5) $(MISC)/$(SHL5TARGET).exp
-	@$(LIBMGR) -EXTRACT:/ /OUT:$(MISC)/$(SHL5TARGET).exp $(SLB)/$(DEFLIB5NAME).lib
+	@$(SOLARENV)/bin/extract-linker-member.sh $(SLB)/$(DEFLIB5NAME).lib $(MISC)/$(SHL5TARGET).exp
 	@$(LDUMP2) -N $(EXPORT_ALL_SWITCH) -F $(MISC)/$(SHL5TARGET).flt $(MISC)/$(SHL5TARGET).exp			   >>$@.tmpfile
 	$(COMMAND_ECHO)$(RMHACK5) $(MISC)/$(SHL5TARGET).exp
 .ELSE			# "$(SHL5USE_EXPORTS)"==""
@@ -1461,6 +1506,15 @@ $(DEF6EXPORTFILE) : $(SHL6OBJS) $(SHL6LIBS)
 
 $(DEF6EXPORTFILE) : $(SHL6VERSIONMAP)
 	$(COMMAND_ECHO)$(TYPE) $< | $(AWK) -f $(SOLARENV)/bin/getcsym.awk > $@
+.IF "$(COM)"!="GCC"
+# Wildcards in a version script are a GCC concept -- the GCC branch below
+# pulls them out into a .symbols-regexp and matches them against the real
+# objects.  MSVC has no equivalent, and asking link.exe to export a literal
+# "_ZTI*" fails with LNK2001, so drop those lines here.  Match "*" alone:
+# every MSVC-mangled C++ name begins with "?", so "[*?]" would drop the lot.
+	$(COMMAND_ECHO)-$(GREP) -v "[*]" $@ > $@.nowild
+	$(COMMAND_ECHO)$(RENAME) $@.nowild $@
+.ENDIF
 .IF "$(COM)"=="GCC"
 	$(COMMAND_ECHO)-$(GREP) -v "\*\|?" $@ | $(SED) -e 's@#.*@@' > $@.exported-symbols
 	$(COMMAND_ECHO)-$(GREP) "\*\|?" $@ > $@.symbols-regexp
@@ -1523,7 +1577,7 @@ $(DEF6TARGETN) .PHONY :
 .ELSE
 .IF "$(SHL6USE_EXPORTS)"==""
 	@-$(RMHACK6) $(MISC)/$(SHL6TARGET).exp
-	@$(LIBMGR) -EXTRACT:/ /OUT:$(MISC)/$(SHL6TARGET).exp $(SLB)/$(DEFLIB6NAME).lib
+	@$(SOLARENV)/bin/extract-linker-member.sh $(SLB)/$(DEFLIB6NAME).lib $(MISC)/$(SHL6TARGET).exp
 	@$(LDUMP2) -N $(EXPORT_ALL_SWITCH) -F $(MISC)/$(SHL6TARGET).flt $(MISC)/$(SHL6TARGET).exp			   >>$@.tmpfile
 	$(COMMAND_ECHO)$(RMHACK6) $(MISC)/$(SHL6TARGET).exp
 .ELSE			# "$(SHL6USE_EXPORTS)"==""
@@ -1745,6 +1799,15 @@ $(DEF7EXPORTFILE) : $(SHL7OBJS) $(SHL7LIBS)
 
 $(DEF7EXPORTFILE) : $(SHL7VERSIONMAP)
 	$(COMMAND_ECHO)$(TYPE) $< | $(AWK) -f $(SOLARENV)/bin/getcsym.awk > $@
+.IF "$(COM)"!="GCC"
+# Wildcards in a version script are a GCC concept -- the GCC branch below
+# pulls them out into a .symbols-regexp and matches them against the real
+# objects.  MSVC has no equivalent, and asking link.exe to export a literal
+# "_ZTI*" fails with LNK2001, so drop those lines here.  Match "*" alone:
+# every MSVC-mangled C++ name begins with "?", so "[*?]" would drop the lot.
+	$(COMMAND_ECHO)-$(GREP) -v "[*]" $@ > $@.nowild
+	$(COMMAND_ECHO)$(RENAME) $@.nowild $@
+.ENDIF
 .IF "$(COM)"=="GCC"
 	$(COMMAND_ECHO)-$(GREP) -v "\*\|?" $@ | $(SED) -e 's@#.*@@' > $@.exported-symbols
 	$(COMMAND_ECHO)-$(GREP) "\*\|?" $@ > $@.symbols-regexp
@@ -1807,7 +1870,7 @@ $(DEF7TARGETN) .PHONY :
 .ELSE
 .IF "$(SHL7USE_EXPORTS)"==""
 	@-$(RMHACK7) $(MISC)/$(SHL7TARGET).exp
-	@$(LIBMGR) -EXTRACT:/ /OUT:$(MISC)/$(SHL7TARGET).exp $(SLB)/$(DEFLIB7NAME).lib
+	@$(SOLARENV)/bin/extract-linker-member.sh $(SLB)/$(DEFLIB7NAME).lib $(MISC)/$(SHL7TARGET).exp
 	@$(LDUMP2) -N $(EXPORT_ALL_SWITCH) -F $(MISC)/$(SHL7TARGET).flt $(MISC)/$(SHL7TARGET).exp			   >>$@.tmpfile
 	$(COMMAND_ECHO)$(RMHACK7) $(MISC)/$(SHL7TARGET).exp
 .ELSE			# "$(SHL7USE_EXPORTS)"==""
@@ -2029,6 +2092,15 @@ $(DEF8EXPORTFILE) : $(SHL8OBJS) $(SHL8LIBS)
 
 $(DEF8EXPORTFILE) : $(SHL8VERSIONMAP)
 	$(COMMAND_ECHO)$(TYPE) $< | $(AWK) -f $(SOLARENV)/bin/getcsym.awk > $@
+.IF "$(COM)"!="GCC"
+# Wildcards in a version script are a GCC concept -- the GCC branch below
+# pulls them out into a .symbols-regexp and matches them against the real
+# objects.  MSVC has no equivalent, and asking link.exe to export a literal
+# "_ZTI*" fails with LNK2001, so drop those lines here.  Match "*" alone:
+# every MSVC-mangled C++ name begins with "?", so "[*?]" would drop the lot.
+	$(COMMAND_ECHO)-$(GREP) -v "[*]" $@ > $@.nowild
+	$(COMMAND_ECHO)$(RENAME) $@.nowild $@
+.ENDIF
 .IF "$(COM)"=="GCC"
 	$(COMMAND_ECHO)-$(GREP) -v "\*\|?" $@ | $(SED) -e 's@#.*@@' > $@.exported-symbols
 	$(COMMAND_ECHO)-$(GREP) "\*\|?" $@ > $@.symbols-regexp
@@ -2091,7 +2163,7 @@ $(DEF8TARGETN) .PHONY :
 .ELSE
 .IF "$(SHL8USE_EXPORTS)"==""
 	@-$(RMHACK8) $(MISC)/$(SHL8TARGET).exp
-	@$(LIBMGR) -EXTRACT:/ /OUT:$(MISC)/$(SHL8TARGET).exp $(SLB)/$(DEFLIB8NAME).lib
+	@$(SOLARENV)/bin/extract-linker-member.sh $(SLB)/$(DEFLIB8NAME).lib $(MISC)/$(SHL8TARGET).exp
 	@$(LDUMP2) -N $(EXPORT_ALL_SWITCH) -F $(MISC)/$(SHL8TARGET).flt $(MISC)/$(SHL8TARGET).exp			   >>$@.tmpfile
 	$(COMMAND_ECHO)$(RMHACK8) $(MISC)/$(SHL8TARGET).exp
 .ELSE			# "$(SHL8USE_EXPORTS)"==""
@@ -2313,6 +2385,15 @@ $(DEF9EXPORTFILE) : $(SHL9OBJS) $(SHL9LIBS)
 
 $(DEF9EXPORTFILE) : $(SHL9VERSIONMAP)
 	$(COMMAND_ECHO)$(TYPE) $< | $(AWK) -f $(SOLARENV)/bin/getcsym.awk > $@
+.IF "$(COM)"!="GCC"
+# Wildcards in a version script are a GCC concept -- the GCC branch below
+# pulls them out into a .symbols-regexp and matches them against the real
+# objects.  MSVC has no equivalent, and asking link.exe to export a literal
+# "_ZTI*" fails with LNK2001, so drop those lines here.  Match "*" alone:
+# every MSVC-mangled C++ name begins with "?", so "[*?]" would drop the lot.
+	$(COMMAND_ECHO)-$(GREP) -v "[*]" $@ > $@.nowild
+	$(COMMAND_ECHO)$(RENAME) $@.nowild $@
+.ENDIF
 .IF "$(COM)"=="GCC"
 	$(COMMAND_ECHO)-$(GREP) -v "\*\|?" $@ | $(SED) -e 's@#.*@@' > $@.exported-symbols
 	$(COMMAND_ECHO)-$(GREP) "\*\|?" $@ > $@.symbols-regexp
@@ -2375,7 +2456,7 @@ $(DEF9TARGETN) .PHONY :
 .ELSE
 .IF "$(SHL9USE_EXPORTS)"==""
 	@-$(RMHACK9) $(MISC)/$(SHL9TARGET).exp
-	@$(LIBMGR) -EXTRACT:/ /OUT:$(MISC)/$(SHL9TARGET).exp $(SLB)/$(DEFLIB9NAME).lib
+	@$(SOLARENV)/bin/extract-linker-member.sh $(SLB)/$(DEFLIB9NAME).lib $(MISC)/$(SHL9TARGET).exp
 	@$(LDUMP2) -N $(EXPORT_ALL_SWITCH) -F $(MISC)/$(SHL9TARGET).flt $(MISC)/$(SHL9TARGET).exp			   >>$@.tmpfile
 	$(COMMAND_ECHO)$(RMHACK9) $(MISC)/$(SHL9TARGET).exp
 .ELSE			# "$(SHL9USE_EXPORTS)"==""
@@ -2597,6 +2678,15 @@ $(DEF10EXPORTFILE) : $(SHL10OBJS) $(SHL10LIBS)
 
 $(DEF10EXPORTFILE) : $(SHL10VERSIONMAP)
 	$(COMMAND_ECHO)$(TYPE) $< | $(AWK) -f $(SOLARENV)/bin/getcsym.awk > $@
+.IF "$(COM)"!="GCC"
+# Wildcards in a version script are a GCC concept -- the GCC branch below
+# pulls them out into a .symbols-regexp and matches them against the real
+# objects.  MSVC has no equivalent, and asking link.exe to export a literal
+# "_ZTI*" fails with LNK2001, so drop those lines here.  Match "*" alone:
+# every MSVC-mangled C++ name begins with "?", so "[*?]" would drop the lot.
+	$(COMMAND_ECHO)-$(GREP) -v "[*]" $@ > $@.nowild
+	$(COMMAND_ECHO)$(RENAME) $@.nowild $@
+.ENDIF
 .IF "$(COM)"=="GCC"
 	$(COMMAND_ECHO)-$(GREP) -v "\*\|?" $@ | $(SED) -e 's@#.*@@' > $@.exported-symbols
 	$(COMMAND_ECHO)-$(GREP) "\*\|?" $@ > $@.symbols-regexp
@@ -2659,7 +2749,7 @@ $(DEF10TARGETN) .PHONY :
 .ELSE
 .IF "$(SHL10USE_EXPORTS)"==""
 	@-$(RMHACK10) $(MISC)/$(SHL10TARGET).exp
-	@$(LIBMGR) -EXTRACT:/ /OUT:$(MISC)/$(SHL10TARGET).exp $(SLB)/$(DEFLIB10NAME).lib
+	@$(SOLARENV)/bin/extract-linker-member.sh $(SLB)/$(DEFLIB10NAME).lib $(MISC)/$(SHL10TARGET).exp
 	@$(LDUMP2) -N $(EXPORT_ALL_SWITCH) -F $(MISC)/$(SHL10TARGET).flt $(MISC)/$(SHL10TARGET).exp			   >>$@.tmpfile
 	$(COMMAND_ECHO)$(RMHACK10) $(MISC)/$(SHL10TARGET).exp
 .ELSE			# "$(SHL10USE_EXPORTS)"==""

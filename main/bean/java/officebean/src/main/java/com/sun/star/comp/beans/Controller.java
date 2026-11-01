@@ -41,7 +41,7 @@ public class Controller
 	{
 		super( xController );
 		this.xController = xController;
-		xDispatchProvider = (com.sun.star.frame.XDispatchProvider)
+		xDispatchProvider =
 			UnoRuntime.queryInterface( com.sun.star.frame.XDispatchProvider.class,
 				xController );
 	}

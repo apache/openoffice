@@ -107,7 +107,7 @@ public class SwXTextFrameText extends TestCase {
 
         try {
             oFrame1 = SOF.createTextFrame(xTextDoc, 500, 500);
-            oPropSet = (XPropertySet)UnoRuntime.queryInterface
+            oPropSet = UnoRuntime.queryInterface
                 (XPropertySet.class, oFrame1 );
             //AnchorTypes: 0 = paragraph, 1 = as char, 2 = page,
             // 3 = frame/paragraph 4= at char
@@ -123,7 +123,7 @@ public class SwXTextFrameText extends TestCase {
             throw new StatusException("Couldn't insert TextFrame ", Ex);
         }
 
-        XText oFText = (XText)UnoRuntime.queryInterface(XText.class, oFrame1);
+        XText oFText = UnoRuntime.queryInterface(XText.class, oFrame1);
         XTextCursor oFCursor = oFText.createTextCursor();
         oFText.insertString(oFCursor, "SwXTextFrameText", false);
 

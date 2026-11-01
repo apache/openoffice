@@ -138,7 +138,7 @@ public class ODatabaseSource extends TestCase {
             throw new StatusException("Service not available", e) ;
         }
 
-        xDBContextNameServ = (XNamingService)
+        xDBContextNameServ =
             UnoRuntime.queryInterface(XNamingService.class, oInterface) ;
 
         // retrieving temp directory for database
@@ -153,7 +153,7 @@ public class ODatabaseSource extends TestCase {
             if (oDatabaseDoc == null)
 				throw new StatusException("Could not get service 'com.sun.star.sdb.OfficeDatabaseDocument'", new Exception());
 
-            xDBDoc = (XOfficeDatabaseDocument) UnoRuntime.queryInterface(
+            xDBDoc = UnoRuntime.queryInterface(
                                                 XOfficeDatabaseDocument.class,
                                                 oDatabaseDoc);
         }
@@ -168,7 +168,7 @@ public class ODatabaseSource extends TestCase {
 
         // Creating new dBASE data source in the TEMP directory
 
-        XPropertySet xSrcProp = (XPropertySet)
+        XPropertySet xSrcProp =
             UnoRuntime.queryInterface(XPropertySet.class, oObj);
 
         try{
@@ -193,7 +193,7 @@ public class ODatabaseSource extends TestCase {
         }
 
         // registering source in DatabaseContext
-        XStorable store = (XStorable) UnoRuntime.queryInterface(XStorable.class, xDBDoc);
+        XStorable store = UnoRuntime.queryInterface(XStorable.class, xDBDoc);
         String aFile = utils.getOfficeTemp ((XMultiServiceFactory) Param.getMSF ())+"DataSource.odb";
         try{
             store.storeAsURL(aFile,new PropertyValue[]{});

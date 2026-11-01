@@ -46,7 +46,7 @@ public class EditableTextView
         XAccessibleContext xContext)
     {
         XAccessibleEditableText xEditableText =
-            (XAccessibleEditableText)UnoRuntime.queryInterface(
+            UnoRuntime.queryInterface(
                 XAccessibleEditableText.class, xContext);
         if (xEditableText != null)
             return new EditableTextView (aContainer);
@@ -82,7 +82,7 @@ public class EditableTextView
     */
     public void SetObject (XAccessibleContext xObject)
     {
-        mxEditableText = (XAccessibleEditableText)UnoRuntime.queryInterface(
+        mxEditableText = UnoRuntime.queryInterface(
             XAccessibleEditableText.class, xObject);
         super.SetObject (xObject);
     }

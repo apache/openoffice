@@ -43,7 +43,7 @@ class Xtxex(AbstractL10nTool):
             line = sdfdata[sdfline.get_id()].text.replace("\\n", '\n')
             self.make_dirs(outputfilename)
             try:
-                f = open(outputfilename, "w+")
+                f = open(outputfilename, "w+", encoding="utf-8")
                 f.write(line)
             except IOError:
                 print("ERROR: Can not write file " + outputfilename)
@@ -59,7 +59,7 @@ class Xtxex(AbstractL10nTool):
     def extract_file(self, inputfile):
         lines = []
         try:
-            f = open(inputfile, "r")
+            f = open(inputfile, "r", encoding="utf-8")
             lines = f.readlines()
         except IOError:
             print("ERROR: Can not open file " + inputfile)

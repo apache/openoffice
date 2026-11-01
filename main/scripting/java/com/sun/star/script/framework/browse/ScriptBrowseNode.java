@@ -76,7 +76,7 @@ public class ScriptBrowseNode extends PropertySet
         try
         {
             data = (ScriptMetaData)parent.getByName( name );
-            xSFA = ( XSimpleFileAccess)
+            xSFA =
                 UnoRuntime.queryInterface( XSimpleFileAccess.class,
                     xFac.createInstanceWithContext(
                         "com.sun.star.ucb.SimpleFileAccess",

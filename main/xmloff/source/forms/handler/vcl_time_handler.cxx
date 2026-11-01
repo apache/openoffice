@@ -40,6 +40,57 @@ namespace xmloff
     using ::com::sun::star::uno::makeAny;
     using ::com::sun::star::util::DateTime;
 
+    namespace
+    {
+        // xsd:time, hh:mm:ss[.s+][Z|(+|-)hh:mm]; a time zone is accepted and ignored
+        bool lcl_convertXsdTime( const ::rtl::OUString& i_value, DateTime& o_time )
+        {
+            const ::rtl::OUString sValue( i_value.trim() );
+            const sal_Unicode* pStr = sValue.getStr();
+            const sal_Int32 nLen = sValue.getLength();
+            if ( nLen < 8 || pStr[2] != sal_Unicode(':') || pStr[5] != sal_Unicode(':') )
+                return false;
+            for ( sal_Int32 i = 0; i < 8; ++i )
+                if ( i != 2 && i != 5 && ( pStr[i] < sal_Unicode('0') || pStr[i] > sal_Unicode('9') ) )
+                    return false;
+            const sal_Int32 nHours = sValue.copy( 0, 2 ).toInt32();
+            const sal_Int32 nMins = sValue.copy( 3, 2 ).toInt32();
+            const sal_Int32 nSecs = sValue.copy( 6, 2 ).toInt32();
+            if ( nHours > 24 || nMins > 59 || nSecs > 59 )
+                return false;
+
+            sal_Int32 nPos = 8;
+            sal_Int32 nHundredths = 0;
+            if ( nPos < nLen && pStr[nPos] == sal_Unicode('.') )
+            {
+                const sal_Int32 nStart = ++nPos;
+                while ( nPos < nLen && pStr[nPos] >= sal_Unicode('0') && pStr[nPos] <= sal_Unicode('9') )
+                {
+                    if ( nPos - nStart < 2 )
+                        nHundredths = nHundredths * 10 + ( pStr[nPos] - sal_Unicode('0') );
+                    ++nPos;
+                }
+                if ( nPos == nStart )
+                    return false;
+                if ( nPos - nStart == 1 )
+                    nHundredths *= 10;
+            }
+            if ( nPos < nLen && pStr[nPos] == sal_Unicode('Z') )
+                ++nPos;
+            else if ( nLen - nPos == 6 && ( pStr[nPos] == sal_Unicode('+') || pStr[nPos] == sal_Unicode('-') )
+                && pStr[nPos + 3] == sal_Unicode(':') )
+                nPos += 6;
+            if ( nPos != nLen )
+                return false;
+
+            o_time.Hours = static_cast< sal_uInt16 >( nHours );
+            o_time.Minutes = static_cast< sal_uInt16 >( nMins );
+            o_time.Seconds = static_cast< sal_uInt16 >( nSecs );
+            o_time.HundredthSeconds = static_cast< sal_uInt16 >( nHundredths );
+            return true;
+        }
+    }
+
 	//==================================================================================================================
 	//= VCLTimeHandler
 	//==================================================================================================================
@@ -79,7 +130,7 @@ namespace xmloff
         sal_Int32 nVCLTime(0);
 
         DateTime aDateTime;
-        if ( SvXMLUnitConverter::convertTime( aDateTime, i_attributeValue ) )
+        if ( SvXMLUnitConverter::convertTime( aDateTime, i_attributeValue ) || lcl_convertXsdTime( i_attributeValue, aDateTime ) )
         {
             ::Time aVCLTime( aDateTime.Hours, aDateTime.Minutes, aDateTime.Seconds, aDateTime.HundredthSeconds );
             nVCLTime = aVCLTime.GetTime();

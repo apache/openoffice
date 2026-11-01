@@ -64,7 +64,7 @@ public class RegressionTest_i59886 implements StorageTest {
 			pArgs[1] = new Integer( ElementModes.WRITE );
 
 			Object oTempStorage = m_xStorageFactory.createInstanceWithArguments( pArgs );
-			XStorage xTempStorage = (XStorage) UnoRuntime.queryInterface( XStorage.class, oTempStorage );
+			XStorage xTempStorage = UnoRuntime.queryInterface( XStorage.class, oTempStorage );
 			if ( xTempStorage == null )
 			{
 				m_aTestHelper.Error( "Can't create temporary storage representation!" );
@@ -127,7 +127,7 @@ public class RegressionTest_i59886 implements StorageTest {
 			// ================================================
 
 			Object oStep2TempStorage = m_xStorageFactory.createInstanceWithArguments( pArgs );
-			XStorage xStep2TempStorage = (XStorage) UnoRuntime.queryInterface( XStorage.class, oStep2TempStorage );
+			XStorage xStep2TempStorage = UnoRuntime.queryInterface( XStorage.class, oStep2TempStorage );
 			if ( xStep2TempStorage == null )
 			{
 				m_aTestHelper.Error( "Can't create temporary storage representation!" );
@@ -145,7 +145,7 @@ public class RegressionTest_i59886 implements StorageTest {
 			}
 
 			// set the common storage password
-			XEncryptionProtectedSource xEncr = (XEncryptionProtectedSource) UnoRuntime.queryInterface( XEncryptionProtectedSource.class, xStep2TempStorage );
+			XEncryptionProtectedSource xEncr = UnoRuntime.queryInterface( XEncryptionProtectedSource.class, xStep2TempStorage );
 			if ( xEncr == null )
 			{
 				m_aTestHelper.Error( "The storage does not support encryption access!" );
@@ -182,7 +182,7 @@ public class RegressionTest_i59886 implements StorageTest {
 
 			// create temporary storage, it will be checked later
 			Object oTargetStorage = m_xStorageFactory.createInstance();
-			XStorage xTargetStorage = (XStorage) UnoRuntime.queryInterface( XStorage.class, oTargetStorage );
+			XStorage xTargetStorage = UnoRuntime.queryInterface( XStorage.class, oTargetStorage );
 			if ( xTargetStorage == null )
 			{
 				m_aTestHelper.Error( "Can't create temporary storage representation!" );
@@ -225,7 +225,7 @@ public class RegressionTest_i59886 implements StorageTest {
 				return false;
 
 			// set the common storage password
-			XEncryptionProtectedSource xTargetEncr = (XEncryptionProtectedSource) UnoRuntime.queryInterface( XEncryptionProtectedSource.class, xTargetStorage );
+			XEncryptionProtectedSource xTargetEncr = UnoRuntime.queryInterface( XEncryptionProtectedSource.class, xTargetStorage );
 			if ( xTargetEncr == null )
 			{
 				m_aTestHelper.Error( "The storage does not support encryption access!" );

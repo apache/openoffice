@@ -125,15 +125,15 @@ public class SwXTextPortion extends TestCase {
         }
 
         // Enumeration
-        XEnumerationAccess oEnumA = (XEnumerationAccess)
+        XEnumerationAccess oEnumA =
             UnoRuntime.queryInterface( XEnumerationAccess.class, oText );
         XEnumeration oEnum = oEnumA.createEnumeration();
 
         int n = 0;
         while ( (oEnum.hasMoreElements()) ) {
             try {
-                param = (XInterface) AnyConverter.toObject(
-                        new Type(XInterface.class),oEnum.nextElement());
+                param = AnyConverter.toObject(
+                        XInterface.class,oEnum.nextElement());
                 log.println("Element Nr.: " + n );
             } catch ( Exception e) {
                 log.println("Couldn't get Paragraph");
@@ -143,21 +143,21 @@ public class SwXTextPortion extends TestCase {
             n++;
         }
 
-        XEnumerationAccess oEnumP = (XEnumerationAccess)
+        XEnumerationAccess oEnumP =
             UnoRuntime.queryInterface( XEnumerationAccess.class, param );
         XEnumeration oEnum2 = oEnumP.createEnumeration();
         try {
-            oObj = (XInterface)AnyConverter.toObject(
-                        new Type(XInterface.class),oEnum2.nextElement());
+            oObj = AnyConverter.toObject(
+                        XInterface.class,oEnum2.nextElement());
         } catch ( Exception e) {
             log.println("Couldn't get TextPortion");
             e.printStackTrace(log);
             throw new StatusException( "Couldn't get TextPortion", e );
         }
 
-        portP = (XPropertySet)
+        portP =
                 UnoRuntime.queryInterface(XPropertySet.class, oObj);
-        paraP = (XPropertySet)
+        paraP =
                 UnoRuntime.queryInterface(XPropertySet.class, param);
 
 

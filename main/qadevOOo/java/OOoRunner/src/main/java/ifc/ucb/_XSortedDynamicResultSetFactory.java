@@ -81,7 +81,7 @@ public class _XSortedDynamicResultSetFactory extends MultiMethodTest {
                 ("com.sun.star.ucb.UniversalContentBroker",
                 new Object[] {"Local", "Office"}) ;
 
-            XContentIdentifierFactory ciFac = (XContentIdentifierFactory)
+            XContentIdentifierFactory ciFac =
                 UnoRuntime.queryInterface
                     (XContentIdentifierFactory.class,oUCB) ;
 
@@ -102,12 +102,12 @@ public class _XSortedDynamicResultSetFactory extends MultiMethodTest {
 
             XContentIdentifier CI = ciFac.createContentIdentifier(cntUrl) ;
 
-            XContentProvider cntProv = (XContentProvider)
+            XContentProvider cntProv =
                 UnoRuntime.queryInterface(XContentProvider.class, oUCB) ;
 
             XContent cnt = cntProv.queryContent(CI) ;
 
-            XCommandProcessor cmdProc = (XCommandProcessor)
+            XCommandProcessor cmdProc =
                 UnoRuntime.queryInterface(XCommandProcessor.class, cnt) ;
 
             Property prop = new Property() ;
@@ -117,8 +117,8 @@ public class _XSortedDynamicResultSetFactory extends MultiMethodTest {
                 (OpenMode.ALL, 10000, null, new Property[] {prop},
                  new NumberedSortingInfo[0])) ;
 
-            dynResSet = (XDynamicResultSet) AnyConverter.toObject(
-                new Type(XDynamicResultSet.class),cmdProc.execute(cmd, 0, null));
+            dynResSet = AnyConverter.toObject(
+                XDynamicResultSet.class,cmdProc.execute(cmd, 0, null));
         } catch (com.sun.star.uno.Exception e) {
             e.printStackTrace(log);
         }

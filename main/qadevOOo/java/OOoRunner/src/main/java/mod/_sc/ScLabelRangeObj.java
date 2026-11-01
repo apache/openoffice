@@ -79,7 +79,7 @@ public class ScLabelRangeObj extends TestCase {
     */
     protected void cleanup( TestParameters tParam, PrintWriter log ) {
         log.println( "    disposing xSheetDoc " );
-        XComponent oComp = (XComponent)
+        XComponent oComp =
             UnoRuntime.queryInterface (XComponent.class, xSheetDoc) ;
         util.DesktopTools.closeDoc(oComp);
     }
@@ -106,10 +106,10 @@ public class ScLabelRangeObj extends TestCase {
 
         try {
             log.println("Getting test object ") ;
-            XPropertySet docProps = (XPropertySet)
+            XPropertySet docProps =
                 UnoRuntime.queryInterface(XPropertySet.class, xSheetDoc);
             Object ranges = docProps.getPropertyValue("ColumnLabelRanges");
-            XLabelRanges lRanges = (XLabelRanges)
+            XLabelRanges lRanges =
                 UnoRuntime.queryInterface(XLabelRanges.class, ranges);
 
             log.println("Adding at least one element for ElementAccess interface");
@@ -117,8 +117,8 @@ public class ScLabelRangeObj extends TestCase {
             CellRangeAddress aRange1 = new CellRangeAddress((short)0, 0, 0, 0, 1);
             lRanges.addNew(aRange1, aRange2);
 
-            oObj = (XLabelRange) AnyConverter.toObject(
-                        new Type(XLabelRange.class),lRanges.getByIndex(0));
+            oObj = AnyConverter.toObject(
+                        XLabelRange.class,lRanges.getByIndex(0));
         } catch (com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace(log) ;
             throw new StatusException(

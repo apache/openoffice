@@ -354,7 +354,7 @@ public class RowSet extends TestCase
         System.out.println("testing Thread");
         try
         {
-            // final XRow _row = (XRow)UnoRuntime.queryInterface(XRow.class,_resultSet);
+            // final XRow _row = UnoRuntime.queryInterface(XRow.class,_resultSet);
             _resultSet.beforeFirst();
 
             final int numberOfThreads = 10;

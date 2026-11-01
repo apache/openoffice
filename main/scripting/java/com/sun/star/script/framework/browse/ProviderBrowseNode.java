@@ -79,7 +79,7 @@ public class ProviderBrowseNode extends PropertySet
         XMultiComponentFactory xFac = m_xCtx.getServiceManager();
         try
         {
-            xSFA = ( XSimpleFileAccess)
+            xSFA =
                 UnoRuntime.queryInterface( XSimpleFileAccess.class,
                     xFac.createInstanceWithContext(
                         "com.sun.star.ucb.SimpleFileAccess",

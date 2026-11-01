@@ -128,7 +128,7 @@ class AbstractL10nTool:
 
     def extract(self):
         try:
-            f = open(self._options.outputfile, "w+")
+            f = open(self._options.outputfile, "w+", encoding="utf-8")
             f.write(self.extract_file(self._options.inputfile))
         except IOError:
             print("ERROR: Can not write file " + self._options.outputfile)

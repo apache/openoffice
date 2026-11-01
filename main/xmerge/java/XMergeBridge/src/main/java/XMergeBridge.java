@@ -185,10 +185,10 @@ public class XMergeBridge {
 		 try{
 		     //System.out.println("\n"+pValue[i].Name+" "+pValue[i].Value);
 		     if (pValue[i].Name.compareTo("InputStream")==0){
-			xis=(com.sun.star.io.XInputStream)AnyConverter.toObject(new Type(com.sun.star.io.XInputStream.class), pValue[i].Value);
+			xis=AnyConverter.toObject(com.sun.star.io.XInputStream.class, pValue[i].Value);
 		     }
 		     if (pValue[i].Name.compareTo("FileName")==0){
-			 sFileName=(String)AnyConverter.toObject(new Type(java.lang.String.class), pValue[i].Value);
+			 sFileName=AnyConverter.toObject(java.lang.String.class, pValue[i].Value);
 		     }
 
 		 }
@@ -204,21 +204,21 @@ public class XMergeBridge {
 	    try{
 
 		Object xCfgMgrObj=xMSF.createInstance("com.sun.star.config.SpecialConfigManager");
-		 XConfigManager xCfgMgr = (XConfigManager) UnoRuntime.queryInterface(
+		 XConfigManager xCfgMgr = UnoRuntime.queryInterface(
 										    XConfigManager.class , xCfgMgrObj );
 		String PathString=xCfgMgr.substituteVariables("$(progurl)" );
 		PathString= PathString.concat("/");
 		udJarPath= PathString.concat(udJarPath);
 
 		Object xPipeObj=xMSF.createInstance("com.sun.star.io.Pipe");
-		xInStream = (XInputStream) UnoRuntime.queryInterface(
+		xInStream = UnoRuntime.queryInterface(
                         XInputStream.class , xPipeObj );
-	        xOutStream = (XOutputStream) UnoRuntime.queryInterface(
+	        xOutStream = UnoRuntime.queryInterface(
                         XOutputStream.class , xPipeObj );
 		convert (xis,xOutStream,false,udJarPath,sFileName,offMime,sdMime);
 		Object xSaxParserObj=xMSF.createInstance("com.sun.star.xml.sax.Parser");
 
-		XParser xParser = (XParser) UnoRuntime.queryInterface(
+		XParser xParser = UnoRuntime.queryInterface(
                         XParser.class , xSaxParserObj );
 		if (xParser==null){
 		    System.out.println("\nParser creation Failed");
@@ -282,21 +282,21 @@ public class XMergeBridge {
 		try{
 		    //System.out.println("\n"+pValue[i].Name+" "+pValue[i].Value);
 		    if (pValue[i].Name.compareTo("OutputStream")==0){
-			xos=(com.sun.star.io.XOutputStream)AnyConverter.toObject(new Type(com.sun.star.io.XOutputStream.class), pValue[i].Value);
+			xos=AnyConverter.toObject(com.sun.star.io.XOutputStream.class, pValue[i].Value);
 			//  System.out.println(pValue[i].Name+" "+xos);
 		    }
 		    if (pValue[i].Name.compareTo("FileName")==0){
-			sFileName=(String)AnyConverter.toObject(new Type(java.lang.String.class), pValue[i].Value);
+			sFileName=AnyConverter.toObject(java.lang.String.class, pValue[i].Value);
 			//System.out.println(pValue[i].Name+" "+sFileName);
 		    }
 		    if (pValue[i].Name.compareTo("URL")==0){
-			sURL=(String)AnyConverter.toObject(new Type(java.lang.String.class), pValue[i].Value);
+			sURL=AnyConverter.toObject(java.lang.String.class, pValue[i].Value);
 			// System.out.println("\nMediaDescriptor url "+pValue[i].Name+" "+sURL);
 
 		    }
 		    if (pValue[i].Name.compareTo("Title")==0){
 
-			title=(String)AnyConverter.toObject(new Type(java.lang.String.class), pValue[i].Value);
+			title=AnyConverter.toObject(java.lang.String.class, pValue[i].Value);
 			//System.out.println(pValue[i].Name+" "+title);
 		    }
 		}
@@ -313,7 +313,7 @@ public class XMergeBridge {
 	     try{
 
 		 Object xCfgMgrObj=xMSF.createInstance("com.sun.star.config.SpecialConfigManager");
-		 XConfigManager xCfgMgr = (XConfigManager) UnoRuntime.queryInterface(
+		 XConfigManager xCfgMgr = UnoRuntime.queryInterface(
 										    XConfigManager.class , xCfgMgrObj );
 
 		String PathString=xCfgMgr.substituteVariables("$(progurl)" );
@@ -321,9 +321,9 @@ public class XMergeBridge {
 		udJarPath= PathString.concat(udJarPath);
 
 		Object xPipeObj=xMSF.createInstance("com.sun.star.io.Pipe");
-		xInStream = (XInputStream) UnoRuntime.queryInterface(
+		xInStream = UnoRuntime.queryInterface(
                         XInputStream.class , xPipeObj );
-		xOutStream = (XOutputStream) UnoRuntime.queryInterface(
+		xOutStream = UnoRuntime.queryInterface(
                         XOutputStream.class , xPipeObj );
 	       }
 	      catch (Exception e){

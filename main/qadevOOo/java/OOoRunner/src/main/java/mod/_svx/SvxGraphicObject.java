@@ -173,23 +173,23 @@ public class SvxGraphicObject extends TestCase {
         oShape = SOF.createShape(xDrawDoc,3000,4500,15000,1000,"Ellipse");
         DrawTools.getShapes(DrawTools.getDrawPage(xDrawDoc,0)).add(oShape);
 
-        XPropertySet oShapeProps = (XPropertySet)
+        XPropertySet oShapeProps =
                             UnoRuntime.queryInterface(XPropertySet.class,oObj);
         XStyle aStyle = null;
         try {
-            aStyle = (XStyle) AnyConverter.toObject(
-                new Type(XStyle.class),oShapeProps.getPropertyValue("Style"));
+            aStyle = AnyConverter.toObject(
+                XStyle.class,oShapeProps.getPropertyValue("Style"));
         } catch (com.sun.star.lang.WrappedTargetException e) {
         } catch (com.sun.star.beans.UnknownPropertyException e) {
         } catch (com.sun.star.lang.IllegalArgumentException e) {
         }
         tEnv.addObjRelation("Style1",aStyle);
 
-        oShapeProps = (XPropertySet)
+        oShapeProps =
                             UnoRuntime.queryInterface(XPropertySet.class,oShape);
         try {
-            aStyle = (XStyle) AnyConverter.toObject(
-                new Type(XStyle.class),oShapeProps.getPropertyValue("Style"));
+            aStyle = AnyConverter.toObject(
+                XStyle.class,oShapeProps.getPropertyValue("Style"));
         } catch (com.sun.star.lang.WrappedTargetException e) {
         } catch (com.sun.star.beans.UnknownPropertyException e) {
         } catch (com.sun.star.lang.IllegalArgumentException e) {
@@ -198,14 +198,14 @@ public class SvxGraphicObject extends TestCase {
 
 
         // adding graphic as ObjRelation for GraphicObjectShape
-        oShapeProps = (XPropertySet)
+        oShapeProps =
                             UnoRuntime.queryInterface(XPropertySet.class,oObj);
         XBitmap aBitmap = null;
         try {
             oShapeProps.setPropertyValue(
                 "GraphicURL",util.utils.getFullTestURL("space-metal.jpg"));
-            aBitmap = (XBitmap) AnyConverter.toObject(
-                new Type(XBitmap.class),oShapeProps.getPropertyValue
+            aBitmap = AnyConverter.toObject(
+                XBitmap.class,oShapeProps.getPropertyValue
                     ("GraphicObjectFillBitmap"));
         } catch (com.sun.star.lang.WrappedTargetException e) {
         } catch (com.sun.star.lang.IllegalArgumentException e) {
@@ -219,8 +219,8 @@ public class SvxGraphicObject extends TestCase {
         try {
              oShapeProps.setPropertyValue(
                 "GraphicURL",util.utils.getFullTestURL("crazy-blue.jpg"));
-            aBitmap = (XBitmap) AnyConverter.toObject(
-                new Type(XBitmap.class),oShapeProps.getPropertyValue
+            aBitmap = AnyConverter.toObject(
+                XBitmap.class,oShapeProps.getPropertyValue
                     ("GraphicObjectFillBitmap"));
         } catch (com.sun.star.lang.WrappedTargetException e) {
         } catch (com.sun.star.lang.IllegalArgumentException e) {
@@ -231,7 +231,7 @@ public class SvxGraphicObject extends TestCase {
         tEnv.addObjRelation("Bitmap2",aBitmap);
 
         try {
-            XMultiServiceFactory oDocMSF = (XMultiServiceFactory)
+            XMultiServiceFactory oDocMSF =
                 UnoRuntime.queryInterface(XMultiServiceFactory.class,xDrawDoc);
             imap = oDocMSF.createInstance
                 ( "com.sun.star.image.ImageMapRectangleObject" );

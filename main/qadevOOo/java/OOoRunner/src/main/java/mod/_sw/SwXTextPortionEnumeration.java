@@ -122,15 +122,15 @@ public class SwXTextPortionEnumeration extends TestCase {
         }
 
         // Enumeration
-        XEnumerationAccess oEnumA = (XEnumerationAccess)
+        XEnumerationAccess oEnumA =
             UnoRuntime.queryInterface( XEnumerationAccess.class, oText );
         XEnumeration oEnum = oEnumA.createEnumeration();
 
         int n = 0;
         while ( (oEnum.hasMoreElements()) ) {
             try {
-                    param = (XInterface) AnyConverter.toObject(
-                        new Type(XInterface.class),oEnum.nextElement());
+                    param = AnyConverter.toObject(
+                        XInterface.class,oEnum.nextElement());
             } catch ( Exception e) {
                 log.println("Couldn't get Paragraph");
                 e.printStackTrace();
@@ -139,7 +139,7 @@ public class SwXTextPortionEnumeration extends TestCase {
              n++;
         }
 
-        XEnumerationAccess oEnumP = (XEnumerationAccess)
+        XEnumerationAccess oEnumP =
             UnoRuntime.queryInterface( XEnumerationAccess.class, param );
         XEnumeration oEnum2 = oEnumP.createEnumeration();
 

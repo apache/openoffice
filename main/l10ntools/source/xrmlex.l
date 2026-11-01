@@ -54,17 +54,17 @@
 extern int WorkOnTokenSet( int, char* );
 extern int Argument( char * );
 extern int InitXrmExport( char * , char * );
-extern int EndXrmExport();
-extern int GetError();
-extern int SetError();
+extern int EndXrmExport(void);
+extern int GetError(void);
+extern int SetError(void);
 extern char *GetOutputFile( int argc, char* argv[]);
-extern FILE *GetXrmFile();
-extern int isQuiet();
-extern void removeTempFile();
-extern char* getFilename();
+extern FILE *GetXrmFile(void);
+extern int isQuiet(void);
+extern void removeTempFile(void);
+extern char* getFilename(void);
 
 /* forwards */
-void YYWarning();
+void YYWarning(char *);
 
 int bText=0;
 %}

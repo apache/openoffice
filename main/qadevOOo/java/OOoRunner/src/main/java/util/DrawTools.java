@@ -73,7 +73,7 @@ public class DrawTools {
     public static XDrawPages getDrawPages ( XComponent aDoc ) {
         XDrawPages oDPn = null;
         try {
-            XDrawPagesSupplier oDPS = (XDrawPagesSupplier)
+            XDrawPagesSupplier oDPS =
             UnoRuntime.queryInterface(XDrawPagesSupplier.class,aDoc);
 
             oDPn = oDPS.getDrawPages();
@@ -94,8 +94,8 @@ public class DrawTools {
     public static XDrawPage getDrawPage ( XComponent aDoc, int nr ) {
         XDrawPage oDP = null;
         try {
-            oDP = (XDrawPage) AnyConverter.toObject(
-                new Type(XDrawPage.class),getDrawPages( aDoc ).getByIndex( nr ));
+            oDP = AnyConverter.toObject(
+                XDrawPage.class,getDrawPages( aDoc ).getByIndex( nr ));
         } catch ( Exception e ) {
             throw new IllegalArgumentException( "Couldn't get drawpage" );
         }
@@ -110,7 +110,7 @@ public class DrawTools {
     */
 
     public static XShapes getShapes ( XDrawPage oDP ) {
-        return (XShapes) UnoRuntime.queryInterface(XShapes.class,oDP);
+        return UnoRuntime.queryInterface(XShapes.class,oDP);
     }
 
     /**

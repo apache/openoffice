@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # *************************************************************
 #  
 #  Licensed to the Apache Software Foundation (ASF) under one
@@ -52,18 +52,18 @@ class CxxTarget:
         cxxflags_tmp = dict()
         for flag in self.cxxflags:
             cxxflags_tmp[flag.name] = flag
-        self.cxxflags = cxxflags_tmp.values()
+        self.cxxflags = list(cxxflags_tmp.values())
         includeflags_tmp = dict()
         for flag in self.includeflags:
             includeflags_tmp[flag.name] = flag
-        self.includeflags = includeflags_tmp.values()
+        self.includeflags = list(includeflags_tmp.values())
         CxxTargets.by_name[self.getFullOutputname()] = self
     def __str__(self):
         return '%s' % (self.getFullOutputname())
     def getFullOutputname(self):
         return self.directory + '/' + self.outputfile
-    def __cmp__(self, other):
-        return cmp(self.getFullOutputname(), other.getFullOutputname())
+    def __lt__(self, other):
+        return self.getFullOutputname() < other.getFullOutputname()
 
 class CxxFlag:
     def __init__(self, name):
@@ -71,8 +71,8 @@ class CxxFlag:
         CxxFlags.by_name[self.name] = self
     def __str__(self):
         return 'Flag %s' % (self.name)
-    def __cmp__(self, other):
-        return cmp(self.name, other.name)
+    def __lt__(self, other):
+        return self.name < other.name
 
 class CxxFlags:
     by_name = dict()
@@ -102,8 +102,8 @@ if __name__ == '__main__':
 
     common_compile_flags.sort()
     common_link_flags.sort()
-    print 'common compile flags: %s' % (' '.join(flag.name for flag in common_compile_flags))
-    print 'common link flags: %s' % (' '.join(flag.name for flag in common_link_flags))
+    print('common compile flags: %s' % (' '.join(flag.name for flag in common_compile_flags)))
+    print('common link flags: %s' % (' '.join(flag.name for flag in common_link_flags)))
 
     by_flagset = dict()
     for target in CxxTargets.by_name.values():
@@ -113,14 +113,13 @@ if __name__ == '__main__':
         by_flagset[flagset].append(target)
     for targetlist in by_flagset.values():
         targetlist.sort()
-    flagsets = by_flagset.keys()
-    flagsets.sort()
-    print '%d compilerflag groups:' % (len(flagsets))
+    flagsets = sorted(by_flagset.keys())
+    print('%d compilerflag groups:' % (len(flagsets)))
     for flagset in flagsets:
-        print flagset
+        print(flagset)
         for target in by_flagset[flagset]:
-            print '%s' % (target)
-        print
+            print('%s' % (target))
+        print()
 
     by_flagset = dict()
     for target in CxxTargets.by_name.values():
@@ -130,21 +129,19 @@ if __name__ == '__main__':
         by_flagset[flagset].append(target)
     for targetlist in by_flagset.values():
         targetlist.sort()
-    flagsets = by_flagset.keys()
-    flagsets.sort()
-    print '%d include flag groups:' % (len(flagsets))
+    flagsets = sorted(by_flagset.keys())
+    print('%d include flag groups:' % (len(flagsets)))
     for flagset in flagsets:
-        print flagset
+        print(flagset)
         for target in by_flagset[flagset]:
-            print '%s' % (target)
-        print
+            print('%s' % (target))
+        print()
 
-    print 'sources:'
+    print('sources:')
     by_name = dict()
     for target in CxxTargets.by_name.values():
         by_name[os.path.basename(target.outputfile)] = target
-    names = by_name.keys()
-    names.sort()
+    names = sorted(by_name.keys())
     for target in CxxTargets.by_name.values():
         if len(target.inputfiles) > 1:
             objects = [os.path.basename(object) for object in target.inputfiles]
@@ -155,4 +152,4 @@ if __name__ == '__main__':
                 else:
                     sources.append('!!!!' + object)
             sources.sort()
-            print '%s %s' % (target.getFullOutputname(), ' '.join(sources))
+            print('%s %s' % (target.getFullOutputname(), ' '.join(sources)))

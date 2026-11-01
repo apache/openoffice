@@ -566,6 +566,13 @@ namespace xmloff
 				// let the unit converter format is as string
 				m_rContext.getGlobalContext().GetMM100UnitConverter().convertNumber(aBuffer, getINT32(_rValue));
 				break;
+			case TypeClass_UNSIGNED_SHORT:
+			{
+				sal_uInt16 nValue = 0;
+				_rValue >>= nValue;
+				m_rContext.getGlobalContext().GetMM100UnitConverter().convertNumber(aBuffer, static_cast< sal_Int32 >(nValue));
+			}
+			break;
 			case TypeClass_HYPER:
 				// TODO
 				OSL_ENSURE(sal_False, "OPropertyExport::implConvertAny: missing implementation for sal_Int64!");

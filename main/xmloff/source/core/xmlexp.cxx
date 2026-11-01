@@ -108,6 +108,7 @@ using namespace ::xmloff::token;
 
 sal_Char __READONLY_DATA sXML_1_1[] = "1.1";
 sal_Char __READONLY_DATA sXML_1_2[] = "1.2";
+sal_Char __READONLY_DATA sXML_1_3[] = "1.3";
 
 const sal_Char *sOpenOfficeOrgProject ="OpenOffice.org_project";
 
@@ -380,7 +381,7 @@ void SvXMLExport::_InitCtor()
 		mpNamespaceMap->Add( GetXMLToken(XML_NP_OOOC),  GetXMLToken(XML_N_OOOC),    XML_NAMESPACE_OOOC );
 		mpNamespaceMap->Add( GetXMLToken(XML_NP_OF),    GetXMLToken(XML_N_OF),      XML_NAMESPACE_OF );
 
-		if (getDefaultVersion() > SvtSaveOptions::ODFVER_012)
+		if (SvtSaveOptions::IsODFExtended( getDefaultVersion() ))
 		{
 			mpNamespaceMap->Add(
 				GetXMLToken(XML_NP_TABLE_EXT), GetXMLToken(XML_N_TABLE_EXT), XML_NAMESPACE_TABLE_EXT);
@@ -1441,12 +1442,13 @@ sal_uInt32 SvXMLExport::exportDoc( enum ::xmloff::token::XMLTokenEnum eClass )
 
 
 	// office:version = ...
-	if( !mbExtended )
     {
         const sal_Char* pVersion = 0;
         switch( getDefaultVersion() )
         {
-        case SvtSaveOptions::ODFVER_LATEST: pVersion = sXML_1_2; break;
+        case SvtSaveOptions::ODFVER_013_EXT: pVersion = sXML_1_3; break;
+        case SvtSaveOptions::ODFVER_013: pVersion = sXML_1_3; break;
+        case SvtSaveOptions::ODFVER_012_EXT: pVersion = sXML_1_2; break;
         case SvtSaveOptions::ODFVER_012: pVersion = sXML_1_2; break;
         case SvtSaveOptions::ODFVER_011: pVersion = sXML_1_1; break;
         case SvtSaveOptions::ODFVER_010: break;

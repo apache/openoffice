@@ -76,6 +76,7 @@
 #include <rtl/logfile.hxx>
 #include <rtl/digest.h>
 #include <algorithm>
+#include <iterator>
 
 using namespace ::com::sun::star::sdbc;
 using namespace ::com::sun::star::sdbcx;

@@ -109,7 +109,7 @@ public class ServiceInterfaceView
 
     private void CreateImplementationNameTree ()
     {
-        XServiceInfo xServiceInfo = (XServiceInfo)UnoRuntime.queryInterface(
+        XServiceInfo xServiceInfo = UnoRuntime.queryInterface(
             XServiceInfo.class, mxContext);
         maImplementationNameRoot.removeAllChildren();
         if (xServiceInfo != null)
@@ -124,7 +124,7 @@ public class ServiceInterfaceView
 
     private void CreateServiceTree ()
     {
-        XServiceInfo xServiceInfo = (XServiceInfo)UnoRuntime.queryInterface(
+        XServiceInfo xServiceInfo = UnoRuntime.queryInterface(
             XServiceInfo.class, mxContext);
         maServiceRoot.removeAllChildren();
         if (xServiceInfo != null)
@@ -142,7 +142,7 @@ public class ServiceInterfaceView
 
     private void CreateInterfaceTree ()
     {
-        XTypeProvider xTypeProvider = (XTypeProvider)UnoRuntime.queryInterface(
+        XTypeProvider xTypeProvider = UnoRuntime.queryInterface(
             XTypeProvider.class, mxContext);
         maInterfaceRoot.removeAllChildren();
         if (xTypeProvider != null)

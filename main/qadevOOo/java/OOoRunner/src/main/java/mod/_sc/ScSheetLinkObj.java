@@ -94,7 +94,7 @@ public class ScSheetLinkObj extends TestCase {
     */
     protected void cleanup( TestParameters tParam, PrintWriter log ) {
         log.println( "    disposing xSheetDoc " );
-        XComponent oComp = (XComponent)
+        XComponent oComp =
             UnoRuntime.queryInterface(XComponent.class, xSheetDoc);
         util.DesktopTools.closeDoc(oComp);
     }
@@ -121,11 +121,11 @@ public class ScSheetLinkObj extends TestCase {
 
         log.println("Getting test object ") ;
         XSpreadsheets oSheets = xSheetDoc.getSheets() ;
-        XIndexAccess oIndexSheets = (XIndexAccess)
+        XIndexAccess oIndexSheets =
             UnoRuntime.queryInterface(XIndexAccess.class, oSheets);
         try {
-            oSheet = (XSpreadsheet) AnyConverter.toObject(
-                    new Type(XSpreadsheet.class),oIndexSheets.getByIndex(0));
+            oSheet = AnyConverter.toObject(
+                    XSpreadsheet.class,oIndexSheets.getByIndex(0));
         } catch (com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace(log);
             throw new StatusException("Couldn't get a spreadsheet", e);
@@ -137,7 +137,7 @@ public class ScSheetLinkObj extends TestCase {
             throw new StatusException("Couldn't get a spreadsheet", e);
         }
 
-        XSheetLinkable SL = (XSheetLinkable)
+        XSheetLinkable SL =
             UnoRuntime.queryInterface(XSheetLinkable.class, oSheet);
 
         // creating link. Doesn't matter that it refers to unexistant object.
@@ -146,7 +146,7 @@ public class ScSheetLinkObj extends TestCase {
         SL.link(sURL, "Sheet1", "", "", com.sun.star.sheet.SheetLinkMode.VALUE);
 
         // Getting links.
-        XPropertySet docProps = (XPropertySet)
+        XPropertySet docProps =
             UnoRuntime.queryInterface(XPropertySet.class, xSheetDoc);
         Object oLinks = null;
         try {
@@ -159,14 +159,14 @@ public class ScSheetLinkObj extends TestCase {
             throw new StatusException("Couldn't get SheetLinks", e);
         }
 
-        XNameAccess links = (XNameAccess)
+        XNameAccess links =
             UnoRuntime.queryInterface(XNameAccess.class, oLinks);
 
         String[] names = links.getElementNames();
 
         try {
-            oObj = (XInterface)AnyConverter.toObject(
-                        new Type(XInterface.class),links.getByName(names[0]));
+            oObj = AnyConverter.toObject(
+                        XInterface.class,links.getByName(names[0]));
         } catch(com.sun.star.lang.WrappedTargetException e){
             e.printStackTrace(log);
             throw new StatusException("Couldn't get by name", e);

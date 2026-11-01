@@ -134,7 +134,7 @@ public class _XCachedDynamicResultSetStubFactory extends MultiMethodTest {
             Object fac = ((XMultiServiceFactory)tParam.getMSF()).createInstance
                 ("com.sun.star.ucb.CachedDynamicResultSetFactory") ;
 
-            setFac = (XCachedDynamicResultSetFactory) UnoRuntime.queryInterface
+            setFac = UnoRuntime.queryInterface
                 (XCachedDynamicResultSetFactory.class, fac) ;
         } catch (com.sun.star.uno.Exception e) {
             log.println("Can't instantiate a service") ;

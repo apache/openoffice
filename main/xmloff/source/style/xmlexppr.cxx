@@ -41,6 +41,7 @@
 #include <xmloff/nmspmap.hxx>
 #include "xmloff/xmlnmspe.hxx"
 #include <xmloff/xmlexp.hxx>
+#include <xmloff/xmlcnimp.hxx>
 #include <xmloff/xmlprmap.hxx>
 #include <xmloff/PropertySetInfoHash.hxx>
 #include <comphelper/stl_types.hxx>
@@ -668,9 +669,17 @@ vector< XMLPropertyState > SvXMLExportPropertyMapper::_Filter(
                 const SvtSaveOptions::ODFDefaultVersion nCurrentVersion( SvtSaveOptions().GetODFDefaultVersion() );
                 const SvtSaveOptions::ODFDefaultVersion nEarliestODFVersionForExport(
                         maPropMapper->GetEarliestODFVersionForExport( i ) );
-                if( nCurrentVersion >= nEarliestODFVersionForExport
-                        || nCurrentVersion == SvtSaveOptions::ODFVER_UNKNOWN
-                        || nEarliestODFVersionForExport == SvtSaveOptions::ODFVER_UNKNOWN )
+                sal_Bool bExport( nCurrentVersion == SvtSaveOptions::ODFVER_UNKNOWN
+                        || nEarliestODFVersionForExport == SvtSaveOptions::ODFVER_UNKNOWN );
+                if( nEarliestODFVersionForExport == SvtSaveOptions::ODFVER_EXTENSION )
+                    bExport = bExport || SvtSaveOptions::IsODFExtended( nCurrentVersion );
+                else if( nEarliestODFVersionForExport == SvtSaveOptions::ODFVER_EXTENSION_PRE_013 )
+                    bExport = bExport || ( SvtSaveOptions::IsODFExtended( nCurrentVersion ) && nCurrentVersion < SvtSaveOptions::ODFVER_013 );
+                else if( nEarliestODFVersionForExport == SvtSaveOptions::ODFVER_013 )
+                    bExport = nCurrentVersion >= SvtSaveOptions::ODFVER_013;   // the unknown mode keeps writing what it wrote before
+                else
+                    bExport = bExport || nCurrentVersion >= nEarliestODFVersionForExport;
+                if( bExport )
                     pFilterInfo->AddProperty(rAPIName, i);
             }
 		}
@@ -994,9 +1003,14 @@ void SvXMLExportPropertyMapper::_exportXML(
 
 			OUStringBuffer sNameBuffer;
 			xml::AttributeData aData;
+			const sal_Bool bSkipODFNamespaces( SvtSaveOptions().GetODFDefaultVersion() >= SvtSaveOptions::ODFVER_012 );
+			// strict ODF 1.2: foreign attributes are invalid too
+			const sal_Bool bSkipForeign( SvtSaveOptions::IsODFStrict( SvtSaveOptions().GetODFDefaultVersion() ) );
 			for( sal_Int32 i=0; i < nCount; i++, pAttribName++ )
 			{
 				xAttrContainer->getByName( *pAttribName ) >>= aData;
+				if( bSkipForeign || ( bSkipODFNamespaces && SvXMLIsODFNamespace( aData.Namespace ) ) )
+					continue;
 				OUString sAttribName( *pAttribName );
 
 				// extract namespace prefix from attribute name if it exists

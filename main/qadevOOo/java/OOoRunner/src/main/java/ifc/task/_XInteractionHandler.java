@@ -94,7 +94,7 @@ public class _XInteractionHandler extends MultiMethodTest {
             return ;
         }
         final XComponent fTextDoc = textDoc ;
-        final XModel xModelDoc = (XModel)
+        final XModel xModelDoc =
             UnoRuntime.queryInterface(XModel.class, textDoc);
 
         Thread thr = new Thread( new Runnable() {
@@ -114,7 +114,7 @@ public class _XInteractionHandler extends MultiMethodTest {
                     Object dsk = msf.createInstance
                         ("com.sun.star.frame.Desktop");
 
-                    XFrame xDsk = (XFrame)
+                    XFrame xDsk =
                         UnoRuntime.queryInterface(XFrame.class, dsk) ;
 
                     XFrame fr = xDsk.findFrame("_top", 55) ;

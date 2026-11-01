@@ -102,7 +102,9 @@ chop( $m_str, $s_str );
 			   "IP22",          "mips",         # voyager
 			   "IP32",          "mips",         # giotto
 			   "Power Macintosh",			"ppc",			# NetBSD/arm32
-			   "arm32",			"arm32"			# NetBSD/arm32
+			   "arm32",			"arm32",		# NetBSD/arm32
+			   "arm64",			"aarch64",		# macOS Apple Silicon (uname -m)
+			   "aarch64",		"aarch64"		# Linux aarch64
 			   );
 
 %archDefTable=("sun4c",			"-DSPARC -DSUN -DSUN4",	# hawai
@@ -130,7 +132,9 @@ chop( $m_str, $s_str );
 			   "IP22",          "-DMIPS",			# voyager
 			   "IP32",          "-DMIPS",			# giotto
 			   "Power Macintosh",		"-DPPC",		# NetBSD/arm32
-			   "arm32",			"-DARM32"		# NetBSD/arm32
+			   "arm32",			"-DARM32",		# NetBSD/arm32
+			   "arm64",			"-DAARCH64",		# macOS Apple Silicon (uname -m)
+			   "aarch64",		"-DAARCH64"		# Linux aarch64
 			   );
 
 %archDosTable=("sun4c",			"s",		# hawai
@@ -158,7 +162,9 @@ chop( $m_str, $s_str );
 			   "IP22",          "m",		# voyager
 			   "IP32",          "m",		# giotto
 			   "Power Macintosh",			"p",			# NetBSD/arm32
-			   "arm32",			"a"			# NetBSD/arm32
+			   "arm32",			"a",			# NetBSD/arm32
+			   "arm64",			"r",			# macOS Apple Silicon (uname -m)
+			   "aarch64",		"r"			# Linux aarch64
 			   );
 
 $main::solarDef		= $osDefTable{ $s_str }.' '.$archDefTable{ $m_str };

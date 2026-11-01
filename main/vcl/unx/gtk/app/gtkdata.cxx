@@ -94,7 +94,67 @@ void GtkSalDisplay::deregisterFrame( SalFrame* pFrame )
 		static_cast<GtkSalFrame*>(m_pCapture)->grabPointer( FALSE );
 		m_pCapture = NULL;
 	}
+	for( std::map< XLIB_Window, GtkSalFrame* >::iterator it = m_aWindowFrameMap.begin();
+	     it != m_aWindowFrameMap.end(); )
+	{
+		if( it->second == static_cast<GtkSalFrame*>(pFrame) )
+		{
+			std::map< XLIB_Window, GtkSalFrame* >::iterator itNext = it;
+			++itNext;
+			m_aWindowFrameMap.erase( it );
+			it = itNext;
+		}
+		else
+			++it;
+	}
 	SalDisplay::deregisterFrame( pFrame );
+}
+
+/*
+ * Each live X11 window ID may be associated with at most one frame.
+ * Window IDs must be deregistered before destruction or reassignment.
+ * Duplicate registration is a lifecycle error and is not overwritten.
+ */
+void GtkSalDisplay::registerFrameWindow( XLIB_Window aWindow, GtkSalFrame* pFrame )
+{
+	if( aWindow != None && pFrame != NULL )
+	{
+		std::map< XLIB_Window, GtkSalFrame* >::iterator it =
+			m_aWindowFrameMap.find( aWindow );
+
+		if( it != m_aWindowFrameMap.end() && it->second != pFrame )
+		{
+			OSL_TRACE(
+				"GtkSalDisplay::registerFrameWindow: refusing duplicate "
+				"mapping for X window %lu",
+				static_cast<unsigned long>(aWindow) );
+			return;
+		}
+
+		m_aWindowFrameMap[ aWindow ] = pFrame;
+	}
+}
+
+void GtkSalDisplay::deregisterFrameWindow( XLIB_Window aWindow, GtkSalFrame* pFrame )
+{
+	if( aWindow == None )
+		return;
+	std::map< XLIB_Window, GtkSalFrame* >::iterator it = m_aWindowFrameMap.find( aWindow );
+	if( it != m_aWindowFrameMap.end() )
+	{
+		if( pFrame == NULL || it->second == pFrame )
+			m_aWindowFrameMap.erase( it );
+	}
+}
+
+GtkSalFrame* GtkSalDisplay::findFrameByXWindow( XLIB_Window aWindow ) const
+{
+	if( aWindow == None )
+		return NULL;
+	std::map< XLIB_Window, GtkSalFrame* >::const_iterator it = m_aWindowFrameMap.find( aWindow );
+	if( it != m_aWindowFrameMap.end() )
+		return it->second;
+	return NULL;
 }
 
 extern "C" {
@@ -157,19 +217,11 @@ GdkFilterReturn GtkSalDisplay::filterGdkEvent( GdkXEvent* sys_event,
         }
         // let's see if one of our frames wants to swallow these events
         // get the frame
-        for( std::list< SalFrame* >::const_iterator it = pDisplay->m_aFrames.begin();
-                 it != pDisplay->m_aFrames.end(); ++it )
+        GtkSalFrame* pFrame = pDisplay->findFrameByXWindow( pEvent->xany.window );
+        if( pFrame )
         {
-            GtkSalFrame* pFrame = static_cast<GtkSalFrame*>(*it);
-            if( (GdkNativeWindow)pFrame->GetSystemData()->aWindow == pEvent->xany.window ||
-                ( pFrame->getForeignParent() && pFrame->getForeignParentWindow() == pEvent->xany.window ) ||
-                ( pFrame->getForeignTopLevel() && pFrame->getForeignTopLevelWindow() == pEvent->xany.window )
-                )
-            {
-                if( ! pFrame->Dispatch( pEvent ) )
-                    aFilterReturn = GDK_FILTER_REMOVE;
-                break;
-            }
+            if( pFrame->dispatchXEvent( pEvent ) )
+                aFilterReturn = GDK_FILTER_REMOVE;
         }
         X11SalObject::Dispatch( pEvent );
     }
@@ -202,78 +254,16 @@ void GtkSalDisplay::screenSizeChanged( GdkScreen* pScreen )
 
 void GtkSalDisplay::monitorsChanged( GdkScreen* pScreen )
 {
-    /* Caution: since we support the _NET_WM_FULLSCREEN_MONITORS property now and
-       the EWMH spec says, the index used for that needs to be that of the
-       Xinerama extension, we need to ensure that the order of m_aXineramaScreens is actually intact.
 
-       gdk_screen_get_monitor_geometry however has a different sort order that has a default monitor number
-       Xinerama returns the default monitor as 0.
-       That means if we fill in the multiple monitors vector from gdk, we'll get the wrong order unless
-       the default monitor is incidentally the same (number 0).
-
-       Given that XRandR (which is what gdk_screen_get_monitor_geometry is based on) is
-       supposed to replace Xinerama, this is bound to get a problem at some time again,
-       unfortunately there does not currently seem to be a way to map the returns of xinerama to
-       that of randr. Currently getting Xinerama values again works with updated values, given
-       a new enough Xserver.
-    */
     InitXinerama();
     (void)pScreen;
-
-    #if 0
-    if( pScreen )
-    {
-        if( gdk_display_get_n_screens(m_pGdkDisplay) == 1 )
-        {
-            int nScreen = gdk_screen_get_number( pScreen );
-            if( nScreen == m_nDefaultScreen ) //To-Do, make m_aXineramaScreens a per-screen thing ?
-            {
-                gint nMonitors = gdk_screen_get_n_monitors(pScreen);
-                m_aXineramaScreens = std::vector<Rectangle>();
-                m_aXineramaScreenIndexMap = std::vector<int>(nMonitors);
-                for (gint i = 0; i < nMonitors; ++i)
-                {
-                    GdkRectangle dest;
-                    gdk_screen_get_monitor_geometry(pScreen, i, &dest);
-                    m_aXineramaScreenIndexMap[i] = addXineramaScreenUnique( dest.x, dest.y, dest.width, dest.height );
-                }
-                m_bXinerama = m_aXineramaScreens.size() > 1;
-                if( ! m_aFrames.empty() )
-                    m_aFrames.front()->CallCallback( SALEVENT_DISPLAYCHANGED, 0 );
-            }
-            else
-            {
-                DBG_ERROR( "monitors for non-default screen changed, extend-me" );
-            }
-        }
-    }
-    #endif
-}
-
-extern "C"
-{
-    typedef gint(* screen_get_primary_monitor)(GdkScreen *screen);
 }
 
 int GtkSalDisplay::GetDefaultMonitorNumber() const
 {
-    int n = 0;
-
-    // currently disabled, see remarks in monitorsChanged
-#if 0
-    GdkScreen* pScreen = gdk_display_get_screen( m_pGdkDisplay, m_nDefaultScreen );
-#if GTK_CHECK_VERSION(2,20,0)
-    n = gdk_screen_get_primary_monitor(pScreen);
-#else
-    static screen_get_primary_monitor sym_gdk_screen_get_primary_monitor =
-        (screen_get_primary_monitor)osl_getAsciiFunctionSymbol( GetSalData()->m_pPlugin, "gdk_screen_get_primary_monitor" );
-    if (sym_gdk_screen_get_primary_monitor)
-        n = sym_gdk_screen_get_primary_monitor( pScreen );
-#endif
-    if( n >= 0 && size_t(n) < m_aXineramaScreenIndexMap.size() )
-        n = m_aXineramaScreenIndexMap[n];
-#endif
-    return n;
+    // GTK's primary-monitor implementation is disabled; use the
+    // Xinerama default monitor.
+    return 0;
 }
 
 void GtkSalDisplay::initScreen( int nScreen ) const
@@ -312,13 +302,15 @@ long GtkSalDisplay::Dispatch( XEvent* pEvent )
 {
     if( GetDisplay() == pEvent->xany.display )
     {
-        // let's see if one of our frames wants to swallow these events
-        // get the child frame
-        for( std::list< SalFrame* >::const_iterator it = m_aFrames.begin();
-             it != m_aFrames.end(); ++it )
+        GtkSalFrame* pFrame = findFrameByXWindow( pEvent->xany.window );
+        if( pFrame )
         {
-            if( (GdkNativeWindow)(*it)->GetSystemData()->aWindow == pEvent->xany.window )
-                return static_cast<GtkSalFrame*>(*it)->Dispatch( pEvent );
+            /*
+             * dispatchXEvent() returns true when the frame handled the event.
+             * This method returns a GdkFilterReturn, not the legacy Dispatch()
+             * continuation boolean.
+             */
+            return pFrame->dispatchXEvent( pEvent ) ? GDK_FILTER_REMOVE : GDK_FILTER_CONTINUE;
         }
     }
 

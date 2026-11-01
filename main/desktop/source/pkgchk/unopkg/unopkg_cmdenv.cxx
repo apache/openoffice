@@ -183,7 +183,14 @@ void CommandEnvironmentImpl::printLicense(
 
 	do
 	{
-        OUString sAnswer = dp_misc::readConsole();
+        OUString sAnswer;
+        if (! dp_misc::readConsole( sAnswer ))
+        {
+            // end of input: answer "no" rather than asking forever
+            dp_misc::writeConsole(sNewLine);
+            decline = true;
+            break;
+        }
 		if (xCollator->compareString(sAnswer, sYES) == 0
 			|| xCollator->compareString(sAnswer, sY) == 0)
 		{

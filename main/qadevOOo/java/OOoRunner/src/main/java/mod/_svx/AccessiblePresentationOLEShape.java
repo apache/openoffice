@@ -58,7 +58,7 @@ public class AccessiblePresentationOLEShape extends TestCase {
         try {
             log.println( "creating a drawdoc" );
             xDrawDoc = SOF.createImpressDoc(null);
-            aModel = (XModel)
+            aModel =
                 UnoRuntime.queryInterface(XModel.class, xDrawDoc);
 
         } catch ( com.sun.star.uno.Exception e ) {
@@ -86,10 +86,10 @@ public class AccessiblePresentationOLEShape extends TestCase {
         // first we write what we are intend to do to log file
         log.println( "creating a test environment" );
 
-        XMultiServiceFactory docMSF = (XMultiServiceFactory)
+        XMultiServiceFactory docMSF =
             UnoRuntime.queryInterface(XMultiServiceFactory.class, xDrawDoc);
         try {
-            oShape = (XShape) UnoRuntime.queryInterface(XShape.class,
+            oShape = UnoRuntime.queryInterface(XShape.class,
                 docMSF.createInstance("com.sun.star.presentation.OLE2Shape"));
         } catch (com.sun.star.uno.Exception e) {
             throw new StatusException("couldn't create component", e);
@@ -98,7 +98,7 @@ public class AccessiblePresentationOLEShape extends TestCase {
 
         //DrawTools.getShapes(DrawTools.getDrawPage(xDrawDoc,0)).add(oShape);
 
-        XPropertySet oShapeProps = (XPropertySet)
+        XPropertySet oShapeProps =
                             UnoRuntime.queryInterface(XPropertySet.class,oShape);
         try {
             oShapeProps.setPropertyValue("IsEmptyPresentationObject", new Boolean(false));

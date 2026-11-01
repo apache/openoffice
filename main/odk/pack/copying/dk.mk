@@ -23,3 +23,10 @@
 SDKVERSION=@@RELEASE@@
 BUILDID=@@BUILDID@@
 SCM_REVISION=@@SCMREVISION@@
+
+# The extension platform token for the architecture this SDK was built for,
+# i.e. what description.xml's <platform value="..."/> has to say.  Baked in
+# here because nothing in the SDK environment knows the architecture:
+# settings.mk derives PROCTYPE from config.guess, which does not exist on
+# Windows.  See settings/platform.mk.
+SDK_PLATFORMID=@@PLATFORMID@@

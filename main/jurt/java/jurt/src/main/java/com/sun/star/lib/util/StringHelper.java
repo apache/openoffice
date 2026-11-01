@@ -30,7 +30,7 @@ public final class StringHelper
     private StringHelper() {} // do not instantiate
 
     public static String replace(String str, char from, String to) {
-        StringBuffer b = new StringBuffer();
+        StringBuilder b = new StringBuilder();
         for (int i = 0;;) {
             int j = str.indexOf(from, i);
             if (j == -1) {

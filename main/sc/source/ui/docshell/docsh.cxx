@@ -1960,7 +1960,7 @@ void ScDocShell::AsciiSave( SvStream& rStream, const ScImportOptions& rAsciiOpt 
                         bool bNeedQuotes = rAsciiOpt.bQuoteAllText ||
                                             ( nPos != STRING_NOTFOUND ) ||
                                             ( aString.Search( cDelim ) != STRING_NOTFOUND ) ||
-                                            ( aString.Search( sal_Unicode(_LF) ) != STRING_NOTFOUND );
+                                            ( aString.Search( sal_Unicode(SAL_LF) ) != STRING_NOTFOUND );
                         while ( nPos != STRING_NOTFOUND )
                         {
                             aString.Insert( cStrDelim, nPos );
@@ -1999,7 +1999,7 @@ void ScDocShell::AsciiSave( SvStream& rStream, const ScImportOptions& rAsciiOpt 
                             bool bNeedQuotes = rAsciiOpt.bQuoteAllText ||
                                                 ( nPos != STRING_NOTFOUND ) ||
                                                 ( aStrDec.Search( aDelimDecoded ) != STRING_NOTFOUND ) ||
-                                                ( aStrDec.Search( sal_Unicode(_LF) ) != STRING_NOTFOUND );
+                                                ( aStrDec.Search( sal_Unicode(SAL_LF) ) != STRING_NOTFOUND );
                             while ( nPos != STRING_NOTFOUND )
                             {
                                 aStrDec.Insert( aStrDelimDecoded, nPos );
@@ -2021,7 +2021,7 @@ void ScDocShell::AsciiSave( SvStream& rStream, const ScImportOptions& rAsciiOpt 
                             bool bNeedQuotes = rAsciiOpt.bQuoteAllText ||
                                                 ( nPos != STRING_NOTFOUND ) ||
                                                 ( aStrEnc.Search( aDelimEncoded ) != STRING_NOTFOUND ) ||
-                                                ( aStrEnc.Search( sal_Char(_LF) ) != STRING_NOTFOUND );
+                                                ( aStrEnc.Search( sal_Char(SAL_LF) ) != STRING_NOTFOUND );
                             while ( nPos != STRING_NOTFOUND )
                             {
                                 aStrEnc.Insert( aStrDelimEncoded, nPos );

@@ -22,7 +22,7 @@
 
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
-#include "precompiled_connectivity.hxx"
+#include "precompiled_dbtools.hxx"
 
 #include "connectivity/CommonTools.hxx"
 #include "diagnose_ex.h"
@@ -87,6 +87,7 @@
 #include "OSubComponent.hxx"
 
 #include <algorithm>
+#include <iterator>
 
 using namespace ::comphelper;
 using namespace ::com::sun::star::uno;

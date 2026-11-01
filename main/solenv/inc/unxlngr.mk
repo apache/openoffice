@@ -25,7 +25,13 @@
 
 CDEFAULTOPT=-Os
 .INCLUDE : unxlng.mk
+.IF "$(CPUNAME)" == "AARCH64"
+CDEFS+=-DAARCH64
+BUILD64=1
+CFLAGSCXX+=-fno-devirtualize
+.ELSE
 CDEFS+=-DARM32
+.ENDIF
 CFLAGS+=-fno-omit-frame-pointer
 DLLPOSTFIX=
 

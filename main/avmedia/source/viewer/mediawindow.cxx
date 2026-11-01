@@ -32,6 +32,7 @@
 #include <unotools/pathoptions.hxx>
 #include <sfx2/filedlghelper.hxx>
 #include <comphelper/processfactory.hxx>
+#include <svtools/linkpolicy.hxx>
 #include <com/sun/star/media/XManager.hpp>
 #include "com/sun/star/ui/dialogs/TemplateDescription.hpp"
 
@@ -525,6 +526,11 @@ uno::Reference< graphic::XGraphic > MediaWindow::grabFrame( const ::rtl::OUStrin
                                                             bool bAllowToCreateReplacementGraphic,
                                                             double fMediaTime )
 {
+    // createPlayer() applies the shared policy (mayLoadDocumentReference): a
+    // relative reference or a local file is grabbed without asking. This runs
+    // while a view paints, so it must not put a question to the user for the
+    // ordinary case; anything else has been put to the document already, when
+    // the media object got its URL (see SdrMediaObj).
     uno::Reference< media::XPlayer >    xPlayer( createPlayer( rURL ) );
     uno::Reference< graphic::XGraphic > xRet;
     ::std::auto_ptr< Graphic >          apGraphic;

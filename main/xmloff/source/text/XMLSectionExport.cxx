@@ -56,6 +56,8 @@
 #include <xmloff/xmlexp.hxx>
 #include <xmloff/xmltkmap.hxx>
 #include "txtflde.hxx"
+#include <svl/PasswordHelper.hxx>
+#include <unotools/saveopt.hxx>
 
 
 
@@ -433,7 +435,10 @@ void XMLSectionExport::ExportRegularSectionStart(
 	OUString sCond;
 	aAny >>= sCond;
 	enum XMLTokenEnum eDisplay = XML_TOKEN_INVALID;
-	if (sCond.getLength() > 0)
+	// strict ODF 1.2 has no form for the condition of a visible section (display="condition" means hidden)
+	const sal_Bool bStrict = SvtSaveOptions::IsODFStrict( GetExport().getDefaultVersion() );
+	const sal_Bool bIsVisible = *(sal_Bool*)xPropSet->getPropertyValue(sIsVisible).getValue();
+	if (sCond.getLength() > 0 && !( bStrict && bIsVisible ))
 	{
 		OUString sQValue =
 			GetExport().GetNamespaceMap().GetQNameByKey( XML_NAMESPACE_OOOW,
@@ -443,7 +448,7 @@ void XMLSectionExport::ExportRegularSectionStart(
 
         // #97450# store hidden-status (of conditional sections only)
         aAny = xPropSet->getPropertyValue(sIsCurrentlyVisible);
-        if (! *(sal_Bool*)aAny.getValue())
+        if (!bStrict && ! *(sal_Bool*)aAny.getValue())
         {
             GetExport().AddAttribute(XML_NAMESPACE_TEXT, XML_IS_HIDDEN,
                                      XML_TRUE);
@@ -473,6 +478,14 @@ void XMLSectionExport::ExportRegularSectionStart(
 		SvXMLUnitConverter::encodeBase64(aBuffer, aPassword);
 		GetExport().AddAttribute(XML_NAMESPACE_TEXT, XML_PROTECTION_KEY,
 								 aBuffer.makeStringAndClear());
+		// ODF 1.2 19.851; without the attribute the key is read as SHA-1
+		const OUString aDigest( SvPasswordHelper::GetDigestAlgorithmIRI( aPassword ) );
+		if (aDigest.getLength() &&
+			GetExport().getDefaultVersion() >= SvtSaveOptions::ODFVER_012)
+		{
+			GetExport().AddAttribute(XML_NAMESPACE_TEXT,
+									 XML_PROTECTION_KEY_DIGEST_ALGORITHM, aDigest);
+		}
 	}
 
 	// export element
@@ -495,6 +508,7 @@ void XMLSectionExport::ExportRegularSectionStart(
 	{
 		if (aFileLink.FileURL.getLength() > 0)
 		{
+			GetExport().AddAttribute(XML_NAMESPACE_XLINK, XML_TYPE, XML_SIMPLE);
 			GetExport().AddAttribute(XML_NAMESPACE_XLINK, XML_HREF,
 									 GetExport().GetRelativeReference( aFileLink.FileURL) );
 		}
@@ -1378,10 +1392,17 @@ void XMLSectionExport::ExportIndexTemplateElement(
 			eElement = XML_INDEX_ENTRY_CHAPTER;
 			break;
 		case TOK_TTYPE_HYPERLINK_START:
-			eElement = XML_INDEX_ENTRY_LINK_START;
+			// strict ODF 1.2 allows the link tokens in table-of-content templates only, ODF 1.3 also in the table, illustration, object and user index templates
+			if ( !SvtSaveOptions::IsODFStrict( aODFVersion ) || TEXT_SECTION_TYPE_TOC == eType
+				|| ( aODFVersion >= SvtSaveOptions::ODFVER_013 && ( TEXT_SECTION_TYPE_TABLE == eType
+					|| TEXT_SECTION_TYPE_ILLUSTRATION == eType || TEXT_SECTION_TYPE_OBJECT == eType || TEXT_SECTION_TYPE_USER == eType ) ) )
+				eElement = XML_INDEX_ENTRY_LINK_START;
 			break;
 		case TOK_TTYPE_HYPERLINK_END:
-			eElement = XML_INDEX_ENTRY_LINK_END;
+			if ( !SvtSaveOptions::IsODFStrict( aODFVersion ) || TEXT_SECTION_TYPE_TOC == eType
+				|| ( aODFVersion >= SvtSaveOptions::ODFVER_013 && ( TEXT_SECTION_TYPE_TABLE == eType
+					|| TEXT_SECTION_TYPE_ILLUSTRATION == eType || TEXT_SECTION_TYPE_OBJECT == eType || TEXT_SECTION_TYPE_USER == eType ) ) )
+				eElement = XML_INDEX_ENTRY_LINK_END;
 			break;
 		case TOK_TTYPE_BIBLIOGRAPHY:
 			if (bBibliographyDataOK)
@@ -1501,7 +1522,7 @@ void XMLSectionExport::ExportIndexTemplateElement(
 			}
 
             // #i21237#
-            if (bWithTabStopOK && ! bWithTabStop)
+            if (bWithTabStopOK && ! bWithTabStop && !SvtSaveOptions::IsODFStrict( aODFVersion ))
             {
                	GetExport().AddAttribute(XML_NAMESPACE_STYLE,
 										 XML_WITH_TAB,
@@ -1915,7 +1936,7 @@ void XMLSectionExport::ExportMasterDocHeadingDummies()
 
 			OUStringBuffer sTmp;
 			sTmp.append( nLevel + 1 );
-			GetExport().AddAttribute( XML_NAMESPACE_TEXT, XML_LEVEL,
+			GetExport().AddAttribute( XML_NAMESPACE_TEXT, XML_OUTLINE_LEVEL,
 								  	  sTmp.makeStringAndClear() );
 			SvXMLElementExport aElem( GetExport(), XML_NAMESPACE_TEXT, XML_H,
 								  	  sal_True, sal_False );

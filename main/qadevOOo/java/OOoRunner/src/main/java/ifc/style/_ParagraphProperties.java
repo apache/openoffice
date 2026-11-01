@@ -366,8 +366,8 @@ public class _ParagraphProperties extends MultiPropertyTest {
         XIndexReplace NumberingRules = null;
         PropertyValue[] propertyValues = null;
         try {
-            NumberingRules = (XIndexReplace) AnyConverter.toObject(
-                           new Type(XIndexReplace.class), oObj.getPropertyValue("NumberingRules"));
+            NumberingRules = AnyConverter.toObject(
+                           XIndexReplace.class, oObj.getPropertyValue("NumberingRules"));
         } catch (com.sun.star.lang.IllegalArgumentException ex) {
             Status.failed( "could not get NumberingRuels: "+ ex.toString() );
             return;
@@ -402,8 +402,8 @@ public class _ParagraphProperties extends MultiPropertyTest {
 
         try {
             try{
-                uda = (XNameContainer) AnyConverter.toObject(
-                          new Type(XNameContainer.class),
+                uda = AnyConverter.toObject(
+                          XNameContainer.class,
                           oObj.getPropertyValue("ParaUserDefinedAttributes"));
             } catch (com.sun.star.lang.IllegalArgumentException e){
                 log.println("ParaUserDefinedAttributes is empty.");
@@ -417,8 +417,8 @@ public class _ParagraphProperties extends MultiPropertyTest {
 
             String[] els = uda.getElementNames();
             oObj.setPropertyValue("ParaUserDefinedAttributes", uda);
-            uda = (XNameContainer) AnyConverter.toObject(
-                          new Type(XNameContainer.class),
+            uda = AnyConverter.toObject(
+                          XNameContainer.class,
                           oObj.getPropertyValue("ParaUserDefinedAttributes"));
             els = uda.getElementNames();
 

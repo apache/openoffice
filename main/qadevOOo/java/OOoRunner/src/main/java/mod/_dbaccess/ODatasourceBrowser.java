@@ -104,7 +104,7 @@ public class ODatasourceBrowser extends TestCase {
      * Creates the Desktop service (<code>com.sun.star.frame.Desktop</code>).
      */
     protected void initialize(TestParameters Param, PrintWriter log) {
-        the_Desk = (XDesktop) UnoRuntime.queryInterface(XDesktop.class,
+        the_Desk = UnoRuntime.queryInterface(XDesktop.class,
                                                         DesktopTools.createDesktop(
                                                                 (XMultiServiceFactory)Param.getMSF()));
         System.setProperty("hideMe", "false");
@@ -122,7 +122,7 @@ public class ODatasourceBrowser extends TestCase {
             log.println("    disposing xTextDoc ");
 
             try {
-                XCloseable closer = (XCloseable) UnoRuntime.queryInterface(
+                XCloseable closer = UnoRuntime.queryInterface(
                                             XCloseable.class, xTextDoc);
                 closer.close(true);
             } catch (com.sun.star.util.CloseVetoException e) {
@@ -187,7 +187,7 @@ public class ODatasourceBrowser extends TestCase {
             log.println("    disposing xTextDoc ");
 
             try {
-                XCloseable closer = (XCloseable) UnoRuntime.queryInterface(
+                XCloseable closer = UnoRuntime.queryInterface(
                                             XCloseable.class, xTextDoc);
                 closer.close(true);
             } catch (com.sun.star.util.CloseVetoException e) {
@@ -211,7 +211,7 @@ public class ODatasourceBrowser extends TestCase {
 
         shortWait();
 
-        XModel aModel1 = (XModel) UnoRuntime.queryInterface(XModel.class,
+        XModel aModel1 = UnoRuntime.queryInterface(XModel.class,
                                                             xTextDoc);
 
         XController secondController = aModel1.getCurrentController();
@@ -222,7 +222,7 @@ public class ODatasourceBrowser extends TestCase {
             log.println("Current frame was not found !!!");
         }
 
-        XDispatchProvider aProv = (XDispatchProvider) UnoRuntime.queryInterface(
+        XDispatchProvider aProv = UnoRuntime.queryInterface(
                                           XDispatchProvider.class, the_frame1);
 
         XDispatch getting = null;
@@ -259,7 +259,7 @@ public class ODatasourceBrowser extends TestCase {
         params[2] = param3;
 
         try {
-            XInitialization xInit = (XInitialization) UnoRuntime.queryInterface(
+            XInitialization xInit = UnoRuntime.queryInterface(
                                             XInitialization.class, oObj);
             xInit.initialize(params);
         } catch (com.sun.star.uno.Exception e) {
@@ -277,7 +277,7 @@ public class ODatasourceBrowser extends TestCase {
 
         XControlModel shapeModel = aShape.getControl();
 
-        XControlAccess xCtrlAccess = (XControlAccess) UnoRuntime.queryInterface(
+        XControlAccess xCtrlAccess = UnoRuntime.queryInterface(
                                              XControlAccess.class,
                                              secondController);
         XControl xCtrl = null;
@@ -289,7 +289,7 @@ public class ODatasourceBrowser extends TestCase {
             e.printStackTrace(log);
         }
 
-        XWindow docWindow = (XWindow) UnoRuntime.queryInterface(XWindow.class,
+        XWindow docWindow = UnoRuntime.queryInterface(XWindow.class,
                                                                 xCtrl);
         log.println("creating a new environment for ODatasourceBrowser object");
 

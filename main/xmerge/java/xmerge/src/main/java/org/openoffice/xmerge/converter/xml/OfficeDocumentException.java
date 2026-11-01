@@ -40,7 +40,7 @@ import org.openoffice.xmerge.util.Resources;
 
 public final class OfficeDocumentException extends IOException {
 
-    StringBuffer message = null;
+    StringBuilder message = null;
 
 
    /**
@@ -51,7 +51,7 @@ public final class OfficeDocumentException extends IOException {
 	*/
     public OfficeDocumentException(SAXException e) {
         super(e.toString());
-        message = new StringBuffer();
+        message = new StringBuilder();
         if (e instanceof SAXParseException) {
             String msgParseError =
                 Resources.getInstance().getString("PARSE_ERROR");

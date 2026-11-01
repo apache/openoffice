@@ -21,7 +21,7 @@
 
 
 
-# mk file for $(OS)$(COM)$(CPU) == WNTMSCX
+# mk file for $(OS)$(COM)$(CPU) == WNTMSCX, every $(COMEX)
 
 SOLAR_JAVA*=TRUE
 FULL_DESK=TRUE
@@ -402,3 +402,10 @@ WININETLIB=wininet.lib
 OLDNAMESLIB=oldnames.lib
 MSIMG32LIB=msimg32.lib
 PROPSYSLIB=propsys.lib
+PSAPILIB=psapi.lib
+
+# The UCRT compiler generation reuses everything above and then overrides
+# what a modern toolset does differently.  See wntmsc14.mk.
+.IF "$(COMEX)" == "14"
+.INCLUDE : wntmsc14.mk
+.ENDIF # "$(COMEX)" == "14"

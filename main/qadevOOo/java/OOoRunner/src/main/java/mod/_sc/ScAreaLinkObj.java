@@ -92,7 +92,7 @@ public class ScAreaLinkObj extends TestCase {
     */
     protected void cleanup( TestParameters tParam, PrintWriter log ) {
         log.println( "    disposing xSheetDoc " );
-        XComponent oComp = (XComponent) UnoRuntime.queryInterface
+        XComponent oComp = UnoRuntime.queryInterface
             (XComponent.class, xSheetDoc) ;
         util.DesktopTools.closeDoc(oComp);
     }
@@ -113,16 +113,16 @@ public class ScAreaLinkObj extends TestCase {
         try {
 
             // creation of testobject here
-            XPropertySet props = (XPropertySet) UnoRuntime.queryInterface
+            XPropertySet props = UnoRuntime.queryInterface
                 (XPropertySet.class, xSheetDoc);
-            XAreaLinks links = (XAreaLinks) AnyConverter.toObject(
-                new Type(XAreaLinks.class),props.getPropertyValue("AreaLinks")) ;
+            XAreaLinks links = AnyConverter.toObject(
+                XAreaLinks.class,props.getPropertyValue("AreaLinks")) ;
             CellAddress addr = new CellAddress ((short) 1,2,3) ;
             String aSourceArea = util.utils.getFullTestURL("calcshapes.sxc");
             links.insertAtPosition (addr, aSourceArea, "a2:b5", "", "") ;
 
-            oObj = (XInterface) AnyConverter.toObject(
-                        new Type(XInterface.class), links.getByIndex(0)) ;
+            oObj = AnyConverter.toObject(
+                        XInterface.class, links.getByIndex(0)) ;
         } catch (com.sun.star.beans.UnknownPropertyException e) {
             log.println ("Exception occurred while creating test Object.") ;
             e.printStackTrace(log) ;

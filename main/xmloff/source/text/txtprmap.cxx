@@ -82,6 +82,7 @@ using namespace ::xmloff::token;
 //UUUU
 #define _MAP(name,prefix,token,type,context)  { name, sizeof(name)-1, prefix, token, type, context, SvtSaveOptions::ODFVER_010 }
 #define GMAP(name,prefix,token,type,context) _MAP(name,prefix,token,static_cast<sal_Int32>(type|XML_TYPE_PROP_GRAPHIC),context)
+#define GMAP_EXT(name,prefix,token,type,context) { name, sizeof(name)-1, prefix, token, static_cast<sal_Int32>(type|XML_TYPE_PROP_GRAPHIC), context, SvtSaveOptions::ODFVER_EXTENSION }
 
 XMLPropertyMapEntry aXMLParaPropMap[] =
 {
@@ -91,6 +92,9 @@ XMLPropertyMapEntry aXMLParaPropMap[] =
     //UUUU fill attributes for paragraph backgrounds
     // #125045# moved to the front to be able to exclude these in lcl_txtprmap_getMap
     // for TEXT_PROP_MAP_SHAPE_PARA to not have these double for Shapes (which already have these)
+// not ODF 1.2: strict export keeps only fo:background-color and style:background-image
+#undef GMAP
+#define GMAP GMAP_EXT
     GMAP( "FillStyle",						XML_NAMESPACE_DRAW,	XML_FILL,					XML_SW_TYPE_FILLSTYLE, 0 ),
     GMAP( "FillColor",						XML_NAMESPACE_DRAW, XML_FILL_COLOR, 			XML_TYPE_COLOR, 0 ),
     GMAP( "FillColor2",						XML_NAMESPACE_DRAW, XML_SECONDARY_FILL_COLOR,	XML_TYPE_COLOR, 0 ),
@@ -111,6 +115,8 @@ XMLPropertyMapEntry aXMLParaPropMap[] =
     GMAP( "FillBitmapRectanglePoint",		XML_NAMESPACE_DRAW,	XML_FILL_IMAGE_REF_POINT,	XML_SW_TYPE_BITMAP_REFPOINT, 0 ),
     GMAP( "FillBitmapOffsetX",				XML_NAMESPACE_DRAW,	XML_TILE_REPEAT_OFFSET, 	XML_SW_TYPE_BITMAPREPOFFSETX|MID_FLAG_MULTI_PROPERTY, CTF_REPEAT_OFFSET_X ),
     GMAP( "FillBitmapOffsetY",				XML_NAMESPACE_DRAW,	XML_TILE_REPEAT_OFFSET, 	XML_SW_TYPE_BITMAPREPOFFSETY|MID_FLAG_MULTI_PROPERTY, CTF_REPEAT_OFFSET_Y ),
+#undef GMAP
+#define GMAP(name,prefix,token,type,context) _MAP(name,prefix,token,static_cast<sal_Int32>(type|XML_TYPE_PROP_GRAPHIC),context)
 
     // RES_LR_SPACE
     // !!! DO NOT REORDER THE MARGINS !!!
@@ -284,8 +290,8 @@ XMLPropertyMapEntry aXMLParaPropMap[] =
 	MP_ED( "ParaTabStops",		STYLE,	TAB_STOPS,			MID_FLAG_ELEMENT_ITEM|XML_TYPE_TEXT_TABSTOP, CTF_TABSTOP ),	// this is not really a string!
 	// RES_PARATR_HYPHENZONE
 	MT_E( "ParaIsHyphenation",	FO,		HYPHENATE,			XML_TYPE_BOOL, 0 ),
-	MT_E( "ParaHyphenationMaxLeadingChars", FO, HYPHENATION_REMAIN_CHAR_COUNT, XML_TYPE_NUMBER16, 0 ),
-	MT_E( "ParaHyphenationMaxTrailingChars",FO, HYPHENATION_PUSH_CHAR_COUNT, XML_TYPE_NUMBER16, 0 ),
+	MT_E( "ParaHyphenationMaxLeadingChars", FO, HYPHENATION_REMAIN_CHAR_COUNT, XML_TYPE_NUMBER16_NO_ZERO, 0 ),
+	MT_E( "ParaHyphenationMaxTrailingChars",FO, HYPHENATION_PUSH_CHAR_COUNT, XML_TYPE_NUMBER16_NO_ZERO, 0 ),
 	MP_E( "ParaHyphenationMaxHyphens",	FO, HYPHENATION_LADDER_COUNT, XML_TYPE_NUMBER16_NONE, 0 ),
 	// RES_PARATR_DROP
 	MP_E( "DropCapWholeWord",	STYLE,	LENGTH,		MID_FLAG_SPECIAL_ITEM|XML_TYPE_BOOL, CTF_DROPCAPWHOLEWORD ),

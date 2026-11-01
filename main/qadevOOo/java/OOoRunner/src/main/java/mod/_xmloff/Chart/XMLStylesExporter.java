@@ -127,7 +127,7 @@ public class XMLStylesExporter extends TestCase {
             oObj = (XInterface) xMSF.createInstanceWithArguments(
                 "com.sun.star.comp.Chart.XMLStylesExporter",
                 new Object[] {arg});
-            XExporter xEx = (XExporter)
+            XExporter xEx =
                 UnoRuntime.queryInterface(XExporter.class,oObj);
             xEx.setSourceDocument(xChartDoc);
 

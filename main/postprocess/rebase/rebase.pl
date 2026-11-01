@@ -183,6 +183,23 @@ sub get_files
 }
 
 
+# Which rebase to run.
+#
+# "rebase" by itself is ambiguous on this platform: Cygwin ships a tool of the
+# same name with an entirely different option set, and it comes first on PATH,
+# so the build got
+#
+#     rebase: unknown option -- e
+#
+# from Cygwin's rather than a complaint from Microsoft's.  REBASE_EXE lets the
+# makefile name the one it means; unset, this behaves exactly as before.
+sub rebase_command
+{
+    my $exe = $ENV{'REBASE_EXE'};
+    return "rebase" if ( !defined($exe) || $exe eq '' );
+    return '"' . $exe . '"';
+}
+
 sub rebase_again
 # rebase using given coffbase file
 {
@@ -190,7 +207,7 @@ sub rebase_again
     my $newfiles_ref = shift;
     my @grownfiles;
     my $solarbin ="$ENV{SOLARVERSION}/$ENV{INPATH}/bin$ENV{UPDMINOREXT}";
-    my $command = "rebase " . $options_string;
+    my $command = rebase_command() . " " . $options_string;
     if ( $ENV{WRAPCMD} ) {
         $command = $ENV{WRAPCMD} . " " . $command;
     }
@@ -252,7 +269,7 @@ sub rebase_again
 sub rebase_initially
 {
     my ($files_ref, $start_address) = @_;
-    my $command = "rebase ";
+    my $command = rebase_command() . " ";
     if ( $ENV{WRAPCMD} ) {
         $command = $ENV{WRAPCMD} . " " . $command;
     }

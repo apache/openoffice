@@ -229,12 +229,12 @@ public class Settings
             }
 
             // store all connections
-            XSingleServiceFactory xConnectionFactory = ( XSingleServiceFactory ) UnoRuntime.queryInterface( XSingleServiceFactory.class, xContainer );
+            XSingleServiceFactory xConnectionFactory = UnoRuntime.queryInterface( XSingleServiceFactory.class, xContainer );
             for ( int i=0; i< m_WikiConnections.size(); i++ )
             {
                 Object oNewConnection = xConnectionFactory.createInstance();
                 Hashtable ht = ( Hashtable ) m_WikiConnections.get( i );
-                XNameReplace xNewConn = ( XNameReplace ) UnoRuntime.queryInterface( XNameReplace.class, oNewConnection );
+                XNameReplace xNewConn = UnoRuntime.queryInterface( XNameReplace.class, oNewConnection );
 
                 if ( xNewConn != null )
                     xNewConn.replaceByName( "UserName", ht.get( "Username" ) );
@@ -242,7 +242,7 @@ public class Settings
                 xContainer.insertByName( (String)ht.get( "Url" ), xNewConn );
             }
             // commit changes
-            XChangesBatch xBatch = ( XChangesBatch ) UnoRuntime.queryInterface( XChangesBatch.class, xContainer );
+            XChangesBatch xBatch = UnoRuntime.queryInterface( XChangesBatch.class, xContainer );
             xBatch.commitChanges();
 
             // remove stored connection information
@@ -253,13 +253,13 @@ public class Settings
                 xContainer2.removeByName( pNames2[i] );
             }
             // store all Docs
-            XSingleServiceFactory xDocListFactory = ( XSingleServiceFactory ) UnoRuntime.queryInterface( XSingleServiceFactory.class, xContainer2 );
+            XSingleServiceFactory xDocListFactory = UnoRuntime.queryInterface( XSingleServiceFactory.class, xContainer2 );
             for ( int i=0; i< m_aWikiDocs.size(); i++ )
             {
                 Hashtable ht = ( Hashtable ) m_aWikiDocs.get( i );
 
                 Object oNewDoc = xDocListFactory.createInstance();
-                XNameReplace xNewDoc = ( XNameReplace ) UnoRuntime.queryInterface( XNameReplace.class, oNewDoc );
+                XNameReplace xNewDoc = UnoRuntime.queryInterface( XNameReplace.class, oNewDoc );
 
                 Enumeration e = ht.keys();
                 while ( e.hasMoreElements() )
@@ -271,7 +271,7 @@ public class Settings
                 xContainer2.insertByName( "d" + i, xNewDoc );
             }
             // commit changes
-            XChangesBatch xBatch2 = ( XChangesBatch ) UnoRuntime.queryInterface( XChangesBatch.class, xContainer2 );
+            XChangesBatch xBatch2 = UnoRuntime.queryInterface( XChangesBatch.class, xContainer2 );
             xBatch2.commitChanges();
 
         }
@@ -293,7 +293,7 @@ public class Settings
             if ( xAccess != null )
             {
                 Object oList = xAccess.getByName( "ConnectionList" );
-                XNameAccess xConnectionList = ( XNameAccess ) UnoRuntime.queryInterface( XNameAccess.class, oList );
+                XNameAccess xConnectionList = UnoRuntime.queryInterface( XNameAccess.class, oList );
                 String [] allCons = xConnectionList.getElementNames();
                 for ( int i=0; i<allCons.length; i++ )
                 {
@@ -304,7 +304,7 @@ public class Settings
 
                     try
                     {
-                        XPropertySet xProps = (XPropertySet)UnoRuntime.queryInterface( XPropertySet.class, xConnectionList.getByName( allCons[i] ) );
+                        XPropertySet xProps = UnoRuntime.queryInterface( XPropertySet.class, xConnectionList.getByName( allCons[i] ) );
                         if ( xProps != null )
                         {
                             String aUsername = AnyConverter.toString( xProps.getPropertyValue( "UserName" ) );
@@ -321,12 +321,12 @@ public class Settings
                 }
 
                 Object oDocs = xAccess.getByName( "RecentDocs" );
-                XNameAccess xRecentDocs = ( XNameAccess ) UnoRuntime.queryInterface( XNameAccess.class, oDocs );
+                XNameAccess xRecentDocs = UnoRuntime.queryInterface( XNameAccess.class, oDocs );
                 String [] allDocs = xRecentDocs.getElementNames();
                 for ( int i=0; i<allDocs.length; i++ )
                 {
                     Object oDoc = xRecentDocs.getByName( allDocs[i] );
-                    XNameAccess xDoc = ( XNameAccess ) UnoRuntime.queryInterface( XNameAccess.class, oDoc );
+                    XNameAccess xDoc = UnoRuntime.queryInterface( XNameAccess.class, oDoc );
                     Hashtable ht = new Hashtable();
                     ht.put( "Url", xDoc.getByName( "Url" ) );
                     ht.put( "CompleteUrl", xDoc.getByName( "CompleteUrl" ) );

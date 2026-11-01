@@ -120,7 +120,7 @@ public class SvxUnoText extends TestCase {
                 (xDrawDoc,5000,3500,7500,5000,"Text");
             DrawTools.getShapes(DrawTools.getDrawPage(xDrawDoc,0)).add(oShape);
 
-            XSimpleText text = (XSimpleText) UnoRuntime.queryInterface
+            XSimpleText text = UnoRuntime.queryInterface
                 (XSimpleText.class, oShape) ;
 
             XTextCursor cursor = text.createTextCursor() ;
@@ -157,7 +157,7 @@ public class SvxUnoText extends TestCase {
         tEnv.addObjRelation("XTextRange", oObj);
 
         // adding relation for XTextRangeComapre
-        tEnv.addObjRelation("TEXT", (XText) UnoRuntime.queryInterface(XText.class, oShape)) ;
+        tEnv.addObjRelation("TEXT", UnoRuntime.queryInterface(XText.class, oShape)) ;
 
         return tEnv;
     } // finish method getTestEnvironment

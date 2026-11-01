@@ -83,7 +83,7 @@ public class SCUtil {
 	 */
     public static XSpreadsheetDocument getSCDocument(XComponent xSpreadsheetComponent) throws Exception {
     	XSpreadsheetDocument xSpreadsheetDocument =
-        		(XSpreadsheetDocument) UnoRuntime.queryInterface(XSpreadsheetDocument.class, xSpreadsheetComponent);
+        		UnoRuntime.queryInterface(XSpreadsheetDocument.class, xSpreadsheetComponent);
 
         return xSpreadsheetDocument;
     }
@@ -98,7 +98,7 @@ public class SCUtil {
 	public static XSpreadsheet getSCSheetByName(XSpreadsheetDocument xSpreadsheetDocument, String sheetName) throws Exception {
 		XSpreadsheets xSpreadsheets = xSpreadsheetDocument.getSheets();
 		XSpreadsheet xSpreadsheet =
-				(XSpreadsheet) UnoRuntime.queryInterface(XSpreadsheet.class, xSpreadsheets.getByName(sheetName));
+				UnoRuntime.queryInterface(XSpreadsheet.class, xSpreadsheets.getByName(sheetName));
 
 		return xSpreadsheet;
 	}
@@ -113,9 +113,9 @@ public class SCUtil {
 	public static XSpreadsheet getSCSheetByIndex(XSpreadsheetDocument xSpreadsheetDocument, short index) throws Exception {
 		XSpreadsheets xSpreadsheets = xSpreadsheetDocument.getSheets();
 		XIndexAccess xIndexAccess =
-				(XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xSpreadsheets);
+				UnoRuntime.queryInterface(XIndexAccess.class, xSpreadsheets);
 		XSpreadsheet xSpreadsheet =
-				(XSpreadsheet) UnoRuntime.queryInterface(XSpreadsheet.class, xIndexAccess.getByIndex(index));
+				UnoRuntime.queryInterface(XSpreadsheet.class, xIndexAccess.getByIndex(index));
 
 		return xSpreadsheet;
 	}
@@ -133,11 +133,11 @@ public class SCUtil {
 			XSpreadsheetDocument xSpreadsheetDocument, short index)
 			throws Exception {
 		XSpreadsheets xSpreadsheets = xSpreadsheetDocument.getSheets();
-		XIndexAccess xIndexAccess = (XIndexAccess) UnoRuntime.queryInterface(
+		XIndexAccess xIndexAccess = UnoRuntime.queryInterface(
 				XIndexAccess.class, xSpreadsheets);
-		XSpreadsheet xSpreadsheet = (XSpreadsheet) UnoRuntime.queryInterface(
+		XSpreadsheet xSpreadsheet = UnoRuntime.queryInterface(
 				XSpreadsheet.class, xIndexAccess.getByIndex(index));
-		XNamed xsheetname = (XNamed) UnoRuntime.queryInterface(XNamed.class,
+		XNamed xsheetname = UnoRuntime.queryInterface(XNamed.class,
 				xSpreadsheet);
 		return xsheetname.getName();
 	}
@@ -155,11 +155,11 @@ public class SCUtil {
 			XSpreadsheetDocument xSpreadsheetDocument, short index,
 			String sheetname) throws Exception {
 		XSpreadsheets xSpreadsheets = xSpreadsheetDocument.getSheets();
-		XIndexAccess xIndexAccess = (XIndexAccess) UnoRuntime.queryInterface(
+		XIndexAccess xIndexAccess = UnoRuntime.queryInterface(
 				XIndexAccess.class, xSpreadsheets);
-		XSpreadsheet xSpreadsheet = (XSpreadsheet) UnoRuntime.queryInterface(
+		XSpreadsheet xSpreadsheet = UnoRuntime.queryInterface(
 				XSpreadsheet.class, xIndexAccess.getByIndex(index));
-		XNamed xsheetname = (XNamed) UnoRuntime.queryInterface(XNamed.class,
+		XNamed xsheetname = UnoRuntime.queryInterface(XNamed.class,
 				xSpreadsheet);
 		xsheetname.setName(sheetname);
 	}
@@ -172,7 +172,7 @@ public class SCUtil {
 	 */
 	public static XTableRows getSCRows(XSpreadsheet xSpreadsheet) throws Exception {
 		XColumnRowRange xColumnRowRange =
-				(XColumnRowRange) UnoRuntime.queryInterface(XColumnRowRange.class, xSpreadsheet);
+				UnoRuntime.queryInterface(XColumnRowRange.class, xSpreadsheet);
 		XTableRows xTableRows = xColumnRowRange.getRows();
 
 		return xTableRows;
@@ -186,7 +186,7 @@ public class SCUtil {
 	 */
 	public static XTableColumns getSCColumns(XSpreadsheet xSpreadsheet) throws Exception {
 		XColumnRowRange xColumnRowRange =
-				(XColumnRowRange) UnoRuntime.queryInterface(XColumnRowRange.class, xSpreadsheet);
+				UnoRuntime.queryInterface(XColumnRowRange.class, xSpreadsheet);
 		XTableColumns xTableColumns = xColumnRowRange.getColumns();
 
 		return xTableColumns;
@@ -215,7 +215,7 @@ public class SCUtil {
 	 */
 	public static void setTextToCell(XSpreadsheet xSpreadsheet, int column, int row, String text) throws Exception {
 		XCell xCell = xSpreadsheet.getCellByPosition(column, row);
-		XText xText = (XText) UnoRuntime.queryInterface(XText.class, xCell);
+		XText xText = UnoRuntime.queryInterface(XText.class, xCell);
 		xText.setString(text);
 	}
 
@@ -226,7 +226,7 @@ public class SCUtil {
 	 * @throws Exception
 	 */
 	public static void setTextToCell(XCell xCell, String text) throws Exception {
-		XText xText = (XText) UnoRuntime.queryInterface(XText.class, xCell);
+		XText xText = UnoRuntime.queryInterface(XText.class, xCell);
 		xText.setString(text);
 	}
 
@@ -269,7 +269,7 @@ public class SCUtil {
 	 */
 	public static String getTextFromCell(XSpreadsheet xSpreadsheet, int column, int row) throws Exception {
 		XCell xCell = xSpreadsheet.getCellByPosition(column, row);
-		XText xText = (XText) UnoRuntime.queryInterface(XText.class, xCell);
+		XText xText = UnoRuntime.queryInterface(XText.class, xCell);
 
 		return xText.getString();
 	}
@@ -340,7 +340,7 @@ public class SCUtil {
 		for (int i = 0; i <= (end_row - start_row); i++ ) {
 			for(int j = 0; j <= (end_col - start_col); j++) {
 				xCell = xCellRange.getCellByPosition(j, i);
-				xText = (XText) UnoRuntime.queryInterface(XText.class, xCell);
+				xText = UnoRuntime.queryInterface(XText.class, xCell);
 				xText.setString(texts[i][j]);
 			}
 		}
@@ -353,7 +353,7 @@ public class SCUtil {
 		for (int i = 0; i < texts.length; i++ ) {
 			for(int j = 0; j < texts[0].length; j++) {
 				xCell = xCellRange.getCellByPosition(j, i);
-				xText = (XText) UnoRuntime.queryInterface(XText.class, xCell);
+				xText = UnoRuntime.queryInterface(XText.class, xCell);
 				xText.setString(texts[i][j]);
 			}
 		}
@@ -403,7 +403,7 @@ public class SCUtil {
 		for (int i = 0; i <= (end_row - start_row); i++ ) {
 			for (int j = 0; j <= (end_col - start_col); j++) {
 				xCell = xCellRange.getCellByPosition(j, i);
-				xText = (XText) UnoRuntime.queryInterface(XText.class, xCell);
+				xText = UnoRuntime.queryInterface(XText.class, xCell);
 				cellTexts[i][j] = xText.getString();
 			}
 		}
@@ -419,9 +419,9 @@ public class SCUtil {
 	 * @param xSpreadsheet
 	 */
 	public static void setCurrentSheet(XSpreadsheetDocument xSpreadsheetDocument, XSpreadsheet xSpreadsheet) throws Exception {
-		XModel xModel = (XModel) UnoRuntime.queryInterface(XModel.class, xSpreadsheetDocument);
+		XModel xModel = UnoRuntime.queryInterface(XModel.class, xSpreadsheetDocument);
 		XController xController = xModel.getCurrentController();
-		XSpreadsheetView xSpreadsheetView = (XSpreadsheetView) UnoRuntime.queryInterface(XSpreadsheetView.class, xController);
+		XSpreadsheetView xSpreadsheetView = UnoRuntime.queryInterface(XSpreadsheetView.class, xController);
 		xSpreadsheetView.setActiveSheet(xSpreadsheet);
 	}
 
@@ -431,9 +431,9 @@ public class SCUtil {
 	 * @return
 	 */
 	public static XSpreadsheet getCurrentSheet(XSpreadsheetDocument xSpreadsheetDocument) throws Exception {
-		XModel xModel = (XModel) UnoRuntime.queryInterface(XModel.class, xSpreadsheetDocument);
+		XModel xModel = UnoRuntime.queryInterface(XModel.class, xSpreadsheetDocument);
 		XController xController = xModel.getCurrentController();
-		XSpreadsheetView xSpreadsheetView = (XSpreadsheetView) UnoRuntime.queryInterface(XSpreadsheetView.class, xController);
+		XSpreadsheetView xSpreadsheetView = UnoRuntime.queryInterface(XSpreadsheetView.class, xController);
 		XSpreadsheet xSpreadsheet = xSpreadsheetView.getActiveSheet();
 
 		return xSpreadsheet;
@@ -448,13 +448,13 @@ public class SCUtil {
 	 */
 	public static String getSCActiveSheetName(
 			XSpreadsheetDocument xSpreadsheetDocument) throws Exception {
-		XModel xSpreadsheetModel = (XModel) UnoRuntime.queryInterface(
+		XModel xSpreadsheetModel = UnoRuntime.queryInterface(
 				XModel.class, xSpreadsheetDocument);
 		XSpreadsheetView xSpeadsheetView = (XSpreadsheetView) UnoRuntime
 				.queryInterface(XSpreadsheetView.class,
 						xSpreadsheetModel.getCurrentController());
 		XSpreadsheet activesheet = xSpeadsheetView.getActiveSheet();
-		XNamed activesheetName = (XNamed) UnoRuntime.queryInterface(
+		XNamed activesheetName = UnoRuntime.queryInterface(
 				XNamed.class, activesheet);
 		return activesheetName.getName();
 	}
@@ -468,7 +468,7 @@ public class SCUtil {
 	 */
 	public static void setProperties(Object obj, String propName, Object value) throws Exception {
 		XPropertySet xPropertySet =
-				(XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, obj);
+				UnoRuntime.queryInterface(XPropertySet.class, obj);
 		xPropertySet.setPropertyValue(propName, value);
 	}
 
@@ -481,7 +481,7 @@ public class SCUtil {
 	 */
 	public static Object getProperties(Object obj, String propName) throws Exception {
 		XPropertySet xPropertySet =
-				(XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, obj);
+				UnoRuntime.queryInterface(XPropertySet.class, obj);
 		Object value = xPropertySet.getPropertyValue(propName);
 
 		return value;
@@ -539,7 +539,7 @@ public class SCUtil {
 		storeProps[1].Value = new Boolean(true);
 
 		XStorable scStorable =
-				(XStorable) UnoRuntime.queryInterface(XStorable.class, scComponent);
+				UnoRuntime.queryInterface(XStorable.class, scComponent);
 		scStorable.storeAsURL(storeUrl, storeProps);
 	}
 
@@ -550,7 +550,7 @@ public class SCUtil {
 	 */
 	public static void save(XSpreadsheetDocument xSpreadsheetDocument)
 			throws Exception {
-		XStorable scStorable = (XStorable) UnoRuntime.queryInterface(
+		XStorable scStorable = UnoRuntime.queryInterface(
 				XStorable.class, xSpreadsheetDocument);
 		scStorable.store();
 	}
@@ -562,7 +562,7 @@ public class SCUtil {
 	 * @throws Exception
 	 */
 	public static void closeFile(XSpreadsheetDocument xSpreadsheetDocument) throws Exception {
-		XCloseable xCloseable = (XCloseable) UnoRuntime.queryInterface(XCloseable.class, xSpreadsheetDocument);
+		XCloseable xCloseable = UnoRuntime.queryInterface(XCloseable.class, xSpreadsheetDocument);
 		xCloseable.close(false);
 	}
 
@@ -578,7 +578,7 @@ public class SCUtil {
 		closeFile(xSpreadsheetDocument);
 
 		String filePath = Testspace.getPath(scTempDir + fullFileName);
-		XSpreadsheetDocument xScDocument = (XSpreadsheetDocument) UnoRuntime.queryInterface(XSpreadsheetDocument.class, unoApp.loadDocument(filePath));
+		XSpreadsheetDocument xScDocument = UnoRuntime.queryInterface(XSpreadsheetDocument.class, unoApp.loadDocument(filePath));
 
 		return xScDocument;
 	}
@@ -591,7 +591,7 @@ public class SCUtil {
 	 * @throws Exception
 	 */
 	public static XSpreadsheetDocument openFile(String filePath, UnoApp app) throws Exception {
-		return (XSpreadsheetDocument) UnoRuntime.queryInterface(XSpreadsheetDocument.class, app.loadDocument(filePath));
+		return UnoRuntime.queryInterface(XSpreadsheetDocument.class, app.loadDocument(filePath));
 	}
 
 	/**
@@ -624,7 +624,7 @@ public class SCUtil {
 	public static CellRangeAddress getChartDataRangeByName(XSpreadsheet xSpreadsheet, String rangeName) {
 		XCellRange cellRange = xSpreadsheet.getCellRangeByName(rangeName);
 		XCellRangeAddressable xCellRangeAddressable =
-			(XCellRangeAddressable) UnoRuntime.queryInterface(XCellRangeAddressable.class, cellRange);
+			UnoRuntime.queryInterface(XCellRangeAddressable.class, cellRange);
 
 		CellRangeAddress cellRangeAddress = xCellRangeAddressable.getRangeAddress();
 		return cellRangeAddress;
@@ -658,18 +658,18 @@ public class SCUtil {
 	public static XChartDocument createChart(XSpreadsheet xSpreadsheet, Rectangle rec, CellRangeAddress[] dataRangeAddress, String chartName, Boolean hasColumnLabel, Boolean hasRowLabel) throws Exception {
 		XChartDocument xChartDocument = null;
 		XTableChartsSupplier xTChartSupplier =
-				(XTableChartsSupplier) UnoRuntime.queryInterface(XTableChartsSupplier.class, xSpreadsheet);
+				UnoRuntime.queryInterface(XTableChartsSupplier.class, xSpreadsheet);
 		XTableCharts xTableCharts = xTChartSupplier.getCharts();
 		XNameAccess xNameAccess =
-				(XNameAccess) UnoRuntime.queryInterface(XNameAccess.class, xTableCharts);
+				UnoRuntime.queryInterface(XNameAccess.class, xTableCharts);
 		if (xNameAccess != null && !xNameAccess.hasByName(chartName)) {
 
 			xTableCharts.addNewByName(chartName, rec, dataRangeAddress, hasColumnLabel, hasRowLabel);
-			XTableChart xTableChart = (XTableChart) UnoRuntime.queryInterface(
+			XTableChart xTableChart = UnoRuntime.queryInterface(
 					XTableChart.class, xNameAccess.getByName(chartName));
-			XEmbeddedObjectSupplier xEmbeddedObjectSupplier = (XEmbeddedObjectSupplier) UnoRuntime.queryInterface(
+			XEmbeddedObjectSupplier xEmbeddedObjectSupplier = UnoRuntime.queryInterface(
 					XEmbeddedObjectSupplier.class, xTableChart);
-			xChartDocument = (XChartDocument) UnoRuntime.queryInterface(
+			xChartDocument = UnoRuntime.queryInterface(
 					XChartDocument.class, xEmbeddedObjectSupplier.getEmbeddedObject());
 		}
 
@@ -686,17 +686,17 @@ public class SCUtil {
 	public static XChartDocument getChartByName(XSpreadsheet xSpreadsheet, String chartName) throws Exception {
 		XChartDocument xChartDocument = null;
 		XTableChartsSupplier xTChartSupplier =
-				(XTableChartsSupplier) UnoRuntime.queryInterface(XTableChartsSupplier.class, xSpreadsheet);
+				UnoRuntime.queryInterface(XTableChartsSupplier.class, xSpreadsheet);
 		XTableCharts xTableCharts = xTChartSupplier.getCharts();
 		XNameAccess xNameAccess =
-				(XNameAccess) UnoRuntime.queryInterface(XNameAccess.class, xTableCharts);
+				UnoRuntime.queryInterface(XNameAccess.class, xTableCharts);
 
 		if (xNameAccess != null && xNameAccess.hasByName(chartName)) {
-			XTableChart xTableChart = (XTableChart) UnoRuntime.queryInterface(
+			XTableChart xTableChart = UnoRuntime.queryInterface(
 					XTableChart.class, xNameAccess.getByName(chartName));
-			XEmbeddedObjectSupplier xEmbeddedObjectSupplier = (XEmbeddedObjectSupplier) UnoRuntime.queryInterface(
+			XEmbeddedObjectSupplier xEmbeddedObjectSupplier = UnoRuntime.queryInterface(
 					XEmbeddedObjectSupplier.class, xTableChart);
-			xChartDocument = (XChartDocument) UnoRuntime.queryInterface(
+			xChartDocument = UnoRuntime.queryInterface(
 					XChartDocument.class, xEmbeddedObjectSupplier.getEmbeddedObject());
 		}
 
@@ -710,9 +710,9 @@ public class SCUtil {
 	 * @throws Exception
 	 */
 	public static void setChartType(XChartDocument xChartDocument, String chartType) throws Exception {
-		XMultiServiceFactory xMultiServiceFactory = (XMultiServiceFactory) UnoRuntime.queryInterface(
+		XMultiServiceFactory xMultiServiceFactory = UnoRuntime.queryInterface(
 			XMultiServiceFactory.class, xChartDocument);
-		XDiagram xDiagram = (XDiagram) UnoRuntime.queryInterface(
+		XDiagram xDiagram = UnoRuntime.queryInterface(
 			XDiagram.class, xMultiServiceFactory.createInstance(chartType));
 		xChartDocument.setDiagram(xDiagram);
 	}
@@ -735,7 +735,7 @@ public class SCUtil {
 	 */
 	public static String[] getChartNameList(XSpreadsheet xSpreadsheet) throws Exception {
 		XTableChartsSupplier xTChartSupplier =
-				(XTableChartsSupplier) UnoRuntime.queryInterface(XTableChartsSupplier.class, xSpreadsheet);
+				UnoRuntime.queryInterface(XTableChartsSupplier.class, xSpreadsheet);
 		XTableCharts xTableCharts = xTChartSupplier.getCharts();
 		String[] chartNames = xTableCharts.getElementNames();
 		return chartNames;

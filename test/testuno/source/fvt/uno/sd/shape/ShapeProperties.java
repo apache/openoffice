@@ -103,16 +103,16 @@ public class ShapeProperties {
 	 @Test
 	 public void testInsertShape() throws Exception {
 	 Point po = new Point(1000, 8000);
-	 xShapes = (XShapes) UnoRuntime.queryInterface(XShapes.class, xpage);
+	 xShapes = UnoRuntime.queryInterface(XShapes.class, xpage);
 	 XShape xShape = ShapeUtil.createShape(impressDocument, po, new Size(
 	 5000, 5000), "com.sun.star.drawing.EllipseShape");
 	 xShapes.add(xShape);
-	 XPropertySet xPropSet = (XPropertySet) UnoRuntime.queryInterface(
+	 XPropertySet xPropSet = UnoRuntime.queryInterface(
 	 XPropertySet.class, xShape);
 	 xPropSet.setPropertyValue("Name", "test");
 
 	 xShape=saveAndLoadShape(1,0);
-	 XPropertySet xPropSet2 = (XPropertySet) UnoRuntime.queryInterface(
+	 XPropertySet xPropSet2 = UnoRuntime.queryInterface(
 	 XPropertySet.class, xShape);
 	 assertEquals("Not the same shape","test",xPropSet2.getPropertyValue("Name"));
 	 assertEquals("Not EllopseShape","com.sun.star.drawing.EllipseShape",xShape.getShapeType());
@@ -126,7 +126,7 @@ public class ShapeProperties {
 	 @Test
 	 public void testInsertTextToShape() throws Exception {
 	 Point po = new Point(1000, 8000);
-	 xShapes = (XShapes) UnoRuntime.queryInterface(XShapes.class, xpage);
+	 xShapes = UnoRuntime.queryInterface(XShapes.class, xpage);
 	 XShape xShape = ShapeUtil.createShape(impressDocument, po, new Size(
 	 5000, 5000), "com.sun.star.drawing.EllipseShape");
 	 xShapes.add(xShape);
@@ -143,11 +143,11 @@ public class ShapeProperties {
 	 @Test
 	 public void testShapeFillGradient() throws Exception {
 	 Point po = new Point(1000, 8000);
-	 xShapes = (XShapes) UnoRuntime.queryInterface(XShapes.class, xpage);
+	 xShapes = UnoRuntime.queryInterface(XShapes.class, xpage);
 	 XShape xShape = ShapeUtil.createShape(impressDocument, po, new Size(
 	 5000, 5000), "com.sun.star.drawing.EllipseShape");
 	 xShapes.add(xShape);
-	 XPropertySet xPropSet = (XPropertySet) UnoRuntime.queryInterface(
+	 XPropertySet xPropSet = UnoRuntime.queryInterface(
 	 XPropertySet.class, xShape);
 	 xPropSet.setPropertyValue("FillStyle", FillStyle.GRADIENT);
 	 Gradient aGradient = new Gradient();
@@ -164,7 +164,7 @@ public class ShapeProperties {
 	 xPropSet.setPropertyValue("FillGradient", aGradient);
 	 // --------------------------
 	 xShape=saveAndLoadShape(1,0);
-	 xPropSet = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xShape);
+	 xPropSet = UnoRuntime.queryInterface(XPropertySet.class, xShape);
 	 // ----------------------------
 	 assertEquals("Not Gradient Fill Style",FillStyle.GRADIENT,xPropSet.getPropertyValue("FillStyle"));
 	 aGradient=(Gradient) xPropSet.getPropertyValue("FillGradient");
@@ -179,17 +179,17 @@ public class ShapeProperties {
 	 @Test
 	 public void testShapeFillColor() throws Exception {
 	 Point po = new Point(1000, 8000);
-	 xShapes = (XShapes) UnoRuntime.queryInterface(XShapes.class, xpage);
+	 xShapes = UnoRuntime.queryInterface(XShapes.class, xpage);
 	 XShape xShape = ShapeUtil.createShape(impressDocument, po, new Size(
 	 5000, 5000), "com.sun.star.drawing.EllipseShape");
 	 xShapes.add(xShape);
-	 XPropertySet xPropSet = (XPropertySet) UnoRuntime.queryInterface(
+	 XPropertySet xPropSet = UnoRuntime.queryInterface(
 	 XPropertySet.class, xShape);
 	 xPropSet.setPropertyValue("FillStyle", FillStyle.SOLID);
 	 xPropSet.setPropertyValue("FillColor", 0xffff00);
 	 // --------------------------
 	 xShape=saveAndLoadShape(1,0);
-	 xPropSet = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xShape);
+	 xPropSet = UnoRuntime.queryInterface(XPropertySet.class, xShape);
 	 // ----------------------------------------------------
 	 assertEquals("Not Color Fill Style",FillStyle.SOLID,xPropSet.getPropertyValue("FillStyle"));
 	 assertEquals("Not Yellow Color Fill",0xffff00,xPropSet.getPropertyValue("FillColor"));
@@ -202,11 +202,11 @@ public class ShapeProperties {
 	 @Test
 	 public void testShapeFillHatch() throws Exception {
 	 Point po = new Point(1000, 8000);
-	 xShapes = (XShapes) UnoRuntime.queryInterface(XShapes.class, xpage);
+	 xShapes = UnoRuntime.queryInterface(XShapes.class, xpage);
 	 XShape xShape = ShapeUtil.createShape(impressDocument, po, new Size(
 	 5000, 5000), "com.sun.star.drawing.EllipseShape");
 	 xShapes.add(xShape);
-	 XPropertySet xPropSet = (XPropertySet) UnoRuntime.queryInterface(
+	 XPropertySet xPropSet = UnoRuntime.queryInterface(
 	 XPropertySet.class, xShape);
 	 xPropSet.setPropertyValue("FillStyle", FillStyle.HATCH);
 	 Hatch aHatch=new Hatch();
@@ -218,7 +218,7 @@ public class ShapeProperties {
 
 	 // --------------------------
 	 xShape=saveAndLoadShape(1,0);
-	 xPropSet = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xShape);
+	 xPropSet = UnoRuntime.queryInterface(XPropertySet.class, xShape);
 	 // ----------------------------
 	 assertEquals("Not Gradient Fill Style",FillStyle.HATCH,xPropSet.getPropertyValue("FillStyle"));
 	 aHatch=(Hatch) xPropSet.getPropertyValue("FillHatch");
@@ -234,12 +234,12 @@ public class ShapeProperties {
 	 @Test
 	 public void testShapeLineStyle() throws Exception {
 	 Point po = new Point(1000, 8000);
-	 xShapes = (XShapes) UnoRuntime.queryInterface(XShapes.class, xpage);
+	 xShapes = UnoRuntime.queryInterface(XShapes.class, xpage);
 	 XShape xShape = ShapeUtil.createShape(impressDocument, po, new Size(
 	 5000, 5000), "com.sun.star.drawing.EllipseShape");
 	 xShapes.add(xShape);
 
-	 XPropertySet xPropSet = (XPropertySet) UnoRuntime.queryInterface(
+	 XPropertySet xPropSet = UnoRuntime.queryInterface(
 	 XPropertySet.class, xShape);
 	 xPropSet.setPropertyValue("LineStyle", LineStyle.DASH);
 
@@ -252,7 +252,7 @@ public class ShapeProperties {
 
 	 // --------------------------
 	 xShape=saveAndLoadShape(1,0);
-	 xPropSet = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xShape);
+	 xPropSet = UnoRuntime.queryInterface(XPropertySet.class, xShape);
 	 // ----------------------------
 	 assertEquals("Not Dash Line Style",LineStyle.DASH,xPropSet.getPropertyValue("LineStyle"));
 	 aLineDash=(LineDash) xPropSet.getPropertyValue("LineDash");
@@ -267,16 +267,16 @@ public class ShapeProperties {
 	 @Test
 	 public void testShapeLineColor() throws Exception {
 	 Point po = new Point(1000, 8000);
-	 xShapes = (XShapes) UnoRuntime.queryInterface(XShapes.class, xpage);
+	 xShapes = UnoRuntime.queryInterface(XShapes.class, xpage);
 	 XShape xShape = ShapeUtil.createShape(impressDocument, po, new Size(
 	 5000, 5000), "com.sun.star.drawing.EllipseShape");
 	 xShapes.add(xShape);
-	 XPropertySet xPropSet = (XPropertySet) UnoRuntime.queryInterface(
+	 XPropertySet xPropSet = UnoRuntime.queryInterface(
 	 XPropertySet.class, xShape);
 	 xPropSet.setPropertyValue("LineStyle", LineStyle.DASH);
 	 xPropSet.setPropertyValue("LineColor", 0x00ff00);
 	 xShape=saveAndLoadShape(1,0);
-	 xPropSet = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xShape);
+	 xPropSet = UnoRuntime.queryInterface(XPropertySet.class, xShape);
 	 // ----------------------------
 	 assertEquals("Not Dash Line Style",LineStyle.DASH,xPropSet.getPropertyValue("LineStyle"));
 	 assertEquals("wrong line color", 0x00ff00,xPropSet.getPropertyValue("LineColor"));
@@ -290,7 +290,7 @@ public class ShapeProperties {
 	 @Test
 	 public void testShapePositionSize() throws Exception {
 	 Point po = new Point(1000, 8000);
-	 xShapes = (XShapes) UnoRuntime.queryInterface(XShapes.class, xpage);
+	 xShapes = UnoRuntime.queryInterface(XShapes.class, xpage);
 	 XShape xShape = ShapeUtil.createShape(impressDocument, po, new Size(
 	 5000, 5000), "com.sun.star.drawing.EllipseShape");
 	 xShapes.add(xShape);
@@ -306,15 +306,15 @@ public class ShapeProperties {
 	@Test
 	public void testShapeRotation() throws Exception {
 		Point po = new Point(1000, 8000);
-		xShapes = (XShapes) UnoRuntime.queryInterface(XShapes.class, xpage);
+		xShapes = UnoRuntime.queryInterface(XShapes.class, xpage);
 		XShape xShape = ShapeUtil.createShape(impressDocument, po, new Size(
 				5000, 5000), "com.sun.star.drawing.RectangleShape");
 		xShapes.add(xShape);
-		XPropertySet xPropSet = (XPropertySet) UnoRuntime.queryInterface(
+		XPropertySet xPropSet = UnoRuntime.queryInterface(
 				XPropertySet.class, xShape);
 		xPropSet.setPropertyValue("RotateAngle", 2500);
 		xShape=saveAndLoadShape(1,0);
-		xPropSet = (XPropertySet) UnoRuntime.queryInterface(
+		xPropSet = UnoRuntime.queryInterface(
 				 XPropertySet.class, xShape);
 		assertEquals("RotateAngle is not 2500", 2500L, xPropSet.getPropertyValue("RotateAngle"));
 	}
@@ -352,9 +352,9 @@ public class ShapeProperties {
 	 * @throws Exception
 	 */
 	public void createDocumentAndSlide() throws Exception {
-		impressDocument = (XComponent) UnoRuntime.queryInterface(
+		impressDocument = UnoRuntime.queryInterface(
 				XComponent.class, unoApp.newDocument("simpress"));
-		drawsupplier = (XDrawPagesSupplier) UnoRuntime.queryInterface(
+		drawsupplier = UnoRuntime.queryInterface(
 				XDrawPagesSupplier.class, impressDocument);
 		drawpages = drawsupplier.getDrawPages();
 		drawpages.insertNewByIndex(1);
@@ -373,7 +373,7 @@ public class ShapeProperties {
 		reLoadFile = saveAndReloadDoc(impressDocument,
 				"impress8", "odp");
 		xShapes=ShapeUtil.getShapes(reLoadFile, pageIndex);
-		return  (XShape) UnoRuntime.queryInterface(XShape.class, xShapes.getByIndex(shapeIndex));
+		return  UnoRuntime.queryInterface(XShape.class, xShapes.getByIndex(shapeIndex));
 	}
 	/**
 	 * save and reload Presentation document.
@@ -394,11 +394,11 @@ public class ShapeProperties {
 		aStoreProperties[0].Value = true;
 		aStoreProperties[1].Name = "FilterName";
 		aStoreProperties[1].Value = sFilter;
-		XStorable xStorable = (XStorable) UnoRuntime.queryInterface(
+		XStorable xStorable = UnoRuntime.queryInterface(
 				XStorable.class, presentationDocument);
 		xStorable.storeToURL(FileUtil.getUrl(filePath), aStoreProperties);
 
-		return (XComponent) UnoRuntime.queryInterface(XComponent.class,
+		return UnoRuntime.queryInterface(XComponent.class,
 				unoApp.loadDocument(filePath));
 	}
 

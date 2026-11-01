@@ -95,7 +95,7 @@ public class ScHeaderFieldObj extends TestCase {
     */
     protected void cleanup( TestParameters tParam, PrintWriter log ) {
         log.println( "    disposing xSheetDoc " );
-        XComponent oComp = (XComponent)
+        XComponent oComp =
             UnoRuntime.queryInterface (XComponent.class, xSpreadsheetDoc);
         util.DesktopTools.closeDoc(oComp);
     }
@@ -135,17 +135,17 @@ public class ScHeaderFieldObj extends TestCase {
         XTextContent oContent = null;
         XInterface aField = null;
 
-        XStyleFamiliesSupplier StyleFam = (XStyleFamiliesSupplier)
+        XStyleFamiliesSupplier StyleFam =
             UnoRuntime.queryInterface(
                 XStyleFamiliesSupplier.class,
                 xSpreadsheetDoc );
 
         XNameAccess StyleFamNames = StyleFam.getStyleFamilies();
         try{
-            PageStyles = (XNameAccess) AnyConverter.toObject(
-                new Type(XNameAccess.class),StyleFamNames.getByName("PageStyles"));
-            StdStyle = (XStyle) AnyConverter.toObject(
-                        new Type(XStyle.class),PageStyles.getByName("Default"));
+            PageStyles = AnyConverter.toObject(
+                XNameAccess.class,StyleFamNames.getByName("PageStyles"));
+            StdStyle = AnyConverter.toObject(
+                        XStyle.class,PageStyles.getByName("Default"));
         } catch(com.sun.star.lang.WrappedTargetException e){
             e.printStackTrace(log);
             throw new StatusException("Couldn't get by name", e);
@@ -158,7 +158,7 @@ public class ScHeaderFieldObj extends TestCase {
         }
 
         //get the property-set
-        PropSet = (XPropertySet)
+        PropSet =
             UnoRuntime.queryInterface(XPropertySet.class, StdStyle);
 
         XHeaderFooterContent RPHC = null;
@@ -166,8 +166,8 @@ public class ScHeaderFieldObj extends TestCase {
         // first we write what we are intend to do to log file
         log.println( "creating a test environment" );
         try {
-            RPHC = (XHeaderFooterContent) AnyConverter.toObject(
-                new Type(XHeaderFooterContent.class),
+            RPHC = AnyConverter.toObject(
+                XHeaderFooterContent.class,
                     PropSet.getPropertyValue("RightPageHeaderContent"));
         } catch (com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace(log);
@@ -182,7 +182,7 @@ public class ScHeaderFieldObj extends TestCase {
 
         XText left = RPHC.getLeftText();
 
-        XMultiServiceFactory oDocMSF = (XMultiServiceFactory)
+        XMultiServiceFactory oDocMSF =
             UnoRuntime.queryInterface(
                 XMultiServiceFactory.class,
                 xSpreadsheetDoc );
@@ -192,7 +192,7 @@ public class ScHeaderFieldObj extends TestCase {
             oObj = (XInterface)
                 oDocMSF.createInstance( "com.sun.star.text.TextField.Time" );
 
-            the_Field = (XTextContent)
+            the_Field =
                 UnoRuntime.queryInterface(XTextContent.class,oObj);
 
             aField = (XInterface)
@@ -202,7 +202,7 @@ public class ScHeaderFieldObj extends TestCase {
             throw new StatusException("Couldn't create instance", e);
         }
 
-        oContent = (XTextContent)
+        oContent =
             UnoRuntime.queryInterface(XTextContent.class, aField);
 
         XTextCursor the_Cursor = left.createTextCursor();

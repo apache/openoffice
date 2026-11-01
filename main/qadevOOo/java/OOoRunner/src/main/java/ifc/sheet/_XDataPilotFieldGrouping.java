@@ -42,8 +42,8 @@ public class _XDataPilotFieldGrouping extends MultiMethodTest
     public void _createNameGroup() {
         boolean result = true;
         try {
-            XDataPilotField xDataPilotField = (XDataPilotField) UnoRuntime.queryInterface(XDataPilotField.class, oObj);
-            XNameAccess xNameAccess = (XNameAccess) UnoRuntime.queryInterface(XNameAccess.class, xDataPilotField.getItems ());
+            XDataPilotField xDataPilotField = UnoRuntime.queryInterface(XDataPilotField.class, oObj);
+            XNameAccess xNameAccess = UnoRuntime.queryInterface(XNameAccess.class, xDataPilotField.getItems ());
             String[] elements = xNameAccess.getElementNames ();
             oObj.createNameGroup(elements);
         } catch (com.sun.star.lang.IllegalArgumentException e) {

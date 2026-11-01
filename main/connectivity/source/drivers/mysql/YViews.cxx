@@ -22,7 +22,7 @@
 
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
-#include "precompiled_connectivity.hxx"
+#include "precompiled_mysql.hxx"
 #include "mysql/YViews.hxx"
 #include "mysql/YTables.hxx"
 #include <com/sun/star/sdbc/XRow.hpp>

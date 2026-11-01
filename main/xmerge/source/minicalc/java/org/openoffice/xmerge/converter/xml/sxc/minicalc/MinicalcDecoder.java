@@ -35,7 +35,6 @@ import java.io.ByteArrayInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.Enumeration;
 
 import org.openoffice.xmerge.ConvertData;
 import org.openoffice.xmerge.converter.xml.OfficeConstants;

@@ -171,14 +171,14 @@ public class XMLImporter extends TestCase {
         tEnv.addObjRelation("XDocumentHandler.ImportChecker",
             new ifc.xml.sax._XDocumentHandler.ImportChecker() {
                 public boolean checkImport() {
-                    XDrawPagesSupplier supp = (XDrawPagesSupplier)
+                    XDrawPagesSupplier supp =
                         UnoRuntime.queryInterface
                         (XDrawPagesSupplier.class, xDrawDoc);
                     final XDrawPages xPages = supp.getDrawPages();
                     XNamed[] pageArray = new XNamed[ xPages.getCount() ];
                     for (int i=0; i < xPages.getCount(); i++) {
                         try {
-                            pageArray[i] = (XNamed) UnoRuntime.queryInterface
+                            pageArray[i] = UnoRuntime.queryInterface
                                 (XNamed.class, xPages.getByIndex(i));
                         } catch (com.sun.star.uno.Exception e) {
                             e.printStackTrace(fLog) ;

@@ -133,7 +133,7 @@ public class Paragraph extends Container implements javax.accessibility.Accessib
 				return null;
 
 			try {
-				XAccessibleEditableText unoAccessibleText = (XAccessibleEditableText)
+				XAccessibleEditableText unoAccessibleText =
 					UnoRuntime.queryInterface(XAccessibleEditableText.class,
 					unoAccessibleComponent);
 				if (unoAccessibleText != null) {
@@ -149,7 +149,7 @@ public class Paragraph extends Container implements javax.accessibility.Accessib
 		/** Gets the AccessibleAction associated with this object that has a graphical representation */
 		public javax.accessibility.AccessibleAction getAccessibleAction() {
 			try {
-				XAccessibleAction unoAccessibleAction = (XAccessibleAction)
+				XAccessibleAction unoAccessibleAction =
 					UnoRuntime.queryInterface(XAccessibleAction.class, unoAccessibleComponent);
 				return (unoAccessibleAction != null) ?
 					new AccessibleActionImpl(unoAccessibleAction) : null;

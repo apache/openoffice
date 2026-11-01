@@ -92,9 +92,9 @@ public class SwXStyleFamilies extends TestCase {
 
 
         log.println( "Creating a test environment" );
-        XTextDocument xArea = (XTextDocument)
+        XTextDocument xArea =
             UnoRuntime.queryInterface(XTextDocument.class, xTextDoc);
-        XStyleFamiliesSupplier oSFS = (XStyleFamiliesSupplier)
+        XStyleFamiliesSupplier oSFS =
             UnoRuntime.queryInterface(XStyleFamiliesSupplier.class, xArea);
         XNameAccess oSF = oSFS.getStyleFamilies();
 

@@ -5886,10 +5886,10 @@
 						</xsl:element>
 					</xsl:if>
 				</xsl:for-each>
-				<xsl:if test="key('RowStyle',$rowStyleName)/style:table-row-properties[@style:keep-together]">
+				<xsl:if test="key('RowStyle',$rowStyleName)/style:table-row-properties[@style:keep-together or @fo:keep-together]">
 					<xsl:element name="字:是否跨页_41BB">
 						<xsl:choose>
-							<xsl:when test="key('RowStyle',$rowStyleName)/style:table-row-properties[@style:keep-together]/@style:keep-together='false'">false</xsl:when>
+							<xsl:when test="key('RowStyle',$rowStyleName)/style:table-row-properties[@style:keep-together='false' or @fo:keep-together='always']">false</xsl:when>
 							<xsl:otherwise>true</xsl:otherwise>
 						</xsl:choose>
 					</xsl:element>
@@ -6387,7 +6387,7 @@
 				<xsl:if test="style:page-layout-properties/@style:layout-grid-mode">
 					<字:网格设置_420E>
 						<xsl:if test="style:page-layout-properties/@style:layout-grid-mode">
-							<xsl:attribute name="网格类型_420F"><xsl:choose><xsl:when test="style:page-layout-properties/@style:layout-grid-mode='both' and style:page-layout-properties/@style:layout-grid-snap-to-characters = 'false'">line-char</xsl:when><xsl:when test="style:page-layout-properties/@style:layout-grid-mode='both' and style:page-layout-properties/@style:layout-grid-snap-to-characters = 'true'">char</xsl:when><xsl:when test="style:page-layout-properties/@style:layout-grid-mode='line'">line</xsl:when><xsl:when test="style:page-layout-properties/@style:layout-grid-mode='none'">none</xsl:when></xsl:choose></xsl:attribute>
+							<xsl:attribute name="网格类型_420F"><xsl:choose><xsl:when test="style:page-layout-properties/@style:layout-grid-mode='both' and (style:page-layout-properties/@style:layout-grid-snap-to-characters = 'false' or style:page-layout-properties/@style:layout-grid-snap-to = 'false')">line-char</xsl:when><xsl:when test="style:page-layout-properties/@style:layout-grid-mode='both' and (style:page-layout-properties/@style:layout-grid-snap-to-characters = 'true' or style:page-layout-properties/@style:layout-grid-snap-to = 'true')">char</xsl:when><xsl:when test="style:page-layout-properties/@style:layout-grid-mode='line'">line</xsl:when><xsl:when test="style:page-layout-properties/@style:layout-grid-mode='none'">none</xsl:when></xsl:choose></xsl:attribute>
 						</xsl:if>
 						<xsl:if test="style:page-layout-properties/@style:layout-grid-base-width and (style:page-layout-properties/@style:layout-grid-mode = 'both' or style:page-layout-properties/@style:layout-grid-mode = 'both-nosnap')">
 							<xsl:attribute name="字符数_4228"><xsl:value-of select="floor((number($pageWidth) - $uof_left - $uof_right) div number($layoutGridRubyWidth) * 1.003)"/></xsl:attribute>

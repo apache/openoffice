@@ -59,7 +59,7 @@ public class SWUtil {
  	}
 
 	public static void saveAsDoc(XComponent component, String url) throws IOException{
-		XTextDocument document = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, component);
+		XTextDocument document = UnoRuntime.queryInterface(XTextDocument.class, component);
 		saveAs(document, "MS Word 97", url);
 	}
 
@@ -68,7 +68,7 @@ public class SWUtil {
  	}
 
 	public static void saveAs(XTextDocument document, String filterValue, String url) throws IOException {
-		XStorable store = (XStorable) UnoRuntime.queryInterface(XStorable.class, document);
+		XStorable store = UnoRuntime.queryInterface(XStorable.class, document);
  		PropertyValue[] propsValue = new PropertyValue[1];
  		propsValue[0] = new PropertyValue();
  		propsValue[0].Name = "FilterName";
@@ -78,12 +78,12 @@ public class SWUtil {
  	}
 
 	public static void save(XTextDocument document) throws IOException {
- 		XStorable store = (XStorable) UnoRuntime.queryInterface(XStorable.class, document);
+ 		XStorable store = UnoRuntime.queryInterface(XStorable.class, document);
 		store.store();
 	}
 
 	public static XTextDocument saveAndReload(XTextDocument document, UnoApp app) throws Exception {
- 		XStorable store = (XStorable) UnoRuntime.queryInterface(XStorable.class, document);
+ 		XStorable store = UnoRuntime.queryInterface(XStorable.class, document);
 		store.store();
 		String url = document.getURL();
 		app.closeDocument(document);
@@ -92,17 +92,17 @@ public class SWUtil {
 	}
 
 	public static XTextDocument newDocument(UnoApp app) throws Exception {
-		return (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
+		return UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
 
  	}
 
 	public static XTextDocument openDocumentFromURL(String url, UnoApp app) throws Exception {
-		return (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.loadDocumentFromURL(url));
+		return UnoRuntime.queryInterface(XTextDocument.class, app.loadDocumentFromURL(url));
 
 	}
 	public static XTextDocument openDocument(String filePath, UnoApp app) throws Exception {
 
-		return (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(filePath));
+		return UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(filePath));
 
 	}
 
@@ -146,10 +146,10 @@ public class SWUtil {
 	 * @throws Exception
 	 */
 	public static void insertBookmark(XTextDocument document, XTextCursor textCursor, String bookmarkName) throws Exception {
-		XMultiServiceFactory xDocFactory = (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, document);
+		XMultiServiceFactory xDocFactory = UnoRuntime.queryInterface(XMultiServiceFactory.class, document);
 		Object xBookmark = xDocFactory.createInstance("com.sun.star.text.Bookmark");
-		XTextContent xBookmarkAsTextContent = (XTextContent) UnoRuntime.queryInterface(XTextContent.class, xBookmark);
-		XNamed xBookmarkAsNamed = (XNamed) UnoRuntime.queryInterface(XNamed.class, xBookmark);
+		XTextContent xBookmarkAsTextContent = UnoRuntime.queryInterface(XTextContent.class, xBookmark);
+		XNamed xBookmarkAsNamed = UnoRuntime.queryInterface(XNamed.class, xBookmark);
 		xBookmarkAsNamed.setName(bookmarkName);
 		document.getText().insertTextContent(textCursor, xBookmarkAsTextContent, true);
 	}
@@ -162,7 +162,7 @@ public class SWUtil {
 	 */
 	public static void insertColumnBreak(XText xText, XTextCursor currentCursor) throws Exception
 	{
-		XPropertySet xCursorProps = (XPropertySet)UnoRuntime.queryInterface(
+		XPropertySet xCursorProps = UnoRuntime.queryInterface(
 		        XPropertySet.class, currentCursor);
 		xCursorProps.setPropertyValue("BreakType", BreakType.COLUMN_AFTER);
 	    xText.insertControlCharacter(currentCursor,ControlCharacter.PARAGRAPH_BREAK,false);
@@ -176,7 +176,7 @@ public class SWUtil {
 	 */
 	public static void insertPageBreak(XText xText, XTextCursor currentCursor) throws Exception
 	{
-		XPropertySet xCursorProps = (XPropertySet)UnoRuntime.queryInterface(
+		XPropertySet xCursorProps = UnoRuntime.queryInterface(
 		        XPropertySet.class, currentCursor);
 		xCursorProps.setPropertyValue("BreakType", BreakType.PAGE_AFTER);
 	    xText.insertControlCharacter(currentCursor,ControlCharacter.PARAGRAPH_BREAK,false);
@@ -191,10 +191,10 @@ public class SWUtil {
 	 */
 	public static int getPageCount(XTextDocument document) throws Exception
 	{
-		XModel xmodel = (XModel)UnoRuntime.queryInterface(XModel.class, document);
+		XModel xmodel = UnoRuntime.queryInterface(XModel.class, document);
 		XController xcont = xmodel.getCurrentController();
 
-		XPropertySet xps = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, xcont);
+		XPropertySet xps = UnoRuntime.queryInterface(XPropertySet.class, xcont);
 		Integer pageCount = (Integer) xps.getPropertyValue("PageCount");
 		return pageCount.intValue();
 	}
@@ -209,12 +209,12 @@ public class SWUtil {
 	 */
 	public static Object getDefaultPageStyleProperty(XComponent xComponent, String propertyName) throws Exception
 	{
-		XTextDocument textDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, xComponent);
-		XStyleFamiliesSupplier xSupplier = (XStyleFamiliesSupplier)UnoRuntime.queryInterface(XStyleFamiliesSupplier.class, textDocument);
-        XNameAccess xFamilies = (XNameAccess) UnoRuntime.queryInterface (XNameAccess.class, xSupplier.getStyleFamilies());
-        XNameContainer xFamily = (XNameContainer) UnoRuntime.queryInterface(XNameContainer.class, xFamilies.getByName("PageStyles"));
-        XStyle xStyle = (XStyle)UnoRuntime.queryInterface(XStyle.class, xFamily.getByName("Default"));
-        XPropertySet xStyleProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xStyle);
+		XTextDocument textDocument = UnoRuntime.queryInterface(XTextDocument.class, xComponent);
+		XStyleFamiliesSupplier xSupplier = UnoRuntime.queryInterface(XStyleFamiliesSupplier.class, textDocument);
+        XNameAccess xFamilies = UnoRuntime.queryInterface (XNameAccess.class, xSupplier.getStyleFamilies());
+        XNameContainer xFamily = UnoRuntime.queryInterface(XNameContainer.class, xFamilies.getByName("PageStyles"));
+        XStyle xStyle = UnoRuntime.queryInterface(XStyle.class, xFamily.getByName("Default"));
+        XPropertySet xStyleProps = UnoRuntime.queryInterface(XPropertySet.class, xStyle);
         Object propertyValue = xStyleProps.getPropertyValue(propertyName.toString());
         return propertyValue;
 	}
@@ -228,17 +228,17 @@ public class SWUtil {
 	 */
 	public static void setDefaultPageStyleProperty(XComponent xComponent, String propertyName, Object propertyValue) throws Exception
 	{
-		XTextDocument textDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, xComponent);
-        XStyleFamiliesSupplier xSupplier = (XStyleFamiliesSupplier)UnoRuntime.queryInterface(XStyleFamiliesSupplier.class, textDocument);
-        XNameAccess xFamilies = (XNameAccess) UnoRuntime.queryInterface (XNameAccess.class, xSupplier.getStyleFamilies());
-        XNameContainer xFamily = (XNameContainer) UnoRuntime.queryInterface(XNameContainer.class, xFamilies.getByName("PageStyles"));
-        XStyle xStyle = (XStyle)UnoRuntime.queryInterface(XStyle.class, xFamily.getByName("Default"));
-        XPropertySet xStyleProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xStyle);
+		XTextDocument textDocument = UnoRuntime.queryInterface(XTextDocument.class, xComponent);
+        XStyleFamiliesSupplier xSupplier = UnoRuntime.queryInterface(XStyleFamiliesSupplier.class, textDocument);
+        XNameAccess xFamilies = UnoRuntime.queryInterface (XNameAccess.class, xSupplier.getStyleFamilies());
+        XNameContainer xFamily = UnoRuntime.queryInterface(XNameContainer.class, xFamilies.getByName("PageStyles"));
+        XStyle xStyle = UnoRuntime.queryInterface(XStyle.class, xFamily.getByName("Default"));
+        XPropertySet xStyleProps = UnoRuntime.queryInterface(XPropertySet.class, xStyle);
         xStyleProps.setPropertyValue (propertyName.toString(), propertyValue);
 	}
 
 	public static XTextDocument saveTo_Override_reload(XTextDocument xTextDocument,String filtervalue, String url,UnoApp app) throws Exception {
-		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_odt = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties = new PropertyValue[2];
 		aStoreProperties[0] = new PropertyValue();
 		aStoreProperties[1] = new PropertyValue();
@@ -248,14 +248,14 @@ public class SWUtil {
 		aStoreProperties[1].Value = filtervalue;
 		xStorable_odt.storeToURL(FileUtil.getUrl(url), aStoreProperties);
 		//reopen the document
-		return (XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(url));
+		return UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(url));
  	}
 	/**
 	 * create document from template
 	 */
 	public static XComponent newDocumentFromTemplate(String templatePath,UnoApp unoApp) throws Exception
 	{
-		XComponentLoader componentLoader = (XComponentLoader) UnoRuntime.queryInterface(XComponentLoader.class, unoApp.getDesktop());
+		XComponentLoader componentLoader = UnoRuntime.queryInterface(XComponentLoader.class, unoApp.getDesktop());
 		PropertyValue[] pros = new PropertyValue[1];
 		pros[0] = new PropertyValue();
 		pros[0].Name = "AsTemplate";

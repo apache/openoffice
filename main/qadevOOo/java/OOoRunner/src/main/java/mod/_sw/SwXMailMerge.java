@@ -110,9 +110,9 @@ public class SwXMailMerge extends TestCase {
         } catch (Exception e) {
             throw new StatusException("Can't create com.sun.star.sdb.RowSet", e);
         }
-        XPropertySet oRowSetProps = (XPropertySet)
+        XPropertySet oRowSetProps =
                         UnoRuntime.queryInterface(XPropertySet.class, oRowSet);
-        XRowSet xRowSet = (XRowSet)
+        XRowSet xRowSet =
                         UnoRuntime.queryInterface(XRowSet.class, oRowSet);
         try {
             oRowSetProps.setPropertyValue("DataSourceName",cDataSourceName);
@@ -133,7 +133,7 @@ public class SwXMailMerge extends TestCase {
             throw new StatusException("Can't execute oRowSet", e);
         }
 
-        XResultSet oResultSet = (XResultSet)
+        XResultSet oResultSet =
                            UnoRuntime.queryInterface(XResultSet.class, oRowSet);
 
 
@@ -142,7 +142,7 @@ public class SwXMailMerge extends TestCase {
         // <create Bookmarks>
         log.println("create bookmarks");
         try {
-            XRowLocate oRowLocate = (XRowLocate) UnoRuntime.queryInterface(
+            XRowLocate oRowLocate = UnoRuntime.queryInterface(
                                                   XRowLocate.class, oResultSet);
             oResultSet.first();
             myBookMarks[0] = oRowLocate.getBookmark();
@@ -157,7 +157,7 @@ public class SwXMailMerge extends TestCase {
 
         log.println("fill MailMerge with default connection");
 
-        XPropertySet oObjProps = (XPropertySet)
+        XPropertySet oObjProps =
                             UnoRuntime.queryInterface(XPropertySet.class, oObj);
         try {
             oObjProps.setPropertyValue("ActiveConnection", getLocalXConnection(Param));
@@ -229,7 +229,7 @@ public class SwXMailMerge extends TestCase {
         vXJobArgs[3] = vXJobArg3;
 
 
-        Job = (XJob) UnoRuntime.queryInterface(XJob.class, oObj);
+        Job = UnoRuntime.queryInterface(XJob.class, oObj);
         try{
             Job.execute(vXJobArg2);
         } catch ( IllegalArgumentException e){
@@ -248,9 +248,9 @@ public class SwXMailMerge extends TestCase {
         } catch (Exception e) {
             throw new StatusException("Can't create com.sun.star.sdb.RowSet", e);
         }
-        oRowSetProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, oRowSet);
+        oRowSetProps = UnoRuntime.queryInterface(XPropertySet.class, oRowSet);
 
-        xRowSet = (XRowSet) UnoRuntime.queryInterface(XRowSet.class, oRowSet);
+        xRowSet = UnoRuntime.queryInterface(XRowSet.class, oRowSet);
 
         try {
             oRowSetProps.setPropertyValue("DataSourceName",cDataSourceName);
@@ -271,12 +271,12 @@ public class SwXMailMerge extends TestCase {
             throw new StatusException("Can't execute oRowSet", e);
         }
 
-        oResultSet = (XResultSet)
+        oResultSet =
                            UnoRuntime.queryInterface(XResultSet.class, oRowSet);
 
         XResultSet oMMXResultSet = null;
         try {
-            oMMXResultSet = (XResultSet)
+            oMMXResultSet =
                            UnoRuntime.queryInterface(XResultSet.class,
                                ( (XInterface)
                                 ( (XMultiServiceFactory)
@@ -341,7 +341,7 @@ public class SwXMailMerge extends TestCase {
             XInterface newSource = (XInterface) xMSF.createInstance
                 ("com.sun.star.sdb.DataSource") ;
 
-            XPropertySet xSrcProp = (XPropertySet)
+            XPropertySet xSrcProp =
                 UnoRuntime.queryInterface(XPropertySet.class, newSource);
 
             xSrcProp.setPropertyValue("URL", tmpDatabaseUrl) ;
@@ -376,7 +376,7 @@ public class SwXMailMerge extends TestCase {
         } catch(Exception e) {
             throw new StatusException("Couldn't create instance of 'com.sun.star.sdb.DatabaseContext'", e);
         }
-        XNameAccess xNADataCont = (XNameAccess)
+        XNameAccess xNADataCont =
             UnoRuntime.queryInterface(XNameAccess.class, oDataCont);
 
         String[] dataNames = xNADataCont.getElementNames();
@@ -389,7 +389,7 @@ public class SwXMailMerge extends TestCase {
         try{
 
             Object oDataBase = xNADataCont.getByName(dataName);
-            XDataSource xDataSource = (XDataSource)
+            XDataSource xDataSource =
                 UnoRuntime.queryInterface(XDataSource.class, oDataBase);
 
             return xDataSource.getConnection("","");

@@ -64,6 +64,7 @@
 #include <map>
 #include <functional>
 #include <algorithm>
+#include <iterator>
 
 #include <unotools/ucbhelper.hxx>
 #include <com/sun/star/uri/XUriReference.hpp>

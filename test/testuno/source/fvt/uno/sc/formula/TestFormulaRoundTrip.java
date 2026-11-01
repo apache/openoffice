@@ -84,7 +84,7 @@ public class TestFormulaRoundTrip {
 		saveFormatTo("MS Excel 2003 XML", Testspace.getUrl(path));
 		unoApp.closeDocument(scComponent);
 
-		scDocument = (XSpreadsheetDocument) UnoRuntime.queryInterface(
+		scDocument = UnoRuntime.queryInterface(
 			XSpreadsheetDocument.class, unoApp.loadDocument(Testspace.getPath(path)));
 		sheet = SCUtil.getCurrentSheet(scDocument);
 		String formulaValue2 = SCUtil.getTextFromCell(sheet, 0, 1);
@@ -102,7 +102,7 @@ public class TestFormulaRoundTrip {
 		saveFormatTo("StarOffice XML (Calc)", Testspace.getUrl(path));
 		unoApp.closeDocument(scComponent);
 
-		scDocument = (XSpreadsheetDocument) UnoRuntime.queryInterface(
+		scDocument = UnoRuntime.queryInterface(
 			XSpreadsheetDocument.class, unoApp.loadDocument(Testspace.getPath(path)));
 		sheet = SCUtil.getCurrentSheet(scDocument);
 		String formulaValue2 = SCUtil.getTextFromCell(sheet, 0, 1);
@@ -120,7 +120,7 @@ public class TestFormulaRoundTrip {
 		storeProps[1].Name = "Overwrite";
 		storeProps[1].Value = new Boolean(true);
 		XStorable scStorable =
-			(XStorable) UnoRuntime.queryInterface(XStorable.class, scComponent);
+			UnoRuntime.queryInterface(XStorable.class, scComponent);
 		scStorable.storeAsURL(storeUrl, storeProps);
 	}
 }

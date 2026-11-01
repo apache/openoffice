@@ -116,7 +116,7 @@ public class StringNode
     @Override
     public String toString ()
     {
-        final StringBuffer aBuffer = new StringBuffer();
+        final StringBuilder aBuffer = new StringBuilder();
         aBuffer.append(String.format("string (%s)", meType));
         if (maEnumerationValueIds != null)
         {

@@ -113,7 +113,7 @@ public class SwXCell extends TestCase {
         log.println( "    creating a new environment for bodytext object" );
         TestEnvironment tEnv = new TestEnvironment( oObj );
 
-        XMultiServiceFactory oDocMSF = (XMultiServiceFactory)
+        XMultiServiceFactory oDocMSF =
                 UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDoc);
         try {
             XInterface oTS = (XInterface) oDocMSF.createInstance

@@ -186,7 +186,7 @@ public class ReportFinalizer
 //  private boolean fileexists(XMultiServiceFactory _xMSF, String _spath){
 //  try {
 //      XInterface xUcbInterface = (XInterface) _xMSF.createInstance("com.sun.star.ucb.SimpleFileAccess");
-//      XSimpleFileAccess xSimpleFileAccess = (XSimpleFileAccess) com.sun.star.uno.UnoRuntime.queryInterface(XSimpleFileAccess.class, xUcbInterface);
+//      XSimpleFileAccess xSimpleFileAccess = com.sun.star.uno.UnoRuntime.queryInterface(XSimpleFileAccess.class, xUcbInterface);
 //      return xSimpleFileAccess.exists(_spath);
 //  } catch (Exception exception) {
 //      exception.printStackTrace(System.out);

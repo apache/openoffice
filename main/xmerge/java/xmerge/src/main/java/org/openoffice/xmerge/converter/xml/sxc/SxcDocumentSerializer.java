@@ -821,7 +821,7 @@ public abstract class SxcDocumentSerializer implements OfficeConstants,
 
             int len = nodeList.getLength();
 
-            StringBuffer buffer = new StringBuffer();
+            StringBuilder buffer = new StringBuilder();
 
             for (int i = 0; i < len; i++) {
 

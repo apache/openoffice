@@ -80,7 +80,7 @@ public class AnalyzeStartupLog
             }
 
             // analyze it
-            java.lang.StringBuffer sOut = new java.lang.StringBuffer(1000);
+            java.lang.StringBuilder sOut = new java.lang.StringBuilder(1000);
             sOut.append("log;t_cfg_start;t_cfg_end;t_fwk_start;t_fwk_end;t_sfx_start;t_sfx_end;t_types_start;t_types_end;t_filters_start;t_filters_end;");
             sOut.append("t_filters_swriter_start;t_filters_swriter_end;t_filters_sweb_start;t_filters_sweb_end;t_filters_sglobal_start;t_filters_sglobal_end;t_filters_scalc_start;t_filters_scalc_end;t_filters_sdraw_start;t_filters_sdraw_end;t_filters_simpress_start;t_filters_simpress_end;t_filters_schart_start;t_filters_schart_end;t_filters_smath_start;t_filters_smath_end;");
             sOut.append("t_others_start;t_others_end;d_cfg;d_fwk;d_sfx;d_types;d_filters;d_others;d_complete\n");

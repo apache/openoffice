@@ -57,7 +57,7 @@ class AccessibleUNOHandler
     {
         XServiceInfo xServiceInfo = null;
         if (aNode instanceof AccTreeNode)
-            xServiceInfo = (XServiceInfo)UnoRuntime.queryInterface(
+            xServiceInfo = UnoRuntime.queryInterface(
                 XServiceInfo.class, ((AccTreeNode)aNode).getContext());
         return xServiceInfo;
     }
@@ -65,7 +65,7 @@ class AccessibleUNOHandler
     {
         XTypeProvider xTypeProvider = null;
         if (aNode instanceof AccTreeNode)
-            xTypeProvider = (XTypeProvider)UnoRuntime.queryInterface(
+            xTypeProvider = UnoRuntime.queryInterface(
                 XTypeProvider.class, ((AccTreeNode)aNode).getContext());
         return xTypeProvider;
     }

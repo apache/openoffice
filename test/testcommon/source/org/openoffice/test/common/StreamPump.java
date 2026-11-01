@@ -26,14 +26,14 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 
 /**
- * Pump data from input stream into a StringBuffer
+ * Pump data from input stream into a StringBuilder
  *
  */
 public class StreamPump extends Thread {
-	StringBuffer stringBuffer = null;
+	StringBuilder stringBuffer = null;
 	InputStream inputStream = null;
 
-	public StreamPump(StringBuffer stringBuffer, InputStream inputStream) {
+	public StreamPump(StringBuilder stringBuffer, InputStream inputStream) {
 		this.stringBuffer = stringBuffer;
 		this.inputStream = inputStream;
 	}

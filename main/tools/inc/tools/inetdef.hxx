@@ -26,7 +26,16 @@
 
 //============================================================================
 #if defined WNT
+// This token goes into the "generator" string of every document written --
+// ODF meta.xml and the HTML export's <meta> tag.  It used to say Win32 for
+// both architectures; the rest of this file already distinguishes them
+// (FreeBSD/i386 vs FreeBSD/amd64, NETBSD x86 vs NETBSD ARM32), Windows just
+// never did.
+#if defined _WIN64 || defined X86_64
+#define TOOLS_INETDEF_OS "Win64"
+#else
 #define TOOLS_INETDEF_OS "Win32"
+#endif
 #elif defined OS2
 #define TOOLS_INETDEF_OS "OS/2"
 #elif defined UNX

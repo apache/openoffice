@@ -64,8 +64,8 @@ public class _XDesktop extends MultiMethodTest {
             for (; xEnum.hasMoreElements();) {
                 XInterface xInt = null;
                 try {
-                    xInt = (XInterface) AnyConverter.toObject(
-                            new Type(XInterface.class), xEnum.nextElement());
+                    xInt = AnyConverter.toObject(
+                            XInterface.class, xEnum.nextElement());
                 } catch (com.sun.star.lang.IllegalArgumentException iae) {
                     log.println("Can't convert any");
                 }

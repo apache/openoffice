@@ -30,6 +30,7 @@
 #endif
 #include <svtools/imap.hxx>
 #include <svtools/filter.hxx>
+#include <svtools/linkpolicy.hxx>
 #include <sot/storage.hxx>
 #include <sfx2/linkmgr.hxx>
 #include <editeng/boxitem.hxx>
@@ -161,11 +162,19 @@ SwGrfNode::SwGrfNode(
     if ( IsLinkedFile() )
     {
         INetURLObject aUrl( rGrfName );
-        if ( INET_PROT_FILE == aUrl.GetProtocol() &&
-             FStatHelper::IsDocument( aUrl.GetMainURL( INetURLObject::NO_DECODE ) ) )
+        if ( INET_PROT_FILE == aUrl.GetProtocol() )
         {
-            // File vorhanden, Verbindung herstellen ohne ein Update
-            ( (SwBaseLink*) &refLink )->Connect();
+            const String aMainUrl( aUrl.GetMainURL( INetURLObject::NO_DECODE ) );
+
+            // The name is document content, so the shared policy decides before the stat
+            // (see svtools/linkpolicy.hxx): where the authority names another host, the
+            // stat is itself a request to that host.
+            if ( ::svt::linkpolicy::mayLoadDocumentReference( aMainUrl ) &&
+                 FStatHelper::IsDocument( aMainUrl ) )
+            {
+                // File vorhanden, Verbindung herstellen ohne ein Update
+                ( (SwBaseLink*) &refLink )->Connect();
+            }
         }
     }
 }

@@ -72,6 +72,7 @@
 #include "cppuhelper/implbase3.hxx"
 #include "comphelper/anytostring.hxx"
 #include "vcl/msgbox.hxx"
+#include "vcl/threadex.hxx"
 #include "toolkit/helper/vclunohelper.hxx"
 #include "comphelper/processfactory.hxx"
 
@@ -90,6 +91,7 @@
 #include <dp_gui_handleversionexception.hxx>
 
 #include <queue>
+#include <boost/bind.hpp>
 #include <boost/shared_ptr.hpp>
 
 #if (defined(_MSC_VER) && (_MSC_VER < 1400))
@@ -248,6 +250,7 @@ private:
     void _disableExtension( ::rtl::Reference< ProgressCmdEnv > &rCmdEnv,
                             const uno::Reference< deployment::XPackage > &xPackage );
     void _checkForUpdates( const std::vector<uno::Reference<deployment::XPackage > > &vExtensionList );
+    void _solar_checkForUpdates( const std::vector<uno::Reference<deployment::XPackage > > &vExtensionList );
     void _acceptLicense( ::rtl::Reference< ProgressCmdEnv > &rCmdEnv,
                            const uno::Reference< deployment::XPackage > &xPackage );
 
@@ -338,6 +341,41 @@ uno::Reference< ucb::XProgressHandler > ProgressCmdEnv::getProgressHandler()
 }
 
 //------------------------------------------------------------------------------
+namespace {
+
+// The bodies below are reached from the deployment worker thread, where
+// AquaSalInstance::Yield cannot pump the Cocoa event queue; a dialog executed there
+// appears but never receives events. syncExecute() marshals them onto the main thread.
+
+short solar_dependencyDialog( DialogHelper * pDialogHelper,
+                              std::vector< OUString > const & rDeps )
+{
+    vos::OGuard guard( Application::GetSolarMutex() );
+    return DependencyDialog( pDialogHelper ? pDialogHelper->getWindow() : NULL, rDeps ).Execute();
+}
+
+void solar_unsupportedPlatformBox( DialogHelper * pDialogHelper,
+                                   OUString const & rDisplayName )
+{
+    vos::OGuard guard( Application::GetSolarMutex() );
+    String sMsg( ResId( RID_STR_UNSUPPORTED_PLATFORM, *DeploymentGuiResMgr::get() ) );
+    sMsg.SearchAndReplaceAllAscii( "%Name", rDisplayName );
+    ErrorBox box( pDialogHelper ? pDialogHelper->getWindow() : NULL, WB_OK, sMsg );
+    box.Execute();
+}
+
+void solar_errorBox( DialogHelper * pDialogHelper, OUString const & rMsg, bool bSetTitle )
+{
+    vos::OGuard guard( Application::GetSolarMutex() );
+    ErrorBox box( pDialogHelper ? pDialogHelper->getWindow() : NULL, WB_OK, rMsg );
+    if ( bSetTitle && pDialogHelper )
+        box.SetText( pDialogHelper->getWindow()->GetText() );
+    box.Execute();
+}
+
+} // anon namespace
+
+//------------------------------------------------------------------------------
 // XInteractionHandler
 //------------------------------------------------------------------------------
 
@@ -404,8 +442,8 @@ void ProgressCmdEnv::handle( uno::Reference< task::XInteractionRequest > const &
                 dp_misc::Dependencies::getErrorText( depExc.UnsatisfiedDependencies[i]) );
         }
         {
-            vos::OGuard guard(Application::GetSolarMutex());
-            short n = DependencyDialog( m_pDialogHelper? m_pDialogHelper->getWindow() : NULL, deps ).Execute();
+            short n = vcl::solarthread::syncExecute(
+                boost::bind( &solar_dependencyDialog, m_pDialogHelper, deps ) );
             // Distinguish between closing the dialog and programatically
             // canceling the dialog (headless VCL):
             approve = n == RET_OK
@@ -454,11 +492,9 @@ void ProgressCmdEnv::handle( uno::Reference< task::XInteractionRequest > const &
 	}
     else if (request >>= platExc)
     {
-        vos::OGuard guard( Application::GetSolarMutex() );
-        String sMsg( ResId( RID_STR_UNSUPPORTED_PLATFORM, *DeploymentGuiResMgr::get() ) );
-        sMsg.SearchAndReplaceAllAscii( "%Name", platExc.package->getDisplayName() );
-        ErrorBox box( m_pDialogHelper? m_pDialogHelper->getWindow() : NULL, WB_OK, sMsg );
-        box.Execute();
+        vcl::solarthread::syncExecute(
+            boost::bind( &solar_unsupportedPlatformBox, m_pDialogHelper,
+                         platExc.package->getDisplayName() ) );
         approve = true;
     }
 
@@ -526,9 +562,8 @@ void ProgressCmdEnv::update_( uno::Any const & rStatus )
         if ( text.getLength() == 0 )
             text = ::comphelper::anyToString( rStatus ); // fallback
 
-        const ::vos::OGuard aGuard( Application::GetSolarMutex() );
-        const ::std::auto_ptr< ErrorBox > aBox( new ErrorBox( m_pDialogHelper? m_pDialogHelper->getWindow() : NULL, WB_OK, text ) );
-        aBox->Execute();
+        vcl::solarthread::syncExecute(
+            boost::bind( &solar_errorBox, m_pDialogHelper, text, false ) );
     }
     ++m_nCurrentProgress;
     updateProgress();
@@ -815,12 +850,8 @@ void ExtensionCmdQueue::Thread::execute()
                 if (msg.getLength() == 0) // fallback for debugging purposes
                     msg = ::comphelper::anyToString(exc);
 
-                const ::vos::OGuard guard( Application::GetSolarMutex() );
-                ::std::auto_ptr<ErrorBox> box(
-                    new ErrorBox( currentCmdEnv->activeDialog(), WB_OK, msg ) );
-                if ( m_pDialogHelper )
-                    box->SetText( m_pDialogHelper->getWindow()->GetText() );
-                box->Execute();
+                vcl::solarthread::syncExecute(
+                    boost::bind( &solar_errorBox, m_pDialogHelper, msg, true ) );
                     //Continue with installation of the remaining extensions
             }
             {
@@ -926,10 +957,20 @@ void ExtensionCmdQueue::Thread::_removeExtension( ::rtl::Reference< ProgressCmdE
 void ExtensionCmdQueue::Thread::_checkForUpdates(
     const std::vector<uno::Reference<deployment::XPackage > > &vExtensionList )
 {
+    // Dialog::Execute() must run on the main thread; on Mac OS X only that thread
+    // pumps the Cocoa event queue (AquaSalInstance::Yield), so executing the
+    // update dialog on this worker thread would leave it visible but frozen.
+    vcl::solarthread::syncExecute(
+        boost::bind( &ExtensionCmdQueue::Thread::_solar_checkForUpdates,
+                     this, vExtensionList ) );
+}
+
+//------------------------------------------------------------------------------
+void ExtensionCmdQueue::Thread::_solar_checkForUpdates(
+    const std::vector<uno::Reference<deployment::XPackage > > &vExtensionList )
+{
     UpdateDialog* pUpdateDialog;
     std::vector< UpdateData > vData;
-
-    const ::vos::OGuard guard( Application::GetSolarMutex() );
 
     pUpdateDialog = new UpdateDialog( m_xContext, m_pDialogHelper? m_pDialogHelper->getWindow() : NULL, vExtensionList, &vData );
 

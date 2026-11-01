@@ -22,7 +22,7 @@
 
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
-#include "precompiled_connectivity.hxx"
+#include "precompiled_adabas.hxx"
 #include "adabas/BKeys.hxx"
 #include "adabas/BTable.hxx"
 #include <com/sun/star/sdbc/XRow.hpp>

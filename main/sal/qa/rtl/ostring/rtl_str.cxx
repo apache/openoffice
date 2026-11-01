@@ -37,9 +37,10 @@ namespace rtl_str
 
     TEST_F(compare, compare_000)
     {
-        // The former test passed (NULL, NULL).  rtl_str_compare documents that
-        // both strings must be null-terminated, so NULL is undefined behaviour
-        // (the implementation unconditionally dereferences both pointers).
+        // A former version of this test passed (NULL, NULL).  rtl_str_compare
+        // documents that both strings must be null-terminated, so NULL is
+        // undefined behaviour (the implementation unconditionally dereferences
+        // both pointers).
         // Instead verify the ordering-sign contract, which had no coverage:
         // a value < 0 / > 0 depending on which string is "less".
         rtl::OString aStr1 = "abc";
@@ -53,7 +54,8 @@ namespace rtl_str
 
     TEST_F(compare, compare_000_1)
     {
-        // The former test passed (validStr, NULL) which is undefined behaviour.
+        // A former version of this test passed (validStr, NULL) which is
+        // undefined behaviour.
         // Verify the empty-string boundary instead (the valid analogue of an
         // "absent" string): a non-empty string is greater than the empty one.
         rtl::OString aStr1 = "Line must be equal.";

@@ -101,10 +101,10 @@ public class UnoApp {
 		for (int i = 0; i < reconnectCount; i++) {
 			try {
 				XUnoUrlResolver resolver = UnoUrlResolver.create(Bootstrap.createInitialComponentContext(null));
-				componentContext = (XComponentContext) UnoRuntime.queryInterface(XComponentContext.class, resolver.resolve("uno:" + unoUrl + ";StarOffice.ComponentContext"));
+				componentContext = UnoRuntime.queryInterface(XComponentContext.class, resolver.resolve("uno:" + unoUrl + ";StarOffice.ComponentContext"));
 				componentFactory = componentContext.getServiceManager();
-				serviceFactory = (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, componentFactory);
-				desktop = (XDesktop) UnoRuntime.queryInterface(XDesktop.class, serviceFactory.createInstance("com.sun.star.comp.framework.Desktop"));
+				serviceFactory = UnoRuntime.queryInterface(XMultiServiceFactory.class, componentFactory);
+				desktop = UnoRuntime.queryInterface(XDesktop.class, serviceFactory.createInstance("com.sun.star.comp.framework.Desktop"));
 				return;
 			} catch (Exception e) {
 				// e.printStackTrace(); // for debugging
@@ -167,51 +167,51 @@ public class UnoApp {
 	}
 
 //	public XComponent loadDocument(String file) throws Exception {
-//		XComponentLoader componentLoader = (XComponentLoader) UnoRuntime.queryInterface(XComponentLoader.class, desktop);
+//		XComponentLoader componentLoader = UnoRuntime.queryInterface(XComponentLoader.class, desktop);
 //		return componentLoader.loadComponentFromURL(FileUtil.getUrl(file), "_blank", 0, new PropertyValue[0]);
 //	}
 
 	public XComponent loadDocument(String file, PropertyValue... propertyValue) throws Exception {
-		XComponentLoader componentLoader = (XComponentLoader) UnoRuntime.queryInterface(XComponentLoader.class, desktop);
+		XComponentLoader componentLoader = UnoRuntime.queryInterface(XComponentLoader.class, desktop);
 		return componentLoader.loadComponentFromURL(FileUtil.getUrl(file), "_blank", 0, propertyValue);
 	}
 
 //	public XComponent loadDocumentFromURL(String url) throws Exception {
-//		XComponentLoader componentLoader = (XComponentLoader) UnoRuntime.queryInterface(XComponentLoader.class, desktop);
+//		XComponentLoader componentLoader = UnoRuntime.queryInterface(XComponentLoader.class, desktop);
 //		return componentLoader.loadComponentFromURL(url, "_blank", 0, new PropertyValue[0]);
 //	}
 
 	public XComponent loadDocumentFromURL(String url, PropertyValue... propertyValue) throws Exception {
-		XComponentLoader componentLoader = (XComponentLoader) UnoRuntime.queryInterface(XComponentLoader.class, desktop);
+		XComponentLoader componentLoader = UnoRuntime.queryInterface(XComponentLoader.class, desktop);
 		return componentLoader.loadComponentFromURL(url, "_blank", 0, propertyValue);
 	}
 
 	public XComponent newDocument(String type) throws Exception {
-		XComponentLoader componentLoader = (XComponentLoader) UnoRuntime.queryInterface(XComponentLoader.class, desktop);
+		XComponentLoader componentLoader = UnoRuntime.queryInterface(XComponentLoader.class, desktop);
 		return componentLoader.loadComponentFromURL("private:factory/" + type, "_blank", 0, new PropertyValue[0]);
 	}
 
 //	public void saveDocument(XComponent doc, String toPath) throws Exception {
-//		XStorable m_xstorable = (XStorable)UnoRuntime.queryInterface(XStorable.class, doc);
+//		XStorable m_xstorable = UnoRuntime.queryInterface(XStorable.class, doc);
 //		String fileUrl = FileUtil.getUrl(new File(toPath));
 //		m_xstorable.storeAsURL(fileUrl, new PropertyValue[0]);
 //	}
 
 	public void saveDocument(XComponent doc, String toPath, PropertyValue... propertyValue) throws Exception {
-		XStorable m_xstorable = (XStorable)UnoRuntime.queryInterface(XStorable.class, doc);
+		XStorable m_xstorable = UnoRuntime.queryInterface(XStorable.class, doc);
 		String fileUrl = FileUtil.getUrl(new File(toPath));
 		m_xstorable.storeToURL(fileUrl, propertyValue);
 	}
 
 	public void saveDocumentToURL(XComponent doc, String toURL, PropertyValue... propertyValue) throws Exception {
-		XStorable m_xstorable = (XStorable)UnoRuntime.queryInterface(XStorable.class, doc);
+		XStorable m_xstorable = UnoRuntime.queryInterface(XStorable.class, doc);
 		m_xstorable.storeToURL(toURL, propertyValue);
 	}
 
 	public void closeDocument(XComponent doc) {
 		try {
-			XModifiable modified = (XModifiable) UnoRuntime.queryInterface(XModifiable.class, doc);
-			XCloseable closer = (XCloseable) UnoRuntime.queryInterface(XCloseable.class, doc);
+			XModifiable modified = UnoRuntime.queryInterface(XModifiable.class, doc);
+			XCloseable closer = UnoRuntime.queryInterface(XCloseable.class, doc);
 			if (modified != null)
 				modified.setModified(false);
 			closer.close(true);

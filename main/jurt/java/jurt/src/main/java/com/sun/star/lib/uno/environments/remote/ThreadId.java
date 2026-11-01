@@ -66,7 +66,7 @@ public final class ThreadId {
     }
 
     public String toString() {
-        StringBuffer b = new StringBuffer("[ThreadId:");
+        StringBuilder b = new StringBuilder("[ThreadId:");
         for (int i = 0; i < id.length; ++i) {
             String n = Integer.toHexString(id[i] & 0xFF);
             if (n.length() == 1) {

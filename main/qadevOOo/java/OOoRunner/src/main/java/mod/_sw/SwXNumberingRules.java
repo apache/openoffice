@@ -119,15 +119,15 @@ public class SwXNumberingRules extends TestCase {
             e.printStackTrace(log);
         }
 
-        XStyleFamiliesSupplier oStyleFamiliesSupplier = (XStyleFamiliesSupplier)
+        XStyleFamiliesSupplier oStyleFamiliesSupplier =
             UnoRuntime.queryInterface(XStyleFamiliesSupplier.class, xTextDoc);
 
         try {
             XNameAccess oStyleFamilies = oStyleFamiliesSupplier.getStyleFamilies();
-            XNameContainer NumStyles = (XNameContainer) AnyConverter.toObject(
-                new Type(XNameContainer.class),
+            XNameContainer NumStyles = AnyConverter.toObject(
+                XNameContainer.class,
                     oStyleFamilies.getByName("NumberingStyles"));
-            NumStyleI = (XIndexAccess)
+            NumStyleI =
                 UnoRuntime.queryInterface(XIndexAccess.class,NumStyles);
         } catch ( com.sun.star.lang.WrappedTargetException e ) {
             log.println("Error, exception occurred...");
@@ -143,13 +143,13 @@ public class SwXNumberingRules extends TestCase {
         Object instance1 = null;
 
         try {
-            oObj = (XInterface) AnyConverter.toObject(
-                    new Type(XInterface.class),NumStyleI.getByIndex(0));
-            XPropertySet props = (XPropertySet)
+            oObj = AnyConverter.toObject(
+                    XInterface.class,NumStyleI.getByIndex(0));
+            XPropertySet props =
                 UnoRuntime.queryInterface(XPropertySet.class, oObj);
-            oObj = (XInterface) AnyConverter.toObject(
-                new Type(XInterface.class),props.getPropertyValue("NumberingRules"));
-            XIndexAccess nRules = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, props.getPropertyValue("NumberingRules"));
+            oObj = AnyConverter.toObject(
+                XInterface.class,props.getPropertyValue("NumberingRules"));
+            XIndexAccess nRules = UnoRuntime.queryInterface(XIndexAccess.class, props.getPropertyValue("NumberingRules"));
             instance1 = nRules.getByIndex(0);
         } catch ( com.sun.star.lang.WrappedTargetException e ) {
             log.println("Error, exception occurred...");

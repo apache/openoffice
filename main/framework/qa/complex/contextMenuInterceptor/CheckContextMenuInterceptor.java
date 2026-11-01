@@ -162,7 +162,7 @@ public class CheckContextMenuInterceptor
                 // String sFile = util.utils.getFullTestURL("space-metal.jpg");
                 oShapeProps.setPropertyValue("GraphicURL", sFile);
                 Object oProp = oShapeProps.getPropertyValue("GraphicObjectFillBitmap");
-                xBitmap = (XBitmap) AnyConverter.toObject(new Type(XBitmap.class), oProp);
+                xBitmap = AnyConverter.toObject(XBitmap.class, oProp);
             }
             catch (com.sun.star.lang.WrappedTargetException e)
             {

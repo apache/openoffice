@@ -94,13 +94,13 @@ public class CreateShowHideEditDeleteComments {
 	public void testCreateEditDeleteComments() throws Exception {
 
 		scComponent = unoApp.newDocument("scalc");
-		scDocument = (XSpreadsheetDocument) UnoRuntime.queryInterface(XSpreadsheetDocument.class, scComponent);
+		scDocument = UnoRuntime.queryInterface(XSpreadsheetDocument.class, scComponent);
 		XSpreadsheets xSpreadsheets = scDocument.getSheets();
 
 		// Gets the first sheet in the document.
-	    XIndexAccess xSheetsIA = (XIndexAccess)UnoRuntime.queryInterface(XIndexAccess.class, xSpreadsheets);
-		Object sheetObj = (XSpreadsheet)UnoRuntime.queryInterface(XSpreadsheet.class, xSheetsIA.getByIndex(0));
-	    XSpreadsheet xSheet = (XSpreadsheet) UnoRuntime.queryInterface(XSpreadsheet.class, sheetObj);
+	    XIndexAccess xSheetsIA = UnoRuntime.queryInterface(XIndexAccess.class, xSpreadsheets);
+		Object sheetObj = UnoRuntime.queryInterface(XSpreadsheet.class, xSheetsIA.getByIndex(0));
+	    XSpreadsheet xSheet = UnoRuntime.queryInterface(XSpreadsheet.class, sheetObj);
 
 		// Get current sheet
 		xSheet = SCUtil.getCurrentSheet(scDocument);
@@ -113,13 +113,13 @@ public class CreateShowHideEditDeleteComments {
 			xCell.setValue(nRow);
 
 			// Create the CellAddress structure
-	        XCellAddressable xCellAddr = (XCellAddressable)
+	        XCellAddressable xCellAddr =
 	         UnoRuntime.queryInterface(XCellAddressable.class, xCell);
 	        CellAddress aAddress = xCellAddr.getCellAddress();
 
 	        // Insert an annotation
 	        XSheetAnnotationsSupplier xAnnotationsSupp =
-	         (XSheetAnnotationsSupplier) UnoRuntime.queryInterface(
+	         UnoRuntime.queryInterface(
 	             XSheetAnnotationsSupplier.class, xSheet);
 	        XSheetAnnotations xAnnotations = xAnnotationsSupp.getAnnotations();
 	        xAnnotations.insertNew(aAddress, "This is an annotation");
@@ -128,7 +128,7 @@ public class CreateShowHideEditDeleteComments {
 	    }
 
         XSheetAnnotationsSupplier xAnnotationsSupp =
-		         (XSheetAnnotationsSupplier) UnoRuntime.queryInterface(
+		         UnoRuntime.queryInterface(
 		             XSheetAnnotationsSupplier.class, xSheet);
 		XSheetAnnotations xAnnotations = xAnnotationsSupp.getAnnotations();
 
@@ -156,13 +156,13 @@ public class CreateShowHideEditDeleteComments {
 	public void testShowHideComments() throws Exception {
 
 		scComponent = unoApp.newDocument("scalc");
-		scDocument = (XSpreadsheetDocument) UnoRuntime.queryInterface(XSpreadsheetDocument.class, scComponent);
+		scDocument = UnoRuntime.queryInterface(XSpreadsheetDocument.class, scComponent);
 		XSpreadsheets xSpreadsheets = scDocument.getSheets();
 
 		// Gets the first sheet in the document.
-	    XIndexAccess xSheetsIA = (XIndexAccess)UnoRuntime.queryInterface(XIndexAccess.class, xSpreadsheets);
-		Object sheetObj = (XSpreadsheet)UnoRuntime.queryInterface(XSpreadsheet.class, xSheetsIA.getByIndex(0));
-	    XSpreadsheet xSheet = (XSpreadsheet) UnoRuntime.queryInterface(XSpreadsheet.class, sheetObj);
+	    XIndexAccess xSheetsIA = UnoRuntime.queryInterface(XIndexAccess.class, xSpreadsheets);
+		Object sheetObj = UnoRuntime.queryInterface(XSpreadsheet.class, xSheetsIA.getByIndex(0));
+	    XSpreadsheet xSheet = UnoRuntime.queryInterface(XSpreadsheet.class, sheetObj);
 
 		// Get current sheet
 		xSheet = SCUtil.getCurrentSheet(scDocument);
@@ -174,19 +174,19 @@ public class CreateShowHideEditDeleteComments {
 		int nRow = 1;
 
 	    XCell xCell = xSheet.getCellByPosition(nColumn, nRow);
-	    XCellAddressable xCellAddr = (XCellAddressable)
+	    XCellAddressable xCellAddr =
 	         UnoRuntime.queryInterface(XCellAddressable.class, xCell);
 	    CellAddress aAddress = xCellAddr.getCellAddress();
 
 	    // Insert an annotation
 	    XSheetAnnotationsSupplier xAnnotationsSupp =
-	         (XSheetAnnotationsSupplier) UnoRuntime.queryInterface(
+	         UnoRuntime.queryInterface(
 	             XSheetAnnotationsSupplier.class, xSheet);
 	    XSheetAnnotations xAnnotations = xAnnotationsSupp.getAnnotations();
 	    xAnnotations.insertNew(aAddress, "This is an annotation");
 
 	    XSheetAnnotationAnchor xAnnotAnchor =
-                (XSheetAnnotationAnchor) UnoRuntime.queryInterface(XSheetAnnotationAnchor.class, xCell);
+                UnoRuntime.queryInterface(XSheetAnnotationAnchor.class, xCell);
         XSheetAnnotation xAnnotation = xAnnotAnchor.getAnnotation();
 
         // Make the annotation visible

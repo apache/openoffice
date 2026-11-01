@@ -85,7 +85,7 @@ public class AccessibleIconChoiceCtrlEntry extends TestCase {
      * Creates the Desktop service (<code>com.sun.star.frame.Desktop</code>).
      */
     protected void initialize(TestParameters Param, PrintWriter log) {
-        the_Desk = (XDesktop) UnoRuntime.queryInterface(
+        the_Desk = UnoRuntime.queryInterface(
                     XDesktop.class, DesktopTools.createDesktop((XMultiServiceFactory)Param.getMSF()));
     }
 
@@ -161,7 +161,7 @@ public class AccessibleIconChoiceCtrlEntry extends TestCase {
 
         shortWait();
 
-        XModel aModel1 = (XModel)
+        XModel aModel1 =
                     UnoRuntime.queryInterface(XModel.class, xTextDoc);
 
         XController secondController = aModel1.getCurrentController();
@@ -174,7 +174,7 @@ public class AccessibleIconChoiceCtrlEntry extends TestCase {
         try {
             XInterface transf = (XInterface)((XMultiServiceFactory)tParam.getMSF()).createInstance
                 ("com.sun.star.util.URLTransformer");
-            urlTransf = (XURLTransformer)UnoRuntime.queryInterface
+            urlTransf = UnoRuntime.queryInterface
                 (XURLTransformer.class, transf);
         } catch (com.sun.star.uno.Exception e) {
             e.printStackTrace(log);
@@ -203,14 +203,14 @@ public class AccessibleIconChoiceCtrlEntry extends TestCase {
             throw new StatusException("Couldn't get toolkit", e );
         }
 
-        XExtendedToolkit tk = (XExtendedToolkit)
+        XExtendedToolkit tk =
             UnoRuntime.queryInterface(XExtendedToolkit.class, oObj);
 
         AccessibilityTools at = new AccessibilityTools();
 
         shortWait();
 
-        XWindow xWindow = (XWindow)
+        XWindow xWindow =
             UnoRuntime.queryInterface(XWindow.class, tk.getActiveTopWindow());
 
         XAccessible xRoot = at.getAccessibleObject(xWindow);
@@ -221,7 +221,7 @@ public class AccessibleIconChoiceCtrlEntry extends TestCase {
         XAccessibleContext closeButton = at.getAccessibleObjectForRole(xRoot,
             AccessibleRole.PUSH_BUTTON, "Close");
 
-        accCloseButton = (XAccessibleAction)
+        accCloseButton =
             UnoRuntime.queryInterface(XAccessibleAction.class, closeButton);
 
         log.println("ImplementationName: "+ util.utils.getImplName(oObj));

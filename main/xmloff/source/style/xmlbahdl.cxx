@@ -421,6 +421,13 @@ sal_Bool XMLNegPercentPropHdl::exportXML( OUString& rStrExpValue, const Any& rVa
 
 	if( lcl_xmloff_getAny( rValue, nValue, nBytes ) )
 	{
+		if( nBytes == 2 )
+		{
+			if( nValue < 0 )
+				nValue = 0;
+			else if( nValue > 100 )
+				nValue = 100;
+		}
 	 	SvXMLUnitConverter::convertPercent( aOut, 100-nValue );
 		rStrExpValue = aOut.makeStringAndClear();
 

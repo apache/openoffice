@@ -64,11 +64,11 @@ public class WikiDialog implements XDialogEventHandler, XTopWindowListener
         {
             Object obj;
             obj = xMCF.createInstanceWithContext("com.sun.star.awt.DialogProvider2", m_xContext );
-            XDialogProvider2 xDialogProvider = (XDialogProvider2) UnoRuntime.queryInterface( XDialogProvider2.class, obj );
+            XDialogProvider2 xDialogProvider = UnoRuntime.queryInterface( XDialogProvider2.class, obj );
 
             m_xDialog = xDialogProvider.createDialogWithHandler( DialogURL, this );
-            m_xControlContainer = (XControlContainer)UnoRuntime.queryInterface( XControlContainer.class, m_xDialog );
-            XTopWindow xTopWindow = (XTopWindow)UnoRuntime.queryInterface( XTopWindow.class, m_xDialog );
+            m_xControlContainer = UnoRuntime.queryInterface( XControlContainer.class, m_xDialog );
+            XTopWindow xTopWindow = UnoRuntime.queryInterface( XTopWindow.class, m_xDialog );
             if ( xTopWindow != null )
                 xTopWindow.addTopWindowListener( this );
         }
@@ -133,10 +133,10 @@ public class WikiDialog implements XDialogEventHandler, XTopWindowListener
     {
         if ( xDialog != null && sTitle != null )
         {
-            XControl xDialogControl = (XControl)UnoRuntime.queryInterface( XControl.class, xDialog );
+            XControl xDialogControl = UnoRuntime.queryInterface( XControl.class, xDialog );
             if ( xDialogControl != null )
             {
-                XPropertySet xPropSet = (XPropertySet)UnoRuntime.queryInterface( XPropertySet.class, xDialogControl.getModel() );
+                XPropertySet xPropSet = UnoRuntime.queryInterface( XPropertySet.class, xDialogControl.getModel() );
                 if ( xPropSet != null )
                     xPropSet.setPropertyValue( "Title", sTitle );
             }
@@ -155,7 +155,7 @@ public class WikiDialog implements XDialogEventHandler, XTopWindowListener
         if ( xControlContainer != null && sControl != null )
         {
             XControl xControl = xControlContainer.getControl(sControl);
-            xPS = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, xControl.getModel() );
+            xPS = UnoRuntime.queryInterface(XPropertySet.class, xControl.getModel() );
         }
 
         if ( xPS == null )
@@ -173,7 +173,7 @@ public class WikiDialog implements XDialogEventHandler, XTopWindowListener
             try
             {
                 Object oDialogProvider = xContext.getServiceManager().createInstanceWithContext("com.sun.star.awt.DialogProvider2", xContext );
-                XDialogProvider2 xDialogProvider = (XDialogProvider2) UnoRuntime.queryInterface( XDialogProvider2.class, oDialogProvider );
+                XDialogProvider2 xDialogProvider = UnoRuntime.queryInterface( XDialogProvider2.class, oDialogProvider );
 
                 if ( xDialogProvider != null )
                     xResult = xDialogProvider.createDialog( sURL );
@@ -183,7 +183,7 @@ public class WikiDialog implements XDialogEventHandler, XTopWindowListener
                     SetTitle( xResult, Helper.GetLocalizedString( xContext, nTitleID ) );
                     if ( pControls != null && pStringIDs != null && pControls.length == pStringIDs.length )
                     {
-                        XControlContainer xControlContainer = (XControlContainer)UnoRuntime.queryInterface( XControlContainer.class, xResult );
+                        XControlContainer xControlContainer = UnoRuntime.queryInterface( XControlContainer.class, xResult );
                         for ( int nInd = 0; nInd < pControls.length; nInd++ )
                             GetPropSet( xControlContainer, pControls[nInd] ).setPropertyValue( "Label", new Integer( pStringIDs[nInd] ) );
                     }
@@ -202,16 +202,16 @@ public class WikiDialog implements XDialogEventHandler, XTopWindowListener
     {
         try
         {
-            XControl xDialogControl = ( XControl ) UnoRuntime.queryInterface( XControl.class, m_xDialog );
+            XControl xDialogControl = UnoRuntime.queryInterface( XControl.class, m_xDialog );
             XControlModel xDialogModel = null;
             if ( xDialogControl != null )
                 xDialogModel = xDialogControl.getModel();
 
-            XMultiServiceFactory xDialogFactory = ( XMultiServiceFactory ) UnoRuntime.queryInterface( XMultiServiceFactory.class, xDialogModel );
+            XMultiServiceFactory xDialogFactory = UnoRuntime.queryInterface( XMultiServiceFactory.class, xDialogModel );
             if ( xDialogFactory != null )
             {
-                XControlModel xThrobberModel = (XControlModel)UnoRuntime.queryInterface( XControlModel.class, xDialogFactory.createInstance( "com.sun.star.awt.SpinningProgressControlModel" ) );
-                XPropertySet xThrobberProps = (XPropertySet)UnoRuntime.queryInterface( XPropertySet.class, xThrobberModel );
+                XControlModel xThrobberModel = UnoRuntime.queryInterface( XControlModel.class, xDialogFactory.createInstance( "com.sun.star.awt.SpinningProgressControlModel" ) );
+                XPropertySet xThrobberProps = UnoRuntime.queryInterface( XPropertySet.class, xThrobberModel );
                 if ( xThrobberProps != null )
                 {
                     xThrobberProps.setPropertyValue( "Name", "WikiThrobber" );
@@ -220,7 +220,7 @@ public class WikiDialog implements XDialogEventHandler, XTopWindowListener
                     xThrobberProps.setPropertyValue( "Width", new Integer( Width ) );
                     xThrobberProps.setPropertyValue( "Height", new Integer( Height ) );
 
-                    XNameContainer xDialogContainer = (XNameContainer)UnoRuntime.queryInterface( XNameContainer.class, xDialogModel );
+                    XNameContainer xDialogContainer = UnoRuntime.queryInterface( XNameContainer.class, xDialogModel );
                     xDialogContainer.insertByName( "WikiThrobber", xThrobberModel );
                 }
             }
@@ -239,7 +239,7 @@ public class WikiDialog implements XDialogEventHandler, XTopWindowListener
         {
             try
             {
-                XAnimation xThrobber = (XAnimation)UnoRuntime.queryInterface( XAnimation.class, m_xControlContainer.getControl( "WikiThrobber" ) );
+                XAnimation xThrobber = UnoRuntime.queryInterface( XAnimation.class, m_xControlContainer.getControl( "WikiThrobber" ) );
                 if ( xThrobber != null )
                 {
                     if ( bActive )
@@ -261,7 +261,7 @@ public class WikiDialog implements XDialogEventHandler, XTopWindowListener
         {
             try
             {
-                XWindow xWindow = (XWindow)UnoRuntime.queryInterface( XWindow.class, m_xControlContainer.getControl( "WikiThrobber" ) );
+                XWindow xWindow = UnoRuntime.queryInterface( XWindow.class, m_xControlContainer.getControl( "WikiThrobber" ) );
                 if ( xWindow != null )
                     xWindow.setVisible( bVisible );
             }
@@ -278,7 +278,7 @@ public class WikiDialog implements XDialogEventHandler, XTopWindowListener
         {
             try
             {
-                XWindow xWindow = (XWindow)UnoRuntime.queryInterface( XWindow.class, m_xControlContainer.getControl( aControl ) );
+                XWindow xWindow = UnoRuntime.queryInterface( XWindow.class, m_xControlContainer.getControl( aControl ) );
                 if ( xWindow != null )
                     xWindow.setFocus();
             }

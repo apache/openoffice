@@ -106,9 +106,9 @@ public class SpreadsheetDocHelper
         try
         {
             com.sun.star.container.XIndexAccess xSheetsIA =
-                (com.sun.star.container.XIndexAccess)UnoRuntime.queryInterface(
+                UnoRuntime.queryInterface(
                     com.sun.star.container.XIndexAccess.class, xSheets );
-            xSheet = (com.sun.star.sheet.XSpreadsheet) UnoRuntime.queryInterface(
+            xSheet = UnoRuntime.queryInterface(
                com.sun.star.sheet.XSpreadsheet.class, xSheetsIA.getByIndex(nIndex));
         }
         catch (Exception ex)
@@ -133,7 +133,7 @@ public class SpreadsheetDocHelper
         try
         {
             xSheets.insertNewByName( aName, nIndex );
-            xSheet = (com.sun.star.sheet.XSpreadsheet)
+            xSheet =
                 UnoRuntime.queryInterface(com.sun.star.sheet.XSpreadsheet.class,
                                           xSheets.getByName( aName ));
         }
@@ -191,15 +191,15 @@ public class SpreadsheetDocHelper
 
         // Set standard date format.
         com.sun.star.util.XNumberFormatsSupplier xFormatsSupplier =
-            (com.sun.star.util.XNumberFormatsSupplier) UnoRuntime.queryInterface(
+            UnoRuntime.queryInterface(
                 com.sun.star.util.XNumberFormatsSupplier.class, getDocument() );
         com.sun.star.util.XNumberFormatTypes xFormatTypes =
-            (com.sun.star.util.XNumberFormatTypes) UnoRuntime.queryInterface(
+            UnoRuntime.queryInterface(
                 com.sun.star.util.XNumberFormatTypes.class, xFormatsSupplier.getNumberFormats() );
         int nFormat = xFormatTypes.getStandardFormat(
             com.sun.star.util.NumberFormat.DATE, new com.sun.star.lang.Locale() );
 
-        com.sun.star.beans.XPropertySet xPropSet = (com.sun.star.beans.XPropertySet)
+        com.sun.star.beans.XPropertySet xPropSet =
             UnoRuntime.queryInterface( com.sun.star.beans.XPropertySet.class, xCell );
         xPropSet.setPropertyValue( "NumberFormat", new Integer( nFormat ) );
     }
@@ -218,7 +218,7 @@ public class SpreadsheetDocHelper
 
         // draw border
         xCellRange = xSheet.getCellRangeByName( aRange );
-        xPropSet = (com.sun.star.beans.XPropertySet)
+        xPropSet =
             UnoRuntime.queryInterface( com.sun.star.beans.XPropertySet.class, xCellRange );
         com.sun.star.table.BorderLine aLine = new com.sun.star.table.BorderLine();
         aLine.Color = 0x99CCFF;
@@ -231,19 +231,19 @@ public class SpreadsheetDocHelper
         xPropSet.setPropertyValue( "TableBorder", aBorder );
 
         // draw headline
-        com.sun.star.sheet.XCellRangeAddressable xAddr = (com.sun.star.sheet.XCellRangeAddressable)
+        com.sun.star.sheet.XCellRangeAddressable xAddr =
             UnoRuntime.queryInterface( com.sun.star.sheet.XCellRangeAddressable.class, xCellRange );
         com.sun.star.table.CellRangeAddress aAddr = xAddr.getRangeAddress();
 
         xCellRange = xSheet.getCellRangeByPosition(
             aAddr.StartColumn, aAddr.StartRow, aAddr.EndColumn, aAddr.StartRow );
-        xPropSet = (com.sun.star.beans.XPropertySet)
+        xPropSet =
             UnoRuntime.queryInterface( com.sun.star.beans.XPropertySet.class, xCellRange );
         xPropSet.setPropertyValue( "CellBackColor", new Integer( 0x99CCFF ) );
         // write headline
         com.sun.star.table.XCell xCell = xCellRange.getCellByPosition( 0, 0 );
         xCell.setFormula( aHeadline );
-        xPropSet = (com.sun.star.beans.XPropertySet)
+        xPropSet =
             UnoRuntime.queryInterface( com.sun.star.beans.XPropertySet.class, xCell );
         xPropSet.setPropertyValue( "CharColor", new Integer( 0x003399 ) );
         xPropSet.setPropertyValue( "CharWeight", new Float( com.sun.star.awt.FontWeight.BOLD ) );
@@ -260,7 +260,7 @@ public class SpreadsheetDocHelper
             com.sun.star.sheet.XSpreadsheet xSheet,
             String aCell ) throws RuntimeException, Exception
     {
-        com.sun.star.sheet.XCellAddressable xAddr = (com.sun.star.sheet.XCellAddressable)
+        com.sun.star.sheet.XCellAddressable xAddr =
             UnoRuntime.queryInterface( com.sun.star.sheet.XCellAddressable.class,
                 xSheet.getCellRangeByName( aCell ).getCellByPosition( 0, 0 ) );
         return xAddr.getCellAddress();
@@ -273,7 +273,7 @@ public class SpreadsheetDocHelper
     public com.sun.star.table.CellRangeAddress createCellRangeAddress(
             com.sun.star.sheet.XSpreadsheet xSheet, String aRange )
     {
-        com.sun.star.sheet.XCellRangeAddressable xAddr = (com.sun.star.sheet.XCellRangeAddressable)
+        com.sun.star.sheet.XCellRangeAddressable xAddr =
             UnoRuntime.queryInterface( com.sun.star.sheet.XCellRangeAddressable.class,
                 xSheet.getCellRangeByName( aRange ) );
         return xAddr.getRangeAddress();
@@ -320,11 +320,11 @@ public class SpreadsheetDocHelper
         if (bWithSheet)
         {
             com.sun.star.sheet.XSpreadsheet xSheet = xCellRange.getSpreadsheet();
-            com.sun.star.container.XNamed xNamed = (com.sun.star.container.XNamed)
+            com.sun.star.container.XNamed xNamed =
                 UnoRuntime.queryInterface( com.sun.star.container.XNamed.class, xSheet );
             aStr += xNamed.getName() + ".";
         }
-        com.sun.star.sheet.XCellRangeAddressable xAddr = (com.sun.star.sheet.XCellRangeAddressable)
+        com.sun.star.sheet.XCellRangeAddressable xAddr =
             UnoRuntime.queryInterface( com.sun.star.sheet.XCellRangeAddressable.class, xCellRange );
         aStr += getCellRangeAddressString( xAddr.getRangeAddress() );
         return aStr;
@@ -343,7 +343,7 @@ public class SpreadsheetDocHelper
             if (nIndex > 0)
                 aStr += " ";
             Object aRangeObj = xRangesIA.getByIndex( nIndex );
-            com.sun.star.sheet.XSheetCellRange xCellRange = (com.sun.star.sheet.XSheetCellRange)
+            com.sun.star.sheet.XSheetCellRange xCellRange =
                 UnoRuntime.queryInterface( com.sun.star.sheet.XSheetCellRange.class, aRangeObj );
             aStr += getCellRangeAddressString( xCellRange, false );
         }
@@ -376,7 +376,7 @@ public class SpreadsheetDocHelper
     private com.sun.star.sheet.XSpreadsheetDocument initDocument()
             throws RuntimeException, Exception
     {
-        XComponentLoader aLoader = (XComponentLoader)
+        XComponentLoader aLoader =
             UnoRuntime.queryInterface(
                 XComponentLoader.class,
                 mxRemoteServiceManager.createInstanceWithContext(
@@ -386,7 +386,7 @@ public class SpreadsheetDocHelper
             "private:factory/scalc", "_blank", 0,
             new com.sun.star.beans.PropertyValue[0] );
 
-        return (com.sun.star.sheet.XSpreadsheetDocument)UnoRuntime.queryInterface(
+        return UnoRuntime.queryInterface(
             com.sun.star.sheet.XSpreadsheetDocument.class, xComponent );
     }
 

@@ -168,20 +168,20 @@ public class ToDo {
             try {
                 // Querying for the interface XSpreadsheetDocument
                 XSpreadsheetDocument xspreadsheetdocument =
-                    ( XSpreadsheetDocument ) UnoRuntime.queryInterface(
+                    UnoRuntime.queryInterface(
                         XSpreadsheetDocument.class, aInstance );
 
                 // Querying for the interface XIndexAccess
-                XIndexAccess xindexaccess = ( XIndexAccess )
+                XIndexAccess xindexaccess =
                     UnoRuntime.queryInterface( XIndexAccess.class,
                                                xspreadsheetdocument.getSheets() );
 
                 // Getting the first XSpreadsheet
-                XSpreadsheet xspreadsheet = (XSpreadsheet)UnoRuntime.queryInterface(
+                XSpreadsheet xspreadsheet = UnoRuntime.queryInterface(
                     XSpreadsheet.class, xindexaccess.getByIndex( 0 ));
 
                 // Querying for the interface XCellRange on the XSpeadsheet
-                XCellRange xcellrange = ( XCellRange )
+                XCellRange xcellrange =
                 UnoRuntime.queryInterface( XCellRange.class, xspreadsheet );
 
                 /* Getting the Gregorian calendar with the date on which to start
@@ -203,7 +203,7 @@ public class ToDo {
 
                 // Querying for the interface XFunctionAccess on service
                 // FunctionAccess
-                XFunctionAccess xfunctionaccess = (XFunctionAccess)
+                XFunctionAccess xfunctionaccess =
                     UnoRuntime.queryInterface(XFunctionAccess.class,
                                               objectFunctionAccess );
 
@@ -265,7 +265,7 @@ public class ToDo {
                 {
                     // Querying for the interface XPropertySet for the cell
                     // providing the due date
-                    XPropertySet xpropertyset = ( XPropertySet )
+                    XPropertySet xpropertyset =
                         UnoRuntime.queryInterface(XPropertySet.class,
                                                   xcellrange.getCellByPosition(
                                                       this.INT_COLUMN_DUEDATE,
@@ -280,14 +280,14 @@ public class ToDo {
                     this.INT_COLUMN_FEATURE, intRow );
 
                     // Querying for the interface XSimpleText
-                    XSimpleText xsimpletext = ( XSimpleText )
+                    XSimpleText xsimpletext =
                     UnoRuntime.queryInterface( XSimpleText.class, xcell );
 
                     // Getting the text cursor
                     XTextCursor xtextcursor = xsimpletext.createTextCursor();
 
                     // Querying for the interface XTextRange
-                    XTextRange xtextrange = ( XTextRange )
+                    XTextRange xtextrange =
                     UnoRuntime.queryInterface( XTextRange.class, xtextcursor );
 
                     // Getting the bug ID from the cell
@@ -299,7 +299,7 @@ public class ToDo {
 
                         // Querying for the interface XMultiServiceFactory
                         XMultiServiceFactory xMSFTextField =
-                            (XMultiServiceFactory)UnoRuntime.queryInterface(
+                            UnoRuntime.queryInterface(
                                 XMultiServiceFactory.class, aInstance );
 
                         // Creating an instance of the text field URL
@@ -308,12 +308,12 @@ public class ToDo {
                                 "com.sun.star.text.TextField.URL" );
 
                         // Querying for the interface XTextField
-                        XTextField xtextfield = ( XTextField )
+                        XTextField xtextfield =
                             UnoRuntime.queryInterface( XTextField.class,
                                                        objectTextField );
 
                         // Querying for the interface XPropertySet
-                        XPropertySet xpropertysetTextField = ( XPropertySet )
+                        XPropertySet xpropertysetTextField =
                             UnoRuntime.queryInterface( XPropertySet.class,
                                                        xtextfield );
 
@@ -326,7 +326,7 @@ public class ToDo {
                                                                 sBugID );
 
                         // Querying for the interface XText
-                        XText xtext = ( XText )UnoRuntime.queryInterface(
+                        XText xtext = UnoRuntime.queryInterface(
                             XText.class, xcell );
 
                         // Delete cell content
@@ -501,7 +501,7 @@ public class ToDo {
                                          gregCalPreviousDueDate ) ) ) {
                                     // Querying for the interface XPropertySet for
                                     // the cell providing the due date
-                                    XPropertySet xpropertyset = ( XPropertySet )
+                                    XPropertySet xpropertyset =
                                         UnoRuntime.queryInterface(
                                             XPropertySet.class,
                                             xcellrange.getCellByPosition(
@@ -516,7 +516,7 @@ public class ToDo {
                                     // Querying for the interface XColumnRowRange
                                     // on the XCellRange
                                     XColumnRowRange xcolumnrowrange =
-                                        ( XColumnRowRange)UnoRuntime.queryInterface(
+                                        UnoRuntime.queryInterface(
                                             XColumnRowRange.class, xcellrange );
                                     // Inserting one row to the table
                                     XTableRows xTableRows =
@@ -526,7 +526,7 @@ public class ToDo {
                                     // Querying for the interface
                                     // XCellRangeMovement on XCellRange
                                     XCellRangeMovement xcellrangemovement =
-                                      (XCellRangeMovement)UnoRuntime.queryInterface(
+                                      UnoRuntime.queryInterface(
                                           XCellRangeMovement.class, xcellrange );
 
                                     // Creating the cell address of the destination
@@ -645,7 +645,7 @@ public class ToDo {
                 XCell xcellStartDate = xcellrange.getCellByPosition(intColumn,
                                                                     intRow);
                 // Querying for the interface XTextRange on the XCell
-                xtextrangeStartDate = (XTextRange)
+                xtextrangeStartDate =
                     UnoRuntime.queryInterface(XTextRange.class, xcellStartDate);
             }
             catch( Exception exception ) {
@@ -669,7 +669,7 @@ public class ToDo {
                 XCell xcellStartDate = xcellrange.getCellByPosition(intColumn,
                                                                     intRow);
                 // Querying for the interface XTextRange on the XCell
-                XTextRange xtextrange = (XTextRange)
+                XTextRange xtextrange =
                     UnoRuntime.queryInterface(XTextRange.class, xcellStartDate);
                 // Setting the new start date
                 xtextrange.setString( sDate );

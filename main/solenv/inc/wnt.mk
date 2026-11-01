@@ -30,7 +30,9 @@
 .IF "$(COMEX)" == "10"
 .INCLUDE : wntmsci10.mk
 .ELSE
-# for wntmsci11 (.Net 2005) and wntmsci12 (.Net 2008)
+# for wntmsci11 (.Net 2005), wntmsci12 (.Net 2008) and wntmsci14 (the UCRT
+# generation, VS2015 and newer -- which reuses this file and then includes
+# wntmsc14.mk for what it does differently)
 .INCLUDE : wntmsci11.mk
 .ENDIF # "$(COMEX)" == "10"
 .ENDIF # "$(OS)$(COM)$(CPU)" == "WNTMSCI"
