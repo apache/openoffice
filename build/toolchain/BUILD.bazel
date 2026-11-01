@@ -39,7 +39,7 @@ load(
 #              toolchain and the regression baseline), vs2019 = the modern
 #              toolset + Windows 10 SDK.  Named after the compiler rather than
 #              "legacy"/"modern" so a third one slots in without a rename, and
-#              rather than after the target Windows floor (winxp/win10) because
+#              rather than after the target Windows floor (winxp/win7) because
 #              the two axes can decouple — the floor is carried by
 #              //build/constraints:win_version, which is what resolution
 #              actually keys on.
@@ -170,9 +170,9 @@ toolchain(
         "@platforms//os:windows",
         # Required, not decorative: toolchain resolution accepts a toolchain when
         # the target platform satisfies ALL of target_compatible_with, so without
-        # the floor constraint this VC9 toolchain also matches a win10 platform —
+        # the floor constraint this VC9 toolchain also matches a win7 platform —
         # and being registered first in MODULE.bazel it would WIN there, silently
-        # compiling the win10 target with VS2008.  Each toolchain must pin its floor.
+        # compiling the win7 target with VS2008.  Each toolchain must pin its floor.
         "//build/constraints:winxp",
     ],
     toolchain      = ":aoo_msvc_vs2008_x86",
@@ -298,14 +298,14 @@ toolchain(
         "@platforms//os:windows",
         # The floor pin — see the note on the x86 toolchain above.  This one is
         # load-bearing: without it BOTH this and aoo_msvc_vs2019_x64 match the
-        # win10-x64 platform (same cpu, same os), and registration order decides.
+        # win7-x64 platform (same cpu, same os), and registration order decides.
         "//build/constraints:winxp",
     ],
     toolchain      = ":aoo_msvc_vs2008_x64",
     toolchain_type = "@bazel_tools//tools/cpp:toolchain_type",
 )
 
-# ==================== x64 (win10, modern MSVC + Win10 SDK) ====================
+# ==================== x64 (win7, modern MSVC + Win10 SDK) ====================
 #
 # The third toolchain: same windows_cc_toolchain_config.bzl, same arch_defines
 # and same /Z7-embed debug story as aoo_msvc_vs2008_x64 — only the tool paths and
@@ -438,12 +438,12 @@ toolchain(
         "@platforms//os:windows",
     ],
     target_compatible_with = [
-        # Same cpu+os as aoo_msvc_vs2008_x64 — //build/constraints:win10 is the
+        # Same cpu+os as aoo_msvc_vs2008_x64 — //build/constraints:win7 is the
         # ONLY thing that separates the two.  Resolved against
-        # //build/platforms:win10-x64 (--config=win10-x64).
+        # //build/platforms:win7-x64 (--config=win7-x64).
         "@platforms//cpu:x86_64",
         "@platforms//os:windows",
-        "//build/constraints:win10",
+        "//build/constraints:win7",
     ],
     toolchain      = ":aoo_msvc_vs2019_x64",
     toolchain_type = "@bazel_tools//tools/cpp:toolchain_type",

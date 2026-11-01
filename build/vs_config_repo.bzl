@@ -15,7 +15,7 @@ flag value so bazelrc doesn't strip backslashes):
 The generated @vs_config//:paths.bzl exposes VS, VC, SDK, MSVC_TMP,
 PERL, DEBUG_CRT_DIR, LINK_WRAPPER, and PDB_LINK.
 
-## Modern toolchain discovery (win10 target, M1)
+## Modern toolchain discovery (win7 target, M1)
 
 Two independent installs are located, both under their own env var and both
 overridable with an explicit version pin:
@@ -79,7 +79,7 @@ _DEFAULT_VS   = "C:\\Program Files (x86)\\Microsoft Visual Studio 9.0"
 _DEFAULT_SDK  = "C:\\Program Files\\Microsoft SDKs\\Windows\\v7.0"
 _DEFAULT_TMP  = "C:\\Temp"
 _DEFAULT_PERL = "C:\\msys64\\usr\\bin\\perl.exe"
-# Modern MSVC (VS2017+/BuildTools) install root.  Two consumers: the win10
+# Modern MSVC (VS2017+/BuildTools) install root.  Two consumers: the win7
 # toolchain proper, and the newer link.exe the VC9 toolchains use for their
 # generate_pdb path (see _find_msvc_toolset / _modern_link / PDB_LINK below).
 _DEFAULT_VS_MODERN = "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools"
@@ -333,7 +333,7 @@ def _vs_config_impl(rctx):
     rctx.file("msvc_link.bat", bat)
     link_wrapper = str(rctx.path("msvc_link.bat"))
 
-    # ── modern MSVC toolset (win10 target) ───────────────────────────────────
+    # ── modern MSVC toolset (win7 target) ───────────────────────────────────
     if toolset != None:
         modern = [
             "# Modern MSVC toolset — discovered under VS_MODERN_PATH.",
@@ -347,7 +347,7 @@ def _vs_config_impl(rctx):
         ]
     else:
         modern = [
-            "# No modern MSVC toolset found under VS_MODERN_PATH — the win10 toolchain",
+            "# No modern MSVC toolset found under VS_MODERN_PATH — the win7 toolchain",
             "# cannot resolve, and generate_pdb links on the VC9 toolchains fall back to",
             "# a placeholder.  Set --repo_env=VS_MODERN_PATH in user.bazelrc.",
             'MSVC_TOOLSET_VER = "{}"'.format(_NO_TOOLSET),
@@ -358,7 +358,7 @@ def _vs_config_impl(rctx):
             'MSVC_INCLUDE     = "{}"'.format(_NO_TOOLSET),
         ]
 
-    # ── Windows 10 SDK (win10 target) ────────────────────────────────────────
+    # ── Windows 10 SDK (win7 target) ────────────────────────────────────────
     if sdk10_found != None:
         kit = [
             "# Windows 10 SDK — discovered under WIN10_SDK_PATH.",
@@ -373,7 +373,7 @@ def _vs_config_impl(rctx):
     else:
         kit = [
             "# No complete Windows 10 SDK found under WIN10_SDK_PATH (a version needs",
-            "# BOTH an Include\\<ver> and a Lib\\<ver> tree).  The win10 toolchain cannot",
+            "# BOTH an Include\\<ver> and a Lib\\<ver> tree).  The win7 toolchain cannot",
             "# resolve.  Set --repo_env=WIN10_SDK_PATH in user.bazelrc.",
             'SDK10_VER     = "{}"'.format(_NO_SDK10),
             'SDK10_ROOT    = "{}"'.format(_NO_SDK10),

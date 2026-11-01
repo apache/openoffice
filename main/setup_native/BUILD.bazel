@@ -13,12 +13,12 @@ exports_files([
 # VC9 runtime manifest at RT_MANIFEST id 1, winXP builds only -- same select as
 # //main/desktop's small EXEs, which explains why.
 _VC90_MANIFEST_INPUTS = select({
-    "//build/constraints:is_win10": [],
+    "//build/constraints:is_win7": [],
     "//conditions:default": ["//main/external/msvcp90:vc90_app_manifest_res"],
 })
 
 _VC90_MANIFEST_LINKOPTS = select({
-    "//build/constraints:is_win10": [],
+    "//build/constraints:is_win7": [],
     "//conditions:default": ["$(execpath //main/external/msvcp90:vc90_app_manifest_res)"],
 })
 

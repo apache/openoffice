@@ -22,9 +22,9 @@ is what puts clangd in MSVC-compatible driver mode so it understands /D, /I,
 /Zc: and friends.
 
     gen_compile_commands.py --target //main/staging:install
-    gen_compile_commands.py --target //main/sw:sw --config win10-x64
+    gen_compile_commands.py --target //main/sw:sw --config win7-x64
 
-NOTE ON TOOLCHAIN CHOICE: prefer --config win10-x64.  Indexing resolves the
+NOTE ON TOOLCHAIN CHOICE: prefer --config win7-x64.  Indexing resolves the
 system headers of whichever toolchain the config selects, and a modern clang
 parses the VS2019/UCRT headers far more cleanly than the VS2008 ones.  The
 compile flags that matter for correctness (the global defines, the include
@@ -141,7 +141,7 @@ def main(argv=None):
     ap.add_argument("--target", default="//main/staging:install",
                     help="Bazel target whose deps get indexed")
     ap.add_argument("--config", default=None,
-                    help="bazelrc config, e.g. win10-x64 (recommended)")
+                    help="bazelrc config, e.g. win7-x64 (recommended)")
     ap.add_argument("--driver", default=None,
                     help="path to clang-cl.exe (default: found on PATH)")
     ap.add_argument("--out", default="compile_commands.json")

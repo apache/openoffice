@@ -52,7 +52,7 @@ cc_library(
         "systemstlguards",
     ] + select({
         # The pure forwarders are VC9-only; see above.
-        "//build/constraints:is_win10": [],
+        "//build/constraints:is_win7": [],
         "//conditions:default": ["systemstl/vc9"],
     }),
     visibility = ["//visibility:public"],

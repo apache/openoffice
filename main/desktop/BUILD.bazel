@@ -817,15 +817,15 @@ cc_binary(
 # dies before main() with a "System Error" box (0xC0000135).  dmake embedded a
 # manifest into every EXE with mt.exe; here it is linked in as a .res at
 # RT_MANIFEST id 1.  The modern toolchain's runtime is not side-by-side, so a
-# win10 build gets nothing -- a VC90 manifest there would demand an assembly
+# win7 build gets nothing -- a VC90 manifest there would demand an assembly
 # the image never uses.
 _VC90_MANIFEST_INPUTS = select({
-    "//build/constraints:is_win10": [],
+    "//build/constraints:is_win7": [],
     "//conditions:default": ["//main/external/msvcp90:vc90_app_manifest_res"],
 })
 
 _VC90_MANIFEST_LINKOPTS = select({
-    "//build/constraints:is_win10": [],
+    "//build/constraints:is_win7": [],
     "//conditions:default": ["$(execpath //main/external/msvcp90:vc90_app_manifest_res)"],
 })
 

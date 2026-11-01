@@ -93,12 +93,12 @@ _COPTS = [
 # crashrep.exe died at load with a "System Error" box, i.e. a crash produced a
 # second failure instead of a report.
 _VC90_MANIFEST_INPUTS = select({
-    "//build/constraints:is_win10": [],
+    "//build/constraints:is_win7": [],
     "//conditions:default": ["//main/external/msvcp90:vc90_app_manifest_res"],
 })
 
 _VC90_MANIFEST_LINKOPTS = select({
-    "//build/constraints:is_win10": [],
+    "//build/constraints:is_win7": [],
     "//conditions:default": ["$(execpath //main/external/msvcp90:vc90_app_manifest_res)"],
 })
 

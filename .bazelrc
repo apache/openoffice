@@ -44,12 +44,12 @@ build:winXP-x64 --platform_suffix=winXP-x64
 build:winXP-x64 --symlink_prefix=bazel-winXP-x64-
 # The modern toolchain (VS2019 + Windows 10 SDK), same shape as the two above.
 # Its output tree is separate from BOTH winXP trees via --platform_suffix, so a
-# win10 build can never clobber the regression baseline.  Same cpu+os as
-# winXP-x64 — //build/constraints:win10 is the only difference, and the only
+# win7 build can never clobber the regression baseline.  Same cpu+os as
+# winXP-x64 — //build/constraints:win7 is the only difference, and the only
 # reason resolution can tell aoo_msvc_vs2019_x64 from aoo_msvc_vs2008_x64.
-build:win10-x64 --platforms=//build/platforms:win10-x64
-build:win10-x64 --platform_suffix=win10-x64
-build:win10-x64 --symlink_prefix=bazel-win10-x64-
+build:win7-x64 --platforms=//build/platforms:win7-x64
+build:win7-x64 --platform_suffix=win7-x64
+build:win7-x64 --symlink_prefix=bazel-win7-x64-
 
 # ── --config=timelog — AOO's own startup/exception tracing ───────────────────
 # sal/inc/rtl/logfile.hxx gates every RTL_LOGFILE_CONTEXT/_TRACE macro behind

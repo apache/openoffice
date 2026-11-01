@@ -21,7 +21,7 @@ THE TWO HALVES USE DIFFERENT CONFIGURATIONS ON PURPOSE:
   per-configuration and winXP-x86 is the product baseline -- the graph should
   describe what actually ships;
 
-  the compile database is built with --config=win10-x64, because indexing
+  the compile database is built with --config=win7-x64, because indexing
   resolves the system headers of whichever toolchain the config selects, and a
   modern clang parses the VS2019/UCRT headers far more cleanly than the VS2008
   ones.  The flags that matter for correctness are identical either way.
@@ -115,7 +115,7 @@ def main(argv=None):
     ap.add_argument("--index", action="store_true", help="only compile_commands.json")
     ap.add_argument("--graph-config", default=None,
                     help="bazelrc config for the graph (default: the default platform)")
-    ap.add_argument("--index-config", default="win10-x64",
+    ap.add_argument("--index-config", default="win7-x64",
                     help="bazelrc config for the compile database")
     ap.add_argument("--driver", default=None, help="path to clang-cl.exe")
     args = ap.parse_args(argv)
