@@ -394,7 +394,7 @@ elsif ( $platform =~ m/freebsd/ )
       $JRETHREADDIR   = '$JAVA_HOME'.$ds."jre".$ds."lib".$ds."aarch64".$ds."native_threads";
       $EPM_FLAGS      = "-a aarch64";
    }
-   elsif ($platform =~ m/^i386/)
+   elsif ($platform =~ m/^i[3456]86/)
    {  print "Setting FreeBSD x86 specific values... ";
       $outfile        = "FreeBSDX86Env.Set";
       $CPU            = "I";
