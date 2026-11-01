@@ -47,7 +47,7 @@
 - EVERY staged /MD EXE needs the VC90 manifest on the winXP builds, embedded at
   RT_MANIFEST id 1 (`//main/external/msvcp90:vc90_app_manifest_res` in
   additional_linker_inputs + linkopts), gated off with
-  `//build/constraints:is_win10` (the modern runtime is not side-by-side).
+  `//build/constraints:is_win7` (the modern runtime is not side-by-side).
   Without it a `/MANIFEST:NO` EXE dies before main() with a "System Error" box,
   and nothing in the build notices -- 15 launchers sat broken that way until
   2026-10-08.  Audit a staged tree: dumpbin /dependents shows MSVCR90.dll, and

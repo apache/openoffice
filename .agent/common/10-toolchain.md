@@ -33,23 +33,33 @@
     only the tool and search paths differ.  Two shape differences follow from
     the SDK layout: INCLUDE is five directories (toolset + ucrt/um/shared/winrt)
     where SDK v7.0 had one, and LIB is three.
-- Arch ALONE does not pick a toolchain — `winXP-x64` and `win10-x64` are the same
+- Arch ALONE does not pick a toolchain — `winXP-x64` and `win7-x64` are the same
   os+cpu.  The **target platform** picks it, and `//build/constraints:win_version`
   is the only thing separating those two.  Toolchain resolution auto-picks the
   matching cc_toolchain:
   `//build/platforms:winXP-x86` (→ @platforms//cpu:x86_32, default),
-  `winXP-x64` (→ x86_64 + `:winxp`), `win10-x64` (→ x86_64 + `:win10`).
-  Target space = {winxp, win10} × {x86, x64}; a new Windows floor is a new
+  `winXP-x64` (→ x86_64 + `:winxp`), `win7-x64` (→ x86_64 + `:win7`).
+  Target space = {winxp, win7} × {x86, x64}; a new Windows floor is a new
   constraint value, not a new config.
+- The modern floor is **Windows 7 SP1**, renamed from `win10` 2026-10-31 because
+  nothing in the build required 10: the toolchain compiles at
+  `_WIN32_WINNT=0x0601` and links subsystem 6.00.  Two rules keep it true:
+  - **Do not raise the Windows API defines** (`_WIN32_WINNT`/`WINVER`) while
+    AOO 4.1.x is still being patched — the source must stay backport-compatible.
+  - The real floor is set by the **VC v14 runtime** shipped beside the binaries.
+    Current releases install on Windows 10+ only (Microsoft's "latest supported
+    VC redist" page), so Win7 needs a runtime release that still supports Win7
+    SP1, and a toolset no newer than that runtime.  `vs_config_repo.bzl` picks
+    whatever modern toolset it finds; that is not yet pinned.
 - `.bazelrc` convenience configs: `--config=winXP-x86` (default) /
-  `--config=winXP-x64` / `--config=win10-x64`, each pinning `--platforms` + a
+  `--config=winXP-x64` / `--config=win7-x64`, each pinning `--platforms` + a
   distinct `--platform_suffix` (separate bazel-out trees, no clobber) +
   `--symlink_prefix` (`bazel-winXP-x86-` / `bazel-winXP-x64-` /
-  `bazel-win10-x64-`).  A win10 build can never clobber the baseline.
+  `bazel-win7-x64-`).  A win7 build can never clobber the baseline.
 - All three target platforms are also registered as **execution** platforms.  A
   target platform that is not an exec platform builds but cannot run its tests —
   there is no exec platform to resolve a test toolchain against.  ORDER MATTERS
-  (register_execution_platforms prepends); win10-x64 is registered last so it
+  (register_execution_platforms prepends); win7-x64 is registered last so it
   does not displace winXP-x64 as the exec platform for cfg="exec" tools.
 - Per-arch defines are injected **globally by the toolchain** (not per-module),
   through the `arch_defines` attr, and they are properties of the TARGET rather

@@ -20,7 +20,7 @@
 # Notes for xml2cmp (done)
 
 Migrated 2026-10-08.  Green on all three configs (`winXP-x86`, `winXP-x64`,
-`win10-x64`).
+`win7-x64`).
 
 ## What it builds
 
@@ -59,4 +59,4 @@ consumes neither.
 x86: `-types`, `-func`, `-html` against in-tree descriptions
 (`basctl/util/basctl.xml`, `connectivity/source/cpool/dbpool.xml`);
 `srvdepy` resolves `ConnectionPool` to library `dbpool`.  x64 (both): `-func`
-output identical in shape; PE32+ subsystem 5.02 (winXP) / 6.00 (win10).
+output identical in shape; PE32+ subsystem 5.02 (winXP) / 6.00 (win7).

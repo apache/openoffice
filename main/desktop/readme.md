@@ -51,14 +51,14 @@
 
 - **Every small EXE embeds the VC9 manifest on the winXP builds**
   (`_VC90_MANIFEST_INPUTS`/`_LINKOPTS`, RT_MANIFEST id 1, gated off on
-  `//build/constraints:is_win10`).  All of them link `/MD` + `/MANIFEST:NO`;
+  `//build/constraints:is_win7`).  All of them link `/MD` + `/MANIFEST:NO`;
   without a manifest naming Microsoft.VC90.CRT the loader never consults
   WinSxS and the process dies before `main()` with a "System Error" box.  Until
   2026-10-08 that was true of swriter/scalc/sdraw/simpress/sbase/smath/sweb,
   quickstart, rebaseoo, rebasegui, unoinfo, officeloader, guiloader, guistdio
   and unopkgio (and crashrep.exe in //main/crashrep) -- only soffice.exe, which
   has an external manifest, and unopkg had one.  dmake embedded one into every
-  EXE with mt.exe.  The win10 build needs none: its runtime is not side-by-side.
+  EXE with mt.exe.  The win7 build needs none: its runtime is not side-by-side.
 
 - **Deployment sub-libs**: `deployment_manager_lib`, `deployment_registry_lib`, and 7 registry
   backend libs all compile with `alwayslink = True` and are linked into `deployment.uno.dll`.

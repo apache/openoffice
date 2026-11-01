@@ -120,7 +120,7 @@ Which one Bazel uses is decided by the **target platform**, not a flag. The
 platforms in [build/platforms/BUILD.bazel](platforms/BUILD.bazel) —
 `winXP-x86` (`@platforms//cpu:x86_32`) and `winXP-x64` (`x86_64`) — are each
 composed with the `//build/constraints:win_version` constraint, giving a
-`{winxp, win10} × {x86, x64}` target space (a future win10 target is a new
+`{winxp, win7} × {x86, x64}` target space (a further floor is a new
 constraint value, not a new stringly-typed config). Toolchain resolution then
 selects the matching `cc_toolchain` automatically; when `--platforms` is x86 the
 x64 toolchain is simply incompatible and never chosen, and vice-versa.
