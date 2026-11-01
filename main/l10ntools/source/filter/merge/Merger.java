@@ -101,10 +101,10 @@ public class Merger
 
     //-------------------------------------------
     /** TODO */
-    private java.util.Vector m_lTypes;
-    private java.util.Vector m_lFilters;
-    private java.util.Vector m_lLoaders;
-    private java.util.Vector m_lHandlers;
+    private java.util.Vector<String> m_lTypes;
+    private java.util.Vector<String> m_lFilters;
+    private java.util.Vector<String> m_lLoaders;
+    private java.util.Vector<String> m_lHandlers;
 
     //___________________________________________
     // interface
@@ -208,7 +208,7 @@ public class Merger
         {
             java.lang.String sSetName   = null;
             java.lang.String sSubDir    = null;
-            java.util.Vector lFragments = null;
+            java.util.Vector<String> lFragments = null;
 
             try
             {
@@ -286,7 +286,7 @@ public class Merger
     /** TODO */
     private void getFragments(java.io.File           aDir       ,
                               java.lang.String       sSetName   ,
-                              java.util.Vector       lFragments ,
+                              java.util.Vector<String>       lFragments ,
                               int                    nPrettyTabs,
                               java.lang.StringBuilder sBuffer    )
         throws java.lang.Exception

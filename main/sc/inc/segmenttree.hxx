@@ -68,6 +68,7 @@ public:
 
     ScFlatBoolRowSegments();
     ScFlatBoolRowSegments(const ScFlatBoolRowSegments& r);
+    ScFlatBoolRowSegments& operator=(const ScFlatBoolRowSegments& r);
     ~ScFlatBoolRowSegments();
 
     void setTrue(SCROW nRow1, SCROW nRow2);
@@ -99,6 +100,7 @@ public:
     };
     ScFlatBoolColSegments();
     ScFlatBoolColSegments(const ScFlatBoolColSegments& r);
+    ScFlatBoolColSegments& operator=(const ScFlatBoolColSegments& r);
     ~ScFlatBoolColSegments();
 
     void setTrue(SCCOL nCol1, SCCOL nCol2);
@@ -147,6 +149,7 @@ public:
 
     ScFlatUInt16RowSegments(sal_uInt16 nDefault);
     ScFlatUInt16RowSegments(const ScFlatUInt16RowSegments& r);
+    ScFlatUInt16RowSegments& operator=(const ScFlatUInt16RowSegments& r);
     ~ScFlatUInt16RowSegments();
 
     void setValue(SCROW nRow1, SCROW nRow2, sal_uInt16 nValue);

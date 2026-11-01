@@ -61,11 +61,10 @@ static const char usageText[] =
 "                           a space separated list of urls.\n"
 "    -a, --all              list all interface methods, not only the direct\n"
 "                           ones\n"
-"    --(java4|java5|cpp)    select the target language\n"
-"                           --java4 generate output for Java 1.4 or earlier\n"
-"                           --java5 generate output for Java 1.5 or later (is \n"
-"                                   currently the default)\n"
-"                           --cpp   generate output for C++\n"
+    "    --(java8|cpp)         select the target language\n"
+    "                           --java8 generate output for Java 1.8 or later (is \n"
+    "                                   currently the default)\n"
+    "                           --cpp   generate output for C++\n"
 "    -sn, --shortnames      using namespace abbreviation 'css:': for\n"
 "                           '::com::sun::star::', only valid for sub-command\n"
 "                           'dump' and target language 'cpp'. It is default for the\n"
@@ -200,18 +199,13 @@ SAL_IMPLEMENT_MAIN_WITH_ARGS(argc, /*argv*/)
             options.all = true;
             continue;
         }
-        if ( readOption( &bOption, "java4", &nPos, arg) ) {
-            options.java5 = false;
-            options.language = 1;
-            continue;
-        }
-        if ( readOption( &bOption, "java5", &nPos, arg) ) {
-            options.java5 = true;
+        if ( readOption( &bOption, "java4", &nPos, arg) || readOption( &bOption, "java5", &nPos, arg) || readOption( &bOption, "java8", &nPos, arg) ) {
+            options.java8 = true;
             options.language = 1;
             continue;
         }
         if ( readOption( &bOption, "cpp", &nPos, arg) ) {
-            options.java5 = false;
+            options.java8 = false;
             options.language = 2;
             continue;
         }

@@ -165,12 +165,12 @@ public class ConfigHelper extends java.util.Properties
      *          if the requested property does not exists.
      */
     public synchronized boolean getBoolean(java.lang.String sProp)
-        throws java.util.NoSuchElementException
+        throws java.lang.Exception
     {
-        java.lang.String sValue = getProperty(sProp);
+        java.lang.String sValue = (java.lang.String)getProperty(sProp);
         if (sValue == null)
-            throw new java.util.NoSuchElementException("The requested config value \""+sProp+"\" does not exists!");
-        return new java.lang.Boolean(sValue).booleanValue();
+            throw new java.lang.Exception("missing property: \"" + sProp + "\"");
+        return java.lang.Boolean.valueOf(sValue).booleanValue();
     }
 
     public synchronized boolean getBoolean(java.lang.String sProp   ,
@@ -178,7 +178,7 @@ public class ConfigHelper extends java.util.Properties
     {
         java.lang.String sDefault = java.lang.String.valueOf(bDefault);
         java.lang.String sValue   = getProperty(sProp, sDefault);
-        return new java.lang.Boolean(sValue).booleanValue();
+        return java.lang.Boolean.valueOf(sValue).booleanValue();
     }
 
     //-------------------------------------------
@@ -193,12 +193,12 @@ public class ConfigHelper extends java.util.Properties
      *          if the requested property does not exists.
      */
     public synchronized int getInt(java.lang.String sProp)
-        throws java.util.NoSuchElementException
+        throws java.lang.Exception
     {
-        java.lang.String sValue = getProperty(sProp);
+        java.lang.String sValue = (java.lang.String)getProperty(sProp);
         if (sValue == null)
-            throw new java.util.NoSuchElementException("The requested config value \""+sProp+"\" does not exists!");
-        return new java.lang.Integer(sValue).intValue();
+            throw new java.lang.Exception("missing property: \"" + sProp + "\"");
+        return java.lang.Integer.parseInt(sValue);
     }
 
     public synchronized int getInt(java.lang.String sProp   ,
@@ -206,7 +206,7 @@ public class ConfigHelper extends java.util.Properties
     {
         java.lang.String sDefault = java.lang.String.valueOf(nDefault);
         java.lang.String sValue   = getProperty(sProp, sDefault);
-        return new java.lang.Integer(sValue).intValue();
+        return java.lang.Integer.parseInt(sValue);
     }
 
     //-------------------------------------------
@@ -256,7 +256,7 @@ public class ConfigHelper extends java.util.Properties
      *  @throw  [NoSuchElementException]
      *          if the requested property does not exists.
      */
-    public synchronized java.util.Vector getStringList(java.lang.String sProp     ,
+    public synchronized java.util.Vector<String> getStringList(java.lang.String sProp     ,
                                                        java.lang.String sDelimiter,
                                                        boolean          bTrim     ,
                                                        boolean          bDecode   )
@@ -266,7 +266,7 @@ public class ConfigHelper extends java.util.Properties
         if (sValue == null)
             throw new java.util.NoSuchElementException("The requested config value \""+sProp+"\" does not exists!");
 
-        java.util.Vector lValue = new java.util.Vector();
+        java.util.Vector<String> lValue = new java.util.Vector<String>();
         try
         {
             java.util.StringTokenizer lTokens = new java.util.StringTokenizer(sValue, sDelimiter);

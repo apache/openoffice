@@ -90,7 +90,7 @@ void printType(std::ostream & o,
     if ( sType.indexOf("java.lang.") == 0 )
         sType = sType.copy(10);
     o << sType.getStr();
-    if ( !arguments.empty() && options.java5 ) {
+    if ( !arguments.empty() ) {
         o << '<';
         for ( std::vector< OString >::const_iterator i(arguments.begin());
               i != arguments.end(); ++i )
@@ -217,7 +217,7 @@ void printMethodParameters(std::ostream & o,
             } else if ( (reader.getMethodParameterFlags(method, i) & RT_PARAM_REST )
                        != 0)
             {
-                o << (options.java5 ? "..." : "[]");
+                o << "...";
             }
             o << ' ';
         }
@@ -636,7 +636,7 @@ void printMapsToJavaType(std::ostream & o,
     OString const & name, sal_Int32 rank,
     std::vector< OString > const & arguments, const char * javaTypeSort)
 {
-    o << "maps to Java " << (options.java5 ? "1.5" : "1.4") << " ";
+    o << "maps to Java " << (options.java8 ? "1.8" : "1.4") << " ";
     if ( javaTypeSort != 0 ) {
         o << javaTypeSort << ' ';
     }
@@ -795,11 +795,11 @@ void generateDocumentation(std::ostream & o,
             } else if ( arguments.empty() ) {
                 printMapsToJavaType(o,
                     options, manager, sort, typeClass, name, rank, arguments,
-                    options.java5 ? "generic class" : "class");
+                    "generic class");
             } else {
                 printMapsToJavaType(o,
                     options, manager, sort, typeClass, name, rank, arguments,
-                    options.java5 ? "generic class instantiation" : "class");
+                    "generic class instantiation");
             }
             o << "; full constructor:\n";
             printConstructor(o, options, manager, reader, arguments);
