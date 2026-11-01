@@ -30,7 +30,7 @@
 
  *************************************************************************/
 
-#include <hash_map>
+#include <unordered_map>
 #include <com/sun/star/beans/XPropertyAccess.hpp>
 #include <com/sun/star/container/XNameAccess.hpp>
 #include <com/sun/star/container/XNamed.hpp>
@@ -72,7 +72,7 @@ struct hashString
 	}
 };
 
-typedef std::hash_map
+typedef std::unordered_map
 <
 	rtl::OUString,
     uno::WeakReference< ucb::XContent >,

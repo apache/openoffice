@@ -353,6 +353,13 @@ ScFlatBoolRowSegments::ScFlatBoolRowSegments(const ScFlatBoolRowSegments& r) :
 {
 }
 
+ScFlatBoolRowSegments& ScFlatBoolRowSegments::operator=(const ScFlatBoolRowSegments& r)
+{
+    if (this != &r)
+        mpImpl.reset(new ScFlatBoolSegmentsImpl(*r.mpImpl));
+    return *this;
+}
+
 ScFlatBoolRowSegments::~ScFlatBoolRowSegments()
 {
 }
@@ -419,6 +426,13 @@ ScFlatBoolColSegments::ScFlatBoolColSegments() :
 ScFlatBoolColSegments::ScFlatBoolColSegments(const ScFlatBoolColSegments& r) :
     mpImpl(new ScFlatBoolSegmentsImpl(*r.mpImpl))
 {
+}
+
+ScFlatBoolColSegments& ScFlatBoolColSegments::operator=(const ScFlatBoolColSegments& r)
+{
+    if (this != &r)
+        mpImpl.reset(new ScFlatBoolSegmentsImpl(*r.mpImpl));
+    return *this;
 }
 
 ScFlatBoolColSegments::~ScFlatBoolColSegments()
@@ -518,6 +532,13 @@ ScFlatUInt16RowSegments::ScFlatUInt16RowSegments(sal_uInt16 nDefault) :
 ScFlatUInt16RowSegments::ScFlatUInt16RowSegments(const ScFlatUInt16RowSegments& r) :
     mpImpl(new ScFlatUInt16SegmentsImpl(*r.mpImpl))
 {
+}
+
+ScFlatUInt16RowSegments& ScFlatUInt16RowSegments::operator=(const ScFlatUInt16RowSegments& r)
+{
+    if (this != &r)
+        mpImpl.reset(new ScFlatUInt16SegmentsImpl(*r.mpImpl));
+    return *this;
 }
 
 ScFlatUInt16RowSegments::~ScFlatUInt16RowSegments()

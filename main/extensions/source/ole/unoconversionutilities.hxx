@@ -36,7 +36,7 @@
 #include "ole2uno.hxx"
 
 #include "unotypewrapper.hxx"
-#include <hash_map>
+#include <unordered_map>
 
 // for some reason DECIMAL_NEG (wtypes.h) which contains BYTE is not resolved.
 typedef unsigned char   BYTE;

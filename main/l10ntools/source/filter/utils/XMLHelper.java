@@ -118,17 +118,15 @@ public class XMLHelper
      *  @return [java.util.HashMap]
      *          contains every node name as key and its string(!) as value.
      */
-    public static java.util.HashMap convertNodeToPropSet(org.w3c.dom.Node aNode)
+    public static java.util.HashMap<String, Object> convertNodeToPropSet(org.w3c.dom.Node aNode)
         throws java.lang.Exception
     {
-        java.util.HashMap aPropSet = new java.util.HashMap();
+        java.util.HashMap<String, Object> aPropSet = new java.util.HashMap<String, Object>();
 
         // get all child nodes, which seems to be properties
-        java.util.Vector      lChildNodes = XMLHelper.extractChildNodesByTagName(aNode, XMLTAG_PROP);
-        java.util.Enumeration en1         = lChildNodes.elements();
-        while(en1.hasMoreElements())
-        {
-            org.w3c.dom.Node aChildNode = (org.w3c.dom.Node)en1.nextElement();
+        java.util.Vector<org.w3c.dom.Node> lChildNodes = XMLHelper.extractChildNodesByTagName(aNode, XMLTAG_PROP);
+        for (int i = 0; i < lChildNodes.size(); ++i) {
+            org.w3c.dom.Node aChildNode = lChildNodes.get(i);
 
             // read its name
             java.lang.String sChildName = XMLHelper.extractNodeAttribByName(aChildNode, XMLATTRIB_OOR_NAME);
@@ -149,13 +147,12 @@ public class XMLHelper
             }
 
             // read its value(s?)
-            java.util.Vector      lChildValues = XMLHelper.extractChildNodesByTagName(aChildNode, XMLTAG_VALUE);
-            java.util.Enumeration en2          = lChildValues.elements();
+            java.util.Vector<org.w3c.dom.Node> lChildValues = XMLHelper.extractChildNodesByTagName(aChildNode, XMLTAG_VALUE);
             int                   nValue       = 0;
             java.lang.Object      aValue       = null;
-            while(en2.hasMoreElements())
+            for (int vi = 0; vi < lChildValues.size(); ++vi)
             {
-                org.w3c.dom.Node aValueNode   = (org.w3c.dom.Node)en2.nextElement();
+                org.w3c.dom.Node aValueNode   = lChildValues.get(vi);
                 java.lang.String sChildLocale = XMLHelper.extractNodeAttribByName(aValueNode, XMLATTRIB_XML_LANG);
                 boolean          bLocalized   = (sChildLocale != null);
 
@@ -184,12 +181,12 @@ public class XMLHelper
 
                     java.lang.String sData = ((org.w3c.dom.CharacterData)aValueNode.getFirstChild()).getData();
 
-                    java.util.HashMap lLocalized = null;
+                    java.util.HashMap<String, String> lLocalized = null;
                     if (bLocalized)
                     {
                         if (aValue == null)
-                            aValue = new java.util.HashMap();
-                        lLocalized = (java.util.HashMap)aValue;
+                            aValue = new java.util.HashMap<String, String>();
+                        lLocalized = (java.util.HashMap<String, String>)aValue;
                         lLocalized.put(sChildLocale, sData);
                     }
                     else
@@ -209,7 +206,7 @@ public class XMLHelper
                     sData = sData.replace('\t', ' ');
                     sData = sData.replace('\n', ' ');
                     java.util.StringTokenizer aTokenizer = new java.util.StringTokenizer(sData, sSeparator);
-                    java.util.Vector          lList      = new java.util.Vector();
+                    java.util.ArrayList<String> lList = new java.util.ArrayList<String>();
                     while(aTokenizer.hasMoreTokens())
                     {
                         java.lang.String sToken = (java.lang.String)aTokenizer.nextToken();

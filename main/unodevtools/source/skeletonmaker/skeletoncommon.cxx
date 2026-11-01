@@ -635,12 +635,8 @@ void generateFunctionParamterMap(std::ostream& o,
                 o << "        ParamMap fpm;\n";
             }
             else {
-                if ( options.java5 )
-                    o << "        java.util.Hashtable< Integer, String > fpm = "
-                        "new java.util.Hashtable< Integer, String >();\n";
-                else
-                    o << "        java.util.Hashtable fpm = "
-                        "new java.util.Hashtable();\n";
+                o << "        java.util.Hashtable<Integer, String> fpm = "
+                    "new java.util.Hashtable<Integer, String>();\n";
             }
             bFirst = false;
         } else
@@ -648,11 +644,8 @@ void generateFunctionParamterMap(std::ostream& o,
                 o << "        fpm = ParamMap();\n";
             }
             else {
-                if ( options.java5 )
-                    o << "        fpm = new java.util.Hashtable< "
-                        "Integer, String >();\n";
-                else
-                    o << "        fpm = new java.util.Hashtable();\n";
+                o << "        fpm = new java.util.Hashtable< "
+                    "Integer, String>();\n";
             }
 
         for ( sal_uInt16 p = 0; p < reader.getMethodParameterCount(m); ++p ) {
@@ -663,16 +656,10 @@ void generateFunctionParamterMap(std::ostream& o,
                   << "\");\n";
             }
             else {
-                if ( options.java5 )
-                    o << "        fpm.put(" << p << ", \""
-                      << codemaker::convertString(
-                          reader.getMethodParameterName(m, p))
-                      << "\");\n";
-                else
-                    o << "       fpm.put(new Integer(" << p << "), \""
-                      << codemaker::convertString(
-                          reader.getMethodParameterName(m, p))
-                      << "\");\n";
+                o << "        fpm.put(" << p << ", \""
+                  << codemaker::convertString(
+                      reader.getMethodParameterName(m, p))
+                  << "\");\n";
             }
         }
 

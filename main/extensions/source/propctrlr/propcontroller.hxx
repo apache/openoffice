@@ -66,7 +66,7 @@
 #include <comphelper/broadcasthelper.hxx>
 
 #include <map>
-#include <hash_map>
+#include <unordered_map>
 #include <vector>
 #include <memory>
 
@@ -135,15 +135,15 @@ namespace pcr
         typedef ::com::sun::star::uno::Reference< ::com::sun::star::inspection::XPropertyHandler >
                                                         PropertyHandlerRef;
         typedef ::std::vector< PropertyHandlerRef >     PropertyHandlerArray;
-        typedef ::std::hash_map< ::rtl::OUString, PropertyHandlerRef, ::rtl::OUStringHash >
+        typedef ::std::unordered_map< ::rtl::OUString, PropertyHandlerRef, ::rtl::OUStringHash >
                                                         PropertyHandlerRepository;
-        typedef ::std::hash_multimap< ::rtl::OUString, PropertyHandlerRef, ::rtl::OUStringHash >
+        typedef ::std::unordered_multimap< ::rtl::OUString, PropertyHandlerRef, ::rtl::OUStringHash >
                                                         PropertyHandlerMultiRepository;
         PropertyHandlerRepository                       m_aPropertyHandlers;
         PropertyHandlerMultiRepository                  m_aDependencyHandlers;
         PropertyHandlerRef                              m_xInteractiveHandler;
 
-        ::std::auto_ptr< ComposedPropertyUIUpdate >     m_pUIRequestComposer;
+        ::std::unique_ptr< ComposedPropertyUIUpdate >     m_pUIRequestComposer;
 
         /// our InspectorModel
         ::com::sun::star::uno::Reference< ::com::sun::star::inspection::XObjectInspectorModel >
@@ -155,7 +155,7 @@ namespace pcr
         /// the property we're just committing
         ::rtl::OUString                                 m_sCommittingProperty;
 
-        typedef ::std::hash_map< ::rtl::OUString, sal_uInt16, ::rtl::OUStringHash >     HashString2Int16;
+        typedef ::std::unordered_map< ::rtl::OUString, sal_uInt16, ::rtl::OUStringHash >     HashString2Int16;
         HashString2Int16                                m_aPageIds;
 
 		bool        m_bContainerFocusListening;

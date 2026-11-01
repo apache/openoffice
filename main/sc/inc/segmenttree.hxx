@@ -68,6 +68,7 @@ public:
 
     ScFlatBoolRowSegments();
     ScFlatBoolRowSegments(const ScFlatBoolRowSegments& r);
+    ScFlatBoolRowSegments& operator=(const ScFlatBoolRowSegments& r);
     ~ScFlatBoolRowSegments();
 
     void setTrue(SCROW nRow1, SCROW nRow2);
@@ -83,7 +84,7 @@ public:
     void setInsertFromBack(bool bInsertFromBack);
 
 private:
-    ::std::auto_ptr<ScFlatBoolSegmentsImpl> mpImpl;
+    ::std::unique_ptr<ScFlatBoolSegmentsImpl> mpImpl;
 };
 
 // ============================================================================
@@ -99,6 +100,7 @@ public:
     };
     ScFlatBoolColSegments();
     ScFlatBoolColSegments(const ScFlatBoolColSegments& r);
+    ScFlatBoolColSegments& operator=(const ScFlatBoolColSegments& r);
     ~ScFlatBoolColSegments();
 
     void setTrue(SCCOL nCol1, SCCOL nCol2);
@@ -112,7 +114,7 @@ public:
     void setInsertFromBack(bool bInsertFromBack);
 
 private:
-    ::std::auto_ptr<ScFlatBoolSegmentsImpl> mpImpl;
+    ::std::unique_ptr<ScFlatBoolSegmentsImpl> mpImpl;
 };
 
 // ============================================================================
@@ -147,6 +149,7 @@ public:
 
     ScFlatUInt16RowSegments(sal_uInt16 nDefault);
     ScFlatUInt16RowSegments(const ScFlatUInt16RowSegments& r);
+    ScFlatUInt16RowSegments& operator=(const ScFlatUInt16RowSegments& r);
     ~ScFlatUInt16RowSegments();
 
     void setValue(SCROW nRow1, SCROW nRow2, sal_uInt16 nValue);
@@ -162,7 +165,7 @@ public:
     void setInsertFromBack(bool bInsertFromBack);
 
 private:
-    ::std::auto_ptr<ScFlatUInt16SegmentsImpl> mpImpl;
+    ::std::unique_ptr<ScFlatUInt16SegmentsImpl> mpImpl;
 };
 
 #endif

@@ -48,7 +48,7 @@
 #include <sfx2/objsh.hxx>
 #include <sfx2/docfac.hxx>
 
-#include <hash_map>
+#include <unordered_map>
 
 using namespace ::com::sun::star::uno;
 using namespace ::com::sun::star::frame;
@@ -57,7 +57,7 @@ using namespace ::com::sun::star::util;
 using namespace ::com::sun::star::ui;
 using namespace ::com::sun::star::frame;
 
-typedef std::hash_map< ::rtl::OUString,
+typedef std::unordered_map< ::rtl::OUString,
                        WeakReference< XImageManager >,
                        ::rtl::OUStringHash,
                        ::std::equal_to< ::rtl::OUString > > ModuleIdToImagegMgr;

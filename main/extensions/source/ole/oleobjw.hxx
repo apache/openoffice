@@ -38,7 +38,7 @@
 #endif
 #include <atlbase.h>
 #include <vector>
-#include <hash_map>
+#include <unordered_map>
 #include <tools/postsys.h>
 
 #ifdef _MSC_VER
