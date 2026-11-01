@@ -693,7 +693,7 @@ void printMapsToCppType(std::ostream & o,
     OString const & name, sal_Int32 rank,
     std::vector< OString > const & arguments, const char * cppTypeSort)
 {
-    o << "maps to C++ ";
+    o << "maps to C++11 ";
     if (cppTypeSort != 0)
         o << cppTypeSort << ' ';
 
@@ -857,11 +857,11 @@ void generateDocumentation(std::ostream & o,
             } else if (arguments.empty()) {
                 printMapsToCppType(o,
                     options, manager, sort, typeClass, name, rank, arguments,
-                    options.java5 ? "generic class" : "class");
+                    "generic class");
             } else {
                 printMapsToCppType(o,
                     options, manager, sort, typeClass, name, rank, arguments,
-                    options.java5 ? "generic class instantiation" : "class");
+                    "generic class instantiation");
             }
             o << "; full constructor:\n";
             printConstructor(o, options, manager, reader, arguments);

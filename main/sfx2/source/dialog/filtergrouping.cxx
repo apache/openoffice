@@ -42,7 +42,7 @@
 #include <list>
 #include <vector>
 #include <map>
-#include <algorithm>
+#include <functional>
 
 //........................................................................
 namespace sfx2
