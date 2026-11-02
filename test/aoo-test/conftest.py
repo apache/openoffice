@@ -34,6 +34,7 @@ def pytest_addoption(parser):
     g.addoption("--office", default=None, help="an AOO 5+ install: .app, install root, program dir or soffice (default: $AOO_OFFICE)")
     g.addoption("--uno-python", default=None, help="Python that can import uno (default: $AOO_UNO_PYTHON, else probed)")
     g.addoption("--connect", choices=("socket", "pipe"), default="socket", help="how the worker reaches the office")
+    g.addoption("--start-timeout", type=float, default=240.0, help="seconds an office may take to start and accept a connection (default %(default)s)")
     g.addoption("--max-restarts", type=int, default=5, help="office restarts allowed per mode before the session aborts")
     g.addoption("--require-office", action="store_true", help="fail instead of skipping when no usable office is found")
     g.addoption("--documents", default=None, help="a directory of ODF documents to run through every save mode, in addition to the ones the office ships")
@@ -73,8 +74,9 @@ def aoo_python(pytestconfig, aoo_layout, tmp_path_factory):
 class Offices:
     """One lazily started office and worker per ODF mode (None = product default, or a Save/ODF/DefaultVersion number)."""
 
-    def __init__(self, layout, python, workdir, connect, max_restarts):
+    def __init__(self, layout, python, workdir, connect, max_restarts, start_timeout=240.0):
         self.layout, self.python, self.workdir, self.connect, self.max_restarts = layout, python, workdir, connect, max_restarts
+        self.start_timeout = start_timeout
         self.sessions = {}
 
     def get(self, mode=None, extra=None, tag=None):
@@ -82,7 +84,7 @@ class Offices:
         key = (mode, tag)
         if key not in self.sessions:
             self.sessions[key] = session.ModeSession(self.layout, self.python, mode, self.workdir, self.connect, self.max_restarts,
-                                                     extra=extra, tag=tag)
+                                                     connect_timeout=self.start_timeout, extra=extra, tag=tag)
         return self.sessions[key]
 
     def close(self):
@@ -95,7 +97,7 @@ class Offices:
 @pytest.fixture(scope="session")
 def aoo_offices(pytestconfig, aoo_layout, aoo_python, tmp_path_factory):
     offices = Offices(aoo_layout, aoo_python, tmp_path_factory.mktemp("aoo"), pytestconfig.getoption("--connect"),
-                      pytestconfig.getoption("--max-restarts"))
+                      pytestconfig.getoption("--max-restarts"), pytestconfig.getoption("--start-timeout"))
     yield offices
     offices.close()
 

@@ -393,7 +393,399 @@ def page_fill_13(outdir):
     return done
 
 
-BUILDERS = {"page-fill": page_fill, "fill-others": fill_others, "t13": t13, "page-fill-1_3": page_fill_13}
+def row_split(outdir):
+    doc = _new("swriter")
+    tbl = doc.createInstance("com.sun.star.text.TextTable")
+    tbl.initialize(3, 2)
+    doc.Text.insertTextContent(doc.Text.End, tbl, False)
+    rows = tbl.Rows
+    rows.getByIndex(0).IsSplitAllowed = True
+    rows.getByIndex(1).IsSplitAllowed = False
+    rows.getByIndex(2).IsSplitAllowed = True
+    rows.getByIndex(2).Height = 1000
+    return [_save(doc, outdir, "row-split.odt", "writer8")]
+
+
+def grid_snap(outdir):
+    doc = _new("swriter")
+    ps = doc.StyleFamilies.getByName("PageStyles")
+    specs = [("G_snap_on", True, 2), ("G_snap_off", False, 2), ("G_lines_off", False, 1)]
+    for name, snap, mode in specs:
+        s = doc.createInstance("com.sun.star.style.PageStyle")
+        ps.insertByName(name, s)
+        s.GridMode = mode
+        s.StandardPageMode = True
+        s.GridSnapToChars = snap
+    text = doc.Text
+    cur = text.createTextCursor()
+    pb = uno.getConstantByName("com.sun.star.text.ControlCharacter.PARAGRAPH_BREAK")
+    for name, *_ in specs:
+        text.insertString(cur, "grid " + name, False)
+        text.insertControlCharacter(cur, pb, False)
+    en = text.createEnumeration()
+    for name, *_ in specs:
+        en.nextElement().PageDescName = name
+    out = os.path.join(outdir, "grid-snap.odt")
+    _save(doc, outdir, "grid-snap.odt", "writer8")
+    # older builds did not write standard-mode next to base-width and the importer does not infer it, so add it where it is missing
+    tmp = out + ".tmp"
+    tag = re.compile(rb"<[^<>]*style:layout-grid-base-width=[^<>]*>")
+    with zipfile.ZipFile(out) as zi, zipfile.ZipFile(tmp, "w") as zo:
+        for it in zi.infolist():
+            data = zi.read(it.filename)
+            if it.filename == "styles.xml":
+                data = tag.sub(lambda m: m.group(0) if b"style:layout-grid-standard-mode=" in m.group(0)
+                               else m.group(0).replace(b"style:layout-grid-base-width=", b'style:layout-grid-standard-mode="true" style:layout-grid-base-width=', 1), data)
+            zo.writestr(it, data, compress_type=it.compress_type)
+    os.replace(tmp, out)
+    return ["grid-snap.odt"]
+
+
+def ole_text(outdir):
+    """A Draw page with an OLE object without text and one with text."""
+    doc = _new("sdraw")
+    page = doc.DrawPages.getByIndex(0)
+    for i, text in enumerate(("", "OLE label")):
+        s = doc.createInstance("com.sun.star.drawing.OLE2Shape")
+        s.CLSID = "078B7ABA-54FC-457F-8551-6147e776a997"
+        page.add(s)
+        s.Position = Point(2000 + i * 8000, 2000)
+        s.Size = Size(5000, 3000)
+        if text:
+            s.String = text
+    return [_save(doc, outdir, "ole-text.odg", "draw8")]
+
+
+def ole_text_edge(outdir):
+    """OLE shapes whose text is: none, a label, one space, a line break only, a date field only."""
+    doc = _new("sdraw")
+    page = doc.DrawPages.getByIndex(0)
+    for i, text in enumerate(("", "OLE label", " ", "\n", None)):
+        s = doc.createInstance("com.sun.star.drawing.OLE2Shape")
+        s.CLSID = "078B7ABA-54FC-457F-8551-6147e776a997"
+        page.add(s)
+        s.Position = Point(1000 + i * 5000, 2000)
+        s.Size = Size(4000, 3000)
+        if text is None:
+            f = doc.createInstance("com.sun.star.text.TextField.DateTime")
+            f.IsFixed = True
+            f.IsDate = True
+            s.insertTextContent(s.createTextCursor(), f, False)
+        elif text:
+            s.String = text
+    return [_save(doc, outdir, "ole-text-edge.odg", "draw8")]
+
+
+def chart_shapes(outdir):
+    """A Calc chart with additional shapes (polyline, rectangle, text) in the chart draw page."""
+    from com.sun.star.awt import Rectangle
+    from com.sun.star.table import CellRangeAddress
+    doc = _new("scalc")
+    sh = doc.Sheets.getByIndex(0)
+    for r, (a, b) in enumerate(((1, 2), (2, 4), (3, 3))):
+        sh.getCellByPosition(0, r).Value = a
+        sh.getCellByPosition(1, r).Value = b
+    rng = CellRangeAddress()
+    rng.Sheet, rng.StartColumn, rng.StartRow, rng.EndColumn, rng.EndRow = 0, 0, 0, 1, 2
+    r = Rectangle()
+    r.X, r.Y, r.Width, r.Height = 1000, 4000, 10000, 7000
+    sh.Charts.addNewByName("c1", r, (rng,), False, False)
+    ch = sh.Charts.getByName("c1").EmbeddedObject
+    page = ch.DrawPage
+
+    def mk(kind, x, y, w, h):
+        s = ch.createInstance(kind)
+        page.add(s)
+        s.Position = Point(x, y)
+        s.Size = Size(w, h)
+        return s
+    pl = mk("com.sun.star.drawing.PolyLineShape", 500, 500, 3000, 1500)
+    pl.PolyPolygon = ((Point(0, 1500), Point(1000, 500), Point(3000, 0)),)
+    mk("com.sun.star.drawing.RectangleShape", 4000, 500, 2000, 1000).String = "rect"
+    mk("com.sun.star.drawing.TextShape", 6500, 500, 2000, 800).String = "note"
+    return [_save(doc, outdir, "chart-shapes.ods", "calc8")]
+
+
+def normal_values_5b(outdir):
+    """Two charts, one with a graphic as the series symbol, and a hidden column."""
+    from com.sun.star.awt import Rectangle
+    png = os.path.join(outdir, "symbol.png")
+    _png(png)
+    doc = _new("scalc")
+    sh = doc.Sheets.getByIndex(0)
+    for r, row in enumerate([["", "a", "b"], ["x", 1, 2], ["y", 3, 5], ["z", 4, 8]]):
+        for c, v in enumerate(row):
+            cell = sh.getCellByPosition(c, r)
+            if isinstance(v, str):
+                cell.String = v
+            else:
+                cell.Value = v
+    rng = sh.getCellRangeByName("A1:C4").getRangeAddress()
+    r = Rectangle()
+    r.X, r.Y, r.Width, r.Height = 8000, 1000, 9000, 7000
+    sh.Charts.addNewByName("c1", r, (rng,), True, True)
+    m = sh.Charts.getByName("c1").EmbeddedObject
+    gp = core._create("com.sun.star.graphic.GraphicProvider")
+    g = gp.queryGraphic((pv("URL", uno.systemPathToFileUrl(png)),))
+    s = m.getFirstDiagram().getCoordinateSystems()[0].getChartTypes()[0].getDataSeries()[0]
+    sym = s.Symbol
+    sym.Style = uno.Enum("com.sun.star.chart2.SymbolStyle", "GRAPHIC")
+    sym.Graphic = g
+    s.Symbol = sym
+    sh.getColumns().getByIndex(2).IsVisible = False
+    r2 = Rectangle()
+    r2.X, r2.Y, r2.Width, r2.Height = 8000, 9000, 9000, 7000
+    sh.Charts.addNewByName("c2", r2, (sh.getCellRangeByName("A1:C4").getRangeAddress(),), True, True)
+    return [_save(doc, outdir, "normal5b.ods", "calc8")]
+
+
+def connector_viewbox(outdir):
+    """Connectors of every kind, connected and free, axis-aligned and diagonal, in Draw and Impress."""
+    from com.sun.star.drawing.ConnectorType import CURVE, LINE, LINES, STANDARD
+
+    def build(doc, page):
+        def rect(x, y, w, h):
+            s = doc.createInstance("com.sun.star.drawing.RectangleShape")
+            page.add(s)
+            s.Position = Point(x, y)
+            s.Size = Size(w, h)
+            return s
+
+        def conn(kind, a, b, name):
+            c = doc.createInstance("com.sun.star.drawing.ConnectorShape")
+            page.add(c)
+            c.EdgeKind = kind
+            c.StartPosition = Point(*a)
+            c.EndPosition = Point(*b)
+            c.Name = name
+            return c
+        r1, r2 = rect(1000, 12000, 3000, 2000), rect(12000, 16000, 3000, 2000)
+        r3, r4 = rect(1000, 20000, 3000, 2000), rect(9000, 24000, 3000, 2000)
+        conn(STANDARD, (2000, 2000), (8000, 6000), "std_free")
+        conn(CURVE, (10000, 2000), (16000, 6000), "curve_free")
+        conn(LINE, (2000, 8000), (8000, 8000), "line_h")
+        conn(LINE, (10000, 8000), (10000, 11000), "line_v")
+        conn(LINE, (18000, 9000), (14000, 5000), "line_rev")
+        conn(STANDARD, (2000, 28000), (8000, 28000), "std_h")
+        conn(STANDARD, (16000, 28000), (16000, 32000), "std_v")
+        c = conn(STANDARD, (0, 0), (0, 0), "std_conn")
+        c.StartShape, c.EndShape = r1, r2
+        c = conn(CURVE, (0, 0), (0, 0), "curve_conn")
+        c.StartShape, c.EndShape = r3, r4
+        conn(LINES, (2000, 34000), (9000, 38000), "lines_free")
+
+    done = []
+    for kind, name, flt in (("sdraw", "conn.odg", "draw8"), ("simpress", "conn.odp", "impress8")):
+        doc = _new(kind)
+        build(doc, doc.DrawPages.getByIndex(0))
+        done.append(_save(doc, outdir, name, flt))
+    return done
+
+
+def para_fill(outdir):
+    """Paragraphs and paragraph styles with each kind of fill, direct and through a style (fixtures/para-fill/make.py)."""
+    png = os.path.join(outdir, "tile.png")
+    _png(png)
+    png_url = uno.systemPathToFileUrl(png)
+    doc = _new("swriter")
+    text = doc.Text
+
+    def hatch():
+        h = Hatch()
+        h.Style, h.Color, h.Distance, h.Angle = SINGLE, 0x00AA00, 200, 450
+        return h
+
+    def fill(o, kind):
+        if kind == "solid":
+            o.ParaBackColor = 0xFFCC00
+            o.ParaBackTransparent = False
+        elif kind == "solid_fill":
+            o.FillStyle = SOLID
+            o.FillColor = 0x33AA55
+        elif kind == "solid_transp":
+            o.FillStyle = SOLID
+            o.FillColor = 0x3355AA
+            o.FillTransparence = 40
+        elif kind == "gradient":
+            o.FillStyle = GRADIENT
+            o.FillGradient = _grad()
+        elif kind == "hatch":
+            o.FillStyle = HATCH
+            o.FillHatch = hatch()
+            o.FillColor = 0xFFFFCC
+            o.FillBackground = True
+        elif kind == "bitmap":
+            o.FillStyle = BITMAP
+            o.FillBitmapURL = png_url
+
+    kinds = ["solid", "solid_fill", "solid_transp", "gradient", "hatch", "bitmap"]
+    styles = doc.StyleFamilies.getByName("ParagraphStyles")
+    for k in kinds:
+        s = doc.createInstance("com.sun.star.style.ParagraphStyle")
+        s.ParentStyle = "Standard"
+        styles.insertByName("S_" + k, s)
+        fill(s, k)
+    pb = uno.getConstantByName("com.sun.star.text.ControlCharacter.PARAGRAPH_BREAK")
+    cur = text.createTextCursor()
+    labels = []
+    for k in kinds:
+        for kind in ("direct", "styled"):
+            text.insertString(cur, kind + " " + k, False)
+            text.insertControlCharacter(cur, pb, False)
+            labels.append((kind, k))
+    paras = doc.Text.createEnumeration()
+    for kind, k in labels:
+        p = paras.nextElement()
+        if kind == "direct":
+            fill(p, k)
+        else:
+            p.ParaStyleName = "S_" + k
+    return [_save(doc, outdir, "para-fill.odt", "writer8")]
+
+
+def alien_attrs(outdir):
+    """Preserved alien attributes in ODF namespaces and in a foreign namespace on the carriers that keep them: Writer paragraph,
+    character, section, table and table cell, a Draw shape, a Calc cell."""
+    ns = {"text": "urn:oasis:names:tc:opendocument:xmlns:text:1.0", "style": "urn:oasis:names:tc:opendocument:xmlns:style:1.0",
+          "draw": "urn:oasis:names:tc:opendocument:xmlns:drawing:1.0", "table": "urn:oasis:names:tc:opendocument:xmlns:table:1.0",
+          "office": "urn:oasis:names:tc:opendocument:xmlns:office:1.0", "svg": "urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0",
+          "fo": "http://www.w3.org/1999/XSL/Format", "ex": "urn:example:foreign"}
+    attrs = (("text", "enable-numbering"), ("style", "alien-style"), ("draw", "alien-draw"), ("table", "alien-table"),
+             ("office", "alien-office"), ("svg", "alien-svg"), ("fo", "alien-fo"), ("ex", "alien-foreign"))
+
+    def put(container):
+        for p, n in attrs:
+            a = uno.createUnoStruct("com.sun.star.xml.AttributeData")
+            a.Namespace, a.Type, a.Value = ns[p], "CDATA", "v-" + p
+            container.insertByName(p + ":" + n, a)
+
+    done = []
+    doc = _new("swriter")
+    text = doc.Text
+    cur = text.createTextCursor()
+    text.insertString(cur, "para text", False)
+    text.insertControlCharacter(cur, 0, False)
+    cur.gotoStart(False)
+    cur.goRight(4, True)
+    cont = cur.ParaUserDefinedAttributes
+    put(cont)
+    cur.ParaUserDefinedAttributes = cont
+    cont = cur.TextUserDefinedAttributes
+    put(cont)
+    cur.TextUserDefinedAttributes = cont
+    cur.gotoEnd(False)
+    tbl = doc.createInstance("com.sun.star.text.TextTable")
+    tbl.initialize(2, 2)
+    text.insertTextContent(cur, tbl, False)
+    for tgt in (tbl, tbl.getCellByName("A1")):
+        cont = tgt.UserDefinedAttributes
+        put(cont)
+        tgt.UserDefinedAttributes = cont
+    sec = doc.createInstance("com.sun.star.text.TextSection")
+    text.insertTextContent(text.End, sec, False)
+    cont = sec.UserDefinedAttributes
+    put(cont)
+    sec.UserDefinedAttributes = cont
+    done.append(_save(doc, outdir, "alien-writer.odt", "writer8"))
+
+    doc = _new("sdraw")
+    page = doc.DrawPages.getByIndex(0)
+    s = doc.createInstance("com.sun.star.drawing.RectangleShape")
+    page.add(s)
+    s.Position = Point(2000, 2000)
+    s.Size = Size(4000, 2000)
+    s.String = "alien"
+    cont = s.UserDefinedAttributes
+    put(cont)
+    s.UserDefinedAttributes = cont
+    done.append(_save(doc, outdir, "alien-draw.odg", "draw8"))
+
+    doc = _new("scalc")
+    c = doc.Sheets.getByIndex(0).getCellByPosition(0, 0)
+    c.Value = 1
+    cont = c.UserDefinedAttributes
+    put(cont)
+    c.UserDefinedAttributes = cont
+    done.append(_save(doc, outdir, "alien-calc.ods", "calc8"))
+    return done
+
+
+def para_fill_foreign(outdir):
+    """The paragraphs and paragraph styles another producer writes with fill properties, built with AOO's own (aoo-form.odt)."""
+    png = os.path.join(outdir, "tile.png")
+    _png(png)
+    png_url = uno.systemPathToFileUrl(png)
+    doc = _new("swriter")
+
+    def grad(c1, c2):
+        g = Gradient()
+        g.Style, g.StartColor, g.EndColor = LINEAR, c1, c2
+        g.Angle, g.Border, g.XOffset, g.YOffset = 300, 10, 50, 50
+        g.StartIntensity = g.EndIntensity = 100
+        g.StepCount = 0
+        return g
+
+    def hatch():
+        h = Hatch()
+        h.Style, h.Color, h.Distance, h.Angle = SINGLE, 0xFFAA00, 200, 450
+        return h
+
+    def fill(o, kind):
+        if kind == "solid":
+            o.FillStyle = SOLID
+            o.FillColor = 0x33AA55
+        elif kind == "solid_transp":
+            o.FillStyle = SOLID
+            o.FillColor = 0x3355AA
+            o.FillTransparence = 40
+        elif kind == "gradient":
+            o.FillStyle = GRADIENT
+            o.FillGradient = grad(0xFF0000, 0x0000FF)
+        elif kind == "gradient_transp":
+            o.FillStyle = GRADIENT
+            o.FillGradient = grad(0xFF0000, 0x0000FF)
+            o.FillTransparence = 30
+        elif kind == "hatch":
+            o.FillStyle = HATCH
+            o.FillHatch = hatch()
+            o.FillColor = 0xFFFFCC
+            o.FillBackground = True
+        elif kind == "hatch_nobg":
+            o.FillStyle = HATCH
+            o.FillHatch = hatch()
+            o.FillBackground = False
+        elif kind.startswith("bitmap"):
+            o.FillStyle = BITMAP
+            o.FillBitmapURL = png_url
+            o.FillBitmapMode = {"bitmap_stretch": STRETCH, "bitmap_once": NO_REPEAT}.get(kind, REPEAT)
+            if kind == "bitmap_transp":
+                o.FillTransparence = 50
+
+    kinds = ["solid", "solid_transp", "gradient", "gradient_transp", "hatch", "hatch_nobg", "bitmap_tile", "bitmap_stretch", "bitmap_once",
+             "bitmap_transp"]
+    styles = doc.StyleFamilies.getByName("ParagraphStyles")
+    for k in kinds:
+        s = doc.createInstance("com.sun.star.style.ParagraphStyle")
+        s.ParentStyle = "Standard"
+        styles.insertByName("S_" + k, s)
+        fill(s, k)
+    pb = uno.getConstantByName("com.sun.star.text.ControlCharacter.PARAGRAPH_BREAK")
+    cur = doc.Text.createTextCursor()
+    for k in kinds:
+        for kind in ("direct", "styled"):
+            doc.Text.insertString(cur, kind + " " + k, False)
+            doc.Text.insertControlCharacter(cur, pb, False)
+    paras = doc.Text.createEnumeration()
+    for k in kinds:
+        fill(paras.nextElement(), k)
+        paras.nextElement().ParaStyleName = "S_" + k
+    return [_save(doc, outdir, "aoo-form.odt", "writer8")]
+
+
+BUILDERS = {"page-fill": page_fill, "fill-others": fill_others, "t13": t13, "page-fill-1_3": page_fill_13, "row-split": row_split,
+            "grid-snap": grid_snap, "ole-text": ole_text, "ole-text-edge": ole_text_edge, "chart-shapes": chart_shapes,
+            "normal-values5b": normal_values_5b, "connector-viewbox": connector_viewbox, "para-fill": para_fill,
+            "alien-attrs": alien_attrs, "para-fill-foreign": para_fill_foreign}
 
 
 def generate(builder, outdir):

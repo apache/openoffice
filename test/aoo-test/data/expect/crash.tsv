@@ -1,0 +1,2 @@
+# test_name<TAB>kind<TAB>reason. See aootest/expect.py.
+test_paragraph_bitmap_fill_mode_does_not_kill_the_office	xfail	setting FillBitmapMode on a Writer paragraph kills the trunk dev app (SIGSEGV in SwXParagraph::setPropertyValue); the installed 5.1.0 does not crash

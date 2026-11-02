@@ -26,6 +26,7 @@ from collections import namedtuple
 from pathlib import Path
 
 from aootest import install
+from aootest.client import WorkerFailure
 from aootest.paths import DATA
 
 # Source: id is the stable name used in test ids; path is None for a document the office creates (`app` names a new empty one,
@@ -34,7 +35,8 @@ from aootest.paths import DATA
 Source = namedtuple("Source", "id path kind app builder checks", defaults=(None, None, ()))
 SHIPPED_KIND = {"odt": "odt", "ott": "odt", "ods": "ods", "ots": "ods", "odp": "odp", "otp": "odp", "odg": "odg", "otg": "odg"}
 GENERATED = (("writer", "odt"), ("calc", "ods"), ("impress", "odp"), ("draw", "odg"))
-# builder, file it makes, kind, checks
+# builder, file it makes, kind, checks. The para-fill-foreign builder is not here: it crashes the trunk dev app
+# (tests/odf/test_known_crashes.py), and a crash slows the office starts that follow.
 BUILT = (("page-fill", "page-fill.odt", "odt", ("page-fill/checks.json", "page-fill/bitmap.json")),
          ("fill-others", "others-writer.odt", "odt", ("fill-others/writer.json",)),
          ("fill-others", "others-calc.ods", "ods", ("fill-others/calc.json",)),
@@ -47,7 +49,19 @@ BUILT = (("page-fill", "page-fill.odt", "odt", ("page-fill/checks.json", "page-f
          ("t13", "chart.ods", "ods", ("t13/checks-chart.json",)),
          ("page-fill-1_3", "aoo-src.odt", "odt", ("page-fill-1_3/checks.json",)),
          ("page-fill-1_3", "calc-src.ods", "ods", ("page-fill-1_3/checks-calc.json",)),
-         ("page-fill-1_3", "calc-drawing-page.ods", "ods", ("page-fill-1_3/checks-calc.json",)))
+         ("page-fill-1_3", "calc-drawing-page.ods", "ods", ("page-fill-1_3/checks-calc.json",)),
+         ("row-split", "row-split.odt", "odt", ("row-split/checks.json",)),
+         ("grid-snap", "grid-snap.odt", "odt", ("grid-snap/checks.json",)),
+         ("ole-text", "ole-text.odg", "odg", ("ole-text/checks.json",)),
+         ("ole-text-edge", "ole-text-edge.odg", "odg", ("ole-text-edge/checks.json",)),
+         ("chart-shapes", "chart-shapes.ods", "ods", ("chart-shapes/checks.json",)),
+         ("normal-values5b", "normal5b.ods", "ods", ("normal-values5b/checks-image.json",)),
+         ("connector-viewbox", "conn.odg", "odg", ("connector-viewbox/checks.json",)),
+         ("connector-viewbox", "conn.odp", "odp", ("connector-viewbox/checks.json",)),
+         ("para-fill", "para-fill.odt", "odt", ("para-fill/checks.json", "para-fill/bitmap.json")),
+         ("alien-attrs", "alien-writer.odt", "odt", ("alien-attrs/writer.json", "alien-attrs/writer-cell.json", "alien-attrs/writer-foreign.json")),
+         ("alien-attrs", "alien-draw.odg", "odg", ("alien-attrs/draw.json",)),
+         ("alien-attrs", "alien-calc.ods", "ods", ("alien-attrs/calc.json",)))
 DEFAULT_LIMIT = 40
 SHIPPED_DIRS = ("template", "samples")
 
@@ -145,25 +159,41 @@ class Prepared:
     in `directory`."""
 
     def __init__(self, session, directory):
-        self.session, self.dir, self._made, self._built = session, Path(directory), {}, set()
+        self.session, self.dir, self._made, self._built, self._failed = session, Path(directory), {}, set(), {}
 
     def file(self, source):
+        """The file of `source`. A source that could not be made raises the same error every time, without trying again."""
         if source.path is not None:
             return str(source.path)
+        if source.id in self._failed:
+            raise self._failed[source.id]
         if source.id not in self._made:
-            if source.builder:
-                name, filename = source.builder
-                if name not in self._built:
-                    self.session.call("generate", {"builder": name, "outdir": str(self.dir / name)}, timeout=300)
-                    self._built.add(name)
-                self._made[source.id] = str(self.dir / name / filename)
-            else:
-                path = self.dir / ("%s.%s" % (source.app, source.kind))
-                self.dir.mkdir(parents=True, exist_ok=True)
-                self.session.call("new_and_store", {"app": source.app, "dst": str(path), "filter": FILTERS[source.kind],
-                                                    "text": "Hello %s" % source.app}, timeout=180)
-                self._made[source.id] = str(path)
+            try:
+                self._make(source)
+            except WorkerFailure as e:
+                self._failed[source.id] = e
+                raise
         return self._made[source.id]
+
+    def _make(self, source):
+        if source.builder:
+            name, filename = source.builder
+            if name in self._failed:
+                raise self._failed[name]
+            if name not in self._built:
+                try:
+                    self.session.call("generate", {"builder": name, "outdir": str(self.dir / name)}, timeout=300)
+                except WorkerFailure as e:
+                    self._failed[name] = e
+                    raise
+                self._built.add(name)
+            self._made[source.id] = str(self.dir / name / filename)
+        else:
+            path = self.dir / ("%s.%s" % (source.app, source.kind))
+            self.dir.mkdir(parents=True, exist_ok=True)
+            self.session.call("new_and_store", {"app": source.app, "dst": str(path), "filter": FILTERS[source.kind],
+                                                "text": "Hello %s" % source.app}, timeout=180)
+            self._made[source.id] = str(path)
 
 
 FILTERS = {"odt": "writer8", "ods": "calc8", "odp": "impress8", "odg": "draw8"}

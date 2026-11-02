@@ -20,7 +20,7 @@ minversion = "8.0"
 testpaths = ["tests"]
 python_files = ["test_*.py"]
 pythonpath = ["src"]
-addopts = "--import-mode=importlib -m 'not corpus and not render and not gui'"
+addopts = "--import-mode=importlib -m 'not corpus and not render and not gui and not crash'"
 markers = [
     "selftest: negative controls proving the checkers can fail",
     "smoke: quick checks against an installed office",
@@ -29,4 +29,5 @@ markers = [
     "render: PDF rasterize and compare",
     "gui: needs a display or a desktop session",
     "needs_java: needs a Java runtime",
+    "crash: triggers a known crash of the office under test; run on request with -m crash",
 ]
