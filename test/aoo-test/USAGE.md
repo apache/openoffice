@@ -81,11 +81,16 @@ The save-mode tests run over documents that are not stored in this repository:
 - Templates and documents the install ships under `share/template` and `share/samples`, up to `--shipped-limit`. File types and directories are interleaved, so a small limit still spreads across both, and the same install always gives the same list.
 - One new document per application (Writer, Calc, Impress, Draw), created by the office.
 - Documents the worker builds through the API (`src/aootest_worker/ops/generate.py`): page fills, other fills, ODF 1.3 features. They are made in ODF 1.2 extended mode, which keeps every feature, then saved in each mode and read back; the values each read-back must give are in `data/checks/`.
+- Documents made by the large scripts of the ODF harness (`src/aootest_worker/fixtures/`, run by `ops/scripts.py`): Writer, Calc, Draw and Impress features, charts, style properties, document types. `data/built-files.tsv` lists what each script makes. Each script runs in an office of its own, which is closed afterwards; a script that stalls is run once more. They carry no read-back checks, so they add the save-mode items only.
 - Every ODF document under `--documents DIR`, if given.
+
+`data/built-excluded.tsv` names the documents of those scripts that are left out of the default run because converting them kills or stalls the office (Calc documents with tracked changes, Base documents). `python3 -m pytest -m crash` runs each of them through every save mode in a fresh office; expect crash reports, and on macOS the "unexpectedly quit" prompt for each crash, to which `Don't Reopen` is the answer. Known deviations of the other documents are rows in `data/expect/`.
 
 Each document is saved once per mode: strict ODF 1.2 (save mode 4), 1.2 extended (3), 1.3 (5), 1.3 extended (6) and the product default. Builds that predate the ODF 1.3 work ignore modes 5 and 6; those items skip, or fail with `--require-odf13`.
 
 ## Other families
+
+- **Error kinds of the extended modes.** The 1.2 extended and 1.3 extended modes write extension content on purpose, so their output is not asserted to be schema valid. `tests/odf/test_kinds.py` compares the errors against the ODF 1.2 and 1.3 schemas, and the same with foreign content removed, with `data/baseline/`: a new kind of error, a higher count, a kind found in more documents, or a baseline document that is no longer covered fails the item; fewer errors pass. The baseline covers the documents the suite builds or creates, not the shipped ones, and was written with the trunk dev app, so another build can differ. After a change that is meant to alter the errors, run `python3 -m pytest tests/odf/test_kinds.py --write-kinds` and read the diff of `data/baseline/` before committing it.
 
 - **Cross-check.** odfvalidator checks the same saved files as jing; the two must agree on which streams have errors.
 - **Stability.** Each document is saved twice; `content.xml` and `styles.xml` must match apart from the cached value of date and time fields.

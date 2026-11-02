@@ -33,7 +33,8 @@ BODY = '<office:text><text:p>Hello <text:time text:time-value="2026-11-02T07:47:
 def package(path, content, styles="<office:document-styles/>"):
     with zipfile.ZipFile(path, "w") as z:
         z.writestr("content.xml", content)
-        z.writestr("styles.xml", styles)
+        if styles is not None:
+            z.writestr("styles.xml", styles)
     return str(path)
 
 
@@ -61,3 +62,17 @@ def test_a_difference_in_styles_xml_is_reported(tmp_path):
     a = package(tmp_path / "a.zip", BODY)
     b = package(tmp_path / "b.zip", BODY, "<office:document-styles>x</office:document-styles>")
     assert stability.differing_parts(a, b) == ["styles.xml"]
+
+
+def test_a_part_neither_package_has_is_not_compared(tmp_path):
+    a = package(tmp_path / "a.zip", BODY, None)
+    b = package(tmp_path / "b.zip", BODY, None)
+    assert stability.differing_parts(a, b) == []
+    assert stability.differing_parts(a, package(tmp_path / "c.zip", BODY.replace("Hello", "Hullo"), None)) == ["content.xml"]
+
+
+def test_a_part_only_one_package_has_is_reported(tmp_path):
+    a = package(tmp_path / "a.zip", BODY, None)
+    b = package(tmp_path / "b.zip", BODY)
+    assert stability.differing_parts(a, b) == ["styles.xml"]
+    assert stability.differing_parts(b, a) == ["styles.xml"]

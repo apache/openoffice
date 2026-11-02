@@ -30,13 +30,14 @@ The only required input is where the office is installed. The suite runs the sam
 | `tests/selftest` | no | The checkers (schema validation, package rules, document types, xml ids, formula syntax, decryption) against documents built to fail. |
 | `tests/harness` | no | Install discovery, the worker protocol and process handling, against fake installs and a fake worker. |
 | `tests/smoke` | yes | Start, connect, new/save/reload per application and save mode, conversion, and the old smoke test document (Writer, Calc, Impress, Draw, HTML, chart, Math, Bibliography, extensions). |
-| `tests/odf` | yes | Documents saved in each ODF save mode and checked against the ODF 1.2, 1.3 and 1.4 schemas and the package rules, with a second validator (odfvalidator) as a cross-check; documents the suite builds, saved and read back; saving twice for stable output; password-protected documents decrypted by an independent implementation; about 250 OpenFormula cases evaluated in Calc; and, with a corpus, ODF 1.2 and 1.3 twins compared after import. Everything but the formula cases is marked `slow`. |
+| `tests/odf` | yes | Documents saved in each ODF save mode and checked against the ODF 1.2, 1.3 and 1.4 schemas and the package rules, with a second validator (odfvalidator) as a cross-check; documents the suite builds, saved and read back; saving twice for stable output; the error kinds of the extended modes compared with a stored baseline; password-protected documents decrypted by an independent implementation; about 250 OpenFormula cases evaluated in Calc; and, with a corpus, ODF 1.2 and 1.3 twins compared after import. Everything but the formula cases is marked `slow`. |
 
 ## What it does not include
 
 Nothing third party and no binary documents are stored here.
 
 - Test documents come from the office under test: the templates and documents it ships, and documents it creates when the tests run. See [USAGE.md](USAGE.md#source-documents).
+- Some documents the suite can build are left out of the default run because converting them kills or stalls the office: Calc documents with tracked changes and all Base documents. They are listed with the reason in `data/built-excluded.tsv` and run with `python3 -m pytest -m crash`.
 - The OASIS schemas, jing and odfvalidator are downloaded once into a cache and checked against pinned sha256 values. Without them the tests that need them skip, with a reason.
 
 ## Requirements

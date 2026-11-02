@@ -31,7 +31,7 @@ from com.sun.star.drawing.BitmapMode import NO_REPEAT, REPEAT, STRETCH
 from com.sun.star.drawing.FillStyle import BITMAP, GRADIENT, HATCH, SOLID
 from com.sun.star.drawing.HatchStyle import SINGLE
 
-from aootest_worker.ops import core
+from aootest_worker.ops import core, scripts
 from aootest_worker.ops.core import pv
 from aootest_worker.ops.encrypted import _png
 
@@ -782,10 +782,123 @@ def para_fill_foreign(outdir):
     return [_save(doc, outdir, "aoo-form.odt", "writer8")]
 
 
+def boolean_writer(outdir):
+    """Writer table cells and set-expression fields with a boolean number format, holding 12345, 1 and 0."""
+    from com.sun.star.lang import Locale
+    from com.sun.star.util.NumberFormat import LOGICAL
+    doc = _new("swriter")
+    key = doc.NumberFormats.getStandardFormat(LOGICAL, Locale("en", "US", ""))
+    tbl = doc.createInstance("com.sun.star.text.TextTable")
+    tbl.initialize(1, 3)
+    doc.Text.insertTextContent(doc.Text.End, tbl, False)
+    for i, v in enumerate((12345, 1, 0)):
+        c = tbl.getCellByPosition(i, 0)
+        c.NumberFormat = key
+        c.setValue(v)
+    cur = doc.Text.createTextCursor()
+    cur.gotoEnd(False)
+    for i, v in enumerate((12345.0, 1.0, 0.0)):
+        f = doc.createInstance("com.sun.star.text.TextField.SetExpression")
+        mst = doc.createInstance("com.sun.star.text.FieldMaster.SetExpression")
+        mst.Name = "bv%d" % i
+        mst.SubType = 0
+        f.Content = ""
+        f.NumberFormat = key
+        f.SubType = 0
+        f.IsShowFormula = False
+        f.attachTextFieldMaster(mst)
+        doc.Text.insertTextContent(cur, f, False)
+        f.Value = v
+        doc.Text.insertString(cur, " ", False)
+    return [_save(doc, outdir, "boolean-writer.odt", "writer8")]
+
+
+def normal_values(outdir):
+    """A Writer table with a merged cell, a page break, a footnote with references to it, and two frames anchored to a page."""
+    from com.sun.star.style.BreakType import PAGE_BEFORE
+    from com.sun.star.text.TextContentAnchorType import AT_PAGE
+    doc = _new("swriter")
+    text = doc.Text
+    tbl = doc.createInstance("com.sun.star.text.TextTable")
+    tbl.initialize(2, 3)
+    text.insertTextContent(text.End, tbl, False)
+    c = tbl.createCursorByCellName("A1")
+    c.goRight(1, True)
+    c.mergeRange()
+    cur = text.createTextCursor()
+    cur.gotoEnd(False)
+    text.insertString(cur, "\nbody\n", False)
+    cur.gotoEnd(False)
+    cur.BreakType = PAGE_BEFORE
+    text.insertString(cur, "page two\n", False)
+    fn = doc.createInstance("com.sun.star.text.Footnote")
+    fn.Label = ""
+    cur.gotoEnd(False)
+    text.insertTextContent(cur, fn, False)
+    fn.String = "note text"
+    text.insertString(cur, " ", False)
+    for part in (0, 3, 2):
+        f = doc.createInstance("com.sun.star.text.TextField.GetReference")
+        f.ReferenceFieldSource = 3
+        f.SourceName = ""
+        f.SequenceNumber = fn.ReferenceId
+        f.ReferenceFieldPart = part
+        text.insertTextContent(cur, f, False)
+        text.insertString(cur, " ", False)
+    for name, page in (("frame_p2", 2), ("frame_nopage", 0)):
+        fr = doc.createInstance("com.sun.star.text.TextFrame")
+        fr.AnchorType = AT_PAGE
+        if page:
+            fr.AnchorPageNo = page
+        fr.Width = 3000
+        fr.Height = 1000
+        text.insertTextContent(cur, fr, False)
+        fr.setName(name)
+        fr.Text.String = name
+    return [_save(doc, outdir, "normal-values.odt", "writer8")]
+
+
+def note_ref(outdir):
+    """A footnote and an endnote, each with reference fields for every part (page, direction, text, the three sequence-only ones)."""
+    doc = _new("swriter")
+    text = doc.Text
+    cur = text.createTextCursor()
+    text.insertString(cur, "body", False)
+    fn = doc.createInstance("com.sun.star.text.Footnote")
+    text.insertTextContent(cur, fn, False)
+    fn.String = "note text"
+    en = doc.createInstance("com.sun.star.text.Endnote")
+    text.insertTextContent(cur, en, False)
+    en.String = "end text"
+    text.insertString(cur, " ", False)
+    for src, note in ((3, fn), (4, en)):
+        for part in (0, 3, 2, 5, 6, 7):
+            f = doc.createInstance("com.sun.star.text.TextField.GetReference")
+            f.ReferenceFieldSource = src
+            f.SourceName = ""
+            f.SequenceNumber = note.ReferenceId
+            f.ReferenceFieldPart = part
+            text.insertTextContent(cur, f, False)
+            text.insertString(cur, " ", False)
+    return [_save(doc, outdir, "note-ref.odt", "writer8")]
+
+
 BUILDERS = {"page-fill": page_fill, "fill-others": fill_others, "t13": t13, "page-fill-1_3": page_fill_13, "row-split": row_split,
             "grid-snap": grid_snap, "ole-text": ole_text, "ole-text-edge": ole_text_edge, "chart-shapes": chart_shapes,
             "normal-values5b": normal_values_5b, "connector-viewbox": connector_viewbox, "para-fill": para_fill,
-            "alien-attrs": alien_attrs, "para-fill-foreign": para_fill_foreign}
+            "alien-attrs": alien_attrs, "para-fill-foreign": para_fill_foreign, "boolean-writer": boolean_writer,
+            "normal-values": normal_values, "note-ref": note_ref}
+
+# The large builders are the old harness's scripts, run as they are (see ops/scripts.py). In a fresh office the draw script stalls at
+# its `annotations` step (twice in a row); that step alone and the script without it both finish, so they are two builders.
+_DRAW_STEPS = ("pres-settings header-footer layouts transitions animations actions draw-links image-maps shapes layers special fills "
+               "masters-notes writer-shapes writer-group-frame writer-graphics calc-shapes custom-presets custom-full fontwork 3d-odg "
+               "3d-odp").split()
+SCRIPTS = {"writer": ("writer.py", ()), "draw": ("draw.py", _DRAW_STEPS), "draw-annotations": ("draw.py", ("annotations",)),
+           "calc": ("calc.py", ()), "styles-gfx": ("styles_gfx.py", ()), "chart": ("chart.py", ()), "styles-text": ("styles_text.py", ()),
+           "leak": ("leak.py", ()), "base": ("base.py", ()), "p8-drawings": ("make_drawings.py", ()), "doctypes": ("doctypes.py", ())}
+BUILDERS.update({name: (lambda outdir, script=script, args=args: scripts.run_script(script, outdir, args))
+                 for name, (script, args) in SCRIPTS.items()})
 
 
 def generate(builder, outdir):

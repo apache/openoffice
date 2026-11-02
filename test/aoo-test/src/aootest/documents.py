@@ -26,7 +26,7 @@ from collections import namedtuple
 from pathlib import Path
 
 from aootest import install
-from aootest.client import WorkerFailure
+from aootest.client import WorkerFailure, WorkerHang
 from aootest.paths import DATA
 
 # Source: id is the stable name used in test ids; path is None for a document the office creates (`app` names a new empty one,
@@ -61,9 +61,31 @@ BUILT = (("page-fill", "page-fill.odt", "odt", ("page-fill/checks.json", "page-f
          ("para-fill", "para-fill.odt", "odt", ("para-fill/checks.json", "para-fill/bitmap.json")),
          ("alien-attrs", "alien-writer.odt", "odt", ("alien-attrs/writer.json", "alien-attrs/writer-cell.json", "alien-attrs/writer-foreign.json")),
          ("alien-attrs", "alien-draw.odg", "odg", ("alien-attrs/draw.json",)),
-         ("alien-attrs", "alien-calc.ods", "ods", ("alien-attrs/calc.json",)))
+         ("alien-attrs", "alien-calc.ods", "ods", ("alien-attrs/calc.json",)),
+         ("boolean-writer", "boolean-writer.odt", "odt", ("boolean-writer/checks.json",)),
+         ("normal-values", "normal-values.odt", "odt", ("normal-values/checks.json",)),
+         ("note-ref", "note-ref.odt", "odt", ("note-ref/checks-seq.json",)))
+# The files of the script builders (the ODF harness's large make.py scripts), generated from a run: builder<TAB>file. They carry no
+# reload checks, so they only add the save-mode items. Types the four above do not cover get their own filter in FILTERS.
+BUILT_KIND = dict(SHIPPED_KIND, odm="odm", odf="odf", odb="odb")
+BUILD_TIMEOUT, BUILD_TIMEOUTS = 300, {"base": 180, "calc": 900, "chart": 900, "draw": 900, "styles-gfx": 900, "styles-text": 900, "writer": 900}
 DEFAULT_LIMIT = 40
 SHIPPED_DIRS = ("template", "samples")
+
+
+def _tsv(name):
+    return [line.split("\t") for line in (DATA / name).read_text(encoding="utf-8").splitlines() if line and not line.startswith("#")]
+
+
+def script_excluded():
+    """(builder, file, reason) rows of data/built-excluded.tsv: files of the script builders that are not in the default run."""
+    return [tuple(r) for r in _tsv("built-excluded.tsv")]
+
+
+def script_built():
+    """(builder, file, kind, checks) rows for the files in data/built-files.tsv, without the excluded ones."""
+    left_out = {(b, f) for b, f, _ in script_excluded()}
+    return [(b, f, BUILT_KIND[f.rsplit(".", 1)[1]], ()) for b, f in _tsv("built-files.tsv") if (b, f) not in left_out]
 
 
 def share_dir(layout):
@@ -115,7 +137,7 @@ def shipped(layout, limit=DEFAULT_LIMIT):
 def generated():
     """One small document per application, and the documents the worker builds, all created by the office under test."""
     return ([Source("generated/" + app, None, kind, app) for app, kind in GENERATED] +
-            [Source("built/%s/%s" % (b, f), None, kind, None, (b, f), checks) for b, f, kind, checks in BUILT])
+            [Source("built/%s/%s" % (b, f), None, kind, None, (b, f), checks) for b, f, kind, checks in BUILT + tuple(script_built())])
 
 
 def load_checks(name):
@@ -156,10 +178,14 @@ def from_config(config, environ=None):
 
 class Prepared:
     """The file of each source, made once: a shipped or user document is used where it is, anything else is created by `session`
-    in `directory`."""
+    in `directory`. A script builder runs in the office that `own_office(builder)` returns, and that office is closed afterwards:
+    those scripts fail or stall depending on what the office did before."""
 
-    def __init__(self, session, directory):
+    def __init__(self, session, directory, own_office=None):
         self.session, self.dir, self._made, self._built, self._failed = session, Path(directory), {}, set(), {}
+        self._outdir = {}
+        self.own_office = own_office
+        self.script_builders = {b for b, _ in _tsv("built-files.tsv")}
 
     def file(self, source):
         """The file of `source`. A source that could not be made raises the same error every time, without trying again."""
@@ -175,19 +201,38 @@ class Prepared:
                 raise
         return self._made[source.id]
 
+    def _build(self, name):
+        """Runs builder `name`. A script builder that stalls is run once more in a fresh office and a directory of its own: the base
+        script stalled in its first variant in two of about six runs, and left a lock file behind."""
+        scripted = self.own_office and name in self.script_builders
+        for attempt in (1, 2):
+            outdir = self.dir / name / ("out" if attempt == 1 else "out-retry")
+            own = self.own_office(name) if scripted else None
+            try:
+                (own or self.session).call("generate", {"builder": name, "outdir": str(outdir)},
+                                           timeout=BUILD_TIMEOUTS.get(name, BUILD_TIMEOUT))
+                break
+            except WorkerHang as e:
+                if not scripted or attempt == 2:
+                    self._failed[name] = e
+                    raise
+            except WorkerFailure as e:
+                self._failed[name] = e
+                raise
+            finally:
+                if own:
+                    own.close()
+        self._outdir[name] = outdir
+        self._built.add(name)
+
     def _make(self, source):
         if source.builder:
             name, filename = source.builder
             if name in self._failed:
                 raise self._failed[name]
             if name not in self._built:
-                try:
-                    self.session.call("generate", {"builder": name, "outdir": str(self.dir / name)}, timeout=300)
-                except WorkerFailure as e:
-                    self._failed[name] = e
-                    raise
-                self._built.add(name)
-            self._made[source.id] = str(self.dir / name / filename)
+                self._build(name)
+            self._made[source.id] = str(self._outdir[name] / filename)
         else:
             path = self.dir / ("%s.%s" % (source.app, source.kind))
             self.dir.mkdir(parents=True, exist_ok=True)
@@ -196,4 +241,5 @@ class Prepared:
             self._made[source.id] = str(path)
 
 
-FILTERS = {"odt": "writer8", "ods": "calc8", "odp": "impress8", "odg": "draw8"}
+FILTERS = {"odt": "writer8", "ods": "calc8", "odp": "impress8", "odg": "draw8", "odm": "writerglobal8", "odf": "math8",
+           "odb": "StarOffice XML (Base)"}

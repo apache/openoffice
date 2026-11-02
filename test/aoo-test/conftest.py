@@ -41,6 +41,7 @@ def pytest_addoption(parser):
     g.addoption("--shipped-limit", type=int, default=documents.DEFAULT_LIMIT, help="how many of the templates and documents shipped with the office to use (default %(default)s)")
     g.addoption("--twin-corpus", default=None, help="a directory with v12, v13, v12ext and v13ext subdirectories holding the same documents saved as ODF 1.2 and 1.3 by another producer (default: $AOO_TWIN_CORPUS)")
     g.addoption("--strict-expect", action="store_true", help="an item that a data/expect row expects to fail must fail (XPASS becomes a failure)")
+    g.addoption("--write-kinds", action="store_true", help="write data/baseline/ from this run instead of comparing with it (tests/odf/test_kinds.py)")
     g.addoption("--require-odf13", action="store_true", help="fail instead of skipping the ODF 1.3 save modes when the office cannot write 1.3")
 
 
@@ -113,7 +114,8 @@ def odf_runs(pytestconfig, aoo_offices, tmp_path_factory):
     runs = {}
     sources = documents.from_config(pytestconfig)
     # the sources are made in ODF 1.2 extended mode, which keeps every feature the reload checks look for
-    prepared = documents.Prepared(aoo_offices.get(SAVE_MODES["ext"]), work / "src")
+    prepared = documents.Prepared(aoo_offices.get(SAVE_MODES["ext"]), work / "src",
+                                  lambda builder: aoo_offices.get(SAVE_MODES["ext"], tag="build-" + builder))
 
     def get(name):
         if name not in runs:
