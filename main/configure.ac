@@ -445,10 +445,11 @@ AC_ARG_WITH(static-system-libs,
 [  --with-static-system-libs=LIST
                           Comma-separated list of system libraries to link
                           statically, each NAME or NAME:DIR, e.g.
-                          "libxml,libxslt,curl,libiconv:/usr/local".
-                          Supported: libxml, libxslt, curl, libiconv.
+                          "libxml,libxslt,curl,openssl,libiconv:/usr/local".
+                          Supported: libxml, libxslt, curl, openssl, libiconv.
                           NAME alone uses the prefix the matching
-                          --with-system-NAME resolved; libiconv has no such
+                          --with-system-NAME resolved (openssl: the prefix
+                          and libdir its openssl.pc reports); libiconv has no such
                           option, so it always needs the :DIR form. Without
                           this the archive is used only when the prefix
                           happens to have no dylib, so a dylib appearing
@@ -5269,10 +5270,39 @@ AC_SUBST(CURL_LIBS)
 AC_SUBST(CURL_PREFIX)
 
 dnl ===================================================================
+dnl Check for system openssl
+dnl ===================================================================
+dnl This sits ahead of the static-pin block below because that block
+dnl rewrites OPENSSL_LIBS. openssl has no *-config script, so the prefix and
+dnl libdir the pin block needs are read from the .pc file (libdir can be
+dnl lib64 rather than $prefix/lib).
+AC_MSG_CHECKING([which libssl to use])
+if test -n "$with_system_openssl" -o -n "$with_system_libs" && \
+        test "$with_system_openssl" != "no"; then
+    AC_MSG_RESULT([external])
+    if test "$_os" = "FreeBSD"; then
+        OPENSSL_CFLAGS=
+        OPENSSL_LIBS="-lssl -lcrypto"
+    else
+    	PKG_CHECK_MODULES( OPENSSL, openssl )
+        OPENSSL_PREFIX=`$PKG_CONFIG --variable=prefix openssl`
+        OPENSSL_LIBDIR=`$PKG_CONFIG --variable=libdir openssl`
+    fi
+    SYSTEM_OPENSSL=YES
+else
+    AC_MSG_RESULT([internal])
+    SYSTEM_OPENSSL=NO
+    BUILD_TYPE="$BUILD_TYPE OPENSSL"
+fi
+AC_SUBST(SYSTEM_OPENSSL)
+AC_SUBST(OPENSSL_CFLAGS)
+AC_SUBST(OPENSSL_LIBS)
+
+dnl ===================================================================
 dnl Pin selected system libraries to their static archives
 dnl ===================================================================
-dnl Runs after the libxml/libxslt/curl checks above, which is where the
-dnl *_PREFIX and *_LIBS values it rewrites are established.
+dnl Runs after the libxml/libxslt/curl/openssl checks above, which is where
+dnl the *_PREFIX and *_LIBS values it rewrites are established.
 dnl
 dnl Without this the static-vs-dynamic choice is implicit: "-lfoo" lets the
 dnl linker take a dylib over an archive, and the libxml2 link in
@@ -5293,6 +5323,7 @@ if test -n "$with_static_system_libs" -a "$with_static_system_libs" != "no"; the
       dnl libiconv usable here: it has no --with-system-libiconv, so
       dnl configure has no prefix of its own to fall back on.
       _sslib=`echo "$_ssentry" | $SED -e 's/:.*//'`
+      _sslibdir=
       _ssgiven=
       case "$_ssentry" in
       *:*) _ssgiven=`echo "$_ssentry" | $SED -e 's/^[[^:]]*://'` ;;
@@ -5311,6 +5342,12 @@ if test -n "$with_static_system_libs" -a "$with_static_system_libs" != "no"; the
          _ssenabled="$SYSTEM_CURL"; _ssprefix="$CURL_PREFIX"; _ssopt="--with-system-curl"
          _ssarchives="libcurl.a"; _sslflags="-lcurl"
          ;;
+      openssl)
+         dnl No *-config here: configure takes prefix and libdir from
+         dnl openssl.pc, so the archives are found even under lib64.
+         _ssenabled="$SYSTEM_OPENSSL"; _ssprefix="$OPENSSL_PREFIX"; _sslibdir="$OPENSSL_LIBDIR"; _ssopt="--with-system-openssl"
+         _ssarchives="libssl.a libcrypto.a"; _sslflags="-lssl -lcrypto"
+         ;;
       libiconv)
          dnl The bundled XML libs are built --without-iconv, so this only
          dnl covers a *system* libxml2/libxslt/curl whose own build enabled
@@ -5320,23 +5357,29 @@ if test -n "$with_static_system_libs" -a "$with_static_system_libs" != "no"; the
          _ssarchives="libiconv.a"; _sslflags="-liconv"
          ;;
       *)
-         AC_MSG_ERROR([unsupported library "$_sslib" in --with-static-system-libs; supported: libxml, libxslt, curl, libiconv])
+         AC_MSG_ERROR([unsupported library "$_sslib" in --with-static-system-libs; supported: libxml, libxslt, curl, openssl, libiconv])
          ;;
       esac
-      test -n "$_ssgiven" && _ssprefix="$_ssgiven"
+      if test -n "$_ssgiven"; then
+         _ssprefix="$_ssgiven"
+         _sslibdir=
+      fi
       if test "$_ssenabled" != "YES"; then
          AC_MSG_ERROR([--with-static-system-libs=$_sslib requires $_ssopt])
       fi
       if test -z "$_ssprefix"; then
-         if test -n "$_ssopt"; then
+         if test "$_sslib" = "openssl"; then
+            AC_MSG_ERROR([--with-static-system-libs=openssl found no prefix from pkg-config (FreeBSD?); write openssl:DIR, e.g. openssl:/usr/local])
+         elif test -n "$_ssopt"; then
             AC_MSG_ERROR([--with-static-system-libs=$_sslib needs a prefix; give $_ssopt=DIR (macOS only)])
          else
             AC_MSG_ERROR([--with-static-system-libs=$_sslib needs a prefix; write $_sslib:DIR, e.g. $_sslib:/usr/local])
          fi
       fi
+      test -z "$_sslibdir" && _sslibdir="$_ssprefix/lib"
       for _ssa in $_ssarchives; do
-         if test ! -f "$_ssprefix/lib/$_ssa"; then
-            AC_MSG_ERROR([--with-static-system-libs=$_sslib given, but $_ssprefix/lib/$_ssa not found])
+         if test ! -f "$_sslibdir/$_ssa"; then
+            AC_MSG_ERROR([--with-static-system-libs=$_sslib given, but $_sslibdir/$_ssa not found])
          fi
       done
       dnl Replace each "-lfoo" with the archive's absolute path so the
@@ -5348,15 +5391,21 @@ if test -n "$with_static_system_libs" -a "$with_static_system_libs" != "no"; the
       for _ssl in $_sslflags; do
          _ssa="lib`echo "$_ssl" | $SED -e 's/^-l//'`.a"
          case "$_sslib" in
-         libxml)   LIBXML_LIBS=`echo "$LIBXML_LIBS " | $SED -e "s|$_ssl |$_ssprefix/lib/$_ssa |g" -e 's| *$||'` ;;
-         libxslt)  LIBXSLT_LIBS=`echo "$LIBXSLT_LIBS " | $SED -e "s|$_ssl |$_ssprefix/lib/$_ssa |g" -e 's| *$||'` ;;
-         curl)     CURL_LIBS=`echo "$CURL_LIBS " | $SED -e "s|$_ssl |$_ssprefix/lib/$_ssa |g" -e 's| *$||'` ;;
+         libxml)   LIBXML_LIBS=`echo "$LIBXML_LIBS " | $SED -e "s|$_ssl |$_sslibdir/$_ssa |g" -e 's| *$||'` ;;
+         libxslt)  LIBXSLT_LIBS=`echo "$LIBXSLT_LIBS " | $SED -e "s|$_ssl |$_sslibdir/$_ssa |g" -e 's| *$||'` ;;
+         curl)     CURL_LIBS=`echo "$CURL_LIBS " | $SED -e "s|$_ssl |$_sslibdir/$_ssa |g" -e 's| *$||'` ;;
+         openssl)
+            dnl curl-config reports -lssl -lcrypto for a static libcurl, so the
+            dnl pin has to reach CURL_LIBS as well as OPENSSL_LIBS.
+            OPENSSL_LIBS=`echo "$OPENSSL_LIBS " | $SED -e "s|$_ssl |$_sslibdir/$_ssa |g" -e 's| *$||'`
+            CURL_LIBS=`echo "$CURL_LIBS " | $SED -e "s|$_ssl |$_sslibdir/$_ssa |g" -e 's| *$||'`
+            ;;
          libiconv)
             dnl iconv is a transitive dep, so -liconv turns up in whichever
             dnl of these *-config reported it -- rewrite all of them.
-            LIBXML_LIBS=`echo "$LIBXML_LIBS " | $SED -e "s|$_ssl |$_ssprefix/lib/$_ssa |g" -e 's| *$||'`
-            LIBXSLT_LIBS=`echo "$LIBXSLT_LIBS " | $SED -e "s|$_ssl |$_ssprefix/lib/$_ssa |g" -e 's| *$||'`
-            CURL_LIBS=`echo "$CURL_LIBS " | $SED -e "s|$_ssl |$_ssprefix/lib/$_ssa |g" -e 's| *$||'`
+            LIBXML_LIBS=`echo "$LIBXML_LIBS " | $SED -e "s|$_ssl |$_sslibdir/$_ssa |g" -e 's| *$||'`
+            LIBXSLT_LIBS=`echo "$LIBXSLT_LIBS " | $SED -e "s|$_ssl |$_sslibdir/$_ssa |g" -e 's| *$||'`
+            CURL_LIBS=`echo "$CURL_LIBS " | $SED -e "s|$_ssl |$_sslibdir/$_ssa |g" -e 's| *$||'`
             ;;
          esac
       done
@@ -5366,7 +5415,7 @@ if test -n "$with_static_system_libs" -a "$with_static_system_libs" != "no"; the
       curl)     STATIC_SYSTEM_CURL=YES ;;
       esac
       STATIC_SYSTEM_LIBS="$STATIC_SYSTEM_LIBS $_sslib"
-      AC_MSG_RESULT([$_ssprefix/lib])
+      AC_MSG_RESULT([$_sslibdir])
    done
    STATIC_SYSTEM_LIBS=`echo $STATIC_SYSTEM_LIBS`
 fi
@@ -5833,29 +5882,6 @@ fi
 AC_SUBST(SYSTEM_NSS)
 AC_SUBST(NSS_CFLAGS)
 AC_SUBST(NSS_LIBS)
-
-dnl ===================================================================
-dnl Check for system openssl
-dnl ===================================================================
-AC_MSG_CHECKING([which libssl to use])
-if test -n "$with_system_openssl" -o -n "$with_system_libs" && \
-        test "$with_system_openssl" != "no"; then
-    AC_MSG_RESULT([external])
-    if test "$_os" = "FreeBSD"; then
-        OPENSSL_CFLAGS=
-        OPENSSL_LIBS="-lssl -lcrypto"
-    else
-    	PKG_CHECK_MODULES( OPENSSL, openssl )
-    fi
-    SYSTEM_OPENSSL=YES
-else
-    AC_MSG_RESULT([internal])
-    SYSTEM_OPENSSL=NO
-    BUILD_TYPE="$BUILD_TYPE OPENSSL"
-fi
-AC_SUBST(SYSTEM_OPENSSL)
-AC_SUBST(OPENSSL_CFLAGS)
-AC_SUBST(OPENSSL_LIBS)
 
 dnl ===================================================================
 dnl Check for system redland
