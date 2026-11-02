@@ -104,8 +104,12 @@ main/winaccessibility/source/UAccCOMIDL/dlldata.c
 # claude
 .claude/
 
+# Visual Studio (not VS Code)
+.vs/
+
 # bazel
 bazel-*
 user.bazelrc
 *.lock
 
+.kilo/

@@ -95,18 +95,32 @@ public:
         const css::uno::Reference< css::drawing::XShape >& rxShape );
 
     // XSheetObject attributes
+    // MS Excel VBA: Gets/sets the left edge position (points) of the sheet object.
+    // Status: implemented - reads/writes from shape Position
     virtual double SAL_CALL getLeft();
     virtual void SAL_CALL setLeft( double fLeft );
+    // MS Excel VBA: Gets/sets the top edge position (points) of the sheet object.
+    // Status: implemented
     virtual double SAL_CALL getTop();
     virtual void SAL_CALL setTop( double fTop );
+    // MS Excel VBA: Gets/sets the width (points) of the sheet object.
+    // Status: implemented
     virtual double SAL_CALL getWidth();
     virtual void SAL_CALL setWidth( double fWidth );
+    // MS Excel VBA: Gets/sets the height (points) of the sheet object.
+    // Status: implemented
     virtual double SAL_CALL getHeight();
     virtual void SAL_CALL setHeight( double fHeight );
+    // MS Excel VBA: Gets/sets the name of the sheet object.
+    // Status: implemented - reads from shape Name
     virtual ::rtl::OUString SAL_CALL getName();
     virtual void SAL_CALL setName( const ::rtl::OUString& rName );
+    // MS Excel VBA: Gets/sets the placement: 0=free floating, 1=move, 2=move and size.
+    // Status: implemented - maps to MoveWithCells/SizeWithCells
     virtual sal_Int32 SAL_CALL getPlacement();
     virtual void SAL_CALL setPlacement( sal_Int32 nPlacement );
+    // MS Excel VBA: Gets/sets whether the object is printed with the worksheet.
+    // Status: implemented - maps to PrintMode shape property
     virtual sal_Bool SAL_CALL getPrintObject();
     virtual void SAL_CALL setPrintObject( sal_Bool bPrintObject );
 
@@ -188,18 +202,30 @@ public:
         const css::uno::Reference< css::drawing::XControlShape >& rxControlShape );
 
     // XButton attributes
+    // MS Excel VBA: Gets/sets the button caption text.
+    // Status: implemented
     virtual ::rtl::OUString SAL_CALL getCaption();
     virtual void SAL_CALL setCaption( const ::rtl::OUString& rCaption );
+    // MS Excel VBA: Gets/sets the Font object for the button text.
+    // Status: implemented
     virtual css::uno::Reference< ov::excel::XFont > SAL_CALL getFont();
     virtual void SAL_CALL setFont( const css::uno::Reference< ov::excel::XFont >& rxFont );
+    // MS Excel VBA: Gets/sets the horizontal alignment (xlLeft, xlCenter, xlRight).
+    // Status: implemented
     virtual sal_Int32 SAL_CALL getHorizontalAlignment();
     virtual void SAL_CALL setHorizontalAlignment( sal_Int32 nAlign );
+    // MS Excel VBA: Gets/sets the vertical alignment (xlTop, xlCenter, xlBottom).
+    // Status: implemented
     virtual sal_Int32 SAL_CALL getVerticalAlignment();
     virtual void SAL_CALL setVerticalAlignment( sal_Int32 nAlign );
+    // MS Excel VBA: Gets/sets the text orientation angle (degrees).
+    // Status: implemented
     virtual sal_Int32 SAL_CALL getOrientation();
     virtual void SAL_CALL setOrientation( sal_Int32 nOrientation );
 
     // XButton methods
+    // MS Excel VBA: Returns the Characters object for a subset of button text.
+    // Status: implemented - delegates to ScVbaButtonCharacters
     css::uno::Reference< ov::excel::XCharacters > SAL_CALL Characters(
         const css::uno::Any& rStart, const css::uno::Any& rLength );
 

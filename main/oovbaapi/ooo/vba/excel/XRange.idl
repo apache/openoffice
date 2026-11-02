@@ -64,6 +64,8 @@ interface XCharacters;
 interface XBorders;
 interface XValidation;
 interface XWorksheet;
+interface XFormatConditions;
+interface XQueryTable;
 
 interface XRange
 {
@@ -74,7 +76,9 @@ interface XRange
 	//interface ::ooo::vba::XHelperInterface;
 
 	[attribute] any Value;
+	[attribute] any Value2;
 	[attribute] any Formula;
+	[attribute] any Formula2;
 	[attribute] any FormulaArray;
 	[attribute] any FormulaR1C1;
 	[attribute, readonly] long  Count;
@@ -98,6 +102,8 @@ interface XRange
 	[attribute] any Style;
 	[attribute] any AddIndent;
 	[attribute] any ShowDetail;
+	[attribute, readonly] XFormatConditions FormatConditions;
+	[attribute, readonly] XQueryTable QueryTable;
 
 	XComment AddComment( [in] any Text );
 	void Clear();

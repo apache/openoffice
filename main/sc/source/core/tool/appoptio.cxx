@@ -109,6 +109,7 @@ void ScAppOptions::SetDefaults()
 	nDefaultObjectSizeHeight = 5000;
 
     mbShowSharedDocumentWarning = true;
+    mnTabCountInNewSpreadsheet = 1;
 }
 
 //------------------------------------------------------------------------
@@ -131,6 +132,7 @@ const ScAppOptions& ScAppOptions::operator=( const ScAppOptions& rCpy )
 	nDefaultObjectSizeWidth = rCpy.nDefaultObjectSizeWidth;
 	nDefaultObjectSizeHeight = rCpy.nDefaultObjectSizeHeight;
     mbShowSharedDocumentWarning = rCpy.mbShowSharedDocumentWarning;
+    mnTabCountInNewSpreadsheet = rCpy.mnTabCountInNewSpreadsheet;
 	return *this;
 }
 

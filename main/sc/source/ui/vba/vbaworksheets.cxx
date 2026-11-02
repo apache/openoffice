@@ -63,6 +63,8 @@ typedef std::vector< uno::Reference< sheet::XSpreadsheet > >  SheetMap;
 
 // #FIXME #TODO the implementation of the Sheets collections sucks,
 // e.g. there is no support for tracking sheets added/removed from the collection
+// MS Excel VBA: Internal enumeration class for worksheets.
+// Status: internal helper
 
 class WorkSheetsEnumeration : public SheetEnumeration_BASE
 {
@@ -82,6 +84,8 @@ public:
 		return uno::makeAny( xSheet ) ;
 	}
 };
+// MS Excel VBA: Internal collection helper for selected worksheets.
+// Status: internal helper
 
 class SheetCollectionHelper : public SheetCollectionHelper_BASE
 {
@@ -142,6 +146,8 @@ public:
 		return new WorkSheetsEnumeration( mSheetMap );
 	}
 };
+// MS Excel VBA: Internal enumeration helper for worksheets with UNO sheet module objects.
+// Status: internal helper
 
 class SheetsEnumeration : public EnumerationHelperImpl
 {
@@ -167,22 +173,30 @@ public:
 	}
 
 };
+// MS Excel VBA: Constructor for Worksheets collection.
+// Status: implemented
 
 ScVbaWorksheets::ScVbaWorksheets( const uno::Reference< XHelperInterface >& xParent, const uno::Reference< ::com::sun::star::uno::XComponentContext > & xContext, const uno::Reference< container::XIndexAccess >& xSheets, const uno::Reference< frame::XModel >& xModel ): ScVbaWorksheets_BASE( xParent, xContext,  xSheets ), mxModel( xModel ), m_xSheets( uno::Reference< sheet::XSpreadsheets >( xSheets, uno::UNO_QUERY ) )
 {
 }
 
+// MS Excel VBA: Constructor for Worksheets from enumeration access.
+// Status: implemented
 ScVbaWorksheets::ScVbaWorksheets( const uno::Reference< XHelperInterface >& xParent, const uno::Reference< ::com::sun::star::uno::XComponentContext > & xContext, const uno::Reference< container::XEnumerationAccess >& xEnumAccess, const uno::Reference< frame::XModel >& xModel  ):  ScVbaWorksheets_BASE( xParent, xContext, uno::Reference< container::XIndexAccess >( xEnumAccess, uno::UNO_QUERY ) ), mxModel(xModel)
 {
 }
 
 // XEnumerationAccess
+// MS Excel VBA: Returns the element type of the collection (XWorksheet).
+// Status: implemented
 uno::Type
 ScVbaWorksheets::getElementType()
 {
 	return excel::XWorksheet::static_type(0);
 }
 
+// MS Excel VBA: Creates an enumeration over all worksheets in the collection.
+// Status: implemented
 uno::Reference< container::XEnumeration >
 ScVbaWorksheets::createEnumeration()
 {
@@ -195,6 +209,8 @@ ScVbaWorksheets::createEnumeration()
 	return new SheetsEnumeration( this, mxContext, xEnumAccess->createEnumeration(), mxModel );
 }
 
+// MS Excel VBA: Creates a VBA Worksheet object from a data source.
+// Status: collection helper
 uno::Any
 ScVbaWorksheets::createCollectionObject( const uno::Any& aSource )
 {
@@ -214,6 +230,8 @@ ScVbaWorksheets::createCollectionObject( const uno::Any& aSource )
 }
 
 // XWorksheets
+// MS Excel VBA: Adds one or more new worksheets.
+// Status: implemented
 uno::Any
 ScVbaWorksheets::Add( const uno::Any& Before, const uno::Any& After,
 					 const uno::Any& Count, const uno::Any& Type )
@@ -290,6 +308,8 @@ ScVbaWorksheets::Add( const uno::Any& Before, const uno::Any& After,
 	return  result;
 }
 
+// MS Excel VBA: Deletes all selected worksheets.
+// Status: implemented
 void
 ScVbaWorksheets::Delete()
 {
@@ -305,12 +325,16 @@ ScVbaWorksheets::Delete()
 	}
 }
 
+// MS Excel VBA: Internal helper - checks if sheets are selected.
+// Status: internal helper
 bool
 ScVbaWorksheets::isSelectedSheets()
 {
 	return !m_xSheets.is();
 }
 
+// MS Excel VBA: Prints the selected worksheets.
+// Status: implemented
 void SAL_CALL
 ScVbaWorksheets::PrintOut( const uno::Any& From, const uno::Any& To, const uno::Any& Copies, const uno::Any& Preview, const uno::Any& ActivePrinter, const uno::Any& PrintToFile, const uno::Any& Collate, const uno::Any& PrToFileName )
 {
@@ -332,6 +356,8 @@ ScVbaWorksheets::PrintOut( const uno::Any& From, const uno::Any& To, const uno::
 	PrintOutHelper( excel::getBestViewShell( mxModel ), From, To, Copies, Preview, ActivePrinter, PrintToFile, Collate, PrToFileName, bSelection );
 }
 
+// MS Excel VBA: Gets the visibility of the worksheet collection.
+// Status: implemented
 uno::Any SAL_CALL
 ScVbaWorksheets::getVisible()
 {
@@ -349,6 +375,8 @@ ScVbaWorksheets::getVisible()
 	return uno::makeAny( bVisible );
 }
 
+// MS Excel VBA: Sets the visibility of the worksheet collection.
+// Status: implemented
 void SAL_CALL
 ScVbaWorksheets::setVisible( const uno::Any& _visible )
 {
@@ -367,6 +395,8 @@ ScVbaWorksheets::setVisible( const uno::Any& _visible )
 			RTL_CONSTASCII_USTRINGPARAM( "Visible property doesn't support non boolean #FIXME" ) ), uno::Reference< uno::XInterface >() );
 }
 
+// MS Excel VBA: Selects the worksheet collection.
+// Status: implemented
 void SAL_CALL
 ScVbaWorksheets::Select( const uno::Any& Replace )
 {
@@ -403,6 +433,8 @@ ScVbaWorksheets::Select( const uno::Any& Replace )
 }
 
 //ScVbaCollectionBaseImpl
+// MS Excel VBA: Returns a worksheet by name, index, or array of indices.
+// Status: implemented
 uno::Any SAL_CALL
 ScVbaWorksheets::Item( const uno::Any& Index, const uno::Any& Index2  )
 {
@@ -433,12 +465,16 @@ ScVbaWorksheets::Item( const uno::Any& Index, const uno::Any& Index2  )
 	return 	ScVbaWorksheets_BASE::Item( Index, Index2 );
 }
 
+// MS Excel VBA: Returns a worksheet by string index (name).
+// Status: implemented
 uno::Any
 ScVbaWorksheets::getItemByStringIndex( const rtl::OUString& sIndex )
 {
 	return ScVbaWorksheets_BASE::getItemByStringIndex( sIndex );
 }
 
+// MS Excel VBA: Returns the implementation service name for UNO.
+// Status: implemented
 rtl::OUString&
 ScVbaWorksheets::getServiceImplName()
 {
@@ -446,6 +482,8 @@ ScVbaWorksheets::getServiceImplName()
 	return sImplName;
 }
 
+// MS Excel VBA: Returns the list of supported service names for UNO.
+// Status: implemented
 css::uno::Sequence<rtl::OUString>
 ScVbaWorksheets::getServiceNames()
 {
@@ -458,6 +496,8 @@ ScVbaWorksheets::getServiceNames()
 	return sNames;
 }
 
+// MS Excel VBA: Internal helper - checks if a worksheet name already exists.
+// Status: static utility
 /*static*/ bool ScVbaWorksheets::nameExists( uno::Reference <sheet::XSpreadsheetDocument>& xSpreadDoc, const ::rtl::OUString & name, SCTAB& nTab )
 {
 	if (!xSpreadDoc.is())

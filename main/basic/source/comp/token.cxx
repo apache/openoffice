@@ -115,6 +115,7 @@ static TokenTable aTokTable_Basic [] = {		// Token-Tabelle:
 	{ _IN_,		"In" },
 	{ INPUT,	"Input" },				// auch INPUT #
 	{ TINTEGER,	"Integer" },
+	{ INTERFACE,	"Interface" },
 	{ IS,		"Is" },
 	{ LET,		"Let" },
 	{ LIB,		"Lib" },
@@ -184,6 +185,11 @@ static TokenTable aTokTable_Basic [] = {		// Token-Tabelle:
 	{ WITHEVENTS,	"WithEvents" },
 	{ WRITE,	"Write" },				// auch WRITE #
 	{ XOR,		"Xor" },
+	{ PP_IF,		"#If" },
+	{ PP_ELSEIF,	"#ElseIf" },
+	{ PP_ELSE,		"#Else" },
+	{ PP_ENDIF,		"#End If" },
+	{ PP_CONST,		"#Const" },
 	{ NIL,		"" }
 };
 
@@ -353,8 +359,8 @@ TokenTable aTokTable_Java [] = {		// Token-Tabelle:
 // #i109076
 TokenLabelInfo::TokenLabelInfo( void )
 {
-	m_pTokenCanBeLabelTab = new bool[VBASUPPORT+1];
-	for( int i = 0 ; i <= VBASUPPORT ; ++i )
+	m_pTokenCanBeLabelTab = new bool[PP_CONST+1];
+	for( int i = 0 ; i <= PP_CONST ; ++i )
 		m_pTokenCanBeLabelTab[i] = false;
 
 	// Token accepted as label by VBA
@@ -502,6 +508,47 @@ SbiToken SbiTokenizer::Next()
 	{
 		bEos = sal_True; return eCurTok = EOLN;
 	}
+
+	// MS Excel VBA: Handle #If, #ElseIf, #Else, #End If, #Const preprocessor directives
+	if( IsHash() && bVBASupportOn && eScanType == SbxVARIANT && bSymbol )
+	{
+		if( aSym.EqualsIgnoreCaseAscii( "If" ) )
+			return eCurTok = PP_IF;
+		else if( aSym.EqualsIgnoreCaseAscii( "ElseIf" ) )
+			return eCurTok = PP_ELSEIF;
+		else if( aSym.EqualsIgnoreCaseAscii( "Else" ) )
+			return eCurTok = PP_ELSE;
+		else if( aSym.EqualsIgnoreCaseAscii( "End" ) )
+		{
+			// #End If - check if next token is "If"
+			sal_uInt16 nOldLine = nLine;
+			sal_uInt16 nOldCol  = nCol;
+			sal_uInt16 nOldCol1 = nCol1;
+			sal_uInt16 nOldCol2 = nCol2;
+			String aOldSym = aSym;
+			SaveLine();
+
+			eCurTok = Peek();
+			if( eCurTok == IF )
+			{
+				Next();
+				nCol1 = nOldCol1;
+				bEos = sal_False;
+				return eCurTok = PP_ENDIF;
+			}
+			// Not #End If - restore and return as END
+			ePush = NIL;
+			nLine = nOldLine;
+			nCol  = nOldCol;
+			nCol2 = nOldCol2;
+			aSym = aOldSym;
+			RestoreLine();
+			return eCurTok = END;
+		}
+		else if( aSym.EqualsIgnoreCaseAscii( "Const" ) )
+			return eCurTok = PP_CONST;
+	}
+
 	bEos = sal_False;
 
 	// Zahl?
