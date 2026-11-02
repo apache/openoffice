@@ -105,11 +105,11 @@ static SbiStatement StmntTable [] = {
 { WEND,		&SbiParser::BadBlock,	N, Y, }, // WEND
 { WITH,		&SbiParser::With,		N, Y, }, // WITH
 { WRITE,	&SbiParser::Write,		N, Y, }, // WRITE
- { PP_IF,      &SbiParser::PPIf,           Y, Y, }, // #IF
- { PP_ELSEIF,  &SbiParser::PPIf,           Y, Y, }, // #ELSEIF
- { PP_ELSE,    &SbiParser::NoIf,           Y, Y, }, // #ELSE
- { PP_ENDIF,   &SbiParser::NoIf,           Y, Y, }, // #ENDIF
- { PP_CONST,   &SbiParser::PPConst,        Y, Y, }, // #CONST
+{ PP_IF,      &SbiParser::PPIf,           Y, Y, }, // #IF
+{ PP_ELSEIF,  &SbiParser::PPIf,           Y, Y, }, // #ELSEIF
+{ PP_ELSE,    &SbiParser::NoIf,           Y, Y, }, // #ELSE
+{ PP_ENDIF,   &SbiParser::NoIf,           Y, Y, }, // #ENDIF
+{ PP_CONST,   &SbiParser::PPConst,        Y, Y, }, // #CONST
 
 { NIL, NULL, N, N }
 };
