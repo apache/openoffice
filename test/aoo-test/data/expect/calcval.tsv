@@ -1,0 +1,8 @@
+# test_name<TAB>kind<TAB>reason. See aootest/expect.py.
+# Deviations from ODF 1.3 Part 4 that AOO keeps on purpose; the case notes in data/calcval-cases.tsv and ODF13-KNOWN-LIMITATIONS.md of the ODF work give the reasons.
+test_formula_result[DCOUNT.zero.crit]	xfail	field 0 means the whole database in AOO (legacy); Part 4 4.11.10 wants an error
+test_formula_result[DCOUNTA.zero.crit]	xfail	field 0 means the whole database in AOO (legacy); Part 4 4.11.10 wants an error
+test_formula_result[DCOUNT.emptycrit]	xfail	AOO ignores empty criteria cells; Part 4 4.11.11 reads an empty criterion as the number 0
+test_formula_result[DCOUNTA.emptycrit]	xfail	AOO ignores empty criteria cells; Part 4 4.11.11 reads an empty criterion as the number 0
+test_formula_result[LINEST.k2.const]	xfail	AOO allows zero degrees of freedom (two-point regression); Part 4 6.18.41 wants an error
+test_formula_result[LINEST.k1.noconst]	xfail	AOO allows zero degrees of freedom (one point, no constant); Part 4 6.18.41 wants an error

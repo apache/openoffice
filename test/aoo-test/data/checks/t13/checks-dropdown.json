@@ -1,0 +1,67 @@
+[
+ {
+  "name": "dd_count",
+  "expr": "len([f for f in (lambda e: [e.nextElement() for _ in iter(e.hasMoreElements, False)])(doc.TextFields.createEnumeration()) if f.supportsService('com.sun.star.text.textfield.DropDown')])",
+  "expect": 2
+ },
+ {
+  "name": "dd_names",
+  "expr": "[f.Name for f in [f for f in (lambda e: [e.nextElement() for _ in iter(e.hasMoreElements, False)])(doc.TextFields.createEnumeration()) if f.supportsService('com.sun.star.text.textfield.DropDown')]]",
+  "expect": [
+   "dd1",
+   "dd2"
+  ]
+ },
+ {
+  "name": "dd_items",
+  "expr": "[list(f.Items) for f in [f for f in (lambda e: [e.nextElement() for _ in iter(e.hasMoreElements, False)])(doc.TextFields.createEnumeration()) if f.supportsService('com.sun.star.text.textfield.DropDown')]]",
+  "expect": [
+   [
+    "one",
+    "two",
+    "three"
+   ],
+   [
+    "a",
+    "b"
+   ]
+  ]
+ },
+ {
+  "name": "dd_selected",
+  "expr": "[f.SelectedItem for f in [f for f in (lambda e: [e.nextElement() for _ in iter(e.hasMoreElements, False)])(doc.TextFields.createEnumeration()) if f.supportsService('com.sun.star.text.textfield.DropDown')]]",
+  "expect": [
+   "two",
+   ""
+  ]
+ },
+ {
+  "name": "dd_help",
+  "expr": "[f.Help for f in [f for f in (lambda e: [e.nextElement() for _ in iter(e.hasMoreElements, False)])(doc.TextFields.createEnumeration()) if f.supportsService('com.sun.star.text.textfield.DropDown')]]",
+  "expect": [
+   "help one",
+   "help two"
+  ]
+ },
+ {
+  "name": "dd_tooltip",
+  "expr": "[f.Tooltip for f in [f for f in (lambda e: [e.nextElement() for _ in iter(e.hasMoreElements, False)])(doc.TextFields.createEnumeration()) if f.supportsService('com.sun.star.text.textfield.DropDown')]]",
+  "expect": [
+   "tip one",
+   "tip two"
+  ]
+ },
+ {
+  "name": "dd_presentation",
+  "expr": "[f.getPresentation(False) for f in [f for f in (lambda e: [e.nextElement() for _ in iter(e.hasMoreElements, False)])(doc.TextFields.createEnumeration()) if f.supportsService('com.sun.star.text.textfield.DropDown')]]",
+  "expect": [
+   "two",
+   "a"
+  ]
+ },
+ {
+  "name": "dd_text",
+  "expr": "doc.Text.String",
+  "expect": "First: two\nSecond: a"
+ }
+]

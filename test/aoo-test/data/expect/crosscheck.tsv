@@ -1,0 +1,2 @@
+# test_name<TAB>kind<TAB>reason. See aootest/expect.py.
+test_validators_agree[built/t13/annot.odt-ext-extended]	xfail	odfvalidator -e reports "unexpected character literal" at the annotation text:p that follows the extension element textooo:sender-initials (content.xml 2:3154); jing with foreign content removed reports no error; cause not examined
