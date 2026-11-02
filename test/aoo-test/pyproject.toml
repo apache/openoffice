@@ -1,0 +1,32 @@
+[project]
+name = "aoo-test"
+version = "0.1.0"
+description = "Test and compliance suite for an installed Apache OpenOffice 5 or later"
+requires-python = ">=3.10"
+
+[dependency-groups]
+test = ["pytest>=8.0"]
+ooxml = ["python-docx", "openpyxl", "python-pptx"]
+render = ["pypdfium2", "Pillow"]
+proc = ["psutil"]
+extra = ["pytest-timeout", "pytest-xdist"]
+
+[tool.uv]
+package = false
+default-groups = ["test"]
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+pythonpath = ["src"]
+addopts = "--import-mode=importlib -m 'not corpus and not render and not gui'"
+markers = [
+    "selftest: negative controls proving the checkers can fail",
+    "smoke: quick checks against an installed office",
+    "slow: long-running checks",
+    "corpus: runs over a large external document set (--documents)",
+    "render: PDF rasterize and compare",
+    "gui: needs a display or a desktop session",
+    "needs_java: needs a Java runtime",
+]

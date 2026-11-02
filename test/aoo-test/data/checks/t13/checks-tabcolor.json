@@ -1,0 +1,22 @@
+[
+ {
+  "name": "tab_count",
+  "expr": "doc.Sheets.Count",
+  "expect": 3
+ },
+ {
+  "name": "tab_sheet0",
+  "expr": "doc.Sheets.getByIndex(0).TabColor",
+  "expect": 16711680
+ },
+ {
+  "name": "tab_sheet1",
+  "expr": "doc.Sheets.getByIndex(1).TabColor",
+  "expect": -1
+ },
+ {
+  "name": "tab_sheet2",
+  "expr": "doc.Sheets.getByIndex(2).TabColor",
+  "expect": 3368652
+ }
+]

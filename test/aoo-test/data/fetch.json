@@ -1,0 +1,84 @@
+{
+ "items": [
+  {
+   "name": "OpenDocument-v1.2-os-schema",
+   "group": "schemas",
+   "url": "https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-schema.rng",
+   "sha256": "ca5d2510858c6f922b20cd27dc76d34959c1a976b9dfc6b5caeadbebfc83dbbb",
+   "path": "schemas/OpenDocument-v1.2-os-schema.rng",
+   "license": "OASIS copyright; fetched, never committed"
+  },
+  {
+   "name": "OpenDocument-v1.2-os-manifest-schema",
+   "group": "schemas",
+   "url": "https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-manifest-schema.rng",
+   "sha256": "75f972902bc785c15e51fb4e112e2f1b24e2327829eb54786cf8687ee39c7631",
+   "path": "schemas/OpenDocument-v1.2-os-manifest-schema.rng",
+   "license": "OASIS copyright; fetched, never committed"
+  },
+  {
+   "name": "OpenDocument-v1.2-os-dsig-schema",
+   "group": "schemas",
+   "url": "https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-dsig-schema.rng",
+   "sha256": "52fbf196dc11fcaac41ff4b320f005daf419794c2f343a26ecab05778d7e7f6f",
+   "path": "schemas/OpenDocument-v1.2-os-dsig-schema.rng",
+   "license": "OASIS copyright; fetched, never committed"
+  },
+  {
+   "name": "OpenDocument-v1.3-schema",
+   "group": "schemas",
+   "url": "https://docs.oasis-open.org/office/OpenDocument/v1.3/os/schemas/OpenDocument-v1.3-schema.rng",
+   "sha256": "40bad03efdbb02825230d357da0aa6ac679934c5bf56c6281752c0c24d58e4e6",
+   "path": "schemas/OpenDocument-v1.3-schema.rng",
+   "license": "OASIS copyright; fetched, never committed"
+  },
+  {
+   "name": "OpenDocument-v1.3-manifest-schema",
+   "group": "schemas",
+   "url": "https://docs.oasis-open.org/office/OpenDocument/v1.3/os/schemas/OpenDocument-v1.3-manifest-schema.rng",
+   "sha256": "8aee71f03484be112af972d622cc9031280c007b0a454ae8815e8e333c9bdd17",
+   "path": "schemas/OpenDocument-v1.3-manifest-schema.rng",
+   "license": "OASIS copyright; fetched, never committed"
+  },
+  {
+   "name": "OpenDocument-v1.3-dsig-schema",
+   "group": "schemas",
+   "url": "https://docs.oasis-open.org/office/OpenDocument/v1.3/os/schemas/OpenDocument-v1.3-dsig-schema.rng",
+   "sha256": "1760eab7fba2394b6b9d2c77b4ed2187ed01ff8029f8538ba7bff3b834866573",
+   "path": "schemas/OpenDocument-v1.3-dsig-schema.rng",
+   "license": "OASIS copyright; fetched, never committed"
+  },
+  {
+   "name": "OpenDocument-v1.4-schema",
+   "group": "schemas",
+   "url": "https://docs.oasis-open.org/office/OpenDocument/v1.4/os/schemas/OpenDocument-v1.4-schema.rng",
+   "sha256": "4034ec6be29205d5fc1ee5f42468ac6ef824287b3aba6d9289032af4fafbda7f",
+   "path": "schemas/OpenDocument-v1.4-schema.rng",
+   "license": "OASIS copyright; fetched, never committed"
+  },
+  {
+   "name": "OpenDocument-v1.4-manifest-schema",
+   "group": "schemas",
+   "url": "https://docs.oasis-open.org/office/OpenDocument/v1.4/os/schemas/OpenDocument-v1.4-manifest-schema.rng",
+   "sha256": "f96e1fe95f4e3609717a307c28e2fe0654c890fe70ea03eb8a53caa20b684782",
+   "path": "schemas/OpenDocument-v1.4-manifest-schema.rng",
+   "license": "OASIS copyright; fetched, never committed"
+  },
+  {
+   "name": "jing",
+   "group": "jing",
+   "url": "https://repo1.maven.org/maven2/org/relaxng/jing/20181222/jing-20181222.jar",
+   "sha256": "e5e13fa92d9461f37b7c3d760780ea07cca5b7947440f99ebb7608b5b168aaa3",
+   "path": "jing/jing-20181222.jar",
+   "license": "BSD-3-Clause"
+  },
+  {
+   "name": "odfvalidator",
+   "group": "odfvalidator",
+   "url": "https://repo1.maven.org/maven2/org/apache/odftoolkit/odfvalidator/1.1.8-incubating/odfvalidator-1.1.8-incubating-jar-with-dependencies.jar",
+   "sha256": "d362272a7ed04dcc8627fe5210b073f5e53f875820a2522c617ac8073d1d595e",
+   "path": "odfvalidator/odfvalidator-1.1.8-incubating-jar-with-dependencies.jar",
+   "license": "Apache-2.0"
+  }
+ ]
+}

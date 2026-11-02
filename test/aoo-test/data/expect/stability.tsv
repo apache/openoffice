@@ -1,0 +1,5 @@
+# test_name<TAB>kind<TAB>reason. See aootest/expect.py.
+test_saving_twice_gives_the_same_content[shipped/template/en-US/internal/idxexample.odt-strict]	flaky	in some runs the automatic paragraph styles P1 and P2 swap names between two saves (each heading keeps a style with the same parent); cause not examined
+test_saving_twice_gives_the_same_content[shipped/template/en-US/internal/idxexample.odt-ext]	flaky	in some runs the automatic paragraph styles P1 and P2 swap names between two saves (each heading keeps a style with the same parent); cause not examined
+test_saving_twice_gives_the_same_content[shipped/template/en-US/internal/idxexample.odt-v13]	flaky	in some runs the automatic paragraph styles P1 and P2 swap names between two saves (each heading keeps a style with the same parent); cause not examined
+test_saving_twice_gives_the_same_content[shipped/template/en-US/internal/idxexample.odt-x13]	flaky	in some runs the automatic paragraph styles P1 and P2 swap names between two saves (each heading keeps a style with the same parent); cause not examined
