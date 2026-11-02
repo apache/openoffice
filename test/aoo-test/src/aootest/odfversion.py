@@ -39,3 +39,9 @@ def odf_versions(path):
     c = re.search(r'<office:document-content[^>]*\boffice:version="([^"]*)"', content)
     m = re.search(r'<manifest:manifest[^>]*\bmanifest:version="([^"]*)"', manifest)
     return (c.group(1) if c else None), (m.group(1) if m else None)
+
+
+def is_formula(path):
+    """True for a formula (Math) package: its content.xml is a MathML root that carries no office:version."""
+    with zipfile.ZipFile(path) as z:
+        return z.read("mimetype").decode("ascii").strip() == "application/vnd.oasis.opendocument.formula"

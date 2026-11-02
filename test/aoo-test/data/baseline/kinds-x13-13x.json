@@ -1,0 +1,836 @@
+{
+ "documents": [
+  "built__alien-attrs__alien-calc_ods.ods",
+  "built__alien-attrs__alien-draw_odg.odg",
+  "built__alien-attrs__alien-writer_odt.odt",
+  "built__boolean-writer__boolean-writer_odt.odt",
+  "built__calc__calc-settings-a_ods.ods",
+  "built__calc__calc-settings-b_ods.ods",
+  "built__calc__calc-settings-c_ods.ods",
+  "built__calc__calc-settings-d_ods.ods",
+  "built__calc__calc-settings-e_ods.ods",
+  "built__calc__calc-settings-f_ods.ods",
+  "built__calc__calc-settings-g_ods.ods",
+  "built__calc__calc-settings-h_ods.ods",
+  "built__calc__calc-settings-null-year_ods.ods",
+  "built__calc__conditional-formats_ods.ods",
+  "built__calc__consolidation-max_ods.ods",
+  "built__calc__consolidation-min_ods.ods",
+  "built__calc__consolidation-sum_ods.ods",
+  "built__calc__consolidation_ods.ods",
+  "built__calc__dbranges-import_ods.ods",
+  "built__calc__dbranges-sort-subtotal_ods.ods",
+  "built__calc__detective_ods.ods",
+  "built__calc__filter-connections_ods.ods",
+  "built__calc__filter-operators_ods.ods",
+  "built__calc__filtered-rows_ods.ods",
+  "built__calc__formulas-01-database_ods.ods",
+  "built__calc__formulas-02-datetime_ods.ods",
+  "built__calc__formulas-03-financial_ods.ods",
+  "built__calc__formulas-04-information_ods.ods",
+  "built__calc__formulas-05-logical_ods.ods",
+  "built__calc__formulas-06-math_ods.ods",
+  "built__calc__formulas-07-matrix_ods.ods",
+  "built__calc__formulas-08-statistical_ods.ods",
+  "built__calc__formulas-09-spreadsheet_ods.ods",
+  "built__calc__formulas-10-text_ods.ods",
+  "built__calc__formulas-11-addin_ods.ods",
+  "built__calc__formulas-forms_ods.ods",
+  "built__calc__links_ods.ods",
+  "built__calc__named-ranges_ods.ods",
+  "built__calc__pivot-tables_ods.ods",
+  "built__calc__scenarios_ods.ods",
+  "built__calc__shapes_ods.ods",
+  "built__calc__table-attrs_ods.ods",
+  "built__calc__tracked-insdel_ods.ods",
+  "built__calc__tracked-sheets_ods.ods",
+  "built__calc__validation-alerts_ods.ods",
+  "built__calc__validation-custom-list_ods.ods",
+  "built__calc__validation-edges_ods.ods",
+  "built__calc__validation-types_ods.ods",
+  "built__chart-shapes__chart-shapes_ods.ods",
+  "built__chart__axes2_ods.ods",
+  "built__chart__axes_ods.ods",
+  "built__chart__data_ods.ods",
+  "built__chart__embed-draw2_odg.odg",
+  "built__chart__embed-draw_odg.odg",
+  "built__chart__embed-impress2_odp.odp",
+  "built__chart__embed-impress_odp.odp",
+  "built__chart__embed-writer-table_odt.odt",
+  "built__chart__embed-writer2_odt.odt",
+  "built__chart__embed-writer_odt.odt",
+  "built__chart__label-opts_ods.ods",
+  "built__chart__labels_ods.ods",
+  "built__chart__legend_ods.ods",
+  "built__chart__pie-variants_ods.ods",
+  "built__chart__point-props_ods.ods",
+  "built__chart__solid-types_ods.ods",
+  "built__chart__stats-error_ods.ods",
+  "built__chart__stats-mean_ods.ods",
+  "built__chart__stats-regression_ods.ods",
+  "built__chart__stock-variants_ods.ods",
+  "built__chart__symbols_ods.ods",
+  "built__chart__three-d_ods.ods",
+  "built__chart__types-area_ods.ods",
+  "built__chart__types-column_ods.ods",
+  "built__chart__types-line_ods.ods",
+  "built__chart__types-net_ods.ods",
+  "built__chart__types-pie_ods.ods",
+  "built__chart__types-stock_ods.ods",
+  "built__chart__types-xy_ods.ods",
+  "built__connector-viewbox__conn_odg.odg",
+  "built__connector-viewbox__conn_odp.odp",
+  "built__doctypes__chart-host_ods.ods",
+  "built__doctypes__impress-as-draw_odg.odg",
+  "built__doctypes__master-as-text_odt.odt",
+  "built__doctypes__master_odm.odm",
+  "built__doctypes__math_odf.odf",
+  "built__doctypes__template-calc_ots.ods",
+  "built__doctypes__template-draw_otg.odg",
+  "built__doctypes__template-impress_otp.odp",
+  "built__doctypes__template-writer_ott.odt",
+  "built__doctypes__web_odt.odt",
+  "built__draw__anchors-group-frame_odt.odt",
+  "built__draw__anchors_odt.odt",
+  "built__draw__animations_odp.odp",
+  "built__draw__click-actions_odp.odp",
+  "built__draw__connectors_odg.odg",
+  "built__draw__connectors_odp.odp",
+  "built__draw__core_odg.odg",
+  "built__draw__core_odp.odp",
+  "built__draw__custom-full_odg.odg",
+  "built__draw__custom-presets_odg.odg",
+  "built__draw__draw-links_odg.odg",
+  "built__draw__draw-master_odg.odg",
+  "built__draw__draw-master_otg.odg",
+  "built__draw__fills_odg.odg",
+  "built__draw__fontwork_odg.odg",
+  "built__draw__graphics_odt.odt",
+  "built__draw__header-footer_odp.odp",
+  "built__draw__image-map_odg.odg",
+  "built__draw__layers_odg.odg",
+  "built__draw__layouts_odp.odp",
+  "built__draw__masters-notes_odp.odp",
+  "built__draw__masters-notes_otp.odp",
+  "built__draw__measure_odg.odg",
+  "built__draw__measure_odp.odp",
+  "built__draw__pres-settings-start_odp.odp",
+  "built__draw__pres-settings_odp.odp",
+  "built__draw__scenes_odg.odg",
+  "built__draw__scenes_odp.odp",
+  "built__draw__shapes_ods.ods",
+  "built__draw__special_odg.odg",
+  "built__draw__special_odp.odp",
+  "built__draw__transitions_odp.odp",
+  "built__fill-others__others-calc_ods.ods",
+  "built__fill-others__others-draw_odg.odg",
+  "built__fill-others__others-impress_odp.odp",
+  "built__fill-others__others-writer_odt.odt",
+  "built__grid-snap__grid-snap_odt.odt",
+  "built__leak__calc-chart-axis_ods.ods",
+  "built__leak__calc-chart-types_ods.ods",
+  "built__leak__calc-misc_ods.ods",
+  "built__leak__calc-pivot-group_ods.ods",
+  "built__leak__calc-tracked_ods.ods",
+  "built__leak__draw-fontwork_odg.odg",
+  "built__leak__writer-fields_odt.odt",
+  "built__leak__writer-forms_odt.odt",
+  "built__leak__writer-pagegrid_odt.odt",
+  "built__leak__writer-redline_odt.odt",
+  "built__leak__writer-toc-image_odt.odt",
+  "built__normal-values5b__normal5b_ods.ods",
+  "built__normal-values__normal-values_odt.odt",
+  "built__note-ref__note-ref_odt.odt",
+  "built__ole-text-edge__ole-text-edge_odg.odg",
+  "built__ole-text__ole-text_odg.odg",
+  "built__p8-drawings__draw01_odg.odg",
+  "built__p8-drawings__draw02_odg.odg",
+  "built__p8-drawings__draw03_odg.odg",
+  "built__p8-drawings__draw04_odg.odg",
+  "built__p8-drawings__draw05_odg.odg",
+  "built__p8-drawings__draw06_odg.odg",
+  "built__p8-drawings__draw07_odg.odg",
+  "built__p8-drawings__draw08_odg.odg",
+  "built__p8-drawings__draw09_odg.odg",
+  "built__p8-drawings__draw10_odg.odg",
+  "built__page-fill-1_3__aoo-src_odt.odt",
+  "built__page-fill-1_3__calc-drawing-page_ods.ods",
+  "built__page-fill-1_3__calc-src_ods.ods",
+  "built__page-fill__page-fill_odt.odt",
+  "built__para-fill__para-fill_odt.odt",
+  "built__row-split__row-split_odt.odt",
+  "built__styles-gfx__calc-cells_ods.ods",
+  "built__styles-gfx__calc-pagestyles_ods.ods",
+  "built__styles-gfx__calc-sheets_ods.ods",
+  "built__styles-gfx__draw-3d_odg.odg",
+  "built__styles-gfx__draw-backgrounds_odg.odg",
+  "built__styles-gfx__draw-fill-line_odg.odg",
+  "built__styles-gfx__draw-frames_odg.odg",
+  "built__styles-gfx__draw-objects_odg.odg",
+  "built__styles-gfx__draw-text_odg.odg",
+  "built__styles-gfx__impress-backgrounds_odp.odp",
+  "built__styles-gfx__impress-effects_odp.odp",
+  "built__styles-gfx__impress-table_odp.odp",
+  "built__styles-gfx__impress-transitions_odp.odp",
+  "built__styles-gfx__writer-frames-misc_odt.odt",
+  "built__styles-gfx__writer-frames-pos_odt.odt",
+  "built__styles-gfx__writer-objects_odt.odt",
+  "built__styles-gfx__writer-pagestyles_odt.odt",
+  "built__styles-gfx__writer-tables_odt.odt",
+  "built__styles-text__calc-numberformats_ods.ods",
+  "built__styles-text__calc-text_ods.ods",
+  "built__styles-text__draw-text_odg.odg",
+  "built__styles-text__impress-text_odp.odp",
+  "built__styles-text__writer-char-styles_odt.odt",
+  "built__styles-text__writer-list-styles_odt.odt",
+  "built__styles-text__writer-page-styles_odt.odt",
+  "built__styles-text__writer-para-styles_odt.odt",
+  "built__styles-text__writer-ruby_odt.odt",
+  "built__styles-text__writer-sections_odt.odt",
+  "built__t13__annot_odt.odt",
+  "built__t13__chart_ods.ods",
+  "built__t13__dropdown_odt.odt",
+  "built__t13__scaleto_ods.ods",
+  "built__t13__tabcolor_ods.ods",
+  "built__writer__annotations_odt.odt",
+  "built__writer__bibliography_odt.odt",
+  "built__writer__database-fields_odt.odt",
+  "built__writer__fields-docinfo_odt.odt",
+  "built__writer__fields-misc-nocompat_odt.odt",
+  "built__writer__fields-misc_odt.odt",
+  "built__writer__forms_odt.odt",
+  "built__writer__hyperlinks-ruby_odt.odt",
+  "built__writer__indexes-nocompat_odt.odt",
+  "built__writer__indexes_odt.odt",
+  "built__writer__linenumbers-0_odt.odt",
+  "built__writer__linenumbers-1_odt.odt",
+  "built__writer__linenumbers-2_odt.odt",
+  "built__writer__lists-outline-nocompat_odt.odt",
+  "built__writer__lists-outline_odt.odt",
+  "built__writer__master-doc-as-text_odt.odt",
+  "built__writer__master-doc_odm.odm",
+  "built__writer__notes-variants_odt.odt",
+  "built__writer__objects_odt.odt",
+  "built__writer__redlines-notrack_odt.odt",
+  "built__writer__redlines_odt.odt",
+  "built__writer__refs-notes-nocompat_odt.odt",
+  "built__writer__refs-notes_odt.odt",
+  "built__writer__settings_odt.odt",
+  "built__writer__structure-nocompat_odt.odt",
+  "built__writer__structure_odt.odt",
+  "built__writer__table-fields_odt.odt",
+  "built__writer__variables-nocompat_odt.odt",
+  "built__writer__variables_odt.odt",
+  "built__writer__web-fields_odt.odt",
+  "generated__calc.ods",
+  "generated__draw.odg",
+  "generated__impress.odp",
+  "generated__writer.odt"
+ ],
+ "kinds": {
+  "attribute \"draw:fill\" not allowed here": {
+   "errors": 21,
+   "packages": [
+    "built__page-fill-1_3__aoo-src_odt.odt",
+    "built__page-fill__page-fill_odt.odt",
+    "built__styles-gfx__writer-pagestyles_odt.odt"
+   ]
+  },
+  "attribute \"draw:fill-color\" not allowed here": {
+   "errors": 19,
+   "packages": [
+    "built__page-fill-1_3__aoo-src_odt.odt",
+    "built__page-fill__page-fill_odt.odt",
+    "built__styles-gfx__writer-pagestyles_odt.odt"
+   ]
+  },
+  "attribute \"draw:fill-gradient-name\" not allowed here": {
+   "errors": 1,
+   "packages": [
+    "built__page-fill__page-fill_odt.odt"
+   ]
+  },
+  "attribute \"draw:fill-hatch-name\" not allowed here": {
+   "errors": 2,
+   "packages": [
+    "built__page-fill-1_3__aoo-src_odt.odt",
+    "built__page-fill__page-fill_odt.odt"
+   ]
+  },
+  "attribute \"draw:fill-hatch-solid\" not allowed here": {
+   "errors": 2,
+   "packages": [
+    "built__page-fill-1_3__aoo-src_odt.odt",
+    "built__page-fill__page-fill_odt.odt"
+   ]
+  },
+  "attribute \"draw:fill-image-name\" not allowed here": {
+   "errors": 2,
+   "packages": [
+    "built__page-fill__page-fill_odt.odt"
+   ]
+  },
+  "attribute \"draw:fontwork-adjust\" not allowed here": {
+   "errors": 1,
+   "packages": [
+    "built__leak__draw-fontwork_odg.odg"
+   ]
+  },
+  "attribute \"draw:fontwork-distance\" not allowed here": {
+   "errors": 1,
+   "packages": [
+    "built__leak__draw-fontwork_odg.odg"
+   ]
+  },
+  "attribute \"draw:fontwork-hide-form\" not allowed here": {
+   "errors": 1,
+   "packages": [
+    "built__leak__draw-fontwork_odg.odg"
+   ]
+  },
+  "attribute \"draw:fontwork-mirror\" not allowed here": {
+   "errors": 1,
+   "packages": [
+    "built__leak__draw-fontwork_odg.odg"
+   ]
+  },
+  "attribute \"draw:fontwork-outline\" not allowed here": {
+   "errors": 1,
+   "packages": [
+    "built__leak__draw-fontwork_odg.odg"
+   ]
+  },
+  "attribute \"draw:fontwork-shadow\" not allowed here": {
+   "errors": 1,
+   "packages": [
+    "built__leak__draw-fontwork_odg.odg"
+   ]
+  },
+  "attribute \"draw:fontwork-shadow-color\" not allowed here": {
+   "errors": 1,
+   "packages": [
+    "built__leak__draw-fontwork_odg.odg"
+   ]
+  },
+  "attribute \"draw:fontwork-shadow-offset-x\" not allowed here": {
+   "errors": 1,
+   "packages": [
+    "built__leak__draw-fontwork_odg.odg"
+   ]
+  },
+  "attribute \"draw:fontwork-shadow-offset-y\" not allowed here": {
+   "errors": 1,
+   "packages": [
+    "built__leak__draw-fontwork_odg.odg"
+   ]
+  },
+  "attribute \"draw:fontwork-shadow-transparence\" not allowed here": {
+   "errors": 1,
+   "packages": [
+    "built__leak__draw-fontwork_odg.odg"
+   ]
+  },
+  "attribute \"draw:fontwork-start\" not allowed here": {
+   "errors": 1,
+   "packages": [
+    "built__leak__draw-fontwork_odg.odg"
+   ]
+  },
+  "attribute \"draw:fontwork-style\" not allowed here": {
+   "errors": 1,
+   "packages": [
+    "built__leak__draw-fontwork_odg.odg"
+   ]
+  },
+  "attribute \"draw:name\" not allowed here": {
+   "errors": 16,
+   "packages": [
+    "built__draw__scenes_odg.odg",
+    "built__draw__scenes_odp.odp"
+   ]
+  },
+  "attribute \"draw:opacity\" not allowed here": {
+   "errors": 19,
+   "packages": [
+    "built__page-fill-1_3__aoo-src_odt.odt",
+    "built__page-fill__page-fill_odt.odt",
+    "built__styles-gfx__writer-pagestyles_odt.odt"
+   ]
+  },
+  "attribute \"fo:min-width\" not allowed here": {
+   "errors": 3,
+   "packages": [
+    "built__draw__graphics_odt.odt",
+    "built__styles-gfx__writer-frames-misc_odt.odt"
+   ]
+  },
+  "attribute \"form:current-value\" not allowed here": {
+   "errors": 4,
+   "packages": [
+    "built__styles-gfx__draw-frames_odg.odg",
+    "built__writer__forms_odt.odt"
+   ]
+  },
+  "attribute \"form:input-required\" not allowed here": {
+   "errors": 27,
+   "packages": [
+    "built__leak__writer-forms_odt.odt",
+    "built__writer__forms_odt.odt"
+   ]
+  },
+  "attribute \"form:validation\" not allowed here": {
+   "errors": 2,
+   "packages": [
+    "built__writer__forms_odt.odt"
+   ]
+  },
+  "attribute \"office:currency\" not allowed here": {
+   "errors": 4,
+   "packages": [
+    "built__writer__variables-nocompat_odt.odt",
+    "built__writer__variables_odt.odt"
+   ]
+  },
+  "attribute \"office:date-value\" not allowed here": {
+   "errors": 2,
+   "packages": [
+    "built__writer__variables-nocompat_odt.odt",
+    "built__writer__variables_odt.odt"
+   ]
+  },
+  "attribute \"office:string-value\" not allowed here": {
+   "errors": 2,
+   "packages": [
+    "built__writer__variables-nocompat_odt.odt",
+    "built__writer__variables_odt.odt"
+   ]
+  },
+  "attribute \"office:value\" not allowed here": {
+   "errors": 2,
+   "packages": [
+    "built__writer__variables-nocompat_odt.odt",
+    "built__writer__variables_odt.odt"
+   ]
+  },
+  "attribute \"office:value-type\" not allowed here": {
+   "errors": 12,
+   "packages": [
+    "built__writer__variables-nocompat_odt.odt",
+    "built__writer__variables_odt.odt"
+   ]
+  },
+  "attribute \"style:layout-grid-snap-to-characters\" not allowed here": {
+   "errors": 7,
+   "packages": [
+    "built__grid-snap__grid-snap_odt.odt",
+    "built__leak__writer-pagegrid_odt.odt",
+    "built__styles-gfx__writer-pagestyles_odt.odt"
+   ]
+  },
+  "attribute \"style:with-tab\" not allowed here": {
+   "errors": 1,
+   "packages": [
+    "built__leak__writer-toc-image_odt.odt"
+   ]
+  },
+  "attribute \"svg:transform\" not allowed here": {
+   "errors": 3,
+   "packages": [
+    "built__draw__graphics_odt.odt",
+    "built__leak__writer-toc-image_odt.odt"
+   ]
+  },
+  "attribute \"svg:y\" not allowed here": {
+   "errors": 1,
+   "packages": [
+    "built__draw__anchors_odt.odt"
+   ]
+  },
+  "attribute \"table:conversion-mode\" not allowed here": {
+   "errors": 2,
+   "packages": [
+    "built__leak__calc-misc_ods.ods"
+   ]
+  },
+  "attribute \"table:is-group-field\" not allowed here": {
+   "errors": 18,
+   "packages": [
+    "built__calc__pivot-tables_ods.ods",
+    "built__leak__calc-pivot-group_ods.ods"
+   ]
+  },
+  "attribute \"table:table-name\" not allowed here": {
+   "errors": 3,
+   "packages": [
+    "built__calc__dbranges-import_ods.ods"
+   ]
+  },
+  "attribute \"table:use-label\" not allowed here": {
+   "errors": 4,
+   "packages": [
+    "built__calc__consolidation-max_ods.ods",
+    "built__calc__consolidation-min_ods.ods",
+    "built__calc__consolidation_ods.ods",
+    "built__leak__calc-misc_ods.ods"
+   ]
+  },
+  "attribute \"text:display\" not allowed here": {
+   "errors": 25,
+   "packages": [
+    "built__writer__database-fields_odt.odt"
+   ]
+  },
+  "attribute \"text:formula\" not allowed here": {
+   "errors": 6,
+   "packages": [
+    "built__writer__variables-nocompat_odt.odt",
+    "built__writer__variables_odt.odt"
+   ]
+  },
+  "attribute \"text:is-hidden\" not allowed here": {
+   "errors": 2,
+   "packages": [
+    "built__writer__structure-nocompat_odt.odt",
+    "built__writer__structure_odt.odt"
+   ]
+  },
+  "element \"anim:animateMotion\" missing required attribute \"smil:attributeName\"": {
+   "errors": 1,
+   "packages": [
+    "built__draw__animations_odp.odp"
+   ]
+  },
+  "element \"draw:line\" missing required attributes \"svg:x1\" and \"svg:y1\"": {
+   "errors": 1,
+   "packages": [
+    "built__draw__anchors_odt.odt"
+   ]
+  },
+  "element \"style:chart-properties\" incomplete; missing required element \"chart:symbol-image\"": {
+   "errors": 1,
+   "packages": [
+    "built__normal-values5b__normal5b_ods.ods"
+   ]
+  },
+  "element \"style:graphic-properties\" not allowed here": {
+   "errors": 335,
+   "packages": [
+    "built__calc__shapes_ods.ods",
+    "built__chart-shapes__chart-shapes_ods.ods",
+    "built__chart__axes2_ods.ods",
+    "built__chart__axes_ods.ods",
+    "built__chart__data_ods.ods",
+    "built__chart__embed-impress2_odp.odp",
+    "built__chart__embed-impress_odp.odp",
+    "built__chart__label-opts_ods.ods",
+    "built__chart__labels_ods.ods",
+    "built__chart__legend_ods.ods",
+    "built__chart__pie-variants_ods.ods",
+    "built__chart__point-props_ods.ods",
+    "built__chart__solid-types_ods.ods",
+    "built__chart__stats-error_ods.ods",
+    "built__chart__stats-mean_ods.ods",
+    "built__chart__stats-regression_ods.ods",
+    "built__chart__stock-variants_ods.ods",
+    "built__chart__symbols_ods.ods",
+    "built__chart__three-d_ods.ods",
+    "built__chart__types-area_ods.ods",
+    "built__chart__types-column_ods.ods",
+    "built__chart__types-line_ods.ods",
+    "built__chart__types-net_ods.ods",
+    "built__chart__types-pie_ods.ods",
+    "built__chart__types-stock_ods.ods",
+    "built__chart__types-xy_ods.ods",
+    "built__connector-viewbox__conn_odp.odp",
+    "built__doctypes__chart-host_ods.ods",
+    "built__doctypes__impress-as-draw_odg.odg",
+    "built__doctypes__template-impress_otp.odp",
+    "built__draw__anchors_odt.odt",
+    "built__draw__animations_odp.odp",
+    "built__draw__click-actions_odp.odp",
+    "built__draw__connectors_odp.odp",
+    "built__draw__core_odg.odg",
+    "built__draw__core_odp.odp",
+    "built__draw__draw-master_odg.odg",
+    "built__draw__draw-master_otg.odg",
+    "built__draw__fills_odg.odg",
+    "built__draw__header-footer_odp.odp",
+    "built__draw__image-map_odg.odg",
+    "built__draw__layouts_odp.odp",
+    "built__draw__masters-notes_odp.odp",
+    "built__draw__masters-notes_otp.odp",
+    "built__draw__measure_odg.odg",
+    "built__draw__measure_odp.odp",
+    "built__draw__pres-settings-start_odp.odp",
+    "built__draw__pres-settings_odp.odp",
+    "built__draw__scenes_odp.odp",
+    "built__draw__shapes_ods.ods",
+    "built__draw__special_odp.odp",
+    "built__draw__transitions_odp.odp",
+    "built__fill-others__others-calc_ods.ods",
+    "built__fill-others__others-draw_odg.odg",
+    "built__fill-others__others-impress_odp.odp",
+    "built__leak__calc-chart-axis_ods.ods",
+    "built__leak__calc-chart-types_ods.ods",
+    "built__leak__draw-fontwork_odg.odg",
+    "built__normal-values5b__normal5b_ods.ods",
+    "built__p8-drawings__draw01_odg.odg",
+    "built__p8-drawings__draw02_odg.odg",
+    "built__p8-drawings__draw03_odg.odg",
+    "built__p8-drawings__draw04_odg.odg",
+    "built__p8-drawings__draw05_odg.odg",
+    "built__p8-drawings__draw06_odg.odg",
+    "built__p8-drawings__draw07_odg.odg",
+    "built__p8-drawings__draw08_odg.odg",
+    "built__p8-drawings__draw09_odg.odg",
+    "built__p8-drawings__draw10_odg.odg",
+    "built__para-fill__para-fill_odt.odt",
+    "built__styles-gfx__draw-fill-line_odg.odg",
+    "built__styles-gfx__draw-objects_odg.odg",
+    "built__styles-gfx__draw-text_odg.odg",
+    "built__styles-gfx__impress-backgrounds_odp.odp",
+    "built__styles-gfx__impress-effects_odp.odp",
+    "built__styles-gfx__impress-table_odp.odp",
+    "built__styles-gfx__impress-transitions_odp.odp",
+    "built__styles-text__draw-text_odg.odg",
+    "built__styles-text__impress-text_odp.odp",
+    "built__styles-text__writer-para-styles_odt.odt",
+    "built__t13__chart_ods.ods",
+    "built__writer__objects_odt.odt",
+    "generated__impress.odp"
+   ]
+  },
+  "element \"table:data-pilot-field\" missing required attribute \"table:selected-page\"": {
+   "errors": 1,
+   "packages": [
+    "built__calc__pivot-tables_ods.ods"
+   ]
+  },
+  "element \"table:data-pilot-group\" incomplete; missing required element \"table:data-pilot-group-member\"": {
+   "errors": 3,
+   "packages": [
+    "built__calc__pivot-tables_ods.ods",
+    "built__leak__calc-pivot-group_ods.ods"
+   ]
+  },
+  "element \"table:data-pilot-groups\" incomplete; missing required element \"table:data-pilot-group\"": {
+   "errors": 16,
+   "packages": [
+    "built__calc__pivot-tables_ods.ods"
+   ]
+  },
+  "element \"table:data-pilot-member\" not allowed here": {
+   "errors": 5,
+   "packages": [
+    "built__calc__pivot-tables_ods.ods",
+    "built__leak__calc-pivot-group_ods.ods"
+   ]
+  },
+  "element \"table:database-source-table\" missing required attribute \"table:database-table-name\"": {
+   "errors": 3,
+   "packages": [
+    "built__calc__dbranges-import_ods.ods"
+   ]
+  },
+  "element \"table:dependence\" not allowed here": {
+   "errors": 6,
+   "packages": [
+    "built__calc__tracked-insdel_ods.ods",
+    "built__leak__calc-tracked_ods.ods"
+   ]
+  },
+  "element \"table:dependencies\" incomplete; missing required element \"table:dependency\"": {
+   "errors": 4,
+   "packages": [
+    "built__calc__tracked-insdel_ods.ods",
+    "built__leak__calc-tracked_ods.ods"
+   ]
+  },
+  "element \"text:footnote-continuation-notice-backward\" not allowed here": {
+   "errors": 3,
+   "packages": [
+    "built__leak__writer-fields_odt.odt",
+    "built__writer__refs-notes-nocompat_odt.odt",
+    "built__writer__refs-notes_odt.odt"
+   ]
+  },
+  "element \"text:footnote-continuation-notice-forward\" not allowed here": {
+   "errors": 3,
+   "packages": [
+    "built__leak__writer-fields_odt.odt",
+    "built__writer__refs-notes-nocompat_odt.odt",
+    "built__writer__refs-notes_odt.odt"
+   ]
+  },
+  "element \"text:p\" not allowed here": {
+   "errors": 5,
+   "packages": [
+    "built__ole-text-edge__ole-text-edge_odg.odg",
+    "built__ole-text__ole-text_odg.odg"
+   ]
+  },
+  "element \"text:page-continuation-string\" not allowed here": {
+   "errors": 8,
+   "packages": [
+    "built__leak__writer-fields_odt.odt",
+    "built__writer__fields-misc-nocompat_odt.odt",
+    "built__writer__fields-misc_odt.odt"
+   ]
+  },
+  "element \"text:section\" missing required attribute \"text:display\"": {
+   "errors": 2,
+   "packages": [
+    "built__writer__structure-nocompat_odt.odt",
+    "built__writer__structure_odt.odt"
+   ]
+  },
+  "element \"text:tab-stop\" not allowed here": {
+   "errors": 3,
+   "packages": [
+    "built__leak__calc-chart-axis_ods.ods"
+   ]
+  },
+  "found attribute \"style:with-tab\", but no attributes allowed here": {
+   "errors": 2,
+   "packages": [
+    "built__writer__indexes-nocompat_odt.odt",
+    "built__writer__indexes_odt.odt"
+   ]
+  },
+  "found attribute \"text:help\", but no attributes allowed here": {
+   "errors": 3,
+   "packages": [
+    "built__leak__writer-fields_odt.odt",
+    "built__writer__fields-misc-nocompat_odt.odt",
+    "built__writer__fields-misc_odt.odt"
+   ]
+  },
+  "found attribute \"text:hint\", but no attributes allowed here": {
+   "errors": 3,
+   "packages": [
+    "built__leak__writer-fields_odt.odt",
+    "built__writer__fields-misc-nocompat_odt.odt",
+    "built__writer__fields-misc_odt.odt"
+   ]
+  },
+  "value of attribute \"anim:iterate-interval\" is invalid": {
+   "errors": 3,
+   "packages": [
+    "built__draw__animations_odp.odp"
+   ]
+  },
+  "value of attribute \"draw:unit\" is invalid": {
+   "errors": 2,
+   "packages": [
+    "built__styles-gfx__draw-objects_odg.odg"
+   ]
+  },
+  "value of attribute \"fo:font-weight\" is invalid": {
+   "errors": 24,
+   "packages": [
+    "built__styles-text__calc-text_ods.ods",
+    "built__styles-text__draw-text_odg.odg",
+    "built__styles-text__impress-text_odp.odp",
+    "built__styles-text__writer-char-styles_odt.odt"
+   ]
+  },
+  "value of attribute \"form:current-value\" is invalid": {
+   "errors": 2,
+   "packages": [
+    "built__writer__forms_odt.odt"
+   ]
+  },
+  "value of attribute \"form:max-value\" is invalid": {
+   "errors": 2,
+   "packages": [
+    "built__writer__forms_odt.odt"
+   ]
+  },
+  "value of attribute \"form:value\" is invalid": {
+   "errors": 2,
+   "packages": [
+    "built__writer__forms_odt.odt"
+   ]
+  },
+  "value of attribute \"form:visual-effect\" is invalid": {
+   "errors": 3,
+   "packages": [
+    "built__writer__forms_odt.odt"
+   ]
+  },
+  "value of attribute \"presentation:object\" is invalid": {
+   "errors": 6,
+   "packages": [
+    "built__draw__layouts_odp.odp"
+   ]
+  },
+  "value of attribute \"smil:additive\" is invalid": {
+   "errors": 3,
+   "packages": [
+    "built__draw__animations_odp.odp"
+   ]
+  },
+  "value of attribute \"style:border-line-width-left\" is invalid": {
+   "errors": 1,
+   "packages": [
+    "built__styles-text__writer-para-styles_odt.odt"
+   ]
+  },
+  "value of attribute \"style:border-line-width-top\" is invalid": {
+   "errors": 1,
+   "packages": [
+    "built__styles-text__writer-para-styles_odt.odt"
+   ]
+  },
+  "value of attribute \"style:font-weight-asian\" is invalid": {
+   "errors": 24,
+   "packages": [
+    "built__styles-text__calc-text_ods.ods",
+    "built__styles-text__draw-text_odg.odg",
+    "built__styles-text__impress-text_odp.odp",
+    "built__styles-text__writer-char-styles_odt.odt"
+   ]
+  },
+  "value of attribute \"style:font-weight-complex\" is invalid": {
+   "errors": 24,
+   "packages": [
+    "built__styles-text__calc-text_ods.ods",
+    "built__styles-text__draw-text_odg.odg",
+    "built__styles-text__impress-text_odp.odp",
+    "built__styles-text__writer-char-styles_odt.odt"
+   ]
+  },
+  "value of attribute \"style:text-overline-style\" is invalid": {
+   "errors": 21,
+   "packages": [
+    "built__styles-text__calc-text_ods.ods",
+    "built__styles-text__draw-text_odg.odg",
+    "built__styles-text__impress-text_odp.odp",
+    "built__styles-text__writer-char-styles_odt.odt"
+   ]
+  },
+  "value of attribute \"style:text-underline-style\" is invalid": {
+   "errors": 21,
+   "packages": [
+    "built__styles-text__calc-text_ods.ods",
+    "built__styles-text__draw-text_odg.odg",
+    "built__styles-text__impress-text_odp.odp",
+    "built__styles-text__writer-char-styles_odt.odt"
+   ]
+  },
+  "value of attribute \"table:display-list\" is invalid": {
+   "errors": 3,
+   "packages": [
+    "built__calc__validation-alerts_ods.ods"
+   ]
+  },
+  "value of attribute \"text:number-position\" is invalid": {
+   "errors": 3,
+   "packages": [
+    "built__writer__linenumbers-2_odt.odt",
+    "built__writer__structure-nocompat_odt.odt",
+    "built__writer__structure_odt.odt"
+   ]
+  }
+ }
+}

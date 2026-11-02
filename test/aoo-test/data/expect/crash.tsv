@@ -21,3 +21,5 @@
 
 # test_name<TAB>kind<TAB>reason. See aootest/expect.py.
 test_paragraph_bitmap_fill_mode_does_not_kill_the_office	xfail	setting FillBitmapMode on a Writer paragraph kills the trunk dev app (SIGSEGV in SwXParagraph::setPropertyValue); the installed 5.1.0 does not crash
+test_draw_annotations_step_does_not_stall_the_office	xfail	the draw script step that adds annotations to Impress and Draw pages stalls the trunk dev app in a fresh office (4 of 5 runs; once it finished in 2 s); not analysed
+test_excluded_document_survives_every_save_mode[*]	xfail	data/built-excluded.tsv lists why each of these documents is left out of the default run

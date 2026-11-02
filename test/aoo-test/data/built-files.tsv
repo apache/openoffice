@@ -1,0 +1,235 @@
+################################################################
+#
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+#
+################################################################
+
+# builder<TAB>file: what each script builder makes, from a run on the trunk dev app (documents.script_built reads it).
+# draw-annotations is left out: it stalls the office (tests/odf/test_known_crashes.py).
+styles-gfx	calc-cells.ods
+styles-gfx	calc-pagestyles.ods
+styles-gfx	calc-sheets.ods
+styles-gfx	draw-3d.odg
+styles-gfx	draw-backgrounds.odg
+styles-gfx	draw-fill-line.odg
+styles-gfx	draw-frames.odg
+styles-gfx	draw-objects.odg
+styles-gfx	draw-text.odg
+styles-gfx	impress-backgrounds.odp
+styles-gfx	impress-effects.odp
+styles-gfx	impress-table.odp
+styles-gfx	impress-transitions.odp
+styles-gfx	writer-frames-misc.odt
+styles-gfx	writer-frames-pos.odt
+styles-gfx	writer-objects.odt
+styles-gfx	writer-pagestyles.odt
+styles-gfx	writer-tables.odt
+doctypes	chart-host.ods
+doctypes	impress-as-draw.odg
+doctypes	master-as-text.odt
+doctypes	master.odm
+doctypes	math.odf
+doctypes	template-calc.ots
+doctypes	template-draw.otg
+doctypes	template-impress.otp
+doctypes	template-writer.ott
+doctypes	web-template.ott
+doctypes	web.odt
+p8-drawings	draw01.odg
+p8-drawings	draw02.odg
+p8-drawings	draw03.odg
+p8-drawings	draw04.odg
+p8-drawings	draw05.odg
+p8-drawings	draw06.odg
+p8-drawings	draw07.odg
+p8-drawings	draw08.odg
+p8-drawings	draw09.odg
+p8-drawings	draw10.odg
+draw	anchors-group-frame.odt
+draw	anchors.odt
+draw	animations.odp
+draw	click-actions.odp
+draw	connectors.odg
+draw	connectors.odp
+draw	core.odg
+draw	core.odp
+draw	custom-full.odg
+draw	custom-presets.odg
+draw	draw-links.odg
+draw	draw-master.odg
+draw	draw-master.otg
+draw	fills.odg
+draw	fontwork.odg
+draw	graphics.odt
+draw	header-footer.odp
+draw	image-map.odg
+draw	layers.odg
+draw	layouts.odp
+draw	masters-notes.odp
+draw	masters-notes.otp
+draw	measure.odg
+draw	measure.odp
+draw	pres-settings-start.odp
+draw	pres-settings.odp
+draw	scenes.odg
+draw	scenes.odp
+draw	shapes.ods
+draw	special.odg
+draw	special.odp
+draw	transitions.odp
+leak	calc-chart-axis.ods
+leak	calc-chart-types.ods
+leak	calc-misc.ods
+leak	calc-pivot-group.ods
+leak	calc-tracked.ods
+leak	draw-fontwork.odg
+leak	leak-base-dbase.odb
+leak	leak-base.odb
+leak	writer-fields.odt
+leak	writer-forms.odt
+leak	writer-pagegrid.odt
+leak	writer-redline.odt
+leak	writer-toc-image.odt
+base	base-adabas.odb
+base	base-dbase.odb
+base	base-flat-txt.odb
+base	base-flat.odb
+base	base-hsqldb.odb
+base	base-ldap.odb
+base	base-mysql.odb
+base	base-odbc.odb
+base	base-oracle.odb
+base	base-settings.odb
+styles-text	calc-numberformats.ods
+styles-text	calc-text.ods
+styles-text	draw-text.odg
+styles-text	impress-text.odp
+styles-text	writer-char-styles.odt
+styles-text	writer-list-styles.odt
+styles-text	writer-page-styles.odt
+styles-text	writer-para-styles.odt
+styles-text	writer-ruby.odt
+styles-text	writer-sections.odt
+chart	axes.ods
+chart	axes2.ods
+chart	data.ods
+chart	embed-draw.odg
+chart	embed-draw2.odg
+chart	embed-impress.odp
+chart	embed-impress2.odp
+chart	embed-writer-table.odt
+chart	embed-writer.odt
+chart	embed-writer2.odt
+chart	label-opts.ods
+chart	labels.ods
+chart	legend.ods
+chart	pie-variants.ods
+chart	point-props.ods
+chart	solid-types.ods
+chart	stats-error.ods
+chart	stats-mean.ods
+chart	stats-regression.ods
+chart	stock-variants.ods
+chart	symbols.ods
+chart	three-d.ods
+chart	types-area.ods
+chart	types-column.ods
+chart	types-line.ods
+chart	types-net.ods
+chart	types-pie.ods
+chart	types-stock.ods
+chart	types-xy.ods
+calc	calc-settings-a.ods
+calc	calc-settings-b.ods
+calc	calc-settings-c.ods
+calc	calc-settings-d.ods
+calc	calc-settings-e.ods
+calc	calc-settings-f.ods
+calc	calc-settings-g.ods
+calc	calc-settings-h.ods
+calc	calc-settings-null-year.ods
+calc	conditional-formats.ods
+calc	consolidation-max.ods
+calc	consolidation-min.ods
+calc	consolidation-sum.ods
+calc	consolidation.ods
+calc	dbranges-import.ods
+calc	dbranges-sort-subtotal.ods
+calc	detective.ods
+calc	filter-connections.ods
+calc	filter-operators.ods
+calc	filtered-rows.ods
+calc	formulas-01-database.ods
+calc	formulas-02-datetime.ods
+calc	formulas-03-financial.ods
+calc	formulas-04-information.ods
+calc	formulas-05-logical.ods
+calc	formulas-06-math.ods
+calc	formulas-07-matrix.ods
+calc	formulas-08-statistical.ods
+calc	formulas-09-spreadsheet.ods
+calc	formulas-10-text.ods
+calc	formulas-11-addin.ods
+calc	formulas-forms.ods
+calc	links.ods
+calc	named-ranges.ods
+calc	pivot-tables.ods
+calc	scenarios.ods
+calc	shapes.ods
+calc	table-attrs.ods
+calc	tracked-all.ods
+calc	tracked-content.ods
+calc	tracked-cutoffs.ods
+calc	tracked-deleted-content.ods
+calc	tracked-insdel.ods
+calc	tracked-move.ods
+calc	tracked-sheets.ods
+calc	validation-alerts.ods
+calc	validation-custom-list.ods
+calc	validation-edges.ods
+calc	validation-types.ods
+writer	annotations.odt
+writer	bibliography.odt
+writer	database-fields.odt
+writer	fields-docinfo.odt
+writer	fields-misc-nocompat.odt
+writer	fields-misc.odt
+writer	forms.odt
+writer	hyperlinks-ruby.odt
+writer	indexes-nocompat.odt
+writer	indexes.odt
+writer	linenumbers-0.odt
+writer	linenumbers-1.odt
+writer	linenumbers-2.odt
+writer	lists-outline-nocompat.odt
+writer	lists-outline.odt
+writer	master-doc-as-text.odt
+writer	master-doc.odm
+writer	notes-variants.odt
+writer	objects.odt
+writer	redlines-notrack.odt
+writer	redlines.odt
+writer	refs-notes-nocompat.odt
+writer	refs-notes.odt
+writer	settings.odt
+writer	structure-nocompat.odt
+writer	structure.odt
+writer	table-fields.odt
+writer	variables-nocompat.odt
+writer	variables.odt
+writer	web-fields.odt

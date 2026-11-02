@@ -33,6 +33,9 @@ def normalize(xml):
 
 
 def differing_parts(first, second):
-    """Names of the parts of two packages whose normalized content differs."""
+    """Names of the parts of two packages whose normalized content differs. A part that only one of them has differs; a part that
+    neither has (a Base document has no styles.xml) is left out."""
     with zipfile.ZipFile(first) as a, zipfile.ZipFile(second) as b:
-        return [p for p in PARTS if normalize(a.read(p).decode("utf-8")) != normalize(b.read(p).decode("utf-8"))]
+        have_a, have_b = set(a.namelist()), set(b.namelist())
+        return [p for p in PARTS if (p in have_a or p in have_b) and
+                (p not in have_a or p not in have_b or normalize(a.read(p).decode("utf-8")) != normalize(b.read(p).decode("utf-8")))]

@@ -27,7 +27,7 @@ product default) carry AOO extensions on purpose, so their schema errors are not
 import pytest
 
 from aootest import documents
-from aootest.odfversion import SAVE_MODES, odf_versions
+from aootest.odfversion import SAVE_MODES, is_formula, odf_versions
 
 pytestmark = pytest.mark.slow
 
@@ -62,7 +62,7 @@ class TestSavedCopy:
             pytest.skip("the product default is not pinned to one ODF version")
         _, r = saved_copy(odf_runs, need_mode, mode, source)
         assert r["out"], "not saved: %s" % r["detail"]
-        assert odf_versions(r["out"]) == (DECLARED[mode], DECLARED[mode])
+        assert odf_versions(r["out"]) == (None if is_formula(r["out"]) else DECLARED[mode], DECLARED[mode])
 
     def test_package_rules(self, odf_runs, need_mode, mode, source):
         run, r = saved_copy(odf_runs, need_mode, mode, source)

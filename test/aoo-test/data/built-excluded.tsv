@@ -1,0 +1,40 @@
+################################################################
+#
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+#
+################################################################
+
+# builder<TAB>file<TAB>reason: documents left out of the default run because converting them kills or stalls the office, which
+# makes every later item of that mode fail (the session gives up after --max-restarts). tests/odf/test_known_crashes.py runs them on request.
+calc	tracked-all.ods	converting it kills the office in the ext mode (reproduced alone: 'illegal object given'); the strict mode saves it. In the full run it also killed the x13 and default offices
+calc	tracked-content.ods	converting it killed the ext, x13 and default offices in the full run; the strict and v13 modes saved it
+calc	tracked-cutoffs.ods	converting it stalled the ext office in the full run (the office did not answer again within 90 s); the other modes saved it
+calc	tracked-deleted-content.ods	converting it killed the ext, x13 and default offices in the full run; the strict and v13 modes saved it
+calc	tracked-move.ods	converting it killed the ext, x13 and default offices in the full run; the strict and v13 modes saved it
+base	base-adabas.odb	a Base document: converting Base documents killed the office three times on 2026-11-02 (leak-base.odb twice, base-flat.odb once, in different modes), and the base script stalled in two of six runs; all Base documents are left out together
+base	base-dbase.odb	a Base document: converting Base documents killed the office three times on 2026-11-02 (leak-base.odb twice, base-flat.odb once, in different modes), and the base script stalled in two of six runs; all Base documents are left out together
+base	base-flat-txt.odb	a Base document: converting Base documents killed the office three times on 2026-11-02 (leak-base.odb twice, base-flat.odb once, in different modes), and the base script stalled in two of six runs; all Base documents are left out together
+base	base-flat.odb	a Base document: converting Base documents killed the office three times on 2026-11-02 (leak-base.odb twice, base-flat.odb once, in different modes), and the base script stalled in two of six runs; all Base documents are left out together
+base	base-hsqldb.odb	a Base document: converting Base documents killed the office three times on 2026-11-02 (leak-base.odb twice, base-flat.odb once, in different modes), and the base script stalled in two of six runs; all Base documents are left out together
+base	base-ldap.odb	a Base document: converting Base documents killed the office three times on 2026-11-02 (leak-base.odb twice, base-flat.odb once, in different modes), and the base script stalled in two of six runs; all Base documents are left out together
+base	base-mysql.odb	a Base document: converting Base documents killed the office three times on 2026-11-02 (leak-base.odb twice, base-flat.odb once, in different modes), and the base script stalled in two of six runs; all Base documents are left out together
+base	base-odbc.odb	a Base document: converting Base documents killed the office three times on 2026-11-02 (leak-base.odb twice, base-flat.odb once, in different modes), and the base script stalled in two of six runs; all Base documents are left out together
+base	base-oracle.odb	a Base document: converting Base documents killed the office three times on 2026-11-02 (leak-base.odb twice, base-flat.odb once, in different modes), and the base script stalled in two of six runs; all Base documents are left out together
+base	base-settings.odb	a Base document: converting Base documents killed the office three times on 2026-11-02 (leak-base.odb twice, base-flat.odb once, in different modes), and the base script stalled in two of six runs; all Base documents are left out together
+leak	leak-base.odb	a Base document: converting Base documents killed the office three times on 2026-11-02 (leak-base.odb twice, base-flat.odb once, in different modes), and the base script stalled in two of six runs; all Base documents are left out together
+leak	leak-base-dbase.odb	a Base document: converting Base documents killed the office three times on 2026-11-02 (leak-base.odb twice, base-flat.odb once, in different modes), and the base script stalled in two of six runs; all Base documents are left out together
