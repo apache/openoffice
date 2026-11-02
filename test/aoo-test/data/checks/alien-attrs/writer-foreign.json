@@ -1,0 +1,20 @@
+[
+ {
+  "name": "writer_aliens_foreign",
+  "expr": "[[n for n in sorted(x.ElementNames) if n.startswith('ex:')] for x in (doc.Text.createTextCursor().ParaUserDefinedAttributes, doc.TextTables.getByIndex(0).UserDefinedAttributes, doc.TextTables.getByIndex(0).getCellByName('A1').UserDefinedAttributes, doc.TextSections.getByIndex(0).UserDefinedAttributes)]",
+  "expect": [
+   [
+    "ex:alien-foreign"
+   ],
+   [
+    "ex:alien-foreign"
+   ],
+   [
+    "ex:alien-foreign"
+   ],
+   [
+    "ex:alien-foreign"
+   ]
+  ]
+ }
+]

@@ -32,6 +32,7 @@ Each download is checked against its pinned sha256 before it is used. The cache 
     python3 -m pytest -m smoke            # quick office checks
     python3 -m pytest -m "not slow"       # all of the above
     python3 -m pytest tests/odf           # save modes and the other families, slow
+    python3 -m pytest -m crash            # known crashes of the office, kept out of the default run
     python3 -m pytest -k convert          # any pytest selection works
 
 ## Options
@@ -42,6 +43,7 @@ Each download is checked against its pinned sha256 before it is used. The cache 
 | `--uno-python PATH` | `AOO_UNO_PYTHON` | A Python that can import `uno`. Skips the search; if it fails the probe, that is an error. |
 | `--connect socket\|pipe` | | How the worker reaches the office. Default `socket`. |
 | `--max-restarts N` | | Office restarts allowed per save mode before the session aborts. Default 5. |
+| `--start-timeout S` | | Seconds an office may take to start and accept a connection. Default 240; starts have taken from 5 to 90 seconds on a busy desktop. |
 | `--require-office` | | Fail instead of skip when there is no usable office. |
 | `--require-odf13` | | Fail instead of skip the ODF 1.3 save modes when the build cannot write 1.3. |
 | `--documents DIR` | | Extra ODF documents to run through every save mode. |
