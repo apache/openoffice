@@ -918,14 +918,17 @@ namespace xmloff
         if ( DA_INPUT_REQUIRED & m_nIncludeDatabase )
         {
             // form:input-required is an ODF 1.4 attribute
-            if ( SvtSaveOptions::IsODFStrict( m_rContext.getGlobalContext().getDefaultVersion() ) )
+            const SvtSaveOptions::ODFDefaultVersion eVersion = m_rContext.getGlobalContext().getDefaultVersion();
+            if ( SvtSaveOptions::IsODFStrict( eVersion ) && eVersion < SvtSaveOptions::ODFVER_014 )
                 exportedProperty( PROPERTY_INPUT_REQUIRED );
             else
             exportBooleanPropertyAttribute(
                 OAttributeMetaData::getDatabaseAttributeNamespace( DA_INPUT_REQUIRED ),
                 OAttributeMetaData::getDatabaseAttributeName( DA_INPUT_REQUIRED ),
                 PROPERTY_INPUT_REQUIRED,
-                BOOLATTR_DEFAULT_TRUE
+                // the property is true by default and an absent attribute means true to older readers, but ODF 1.4
+                // defines the attribute as false by default: write it explicitly in the 1.4 modes
+                ( eVersion >= SvtSaveOptions::ODFVER_014 ) ? BOOLATTR_DEFAULT_VOID : BOOLATTR_DEFAULT_TRUE
             );
             RESET_BIT( nIncludeDatabase, DA_INPUT_REQUIRED );
         }

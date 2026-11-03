@@ -88,6 +88,12 @@ namespace xmloff { namespace EnhancedCustomShapeToken {
 		EAS_handle_polar,
 		EAS_handle_radius_range_minimum,
 		EAS_handle_radius_range_maximum,
+		EAS_handle_position_x,
+		EAS_handle_position_y,
+		EAS_handle_polar_pole_x,
+		EAS_handle_polar_pole_y,
+		EAS_handle_polar_radius,
+		EAS_handle_polar_angle,
 
 		EAS_CustomShapeEngine,
 		EAS_CustomShapeData,

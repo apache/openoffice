@@ -184,10 +184,16 @@ void ImpExportHandles( SvXMLExport& rExport, const uno::Sequence< beans::Propert
 	{
 		rtl::OUString		aStr;
 		rtl::OUStringBuffer aStrBuffer;
+		// ODF 1.4 requires draw:handle-position-x/-y or draw:handle-polar-pole-x/-y with draw:handle-polar-radius/-angle;
+		// the deprecated draw:handle-position and draw:handle-polar stay, older AOO versions drop the handles without them
+		const sal_Bool bODF14 = rExport.getDefaultVersion() >= SvtSaveOptions::ODFVER_014;
 
 		for ( i = 0; i < nElements; i++ )
 		{
 			sal_Bool bPosition = sal_False;
+			sal_Bool bPolar = sal_False;
+			com::sun::star::drawing::EnhancedCustomShapeParameterPair aPosition14;
+			com::sun::star::drawing::EnhancedCustomShapeParameterPair aPolar14;
 			const uno::Sequence< beans::PropertyValue >& rPropSeq = rHandles[ i ];
 			for ( j = 0; j < (sal_uInt32)rPropSeq.getLength(); j++ )
 			{
@@ -199,6 +205,7 @@ void ImpExportHandles( SvXMLExport& rExport, const uno::Sequence< beans::Propert
 						com::sun::star::drawing::EnhancedCustomShapeParameterPair aPosition;
 						if ( rPropVal.Value >>= aPosition )
 						{
+							aPosition14 = aPosition;
 							ExportParameter( aStrBuffer, aPosition.First );
 							ExportParameter( aStrBuffer, aPosition.Second );
 							aStr = aStrBuffer.makeStringAndClear();
@@ -236,6 +243,8 @@ void ImpExportHandles( SvXMLExport& rExport, const uno::Sequence< beans::Propert
 						com::sun::star::drawing::EnhancedCustomShapeParameterPair aPolar;
 						if ( rPropVal.Value >>= aPolar )
 						{
+							aPolar14 = aPolar;
+							bPolar = sal_True;
 							ExportParameter( aStrBuffer, aPolar.First );
 							ExportParameter( aStrBuffer, aPolar.Second );
 							aStr = aStrBuffer.makeStringAndClear();
@@ -311,6 +320,24 @@ void ImpExportHandles( SvXMLExport& rExport, const uno::Sequence< beans::Propert
 					break;
 					default:
 						break;
+				}
+			}
+			if ( bPosition && bODF14 )
+			{
+				// a polar handle has its pole in the polar pair and its radius and angle in the position pair
+				const XMLTokenEnum eFirst = bPolar ? XML_HANDLE_POLAR_POLE_X : XML_HANDLE_POSITION_X;
+				const XMLTokenEnum eSecond = bPolar ? XML_HANDLE_POLAR_POLE_Y : XML_HANDLE_POSITION_Y;
+				const com::sun::star::drawing::EnhancedCustomShapeParameterPair& rFirst = bPolar ? aPolar14 : aPosition14;
+				ExportParameter( aStrBuffer, rFirst.First );
+				rExport.AddAttribute( XML_NAMESPACE_DRAW, eFirst, aStrBuffer.makeStringAndClear() );
+				ExportParameter( aStrBuffer, rFirst.Second );
+				rExport.AddAttribute( XML_NAMESPACE_DRAW, eSecond, aStrBuffer.makeStringAndClear() );
+				if ( bPolar )
+				{
+					ExportParameter( aStrBuffer, aPosition14.First );
+					rExport.AddAttribute( XML_NAMESPACE_DRAW, XML_HANDLE_POLAR_RADIUS, aStrBuffer.makeStringAndClear() );
+					ExportParameter( aStrBuffer, aPosition14.Second );
+					rExport.AddAttribute( XML_NAMESPACE_DRAW, XML_HANDLE_POLAR_ANGLE, aStrBuffer.makeStringAndClear() );
 				}
 			}
 			if ( bPosition )

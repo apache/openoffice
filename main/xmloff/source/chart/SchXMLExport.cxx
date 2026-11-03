@@ -2000,7 +2000,8 @@ void SchXMLExportHelper_Impl::exportPlotArea(
 
         if( msChartAddress.getLength() )
         {
-            if( !bIncludeTable )
+            // ODF 1.4 removed table:cell-range-address from chart:plot-area; the importer takes the data from the series ranges
+            if( !bIncludeTable && mrExport.getDefaultVersion() < SvtSaveOptions::ODFVER_014 )
                 mrExport.AddAttribute( XML_NAMESPACE_TABLE, XML_CELL_RANGE_ADDRESS, msChartAddress );
 
             Reference< chart::XChartDocument > xDoc( mrExport.GetModel(), uno::UNO_QUERY );
