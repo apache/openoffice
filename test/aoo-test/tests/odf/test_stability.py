@@ -27,7 +27,7 @@ from aootest import stability
 pytestmark = pytest.mark.slow
 
 
-@pytest.mark.parametrize("mode", ["strict", "ext", "v13", "x13"])
+@pytest.mark.parametrize("mode", ["strict", "ext", "v13", "x13", "v14", "x14"])
 def test_saving_twice_gives_the_same_content(saved, mode, source):
     run, first = saved(mode, source)
     assert first["out"], "not saved: %s" % first["detail"]

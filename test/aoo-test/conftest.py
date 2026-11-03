@@ -43,6 +43,7 @@ def pytest_addoption(parser):
     g.addoption("--strict-expect", action="store_true", help="an item that a data/expect row expects to fail must fail (XPASS becomes a failure)")
     g.addoption("--write-kinds", action="store_true", help="write data/baseline/ from this run instead of comparing with it (tests/odf/test_kinds.py)")
     g.addoption("--require-odf13", action="store_true", help="fail instead of skipping the ODF 1.3 save modes when the office cannot write 1.3")
+    g.addoption("--require-odf14", action="store_true", help="fail instead of skipping the ODF 1.4 save modes when the office cannot write 1.4")
 
 
 def _unavailable(config, message):
@@ -162,16 +163,25 @@ def odf13(aoo_offices, tmp_path_factory):
     return odf_versions(dst) == ("1.3", "1.3")
 
 
+@pytest.fixture(scope="session")
+def odf14(aoo_offices, tmp_path_factory):
+    """Whether this build writes ODF 1.4 in save mode 7: builds from before the ODF 1.4 work ignore the setting."""
+    dst = tmp_path_factory.mktemp("odf14") / "probe.odt"
+    aoo_offices.get(7).call("new_and_store", {"app": "writer", "dst": str(dst), "filter": "writer8"}, timeout=120)
+    return odf_versions(dst) == ("1.4", "1.4")
+
+
 @pytest.fixture
-def need_mode(odf13, pytestconfig):
-    """need_mode(mode): skip (or fail with --require-odf13) when the build cannot write that save mode (names or numbers)."""
+def need_mode(request, pytestconfig):
+    """need_mode(mode): skip (or fail with --require-odf13 or --require-odf14) when the build cannot write that save mode (names or numbers)."""
     def check(mode):
         number = SAVE_MODES.get(mode, mode)
-        if number in (5, 6) and not odf13:
-            message = "this build does not write ODF 1.3 (save mode %s)" % mode
-            if pytestconfig.getoption("--require-odf13"):
-                pytest.fail(message, pytrace=False)
-            pytest.skip(message)
+        for numbers, probe, option, label in (((5, 6), "odf13", "--require-odf13", "1.3"), ((7, 8), "odf14", "--require-odf14", "1.4")):
+            if number in numbers and not request.getfixturevalue(probe):
+                message = "this build does not write ODF %s (save mode %s)" % (label, mode)
+                if pytestconfig.getoption(option):
+                    pytest.fail(message, pytrace=False)
+                pytest.skip(message)
     return check
 
 

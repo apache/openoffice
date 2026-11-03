@@ -27,7 +27,7 @@ CASES = DATA / "calcval-cases.tsv"
 NOT_AVAILABLE = 32767
 # Analysis add-in functions are not known by their English names to setFormula; the cases keep the ODF names and
 # are rewritten to the programmatic names.
-ADDIN = {"RECEIVED": "getReceived", "BESSELK": "getBesselk", "BESSELY": "getBessely"}
+ADDIN = {"RECEIVED": "getReceived", "BESSELK": "getBesselk", "BESSELY": "getBessely", "CONVERT": "getConvert"}
 
 
 def parse_mode(mode):
