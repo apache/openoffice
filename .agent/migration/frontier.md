@@ -895,7 +895,11 @@ xmerge        ✅  DONE 2026-10-02 — 5 jars to program/classes, all entry+mani
                    IS upstream's launcher (pyuno/zipcore/python.cxx, embedded manifest),
                    and python-core-2.7.18/bin/python.exe is CPython with the VC90
                    manifest embedded by mt.exe (@python cannot name a main-repo label).
-                   Verified x86+x64.  NOTE upstream's launcher does NOT put program/ on
+                   Verified x86+x64.  SUPERSEDED 2026-11-03 (bazel-trunk-sync): CPython
+                   is now trunk's 3.11.15 on VS2019/UCRT, so there is no VC90 manifest
+                   to embed — python-core-3.11.15/bin/python.exe is @python//:python
+                   as built, and the .pyd modules go to python-core-3.11.15/lib.  Not
+                   yet re-run live.  NOTE upstream's launcher does NOT put program/ on
                    PYTHONPATH: `import uno` resolves via sys.path[0] (script dir / CWD)
                    or a user PYTHONPATH — same as upstream, not a migration gap.
 javainstaller2 ⬜ (Java installer UI)
