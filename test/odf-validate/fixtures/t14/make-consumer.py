@@ -45,7 +45,7 @@ TXT = "<text:p>Plain text.</text:p>"
 CELLS = '<table:table table:name="Sheet1"><table:table-column/><table:table-row>%s</table:table-row></table:table>'
 RECT = 'svg:x="1cm" svg:y="1cm" svg:width="6cm" svg:height="4cm"'
 GEOM = '<draw:custom-shape %s><draw:enhanced-geometry svg:viewBox="0 0 21600 21600" draw:type="rectangle" ${eg}>${handles}</draw:enhanced-geometry></draw:custom-shape>' % RECT
-FRAME = '<draw:frame draw:name="F1" text:anchor-type="paragraph" svg:width="4cm" svg:height="2cm"%s><draw:text-box%s><text:p>Box</text:p></draw:text-box></draw:frame>'
+FRAME = '<draw:frame draw:name="F1" text:anchor-type="paragraph" svg:width="4cm"%s><draw:text-box fo:min-height="2cm"%s><text:p>Box</text:p></draw:text-box></draw:frame>'
 PSTYLE = '<style:style style:name="%s" style:family="paragraph">%s</style:style>'
 GSTYLE = '<style:style style:name="%s" style:family="graphic">%s</style:style>'
 
@@ -74,9 +74,10 @@ CASES = [
          fields={"c": 'office:value-type="error"'}, base=None),
     dict(name="extrusion-metal-type", ext="odg", construct='draw:extrusion-metal-type="draw:default" on draw:enhanced-geometry (value arbitrary: the RNG type is namespacedToken with a declared prefix)',
          content=GEOM, fields={"eg": 'draw:extrusion="true" ${m}', "m": 'draw:extrusion-metal="true" draw:extrusion-metal-type="draw:default"', "handles": ""},
-         base={"m": ""}),
+         base={"eg": 'draw:extrusion="true" draw:extrusion-metal="true"', "handles": ""}),
     dict(name="extrusion-specularity", ext="odg", construct='draw:extrusion-specularity="150%" on draw:enhanced-geometry',
-         content=GEOM, fields={"eg": 'draw:extrusion="true" draw:extrusion-specularity="${v}"', "v": "150%", "handles": ""}, base={"v": "80%"}),
+         content=GEOM, fields={"eg": 'draw:extrusion="true" draw:extrusion-specularity="${v}"', "v": "150%", "handles": ""},
+         base={"eg": 'draw:extrusion="true" draw:extrusion-specularity="80%"', "handles": ""}),
     dict(name="writing-mode-sideways", ext="odt", construct='style:writing-mode sideways-rl / sideways-lr on paragraph styles, sideways-rl on graphic-properties',
          auto=pstyle("P1", '<style:paragraph-properties style:writing-mode="${w1}"/>') + pstyle("P2", '<style:paragraph-properties style:writing-mode="${w2}"/>')
               + GSTYLE % ("G1", '<style:graphic-properties style:writing-mode="${w3}"/>'),
