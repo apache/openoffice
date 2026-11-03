@@ -877,7 +877,20 @@ void SvXMLExportPropertyMapper::exportXML(
 				(nFlags & XML_EXPORT_FLAG_EMPTY) != 0 ||
 				aIndexArray.Count() != 0 )
 			{
-				SvXMLElementExport aElem( rExport, XML_NAMESPACE_STYLE,
+				sal_uInt16 nElemPrefix = XML_NAMESPACE_STYLE;
+				// ODF 1.4 Extended: paragraph fills are not valid in style:graphic-properties
+				if( aPropTokens[i].eToken == XML_GRAPHIC_PROPERTIES &&
+					SvtSaveOptions().GetODFDefaultVersion() == SvtSaveOptions::ODFVER_014_EXT &&
+					maPropMapper->GetEntryCount() > 1 &&
+					maPropMapper->GetEntryAPIName( 0 ).equalsAscii( "ParaUserDefinedAttributes" ) &&
+					maPropMapper->GetEntryAPIName( 1 ).equalsAscii( "FillStyle" ) )
+				{
+					const OUString aExtNs( RTL_CONSTASCII_USTRINGPARAM(
+						"urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" ) );
+					rExport.EnsureNamespace( aExtNs, OUString( RTL_CONSTASCII_USTRINGPARAM( "loext" ) ) );
+					nElemPrefix = rExport.GetNamespaceMap().GetKeyByName( aExtNs );
+				}
+				SvXMLElementExport aElem( rExport, nElemPrefix,
 								  aPropTokens[i].eToken,
 								  (nFlags & XML_EXPORT_FLAG_IGN_WS) != 0,
 								  sal_False );
