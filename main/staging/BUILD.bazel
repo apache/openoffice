@@ -2,6 +2,7 @@ load("@bazel_skylib//rules:write_file.bzl", "write_file")
 load("@product_info//:defs.bzl", "PRODUCT_VERSION")
 load("//main/staging:res_bundles.bzl", "RES_BUNDLES")
 load("//main/staging:collect_files_aspect.bzl", "collect_outputs", "flat_install", "res_stage", "tree_install")
+load("//main/pyuno:python_version.bzl", "PYTHON_VERSION")
 
 # ── program/version.ini ───────────────────────────────────────────────────────
 # scp2's gid_Brand_Profile_Version_Ini (common_brand.scp), the [Version] keys
@@ -27,6 +28,34 @@ write_file(
     ],
 )
 
+# ── program/pythonloader.uno.ini ──────────────────────────────────────────────
+# Read by pyuno/source/loader/pyuno_loader.cxx CreateInstance() from
+# $OOO_BASE_DIR/program/pythonloader.uno.ini (SAL_CONFIGFILE("pythonloader.uno")).
+# Both keys MUST be set before Py_Initialize(); without them CPython finds no
+# stdlib (no os.py/encodings), calls Py_FatalError and exit()s the whole
+# soffice process the instant com.sun.star.loader.Python is instantiated.
+#
+# Equivalent of scp2/source/python/profileitem_python.scp (WNT, non-gcc
+# branch).  PYTHONPATH entries are space-separated file URLs; the loader
+# converts each to a system path and joins them with ';'.  The extension
+# modules (.pyd) are in lib/ itself (:install_python_pyds), so the lib/ entry
+# covers them.  Generated so the python-core-<ver> name has one source,
+# //main/pyuno:python_version.bzl.
+write_file(
+    name = "pythonloader_uno_ini",
+    out = "pythonloader.uno.ini",
+    content = [
+        "[Bootstrap]",
+        "PYUNO_LOADER_PYTHONHOME=$ORIGIN/python-core-" + PYTHON_VERSION,
+        "PYUNO_LOADER_PYTHONPATH=" + " ".join([
+            "$ORIGIN/python-core-%s/lib" % PYTHON_VERSION,
+            "$ORIGIN/python-core-%s/lib/site-packages" % PYTHON_VERSION,
+            "$ORIGIN",
+        ]),
+        "",
+    ],
+)
+
 # ── Profile INI files (equivalent to scp2-generated profiles in dmake) ────────
 # All ini files land in program/ alongside the DLLs and EXEs.
 filegroup(
@@ -38,7 +67,7 @@ filegroup(
         "soffice.ini",
         "uno.ini",
         # PYUNO_LOADER_PYTHONHOME / PYTHONPATH for pythonloader.dll.
-        "pythonloader.uno.ini",
+        ":pythonloader_uno_ini",
         # Vendor settings + JRE-selection data paths for jvmfwk.dll.  Name fixed
         # by fwkutil.hxx, not by us — see the file's own header.
         "jvmfwk3.ini",
@@ -221,7 +250,7 @@ collect_outputs(
         "//main/scripting:vbaevents.uno",
         "//main/scripting:stringresource.uno",
         "//main/scripting:protocolhandler",
-        # pyuno.pyd, NOT pyuno.dll: Python 2.7 imports only ".pyd".  Staging
+        # pyuno.pyd, NOT pyuno.dll: CPython imports only ".pyd".  Staging
         # both would load the bridge twice under two HMODULEs, each with its own
         # PyUNOType/RuntimeImpl_Type statics — see main/pyuno/util/pyuno.def.
         "//main/pyuno:pyuno_pyd",
@@ -426,9 +455,9 @@ collect_outputs(
         # ── Python ────────────────────────────────────────────────────────────
         # program/python.exe is the LAUNCHER (pyuno zipcore), not CPython: it
         # sets up PATH/PYTHONPATH/PYTHONHOME/URE_BOOTSTRAP and runs
-        # python-core-2.7.18/bin/python.exe (see :install_python_bin).
+        # python-core-<ver>/bin/python.exe (see :install_python_bin).
         "//main/pyuno:python",
-        "@python//:python27",
+        "@python//:python311",
     ] + select({
         # ATL-gated modules (VS Professional/Enterprise only; not Express/BuildTools).
         # Enable with:  build --//build:atl_available=True  in user.bazelrc
@@ -922,33 +951,44 @@ filegroup(
         ":_install_java_config",
         ":_install_python_scripts",
         # The Python stdlib tree is NOT optional: pythonloader.dll calls
-        # Py_Initialize(), and Python 2.7 exit()s the process if it cannot find
+        # Py_Initialize(), and CPython exit()s the process if it cannot find
         # its stdlib.  Anything that instantiates com.sun.star.loader.Python
         # (Tools > Macros, script-provider enumeration) would kill soffice.
         ":install_python_lib",
+        ":install_python_pyds",
         ":install_python_bin",
     ],
     visibility = ["//visibility:public"],
 )
 
-# ── Python standard library tree → program/python-core-2.7.18/lib/ ───────────
-# Strip the "Lib" prefix so "Lib/abc.py" → "python-core-2.7.18/lib/abc.py".
+# ── Python standard library tree → program/python-core-<ver>/lib/ ───────────
+# Strip the "Lib" prefix so "Lib/abc.py" → "python-core-<ver>/lib/abc.py".
 tree_install(
     name = "install_python_lib",
     src          = "@python//:python_lib",
     strip_prefix = "Lib",
-    dst          = "program/python-core-2.7.18/lib",
+    dst          = "program/python-core-%s/lib" % PYTHON_VERSION,
 )
 
-# ── CPython → python-core-2.7.18/bin/python.exe ─────────────────────────────
-# The real interpreter, run by the program/python.exe launcher.  The copy with
-# the VC90 manifest embedded (//main/pyuno:python_core_exe): @python's own is
-# linked /MANIFEST:NO and cannot resolve MSVCR90.dll.
+# ── CPython extension modules → program/python-core-<ver>/lib/*.pyd ─────────
+# _socket, select, pyexpat, unicodedata, ... -- the stdlib modules written in
+# C that are not built into python311.dll.  lib/ is on sys.path, which is
+# where trunk's d.lst delivers them too.
+tree_install(
+    name = "install_python_pyds",
+    src     = "@python//:python_pyds",
+    flatten = True,
+    dst     = "program/python-core-%s/lib" % PYTHON_VERSION,
+)
+
+# ── CPython → python-core-<ver>/bin/python.exe ──────────────────────────────
+# The real interpreter, run by the program/python.exe launcher.  It finds
+# python311.dll in program/, which the launcher puts first on PATH.
 tree_install(
     name = "install_python_bin",
-    src     = "//main/pyuno:python_core_exe",
+    src     = "@python//:python",
     flatten = True,
-    dst     = "program/python-core-2.7.18/bin",
+    dst     = "program/python-core-%s/bin" % PYTHON_VERSION,
 )
 
 # ── install_all: kept as an alias for :install ────────────────────────────────

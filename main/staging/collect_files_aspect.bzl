@@ -109,7 +109,7 @@ res_stage = rule(
 )
 
 # Extensions included in the flat install directory.
-# "pyd": Python extension modules.  Python 2.7's importer accepts ONLY this
+# "pyd": Python extension modules.  CPython's importer accepts ONLY this
 # suffix on Windows (Python/dynload_win.c), so pyuno ships as pyuno.pyd; without
 # it here the file is collected but silently dropped on the way to program/.
 # "bin"/"com": unopkg.bin, unopkg.com and crashrep.com, the launcher front ends

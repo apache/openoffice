@@ -1,0 +1,713 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+load(":build_defs.bzl", "python_deepfreeze", "python_freeze", "rename_file")
+
+# ── Python 3.11.15 — Windows x64, VS2019 toolset ─────────────────────────────
+#
+# The Bazel port of what trunk builds with PCbuild + MSBuild
+# (ext_libraries/modules/python/makefile.mk, COMEX 14 branch): pythoncore as
+# python311.dll, python.exe, and the extension modules trunk ships -- the
+# PYTHON_PROJECTS list there, minus _freeze_module, pythoncore, python and
+# pythonw.  Source lists are PCbuild's own .vcxproj item lists; the defines
+# are PCbuild's release ones.  Trunk's four patches are all for the Unix
+# build (setup.py, Modules/Setup, configure) and none applies here.
+#
+# Two things differ from PCbuild, and both are Bazel-only overlay files; no
+# file of the CPython tarball is modified:
+#
+#   * WINDOWS 7.  Python 3.9+ targets Windows 8.1 (Doc/using/windows.rst):
+#     PC/pyconfig.h asks for _WIN32_WINNT 0x0602, and pythoncore links
+#     pathcch.lib, whose API set does not exist on Windows 7 -- python311.dll
+#     would not even load there.  Our floor is Windows 7 SP1.  So:
+#       - the toolchain's _WIN32_WINNT=0x0601 stands (pyconfig.h only sets it
+#         #ifndef), with WINVER/NTDDI_VERSION matched to it below;
+#       - PC/aoo_win7_compat.h (force-included) supplies the few Windows 8
+#         constants CPython uses without depending on Windows 8;
+#       - PC/pathcch.h shadows the SDK header and PC/pathcch_win7.c supplies
+#         the three PathCch functions Python calls: the real ones from
+#         KernelBase.dll where they exist, documented-behaviour fallbacks on
+#         Windows 7.  pathcch.lib is not linked.
+#     dynload_win.c loads every .pyd with LOAD_LIBRARY_SEARCH_* flags, which
+#     Windows 7 SP1 accepts once KB2533623 is installed -- the same class of
+#     prerequisite as the UCRT update (KB2999226) the VS2019 runtime needs.
+#
+#   * NO HOST PYTHON.  PCbuild runs deepfreeze.py with a Python found on the
+#     machine.  Here it runs under _bootstrap_python, built from this tree,
+#     the way the Unix build does it -- see build_defs.bzl.
+#
+# Not built: _ctypes (libffi), _ssl/_hashlib (OpenSSL), _bz2, _lzma,
+# _sqlite3, _tkinter -- trunk's PCbuild flags switch all of them off too.
+
+# ── Compile settings ──────────────────────────────────────────────────────────
+
+_COPTS = [
+    # The toolchain defines MSC on every command line (it names the compiler
+    # for OpenOffice's sources).  CPython never tests it, and the SDK uses it
+    # as a member name -- ws2bth.h's RFCOMM_COMMAND has `RFCOMM_MSC_DATA MSC;`,
+    # which the define turns into a syntax error in socketmodule.c (C2143).
+    "/UMSC",
+    # Windows 8 constants CPython uses without depending on Windows 8; found
+    # through PC/, on every target's include path.  See the file.
+    "/FIaoo_win7_compat.h",
+    "/W3",
+    "/wd4005",  # macro redefinition (WIN32 et al. from the toolchain)
+    "/wd4996",  # deprecated CRT functions
+]
+
+# Every target.  PCbuild/pyproject.props defines WIN32 and _WIN32 (the
+# toolchain and cl.exe already do).  The Windows API level: see the header.
+# NTDDI_VERSION must agree with _WIN32_WINNT or sdkddkver.h refuses.
+_BASE_DEFINES = [
+    "WINVER=0x0601",
+    "NTDDI_VERSION=0x06010000",
+]
+
+# The interpreter core, in python311.dll (PCbuild/pythoncore.vcxproj).
+# USE_ZLIB_CRC32 is per-file there (binascii.c, its only reader).
+_CORE_DLL_DEFINES = _BASE_DEFINES + [
+    "_USRDLL",
+    "Py_BUILD_CORE",
+    "Py_BUILD_CORE_BUILTIN",
+    "Py_ENABLE_SHARED",
+    "_Py_HAVE_ZLIB",
+    "USE_ZLIB_CRC32",
+]
+
+# The same core linked statically into the build tools
+# (PCbuild/_freeze_module.vcxproj).
+_CORE_STATIC_DEFINES = _BASE_DEFINES + [
+    "Py_NO_ENABLE_SHARED",
+    "Py_BUILD_CORE",
+    "Py_BUILD_CORE_BUILTIN",
+    "_CONSOLE",
+    "_Py_HAVE_ZLIB",
+    "USE_ZLIB_CRC32",
+]
+
+# pathcch.lib deliberately absent -- see the header.  shlwapi for the
+# PathCombineW fallback in PC/pathcch_win7.c.
+_CORE_LINKOPTS = [
+    "version.lib",
+    "ws2_32.lib",
+    "bcrypt.lib",
+    "shlwapi.lib",
+    "advapi32.lib",
+    "shell32.lib",
+    "ole32.lib",
+    "oleaut32.lib",
+    "user32.lib",
+]
+
+# ── Headers ───────────────────────────────────────────────────────────────────
+# Every header, and every .c file some other .c file #includes (expat's
+# xmltok_impl.c, _sha3's kcp/*.c, _blake2's impl/*.c, and the four originals
+# the PC/aoo_*.c wrappers include).  Declared so Bazel tracks them.
+
+cc_library(
+    name = "core_headers",
+    hdrs = glob([
+        "Include/**/*.h",
+        "PC/*.h",
+        "Python/**/*.h",
+        "Objects/**/*.h",
+        "Parser/**/*.h",
+        "Modules/**/*.h",
+    ]),
+    textual_hdrs = glob([
+        "Modules/**/*.c",
+        "Python/**/*.c",
+        "PC/*.c",
+        "Programs/_bootstrap_python.c",
+    ]),
+    includes = [
+        "Include",
+        "Include/internal",
+        "PC",
+        "Python",
+    ],
+)
+
+# ── Interpreter core sources (from PCbuild's item lists) ─────────────────────
+# _CORE_MIN_SRCS: _freeze_module.vcxproj's core.  Python/sysmodule.c and
+# Python/dynload_win.c appear as their PC/aoo_*.c wrappers, which add the
+# string-literal defines PCbuild passes on the command line.
+# _CORE_REST_SRCS: what pythoncore.vcxproj adds -- the built-in extension
+# modules and PC/config.c, their init table.  zlibmodule.c links the
+# registry's @zlib instead of compiling zlib's sources in, as PCbuild does.
+_CORE_MIN_SRCS = [
+    "Modules/_io/_iomodule.c",
+    "Modules/_io/bufferedio.c",
+    "Modules/_io/bytesio.c",
+    "Modules/_io/fileio.c",
+    "Modules/_io/iobase.c",
+    "Modules/_io/stringio.c",
+    "Modules/_io/textio.c",
+    "Modules/_io/winconsoleio.c",
+    "Modules/_tracemalloc.c",
+    "Modules/atexitmodule.c",
+    "Modules/faulthandler.c",
+    "Modules/gcmodule.c",
+    "Modules/getbuildinfo.c",
+    "Modules/posixmodule.c",
+    "Modules/signalmodule.c",
+    "Objects/abstract.c",
+    "Objects/accu.c",
+    "Objects/boolobject.c",
+    "Objects/bytearrayobject.c",
+    "Objects/bytes_methods.c",
+    "Objects/bytesobject.c",
+    "Objects/call.c",
+    "Objects/capsule.c",
+    "Objects/cellobject.c",
+    "Objects/classobject.c",
+    "Objects/codeobject.c",
+    "Objects/complexobject.c",
+    "Objects/descrobject.c",
+    "Objects/dictobject.c",
+    "Objects/enumobject.c",
+    "Objects/exceptions.c",
+    "Objects/fileobject.c",
+    "Objects/floatobject.c",
+    "Objects/frameobject.c",
+    "Objects/funcobject.c",
+    "Objects/genericaliasobject.c",
+    "Objects/genobject.c",
+    "Objects/interpreteridobject.c",
+    "Objects/iterobject.c",
+    "Objects/listobject.c",
+    "Objects/longobject.c",
+    "Objects/memoryobject.c",
+    "Objects/methodobject.c",
+    "Objects/moduleobject.c",
+    "Objects/namespaceobject.c",
+    "Objects/object.c",
+    "Objects/obmalloc.c",
+    "Objects/odictobject.c",
+    "Objects/picklebufobject.c",
+    "Objects/rangeobject.c",
+    "Objects/setobject.c",
+    "Objects/sliceobject.c",
+    "Objects/structseq.c",
+    "Objects/tupleobject.c",
+    "Objects/typeobject.c",
+    "Objects/unicodectype.c",
+    "Objects/unicodeobject.c",
+    "Objects/unionobject.c",
+    "Objects/weakrefobject.c",
+    "PC/aoo_dynload_win.c",
+    "PC/aoo_sysmodule.c",
+    "PC/invalid_parameter_handler.c",
+    "PC/msvcrtmodule.c",
+    "PC/winreg.c",
+    "Parser/action_helpers.c",
+    "Parser/myreadline.c",
+    "Parser/parser.c",
+    "Parser/peg_api.c",
+    "Parser/pegen.c",
+    "Parser/pegen_errors.c",
+    "Parser/string_parser.c",
+    "Parser/token.c",
+    "Parser/tokenizer.c",
+    "Python/Python-ast.c",
+    "Python/Python-tokenize.c",
+    "Python/_warnings.c",
+    "Python/asdl.c",
+    "Python/ast.c",
+    "Python/ast_opt.c",
+    "Python/ast_unparse.c",
+    "Python/bltinmodule.c",
+    "Python/bootstrap_hash.c",
+    "Python/ceval.c",
+    "Python/codecs.c",
+    "Python/compile.c",
+    "Python/context.c",
+    "Python/dtoa.c",
+    "Python/dynamic_annotations.c",
+    "Python/errors.c",
+    "Python/fileutils.c",
+    "Python/formatter_unicode.c",
+    "Python/frame.c",
+    "Python/future.c",
+    "Python/getargs.c",
+    "Python/getcompiler.c",
+    "Python/getcopyright.c",
+    "Python/getopt.c",
+    "Python/getplatform.c",
+    "Python/getversion.c",
+    "Python/hamt.c",
+    "Python/hashtable.c",
+    "Python/import.c",
+    "Python/importdl.c",
+    "Python/initconfig.c",
+    "Python/marshal.c",
+    "Python/modsupport.c",
+    "Python/mysnprintf.c",
+    "Python/mystrtoul.c",
+    "Python/pathconfig.c",
+    "Python/preconfig.c",
+    "Python/pyarena.c",
+    "Python/pyctype.c",
+    "Python/pyfpe.c",
+    "Python/pyhash.c",
+    "Python/pylifecycle.c",
+    "Python/pymath.c",
+    "Python/pystate.c",
+    "Python/pystrcmp.c",
+    "Python/pystrhex.c",
+    "Python/pystrtod.c",
+    "Python/pythonrun.c",
+    "Python/pytime.c",
+    "Python/specialize.c",
+    "Python/structmember.c",
+    "Python/suggestions.c",
+    "Python/symtable.c",
+    "Python/thread.c",
+    "Python/traceback.c",
+]
+_CORE_REST_SRCS = [
+    "Modules/_abc.c",
+    "Modules/_bisectmodule.c",
+    "Modules/_blake2/blake2b_impl.c",
+    "Modules/_blake2/blake2module.c",
+    "Modules/_blake2/blake2s_impl.c",
+    "Modules/_codecsmodule.c",
+    "Modules/_collectionsmodule.c",
+    "Modules/_contextvarsmodule.c",
+    "Modules/_csv.c",
+    "Modules/_datetimemodule.c",
+    "Modules/_functoolsmodule.c",
+    "Modules/_heapqmodule.c",
+    "Modules/_json.c",
+    "Modules/_localemodule.c",
+    "Modules/_lsprof.c",
+    "Modules/_opcode.c",
+    "Modules/_operator.c",
+    "Modules/_pickle.c",
+    "Modules/_randommodule.c",
+    "Modules/_sha3/sha3module.c",
+    "Modules/_sre/sre.c",
+    "Modules/_stat.c",
+    "Modules/_statisticsmodule.c",
+    "Modules/_struct.c",
+    "Modules/_threadmodule.c",
+    "Modules/_typingmodule.c",
+    "Modules/_weakref.c",
+    "Modules/_winapi.c",
+    "Modules/_xxsubinterpretersmodule.c",
+    "Modules/arraymodule.c",
+    "Modules/audioop.c",
+    "Modules/binascii.c",
+    "Modules/cjkcodecs/_codecs_cn.c",
+    "Modules/cjkcodecs/_codecs_hk.c",
+    "Modules/cjkcodecs/_codecs_iso2022.c",
+    "Modules/cjkcodecs/_codecs_jp.c",
+    "Modules/cjkcodecs/_codecs_kr.c",
+    "Modules/cjkcodecs/_codecs_tw.c",
+    "Modules/cjkcodecs/multibytecodec.c",
+    "Modules/cmathmodule.c",
+    "Modules/errnomodule.c",
+    "Modules/itertoolsmodule.c",
+    "Modules/main.c",
+    "Modules/mathmodule.c",
+    "Modules/md5module.c",
+    "Modules/mmapmodule.c",
+    "Modules/rotatingtree.c",
+    "Modules/sha1module.c",
+    "Modules/sha256module.c",
+    "Modules/sha512module.c",
+    "Modules/symtablemodule.c",
+    "Modules/timemodule.c",
+    "Modules/xxsubtype.c",
+    "Modules/zlibmodule.c",
+    "PC/config.c",
+]
+
+# What the DLL adds on top: getpath (wrapped, see PC/aoo_getpath.c), the
+# frozen-module table, DllMain (wrapped, PC/aoo_dl_nt.c), and deepfreeze.c,
+# generated below.
+_CORE_DLL_ONLY_SRCS = [
+    "PC/aoo_dl_nt.c",
+    "PC/aoo_getpath.c",
+    "Python/frozen.c",
+]
+
+# ── Build tools (exec platform) ───────────────────────────────────────────────
+
+cc_library(
+    name = "core_min_static",
+    srcs = _CORE_MIN_SRCS + ["PC/pathcch_win7.c"],
+    copts = _COPTS,
+    local_defines = _CORE_STATIC_DEFINES,
+    deps = [":core_headers"],
+    alwayslink = True,
+)
+
+cc_library(
+    name = "core_rest_static",
+    srcs = _CORE_REST_SRCS,
+    copts = _COPTS,
+    local_defines = _CORE_STATIC_DEFINES,
+    deps = [
+        ":core_headers",
+        "@zlib",
+    ],
+    alwayslink = True,
+)
+
+cc_binary(
+    name = "_freeze_module",
+    srcs = [
+        "Modules/getpath_noop.c",
+        "PC/config_minimal.c",
+        "Programs/_freeze_module.c",
+    ],
+    copts = _COPTS,
+    local_defines = _CORE_STATIC_DEFINES,
+    deps = [
+        ":core_headers",
+        ":core_min_static",
+    ],
+    linkopts = _CORE_LINKOPTS + ["/SUBSYSTEM:CONSOLE"],
+)
+
+# PCbuild/_freeze_module.vcxproj, "BEGIN frozen modules": module name, source.
+_FROZEN = [
+    ("importlib._bootstrap", "Lib/importlib/_bootstrap.py"),
+    ("importlib._bootstrap_external", "Lib/importlib/_bootstrap_external.py"),
+    ("zipimport", "Lib/zipimport.py"),
+    ("abc", "Lib/abc.py"),
+    ("codecs", "Lib/codecs.py"),
+    ("io", "Lib/io.py"),
+    ("_collections_abc", "Lib/_collections_abc.py"),
+    ("_sitebuiltins", "Lib/_sitebuiltins.py"),
+    ("genericpath", "Lib/genericpath.py"),
+    ("ntpath", "Lib/ntpath.py"),
+    ("posixpath", "Lib/posixpath.py"),
+    ("os", "Lib/os.py"),
+    ("site", "Lib/site.py"),
+    ("stat", "Lib/stat.py"),
+    ("importlib.util", "Lib/importlib/util.py"),
+    ("importlib.machinery", "Lib/importlib/machinery.py"),
+    ("runpy", "Lib/runpy.py"),
+    ("__hello__", "Lib/__hello__.py"),
+    ("__phello__", "Lib/__phello__/__init__.py"),
+    ("__phello__.ham", "Lib/__phello__/ham/__init__.py"),
+    ("__phello__.ham.eggs", "Lib/__phello__/ham/eggs.py"),
+    ("__phello__.spam", "Lib/__phello__/spam.py"),
+    ("frozen_only", "Tools/freeze/flag.py"),
+]
+
+python_freeze(
+    name = "frozen_modules",
+    srcs = [src for _, src in _FROZEN],
+    module_names = [name for name, _ in _FROZEN],
+    tool = ":_freeze_module",
+)
+
+# getpath.py is frozen on its own, outside deepfreeze (as in PCbuild).
+python_freeze(
+    name = "frozen_getpath",
+    srcs = ["Modules/getpath.py"],
+    module_names = ["getpath"],
+    tool = ":_freeze_module",
+)
+
+# The generated headers live in the output tree under Python/frozen_modules/.
+# "." serves Programs/_bootstrap_python.c's
+# "Python/frozen_modules/importlib._bootstrap.h"; "Python" serves
+# Modules/getpath.c's "../Python/frozen_modules/getpath.h", which reaches the
+# output tree through that include directory once the source directories
+# next to getpath.c and its PC/aoo_getpath.c wrapper have come up empty.
+cc_library(
+    name = "frozen_headers",
+    hdrs = [
+        ":frozen_getpath",
+        ":frozen_modules",
+    ],
+    includes = [
+        ".",
+        "Python",
+    ],
+)
+
+cc_binary(
+    name = "_bootstrap_python",
+    # PC/aoo_dllhmodule_static.c: PyWin_DLLhModule, which PC/dl_nt.c defines
+    # only for the DLL.  _freeze_module gets it from PC/config_minimal.c.
+    # PC/aoo_bootstrap_python.c wraps Programs/_bootstrap_python.c so that it
+    # honours PYTHONHOME (see that file).
+    srcs = [
+        "PC/aoo_bootstrap_python.c",
+        "PC/aoo_dllhmodule_static.c",
+        "PC/aoo_getpath.c",
+    ],
+    copts = _COPTS,
+    local_defines = _CORE_STATIC_DEFINES,
+    deps = [
+        ":core_headers",
+        ":core_min_static",
+        ":core_rest_static",
+        ":frozen_headers",
+    ],
+    linkopts = _CORE_LINKOPTS + ["/SUBSYSTEM:CONSOLE"],
+)
+
+python_deepfreeze(
+    name = "deepfreeze",
+    frozen = [":frozen_modules"],
+    module_names = [name for name, _ in _FROZEN],
+    script = "Tools/scripts/deepfreeze.py",
+    os_py = "Lib/os.py",
+    read_inputs = glob([
+        "Lib/**/*.py",
+        "Tools/scripts/*.py",
+        # generate_global_objects.py scans these for _Py_ID() uses.
+        "Modules/**/*.c",
+        "Modules/**/*.h",
+        "Objects/**/*.c",
+        "Objects/**/*.h",
+        "Parser/**/*.c",
+        "Parser/**/*.h",
+        "PC/**/*.c",
+        "PC/**/*.h",
+        "Programs/**/*.c",
+        "Programs/**/*.h",
+        "Python/**/*.c",
+        "Python/**/*.h",
+        "Include/**/*.h",
+    ]),
+    tool = ":_bootstrap_python",
+)
+
+# ── python311.dll ─────────────────────────────────────────────────────────────
+# Exports come from __declspec(dllexport): Py_BUILD_CORE + Py_ENABLE_SHARED
+# make PyAPI_FUNC/PyAPI_DATA dllexport (Include/pyport.h).  No .def file.
+cc_binary(
+    name = "python311",
+    srcs = _CORE_MIN_SRCS + _CORE_REST_SRCS + _CORE_DLL_ONLY_SRCS + [
+        "PC/pathcch_win7.c",
+        ":deepfreeze",
+    ],
+    copts = _COPTS,
+    local_defines = _CORE_DLL_DEFINES,
+    deps = [
+        ":core_headers",
+        ":frozen_headers",
+        "@zlib",
+    ],
+    linkshared = True,
+    linkopts = _CORE_LINKOPTS,
+    visibility = ["//visibility:public"],
+)
+
+# Consumers put this in additional_linker_inputs and name it in linkopts with
+# $(execpath @python//:python311_implib).  PC/pyconfig.h also asks for
+# "python311.lib" by #pragma comment(lib) in every translation unit outside
+# the core; no file of that name exists (Bazel's is python311.if.lib), so
+# consumers add /NODEFAULTLIB:python311.lib, or the link fails with LNK1104.
+filegroup(
+    name = "python311_implib",
+    srcs = [":python311"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── Headers for consumers (pyuno) ─────────────────────────────────────────────
+# Include/ for Python.h, PC/ for pyconfig.h.  PC/ also holds the overlay
+# pathcch.h; nothing outside this module includes <pathcch.h>.
+cc_library(
+    name = "python_headers",
+    hdrs = glob(["Include/**/*.h"]) + ["PC/pyconfig.h"],
+    includes = [
+        "Include",
+        "PC",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── python.exe ────────────────────────────────────────────────────────────────
+# PCbuild/python.vcxproj: Programs/python.c, defining Py_BUILD_CORE and
+# _CONSOLE.  Staged as program/python-core-<ver>/bin/python.exe and run by the
+# office's own launcher (main/pyuno zipcore).
+cc_binary(
+    name = "python",
+    srcs = ["Programs/python.c"],
+    copts = _COPTS,
+    local_defines = _BASE_DEFINES + [
+        "Py_BUILD_CORE",
+        "_CONSOLE",
+    ],
+    deps = [":core_headers"],
+    additional_linker_inputs = [":python311_implib"],
+    linkopts = [
+        "$(execpath :python311_implib)",
+        "/SUBSYSTEM:CONSOLE",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── Extension modules (.pyd) ──────────────────────────────────────────────────
+# One per PCbuild project trunk builds; sources, defines and libraries are the
+# project's own.  Each links python311.dll and is renamed to .pyd.
+
+# Each project lists its libraries before %(AdditionalDependencies), i.e. on
+# top of MSBuild's default Windows libraries, which a Bazel link does not get
+# (winsound's MessageBeep is user32).  So every module gets that default set.
+# An import library contributes only what is referenced, so the unused ones
+# add no imports.
+_MSBUILD_DEFAULT_LIBS = [
+    "kernel32.lib",
+    "user32.lib",
+    "gdi32.lib",
+    "winspool.lib",
+    "comdlg32.lib",
+    "advapi32.lib",
+    "shell32.lib",
+    "ole32.lib",
+    "oleaut32.lib",
+    "uuid.lib",
+    "odbc32.lib",
+    "odbccp32.lib",
+]
+
+_PYD_LINKOPTS = [
+    "$(execpath :python311_implib)",
+    "/NODEFAULTLIB:python311.lib",
+] + _MSBUILD_DEFAULT_LIBS
+
+_EXPAT_SRCS = [
+    "Modules/expat/xmlparse.c",
+    "Modules/expat/xmlrole.c",
+    "Modules/expat/xmltok.c",
+]
+
+# name: (srcs, defines, libraries[, extra include directories])
+_PYDS = {
+    "_asyncio": (["Modules/_asynciomodule.c"], [], []),
+    "_decimal": (
+        # PCbuild/_decimal.vcxproj's list: not bench*.c (programs) nor
+        # mpsignal.c.
+        ["Modules/_decimal/_decimal.c"] + [
+            "Modules/_decimal/libmpdec/%s.c" % f
+            for f in [
+                "basearith",
+                "constants",
+                "context",
+                "convolute",
+                "crt",
+                "difradix2",
+                "fnt",
+                "fourstep",
+                "io",
+                "mpalloc",
+                "mpdecimal",
+                "numbertheory",
+                "sixstep",
+                "transpose",
+            ]
+        ],
+        # CONFIG_64 + ANSI rather than PCbuild's CONFIG_64 + MASM: ANSI is the
+        # portable-C division path, which spares the build an ml64 step for
+        # libmpdec/vcdiv64.asm at a small cost to decimal division speed.
+        ["_CRT_SECURE_NO_WARNINGS", "CONFIG_64", "ANSI"],
+        [],
+        [":libmpdec_headers"],
+    ),
+    "_elementtree": (
+        ["Modules/_elementtree.c"] + _EXPAT_SRCS,
+        ["_CRT_SECURE_NO_WARNINGS", "XML_STATIC"],
+        [],
+        [":expat_headers"],
+    ),
+    "_msi": (["PC/_msi.c"], [], ["cabinet.lib", "msi.lib", "rpcrt4.lib"]),
+    "_multiprocessing": (
+        [
+            "Modules/_multiprocessing/multiprocessing.c",
+            "Modules/_multiprocessing/semaphore.c",
+        ],
+        [],
+        ["ws2_32.lib"],
+    ),
+    "_overlapped": (["Modules/overlapped.c"], [], ["ws2_32.lib"]),
+    "_queue": (["Modules/_queuemodule.c"], [], []),
+    "_socket": (["Modules/socketmodule.c"], [], ["ws2_32.lib", "iphlpapi.lib"]),
+    "_uuid": (["Modules/_uuidmodule.c"], [], ["rpcrt4.lib"]),
+    "_zoneinfo": (["Modules/_zoneinfo.c"], [], []),
+    "pyexpat": (
+        ["Modules/pyexpat.c"] + _EXPAT_SRCS,
+        ["_CRT_SECURE_NO_WARNINGS", "PYEXPAT_EXPORTS", "XML_STATIC"],
+        [],
+        [":expat_headers"],
+    ),
+    "select": (["Modules/selectmodule.c"], [], ["ws2_32.lib"]),
+    "unicodedata": (["Modules/unicodedata.c"], [], []),
+    "winsound": (["PC/winsound.c"], [], ["winmm.lib"]),
+}
+
+[
+    cc_binary(
+        name = name,
+        srcs = spec[0],
+        copts = _COPTS,
+        local_defines = _BASE_DEFINES + spec[1],
+        deps = [":core_headers"] + (spec[3] if len(spec) > 3 else []),
+        additional_linker_inputs = [":python311_implib"],
+        linkshared = True,
+        linkopts = _PYD_LINKOPTS + spec[2],
+    )
+    for name, spec in _PYDS.items()
+]
+
+# The bundled expat and libmpdec directories, which PCbuild puts on the include
+# path of the projects that use them and of no other.  Not of every extension
+# module: libmpdec has an io.h, which then shadows the CRT's <io.h> that
+# PC/pyconfig.h includes ("define CONFIG_64 or CONFIG_32" from _asyncio).
+cc_library(
+    name = "libmpdec_headers",
+    includes = [
+        "Modules/_decimal",
+        "Modules/_decimal/libmpdec",
+    ],
+    deps = [":core_headers"],
+)
+
+cc_library(
+    name = "expat_headers",
+    includes = ["Modules/expat"],
+    deps = [":core_headers"],
+)
+
+[
+    rename_file(
+        name = name + "_pyd",
+        src = ":" + name,
+        out = "pyd/%s.pyd" % name,
+    )
+    for name in _PYDS
+]
+
+# Staged flat into program/python-core-<ver>/lib, which is on sys.path
+# (trunk's d.lst delivers them to the same lib/python directory).
+filegroup(
+    name = "python_pyds",
+    srcs = [":%s_pyd" % name for name in _PYDS],
+    visibility = ["//visibility:public"],
+)
+
+# ── Standard library ──────────────────────────────────────────────────────────
+# Lib/ as is; installed under program/python-core-<ver>/lib.  Left out: the
+# test suite, and the IDLE/turtle/tkinter GUI packages, which need _tkinter
+# (not built) and are not part of an office runtime.
+filegroup(
+    name = "python_lib",
+    srcs = glob(
+        ["Lib/**"],
+        exclude = [
+            "Lib/test/**",
+            "Lib/idlelib/**",
+            "Lib/tkinter/**",
+            "Lib/turtledemo/**",
+            "Lib/**/__pycache__/**",
+        ],
+    ),
+    visibility = ["//visibility:public"],
+)

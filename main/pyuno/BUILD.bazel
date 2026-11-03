@@ -2,6 +2,7 @@ package(default_visibility = ["//visibility:public"])
 
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
 load("//build/rules:copy_file.bzl", "copy_file")
+load(":python_version.bzl", "PYTHON_VERSION")
 
 _DEFINES = [
     "WNT", "GUI", "WIN32",
@@ -18,9 +19,10 @@ _COPTS = [
     "/Imain/pyuno/inc",
     "/Imain/pyuno/source/module",
 ] + select({
-    # In dbg builds /MDd causes _DEBUG to be defined; Python headers on Windows
-    # check _DEBUG and expect python27_d.lib when set, but we always link the
-    # release library — undefine to keep the CRT consistent.
+    # In dbg builds /MDd causes _DEBUG to be defined.  PC/pyconfig.h turns
+    # _DEBUG into Py_DEBUG -- a different object layout -- and asks for
+    # python311_d.lib; we always link the release python311.dll, so undefine
+    # it to keep the ABI and the CRT consistent.
     "//build:dbg_build": ["/U_DEBUG", "/D_HAS_ITERATOR_DEBUGGING=0", "/D_SECURE_SCL=0"],
     "//conditions:default": [],
 })
@@ -39,14 +41,17 @@ _LINK_DEPS = [
     "//main/sal:sal_implib",
     "//main/cppu:cppu3_implib",
     "//main/cppuhelper:cppuhelper_implib",
-    "@python//:python27_implib",
+    "@python//:python311_implib",
 ]
 
 _LINKOPTS = [
     "$(execpath //main/sal:sal_implib)",
     "$(execpath //main/cppu:cppu3_implib)",
     "$(execpath //main/cppuhelper:cppuhelper_implib)",
-    "$(execpath @python//:python27_implib)",
+    "$(execpath @python//:python311_implib)",
+    # PC/pyconfig.h names python311.lib by #pragma comment(lib); the import
+    # library is python311.if.lib, passed above.  Without this: LNK1104.
+    "/NODEFAULTLIB:python311.lib",
     "/MANIFEST:NO",
 ]
 
@@ -66,8 +71,8 @@ cc_library(
 
 # ── pyuno.pyd ─────────────────────────────────────────────────────
 # Core Python-UNO bridge.  Windows Python extension modules MUST use the .pyd
-# extension — Python 2.7's _PyImport_DynLoadFiletab (Python/dynload_win.c) lists
-# only {".pyd"} ({"_d.pyd"} under _DEBUG), NOT ".dll".  uno.py starts with
+# extension — CPython's _PyImport_DynLoadFiletab (Python/dynload_win.c) lists
+# only ".pyd" variants ({"_d.pyd"} under _DEBUG), NOT ".dll".  uno.py starts with
 # `import pyuno`, so with a pyuno.dll that import raises ImportError, `import
 # pythonloader` fails with it, and ScriptProviderForPython can never be
 # instantiated (macro dialog shows the Python node from pyuno.xcd but lists
@@ -79,7 +84,7 @@ cc_library(
 # util/pyuno.def carries `LIBRARY pyuno.pyd` so consumers' import tables name
 # the .pyd.  Only ONE of the two may be staged — see util/pyuno.def for why.
 #
-# Exports: initpyuno (Python 2.x), Runtime, PyRef, PyThreadAttach,
+# Exports: PyInit_pyuno, Runtime, PyRef, PyThreadAttach,
 #          PyThreadDetach via PY_DLLEXPORT = SAL_DLLPUBLIC_EXPORT.
 # pyuno_dlopenwrapper.c is *nix-only (uses dlopen); omitted on Windows.
 cc_binary(
@@ -159,23 +164,22 @@ exports_files(glob(["**/*.component"]))
 
 # ── program/python.exe — the Python launcher (zipcore/python.cxx) ────────────
 # What a user runs to script the office from an external Python.  It is NOT
-# Python itself: it sets PATH (program/ first, for python27.dll and the UNO
+# Python itself: it sets PATH (program/ first, for python311.dll and the UNO
 # DLLs), PYTHONPATH (program/ for uno.py + pyuno.pyd, then the core lib dirs),
 # PYTHONHOME, UNO_PATH and URE_BOOTSTRAP (program/fundamental.ini), all relative
 # to its own location, then runs python-core-<ver>/bin/python.exe with the same
 # arguments and returns its exit code.  Upstream: zipcore/makefile.mk APP1.
 #
-# Before this, program/ held the raw CPython exe from @python, which (a) set
-# none of that environment and (b) had no CRT manifest, so it could not even
-# start (0xC0000135, MSVCR90.dll unresolvable).  This one embeds the VC90
-# manifest at RT_MANIFEST id 1 like every other /MD exe here.
+# No embedded manifest: built with the VS2019 toolset it links the UCRT and
+# vcruntime140, which load by ordinary DLL search.  The VC90 application
+# manifest it used to carry declared a side-by-side dependency on a CRT this
+# binary no longer uses.
 genrule(
     name = "pyversion_hxx",
     srcs = ["zipcore/pyversion.inc"],
     outs = ["zipcore/pyversion.hxx"],
-    # zipcore/makefile.mk: sed s/@/$(PYVERSION)/g.  Keep in step with the
-    # python-core-<ver> directory name in //main/staging.
-    cmd = "sed 's/@/2.7.18/g' < $< > $@",
+    # zipcore/makefile.mk: sed s/@/$(PYVERSION)/g.
+    cmd = "sed 's/@/%s/g' < $< > $@" % PYTHON_VERSION,
 )
 
 cc_library(
@@ -183,8 +187,6 @@ cc_library(
     hdrs = [":pyversion_hxx"],
     includes = ["zipcore"],
 )
-
-_APP_MANIFEST_RES = "//main/external/msvcp90:vc90_app_manifest_res"
 
 cc_binary(
     name = "python",
@@ -197,32 +199,9 @@ cc_binary(
         "//main/tools:tools_headers",
         "//main/sal:sal_headers",
     ],
-    additional_linker_inputs = [_APP_MANIFEST_RES],
     linkopts = [
-        "$(execpath %s)" % _APP_MANIFEST_RES,
         "user32.lib",  # wsprintfW
         "/SUBSYSTEM:CONSOLE",
         "/MANIFEST:NO",
     ],
-)
-
-# ── python-core-<ver>/bin/python.exe — CPython, with a CRT manifest ──────────
-# @python links its python.exe /MANIFEST:NO and embeds none, so as staged it
-# cannot resolve MSVCR90.dll.  The external module cannot name a main-repo
-# label, so the VC90 application manifest is embedded here, into a copy, with
-# the SDK's mt.exe (resource id 1, the EXE slot).
-genrule(
-    name = "python_core_exe",
-    srcs = [
-        "@python//:python",
-        "//main/external/msvcp90:vc90_app_manifest",
-    ],
-    outs = ["python-core/python.exe"],
-    cmd_bat = (
-        "copy /y \"$(location @python//:python)\" \"$(OUTS)\" > nul&&" +
-        "set \"_MT=C:\\Program Files\\Microsoft SDKs\\Windows\\v7.0\\Bin\\mt.exe\"&&" +
-        "\"!_MT!\" -nologo" +
-        " -manifest \"$(location //main/external/msvcp90:vc90_app_manifest)\"" +
-        " \"-outputresource:$(OUTS);#1\""
-    ),
 )

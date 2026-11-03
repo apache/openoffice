@@ -1,0 +1,21 @@
+{
+    "url": "https://www.python.org/ftp/python/3.11.15/Python-3.11.15.tgz",
+    "integrity": "sha256-9N4bEL1scMu5+hzXH8UDi4MnR6dO5Z1ZnGnOSEbe+1A=",
+    "strip_prefix": "Python-3.11.15",
+    "overlay": {
+        "MODULE.bazel": "sha256-GmRHcqfSGfnvbDQ8ZND4GafXxApqNJ6m8Lu3lC2HiYs=",
+        "BUILD.bazel": "sha256-GnyXIhlI0tP/xYunBLE557PAu7frqZ+aEgmvmG2MV8E=",
+        "build_defs.bzl": "sha256-LSJJpbnLjFrXwpZLd2gbtIiiz0jzJp36QRfesAVjWQk=",
+        "PC/pathcch.h": "sha256-hRNUOP10BdN9gLrhVdBXbXEDfW+BPae+NEUCc7Z1BPg=",
+        "PC/pathcch_win7.c": "sha256-GAdo3s6c0b2IMO7b9x4G/VB2FW8J9nwsWkQGFIb5h/U=",
+        "PC/aoo_getpath.c": "sha256-3go10TLvtkjBWxFnPKSZJSrVydoveOkaeaBa0p/BuNg=",
+        "PC/aoo_sysmodule.c": "sha256-A0wOnr35SPsJjFCicouAc3fky1T+IsBS2+Q+49TtMV8=",
+        "PC/aoo_dynload_win.c": "sha256-PxvIJJKXMg2nBSZmFa/3avHLfE9YlkM3QEmpGr/b9w4=",
+        "PC/aoo_dl_nt.c": "sha256-vABydFZQa3ew+jSsLQdMHsz2JAOfPv6XXwfx4q4AEuo=",
+        "PC/aoo_win7_compat.h": "sha256-Pc/UKltFrVnLU24GU07ZidnpV2Ea+d1e/VlLiw9iTF8=",
+        "PC/aoo_dllhmodule_static.c": "sha256-WNedtBvszFusFg6XTYmYxOp+QQ0o7rua/ps7haGNAaA=",
+        "PC/aoo_bootstrap_python.c": "sha256-SkzkJFtVEiR9JBLvd75EpUvjIa9kRRulVtNet3RAbr8="
+    },
+    "patches": {},
+    "patch_strip": 0
+}
