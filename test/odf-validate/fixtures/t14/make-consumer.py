@@ -123,9 +123,9 @@ CASES = [
                  + '<table:database-ranges><table:database-range table:name="DB1" table:target-range-address="Sheet1.A1:Sheet1.A3">'
                    '<table:filter><table:filter-and>${f}</table:filter-and></table:filter></table:database-range></table:database-ranges>',
          fields={"f": '<table:filter-condition table:field-number="0" table:operator="=" table:data-type="background-color" table:value="#ff0000"/>'
-                      '<table:filter-condition table:field-number="0" table:operator="=" table:data-type="text-color" table:value="#0000ff"/>'},
-         base={"f": '<table:filter-condition table:field-number="0" table:operator="=" table:value="a"/>'
-                    '<table:filter-condition table:field-number="0" table:operator="!=" table:value="b"/>'}),
+                      '<table:filter-condition table:field-number="0" table:operator="=" table:data-type="text-color" table:value="#0000ff"/>'
+                      '<table:filter-condition table:field-number="0" table:operator="!=" table:value="b"/>'},
+         base={"f": '<table:filter-condition table:field-number="0" table:operator="!=" table:value="b"/>'}),
     dict(name="chart-major-origin", ext="odc", construct='chart:major-origin and chart:minor-logarithmic on style:chart-properties',
          auto='<style:style style:name="ch1" style:family="chart"><style:chart-properties ${a}/></style:style>',
          content='<chart:chart chart:class="chart:bar"><chart:plot-area><chart:axis chart:dimension="y" chart:name="primary-y" chart:style-name="ch1"/></chart:plot-area></chart:chart>',
