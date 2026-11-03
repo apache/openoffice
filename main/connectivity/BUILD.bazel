@@ -743,14 +743,14 @@ exports_files(glob(["**/*.component"]))
 # Exported for every driver whose source is here; which ones are actually PACKED
 # is postprocess's decision, and it packs only those with a built DLL.
 exports_files([
-    "source/drivers/adabas/adabas.xcu",
-    "source/drivers/ado/ado.xcu",
-    "source/drivers/calc/calc.xcu",
-    "source/drivers/dbase/dbase.xcu",
-    "source/drivers/flat/flat.xcu",
-    "source/drivers/hsqldb/hsqldb.xcu",
-    "source/drivers/jdbc/jdbc.xcu",
-    "source/drivers/mysql/mysql.xcu",
-    "source/drivers/odbc/odbc.xcu",
+    "registry/org/openoffice/Office/DataAccess/adabas.xcu",
+    "registry/org/openoffice/Office/DataAccess/ado.xcu",
+    "registry/org/openoffice/Office/DataAccess/calc.xcu",
+    "registry/org/openoffice/Office/DataAccess/dbase.xcu",
+    "registry/org/openoffice/Office/DataAccess/flat.xcu",
+    "registry/org/openoffice/Office/DataAccess/hsqldb.xcu",
+    "registry/org/openoffice/Office/DataAccess/jdbc.xcu",
+    "registry/org/openoffice/Office/DataAccess/mysql.xcu",
+    "registry/org/openoffice/Office/DataAccess/odbc.xcu",
 ])
 

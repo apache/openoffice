@@ -679,7 +679,7 @@ filegroup(
 #   XCU-raw : static data files  from //main/officecfg:registry/data/...
 #   XCU-mod : module extractions from //main/officecfg:spool_module/...
 #   XCU-fcfg: FCFGMerge outputs  from //main/filter/source/config/fragments:...
-#   XCU-da  : DataAccess XCU     from //main/connectivity:source/drivers/...
+#   XCU-da  : DataAccess XCU     from //main/connectivity:registry/org/openoffice/Office/DataAccess/...
 #   XCU-ext : static from other modules (sdext, extensions, lingucomponent)
 
 _XSLT = "//main/solenv/bin:packregistry.xslt"
@@ -714,7 +714,7 @@ pack_registry(
     xcu  = [
         oc_xcu("Office/UI/CalcCommands.xcu"),
         oc_xcu("Office/UI/CalcWindowState.xcu"),
-        "//main/connectivity:source/drivers/calc/calc.xcu",
+        "//main/connectivity:registry/org/openoffice/Office/DataAccess/calc.xcu",
         fcfg("fcfg_calc_types"),
         fcfg("fcfg_calc_filters"),
         oc_mod("Office/Common.xcu",    "calc"),
@@ -1011,12 +1011,12 @@ _MAIN_XCU = [
     # registrations above: dbase, flat, calc, hsqldb, jdbc,
     # odbc, mysql.  (jdbc.dll was registered from the start but its XCU was
     # missed, so the generic JDBC type never showed in the wizard.)
-    "//main/connectivity:source/drivers/dbase/dbase.xcu",
-    "//main/connectivity:source/drivers/flat/flat.xcu",
-    "//main/connectivity:source/drivers/hsqldb/hsqldb.xcu",
-    "//main/connectivity:source/drivers/jdbc/jdbc.xcu",
-    "//main/connectivity:source/drivers/mysql/mysql.xcu",
-    "//main/connectivity:source/drivers/odbc/odbc.xcu",
+    "//main/connectivity:registry/org/openoffice/Office/DataAccess/dbase.xcu",
+    "//main/connectivity:registry/org/openoffice/Office/DataAccess/flat.xcu",
+    "//main/connectivity:registry/org/openoffice/Office/DataAccess/hsqldb.xcu",
+    "//main/connectivity:registry/org/openoffice/Office/DataAccess/jdbc.xcu",
+    "//main/connectivity:registry/org/openoffice/Office/DataAccess/mysql.xcu",
+    "//main/connectivity:registry/org/openoffice/Office/DataAccess/odbc.xcu",
     # FCFGMerge spool
     fcfg("fcfg_base_types"),
     fcfg("fcfg_base_filters"),
