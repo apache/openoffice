@@ -275,7 +275,7 @@ class Gate:
         val = json.load(open(os.path.join(md, "val.json")))
         r["errors"] = {v: len(e) for v, e in val["errors"].items()}
         r["packages"] = len(val["packages"])
-        for v in ("12", "14", "12x", "13", "13x"):
+        for v in ("12", "14", "12x", "13", "13x", "14x"):
             kp = os.path.join(md, "kinds%s.json" % ("" if v == "12" else v))
             run(PY + [os.path.join(D, "report.py"), os.path.join(md, "val.json"), kp, v], os.path.join(md, "report%s.log" % v))
             r["kinds" + v] = len(json.load(open(kp)))

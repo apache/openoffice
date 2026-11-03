@@ -21,8 +21,8 @@
 #**************************************************************
 
 # Black-box corpus builder: converts the same inputs with another office suite's headless binary once per output
-# ODF version (1.2, 1.2 extended, 1.3, 1.3 extended), so an import smoke test can load each 1.3 file next to its
-# 1.2 twin. Only observes output files; never reads that suite's source or installed configuration.
+# ODF version (1.2, 1.2 extended, 1.3, 1.3 extended, 1.4, 1.4 extended), so an import smoke test can load each 1.3 or 1.4
+# file next to its 1.2 twin. Only observes output files; never reads that suite's source or installed configuration.
 #
 #   python3 -I make-foreign-corpus.py <soffice binary> [--inputs LIST] [--root DIR] [--modes v12,v13,...]
 #   python3 -I make-foreign-corpus.py <soffice binary> --probe WORKDIR [--probe-range 0-20]   (value table only)
@@ -43,6 +43,8 @@ DEFAULT_VERSION_V12 = 4
 DEFAULT_VERSION_V12EXT = 8
 DEFAULT_VERSION_V13 = 10
 DEFAULT_VERSION_V13EXT = 11
+DEFAULT_VERSION_V14 = 12
+DEFAULT_VERSION_V14EXT = 13
 
 # mode -> (DefaultVersion value, expected office:version, whether extension namespaces are expected)
 MODES = {
@@ -50,6 +52,8 @@ MODES = {
     "v12ext": (DEFAULT_VERSION_V12EXT, "1.2", True),
     "v13": (DEFAULT_VERSION_V13, "1.3", False),
     "v13ext": (DEFAULT_VERSION_V13EXT, "1.3", True),
+    "v14": (DEFAULT_VERSION_V14, "1.4", False),
+    "v14ext": (DEFAULT_VERSION_V14EXT, "1.4", True),
 }
 OUT_EXT = {"odt": "odt", "sxw": "odt", "doc": "odt", "docx": "odt", "rtf": "odt",
            "ods": "ods", "sxc": "ods", "xls": "ods", "xlsx": "ods",
