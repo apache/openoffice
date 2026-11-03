@@ -15,16 +15,11 @@ is no longer true.
     refresh_index.py --graph      # just uno.sqlite
     refresh_index.py --index      # just compile_commands.json
 
-THE TWO HALVES USE DIFFERENT CONFIGURATIONS ON PURPOSE:
-
-  the graph is built in the DEFAULT configuration, because staging facts are
-  per-configuration and winXP-x86 is the product baseline -- the graph should
-  describe what actually ships;
-
-  the compile database is built with --config=win7-x64, because indexing
-  resolves the system headers of whichever toolchain the config selects, and a
-  modern clang parses the VS2019/UCRT headers far more cleanly than the VS2008
-  ones.  The flags that matter for correctness are identical either way.
+BOTH HALVES USE win7-x64: the graph is built in the DEFAULT configuration,
+because staging facts are per-configuration and the graph should describe what
+actually ships; the compile database names --config=win7-x64 explicitly.  Since
+the VS2008 toolchains were retired (2026-11-01) these are the same
+configuration; until then the graph described the winXP-x86 baseline.
 """
 
 import argparse

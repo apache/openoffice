@@ -1,38 +1,14 @@
-# Target platforms for the dual-arch Windows build.
-# Selected via --platforms (wired to --config=winXP-x86 / --config=winXP-x64 in
-# .bazelrc); the target cpu constraint picks which //build/toolchain cc_toolchain
-# resolves.  The "winXP" name records the intent — VC9 (VS2008) + SDK v7.0 is the
-# XP-era toolchain we stay on for XP compatibility — it is a label only and does
-# NOT set _WIN32_WINNT (currently 0x0500 on x86 / 0x0600 on the x64 bridge).
+# Target platform for the Windows build.
+# Selected via --platforms (wired to --config=win7-x64, the default, in .bazelrc);
+# the cpu and //build/constraints:win_version constraints pick which
+# //build/toolchain cc_toolchain resolves.
 #
-#   winXP-x86 → @platforms//cpu:x86_32 → aoo_msvc_vs2008_x86 (default build)
-#   winXP-x64 → @platforms//cpu:x86_64 → aoo_msvc_vs2008_x64 (Win64 build)
+#   win7-x64 → @platforms//cpu:x86_64 + :win7 → aoo_msvc_vs2019_x64
 #
-# The exec (host) platform stays Bazel's auto-detected x64 Windows host for both.
+# The winXP-x86 / winXP-x64 platforms (VC9 / VS2008 + SDK v7.0) were retired
+# 2026-11-01.  A further target is a new platform here, plus a new constraint
+# value when it is a different Windows floor.
 
-platform(
-    name = "winXP-x86",
-    constraint_values = [
-        "@platforms//os:windows",
-        "@platforms//cpu:x86_32",
-        "//build/constraints:winxp",
-    ],
-    visibility = ["//visibility:public"],
-)
-
-platform(
-    name = "winXP-x64",
-    constraint_values = [
-        "@platforms//os:windows",
-        "@platforms//cpu:x86_64",
-        "//build/constraints:winxp",
-    ],
-    visibility = ["//visibility:public"],
-)
-
-# The modern-toolchain target: identical cpu+os to winXP-x64, distinguished ONLY
-# by the win_version constraint — which is exactly what makes the two toolchains
-# resolvable apart.  //build/toolchain:aoo_msvc_vs2019_x64_def matches this one.
 platform(
     name = "win7-x64",
     constraint_values = [

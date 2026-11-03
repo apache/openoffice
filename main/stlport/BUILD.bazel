@@ -23,13 +23,14 @@ load("@rules_cc//cc:defs.bzl", "cc_library")
 #                    toolset's own include directory and nowhere else on the
 #                    search path.
 #
-#   systemstl/vc9/   <list> <map> <set> <numeric> -- PURE FORWARDERS. They shadow
-#                    a standard header and add nothing, so on a modern toolchain
-#                    they are simply kept off the include path and the real
-#                    headers are used directly. Their MSVC branch reaches the real
-#                    header with `#include <../../VC/include/list>`, a path
-#                    relative to VC9's OWN include directory, which a modern
-#                    toolset does not have (C1083).
+#   systemstl/vc9/   <list> <map> <set> <numeric> -- PURE FORWARDERS, needed
+#                    only by VC9, which this build no longer has. They shadow a
+#                    standard header and add nothing, so they are kept off the
+#                    include path and the real headers are used directly. Their
+#                    MSVC branch reaches the real header with
+#                    `#include <../../VC/include/list>`, a path relative to VC9's
+#                    OWN include directory, which a modern toolset does not have
+#                    (C1083).
 #
 # Why the paths and not #include_next: #include_next is the portable escape from
 # a shadowing header and MSVC does not have it, so a shim on the include path can
@@ -39,22 +40,17 @@ load("@rules_cc//cc:defs.bzl", "cc_library")
 # The proper fix, when someone wants it, is to stop shadowing at all: move the
 # SGI emulation into a normally-named header and update the ~40 files that rely
 # on getting it from <functional>. That is a refactor with upstream value; this
-# is the change that keeps both toolchains building today.
+# is the change that keeps the modern toolchain building today.
 cc_library(
     name = "stlport",
     hdrs = glob([
         "systemstl/*",
-        "systemstl/vc9/*",
         "systemstlguards/*.h",
     ]),
     includes = [
         "systemstl",
         "systemstlguards",
-    ] + select({
-        # The pure forwarders are VC9-only; see above.
-        "//build/constraints:is_win7": [],
-        "//conditions:default": ["systemstl/vc9"],
-    }),
+    ],
     visibility = ["//visibility:public"],
 )
 

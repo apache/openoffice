@@ -20,33 +20,20 @@ build --java_language_version=8
 common --registry="file:///%workspace%/ext_libraries"
 common --registry=https://bcr.bazel.build
 
-# ---------------------------- Architecture (x86 / x64) ----------------------------
-# x86 is the DEFAULT build (a plain `bazel build` = 32-bit).  Now that the x86
-# toolchain correctly targets @platforms//cpu:x86_32, the target platform must be
-# pinned explicitly (the auto host platform is x86_64 and would not resolve it).
-# Each arch pins --platforms + a distinct --platform_suffix (separate bazel-out
-# trees, no clobber) + --symlink_prefix (both convenience symlinks coexist).
-# Thin alias only: --config=winXP-x64 => target the winXP-x64 platform, into its
-# own output tree.  The SEMANTICS (target Windows floor, and any deps/defines that
-# vary by it) live in the //build/constraints:win_version constraint carried by the
-# platform, NOT here.  --config=winXP-x64 overrides the winXP-x86 default (all
-# last-value-wins).
-build --platforms=//build/platforms:winXP-x86
-build --platform_suffix=winXP-x86
-build --symlink_prefix=bazel-winXP-x86-
+# ----------------------------- Target platform -----------------------------
+# win7-x64 (VS2019 toolset + Windows 10 SDK, Windows 7 SP1 and later) is the
+# only target and the default: a plain `bazel build` is that build.  The config
+# pins --platforms + --platform_suffix (its own bazel-out tree) +
+# --symlink_prefix, so a further config can be added beside it without either
+# clobbering the other.  Thin alias only: the SEMANTICS (target Windows floor,
+# and any deps/defines that vary by it) live in the
+# //build/constraints:win_version constraint carried by the platform, NOT here.
+#
+# The winXP-x86 (default until then) and winXP-x64 configs, both VC9 / VS2008,
+# were retired 2026-11-01.  Their bazel-winXP-* output trees are no longer
+# written; delete them by hand to reclaim the disk.
+build --config=win7-x64
 
-build:winXP-x86 --platforms=//build/platforms:winXP-x86
-build:winXP-x86 --platform_suffix=winXP-x86
-build:winXP-x86 --symlink_prefix=bazel-winXP-x86-
-
-build:winXP-x64 --platforms=//build/platforms:winXP-x64
-build:winXP-x64 --platform_suffix=winXP-x64
-build:winXP-x64 --symlink_prefix=bazel-winXP-x64-
-# The modern toolchain (VS2019 + Windows 10 SDK), same shape as the two above.
-# Its output tree is separate from BOTH winXP trees via --platform_suffix, so a
-# win7 build can never clobber the regression baseline.  Same cpu+os as
-# winXP-x64 — //build/constraints:win7 is the only difference, and the only
-# reason resolution can tell aoo_msvc_vs2019_x64 from aoo_msvc_vs2008_x64.
 build:win7-x64 --platforms=//build/platforms:win7-x64
 build:win7-x64 --platform_suffix=win7-x64
 build:win7-x64 --symlink_prefix=bazel-win7-x64-
@@ -59,7 +46,7 @@ build:win7-x64 --symlink_prefix=bazel-win7-x64-
 # need switching on, and that is a pure compiler define, no source change.
 #
 # Orthogonal to the platform configs above: combine it with any of them, e.g.
-#   bazel build --config=winXP-x64 --config=timelog //main/staging:install
+#   bazel build --config=timelog //main/staging:install
 #   soffice.exe -env:RTL_LOGFILE=C:/temp/oo -env:UserInstallation=...
 # writes C:\temp\oo_<pid>.log — logfile.cxx appends "_<pid>.log" unless the value
 # ends in ".nopid", in which case it is used verbatim.  Without --config=timelog

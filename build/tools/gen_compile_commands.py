@@ -24,12 +24,10 @@ is what puts clangd in MSVC-compatible driver mode so it understands /D, /I,
     gen_compile_commands.py --target //main/staging:install
     gen_compile_commands.py --target //main/sw:sw --config win7-x64
 
-NOTE ON TOOLCHAIN CHOICE: prefer --config win7-x64.  Indexing resolves the
-system headers of whichever toolchain the config selects, and a modern clang
-parses the VS2019/UCRT headers far more cleanly than the VS2008 ones.  The
-compile flags that matter for correctness (the global defines, the include
-paths) are the same either way, so indexing against the modern toolchain costs
-nothing and avoids a pile of spurious errors inside MSVC's own headers.
+NOTE ON TOOLCHAIN CHOICE: win7-x64 is the only config since the VS2008
+toolchains were retired (2026-11-01), and it suits indexing: a modern clang
+parses the VS2019/UCRT headers cleanly, where the VS2008 ones produced a pile of
+spurious errors inside MSVC's own headers.
 """
 
 import argparse
@@ -160,10 +158,9 @@ def main(argv=None):
     data = aquery(args.target, args.config)
 
     # Sources shared between the product and a codegen tool are compiled twice,
-    # in two different configurations -- and here those use two different MSVC
-    # toolchains.  Indexing a file with the exec toolchain's flags reintroduces
-    # exactly the VS2008 header problems the --config choice exists to avoid, so
-    # the target-configuration entry has to win the de-duplication below.
+    # in two different configurations (target and exec), whose flags can differ.
+    # The target-configuration entry describes what ships, so it has to win the
+    # de-duplication below.
     tool_configs = {
         c.get("id") for c in data.get("configuration", []) if c.get("isTool")
     }

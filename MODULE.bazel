@@ -67,7 +67,8 @@ bazel_dep(name = "xsltml",                 version = "2.1.2")
 # Host JDK.  Expose a downloaded JDK so we can register an ARCH-NEUTRAL java
 # RUNTIME toolchain (see //build/toolchain/java).  rules_java only auto-registers
 # cpu-pinned (windows + x86_64) runtime toolchains, which stop resolving the moment
-# the TARGET cpu isn't x86_64 — x86_32 today, arm64/riscv as the matrix grows.
+# the TARGET cpu isn't x86_64 — x86_32 until the VC9 build was retired,
+# arm64/riscv if the matrix grows.
 #
 # remotejdk21_win, NOT local_jdk: this runtime is what Bazel starts JavaBuilder on,
 # and JavaBuilder passes --add-exports, which a JDK 8 JVM rejects outright
@@ -111,38 +112,24 @@ http_file(
     downloaded_file_path = "junit-4.10.jar",
 )
 
-register_toolchains("//build/toolchain:aoo_msvc_vs2008_x86_def")
-register_toolchains("//build/toolchain:aoo_msvc_vs2008_x64_def")
 register_toolchains("//build/toolchain:aoo_msvc_vs2019_x64_def")
 
 # Arch-neutral host JDK RUNTIME toolchain.  Registered in the root module so it
 # outranks rules_java's cpu-pinned remote-JDK runtime toolchains; it matches EVERY
-# windows target platform (x86_32, x86_64, future arm64/riscv) so the jar-packaging
+# windows target platform (x86_64, future arm64/riscv) so the jar-packaging
 # host step (java_pipeline.bzl) resolves regardless of the product's target arch.
 register_toolchains("//build/toolchain/java:host_jdk_runtime_toolchain")
 
-# Execution platforms.  ORDER MATTERS — register_execution_platforms prepends, so the
-# FIRST entry is the highest-priority exec platform.
-#   winXP-x64 (x86_64) MUST be first: it becomes the exec platform for all build
-#     actions and cfg="exec" tools (idlc/regmerge/cppumaker/rsc/…), so those tools are
-#     built x64 and run natively on this x64 host (matching the amd64 CRT staging).
-#     A target that requires no cc toolchain (e.g. idl_library, which just runs the
-#     staged tools) picks the first exec platform outright — if winXP-x86 were first,
-#     those tools would be built x86_32 (breaking the x64 regmerge/idlc link + CRT).
-#   winXP-x86 (x86_32) is the fallback: this x64 host also runs 32-bit binaries via
-#     WOW64, so x86 TEST targets (target cpu:x86_32) resolve their test toolchain here
-#     (Bazel runs tests on an exec platform matching the target's constraints; without
-#     this, x86 `bazel test` fails "no matching default_test_toolchain_type").  Only the
-#     test-run action lands here — cc/exec-tool actions need a cc toolchain, which is
-#     exec_compatible_with x86_64 only, so they never select winXP-x86.
-#   win7-x64 is here for the same test-toolchain reason and MUST be LAST: its cpu+os
-#     are identical to winXP-x64, so putting it any earlier would hand it exec-tool
-#     actions on the winXP configs too.  Last, it is only ever reached by a target
-#     whose platform carries //build/constraints:win7 — i.e. a win7-x64 test — which
-#     is exactly the case the other two cannot serve.
+# Execution platform.  The target platform is registered as the exec platform
+# too: cfg="exec" tools (idlc/regmerge/cppumaker/rsc/…) are then built by the
+# same toolchain as the product, and tests resolve a test toolchain — a target
+# platform that is not an exec platform builds but cannot run its tests.
+#
+# Until 2026-11-01 winXP-x64 came first here, so exec tools were built with VC9
+# even in a win7 build; with VC9 retired they are built with VS2019.  When a
+# second target platform is added, ORDER MATTERS again: register_execution_platforms
+# prepends, and the first entry gets every exec-tool action.
 register_execution_platforms(
-    "//build/platforms:winXP-x64",
-    "//build/platforms:winXP-x86",
     "//build/platforms:win7-x64",
 )
 # Use preinstalled pkg-config instead of building it from source (building it

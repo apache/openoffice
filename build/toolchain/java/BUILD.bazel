@@ -2,8 +2,9 @@
 #
 # Why this exists
 # ---------------
-# Target platforms in this build are chosen by TARGET cpu — winXP-x86 (x86_32),
-# winXP-x64 (x86_64), and the matrix is expected to grow (arm64, riscv, …).
+# Target platforms in this build are chosen by TARGET cpu — win7-x64 (x86_64)
+# today; until 2026-11-01 also winXP-x86 (x86_32), and the matrix may grow
+# again (arm64, riscv, …).
 # rules_java, however, only auto-registers java RUNTIME toolchains that are
 # cpu-pinned to the downloaded JDK's own platform (windows + x86_64).  The moment
 # the target cpu isn't x86_64 that toolchain no longer resolves:
@@ -26,7 +27,7 @@
 # or future, and the matrix expands without adding a java toolchain per arch.
 #
 # It is registered in the ROOT module (MODULE.bazel), so it outranks rules_java's
-# cpu-pinned remote-JDK runtime toolchains and is selected for both x86 and x64.
+# cpu-pinned remote-JDK runtime toolchains and is selected for every arch.
 # That priority is total — it has no target_settings, so --java_runtime_version and
 # --tool_java_runtime_version cannot steer around it.  Which makes WHICH jdk this
 # points at load-bearing for every Java action in the build:

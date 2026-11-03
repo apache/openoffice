@@ -2,9 +2,8 @@
 #
 # This is the Bazel-native way to model "which Windows do we target" — the same
 # mechanism @platforms//os and @platforms//cpu use.  It composes ORTHOGONALLY
-# with @platforms//cpu:{x86_32,x86_64} inside the target platforms, so the target
-# space is {winxp, win7, ...} x {x86, x64}, not a flat list of stringly-typed
-# --config names.
+# with @platforms//cpu inside the target platforms, so the target space is
+# {win7, ...} x {x64, ...}, not a flat list of stringly-typed --config names.
 #
 # Why a constraint and not just a platform name: a constraint_value can be the
 # subject of select() (via the config_settings below).  So the target Windows
@@ -27,36 +26,27 @@ package(default_visibility = ["//visibility:public"])
 # The dimension itself.  No default_constraint_value: platforms state their floor
 # explicitly, and the auto-detected host (exec) platform simply leaves it unset
 # (exec-config tool builds don't care about the target Windows floor).
+#
+# It had a second value, winxp (VC9 / VS2008 + SDK v7.0), retired 2026-11-01.
+# The setting stays a dimension of its own so a future floor slots in as a new
+# value rather than as a rename.
 constraint_setting(name = "win_version")
 
-# Current: XP-era (VC9 / VS2008 + SDK v7.0 — the toolchain we stay on for XP
-# compatibility).  Future values slot in beside this one.
-constraint_value(
-    name = "winxp",
-    constraint_setting = ":win_version",
-)
-
-# The modern target: VS2019 toolset + Windows 10 SDK, running on Windows 7 SP1
-# and later.  Win7 rather than Win10 because nothing in the build needs more: the
+# The target: VS2019 toolset + Windows 10 SDK, running on Windows 7 SP1 and
+# later.  Win7 rather than Win10 because nothing in the build needs more: the
 # toolchain compiles at _WIN32_WINNT=0x0601 and links subsystem 6.00, and the
 # Windows 10 SDK targets Win7 fine.  What does decide the floor at install time
 # is the VC v14 runtime shipped beside the binaries -- the newest ones install
 # on Windows 10+ only, so a Win7 floor means shipping a runtime release that
 # still supports Win7 SP1, and a toolset no newer than that runtime.  Wired to
 # //build/platforms:win7-x64 and //build/toolchain:aoo_msvc_vs2019_x64_def, and
-# registered as an execution platform (last) so win7 TESTS resolve a test
-# toolchain -- see the exec-platform block in MODULE.bazel.
+# registered as the execution platform -- see MODULE.bazel.
 constraint_value(
     name = "win7",
     constraint_setting = ":win_version",
 )
 
 # select()-able views of the constraint.
-config_setting(
-    name = "is_winxp",
-    constraint_values = [":winxp"],
-)
-
 config_setting(
     name = "is_win7",
     constraint_values = [":win7"],
