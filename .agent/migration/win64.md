@@ -114,12 +114,11 @@ x64 quirks) remains in scope whenever it surfaces.
 
 ## Deliberate constraints
 
-- **Stay on VC9 (VS2008) for x64.** The cross-tools ship with VS2008
-  (`VC\bin\x86_amd64\cl.exe` + `ml64.exe`, native `VC\bin\amd64\`, SDK v7.0
-  `lib\x64`). Compiler modernization is a separate, later step — do not mix a
-  newer toolchain in for ABI reasons.
-- **Arch is chosen by target platform, not a stringly-typed flag**:
-  `--config=winXP-x86` (default) / `--config=winXP-x64`, each pinning
-  `--platforms` + a distinct `--platform_suffix` and `--symlink_prefix`, so the
-  two output trees never clobber. Sharing one output_base is fine — per-config
-  action outputs cache separately, so switching only re-analyses.
+- **SUPERSEDED 2026-11-01: the VC9 toolchains are retired.**  The port was
+  done on the VS2008 x86_amd64 cross-tools (`--config=winXP-x64`) beside the
+  x86 default, deliberately without mixing in a newer compiler.  x64 is now the
+  only arch and is built with VS2019 (`win7-x64`, the default config).  The x64
+  source fixes recorded here are still what make that build work.
+- **Arch is chosen by target platform, not a stringly-typed flag**: the config
+  pins `--platforms` + its own `--platform_suffix` and `--symlink_prefix`, so a
+  further config gets its own output tree.

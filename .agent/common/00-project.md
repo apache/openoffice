@@ -29,7 +29,10 @@ Source code is NOT being changed — only the build system.
 
 - OS: Windows 11
 - Shell during migration work: bash (via Cygwin, being phased out)
-- Compiler: MSVC VS2008 (VC9) — both **x86** and **x64** (VC9 cross-tools); configured via user.bazelrc
+- Compiler: MSVC VS2019 toolset + Windows 10 SDK, x64 only, targeting Windows 7 SP1+;
+  configured via user.bazelrc.  The VS2008 (VC9) x86/x64 toolchains were retired
+  2026-11-01.  The SOURCE still stays C++03-compatible: AOO 4.1.x, which takes
+  security backports, still builds with VS2008.
 - Bazel configured via MODULE.bazel and user.bazelrc
 
 ## Build strategy

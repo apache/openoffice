@@ -44,15 +44,16 @@
   → same "loading component library failed" class as fileacc/uui. To reach upstream
   parity (cosmetic): apply .uno infix in the link/staging step AND regenerate
   services.rdb together so both sides move in lockstep. Left as-is for the en-US demo.
-- EVERY staged /MD EXE needs the VC90 manifest on the winXP builds, embedded at
-  RT_MANIFEST id 1 (`//main/external/msvcp90:vc90_app_manifest_res` in
-  additional_linker_inputs + linkopts), gated off with
-  `//build/constraints:is_win7` (the modern runtime is not side-by-side).
-  Without it a `/MANIFEST:NO` EXE dies before main() with a "System Error" box,
-  and nothing in the build notices -- 15 launchers sat broken that way until
-  2026-10-08.  Audit a staged tree: dumpbin /dependents shows MSVCR90.dll, and
-  the file contains neither the string `Microsoft.VC90.CRT` nor a sibling
-  `<name>.manifest`.  Pattern: `_VC90_MANIFEST_INPUTS` in main/desktop/BUILD.bazel.
+- VC90 CRT manifests are a VC9 artifact and the VC9 toolchains are retired
+  (2026-11-01).  The modern runtime (vcruntime140/UCRT) is not side-by-side, so
+  a new EXE needs no manifest for the CRT.  The VC9-era lesson still holds for
+  anything side-by-side: a `/MANIFEST:NO` EXE whose import needs an activation
+  context dies before main() with a "System Error" box, and nothing in the build
+  notices -- 15 launchers sat broken that way until 2026-10-08.  REMAINING
+  CLEANUP: ~25 rules still stage the VC90 DLLs or embed
+  `//main/external/msvcp90:vc90_app_manifest_res` unconditionally (idl/rsc/
+  merge_rdb/java/localedata pipelines, gtest_test, registry, cpputools, pyuno,
+  staging); on VS2019 binaries these are dead weight, not a requirement.
 - IDL pipeline: tools link /MD (dynamic CRT); stage msvcr90/msvcp90 DLLs +
   external .manifest files alongside EXEs (no mt.exe embedding); use
   ctx.actions.symlink (pure Bazel, no shell) for staging
@@ -91,11 +92,11 @@ These apply to many packages — check before building any new module:
   the toolchain through the `crt_defines` attr (`build/toolchain/BUILD.bazel`),
   because which CRT is in play is a toolchain property that a module BUILD cannot
   know.  The 130 per-module copies were swept out 2026-08-11.  The two halves are
-  not symmetric: VC9 gets `snprintf=_snprintf` (its MSVCRT exports only the
-  underscored name) AND `snwprintf=_snwprintf`; the modern toolchain gets ONLY the
-  wide one — the UCRT declares a real `snprintf` and refuses to compile with the
-  name taken (C1189), while it declares no `snwprintf` at all, since the wide C99
-  name never existed in any MSVC CRT.
+  not symmetric: the retired VC9 toolchains got `snprintf=_snprintf` (its MSVCRT
+  exports only the underscored name) AND `snwprintf=_snwprintf`; the modern
+  toolchain gets ONLY the wide one — the UCRT declares a real `snprintf` and
+  refuses to compile with the name taken (C1189), while it declares no
+  `snwprintf` at all, since the wide C99 name never existed in any MSVC CRT.
 - `MSC` — likewise global, hardcoded in windows_cc_toolchain_config.bzl (it names
   the compiler, and every toolchain sharing that config rule is MSVC).  Upstream
   defines it for every TU on MSVC (`solenv/inc/settings.mk:878`, the same line
@@ -104,7 +105,8 @@ These apply to many packages — check before building any new module:
   live in `tools/source/fsys/dirent.cxx`, where temp filenames came from
   `clock()`+`getpid()` instead of `GetTickCount()`+`_getpid()`.  It flips live
   code tree-wide and appears on every command line, so per-module builds cannot
-  check it; validated by a full green `//main/staging:install --config=winXP-x86`.
+  check it; validated by a full green `//main/staging:install --config=winXP-x86`
+  (the then-default VC9 build).
 - `stlport` dep — required for modules using `boost::unordered_map` or `hash_map` via boost
 - `Z_PREFIX` + `SYSTEM_ZLIB` — required for all zlib consumers (all symbols prefixed with `z_`)
 - `/Imain/soltools/winunistd` — for modules that `#include <unistd.h>` unconditionally

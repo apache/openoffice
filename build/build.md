@@ -32,19 +32,22 @@ For per-module conventions, compiler flags, and the migration frontier, see
 
 ## 1. Prerequisites
 
-The build targets **Windows on the VS2008 (VC9) MSVC toolchain** in **two
-architectures**: **32-bit x86** (the default) and **64-bit x64** (the Win64
-port). Both stay on VC9 — the x64 build uses the VS2008 `x86_amd64` cross-tools
-(`cl.exe` / `ml64.exe`) plus the Windows SDK v7.0 `lib\x64`. A custom Bazel
-toolchain (`//build/toolchain`) drives the compiler directly, so the Visual
-Studio IDE is not required — only the compiler, linker, and headers. **x86 is the
-default and stays green**; see [§4](#4-running-builds) for selecting x64.
+The build targets **64-bit Windows 7 SP1 and later**, compiled with the
+**VS2019 MSVC toolset and the Windows 10 SDK** (`win7-x64`, the only config). A
+custom Bazel toolchain (`//build/toolchain`) drives the compiler directly, so the
+Visual Studio IDE is not required — Build Tools are enough.
+
+The VS2008 (VC9) toolchains — 32-bit `winXP-x86`, until then the default, and
+`winXP-x64` — were retired on 2026-11-01. VS2008 and the Windows SDK v7.0 are
+**still needed on the machine for now**: some rules still stage or embed the
+VC90 runtime and call the SDK v7.0 `RC.Exe`, and removing that is the next step.
 
 | Tool | Version / Notes |
 | --- | --- |
 | **Bazel** | bzlmod-based (`MODULE.bazel`). Install via [Bazelisk](https://github.com/bazelbuild/bazelisk). ⚠️ Bazel 9.0.1 has a patch-section bug — see [§7](#7-known-issues). |
-| **Visual Studio 2008 (VC9)** | Provides `cl.exe`, `link.exe`, `lib.exe`, `ml.exe`. Default: `C:\Program Files (x86)\Microsoft Visual Studio 9.0`. The **x64** build additionally uses the `x86_amd64` cross-tools (`VC\bin\x86_amd64\cl.exe`, `ml64.exe`) and `VC\bin\amd64\lib.exe`, which ship with the same VS2008 install. |
-| **Windows SDK v7.0** | System headers/libs. Default: `C:\Program Files\Microsoft SDKs\Windows\v7.0`. The x64 build links against `lib\x64`. |
+| **VS2019 Build Tools** | The MSVC toolset (`cl.exe`, `link.exe`, `lib.exe`, `ml64.exe`), found under `VS_MODERN_PATH`. Pin a version with `MSVC_TOOLSET_VERSION`. |
+| **Windows 10 SDK** | System headers/libs, `rc.exe`, `mt.exe`, found under `WIN10_SDK_PATH`. Pin a version with `WIN10_SDK_VERSION`. |
+| **Visual Studio 2008 + Windows SDK v7.0** (interim) | No longer compile anything, but the VC90 runtime files and the SDK v7.0 `RC.Exe` are still referenced; see above. |
 | **Perl** | Used by IDL/rsc/installer codegen scripts. A Strawberry Perl is pulled in via bzlmod for *build deps*, but some local genrules invoke a host Perl set via `PERL_PATH` (e.g. `C:\msys64\usr\bin\perl.exe`). |
 | **ATLMFC** (optional) | Only needed for ATL modules (`embedserv`, `winaccessibility`, `extensions/activex`). VS Express / BuildTools do **not** ship ATLMFC — those modules are skipped unless you opt in. See [§5](#5-optional-features). |
 
@@ -63,13 +66,16 @@ All per-machine paths are configured in **`user.bazelrc`** (git-ignored,
 Create / edit `user.bazelrc` at the repository root:
 
 ```bash
-# Disable Bazel's automatic MSVC detection — we register our own VS2008 toolchain.
+# Disable Bazel's automatic MSVC detection — we register our own toolchain.
 build --repo_env=BAZEL_DO_NOT_DETECT_CPP_TOOLCHAIN=1
 
 # Per-machine tool locations (use FORWARD SLASHES, and double-quote the value so
 # bazelrc does not strip backslashes). Edit if yours differ from the defaults.
-build --repo_env="VS_PATH=C:/Program Files (x86)/Microsoft Visual Studio 9.0"
-build --repo_env="SDK_PATH=C:/Program Files/Microsoft SDKs/Windows/v7.0"
+build --repo_env="VS_MODERN_PATH=C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools"
+build --repo_env="WIN10_SDK_PATH=C:/Program Files (x86)/Windows Kits/10"
+build --repo_env="WIN10_SDK_VERSION=10.0.19041.0"   # optional pin
+build --repo_env="VS_PATH=C:/Program Files (x86)/Microsoft Visual Studio 9.0"   # interim
+build --repo_env="SDK_PATH=C:/Program Files/Microsoft SDKs/Windows/v7.0"        # interim
 build --repo_env="MSVC_TMP=C:/Users/<you>/AppData/Local/Temp"
 build --repo_env="PERL_PATH=C:/msys64/usr/bin/perl.exe"
 ```
@@ -79,8 +85,10 @@ Defaults (used when a `--repo_env` is omitted) are defined in
 
 | Variable | Default | Meaning |
 | --- | --- | --- |
-| `VS_PATH` | `C:\Program Files (x86)\Microsoft Visual Studio 9.0` | VS2008 root. `VC` = `VS_PATH\VC`. |
-| `SDK_PATH` | `C:\Program Files\Microsoft SDKs\Windows\v7.0` | Windows SDK v7.0 root. |
+| `VS_MODERN_PATH` | VS2019 Build Tools root | Where the MSVC toolset is discovered. |
+| `WIN10_SDK_PATH` | `C:\Program Files (x86)\Windows Kits\10` | Where the Windows 10 SDK is discovered. |
+| `VS_PATH` | `C:\Program Files (x86)\Microsoft Visual Studio 9.0` | VS2008 root (interim: VC90 runtime files only). |
+| `SDK_PATH` | `C:\Program Files\Microsoft SDKs\Windows\v7.0` | Windows SDK v7.0 root (interim). |
 | `MSVC_TMP` | `C:\Temp` | Scratch dir for MSVC actions. |
 | `PERL_PATH` | `C:\msys64\usr\bin\perl.exe` | Host Perl for codegen genrules. |
 
@@ -106,34 +114,30 @@ registries are consulted, in order ([.bazelrc](../.bazelrc)):
 `--check_direct_dependencies=off` is set because the legacy version pins do not
 all match BCR's resolution.
 
-### Toolchain (dual-arch)
+### Toolchain
 
-Two custom VS2008 (VC9) toolchains live in [build/toolchain](toolchain/) — one
-per architecture — both registered in `MODULE.bazel`:
+One custom toolchain lives in [build/toolchain](toolchain/), registered in
+`MODULE.bazel`:
 
 ```python
-register_toolchains("//build/toolchain:aoo_msvc_vs2008_x86_def")  # 32-bit x86 (default)
-register_toolchains("//build/toolchain:aoo_msvc_vs2008_x64_def")  # 64-bit x64 (Win64)
+register_toolchains("//build/toolchain:aoo_msvc_vs2019_x64_def")
 ```
 
-Which one Bazel uses is decided by the **target platform**, not a flag. The
-platforms in [build/platforms/BUILD.bazel](platforms/BUILD.bazel) —
-`winXP-x86` (`@platforms//cpu:x86_32`) and `winXP-x64` (`x86_64`) — are each
-composed with the `//build/constraints:win_version` constraint, giving a
-`{winxp, win7} × {x86, x64}` target space (a further floor is a new
-constraint value, not a new stringly-typed config). Toolchain resolution then
-selects the matching `cc_toolchain` automatically; when `--platforms` is x86 the
-x64 toolchain is simply incompatible and never chosen, and vice-versa.
+Which toolchain Bazel uses is decided by the **target platform**, not a flag.
+The platform `win7-x64` in [build/platforms/BUILD.bazel](platforms/BUILD.bazel)
+combines `@platforms//cpu:x86_64` with the `//build/constraints:win_version`
+constraint, and toolchain resolution picks the `cc_toolchain` that matches both.
+A further Windows floor is a new constraint value, not a new stringly-typed
+config. The same platform is registered as the execution platform, so build
+tools (idlc, regmerge, rsc, …) are compiled by the same toolchain.
 
-The per-arch defines are injected **globally by the toolchain**, so module BUILD
-files carry no arch literals: x86 → `_X86_=1` / `INTEL` / `CPPU_ENV=msci`, x64 →
-`_AMD64_=1` / `X86_64` / `CPPU_ENV=mscx` (`WIN32` stays defined on both; the x64
-compiler auto-defines `_WIN64`).
+The arch defines are injected **globally by the toolchain**, so module BUILD
+files carry no arch literals: `_AMD64_=1` / `X86_64` / `CPPU_ENV=mscx`, with
+`WIN32` defined as well (the compiler auto-defines `_WIN64`).
 
-Key toolchain choices shared by both arches (see [CLAUDE.md](../CLAUDE.md) for
-full rationale): `/Zc:wchar_t-`, `_HAS_ITERATOR_DEBUGGING=0` set globally, `/Z7`
-(no `mspdbsrv.exe` for fastbuild), MASM via `ml.exe` (x86) / `ml64.exe` (x64)
-with `/Cx`.
+Key toolchain choices (see [.agent/common/10-toolchain.md](../.agent/common/10-toolchain.md)
+for the rationale): `/std:c++14`, `/Zc:wchar_t-`, `_HAS_ITERATOR_DEBUGGING=0` set
+globally, `/Z7` (no `mspdbsrv.exe` for fastbuild), MASM via `ml64.exe`.
 
 ### Where BUILD files live
 
@@ -157,26 +161,15 @@ is `main/packimages/packimages.bzl`, which runs upstream's own `packimages.pl`.
 
 > Independent commands print to stderr; you do not need `2>&1`.
 
-### Choosing the architecture (x86 vs x64)
+### Configuration
 
-The default build is **32-bit x86**. To build **64-bit x64** (Win64), pass the
-`--config=winXP-x64` convenience config (defined in [.bazelrc](../.bazelrc)):
+There is one configuration, `win7-x64`, and it is the default, so no `--config`
+is needed. It pins `--platforms` plus its own `--platform_suffix` and
+`--symlink_prefix` (defined in [.bazelrc](../.bazelrc)), so outputs land under
+`bazel-win7-x64-bin/`.
 
-```bash
-bazel build //main/staging:install                    # x86 (default)
-bazel build --config=winXP-x64 //main/staging:install # x64 (Win64)
-```
-
-Each config pins `--platforms` plus a distinct `--platform_suffix` and
-`--symlink_prefix`, so the two architectures build into **separate output trees**
-and never clobber each other — the convenience symlinks are
-`bazel-winXP-x86-bin/` (default) and `bazel-winXP-x64-bin/`. Because the action
-outputs are cached per-config, switching arch only re-analyzes; it does not
-recompile. `--config=winXP-x86` names the default explicitly.
-
-Every example below defaults to x86 — add `--config=winXP-x64` to any of them for
-the Win64 build, and read `bazel-winXP-x86-bin` as `bazel-winXP-x64-bin` in the
-output paths.
+The retired `--config=winXP-x86` / `--config=winXP-x64` no longer exist. Their
+`bazel-winXP-*` output trees are not cleaned up automatically.
 
 ### Build a single module
 
@@ -201,8 +194,7 @@ output into a real OpenOffice install layout:
 bazel build //main/staging:install
 ```
 
-Output lands under `bazel-winXP-x86-bin/main/staging/install/` (x86 default; the
-x64 build lands under `bazel-winXP-x64-bin/…`):
+Output lands under `bazel-win7-x64-bin/main/staging/install/`:
 
 ```
 install/
@@ -217,7 +209,7 @@ To also stage the full Python standard library, build `//main/staging:install_al
 ### Run it
 
 ```bash
-bazel-winXP-x86-bin\main\staging\install\program\soffice.exe
+bazel-win7-x64-bin\main\staging\install\program\soffice.exe
 ```
 
 ### Inspect the dependency graph
@@ -335,6 +327,10 @@ The debug CRT path itself is derived in
 `VC\redist\Debug_NonRedist\x86\Microsoft.VC90.DebugCRT` (exposed as
 `DEBUG_CRT_DIR`); make sure your VS2008 install actually has that redist folder.
 
+> This debug-CRT staging was written for the retired VC9 toolchains. A VS2019
+> `dbg` build links the VS2019 debug runtime instead, so this path is to be
+> replaced together with the rest of the VC90 runtime staging.
+
 ### 6.5 Running under a debugger
 
 After the staged debug build, attach to the launcher:
@@ -342,7 +338,7 @@ After the staged debug build, attach to the launcher:
 ```bash
 # Visual Studio / WinDbg / CDB — symbols are auto-found because the .pdb files
 # sit next to the DLLs in program\.
-cdb -g bazel-winXP-x86-bin\main\staging\install\program\soffice.exe
+cdb -g bazel-win7-x64-bin\main\staging\install\program\soffice.exe
 ```
 
 Note the process layout differs from a stock OpenOffice install. Upstream ships
@@ -458,6 +454,6 @@ the list against what you touched deliberately rather than expecting it empty.
 which MSVC implements as `__declspec(nothrow)`) to `noexcept`; those sites are
 already reported under kind `EMPTY`. Select those instead of `SPEC` and give
 `rewrite()` a substituting variant — the span bookkeeping is identical, only the
-replacement text differs. Note that `noexcept` cannot be written literally while
-VS2008 is the default toolchain; see the frontier in
-[CLAUDE.md](../CLAUDE.md).
+replacement text differs. `noexcept` still cannot be written literally: VS2008
+is retired from this build, but the source stays compatible with AOO 4.1.x for
+security backports, and 4.1.x still builds with VS2008.
