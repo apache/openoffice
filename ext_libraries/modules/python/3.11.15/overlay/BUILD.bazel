@@ -56,7 +56,15 @@ _COPTS = [
 # Every target.  PCbuild/pyproject.props defines WIN32 and _WIN32 (the
 # toolchain and cl.exe already do).  The Windows API level: see the header.
 # NTDDI_VERSION must agree with _WIN32_WINNT or sdkddkver.h refuses.
+#
+# NDEBUG in every compilation mode: what is built is always PCbuild's Release
+# configuration (python311.dll, not the Py_DEBUG python311_d.dll), and Release
+# defines it.  The toolchain adds it only under -c opt, so a fastbuild left the
+# core's assert()s live -- and pyuno, which runs Python on thread states of its
+# own rather than through PyGILState_Ensure, trips PyErr_Occurred's
+# assert(PyGILState_Check()) on the first macro call.
 _BASE_DEFINES = [
+    "NDEBUG",
     "WINVER=0x0601",
     "NTDDI_VERSION=0x06010000",
 ]
