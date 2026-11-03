@@ -114,7 +114,7 @@ def bridge_dead(path):
     return isinstance(d, dict) and (str(d.get("error", "")).startswith("Binary URP bridge") or str(d.get("body_error", "")).startswith("Binary URP bridge"))
 
 
-def dump_dir(src, dest, profile, port, stall, log, tool=None, poll=2.0):
+def dump_dir(src, dest, profile, port, stall, log, tool=None, poll=2.0, dumper="dump7.py"):
     """Reloads every package in src into dest/*.json. A document that stalls the office or kills it gets an error
     marker only after `stall` seconds without progress, never because the whole batch took long.
     tool(port, dest, files) -> argv replaces dump7.py under the office (for tests); then no office is started."""
@@ -130,7 +130,7 @@ def dump_dir(src, dest, profile, port, stall, log, tool=None, poll=2.0):
                     return {"error": "office did not start", "stalls": stalls}
             before = count()
             marker = os.path.join(dest, ".current")
-            argv = tool(port, dest, files) if tool else [os.path.join(D, "runpy.sh"), os.path.join(D, "dump7.py"), str(port), dest] + files
+            argv = tool(port, dest, files) if tool else [os.path.join(D, "runpy.sh"), os.path.join(D, dumper), str(port), dest] + files
             how, rc = run_with_stall(argv, lambda: (count(), os.path.getmtime(marker) if os.path.exists(marker) else 0), stall, poll, log=log)
             if how == "stalled" or rc != 0:
                 cur = open(marker).read().strip() if os.path.exists(marker) else ""

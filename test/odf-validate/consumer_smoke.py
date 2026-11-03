@@ -20,7 +20,7 @@
 
 # usage: consumer_smoke.py <tag> [--port N] [--stall SECONDS] [--dir DIR]
 # Import smoke test for the ODF 1.4 additions: reloads every package of fixtures/t14/consumer (made by make-consumer.py)
-# with the office of the app copy, dumps a fixed property set of each (dump7.py with the gate's stall watchdog) and compares
+# with the office of the app copy, dumps every property of the objects it touches (dump14.py, or dump7.py with --dumper; the gate's stall watchdog) and compares
 # every package with its '-base' twin (the same document without the construct, diff7.py). Reports per package: loaded or
 # not (an error marker in the dump), and the number of differing dump keys against the twin. A package without a twin
 # is only checked for loading. Results in runs/consumer-<tag>/ (summary in summary.json).
@@ -38,13 +38,14 @@ def main():
     ap.add_argument("--port", type=int, default=2950)
     ap.add_argument("--stall", type=int, default=120)
     ap.add_argument("--dir", default=os.path.join(D, "fixtures", "t14", "consumer"))
+    ap.add_argument("--dumper", default="dump14.py", help="dump14.py (every property of the touched objects) or dump7.py (the gate's fixed set)")
     a = ap.parse_args()
     root = os.path.join(D, "runs", "consumer-" + a.tag)
     shutil.rmtree(root, ignore_errors=True)
     os.makedirs(root)
     dest = os.path.join(root, "dump")
     log = os.path.join(root, "dump.log")
-    r = gate.dump_dir(a.dir, dest, "consumer_" + a.tag, a.port, a.stall, log)
+    r = gate.dump_dir(a.dir, dest, "consumer_" + a.tag, a.port, a.stall, log, dumper=a.dumper)
     gate.kill_office("consumer_" + a.tag)
     names = sorted(f[:-5] for f in os.listdir(dest) if f.endswith(".json"))
     summary = {}
