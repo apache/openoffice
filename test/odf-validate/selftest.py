@@ -44,6 +44,17 @@ checks = {
     "13: style:scale-to-X/Y together with style:scale-to invalid in 1.3 and 1.3 extended": all(any('"style:scale-to"' in m for m in errs(v, "scaleboth.odt")) for v in ("13", "13x")),
     "13: style:scale-to-X/Y alone and style:scale-to alone valid in 1.3 and 1.3 extended; X/Y invalid in 1.2": not any(errs(v, p) for v in ("13", "13x") for p in ("scalexy.odt", "scaleone.odt"))
         and any('"style:scale-to-X"' in m for m in errs("12", "scalexy.odt")) and not errs("12", "scaleone.odt"),
+    "14: good.odt clean in 1.4 and 1.4 extended; a 1.3 version is rewritten like a 1.2 one": not errs("14x", "good.odt"),
+    "14: bad.odt flags text:bogus in 1.4 extended": any('"text:bogus"' in m for m in errs("14x", "bad.odt")),
+    "14: wrongver.odt (1.1) flags office:version in 1.4 extended": any("office:version" in m for m in errs("14x", "wrongver.odt")),
+    "14: extforeign.odt invalid as written, valid in 1.4 extended once foreign content is removed": bool(errs("14", "extforeign.odt")) and not errs("14x", "extforeign.odt"),
+    "14: draw:decorative invalid in 1.2 and 1.3, valid in 1.4 and 1.4 extended; the same style without it is clean in all": any('"draw:decorative"' in m for v in ("12", "13") for m in errs(v, "newdeco.odt"))
+        and all(errs(v, "newdeco.odt") for v in ("12", "13")) and not errs("14", "newdeco.odt") and not errs("14x", "newdeco.odt")
+        and not any(errs(v, "basedeco.odt") for v in ("12", "13", "14", "14x")),
+    "14: draw:handle with only the old combined attribute valid in 1.2 and 1.3, invalid in 1.4 and 1.4 extended": not any(errs(v, "handleold.odt") for v in ("12", "13"))
+        and all(errs(v, "handleold.odt") for v in ("14", "14x")),
+    "14: draw:handle with the new position or polar pair valid in 1.4 and 1.4 extended, invalid in 1.2 and 1.3": not any(errs(v, p) for v in ("14", "14x") for p in ("handlenew.odt", "handlepolar.odt"))
+        and all(errs(v, p) for v in ("12", "13") for p in ("handlenew.odt", "handlepolar.odt")),
     "mathobj.odt MathML object skipped": d["mathml_skipped"] == ["mathobj.odt/Object 1/content.xml"] and not errs("12", "mathobj.odt"),
     "no unparsed jing output": not any(e[0] == "?" for v in d["errors"] for e in d["errors"][v]),
 }
@@ -154,7 +165,7 @@ gspec = importlib.util.spec_from_file_location("gate", os.path.join(D, "gate.py"
 gt = importlib.util.module_from_spec(gspec)
 gspec.loader.exec_module(gt)
 vol = gt.read_volatile()
-checks["gate: gate-volatile.tsv lists the 12 documents with a reason"] = len(vol) == 12 and all(len(r) > 10 for r in vol.values())
+checks["gate: gate-volatile.tsv lists the 13 documents with a reason"] = len(vol) == 13 and all(len(r) > 10 for r in vol.values())
 checks["gate: rewrite_jobs keeps sources and moves outputs"] = gt.rewrite_jobs([("/a/b.odt", "/x/0001_b.odt")], "/new") == [("/a/b.odt", "/new/0001_b.odt")]
 fake = {"0067_AddInChart.ods": {"ndiff": 1}, "0001_x.odt": {"ndiff": 0}, "0002_y.odt": {"ndiff": 3}}
 checks["gate: classify separates volatile from unexplained differences"] = gt.classify(fake, vol) == (1, ["0067_AddInChart.ods"], ["0002_y.odt"])
