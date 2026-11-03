@@ -375,7 +375,7 @@ void SfxObjectShell::SetupStorage( const uno::Reference< embed::XStorage >& xSto
                     {
                         // older versions can not have this property set, it exists only starting from ODF1.2
                         xProps->setPropertyValue( ::rtl::OUString::createFromAscii( "Version" ),
-                            nDefVersion >= SvtSaveOptions::ODFVER_013 ? uno::makeAny( ODFVER_013_TEXT ) : uno::makeAny( ODFVER_012_TEXT ) );
+                            nDefVersion >= SvtSaveOptions::ODFVER_014 ? uno::makeAny( ODFVER_014_TEXT ) : nDefVersion >= SvtSaveOptions::ODFVER_013 ? uno::makeAny( ODFVER_013_TEXT ) : uno::makeAny( ODFVER_012_TEXT ) );
                     }
                     catch( uno::Exception& )
                     {
@@ -857,8 +857,8 @@ sal_Bool SfxObjectShell::DoLoad( SfxMedium *pMed )
                 if ( sVersion.getLength() )
                 {
                     double nVersion = sVersion.toDouble();
-                    if ( nVersion > 1.30001  && SfxObjectShell_Impl::NeedsOfficeUpdateDialog() )
-                        // ODF version greater than 1.3 - added some decimal places to be safe against floating point conversion errors (hack)
+                    if ( nVersion > 1.40001  && SfxObjectShell_Impl::NeedsOfficeUpdateDialog() )
+                        // ODF version greater than 1.4 - added some decimal places to be safe against floating point conversion errors (hack)
                     {
                         ::rtl::OUString sDocumentURL( pMedium->GetOrigURL() );
                         ::rtl::OUString aSystemFileURL;
@@ -1401,7 +1401,7 @@ sal_Bool SfxObjectShell::SaveTo_Impl
                         try
                         {
                             xProps->setPropertyValue( ::rtl::OUString::createFromAscii( "Version" ),
-                                aSaveOpt.GetODFDefaultVersion() >= SvtSaveOptions::ODFVER_013 ? uno::makeAny( ODFVER_013_TEXT ) : uno::makeAny( ODFVER_012_TEXT ) );
+                                aSaveOpt.GetODFDefaultVersion() >= SvtSaveOptions::ODFVER_014 ? uno::makeAny( ODFVER_014_TEXT ) : aSaveOpt.GetODFDefaultVersion() >= SvtSaveOptions::ODFVER_013 ? uno::makeAny( ODFVER_013_TEXT ) : uno::makeAny( ODFVER_012_TEXT ) );
                         }
                         catch( uno::Exception& )
                         {
