@@ -766,7 +766,7 @@ namespace xmloff
             return true;
         }
 
-        if ( _nNamespaceKey == XML_NAMESPACE_FORM && IsXMLToken( _rLocalName, XML_XFORMS_LIST_SOURCE )  )
+        if ( ( _nNamespaceKey == XML_NAMESPACE_FORM || _nNamespaceKey == XML_NAMESPACE_OOO ) && IsXMLToken( _rLocalName, XML_XFORMS_LIST_SOURCE ) )
         {
             m_sListBindingID = _rValue;
             return true;
