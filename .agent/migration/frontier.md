@@ -898,8 +898,9 @@ xmerge        ✅  DONE 2026-10-02 — 5 jars to program/classes, all entry+mani
                    Verified x86+x64.  SUPERSEDED 2026-11-03 (bazel-trunk-sync): CPython
                    is now trunk's 3.11.15 on VS2019/UCRT, so there is no VC90 manifest
                    to embed — python-core-3.11.15/bin/python.exe is @python//:python
-                   as built, and the .pyd modules go to python-core-3.11.15/lib.  Not
-                   yet re-run live.  NOTE upstream's launcher does NOT put program/ on
+                   as built, and the .pyd modules go to python-core-3.11.15/lib.
+                   Verified live 2026-11-03: a Python macro runs from Tools > Macros
+                   (needed NDEBUG on the CPython build — see python/readme.md).  NOTE upstream's launcher does NOT put program/ on
                    PYTHONPATH: `import uno` resolves via sys.path[0] (script dir / CWD)
                    or a user PYTHONPATH — same as upstream, not a migration gap.
 javainstaller2 ⬜ (Java installer UI)

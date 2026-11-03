@@ -63,6 +63,12 @@ Differences from PCbuild:
   MSBuild's default Windows set (`%(AdditionalDependencies)`: `user32`,
   `advapi32`, `shell32`, …), which a Bazel link does not get.  Every extension
   module links that set explicitly (`_MSBUILD_DEFAULT_LIBS`).
+- **`NDEBUG`**: always defined (`_BASE_DEFINES`), as in PCbuild's Release
+  configuration, which is the only one built.  The toolchain adds it only
+  under `-c opt`; without it a fastbuild leaves the core's `assert()`s live,
+  and pyuno — which runs Python on thread states of its own rather than
+  through `PyGILState_Ensure` — trips `assert(PyGILState_Check())` in
+  `PyErr_Occurred` on the first macro call.
 - **`_decimal`**: `CONFIG_64` + `ANSI` instead of `CONFIG_64` + `MASM`: the
   portable-C division path, so the build needs no ml64 step for
   `libmpdec/vcdiv64.asm`.
