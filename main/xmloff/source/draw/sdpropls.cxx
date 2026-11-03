@@ -505,6 +505,7 @@ SvXMLEnumMapEntry	aXML_BitmapMode_EnumMap[] =
 	{ XML_REPEAT,					drawing::BitmapMode_REPEAT },
 	{ XML_STRETCH,					drawing::BitmapMode_STRETCH },
 	{ XML_BACKGROUND_NO_REPEAT, 	drawing::BitmapMode_NO_REPEAT },
+	{ XML_SCALE,						drawing::BitmapMode_STRETCH },	// ODF 1.4 isotropic scaling has no equivalent; last, so export still writes stretch
 	{ XML_TOKEN_INVALID, 0 }
 };
 
