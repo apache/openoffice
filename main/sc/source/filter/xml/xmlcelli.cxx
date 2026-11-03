@@ -787,8 +787,9 @@ bool lcl_IsEmptyOrNote( ScDocument* pDoc, const table::CellAddress& rCurrentPos 
     return ( !pCell || pCell->GetCellType() == CELLTYPE_NOTE );
 }
 
-static sal_uInt16 lcl_GetErrorCode( const rtl::OUString& rText )
+static sal_uInt16 lcl_GetErrorCode( const rtl::OUString& rRawText )
 {
+    const rtl::OUString rText( rRawText.trim() );
     static const struct { const sal_Char* pName; sal_uInt16 nCode; } aErrors[] =
     {
         { "#NULL!", errNoCode }, { "#DIV/0!", errDivisionByZero }, { "#VALUE!", errNoValue },
