@@ -2344,6 +2344,17 @@ void ScXMLExport::_ExportAutoStyles()
                             {
                                 std::vector<XMLPropertyState> xPropStates(
                                     GetTextParagraphExport()->GetParagraphPropertyMapper()->Filter(xShapeProperties));
+                                // ODF 1.4 Extended: the fill is in the style of the note shape, as for other shapes (XMLShapeExport)
+                                if( getDefaultVersion() == SvtSaveOptions::ODFVER_014_EXT )
+                                {
+                                    UniReference< XMLPropertySetMapper > xParaMapper( GetTextParagraphExport()->GetParagraphPropertyMapper()->getPropertySetMapper() );
+                                    for( std::vector<XMLPropertyState>::iterator aIter = xPropStates.begin(); aIter != xPropStates.end(); ++aIter )
+                                    {
+                                        if( aIter->mnIndex != -1 && ( xParaMapper->GetEntryType( aIter->mnIndex ) & XML_TYPE_PROP_MASK ) == XML_TYPE_PROP_GRAPHIC &&
+                                            xParaMapper->GetEarliestODFVersionForExport( aIter->mnIndex ) == SvtSaveOptions::ODFVER_EXTENSION )
+                                            aIter->mnIndex = -1;
+                                    }
+                                }
                                 rtl::OUString sParent;
                                 rtl::OUString sName( aNoteIter->maTextStyle );
                                 GetAutoStylePool()->AddNamed(sName, XML_STYLE_FAMILY_TEXT_PARAGRAPH, sParent, xPropStates);
