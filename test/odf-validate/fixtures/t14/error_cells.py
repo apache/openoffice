@@ -44,9 +44,15 @@ for t, _ in CASES:
 rows.append('<table:table-row><table:table-cell office:value-type="error" office:string-value="#DIV/0!" table:number-columns-repeated="3"/></table:table-row>')
 rows.append('<table:table-row><table:table-cell office:value-type="string" office:string-value="#DIV/0!"><text:p>#DIV/0!</text:p></table:table-cell></table:table-row>')
 rows.append('<table:table-row><table:table-cell office:value-type="error"><text:p><text:span>#DIV/</text:span><text:span>0!</text:span></text:p></table:table-cell></table:table-row>')
+rows.append('<table:table-row><table:table-cell office:value-type="error"><text:p>  #DIV/0!\n  </text:p></table:table-cell></table:table-row>')
+sort_rows = ('<table:table-row><table:table-cell office:value-type="float" office:value="2"><text:p>2</text:p></table:table-cell>'
+             '<table:table-cell office:value-type="error" office:string-value="#DIV/0!"><text:p>#DIV/0!</text:p></table:table-cell></table:table-row>'
+             '<table:table-row><table:table-cell office:value-type="float" office:value="1"><text:p>1</text:p></table:table-cell>'
+             '<table:table-cell office:value-type="error" office:string-value="#N/A"><text:p>#N/A</text:p></table:table-cell></table:table-row>')
 content = ('<?xml version="1.0" encoding="UTF-8"?><office:document-content %s office:version="1.4"><office:body><office:spreadsheet>'
-           '<table:table table:name="Sheet1"><table:table-column table:number-columns-repeated="3"/>%s</table:table></office:spreadsheet>'
-           '</office:body></office:document-content>') % (NS, "".join(rows))
+           '<table:table table:name="Sheet1"><table:table-column table:number-columns-repeated="3"/>%s</table:table>'
+           '<table:table table:name="Sort"><table:table-column table:number-columns-repeated="2"/>%s</table:table></office:spreadsheet>'
+           '</office:body></office:document-content>') % (NS, "".join(rows), sort_rows)
 manifest = ('<?xml version="1.0" encoding="UTF-8"?><manifest:manifest xmlns:manifest="urn:oasis:names:tc:opendocument:xmlns:manifest:1.0" '
             'manifest:version="1.4"><manifest:file-entry manifest:full-path="/" manifest:version="1.4" '
             'manifest:media-type="application/vnd.oasis.opendocument.spreadsheet"/>'
@@ -89,6 +95,21 @@ def check(label, doc, asstring):
     fails += not ok
     print("%-7s string control: error %d string %r  %s" % (label, c.getError(), c.getString(), "ok" if ok else "FAIL"))
     row("text in text:span", sh.getCellByPosition(0, len(CASES) + 2), 532)
+    row("text with whitespace", sh.getCellByPosition(0, len(CASES) + 3), 532)
+
+
+def check_sort(doc):
+    """Sorting by column A must take the error cells of column B along (rows 1/2: 2,#DIV/0! and 1,#N/A)."""
+    global fails
+    sh = doc.Sheets.getByName("Sort")
+    rng = sh.getCellRangeByName("A1:B2")
+    fld = uno.createUnoStruct("com.sun.star.table.TableSortField")
+    fld.Field, fld.IsAscending = 0, True
+    rng.sort((pv("SortFields", uno.Any("[]com.sun.star.table.TableSortField", (fld,))), pv("ContainsHeader", False)))
+    got = [sh.getCellByPosition(0, 0).getValue(), sh.getCellByPosition(1, 0).getError(), sh.getCellByPosition(0, 1).getValue(), sh.getCellByPosition(1, 1).getError()]
+    ok = got == [1.0, 32767, 2.0, 532]
+    fails += not ok
+    print("sort     expect [1.0, 32767, 2.0, 532] got %s  %s" % (got, "ok" if ok else "FAIL"))
 
 
 ctx = connect(port)
@@ -98,6 +119,7 @@ doc = load(src)
 if doc is None:
     sys.exit("could not load " + src)
 check("load", doc, False)
+check_sort(doc)
 # an unchanged sheet is copied verbatim in some modes, so touch it to force the real export
 doc.Sheets.getByIndex(0).getCellByPosition(5, 0).setValue(1)
 dst = os.path.join(out, "error-cells-resaved.ods")
