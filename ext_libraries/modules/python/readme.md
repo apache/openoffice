@@ -1,124 +1,166 @@
-# Python 2.7.18 — Bazel Module
+# Python — Bazel module
 
-Builds `python27.dll` from source using MSVC via the local file registry at
-`ext_libraries/modules/python/`.
+The build uses **3.11.15**, trunk's version (`pyversion.mk`).  2.7.18 is still in
+the registry, but nothing depends on it any more; trunk's pyuno is Python-3-only
+since its "Python 3 migration".
+
+`makefile.mk`, `prj/`, `pyversion*.mk` and the `*.patch` files in this directory
+are the relocated dmake recipe.  Bazel reads only the `<version>/` directories.
 
 ## Registry layout
 
 ```
 ext_libraries/modules/python/
   metadata.json
-  2.7.18/
+  3.11.15/
     MODULE.bazel
-    source.json          ← URL + overlay hashes
+    source.json            ← URL + overlay hashes
     overlay/
       MODULE.bazel
-      BUILD.bazel        ← cc_binary + filegroup + cc_library
-      PC/config.c        ← minimal built-in module table (replaces stock PC/config.c)
-      PC/pyconfig.h      ← removes #pragma comment(lib,"python27.lib") auto-link
+      BUILD.bazel          ← every target; source lists are PCbuild's
+      build_defs.bzl       ← freeze / deepfreeze actions, .dll → .pyd rename
+      PC/pathcch.h         ← Windows 7: shadows the SDK header
+      PC/pathcch_win7.c    ← Windows 7: PathCch* with fallbacks
+      PC/aoo_getpath.c     ← string defines PCbuild passes per file
+      PC/aoo_sysmodule.c       (one wrapper per file, each #includes
+      PC/aoo_dynload_win.c      the original; no CPython file is
+      PC/aoo_dl_nt.c            modified)
+      PC/aoo_win7_compat.h ← Windows 7: Windows 8 constants, force-included
+      PC/aoo_dllhmodule_static.c ← PyWin_DLLhModule for _bootstrap_python
+      PC/aoo_bootstrap_python.c  ← _bootstrap_python, honouring PYTHONHOME
+  2.7.18/                  ← previous version, unused
 ```
 
 ## Targets
 
 | Target | Output |
 |--------|--------|
-| `@python//:python27` | `python27.dll` (linkshared) |
-| `@python//:python27_implib` | `python27.if.lib` (interface_library filegroup) |
-| `@python//:python_headers` | `Include/*.h` + `PC/pyconfig.h` |
+| `@python//:python311` | `python311.dll` |
+| `@python//:python311_implib` | `python311.if.lib` |
+| `@python//:python_headers` | `Include/**` + `PC/pyconfig.h` |
+| `@python//:python` | `python.exe` (staged as `python-core-<ver>/bin/python.exe`) |
+| `@python//:python_pyds` | the 14 extension modules, as `.pyd` |
+| `@python//:python_lib` | `Lib/**`, without tests, IDLE and tkinter |
 
-## Key build decisions
+## What it builds
 
-### `_socket` is linked in, not built as `_socket.pyd`
-Upstream CPython builds a set of *extension modules* as separate `.pyd` DLLs
-(`PCbuild/_socket.vcproj`, `select`, `unicodedata`, `_ssl`, `_ctypes`, …).
-This port has **no `.pyd` extension-module targets at all** — `python27.dll`
-contains only what `PC/config.c` lists in `_PyImport_Inittab`.
+What trunk builds with PCbuild + MSBuild (`makefile.mk`, COMEX 14 branch):
+`pythoncore`, `python`, and the extension modules `_socket select unicodedata
+pyexpat _elementtree _multiprocessing _overlapped _asyncio _queue _uuid
+_zoneinfo winsound _decimal _msi`.  Each is a native `cc_binary`, with the
+sources, defines and libraries of its `.vcxproj`.  Not built, as on trunk:
+`_ctypes`, `_ssl`/`_hashlib`, `_bz2`, `_lzma`, `_sqlite3`, `_tkinter`.
 
-`socketmodule.c` is the one exception, compiled into `python27.dll` and listed
-in the overlay's `PC/config.c` as `{"_socket", init_socket}`.  It is not
-optional: [main/pyuno/source/module/uno.py](../../../main/pyuno/source/module/uno.py)
-does `import socket` at module scope ("since on Windows sal3.dll no longer calls
-WSAStartup"), so without `_socket` every `import uno` raises
-`ImportError: No module named _socket`.  That kills `import pythonloader`, so
-`pyuno_loader.cxx`'s `CreateInstance()` throws before `activate()` is ever
-reached and the whole Python UNO loader is dead — visible as an empty tree and
-greyed buttons in Tools ▸ Macros ▸ Organize Macros ▸ Python, with the exception
-swallowed by `ProviderCache`.  `ws2_32.lib` was already in `linkopts`.
+Trunk's four patches (`python-md5`, `python-solver-before-std`,
+`python-3.11.15-sysbase`, `python-3.11.15-nohardlink`) touch only the Unix build
+— `setup.py`, `Modules/Setup`, `configure` — and none applies here.
 
-Expect `warning C4005: 'INVALID_SOCKET' : macro redefinition` — `socketmodule.c`
-defines it before including the SDK's `winsock2.h`.  Harmless, same value.
+Differences from PCbuild:
 
-**Still missing**: every other extension module.  A Python macro that imports
-`select`, `unicodedata`, `_ssl`, `_ctypes`, `pyexpat`, `bz2` … will fail the same
-way.  Add them the same way (source into `_MODULE_SRCS` + entry in `PC/config.c`)
-as they are needed, or build real `.pyd` targets — `//build/rules:copy_file.bzl`
-exists for the `.dll` → `.pyd` rename, see `main/pyuno/readme.md`.
+- **zlib**: `zlibmodule.c` links the registry's `@zlib` (built `Z_PREFIX`)
+  rather than compiling zlib's sources into the DLL.
+- **Default libraries**: each `.vcxproj` lists its libraries on top of
+  MSBuild's default Windows set (`%(AdditionalDependencies)`: `user32`,
+  `advapi32`, `shell32`, …), which a Bazel link does not get.  Every extension
+  module links that set explicitly (`_MSBUILD_DEFAULT_LIBS`).
+- **`_decimal`**: `CONFIG_64` + `ANSI` instead of `CONFIG_64` + `MASM`: the
+  portable-C division path, so the build needs no ml64 step for
+  `libmpdec/vcdiv64.asm`.
 
-### No DEF file
-Python 2.7.18's tarball does not include `PC/python27.def`. Exports are
-produced via `__declspec(dllexport)` through the `Py_BUILD_CORE` →
-`PyAPI_FUNC` macro chain. No `win_def_file` is needed.
+## Windows 7
 
-### PC/pyconfig.h — no ./configure needed
-The Windows pre-generated `PC/pyconfig.h` is used directly. No autoconf step.
+Python 3.9+ supports Windows 8.1 and later (`Doc/using/windows.rst`).  Our floor
+is Windows 7 SP1, so the overlay bridges the gap without touching CPython's
+files:
 
-### Defines
-- `Py_BUILD_CORE` — enables `__declspec(dllexport)` on all public API
-- `NTDDI_VERSION=0x06010000` — pre-empts `pyconfig.h`'s XP-era `#ifndef`
-  which conflicts with the toolchain's `/D_WIN32_WINNT=0x0601` (Vista)
-- `MS_WINDOWS`, `WITH_THREAD`, `NT_THREADS` — omitted; `PC/pyconfig.h`
-  already defines them (adding them again causes C4005 redefinition warnings)
-- `snprintf=_snprintf` — omitted; `Python/pyport.h` handles this for MSVC
+- **API level.** `PC/pyconfig.h` asks for `_WIN32_WINNT 0x0602`, but only
+  `#ifndef`.  The toolchain's `0x0601` stands, and `WINVER`/`NTDDI_VERSION` are
+  matched to it (`sdkddkver.h` rejects a mismatch).  So any Windows 8 API used
+  without a runtime check fails to *compile*, which is the audit.
+- **Windows 8 constants.** A scan of every name the 10.0.19041.0 SDK declares
+  under a Windows 8+ guard, against the compiled sources, found one real use:
+  `LCMAP_SORTHANDLE`/`LCMAP_HASH` in `_winapi.LCMapStringEx`, which only
+  rejects those flags.  `PC/aoo_win7_compat.h`, force-included with `/FI`,
+  defines them.  Constants only; a function belongs in the pathcch pattern
+  below.
+- **`MSC`.** The toolchain defines it globally.  The SDK uses it as a member
+  name (`ws2bth.h`), so every Python target passes `/UMSC`.
+- **`pathcch.lib`.** pythoncore links it.  Its API set,
+  `api-ms-win-core-path-l1-1-0`, does not exist on Windows 7, so
+  `python311.dll` would not even load there.  `PC/pathcch.h` sits in `PC/`,
+  which is on the include path ahead of the SDK, so `#include <pathcch.h>`
+  finds it instead.  `PC/pathcch_win7.c` defines the three functions Python
+  calls: `PathCchSkipRoot`, `PathCchFindExtension` and `PathCchCombineEx`.
+  Each one calls KernelBase.dll's real export when it exists (Windows 8 and
+  later; KernelBase is always loaded, so this loads nothing and searches no
+  path).  Only on Windows 7 does a fallback run, written from the documented
+  contract.  `PathCchCombineEx` falls back to shlwapi's `PathCombineW`,
+  limited to `MAX_PATH`, which is Windows 7's own limit without `\\?\`.
+  `pathcch.lib` is not linked.
+- **`LOAD_LIBRARY_SEARCH_*`.** `Python/dynload_win.c` loads every `.pyd` with
+  these flags.  Windows 7 SP1 accepts them with update **KB2533623**
+  installed, the same class of prerequisite as the UCRT update (KB2999226)
+  that any VS2019-built binary already needs.  `AddDllDirectory` and
+  `RemoveDllDirectory` are looked up at runtime by posixmodule.c, so they need
+  nothing.
 
-### include paths
-- `Include/` — public Python headers (`Python.h` etc.)
-- `PC/` — `pyconfig.h` (Windows pre-generated)
-- `Python/` — internal headers (`importdl.h`, used by `PC/import_nt.c`)
+To check a build:
+```
+dumpbin /imports python311.dll | findstr /i "api-ms-win-core-path pathcch"
+```
+should print nothing.
 
-### Excluded source files
+## No host Python
 
-**Python/ (Unix-only or conflicts):**
-| File | Reason |
-|------|--------|
-| `dynload_aix/atheos/beos/dl/hpux/os2/shlib/stub.c` | OS-specific dynloaders |
-| `dynload_next.c` | macOS/NeXTStep — requires `mach-o/dyld.h` |
-| `mactoolboxglue.c` | macOS — requires `Carbon/Carbon.h` |
-| `getcwd.c` | POSIX fallback; Windows uses `_getcwd` from CRT |
-| `dup2.c`, `strdup.c` | POSIX shims not needed on Windows |
-| `pyfpe.c` | SIGFPE handling (Unix-only) |
-| `sigcheck.c` | Stub superseded by `Modules/signalmodule.c` |
-| `intrcheck.c` | Stub superseded by `Modules/signalmodule.c` |
-| `frozenmain.c` | Frozen-exe launcher — unresolved `PyWinFreeze_*` |
+CPython 3.11 compiles part of its stdlib into the interpreter:
 
-**Parser/ (pgen build-tool files not part of the runtime DLL):**
-| File | Reason |
-|------|--------|
-| `pgenmain.c` | pgen `main()` — duplicates `pythonrun`/`errors` symbols |
-| `tokenizer_pgen.c` | pgen tokenizer — duplicates `tokenizer.c` symbols |
-| `pgen.c` | Parser generator — build tool only |
-| `printgrammar.c` | pgen utility — build tool only |
-| `intrcheck.c` | Stub superseded by `Modules/signalmodule.c` |
+1. `_freeze_module.exe` turns each module into a header,
+   `Python/frozen_modules/<name>.h`.
+2. `Tools/scripts/deepfreeze.py` turns those headers into
+   `Python/deepfreeze/deepfreeze.c`.
 
-Note: `Parser/intrcheck.c` is distinct from `Python/intrcheck.c` — both exist
-in the source tree. Both must be excluded; only the `Parser/` one was causing
-the linker conflict (it is picked up by `glob(["Parser/*.c"])`).
+PCbuild runs step 2 with a Python it finds on the machine.  Here it runs under
+`_bootstrap_python.exe`, the core linked statically without `frozen.c` and
+`deepfreeze.c` and with only importlib frozen, which is how the Unix build
+does it.  Both tools are built for the exec platform and run through
+`ctx.actions.run` (`build_defs.bzl`), with `PYTHONHOME` pointing at the
+extracted source.
 
-### getopt.c — kept
-`Python/getopt.c` is Python's own command-line option parser providing
-`_PyOS_GetOpt`, `_PyOS_optind`, `_PyOS_optarg` etc. required by
-`Modules/main.c`. It is NOT a POSIX shim and must NOT be excluded.
+`_bootstrap_python` starts from an isolated config, which ignores every
+`PYTHON*` variable; on Unix it needs none, because it runs inside the build
+tree.  Here it sits in `bazel-out`, so `PC/aoo_bootstrap_python.c` wraps it:
+it takes `home` from `PYTHONHOME` and turns bytecode writing off, so nothing is
+written into the source repository.  It reads no other variable.  It also
+skips `site` (as `-S` would), which reads `sys.winver`, set only in the DLL
+build.
 
-### Overlay PC/config.c
-The stock `PC/config.c` references modules not compiled into this minimal DLL
-(CJK codecs, zlib, mmap, audioop, imageop, lsprof, hotshot). An overlay
-`PC/config.c` is provided that lists only the modules actually compiled in.
+The deepfreeze rule's input list is named `read_inputs`, not `data`.
+`//main/staging`'s collection aspect walks `data` and `srcs`, and this list is
+the whole stdlib as `.py` files, which staging would otherwise install flat
+into `program/`.
 
-### Overlay cache update procedure
-After any change to an overlay file:
-1. Recompute SHA-256: `cat overlay/FILE | openssl dgst -sha256 -binary | base64`
-2. Update `source.json` with `"sha256-<base64>"` for the changed file
-3. Run `bazel mod deps --lockfile_mode=refresh`
-4. Run `bazel build @python//:python27`
+## Linking against python311.dll
 
-If the analysis cache persists stale (observed with glob changes to external
-modules), run `bazel shutdown` before `bazel mod deps --lockfile_mode=refresh`.
+`PC/pyconfig.h` asks for `python311.lib` by `#pragma comment(lib)` in every
+translation unit outside the core.  Bazel's import library is
+`python311.if.lib`, so a consumer passes it explicitly and adds
+`/NODEFAULTLIB:python311.lib`, or the link fails with LNK1104.  The 2.7.18
+overlay rewrote `pyconfig.h` for this; 3.11.15 leaves the file alone.
+
+Under `_DEBUG`, `pyconfig.h` also defines `Py_DEBUG`, which changes the object
+layout.  pyuno undefines `_DEBUG` in dbg builds, because it always links the
+release DLL.
+
+## Version in one place
+
+`//main/pyuno:python_version.bzl` holds `PYTHON_VERSION`.  It names
+`program/python-core-<ver>`, which the launcher (`zipcore/pyversion.hxx`), the
+staging layout and the generated `pythonloader.uno.ini` all read.  It must
+match the `python` bazel_dep in `MODULE.bazel`.
+
+## Changing an overlay file
+
+1. Recompute its hash: `openssl dgst -sha256 -binary overlay/FILE | base64`.
+2. Put `"sha256-<base64>"` into `source.json`.  A wrong hash is silently
+   ignored and the old file is kept.
+3. Run `bazel mod deps --lockfile_mode=refresh`.

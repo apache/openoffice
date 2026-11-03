@@ -1,6 +1,10 @@
 # pyuno — Bazel Module
 
-Builds the Python-UNO bridge from `main/pyuno/`.
+Builds the Python-UNO bridge from `main/pyuno/`, against CPython **3.11.15**
+(`@python`, see `ext_libraries/modules/python/readme.md`).  Trunk's pyuno is
+Python-3-only since its "Python 3 migration" (27dee00ef8): no
+`PY_MAJOR_VERSION` guards are left, so it does not compile against 2.7 at all.
+The version lives in `python_version.bzl`.
 
 ## Targets
 
@@ -38,9 +42,11 @@ enumeration), and each missing piece fails differently:
    `profileitem_python.scp`).  Missing ⇒ `Py_Initialize()` finds no stdlib ⇒
    `Py_FatalError` ⇒ **`exit()` kills the whole soffice process**, no exception,
    no crash dump — just `NtTerminateProcess` right after `pyuno` loads.
-   Source: `main/staging/pythonloader.uno.ini`.
-2. **`program/python-core-2.7.18/lib`** — the stdlib itself, same failure mode.
-   Staged by `//main/staging:install_python_lib`, part of `:install`.
+   Generated: `//main/staging:pythonloader_uno_ini`, from `PYTHON_VERSION`.
+2. **`program/python-core-<ver>/lib`** — the stdlib itself, same failure mode.
+   Staged by `//main/staging:install_python_lib`, part of `:install`; the
+   extension modules (`_socket.pyd`, `select.pyd`, …) go into the same
+   directory, by `:install_python_pyds`.
 3. **`pyuno.pyd` naming** — see below.
 
 The `.py` files (`pythonloader.py`, `uno.py`, `unohelper.py` here;
@@ -51,19 +57,9 @@ The `.py` files (`pythonloader.py`, `uno.py`, `unohelper.py` here;
 ## Key build decisions
 
 ### `.pyd`, not `.dll` — and exactly one copy
-Python 2.7's Windows extension loader accepts only one suffix:
-
-```c
-/* Python/dynload_win.c */
-const struct filedescr _PyImport_DynLoadFiletab[] = {
-#ifdef _DEBUG
-    {"_d.pyd", "rb", C_EXTENSION},
-#else
-    {".pyd", "rb", C_EXTENSION},
-#endif
-    {0, 0}
-};
-```
+CPython's Windows extension loader accepts only `.pyd` suffixes
+(`_PyImport_DynLoadFiletab` in `Python/dynload_win.c`: `.cp311-win_amd64.pyd`
+and `.pyd` in release, their `_d` forms under `_DEBUG`) — never `.dll`.
 
 `uno.py` opens with `import pyuno`, so a `pyuno.dll` yields
 `ImportError: No module named pyuno`, `import pythonloader` fails with it, and
@@ -104,21 +100,18 @@ objects ⇒ each half rejects the other's objects (`getRuntimeImpl` looks up
 instance for free because `pythonloader`'s import and Python's `import pyuno`
 resolve to the same path.
 
-### pyconfig.h overlay — no auto-link pragma
-Python 2.7's `PC/pyconfig.h` contains:
-```c
-#pragma comment(lib,"python27.lib")
-```
-This fires for any MSVC extension that includes `Python.h` (when
-`Py_BUILD_CORE` is not defined).  Bazel names the import library
-`python27.if.lib`, not `python27.lib`, so MSVC's linker fails with
-LNK1104.
+### `/NODEFAULTLIB:python311.lib`
+CPython's `PC/pyconfig.h` contains `#pragma comment(lib,"python311.lib")`,
+which fires in any translation unit that includes `Python.h` outside the
+interpreter core.  Bazel names the import library `python311.if.lib`, so the
+linker fails with LNK1104.  `python311.if.lib` is passed explicitly
+(`additional_linker_inputs` + `$(execpath @python//:python311_implib)`) and
+`/NODEFAULTLIB:python311.lib` cancels the pragma.  (For 2.7.18 an overlay
+`pyconfig.h` deleted the pragma instead; 3.11.15 leaves CPython's files alone.)
 
-**Fix**: an overlay file at
-`ext_libraries/modules/python/2.7.18/overlay/PC/pyconfig.h` removes
-the pragma block.  The overlay hash is registered in `source.json`.
-`python27.if.lib` is supplied explicitly via `additional_linker_inputs`
-and `$(execpath @python//:python27_implib)` in linkopts.
+In dbg builds `_DEBUG` is undefined for these targets: `pyconfig.h` turns it
+into `Py_DEBUG`, a different object layout from the release `python311.dll`
+we link.
 
 ### /Zc:wchar\_t-
 Required throughout — `sal_Unicode` is `unsigned short`; native
@@ -141,7 +134,7 @@ are already zero by default in release, so only debug is affected.
 ### Windows-only — pyuno_loader (pyuno.so) skipped
 `Library_pyuno_loader.mk` builds a thin `dlopen` wrapper that Python
 uses on *nix to load `pyuno.so` lazily.  Windows does not have
-`dlfcn.h`, and `python27.dll` is loaded implicitly via the import
+`dlfcn.h`, and `python311.dll` is loaded implicitly via the import
 library, so this target is not needed.
 
 ### `program/python.exe` is the launcher, not CPython (2026-10-02)
@@ -149,18 +142,16 @@ library, so this target is not needed.
 to script the office from outside.  It sets `PATH` (program/ first),
 `PYTHONPATH` (the core `lib` + `site-packages`, then any user value),
 `PYTHONHOME`, `UNO_PATH` and `URE_BOOTSTRAP` (program/fundamental.ini) from its
-own location, then runs `python-core-2.7.18/bin/python.exe` and returns its
-exit code.  It links `ooopathutils` and `user32` (wsprintfW) and embeds the
-VC90 manifest at RT_MANIFEST id 1.  `pyversion.hxx` is generated from
-`zipcore/pyversion.inc` (sed `@` → `2.7.18`; keep in step with the
-`python-core-<ver>` directory name).
+own location, then runs `python-core-<ver>/bin/python.exe` and returns its
+exit code.  It links `ooopathutils` and `user32` (wsprintfW).
+`pyversion.hxx` is generated from `zipcore/pyversion.inc` (sed `@` →
+`PYTHON_VERSION`).
 
-Before this, program/ held @python's raw `python.exe`, which could not start
-at all (0xC0000135): `@python` links it `/MANIFEST:NO` and embeds none, so
-`MSVCR90.dll` is unresolvable.  The interpreter under `python-core-2.7.18/bin`
-is therefore `:python_core_exe` — a copy with the VC90 application manifest
-embedded by the SDK's `mt.exe`, done here because the external module cannot
-name a main-repo label.
+The interpreter under `python-core-<ver>/bin` is `@python//:python` as built.
+Under VC9 it needed the VC90 application manifest embedded afterwards
+(`:python_core_exe`, with the SDK v7.0 `mt.exe`), and so did this launcher; the
+VS2019 toolset links the UCRT and vcruntime140, which load by ordinary DLL
+search, so both are now plain links.
 
 Upstream's launcher does **not** put program/ on `PYTHONPATH`, so `import uno`
 resolves through `sys.path[0]` — the script's directory, or the CWD for `-c` —
