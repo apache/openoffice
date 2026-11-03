@@ -3152,6 +3152,14 @@ namespace xmloff { namespace token {
         // ODF 1.3
         XML_CREATOR_INITIALS,
 
+        // ODF 1.4
+        XML_HANDLE_POSITION_X,
+        XML_HANDLE_POSITION_Y,
+        XML_HANDLE_POLAR_POLE_X,
+        XML_HANDLE_POLAR_POLE_Y,
+        XML_HANDLE_POLAR_RADIUS,
+        XML_HANDLE_POLAR_ANGLE,
+
         XML_TOKEN_END
     };
 

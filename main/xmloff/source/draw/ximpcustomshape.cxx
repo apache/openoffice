@@ -1379,6 +1379,11 @@ SvXMLImportContext* XMLEnhancedCustomShapeContext::CreateChildContext( sal_uInt1
 	else if ( aTokenEnum == EAS_handle )
 	{
 		std::vector< com::sun::star::beans::PropertyValue > aHandle;
+        // ODF 1.4: draw:handle-position-x/-y, or draw:handle-polar-pole-x/-y with -radius and -angle;
+        // the old draw:handle-position and draw:handle-polar win when both forms are present
+		bool bHasPosition = false, bHasPolar = false;
+		com::sun::star::drawing::EnhancedCustomShapeParameter aPosX, aPosY, aPoleX, aPoleY, aRadius, aAngle;
+		bool bPosX = false, bPosY = false, bPoleX = false, bPoleY = false, bRadius = false, bAngle = false;
         const sal_Int16 nLength = xAttrList->getLength();
 		for( sal_Int16 nAttr = 0; nAttr < nLength; nAttr++ )
 		{
@@ -1398,6 +1403,43 @@ SvXMLImportContext* XMLEnhancedCustomShapeContext::CreateChildContext( sal_uInt1
 				break;
 				case EAS_handle_position :
 					GetEnhancedParameterPair( aHandle, rValue, EAS_Position );
+					bHasPosition = true;
+				break;
+				case EAS_handle_position_x :
+				{
+					sal_Int32 nIndex = 0;
+					bPosX = GetNextParameter( aPosX, nIndex, rValue );
+				}
+				break;
+				case EAS_handle_position_y :
+				{
+					sal_Int32 nIndex = 0;
+					bPosY = GetNextParameter( aPosY, nIndex, rValue );
+				}
+				break;
+				case EAS_handle_polar_pole_x :
+				{
+					sal_Int32 nIndex = 0;
+					bPoleX = GetNextParameter( aPoleX, nIndex, rValue );
+				}
+				break;
+				case EAS_handle_polar_pole_y :
+				{
+					sal_Int32 nIndex = 0;
+					bPoleY = GetNextParameter( aPoleY, nIndex, rValue );
+				}
+				break;
+				case EAS_handle_polar_radius :
+				{
+					sal_Int32 nIndex = 0;
+					bRadius = GetNextParameter( aRadius, nIndex, rValue );
+				}
+				break;
+				case EAS_handle_polar_angle :
+				{
+					sal_Int32 nIndex = 0;
+					bAngle = GetNextParameter( aAngle, nIndex, rValue );
+				}
 				break;
 				case EAS_handle_range_x_minimum :
 					GetEnhancedParameter( aHandle, rValue, EAS_RangeXMinimum );
@@ -1413,6 +1455,7 @@ SvXMLImportContext* XMLEnhancedCustomShapeContext::CreateChildContext( sal_uInt1
 				break;
 				case EAS_handle_polar :
 					GetEnhancedParameterPair( aHandle, rValue, EAS_Polar );
+					bHasPolar = true;
 				break;
 				case EAS_handle_radius_range_minimum :
 					GetEnhancedParameter( aHandle, rValue, EAS_RadiusRangeMinimum );
@@ -1422,6 +1465,39 @@ SvXMLImportContext* XMLEnhancedCustomShapeContext::CreateChildContext( sal_uInt1
 				break;
 				default:
 					break;
+			}
+		}
+		if ( !bHasPosition && !bHasPolar )
+		{
+			beans::PropertyValue aProp;
+			com::sun::star::drawing::EnhancedCustomShapeParameterPair aPair;
+			if ( bPosX && bPosY )
+			{
+				aPair.First = aPosX;
+				aPair.Second = aPosY;
+				aProp.Name = EASGet( EAS_Position );
+				aProp.Value <<= aPair;
+				aHandle.push_back( aProp );
+			}
+			else if ( bPoleX && bPoleY )
+			{
+				aPair.First = aPoleX;
+				aPair.Second = aPoleY;
+				aProp.Name = EASGet( EAS_Polar );
+				aProp.Value <<= aPair;
+				aHandle.push_back( aProp );
+				// the handle position of a polar handle is its radius and angle, both 0 when absent
+				sal_Int32 nIndex = 0;
+				if ( !bRadius )
+					GetNextParameter( aRadius, nIndex, rtl::OUString::createFromAscii( "0" ) );
+				nIndex = 0;
+				if ( !bAngle )
+					GetNextParameter( aAngle, nIndex, rtl::OUString::createFromAscii( "0" ) );
+				aPair.First = aRadius;
+				aPair.Second = aAngle;
+				aProp.Name = EASGet( EAS_Position );
+				aProp.Value <<= aPair;
+				aHandle.push_back( aProp );
 			}
 		}
 		beans::PropertyValues aPropSeq( aHandle.size() );
