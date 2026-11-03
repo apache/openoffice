@@ -20,10 +20,10 @@
 #**************************************************************
 
 # usage: runpy.sh fixtures/t13/prompt_check.py <port> <package.odt|ods|odp|odg> <outdir>
-# Loads copies of one ODF 1.2 package whose office:version and manifest:version are rewritten to 1.2, 1.3 and 1.4, with an
+# Loads copies of one ODF 1.2 package whose office:version and manifest:version are rewritten to 1.2, 1.3, 1.4 and 1.5, with an
 # interaction handler, and reports whether the "created with a newer version" request (FutureDocumentVersionProductUpdateRequest)
-# was raised, counted as a call of the handler (the documents used raise no other request). Expected: none for 1.2 and 1.3, one for
-# 1.4 (the negative control). Needs Load/ShowOfficeUpdateDialog = true.
+# was raised, counted as a call of the handler (the documents used raise no other request). Expected: none for 1.2, 1.3 and 1.4, one for
+# 1.5 (the negative control). Needs Load/ShowOfficeUpdateDialog = true.
 import os, re, sys, zipfile
 import uno, unohelper
 from com.sun.star.task import XInteractionHandler
@@ -63,7 +63,7 @@ ctx = connect(port)
 desk = desktop(ctx)
 ext = os.path.splitext(src)[1]
 results = {}
-for version, want in (("1.2", False), ("1.3", False), ("1.4", True)):
+for version, want in (("1.2", False), ("1.3", False), ("1.4", False), ("1.5", True)):
     dst = os.path.join(out, "v" + version.replace(".", "") + ext)
     rewrite(version, dst)
     h = Handler()

@@ -165,7 +165,7 @@ gspec = importlib.util.spec_from_file_location("gate", os.path.join(D, "gate.py"
 gt = importlib.util.module_from_spec(gspec)
 gspec.loader.exec_module(gt)
 vol = gt.read_volatile()
-checks["gate: gate-volatile.tsv lists the 13 documents with a reason"] = len(vol) == 13 and all(len(r) > 10 for r in vol.values())
+checks["gate: gate-volatile.tsv lists the 14 documents with a reason"] = len(vol) == 14 and all(len(r) > 10 for r in vol.values())
 checks["gate: rewrite_jobs keeps sources and moves outputs"] = gt.rewrite_jobs([("/a/b.odt", "/x/0001_b.odt")], "/new") == [("/a/b.odt", "/new/0001_b.odt")]
 fake = {"0067_AddInChart.ods": {"ndiff": 1}, "0001_x.odt": {"ndiff": 0}, "0002_y.odt": {"ndiff": 3}}
 checks["gate: classify separates volatile from unexplained differences"] = gt.classify(fake, vol) == (1, ["0067_AddInChart.ods"], ["0002_y.odt"])
