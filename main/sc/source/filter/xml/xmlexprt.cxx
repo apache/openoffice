@@ -2981,7 +2981,9 @@ void ScXMLExport::WriteCell(ScMyCell& aCell, sal_Int32 nEqualCellCount)
 			{
 				rtl::OUStringBuffer sFormula;
 				ScFormulaCell* pFormulaCell((ScFormulaCell*) pBaseCell);
-				if (!bIsMatrix || (bIsMatrix && bIsFirstMatrixCell))
+				// an error without a formula (error cell, Excel import) has no valid formula to write
+				const bool bIsErrorOnly = pFormulaCell->GetCode()->GetCodeError() && !pFormulaCell->GetCode()->GetLen();
+				if (!bIsErrorOnly && (!bIsMatrix || (bIsMatrix && bIsFirstMatrixCell)))
 				{
                     const formula::FormulaGrammar::Grammar eGrammar = pDoc->GetStorageGrammar();
                     sal_uInt16 nNamespacePrefix = (eGrammar == formula::FormulaGrammar::GRAM_ODFF ? XML_NAMESPACE_OF : XML_NAMESPACE_OOOC);
@@ -2996,7 +2998,7 @@ void ScXMLExport::WriteCell(ScMyCell& aCell, sal_Int32 nEqualCellCount)
 						AddAttribute(sAttrFormula, GetNamespaceMap().GetQNameByKey( nNamespacePrefix, sOUFormula.copy(1, sOUFormula.getLength() - 2), sal_False ));
 					}
 				}
-				if (pFormulaCell->IsValue())
+				if (!bIsErrorOnly && pFormulaCell->IsValue())
 				{
 					sal_Bool bIsStandard;
 					rtl::OUString sCurrency;
