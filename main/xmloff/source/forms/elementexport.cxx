@@ -1890,7 +1890,11 @@ namespace xmloff
     void OControlExport::exportXFormsListAttributes()
     {
         rtl::OUString sBindName = getXFormsListBindName( m_xProps );
-        AddAttribute( XML_NAMESPACE_FORM, XML_XFORMS_LIST_SOURCE, sBindName );
+        // the ODF 1.4 schema allows form:xforms-list-source on a list box only
+        if ( m_eType == COMBOBOX && m_rContext.getGlobalContext().getDefaultVersion() == SvtSaveOptions::ODFVER_014_EXT )
+            AddAttribute( XML_NAMESPACE_OOO, XML_XFORMS_LIST_SOURCE, sBindName );
+        else
+            AddAttribute( XML_NAMESPACE_FORM, XML_XFORMS_LIST_SOURCE, sBindName );
     }
 	//---------------------------------------------------------------------
     void OControlExport::exportXFormsSubmissionAttributes()
