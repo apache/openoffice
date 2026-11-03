@@ -66,7 +66,7 @@ def make_odf_controls(outdir):
     OFFNS = ('xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" '
              'xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" '
              'xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:dc="http://purl.org/dc/elements/1.1/" '
-             'xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0"')
+             'xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"')
 
 
     def mkdoc(name, ext, mime, streams):
@@ -110,6 +110,15 @@ def make_odf_controls(outdir):
     for n, attrs in (("scaleone", 'style:scale-to="80%"'), ("scalexy", 'style:scale-to-X="2" style:scale-to-Y="3"'), ("scaleboth", 'style:scale-to-X="2" style:scale-to-Y="3" style:scale-to="80%"')):
         mkdoc(n, "odt", TEXT, {"content.xml": ("office:document-content", "<office:body><office:text><text:p>hi</text:p></office:text></office:body>"),
                               "styles.xml": ("office:document-styles", '<office:automatic-styles><style:page-layout style:name="pm1"><style:page-layout-properties %s/></style:page-layout></office:automatic-styles>' % attrs)})
+    # 1.4 (OFFICE-4142): draw:decorative on style:graphic-properties is new, invalid in 1.2 and 1.3; basedeco is the same style without it
+    for n, attrs in (("basedeco", ""), ("newdeco", ' draw:decorative="true"')):
+        mkdoc(n, "odt", TEXT, {"content.xml": ("office:document-content", "<office:body><office:text><text:p>hi</text:p></office:text></office:body>"),
+                              "styles.xml": ("office:document-styles", '<office:automatic-styles><style:style style:name="gr1" style:family="graphic"><style:graphic-properties%s/></style:style></office:automatic-styles>' % attrs)})
+    # 1.4 (OFFICE-4110): draw:handle needs the new position-x/-y or polar-pole pair; the old combined attribute alone is valid in 1.2 and 1.3 only.
+    # The pair itself is invalid in 1.2 and 1.3.
+    for n, attrs in (("handleold", 'draw:handle-position="0 0"'), ("handlenew", 'draw:handle-position-x="0" draw:handle-position-y="0"'),
+                     ("handlepolar", 'draw:handle-polar-pole-x="0" draw:handle-polar-pole-y="0"')):
+        mkdoc(n, "odt", TEXT, {"content.xml": ("office:document-content", '<office:body><office:text><text:p><draw:custom-shape><draw:enhanced-geometry><draw:handle %s/></draw:enhanced-geometry></draw:custom-shape></text:p></office:text></office:body>' % attrs)})
 
 
 def make_pkg_controls(outdir):
