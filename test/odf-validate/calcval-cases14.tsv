@@ -1,0 +1,67 @@
+# calcval cases for the ODF 1.4 Part 4 changes (calcval.py).  Columns (tab separated): id, formula, mode, expected, note.
+# formula: AOO API syntax (English function names, ';' separators, '|' row separator in inline arrays), leading '='.
+# mode: cell | cell@N (plain cell, scratch cell AA<N>; default AA1) | array[:CxR] (setArrayFormula on AA1 sized C columns x R rows; default 1x1).
+# expected: '-' = record only; number (relative tolerance 1e-9; '~' prefix = 1e-6); '#N/A'; '#ERR' (any error); 's:text'; for array modes a '|' separated row-major list of those.
+# RECEIVED, BESSELK, BESSELY, CONVERT are Analysis add-in functions: calcval.py rewrites them to their programmatic names.
+# Expected values come from the public ODF 1.4 Part 4 text (OpenDocument-v1.4-os-part4-formula).
+#
+# Data written by calcval.py on sheet 1 (second sheet is named Other):
+#   A1:A9  y,x,x,y,x,y,x,x,y            B1:B9  y,x,y,y,y,y,x,y,x
+#   D1:F5  D=10,20,30,40,50  E=11,22,33,44,55  F=101,202,303,404,505
+#   H1:L3  row1 10,20,30,40,50  row2 11,22,33,44,55  row3 101,202,303,404,505
+#   N1:N6  3,5,8,9,13,14 (y)   O1:O6  1..6 (x)   P1:P6  2,4,7,15,30,58 (positive y)
+#   R1:T6  database: header Name,Age,Score; A,20,5; B,30,"n/a"; C,40,15; D,50,(empty); E,60,25
+#   V1:V2  criteria Age,">=30"   W1:W2  criteria Age,(empty)   Y1:Y2  criteria Name,"A"
+#   AH1:AH11 6,6,6,6,3,2,1,2,6,4,2 (variance 4.2)   AI1:AI3 1,3,5 (variance 4)
+#   AJ1:AJ4 and AK1:AK4  2,4,7,9
+#   Scratch area AA1:AF12 is cleared after every case.
+WEEKDAY.Sun.1	=WEEKDAY(DATE(2024;1;7);1)	cell	1	Part 4 6.10.20 Table 6, Sunday type 1
+WEEKDAY.Sun.2	=WEEKDAY(DATE(2024;1;7);2)	cell	7	Part 4 6.10.20 Table 6, Sunday type 2
+EASTER.1583	=EASTERSUNDAY(1583)-DATE(1583;4;10)	cell	0	6.10.8 EASTERSUNDAY: lower bound of the allowed range
+EASTER.1900	=EASTERSUNDAY(1900)-DATE(1900;4;15)	cell	0	6.10.8 algorithm
+EASTER.2000	=EASTERSUNDAY(2000)-DATE(2000;4;23)	cell	0	6.10.8 algorithm
+EASTER.2024	=EASTERSUNDAY(2024)-DATE(2024;3;31)	cell	0	6.10.8 algorithm
+EASTER.2025	=EASTERSUNDAY(2025)-DATE(2025;4;20)	cell	0	6.10.8 algorithm
+EASTER.9956	=EASTERSUNDAY(9956)-DATE(9956;4;22)	cell	0	6.10.8 upper bound of the allowed range
+EASTER.low	=EASTERSUNDAY(1582)	cell	#ERR	6.10.8 constraint 1583 <= Year
+EASTER.high	=EASTERSUNDAY(9957)	cell	#ERR	6.10.8 constraint Year <= 9956
+EASTER.noarg	=IF(EASTERSUNDAY()>=TODAY();1;0)	cell	1	6.10.8 without Year: the next Easter Sunday on or after TODAY()
+EASTER.noarg.dist	=EASTERSUNDAY()-TODAY()	cell	-	6.10.8 without Year: distance is recorded only (it depends on the day the test runs)
+CONVERT.atm	=CONVERT(1;"atm";"Pa")	cell	101325.1	6.16.18 Table 24: atm is the Standard atmosphere, 1.0132510E+5 Pa
+CONVERT.SI_at	=CONVERT(1;"SI_at";"Pa")	cell	98066.5	6.16.18 Table 24: SI_at is the Technical atmosphere, 9.8066510E+4 Pa
+CONVERT.at	=CONVERT(1;"at";"Pa")	cell	-	6.16.18 Table 24: at is deprecated, recorded only
+NPER.omit	=NPER(0.01;-100;1000)-NPER(0.01;-100;1000;0;0)	cell	0	6.12.29 Fv and PayType default to 0
+NPER.empty	=NPER(0.01;-100;1000;;)-NPER(0.01;-100;1000;0;0)	cell	0	6.12.29 empty Fv and PayType parameters take the defaults
+NPER.paytype1	=NPER(0.01;-100;1000;0;1)-NPER(0.01;-100;1000;0;0)	cell	-	6.12.29 PayType 1 differs; recorded only
+INDEX.col.row	=INDEX(D1:D5;2)	cell	20	6.14.6 column vector, Row only: the entire row of the area
+INDEX.col.rowcol	=INDEX(D1:D5;2;1)	cell	20	6.14.6 column vector, Row and Column
+INDEX.row.col	=INDEX(D1:F1;1;3)	cell	101	6.14.6 row vector, Row and Column
+INDEX.row.rowonly	=INDEX(H1:L1;3)	cell	#ERR	6.14.6 (1.4) row vector with Row = 3 > 1 row: an Error; 1.3 let Row act as the column offset
+INDEX.row.empty	=INDEX(H1:L1;;3)	cell	30	6.14.6 row vector, Column only
+INDEX.col.beyond	=INDEX(D1:D5;2;2)	cell	#ERR	6.14.6 Column greater than the dimension of the area is an Error
+ISBLANK.err	=ISBLANK(NA())	cell	0	6.13.14 an Error argument returns FALSE
+ISBLANK.err2	=ISBLANK(1/0)	cell	0	6.13.14 an Error argument returns FALSE
+ISLOGICAL.err	=ISLOGICAL(NA())	cell	0	6.13.19 an Error argument returns FALSE
+ISLOGICAL.err2	=ISLOGICAL(1/0)	cell	0	6.13.19 an Error argument returns FALSE
+ISNUMBER.err	=ISNUMBER(NA())	cell	0	6.13.22 an Error argument returns FALSE
+ISNUMBER.err2	=ISNUMBER(1/0)	cell	0	6.13.22 an Error argument returns FALSE
+ISTEXT.err	=ISTEXT(NA())	cell	0	6.13.25 an Error argument returns FALSE
+ISTEXT.err2	=ISTEXT(1/0)	cell	0	6.13.25 an Error argument returns FALSE
+ISNONTEXT.err	=ISNONTEXT(NA())	cell	1	6.13.21 an Error argument returns TRUE
+ISNONTEXT.err2	=ISNONTEXT(1/0)	cell	1	6.13.21 an Error argument returns TRUE
+ISBLANK.ref	=ISBLANK(AB1)	cell	1	6.13.14 unchanged: a reference to an empty cell
+DAYS.num	=DAYS(DATE(2024;3;10);DATE(2024;3;1))	cell	9	6.10.6 Numbers: EndDate - StartDate
+DAYS.text	=DAYS("2024-03-10";"2024-03-01")	cell	9	6.10.6 (1.4) Text: DATEVALUE(EndDate) - DATEVALUE(StartDate); 1.3 had the operands the other way round (-9)
+SECOND.round.up	=SECOND(TIME(0;0;59)+0.6/86400)	cell	0	6.10.17 (1.4) T is rounded to the nearest second first: 59.6 s is 60 s, second 0
+MINUTE.round.up	=MINUTE(TIME(0;0;59)+0.6/86400)	cell	1	6.10.13 (1.4) the same rounding carries into the minute
+SECOND.round.down	=SECOND(TIME(0;0;59)+0.4/86400)	cell	59	6.10.17 59.4 s rounds to 59
+SECOND.plain	=SECOND(TIME(1;2;3))	cell	3	6.10.17 an exact time
+MINUTE.plain	=MINUTE(TIME(1;2;3))	cell	2	6.10.13 an exact time
+LEAP.1900	=DATE(1900;3;1)-DATE(1900;2;28)	cell	1	7.4 1900 was not a leap year
+LEAP.2000	=DATE(2000;3;1)-DATE(2000;2;28)	cell	2	7.4 2000 was a leap year
+LEAP.2100	=DATE(2100;3;1)-DATE(2100;2;28)	cell	1	7.4 2100 is not a leap year
+Y1583.jan1	=DATE(1583;1;2)-DATE(1583;1;1)	cell	1	7.4 dates from 1 January 1583 are calculated
+Y1500.leap	=DATE(1500;3;1)-DATE(1500;2;28)	cell	-	7.4 before 1583 the system is implementation-defined (proleptic Gregorian: 1, Julian: 2)
+Y1582.switch	=DATE(1582;10;15)-DATE(1582;10;4)	cell	-	7.4 proleptic Gregorian gives 11, a Julian-to-Gregorian switch gives 1
+CONVERT.g.kg	=CONVERT(1;"g";"kg")	cell	0.001	control: the add-in rewrite reaches a known unit pair
+CONVERT.bogus	=CONVERT(1;"nosuchunit";"Pa")	cell	#ERR	control: an unknown unit is an error
