@@ -267,7 +267,7 @@ class Gate:
             bad.append("shall_formulas %d > %d in --prev" % (r["shall_formulas"], pf))
         return bad
 
-    def validate_dir(self, md, out, kinds_base, label):
+    def validate_dir(self, md, out, kinds_base, label, kinds_file="kinds.json"):
         """validate.py + report.py + the checkers on out/; returns a result dict."""
         r = {}
         log = os.path.join(md, "validate.log")
@@ -286,21 +286,23 @@ class Gate:
             r["shall_" + name] = int(m.group(1)) if m and o.returncode == 0 else None
         base = kinds_base
         if base and os.path.exists(base):
-            r["vs_baseline"] = run(PY + [os.path.join(D, "compare.py"), base, os.path.join(md, "kinds.json")], os.path.join(md, "compare_base.log"))
+            r["vs_baseline"] = run(PY + [os.path.join(D, "compare.py"), base, os.path.join(md, kinds_file)], os.path.join(md, "compare_base.log"))
         return r
 
     def validate(self):
         res = {}
         for mode in self.modes:
             md = os.path.join(self.run, mode)
-            r = self.validate_dir(md, os.path.join(md, "out"), os.path.join(D, "baseline", mode + ".kinds.json"), mode)
-            pk = self.prev_path(mode + "/kinds.json")
+            # the ODF 1.4 modes are measured against the 1.4 schema, the others against 1.2 as written
+            kf = {"v14": "kinds14.json", "x14": "kinds14x.json"}.get(mode, "kinds.json")
+            r = self.validate_dir(md, os.path.join(md, "out"), os.path.join(D, "baseline", mode + ".kinds.json"), mode, kf)
+            pk = self.prev_path(mode + "/" + kf)
             r["problems"] = self.shall_problems(r, self.prev_validate("validate", mode))
             if not self.a.limit and not pk and "vs_baseline" not in r:
                 r["problems"].append("no baseline/%s.kinds.json and no --prev kinds to compare with" % mode)
             if pk and not self.a.limit:
-                r["vs_prev"] = run(PY + [os.path.join(D, "compare.py"), pk, os.path.join(md, "kinds.json")], os.path.join(md, "compare_prev.log"))
-                r["vs_prev_reverse"] = run(PY + [os.path.join(D, "compare.py"), os.path.join(md, "kinds.json"), pk], os.path.join(md, "compare_prev_rev.log"))
+                r["vs_prev"] = run(PY + [os.path.join(D, "compare.py"), pk, os.path.join(md, kf)], os.path.join(md, "compare_prev.log"))
+                r["vs_prev_reverse"] = run(PY + [os.path.join(D, "compare.py"), os.path.join(md, kf), pk], os.path.join(md, "compare_prev_rev.log"))
             res[mode] = r
         res["ok"] = all(r.get("vs_baseline", 0) == 0 and r.get("vs_prev", 0) == 0 and r.get("vs_prev_reverse", 0) == 0 and not r["problems"] for r in res.values())
         return res

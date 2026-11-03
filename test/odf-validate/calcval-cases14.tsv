@@ -31,7 +31,7 @@ CONVERT.atm	=CONVERT(1;"atm";"Pa")	cell	101325.1	6.16.18 Table 24: atm is the St
 CONVERT.SI_at	=CONVERT(1;"SI_at";"Pa")	cell	98066.5	6.16.18 Table 24: SI_at is the Technical atmosphere, 9.8066510E+4 Pa
 CONVERT.at	=CONVERT(1;"at";"Pa")	cell	-	6.16.18 Table 24: at is deprecated, recorded only
 NPER.omit	=NPER(0.01;-100;1000)-NPER(0.01;-100;1000;0;0)	cell	0	6.12.29 Fv and PayType default to 0
-NPER.empty	=NPER(0.01;-100;1000;;)-NPER(0.01;-100;1000;0;0)	cell	0	6.12.29 empty Fv and PayType parameters take the defaults
+NPER.empty	=NPER(0.01;-100;1000;;)-NPER(0.01;-100;1000;0;0)	cell	0	6.12.29 empty Fv and PayType take the defaults; known deviation: the formula compiler rejects an empty last parameter before ')' for every function except IF (Err:511)
 NPER.paytype1	=NPER(0.01;-100;1000;0;1)-NPER(0.01;-100;1000;0;0)	cell	-	6.12.29 PayType 1 differs; recorded only
 INDEX.col.row	=INDEX(D1:D5;2)	cell	20	6.14.6 column vector, Row only: the entire row of the area
 INDEX.col.rowcol	=INDEX(D1:D5;2;1)	cell	20	6.14.6 column vector, Row and Column
@@ -65,3 +65,6 @@ Y1500.leap	=DATE(1500;3;1)-DATE(1500;2;28)	cell	-	7.4 before 1583 the system is 
 Y1582.switch	=DATE(1582;10;15)-DATE(1582;10;4)	cell	-	7.4 proleptic Gregorian gives 11, a Julian-to-Gregorian switch gives 1
 CONVERT.g.kg	=CONVERT(1;"g";"kg")	cell	0.001	control: the add-in rewrite reaches a known unit pair
 CONVERT.bogus	=CONVERT(1;"nosuchunit";"Pa")	cell	#ERR	control: an unknown unit is an error
+EASTER.mid	=EASTERSUNDAY(1000)	cell	#ERR	6.10.8 constraint 1583 <= Year (100 to 1582)
+EASTER.neg	=EASTERSUNDAY(-1)	cell	#ERR	6.10.8 constraint 1583 <= Year (negative years used to wrap)
+EASTER.wrap	=EASTERSUNDAY(67536)	cell	#ERR	6.10.8 constraint Year <= 9956 (67536 used to wrap to 2000)
