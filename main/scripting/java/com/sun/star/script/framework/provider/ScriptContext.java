@@ -85,15 +85,13 @@ public class ScriptContext extends PropertySet implements XScriptContext
             (short)(PropertyAttribute.MAYBEVOID | PropertyAttribute.TRANSIENT), "m_xModel");
         registerProperty( HM_DESKTOP, new Type(XDesktop.class),
             (short)(PropertyAttribute.MAYBEVOID | PropertyAttribute.TRANSIENT), "m_xDeskTop");
-        registerProperty( HM_COMPONENT_CONTEXT, new Type(XDesktop.class),
+        registerProperty( HM_COMPONENT_CONTEXT, new Type(XComponentContext.class),
             (short)(PropertyAttribute.MAYBEVOID | PropertyAttribute.TRANSIENT), "m_xComponentContext");
     }
 
     public static XScriptContext createContext( XModel xModel, XScriptInvocationContext xInvocContext,
         XComponentContext xCtxt, XMultiComponentFactory xMCF)
     {
-        XScriptContext sc = null;
-
         try {
 
             Object xInterface = null;
@@ -105,18 +103,19 @@ public class ScriptContext extends PropertySet implements XScriptContext
                 UnoRuntime.queryInterface(XDesktop.class, xInterface);
             if ( xModel != null )
             {
-                sc = new ScriptContext(xCtxt, xDesktop, xModel, xInvocContext);
+                return new ScriptContext(xCtxt, xDesktop, xModel, xInvocContext);
             }
             else
             {
-                sc = new EditorScriptContext(xCtxt, xDesktop );
+                return new EditorScriptContext(xCtxt, xDesktop );
             }
 
         }
         catch ( Exception e ) {
             LogUtils.DEBUG( LogUtils.getTrace( e ) );
+            throw new com.sun.star.uno.RuntimeException(
+                "Failed to create script context: " + e.getMessage() );
         }
-        return sc;
     }
 
     //----------------------------------------------------------------------

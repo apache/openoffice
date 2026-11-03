@@ -263,7 +263,7 @@ public class ScriptEditorForJavaScript implements ScriptEditor
                 org.mozilla.javascript.tools.shell.ShellContextFactory contextFactory =
                     new org.mozilla.javascript.tools.shell.ShellContextFactory();
                 sdb.attachTo(contextFactory);
-                contextFactory.setLanguageVersion(Context.VERSION_1_8);
+                contextFactory.setLanguageVersion(Context.VERSION_ES6);
                 contextFactory.setOptimizationLevel(9);
                 sdb.pack();
                 sdb.setSize(640, 640);
@@ -322,17 +322,20 @@ public class ScriptEditorForJavaScript implements ScriptEditor
     private Scriptable getScope(XScriptContext xsctxt )
     {
         Context ctxt = Context.enter();
-        ImporterTopLevel scope = new ImporterTopLevel(ctxt);
+        try {
+            ImporterTopLevel scope = new ImporterTopLevel(ctxt);
 
-        Scriptable jsCtxt = Context.toObject(xsctxt, scope);
-        scope.put("XSCRIPTCONTEXT", scope, jsCtxt);
+            Scriptable jsCtxt = Context.toObject(xsctxt, scope);
+            scope.put("XSCRIPTCONTEXT", scope, jsCtxt);
 
-        Scriptable jsArgs = Context.toObject(
-           new Object[0], scope);
-        scope.put("ARGUMENTS", scope, jsArgs);
+            Scriptable jsArgs = Context.toObject(
+               new Object[0], scope);
+            scope.put("ARGUMENTS", scope, jsArgs);
 
-        Context.exit();
-        return scope;
+            return scope;
+        } finally {
+            Context.exit();
+        }
     }
 
     class closeHandler implements Runnable

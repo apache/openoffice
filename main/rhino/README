@@ -1,11 +1,26 @@
 The Scripting Framework makes use of the Rhino (http://www.mozilla.org/rhino/)
-JavaScript interpreter, available under the Mozilla Public License 
-(http://www.mozilla.org/MPL/MPL-1.1.html).
+JavaScript interpreter, available under the Mozilla Public License 2.0
+(http://www.mozilla.org/MPL/2.0/).
+
+Rhino version: 1.7.7.2
+Source archive: https://github.com/mozilla/rhino/releases/download/Rhino1_7_7_2_Release/rhino-1.7.7.2.zip
+Checksum: (see external_deps.lst)
 
 In addition, to support the debugging of scripts contained in OpenOffice.org
-documents, we have modified the Java source file Main.java.
+documents, we have modified the Java source files:
+- GuiCallback.java (added exitInterrupt method)
+- Main.java (added AOO-specific shortcut methods, nullified console I/O)
+- Dim.java (added evalScriptWithReturn, changed default URL from "<stdin>" to "document")
+- SwingGui.java (AOO-specific debugger GUI modifications)
+- OfficeScriptInfo.java (new AOO-specific class)
+- toolsrc/build.xml (excluded system rhino.jar from bootstrap classpath)
+- DefiningClassLoader.java (modified class loading to check thread context class loader)
 
 The Rhino source tarball is unpacked and patched with the modified code. The
 Rhino Jar file (js.jar) is then built and delivered to the solver. The file
-rhino1_7R3.patch contains the changes made in order to build Rhino. The patch
+rhino1_7_7_2.patch contains the changes made in order to build Rhino. The patch
 was generated using the command: diff -wurN
+
+Java 8 compatibility: build.properties sets target-jvm and source-level to 1.8.
+Ant-based build is preserved.
+ES6 is the default language mode (Context.VERSION_ES6).

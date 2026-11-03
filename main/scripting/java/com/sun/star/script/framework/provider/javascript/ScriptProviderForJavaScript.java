@@ -210,6 +210,7 @@ class ScriptImpl implements XScript
                     ScriptFrameworkErrorType.UNKNOWN );
             }
             Context ctxt = null;
+            ClassLoader prevCl = Thread.currentThread().getContextClassLoader();
 
             try
             {
@@ -230,6 +231,16 @@ class ScriptImpl implements XScript
                         // Always return a string
                         // TODO revisit
                         return Context.toString( result );
+                    }
+                    else if ( result != null )
+                    {
+                        // editor returned a non-Undefined result; do not execute again
+                        return Context.toString( result );
+                    }
+                    else
+                    {
+                        // editor executed the script (result may legitimately be null); do not execute again
+                        return null;
                     }
 
                 }
@@ -264,7 +275,7 @@ class ScriptImpl implements XScript
 
                 // Initialize a Rhino Context object
                 ctxt = Context.enter();
-                ctxt.setLanguageVersion(Context.VERSION_1_8);
+                ctxt.setLanguageVersion(Context.VERSION_ES6);
                 ctxt.setOptimizationLevel(9);
 
                 /* The ImporterTopLevel ensures that importClass and
@@ -284,7 +295,7 @@ class ScriptImpl implements XScript
                 scope.put("ARGUMENTS", scope, jsArgs);
 
                 result = ctxt.evaluateString(scope,
-                        source, "<stdin>", 1, null);
+                        source, editorURL, 1, null);
                 result = ctxt.toString(result);
 				return result;
             }
@@ -294,14 +305,14 @@ class ScriptImpl implements XScript
                 int lineNo = jse.lineNumber();
                 Object wrap = jse.getValue();
                 LogUtils.DEBUG( "\t message  " + message );
-                LogUtils.DEBUG( "\t wrapped type " + wrap.getClass() );
-                LogUtils.DEBUG( "\t wrapped toString  " + wrap.toString() );
+                LogUtils.DEBUG( "\t wrapped type " + (wrap != null ? wrap.getClass().getName() : "null") );
+                LogUtils.DEBUG( "\t wrapped toString  " + (wrap != null ? wrap.toString() : "null") );
                 ScriptExceptionRaisedException se = new
                     ScriptExceptionRaisedException( message );
                 se.lineNum = lineNo;
                 se.language = "JavaScript";
                 se.scriptName = metaData.getLanguageName();
-                se.exceptionType = wrap.getClass().getName();
+                se.exceptionType = (wrap != null) ? wrap.getClass().getName() : "null";
                 se.language = metaData.getLanguage();
                 LogUtils.DEBUG( "ExceptionRaised exception  "  );
                 LogUtils.DEBUG( "\t message  " + se.getMessage() );
@@ -323,6 +334,9 @@ class ScriptImpl implements XScript
                 if ( ctxt != null )
                 {
                     Context.exit();
+                }
+                if (prevCl != null) {
+                    Thread.currentThread().setContextClassLoader(prevCl);
                 }
             }
         }
