@@ -121,7 +121,8 @@ ScXMLTableRowCellContext::ScXMLTableRowCellContext( ScXMLImport& rImport,
 	bHasTextImport(sal_False),
 	bIsFirstTextImport(sal_False),
 	bSolarMutexLocked(sal_False),
-	bFormulaTextResult(sal_False)
+	bFormulaTextResult(sal_False),
+	bIsError(sal_False)
 {
 	rXMLImport.SetRemoveLastChar(sal_False);
 	rXMLImport.GetTables().AddColumn(bTempIsCovered);
@@ -167,6 +168,7 @@ ScXMLTableRowCellContext::ScXMLTableRowCellContext( ScXMLImport& rImport,
             break;
             case XML_TOK_TABLE_ROW_CELL_ATTR_VALUE_TYPE:
                 nCellType = GetScImport().GetCellType(sValue);
+                bIsError = sValue.equalsAscii("error");
                 bIsEmpty = sal_False;
             break;
             case XML_TOK_TABLE_ROW_CELL_ATTR_VALUE:
@@ -309,6 +311,33 @@ void ScXMLTableRowCellContext::SetCursorOnTextImport(const rtl::OUString& rOUTem
     }
 }
 
+// Collects the plain text of a text:p in an error cell, including text nested in text:span and the like.
+class ScXMLErrorTextContext : public SvXMLImportContext
+{
+    ScXMLTableRowCellContext* pCellContext;
+    ScXMLErrorTextContext* pParent;
+    rtl::OUStringBuffer aText;
+public:
+    ScXMLErrorTextContext( SvXMLImport& rImport, sal_uInt16 nPrfx, const rtl::OUString& rLName,
+                           ScXMLTableRowCellContext* pCell, ScXMLErrorTextContext* pTop ) :
+        SvXMLImportContext( rImport, nPrfx, rLName ), pCellContext( pCell ), pParent( pTop ) {}
+
+    virtual SvXMLImportContext* CreateChildContext( sal_uInt16 nPrfx, const rtl::OUString& rLName,
+        const uno::Reference< xml::sax::XAttributeList >& )
+    {
+        return new ScXMLErrorTextContext( GetImport(), nPrfx, rLName, NULL, pParent ? pParent : this );
+    }
+    virtual void Characters( const rtl::OUString& rChars )
+    {
+        (pParent ? pParent->aText : aText).append( rChars );
+    }
+    virtual void EndElement()
+    {
+        if (pCellContext)
+            pCellContext->SetString( aText.makeStringAndClear() );
+    }
+};
+
 SvXMLImportContext *ScXMLTableRowCellContext::CreateChildContext( sal_uInt16 nPrefix,
 											const ::rtl::OUString& rLName,
 											const ::com::sun::star::uno::Reference<
@@ -325,7 +354,9 @@ SvXMLImportContext *ScXMLTableRowCellContext::CreateChildContext( sal_uInt16 nPr
 			bIsEmpty = sal_False;
 			bTextP = sal_True;
             com::sun::star::table::CellAddress aCellPos = rXMLImport.GetTables().GetRealCellPos();
-			if (((nCellType == util::NumberFormat::TEXT) || bFormulaTextResult) &&
+			if (bIsError && !pOUFormula)
+				pContext = new ScXMLErrorTextContext(rXMLImport, nPrefix, rLName, this, NULL);
+			else if (((nCellType == util::NumberFormat::TEXT) || bFormulaTextResult) &&
                 !rXMLImport.GetTables().IsPartOfMatrix(aCellPos.Column, aCellPos.Row))
 			{
 				if (!bHasTextImport)
@@ -756,6 +787,34 @@ bool lcl_IsEmptyOrNote( ScDocument* pDoc, const table::CellAddress& rCurrentPos 
     return ( !pCell || pCell->GetCellType() == CELLTYPE_NOTE );
 }
 
+static sal_uInt16 lcl_GetErrorCode( const rtl::OUString& rText )
+{
+    static const struct { const sal_Char* pName; sal_uInt16 nCode; } aErrors[] =
+    {
+        { "#NULL!", errNoCode }, { "#DIV/0!", errDivisionByZero }, { "#VALUE!", errNoValue },
+        { "#REF!", errNoRef }, { "#NAME?", errNoName }, { "#NUM!", errIllegalFPOperation },
+        { "#N/A", NOTAVAILABLE }
+    };
+    for (size_t i = 0; i < sizeof(aErrors)/sizeof(aErrors[0]); ++i)
+    {
+        if (rText.equalsAscii(aErrors[i].pName) || String(rText) == ScGlobal::GetErrorString(aErrors[i].nCode))
+            return aErrors[i].nCode;
+    }
+    if (rText.matchAsciiL("Err:", 4) && rText.getLength() > 4)
+    {
+        sal_Int32 nCode = 0;
+        for (sal_Int32 i = 4; i < rText.getLength() && nCode <= NOTAVAILABLE; ++i)
+        {
+            if (rText[i] < '0' || rText[i] > '9')
+                return errNoValue;
+            nCode = nCode * 10 + (rText[i] - '0');
+        }
+        if (nCode > 0 && nCode <= NOTAVAILABLE)
+            return static_cast<sal_uInt16>(nCode);
+    }
+    return errNoValue;
+}
+
 void ScXMLTableRowCellContext::EndElement()
 {
 	if (!bHasSubTable)
@@ -993,7 +1052,24 @@ void ScXMLTableRowCellContext::EndElement()
 									    break;
 								    default:
 									    {
-										    DBG_ERROR("no cell type given");
+										    if (bIsError)
+										    {
+											    if (!rTables.IsPartOfMatrix(aCurrentPos.Column, aCurrentPos.Row))
+											    {
+												    LockSolarMutex();
+												    ScAddress aScAddress;
+												    ScUnoConversion::FillScAddress( aScAddress, aCurrentPos );
+												    ScDocument* pDoc = rXMLImport.GetDocument();
+												    ScFormulaCell* pErrCell = new ScFormulaCell( pDoc, aScAddress );
+												    pErrCell->SetErrCode( lcl_GetErrorCode(
+													    (pOUTextValue && pOUTextValue->getLength()) ? *pOUTextValue :
+													    pOUTextContent ? *pOUTextContent : rtl::OUString() ) );
+												    pDoc->PutCell( aScAddress, pErrCell );
+											    }
+											    rXMLImport.ProgressBarIncrement(sal_False);
+										    }
+										    else
+											    DBG_ERROR("no cell type given");
 									    }
 									    break;
 								    }

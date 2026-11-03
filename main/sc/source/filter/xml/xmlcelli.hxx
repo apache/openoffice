@@ -72,6 +72,7 @@ class ScXMLTableRowCellContext : public SvXMLImportContext
 	sal_Bool	bIsFirstTextImport;
 	sal_Bool	bSolarMutexLocked;
 	sal_Bool	bFormulaTextResult;
+	sal_Bool	bIsError;
 
 	const ScXMLImport& GetScImport() const { return (const ScXMLImport&)GetImport(); }
 	ScXMLImport& GetScImport() { return (ScXMLImport&)GetImport(); }
