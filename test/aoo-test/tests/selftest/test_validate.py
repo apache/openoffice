@@ -53,6 +53,19 @@ ROWS = [
     ("13: style:scale-to-X/Y alone and style:scale-to alone valid in 1.3 and 1.3 extended; X/Y invalid in 1.2",
      lambda E, d: not any(E(v, p) for v in ("13", "13x") for p in ("scalexy.odt", "scaleone.odt"))
      and any('"style:scale-to-X"' in m for m in E("12", "scalexy.odt")) and not E("12", "scaleone.odt")),
+    ("14: good.odt clean in 1.4 and 1.4 extended; a 1.3 version is rewritten like a 1.2 one", lambda E, d: not E("14", "good.odt") and not E("14x", "good.odt")),
+    ("14: bad.odt flags text:bogus in 1.4 and 1.4 extended", lambda E, d: flags(E, ("14", "14x"), "bad.odt", BOGUS)),
+    ("14: wrongver.odt (1.1) flags office:version in 1.4 and 1.4 extended", lambda E, d: flags(E, ("14", "14x"), "wrongver.odt", "office:version")),
+    ("14: extforeign.odt invalid as written, valid in 1.4 extended once foreign content is removed",
+     lambda E, d: bool(E("14", "extforeign.odt")) and not E("14x", "extforeign.odt")),
+    ("14: draw:decorative invalid in 1.2 and 1.3, valid in 1.4 and 1.4 extended; the same style without it is clean in all",
+     lambda E, d: all(any('"draw:decorative"' in m for m in E(v, "newdeco.odt")) for v in ("12", "13"))
+     and not E("14", "newdeco.odt") and not E("14x", "newdeco.odt") and not any(E(v, "basedeco.odt") for v in ("12", "13", "14", "14x"))),
+    ("14: draw:handle with only the old combined attribute valid in 1.2 and 1.3, invalid in 1.4 and 1.4 extended",
+     lambda E, d: not any(E(v, "handleold.odt") for v in ("12", "13")) and all(E(v, "handleold.odt") for v in ("14", "14x"))),
+    ("14: draw:handle with the new position or polar pair valid in 1.4 and 1.4 extended, invalid in 1.2 and 1.3",
+     lambda E, d: not any(E(v, p) for v in ("14", "14x") for p in ("handlenew.odt", "handlepolar.odt"))
+     and all(E(v, p) for v in ("12", "13") for p in ("handlenew.odt", "handlepolar.odt"))),
     ("mathobj.odt MathML object skipped", lambda E, d: d["mathml_skipped"] == ["mathobj.odt/Object 1/content.xml"] and not E("12", "mathobj.odt")),
     ("no unparsed jing output", lambda E, d: not any(e[0] == "?" for v in d["errors"] for e in d["errors"][v])),
     ("extended: extforeign.odt invalid as written, valid once foreign content is removed",

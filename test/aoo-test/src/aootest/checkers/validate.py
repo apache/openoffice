@@ -20,9 +20,10 @@
 #**************************************************************
 
 # usage: python -m aootest.checkers.validate <outdir> <val.json>   (needs AOO_JING and AOO_SCHEMA_DIR; tests call check())
-# Validates every package in <outdir> against ODF 1.2 as written, against ODF 1.3 and 1.4 with the version rewritten
-# ("13", "14"), and against ODF 1.2 and 1.3 after removing foreign elements and attributes ("12x", "13x"; Part 1 2.2.2 B.1;
-# manifest left as written apart from the version).
+# Validates every package in <outdir> against ODF 1.2 as written, against ODF 1.3 and 1.4 with an office:version or
+# manifest:version of 1.2 or 1.3 rewritten to the target ("13", "14"; any other version stays and is reported), and against
+# ODF 1.2, 1.3 and 1.4 after removing foreign elements and attributes ("12x", "13x", "14x"; Part 1 2.2.2 B.1; manifest left
+# as written apart from the version).
 import sys, os, re, zipfile, subprocess, json
 
 from aootest.checkers import foreign
@@ -30,7 +31,7 @@ from aootest.checkers import foreign
 SCHEMA_FILES = {"12": ("OpenDocument-v1.2-os-schema.rng", "OpenDocument-v1.2-os-manifest-schema.rng"),
                 "13": ("OpenDocument-v1.3-schema.rng", "OpenDocument-v1.3-manifest-schema.rng"),
                 "14": ("OpenDocument-v1.4-schema.rng", "OpenDocument-v1.4-manifest-schema.rng")}
-VERSIONS = ("12", "14", "12x", "13", "13x")
+VERSIONS = ("12", "14", "12x", "13", "13x", "14x")
 STREAMS = {"content.xml", "styles.xml", "meta.xml", "settings.xml"}
 # ODF 1.2 Part 1 2.2.1 B.4: a content.xml rooted at MathML is validated against MathML, not ODF
 ERR = re.compile(r"^(.*?):(\d+):(\d+): (error|fatal|warning): (.*)$")
@@ -43,7 +44,7 @@ def root_is_mathml(text):
 
 def schemas(schema_dir):
     sch = {v: tuple(os.path.join(schema_dir, f) for f in fs) for v, fs in SCHEMA_FILES.items()}
-    sch["12x"], sch["13x"] = sch["12"], sch["13"]
+    sch["12x"], sch["13x"], sch["14x"] = sch["12"], sch["13"], sch["14"]
     return sch
 
 
@@ -55,7 +56,7 @@ def check(outdir, workdir, jing, schema_dir):
         raise ValueError("validate: workdir is not empty: " + work)
     SCH = schemas(schema_dir)
     files = {v: ([], []) for v in VERSIONS}
-    mixed = {"12x": foreign.mixed_elements(SCH["12"][0]), "13x": foreign.mixed_elements(SCH["13"][0])}
+    mixed = {v: foreign.mixed_elements(SCH[v][0]) for v in ("12x", "13x", "14x")}
     skipped, bad_zip = [], []
     pkgs = sorted(p for p in os.listdir(outdir) if not p.startswith("."))
     for pkg in pkgs:
@@ -72,11 +73,11 @@ def check(outdir, workdir, jing, schema_dir):
                 skipped.append(pkg + "/" + name); continue
             for v in VERSIONS:
                 t = text
-                if v in ("12x", "13x") and not is_mani:
+                if v in mixed and not is_mani:
                     t = foreign.strip_foreign(t, mixed[v])
-                if v in ("13", "13x", "14"):
+                if v in ("13", "13x", "14", "14x"):
                     attr = "manifest:version" if is_mani else "office:version"
-                    t = re.sub(attr + '="1.2"', attr + '="1.%s"' % v[1], t, count=1)
+                    t = re.sub(attr + '="1\\.[23]"', attr + '="1.%s"' % v[1], t, count=1)
                 p = os.path.join(work, v, pkg, name)
                 os.makedirs(os.path.dirname(p), exist_ok=True)
                 open(p, "w", encoding="utf-8").write(t)
