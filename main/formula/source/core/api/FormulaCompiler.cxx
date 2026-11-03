@@ -1065,6 +1065,9 @@ void FormulaCompiler::Factor()
                 pFacToken = new FormulaFAPToken( pFacToken->GetOpCode(), nSepCount, pFacToken );
             else
                 pFacToken->SetByte( nSepCount );
+            // EASTERSUNDAY() without a year depends on today's date
+            if ( bNoParam && pFacToken->GetOpCode() == ocEasterSunday )
+                pArr->SetRecalcModeAlways();
             PutCode( pFacToken );
         }
         else if (eOp == ocIf || eOp == ocChose)

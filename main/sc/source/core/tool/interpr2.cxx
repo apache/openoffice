@@ -237,34 +237,65 @@ void ScInterpreter::ScGetWeekOfYear()
     }
 }
 
+static void lcl_EasterSunday( sal_Int16 nYear, sal_Int16& rDay, sal_Int16& rMonth )
+{
+    // don't worry, be happy :)
+    int B,C,D,E,F,G,H,I,K,L,M,N,O;
+    N = nYear % 19;
+    B = int(nYear / 100);
+    C = nYear % 100;
+    D = int(B / 4);
+    E = B % 4;
+    F = int((B + 8) / 25);
+    G = int((B - F + 1) / 3);
+    H = (19 * N + B - D - G + 15) % 30;
+    I = int(C / 4);
+    K = C % 4;
+    L = (32 + 2 * E + 2 * I - H - K) % 7;
+    M = int((N + 11 * H + 22 * L) / 451);
+    O = H + L - 7 * M + 114;
+    rDay = sal::static_int_cast<sal_Int16>( O % 31 + 1 );
+    rMonth = sal::static_int_cast<sal_Int16>( int(O / 31) );
+}
+
 void ScInterpreter::ScEasterSunday()
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScEasterSunday" );
     nFuncFmtType = NUMBERFORMAT_DATE;
-    if ( MustHaveParamCount( GetByte(), 1 ) )
+    sal_uInt8 nParamCount = GetByte();
+    if ( MustHaveParamCount( nParamCount, 0, 1 ) )
     {
         sal_Int16 nDay, nMonth, nYear;
-        nYear = (sal_Int16) ::rtl::math::approxFloor( GetDouble() );
-        if ( nYear < 100 )
-            nYear = pFormatter->ExpandTwoDigitYear( nYear );
-        // don't worry, be happy :)
-        int B,C,D,E,F,G,H,I,K,L,M,N,O;
-        N = nYear % 19;
-        B = int(nYear / 100);
-        C = nYear % 100;
-        D = int(B / 4);
-        E = B % 4;
-        F = int((B + 8) / 25);
-        G = int((B - F + 1) / 3);
-        H = (19 * N + B - D - G + 15) % 30;
-        I = int(C / 4);
-        K = C % 4;
-        L = (32 + 2 * E + 2 * I - H - K) % 7;
-        M = int((N + 11 * H + 22 * L) / 451);
-        O = H + L - 7 * M + 114;
-        nDay = sal::static_int_cast<sal_Int16>( O % 31 + 1 );
-        nMonth = sal::static_int_cast<sal_Int16>( int(O / 31) );
-        PushDouble( GetDateSerial( nYear, nMonth, nDay, true ) );
+        if ( nParamCount == 1 )
+        {
+            double fYear = ::rtl::math::approxFloor( GetDouble() );
+            // ODF 1.4 Part 4 6.10.8: 1583 <= Year <= 9956; checked before the cast to sal_Int16, which would wrap
+            if ( fYear < 0.0 || fYear > 9956.0 )
+            {
+                PushIllegalArgument();
+                return;
+            }
+            nYear = (sal_Int16) fYear;
+            if ( nYear < 100 )
+                nYear = pFormatter->ExpandTwoDigitYear( nYear );
+            lcl_EasterSunday( nYear, nDay, nMonth );
+            PushDouble( GetDateSerial( nYear, nMonth, nDay, true ) );
+        }
+        else
+        {
+            // no Year: the next Easter Sunday on or after today
+            Date aActDate;
+            double fToday = (double) ( aActDate - *(pFormatter->GetNullDate()) );
+            nYear = aActDate.GetYear();
+            lcl_EasterSunday( nYear, nDay, nMonth );
+            double fEaster = GetDateSerial( nYear, nMonth, nDay, true );
+            if ( fEaster < fToday )
+            {
+                lcl_EasterSunday( ++nYear, nDay, nMonth );
+                fEaster = GetDateSerial( nYear, nMonth, nDay, true );
+            }
+            PushDouble( fEaster );
+        }
     }
 }
 
