@@ -27,3 +27,6 @@ test_formula_result[DCOUNT.emptycrit]	xfail	AOO ignores empty criteria cells; Pa
 test_formula_result[DCOUNTA.emptycrit]	xfail	AOO ignores empty criteria cells; Part 4 4.11.11 reads an empty criterion as the number 0
 test_formula_result[LINEST.k2.const]	xfail	AOO allows zero degrees of freedom (two-point regression); Part 4 6.18.41 wants an error
 test_formula_result[LINEST.k1.noconst]	xfail	AOO allows zero degrees of freedom (one point, no constant); Part 4 6.18.41 wants an error
+test_formula_result[CONVERT.atm]	xfail	AOO's standard atmosphere is 101324.996583 Pa; the ODF 1.4 Part 4 table gives 1.0132510E+5 (a relative difference of 1.0e-6)
+test_formula_result[NPER.empty]	xfail	the formula compiler rejects an empty last parameter before ')' (Err:511) for every function except IF; an empty parameter in the middle works
+test_formula_result[INDEX.row.rowonly]	xfail	INDEX on a row vector with only a row argument returns the column (Excel behaviour); ODF 1.4 calls it an error

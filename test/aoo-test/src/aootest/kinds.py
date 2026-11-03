@@ -28,8 +28,8 @@ from aootest.checkers import compare, report
 from aootest.paths import DATA
 
 BASELINE = DATA / "baseline"
-# (save mode, schema): 12 and 13 are the plain schemas, 12x and 13x the same with foreign content removed first
-PAIRS = (("ext", "12"), ("ext", "12x"), ("x13", "13"), ("x13", "13x"))
+# (save mode, schema): 12, 13 and 14 are the plain schemas, 12x, 13x and 14x the same with foreign content removed first
+PAIRS = (("ext", "12"), ("ext", "12x"), ("x13", "13"), ("x13", "13x"), ("x14", "14"), ("x14", "14x"))
 STABLE_PREFIXES = ("built/", "generated/")
 
 

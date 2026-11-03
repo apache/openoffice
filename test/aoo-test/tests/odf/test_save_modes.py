@@ -22,8 +22,8 @@ application, and any --documents directory) saved in each ODF save mode, then ch
 version, the package and document-type rules hold, ids and formulas parse, and it validates against the schema its mode
 promises.
 
-Strict ODF 1.2 (mode 4) must validate against 1.2 and 1.3; 1.3 (mode 5) against 1.3. The extended modes (3, 6, and the
-product default) carry AOO extensions on purpose, so their schema errors are not asserted here."""
+Strict ODF 1.2 (mode 4) must validate against 1.2 and 1.3; 1.3 (mode 5) against 1.3; 1.4 (mode 7) against 1.4. The extended
+modes (3, 6, 8 and the product default) carry AOO extensions on purpose, so their schema errors are not asserted here."""
 import pytest
 
 from aootest import documents
@@ -32,8 +32,8 @@ from aootest.odfversion import SAVE_MODES, is_formula, odf_versions
 pytestmark = pytest.mark.slow
 
 MODE_NAMES = list(SAVE_MODES)
-DECLARED = {"strict": "1.2", "ext": "1.2", "v13": "1.3", "x13": "1.3"}
-SCHEMAS = [("strict", "12"), ("strict", "13"), ("strict", "14"), ("v13", "13")]
+DECLARED = {"strict": "1.2", "ext": "1.2", "v13": "1.3", "x13": "1.3", "v14": "1.4", "x14": "1.4"}
+SCHEMAS = [("strict", "12"), ("strict", "13"), ("strict", "14"), ("v13", "13"), ("v14", "14")]
 
 
 def saved_copy(odf_runs, need_mode, mode, source):

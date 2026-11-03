@@ -65,6 +65,7 @@ Each download is checked against its pinned sha256 before it is used. The cache 
 | `--start-timeout S` | | Seconds an office may take to start and accept a connection. Default 240; starts have taken from 5 to 90 seconds on a busy desktop. |
 | `--require-office` | | Fail instead of skip when there is no usable office. |
 | `--require-odf13` | | Fail instead of skip the ODF 1.3 save modes when the build cannot write 1.3. |
+| `--require-odf14` | | Fail instead of skip the ODF 1.4 save modes when the build cannot write 1.4. |
 | `--documents DIR` | | Extra ODF documents to run through every save mode. |
 | `--shipped-limit N` | | How many shipped templates and documents to use. Default 40. |
 | `--twin-corpus DIR` | `AOO_TWIN_CORPUS` | Corpus for the import twin tests. |
@@ -86,16 +87,16 @@ The save-mode tests run over documents that are not stored in this repository:
 
 `data/built-excluded.tsv` names the documents of those scripts that are left out of the default run because converting them kills or stalls the office (Calc documents with tracked changes, Base documents). `python3 -m pytest -m crash` runs each of them through every save mode in a fresh office; expect crash reports, and on macOS the "unexpectedly quit" prompt for each crash, to which `Don't Reopen` is the answer. Known deviations of the other documents are rows in `data/expect/`.
 
-Each document is saved once per mode: strict ODF 1.2 (save mode 4), 1.2 extended (3), 1.3 (5), 1.3 extended (6) and the product default. Builds that predate the ODF 1.3 work ignore modes 5 and 6; those items skip, or fail with `--require-odf13`.
+Each document is saved once per mode: strict ODF 1.2 (save mode 4), 1.2 extended (3), 1.3 (5), 1.3 extended (6), 1.4 (7), 1.4 extended (8) and the product default. Builds that predate the ODF 1.3 work ignore modes 5 and 6, and builds that predate the ODF 1.4 work ignore modes 7 and 8; those items skip, or fail with `--require-odf13` or `--require-odf14`.
 
 ## Other families
 
-- **Error kinds of the extended modes.** The 1.2 extended and 1.3 extended modes write extension content on purpose, so their output is not asserted to be schema valid. `tests/odf/test_kinds.py` compares the errors against the ODF 1.2 and 1.3 schemas, and the same with foreign content removed, with `data/baseline/`: a new kind of error, a higher count, a kind found in more documents, or a baseline document that is no longer covered fails the item; fewer errors pass. The baseline covers the documents the suite builds or creates, not the shipped ones, and was written with the trunk dev app, so another build can differ. After a change that is meant to alter the errors, run `python3 -m pytest tests/odf/test_kinds.py --write-kinds` and read the diff of `data/baseline/` before committing it.
+- **Error kinds of the extended modes.** The 1.2, 1.3 and 1.4 extended modes write extension content on purpose, so their output is not asserted to be schema valid. `tests/odf/test_kinds.py` compares the errors against the ODF 1.2 (1.2 extended), 1.3 (1.3 extended) and 1.4 (1.4 extended) schemas, and the same with foreign content removed, with `data/baseline/`: a new kind of error, a higher count, a kind found in more documents, or a baseline document that is no longer covered fails the item; fewer errors pass. The baseline covers the documents the suite builds or creates, not the shipped ones, and was written with the trunk dev app, so another build can differ. After a change that is meant to alter the errors, run `python3 -m pytest tests/odf/test_kinds.py --write-kinds` and read the diff of `data/baseline/` before committing it.
 
 - **Cross-check.** odfvalidator checks the same saved files as jing; the two must agree on which streams have errors.
 - **Stability.** Each document is saved twice; `content.xml` and `styles.xml` must match apart from the cached value of date and time fields.
 - **Encrypted.** Documents saved with a password under each combination of `UseSHA1InODF12` and `UseBlowfishInODF12`, in ODF 1.2 strict and extended mode. The suite's own decryptor (`aootest/checkers/decrypt.py`) must read them with the right password, reject a wrong one, and get the same content as the unencrypted copy.
-- **Formulas.** `data/calcval-cases.tsv` holds about 250 OpenFormula cases with the result ODF 1.3 Part 4 requires; each is evaluated in Calc.
+- **Formulas.** `data/calcval-cases.tsv` holds about 300 OpenFormula cases with the result ODF 1.3 and 1.4 Part 4 require; each is evaluated in Calc.
 
 ## Import twins
 

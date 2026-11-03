@@ -23,12 +23,12 @@
 import re
 import zipfile
 
-# Save/ODF/DefaultVersion -> the office:version written (3 and 4 are ODF 1.2, 5 and 6 are 1.3)
-MODES = {3: "1.2", 4: "1.2", 5: "1.3", 6: "1.3"}
+# Save/ODF/DefaultVersion -> the office:version written (3 and 4 are ODF 1.2, 5 and 6 are 1.3, 7 and 8 are 1.4)
+MODES = {3: "1.2", 4: "1.2", 5: "1.3", 6: "1.3", 7: "1.4", 8: "1.4"}
 
 
 # mode name -> Save/ODF/DefaultVersion (None leaves the product default)
-SAVE_MODES = {"strict": 4, "ext": 3, "v13": 5, "x13": 6, "default": None}
+SAVE_MODES = {"strict": 4, "ext": 3, "v13": 5, "x13": 6, "v14": 7, "x14": 8, "default": None}
 
 
 def odf_versions(path):
