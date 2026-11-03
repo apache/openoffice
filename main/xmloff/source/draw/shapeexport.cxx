@@ -61,6 +61,8 @@
 
 #include "xmloff/xmlnmspe.hxx"
 #include <xmloff/nmspmap.hxx>
+#include <xmloff/xmltypes.hxx>
+#include <unotools/saveopt.hxx>
 
 using ::rtl::OUString;
 using ::rtl::OUStringBuffer;
@@ -387,6 +389,18 @@ void XMLShapeExport::collectShapeAutoStyles(const uno::Reference< drawing::XShap
 		if( (!bIsEmptyPresObj || (aShapeInfo.meShapeType != XmlShapeTypePresPageShape)) && bObjSupportsText )
 		{
 			xPropStates = GetExport().GetTextParagraphExport()->GetParagraphPropertyMapper()->Filter( xPropSet );
+
+			// ODF 1.4 Extended: the fill of the shape is in its own style, a paragraph style may not hold style:graphic-properties
+			if( SvtSaveOptions().GetODFDefaultVersion() == SvtSaveOptions::ODFVER_014_EXT )
+			{
+				UniReference< XMLPropertySetMapper > xMapper( GetExport().GetTextParagraphExport()->GetParagraphPropertyMapper()->getPropertySetMapper() );
+				for( ::std::vector< XMLPropertyState >::iterator aIter = xPropStates.begin(); aIter != xPropStates.end(); ++aIter )
+				{
+					if( aIter->mnIndex != -1 && ( xMapper->GetEntryType( aIter->mnIndex ) & XML_TYPE_PROP_MASK ) == XML_TYPE_PROP_GRAPHIC &&
+						xMapper->GetEarliestODFVersionForExport( aIter->mnIndex ) == SvtSaveOptions::ODFVER_EXTENSION )
+						aIter->mnIndex = -1;
+				}
+			}
 
 			// ----------------------------------------------------------------------
 			// yet more additionally, we need to care for the ParaAdjust property
