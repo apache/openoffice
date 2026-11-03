@@ -292,9 +292,9 @@ if (ENABLE_CATEGORY_B==YES && SYSTEM_HUNSPELL!=YES)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (ENABLE_CATEGORY_B==YES && SOLAR_JAVA==TRUE && ENABLE_JAVASCRIPT==YES)
-    MD5 = 99d94103662a8d0b571e247a77432ac5
-    name = rhino1_7R3.zip
-    URL1 = https://ftp.mozilla.org/pub/js/$(name)
+    MD5 = afcf570784ebd919c1d484a6d0d3fcd6
+    name = rhino-1.7.7.2.zip
+    URL1 = https://github.com/mozilla/rhino/releases/download/Rhino1_7_7_2_Release/$(name)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (ENABLE_CATEGORY_B==YES && ENABLE_NSS_MODULE==YES)
