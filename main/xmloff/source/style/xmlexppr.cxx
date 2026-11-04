@@ -866,8 +866,48 @@ void SvXMLExportPropertyMapper::exportXML(
 		{
 			SvUShorts aIndexArray;
 
+			// ODF 1.4 Extended: header and footer fills go into a style:background-fill child
+			::std::vector< XMLPropertyState > aMainProps, aFillProps;
+			const ::std::vector< XMLPropertyState >* pMainProps = &rProperties;
+			SvXMLAttributeList* pFillAttrs = 0;
+			uno::Reference< xml::sax::XAttributeList > xFillAttrs;
+			if( aPropTokens[i].eToken == XML_HEADER_FOOTER_PROPERTIES &&
+				SvtSaveOptions().GetODFDefaultVersion() == SvtSaveOptions::ODFVER_014_EXT )
+			{
+				aMainProps = rProperties;
+				aFillProps = rProperties;
+				bool bFill = false;
+				for( size_t n = 0; n < rProperties.size(); ++n )
+				{
+					const sal_Int32 nIdx = rProperties[n].mnIndex;
+					if( nIdx == -1 )
+						continue;
+					if( maPropMapper->GetEntryNameSpace( nIdx ) == XML_NAMESPACE_DRAW ||
+						( maPropMapper->GetEntryNameSpace( nIdx ) == XML_NAMESPACE_STYLE &&
+						  IsXMLToken( maPropMapper->GetEntryXMLName( nIdx ), XML_REPEAT ) ) )
+					{
+						aMainProps[n].mnIndex = -1;
+						bFill = true;
+					}
+					else
+						aFillProps[n].mnIndex = -1;
+				}
+				if( bFill )
+				{
+					pMainProps = &aMainProps;
+					pFillAttrs = new SvXMLAttributeList;
+					xFillAttrs = pFillAttrs;
+					sal_uInt16 nFillTypeFlags = 0;
+					_exportXML( nPropType, nFillTypeFlags, *pFillAttrs, aFillProps,
+								rExport.GetMM100UnitConverter(),
+								rExport.GetNamespaceMap(),
+								nFlags, 0,
+								nPropMapStartIdx, nPropMapEndIdx );
+				}
+			}
+
 			_exportXML( nPropType, nPropTypeFlags,
-						rExport.GetAttrList(), rProperties,
+						rExport.GetAttrList(), *pMainProps,
 						rExport.GetMM100UnitConverter(),
 						rExport.GetNamespaceMap(),
 						nFlags, &aIndexArray,
@@ -875,7 +915,8 @@ void SvXMLExportPropertyMapper::exportXML(
 
 			if( rExport.GetAttrList().getLength() > 0L ||
 				(nFlags & XML_EXPORT_FLAG_EMPTY) != 0 ||
-				aIndexArray.Count() != 0 )
+				aIndexArray.Count() != 0 ||
+				( pFillAttrs && pFillAttrs->getLength() > 0 ) )
 			{
 				sal_uInt16 nElemPrefix = XML_NAMESPACE_STYLE;
 				// ODF 1.4 Extended: paragraph fills are not valid in style:graphic-properties
@@ -896,6 +937,17 @@ void SvXMLExportPropertyMapper::exportXML(
 								  sal_False );
 
 				exportElementItems( rExport, rProperties, nFlags, aIndexArray );
+
+				if( pFillAttrs && pFillAttrs->getLength() > 0 )
+				{
+					for( sal_Int16 n = 0; n < pFillAttrs->getLength(); ++n )
+						rExport.AddAttribute( pFillAttrs->getNameByIndex( n ),
+											  pFillAttrs->getValueByIndex( n ) );
+					SvXMLElementExport aFillElem( rExport, XML_NAMESPACE_STYLE,
+									  XML_BACKGROUND_FILL,
+									  (nFlags & XML_EXPORT_FLAG_IGN_WS) != 0,
+									  sal_False );
+				}
 			}
 		}
 	}

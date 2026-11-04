@@ -25,6 +25,8 @@
 #include "precompiled_xmloff.hxx"
 #include <tools/debug.hxx>
 #include "PagePropertySetContext.hxx"
+#include <xmloff/xmltoken.hxx>
+#include "xmloff/xmlnmspe.hxx"
 #include "XMLBackgroundImageContext.hxx"
 #include "XMLTextColumnsContext.hxx"
 #ifndef _XMLOFF_PAGEMASTERSTYLEMAP_HXX
@@ -36,6 +38,7 @@ using ::rtl::OUString;
 
 using namespace ::com::sun::star::uno;
 using namespace ::com::sun::star;
+using namespace ::xmloff::token;
 
 PagePropertySetContext::PagePropertySetContext(
 				 SvXMLImport& rImport, sal_uInt16 nPrfx,
@@ -54,6 +57,19 @@ PagePropertySetContext::PagePropertySetContext(
 
 PagePropertySetContext::~PagePropertySetContext()
 {
+}
+
+SvXMLImportContext *PagePropertySetContext::CreateChildContext(
+				   sal_uInt16 nPrefix,
+				   const OUString& rLocalName,
+				   const Reference< xml::sax::XAttributeList > & xAttrList )
+{
+	if( aType != Page && XML_NAMESPACE_STYLE == nPrefix && IsXMLToken( rLocalName, XML_BACKGROUND_FILL ) )
+		return new SvXMLPropertySetContext( GetImport(), nPrefix, rLocalName, xAttrList,
+											mnFamily, mrProperties, mxMapper,
+											mnStartIdx, mnEndIdx );
+
+	return SvXMLPropertySetContext::CreateChildContext( nPrefix, rLocalName, xAttrList );
 }
 
 SvXMLImportContext *PagePropertySetContext::CreateChildContext(

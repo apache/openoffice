@@ -3159,6 +3159,7 @@ namespace xmloff { namespace token {
         TOKEN( "handle-polar-pole-y",          XML_HANDLE_POLAR_POLE_Y ),
         TOKEN( "handle-polar-radius",          XML_HANDLE_POLAR_RADIUS ),
         TOKEN( "handle-polar-angle",           XML_HANDLE_POLAR_ANGLE ),
+        TOKEN( "background-fill",              XML_BACKGROUND_FILL ),
 
 #if OSL_DEBUG_LEVEL > 0
         { 0, NULL, NULL,                       XML_TOKEN_END }
