@@ -53,6 +53,17 @@ PATCH_FILES=\
 #   through the compiler include/lib search paths instead of the old hard-coded
 #   source edit; see python_CFLAGS/python_LDFLAGS in the UNX branch below.
 
+# Windows 7 SP1, the office's floor, where upstream Python 3.9+ wants
+# Windows 8: PC/pyconfig.h's Py_WINVER/Py_NTDDI lowered to Windows 7, and
+# pythoncore no longer imports pathcch.lib (its API set does not exist on
+# Windows 7, so python311.dll would not even load there) -- PC/pathcch_win7.c
+# calls the real PathCch* functions where KernelBase exports them and falls
+# back to their documented behaviour on Windows 7.  _freeze_module keeps
+# pathcch.lib: it only runs on the build machine.
+.IF "$(GUI)"=="WNT"
+PATCH_FILES += python-$(PYVERSION)-win7.patch
+.ENDIF
+
 # Windows build deferred — Python 3 requires modern MSVC (VS2008/msvs9 not supported).
 # The msvs9 patch files below are retained for reference but are NOT applied until
 # the Windows toolchain is modernised. See python3 migration notes.
