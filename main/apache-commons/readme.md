@@ -27,7 +27,8 @@ Migrated 2026-10-03 with four; trunk 33efb51f76 (2026-11-03 here) dropped
 Publisher (`//main/swext`), their consumer until then, now talks to the
 MediaWiki API over the JDK's own HTTP stack and bundles no Commons jar at all.
 What is left is built upstream for the report builder (`ENABLE_REPORTBUILDER`),
-which is not migrated yet — so nothing in this tree consumes these jars today.
+which left this migration on 2026-10-06 (branch `bazel-reportbuilder`) — so
+nothing in this tree consumes these jars today.
 
 The legacy dmake module lives on under `ext_libraries/modules/apache-commons`
 (trunk's change applied there too).  The classes come from two bzlmod modules,

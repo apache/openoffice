@@ -34,7 +34,8 @@ saxon 9.0.0.7 (bzlmod, Java) - main/saxon/readme.md  (Latin-1 sources transcoded
 lucene 2.9.4 (bzlmod, Java) - main/xmlhelp/readme.md  (long_path.patch regenerated)
 commons-lang3 3.3 / commons-logging 1.1.3 (bzlmod, Java) - main/apache-commons/readme.md
   (one Latin-1 file transcoded; jars assembled under upstream's delivered names in
-  //main/apache-commons; kept for the unmigrated report builder.  commons-codec,
+  //main/apache-commons; upstream's consumer is the report builder, which left this migration
+  2026-10-06, so nothing here consumes them.  commons-codec,
   commons-httpclient and tomcat were dropped with trunk 33efb51f76)
 xsltml 2.1.2 (bzlmod, data) - main/xsltml/readme.md  (overlay carries the patched
   files; CRLF kept by a -text .gitattributes)

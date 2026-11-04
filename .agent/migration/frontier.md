@@ -24,6 +24,28 @@ Buckets below labelled "Remaining" are in-scope work, not abandoned; only
 "Out of scope" and "Dropped" are excluded.  Ordered by priority — testing of
 already-migrated modules is the active front-line task.
 
+── Trunk sync ───────────────────────────────────────────────────────────
+trunk         ✅  bazel-trunk-sync is at origin/trunk 2c760c133d (2026-11-03),
+                   merged 2026-11-04; //main/staging:install green on win7-x64.
+                   Bazel follow-ups that merge needed: sc vbaobj's EXPLICIT source
+                   list (+6 VBA sources; oovbaapi IDLs come by glob, 998 files).
+                   Rhino 1.7.7.2: trunk's six patches sit byte-identical in
+                   ext_libraries/modules/rhino/1.7.7.2/patches; NOTHING builds
+                   js.jar (the JavaScript/BeanShell script providers are not
+                   migrated) and the 1.7R3 registry stub is stale -- make it a
+                   1.7.7.2 entry when the JavaScript provider is migrated.
+                   main/test/source/basic/sbxmod_override.cxx is in no trunk
+                   makefile, so it is not wired either.
+                   OPEN (parked by owner 2026-11-04): Bazel outputs are read-only,
+                   userinstall.cxx copy_recursive() copies presets/ with CopyFile,
+                   which keeps the attribute, so every NEW profile gets read-only
+                   user/basic/*.xlc|*.xlb|*.xba and the office errors on exit
+                   ("error saving .../user/basic/script.xlc").  Options: a
+                   `bazel run` deploy step that copies staging out and clears the
+                   attribute (build-only), or clearing it in copy_recursive (source,
+                   trunk-worthy: any read-only install would hit it).
+                   Workaround: attrib -R /S /D "%APPDATA%\OpenOffice\5bazel\user\*".
+
 ── Active: test coverage for already-migrated modules ───────────────────
 test          🔨  C++ unit-test infra runnable — NOW THE FRONT-LINE TASK: bring up
                    per-module qa/ tests across every ALREADY-MIGRATED module and keep
@@ -939,7 +961,8 @@ swext         ✅  DONE 2026-10-03 — wiki-publisher.oxt (//main/swext:wiki-pub
                    and no THIRDPARTYLICENSEREADME.html (54 entries, was 59).
                    @commons-codec, @commons-httpclient and @tomcat removed from the
                    registry; commons-logging no longer builds ServletContextCleaner.
-                   lang3 + logging stay for the unmigrated report builder.
+                   lang3 + logging remain, unconsumed here (their upstream user,
+                   reportbuilder, left the migration 2026-10-06).
                    Verified 2026-11-04: installs and runs on the 5.1.0 build
                    (it needs 5.0+, hence the central-version change).
                    See main/swext/README.md.
