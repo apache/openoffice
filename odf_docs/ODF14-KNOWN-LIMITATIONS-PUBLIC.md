@@ -52,7 +52,7 @@ These are read without error and have no effect:
 - `INDEX` on a row vector with only a row argument returns the column, as in other spreadsheets. ODF 1.4 removed that rule and calls the call an error.
 - `CONVERT` with `atm` uses 101324.996583 Pa; the ODF 1.4 table gives 1.0132510E+5, a relative difference of 1.0e-6.
 - A trailing empty parameter before the closing bracket, as in `NPER(r;p;pv;;)`, is an error for every function except `IF`. An empty parameter in the middle works.
-- `DATE` gives an error for dates before 1583, which ODF 1.4 makes implementation-defined.
+- `DATE` gives an error for dates before 15 October 1582. ODF 1.4 requires support only from 1583 and makes earlier dates implementation-defined.
 
 ## Not verified
 
