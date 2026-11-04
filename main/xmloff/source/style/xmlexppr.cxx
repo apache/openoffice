@@ -115,6 +115,14 @@ static sal_Bool lcl_IsTableCellFill( const UniReference< XMLPropertySetMapper >&
 			IsXMLToken( rMapper->GetEntryXMLName( nIdx ), XML_REPEAT ) ) );
 }
 
+// style:background-fill requires draw:fill; style:repeat alone (the default bitmap mode) is not a fill.
+static void lcl_DropFillWithoutStyle( SvXMLAttributeList& rAttrs, const SvXMLNamespaceMap& rNamespaceMap )
+{
+	if( rAttrs.getLength() > 0 &&
+		rAttrs.getValueByName( rNamespaceMap.GetQNameByKey( XML_NAMESPACE_DRAW, GetXMLToken( XML_FILL ) ) ).getLength() == 0 )
+		rAttrs.Clear();
+}
+
 static sal_Bool lcl_HasTableCellProperties( const UniReference< XMLPropertySetMapper >& rMapper )
 {
 	for( sal_Int32 n = 0; n < rMapper->GetEntryCount(); ++n )
@@ -941,6 +949,7 @@ void SvXMLExportPropertyMapper::exportXML(
 							rExport.GetNamespaceMap(),
 							nFlags, 0,
 							nPropMapStartIdx, nPropMapEndIdx );
+				lcl_DropFillWithoutStyle( *pFillAttrs, rExport.GetNamespaceMap() );
 			}
 			else if( aPropTokens[i].eToken == XML_HEADER_FOOTER_PROPERTIES && b014 )
 			{
@@ -971,6 +980,7 @@ void SvXMLExportPropertyMapper::exportXML(
 								rExport.GetNamespaceMap(),
 								nFlags, 0,
 								nPropMapStartIdx, nPropMapEndIdx );
+					lcl_DropFillWithoutStyle( *pFillAttrs, rExport.GetNamespaceMap() );
 				}
 			}
 
