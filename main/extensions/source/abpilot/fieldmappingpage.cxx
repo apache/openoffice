@@ -37,7 +37,7 @@ namespace abp
 	//= FieldMappingPage
 	//=====================================================================
 	//---------------------------------------------------------------------
-	FieldMappingPage::FieldMappingPage( OAddessBookSourcePilot* _pParent )
+	FieldMappingPage::FieldMappingPage( OAddressBookSourcePilot* _pParent )
 		:AddressBookSourcePage( _pParent, ModuleRes( RID_PAGE_FIELDMAPPING ) )
 		,m_aExplanation		( this, ModuleRes( FT_FIELDASSIGMENTEXPL ) )
 		,m_aInvokeDialog	( this, ModuleRes( PB_INVOKE_FIELDS_DIALOG ) )
