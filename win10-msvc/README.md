@@ -247,6 +247,61 @@ Delivered as new `*.patch.ucrt` files listed after the existing
 `libxml2` needed nothing — 2.9.10 already guards its own `snprintf` shim on
 `_MSC_VER < 1900`. `nss` needed nothing either.
 
+## The Windows floor: Windows 7 SP1
+
+What a build runs on is no longer chosen by the old platform files: the VS2015+
+runtime does not install below Windows 7 SP1, and Python 3.11 cannot be built
+by VS2008, so trunk has no Windows XP or Windows 2000 build left. The platform
+settings still declared Windows 2000 (`WINVER`/`_WIN32_WINNT`/`_WIN32_IE`
+`0x0500`; gbuild declared no `_WIN32_WINNT` at all). They now declare what the
+result actually needs, with the values the Bazel build compiles and runs at:
+
+| | dmake (`wntmsci11.mk`, `wntmscx.mk`) and gbuild (`platform/windows.mk`) |
+| --- | --- |
+| `WINVER`, `_WIN32_WINNT` | `0x0601` (Windows 7) |
+| `_WIN32_IE` | `0x0800`, the value the SDK derives from `0x0601` |
+
+The floor is in the base files, not in `wntmsc14.mk`: there is no VC9 build of
+trunk left for a conditional to protect, so the "VC9 stays byte-identical"
+property of the overlay no longer covers these three defines.
+
+Kept as they were, on purpose:
+
+- **The GUI subsystem version** stays pinned to 5.02 (x64) / 5.01 (x86) in
+  `wntmsc14.mk`. It is *not* a floor setting: 6.00 makes Windows route drops
+  through the brokered drag-and-drop path, which AOO's drop targets fail
+  (drag-and-drop dead in Gallery, Calc and Draw).
+- **Modules that state their own value.** `fpicker` and
+  `sal/systools/win32/kill` replace it with `-U`/`-D`, `shell` adds a second
+  `-D`, `openssl` builds with its own flags — all lower than the floor, so
+  their code keeps using only what it did.
+
+**Python is where the floor is actually decided.** It builds from its own
+`PCbuild` projects, which no solenv define reaches, and upstream 3.9+ targets
+Windows 8: `PC/pyconfig.h` sets `Py_WINVER 0x0602`, and pythoncore links
+`pathcch.lib`, whose API set does not exist on Windows 7 — `python311.dll`
+would not even load there. `python-3.11.15-win7.patch` (Windows only) is the
+support the Bazel build already runs with: `Py_WINVER`/`Py_NTDDI` lowered to
+Windows 7; `PC/pathcch_win7.c` calls the real `PathCch*` functions from
+KernelBase where they exist and falls back to their documented behaviour on
+Windows 7; `PC/aoo_win7_compat.h` supplies the two Windows 8 `LCMAP_*`
+constants `_winapi.c` uses only to reject them. `_freeze_module` keeps
+`pathcch.lib`, since it only runs on the build machine.
+
+**The installer** refuses Windows 7 RTM and anything older
+(`LaunchCo.idt`, `OOO_LAUNCH_3`): `(VersionNT > 601) or (VersionNT = 601 and
+ServicePackLevel >= 1) or Installed`, the last term so that repair and removal
+still work.
+
+What Windows 7 SP1 additionally needs at install time is outside the build:
+the Universal C Runtime update (KB2999226) for the VS2015+ runtime, and
+KB2533623 for the `LOAD_LIBRARY_SEARCH_*` flags Python loads its modules with.
+And the runtime that ships must itself still support Windows 7 — the newest
+VC++ redistributables do not, so the toolset should be no newer than the
+runtime release shipped with it (see the staged-CRT gap below). Nothing here
+has been run on a real Windows 7 machine yet; only the compile-time floor is
+enforced.
+
 ## The old Platform SDK does not go away entirely
 
 `--with-frame-home` must keep pointing at the **Platform SDK v7.0**, whatever
