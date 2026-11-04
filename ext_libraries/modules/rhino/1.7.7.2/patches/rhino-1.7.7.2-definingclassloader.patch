@@ -1,0 +1,66 @@
+--- a/b/rhino1.7.7.2/src/org/mozilla/javascript/DefiningClassLoader.java
++++ b/b/rhino1.7.7.2/src/org/mozilla/javascript/DefiningClassLoader.java
+@@ -4,9 +4,6 @@
+ 
+ package org.mozilla.javascript;
+ 
+-import java.lang.reflect.Method;
+-import java.lang.reflect.InvocationTargetException;
+-
+ /**
+  * Load generated classes.
+  *
+@@ -27,19 +24,16 @@
+ 
+     private void init() {
+         this.contextLoader = null;
+-        if (method_getContextClassLoader != null) {
+-            try {
+-                this.contextLoader = (ClassLoader)
+-                    method_getContextClassLoader.invoke(
+-                        Thread.currentThread(),
+-                        ScriptRuntime.emptyArgs);
+-            } catch (IllegalAccessException ex) {
+-            } catch (InvocationTargetException ex) {
+-            } catch (SecurityException ex) {
+-            }
+-            if (this.contextLoader == this.parentLoader) {
+-                this.contextLoader = null;
+-            }
++        try {
++            this.contextLoader = Thread.currentThread().getContextClassLoader();
++        } catch (SecurityException ex) {
++            /* Context class loader access denied in restricted
++               environments (e.g. applets, sandboxed class loaders).
++               Fall back to the parent class loader only. */
++            this.contextLoader = null;
++        }
++        if (this.contextLoader == this.parentLoader) {
++            this.contextLoader = null;
+         }
+     }
+ 
+@@ -90,23 +84,4 @@
+     private final ClassLoader parentLoader;
+ 
+     private ClassLoader contextLoader;
+-
+-    // We'd like to use "Thread.getContextClassLoader", but
+-    // that's only available on Java2.
+-    private static Method method_getContextClassLoader;
+-
+-    static {
+-        try {
+-            // Don't use "Thread.class": that performs the lookup
+-            // in the class initializer, which doesn't allow us to
+-            // catch possible security exceptions.
+-            Class threadClass = Class.forName("java.lang.Thread");
+-            method_getContextClassLoader =
+-                threadClass.getDeclaredMethod("getContextClassLoader",
+-                                               new Class[0]);
+-        } catch (ClassNotFoundException e) {
+-        } catch (NoSuchMethodException e) {
+-        } catch (SecurityException e) {
+-        }
+-    }
+ }

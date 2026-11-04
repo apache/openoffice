@@ -437,12 +437,25 @@ SbxObject* SbiFactory::CreateObject( const String& rClass )
 		return new BasicCollection( aCollectionName );
 	}
 	else
-    if( rClass.EqualsIgnoreCaseAscii( "FileSystemObject" ) )
+    if( rClass.EqualsIgnoreCaseAscii( "Scripting.FileSystemObject" ) )
     {
         try
         {
             Reference< XMultiServiceFactory > xFactory( comphelper::getProcessServiceFactory(), UNO_SET_THROW );
             ::rtl::OUString aServiceName( RTL_CONSTASCII_USTRINGPARAM( "ooo.vba.FileSystemObject" ) );
+            Reference< XInterface > xInterface( xFactory->createInstance( aServiceName ), UNO_SET_THROW );
+            return new SbUnoObject( aServiceName, uno::makeAny( xInterface ) );
+        }
+        catch( Exception& )
+        {}
+    }
+    else
+    if( rClass.EqualsIgnoreCaseAscii( "Scripting.Dictionary" ) )
+    {
+        try
+        {
+            Reference< XMultiServiceFactory > xFactory( comphelper::getProcessServiceFactory(), UNO_SET_THROW );
+            ::rtl::OUString aServiceName( RTL_CONSTASCII_USTRINGPARAM( "ooo.vba.scripting.Dictionary" ) );
             Reference< XInterface > xInterface( xFactory->createInstance( aServiceName ), UNO_SET_THROW );
             return new SbUnoObject( aServiceName, uno::makeAny( xInterface ) );
         }

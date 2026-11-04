@@ -1002,6 +1002,10 @@ void ScFormulaCell::CompileXML( ScProgress& rProgress )
 		return ;
 	}
 
+	// error cell read from office:value-type="error": no formula, recompiling would give #NAME?
+	if ( pCode->GetCodeError() && !pCode->GetLen() )
+		return;
+
 	ScCompiler aComp( pDocument, aPos, *pCode);
     aComp.SetGrammar(eTempGrammar);
     String aFormula, aFormulaNmsp;

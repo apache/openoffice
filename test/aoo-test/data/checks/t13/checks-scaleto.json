@@ -1,0 +1,52 @@
+[
+ {
+  "name": "scale_xy",
+  "expr": "(lambda s: [s.ScaleToPagesX, s.ScaleToPagesY, s.ScaleToPages, s.PageScale])(doc.StyleFamilies.getByName('PageStyles').getByName('PS_xy'))",
+  "expect": [
+   2,
+   3,
+   0,
+   100
+  ]
+ },
+ {
+  "name": "scale_x_only",
+  "expr": "(lambda s: [s.ScaleToPagesX, s.ScaleToPagesY, s.ScaleToPages, s.PageScale])(doc.StyleFamilies.getByName('PageStyles').getByName('PS_x'))",
+  "expect": [
+   2,
+   0,
+   0,
+   100
+  ]
+ },
+ {
+  "name": "scale_pages",
+  "expr": "(lambda s: [s.ScaleToPagesX, s.ScaleToPagesY, s.ScaleToPages, s.PageScale])(doc.StyleFamilies.getByName('PageStyles').getByName('PS_pages'))",
+  "expect": [
+   0,
+   0,
+   4,
+   100
+  ]
+ },
+ {
+  "name": "scale_percent",
+  "expr": "(lambda s: [s.ScaleToPagesX, s.ScaleToPagesY, s.ScaleToPages, s.PageScale])(doc.StyleFamilies.getByName('PageStyles').getByName('PS_scale'))",
+  "expect": [
+   0,
+   0,
+   0,
+   80
+  ]
+ },
+ {
+  "name": "scale_sheet_styles",
+  "expr": "[doc.Sheets.getByIndex(i).PageStyle for i in range(doc.Sheets.Count)]",
+  "expect": [
+   "PS_xy",
+   "PS_x",
+   "PS_pages",
+   "PS_scale"
+  ]
+ }
+]

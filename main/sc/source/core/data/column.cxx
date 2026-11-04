@@ -929,7 +929,7 @@ void ScColumn::SwapRow(SCROW nRow1, SCROW nRow2)
 		ScTokenArray* pCode1 = pFmlaCell1->GetCode();
 		ScTokenArray* pCode2 = pFmlaCell2->GetCode();
 
-		if (pCode1->GetLen() == pCode2->GetLen())		// nicht-UPN
+		if (pCode1->GetLen() == pCode2->GetLen() && pCode1->GetCodeError() == pCode2->GetCodeError())		// nicht-UPN
 		{
 			sal_Bool bEqual = sal_True;
 			sal_uInt16 nLen = pCode1->GetLen();

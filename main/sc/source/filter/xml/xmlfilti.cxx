@@ -55,6 +55,7 @@ ScXMLFilterContext::ScXMLFilterContext( ScXMLImport& rImport,
 	bSkipDuplicates(sal_False),
 	bCopyOutputData(sal_False),
 	bUseRegularExpressions(sal_False),
+	bIsCaseSensitive(sal_False),
 	bConnectionOr(sal_True),
 	bNextConnectionOr(sal_True),
 	bConditionSourceRange(sal_False)
@@ -381,6 +382,9 @@ void ScXMLConditionContext::getOperatorXML(const rtl::OUString sTempOperator, sa
 
 void ScXMLConditionContext::EndElement()
 {
+    // ODF 1.4 colour conditions cannot be expressed here; reading the colour as text would filter everything out
+    if (sDataType.equalsAscii("text-color") || sDataType.equalsAscii("background-color"))
+        return;
     sheet::TableFilterField2 aFilterField;
 	if (pFilterContext->GetConnection())
 		aFilterField.Connection = sheet::FilterConnection_OR;
@@ -419,6 +423,7 @@ ScXMLDPFilterContext::ScXMLDPFilterContext( ScXMLImport& rImport,
 	bSkipDuplicates(sal_False),
 	bCopyOutputData(sal_False),
 	bUseRegularExpressions(sal_False),
+	bIsCaseSensitive(sal_False),
 	bConnectionOr(sal_True),
 	bNextConnectionOr(sal_True),
 	bConditionSourceRange(sal_False)
@@ -746,6 +751,8 @@ void ScXMLDPConditionContext::getOperatorXML(const rtl::OUString sTempOperator, 
 
 void ScXMLDPConditionContext::EndElement()
 {
+    if (sDataType.equalsAscii("text-color") || sDataType.equalsAscii("background-color"))
+        return;
 	ScQueryEntry aFilterField;
 	if (pFilterContext->GetConnection())
 		aFilterField.eConnect = SC_OR;

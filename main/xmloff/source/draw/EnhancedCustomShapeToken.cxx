@@ -104,6 +104,12 @@ static const TokenTable pTokenTableArray[] =
 	{ "handle-polar",						EAS_handle_polar },
 	{ "handle-radius-range-minimum",		EAS_handle_radius_range_minimum },
 	{ "handle-radius-range-maximum",		EAS_handle_radius_range_maximum },
+	{ "handle-position-x",					EAS_handle_position_x },
+	{ "handle-position-y",					EAS_handle_position_y },
+	{ "handle-polar-pole-x",				EAS_handle_polar_pole_x },
+	{ "handle-polar-pole-y",				EAS_handle_polar_pole_y },
+	{ "handle-polar-radius",				EAS_handle_polar_radius },
+	{ "handle-polar-angle",				EAS_handle_polar_angle },
 
 	{ "CustomShapeEngine",					EAS_CustomShapeEngine },
 	{ "CustomShapeData",					EAS_CustomShapeData },

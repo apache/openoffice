@@ -65,6 +65,8 @@ public:
         ODFVER_012_EXT = 5,     // ODF 1.2 with extensions
         ODFVER_013 = 6,         // ODF 1.3
         ODFVER_013_EXT = 7,     // ODF 1.3 with extensions
+        ODFVER_014 = 8,         // ODF 1.4
+        ODFVER_014_EXT = 9,     // ODF 1.4 with extensions
 
         ODFVER_EXTENSION = SAL_MAX_ENUM,   // only in property map tables: export in the extended modes only
         ODFVER_EXTENSION_PRE_013 = SAL_MAX_ENUM - 1,   // only in property map tables: export in the extended modes below ODF 1.3

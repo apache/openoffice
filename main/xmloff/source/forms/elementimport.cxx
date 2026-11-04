@@ -54,6 +54,7 @@
 #include <tools/diagnose_ex.h>
 #include <tools/time.hxx>
 #include <rtl/logfile.hxx>
+#include <comphelper/documentconstants.hxx>
 #include <comphelper/extract.hxx>
 #include <comphelper/types.hxx>
 
@@ -765,7 +766,7 @@ namespace xmloff
             return true;
         }
 
-        if ( _nNamespaceKey == XML_NAMESPACE_FORM && IsXMLToken( _rLocalName, XML_XFORMS_LIST_SOURCE )  )
+        if ( ( _nNamespaceKey == XML_NAMESPACE_FORM || _nNamespaceKey == XML_NAMESPACE_OOO ) && IsXMLToken( _rLocalName, XML_XFORMS_LIST_SOURCE ) )
         {
             m_sListBindingID = _rValue;
             return true;
@@ -851,6 +852,11 @@ namespace xmloff
 
 		// let the base class handle all the attributes
 		OElementImport::StartElement(xAttributes);
+
+		// ODF 1.4 defines form:input-required as false by default, the property is true by default
+		if ( m_xElement.is() && m_xInfo.is() && m_xInfo->hasPropertyByName( PROPERTY_INPUT_REQUIRED )
+				&& GetImport().GetODFVersion().compareTo( ODFVER_014_TEXT ) >= 0 )
+			simulateDefaultedAttribute( OAttributeMetaData::getDatabaseAttributeName( DA_INPUT_REQUIRED ), PROPERTY_INPUT_REQUIRED, "false" );
 
 		if ( !m_aValueProperties.empty() && m_xElement.is())
 		{

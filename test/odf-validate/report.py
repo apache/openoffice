@@ -19,7 +19,7 @@
 #
 #**************************************************************
 
-# usage: report.py <val.json> <kinds.json> [12|14|12x]   -- groups errors by normalized message
+# usage: report.py <val.json> <kinds.json> [12|14|12x|13|13x|14x]   -- groups errors by normalized message
 import sys, re, json, collections
 
 

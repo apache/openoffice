@@ -2344,6 +2344,17 @@ void ScXMLExport::_ExportAutoStyles()
                             {
                                 std::vector<XMLPropertyState> xPropStates(
                                     GetTextParagraphExport()->GetParagraphPropertyMapper()->Filter(xShapeProperties));
+                                // ODF 1.4 Extended: the fill is in the style of the note shape, as for other shapes (XMLShapeExport)
+                                if( getDefaultVersion() == SvtSaveOptions::ODFVER_014_EXT )
+                                {
+                                    UniReference< XMLPropertySetMapper > xParaMapper( GetTextParagraphExport()->GetParagraphPropertyMapper()->getPropertySetMapper() );
+                                    for( std::vector<XMLPropertyState>::iterator aIter = xPropStates.begin(); aIter != xPropStates.end(); ++aIter )
+                                    {
+                                        if( aIter->mnIndex != -1 && ( xParaMapper->GetEntryType( aIter->mnIndex ) & XML_TYPE_PROP_MASK ) == XML_TYPE_PROP_GRAPHIC &&
+                                            xParaMapper->GetEarliestODFVersionForExport( aIter->mnIndex ) == SvtSaveOptions::ODFVER_EXTENSION )
+                                            aIter->mnIndex = -1;
+                                    }
+                                }
                                 rtl::OUString sParent;
                                 rtl::OUString sName( aNoteIter->maTextStyle );
                                 GetAutoStylePool()->AddNamed(sName, XML_STYLE_FAMILY_TEXT_PARAGRAPH, sParent, xPropStates);
@@ -2981,7 +2992,9 @@ void ScXMLExport::WriteCell(ScMyCell& aCell, sal_Int32 nEqualCellCount)
 			{
 				rtl::OUStringBuffer sFormula;
 				ScFormulaCell* pFormulaCell((ScFormulaCell*) pBaseCell);
-				if (!bIsMatrix || (bIsMatrix && bIsFirstMatrixCell))
+				// an error without a formula (error cell, Excel import) has no valid formula to write
+				const bool bIsErrorOnly = pFormulaCell->GetCode()->GetCodeError() && !pFormulaCell->GetCode()->GetLen();
+				if (!bIsErrorOnly && (!bIsMatrix || (bIsMatrix && bIsFirstMatrixCell)))
 				{
                     const formula::FormulaGrammar::Grammar eGrammar = pDoc->GetStorageGrammar();
                     sal_uInt16 nNamespacePrefix = (eGrammar == formula::FormulaGrammar::GRAM_ODFF ? XML_NAMESPACE_OF : XML_NAMESPACE_OOOC);
@@ -2996,7 +3009,7 @@ void ScXMLExport::WriteCell(ScMyCell& aCell, sal_Int32 nEqualCellCount)
 						AddAttribute(sAttrFormula, GetNamespaceMap().GetQNameByKey( nNamespacePrefix, sOUFormula.copy(1, sOUFormula.getLength() - 2), sal_False ));
 					}
 				}
-				if (pFormulaCell->IsValue())
+				if (!bIsErrorOnly && pFormulaCell->IsValue())
 				{
 					sal_Bool bIsStandard;
 					rtl::OUString sCurrency;

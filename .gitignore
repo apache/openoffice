@@ -141,3 +141,9 @@ uno.sqlite
 
 # Not "*.lock" (trunk has it): this branch tracks MODULE.bazel.lock files
 # under ext_libraries/modules, and new ones must not be silently ignored.
+# (trunk's bazel-* and user.bazelrc are covered above.)
+
+# Visual Studio (not VS Code)
+.vs/
+
+.kilo/

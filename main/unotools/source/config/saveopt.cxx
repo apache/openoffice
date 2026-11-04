@@ -495,6 +495,10 @@ SvtSaveOptions_Impl::SvtSaveOptions_Impl()
                                 eODFDefaultVersion = SvtSaveOptions::ODFVER_013;
                             else if( nTmp == 6 )
                                 eODFDefaultVersion = SvtSaveOptions::ODFVER_013_EXT;
+                            else if( nTmp == 7 )
+                                eODFDefaultVersion = SvtSaveOptions::ODFVER_014;
+                            else if( nTmp == 8 )
+                                eODFDefaultVersion = SvtSaveOptions::ODFVER_014_EXT;
                             else if( nTmp >= 0 && nTmp <= 4 )
                                 eODFDefaultVersion = SvtSaveOptions::ODFDefaultVersion( nTmp );
                         }
@@ -757,6 +761,10 @@ void SvtSaveOptions_Impl::Commit()
                         nODFVersion = 5;
                     else if( eODFDefaultVersion == SvtSaveOptions::ODFVER_013_EXT )
                         nODFVersion = 6;
+                    else if( eODFDefaultVersion == SvtSaveOptions::ODFVER_014 )
+                        nODFVersion = 7;
+                    else if( eODFDefaultVersion == SvtSaveOptions::ODFVER_014_EXT )
+                        nODFVersion = 8;
                     pValues[nRealCount] <<= nODFVersion;
                     pNames[nRealCount] = pOrgNames[i];
                     ++nRealCount;
@@ -1067,12 +1075,12 @@ void SvtSaveOptions::SetODFDefaultVersion( SvtSaveOptions::ODFDefaultVersion eVe
 
 sal_Bool SvtSaveOptions::IsODFExtended( ODFDefaultVersion eVersion )
 {
-    return eVersion == ODFVER_012_EXT || eVersion == ODFVER_013_EXT;
+    return eVersion == ODFVER_012_EXT || eVersion == ODFVER_013_EXT || eVersion == ODFVER_014_EXT;
 }
 
 sal_Bool SvtSaveOptions::IsODFStrict( ODFDefaultVersion eVersion )
 {
-    return eVersion == ODFVER_012 || eVersion == ODFVER_013;
+    return eVersion == ODFVER_012 || eVersion == ODFVER_013 || eVersion == ODFVER_014;
 }
 
 SvtSaveOptions::ODFDefaultVersion SvtSaveOptions::GetODFDefaultVersion() const

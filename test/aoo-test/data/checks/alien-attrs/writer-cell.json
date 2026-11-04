@@ -1,0 +1,16 @@
+[
+ {
+  "name": "writer_aliens_cell",
+  "expr": "sorted(doc.TextTables.getByIndex(0).getCellByName('A1').UserDefinedAttributes.ElementNames)",
+  "expect": [
+   "draw:alien-draw",
+   "ex:alien-foreign",
+   "fo:alien-fo",
+   "office:alien-office",
+   "style:alien-style",
+   "svg:alien-svg",
+   "table:alien-table",
+   "text:enable-numbering"
+  ]
+ }
+]

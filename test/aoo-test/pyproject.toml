@@ -1,0 +1,54 @@
+################################################################
+#
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+#
+################################################################
+
+[project]
+name = "aoo-test"
+version = "0.1.0"
+description = "Test and compliance suite for an installed Apache OpenOffice 5 or later"
+requires-python = ">=3.10"
+
+[dependency-groups]
+test = ["pytest>=8.0"]
+ooxml = ["python-docx", "openpyxl", "python-pptx"]
+render = ["pypdfium2", "Pillow"]
+proc = ["psutil"]
+extra = ["pytest-timeout", "pytest-xdist"]
+
+[tool.uv]
+package = false
+default-groups = ["test"]
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+pythonpath = ["src"]
+addopts = "--import-mode=importlib -m 'not corpus and not render and not gui and not crash'"
+markers = [
+    "selftest: negative controls proving the checkers can fail",
+    "smoke: quick checks against an installed office",
+    "slow: long-running checks",
+    "corpus: runs over a large external document set (--documents)",
+    "render: PDF rasterize and compare",
+    "gui: needs a display or a desktop session",
+    "needs_java: needs a Java runtime",
+    "crash: triggers a known crash of the office under test; run on request with -m crash",
+]

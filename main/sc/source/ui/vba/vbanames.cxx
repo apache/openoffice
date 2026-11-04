@@ -127,6 +127,30 @@ ScVbaNames::Add( const css::uno::Any& Name ,
 			RefersToR1C1 >>= xRange;
 		if ( RefersToR1C1Local.hasValue() )
 			RefersToR1C1Local >>= xRange;
+
+		// #i129350: VBA Names.Add can pass RefersTo as a string address (e.g. "=Sheet1!$A$1:$A$3")
+		// The >>= above only extracts XRange for interface types, not strings
+		if ( !xRange.is() && RefersTo.hasValue() )
+		{
+			rtl::OUString sRefersTo;
+			RefersTo >>= sRefersTo;
+			if ( sRefersTo.getLength() > 0 )
+			{
+				// Strip leading '=' if present (VBA RefersTo format: "=Address")
+				if ( sRefersTo[0] == '=' )
+					sRefersTo = sRefersTo.copy(1);
+				try
+				{
+					xRange = ScVbaRange::getRangeObjectForName(
+						mxContext, sRefersTo, excel::getDocShell( mxModel ),
+						formula::FormulaGrammar::CONV_XL_A1 );
+				}
+				catch( ... )
+				{
+					xRange.clear();
+				}
+			}
+		}
 	}
 
 	if ( xRange.is() )

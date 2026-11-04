@@ -114,7 +114,7 @@ def bridge_dead(path):
     return isinstance(d, dict) and (str(d.get("error", "")).startswith("Binary URP bridge") or str(d.get("body_error", "")).startswith("Binary URP bridge"))
 
 
-def dump_dir(src, dest, profile, port, stall, log, tool=None, poll=2.0):
+def dump_dir(src, dest, profile, port, stall, log, tool=None, poll=2.0, dumper="dump7.py"):
     """Reloads every package in src into dest/*.json. A document that stalls the office or kills it gets an error
     marker only after `stall` seconds without progress, never because the whole batch took long.
     tool(port, dest, files) -> argv replaces dump7.py under the office (for tests); then no office is started."""
@@ -130,7 +130,7 @@ def dump_dir(src, dest, profile, port, stall, log, tool=None, poll=2.0):
                     return {"error": "office did not start", "stalls": stalls}
             before = count()
             marker = os.path.join(dest, ".current")
-            argv = tool(port, dest, files) if tool else [os.path.join(D, "runpy.sh"), os.path.join(D, "dump7.py"), str(port), dest] + files
+            argv = tool(port, dest, files) if tool else [os.path.join(D, "runpy.sh"), os.path.join(D, dumper), str(port), dest] + files
             how, rc = run_with_stall(argv, lambda: (count(), os.path.getmtime(marker) if os.path.exists(marker) else 0), stall, poll, log=log)
             if how == "stalled" or rc != 0:
                 cur = open(marker).read().strip() if os.path.exists(marker) else ""
@@ -267,7 +267,7 @@ class Gate:
             bad.append("shall_formulas %d > %d in --prev" % (r["shall_formulas"], pf))
         return bad
 
-    def validate_dir(self, md, out, kinds_base, label):
+    def validate_dir(self, md, out, kinds_base, label, kinds_file="kinds.json"):
         """validate.py + report.py + the checkers on out/; returns a result dict."""
         r = {}
         log = os.path.join(md, "validate.log")
@@ -275,7 +275,7 @@ class Gate:
         val = json.load(open(os.path.join(md, "val.json")))
         r["errors"] = {v: len(e) for v, e in val["errors"].items()}
         r["packages"] = len(val["packages"])
-        for v in ("12", "14", "12x", "13", "13x"):
+        for v in ("12", "14", "12x", "13", "13x", "14x"):
             kp = os.path.join(md, "kinds%s.json" % ("" if v == "12" else v))
             run(PY + [os.path.join(D, "report.py"), os.path.join(md, "val.json"), kp, v], os.path.join(md, "report%s.log" % v))
             r["kinds" + v] = len(json.load(open(kp)))
@@ -286,21 +286,23 @@ class Gate:
             r["shall_" + name] = int(m.group(1)) if m and o.returncode == 0 else None
         base = kinds_base
         if base and os.path.exists(base):
-            r["vs_baseline"] = run(PY + [os.path.join(D, "compare.py"), base, os.path.join(md, "kinds.json")], os.path.join(md, "compare_base.log"))
+            r["vs_baseline"] = run(PY + [os.path.join(D, "compare.py"), base, os.path.join(md, kinds_file)], os.path.join(md, "compare_base.log"))
         return r
 
     def validate(self):
         res = {}
         for mode in self.modes:
             md = os.path.join(self.run, mode)
-            r = self.validate_dir(md, os.path.join(md, "out"), os.path.join(D, "baseline", mode + ".kinds.json"), mode)
-            pk = self.prev_path(mode + "/kinds.json")
+            # the ODF 1.4 modes are measured against the 1.4 schema, the others against 1.2 as written
+            kf = {"v14": "kinds14.json", "x14": "kinds14x.json"}.get(mode, "kinds.json")
+            r = self.validate_dir(md, os.path.join(md, "out"), os.path.join(D, "baseline", mode + ".kinds.json"), mode, kf)
+            pk = self.prev_path(mode + "/" + kf)
             r["problems"] = self.shall_problems(r, self.prev_validate("validate", mode))
             if not self.a.limit and not pk and "vs_baseline" not in r:
                 r["problems"].append("no baseline/%s.kinds.json and no --prev kinds to compare with" % mode)
             if pk and not self.a.limit:
-                r["vs_prev"] = run(PY + [os.path.join(D, "compare.py"), pk, os.path.join(md, "kinds.json")], os.path.join(md, "compare_prev.log"))
-                r["vs_prev_reverse"] = run(PY + [os.path.join(D, "compare.py"), os.path.join(md, "kinds.json"), pk], os.path.join(md, "compare_prev_rev.log"))
+                r["vs_prev"] = run(PY + [os.path.join(D, "compare.py"), pk, os.path.join(md, kf)], os.path.join(md, "compare_prev.log"))
+                r["vs_prev_reverse"] = run(PY + [os.path.join(D, "compare.py"), os.path.join(md, kf), pk], os.path.join(md, "compare_prev_rev.log"))
             res[mode] = r
         res["ok"] = all(r.get("vs_baseline", 0) == 0 and r.get("vs_prev", 0) == 0 and r.get("vs_prev_reverse", 0) == 0 and not r["problems"] for r in res.values())
         return res

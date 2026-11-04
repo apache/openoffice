@@ -184,7 +184,7 @@ public abstract class ScriptProvider
                 {
                     // otherwise, check whether it's an XModel
                     m_xModel = UnoRuntime.queryInterface( XModel.class,
-                            m_xInvocContext.getScriptContainer() );
+                            aArguments[0] );
                 }
                 if ( m_xModel == null )
                 {

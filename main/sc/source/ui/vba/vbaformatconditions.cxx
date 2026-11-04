@@ -27,9 +27,11 @@
 #include <vector>
 #include "vbaformatconditions.hxx"
 #include "vbaformatcondition.hxx"
+#include "helperdecl.hxx"
 #include "vbaworkbook.hxx"
 #include "vbastyles.hxx"
 #include "vbaglobals.hxx"
+#include "helperdecl.hxx"
 using namespace ::ooo::vba;
 using namespace ::com::sun::star;
 
@@ -41,9 +43,13 @@ static rtl::OUString FORMULA2( RTL_CONSTASCII_USTRINGPARAM("Formula2") );
 static rtl::OUString STYLENAME( RTL_CONSTASCII_USTRINGPARAM("StyleName") );
 static rtl::OUString sStyleNamePrefix( RTL_CONSTASCII_USTRINGPARAM("Excel_CondFormat") );
 
+ScVbaFormatConditions::ScVbaFormatConditions( const css::uno::Sequence< css::uno::Any >& /*args*/, const css::uno::Reference< css::uno::XComponentContext >& xContext ) : ScVbaFormatConditions_BASE( css::uno::Reference< XHelperInterface >(), xContext, css::uno::Reference< container::XIndexAccess >() )
+{
+}
+
 ScVbaFormatConditions::ScVbaFormatConditions( const uno::Reference< XHelperInterface >& xParent, const uno::Reference< uno::XComponentContext > & xContext, const uno::Reference< sheet::XSheetConditionalEntries >& _xSheetConditionalEntries, const uno::Reference< frame::XModel >& /*xModel*/ ) : ScVbaFormatConditions_BASE( xParent, xContext, uno::Reference< container::XIndexAccess >( _xSheetConditionalEntries, uno::UNO_QUERY_THROW ) ), mxSheetConditionalEntries( _xSheetConditionalEntries )
 {
-	mxRangeParent.set( xParent, uno::UNO_QUERY_THROW );
+    mxRangeParent.set( xParent, uno::UNO_QUERY_THROW );
     uno::Reference< excel::XApplication> xApp( Application(), uno::UNO_QUERY_THROW );
     mxStyles.set( xApp->getThisWorkbook()->Styles( uno::Any() ), uno::UNO_QUERY_THROW );
 	uno::Reference< sheet::XCellRangeAddressable > xCellRange( mxRangeParent->getCellRange(), uno::UNO_QUERY_THROW );
@@ -292,5 +298,5 @@ ScVbaFormatConditions::getServiceNames()
 		aServiceNames.realloc( 1 );
 		aServiceNames[ 0 ] = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("ooo.vba.excel.FormatConditions" ) );
 	}
-	return aServiceNames;
+		return aServiceNames;
 }

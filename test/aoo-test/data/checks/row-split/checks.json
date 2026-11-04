@@ -1,0 +1,11 @@
+[
+ {
+  "name": "row_split",
+  "expr": "[doc.TextTables.getByIndex(0).Rows.getByIndex(i).IsSplitAllowed for i in range(doc.TextTables.getByIndex(0).Rows.Count)]",
+  "expect": [
+   true,
+   false,
+   true
+  ]
+ }
+]
