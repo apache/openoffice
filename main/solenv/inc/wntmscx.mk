@@ -225,7 +225,15 @@ CFLAGSWERRCC=-WX
 # settings.mk):
 MODULES_WITH_WARNINGS :=
 
-CDEFS+=-D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500
+# The Windows API floor: Windows 7 SP1.  Trunk builds only with a VS2015-or-
+# newer toolset (Python 3.11 needs one, and its runtime does not install on
+# anything older than Windows 7 SP1), so the old Windows 2000 values (0x0500)
+# described a platform the result cannot run on.  _WIN32_IE is the value the
+# Windows SDK derives from _WIN32_WINNT 0x0601.  A few modules state their own
+# value (fpicker and sal/systools/win32/kill replace it with -U/-D, shell adds
+# a second -D, openssl builds with its own flags).  Python builds with its own
+# project files and gets the same floor from python-3.11.15-win7.patch.
+CDEFS+=-D_MT -DWINVER=0x0601 -D_WIN32_WINNT=0x0601 -D_WIN32_IE=0x0800
 .IF "$(COMEX)" == "11"
 _VC_MANIFEST_BASENAME=__VC80
 .ELSE
