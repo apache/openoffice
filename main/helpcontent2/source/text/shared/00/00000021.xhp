@@ -172,7 +172,7 @@
 </table>
 <paragraph xml-lang="en-US" id="par_idN1088F" role="note" l10n="NEW">The HTML format is not an OpenDocument format.</paragraph>
 <paragraph xml-lang="en-US" id="par_id4818872" role="paragraph" l10n="NEW">ODF Chart is the name of the file format for stand alone charts. This format with the extension *.odc is currently not in use.</paragraph>
-<paragraph xml-lang="en-US" id="par_idN107E3" role="heading" level="2" l10n="NEW">Older File Formats Prior to %PRODUCTNAME %PRODUCTVERSION</paragraph>
+<paragraph xml-lang="en-US" id="par_idN107E3" role="heading" level="2" l10n="NEW">ODF Versions</paragraph>
 <paragraph xml-lang="en-US" id="par_id0514200811525257" role="paragraph" l10n="NEW">The OpenDocument format evolves over time.</paragraph>
 <table id="">
 <tablerow>
@@ -230,8 +230,52 @@
 <paragraph xml-lang="en-US" id="par_id1001200912381174" role="tablecontent" l10n="NEW">OpenOffice.org 3.2, StarOffice 9.2</paragraph>
 </tablecell>
 </tablerow>
+<tablerow>
+<tablecell>
+<paragraph xml-lang="en-US" id="par_id20261101a" role="tablecontent" l10n="NEW">ODF 1.3</paragraph>
+</tablecell>
+<tablecell>
+<paragraph xml-lang="en-US" id="par_id20261101b" role="tablecontent" l10n="NEW">2021-04-27</paragraph>
+</tablecell>
+<tablecell>
+<paragraph xml-lang="en-US" id="par_id20261101c" role="tablecontent" l10n="NEW">Apache OpenOffice 5.0</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph xml-lang="en-US" id="par_id20261102a" role="tablecontent" l10n="NEW">ODF 1.3 (Extended)</paragraph>
+</tablecell>
+<tablecell>
+<paragraph xml-lang="en-US" id="par_id20261102b" role="tablecontent" l10n="NEW">-</paragraph>
+</tablecell>
+<tablecell>
+<paragraph xml-lang="en-US" id="par_id20261102c" role="tablecontent" l10n="NEW">Apache OpenOffice 5.0</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph xml-lang="en-US" id="par_id20261103a" role="tablecontent" l10n="NEW">ODF 1.4</paragraph>
+</tablecell>
+<tablecell>
+<paragraph xml-lang="en-US" id="par_id20261103b" role="tablecontent" l10n="NEW">2025-10-06</paragraph>
+</tablecell>
+<tablecell>
+<paragraph xml-lang="en-US" id="par_id20261103c" role="tablecontent" l10n="NEW">Apache OpenOffice 5.0</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph xml-lang="en-US" id="par_id20261104a" role="tablecontent" l10n="NEW">ODF 1.4 (Extended)</paragraph>
+</tablecell>
+<tablecell>
+<paragraph xml-lang="en-US" id="par_id20261104b" role="tablecontent" l10n="NEW">-</paragraph>
+</tablecell>
+<tablecell>
+<paragraph xml-lang="en-US" id="par_id20261104c" role="tablecontent" l10n="NEW">Apache OpenOffice 5.0</paragraph>
+</tablecell>
+</tablerow>
 </table>
-<paragraph role="paragraph" id="par_id0514200811525591" xml-lang="en-US" l10n="NEW">In current versions, you can select to save your documents using ODF 1.2 (default) or ODF 1.0/1.1 (for backward compatibility). Choose <item type="menuitem">Tools - Options - Load/Save - General</item> and select the ODF format version.</paragraph>
+<paragraph role="paragraph" id="par_id0514200811525591" xml-lang="en-US" l10n="NEW">In current versions, you can select to save your documents using any of the ODF versions in the table, or ODF 1.0/1.1 (for backward compatibility). ODF 1.2 (Extended) is the default. Choose <item type="menuitem">Tools - Options - Load/Save - General</item> and select the ODF format version.</paragraph>
 <paragraph role="paragraph" id="par_idN107E9" xml-lang="en-US" l10n="CHG">If you want to exchange documents with users that still use OpenOffice.org 1 or StarOffice 7, save the document using the respectively named filter in the <emph>File type</emph> listbox.</paragraph>
 <paragraph role="tip" id="par_id3146907" xml-lang="en-US" l10n="CHG">If you want to define another file format as the default, choose <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - <link href="text/shared/optionen/01010200.xhp" name="Load/Save - General">Load/Save - General</link></emph> to find alternative file formats for each $[officename] document type.</paragraph>
 <paragraph role="heading" id="hd_id3150398" xml-lang="en-US" level="2" l10n="U">XML file structure</paragraph>
