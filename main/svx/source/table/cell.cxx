@@ -349,7 +349,9 @@ void Cell::dispose()
 		delete mpProperties;
 		mpProperties = 0;
 	}
-	SetOutlinerParaObject( 0 );
+	// the model can be gone when the last reference to the cell is released
+	SdrText::SetOutlinerParaObject( 0 );
+	SdrText::SetModel( 0 );
 }
 
 // -----------------------------------------------------------------------------
