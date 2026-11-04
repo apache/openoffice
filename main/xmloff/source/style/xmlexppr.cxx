@@ -95,7 +95,10 @@ static  XMLPropTokens_Impl aPropTokens[MAX_PROP_TYPES] =
 // The drawing-layer fill entries of header and footer; ODF 1.4 writes them in a style:background-fill child.
 static sal_Bool lcl_IsHeaderFooterFill( const UniReference< XMLPropertySetMapper >& rMapper, sal_Int32 nIdx )
 {
+	const OUString& rName = rMapper->GetEntryAPIName( nIdx );
 	return ( rMapper->GetEntryFlags( nIdx ) & XML_TYPE_PROP_MASK ) == XML_TYPE_PROP_HEADER_FOOTER &&
+		( rName.matchAsciiL( RTL_CONSTASCII_STRINGPARAM( "HeaderFill" ) ) ||
+		  rName.matchAsciiL( RTL_CONSTASCII_STRINGPARAM( "FooterFill" ) ) ) &&
 		( rMapper->GetEntryNameSpace( nIdx ) == XML_NAMESPACE_DRAW ||
 		  ( rMapper->GetEntryNameSpace( nIdx ) == XML_NAMESPACE_STYLE &&
 			IsXMLToken( rMapper->GetEntryXMLName( nIdx ), XML_REPEAT ) ) );
