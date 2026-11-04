@@ -10,6 +10,7 @@ package(default_visibility = ["//visibility:public"])
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
 load("//build/rules:rsc_pipeline.bzl", "rsc_res")
 load("//build/rules:junit_test.bzl", "unoapi_test")
+load("@product_info//:defs.bzl", "SUPD_DEFINE")
 
 # ── Component XML files (for services.rdb via postprocess) ────────────────────
 exports_files(glob([
@@ -32,7 +33,7 @@ _DEFINES = [
     "WNT", "GUI", "WIN32",
     "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
     "FULL_DESK", "SHAREDLIB", "_DLL_",
-    "SUPD=680",
+    SUPD_DEFINE,
 ]
 
 _COPTS = [

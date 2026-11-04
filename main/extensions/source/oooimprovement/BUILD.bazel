@@ -1,6 +1,7 @@
 package(default_visibility = ["//visibility:public"])
 
 load("@rules_cc//cc:defs.bzl", "cc_binary")
+load("@product_info//:defs.bzl", "SUPD_DEFINE")
 
 exports_files([
     "Jobs.xcu",
@@ -21,7 +22,7 @@ cc_binary(
         "WNT", "GUI", "WIN32",
         "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
         "FULL_DESK", "SHAREDLIB", "_DLL_",
-        "SUPD=680",
+        SUPD_DEFINE,
     ],
     linkshared = True,
     win_def_file = "//main/extensions:util/oooimprovement.def",

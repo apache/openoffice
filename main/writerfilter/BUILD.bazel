@@ -3,6 +3,7 @@ package(default_visibility = ["//visibility:public"])
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
 load(":ooxml_ns_rules.bzl", "OOXML_NS", "ooxml_ns_factory_rules")
 load("//build/rules:gtest_test.bzl", "gtest_test")
+load("@product_info//:defs.bzl", "SUPD_DEFINE")
 
 # ── Constants ────────────────────────────────────────────────────────────────
 
@@ -10,7 +11,7 @@ _DEFINES = [
     "WNT", "GUI", "WIN32",
     "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
     "FULL_DESK", "SHAREDLIB", "_DLL_",
-    "SUPD=680",
+    SUPD_DEFINE,
     "Z_PREFIX",
     "SYSTEM_ZLIB",
 ]

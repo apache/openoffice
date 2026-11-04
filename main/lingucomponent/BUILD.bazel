@@ -1,13 +1,14 @@
 package(default_visibility = ["//visibility:public"])
 
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+load("@product_info//:defs.bzl", "SUPD_DEFINE")
 
 _DEFINES = [
     "WNT",
     "GUI",
     "WIN32",
     "_WINDOWS",
-    "SUPD=680",
+    SUPD_DEFINE,
 ]
 
 _COPTS = [

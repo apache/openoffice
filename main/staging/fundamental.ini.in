@@ -1,7 +1,7 @@
 [Bootstrap]
 OOO_BASE_DIR=${ORIGIN}/..
 BRAND_BASE_DIR=${ORIGIN}/..
-ProductKey=Apache OpenOffice 4.1
+ProductKey=@PRODUCTKEY@
 buildid=bazel
 URE_BIN_DIR=$ORIGIN
 URE_LIB_DIR=$ORIGIN

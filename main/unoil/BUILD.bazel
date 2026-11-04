@@ -33,7 +33,7 @@ java_import(
 # the OTHER channel: javavm.cxx expands $URE_INTERNAL_JAVA_CLASSPATH and passes
 # the result as the UnoClassLoader classPath argument.  Upstream chains that to
 # URE_MORE_JAVA_TYPES = "$ORIGIN/classes/unoil.jar $ORIGIN/classes/
-# ScriptFramework.jar ..." in fundamentalbasisrc; main/staging/fundamental.ini
+# ScriptFramework.jar ..." in fundamentalbasisrc; main/staging/fundamental.ini.in
 # does the same (minus ScriptFramework, not built yet).  So an empty
 # URE_INTERNAL_JAVA_CLASSPATH is precisely what loses the office API types.
 uno_jar(

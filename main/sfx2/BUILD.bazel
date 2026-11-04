@@ -5,12 +5,13 @@ load("//build/rules:rsc_pipeline.bzl", "rsc_res")
 load("//build/rules:sdi_target.bzl", "sdi_package", "sdi_target")
 load("//build/rules:gtest_test.bzl", "gtest_test")
 load("//build/rules:junit_test.bzl", "unoapi_test")
+load("@product_info//:defs.bzl", "SUPD_DEFINE")
 
 _DEFINES = [
     "WNT", "GUI", "WIN32",
     "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
     "FULL_DESK", "SHAREDLIB", "_DLL_",
-    "SUPD=680",
+    SUPD_DEFINE,
     "ENABLE_QUICKSTART_APPLET",
 ]
 

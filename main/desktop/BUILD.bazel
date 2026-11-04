@@ -4,13 +4,14 @@ load("@bazel_skylib//rules:copy_file.bzl", "copy_file")
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
 load("//build/rules:rsc_pipeline.bzl", "rsc_res")
 load("//build/rules:gtest_test.bzl", "gtest_test")
+load("@product_info//:defs.bzl", "SUPD_DEFINE")
 
 # ── Common compile settings ───────────────────────────────────────────────────
 _DEFINES = [
     "WNT", "GUI", "WIN32",
     "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
     "FULL_DESK", "SHAREDLIB", "_DLL_",
-    "SUPD=680",
+    SUPD_DEFINE,
     "ENABLE_QUICKSTART_APPLET",
 ]
 
@@ -761,7 +762,7 @@ cc_binary(
     ],
     defines = [
         "WNT", "WIN32", 
-        "SUPD=680",
+        SUPD_DEFINE,
     ],
     deps = ["//main/sal:sal_headers"],
     additional_linker_inputs = [
@@ -825,7 +826,7 @@ cc_binary(
     ],
     defines = [
         "WNT", "WIN32", 
-        "SUPD=680", "UNICODE", "_UNICODE",
+        SUPD_DEFINE, "UNICODE", "_UNICODE",
     ],
     deps = ["//main/tools:ooopathutils"],
     linkopts = [
@@ -851,7 +852,7 @@ cc_binary(
     ],
     defines = [
         "WNT", "WIN32", 
-        "SUPD=680", "UNICODE", "_UNICODE",
+        SUPD_DEFINE, "UNICODE", "_UNICODE",
     ],
     deps = [
         "//main/tools:ooopathutils",
@@ -876,7 +877,7 @@ cc_binary(
     ],
     defines = [
         "WNT", "WIN32", 
-        "SUPD=680", "UNICODE", "_UNICODE",
+        SUPD_DEFINE, "UNICODE", "_UNICODE",
     ],
     deps = [
         "//main/tools:ooopathutils",
@@ -900,7 +901,7 @@ cc_binary(
     ],
     defines = [
         "WNT", "WIN32", 
-        "SUPD=680",
+        SUPD_DEFINE,
     ],
     deps = [":desktop_source_hdrs"],
     linkopts = [
@@ -922,7 +923,7 @@ cc_binary(
     ],
     defines = [
         "WNT", "WIN32", 
-        "SUPD=680",
+        SUPD_DEFINE,
     ],
     deps = [":desktop_source_hdrs"],
     linkopts = [
@@ -945,7 +946,7 @@ cc_binary(
     ],
     defines = [
         "WNT", "WIN32", 
-        "SUPD=680",
+        SUPD_DEFINE,
     ],
     deps = ["//main/sal:sal_headers"],
     additional_linker_inputs = [
@@ -1018,7 +1019,7 @@ copy_file(
     ],
     defines = [
         "WNT", "WIN32", 
-        "SUPD=680", "UNICODE", "_UNICODE",
+        SUPD_DEFINE, "UNICODE", "_UNICODE",
     ],
     linkopts = [
         "shell32.lib",
@@ -1041,7 +1042,7 @@ cc_binary(
     ],
     defines = [
         "WNT", "WIN32", 
-        "SUPD=680", "UNICODE", "_UNICODE",
+        SUPD_DEFINE, "UNICODE", "_UNICODE",
     ],
     deps = [
         "//main/tools:ooopathutils",
@@ -1067,7 +1068,7 @@ cc_binary(
     ],
     defines = [
         "WNT", "WIN32", 
-        "SUPD=680", "UNICODE", "_UNICODE",
+        SUPD_DEFINE, "UNICODE", "_UNICODE",
     ],
     deps = [
         "//main/tools:ooopathutils",
@@ -1092,7 +1093,7 @@ cc_binary(
     ],
     defines = [
         "WNT", "WIN32", 
-        "SUPD=680",
+        SUPD_DEFINE,
     ],
     deps = [
         ":desktop_source_hdrs",

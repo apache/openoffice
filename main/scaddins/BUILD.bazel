@@ -3,12 +3,13 @@ package(default_visibility = ["//visibility:public"])
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
 load("//build/rules:idl_pipeline.bzl", "idl_library")
 load("//build/rules:rsc_pipeline.bzl", "rsc_res")
+load("@product_info//:defs.bzl", "SUPD_DEFINE")
 
 _DEFINES = [
     "WNT", "GUI", "WIN32",
     "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
     "FULL_DESK", "SHAREDLIB", "_DLL_",
-    "SUPD=680",
+    SUPD_DEFINE,
 ]
 
 # ── analysis IDL pipeline ─────────────────────────────────────────────────────

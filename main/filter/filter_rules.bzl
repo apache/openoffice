@@ -1,6 +1,7 @@
 """Shared build rules and constants for the filter module."""
 
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+load("@product_info//:defs.bzl", "SUPD_DEFINE")
 
 # Common compiler options for all filter DLLs
 FILTER_COPTS = [
@@ -84,7 +85,7 @@ def graphic_filter(
             "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
             "CPPU_ENV=msci", "INTEL", "_X86_=1",
             "FULL_DESK", "SHAREDLIB", "_DLL_",
-            "SUPD=680",
+            SUPD_DEFINE,
         ],
         win_def_file = win_def,
         linkshared = True,

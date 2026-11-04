@@ -1,7 +1,7 @@
 # MODULE.bazel
 module(
     name = "aoo",
-    version = "4.5.0",
+    version = "5.1.0",  # trunk main/instsetoo_native/util/openoffice.lst PRODUCTVERSION
 )
 
 # --------------- product branding (single source of truth) ---------------

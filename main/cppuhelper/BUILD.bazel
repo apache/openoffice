@@ -432,7 +432,7 @@ gtest_test(
         # resolves the environment BEFORE the ini, so these REPLACE
         # fundamental.ini's values and must therefore repeat them.
         #
-        # DRIFT: the leading entries mirror main/staging/fundamental.ini
+        # DRIFT: the leading entries mirror main/staging/fundamental.ini.in
         #   UNO_TYPES=${ORIGIN}/types.rdb ${ORIGIN}/oovbaapi.rdb
         #   UNO_SERVICES=${ORIGIN}/services.rdb
         # (${ORIGIN} expands to that ini's own directory as a file URL, so the

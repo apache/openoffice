@@ -1,5 +1,6 @@
+load("@bazel_skylib//rules:expand_template.bzl", "expand_template")
 load("@bazel_skylib//rules:write_file.bzl", "write_file")
-load("@product_info//:defs.bzl", "PRODUCT_VERSION")
+load("@product_info//:defs.bzl", "PRODUCT_BASE_VERSION", "PRODUCT_KEY", "PRODUCT_USERDIR_VERSION", "PRODUCT_VERSION")
 load("//main/staging:res_bundles.bzl", "RES_BUNDLES")
 load("//main/staging:collect_files_aspect.bzl", "collect_outputs", "flat_install", "res_stage", "tree_install")
 load("//main/pyuno:python_version.bzl", "PYTHON_VERSION")
@@ -22,7 +23,7 @@ write_file(
     out = "version.ini",
     content = [
         "[Version]",
-        "OOOBaseVersion=" + ".".join(PRODUCT_VERSION.split(".")[:2]),
+        "OOOBaseVersion=" + PRODUCT_BASE_VERSION,
         "OOOPackageVersion=" + PRODUCT_VERSION,
         "",
     ],
@@ -56,14 +57,35 @@ write_file(
     ],
 )
 
+# ── program/bootstrap.ini, program/fundamental.ini ───────────────────────────
+# The version-derived keys come from @product_info, as scp2 fills them from
+# openoffice.lst: ProductKey is scriptitems.pm's "<PRODUCTNAME> <PRODUCTVERSION>"
+# (both files), and the profile folder is common_brand.scp's
+# $SYSUSERCONFIG/<name>/<USERDIRPRODUCTVERSION> -- with a "bazel" suffix, so a
+# staged build never shares a profile with an installed office.
+_PRODUCT_SUBSTITUTIONS = {
+    "@PRODUCTKEY@": PRODUCT_KEY,
+    "@USERDIRPRODUCTVERSION@": PRODUCT_USERDIR_VERSION,
+}
+
+[
+    expand_template(
+        name = ini + "_ini",
+        out = ini + ".ini",
+        substitutions = _PRODUCT_SUBSTITUTIONS,
+        template = ini + ".ini.in",
+    )
+    for ini in ["bootstrap", "fundamental"]
+]
+
 # ── Profile INI files (equivalent to scp2-generated profiles in dmake) ────────
 # All ini files land in program/ alongside the DLLs and EXEs.
 filegroup(
     name = "profile_ini",
     srcs = [
         ":version_ini",
-        "bootstrap.ini",
-        "fundamental.ini",
+        ":bootstrap_ini",
+        ":fundamental_ini",
         "soffice.ini",
         "uno.ini",
         # PYUNO_LOADER_PYTHONHOME / PYTHONPATH for pythonloader.dll.

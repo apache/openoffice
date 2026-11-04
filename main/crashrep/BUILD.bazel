@@ -2,6 +2,7 @@ package(default_visibility = ["//visibility:public"])
 
 load("@rules_cc//cc:defs.bzl", "cc_binary")
 load("//build/rules:lngconvex_rule.bzl", "lngconvex_rc")
+load("@product_info//:defs.bzl", "SUPD_DEFINE")
 
 # ── versionlist.hrc — parsed from version.lst ────────────────────────────────
 # version.hrc (pulled into soreport.rc via rcheader.txt) does
@@ -75,7 +76,7 @@ genrule(
 _DEFINES = [
     "WNT", "WIN32", 
     "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
-    "SUPD=680",
+    SUPD_DEFINE,
     # UNICODE/_UNICODE are already #define'd inside soreport.cpp; omit here.
 ]
 

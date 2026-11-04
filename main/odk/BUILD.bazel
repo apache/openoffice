@@ -3,6 +3,7 @@ load("//build/rules:extension.bzl", "ext_files", "oxt_package")
 load("//build/rules:gendocu.bzl", "autodoc_html", "javadoc_html")
 load("//build/rules:java_pipeline.bzl", "javac_classes")
 load("//build/rules:odk_pkg.bzl", "odk_sdk_zip")
+load("@product_info//:defs.bzl", "PRODUCT_VERSION")
 
 # odk — the Office Development Kit (SDK).  Mirrors prj/build.lst.
 #
@@ -144,8 +145,8 @@ oxt_package(
 #     (bridges/version.mk's RMCXT_TARGET is a vestigial version stamp nothing
 #     consumes); shipped without it rather than guessing a mapping.
 
-_PRODUCT_RELEASE = "4.5.0"       # util/makefile.pmk PRODUCT_RELEASE (= MODULE.bazel version)
-_SDKDIRNAME = "OpenOffice_4.5.0_SDK"  # util/makefile.pmk SDKDIRNAME, WNT branch
+_PRODUCT_RELEASE = PRODUCT_VERSION  # util/makefile.pmk PRODUCT_RELEASE
+_SDKDIRNAME = "OpenOffice_%s_SDK" % _PRODUCT_RELEASE  # util/makefile.pmk SDKDIRNAME, WNT branch
 
 # ── bin/ — the SDK tools (EXELIST) ───────────────────────────────────────────
 # autodoc and climaker are omitted (blocked); unoapploader is this module's.
@@ -474,7 +475,7 @@ autodoc_html(
         "-dvgroot",
         "https://wiki.openoffice.org/wiki",
         "-name",
-        "OpenOffice 4.5.0 API",
+        "OpenOffice %s API" % _PRODUCT_RELEASE,  # makefile.pmk IDLDOCREFNAME
         "-lg",
         "idl",
         "-dvgfile",
