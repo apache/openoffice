@@ -521,6 +521,7 @@ SfxItemPropertyMapEntry* ImplGetSvxPluginPropertyMap()
 		// #i68101#
 		{ MAP_CHAR_LEN(UNO_NAME_MISC_OBJ_TITLE),		OWN_ATTR_MISC_OBJ_TITLE			, &::getCppuType((const ::rtl::OUString*)0),	0,	0},
 		{ MAP_CHAR_LEN(UNO_NAME_MISC_OBJ_DESCRIPTION),	OWN_ATTR_MISC_OBJ_DESCRIPTION	, &::getCppuType((const ::rtl::OUString*)0),	0,	0},
+		{ MAP_CHAR_LEN("Decorative"),						OWN_ATTR_MISC_OBJ_DECORATIVE	, &::getBooleanCppuType(),						0,	0},
 		{0,0,0,0,0,0}
 
 	};
@@ -556,6 +557,7 @@ SfxItemPropertyMapEntry* ImplGetSvxFramePropertyMap()
 		// #i68101#
 		{ MAP_CHAR_LEN(UNO_NAME_MISC_OBJ_TITLE),		OWN_ATTR_MISC_OBJ_TITLE			, &::getCppuType((const ::rtl::OUString*)0),	0,	0},
 		{ MAP_CHAR_LEN(UNO_NAME_MISC_OBJ_DESCRIPTION),	OWN_ATTR_MISC_OBJ_DESCRIPTION	, &::getCppuType((const ::rtl::OUString*)0),	0,	0},
+		{ MAP_CHAR_LEN("Decorative"),						OWN_ATTR_MISC_OBJ_DECORATIVE	, &::getBooleanCppuType(),						0,	0},
 		{0,0,0,0,0,0}
 
 	};
@@ -590,6 +592,7 @@ SfxItemPropertyMapEntry* ImplGetSvxAppletPropertyMap()
 		// #i68101#
 		{ MAP_CHAR_LEN(UNO_NAME_MISC_OBJ_TITLE),		OWN_ATTR_MISC_OBJ_TITLE			, &::getCppuType((const ::rtl::OUString*)0),	0,	0},
 		{ MAP_CHAR_LEN(UNO_NAME_MISC_OBJ_DESCRIPTION),	OWN_ATTR_MISC_OBJ_DESCRIPTION	, &::getCppuType((const ::rtl::OUString*)0),	0,	0},
+		{ MAP_CHAR_LEN("Decorative"),						OWN_ATTR_MISC_OBJ_DECORATIVE	, &::getBooleanCppuType(),						0,	0},
 		{0,0,0,0,0,0}
 
 	};
@@ -641,6 +644,7 @@ SfxItemPropertyMapEntry* ImplGetSvxControlShapePropertyMap()
 		// #i68101#
 		{ MAP_CHAR_LEN(UNO_NAME_MISC_OBJ_TITLE),		OWN_ATTR_MISC_OBJ_TITLE			, &::getCppuType((const ::rtl::OUString*)0),	0,	0},
 		{ MAP_CHAR_LEN(UNO_NAME_MISC_OBJ_DESCRIPTION),	OWN_ATTR_MISC_OBJ_DESCRIPTION	, &::getCppuType((const ::rtl::OUString*)0),	0,	0},
+		{ MAP_CHAR_LEN("Decorative"),						OWN_ATTR_MISC_OBJ_DECORATIVE	, &::getBooleanCppuType(),						0,	0},
 		// #i112587#
         { MAP_CHAR_LEN(UNO_NAME_MISC_OBJ_PRINTABLE),	SDRATTR_OBJPRINTABLE			, &::getBooleanCppuType(),						0,	0},
         { MAP_CHAR_LEN("Visible"),						SDRATTR_OBJVISIBLE				, &::getBooleanCppuType(),						0,	0},
@@ -667,6 +671,7 @@ SfxItemPropertyMapEntry* ImplGetSvxPageShapePropertyMap()
 		// #i68101#
 		{ MAP_CHAR_LEN(UNO_NAME_MISC_OBJ_TITLE),		OWN_ATTR_MISC_OBJ_TITLE			, &::getCppuType((const ::rtl::OUString*)0),	0,	0},
 		{ MAP_CHAR_LEN(UNO_NAME_MISC_OBJ_DESCRIPTION),	OWN_ATTR_MISC_OBJ_DESCRIPTION	, &::getCppuType((const ::rtl::OUString*)0),	0,	0},
+		{ MAP_CHAR_LEN("Decorative"),						OWN_ATTR_MISC_OBJ_DECORATIVE	, &::getBooleanCppuType(),						0,	0},
 		{0,0,0,0,0,0}
 
 	};
@@ -756,6 +761,7 @@ SfxItemPropertyMapEntry* ImplGetSvxMediaShapePropertyMap()
 		// #i68101#
 		{ MAP_CHAR_LEN(UNO_NAME_MISC_OBJ_TITLE),		OWN_ATTR_MISC_OBJ_TITLE			, &::getCppuType((const ::rtl::OUString*)0),	0,	0},
 		{ MAP_CHAR_LEN(UNO_NAME_MISC_OBJ_DESCRIPTION),	OWN_ATTR_MISC_OBJ_DESCRIPTION	, &::getCppuType((const ::rtl::OUString*)0),	0,	0},
+		{ MAP_CHAR_LEN("Decorative"),						OWN_ATTR_MISC_OBJ_DECORATIVE	, &::getBooleanCppuType(),						0,	0},
 		{0,0,0,0,0,0}
 
 	};
@@ -780,6 +786,7 @@ SfxItemPropertyMapEntry* ImplGetSvxTableShapePropertyMap()
 		{ MAP_CHAR_LEN(UNO_NAME_MISC_OBJ_NAME), 		SDRATTR_OBJECTNAME				, &::getCppuType((const ::rtl::OUString*)0),	0,	0},
 		{ MAP_CHAR_LEN(UNO_NAME_MISC_OBJ_TITLE),		OWN_ATTR_MISC_OBJ_TITLE			, &::getCppuType((const ::rtl::OUString*)0),	0,	0},
 		{ MAP_CHAR_LEN(UNO_NAME_MISC_OBJ_DESCRIPTION),	OWN_ATTR_MISC_OBJ_DESCRIPTION	, &::getCppuType((const ::rtl::OUString*)0),	0,	0},
+		{ MAP_CHAR_LEN("Decorative"),						OWN_ATTR_MISC_OBJ_DECORATIVE	, &::getBooleanCppuType(),						0,	0},
 		{ MAP_CHAR_LEN("Model"),						OWN_ATTR_OLEMODEL				, &::com::sun::star::table::XTable::static_type(), ::com::sun::star::beans::PropertyAttribute::READONLY, 0},
 		{ MAP_CHAR_LEN("TableTemplate"),				OWN_ATTR_TABLETEMPLATE			, &::com::sun::star::container::XIndexAccess::static_type(), 0, 0},
 		{ MAP_CHAR_LEN("UseFirstRowStyle"),				OWN_ATTR_TABLETEMPLATE_FIRSTROW, &::getBooleanCppuType(),0, 0},
