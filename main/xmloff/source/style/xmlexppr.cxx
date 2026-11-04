@@ -92,6 +92,15 @@ static  XMLPropTokens_Impl aPropTokens[MAX_PROP_TYPES] =
 	ENTRY(SECTION)
 };
 
+// The drawing-layer fill entries of header and footer; ODF 1.4 writes them in a style:background-fill child.
+static sal_Bool lcl_IsHeaderFooterFill( const UniReference< XMLPropertySetMapper >& rMapper, sal_Int32 nIdx )
+{
+	return ( rMapper->GetEntryFlags( nIdx ) & XML_TYPE_PROP_MASK ) == XML_TYPE_PROP_HEADER_FOOTER &&
+		( rMapper->GetEntryNameSpace( nIdx ) == XML_NAMESPACE_DRAW ||
+		  ( rMapper->GetEntryNameSpace( nIdx ) == XML_NAMESPACE_STYLE &&
+			IsXMLToken( rMapper->GetEntryXMLName( nIdx ), XML_REPEAT ) ) );
+}
+
 ///////////////////////////////////////////////////////////////////////////////
 //
 // public methods
@@ -672,7 +681,8 @@ vector< XMLPropertyState > SvXMLExportPropertyMapper::_Filter(
                 sal_Bool bExport( nCurrentVersion == SvtSaveOptions::ODFVER_UNKNOWN
                         || nEarliestODFVersionForExport == SvtSaveOptions::ODFVER_UNKNOWN );
                 if( nEarliestODFVersionForExport == SvtSaveOptions::ODFVER_EXTENSION )
-                    bExport = bExport || SvtSaveOptions::IsODFExtended( nCurrentVersion );
+                    bExport = bExport || SvtSaveOptions::IsODFExtended( nCurrentVersion ) ||
+                        ( nCurrentVersion == SvtSaveOptions::ODFVER_014 && lcl_IsHeaderFooterFill( maPropMapper, i ) );
                 else if( nEarliestODFVersionForExport == SvtSaveOptions::ODFVER_EXTENSION_PRE_013 )
                     bExport = bExport || ( SvtSaveOptions::IsODFExtended( nCurrentVersion ) && nCurrentVersion < SvtSaveOptions::ODFVER_013 );
                 else if( nEarliestODFVersionForExport == SvtSaveOptions::ODFVER_013 )
@@ -866,13 +876,14 @@ void SvXMLExportPropertyMapper::exportXML(
 		{
 			SvUShorts aIndexArray;
 
-			// ODF 1.4 Extended: header and footer fills go into a style:background-fill child
+			// ODF 1.4: header and footer fills go into a style:background-fill child
 			::std::vector< XMLPropertyState > aMainProps, aFillProps;
 			const ::std::vector< XMLPropertyState >* pMainProps = &rProperties;
 			SvXMLAttributeList* pFillAttrs = 0;
 			uno::Reference< xml::sax::XAttributeList > xFillAttrs;
+			const SvtSaveOptions::ODFDefaultVersion eVersion( SvtSaveOptions().GetODFDefaultVersion() );
 			if( aPropTokens[i].eToken == XML_HEADER_FOOTER_PROPERTIES &&
-				SvtSaveOptions().GetODFDefaultVersion() == SvtSaveOptions::ODFVER_014_EXT )
+				( eVersion == SvtSaveOptions::ODFVER_014 || eVersion == SvtSaveOptions::ODFVER_014_EXT ) )
 			{
 				aMainProps = rProperties;
 				aFillProps = rProperties;
@@ -882,9 +893,7 @@ void SvXMLExportPropertyMapper::exportXML(
 					const sal_Int32 nIdx = rProperties[n].mnIndex;
 					if( nIdx == -1 )
 						continue;
-					if( maPropMapper->GetEntryNameSpace( nIdx ) == XML_NAMESPACE_DRAW ||
-						( maPropMapper->GetEntryNameSpace( nIdx ) == XML_NAMESPACE_STYLE &&
-						  IsXMLToken( maPropMapper->GetEntryXMLName( nIdx ), XML_REPEAT ) ) )
+					if( lcl_IsHeaderFooterFill( maPropMapper, nIdx ) )
 					{
 						aMainProps[n].mnIndex = -1;
 						bFill = true;
