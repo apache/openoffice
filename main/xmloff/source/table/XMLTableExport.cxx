@@ -126,6 +126,8 @@ protected:
 void XMLTableCellExportPropertyMapper::ContextFilter( std::vector< XMLPropertyState >& rProperties, Reference< XPropertySet > rPropSet ) const
 {
 	const bool bStrict = SvtSaveOptions::IsODFStrict( SvtSaveOptions().GetODFDefaultVersion() );
+	// ODF 1.4 keeps the fill, in a style:background-fill child
+	const bool b014 = SvtSaveOptions().GetODFDefaultVersion() == SvtSaveOptions::ODFVER_014;
 	bool bSolid = false;
 	if( bStrict ) try
 	{
@@ -147,7 +149,8 @@ void XMLTableCellExportPropertyMapper::ContextFilter( std::vector< XMLPropertySt
 			if( !bSolid )
 				aIter->mnIndex = -1;
 		}
-		else if( bStrict && nPropType == XML_TYPE_PROP_GRAPHIC )
+		else if( bStrict && nPropType == XML_TYPE_PROP_GRAPHIC &&
+				 !( b014 && maPropMapper->GetEntryAPIName( aIter->mnIndex ).matchAsciiL( RTL_CONSTASCII_STRINGPARAM( "Fill" ) ) ) )
 			aIter->mnIndex = -1;
 	}
 
