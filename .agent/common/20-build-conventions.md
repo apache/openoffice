@@ -115,7 +115,17 @@ These apply to many packages — check before building any new module:
 - `CURL_STATICLIB` — required for any target using `@curl//:curl`; without it curl.h uses `__declspec(dllimport)` which breaks static linking
 - MASM `.asm` files: list directly in `srcs`; toolchain `assemble` action uses `ml.exe` with
   `masm_flags` feature (`/c /coff /Cx`). `/Cx` is critical — without it MASM uppercases all
-  PUBLIC symbols, breaking the link. Build-system define `SUPD=680` (Solar Update version).
+  PUBLIC symbols, breaking the link. Build-system define `SUPD` (Solar Update version) is `SUPD_DEFINE` from
+  `@product_info` — never a literal; see the product-version bullet below.
+- PRODUCT VERSION — set in ONE place, MODULE.bazel `module(version = "x.y.z")`,
+  and distributed from there; no BUILD, .bzl or ini file may carry a copy.
+  `//build:product.bzl` derives every dependent value into `@product_info`
+  (`PRODUCT_VERSION`, `PRODUCT_BASE_VERSION`, `PRODUCT_USERDIR_VERSION`,
+  `PRODUCT_KEY`, `PRODUCT_SUPD`, `SUPD_DEFINE`).  Text files take them through
+  `expand_template` (`main/staging/{bootstrap,fundamental}.ini.in`).  Before
+  2026-11-03 copies had drifted: SUPD=680 in 28 BUILD files (upstream SUPD is
+  RSCVERSION, e.g. 510 — live in Basic `GetSolarVersion()` and the office pipe
+  name), ProductKey "4.1", the profile folder "4bazel", odk "4.5.0".
 - `_HAS_ITERATOR_DEBUGGING=0` — set GLOBALLY in build/toolchain/windows_cc_toolchain_config.bzl
   (default_compile_flags_list).  This is an STL-ABI macro: at =1 (the /MDd _DEBUG default) MSVC
   adds a `_Container_proxy` to std::vector/hash_map, changing layout.  It MUST be identical across

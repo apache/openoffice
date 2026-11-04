@@ -39,12 +39,18 @@ New shared rules: `//build/rules:extension.bzl` (`ext_files`, `xcu_default`,
 `oxt_package`, all keyed by **archive path** so nothing is collected by walking
 a directory) and `help_extension` in `//build/rules:help_pipeline.bzl`.
 
-Dependencies, each its own package: the four Apache Commons jars under their
-delivered names (`//main/apache-commons`, built from the `@commons-*` bzlmod
-modules; `@tomcat` supplies the servlet API to compile commons-logging) and the
-MathML stylesheets (`//main/xsltml`, `@xsltml`).
+Dependencies, each its own package: the MathML stylesheets (`//main/xsltml`,
+`@xsltml`).  Nothing else: since trunk 33efb51f76 the extension publishes
+through the MediaWiki API over the JDK's HTTP stack (`WikiSession.java`), so
+it no longer bundles the four Apache Commons jars, its manifest has no
+`Class-Path`, and `THIRDPARTYLICENSEREADME.html` is gone with them.  That
+leaves 54 archive entries where the dmake oracle below has 59.
 
 ### Verified
+
+Everything in this section predates trunk 33efb51f76, i.e. it was measured
+with the four Commons jars bundled; the HTTP-stack check in particular no
+longer applies.
 
 - **Against the dmake-built `.oxt`** (`wntmsci12.pro/bin/wiki-publisher.oxt`):
   identical 59-entry list.  The five processed XCUs are **byte-identical** to

@@ -23,6 +23,6 @@ and is copied directly into the staging layout by `//main/staging`.
 Staging autotext and palette files into `presets/` ensures this directory
 exists and the user gets a useful initial profile.
 
-`bootstrap.ini` uses `UserInstallation=$SYSUSERCONFIG/OpenOffice/4bazel` so
+`bootstrap.ini` uses `UserInstallation=$SYSUSERCONFIG/OpenOffice/<major>bazel` (5bazel for 5.1.0) so
 the Bazel-built OOo never reads or writes the production OOo profile at
 `%APPDATA%\OpenOffice\4`.

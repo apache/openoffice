@@ -42,5 +42,5 @@ Consumer code uses `<libtextcat/textcat.h>` etc.  The registry BUILD uses
 - `CPPU_ENV=msci` + `INTEL` + `_X86_=1` — required by `uno/lbnames.h`
 - `/Zc:wchar_t-` — required for `sal_Unicode` compatibility
 - `snprintf=_snprintf` — MSVCRT compatibility
-- `SUPD=680` — Solar Update version define
+- `SUPD` — Solar Update version define (`SUPD_DEFINE` from `@product_info`)
 - PCH headers (`inc/pch/*.hxx`) are no-ops unless `PRECOMPILED_HEADERS` is defined

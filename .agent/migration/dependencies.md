@@ -32,11 +32,10 @@ python 3.11.15 (native-cc, python311.dll + 14 .pyd) - ext_libraries\modules\pyth
 rhino - ext_libraries\modules\rhino\README
 saxon 9.0.0.7 (bzlmod, Java) - main/saxon/readme.md  (Latin-1 sources transcoded)
 lucene 2.9.4 (bzlmod, Java) - main/xmlhelp/readme.md  (long_path.patch regenerated)
-commons-codec 1.9 / commons-httpclient 3.1 / commons-lang3 3.3 / commons-logging 1.1.3
-  (bzlmod, Java) - main/apache-commons/readme.md  (two Latin-1 files transcoded;
-  jars assembled under upstream's delivered names in //main/apache-commons)
-tomcat 5.5.36 (bzlmod, Java) - main/apache-commons/readme.md  (servlet API only,
-  compile-only for commons-logging)
+commons-lang3 3.3 / commons-logging 1.1.3 (bzlmod, Java) - main/apache-commons/readme.md
+  (one Latin-1 file transcoded; jars assembled under upstream's delivered names in
+  //main/apache-commons; kept for the unmigrated report builder.  commons-codec,
+  commons-httpclient and tomcat were dropped with trunk 33efb51f76)
 xsltml 2.1.2 (bzlmod, data) - main/xsltml/readme.md  (overlay carries the patched
   files; CRLF kept by a -text .gitattributes)
 sal_pch - was merged with sal_headers

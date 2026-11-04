@@ -933,6 +933,15 @@ swext         ✅  DONE 2026-10-03 — wiki-publisher.oxt (//main/swext:wiki-pub
                    rebaseoo/gui, unoinfo, the loaders -- /MD + /MANIFEST:NO, no
                    VC90 manifest => "System Error" box before main().  Now
                    embedded, winXP only.  See main/desktop/readme.md.
+                   UPDATED 2026-11-03 (bazel-trunk-sync), trunk 33efb51f76: the
+                   extension publishes through the MediaWiki API on the JDK's HTTP
+                   stack, so it bundles no Commons jars, has no manifest Class-Path
+                   and no THIRDPARTYLICENSEREADME.html (54 entries, was 59).
+                   @commons-codec, @commons-httpclient and @tomcat removed from the
+                   registry; commons-logging no longer builds ServletContextCleaner.
+                   lang3 + logging stay for the unmigrated report builder.
+                   Verified 2026-11-04: installs and runs on the 5.1.0 build
+                   (it needs 5.0+, hence the central-version change).
                    See main/swext/README.md.
 unodevtools   ✅  MIGRATED 2026-08-18 and MOVED OUT of this bucket — it is not
                    Java and never was.  `uno-skeletonmaker.exe`, 9 C++ sources, no

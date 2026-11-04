@@ -26,7 +26,7 @@ load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
 # load only the pipelines this module actually uses (rsc_res, sdi_target, ...)
 
 # 1. Defines and copts as module-local _DEFINES / _COPTS lists (see §2)
-_DEFINES = [ "WNT", "GUI", "WIN32", ... , "snprintf=_snprintf", "SUPD=680" ]
+_DEFINES = [ "WNT", "GUI", "WIN32", ... , "snprintf=_snprintf", SUPD_DEFINE ]  # SUPD_DEFINE from @product_info
 _COPTS   = [ "/Zc:wchar_t-", "/Imain/<mod>/inc", "/Imain/<mod>/source/inc", ... ]
 
 # 2. Header / include "shield" libraries (see §3)
