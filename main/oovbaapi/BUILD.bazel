@@ -9,7 +9,7 @@ _OOVBAAPI_EXCLUDED = [
 ]
 
 # ── IDL pipeline ──────────────────────────────────────────────────────────────
-# Compiles all 992 oovbaapi IDL files (matching UnoApi_oovbaapi.mk) →
+# Compiles all 998 oovbaapi IDL files (matching UnoApi_oovbaapi.mk) →
 # .urd → .rdb, then cppumaker → header tree.
 # Depends on udkapi.rdb + offapi.rdb for type resolution.
 # IDL files reference both ooo/vba/... (self) and com/sun/star/... (offapi/udkapi).
