@@ -2,54 +2,19 @@ package(default_visibility = ["//visibility:public"])
 
 load("//build/rules:java_pipeline.bzl", "uno_jar")
 
-# Apache Commons, as AOO's apache-commons module delivered it: four jars under
-# versioned names.  Their one consumer is the Wiki Publisher extension
-# (//main/swext), which ships all four next to mediawiki.jar and names them on
-# its manifest Class-Path -- so the FILENAMES are the lookup key and must stay
-# exactly these.  (The legacy dmake module lives on under
-# ext_libraries/modules/apache-commons; the sources come from the bzlmod modules
-# @commons-codec, @commons-httpclient, @commons-lang3 and @commons-logging.)
+# Apache Commons, as AOO's apache-commons module delivers it: two jars under
+# versioned names.  Trunk 33efb51f76 dropped commons-codec and
+# commons-httpclient along with the Wiki Publisher's use of all four; what is
+# left is built for the report builder (ENABLE_REPORTBUILDER upstream), which
+# is not migrated yet, so nothing in this tree consumes these today.  (The
+# legacy dmake module lives on under ext_libraries/modules/apache-commons; the
+# sources come from the bzlmod modules @commons-lang3 and @commons-logging.)
 #
 # Manifest main attributes are upstream's identification lines (from each
-# build.xml, or src/conf/MANIFEST.MF for httpclient and logging).  Left out on
+# build.xml, or src/conf/MANIFEST.MF for logging).  Left out on
 # purpose: X-Compile-Source/Target-JDK, which would misstate the --release 8
 # these are compiled with, and logging's OSGi bundle headers, which nothing in
 # the office reads.
-
-uno_jar(
-    name = "commons-codec",
-    out = "commons-codec-1.9.jar",
-    jars = [
-        "@commons-codec//:commons-codec",
-        "@commons-codec//:meta_inf",
-    ],
-    manifest_lines = [
-        "Specification-Title: Commons Codec",
-        "Specification-Version: 1.9",
-        "Specification-Vendor: The Apache Software Foundation",
-        "Implementation-Title: Commons Codec",
-        "Implementation-Version: 1.9",
-        "Implementation-Vendor: The Apache Software Foundation",
-        "Implementation-Vendor-Id: org.apache",
-    ],
-)
-
-# Upstream's dist/commons-httpclient.jar, renamed on delivery (d.lst).
-uno_jar(
-    name = "commons-httpclient",
-    out = "commons-httpclient-3.1.jar",
-    jars = [
-        "@commons-httpclient//:commons-httpclient",
-        "@commons-httpclient//:meta_inf",
-    ],
-    manifest_lines = [
-        "Extension-Name: httpclient",
-        "Specification-Vendor: Apache Software Foundation",
-        "Specification-Version: 1.0",
-        "Implementation-Vendor: Apache Software Foundation",
-        "Implementation-Version: 3.1",
-    ],
-)
 
 uno_jar(
     name = "commons-lang3",

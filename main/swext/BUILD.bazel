@@ -8,7 +8,8 @@ load("//build/rules:java_pipeline.bzl", "uno_jar")
 # swext -- the Wiki Publisher extension, wiki-publisher.oxt.
 #
 # A Writer add-on that publishes the current document to a MediaWiki server:
-# a Java UNO component (mediawiki.jar) talking HTTP through Apache Commons, an
+# a Java UNO component (mediawiki.jar) talking to the MediaWiki API over the
+# JDK's own HTTP stack (no third-party jars since trunk 33efb51f76), an
 # XSLT export filter (ODT -> MediaWiki markup), a Basic dialog library, its
 # configuration and its own help.  Upstream builds it with Ant
 # (mediawiki/build.xml, target uno-package), after dmake has processed the
@@ -43,20 +44,18 @@ java_library(
         "//main/javaunohelper:juh_jar",
         "//main/jurt:jurt",
         "//main/unoil:unoil",
-        "@commons-httpclient//:commons-httpclient",
     ],
 )
 
 # The manifest is upstream's, attribute for attribute (build.xml target jar):
-# javaloader registers RegistrationClassName, and Class-Path finds the Commons
-# jars next to mediawiki.jar in the installed extension -- by exact filename.
-# There is NO UNO-Type-Path, as upstream; see readme.md for what that means.
+# javaloader registers RegistrationClassName.  No Class-Path (nothing ships
+# beside mediawiki.jar any more) and NO UNO-Type-Path, as upstream; see
+# readme.md for what the latter means.
 uno_jar(
     name = "mediawiki_jar",
     out = "mediawiki.jar",
     jars = [":mediawiki_classes"],
     manifest_lines = [
-        "Class-Path: commons-codec-1.9.jar commons-lang3-3.3.jar commons-httpclient-3.1.jar commons-logging-1.1.3.jar",
         "RegistrationClassName: com.sun.star.wiki.WikiEditorImpl",
     ],
 )
@@ -125,13 +124,7 @@ ext_files(
 
 ext_files(
     name = "jars",
-    srcs = [
-        ":mediawiki_jar",
-        "//main/apache-commons:commons-codec",
-        "//main/apache-commons:commons-httpclient",
-        "//main/apache-commons:commons-lang3",
-        "//main/apache-commons:commons-logging",
-    ],
+    srcs = [":mediawiki_jar"],
 )
 
 # The Basic library behind the Send-to-MediaWiki dialogs.
@@ -167,10 +160,7 @@ ext_files(
 
 ext_files(
     name = "license",
-    srcs = [
-        "//main:LICENSE_ALv2",
-        "mediawiki/src/THIRDPARTYLICENSEREADME.html",
-    ],
+    srcs = ["//main:LICENSE_ALv2"],
     dest = "license",
     rename = {"LICENSE_ALv2": "LICENSE"},
 )

@@ -5,4 +5,3 @@ module(
 )
 
 bazel_dep(name = "rules_java", version = "8.11.0")
-bazel_dep(name = "tomcat", version = "5.5.36")

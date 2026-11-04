@@ -35,7 +35,7 @@ ANT_BUILDFILE=build.xml
 
 .INCLUDE : antsettings.mk
 
-.IF "$(SOLAR_JAVA)" != "" && ( "$(ENABLE_MEDIAWIKI)" == "YES" || "$(ENABLE_REPORTBUILDER)" == "YES" )
+.IF "$(SOLAR_JAVA)" != "" && "$(ENABLE_REPORTBUILDER)" == "YES"
 # --- Files --------------------------------------------------------
 
 TARFILE_NAME=commons-logging-1.1.3-src
@@ -53,16 +53,12 @@ CONVERTFILES=build.xml
 OUT2CLASS=target$/commons-logging-1.1.3.jar
 #OUT2CLASS=target$/commons-logging-1.1.1-SNAPSHOT.jar
 
-.IF "$(SYSTEM_TOMCAT)" != "YES"
-SERVLETAPI_JAR := $(SOLARVER)$/$(INPATH)$/bin$(UPDMINOREXT)$/servlet-api.jar
-.ENDIF
-
 .IF "$(JAVACISGCJ)"=="yes"
 JAVA_HOME=
 .EXPORT : JAVA_HOME
-BUILD_ACTION=$(ANT) -Dbuild.label="build-$(RSCREVISION)" -Dbuild.compiler=gcj -Dservletapi.jar=$(SERVLETAPI_JAR) -f $(ANT_BUILDFILE) compile build-jar
+BUILD_ACTION=$(ANT) -Dbuild.label="build-$(RSCREVISION)" -Dbuild.compiler=gcj -f $(ANT_BUILDFILE) compile build-jar
 .ELSE
-BUILD_ACTION=$(ANT) -Dbuild.label="build-$(RSCREVISION)" -f $(ANT_BUILDFILE) -Dservletapi.jar=$(SERVLETAPI_JAR) compile build-jar
+BUILD_ACTION=$(ANT) -Dbuild.label="build-$(RSCREVISION)" -f $(ANT_BUILDFILE) compile build-jar
 .ENDIF
 
 .ENDIF # $(SOLAR_JAVA)!= ""
@@ -72,6 +68,6 @@ BUILD_ACTION=$(ANT) -Dbuild.label="build-$(RSCREVISION)" -f $(ANT_BUILDFILE) -Ds
 .INCLUDE : set_ext.mk
 .INCLUDE : target.mk
 
-.IF "$(SOLAR_JAVA)" != "" && ( "$(ENABLE_MEDIAWIKI)" == "YES" || "$(ENABLE_REPORTBUILDER)" == "YES" )
+.IF "$(SOLAR_JAVA)" != "" && "$(ENABLE_REPORTBUILDER)" == "YES"
 .INCLUDE : tg_ext.mk
 .ENDIF

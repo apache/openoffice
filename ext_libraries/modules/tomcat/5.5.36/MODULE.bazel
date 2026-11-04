@@ -1,7 +1,0 @@
-module(
-    name = "tomcat",
-    version = "5.5.36",
-    compatibility_level = 1,
-)
-
-bazel_dep(name = "rules_java", version = "8.11.0")
