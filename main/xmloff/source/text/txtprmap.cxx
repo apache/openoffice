@@ -628,6 +628,7 @@ XMLPropertyMapEntry aXMLFramePropMap[] =
 	// not required
 	// RES_PRINT
 	MG_E( "Print",					STYLE,	PRINT_CONTENT,	XML_TYPE_BOOL, 0 ),
+	MG_EV( "Decorative",				DRAW,	DECORATIVE,		XML_TYPE_BOOL, 0, SvtSaveOptions::ODFVER_014 ),
 	// RES_OPAQUE
 	MG_ED( "Opaque",					STYLE,	RUN_THROUGH,	XML_TYPE_TEXT_OPAQUE, 0 ),
 	// RES_PROTECT

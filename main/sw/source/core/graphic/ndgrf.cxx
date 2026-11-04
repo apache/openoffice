@@ -1090,6 +1090,7 @@ SwCntntNode* SwGrfNode::MakeCopy(
         (SwAttrSet*) GetpSwAttrSet() );
     pGrfNd->SetTitle( GetTitle() );
     pGrfNd->SetDescription( GetDescription() );
+    pGrfNd->SetDecorative( IsDecorative() );
     pGrfNd->SetContour( HasContour(), HasAutomaticContour() );
     return pGrfNd;
 }

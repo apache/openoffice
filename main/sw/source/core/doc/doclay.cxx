@@ -1311,6 +1311,8 @@ lcl_InsertLabel(SwDoc & rDoc, SwTxtFmtColls *const pTxtFmtCollTbl,
                 const String sDescription( bIsSwFlyFrmFmtInstance
                                            ? static_cast<SwFlyFrmFmt*>(pOldFmt)->GetObjDescription()
                                            : String() );
+                const bool bDecorative( bIsSwFlyFrmFmtInstance
+                                        && static_cast<SwFlyFrmFmt*>(pOldFmt)->IsObjDecorative() );
                 // <--
 				pOldFmt->DelFrms();
 
@@ -1454,6 +1456,7 @@ lcl_InsertLabel(SwDoc & rDoc, SwTxtFmtColls *const pTxtFmtCollTbl,
                 {
                     static_cast<SwFlyFrmFmt*>(pOldFmt)->SetObjTitle( sTitle );
                     static_cast<SwFlyFrmFmt*>(pOldFmt)->SetObjDescription( sDescription );
+                    static_cast<SwFlyFrmFmt*>(pOldFmt)->SetObjDecorative( bDecorative );
                 }
                 // <--
 			}
