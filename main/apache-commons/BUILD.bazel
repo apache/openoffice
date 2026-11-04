@@ -6,7 +6,8 @@ load("//build/rules:java_pipeline.bzl", "uno_jar")
 # versioned names.  Trunk 33efb51f76 dropped commons-codec and
 # commons-httpclient along with the Wiki Publisher's use of all four; what is
 # left is built for the report builder (ENABLE_REPORTBUILDER upstream), which
-# is not migrated yet, so nothing in this tree consumes these today.  (The
+# left this migration on 2026-10-06 (branch bazel-reportbuilder), so nothing
+# in this tree consumes these today.  (The
 # legacy dmake module lives on under ext_libraries/modules/apache-commons; the
 # sources come from the bzlmod modules @commons-lang3 and @commons-logging.)
 #
