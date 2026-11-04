@@ -74,6 +74,8 @@ public:
     const String GetDescription() const;
     void SetDescription( const String& rDescription,
                          bool bBroadcast = false );
+    bool IsDecorative() const;
+    void SetDecorative( bool bDecorative );
 
 //    const String GetAlternateText() const;
 //    void SetAlternateText( const String& rTxt,

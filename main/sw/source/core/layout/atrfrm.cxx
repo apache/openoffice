@@ -3083,6 +3083,23 @@ const String SwFlyFrmFmt::GetObjDescription() const
 
     return pMasterObject->GetDescription();
 }
+
+bool SwFlyFrmFmt::IsObjDecorative() const
+{
+    const SdrObject* pMasterObject = FindSdrObject();
+    return pMasterObject && pMasterObject->IsDecorative();
+}
+
+void SwFlyFrmFmt::SetObjDecorative( bool bDecorative )
+{
+    SdrObject* pMasterObject = FindSdrObject();
+    ASSERT( pMasterObject,
+            "<SwFlyFrmFmt::SetObjDecorative(..)> - missing <SdrObject> instance" );
+    if ( pMasterObject )
+    {
+        pMasterObject->SetDecorative( bDecorative );
+    }
+}
 // <--
 
 /** SwFlyFrmFmt::IsBackgroundTransparent - for #99657#

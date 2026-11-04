@@ -1472,6 +1472,21 @@ void SwXFrame::setPropertyValue(const :: OUString& rPropertyName, const :: uno::
             GetOrCreateSdrObject( pFlyFmt );
             pFlyFmt->GetDoc()->SetFlyFrmDescription( *(pFlyFmt), sDescription );
         }
+        else if( FN_UNO_DECORATIVE == pEntry->nWID )
+        {
+            SwFlyFrmFmt* pFlyFmt = dynamic_cast<SwFlyFrmFmt*>(pFmt);
+            ASSERT( pFmt,
+                    "unexpected type of <pFmt> --> crash" );
+            sal_Bool bDecorative = sal_False;
+            aValue >>= bDecorative;
+            // assure that <SdrObject> instance exists.
+            GetOrCreateSdrObject( pFlyFmt );
+            if ( pFlyFmt->IsObjDecorative() != ( bDecorative != sal_False ) )
+            {
+                pFlyFmt->SetObjDecorative( bDecorative );
+                pFlyFmt->GetDoc()->SetModified();
+            }
+        }
         // <--
         else if(FN_UNO_FRAME_STYLE_NAME == pEntry->nWID)
 		{
@@ -2113,6 +2128,11 @@ uno::Any SwXFrame::getPropertyValue(const OUString& rPropertyName)
             GetOrCreateSdrObject( pFlyFmt );
             aAny <<= OUString(pFlyFmt->GetObjDescription());
         }
+        else if( FN_UNO_DECORATIVE == pEntry->nWID )
+        {
+            const SwFlyFrmFmt* pFlyFmt = dynamic_cast<SwFlyFrmFmt*>(pFmt);
+            aAny <<= static_cast<sal_Bool>( pFlyFmt && pFlyFmt->IsObjDecorative() );
+        }
         // <--
 		else if(eType == FLYCNTTYPE_GRF &&
 				(rPropertyName.equalsAsciiL( SW_PROP_NAME(UNO_NAME_ACTUAL_SIZE))))
@@ -2385,6 +2405,13 @@ uno::Sequence< beans::PropertyState > SwXFrame::getPropertyStates(
             {
 				pStates[i] = beans::PropertyState_DIRECT_VALUE;
             }
+            else if(FN_UNO_DECORATIVE == pEntry->nWID)
+            {
+                // no item behind it: a default of false must not be exported
+                const SwFlyFrmFmt* pFlyFmt = dynamic_cast<SwFlyFrmFmt*>(pFmt);
+                pStates[i] = ( pFlyFmt && pFlyFmt->IsObjDecorative() )
+                    ? beans::PropertyState_DIRECT_VALUE : beans::PropertyState_DEFAULT_VALUE;
+            }
             else if(OWN_ATTR_FILLBMP_MODE == pEntry->nWID)
             {
                 //UUUU
@@ -2518,6 +2545,15 @@ void SwXFrame::setPropertyToDefault( const OUString& rPropertyName )
                 // assure that <SdrObject> instance exists.
                 GetOrCreateSdrObject( pFlyFmt );
                 pFlyFmt->GetDoc()->SetFlyFrmDescription( *(pFlyFmt), aEmptyStr );
+            }
+            else if( FN_UNO_DECORATIVE == pEntry->nWID )
+            {
+                SwFlyFrmFmt* pFlyFmt = dynamic_cast<SwFlyFrmFmt*>(pFmt);
+                if ( pFlyFmt && pFlyFmt->IsObjDecorative() )
+                {
+                    pFlyFmt->SetObjDecorative( false );
+                    pFlyFmt->GetDoc()->SetModified();
+                }
             }
             // <--
 			else
@@ -2996,6 +3032,11 @@ void SwXFrame::attachToRange(const uno::Reference< text::XTextRange > & xTextRan
         if ( pProps->GetProperty(FN_UNO_DESCRIPTION, 0, pDescription) )
         {
             setPropertyValue(C2U(SW_PROP_NAME_STR(UNO_NAME_DESCRIPTION)), *pDescription);
+        }
+        const ::uno::Any* pDecorative;
+        if ( pProps->GetProperty(FN_UNO_DECORATIVE, 0, pDecorative) )
+        {
+            setPropertyValue(C2U(SW_PROP_NAME_STR(UNO_NAME_DECORATIVE)), *pDecorative);
         }
         // <--
 	}

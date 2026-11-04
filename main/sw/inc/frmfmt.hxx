@@ -205,6 +205,8 @@ public:
     const String GetObjDescription() const;
     void SetObjDescription( const String& rDescription,
                             bool bBroadcast = false );
+    bool IsObjDecorative() const;
+    void SetObjDecorative( bool bDecorative );
     // <--
 
     /** SwFlyFrmFmt::IsBackgroundTransparent - for #99657#

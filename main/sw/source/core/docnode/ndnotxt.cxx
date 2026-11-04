@@ -334,4 +334,19 @@ const String SwNoTxtNode::GetDescription() const
 
     return pFlyFmt->GetObjDescription();
 }
+
+bool SwNoTxtNode::IsDecorative() const
+{
+    const SwFlyFrmFmt* pFlyFmt = dynamic_cast<const SwFlyFrmFmt*>(GetFlyFmt());
+    return pFlyFmt && pFlyFmt->IsObjDecorative();
+}
+
+void SwNoTxtNode::SetDecorative( bool bDecorative )
+{
+    SwFlyFrmFmt* pFlyFmt = dynamic_cast<SwFlyFrmFmt*>(GetFlyFmt());
+    if ( pFlyFmt )
+    {
+        pFlyFmt->SetObjDecorative( bDecorative );
+    }
+}
 // <--
