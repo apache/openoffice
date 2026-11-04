@@ -7,7 +7,7 @@ This lists the known deviations of Apache OpenOffice from ODF 1.3 in its "ODF 1.
 ## Not supported
 
 - XAdES signatures, and OpenPGP key transport in the manifest (`manifest:encrypted-key`, `keyinfo`, `PGPData`, `PGPKeyID`, `PGPKeyPacket`, `PGPAlgorithm`, `CipherData`, `CipherValue`). AES-GCM and Argon2 are not part of ODF 1.3.
-- Documents newer than ODF 1.3 trigger the "created with a newer version" prompt; ODF 1.3 documents do not.
+- Documents newer than ODF 1.4 trigger the "created with a newer version" prompt; ODF 1.3 and 1.4 documents do not.
 
 ## Reader: ODF 1.3 features that are not interpreted
 
