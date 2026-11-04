@@ -104,6 +104,25 @@ static sal_Bool lcl_IsHeaderFooterFill( const UniReference< XMLPropertySetMapper
 			IsXMLToken( rMapper->GetEntryXMLName( nIdx ), XML_REPEAT ) ) );
 }
 
+// The shape fill entries of an Impress table cell style; ODF 1.4 writes them in a style:background-fill child
+// of style:table-cell-properties.
+static sal_Bool lcl_IsTableCellFill( const UniReference< XMLPropertySetMapper >& rMapper, sal_Int32 nIdx )
+{
+	return ( rMapper->GetEntryFlags( nIdx ) & XML_TYPE_PROP_MASK ) == XML_TYPE_PROP_GRAPHIC &&
+		rMapper->GetEntryAPIName( nIdx ).matchAsciiL( RTL_CONSTASCII_STRINGPARAM( "Fill" ) ) &&
+		( rMapper->GetEntryNameSpace( nIdx ) == XML_NAMESPACE_DRAW ||
+		  ( rMapper->GetEntryNameSpace( nIdx ) == XML_NAMESPACE_STYLE &&
+			IsXMLToken( rMapper->GetEntryXMLName( nIdx ), XML_REPEAT ) ) );
+}
+
+static sal_Bool lcl_HasTableCellProperties( const UniReference< XMLPropertySetMapper >& rMapper )
+{
+	for( sal_Int32 n = 0; n < rMapper->GetEntryCount(); ++n )
+		if( ( rMapper->GetEntryFlags( n ) & XML_TYPE_PROP_MASK ) == XML_TYPE_PROP_TABLE_CELL )
+			return sal_True;
+	return sal_False;
+}
+
 ///////////////////////////////////////////////////////////////////////////////
 //
 // public methods
@@ -871,7 +890,35 @@ void SvXMLExportPropertyMapper::exportXML(
 		sal_Int32 nPropMapStartIdx, sal_Int32 nPropMapEndIdx,
 		sal_uInt16 nFlags ) const
 {
-	sal_uInt16 nPropTypeFlags = 0;
+	const SvtSaveOptions::ODFDefaultVersion eVersion( SvtSaveOptions().GetODFDefaultVersion() );
+	const bool b014 = eVersion == SvtSaveOptions::ODFVER_014 || eVersion == SvtSaveOptions::ODFVER_014_EXT;
+
+	// ODF 1.4: the fill of a table cell style goes into a style:background-fill child of its table-cell-properties
+	::std::vector< XMLPropertyState > aCellMainProps, aCellFillProps;
+	const ::std::vector< XMLPropertyState >* pAllProps = &rProperties;
+	bool bCellFill = false;
+	if( b014 && lcl_HasTableCellProperties( maPropMapper ) )
+	{
+		aCellMainProps = rProperties;
+		aCellFillProps = rProperties;
+		for( size_t n = 0; n < rProperties.size(); ++n )
+		{
+			const sal_Int32 nIdx = rProperties[n].mnIndex;
+			if( nIdx == -1 )
+				continue;
+			if( lcl_IsTableCellFill( maPropMapper, nIdx ) )
+			{
+				aCellMainProps[n].mnIndex = -1;
+				bCellFill = true;
+			}
+			else
+				aCellFillProps[n].mnIndex = -1;
+		}
+		if( bCellFill )
+			pAllProps = &aCellMainProps;
+	}
+
+	sal_uInt16 nPropTypeFlags = bCellFill ? ( 1 << GET_PROP_TYPE( XML_TYPE_PROP_TABLE_CELL ) ) : 0;
 	for( sal_uInt16 i=0; i<MAX_PROP_TYPES; ++i )
 	{
 		sal_uInt16 nPropType = aPropTokens[i].nType;
@@ -881,12 +928,21 @@ void SvXMLExportPropertyMapper::exportXML(
 
 			// ODF 1.4: header and footer fills go into a style:background-fill child
 			::std::vector< XMLPropertyState > aMainProps, aFillProps;
-			const ::std::vector< XMLPropertyState >* pMainProps = &rProperties;
+			const ::std::vector< XMLPropertyState >* pMainProps = pAllProps;
 			SvXMLAttributeList* pFillAttrs = 0;
 			uno::Reference< xml::sax::XAttributeList > xFillAttrs;
-			const SvtSaveOptions::ODFDefaultVersion eVersion( SvtSaveOptions().GetODFDefaultVersion() );
-			if( aPropTokens[i].eToken == XML_HEADER_FOOTER_PROPERTIES &&
-				( eVersion == SvtSaveOptions::ODFVER_014 || eVersion == SvtSaveOptions::ODFVER_014_EXT ) )
+			if( bCellFill && aPropTokens[i].eToken == XML_TABLE_CELL_PROPERTIES )
+			{
+				pFillAttrs = new SvXMLAttributeList;
+				xFillAttrs = pFillAttrs;
+				sal_uInt16 nFillTypeFlags = 0;
+				_exportXML( GET_PROP_TYPE( XML_TYPE_PROP_GRAPHIC ), nFillTypeFlags, *pFillAttrs, aCellFillProps,
+							rExport.GetMM100UnitConverter(),
+							rExport.GetNamespaceMap(),
+							nFlags, 0,
+							nPropMapStartIdx, nPropMapEndIdx );
+			}
+			else if( aPropTokens[i].eToken == XML_HEADER_FOOTER_PROPERTIES && b014 )
 			{
 				aMainProps = rProperties;
 				aFillProps = rProperties;

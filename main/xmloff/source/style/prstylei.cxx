@@ -174,6 +174,28 @@ namespace
 {
 const sal_Char s_aExtGraphicNamespace[] = "urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0";
 
+// ODF 1.4: the fill of a table cell style is in a style:background-fill child of its style:table-cell-properties
+class XMLTableCellPropsContext : public SvXMLPropertySetContext
+{
+public:
+    XMLTableCellPropsContext( SvXMLImport& rImport, sal_uInt16 nPrfx, const OUString& rLName,
+        const Reference< XAttributeList >& xAttrList, std::vector< XMLPropertyState >& rProps,
+        const UniReference< SvXMLImportPropertyMapper >& rMap )
+    :   SvXMLPropertySetContext( rImport, nPrfx, rLName, xAttrList, XML_TYPE_PROP_TABLE_CELL, rProps, rMap )
+    {
+    }
+
+    using SvXMLPropertySetContext::CreateChildContext;
+    virtual SvXMLImportContext *CreateChildContext( sal_uInt16 nPrefix, const OUString& rLocalName,
+        const Reference< XAttributeList >& xAttrList )
+    {
+        if( XML_NAMESPACE_STYLE == nPrefix && IsXMLToken( rLocalName, XML_BACKGROUND_FILL ) )
+            return new SvXMLPropertySetContext( GetImport(), nPrefix, rLocalName, xAttrList,
+                                                XML_TYPE_PROP_GRAPHIC, mrProperties, mxMapper );
+        return SvXMLPropertySetContext::CreateChildContext( nPrefix, rLocalName, xAttrList );
+    }
+};
+
 // Keeps the fill only if it is usable and no earlier fill exists; otherwise the fallback attributes apply.
 class XMLExtParaFillContext : public SvXMLPropertySetContext
 {
@@ -314,7 +336,10 @@ SvXMLImportContext *XMLPropStyleContext::CreateChildContext(
 		UniReference < SvXMLImportPropertyMapper > xImpPrMap =
 			((SvXMLStylesContext *)&mxStyles)->GetImportPropertyMapper(
 														GetFamily() );
-		if( xImpPrMap.is() )
+		if( xImpPrMap.is() && nFamily == XML_TYPE_PROP_TABLE_CELL )
+			pContext = new XMLTableCellPropsContext( GetImport(), nPrefix, rLocalName, xAttrList,
+													 maProperties, xImpPrMap );
+		else if( xImpPrMap.is() )
 			pContext = new SvXMLPropertySetContext( GetImport(), nPrefix,
 													rLocalName, xAttrList,
 													nFamily,
