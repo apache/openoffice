@@ -310,6 +310,7 @@ public:
 	String						aObjName;
 	String						aObjTitle;
 	String						aObjDescription;
+	bool						mbDecorative;
 
 	// Name to be used by applications
 	XubString					aHTMLName;
@@ -599,6 +600,9 @@ public:
 	String GetTitle() const;
 	void SetDescription(const String& rStr);
 	String GetDescription() const;
+	// ODF 1.4 draw:decorative; not covered by undo
+	void SetDecorative(bool bNew);
+	bool IsDecorative() const;
 
 	// support for HTMLName
 	void SetHTMLName(const String& rStr);

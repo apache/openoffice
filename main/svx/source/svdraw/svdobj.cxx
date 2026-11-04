@@ -251,7 +251,8 @@ SdrObjPlusData::SdrObjPlusData():
 	pBroadcast(NULL),
 	pUserDataList(NULL),
 	pGluePoints(NULL),
-	pAutoTimer(NULL)
+	pAutoTimer(NULL),
+	mbDecorative(false)
 {
 }
 
@@ -288,6 +289,7 @@ SdrObjPlusData* SdrObjPlusData::Clone(SdrObject* pObj1) const
 	pNeuPlusData->aObjName = aObjName;
 	pNeuPlusData->aObjTitle = aObjTitle;
 	pNeuPlusData->aObjDescription = aObjDescription;
+	pNeuPlusData->mbDecorative = mbDecorative;
 
 	if (pAutoTimer!=NULL) {
 		pNeuPlusData->pAutoTimer=new AutoTimer;
@@ -837,6 +839,26 @@ String SdrObject::GetDescription() const
 	}
 
 	return String();
+}
+
+void SdrObject::SetDecorative(bool bNew)
+{
+	if(bNew && !pPlusData)
+	{
+		ImpForcePlusData();
+	}
+
+	if(pPlusData && pPlusData->mbDecorative != bNew)
+	{
+		pPlusData->mbDecorative = bNew;
+		SetChanged();
+		BroadcastObjectChange();
+	}
+}
+
+bool SdrObject::IsDecorative() const
+{
+	return pPlusData && pPlusData->mbDecorative;
 }
 
 void SdrObject::SetHTMLName(const String& rStr)

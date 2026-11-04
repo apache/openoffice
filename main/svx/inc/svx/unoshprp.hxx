@@ -188,6 +188,10 @@
 
 #define OWN_ATTR_EDGE_POLYPOLYGONBEZIER			(OWN_ATTR_VALUE_START+88)	// maximum is OWN_ATTR_VALUE_START+88, see svl/inc/svl/solar.hrc
 
+// ODF 1.4 draw:decorative. The range above is full (EE_ITEMS_START follows it), so this id lies just below it and the
+// range checks in unoshape.cxx test it explicitly.
+#define OWN_ATTR_MISC_OBJ_DECORATIVE			(OWN_ATTR_VALUE_START-1)
+
 // #FontWork#
 #define FONTWORK_PROPERTIES \
 	{ MAP_CHAR_LEN("FontWorkStyle"),			XATTR_FORMTXTSTYLE,			/*ENUM*/&::getCppuType((const sal_Int32*)0),	0,	0}, \
@@ -331,7 +335,8 @@
 	{ MAP_CHAR_LEN("UINamePlural"),					OWN_ATTR_UINAME_PLURAL			, &::getCppuType((const ::rtl::OUString*)0),	::com::sun::star::beans::PropertyAttribute::READONLY,	0},	\
 	/* #i68101# */ \
 	{ MAP_CHAR_LEN(UNO_NAME_MISC_OBJ_TITLE),		OWN_ATTR_MISC_OBJ_TITLE			, &::getCppuType((const ::rtl::OUString*)0),	0,	0}, \
-	{ MAP_CHAR_LEN(UNO_NAME_MISC_OBJ_DESCRIPTION),	OWN_ATTR_MISC_OBJ_DESCRIPTION	, &::getCppuType((const ::rtl::OUString*)0),	0,	0},
+	{ MAP_CHAR_LEN(UNO_NAME_MISC_OBJ_DESCRIPTION),	OWN_ATTR_MISC_OBJ_DESCRIPTION	, &::getCppuType((const ::rtl::OUString*)0),	0,	0}, \
+	{ MAP_CHAR_LEN("Decorative"),					OWN_ATTR_MISC_OBJ_DECORATIVE	, &::getBooleanCppuType(),						0,	0},
 
 #define LINKTARGET_PROPERTIES \
 	{ MAP_CHAR_LEN(UNO_NAME_LINKDISPLAYNAME),	OWN_ATTR_LDNAME				, &::getCppuType((const ::rtl::OUString*)0),	::com::sun::star::beans::PropertyAttribute::READONLY, 0}, \

@@ -686,7 +686,7 @@ void SvxItemPropertySet_ObtainSettingsFromPropertySet(const SvxItemPropertySet& 
 					if(pEntry)
 					{
 						// entry found
-						if(pEntry->nWID >= OWN_ATTR_VALUE_START && pEntry->nWID <= OWN_ATTR_VALUE_END)
+						if((pEntry->nWID >= OWN_ATTR_VALUE_START && pEntry->nWID <= OWN_ATTR_VALUE_END) || pEntry->nWID == OWN_ATTR_MISC_OBJ_DECORATIVE)
 						{
 							// Special ID im PropertySet, kann nur direkt am
 							// Objekt gesetzt werden+
@@ -2584,6 +2584,17 @@ bool SvxShape::setPropertyValueImpl( const ::rtl::OUString&, const SfxItemProper
 		break;
 	}
 
+	case OWN_ATTR_MISC_OBJ_DECORATIVE:
+	{
+		sal_Bool bDecorative = sal_False;
+		if( rValue >>= bDecorative )
+		{
+			mpObj->SetDecorative( bDecorative );
+			return true;
+		}
+		break;
+	}
+
 	case SDRATTR_OBJPRINTABLE:
 	{
 		sal_Bool bPrintable = sal_Bool();
@@ -2979,6 +2990,10 @@ bool SvxShape::getPropertyValueImpl( const ::rtl::OUString&, const SfxItemProper
 		break;
 	}
 
+	case OWN_ATTR_MISC_OBJ_DECORATIVE:
+		rValue <<= static_cast<sal_Bool>( mpObj->IsDecorative() );
+		break;
+
 	case SDRATTR_OBJPRINTABLE:
 		rValue <<= static_cast<sal_Bool>( mpObj->IsPrintable() );
 		break;
@@ -3084,6 +3099,11 @@ bool SvxShape::getPropertyStateImpl( const SfxItemPropertySimpleEntry* pProperty
 			rState = beans::PropertyState_AMBIGUOUS_VALUE;
 		}
 	}
+	else if( pProperty->nWID == OWN_ATTR_MISC_OBJ_DECORATIVE )
+	{
+		// a default of false must not make every shape export the property
+		rState = mpObj->IsDecorative() ? beans::PropertyState_DIRECT_VALUE : beans::PropertyState_DEFAULT_VALUE;
+	}
 	else if((( pProperty->nWID >= OWN_ATTR_VALUE_START && pProperty->nWID <= OWN_ATTR_VALUE_END ) ||
 	   ( pProperty->nWID >= SDRATTR_NOTPERSIST_FIRST && pProperty->nWID <= SDRATTR_NOTPERSIST_LAST )) && ( pProperty->nWID != SDRATTR_TEXTDIRECTION ) )
 	{
@@ -3105,6 +3125,11 @@ bool SvxShape::setPropertyToDefaultImpl( const SfxItemPropertySimpleEntry* pProp
 	{
 		mpObj->ClearMergedItem( XATTR_FILLBMP_STRETCH );
 		mpObj->ClearMergedItem( XATTR_FILLBMP_TILE );
+		return true;
+	}
+	else if( pProperty->nWID == OWN_ATTR_MISC_OBJ_DECORATIVE )
+	{
+		mpObj->SetDecorative( false );
 		return true;
 	}
 	else if((pProperty->nWID >= OWN_ATTR_VALUE_START && pProperty->nWID <= OWN_ATTR_VALUE_END ) ||
@@ -3196,6 +3221,11 @@ uno::Any SAL_CALL SvxShape::_getPropertyDefault( const OUString& aPropertyName )
 
 	if( !mpObj.is() || pMap == NULL || mpModel == NULL )
 		throw beans::UnknownPropertyException();
+
+	if( pMap->nWID == OWN_ATTR_MISC_OBJ_DECORATIVE )
+	{
+		return uno::makeAny( sal_False );
+	}
 
 	if(( pMap->nWID >= OWN_ATTR_VALUE_START && pMap->nWID <= OWN_ATTR_VALUE_END ) ||
 	   ( pMap->nWID >= SDRATTR_NOTPERSIST_FIRST && pMap->nWID <= SDRATTR_NOTPERSIST_LAST ))
