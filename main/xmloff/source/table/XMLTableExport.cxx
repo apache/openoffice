@@ -105,6 +105,12 @@ const XMLPropertyMapEntry* getCellPropertiesMap()
 	static const XMLPropertyMapEntry aXMLCellProperties[] =
 	{
 		CELLMAP( "FillColor",		XML_NAMESPACE_FO,	XML_BACKGROUND_COLOR,	XML_TYPE_COLOR,	0 ),
+		// ODF 1.4 modes only (see the context filter): the text distances and the wrap option of a cell
+		CELLMAP( "TextUpperDistance",	XML_NAMESPACE_FO,	XML_PADDING_TOP,		XML_TYPE_MEASURE,	0 ),
+		CELLMAP( "TextLowerDistance",	XML_NAMESPACE_FO,	XML_PADDING_BOTTOM,		XML_TYPE_MEASURE,	0 ),
+		CELLMAP( "TextLeftDistance",	XML_NAMESPACE_FO,	XML_PADDING_LEFT,		XML_TYPE_MEASURE,	0 ),
+		CELLMAP( "TextRightDistance",	XML_NAMESPACE_FO,	XML_PADDING_RIGHT,		XML_TYPE_MEASURE,	0 ),
+		CELLMAP( "TextWordWrap",		XML_NAMESPACE_FO,	XML_WRAP_OPTION,		XML_TYPE_WRAP_OPTION,	0 ),
 		MAP_END
 	};
 
@@ -113,7 +119,9 @@ const XMLPropertyMapEntry* getCellPropertiesMap()
 
 // --------------------------------------------------------------------
 
-// ODF 1.2 strict: a table cell style has no style:graphic-properties; only a solid fill survives, as fo:background-color
+// ODF 1.2 strict: a table cell style has no style:graphic-properties; only a solid fill survives, as fo:background-color.
+// ODF 1.4 (both modes): the fill goes to a style:background-fill child, the text distances and the wrap option to
+// style:table-cell-properties; other graphic properties are not allowed in a cell style.
 class XMLTableCellExportPropertyMapper : public SvXMLExportPropertyMapper
 {
 public:
@@ -123,11 +131,20 @@ protected:
 	virtual void ContextFilter( std::vector< XMLPropertyState >& rProperties, Reference< XPropertySet > rPropSet ) const;
 };
 
+static bool lcl_IsCellTextBox( const OUString& rApiName )
+{
+	return rApiName.equalsAscii( "TextLeftDistance" ) || rApiName.equalsAscii( "TextRightDistance" ) ||
+		rApiName.equalsAscii( "TextUpperDistance" ) || rApiName.equalsAscii( "TextLowerDistance" ) ||
+		rApiName.equalsAscii( "TextWordWrap" );
+}
+
 void XMLTableCellExportPropertyMapper::ContextFilter( std::vector< XMLPropertyState >& rProperties, Reference< XPropertySet > rPropSet ) const
 {
-	const bool bStrict = SvtSaveOptions::IsODFStrict( SvtSaveOptions().GetODFDefaultVersion() );
+	const SvtSaveOptions::ODFDefaultVersion eVersion = SvtSaveOptions().GetODFDefaultVersion();
+	const bool bStrict = SvtSaveOptions::IsODFStrict( eVersion );
 	// ODF 1.4 keeps the fill, in a style:background-fill child
-	const bool b014 = SvtSaveOptions().GetODFDefaultVersion() == SvtSaveOptions::ODFVER_014;
+	const bool b014 = eVersion == SvtSaveOptions::ODFVER_014;
+	const bool b014Any = b014 || eVersion == SvtSaveOptions::ODFVER_014_EXT;
 	bool bSolid = false;
 	if( bStrict ) try
 	{
@@ -144,14 +161,23 @@ void XMLTableCellExportPropertyMapper::ContextFilter( std::vector< XMLPropertySt
 			continue;
 
 		const sal_uInt32 nPropType = maPropMapper->GetEntryFlags( aIter->mnIndex ) & XML_TYPE_PROP_MASK;
+		const OUString& rApiName = maPropMapper->GetEntryAPIName( aIter->mnIndex );
 		if( nPropType == XML_TYPE_PROP_TABLE_CELL )
 		{
-			if( !bSolid )
+			if( lcl_IsCellTextBox( rApiName ) )
+			{
+				if( !b014Any )
+					aIter->mnIndex = -1;
+			}
+			else if( !bSolid )
 				aIter->mnIndex = -1;
 		}
-		else if( bStrict && nPropType == XML_TYPE_PROP_GRAPHIC &&
-				 !( b014 && maPropMapper->GetEntryAPIName( aIter->mnIndex ).matchAsciiL( RTL_CONSTASCII_STRINGPARAM( "Fill" ) ) ) )
-			aIter->mnIndex = -1;
+		else if( nPropType == XML_TYPE_PROP_GRAPHIC )
+		{
+			const bool bFill = rApiName.matchAsciiL( RTL_CONSTASCII_STRINGPARAM( "Fill" ) );
+			if( b014Any ? !bFill : ( bStrict && !( b014 && bFill ) ) )
+				aIter->mnIndex = -1;
+		}
 	}
 
 	SvXMLExportPropertyMapper::ContextFilter( rProperties, rPropSet );
