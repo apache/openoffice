@@ -259,7 +259,14 @@ result actually needs, with the values the Bazel build compiles and runs at:
 | | dmake (`wntmsci11.mk`, `wntmscx.mk`) and gbuild (`platform/windows.mk`) |
 | --- | --- |
 | `WINVER`, `_WIN32_WINNT` | `0x0601` (Windows 7) |
-| `_WIN32_IE` | `0x0800`, the value the SDK derives from `0x0601` |
+| `_WIN32_IE` | not set — the SDK derives it per translation unit (`0x0800` at `0x0601`) |
+
+Not setting `_WIN32_IE` is load-bearing, and it is what the Bazel build does
+too. `sal/systools/win32/uwinapi`'s `CopyFileEx{A,W}.cpp` define
+`_WIN32_WINNT 0x0400` themselves, and the SDK rejects an NT4 `_WIN32_WINNT`
+next to an IE above 6.0 SP1 (`sdkddkver.h`: C1189 "_WIN32_WINNT settings
+conflicts with _WIN32_IE setting"); a derived value follows whatever the file
+ends up with.
 
 The floor is in the base files, not in `wntmsc14.mk`: there is no VC9 build of
 trunk left for a conditional to protect, so the "VC9 stays byte-identical"

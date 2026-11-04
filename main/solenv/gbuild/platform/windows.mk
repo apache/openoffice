@@ -59,7 +59,6 @@ endif
 gb_OSDEFS := \
 	-DWINVER=0x0601 \
 	-D_WIN32_WINNT=0x0601 \
-	-D_WIN32_IE=0x0800 \
 	-DNT351 \
 	-DWIN32 \
 	-DWNT \
