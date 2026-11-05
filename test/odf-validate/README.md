@@ -145,6 +145,8 @@ that ran passed.
   without an export change (volatile Calc formulas, redline timestamps, the
   `0238` loader order, the intermittent Basic library loss of `0048`). A new
   entry needs a reason.
+- `baseline/` holds kinds for `ext`, `strict`, `x14` and an empty `v14`; there is none for `v13` or `x13`, so a first gate
+  with those modes needs `--prev`.
 - The first fixtures run has nothing to compare with: its mismatch pattern is
   only recorded. By design, strict, ODF 1.0 and ODF 1.1 mode fail the 14
   reload rows that need gradient or transparency fills.
