@@ -118,7 +118,7 @@ CONFIGURE_ACTION=.$/configure
 # module just built. --with-libxml-prefix pins it to the bundled
 # xml2-config instead, matching the consumer-side fix in xmlsecurity/
 # forms.
-CONFIGURE_FLAGS=--enable-ipv6=no --without-crypto --without-python --enable-static=yes --enable-shared=no --with-sax1=yes --with-libxml-prefix=$(SOLARVERSION)/$(INPATH) ac_cv_func_clock_gettime=false
+CONFIGURE_FLAGS=--enable-ipv6=no --without-crypto --without-python --without-iconv --enable-static=yes --enable-shared=no --with-sax1=yes --with-libxml-prefix=$(SOLARVERSION)/$(INPATH) ac_cv_func_clock_gettime=false
 .ELSE
 CONFIGURE_FLAGS=--enable-ipv6=no --without-crypto --without-python --enable-static=no --with-sax1=yes ac_cv_func_clock_gettime=false
 .ENDIF

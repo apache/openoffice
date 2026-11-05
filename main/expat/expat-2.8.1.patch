@@ -1,0 +1,195 @@
+--- misc/expat-2.8.1/lib/makefile.mk	2026-11-05 08:28:38
++++ misc/build/expat-2.8.1/lib/makefile.mk	2026-11-05 08:30:26
+@@ -1 +1,102 @@
+-dummy
++#**************************************************************
++#
++#  Licensed to the Apache Software Foundation (ASF) under one
++#  or more contributor license agreements.  See the NOTICE file
++#  distributed with this work for additional information
++#  regarding copyright ownership.  The ASF licenses this file
++#  to you under the Apache License, Version 2.0 (the
++#  "License"); you may not use this file except in compliance
++#  with the License.  You may obtain a copy of the License at
++#
++#    http://www.apache.org/licenses/LICENSE-2.0
++#
++#  Unless required by applicable law or agreed to in writing,
++#  software distributed under the License is distributed on an
++#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
++#  KIND, either express or implied.  See the License for the
++#  specific language governing permissions and limitations
++#  under the License.
++#
++#**************************************************************
++PRJ=..$/..$/..$/..$/..
++
++PRJNAME=expat
++TARGET=expat
++LIBTARGET=NO
++EXTERNAL_WARNINGS_NOT_ERRORS=TRUE
++
++# --- Settings -----------------------------------------------------
++.INCLUDE :  settings.mk
++# --- Files --------------------------------------------------------
++
++CFLAGS+=-I..
++
++.IF "$(OS)"=="WNT"
++CDEFS+=-DWIN32
++.ELSE
++CDEFS+=-DHAVE_EXPAT_CONFIG_H
++.ENDIF
++
++.IF "$(OS)"=="MACOSX" && "$(SYSBASE)"!=""
++CDEFS+=-DHAVE_MEMMOVE -DHAVE_BCOPY
++.ENDIF # "$(OS)"=="MACOSX"
++
++# Entropy sources. Same selection as lib/Makefile.am; on Unix it is read from
++# the expat_config.h that configure has just written.
++.IF "$(OS)"=="WNT"
++RANDOM_OBJS=$(SLO)$/random_rand_s.obj
++.ELSE
++RANDOM_OBJS=$(SLO)$/random_dev_urandom.obj
++.IF "$(shell grep -c 'define HAVE_ARC4RANDOM 1' ..$/expat_config.h || true)"!="0"
++RANDOM_OBJS+=$(SLO)$/random_arc4random.obj
++.ENDIF
++.IF "$(shell grep -c 'define HAVE_ARC4RANDOM_BUF 1' ..$/expat_config.h || true)"!="0"
++RANDOM_OBJS+=$(SLO)$/random_arc4random_buf.obj
++.ENDIF
++.IF "$(shell grep -c 'define HAVE_GETENTROPY 1' ..$/expat_config.h || true)"!="0"
++RANDOM_OBJS+=$(SLO)$/random_getentropy.obj
++.ENDIF
++.IF "$(shell grep -c -E 'define (HAVE_GETRANDOM|HAVE_SYSCALL_GETRANDOM) 1' ..$/expat_config.h || true)"!="0"
++RANDOM_OBJS+=$(SLO)$/random_getrandom.obj
++.ENDIF
++.ENDIF
++
++SECOND_BUILD=UNICODE
++UNICODE_SLOFILES=$(SLO)$/xmlparse.obj
++UNICODECDEFS+=-DXML_UNICODE
++
++LIB1ARCHIV=$(LB)$/libascii_$(TARGET)_xmlparse.a
++LIB1TARGET=$(SLB)$/ascii_$(TARGET)_xmlparse.lib
++LIB1OBJFILES=$(SLO)$/xmlparse.obj
++
++LIB2ARCHIV=$(LB)$/lib$(TARGET)_xmlparse.a
++LIB2TARGET=$(SLB)$/$(TARGET)_xmlparse.lib
++LIB2OBJFILES =$(REAL_UNICODE_SLOFILES)
++
++# xmlparse calls the entropy functions, and both xmlparse libraries are
++# always linked ahead of this one, so they live here.
++LIB3ARCHIV=$(LB)$/lib$(TARGET)_xmltok.a
++LIB3TARGET=$(SLB)$/$(TARGET)_xmltok.lib
++LIB3OBJFILES=$(SLO)$/xmlrole.obj $(SLO)$/xmltok.obj $(RANDOM_OBJS)
++
++.IF "$(BUILD_X64)"!=""
++# ---------------- X64 stuff special ---------------------
++#  use UNICODE only because shell/shlxthandler
++#  doesn't link against ascii_expat_xmlparse
++#---------------------------------------------------------
++SLOFILES_X64=$(SLO_X64)$/xmlparse.obj \
++             $(SLO_X64)$/xmlrole.obj \
++             $(SLO_X64)$/xmltok.obj \
++             $(SLO_X64)$/random_rand_s.obj
++CDEFS_X64+=-DXML_UNICODE -DWIN32
++CFLAGS_X64+=-I..
++LIB1TARGET_X64=$(SLB_X64)$/$(TARGET)_xmlparse.lib
++LIB1OBJFILES_X64=$(SLO_X64)$/xmlparse.obj
++LIB2TARGET_X64=$(SLB_X64)$/$(TARGET)_xmltok.lib
++LIB2OBJFILES_X64=$(SLO_X64)$/xmlrole.obj $(SLO_X64)$/xmltok.obj $(SLO_X64)$/random_rand_s.obj
++.ENDIF # "$(BUILD_X64)"!=""
++
++# --- Targets ------------------------------------------------------
++.INCLUDE :  set_wntx64.mk
++.INCLUDE :	target.mk
++.INCLUDE :  tg_wntx64.mk
+--- misc/expat-2.8.1/expat_config.h	2026-11-05 08:28:38
++++ misc/build/expat-2.8.1/expat_config.h	2026-11-05 08:28:46
+@@ -11,10 +11,14 @@
+ #define BYTEORDER 1234
+ 
+ /* Define to 1 if you have the `arc4random' function. */
++#if ! defined(_WIN32)
+ #define HAVE_ARC4RANDOM 1
++#endif
+ 
+ /* Define to 1 if you have the `arc4random_buf' function. */
++#if ! defined(_WIN32)
+ #define HAVE_ARC4RANDOM_BUF 1
++#endif
+ 
+ /* define if the compiler supports basic C++11 syntax */
+ #define HAVE_CXX11 1
+@@ -26,13 +30,17 @@
+ #define HAVE_FCNTL_H 1
+ 
+ /* Define to 1 if you have the `getentropy' function. */
++#if ! defined(_WIN32)
+ #define HAVE_GETENTROPY 1
++#endif
+ 
+ /* Define to 1 if you have the 'getpagesize' function. */
+ #define HAVE_GETPAGESIZE 1
+ 
+ /* Define to 1 if you have the `getrandom' function. */
++#if ! defined(_WIN32)
+ #define HAVE_GETRANDOM 1
++#endif
+ 
+ /* Define to 1 if you have the <inttypes.h> header file. */
+ #define HAVE_INTTYPES_H 1
+@@ -56,7 +64,9 @@
+ #define HAVE_STRING_H 1
+ 
+ /* Define to 1 if you have `syscall' and `SYS_getrandom'. */
++#if ! defined(_WIN32)
+ #define HAVE_SYSCALL_GETRANDOM 1
++#endif
+ 
+ /* Define to 1 if you have the <sys/param.h> header file. */
+ #define HAVE_SYS_PARAM_H 1
+@@ -77,13 +87,13 @@
+ #define PACKAGE "expat"
+ 
+ /* Define to the address where bug reports for this package should be sent. */
+-#define PACKAGE_BUGREPORT "https://github.com/libexpat/libexpat/issues"
++#define PACKAGE_BUGREPORT "dev@openoffice.apache.org"
+ 
+ /* Define to the full name of this package. */
+ #define PACKAGE_NAME "expat"
+ 
+ /* Define to the full name and version of this package. */
+-#define PACKAGE_STRING "expat 2.8.1"
++#define PACKAGE_STRING "expat 2.8.1-aoo"
+ 
+ /* Define to the one symbol short name of this package. */
+ #define PACKAGE_TARNAME "expat"
+@@ -92,7 +102,7 @@
+ #define PACKAGE_URL ""
+ 
+ /* Define to the version of this package. */
+-#define PACKAGE_VERSION "2.8.1"
++#define PACKAGE_VERSION "2.8.1-aoo"
+ 
+ /* Define to 1 if all of the C89 standard headers exist (not just the ones
+    required in a freestanding environment). This macro is provided for
+@@ -100,7 +110,7 @@
+ #define STDC_HEADERS 1
+ 
+ /* Version number of package */
+-#define VERSION "2.8.1"
++#define VERSION "2.8.1-aoo"
+ 
+ /* Define WORDS_BIGENDIAN to 1 if your processor stores words with the most
+    significant byte first (like Motorola and SPARC, unlike Intel). */
+@@ -123,7 +133,9 @@
+ #define XML_CONTEXT_BYTES 1024
+ 
+ /* Define to include code reading entropy from `/dev/urandom'. */
++#if ! defined(_WIN32)
+ #define XML_DEV_URANDOM 1
++#endif
+ 
+ /* Define to make parameter entity parsing functionality available. */
+ #define XML_DTD 1

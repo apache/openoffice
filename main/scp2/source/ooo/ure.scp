@@ -840,7 +840,8 @@ File gid_File_Dl_Uuresolver
     Styles = (PACKED, VERSION_INDEPENDENT_COMP_ID);
 End
 
-#if !defined SYSTEM_LIBXML
+// On macOS libxml2 is linked in statically; there is no dylib to ship.
+#if !defined SYSTEM_LIBXML && !defined MACOSX
 File gid_File_Dl_Libxml2
     TXT_FILE_BODY;
     Dir = SCP2_URE_DL_DIR;

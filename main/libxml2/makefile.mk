@@ -102,7 +102,7 @@ CONFIGURE_FLAGS=--enable-ipv6=no --without-python --without-zlib --without-lzma 
 # main/xmlsecurity/util/makefile.mk and main/forms/util/makefile.mk for
 # the consumer side of this.
 CONFIGURE_ACTION=.$/configure
-CONFIGURE_FLAGS=--enable-ipv6=no --without-python --without-zlib --without-lzma --without-iconv --enable-static=yes --enable-shared=no --with-sax1=yes ADDCFLAGS="$(xml2_CFLAGS) $(EXTRA_CFLAGS)" LDFLAGS="$(xml2_LDFLAGS) $(EXTRA_LINKFLAGS)"
+CONFIGURE_FLAGS=--enable-ipv6=no --without-python --without-zlib --without-lzma --without-iconv --without-icu --without-readline --without-history --enable-static=yes --enable-shared=no --with-sax1=yes ADDCFLAGS="$(xml2_CFLAGS) $(EXTRA_CFLAGS)" LDFLAGS="$(xml2_LDFLAGS) $(EXTRA_LINKFLAGS)"
 .ELSE
 CONFIGURE_ACTION=.$/configure
 CONFIGURE_FLAGS=--enable-ipv6=no --without-python --without-zlib --without-lzma --without-iconv --enable-static=no --with-sax1=yes ADDCFLAGS="$(xml2_CFLAGS) $(EXTRA_CFLAGS)" LDFLAGS="$(xml2_LDFLAGS) $(EXTRA_LINKFLAGS)"
