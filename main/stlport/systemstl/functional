@@ -53,6 +53,19 @@
 
 namespace std
 {
+#if __cplusplus >= 201703L
+template<typename Arg, typename Result>
+struct unary_function {
+    using argument_type = Arg;
+    using result_type = Result;
+};
+template<typename Arg1, typename Arg2, typename Result>
+struct binary_function {
+    using first_argument_type = Arg1;
+    using second_argument_type = Arg2;
+    using result_type = Result;
+};
+#endif
 // emulate SGI extensions to the STL using http://www.sgi.com/tech/stl/stl_function.h as reference
 template< typename T> struct identity : unary_function<T,T> { T operator()(const T& t) const { return t;} };
 template< typename T, typename U> struct project2nd : public binary_function<T,U,U> { U operator()(const T&, const U& u) const { return u;}};

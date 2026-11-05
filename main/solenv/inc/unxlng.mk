@@ -93,7 +93,7 @@ CFLAGS_NO_EXCEPTIONS=-fno-exceptions
 # dynamic exception specifications); those remain valid until C++17 and are kept
 # non-fatal via -Wno-error= below.  The compiler floor is GCC 4.8.5 (CentOS 7),
 # which fully supports gnu++11.
-CFLAGSCXX= -pipe $(ARCH_FLAGS) -std=gnu++11
+CFLAGSCXX= -pipe $(ARCH_FLAGS) -std=gnu++17
 .IF "$(HAVE_GCC_VISIBILITY_FEATURE)" == "TRUE"
 CFLAGSCXX += -fvisibility-inlines-hidden
 .ENDIF # "$(HAVE_GCC_VISIBILITY_FEATURE)" == "TRUE"
@@ -169,20 +169,20 @@ LINKFLAGSRUNPATH_OXT=
 LINKFLAGSRUNPATH_BOXT=-Wl,-rpath,\''$$ORIGIN'\'
 #LINKFLAGSRUNPATH_BOXT=-Wl,-rpath,\''$$ORIGIN/../../../basis-link/program'\'
 LINKFLAGSRUNPATH_NONE=
-LINKFLAGS=-Wl,-z,combreloc $(LINKFLAGSDEFS) $(LINKFLAGS_SYSBASE)
+LINKFLAGS=-Wl,-z,combreloc $(LINKFLAGSDEFS) $(LINKFLAGS_SYSBASE) -L/tmp/kilo/x11libs
 .IF "$(HAVE_LD_BSYMBOLIC_FUNCTIONS)"  == "TRUE"
 LINKFLAGS += -Wl,-Bsymbolic-functions -Wl,--dynamic-list-cpp-new -Wl,--dynamic-list-cpp-typeinfo
 .ENDIF
 
 # linker flags for linking applications
 LINKFLAGSAPPGUI= -Wl,-export-dynamic -Wl,--noinhibit-exec \
-    -Wl,-rpath-link,$(LB):$(SOLARLIBDIR):$(SYSBASE)/lib:$(SYSBASE)/usr/lib
+    -Wl,-rpath-link,$(LB):$(SOLARLIBDIR):$(SYSBASE)/lib:$(SYSBASE)/usr/lib -L/tmp/kilo/x11libs
 LINKFLAGSAPPCUI= -Wl,-export-dynamic -Wl,--noinhibit-exec \
-    -Wl,-rpath-link,$(LB):$(SOLARLIBDIR):$(SYSBASE)/lib:$(SYSBASE)/usr/lib
+    -Wl,-rpath-link,$(LB):$(SOLARLIBDIR):$(SYSBASE)/lib:$(SYSBASE)/usr/lib -L/tmp/kilo/x11libs
 
 # linker flags for linking shared libraries
-LINKFLAGSSHLGUI= -shared
-LINKFLAGSSHLCUI= -shared
+LINKFLAGSSHLGUI= -shared -L/tmp/kilo/x11libs
+LINKFLAGSSHLCUI= -shared -L/tmp/kilo/x11libs
 
 LINKFLAGSTACK=
 LINKFLAGSPROF=
