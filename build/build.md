@@ -39,15 +39,22 @@ Visual Studio IDE is not required — Build Tools are enough.
 
 The VS2008 (VC9) toolchains — 32-bit `winXP-x86`, until then the default, and
 `winXP-x64` — were retired on 2026-11-01. VS2008 and the Windows SDK v7.0 are
-**still needed on the machine for now**: some rules still stage or embed the
-VC90 runtime and call the SDK v7.0 `RC.Exe`, and removing that is the next step.
+no longer needed on the machine for the default build: scp2's preprocessor and
+every `RC.Exe` genrule use the VS2019 toolset and the Windows 10 SDK. Their
+output was checked byte-identical when switched (all 94 `.par` files, every
+`.res`). One opt-in exception remains: `winaccessibility`'s MIDL step, which only
+builds with `--//build:atl_available=True` (§5), still calls SDK v7.0 `midl.exe`.
+
+The VC90 runtime itself is still in the tree — staged `msvcr90`/`msvcp90` DLLs
+and manifests declaring `Microsoft.VC90.CRT` — but those files come from
+`main/external/msvcp90`, not from a VS2008 install.
 
 | Tool | Version / Notes |
 | --- | --- |
 | **Bazel** | bzlmod-based (`MODULE.bazel`). Install via [Bazelisk](https://github.com/bazelbuild/bazelisk). ⚠️ Bazel 9.0.1 has a patch-section bug — see [§7](#7-known-issues). |
 | **VS2019 Build Tools** | The MSVC toolset (`cl.exe`, `link.exe`, `lib.exe`, `ml64.exe`), found under `VS_MODERN_PATH`. Pin a version with `MSVC_TOOLSET_VERSION`. |
 | **Windows 10 SDK** | System headers/libs, `rc.exe`, `mt.exe`, found under `WIN10_SDK_PATH`. Pin a version with `WIN10_SDK_VERSION`. |
-| **Visual Studio 2008 + Windows SDK v7.0** (interim) | No longer compile anything, but the VC90 runtime files and the SDK v7.0 `RC.Exe` are still referenced; see above. |
+| **Windows SDK v7.0** (optional) | Only for `winaccessibility`'s `midl.exe` under `--//build:atl_available=True`; see above. |
 | **Perl** | Used by IDL/rsc/installer codegen scripts. A Strawberry Perl is pulled in via bzlmod for *build deps*, but some local genrules invoke a host Perl set via `PERL_PATH` (e.g. `C:\msys64\usr\bin\perl.exe`). |
 | **ATLMFC** (optional) | Only needed for ATL modules (`embedserv`, `winaccessibility`, `extensions/activex`). VS Express / BuildTools do **not** ship ATLMFC — those modules are skipped unless you opt in. See [§5](#5-optional-features). |
 
@@ -74,8 +81,6 @@ build --repo_env=BAZEL_DO_NOT_DETECT_CPP_TOOLCHAIN=1
 build --repo_env="VS_MODERN_PATH=C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools"
 build --repo_env="WIN10_SDK_PATH=C:/Program Files (x86)/Windows Kits/10"
 build --repo_env="WIN10_SDK_VERSION=10.0.19041.0"   # optional pin
-build --repo_env="VS_PATH=C:/Program Files (x86)/Microsoft Visual Studio 9.0"   # interim
-build --repo_env="SDK_PATH=C:/Program Files/Microsoft SDKs/Windows/v7.0"        # interim
 build --repo_env="MSVC_TMP=C:/Users/<you>/AppData/Local/Temp"
 build --repo_env="PERL_PATH=C:/msys64/usr/bin/perl.exe"
 ```
@@ -87,14 +92,14 @@ Defaults (used when a `--repo_env` is omitted) are defined in
 | --- | --- | --- |
 | `VS_MODERN_PATH` | VS2019 Build Tools root | Where the MSVC toolset is discovered. |
 | `WIN10_SDK_PATH` | `C:\Program Files (x86)\Windows Kits\10` | Where the Windows 10 SDK is discovered. |
-| `VS_PATH` | `C:\Program Files (x86)\Microsoft Visual Studio 9.0` | VS2008 root (interim: VC90 runtime files only). |
-| `SDK_PATH` | `C:\Program Files\Microsoft SDKs\Windows\v7.0` | Windows SDK v7.0 root (interim). |
 | `MSVC_TMP` | `C:\Temp` | Scratch dir for MSVC actions. |
 | `PERL_PATH` | `C:\msys64\usr\bin\perl.exe` | Host Perl for codegen genrules. |
 
-The generated `@vs_config//:paths.bzl` exposes `VS`, `VC`, `SDK`, `MSVC_TMP`,
-`PERL`, and `DEBUG_CRT_DIR`, which the toolchain BUILD file
-([build/toolchain/BUILD.bazel](toolchain/BUILD.bazel)) consumes.
+The generated `@vs_config//:paths.bzl` exposes `MSVC_TMP`, `PERL`, the toolset
+constants (`MSVC_*`), the SDK constants (`SDK10_*`) and `RC_EXE`. The toolchain
+BUILD file ([build/toolchain/BUILD.bazel](toolchain/BUILD.bazel)) consumes the
+first three groups; scp2 and the `RC.Exe` genrules use the rest. `VS_PATH` and
+`SDK_PATH` are no longer read; delete them from an older `user.bazelrc`.
 
 ---
 
@@ -309,27 +314,17 @@ bazel build //main/sw:sw --compilation_mode=dbg --features=generate_pdb --jobs=1
 
 ### 6.4 The debug CRT requirement
 
-`--compilation_mode=dbg` links against the **debug CRT** (`/MDd`), which needs
-`MSVCR90D.dll` / `MSVCP90D.dll` at runtime. These are *not* on a normal machine's
-WinSxS, so:
+`--compilation_mode=dbg` links against the **debug CRT** (`/MDd`). With the
+VS2019 toolset that is `ucrtbased.dll` and `vcruntime140d.dll` (+
+`msvcp140d.dll`); they are not redistributable and are not staged. A machine with
+the VS2019 Build Tools and the Windows 10 SDK has them; a debug build is for
+such a machine only. They need no manifest.
 
-- Staging copies them from the `@msvc_debug_crt` repository
-  ([build/debug_crt_repo.bzl](debug_crt_repo.bzl)) into `program/`, but **only**
-  under `--compilation_mode=dbg` (selected via `//build:dbg_build`).
-- A private SxS application manifest (`soffice.exe.manifest` +
-  `Microsoft.VC90.DebugCRT.manifest`, see [main/staging/BUILD.bazel](../main/staging/BUILD.bazel))
-  tells Windows to resolve the debug CRT from `program/` instead of WinSxS.
-  Without it you get a runtime **R6034** ("application has made an attempt to
-  load the C runtime library incorrectly").
-
-The debug CRT path itself is derived in
-[build/vs_config_repo.bzl](vs_config_repo.bzl) as
-`VC\redist\Debug_NonRedist\x86\Microsoft.VC90.DebugCRT` (exposed as
-`DEBUG_CRT_DIR`); make sure your VS2008 install actually has that redist folder.
-
-> This debug-CRT staging was written for the retired VC9 toolchains. A VS2019
-> `dbg` build links the VS2019 debug runtime instead, so this path is to be
-> replaced together with the rest of the VC90 runtime staging.
+The VC9-era arrangement — `MSVCR90D.dll`/`MSVCP90D.dll` copied from a VS2008
+install by an `@msvc_debug_crt` repository, plus a private
+`Microsoft.VC90.DebugCRT` assembly manifest — was removed with VS2008; it never
+matched what a VS2019 `/MDd` binary imports. A debug `soffice.exe` gets the same
+application manifest as a release one.
 
 ### 6.5 Running under a debugger
 

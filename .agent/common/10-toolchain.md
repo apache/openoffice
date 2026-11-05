@@ -30,10 +30,19 @@
   `aoo_msvc_vs2008_x64` (the Win64 port, `winXP-x64`), with their platforms,
   configs and the `winxp` constraint value.  32-bit is gone with them.  Two
   things did NOT change: the SOURCE stays C++03-compatible, because AOO 4.1.x
-  takes security backports and still builds with VS2008; and VS2008 + SDK v7.0
-  are still needed on the machine until the leftover VC90-runtime plumbing is
-  removed (vs_config_repo's VS_PATH/SDK_PATH/LINK_WRAPPER/PDB_LINK, the
-  msvcp90 manifests and SDK v7.0 RC.Exe genrules, debug_crt_repo.bzl).
+  takes security backports and still builds with VS2008; and the VC90 runtime
+  is still STAGED (main/external/msvcp90: msvcr90/msvcp90 DLLs, manifests
+  declaring Microsoft.VC90.CRT on soffice.exe, tool exes and a few DLLs) even
+  though nothing links against it any more — a separate cleanup.
+- **VS2008 / SDK v7.0 are no longer needed on the machine** (2026-11-05):
+  vs_config_repo reads neither VS_PATH nor SDK_PATH.  scp2's `cl /EP` uses the
+  VS2019 cl.exe, and every RC.Exe genrule (msvcp90 ×2, bridges ×2, desktop,
+  crashrep) uses `RC_EXE` from @vs_config, the Win10 SDK rc.exe.  Both were
+  checked byte-identical before switching: 94/94 `.par`, every `.res`.  The VC90
+  debug CRT (@msvc_debug_crt, Microsoft.VC90.DebugCRT manifest) is gone; a /MDd
+  build imports ucrtbased/vcruntime140d, which a VS2019 machine has in System32.
+  Sole leftover: winaccessibility's MIDL genrule calls SDK v7.0 midl.exe, and
+  only builds with `--//build:atl_available=True`.
 - The **target platform** picks the toolchain: `//build/platforms:win7-x64`
   (→ x86_64 + `//build/constraints:win7`), the default via `--config=win7-x64`
   in .bazelrc.  `//build/constraints:win_version` stays a dimension of its own,
@@ -88,8 +97,8 @@
   removed tree-wide, so the ceiling is worth re-measuring before it is quoted.
 - No mspdbsrv wrapper: LINK_WRAPPER existed solely because the VC9 linker has
   one mspdbsrv and no /FS (LNK1318 under parallel /DEBUG links).  The modern
-  link.exe links its own PDBs in parallel unaided.  vs_config_repo.bzl still
-  generates LINK_WRAPPER/PDB_LINK; nothing consumes them any more.
+  link.exe links its own PDBs in parallel unaided.  LINK_WRAPPER/PDB_LINK were
+  removed from vs_config_repo.bzl 2026-11-05.
 - windows_cc_toolchain_config.bzl: default_cpp_std disabled (the explicit
   /std:c++14 lives in cxx_flags), remove_unreferenced_code disabled (no /Zc:inline)
 - tool_bin_path (the toolset bin dir, not msvc_env_path) sets PATH for actions
