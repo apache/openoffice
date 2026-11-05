@@ -34,7 +34,7 @@ LngconvexBundleInfo = provider(
     fields = {
         "exe":       "The staged lngconvex.exe File",
         "tools_dir": "execroot-relative directory to set as PATH when running lngconvex",
-        "files":     "All staged File objects (exe + DLLs + manifest)",
+        "files":     "All staged File objects (exe + DLLs)",
     },
 )
 

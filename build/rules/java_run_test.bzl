@@ -1,14 +1,12 @@
 """staged_java_test — run a native-bridge JVM test via an in-process JVM host.
 
-A JNI bridge test loads 32-bit /MD UNO DLLs that need a VC90-CRT activation
-context for every load — including the ones the UNO machinery loads at runtime
-via osl::Module. A stock java.exe provides no such context (R6034). So instead of
-running java.exe directly, this rule runs jni_test_launcher.exe, which carries the
-VC90-CRT manifest embedded and hosts the JVM in-process: its process-default
-activation context covers every UNO DLL the JVM loads.
+This rule runs jni_test_launcher.exe, which hosts the JVM in-process, instead
+of java.exe.  It was introduced for the VS2008 build, whose UNO DLLs needed a
+VC90-CRT activation context that only an embedded launcher manifest could give
+every runtime load (a stock java.exe has none: R6034).  The VS2019 runtime
+needs no activation context; the launcher remains as the JVM host.
 
-The launcher lives inside library_dir (co-located with the UNO DLLs + the CRT SxS
-assembly). The emitted .bat puts the JDK dirs and library_dir on PATH (so jvm.dll
+The launcher lives inside library_dir (co-located with the UNO DLLs). The emitted .bat puts the JDK dirs and library_dir on PATH (so jvm.dll
 and the DLLs' transitive deps resolve) and runs the launcher with the classpath,
 java.library.path and main class. Requires build --enable_runfiles.
 
@@ -62,7 +60,7 @@ staged_java_test = rule(
         ),
         "library_dir": attr.label(
             allow_single_file = True,
-            doc = "native_lib_dir tree artifact: UNO DLLs + CRT SxS assembly + the launcher exe.",
+            doc = "native_lib_dir tree artifact: UNO DLLs + the launcher exe.",
         ),
         "launcher_name": attr.string(
             default = "jni_test_launcher.exe",

@@ -96,18 +96,12 @@ filegroup(
     ],
 )
 
-# Release application manifest for soffice.exe — declares the Microsoft.VC90.CRT
-# dependency so Windows consults SxS/publisher-policy and loads MSVCR90.dll from
-# WinSxS with an activation context (no R6034).  Wrapped in a filegroup because
-# collect_outputs.deps does not accept raw source files.
+# Application manifest for soffice.exe: Common-Controls 6 (visual styles).
+# Wrapped in a filegroup because collect_outputs.deps does not accept raw
+# source files.
 filegroup(
     name = "soffice_app_manifest",
-    srcs = select({
-        # x64 needs an amd64 CRT/assembly manifest — the loader rejects an x86
-        # processorArchitecture manifest against the amd64 msvcr90.dll (0xC000007B).
-        "//build:arch_x64": ["//main/desktop:util/amd64/soffice.exe.manifest"],
-        "//conditions:default": ["//main/desktop:util/soffice.exe.manifest"],
-    }),
+    srcs = ["//main/desktop:util/amd64/soffice.exe.manifest"],
 )
 
 # ── Flat program/ files (DLLs, EXEs, RDBs, ZIPs, .py scripts, .ini) ─────────
@@ -469,26 +463,18 @@ collect_outputs(
         ],
         "//conditions:default": [],
     }) + [
-        # Do NOT bundle app-local CRT DLLs.  Instead stage the
-        # application manifest so soffice.exe declares a Microsoft.VC90.CRT
-        # 9.0.30729.1 dependency.  That manifest is what makes Windows consult
-        # SxS: the installed VC90 publisher policy
-        # (x86_policy.9.0.microsoft.vc90.crt_..._9.0.30729.9635) redirects
-        # 9.0.30729.1 → 9.0.30729.9635, which is present in WinSxS, so MSVCR90.dll
-        # loads WITH an activation context (no R6034).
-        # Without the manifest the loader never consults SxS/policy and searches
-        # MSVCR90.dll only on the plain DLL path (program\, System32, PATH) — it is
-        # in none of those, so the process dies before any window ("no window").
-        # The :soffice cc_binary links /MANIFEST:NO, so this external .manifest is
-        # the only manifest soffice.exe gets.  (A redistributable build for
-        # machines lacking the VC9 redist would additionally ship the CRT as a
-        # program\Microsoft.VC90.CRT\ subfolder private assembly + hash-free
-        # manifest; on a dev box with the redist installed WinSxS covers it.)
-        # The same manifest serves --compilation_mode=dbg: the VS2008 debug CRT
-        # (MSVCR90D, Microsoft.VC90.DebugCRT) once staged for /MDd left with the
-        # VC9 toolchains; a /MDd build now imports the VS2019 debug runtime
-        # (ucrtbased, vcruntime140d), which needs no manifest.  Keeping the
-        # release manifest also keeps Common-Controls 6 (visual styles) on.
+        # soffice.exe's application manifest.  The :soffice cc_binary links
+        # /MANIFEST:NO, so this external .manifest is the only one it gets; it
+        # carries Common-Controls 6 (visual styles) and nothing else.
+        # No C runtime is staged: the VS2019 runtime (vcruntime140, msvcp140,
+        # the UCRT) loads by ordinary DLL search from System32, i.e. it comes
+        # from the VC++ redistributable.  Until 2026-11-05 this manifest also
+        # declared Microsoft.VC90.CRT, which no binary imported any more; on a
+        # machine without the VS2008 redist that dependency alone would keep
+        # soffice.exe from starting (side-by-side configuration error; not
+        # reproduced, the dev machines all have the redist).
+        # The same manifest serves --compilation_mode=dbg, whose /MDd binaries
+        # import the VS2019 debug runtime (ucrtbased, vcruntime140d).
         ":soffice_app_manifest",
     ] + select({
         # C++/UNO bridge, loaded by name from CPPU_ENV: msci_uno.dll on x86,

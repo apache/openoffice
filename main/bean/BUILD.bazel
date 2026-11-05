@@ -47,17 +47,13 @@ uno_jar(
 # __stdcall on Win32, so otherwise they leave as _Java_…@N (same trick as
 # //main/jurt jpipe.def).
 #
-# RT_MANIFEST id 2 IS needed, unlike //main/connectivity:hsqldb.  This DLL is
-# loaded by the EMBEDDING application's JVM — a stock java.exe with no VC90
-# activation context — not by a JVM running inside soffice.exe.  Without its
-# own manifest MSVCR90.dll is unresolvable and System.loadLibrary reports only
-# "Can't find dependent libraries".  Same reason as jpipe/jpipx.
+# This DLL is loaded by the EMBEDDING application's JVM (a stock java.exe), not
+# by a JVM inside soffice.exe.  Built with VS2008 it therefore embedded its own
+# VC90-CRT manifest (RT_MANIFEST id 2); the VS2019 runtime needs none.
 #
 # jawt comes from //build/third_party/jawt, an import library built from the
 # JDK's own header rather than a machine-installed JDK's lib/jawt.lib; see the
 # note there for why a DEF-generated one would be wrong on x86.
-_DLL_MANIFEST_RES = "//main/external/msvcp90:vc90_dll_manifest_res"
-
 cc_binary(
     name = "officebean",
     srcs = [
@@ -71,11 +67,9 @@ cc_binary(
     deps = ["//build/third_party/jawt:jawt_headers"],
     additional_linker_inputs = [
         "//build/third_party/jawt:jawt_implib",
-        _DLL_MANIFEST_RES,
     ],
     linkopts = [
         "$(execpath //build/third_party/jawt:jawt_implib)",
-        "$(execpath %s)" % _DLL_MANIFEST_RES,
         "user32.lib", "/MANIFEST:NO",
     ],
 )

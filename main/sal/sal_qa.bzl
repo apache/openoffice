@@ -62,8 +62,7 @@ def sal_qa_helper_exe(name, srcs, subdir, copts = [], deps = [], linkopts = []):
         defines = _DEFINES,
         deps = _COMMON_DEPS + deps,
         additional_linker_inputs = ["//main/sal:sal_implib"],
-        # /MANIFEST:NO — the staging rule supplies an external <exe>.manifest
-        # for the VC90 CRT, exactly as it does for the test exe itself.
+        # /MANIFEST:NO, as for every other binary: none is needed.
         linkopts = ["$(execpath //main/sal:sal_implib)", "/MANIFEST:NO"] + linkopts,
         testonly = True,
     )

@@ -31,7 +31,7 @@ def _merge_rdb_impl(ctx):
 
     all_to_stage = [ctx.executable._regmerge] + [
         getattr(ctx.file, attr) for attr, _ in _DLL_RENAME
-    ] + ctx.files._crt_dlls
+    ]
 
     staged = {}
     for f in all_to_stage:
@@ -39,13 +39,6 @@ def _merge_rdb_impl(ctx):
         out = ctx.actions.declare_file(ctx.label.name + "_tools/" + dst_name)
         ctx.actions.symlink(output = out, target_file = f)
         staged[dst_name] = out
-
-    # Stage external .manifest for regmerge.exe so Windows finds the VC90 CRT.
-    manifest_out = ctx.actions.declare_file(
-        ctx.label.name + "_tools/regmerge.exe.manifest"
-    )
-    ctx.actions.symlink(output = manifest_out, target_file = ctx.file._app_manifest)
-    staged["regmerge.exe.manifest"] = manifest_out
 
     tools_dir  = staged["regmerge.exe"].dirname
     all_staged = list(staged.values())
@@ -101,16 +94,6 @@ merge_rdb = rule(
         ),
         "_reg_dll": attr.label(
             default           = "//main/registry:reg",
-            allow_single_file = True,
-            cfg               = "exec",
-        ),
-        "_crt_dlls": attr.label(
-            default     = "//main/external/msvcp90:msvcp90",
-            allow_files = True,
-            cfg         = "exec",
-        ),
-        "_app_manifest": attr.label(
-            default           = "//main/external/msvcp90:vc90_app_manifest",
             allow_single_file = True,
             cfg               = "exec",
         ),

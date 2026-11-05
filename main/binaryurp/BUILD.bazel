@@ -120,8 +120,9 @@ gtest_test(
     ],
     # msci_uno/mscx_uno: nothing links it, but cppu osl_loadModule()s the
     # C++↔UNO bridge on demand from any Mapping (getCaughtException, proxy
-    # marshalling).  Unstaged ⇒ a stray copy off PATH loads its CRT outside
-    # this exe's activation context ⇒ R6034 ⇒ exit 0xC0000142.
+    # marshalling).  Unstaged ⇒ the loader takes a stray copy off PATH, from
+    # some other build (with the old VC90 runtime that was R6034 ⇒ exit
+    # 0xC0000142).
     runtime_dlls = [
         "//main/sal:sal3",
         "//main/salhelper:salhelper3MSC",

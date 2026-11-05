@@ -29,26 +29,19 @@ def _javamaker_impl(ctx):
     javamaker = ctx.executable._javamaker
 
     dll_files    = [getattr(ctx.file, attr) for attr, _ in _DLL_RENAME]
-    crt_files    = ctx.files._crt_dlls
-    app_manifest = ctx.file._app_manifest
 
     rename = {}
     for attr, runtime_name in _DLL_RENAME:
         rename[getattr(ctx.file, attr)] = runtime_name
 
     # ── Stage javamaker.exe + all runtime DLLs ───────────────────────────
-    all_to_stage = [javamaker] + dll_files + crt_files
+    all_to_stage = [javamaker] + dll_files
     staged = {}
     for f in all_to_stage:
         dst_name = rename.get(f, f.basename)
         out = ctx.actions.declare_file(ctx.label.name + "_tools/" + dst_name)
         ctx.actions.symlink(output = out, target_file = f)
         staged[dst_name] = out
-
-    # Side-car .manifest so Windows finds the VC90 CRT assembly
-    out = ctx.actions.declare_file(ctx.label.name + "_tools/javamaker.exe.manifest")
-    ctx.actions.symlink(output = out, target_file = app_manifest)
-    staged["javamaker.exe.manifest"] = out
 
     tools_dir  = staged["javamaker.exe"].dirname
     all_staged = list(staged.values())
@@ -128,16 +121,6 @@ javamaker_classes = rule(
         ),
         "_reg_dll": attr.label(
             default           = "//main/registry:reg",
-            allow_single_file = True,
-            cfg               = "exec",
-        ),
-        "_crt_dlls": attr.label(
-            default     = "//main/external/msvcp90:msvcp90",
-            allow_files = True,
-            cfg         = "exec",
-        ),
-        "_app_manifest": attr.label(
-            default           = "//main/external/msvcp90:vc90_app_manifest",
             allow_single_file = True,
             cfg               = "exec",
         ),

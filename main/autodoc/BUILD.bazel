@@ -6,9 +6,8 @@ load("@rules_cc//cc:defs.bzl", "cc_binary")
 # sal/osl, so despite the build.lst ordering dep it links no first-party DLL --
 # only the systemstl shim (gbuild's `stl`).
 #
-# Two consumers, so it carries the VC90-CRT manifest embedded at RT_MANIFEST
-# id 1 (like uno-skeletonmaker/regcompare): the odk gendocu build step runs it,
-# and odk pack/copying ships it in the SDK's bin/.
+# Two consumers: the odk gendocu build step runs it, and odk pack/copying ships
+# it in the SDK's bin/.
 #
 # Not yet wired anywhere: gendocu (odk) is the first consumer and is the next
 # step.  See readme.md.
@@ -100,11 +99,5 @@ cc_binary(
         "WIN32",
     ],
     deps = ["//main/stlport:stlport"],
-    # SDK bin/ tool (and a build tool run without a staged external manifest),
-    # so it embeds its own VC90-CRT activation context.
-    additional_linker_inputs = ["//main/external/msvcp90:vc90_app_manifest_res"],
-    linkopts = [
-        "$(execpath //main/external/msvcp90:vc90_app_manifest_res)",
-        "/MANIFEST:NO",
-    ],
+    linkopts = ["/MANIFEST:NO"],
 )

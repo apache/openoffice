@@ -234,7 +234,7 @@ cc_library(
 # ── tools_pathutils — GoogleTest_tools_pathutils.mk ───────────────
 # Tests tools::buildPath (Windows path-mangling).  buildPath lives in the
 # static ooopathutils lib (pure sal/types.h + <windows.h>, no DLL), so the
-# test links it directly and needs only the VC90 CRT at run time — no tl.dll.
+# test links it directly and needs only the C runtime at run time — no tl.dll.
 # precompiled_tools.hxx (force-included by the source) pulls a wide header set
 # (basegfx/offapi/comphelper/cppuhelper/i18npool/sal), hence the header deps;
 # none are *used* so no runtime symbols are pulled.

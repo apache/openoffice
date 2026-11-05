@@ -120,21 +120,14 @@ cc_binary(
         "//main/sal:sal_headers",
         "//main/stlport:stlport",
     ],
-    # regview is run by a developer (via //build/tools:uno_graph.py), not by a
-    # build action that could stage an external <exe>.manifest beside it, so it
-    # has to carry its own VC90-CRT activation context: the manifest is compiled
-    # to a .res and linked in at RT_MANIFEST id 1.  Without it the /MD CRT is
-    # unresolvable and the process dies 0xC0000135 before main.  Same reasoning
-    # as //main/unodevtools:uno-skeletonmaker.
+    # regview is run by a developer (via //build/tools:uno_graph.py).
     additional_linker_inputs = [
         "//main/sal:sal_implib",
         "//main/registry:reg_implib",
-        "//main/external/msvcp90:vc90_app_manifest_res",
     ],
     linkopts = [
         "$(execpath //main/sal:sal_implib)",
         "$(execpath //main/registry:reg_implib)",
-        "$(execpath //main/external/msvcp90:vc90_app_manifest_res)",
         "/MANIFEST:NO",
     ],
     visibility = ["//visibility:public"],
@@ -144,8 +137,7 @@ cc_binary(
 # Compares two type-library registries; shipped in the SDK's bin/ so a
 # developer can diff an .rdb they generate against a reference.  Mirrors
 # Executable_regcompare.mk (reg + sal + salhelper + stl).  An SDK tool a user
-# runs from where it was installed, so it carries its own VC90-CRT activation
-# context (RT_MANIFEST id 1) exactly like regview and uno-skeletonmaker.
+# runs from where it was installed.
 cc_binary(
     name = "regcompare",
     srcs = [
@@ -167,13 +159,11 @@ cc_binary(
         "//main/sal:sal_implib",
         "//main/salhelper:salhelper_implib",
         "//main/registry:reg_implib",
-        "//main/external/msvcp90:vc90_app_manifest_res",
     ],
     linkopts = [
         "$(execpath //main/sal:sal_implib)",
         "$(execpath //main/salhelper:salhelper_implib)",
         "$(execpath //main/registry:reg_implib)",
-        "$(execpath //main/external/msvcp90:vc90_app_manifest_res)",
         "/MANIFEST:NO",
     ],
     visibility = ["//visibility:public"],

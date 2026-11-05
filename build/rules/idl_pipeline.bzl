@@ -16,9 +16,8 @@ We create a symlink named sal3.dll alongside sal.dll in the staging directory.
 idlc finds ucpp.exe by replacing "idlc" in its own executable path with
 "ucpp.exe", so ucpp must be staged alongside idlc.
 
-The VS2008 CRT DLLs (msvcr90.dll, msvcp90.dll, msvcm90.dll) and their
-manifest are checked in under //main/external/msvcp90 and staged alongside
-the executables so the CRT assembly is found as a local deployment.
+No C runtime is staged: the tools are built with the VS2019 toolset and load
+vcruntime140/the UCRT by ordinary DLL search, which needs no manifest.
 
 IDL compilation strategy — one action per file, mirrored subdirs:
   idlc is called once per .idl file (matching the original dmake/gbuild
@@ -55,8 +54,6 @@ def _idl_library_impl(ctx):
     cppumaker = ctx.executable._cppumaker
 
     dll_files = [getattr(ctx.file, attr) for attr, _ in _DLL_RENAME]
-    crt_files = ctx.files._crt_dlls
-    app_manifest = ctx.file._app_manifest
 
     # Build rename map: source File -> runtime filename
     rename = {}
@@ -66,20 +63,13 @@ def _idl_library_impl(ctx):
     # ── Stage all tools + DLLs into one flat directory ───────────────────
     # ctx.actions.symlink is a pure Bazel operation (hardlink on Windows) —
     # no shell, bash, or cmd.exe involved.
-    all_to_stage = [idlc, ucpp, regmerge, cppumaker] + dll_files + crt_files
+    all_to_stage = [idlc, ucpp, regmerge, cppumaker] + dll_files
     staged = {}
     for f in all_to_stage:
         dst_name = rename.get(f, f.basename)
         out = ctx.actions.declare_file(ctx.label.name + "_tools/" + dst_name)
         ctx.actions.symlink(output = out, target_file = f)
         staged[dst_name] = out
-
-    # Stage an external application manifest for each EXE so Windows finds
-    # the VC90 CRT assembly without needing mt.exe to embed it.
-    for exe in ["idlc.exe", "ucpp.exe", "regmerge.exe", "cppumaker.exe"]:
-        out = ctx.actions.declare_file(ctx.label.name + "_tools/" + exe + ".manifest")
-        ctx.actions.symlink(output = out, target_file = app_manifest)
-        staged[exe + ".manifest"] = out
 
     tools_dir    = staged["idlc.exe"].dirname
     all_staged   = list(staged.values())
@@ -274,16 +264,6 @@ idl_library = rule(
         ),
         "_reg_dll": attr.label(
             default           = "//main/registry:reg",
-            allow_single_file = True,
-            cfg               = "exec",
-        ),
-        "_crt_dlls": attr.label(
-            default     = "//main/external/msvcp90:msvcp90",
-            allow_files = True,
-            cfg         = "exec",
-        ),
-        "_app_manifest": attr.label(
-            default           = "//main/external/msvcp90:vc90_app_manifest",
             allow_single_file = True,
             cfg               = "exec",
         ),

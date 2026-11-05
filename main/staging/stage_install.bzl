@@ -52,27 +52,6 @@ def _stage_install_impl(ctx):
             lines.append("program\t{}\tsoffice.bin".format(f.path))
             break
 
-    # ── program/ — auto-stage vc90_app_manifest as <exe>.manifest ────────────
-    # Any EXE without an explicit .manifest already in the program list gets
-    # the generic VC90 CRT application manifest so Windows activates the SxS
-    # context and MSVCR90.dll loads without r6034.
-    if ctx.files.vc90_app_manifest:
-        app_manifest_src = ctx.files.vc90_app_manifest[0]
-        existing_manifests = {}
-        for f in ctx.files.program:
-            if f.extension == "manifest":
-                existing_manifests[f.basename] = True
-        for f in ctx.files.program:
-            if f.extension == "exe":
-                mname = f.basename + ".manifest"
-                if mname not in existing_manifests:
-                    lines.append("program\t{}\t{}".format(app_manifest_src.path, mname))
-        # soffice.exe and soffice.bin are renamed at staging time
-        if "soffice.exe.manifest" not in existing_manifests:
-            lines.append("program\t{}\tsoffice.exe.manifest".format(app_manifest_src.path))
-        if "soffice.bin.manifest" not in existing_manifests:
-            lines.append("program\t{}\tsoffice.bin.manifest".format(app_manifest_src.path))
-
     # ── program/ — RDB files (filter .rdb from multi-file targets) ───────────
     for f in ctx.files.types_rdb:
         if f.extension == "rdb":
@@ -109,8 +88,7 @@ def _stage_install_impl(ctx):
         ctx.files.offapi_rdb +
         ctx.files.services_rdb +
         ctx.files.ooo_srdb +
-        ctx.files.registry +
-        ctx.files.vc90_app_manifest
+        ctx.files.registry
     )
 
     ctx.actions.run(
@@ -163,13 +141,6 @@ stage_install = rule(
         "registry": attr.label_list(
             allow_files = True,
             doc = "XCD files → share/registry/",
-        ),
-        # Generic VC90 CRT application manifest — auto-staged as <exe>.manifest
-        # for every EXE in program/ that doesn't already have an explicit one.
-        "vc90_app_manifest": attr.label(
-            default       = "//main/external/msvcp90:vc90_app_manifest",
-            allow_files   = True,
-            doc           = "VC90 CRT app manifest staged as <exe>.manifest for EXEs without one",
         ),
         # Tool deps
         "_perl": attr.label(

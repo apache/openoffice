@@ -65,8 +65,6 @@ def _localedata_gen_impl(ctx):
     types_rdb    = ctx.file.types_rdb
     perl         = ctx.file._perl
     wrapper      = ctx.file._run_saxparser
-    crt_files    = ctx.files._crt_dlls
-    app_manifest = ctx.file._app_manifest
 
     rename = {}
     for attr, runtime in _DLL_RENAME:
@@ -76,22 +74,14 @@ def _localedata_gen_impl(ctx):
     bridge_dll = getattr(ctx.file, _BRIDGE_ATTR)
     dll_files.append(bridge_dll)
 
-    # ── Stage saxparser.exe + DLLs + CRT into one flat tools dir ──────────────
-    all_to_stage = [saxparser] + dll_files + crt_files
+    # ── Stage saxparser.exe + DLLs into one flat tools dir ────────────────────
+    all_to_stage = [saxparser] + dll_files
     staged = {}
     for f in all_to_stage:
         dst = rename.get(f, f.basename)
         out = ctx.actions.declare_file(ctx.label.name + "_tools/" + dst)
         ctx.actions.symlink(output = out, target_file = f)
         staged[dst] = out
-
-    # External application manifest so Windows resolves the VC90 CRT assembly
-    # for saxparser.exe without mt.exe embedding (same trick as idl_pipeline).
-    sax_manifest = ctx.actions.declare_file(
-        ctx.label.name + "_tools/saxparser.exe.manifest",
-    )
-    ctx.actions.symlink(output = sax_manifest, target_file = app_manifest)
-    staged["saxparser.exe.manifest"] = sax_manifest
 
     sax_exe    = staged["saxparser.exe"]
     tools_dir  = sax_exe.dirname
@@ -164,16 +154,6 @@ localedata_gen = rule(
         # x64 host it resolves mscx_uno and never pulls the x86-only msci_uno into
         # the exec config.  Staged under its real basename (see _DLL_RENAME).
         "_cpp_uno_bridge": attr.label(default = "//main/bridges:cpp_uno_bridge",     allow_single_file = True, cfg = "exec"),
-        "_crt_dlls": attr.label(
-            default = "//main/external/msvcp90:msvcp90",
-            allow_files = True,
-            cfg = "exec",
-        ),
-        "_app_manifest": attr.label(
-            default = "//main/external/msvcp90:vc90_app_manifest",
-            allow_single_file = True,
-            cfg = "exec",
-        ),
         "_perl": attr.label(
             default = "@strawberry-perl//:perl_exe",
             allow_single_file = True,

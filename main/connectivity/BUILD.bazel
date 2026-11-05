@@ -585,12 +585,6 @@ cc_binary(
 # __stdcall on Win32, so without the DEF they would be exported as _Java_..@N
 # and the JVM could not find them) -- same trick as //main/jurt jpipe.def.
 #
-# No RT_MANIFEST id 2 here, deliberately, and this is the one place the
-# jpipe rule does NOT generalise: jpipe/jpipx are loaded by a stock java.exe
-# that has no VC90 activation context of its own, whereas the JVM that calls
-# these natives runs IN-PROCESS inside soffice.exe (started by javavm/jvmfwk),
-# whose own manifest already covers the whole process.
-#
 # NOT named with a DLLPOSTFIX, unlike every other driver here: version.mk sets
 # HSQLDB_TARGET=hsqldb bare, because the Java side hardcodes the base name in
 # System.loadLibrary("hsqldb") (sdbc_hsqldb NativeLibraries.java).

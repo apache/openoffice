@@ -1,18 +1,15 @@
 ###############################################################################
 # gtest_test — runnable GoogleTest target for the /MD MSVC toolchain.
 #
-# Problem: the custom VS2008 toolchain links /MD and embeds NO manifest, so a
-# bare cc_test .exe cannot launch under `bazel test`:
-#   * its runtime DLLs (sal3.dll, …) and the VC90 CRT (msvcr90.dll) are not
-#     beside the exe — `data` deps land in runfiles SUBDIRS, which the Windows
-#     loader does not search;
-#   * loose msvcr90.dll with no activation context raises R6034.
+# Problem: a bare cc_test .exe cannot launch under `bazel test`, because its
+# runtime DLLs (sal3.dll, …) are not beside the exe — `data` deps land in
+# runfiles SUBDIRS, which the Windows loader does not search.
 #
 # Solution (the test analog of //main/idl:svidl_bundle): stage the exe + all
-# runtime DLLs + the VC90 CRT assembly + an external "<exe>.manifest" into ONE
-# flat directory via ctx.actions.symlink, and make THAT staged exe the test
-# executable.  Co-located DLLs are found; the external manifest supplies the
-# CRT activation context (no R6034).
+# runtime DLLs into ONE flat directory via ctx.actions.symlink, and make THAT
+# staged exe the test executable.  Co-located DLLs are found.  The C runtime
+# (VS2019: vcruntime140 + the UCRT) loads by ordinary DLL search and needs no
+# manifest; the VS2008 toolchains' VC90 CRT assembly + manifests are gone.
 #
 # Usage:
 #   load("//build/rules:gtest_test.bzl", "gtest_test")
@@ -30,17 +27,6 @@
 """Runnable GoogleTest targets for the /MD MSVC toolchain (see header above)."""
 
 load("@rules_cc//cc:defs.bzl", "cc_binary")
-
-_CRT = "//main/external/msvcp90:crt_dlls"
-_APP_MANIFEST = "//main/external/msvcp90:vc90_app_manifest"
-
-# VC90-CRT manifest compiled to a .res, linked into every test exe so it sits in
-# the image at RT_MANIFEST id 1.  The staged external <exe>.manifest below only
-# covers DLLs bound at process start; a test that osl_loadModule()s a UNO DLL
-# later (any cppu Mapping pulls in the C++/UNO bridge on demand) needs the CRT
-# activation context to still apply at that point, or the late load resolves
-# msvcr90 loose → R6034 → DllMain fails → exit 0xC0000142.
-_APP_MANIFEST_RES = "//main/external/msvcp90:vc90_app_manifest_res"
 
 def _windows_relpath(from_dir, to_dir):
     """Backslash relative path from one execroot-relative dir to another.
@@ -273,27 +259,17 @@ def _staged_gtest_test_impl(ctx):
     seen[staged_exe.basename] = True
     staged.append(staged_exe)
 
-    # Runtime DLLs + VC90 CRT (msvcr90/msvcp90/msvcm90 + Microsoft.VC90.CRT.manifest).
+    # Runtime DLLs.
     for f in ctx.files.runtime:
         stage(f)
 
-    # Companion helper exes (e.g. a child process the test spawns by name).
-    # Staged under their own basename + a matching <name>.exe.manifest so they
-    # too satisfy the VC90 CRT activation context when launched.
+    # Companion helper exes (e.g. a child process the test spawns by name),
+    # staged under their own basename.
     for c in ctx.attr.companions:
         cexe = c[DefaultInfo].files_to_run.executable
         co = ctx.actions.declare_file(d + "/" + cexe.basename)
         ctx.actions.symlink(output = co, target_file = cexe)
         staged.append(co)
-        cman = ctx.actions.declare_file(d + "/" + cexe.basename + ".manifest")
-        ctx.actions.symlink(output = cman, target_file = ctx.file.app_manifest)
-        staged.append(cman)
-
-    # External application manifest, named <exe>.manifest, declaring the VC90
-    # CRT dependency so the loader builds an activation context (no R6034).
-    man = ctx.actions.declare_file(d + "/" + ctx.label.name + ".exe.manifest")
-    ctx.actions.symlink(output = man, target_file = ctx.file.app_manifest)
-    staged.append(man)
 
     # A client/server test runs the SAME binary twice, so the background half is
     # staged a second time under its own name.  That is not cosmetic: it is what
@@ -305,9 +281,6 @@ def _staged_gtest_test_impl(ctx):
         srv = ctx.actions.declare_file(d + "/" + server_exe_name)
         ctx.actions.symlink(output = srv, target_file = ctx.executable.binary)
         staged.append(srv)
-        srvman = ctx.actions.declare_file(d + "/" + server_exe_name + ".manifest")
-        ctx.actions.symlink(output = srvman, target_file = ctx.file.app_manifest)
-        staged.append(srvman)
 
     # data_tree — fixture files staged at an EXPLICIT relative path rather than
     # flat by basename (which is all `runtime` can express).  Needed whenever the
@@ -576,7 +549,6 @@ _staged_gtest_test = rule(
         "binary": attr.label(executable = True, cfg = "target", mandatory = True),
         "runtime": attr.label_list(allow_files = True),
         "companions": attr.label_list(cfg = "target"),
-        "app_manifest": attr.label(allow_single_file = True, default = _APP_MANIFEST),
         "run_in_staged_dir": attr.bool(default = False),
         "bin_layout": attr.bool(default = False),
         "office_connection": attr.bool(default = False),
@@ -592,7 +564,7 @@ _staged_gtest_test = rule(
 )
 
 # The staging rule above is NOT gtest-specific: it stages an arbitrary /MD exe +
-# runtime DLLs + VC90 CRT + external manifest into one flat dir and runs it as a
+# runtime DLLs into one flat dir and runs it as a
 # test (pass/fail = process exit code).  Exposed for non-gtest runnable tests,
 # e.g. bridges' inter_libs_exc (a cross-DLL C++ exception smoke test whose exe
 # loads two sibling DLLs and exits 0 iff exception propagation works), and
@@ -658,7 +630,7 @@ def gtest_test(
     test; build time is not a reason to skip wiring something.
 
     companions: helper exes the test spawns by name (a child process). Staged
-    beside the exe with their own external CRT manifest.
+    beside the exe.
 
     bin_layout: stage into "<name>.run/bin" instead of "<name>.run", for suites
     that derive the helper's directory as <parent-of-own-dir>/bin (see the
@@ -685,7 +657,7 @@ def gtest_test(
     $(RUNDIR) / $(PROGRAM) / $(SCRATCH) / $(SCRATCH_URL) — see _TOKENS.
     prerun exists for fixtures that can only be BUILT at run time: a registry a
     UNO tool has to write, for instance, where doing it as a build action would
-    mean bundling that tool with its own CRT manifest and DLL closure, and would
+    mean bundling that tool with its own DLL closure, and would
     bake an absolute bazel-out path into a cached artifact.
     NOTE an env value that the test reads back through rtl::Bootstrap::get()
     goes through macro expansion, so its backslashes must be DOUBLED; one read
@@ -710,20 +682,16 @@ def gtest_test(
         # mangle differently → LNK2019.
         copts = ["/Zc:wchar_t-"] + copts,
         defines = defines,
-        # /MANIFEST:NO keeps the LINKER from generating one; the .res supplies
-        # the manifest as a resource instead (see _APP_MANIFEST_RES).
-        additional_linker_inputs = additional_linker_inputs + [_APP_MANIFEST_RES],
-        linkopts = linkopts + [
-            "$(execpath %s)" % _APP_MANIFEST_RES,
-            "/MANIFEST:NO",
-        ],
+        # /MANIFEST:NO as everywhere else: the exe needs no manifest.
+        additional_linker_inputs = additional_linker_inputs,
+        linkopts = linkopts + ["/MANIFEST:NO"],
         testonly = True,
         **kwargs
     )
     _staged_gtest_test(
         name = name,
         binary = ":" + name + "_bin",
-        runtime = runtime_dlls + data_files + [_CRT],
+        runtime = runtime_dlls + data_files,
         companions = companions,
         run_in_staged_dir = bool(data_files) or bin_layout,
         bin_layout = bin_layout,

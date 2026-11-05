@@ -25,7 +25,6 @@ Step 2 — Rsc2Compile (one action for all .srs):
 Tool staging follows the same pattern as idl_pipeline.bzl:
   - rscpp.exe and rsc2.exe are staged into <name>_tools/ with all DLLs.
   - sal.dll is staged under the name sal3.dll (the LIBRARY name in its DEF).
-  - VS2008 CRT DLLs + a .manifest file are staged alongside each EXE.
   - Images are staged FLAT into the same <name>_tools/ directory so that
     -lip=tools_dir finds them by basename without any subdirectory issues.
   - env = {"PATH": tools_dir} lets the Windows DLL loader find everything.
@@ -96,19 +95,12 @@ def _rsc_res_impl(ctx):
     tools_prefix = ctx.label.name + "_tools/"
     staged = {}
 
-    all_to_stage = [rscpp, rsc2] + [getattr(ctx.file, a) for a, _ in _DLL_RENAME] + ctx.files._crt_dlls
+    all_to_stage = [rscpp, rsc2] + [getattr(ctx.file, a) for a, _ in _DLL_RENAME]
     for f in all_to_stage:
         dst_name = rename.get(f, f.basename)
         out = ctx.actions.declare_file(tools_prefix + dst_name)
         ctx.actions.symlink(output = out, target_file = f)
         staged[dst_name] = out
-
-    # Stage manifests for rscpp.exe and rsc2.exe so Windows finds VS2008 CRT.
-    manifest_src = ctx.file._app_manifest
-    for exe in ["rscpp.exe", "rsc2.exe"]:
-        out = ctx.actions.declare_file(tools_prefix + exe + ".manifest")
-        ctx.actions.symlink(output = out, target_file = manifest_src)
-        staged[exe + ".manifest"] = out
 
     tools_dir = staged["rscpp.exe"].dirname
 
@@ -423,17 +415,6 @@ rsc_res = rule(
         ),
         "_i18nisolang_dll": attr.label(
             default           = "//main/i18npool:i18nisolang1MSC",
-            allow_single_file = True,
-            cfg               = "exec",
-        ),
-        # ── CRT and manifest ─────────────────────────────────────────────
-        "_crt_dlls": attr.label(
-            default     = "//main/external/msvcp90:msvcp90",
-            allow_files = True,
-            cfg         = "exec",
-        ),
-        "_app_manifest": attr.label(
-            default           = "//main/external/msvcp90:vc90_app_manifest",
             allow_single_file = True,
             cfg               = "exec",
         ),

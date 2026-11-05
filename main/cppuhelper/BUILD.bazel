@@ -172,8 +172,8 @@ _QA_LINKOPTS = [
 # cppu::getCaughtException()/throwException() build a Mapping between the C++
 # and UNO environments, and cppu's uno_getMapping osl_loadModule()s the bridge
 # (msci_uno.dll / mscx_uno.dll) on demand.  Omit it and the loader either finds
-# a stray copy elsewhere on PATH — whose CRT then loads outside the exe's
-# activation context → R6034 → DllMain fails → exit 0xC0000142 — or finds
+# a stray copy elsewhere on PATH, from some other build (with the old VC90
+# runtime that was R6034 → DllMain fails → exit 0xC0000142) — or finds
 # nothing, leaving a null mapping that AVs inside dispose().  Same select() as
 # //main/bridges:cppuno_roundtrip_test; the compiled CPPU_ENV picks the match.
 _QA_RUNTIME_DLLS = [

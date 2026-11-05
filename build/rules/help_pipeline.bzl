@@ -125,20 +125,16 @@ help_trees = rule(
 _IDXL_FILES = ["_0.cfs", "_0.cfx", "segments.gen", "segments_2"]
 
 def _stage_helplinker(ctx):
-    """Tool dir: HelpLinker.exe + sal3.dll + CRT + an external manifest.
+    """Tool dir: HelpLinker.exe + sal3.dll and the other tool DLLs.
 
     Returns (helplinker, all staged files)."""
     tools_prefix = ctx.label.name + "_tools/"
     staged = []
     for f, name in [(ctx.executable._helplinker, "HelpLinker.exe")] + \
-                   [(getattr(ctx.file, a), n) for a, n in _TOOL_DLLS] + \
-                   [(f, f.basename) for f in ctx.files._crt_dlls]:
+                   [(getattr(ctx.file, a), n) for a, n in _TOOL_DLLS]:
         out = ctx.actions.declare_file(tools_prefix + name)
         ctx.actions.symlink(output = out, target_file = f)
         staged.append(out)
-    manifest = ctx.actions.declare_file(tools_prefix + "HelpLinker.exe.manifest")
-    ctx.actions.symlink(output = manifest, target_file = ctx.file._app_manifest)
-    staged.append(manifest)
     return staged[0], staged
 
 def _help_module_impl(ctx):
@@ -246,12 +242,6 @@ help_module = rule(
             cfg = "exec",
         ),
         "_sal_dll": attr.label(default = "//main/sal:sal", allow_single_file = True, cfg = "exec"),
-        "_crt_dlls": attr.label(default = "//main/external/msvcp90:msvcp90", allow_files = True, cfg = "exec"),
-        "_app_manifest": attr.label(
-            default = "//main/external/msvcp90:vc90_app_manifest",
-            allow_single_file = True,
-            cfg = "exec",
-        ),
         "_indexer": attr.label(
             default = "//main/l10ntools:HelpIndexerTool_deploy.jar",
             allow_single_file = True,
@@ -345,12 +335,6 @@ help_extension = rule(
             cfg = "exec",
         ),
         "_sal_dll": attr.label(default = "//main/sal:sal", allow_single_file = True, cfg = "exec"),
-        "_crt_dlls": attr.label(default = "//main/external/msvcp90:msvcp90", allow_files = True, cfg = "exec"),
-        "_app_manifest": attr.label(
-            default = "//main/external/msvcp90:vc90_app_manifest",
-            allow_single_file = True,
-            cfg = "exec",
-        ),
         "_indexer": attr.label(
             default = "//main/l10ntools:HelpIndexerTool_deploy.jar",
             allow_single_file = True,

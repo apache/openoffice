@@ -23,11 +23,11 @@
 //
 // Why this exists: the UNO JNI bridge loads its native libraries (java_uno.dll,
 // sal3.dll, ...) at runtime via osl::Module — outside any load-time activation
-// context. Those libraries are 32-bit /MD builds that need a VC90-CRT activation
-// context for every load. A stock java.exe provides none, so loading them raises
-// R6034. This launcher carries the VC90-CRT manifest EMBEDDED (resource id 1),
-// which sets a *process-default* activation context covering every later DLL the
-// JVM loads — exactly how soffice.bin hosts the office JVM.
+// context. Built with VS2008 they needed a VC90-CRT activation context for every
+// load, which a stock java.exe does not provide (R6034), so this launcher carried
+// the VC90-CRT manifest embedded and hosted the JVM in-process.  The VS2019
+// runtime needs no activation context, so the manifest is gone; the launcher
+// stays as the JVM host the test rule drives.
 //
 // Usage: jni_test_launcher <classpath> <java.library.path> <main.class.Name> [args...]
 // jvm.dll is located via PATH (the test launcher sets PATH to the JDK dirs).

@@ -146,18 +146,8 @@ cc_binary(
         "//main/stlport:stlport",
         "//main/udkapi:udkapi_idl_headers",
     ],
-    # The VC90-CRT manifest, compiled to a .res and linked in at RT_MANIFEST
-    # id 1.  Unlike cppumaker/javamaker — build-internal tools whose runner
-    # stages an external <exe>.manifest beside them — this one is an SDK tool a
-    # user runs from wherever it was installed, so it has to carry its own
-    # activation context or the /MD CRT is unresolvable.  Upstream gets the
-    # same effect from solenv, which embeds a manifest in every executable.
-    additional_linker_inputs = [
-        "//main/external/msvcp90:vc90_app_manifest_res",
-    ] + _IMPLIBS,
-    linkopts = [
-        "$(execpath //main/external/msvcp90:vc90_app_manifest_res)",
-    ] + _IMPLIB_LINKOPTS + ["/MANIFEST:NO"],
+    additional_linker_inputs = _IMPLIBS,
+    linkopts = _IMPLIB_LINKOPTS + ["/MANIFEST:NO"],
     visibility = ["//visibility:public"],
 )
 
