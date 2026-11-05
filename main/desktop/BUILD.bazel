@@ -5,6 +5,7 @@ load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
 load("//build/rules:rsc_pipeline.bzl", "rsc_res")
 load("//build/rules:gtest_test.bzl", "gtest_test")
 load("@product_info//:defs.bzl", "SUPD_DEFINE")
+load("@vs_config//:paths.bzl", "RC_EXE")
 
 # ── Common compile settings ───────────────────────────────────────────────────
 _DEFINES = [
@@ -722,11 +723,12 @@ filegroup(
 # #include ooverinfo2.rc).
 #
 # fix_icon_rc.pl regenerates ooverinfo2.rc's entries with MS rc's required
-# "<id> ICON" token order (the upstream "ICON <id>" form makes the strict v7.0
+# "<id> ICON" token order (the upstream "ICON <id>" form made the strict SDK v7.0
 # rc.exe treat the .ico as RT_BITMAP -> RC2170) and skips its stale references to
 # renamed app icons (now ooo3_*_app.ico) that no longer exist.  Original icons,
-# no frame stripping — compiles on the configured v7.0 SDK.  Icon "icons/<f>.ico"
-# paths resolve via rc /I main/sysui/desktop.  RC path mirrors crashrep.
+# no frame stripping.  Icon "icons/<f>.ico" paths resolve via rc /I
+# main/sysui/desktop.  rc.exe is the Windows 10 SDK's (RC_EXE, @vs_config); its
+# .res was byte-identical to the SDK v7.0 one when the switch was made.
 genrule(
     name = "soffice_icon_res",
     srcs = [
@@ -740,7 +742,7 @@ genrule(
         " main/sysui/desktop/icons" +
         " \"$(execpath util/ooverinfo2.rc)\"" +
         " soffice_icons.rc&&" +
-        "set \"_RC=C:\\Program Files\\Microsoft SDKs\\Windows\\v7.0\\Bin\\RC.Exe\"&&" +
+        "set \"_RC=" + RC_EXE + "\"&&" +
         "\"!_RC!\" /nologo /DWIN32" +
         " /I \"main/sysui/desktop\"" +
         " /fo \"$(OUTS)\"" +

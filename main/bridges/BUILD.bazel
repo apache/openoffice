@@ -7,6 +7,7 @@ load("//build/rules:idl_pipeline.bzl", "idl_library")
 load("//build/rules:java_pipeline.bzl", "javamaker_classes", "jar_from_directory", "uno_jar")
 load("//build/rules:native_lib_dir.bzl", "native_lib_dir")
 load("//build/rules:java_run_test.bzl", "staged_java_test")
+load("@vs_config//:paths.bzl", "RC_EXE")
 
 _COPTS = [
     "/Zm500", "/Zc:forScope", "/GR", "/nologo", "/Gs",
@@ -470,7 +471,7 @@ genrule(
     ],
     outs = ["jni_test_launcher.res"],
     cmd_bat = (
-        "set \"_RC=C:\\Program Files\\Microsoft SDKs\\Windows\\v7.0\\Bin\\RC.Exe\"&&" +
+        "set \"_RC=" + RC_EXE + "\"&&" +
         "\"!_RC!\" /nologo /I \"main/external/msvcp90\"" +
         " /fo \"$(OUTS)\" \"$(location test/jni_test_launcher.rc)\""
     ),
@@ -597,7 +598,7 @@ genrule(
     ],
     outs = ["transport_manifest.res"],
     cmd_bat = (
-        "set \"_RC=C:\\Program Files\\Microsoft SDKs\\Windows\\v7.0\\Bin\\RC.Exe\"&&" +
+        "set \"_RC=" + RC_EXE + "\"&&" +
         "\"!_RC!\" /nologo /I \"main/external/msvcp90\"" +
         " /fo \"$(OUTS)\" \"$(location test/java_uno/any/transport.rc)\""
     ),

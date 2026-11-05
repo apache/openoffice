@@ -1,3 +1,5 @@
+load("@vs_config//:paths.bzl", "RC_EXE")
+
 filegroup(
     name = "msvcp90",
     srcs = [":crt_dlls"],
@@ -76,7 +78,7 @@ genrule(
     ],
     outs = ["vc90_app_manifest.res"],
     cmd_bat = (
-        "set \"_RC=C:\\Program Files\\Microsoft SDKs\\Windows\\v7.0\\Bin\\RC.Exe\"&&" +
+        "set \"_RC=" + RC_EXE + "\"&&" +
         "\"!_RC!\" /nologo /I \"main/external/msvcp90\"" +
         " /fo \"$(OUTS)\" \"$(location :vc90_app_manifest_rc)\""
     ),
@@ -104,34 +106,9 @@ genrule(
     ],
     outs = ["vc90_dll_manifest.res"],
     cmd_bat = (
-        "set \"_RC=C:\\Program Files\\Microsoft SDKs\\Windows\\v7.0\\Bin\\RC.Exe\"&&" +
+        "set \"_RC=" + RC_EXE + "\"&&" +
         "\"!_RC!\" /nologo /I \"main/external/msvcp90\"" +
         " /fo \"$(OUTS)\" \"$(location :vc90_dll_manifest_rc)\""
     ),
-    visibility = ["//visibility:public"],
-)
-
-# ── Debug CRT (/MDd, --compilation_mode=dbg) ─────────────────────────────────
-# The debug analog of crt_dlls.  Under --compilation_mode=dbg the toolchain
-# links /MDd, so binaries import MSVCR90D.dll / MSVCP90D.dll / MSVCM90D.dll,
-# which are NOT in System32 or any redistributable.  @msvc_debug_crt copies them
-# from a VS2008 install (empty filegroup when unavailable — see
-# build/debug_crt_repo.bzl).  The private-assembly manifest lets the loader
-# resolve them from the app dir instead of WinSxS.  Mirrors the debug branch of
-# //main/staging:all_files.
-filegroup(
-    name = "debug_crt_dlls",
-    srcs = [
-        "@msvc_debug_crt//:dlls",
-        "Microsoft.VC90.DebugCRT.manifest",
-    ],
-    visibility = ["//visibility:public"],
-)
-
-# Debug analog of vc90_app_manifest: staged as <exe>.exe.manifest beside a /MDd
-# EXE so it declares the Microsoft.VC90.DebugCRT private-assembly dependency.
-filegroup(
-    name = "vc90_debug_app_manifest",
-    srcs = ["vc90_debug_app.manifest"],
     visibility = ["//visibility:public"],
 )

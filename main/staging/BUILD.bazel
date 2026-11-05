@@ -96,29 +96,6 @@ filegroup(
     ],
 )
 
-# ── Debug-mode application manifest ──────────────────────────────────────────
-# When --compilation_mode=dbg, toolchain uses /MDd which requires MSVCR90D.dll.
-# Without an EXE manifest, Windows can't activate the debug CRT SxS assembly
-# and raises R6034.  This manifest declares Microsoft.VC90.DebugCRT as a
-# private assembly dependency so Windows resolves it from program/ instead of
-# WinSxS (which doesn't carry the debug CRT on non-developer machines).
-# Must be paired with Microsoft.VC90.DebugCRT.manifest (from @msvc_debug_crt).
-# It ALSO declares Microsoft.Windows.Common-Controls 6.0.0.0 — same as the release
-# manifest below — to enable visual styles; without it OpenThemeData() returns NULL,
-# IsNativeControlSupported() is FALSE for all controls, and VCL silently uses bitmap
-# radio/checkbox indicators (debug-only divergence from release).
-filegroup(
-    name = "soffice_exe_manifest",
-    srcs = [
-        # EXE application manifest — declares Microsoft.VC90.DebugCRT +
-        # Microsoft.Windows.Common-Controls (visual styles) dependencies.
-        "soffice.exe.manifest",
-        # Private SxS assembly manifest — tells Windows to resolve msvcr90d.dll
-        # and msvcp90d.dll from program\ rather than WinSxS.
-        "Microsoft.VC90.DebugCRT.manifest",
-    ],
-)
-
 # Release application manifest for soffice.exe — declares the Microsoft.VC90.CRT
 # dependency so Windows consults SxS/publisher-policy and loads MSVCR90.dll from
 # WinSxS with an activation context (no R6034).  Wrapped in a filegroup because
@@ -491,18 +468,8 @@ collect_outputs(
             "//main/extensions:oleautobridge.uno",
         ],
         "//conditions:default": [],
-    }) + select({
-        # Debug CRT DLLs (MSVCR90D.dll, MSVCP90D.dll) and private-assembly
-        # manifest — required when the toolchain uses /MDd (--compilation_mode=dbg).
-        # The DLLs are not in System32; the manifest suppresses R6034 by
-        # activating Microsoft.VC90.DebugCRT as a private SxS assembly.
-        # Set MSVC_DEBUG_CRT_PATH in user.bazelrc if VS2008 is not at the
-        # default path (see //build:vs_paths.bzl).
-        "//build:dbg_build": [
-            "@msvc_debug_crt//:dlls",
-            ":soffice_exe_manifest",
-        ],
-        # Release (/MD): do NOT bundle app-local CRT DLLs.  Instead stage the
+    }) + [
+        # Do NOT bundle app-local CRT DLLs.  Instead stage the
         # application manifest so soffice.exe declares a Microsoft.VC90.CRT
         # 9.0.30729.1 dependency.  That manifest is what makes Windows consult
         # SxS: the installed VC90 publisher policy
@@ -517,10 +484,13 @@ collect_outputs(
         # machines lacking the VC9 redist would additionally ship the CRT as a
         # program\Microsoft.VC90.CRT\ subfolder private assembly + hash-free
         # manifest; on a dev box with the redist installed WinSxS covers it.)
-        "//conditions:default": [
-            ":soffice_app_manifest",
-        ],
-    }) + select({
+        # The same manifest serves --compilation_mode=dbg: the VS2008 debug CRT
+        # (MSVCR90D, Microsoft.VC90.DebugCRT) once staged for /MDd left with the
+        # VC9 toolchains; a /MDd build now imports the VS2019 debug runtime
+        # (ucrtbased, vcruntime140d), which needs no manifest.  Keeping the
+        # release manifest also keeps Common-Controls 6 (visual styles) on.
+        ":soffice_app_manifest",
+    ] + select({
         # C++/UNO bridge, loaded by name from CPPU_ENV: msci_uno.dll on x86,
         # mscx_uno.dll on x64.  Each target is target_compatible_with its own
         # arch, so the unused one must not appear in the other arch's deps.

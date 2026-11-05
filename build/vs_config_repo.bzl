@@ -1,10 +1,8 @@
-"""Repository rule that generates VS2008 / Windows SDK path constants.
+"""Repository rule that generates MSVC toolset / Windows SDK path constants.
 
 Override per-machine in user.bazelrc (use forward slashes, double-quote the
 flag value so bazelrc doesn't strip backslashes):
 
-  build --repo_env="VS_PATH=C:/Program Files (x86)/Microsoft Visual Studio 9.0"
-  build --repo_env="SDK_PATH=C:/Program Files/Microsoft SDKs/Windows/v7.0"
   build --repo_env="MSVC_TMP=C:/Users/<you>/AppData/Local/Temp"
   build --repo_env="PERL_PATH=C:/msys64/usr/bin/perl.exe"
   build --repo_env="VS_MODERN_PATH=C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools"
@@ -12,8 +10,13 @@ flag value so bazelrc doesn't strip backslashes):
   build --repo_env="MSVC_TOOLSET_VERSION=14.29.30133"   # optional pin
   build --repo_env="WIN10_SDK_VERSION=10.0.19041.0"     # optional pin
 
-The generated @vs_config//:paths.bzl exposes VS, VC, SDK, MSVC_TMP,
-PERL, DEBUG_CRT_DIR, LINK_WRAPPER, and PDB_LINK.
+The generated @vs_config//:paths.bzl exposes MSVC_TMP and PERL, the toolset
+constants (MSVC_*), the SDK constants (SDK10_*) and RC_EXE, below.
+
+VS2008 (VS_PATH) and SDK v7.0 (SDK_PATH) are no longer read.  They outlived
+the VC9 toolchains (retired 2026-11-01) as scp2's preprocessor, the VC90 debug
+CRT, an mspdbsrv link wrapper and a hard-coded RC.Exe in a few genrules; all of
+those now use the tools below.
 
 ## Modern toolchain discovery (win7 target, M1)
 
@@ -33,7 +36,10 @@ overridable with an explicit version pin:
         bin\\<ver>\\<arch>              (rc.exe, mt.exe)
 
     Exposed as SDK10_VER, SDK10_ROOT, SDK10_INCLUDE (list, in the order they
-    belong on INCLUDE), SDK10_LIB and SDK10_BIN (dicts keyed by arch).
+    belong on INCLUDE), SDK10_LIB and SDK10_BIN (dicts keyed by arch), and
+    RC_EXE: the host-native (x64) rc.exe, in backslash form so a genrule's
+    cmd_bat can run it as-is.  rc.exe output does not depend on the target
+    arch, so there is one.
 
 Version selection is **newest-first by numeric component** (so 14.9 sorts below
 14.29, which a plain string compare gets wrong), restricted to versions that are
@@ -47,41 +53,15 @@ MODERN_MSVC_TOOLSET_NOT_FOUND / WIN10_SDK_NOT_FOUND rather than "" — an empty
 string silently degrades into a valid-looking relative path, while the sentinel
 puts its own name into the first compiler error.
 
-PDB_LINK is a modern MSVC link.exe (auto-discovered under VS_MODERN_PATH).
-The C++ toolchain routes generate_pdb (debug .pdb) links to it instead of
-VC9 link.exe: the VC9 linker's single mspdbsrv cannot write PDBs in parallel
-(LNK1318 0x6BA, no /FS), while a modern link.exe reads the VC9 /Z7 objects
-natively and its mspdbsrv handles parallel PDB writes — so debug builds run
-at full --jobs.  (LLVM lld-link was evaluated and rejected: it cannot write
-PDBs from VC9-era CodeView — "Stream too short".)  Non-PDB links stay on VC9
-link.exe via LINK_WRAPPER, below, so shipped binaries are unchanged.
-
-LINK_WRAPPER is a generated batch file that wraps link.exe and gives every
-link action its own _MSPDBSRV_ENDPOINT_ (derived from the unique per-target
-linker param-file name).  This stops concurrent /DEBUG links from sharing one
-mspdbsrv.exe instance — the shared server falls over under parallelism with
-LNK1318 RPC_S_SERVER_UNAVAILABLE (0x6BA), which is the only reason debug builds
-ever needed --jobs=1.  Routing all links through the wrapper lets debug builds
-run fully parallel.  VS2008/VC9 has no /FS flag (added in VS2013), so the
-per-process endpoint is the only fix available here.
-
-Endpoint isolation prevents shared-server *corruption*, but each isolated link
-must still spawn its own mspdbsrv.exe, and a wide parallel link phase can still
-transiently lose the RPC handshake (LNK1318 0x6BA) when many servers start at
-once.  So the wrapper also retries link.exe on LNK1318 with a linear backoff,
-handing each attempt a *fresh* endpoint (…_a1, _a2, …) so a retry never
-reconnects to a half-dead server from the previous try.  Non-PDB link errors
-(unresolved externals, etc.) are detected and returned immediately without
-wasting retries.  Tunable via LINK_MAX_RETRY / LINK_RETRY_BASE_SEC env vars.
+There is no link.exe wrapper.  The VC9 toolchains needed one (LINK_WRAPPER: a
+private mspdbsrv endpoint per link plus retry on LNK1318, because the VC9 linker
+has one mspdbsrv and no /FS) and borrowed the modern link.exe for their PDB
+links (PDB_LINK).  The modern linker writes its own PDBs in parallel unaided.
 """
 
-_DEFAULT_VS   = "C:\\Program Files (x86)\\Microsoft Visual Studio 9.0"
-_DEFAULT_SDK  = "C:\\Program Files\\Microsoft SDKs\\Windows\\v7.0"
 _DEFAULT_TMP  = "C:\\Temp"
 _DEFAULT_PERL = "C:\\msys64\\usr\\bin\\perl.exe"
-# Modern MSVC (VS2017+/BuildTools) install root.  Two consumers: the win7
-# toolchain proper, and the newer link.exe the VC9 toolchains use for their
-# generate_pdb path (see _find_msvc_toolset / _modern_link / PDB_LINK below).
+# Modern MSVC (VS2017+/BuildTools) install root, for the win7 toolchain.
 _DEFAULT_VS_MODERN = "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools"
 _DEFAULT_WIN10_SDK = "C:\\Program Files (x86)\\Windows Kits\\10"
 
@@ -232,34 +212,14 @@ def _find_win10_sdk(rctx, sdk_root, pin):
         best_key = key
     return best
 
-def _modern_link(toolset, target):
-    """The modern link.exe for `target`, used by the VC9 toolchains' generate_pdb path.
-
-    The VC9 link.exe cannot write PDBs in parallel (single mspdbsrv, no /FS, the
-    LNK1318 bug); LLVM lld-link cannot write PDBs from VC9-era CodeView at all
-    ("Stream too short"). A modern MSVC link.exe reads the VC9 /Z7 objects natively
-    and its mspdbsrv handles parallel PDB writes, so the generate_pdb link path
-    uses it. Returns a placeholder if none is found (only breaks generate_pdb builds).
-    """
-    if toolset == None:
-        return "modern_link_not_found.bat"
-    return toolset.bin[target] + "/link.exe"
-
 def _vs_config_impl(rctx):
-    vs   = rctx.os.environ.get("VS_PATH",   _DEFAULT_VS)
-    sdk  = rctx.os.environ.get("SDK_PATH",  _DEFAULT_SDK)
     tmp  = rctx.os.environ.get("MSVC_TMP",  _DEFAULT_TMP)
     perl = rctx.os.environ.get("PERL_PATH", _DEFAULT_PERL)
     vs_modern = rctx.os.environ.get("VS_MODERN_PATH", _DEFAULT_VS_MODERN)
     sdk10 = rctx.os.environ.get("WIN10_SDK_PATH", _DEFAULT_WIN10_SDK)
-    vc   = vs + "\\VC"
 
     toolset = _find_msvc_toolset(rctx, vs_modern, rctx.os.environ.get("MSVC_TOOLSET_VERSION"))
     sdk10_found = _find_win10_sdk(rctx, sdk10, rctx.os.environ.get("WIN10_SDK_VERSION"))
-
-    pdb_link = _modern_link(toolset, "x86")
-    pdb_link_x64 = _modern_link(toolset, "x64")
-    debug_crt = vc + "\\redist\\Debug_NonRedist\\x86\\Microsoft.VC90.DebugCRT"
 
     def q(p):
         return p.replace("\\", "\\\\")
@@ -269,69 +229,6 @@ def _vs_config_impl(rctx):
 
     def q_dict(d, value_fmt):
         return "{" + ", ".join(['"{}": {}'.format(k, value_fmt(d[k])) for k in sorted(d)]) + "}"
-
-    # link.exe wrapper: per-action _MSPDBSRV_ENDPOINT_ so concurrent /DEBUG links
-    # each get a private mspdbsrv.exe instead of sharing one (LNK1318 0x6BA), plus
-    # a bounded retry-with-backoff on LNK1318 (fresh endpoint per attempt) for the
-    # residual "server unavailable" that isolation alone can't prevent.
-    # The endpoint is derived from the linker @param-file name (unique per target,
-    # always on the command line); falls back to %RANDOM% if no @file is present.
-    # Output is captured so we can tell a transient PDB failure (retry) from a real
-    # link error (return immediately).  Dynamic wait grows linearly per attempt.
-    link_exe = vc + "\\bin\\link.exe"
-    bat = "\r\n".join([
-        "@echo off",
-        "setlocal enabledelayedexpansion",
-        # The action PATH is just VC\\bin; findstr/ping (used below for the LNK1318
-        # retry classifier and its backoff) live in System32 — put it on PATH.
-        # Appended, so the VC9 toolchain binaries still take precedence.
-        "set \"PATH=%PATH%;%SystemRoot%\\System32\"",
-        "set \"ep=\"",
-        "for %%A in (%*) do (",
-        "  set \"arg=%%A\"",
-        "  if \"!arg:~0,1!\"==\"@\" set \"ep=!arg!\"",
-        ")",
-        "if not defined ep set \"ep=%RANDOM%%RANDOM%\"",
-        "set \"ep=!ep:@=!\"",
-        "set \"ep=!ep:\\=_!\"",
-        "set \"ep=!ep:/=_!\"",
-        "set \"ep=!ep:.=_!\"",
-        "set \"ep=!ep::=_!\"",
-        # Tunables (override via --action_env at build time), with sane defaults.
-        "if not defined LINK_MAX_RETRY set \"LINK_MAX_RETRY=5\"",
-        "if not defined LINK_RETRY_BASE_SEC set \"LINK_RETRY_BASE_SEC=2\"",
-        # Log name MUST be unique per concurrent link.  %RANDOM% is clock-seeded, so
-        # links launched in the same tick (e.g. the 7 applauncher EXEs) collided on
-        # one log path → the second '>' redirect hit ERROR_SHARING_VIOLATION and the
-        # link never ran ("output X was not created").  !ep! is derived from the
-        # per-target @param-file name, so it is unique across concurrent targets.
-        "set \"log=%TEMP%\\bzl_link_!ep!.log\"",
-        "set \"n=0\"",
-        ":retry",
-        "set /a n+=1",
-        # Fresh endpoint each attempt so a retry spawns a brand-new mspdbsrv.exe
-        # instead of reconnecting to a hung/half-dead one from the previous try.
-        "set \"_MSPDBSRV_ENDPOINT_=bzl_!ep!_a!n!\"",
-        "\"" + link_exe + "\" %* > \"!log!\" 2>&1",
-        "set \"rc=!ERRORLEVEL!\"",
-        "if !rc! equ 0 goto done",
-        # Only LNK1318 (PDB RPC) is transient; anything else is a real failure.
-        "findstr /c:\"LNK1318\" \"!log!\" >nul",
-        "if errorlevel 1 goto done",
-        "if !n! geq !LINK_MAX_RETRY! goto done",
-        "set /a wait=!n!*!LINK_RETRY_BASE_SEC!",
-        "set /a pings=!wait!+1",
-        "echo [msvc_link] LNK1318 PDB RPC error; retry !n!/!LINK_MAX_RETRY! after !wait!s (endpoint bzl_!ep!_a!n!)>&2",
-        "ping -n !pings! 127.0.0.1 >nul",
-        "goto retry",
-        ":done",
-        "type \"!log!\"",
-        "del \"!log!\" >nul 2>&1",
-        "exit /b !rc!",
-        "",
-    ])
-    rctx.file("msvc_link.bat", bat)
-    link_wrapper = str(rctx.path("msvc_link.bat"))
 
     # ── modern MSVC toolset (win7 target) ───────────────────────────────────
     if toolset != None:
@@ -348,8 +245,7 @@ def _vs_config_impl(rctx):
     else:
         modern = [
             "# No modern MSVC toolset found under VS_MODERN_PATH — the win7 toolchain",
-            "# cannot resolve, and generate_pdb links on the VC9 toolchains fall back to",
-            "# a placeholder.  Set --repo_env=VS_MODERN_PATH in user.bazelrc.",
+            "# cannot resolve.  Set --repo_env=VS_MODERN_PATH in user.bazelrc.",
             'MSVC_TOOLSET_VER = "{}"'.format(_NO_TOOLSET),
             'MSVC_TOOLSET     = "{}"'.format(_NO_TOOLSET),
             'MSVC_HOST        = "{}"'.format(_NO_TOOLSET),
@@ -369,6 +265,7 @@ def _vs_config_impl(rctx):
             "SDK10_INCLUDE = {}".format(q_list(sdk10_found.include)),
             "SDK10_LIB     = {}".format(q_dict(sdk10_found.lib, q_list)),
             "SDK10_BIN     = {}".format(q_dict(sdk10_found.bin, lambda v: '"{}"'.format(q(v)))),
+            'RC_EXE        = "{}"'.format(q(sdk10_found.bin["x64"].replace("/", "\\") + "\\rc.exe")),
         ]
     else:
         kit = [
@@ -380,20 +277,15 @@ def _vs_config_impl(rctx):
             "SDK10_INCLUDE = {}".format(q_list([_NO_SDK10])),
             "SDK10_LIB     = {}".format(q_dict({a: [_NO_SDK10] for a in _ARCHES}, q_list)),
             "SDK10_BIN     = {}".format(q_dict({a: _NO_SDK10 for a in _ARCHES}, lambda v: '"{}"'.format(v))),
+            'RC_EXE        = "{}"'.format(_NO_SDK10),
         ]
 
     content = "\n".join([
         "# Auto-generated by //build:vs_config_repo.bzl — do not edit.",
-        "# Set VS_PATH / SDK_PATH / MSVC_TMP / PERL_PATH via --repo_env in user.bazelrc.",
-        'VS       = "{}"'.format(q(vs)),
-        'VC       = "{}"'.format(q(vc)),
-        'SDK      = "{}"'.format(q(sdk)),
+        "# Set MSVC_TMP / PERL_PATH / VS_MODERN_PATH / WIN10_SDK_PATH via --repo_env",
+        "# in user.bazelrc.",
         'MSVC_TMP = "{}"'.format(q(tmp)),
         'PERL     = "{}"'.format(q(perl)),
-        'DEBUG_CRT_DIR = "{}"'.format(q(debug_crt)),
-        'LINK_WRAPPER = "{}"'.format(q(link_wrapper)),
-        'PDB_LINK = "{}"'.format(q(pdb_link)),
-        'PDB_LINK_X64 = "{}"'.format(q(pdb_link_x64)),
         "",
     ] + modern + [""] + kit + [""])
     rctx.file("paths.bzl", content)
@@ -402,8 +294,6 @@ def _vs_config_impl(rctx):
 vs_config_repo = repository_rule(
     implementation = _vs_config_impl,
     environ = [
-        "VS_PATH",
-        "SDK_PATH",
         "MSVC_TMP",
         "PERL_PATH",
         "VS_MODERN_PATH",

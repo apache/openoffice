@@ -3,6 +3,7 @@ package(default_visibility = ["//visibility:public"])
 load("@rules_cc//cc:defs.bzl", "cc_binary")
 load("//build/rules:lngconvex_rule.bzl", "lngconvex_rc")
 load("@product_info//:defs.bzl", "SUPD_DEFINE")
+load("@vs_config//:paths.bzl", "MSVC_INCLUDE", "RC_EXE", "SDK10_INCLUDE")
 
 # ── versionlist.hrc — parsed from version.lst ────────────────────────────────
 # version.hrc (pulled into soreport.rc via rcheader.txt) does
@@ -36,12 +37,22 @@ lngconvex_rc(
 )
 
 # ── soreport.res — Windows resource binary compiled by RC.Exe ────────────────
-# RC.Exe needs three include directories:
-#   1. Windows SDK Include  — for <winresrc.h> and <winver.h>
-#   2. main/solenv/inc      — for version.hrc and verinfo.hrc
-#   3. main/crashrep/source/win32  — for resource.h (quoted include in rcheader.txt)
-# versionlist.hrc (generated above) is placed in $(RULEDIR) which is added last
+# RC.Exe needs these include directories:
+#   1. Windows SDK include trees — for <winresrc.h> and <winver.h>
+#   2. the MSVC toolset include  — for sal.h, which is not in the SDK (dmake
+#      inherited it through the INCLUDE that vcvarsall.bat set)
+#   3. main/solenv/inc      — for version.hrc and verinfo.hrc
+#   4. main/crashrep/source/win32  — for resource.h (quoted include in rcheader.txt)
+# versionlist.hrc (generated above) is placed in $(RULEDIR) which is added first
 # so it shadows the non-existent copy in solenv/inc that version.hrc looks for.
+# rc.exe and the include trees are the Windows 10 SDK's and the VS2019 toolset's
+# (@vs_config); the .res was byte-identical to the SDK v7.0 / VS2008 one when the
+# switch was made.
+_RC_SYS_INCLUDES = "".join([
+    " /I \"" + d.replace("/", "\\") + "\""
+    for d in SDK10_INCLUDE + [MSVC_INCLUDE]
+])
+
 genrule(
     name = "soreport_res",
     srcs = [
@@ -53,19 +64,14 @@ genrule(
     ],
     outs = ["soreport.res"],
     cmd_bat = (
-        "set \"_RC=C:\\Program Files\\Microsoft SDKs\\Windows\\v7.0\\Bin\\RC.Exe\"&&" +
-        "set \"_SDK_INC=C:\\Program Files\\Microsoft SDKs\\Windows\\v7.0\\Include\"&&" +
-        # sal.h lives in VC/include, not in the SDK — dmake inherited it via
-        # the INCLUDE env var set by vcvarsall.bat; pass it explicitly here.
-        "set \"_VC_INC=C:\\Program Files (x86)\\Microsoft Visual Studio 9.0\\VC\\include\"&&" +
+        "set \"_RC=" + RC_EXE + "\"&&" +
         "set \"_SOLENV=main/solenv/inc\"&&" +
         "set \"_CR_INC=main/crashrep/source/win32\"&&" +
         # versionlist.hrc lives in $(RULEDIR); RC.exe searches /I paths in order,
         # so list $(RULEDIR) before _SOLENV so it finds the generated file.
         "\"!_RC!\" /nologo /DWIN32" +
         " /I \"$(RULEDIR)\"" +
-        " /I \"!_SDK_INC!\"" +
-        " /I \"!_VC_INC!\"" +
+        _RC_SYS_INCLUDES +
         " /I \"!_SOLENV!\"" +
         " /I \"!_CR_INC!\"" +
         " /fo \"$(OUTS)\"" +

@@ -11,29 +11,26 @@ Pipeline:
 cl.exe is invoked directly (not through a Perl wrapper) using /P /EP /Fi
 so that preprocessed output goes to a file without needing stdout capture.
 Perl and cl.exe paths come from @vs_config//:paths.bzl.
+
+cl.exe is only the C preprocessor here (/EP), so it is the modern toolset's,
+the same one the win7-x64 toolchain compiles with: the host-native x64 cl.exe,
+whose companions (c1.dll, mspdb140.dll, ...) sit in its own bin directory.  The
+.scp sources include nothing from the toolset or the SDK — only main/scp2/inc
+and the generated langmacros.inc — so INCLUDE is set for completeness, not need.
 """
 
-load("@vs_config//:paths.bzl", "PERL", "SDK", "VC", "VS")
+load("@vs_config//:paths.bzl", "MSVC_BIN", "MSVC_INCLUDE", "PERL", "SDK10_INCLUDE")
 
 # Absolute paths (forward slashes, constructed at load time from @vs_config).
 _PERL = PERL.replace("\\", "/")
-_CL   = VC.replace("\\", "/") + "/bin/cl.exe"
+_CL   = MSVC_BIN["x64"] + "/cl.exe"
 
 # INCLUDE semicolon-list for cl.exe (set as env var INCLUDE for the action).
-_MSVC_INCLUDE = (
-    VC.replace("\\", "/") + "/INCLUDE;" +
-    VC.replace("\\", "/") + "/ATLMFC/INCLUDE;" +
-    SDK.replace("\\", "/") + "/include"
-)
+_MSVC_INCLUDE = ";".join([MSVC_INCLUDE] + SDK10_INCLUDE)
 
-# PATH for cl.exe actions — mirrors the toolchain's msvc_env_path so cl.exe
-# finds mspdb90.dll (in Common7/IDE) and other VS companions at runtime.
-_MSVC_ENV_PATH = (
-    SDK.replace("\\", "/") + "/bin;" +
-    VS.replace("\\", "/")  + "/Common7/IDE;" +
-    VC.replace("\\", "/")  + "/bin;" +
-    VS.replace("\\", "/")  + "/Common7/Tools"
-)
+# PATH for cl.exe actions: scp_preprocess.pl starts cl.exe by name through
+# cmd.exe, and the toolset bin directory also carries its DLL companions.
+_MSVC_ENV_PATH = MSVC_BIN["x64"]
 
 # Preprocessor defines (without -D prefix; the rule adds -D per entry).
 _SCPDEFS = [
@@ -165,8 +162,8 @@ def _scp_module_impl(ctx):
         # ── Step 1: scp_preprocess.pl → cl.exe /EP /Tc → .pre ────────────────
         # The Perl wrapper invokes cl.exe by name (not full path) via cmd.exe,
         # sidestepping MSYS2 fork/exec failures for space-containing PE paths.
-        # PATH = _MSVC_ENV_PATH ensures cmd.exe finds cl.exe in VC\bin and
-        # that cl.exe's DLL companions (c1.dll, mspdb90.dll, etc.) are on PATH.
+        # PATH = _MSVC_ENV_PATH ensures cmd.exe finds cl.exe in the toolset bin
+        # directory, which also holds its DLL companions (c1.dll, mspdb140.dll).
         pre = ctx.actions.declare_file(stem + ".pre")
         ctx.actions.run(
             executable = ctx.attr.perl_exe,
