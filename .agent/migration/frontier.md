@@ -46,13 +46,30 @@ trunk         ✅  bazel-trunk-sync is at origin/trunk 2c760c133d (2026-11-03),
                    trunk-worthy: any read-only install would hit it).
                    Workaround: attrib -R /S /D "%APPDATA%\OpenOffice\5bazel\user\*".
 
+── Toolchain: VS2008 gone from the machine and the output ──────────────
+vs2008        ✅  2026-11-05, //main/staging:install green on win7-x64.
+                   6035bc55d0: nothing reads a VS2008 / SDK v7.0 install any more —
+                   scp2 `cl /EP` is the VS2019 cl (94/94 .par byte-identical), every
+                   RC.Exe genrule runs RC_EXE = the Win10 SDK rc.exe (every .res
+                   byte-identical), VC90 debug CRT + debug_crt_repo.bzl gone,
+                   vs_config_repo drops VS_PATH/SDK_PATH/LINK_WRAPPER/PDB_LINK*.
+                   884169dd8f: the VC90 runtime layer is gone — no msvcr90 staging,
+                   no Microsoft.VC90.CRT manifest on any exe/dll, no
+                   //main/external/msvcp90 BUILD.  Evidence first: dumpbin
+                   /dependents over 291 staged VS2019 binaries, zero msvc?90 imports.
+                   soffice.exe keeps one manifest: Common-Controls 6 (visual styles).
+                   STILL TO CHECK: `bazel test //main/...` (test exes lost their
+                   embedded manifest) and a boot with themed checkboxes.
+                   LEFT: winaccessibility MIDL calls SDK v7.0 midl.exe (ATL opt-in
+                   only); the VS2019 runtime is not staged (VC++ redist supplies it).
+
 ── Active: test coverage for already-migrated modules ───────────────────
 test          🔨  C++ unit-test infra runnable — NOW THE FRONT-LINE TASK: bring up
                    per-module qa/ tests across every ALREADY-MIGRATED module and keep
                    them green as the migration proceeds (regression net for the rest).
                    @gtest 1.7.0 bzlmod wrap (built /Zc:wchar_t- to match sal_Unicode);
                    build/rules/gtest_test.bzl (svidl_bundle analog: stages /MD exe +
-                   DLLs + CRT + external manifest into one dir or R6034); libtest
+                   DLLs into one dir; VC90 CRT + manifest dropped 2026-11-05); libtest
                    (test.dll) builds.  GREEN: o3tl_test (5), tools_pathutils,
                    //main/sal:sal_tests (22) via sal_qa_test macro, salhelper_test,
                    comphelper_test_string + comphelper_test_weakbag, sax_test_converter,
