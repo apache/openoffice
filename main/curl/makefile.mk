@@ -37,9 +37,15 @@ all:
 
 # --- Files --------------------------------------------------------
 
+.IF "$(GUI)"=="WNT"
+# curl 8.23.0 has no winbuild/ directory, so Windows stays on 8.7.1 for now.
 TARFILE_NAME=curl-8.7.1
 TARFILE_MD5=92f7a11836678b725e2cb59fef10c273
 PATCH_FILES=curl-wnt.patch
+.ELSE
+TARFILE_NAME=curl-8.23.0
+TARFILE_MD5=d45ab886d8224c77c91d7161ddc179c1
+.ENDIF
 
 #ADDITIONAL_FILES= lib$/config-os2.h lib$/Makefile.os2
 
@@ -69,10 +75,20 @@ curl_LDFLAGS+=-L$(SOLARLIBDIR)
 PATCH_FILES+= curl-bundled_openssl.patch
 .ENDIF
 
+.IF "$(OS)"=="MACOSX" && "$(SYSTEM_ZLIB)"!="YES"
+# curl probes for -lz, but the bundled zlib is delivered as libzlib.a, so
+# give configure a private prefix where it has the names it expects.
+ZLIB_SHIM=$(shell @pwd)$/$(INPATH)$/misc$/zlib-shim
+zlib_prep=mkdir -p $(ZLIB_SHIM)/include $(ZLIB_SHIM)/lib && ln -sf $(SOLARINCDIR)/external/zlib/zlib.h $(ZLIB_SHIM)/include/zlib.h && ln -sf $(SOLARINCDIR)/external/zlib/zconf.h $(ZLIB_SHIM)/include/zconf.h && ln -sf $(SOLARLIBDIR)/libzlib.a $(ZLIB_SHIM)/lib/libz.a &&
+# The bundled zlib has no gz*.c, which configure probes for (gzread); curl
+# itself only uses the inflate/deflate calls.
+zlib_param=--with-zlib=$(ZLIB_SHIM) ac_cv_lib_z_gzread=yes
+.ENDIF
+
 CONFIGURE_DIR=.$/
 #relative to CONFIGURE_DIR
-CONFIGURE_ACTION=.$/configure
-CONFIGURE_FLAGS= $(ssl_param) --without-libidn --enable-ftp --enable-ipv6 --enable-http --disable-gopher --disable-file --disable-ldap --disable-telnet --disable-dict --disable-static CPPFLAGS="$(curl_CFLAGS)"  LDFLAGS="$(curl_LDFLAGS)"
+CONFIGURE_ACTION=$(zlib_prep) .$/configure
+CONFIGURE_FLAGS= $(ssl_param) $(zlib_param) --without-iconv --without-libidn2 --without-libpsl --without-nghttp2 --without-nghttp3 --without-ngtcp2 --without-quiche --without-brotli --without-zstd --without-libssh2 --without-libssh --enable-ftp --enable-ipv6 --enable-http --disable-gopher --disable-file --disable-ldap --disable-telnet --disable-dict --disable-static CPPFLAGS="$(curl_CFLAGS)"  LDFLAGS="$(curl_LDFLAGS)"
 
 BUILD_DIR=$(CONFIGURE_DIR)$/lib
 BUILD_ACTION=$(GNUMAKE)

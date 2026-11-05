@@ -113,6 +113,15 @@ APP5STDLIBS = $(SALLIB) $(SOFFICELIB)
 APP5STDLIBS+= -lXext -lX11
 #APP5STDLIBS+= -lXext -lSM -lICE
 .ENDIF # LINUX
+.IF "$(ENABLE_JEMALLOC)" == "YES"
+# Must be linked into the executable itself to replace malloc process-wide.
+# --no-as-needed: the executable names no jemalloc symbol, so a default
+# --as-needed link would drop the dependency.
+.IF "$(OS)" == "LINUX"
+APP5STDLIBS+= -Wl,--no-as-needed
+.ENDIF
+APP5STDLIBS+= -ljemalloc
+.ENDIF
 
 APP5DEPN= $(APP1TARGETN) $(APP5RES) ooverinfo.rc
 APP5DEF=    $(MISCX)$/$(TARGET).def

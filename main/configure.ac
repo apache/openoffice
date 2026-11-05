@@ -936,6 +936,12 @@ AC_ARG_WITH(alloc,
 
                           Note that on FreeBSD/NetBSD system==jemalloc
 ],,)
+AC_ARG_ENABLE(jemalloc,
+[  --enable-jemalloc       Download, build and bundle jemalloc and use it as the
+                          allocator (Linux and macOS only). Use
+                          --with-alloc=jemalloc instead to link a jemalloc
+                          already installed on the system.
+],,)
 AC_ARG_ENABLE(verbose,
 [  --enable-verbose        Increase build verbosity.
   --disable-verbose       Decrease build verbosity.
@@ -3474,6 +3480,20 @@ dnl ===================================================================
 dnl allocator
 dnl ===================================================================
 AC_MSG_CHECKING([which memory allocator to use])
+if test "$enable_jemalloc" = "yes"; then
+    case "$_os" in
+    Linux|Darwin) ;;
+    *) AC_MSG_ERROR([--enable-jemalloc is only supported on Linux and macOS]) ;;
+    esac
+    if test -n "$with_alloc" -a "$with_alloc" != "jemalloc"; then
+        AC_MSG_ERROR([--enable-jemalloc cannot be combined with --with-alloc=$with_alloc])
+    fi
+    AC_MSG_RESULT([jemalloc (bundled)])
+    ALLOC="JEMALLOC"
+    ENABLE_JEMALLOC=YES
+    BUILD_TYPE="$BUILD_TYPE JEMALLOC"
+    with_alloc="bundled-jemalloc"
+fi
 if test "$with_alloc" = "system"; then
     AC_MSG_RESULT([system])
     ALLOC="SYS_ALLOC";
@@ -3507,6 +3527,7 @@ if test "$with_alloc" = "internal" -o -z "$with_alloc"; then
    AC_MSG_RESULT([internal])
 fi
 AC_SUBST(ALLOC)
+AC_SUBST(ENABLE_JEMALLOC)
 
 dnl ===================================================================
 dnl Custom build version
@@ -4347,9 +4368,6 @@ AC_SUBST(SYSTEM_STDLIBS)
 dnl ===================================================================
 dnl Check for system zlib
 dnl ===================================================================
-if test "$_os" = "Darwin" && test "$with_system_zlib" != "no"; then
-   with_system_zlib=yes
-fi
 AC_MSG_CHECKING([which zlib to use])
 if test -n "$with_system_zlib" -o -n "$with_system_libs" && \
 	test "$with_system_zlib" != "no"; then
@@ -4456,8 +4474,7 @@ dnl ===================================================================
 dnl Check for system libxslt
 dnl ===================================================================
 AC_MSG_CHECKING([which libxslt to use])
-if test -n "$with_system_libxslt" -o -n "$with_system_libs" -o \
-       "$_os" = "Darwin" && \
+if test -n "$with_system_libxslt" -o -n "$with_system_libs" && \
    test "$with_system_libxslt" != "no"; then
    AC_MSG_RESULT([external])
    SYSTEM_LIBXSLT=YES
@@ -4504,8 +4521,7 @@ dnl ===================================================================
 dnl Check for system libxml
 dnl ===================================================================
 AC_MSG_CHECKING([which libxml to use])
-if test -n "$with_system_libxml" -o -n "$with_system_libs" -o \
-            "$_os" = "Darwin" && \
+if test -n "$with_system_libxml" -o -n "$with_system_libs" && \
 	test "$with_system_libxml" != "no"; then
     AC_MSG_RESULT([external])
     SYSTEM_LIBXML=YES
@@ -4648,7 +4664,9 @@ dnl ===================================================================
 dnl Check for system python
 dnl ===================================================================
 AC_MSG_CHECKING([which python to use])
-if test "$_os" = "Darwin" && test "$with_system_python" != "no"; then
+if test "$_os" = "Darwin" && \
+   test -n "$with_system_python" -o -n "$with_system_libs" && \
+   test "$with_system_python" != "no"; then
    with_system_python=yes
 
    dnl Recent macOS releases no longer ship a usable Python under /usr/bin,
@@ -5209,14 +5227,7 @@ AC_SUBST(COINMP_LIBS)
 dnl ===================================================================
 dnl Check for system curl
 dnl ===================================================================
-dnl Darwin always treats curl as external (see the "-o \"$_os\" = \"Darwin\""
-dnl clause below), regardless of whether --with-system-curl was actually
-dnl given a directory -- capture the as-given value first, before it gets
-dnl forced to a bare "yes", so a real --with-system-curl=DIR isn't lost.
 with_system_curl_dir="$with_system_curl"
-if test "$_os" = "Darwin" && test "$with_system_curl" != "no"; then
-   with_system_curl=yes
-fi
 AC_MSG_CHECKING([which curl to use])
 if test -n "$with_system_curl" -o -n "$with_system_libs" && \
 	test "$with_system_curl" != "no"; then

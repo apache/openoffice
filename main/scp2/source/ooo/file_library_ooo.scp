@@ -227,6 +227,21 @@ End
 
 #endif
 
+#ifdef ENABLE_JEMALLOC
+
+File gid_File_Lib_Jemalloc
+    TXT_FILE_BODY;
+    Styles = (PACKED);
+    Dir = SCP2_OOO_BIN_DIR;
+  #ifdef MACOSX
+    Name = STRING(CONCAT2(libjemalloc.2,UNXSUFFIX));
+  #else
+    Name = STRING(CONCAT3(libjemalloc,UNXSUFFIX,.2));
+  #endif
+End
+
+#endif
+
 #ifdef UNX
 #ifdef ENABLE_GTK
 #ifdef ENABLE_SYSTRAY_GTK

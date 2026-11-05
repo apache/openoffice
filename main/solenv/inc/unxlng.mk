@@ -214,7 +214,7 @@ STDSHLGUIMT+=-ltcmalloc
 STDSHLCUIMT+=-ltcmalloc
 .ENDIF
 
-.IF "$(ALLOC)" == "JEMALLOC"
+.IF "$(ALLOC)" == "JEMALLOC" && "$(ENABLE_JEMALLOC)" != "YES"
 STDLIBGUIMT+=-ljemalloc
 STDLIBCUIMT+=-ljemalloc
 STDSHLGUIMT+=-ljemalloc

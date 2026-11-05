@@ -1,0 +1,23 @@
+--- misc/build/Python-3.11.15/setup.py
++++ misc/build/Python-3.11.15/setup.py
+@@ -844,12 +844,8 @@
+                         add_dir_to_list(dir_list, directory)
+ 
+     def configure_compiler(self):
+-        # Ensure that /usr/local is always used, but the local build
+-        # directories (i.e. '.' and 'Include') must be first.  See issue
+-        # 10520.
+-        if not CROSS_COMPILING:
+-            add_dir_to_list(self.compiler.library_dirs, '/usr/local/lib')
+-            add_dir_to_list(self.compiler.include_dirs, '/usr/local/include')
++        # Do not search /usr/local: libraries installed there on the build
++        # machine must not leak into the bundled interpreter.
+         # only change this for cross builds for 3.3, issues on Mageia
+         if CROSS_COMPILING:
+             self.add_cross_compiling_paths()
+--- misc/build/Python-3.11.15/Modules/Setup.local
++++ misc/build/Python-3.11.15/Modules/Setup.local
+@@ -0,0 +1,3 @@
++# AOO: do not build modules that need libraries from the build machine or SDK.
++*disabled*
++readline _curses _curses_panel _sqlite3 _bz2 _lzma _gdbm _dbm _tkinter _uuid nis
