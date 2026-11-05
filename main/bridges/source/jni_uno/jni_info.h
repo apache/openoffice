@@ -24,7 +24,7 @@
 #if ! defined INCLUDED_JNI_INFO_H
 #define INCLUDED_JNI_INFO_H
 
-#include <hash_map>
+#include <unordered_map>
 
 #include "jni_base.h"
 
@@ -116,7 +116,7 @@ struct JNI_type_info_holder
         {}
 };
 
-typedef ::std::hash_map<
+typedef ::std::unordered_map<
     ::rtl::OUString, JNI_type_info_holder, ::rtl::OUStringHash > t_str2type;
 
 //==============================================================================

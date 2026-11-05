@@ -24,12 +24,12 @@
 
 #include "rtl/ustring.hxx"
 #include "osl/file.hxx"
-#include <hash_map>
+#include <unordered_map>
 
 namespace dp_misc
 {
 
-typedef ::std::hash_map<
+typedef ::std::unordered_map<
     ::rtl::OString, ::rtl::OString, ::rtl::OStringHash > t_string2string_map;
 
 //==============================================================================

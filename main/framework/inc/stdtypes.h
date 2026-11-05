@@ -26,7 +26,7 @@
 
 #include <vector>
 #include <queue>
-#include <hash_map>
+#include <unordered_map>
 
 //_________________________________________________________________________________________________________________
 // own includes
@@ -152,7 +152,7 @@ typedef ::std::queue< ::rtl::OUString > OUStringQueue;
     is missing at the normal hash implementation.
 */
 template< class TType >
-class BaseHash : public ::std::hash_map< ::rtl::OUString                    ,
+class BaseHash : public ::std::unordered_map< ::rtl::OUString                    ,
                                          TType                              ,
                                          rtl::OUStringHash                  ,
                                          ::std::equal_to< ::rtl::OUString > >
