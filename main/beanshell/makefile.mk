@@ -44,19 +44,18 @@ all:
 
 # --- Files --------------------------------------------------------
 
-TARFILE_NAME=bsh-2.1.1-src
-TARFILE_MD5=f75fbfe6d5ce3568704f89ec5c3b34a7
-TARFILE_ROOTDIR=BeanShell-2.1.1
-PATCH_FILES=bsh-2.1.1-src.patch
-
-ADDITIONAL_FILES=makefile.mk
-
-BUILD_ACTION=dmake $(MFLAGS) $(CALLMACROS)
+# BeanShell 3 is released as a ready-to-use OSGi bundle jar, so there is
+# nothing to unpack or build; the downloaded jar is the bsh.jar we ship.
+BSH_JAR_NAME=bsh-3.0.0RC3.jar
+BSH_JAR_MD5=3623feb40cb7e4fb26e02d8921ef86fa
 
 # --- Targets ------------------------------------------------------
 
-.INCLUDE : set_ext.mk
 .INCLUDE : target.mk
-.INCLUDE : tg_ext.mk
+
+ALLTAR : $(BIN)$/bsh.jar
+
+$(BIN)$/bsh.jar : $(TARFILE_LOCATION)$/$(BSH_JAR_MD5)-$(BSH_JAR_NAME)
+	$(COMMAND_ECHO)$(COPY) $< $@
 
 .ENDIF
