@@ -32,6 +32,8 @@ This **trunk** branch has been updated to allow it to run "standalone" of an off
 
 This README is documentation for using the test suites without requiring an office build environment or having built the office from source in any branch.
 
+The Python harnesses that check ODF 1.2, 1.3 and 1.4 import, export and validity (`aoo-test` and `odf-validate`) are described in [ODF-TESTING.md](ODF-TESTING.md).
+
 ## Prerequisites
 
 Apache Ant 1.10.x and Java JDK 1.8 are known to work. Windows platforms can use the 64-bit JDK even if OpenOffice has to use a 32-bit JRE.
