@@ -47,7 +47,9 @@ trunk         ✅  bazel-trunk-sync is at origin/trunk 2c760c133d (2026-11-03),
                    Workaround: attrib -R /S /D "%APPDATA%\OpenOffice\5bazel\user\*".
 
 ── Toolchain: VS2008 gone from the machine and the output ──────────────
-vs2008        ✅  2026-11-05, //main/staging:install green on win7-x64.
+vs2008        🔨  2026-11-05, committed, NOT YET BUILT: the green build and test
+                   run reported that day were in the C:\workspace\aoo-icu checkout
+                   (bazel-icu-78), which does not contain these commits.
                    6035bc55d0: nothing reads a VS2008 / SDK v7.0 install any more —
                    scp2 `cl /EP` is the VS2019 cl (94/94 .par byte-identical), every
                    RC.Exe genrule runs RC_EXE = the Win10 SDK rc.exe (every .res
@@ -58,8 +60,9 @@ vs2008        ✅  2026-11-05, //main/staging:install green on win7-x64.
                    //main/external/msvcp90 BUILD.  Evidence first: dumpbin
                    /dependents over 291 staged VS2019 binaries, zero msvc?90 imports.
                    soffice.exe keeps one manifest: Common-Controls 6 (visual styles).
-                   STILL TO CHECK: `bazel test //main/...` (test exes lost their
-                   embedded manifest) and a boot with themed checkboxes.
+                   STILL TO CHECK: //main/staging:install, `bazel test //main/...`
+                   (test exes lost their embedded manifest) and a boot with themed
+                   checkboxes — all in C:\workspace\openoffice (bazel-migration).
                    LEFT: winaccessibility MIDL calls SDK v7.0 midl.exe (ATL opt-in
                    only); the VS2019 runtime is not staged (VC++ redist supplies it).
 
