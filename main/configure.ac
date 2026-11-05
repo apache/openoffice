@@ -4368,6 +4368,9 @@ AC_SUBST(SYSTEM_STDLIBS)
 dnl ===================================================================
 dnl Check for system zlib
 dnl ===================================================================
+if test "$_os" = "Darwin" && test "$with_system_zlib" != "no"; then
+   with_system_zlib=yes
+fi
 AC_MSG_CHECKING([which zlib to use])
 if test -n "$with_system_zlib" -o -n "$with_system_libs" && \
 	test "$with_system_zlib" != "no"; then
