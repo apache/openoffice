@@ -181,9 +181,10 @@ Conventions, by example:
 
 - Prefer `ctx.actions.run` with explicit tool inputs over `run_shell`; use
   `ctx.actions.symlink` (pure Bazel) for staging, not a shell `cp`.
-- Tools that link `/MD` need their CRT DLLs + **external** `.manifest` staged
-  beside the EXE (the `svidl_bundle` pattern — replicated in `gtest_test.bzl`;
-  miss it and you get R6034). See the test-infra and IDL milestones.
+- Tools that link `/MD` need their runtime DLLs (sal3.dll, …) staged beside
+  the EXE (the `svidl_bundle` pattern — replicated in `gtest_test.bzl`). The C
+  runtime is not staged and needs no manifest: the VS2019 runtime loads by
+  ordinary DLL search. See the test-infra and IDL milestones.
 - A rule that emits headers must advertise the include dir via an `includes`
   provider/attr so the wrapper `cc_library` can surface it.
 - Keep the rule's migration rationale in its module `readme.md` and a one-line

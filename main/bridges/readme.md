@@ -94,7 +94,7 @@ calls `System.loadLibrary("java_uno")`), so there is no build-time cycle.
   `osl::Module("thrower"/"starter")`, so the cc_binary target names MUST be the
   bare `thrower`/`starter` (the dll basenames it hard-codes).  Run via the generic
   `staged_run_test` (the non-gtest form of `gtest_test`'s staging rule): inter.exe,
-  both dlls, sal3/cppu3 and the VC90 CRT are staged into one dir; the test passes
+  both dlls and sal3/cppu3 are staged into one dir; the test passes
   iff the exe exits 0.  No UNO connection, no Java — the only test here that runs
   without a qadevOOo / running-soffice fixture.
 - **`test_any_jni` is RED, and it is the bridge that is wrong — not the test.**

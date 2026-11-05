@@ -40,7 +40,7 @@ bazel-bin\main\staging\install\program\soffice.exe
 
 - `collect_files_aspect.bzl` — aspect that collects transitive `DefaultInfo` + PDB files; `collect_outputs` rule aggregates them; `flat_install` copies to `program/`; `res_stage` copies `.res` files to `program/resource/` with locale-renamed filenames; `tree_install` copies a subtree preserving relative paths.
 - ATL-guarded targets (`embedserv`, `winaccessibility`) included via `select({"//build:has_atl": [...], "//conditions:default": []})`
-- Debug CRT DLLs (`MSVCR90D`, `MSVCP90D`) and private-assembly manifest staged only for `--compilation_mode=dbg` builds via `select({"//build:dbg_build": [...]})`
+- No C runtime is staged, release or debug: the VS2019 runtime loads from System32 (VC++ redistributable; the debug one ships with VS2019).  `soffice.exe` gets one application manifest, `//main/desktop:util/amd64/soffice.exe.manifest`, for Common-Controls 6 (visual styles).  The VC90 CRT and debug-CRT staging that used to be here was removed 2026-11-05.
 
 ## Known gaps (deferred)
 
@@ -97,6 +97,8 @@ MSVC `ThrowInfo` (3rd parameter of the `e06d7363` exception record):
 `r $t0=poi(<throwinfo>+0c); r $t1=poi($t0+4); r $t2=poi($t1+4); da $t2+8` →
 `.?AVCannotActivateFactoryException@loader@…`. Then capture the message live with
 `bp MSVCR90D!_CxxThrowException "du poi(poi(esp+4))+8 L80; gc"` — the message names the exact DLL.
+(That was the 32-bit VC9 build.  On x64 with the VS2019 debug runtime the function lives in
+`VCRUNTIME140D` and the first argument is in `rcx`, not on the stack.)
 
 ## Resource files (.res)
 

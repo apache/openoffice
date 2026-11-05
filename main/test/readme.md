@@ -28,10 +28,9 @@ holdouts).  This brings the test layer onto Bazel so suites run under
 | Piece | Path | Role |
 | ----- | ---- | ---- |
 | `@gtest` | `ext_libraries/modules/gtest/1.7.0/` | GoogleTest 1.7.0 bzlmod wrap (zip cached in `ext_sources`). Built with `/Zc:wchar_t-` so its `wchar_t` ABI matches `sal_Unicode` test code. |
-| `gtest_test` rule | [//build/rules:gtest_test.bzl](../../build/rules/gtest_test.bzl) | Reusable runnable-test rule. The `/MD` toolchain embeds no manifest, so a bare `cc_test` exe can't launch (DLLs land in runfiles subdirs; loose CRT → R6034). This stages the exe + runtime DLLs + VC90 CRT + an external `<exe>.manifest` into ONE flat dir (the test analog of `//main/idl:svidl_bundle`). Pass `data_files` for fixture inputs the test opens by relative path — see "working directory" below. |
+| `gtest_test` rule | [//build/rules:gtest_test.bzl](../../build/rules/gtest_test.bzl) | Reusable runnable-test rule. A bare `cc_test` exe can't launch (its DLLs land in runfiles subdirs). This stages the exe + runtime DLLs into ONE flat dir (the test analog of `//main/idl:svidl_bundle`). Pass `data_files` for fixture inputs the test opens by relative path — see "working directory" below. |
 | `sal_process_init` | [//build/testsupport](../../build/testsupport/BUILD.bazel) | Migration-authored TU that runs `sal_detail_initialize()` from a dynamic initialiser, for suites whose own `main()` skips the `SAL_IMPLEMENT_MAIN` boilerplate (⇒ no `WSAStartup`). |
 | `libtest` | [//main/test:test](BUILD.bazel) | `test.dll` — `test::OfficeConnection` + arg/url helpers, for *subsequent* (UNO) tests that bootstrap a running soffice over URP. Exercised by `:test_qa_officeconnection`; its Java twin is `:test_jar` (see "The JAVA side of the same fixture" below). |
-| `vc90_app_manifest_res` | [//main/external/msvcp90](../external/msvcp90/BUILD.bazel) | The VC90-CRT manifest compiled to a `.res` and linked into every `gtest_test` exe at `RT_MANIFEST` id 1. See "the CRT activation context" below. |
 | `sal_qa_test` macro | [//main/sal:sal_qa.bzl](../sal/sal_qa.bzl) | Thin `gtest_test` wrapper for the sal/qa suites (common copts/deps + per-dir `*_Const.h` include). |
 
 ## Two test categories
@@ -230,7 +229,9 @@ holdouts).  This brings the test layer onto Bazel so suites run under
     the process dies with `0xC0000142` (`STATUS_DLL_INIT_FAILED`) before gtest
     prints a single line, so `test.log` is **empty**.
 
-- **The CRT activation context must be embedded, not external.** The staged
+- **(Historical, VS2008 build — the VC90 runtime and every CRT manifest were
+  removed 2026-11-05; the VS2019 runtime needs no activation context.)**
+  **The CRT activation context must be embedded, not external.** The staged
   `<exe>.manifest` only reliably covers DLLs bound at process start. A test
   that `osl_loadModule()`s a UNO DLL *later* needs the context still in force,
   so `gtest_test` links `//main/external/msvcp90:vc90_app_manifest_res` into
@@ -390,8 +391,8 @@ Each of these was invisible until a foreign process loaded our DLLs:
    nothing visible. Any external Java program talking to a running office over a
    pipe needs them; upstream ships both in the URE lib dir. Now in
    [//main/staging](../staging/BUILD.bazel).
-2. **A /MD DLL loaded by a process we do not build needs its OWN embedded
-   manifest.** This tree links `/MANIFEST:NO` throughout, which is invisible
+2. **A /MD DLL loaded by a process we do not build needed its OWN embedded
+   manifest** (VS2008 build; removed with the VC90 runtime 2026-11-05). This tree links `/MANIFEST:NO` throughout, which is invisible
    inside `soffice.exe` (its manifest covers the whole process) and fatal for a
    DLL a stock `java.exe` loads: nothing supplies an activation context, the
    `MSVCR90.dll` import cannot be resolved, and `System.loadLibrary` reports the

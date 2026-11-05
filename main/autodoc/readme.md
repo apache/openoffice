@@ -58,10 +58,10 @@ startup are sound.
 - **Six `.cxx` are NOT in the build** and are globbed out: `source/cosv/unittest/**`,
   `source/udm/unittest/**`, `source/cosv/service/commandline.cxx` (the built one
   is `comdline.cxx`), `source/display/idl/hfi_linklist.cxx`.
-- **VC90-CRT manifest embedded** at RT_MANIFEST id 1 (same as
-  uno-skeletonmaker/regcompare): autodoc is both a build tool (odk gendocu runs
-  it) and an SDK `bin/` tool (odk pack/copying ships it), so it carries its own
-  activation context rather than relying on a staged external `.manifest`.
+- **No manifest.**  Until 2026-11-05 it embedded the VC90-CRT manifest at
+  RT_MANIFEST id 1 (same as uno-skeletonmaker/regcompare), because it is both a
+  build tool (odk gendocu runs it) and an SDK `bin/` tool (odk pack/copying
+  ships it).  The VS2019 runtime needs no activation context.
 
 ## Next
 

@@ -31,9 +31,8 @@
   configs and the `winxp` constraint value.  32-bit is gone with them.  Two
   things did NOT change: the SOURCE stays C++03-compatible, because AOO 4.1.x
   takes security backports and still builds with VS2008; and the VC90 runtime
-  is still STAGED (main/external/msvcp90: msvcr90/msvcp90 DLLs, manifests
-  declaring Microsoft.VC90.CRT on soffice.exe, tool exes and a few DLLs) even
-  though nothing links against it any more — a separate cleanup.
+  layer (msvcr90/msvcp90 staging, Microsoft.VC90.CRT manifests on soffice.exe,
+  tool exes and a few DLLs) was removed 2026-11-05 — nothing imported it.
 - **VS2008 / SDK v7.0 are no longer needed on the machine** (2026-11-05):
   vs_config_repo reads neither VS_PATH nor SDK_PATH.  scp2's `cl /EP` uses the
   VS2019 cl.exe, and every RC.Exe genrule (msvcp90 ×2, bridges ×2, desktop,

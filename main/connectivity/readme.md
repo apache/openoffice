@@ -190,7 +190,8 @@ files as textual fragments (declared via `_parse_generated` cc_library).
 - `hsqldb.dll` carries 27 undecorated `Java_*` exports in its DEF alongside the two
   `component_*` ones (JNICALL is `__stdcall` on Win32, so without the DEF they would
   be `_Java_…@N` and the JVM could not find them) — same trick as `jurt`'s
-  `jpipe.def`.  It does NOT need the RT_MANIFEST id 2 embedded manifest that
+  `jpipe.def`.  (Historical, VS2008 build — no DLL embeds a manifest since
+  2026-11-05.)  It did NOT need the RT_MANIFEST id 2 embedded manifest that
   `jpipe`/`jpipx` need: those are loaded by a stock `java.exe` with no VC90
   activation context, whereas this JVM runs in-process inside `soffice.exe`
 - `hsqldb.dll` takes no DLLPOSTFIX (version.mk sets `HSQLDB_TARGET=hsqldb` bare)

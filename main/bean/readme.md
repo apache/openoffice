@@ -40,7 +40,8 @@ identical except dmake's `Solar-Version:` build stamp, which is not carried.
 - **DEF file** (`util/officebean.def`): exports the four `Java_*` names
   undecorated.  `JNICALL` is `__stdcall` on Win32, so without it they would
   leave as `_Java_…@N` — same trick as `//main/jurt` `jpipe.def`.
-- **Embedded manifest (RT_MANIFEST id 2) is required.**  The DLL is loaded by
+- **Embedded manifest (RT_MANIFEST id 2) WAS required** under VS2008 — removed
+  2026-11-05 with the VC90 runtime, which the VS2019 build no longer uses.  The DLL is loaded by
   the *embedding application's* JVM — a stock `java.exe` with no VC90
   activation context — not by a JVM inside `soffice.exe`.  Without it
   `MSVCR90.dll` cannot be resolved and `System.loadLibrary` reports only

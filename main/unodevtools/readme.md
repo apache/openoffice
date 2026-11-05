@@ -42,7 +42,11 @@ on — Java is only one of the *output* languages of the skeletons it emits, whi
 is why `commonjava` is linked. That is also why the module came out of a bucket
 that is otherwise blocked and built on the first try.
 
-## The manifest has to be embedded, not staged beside it
+## The manifest had to be embedded, not staged beside it
+
+> Historical: this applied to the VS2008 build.  The VC90 runtime layer was
+> removed 2026-11-05; the VS2019 runtime needs no activation context, so
+> uno-skeletonmaker links no manifest at all now.
 
 Every other `/MD` tool this build produces — cppumaker, javamaker, regcomp, rsc
 — is *build-internal*: some rule runs it, and that rule stages the VC90 CRT DLLs

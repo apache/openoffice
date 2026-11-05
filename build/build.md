@@ -45,9 +45,11 @@ output was checked byte-identical when switched (all 94 `.par` files, every
 `.res`). One opt-in exception remains: `winaccessibility`'s MIDL step, which only
 builds with `--//build:atl_available=True` (§5), still calls SDK v7.0 `midl.exe`.
 
-The VC90 runtime itself is still in the tree — staged `msvcr90`/`msvcp90` DLLs
-and manifests declaring `Microsoft.VC90.CRT` — but those files come from
-`main/external/msvcp90`, not from a VS2008 install.
+The VC90 runtime is gone from the Bazel build too: nothing stages
+`msvcr90`/`msvcp90` or declares `Microsoft.VC90.CRT` any more. The binaries
+need the VS2019 runtime (`vcruntime140`, `msvcp140`, the UCRT) from the VC++
+redistributable; it is not staged. `soffice.exe` keeps one application
+manifest, for Common-Controls 6 (visual styles).
 
 | Tool | Version / Notes |
 | --- | --- |
@@ -353,7 +355,8 @@ containers passed between DLLs will read garbage.
 
 > **No private symbols?** [main/staging/readme.md](../main/staging/readme.md)
 > documents a CDB technique for decoding a thrown C++ exception class and
-> capturing its message live (`bp MSVCR90D!_CxxThrowException ...`) — useful for
+> capturing its message live (`bp MSVCR90D!_CxxThrowException ...`; with the
+> VS2019 debug runtime that is `VCRUNTIME140D!_CxxThrowException`) — useful for
 > the silent-exit startup failures described in [§7](#7-known-issues).
 
 ---

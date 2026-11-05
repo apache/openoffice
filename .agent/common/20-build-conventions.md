@@ -49,14 +49,14 @@
   a new EXE needs no manifest for the CRT.  The VC9-era lesson still holds for
   anything side-by-side: a `/MANIFEST:NO` EXE whose import needs an activation
   context dies before main() with a "System Error" box, and nothing in the build
-  notices -- 15 launchers sat broken that way until 2026-10-08.  REMAINING
-  CLEANUP: ~25 rules still stage the VC90 DLLs or embed
-  `//main/external/msvcp90:vc90_app_manifest_res` unconditionally (idl/rsc/
-  merge_rdb/java/localedata pipelines, gtest_test, registry, cpputools, pyuno,
-  staging); on VS2019 binaries these are dead weight, not a requirement.
-- IDL pipeline: tools link /MD (dynamic CRT); stage msvcr90/msvcp90 DLLs +
-  external .manifest files alongside EXEs (no mt.exe embedding); use
-  ctx.actions.symlink (pure Bazel, no shell) for staging
+  notices -- 15 launchers sat broken that way until 2026-10-08.  The VC90
+  layer itself was REMOVED 2026-11-05: //main/external/msvcp90 has no
+  BUILD file any more, no rule stages msvcr90/msvcp90 or a CRT manifest, and
+  the only application manifest left is soffice.exe's (Common-Controls 6 =
+  visual styles; keep it).  A scan of a staged VS2019 tree (291 binaries)
+  found no import of a VC90 DLL before the removal.
+- IDL pipeline: tools link /MD (dynamic CRT); stage the tool exe + its DLLs
+  into one flat dir; use ctx.actions.symlink (pure Bazel, no shell) for staging
 - cppumaker output dir: prefix -O with "./" so osl's convertToFileUrl uses
   getAbsoluteFileURL (relative-to-workdir) instead of failing on relative paths
 - XCU pipeline: LOCALIZED XCU files (those containing <value xml:lang="...">) must be pre-processed
