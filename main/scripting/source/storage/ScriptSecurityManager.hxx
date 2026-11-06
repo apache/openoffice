@@ -25,7 +25,7 @@
 #ifndef _FRAMEWORK_SCRIPT_SCRIPTSECURITYMANAGER_HXX_
 #define _FRAMEWORK_SCRIPT_SCRIPTSECURITYMANAGER_HXX_
 
-#include <hash_map>
+#include <unordered_map>
 #include <rtl/ustring.hxx>
 #include <com/sun/star/uno/XComponentContext.hpp>
 #include <com/sun/star/uno/RuntimeException.hpp>
@@ -45,7 +45,7 @@ struct StoragePerm {
     sal_Bool execPermission;
 };
 
-typedef ::std::hash_map< ::rtl::OUString, StoragePerm, ::rtl::OUStringHash,
+typedef ::std::unordered_map< ::rtl::OUString, StoragePerm, ::rtl::OUStringHash,
     ::std::equal_to< ::rtl::OUString > > Permission_Hash;
 /**
  * Class responsible for managing the ScriptSecurity.

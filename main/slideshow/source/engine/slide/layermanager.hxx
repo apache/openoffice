@@ -37,7 +37,7 @@
 
 #include <vector>
 #include <map>
-#include <hash_map>
+#include <unordered_map>
 #include <algorithm>
 #include <functional>
 
@@ -240,7 +240,7 @@ namespace slideshow
 
                 Provides quicker lookup than ShapeSet for simple mappings
              */
-            typedef ::std::hash_map<
+            typedef ::std::unordered_map<
                 ::com::sun::star::uno::Reference<
                     ::com::sun::star::drawing::XShape >,
                 ShapeSharedPtr,

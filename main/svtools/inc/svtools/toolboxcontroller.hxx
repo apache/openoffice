@@ -47,7 +47,7 @@
 
 //end
 #ifndef INCLUDED_HASH_MAP
-#include <hash_map>
+#include <unordered_map>
 #define INCLUDED_HASH_MAP
 #endif
 
@@ -157,7 +157,7 @@ class SVT_DLLPUBLIC ToolboxController : public ::com::sun::star::frame::XStatusL
 
         DECL_STATIC_LINK( ToolboxController, ExecuteHdl_Impl, DispatchInfo* );
 
-        typedef ::std::hash_map< ::rtl::OUString,
+        typedef ::std::unordered_map< ::rtl::OUString,
 				                 com::sun::star::uno::Reference< com::sun::star::frame::XDispatch >,
                                  ::rtl::OUStringHash,
 								 ::std::equal_to< ::rtl::OUString > > URLToDispatchMap;

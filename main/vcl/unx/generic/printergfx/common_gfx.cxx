@@ -67,9 +67,9 @@ PrinterGfx::Init (PrinterJob &rPrinterJob)
     rPrinterJob.GetScale (mfScaleX, mfScaleY);
     const PrinterInfo& rInfo( PrinterInfoManager::get().getPrinterInfo( rPrinterJob.GetPrinterName() ) );
     if( mpFontSubstitutes )
-        delete const_cast< ::std::hash_map<fontID,fontID>* >(mpFontSubstitutes);
+        delete const_cast< ::std::unordered_map<fontID,fontID>* >(mpFontSubstitutes);
     if( rInfo.m_bPerformFontSubstitution )
-        mpFontSubstitutes = new ::std::hash_map< fontID, fontID >( rInfo.m_aFontSubstitutions );
+        mpFontSubstitutes = new ::std::unordered_map< fontID, fontID >( rInfo.m_aFontSubstitutions );
     else
         mpFontSubstitutes = NULL;
     mbUploadPS42Fonts = rInfo.m_pParser ? ( rInfo.m_pParser->isType42Capable() ? sal_True : sal_False ) : sal_False;
@@ -91,9 +91,9 @@ PrinterGfx::Init (const JobData& rData)
     mfScaleY        = (double)72.0 / (double)mnDpi;
     const PrinterInfo& rInfo( PrinterInfoManager::get().getPrinterInfo( rData.m_aPrinterName ) );
     if( mpFontSubstitutes )
-        delete const_cast< ::std::hash_map<fontID,fontID>* >(mpFontSubstitutes);
+        delete const_cast< ::std::unordered_map<fontID,fontID>* >(mpFontSubstitutes);
     if( rInfo.m_bPerformFontSubstitution )
-        mpFontSubstitutes = new ::std::hash_map< fontID, fontID >( rInfo.m_aFontSubstitutions );
+        mpFontSubstitutes = new ::std::unordered_map< fontID, fontID >( rInfo.m_aFontSubstitutions );
     else
         mpFontSubstitutes = NULL;
     mbUploadPS42Fonts = rInfo.m_pParser ? ( rInfo.m_pParser->isType42Capable() ? sal_True : sal_False ) : sal_False;
@@ -147,7 +147,7 @@ PrinterGfx::~PrinterGfx()
      *  Alas, this is not always done real time. So we keep a local copy of
      *  the font substitutes now in case of bad timing.
      */
-    delete const_cast< ::std::hash_map<fontID,fontID>* >(mpFontSubstitutes);
+    delete const_cast< ::std::unordered_map<fontID,fontID>* >(mpFontSubstitutes);
 }
 
 void

@@ -37,7 +37,7 @@
 // To activate tracing enable in sbtrace.hxx
 #ifdef DBG_TRACE_BASIC
 
-#include <hash_map>
+#include <unordered_map>
 
 // Trace ini file (set NULL to ignore)
 // can be overridden with the environment variable OOO_BASICTRACEINI
@@ -239,8 +239,8 @@ struct TraceTextData
 	rtl::OString m_aTraceStr_STMNT;
 	rtl::OString m_aTraceStr_PCode;
 };
-typedef std::hash_map< sal_Int32, TraceTextData > PCToTextDataMap;
-typedef std::hash_map< ::rtl::OUString, PCToTextDataMap*, ::rtl::OUStringHash, ::std::equal_to< ::rtl::OUString > > ModuleTraceMap;
+typedef std::unordered_map< sal_Int32, TraceTextData > PCToTextDataMap;
+typedef std::unordered_map< ::rtl::OUString, PCToTextDataMap*, ::rtl::OUStringHash, ::std::equal_to< ::rtl::OUString > > ModuleTraceMap;
 
 ModuleTraceMap		GaModuleTraceMap;
 ModuleTraceMap&		rModuleTraceMap = GaModuleTraceMap;
@@ -381,7 +381,7 @@ struct FunctionItem
 		, m_bBlockSteps( false )
 	{}
 };
-typedef std::hash_map< ::rtl::OUString, FunctionItem*, ::rtl::OUStringHash, ::std::equal_to< ::rtl::OUString > > FunctionItemMap;
+typedef std::unordered_map< ::rtl::OUString, FunctionItem*, ::rtl::OUStringHash, ::std::equal_to< ::rtl::OUString > > FunctionItemMap;
 
 static std::stack< double >				GaCallEnterTimeStack;
 static std::stack< FunctionItem* >		GaFunctionItemStack;

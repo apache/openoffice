@@ -35,7 +35,7 @@
 
 #include <boost/shared_ptr.hpp>
 #include <memory>
-#include <hash_map>
+#include <unordered_map>
 
 namespace com { namespace sun { namespace star {
 
@@ -277,7 +277,7 @@ public:
 
     const Size& getWindowSize() const;
 
-    void getResult(::std::hash_map< ::rtl::OUString, bool, ::rtl::OUStringHash>& rResult);
+    void getResult(::std::unordered_map< ::rtl::OUString, bool, ::rtl::OUStringHash>& rResult);
     void close(bool bOK);
 
     /**

@@ -30,8 +30,8 @@
 #include <com/sun/star/lang/XMultiServiceFactory.hpp>
 #include <com/sun/star/container/XNameAccess.hpp>
 
-#include <hash_map>
-#include <hash_set>
+#include <unordered_map>
+#include <unordered_set>
 #include <vector>
 
 namespace com {
@@ -39,7 +39,7 @@ namespace sun {
 namespace star {
 namespace lang {
 
-// equality operator needed for hash_map;
+// equality operator needed for unordered_map;
 // (-> why does this need to be in the namespace of Locale ? g++ fails to compile else)
 inline bool operator==( const com::sun::star::lang::Locale& rLeft, const com::sun::star::lang::Locale& rRight )
 {
@@ -81,7 +81,7 @@ class UNOTOOLS_DLLPUBLIC DefaultFontConfiguration
         mutable com::sun::star::uno::Reference< com::sun::star::container::XNameAccess > xAccess;
     };
 
-    std::hash_map< com::sun::star::lang::Locale,
+    std::unordered_map< com::sun::star::lang::Locale,
                    LocaleAccess,
                    utl::LocaleHash >
             m_aConfig;
@@ -187,8 +187,8 @@ private:
 
         LocaleSubst() : bConfigRead( false ) {}
     };
-    std::hash_map< com::sun::star::lang::Locale, LocaleSubst, utl::LocaleHash > m_aSubst;
-	typedef std::hash_set< rtl::OUString, rtl::OUStringHash > UniqueSubstHash;
+    std::unordered_map< com::sun::star::lang::Locale, LocaleSubst, utl::LocaleHash > m_aSubst;
+	typedef std::unordered_set< rtl::OUString, rtl::OUStringHash > UniqueSubstHash;
 	mutable UniqueSubstHash maSubstHash;
 
 

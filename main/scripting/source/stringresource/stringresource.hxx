@@ -42,7 +42,7 @@
 #include <osl/mutex.hxx>
 
 #include <vector>
-#include <hash_map>
+#include <unordered_map>
 
 //.........................................................................
 namespace stringresource
@@ -77,7 +77,7 @@ struct eqName_Impl
 	}
 };
 
-typedef std::hash_map
+typedef std::unordered_map
 <
 	::rtl::OUString,
 	::rtl::OUString,
@@ -86,7 +86,7 @@ typedef std::hash_map
 >
 IdToStringMap;
 
-typedef std::hash_map
+typedef std::unordered_map
 <
 	::rtl::OUString,
 	sal_Int32,

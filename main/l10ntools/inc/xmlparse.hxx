@@ -46,7 +46,7 @@ class XMLElement;
 using namespace ::rtl;
 using namespace std;
 
-#include <hash_map> /* std::hashmap*/
+#include <unordered_map> /* std::hashmap*/
 #include <deque>	/* std::deque*/
 #include <iterator> /* std::iterator*/
 #include <list>		/* std::list*/
@@ -187,17 +187,17 @@ public:
 DECLARE_LIST( XMLStringList, XMLElement* )
 
 /// Mapping numeric Language code <-> XML Element
-typedef std::hash_map< ByteString ,XMLElement* , hashByteString,equalByteString > LangHashMap;
+typedef std::unordered_map< ByteString ,XMLElement* , hashByteString,equalByteString > LangHashMap;
 
 /// Mapping XML Element string identifier <-> Language Map
-typedef std::hash_map<ByteString , LangHashMap* ,
+typedef std::unordered_map<ByteString , LangHashMap* ,
 					  hashByteString,equalByteString>					XMLHashMap;
 
 /// Mapping iso alpha string code <-> iso numeric code
-typedef std::hash_map<ByteString, int, hashByteString,equalByteString>	HashMap;
+typedef std::unordered_map<ByteString, int, hashByteString,equalByteString>	HashMap;
 
 /// Mapping XML tag names <-> have localizable strings
-typedef std::hash_map<ByteString , sal_Bool ,
+typedef std::unordered_map<ByteString , sal_Bool ,
 					  hashByteString,equalByteString>					TagMap;
 
 /** Holds information of a XML file, is root node of tree

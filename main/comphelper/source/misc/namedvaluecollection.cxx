@@ -35,7 +35,7 @@
 #include <rtl/strbuf.hxx>
 #include <osl/diagnose.h>
 
-#include <hash_map>
+#include <unordered_map>
 #include <functional>
 #include <algorithm>
 
@@ -61,7 +61,7 @@ namespace comphelper
     //====================================================================
 	//= NamedValueCollection_Impl
 	//====================================================================
-    typedef ::std::hash_map< ::rtl::OUString, Any, ::rtl::OUStringHash >    NamedValueRepository;
+    typedef ::std::unordered_map< ::rtl::OUString, Any, ::rtl::OUStringHash >    NamedValueRepository;
 
     struct NamedValueCollection_Impl
     {

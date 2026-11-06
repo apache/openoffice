@@ -42,7 +42,7 @@ class	SalXLib;
 #endif
 #include <vector>
 #include <list>
-#include <hash_map>
+#include <unordered_map>
 #include <tools/gen.hxx>
 #include <salwtype.hxx>
 
@@ -285,7 +285,7 @@ public:
         RenderEntry() : m_aPixmap( 0 ), m_aPicture( 0 ) {}
     };
 
-    typedef std::hash_map<int,RenderEntry> RenderEntryMap;
+    typedef std::unordered_map<int,RenderEntry> RenderEntryMap;
 
     struct ScreenData
     {

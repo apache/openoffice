@@ -20,7 +20,7 @@
  *************************************************************/
 
 
-#include <hash_map>
+#include <unordered_map>
 
 #include <osl/conditn.h>
 
@@ -55,7 +55,7 @@ namespace cppu_threadpool {
 			}
 	};
 
-	typedef	::std::hash_map
+	typedef	::std::unordered_map
 	<
 	    ByteSequence, // ThreadID
 		::std::pair < JobQueue * , JobQueue * >,

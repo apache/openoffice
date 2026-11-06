@@ -36,7 +36,7 @@
 using namespace com::sun::star;
 using ::std::vector;
 using ::std::list;
-using ::std::hash_set;
+using ::std::unordered_set;
 using ::std::unique_ptr;
 using ::std::for_each;
 
@@ -111,7 +111,7 @@ void ScChartListener::ExternalRefListener::removeFileId(sal_uInt16 nFileId)
     maFileIds.erase(nFileId);
 }
 
-hash_set<sal_uInt16>& ScChartListener::ExternalRefListener::getAllFileIds()
+unordered_set<sal_uInt16>& ScChartListener::ExternalRefListener::getAllFileIds()
 {
     return maFileIds;
 }
@@ -181,9 +181,9 @@ ScChartListener::ScChartListener( const ScChartListener& r ) :
         // was listening to.
 
         ScExternalRefManager* pRefMgr = pDoc->GetExternalRefManager();
-        const hash_set<sal_uInt16>& rFileIds = r.mpExtRefListener->getAllFileIds();
+        const unordered_set<sal_uInt16>& rFileIds = r.mpExtRefListener->getAllFileIds();
         mpExtRefListener.reset(new ExternalRefListener(*this, pDoc));
-        hash_set<sal_uInt16>::const_iterator itr = rFileIds.begin(), itrEnd = rFileIds.end();
+        unordered_set<sal_uInt16>::const_iterator itr = rFileIds.begin(), itrEnd = rFileIds.end();
         for (; itr != itrEnd; ++itr)
         {
             pRefMgr->addLinkListener(*itr, mpExtRefListener.get());
@@ -202,8 +202,8 @@ ScChartListener::~ScChartListener()
     {
         // Stop listening to all external files.
         ScExternalRefManager* pRefMgr = pDoc->GetExternalRefManager();
-        const hash_set<sal_uInt16>& rFileIds = mpExtRefListener->getAllFileIds();
-        hash_set<sal_uInt16>::const_iterator itr = rFileIds.begin(), itrEnd = rFileIds.end();
+        const unordered_set<sal_uInt16>& rFileIds = mpExtRefListener->getAllFileIds();
+        unordered_set<sal_uInt16>::const_iterator itr = rFileIds.begin(), itrEnd = rFileIds.end();
         for (; itr != itrEnd; ++itr)
             pRefMgr->removeLinkListener(*itr, mpExtRefListener.get());
     }

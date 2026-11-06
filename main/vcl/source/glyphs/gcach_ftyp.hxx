@@ -110,8 +110,8 @@ private:
     const ImplFontCharMap* mpFontCharMap;
 
     // cache unicode->glyphid mapping because looking it up is expensive
-    // TODO: change to hash_multimap when a use case requires a m:n mapping
-    typedef ::std::hash_map<int,int> Int2IntMap;
+    // TODO: change to unordered_multimap when a use case requires a m:n mapping
+    typedef ::std::unordered_map<int,int> Int2IntMap;
     mutable Int2IntMap* mpChar2Glyph;
     mutable Int2IntMap* mpGlyph2Char;
     void InitHashes() const;
@@ -157,7 +157,7 @@ public:
     FreetypeServerFont* CreateFont( const ImplFontSelectData& );
 
 private:
-    typedef ::std::hash_map<sal_IntPtr,FtFontInfo*> FontList;
+    typedef ::std::unordered_map<sal_IntPtr,FtFontInfo*> FontList;
     FontList            maFontList;
 
     sal_IntPtr          mnMaxFontId;
@@ -224,7 +224,7 @@ private:
     bool			mbArtBold;
     bool			mbUseGamma;
 
-    typedef ::std::hash_map<int,int> GlyphSubstitution;
+    typedef ::std::unordered_map<int,int> GlyphSubstitution;
     GlyphSubstitution           maGlyphSubstitution;
     rtl_UnicodeToTextConverter  maRecodeConverter;
 

@@ -33,7 +33,7 @@
 #include <txmsrt.hxx>
 #include <com/sun/star/accessibility/XAccessibleExtendedAttributes.hpp>
 #include <com/sun/star/accessibility/XAccessibleTextAttributes.hpp>
-#include <hash_map>
+#include <unordered_map>
 #include <accselectionhelper.hxx>
 // --> OD 2010-02-19 #i108125#
 #include <calbck.hxx>
@@ -58,7 +58,7 @@ namespace com { namespace sun { namespace star {
     namespace style { struct TabStop; }
 } } }
 
-typedef ::std::hash_map< ::rtl::OUString,
+typedef ::std::unordered_map< ::rtl::OUString,
                          ::com::sun::star::beans::PropertyValue,
                          ::rtl::OUStringHash,
                          ::std::equal_to< ::rtl::OUString > > tAccParaPropValMap;

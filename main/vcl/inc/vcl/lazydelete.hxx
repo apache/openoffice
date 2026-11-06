@@ -27,7 +27,7 @@
 #include "dllapi.h"
 
 #include <vector>
-#include <hash_map>
+#include <unordered_map>
 #include <algorithm>
 
 #if OSL_DEBUG_LEVEL > 2
@@ -120,7 +120,7 @@ namespace vcl
         };
 
         std::vector< DeleteObjectEntry >    m_aObjects;
-        typedef std::hash_map< sal_IntPtr, unsigned int > PtrToIndexMap;
+        typedef std::unordered_map< sal_IntPtr, unsigned int > PtrToIndexMap;
         PtrToIndexMap                       m_aPtrToIndex;
 
         /** strict weak ordering function to bring objects to be destroyed lazily

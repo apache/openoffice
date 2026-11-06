@@ -71,7 +71,7 @@ Sequence< OUString > SAL_CALL x11::Xdnd_dropTarget_getSupportedServiceNames()
 
 css::uno::Reference< XInterface > X11SalInstance::CreateClipboard( const Sequence< Any >& arguments )
 {
-	static std::hash_map< OUString, ::std::hash_map< Atom, css::uno::Reference< XClipboard > >, ::rtl::OUStringHash > m_aInstances;
+	static std::unordered_map< OUString, ::std::unordered_map< Atom, css::uno::Reference< XClipboard > >, ::rtl::OUStringHash > m_aInstances;
 
 	OUString aDisplayName;
 	Atom nSelection;
@@ -107,8 +107,8 @@ css::uno::Reference< XInterface > X11SalInstance::CreateClipboard( const Sequenc
 		nSelection = rManager.getAtom( OUString::createFromAscii( "CLIPBOARD" ) );
 	}
 
-	::std::hash_map< Atom, css::uno::Reference< XClipboard > >& rMap( m_aInstances[ aDisplayName ] );
-	::std::hash_map< Atom, css::uno::Reference< XClipboard > >::iterator it = rMap.find( nSelection );
+	::std::unordered_map< Atom, css::uno::Reference< XClipboard > >& rMap( m_aInstances[ aDisplayName ] );
+	::std::unordered_map< Atom, css::uno::Reference< XClipboard > >::iterator it = rMap.find( nSelection );
 	if( it != rMap.end() )
 		return it->second;
 

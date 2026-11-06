@@ -25,7 +25,7 @@
 #define _REGIMPL_HXX_
 
 #include <set>
-#include <hash_map>
+#include <unordered_map>
 
 #include 	<registry/registry.h>
 #include	<rtl/ustring.hxx>
@@ -163,7 +163,7 @@ private:
 						const rtl::OUString& sName,
 						sal_Int16 nSpace) const;
 
-    typedef	std::hash_map< rtl::OUString, ORegKey*, rtl::OUStringHash > KeyMap;
+    typedef	std::unordered_map< rtl::OUString, ORegKey*, rtl::OUStringHash > KeyMap;
 
 	sal_uInt32 		m_refCount;
 	osl::Mutex	    	m_mutex;

@@ -35,7 +35,7 @@
 
 #include <vector>
 #include <functional>
-#include <hash_set>
+#include <unordered_set>
 
 namespace chart
 {

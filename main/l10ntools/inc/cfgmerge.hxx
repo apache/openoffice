@@ -26,9 +26,9 @@
 
 #include <tools/string.hxx>
 #include <tools/list.hxx>
-#include <hash_map>
+#include <unordered_map>
 
-typedef std::hash_map<ByteString , ByteString , hashByteString,equalByteString>
+typedef std::unordered_map<ByteString , ByteString , hashByteString,equalByteString>
                                 ByteStringHashMap;
 
 

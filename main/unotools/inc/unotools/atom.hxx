@@ -28,7 +28,7 @@
 #include <osl/mutex.hxx>
 #include <cppuhelper/implbase1.hxx>
 
-#include <hash_map>
+#include <unordered_map>
 #ifndef __SGI_STL_LIST
 #include <list>
 #endif
@@ -47,8 +47,8 @@ namespace utl {
     class AtomProvider
     {
         int                                     m_nAtoms;
-        ::std::hash_map< int, ::rtl::OUString, ::std::hash< int > > m_aStringMap;
-        ::std::hash_map< ::rtl::OUString, int, ::rtl::OUStringHash >    m_aAtomMap;
+        ::std::unordered_map< int, ::rtl::OUString, ::std::hash< int > > m_aStringMap;
+        ::std::unordered_map< ::rtl::OUString, int, ::rtl::OUStringHash >    m_aAtomMap;
     public:
         AtomProvider();
         ~AtomProvider();
@@ -69,7 +69,7 @@ namespace utl {
 
     class UNOTOOLS_DLLPUBLIC MultiAtomProvider
     {
-        ::std::hash_map< int, AtomProvider*, ::std::hash< int > > m_aAtomLists;
+        ::std::unordered_map< int, AtomProvider*, ::std::hash< int > > m_aAtomLists;
     public:
         MultiAtomProvider();
         ~MultiAtomProvider();

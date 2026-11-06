@@ -32,8 +32,8 @@
 #include <vector>
 #define INCLUDED_STL_VECTOR
 #endif
-#include <hash_map>
-#include <hash_set>
+#include <unordered_map>
+#include <unordered_set>
 #include <osl/mutex.hxx>
 #include <rtl/ustring.hxx>
 #include <rtl/string.hxx>
@@ -328,20 +328,20 @@ namespace chelp {
 
 		std::vector< rtl::OUString >	m_avModules;
 
-		typedef std::hash_map< rtl::OUString,helpdatafileproxy::Hdf*,ha,eq >   DatabasesTable;
+		typedef std::unordered_map< rtl::OUString,helpdatafileproxy::Hdf*,ha,eq >   DatabasesTable;
 		DatabasesTable m_aDatabases;         // Language and module dependent databases
 
-		typedef  std::hash_map< rtl::OUString,rtl::OUString,ha,eq > LangSetTable;
+		typedef  std::unordered_map< rtl::OUString,rtl::OUString,ha,eq > LangSetTable;
 		LangSetTable m_aLangSet;   // Mapping to of lang-country to lang
 
-		typedef std::hash_map< rtl::OUString,StaticModuleInformation*,ha,eq > ModInfoTable;
+		typedef std::unordered_map< rtl::OUString,StaticModuleInformation*,ha,eq > ModInfoTable;
 		ModInfoTable m_aModInfo;   // Module information
 
-		typedef std::hash_map< rtl::OUString,KeywordInfo*,ha,eq > KeywordInfoTable;
+		typedef std::unordered_map< rtl::OUString,KeywordInfo*,ha,eq > KeywordInfoTable;
 		KeywordInfoTable m_aKeywordInfo;   // Module information
 
 		typedef
-		std::hash_map<
+		std::unordered_map<
 		rtl::OUString,
 			 ::com::sun::star::uno::Reference< com::sun::star::container::XHierarchicalNameAccess >,
 			ha,
@@ -349,7 +349,7 @@ namespace chelp {
 		ZipFileTable m_aZipFileTable;   // No closing of an once opened jarfile
 
 		typedef
-		std::hash_map<
+		std::unordered_map<
 		rtl::OUString,
 			 ::com::sun::star::uno::Reference< com::sun::star::i18n::XCollator >,
 			ha,
@@ -374,7 +374,7 @@ namespace chelp {
 		};
 
 		typedef
-		std::hash_set<
+		std::unordered_set<
 			rtl::OString,
 			ostring_ha,
 			ostring_eq >      EmptyActiveTextSet;
@@ -400,7 +400,7 @@ namespace chelp {
 	};
 
 	// Hashtable to cache extension help status
-	typedef std::hash_map
+	typedef std::unordered_map
 	<
 		::rtl::OUString,
 		bool,

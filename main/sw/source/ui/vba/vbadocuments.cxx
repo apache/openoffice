@@ -51,7 +51,7 @@
 #include "vbadocuments.hxx"
 #include <vbahelper/vbahelper.hxx>
 
-#include <hash_map>
+#include <unordered_map>
 #include <osl/file.hxx>
 using namespace ::ooo::vba;
 using namespace ::com::sun::star;

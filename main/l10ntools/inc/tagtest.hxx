@@ -26,7 +26,7 @@
 
 #include <tools/string.hxx>
 #include <tools/list.hxx>
-#include <hash_map> /* std::hashmap*/
+#include <unordered_map> /* std::hashmap*/
 #include <rtl/string.h>
 
 class GSILine;
@@ -60,7 +60,7 @@ struct hashByteString{
 
 
 
-typedef std::hash_map<ByteString , String , hashByteString,equalByteString>
+typedef std::unordered_map<ByteString , String , hashByteString,equalByteString>
                                 StringHashMap;
 
 class TokenInfo

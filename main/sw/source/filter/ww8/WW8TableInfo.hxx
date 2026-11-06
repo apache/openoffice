@@ -23,7 +23,7 @@
 
 #ifndef WW8_TABLE_INFO_HXX
 #define WW8_TABLE_INFO_HXX
-#include <hash_map>
+#include <unordered_map>
 #include <string>
 #include <map>
 #include <vector>
@@ -291,13 +291,13 @@ public:
 class WW8TableInfo
 {
     friend class WW8TableNodeInfoInner;
-    typedef hash_map<const SwNode *, WW8TableNodeInfo::Pointer_t, hashNode > Map_t;
+    typedef unordered_map<const SwNode *, WW8TableNodeInfo::Pointer_t, hashNode > Map_t;
     Map_t mMap;
 
-    typedef hash_map<const SwTable *, WW8TableCellGrid::Pointer_t, hashTable > CellGridMap_t;
+    typedef unordered_map<const SwTable *, WW8TableCellGrid::Pointer_t, hashTable > CellGridMap_t;
     CellGridMap_t mCellGridMap;
 
-    typedef hash_map<const SwTable *, const SwNode *, hashTable > FirstInTableMap_t;
+    typedef unordered_map<const SwTable *, const SwNode *, hashTable > FirstInTableMap_t;
     FirstInTableMap_t mFirstInTableMap;
 
     WW8TableNodeInfo *

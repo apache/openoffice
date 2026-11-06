@@ -49,8 +49,8 @@ using namespace ::com::sun::star;
 using ::rtl::OUString;
 using ::std::vector;
 using ::std::pair;
-using ::std::hash_map;
-using ::std::hash_set;
+using ::std::unordered_map;
+using ::std::unordered_set;
 using ::std::unique_ptr;
 using ::com::sun::star::i18n::LocaleDataItem;
 using ::com::sun::star::uno::Exception;
@@ -292,7 +292,7 @@ bool ScDPCacheTable::isRowActive(sal_Int32 nRow) const
     return maRowsVisible[nRow];
 }
 
-void ScDPCacheTable::filterByPageDimension(const vector<Criterion>& rCriteria, const hash_set<sal_Int32>& rRepeatIfEmptyDims)
+void ScDPCacheTable::filterByPageDimension(const vector<Criterion>& rCriteria, const unordered_set<sal_Int32>& rRepeatIfEmptyDims)
 {
     sal_Int32 nRowSize = getRowSize();
     if (nRowSize != static_cast<sal_Int32>(maRowsVisible.size()))
@@ -349,7 +349,7 @@ const ::std::vector<SCROW>&  ScDPCacheTable::getFieldEntries( sal_Int32 nColumn 
 }
 
 void ScDPCacheTable::filterTable(const vector<Criterion>& rCriteria, Sequence< Sequence<Any> >& rTabData,
-                                 const hash_set<sal_Int32>& rRepeatIfEmptyDims)
+                                 const unordered_set<sal_Int32>& rRepeatIfEmptyDims)
 {
     sal_Int32 nRowSize = getRowSize();
     sal_Int32 nColSize = getColSize();
@@ -430,7 +430,7 @@ bool ScDPCacheTable::empty() const
 }
 
 bool ScDPCacheTable::isRowQualified(sal_Int32 nRow, const vector<Criterion>& rCriteria,
-                                    const hash_set<sal_Int32>& rRepeatIfEmptyDims) const
+                                    const unordered_set<sal_Int32>& rRepeatIfEmptyDims) const
 {
     sal_Int32 nColSize = getColSize();
     vector<Criterion>::const_iterator itrEnd = rCriteria.end();

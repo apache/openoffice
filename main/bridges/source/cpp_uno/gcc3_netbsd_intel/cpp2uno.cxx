@@ -24,7 +24,7 @@
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_bridges.hxx"
 
-#include <hash_map>
+#include <unordered_map>
 
 #include <sal/alloca.h>
 #include <rtl/alloc.h>
@@ -401,7 +401,7 @@ void cpp_vtable_call( int nTableEntry, void** pCallStack )
 //==================================================================================================
 class MediateClassData
 {
-    typedef ::std::hash_map< OUString, void *, OUStringHash > t_classdata_map;
+    typedef ::std::unordered_map< OUString, void *, OUStringHash > t_classdata_map;
 	t_classdata_map m_map;
 	Mutex m_mutex;
 

@@ -30,7 +30,7 @@
 */
 #include <vector>
 #include <list>
-#include <hash_map>
+#include <unordered_map>
 
 //_________________________________________________________________________________________________________________
 //	my own includes
@@ -157,7 +157,7 @@ namespace framework
 
             void clear();
 
-            typedef std::hash_map< rtl::OUString,
+            typedef std::unordered_map< rtl::OUString,
                                    sal_Bool,
                                    rtl::OUStringHash,
                                    ::std::equal_to< ::rtl::OUString > > ImageNameMap;

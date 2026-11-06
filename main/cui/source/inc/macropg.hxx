@@ -36,10 +36,10 @@
 #endif
 #include <rtl/ustring.hxx>
 
-#include <hash_map>
+#include <unordered_map>
 #include <vector>
 
-typedef ::std::hash_map< ::rtl::OUString, ::std::pair< ::rtl::OUString, ::rtl::OUString >, ::rtl::OUStringHash, ::std::equal_to< ::rtl::OUString > > EventsHash;
+typedef ::std::unordered_map< ::rtl::OUString, ::std::pair< ::rtl::OUString, ::rtl::OUString >, ::rtl::OUStringHash, ::std::equal_to< ::rtl::OUString > > EventsHash;
 
 struct EventDisplayName
 {

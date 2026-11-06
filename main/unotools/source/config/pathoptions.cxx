@@ -55,7 +55,7 @@
 #include <itemholder1.hxx>
 
 #include <vector>
-#include <hash_map>
+#include <unordered_map>
 
 using namespace osl;
 using namespace utl;
@@ -106,19 +106,19 @@ enum VarNameProperty
 	VAR_NEEDS_FILEURL
 };
 
-class NameToHandleMap : public ::std::hash_map<	::rtl::OUString, sal_Int32, OUStringHashCode, ::std::equal_to< ::rtl::OUString > >
+class NameToHandleMap : public ::std::unordered_map<	::rtl::OUString, sal_Int32, OUStringHashCode, ::std::equal_to< ::rtl::OUString > >
 {
 	public:
 		inline void free() { NameToHandleMap().swap( *this ); }
 };
 
-class EnumToHandleMap : public ::std::hash_map< sal_Int32, sal_Int32, std::hash< sal_Int32 >, std::equal_to< sal_Int32 > >
+class EnumToHandleMap : public ::std::unordered_map< sal_Int32, sal_Int32, std::hash< sal_Int32 >, std::equal_to< sal_Int32 > >
 {
 	public:
 		inline void free() { EnumToHandleMap().swap( *this ); }
 };
 
-class VarNameToEnumMap : public ::std::hash_map< OUString, VarNameProperty, OUStringHashCode, ::std::equal_to< OUString > >
+class VarNameToEnumMap : public ::std::unordered_map< OUString, VarNameProperty, OUStringHashCode, ::std::equal_to< OUString > >
 {
 	public:
 		inline void free() { VarNameToEnumMap().swap( *this ); }

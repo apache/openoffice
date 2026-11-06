@@ -300,7 +300,7 @@ namespace
     drawing framework and the enums defined in the ViewShell class.
 */
 class FrameworkHelper::ViewURLMap
-    : public ::std::hash_map<
+    : public ::std::unordered_map<
           rtl::OUString,
           ViewShell::ShellType,
           ::comphelper::UStringHash,

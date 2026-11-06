@@ -27,8 +27,8 @@
 #include <osl/diagnose.h>
 #include <rtl/ustrbuf.hxx>
 
-#include <hash_map>
-#include <hash_set>
+#include <unordered_map>
+#include <unordered_set>
 #include <list>
 #include <uno/mapping.hxx>
 #include <uno/dispatcher.h>
@@ -282,7 +282,7 @@ struct equaltoRef_Impl
 		{ return rName1 == rName2; }
 };
 
-typedef hash_set
+typedef unordered_set
 <
 	Reference<XInterface >,
 	hashRef_Impl,
@@ -436,14 +436,14 @@ struct hashOWString_Impl
 		{ return rName.hashCode(); }
 };
 
-typedef hash_set
+typedef unordered_set
 <
 	OUString,
 	hashOWString_Impl,
 	equalOWString_Impl
 > HashSet_OWString;
 
-typedef hash_multimap
+typedef unordered_multimap
 <
 	OUString,
 	Reference<XInterface >,
@@ -451,7 +451,7 @@ typedef hash_multimap
 	equalOWString_Impl
 > HashMultimap_OWString_Interface;
 
-typedef hash_map
+typedef unordered_map
 <
 	OUString,
 	Reference<XInterface >,

@@ -26,7 +26,7 @@
 #include <vector>
 #include <algorithm>
 #include <memory>
-#include <hash_map>
+#include <unordered_map>
 
 #include "migration.hxx"
 
@@ -133,7 +133,7 @@ struct MigrationItem
 	::rtl::OUString GetPrevSibling() const { return m_sPrevSibling; }
 };
 
-typedef ::std::hash_map< ::rtl::OUString,
+typedef ::std::unordered_map< ::rtl::OUString,
 						 ::std::vector< MigrationItem >,
 						 ::rtl::OUStringHash,
 						 ::std::equal_to< ::rtl::OUString > > MigrationHashMap;

@@ -34,8 +34,8 @@
 #include "scmatrix.hxx"
 #include "rangelst.hxx"
 
-#include <hash_map>
-#include <hash_set>
+#include <unordered_map>
+#include <unordered_set>
 #include <boost/shared_ptr.hpp>
 #include <vector>
 #include <list>
@@ -116,8 +116,8 @@ private:
         TokenRef    mxToken;
         sal_uInt32  mnFmtIndex;
     };
-    typedef ::std::hash_map<SCCOL, Cell>            RowDataType;
-    typedef ::std::hash_map<SCROW, RowDataType>     RowsDataType;
+    typedef ::std::unordered_map<SCCOL, Cell>            RowDataType;
+    typedef ::std::unordered_map<SCROW, RowDataType>     RowsDataType;
 
 public:
     // SUNWS needs a forward declared friend, otherwise types and members
@@ -202,7 +202,7 @@ public:
     };
 
     typedef ::boost::shared_ptr<Table>      TableTypeRef;
-    typedef ::std::hash_map<String, size_t, ScStringHashCode>   TableNameIndexMap;
+    typedef ::std::unordered_map<String, size_t, ScStringHashCode>   TableNameIndexMap;
 
     ScExternalRefCache();
     ~ScExternalRefCache();
@@ -316,9 +316,9 @@ private:
         }
     };
 
-    typedef ::std::hash_map<String, TokenArrayRef, ScStringHashCode>    RangeNameMap;
-    typedef ::std::hash_map<ScRange, TokenArrayRef, RangeHash>          RangeArrayMap;
-    typedef ::std::hash_map<String, String, ScStringHashCode>           NamePairMap;
+    typedef ::std::unordered_map<String, TokenArrayRef, ScStringHashCode>    RangeNameMap;
+    typedef ::std::unordered_map<ScRange, TokenArrayRef, RangeHash>          RangeArrayMap;
+    typedef ::std::unordered_map<String, String, ScStringHashCode>           NamePairMap;
 
     // SUNWS needs a forward declared friend, otherwise types and members
     // of the outer class are not accessible.
@@ -345,7 +345,7 @@ private:
 
         DocItem() : mbInitFromSource(false) {}
     };
-    typedef ::std::hash_map<sal_uInt16, DocItem>  DocDataType;
+    typedef ::std::unordered_map<sal_uInt16, DocItem>  DocDataType;
     DocItem* getDocItem(sal_uInt16 nFileId) const;
 
 private:
@@ -359,7 +359,7 @@ class SC_DLLPUBLIC ScExternalRefManager : public formula::ExternalReferenceHelpe
 public:
 
     typedef ::std::set<ScFormulaCell*>                      RefCellSet;
-    typedef ::std::hash_map<sal_uInt16, RefCellSet>         RefCellMap;
+    typedef ::std::unordered_map<sal_uInt16, RefCellSet>         RefCellMap;
 
     enum LinkUpdateType { LINK_MODIFIED, LINK_BROKEN };
 
@@ -407,14 +407,14 @@ private:
         Time                maLastAccess;
     };
 
-    typedef ::std::hash_map<sal_uInt16, SrcShell>           DocShellMap;
-    typedef ::std::hash_map<sal_uInt16, bool>               LinkedDocMap;
+    typedef ::std::unordered_map<sal_uInt16, SrcShell>           DocShellMap;
+    typedef ::std::unordered_map<sal_uInt16, bool>               LinkedDocMap;
 
-    typedef ::std::hash_map<sal_uInt16, SvNumberFormatterMergeMap> NumFmtMap;
+    typedef ::std::unordered_map<sal_uInt16, SvNumberFormatterMergeMap> NumFmtMap;
 
 
-    typedef ::std::hash_set<LinkListener*, LinkListener::Hash>  LinkListeners;
-    typedef ::std::hash_map<sal_uInt16, LinkListeners>          LinkListenerMap;
+    typedef ::std::unordered_set<LinkListener*, LinkListener::Hash>  LinkListeners;
+    typedef ::std::unordered_map<sal_uInt16, LinkListeners>          LinkListenerMap;
 
 public:
     /** Source document meta-data container. */

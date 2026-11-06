@@ -25,7 +25,7 @@
 
 #include <sal/types.h>
 #include <rtl/string.hxx>
-#include <hash_map>
+#include <unordered_map>
 
 typedef sal_uInt32 Atom;
 
@@ -34,8 +34,8 @@ typedef sal_uInt32 Atom;
 class AtomContainer
 {
     Atom m_nNextID;
-    std::hash_map< rtl::OString, Atom, rtl::OStringHash > m_aStringToID;
-    std::hash_map< Atom, rtl::OString > m_aIDToString;
+    std::unordered_map< rtl::OString, Atom, rtl::OStringHash > m_aStringToID;
+    std::unordered_map< Atom, rtl::OString > m_aIDToString;
 
     public:
     AtomContainer();

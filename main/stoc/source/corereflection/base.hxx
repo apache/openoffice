@@ -39,7 +39,7 @@
 #include <list>
 #include <algorithm>
 #endif
-#include <hash_map>
+#include <unordered_map>
 
 #include <com/sun/star/uno/XComponentContext.hpp>
 #include <com/sun/star/lang/XServiceInfo.hpp>
@@ -89,9 +89,9 @@ inline typelib_TypeDescription * getTypeByName( const OUString & rName )
 	return pTypeDescr;
 }
 
-typedef std::hash_map< OUString, WeakReference< XIdlField >,
+typedef std::unordered_map< OUString, WeakReference< XIdlField >,
 	FctHashOUString, equal_to< OUString > > OUString2Field;
-typedef std::hash_map< OUString, WeakReference< XIdlMethod >,
+typedef std::unordered_map< OUString, WeakReference< XIdlMethod >,
 	FctHashOUString, equal_to< OUString > > OUString2Method;
 
 //==================================================================================================

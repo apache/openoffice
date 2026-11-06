@@ -29,7 +29,7 @@
 #include <vcl/fixed.hxx>
 #include <vcl/lstbox.hxx>
 
-#include <hash_map>
+#include <unordered_map>
 
 class ScViewData;
 class ScDocument;
@@ -74,7 +74,7 @@ private:
 	ScRangePairListRef	xColNameRanges;
 	ScRangePairListRef	xRowNameRanges;
 
-    typedef ::std::hash_map< String, ScRange, ScStringHashCode, ::std::equal_to<String> > NameRangeMap;
+    typedef ::std::unordered_map< String, ScRange, ScStringHashCode, ::std::equal_to<String> > NameRangeMap;
     NameRangeMap    aRangeMap;
 	ScViewData*		pViewData;
 	ScDocument*		pDoc;

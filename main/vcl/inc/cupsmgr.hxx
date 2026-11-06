@@ -44,13 +44,13 @@ struct FPtrHash
 class CUPSManager : public PrinterInfoManager
 {
     CUPSWrapper*												m_pCUPSWrapper;
-    std::hash_map< FILE*, rtl::OString, FPtrHash >				m_aSpoolFiles;
+    std::unordered_map< FILE*, rtl::OString, FPtrHash >				m_aSpoolFiles;
     int															m_nDests;
     void*														m_pDests;
     bool														m_bNewDests;
-    std::hash_map< rtl::OUString, int, rtl::OUStringHash >		m_aCUPSDestMap;
+    std::unordered_map< rtl::OUString, int, rtl::OUStringHash >		m_aCUPSDestMap;
 
-    std::hash_map< rtl::OUString, PPDContext, rtl::OUStringHash > m_aDefaultContexts;
+    std::unordered_map< rtl::OUString, PPDContext, rtl::OUStringHash > m_aDefaultContexts;
 
     rtl::OString												m_aUser;
     // this is a security risk, but the CUPS API demands

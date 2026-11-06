@@ -29,7 +29,7 @@
 */
 #include <vector>
 #include <list>
-#include <hash_map>
+#include <unordered_map>
 
 //_________________________________________________________________________________________________________________
 //      my own includes
@@ -106,7 +106,7 @@ struct SubstitutePathNotify
     const com::sun::star::uno::Sequence<rtl::OUString> aPropertyNames;
 };
 
-class SubstituteVariables : public ::std::hash_map< ::rtl::OUString,
+class SubstituteVariables : public ::std::unordered_map< ::rtl::OUString,
                                                     SubstituteRule,
                                                     rtl::OUStringHash,
                                                     ::std::equal_to< ::rtl::OUString > >
@@ -268,7 +268,7 @@ class SubstitutePathVariables : private ThreadHelpBase, // Struct for right init
             ::rtl::OUString impl_getSubstituteVariableValue( const ::rtl::OUString& variable );
 
         private:
-            class VarNameToIndexMap : public std::hash_map< ::rtl::OUString,
+            class VarNameToIndexMap : public std::unordered_map< ::rtl::OUString,
                                                             PreDefVariable,
                                                             rtl::OUStringHash,
                                                             ::std::equal_to< ::rtl::OUString > >

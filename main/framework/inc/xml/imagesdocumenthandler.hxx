@@ -40,7 +40,7 @@
 #include <rtl/ustring.hxx>
 #include <cppuhelper/implbase1.hxx>
 
-#include <hash_map>
+#include <unordered_map>
 #include <stdtypes.h>
 
 
@@ -109,7 +109,7 @@ class OReadImagesDocumentHandler : private ThreadHelpBase,	// Struct for right i
 	private:
 		::rtl::OUString getErrorLineString();
 
-		class ImageHashMap : public ::std::hash_map< ::rtl::OUString		,
+		class ImageHashMap : public ::std::unordered_map< ::rtl::OUString		,
 													 Image_XML_Entry		,
 													 rtl::OUStringHash,
 													 ::std::equal_to< ::rtl::OUString >	>

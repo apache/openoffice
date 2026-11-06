@@ -160,7 +160,7 @@ ScriptStorageManager::setupAnyStorage(
             UNO_QUERY_THROW
         );
 
-        // and place it in the hash_map. Increment the counter
+        // and place it in the unordered_map. Increment the counter
         m_ScriptStorageMap[ m_count++ ] = xInterface;
         sal_Int32 sid =  m_count - 1;
 

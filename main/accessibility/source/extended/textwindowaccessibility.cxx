@@ -35,7 +35,7 @@
 
 #include <algorithm>
 #include <vector>
-#include <hash_map>
+#include <unordered_map>
 
 namespace css = ::com::sun::star;
 

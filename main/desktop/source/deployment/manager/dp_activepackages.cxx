@@ -36,7 +36,7 @@
 #include "rtl/uri.h"
 #include "rtl/uri.hxx"
 #include "rtl/ustring.hxx"
-#include <hash_map>
+#include <unordered_map>
 
 #include "dp_identifier.hxx"
 #include "dp_persmap.h"

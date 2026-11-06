@@ -41,7 +41,7 @@
 #include <vcl/svapp.hxx>
 #include <vos/mutex.hxx>
 
-#include <hash_map>
+#include <unordered_map>
 #include <algorithm>
 #include <functional>
 

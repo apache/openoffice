@@ -46,7 +46,7 @@
 //	other includes
 //_________________________________________________________________________________________________________________
 
-#include <hash_map>
+#include <unordered_map>
 
 namespace framework
 {

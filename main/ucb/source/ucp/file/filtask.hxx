@@ -24,7 +24,7 @@
 #define _FILTASK_HXX_
 #endif
 
-#include <hash_map>
+#include <unordered_map>
 #include <rtl/ustring.hxx>
 
 #include "osl/mutex.hxx"
@@ -143,7 +143,7 @@ namespace fileaccess
         };  // end class TaskHandling
 
 
-        typedef std::hash_map< sal_Int32,TaskHandling,std::hash< sal_Int32 > > TaskMap;
+        typedef std::unordered_map< sal_Int32,TaskHandling,std::hash< sal_Int32 > > TaskMap;
 
 
     private:

@@ -33,7 +33,7 @@
 #include <unotools/fontdefs.hxx>
 #include <vcl/vclenum.hxx>
 
-#include <hash_map>
+#include <unordered_map>
 
 class ImplDevFontListData;
 class ImplGetDevFontList;
@@ -188,7 +188,7 @@ private:
     mutable bool            mbMatchData;    // true if matching attributes are initialized
     bool                    mbMapNames;     // true if MapNames are available
 
-    typedef std::hash_map<const String, ImplDevFontListData*,FontNameHash> DevFontList;
+    typedef std::unordered_map<const String, ImplDevFontListData*,FontNameHash> DevFontList;
     DevFontList             maDevFontList;
 
     ImplPreMatchFontSubstitution* mpPreMatchHook;       // device specific prematch substitution
@@ -347,7 +347,7 @@ private:
     // TODO: at least the ones which just differ in orientation, stretching or height
     typedef ::std::pair<sal_UCS4,FontWeight> GFBCacheKey;
     struct GFBCacheKey_Hash{ size_t operator()( const GFBCacheKey& ) const; };
-    typedef ::std::hash_map<GFBCacheKey,String,GFBCacheKey_Hash> UnicodeFallbackList;
+    typedef ::std::unordered_map<GFBCacheKey,String,GFBCacheKey_Hash> UnicodeFallbackList;
     UnicodeFallbackList* mpUnicodeFallbackList;
 };
 

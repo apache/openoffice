@@ -29,7 +29,7 @@
 #include <outfont.hxx>
 #include <impfont.hxx>
 
-#include <hash_set>
+#include <unordered_set>
 
 class ImplOs2FontEntry;
 
@@ -105,7 +105,7 @@ private:
 #ifdef GNG_VERT_HACK
     void                    ReadGsubTable( HDC ) const;
 
-    typedef std::hash_set<int> IntHashSet;
+    typedef std::unordered_set<int> IntHashSet;
     mutable IntHashSet      maGsubTable;
     mutable bool            mbGsubRead;
 public:

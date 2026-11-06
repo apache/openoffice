@@ -335,7 +335,7 @@ ImplPrnQueueList::~ImplPrnQueueList()
 
 void ImplPrnQueueList::Add( SalPrinterQueueInfo* pData )
 {
-    std::hash_map< rtl::OUString, sal_Int32, rtl::OUStringHash >::iterator it =
+    std::unordered_map< rtl::OUString, sal_Int32, rtl::OUStringHash >::iterator it =
         m_aNameToIndex.find( pData->maPrinterName );
     if( it == m_aNameToIndex.end() )
     {
@@ -360,7 +360,7 @@ void ImplPrnQueueList::Add( SalPrinterQueueInfo* pData )
 ImplPrnQueueData* ImplPrnQueueList::Get( const rtl::OUString& rPrinter )
 {
     ImplPrnQueueData* pData = NULL;
-    std::hash_map<rtl::OUString,sal_Int32,rtl::OUStringHash>::iterator it =
+    std::unordered_map<rtl::OUString,sal_Int32,rtl::OUStringHash>::iterator it =
         m_aNameToIndex.find( rPrinter );
     if( it != m_aNameToIndex.end() )
         pData = &m_aQueueInfos[it->second];
@@ -1295,7 +1295,7 @@ rtl::OUString Printer::GetPaperName( Paper ePaper )
 	ImplSVData* pSVData = ImplGetSVData();
 	if( ! pSVData->mpPaperNames )
 	{
-		pSVData->mpPaperNames = new std::hash_map< int, rtl::OUString >();
+		pSVData->mpPaperNames = new std::unordered_map< int, rtl::OUString >();
 		if( ImplGetResMgr() )
 		{
 			ResStringArray aPaperStrings( VclResId( RID_STR_PAPERNAMES ) );
@@ -1315,7 +1315,7 @@ rtl::OUString Printer::GetPaperName( Paper ePaper )
 		}
 	}
 
-	std::hash_map<int,rtl::OUString>::const_iterator it = pSVData->mpPaperNames->find( (int)ePaper );
+	std::unordered_map<int,rtl::OUString>::const_iterator it = pSVData->mpPaperNames->find( (int)ePaper );
 	return (it != pSVData->mpPaperNames->end()) ? it->second : rtl::OUString();
 }
 

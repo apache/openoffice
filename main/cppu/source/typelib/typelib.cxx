@@ -24,7 +24,7 @@
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_cppu.hxx"
 
-#include <hash_map>
+#include <unordered_map>
 #include <list>
 #include <set>
 #include <vector>
@@ -177,7 +177,7 @@ struct hashStr_Impl
 
 //-----------------------------------------------------------------------------
 // Heavy hack, the const sal_Unicode * is held by the type description reference
-typedef hash_map< const sal_Unicode *, typelib_TypeDescriptionReference *,
+typedef unordered_map< const sal_Unicode *, typelib_TypeDescriptionReference *,
 				  hashStr_Impl, equalStr_Impl > WeakMap_Impl;
 
 typedef pair< void *, typelib_typedescription_Callback > CallbackEntry;

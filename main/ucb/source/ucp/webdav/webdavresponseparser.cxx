@@ -35,7 +35,7 @@
 #include <com/sun/star/ucb/LockScope.hpp>
 #include <com/sun/star/ucb/LockType.hpp>
 #include <map>
-#include <hash_map>
+#include <unordered_map>
 
 //////////////////////////////////////////////////////////////////////////////
 
@@ -74,7 +74,7 @@ namespace
 } // end of anonymous namespace
 
 //////////////////////////////////////////////////////////////////////////////
-// WebDAVName enum and StringToEnum converter using hash_map
+// WebDAVName enum and StringToEnum converter using unordered_map
 
 namespace
 {
@@ -112,7 +112,7 @@ namespace
 
     WebDAVName StrToWebDAVName(const rtl::OUString& rStr)
     {
-        typedef std::hash_map< rtl::OUString, WebDAVName, rtl::OUStringHash > WebDAVNameMapper;
+        typedef std::unordered_map< rtl::OUString, WebDAVName, rtl::OUStringHash > WebDAVNameMapper;
         typedef std::pair< rtl::OUString, WebDAVName > WebDAVNameValueType;
         static WebDAVNameMapper aWebDAVNameMapperList;
 

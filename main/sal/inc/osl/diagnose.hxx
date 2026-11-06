@@ -27,7 +27,7 @@
 #include "osl/interlck.h"
 #include "osl/mutex.hxx"
 #include "rtl/instance.hxx"
-#include <hash_set>
+#include <unordered_set>
 #include <functional>
 #include <typeinfo>
 
@@ -82,7 +82,7 @@ struct VoidPtrHash {
     }
 };
 
-typedef ::std::hash_set<void const*, VoidPtrHash, ::std::equal_to<void const*> > VoidPointerSet;
+typedef ::std::unordered_set<void const*, VoidPtrHash, ::std::equal_to<void const*> > VoidPointerSet;
 
 struct ObjectRegistryData {
     ObjectRegistryData( ::std::type_info const& rTypeInfo )

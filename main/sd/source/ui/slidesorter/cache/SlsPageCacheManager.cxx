@@ -128,7 +128,7 @@ namespace sd { namespace slidesorter { namespace cache {
 /** Container for the active caches.
 */
 class PageCacheManager::PageCacheContainer
-    : public ::std::hash_map<CacheDescriptor,
+    : public ::std::unordered_map<CacheDescriptor,
                              ::boost::shared_ptr<PageCacheManager::Cache>,
                              CacheDescriptor::Hash,
                              CacheDescriptor::Equal>

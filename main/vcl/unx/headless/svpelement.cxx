@@ -38,7 +38,7 @@
 #include "svpframe.hxx"
 
 #include <list>
-#include <hash_map>
+#include <unordered_map>
 
 #include <sys/types.h>
 #include <sys/socket.h>
@@ -169,14 +169,14 @@ IMPL_LINK( SvpElementContainer, processRequest, void*, pSocket )
     rtl::OString aCommand( aBuf.makeStringAndClear() );
     if( aCommand.compareTo( "list", 4 ) == 0 )
     {
-        std::hash_map< rtl::OString, std::list<SvpElement*>, rtl::OStringHash > aMap;
+        std::unordered_map< rtl::OString, std::list<SvpElement*>, rtl::OStringHash > aMap;
         for( std::list< SvpElement* >::const_iterator it = m_aElements.begin();
              it != m_aElements.end(); ++it )
         {
             std::list<SvpElement*>& rList = aMap[matchType(*it)];
             rList.push_back( *it );
         }
-        for( std::hash_map< rtl::OString, std::list<SvpElement*>, rtl::OStringHash>::const_iterator hash_it = aMap.begin();
+        for( std::unordered_map< rtl::OString, std::list<SvpElement*>, rtl::OStringHash>::const_iterator hash_it = aMap.begin();
              hash_it != aMap.end(); ++hash_it )
         {
             aAnswer.append( "ElementType: " );

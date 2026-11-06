@@ -28,7 +28,7 @@
 // includes
 
 #ifndef INCLUDED_HASH_MAP
-#include <hash_map>
+#include <unordered_map>
 #define INCLUDED_HASH_MAP
 #endif
 
@@ -70,7 +70,7 @@ namespace comphelper{
             such name sequences very easy ...
  */
 
-struct SequenceAsHashMapBase : public ::std::hash_map<
+struct SequenceAsHashMapBase : public ::std::unordered_map<
 	::rtl::OUString                    ,
 	::com::sun::star::uno::Any         ,
 	::rtl::OUStringHash                ,

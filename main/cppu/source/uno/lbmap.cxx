@@ -26,7 +26,7 @@
 
 #include "IdentityMapping.hxx"
 
-#include <hash_map>
+#include <unordered_map>
 #include <set>
 #include <algorithm>
 
@@ -141,9 +141,9 @@ struct FctPtrHash
 		{ return (size_t)pKey; }
 };
 
-typedef hash_map<
+typedef unordered_map<
     OUString, MappingEntry *, FctOUStringHash, equal_to< OUString > > t_OUString2Entry;
-typedef hash_map<
+typedef unordered_map<
     uno_Mapping *, MappingEntry *, FctPtrHash, equal_to< uno_Mapping * > > t_Mapping2Entry;
 
 typedef set< uno_getMappingFunc > t_CallbackSet;

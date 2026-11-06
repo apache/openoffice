@@ -38,7 +38,7 @@
 #include <osl/conditn.hxx>
 #endif
 
-#include <hash_map>
+#include <unordered_map>
 #include <list>
 
 #include "tools/prex.h"
@@ -156,7 +156,7 @@ namespace x11 {
 		>,
 		public SelectionAdaptor
 	{
-		static ::std::hash_map< ::rtl::OUString, SelectionManager*, ::rtl::OUStringHash >& getInstances();
+		static ::std::unordered_map< ::rtl::OUString, SelectionManager*, ::rtl::OUStringHash >& getInstances();
 
 		// for INCR type selection transfer
 		// INCR protocol is used if the data cannot
@@ -326,7 +326,7 @@ namespace x11 {
 		// drag and drop
 
 		int							m_nCurrentProtocolVersion;
-		::std::hash_map< XLIB_Window, DropTargetEntry >
+		::std::unordered_map< XLIB_Window, DropTargetEntry >
 									m_aDropTargets;
 
 		// some special atoms that are needed often
@@ -356,16 +356,16 @@ namespace x11 {
 		Atom						m_nXdndActionPrivate;
 
 		// caching for atoms
-		::std::hash_map< Atom, ::rtl::OUString >
+		::std::unordered_map< Atom, ::rtl::OUString >
 									m_aAtomToString;
-		::std::hash_map< ::rtl::OUString, Atom, ::rtl::OUStringHash >
+		::std::unordered_map< ::rtl::OUString, Atom, ::rtl::OUStringHash >
 									m_aStringToAtom;
 
 		// the registered selections
-		::std::hash_map< Atom, Selection* >
+		::std::unordered_map< Atom, Selection* >
 									m_aSelections;
 		// IncrementalTransfers in progress
-		std::hash_map< XLIB_Window, std::hash_map< Atom, IncrementalTransfer > >
+		std::unordered_map< XLIB_Window, std::unordered_map< Atom, IncrementalTransfer > >
 									m_aIncrementals;
 
 		// do not use X11 multithreading capabilities

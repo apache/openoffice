@@ -25,7 +25,7 @@
 
 #include "TResultSetHelper.hxx"
 #include <rtl/alloc.h>
-#include <hash_map>
+#include <unordered_map>
 #include <vector>
 #include "connectivity/dbtoolsdllapi.hxx"
 

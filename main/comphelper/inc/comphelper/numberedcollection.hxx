@@ -39,7 +39,7 @@
 #include <cppuhelper/implbase1.hxx>
 
 #include <vector>
-#include <hash_map>
+#include <unordered_map>
 
 //_______________________________________________
 // namespace
@@ -76,7 +76,7 @@ class COMPHELPER_DLLPUBLIC NumberedCollection : private ::cppu::BaseMutex
             ::sal_Int32 nNumber;
         };
 
-        typedef ::std::hash_map<
+        typedef ::std::unordered_map<
                     long                    ,
                     TNumberedItem           ,
                     ::std::hash< long >     ,

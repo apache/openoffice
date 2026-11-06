@@ -65,14 +65,14 @@ using namespace ScDPGlobal;
 using namespace com::sun::star::sheet;
 // End Comments
 
-#include <hash_map>
+#include <unordered_map>
 
 using namespace com::sun::star;
 using ::com::sun::star::uno::Reference;
 using ::com::sun::star::uno::Any;
 using ::rtl::OUString;
 using ::rtl::OUStringHash;
-using ::std::hash_map;
+using ::std::unordered_map;
 using ::std::unique_ptr;
 
 // -----------------------------------------------------------------------
@@ -714,9 +714,9 @@ void ScDPSaveDimension::WriteToSource( const uno::Reference<uno::XInterface>& xD
         ScUnoHelpFunctions::SetOptionalPropertyValue(xDimProp, SC_UNO_HAS_HIDDEN_MEMBER, bHasHiddenMember);
 }
 
-void ScDPSaveDimension::UpdateMemberVisibility(const hash_map<OUString, bool, OUStringHash>& rData)
+void ScDPSaveDimension::UpdateMemberVisibility(const unordered_map<OUString, bool, OUStringHash>& rData)
 {
-    typedef hash_map<OUString, bool, OUStringHash> DataMap;
+    typedef unordered_map<OUString, bool, OUStringHash> DataMap;
     MemberList::iterator itrMem = maMemberList.begin(), itrMemEnd = maMemberList.end();
     for (; itrMem != itrMemEnd; ++itrMem)
     {
@@ -1235,7 +1235,7 @@ void ScDPSaveData::BuildAllDimensionMembers(ScDPTableData* pData)
         return;
 
     // First, build a dimension name-to-index map.
-    typedef hash_map<OUString, long, ::rtl::OUStringHash> NameIndexMap;
+    typedef unordered_map<OUString, long, ::rtl::OUStringHash> NameIndexMap;
     NameIndexMap aMap;
     long nColCount = pData->GetColumnCount();
     for (long i = 0; i < nColCount; ++i)
@@ -1292,7 +1292,7 @@ void ScDPSaveData::BuildAllDimensionMembersFromSource( ScDPObject* pDPObj )
     uno::Sequence<OUString> aDimNames = xDimsName->getElementNames();
 
     // First, build a dimension name-to-index map.
-    typedef hash_map<OUString, long, ::rtl::OUStringHash> NameIndexMap;
+    typedef unordered_map<OUString, long, ::rtl::OUStringHash> NameIndexMap;
     NameIndexMap aMap;
     long nColCount = aDimNames.getLength();
     for (long i = 0; i < nColCount; ++i)

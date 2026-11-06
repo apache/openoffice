@@ -24,7 +24,7 @@
 
 #include <boost/assert.hpp>
 #include <vector>
-#include <hash_map>
+#include <unordered_map>
 #include <set>
 
 #include "salgdi.h"
@@ -67,7 +67,7 @@ public:
 	virtual ImplMacFontData* GetFontDataFromId( sal_IntPtr nFontId ) const;
 
 private:
-	typedef std::hash_map<sal_IntPtr,AtsFontData*> AtsFontContainer;
+	typedef std::unordered_map<sal_IntPtr,AtsFontData*> AtsFontContainer;
 	AtsFontContainer maFontContainer;
 
 	void InitGlyphFallbacks( void );

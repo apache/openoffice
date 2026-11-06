@@ -29,7 +29,7 @@
 #include <com/sun/star/sheet/XDimensionsSupplier.hpp>
 #include <com/sun/star/sheet/DataPilotFieldOrientation.hpp>
 #include "scdllapi.h"
-#include <hash_map>
+#include <unordered_map>
 #include <list>
 #include <memory>
 
@@ -110,7 +110,7 @@ private:
     ::com::sun::star::sheet::DataPilotFieldLayoutInfo* pLayoutInfo;         // (level)
 
 public:
-    typedef	std::hash_map <String, ScDPSaveMember*, rtl::OUStringHash> MemberHash;
+    typedef	std::unordered_map <String, ScDPSaveMember*, rtl::OUStringHash> MemberHash;
     typedef	std::list <ScDPSaveMember*>                                MemberList;
 private:
     MemberHash maMemberHash;
@@ -180,7 +180,7 @@ public:
 									com::sun::star::sheet::XDimensionsSupplier>& xSource ,
 									const	std::list<String> & deletedDims);
 
-    void                    UpdateMemberVisibility(const ::std::hash_map< ::rtl::OUString, bool, ::rtl::OUStringHash>& rData);
+    void                    UpdateMemberVisibility(const ::std::unordered_map< ::rtl::OUString, bool, ::rtl::OUStringHash>& rData);
 
     bool                    HasInvisibleMember() const;
 };

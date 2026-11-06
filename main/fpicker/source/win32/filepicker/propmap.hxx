@@ -24,11 +24,11 @@
 #ifndef _PROPMAP_HXX_
 #define _PROPMAP_HXX_
 
-#include <hash_map>
+#include <unordered_map>
 #include <rtl/ustring.hxx>
 #include <sal/types.h>
 
-typedef ::std::hash_map< ::rtl::OUString                    ,
+typedef ::std::unordered_map< ::rtl::OUString                    ,
                          void*                              ,
                          ::rtl::OUStringHash                ,
                          ::std::equal_to< ::rtl::OUString > > TPropMapBase;

@@ -27,7 +27,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <cxxabi.h>
-#include <hash_map>
+#include <unordered_map>
 
 #include <rtl/strbuf.hxx>
 #include <rtl/ustrbuf.hxx>

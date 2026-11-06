@@ -27,7 +27,7 @@
 #include <rtl/ustring.hxx>
 #include <xmloff/nmspmap.hxx>
 
-#include <hash_map>
+#include <unordered_map>
 #include "TransformerActionInit.hxx"
 #include "TransformerAction.hxx"
 
@@ -144,7 +144,7 @@ struct TransformerAction_Impl
 // -----------------------------------------------------------------------------
 
 class XMLTransformerActions :
-	public ::std::hash_map< NameKey_Impl, TransformerAction_Impl,
+	public ::std::unordered_map< NameKey_Impl, TransformerAction_Impl,
 						    NameHash_Impl, NameHash_Impl >
 {
 public:

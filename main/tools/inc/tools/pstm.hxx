@@ -23,7 +23,7 @@
 #ifndef _PSTM_HXX
 #define _PSTM_HXX
 
-#include <hash_map>
+#include <unordered_map>
 #include "tools/toolsdllapi.h"
 
 #ifndef _TABLE_HXX
@@ -48,7 +48,7 @@ typedef void * (*SvCreateInstancePersist)( SvPersistBase ** );
 
 class TOOLS_DLLPUBLIC SvClassManager
 {
-    typedef std::hash_map< sal_uInt16, SvCreateInstancePersist > Map;
+    typedef std::unordered_map< sal_uInt16, SvCreateInstancePersist > Map;
     Map aAssocTable;
 public:
     void        Register( sal_uInt16 nClassId, SvCreateInstancePersist pFunc );

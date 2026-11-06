@@ -25,7 +25,7 @@
 #define LAYOUT_CORE_ROOT_HXX
 
 #define _BACKWARD_BACKWARD_WARNING_H 1
-#include <hash_map>
+#include <unordered_map>
 
 #include <com/sun/star/awt/XLayoutRoot.hpp>
 #include <com/sun/star/awt/XToolkit.hpp>
@@ -68,7 +68,7 @@ class TOOLKIT_DLLPUBLIC LayoutRoot : public ::cppu::WeakImplHelper3<
 protected:
     ::osl::Mutex maMutex;
 
-    typedef std::hash_map< rtl::OUString,
+    typedef std::unordered_map< rtl::OUString,
                            css::uno::Reference< css::awt::XLayoutConstrains >,
                            ::rtl::OUStringHash > ItemHash;
     ItemHash maItems;

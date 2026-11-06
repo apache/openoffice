@@ -22,7 +22,7 @@
 
 
 #include <stdlib.h>
-#include <hash_map>
+#include <unordered_map>
 
 #include <rtl/alloc.h>
 #include <osl/mutex.hxx>

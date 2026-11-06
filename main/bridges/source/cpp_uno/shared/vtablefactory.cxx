@@ -45,7 +45,7 @@
 #include "sal/types.h"
 #include "typelib/typedescription.hxx"
 
-#include <hash_map>
+#include <unordered_map>
 #include <new>
 #include <vector>
 
@@ -202,7 +202,7 @@ private:
     sal_Int32 calculate(
         typelib_InterfaceTypeDescription * type, sal_Int32 offset);
 
-    typedef std::hash_map< rtl::OUString, sal_Int32, rtl::OUStringHash > Map;
+    typedef std::unordered_map< rtl::OUString, sal_Int32, rtl::OUStringHash > Map;
 
     Map m_map;
 };

@@ -51,7 +51,7 @@
 #include <rtl/ustrbuf.hxx>
 
 #ifndef __SGI_STL_HASH_MAP
-#include <hash_map>
+#include <unordered_map>
 #endif
 
 #include <vcl/event.hxx>

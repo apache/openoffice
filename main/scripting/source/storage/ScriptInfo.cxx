@@ -25,7 +25,7 @@
 #include "precompiled_scripting.hxx"
 #include <cppuhelper/implementationentry.hxx>
 
-#include <hash_map>
+#include <unordered_map>
 
 #include <osl/file.hxx>
 #include <cppuhelper/implbase1.hxx>
@@ -47,7 +47,7 @@ using namespace ::drafts::com::sun::star::script::framework::storage;
 namespace scripting_impl
 {
 
-typedef ::std::hash_map < ::rtl::OUString, css::uno::Any, ::rtl::OUStringHash,
+typedef ::std::unordered_map < ::rtl::OUString, css::uno::Any, ::rtl::OUStringHash,
     ::std::equal_to< ::rtl::OUString > > PropertySet_hash;
 
 class PropertySetImpl : public ::cppu::WeakImplHelper1< css::beans::XPropertySet >

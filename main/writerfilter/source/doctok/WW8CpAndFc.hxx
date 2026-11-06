@@ -29,7 +29,7 @@
 #include <doctok/WW8Document.hxx>
 #endif
 #include <set>
-#include <hash_map>
+#include <unordered_map>
 #include <iostream>
 
 namespace writerfilter {
@@ -348,7 +348,7 @@ struct CpAndFcHash
     }
 };
 
-typedef hash_map<Cp, Fc, CpHash, CpEq> Cp2FcHashMap_t;
+typedef unordered_map<Cp, Fc, CpHash, CpEq> Cp2FcHashMap_t;
 
 } // namespace doctok
 } // namespace writerfilter

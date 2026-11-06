@@ -26,10 +26,10 @@
 
 #include <com/sun/star/beans/XPropertySet.hpp>
 
-#include <hash_map>
+#include <unordered_map>
 #include <xmloff/PropertySetInfoHash.hxx>
 
-typedef std::hash_map
+typedef std::unordered_map
 <
 	PropertySetInfoKey,
 	sal_Bool,

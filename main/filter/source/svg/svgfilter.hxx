@@ -57,7 +57,7 @@
 #include <com/sun/star/java/XJavaThreadRegister_11.hpp>
 #include <com/sun/star/lang/XMultiServiceFactory.hpp>
 
-#include <hash_map>
+#include <unordered_map>
 #include <osl/diagnose.h>
 #include <rtl/process.h>
 #include <basegfx/polygon/b2dpolypolygon.hxx>
@@ -225,7 +225,7 @@ class SVGFilter : public cppu::WeakImplHelper4 < XFilter,
                                                  XServiceInfo >
 #endif
 {
-	typedef ::std::hash_map< Reference< XInterface >, ObjectRepresentation, HashReferenceXInterface > ObjectMap;
+	typedef ::std::unordered_map< Reference< XInterface >, ObjectRepresentation, HashReferenceXInterface > ObjectMap;
     typedef ::std::vector< ::rtl::OUString > UniqueIdVector;
 
 private:
