@@ -50,7 +50,7 @@
 #include <basegfx/tools/canvastools.hxx>
 #include <canvas/canvastools.hxx>
 
-#include <boost/scoped_array.hpp>
+#include <memory>
 #include <boost/bind.hpp>
 #include <boost/utility.hpp>
 
@@ -205,7 +205,7 @@ namespace cppcanvas
             {
                 // no external DX array given, create one from given
                 // string
-                ::boost::scoped_array< sal_Int32 > pCharWidths( new sal_Int32[nLen] );
+                ::std::unique_ptr< sal_Int32 []> pCharWidths( new sal_Int32[nLen] );
 
                 rVDev.GetTextArray( rText, pCharWidths.get(),
                                     static_cast<sal_uInt16>(nStartPos),

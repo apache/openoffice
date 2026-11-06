@@ -30,7 +30,7 @@
 #include <vcl/fixed.hxx>
 #include <vcl/field.hxx>
 #include <memory>
-#include <boost/scoped_array.hpp>
+#include <memory>
 #include <svx/sidebar/ColorPopup.hxx>
 #include <memory>
 #include "LineWidthPopup.hxx"
@@ -98,23 +98,23 @@ public:
 
 private:
     //ui controls
-    ::std::unique_ptr< FixedText >                        mpFTWidth;
-    ::std::unique_ptr< Window >                           mpTBWidthBackground;
-    ::std::unique_ptr< ToolBox >                          mpTBWidth;
-    ::std::unique_ptr< FixedText >                        mpFTColor;
-    ::std::unique_ptr< Window >                           mpTBColorBackground;
-    ::std::unique_ptr< ToolBox >                          mpTBColor;
-    ::std::unique_ptr< FixedText >                        mpFTStyle;
-    ::std::unique_ptr< ListBox >                          mpLBStyle;
-    ::std::unique_ptr< FixedText >                        mpFTTrancparency;
-    ::std::unique_ptr< MetricField >                      mpMFTransparent;
-    ::std::unique_ptr< FixedText >                        mpFTArrow;
-    ::std::unique_ptr< ListBox >                          mpLBStart;
-    ::std::unique_ptr< ListBox >                          mpLBEnd;
-    ::std::unique_ptr< FixedText >                        mpFTEdgeStyle;
-    ::std::unique_ptr< ListBox >                          mpLBEdgeStyle;
-    ::std::unique_ptr< FixedText >                        mpFTCapStyle;
-    ::std::unique_ptr< ListBox >                          mpLBCapStyle;
+    ::std::unique_ptr< FixedText []>                        mpFTWidth;
+    ::std::unique_ptr< Window []>                           mpTBWidthBackground;
+    ::std::unique_ptr< ToolBox []>                          mpTBWidth;
+    ::std::unique_ptr< FixedText []>                        mpFTColor;
+    ::std::unique_ptr< Window []>                           mpTBColorBackground;
+    ::std::unique_ptr< ToolBox []>                          mpTBColor;
+    ::std::unique_ptr< FixedText []>                        mpFTStyle;
+    ::std::unique_ptr< ListBox []>                          mpLBStyle;
+    ::std::unique_ptr< FixedText []>                        mpFTTrancparency;
+    ::std::unique_ptr< MetricField []>                      mpMFTransparent;
+    ::std::unique_ptr< FixedText []>                        mpFTArrow;
+    ::std::unique_ptr< ListBox []>                          mpLBStart;
+    ::std::unique_ptr< ListBox []>                          mpLBEnd;
+    ::std::unique_ptr< FixedText []>                        mpFTEdgeStyle;
+    ::std::unique_ptr< ListBox []>                          mpLBEdgeStyle;
+    ::std::unique_ptr< FixedText []>                        mpFTCapStyle;
+    ::std::unique_ptr< ListBox []>                          mpLBCapStyle;
 
     //ControllerItem
     ::sfx2::sidebar::ControllerItem                         maStyleControl;
@@ -130,16 +130,16 @@ private:
     ::sfx2::sidebar::ControllerItem                         maCapStyle;
 
     Color                                                   maColor;
-    ::std::unique_ptr< ::svx::ToolboxButtonColorUpdater > mpColorUpdater;
-    ::std::unique_ptr< XLineStyleItem >                   mpStyleItem;
-    ::std::unique_ptr< XLineDashItem >                    mpDashItem;
+    ::std::unique_ptr< ::svx::ToolboxButtonColorUpdater []> mpColorUpdater;
+    ::std::unique_ptr< XLineStyleItem []>                   mpStyleItem;
+    ::std::unique_ptr< XLineDashItem []>                    mpDashItem;
     sal_uInt16                                              mnTrans;
     SfxMapUnit                                              meMapUnit;
     sal_Int32                                               mnWidthCoreValue;
     XLineEndListSharedPtr                                   maLineEndList;
     XDashListSharedPtr                                      maLineStyleList;
-    ::std::unique_ptr< XLineStartItem >                   mpStartItem;
-    ::std::unique_ptr< XLineEndItem >                     mpEndItem;
+    ::std::unique_ptr< XLineStartItem []>                   mpStartItem;
+    ::std::unique_ptr< XLineEndItem []>                     mpEndItem;
 
     //popup windows
     ColorPopup maColorPopup;
@@ -150,8 +150,8 @@ private:
     Image                                                   maIMGNone;
 
     // multi-images
-    ::boost::scoped_array<Image>                            mpIMGWidthIcon;
-    ::boost::scoped_array<Image>                            mpIMGWidthIconH;	//high contrast
+    ::std::unique_ptr<Image[]>                            mpIMGWidthIcon;
+    ::std::unique_ptr<Image[]>                            mpIMGWidthIconH;	//high contrast
 
     cssu::Reference< css::frame::XFrame >                   mxFrame;
     SfxBindings*                                            mpBindings;
