@@ -32,7 +32,6 @@
 #include "model/SlsPageEnumerationProvider.hxx"
 
 #include <set>
-#include <boost/bind.hpp>
 #include <boost/enable_shared_from_this.hpp>
 #include <memory>
 
@@ -295,10 +294,7 @@ InsertAnimator::Implementation::RunContainer::const_iterator
 	return std::find_if(
 		maRuns.begin(),
 		maRuns.end(),
-		::boost::bind(
-			::std::equal_to<sal_Int32>(),
-			::boost::bind(&PageObjectRun::mnRunIndex, _1),
-			nRunIndex));
+		[nRunIndex](const auto& run) { return nRunIndex == run->mnRunIndex; });
 }
 
 
@@ -483,10 +479,7 @@ void PageObjectRun::RestartAnimation (void)
 		::boost::ref(*this),
 		0,
 		300,
-		::boost::bind(
-			&AnimatorAccess::RemoveRun,
-			::boost::ref(mrAnimatorAccess),
-			shared_from_this()));
+		[&mrAnimatorAccess, self = shared_from_this()]() { mrAnimatorAccess.RemoveRun( self ); });
 }
 
 
