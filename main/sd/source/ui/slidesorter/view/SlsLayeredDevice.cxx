@@ -28,7 +28,6 @@
 #include <vcl/window.hxx>
 #include <vcl/virdev.hxx>
 
-#include <boost/bind.hpp>
 #include <boost/function.hpp>
 #include <memory>
 
@@ -280,9 +279,9 @@ void LayeredDevice::Repaint (const Region& rRepaintRegion)
 	::std::for_each(
 		mpLayers->begin(),
 		mpLayers->end(),
-		::boost::bind(&Layer::Validate, _1, mpTargetWindow->GetMapMode()));
+		[&](auto& layer) { layer.Validate( mpTargetWindow->GetMapMode() ); });
 
-	ForAllRectangles(rRepaintRegion, ::boost::bind(&LayeredDevice::RepaintRectangle, this, _1));
+	ForAllRectangles(rRepaintRegion, [this](auto& rect) { this->RepaintRectangle( rect ); });
 }
 
 
@@ -306,7 +305,7 @@ void LayeredDevice::RepaintRectangle (const Rectangle& rRepaintRectangle)
 		::std::for_each(
 			mpLayers->begin(),
 			mpLayers->end(),
-			::boost::bind(&Layer::Repaint, _1, ::boost::ref(*mpBackBuffer), rRepaintRectangle));
+			[&](auto& layer) { layer.Repaint( *mpBackBuffer, rRepaintRectangle ); });
 
 		DeviceCopy(*mpTargetWindow, *mpBackBuffer, rRepaintRectangle);
 	}
@@ -319,7 +318,7 @@ void LayeredDevice::Resize (void)
 {
 	const Size aSize (mpTargetWindow->GetSizePixel());
 	mpBackBuffer->SetOutputSizePixel(aSize);
-	::std::for_each(mpLayers->begin(), mpLayers->end(), ::boost::bind(&Layer::Resize, _1, aSize));
+	::std::for_each(mpLayers->begin(), mpLayers->end(), [&aSize](auto& layer) { layer.Resize( aSize ); });
 }
 
 
@@ -327,7 +326,7 @@ void LayeredDevice::Resize (void)
 
 void LayeredDevice::Dispose (void)
 {
-	::std::for_each(mpLayers->begin(), mpLayers->end(), ::boost::bind(&Layer::Dispose, _1));
+	::std::for_each(mpLayers->begin(), mpLayers->end(), [](auto& layer) { layer.Dispose(); });
 	mpLayers->clear();
 }
 
@@ -461,7 +460,7 @@ void Layer::Validate (const MapMode& rMapMode)
 		mpLayerDevice->SetMapMode(rMapMode);
 		ForAllRectangles(
 			aRegion,
-			::boost::bind(&Layer::ValidateRectangle, this, _1));
+			[&](auto& rect) { mpLayerDevice->ValidateRectangle( rect ); }));
 	}
 }
 
@@ -500,13 +499,10 @@ void Layer::Repaint (
 	}
 	else
 	{
-		::std::for_each(
-			maPainters.begin(),
-			maPainters.end(),
-			::boost::bind(&ILayerPainter::Paint,
-				_1,
-				::boost::ref(rTargetDevice),
-				rRepaintRectangle));
+			::std::for_each(
+				maPainters.begin(),
+				maPainters.end(),
+				[&](auto& painter) { painter.Paint( rTargetDevice, rRepaintRectangle ); });
 	}
 }
 

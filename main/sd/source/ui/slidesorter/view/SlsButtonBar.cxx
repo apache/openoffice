@@ -49,7 +49,6 @@
 #include <basegfx/polygon/b2dpolygon.hxx>
 #include <basegfx/numeric/ftools.hxx>
 #include <com/sun/star/presentation/XPresentation2.hpp>
-#include <boost/bind.hpp>
 #include <memory>
 
 using ::com::sun::star::uno::Any;
@@ -726,18 +725,18 @@ void ButtonBar::StartFadeAnimation (
 
 	// Prepare the blending functors that translate [0,1] animation
 	// times into alpha values of buttons and button bar.
-	const ::boost::function<double(double)> aButtonBlendFunctor (
-		::boost::bind(
-			controller::AnimationFunction::Blend,
-			nCurrentButtonAlpha,
-			nTargetAlpha,
-			::boost::bind(controller::AnimationFunction::Linear, _1)));
-	const ::boost::function<double(double)> aButtonBarBlendFunctor (
-		::boost::bind(
-			controller::AnimationFunction::Blend,
-			nCurrentButtonBarAlpha,
-			nTargetAlpha,
-			::boost::bind(controller::AnimationFunction::Linear, _1)));
+	const std::function<double(double)> aButtonBlendFunctor (
+		[nCurrentButtonAlpha, nTargetAlpha](double t) {
+			return controller::AnimationFunction::Blend(
+				nCurrentButtonAlpha, nTargetAlpha,
+				controller::AnimationFunction::Linear( t ));
+		});
+	const std::function<double(double)> aButtonBarBlendFunctor (
+		[nCurrentButtonBarAlpha, nTargetAlpha](double t) {
+			return controller::AnimationFunction::Blend(
+				nCurrentButtonBarAlpha, nTargetAlpha,
+				controller::AnimationFunction::Linear( t ));
+		});
 
 	// Delay the fade in a little bit when the buttons are not visible at
 	// all so that we do not leave a trail of half-visible buttons when the
@@ -753,19 +752,20 @@ void ButtonBar::StartFadeAnimation (
 			: Theme::Integer_ButtonFadeOutDuration));
 	pDescriptor->GetVisualState().SetButtonAlphaAnimationId(
 		mrSlideSorter.GetController().GetAnimator()->AddAnimation(
-			::boost::bind(
-				controller::AnimationFunction::ApplyButtonAlphaChange,
-				pDescriptor,
-				::boost::ref(mrSlideSorter.GetView()),
-				::boost::bind(aButtonBlendFunctor, _1),
-				::boost::bind(aButtonBarBlendFunctor, _1)),
+			[pDescriptor, &mrSlideSorter, &aButtonBlendFunctor, &aButtonBarBlendFunctor](double t) {
+				return controller::AnimationFunction::ApplyButtonAlphaChange(
+					pDescriptor,
+					mrSlideSorter.GetView(),
+					aButtonBlendFunctor( t ),
+					aButtonBarBlendFunctor( t ));
+			},
 			nDelay,
 			nDuration,
-			::boost::bind(
-				&model::VisualState::SetButtonAlphaAnimationId,
-				::boost::ref(pDescriptor->GetVisualState()),
-				controller::Animator::NotAnAnimationId)
-			));
+			[&pDescriptor]() {
+				pDescriptor->GetVisualState().SetButtonAlphaAnimationId(
+					controller::Animator::NotAnAnimationId);
+			}
+		));
 }
 
 
