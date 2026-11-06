@@ -39,7 +39,6 @@
 #include "drawshapesubsetting.hxx"
 #include "drawshape.hxx"
 
-#include <boost/bind.hpp>
 
 #include <algorithm>
 #include <functional>
@@ -431,11 +430,9 @@ namespace slideshow
             // the whole shape set
 
             // determine new subset range
-            ::std::for_each( maSubsetShapes.begin(),
-                             maSubsetShapes.end(),
-                             ::boost::bind(&DrawShapeSubsetting::updateSubsetBounds,
-                                           this,
-                                           _1 ) );
+                             ::std::for_each( maSubsetShapes.begin(),
+                              maSubsetShapes.end(),
+                              [this](auto& shape) { this->updateSubsetBounds( shape ); } );
 
             updateSubsets();
 

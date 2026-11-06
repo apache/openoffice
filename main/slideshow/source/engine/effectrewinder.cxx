@@ -235,12 +235,7 @@ void EffectRewinder::skipAllMainSequenceEffects (void)
 
     const int nTotalMainSequenceEffectCount (countMainSequenceEffects());
     mpAsynchronousRewindEvent = makeEvent(
-        ::boost::bind(
-            &EffectRewinder::asynchronousRewind,
-            this,
-            nTotalMainSequenceEffectCount,
-            false,
-            ::boost::function<void(void)>()),
+        [this, nTotalMainSequenceEffectCount]() { this->asynchronousRewind( nTotalMainSequenceEffectCount, false, [](){} ); },
         "EffectRewinder::asynchronousRewind");
     mrEventQueue.addEvent(mpAsynchronousRewindEvent);
 }
@@ -374,12 +369,7 @@ void EffectRewinder::asynchronousRewind (
         if (rSlideRewindFunctor)
             rSlideRewindFunctor();
         mpAsynchronousRewindEvent = makeEvent(
-            ::boost::bind(
-                &EffectRewinder::asynchronousRewind,
-                this,
-                nEffectCount,
-                false,
-                rSlideRewindFunctor),
+            [this, nEffectCount, &rSlideRewindFunctor]() { this->asynchronousRewind( nEffectCount, false, rSlideRewindFunctor ); },
             "EffectRewinder::asynchronousRewind");
         mrEventQueue.addEvent(mpAsynchronousRewindEvent);
     }

@@ -54,7 +54,6 @@
 #include "viewshape.hxx"
 #include "tools.hxx"
 
-#include <boost/bind.hpp>
 
 
 using namespace ::com::sun::star;
@@ -762,12 +761,7 @@ namespace slideshow
             // already there?
             if( (aIter=::std::find_if( maRenderers.begin(),
                                        aEnd,
-                                       ::boost::bind(
-                                           ::std::equal_to< ::cppcanvas::CanvasSharedPtr >(),
-                                           ::boost::cref( rDestinationCanvas ),
-                                           ::boost::bind(
-                                               &RendererCacheEntry::getDestinationCanvas,
-                                               _1 ) ) ) ) == aEnd )
+                                       [&rDestinationCanvas](const auto& entry) { return rDestinationCanvas == entry->getDestinationCanvas(); } ) ) == aEnd )
             {
                 if( maRenderers.size() >= MAX_RENDER_CACHE_ENTRIES )
                 {
