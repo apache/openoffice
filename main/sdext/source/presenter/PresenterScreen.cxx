@@ -43,7 +43,6 @@
 #include <com/sun/star/presentation/XPresentation2.hpp>
 #include <com/sun/star/presentation/XPresentationSupplier.hpp>
 #include <com/sun/star/document/XEventBroadcaster.hpp>
-#include <boost/bind.hpp>
 #include <tools/debug.hxx>
 
 #include <com/sun/star/view/XSelectionSupplier.hpp>
@@ -646,7 +645,7 @@ void PresenterScreen::RequestShutdownPresenterScreen (void)
         rtl::Reference<PresenterScreen> pSelf (this);
         PresenterFrameworkObserver::RunOnUpdateEnd(
             xCC,
-            ::boost::bind(&PresenterScreen::ShutdownPresenterScreen, pSelf));
+            [pSelf]() { pSelf->ShutdownPresenterScreen(); });
         xCC->update();
     }
 }
@@ -783,11 +782,7 @@ void PresenterScreen::ProcessLayout (
         PresenterConfigurationAccess::ForAll(
             xList,
             aProperties,
-            ::boost::bind(&PresenterScreen::ProcessComponent, this,
-                _1,
-                _2,
-                rxContext,
-                rxAnchorId));
+            [this, &rxContext, &rxAnchorId](const auto& key, const auto& value) { this->ProcessComponent( key, value, rxContext, rxAnchorId ); }));
     }
     catch (RuntimeException&)
     {
@@ -815,7 +810,7 @@ void PresenterScreen::ProcessViewDescriptions (
         PresenterConfigurationAccess::ForAll(
             xViewDescriptionsNode,
             aProperties,
-            ::boost::bind(&PresenterScreen::ProcessViewDescription, this, _1, _2));
+            [this](const auto& key, const auto& value) { this->ProcessViewDescription( key, value ); }));
     }
     catch (RuntimeException&)
     {

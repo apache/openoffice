@@ -30,7 +30,6 @@
 #include <osl/diagnose.h>
 #include <osl/time.h>
 #include <vos/timer.hxx>
-#include <boost/bind.hpp>
 #include <boost/function.hpp>
 
 namespace sdext { namespace presenter {
@@ -159,7 +158,7 @@ void PresenterAnimator::ScheduleNextRun (const sal_uInt64 nStartTime)
         mnNextTime = nStartTime;
         ::vos::TTimeValue aTimeValue (GetSeconds(mnNextTime), GetNanoSeconds(mnNextTime));
         PresenterTimer::ScheduleSingleTaskAbsolute (
-            ::boost::bind(&PresenterAnimator::Process, this),
+            [this]() { this->Process(); },
             aTimeValue);
     }
 }

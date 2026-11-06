@@ -45,7 +45,6 @@
 #include <osl/time.h>
 #include <rtl/ref.hxx>
 #include <vos/timer.hxx>
-#include <boost/bind.hpp>
 #include <cmath>
 
 using namespace ::com::sun::star;
@@ -1065,8 +1064,7 @@ Reference<container::XNameAccess> AnalogBitmapPainter::GetTheme (
         xTheme = Reference<container::XNameAccess>(
             PresenterConfigurationAccess::Find(
                 xThemes,
-                ::boost::bind(&AnalogBitmapPainter::ThemeNameComparator,
-                    this, _1, _2, sCurrentThemeName)),
+                [this, &sCurrentThemeName](const auto& key, const auto& value) { return this->ThemeNameComparator( key, value, sCurrentThemeName ); }),
             UNO_QUERY);
     }
 
@@ -1131,11 +1129,7 @@ void AnalogBitmapPainter::LoadBitmaps (
     PresenterConfigurationAccess::ForAll(
         xBitmaps,
         aBitmapProperties,
-        ::boost::bind(&AnalogBitmapPainter::LoadBitmap,
-            this,
-            _1,
-            _2,
-            xBitmapLoader));
+        [this](const auto& key, const auto& value) { this->LoadBitmap( key, value, xBitmapLoader ); }),
 }
 
 

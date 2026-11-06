@@ -40,7 +40,6 @@
 #include <com/sun/star/rendering/CompositeOperation.hpp>
 #include <com/sun/star/rendering/TextDirection.hpp>
 #include <com/sun/star/text/WritingMode2.hpp>
-#include <boost/bind.hpp>
 
 using namespace ::com::sun::star;
 using namespace ::com::sun::star::accessibility;
@@ -82,7 +81,7 @@ PresenterTextView::PresenterTextView (
       mpFont(),
       maParagraphs(),
       mpCaret(new PresenterTextCaret(
-          ::boost::bind(&PresenterTextView::GetCaretBounds, this, _1, _2),
+          [this](auto& a, auto& b) { this->GetCaretBounds( a, b ); },
           rInvalidator)),
       mnLeftOffset(0),
       mnTopOffset(0),
@@ -127,7 +126,7 @@ PresenterTextView::PresenterTextView (
       mpFont(),
       maParagraphs(),
       mpCaret(new PresenterTextCaret(
-          ::boost::bind(&PresenterTextView::GetCaretBounds, this, _1, _2),
+          [this](auto& a, auto& b) { this->GetCaretBounds( a, b ); },
           ::boost::function<void(const css::awt::Rectangle&)>())),
       mnLeftOffset(0),
       mnTopOffset(0),
@@ -1388,7 +1387,7 @@ void PresenterTextCaret::ShowCaret (void)
     if (mnCaretBlinkTaskId == 0)
     {
         mnCaretBlinkTaskId = PresenterTimer::ScheduleRepeatedTask (
-            ::boost::bind(&PresenterTextCaret::InvertCaret, this),
+            [this]() { this->InvertCaret(); },
             CaretBlinkIntervall,
             CaretBlinkIntervall);
     }

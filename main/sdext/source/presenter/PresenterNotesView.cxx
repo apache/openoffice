@@ -46,7 +46,6 @@
 #include <com/sun/star/text/XTextRange.hpp>
 #include <com/sun/star/util/XChangesBatch.hpp>
 #include <com/sun/star/container/XChild.hpp>
-#include <boost/bind.hpp>
 #include <set>
 #include <memory>
 
@@ -133,7 +132,7 @@ PresenterNotesView::PresenterNotesView (
             rxComponentContext,
             mxParentWindow,
             mpPresenterController->GetPaintManager(),
-            ::boost::bind(&PresenterNotesView::SetTop, this, _1));
+            [this](auto& a1) { this->SetTop( a1 ); }));
         mpScrollBar->SetBackground(
             mpPresenterController->GetViewBackground(mxViewId->getResourceURL()));
 
