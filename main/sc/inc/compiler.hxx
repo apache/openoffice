@@ -48,7 +48,7 @@
 #endif
 
 #ifndef INCLUDED_HASH_MAP
-#include <hash_map>
+#include <unordered_map>
 #define INCLUDED_HASH_MAP
 #endif
 

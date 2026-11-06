@@ -25,7 +25,7 @@
 
 #include <list>
 #include <vector>
-#include <hash_map>
+#include <unordered_map>
 
 #include "tools/string.hxx"
 #include "tools/stream.hxx"
@@ -60,7 +60,7 @@ class VCL_DLLPUBLIC PPDKey
 {
     friend class PPDParser;
 
-    typedef ::std::hash_map< ::rtl::OUString, PPDValue, ::rtl::OUStringHash > hash_type;
+    typedef ::std::unordered_map< ::rtl::OUString, PPDValue, ::rtl::OUStringHash > hash_type;
     typedef ::std::vector< PPDValue* > value_type;
 
     String          	m_aKey;
@@ -123,7 +123,7 @@ class VCL_DLLPUBLIC PPDParser
     friend class PPDContext;
     friend class CUPSManager;
 
-    typedef ::std::hash_map< ::rtl::OUString, PPDKey*, ::rtl::OUStringHash > hash_type;
+    typedef ::std::unordered_map< ::rtl::OUString, PPDKey*, ::rtl::OUStringHash > hash_type;
     typedef ::std::vector< PPDKey* > value_type;
 
     void insertKey( const String& rKey, PPDKey* pKey );
@@ -140,7 +140,7 @@ public:
 private:
 
     static ::std::list< PPDParser* >           aAllParsers;
-    static ::std::hash_map< rtl::OUString, rtl::OUString, rtl::OUStringHash >*
+    static ::std::unordered_map< rtl::OUString, rtl::OUString, rtl::OUStringHash >*
     											pAllPPDFiles;
 
     hash_type									m_aKeys;
@@ -296,7 +296,7 @@ public:
 
 class VCL_DLLPUBLIC PPDContext
 {
-    typedef ::std::hash_map< const PPDKey*, const PPDValue*, PPDKeyhash > hash_type;
+    typedef ::std::unordered_map< const PPDKey*, const PPDValue*, PPDKeyhash > hash_type;
     hash_type m_aCurrentValues;
     const PPDParser*                                    m_pParser;
 

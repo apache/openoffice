@@ -395,7 +395,7 @@ SalInfoPrinter* X11SalInstance::CreateInfoPrinter( SalPrinterQueueInfo*	pQueueIn
 
         // set/clear backwards compatibility flag
         bool bStrictSO52Compatibility = false;
-        std::hash_map<rtl::OUString, rtl::OUString, rtl::OUStringHash >::const_iterator compat_it =
+        std::unordered_map<rtl::OUString, rtl::OUString, rtl::OUStringHash >::const_iterator compat_it =
             pJobSetup->maValueMap.find( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "StrictSO52Compatibility" ) ) );
 
         if( compat_it != pJobSetup->maValueMap.end() )
@@ -632,7 +632,7 @@ sal_Bool PspSalInfoPrinter::SetPrinterData( ImplJobSetup* pJobSetup )
 {
     // set/clear backwards compatibility flag
     bool bStrictSO52Compatibility = false;
-    std::hash_map<rtl::OUString, rtl::OUString, rtl::OUStringHash >::const_iterator compat_it =
+    std::unordered_map<rtl::OUString, rtl::OUString, rtl::OUStringHash >::const_iterator compat_it =
         pJobSetup->maValueMap.find( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "StrictSO52Compatibility" ) ) );
 
     if( compat_it != pJobSetup->maValueMap.end() )
@@ -990,7 +990,7 @@ sal_Bool PspSalPrinter::StartJob(
 			m_aTmpFile = getTmpName();
             nMode = S_IRUSR | S_IWUSR;
 
-			::std::hash_map< ::rtl::OUString, ::rtl::OUString, ::rtl::OUStringHash >::const_iterator it;
+			::std::unordered_map< ::rtl::OUString, ::rtl::OUString, ::rtl::OUStringHash >::const_iterator it;
 			it = pJobSetup->maValueMap.find( ::rtl::OUString::createFromAscii( "FAX#" ) );
 			if( it != pJobSetup->maValueMap.end() )
 				m_aFaxNr = it->second;
@@ -1020,7 +1020,7 @@ sal_Bool PspSalPrinter::StartJob(
 
     // set/clear backwards compatibility flag
     bool bStrictSO52Compatibility = false;
-    std::hash_map<rtl::OUString, rtl::OUString, rtl::OUStringHash >::const_iterator compat_it =
+    std::unordered_map<rtl::OUString, rtl::OUString, rtl::OUStringHash >::const_iterator compat_it =
         pJobSetup->maValueMap.find( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "StrictSO52Compatibility" ) ) );
 
     if( compat_it != pJobSetup->maValueMap.end() )

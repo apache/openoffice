@@ -73,7 +73,7 @@ private:
 	CTFontCollectionRef mpCTFontCollection;
 	CFArrayRef mpCTFontArray;
 
-	typedef std::hash_map<sal_IntPtr,CTFontData*> CTFontContainer;
+	typedef std::unordered_map<sal_IntPtr,CTFontData*> CTFontContainer;
 	CTFontContainer	maFontContainer;
 };
 

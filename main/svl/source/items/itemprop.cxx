@@ -28,7 +28,7 @@
 #include <svl/itempool.hxx>
 #include <svl/itemset.hxx>
 #include <com/sun/star/beans/PropertyAttribute.hpp>
-#include <hash_map>
+#include <unordered_map>
 /*************************************************************************
 	UNO III Implementation
 *************************************************************************/
@@ -49,7 +49,7 @@ struct equalOUString
   }
 };
 
-typedef ::std::hash_map< ::rtl::OUString,
+typedef ::std::unordered_map< ::rtl::OUString,
                                  SfxItemPropertySimpleEntry,
                                  ::rtl::OUStringHash,
                                  equalOUString > SfxItemPropertyHashMap_t;

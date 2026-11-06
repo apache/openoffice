@@ -51,7 +51,7 @@ const char* StringContainer::putString( const char* pString )
 {
     OString aString( static_cast<const sal_Char*>(pString) );
     std::pair<
-        std::hash_set< OString, OStringHash >::iterator,
+        std::unordered_set< OString, OStringHash >::iterator,
         bool > aInsert =
         m_aStrings.insert( aString );
 

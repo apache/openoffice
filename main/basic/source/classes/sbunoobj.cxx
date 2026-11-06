@@ -95,7 +95,7 @@ using namespace cppu;
 #include<runtime.hxx>
 
 #include<math.h>
-#include <hash_map>
+#include <unordered_map>
 #include <com/sun/star/reflection/XTypeDescriptionEnumerationAccess.hpp>
 #include <com/sun/star/reflection/XConstantsTypeDescription.hpp>
 
@@ -3389,7 +3389,7 @@ void RTL_Impl_EqualUnoObjects( StarBASIC* pBasic, SbxArray& rPar, sal_Bool bWrit
 		refVar->PutBool( sal_True );
 }
 
-typedef std::hash_map< ::rtl::OUString, std::vector< ::rtl::OUString >, ::rtl::OUStringHash, ::std::equal_to< ::rtl::OUString > > ModuleHash;
+typedef std::unordered_map< ::rtl::OUString, std::vector< ::rtl::OUString >, ::rtl::OUStringHash, ::std::equal_to< ::rtl::OUString > > ModuleHash;
 
 
 // helper wrapper function to interact with TypeProvider and
@@ -3416,7 +3416,7 @@ getTypeDescriptorEnumeration( const ::rtl::OUString& sSearchRoot,
 	return xEnum;
 }
 
-typedef std::hash_map< ::rtl::OUString, Any, ::rtl::OUStringHash, ::std::equal_to< ::rtl::OUString > > VBAConstantsHash;
+typedef std::unordered_map< ::rtl::OUString, Any, ::rtl::OUStringHash, ::std::equal_to< ::rtl::OUString > > VBAConstantsHash;
 
 SbxVariable* getVBAConstant( const String& rName )
 {

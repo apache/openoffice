@@ -44,7 +44,7 @@
 
 #include <rtl/ustrbuf.hxx>
 
-#include <hash_map>
+#include <unordered_map>
 #include <framework/fwedllapi.h>
 
 //_______________________________________________

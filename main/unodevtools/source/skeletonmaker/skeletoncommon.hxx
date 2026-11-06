@@ -29,7 +29,7 @@
 #include "codemaker/unotype.hxx"
 
 #include <fstream>
-#include <hash_set>
+#include <unordered_set>
 #include <map>
 
 inline std::ostream& operator<<( std::ostream& s, const rtl::OString r) { return (s << r.getStr()); }
@@ -108,21 +108,21 @@ codemaker::UnoType::Sort decomposeResolveAndCheck(
 
 void checkType(TypeManager const & manager,
                rtl::OString const & type,
-               std::hash_set< rtl::OString, rtl::OStringHash >& interfaceTypes,
-               std::hash_set< rtl::OString, rtl::OStringHash >& serviceTypes,
+               std::unordered_set< rtl::OString, rtl::OStringHash >& interfaceTypes,
+               std::unordered_set< rtl::OString, rtl::OStringHash >& serviceTypes,
                AttributeInfo& properties);
 
 void checkDefaultInterfaces(
-    std::hash_set< rtl::OString, rtl::OStringHash >& interfaces,
-    const std::hash_set< rtl::OString, rtl::OStringHash >& services,
+    std::unordered_set< rtl::OString, rtl::OStringHash >& interfaces,
+    const std::unordered_set< rtl::OString, rtl::OStringHash >& services,
     const rtl::OString & propertyhelper);
 
 rtl::OString checkPropertyHelper(
     ProgramOptions const & options, TypeManager const & manager,
-    const std::hash_set< rtl::OString, rtl::OStringHash >& services,
-    const std::hash_set< rtl::OString, rtl::OStringHash >& interfaces,
+    const std::unordered_set< rtl::OString, rtl::OStringHash >& services,
+    const std::unordered_set< rtl::OString, rtl::OStringHash >& interfaces,
     AttributeInfo& attributes,
-    std::hash_set< rtl::OString, rtl::OStringHash >& propinterfaces);
+    std::unordered_set< rtl::OString, rtl::OStringHash >& propinterfaces);
 
 /**
    checks whether the return and parameters types are valid and allowed
@@ -148,7 +148,7 @@ void checkAddInTypes(TypeManager const & manager,
    @return true if XComponent have to be supported
 */
 bool checkXComponentSupport(TypeManager const & manager,
-         std::hash_set< rtl::OString, rtl::OStringHash >& interfaces);
+         std::unordered_set< rtl::OString, rtl::OStringHash >& interfaces);
 
 
 sal_uInt16 checkAdditionalPropertyFlags(typereg::Reader const & reader,
@@ -158,7 +158,7 @@ sal_uInt16 checkAdditionalPropertyFlags(typereg::Reader const & reader,
 void generateFunctionParameterMap(std::ostream& o,
          ProgramOptions const & options,
          TypeManager const & manager,
-         const std::hash_set< ::rtl::OString, ::rtl::OStringHash >& interfaces);
+         const std::unordered_set< ::rtl::OString, ::rtl::OStringHash >& interfaces);
 
 }
 

@@ -29,7 +29,7 @@
 */
 #include <vector>
 #include <list>
-#include <hash_map>
+#include <unordered_map>
 
 //_________________________________________________________________________________________________________________
 //	my own includes
@@ -80,12 +80,12 @@ private:
         virtual sal_Bool SAL_CALL hasElements();
 
 public:
-        typedef ::std::hash_map< ::rtl::OUString,
+        typedef ::std::unordered_map< ::rtl::OUString,
                                  ::rtl::OUString,
                                  rtl::OUStringHash,
                                  ::std::equal_to< ::rtl::OUString > > ModuleToCommandFileMap;
 
-        typedef ::std::hash_map< ::rtl::OUString,
+        typedef ::std::unordered_map< ::rtl::OUString,
                                  ::com::sun::star::uno::Reference< ::com::sun::star::container::XNameAccess >,
                                  rtl::OUStringHash,
 								 ::std::equal_to< ::rtl::OUString > > UICommandsHashMap;

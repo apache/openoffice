@@ -26,7 +26,7 @@
 
 #include "rtl/string.hxx"
 
-#include <hash_set>
+#include <unordered_set>
 
 /// @HTML
 
@@ -67,7 +67,7 @@ private:
     GeneratedTypeSet(GeneratedTypeSet &); // not implemented
     void operator =(GeneratedTypeSet); // not implemented
 
-    std::hash_set< rtl::OString, rtl::OStringHash > m_set;
+    std::unordered_set< rtl::OString, rtl::OStringHash > m_set;
 };
 
 }

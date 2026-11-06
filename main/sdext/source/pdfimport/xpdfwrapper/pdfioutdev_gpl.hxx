@@ -46,7 +46,7 @@
 #pragma warning(pop)
 #endif
 
-#include <hash_map>
+#include <unordered_map>
 #include <vector>
 
 class GfxPath;
@@ -132,7 +132,7 @@ namespace pdfi
     {
         // not owned by this class
         PDFDoc*                                 m_pDoc;
-        mutable std::hash_map< long long,
+        mutable std::unordered_map< long long,
                                FontAttributes > m_aFontMap;
         UnicodeMap*                             m_pUtf8Map;
 

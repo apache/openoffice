@@ -37,7 +37,7 @@
 #include <com/sun/star/ucb/XSimpleFileAccess.hpp>
 #include <osl/process.h>
 #include <rtl/string.hxx>
-#include <hash_set>
+#include <unordered_set>
 #include <assert.h>
 #include <string>
 #include <cppuhelper/implbase2.hxx>

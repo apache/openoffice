@@ -67,17 +67,17 @@ using namespace com::sun::star::bridge::oleautomation;
 using namespace boost;
 namespace ole_adapter
 {
-extern hash_map<sal_uInt32, sal_uInt32> AdapterToWrapperMap;
-extern hash_map<sal_uInt32, sal_uInt32> WrapperToAdapterMap;
-typedef hash_map<sal_uInt32, sal_uInt32>::iterator IT_Wrap;
-typedef hash_map<sal_uInt32, sal_uInt32>::iterator CIT_Wrap;
+extern unordered_map<sal_uInt32, sal_uInt32> AdapterToWrapperMap;
+extern unordered_map<sal_uInt32, sal_uInt32> WrapperToAdapterMap;
+typedef unordered_map<sal_uInt32, sal_uInt32>::iterator IT_Wrap;
+typedef unordered_map<sal_uInt32, sal_uInt32>::iterator CIT_Wrap;
 //Maps IUnknown pointers to a weak reference of the respective wrapper class (e.g.
 // IUnknownWrapperImpl. It is the responsibility of the wrapper to remove the entry when
 // it is being destroyed.
 // Used to ensure that an Automation object is always mapped to the same UNO objects.
-extern hash_map<sal_uInt32, WeakReference<XInterface> > ComPtrToWrapperMap;
-typedef hash_map<sal_uInt32, WeakReference<XInterface> >::iterator IT_Com;
-typedef hash_map<sal_uInt32, WeakReference<XInterface> >::const_iterator CIT_Com;
+extern unordered_map<sal_uInt32, WeakReference<XInterface> > ComPtrToWrapperMap;
+typedef unordered_map<sal_uInt32, WeakReference<XInterface> >::iterator IT_Com;
+typedef unordered_map<sal_uInt32, WeakReference<XInterface> >::const_iterator CIT_Com;
 
 // Maps XInterface pointers to a weak reference of its wrapper class (i.e.
 // InterfaceOleWrapper_Impl). It is the responsibility of the wrapper to remove the entry when
@@ -85,9 +85,9 @@ typedef hash_map<sal_uInt32, WeakReference<XInterface> >::const_iterator CIT_Com
 // is mapped to IDispatch which is kept alive in the COM environment. If the same
 // UNO interface is mapped again to COM then the IDispatch of the first mapped instance
 // must be returned.
-extern hash_map<sal_uInt32, WeakReference<XInterface> > UnoObjToWrapperMap;
-typedef hash_map<sal_uInt32, WeakReference<XInterface> >::iterator IT_Uno;
-typedef hash_map<sal_uInt32, WeakReference<XInterface> >::const_iterator CIT_Uno;
+extern unordered_map<sal_uInt32, WeakReference<XInterface> > UnoObjToWrapperMap;
+typedef unordered_map<sal_uInt32, WeakReference<XInterface> >::iterator IT_Uno;
+typedef unordered_map<sal_uInt32, WeakReference<XInterface> >::const_iterator CIT_Uno;
 #ifdef __MINGW32__
 inline void reduceRange( Any& any);
 #endif
@@ -1407,7 +1407,7 @@ void UnoConversionUtilities<T>::createUnoObjectWrapper(const Any & rObj, VARIANT
         else
         {
             Reference<XInterface> xIntComWrapper = xInt;
-            typedef hash_map<sal_uInt32,sal_uInt32>::iterator _IT;
+            typedef unordered_map<sal_uInt32,sal_uInt32>::iterator _IT;
             // Adapter? then get the COM wrapper to which the adapter delegates its calls
             _IT it= AdapterToWrapperMap.find( (sal_uInt32) xInt.get());
             if( it != AdapterToWrapperMap.end() )
@@ -1897,7 +1897,7 @@ Reference<XInterface> UnoConversionUtilities<T>::createAdapter(const Sequence<Ty
         // in a global map. Thus we can determine in a call to createUnoObjectWrapper whether the UNO
         // object is a wrapped COM object. In that case we extract the original COM object rather than
         // creating a wrapper around the UNO object.
-        typedef hash_map<sal_uInt32,sal_uInt32>::value_type VALUE;
+        typedef unordered_map<sal_uInt32,sal_uInt32>::value_type VALUE;
         AdapterToWrapperMap.insert( VALUE( (sal_uInt32) xIntAdapted.get(), (sal_uInt32) receiver.get()));
         WrapperToAdapterMap.insert( VALUE( (sal_uInt32) receiver.get(), (sal_uInt32) xIntAdapted.get()));
     }

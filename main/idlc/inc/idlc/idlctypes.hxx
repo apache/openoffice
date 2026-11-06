@@ -25,7 +25,7 @@
 
 #include <stdio.h>
 
-#include <hash_map>
+#include <unordered_map>
 #include <list>
 #include <vector>
 #include <string>
@@ -70,7 +70,7 @@ typedef ::std::list< AstUnionLabel* >  	LabelList;
 
 class AstDeclaration;
 
-typedef ::std::hash_map< ::rtl::OString, AstDeclaration*, HashString, EqualString > DeclMap;
+typedef ::std::unordered_map< ::rtl::OString, AstDeclaration*, HashString, EqualString > DeclMap;
 typedef ::std::list< AstDeclaration* > DeclList;
 
 class AstScope;

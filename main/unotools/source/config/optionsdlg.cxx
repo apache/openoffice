@@ -33,7 +33,7 @@
 #include <osl/mutex.hxx>
 #include <comphelper/stl_types.hxx>
 
-#include <hash_map>
+#include <unordered_map>
 #include "itemholder1.hxx"
 
 using namespace utl;
@@ -61,7 +61,7 @@ private:
         }
     };
 
-    typedef std::hash_map< OUString, sal_Bool, OUStringHashCode, ::std::equal_to< OUString > > OptionNodeList;
+    typedef std::unordered_map< OUString, sal_Bool, OUStringHashCode, ::std::equal_to< OUString > > OptionNodeList;
 
     OUString        m_sPathDelimiter;
     OptionNodeList  m_aOptionNodeList;

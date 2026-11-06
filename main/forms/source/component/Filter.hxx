@@ -41,7 +41,7 @@
 #include <connectivity/sqlparse.hxx>
 #include <svx/ParseContext.hxx>
 
-#include <hash_map>
+#include <unordered_map>
 
 //.........................................................................
 namespace frm
@@ -70,7 +70,7 @@ namespace frm
 		::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XDatabaseMetaData > 			m_xMetaData;
 		::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindow >						m_xMessageParent;
 
-        typedef ::std::hash_map< ::rtl::OUString, ::rtl::OUString, ::rtl::OUStringHash > MapString2String;
+        typedef ::std::unordered_map< ::rtl::OUString, ::rtl::OUString, ::rtl::OUStringHash > MapString2String;
         MapString2String                m_aDisplayItemToValueItem;
 
 		::rtl::OUString					m_aText;

@@ -27,7 +27,7 @@
 #include <com/sun/star/embed/ElementModes.hpp>
 #include <com/sun/star/embed/XStorage.hpp>
 
-#include <hash_set>
+#include <unordered_set>
 #include <unotools/ucbstreamhelper.hxx>
 #include <tools/solar.h>
 #include <rtl/tencinfo.h>
@@ -1545,7 +1545,7 @@ void SwWW8ImplReader::Read_Tab(sal_uInt16 , const sal_uInt8* pData, short nLen)
     }
 
     bool bFound = false;
-	::std::hash_set<size_t> aLoopWatch;
+	::std::unordered_set<size_t> aLoopWatch;
     while (pSty && !bFound)
     {
         const SfxPoolItem* pTabs;

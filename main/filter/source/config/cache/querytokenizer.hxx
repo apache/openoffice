@@ -27,7 +27,7 @@
 //_______________________________________________
 // includes
 
-#include <hash_map>
+#include <unordered_map>
 #include <rtl/ustring.hxx>
 
 //_______________________________________________
@@ -56,7 +56,7 @@ namespace filter{
     @attention  This class is not threadsafe implemented. Because it's not necessary.
                 But you have to make sure, that it's not used as such :-)
  */
-class QueryTokenizer : public ::std::hash_map< ::rtl::OUString                    ,
+class QueryTokenizer : public ::std::unordered_map< ::rtl::OUString                    ,
                                                ::rtl::OUString                    ,
                                                ::rtl::OUStringHash                ,
                                                ::std::equal_to< ::rtl::OUString > >

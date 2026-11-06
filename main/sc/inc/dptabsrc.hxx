@@ -25,7 +25,7 @@
 #define SC_DPTABSRC_HXX
 
 #include <vector>
-#include <hash_map>
+#include <unordered_map>
 // Wang Xu Ming -- 2009-8-17
 // DataPilot Migration - Cache&&Performance
 #include <list>
@@ -152,7 +152,7 @@ private:
      * Compile a list of dimension indices that are either, column, row or
      * page dimensions (i.e. all but data dimensions).
      */
-    void                    GetCategoryDimensionIndices(::std::hash_set<sal_Int32>& rCatDims);
+    void                    GetCategoryDimensionIndices(::std::unordered_set<sal_Int32>& rCatDims);
 
     /**
      * Set visibilities of individual rows in the cache table based on the
@@ -593,7 +593,7 @@ public:
 };
 
 // hash map from name to index in the member array, for fast name access
-typedef ::std::hash_map< ::rtl::OUString, sal_Int32, ::rtl::OUStringHash > ScDPMembersHashMap;
+typedef ::std::unordered_map< ::rtl::OUString, sal_Int32, ::rtl::OUStringHash > ScDPMembersHashMap;
 
 class ScDPMembers : public cppu::WeakImplHelper2<
 							com::sun::star::container::XNameAccess,

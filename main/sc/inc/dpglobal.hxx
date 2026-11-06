@@ -173,7 +173,7 @@ protected:
 		size_t operator() (const ScDPItemData &rData) const { return rData.Hash(); }
 	};
 
-	typedef ::std::hash_multimap< ScDPItemData, sal_Int32, DataHashFunc > DataHash;
+	typedef ::std::unordered_multimap< ScDPItemData, sal_Int32, DataHashFunc > DataHash;
 
 	::std::vector< ScDPItemData > maItems;
 	DataHash  maItemIds;

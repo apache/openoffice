@@ -29,7 +29,7 @@
 #include <rtl/string.hxx>
 
 #include <vector>
-#include <hash_map>
+#include <unordered_map>
 
 namespace pdfparse
 {
@@ -184,7 +184,7 @@ struct PDFArray : public PDFContainer
 
 struct PDFDict : public PDFContainer
 {
-    typedef std::hash_map<rtl::OString,PDFEntry*,rtl::OStringHash> Map;
+    typedef std::unordered_map<rtl::OString,PDFEntry*,rtl::OStringHash> Map;
     Map m_aMap;
 
     PDFDict() {}

@@ -25,8 +25,8 @@
 
 #include <pyuno/pyuno.hxx>
 
-#include <hash_map>
-#include <hash_set>
+#include <unordered_map>
+#include <unordered_set>
 
 #include <com/sun/star/beans/XIntrospection.hpp>
 #include <com/sun/star/script/XTypeConverter.hpp>
@@ -86,7 +86,7 @@ static const sal_Int32 VAL2STR_MODE_SHALLOW = 1;
 rtl::OUString val2str( const void * pVal, typelib_TypeDescriptionReference * pTypeRef, sal_Int32 mode = VAL2STR_MODE_DEEP ) SAL_THROW( () );
 //--------------------------------------------------
 
-typedef ::std::hash_map
+typedef ::std::unordered_map
 <
     PyRef,
     com::sun::star::uno::WeakReference< com::sun::star::script::XInvocation >,
@@ -95,7 +95,7 @@ typedef ::std::hash_map
 > PyRef2Adapter;
 
 
-typedef ::std::hash_map
+typedef ::std::unordered_map
 <
 rtl::OUString,
 PyRef,
@@ -103,7 +103,7 @@ rtl::OUStringHash,
 std::equal_to<rtl::OUString>
 > ExceptionClassMap;
 
-typedef ::std::hash_map
+typedef ::std::unordered_map
 <
     rtl::OUString,
     com::sun::star::uno::Sequence< sal_Int16 >,
@@ -111,7 +111,7 @@ typedef ::std::hash_map
     std::equal_to< rtl::OUString >
 > MethodOutIndexMap;
 
-typedef ::std::hash_set< PyRef , PyRef::Hash , std::equal_to<PyRef> > ClassSet;
+typedef ::std::unordered_set< PyRef , PyRef::Hash , std::equal_to<PyRef> > ClassSet;
 
 PyObject* PyUNO_new(
     const com::sun::star::uno::Any & targetInterface,

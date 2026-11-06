@@ -38,7 +38,7 @@
 #include <sfx2/itemconnect.hxx>
 #include "pivot.hxx"
 
-#include <hash_map>
+#include <unordered_map>
 
 // ============================================================================
 
@@ -219,7 +219,7 @@ private:
     CancelButton        maBtnCancel;
     HelpButton          maBtnHelp;
 
-    typedef ::std::hash_map<String, long, ScStringHashCode> DimNameIndexMap;
+    typedef ::std::unordered_map<String, long, ScStringHashCode> DimNameIndexMap;
     DimNameIndexMap     maNameIndexMap;
     ScDPObject&         mrDPObj;
 };

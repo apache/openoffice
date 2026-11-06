@@ -28,7 +28,7 @@
 #include "registry/registry.hxx"
 #include "registry/types.h"
 
-#include <hash_map>
+#include <unordered_map>
 #include <list>
 
 namespace typereg { class Reader; }
@@ -48,7 +48,7 @@ typedef	::std::__hash_map__
 	NewAlloc
 > T2TypeClassMap;
 #else
-typedef	::std::hash_map
+typedef	::std::unordered_map
 <
 	::rtl::OString, // Typename
 	RTTypeClass, 	// TypeClass

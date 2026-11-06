@@ -24,7 +24,7 @@
 #ifndef _CODEMAKER_DEPENDENCY_HXX_
 #define _CODEMAKER_DEPENDENCY_HXX_
 
-#include 	<hash_map>
+#include 	<unordered_map>
 #include	<registry/registry.hxx>
 #ifndef __REGISTRY_REFLREAD_HXX__
 #include	<registry/reflread.hxx>
@@ -96,7 +96,7 @@ typedef	::std::__hash_map__
 	NewAlloc
 > GenerationMap;
 #else
-typedef	::std::hash_map
+typedef	::std::unordered_map
 <
 	::rtl::OString,
 	TypeUsingSet,
@@ -104,7 +104,7 @@ typedef	::std::hash_map
 	EqualString
 > DependencyMap;
 
-typedef	::std::hash_map
+typedef	::std::unordered_map
 <
 	::rtl::OString,
 	sal_uInt16,

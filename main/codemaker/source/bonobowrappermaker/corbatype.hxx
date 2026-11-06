@@ -27,7 +27,7 @@
 #include <codemaker/typemanager.hxx>
 #include <codemaker/dependency.hxx>
 
-#include <hash_set>
+#include <unordered_set>
 
 enum BASETYPE
 {
@@ -66,7 +66,7 @@ struct OStringHash : public std::unary_function< const ::rtl::OString &, size_t 
 		{ return rStr.hashCode(); }
 };
 
-typedef std::hash_set< ::rtl::OString, OStringHash, OStringEqual > TypeSet;
+typedef std::unordered_set< ::rtl::OString, OStringHash, OStringEqual > TypeSet;
 
 class CorbaType
 {

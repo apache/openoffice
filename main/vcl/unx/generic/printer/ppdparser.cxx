@@ -27,7 +27,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-#include <hash_map>
+#include <unordered_map>
 
 #include "vcl/ppdparser.hxx"
 #include "vcl/strhelper.hxx"
@@ -73,8 +73,8 @@ namespace psp
             }
         };
 
-        typedef std::hash_map< com::sun::star::lang::Locale, rtl::OUString, LocaleHash, LocaleEqual > translation_map;
-        typedef std::hash_map< rtl::OUString, translation_map, rtl::OUStringHash > key_translation_map;
+        typedef std::unordered_map< com::sun::star::lang::Locale, rtl::OUString, LocaleHash, LocaleEqual > translation_map;
+        typedef std::unordered_map< rtl::OUString, translation_map, rtl::OUStringHash > key_translation_map;
 
         key_translation_map     m_aTranslations;
         public:
@@ -253,7 +253,7 @@ using namespace rtl;
 #endif
 
 std::list< PPDParser* > PPDParser::aAllParsers;
-std::hash_map< OUString, OUString, OUStringHash >* PPDParser::pAllPPDFiles = NULL;
+std::unordered_map< OUString, OUString, OUStringHash >* PPDParser::pAllPPDFiles = NULL;
 
 class PPDDecompressStream
 {
@@ -455,7 +455,7 @@ void PPDParser::initPPDFiles()
     if( pAllPPDFiles )
         return;
 
-    pAllPPDFiles = new std::hash_map< OUString, OUString, OUStringHash >();
+    pAllPPDFiles = new std::unordered_map< OUString, OUString, OUStringHash >();
 
     // check installation directories
     std::list< OUString > aPathList;
@@ -495,7 +495,7 @@ void PPDParser::getKnownPPDDrivers( std::list< rtl::OUString >& o_rDrivers, bool
     initPPDFiles();
     o_rDrivers.clear();
 
-    std::hash_map< OUString, OUString, OUStringHash >::const_iterator it;
+    std::unordered_map< OUString, OUString, OUStringHash >::const_iterator it;
     for( it = pAllPPDFiles->begin(); it != pAllPPDFiles->end(); ++it )
         o_rDrivers.push_back( it->first );
 }
@@ -507,7 +507,7 @@ String PPDParser::getPPDFile( const String& rFile )
     PPDDecompressStream aStream( aPPD.PathToFileName() );
     if( ! aStream.IsOpen() )
     {
-        std::hash_map< OUString, OUString, OUStringHash >::const_iterator it;
+        std::unordered_map< OUString, OUString, OUStringHash >::const_iterator it;
 
         bool bRetry = true;
         do

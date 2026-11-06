@@ -24,7 +24,7 @@
 #ifndef DOM_NODE_HXX
 #define DOM_NODE_HXX
 
-#include <hash_map>
+#include <unordered_map>
 
 #include <libxml/tree.h>
 
@@ -85,7 +85,7 @@ namespace DOM
         };
 
         typedef std::vector< std::vector<Namespace> > NamespaceVectorType;
-        typedef std::hash_map< OUString,
+        typedef std::unordered_map< OUString,
                                sal_Int32,
                                rtl::OUStringHash > NamespaceMapType;
 

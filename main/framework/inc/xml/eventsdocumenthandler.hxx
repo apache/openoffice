@@ -43,7 +43,7 @@
 #include <rtl/ustring.hxx>
 #include <cppuhelper/implbase1.hxx>
 
-#include <hash_map>
+#include <unordered_map>
 #include <stdtypes.h>
 
 #include <framework/fwedllapi.h>
@@ -110,7 +110,7 @@ class FWE_DLLPUBLIC OReadEventsDocumentHandler :	private ThreadHelpBase,	// Stru
 	private:
 		::rtl::OUString getErrorLineString();
 
-		class EventsHashMap : public ::std::hash_map<	::rtl::OUString					,
+		class EventsHashMap : public ::std::unordered_map<	::rtl::OUString					,
 														Events_XML_Entry				,
 														rtl::OUStringHash,
 														::std::equal_to< ::rtl::OUString >	>

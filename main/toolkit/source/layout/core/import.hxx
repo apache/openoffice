@@ -27,7 +27,7 @@
 #include <map>
 #include <list>
 #define _BACKWARD_BACKWARD_WARNING_H 1
-#include <hash_map>
+#include <unordered_map>
 
 
 #include <com/sun/star/xml/input/XRoot.hpp>
@@ -121,7 +121,7 @@ protected:
     css::uno::Reference< css::awt::XToolkit > mxToolkit;
     Widget *mpToplevel;
 
-    typedef std::hash_map< rtl::OUString, css::uno::Reference< css::awt::XLayoutConstrains >,
+    typedef std::unordered_map< rtl::OUString, css::uno::Reference< css::awt::XLayoutConstrains >,
                            rtl::OUStringHash > ItemHash;
     ItemHash maItems;
 };

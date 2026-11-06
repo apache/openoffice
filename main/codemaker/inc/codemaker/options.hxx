@@ -24,7 +24,7 @@
 #ifndef INCLUDED_CODEMAKER_OPTIONS_HXX
 #define INCLUDED_CODEMAKER_OPTIONS_HXX
 
-#include <hash_map>
+#include <unordered_map>
 
 #include <codemaker/global.hxx>
 
@@ -38,7 +38,7 @@ typedef	::std::__hash_map__
 	NewAlloc
 > OptionMap;
 #else
-typedef	::std::hash_map
+typedef	::std::unordered_map
 <
 	::rtl::OString,
 	::rtl::OString,

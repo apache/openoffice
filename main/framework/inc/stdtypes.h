@@ -147,7 +147,7 @@ typedef ::std::queue< ::rtl::OUString > OUStringQueue;
 //_________________________________________________________________________________________________________________
 
 /**
-    Basic hash based on a std::hash_map() which provides key=[OUString] and value=[template type] pairs
+    Basic hash based on a std::unordered_map() which provides key=[OUString] and value=[template type] pairs
     It implements some additional functionality which can be useful but
     is missing at the normal hash implementation.
 */

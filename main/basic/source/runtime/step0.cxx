@@ -43,7 +43,7 @@ Reference< XInterface > createComListener( const Any& aControlAny, const ::rtl::
 										   const ::rtl::OUString& aPrefix, SbxObjectRef xScopeObj );
 
 #include <algorithm>
-#include <hash_map>
+#include <unordered_map>
 
 SbxVariable* getDefaultProp( SbxVariable* pRef );
 
@@ -445,7 +445,7 @@ struct SbxVariablePtrHash
         { return (size_t)pVar; }
 };
 
-typedef std::hash_map< SbxVariable*, DimAsNewRecoverItem, SbxVariablePtrHash >	DimAsNewRecoverHash;
+typedef std::unordered_map< SbxVariable*, DimAsNewRecoverItem, SbxVariablePtrHash >	DimAsNewRecoverHash;
 
 static DimAsNewRecoverHash		GaDimAsNewRecoverHash;
 

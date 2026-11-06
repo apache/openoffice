@@ -27,7 +27,7 @@
 /** Attention: stl headers must(!) be included at first. Otherwise it can make trouble
                with solaris headers ...
 */
-#include <hash_map>
+#include <unordered_map>
 #include <vector>
 #include <iterator>
 
@@ -459,7 +459,7 @@ struct ContentHandler
 // and could be used in a generic way
 //*****************************************************************************************************************
 template< class HashType >
-class SetNodeHash : public ::std::hash_map< ::rtl::OUString                    ,
+class SetNodeHash : public ::std::unordered_map< ::rtl::OUString                    ,
                                             HashType                           ,
                                             rtl::OUStringHash                  ,
                                             ::std::equal_to< ::rtl::OUString > >
@@ -500,7 +500,7 @@ class SetNodeHash : public ::std::hash_map< ::rtl::OUString                    ,
 // It's an optimism to find registered services faster!
 // The preferred hash maps file extensions to preferred types to find these ones faster.
 //*****************************************************************************************************************
-class PerformanceHash   :   public  ::std::hash_map<    ::rtl::OUString                     ,
+class PerformanceHash   :   public  ::std::unordered_map<    ::rtl::OUString                     ,
                                                         OUStringList                        ,
                                                         rtl::OUStringHash                    ,
 														::std::equal_to< ::rtl::OUString >	>

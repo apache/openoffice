@@ -24,7 +24,7 @@
 #ifndef SC_FORMULAPARSERPOOL_HXX
 #define SC_FORMULAPARSERPOOL_HXX
 
-#include <hash_map>
+#include <unordered_map>
 #include <com/sun/star/sheet/XFormulaParser.hpp>
 
 class ScDocument;
@@ -47,7 +47,7 @@ public:
                         getFormulaParser( const ::rtl::OUString& rNamespace );
 
 private:
-    typedef ::std::hash_map<
+    typedef ::std::unordered_map<
         ::rtl::OUString,
         ::com::sun::star::uno::Reference< ::com::sun::star::sheet::XFormulaParser >,
         ::rtl::OUStringHash,

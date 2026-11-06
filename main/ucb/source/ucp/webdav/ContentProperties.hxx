@@ -26,7 +26,7 @@
 
 #include <memory>
 #include <vector>
-#include <hash_map>
+#include <unordered_map>
 #include <rtl/ustring.hxx>
 #include <com/sun/star/uno/Any.hxx>
 #include <com/sun/star/uno/Sequence.hxx>
@@ -84,7 +84,7 @@ public:
 
 };
 
-typedef std::hash_map
+typedef std::unordered_map
 <
     rtl::OUString,
     PropertyValue,
