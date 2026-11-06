@@ -89,7 +89,7 @@
 #include <com/sun/star/drawing/XDrawPages.hpp>
 #include <vcl/svapp.hxx>
 
-#include <boost/bind.hpp>
+#include <memory>
 
 using namespace ::com::sun::star;
 using namespace ::com::sun::star::uno;
@@ -354,7 +354,7 @@ void SlotManager::FuSupport (SfxRequest& rRequest)
             ViewShellBase* pBase = mrSlideSorter.GetViewShellBase();
             if (pBase != NULL)
             {
-                ::boost::shared_ptr<DrawViewShell> pDrawViewShell (
+                ::std::shared_ptr<DrawViewShell> pDrawViewShell (
                     ::boost::dynamic_pointer_cast<DrawViewShell>(pBase->GetMainViewShell()));
                 if (pDrawViewShell.get() != NULL)
                     pDrawViewShell->FuSupport(rRequest);
@@ -719,7 +719,7 @@ void SlotManager::GetClipboardState ( SfxItemSet& rSet)
                 ViewShellBase* pBase = mrSlideSorter.GetViewShellBase();
                 if (pBase != NULL)
                 {
-                    ::boost::shared_ptr<DrawViewShell> pDrawViewShell (
+                    ::std::shared_ptr<DrawViewShell> pDrawViewShell (
                         ::boost::dynamic_pointer_cast<DrawViewShell>(pBase->GetMainViewShell()));
                     if (pDrawViewShell.get() != NULL)
                     {
@@ -1150,13 +1150,10 @@ void SlotManager::DuplicateSelectedSlides (SfxRequest& rRequest)
     // Set the selection to the pages in aPagesToSelect.
     PageSelector& rSelector (mrSlideSorter.GetController().GetPageSelector());
     rSelector.DeselectAllPages();
-    ::std::for_each (
-        aPagesToSelect.begin(),
-        aPagesToSelect.end(),
-        ::boost::bind(
-            static_cast<void (PageSelector::*)(const SdPage*)>(&PageSelector::SelectPage),
-            ::boost::ref(rSelector),
-            _1));
+        ::std::for_each (
+            aPagesToSelect.begin(),
+            aPagesToSelect.end(),
+            [&](const auto& page) { rSelector.SelectPage( page ); });
 }
 
 

@@ -25,7 +25,7 @@
 #include "controller/SlsAnimator.hxx"
 #include "view/SlideSorterView.hxx"
 #include "View.hxx"
-#include <boost/bind.hpp>
+#include <memory>
 
 namespace sd { namespace slidesorter { namespace controller {
 
@@ -130,7 +130,7 @@ Animator::AnimationId Animator::AddAnimation (
     if (mbIsDisposed)
         return -1;
 
-    boost::shared_ptr<Animation> pAnimation (
+    std::shared_ptr<Animation> pAnimation (
         new Animation(
             rAnimation,
             nStartOffset / 1000.0,
@@ -160,7 +160,7 @@ Animator::AnimationId Animator::AddInfiniteAnimation (
     if (mbIsDisposed)
         return -1;
 
-    boost::shared_ptr<Animation> pAnimation (
+    std::shared_ptr<Animation> pAnimation (
         new Animation(
             rAnimation,
             0,
@@ -185,10 +185,10 @@ void Animator::RemoveAnimation (const Animator::AnimationId nId)
     const AnimationList::iterator iAnimation (::std::find_if(
         maAnimations.begin(),
         maAnimations.end(),
-        ::boost::bind(
-            ::std::equal_to<Animator::AnimationId>(),
-            nId,
-            ::boost::bind(&Animation::mnAnimationId, _1))));
+        ::std::find_if(
+            maAnimations.begin(),
+            maAnimations.end(),
+            [&nId](const auto& anim) { return nId == anim->mnAnimationId; }));
     if (iAnimation != maAnimations.end())
     {
         OSL_ASSERT((*iAnimation)->mnAnimationId == nId);
@@ -212,12 +212,10 @@ void Animator::RemoveAnimation (const Animator::AnimationId nId)
 
 void Animator::RemoveAllAnimations (void)
 {
-    ::std::for_each(
-        maAnimations.begin(),
-        maAnimations.end(),
-        ::boost::bind(
-            &Animation::Expire,
-            _1));
+        ::std::for_each(
+            maAnimations.begin(),
+            maAnimations.end(),
+            [](auto& anim) { anim->Expire(); });
     maAnimations.clear();
     mnNextAnimationId = 0;
 
