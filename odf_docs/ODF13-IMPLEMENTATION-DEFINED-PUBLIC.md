@@ -1,7 +1,25 @@
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License.
+-->
+
 # DRAFT: Apache OpenOffice: ODF 1.3 implementation-defined values
 
 > **DRAFT. Work in progress, for discussion only.** This document has not been reviewed or approved by the Apache OpenOffice project and may change or be withdrawn. It is not an announcement, and it makes no claim that Apache OpenOffice conforms to ODF 1.3.
-
 
 ODF 1.3 Part 3 (section 2.3.1 B) and Part 2 (section 2.3.1 B) require a conforming producer to be accompanied by a document that defines the implementation-defined values it uses. Part 3 section 2.3.2 A asks the same of an extended producer, and section 2.3.2 B asks it to document the foreign elements and attributes it writes. This document does both for Apache OpenOffice. It describes the behaviour of the OpenOffice development source of 2026-10-30 and is to be updated for the release that carries the claim.
 
@@ -186,6 +204,7 @@ Other 1.3 modes differences (standard content, not foreign): `style:scale-to-X` 
 ## 6. Not documented
 
 Looked at and not determined:
+
 - Which default button is first when several are set in a form (§19.265).
 - Whether the coordinate rectangle written for radar, circle, ring, three-dimensional and add-in charts matches the geometry of §11.3 and §11.5.
 - Which of the defaults the specification defines (§16.2) the importer fails to apply.

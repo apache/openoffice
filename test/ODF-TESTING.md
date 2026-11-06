@@ -54,7 +54,7 @@ Needs Python 3.10 or later, pytest 8 or later, and Java.
 
 Each step below is described in [odf-validate/README.md](odf-validate/README.md). The scripts are zsh.
 
-**Set up once**
+### Set up once
 
     cd test/odf-validate
     ./fetch-schemas.sh                     # OASIS schemas into schema/, checksum-verified
@@ -64,7 +64,7 @@ Each step below is described in [odf-validate/README.md](odf-validate/README.md)
 
 The defaults in `env.sh` are the author's. Set `ODFV_PYTHON` to the Python that the office's pyuno links against (`otool -L <app>/Contents/program/libpyuno.dylib` shows which), and `ODFV_JING` to a `jing.jar`. The jar that `aootest.fetch` downloads (`jing/` in its cache, `~/Library/Caches/aootest` on macOS) works. `crosscheck.py` also reads `ODFV_ODFVALIDATOR` and `ODFV_JAVA`, and `drive.sh` needs `gtimeout` from GNU coreutils.
 
-**Run the gate**
+### Run the gate
 
     python3 -I gate.py <tag> --stages corpus,validate,dump,diff,fixtures --modes ext,strict,v14,x14 --port 2900
     python3 -I gate.py <tag2> --prev runs/gate-<tag> --stages corpus,validate,dump,diff,fixtures --modes ext,strict,v13,x13,v14,x14 --port 2900
