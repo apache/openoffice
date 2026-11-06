@@ -75,7 +75,6 @@
 #include <connectivity/dbconversion.hxx>
 #include <connectivity/dbtools.hxx>
 
-#include <boost/bind.hpp>
 #include <tools/string.hxx>
 #include "metadata.hxx"
 #include <svl/itempool.hxx>
@@ -706,7 +705,7 @@ void GeometryHandler::implCreateListLikeControl(
     );
 
     out_Descriptor.Control = xListControl.get();
-    ::std::for_each( _aEntries.begin(), _aEntries.end(),::boost::bind( &inspection::XStringListControl::appendListEntry, xListControl,_1 ));
+    ::std::for_each( _aEntries.begin(), _aEntries.end(),[&](const auto& entry) { xListControl->appendListEntry( entry ); } );
 }
 // -----------------------------------------------------------------------------
 
@@ -808,9 +807,9 @@ inspection::LineDescriptor SAL_CALL GeometryHandler::describePropertyLine(const 
                 else
                 {
                     ::std::for_each( m_aFieldNames.getConstArray(), m_aFieldNames.getConstArray() + m_aFieldNames.getLength(),
-                        ::boost::bind( &inspection::XStringListControl::appendListEntry, xListControl, _1 ) );
+                        [&](const auto& entry) { xListControl->appendListEntry( entry ); } );
                     ::std::for_each( m_aParamNames.getConstArray(), m_aParamNames.getConstArray() + m_aParamNames.getLength(),
-                        ::boost::bind( &inspection::XStringListControl::appendListEntry, xListControl, _1 ) );
+                        [&](const auto& entry) { xListControl->appendListEntry( entry ); } );
                 }
             }
             break;
@@ -1647,7 +1646,7 @@ void GeometryHandler::checkPosAndSize(  const awt::Point& _aNewPos,
 void GeometryHandler::impl_fillFormulaList_nothrow(::std::vector< ::rtl::OUString >& _out_rList) const
 {
     if ( m_nDataFieldType == FUNCTION )
-        ::std::transform(m_aDefaultFunctions.begin(),m_aDefaultFunctions.end(),::std::back_inserter(_out_rList),::boost::bind( &DefaultFunction::getName, _1 ));
+        ::std::transform(m_aDefaultFunctions.begin(),m_aDefaultFunctions.end(),::std::back_inserter(_out_rList),[](const auto& f) { return f.getName(); });
     else if ( m_nDataFieldType == USER_DEF_FUNCTION )
         ::std::transform(m_aFunctionNames.begin(),m_aFunctionNames.end(),::std::back_inserter(_out_rList),::std::select1st<TFunctions::value_type>());
 }

@@ -119,7 +119,6 @@
 #include <vcl/virdev.hxx>
 #include <vos/mutex.hxx>
 
-#include <boost/bind.hpp>
 #include <boost/mem_fn.hpp>
 #include <boost/utility.hpp>
 #include <memory>
@@ -1264,7 +1263,7 @@ void SAL_CALL OReportDefinition::close( ::sal_Bool _bDeliverOwnership )
 	lang::EventObject aEvt( static_cast< ::cppu::OWeakObject* >( this ) );
     aGuard.clear();
 	m_pImpl->m_aCloseListener.forEach<util::XCloseListener>(
-		::boost::bind(&util::XCloseListener::queryClosing,_1,boost::cref(aEvt),boost::cref(_bDeliverOwnership)));
+		[this, &aEvt, &_bDeliverOwnership](const auto& listener) { listener->queryClosing( aEvt, _bDeliverOwnership ); });
     aGuard.reset();
 
 
@@ -1674,7 +1673,7 @@ void SAL_CALL OReportDefinition::switchToStorage( const uno::Reference< embed::X
 	// notify our container listeners
 	OWeakObject *oWeakThis = static_cast<OWeakObject*>( this );
 	m_pImpl->m_aStorageChangeListeners.forEach<document::XStorageChangeListener>(
-			::boost::bind(&document::XStorageChangeListener::notifyStorageChange,_1,boost::cref( oWeakThis ),boost::cref(_xStorage)));
+			[this, &oWeakThis, &_xStorage](const auto& listener) { listener->notifyStorageChange( oWeakThis, _xStorage ); });
 }
 // -----------------------------------------------------------------------------
 uno::Reference< embed::XStorage > SAL_CALL OReportDefinition::getDocumentStorage(  )
