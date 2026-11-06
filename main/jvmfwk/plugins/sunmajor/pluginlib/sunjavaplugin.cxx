@@ -28,7 +28,7 @@
 #endif
 #include <string.h>
 
-#include "boost/scoped_array.hpp"
+#include <memory>
 #include "osl/diagnose.h"
 #include "rtl/ustring.hxx"
 #include "rtl/ustrbuf.hxx"

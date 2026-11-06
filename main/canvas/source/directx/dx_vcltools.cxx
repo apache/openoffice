@@ -40,7 +40,7 @@
 #include <com/sun/star/lang/XServiceInfo.hpp>
 #include <com/sun/star/rendering/XIntegerBitmap.hpp>
 
-#include <boost/scoped_array.hpp>
+#include <memory>
 #include <memory>
 
 #include "dx_vcltools.hxx"

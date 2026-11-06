@@ -55,7 +55,7 @@
 #include <com/sun/star/reflection/XUnionTypeDescription.hpp>
 #include "com/sun/star/uno/RuntimeException.hpp"
 
-#include "boost/scoped_array.hpp"
+#include <memory>
 
 using namespace ::rtl;
 using namespace ::com::sun::star;
@@ -422,7 +422,7 @@ inline static typelib_TypeDescription * createCTD(
         sal_Int32 nBases = aBases.getLength();
         // Exploit the fact that a typelib_TypeDescription for an interface type
         // is also the typelib_TypeDescriptionReference for that type:
-        boost::scoped_array< typelib_TypeDescription * > aBaseTypes(
+        std::unique_ptr< typelib_TypeDescription * []> aBaseTypes(
             new typelib_TypeDescription *[nBases]);
         {for (sal_Int32 i = 0; i < nBases; ++i) {
             typelib_TypeDescription * p = createCTD(access, aBases[i]);

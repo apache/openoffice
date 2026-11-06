@@ -23,7 +23,7 @@
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_jvmfwk.hxx"
-#include "boost/scoped_array.hpp"
+#include <memory>
 #include "rtl/ustring.hxx"
 #include "rtl/bootstrap.hxx"
 #include "osl/thread.hxx"
@@ -76,7 +76,7 @@ javaFrameworkError SAL_CALL jfw_findAllJREs(JavaInfo ***pparInfo, sal_Int32 *pSi
 
         //Create a vector that holds the libraries, which will be later
         //dynamically loaded;
-        boost::scoped_array<osl::Module> sarModules;
+        std::unique_ptr<osl::Module[]> sarModules;
         sarModules.reset(new osl::Module[vecPlugins.size()]);
         osl::Module * arModules = sarModules.get();
 		//Add the JavaInfos found by jfw_plugin_getAllJavaInfos to the vector
@@ -361,7 +361,7 @@ javaFrameworkError SAL_CALL jfw_startVM(JavaVMOption *arOptions, sal_Int32 cOpti
 		// create JavaVMOptions array that is passed to the plugin
 		// it contains the classpath and all options set in the
 		//options dialog
-		boost::scoped_array<JavaVMOption> sarJOptions(
+		std::unique_ptr<JavaVMOption[]> sarJOptions(
             new JavaVMOption[cOptions + 2 + vmParams.size()]);
 		JavaVMOption * arOpt = sarJOptions.get();
 		if (! arOpt)
@@ -449,7 +449,7 @@ javaFrameworkError SAL_CALL jfw_findAndSelectJRE(JavaInfo **pInfo)
  			aVendorSettings.getPluginData();
         //Create a vector that holds the libraries, which will be later
         //dynamically loaded;
-        boost::scoped_array<osl::Module> sarModules;
+        std::unique_ptr<osl::Module[]> sarModules;
         sarModules.reset(new osl::Module[vecPlugins.size()]);
         osl::Module * arModules = sarModules.get();
 
@@ -748,7 +748,7 @@ javaFrameworkError SAL_CALL jfw_getJavaInfoByPath(
 			aVendorSettings.getPluginData();
         //Create a vector that holds the libraries, which will be later
         //dynamically loaded;
-        boost::scoped_array<osl::Module> sarModules;
+        std::unique_ptr<osl::Module[]> sarModules;
         sarModules.reset(new osl::Module[vecPlugins.size()]);
         osl::Module * arModules = sarModules.get();
 

@@ -68,7 +68,7 @@
 #include <unotools/charclass.hxx>
 #include <drwlayer.hxx>
 
-#include <boost/scoped_array.hpp>
+#include <memory>
 
 #include "cell.hxx"
 #include "document.hxx"
@@ -642,7 +642,7 @@ void XclImpAutoFilterData::Apply( const sal_Bool bUseUnNamed )
 //        SCROW nRow1 = StartRow();
 //        SCROW nRow2 = EndRow();
 //        size_t nRows = nRow2 - nRow1 + 1;
-//        boost::scoped_array<sal_uInt8> pFlags( new sal_uInt8[nRows]);
+//        std::unique_ptr<sal_uInt8[]> pFlags( new sal_uInt8[nRows]);
 //        pExcRoot->pDoc->GetRowFlagsArray( Tab()).FillDataArray( nRow1, nRow2,
 //                pFlags.get());
 //        for (size_t j=0; j<nRows; ++j)

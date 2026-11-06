@@ -32,7 +32,7 @@
 #include "rtl/bootstrap.hxx"
 #include "sal/types.h"
 #include "sal/config.h"
-#include "boost/scoped_array.hpp"
+#include <memory>
 #include "com/sun/star/lang/XServiceInfo.hpp"
 #include "com/sun/star/lang/XInitialization.hpp"
 #include "com/sun/star/lang/WrappedTargetException.hpp"

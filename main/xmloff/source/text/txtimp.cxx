@@ -26,7 +26,7 @@
 
 #include <vector>
 
-#include <boost/scoped_array.hpp>
+#include <memory>
 #include <tuple>
 
 #include <tools/solar.h>
@@ -523,22 +523,22 @@ static __FAR_DATA SvXMLTokenMapEntry aTextFieldAttrTokenMap[] =
 struct SAL_DLLPRIVATE XMLTextImportHelper::Impl
     : private ::boost::noncopyable
 {
-    ::std::unique_ptr<SvXMLTokenMap> m_pTextElemTokenMap;
-    ::std::unique_ptr<SvXMLTokenMap> m_pTextPElemTokenMap;
-    ::std::unique_ptr<SvXMLTokenMap> m_pTextPAttrTokenMap;
-    ::std::unique_ptr<SvXMLTokenMap> m_pTextFieldAttrTokenMap;
-    ::std::unique_ptr<SvXMLTokenMap> m_pTextNumberedParagraphAttrTokenMap;
-    ::std::unique_ptr<SvXMLTokenMap> m_pTextListBlockAttrTokenMap;
-    ::std::unique_ptr<SvXMLTokenMap> m_pTextListBlockElemTokenMap;
-    ::std::unique_ptr<SvXMLTokenMap> m_pTextFrameAttrTokenMap;
-    ::std::unique_ptr<SvXMLTokenMap> m_pTextContourAttrTokenMap;
-    ::std::unique_ptr<SvXMLTokenMap> m_pTextHyperlinkAttrTokenMap;
-    ::std::unique_ptr<SvXMLTokenMap> m_pTextMasterPageElemTokenMap;
-    ::std::unique_ptr<SvStringsDtor> m_pPrevFrmNames;
-    ::std::unique_ptr<SvStringsDtor> m_pNextFrmNames;
+    ::std::unique_ptr<SvXMLTokenMap[]> m_pTextElemTokenMap;
+    ::std::unique_ptr<SvXMLTokenMap[]> m_pTextPElemTokenMap;
+    ::std::unique_ptr<SvXMLTokenMap[]> m_pTextPAttrTokenMap;
+    ::std::unique_ptr<SvXMLTokenMap[]> m_pTextFieldAttrTokenMap;
+    ::std::unique_ptr<SvXMLTokenMap[]> m_pTextNumberedParagraphAttrTokenMap;
+    ::std::unique_ptr<SvXMLTokenMap[]> m_pTextListBlockAttrTokenMap;
+    ::std::unique_ptr<SvXMLTokenMap[]> m_pTextListBlockElemTokenMap;
+    ::std::unique_ptr<SvXMLTokenMap[]> m_pTextFrameAttrTokenMap;
+    ::std::unique_ptr<SvXMLTokenMap[]> m_pTextContourAttrTokenMap;
+    ::std::unique_ptr<SvXMLTokenMap[]> m_pTextHyperlinkAttrTokenMap;
+    ::std::unique_ptr<SvXMLTokenMap[]> m_pTextMasterPageElemTokenMap;
+    ::std::unique_ptr<SvStringsDtor[]> m_pPrevFrmNames;
+    ::std::unique_ptr<SvStringsDtor[]> m_pNextFrmNames;
 
     // --> OD 2008-04-25 #refactorlists#
-    ::std::unique_ptr<XMLTextListsHelper> m_pTextListsHelper;
+    ::std::unique_ptr<XMLTextListsHelper[]> m_pTextListsHelper;
     // <--
 
     SvXMLImportContextRef m_xAutoStyles;
@@ -552,13 +552,13 @@ struct SAL_DLLPRIVATE XMLTextImportHelper::Impl
     UniReference< SvXMLImportPropertyMapper > m_xSectionImpPrMap;
     UniReference< SvXMLImportPropertyMapper > m_xRubyImpPrMap;
 
-    ::std::unique_ptr<SvI18NMap> m_pRenameMap;
+    ::std::unique_ptr<SvI18NMap[]> m_pRenameMap;
     // --> OD 2006-10-12 #i69629# - change and extend data structure:
     // - data structure contains candidates of paragraph styles, which
     //   will be assigned to the outline style
     // - data structure contains more than one candidate for each list level
     //   of the outline style
-    ::boost::scoped_array< ::std::vector< ::rtl::OUString > >
+    ::std::unique_ptr< ::std::vector< ::rtl::OUString []> >
         m_pOutlineStylesCandidates;
     // <--
 

@@ -60,7 +60,7 @@
 #include <rtl/logfile.h>
 #include <com/sun/star/task/XInteractionHandler.hpp>
 #include <vector>
-#include "boost/scoped_array.hpp"
+#include <memory>
 
 #include "secerror.hxx"
 
@@ -1120,7 +1120,7 @@ xmlSecKeysMngrPtr SecurityEnvironment_NssImpl::createKeysManager() {
 	 * crypto engine
 	 */
 	int cSlots = m_Slots.size();
-	boost::scoped_array<PK11SlotInfo*> sarSlots(new PK11SlotInfo*[cSlots]);
+	std::unique_ptr<PK11SlotInfo*[]> sarSlots(new PK11SlotInfo*[cSlots]);
 	PK11SlotInfo**  slots = sarSlots.get();
 	int count = 0;
 	for (CIT_SLOTS islots = m_Slots.begin();islots != m_Slots.end(); islots++, count++)

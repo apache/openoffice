@@ -34,7 +34,7 @@
 #include "rtl/byteseq.hxx"
 #include "rtl/ustrbuf.hxx"
 #include "rtl/instance.hxx"
-#include "boost/scoped_array.hpp"
+#include <memory>
 #include "com/sun/star/uno/Sequence.hxx"
 #include <utility>
 #include <algorithm>
@@ -295,7 +295,7 @@ FileHandleReader::readLine(rtl::OString * pLine)
 class AsynchReader: public Thread
 {
     size_t  m_nDataSize;
-    boost::scoped_array<sal_Char> m_arData;
+    std::unique_ptr<sal_Char[]> m_arData;
 
     bool m_bError;
     bool m_bDone;
@@ -356,7 +356,7 @@ void AsynchReader::run()
         else if (nRead <= BUFFER_SIZE)
         {
             //Save the data we have in m_arData into a temporary array
-            boost::scoped_array<sal_Char> arTmp( new sal_Char[m_nDataSize]);
+            std::unique_ptr<sal_Char[]> arTmp( new sal_Char[m_nDataSize]);
             memcpy(arTmp.get(), m_arData.get(), m_nDataSize);
             //Enlarge m_arData to hold the newly read data
             m_arData.reset(new sal_Char[(size_t)(m_nDataSize + nRead)]);
@@ -1174,21 +1174,21 @@ void createJavaInfoDirScan(vector<rtl::Reference<VendorBase> >& vecInfos)
     OUString excMessage = OUSTR("[Java framework] sunjavaplugin: "
                                 "Error in function createJavaInfoDirScan in util.cxx.");
     int cJavaNames= sizeof(g_arJavaNames) / sizeof(char*);
-    boost::scoped_array<OUString> sarJavaNames(new OUString[cJavaNames]);
+    std::unique_ptr<OUString[]> sarJavaNames(new OUString[cJavaNames]);
     OUString *arNames = sarJavaNames.get();
     for(int i= 0; i < cJavaNames; i++)
         arNames[i] = OUString(g_arJavaNames[i], strlen(g_arJavaNames[i]),
                               RTL_TEXTENCODING_UTF8);
 
     int cSearchPaths= sizeof(g_arSearchPaths) / sizeof(g_arSearchPaths[0]);
-    boost::scoped_array<OUString> sarPathNames(new OUString[cSearchPaths]);
+    std::unique_ptr<OUString[]> sarPathNames(new OUString[cSearchPaths]);
     OUString *arPaths = sarPathNames.get();
     for(int c = 0; c < cSearchPaths; c++)
         arPaths[c] = OUString(g_arSearchPaths[c].path, strlen(g_arSearchPaths[c].path),
                                RTL_TEXTENCODING_UTF8);
 
     int cCollectDirs = sizeof(g_arCollectDirs) / sizeof(char*);
-    boost::scoped_array<OUString> sarCollectDirs(new OUString[cCollectDirs]);
+    std::unique_ptr<OUString[]> sarCollectDirs(new OUString[cCollectDirs]);
     OUString *arCollectDirs = sarCollectDirs.get();
     for(int d = 0; d < cCollectDirs; d++)
         arCollectDirs[d] = OUString(g_arCollectDirs[d], strlen(g_arCollectDirs[d]),

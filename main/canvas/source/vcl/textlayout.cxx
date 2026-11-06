@@ -41,7 +41,7 @@
 #include "impltools.hxx"
 #include "textlayout.hxx"
 
-#include <boost/scoped_array.hpp>
+#include <memory>
 
 
 using namespace ::com::sun::star;
@@ -127,7 +127,7 @@ namespace vclcanvas
             uno::Sequence<double>(4),
             rendering::CompositeOperation::SOURCE);
 
-        ::boost::scoped_array< sal_Int32 > aOffsets(new sal_Int32[maLogicalAdvancements.getLength()]);
+        ::std::unique_ptr< sal_Int32 []> aOffsets(new sal_Int32[maLogicalAdvancements.getLength()]);
         setupTextOffsets(aOffsets.get(), maLogicalAdvancements, aViewState, aRenderState);
 
         uno::Sequence< uno::Reference< rendering::XPolyPolygon2D> > aOutlineSequence;
@@ -180,7 +180,7 @@ namespace vclcanvas
             uno::Sequence<double>(4),
             rendering::CompositeOperation::SOURCE);
 
-        ::boost::scoped_array< sal_Int32 > aOffsets(new sal_Int32[maLogicalAdvancements.getLength()]);
+        ::std::unique_ptr< sal_Int32 []> aOffsets(new sal_Int32[maLogicalAdvancements.getLength()]);
         setupTextOffsets(aOffsets.get(), maLogicalAdvancements, aViewState, aRenderState);
 
         MetricVector aMetricVector;
@@ -392,7 +392,7 @@ namespace vclcanvas
         if( maLogicalAdvancements.getLength() )
         {
             // TODO(P2): cache that
-            ::boost::scoped_array< sal_Int32 > aOffsets(new sal_Int32[maLogicalAdvancements.getLength()]);
+            ::std::unique_ptr< sal_Int32 []> aOffsets(new sal_Int32[maLogicalAdvancements.getLength()]);
             setupTextOffsets( aOffsets.get(), maLogicalAdvancements, viewState, renderState );
 
             // TODO(F3): ensure correct length and termination for DX

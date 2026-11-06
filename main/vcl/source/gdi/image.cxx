@@ -23,7 +23,7 @@
 #include "precompiled_vcl.hxx"
 
 #include <memory>
-#include <boost/scoped_array.hpp>
+#include <memory>
 
 #include <rtl/logfile.hxx>
 
@@ -440,7 +440,7 @@ ImageList::ImageList( const ResId& rResId ) :
 
 		sal_uLong 								nObjMask = pResMgr->ReadLong();
 		const String						aPrefix( pResMgr->ReadString() );
-		::std::unique_ptr< Color >		spMaskColor;
+		::std::unique_ptr< Color []>		spMaskColor;
 
 		if( nObjMask & RSC_IMAGE_MASKCOLOR )
 			spMaskColor.reset( new Color( ResId( (RSHEADER_TYPE*)pResMgr->GetClass(), *pResMgr ) ) );

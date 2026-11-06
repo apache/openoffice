@@ -32,7 +32,7 @@
 #include "sal/main.h"
 #include "sal/types.h"
 
-#include "boost/scoped_array.hpp"
+#include <memory>
 
 #include "com/sun/star/beans/IllegalTypeException.hpp"
 #include "com/sun/star/beans/MethodConcept.hpp"

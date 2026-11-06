@@ -54,7 +54,7 @@
 #include "dx_canvas.hxx"
 #include "dx_spritecanvas.hxx"
 
-#include <boost/scoped_array.hpp>
+#include <memory>
 
 #include <vector>
 #include <algorithm>

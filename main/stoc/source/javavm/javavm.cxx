@@ -84,7 +84,7 @@
 #include <time.h>
 #include <memory>
 #include <vector>
-#include "boost/scoped_array.hpp"
+#include <memory>
 #define OUSTR(x) rtl::OUString(RTL_CONSTASCII_USTRINGPARAM( x ))
 
 // Properties of the javavm can be put
@@ -753,12 +753,12 @@ JavaVirtualMachine::getJavaVM(css::uno::Sequence< sal_Int8 > const & rProcessId)
                             m_xContext);
         //Create the JavaVMOption array
         const std::vector<rtl::OUString> & props = aJvm.getProperties();
-        boost::scoped_array<JavaVMOption> sarOptions(
+        std::unique_ptr<JavaVMOption[]> sarOptions(
             new JavaVMOption[props.size()]);
         JavaVMOption * arOptions = sarOptions.get();
         //Create an array that contains the strings which are passed
         //into the options
-        boost::scoped_array<rtl::OString> sarPropStrings(
+        std::unique_ptr<rtl::OString[]> sarPropStrings(
              new rtl::OString[props.size()]);
         rtl::OString * arPropStrings = sarPropStrings.get();
 

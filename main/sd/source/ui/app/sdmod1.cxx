@@ -71,7 +71,7 @@
 #include "sdabstdlg.hxx"
 #include <memory>
 #include <memory>
-#include <boost/scoped_array.hpp>
+#include <memory>
 #include "slideshow.hxx"
 
 #include <com/sun/star/document/XDocumentPropertiesSupplier.hpp>
@@ -588,7 +588,7 @@ SfxFrame* SdModule::ExecuteNewDocument( SfxRequest& rReq )
 		else
 		{
 			SdAbstractDialogFactory* pFact = SdAbstractDialogFactory::Create();
-			std::unique_ptr< AbstractAssistentDlg > pPilotDlg( pFact ? pFact->CreateAssistentDlg( NULL, !bNewDocDirect ) : 0 );
+			std::unique_ptr< AbstractAssistentDlg []> pPilotDlg( pFact ? pFact->CreateAssistentDlg( NULL, !bNewDocDirect ) : 0 );
 
 			// Open the Pilot
 			if(	pPilotDlg.get() && pPilotDlg->Execute()==RET_OK )
@@ -658,7 +658,7 @@ SfxFrame* SdModule::ExecuteNewDocument( SfxRequest& rReq )
 					pOpt->SetStartWithTemplate(bStartWithTemplate);
 					if(bNewDocDirect && !bStartWithTemplate)
 					{
-						std::unique_ptr< SfxItemSet > pRet( CreateItemSet( SID_SD_EDITOPTIONS ) );
+						std::unique_ptr< SfxItemSet []> pRet( CreateItemSet( SID_SD_EDITOPTIONS ) );
 						if(pRet.get())
 							ApplyItemSet( SID_SD_EDITOPTIONS, *pRet.get() );
 
@@ -676,7 +676,7 @@ SfxFrame* SdModule::ExecuteNewDocument( SfxRequest& rReq )
 
 						if(bNewDocDirect && !bStartWithTemplate)
 						{
-							std::unique_ptr< SfxItemSet > pRet( CreateItemSet( SID_SD_EDITOPTIONS ) );
+							std::unique_ptr< SfxItemSet []> pRet( CreateItemSet( SID_SD_EDITOPTIONS ) );
 							if(pRet.get())
 								ApplyItemSet( SID_SD_EDITOPTIONS, *pRet.get() );
 						}
@@ -954,7 +954,7 @@ OutlineToImpressFinalizer::OutlineToImpressFinalizer (
 		// the original stream.
 		mpStream.reset(new SvMemoryStream());
 		static const sal_Size nBufferSize = 4096;
-		::boost::scoped_array<sal_Int8> pBuffer (new sal_Int8[nBufferSize]);
+		::std::unique_ptr<sal_Int8[]> pBuffer (new sal_Int8[nBufferSize]);
 
 		sal_Size nReadPosition (0);
 		bool bLoop (true);

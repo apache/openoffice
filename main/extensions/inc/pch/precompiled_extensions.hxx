@@ -30,7 +30,7 @@
 #include "sal/types.h"
 
 
-#include "boost/scoped_array.hpp"
+#include <memory>
 #include "boost/shared_ptr.hpp"
 
 #include "com/sun/star/awt/FocusChangeReason.hpp"

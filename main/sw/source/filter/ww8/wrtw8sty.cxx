@@ -28,7 +28,7 @@
 #include <algorithm>
 #include <functional>
 
-#include <boost/scoped_array.hpp>
+#include <memory>
 
 #include <com/sun/star/i18n/ScriptType.hdl>
 #include <rtl/tencinfo.h>
@@ -85,7 +85,7 @@ using namespace nsHdFtFlags;
 /// For the output of sections.
 struct WW8_PdAttrDesc
 {
-    ::boost::scoped_array<sal_uInt8> m_pData;
+    ::std::unique_ptr<sal_uInt8[]> m_pData;
     sal_uInt16 m_nLen;
     WW8_FC m_nSepxFcPos;
     WW8_PdAttrDesc() : m_nLen(0), m_nSepxFcPos(0xffffffff) /*default: none*/

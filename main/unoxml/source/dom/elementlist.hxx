@@ -26,7 +26,7 @@
 
 #include <vector>
 
-#include <boost/scoped_array.hpp>
+#include <memory>
 
 #include <libxml/tree.h>
 
@@ -61,8 +61,8 @@ namespace DOM
     private:
         ::rtl::Reference<CElement> const m_pElement;
         ::osl::Mutex & m_rMutex;
-        ::boost::scoped_array<xmlChar> const m_pName;
-        ::boost::scoped_array<xmlChar> const m_pURI;
+        ::std::unique_ptr<xmlChar[]> const m_pName;
+        ::std::unique_ptr<xmlChar[]> const m_pURI;
         bool m_bRebuild;
         nodevector_t m_nodevector;
 

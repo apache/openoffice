@@ -31,7 +31,7 @@
 #include "osl/doublecheckedlocking.h"
 #include "osl/thread.h"
 
-#include "boost/scoped_array.hpp"
+#include <memory>
 #include <com/sun/star/script/FailReason.hpp>
 #include <com/sun/star/beans/XMaterialHolder.hpp>
 #include <com/sun/star/script/XTypeConverter.hpp>
@@ -739,8 +739,8 @@ Any  IUnknownWrapper_Impl::invokeWithDispIdUnoTlb(const OUString& sFunctionName,
 	// Then out and in/out parameters have to be treated differently than
 	// with common COM objects.
 	sal_Bool bJScriptObject= isJScriptObject();
-    scoped_array<CComVariant> sarParams;
-    scoped_array<CComVariant> sarParamsRef;
+    std::unique_ptr<CComVariant[]> sarParams;
+    std::unique_ptr<CComVariant[]> sarParamsRef;
 	CComVariant *pVarParams= NULL;
 	CComVariant *pVarParamsRef= NULL;
 	sal_Bool bConvRet= sal_True;
@@ -1278,9 +1278,9 @@ uno::Any SAL_CALL IUnknownWrapper_Impl::directInvoke( const ::rtl::OUString& aNa
         DISPPARAMS 		dispparams = {NULL, NULL, 0, 0};
 
         DISPID idPropertyPut = DISPID_PROPERTYPUT;
-        scoped_array<DISPID> arDispidNamedArgs;
-        scoped_array<CComVariant> ptrArgs;
-        scoped_array<CComVariant> ptrRefArgs; // referenced arguments
+        std::unique_ptr<DISPID[]> arDispidNamedArgs;
+        std::unique_ptr<CComVariant[]> ptrArgs;
+        std::unique_ptr<CComVariant[]> ptrRefArgs; // referenced arguments
         CComVariant * arArgs = NULL;
         CComVariant * arRefArgs = NULL;
         bool bVarargParam = false;
@@ -1300,7 +1300,7 @@ uno::Any SAL_CALL IUnknownWrapper_Impl::directInvoke( const ::rtl::OUString& aNa
             if ( pInvkinds[nStep] == INVOKE_PROPERTYPUT )
                 nSizeAr = dispparams.cNamedArgs;
 
-            scoped_array<OLECHAR*> saNames(new OLECHAR*[nSizeAr]);
+            std::unique_ptr<OLECHAR*[]> saNames(new OLECHAR*[nSizeAr]);
             OLECHAR ** pNames = saNames.get();
             pNames[0] = const_cast<OLECHAR*>(reinterpret_cast<LPCOLESTR>(aName.getStr()));
 
@@ -1655,9 +1655,9 @@ Any  IUnknownWrapper_Impl::invokeWithDispIdComTlb(const OUString& sFuncName,
 	sal_Int32       i = 0;
     sal_Int32 nUnoArgs = Params.getLength();
     DISPID idPropertyPut = DISPID_PROPERTYPUT;
-	scoped_array<DISPID> arDispidNamedArgs;
-	scoped_array<CComVariant> ptrArgs;
-	scoped_array<CComVariant> ptrRefArgs; // referenced arguments
+	std::unique_ptr<DISPID[]> arDispidNamedArgs;
+	std::unique_ptr<CComVariant[]> ptrArgs;
+	std::unique_ptr<CComVariant[]> ptrRefArgs; // referenced arguments
     CComVariant * arArgs = NULL;
     CComVariant * arRefArgs = NULL;
     sal_Int32 revIndex = 0;
@@ -1736,7 +1736,7 @@ Any  IUnknownWrapper_Impl::invokeWithDispIdComTlb(const OUString& sFuncName,
             nSizeAr = dispparams.cNamedArgs; //counts the DISID_PROPERTYPUT
         }
 
-        scoped_array<OLECHAR*> saNames(new OLECHAR*[nSizeAr]);
+        std::unique_ptr<OLECHAR*[]> saNames(new OLECHAR*[nSizeAr]);
         OLECHAR ** arNames = saNames.get();
         arNames[0] = const_cast<OLECHAR*>(reinterpret_cast<LPCOLESTR>(sFuncName.getStr()));
 

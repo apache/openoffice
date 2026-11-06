@@ -45,7 +45,7 @@
 #include "com/sun/star/deployment/ui/PackageManagerDialog.hpp"
 #include "com/sun/star/ui/dialogs/XExecutableDialog.hpp"
 #include "com/sun/star/lang/DisposedException.hpp"
-#include "boost/scoped_array.hpp"
+#include <memory>
 #include "com/sun/star/ui/dialogs/XDialogClosedListener.hpp"
 #include "com/sun/star/bridge/XBridgeFactory.hpp"
 #include <stdio.h>
