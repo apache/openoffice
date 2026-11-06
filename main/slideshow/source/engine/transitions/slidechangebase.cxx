@@ -36,7 +36,6 @@
 #include "slidechangebase.hxx"
 #include "tools.hxx"
 
-#include <boost/bind.hpp>
 #include <algorithm>
 
 using namespace com::sun::star;
@@ -196,9 +195,7 @@ void SlideChangeBase::prefetch( const AnimatableShapeSharedPtr&,
     // init views and create slide bitmaps
     std::for_each( mrViewContainer.begin(),
                    mrViewContainer.end(),
-                   boost::bind( &SlideChangeBase::viewAdded,
-                                this,
-                                _1 ));
+                   [this](auto& view) { this->viewAdded( view ); } );
 
     mbPrefetched = true;
 }
@@ -418,11 +415,7 @@ void SlideChangeBase::viewRemoved( const UnoViewSharedPtr& rView )
         std::remove_if(
             maViewData.begin(),
             maViewData.end(),
-            boost::bind(
-                std::equal_to<UnoViewSharedPtr>(),
-                rView,
-                // select view:
-                boost::bind( &ViewEntry::getView, _1 ))),
+            [&rView](const auto& entry) { return rView == entry->getView(); })),
         maViewData.end() );
 }
 
@@ -437,11 +430,7 @@ void SlideChangeBase::viewChanged( const UnoViewSharedPtr& rView )
         std::find_if(
             maViewData.begin(),
             maViewData.end(),
-            boost::bind(
-                std::equal_to<UnoViewSharedPtr>(),
-                rView,
-                // select view:
-                boost::bind( &ViewEntry::getView, _1 ) )));
+            [&rView](const auto& entry) { return rView == entry->getView(); } )));
 
     OSL_ASSERT( aModifiedEntry != maViewData.end() );
     if( aModifiedEntry == maViewData.end() )

@@ -34,7 +34,6 @@
 
 #include "combtransition.hxx"
 
-#include <boost/bind.hpp>
 
 
 namespace slideshow {
@@ -178,10 +177,7 @@ bool CombTransition::operator()( double t )
 {
     std::for_each( beginViews(),
                    endViews(),
-                   boost::bind( &CombTransition::renderComb,
-                                this,
-                                t,
-                                _1 ));
+                    [this, t](auto& view) { this->renderComb( t, view ); }));
 
     getScreenUpdater().notifyUpdate();
 

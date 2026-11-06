@@ -52,7 +52,6 @@
 #include "combtransition.hxx"
 #include "tools.hxx"
 
-#include <boost/bind.hpp>
 
 
 /***************************************************
@@ -198,8 +197,7 @@ public:
     {
         std::for_each(maTransitions.begin(),
                       maTransitions.end(),
-                      boost::bind( &TransitionViewPair::update,
-                                   _1, t) );
+                      [&t](auto& pair) { pair.update( t ); } );
         return true;
     }
 
