@@ -74,9 +74,7 @@ WaitSymbol::WaitSymbol( uno::Reference<rendering::XBitmap> const &   xBitmap,
 {
     std::for_each( rViewContainer.begin(),
                    rViewContainer.end(),
-                   boost::bind( &WaitSymbol::viewAdded,
-                                this,
-                                _1 ));
+                   [this](auto& view) { this->viewAdded( view ); } );
 }
 
 void WaitSymbol::setVisible( const bool bVisible )
@@ -156,11 +154,7 @@ void WaitSymbol::viewRemoved( const UnoViewSharedPtr& rView )
     maViews.erase(
         std::remove_if(
             maViews.begin(), maViews.end(),
-            boost::bind(
-                std::equal_to<UnoViewSharedPtr>(),
-                rView,
-                // select view:
-                boost::bind( std::select1st<ViewsVecT::value_type>(), _1 ) ) ),
+        [&rView](const auto& entry) { return rView == entry.first; } ) ),
         maViews.end() );
 }
 
@@ -171,11 +165,7 @@ void WaitSymbol::viewChanged( const UnoViewSharedPtr& rView )
         std::find_if(
             maViews.begin(),
             maViews.end(),
-            boost::bind(
-                std::equal_to<UnoViewSharedPtr>(),
-                rView,
-                // select view:
-                boost::bind( std::select1st<ViewsVecT::value_type>(), _1 ))));
+            [&rView](const auto& entry) { return rView == entry.first; } ))));
 
     OSL_ASSERT( aModifiedEntry != maViews.end() );
     if( aModifiedEntry == maViews.end() )
