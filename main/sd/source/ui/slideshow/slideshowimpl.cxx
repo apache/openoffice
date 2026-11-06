@@ -81,7 +81,6 @@
 #include <vcl/imagerepository.hxx>
 
 #include <boost/noncopyable.hpp>
-#include <boost/bind.hpp>
 
 using ::rtl::OUString;
 using ::rtl::OString;
@@ -3781,7 +3780,7 @@ void SAL_CALL SlideShowListenerProxy::beginEvent( const Reference< XAnimationNod
 	::osl::MutexGuard aGuard( m_aMutex );
 
 	if( maListeners.getLength() >= 0 )
-		maListeners.forEach<XSlideShowListener>( boost::bind( &XAnimationListener::beginEvent, _1,  boost::cref(xNode) ));
+		maListeners.forEach<XSlideShowListener>( [&xNode](const auto& listener) { listener->beginEvent( xNode ); });
 }
 
 // ---------------------------------------------------------
@@ -3791,7 +3790,7 @@ void SAL_CALL SlideShowListenerProxy::endEvent( const Reference< XAnimationNode 
 	::osl::MutexGuard aGuard( m_aMutex );
 
 	if( maListeners.getLength() >= 0 )
-		maListeners.forEach<XSlideShowListener>( boost::bind( &XAnimationListener::endEvent, _1, boost::cref(xNode) ));
+		maListeners.forEach<XSlideShowListener>( [&xNode](const auto& listener) { listener->endEvent( xNode ); });
 }
 
 // ---------------------------------------------------------
@@ -3801,7 +3800,7 @@ void SAL_CALL SlideShowListenerProxy::repeat( const Reference< XAnimationNode >&
 	::osl::MutexGuard aGuard( m_aMutex );
 
 	if( maListeners.getLength() >= 0 )
-		maListeners.forEach<XSlideShowListener>( boost::bind( &XAnimationListener::repeat, _1,  boost::cref(xNode), boost::cref(nRepeat) ));
+		maListeners.forEach<XSlideShowListener>( [&xNode, &nRepeat](const auto& listener) { listener->repeat( xNode, nRepeat ); });
 }
 
 // ---------------------------------------------------------
@@ -3865,7 +3864,7 @@ void SlideShowListenerProxy::slideEnded(sal_Bool bReverse)
 
 		if( maListeners.getLength() >= 0 )
 			maListeners.forEach<XSlideShowListener>(
-				boost::bind( &XSlideShowListener::slideEnded, _1, bReverse) );
+				[bReverse](const auto& listener) { listener->slideEnded( bReverse ); } );
 	}
 
 	{
@@ -3883,7 +3882,7 @@ void SlideShowListenerProxy::hyperLinkClicked( rtl::OUString const& aHyperLink )
 		::osl::MutexGuard aGuard( m_aMutex );
 
 		if( maListeners.getLength() >= 0 )
-			maListeners.forEach<XSlideShowListener>( boost::bind( &XSlideShowListener::hyperLinkClicked, _1, boost::cref(aHyperLink) ));
+			maListeners.forEach<XSlideShowListener>( [&aHyperLink](const auto& listener) { listener->hyperLinkClicked( aHyperLink ); });
 	}
 
 	{

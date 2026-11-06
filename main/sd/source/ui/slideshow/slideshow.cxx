@@ -54,7 +54,6 @@
 #include "ViewShell.hxx"
 #include "SlideShowRestarter.hxx"
 #include "DrawController.hxx"
-#include <boost/bind.hpp>
 #include <memory>
 
 using ::com::sun::star::presentation::XSlideShowController;
@@ -1188,7 +1187,7 @@ void SlideShow::StartInPlacePresentation()
 			}
 
 			pHelper->RequestView( FrameworkHelper::msImpressViewURL, FrameworkHelper::msCenterPaneURL );
-			pHelper->RunOnConfigurationEvent( FrameworkHelper::msConfigurationUpdateEndEvent, ::boost::bind(&SlideShow::StartInPlacePresentationConfigurationCallback, this) );
+			pHelper->RunOnConfigurationEvent( FrameworkHelper::msConfigurationUpdateEndEvent, [this]() { this->StartInPlacePresentationConfigurationCallback(); } );
 			return;
 		}
 		else

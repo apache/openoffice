@@ -35,7 +35,6 @@
 #include "DrawController.hxx"
 #include "DrawDocShell.hxx"
 #include <com/sun/star/drawing/framework/XControllerManager.hpp>
-#include <boost/bind.hpp>
 
 
 using namespace ::com::sun::star;
@@ -270,7 +269,7 @@ Reference<XResource> SAL_CALL BasicPaneFactory::createResource (
         ::std::find_if (
             mpPaneContainer->begin(),
             mpPaneContainer->end(),
-            ::boost::bind(&PaneDescriptor::CompareURL, _1, rxPaneId->getResourceURL())));
+            [&rxPaneId](const auto& desc) { return desc.CompareURL( rxPaneId->getResourceURL() ); }));
 
     if (iDescriptor != mpPaneContainer->end())
     {
@@ -338,7 +337,7 @@ void SAL_CALL BasicPaneFactory::releaseResource (
         ::std::find_if(
             mpPaneContainer->begin(),
             mpPaneContainer->end(),
-            ::boost::bind(&PaneDescriptor::ComparePane, _1, rxPane)));
+            [&rxPane](const auto& desc) { return desc.ComparePane( rxPane ); }));
 
     if (iDescriptor != mpPaneContainer->end())
     {
@@ -443,7 +442,7 @@ void SAL_CALL BasicPaneFactory::disposing (
             ::std::find_if (
                 mpPaneContainer->begin(),
                 mpPaneContainer->end(),
-                ::boost::bind(&PaneDescriptor::ComparePane, _1, xPane)));
+                [&xPane](const auto& desc) { return desc.ComparePane( xPane ); }));
         if (iDescriptor != mpPaneContainer->end())
         {
             iDescriptor->mxPane = NULL;

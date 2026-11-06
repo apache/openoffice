@@ -33,7 +33,6 @@
 #include <comphelper/scopeguard.hxx>
 #include <tools/diagnose_ex.h>
 
-#include <boost/bind.hpp>
 #include <memory>
 
 using namespace ::com::sun::star;
@@ -179,7 +178,7 @@ void ConfigurationUpdater::UpdateConfiguration (void)
 #endif
     SetUpdateBeingProcessed(true);
     comphelper::ScopeGuard aScopeGuard (
-        ::boost::bind(&ConfigurationUpdater::SetUpdateBeingProcessed, this, false));
+        [this]() { this->SetUpdateBeingProcessed( false ); });
 
     try
     {

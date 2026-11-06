@@ -29,7 +29,6 @@
 #include <sfx2/viewfrm.hxx>
 #include <svx/svxids.hrc>
 #include <vcl/svapp.hxx>
-#include <boost/bind.hpp>
 #include <memory>
 
 using namespace ::com::sun::star::uno;
@@ -128,7 +127,7 @@ IMPL_LINK(SlideShowRestarter, EndPresentation, void*, EMPTYARG)
 
 					pHelper->RunOnConfigurationEvent(
 						FrameworkHelper::msConfigurationUpdateEndEvent,
-						::boost::bind(&SlideShowRestarter::StartPresentation, shared_from_this()));
+						[self = shared_from_this()]() { self->StartPresentation(); });
 					pHelper->UpdateConfiguration();
 				}
 				else
