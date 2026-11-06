@@ -35,7 +35,6 @@
 #include <com/sun/star/awt/MouseButton.hpp>
 #include <com/sun/star/awt/MouseEvent.hpp>
 
-#include <boost/bind.hpp>
 
 #include "delayevent.hxx"
 #include "usereventqueue.hxx"
@@ -191,8 +190,7 @@ public:
 
             // registered node found -> fire all events in the vector
             std::for_each( rVec.begin(), rVec.end(),
-                           boost::bind( &EventQueue::addEvent,
-                                        boost::ref( mrEventQueue ), _1 ) );
+                           [&](auto& event) { mrEventQueue.addEvent( event ); } );
 
             rVec.clear();
         }
@@ -333,8 +331,7 @@ private:
                 // someone has registered above for next effects
                 // (multiplexer prio=0) at the user event queue.
                 return mrEventQueue.addEventWhenQueueIsEmpty(
-                    makeEvent( boost::bind( &EventMultiplexer::notifyNextEffect,
-                                            boost::ref(mrEventMultiplexer) ),
+                    makeEvent( [&]() { mrEventMultiplexer.notifyNextEffect(); },
                                "EventMultiplexer::notifyNextEffect") );
             }
             else
@@ -791,16 +788,14 @@ void UserEventQueue::registerSlideStartEvent( const EventSharedPtr& rEvent )
 {
     registerEvent( mpStartEventHandler,
                    rEvent,
-                   boost::bind( &EventMultiplexer::addSlideStartHandler,
-                                boost::ref( mrMultiplexer ), _1 ) );
+                   [&](auto& handler) { mrMultiplexer.addSlideStartHandler( handler ); } );
 }
 
 void UserEventQueue::registerSlideEndEvent( const EventSharedPtr& rEvent )
 {
     registerEvent( mpEndEventHandler,
                    rEvent,
-                   boost::bind( &EventMultiplexer::addSlideEndHandler,
-                                boost::ref( mrMultiplexer ), _1 ) );
+                   [&](auto& handler) { mrMultiplexer.addSlideEndHandler( handler ); } );
 }
 
 void UserEventQueue::registerAnimationStartEvent(
@@ -810,8 +805,7 @@ void UserEventQueue::registerAnimationStartEvent(
     registerEvent( mpAnimationStartEventHandler,
                    rEvent,
                    xNode,
-                   boost::bind( &EventMultiplexer::addAnimationStartHandler,
-                                boost::ref( mrMultiplexer ), _1 ) );
+                   [&](auto& handler) { mrMultiplexer.addAnimationStartHandler( handler ); } );
 }
 
 void UserEventQueue::registerAnimationEndEvent(
@@ -821,8 +815,7 @@ void UserEventQueue::registerAnimationEndEvent(
     registerEvent( mpAnimationEndEventHandler,
                    rEvent,
                    xNode,
-                   boost::bind( &EventMultiplexer::addAnimationEndHandler,
-                                boost::ref( mrMultiplexer ), _1 ) );
+                   [&](auto& handler) { mrMultiplexer.addAnimationEndHandler( handler ); } );
 }
 
 void UserEventQueue::registerAudioStoppedEvent(
@@ -832,8 +825,7 @@ void UserEventQueue::registerAudioStoppedEvent(
     registerEvent( mpAudioStoppedEventHandler,
                    rEvent,
                    xNode,
-                   boost::bind( &EventMultiplexer::addAudioStoppedHandler,
-                                boost::ref( mrMultiplexer ), _1 ) );
+                   [&](auto& handler) { mrMultiplexer.addAudioStoppedHandler( handler ); } );
 }
 
 void UserEventQueue::registerShapeClickEvent( const EventSharedPtr& rEvent,
@@ -930,9 +922,7 @@ void UserEventQueue::registerRewindEffectEvent( EventSharedPtr const& pEvent )
 {
     registerEvent( mpRewindEffectEventHandler,
                    pEvent,
-                   boost::bind( &EventMultiplexer::addClickHandler,
-                                boost::ref(mrMultiplexer), _1,
-                                -1.0 /* prio below default */ ) );
+                   [&](auto& handler) { mrMultiplexer.addClickHandler( handler, -1.0 ); } );
 }
 
 void UserEventQueue::registerShapeDoubleClickEvent(
@@ -964,9 +954,7 @@ void UserEventQueue::registerDoubleClickEvent( const EventSharedPtr& rEvent )
 {
     registerEvent( mpDoubleClickEventHandler,
                    rEvent,
-                   boost::bind( &EventMultiplexer::addDoubleClickHandler,
-                                boost::ref( mrMultiplexer ), _1,
-                                0.0 /* default prio */ ) );
+                   [&](auto& handler) { mrMultiplexer.addDoubleClickHandler( handler, 0.0 ); } );
 }
 
 void UserEventQueue::registerMouseEnterEvent( const EventSharedPtr& rEvent,
@@ -975,9 +963,7 @@ void UserEventQueue::registerMouseEnterEvent( const EventSharedPtr& rEvent,
     registerEvent( mpMouseEnterHandler,
                    rEvent,
                    rShape,
-                   boost::bind( &EventMultiplexer::addMouseMoveHandler,
-                                boost::ref( mrMultiplexer ), _1,
-                                0.0 /* default prio */ ) );
+                   [&](auto& handler) { mrMultiplexer.addMouseMoveHandler( handler, 0.0 ); } );
 }
 
 void UserEventQueue::registerMouseLeaveEvent( const EventSharedPtr& rEvent,
@@ -986,9 +972,7 @@ void UserEventQueue::registerMouseLeaveEvent( const EventSharedPtr& rEvent,
     registerEvent( mpMouseLeaveHandler,
                    rEvent,
                    rShape,
-                   boost::bind( &EventMultiplexer::addMouseMoveHandler,
-                                boost::ref( mrMultiplexer ), _1,
-                                0.0 /* default prio */ ) );
+                   [&](auto& handler) { mrMultiplexer.addMouseMoveHandler( handler, 0.0 ); } );
 }
 
 void UserEventQueue::callSkipEffectEventHandler (void)
