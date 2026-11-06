@@ -32,7 +32,6 @@
 #include <sfx2/bindings.hxx>
 #include <sfx2/dispatch.hxx>
 #include <svl/eitem.hxx>
-#include <boost/bind.hpp>
 
 
 namespace sd {
@@ -66,7 +65,7 @@ NavigatorChildWindow::NavigatorChildWindow (
         this,
         SdResId( FLT_NAVIGATOR ),
         pBindings,
-        ::boost::bind(RequestNavigatorUpdate, pBindings));
+        [pBindings]() { RequestNavigatorUpdate( pBindings ); }));
 
 	SetWindow( pNavWin );
 }

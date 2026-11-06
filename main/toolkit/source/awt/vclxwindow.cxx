@@ -67,7 +67,6 @@
 #include <tools/urlobj.hxx>
 #include <toolkit/helper/unopropertyarrayhelper.hxx>
 
-#include <boost/bind.hpp>
 
 using namespace ::com::sun::star;
 
@@ -729,11 +728,7 @@ void VCLXWindow::ProcessWindowEvent( const VclWindowEvent& rVclWindowEvent )
                 awt::MouseEvent aEvent( VCLUnoHelper::createMouseEvent( aMEvt, *this ) );
         		aEvent.PopupTrigger = sal_True;
 
-                Callback aCallback = ::boost::bind(
-                    &MouseListenerMultiplexer::mousePressed,
-                    &mpImpl->getMouseListeners(),
-                    aEvent
-                );
+                Callback aCallback = [&]() { mpImpl->getMouseListeners().mousePressed( aEvent ); };
                 ImplExecuteAsyncWithoutSolarLock( aCallback );
         	}
         }
@@ -745,11 +740,12 @@ void VCLXWindow::ProcessWindowEvent( const VclWindowEvent& rVclWindowEvent )
     		{
                 awt::MouseEvent aEvent( VCLUnoHelper::createMouseEvent( *pMouseEvt, *this ) );
 
-                Callback aCallback = ::boost::bind(
-                    pMouseEvt->IsEnterWindow() ? &MouseListenerMultiplexer::mouseEntered : &MouseListenerMultiplexer::mouseExited,
-                    &mpImpl->getMouseListeners(),
-                    aEvent
-                );
+                Callback aCallback = [&]() {
+                    if ( pMouseEvt->IsEnterWindow() )
+                        mpImpl->getMouseListeners().mouseEntered( aEvent );
+                    else
+                        mpImpl->getMouseListeners().mouseExited( aEvent );
+                };
                 ImplExecuteAsyncWithoutSolarLock( aCallback );
     		}
 
@@ -769,11 +765,7 @@ void VCLXWindow::ProcessWindowEvent( const VclWindowEvent& rVclWindowEvent )
         	if ( mpImpl->getMouseListeners().getLength() )
         	{
                 awt::MouseEvent aEvent( VCLUnoHelper::createMouseEvent( *(MouseEvent*)rVclWindowEvent.GetData(), *this ) );
-                Callback aCallback = ::boost::bind(
-                    &MouseListenerMultiplexer::mousePressed,
-                    &mpImpl->getMouseListeners(),
-                    aEvent
-                );
+                Callback aCallback = [&]() { mpImpl->getMouseListeners().mousePressed( aEvent ); };
                 ImplExecuteAsyncWithoutSolarLock( aCallback );
         	}
         }
@@ -783,11 +775,7 @@ void VCLXWindow::ProcessWindowEvent( const VclWindowEvent& rVclWindowEvent )
         	if ( mpImpl->getMouseListeners().getLength() )
         	{
                 awt::MouseEvent aEvent( VCLUnoHelper::createMouseEvent( *(MouseEvent*)rVclWindowEvent.GetData(), *this ) );
-                Callback aCallback = ::boost::bind(
-                    &MouseListenerMultiplexer::mouseReleased,
-                    &mpImpl->getMouseListeners(),
-                    aEvent
-                );
+                Callback aCallback = [&]() { mpImpl->getMouseListeners().mouseReleased( aEvent ); };
                 ImplExecuteAsyncWithoutSolarLock( aCallback );
         	}
         }

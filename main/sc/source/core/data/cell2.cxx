@@ -30,7 +30,6 @@
 #include <algorithm>
 #include <deque>
 
-#include <boost/bind.hpp>
 
 #include <vcl/mapmod.hxx>
 #include <editeng/editobj.hxx>
@@ -312,7 +311,7 @@ lcl_checkIfAdjacent(
     ++aBegin1, --aEnd;
     return std::equal(
             aBegin, aEnd, aBegin1,
-            boost::bind(lcl_isImmediatelyFollowing, _1, _2, aWhich));
+            [&](auto p1, auto p2) { return lcl_isImmediatelyFollowing(p1, p2, aWhich); }));
 }
 
 
@@ -369,7 +368,7 @@ lcl_refListFormsOneRange(
         }
         // Sort the references by start of range
         std::sort(rReferences.begin(), rReferences.end(),
-                boost::bind(lcl_lessReferenceBy, _1, _2, aWhich));
+                [&](auto p1, auto p2) { return lcl_lessReferenceBy(p1, p2, aWhich); });
         if (lcl_checkIfAdjacent(rReferences, aWhich))
         {
             lcl_fillRangeFromRefList(rReferences, rRange);

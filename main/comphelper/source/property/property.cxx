@@ -42,7 +42,6 @@
 #include <com/sun/star/uno/genfunc.h>
 
 #include <algorithm>
-#include <boost/bind.hpp>
 
 //.........................................................................
 namespace comphelper
@@ -158,9 +157,7 @@ bool findProperty(Property&              o_rProp,
     const sal_Int32 nLen(i_seqProps.getLength());
     const Property* pRes(
         std::find_if(pAry,pAry+nLen,
-                     boost::bind(PropertyStringEqualFunctor(),
-                                 _1,
-                                 boost::cref(i_rPropName))));
+                      [&](const auto* prop) { return PropertyStringEqualFunctor()(prop, i_rPropName); }));
     if( pRes == pAry+nLen )
         return false;
 

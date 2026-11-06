@@ -121,22 +121,16 @@ namespace canvas
             maPropHelper(),
             mbDumpScreenContent(false)
         {
-            maPropHelper.initProperties( PropertySetHelper::MakeMap
-                                         ("HardwareAcceleration",
-                                          boost::bind(&DeviceHelper::isAccelerated,
-                                                      boost::ref(maDeviceHelper)))
-                                         ("DeviceHandle",
-                                          boost::bind(&DeviceHelper::getDeviceHandle,
-                                                      boost::ref(maDeviceHelper)))
-                                         ("SurfaceHandle",
-                                          boost::bind(&DeviceHelper::getSurfaceHandle,
-                                                      boost::ref(maDeviceHelper)))
-                                         ("DumpScreenContent",
-                                          boost::bind(&ThisType::getDumpScreenContent,
-                                                      this),
-                                          boost::bind(&ThisType::setDumpScreenContent,
-                                                      this,
-                                                      _1)));
+                                         maPropHelper.initProperties( PropertySetHelper::MakeMap
+                                          ("HardwareAcceleration",
+                                           [&]() { return maDeviceHelper.isAccelerated(); })
+                                          ("DeviceHandle",
+                                           [&]() { return maDeviceHelper.getDeviceHandle(); })
+                                          ("SurfaceHandle",
+                                           [&]() { return maDeviceHelper.getSurfaceHandle(); })
+                                          ("DumpScreenContent",
+                                           [this]() { return this->getDumpScreenContent(); },
+                                           [this](auto val) { this->setDumpScreenContent(val); }));
         }
 
 #if defined __SUNPRO_CC

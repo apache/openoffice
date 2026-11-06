@@ -46,7 +46,6 @@
 #include <cppuhelper/compbase1.hxx>
 #include <cppuhelper/compbase5.hxx>
 #include <cppuhelper/implbase1.hxx>
-#include <boost/bind.hpp>
 #include <memory>
 
 using namespace ::com::sun::star;
@@ -2201,9 +2200,9 @@ void AccessibleNotes::SetTextView (
 		// events and handles text changes. Register the corresponding
 		// listeners here.
 		mpTextView->GetCaret()->SetCaretMotionBroadcaster(
-			::boost::bind(&AccessibleNotes::NotifyCaretChange, this, _1, _2, _3, _4));
+			[this](auto& a1, auto& a2, auto& a3, auto& a4) { this->NotifyCaretChange( a1, a2, a3, a4 ); } );
 		mpTextView->SetTextChangeBroadcaster(
-			::boost::bind(&AccessibleNotes::HandleTextChange, this));
+			[this]() { this->HandleTextChange(); } );
 	}
 }
 

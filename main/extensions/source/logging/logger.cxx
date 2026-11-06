@@ -45,7 +45,7 @@
 #include <cppuhelper/implbase2.hxx>
 #include <cppuhelper/weakref.hxx>
 
-#include <boost/bind.hpp>
+#include <functional>
 
 #include <map>
 
@@ -222,9 +222,9 @@ namespace logging
             return;
 
         m_aHandlers.forEach< XLogHandler >(
-            ::boost::bind( &XLogHandler::publish, _1, ::boost::cref( _rRecord ) ) );
+            [&](const auto& handler) { handler.publish(_rRecord); } );
         m_aHandlers.forEach< XLogHandler >(
-            ::boost::bind( &XLogHandler::flush, _1 ) );
+            [&](const auto& handler) { handler.flush(); } );
     }
 
     //--------------------------------------------------------------------

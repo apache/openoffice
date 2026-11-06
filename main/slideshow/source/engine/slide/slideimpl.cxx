@@ -70,7 +70,6 @@
 #include "event.hxx"
 #include "tools.hxx"
 
-#include <boost/bind.hpp>
 #include <iterator>
 #include <algorithm>
 #include <functional>
@@ -411,9 +410,7 @@ SlideImpl::SlideImpl( const uno::Reference< drawing::XDrawPage >&			xDrawPage,
     // clone already existing views for slide bitmaps
     std::for_each( rViewContainer.begin(),
                    rViewContainer.end(),
-                   boost::bind( &SlideImpl::viewAdded,
-                                this,
-                                _1 ));
+                   [this](auto& view) { this->viewAdded( view ); } );
 
     // register screen update (LayerManager needs to signal pending
     // updates)
@@ -625,13 +622,7 @@ SlideBitmapSharedPtr SlideImpl::getCurrentSlideBitmap( const UnoViewSharedPtr& r
     const VectorOfVectorOfSlideBitmaps::iterator aEnd( maSlideBitmaps.end() );
     if( (aIter=std::find_if( maSlideBitmaps.begin(),
                              aEnd,
-                             boost::bind(
-                                 std::equal_to<UnoViewSharedPtr>(),
-                                 rView,
-                                 // select view:
-                                 boost::bind(
-                                     std::select1st<VectorOfVectorOfSlideBitmaps::value_type>(),
-                                     _1 )))) == aEnd )
+                             [&rView](const auto& pair) { return rView == pair.first; } )) == aEnd )
     {
         // corresponding view not found - maybe view was not
         // added to Slide?
@@ -699,13 +690,7 @@ void SlideImpl::viewRemoved( const UnoViewSharedPtr& rView )
     maSlideBitmaps.erase(
         std::remove_if( maSlideBitmaps.begin(),
                         aEnd,
-                        boost::bind(
-                            std::equal_to<UnoViewSharedPtr>(),
-                            rView,
-                            // select view:
-                            boost::bind(
-                                std::select1st<VectorOfVectorOfSlideBitmaps::value_type>(),
-                                _1 ))),
+                        [&rView](const auto& pair) { return rView == pair.first; } ),
         aEnd );
 }
 

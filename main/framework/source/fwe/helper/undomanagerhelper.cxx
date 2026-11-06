@@ -403,12 +403,7 @@ namespace framework
     void UndoManagerHelper_Impl::enterUndoContext( const ::rtl::OUString& i_title, const bool i_hidden, IMutexGuard& i_instanceLock )
     {
         impl_processRequest(
-            ::boost::bind(
-                &UndoManagerHelper_Impl::impl_enterUndoContext,
-                this,
-                ::boost::cref( i_title ),
-                i_hidden
-            ),
+            [&]() { this->impl_enterUndoContext( i_title, i_hidden ); },
             i_instanceLock
         );
     }
@@ -417,10 +412,7 @@ namespace framework
     void UndoManagerHelper_Impl::leaveUndoContext( IMutexGuard& i_instanceLock )
     {
         impl_processRequest(
-            ::boost::bind(
-                &UndoManagerHelper_Impl::impl_leaveUndoContext,
-                this
-            ),
+            [this]() { this->impl_leaveUndoContext(); },
             i_instanceLock
         );
     }
@@ -436,11 +428,7 @@ namespace framework
             );
 
         impl_processRequest(
-            ::boost::bind(
-                &UndoManagerHelper_Impl::impl_addUndoAction,
-                this,
-                ::boost::ref( i_action )
-            ),
+            [&]() { this->impl_addUndoAction( i_action ); },
             i_instanceLock
         );
     }
@@ -449,10 +437,7 @@ namespace framework
     void UndoManagerHelper_Impl::clear( IMutexGuard& i_instanceLock )
     {
         impl_processRequest(
-            ::boost::bind(
-                &UndoManagerHelper_Impl::impl_clear,
-                this
-            ),
+            [this]() { this->impl_clear(); },
             i_instanceLock
         );
     }
@@ -461,10 +446,7 @@ namespace framework
     void UndoManagerHelper_Impl::clearRedo( IMutexGuard& i_instanceLock )
     {
         impl_processRequest(
-            ::boost::bind(
-                &UndoManagerHelper_Impl::impl_clearRedo,
-                this
-            ),
+            [this]() { this->impl_clearRedo(); },
             i_instanceLock
         );
     }
@@ -473,10 +455,7 @@ namespace framework
     void UndoManagerHelper_Impl::reset( IMutexGuard& i_instanceLock )
     {
         impl_processRequest(
-            ::boost::bind(
-                &UndoManagerHelper_Impl::impl_reset,
-                this
-            ),
+            [this]() { this->impl_reset(); },
             i_instanceLock
         );
     }
@@ -974,12 +953,7 @@ namespace framework
     void UndoManagerHelper_Impl::undo( IMutexGuard& i_instanceLock )
     {
         impl_processRequest(
-            ::boost::bind(
-                &UndoManagerHelper_Impl::impl_doUndoRedo,
-                this,
-                ::boost::ref( i_instanceLock ),
-                true
-            ),
+            [&]() { this->impl_doUndoRedo( i_instanceLock, true ); },
             i_instanceLock
         );
     }
@@ -988,12 +962,7 @@ namespace framework
     void UndoManagerHelper_Impl::redo( IMutexGuard& i_instanceLock )
     {
         impl_processRequest(
-            ::boost::bind(
-                &UndoManagerHelper_Impl::impl_doUndoRedo,
-                this,
-                ::boost::ref( i_instanceLock ),
-                false
-            ),
+            [&]() { this->impl_doUndoRedo( i_instanceLock, false ); },
             i_instanceLock
         );
     }

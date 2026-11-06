@@ -51,7 +51,7 @@
 #include <canvas/canvastools.hxx>
 
 #include <memory>
-#include <boost/bind.hpp>
+#include <functional>
 #include <boost/utility.hpp>
 
 #include "textaction.hxx"
@@ -373,9 +373,7 @@ namespace cppcanvas
                 ::std::transform( pOffsets + rSubset.mnSubsetBegin,
                                   pOffsets + rSubset.mnSubsetEnd,
                                   pAdaptedOffsets,
-                                  ::boost::bind( ::std::minus<double>(),
-                                                 _1,
-                                                 nMinPos ) );
+                                  [&](auto val) { return val - nMinPos; } );
 
                 o_rMinPos = nMinPos;
                 o_rMaxPos = nMaxPos;

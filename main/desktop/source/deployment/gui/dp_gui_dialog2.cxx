@@ -76,7 +76,6 @@
 
 #include <map>
 #include <vector>
-#include <boost/bind.hpp>
 #include <memory>
 
 #define OUSTR(x) ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM(x) )
@@ -647,7 +646,7 @@ bool DialogHelper::installExtensionWarn( const OUString &rExtensionName ) const
 	// cannot pump the Cocoa event queue; the dialog must execute on the main
 	// thread or it appears but never receives events.
 	return vcl::solarthread::syncExecute(
-		boost::bind( &DialogHelper::solar_installExtensionWarn, this, rExtensionName ) );
+		[this]() { this->solar_installExtensionWarn( rExtensionName ); } );
 }
 
 //------------------------------------------------------------------------------

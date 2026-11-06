@@ -28,7 +28,6 @@
 #include "dp_gui.hrc"
 #include <vcl/msgbox.hxx>
 #include <vcl/threadex.hxx>
-#include <boost/bind.hpp>
 
 using namespace dp_gui;
 using namespace dp_misc;
@@ -123,9 +122,9 @@ bool handleVersionException(
         // cannot pump the Cocoa event queue; the dialog must execute on the main
         // thread or it appears but never receives events.
         bApprove = vcl::solarthread::syncExecute(
-            boost::bind( &solar_showVersionWarning, pDialogHelper, id, bEqualNames,
+            [&]() { return solar_showVersionWarning( pDialogHelper, id, bEqualNames,
                          verExc.NewDisplayName, verExc.Deployed->getDisplayName(),
-                         getVersion(verExc.NewVersion), getVersion(verExc.Deployed) ) );
+                         getVersion(verExc.NewVersion), getVersion(verExc.Deployed) ); } );
     }
 
     return bApprove;

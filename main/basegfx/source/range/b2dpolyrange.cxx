@@ -30,7 +30,6 @@
 #include <basegfx/tuple/b2dtuple.hxx>
 #include <basegfx/polygon/b2dpolypolygon.hxx>
 
-#include <boost/bind.hpp>
 #include <tuple>
 #include <algorithm>
 #include <vector>
@@ -51,11 +50,7 @@ namespace basegfx
             maBounds.reset();
             std::for_each(maRanges.begin(),
                           maRanges.end(),
-                          boost::bind(
-                              (void (B2DRange::*)(const B2DRange&))(
-                 &B2DRange::expand),
-                              boost::ref(maBounds),
-                              _1));
+                          [&](const auto& range) { maBounds.expand(range); });
         }
 
     public:
@@ -175,9 +170,7 @@ namespace basegfx
         {
             std::for_each(maOrient.begin(),
                           maOrient.end(),
-                          boost::bind(
-                              &flipOrientation,
-                              _1));
+                          [](auto& orient) { flipOrientation(orient); });
         }
 
         B2DRange getBounds() const
@@ -210,9 +203,7 @@ namespace basegfx
             const std::vector<B2DRange>::const_iterator aEnd( maRanges.end() );
             return std::find_if( maRanges.begin(),
                                  aEnd,
-                                 boost::bind<bool>( boost::mem_fn( &B2DRange::overlaps ),
-                                                    _1,
-                                                    boost::cref(rRange) ) ) != aEnd;
+                                 [&](const auto& range) { return range.overlaps(rRange); } ) != aEnd;
         }
 
         B2DPolyPolygon solveCrossovers() const

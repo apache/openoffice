@@ -39,7 +39,6 @@
 #include <com/sun/star/container/XHierarchicalNameAccess.hpp>
 #include <com/sun/star/beans/PropertyValue.hpp>
 
-#include <boost/bind.hpp>
 #include <vector>
 #include <utility>
 #include <functional>
@@ -338,11 +337,7 @@ Reference<XInterface> CanvasFactory::lookupAndUse(
     CacheVector::iterator aMatch;
     if( (aMatch=std::find_if(m_aCachedImplementations.begin(),
                              aEnd,
-                             boost::bind(&OUString::equals,
-                                         boost::cref(serviceName),
-                                         boost::bind(
-                                             std::select1st<CachePair>(),
-                                             _1)))) != aEnd )
+                             [&](const auto& pair) { return serviceName == pair.first; })) != aEnd )
     {
         Reference<XInterface> xCanvas( use( aMatch->second, args, xContext ) );
         if(xCanvas.is())
@@ -354,11 +349,7 @@ Reference<XInterface> CanvasFactory::lookupAndUse(
     AvailVector::const_iterator aAvailImplsMatch;
     if( (aAvailImplsMatch=std::find_if(m_aAvailableImplementations.begin(),
                                        aAvailEnd,
-                                       boost::bind(&OUString::equals,
-                                                   boost::cref(serviceName),
-                                                   boost::bind(
-                                                       std::select1st<AvailPair>(),
-                                                       _1)))) == aAvailEnd )
+                                       [&](const auto& pair) { return serviceName == pair.first; })) == aAvailEnd )
     {
         return Reference<XInterface>();
     }
@@ -367,11 +358,7 @@ Reference<XInterface> CanvasFactory::lookupAndUse(
     AvailVector::const_iterator aAAImplsMatch;
     if( (aAAImplsMatch=std::find_if(m_aAAImplementations.begin(),
                                     aAAEnd,
-                                    boost::bind(&OUString::equals,
-                                                boost::cref(serviceName),
-                                                boost::bind(
-                                                    std::select1st<AvailPair>(),
-                                                    _1)))) == aAAEnd )
+                                    [&](const auto& pair) { return serviceName == pair.first; })) == aAAEnd )
     {
         return Reference<XInterface>();
     }
@@ -380,11 +367,7 @@ Reference<XInterface> CanvasFactory::lookupAndUse(
     AvailVector::const_iterator aAccelImplsMatch;
     if( (aAccelImplsMatch=std::find_if(m_aAcceleratedImplementations.begin(),
                                        aAccelEnd,
-                                       boost::bind(&OUString::equals,
-                                                   boost::cref(serviceName),
-                                                   boost::bind(
-                                                       std::select1st<AvailPair>(),
-                                                       _1)))) == aAccelEnd )
+                                       [&](const auto& pair) { return serviceName == pair.first; })) == aAccelEnd )
     {
         return Reference<XInterface>();
     }
@@ -414,22 +397,14 @@ Reference<XInterface> CanvasFactory::lookupAndUse(
         const bool bIsAcceleratedImpl(
             std::find_if(pFirstAccelImpl,
                          pEndAccelImpl,
-                         boost::bind(&OUString::equals,
-                                     boost::cref(aCurrName),
-                                     boost::bind(
-                                         &OUString::trim,
-                                         _1))) != pEndAccelImpl );
+                         [&](const auto& str) { return aCurrName == str.trim(); })) != pEndAccelImpl );
 
         // check whether given canvas service is listed in the
         // sequence of "antialiasing canvas implementations"
         const bool bIsAAImpl(
             std::find_if(pFirstAAImpl,
                          pEndAAImpl,
-                         boost::bind(&OUString::equals,
-                                     boost::cref(aCurrName),
-                                     boost::bind(
-                                         &OUString::trim,
-                                         _1))) != pEndAAImpl );
+                         [&](const auto& str) { return aCurrName == str.trim(); })) != pEndAAImpl );
 
         // try to instantiate canvas *only* if either accel and AA
         // property match preference, *or*, if there's a mismatch, only

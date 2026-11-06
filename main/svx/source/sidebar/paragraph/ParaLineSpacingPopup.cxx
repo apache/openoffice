@@ -21,7 +21,6 @@
 
 #include "ParaLineSpacingPopup.hxx"
 #include "ParaLineSpacingControl.hxx"
-#include <boost/bind.hpp>
 #include <unotools/viewoptions.hxx>
 
 namespace svx { namespace sidebar {
@@ -34,7 +33,7 @@ ParaLineSpacingPopup::ParaLineSpacingPopup (
         rControlCreator,
         ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Paragraph Line Spacing")))
 {
-	SetPopupModeEndHandler(::boost::bind(&ParaLineSpacingPopup::PopupModeEndCallback, this));
+	SetPopupModeEndHandler( [this]() { this->PopupModeEndCallback(); } );
 }
 
 

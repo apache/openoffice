@@ -38,7 +38,7 @@ namespace comphelper
     {
     public:
         FlagRestorationGuard( bool& i_flagRef, bool i_temporaryValue, exc_handling i_excHandling = IGNORE_EXCEPTIONS )
-            :ScopeGuard( ::boost::bind( RestoreFlag, ::boost::ref( i_flagRef ), !!i_flagRef ), i_excHandling )
+            :ScopeGuard( [&, bOrig = !!i_flagRef]() { RestoreFlag( i_flagRef, bOrig ); }, i_excHandling )
         {
             i_flagRef = i_temporaryValue;
         }
@@ -59,7 +59,7 @@ namespace comphelper
     {
     public:
         explicit FlagGuard( bool& i_flagRef, exc_handling i_excHandling = IGNORE_EXCEPTIONS )
-            :ScopeGuard( ::boost::bind( ResetFlag, ::boost::ref( i_flagRef ) ), i_excHandling )
+            :ScopeGuard( [&]() { ResetFlag( i_flagRef ); }, i_excHandling )
         {
             i_flagRef = true;
         }

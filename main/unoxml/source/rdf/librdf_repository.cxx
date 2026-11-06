@@ -34,7 +34,6 @@
 #include <boost/utility.hpp>
 #include <memory>
 #include <boost/shared_array.hpp>
-#include <boost/bind.hpp>
 
 #include <libxslt/security.h>
 #include <libxml/parser.h>
@@ -1071,10 +1070,9 @@ librdf_Repository::getGraphNames()
 {
     ::osl::MutexGuard g(m_aMutex);
     ::comphelper::SequenceAsVector< uno::Reference<rdf::XURI> > ret;
-    std::transform(m_NamedGraphs.begin(), m_NamedGraphs.end(),
-        std::back_inserter(ret),
-        boost::bind(&rdf::XNamedGraph::getName,
-            boost::bind(&NamedGraphMap_t::value_type::second, _1)));
+        std::transform(m_NamedGraphs.begin(), m_NamedGraphs.end(),
+            std::back_inserter(ret),
+            [](const auto& pair) { return pair.second->getName(); }));
     return ret.getAsConstList();
 }
 
@@ -1401,10 +1399,9 @@ void SAL_CALL librdf_Repository::setStatementRDFa(
     } else {
         m_RDFaXHTMLContentSet.insert(sXmlId);
     }
-    ::std::for_each(::comphelper::stl_begin(i_rPredicates),
-        ::comphelper::stl_end(i_rPredicates),
-        ::boost::bind( &librdf_Repository::addStatementGraph,
-            this, i_xSubject, _1, xContent, xXmlId, true));
+        ::std::for_each(::comphelper::stl_begin(i_rPredicates),
+            ::comphelper::stl_end(i_rPredicates),
+            [this, &i_xSubject, &xContent, &xXmlId](auto& predicate) { this->addStatementGraph( i_xSubject, predicate, xContent, xXmlId, true ); }));
 }
 
 void SAL_CALL librdf_Repository::removeStatementRDFa(

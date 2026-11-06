@@ -30,7 +30,7 @@
 
 #include <algorithm>
 
-#include <boost/bind.hpp>
+#include <functional>
 
 #include <rtl/uuid.h>
 #include <rtl/instance.hxx>
@@ -126,10 +126,7 @@ namespace DOM
         Context::NamespaceVectorType::value_type::const_iterator aIter;
         if( (aIter=std::find_if(rContext.maNamespaces.back().begin(),
                                 rContext.maNamespaces.back().end(),
-                                boost::bind(std::equal_to<OString>(),
-                                            boost::bind(&Context::Namespace::getPrefix,
-                                                        _1),
-                                            boost::cref(prefix)))) != rContext.maNamespaces.back().end() )
+                                [&](const auto& ns) { return ns.getPrefix() == prefix; })) != rContext.maNamespaces.back().end() )
         {
             nNamespaceToken = aIter->mnToken;
             sal_Int32 nNameToken = getToken( rContext, pName );

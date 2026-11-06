@@ -38,7 +38,6 @@
 #include <cppuhelper/implbase1.hxx>
 #include <comphelper/stl_types.hxx>
 
-#include <boost/bind.hpp>
 
 using namespace com::sun::star;
 
@@ -133,9 +132,7 @@ void ImageContainer::writeBase64EncodedStream( ImageId nId, EmitContext& rContex
     const sal_Int32             nLen(rEntry.getLength());
     const beans::PropertyValue* pValue(
         std::find_if(pAry,pAry+nLen,
-                     boost::bind(comphelper::TPropertyValueEqualFunctor(),
-                                 _1,
-                                 rtl::OUString::createFromAscii("InputSequence"))));
+                     [&](const auto& item) { return comphelper::TPropertyValueEqualFunctor()(item, rtl::OUString::createFromAscii("InputSequence")); }));
     OSL_ENSURE( pValue != pAry+nLen,
                 "InputSequence not found" );
 

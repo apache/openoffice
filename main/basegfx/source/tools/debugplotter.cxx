@@ -28,7 +28,6 @@
 #include <basegfx/curve/b2dcubicbezier.hxx>
 
 #include <basegfx/tools/debugplotter.hxx>
-#include <boost/bind.hpp>
 
 
 namespace basegfx
@@ -292,9 +291,7 @@ namespace basegfx
 
                 ::std::for_each( maPoints.begin(),
                                  maPoints.end(),
-                                 ::boost::bind( &Writer::outputPoint,
-                                                ::boost::ref( aWriter ),
-                                                _1 ) );
+                                 [&](auto& point) { aWriter.outputPoint( point ); } );
                 print( "e\n" );
             }
 
@@ -304,9 +301,7 @@ namespace basegfx
 
                 ::std::for_each( maVectors.begin(),
                                  maVectors.end(),
-                                 ::boost::bind( &Writer::outputVector,
-                                                ::boost::ref( aWriter ),
-                                                _1 ) );
+                                 [&](auto& vector) { aWriter.outputVector( vector ); } );
                 print( "e\n" );
             }
 
@@ -316,9 +311,7 @@ namespace basegfx
 
                 ::std::for_each( maRanges.begin(),
                                  maRanges.end(),
-                                 ::boost::bind( &Writer::outputRect,
-                                                ::boost::ref( aWriter ),
-                                                _1 ) );
+                                 [&](auto& rect) { aWriter.outputRect( rect ); } );
                 print( "e\n" );
             }
 

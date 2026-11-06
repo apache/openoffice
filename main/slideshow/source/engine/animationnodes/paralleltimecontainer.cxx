@@ -27,7 +27,6 @@
 #include "paralleltimecontainer.hxx"
 #include "delayevent.hxx"
 
-#include <boost/bind.hpp>
 
 namespace slideshow {
 namespace internal {
@@ -46,7 +45,7 @@ void ParallelTimeContainer::activate_st()
     if (isDurationIndefinite() && maChildren.empty()) {
         // deactivate ASAP:
         scheduleDeactivationEvent(
-            makeEvent( boost::bind( &AnimationNode::deactivate, getSelf() ),
+            makeEvent( [pSelf = getSelf()]() { pSelf->deactivate(); },
                        "ParallelTimeContainer::deactivate") );
     }
     else { // use default

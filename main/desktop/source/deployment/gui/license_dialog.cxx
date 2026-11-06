@@ -43,7 +43,6 @@
 
 
 
-#include "boost/bind.hpp"
 #include "dp_gui_shared.hxx"
 #include "license_dialog.hxx"
 #include "dp_gui.hrc"
@@ -309,7 +308,7 @@ void LicenseDialog::setTitle( OUString const & )
 sal_Int16 LicenseDialog::execute()
 {
     return vcl::solarthread::syncExecute(
-        boost::bind( &LicenseDialog::solar_execute, this));
+        [this]() { return this->solar_execute(); } );
 }
 
 sal_Int16 LicenseDialog::solar_execute()

@@ -37,7 +37,6 @@
 
 #include "layer.hxx"
 
-#include <boost/bind.hpp>
 
 
 using namespace ::com::sun::star;
@@ -77,10 +76,7 @@ namespace slideshow
             const ViewEntryVector::iterator aEnd( maViewEntries.end() );
             if( (aIter=std::find_if( maViewEntries.begin(),
                                      aEnd,
-                                     boost::bind<bool>(
-                                         std::equal_to< ViewSharedPtr >(),
-                                         boost::bind( &ViewEntry::getView, _1 ),
-                                         boost::cref( rNewView )))) != aEnd )
+                                     [&rNewView](const auto& entry) { return rNewView == entry->getView(); } )) != aEnd )
             {
                 // already added - just return existing layer
                 return aIter->mpViewLayer;
@@ -109,11 +105,8 @@ namespace slideshow
             ViewEntryVector::iterator       aIter;
             const ViewEntryVector::iterator aEnd( maViewEntries.end() );
             if( (aIter=std::find_if( maViewEntries.begin(),
-                                       aEnd,
-                                       boost::bind<bool>(
-                                           std::equal_to< ViewSharedPtr >(),
-                                           boost::bind( &ViewEntry::getView, _1 ),
-                                           boost::cref( rView )))) == aEnd )
+                                        aEnd,
+                                        [&rView](const auto& entry) { return rView == entry->getView(); } )) == aEnd )
             {
                 // View was not added/is already removed
                 return ViewLayerSharedPtr();
@@ -121,11 +114,8 @@ namespace slideshow
 
             OSL_ENSURE( std::count_if( maViewEntries.begin(),
                                        aEnd,
-                                       boost::bind<bool>(
-                                           std::equal_to< ViewSharedPtr >(),
-                                           boost::bind( &ViewEntry::getView, _1 ),
-                                           boost::cref( rView ))) == 1,
-                        "Layer::removeView(): view added multiple times" );
+                                       [&rView](const auto& entry) { return rView == entry->getView(); }) == 1,
+                    "Layer::removeView(): view added multiple times" );
 
             ViewLayerSharedPtr pRet( aIter->mpViewLayer );
             maViewEntries.erase(aIter);
@@ -139,10 +129,7 @@ namespace slideshow
             const ViewEntryVector::iterator aEnd( maViewEntries.end() );
             if( (aIter=std::find_if( maViewEntries.begin(),
                                      aEnd,
-                                     boost::bind<bool>(
-                                         std::equal_to< ViewSharedPtr >(),
-                                         boost::bind( &ViewEntry::getView, _1 ),
-                                         boost::cref( rChangedView )))) !=
+                                     [&rChangedView](const auto& entry) { return rChangedView == entry->getView(); } )) !=
                 aEnd )
             {
                 // adapt size of given ViewLayer - background layer
@@ -160,10 +147,7 @@ namespace slideshow
             {
                 std::for_each( maViewEntries.begin(),
                                maViewEntries.end(),
-                               boost::bind( &ViewLayer::resize,
-                                            boost::bind( &ViewEntry::getViewLayer,
-                                                         _1 ),
-                                            boost::cref(maBounds)));
+                               [&](auto& entry) { entry.getViewLayer()->resize( maBounds ); } );
             }
         }
 
@@ -173,11 +157,7 @@ namespace slideshow
 
             std::for_each( maViewEntries.begin(),
                            maViewEntries.end(),
-                           boost::bind(&Shape::addViewLayer,
-                                       boost::cref(rShape),
-                                       boost::bind(&ViewEntry::getViewLayer,
-                                                   _1),
-                                       false ));
+                           [&](auto& entry) { rShape.addViewLayer( *entry.getViewLayer(), false ); } );
         }
 
         void Layer::setPriority( const ::basegfx::B1DRange& rPrioRange )
@@ -186,10 +166,7 @@ namespace slideshow
             {
                 std::for_each( maViewEntries.begin(),
                                maViewEntries.end(),
-                               boost::bind( &ViewLayer::setPriority,
-                                            boost::bind( &ViewEntry::getViewLayer,
-                                                         _1 ),
-                                            boost::cref(rPrioRange)));
+                               [&](auto& entry) { entry.getViewLayer()->setPriority( rPrioRange ); } );
             }
         }
 
@@ -227,10 +204,7 @@ namespace slideshow
             maBounds = maNewBounds;
             if( std::count_if( maViewEntries.begin(),
                                maViewEntries.end(),
-                               boost::bind( &ViewLayer::resize,
-                                            boost::bind( &ViewEntry::getViewLayer,
-                                                         _1 ),
-                                            boost::cref(maBounds)) ) == 0 )
+                               [&](const auto& entry) { return entry.getViewLayer()->resize( maBounds ); } ) == 0 )
             {
                 return false;
             }
@@ -252,11 +226,7 @@ namespace slideshow
             // clear content on all view layers
             std::for_each( maViewEntries.begin(),
                            maViewEntries.end(),
-                           boost::bind(
-                               &ViewLayer::clear,
-                               boost::bind(
-                                   &ViewEntry::getViewLayer,
-                                   _1)));
+                           [&](auto& entry) { entry.getViewLayer()->clear(); } );
 
             // layer content cleared, update areas are not sensible
             // anymore.
@@ -297,21 +267,12 @@ namespace slideshow
                     // set clip to all view layers
                     std::for_each( maViewEntries.begin(),
                                    maViewEntries.end(),
-                                   boost::bind(
-                                       &ViewLayer::setClip,
-                                       boost::bind(
-                                           &ViewEntry::getViewLayer,
-                                           _1),
-                                       boost::cref(aClip)));
+                                   [&](auto& entry) { entry.getViewLayer()->setClip( aClip ); } );
 
                     // clear update area on all view layers
                     std::for_each( maViewEntries.begin(),
                                    maViewEntries.end(),
-                                   boost::bind(
-                                       &ViewLayer::clear,
-                                       boost::bind(
-                                           &ViewEntry::getViewLayer,
-                                           _1)));
+                                   [&](auto& entry) { entry.getViewLayer()->clear(); } );
 
                     mbClipSet = true;
                 }
@@ -327,14 +288,9 @@ namespace slideshow
                 mbClipSet = false;
 
                 basegfx::B2DPolyPolygon aEmptyClip;
-                std::for_each( maViewEntries.begin(),
-                               maViewEntries.end(),
-                               boost::bind(
-                                   &ViewLayer::setClip,
-                                   boost::bind(
-                                       &ViewEntry::getViewLayer,
-                                       _1),
-                                   boost::cref(aEmptyClip)));
+                 std::for_each( maViewEntries.begin(),
+                                maViewEntries.end(),
+                                [&](auto& entry) { entry.getViewLayer()->setClip( aEmptyClip ); } );
             }
 
             clearUpdateRanges();

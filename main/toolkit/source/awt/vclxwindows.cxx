@@ -62,7 +62,6 @@
 #include <vcl/tabctrl.hxx>
 #include <tools/diagnose_ex.h>
 
-#include <boost/bind.hpp>
 #include <boost/function.hpp>
 
 using ::com::sun::star::uno::Any;
@@ -588,11 +587,7 @@ void VCLXButton::ProcessWindowEvent( const VclWindowEvent& rVclWindowEvent )
 				aEvent.Source = (::cppu::OWeakObject*)this;
 				aEvent.ActionCommand = maActionCommand;
 
-                Callback aCallback = ::boost::bind(
-                    &ActionListenerMultiplexer::actionPerformed,
-                    &maActionListeners,
-                    aEvent
-                );
+                Callback aCallback = [&]() { maActionListeners.actionPerformed( aEvent ); };
                 ImplExecuteAsyncWithoutSolarLock( aCallback );
 			}
         }

@@ -41,8 +41,6 @@
 #include <com/sun/star/awt/PosSize.hpp>
 #include <com/sun/star/awt/XWindowPeer.hpp>
 #include <com/sun/star/rendering/CompositeOperation.hpp>
-#include <boost/bind.hpp>
-#include <boost/bind/protect.hpp>
 #include <boost/enable_shared_from_this.hpp>
 #include <memory>
 
@@ -557,37 +555,39 @@ void UnfoldInCenterAnimator::ShowPane (void)
     for (iGroup=maPaneGroups.begin(); iGroup!=maPaneGroups.end(); ++iGroup)
     {
         pMultiAnimation->AddAnimation(
-            ::boost::bind(
-                InterpolatePosition,
-                ::boost::protect(::boost::bind(
-                    &PresenterSprite::MoveTo, (*iGroup)->GetSubstitution(), _1)),
-                _1,
-                GetLocation((*iGroup)->GetOriginalBoundingBox()),
-                GetLocation((*iGroup)->GetCurrentBoundingBox())));
+            [pSprite = (*iGroup)->GetSubstitution(),
+             initialBox = GetLocation((*iGroup)->GetOriginalBoundingBox()),
+             finalBox = GetLocation((*iGroup)->GetCurrentBoundingBox())] (double nP) {
+                const double nQ = 1 - nP;
+                pSprite->MoveTo(geometry::RealPoint2D(
+                    nQ * initialBox.X + nP * finalBox.X,
+                    nQ * initialBox.Y + nP * finalBox.Y));
+            });
     }
 
     // Animate the new center pane to expand.
     pMultiAnimation->AddAnimation(
-        ::boost::bind(
-            SpriteTransform,
-            mpPaneContainer,
-            mxCenterPaneId,
-            xParentWindow,
-            mpPresenterController->GetPaintManager(),
-            true,
-            maCenterPaneBox.X1,
-            nY0,
-            maCenterPaneBox.Y1,
-            _1));
+        [&](double nP) {
+            SpriteTransform(
+                mpPaneContainer,
+                mxCenterPaneId,
+                xParentWindow,
+                mpPresenterController->GetPaintManager(),
+                true,
+                maCenterPaneBox.X1,
+                nY0,
+                maCenterPaneBox.Y1,
+                nP);
+        });
 
     // Call updateScreen after each animation step.
     if (xCanvas.is())
         pMultiAnimation->AddAnimation(
-            ::boost::bind(&rendering::XSpriteCanvas::updateScreen, xCanvas, sal_False));
+            [xCanvas]() { xCanvas->updateScreen( sal_False ); });
 
     // Activate the panes when the animation is over.
     pMultiAnimation->AddEndCallback(
-        ::boost::bind(&PresenterPaneAnimatorBase::ActivatePanes, shared_from_this()));
+        [self = shared_from_this()]() { PresenterPaneAnimatorBase::ActivatePanes( self ); });
     EndActions::const_iterator iAction;
     for (iAction=maShowEndActions.begin(); iAction!=maShowEndActions.end(); ++iAction)
         pMultiAnimation->AddEndCallback(*iAction);
@@ -633,38 +633,40 @@ void UnfoldInCenterAnimator::HidePane (void)
     for (iGroup=maPaneGroups.begin(); iGroup!=maPaneGroups.end(); ++iGroup)
     {
         pMultiAnimation->AddAnimation(
-            ::boost::bind(
-                InterpolatePosition,
-                ::boost::protect(::boost::bind(
-                    &PresenterSprite::MoveTo, (*iGroup)->GetSubstitution(), _1)),
-                _1,
-                GetLocation((*iGroup)->GetCurrentBoundingBox()),
-                GetLocation((*iGroup)->GetOriginalBoundingBox())));
+            [pSprite = (*iGroup)->GetSubstitution(),
+             initialBox = GetLocation((*iGroup)->GetCurrentBoundingBox()),
+             finalBox = GetLocation((*iGroup)->GetOriginalBoundingBox())] (double nP) {
+                const double nQ = 1 - nP;
+                pSprite->MoveTo(geometry::RealPoint2D(
+                    nQ * initialBox.X + nP * finalBox.X,
+                    nQ * initialBox.Y + nP * finalBox.Y));
+            });
     }
 
     // Animate the new center pane to collapse.
     const double nY0 ((maPaneGroups[0]->GetOriginalBoundingBox().Y2
             + maPaneGroups[1]->GetOriginalBoundingBox().Y1) / 2);
     pMultiAnimation->AddAnimation(
-        ::boost::bind(
-            SpriteTransform,
-            mpPaneContainer,
-            mxCenterPaneId,
-            xParentWindow,
-            mpPresenterController->GetPaintManager(),
-            false,
-            maCenterPaneBox.X1,
-            nY0,
-            maCenterPaneBox.Y1,
-            _1));
+        [&](double nP) {
+            SpriteTransform(
+                mpPaneContainer,
+                mxCenterPaneId,
+                xParentWindow,
+                mpPresenterController->GetPaintManager(),
+                false,
+                maCenterPaneBox.X1,
+                nY0,
+                maCenterPaneBox.Y1,
+                nP);
+        });
 
     if (mbDoAnimation)
     {
         pMultiAnimation->AddAnimation(
-            ::boost::bind(&rendering::XSpriteCanvas::updateScreen, xSpriteCanvas, sal_False));
+            [xSpriteCanvas]() { xSpriteCanvas->updateScreen( sal_False ); });
     }
     pMultiAnimation->AddEndCallback(
-        ::boost::bind(&PresenterPaneAnimatorBase::RestoreFrozenWindows, shared_from_this()));
+        [self = shared_from_this()]() { PresenterPaneAnimatorBase::RestoreFrozenWindows( self ); });
     EndActions::const_iterator iAction;
     for (iAction=maHideEndActions.begin(); iAction!=maHideEndActions.end(); ++iAction)
         pMultiAnimation->AddEndCallback(*iAction);
@@ -851,20 +853,21 @@ void MoveInFromBottomAnimator::HidePane (void)
 
     // Animate the new center pane to collapse.
     pMultiAnimation->AddAnimation(
-        ::boost::bind(
-            InterpolatePosition,
-            ::boost::protect(::boost::bind(&SpritePaneMove, mpPaneContainer, mxCenterPaneId, _1)),
-            _1,
-            geometry::RealPoint2D(maCenterPaneBox.X1, maCenterPaneBox.Y1),
-            geometry::RealPoint2D(maCenterPaneBox.X1, aWindowBox.Height)));
+        [&](double nP) {
+            const double nQ = 1 - nP;
+            geometry::RealPoint2D pos(
+                maCenterPaneBox.X1,
+                nQ * maCenterPaneBox.Y1 + nP * aWindowBox.Height);
+            SpritePaneMove(mpPaneContainer, mxCenterPaneId, pos);
+        });
 
     if (mbDoAnimation)
     {
         pMultiAnimation->AddAnimation(
-            ::boost::bind(&rendering::XSpriteCanvas::updateScreen, xCanvas, sal_False));
+            [xCanvas]() { xCanvas->updateScreen( sal_False ); });
     }
     pMultiAnimation->AddEndCallback(
-        ::boost::bind(&PresenterPaneAnimatorBase::RestoreFrozenWindows, shared_from_this()));
+        [self = shared_from_this()]() { PresenterPaneAnimatorBase::RestoreFrozenWindows( self ); });
     EndActions::const_iterator iAction;
     for (iAction=maHideEndActions.begin(); iAction!=maHideEndActions.end(); ++iAction)
         pMultiAnimation->AddEndCallback(*iAction);
@@ -889,23 +892,24 @@ void MoveInFromBottomAnimator::CreateShowAnimation (
 
     // Animate new pane to move in from the bottom.
     pMultiAnimation->AddAnimation(
-        ::boost::bind(
-            InterpolatePosition,
-            ::boost::protect(::boost::bind(&SpritePaneMove, mpPaneContainer, rxPaneId, _1)),
-            _1,
-            rStartLocation,
-            rEndLocation));
+        [&](double nP) {
+            const double nQ = 1 - nP;
+            geometry::RealPoint2D pos(
+                nQ * rStartLocation.X + nP * rEndLocation.X,
+                nQ * rStartLocation.Y + nP * rEndLocation.Y);
+            SpritePaneMove(mpPaneContainer, rxPaneId, pos);
+        });
 
     // Call updateScreen after each animation step.
     if (rxSpriteCanvas.is())
         pMultiAnimation->AddAnimation(
-            ::boost::bind(&rendering::XSpriteCanvas::updateScreen, rxSpriteCanvas, sal_False));
+            [rxSpriteCanvas]() { rxSpriteCanvas->updateScreen( sal_False ); });
 
     // Activate the panes when the animation is over.
     pMultiAnimation->AddEndCallback(
-        ::boost::bind(&PaneGroup::HidePanes, maPaneGroups[0]));
+        [paneGroup = maPaneGroups[0]]() { paneGroup->HidePanes(); });
     pMultiAnimation->AddEndCallback(
-        ::boost::bind(&PresenterPaneAnimatorBase::ActivatePane, shared_from_this(), mxCenterPaneId));
+        [self = shared_from_this()]() { PresenterPaneAnimatorBase::ActivatePane( self, mxCenterPaneId ); });
     EndActions::const_iterator iAction;
     for (iAction=rEndOperators.begin(); iAction!=rEndOperators.end(); ++iAction)
         pMultiAnimation->AddEndCallback(*iAction);

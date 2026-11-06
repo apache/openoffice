@@ -56,7 +56,6 @@
 #include "svx/sidebar/PopupControl.hxx"
 #include <svx/sidebar/ColorControl.hxx>
 #include "LineWidthControl.hxx"
-#include <boost/bind.hpp>
 
 using namespace css;
 using namespace cssu;
@@ -225,8 +224,8 @@ LinePropertyPanel::LinePropertyPanel(
     maLineStyleList(),
     mpStartItem(0),
     mpEndItem(0),
-    maColorPopup(this, ::boost::bind(&LinePropertyPanel::CreateColorPopupControl, this, _1)),
-    maLineWidthPopup(this, ::boost::bind(&LinePropertyPanel::CreateLineWidthPopupControl, this, _1)),
+    maColorPopup(this, [this](const auto& param) { return this->CreateColorPopupControl( param ); }),
+    maLineWidthPopup(this, [this](const auto& param) { return this->CreateLineWidthPopupControl( param ); }),
     maIMGColor(SVX_RES(IMG_COLOR)),
     maIMGNone(SVX_RES(IMG_NONE_ICON)),
     mpIMGWidthIcon(),
@@ -1008,8 +1007,8 @@ PopupControl* LinePropertyPanel::CreateColorPopupControl (PopupContainer* pParen
         mpBindings,
         SVX_RES(RID_POPUPPANEL_LINEPAGE_COLOR),
         SVX_RES(VS_COLOR),
-        ::boost::bind(GetTransparentColor),
-        ::boost::bind(&LinePropertyPanel::SetColor, this, _1, _2),
+        []() { return GetTransparentColor(); },
+        [this](auto a, auto b) { this->SetColor( a, b ); },
         pParent,
         0);
 }

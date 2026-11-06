@@ -48,8 +48,7 @@
 #include "dx_canvashelper.hxx"
 #include "dx_impltools.hxx"
 
-#include <boost/scoped_ptr.hpp>
-#include <boost/bind.hpp>
+
 #include <memory>
 
 
@@ -586,10 +585,7 @@ namespace dxcanvas
                     std::transform(&rValues.maColors[0],
                                    &rValues.maColors[0]+rValues.maColors.getLength(),
                                    aColors.begin(),
-                                   boost::bind(
-                                       (Gdiplus::ARGB (*)( const uno::Sequence< double >& ))(
-                                           &tools::sequenceToArgb),
-                                       _1));
+                                   [](const auto& seq) { return tools::sequenceToArgb(seq); });
                     std::vector< Gdiplus::REAL > aStops;
                     comphelper::sequenceToContainer(aStops,rValues.maStops);
 

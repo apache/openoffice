@@ -62,7 +62,6 @@
 #include <svx/sidebar/ColorControl.hxx>
 #include <svx/sidebar/PopupContainer.hxx>
 
-#include <boost/bind.hpp>
 
 using namespace css;
 using namespace cssu;
@@ -199,8 +198,8 @@ TextPropertyPanel::TextPropertyPanel (
         mpFontList			(NULL),
         mbMustDelete		(false),
         mbFocusOnFontSizeCtrl(false),
-        maCharSpacePopup(this, ::boost::bind(&TextPropertyPanel::CreateCharacterSpacingControl, this, _1)),
-        maUnderlinePopup(this, ::boost::bind(&TextPropertyPanel::CreateUnderlinePopupControl, this, _1)),
+        maCharSpacePopup(this, [this](const auto& param) { return this->CreateCharacterSpacingControl( param ); }),
+        maUnderlinePopup(this, [this](const auto& param) { return this->CreateUnderlinePopupControl( param ); }),
         mxFrame(rxFrame),
         maContext(),
         mpBindings(pBindings),

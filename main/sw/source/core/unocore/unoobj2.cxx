@@ -118,7 +118,6 @@
 #include <sortopt.hxx>
 #include <algorithm>
 #include <iterator>
-#include <boost/bind.hpp>
 #include <switerator.hxx>
 #include <memory>
 
@@ -1837,7 +1836,7 @@ SwXParaFrameEnumeration::SwXParaFrameEnumeration(
                 frames, false);
         ::std::transform(frames.begin(), frames.end(),
             ::std::back_inserter(m_pImpl->m_Frames),
-            ::boost::bind(&FrameDependSortListEntry::pFrameDepend, _1));
+            [](const auto& entry) { return entry.pFrameDepend; }));
     }
     else if (pFmt)
     {

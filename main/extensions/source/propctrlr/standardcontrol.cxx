@@ -59,7 +59,7 @@
 
 #include <memory>
 #include <limits>
-#include <boost/bind.hpp>
+#include <functional>
 
 //............................................................................
 namespace pcr
@@ -480,9 +480,7 @@ namespace pcr
     {
         ActionEvent aEvent( *this, ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "clicked" ) ) );
         m_aActionListeners.forEach< XActionListener >(
-            boost::bind(
-                &XActionListener::actionPerformed,
-                _1, boost::cref(aEvent) ) );
+            [&](const auto& listener) { listener->actionPerformed(aEvent); } );
 
         return 0;
     }

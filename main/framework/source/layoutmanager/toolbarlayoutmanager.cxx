@@ -47,7 +47,6 @@
 #include <toolkit/awt/vclxwindow.hxx>
 #include <vcl/i18nhelp.hxx>
 #include <vcl/dockingarea.hxx>
-#include <boost/bind.hpp>
 
 using namespace ::com::sun::star;
 
@@ -1158,7 +1157,7 @@ void ToolbarLayoutManager::implts_createNonContextSensitiveToolBars()
     catch ( uno::Exception& ) {}
 
     if ( !aMakeVisibleToolbars.empty() )
-        ::std::for_each( aMakeVisibleToolbars.begin(), aMakeVisibleToolbars.end(),::boost::bind( &ToolbarLayoutManager::requestToolbar, this,_1 ));
+        ::std::for_each( aMakeVisibleToolbars.begin(), aMakeVisibleToolbars.end(),[this](auto& toolbar) { this->requestToolbar( toolbar ); });
 }
 
 void ToolbarLayoutManager::implts_createCustomToolBars( const uno::Sequence< uno::Sequence< beans::PropertyValue > >& aTbxSeqSeq )

@@ -30,7 +30,6 @@
 #include <com/sun/star/lang/DisposedException.hpp>
 #include <tools/diagnose_ex.h>
 #include <algorithm>
-#include <boost/bind.hpp>
 #include <memory>
 
 using namespace ::com::sun::star;
@@ -87,11 +86,10 @@ void ConfigurationControllerResourceManager::ActivateResources (
     // Iterate in normal order over the resources that are to be
     // activated so that resources on which others depend are activated
     // beforet the depending resources are activated.
-    ::std::for_each(
-        rResources.begin(),
-        rResources.end(),
-        ::boost::bind(&ConfigurationControllerResourceManager::ActivateResource,
-            this, _1, rxConfiguration));
+        ::std::for_each(
+            rResources.begin(),
+            rResources.end(),
+            [this, &rxConfiguration](auto& resource) { this->ActivateResource( resource, rxConfiguration ); });
 }
 
 
@@ -105,11 +103,10 @@ void ConfigurationControllerResourceManager::DeactivateResources (
     // Iterate in reverese order over the resources that are to be
     // deactivated so that resources on which others depend are deactivated
     // only when the depending resources have already been deactivated.
-    ::std::for_each(
-        rResources.rbegin(),
-        rResources.rend(),
-        ::boost::bind(&ConfigurationControllerResourceManager::DeactivateResource,
-            this, _1, rxConfiguration));
+        ::std::for_each(
+            rResources.rbegin(),
+            rResources.rend(),
+            [this, &rxConfiguration](auto& resource) { this->DeactivateResource( resource, rxConfiguration ); });
 }
 
 

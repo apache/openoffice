@@ -45,7 +45,6 @@
 #include "generateevent.hxx"
 #include "debug.hxx"
 
-#include <boost/bind.hpp>
 #include <vector>
 #include <algorithm>
 #include <iterator>
@@ -475,7 +474,7 @@ bool BaseNode::resolve()
         uno::Any const aBegin( mxAnimationNode->getBegin() );
         if (aBegin.hasValue()) {
             mpCurrentEvent = generateEvent(
-                aBegin, boost::bind( &AnimationNode::activate, mpSelf ),
+                aBegin, [mpSelf]() { mpSelf->activate(); } ),
                 maContext, mnStartDelay );
         }
         else {
@@ -486,7 +485,7 @@ bool BaseNode::resolve()
             // schedule delayed activation event. Take iterate node
             // timeout into account
             mpCurrentEvent = makeDelay(
-                boost::bind( &AnimationNode::activate, mpSelf ),
+                [mpSelf]() { mpSelf->activate(); } ),
                 mnStartDelay,
                 "AnimationNode::activate with delay");
             maContext.mrEventQueue.addEvent( mpCurrentEvent );
@@ -557,7 +556,7 @@ void BaseNode::scheduleDeactivationEvent( EventSharedPtr const& pEvent )
         // TODO(F2): Handle end time attribute, too
         mpCurrentEvent = generateEvent(
             mxAnimationNode->getDuration(),
-            boost::bind( &AnimationNode::deactivate, mpSelf ),
+            [mpSelf]() { mpSelf->deactivate(); } ),
             maContext, 0.0 );
     }
 }
@@ -638,8 +637,7 @@ void BaseNode::notifyEndListeners() const
     // notify all listeners
     std::for_each( maDeactivatingListeners.begin(),
                    maDeactivatingListeners.end(),
-                   boost::bind( &AnimationNode::notifyDeactivating, _1,
-                                boost::cref(mpSelf) ) );
+                   [&](auto& listener) { listener->notifyDeactivating( mpSelf ); } );
 
     // notify state change
     maContext.mrEventMultiplexer.notifyAnimationEnd( mpSelf );

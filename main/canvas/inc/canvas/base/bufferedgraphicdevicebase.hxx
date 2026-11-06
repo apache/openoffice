@@ -103,8 +103,7 @@ namespace canvas
         {
             BaseType::maPropHelper.addProperties( PropertySetHelper::MakeMap
                                                   ("Window",
-                                                   boost::bind(&OurType::getXWindow,
-                                                               this)));
+                                                   [this]() { return this->getXWindow(); }));
         }
 
         // XGraphicDevice

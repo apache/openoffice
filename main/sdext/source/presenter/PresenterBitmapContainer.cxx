@@ -32,7 +32,6 @@
 #include <com/sun/star/lang/XMultiComponentFactory.hpp>
 #include <com/sun/star/rendering/CompositeOperation.hpp>
 #include <com/sun/star/rendering/XIntegerBitmap.hpp>
-#include <boost/bind.hpp>
 #include <map>
 #include <memory>
 
@@ -173,7 +172,7 @@ void PresenterBitmapContainer::LoadBitmaps (
         {
             PresenterConfigurationAccess::ForAll(
                 rxBitmapList,
-                ::boost::bind(&PresenterBitmapContainer::ProcessBitmap, this, _1, _2));
+                [this](const auto& key, const auto& value) { this->ProcessBitmap( key, value ); }));
         }
     }
     catch (Exception&)

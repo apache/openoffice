@@ -26,7 +26,6 @@
 
 #include "PresenterFrameworkObserver.hxx"
 #include <com/sun/star/lang/IllegalArgumentException.hpp>
-#include <boost/bind.hpp>
 
 using namespace ::com::sun::star;
 using namespace ::com::sun::star::uno;
@@ -89,7 +88,7 @@ void PresenterFrameworkObserver::RunOnResourceActivation (
     new PresenterFrameworkObserver(
         rxController,
         A2S("ResourceActivation"),
-        ::boost::bind(&PresenterFrameworkObserver::HasResource, rxController, rxResourceId),
+        [rxController, rxResourceId]() { return rxController->HasResource( rxResourceId ); },
         rAction);
 }
 

@@ -91,7 +91,6 @@
 #include <dp_gui_handleversionexception.hxx>
 
 #include <queue>
-#include <boost/bind.hpp>
 #include <memory>
 
 #if (defined(_MSC_VER) && (_MSC_VER < 1400))
@@ -443,7 +442,7 @@ void ProgressCmdEnv::handle( uno::Reference< task::XInteractionRequest > const &
         }
         {
             short n = vcl::solarthread::syncExecute(
-                boost::bind( &solar_dependencyDialog, m_pDialogHelper, deps ) );
+                [m_pDialogHelper, deps]() { return solar_dependencyDialog( m_pDialogHelper, deps ); } );
             // Distinguish between closing the dialog and programatically
             // canceling the dialog (headless VCL):
             approve = n == RET_OK
@@ -493,8 +492,7 @@ void ProgressCmdEnv::handle( uno::Reference< task::XInteractionRequest > const &
     else if (request >>= platExc)
     {
         vcl::solarthread::syncExecute(
-            boost::bind( &solar_unsupportedPlatformBox, m_pDialogHelper,
-                         platExc.package->getDisplayName() ) );
+            [m_pDialogHelper]() { solar_unsupportedPlatformBox( m_pDialogHelper, platExc.package->getDisplayName() ); } );
         approve = true;
     }
 
@@ -563,7 +561,7 @@ void ProgressCmdEnv::update_( uno::Any const & rStatus )
             text = ::comphelper::anyToString( rStatus ); // fallback
 
         vcl::solarthread::syncExecute(
-            boost::bind( &solar_errorBox, m_pDialogHelper, text, false ) );
+            [m_pDialogHelper]() { solar_errorBox( m_pDialogHelper, text, false ); } );
     }
     ++m_nCurrentProgress;
     updateProgress();
@@ -851,7 +849,7 @@ void ExtensionCmdQueue::Thread::execute()
                     msg = ::comphelper::anyToString(exc);
 
                 vcl::solarthread::syncExecute(
-                    boost::bind( &solar_errorBox, m_pDialogHelper, msg, true ) );
+                    [m_pDialogHelper]() { solar_errorBox( m_pDialogHelper, msg, true ); } );
                     //Continue with installation of the remaining extensions
             }
             {
@@ -961,8 +959,7 @@ void ExtensionCmdQueue::Thread::_checkForUpdates(
     // pumps the Cocoa event queue (AquaSalInstance::Yield), so executing the
     // update dialog on this worker thread would leave it visible but frozen.
     vcl::solarthread::syncExecute(
-        boost::bind( &ExtensionCmdQueue::Thread::_solar_checkForUpdates,
-                     this, vExtensionList ) );
+        [this, vExtensionList]() { this->_solar_checkForUpdates( vExtensionList ); } );
 }
 
 //------------------------------------------------------------------------------

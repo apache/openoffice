@@ -37,7 +37,6 @@
 
 #include <basegfx/numeric/ftools.hxx>
 
-#include <boost/bind.hpp>
 
 #include <cmath> // for trigonometry and fabs
 #include <algorithm>
@@ -181,11 +180,7 @@ namespace slideshow
             // already added?
             if( ::std::find_if( maViewShapes.begin(),
                                 aEnd,
-                                ::boost::bind<bool>(
-                                    ::std::equal_to< ViewLayerSharedPtr >(),
-                                    ::boost::bind( &ViewBackgroundShape::getViewLayer,
-                                                   _1 ),
-                                    ::boost::cref( rNewLayer ) ) ) != aEnd )
+                                [&](const auto& shape) { return shape->getViewLayer() == rNewLayer; } ) != aEnd )
             {
                 // yes, nothing to do
                 return;
@@ -207,22 +202,14 @@ namespace slideshow
 
             OSL_ENSURE( ::std::count_if(maViewShapes.begin(),
                                         aEnd,
-                                        ::boost::bind<bool>(
-                                            ::std::equal_to< ViewLayerSharedPtr >(),
-                                            ::boost::bind( &ViewBackgroundShape::getViewLayer,
-                                                           _1 ),
-                                            ::boost::cref( rLayer ) ) ) < 2,
-                        "BackgroundShape::removeViewLayer(): Duplicate ViewLayer entries!" );
+                                        [&](const auto& shape) { return shape->getViewLayer() == rLayer; }) < 2,
+                    "BackgroundShape::removeViewLayer(): Duplicate ViewLayer entries!" );
 
             ViewBackgroundShapeVector::iterator aIter;
 
             if( (aIter=::std::remove_if( maViewShapes.begin(),
                                          aEnd,
-                                         ::boost::bind<bool>(
-                                             ::std::equal_to< ViewLayerSharedPtr >(),
-                                             ::boost::bind( &ViewBackgroundShape::getViewLayer,
-                                                            _1 ),
-                                             ::boost::cref( rLayer ) ) )) == aEnd )
+                                         [&](const auto& shape) { return shape->getViewLayer() == rLayer; } )) == aEnd )
             {
                 // view layer seemingly was not added, failed
                 return false;
@@ -292,9 +279,7 @@ namespace slideshow
             // redraw all view shapes, by calling their render() method
             if( ::std::count_if( maViewShapes.begin(),
                                  maViewShapes.end(),
-                                 ::boost::bind( &ViewBackgroundShape::render,
-                                                _1,
-                                                ::boost::cref( mpMtf ) ) )
+                                 [&](const auto& shape) { return shape->render( mpMtf ); } )
                 != static_cast<ViewBackgroundShapeVector::difference_type>(maViewShapes.size()) )
             {
                 // at least one of the ViewBackgroundShape::render() calls did return

@@ -54,7 +54,6 @@
 #include <com/sun/star/util/Color.hpp>
 #include <com/sun/star/util/XURLTransformer.hpp>
 #include <rtl/ustrbuf.hxx>
-#include <boost/bind.hpp>
 #include <boost/function.hpp>
 #include <boost/enable_shared_from_this.hpp>
 #include <map>
@@ -778,7 +777,7 @@ void PresenterToolBar::CreateControls (
         {
             PresenterConfigurationAccess::ForAll(
                 xEntries,
-                ::boost::bind(&PresenterToolBar::ProcessEntry, this, _2, ::boost::ref(aContext)));
+                [this, &aContext](const auto& key, const auto& value) { this->ProcessEntry( value, aContext ); }));
         }
     }
 }

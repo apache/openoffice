@@ -32,7 +32,6 @@
 #include <vos/mutex.hxx>
 #include <vcl/svapp.hxx>
 #include <comphelper/serviceinfohelper.hxx>
-#include <boost/bind.hpp>
 
 #include "eetext.hxx"
 #include <editeng/eeitem.hxx>
@@ -946,7 +945,7 @@ void SdStyleSheet::notifyModifyListener()
 	if( pContainer )
 	{
 		EventObject aEvt( static_cast< OWeakObject * >( this ) );
-		pContainer->forEach<XModifyListener>( boost::bind( &XModifyListener::modified, _1, boost::cref( aEvt ) ) );
+		pContainer->forEach<XModifyListener>( [&](const auto& listener) { listener->modified( aEvt ); } );
 	}
 }
 

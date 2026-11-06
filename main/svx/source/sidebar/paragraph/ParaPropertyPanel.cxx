@@ -51,7 +51,6 @@
 #include "svx/dialmgr.hxx"
 #include <sfx2/objsh.hxx>
 #include <svtools/unitconv.hxx>
-#include <boost/bind.hpp>
 
 using namespace css;
 using namespace cssu;
@@ -1583,8 +1582,8 @@ PopupControl* ParaPropertyPanel::CreateBGColorPopupControl (PopupContainer* pPar
         mpBindings,
         SVX_RES(RID_POPUPPANEL_PARAPAGE_BACK_COLOR),
         SVX_RES(VS_FONT_COLOR),
-        ::boost::bind(GetNoBackgroundColor),
-        ::boost::bind(&ParaPropertyPanel::SetBGColor, this, _1,_2),
+        []() { return GetNoBackgroundColor(); },
+        [this](auto a, auto b) { this->SetBGColor( a, b ); },
         pParent,
         &aResId);
 }
@@ -1673,10 +1672,10 @@ ParaPropertyPanel::ParaPropertyPanel(Window* pParent,
       mxFrame(rxFrame),
       maContext(),
       mpBindings(pBindings),
-      maLineSpacePopup(this, ::boost::bind(&ParaPropertyPanel::CreateLineSpacingControl, this, _1)),
-      maBulletsPopup(this, ::boost::bind(&ParaPropertyPanel::CreateBulletsPopupControl, this, _1)),
-      maNumberingPopup(this, ::boost::bind(&ParaPropertyPanel::CreateNumberingPopupControl, this, _1)),
-      maBGColorPopup(this, ::boost::bind(&ParaPropertyPanel::CreateBGColorPopupControl, this, _1)),
+     maLineSpacePopup(this, [this](const auto& param) { return this->CreateLineSpacingControl( param ); }),
+     maBulletsPopup(this, [this](const auto& param) { return this->CreateBulletsPopupControl( param ); }),
+     maNumberingPopup(this, [this](const auto& param) { return this->CreateNumberingPopupControl( param ); }),
+       maBGColorPopup(this, [this](const auto& param) { return this->CreateBGColorPopupControl( param ); }),
       mxSidebar(rxSidebar),
       maLayouter(*this)
 {

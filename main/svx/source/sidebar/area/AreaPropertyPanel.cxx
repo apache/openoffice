@@ -46,7 +46,6 @@
 #include <svtools/toolbarmenu.hxx>
 #include <svx/sidebar/ColorControl.hxx>
 
-#include <boost/bind.hpp>
 
 using namespace css;
 using namespace cssu;
@@ -128,8 +127,8 @@ AreaPropertyPanel::AreaPropertyPanel(
 	  maImgColorH(SVX_RES(IMG_COLOR_H)),
 	  msHelpFillType(SVX_RES(STR_HELP_TYPE)),
 	  msHelpFillAttr(SVX_RES(STR_HELP_ATTR)),
-	  maTrGrPopup(this, ::boost::bind(&AreaPropertyPanel::CreateTransparencyGradientControl, this, _1)),
-	  maColorPopup(this, ::boost::bind(&AreaPropertyPanel::CreateColorPopupControl, this, _1)),
+	  maTrGrPopup(this, [this](const auto& param) { return this->CreateTransparencyGradientControl( param ); }),
+	  maColorPopup(this, [this](const auto& param) { return this->CreateColorPopupControl( param ); }),
 	  mpFloatTransparenceItem(),
 	  mpTransparanceItem(),
 	  mxFrame(rxFrame),
@@ -660,8 +659,8 @@ PopupControl* AreaPropertyPanel::CreateColorPopupControl (PopupContainer* pParen
 		mpBindings,
 		SVX_RES(RID_POPUPPANEL_AERAPAGE_COLOR),
 		SVX_RES(VS_COLOR),
-		::boost::bind(&AreaPropertyPanel::GetLastColor, this),
-		::boost::bind(&AreaPropertyPanel::SetColor, this, _1,_2),
+		[this]() { return this->GetLastColor(); },
+		[this](auto a, auto b) { this->SetColor( a, b ); },
 		pParent,
 		0);
 }

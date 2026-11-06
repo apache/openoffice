@@ -83,8 +83,6 @@
 #include <tools/errcode.hxx>
 #include <tools/urlobj.hxx>
 
-#include <boost/bind.hpp>
-
 #include <algorithm>
 #include <functional>
 #include <list>
@@ -1481,7 +1479,7 @@ void SAL_CALL ODatabaseDocument::close( sal_Bool _bDeliverOwnership )
         // allow listeners to veto
         lang::EventObject aEvent( *this );
         m_aCloseListener.forEach< XCloseListener >(
-            boost::bind( &XCloseListener::queryClosing, _1, boost::cref( aEvent ), boost::cref( _bDeliverOwnership ) ) );
+            [&](const auto& listener) { listener->queryClosing( aEvent, _bDeliverOwnership ); } );
 
         // notify that we're going to unload
 	    m_aEventNotifier.notifyDocumentEvent( "OnPrepareUnload" );
@@ -1735,7 +1733,7 @@ void ODatabaseDocument::impl_notifyStorageChange_nolck_nothrow( const Reference<
     Reference< XInterface > xMe( *const_cast< ODatabaseDocument* >( this ) );
 
     m_aStorageListeners.forEach< XStorageChangeListener >(
-        boost::bind( &XStorageChangeListener::notifyStorageChange, _1, boost::cref( xMe ), boost::cref( _rxNewRootStorage ) ) );
+        [&](const auto& listener) { listener->notifyStorageChange( xMe, _rxNewRootStorage ); } );
 }
 
 //------------------------------------------------------------------------------

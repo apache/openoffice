@@ -34,7 +34,6 @@
 #include <basegfx/polygon/b2dpolypolygontools.hxx>
 
 #include <o3tl/vector_pool.hxx>
-#include <boost/bind.hpp>
 #include <boost/version.hpp>
 #if BOOST_VERSION < 106700
 # include <boost/utility.hpp>
@@ -519,11 +518,7 @@ namespace basegfx
                 B2DPolygon aRes;
                 std::for_each( maPoints.begin(),
                                maPoints.end(),
-                               boost::bind(
-                     &B2DPolygon::append,
-                                   boost::ref(aRes),
-                                   _1,
-                                   1 ) );
+                               [&](const auto& point) { aRes.append(point, 1); } );
                 aRes.setClosed( true );
                 return aRes;
             }
@@ -775,10 +770,7 @@ namespace basegfx
             // rect is regarded _outside_ any rects whose events have
             // started earlier
             first = std::find_if(first, last,
-                                 boost::bind(
-                         &isSameRect,
-                                     _1,
-                                     boost::cref(rCurrRect)));
+                                 [&](const auto& rect) { return isSameRect(rect, rCurrRect); });
 
             if(first == last)
                 return;
@@ -934,12 +926,7 @@ namespace basegfx
 
             std::for_each( aSweepLineEvents.begin(),
                            aSweepLineEvents.end(),
-                           boost::bind(
-                               &handleSweepLineEvent,
-                               _1,
-                               boost::ref(aActiveEdgeList),
-                               boost::ref(aPolygonPool),
-                               boost::ref(aRes)) );
+                           [&](auto& event) { handleSweepLineEvent(event, aActiveEdgeList, aPolygonPool, aRes); } );
 
             return aRes;
         }

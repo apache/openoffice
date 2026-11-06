@@ -30,7 +30,6 @@
 #include <cppuhelper/exc_hlp.hxx>
 #include <com/sun/star/io/XInputStream.hpp>
 #include <com/sun/star/io/XOutputStream.hpp>
-#include <boost/bind.hpp>
 
 using namespace com::sun::star;
 
@@ -94,10 +93,7 @@ void OdfEmitter::beginTag( const char* pTag, const PropertyMap& rProperties )
     std::sort(aAttributes.begin(), aAttributes.end());
     std::for_each(aAttributes.begin(),
                   aAttributes.end(),
-                  boost::bind( (rtl::OUStringBuffer& (rtl::OUStringBuffer::*)(const rtl::OUString&))
-                               (&rtl::OUStringBuffer::append),
-                               boost::ref(aElement),
-                               _1 ));
+                  [&](auto& attr) { aElement.append( attr ); });
     aElement.appendAscii(">");
 
     write(aElement.makeStringAndClear());

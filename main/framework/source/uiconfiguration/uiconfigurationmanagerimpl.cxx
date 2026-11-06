@@ -55,7 +55,6 @@
 #include <vcl/svapp.hxx>
 #include <rtl/ustrbuf.hxx>
 #include <comphelper/sequenceashashmap.hxx>
-#include <boost/bind.hpp>
 
 //_________________________________________________________________________________________________________________
 //	namespaces
@@ -938,8 +937,8 @@ void UIConfigurationManagerImpl::reset()
             aGuard.unlock();
 
             // Notify our listeners
-            ::std::for_each(aRemoveEventNotifyContainer.begin(),aRemoveEventNotifyContainer.end(),::boost::bind(&UIConfigurationManagerImpl::implts_notifyContainerListener,this,_1,NotifyOp_Remove));
-            ::std::for_each(aReplaceEventNotifyContainer.begin(),aReplaceEventNotifyContainer.end(),::boost::bind(&UIConfigurationManagerImpl::implts_notifyContainerListener,this,_1,NotifyOp_Replace));
+            ::std::for_each(aRemoveEventNotifyContainer.begin(),aRemoveEventNotifyContainer.end(),[this](auto& listener) { this->implts_notifyContainerListener(listener,NotifyOp_Remove); });
+            ::std::for_each(aReplaceEventNotifyContainer.begin(),aReplaceEventNotifyContainer.end(),[this](auto& listener) { this->implts_notifyContainerListener(listener,NotifyOp_Replace); });
         }
         catch ( ::com::sun::star::lang::IllegalArgumentException& )
         {
@@ -1579,8 +1578,8 @@ void UIConfigurationManagerImpl::reload()
         aGuard.unlock();
 
         // Notify our listeners
-        ::std::for_each(aRemoveNotifyContainer.begin(),aRemoveNotifyContainer.end(),::boost::bind(&UIConfigurationManagerImpl::implts_notifyContainerListener,this,_1,NotifyOp_Remove));
-        ::std::for_each(aReplaceNotifyContainer.begin(),aReplaceNotifyContainer.end(),::boost::bind(&UIConfigurationManagerImpl::implts_notifyContainerListener,this,_1,NotifyOp_Replace));
+        ::std::for_each(aRemoveNotifyContainer.begin(),aRemoveNotifyContainer.end(),[this](auto& listener) { this->implts_notifyContainerListener(listener,NotifyOp_Remove); });
+        ::std::for_each(aReplaceNotifyContainer.begin(),aReplaceNotifyContainer.end(),[this](auto& listener) { this->implts_notifyContainerListener(listener,NotifyOp_Replace); });
     }
 }
 

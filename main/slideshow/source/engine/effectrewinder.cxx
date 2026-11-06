@@ -35,7 +35,6 @@
 #include <com/sun/star/animations/EventTrigger.hpp>
 #include <com/sun/star/container/XEnumerationAccess.hpp>
 #include <boost/function.hpp>
-#include <boost/bind.hpp>
 #include <boost/enable_shared_from_this.hpp>
 #include <memory>
 
@@ -110,17 +109,17 @@ void EffectRewinder::initialize (void)
 
     mpAnimationStartHandler.reset(
         new RewinderAnimationEventHandler(
-            ::boost::bind(&EffectRewinder::notifyAnimationStart, this, _1)));
+            [this](auto& event) { this->notifyAnimationStart( event ); })));
     mrEventMultiplexer.addAnimationStartHandler(mpAnimationStartHandler);
 
     mpSlideStartHandler.reset(
         new RewinderEventHandler(
-            ::boost::bind(&EffectRewinder::resetEffectCount, this)));
+            [this]() { this->resetEffectCount(); }));
     mrEventMultiplexer.addSlideStartHandler(mpSlideStartHandler);
 
     mpSlideEndHandler.reset(
         new RewinderEventHandler(
-            ::boost::bind(&EffectRewinder::resetEffectCount, this)));
+            [this]() { this->resetEffectCount(); }));
     mrEventMultiplexer.addSlideEndHandler(mpSlideEndHandler);
 }
 
@@ -204,10 +203,7 @@ bool EffectRewinder::rewind (
         // No main sequence effects to rewind on the current slide.
         // Go back to the previous slide.
         mpAsynchronousRewindEvent = makeEvent(
-            ::boost::bind(
-                &EffectRewinder::asynchronousRewindToPreviousSlide,
-                this,
-                rPreviousSlideFunctor),
+            [this, &rPreviousSlideFunctor]() { this->asynchronousRewindToPreviousSlide( rPreviousSlideFunctor ); },
             "EffectRewinder::asynchronousRewindToPreviousSlide");
     }
     else
@@ -215,12 +211,7 @@ bool EffectRewinder::rewind (
         // The actual rewinding is done asynchronously so that we can safely
         // call other methods.
         mpAsynchronousRewindEvent = makeEvent(
-            ::boost::bind(
-                &EffectRewinder::asynchronousRewind,
-                this,
-                nSkipCount,
-                true,
-                rSlideRewindFunctor),
+            [this, &nSkipCount, &rSlideRewindFunctor]() { this->asynchronousRewind( nSkipCount, true, rSlideRewindFunctor ); },
             "EffectRewinder::asynchronousRewind");
     }
 

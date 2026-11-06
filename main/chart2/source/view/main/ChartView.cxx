@@ -57,7 +57,6 @@
 
 #include <rtl/uuid.h>
 #include <comphelper/scopeguard.hxx>
-#include <boost/bind.hpp>
 #include <unotools/streamwrap.hxx>
 // header for class LocaleDataWrapper
 #include <unotools/localedatawrapper.hxx>
@@ -2502,7 +2501,7 @@ void ChartView::createShapes()
 #endif
 
     //make sure add-in is refreshed after creating the shapes
-    const ::comphelper::ScopeGuard aGuard( boost::bind( &ChartView::impl_refreshAddIn, this ) );
+    const ::comphelper::ScopeGuard aGuard( [this]() { this->impl_refreshAddIn(); } );
     if( impl_AddInDrawsAllByItself() )
         return;
 

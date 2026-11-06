@@ -33,9 +33,6 @@
 
 #include "boost/tuple/tuple.hpp"
 #include <boost/function.hpp>
-#include "boost/lambda/bind.hpp"
-#include "boost/bind.hpp"
-#include "boost/lambda/lambda.hpp"
 #include "scitems.hxx"
 #include "column.hxx"
 #include "cell.hxx"
@@ -1793,7 +1790,7 @@ void  ScColumn::FillDPCacheT( long nDim, SCROW nStartRow, SCROW nEndRow, const b
 }
 void  ScColumn::FillDPCache( ScDPTableDataCache * pCache, long nDim, SCROW nStartRow, SCROW nEndRow )
 {
-    FillDPCacheT<boost::function<void(ScDPItemData*)>, boost::function<sal_Bool(long,ScDPItemData*, bool)> >( nDim, nStartRow, nEndRow, boost::bind( &ScDPTableDataCache::AddLabel, pCache, _1 ), boost::bind( &ScDPTableDataCache::AddData, pCache, _1, _2, _3 ) );
+    FillDPCacheT<boost::function<void(ScDPItemData*)>, boost::function<sal_Bool(long,ScDPItemData*, bool)> >( nDim, nStartRow, nEndRow, [pCache](ScDPItemData* item) { pCache->AddLabel(item); }, [pCache](long nDim, ScDPItemData* pItem, bool bSomething) { return pCache->AddData(nDim, pItem, bSomething); } );
 }
 
 void ScColumn::GetInputString( SCROW nRow, String& rString ) const

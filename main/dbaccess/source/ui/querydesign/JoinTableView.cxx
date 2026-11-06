@@ -95,7 +95,6 @@
 #endif
 #include <cppuhelper/exc_hlp.hxx>
 #include <tools/diagnose_ex.h>
-#include <boost/bind.hpp>
 #include <algorithm>
 #include <functional>
 
@@ -1083,7 +1082,7 @@ void OJoinTableView::DrawConnections( const Rectangle& rRect )
 	DBG_CHKTHIS(OJoinTableView,NULL);
 	//////////////////////////////////////////////////////////////////////
 	// Die Joins zeichnen
-    ::std::for_each(m_vTableConnection.begin(),m_vTableConnection.end(),boost::bind( &OTableConnection::Draw, _1, boost::cref( rRect )));
+    ::std::for_each(m_vTableConnection.begin(),m_vTableConnection.end(),[&](auto& conn) { conn.Draw( rRect ); });
 	// zum Schluss noch mal die selektierte ueber alle anderen drueber
 	if (GetSelectedConn())
 		GetSelectedConn()->Draw( rRect );

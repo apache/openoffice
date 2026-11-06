@@ -65,7 +65,7 @@
 #include "connectivity/sqlerror.hxx"
 #include <tools/diagnose_ex.h>
 #include <string.h>
-#include <boost/bind.hpp>
+#include <functional>
 #include <algorithm>
 #include <functional>
 #include <rtl/logfile.hxx>
@@ -663,7 +663,7 @@ void OSQLParseNode::impl_parseTableRangeNodeToString_throw(::rtl::OUStringBuffer
 
 	// rString += ::rtl::OUString::createFromAscii(" ");
     ::std::for_each(m_aChildren.begin(),m_aChildren.end(),
-        boost::bind( &OSQLParseNode::impl_parseNodeToString_throw, _1, boost::ref( rString ), boost::cref( rParam ) ));
+        [&](auto& child) { child.impl_parseNodeToString_throw( rString, rParam ); });
 }
 
 //-----------------------------------------------------------------------------
