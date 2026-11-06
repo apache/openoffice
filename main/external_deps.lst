@@ -305,9 +305,9 @@ if (ENABLE_CATEGORY_B==YES && SYSTEM_HUNSPELL!=YES)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (ENABLE_CATEGORY_B==YES && SOLAR_JAVA==TRUE && ENABLE_JAVASCRIPT==YES)
-    MD5 = afcf570784ebd919c1d484a6d0d3fcd6
-    name = rhino1_7_7_2.zip
-    URL1 = https://github.com/mozilla/rhino/releases/download/Rhino1_7_7_2_Release/rhino-1.7.7.2.zip
+    MD5 = b98c6c3ec884277f253028abf91d257b
+    name = rhino1_7_15_1.zip
+    URL1 = https://github.com/mozilla/rhino/releases/download/Rhino1_7_15_1_Release/rhino-1.7.15.1.zip
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (ENABLE_CATEGORY_B==YES && ENABLE_NSS_MODULE==YES)

@@ -1,42 +1,47 @@
-diff -ruN a/b/rhino1.7.7.2/build.properties a/b/rhino1.7.7.2/build.properties
---- a/b/rhino1.7.7.2/build.properties	2026-10-31 20:42:49.489534187 -0500
-+++ a/b/rhino1.7.7.2/build.properties	2026-10-31 20:42:49.840321657 -0500
-@@ -23,4 +23,4 @@
- source-level: 1.6
- 
- # jar generation settings
--jar-compression: true
+diff -ruN -x build -x DefiningClassLoader.java a/b/rhino1.7.15.1/build.properties b/b/rhino1.7.15.1/build.properties
+--- a/b/rhino1.7.15.1/build.properties	1969-12-31 19:00:00
++++ b/b/rhino1.7.15.1/build.properties	2026-11-06 14:50:16
+@@ -0,0 +1,20 @@
++# This Source Code Form is subject to the terms of the Mozilla Public
++# License, v. 2.0. If a copy of the MPL was not distributed with this
++# file, You can obtain one at http://mozilla.org/MPL/2.0/.
++
++name: rhino
++version: 1.7.15.1
++
++build.dir: build
++rhino.jar: js.jar
++
++# compilation destination
++classes: ${build.dir}/classes
++
++# compilation settings
++debug: on
++target-jvm: 1.8
++source-level: 1.8
++
++# jar generation settings
 +jar-compression: true
-\ No newline at end of file
-diff -ruN a/b/rhino1.7.7.2/build.xml a/b/rhino1.7.7.2/build.xml
---- a/b/rhino1.7.7.2/build.xml	1969-12-31 19:00:00.000000000 -0500
-+++ b/b/rhino1.7.7.2/build.xml	2026-11-03 00:00:00.000000000 -0500
-@@ -0,0 +1,87 @@
+diff -ruN -x build -x DefiningClassLoader.java a/b/rhino1.7.15.1/build.xml b/b/rhino1.7.15.1/build.xml
+--- a/b/rhino1.7.15.1/build.xml	1969-12-31 19:00:00
++++ b/b/rhino1.7.15.1/build.xml	2026-11-06 14:50:16
+@@ -0,0 +1,51 @@
 +<?xml version="1.0" encoding="UTF-8"?>
 +<!-- This Source Code Form is subject to the terms of the Mozilla Public
 +   - License, v. 2.0. If a copy of the MPL was not distributed with this
 +   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 +
++<!-- Ant replacement for the upstream Gradle build. Builds js.jar the same
++     way Gradle's "jar" task does: everything under src, minus the JSR-223
++     engine. -->
 +<project name="rhino" default="jar" basedir=".">
 +
-+  <target name="init">
-+    <property file="build.properties"/>
-+    <property name="src.dir" value="src"/>
-+    <property name="build.dir" value="${build.dir}"/>
-+    <property name="classes.dir" value="${classes}"/>
-+    <property name="rhino.jar" value="${rhino.jar}"/>
-+    <property name="small-rhino.jar" value="${small-rhino.jar}"/>
-+    <property name="dist.dir" value="${dist.dir}"/>
-+    <property name="dist.name" value="${dist.name}"/>
++  <property file="build.properties"/>
 +
-+    <mkdir dir="${classes.dir}"/>
-+    <mkdir dir="${build.dir}"/>
-+    <mkdir dir="${dist.dir}"/>
-+  </target>
-+
-+  <target name="compile" depends="init">
-+    <javac srcdir="${src.dir}"
-+           destdir="${classes.dir}"
++  <target name="compile">
++    <mkdir dir="${classes}"/>
++    <javac srcdir="src"
++           destdir="${classes}"
 +           debug="${debug}"
 +           target="${target-jvm}"
 +           source="${source-level}"
@@ -51,180 +56,52 @@ diff -ruN a/b/rhino1.7.7.2/build.xml a/b/rhino1.7.7.2/build.xml
 +         compress="${jar-compression}">
 +      <manifest>
 +        <attribute name="Manifest-Version" value="1.0"/>
++        <attribute name="Main-Class" value="org.mozilla.javascript.tools.shell.Main"/>
++        <attribute name="Automatic-Module-Name" value="org.mozilla.rhino"/>
 +        <attribute name="Implementation-Title" value="Rhino"/>
-+        <attribute name="Implementation-Version" value="1.7.7.2"/>
++        <attribute name="Implementation-Version" value="${version}"/>
 +      </manifest>
-+      <fileset dir="${classes.dir}"/>
-+      <fileset dir="${basedir}/src" includes="**/*.properties"/>
-+    </jar>
-+  </target>
-+
-+  <target name="small-jar" depends="compile">
-+    <jar destfile="${build.dir}/${small-rhino.jar}"
-+         compress="${jar-compression}">
-+      <manifest>
-+        <attribute name="Manifest-Version" value="1.0"/>
-+        <attribute name="Implementation-Title" value="Rhino"/>
-+        <attribute name="Implementation-Version" value="1.7.7.2"/>
-+      </manifest>
-+      <fileset dir="${classes.dir}">
-+        <exclude name="**/tools/**"/>
-+        <exclude name="**/debugger/**"/>
-+        <exclude name="**/shell/**"/>
-+        <exclude name="**/jsc/**"/>
-+        <exclude name="**/idswitch/**"/>
-+        <exclude name="**/classfile/**"/>
++      <fileset dir="${classes}">
++        <exclude name="org/mozilla/javascript/engine/**"/>
 +      </fileset>
-+      <fileset dir="${basedir}/src" includes="**/*.properties"/>
++      <fileset dir="src">
++        <exclude name="**/*.java"/>
++        <exclude name="org/mozilla/javascript/engine/**"/>
++        <exclude name="META-INF/services/**"/>
++      </fileset>
 +    </jar>
-+  </target>
-+
-+  <target name="dist" depends="jar, small-jar">
-+    <mkdir dir="${dist.dir}/${dist.name}/lib"/>
-+    <copy file="${build.dir}/${rhino.jar}"
-+          tofile="${dist.dir}/${dist.name}/lib/${rhino.jar}"/>
-+    <copy file="${build.dir}/${small-rhino.jar}"
-+          tofile="${dist.dir}/${dist.name}/lib/${small-rhino.jar}"/>
-+    <copy file="LICENSE.txt"
-+          todir="${dist.dir}/${dist.name}"/>
-+    <copy file="README.md"
-+          todir="${dist.dir}/${dist.name}"/>
-+    <copy file="RELEASE-NOTES.md"
-+          todir="${dist.dir}/${dist.name}"/>
 +  </target>
 +
 +  <target name="clean">
 +    <delete dir="${build.dir}"/>
-+    <delete dir="${dist.dir}"/>
 +  </target>
 +
 +</project>
-+
-+</project>
-\ No newline at end of file
-diff -ruN a/b/rhino1.7.7.2/src/org/mozilla/javascript/DefiningClassLoader.java a/b/rhino1.7.7.2/src/org/mozilla/javascript/DefiningClassLoader.java
---- a/b/rhino1.7.7.2/src/org/mozilla/javascript/DefiningClassLoader.java	2026-10-31 20:42:49.607742394 -0500
-+++ a/b/rhino1.7.7.2/src/org/mozilla/javascript/DefiningClassLoader.java	2026-10-31 20:42:49.766998760 -0500
-@@ -4,6 +4,9 @@
- 
- package org.mozilla.javascript;
- 
-+import java.lang.reflect.Method;
-+import java.lang.reflect.InvocationTargetException;
-+
- /**
-  * Load generated classes.
-  *
-@@ -14,10 +17,30 @@
- {
-     public DefiningClassLoader() {
-         this.parentLoader = getClass().getClassLoader();
-+        init();
-     }
- 
-     public DefiningClassLoader(ClassLoader parentLoader) {
-         this.parentLoader = parentLoader;
-+        init();
-+    }
-+
-+    private void init() {
-+        this.contextLoader = null;
-+        if (method_getContextClassLoader != null) {
-+            try {
-+                this.contextLoader = (ClassLoader)
-+                    method_getContextClassLoader.invoke(
-+                        Thread.currentThread(),
-+                        ScriptRuntime.emptyArgs);
-+            } catch (IllegalAccessException ex) {
-+            } catch (InvocationTargetException ex) {
-+            } catch (SecurityException ex) {
-+            }
-+            if (this.contextLoader == this.parentLoader) {
-+                this.contextLoader = null;
-+            }
-+        }
-     }
- 
-     public Class<?> defineClass(String name, byte[] data) {
-@@ -38,10 +61,14 @@
-     {
-         Class<?> cl = findLoadedClass(name);
-         if (cl == null) {
--            if (parentLoader != null) {
--                cl = parentLoader.loadClass(name);
-+            if (contextLoader == null) {
-+                cl = loadFromParent(name);
-             } else {
--                cl = findSystemClass(name);
-+                try {
-+                    cl = loadFromParent(name);
-+                } catch (ClassNotFoundException ex) {
-+                    cl = contextLoader.loadClass(name);
-+                }
-             }
-         }
-         if (resolve) {
-@@ -50,5 +77,36 @@
-         return cl;
-     }
- 
-+    private Class loadFromParent(String name)
-+        throws ClassNotFoundException
-+    {
-+        if (parentLoader != null) {
-+            return parentLoader.loadClass(name);
-+        } else {
-+            return findSystemClass(name);
-+        }
-+    }
-+
-     private final ClassLoader parentLoader;
-+
-+    private ClassLoader contextLoader;
-+
-+    // We'd like to use "Thread.getContextClassLoader", but
-+    // that's only available on Java2.
-+    private static Method method_getContextClassLoader;
-+
-+    static {
-+        try {
-+            // Don't use "Thread.class": that performs the lookup
-+            // in the class initializer, which doesn't allow us to
-+            // catch possible security exceptions.
-+            Class threadClass = Class.forName("java.lang.Thread");
-+            method_getContextClassLoader =
-+                threadClass.getDeclaredMethod("getContextClassLoader",
-+                                               new Class[0]);
-+        } catch (ClassNotFoundException e) {
-+        } catch (NoSuchMethodException e) {
-+        } catch (SecurityException e) {
-+        }
-+    }
- }
-diff -ruN a/b/rhino1.7.7.2/src/org/mozilla/javascript/tools/debugger/Dim.java a/b/rhino1.7.7.2/src/org/mozilla/javascript/tools/debugger/Dim.java
---- a/b/rhino1.7.7.2/src/org/mozilla/javascript/tools/debugger/Dim.java	2026-10-31 20:42:49.648044642 -0500
-+++ a/b/rhino1.7.7.2/src/org/mozilla/javascript/tools/debugger/Dim.java	2026-10-31 20:42:49.791085088 -0500
-@@ -34,6 +34,7 @@
+diff -ruN -x build -x DefiningClassLoader.java a/b/rhino1.7.15.1/src/org/mozilla/javascript/tools/debugger/Dim.java b/b/rhino1.7.15.1/src/org/mozilla/javascript/tools/debugger/Dim.java
+--- a/b/rhino1.7.15.1/src/org/mozilla/javascript/tools/debugger/Dim.java	2026-11-06 14:50:16
++++ b/b/rhino1.7.15.1/src/org/mozilla/javascript/tools/debugger/Dim.java	2026-11-06 14:50:17
+@@ -53,6 +53,7 @@
      private static final int IPROXY_OBJECT_TO_STRING = 5;
      private static final int IPROXY_OBJECT_PROPERTY = 6;
      private static final int IPROXY_OBJECT_IDS = 7;
 +    private static final int IPROXY_EVAL_SCRIPT_WITH_RETURN = 8;
  
-     /**
-      * Interface to the debugger GUI.
-@@ -398,7 +399,7 @@
-      */
+     /** Interface to the debugger GUI. */
+     private GuiCallback callback;
+@@ -335,7 +336,7 @@
      private String getNormalizedUrl(DebuggableScript fnOrScript) {
          String url = fnOrScript.getSourceName();
--        if (url == null) { url = "<stdin>"; }
-+        if (url == null) { url = "document"; }
-         else {
+         if (url == null) {
+-            url = "<stdin>";
++            url = "document";
+         } else {
              // Not to produce window for eval from different lines,
              // strip line numbers, i.e. replace all #[0-9]+\(eval\) by
-@@ -587,6 +588,17 @@
+@@ -498,6 +499,17 @@
+         action.withContext();
      }
  
-     /**
++    /**
 +     * Evaluates the given script with scope and return value.
 +     */
 +    public Object evalScriptWithReturn(final String url, final String text, Scriptable scope) {
@@ -235,49 +112,46 @@ diff -ruN a/b/rhino1.7.7.2/src/org/mozilla/javascript/tools/debugger/Dim.java a/
 +        return contextFactory.call(action);
 +    }
 +
-+    /**
-      * Converts the given script object to a string.
-      */
+     /** Converts the given script object to a string. */
      public String objectToString(Object object) {
-@@ -931,6 +943,11 @@
+         DimIProxy action = new DimIProxy(this, IPROXY_OBJECT_TO_STRING);
+@@ -796,6 +808,9 @@
+         /** The Object[] result of the action. */
          private Object[] objectArrayResult;
  
-         /**
-+         * The Scriptable as arguments.
-+         */
++        /** The scope to evaluate in, for IPROXY_EVAL_SCRIPT_WITH_RETURN. */
 +        private Scriptable scope;
 +
-+        /**
-          * Creates a new DimIProxy.
-          */
+         /** Creates a new DimIProxy. */
          private DimIProxy(Dim dim, int type) {
-@@ -962,6 +979,20 @@
-                 }
-                 break;
- 
-+              case IPROXY_EVAL_SCRIPT_WITH_RETURN:
-+                if (this.scope != null) {
-+                    return cx.evaluateString(this.scope, text, url, 1, null);
-+                } else {
-+                    Scriptable sc = null;
-+                    if (dim.scopeProvider != null) {
-+                        sc = dim.scopeProvider.getScope();
-+                    }
-+                    if (sc == null) {
-+                        sc = new ImporterTopLevel(cx);
-+                    }
-+                    return cx.evaluateString(sc, text, url, 1, null);
-+                }
+             this.dim = dim;
+@@ -824,6 +839,20 @@
+                         cx.evaluateString(scope, text, url, 1, null);
+                     }
+                     break;
 +
-               case IPROXY_STRING_IS_COMPILABLE:
-                 booleanResult = cx.stringIsCompilableUnit(text);
-                 break;
-diff -ruN a/b/rhino1.7.7.2/src/org/mozilla/javascript/tools/debugger/GuiCallback.java a/b/rhino1.7.7.2/src/org/mozilla/javascript/tools/debugger/GuiCallback.java
---- a/b/rhino1.7.7.2/src/org/mozilla/javascript/tools/debugger/GuiCallback.java	2026-10-31 20:42:49.649184458 -0500
-+++ a/b/rhino1.7.7.2/src/org/mozilla/javascript/tools/debugger/GuiCallback.java	2026-10-31 20:42:49.791267690 -0500
++                case IPROXY_EVAL_SCRIPT_WITH_RETURN:
++                    if (this.scope != null) {
++                        return cx.evaluateString(this.scope, text, url, 1, null);
++                    } else {
++                        Scriptable sc = null;
++                        if (dim.scopeProvider != null) {
++                            sc = dim.scopeProvider.getScope();
++                        }
++                        if (sc == null) {
++                            sc = new ImporterTopLevel(cx);
++                        }
++                        return cx.evaluateString(sc, text, url, 1, null);
++                    }
+ 
+                 case IPROXY_STRING_IS_COMPILABLE:
+                     booleanResult = cx.stringIsCompilableUnit(text);
+diff -ruN -x build -x DefiningClassLoader.java a/b/rhino1.7.15.1/src/org/mozilla/javascript/tools/debugger/GuiCallback.java b/b/rhino1.7.15.1/src/org/mozilla/javascript/tools/debugger/GuiCallback.java
+--- a/b/rhino1.7.15.1/src/org/mozilla/javascript/tools/debugger/GuiCallback.java	2026-11-06 14:50:16
++++ b/b/rhino1.7.15.1/src/org/mozilla/javascript/tools/debugger/GuiCallback.java	2026-11-06 14:50:17
 @@ -23,6 +23,11 @@
-                         String threadTitle,
-                         String alertMessage);
+      */
+     boolean isGuiEventThread();
  
 +	/**
 +	 * Called when the interrupt loop has been exited.
@@ -285,55 +159,51 @@ diff -ruN a/b/rhino1.7.7.2/src/org/mozilla/javascript/tools/debugger/GuiCallback
 +	void exitInterrupt();
 +
      /**
-      * Returns whether the current thread is the GUI's event thread.
-      * This information is required to avoid blocking the event thread
-@@ -35,4 +40,4 @@
-      * is necessary when the GUI event thread itself has been stopped.
-      */
-     void dispatchNextGuiEvent() throws InterruptedException;
--}
-+}
-\ No newline at end of file
-diff -ruN a/b/rhino1.7.7.2/src/org/mozilla/javascript/tools/debugger/Main.java a/b/rhino1.7.7.2/src/org/mozilla/javascript/tools/debugger/Main.java
---- a/b/rhino1.7.7.2/src/org/mozilla/javascript/tools/debugger/Main.java	2026-10-31 20:42:49.648814653 -0500
-+++ a/b/rhino1.7.7.2/src/org/mozilla/javascript/tools/debugger/Main.java	2026-10-31 20:42:49.791202989 -0500
+      * Processes the next GUI event. This manual pumping of GUI events is necessary when the GUI
+      * event thread itself has been stopped.
+diff -ruN -x build -x DefiningClassLoader.java a/b/rhino1.7.15.1/src/org/mozilla/javascript/tools/debugger/Main.java b/b/rhino1.7.15.1/src/org/mozilla/javascript/tools/debugger/Main.java
+--- a/b/rhino1.7.15.1/src/org/mozilla/javascript/tools/debugger/Main.java	2026-11-06 14:50:16
++++ b/b/rhino1.7.15.1/src/org/mozilla/javascript/tools/debugger/Main.java	2026-11-06 14:50:17
 @@ -8,6 +8,7 @@
  
  import java.io.InputStream;
  import java.io.PrintStream;
 +import java.net.URL;
- 
  import javax.swing.JFrame;
+ import org.mozilla.javascript.Context;
+ import org.mozilla.javascript.ContextFactory;
+@@ -99,17 +100,26 @@
  
-@@ -126,7 +127,7 @@
-      * Console window.
-      */
+     /** Returns an {@link InputStream} for stdin from the debugger's internal Console window. */
      public InputStream getIn() {
 -        return debugGui.getConsole().getIn();
-+        return null;//return debugGui.getConsole().getIn();
++        if (debugGui != null && debugGui.getConsole() != null) {
++            return debugGui.getConsole().getIn();
++        }
++        return System.in;
      }
  
-     /**
-@@ -134,7 +135,7 @@
-      * Console window.
-      */
+     /** Returns a {@link PrintStream} for stdout to the debugger's internal Console window. */
      public PrintStream getOut() {
 -        return debugGui.getConsole().getOut();
-+        return null;//return debugGui.getConsole().getOut();
++        if (debugGui != null && debugGui.getConsole() != null) {
++            return debugGui.getConsole().getOut();
++        }
++        return System.out;
      }
  
-     /**
-@@ -142,7 +143,7 @@
-      * Console window.
-      */
+     /** Returns a {@link PrintStream} for stderr in the Debugger's internal Console window. */
      public PrintStream getErr() {
 -        return debugGui.getConsole().getErr();
-+        return null;//return debugGui.getConsole().getErr();
++        if (debugGui != null && debugGui.getConsole() != null) {
++            return debugGui.getConsole().getErr();
++        }
++        return System.err;
      }
  
-     /**
-@@ -349,6 +350,41 @@
-     {
+     /** Packs the debugger GUI frame. */
+@@ -275,6 +285,41 @@
+     public void contextReleased(Context cx) {
          throw new IllegalStateException();
      }
 +    
@@ -373,17 +243,17 @@ diff -ruN a/b/rhino1.7.7.2/src/org/mozilla/javascript/tools/debugger/Main.java a
 +	}
  
      /**
-      * Class to consolidate all internal implementations of interfaces
-@@ -408,4 +444,4 @@
+      * Class to consolidate all internal implementations of interfaces to avoid class generation
+@@ -323,4 +368,4 @@
              return scope;
          }
      }
 -}
 +}
 \ No newline at end of file
-diff -ruN a/b/rhino1.7.7.2/src/org/mozilla/javascript/tools/debugger/OfficeScriptInfo.java a/b/rhino1.7.7.2/src/org/mozilla/javascript/tools/debugger/OfficeScriptInfo.java
---- a/b/rhino1.7.7.2/src/org/mozilla/javascript/tools/debugger/OfficeScriptInfo.java	1969-12-31 19:00:00.000000000 -0500
-+++ a/b/rhino1.7.7.2/src/org/mozilla/javascript/tools/debugger/OfficeScriptInfo.java	2026-10-31 20:42:49.792418706 -0500
+diff -ruN -x build -x DefiningClassLoader.java a/b/rhino1.7.15.1/src/org/mozilla/javascript/tools/debugger/OfficeScriptInfo.java b/b/rhino1.7.15.1/src/org/mozilla/javascript/tools/debugger/OfficeScriptInfo.java
+--- a/b/rhino1.7.15.1/src/org/mozilla/javascript/tools/debugger/OfficeScriptInfo.java	1969-12-31 19:00:00
++++ b/b/rhino1.7.15.1/src/org/mozilla/javascript/tools/debugger/OfficeScriptInfo.java	2026-11-06 14:50:17
 @@ -0,0 +1,122 @@
 +/**************************************************************
 + * 
@@ -507,32 +377,31 @@ diff -ruN a/b/rhino1.7.7.2/src/org/mozilla/javascript/tools/debugger/OfficeScrip
 +        Runnable closeCallback;
 +    }
 +}
-diff -ruN a/b/rhino1.7.7.2/src/org/mozilla/javascript/tools/debugger/SwingGui.java a/b/rhino1.7.7.2/src/org/mozilla/javascript/tools/debugger/SwingGui.java
---- a/b/rhino1.7.7.2/src/org/mozilla/javascript/tools/debugger/SwingGui.java	2026-10-31 20:42:49.648303446 -0500
-+++ a/b/rhino1.7.7.2/src/org/mozilla/javascript/tools/debugger/SwingGui.java	2026-10-31 20:42:49.792500007 -0500
-@@ -32,6 +32,8 @@
- import java.awt.Toolkit;
- import java.awt.event.*;
- 
+diff -ruN -x build -x DefiningClassLoader.java a/b/rhino1.7.15.1/src/org/mozilla/javascript/tools/debugger/SwingGui.java b/b/rhino1.7.15.1/src/org/mozilla/javascript/tools/debugger/SwingGui.java
+--- a/b/rhino1.7.15.1/src/org/mozilla/javascript/tools/debugger/SwingGui.java	2026-11-06 14:50:16
++++ b/b/rhino1.7.15.1/src/org/mozilla/javascript/tools/debugger/SwingGui.java	2026-11-06 14:50:17
+@@ -54,6 +54,7 @@
+ import java.util.Comparator;
+ import java.util.EventObject;
+ import java.util.HashMap;
 +import java.net.URL;
-+
  import java.util.List;
- import java.util.ArrayList;
- import java.util.Arrays;
-@@ -47,6 +49,7 @@
- import java.lang.reflect.Method;
- 
+ import java.util.Map;
+ import java.util.Properties;
+@@ -108,6 +109,7 @@
+ import javax.swing.tree.DefaultTreeCellRenderer;
+ import javax.swing.tree.TreePath;
  import org.mozilla.javascript.Kit;
 +import org.mozilla.javascript.Scriptable;
  import org.mozilla.javascript.SecurityUtilities;
+ import org.mozilla.javascript.tools.debugger.treetable.JTreeTable;
+ import org.mozilla.javascript.tools.debugger.treetable.TreeTableModel;
+@@ -116,7 +118,138 @@
  
- import org.mozilla.javascript.tools.shell.ConsoleTextArea;
-@@ -59,6 +62,138 @@
-  * GUI for the Rhino debugger.
-  */
+ /** GUI for the Rhino debugger. */
  public class SwingGui extends JFrame implements GuiCallback {
 +    private boolean sourceEditingEnabled = true;
-+
+ 
 +    public boolean isSourceEditingEnabled() {
 +        return sourceEditingEnabled;
 +    }
@@ -663,20 +532,20 @@ diff -ruN a/b/rhino1.7.7.2/src/org/mozilla/javascript/tools/debugger/SwingGui.ja
 +        return null;
 +    }
 +
+     /** Serializable magic number. */
+     private static final long serialVersionUID = -8217029773456711621L;
  
-     /**
-      * Serializable magic number.
-@@ -2052,7 +2187,7 @@
- /**
-  * An internal frame for script files.
-  */
+@@ -1880,7 +2013,7 @@
+ }
+ 
+ /** An internal frame for script files. */
 -class FileWindow extends JInternalFrame implements ActionListener {
-+class FileWindow extends JInternalFrame implements ActionListener, javax.swing.event.DocumentListener {
++class FileWindow extends JInternalFrame implements ActionListener, DocumentListener {
  
-     /**
-      * Serializable magic number.
-@@ -2089,6 +2224,83 @@
-      */
+     /** Serializable magic number. */
+     private static final long serialVersionUID = -6212382604952082370L;
+@@ -1903,6 +2036,83 @@
+     /** The current offset position. */
      int currentPos;
  
 +    boolean isModified = false;
@@ -756,11 +625,11 @@ diff -ruN a/b/rhino1.7.7.2/src/org/mozilla/javascript/tools/debugger/SwingGui.ja
 +        return debugGui.isSourceEditingEnabled();
 +    }
 +
-     /**
-      * Loads the file.
-      */
-@@ -3546,4 +3758,5 @@
- 
+     /** Loads the file. */
+     void load() {
+         String url = getUrl();
+@@ -3170,4 +3380,5 @@
+                 throw new IllegalArgumentException(String.valueOf(type));
          }
      }
 +

@@ -1,0 +1,62 @@
+--- a/b/rhino1.7.15.1/src/org/mozilla/javascript/DefiningClassLoader.java	2026-11-06 14:50:16
++++ b/b/rhino1.7.15.1/src/org/mozilla/javascript/DefiningClassLoader.java	2026-11-06 14:50:17
+@@ -12,12 +12,26 @@
+ public class DefiningClassLoader extends ClassLoader implements GeneratedClassLoader {
+     public DefiningClassLoader() {
+         this.parentLoader = getClass().getClassLoader();
++        init();
+     }
+ 
+     public DefiningClassLoader(ClassLoader parentLoader) {
+         this.parentLoader = parentLoader;
++        init();
+     }
+ 
++    private void init() {
++        try {
++            this.contextLoader = Thread.currentThread().getContextClassLoader();
++        } catch (SecurityException ex) {
++            // No access to the context class loader, use the parent only.
++            this.contextLoader = null;
++        }
++        if (this.contextLoader == this.parentLoader) {
++            this.contextLoader = null;
++        }
++    }
++
+     @Override
+     public Class<?> defineClass(String name, byte[] data) {
+         // Use our own protection domain for the generated classes.
+@@ -36,10 +50,14 @@
+     public Class<?> loadClass(String name, boolean resolve) throws ClassNotFoundException {
+         Class<?> cl = findLoadedClass(name);
+         if (cl == null) {
+-            if (parentLoader != null) {
+-                cl = parentLoader.loadClass(name);
++            if (contextLoader == null) {
++                cl = loadFromParent(name);
+             } else {
+-                cl = findSystemClass(name);
++                try {
++                    cl = loadFromParent(name);
++                } catch (ClassNotFoundException ex) {
++                    cl = contextLoader.loadClass(name);
++                }
+             }
+         }
+         if (resolve) {
+@@ -48,5 +66,14 @@
+         return cl;
+     }
+ 
++    private Class<?> loadFromParent(String name) throws ClassNotFoundException {
++        if (parentLoader != null) {
++            return parentLoader.loadClass(name);
++        }
++        return findSystemClass(name);
++    }
++
+     private final ClassLoader parentLoader;
++
++    private ClassLoader contextLoader;
+ }
