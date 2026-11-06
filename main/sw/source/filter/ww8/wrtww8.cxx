@@ -112,6 +112,7 @@
 #include "numrule.hxx"
 #include <boost/scoped_ptr.hpp>
 #include <drawdoc.hxx>
+#include <memory>
 
 using namespace sw::util;
 using namespace sw::types;
@@ -3495,7 +3496,7 @@ void WW8Export::PrepareStorage()
         {
             if ( SvtFilterOptions::Get()->IsEnableWordPreview() )
             {
-                ::boost::shared_ptr<GDIMetaFile> pMetaFile =
+                ::std::shared_ptr<GDIMetaFile> pMetaFile =
                     pDocShell->GetPreviewMetaFile (sal_False);
                 uno::Sequence<sal_uInt8> metaFile(
                     sfx2::convertMetaFile(pMetaFile.get()));

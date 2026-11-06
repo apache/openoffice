@@ -45,7 +45,7 @@
 #include <sfx2/app.hxx>
 #include <basic/basmgr.hxx>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 //........................................................................
 namespace svxform
@@ -386,7 +386,7 @@ namespace svxform
 
             virtual ~IScript() { }
         };
-        typedef ::boost::shared_ptr< IScript >  PScript;
+        typedef ::std::shared_ptr< IScript >  PScript;
 
         //................................................................
         //. NewStyleUNOScript

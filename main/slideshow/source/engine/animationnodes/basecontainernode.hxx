@@ -23,6 +23,7 @@
 #ifndef INCLUDED_SLIDESHOW_BASECONTAINERNODE_HXX
 #define INCLUDED_SLIDESHOW_BASECONTAINERNODE_HXX
 
+#include <memory>
 #include "basenode.hxx"
 
 namespace slideshow {
@@ -37,7 +38,7 @@ public:
     BaseContainerNode(
         ::com::sun::star::uno::Reference<
         ::com::sun::star::animations::XAnimationNode> const& xNode,
-        ::boost::shared_ptr<BaseContainerNode> const& pParent,
+        ::std::shared_ptr<BaseContainerNode> const& pParent,
         NodeContext const& rContext );
 
     /** Add given child node to this container
@@ -92,7 +93,7 @@ private:
     const bool          mbDurationIndefinite;
 };
 
-typedef ::boost::shared_ptr< BaseContainerNode > BaseContainerNodeSharedPtr;
+typedef ::std::shared_ptr< BaseContainerNode > BaseContainerNodeSharedPtr;
 
 } // namespace interface
 } // namespace presentation

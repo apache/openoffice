@@ -72,7 +72,7 @@ tDoubleVectorPair
 }
 
 
-class isValid : public ::std::binary_function< double, double, bool >
+class isValid 
 {
 public:
     inline bool operator()( double x, double y )
@@ -83,7 +83,7 @@ public:
     }
 };
 
-class isValidAndXPositive : public ::std::binary_function< double, double, bool >
+class isValidAndXPositive 
 {
 public:
     inline bool operator()( double x, double y )
@@ -95,7 +95,7 @@ public:
     }
 };
 
-class isValidAndYPositive : public ::std::binary_function< double, double, bool >
+class isValidAndYPositive 
 {
 public:
     inline bool operator()( double x, double y )
@@ -107,7 +107,7 @@ public:
     }
 };
 
-class isValidAndBothPositive : public ::std::binary_function< double, double, bool >
+class isValidAndBothPositive 
 {
 public:
     inline bool operator()( double x, double y )

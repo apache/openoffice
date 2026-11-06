@@ -24,7 +24,7 @@
 #ifndef INCLUDED_WW8_BIN_TABLE_HXX
 #define INCLUDED_WW8_BIN_TABLE_HXX
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <string>
 #include <WW8FKP.hxx>
 
@@ -46,7 +46,7 @@ public:
     /**
        Shared pointer to a bintable.
      */
-    typedef boost::shared_ptr<WW8BinTable> Pointer_t;
+    typedef std::shared_ptr<WW8BinTable> Pointer_t;
 
     /**
        Return count of entries.

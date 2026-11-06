@@ -27,7 +27,7 @@
 #include <WW8StructBase.hxx>
 #include <WW8ResourceModelImpl.hxx>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <vector>
 
 namespace writerfilter {
@@ -73,7 +73,7 @@ class WW8Sttbf : public WW8StructBase
     sal_uInt32 getExtraOffset(sal_uInt32 nPos) const;
 
 public:
-    typedef boost::shared_ptr<WW8Sttbf> Pointer_t;
+    typedef std::shared_ptr<WW8Sttbf> Pointer_t;
 
     WW8Sttbf(WW8Stream & rStream, sal_uInt32 nOffset, sal_uInt32 nCount);
 

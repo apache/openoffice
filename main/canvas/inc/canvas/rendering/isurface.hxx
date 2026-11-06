@@ -26,7 +26,7 @@
 
 #include <sal/types.h>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 
 namespace basegfx
@@ -78,7 +78,7 @@ namespace canvas
 		virtual ::basegfx::B2IVector getSize() = 0;
 	};
 
-    typedef ::boost::shared_ptr< ISurface > ISurfaceSharedPtr;
+    typedef ::std::shared_ptr< ISurface > ISurfaceSharedPtr;
 }
 
 #endif /* INCLUDED_CANVAS_ISURFACE_HXX */

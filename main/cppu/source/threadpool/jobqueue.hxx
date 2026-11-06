@@ -30,7 +30,7 @@
 #include <osl/conditn.h>
 #include <osl/mutex.hxx>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 namespace cppu_threadpool
 {
@@ -47,7 +47,7 @@ namespace cppu_threadpool
 	typedef	::std::list	< sal_Int64 > CallStackList;
 
 	class DisposedCallerAdmin;
-	typedef boost::shared_ptr<DisposedCallerAdmin> DisposedCallerAdminHolder;
+	typedef std::shared_ptr<DisposedCallerAdmin> DisposedCallerAdminHolder;
 
 	class JobQueue
 	{

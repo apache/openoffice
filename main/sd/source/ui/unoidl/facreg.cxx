@@ -39,7 +39,7 @@
 #endif
 #include <comphelper/stl_types.hxx>
 #include <unordered_map>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 using namespace rtl;
 using namespace com::sun::star;
@@ -208,8 +208,8 @@ typedef ::std::unordered_map<OUString, FactoryId, comphelper::UStringHash, comph
 
 
 namespace {
-static ::boost::shared_ptr<FactoryMap> spFactoryMap;
-::boost::shared_ptr<FactoryMap> GetFactoryMap (void)
+static ::std::shared_ptr<FactoryMap> spFactoryMap;
+::std::shared_ptr<FactoryMap> GetFactoryMap (void)
 {
     if (spFactoryMap.get() == NULL)
     {
@@ -266,7 +266,7 @@ SAL_DLLPUBLIC_EXPORT void * SAL_CALL component_getFactory(
 		uno::Reference<lang::XSingleServiceFactory> xFactory;
         uno::Reference<lang::XSingleComponentFactory> xComponentFactory;
 
-        ::boost::shared_ptr<FactoryMap> pFactoryMap (GetFactoryMap());
+        ::std::shared_ptr<FactoryMap> pFactoryMap (GetFactoryMap());
         OUString sImplementationName (OUString::createFromAscii(pImplName));
         FactoryMap::const_iterator iFactory (pFactoryMap->find(sImplementationName));
         if (iFactory != pFactoryMap->end())

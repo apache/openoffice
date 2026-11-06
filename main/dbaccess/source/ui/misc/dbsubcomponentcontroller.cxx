@@ -249,7 +249,7 @@ namespace dbaui
                 aTypes.getConstArray(),
                 aTypes.getConstArray() + aTypes.getLength(),
                 aStrippedTypes.getArray(),
-                ::std::bind2nd( ::std::equal_to< Type >(), XScriptInvocationContext::static_type() )
+				[XScriptInvocationContext::static_type()](auto& _x) { return ::std::equal_to< Type >()(_x, XScriptInvocationContext::static_type()); }
             );
             aTypes = aStrippedTypes;
         }

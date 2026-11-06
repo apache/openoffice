@@ -25,6 +25,7 @@
 #define _SVX_FORMAT_CELLS_DLG_HXX
 
 #include <sfx2/tabdlg.hxx>
+#include <memory>
 
 class XColorList;
 class XGradientList;
@@ -32,10 +33,10 @@ class XHatchList;
 class XBitmapList;
 class SdrModel;
 
-typedef ::boost::shared_ptr< XColorList > XColorListSharedPtr;
-typedef ::boost::shared_ptr< XHatchList > XHatchListSharedPtr;
-typedef ::boost::shared_ptr< XGradientList > XGradientListSharedPtr;
-typedef ::boost::shared_ptr< XBitmapList > XBitmapListSharedPtr;
+typedef ::std::shared_ptr< XColorList > XColorListSharedPtr;
+typedef ::std::shared_ptr< XHatchList > XHatchListSharedPtr;
+typedef ::std::shared_ptr< XGradientList > XGradientListSharedPtr;
+typedef ::std::shared_ptr< XBitmapList > XBitmapListSharedPtr;
 
 class SvxFormatCellsDialog : public SfxTabDialog
 {

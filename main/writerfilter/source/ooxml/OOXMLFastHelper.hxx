@@ -25,6 +25,7 @@
 
 #include <iostream>
 #include <resourcemodel/QNameToString.hxx>
+#include <memory>
 #include "OOXMLFastContextHandler.hxx"
 #include "ooxmlLoggers.hxx"
 namespace writerfilter {
@@ -145,7 +146,7 @@ OOXMLFastHelper<T>::createAndSetParentRef
     debug_logger->attribute("type", fastTokenToId(nToken));
 #endif
 
-    boost::shared_ptr<OOXMLFastContextHandler> pTmp(new T(pHandler));
+    std::shared_ptr<OOXMLFastContextHandler> pTmp(new T(pHandler));
 
     uno::Reference<XFastContextHandler> xChild =
         pTmp->createFastChildContext(nToken, Attribs);

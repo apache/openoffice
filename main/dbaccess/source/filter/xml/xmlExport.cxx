@@ -688,7 +688,7 @@ void ODBExport::exportDataSourceSettings()
 		else
 		{
 			// the not-that-simple case, we need to iterate through the sequence elements
-			::std::auto_ptr<IIterator> pSequenceIterator;
+			::std::unique_ptr<IIterator> pSequenceIterator;
 			switch (aSimpleType.getTypeClass())
 			{
 				case TypeClass_STRING:
@@ -809,7 +809,7 @@ void ODBExport::exportCollection(const Reference< XNameAccess >& _xCollection
 {
 	if ( _xCollection.is() )
 	{
-		::std::auto_ptr<SvXMLElementExport> pComponents;
+		::std::unique_ptr<SvXMLElementExport> pComponents;
 		if ( _bExportContext )
 			pComponents.reset( new SvXMLElementExport(*this,XML_NAMESPACE_DB, _eComponents, sal_True, sal_True));
 		Sequence< ::rtl::OUString> aSeq = _xCollection->getElementNames();
@@ -1088,7 +1088,7 @@ void ODBExport::exportQueries(sal_Bool _bExportContext)
 		    Reference< XNameAccess > xCollection = xSup->getQueryDefinitions();
 		    if ( xCollection.is() && xCollection->hasElements() )
 		    {
-			    ::std::auto_ptr< ::comphelper::mem_fun1_t<ODBExport,XPropertySet* > > pMemFunc;
+			    ::std::unique_ptr< ::comphelper::mem_fun1_t<ODBExport,XPropertySet* > > pMemFunc;
 			    if ( _bExportContext )
 				    pMemFunc.reset( new ::comphelper::mem_fun1_t<ODBExport,XPropertySet* >(&ODBExport::exportQuery) );
 			    else
@@ -1108,7 +1108,7 @@ void ODBExport::exportTables(sal_Bool _bExportContext)
 		Reference< XNameAccess > xCollection = xSup->getTables();
 		if ( xCollection.is() && xCollection->hasElements() )
 		{
-			::std::auto_ptr< ::comphelper::mem_fun1_t<ODBExport,XPropertySet* > > pMemFunc;
+			::std::unique_ptr< ::comphelper::mem_fun1_t<ODBExport,XPropertySet* > > pMemFunc;
 			if ( _bExportContext )
 				pMemFunc.reset( new ::comphelper::mem_fun1_t<ODBExport,XPropertySet* >(&ODBExport::exportTable) );
 			else

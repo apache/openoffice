@@ -28,11 +28,12 @@
 #include <vcl/window.hxx>
 
 #include <algorithm>
+#include <memory>
 
 namespace sd { namespace sidebar {
 
 SidebarShellManager::SidebarShellManager (
-    const ::boost::shared_ptr<ViewShellManager>& rpViewShellManager,
+    const ::std::shared_ptr<ViewShellManager>& rpViewShellManager,
     const ViewShell& rViewShell)
     : mpViewShellManager(rpViewShellManager),
       mrViewShell(rViewShell),

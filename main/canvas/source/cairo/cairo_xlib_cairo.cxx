@@ -41,6 +41,7 @@ namespace cairo
 
 #include <cairo-xlib.h>
 #include <cairo-xlib-xrender.h>
+#include <memory>
 
     // TODO(F3): svp headless case!
 
@@ -252,7 +253,7 @@ namespace cairo
                                     &cairo_surface_destroy )));
 	}
 
-    boost::shared_ptr<VirtualDevice> X11Surface::createVirtualDevice() const
+    std::shared_ptr<VirtualDevice> X11Surface::createVirtualDevice() const
     {
 		SystemGraphicsData aSystemGraphicsData;
 
@@ -260,7 +261,7 @@ namespace cairo
 		aSystemGraphicsData.hDrawable = getDrawable();
 		aSystemGraphicsData.pRenderFormat = getRenderFormat();
 
-		return boost::shared_ptr<VirtualDevice>(
+		return std::shared_ptr<VirtualDevice>(
             new VirtualDevice( &aSystemGraphicsData, getDepth() ));
     }
 

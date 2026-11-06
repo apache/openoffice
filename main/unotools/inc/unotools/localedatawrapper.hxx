@@ -32,7 +32,7 @@
 #include "unotools/unotoolsdllapi.h"
 
 #ifndef BOOST_SHARED_PTR_HPP_INCLUDED
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #endif
 
 
@@ -66,7 +66,7 @@ class UNOTOOLS_DLLPUBLIC LocaleDataWrapper
     ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >    xSMgr;
     ::com::sun::star::uno::Reference< ::com::sun::star::i18n::XLocaleData2 >            xLD;
     ::com::sun::star::lang::Locale                                                      aLocale;
-    ::boost::shared_ptr< ::com::sun::star::i18n::Calendar >                             xDefaultCalendar;
+    ::std::shared_ptr< ::com::sun::star::i18n::Calendar >                             xDefaultCalendar;
     ::com::sun::star::i18n::LocaleDataItem                                              aLocaleDataItem;
     ::com::sun::star::uno::Sequence< ::rtl::OUString >                                  aReservedWordSeq;
     ::com::sun::star::uno::Sequence< sal_Int32 >                                        aGrouping;
@@ -176,7 +176,7 @@ public:
 			MeasurementSystem	mapMeasurementStringToEnum( const String& rMS ) const;
 
     /// Convenience method to obtain the default calendar.
-    const ::boost::shared_ptr< ::com::sun::star::i18n::Calendar > getDefaultCalendar() const;
+    const ::std::shared_ptr< ::com::sun::star::i18n::Calendar > getDefaultCalendar() const;
 
     /// Convenience method to obtain the day names of the default calendar.
     const ::com::sun::star::uno::Sequence< ::com::sun::star::i18n::CalendarItem > getDefaultCalendarDays() const;

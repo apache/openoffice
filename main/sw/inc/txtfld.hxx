@@ -27,7 +27,7 @@
 #include <tools/string.hxx>
 #include <pam.hxx>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 class SwTxtNode;
 
@@ -75,7 +75,7 @@ public:
 
     // return text selection for the given field
     static void GetPamForTxtFld( const SwTxtFld& rTxtFld,
-                                 boost::shared_ptr< SwPaM >& rPamForTxtFld );
+                                 std::shared_ptr< SwPaM >& rPamForTxtFld );
 
 };
 

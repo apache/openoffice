@@ -188,7 +188,7 @@ protected:
 
 private:
     // members ----------------------------------------------------------------
-	::std::auto_ptr< AccessibleBrowseBoxImpl > m_pImpl;
+	::std::unique_ptr< AccessibleBrowseBoxImpl > m_pImpl;
 };
 
 // ============================================================================

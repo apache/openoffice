@@ -101,16 +101,7 @@ using ::com::sun::star::ucb::IOErrorCode_NOT_EXISTING_PATH;
 extern "C" void SAL_CALL createRegistryInfo_ODatabaseContext()
 {
 	static ::dba::OLegacySingletonRegistration< ::dbaccess::ODatabaseContext > aODatabaseContext_AutoRegistration;
-}
-
-//........................................................................
-namespace dbaccess
-{
-//........................................................................
-
-    // .............................................................................
-        typedef ::cppu::WeakImplHelper1 <   XTerminateListener
-                                        >   DatabaseDocumentLoader_Base;
+   DatabaseDocumentLoader_Base;
         class DatabaseDocumentLoader : public DatabaseDocumentLoader_Base
         {
         private:
@@ -149,7 +140,7 @@ namespace dbaccess
             }
         }
 
-        struct TerminateFunctor : ::std::unary_function<ODatabaseModelImpl* , void>
+        struct TerminateFunctor
         {
             void operator()( const ODatabaseModelImpl* _pModelImpl ) const
             {

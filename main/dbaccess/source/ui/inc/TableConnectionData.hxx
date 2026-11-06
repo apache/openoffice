@@ -34,7 +34,7 @@
 #ifndef _STRING_HXX
 #include <tools/string.hxx>
 #endif
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 namespace dbaui
 {
@@ -107,7 +107,7 @@ namespace dbaui
 		virtual sal_Bool Update(){ return sal_True; }
 	};
 
-    typedef ::std::vector< ::boost::shared_ptr<OTableConnectionData> >  TTableConnectionData;
+    typedef ::std::vector< ::std::shared_ptr<OTableConnectionData> >  TTableConnectionData;
 
 }
 #endif // DBAUI_TABLECONNECTIONDATA_HXX

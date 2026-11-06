@@ -587,8 +587,7 @@ sal_Bool SvXMLImportPropertyMapper::_FillPropertySet(
 typedef pair<const OUString*, const Any* > PropertyPair;
 typedef vector<PropertyPair> PropertyPairs;
 
-struct PropertyPairLessFunctor :
-	public binary_function<PropertyPair, PropertyPair, bool>
+struct PropertyPairLessFunctor
 {
 	bool operator()( const PropertyPair& a, const PropertyPair& b ) const
 	{

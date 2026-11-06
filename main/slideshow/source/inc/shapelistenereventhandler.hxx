@@ -25,7 +25,7 @@
 #define INCLUDED_SLIDESHOW_SHAPELISTENEREVENTHANDLER_HXX
 
 #include <com/sun/star/uno/Reference.hxx>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 namespace com { namespace sun { namespace star { namespace drawing
 {
@@ -63,7 +63,7 @@ namespace slideshow
                                              ::com::sun::star::drawing::XShape>&                   xShape ) = 0;
         };
 
-        typedef ::boost::shared_ptr< ShapeListenerEventHandler > ShapeListenerEventHandlerSharedPtr;
+        typedef ::std::shared_ptr< ShapeListenerEventHandler > ShapeListenerEventHandlerSharedPtr;
 
     }
 }

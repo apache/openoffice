@@ -29,7 +29,7 @@
 #include "oox/helper/propertymap.hxx"
 #include "oox/drawingml/color.hxx"
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <boost/optional.hpp>
 #include <vector>
 #include <map>
@@ -47,7 +47,7 @@ public:
 	std::vector< TableRow >& getTableRows() { return mvTableRows; };
 
 	rtl::OUString&						getStyleId(){ return maStyleId; };
-	boost::shared_ptr< TableStyle >&	getTableStyle(){ return mpTableStyle; };
+	std::shared_ptr< TableStyle >&	getTableStyle(){ return mpTableStyle; };
 	sal_Bool&							isRtl(){ return mbRtl; };
 	sal_Bool&							isFirstRow(){ return mbFirstRow; };
 	sal_Bool&							isFirstCol(){ return mbFirstCol; };
@@ -65,7 +65,7 @@ private:
 	const TableStyle&					getUsedTableStyle( const ::oox::core::XmlFilterBase& rFilterBase,  sal_Bool &isCreateTabStyle);
 
 	rtl::OUString						maStyleId;				// either StyleId is available
-	boost::shared_ptr< TableStyle >		mpTableStyle;			// or the complete TableStyle
+	std::shared_ptr< TableStyle >		mpTableStyle;			// or the complete TableStyle
 	std::vector< sal_Int32 >			mvTableGrid;
 	std::vector< TableRow >				mvTableRows;
 

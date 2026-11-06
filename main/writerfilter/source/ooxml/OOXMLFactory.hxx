@@ -25,7 +25,7 @@
 #define INCLUDED_OOXML_FACTORY_HXX
 
 #include <unordered_map>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 #ifndef INCLUDED_WW8_RESOURCE_MODEL_HXX
 #include <resourcemodel/WW8ResourceModel.hxx>
@@ -74,13 +74,13 @@ struct AttributeInfo
     AttributeInfo();
 };
 
-typedef unordered_map<sal_Int32, AttributeInfo, TokenHash> AttributeToResourceMap;
-typedef boost::shared_ptr<AttributeToResourceMap> AttributeToResourceMapPointer;
-typedef unordered_map<Id, AttributeToResourceMapPointer> AttributesMap;
+typedef std::unordered_map<sal_Int32, AttributeInfo, TokenHash> AttributeToResourceMap;
+typedef std::shared_ptr<AttributeToResourceMap> AttributeToResourceMapPointer;
+typedef std::unordered_map<Id, AttributeToResourceMapPointer> AttributesMap;
 
-typedef unordered_map<rtl::OUString, sal_Int32, ::rtl::OUStringHash> ListValueMap;
-typedef boost::shared_ptr<ListValueMap> ListValueMapPointer;
-typedef unordered_map<Id, ListValueMapPointer> ListValuesMap;
+typedef std::unordered_map<rtl::OUString, sal_Int32, ::rtl::OUStringHash> ListValueMap;
+typedef std::shared_ptr<ListValueMap> ListValueMapPointer;
+typedef std::unordered_map<Id, ListValueMapPointer> ListValuesMap;
 
 struct CreateElement
 {
@@ -91,19 +91,19 @@ struct CreateElement
     CreateElement();
 };
 
-typedef unordered_map<sal_Int32, CreateElement, TokenHash> CreateElementMap;
-typedef boost::shared_ptr<CreateElementMap> CreateElementMapPointer;
-typedef unordered_map<Id, CreateElementMapPointer> CreateElementsMap;
-typedef unordered_map<Id, string> IdToStringMap;
-typedef boost::shared_ptr<IdToStringMap> IdToStringMapPointer;
+typedef std::unordered_map<sal_Int32, CreateElement, TokenHash> CreateElementMap;
+typedef std::shared_ptr<CreateElementMap> CreateElementMapPointer;
+typedef std::unordered_map<Id, CreateElementMapPointer> CreateElementsMap;
+typedef std::unordered_map<Id, string> IdToStringMap;
+typedef std::shared_ptr<IdToStringMap> IdToStringMapPointer;
 
-typedef unordered_map<Id, sal_Int32> TokenToIdMap;
-typedef boost::shared_ptr<TokenToIdMap> TokenToIdMapPointer;
-typedef unordered_map<Id, TokenToIdMapPointer> TokenToIdsMap;
+typedef std::unordered_map<Id, sal_Int32> TokenToIdMap;
+typedef std::shared_ptr<TokenToIdMap> TokenToIdMapPointer;
+typedef std::unordered_map<Id, TokenToIdMapPointer> TokenToIdsMap;
 
 class OOXMLFactory_ns {
 public:
-    typedef boost::shared_ptr<OOXMLFactory_ns> Pointer_t;
+    typedef std::shared_ptr<OOXMLFactory_ns> Pointer_t;
 
     virtual void startAction(OOXMLFastContextHandler * pHandler);
     virtual void charactersAction(OOXMLFastContextHandler * pHandler, const ::rtl::OUString & rString);
@@ -136,7 +136,7 @@ protected:
 class OOXMLFactory
 {
 public:
-    typedef boost::shared_ptr<OOXMLFactory> Pointer_t;
+    typedef std::shared_ptr<OOXMLFactory> Pointer_t;
 
     static Pointer_t getInstance();
 

@@ -39,6 +39,7 @@
 
 #include <toolkit/awt/vclxdevice.hxx>
 #include <sfx2/viewfrm.hxx>
+#include <memory>
 
 using namespace ::com::sun::star;
 using namespace ::com::sun::star::uno;
@@ -161,7 +162,7 @@ void CenterViewFocusModule::HandleNewView (
                 xTunnel->getSomething(ViewShellWrapper::getUnoTunnelId()));
             if (pViewShellWrapper != NULL)
             {
-                ::boost::shared_ptr<ViewShell> pViewShell = pViewShellWrapper->GetViewShell();
+                ::std::shared_ptr<ViewShell> pViewShell = pViewShellWrapper->GetViewShell();
                 if (pViewShell.get() != NULL)
                     mpBase->GetViewShellManager()->MoveToTop(*pViewShell);
             }

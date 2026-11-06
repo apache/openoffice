@@ -34,7 +34,7 @@
 using namespace connectivity;
 //------------------------------------------------------------------
 /// binary_function Functor object for class OSortIndex::TIntValuePairVector::value_type returntype is bool
-struct TKeyValueFunc : ::std::binary_function<OSortIndex::TIntValuePairVector::value_type,OSortIndex::TIntValuePairVector::value_type,bool>
+struct TKeyValueFunc
 {
 	OSortIndex* pIndex;
 

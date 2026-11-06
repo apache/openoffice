@@ -351,7 +351,7 @@ namespace dbtools
             sSql += ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(" FROM x WHERE "));
             sSql += sField;
             sSql += _rPredicateValue;
-            ::std::auto_ptr<OSQLParseNode> pParseNode( const_cast< OSQLParser& >( m_aParser ).parseTree( sError, sSql, sal_True ) );
+            ::std::unique_ptr<OSQLParseNode> pParseNode( const_cast< OSQLParser& >( m_aParser ).parseTree( sError, sSql, sal_True ) );
             nType = DataType::DOUBLE;
             if ( pParseNode.get() )
             {
@@ -389,7 +389,7 @@ namespace dbtools
         ::rtl::OUString sReturn;
         if ( pParseNode )
 		{
-            ::std::auto_ptr<OSQLParseNode> pTemp(pParseNode);
+            ::std::unique_ptr<OSQLParseNode> pTemp(pParseNode);
 			OSQLParseNode* pOdbcSpec = pParseNode->getByRule( OSQLParseNode::odbc_fct_spec );
 			if ( pOdbcSpec )
 			{

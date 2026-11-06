@@ -71,7 +71,7 @@
 
 using namespace com::sun::star;
 using namespace formula;
-using ::std::auto_ptr;
+using ::std::unique_ptr;
 
 #define ADDIN_MAXSTRLEN 256
 

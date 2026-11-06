@@ -39,7 +39,7 @@
 #include <cppuhelper/implbase1.hxx>
 #include <cppuhelper/weakref.hxx>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <map>
 
 //........................................................................
@@ -69,7 +69,7 @@ namespace res
 	//====================================================================
     typedef ::std::pair< ::rtl::OUString, Locale >  ResourceBundleDescriptor;
 
-    struct ResourceBundleDescriptorLess : public ::std::binary_function< ResourceBundleDescriptor, ResourceBundleDescriptor, bool >
+    struct ResourceBundleDescriptorLess 
     {
         bool operator()( const ResourceBundleDescriptor& _lhs, const ResourceBundleDescriptor& _rhs ) const
         {
@@ -189,7 +189,7 @@ namespace res
     class OpenOfficeResourceBundle : public OpenOfficeResourceBundle_Base
     {
     private:
-        typedef ::boost::shared_ptr< IResourceType >            ResourceTypePtr;
+        typedef ::std::shared_ptr< IResourceType >            ResourceTypePtr;
         typedef ::std::map< ::rtl::OUString, ResourceTypePtr >  ResourceTypes;
 
         ::osl::Mutex                    m_aMutex;

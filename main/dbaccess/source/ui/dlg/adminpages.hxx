@@ -81,14 +81,14 @@ namespace dbaui
 		virtual bool Disable() { m_pSaveValue->Disable(); return true;} // bool return value only for stl
 	};
 
-	struct TSaveValueWrapperFunctor : public ::std::unary_function< ISaveValueWrapper, bool>
+	struct TSaveValueWrapperFunctor 
 	{
 		bool operator() (ISaveValueWrapper* lhs)
 		{
 			return lhs->SaveValue();
 		}
 	};
-	struct TDisableWrapperFunctor : public ::std::unary_function< ISaveValueWrapper, bool>
+	struct TDisableWrapperFunctor 
 	{
 		bool operator() (ISaveValueWrapper* lhs)
 		{
@@ -96,7 +96,7 @@ namespace dbaui
 		}
 	};
 
-	struct TDeleteWrapperFunctor : public ::std::unary_function< ISaveValueWrapper, bool>
+	struct TDeleteWrapperFunctor 
 	{
 		bool operator() (ISaveValueWrapper* lhs)
 		{

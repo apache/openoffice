@@ -21,6 +21,7 @@
 
 
 
+#include <memory>
 #include "oox/vml/vmlshapecontainer.hxx"
 
 #include "oox/vml/vmldrawing.hxx"
@@ -71,7 +72,7 @@ ShapeContainer::~ShapeContainer()
 
 ShapeType& ShapeContainer::createShapeType()
 {
-    ::boost::shared_ptr< ShapeType > xShape( new ShapeType( mrDrawing ) );
+    ::std::shared_ptr< ShapeType > xShape( new ShapeType( mrDrawing ) );
     maTypes.push_back( xShape );
     return *xShape;
 }

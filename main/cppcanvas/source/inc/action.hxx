@@ -27,7 +27,7 @@
 #include <sal/types.h>
 
 #ifndef BOOST_SHARED_PTR_HPP_INCLUDED
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #endif
 
 namespace basegfx
@@ -152,7 +152,7 @@ namespace cppcanvas
             virtual sal_Int32 getActionCount() const = 0;
         };
 
-        typedef ::boost::shared_ptr< Action > ActionSharedPtr;
+        typedef ::std::shared_ptr< Action > ActionSharedPtr;
 
     }
 }

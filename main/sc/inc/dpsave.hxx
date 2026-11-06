@@ -54,7 +54,7 @@ class ScDPSaveMember
 {
 private:
 	String		aName;
-    ::std::auto_ptr<rtl::OUString> mpLayoutName; // custom name to be displayed in the table.
+    ::std::unique_ptr<rtl::OUString> mpLayoutName; // custom name to be displayed in the table.
 	sal_uInt16		nVisibleMode;
 	sal_uInt16		nShowDetailsMode;
 
@@ -93,8 +93,8 @@ class SC_DLLPUBLIC ScDPSaveDimension
 private:
 	String		aName;
 	String*		pSelectedPage;
-    ::std::auto_ptr<rtl::OUString> mpLayoutName;
-    ::std::auto_ptr<rtl::OUString> mpSubtotalName;
+    ::std::unique_ptr<rtl::OUString> mpLayoutName;
+    ::std::unique_ptr<rtl::OUString> mpSubtotalName;
 	sal_Bool		bIsDataLayout;
 	sal_Bool		bDupFlag;
 	sal_uInt16		nOrientation;
@@ -206,7 +206,7 @@ private:
      *  created. */
     bool        mbDimensionMembersBuilt;
 
-    ::std::auto_ptr<rtl::OUString> mpGrandTotalName;
+    ::std::unique_ptr<rtl::OUString> mpGrandTotalName;
 
 public:
     SC_DLLPUBLIC						ScDPSaveData();

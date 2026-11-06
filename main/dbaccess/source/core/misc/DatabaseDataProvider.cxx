@@ -670,7 +670,7 @@ namespace
         }
     };
 
-    struct CreateColumnDescription : public ::std::unary_function< ::rtl::OUString, ColumnDescription >
+    struct CreateColumnDescription 
     {
         ColumnDescription operator()( const ::rtl::OUString& i_rName )
         {
@@ -678,7 +678,7 @@ namespace
         }
     };
 
-    struct SelectColumnName : public ::std::unary_function< ColumnDescription, ::rtl::OUString >
+    struct SelectColumnName 
     {
         const ::rtl::OUString& operator()( const ColumnDescription& i_rColumn )
         {

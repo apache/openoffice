@@ -37,6 +37,7 @@
 #include <cppuhelper/propshlp.hxx>
 #include <cppuhelper/implbase1.hxx>
 #include <comphelper/uno3.hxx>
+#include <memory>
 
 #include "vcl/oldprintadaptor.hxx"
 
@@ -60,7 +61,7 @@ class VCLXPrinterPropertySet    :public VCLXPrinterPropertySet_Base
                                 ,public ::cppu::OPropertySetHelper
 {
 protected:
-    boost::shared_ptr<Printer>                      mpPrinter;
+    std::shared_ptr<Printer>                      mpPrinter;
     ::com::sun::star::uno::Reference< ::com::sun::star::awt::XDevice >    mxPrnDevice;
 
     sal_Int16                    mnOrientation;
@@ -111,7 +112,7 @@ typedef ::cppu::ImplInheritanceHelper1  <   VCLXPrinterPropertySet
                                         >   VCLXPrinter_Base;
 class VCLXPrinter:    public VCLXPrinter_Base
 {
-    boost::shared_ptr<vcl::OldStylePrintAdaptor>    mpListener;
+    std::shared_ptr<vcl::OldStylePrintAdaptor>    mpListener;
     JobSetup                                        maInitJobSetup;
 public:
     VCLXPrinter( const String& rPrinterName );

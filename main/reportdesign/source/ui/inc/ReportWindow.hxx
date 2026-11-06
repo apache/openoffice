@@ -31,7 +31,7 @@
 #include <svx/zoomitem.hxx>
 
 #include <vector>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <comphelper/propmultiplex.hxx>
 
 #include <MarkedSection.hxx>
@@ -61,7 +61,7 @@ namespace rptui
 		OScrollWindowHelper*	m_pParent;
 		OViewsWindow			m_aViewsWindow;
         ::rtl::Reference< comphelper::OPropertyChangeMultiplexer>	m_pReportListener;
-        ::std::auto_ptr<DlgEdFactory>
+        ::std::unique_ptr<DlgEdFactory>
                                 m_pObjFac;
 
 		void ImplInitSettings();
@@ -193,8 +193,8 @@ namespace rptui
         void			setMarked(const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::report::XReportComponent> >& _xShape,sal_Bool _bMark);
 
         // IMarkedSection
-		::boost::shared_ptr<OSectionWindow> getMarkedSection(NearSectionAccess nsa = CURRENT) const;
-        ::boost::shared_ptr<OSectionWindow> getSectionWindow(const ::com::sun::star::uno::Reference< ::com::sun::star::report::XSection>& _xSection) const;
+		::std::shared_ptr<OSectionWindow> getMarkedSection(NearSectionAccess nsa = CURRENT) const;
+        ::std::shared_ptr<OSectionWindow> getSectionWindow(const ::com::sun::star::uno::Reference< ::com::sun::star::report::XSection>& _xSection) const;
         virtual void markSection(const sal_uInt16 _nPos);
 
 

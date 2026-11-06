@@ -1104,7 +1104,7 @@ XclExpComments::XclExpComments( SCTAB nTab, XclExpRecordList< XclExpNote >& rNot
 {
 }
 
-struct OUStringLess : public std::binary_function<OUString, OUString, bool>
+struct OUStringLess 
 {
     bool operator()(const OUString& x, const OUString& y) const
     {

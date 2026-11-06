@@ -39,7 +39,7 @@
 #include <com/sun/star/media/XPlayer.hpp>
 
 #ifndef BOOST_SHARED_PTR_HPP_INCLUDED
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #endif
 
 #ifndef _UNOTOOLS_PROCESSFACTORY_HXX
@@ -1869,19 +1869,19 @@ public:
 private:
 	const STLPropertySet* mpSet;
 
-	boost::shared_ptr< FixedText > mpFTStart;
-	boost::shared_ptr< ListBox > mpLBStart;
-	boost::shared_ptr< FixedText > mpFTStartDelay;
-	boost::shared_ptr< MetricField > mpMFStartDelay;
-	boost::shared_ptr< FixedText > mpFTDuration;
-	boost::shared_ptr< ComboBox > mpCBDuration;
-	boost::shared_ptr< FixedText > mpFTRepeat;
-	boost::shared_ptr< ComboBox > mpCBRepeat;
-	boost::shared_ptr< CheckBox > mpCBXRewind;
-	boost::shared_ptr< FixedLine > mpFLTrigger;
-	boost::shared_ptr< RadioButton > mpRBClickSequence;
-	boost::shared_ptr< RadioButton > mpRBInteractive;
-	boost::shared_ptr< ListBox > mpLBTrigger;
+	std::shared_ptr< FixedText > mpFTStart;
+	std::shared_ptr< ListBox > mpLBStart;
+	std::shared_ptr< FixedText > mpFTStartDelay;
+	std::shared_ptr< MetricField > mpMFStartDelay;
+	std::shared_ptr< FixedText > mpFTDuration;
+	std::shared_ptr< ComboBox > mpCBDuration;
+	std::shared_ptr< FixedText > mpFTRepeat;
+	std::shared_ptr< ComboBox > mpCBRepeat;
+	std::shared_ptr< CheckBox > mpCBXRewind;
+	std::shared_ptr< FixedLine > mpFLTrigger;
+	std::shared_ptr< RadioButton > mpRBClickSequence;
+	std::shared_ptr< RadioButton > mpRBInteractive;
+	std::shared_ptr< ListBox > mpLBTrigger;
 };
 
 CustomAnimationDurationTabPage::CustomAnimationDurationTabPage(Window* pParent, const ResId& rResId, const STLPropertySet* pSet)

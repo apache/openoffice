@@ -291,9 +291,9 @@ void ScAccessiblePreviewCell::CreateTextHelper()
 {
 	if (!mpTextHelper)
 	{
-		::std::auto_ptr < ScAccessibleTextData > pAccessiblePreviewCellTextData
+		::std::unique_ptr < ScAccessibleTextData > pAccessiblePreviewCellTextData
 			(new ScAccessiblePreviewCellTextData(mpViewShell, maCellAddress));
-		::std::auto_ptr< SvxEditSource > pEditSource (new ScAccessibilityEditSource(pAccessiblePreviewCellTextData));
+		::std::unique_ptr< SvxEditSource > pEditSource (new ScAccessibilityEditSource(pAccessiblePreviewCellTextData));
 
         mpTextHelper = new ::accessibility::AccessibleTextHelper( pEditSource );
         mpTextHelper->SetEventSource( this );

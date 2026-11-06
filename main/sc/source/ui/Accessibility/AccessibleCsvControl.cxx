@@ -1602,16 +1602,16 @@ Rectangle ScAccessibleCsvCell::implGetBoundingBox() const
     return aRect;
 }
 
-::std::auto_ptr< SvxEditSource > ScAccessibleCsvCell::implCreateEditSource()
+::std::unique_ptr< SvxEditSource > ScAccessibleCsvCell::implCreateEditSource()
 {
     ScCsvGrid& rGrid = implGetGrid();
     Rectangle aBoundRect( implGetBoundingBox() );
     aBoundRect -= implGetRealPos();
 
-    ::std::auto_ptr< ScAccessibleTextData > pCsvTextData( new ScAccessibleCsvTextData(
+    ::std::unique_ptr< ScAccessibleTextData > pCsvTextData( new ScAccessibleCsvTextData(
         &rGrid, rGrid.GetEditEngine(), maCellText, aBoundRect, implGetRealSize() ) );
 
-    ::std::auto_ptr< SvxEditSource > pEditSource( new ScAccessibilityEditSource( pCsvTextData ) );
+    ::std::unique_ptr< SvxEditSource > pEditSource( new ScAccessibilityEditSource( pCsvTextData ) );
     return pEditSource;
 }
 

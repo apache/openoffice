@@ -29,7 +29,7 @@
 #include <svx/xtextit0.hxx>
 #include "svdtext.hxx"
 #include <vector>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include "svx/svxdllapi.h"
 #include <drawinglayer/primitive2d/baseprimitive2d.hxx>
 #include <svx/svdpagv.hxx>
@@ -600,7 +600,7 @@ public:
 	/** returns a new created and non shared outliner.
 		The outliner will not get updated when the SdrModel is changed.
 	*/
-	boost::shared_ptr< SdrOutliner > CreateDrawOutliner();
+	std::shared_ptr< SdrOutliner > CreateDrawOutliner();
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////

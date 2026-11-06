@@ -23,7 +23,7 @@
 #ifndef _UNOSTYLE_HXX
 #define _UNOSTYLE_HXX
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <svl/style.hxx>
 #include <svl/lstner.hxx>
 #include <unocoll.hxx>
@@ -54,7 +54,7 @@ class SwStyleProperties_Impl;
 class SwAutoStylesEnumImpl;
 class IStyleAccess;
 class SfxItemSet;
-typedef boost::shared_ptr<SfxItemSet> SfxItemSet_Pointer_t;
+typedef std::shared_ptr<SfxItemSet> SfxItemSet_Pointer_t;
 
 /******************************************************************************
  *

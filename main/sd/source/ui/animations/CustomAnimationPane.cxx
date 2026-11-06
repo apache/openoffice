@@ -995,7 +995,7 @@ void CustomAnimationPane::updateMotionPathTags()
 
 	if( mxView.is() )
 	{
-		::boost::shared_ptr<ViewShell> xViewShell( mrBase.GetMainViewShell() );
+		::std::shared_ptr<ViewShell> xViewShell( mrBase.GetMainViewShell() );
 		if( xViewShell.get() )
 			pView = xViewShell->GetView();
 	}

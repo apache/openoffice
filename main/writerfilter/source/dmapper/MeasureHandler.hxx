@@ -25,7 +25,7 @@
 
 #include <WriterFilterDllApi.hxx>
 #include <resourcemodel/LoggedResources.hxx>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 namespace writerfilter {
 namespace dmapper
@@ -55,7 +55,7 @@ public:
 
     sal_Int16 GetRowHeightSizeType() const { return m_nRowHeightSizeType;}
 };
-typedef boost::shared_ptr
+typedef std::shared_ptr
     < MeasureHandler >  MeasureHandlerPtr;
 }}
 

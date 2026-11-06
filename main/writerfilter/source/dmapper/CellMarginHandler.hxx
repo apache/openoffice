@@ -27,7 +27,7 @@
 #include <WriterFilterDllApi.hxx>
 #endif
 #include <resourcemodel/LoggedResources.hxx>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 namespace writerfilter {
 namespace dmapper
@@ -56,10 +56,10 @@ public:
     CellMarginHandler( );
     virtual ~CellMarginHandler();
 
-    ::boost::shared_ptr<TablePropertyMap>            getProperties();
+    ::std::shared_ptr<TablePropertyMap>            getProperties();
 
 };
-typedef boost::shared_ptr< CellMarginHandler >          CellMarginHandlerPtr;
+typedef std::shared_ptr< CellMarginHandler >          CellMarginHandlerPtr;
 }}
 
 #endif //

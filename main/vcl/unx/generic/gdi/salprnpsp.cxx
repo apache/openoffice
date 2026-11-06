@@ -50,6 +50,7 @@
 #include "vcl/printerinfomanager.hxx"
 
 #include <unx/salunx.h>
+#include <memory>
 #include "unx/saldisp.hxx"
 #include "unx/salinst.h"
 #include "unx/salprn.h"
@@ -1195,9 +1196,9 @@ sal_Bool PspSalPrinter::StartJob( const String* i_pFileName, const String& i_rJo
     vcl::PDFWriter::PlayMetafileContext aMtfContext;
     aMtfContext.m_bOnlyLosslessCompression = true;
 
-    boost::shared_ptr<vcl::PDFWriter> pWriter;
+    std::shared_ptr<vcl::PDFWriter> pWriter;
     std::vector< PDFPrintFile > aPDFFiles;
-    boost::shared_ptr<Printer> pPrinter( i_rController.getPrinter() );
+    std::shared_ptr<Printer> pPrinter( i_rController.getPrinter() );
     int nAllPages = i_rController.getFilteredPageCount();
     i_rController.createProgressDialog();
     bool bAborted = false;

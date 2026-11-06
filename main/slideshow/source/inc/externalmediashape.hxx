@@ -24,7 +24,7 @@
 #ifndef INCLUDED_SLIDESHOW_EXTERNALMEDIASHAPE_HXX
 #define INCLUDED_SLIDESHOW_EXTERNALMEDIASHAPE_HXX
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 #include "shape.hxx"
 
@@ -79,7 +79,7 @@ namespace slideshow
             virtual void setMediaTime(double fTime) = 0;
         };
 
-        typedef ::boost::shared_ptr< ExternalMediaShape > ExternalMediaShapeSharedPtr;
+        typedef ::std::shared_ptr< ExternalMediaShape > ExternalMediaShapeSharedPtr;
 
     }
 }

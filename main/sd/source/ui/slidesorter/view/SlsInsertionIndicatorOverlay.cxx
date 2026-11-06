@@ -44,6 +44,7 @@
 #include <basegfx/tools/canvastools.hxx>
 #include <basegfx/polygon/b2dpolygon.hxx>
 #include <basegfx/polygon/b2dpolygontools.hxx>
+#include <memory>
 
 
 namespace {
@@ -104,7 +105,7 @@ void InsertionIndicatorOverlay::Create (const SdTransferable* pTransferable)
 	if (pTransferable == NULL)
 		return;
 
-	::boost::shared_ptr<controller::TransferableData> pData (
+	::std::shared_ptr<controller::TransferableData> pData (
 		controller::TransferableData::GetFromTransferable(pTransferable));
 	if ( ! pData)
 		return;
@@ -132,9 +133,9 @@ void InsertionIndicatorOverlay::Create (
 	const sal_Int32 nSelectionCount)
 {
 	view::Layouter& rLayouter (mrSlideSorter.GetView().GetLayouter());
-	::boost::shared_ptr<view::PageObjectLayouter> pPageObjectLayouter (
+	::std::shared_ptr<view::PageObjectLayouter> pPageObjectLayouter (
 		rLayouter.GetPageObjectLayouter());
-	::boost::shared_ptr<view::Theme> pTheme (mrSlideSorter.GetTheme());
+	::std::shared_ptr<view::Theme> pTheme (mrSlideSorter.GetTheme());
 	const Size aOriginalPreviewSize (pPageObjectLayouter->GetSize(
 		PageObjectLayouter::Preview,
 		PageObjectLayouter::WindowCoordinateSystem));
@@ -291,8 +292,8 @@ void InsertionIndicatorOverlay::PaintPageCount (
 	const Point aFirstPageOffset) const
 {
 	// Paint the number of slides.
-	::boost::shared_ptr<view::Theme> pTheme (mrSlideSorter.GetTheme());
-	::boost::shared_ptr<Font> pFont(Theme::GetFont(Theme::Font_PageCount, rDevice));
+	::std::shared_ptr<view::Theme> pTheme (mrSlideSorter.GetTheme());
+	::std::shared_ptr<Font> pFont(Theme::GetFont(Theme::Font_PageCount, rDevice));
 	if (pFont)
 	{
 		::rtl::OUString sNumber (::rtl::OUString::valueOf(nSelectionCount));
@@ -393,7 +394,7 @@ void InsertionIndicatorOverlay::Show (void)
 	{
 		mbIsVisible = true;
 
-		::boost::shared_ptr<LayeredDevice> pLayeredDevice (
+		::std::shared_ptr<LayeredDevice> pLayeredDevice (
 			mrSlideSorter.GetView().GetLayeredDevice());
 		if (pLayeredDevice)
 		{
@@ -413,7 +414,7 @@ void InsertionIndicatorOverlay::Hide (void)
 	{
 		mbIsVisible = false;
 
-		::boost::shared_ptr<LayeredDevice> pLayeredDevice (
+		::std::shared_ptr<LayeredDevice> pLayeredDevice (
 			mrSlideSorter.GetView().GetLayeredDevice());
 		if (pLayeredDevice)
 		{

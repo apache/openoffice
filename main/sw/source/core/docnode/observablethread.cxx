@@ -23,7 +23,7 @@
 #include "precompiled_sw.hxx"
 #include <observablethread.hxx>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 /** class for an observable thread
 
@@ -59,7 +59,7 @@ oslInterlockedCount ObservableThread::release()
     return nCount;
 }
 
-void ObservableThread::SetListener( boost::weak_ptr< IFinishedThreadListener > pThreadListener,
+void ObservableThread::SetListener( std::weak_ptr< IFinishedThreadListener > pThreadListener,
                                     const oslInterlockedCount nThreadID )
 {
     mpThreadListener = pThreadListener;
@@ -78,7 +78,7 @@ void SAL_CALL ObservableThread::onTerminated()
     threadFinished();
 
     // notify observer
-    boost::shared_ptr< IFinishedThreadListener > pThreadListener = mpThreadListener.lock();
+    std::shared_ptr< IFinishedThreadListener > pThreadListener = mpThreadListener.lock();
     if ( pThreadListener )
     {
         pThreadListener->NotifyAboutFinishedThread( mnThreadID );

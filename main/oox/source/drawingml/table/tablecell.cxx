@@ -37,6 +37,7 @@
 #include <com/sun/star/drawing/TextHorizontalAdjust.hpp>
 #include <com/sun/star/text/XText.hpp>
 #include <com/sun/star/text/WritingMode.hpp>
+#include <memory>
 
 using rtl::OUString;
 using namespace ::oox::core;
@@ -102,7 +103,7 @@ void applyTableStylePart( const ::oox::core::XmlFilterBase& rFilterBase, const R
 	 oox::drawingml::LineProperties& rBottomLeftToTopRightBorder,
 	TableStylePart& rTableStylePart )
 {
-	boost::shared_ptr< ::oox::drawingml::FillProperties >& rPartFillPropertiesPtr( rTableStylePart.getFillProperties() );
+	std::shared_ptr< ::oox::drawingml::FillProperties >& rPartFillPropertiesPtr( rTableStylePart.getFillProperties() );
 	if ( rPartFillPropertiesPtr.get() )
 		rFillProperties.assignUsed( *rPartFillPropertiesPtr );
 
@@ -181,7 +182,7 @@ void TableCell::pushToXCell( const ::oox::core::XmlFilterBase& rFilterBase, ::oo
 	oox::drawingml::LineProperties aLinePropertiesTopLeftToBottomRight;
 	oox::drawingml::LineProperties aLinePropertiesBottomLeftToTopRight;
 
-	boost::shared_ptr< ::oox::drawingml::FillProperties >& rBackgroundFillPropertiesPtr( rTable.getBackgroundFillProperties() );
+	std::shared_ptr< ::oox::drawingml::FillProperties >& rBackgroundFillPropertiesPtr( rTable.getBackgroundFillProperties() );
 	if ( rBackgroundFillPropertiesPtr.get() )
 		aFillProperties.assignUsed( *rBackgroundFillPropertiesPtr );
 

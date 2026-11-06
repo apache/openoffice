@@ -43,7 +43,7 @@ class WW8Analyzer : public Properties, public Table,
 {
     typedef map<sal_uInt32, sal_uInt32> SprmMap;
 
-    typedef unordered_set<sal_uInt32, hash<sal_uInt32>, eqSalUInt32> IdSet;
+    typedef std::unordered_set<sal_uInt32, hash<sal_uInt32>, eqSalUInt32> IdSet;
     typedef map<Id, sal_uInt32> AttributeMap;
 
     mutable SprmMap mSprmMap;

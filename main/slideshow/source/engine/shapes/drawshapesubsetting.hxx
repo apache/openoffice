@@ -24,7 +24,7 @@
 #ifndef INCLUDED_SLIDESHOW_DRAWSHAPESUBSETTING_HXX
 #define INCLUDED_SLIDESHOW_DRAWSHAPESUBSETTING_HXX
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <boost/noncopyable.hpp>
 
 #include "doctreenode.hxx"
@@ -64,7 +64,7 @@ namespace slideshow
                 Metafile to retrieve subset info from (must have been
                 generated with verbose text comments switched on).
              */
-            explicit DrawShapeSubsetting( const ::boost::shared_ptr< GDIMetaFile >& rMtf );
+            explicit DrawShapeSubsetting( const ::std::shared_ptr< GDIMetaFile >& rMtf );
 
             /** Create new shape subset handling.
 
@@ -77,7 +77,7 @@ namespace slideshow
                 generated with verbose text comments switched on).
              */
             DrawShapeSubsetting( const DocTreeNode&			 				rShapeSubset,
-                                 const ::boost::shared_ptr< GDIMetaFile >&	rMtf );
+                                 const ::std::shared_ptr< GDIMetaFile >&	rMtf );
 
             /** Reset metafile.
 
@@ -90,7 +90,7 @@ namespace slideshow
                 Metafile to retrieve subset info from (must have been
                 generated with verbose text comments switched on).
              */
-            void reset( const ::boost::shared_ptr< GDIMetaFile >&   rMtf );
+            void reset( const ::std::shared_ptr< GDIMetaFile >&   rMtf );
 
             /** Reset metafile and subset.
 
@@ -108,7 +108,7 @@ namespace slideshow
                 generated with verbose text comments switched on).
              */
             void reset( const DocTreeNode&                          rShapeSubset,
-                        const ::boost::shared_ptr< GDIMetaFile >&   rMtf );
+                        const ::std::shared_ptr< GDIMetaFile >&   rMtf );
 
 
             // Shape subsetting methods
@@ -252,7 +252,7 @@ namespace slideshow
             mutable IndexClassificatorVector	maActionClassVector;
 
             /// Metafile to retrieve subset info from
-            ::boost::shared_ptr< GDIMetaFile >	mpMtf;
+            ::std::shared_ptr< GDIMetaFile >	mpMtf;
 
             /// Subset of the metafile represented by this object
             DocTreeNode                         maSubset;

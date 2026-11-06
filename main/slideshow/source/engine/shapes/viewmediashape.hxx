@@ -27,7 +27,7 @@
 #include <basegfx/range/b2drectangle.hxx>
 #include <com/sun/star/awt/Point.hpp>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <boost/utility.hpp>
 
 #include "viewlayer.hxx"
@@ -151,7 +151,7 @@ namespace slideshow
 													const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& rDXDeviceParams );
 
 			ViewLayerSharedPtr					  mpViewLayer;
-			::std::auto_ptr< SystemChildWindow >    mpMediaWindow;
+			::std::unique_ptr< SystemChildWindow >    mpMediaWindow;
 			mutable ::com::sun::star::awt::Point  maWindowOffset;
             mutable ::basegfx::B2DRectangle       maBounds;
 
@@ -162,7 +162,7 @@ namespace slideshow
             bool mbIsSoundEnabled;
 		};
 
-        typedef ::boost::shared_ptr< ViewMediaShape > ViewMediaShapeSharedPtr;
+        typedef ::std::shared_ptr< ViewMediaShape > ViewMediaShapeSharedPtr;
 
     }
 }

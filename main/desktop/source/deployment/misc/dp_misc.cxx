@@ -47,6 +47,7 @@
 #include "boost/scoped_array.hpp"
 #include "boost/shared_ptr.hpp"
 #include <comphelper/processfactory.hxx>
+#include <memory>
 
 #ifdef WNT
 //#include "tools/prewin.h"
@@ -75,12 +76,12 @@ namespace dp_misc {
 namespace {
 
 struct UnoRc : public rtl::StaticWithInit<
-    const boost::shared_ptr<rtl::Bootstrap>, UnoRc> {
-    const boost::shared_ptr<rtl::Bootstrap> operator () () {
+    const std::shared_ptr<rtl::Bootstrap>, UnoRc> {
+    const std::shared_ptr<rtl::Bootstrap> operator () () {
         OUString unorc( RTL_CONSTASCII_USTRINGPARAM(
                             "$OOO_BASE_DIR/program/" SAL_CONFIGFILE("uno")) );
         ::rtl::Bootstrap::expandMacros( unorc );
-        ::boost::shared_ptr< ::rtl::Bootstrap > ret(
+        ::std::shared_ptr< ::rtl::Bootstrap > ret(
             new ::rtl::Bootstrap( unorc ) );
         OSL_ASSERT( ret->getHandle() != 0 );
         return ret;

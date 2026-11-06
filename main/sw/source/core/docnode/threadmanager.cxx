@@ -25,6 +25,7 @@
 #include <errhdl.hxx>
 
 #include <algorithm>
+#include <memory>
 
 using namespace ::com::sun::star;
 
@@ -62,7 +63,7 @@ ThreadManager::~ThreadManager()
     maStartedThreads.clear();
 }
 
-boost::weak_ptr< IFinishedThreadListener > ThreadManager::GetThreadListenerWeakRef()
+std::weak_ptr< IFinishedThreadListener > ThreadManager::GetThreadListenerWeakRef()
 {
     return mpThreadListener;
 }

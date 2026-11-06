@@ -490,7 +490,7 @@ struct ImpContent
     sal_uInt32   nOffset;
 };
 
-struct ImpContentLessCompare : public ::std::binary_function< ImpContent, ImpContent, bool>
+struct ImpContentLessCompare 
 {
 	inline bool operator() (const ImpContent& lhs, const ImpContent& rhs) const
 	{
@@ -498,7 +498,7 @@ struct ImpContentLessCompare : public ::std::binary_function< ImpContent, ImpCon
 	}
 };
 
-struct ImpContentMixLessCompare : public ::std::binary_function< ImpContent, sal_uInt64, bool>
+struct ImpContentMixLessCompare 
 {
 	inline bool operator() (const ImpContent& lhs, const sal_uInt64& rhs) const
 	{

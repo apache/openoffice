@@ -26,7 +26,7 @@
 
 #include <deque>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 #include <com/sun/star/lang/XServiceInfo.hpp>
 #include <com/sun/star/container/XEnumeration.hpp>
@@ -47,7 +47,7 @@ struct FrameDependSortListEntry
 {
     xub_StrLen nIndex;
     sal_uInt32 nOrder;
-    ::boost::shared_ptr<SwDepend> pFrameDepend;
+    ::std::shared_ptr<SwDepend> pFrameDepend;
 
     FrameDependSortListEntry (xub_StrLen const i_nIndex,
                 sal_uInt32 const i_nOrder, SwDepend * const i_pDepend)
@@ -57,7 +57,7 @@ struct FrameDependSortListEntry
 typedef ::std::deque< FrameDependSortListEntry >
     FrameDependSortList_t;
 
-typedef ::std::deque< ::boost::shared_ptr<SwDepend> >
+typedef ::std::deque< ::std::shared_ptr<SwDepend> >
     FrameDependList_t;
 
 

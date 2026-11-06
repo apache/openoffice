@@ -28,7 +28,7 @@
 #include "soaprequest.hxx"
 #include "errormail.hxx"
 #include "config.hxx"
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <com/sun/star/lang/XMultiComponentFactory.hpp>
 #include <com/sun/star/lang/XMultiServiceFactory.hpp>
 #include <com/sun/star/ucb/XSimpleFileAccess.hpp>
@@ -39,7 +39,7 @@
 using namespace com::sun::star::uno;
 using namespace com::sun::star::lang;
 using namespace com::sun::star::io;
-using boost::shared_ptr;
+using std::shared_ptr;
 using com::sun::star::io::XOutputStream;
 using com::sun::star::ucb::XSimpleFileAccess;
 using rtl::OUString;

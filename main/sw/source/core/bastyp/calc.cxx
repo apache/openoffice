@@ -1646,7 +1646,7 @@ bool SwCalc::Str2Double( const String& rCommand, xub_StrLen& rCommandPos,
 							double& rVal, SwDoc* const pDoc )
 {
     const SvtSysLocale aSysLocale;
-    ::std::auto_ptr<const LocaleDataWrapper> pLclD;
+    ::std::unique_ptr<const LocaleDataWrapper> pLclD;
 	if( pDoc )
 	{
 		LanguageType eLang = GetDocAppScriptLang( *pDoc );

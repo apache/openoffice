@@ -50,6 +50,7 @@ namespace cairo
 #define LPGLYPHMETRICS void*
 #define MAT2 void
 #include <ft2lib.h>
+#include <memory>
 
     bool IsCairoWorking( OutputDevice* )
     {
@@ -213,14 +214,14 @@ namespace cairo
      *
      * @return The new virtual device
      **/
-    boost::shared_ptr<VirtualDevice> Os2Surface::createVirtualDevice() const
+    std::shared_ptr<VirtualDevice> Os2Surface::createVirtualDevice() const
     {
         SystemGraphicsData aSystemGraphicsData;
         aSystemGraphicsData.nSize = sizeof(SystemGraphicsData);
         //aSystemGraphicsData.hDC = cairo_win32_surface_get_dc( mpSurface.get() );
         OSL_TRACE( "Os2Surface::createVirtualDevice");
 
-        return boost::shared_ptr<VirtualDevice>(
+        return std::shared_ptr<VirtualDevice>(
                     new VirtualDevice( &aSystemGraphicsData, sal::static_int_cast<USHORT>(getDepth()) ));
     }
 

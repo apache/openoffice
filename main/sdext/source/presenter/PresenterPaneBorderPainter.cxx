@@ -44,7 +44,7 @@
 #include <com/sun/star/rendering/XSpriteCanvas.hpp>
 #include <map>
 #include <vector>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 using namespace ::com::sun::star;
 using namespace ::com::sun::star::uno;
@@ -71,7 +71,7 @@ namespace {
     {
     public:
         RendererPaneStyle (
-            const ::boost::shared_ptr<PresenterTheme>& rpTheme,
+            const ::std::shared_ptr<PresenterTheme>& rpTheme,
             const OUString& rsStyleName);
 
         awt::Rectangle AddBorder (
@@ -105,7 +105,7 @@ namespace {
     private:
         void UpdateBorderSizes (void);
         SharedBitmapDescriptor GetBitmap(
-            const ::boost::shared_ptr<PresenterTheme>& rpTheme,
+            const ::std::shared_ptr<PresenterTheme>& rpTheme,
             const OUString& rsStyleName,
             const OUString& rsBitmapName);
     };
@@ -118,7 +118,7 @@ class  PresenterPaneBorderPainter::Renderer
 public:
     Renderer (
         const Reference<XComponentContext>& rxContext,
-        const ::boost::shared_ptr<PresenterTheme>& rpTheme);
+        const ::std::shared_ptr<PresenterTheme>& rpTheme);
     ~Renderer (void);
 
     void SetCanvas (const Reference<rendering::XCanvas>& rxCanvas);
@@ -129,7 +129,7 @@ public:
         const OUString& rsPaneURL);
     void PaintTitle (
         const OUString& rsTitle,
-        const ::boost::shared_ptr<RendererPaneStyle>& rpStyle,
+        const ::std::shared_ptr<RendererPaneStyle>& rpStyle,
         const awt::Rectangle& rUpdateBox,
         const awt::Rectangle& rOuterBox,
         const awt::Rectangle& rInnerBox,
@@ -138,13 +138,13 @@ public:
         const awt::Rectangle& rUpdateBox,
         const awt::Rectangle& rOuterBox,
         const OUString& rsPaneStyleName);
-    ::boost::shared_ptr<RendererPaneStyle> GetRendererPaneStyle (const OUString& rsResourceURL);
+    ::std::shared_ptr<RendererPaneStyle> GetRendererPaneStyle (const OUString& rsResourceURL);
     void SetCalloutAnchor (
         const awt::Point& rCalloutAnchor);
 
 private:
-    ::boost::shared_ptr<PresenterTheme> mpTheme;
-    typedef ::std::map<OUString, ::boost::shared_ptr<RendererPaneStyle> > RendererPaneStyleContainer;
+    ::std::shared_ptr<PresenterTheme> mpTheme;
+    typedef ::std::map<OUString, ::std::shared_ptr<RendererPaneStyle> > RendererPaneStyleContainer;
     RendererPaneStyleContainer maRendererPaneStyles;
     Reference<rendering::XCanvas> mxCanvas;
     Reference<drawing::XPresenterHelper> mxPresenterHelper;
@@ -304,7 +304,7 @@ awt::Point SAL_CALL PresenterPaneBorderPainter::getCalloutOffset (
     ProvideTheme();
     if (mpRenderer.get() != NULL)
     {
-        const ::boost::shared_ptr<RendererPaneStyle> pRendererPaneStyle(
+        const ::std::shared_ptr<RendererPaneStyle> pRendererPaneStyle(
             mpRenderer->GetRendererPaneStyle(rsPaneBorderStyleName));
         if (pRendererPaneStyle.get() != NULL
             && pRendererPaneStyle->mpBottomCallout.get() != NULL)
@@ -386,7 +386,7 @@ bool PresenterPaneBorderPainter::HasTheme (void) const
 
 
 
-void PresenterPaneBorderPainter::SetTheme (const ::boost::shared_ptr<PresenterTheme>& rpTheme)
+void PresenterPaneBorderPainter::SetTheme (const ::std::shared_ptr<PresenterTheme>& rpTheme)
 {
     mpTheme = rpTheme;
     if (mpRenderer.get() == NULL)
@@ -403,7 +403,7 @@ awt::Rectangle PresenterPaneBorderPainter::AddBorder (
 {
     if (mpRenderer.get() != NULL)
     {
-        const ::boost::shared_ptr<RendererPaneStyle> pRendererPaneStyle(mpRenderer->GetRendererPaneStyle(rsPaneURL));
+        const ::std::shared_ptr<RendererPaneStyle> pRendererPaneStyle(mpRenderer->GetRendererPaneStyle(rsPaneURL));
         if (pRendererPaneStyle.get() != NULL)
             return pRendererPaneStyle->AddBorder(rInnerBox, eBorderType);
     }
@@ -420,7 +420,7 @@ awt::Rectangle PresenterPaneBorderPainter::RemoveBorder (
 {
     if (mpRenderer.get() != NULL)
     {
-        const ::boost::shared_ptr<RendererPaneStyle> pRendererPaneStyle(mpRenderer->GetRendererPaneStyle(rsPaneURL));
+        const ::std::shared_ptr<RendererPaneStyle> pRendererPaneStyle(mpRenderer->GetRendererPaneStyle(rsPaneURL));
         if (pRendererPaneStyle.get() != NULL)
             return pRendererPaneStyle->RemoveBorder(rOuterBox, eBorderType);
     }
@@ -449,7 +449,7 @@ void PresenterPaneBorderPainter::ThrowIfDisposed (void) const
 
 PresenterPaneBorderPainter::Renderer::Renderer (
     const Reference<XComponentContext>& rxContext,
-    const ::boost::shared_ptr<PresenterTheme>& rpTheme)
+    const ::std::shared_ptr<PresenterTheme>& rpTheme)
     : mpTheme(rpTheme),
       maRendererPaneStyles(),
       mxCanvas(),
@@ -503,7 +503,7 @@ void PresenterPaneBorderPainter::Renderer::PaintBorder (
         return;
 
     // Create the outer and inner border of the, ahm, border.
-    ::boost::shared_ptr<RendererPaneStyle> pStyle (GetRendererPaneStyle(rsPaneURL));
+    ::std::shared_ptr<RendererPaneStyle> pStyle (GetRendererPaneStyle(rsPaneURL));
     if (pStyle.get() == NULL)
         return;
 
@@ -575,7 +575,7 @@ void PresenterPaneBorderPainter::Renderer::PaintBorder (
 
 void PresenterPaneBorderPainter::Renderer::PaintTitle (
     const OUString& rsTitle,
-    const ::boost::shared_ptr<RendererPaneStyle>& rpStyle,
+    const ::std::shared_ptr<RendererPaneStyle>& rpStyle,
     const awt::Rectangle& rUpdateBox,
     const awt::Rectangle& rOuterBox,
     const awt::Rectangle& rInnerBox,
@@ -675,7 +675,7 @@ void PresenterPaneBorderPainter::Renderer::PaintTitle (
 
 
 
-::boost::shared_ptr<RendererPaneStyle>
+::std::shared_ptr<RendererPaneStyle>
     PresenterPaneBorderPainter::Renderer::GetRendererPaneStyle (const OUString& rsResourceURL)
 {
     OSL_ASSERT(mpTheme.get()!=NULL);
@@ -691,7 +691,7 @@ void PresenterPaneBorderPainter::Renderer::PaintTitle (
             sPaneStyleName = sStyleName;
 
         // Create a new pane style object and initialize it with bitmaps.
-        ::boost::shared_ptr<RendererPaneStyle> pStyle (
+        ::std::shared_ptr<RendererPaneStyle> pStyle (
             new RendererPaneStyle(mpTheme,sPaneStyleName));
         iStyle = maRendererPaneStyles.insert(
             RendererPaneStyleContainer::value_type(rsResourceURL, pStyle)).first;
@@ -699,7 +699,7 @@ void PresenterPaneBorderPainter::Renderer::PaintTitle (
     if (iStyle != maRendererPaneStyles.end())
         return iStyle->second;
     else
-        return ::boost::shared_ptr<RendererPaneStyle>();
+        return ::std::shared_ptr<RendererPaneStyle>();
 }
 
 
@@ -838,7 +838,7 @@ void PresenterPaneBorderPainter::Renderer::SetupClipping (
     if ( ! mxCanvas.is())
         return;
 
-    ::boost::shared_ptr<RendererPaneStyle> pStyle (GetRendererPaneStyle(rsPaneStyleName));
+    ::std::shared_ptr<RendererPaneStyle> pStyle (GetRendererPaneStyle(rsPaneStyleName));
     if (pStyle.get() == NULL)
     {
         mxViewStateClip = PresenterGeometryHelper::CreatePolygon(
@@ -907,7 +907,7 @@ BorderSize& BorderSize::operator= (const BorderSize& rBorderSize)
 //===== RendererPaneStyle  ============================================================
 
 RendererPaneStyle::RendererPaneStyle (
-    const ::boost::shared_ptr<PresenterTheme>& rpTheme,
+    const ::std::shared_ptr<PresenterTheme>& rpTheme,
     const OUString& rsStyleName)
     : mpTopLeft(),
       mpTop(),
@@ -1072,7 +1072,7 @@ void RendererPaneStyle::UpdateBorderSizes (void)
 
 
 SharedBitmapDescriptor RendererPaneStyle::GetBitmap(
-    const ::boost::shared_ptr<PresenterTheme>& rpTheme,
+    const ::std::shared_ptr<PresenterTheme>& rpTheme,
     const OUString& rsStyleName,
     const OUString& rsBitmapName)
 {

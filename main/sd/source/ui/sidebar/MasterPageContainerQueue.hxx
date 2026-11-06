@@ -27,6 +27,7 @@
 
 #include <boost/scoped_ptr.hpp>
 #include <boost/weak_ptr.hpp>
+#include <memory>
 
 namespace sd { namespace sidebar {
 
@@ -49,7 +50,7 @@ public:
     };
 
     static MasterPageContainerQueue* Create (
-        const ::boost::weak_ptr<ContainerAdapter>& rpContainer);
+        const ::std::weak_ptr<ContainerAdapter>& rpContainer);
     virtual ~MasterPageContainerQueue (void);
 
     /** This method is typically called for entries in the container for
@@ -77,7 +78,7 @@ public:
     void ProcessAllRequests (void);
 
 private:
-    ::boost::weak_ptr<ContainerAdapter> mpWeakContainer;
+    ::std::weak_ptr<ContainerAdapter> mpWeakContainer;
     class PreviewCreationRequest;
     class RequestQueue;
     ::boost::scoped_ptr<RequestQueue> mpRequestQueue;
@@ -114,7 +115,7 @@ private:
     */
     static sal_uInt32 snWaitForMoreRequestsCount;
 
-    MasterPageContainerQueue (const ::boost::weak_ptr<ContainerAdapter>& rpContainer);
+    MasterPageContainerQueue (const ::std::weak_ptr<ContainerAdapter>& rpContainer);
     void LateInit (void);
 
     /** Calculate the priority that defines the order in which requests

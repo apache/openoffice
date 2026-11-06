@@ -120,7 +120,7 @@ namespace impl
 {
 
 template< class InterfaceRef >
-struct addListenerFunctor : public ::std::unary_function< InterfaceRef, void >
+struct addListenerFunctor 
 {
     explicit addListenerFunctor( const ::com::sun::star::uno::Reference<
                                      ::com::sun::star::util::XModifyListener > & xListener ) :
@@ -139,7 +139,7 @@ private:
 };
 
 template< class InterfaceRef >
-struct removeListenerFunctor : public ::std::unary_function< InterfaceRef, void >
+struct removeListenerFunctor 
 {
     explicit removeListenerFunctor( const ::com::sun::star::uno::Reference<
                                         ::com::sun::star::util::XModifyListener > & xListener ) :
@@ -158,7 +158,7 @@ private:
 };
 
 template< class Pair >
-struct addListenerToMappedElementFunctor : public ::std::unary_function< Pair, void >
+struct addListenerToMappedElementFunctor 
 {
     explicit addListenerToMappedElementFunctor( const ::com::sun::star::uno::Reference<
                                                     ::com::sun::star::util::XModifyListener > & xListener ) :
@@ -177,7 +177,7 @@ private:
 };
 
 template< class Pair >
-struct removeListenerFromMappedElementFunctor : public ::std::unary_function< Pair, void >
+struct removeListenerFromMappedElementFunctor 
 {
     explicit removeListenerFromMappedElementFunctor( const ::com::sun::star::uno::Reference<
                                                          ::com::sun::star::util::XModifyListener > & xListener ) :

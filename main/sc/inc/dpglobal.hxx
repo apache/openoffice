@@ -168,7 +168,7 @@ public:
 	virtual sal_Int32 getDataId( const ScDPItemData& aData );
 	virtual sal_Int32 insertData( const ScDPItemData& aData );
 protected:
-	struct DataHashFunc : public std::unary_function< const ScDPItemData &, size_t >
+	struct DataHashFunc 
 	{
 		size_t operator() (const ScDPItemData &rData) const { return rData.Hash(); }
 	};

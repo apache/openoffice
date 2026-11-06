@@ -31,13 +31,14 @@
 #include <com/sun/star/text/XTextRange.hpp>
 #include <vector>
 #include <stack>
+#include <memory>
 
 namespace writerfilter {
 namespace dmapper {
 
 class DomainMapperTableManager : public DomainMapperTableManager_Base_t
 {
-    typedef boost::shared_ptr< std::vector<sal_Int32> > IntVectorPtr;
+    typedef std::shared_ptr< std::vector<sal_Int32> > IntVectorPtr;
 
     ::std::stack< sal_uInt32 > m_nCellCounterForCurrentRow;
     sal_uInt32 m_nGridSpanOfCurrentCell;

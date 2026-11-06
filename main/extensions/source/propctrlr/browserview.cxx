@@ -75,7 +75,7 @@ namespace pcr
 			sal_uInt16 nTmpPage = m_pPropBox->GetCurPage();
 			if (nTmpPage)
 				m_nActivePage = nTmpPage;
-			::std::auto_ptr<Window> aTemp(m_pPropBox);
+			::std::unique_ptr<Window> aTemp(m_pPropBox);
 			m_pPropBox = NULL;
 		}
 		m_xORB = NULL;

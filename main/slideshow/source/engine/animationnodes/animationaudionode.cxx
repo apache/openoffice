@@ -70,7 +70,7 @@ void AnimationAudioNode::activate_st()
     createPlayer();
 
     AnimationEventHandlerSharedPtr aHandler(
-        boost::dynamic_pointer_cast<AnimationEventHandler>( getSelf() ) );
+        std::dynamic_pointer_cast<AnimationEventHandler>( getSelf() ) );
     OSL_ENSURE( aHandler,
                 "could not cast self to AnimationEventHandler?" );
     getContext().mrEventMultiplexer.addCommandStopAudioHandler( aHandler );
@@ -106,7 +106,7 @@ void AnimationAudioNode::activate_st()
 void AnimationAudioNode::deactivate_st( NodeState /*eDestState*/ )
 {
     AnimationEventHandlerSharedPtr aHandler(
-        boost::dynamic_pointer_cast<AnimationEventHandler>( getSelf() ) );
+        std::dynamic_pointer_cast<AnimationEventHandler>( getSelf() ) );
     OSL_ENSURE( aHandler,
                 "could not cas self to AnimationEventHandler?" );
     getContext().mrEventMultiplexer.removeCommandStopAudioHandler( aHandler );

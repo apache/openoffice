@@ -44,6 +44,7 @@
 #include <vcl/svapp.hxx>
 #include <vcl/window.hxx>
 #include <vcl/wrkwin.hxx>
+#include <memory>
 
 using namespace ::com::sun::star;
 using namespace ::com::sun::star::uno;
@@ -87,10 +88,10 @@ public:
 };
 
 
-::boost::shared_ptr<PresenterCanvasFactory> PresenterCanvasFactory::mpInstance;
+::std::shared_ptr<PresenterCanvasFactory> PresenterCanvasFactory::mpInstance;
 
 
-::boost::shared_ptr<PresenterCanvasFactory> PresenterCanvasFactory::Instance (void)
+::std::shared_ptr<PresenterCanvasFactory> PresenterCanvasFactory::Instance (void)
 {
 	::osl::MutexGuard aGuard (::osl::Mutex::getGlobalMutex());
     if (mpInstance.get() == NULL)

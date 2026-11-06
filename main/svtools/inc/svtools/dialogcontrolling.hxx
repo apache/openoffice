@@ -30,7 +30,7 @@
 #include <vcl/button.hxx>
 
 #include <vector>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 //........................................................................
 namespace svt
@@ -57,7 +57,7 @@ namespace svt
 
         virtual ~IWindowOperator();
     };
-    typedef ::boost::shared_ptr< IWindowOperator >  PWindowOperator;
+    typedef ::std::shared_ptr< IWindowOperator >  PWindowOperator;
 
     //=====================================================================
     //= IWindowEventFilter
@@ -72,7 +72,7 @@ namespace svt
 
         virtual ~IWindowEventFilter();
     };
-    typedef ::boost::shared_ptr< IWindowEventFilter >   PWindowEventFilter;
+    typedef ::std::shared_ptr< IWindowEventFilter >   PWindowEventFilter;
 
     //=====================================================================
     //= DialogController
@@ -94,7 +94,7 @@ namespace svt
     class SVT_DLLPUBLIC DialogController
     {
     private:
-        ::std::auto_ptr< DialogController_Data >    m_pImpl;
+        ::std::unique_ptr< DialogController_Data >    m_pImpl;
 
     public:
         DialogController( Window& _rInstigator, const PWindowEventFilter& _pEventFilter, const PWindowOperator& _pOperator );
@@ -127,7 +127,7 @@ namespace svt
         DialogController( const DialogController& );            // never implemented
         DialogController& operator=( const DialogController& ); // never implemented
     };
-    typedef ::boost::shared_ptr< DialogController > PDialogController;
+    typedef ::std::shared_ptr< DialogController > PDialogController;
 
     //=====================================================================
     //= ControlDependencyManager
@@ -142,7 +142,7 @@ namespace svt
     class SVT_DLLPUBLIC ControlDependencyManager
     {
     private:
-        ::std::auto_ptr< ControlDependencyManager_Data >    m_pImpl;
+        ::std::unique_ptr< ControlDependencyManager_Data >    m_pImpl;
 
     public:
         ControlDependencyManager();

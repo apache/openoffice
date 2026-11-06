@@ -55,13 +55,13 @@ private:
     /** The list of master pages displayed by this class.
     */
     class SortedMasterPageDescriptorList;
-    ::std::auto_ptr<SortedMasterPageDescriptorList> mpSortedMasterPages;
+    ::std::unique_ptr<SortedMasterPageDescriptorList> mpSortedMasterPages;
 
     AllMasterPagesSelector (
         ::Window* pParent,
         SdDrawDocument& rDocument,
         ViewShellBase& rBase,
-        const ::boost::shared_ptr<MasterPageContainer>& rpContainer,
+        const ::std::shared_ptr<MasterPageContainer>& rpContainer,
         const cssu::Reference<css::ui::XSidebar>& rxSidebar);
     virtual ~AllMasterPagesSelector (void);
 

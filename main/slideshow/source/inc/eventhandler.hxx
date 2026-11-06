@@ -24,7 +24,7 @@
 #ifndef INCLUDED_SLIDESHOW_EVENTHANDLER_HXX
 #define INCLUDED_SLIDESHOW_EVENTHANDLER_HXX
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 
 /* Definition of EventHandler interface */
@@ -55,7 +55,7 @@ namespace slideshow
             virtual bool handleEvent() = 0;
         };
 
-        typedef ::boost::shared_ptr< EventHandler > EventHandlerSharedPtr;
+        typedef ::std::shared_ptr< EventHandler > EventHandlerSharedPtr;
 
     }
 }

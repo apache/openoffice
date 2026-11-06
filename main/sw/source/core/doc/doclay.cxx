@@ -97,6 +97,7 @@
 #include <sortedobjs.hxx>
 #include <vector>
 #include <drawdoc.hxx>
+#include <memory>
 
 using namespace ::com::sun::star;
 using ::rtl::OUString;
@@ -2422,7 +2423,7 @@ std::set<SwRootFrm*> SwDoc::GetAllLayouts()
 }//swmod 070825
 
 
-void SwDoc::ShareLayout(boost::shared_ptr<SwRootFrm>& rPtr)
+void SwDoc::ShareLayout(std::shared_ptr<SwRootFrm>& rPtr)
 {
     pLayoutPtr = rPtr;
 }

@@ -35,6 +35,7 @@
 #include <svx/graphctl.hxx>
 
 #include <com/sun/star/frame/XFrame.hpp>
+#include <memory>
 
 /*************************************************************************
 |*
@@ -76,11 +77,11 @@ const sal_uInt32 IMapInventor = sal_uInt32('I') * 0x00000001+
 							sal_uInt32('P') * 0x01000000;
 
 
-typedef boost::shared_ptr< IMapObject > IMapObjectPtr;
+typedef std::shared_ptr< IMapObject > IMapObjectPtr;
 
 class IMapUserData : public SdrObjUserData
 {
-	// #i98386# use boost::shared_ptr here due to cloning possibilities
+	// #i98386# use std::shared_ptr here due to cloning possibilities
 	IMapObjectPtr			mpObj;
 
 public:

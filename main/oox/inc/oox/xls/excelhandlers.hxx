@@ -24,6 +24,7 @@
 #ifndef OOX_XLS_EXCELHANDLERS_HXX
 #define OOX_XLS_EXCELHANDLERS_HXX
 
+#include <memory>
 #include "oox/core/fragmenthandler2.hxx"
 #include "oox/xls/worksheethelper.hxx"
 
@@ -186,8 +187,8 @@ protected:
     bool                skipFragment();
 
 private:
-    typedef ::boost::shared_ptr< BinaryXInputStream >   XInputStreamRef;
-    typedef ::boost::shared_ptr< BiffInputStream >      BiffInputStreamRef;
+    typedef ::std::shared_ptr< BinaryXInputStream >   XInputStreamRef;
+    typedef ::std::shared_ptr< BiffInputStream >      BiffInputStreamRef;
 
     XInputStreamRef     mxXInStrm;
     BiffInputStreamRef  mxBiffStrm;

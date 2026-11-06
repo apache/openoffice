@@ -26,7 +26,7 @@
 
 #include "disposable.hxx"
 #include "view.hxx"
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 /* Definition of ViewUpdate interface */
 
@@ -65,7 +65,7 @@ namespace slideshow
             virtual bool needsUpdate() const = 0;
         };
 
-        typedef ::boost::shared_ptr< ViewUpdate > ViewUpdateSharedPtr;
+        typedef ::std::shared_ptr< ViewUpdate > ViewUpdateSharedPtr;
     }
 }
 

@@ -27,7 +27,7 @@
 #define OOX_DRAWINGML_DIAGRAM_HXX
 
 #include <vector>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <boost/enable_shared_from_this.hpp>
 #include "oox/drawingml/shape.hxx"
 #include "oox/drawingml/diagram/diagramlayoutatoms.hxx"
@@ -62,12 +62,12 @@ public:
 
 };
 
-typedef boost::shared_ptr< Connection > ConnectionPtr;
+typedef std::shared_ptr< Connection > ConnectionPtr;
 typedef std::vector< ConnectionPtr > Connections;
 
 class Point;
 
-typedef boost::shared_ptr< Point > PointPtr;
+typedef std::shared_ptr< Point > PointPtr;
 typedef std::vector< PointPtr >      Points;
 /** A point
  */
@@ -98,11 +98,11 @@ private:
 
 
 class PointsTree;
-typedef boost::shared_ptr< PointsTree > PointsTreePtr;
+typedef std::shared_ptr< PointsTree > PointsTreePtr;
 
 /** a points tree node */
 class PointsTree
-	: public boost::enable_shared_from_this< PointsTree >
+	: public std::enable_shared_from_this< PointsTree >
 {
 public:
 	typedef std::vector< PointsTreePtr > Childrens;
@@ -121,7 +121,7 @@ public:
 		{ return maChildrens.end(); }
 private:
 	PointPtr                           mpNode;
-	boost::weak_ptr< PointsTree >      mpParent;
+	std::weak_ptr< PointsTree >      mpParent;
 	Childrens       maChildrens;
 };
 
@@ -147,7 +147,7 @@ private:
 	dgm::Points         maPoints;
 };
 
-typedef boost::shared_ptr< DiagramData > DiagramDataPtr;
+typedef std::shared_ptr< DiagramData > DiagramDataPtr;
 
 
 
@@ -198,7 +198,7 @@ private:
 	// clrData
 };
 
-typedef boost::shared_ptr< DiagramLayout > DiagramLayoutPtr;
+typedef std::shared_ptr< DiagramLayout > DiagramLayoutPtr;
 
 ///////////////////////
 
@@ -207,7 +207,7 @@ class DiagramQStyles
 
 };
 
-typedef boost::shared_ptr< DiagramQStyles > DiagramQStylesPtr;
+typedef std::shared_ptr< DiagramQStyles > DiagramQStylesPtr;
 
 ///////////////////////
 
@@ -216,7 +216,7 @@ class DiagramColors
 
 };
 
-typedef boost::shared_ptr< DiagramColors > DiagramColorsPtr;
+typedef std::shared_ptr< DiagramColors > DiagramColorsPtr;
 
 ///////////////////////
 
@@ -245,7 +245,7 @@ private:
 };
 
 
-typedef boost::shared_ptr< Diagram > DiagramPtr;
+typedef std::shared_ptr< Diagram > DiagramPtr;
 
 } }
 

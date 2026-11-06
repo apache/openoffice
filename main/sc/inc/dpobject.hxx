@@ -32,7 +32,7 @@
 #include "pivot.hxx"
 #include <com/sun/star/sheet/XDimensionsSupplier.hpp>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 //------------------------------------------------------------------
 
@@ -96,7 +96,7 @@ private:
 	ScSheetSourceDesc*		pSheetDesc;		//	for sheet data
 	ScImportSourceDesc* 	pImpDesc;		//	for database data
 	ScDPServiceDesc*		pServDesc;		//	for external service
-    ::boost::shared_ptr<ScDPTableData>  mpTableData;
+    ::std::shared_ptr<ScDPTableData>  mpTableData;
 											// cached data
 	com::sun::star::uno::Reference<com::sun::star::sheet::XDimensionsSupplier> xSource;
 	ScDPOutput*				pOutput;

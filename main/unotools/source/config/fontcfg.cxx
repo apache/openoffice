@@ -855,7 +855,7 @@ void FontSubstConfiguration::getMapName( const String& rOrgName, String& rShortN
 }
 
 
-struct StrictStringSort : public ::std::binary_function< const FontNameAttr&, const FontNameAttr&, bool >
+struct StrictStringSort 
 {
     bool operator()( const FontNameAttr& rLeft, const FontNameAttr& rRight )
     { return rLeft.Name.CompareTo( rRight.Name ) == COMPARE_LESS ; }

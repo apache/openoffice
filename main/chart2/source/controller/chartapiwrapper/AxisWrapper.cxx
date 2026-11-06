@@ -55,6 +55,7 @@
 #include <algorithm>
 #include <rtl/ustrbuf.hxx>
 #include <rtl/math.hxx>
+#include <memory>
 
 using namespace ::com::sun::star;
 using namespace ::com::sun::star::chart2;
@@ -388,7 +389,7 @@ namespace wrapper
 {
 
 AxisWrapper::AxisWrapper(
-    tAxisType eType, ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact ) :
+    tAxisType eType, ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact ) :
         m_spChart2ModelContact( spChart2ModelContact ),
         m_aEventListenerContainer( m_aMutex ),
         m_eType( eType )

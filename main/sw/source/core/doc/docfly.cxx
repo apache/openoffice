@@ -492,7 +492,7 @@ sal_Bool SwDoc::SetFlyFrmAttr( SwFrmFmt& rFlyFmt, SfxItemSet& rSet )
 	if( !rSet.Count() )
 		return sal_False;
 
-    ::std::auto_ptr<SwUndoFmtAttrHelper> pSaveUndo;
+    ::std::unique_ptr<SwUndoFmtAttrHelper> pSaveUndo;
 
     if (GetIDocumentUndoRedo().DoesUndo())
     {

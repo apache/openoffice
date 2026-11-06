@@ -27,6 +27,7 @@
 #include <basegfx/vector/b2isize.hxx>
 #include <canvas/rendering/irendermodule.hxx>
 #include <canvas/rendering/isurface.hxx>
+#include <memory>
 
 #include "page.hxx"
 
@@ -80,7 +81,7 @@ namespace canvas
 	// PageManagerSharedPtr
 	//////////////////////////////////////////////////////////////////////////////////
 
-    typedef ::boost::shared_ptr< PageManager > PageManagerSharedPtr;
+    typedef ::std::shared_ptr< PageManager > PageManagerSharedPtr;
 
 	//////////////////////////////////////////////////////////////////////////////////
 	// End of file

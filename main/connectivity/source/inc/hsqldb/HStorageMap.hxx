@@ -30,7 +30,7 @@
 #include <com/sun/star/io/XInputStream.hpp>
 #include <com/sun/star/io/XSeekable.hpp>
 #ifndef BOOST_SHARED_PTR_HPP_INCLUDED
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #endif
 #include <comphelper/stl_types.hxx>
 #include <jni.h>
@@ -56,7 +56,7 @@ namespace connectivity
 		};
 
 
-		DECLARE_STL_USTRINGACCESS_MAP(::boost::shared_ptr<StreamHelper>,TStreamMap);
+		DECLARE_STL_USTRINGACCESS_MAP(::std::shared_ptr<StreamHelper>,TStreamMap);
         typedef ::std::pair< ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage >, ::rtl::OUString > TStorageURLPair;
 		typedef ::std::pair< TStorageURLPair, TStreamMap> TStoragePair;
 		DECLARE_STL_USTRINGACCESS_MAP(TStoragePair,TStorages);

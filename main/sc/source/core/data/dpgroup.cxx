@@ -51,6 +51,7 @@
 #include <vector>
 #include <unordered_set>
 #include <unordered_map>
+#include <memory>
 
 using namespace ::com::sun::star;
 using ::com::sun::star::uno::Any;
@@ -64,7 +65,7 @@ using ::rtl::OUStringHash;
 using ::std::vector;
 using ::std::unordered_set;
 using ::std::unordered_map;
-using ::boost::shared_ptr;
+using ::std::shared_ptr;
 
 #define D_TIMEFACTOR              86400.0
 
@@ -1201,12 +1202,12 @@ void ScDPGroupTableData::CreateCacheTable()
 
 void ScDPGroupTableData::ModifyFilterCriteria(vector<ScDPCacheTable::Criterion>& rCriteria)
 {
-    typedef unordered_map<long, const ScDPGroupDimension*> GroupFieldMapType;
+    typedef std::unordered_map<long, const ScDPGroupDimension*> GroupFieldMapType;
     GroupFieldMapType aGroupFieldIds;
     {
         ScDPGroupDimensionVec::const_iterator itr = aGroups.begin(), itrEnd = aGroups.end();
         for (; itr != itrEnd; ++itr)
-            aGroupFieldIds.insert( unordered_map<long, const ScDPGroupDimension*>::value_type(itr->GetGroupDim(), &(*itr)) );
+            aGroupFieldIds.insert( std::unordered_map<long, const ScDPGroupDimension*>::value_type(itr->GetGroupDim(), &(*itr)) );
     }
 
     vector<ScDPCacheTable::Criterion> aNewCriteria;
@@ -1304,14 +1305,14 @@ void ScDPGroupTableData::ModifyFilterCriteria(vector<ScDPCacheTable::Criterion>&
     rCriteria.swap(aNewCriteria);
 }
 
-void ScDPGroupTableData::FilterCacheTable(const vector<ScDPCacheTable::Criterion>& rCriteria, const unordered_set<sal_Int32>& rCatDims)
+void ScDPGroupTableData::FilterCacheTable(const vector<ScDPCacheTable::Criterion>& rCriteria, const std::unordered_set<sal_Int32>& rCatDims)
 {
     vector<ScDPCacheTable::Criterion> aNewCriteria(rCriteria);
     ModifyFilterCriteria(aNewCriteria);
     pSourceData->FilterCacheTable(aNewCriteria, rCatDims);
 }
 
-void ScDPGroupTableData::GetDrillDownData(const vector<ScDPCacheTable::Criterion>& rCriteria, const unordered_set<sal_Int32>& rCatDims, Sequence< Sequence<Any> >& rData)
+void ScDPGroupTableData::GetDrillDownData(const vector<ScDPCacheTable::Criterion>& rCriteria, const std::unordered_set<sal_Int32>& rCatDims, Sequence< Sequence<Any> >& rData)
 {
     vector<ScDPCacheTable::Criterion> aNewCriteria(rCriteria);
     ModifyFilterCriteria(aNewCriteria);

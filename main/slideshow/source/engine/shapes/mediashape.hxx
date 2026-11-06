@@ -25,7 +25,7 @@
 #define INCLUDED_SLIDESHOW_MEDIASHAPE_HXX
 
 #include <com/sun/star/uno/Reference.hxx>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 
 namespace com { namespace sun { namespace star { namespace drawing
@@ -40,7 +40,7 @@ namespace slideshow
         struct SlideShowContext;
         class  Shape;
 
-        boost::shared_ptr<Shape> createMediaShape(
+        std::shared_ptr<Shape> createMediaShape(
             const ::com::sun::star::uno::Reference<
                   ::com::sun::star::drawing::XShape >& xShape,
             double                                     nPrio,

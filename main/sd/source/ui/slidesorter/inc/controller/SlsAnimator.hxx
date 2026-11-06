@@ -33,7 +33,7 @@
 #include <boost/function.hpp>
 #include <boost/noncopyable.hpp>
 #include <boost/scoped_ptr.hpp>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 
 namespace sd { namespace slidesorter { namespace controller {
@@ -105,7 +105,7 @@ private:
     Timer maTimer;
     bool mbIsDisposed;
     class Animation;
-    typedef ::std::vector<boost::shared_ptr<Animation> > AnimationList;
+    typedef ::std::vector<std::shared_ptr<Animation> > AnimationList;
     AnimationList maAnimations;
     ::canvas::tools::ElapsedTime maElapsedTime;
 

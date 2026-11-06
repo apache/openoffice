@@ -29,13 +29,11 @@
 
 #include <vector>
 #include <map>
+#include <algorithm>
 
 #include <svl/stylepool.hxx>
 #include <svl/itemiter.hxx>
 #include <svl/itempool.hxx>
-
-
-using namespace boost;
 
 namespace {
     // A "Node" represents a subset of inserted SfxItemSets
@@ -435,7 +433,7 @@ StylePool::SfxItemSet_Pointer_t StylePoolImpl::insertItemSet( const SfxItemSet& 
     // a complete empty SfxItemSet would stay at the root node.
     // --> OD 2008-03-07 #i86923#
     // insert ignorable items to the tree leaves.
-    std::auto_ptr<SfxItemSet> pFoundIgnorableItems;
+    std::unique_ptr<SfxItemSet> pFoundIgnorableItems;
     if ( mpIgnorableItems )
     {
         pFoundIgnorableItems.reset( new SfxItemSet( *mpIgnorableItems ) );

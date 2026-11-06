@@ -26,7 +26,7 @@
 
 #include <sal/types.h>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <cppcanvas/color.hxx>
 #include <cppcanvas/canvas.hxx>
 
@@ -42,7 +42,7 @@ namespace basegfx
 namespace cppcanvas
 {
     // forward declaration, since PolyPolygon also derives from CanvasGraphic
-    typedef ::boost::shared_ptr< class PolyPolygon > PolyPolygonSharedPtr;
+    typedef ::std::shared_ptr< class PolyPolygon > PolyPolygonSharedPtr;
 
 
     /** This interface defines basic properties of
@@ -160,7 +160,7 @@ namespace cppcanvas
 
 	};
 
-    typedef ::boost::shared_ptr< ::cppcanvas::CanvasGraphic > CanvasGraphicSharedPtr;
+    typedef ::std::shared_ptr< ::cppcanvas::CanvasGraphic > CanvasGraphicSharedPtr;
 }
 
 #endif /* _CPPCANVAS_CANVASGRAPHIC_HXX */

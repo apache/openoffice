@@ -495,11 +495,8 @@ void ContentProvider::append(const ::rtl::Reference<ContentProperties>& _rProp)
 	::rtl::Reference<ContentProperties> aReturn;
 	ContentsMap::const_iterator aFind = ::std::find_if(	m_aContents.begin(),
 														m_aContents.end(),
-														::std::compose1(
-															::std::bind2nd(_aFunctor,_sName),
-															::std::select2nd<ContentsMap::value_type>()
-														)
-													);
+														[_sName](auto& _x) { return _aFunctor(_x.second, _sName); }
+														);
 	if(aFind != m_aContents.end())
 		aReturn = aFind->second;
 	return aReturn;

@@ -1171,7 +1171,7 @@ void SwXMLImport::SetConfigurationSettings(const Sequence < PropertyValue > & aC
     if( !xInfo.is() )
         return;
 
-    unordered_set< String, StringHashRef, StringEqRef > aSet;
+    std::unordered_set< String, StringHashRef, StringEqRef > aSet;
     aSet.insert(String("ForbiddenCharacters", RTL_TEXTENCODING_ASCII_US));
     aSet.insert(String("IsKernAsianPunctuation", RTL_TEXTENCODING_ASCII_US));
     aSet.insert(String("CharacterCompressionType", RTL_TEXTENCODING_ASCII_US));

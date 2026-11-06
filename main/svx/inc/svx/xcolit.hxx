@@ -27,14 +27,14 @@
 #include <tools/color.hxx>
 #include "svx/svxdllapi.h"
 #include <svx/xit.hxx>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 //-----------------
 // class XColorItem
 //-----------------
 
 class XColorList;
-typedef ::boost::shared_ptr< XColorList > XColorListSharedPtr;
+typedef ::std::shared_ptr< XColorList > XColorListSharedPtr;
 
 class SVX_DLLPUBLIC XColorItem : public NameOrIndex
 {

@@ -493,9 +493,9 @@ public:
 };
 BinaryCompatible_Impl::BinaryCompatible_Impl()
 {
-    BOOST_STATIC_ASSERT( ((sal_Bool) true) == sal_True &&
+    static_assert( ((sal_Bool) true) == sal_True &&
                          (1 != 0) == sal_True );
-    BOOST_STATIC_ASSERT( ((sal_Bool) false) == sal_False &&
+    static_assert( ((sal_Bool) false) == sal_False &&
                          (1 == 0) == sal_False );
 #ifdef MAX_ALIGNMENT_4
     // max alignment is 4

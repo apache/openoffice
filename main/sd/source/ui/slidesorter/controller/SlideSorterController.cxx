@@ -91,6 +91,7 @@
 #include <com/sun/star/drawing/XDrawPagesSupplier.hpp>
 #include <com/sun/star/drawing/XDrawPages.hpp>
 #include <com/sun/star/accessibility/AccessibleEventId.hpp>
+#include <memory>
 
 using namespace ::com::sun::star;
 using namespace ::com::sun::star::uno;
@@ -277,7 +278,7 @@ ScrollBarManager& SlideSorterController::GetScrollBarManager (void)
 
 
 
-::boost::shared_ptr<CurrentSlideManager> SlideSorterController::GetCurrentSlideManager (void) const
+::std::shared_ptr<CurrentSlideManager> SlideSorterController::GetCurrentSlideManager (void) const
 {
     OSL_ASSERT(mpCurrentSlideManager.get()!=NULL);
     return mpCurrentSlideManager;
@@ -286,7 +287,7 @@ ScrollBarManager& SlideSorterController::GetScrollBarManager (void)
 
 
 
-::boost::shared_ptr<SlotManager> SlideSorterController::GetSlotManager (void) const
+::std::shared_ptr<SlotManager> SlideSorterController::GetSlotManager (void) const
 {
     OSL_ASSERT(mpSlotManager.get()!=NULL);
     return mpSlotManager;
@@ -295,7 +296,7 @@ ScrollBarManager& SlideSorterController::GetScrollBarManager (void)
 
 
 
-::boost::shared_ptr<SelectionManager> SlideSorterController::GetSelectionManager (void) const
+::std::shared_ptr<SelectionManager> SlideSorterController::GetSelectionManager (void) const
 {
     OSL_ASSERT(mpSelectionManager.get()!=NULL);
     return mpSelectionManager;
@@ -304,7 +305,7 @@ ScrollBarManager& SlideSorterController::GetScrollBarManager (void)
 
 
 
-::boost::shared_ptr<InsertionIndicatorHandler>
+::std::shared_ptr<InsertionIndicatorHandler>
     SlideSorterController::GetInsertionIndicatorHandler (void) const
 {
     OSL_ASSERT(mpInsertionIndicatorHandler.get()!=NULL);
@@ -391,7 +392,7 @@ bool SlideSorterController::Command (
             // view shell, b) the edit mode, and c) on whether the selection
             // is empty or not.
             ViewShell::ShellType eMainViewShellType (ViewShell::ST_NONE);
-            ::boost::shared_ptr<ViewShell> pMainViewShell (
+            ::std::shared_ptr<ViewShell> pMainViewShell (
                 pViewShell->GetViewShellBase().GetMainViewShell());
             if (pMainViewShell.get() != NULL)
                 eMainViewShellType = pMainViewShell->GetShellType();
@@ -1061,7 +1062,7 @@ void SlideSorterController::SetDocumentSlides (const Reference<container::XIndex
 
 
 
-::boost::shared_ptr<Animator> SlideSorterController::GetAnimator (void) const
+::std::shared_ptr<Animator> SlideSorterController::GetAnimator (void) const
 {
     return mpAnimator;
 }

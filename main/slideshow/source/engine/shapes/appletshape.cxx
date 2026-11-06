@@ -29,7 +29,7 @@
 #include <canvas/verbosetrace.hxx>
 #include <canvas/canvastools.hxx>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 #include "appletshape.hxx"
 #include "externalshapebase.hxx"
@@ -306,7 +306,7 @@ namespace slideshow
             // No way of doing this, or?
         }
 
-        boost::shared_ptr<Shape> createAppletShape(
+        std::shared_ptr<Shape> createAppletShape(
             const uno::Reference< drawing::XShape >& xShape,
             double                                   nPrio,
             const ::rtl::OUString&                   rServiceName,
@@ -314,7 +314,7 @@ namespace slideshow
             sal_Size                                 nNumPropEntries,
             const SlideShowContext&                  rContext )
         {
-            boost::shared_ptr< AppletShape > pAppletShape(
+            std::shared_ptr< AppletShape > pAppletShape(
                 new AppletShape(xShape,
                                 nPrio,
                                 rServiceName,

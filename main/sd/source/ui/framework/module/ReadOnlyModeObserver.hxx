@@ -39,7 +39,7 @@
 #include <tools/link.hxx>
 #include <boost/function.hpp>
 #include <boost/scoped_ptr.hpp>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 namespace {
 

@@ -52,6 +52,7 @@
 #include <com/sun/star/frame/FrameAction.hpp>
 #include <sfx2/viewfrm.hxx>
 #include <tools/diagnose_ex.h>
+#include <memory>
 
 
 using namespace ::com::sun::star::accessibility;
@@ -637,7 +638,7 @@ void Listener::HandleShapeModification (const SdrPage* pPage)
 
     // Invalidate the preview of the page (in all slide sorters that display
     // it.)
-    ::boost::shared_ptr<cache::PageCacheManager> pCacheManager (cache::PageCacheManager::Instance());
+    ::std::shared_ptr<cache::PageCacheManager> pCacheManager (cache::PageCacheManager::Instance());
     if ( ! pCacheManager)
         return;
     SdDrawDocument* pDocument = mrSlideSorter.GetModel().GetDocument();

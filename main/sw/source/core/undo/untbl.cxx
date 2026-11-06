@@ -65,6 +65,7 @@
 #include <comcore.hrc>
 #include <unochart.hxx>
 #include <switerator.hxx>
+#include <memory>
 
 #ifndef DBG_UTIL
 #define CHECK_TABLE(t)
@@ -217,8 +218,8 @@ struct SwTblToTxtSave
     xub_StrLen m_nCntnt;
     SwHistory* m_pHstry;
     // metadata references for first and last paragraph in cell
-    ::boost::shared_ptr< ::sfx2::MetadatableUndo > m_pMetadataUndoStart;
-    ::boost::shared_ptr< ::sfx2::MetadatableUndo > m_pMetadataUndoEnd;
+    ::std::shared_ptr< ::sfx2::MetadatableUndo > m_pMetadataUndoStart;
+    ::std::shared_ptr< ::sfx2::MetadatableUndo > m_pMetadataUndoEnd;
 
     SwTblToTxtSave( SwDoc& rDoc, sal_uLong nNd, sal_uLong nEndIdx, xub_StrLen nCntnt );
     ~SwTblToTxtSave() { delete m_pHstry; }
@@ -1499,7 +1500,7 @@ SwUndoTblAutoFmt::~SwUndoTblAutoFmt()
 
 void SwUndoTblAutoFmt::SaveBoxCntnt( const SwTableBox& rBox )
 {
-    ::boost::shared_ptr<SwUndoTblNumFmt> const p(new SwUndoTblNumFmt(rBox));
+    ::std::shared_ptr<SwUndoTblNumFmt> const p(new SwUndoTblNumFmt(rBox));
     m_Undos.push_back(p);
 }
 

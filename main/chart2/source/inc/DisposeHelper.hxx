@@ -52,7 +52,7 @@ template< class Intf >
 }
 
 template< class T >
-    struct DisposeFunctor : public ::std::unary_function< T, void >
+    struct DisposeFunctor 
 {
     void operator() ( const T & xIntf )
     {
@@ -61,7 +61,7 @@ template< class T >
 };
 
 template< typename T >
-    struct DisposeFirstOfPairFunctor : public ::std::unary_function< T, void >
+    struct DisposeFirstOfPairFunctor 
 {
     void operator() ( const T & rElem )
     {
@@ -70,7 +70,7 @@ template< typename T >
 };
 
 template< typename T >
-    struct DisposeSecondOfPairFunctor : public ::std::unary_function< T, void >
+    struct DisposeSecondOfPairFunctor 
 {
     void operator() ( const T & rElem )
     {

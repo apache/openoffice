@@ -22,7 +22,7 @@
 
 
 
-//this is a shameless rip from sortedarray.hxx but changed to unordered_set
+//this is a shameless rip from sortedarray.hxx but changed to std::unordered_set
 
 #ifndef WW_HASH_WRAP_HXX
 #define WW_HASH_WRAP_HXX
@@ -31,7 +31,7 @@
 #include <tools/debug.hxx>
 #include <errhdl.hxx>       // ASSERT()
 
-//simple wrapper around unordered_set to behave like sorted array
+//simple wrapper around std::unordered_set to behave like sorted array
 namespace ww
 {
     /** simple template that manages a hash

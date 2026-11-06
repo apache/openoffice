@@ -28,7 +28,7 @@
 #include <swatrset.hxx>		// fuer SfxItemPool/-Set, Attr forward decl.
 #include <calbck.hxx>		// fuer SwModify
 #include <hintids.hxx>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 class IDocumentSettingAccess;
 class IDocumentDrawModelAccess;
@@ -40,7 +40,7 @@ class SwDoc;
 
 namespace drawinglayer { namespace attribute {
     class SdrAllFillAttributesHelper;
-    typedef boost::shared_ptr< SdrAllFillAttributesHelper > SdrAllFillAttributesHelperPtr;
+    typedef std::shared_ptr< SdrAllFillAttributesHelper > SdrAllFillAttributesHelperPtr;
 }}
 
 class SW_DLLPUBLIC SwFmt : public SwModify

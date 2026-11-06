@@ -36,6 +36,7 @@
 #include <boost/enable_shared_from_this.hpp>
 #include <boost/noncopyable.hpp>
 #include <boost/optional.hpp>
+#include <memory>
 
 namespace cppcanvas
 {
@@ -54,7 +55,7 @@ namespace internal {
 */
 class SlideChangeBase : public ViewEventHandler,
                         public NumberAnimation,
-                        public boost::enable_shared_from_this<SlideChangeBase>,
+                        public std::enable_shared_from_this<SlideChangeBase>,
                         private ::boost::noncopyable
 {
 public:
@@ -102,9 +103,9 @@ protected:
         /// The view this entry is for
         UnoViewSharedPtr                              mpView;
         /// outgoing slide sprite
-        boost::shared_ptr<cppcanvas::CustomSprite>    mpOutSprite;
+        std::shared_ptr<cppcanvas::CustomSprite>    mpOutSprite;
         /// incoming slide sprite
-        boost::shared_ptr<cppcanvas::CustomSprite>    mpInSprite;
+        std::shared_ptr<cppcanvas::CustomSprite>    mpInSprite;
         /// outgoing slide bitmap
         mutable SlideBitmapSharedPtr                  mpLeavingBitmap;
         /// incoming slide bitmap
@@ -129,7 +130,7 @@ protected:
     ::basegfx::B2ISize getLeavingSlideSizePixel( const UnoViewSharedPtr& pView ) const;
 
     void renderBitmap( SlideBitmapSharedPtr const&                 pSlideBitmap,
-                       boost::shared_ptr<cppcanvas::Canvas> const& pCanvas );
+                       std::shared_ptr<cppcanvas::Canvas> const& pCanvas );
 
     /** Called on derived classes to implement actual slide change.
 
@@ -143,9 +144,9 @@ protected:
         Current parameter value
     */
     virtual void performIn(
-        const boost::shared_ptr<cppcanvas::CustomSprite>&   rSprite,
+        const std::shared_ptr<cppcanvas::CustomSprite>&   rSprite,
         const ViewEntry&                                    rViewEntry,
-        const boost::shared_ptr<cppcanvas::Canvas>&         rDestinationCanvas,
+        const std::shared_ptr<cppcanvas::Canvas>&         rDestinationCanvas,
         double                                              t );
 
     /** Called on derived classes to implement actual slide change.
@@ -160,16 +161,16 @@ protected:
         Current parameter value
     */
     virtual void performOut(
-        const boost::shared_ptr<cppcanvas::CustomSprite>& rSprite,
+        const std::shared_ptr<cppcanvas::CustomSprite>& rSprite,
         const ViewEntry&                                  rViewEntry,
-        const boost::shared_ptr<cppcanvas::Canvas>&       rDestinationCanvas,
+        const std::shared_ptr<cppcanvas::Canvas>&       rDestinationCanvas,
         double                                            t );
 
     ScreenUpdater& getScreenUpdater() const { return mrScreenUpdater; }
 
 private:
 
-    boost::shared_ptr<cppcanvas::CustomSprite> createSprite(
+    std::shared_ptr<cppcanvas::CustomSprite> createSprite(
         UnoViewSharedPtr const &   pView,
         ::basegfx::B2DSize const & rSpriteSize,
         double                     nPrio ) const;

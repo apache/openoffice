@@ -39,7 +39,7 @@
 #include <vcl/outdev.hxx>
 #include <drawinglayer/primitive2d/baseprimitive2d.hxx>
 #include <memory>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <boost/noncopyable.hpp>
 
 class Point;
@@ -156,9 +156,9 @@ public:
 
     /** Return the window to which this view renders its output.
     */
-    //    ::boost::shared_ptr<sd::Window> GetWindow (void) const;
+    //    ::std::shared_ptr<sd::Window> GetWindow (void) const;
 
-    ::boost::shared_ptr<cache::PageCache> GetPreviewCache (void);
+    ::std::shared_ptr<cache::PageCache> GetPreviewCache (void);
 
     /** Set the bounding box of the insertion marker in model coordinates.
 
@@ -233,8 +233,8 @@ public:
 
     void UpdateOrientation (void);
 
-    ::boost::shared_ptr<PageObjectPainter> GetPageObjectPainter (void);
-    ::boost::shared_ptr<LayeredDevice> GetLayeredDevice (void) const;
+    ::std::shared_ptr<PageObjectPainter> GetPageObjectPainter (void);
+    ::std::shared_ptr<LayeredDevice> GetLayeredDevice (void) const;
 
     class DrawLock
     {
@@ -263,20 +263,20 @@ private:
     SlideSorter& mrSlideSorter;
     model::SlideSorterModel& mrModel;
     bool mbIsDisposed;
-    ::std::auto_ptr<Layouter> mpLayouter;
+    ::std::unique_ptr<Layouter> mpLayouter;
     bool mbPageObjectVisibilitiesValid;
-    ::boost::shared_ptr<cache::PageCache> mpPreviewCache;
-    ::boost::shared_ptr<LayeredDevice> mpLayeredDevice;
+    ::std::shared_ptr<cache::PageCache> mpPreviewCache;
+    ::std::shared_ptr<LayeredDevice> mpLayeredDevice;
     Range maVisiblePageRange;
     bool mbModelChangedWhileModifyEnabled;
     Size maPreviewSize;
     bool mbPreciousFlagUpdatePending;
     Layouter::Orientation meOrientation;
-    ::boost::shared_ptr<controller::Properties> mpProperties;
+    ::std::shared_ptr<controller::Properties> mpProperties;
     model::SharedPageDescriptor mpPageUnderMouse;
     sal_Int32 mnButtonUnderMouse;
-    ::boost::shared_ptr<PageObjectPainter> mpPageObjectPainter;
-    ::boost::shared_ptr<SelectionPainter> mpSelectionPainter;
+    ::std::shared_ptr<PageObjectPainter> mpPageObjectPainter;
+    ::std::shared_ptr<SelectionPainter> mpSelectionPainter;
     Region maRedrawRegion;
     SharedILayerPainter mpBackgroundPainter;
     ::boost::scoped_ptr<ButtonBar> mpButtonBar;

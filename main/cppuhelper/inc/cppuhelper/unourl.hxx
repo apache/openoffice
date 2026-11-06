@@ -58,7 +58,7 @@ public:
 
     /** @internal
      */
-    explicit UnoUrlDescriptor(std::auto_ptr< Impl > & rImpl);
+    explicit UnoUrlDescriptor(std::unique_ptr< Impl > & rImpl);
 
     UnoUrlDescriptor(UnoUrlDescriptor const & rOther);
 
@@ -105,7 +105,7 @@ public:
     rtl::OUString getParameter(rtl::OUString const & rKey) const;
 
 private:
-    std::auto_ptr< Impl > m_xImpl;
+    std::unique_ptr< Impl > m_xImpl;
 };
 
 /** Parse UNO URLs into their components.
@@ -182,7 +182,7 @@ public:
 private:
     class Impl;
 
-    std::auto_ptr< Impl > m_xImpl;
+    std::unique_ptr< Impl > m_xImpl;
 };
 
 }

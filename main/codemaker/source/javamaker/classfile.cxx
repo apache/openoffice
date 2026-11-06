@@ -109,7 +109,7 @@ void writeU4(FileStream & file, sal_uInt32 data) {
 void writeStream(FileStream & file, std::vector< unsigned char > const & stream)
 {
     std::vector< unsigned char >::size_type n = stream.size();
-    BOOST_STATIC_ASSERT(
+    static_assert(
         sizeof (std::vector< unsigned char >::size_type)
         <= sizeof (sal_uInt64));
         // both unsigned integral, so sizeof is a practically sufficient

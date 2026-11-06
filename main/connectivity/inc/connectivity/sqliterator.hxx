@@ -71,7 +71,7 @@ namespace connectivity
 		::vos::ORef<OSQLColumns>			            m_aOrderColumns;	// the order by columns
 		::vos::ORef<OSQLColumns>			            m_aCreateColumns;	// the columns for Create table clause
 
-        ::std::auto_ptr< OSQLParseTreeIteratorImpl >    m_pImpl;
+        ::std::unique_ptr< OSQLParseTreeIteratorImpl >    m_pImpl;
 
         void				traverseParameter(const OSQLParseNode* _pParseNode,const OSQLParseNode* _pColumnRef,const ::rtl::OUString& _aColumnName,const ::rtl::OUString& _aTableRange, const ::rtl::OUString& _rColumnAlias);
 		// F"ugt eine Tabelle in die Map ein

@@ -21,6 +21,7 @@
 
 
 
+#include <memory>
 #include "resources.hxx"
 #include "WW8DocumentImpl.hxx"
 
@@ -30,7 +31,7 @@ namespace doctok
 
 class ShapeTypeToString
 {
-    typedef boost::shared_ptr<ShapeTypeToString> Pointer_t;
+    typedef std::shared_ptr<ShapeTypeToString> Pointer_t;
 
     static Pointer_t pInstance;
 

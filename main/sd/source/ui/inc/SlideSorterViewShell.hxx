@@ -28,7 +28,7 @@
 #include "glob.hxx"
 #include <sfx2/shell.hxx>
 #include <sfx2/viewfac.hxx>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <vector>
 
 namespace sd { namespace slidesorter { namespace controller {
@@ -49,7 +49,7 @@ public:
     TYPEINFO();
     SFX_DECL_INTERFACE(SD_IF_SDSLIDESORTERVIEWSHELL)
 
-    static ::boost::shared_ptr<SlideSorterViewShell> Create(
+    static ::std::shared_ptr<SlideSorterViewShell> Create(
         SfxViewFrame* pFrame,
         ViewShellBase& rViewShellBase,
         ::Window* pParentWindow,
@@ -141,9 +141,9 @@ public:
 
     /** Return the set of selected pages.
     */
-    ::boost::shared_ptr<PageSelection> GetPageSelection (void) const;
+    ::std::shared_ptr<PageSelection> GetPageSelection (void) const;
 
-    void SetPageSelection (const ::boost::shared_ptr<PageSelection>& rSelection);
+    void SetPageSelection (const ::std::shared_ptr<PageSelection>& rSelection);
 
     /** Add a listener that is called when the selection of the slide sorter
         changes.
@@ -194,7 +194,7 @@ protected:
     virtual ::svl::IUndoManager* ImpGetUndoManager (void) const;
 
 private:
-    ::boost::shared_ptr<SlideSorter> mpSlideSorter;
+    ::std::shared_ptr<SlideSorter> mpSlideSorter;
     bool mbIsArrangeGUIElementsPending;
 
     SlideSorterViewShell (
@@ -211,7 +211,7 @@ private:
     virtual void UpdateScrollBars (void);
 };
 
-typedef ::boost::shared_ptr<SlideSorterViewShell::PageSelection> SharedPageSelection;
+typedef ::std::shared_ptr<SlideSorterViewShell::PageSelection> SharedPageSelection;
 
 } } // end of namespace ::sd::slidesorter
 

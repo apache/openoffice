@@ -59,7 +59,7 @@ namespace dbaui
 	    virtual short	Execute();
 
     private:
-        ::std::auto_ptr< OTextConnectionHelper >    m_pTextConnectionHelper;
+        ::std::unique_ptr< OTextConnectionHelper >    m_pTextConnectionHelper;
         OKButton                                    m_aOK;
         CancelButton                                m_aCancel;
         SfxItemSet&                                 m_rItems;

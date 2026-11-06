@@ -26,7 +26,7 @@
 
 #include "disposable.hxx"
 #include <com/sun/star/uno/Reference.hxx>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 namespace com {  namespace sun { namespace star { namespace drawing {
     class XShape;
@@ -59,7 +59,7 @@ namespace slideshow
 				after a corresponding number of leaveAnimationMode()
 				calls.
              */
-            virtual void enterAnimationMode( const boost::shared_ptr<AnimatableShape>& rShape ) = 0;
+            virtual void enterAnimationMode( const std::shared_ptr<AnimatableShape>& rShape ) = 0;
 
             /** Notify the ShapeManager that the given Shape is no
                 longer animated.
@@ -70,7 +70,7 @@ namespace slideshow
 				to call this method more often than
 				enterAnimationMode().
              */
-            virtual void leaveAnimationMode( const boost::shared_ptr<AnimatableShape>& rShape ) = 0;
+            virtual void leaveAnimationMode( const std::shared_ptr<AnimatableShape>& rShape ) = 0;
 
             /** Notify that a shape needs an update
 
@@ -81,7 +81,7 @@ namespace slideshow
                 @param rShape
                 Shape which needs an update
              */
-            virtual void notifyShapeUpdate( const boost::shared_ptr<Shape>& rShape ) = 0;
+            virtual void notifyShapeUpdate( const std::shared_ptr<Shape>& rShape ) = 0;
 
             /** Lookup a Shape from an XShape model object
 
@@ -92,7 +92,7 @@ namespace slideshow
                 The XShape object, for which the representing Shape
                 should be looked up.
              */
-            virtual boost::shared_ptr<Shape> lookupShape(
+            virtual std::shared_ptr<Shape> lookupShape(
                 ::com::sun::star::uno::Reference<
                     ::com::sun::star::drawing::XShape > const & xShape ) const = 0;
 
@@ -103,7 +103,7 @@ namespace slideshow
                 hyperlink region lookup. Must be in absolute user
                 space coordinates.
              */
-            virtual void addHyperlinkArea( const boost::shared_ptr<HyperlinkArea>& rArea ) = 0;
+            virtual void addHyperlinkArea( const std::shared_ptr<HyperlinkArea>& rArea ) = 0;
 
             /** Unregister given shape as a hyperlink target
 
@@ -111,10 +111,10 @@ namespace slideshow
                 Hyperlink sensitive area. Will cease to participate in
                 hyperlink region lookup.
              */
-            virtual void removeHyperlinkArea( const boost::shared_ptr<HyperlinkArea>& rArea ) = 0;
+            virtual void removeHyperlinkArea( const std::shared_ptr<HyperlinkArea>& rArea ) = 0;
         };
 
-        typedef ::boost::shared_ptr< ShapeManager > ShapeManagerSharedPtr;
+        typedef ::std::shared_ptr< ShapeManager > ShapeManagerSharedPtr;
     }
 }
 

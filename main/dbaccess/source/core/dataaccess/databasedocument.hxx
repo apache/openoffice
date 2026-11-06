@@ -66,7 +66,7 @@
 #include <cppuhelper/implbase3.hxx>
 #include <rtl/ref.hxx>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <boost/noncopyable.hpp>
 
 namespace comphelper {

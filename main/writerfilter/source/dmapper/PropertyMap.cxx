@@ -20,6 +20,7 @@
  *************************************************************/
 
 
+#include <algorithm>
 #include <PropertyMap.hxx>
 #include <ooxml/resourceids.hxx>
 #include <DomainMapper_Impl.hxx>
@@ -214,7 +215,7 @@ XMLTag::Pointer_t PropertyMap::toTag() const
 
   -----------------------------------------------------------------------*/
 template<class T>
-    struct removeExistingElements : public ::std::unary_function<T, void>
+    struct removeExistingElements 
 {
   PropertyMap& rMap;
 

@@ -34,6 +34,7 @@
 
 #include <map>
 #include <vector>
+#include <memory>
 
 using namespace com::sun::star;
 
@@ -47,7 +48,7 @@ namespace vcl
         ~ExtWindowImpl()
         {}
 
-        boost::shared_ptr< WindowArranger >      mxLayout;
+        std::shared_ptr< WindowArranger >      mxLayout;
         bool                                     mbOwnedByParent;
         rtl::OUString                            maIdentifier;
     };
@@ -97,9 +98,9 @@ void Window::ImplExtResize()
     }
 }
 
-boost::shared_ptr< vcl::WindowArranger > Window::getLayout()
+std::shared_ptr< vcl::WindowArranger > Window::getLayout()
 {
-    boost::shared_ptr< vcl::WindowArranger > xRet;
+    std::shared_ptr< vcl::WindowArranger > xRet;
     vcl::ExtWindowImpl* pImpl = ImplGetExtWindowImpl();
     if( pImpl )
     {

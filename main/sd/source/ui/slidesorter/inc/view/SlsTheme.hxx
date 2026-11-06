@@ -31,8 +31,8 @@
 #include <vcl/gradient.hxx>
 #include <tools/color.hxx>
 
-#include <boost/shared_ptr.hpp>
-#include <boost/weak_ptr.hpp>
+#include <memory>
+#include <memory>
 
 
 namespace sd { namespace slidesorter { namespace controller {
@@ -48,13 +48,13 @@ namespace sd { namespace slidesorter { namespace view {
 class Theme
 {
 public:
-    Theme (const ::boost::shared_ptr<controller::Properties>& rpProperties);
+    Theme (const ::std::shared_ptr<controller::Properties>& rpProperties);
 
     /** Call this method to update some colors as response to a change of
         a system color change.
     */
     void Update (
-        const ::boost::shared_ptr<controller::Properties>& rpProperties);
+        const ::std::shared_ptr<controller::Properties>& rpProperties);
 
     //    BitmapEx GetInsertIndicatorIcon (void) const;
 
@@ -63,7 +63,7 @@ public:
         Font_PageCount,
         Font_Button
     };
-    static ::boost::shared_ptr<Font> GetFont (
+    static ::std::shared_ptr<Font> GetFont (
         const FontType eType,
         const OutputDevice& rDevice);
 

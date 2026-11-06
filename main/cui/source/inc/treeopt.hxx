@@ -31,6 +31,7 @@
 #include <vcl/fixed.hxx>
 
 #include <vector>
+#include <memory>
 
 // static ----------------------------------------------------------------
 
@@ -44,7 +45,7 @@ class SfxModule;
 class SfxShell;
 class SfxItemSet;
 class XColorList;
-typedef ::boost::shared_ptr< XColorList > XColorListSharedPtr;
+typedef ::std::shared_ptr< XColorList > XColorListSharedPtr;
 
 class OfaOptionsTreeListBox : public SvTreeListBox
 {

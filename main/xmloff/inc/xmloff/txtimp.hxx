@@ -31,7 +31,7 @@
 #include <map>
 #include <memory>
 #include <boost/utility.hpp>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 #include <tools/list.hxx>
 #include <xmloff/xmltkmap.hxx>
@@ -386,11 +386,11 @@ class XMLOFF_DLLPUBLIC XMLTextImportHelper : public UniRefBase,
 {
 private:
     struct Impl;
-    ::std::auto_ptr<Impl> m_pImpl;
+    ::std::unique_ptr<Impl> m_pImpl;
     /// ugly, but implementation of this is in XMLPropertyBackpatcher.cxx
     struct BackpatcherImpl;
-    ::boost::shared_ptr<BackpatcherImpl> m_pBackpatcherImpl;
-    ::boost::shared_ptr<BackpatcherImpl> MakeBackpatcherImpl();
+    ::std::shared_ptr<BackpatcherImpl> m_pBackpatcherImpl;
+    ::std::shared_ptr<BackpatcherImpl> MakeBackpatcherImpl();
 
 protected:
 	virtual SvXMLImportContext *CreateTableChildContext(
@@ -599,7 +599,7 @@ public:
 		const ::com::sun::star::uno::Reference<
 				::com::sun::star::text::XTextRange> & rRange,
         ::rtl::OUString const& i_rXmlId,
-        ::boost::shared_ptr< ::xmloff::ParsedRDFaAttributes > &
+        ::std::shared_ptr< ::xmloff::ParsedRDFaAttributes > &
             i_rpRDFaAttributes);
 
 	/// process the start of a range reference
@@ -608,7 +608,7 @@ public:
 		::com::sun::star::uno::Reference<
 				::com::sun::star::text::XTextRange> & o_rRange,
         ::rtl::OUString & o_rXmlId,
-        ::boost::shared_ptr< ::xmloff::ParsedRDFaAttributes > &
+        ::std::shared_ptr< ::xmloff::ParsedRDFaAttributes > &
             o_rpRDFaAttributes);
 
 	::rtl::OUString FindActiveBookmarkName();

@@ -48,7 +48,7 @@ namespace toolkitform
     */
     void TOOLKIT_DLLPUBLIC describePDFControl(
             const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XControl >& _rxControl,
-            ::std::auto_ptr< ::vcl::PDFWriter::AnyWidget >& _rpDescriptor,
+            ::std::unique_ptr< ::vcl::PDFWriter::AnyWidget >& _rpDescriptor,
             ::vcl::PDFExtOutDevData& i_pdfExportData
         ) SAL_THROW(());
 

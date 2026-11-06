@@ -53,7 +53,7 @@
 
 #include <functional>
 #include <memory>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 FORWARD_DECLARE_INTERFACE(awt,XControl)
 FORWARD_DECLARE_INTERFACE(awt,XControlContainer)

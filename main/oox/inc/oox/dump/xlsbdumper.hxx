@@ -24,6 +24,7 @@
 #ifndef OOX_DUMP_XLSBDUMPER_HXX
 #define OOX_DUMP_XLSBDUMPER_HXX
 
+#include <memory>
 #include "oox/dump/dumperbase.hxx"
 
 #if OOX_INCLUDE_DUMPER
@@ -91,7 +92,7 @@ private:
     bool                readCompressedInt( BinaryInputStream& rStrm, sal_Int32& ornValue );
 
 private:
-    typedef ::boost::shared_ptr< SequenceInputStream > SequenceInputStreamRef;
+    typedef ::std::shared_ptr< SequenceInputStream > SequenceInputStreamRef;
 
     SequenceInputStreamRef mxBiffStrm;
     NameListRef         mxErrCodes;
@@ -170,8 +171,8 @@ private:
 private:
     enum AddDataType { ADDDATA_EXP, ADDDATA_ARRAY, ADDDATA_MEMAREA };
 
-    typedef ::boost::shared_ptr< FormulaStack >                 FormulaStackRef;
-    typedef ::boost::shared_ptr< ::oox::xls::FunctionProvider > FuncProvRef;
+    typedef ::std::shared_ptr< FormulaStack >                 FormulaStackRef;
+    typedef ::std::shared_ptr< ::oox::xls::FunctionProvider > FuncProvRef;
     typedef ::std::vector< AddDataType >                        AddDataTypeVec;
 
     NameListRef         mxTokens;
@@ -207,7 +208,7 @@ private:
     void                dumpCellHeader( bool bWithColumn );
 
 private:
-    typedef ::boost::shared_ptr< FormulaObject > FormulaObjectRef;
+    typedef ::std::shared_ptr< FormulaObject > FormulaObjectRef;
 
     FormulaObjectRef    mxFmlaObj;
 };

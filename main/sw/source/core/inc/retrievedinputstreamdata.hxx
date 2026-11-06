@@ -34,6 +34,7 @@
 #include <map>
 
 #include <boost/weak_ptr.hpp>
+#include <memory>
 class SwAsyncRetrieveInputStreamThreadConsumer;
 //#ifndef _RETRIEVEINPUTSTREAMCONSUMER_HXX
 //#include <retrieveinputstreamconsumer.hxx>
@@ -58,7 +59,7 @@ class SwRetrievedInputStreamDataManager
 
         struct tData
         {
-            boost::weak_ptr< SwAsyncRetrieveInputStreamThreadConsumer > mpThreadConsumer;
+            std::weak_ptr< SwAsyncRetrieveInputStreamThreadConsumer > mpThreadConsumer;
             com::sun::star::uno::Reference<com::sun::star::io::XInputStream> mxInputStream;
             sal_Bool mbIsStreamReadOnly;
 
@@ -67,7 +68,7 @@ class SwRetrievedInputStreamDataManager
                   mbIsStreamReadOnly( sal_False )
             {};
 
-            tData( boost::weak_ptr< SwAsyncRetrieveInputStreamThreadConsumer > pThreadConsumer )
+            tData( std::weak_ptr< SwAsyncRetrieveInputStreamThreadConsumer > pThreadConsumer )
                 : mpThreadConsumer( pThreadConsumer ),
                   mbIsStreamReadOnly( sal_False )
             {};
@@ -79,7 +80,7 @@ class SwRetrievedInputStreamDataManager
         {
         };
 
-        tDataKey ReserveData( boost::weak_ptr< SwAsyncRetrieveInputStreamThreadConsumer > pThreadConsumer );
+        tDataKey ReserveData( std::weak_ptr< SwAsyncRetrieveInputStreamThreadConsumer > pThreadConsumer );
 
         void PushData( const tDataKey nDataKey,
                        com::sun::star::uno::Reference<com::sun::star::io::XInputStream> xInputStream,

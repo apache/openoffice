@@ -112,6 +112,7 @@
 #include <algorithm>
 #include <stdio.h>
 #include <iostream>
+#include <memory>
 
 using namespace com::sun::star;
 using namespace ::slideshow::internal;
@@ -450,7 +451,7 @@ private:
     boost::optional<sal_Int32>		    maEraseInk;
     // end changed
 
-    boost::shared_ptr<canvas::tools::ElapsedTime> mpPresTimer;
+    std::shared_ptr<canvas::tools::ElapsedTime> mpPresTimer;
     ScreenUpdater                           maScreenUpdater;
     EventQueue                              maEventQueue;
     EventMultiplexer                        maEventMultiplexer;
@@ -458,10 +459,10 @@ private:
     UserEventQueue                          maUserEventQueue;
     SubsettableShapeManagerSharedPtr        mpDummyPtr;
 
-    boost::shared_ptr<SeparateListenerImpl> mpListener;
+    std::shared_ptr<SeparateListenerImpl> mpListener;
 
-    boost::shared_ptr<RehearseTimingsActivity> mpRehearseTimingsActivity;
-    boost::shared_ptr<WaitSymbol>           mpWaitSymbol;
+    std::shared_ptr<RehearseTimingsActivity> mpRehearseTimingsActivity;
+    std::shared_ptr<WaitSymbol>           mpWaitSymbol;
 
     // the current slide transition sound object:
     SoundPlayerSharedPtr                    mpCurrentSlideTransitionSound;
@@ -1879,7 +1880,7 @@ void SlideShowImpl::addShapeEventListener(
         aIter = maShapeEventListeners.insert(
             ShapeEventListenerMap::value_type(
                 xShape,
-                boost::shared_ptr<cppu::OInterfaceContainerHelper>(
+                std::shared_ptr<cppu::OInterfaceContainerHelper>(
                     new cppu::OInterfaceContainerHelper(m_aMutex)))).first;
     }
 

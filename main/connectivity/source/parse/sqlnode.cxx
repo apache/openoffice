@@ -612,7 +612,7 @@ bool OSQLParseNode::impl_parseTableNameNodeToString_throw( ::rtl::OUStringBuffer
         if ( bEscapeProcessing && rParam.pParser )
         {
             ::rtl::OUString sError;
-            ::std::auto_ptr< OSQLParseNode > pSubQueryNode( rParam.pParser->parseTree( sError, sCommand, sal_False ) );
+            ::std::unique_ptr< OSQLParseNode > pSubQueryNode( rParam.pParser->parseTree( sError, sCommand, sal_False ) );
             if ( pSubQueryNode.get() )
             {
                 // parse the sub-select to SDBC level, too

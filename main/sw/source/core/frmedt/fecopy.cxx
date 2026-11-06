@@ -84,6 +84,7 @@
 #include <mvsave.hxx>
 #include <vcl/virdev.hxx>
 #include <svx/svdundo.hxx>
+#include <memory>
 
 using namespace ::com::sun::star;
 
@@ -694,8 +695,8 @@ sal_Bool SwFEShell::Copy( SwFEShell* pDestShell, const Point& rSttPt,
 |*************************************************************************/
 
 namespace {
-    typedef boost::shared_ptr<SwPaM> PaMPtr;
-    typedef boost::shared_ptr<SwPosition> PositionPtr;
+    typedef std::shared_ptr<SwPaM> PaMPtr;
+    typedef std::shared_ptr<SwPosition> PositionPtr;
     typedef std::pair< PaMPtr, PositionPtr > Insertion;
 }
 

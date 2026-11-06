@@ -110,7 +110,7 @@ void FuOutlineBullet::DoExecute( SfxRequest& rReq )
 
 	                OutlinerView* pOLV = mpView->GetTextEditOutlinerView();
 
-	                std::auto_ptr< OutlineViewModelChangeGuard > aGuard;
+	                std::unique_ptr< OutlineViewModelChangeGuard > aGuard;
 
 	                if (mpView->ISA(OutlineView))
 	                {
@@ -258,7 +258,7 @@ void FuOutlineBullet::SetCurrentBulletsNumbering(SfxRequest& rReq)
     }
 
     OutlinerView* pOLV = mpView->GetTextEditOutlinerView();
-    std::auto_ptr< OutlineViewModelChangeGuard > aGuard;
+    std::unique_ptr< OutlineViewModelChangeGuard > aGuard;
     {
         if (mpView->ISA(OutlineView))
         {

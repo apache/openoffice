@@ -84,7 +84,7 @@ class XMLOFF_DLLPUBLIC XMLTextParagraphExport : public XMLStyleExport
 	UniReference < SvXMLExportPropertyMapper > xSectionPropMapper;
 	UniReference < SvXMLExportPropertyMapper > xRubyPropMapper;
 
-    const ::std::auto_ptr< ::xmloff::BoundFrameSets > pBoundFrameSets;
+    const ::std::unique_ptr< ::xmloff::BoundFrameSets > pBoundFrameSets;
 	XMLTextFieldExport			*pFieldExport;
 	OUStrings_Impl				*pListElements;
     // --> OD 2008-05-07 #refactorlists# - no longer needed

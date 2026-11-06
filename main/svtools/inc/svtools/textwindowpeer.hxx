@@ -59,7 +59,7 @@ private:
     ::TextView & m_rView;
 	bool m_bCompoundControlChild;
 
-    ::std::auto_ptr< ::svt::AccessibleFactoryAccess  >  m_pFactoryAccess;
+    ::std::unique_ptr< ::svt::AccessibleFactoryAccess  >  m_pFactoryAccess;
 };
 
 }

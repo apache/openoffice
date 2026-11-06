@@ -65,7 +65,7 @@ public:
                                             ,IControlReferenceHandler* _pDlg = NULL );
 					virtual ~FormulaModalDialog();
 private:
-    ::std::auto_ptr<FormulaDlg_Impl> m_pImpl;
+    ::std::unique_ptr<FormulaDlg_Impl> m_pImpl;
 
 protected:
     void            disableOk();
@@ -113,7 +113,7 @@ public:
                                     , IControlReferenceHandler* _pDlg = NULL );
 					virtual ~FormulaDlg();
 private:
-    ::std::auto_ptr<FormulaDlg_Impl> m_pImpl;
+    ::std::unique_ptr<FormulaDlg_Impl> m_pImpl;
 
     DECL_LINK( UpdateFocusHdl, Timer*);
 protected:

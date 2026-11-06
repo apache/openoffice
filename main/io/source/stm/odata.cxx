@@ -876,7 +876,7 @@ struct hashObjectContainer_Impl
 	}
 };
 
-typedef unordered_map
+typedef std::unordered_map
 <
 	Reference< XInterface >,
 	sal_Int32,

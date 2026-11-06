@@ -38,7 +38,7 @@ namespace frm
 {
 //........................................................................
 
-    struct TypeCompareLess : public ::std::binary_function< ::com::sun::star::uno::Type, ::com::sun::star::uno::Type, bool >
+    struct TypeCompareLess 
     {
     private:
         typedef ::com::sun::star::uno::Type             Type;

@@ -70,6 +70,7 @@
 #include <vcl/waitobj.hxx>
 #include <osl/thread.hxx>
 #include <vos/mutex.hxx>
+#include <memory>
 
 
 #define MAX_THREADS 10
@@ -285,7 +286,7 @@ namespace
 {
     class RelationLoader : public ::osl::Thread
     {
-        DECLARE_STL_MAP(::rtl::OUString,::boost::shared_ptr<OTableWindowData>,::comphelper::UStringMixLess,TTableDataHelper);
+        DECLARE_STL_MAP(::rtl::OUString,::std::shared_ptr<OTableWindowData>,::comphelper::UStringMixLess,TTableDataHelper);
         TTableDataHelper                    m_aTableData;
         TTableConnectionData                m_vTableConnectionData;
         const Sequence< ::rtl::OUString>    m_aTableList;
@@ -366,7 +367,7 @@ namespace
         bool bNotFound = true, bAdded = false;
         if ( aFind == m_aTableData.end() )
         {
-            aFind = m_aTableData.insert(TTableDataHelper::value_type(sSourceName,::boost::shared_ptr<OTableWindowData>(new OTableWindowData(xTableProp,sSourceName, sSourceName)))).first;
+            aFind = m_aTableData.insert(TTableDataHelper::value_type(sSourceName,::std::shared_ptr<OTableWindowData>(new OTableWindowData(xTableProp,sSourceName, sSourceName)))).first;
 		    aFind->second->ShowAll(sal_False);
             bAdded = true;
         }
@@ -401,7 +402,7 @@ namespace
                         if ( m_xTables->hasByName(sReferencedTable) )
                         {
                             Reference<XPropertySet>  xReferencedTable(m_xTables->getByName(sReferencedTable),UNO_QUERY);
-					        aRefFind = m_aTableData.insert(TTableDataHelper::value_type(sReferencedTable,::boost::shared_ptr<OTableWindowData>(new OTableWindowData(xReferencedTable,sReferencedTable, sReferencedTable)))).first;
+					        aRefFind = m_aTableData.insert(TTableDataHelper::value_type(sReferencedTable,::std::shared_ptr<OTableWindowData>(new OTableWindowData(xReferencedTable,sReferencedTable, sReferencedTable)))).first;
 		                    aRefFind->second->ShowAll(sal_False);
                         }
                         else

@@ -73,7 +73,7 @@ class SvxSearchItem;
 class SvxShadowItem;
 class Window;
 class XColorList;
-typedef ::boost::shared_ptr< XColorList > XColorListSharedPtr;
+typedef ::std::shared_ptr< XColorList > XColorListSharedPtr;
 class List;
 
 class ScAutoFormatData;
@@ -272,7 +272,7 @@ private:
     std::list<ScDPTableDataCache*>   m_listDPObjectsCaches;
     // End Comments
 	ScChartCollection*	pChartCollection;
-    std::auto_ptr< ScTemporaryChartLock > apTemporaryChartLock;
+    std::unique_ptr< ScTemporaryChartLock > apTemporaryChartLock;
 	ScPatternAttr*		pSelectionAttr;					// Attribute eines Blocks
 	mutable sfx2::LinkManager*		pLinkManager;
 	ScFormulaCell*		pFormulaTree;					// Berechnungsbaum Start
@@ -295,13 +295,13 @@ private:
 
 	ScFieldEditEngine*	pCacheFieldEditEngine;
 
-    ::std::auto_ptr<ScDocProtection> pDocProtection;
-    ::std::auto_ptr<ScClipParam>     mpClipParam;
+    ::std::unique_ptr<ScDocProtection> pDocProtection;
+    ::std::unique_ptr<ScClipParam>     mpClipParam;
 
-    ::std::auto_ptr<ScExternalRefManager> pExternalRefMgr;
+    ::std::unique_ptr<ScExternalRefManager> pExternalRefMgr;
 
     // mutable for lazy construction
-    mutable ::std::auto_ptr< ScFormulaParserPool >
+    mutable ::std::unique_ptr< ScFormulaParserPool >
                         mxFormulaParserPool;            /// Pool for all external formula parsers used by this document.
 
 	String              aDocName;                       // opt: Dokumentname

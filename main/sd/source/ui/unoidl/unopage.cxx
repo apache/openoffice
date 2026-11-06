@@ -77,6 +77,7 @@
 #include "unohelp.hxx"
 #include <vcl/dibtools.hxx>
 #include <svx/svdograf.hxx>
+#include <memory>
 
 using ::com::sun::star::animations::XAnimationNode;
 using ::com::sun::star::animations::XAnimationNodeSupplier;
@@ -1106,7 +1107,7 @@ Any SAL_CALL SdGenericDrawPage::getPropertyValue( const OUString& PropertyName )
 						pDoc->SetSelected( pDoc->GetSdPage( nPgNum, PK_STANDARD ), nPgNum == nPageNumber );
 						nPgNum++;
 					}
-                    ::boost::shared_ptr<GDIMetaFile> pMetaFile =
+                    ::std::shared_ptr<GDIMetaFile> pMetaFile =
                         pDocShell->GetPreviewMetaFile();
 					if ( pMetaFile )
 					{
@@ -1143,7 +1144,7 @@ Any SAL_CALL SdGenericDrawPage::getPropertyValue( const OUString& PropertyName )
 						pDoc->SetSelected( pDoc->GetSdPage( nPgNum, PK_STANDARD ), nPgNum == nPageNumber );
 						nPgNum++;
 					}
-                    ::boost::shared_ptr<GDIMetaFile> pMetaFile =
+                    ::std::shared_ptr<GDIMetaFile> pMetaFile =
                         pDocShell->GetPreviewMetaFile();
 					BitmapEx aBitmap;
 					if ( pMetaFile && pMetaFile->CreateThumbnail( 160, /* magic value taken from GraphicHelper::getThumbnailFormatFromGDI_Impl() */

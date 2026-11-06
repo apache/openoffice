@@ -145,7 +145,7 @@ class ScfNoInstance : private ScfNoCopy {};
 
 // ============================================================================
 
-/** Simple shared pointer (NOT thread-save, but faster than boost::shared_ptr). */
+/** Simple shared pointer (NOT thread-save, but faster than std::shared_ptr). */
 template< typename Type >
 class ScfRef
 {

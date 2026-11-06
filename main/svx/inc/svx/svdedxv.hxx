@@ -34,7 +34,7 @@
 //   Vorausdeklarationen
 //************************************************************
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 class SdrOutliner;
 class OutlinerView;
@@ -301,7 +301,7 @@ public:
     virtual bool SupportsFormatPaintbrush( sal_uInt32 nObjectInventor, sal_uInt16 nObjectIdentifier ) const;
 
 	/** returns a format paint brush set from the current selection */
-	virtual bool TakeFormatPaintBrush( boost::shared_ptr< SfxItemSet >& rFormatSet  );
+	virtual bool TakeFormatPaintBrush( std::shared_ptr< SfxItemSet >& rFormatSet  );
 
 	/** applies a format paint brush set from the current selection.
 	    if bNoCharacterFormats is true, no character attributes are changed.

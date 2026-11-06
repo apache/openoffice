@@ -26,6 +26,7 @@
 
 #include <com/sun/star/text/XTextCursor.hpp>
 #include <com/sun/star/text/XText.hpp>
+#include <memory>
 
 #include "oox/core/xmlfilterbase.hxx"
 #include "oox/drawingml/textrun.hxx"
@@ -68,7 +69,7 @@ private:
     TextRunVector               maRuns;
 };
 
-typedef boost::shared_ptr< TextParagraph > TextParagraphPtr;
+typedef std::shared_ptr< TextParagraph > TextParagraphPtr;
 
 } }
 

@@ -47,7 +47,7 @@ namespace comphelper
 	class COMPHELPER_DLLPUBLIC OfficeResourceBundle
 	{
     private:
-        ::std::auto_ptr< ResourceBundle_Impl >  m_pImpl;
+        ::std::unique_ptr< ResourceBundle_Impl >  m_pImpl;
 
     public:
         /** constructs a resource bundle

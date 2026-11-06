@@ -113,10 +113,10 @@ CSubmission::SubmissionResult CSubmission::replace(const ::rtl::OUString& aRepla
     }
     return CSubmission::UNKNOWN_ERROR;
 }
-::std::auto_ptr< CSerialization > CSubmission::createSerialization(const Reference< XInteractionHandler >& _xHandler,Reference<XCommandEnvironment>& _rOutEnv)
+::std::unique_ptr< CSerialization > CSubmission::createSerialization(const Reference< XInteractionHandler >& _xHandler,Reference<XCommandEnvironment>& _rOutEnv)
 {
     // PUT always uses application/xml
-    ::std::auto_ptr< CSerialization > apSerialization(new CSerializationAppXML());
+    ::std::unique_ptr< CSerialization > apSerialization(new CSerializationAppXML());
     apSerialization->setSource(m_aFragment);
     apSerialization->serialize();
 

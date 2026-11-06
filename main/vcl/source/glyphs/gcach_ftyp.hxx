@@ -110,7 +110,7 @@ private:
     const ImplFontCharMap* mpFontCharMap;
 
     // cache unicode->glyphid mapping because looking it up is expensive
-    // TODO: change to unordered_multimap when a use case requires a m:n mapping
+    // TODO: change to std::unordered_multimap when a use case requires a m:n mapping
     typedef ::std::unordered_map<int,int> Int2IntMap;
     mutable Int2IntMap* mpChar2Glyph;
     mutable Int2IntMap* mpGlyph2Char;

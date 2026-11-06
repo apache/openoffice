@@ -66,6 +66,7 @@
 #include <svx/sdrundomanager.hxx>
 #include <svx/sdr/overlay/overlaytools.hxx>
 #include <drawinglayer/processor2d/processor2dtools.hxx>
+#include <memory>
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -2132,7 +2133,7 @@ static const sal_uInt16* GetFormatRangeImpl( bool bTextOnly )
     return &gRanges[ bTextOnly ? 10 : 0];
 }
 
-bool SdrObjEditView::TakeFormatPaintBrush( boost::shared_ptr< SfxItemSet >& rFormatSet  )
+bool SdrObjEditView::TakeFormatPaintBrush( std::shared_ptr< SfxItemSet >& rFormatSet  )
 {
     if( mxSelectionController.is() && mxSelectionController->TakeFormatPaintBrush(rFormatSet) )
         return true;

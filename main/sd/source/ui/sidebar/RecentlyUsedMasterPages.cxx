@@ -46,6 +46,7 @@
 #include <unotools/confignode.hxx>
 #include <osl/doublecheckedlocking.h>
 #include <osl/getglobalmutex.hxx>
+#include <memory>
 
 using namespace ::std;
 using ::rtl::OUString;
@@ -125,7 +126,7 @@ RecentlyUsedMasterPages&  RecentlyUsedMasterPages::Instance (void)
             RecentlyUsedMasterPages* pInstance = new RecentlyUsedMasterPages();
             pInstance->LateInit();
             SdGlobalResourceContainer::Instance().AddResource (
-                ::std::auto_ptr<SdGlobalResource>(pInstance));
+                ::std::unique_ptr<SdGlobalResource>(pInstance));
             OSL_DOUBLE_CHECKED_LOCKING_MEMORY_BARRIER();
             mpInstance = pInstance;
         }
@@ -217,9 +218,9 @@ void RecentlyUsedMasterPages::LoadPersistentValues (void)
                         String(),
                         sName,
                         false,
-                        ::boost::shared_ptr<PageObjectProvider>(
+                        ::std::shared_ptr<PageObjectProvider>(
                             new TemplatePageObjectProvider(sURL)),
-                        ::boost::shared_ptr<PreviewProvider>(
+                        ::std::shared_ptr<PreviewProvider>(
                             new TemplatePreviewProvider(sURL))));
                     // For user supplied templates we use a different
                     // preview provider: The preview in the document shows
@@ -228,7 +229,7 @@ void RecentlyUsedMasterPages::LoadPersistentValues (void)
                     // these previews are discarded and created directly
                     // from the page objects.
                     if (pDescriptor->GetURLClassification() == MasterPageDescriptor::URLCLASS_USER)
-                        pDescriptor->mpPreviewProvider = ::boost::shared_ptr<PreviewProvider>(
+                        pDescriptor->mpPreviewProvider = ::std::shared_ptr<PreviewProvider>(
                             new PagePreviewProvider());
                     MasterPageContainer::Token aToken (mpContainer->PutMasterPage(pDescriptor));
                     mpMasterPages->push_back(Descriptor(aToken,sURL,sName));

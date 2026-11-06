@@ -25,12 +25,13 @@
 #include "Dff.hxx"
 #include <doctok/resourceids.hxx>
 #include <resourcemodel/WW8ResourceModel.hxx>
+#include <memory>
 #include "resources.hxx"
 
 namespace writerfilter {
 namespace doctok {
 
-typedef boost::shared_ptr<WW8Value> WW8ValueSharedPointer_t;
+typedef std::shared_ptr<WW8Value> WW8ValueSharedPointer_t;
 
 DffRecord::DffRecord(WW8Stream & rStream, sal_uInt32 nOffset,
                      sal_uInt32 nCount)
@@ -119,7 +120,7 @@ void DffRecord::initChildren()
         while (nCount - nOffset >= 8)
         {
             sal_uInt32 nSize = 0;
-            boost::shared_ptr<DffRecord> pRec
+            std::shared_ptr<DffRecord> pRec
                 (createDffRecord(this, nOffset, &nSize));
 
             if (nSize == 0)

@@ -1998,7 +1998,7 @@ FileViewResult SvtFileView_Impl::GetFolderContent_Impl(
     m_aCurrentAsyncActionHandler = Link();
 
     // minimum time to wait
-    ::std::auto_ptr< TimeValue > pTimeout( new TimeValue );
+    ::std::unique_ptr< TimeValue > pTimeout( new TimeValue );
     sal_Int32 nMinTimeout = pAsyncDescriptor->nMinTimeout;
     OSL_ENSURE( nMinTimeout > 0, "SvtFileView_Impl::GetFolderContent_Impl: invalid minimum timeout!" );
     if ( nMinTimeout <= 0 )

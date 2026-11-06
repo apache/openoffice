@@ -32,7 +32,7 @@
 #include <vector>
 #include <unordered_map>
 #include <unordered_set>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <com/sun/star/uno/Reference.hxx>
 
 namespace com { namespace sun { namespace star {
@@ -146,7 +146,7 @@ public:
     struct Criterion
     {
         sal_Int32 mnFieldIndex;
-        ::boost::shared_ptr<FilterBase> mpFilter;
+        ::std::shared_ptr<FilterBase> mpFilter;
 
         Criterion();
     };

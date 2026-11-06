@@ -48,6 +48,7 @@
 #include <xmloff/xmlprmap.hxx>
 #include <xmloff/xmlexppr.hxx>
 #include <xmloff/xmlexp.hxx>
+#include <memory>
 #include "table.hxx"
 
 using ::rtl::OUString;
@@ -322,7 +323,7 @@ static bool has_states( const std::vector< XMLPropertyState >& xPropStates )
      if( !mbExportTables )
          return;
 
-	boost::shared_ptr< XMLTableInfo > pTableInfo( new XMLTableInfo() );
+	std::shared_ptr< XMLTableInfo > pTableInfo( new XMLTableInfo() );
 	maTableInfoMap[xColumnRowRange] = pTableInfo;
 
 	try
@@ -431,7 +432,7 @@ static bool has_states( const std::vector< XMLPropertyState >& xPropStates )
 
  	try
 	{
-		boost::shared_ptr< XMLTableInfo > pTableInfo( maTableInfoMap[xColumnRowRange] );
+		std::shared_ptr< XMLTableInfo > pTableInfo( maTableInfoMap[xColumnRowRange] );
 
 		// get row and column count
 		Reference< XIndexAccess > xIndexAccess( xColumnRowRange->getRows(), UNO_QUERY_THROW );
@@ -492,7 +493,7 @@ static bool has_states( const std::vector< XMLPropertyState >& xPropStates )
 // Export the table columns
 // --------------------------------------------------------------------
 
- void XMLTableExport::ExportTableColumns( const Reference < XIndexAccess >& xtableColumnsIndexAccess, const boost::shared_ptr< XMLTableInfo >& pTableInfo )
+ void XMLTableExport::ExportTableColumns( const Reference < XIndexAccess >& xtableColumnsIndexAccess, const std::shared_ptr< XMLTableInfo >& pTableInfo )
  {
 	const sal_Int32 nColumnCount = xtableColumnsIndexAccess->getCount();
  	for( sal_Int32 nColumn = 0; nColumn < nColumnCount; ++nColumn )
@@ -521,7 +522,7 @@ static bool has_states( const std::vector< XMLPropertyState >& xPropStates )
 // ODF export for a table cell.
 // --------------------------------------------------------------------
 
- void XMLTableExport::ExportCell( const Reference < XCell >& xCell, const boost::shared_ptr< XMLTableInfo >& pTableInfo, const OUString& rDefaultCellStyle )
+ void XMLTableExport::ExportCell( const Reference < XCell >& xCell, const std::shared_ptr< XMLTableInfo >& pTableInfo, const OUString& rDefaultCellStyle )
  {
 	bool bIsMerged = false;
 	sal_Int32 nRowSpan = 0;

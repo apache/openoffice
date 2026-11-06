@@ -405,9 +405,9 @@ void ScAccessiblePreviewHeaderCell::CreateTextHelper()
 {
 	if (!mpTextHelper)
 	{
-		::std::auto_ptr < ScAccessibleTextData > pAccessiblePreviewHeaderCellTextData
+		::std::unique_ptr < ScAccessibleTextData > pAccessiblePreviewHeaderCellTextData
 			(new ScAccessiblePreviewHeaderCellTextData(mpViewShell, String(getAccessibleName()), maCellPos, mbColumnHeader, mbRowHeader));
-		::std::auto_ptr< SvxEditSource > pEditSource (new ScAccessibilityEditSource(pAccessiblePreviewHeaderCellTextData));
+		::std::unique_ptr< SvxEditSource > pEditSource (new ScAccessibilityEditSource(pAccessiblePreviewHeaderCellTextData));
 
 		mpTextHelper = new ::accessibility::AccessibleTextHelper(pEditSource );
         mpTextHelper->SetEventSource(this);

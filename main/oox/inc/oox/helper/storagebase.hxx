@@ -26,6 +26,7 @@
 
 #include <vector>
 #include <com/sun/star/uno/Reference.hxx>
+#include <memory>
 #include "oox/helper/refmap.hxx"
 #include "oox/dllapi.h"
 
@@ -41,7 +42,7 @@ namespace oox {
 // ============================================================================
 
 class StorageBase;
-typedef ::boost::shared_ptr< StorageBase > StorageRef;
+typedef ::std::shared_ptr< StorageBase > StorageRef;
 
 /** Base class for storage access implementations.
 

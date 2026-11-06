@@ -56,7 +56,7 @@
 #include "tools/TimerBasedTaskExecution.hxx"
 #include "pres.hxx"
 #include <osl/mutex.hxx>
-#include <boost/weak_ptr.hpp>
+#include <memory>
 
 using namespace ::com::sun::star;
 using namespace ::com::sun::star::uno;
@@ -81,10 +81,10 @@ class MasterPageContainer::Implementation
 public:
     mutable ::osl::Mutex maMutex;
 
-    static ::boost::weak_ptr<Implementation> mpInstance;
+    static ::std::weak_ptr<Implementation> mpInstance;
     MasterPageContainerType maContainer;
 
-    static ::boost::shared_ptr<Implementation> Instance (void);
+    static ::std::shared_ptr<Implementation> Instance (void);
 
     void LateInit (void);
     void AddChangeListener (const Link& rLink);
@@ -166,7 +166,7 @@ private:
     // We have to remember the tasks for initialization and filling in case
     // a MasterPageContainer object is destroyed before these tasks have
     // been completed.
-    ::boost::weak_ptr<sd::tools::TimerBasedTaskExecution> mpFillerTask;
+    ::std::weak_ptr<sd::tools::TimerBasedTaskExecution> mpFillerTask;
 
     Size maSmallPreviewSizePixel;
     Size maLargePreviewSizePixel;
@@ -190,17 +190,17 @@ private:
 
 //===== MasterPageContainer ===================================================
 
-::boost::weak_ptr<MasterPageContainer::Implementation>
+::std::weak_ptr<MasterPageContainer::Implementation>
     MasterPageContainer::Implementation::mpInstance;
 static const MasterPageContainer::Token NIL_TOKEN (-1);
 
 
 
 
-::boost::shared_ptr<MasterPageContainer::Implementation>
+::std::shared_ptr<MasterPageContainer::Implementation>
     MasterPageContainer::Implementation::Instance (void)
 {
-    ::boost::shared_ptr<MasterPageContainer::Implementation> pInstance;
+    ::std::shared_ptr<MasterPageContainer::Implementation> pInstance;
 
     if (Implementation::mpInstance.expired())
     {
@@ -209,20 +209,20 @@ static const MasterPageContainer::Token NIL_TOKEN (-1);
         if (Implementation::mpInstance.expired())
         {
             OSL_DOUBLE_CHECKED_LOCKING_MEMORY_BARRIER();
-            pInstance = ::boost::shared_ptr<MasterPageContainer::Implementation>(
+            pInstance = ::std::shared_ptr<MasterPageContainer::Implementation>(
                 new MasterPageContainer::Implementation(),
                 MasterPageContainer::Implementation::Deleter());
             SdGlobalResourceContainer::Instance().AddResource(pInstance);
             Implementation::mpInstance = pInstance;
         }
         else
-            pInstance = ::boost::shared_ptr<MasterPageContainer::Implementation>(
+            pInstance = ::std::shared_ptr<MasterPageContainer::Implementation>(
                 Implementation::mpInstance);
     }
     else
     {
         OSL_DOUBLE_CHECKED_LOCKING_MEMORY_BARRIER();
-        pInstance = ::boost::shared_ptr<MasterPageContainer::Implementation>(
+        pInstance = ::std::shared_ptr<MasterPageContainer::Implementation>(
             Implementation::mpInstance);
     }
 
@@ -646,10 +646,10 @@ void MasterPageContainer::Implementation::LateInit (void)
 
         OSL_ASSERT(Instance().get()==this);
         mpRequestQueue.reset(MasterPageContainerQueue::Create(
-            ::boost::shared_ptr<MasterPageContainerQueue::ContainerAdapter>(Instance())));
+            ::std::shared_ptr<MasterPageContainerQueue::ContainerAdapter>(Instance())));
 
         mpFillerTask = ::sd::tools::TimerBasedTaskExecution::Create(
-            ::boost::shared_ptr<tools::AsynchronousTask>(new MasterPageContainerFiller(*this)),
+            ::std::shared_ptr<tools::AsynchronousTask>(new MasterPageContainerFiller(*this)),
             5,
             50);
 
@@ -810,7 +810,7 @@ MasterPageContainer::Token MasterPageContainer::Implementation::PutMasterPage (
     {
         // Update an existing MasterPageDescriptor.
         aResult = (*aEntry)->maToken;
-        ::std::auto_ptr<std::vector<MasterPageContainerChangeEvent::EventType> > pEventTypes(
+        ::std::unique_ptr<std::vector<MasterPageContainerChangeEvent::EventType> > pEventTypes(
             (*aEntry)->Update(*rpDescriptor));
         if (pEventTypes.get()!=NULL && pEventTypes->size()>0)
         {

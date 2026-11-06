@@ -30,6 +30,7 @@
 #include <tools/gen.hxx>
 #include <basegfx/range/b2irectangle.hxx>
 #include <vector>
+#include <memory>
 
 class Link;
 class SdPage;
@@ -107,7 +108,7 @@ public:
     */
     void SetInsertionPosition (const sal_Int32 nInsertionPosition);
 
-    ::boost::shared_ptr<SelectionObserver> GetSelectionObserver (void) const;
+    ::std::shared_ptr<SelectionObserver> GetSelectionObserver (void) const;
 
 private:
     SlideSorter& mrSlideSorter;
@@ -141,7 +142,7 @@ private:
     class PageInsertionListener;
     ::boost::scoped_ptr<PageInsertionListener> mpPageInsertionListener;
 
-    ::boost::shared_ptr<SelectionObserver> mpSelectionObserver;
+    ::std::shared_ptr<SelectionObserver> mpSelectionObserver;
 
     /** Delete the given list of normal pages.  This method is a helper
         function for DeleteSelectedPages().

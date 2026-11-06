@@ -33,6 +33,7 @@
 #include <functional>
 #include <queue>
 #include <vector>
+#include <memory>
 
 
 /* Definition of ActivitiesQueue class */
@@ -48,7 +49,7 @@ namespace slideshow
         {
         public:
             EventQueue(
-                ::boost::shared_ptr< ::canvas::tools::ElapsedTime >
+                ::std::shared_ptr< ::canvas::tools::ElapsedTime >
                 const & pPresTimer );
 
             ~EventQueue();
@@ -117,13 +118,13 @@ namespace slideshow
 
             /** Gets the queue's timer object.
              */
-            ::boost::shared_ptr< ::canvas::tools::ElapsedTime > const &
+            ::std::shared_ptr< ::canvas::tools::ElapsedTime > const &
             getTimer() const { return mpTimer; }
 
         private:
             mutable ::osl::Mutex      maMutex;
 
-            struct EventEntry : public ::std::unary_function<EventEntry, bool>
+            struct EventEntry 
             {
                 EventSharedPtr	pEvent;
                 double			nTime;
@@ -144,7 +145,7 @@ namespace slideshow
             // perform timing of events via relative time
             // measurements. The world time starts, when the
             // EventQueue object is created
-            ::boost::shared_ptr< ::canvas::tools::ElapsedTime > mpTimer;
+            ::std::shared_ptr< ::canvas::tools::ElapsedTime > mpTimer;
         };
 
     }

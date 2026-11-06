@@ -33,6 +33,7 @@
 #include "submission/submission_put.hxx"
 #include "submission/submission_post.hxx"
 #include "submission/submission_get.hxx"
+#include <memory>
 
 #include <rtl/ustring.hxx>
 #include <rtl/ustrbuf.hxx>
@@ -84,7 +85,7 @@ using com::sun::star::frame::XFrame;
 using xforms::Submission;
 using xforms::Model;
 using xforms::MIP;
-using std::auto_ptr;
+using std::unique_ptr;
 
 using namespace com::sun::star::uno;
 using namespace com::sun::star::lang;
@@ -319,15 +320,15 @@ bool Submission::doSubmit( const Reference< XInteractionHandler >& xHandler )
         xResult, aMethod.equalsIgnoreAsciiCaseAscii("get"));
 
     // submit result; set encoding, etc.
-    auto_ptr<CSubmission> xSubmission;
+    ::std::unique_ptr<CSubmission> xSubmission;
     if (aMethod.equalsIgnoreAsciiCaseAscii("PUT"))
-        xSubmission = auto_ptr<CSubmission>(
+        xSubmission = ::std::unique_ptr<CSubmission>(
             new CSubmissionPut( getAction(), aFragment));
     else if (aMethod.equalsIgnoreAsciiCaseAscii("post"))
-        xSubmission = auto_ptr<CSubmission>(
+        xSubmission = ::std::unique_ptr<CSubmission>(
             new CSubmissionPost( getAction(), aFragment));
     else if (aMethod.equalsIgnoreAsciiCaseAscii("get"))
-        xSubmission = auto_ptr<CSubmission>(
+        xSubmission = ::std::unique_ptr<CSubmission>(
             new CSubmissionGet( getAction(), aFragment));
     else
     {

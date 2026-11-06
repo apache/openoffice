@@ -25,7 +25,7 @@
 
 #ifdef DEBUG
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include "WW8ResourceModel.hxx"
 #include "TagLogger.hxx"
 namespace writerfilter
@@ -37,7 +37,7 @@ class StreamProtocol : public Stream
     TagLogger::Pointer_t m_pTagLogger;
 
 public:
-    typedef boost::shared_ptr<StreamProtocol> Pointer_t;
+    typedef std::shared_ptr<StreamProtocol> Pointer_t;
 
     StreamProtocol(Stream * pStream, TagLogger::Pointer_t pTagLogger);
     virtual ~StreamProtocol();
@@ -66,7 +66,7 @@ class PropertiesProtocol : public Properties
     TagLogger::Pointer_t m_pTagLogger;
 
 public:
-    typedef boost::shared_ptr<PropertiesProtocol> Pointer_t;
+    typedef std::shared_ptr<PropertiesProtocol> Pointer_t;
 
     PropertiesProtocol(Properties * pProperties, TagLogger::Pointer_t pTagLogger);
     virtual ~PropertiesProtocol();
@@ -81,7 +81,7 @@ class TableProtocol : public Table
     TagLogger::Pointer_t m_pTagLogger;
 
 public:
-    typedef boost::shared_ptr<TableProtocol> Pointer_t;
+    typedef std::shared_ptr<TableProtocol> Pointer_t;
 
     TableProtocol(Table * pTable, TagLogger::Pointer_t pTagLogger);
     virtual ~TableProtocol();

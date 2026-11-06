@@ -36,7 +36,7 @@
 #include <svl/style.hxx>
 #include <svx/pageitem.hxx>
 #include <vcl/field.hxx>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <svx/svdtypes.hxx> // for enum RepeatFuncts
 #include <vcl/field.hxx>
 #include "svx/svxdllapi.h"
@@ -359,7 +359,7 @@ public:
 	/** returns a new created and non shared outliner.
 		The outliner will not get updated when the SdrModel is changed.
 	*/
-	boost::shared_ptr< SdrOutliner > CreateDrawOutliner(const SdrTextObj* pObj=NULL);
+	std::shared_ptr< SdrOutliner > CreateDrawOutliner(const SdrTextObj* pObj=NULL);
 
 	SdrOutliner&         GetHitTestOutliner() const { return *pHitTestOutliner; }
 	const SdrTextObj*    GetFormattingTextObj() const;

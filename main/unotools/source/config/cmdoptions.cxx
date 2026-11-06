@@ -287,7 +287,7 @@ SvtCommandOptions_Impl::SvtCommandOptions_Impl()
     sal_Int32	nItem     = 0 ;
     OUString    sCmd		  ;
 
-	// Set size of unordered_map reach a used size of approx. 60%
+	// Set size of std::unordered_map reach a used size of approx. 60%
 	m_aDisabledCommands.SetContainerSize( lNames.getLength() * 10 / 6 );
 
 	// Get names/values for disabled commands.
@@ -338,7 +338,7 @@ void SvtCommandOptions_Impl::Notify( const Sequence< OUString >& )
     sal_Int32	nItem     = 0 ;
     OUString    sCmd		  ;
 
-	// Set size of unordered_map reach a used size of approx. 60%
+	// Set size of std::unordered_map reach a used size of approx. 60%
     m_aDisabledCommands.Clear();
 	m_aDisabledCommands.SetContainerSize( lNames.getLength() * 10 / 6 );
 

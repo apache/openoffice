@@ -54,7 +54,7 @@ private:
     CancelButton      aBtnCancel;
     HelpButton        aBtnHelp;
 
-    ::std::auto_ptr< TrendlineResources >    m_apTrendlineResources;
+    ::std::unique_ptr< TrendlineResources >    m_apTrendlineResources;
 };
 
 //.............................................................................

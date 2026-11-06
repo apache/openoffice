@@ -28,7 +28,7 @@
 #include <WriterFilterDllApi.hxx>
 #include <resourcemodel/WW8ResourceModel.hxx>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 #include <vector>
 
@@ -97,7 +97,7 @@ private:
             m_pCurrentProperties->insert( pProps, true );
     };
 };
-typedef boost::shared_ptr<TablePropertiesHandler> TablePropertiesHandlerPtr;
+typedef std::shared_ptr<TablePropertiesHandler> TablePropertiesHandlerPtr;
 
 } }
 

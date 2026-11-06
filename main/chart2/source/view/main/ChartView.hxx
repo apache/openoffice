@@ -44,7 +44,7 @@
 #include <com/sun/star/util/XUpdatable.hpp>
 
 #include <vector>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 class SdrPage;
 
@@ -107,7 +107,7 @@ public:
 
     virtual ::com::sun::star::awt::Rectangle getDiagramRectangleExcludingAxes();
 
-    ::boost::shared_ptr< DrawModelWrapper > getDrawModelWrapper();
+    ::std::shared_ptr< DrawModelWrapper > getDrawModelWrapper();
 
     // ___XTransferable___
     virtual ::com::sun::star::uno::Any SAL_CALL getTransferData( const ::com::sun::star::datatransfer::DataFlavor& aFlavor );
@@ -212,7 +212,7 @@ private: //member
     ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > m_xTransGradientTable;
     ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > m_xMarkerTable;
 
-    ::boost::shared_ptr< DrawModelWrapper > m_pDrawModelWrapper;
+    ::std::shared_ptr< DrawModelWrapper > m_pDrawModelWrapper;
 
     std::vector< VCoordinateSystem* > m_aVCooSysList;
 

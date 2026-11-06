@@ -48,6 +48,7 @@
 #include <com/sun/star/container/XChild.hpp>
 #include <boost/bind.hpp>
 #include <set>
+#include <memory>
 
 using namespace ::com::sun::star;
 using namespace ::com::sun::star::uno;
@@ -721,7 +722,7 @@ void PresenterNotesView::ChangeFontSize (const sal_Int32 nSizeChange)
         {
             const OUString sStyleName (mpPresenterController->GetTheme()->GetStyleName(
                 mxViewId->getResourceURL()));
-            ::boost::shared_ptr<PresenterConfigurationAccess> pConfiguration (
+            ::std::shared_ptr<PresenterConfigurationAccess> pConfiguration (
                 mpPresenterController->GetTheme()->GetNodeForViewStyle(
                     sStyleName,
                     PresenterConfigurationAccess::READ_WRITE));
@@ -742,7 +743,7 @@ void PresenterNotesView::ChangeFontSize (const sal_Int32 nSizeChange)
 
 
 
-::boost::shared_ptr<PresenterTextView> PresenterNotesView::GetTextView (void) const
+::std::shared_ptr<PresenterTextView> PresenterNotesView::GetTextView (void) const
 {
     return mpTextView;
 }

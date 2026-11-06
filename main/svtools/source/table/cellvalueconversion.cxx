@@ -44,7 +44,7 @@
 #include <tools/diagnose_ex.h>
 #include <unotools/syslocale.hxx>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <unordered_map>
 
 //......................................................................................................................
@@ -117,7 +117,7 @@ namespace svt
         virtual ::sal_Int32 getFormatKey() const = 0;
     };
 
-    typedef ::boost::shared_ptr< IValueNormalization >                                      PValueNormalization;
+    typedef ::std::shared_ptr< IValueNormalization >                                      PValueNormalization;
     typedef ::std::unordered_map< ::rtl::OUString, PValueNormalization, ::rtl::OUStringHash >    NormalizerCache;
 
     //==================================================================================================================

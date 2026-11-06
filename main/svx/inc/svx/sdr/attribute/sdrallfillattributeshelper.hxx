@@ -26,7 +26,7 @@
 #include <drawinglayer/attribute/fillgradientattribute.hxx>
 #include <drawinglayer/attribute/sdrfillattribute.hxx>
 #include <drawinglayer/primitive2d/baseprimitive2d.hxx>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <tools/color.hxx>
 #include <svl/itemset.hxx>
 
@@ -41,8 +41,8 @@ namespace drawinglayer
         private:
             basegfx::B2DRange                                                   maLastPaintRange;
             basegfx::B2DRange                                                   maLastDefineRange;
-            boost::shared_ptr< drawinglayer::attribute::SdrFillAttribute >      maFillAttribute;
-            boost::shared_ptr< drawinglayer::attribute::FillGradientAttribute > maFillGradientAttribute;
+            std::shared_ptr< drawinglayer::attribute::SdrFillAttribute >      maFillAttribute;
+            std::shared_ptr< drawinglayer::attribute::FillGradientAttribute > maFillGradientAttribute;
             drawinglayer::primitive2d::Primitive2DSequence                      maPrimitives;
 
             void createPrimitive2DSequence(
@@ -87,7 +87,7 @@ namespace drawinglayer
 {
     namespace attribute
     {
-        typedef boost::shared_ptr< SdrAllFillAttributesHelper > SdrAllFillAttributesHelperPtr;
+        typedef std::shared_ptr< SdrAllFillAttributesHelper > SdrAllFillAttributesHelperPtr;
     } // end of namespace attribute
 } // end of namespace drawinglayer
 

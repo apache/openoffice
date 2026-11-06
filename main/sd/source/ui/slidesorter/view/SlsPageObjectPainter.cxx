@@ -41,6 +41,7 @@
 #include <vcl/vclenum.hxx>
 #include <vcl/virdev.hxx>
 #include <boost/scoped_ptr.hpp>
+#include <memory>
 
 using namespace ::drawinglayer::primitive2d;
 
@@ -206,7 +207,7 @@ void PageObjectPainter::InvalidateBitmaps (void)
 
 
 
-void PageObjectPainter::SetTheme (const ::boost::shared_ptr<view::Theme>& rpTheme)
+void PageObjectPainter::SetTheme (const ::std::shared_ptr<view::Theme>& rpTheme)
 {
 	mpTheme = rpTheme;
 	NotifyResize(true);

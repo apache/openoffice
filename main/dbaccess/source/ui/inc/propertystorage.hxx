@@ -30,7 +30,7 @@
 
 #include <tools/solar.h>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <map>
 
 class SfxItemSet;
@@ -52,7 +52,7 @@ namespace dbaui
         virtual ~PropertyStorage();
     };
 
-    typedef ::boost::shared_ptr< PropertyStorage >      PPropertyStorage;
+    typedef ::std::shared_ptr< PropertyStorage >      PPropertyStorage;
     typedef ::std::map< sal_Int32, PPropertyStorage >   PropertyValues;
 
 	//====================================================================

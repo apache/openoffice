@@ -38,7 +38,7 @@
 
 #include <list>
 #include <map>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 namespace comphelper
 {

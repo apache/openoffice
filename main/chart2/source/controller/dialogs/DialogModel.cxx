@@ -54,6 +54,7 @@
 #include <iterator>
 #include <functional>
 #include <numeric>
+#include <memory>
 
 using namespace ::com::sun::star;
 using namespace ::com::sun::star::chart2;
@@ -69,8 +70,7 @@ namespace
 {
 const OUString lcl_aLabelRole( RTL_CONSTASCII_USTRINGPARAM( "label" ));
 
-struct lcl_ChartTypeToSeriesCnt : ::std::unary_function<
-        Reference< XChartType >, Reference< XDataSeriesContainer > >
+struct lcl_ChartTypeToSeriesCnt
 {
     Reference< XDataSeriesContainer > operator() (
         const Reference< XChartType > & xChartType )
@@ -117,10 +117,7 @@ OUString lcl_ConvertRole( const OUString & rRoleString, bool bFromInternalToUI )
     {
         tTranslationMap::const_iterator aIt(
             ::std::find_if( aTranslationMap.begin(), aTranslationMap.end(),
-                            ::std::compose1( ::std::bind2nd(
-                                                 ::std::equal_to< tTranslationMap::mapped_type >(),
-                                                 rRoleString ),
-                                             ::std::select2nd< tTranslationMap::value_type >())));
+                            [rRoleString](auto& _x) { return _x.second == rRoleString; }));
 
         if( aIt != aTranslationMap.end())
             aResult = (*aIt).first;
@@ -356,8 +353,7 @@ Reference< XDataSeries > lcl_CreateNewSeries(
     return xResult;
 }
 
-struct lcl_addSeriesNumber : public ::std::binary_function<
-        sal_Int32, Reference< XDataSeriesContainer >, sal_Int32 >
+struct lcl_addSeriesNumber
 {
     sal_Int32 operator() ( sal_Int32 nCurrentNumber, const Reference< XDataSeriesContainer > & xCnt ) const
     {
@@ -393,7 +389,7 @@ void DialogModel::setTemplate(
     m_xTemplate = xTemplate;
 }
 
-::boost::shared_ptr< RangeSelectionHelper >
+::std::shared_ptr< RangeSelectionHelper >
     DialogModel::getRangeSelectionHelper() const
 {
     if( ! m_spRangeSelectionHelper.get())

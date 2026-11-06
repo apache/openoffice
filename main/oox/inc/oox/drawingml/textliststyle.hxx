@@ -24,6 +24,7 @@
 #ifndef OOX_DRAWINGML_TEXTLISTSTYLE_HXX
 #define OOX_DRAWINGML_TEXTLISTSTYLE_HXX
 
+#include <memory>
 #include "oox/drawingml/textparagraphproperties.hxx"
 #include "oox/helper/refvector.hxx"
 
@@ -52,7 +53,7 @@ protected:
     TextParagraphPropertiesVector maAggregationListStyle;
 };
 
-typedef boost::shared_ptr< TextListStyle > TextListStylePtr;
+typedef std::shared_ptr< TextListStyle > TextListStylePtr;
 
 } }
 

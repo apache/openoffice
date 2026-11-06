@@ -29,7 +29,7 @@
 #include <com/sun/star/rendering/XSprite.hpp>
 
 #ifndef BOOST_SHARED_PTR_HPP_INCLUDED
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #endif
 #include <cppcanvas/sprite.hxx>
 

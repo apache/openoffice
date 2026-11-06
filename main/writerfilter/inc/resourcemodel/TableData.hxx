@@ -29,7 +29,7 @@
 #endif
 
 #include <vector>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 namespace writerfilter
 {
@@ -58,7 +58,7 @@ class WRITERFILTER_DLLPUBLIC CellData
     bool mbOpen;
 
 public:
-    typedef boost::shared_ptr<CellData> Pointer_t;
+    typedef std::shared_ptr<CellData> Pointer_t;
 
     CellData(T start, PropertiesPointer pProps)
     : mStart(start), mEnd(start), mpProps(pProps), mbOpen(true)
@@ -140,7 +140,7 @@ class WRITERFILTER_DLLPUBLIC RowData
     mutable PropertiesPointer mpProperties;
 
 public:
-    typedef boost::shared_ptr<RowData <T, PropertiesPointer> > Pointer_t;
+    typedef std::shared_ptr<RowData <T, PropertiesPointer> > Pointer_t;
 
     RowData() {}
 
@@ -303,7 +303,7 @@ class WRITERFILTER_DLLPUBLIC TableData
     void newRow() { mpRow = RowPointer_t(new RowData<T, PropertiesPointer>()); }
 
 public:
-    typedef boost::shared_ptr<TableData <T, PropertiesPointer> > Pointer_t;
+    typedef std::shared_ptr<TableData <T, PropertiesPointer> > Pointer_t;
 
     TableData(unsigned int nDepth) : mnDepth(nDepth) { newRow(); }
     ~TableData() {}

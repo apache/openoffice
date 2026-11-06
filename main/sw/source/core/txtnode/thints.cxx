@@ -82,6 +82,7 @@
 #include <svl/smplhint.hxx>
 #include <algorithm>
 #include <map>
+#include <memory>
 
 #ifdef DBG_UTIL
 #define CHECK    Check();
@@ -769,7 +770,7 @@ void SwpHints::BuildPortions( SwTxtNode& rNode, SwTxtAttr& rNewHint,
                     // the new character format:
                     ASSERT( RES_TXTATR_AUTOFMT == (*aIter)->Which(), "AUTOSTYLES - Misc trouble" )
                     SwTxtAttr* pOther = *aIter;
-                    boost::shared_ptr<SfxItemSet> pOldStyle = static_cast<const SwFmtAutoFmt&>(pOther->GetAttr()).GetStyleHandle();
+                    std::shared_ptr<SfxItemSet> pOldStyle = static_cast<const SwFmtAutoFmt&>(pOther->GetAttr()).GetStyleHandle();
 
                     // For each attribute in the automatic style check if it
                     // is also set to the new character style:
@@ -837,10 +838,10 @@ void SwpHints::BuildPortions( SwTxtNode& rNode, SwTxtAttr& rNewHint,
                 ++aIter;
             }
 
-            boost::shared_ptr<SfxItemSet> pNewStyle = static_cast<const SwFmtAutoFmt&>(rNewHint.GetAttr()).GetStyleHandle();
+            std::shared_ptr<SfxItemSet> pNewStyle = static_cast<const SwFmtAutoFmt&>(rNewHint.GetAttr()).GetStyleHandle();
             if ( pCurrentAutoStyle )
             {
-                boost::shared_ptr<SfxItemSet> pCurrentStyle = static_cast<const SwFmtAutoFmt&>(pCurrentAutoStyle->GetAttr()).GetStyleHandle();
+                std::shared_ptr<SfxItemSet> pCurrentStyle = static_cast<const SwFmtAutoFmt&>(pCurrentAutoStyle->GetAttr()).GetStyleHandle();
 
                 // Merge attributes
                 SfxItemSet aNewSet( *pCurrentStyle );
@@ -1019,7 +1020,7 @@ SwTxtAttr* MakeTxtAttr(
         // If the attribute is an auto-style which refers to a pool that is
         // different from rDoc's pool, we have to correct this:
         const StylePool::SfxItemSet_Pointer_t pAutoStyle = static_cast<const SwFmtAutoFmt&>(rAttr).GetStyleHandle();
-        ::std::auto_ptr<const SfxItemSet> pNewSet(
+        ::std::unique_ptr<const SfxItemSet> pNewSet(
                 pAutoStyle->SfxItemSet::Clone( sal_True, &rDoc.GetAttrPool() ));
         SwTxtAttr* pNew = MakeTxtAttr( rDoc, *pNewSet, nStt, nEnd );
         return pNew;
@@ -1912,7 +1913,7 @@ sal_Bool SwTxtNode::SetAttr(
             const bool bAutoStyle = SFX_ITEM_SET == aTxtSet.GetItemState( RES_TXTATR_AUTOFMT, sal_False, &pItem );
             if ( bAutoStyle )
             {
-                boost::shared_ptr<SfxItemSet> pAutoStyleSet = static_cast<const SwFmtAutoFmt*>(pItem)->GetStyleHandle();
+                std::shared_ptr<SfxItemSet> pAutoStyleSet = static_cast<const SwFmtAutoFmt*>(pItem)->GetStyleHandle();
                 sal_Bool bRet = SetAttr( *pAutoStyleSet );
           		if( 1 == aTxtSet.Count() )
 		    		return bRet;
@@ -2147,7 +2148,7 @@ sal_Bool SwTxtNode::GetAttr( SfxItemSet& rSet, xub_StrLen nStt, xub_StrLen nEnd,
 		else							// es ist ein Bereich definiert
 		{
             // --> FME 2007-03-13 #i75299#
-            ::std::auto_ptr< std::vector< SwPoolItemEndPair > > pAttrArr;
+            ::std::unique_ptr< std::vector< SwPoolItemEndPair > > pAttrArr;
             // <--
 
 			const sal_uInt16 coArrSz = static_cast<sal_uInt16>(RES_TXTATR_WITHEND_END) -
@@ -2184,7 +2185,7 @@ sal_Bool SwTxtNode::GetAttr( SfxItemSet& rSet, xub_StrLen nStt, xub_StrLen nEnd,
 				if( bChkInvalid )
 				{
 					// uneindeutig ?
-                    ::std::auto_ptr< SfxItemIter > pItemIter;
+                    ::std::unique_ptr< SfxItemIter > pItemIter;
                     const SfxPoolItem* pItem = 0;
 
                     if ( RES_TXTATR_AUTOFMT == pHt->Which() )
@@ -2489,7 +2490,7 @@ SwTxtNode::impl_FmtToTxtAttr(const SfxItemSet& i_rAttrSet)
                 // there already is an automatic style on that span:
                 // create new one and remove the original one
                 SwTxtAttr* const pAutoStyle(const_cast<SwTxtAttr*>(aAutoStyleIt->second));
-                const boost::shared_ptr<SfxItemSet> pOldStyle(
+                const std::shared_ptr<SfxItemSet> pOldStyle(
                         static_cast<const SwFmtAutoFmt&>(
                             pAutoStyle->GetAttr()).GetStyleHandle());
                 aCurSet.Put(*pOldStyle);

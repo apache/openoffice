@@ -25,7 +25,7 @@
 
 #include <WriterFilterDllApi.hxx>
 #include <resourcemodel/LoggedResources.hxx>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <com/sun/star/table/BorderLine.hpp>
 
 namespace writerfilter {
@@ -67,11 +67,11 @@ public:
     BorderHandler( bool bOOXML );
     virtual ~BorderHandler();
 
-    ::boost::shared_ptr<PropertyMap>            getProperties();
+    ::std::shared_ptr<PropertyMap>            getProperties();
     ::com::sun::star::table::BorderLine         getBorderLine();
     sal_Int32                                   getLineDistance() const { return m_nLineDistance;}
 };
-typedef boost::shared_ptr< BorderHandler >          BorderHandlerPtr;
+typedef std::shared_ptr< BorderHandler >          BorderHandlerPtr;
 }}
 
 #endif //

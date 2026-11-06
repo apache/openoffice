@@ -50,6 +50,7 @@
 
 #include <vcl/svapp.hxx>
 #include <vcl/settings.hxx>
+#include <memory>
 
 namespace rptui
 {
@@ -236,7 +237,7 @@ namespace rptui
         uno::Reference<awt::XControl> xControl;
         OReportController *pController = (OReportController *)&m_rReportController;
 
-        ::boost::shared_ptr<OReportModel> pModel = pController->getSdrModel();
+        ::std::shared_ptr<OReportModel> pModel = pController->getSdrModel();
 
             uno::Reference<report::XSection> xSection(_xFixedText->getSection());
             if ( xSection.is() )
@@ -249,7 +250,7 @@ namespace rptui
                     OUnoObject* pUnoObj = dynamic_cast<OUnoObject*>(pObject);
                     if ( pUnoObj ) // this doesn't need to be done for shapes
                     {
-                        ::boost::shared_ptr<OSectionWindow> pSectionWindow = pController->getSectionWindow(xSection);
+                        ::std::shared_ptr<OSectionWindow> pSectionWindow = pController->getSectionWindow(xSection);
                         if( bool(pSectionWindow) )
                         {
                             OReportSection& aOutputDevice = pSectionWindow->getReportSection(); // OutputDevice

@@ -56,6 +56,7 @@
 
 #include <boost/bind.hpp>
 #include <algorithm>
+#include <memory>
 
 
 using namespace ::com::sun::star;
@@ -604,7 +605,7 @@ SwFmtMeta::SwFmtMeta(const sal_uInt16 i_nWhich)
             "ERROR: SwFmtMeta: invalid which id!");
 }
 
-SwFmtMeta::SwFmtMeta( ::boost::shared_ptr< ::sw::Meta > const & i_pMeta,
+SwFmtMeta::SwFmtMeta( ::std::shared_ptr< ::sw::Meta > const & i_pMeta,
                         const sal_uInt16 i_nWhich )
     : SfxPoolItem( i_nWhich )
     , m_pMeta( i_pMeta )
@@ -681,7 +682,7 @@ void SwFmtMeta::DoCopy(::sw::MetaFieldManager & i_rTargetDocManager,
     OSL_ENSURE(m_pMeta, "DoCopy called for SwFmtMeta with no sw::Meta?");
     if (m_pMeta)
     {
-        const ::boost::shared_ptr< ::sw::Meta> pOriginal( m_pMeta );
+        const ::std::shared_ptr< ::sw::Meta> pOriginal( m_pMeta );
         if (RES_TXTATR_META == Which())
         {
             m_pMeta.reset( new ::sw::Meta(this) );
@@ -867,11 +868,11 @@ MetaFieldManager::MetaFieldManager()
 {
 }
 
-::boost::shared_ptr<MetaField>
+::std::shared_ptr<MetaField>
 MetaFieldManager::makeMetaField(SwFmtMeta * const i_pFmt,
         const sal_uInt32 nNumberFormat, const bool bIsFixedLanguage)
 {
-    const ::boost::shared_ptr<MetaField> pMetaField(
+    const ::std::shared_ptr<MetaField> pMetaField(
         new MetaField(i_pFmt, nNumberFormat, bIsFixedLanguage) );
     m_MetaFields.push_back(pMetaField);
     return pMetaField;
@@ -879,7 +880,7 @@ MetaFieldManager::makeMetaField(SwFmtMeta * const i_pFmt,
 
 struct IsInUndo
 {
-    bool operator()(::boost::weak_ptr<MetaField> const & pMetaField) {
+    bool operator()(::std::weak_ptr<MetaField> const & pMetaField) {
         return pMetaField.lock()->IsInUndo();
     }
 };
@@ -887,7 +888,7 @@ struct IsInUndo
 struct MakeUnoObject
 {
     uno::Reference<text::XTextField>
-    operator()(::boost::weak_ptr<MetaField> const & pMetaField) {
+    operator()(::std::weak_ptr<MetaField> const & pMetaField) {
         return uno::Reference<text::XTextField>(
                 pMetaField.lock()->MakeUnoObject(), uno::UNO_QUERY);
     }
@@ -899,7 +900,7 @@ MetaFieldManager::getMetaFields()
     // erase deleted fields
     const MetaFieldList_t::iterator iter(
         ::std::remove_if(m_MetaFields.begin(), m_MetaFields.end(),
-            ::boost::bind(&::boost::weak_ptr<MetaField>::expired, _1)));
+            ::boost::bind(&::std::weak_ptr<MetaField>::expired, _1)));
     m_MetaFields.erase(iter, m_MetaFields.end());
     // filter out fields in UNDO
     MetaFieldList_t filtered(m_MetaFields.size());

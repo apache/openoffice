@@ -24,8 +24,8 @@
 #ifndef INCLUDED_SLIDESHOW_VIEWREPAINTHANDLER_HXX
 #define INCLUDED_SLIDESHOW_VIEWREPAINTHANDLER_HXX
 
-#include <boost/shared_ptr.hpp>
-#include <boost/weak_ptr.hpp>
+#include <memory>
+#include <memory>
 
 #include "unoview.hxx"
 
@@ -60,8 +60,8 @@ namespace slideshow
             virtual void viewClobbered( const UnoViewSharedPtr& rView ) = 0;
         };
 
-        typedef ::boost::shared_ptr< ViewRepaintHandler > ViewRepaintHandlerSharedPtr;
-        typedef ::boost::weak_ptr< ViewRepaintHandler >   ViewRepaintHandlerWeakPtr;
+        typedef ::std::shared_ptr< ViewRepaintHandler > ViewRepaintHandlerSharedPtr;
+        typedef ::std::weak_ptr< ViewRepaintHandler >   ViewRepaintHandlerWeakPtr;
 
     }
 }

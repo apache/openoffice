@@ -4032,7 +4032,7 @@ SvxEntries*	ToolbarSaveInData::GetEntries()
 				pEntry->SetStyle( GetSystemStyle( url ) );
 
 
-                // insert into unordered_map to filter duplicates from the parent
+                // insert into std::unordered_map to filter duplicates from the parent
                 aToolbarInfo.insert( ToolbarInfo::value_type( systemname, true ));
 
 				OUString custom = OUString::createFromAscii(CUSTOM_TOOLBAR_STR);

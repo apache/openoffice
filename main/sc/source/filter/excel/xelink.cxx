@@ -36,7 +36,7 @@
 #include <vector>
 #include <memory>
 
-using ::std::auto_ptr;
+using ::std::unique_ptr;
 using ::std::find_if;
 using ::std::vector;
 using ::rtl::OUString;

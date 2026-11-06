@@ -25,7 +25,7 @@
 #define INCLUDED_BASEBMP_DEBUG_HXX
 
 #include <iostream>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 namespace basebmp
 {
@@ -39,7 +39,7 @@ namespace basebmp
         @param rOutputStream
         Stream to write output to.
     */
-    void debugDump( const boost::shared_ptr< BitmapDevice >& rDevice,
+    void debugDump( const std::shared_ptr< BitmapDevice >& rDevice,
                     ::std::ostream&                          rOutputStream );
 }
 

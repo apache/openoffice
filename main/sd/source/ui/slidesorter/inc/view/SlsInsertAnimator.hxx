@@ -27,6 +27,7 @@
 #include "controller/SlsAnimator.hxx"
 #include <boost/scoped_ptr.hpp>
 #include <boost/noncopyable.hpp>
+#include <memory>
 
 namespace sd { namespace slidesorter { namespace view {
 
@@ -58,7 +59,7 @@ public:
 
 private:
     class Implementation;
-    ::boost::shared_ptr<Implementation> mpImplementation;
+    ::std::shared_ptr<Implementation> mpImplementation;
 };
 
 

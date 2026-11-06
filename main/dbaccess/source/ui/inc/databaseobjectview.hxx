@@ -62,7 +62,7 @@
 #endif
 #include <comphelper/namedvaluecollection.hxx>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 
 // .........................................................................

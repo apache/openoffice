@@ -24,13 +24,14 @@
 #define INCLUDED_FFDataHandler_HXX
 #include <resourcemodel/LoggedResources.hxx>
 #include <rtl/ustring.hxx>
+#include <memory>
 namespace writerfilter {
 namespace dmapper {
 class FFDataHandler : public LoggedProperties
 {
 public:
     // typedefs
-    typedef ::boost::shared_ptr<FFDataHandler> Pointer_t;
+    typedef ::std::shared_ptr<FFDataHandler> Pointer_t;
     typedef ::std::vector<rtl::OUString> DropDownEntries_t;
 
     // constructor

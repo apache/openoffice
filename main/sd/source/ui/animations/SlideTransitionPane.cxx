@@ -333,7 +333,7 @@ sal_uInt16 lcl_getTransitionEffectIndex(
     return pResult;
 }
 
-struct lcl_EqualsSoundFileName : public ::std::unary_function< String, bool >
+struct lcl_EqualsSoundFileName 
 {
     explicit lcl_EqualsSoundFileName( const String & rStr ) :
             maStr( rStr )
@@ -394,7 +394,7 @@ String lcl_getSoundFileURL(
     return aResult;
 }
 
-struct lcl_AppendSoundToListBox : public ::std::unary_function< String, void >
+struct lcl_AppendSoundToListBox 
 {
     lcl_AppendSoundToListBox( ListBox & rListBox ) :
             mrListBox( rListBox )
@@ -573,7 +573,7 @@ void SlideTransitionPane::onChangeCurrentPage()
     ::sd::slidesorter::SlideSorterViewShell * pSlideSorterViewShell
         = ::sd::slidesorter::SlideSorterViewShell::GetSlideSorter(mrBase);
 //    DBG_ASSERT( pSlideSorterViewShell, "No Slide-Sorter available" );
-    ::boost::shared_ptr<sd::slidesorter::SlideSorterViewShell::PageSelection> pSelection;
+    ::std::shared_ptr<sd::slidesorter::SlideSorterViewShell::PageSelection> pSelection;
 
     if( pSlideSorterViewShell )
     {

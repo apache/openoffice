@@ -36,6 +36,7 @@
 #include <svl/lngmisc.hxx>
 #include <unotools/processfactory.hxx>
 #include <osl/mutex.hxx>
+#include <memory>
 
 #include "hyphdsp.hxx"
 #include "linguistic/hyphdta.hxx"
@@ -686,7 +687,7 @@ void HyphenatorDispatcher::SetServiceList( const Locale &rLocale,
         }
         else
         {
-            boost::shared_ptr< LangSvcEntries_Hyph > pTmpEntry( new LangSvcEntries_Hyph( rSvcImplNames[0] ) );
+            std::shared_ptr< LangSvcEntries_Hyph > pTmpEntry( new LangSvcEntries_Hyph( rSvcImplNames[0] ) );
             pTmpEntry->aSvcRefs = Sequence< Reference < XHyphenator > >( 1 );
             aSvcMap[ nLanguage ] = pTmpEntry;
         }

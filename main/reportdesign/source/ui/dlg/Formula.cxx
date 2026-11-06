@@ -36,6 +36,7 @@
 #include <formula/formdata.hxx>
 #include <formula/funcutl.hxx>
 #include <formula/tokenarray.hxx>
+#include <memory>
 
 #include "Formula.hxx"
 #include "AddField.hxx"
@@ -53,7 +54,7 @@ namespace rptui
 
 FormulaDialog::FormulaDialog(Window* pParent
                              , const uno::Reference<lang::XMultiServiceFactory>& _xServiceFactory
-                             , const ::boost::shared_ptr< IFunctionManager >&  _pFunctionMgr
+                             , const ::std::shared_ptr< IFunctionManager >&  _pFunctionMgr
                              , const ::rtl::OUString& _sFormula
                              , const ::com::sun::star::uno::Reference < ::com::sun::star::beans::XPropertySet >& _xRowSet)
     : FormulaModalDialog( pParent, false,false,false,this,_pFunctionMgr.get(),this)
@@ -98,7 +99,7 @@ FormulaDialog::~FormulaDialog()
         SvtViewOptions aDlgOpt( E_WINDOW, String::CreateFromAscii( HID_RPT_FIELD_SEL_WIN ) );
         aDlgOpt.SetWindowState( ::rtl::OUString::createFromAscii( m_pAddField->GetWindowState((WINDOWSTATE_MASK_X | WINDOWSTATE_MASK_Y | WINDOWSTATE_MASK_STATE | WINDOWSTATE_MASK_MINIMIZED)).GetBuffer() ) );
 
-        ::std::auto_ptr<Window> aTemp2(m_pAddField);
+        ::std::unique_ptr<Window> aTemp2(m_pAddField);
 		m_pAddField = NULL;
     }
 }
@@ -258,9 +259,9 @@ table::CellAddress FormulaDialog::getReferencePosition() const
     return table::CellAddress();
 }
 // -----------------------------------------------------------------------------
-::std::auto_ptr<formula::FormulaTokenArray> FormulaDialog::convertToTokenArray(const uno::Sequence< sheet::FormulaToken >& _aTokenList)
+::std::unique_ptr<formula::FormulaTokenArray> FormulaDialog::convertToTokenArray(const uno::Sequence< sheet::FormulaToken >& _aTokenList)
 {
-    ::std::auto_ptr<formula::FormulaTokenArray> pArray(new FormulaTokenArray());
+    ::std::unique_ptr<formula::FormulaTokenArray> pArray(new FormulaTokenArray());
     pArray->Fill(_aTokenList, NULL);
     return pArray;
 }

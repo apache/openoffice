@@ -24,6 +24,7 @@
 #ifndef OOX_DRAWINGML_CHART_CONVERTERBASE_HXX
 #define OOX_DRAWINGML_CHART_CONVERTERBASE_HXX
 
+#include <memory>
 #include "oox/drawingml/chart/chartcontextbase.hxx"
 #include "oox/drawingml/chart/objectformatter.hxx"
 
@@ -96,7 +97,7 @@ protected:
     void                convertTitlePositions();
 
 private:
-    ::boost::shared_ptr< ConverterData > mxData;
+    ::std::shared_ptr< ConverterData > mxData;
 };
 
 // ============================================================================

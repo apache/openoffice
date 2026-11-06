@@ -236,7 +236,7 @@ class ScDPDataMember;
 // Wang Xu Ming -- 2009-8-17
 // DataPilot Migration - Cache&&Performance
 
-struct MemberHashIndexFunc : public std::unary_function< const SCROW &, size_t >
+struct MemberHashIndexFunc 
 {
 	size_t operator() (const SCROW &rDataIndex) const { return rDataIndex; }
 };

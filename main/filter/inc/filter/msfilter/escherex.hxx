@@ -26,7 +26,7 @@
 
 #include <memory>
 #include <vector>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <tools/solar.h>
 #include <tools/gen.hxx>
 #include <tools/list.hxx>
@@ -1433,7 +1433,7 @@ private:
     bool                mbPicStrmQueried;   /// True = ImplQueryPictureStream() has been called.
 };
 
-typedef ::boost::shared_ptr< EscherExGlobal > EscherExGlobalRef;
+typedef ::std::shared_ptr< EscherExGlobal > EscherExGlobalRef;
 
 // ---------------------------------------------------------------------------------------------
 
@@ -1444,7 +1444,7 @@ class ImplEscherExSdr;
 class MSFILTER_DLLPUBLIC EscherEx : public EscherPersistTable
 {
     protected:
-        typedef ::std::auto_ptr< ImplEscherExSdr > ImplEscherExSdrPtr;
+        typedef ::std::unique_ptr< ImplEscherExSdr > ImplEscherExSdrPtr;
 
         EscherExGlobalRef			mxGlobal;
         ImplEscherExSdrPtr			mpImplEscherExSdr;

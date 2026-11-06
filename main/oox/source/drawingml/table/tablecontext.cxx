@@ -22,6 +22,7 @@
 
 
 #include <osl/diagnose.h>
+#include <memory>
 #include "oox/helper/attributelist.hxx"
 #include "oox/drawingml/guidcontext.hxx"
 #include "oox/drawingml/table/tablecontext.hxx"
@@ -67,7 +68,7 @@ TableContext::createFastChildContext( ::sal_Int32 aElementToken, const uno::Refe
 		break;
 	case A_TOKEN( tableStyle ):			// CT_TableStyle
 		{
-			boost::shared_ptr< TableStyle >& rTableStyle = mrTableProperties.getTableStyle();
+			std::shared_ptr< TableStyle >& rTableStyle = mrTableProperties.getTableStyle();
 			rTableStyle.reset( new TableStyle() );
 			xRet = new TableStyleContext( *this, xAttribs, *rTableStyle );
 		}

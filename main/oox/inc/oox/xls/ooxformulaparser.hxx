@@ -24,7 +24,7 @@
 #ifndef OOX_XLS_OOXFORMULAPARSER_HXX
 #define OOX_XLS_OOXFORMULAPARSER_HXX
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <com/sun/star/lang/XComponent.hpp>
 #include <com/sun/star/lang/XInitialization.hpp>
 #include <com/sun/star/lang/XServiceInfo.hpp>
@@ -85,8 +85,8 @@ public:
                             const ::com::sun::star::table::CellAddress& rReferencePos );
 
 private:
-    typedef ::boost::shared_ptr< OOXMLFormulaParserImpl >   ParserImplRef;
-    typedef ::boost::shared_ptr< OOXMLFormulaPrinterImpl >  PrinterImplRef;
+    typedef ::std::shared_ptr< OOXMLFormulaParserImpl >   ParserImplRef;
+    typedef ::std::shared_ptr< OOXMLFormulaPrinterImpl >  PrinterImplRef;
 
     ::com::sun::star::uno::Reference< ::com::sun::star::lang::XComponent >
                         mxComponent;

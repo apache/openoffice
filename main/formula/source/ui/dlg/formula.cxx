@@ -68,6 +68,7 @@
 #include <boost/bind.hpp>
 #include <comphelper/processfactory.hxx>
 #include <map>
+#include <memory>
 
 #define TOKEN_OPEN  0
 #define TOKEN_CLOSE 1
@@ -160,7 +161,7 @@ namespace formula
         OModuleClient                                           m_aModuleClient;
         mutable uno::Reference< sheet::XFormulaOpCodeMapper>    m_xOpCodeMapper;
         uno::Sequence< sheet::FormulaToken >                    m_aTokenList;
-        ::std::auto_ptr<FormulaTokenArray>                      m_pTokenArray;
+        ::std::unique_ptr<FormulaTokenArray>                      m_pTokenArray;
         mutable uno::Sequence< sheet::FormulaOpCodeMapEntry >   m_aSpecialOpCodes;
         mutable const sheet::FormulaOpCodeMapEntry*             m_pSpecialOpCodesEnd;
         mutable uno::Sequence< sheet::FormulaToken >            m_aSeparatorsOpCodes;
@@ -170,7 +171,7 @@ namespace formula
         mutable const sheet::FormulaOpCodeMapEntry*             m_pUnaryOpCodesEnd;
         mutable uno::Sequence< sheet::FormulaOpCodeMapEntry >   m_aBinaryOpCodes;
         mutable const sheet::FormulaOpCodeMapEntry*             m_pBinaryOpCodesEnd;
-        ::std::vector< ::boost::shared_ptr<OFormulaToken> >     m_aTokens;
+        ::std::vector< ::std::shared_ptr<OFormulaToken> >     m_aTokens;
         ::std::map<FormulaToken*,sheet::FormulaToken>           m_aTokenMap;
         IFormulaEditorHelper*                                   m_pHelper;
         Dialog*  m_pParent;
@@ -466,7 +467,7 @@ void FormulaDlg_Impl::DeleteArgs()
 namespace
 {
     // comparing two property instances
-    struct OpCodeCompare : public ::std::binary_function< sheet::FormulaOpCodeMapEntry, sal_Int32 , bool >
+    struct OpCodeCompare 
     {
 	    bool operator() (const sheet::FormulaOpCodeMapEntry& x, sal_Int32 y) const
 	    {
@@ -550,7 +551,7 @@ xub_StrLen FormulaDlg_Impl::GetFunctionPos(xub_StrLen nPos)
 				    bFlag=sal_False;
 				    nFuncPos=nPrevFuncPos;
 			    }
-                bool bIsFunction = ::std::find_if(m_aFunctionOpCodes.getConstArray(),m_pFunctionOpCodesEnd,::std::bind2nd(OpCodeCompare(),boost::cref(eOp))) != m_pFunctionOpCodesEnd;
+                bool bIsFunction = ::std::find_if(m_aFunctionOpCodes.getConstArray(),m_pFunctionOpCodesEnd,[&eOp](auto& _x) { return OpCodeCompare()(_x, eOp); }) != m_pFunctionOpCodesEnd;
 
 			    if ( bIsFunction && m_aSpecialOpCodes[sheet::FormulaMapGroupSpecialOffset::SPACES].Token.OpCode != eOp )
 			    {

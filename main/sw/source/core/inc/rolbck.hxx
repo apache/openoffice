@@ -106,7 +106,7 @@ public:
 
 class SwHistorySetFmt : public SwHistoryHint
 {
-    ::std::auto_ptr<SfxPoolItem> m_pAttr;
+    ::std::unique_ptr<SfxPoolItem> m_pAttr;
     const sal_uLong m_nNodeIndex;
 
 public:
@@ -132,7 +132,7 @@ public:
 
 class SwHistorySetTxt : public SwHistoryHint
 {
-    ::std::auto_ptr<SfxPoolItem> m_pAttr;
+    ::std::unique_ptr<SfxPoolItem> m_pAttr;
     const sal_uLong m_nNodeIndex;
     const xub_StrLen m_nStart;
     const xub_StrLen m_nEnd;
@@ -148,8 +148,8 @@ class SwHistorySetTxtFld : public SwHistoryHint
 {
     //!! beware of the order for the declaration of the auto_ptrs.
     //!! If they get destroyed in the wrong order sw may crash (namely mail-merge as well)
-    ::std::auto_ptr<SwFieldType> m_pFldType;
-    const ::std::auto_ptr<SwFmtFld> m_pFld;
+    ::std::unique_ptr<SwFieldType> m_pFldType;
+    const ::std::unique_ptr<SwFmtFld> m_pFld;
 
     sal_uLong m_nNodeIndex;
     xub_StrLen m_nPos;
@@ -213,7 +213,7 @@ public:
 
 class SwHistorySetFootnote : public SwHistoryHint
 {
-    const ::std::auto_ptr<SwUndoSaveSection> m_pUndo;
+    const ::std::unique_ptr<SwUndoSaveSection> m_pUndo;
     const String m_FootnoteNumber;
     sal_uLong m_nNodeIndex;
     const xub_StrLen m_nStart;
@@ -243,7 +243,7 @@ public:
 
 class SwHistoryTxtFlyCnt : public SwHistoryHint
 {
-    ::std::auto_ptr<SwUndoDelLayFmt> m_pUndo;
+    ::std::unique_ptr<SwUndoDelLayFmt> m_pUndo;
 
 public:
     SwHistoryTxtFlyCnt( SwFrmFmt* const pFlyFmt );
@@ -276,7 +276,7 @@ class SwHistoryBookmark : public SwHistoryHint
         const bool m_bSaveOtherPos;
         const bool m_bHadOtherPos;
         const IDocumentMarkAccess::MarkType m_eBkmkType;
-        ::boost::shared_ptr< ::sfx2::MetadatableUndo > m_pMetadataUndo;
+        ::std::shared_ptr< ::sfx2::MetadatableUndo > m_pMetadataUndo;
 };
 
 class SwHistorySetAttrSet : public SwHistoryHint

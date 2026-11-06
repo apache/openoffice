@@ -55,12 +55,12 @@ namespace comphelper
 // comparison functors
 
 //------------------------------------------------------------------------
-struct UStringLess : public ::std::binary_function< ::rtl::OUString, ::rtl::OUString, bool>
+struct UStringLess 
 {
     bool operator() (const ::rtl::OUString& x, const ::rtl::OUString& y) const { return x < y ? true : false;}      // construct prevents a MSVC6 warning
 };
 //------------------------------------------------------------------------
-struct UStringMixLess : public ::std::binary_function< ::rtl::OUString, ::rtl::OUString, bool>
+struct UStringMixLess 
 {
     bool m_bCaseSensitive;
 public:
@@ -107,7 +107,7 @@ public:
     sal_Bool isCaseSensitive() const {return m_bCaseSensitive;}
 };
 //------------------------------------------------------------------------
-class TStringMixEqualFunctor : public ::std::binary_function< ::rtl::OUString,::rtl::OUString,bool>
+class TStringMixEqualFunctor 
 {
     sal_Bool m_bCaseSensitive;
 
@@ -122,7 +122,7 @@ public:
     sal_Bool isCaseSensitive() const {return m_bCaseSensitive;}
 };
 //------------------------------------------------------------------------
-class TPropertyValueEqualFunctor : public ::std::binary_function< ::com::sun::star::beans::PropertyValue,::rtl::OUString,bool>
+class TPropertyValueEqualFunctor 
 {
 public:
     TPropertyValueEqualFunctor()
@@ -153,12 +153,8 @@ public:
 */
 template < class IAFCE >
 struct OInterfaceCompare
-	:public ::std::binary_function	<	::com::sun::star::uno::Reference< IAFCE >
-									,	::com::sun::star::uno::Reference< IAFCE >
-									,	bool
-									>
 {
-	bool operator() (const ::com::sun::star::uno::Reference< IAFCE >& lhs, const ::com::sun::star::uno::Reference< IAFCE >& rhs) const
+    bool operator() (const ::com::sun::star::uno::Reference< IAFCE >& lhs, const ::com::sun::star::uno::Reference< IAFCE >& rhs) const
 	{
 		return lhs.get() < rhs.get();
 			// this does not make any sense if you see the semantics of the pointer returned by get:
@@ -169,7 +165,7 @@ struct OInterfaceCompare
 };
 
 template <class _Tp, class _Arg>
-class mem_fun1_t : public ::std::binary_function<_Tp*,_Arg,void>
+class mem_fun1_t 
 {
 	typedef void (_Tp::*_fun_type)(_Arg);
 public:

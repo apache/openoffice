@@ -562,7 +562,7 @@ SwXFootnote::createEnumeration()
 
     SwTxtFtn const*const pTxtFtn = rFmt.GetTxtFtn();
     SwPosition aPos( *pTxtFtn->GetStartNode() );
-    ::std::auto_ptr<SwUnoCrsr> pUnoCursor(
+    ::std::unique_ptr<SwUnoCrsr> pUnoCursor(
         GetDoc()->CreateUnoCrsr(aPos, sal_False));
     pUnoCursor->Move(fnMoveForward, fnGoNode);
     const uno::Reference< container::XEnumeration >  xRet =

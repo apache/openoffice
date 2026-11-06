@@ -32,7 +32,7 @@
 #include <vcl/ctrl.hxx>
 #include <vcl/seleng.hxx>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <boost/scoped_ptr.hpp>
 
 //........................................................................
@@ -65,7 +65,7 @@ namespace svt { namespace table
     class SVT_DLLPUBLIC TableControl : public Control, public IAccessibleTable
 	{
     private:
-        ::boost::shared_ptr< TableControl_Impl >            m_pImpl;
+        ::std::shared_ptr< TableControl_Impl >            m_pImpl;
 
 
     public:

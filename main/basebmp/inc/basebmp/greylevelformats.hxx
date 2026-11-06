@@ -42,9 +42,10 @@ namespace basebmp
 
 template< typename PixelType,
           typename ColorType,
-          int      UsedRange > struct GreylevelGetter :
-        public std::unary_function<PixelType, ColorType>
+          int      UsedRange > struct GreylevelGetter 
 {
+    typedef PixelType  argument_type;
+    typedef ColorType  result_type;
     ColorType operator()( PixelType const& c ) const
     {
         return ColorTraits<ColorType>::fromGreyscale(
@@ -55,9 +56,10 @@ template< typename PixelType,
 
 template< typename PixelType,
           typename ColorType,
-          int      UsedRange > struct GreylevelSetter :
-    public std::unary_function<ColorType, PixelType>
+          int      UsedRange > struct GreylevelSetter 
 {
+    typedef ColorType  argument_type;
+    typedef PixelType  result_type;
     PixelType operator()( ColorType const& c ) const
     {
         return vigra::NumericTraits<PixelType>::toPromote(

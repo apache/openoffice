@@ -25,6 +25,7 @@
 #define INCLUDED_DFF_HXX
 
 #include <vector>
+#include <memory>
 #include <WW8StructBase.hxx>
 #include <WW8ResourceModelImpl.hxx>
 
@@ -40,7 +41,7 @@ class DffRecord : public WW8StructBase, public writerfilter::Reference<Propertie
 {
     bool bInitialized;
 public:
-    typedef boost::shared_ptr<DffRecord> Pointer_t;
+    typedef std::shared_ptr<DffRecord> Pointer_t;
 
 protected:
     typedef vector<Pointer_t> Records_t;
@@ -113,7 +114,7 @@ protected:
     void initChildren();
 
 public:
-    typedef boost::shared_ptr<DffBlock> Pointer_t;
+    typedef std::shared_ptr<DffBlock> Pointer_t;
 
     DffBlock(WW8Stream & rStream, sal_uInt32 nOffset, sal_uInt32 nCount, sal_uInt32 nPadding);
     DffBlock(WW8StructBase * pParent, sal_uInt32 nOffset, sal_uInt32 nCount, sal_uInt32 nPadding);

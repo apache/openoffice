@@ -34,6 +34,7 @@
 #include <boost/scoped_ptr.hpp>
 #include <boost/function.hpp>
 #include <vector>
+#include <memory>
 
 namespace css = ::com::sun::star;
 
@@ -95,7 +96,7 @@ public:
             is called then the other functor is not called.
     */
     bool rewind (
-        const ::boost::shared_ptr<ScreenUpdater::UpdateLock>& rpPaintLock,
+        const ::std::shared_ptr<ScreenUpdater::UpdateLock>& rpPaintLock,
         const ::boost::function<void(void)>& rSlideRewindFunctor,
         const ::boost::function<void(void)>& rPreviousSlideFunctor);
 
@@ -124,7 +125,7 @@ private:
     EventSharedPtr mpAsynchronousRewindEvent;
 
     css::uno::Reference<css::animations::XAnimationNode> mxCurrentAnimationRootNode;
-    ::boost::shared_ptr<ScreenUpdater::UpdateLock> mpPaintLock;
+    ::std::shared_ptr<ScreenUpdater::UpdateLock> mpPaintLock;
 
     bool mbNonUserTriggeredMainSequenceEffectSeen;
 

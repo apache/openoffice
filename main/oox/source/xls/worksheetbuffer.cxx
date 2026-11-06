@@ -30,6 +30,7 @@
 #include <com/sun/star/sheet/XSheetLinkable.hpp>
 #include <com/sun/star/sheet/XSpreadsheetDocument.hpp>
 #include <rtl/ustrbuf.hxx>
+#include <memory>
 #include "oox/core/filterbase.hxx"
 #include "oox/helper/attributelist.hxx"
 #include "oox/helper/containerhelper.hxx"
@@ -242,7 +243,7 @@ void WorksheetBuffer::insertSheet( const SheetInfoModel& rModel )
 {
     sal_Int32 nWorksheet = static_cast< sal_Int32 >( maSheetInfos.size() );
     IndexNamePair aIndexName = createSheet( rModel.maName, nWorksheet, rModel.mnState == XML_visible );
-    ::boost::shared_ptr< SheetInfo > xSheetInfo( new SheetInfo( rModel, aIndexName.first, aIndexName.second ) );
+    ::std::shared_ptr< SheetInfo > xSheetInfo( new SheetInfo( rModel, aIndexName.first, aIndexName.second ) );
     maSheetInfos.push_back( xSheetInfo );
     maSheetInfosByName[ rModel.maName ] = xSheetInfo;
     maSheetInfosByName[ lclQuoteName( rModel.maName ) ] = xSheetInfo;

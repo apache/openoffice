@@ -24,6 +24,7 @@
 
 #include "MasterPagesSelector.hxx"
 #include <com/sun/star/lang/XComponent.hpp>
+#include <memory>
 
 
 namespace css = ::com::sun::star;
@@ -73,7 +74,7 @@ private:
         ::Window* pParent,
         SdDrawDocument& rDocument,
         ViewShellBase& rBase,
-        const ::boost::shared_ptr<MasterPageContainer>& rpContainer,
+        const ::std::shared_ptr<MasterPageContainer>& rpContainer,
         const cssu::Reference<css::ui::XSidebar>& rxSidebar);
     virtual ~CurrentMasterPagesSelector (void);
 

@@ -21,6 +21,7 @@
 
 
 
+#include <memory>
 #include "precompiled_sd.hxx"
 
 #include "SlsGenericPageCache.hxx"
@@ -247,7 +248,7 @@ void GenericPageCache::RequestPreviewBitmap (
 bool GenericPageCache::InvalidatePreviewBitmap (const CacheKey aKey)
 {
     // Invalidate the page in all caches that reference it, not just this one.
-    ::boost::shared_ptr<cache::PageCacheManager> pCacheManager (
+    ::std::shared_ptr<cache::PageCacheManager> pCacheManager (
         cache::PageCacheManager::Instance());
     if (pCacheManager)
         return pCacheManager->InvalidatePreviewBitmap(

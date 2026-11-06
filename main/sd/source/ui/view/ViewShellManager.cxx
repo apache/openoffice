@@ -77,7 +77,7 @@ public:
 /** This functor can be used to search for a shell in an STL container when the
 	shell pointer is given.
 */
-class IsShell : public ::std::unary_function<ShellDescriptor,bool>
+class IsShell 
 {
 public:
 	IsShell (const SfxShell* pShell) : mpShell(pShell) {}
@@ -93,7 +93,7 @@ private:
 /** This functor can be used to search for a shell in an STL container when the
 	id of the shell is given.
 */
-class IsId : public ::std::unary_function<ShellDescriptor,bool>
+class IsId 
 {
 public:
 	IsId (ShellId nId) : mnId(nId) {}

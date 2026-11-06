@@ -75,7 +75,7 @@ UniString::UniString(char c): mpData(ImplAllocData(1)) { mpData->maStr[0] = c; }
 UniString UniString::CreateFromInt32( sal_Int32 n, sal_Int16 nRadix )
 {
 	sal_Unicode aBuf[RTL_USTR_MAX_VALUEOFINT32];
-    BOOST_STATIC_ASSERT(RTL_USTR_MAX_VALUEOFINT32 <= STRING_MAXLEN);
+    static_assert(RTL_USTR_MAX_VALUEOFINT32 <= STRING_MAXLEN);
 	return UniString(
         aBuf,
         static_cast< xub_StrLen >(rtl_ustr_valueOfInt32( aBuf, n, nRadix )) );
@@ -86,7 +86,7 @@ UniString UniString::CreateFromInt32( sal_Int32 n, sal_Int16 nRadix )
 UniString UniString::CreateFromInt64( sal_Int64 n, sal_Int16 nRadix )
 {
 	sal_Unicode aBuf[RTL_USTR_MAX_VALUEOFINT64];
-    BOOST_STATIC_ASSERT(RTL_USTR_MAX_VALUEOFINT64 <= STRING_MAXLEN);
+    static_assert(RTL_USTR_MAX_VALUEOFINT64 <= STRING_MAXLEN);
 	return UniString(
         aBuf,
         static_cast< xub_StrLen >(rtl_ustr_valueOfInt64( aBuf, n, nRadix )) );
@@ -97,7 +97,7 @@ UniString UniString::CreateFromInt64( sal_Int64 n, sal_Int16 nRadix )
 UniString UniString::CreateFromFloat( float f )
 {
 	sal_Unicode aBuf[RTL_USTR_MAX_VALUEOFFLOAT];
-    BOOST_STATIC_ASSERT(RTL_USTR_MAX_VALUEOFFLOAT <= STRING_MAXLEN);
+    static_assert(RTL_USTR_MAX_VALUEOFFLOAT <= STRING_MAXLEN);
 	return UniString(
         aBuf, static_cast< xub_StrLen >(rtl_ustr_valueOfFloat( aBuf, f )) );
 }
@@ -107,7 +107,7 @@ UniString UniString::CreateFromFloat( float f )
 UniString UniString::CreateFromDouble( double d )
 {
 	sal_Unicode aBuf[RTL_USTR_MAX_VALUEOFDOUBLE];
-    BOOST_STATIC_ASSERT(RTL_USTR_MAX_VALUEOFDOUBLE <= STRING_MAXLEN);
+    static_assert(RTL_USTR_MAX_VALUEOFDOUBLE <= STRING_MAXLEN);
 	return UniString(
         aBuf, static_cast< xub_StrLen >(rtl_ustr_valueOfDouble( aBuf, d )) );
 }

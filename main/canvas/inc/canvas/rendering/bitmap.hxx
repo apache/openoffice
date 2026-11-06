@@ -33,7 +33,7 @@
 #include <canvas/rendering/icachedprimitive.hxx>
 #include <canvas/rendering/isurfaceproxymanager.hxx>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <boost/scoped_ptr.hpp>
 #include <vector>
 
@@ -218,7 +218,7 @@ namespace canvas
             const ::com::sun::star::rendering::RenderState& 		renderState,
             const ::com::sun::star::uno::Sequence<
                   ::com::sun::star::rendering::Texture >&           textures,
-            const ::std::vector< ::boost::shared_ptr<Bitmap> >&     textureAnnotations,
+            const ::std::vector< ::std::shared_ptr<Bitmap> >&     textureAnnotations,
             const ::com::sun::star::rendering::StrokeAttributes&    strokeAttributes );
         /** See XCanvas interface
 
@@ -235,7 +235,7 @@ namespace canvas
             const ::com::sun::star::rendering::RenderState& 		renderState,
             const ::com::sun::star::uno::Sequence<
                   ::com::sun::star::rendering::Texture >&           textures,
-            const ::std::vector< ::boost::shared_ptr<Bitmap> >&     textureAnnotations,
+            const ::std::vector< ::std::shared_ptr<Bitmap> >&     textureAnnotations,
             const ::com::sun::star::uno::Reference<
                   ::com::sun::star::geometry::XMapping2D >& 		xMapping,
             const ::com::sun::star::rendering::StrokeAttributes& 	strokeAttributes );
@@ -260,7 +260,7 @@ namespace canvas
             const ::com::sun::star::rendering::RenderState& 		renderState,
             const ::com::sun::star::uno::Sequence<
                   ::com::sun::star::rendering::Texture >&           textures,
-            const ::std::vector< ::boost::shared_ptr<Bitmap> >&     textureAnnotations );
+            const ::std::vector< ::std::shared_ptr<Bitmap> >&     textureAnnotations );
         /** See XCanvas interface
 
             @param textureAnnotations
@@ -276,7 +276,7 @@ namespace canvas
             const ::com::sun::star::rendering::RenderState& 		renderState,
             const ::com::sun::star::uno::Sequence<
                   ::com::sun::star::rendering::Texture >&           textures,
-            const ::std::vector< ::boost::shared_ptr<Bitmap> >&     textureAnnotations,
+            const ::std::vector< ::std::shared_ptr<Bitmap> >&     textureAnnotations,
             const ::com::sun::star::uno::Reference<
                   ::com::sun::star::geometry::XMapping2D >& 		xMapping );
 
@@ -288,7 +288,7 @@ namespace canvas
             const ::com::sun::star::rendering::RenderState& renderState );
         /// See XCanvas interface
         ICachedPrimitiveSharedPtr drawBitmap(
-            const ::boost::shared_ptr<Bitmap>&              rImage,
+            const ::std::shared_ptr<Bitmap>&              rImage,
             const ::com::sun::star::rendering::ViewState& 	viewState,
             const ::com::sun::star::rendering::RenderState& renderState );
 
@@ -300,7 +300,7 @@ namespace canvas
             const ::com::sun::star::rendering::RenderState&     renderState );
         /// See XCanvas interface
         ICachedPrimitiveSharedPtr drawBitmapModulated(
-            const ::boost::shared_ptr<Bitmap>&                  rImage,
+            const ::std::shared_ptr<Bitmap>&                  rImage,
             const ::com::sun::star::rendering::ViewState& 		viewState,
             const ::com::sun::star::rendering::RenderState&     renderState );
 
@@ -310,7 +310,7 @@ namespace canvas
         const ::boost::scoped_ptr< ImplBitmap > mpImpl;
 	};
 
-    typedef ::boost::shared_ptr< Bitmap > BitmapSharedPtr;
+    typedef ::std::shared_ptr< Bitmap > BitmapSharedPtr;
 }
 
 #endif /* INCLUDED_CANVAS_BITMAP_HXX */

@@ -26,7 +26,7 @@
 
 #include <sal/types.h>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 
 namespace basegfx
@@ -56,7 +56,7 @@ namespace canvas
         virtual sal_Int8 redraw( const ::com::sun::star::rendering::ViewState& aState ) const = 0;
 	};
 
-    typedef ::boost::shared_ptr< ICachedPrimitive > ICachedPrimitiveSharedPtr;
+    typedef ::std::shared_ptr< ICachedPrimitive > ICachedPrimitiveSharedPtr;
 }
 
 #endif /* INCLUDED_CANVAS_ICACHEDPRIMITIVE_HXX */

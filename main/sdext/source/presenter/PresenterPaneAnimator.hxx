@@ -37,7 +37,7 @@
 #include <vector>
 #include <boost/function.hpp>
 #include <boost/noncopyable.hpp>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 namespace css = ::com::sun::star;
 
@@ -64,21 +64,21 @@ protected:
 
 typedef ::std::vector< ::boost::function<void()> > EndActions;
 
-::boost::shared_ptr<PresenterPaneAnimator> CreateUnfoldInCenterAnimator (
+::std::shared_ptr<PresenterPaneAnimator> CreateUnfoldInCenterAnimator (
 		const css::uno::Reference<css::drawing::framework::XResourceId>& rxPaneId,
 		const ::rtl::Reference<PresenterController>& rpPresenterController,
 		const bool bAnimate,
 		const EndActions& rShowEndActions,
 		const EndActions& rEndEndActions);
 
-::boost::shared_ptr<PresenterPaneAnimator> CreateMoveInFromBottomAnimator (
+::std::shared_ptr<PresenterPaneAnimator> CreateMoveInFromBottomAnimator (
 		const css::uno::Reference<css::drawing::framework::XResourceId>& rxPaneId,
 		const ::rtl::Reference<PresenterController>& rpPresenterController,
 		const bool bAnimate,
 		const EndActions& rShowEndActions,
 		const EndActions& rEndEndActions);
 
-::boost::shared_ptr<PresenterPaneAnimator> CreateTransparentOverlay (
+::std::shared_ptr<PresenterPaneAnimator> CreateTransparentOverlay (
 		const css::uno::Reference<css::drawing::framework::XResourceId>& rxPaneId,
 		const ::rtl::Reference<PresenterController>& rpPresenterController,
 		const bool bAnimate,

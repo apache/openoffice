@@ -62,7 +62,7 @@
 using namespace com::sun::star;
 using ::com::sun::star::sheet::DataPilotFieldOrientation;
 using ::std::vector;
-using ::std::auto_ptr;
+using ::std::unique_ptr;
 using ::std::unordered_map;
 using ::rtl::OUString;
 using ::rtl::OUStringHash;
@@ -557,8 +557,8 @@ void ScGridWindow::DPLaunchFieldPopupMenu(
 
 void ScGridWindow::UpdateDPFromFieldPopupMenu()
 {
-    typedef unordered_map<OUString, OUString, OUStringHash> MemNameMapType;
-    typedef unordered_map<OUString, bool, OUStringHash> MemVisibilityType;
+    typedef std::unordered_map<OUString, OUString, OUStringHash> MemNameMapType;
+    typedef std::unordered_map<OUString, bool, OUStringHash> MemVisibilityType;
 
     if (!mpDPFieldPopup.get())
         return;

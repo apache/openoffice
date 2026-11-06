@@ -30,6 +30,7 @@
 #include <rtl/ref.hxx>
 #include <rtl/string.hxx>
 #include <rtl/ustring.hxx>
+#include <memory>
 #include "oox/core/filterbase.hxx"
 #include "oox/core/relations.hxx"
 #include "oox/drawingml/table/tablestylelist.hxx"
@@ -51,7 +52,7 @@ namespace oox {
 namespace sax_fastparser {
     class FastSerializerHelper;
 
-    typedef boost::shared_ptr< FastSerializerHelper > FSHelperPtr;
+    typedef std::shared_ptr< FastSerializerHelper > FSHelperPtr;
 }
 
 namespace oox {
@@ -209,7 +210,7 @@ private:
                             const ::com::sun::star::uno::Reference< ::com::sun::star::io::XStream >& rxOutStream ) const;
 
 private:
-    ::std::auto_ptr< XmlFilterBaseImpl > mxImpl;
+    ::std::unique_ptr< XmlFilterBaseImpl > mxImpl;
     sal_Int32 mnRelId;
     sal_Int32 mnMaxDocId;
 };

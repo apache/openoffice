@@ -60,7 +60,7 @@ class LayeredDevice;
 */
 class InsertionIndicatorOverlay
     : public ILayerPainter,
-      public ::boost::enable_shared_from_this<InsertionIndicatorOverlay>
+      public ::std::enable_shared_from_this<InsertionIndicatorOverlay>
 {
 public:
     InsertionIndicatorOverlay (SlideSorter& rSlideSorter);

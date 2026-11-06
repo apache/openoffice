@@ -75,6 +75,7 @@
 #include "framework/FrameworkHelper.hxx"
 #include <svx/svxids.hrc>
 #include <editeng/editerr.hxx>
+#include <memory>
 
 using ::rtl::OUString;
 using namespace ::com::sun::star;
@@ -109,7 +110,7 @@ public:
     */
     void ProvideOutlinerView (
         Outliner& rOutliner,
-        const ::boost::shared_ptr<ViewShell>& rpViewShell,
+        const ::std::shared_ptr<ViewShell>& rpViewShell,
         ::Window* pWindow);
 
     /** This method is called when the OutlinerView is no longer used.
@@ -280,7 +281,7 @@ void Outliner::PrepareSpelling (void)
         SetViewShell (pBase->GetMainViewShell());
     SetRefDevice( SD_MOD()->GetRefDevice( *mpDrawDocument->GetDocSh() ) );
 
-    ::boost::shared_ptr<ViewShell> pViewShell (mpWeakViewShell.lock());
+    ::std::shared_ptr<ViewShell> pViewShell (mpWeakViewShell.lock());
     if (pViewShell)
     {
         mbStringFound = sal_False;
@@ -325,8 +326,8 @@ void Outliner::StartSpelling(EditView& rView, unsigned char c)
 void Outliner::EndSpelling (void)
 {
     // Keep old view shell alive until we release the outliner view.
-    ::boost::shared_ptr<ViewShell> pViewShell (mpWeakViewShell.lock());
-    ::boost::shared_ptr<ViewShell> pOldViewShell (pViewShell);
+    ::std::shared_ptr<ViewShell> pViewShell (mpWeakViewShell.lock());
+    ::std::shared_ptr<ViewShell> pOldViewShell (pViewShell);
 
     ViewShellBase* pBase = PTR_CAST(ViewShellBase,SfxViewShell::Current());
     if (pBase != NULL)
@@ -389,7 +390,7 @@ void Outliner::EndSpelling (void)
 
 sal_Bool Outliner::SpellNextDocument (void)
 {
-    ::boost::shared_ptr<ViewShell> pViewShell (mpWeakViewShell.lock());
+    ::std::shared_ptr<ViewShell> pViewShell (mpWeakViewShell.lock());
     if (pViewShell->ISA(OutlineViewShell))
     {
         // When doing a spell check in the outline view then there is
@@ -486,7 +487,7 @@ bool Outliner::StartSearchAndReplace (const SvxSearchItem* pSearchItem)
     bool bAbort = false;
     if (pBase != NULL)
     {
-        ::boost::shared_ptr<ViewShell> pShell (pBase->GetMainViewShell());
+        ::std::shared_ptr<ViewShell> pShell (pBase->GetMainViewShell());
         SetViewShell(pShell);
         if (pShell.get() == NULL)
             bAbort = true;
@@ -506,7 +507,7 @@ bool Outliner::StartSearchAndReplace (const SvxSearchItem* pSearchItem)
             }
     }
 
-    ::boost::shared_ptr<ViewShell> pViewShell (mpWeakViewShell.lock());
+    ::std::shared_ptr<ViewShell> pViewShell (mpWeakViewShell.lock());
     if ( ! pViewShell)
     {
         OSL_ASSERT(pViewShell);
@@ -565,7 +566,7 @@ void Outliner::Initialize (bool bDirectionIsForward)
         maObjectIterator = ::sd::outliner::OutlinerContainer(this).current();
         maCurrentPosition = *maObjectIterator;
 
-        ::boost::shared_ptr<ViewShell> pViewShell (mpWeakViewShell.lock());
+        ::std::shared_ptr<ViewShell> pViewShell (mpWeakViewShell.lock());
         if ( ! pViewShell)
         {
             OSL_ASSERT(pViewShell);
@@ -629,7 +630,7 @@ bool Outliner::SearchAndReplaceAll (void)
     // matches.
     RememberStartPosition ();
 
-    ::boost::shared_ptr<ViewShell> pViewShell (mpWeakViewShell.lock());
+    ::std::shared_ptr<ViewShell> pViewShell (mpWeakViewShell.lock());
     if ( ! pViewShell)
     {
         OSL_ASSERT(pViewShell);
@@ -684,7 +685,7 @@ bool Outliner::SearchAndReplaceOnce (void)
 	if( NULL == pOutlinerView || !GetEditEngine().HasView( &pOutlinerView->GetEditView() ) )
 		return true;
 
-    ::boost::shared_ptr<ViewShell> pViewShell (mpWeakViewShell.lock());
+    ::std::shared_ptr<ViewShell> pViewShell (mpWeakViewShell.lock());
 	if( bool(pViewShell))
 	{
 		mpView = pViewShell->GetView();
@@ -774,8 +775,8 @@ void Outliner::DetectChange (void)
 {
     ::sd::outliner::IteratorPosition aPosition (maCurrentPosition);
 
-    ::boost::shared_ptr<ViewShell> pViewShell (mpWeakViewShell.lock());
-    ::boost::shared_ptr<DrawViewShell> pDrawViewShell (
+    ::std::shared_ptr<ViewShell> pViewShell (mpWeakViewShell.lock());
+    ::std::shared_ptr<DrawViewShell> pDrawViewShell (
         ::boost::dynamic_pointer_cast<DrawViewShell>(pViewShell));
 
     // Detect whether the view has been switched from the outside.
@@ -872,7 +873,7 @@ bool Outliner::DetectSelectionChange (void)
 
 void Outliner::RememberStartPosition (void)
 {
-    ::boost::shared_ptr<ViewShell> pViewShell (mpWeakViewShell.lock());
+    ::std::shared_ptr<ViewShell> pViewShell (mpWeakViewShell.lock());
     if ( ! pViewShell)
     {
         OSL_ASSERT(pViewShell);
@@ -881,7 +882,7 @@ void Outliner::RememberStartPosition (void)
 
     if (pViewShell->ISA(DrawViewShell))
     {
-        ::boost::shared_ptr<DrawViewShell> pDrawViewShell (
+        ::std::shared_ptr<DrawViewShell> pDrawViewShell (
             ::boost::dynamic_pointer_cast<DrawViewShell>(pViewShell));
         if (pDrawViewShell.get() != NULL)
         {
@@ -931,7 +932,7 @@ void Outliner::RestoreStartPosition (void)
     if (mnStartPageIndex == (sal_uInt16)-1 )
         bRestore = false;
     // Dont't restore when the view shell is not valid.
-    ::boost::shared_ptr<ViewShell> pViewShell (mpWeakViewShell.lock());
+    ::std::shared_ptr<ViewShell> pViewShell (mpWeakViewShell.lock());
     if( !bool(pViewShell))
         bRestore = false;
 
@@ -939,7 +940,7 @@ void Outliner::RestoreStartPosition (void)
     {
         if (pViewShell->ISA(DrawViewShell))
         {
-            ::boost::shared_ptr<DrawViewShell> pDrawViewShell (
+            ::std::shared_ptr<DrawViewShell> pDrawViewShell (
                 ::boost::dynamic_pointer_cast<DrawViewShell>(pViewShell));
             SetViewMode (meStartViewMode);
             if (pDrawViewShell.get() != NULL)
@@ -1029,7 +1030,7 @@ void Outliner::ProvideNextTextObject (void)
             {
                 PutTextIntoOutliner ();
 
-                ::boost::shared_ptr<ViewShell> pViewShell (mpWeakViewShell.lock());
+                ::std::shared_ptr<ViewShell> pViewShell (mpWeakViewShell.lock());
                 if( bool(pViewShell))
                     switch (meMode)
                     {
@@ -1059,7 +1060,7 @@ void Outliner::ProvideNextTextObject (void)
 
 void Outliner::EndOfSearch (void)
 {
-    ::boost::shared_ptr<ViewShell> pViewShell (mpWeakViewShell.lock());
+    ::std::shared_ptr<ViewShell> pViewShell (mpWeakViewShell.lock());
     if ( ! pViewShell)
     {
         OSL_ASSERT(pViewShell);
@@ -1278,8 +1279,8 @@ void Outliner::PrepareSearchAndReplace (void)
 
 void Outliner::SetViewMode (PageKind ePageKind)
 {
-    ::boost::shared_ptr<ViewShell> pViewShell (mpWeakViewShell.lock());
-    ::boost::shared_ptr<DrawViewShell> pDrawViewShell(
+    ::std::shared_ptr<ViewShell> pViewShell (mpWeakViewShell.lock());
+    ::std::shared_ptr<DrawViewShell> pDrawViewShell(
         ::boost::dynamic_pointer_cast<DrawViewShell>(pViewShell));
     if (pDrawViewShell.get()!=NULL && ePageKind != pDrawViewShell->GetPageKind())
     {
@@ -1307,7 +1308,7 @@ void Outliner::SetViewMode (PageKind ePageKind)
         bool bMatchMayExist = mbMatchMayExist;
 
         ViewShellBase& rBase = pViewShell->GetViewShellBase();
-        SetViewShell(::boost::shared_ptr<ViewShell>());
+        SetViewShell(::std::shared_ptr<ViewShell>());
         framework::FrameworkHelper::Instance(rBase)->RequestView(
             sViewURL,
             framework::FrameworkHelper::msCenterPaneURL);
@@ -1347,8 +1348,8 @@ void Outliner::SetPage (EditMode eEditMode, sal_uInt16 nPageIndex)
 {
     if ( ! mbRestrictSearchToSelection)
     {
-        ::boost::shared_ptr<ViewShell> pViewShell (mpWeakViewShell.lock());
-        ::boost::shared_ptr<DrawViewShell> pDrawViewShell(
+        ::std::shared_ptr<ViewShell> pViewShell (mpWeakViewShell.lock());
+        ::std::shared_ptr<DrawViewShell> pDrawViewShell(
             ::boost::dynamic_pointer_cast<DrawViewShell>(pViewShell));
         OSL_ASSERT(pDrawViewShell.get()!=NULL);
         if (pDrawViewShell.get() != NULL)
@@ -1373,7 +1374,7 @@ void Outliner::EnterEditMode (sal_Bool bGrabFocus)
 
         // Make FuText the current function.
         SfxUInt16Item aItem (SID_TEXTEDIT, 1);
-        ::boost::shared_ptr<ViewShell> pViewShell (mpWeakViewShell.lock());
+        ::std::shared_ptr<ViewShell> pViewShell (mpWeakViewShell.lock());
         pViewShell->GetDispatcher()->
             Execute(SID_TEXTEDIT, SFX_CALLMODE_SYNCHRON |
                 SFX_CALLMODE_RECORD, &aItem, 0L);
@@ -1504,9 +1505,9 @@ SdrObject* Outliner::SetObject (
 
 
 
-void Outliner::SetViewShell (const ::boost::shared_ptr<ViewShell>& rpViewShell)
+void Outliner::SetViewShell (const ::std::shared_ptr<ViewShell>& rpViewShell)
 {
-    ::boost::shared_ptr<ViewShell> pViewShell (mpWeakViewShell.lock());
+    ::std::shared_ptr<ViewShell> pViewShell (mpWeakViewShell.lock());
     if (pViewShell != rpViewShell)
     {
         // Set the new view shell.
@@ -1567,7 +1568,7 @@ void Outliner::HandleChangedSelection (void)
 void Outliner::StartConversion( sal_Int16 nSourceLanguage,  sal_Int16 nTargetLanguage,
         const Font *pTargetFont, sal_Int32 nOptions, sal_Bool bIsInteractive )
 {
-    ::boost::shared_ptr<ViewShell> pViewShell (mpWeakViewShell.lock());
+    ::std::shared_ptr<ViewShell> pViewShell (mpWeakViewShell.lock());
 	sal_Bool bMultiDoc = pViewShell->ISA(DrawViewShell);
 
     meMode = TEXT_CONVERSION;
@@ -1631,7 +1632,7 @@ void Outliner::BeginConversion (void)
     if (pBase != NULL)
         SetViewShell (pBase->GetMainViewShell());
 
-    ::boost::shared_ptr<ViewShell> pViewShell (mpWeakViewShell.lock());
+    ::std::shared_ptr<ViewShell> pViewShell (mpWeakViewShell.lock());
 	if (pViewShell)
 	{
 		mbStringFound = sal_False;
@@ -1665,7 +1666,7 @@ void Outliner::EndConversion()
 
 sal_Bool Outliner::ConvertNextDocument()
 {
-    ::boost::shared_ptr<ViewShell> pViewShell (mpWeakViewShell.lock());
+    ::std::shared_ptr<ViewShell> pViewShell (mpWeakViewShell.lock());
 	if (pViewShell && pViewShell->ISA(OutlineViewShell) )
 		return false;
 
@@ -1787,7 +1788,7 @@ OutlinerView* Outliner::Implementation::GetOutlinerView ()
 */
 void Outliner::Implementation::ProvideOutlinerView (
     Outliner& rOutliner,
-    const ::boost::shared_ptr<ViewShell>& rpViewShell,
+    const ::std::shared_ptr<ViewShell>& rpViewShell,
     ::Window* pWindow)
 {
     if (rpViewShell.get() != NULL)

@@ -29,6 +29,7 @@
 
 // header for define DBG_ERROR
 #include <tools/debug.hxx>
+#include <memory>
 
 using namespace ::com::sun::star;
 using ::com::sun::star::uno::Reference;
@@ -42,7 +43,7 @@ namespace wrapper
 {
 //.............................................................................
 
-WrappedNumberFormatProperty::WrappedNumberFormatProperty( ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact )
+WrappedNumberFormatProperty::WrappedNumberFormatProperty( ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact )
         : WrappedDirectStateProperty( C2U("NumberFormat"), C2U("NumberFormat") )
         , m_spChart2ModelContact(spChart2ModelContact)
 {

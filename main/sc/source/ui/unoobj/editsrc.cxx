@@ -328,7 +328,7 @@ void ScSimpleEditSource::UpdateData()
 
 //------------------------------------------------------------------------
 
-ScAccessibilityEditSource::ScAccessibilityEditSource( ::std::auto_ptr < ScAccessibleTextData > pAccessibleCellTextData )
+ScAccessibilityEditSource::ScAccessibilityEditSource( ::std::unique_ptr < ScAccessibleTextData > pAccessibleCellTextData )
 	: mpAccessibleTextData(pAccessibleCellTextData)
 {
 }
@@ -339,7 +339,7 @@ ScAccessibilityEditSource::~ScAccessibilityEditSource()
 
 SvxEditSource* ScAccessibilityEditSource::Clone() const
 {
-	return new ScAccessibilityEditSource(::std::auto_ptr < ScAccessibleTextData > (mpAccessibleTextData->Clone()));
+	return new ScAccessibilityEditSource(::std::unique_ptr < ScAccessibleTextData > (mpAccessibleTextData->Clone()));
 }
 
 SvxTextForwarder* ScAccessibilityEditSource::GetTextForwarder()

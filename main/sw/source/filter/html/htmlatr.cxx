@@ -83,6 +83,7 @@
 #include <wrthtml.hxx>
 #include <htmlfly.hxx>
 #include <numrule.hxx>
+#include <memory>
 
 using namespace ::com::sun::star;
 
@@ -1872,7 +1873,7 @@ void HTMLEndPosLst::InsertNoScript( const SfxPoolItem& rItem,
 		case HTML_AUTOFMT_VALUE:
 			{
 				const SwFmtAutoFmt& rAutoFmt = (const SwFmtAutoFmt&)rItem;
-				const boost::shared_ptr<SfxItemSet> pSet = rAutoFmt.GetStyleHandle();
+				const std::shared_ptr<SfxItemSet> pSet = rAutoFmt.GetStyleHandle();
 				if( pSet.get() )
 					Insert( *pSet.get(), nStart, nEnd, rFmtInfos, sal_True, bParaAttrs );
 			}

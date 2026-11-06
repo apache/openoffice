@@ -44,6 +44,7 @@
 #include <com/sun/star/rdf/XMetadatable.hpp>
 
 #include <com/sun/star/text/XFormField.hpp>
+#include <memory>
 
 #include "RDFaImportHelper.hxx"
 
@@ -245,7 +246,7 @@ void XMLTextMarkImportContext::EndElement()
 				case TypeBookmarkStart:
 					// save XTextRange for later construction of bookmark
                     {
-                        ::boost::shared_ptr< ::xmloff::ParsedRDFaAttributes >
+                        ::std::shared_ptr< ::xmloff::ParsedRDFaAttributes >
                             pRDFaAttributes;
                         if (m_bHaveAbout && (TypeBookmarkStart
                                 == static_cast<lcl_MarkType>(nTmp)))
@@ -267,7 +268,7 @@ void XMLTextMarkImportContext::EndElement()
 				{
 					// get old range, and construct
 					Reference<XTextRange> xStartRange;
-                    ::boost::shared_ptr< ::xmloff::ParsedRDFaAttributes >
+                    ::std::shared_ptr< ::xmloff::ParsedRDFaAttributes >
                         pRDFaAttributes;
                     if (m_rHelper.FindAndRemoveBookmarkStartRange(
                             m_sBookmarkName, xStartRange,

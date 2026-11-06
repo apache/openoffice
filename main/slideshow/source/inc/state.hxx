@@ -25,7 +25,7 @@
 #define INCLUDED_SLIDESHOW_STATE_HXX
 
 #include <sal/types.h>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 
 /* Definition of State interface */
@@ -62,7 +62,7 @@ namespace slideshow
             virtual StateId getStateId() const = 0;
         };
 
-        typedef ::boost::shared_ptr< State > StateSharedPtr;
+        typedef ::std::shared_ptr< State > StateSharedPtr;
     }
 }
 

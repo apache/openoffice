@@ -28,6 +28,7 @@
 #include "macros.hxx"
 
 #include <com/sun/star/beans/PropertyAttribute.hpp>
+#include <memory>
 
 using namespace ::com::sun::star;
 using ::com::sun::star::uno::Any;
@@ -45,7 +46,7 @@ namespace wrapper
 class WrappedScaleTextProperty : public WrappedProperty
 {
 public:
-    WrappedScaleTextProperty( ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact );
+    WrappedScaleTextProperty( ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact );
     virtual ~WrappedScaleTextProperty();
 
     virtual void setPropertyValue( const Any& rOuterValue, const Reference< beans::XPropertySet >& xInnerPropertySet ) const;
@@ -53,10 +54,10 @@ public:
     virtual Any getPropertyDefault( const Reference< beans::XPropertyState >& xInnerPropertyState ) const;
 
 private:
-    ::boost::shared_ptr< Chart2ModelContact >   m_spChart2ModelContact;
+    ::std::shared_ptr< Chart2ModelContact >   m_spChart2ModelContact;
 };
 
-WrappedScaleTextProperty::WrappedScaleTextProperty( ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact )
+WrappedScaleTextProperty::WrappedScaleTextProperty( ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact )
     : ::chart::WrappedProperty( C2U( "ScaleText" ), rtl::OUString() )
     , m_spChart2ModelContact( spChart2ModelContact )
 {
@@ -145,7 +146,7 @@ void WrappedScaleTextProperties::addProperties( ::std::vector< Property > & rOut
 //-----------------------------------------------------------------------------
 
 void WrappedScaleTextProperties::addWrappedProperties( std::vector< WrappedProperty* >& rList
-                                 , ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact )
+                                 , ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact )
 {
     rList.push_back( new WrappedScaleTextProperty( spChart2ModelContact ) );
 }

@@ -40,7 +40,7 @@
 #include "vcl/arrange.hxx"
 #include "vcl/virdev.hxx"
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <map>
 
 namespace vcl
@@ -128,8 +128,8 @@ namespace vcl
             // border around each page
             CheckBox                                maBorderCB;
 
-            boost::shared_ptr< vcl::RowOrColumn >   mxBrochureDep;
-            boost::shared_ptr< vcl::LabeledElement >mxPagesBtnLabel;
+            std::shared_ptr< vcl::RowOrColumn >   mxBrochureDep;
+            std::shared_ptr< vcl::LabeledElement >mxPagesBtnLabel;
 
             void setupLayout();
 
@@ -176,8 +176,8 @@ namespace vcl
 
             long                                    mnCollateUIMode;
 
-            boost::shared_ptr<vcl::RowOrColumn>     mxPrintRange;
-            boost::shared_ptr<vcl::WindowArranger>  mxDetails;
+            std::shared_ptr<vcl::RowOrColumn>     mxPrintRange;
+            std::shared_ptr<vcl::WindowArranger>  mxDetails;
 
             JobTabPage( Window*, const ResId& );
             virtual ~JobTabPage();
@@ -197,7 +197,7 @@ namespace vcl
             CheckBox                            maToFileBox;
             CheckBox                            maCollateSingleJobsBox;
 
-            boost::shared_ptr<vcl::RowOrColumn> mxOptGroup;
+            std::shared_ptr<vcl::RowOrColumn> mxOptGroup;
 
             OutputOptPage( Window*, const ResId& );
             virtual ~OutputOptPage();
@@ -226,7 +226,7 @@ namespace vcl
 
         FixedLine                               maButtonLine;
 
-        boost::shared_ptr< PrinterController >  maPController;
+        std::shared_ptr< PrinterController >  maPController;
 
         rtl::OUString                           maPageStr;
         rtl::OUString                           maNoPageStr;
@@ -250,7 +250,7 @@ namespace vcl
         rtl::OUString                           maPrintText;
         rtl::OUString                           maDefPrtText;
 
-        boost::shared_ptr<vcl::RowOrColumn>     mxPreviewCtrls;
+        std::shared_ptr<vcl::RowOrColumn>     mxPreviewCtrls;
 
         Size                                    maDetailsCollapsedSize;
         Size                                    maDetailsExpandedSize;
@@ -288,7 +288,7 @@ namespace vcl
 
         void setupLayout();
     public:
-        PrintDialog( Window*, const boost::shared_ptr< PrinterController >& );
+        PrintDialog( Window*, const std::shared_ptr< PrinterController >& );
         virtual ~PrintDialog();
 
         bool isPrintToFile();

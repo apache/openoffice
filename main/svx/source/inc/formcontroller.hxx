@@ -88,7 +88,7 @@
 #include <comphelper/implbase_var.hxx>
 #endif
 
-struct FmXTextComponentLess : public ::std::binary_function< ::com::sun::star::uno::Reference< ::com::sun::star::awt::XTextComponent >, ::com::sun::star::uno::Reference< ::com::sun::star::awt::XTextComponent> , sal_Bool>
+struct FmXTextComponentLess
 {
     sal_Bool operator() (const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XTextComponent >& x, const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XTextComponent >& y) const
     {
@@ -192,7 +192,7 @@ namespace svxform
         ::svxform::DelayedEvent     m_aActivationEvent;
         ::svxform::DelayedEvent     m_aDeactivationEvent;
 
-        ::std::auto_ptr< ColumnInfoCache >
+        ::std::unique_ptr< ColumnInfoCache >
                                     m_pColumnInfoCache;
 
         sal_Int32					m_nCurrentFilterPosition;	// current level for filtering (or-criteria)

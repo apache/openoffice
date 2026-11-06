@@ -26,14 +26,14 @@
 
 #include <svl/poolitem.hxx>
 #include <format.hxx>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 // ATT_AUTOFMT *********************************************
 
 
 class SwFmtAutoFmt: public SfxPoolItem
 {
-    boost::shared_ptr<SfxItemSet> mpHandle;
+    std::shared_ptr<SfxItemSet> mpHandle;
 
 public:
     SwFmtAutoFmt( sal_uInt16 nWhich = RES_TXTATR_AUTOFMT );
@@ -62,9 +62,9 @@ public:
 	virtual	sal_Bool        	 QueryValue( com::sun::star::uno::Any& rVal, sal_uInt8 nMemberId = 0 ) const;
 	virtual	sal_Bool			 PutValue( const com::sun::star::uno::Any& rVal, sal_uInt8 nMemberId = 0 );
 
-    void SetStyleHandle( boost::shared_ptr<SfxItemSet> pHandle ) { mpHandle = pHandle; }
-    const boost::shared_ptr<SfxItemSet> GetStyleHandle() const { return mpHandle; }
-          boost::shared_ptr<SfxItemSet> GetStyleHandle() { return mpHandle; }
+    void SetStyleHandle( std::shared_ptr<SfxItemSet> pHandle ) { mpHandle = pHandle; }
+    const std::shared_ptr<SfxItemSet> GetStyleHandle() const { return mpHandle; }
+          std::shared_ptr<SfxItemSet> GetStyleHandle() { return mpHandle; }
 };
 
 #endif

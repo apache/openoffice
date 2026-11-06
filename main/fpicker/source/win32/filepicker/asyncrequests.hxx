@@ -34,7 +34,7 @@
 #include <osl/thread.hxx>
 #include <osl/time.h>
 #include <queue>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 //-----------------------------------------------------------------------------
 // namespace
@@ -131,7 +131,7 @@ class Request
 		::comphelper::SequenceAsHashMap m_lArguments;
 };
 
-typedef ::boost::shared_ptr< Request > RequestRef;
+typedef ::std::shared_ptr< Request > RequestRef;
 typedef ::std::queue< RequestRef >  RequestQueue;
 
 //-----------------------------------------------------------------------------
@@ -143,7 +143,7 @@ class RequestHandler
 		virtual void after() = 0;
 };
 
-typedef ::boost::shared_ptr< RequestHandler > RequestHandlerRef;
+typedef ::std::shared_ptr< RequestHandler > RequestHandlerRef;
 
 //-----------------------------------------------------------------------------
 /** @todo document me

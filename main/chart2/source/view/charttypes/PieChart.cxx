@@ -458,11 +458,11 @@ void PieChart::createShapes()
 
                 //---------------------------
                 //point color:
-                std::auto_ptr< tPropertyNameValueMap > apOverwritePropertiesMap(0);
+                std::unique_ptr< tPropertyNameValueMap > apOverwritePropertiesMap{};
                 {
                     if(!pSeries->hasPointOwnColor(nPointIndex) && m_xColorScheme.is())
                     {
-                        apOverwritePropertiesMap = std::auto_ptr< tPropertyNameValueMap >( new tPropertyNameValueMap() );
+                        apOverwritePropertiesMap = std::unique_ptr< tPropertyNameValueMap >( new tPropertyNameValueMap() );
                         (*apOverwritePropertiesMap)[C2U("FillColor")] = uno::makeAny(
                             m_xColorScheme->getColorByIndex( nPointIndex ));
                     }
@@ -505,7 +505,8 @@ void PieChart::createShapes()
                     PieLabelInfo aPieLabelInfo;
                     aPieLabelInfo.aFirstPosition = basegfx::B2IVector( aScreenPosition2D.X, aScreenPosition2D.Y );
                     awt::Point aOrigin( aPolarPosHelper.transformSceneToScreenPosition( m_pPosHelper->transformUnitCircleToScene( 0.0, 0.0, fLogicZ+1.0 ) ) );
-                    aPieLabelInfo.aOrigin = basegfx::B2IVector( aOrigin.X, aOrigin.Y );
+                    aPieLabelInfo.aOrigin.setX( aOrigin.X );
+                    aPieLabelInfo.aOrigin.setY( aOrigin.Y );
 
                     //add a scaling independent Offset if requested
                     if( nScreenValueOffsetInRadiusDirection != 0)

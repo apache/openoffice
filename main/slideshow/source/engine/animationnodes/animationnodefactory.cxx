@@ -606,7 +606,7 @@ AnimationNodeSharedPtr AnimationNodeFactory::createAnimationNode(
 void AnimationNodeFactory::showTree( AnimationNodeSharedPtr& pRootNode )
 {
     if( pRootNode )
-        DEBUG_NODES_SHOWTREE( boost::dynamic_pointer_cast<BaseContainerNode>(
+        DEBUG_NODES_SHOWTREE( std::dynamic_pointer_cast<BaseContainerNode>(
                                   pRootNode).get() );
 }
 #endif

@@ -24,7 +24,7 @@
 #ifndef INCLUDED_FONTTABLE_HXX
 #define INCLUDED_FONTTABLE_HXX
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <WriterFilterDllApi.hxx>
 #include <resourcemodel/LoggedResources.hxx>
 #include <com/sun/star/lang/XComponent.hpp>
@@ -36,7 +36,7 @@ namespace dmapper
 struct FontTable_Impl;
 struct FontEntry
 {
-    typedef boost::shared_ptr<FontEntry> Pointer_t;
+    typedef std::shared_ptr<FontEntry> Pointer_t;
 
     ::rtl::OUString sFontName;
     ::rtl::OUString sFontName1;
@@ -98,7 +98,7 @@ class WRITERFILTER_DLLPRIVATE FontTable : public LoggedProperties, public Logged
     virtual void lcl_endShape( );
 
 };
-typedef boost::shared_ptr< FontTable >          FontTablePtr;
+typedef std::shared_ptr< FontTable >          FontTablePtr;
 }}
 
 #endif //

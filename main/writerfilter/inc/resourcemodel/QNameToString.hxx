@@ -23,7 +23,7 @@
 #ifndef INCLUDED_QNAME_TO_STRING_HXX
 #define INCLUDED_QNAME_TO_STRING_HXX
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <map>
 #include <string>
 #include <iostream>
@@ -36,7 +36,7 @@ using namespace ::std;
 
 class WRITERFILTER_DLLPUBLIC QNameToString
 {
-    typedef boost::shared_ptr<QNameToString> Pointer_t;
+    typedef std::shared_ptr<QNameToString> Pointer_t;
     typedef map < Id, string > Map;
 
     static Pointer_t pInstance;
@@ -60,7 +60,7 @@ public:
 
 class WRITERFILTER_DLLPUBLIC SprmIdToString
 {
-    typedef boost::shared_ptr<SprmIdToString> Pointer_t;
+    typedef std::shared_ptr<SprmIdToString> Pointer_t;
 
     static Pointer_t pInstance;
 

@@ -24,7 +24,7 @@
 #ifndef INCLUDED_SLIDESHOW_PAUSEEVENTHANDLER_HXX
 #define INCLUDED_SLIDESHOW_PAUSEEVENTHANDLER_HXX
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 
 /* Definition of PauseHandler interface */
@@ -57,7 +57,7 @@ namespace slideshow
             virtual bool handlePause( bool bPauseShow ) = 0;
         };
 
-        typedef ::boost::shared_ptr< PauseEventHandler > PauseEventHandlerSharedPtr;
+        typedef ::std::shared_ptr< PauseEventHandler > PauseEventHandlerSharedPtr;
     }
 }
 

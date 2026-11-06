@@ -96,7 +96,7 @@ private:
     DECL_LINK( ChildEventListener, VclWindowEvent* );
 
 private:
-    typedef ::std::auto_ptr< ScDPObject > ScDPObjectPtr;
+    typedef ::std::unique_ptr< ScDPObject > ScDPObjectPtr;
 
     FixedLine           maFlLayout;
     ScrollBar           maScrPage;

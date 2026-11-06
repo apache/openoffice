@@ -34,7 +34,7 @@
 #include <unotools/moduleoptions.hxx>
 #include <unotools/pathoptions.hxx>
 #include <vcl/msgbox.hxx>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <svx/svxdlg.hxx>
 #include <helpid.hrc>
 #include <dialmgr.hxx>
@@ -338,7 +338,7 @@ class ColorConfigWindow_Impl : public Window
     ::std::vector< CheckBox* >				aCheckBoxes;
     ::std::vector< ColorListBox* >			aColorBoxes;
     ::std::vector< Window* >				aWindows; // [ColorConfigEntryCount]
-	::std::vector< ::boost::shared_ptr<SvxExtFixedText_Impl> >	m_aExtensionTitles;
+	::std::vector< ::std::shared_ptr<SvxExtFixedText_Impl> >	m_aExtensionTitles;
 
     SvtModuleOptions    m_aModuleOptions;
 
@@ -817,7 +817,7 @@ ColorConfigWindow_Impl::ColorConfigWindow_Impl(Window* pParent, const ResId& rRe
 		{
 			::rtl::OUString sComponentName = aExtConfig.GetComponentName(j);
 			aChapterWins.push_back(new Window(this));
-			::boost::shared_ptr<SvxExtFixedText_Impl> pTitle(new SvxExtFixedText_Impl(this,ResId(FT_SQL_COMMAND, *rResId.GetResMgr())));
+			::std::shared_ptr<SvxExtFixedText_Impl> pTitle(new SvxExtFixedText_Impl(this,ResId(FT_SQL_COMMAND, *rResId.GetResMgr())));
 			m_aExtensionTitles.push_back(pTitle);
 			pTitle->SetPosSizePixel(LogicToPixel( Point( _FT_XPOS, nLineNum * _LINE_HEIGHT ), MAP_APPFONT ),aFixedSize);
 			pTitle->SetText(aExtConfig.GetComponentDisplayName(sComponentName));

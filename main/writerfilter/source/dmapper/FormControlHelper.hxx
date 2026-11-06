@@ -26,6 +26,7 @@
 #include <FFDataHandler.hxx>
 #include <com/sun/star/text/XTextDocument.hpp>
 #include <com/sun/star/uno/Reference.hxx>
+#include <memory>
 #include "FieldTypes.hxx"
 
 namespace writerfilter {
@@ -36,7 +37,7 @@ using namespace ::com::sun::star;
 class FormControlHelper
 {
 public:
-    typedef boost::shared_ptr<FormControlHelper> Pointer_t;
+    typedef std::shared_ptr<FormControlHelper> Pointer_t;
     FormControlHelper(FieldId eFieldId,
                       uno::Reference<text::XTextDocument> rTextDocument,
                       FFDataHandler::Pointer_t pFFData);
@@ -47,7 +48,7 @@ public:
 private:
     FFDataHandler::Pointer_t m_pFFData;
     struct FormControlHelper_Impl;
-    typedef boost::shared_ptr<FormControlHelper_Impl> ImplPointer_t;
+    typedef std::shared_ptr<FormControlHelper_Impl> ImplPointer_t;
     ImplPointer_t m_pImpl;
 
     bool createCheckbox(uno::Reference<text::XTextRange> xTextRange,

@@ -31,6 +31,7 @@
 
 #include <boost/weak_ptr.hpp>
 #include <ithreadlistenerowner.hxx>
+#include <memory>
 
 /** class for an observable thread
 
@@ -51,7 +52,7 @@ class ObservableThread : public osl::Thread,
 
         virtual ~ObservableThread();
 
-        void SetListener( boost::weak_ptr< IFinishedThreadListener > pThreadListener,
+        void SetListener( std::weak_ptr< IFinishedThreadListener > pThreadListener,
                           const oslInterlockedCount nThreadID );
 
         // IReference
@@ -95,7 +96,7 @@ class ObservableThread : public osl::Thread,
 
         oslInterlockedCount mnThreadID;
 
-        boost::weak_ptr< IFinishedThreadListener > mpThreadListener;
+        std::weak_ptr< IFinishedThreadListener > mpThreadListener;
 
 };
 #endif

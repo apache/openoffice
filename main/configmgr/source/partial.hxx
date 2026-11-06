@@ -28,6 +28,7 @@
 
 #include <map>
 #include <set>
+#include <memory>
 
 #include "boost/noncopyable.hpp"
 #include "boost/shared_ptr.hpp"
@@ -51,7 +52,7 @@ public:
 
 private:
     struct Node {
-        typedef boost::shared_ptr< Node > NodePtr;
+        typedef std::shared_ptr< Node > NodePtr;
         typedef std::map< rtl::OUString, NodePtr > Children;
 
         Node(): startInclude(false) {}

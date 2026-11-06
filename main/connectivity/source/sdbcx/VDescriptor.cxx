@@ -69,14 +69,14 @@ namespace connectivity
         // -----------------------------------------------------------------------------
         namespace
         {
-            struct ResetROAttribute : public ::std::unary_function< Property, void >
+            struct ResetROAttribute 
             {
                 void operator ()( Property& _rProperty ) const
                 {
                     _rProperty.Attributes &= ~PropertyAttribute::READONLY;
                 }
             };
-            struct SetROAttribute : public ::std::unary_function< Property, void >
+            struct SetROAttribute 
             {
                 void operator ()( Property& _rProperty ) const
                 {

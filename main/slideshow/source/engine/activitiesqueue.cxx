@@ -37,6 +37,7 @@
 
 #include <boost/bind.hpp>
 #include <algorithm>
+#include <memory>
 
 
 using namespace ::com::sun::star;
@@ -46,7 +47,7 @@ namespace slideshow
     namespace internal
     {
         ActivitiesQueue::ActivitiesQueue(
-          const ::boost::shared_ptr< ::canvas::tools::ElapsedTime >& pPresTimer ) :
+          const ::std::shared_ptr< ::canvas::tools::ElapsedTime >& pPresTimer ) :
             mpTimer( pPresTimer ),
             maCurrentActivitiesWaiting(),
             maCurrentActivitiesReinsert(),

@@ -37,7 +37,7 @@ using namespace com::sun::star;
 using ::std::vector;
 using ::std::list;
 using ::std::unordered_set;
-using ::std::auto_ptr;
+using ::std::unique_ptr;
 using ::std::unary_function;
 using ::std::for_each;
 
@@ -112,7 +112,7 @@ void ScChartListener::ExternalRefListener::removeFileId(sal_uInt16 nFileId)
     maFileIds.erase(nFileId);
 }
 
-unordered_set<sal_uInt16>& ScChartListener::ExternalRefListener::getAllFileIds()
+std::unordered_set<sal_uInt16>& ScChartListener::ExternalRefListener::getAllFileIds()
 {
     return maFileIds;
 }
@@ -182,9 +182,9 @@ ScChartListener::ScChartListener( const ScChartListener& r ) :
         // was listening to.
 
         ScExternalRefManager* pRefMgr = pDoc->GetExternalRefManager();
-        const unordered_set<sal_uInt16>& rFileIds = r.mpExtRefListener->getAllFileIds();
+        const std::unordered_set<sal_uInt16>& rFileIds = r.mpExtRefListener->getAllFileIds();
         mpExtRefListener.reset(new ExternalRefListener(*this, pDoc));
-        unordered_set<sal_uInt16>::const_iterator itr = rFileIds.begin(), itrEnd = rFileIds.end();
+        std::unordered_set<sal_uInt16>::const_iterator itr = rFileIds.begin(), itrEnd = rFileIds.end();
         for (; itr != itrEnd; ++itr)
         {
             pRefMgr->addLinkListener(*itr, mpExtRefListener.get());
@@ -203,8 +203,8 @@ ScChartListener::~ScChartListener()
     {
         // Stop listening to all external files.
         ScExternalRefManager* pRefMgr = pDoc->GetExternalRefManager();
-        const unordered_set<sal_uInt16>& rFileIds = mpExtRefListener->getAllFileIds();
-        unordered_set<sal_uInt16>::const_iterator itr = rFileIds.begin(), itrEnd = rFileIds.end();
+        const std::unordered_set<sal_uInt16>& rFileIds = mpExtRefListener->getAllFileIds();
+        std::unordered_set<sal_uInt16>::const_iterator itr = rFileIds.begin(), itrEnd = rFileIds.end();
         for (; itr != itrEnd; ++itr)
             pRefMgr->removeLinkListener(*itr, mpExtRefListener.get());
     }
@@ -293,7 +293,7 @@ void ScChartListener::SetRangeList( const ScRange& rRange )
 
 namespace {
 
-class StartEndListening : public unary_function<ScSharedTokenRef, void>
+class StartEndListening
 {
 public:
     StartEndListening(ScDocument* pDoc, ScChartListener& rParent, bool bStart) :
@@ -707,8 +707,7 @@ void ScChartListenerCollection::StartListeningHiddenRange( const ScRange& rRange
 
 namespace {
 
-struct MatchListener : public ::std::unary_function<
-        ScChartListenerCollection::RangeListenerItem, bool>
+struct MatchListener 
 {
     MatchListener(const ScChartHiddenRangeListener* pMatch) :
         mpMatch(pMatch)

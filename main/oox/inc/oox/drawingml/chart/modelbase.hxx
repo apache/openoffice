@@ -24,6 +24,7 @@
 #ifndef OOX_DRAWINGML_CHART_MODELBASE_HXX
 #define OOX_DRAWINGML_CHART_MODELBASE_HXX
 
+#include <memory>
 #include "oox/helper/helper.hxx"
 #include "oox/helper/refmap.hxx"
 #include "oox/helper/refvector.hxx"
@@ -37,11 +38,11 @@ namespace chart {
 // ============================================================================
 
 template< typename ModelType >
-class ModelRef : public ::boost::shared_ptr< ModelType >
+class ModelRef : public ::std::shared_ptr< ModelType >
 {
 public:
     inline explicit     ModelRef() {}
-    inline              ModelRef( const ::boost::shared_ptr< ModelType >& rxModel ) : ::boost::shared_ptr< ModelType >( rxModel ) {}
+    inline              ModelRef( const ::std::shared_ptr< ModelType >& rxModel ) : ::std::shared_ptr< ModelType >( rxModel ) {}
     inline              ~ModelRef() {}
 
     inline bool         is() const { return this->get() != 0; }

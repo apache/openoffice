@@ -27,6 +27,7 @@
 #include <com/sun/star/text/XTextCursor.hpp>
 #include <com/sun/star/text/XText.hpp>
 #include <com/sun/star/frame/XModel.hpp>
+#include <memory>
 #include "oox/drawingml/textcharacterproperties.hxx"
 
 namespace oox { namespace drawingml {
@@ -57,7 +58,7 @@ private:
     bool                        mbIsLineBreak;
 };
 
-typedef boost::shared_ptr< TextRun > TextRunPtr;
+typedef std::shared_ptr< TextRun > TextRunPtr;
 
 } }
 

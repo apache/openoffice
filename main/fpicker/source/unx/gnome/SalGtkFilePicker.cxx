@@ -572,7 +572,7 @@ dialog_remove_buttons( GtkDialog *pDialog )
 //------------------------------------------------------------------------------------
 namespace {
 	//................................................................................
-	struct FilterTitleMatch : public ::std::unary_function< FilterEntry, bool >
+	struct FilterTitleMatch 
 	{
 	protected:
 		const ::rtl::OUString& rTitle;

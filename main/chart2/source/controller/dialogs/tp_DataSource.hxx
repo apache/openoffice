@@ -140,7 +140,7 @@ protected:
 private:
     FixedText               m_aFT_CAPTION;
     FixedText               m_aFT_SERIES;
-    ::std::auto_ptr< SvTreeListBox > m_apLB_SERIES;
+    ::std::unique_ptr< SvTreeListBox > m_apLB_SERIES;
     PushButton              m_aBTN_ADD;
     PushButton              m_aBTN_REMOVE;
     PushButton              m_aBTN_UP;

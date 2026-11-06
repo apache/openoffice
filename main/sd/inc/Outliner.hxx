@@ -30,7 +30,7 @@
 #include "OutlinerIterator.hxx"
 #include <editeng/SpellPortions.hxx>
 #include <memory>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <boost/weak_ptr.hpp>
 #include <boost/noncopyable.hpp>
 
@@ -184,7 +184,7 @@ public:
 
 private:
     class Implementation;
-    ::std::auto_ptr<Implementation> mpImpl;
+    ::std::unique_ptr<Implementation> mpImpl;
 
     /// Specifies whether to search and replace, to spell check or to do a
     /// text conversion.
@@ -196,7 +196,7 @@ private:
         pointer to avoid keeping it alive when the view is changed
         during searching.
     */
-    ::boost::weak_ptr<ViewShell> mpWeakViewShell;
+    ::std::weak_ptr<ViewShell> mpWeakViewShell;
     /// This window contains the view.
 	::sd::Window* mpWindow;
     /// The document on whose objects and pages this class operates.
@@ -517,7 +517,7 @@ private:
         It handles i.e. registering at the associated view as selection
         change listener.
     */
-    void SetViewShell (const ::boost::shared_ptr<ViewShell>& rpViewShell);
+    void SetViewShell (const ::std::shared_ptr<ViewShell>& rpViewShell);
 
     /** Activate or deactivate the search in the current selection.  Call
         this method whenever the selection has changed.  This method creates

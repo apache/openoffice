@@ -30,7 +30,7 @@
 
 #include <sot/object.hxx>
 #ifndef BOOST_SHARED_PTR_HPP_INCLUDED
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #endif
 #ifndef _TOOL_DEBUG_HXX
 #include <tools/debug.hxx>
@@ -468,7 +468,7 @@ struct SaveStruct
 	sal_Bool			bFillStyleSelected;
 };
 
-typedef ::boost::shared_ptr< SaveStruct > SaveStructPtr;
+typedef ::std::shared_ptr< SaveStruct > SaveStructPtr;
 
 // -----------------------------------------------------------------------------
 

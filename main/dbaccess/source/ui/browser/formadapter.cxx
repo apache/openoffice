@@ -1537,7 +1537,7 @@ sal_Int32 SbaXFormAdapter::implGetPos(const ::rtl::OUString& rName)
 {
 	::std::vector< ::rtl::OUString>::iterator aIter = ::std::find_if(	m_aChildNames.begin(),
 																m_aChildNames.end(),
-																::std::bind2nd(::std::equal_to< rtl::OUString>(),rName));
+																[rName](auto& _x) { return ::std::equal_to< rtl::OUString>()(_x, rName); });
 
 	if(aIter != m_aChildNames.end())
 		return aIter - m_aChildNames.begin();
@@ -1760,7 +1760,7 @@ void SAL_CALL SbaXFormAdapter::propertyChange(const ::com::sun::star::beans::Pro
 	{
 		::std::vector<	::com::sun::star::uno::Reference< ::com::sun::star::form::XFormComponent > >::iterator aIter = ::std::find_if(	m_aChildren.begin(),
 																m_aChildren.end(),
-																::std::bind2nd(::std::equal_to< ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > >(),evt.Source));
+																[evt.Source](auto& _x) { return ::std::equal_to< ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > >()(_x, evt.Source); });
 
 		if(aIter != m_aChildren.end())
 		{
@@ -1781,7 +1781,7 @@ void SAL_CALL SbaXFormAdapter::disposing(const ::com::sun::star::lang::EventObje
 
 	::std::vector<	::com::sun::star::uno::Reference< ::com::sun::star::form::XFormComponent > >::iterator aIter = ::std::find_if(	m_aChildren.begin(),
 																m_aChildren.end(),
-																::std::bind2nd(::std::equal_to< ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > >(),Source.Source));
+																[Source.Source](auto& _x) { return ::std::equal_to< ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > >()(_x, Source.Source); });
 	if(aIter != m_aChildren.end())
 			removeByIndex(aIter - m_aChildren.begin());
 }

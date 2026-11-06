@@ -31,7 +31,7 @@
 
 #include <svtools/roadmapwizard.hxx>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <map>
 
 //......................................................................................................................
@@ -40,7 +40,7 @@ namespace svt { namespace uno
 //......................................................................................................................
 
     class WizardPageController;
-    typedef ::boost::shared_ptr< WizardPageController > PWizardPageController;
+    typedef ::std::shared_ptr< WizardPageController > PWizardPageController;
 
 	//==================================================================================================================
 	//= WizardShell

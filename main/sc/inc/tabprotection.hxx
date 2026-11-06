@@ -29,7 +29,7 @@
 
 #include "global.hxx"
 #include <vector>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 #define ENABLE_SHEET_PROTECTION 1
 
@@ -110,7 +110,7 @@ public:
     void setOption(Option eOption, bool bEnabled);
 
 private:
-    ::boost::shared_ptr<ScTableProtectionImpl> mpImpl;
+    ::std::shared_ptr<ScTableProtectionImpl> mpImpl;
 };
 
 // ============================================================================
@@ -167,7 +167,7 @@ public:
     void setOption(Option eOption, bool bEnabled);
 
 private:
-    ::boost::shared_ptr<ScTableProtectionImpl> mpImpl;
+    ::std::shared_ptr<ScTableProtectionImpl> mpImpl;
 };
 
 

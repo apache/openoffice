@@ -145,9 +145,9 @@ ScNotesChilds::~ScNotesChilds()
 {
     ::accessibility::AccessibleTextHelper* pTextHelper = NULL;
 
-    ::std::auto_ptr < ScAccessibleTextData > pAccessiblePreviewHeaderCellTextData
+    ::std::unique_ptr < ScAccessibleTextData > pAccessiblePreviewHeaderCellTextData
 		(new ScAccessibleNoteTextData(mpViewShell, rString, aCellPos, bMarkNote));
-	::std::auto_ptr< SvxEditSource > pEditSource (new ScAccessibilityEditSource(pAccessiblePreviewHeaderCellTextData));
+	::std::unique_ptr< SvxEditSource > pEditSource (new ScAccessibilityEditSource(pAccessiblePreviewHeaderCellTextData));
 
 	pTextHelper = new ::accessibility::AccessibleTextHelper(pEditSource);
 

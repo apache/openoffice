@@ -47,6 +47,7 @@
 #include <cppuhelper/compbase5.hxx>
 #include <cppuhelper/implbase1.hxx>
 #include <boost/bind.hpp>
+#include <memory>
 
 using namespace ::com::sun::star;
 using namespace ::com::sun::star::accessibility;
@@ -472,16 +473,16 @@ public:
 		const lang::Locale aLocale,
 		const Reference<awt::XWindow>& rxContentWindow,
 		const Reference<awt::XWindow>& rxBorderWindow,
-		const ::boost::shared_ptr<PresenterTextView>& rpTextView);
+		const ::std::shared_ptr<PresenterTextView>& rpTextView);
 
-	void SetTextView (const ::boost::shared_ptr<PresenterTextView>& rpTextView);
+	void SetTextView (const ::std::shared_ptr<PresenterTextView>& rpTextView);
 
 	virtual void SetWindow (
 		const cssu::Reference<css::awt::XWindow>& rxContentWindow,
 		const cssu::Reference<css::awt::XWindow>& rxBorderWindow);
 
 private:
-	::boost::shared_ptr<PresenterTextView> mpTextView;
+	::std::shared_ptr<PresenterTextView> mpTextView;
 
 	void NotifyCaretChange (
 		const sal_Int32 nOldParagraphIndex,
@@ -502,7 +503,7 @@ private:
 class AccessibleFocusManager
 {
 public:
-	static ::boost::shared_ptr<AccessibleFocusManager> Instance (void);
+	static ::std::shared_ptr<AccessibleFocusManager> Instance (void);
 
 	void AddFocusableObject (const ::rtl::Reference<PresenterAccessible::AccessibleObject>& rpObject);
 	void RemoveFocusableObject (const ::rtl::Reference<PresenterAccessible::AccessibleObject>& rpObject);
@@ -510,7 +511,7 @@ public:
 	void FocusObject (const ::rtl::Reference<PresenterAccessible::AccessibleObject>& rpObject);
 
 private:
-	static ::boost::shared_ptr<AccessibleFocusManager> mpInstance;
+	static ::std::shared_ptr<AccessibleFocusManager> mpInstance;
 	::std::vector<rtl::Reference<PresenterAccessible::AccessibleObject> > maFocusableObjects;
 
 	AccessibleFocusManager (void);
@@ -626,7 +627,7 @@ void PresenterAccessible::UpdateAccessibilityHierarchy (void)
 		pNotesPane ? pNotesPane->mxBorderWindow : Reference<awt::XWindow>(),
 		pNotesView.is()
 			? pNotesView->GetTextView()
-			: ::boost::shared_ptr<PresenterTextView>());
+			: ::std::shared_ptr<PresenterTextView>());
 }
 
 
@@ -639,7 +640,7 @@ void PresenterAccessible::UpdateAccessibilityHierarchy (
 	const ::rtl::OUString& rsTitle,
 	const Reference<awt::XWindow>& rxNotesContentWindow,
 	const Reference<awt::XWindow>& rxNotesBorderWindow,
-	const ::boost::shared_ptr<PresenterTextView>& rpNotesTextView)
+	const ::std::shared_ptr<PresenterTextView>& rpNotesTextView)
 {
 	if ( ! mpAccessibleConsole.is())
 		return;
@@ -734,7 +735,7 @@ void SAL_CALL PresenterAccessible::disposing (void)
 		OUString(),
 		NULL,
 		NULL,
-		::boost::shared_ptr<PresenterTextView>());
+		::std::shared_ptr<PresenterTextView>());
 
 	if (mxMainWindow.is())
 	{
@@ -2116,7 +2117,7 @@ rtl::Reference<PresenterAccessible::AccessibleObject> AccessibleNotes::Create (
 	const lang::Locale aLocale,
 	const Reference<awt::XWindow>& rxContentWindow,
 	const Reference<awt::XWindow>& rxBorderWindow,
-	const ::boost::shared_ptr<PresenterTextView>& rpTextView)
+	const ::std::shared_ptr<PresenterTextView>& rpTextView)
 {
 	OUString sName (A2S("Presenter Notes Text"));
 	{
@@ -2145,7 +2146,7 @@ rtl::Reference<PresenterAccessible::AccessibleObject> AccessibleNotes::Create (
 
 
 void AccessibleNotes::SetTextView (
-	const ::boost::shared_ptr<PresenterTextView>& rpTextView)
+	const ::std::shared_ptr<PresenterTextView>& rpTextView)
 {
 	::std::vector<rtl::Reference<PresenterAccessible::AccessibleObject> > aChildren;
 
@@ -2284,9 +2285,9 @@ void AccessibleNotes::HandleTextChange (void)
 
 //===== AccessibleFocusManager ================================================
 
-::boost::shared_ptr<AccessibleFocusManager> AccessibleFocusManager::mpInstance;
+::std::shared_ptr<AccessibleFocusManager> AccessibleFocusManager::mpInstance;
 
-::boost::shared_ptr<AccessibleFocusManager> AccessibleFocusManager::Instance (void)
+::std::shared_ptr<AccessibleFocusManager> AccessibleFocusManager::Instance (void)
 {
 	if ( ! mpInstance)
 	{

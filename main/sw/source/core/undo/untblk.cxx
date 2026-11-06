@@ -37,6 +37,7 @@
 #include <UndoCore.hxx>
 #include <rolbck.hxx>
 #include <redline.hxx>
+#include <memory>
 
 
 
@@ -126,7 +127,7 @@ void SwUndoInserts::SetInsertRange( const SwPaM& rPam, sal_Bool bScanFlys,
 				if( !pFrmFmts ||
 					USHRT_MAX == ( nFndPos = pFrmFmts->GetPos( pFmt ) ) )
                 {
-                    ::boost::shared_ptr<SwUndoInsLayFmt> const pFlyUndo(
+                    ::std::shared_ptr<SwUndoInsLayFmt> const pFlyUndo(
                         new SwUndoInsLayFmt(pFmt, 0, 0));
                     m_FlyUndos.push_back(pFlyUndo);
                 }

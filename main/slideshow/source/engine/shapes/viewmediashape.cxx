@@ -90,7 +90,7 @@ namespace slideshow
             ENSURE_OR_THROW( mpViewLayer->getCanvas(), "ViewMediaShape::ViewMediaShape(): Invalid ViewLayer canvas" );
             ENSURE_OR_THROW( mxComponentContext.is(), "ViewMediaShape::ViewMediaShape(): Invalid component context" );
 
-            UnoViewSharedPtr pUnoView (::boost::dynamic_pointer_cast<UnoView>(rViewLayer));
+            UnoViewSharedPtr pUnoView (::std::dynamic_pointer_cast<UnoView>(rViewLayer));
             if (pUnoView)
             {
                 mbIsSoundEnabled = pUnoView->isSoundEnabled();
@@ -149,7 +149,7 @@ namespace slideshow
 				mxPlayerWindow.clear();
 			}
 
-            mpMediaWindow = ::std::auto_ptr< SystemChildWindow >();
+            mpMediaWindow = ::std::unique_ptr< SystemChildWindow >();
 
 			// shutdown player
 			if( mxPlayer.is() )
@@ -433,7 +433,7 @@ namespace slideshow
 														  		  rRangePix.getMaxX() - rRangePix.getMinX(),
 														  		  rRangePix.getMaxY() - rRangePix.getMinY() );
 
-							mpMediaWindow = ::std::auto_ptr< SystemChildWindow >( new
+							mpMediaWindow = ::std::unique_ptr< SystemChildWindow >( new
                                                 SystemChildWindow( pWindow, WB_CLIPCHILDREN ) );
 							mpMediaWindow->SetBackground( Color( COL_BLACK ) );
 							mpMediaWindow->SetPosSizePixel( Point( aAWTRect.X, aAWTRect.Y ),

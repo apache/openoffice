@@ -26,6 +26,7 @@
 
 #include <vector>
 #include <comphelper/docpasswordhelper.hxx>
+#include <memory>
 #include "oox/core/binarycodec.hxx"
 #include "oox/xls/workbookhelper.hxx"
 
@@ -82,7 +83,7 @@ private:
     bool                mbValid;        /// True = decoder is correctly initialized.
 };
 
-typedef ::boost::shared_ptr< BiffDecoderBase > BiffDecoderRef;
+typedef ::std::shared_ptr< BiffDecoderBase > BiffDecoderRef;
 
 // ============================================================================
 

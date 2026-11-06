@@ -21,6 +21,7 @@
 
 
 
+#include <memory>
 #include "precompiled_sd.hxx"
 
 #include "ToolBarModule.hxx"
@@ -163,7 +164,7 @@ void ToolBarModule::HandleUpdateStart (void)
     // stack.
     if (mpBase != NULL)
     {
-        ::boost::shared_ptr<ToolBarManager> pToolBarManager (mpBase->GetToolBarManager());
+        ::std::shared_ptr<ToolBarManager> pToolBarManager (mpBase->GetToolBarManager());
         mpToolBarManagerLock.reset(new ToolBarManager::UpdateLock(pToolBarManager));
         pToolBarManager->LockViewShellManager();
     }
@@ -181,8 +182,8 @@ void ToolBarModule::HandleUpdateEnd (void)
         // no longer visible.  This is done before the old view shell is
         // destroyed in order to avoid unnecessary updates of those tool
         // bars.
-        ::boost::shared_ptr<ToolBarManager> pToolBarManager (mpBase->GetToolBarManager());
-        ::boost::shared_ptr<FrameworkHelper> pFrameworkHelper (
+        ::std::shared_ptr<ToolBarManager> pToolBarManager (mpBase->GetToolBarManager());
+        ::std::shared_ptr<FrameworkHelper> pFrameworkHelper (
             FrameworkHelper::Instance(*mpBase));
         ViewShell* pViewShell
             = pFrameworkHelper->GetViewShell(FrameworkHelper::msCenterPaneURL).get();

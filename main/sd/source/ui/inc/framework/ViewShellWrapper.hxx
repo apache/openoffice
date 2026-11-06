@@ -33,7 +33,7 @@
 #include <cppuhelper/compbase4.hxx>
 #include <cppuhelper/implbase1.hxx>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 namespace {
 
@@ -69,7 +69,7 @@ public:
             to the ViewShell object.
     */
     ViewShellWrapper (
-        ::boost::shared_ptr<ViewShell> pViewShell,
+        ::std::shared_ptr<ViewShell> pViewShell,
         const ::com::sun::star::uno::Reference<
             ::com::sun::star::drawing::framework::XResourceId>& rxViewId,
         const ::com::sun::star::uno::Reference<com::sun::star::awt::XWindow>& rxWindow);
@@ -83,7 +83,7 @@ public:
         to obtain a pointer to the wrapped ViewShell object for a given
         XView object.
     */
-    ::boost::shared_ptr<ViewShell> GetViewShell (void);
+    ::std::shared_ptr<ViewShell> GetViewShell (void);
 
     // XUnoTunnel
 
@@ -125,7 +125,7 @@ public:
         const com::sun::star::lang::EventObject& rEvent);
 
 private:
-    ::boost::shared_ptr< ViewShell >                                                            mpViewShell;
+    ::std::shared_ptr< ViewShell >                                                            mpViewShell;
     const ::com::sun::star::uno::Reference< com::sun::star::drawing::framework::XResourceId >   mxViewId;
     ::com::sun::star::uno::Reference<com::sun::star::awt::XWindow >                             mxWindow;
 };

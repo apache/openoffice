@@ -25,7 +25,7 @@
 #define INCLUDED_SLIDESHOW_BACKGROUNDSHAPE_HXX
 
 #include <com/sun/star/uno/Reference.hxx>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 namespace com { namespace sun { namespace star { namespace drawing
 {
@@ -46,7 +46,7 @@ namespace slideshow
             nor attributable, those more specialized derivations of
             the Shape interface are not implemented here.
          */
-        boost::shared_ptr<Shape> createBackgroundShape(
+        std::shared_ptr<Shape> createBackgroundShape(
             const ::com::sun::star::uno::Reference<
                   ::com::sun::star::drawing::XDrawPage >& xDrawPage,
             const ::com::sun::star::uno::Reference<

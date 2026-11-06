@@ -29,7 +29,7 @@
 #include <stack>
 #include <set>
 #include <map>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <rtl/strbuf.hxx>
 #include <rtl/ustrbuf.hxx>
 #include <com/sun/star/uno/Reference.hxx>
@@ -157,7 +157,7 @@ public:
                             ::oox::BinaryInputStreamRef( new BinaryXInputStream( rxInStrm, true ) ) {}
 
     template< typename StreamType >
-    inline /*implicit*/ BinaryInputStreamRef( const ::boost::shared_ptr< StreamType >& rxInStrm ) :
+    inline /*implicit*/ BinaryInputStreamRef( const ::std::shared_ptr< StreamType >& rxInStrm ) :
                             ::oox::BinaryInputStreamRef( rxInStrm ) {}
 };
 
@@ -509,7 +509,7 @@ private:
 // ============================================================================
 
 class Base;
-typedef ::boost::shared_ptr< Base > BaseRef;
+typedef ::std::shared_ptr< Base > BaseRef;
 
 /** Base class for all dumper classes.
 
@@ -622,7 +622,7 @@ class SharedConfigData;
 class Config;
 
 class NameListBase;
-typedef ::boost::shared_ptr< NameListBase > NameListRef;
+typedef ::std::shared_ptr< NameListBase > NameListRef;
 
 /** Base class of all classes providing names for specific values (name lists).
 
@@ -905,7 +905,7 @@ public:
     const ::rtl::OUString* getOption( const ::rtl::OUString& rKey ) const;
 
     template< typename ListType >
-    ::boost::shared_ptr< ListType > createNameList( const ::rtl::OUString& rListName );
+    ::std::shared_ptr< ListType > createNameList( const ::rtl::OUString& rListName );
     void                setNameList( const ::rtl::OUString& rListName, const NameListRef& rxList );
     void                eraseNameList( const ::rtl::OUString& rListName );
     NameListRef         getNameList( const ::rtl::OUString& rListName ) const;
@@ -947,9 +947,9 @@ private:
 // ----------------------------------------------------------------------------
 
 template< typename ListType >
-::boost::shared_ptr< ListType > SharedConfigData::createNameList( const ::rtl::OUString& rListName )
+::std::shared_ptr< ListType > SharedConfigData::createNameList( const ::rtl::OUString& rListName )
 {
-    ::boost::shared_ptr< ListType > xList;
+    ::std::shared_ptr< ListType > xList;
     if( rListName.getLength() > 0 )
     {
         xList.reset( new ListType( *this ) );
@@ -999,7 +999,7 @@ public:
     bool                isImportEnabled() const;
 
     template< typename ListType >
-    ::boost::shared_ptr< ListType > createNameList( const String& rListName );
+    ::std::shared_ptr< ListType > createNameList( const String& rListName );
     void                setNameList( const String& rListName, const NameListRef& rxList );
     void                eraseNameList( const String& rListName );
     NameListRef         getNameList( const String& rListName ) const;
@@ -1032,11 +1032,11 @@ protected:
     virtual NameListRef implGetNameList( const ::rtl::OUString& rListName ) const;
 
 private:
-    typedef ::boost::shared_ptr< SharedConfigData > SharedConfigDataRef;
+    typedef ::std::shared_ptr< SharedConfigData > SharedConfigDataRef;
     SharedConfigDataRef mxCfgData;
 };
 
-typedef ::boost::shared_ptr< Config > ConfigRef;
+typedef ::std::shared_ptr< Config > ConfigRef;
 
 // ----------------------------------------------------------------------------
 
@@ -1050,7 +1050,7 @@ Type Config::getIntOption( const String& rKey, Type nDefault ) const
 }
 
 template< typename ListType >
-::boost::shared_ptr< ListType > Config::createNameList( const String& rListName )
+::std::shared_ptr< ListType > Config::createNameList( const String& rListName )
 {
     return mxCfgData->createNameList< ListType >( rListName );
 }
@@ -1169,7 +1169,7 @@ private:
     sal_Int32           mnLastItem;
 };
 
-typedef ::boost::shared_ptr< Output > OutputRef;
+typedef ::std::shared_ptr< Output > OutputRef;
 
 // ============================================================================
 
@@ -1299,7 +1299,7 @@ private:
     ConfigRef           mxConfig;
 };
 
-typedef ::boost::shared_ptr< ObjectBase > ObjectRef;
+typedef ::std::shared_ptr< ObjectBase > ObjectRef;
 
 // ============================================================================
 // ============================================================================
@@ -1373,7 +1373,7 @@ private:
     PreferredItemVector maPreferred;
 };
 
-typedef ::boost::shared_ptr< StorageObjectBase > StorageObjectRef;
+typedef ::std::shared_ptr< StorageObjectBase > StorageObjectRef;
 
 // ============================================================================
 // ============================================================================
@@ -1450,7 +1450,7 @@ protected:
     ::rtl::OUString     maSysFileName;
 };
 
-typedef ::boost::shared_ptr< OutputObjectBase > OutputObjectRef;
+typedef ::std::shared_ptr< OutputObjectBase > OutputObjectRef;
 
 // ----------------------------------------------------------------------------
 
@@ -1652,7 +1652,7 @@ protected:
     BinaryInputStreamRef mxStrm;
 };
 
-typedef ::boost::shared_ptr< InputObjectBase > InputObjectRef;
+typedef ::std::shared_ptr< InputObjectBase > InputObjectRef;
 
 // ----------------------------------------------------------------------------
 
@@ -1829,7 +1829,7 @@ private:
     void                constructTextStrmObj( rtl_TextEncoding eTextEnc );
 
 protected:
-    ::boost::shared_ptr< TextInputStream > mxTextStrm;
+    ::std::shared_ptr< TextInputStream > mxTextStrm;
 };
 
 // ============================================================================
@@ -1954,7 +1954,7 @@ protected:
     virtual bool        implReadRecordHeader( BinaryInputStream& rBaseStrm, sal_Int64& ornRecId, sal_Int64& ornRecSize ) = 0;
 
 private:
-    typedef ::boost::shared_ptr< StreamDataSequence > StreamDataSeqRef;
+    typedef ::std::shared_ptr< StreamDataSequence > StreamDataSeqRef;
     StreamDataSeqRef    mxRecData;
 };
 

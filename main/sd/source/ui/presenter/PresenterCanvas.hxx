@@ -37,7 +37,7 @@
 #include <cppuhelper/basemutex.hxx>
 #include <cppuhelper/compbase4.hxx>
 #include <boost/noncopyable.hpp>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 namespace css = ::com::sun::star;
 
@@ -350,7 +350,7 @@ private:
     /** The UpdateRequester is used by updateScreen() to schedule
         updateScreen() calls at the shared canvas.
     */
-    ::boost::shared_ptr<CanvasUpdateRequester> mpUpdateRequester;
+    ::std::shared_ptr<CanvasUpdateRequester> mpUpdateRequester;
 
     /** The clip rectangle as given to SetClip().
     */

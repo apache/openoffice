@@ -32,13 +32,13 @@
 #include <stack>
 #include <map>
 #include <utility>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 namespace util {
 
   struct NodeDescription
   {
-	typedef boost::shared_ptr<NodeDescription> Pointer_t;
+	typedef std::shared_ptr<NodeDescription> Pointer_t;
 
 	NodeDescription(const std::string& parent, const std::string& refersTo, const std::string& value, bool inUse);
 

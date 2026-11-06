@@ -25,7 +25,7 @@
 #define OOX_CORE_RELATIONS_HXX
 
 #include <map>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include "oox/helper/helper.hxx"
 
 namespace oox {
@@ -63,7 +63,7 @@ struct Relation
 // ============================================================================
 
 class Relations;
-typedef ::boost::shared_ptr< Relations > RelationsRef;
+typedef ::std::shared_ptr< Relations > RelationsRef;
 
 class Relations : public ::std::map< ::rtl::OUString, Relation >
 {

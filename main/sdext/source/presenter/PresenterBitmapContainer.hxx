@@ -36,7 +36,7 @@
 #include <boost/scoped_ptr.hpp>
 #include <map>
 #include <vector>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 namespace css = ::com::sun::star;
 
@@ -59,7 +59,7 @@ public:
     {
     public:
         BitmapDescriptor (void);
-        BitmapDescriptor (const ::boost::shared_ptr<BitmapDescriptor>& rpDefault);
+        BitmapDescriptor (const ::std::shared_ptr<BitmapDescriptor>& rpDefault);
 
         enum Mode {Normal, MouseOver, ButtonDown, Disabled, Mask};
         css::uno::Reference<css::rendering::XBitmap> GetNormalBitmap (void) const;
@@ -100,13 +100,13 @@ public:
     */
     PresenterBitmapContainer (
         const ::rtl::OUString& rsConfigurationBase,
-        const ::boost::shared_ptr<PresenterBitmapContainer>& rpParentContainer,
+        const ::std::shared_ptr<PresenterBitmapContainer>& rpParentContainer,
         const css::uno::Reference<css::uno::XComponentContext>& rxComponentContext,
         const css::uno::Reference<css::rendering::XCanvas>& rxCanvas,
         const css::uno::Reference<css::drawing::XPresenterHelper>& rxPresenterHelper = NULL);
     PresenterBitmapContainer (
         const css::uno::Reference<css::container::XNameAccess>& rsRootNode,
-        const ::boost::shared_ptr<PresenterBitmapContainer>& rpParentContainer,
+        const ::std::shared_ptr<PresenterBitmapContainer>& rpParentContainer,
         const css::uno::Reference<css::uno::XComponentContext>& rxComponentContext,
         const css::uno::Reference<css::rendering::XCanvas>& rxCanvas,
         const css::uno::Reference<css::drawing::XPresenterHelper>& rxPresenterHelper = NULL);
@@ -117,18 +117,18 @@ public:
 
     /** Return the bitmap set that is associated with the given name.
     */
-    ::boost::shared_ptr<BitmapDescriptor> GetBitmap (const ::rtl::OUString& rsName) const;
+    ::std::shared_ptr<BitmapDescriptor> GetBitmap (const ::rtl::OUString& rsName) const;
 
-    static ::boost::shared_ptr<BitmapDescriptor> LoadBitmap (
+    static ::std::shared_ptr<BitmapDescriptor> LoadBitmap (
         const css::uno::Reference<css::container::XHierarchicalNameAccess>& rxNode,
         const ::rtl::OUString& rsPathToBitmapNode,
         const css::uno::Reference<css::drawing::XPresenterHelper>& rxPresenterHelper,
         const css::uno::Reference<css::rendering::XCanvas>& rxCanvas,
-        const ::boost::shared_ptr<BitmapDescriptor>& rpDefaultBitmap);
+        const ::std::shared_ptr<BitmapDescriptor>& rpDefaultBitmap);
 
 private:
-    ::boost::shared_ptr<PresenterBitmapContainer> mpParentContainer;
-    typedef ::std::map<rtl::OUString, ::boost::shared_ptr<BitmapDescriptor> > BitmapContainer;
+    ::std::shared_ptr<PresenterBitmapContainer> mpParentContainer;
+    typedef ::std::map<rtl::OUString, ::std::shared_ptr<BitmapDescriptor> > BitmapContainer;
     BitmapContainer maIconContainer;
     css::uno::Reference<css::rendering::XCanvas> mxCanvas;
     css::uno::Reference<css::drawing::XPresenterHelper> mxPresenterHelper;
@@ -138,18 +138,18 @@ private:
     void ProcessBitmap (
         const ::rtl::OUString& rsKey,
         const css::uno::Reference<css::beans::XPropertySet>& rProperties);
-    static ::boost::shared_ptr<BitmapDescriptor> LoadBitmap (
+    static ::std::shared_ptr<BitmapDescriptor> LoadBitmap (
         const css::uno::Reference<css::beans::XPropertySet>& rxProperties,
         const css::uno::Reference<css::drawing::XPresenterHelper>& rxPresenterHelper,
         const css::uno::Reference<css::rendering::XCanvas>& rxCanvas,
-        const ::boost::shared_ptr<PresenterBitmapContainer::BitmapDescriptor>& rpDefault);
+        const ::std::shared_ptr<PresenterBitmapContainer::BitmapDescriptor>& rpDefault);
     static BitmapDescriptor::TexturingMode
         StringToTexturingMode (const ::rtl::OUString& rsTexturingMode);
 };
 
 
 typedef PresenterBitmapContainer::BitmapDescriptor PresenterBitmapDescriptor;
-typedef ::boost::shared_ptr<PresenterBitmapContainer::BitmapDescriptor> SharedBitmapDescriptor;
+typedef ::std::shared_ptr<PresenterBitmapContainer::BitmapDescriptor> SharedBitmapDescriptor;
 
 } } // end of namespace ::sdext::presenter
 

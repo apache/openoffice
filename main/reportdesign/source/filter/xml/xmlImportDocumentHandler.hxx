@@ -93,7 +93,7 @@ private:
     ::com::sun::star::uno::Reference< ::com::sun::star::chart2::XChartDocument >        m_xModel;
     ::com::sun::star::uno::Reference< ::com::sun::star::chart2::data::XDatabaseDataProvider >   m_xDatabaseDataProvider;
 
-    ::std::auto_ptr<SvXMLTokenMap>			                                            m_pReportElemTokenMap;
+    ::std::unique_ptr<SvXMLTokenMap>			                                            m_pReportElemTokenMap;
 };
 // -----------------------------------------------------------------------------
 } // namespace rptxml

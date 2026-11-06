@@ -224,7 +224,7 @@ SwDoc::SwDoc()
     pMarkManager(new ::sw::mark::MarkManager(*this)),
     m_pMetaFieldManager(new ::sw::MetaFieldManager()),
     m_pUndoManager(new ::sw::UndoManager(
-            ::std::auto_ptr<SwNodes>(new SwNodes(this)), *this, *this, *this)),
+            ::std::unique_ptr<SwNodes>(new SwNodes(this)), *this, *this, *this)),
 	pDfltFrmFmt( new SwFrmFmt( GetAttrPool(), sFrmFmtStr, 0 ) ),
 	pEmptyPageFmt( new SwFrmFmt( GetAttrPool(), sEmptyPageStr, pDfltFrmFmt ) ),
 	pColumnContFmt( new SwFrmFmt( GetAttrPool(), sColumnCntStr, pDfltFrmFmt ) ),

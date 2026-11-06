@@ -30,6 +30,7 @@
 #include <vcl/bitmapex.hxx>
 #include <vcl/pngread.hxx>
 #include <vcl/pngwrite.hxx>
+#include <memory>
 
 namespace sd { namespace slidesorter { namespace cache {
 
@@ -53,9 +54,9 @@ public:
 
 
 
-::boost::shared_ptr<BitmapReplacement> NoBitmapCompression::Compress (const Bitmap& rBitmap) const
+::std::shared_ptr<BitmapReplacement> NoBitmapCompression::Compress (const Bitmap& rBitmap) const
 {
-    return ::boost::shared_ptr<BitmapReplacement>(new DummyReplacement(rBitmap));
+    return ::std::shared_ptr<BitmapReplacement>(new DummyReplacement(rBitmap));
 }
 
 Bitmap NoBitmapCompression::Decompress (const BitmapReplacement& rBitmapData) const
@@ -76,9 +77,9 @@ bool NoBitmapCompression::IsLossless (void) const
 
 //===== CompressionByDeletion =================================================
 
-::boost::shared_ptr<BitmapReplacement> CompressionByDeletion::Compress (const Bitmap& ) const
+::std::shared_ptr<BitmapReplacement> CompressionByDeletion::Compress (const Bitmap& ) const
 {
-    return ::boost::shared_ptr<BitmapReplacement>();
+    return ::std::shared_ptr<BitmapReplacement>();
 }
 
 
@@ -125,7 +126,7 @@ sal_Int32 ResolutionReduction::ResolutionReducedReplacement::GetMemorySize (void
     return maPreview.GetSizeBytes();
 }
 
-::boost::shared_ptr<BitmapReplacement> ResolutionReduction::Compress (
+::std::shared_ptr<BitmapReplacement> ResolutionReduction::Compress (
     const Bitmap& rBitmap) const
 {
     ResolutionReducedReplacement* pResult = new ResolutionReducedReplacement();
@@ -138,7 +139,7 @@ sal_Int32 ResolutionReduction::ResolutionReducedReplacement::GetMemorySize (void
         pResult->maPreview.Scale(Size(mnWidth,nHeight));
     }
 
-    return ::boost::shared_ptr<BitmapReplacement>(pResult);
+    return ::std::shared_ptr<BitmapReplacement>(pResult);
 }
 
 
@@ -199,7 +200,7 @@ public:
 
 
 
-::boost::shared_ptr<BitmapReplacement> PngCompression::Compress (const Bitmap& rBitmap) const
+::std::shared_ptr<BitmapReplacement> PngCompression::Compress (const Bitmap& rBitmap) const
 {
     ::vcl::PNGWriter aWriter (rBitmap);
     SvMemoryStream aStream (32768, 32768);
@@ -211,7 +212,7 @@ public:
     pResult->mpData = new char[pResult->mnDataSize];
     memcpy(pResult->mpData, aStream.GetData(), pResult->mnDataSize);
 
-    return ::boost::shared_ptr<BitmapReplacement>(pResult);
+    return ::std::shared_ptr<BitmapReplacement>(pResult);
 }
 
 

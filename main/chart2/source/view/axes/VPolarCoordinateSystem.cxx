@@ -22,6 +22,7 @@
 
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
+#include <memory>
 #include "precompiled_chartview.hxx"
 #include "VPolarCoordinateSystem.hxx"
 #include "VPolarGrid.hxx"
@@ -99,7 +100,7 @@ void VPolarCoordinateSystem::createVAxisList(
             if(aAxisProperties.m_bDisplayLabels)
                 aAxisProperties.m_nNumberFormatKey = this->getNumberFormatKeyForAxis( xAxis, xNumberFormatsSupplier );
             //-------------------
-            ::boost::shared_ptr< VAxisBase > apVAxis( VPolarAxis::createAxis( aAxisProperties,xNumberFormatsSupplier,nDimensionIndex,nDimensionCount) );
+            ::std::shared_ptr< VAxisBase > apVAxis( VPolarAxis::createAxis( aAxisProperties,xNumberFormatsSupplier,nDimensionIndex,nDimensionCount) );
             tFullAxisIndex aFullAxisIndex( nDimensionIndex, nAxisIndex );
             m_aAxisMap[aFullAxisIndex] = apVAxis;
 

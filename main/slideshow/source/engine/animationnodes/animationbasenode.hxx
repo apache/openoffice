@@ -24,6 +24,7 @@
 #define INCLUDED_SLIDESHOW_ANIMATIONBASENODE_HXX
 
 #include <com/sun/star/animations/XAnimate.hpp>
+#include <memory>
 
 #include "basecontainernode.hxx"
 #include "activitiesfactory.hxx"
@@ -45,7 +46,7 @@ public:
     AnimationBaseNode(
         ::com::sun::star::uno::Reference<
         ::com::sun::star::animations::XAnimationNode> const& xNode,
-        ::boost::shared_ptr<BaseContainerNode> const& pParent,
+        ::std::shared_ptr<BaseContainerNode> const& pParent,
         NodeContext const& rContext );
 
 #if defined(VERBOSE) && defined(DBG_UTIL)

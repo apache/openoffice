@@ -85,7 +85,7 @@ namespace dbaui
 	};
 	/// unary_function Functor object for class OConnectionLine returntype is void
 	/// draws a connectionline object on outputdevice
-	struct TConnectionLineDrawFunctor : ::std::unary_function<OConnectionLine*,void>
+	struct TConnectionLineDrawFunctor
 	{
 		OutputDevice* pDevice;
 		TConnectionLineDrawFunctor(OutputDevice* _pDevice)
@@ -99,7 +99,7 @@ namespace dbaui
 	};
 	/// binary_function Functor object for class OConnectionLine returntype is bool
 	/// checks if the point is on connectionline
-	struct TConnectionLineCheckHitFunctor : ::std::binary_function<OConnectionLine*,Point,bool>
+	struct TConnectionLineCheckHitFunctor
 	{
 		inline bool operator()(const OConnectionLine* lhs,const Point& rhs)	const
 		{

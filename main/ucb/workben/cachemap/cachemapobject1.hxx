@@ -88,10 +88,10 @@ private:
     friend class ObjectContainer1;
         // to access m_aContainerIt, m_nRefCount, Object1(), ~Object1()
 #if defined WNT
-    friend struct std::auto_ptr< Object1 >; // to access ~Object1()
+    friend struct std::unique_ptr< Object1 >; // to access ~Object1()
         // work around compiler bug...
 #else // WNT
-    friend class std::auto_ptr< Object1 >; // to access ~Object1()
+    friend class std::unique_ptr< Object1 >; // to access ~Object1()
 #endif // WNT
 };
 

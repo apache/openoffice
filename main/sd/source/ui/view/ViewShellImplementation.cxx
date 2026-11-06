@@ -61,6 +61,7 @@
 #include "undo/undoobjects.hxx"
 
 #include <com/sun/star/drawing/framework/XControllerManager.hpp>
+#include <memory>
 
 using namespace ::com::sun::star::uno;
 using namespace ::com::sun::star::drawing::framework;
@@ -86,7 +87,7 @@ ViewShell::Implementation::~Implementation (void)
 {
 	if ( ! mpUpdateLockForMouse.expired())
 	{
-		::boost::shared_ptr<ToolBarManagerLock> pLock(mpUpdateLockForMouse);
+		::std::shared_ptr<ToolBarManagerLock> pLock(mpUpdateLockForMouse);
 		if (pLock.get() != NULL)
 		{
 			// Force the ToolBarManagerLock to be released even when the
@@ -359,11 +360,11 @@ class ViewShell::Implementation::ToolBarManagerLock::Deleter { public:
 	void operator() (ToolBarManagerLock* pObject) { delete pObject; }
 };
 
-::boost::shared_ptr<ViewShell::Implementation::ToolBarManagerLock>
+::std::shared_ptr<ViewShell::Implementation::ToolBarManagerLock>
 	ViewShell::Implementation::ToolBarManagerLock::Create (
-		const ::boost::shared_ptr<ToolBarManager>& rpManager)
+		const ::std::shared_ptr<ToolBarManager>& rpManager)
 {
-	::boost::shared_ptr<ToolBarManagerLock> pLock (
+	::std::shared_ptr<ToolBarManagerLock> pLock (
 		new ViewShell::Implementation::ToolBarManagerLock(rpManager),
 		ViewShell::Implementation::ToolBarManagerLock::Deleter());
 	pLock->mpSelf = pLock;
@@ -374,7 +375,7 @@ class ViewShell::Implementation::ToolBarManagerLock::Deleter { public:
 
 
 ViewShell::Implementation::ToolBarManagerLock::ToolBarManagerLock (
-	const ::boost::shared_ptr<ToolBarManager>& rpManager)
+	const ::std::shared_ptr<ToolBarManager>& rpManager)
 	: mpLock(new ToolBarManager::UpdateLock(rpManager)),
 	  maTimer()
 {

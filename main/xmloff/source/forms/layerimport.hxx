@@ -27,6 +27,7 @@
 #include <com/sun/star/xml/sax/XAttributeList.hpp>
 #include <com/sun/star/form/XFormsSupplier2.hpp>
 #include <vos/ref.hxx>
+#include <map>
 #include "formattributes.hxx"
 #include "callbacks.hxx"
 #include "eventimport.hxx"
@@ -88,11 +89,21 @@ namespace xmloff
 		SvXMLStylesContext*					m_pAutoStyles;
 
 	protected:
-		DECLARE_STL_USTRINGACCESS_MAP( ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >, MapString2PropertySet );
-		DECLARE_STL_MAP( ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XDrawPage >, MapString2PropertySet, ODrawPageCompare, MapDrawPage2Map);
+        typedef std::map< ::rtl::OUString, ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >, ::comphelper::UStringLess > MapString2PropertySet;
+        typedef MapString2PropertySet::const_iterator ConstMapString2PropertySetIterator;
+        struct ODrawPagePtrLess
+        {
+            bool operator() ( const ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XDrawPage >& lhs, const ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XDrawPage >& rhs ) const
+            {
+                return lhs.get() < rhs.get();
+            }
+        };
+        typedef std::map< ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XDrawPage >, MapString2PropertySet, ODrawPagePtrLess > MapDrawPage2Map;
+        typedef MapDrawPage2Map::iterator MapDrawPage2MapIterator;
+        typedef MapDrawPage2Map::const_iterator ConstMapDrawPage2MapIterator;
 
-		MapDrawPage2Map			m_aControlIds;			// ids of the controls on all known page
-		MapDrawPage2MapIterator	m_aCurrentPageIds;		// ifs of the controls on the current page
+        MapDrawPage2Map      m_aControlIds;
+        MapDrawPage2MapIterator m_aCurrentPageIds;
 
         typedef ::std::pair< ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >, ::rtl::OUString >
                                 ModelStringPair;

@@ -24,6 +24,7 @@
 #ifndef OOX_XLS_COMMENTSBUFFER_HXX
 #define OOX_XLS_COMMENTSBUFFER_HXX
 
+#include <memory>
 #include "oox/xls/richstring.hxx"
 #include "oox/xls/worksheethelper.hxx"
 
@@ -77,7 +78,7 @@ private:
     CommentModel        maModel;
 };
 
-typedef ::boost::shared_ptr< Comment > CommentRef;
+typedef ::std::shared_ptr< Comment > CommentRef;
 
 // ============================================================================
 

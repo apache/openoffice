@@ -135,7 +135,7 @@ std::vector< Reference< chart2::XAxis > > lcl_getAxesHoldingCategoriesFromDiagra
     return aRet;
 }
 
-struct lcl_ApplyCellToData : public ::std::unary_function< SchXMLCell, void >
+struct lcl_ApplyCellToData 
 {
     lcl_ApplyCellToData( Sequence< double > & rOutData ) :
             m_rData( rOutData ),

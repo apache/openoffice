@@ -40,7 +40,7 @@ namespace pcr
     sal_Int16 classifyComponent( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& _rxComponent );
 
 	//========================================================================
-    struct FindPropertyByHandle : public ::std::unary_function< ::com::sun::star::beans::Property, bool >
+    struct FindPropertyByHandle 
     {
     private:
         sal_Int32 m_nId;
@@ -54,7 +54,7 @@ namespace pcr
     };
 
 	//========================================================================
-    struct FindPropertyByName : public ::std::unary_function< ::com::sun::star::beans::Property, bool >
+    struct FindPropertyByName 
     {
     private:
         ::rtl::OUString m_sName;
@@ -69,10 +69,7 @@ namespace pcr
 
 	//========================================================================
 	struct PropertyLessByName
-				:public ::std::binary_function	<	::com::sun::star::beans::Property,
-													::com::sun::star::beans::Property,
-													bool
-												>
+				
 	{
 		bool operator() (::com::sun::star::beans::Property _rLhs, ::com::sun::star::beans::Property _rRhs) const
 		{
@@ -82,10 +79,7 @@ namespace pcr
 
 	//========================================================================
 	struct TypeLessByName
-				:public ::std::binary_function	<	::com::sun::star::uno::Type,
-													::com::sun::star::uno::Type,
-													bool
-												>
+				
 	{
 		bool operator() (::com::sun::star::uno::Type _rLhs, ::com::sun::star::uno::Type _rRhs) const
 		{

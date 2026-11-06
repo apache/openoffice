@@ -24,7 +24,7 @@
 #define INCLUDED_DMAPPER_PROPERTYIDS_HXX
 
 #include <unordered_map>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <com/sun/star/uno/Sequence.hxx>
 #include <com/sun/star/beans/PropertyValue.hpp>
 
@@ -322,7 +322,7 @@ class PropertySequence
     int getOrCreateIndex(PropertyIds aId);
 
 public:
-    typedef boost::shared_ptr<PropertySequence> Pointer_t;
+    typedef std::shared_ptr<PropertySequence> Pointer_t;
 
     PropertySequence();
     PropertySequence(const uno::Sequence<beans::PropertyValue> & rSeq);

@@ -27,7 +27,7 @@
 #include <canvas/rendering/irendermodule.hxx>
 #include <canvas/rendering/icolorbuffer.hxx>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 #include <canvas/canvastoolsdllapi.h>
 
@@ -61,11 +61,11 @@ namespace canvas
             Internally this texture may even be distributed to several
             real hardware surfaces.
         */
-        virtual ::boost::shared_ptr< ISurfaceProxy > createSurfaceProxy(
+        virtual ::std::shared_ptr< ISurfaceProxy > createSurfaceProxy(
             const IColorBufferSharedPtr& pBuffer ) const = 0;
     };
 
-    typedef ::boost::shared_ptr< ISurfaceProxyManager > ISurfaceProxyManagerSharedPtr;
+    typedef ::std::shared_ptr< ISurfaceProxyManager > ISurfaceProxyManagerSharedPtr;
 
 
     /** Create a surface proxy for the given render module.

@@ -23,6 +23,7 @@
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_dbtools.hxx"
+#include <algorithm>
 #include "connectivity/dbtools.hxx"
 #include "connectivity/dbconversion.hxx"
 #include "connectivity/dbcharset.hxx"
@@ -618,7 +619,7 @@ sal_Bool isDataSourcePropertyEnabled(const Reference<XInterface>& _xProp,const :
 			xProp->getPropertyValue(::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("Info"))) >>= aInfo;
 			const PropertyValue* pValue =::std::find_if(aInfo.getConstArray(),
 												aInfo.getConstArray() + aInfo.getLength(),
-												::std::bind2nd(TPropertyValueEqualFunctor(),_sProperty));
+												[_sProperty](const PropertyValue& _x) { return TPropertyValueEqualFunctor()(_x, _sProperty); });
 			if ( pValue && pValue != (aInfo.getConstArray() + aInfo.getLength()) )
 				pValue->Value >>= bEnabled;
 		}

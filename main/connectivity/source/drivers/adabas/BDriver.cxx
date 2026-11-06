@@ -959,7 +959,7 @@ void ODriver::createDb( const TDatabaseStruct& _aInfo)
 		::utl::TempFile aInitFile(String::CreateFromAscii("Init"),&sExt,&sWorkUrl);
 		aInitFile.EnableKillingFile();
 		{
-			::std::auto_ptr<SvStream> pFileStream( UcbStreamHelper::CreateStream(aInitFile.GetURL(),STREAM_WRITE) );
+			::std::unique_ptr<SvStream> pFileStream( UcbStreamHelper::CreateStream(aInitFile.GetURL(),STREAM_WRITE) );
 			(*pFileStream)	<< "ALTER USER \""
 							<< _aInfo.sSysUser
 							<< "\" NOT EXCLUSIVE "
@@ -984,7 +984,7 @@ int ODriver::X_PARAM(const ::rtl::OUString& _DBNAME,
 	//	%XPARAM% -u %CONUSR%,%CONPWD% BINIT
 	String sCommandFile = generateInitFile();
 	{
-		::std::auto_ptr<SvStream> pFileStream( UcbStreamHelper::CreateStream(sCommandFile,STREAM_STD_READWRITE));
+		::std::unique_ptr<SvStream> pFileStream( UcbStreamHelper::CreateStream(sCommandFile,STREAM_STD_READWRITE));
 		pFileStream->Seek(STREAM_SEEK_TO_END);
 		(*pFileStream)	<< "x_param"
 #if defined(WNT)
@@ -1067,7 +1067,7 @@ OSL_TRACE("CreateFile %d",_nSize);
 	sal_Bool bOK = sal_True;
 	try
 	{
-		::std::auto_ptr<SvStream> pFileStream( UcbStreamHelper::CreateStream(_FileName,STREAM_WRITE));
+		::std::unique_ptr<SvStream> pFileStream( UcbStreamHelper::CreateStream(_FileName,STREAM_WRITE));
 		if( !pFileStream.get())
 		{
             ::connectivity::SharedResources aResources;
@@ -1190,7 +1190,7 @@ void ODriver::XUTIL(const ::rtl::OUString& _rParam,
 	String sCommandFile = generateInitFile();
 
 	{
-		::std::auto_ptr<SvStream> pFileStream( UcbStreamHelper::CreateStream(sCommandFile,STREAM_STD_READWRITE));
+		::std::unique_ptr<SvStream> pFileStream( UcbStreamHelper::CreateStream(sCommandFile,STREAM_STD_READWRITE));
 		pFileStream->Seek(STREAM_SEEK_TO_END);
 		(*pFileStream)	<<
 #if defined(WNT)
@@ -1243,7 +1243,7 @@ void ODriver::LoadBatch(const ::rtl::OUString& sDBName,
 
 	String sCommandFile = generateInitFile();
 	{
-		::std::auto_ptr<SvStream> pFileStream( UcbStreamHelper::CreateStream(sCommandFile,STREAM_STD_READWRITE));
+		::std::unique_ptr<SvStream> pFileStream( UcbStreamHelper::CreateStream(sCommandFile,STREAM_STD_READWRITE));
 		pFileStream->Seek(STREAM_SEEK_TO_END);
 		(*pFileStream)	<< "xload"
 #if defined(WNT)
@@ -1435,7 +1435,7 @@ void ODriver::X_CONS(const ::rtl::OUString& sDBName,const ::rtl::OString& _ACTIO
 
 	String sCommandFile = generateInitFile();
 	{
-		::std::auto_ptr<SvStream> pFileStream( UcbStreamHelper::CreateStream(sCommandFile,STREAM_STD_READWRITE));
+		::std::unique_ptr<SvStream> pFileStream( UcbStreamHelper::CreateStream(sCommandFile,STREAM_STD_READWRITE));
 		pFileStream->Seek(STREAM_SEEK_TO_END);
 
 		(*pFileStream)	<< "x_cons"
@@ -1518,7 +1518,7 @@ sal_Bool ODriver::isVersion(const ::rtl::OUString& sDBName, const char* _pVersio
 
 	String sCommandFile = generateInitFile();
 	{
-		::std::auto_ptr<SvStream> pFileStream( UcbStreamHelper::CreateStream(sCommandFile,STREAM_STD_READWRITE));
+		::std::unique_ptr<SvStream> pFileStream( UcbStreamHelper::CreateStream(sCommandFile,STREAM_STD_READWRITE));
 		pFileStream->Seek(STREAM_SEEK_TO_END);
 
 		(*pFileStream)	<< "getparam"
@@ -1568,7 +1568,7 @@ void ODriver::checkAndInsertNewDevSpace(const ::rtl::OUString& sDBName,
 
 	String sCommandFile = generateInitFile();
 	{
-		::std::auto_ptr<SvStream> pFileStream( UcbStreamHelper::CreateStream(sCommandFile,STREAM_STD_READWRITE));
+		::std::unique_ptr<SvStream> pFileStream( UcbStreamHelper::CreateStream(sCommandFile,STREAM_STD_READWRITE));
 		pFileStream->Seek(STREAM_SEEK_TO_END);
 
 		(*pFileStream)	<< "getparam"
@@ -1618,7 +1618,7 @@ sal_Bool ODriver::isKernelVersion(const char* _pVersion)
 
 	String sCommandFile = generateInitFile();
 	{
-		::std::auto_ptr<SvStream> pFileStream( UcbStreamHelper::CreateStream(sCommandFile,STREAM_STD_READWRITE));
+		::std::unique_ptr<SvStream> pFileStream( UcbStreamHelper::CreateStream(sCommandFile,STREAM_STD_READWRITE));
 		pFileStream->Seek(STREAM_SEEK_TO_END);
 
 		(*pFileStream)	<< "dbversion"
@@ -1729,7 +1729,7 @@ void ODriver::installSystemTables(	const TDatabaseStruct& _aInfo)
 #else // UNX
 	String sCommandFile = generateInitFile();
 	{
-		::std::auto_ptr<SvStream> pFileStream( UcbStreamHelper::CreateStream(sCommandFile,STREAM_STD_READWRITE));
+		::std::unique_ptr<SvStream> pFileStream( UcbStreamHelper::CreateStream(sCommandFile,STREAM_STD_READWRITE));
 		pFileStream->Seek(STREAM_SEEK_TO_END);
 		(*pFileStream)	<< "x_dbinst"
 						<< " -d "
@@ -1786,7 +1786,7 @@ void ODriver::convertOldVersion(const ::rtl::OUString& sDBName,const TDatabaseSt
 		if ( UCBContentHelper::Exists(sCommandFile) )
 		{
 			{
-				::std::auto_ptr<SvStream> pFileStream( UcbStreamHelper::CreateStream(sCommandFile,STREAM_STD_READ) );
+				::std::unique_ptr<SvStream> pFileStream( UcbStreamHelper::CreateStream(sCommandFile,STREAM_STD_READ) );
 				ByteString sStateLine;
 				sal_Bool bRead = sal_True;
 				static ByteString s_ErrorId("-21100");

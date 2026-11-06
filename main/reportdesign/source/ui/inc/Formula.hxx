@@ -27,7 +27,7 @@
 #include <formula/formula.hxx>
 #include <formula/IFunctionDescription.hxx>
 #include <formula/IControlReferenceHandler.hxx>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <com/sun/star/beans/XPropertySet.hpp>
 #include <com/sun/star/report/meta/XFormulaParser.hpp>
 
@@ -44,7 +44,7 @@ class FormulaDialog : public formula::FormulaModalDialog,
                       public formula::IFormulaEditorHelper,
                       public formula::IControlReferenceHandler
 {
-    ::boost::shared_ptr< formula::IFunctionManager > m_aFunctionManager;
+    ::std::shared_ptr< formula::IFunctionManager > m_aFunctionManager;
     formula::FormEditData*      m_pFormulaData;
     OAddFieldWindow*		    m_pAddField;
     ::com::sun::star::uno::Reference < ::com::sun::star::beans::XPropertySet >          m_xRowSet;
@@ -59,7 +59,7 @@ class FormulaDialog : public formula::FormulaModalDialog,
 public:
 	FormulaDialog( Window* pParent
         , const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory>& _xServiceFactory
-        , const ::boost::shared_ptr< formula::IFunctionManager >& _pFunctionMgr
+        , const ::std::shared_ptr< formula::IFunctionManager >& _pFunctionMgr
         , const ::rtl::OUString& _sFormula
         , const ::com::sun::star::uno::Reference < ::com::sun::star::beans::XPropertySet >& _xRowSet);
 	virtual ~FormulaDialog();
@@ -88,7 +88,7 @@ public:
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::sheet::XFormulaOpCodeMapper> getFormulaOpCodeMapper() const;
     virtual ::com::sun::star::table::CellAddress getReferencePosition() const;
 
-    virtual ::std::auto_ptr<formula::FormulaTokenArray> convertToTokenArray(const ::com::sun::star::uno::Sequence< ::com::sun::star::sheet::FormulaToken >& _aTokenList);
+    virtual ::std::unique_ptr<formula::FormulaTokenArray> convertToTokenArray(const ::com::sun::star::uno::Sequence< ::com::sun::star::sheet::FormulaToken >& _aTokenList);
 
     // IControlReferenceHandler
     virtual void ShowReference(const String& _sRef);

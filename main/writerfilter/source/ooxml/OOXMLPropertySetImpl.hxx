@@ -24,6 +24,7 @@
 #define INCLUDED_OOXML_PROPERTY_SET_IMPL_HXX
 
 #include <vector>
+#include <memory>
 #include "OOXMLPropertySet.hxx"
 #include "OOXMLBinaryObjectReference.hxx"
 
@@ -43,7 +44,7 @@ using ::com::sun::star::drawing::XShape;
 class OOXMLValue : public Value
 {
 public:
-    typedef boost::shared_ptr<OOXMLValue> Pointer_t;
+    typedef std::shared_ptr<OOXMLValue> Pointer_t;
     OOXMLValue();
     virtual ~OOXMLValue();
 
@@ -68,7 +69,7 @@ private:
     Type_t meType;
 
 public:
-    typedef boost::shared_ptr<OOXMLProperty> Pointer_t;
+    typedef std::shared_ptr<OOXMLProperty> Pointer_t;
 
     OOXMLPropertyImpl(Id id, OOXMLValue::Pointer_t pValue, Type_t eType);
     OOXMLPropertyImpl(const OOXMLPropertyImpl & rSprm);
@@ -233,7 +234,7 @@ public:
 class OOXMLTableImpl : public OOXMLTable
 {
 public:
-    typedef boost::shared_ptr<OOXMLValue> ValuePointer_t;
+    typedef std::shared_ptr<OOXMLValue> ValuePointer_t;
 private:
     typedef vector<ValuePointer_t> PropertySets_t;
     PropertySets_t mPropertySets;

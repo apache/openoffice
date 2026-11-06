@@ -24,7 +24,7 @@
 #ifndef INCLUDED_SLIDESHOW_INTRINSICANIMATIONEVENTHANDLER_HXX
 #define INCLUDED_SLIDESHOW_INTRINSICANIMATIONEVENTHANDLER_HXX
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 /* Definition of IntrinsicAnimationEventHandler interface */
 
@@ -48,7 +48,7 @@ namespace slideshow
             virtual bool disableAnimations() = 0;
         };
 
-        typedef ::boost::shared_ptr< IntrinsicAnimationEventHandler > IntrinsicAnimationEventHandlerSharedPtr;
+        typedef ::std::shared_ptr< IntrinsicAnimationEventHandler > IntrinsicAnimationEventHandlerSharedPtr;
 
     }
 }

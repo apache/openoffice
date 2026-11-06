@@ -83,7 +83,7 @@
 #include <swunohelper.hxx>
 #include <svx/xbtmpit.hxx>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 #include "ccoll.hxx"
 #include "unocore.hrc"

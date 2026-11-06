@@ -27,6 +27,7 @@
 #include <com/sun/star/drawing/PointSequenceSequence.hpp>
 #include <resourcemodel/LoggedResources.hxx>
 #include <resourcemodel/Fraction.hxx>
+#include <memory>
 
 namespace writerfilter {
 namespace dmapper {
@@ -38,7 +39,7 @@ class WrapPolygon
 {
 public:
     typedef ::std::deque<awt::Point> Points_t;
-    typedef ::boost::shared_ptr<WrapPolygon> Pointer_t;
+    typedef ::std::shared_ptr<WrapPolygon> Pointer_t;
 
 private:
     Points_t mPoints;

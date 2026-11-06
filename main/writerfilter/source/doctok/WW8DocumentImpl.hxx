@@ -30,6 +30,7 @@
 #include <resources.hxx>
 #ifndef INCLUDED_WW8_RESOURCE_MODEL_HXX
 #include <resourcemodel/WW8ResourceModel.hxx>
+#include <memory>
 #endif
 #include <PLCF.hxx>
 #include <WW8Sttbf.hxx>
@@ -115,7 +116,7 @@ class BookmarkHelper
     sal_uInt32 getIndex(const CpAndFc & rCpAndFc);
 
 public:
-    typedef boost::shared_ptr<BookmarkHelper> Pointer_t;
+    typedef std::shared_ptr<BookmarkHelper> Pointer_t;
 
     BookmarkHelper(PLCF<WW8BKF>::Pointer_t pStartCps,
                    WW8StructBase::Pointer_t pEndCps,
@@ -164,14 +165,14 @@ public:
 class ShapeHelper
 {
 public:
-    typedef unordered_map<CpAndFc, WW8FSPA::Pointer_t, CpAndFcHash> Map_t;
+    typedef std::unordered_map<CpAndFc, WW8FSPA::Pointer_t, CpAndFcHash> Map_t;
 
 private:
     WW8DocumentImpl * mpDoc;
     Map_t mMap;
 
 public:
-    typedef boost::shared_ptr<ShapeHelper> Pointer_t;
+    typedef std::shared_ptr<ShapeHelper> Pointer_t;
     ShapeHelper(PLCF<WW8FSPA>::Pointer_t pPlcspaMom,
                 PLCF<WW8FSPA>::Pointer_t pPlcspaHdr,
                 WW8DocumentImpl * pDoc);
@@ -189,7 +190,7 @@ public:
 class FieldHelper
 {
 public:
-    typedef unordered_map<CpAndFc, WW8FLD::Pointer_t,
+    typedef std::unordered_map<CpAndFc, WW8FLD::Pointer_t,
                      CpAndFcHash> Map_t;
 
 private:
@@ -197,7 +198,7 @@ private:
     Map_t mMap;
 public:
 
-    typedef boost::shared_ptr<FieldHelper> Pointer_t;
+    typedef std::shared_ptr<FieldHelper> Pointer_t;
     FieldHelper(PLCF<WW8FLD>::Pointer_t pPlcffldMom,
                 WW8DocumentImpl * pDoc);
 
@@ -215,13 +216,13 @@ public:
 class BreakHelper
 {
 public:
-    typedef unordered_map<CpAndFc, WW8BKD::Pointer_t,
+    typedef std::unordered_map<CpAndFc, WW8BKD::Pointer_t,
                      CpAndFcHash> Map_t;
 private:
     WW8DocumentImpl * mpDoc;
     Map_t mMap;
 public:
-    typedef boost::shared_ptr<BreakHelper> Pointer_t;
+    typedef std::shared_ptr<BreakHelper> Pointer_t;
     BreakHelper(PLCF<WW8BKD>::Pointer_t pPlcfbkdMom,
                 WW8DocumentImpl * pDoc);
 

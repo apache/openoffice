@@ -25,6 +25,7 @@
 #define OOX_XLS_CONDFORMATBUFFER_HXX
 
 #include <com/sun/star/sheet/ConditionOperator.hpp>
+#include <memory>
 #include "oox/xls/formulaparser.hxx"
 #include "oox/xls/worksheethelper.hxx"
 
@@ -99,7 +100,7 @@ private:
     CondFormatRuleModel maModel;
 };
 
-typedef ::boost::shared_ptr< CondFormatRule > CondFormatRuleRef;
+typedef ::std::shared_ptr< CondFormatRule > CondFormatRuleRef;
 
 // ============================================================================
 
@@ -150,7 +151,7 @@ private:
     CondFormatRuleMap   maRules;            /// Maps formatting rules by priority.
 };
 
-typedef ::boost::shared_ptr< CondFormat > CondFormatRef;
+typedef ::std::shared_ptr< CondFormat > CondFormatRef;
 
 // ============================================================================
 

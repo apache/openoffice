@@ -30,6 +30,7 @@
 
 #include <boost/bind.hpp>
 #include <boost/function.hpp>
+#include <memory>
 
 
 namespace sd { namespace slidesorter { namespace view {
@@ -41,7 +42,7 @@ class LayerInvalidator : public ILayerInvalidator
 {
 public:
 	LayerInvalidator (
-		const ::boost::shared_ptr<LayeredDevice>& rpLayeredDevice,
+		const ::std::shared_ptr<LayeredDevice>& rpLayeredDevice,
 		const SharedSdWindow& rpTargetWindow,
 		const int nLayer)
 		: mpLayeredDevice(rpLayeredDevice),
@@ -57,7 +58,7 @@ public:
 	}
 
 private:
-	const ::boost::shared_ptr<LayeredDevice> mpLayeredDevice;
+	const ::std::shared_ptr<LayeredDevice> mpLayeredDevice;
 	SharedSdWindow mpTargetWindow;
 	const int mnLayer;
 };
@@ -122,13 +123,13 @@ public:
 	void Dispose (void);
 
 private:
-	::boost::shared_ptr<VirtualDevice> mpLayerDevice;
+	::std::shared_ptr<VirtualDevice> mpLayerDevice;
 	::std::vector<SharedILayerPainter> maPainters;
 	Region maInvalidationRegion;
 
 	void ValidateRectangle (const Rectangle& rBox);
 };
-typedef ::boost::shared_ptr<Layer> SharedLayer;
+typedef ::std::shared_ptr<Layer> SharedLayer;
 
 
 } // end of anonymous namespace

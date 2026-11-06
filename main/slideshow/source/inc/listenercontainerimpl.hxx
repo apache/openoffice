@@ -24,7 +24,7 @@
 #define INCLUDED_SLIDESHOW_LISTENERCONTAINERIMPL_HXX
 
 #include <sal/config.h>
-#include <boost/weak_ptr.hpp>
+#include <memory>
 
 namespace slideshow {
 namespace internal {
@@ -143,7 +143,7 @@ template< typename ListenerT > struct ListenerOperations
 // specializations for weak_ptr
 // ----------------------------
 template< typename ListenerTargetT >
-struct ListenerOperations< boost::weak_ptr<ListenerTargetT> >
+struct ListenerOperations< std::weak_ptr<ListenerTargetT> >
 {
     template< typename ContainerT,
               typename FuncT >
@@ -154,7 +154,7 @@ struct ListenerOperations< boost::weak_ptr<ListenerTargetT> >
         typename ContainerT::const_iterator const aEnd ( rContainer.end() );
         while( aCurr != aEnd )
         {
-            boost::shared_ptr<ListenerTargetT> pListener( aCurr->lock() );
+            std::shared_ptr<ListenerTargetT> pListener( aCurr->lock() );
 
             if( pListener && func(pListener) )
                 return true;
@@ -175,11 +175,11 @@ struct ListenerOperations< boost::weak_ptr<ListenerTargetT> >
         typename ContainerT::const_iterator const aEnd ( rContainer.end() );
         while( aCurr != aEnd )
         {
-            boost::shared_ptr<ListenerTargetT> pListener( aCurr->lock() );
+            std::shared_ptr<ListenerTargetT> pListener( aCurr->lock() );
 
             if( pListener.get() &&
                 FunctionApply< typename FuncT::result_type,
-                               boost::shared_ptr<ListenerTargetT> >::apply(func,pListener) )
+                               std::shared_ptr<ListenerTargetT> >::apply(func,pListener) )
             {
                 bRet = true;
             }

@@ -28,7 +28,7 @@
 
 #include <com/sun/star/rendering/XSpriteCanvas.hpp>
 #include <boost/noncopyable.hpp>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <sal/types.h>
 #include <tools/solar.h>
 #include <tools/link.hxx>
@@ -49,7 +49,7 @@ public:
     /** Return the Canvas UpdateRequester object for the given shared
         canvas.  A new object is created when it does not already exist.
     */
-    static ::boost::shared_ptr<CanvasUpdateRequester> Instance (
+    static ::std::shared_ptr<CanvasUpdateRequester> Instance (
         const css::uno::Reference<css::rendering::XSpriteCanvas>& rxCanvas);
 
     void RequestUpdate (const sal_Bool bUpdateAll);
@@ -62,7 +62,7 @@ private:
     typedef ::std::vector<
         ::std::pair<
             css::uno::Reference<css::rendering::XSpriteCanvas>,
-           ::boost::shared_ptr<CanvasUpdateRequester> > > RequesterMap;
+           ::std::shared_ptr<CanvasUpdateRequester> > > RequesterMap;
     static RequesterMap maRequesterMap;
 
     css::uno::Reference<css::rendering::XSpriteCanvas> mxCanvas;

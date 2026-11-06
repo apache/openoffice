@@ -29,7 +29,7 @@
 #include <com/sun/star/linguistic2/XHyphenator.hpp>
 #include <com/sun/star/linguistic2/XThesaurus.hpp>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 class SvStream;
 
@@ -38,7 +38,7 @@ class SvStream;
 
 #define A2OU(x)	::rtl::OUString::createFromAscii( x )
 
-typedef boost::shared_ptr< SvStream > SvStreamPtr;
+typedef std::shared_ptr< SvStream > SvStreamPtr;
 
 namespace css = ::com::sun::star;
 

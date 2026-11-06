@@ -195,12 +195,12 @@ $(eval $(call gb_Library_add_linked_libs,vclplug_gen,\
 	pthread \
 ))
 $(eval $(call gb_Library_add_libs,vclplug_gen, \
-	-lXinerama -lXrandr \
+    -L/tmp/kilo/x11libs -lXinerama -lXrandr \
 ))
 endif
 ifeq ($(OS),FREEBSD)
 $(eval $(call gb_Library_add_libs,vclplug_gen, \
-	-lXinerama -lXrandr \
+    -L/tmp/kilo/x11libs -lXinerama -lXrandr \
 ))
 endif
 

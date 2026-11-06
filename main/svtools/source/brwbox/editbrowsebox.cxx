@@ -139,7 +139,7 @@ namespace svt
 	DBG_NAME(EditBrowseBox);
 	void EditBrowseBox::impl_construct()
 	{
-		m_aImpl = ::std::auto_ptr<EditBrowseBoxImpl>(new EditBrowseBoxImpl());
+		m_aImpl = ::std::unique_ptr<EditBrowseBoxImpl>(new EditBrowseBoxImpl());
 		m_aImpl->m_bHiContrast = isHiContrast(&GetDataWindow());
 
 		SetCompoundControl(sal_True);

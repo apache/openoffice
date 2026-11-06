@@ -171,7 +171,7 @@ namespace
                 m_Thread->join();
             };
         private:
-            ::std::auto_ptr<OnLogRotateThread> m_Thread;
+            ::std::unique_ptr<OnLogRotateThread> m_Thread;
     };
 }
 

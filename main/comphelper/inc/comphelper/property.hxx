@@ -46,7 +46,7 @@ namespace comphelper
 
 /** compare two properties by name
 */
-	struct PropertyStringLessFunctor : ::std::binary_function< ::com::sun::star::beans::Property, ::rtl::OUString, bool >
+	struct PropertyStringLessFunctor
 	{
 		// ................................................................
 		inline bool operator()( const ::com::sun::star::beans::Property& lhs, const ::rtl::OUString& rhs ) const
@@ -61,7 +61,7 @@ namespace comphelper
 	};
 	//--------------------------------------------------------------------------
 	// comparing two property instances
-	struct PropertyCompareByName : public ::std::binary_function< ::com::sun::star::beans::Property, ::com::sun::star::beans::Property, bool >
+	struct PropertyCompareByName 
 	{
 		bool operator() (const ::com::sun::star::beans::Property& x, const ::com::sun::star::beans::Property& y) const
 		{
@@ -72,8 +72,11 @@ namespace comphelper
 	//--------------------------------------------------------------------------
     /** compare two properties by name
      */
-	struct PropertyStringEqualFunctor : ::std::binary_function< ::com::sun::star::beans::Property, ::rtl::OUString, bool >
+	struct PropertyStringEqualFunctor
 	{
+		typedef ::com::sun::star::beans::Property first_argument_type;
+		typedef ::rtl::OUString second_argument_type;
+		typedef bool result_type;
 		// ................................................................
 		inline bool operator()( const ::com::sun::star::beans::Property& lhs, const ::rtl::OUString& rhs ) const
 		{
@@ -87,7 +90,7 @@ namespace comphelper
 	};
 	//--------------------------------------------------------------------------
 	// comparing two property instances
-	struct PropertyEqualByName : public ::std::binary_function< ::com::sun::star::beans::Property, ::com::sun::star::beans::Property, bool >
+	struct PropertyEqualByName 
 	{
 		bool operator() (const ::com::sun::star::beans::Property& x, const ::com::sun::star::beans::Property& y) const
 		{

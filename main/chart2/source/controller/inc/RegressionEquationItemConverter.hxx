@@ -32,7 +32,7 @@
 
 #include <memory>
 #include <vector>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 class SdrModel;
 
@@ -52,8 +52,8 @@ public:
         SdrModel& rDrawModel,
         const ::com::sun::star::uno::Reference<
             ::com::sun::star::lang::XMultiServiceFactory > & xNamedPropertyContainerFactory,
-        ::std::auto_ptr< ::com::sun::star::awt::Size > pRefSize =
-            ::std::auto_ptr< ::com::sun::star::awt::Size >() );
+        ::std::unique_ptr< ::com::sun::star::awt::Size > pRefSize =
+            ::std::unique_ptr< ::com::sun::star::awt::Size >() );
     virtual ~RegressionEquationItemConverter();
 
     virtual void FillItemSet( SfxItemSet & rOutItemSet ) const;

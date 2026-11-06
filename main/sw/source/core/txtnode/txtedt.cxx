@@ -89,6 +89,7 @@
 #include <vector>
 
 #include <unotextrange.hxx>
+#include <memory>
 
 using rtl::OUString;
 using namespace ::com::sun::star;
@@ -323,7 +324,7 @@ static bool lcl_HaveCommonAttributes( IStyleAccess& rStyleAccess,
                                       const SfxItemSet* pSet1,
                                       sal_uInt16 nWhichId,
                                       const SfxItemSet& rSet2,
-                                      boost::shared_ptr<SfxItemSet>& pStyleHandle )
+                                      std::shared_ptr<SfxItemSet>& pStyleHandle )
 {
     bool bRet = false;
 
@@ -473,7 +474,7 @@ void SwTxtNode::RstTxtAttr(
 
         // Default behavior is to process all attributes:
         bool bSkipAttr = false;
-        boost::shared_ptr<SfxItemSet> pStyleHandle;
+        std::shared_ptr<SfxItemSet> pStyleHandle;
 
         // 1. case: We want to reset only the attributes listed in pSet:
         if ( pSet )

@@ -33,7 +33,7 @@
 #include <vcl/timer.hxx>
 #include "tools/SdGlobalResourceContainer.hxx"
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 class SdPage;
 class SdDrawDocument;
@@ -118,7 +118,7 @@ public:
         the existing entry is replaced/updated by the given one.  Otherwise
         a new entry is inserted.
     */
-    Token PutMasterPage (const ::boost::shared_ptr<MasterPageDescriptor>& rDescriptor);
+    Token PutMasterPage (const ::std::shared_ptr<MasterPageDescriptor>& rDescriptor);
     void AcquireToken (Token aToken);
     void ReleaseToken (Token aToken);
 
@@ -146,7 +146,7 @@ public:
     SdPage* GetPageObjectForToken (Token aToken, bool bLoad=true);
     Origin GetOriginForToken (Token aToken);
     sal_Int32 GetTemplateIndexForToken (Token aToken);
-    ::boost::shared_ptr<MasterPageDescriptor> GetDescriptorForToken (Token aToken);
+    ::std::shared_ptr<MasterPageDescriptor> GetDescriptorForToken (Token aToken);
 
     void InvalidatePreview (Token aToken);
 
@@ -166,7 +166,7 @@ public:
 
 private:
     class Implementation;
-    ::boost::shared_ptr<Implementation> mpImpl;
+    ::std::shared_ptr<Implementation> mpImpl;
     PreviewSize mePreviewSize;
 
     /** Retrieve the preview of the document specified by the given URL.

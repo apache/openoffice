@@ -48,9 +48,9 @@ class RegistryKeyImpl;
 // typedefs
 //---------------------------------------
 
-typedef std::auto_ptr<RegistryKeyImpl>  	RegistryKey;
+typedef std::unique_ptr<RegistryKeyImpl>  	RegistryKey;
 typedef std::vector<std::wstring>				StringList;
-typedef std::auto_ptr<StringList>				StringListPtr;
+typedef std::unique_ptr<StringList>				StringListPtr;
 
 //---------------------------------------
 //

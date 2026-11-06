@@ -25,23 +25,24 @@
 
 #include "boost/shared_ptr.hpp"
 #include <functional>
+#include <memory>
 
 namespace comphelper {
 
 /// @internal
 namespace detail {
 /// @internal
-template <typename T> struct ReleaseFunc : ::std::unary_function<T *, void> {
+template <typename T> struct ReleaseFunc {
     void operator()( T * p ) const { p->release(); }
 };
 } // namespace detail
 
-/** Makes a boost::shared_ptr from a ref-counted UNO object pointer.
+/** Makes a std::shared_ptr from a ref-counted UNO object pointer.
     This makes sense if the object is used via UNO (implementing some X
     interface) and also internally using its implementation class, e.g.
 
     <pre>
-        boost::shared_ptr<MyUnoImpl> const ptr(
+        std::shared_ptr<MyUnoImpl> const ptr(
             comphelper::make_shared_from_UNO( new MyUnoImpl ) );
         ...
         xUno->callingUno( uno::Reference<XSomeInterface>( ptr.get() ) );
@@ -51,7 +52,7 @@ template <typename T> struct ReleaseFunc : ::std::unary_function<T *, void> {
     </pre>
 
     @attention The shared_ptr operates on a separate reference counter, so
-               weak pointers (boost::weak_ptr) are invalidated when the last
+               weak pointers (std::weak_ptr) are invalidated when the last
                shared_ptr is destroyed, although the UNO object may still be
                alive.
 
@@ -59,10 +60,10 @@ template <typename T> struct ReleaseFunc : ::std::unary_function<T *, void> {
     @return shared_ptr to object
 */
 template <typename T>
-inline ::boost::shared_ptr<T> make_shared_from_UNO( T * p )
+inline ::std::shared_ptr<T> make_shared_from_UNO( T * p )
 {
     p->acquire();
-    return ::boost::shared_ptr<T>( p, detail::ReleaseFunc<T>() );
+    return ::std::shared_ptr<T>( p, detail::ReleaseFunc<T>() );
 }
 
 } // namespace comphelper

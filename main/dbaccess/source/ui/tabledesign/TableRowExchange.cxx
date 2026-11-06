@@ -31,6 +31,7 @@
 #endif
 #ifndef _SOT_STORAGE_HXX
 #include <sot/storage.hxx>
+#include <memory>
 #endif
 #ifndef DBAUI_TABLEROW_HXX
 #include "TableRow.hxx"
@@ -40,7 +41,7 @@ namespace dbaui
 {
 	using namespace ::com::sun::star::uno;
 	using namespace ::com::sun::star::beans;
-	OTableRowExchange::OTableRowExchange(const ::std::vector< ::boost::shared_ptr<OTableRow> >& _rvTableRow)
+	OTableRowExchange::OTableRowExchange(const ::std::vector< ::std::shared_ptr<OTableRow> >& _rvTableRow)
 		: m_vTableRow(_rvTableRow)
 	{
 	}
@@ -49,12 +50,12 @@ namespace dbaui
 	{
 		if(nUserObjectId == SOT_FORMATSTR_ID_SBA_TABED)
 		{
-			::std::vector< ::boost::shared_ptr<OTableRow> >* pRows = reinterpret_cast< ::std::vector< ::boost::shared_ptr<OTableRow> >* >(pUserObject);
+			::std::vector< ::std::shared_ptr<OTableRow> >* pRows = reinterpret_cast< ::std::vector< ::std::shared_ptr<OTableRow> >* >(pUserObject);
 			if(pRows)
 			{
 				(*rxOStm) << (sal_Int32)pRows->size(); // first stream the size
-				::std::vector< ::boost::shared_ptr<OTableRow> >::const_iterator aIter = pRows->begin();
-                ::std::vector< ::boost::shared_ptr<OTableRow> >::const_iterator aEnd = pRows->end();
+				::std::vector< ::std::shared_ptr<OTableRow> >::const_iterator aIter = pRows->begin();
+                ::std::vector< ::std::shared_ptr<OTableRow> >::const_iterator aEnd = pRows->end();
 				for(;aIter != aEnd;++aIter)
 					(*rxOStm) << *(*aIter);
 				return sal_True;

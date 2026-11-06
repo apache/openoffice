@@ -239,7 +239,7 @@ public:
         const bool i_bCopyPrecedesSource);
 
     /** create a Undo Metadatable for i_rObject. */
-    ::boost::shared_ptr<MetadatableUndo> CreateUndo(
+    ::std::shared_ptr<MetadatableUndo> CreateUndo(
         Metadatable const& i_rObject);
 
     /** merge i_rMerged and i_rOther into i_rMerged. */
@@ -255,7 +255,7 @@ private:
         const ::rtl::OUString & i_rIdref) const;
 
     struct XmlIdRegistry_Impl;
-    ::std::auto_ptr<XmlIdRegistry_Impl> m_pImpl;
+    ::std::unique_ptr<XmlIdRegistry_Impl> m_pImpl;
 };
 
 // MetadatableUndo ---------------------------------------------------
@@ -343,11 +343,11 @@ private:
         const ::rtl::OUString & i_rIdref) const;
 
     /** create a Clipboard Metadatable for i_rObject. */
-    ::boost::shared_ptr<MetadatableClipboard> CreateClipboard(
+    ::std::shared_ptr<MetadatableClipboard> CreateClipboard(
         const bool i_isInContent);
 
     struct XmlIdRegistry_Impl;
-    ::std::auto_ptr<XmlIdRegistry_Impl> m_pImpl;
+    ::std::unique_ptr<XmlIdRegistry_Impl> m_pImpl;
 };
 
 
@@ -844,12 +844,12 @@ void XmlIdRegistryDocument::RegisterCopy(Metadatable const& i_rSource,
         ::std::make_pair(path, idref)));
 }
 
-::boost::shared_ptr<MetadatableUndo>
+::std::shared_ptr<MetadatableUndo>
 XmlIdRegistryDocument::CreateUndo(Metadatable const& i_rObject)
 {
     OSL_TRACE("CreateUndo: %p\n", &i_rObject);
 
-    return ::boost::shared_ptr<MetadatableUndo>(
+    return ::std::shared_ptr<MetadatableUndo>(
                 new MetadatableUndo(i_rObject.IsInContent()) );
 }
 
@@ -907,14 +907,14 @@ struct RMapEntry
     RMapEntry() : m_pLink() { }
     RMapEntry(::rtl::OUString const& i_rStream,
             ::rtl::OUString const& i_rXmlId,
-            ::boost::shared_ptr<MetadatableClipboard> const& i_pLink
-                = ::boost::shared_ptr<MetadatableClipboard>())
+            ::std::shared_ptr<MetadatableClipboard> const& i_pLink
+                = ::std::shared_ptr<MetadatableClipboard>())
         :   m_Stream(i_rStream), m_XmlId(i_rXmlId), m_pLink(i_pLink)
         {}
     ::rtl::OUString m_Stream;
     ::rtl::OUString m_XmlId;
     // this would have been an auto_ptr, if only that would have compiled...
-    ::boost::shared_ptr<MetadatableClipboard> m_pLink;
+    ::std::shared_ptr<MetadatableClipboard> m_pLink;
 };
 
 /// element -> (stream name, idref, source)
@@ -1229,12 +1229,12 @@ void XmlIdRegistryClipboard::RemoveXmlIdForElement(const Metadatable& i_rObject)
 
 // -------------------------------------------------------------------
 
-::boost::shared_ptr<MetadatableClipboard>
+::std::shared_ptr<MetadatableClipboard>
 XmlIdRegistryClipboard::CreateClipboard(const bool i_isInContent)
 {
     OSL_TRACE("CreateClipboard: \n");
 
-    return ::boost::shared_ptr<MetadatableClipboard>(
+    return ::std::shared_ptr<MetadatableClipboard>(
         new MetadatableClipboard(i_isInContent) );
 }
 
@@ -1269,7 +1269,7 @@ XmlIdRegistryClipboard::RegisterCopyClipboard(Metadatable & i_rCopy,
         OSL_ENSURE(success, "RegisterCopyClipboard: TryInsert failed?");
         (void) success;
     }
-    const ::boost::shared_ptr<MetadatableClipboard> pLink(
+    const ::std::shared_ptr<MetadatableClipboard> pLink(
         CreateClipboard( isContentFile(i_rReference.First)) );
     m_pImpl->m_XmlIdReverseMap.insert(::std::make_pair(&i_rCopy,
         RMapEntry(i_rReference.First, i_rReference.Second, pLink)));
@@ -1488,7 +1488,7 @@ Metadatable::RegisterAsCopyOf(Metadatable const & i_rSource,
     }
 }
 
-::boost::shared_ptr<MetadatableUndo> Metadatable::CreateUndo() const
+::std::shared_ptr<MetadatableUndo> Metadatable::CreateUndo() const
 {
     OSL_ENSURE(!IsInUndo(), "CreateUndo called for object in undo?");
     OSL_ENSURE(!IsInClipboard(), "CreateUndo called for object in clipboard?");
@@ -1498,7 +1498,7 @@ Metadatable::RegisterAsCopyOf(Metadatable const & i_rSource,
         {
             XmlIdRegistryDocument * pRegDoc(
                 dynamic_cast<XmlIdRegistryDocument*>( m_pReg ) );
-            ::boost::shared_ptr<MetadatableUndo> pUndo(
+            ::std::shared_ptr<MetadatableUndo> pUndo(
                 pRegDoc->CreateUndo(*this) );
             pRegDoc->RegisterCopy(*this, *pUndo, false);
             pUndo->m_pReg = pRegDoc;
@@ -1509,18 +1509,18 @@ Metadatable::RegisterAsCopyOf(Metadatable const & i_rSource,
     {
         OSL_ENSURE(false, "Metadatable::CreateUndo: exception");
     }
-    return ::boost::shared_ptr<MetadatableUndo>();
+    return ::std::shared_ptr<MetadatableUndo>();
 }
 
-::boost::shared_ptr<MetadatableUndo> Metadatable::CreateUndoForDelete()
+::std::shared_ptr<MetadatableUndo> Metadatable::CreateUndoForDelete()
 {
-    ::boost::shared_ptr<MetadatableUndo> const pUndo( CreateUndo() );
+    ::std::shared_ptr<MetadatableUndo> const pUndo( CreateUndo() );
     RemoveMetadataReference();
     return pUndo;
 }
 
 void Metadatable::RestoreMetadata(
-    ::boost::shared_ptr<MetadatableUndo> const& i_pUndo)
+    ::std::shared_ptr<MetadatableUndo> const& i_pUndo)
 {
     OSL_ENSURE(!IsInUndo(), "RestoreMetadata called for object in undo?");
     OSL_ENSURE(!IsInClipboard(),

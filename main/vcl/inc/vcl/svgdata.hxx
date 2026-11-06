@@ -23,7 +23,7 @@
 
 #include <basegfx/range/b2drange.hxx>
 #include <boost/shared_array.hpp>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <boost/utility.hpp>
 #include <com/sun/star/graphic/XPrimitive2D.hpp>
 #include <vcl/bitmapex.hxx>
@@ -81,7 +81,7 @@ public:
 
 //////////////////////////////////////////////////////////////////////////////
 
-typedef boost::shared_ptr< SvgData > SvgDataPtr;
+typedef std::shared_ptr< SvgData > SvgDataPtr;
 
 //////////////////////////////////////////////////////////////////////////////
 

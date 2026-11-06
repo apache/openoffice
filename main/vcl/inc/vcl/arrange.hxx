@@ -28,7 +28,7 @@
 
 #include <vector>
 #include <map>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 namespace vcl
 {
@@ -50,7 +50,7 @@ namespace vcl
         struct Element
         {
             Window*                            m_pElement;
-            boost::shared_ptr<WindowArranger>  m_pChild;
+            std::shared_ptr<WindowArranger>  m_pChild;
             sal_Int32                          m_nExpandPriority;
             Size                               m_aMinSize;
             bool                               m_bHidden;
@@ -71,7 +71,7 @@ namespace vcl
             {}
 
             Element( Window* i_pWin,
-                     boost::shared_ptr<WindowArranger> const & i_pChild = boost::shared_ptr<WindowArranger>(),
+                     std::shared_ptr<WindowArranger> const & i_pChild = std::shared_ptr<WindowArranger>(),
                      sal_Int32 i_nExpandPriority = 0,
                      const Size& i_rMinSize = Size()
                    )
@@ -133,10 +133,10 @@ namespace vcl
         virtual void setParent( WindowArranger* );
 
         virtual size_t countElements() const = 0;
-        boost::shared_ptr<WindowArranger> getChild( size_t i_nIndex ) const
+        std::shared_ptr<WindowArranger> getChild( size_t i_nIndex ) const
         {
             const Element* pEle = getConstElement( i_nIndex );
-            return pEle ? pEle->m_pChild : boost::shared_ptr<WindowArranger>();
+            return pEle ? pEle->m_pChild : std::shared_ptr<WindowArranger>();
         }
         Window* getWindow( size_t i_nIndex ) const
         {
@@ -248,11 +248,11 @@ namespace vcl
         size_t addWindow( Window*, sal_Int32 i_nExpandPrio = 0, const Size& i_rMinSize = Size(), size_t i_nIndex = ~0 );
         void remove( Window* );
 
-        size_t addChild( boost::shared_ptr<WindowArranger> const &, sal_Int32 i_nExpandPrio = 0, size_t i_nIndex = ~0 );
+        size_t addChild( std::shared_ptr<WindowArranger> const &, sal_Int32 i_nExpandPrio = 0, size_t i_nIndex = ~0 );
         // convenience: use for addChild( new WindowArranger( ... ) ) constructs
         size_t addChild( WindowArranger* i_pNewChild, sal_Int32 i_nExpandPrio = 0, size_t i_nIndex = ~0 )
-        { return addChild( boost::shared_ptr<WindowArranger>( i_pNewChild ), i_nExpandPrio, i_nIndex ); }
-        void remove( boost::shared_ptr<WindowArranger> const & );
+        { return addChild( std::shared_ptr<WindowArranger>( i_pNewChild ), i_nExpandPrio, i_nIndex ); }
+        void remove( std::shared_ptr<WindowArranger> const & );
 
         long getBorderWidth() const { return m_nBorderWidth; }
     };
@@ -289,9 +289,9 @@ namespace vcl
         virtual size_t countElements() const { return 2; }
 
         void setLabel( Window* );
-        void setLabel( boost::shared_ptr<WindowArranger> const & );
+        void setLabel( std::shared_ptr<WindowArranger> const & );
         void setElement( Window* );
-        void setElement( boost::shared_ptr<WindowArranger> const & );
+        void setElement( std::shared_ptr<WindowArranger> const & );
         void setLabelColumnWidth( long i_nWidth )
         { m_nLabelColumnWidth = i_nWidth; }
 
@@ -314,7 +314,7 @@ namespace vcl
         virtual void resize();
 
         // returns the index of the added label
-        size_t addRow( Window* i_pLabel, boost::shared_ptr<WindowArranger> const& i_rElement, long i_nIndent = 0 );
+        size_t addRow( Window* i_pLabel, std::shared_ptr<WindowArranger> const& i_rElement, long i_nIndent = 0 );
         size_t addRow( Window* i_pLabel, Window* i_pElement, long i_nIndent = 0, const Size& i_rElementMinSize = Size() );
     };
 
@@ -346,10 +346,10 @@ namespace vcl
         }
 
         void setWindow( Window*, sal_Int32 i_nExpandPrio = 0 );
-        void setChild( boost::shared_ptr<WindowArranger> const &, sal_Int32 i_nExpandPrio = 0 );
+        void setChild( std::shared_ptr<WindowArranger> const &, sal_Int32 i_nExpandPrio = 0 );
         // convenience: use for setChild( new WindowArranger( ... ) ) constructs
         void setChild( WindowArranger* i_pChild, sal_Int32 i_nExpandPrio = 0 )
-        { setChild( boost::shared_ptr<WindowArranger>( i_pChild ), i_nExpandPrio ); }
+        { setChild( std::shared_ptr<WindowArranger>( i_pChild ), i_nExpandPrio ); }
     };
 
     class VCL_DLLPUBLIC Spacer : public WindowArranger
@@ -364,7 +364,7 @@ namespace vcl
     public:
         Spacer( WindowArranger* i_pParent = NULL, sal_Int32 i_nPrio = 20, const Size& i_rSize = Size( 0, 0 ) )
         : WindowArranger( i_pParent )
-        , m_aElement( NULL, boost::shared_ptr<WindowArranger>(), i_nPrio )
+        , m_aElement( NULL, std::shared_ptr<WindowArranger>(), i_nPrio )
         , m_aSize( i_rSize )
         {}
 
@@ -396,7 +396,7 @@ namespace vcl
 
             MatrixElement( Window* i_pWin,
                            sal_uInt32 i_nX, sal_uInt32 i_nY,
-                           boost::shared_ptr<WindowArranger> const & i_pChild = boost::shared_ptr<WindowArranger>(),
+                           std::shared_ptr<WindowArranger> const & i_pChild = std::shared_ptr<WindowArranger>(),
                            sal_Int32 i_nExpandPriority = 0,
                            const Size& i_rMinSize = Size()
                           )
@@ -442,11 +442,11 @@ namespace vcl
         size_t addWindow( Window*, sal_uInt32 i_nX, sal_uInt32 i_nY, sal_Int32 i_nExpandPrio = 0, const Size& i_rMinSize = Size() );
         void remove( Window* );
 
-        size_t addChild( boost::shared_ptr<WindowArranger> const &, sal_uInt32 i_nX, sal_uInt32 i_nY, sal_Int32 i_nExpandPrio = 0 );
+        size_t addChild( std::shared_ptr<WindowArranger> const &, sal_uInt32 i_nX, sal_uInt32 i_nY, sal_Int32 i_nExpandPrio = 0 );
         // convenience: use for addChild( new WindowArranger( ... ) ) constructs
         size_t addChild( WindowArranger* i_pNewChild, sal_uInt32 i_nX, sal_uInt32 i_nY, sal_Int32 i_nExpandPrio = 0 )
-        { return addChild( boost::shared_ptr<WindowArranger>( i_pNewChild ), i_nX, i_nY, i_nExpandPrio ); }
-        void remove( boost::shared_ptr<WindowArranger> const & );
+        { return addChild( std::shared_ptr<WindowArranger>( i_pNewChild ), i_nX, i_nY, i_nExpandPrio ); }
+        void remove( std::shared_ptr<WindowArranger> const & );
     };
 
 }

@@ -92,7 +92,7 @@ namespace frm
     namespace
     {
         //--------------------------------------------------------------------------
-        struct RowSetValueToString : public ::std::unary_function< ORowSetValue, ::rtl::OUString >
+        struct RowSetValueToString 
         {
             ::rtl::OUString operator()( const ORowSetValue& _value ) const
             {
@@ -101,7 +101,7 @@ namespace frm
         };
 
         //--------------------------------------------------------------------------
-        struct AppendRowSetValueString : public ::std::unary_function< ::rtl::OUString, void >
+        struct AppendRowSetValueString 
         {
             AppendRowSetValueString( ::rtl::OUString& _string )
                 :m_string( _string )
@@ -415,11 +415,11 @@ namespace frm
         const ::rtl::OUString* pEndPos   = _rPropertyNames.getConstArray() + _rPropertyNames.getLength();
         const ::rtl::OUString* pSelectedItemsPos = ::std::find_if(
             pStartPos, pEndPos,
-             ::std::bind2nd( ::std::equal_to< ::rtl::OUString >(), PROPERTY_SELECT_SEQ )
+             [PROPERTY_SELECT_SEQ](auto& _x) { return ::std::equal_to< ::rtl::OUString >()(_x, PROPERTY_SELECT_SEQ); }
         );
         const ::rtl::OUString* pStringItemListPos = ::std::find_if(
             pStartPos, pEndPos,
-             ::std::bind2nd( ::std::equal_to< ::rtl::OUString >(), PROPERTY_STRINGITEMLIST )
+             [PROPERTY_STRINGITEMLIST](auto& _x) { return ::std::equal_to< ::rtl::OUString >()(_x, PROPERTY_STRINGITEMLIST); }
         );
         if ( ( pSelectedItemsPos != pEndPos ) && ( pStringItemListPos != pEndPos ) )
         {
@@ -1234,7 +1234,7 @@ namespace frm
     namespace
     {
         //................................................................
-        struct ExtractStringFromSequence_Safe : public ::std::unary_function< sal_Int16, ::rtl::OUString >
+        struct ExtractStringFromSequence_Safe 
         {
         protected:
             const Sequence< ::rtl::OUString >&  m_rList;

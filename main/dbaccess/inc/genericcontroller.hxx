@@ -148,13 +148,10 @@ namespace dbaui
     };
 
 	// ....................................................................
-    typedef ::std::map  <   ::rtl::OUString
-                        ,   ControllerFeature
-                        ,   ::std::less< ::rtl::OUString >
-                        >   SupportedFeatures;
+   SupportedFeatures;
 
 	// ....................................................................
-	struct CompareFeatureById : ::std::binary_function< SupportedFeatures::value_type, sal_Int32, bool >
+	struct CompareFeatureById
 	{
 		// ................................................................
 		inline bool operator()( const SupportedFeatures::value_type& _aType, const sal_Int32& _nId ) const
@@ -176,30 +173,11 @@ namespace dbaui
 	typedef ::std::deque< FeatureListener > FeatureListeners;
 
 	// ....................................................................
-	struct FindFeatureListener : ::std::binary_function< FeatureListener, ::com::sun::star::uno::Reference< ::com::sun::star::frame::XStatusListener >, bool >
+	struct FindFeatureListener
 	{
 		// ................................................................
 		inline bool operator()( const FeatureListener& lhs, const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XStatusListener >& rhs ) const
-		{
-			return !!( lhs.xListener == rhs );
-		}
-	};
-
-	// ....................................................................
-	typedef ::comphelper::SharedMutexBase   OGenericUnoController_MBASE;
-
-    typedef ::cppu::WeakComponentImplHelper11   <   ::com::sun::star::frame::XDispatch
-                                                ,   ::com::sun::star::frame::XDispatchProviderInterceptor
-                                                ,   ::com::sun::star::util::XModifyListener
-                                                ,   ::com::sun::star::frame::XFrameActionListener
-                                                ,   ::com::sun::star::lang::XInitialization
-                                                ,   ::com::sun::star::lang::XServiceInfo
-                                                ,   ::com::sun::star::frame::XDispatchInformationProvider
-                                                ,   ::com::sun::star::frame::XController2
-                                                ,   ::com::sun::star::frame::XTitle
-                                                ,   ::com::sun::star::frame::XTitleChangeBroadcaster
-                                                ,   ::com::sun::star::awt::XUserInputInterception
-                                                >   OGenericUnoController_Base;
+   OGenericUnoController_Base;
 
     struct OGenericUnoController_Data;
 	// ====================================================================
@@ -213,7 +191,7 @@ namespace dbaui
         ::comphelper::NamedValueCollection
                                         m_aInitParameters;
 
-        ::std::auto_ptr< OGenericUnoController_Data >
+        ::std::unique_ptr< OGenericUnoController_Data >
                                         m_pData;
 		ODataView*				        m_pView;				// our (VCL) "main window"
 

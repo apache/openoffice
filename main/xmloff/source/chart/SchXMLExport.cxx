@@ -300,7 +300,7 @@ Reference< uno::XComponentContext > lcl_getComponentContext()
     return xContext;
 }
 
-class lcl_MatchesRole : public ::std::unary_function< Reference< chart2::data::XLabeledDataSequence >, bool >
+class lcl_MatchesRole
 {
 public:
     explicit lcl_MatchesRole( const OUString & aRole ) :
@@ -788,12 +788,11 @@ template< class T >
 typedef ::std::map< sal_Int32, SchXMLExportHelper_Impl::tLabelValuesDataPair >
     lcl_DataSequenceMap;
 
-struct lcl_SequenceToMapElement :
-    public ::std::unary_function< lcl_DataSequenceMap::mapped_type, lcl_DataSequenceMap::value_type >
+struct lcl_SequenceToMapElement 
 {
     lcl_SequenceToMapElement()
     {}
-    result_type operator() ( const argument_type & rContent )
+    lcl_DataSequenceMap::value_type operator() ( const SchXMLExportHelper_Impl::tDataSequenceCont::value_type & rContent )
     {
         sal_Int32 nIndex = -1;
         if( rContent.second.is()) //has values
@@ -803,7 +802,7 @@ struct lcl_SequenceToMapElement :
         }
         else if( rContent.first.is()) //has labels
             nIndex = rContent.first->getSourceRangeRepresentation().copy( sizeof("label ")).toInt32();
-        return result_type( nIndex, rContent );
+        return lcl_DataSequenceMap::value_type( nIndex, rContent );
     }
 };
 

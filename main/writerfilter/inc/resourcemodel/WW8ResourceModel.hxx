@@ -26,7 +26,7 @@
 
 #include <string>
 #include <memory>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <sal/types.h>
 #include <com/sun/star/drawing/XShape.hpp>
 #include <com/sun/star/uno/Any.hxx>
@@ -94,7 +94,7 @@ public:
         @attention The ownership of a reference is transferred when
         the reference is passed.
     */
-    typedef boost::shared_ptr< Reference<T> > Pointer_t;
+    typedef std::shared_ptr< Reference<T> > Pointer_t;
 
     virtual ~Reference() {}
 
@@ -147,7 +147,7 @@ public:
 class WRITERFILTER_DLLPUBLIC Table
 {
 public:
-    typedef boost::shared_ptr<Table> Pointer_t;
+    typedef std::shared_ptr<Table> Pointer_t;
     /**
        Receives an entry of the table.
 
@@ -187,7 +187,7 @@ public:
     /**
        Pointer to this stream.
      */
-    typedef boost::shared_ptr<Stream> Pointer_t;
+    typedef std::shared_ptr<Stream> Pointer_t;
 
     /**
        Receives start mark for group with the same section properties.
@@ -293,7 +293,7 @@ public:
     /**
        Pointer to a value.
      */
-    typedef auto_ptr<Value> Pointer_t;
+    typedef ::std::unique_ptr< Value > Pointer_t;
 
     /**
        Returns integer representation of the value.
@@ -340,7 +340,7 @@ public:
 class WRITERFILTER_DLLPUBLIC Sprm
 {
 public:
-    typedef auto_ptr<Sprm> Pointer_t;
+    typedef ::std::unique_ptr< Sprm > Pointer_t;
     enum Kind { UNKNOWN, CHARACTER, PARAGRAPH, TABLE };
     /**
        Returns id of the SPRM.

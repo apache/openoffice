@@ -24,7 +24,7 @@
 #ifndef INCLUDED_SLIDESHOW_HYPERLINKHANDLER_HXX
 #define INCLUDED_SLIDESHOW_HYPERLINKHANDLER_HXX
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 
 /* Definition of EventHandler interface */
@@ -56,7 +56,7 @@ namespace slideshow
             virtual bool handleHyperlink( ::rtl::OUString const& rLink ) = 0;
         };
 
-        typedef ::boost::shared_ptr< HyperlinkHandler > HyperlinkHandlerSharedPtr;
+        typedef ::std::shared_ptr< HyperlinkHandler > HyperlinkHandlerSharedPtr;
 
     }
 }

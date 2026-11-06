@@ -34,7 +34,7 @@
 #include <com/sun/star/chart2/XChartDocument.hpp>
 #include <com/sun/star/uno/XComponentContext.hpp>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 namespace chart
 {
@@ -53,8 +53,8 @@ class ChartDataWrapper : public MutexContainer, public
 	com::sun::star::lang::XComponent >
 {
 public:
-    ChartDataWrapper( ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact );
-    ChartDataWrapper( ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact
+    ChartDataWrapper( ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact );
+    ChartDataWrapper( ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact
         , const ::com::sun::star::uno::Reference< ::com::sun::star::chart::XChartData >& xNewData );
 	virtual ~ChartDataWrapper();
 
@@ -136,7 +136,7 @@ private: //member
     ::com::sun::star::uno::Reference<
         ::com::sun::star::chart2::XAnyDescriptionAccess > m_xDataAccess;
 
-    ::boost::shared_ptr< Chart2ModelContact >   m_spChart2ModelContact;
+    ::std::shared_ptr< Chart2ModelContact >   m_spChart2ModelContact;
 	::cppu::OInterfaceContainerHelper           m_aEventListenerContainer;
 };
 

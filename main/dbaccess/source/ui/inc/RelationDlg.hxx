@@ -60,7 +60,7 @@ namespace dbaui
 							,public IRelationControlInterface
 	{
         OModuleClient                           m_aModuleClient;
-        ::std::auto_ptr<OTableListBoxControl>	m_pTableControl;
+        ::std::unique_ptr<OTableListBoxControl>	m_pTableControl;
 		OJoinTableView::OTableWindowMap*	    m_pTableMap;
 
         FixedLine   aFL_CascUpd;

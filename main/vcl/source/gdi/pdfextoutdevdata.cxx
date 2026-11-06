@@ -32,7 +32,7 @@
 #include "basegfx/polygon/b2dpolygontools.hxx"
 
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <set>
 #include <map>
 
@@ -303,7 +303,7 @@ struct PageSyncData
 	std::deque< PDFWriter::StructAttribute >		mParaStructAttributes;
 	std::deque< PDFWriter::StructAttributeValue >	mParaStructAttributeValues;
 	std::deque< Graphic >							mGraphics;
-    std::deque< ::boost::shared_ptr< PDFWriter::AnyWidget > >
+    std::deque< ::std::shared_ptr< PDFWriter::AnyWidget > >
                                                     mControls;
     GlobalSyncData*									mpGlobalData;
 
@@ -390,7 +390,7 @@ sal_Bool PageSyncData::PlaySyncPageAct( PDFWriter& rWriter, sal_uInt32& rCurGDIM
 			break;
             case PDFExtOutDevDataSync::CreateControl:
             {
-                ::boost::shared_ptr< PDFWriter::AnyWidget > pControl( mControls.front() );
+                ::std::shared_ptr< PDFWriter::AnyWidget > pControl( mControls.front() );
                 DBG_ASSERT( pControl.get(), "PageSyncData::PlaySyncPageAct: invalid widget!" );
                 if ( pControl.get() )
                     rWriter.CreateControl( *pControl );
@@ -822,7 +822,7 @@ void PDFExtOutDevData::CreateControl( const PDFWriter::AnyWidget& rControlType, 
 {
 	mpPageSyncData->PushAction( mrOutDev, PDFExtOutDevDataSync::CreateControl );
 
-    ::boost::shared_ptr< PDFWriter::AnyWidget > pClone( rControlType.Clone() );
+    ::std::shared_ptr< PDFWriter::AnyWidget > pClone( rControlType.Clone() );
     mpPageSyncData->mControls.push_back( pClone );
 }
 

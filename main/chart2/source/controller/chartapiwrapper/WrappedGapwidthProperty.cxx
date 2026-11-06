@@ -22,6 +22,7 @@
 
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
+#include <memory>
 #include "precompiled_chartcontroller.hxx"
 
 #include "WrappedGapwidthProperty.hxx"
@@ -52,7 +53,7 @@ WrappedBarPositionProperty_Base::WrappedBarPositionProperty_Base(
                   const ::rtl::OUString& rOuterName
                 , const ::rtl::OUString& rInnerSequencePropertyName
                 , sal_Int32 nDefaultValue
-                , ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact )
+                , ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact )
             : WrappedDefaultProperty( rOuterName, rtl::OUString(), uno::makeAny( nDefaultValue ) )
             , m_nDimensionIndex(0)
             , m_nAxisIndex(0)
@@ -169,7 +170,7 @@ Any WrappedBarPositionProperty_Base::getPropertyValue( const Reference< beans::X
 //-----------------------------------------------------------------------------
 
 WrappedGapwidthProperty::WrappedGapwidthProperty(
-        ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact )
+        ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact )
     : WrappedBarPositionProperty_Base( C2U("GapWidth"), C2U("GapwidthSequence"), DEFAULT_GAPWIDTH, spChart2ModelContact )
 {
 }
@@ -182,7 +183,7 @@ WrappedGapwidthProperty::~WrappedGapwidthProperty()
 //-----------------------------------------------------------------------------
 
 WrappedBarOverlapProperty::WrappedBarOverlapProperty(
-        ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact )
+        ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact )
     : WrappedBarPositionProperty_Base( C2U("Overlap"), C2U("OverlapSequence"), DEFAULT_OVERLAP, spChart2ModelContact )
 {
 }

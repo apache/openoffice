@@ -33,6 +33,7 @@
 #include <com/sun/star/container/XHierarchicalNameAccess.hpp>
 #ifndef _COM_SUN_STAR_CONTAINER_PROPERTYVALUE_HPP_
 #include <com/sun/star/beans/PropertyValue.hpp>
+#include <memory>
 #endif
 
 using namespace ::com::sun::star;
@@ -40,20 +41,20 @@ using namespace ::com::sun::star::uno;
 
 namespace sd { namespace slidesorter { namespace cache {
 
-::boost::shared_ptr<CacheConfiguration> CacheConfiguration::mpInstance;
-::boost::weak_ptr<CacheConfiguration> CacheConfiguration::mpWeakInstance;
+::std::shared_ptr<CacheConfiguration> CacheConfiguration::mpInstance;
+::std::weak_ptr<CacheConfiguration> CacheConfiguration::mpWeakInstance;
 Timer CacheConfiguration::maReleaseTimer;
 
 
 
-::boost::shared_ptr<CacheConfiguration> CacheConfiguration::Instance (void)
+::std::shared_ptr<CacheConfiguration> CacheConfiguration::Instance (void)
 {
     ::vos::OGuard aSolarGuard (Application::GetSolarMutex());
     if (mpInstance.get() == NULL)
     {
         // Maybe somebody else kept a previously created instance alive.
         if ( ! mpWeakInstance.expired())
-            mpInstance = ::boost::shared_ptr<CacheConfiguration>(mpWeakInstance);
+            mpInstance = ::std::shared_ptr<CacheConfiguration>(mpWeakInstance);
         if (mpInstance.get() == NULL)
         {
             // We have to create a new instance.

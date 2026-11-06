@@ -25,7 +25,7 @@
 
 #include <WriterFilterDllApi.hxx>
 #include <resourcemodel/LoggedResources.hxx>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 //#include <com/sun/star/table/TableBorder.hpp>
 #include <com/sun/star/table/BorderLine.hpp>
 
@@ -51,11 +51,11 @@ public:
     CellColorHandler( );
     virtual ~CellColorHandler();
 
-    ::boost::shared_ptr<TablePropertyMap>            getProperties();
+    ::std::shared_ptr<TablePropertyMap>            getProperties();
 
     void setType(Type type) { m_eType = type; }
 };
-typedef boost::shared_ptr< CellColorHandler >          CellColorHandlerPtr;
+typedef std::shared_ptr< CellColorHandler >          CellColorHandlerPtr;
 }}
 
 #endif //

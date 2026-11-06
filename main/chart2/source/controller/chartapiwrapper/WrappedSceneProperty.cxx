@@ -22,6 +22,7 @@
 
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
+#include <memory>
 #include "precompiled_chartcontroller.hxx"
 
 #include "WrappedSceneProperty.hxx"
@@ -43,7 +44,7 @@ namespace wrapper
 {
 
 void WrappedSceneProperty::addWrappedProperties( std::vector< WrappedProperty* >& rList
-                , ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact )
+                , ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact )
 {
     rList.push_back( new WrappedD3DTransformMatrixProperty( spChart2ModelContact ) );
 }
@@ -53,7 +54,7 @@ void WrappedSceneProperty::addWrappedProperties( std::vector< WrappedProperty* >
 //----------------------------------------------------------------------------------------------------------------------
 
 WrappedD3DTransformMatrixProperty::WrappedD3DTransformMatrixProperty(
-            ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact )
+            ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact )
             : WrappedProperty(C2U("D3DTransformMatrix"),C2U("D3DTransformMatrix"))
             , m_spChart2ModelContact( spChart2ModelContact )
 {

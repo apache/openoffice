@@ -39,6 +39,7 @@
 
 #include <boost/optional.hpp>
 #include <vector>
+#include <memory>
 
 // space around an item
 #define ITEM_OUTER_SPACE        2 * 3
@@ -98,7 +99,7 @@ namespace svt
         // target device, done in a normalized geometry, with operations on the window, done in a transformed geometry.
         // So, we should get rid of postRenderItem completely.
     };
-    typedef ::boost::shared_ptr< ITabBarRenderer >  PTabBarRenderer;
+    typedef ::std::shared_ptr< ITabBarRenderer >  PTabBarRenderer;
 
 	//==================================================================================================================
 	//= VCLItemRenderer - declaration

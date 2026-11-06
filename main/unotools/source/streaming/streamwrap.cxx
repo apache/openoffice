@@ -154,6 +154,18 @@ void SAL_CALL OInputStreamWrapper::closeInput()
 }
 
 //------------------------------------------------------------------------------
+void SAL_CALL OInputStreamWrapper::acquire() throw ()
+{
+	InputStreamWrapper_Base::acquire();
+}
+
+//------------------------------------------------------------------------------
+void SAL_CALL OInputStreamWrapper::release() throw ()
+{
+	InputStreamWrapper_Base::release();
+}
+
+//------------------------------------------------------------------------------
 void OInputStreamWrapper::checkConnected() const
 {
 	if (!m_pSvStream)
@@ -222,6 +234,18 @@ sal_Int64 SAL_CALL OSeekableInputStreamWrapper::getLength(  )
 	checkError();
 
 	return (sal_Int64)nEndPos;
+}
+
+//------------------------------------------------------------------------------
+void SAL_CALL OSeekableInputStreamWrapper::acquire() throw ()
+{
+	InputStreamWrapper_Base::acquire();
+}
+
+//------------------------------------------------------------------------------
+void SAL_CALL OSeekableInputStreamWrapper::release() throw ()
+{
+	InputStreamWrapper_Base::release();
 }
 
 //==================================================================

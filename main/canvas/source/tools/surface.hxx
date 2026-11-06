@@ -33,6 +33,7 @@
 #include <canvas/rendering/irendermodule.hxx>
 #include <canvas/rendering/icolorbuffer.hxx>
 #include <canvas/rendering/isurface.hxx>
+#include <memory>
 
 #include "surfacerect.hxx"
 #include "pagemanager.hxx"
@@ -152,7 +153,7 @@ namespace canvas
                                            const ::basegfx::B2ISize&  rSize ) const;
 	};
 
-	typedef ::boost::shared_ptr< Surface > SurfaceSharedPtr;
+	typedef ::std::shared_ptr< Surface > SurfaceSharedPtr;
 }
 
 #endif

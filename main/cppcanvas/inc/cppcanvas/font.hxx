@@ -26,7 +26,7 @@
 
 #include <com/sun/star/uno/Reference.hxx>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 namespace rtl
 {
@@ -55,7 +55,7 @@ namespace cppcanvas
             ::com::sun::star::rendering::XCanvasFont > getUNOFont() const = 0;
     };
 
-    typedef ::boost::shared_ptr< ::cppcanvas::Font > FontSharedPtr;
+    typedef ::std::shared_ptr< ::cppcanvas::Font > FontSharedPtr;
 }
 
 #endif /* _CPPCANVAS_FONT_HXX */

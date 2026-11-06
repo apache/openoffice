@@ -124,7 +124,7 @@ protected:
     virtual void        onEndElement();
 
 private:
-    typedef ::std::auto_ptr< ShapeAnchor > ShapeAnchorRef;
+    typedef ::std::unique_ptr< ShapeAnchor > ShapeAnchorRef;
 
     ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShapes >
                         mxDrawPage;             /// Drawing page of this sheet.

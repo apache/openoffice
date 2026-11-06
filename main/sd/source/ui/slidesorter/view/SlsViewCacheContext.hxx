@@ -24,6 +24,7 @@
 #ifndef SD_SLIDESORTER_VIEW_VIEW_CACHE_CONTEXT_HXX
 #define SD_SLIDESORTER_VIEW_VIEW_CACHE_CONTEXT_HXX
 
+#include <memory>
 #include "cache/SlsCacheContext.hxx"
 #include "model/SlsSharedPageDescriptor.hxx"
 
@@ -49,7 +50,7 @@ public:
 	virtual bool IsIdle (void);
 	virtual bool IsVisible (cache::CacheKey aKey);
 	virtual const SdrPage* GetPage (cache::CacheKey aKey);
-	virtual ::boost::shared_ptr<std::vector<cache::CacheKey> > GetEntryList (bool bVisible);
+	virtual ::std::shared_ptr<std::vector<cache::CacheKey> > GetEntryList (bool bVisible);
 	virtual sal_Int32 GetPriority (cache::CacheKey aKey);
 	virtual ::com::sun::star::uno::Reference<com::sun::star::uno::XInterface> GetModel (void);
 

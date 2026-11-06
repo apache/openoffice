@@ -30,6 +30,7 @@
 #include <xmloff/xmlimp.hxx>
 #include <xmloff/nmspmap.hxx>
 #include <xmloff/xmltoken.hxx>
+#include <memory>
 
 #include "sdxmlexp_impl.hxx"
 #include "sdxmlimp_impl.hxx"
@@ -502,7 +503,7 @@ private:
 	sal_Bool mbTextual;
 	sal_Bool mbDecimal02;
 	OUString maText;
-	boost::shared_ptr< SvXMLImportContext > mpSlaveContext;
+	std::shared_ptr< SvXMLImportContext > mpSlaveContext;
 
 public:
 	TYPEINFO();

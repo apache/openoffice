@@ -31,7 +31,7 @@
 
 #include <vector>
 #include <memory>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 namespace com { namespace sun { namespace star {
     namespace chart2 {
@@ -158,12 +158,12 @@ public:
 private:
     ::com::sun::star::uno::Reference<
             ::com::sun::star::chart2::XChartDocument > m_xChartDoc;
-    ::std::auto_ptr< DataBrowserModel > m_apDataBrowserModel;
+    ::std::unique_ptr< DataBrowserModel > m_apDataBrowserModel;
 
-    typedef ::std::vector< ::boost::shared_ptr< impl::SeriesHeader > > tSeriesHeaderContainer;
+    typedef ::std::vector< ::std::shared_ptr< impl::SeriesHeader > > tSeriesHeaderContainer;
     tSeriesHeaderContainer m_aSeriesHeaders;
 
-    ::boost::shared_ptr< NumberFormatterWrapper >  m_spNumberFormatterWrapper;
+    ::std::shared_ptr< NumberFormatterWrapper >  m_spNumberFormatterWrapper;
 
     /// the row that is currently painted
     long                m_nSeekRow;

@@ -193,7 +193,7 @@ namespace dbaui
 		// check if the point hit our line
 		::std::vector<OConnectionLine*>::const_iterator aIter = ::std::find_if(m_vConnLine.begin(),
 																		 m_vConnLine.end(),
-																		 ::std::bind2nd(TConnectionLineCheckHitFunctor(),rMousePos));
+																		 [rMousePos](auto& _x) { return TConnectionLineCheckHitFunctor()(_x, rMousePos); });
 		return aIter != m_vConnLine.end();
 	}
 

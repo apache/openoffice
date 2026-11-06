@@ -28,7 +28,7 @@
 #include <resourcemodel/WW8ResourceModel.hxx>
 #include <doctok/sprmids.hxx>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <stack>
 #include "util.hxx"
 #include "TagLogger.hxx"
@@ -45,7 +45,7 @@ template <typename T, typename PropertiesPointer>
 class WRITERFILTER_DLLPUBLIC TableDataHandler
 {
 public:
-    typedef boost::shared_ptr<TableDataHandler> Pointer_t;
+    typedef std::shared_ptr<TableDataHandler> Pointer_t;
 
     /**
        Handle start of table.
@@ -400,7 +400,7 @@ protected:
     }
 
 private:
-    typedef boost::shared_ptr<T> T_p;
+    typedef std::shared_ptr<T> T_p;
 
     /**
        depth of the current cell

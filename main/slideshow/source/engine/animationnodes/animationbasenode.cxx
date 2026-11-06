@@ -43,6 +43,7 @@
 #include <boost/bind.hpp>
 #include <boost/optional.hpp>
 #include <algorithm>
+#include <memory>
 
 using namespace com::sun::star;
 
@@ -401,7 +402,7 @@ AnimationBaseNode::fillCommonParameters() const
 
     // Search parent nodes for an explicitly stated repeat count.
     BaseNodeSharedPtr const pSelf( getSelf() );
-    for ( boost::shared_ptr<BaseNode> pNode( pSelf );
+    for ( std::shared_ptr<BaseNode> pNode( pSelf );
           pNode;
           pNode = pNode->getParentNode() )
     {
@@ -462,7 +463,7 @@ AnimationBaseNode::fillCommonParameters() const
     // calc accel/decel:
     double nAcceleration = 0.0;
     double nDeceleration = 0.0;
-    for ( boost::shared_ptr<BaseNode> pNode( pSelf );
+    for ( std::shared_ptr<BaseNode> pNode( pSelf );
           pNode; pNode = pNode->getParentNode() )
     {
         uno::Reference<animations::XAnimationNode> const xAnimationNode(

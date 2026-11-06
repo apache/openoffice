@@ -51,6 +51,7 @@
 #include <com/sun/star/lang/DisposedException.hpp>
 #include <comphelper/processfactory.hxx>
 #include <tools/diagnose_ex.h>
+#include <memory>
 
 using namespace ::com::sun::star;
 using namespace ::com::sun::star::uno;
@@ -206,7 +207,7 @@ void ViewTabBar::disposing (void)
 
 
 
-::boost::shared_ptr< ::TabControl> ViewTabBar::GetTabControl (void) const
+::std::shared_ptr< ::TabControl> ViewTabBar::GetTabControl (void) const
 {
     return mpTabControl;
 }

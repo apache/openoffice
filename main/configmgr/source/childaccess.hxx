@@ -137,7 +137,7 @@ private:
     rtl::Reference< Access > parent_; // null iff free node
     rtl::OUString name_;
     rtl::Reference< Node > node_;
-    std::auto_ptr< com::sun::star::uno::Any > changedValue_;
+    std::unique_ptr< com::sun::star::uno::Any > changedValue_;
     bool inTransaction_;
         // to determine if a free node can be inserted underneath some root
 };

@@ -45,7 +45,7 @@
 #include <com/sun/star/io/XSeekable.hpp>
 
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 using namespace com::sun::star;
 
@@ -237,7 +237,7 @@ bool PDFIRawAdaptor::parse( const uno::Reference<io::XInputStream>&       xInput
                             const rtl::OUString&                          rURL )
 {
     // container for metaformat
-    boost::shared_ptr<PDFIProcessor> pSink(
+    std::shared_ptr<PDFIProcessor> pSink(
         new PDFIProcessor(xStatus, m_xContext));
 
     // TEMP! TEMP!

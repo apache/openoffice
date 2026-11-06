@@ -51,7 +51,7 @@ namespace comphelper
     class COMPHELPER_DLLPUBLIC NamedValueCollection
     {
     private:
-        ::std::auto_ptr< NamedValueCollection_Impl >    m_pImpl;
+        ::std::unique_ptr< NamedValueCollection_Impl >    m_pImpl;
 
     public:
         NamedValueCollection();

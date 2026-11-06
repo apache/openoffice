@@ -24,7 +24,7 @@
 #ifndef RPTUI_MARKEDSECTION_HXX
 #define RPTUI_MARKEDSECTION_HXX
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 namespace rptui
 {
@@ -42,7 +42,7 @@ namespace rptui
     public:
         /** returns the section which is currently marked.
 		*/
-        virtual ::boost::shared_ptr<OSectionWindow> getMarkedSection(NearSectionAccess nsa) const =0;
+        virtual ::std::shared_ptr<OSectionWindow> getMarkedSection(NearSectionAccess nsa) const =0;
 
         /** mark the section on the given position .
         *

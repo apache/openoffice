@@ -58,6 +58,7 @@
 #include <boost/function.hpp>
 #include <boost/enable_shared_from_this.hpp>
 #include <map>
+#include <memory>
 
 using namespace ::com::sun::star;
 using namespace ::com::sun::star::uno;
@@ -114,10 +115,10 @@ namespace {
         void ReadElementMode (
             const Reference<beans::XPropertySet>& rxProperties,
             const ::rtl::OUString& rsModeName,
-            ::boost::shared_ptr<ElementMode>& rpDefaultMode,
+            ::std::shared_ptr<ElementMode>& rpDefaultMode,
             ::sdext::presenter::PresenterToolBar::Context& rContext);
     };
-    typedef ::boost::shared_ptr<ElementMode> SharedElementMode;
+    typedef ::std::shared_ptr<ElementMode> SharedElementMode;
 
 }  // end of anonymous namespace
 
@@ -321,7 +322,7 @@ namespace {
         private:
             ::rtl::Reference<TimeLabel> mxLabel;
         };
-        ::boost::shared_ptr<PresenterClockTimer::Listener> mpListener;
+        ::std::shared_ptr<PresenterClockTimer::Listener> mpListener;
     };
 
     class CurrentTimeLabel : public TimeLabel
@@ -1590,7 +1591,7 @@ ElementMode::ElementMode (void)
 void ElementMode::ReadElementMode (
     const Reference<beans::XPropertySet>& rxElementProperties,
     const OUString& rsModeName,
-    ::boost::shared_ptr<ElementMode>& rpDefaultMode,
+    ::std::shared_ptr<ElementMode>& rpDefaultMode,
     ::sdext::presenter::PresenterToolBar::Context& rContext)
 {
     try

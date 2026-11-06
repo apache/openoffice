@@ -87,7 +87,7 @@
 #include <connectivity/sqlerror.hxx>
 #endif
 #ifndef BOOST_SHARED_PTR_HPP_INCLUDED
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #endif
 
 namespace dbaccess
@@ -121,7 +121,7 @@ namespace dbaccess
 		ODatabaseModelImpl*	m_pDataSource; // this will stay alive as long as the content exists
 	};
 
-	typedef ::boost::shared_ptr<OContentHelper_Impl> TContentPtr;
+	typedef ::std::shared_ptr<OContentHelper_Impl> TContentPtr;
 
 
 	typedef ::cppu::OMultiTypeInterfaceContainerHelperVar<	::rtl::OUString,

@@ -24,7 +24,7 @@
 #ifndef INCLUDED_SLIDESHOW_LAYERMANAGER_HXX
 #define INCLUDED_SLIDESHOW_LAYERMANAGER_HXX
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <boost/noncopyable.hpp>
 
 #include <cppcanvas/spritecanvas.hxx>
@@ -374,7 +374,7 @@ namespace slideshow
             bool                     mbDisableAnimationZOrder;
         };
 
-        typedef ::boost::shared_ptr< LayerManager > LayerManagerSharedPtr;
+        typedef ::std::shared_ptr< LayerManager > LayerManagerSharedPtr;
     }
 }
 

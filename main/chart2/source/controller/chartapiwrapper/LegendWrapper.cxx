@@ -49,6 +49,7 @@
 
 #include <algorithm>
 #include <rtl/ustrbuf.hxx>
+#include <memory>
 
 using namespace ::com::sun::star;
 using ::com::sun::star::beans::Property;
@@ -288,7 +289,7 @@ namespace chart
 namespace wrapper
 {
 
-LegendWrapper::LegendWrapper( ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact ) :
+LegendWrapper::LegendWrapper( ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact ) :
         m_spChart2ModelContact( spChart2ModelContact ),
         m_aEventListenerContainer( m_aMutex )
 {

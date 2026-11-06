@@ -545,7 +545,7 @@ void lcl_CpyBox( const SwTable& rCpyTbl, const SwTableBox* pCpyBox,
 
 	// kopiere erst den neuen und loeschen dann den alten Inhalt
 	// (keine leeren Section erzeugen; werden sonst geloescht!)
-    std::auto_ptr< SwNodeRange > pRg( pCpyBox ?
+    std::unique_ptr< SwNodeRange > pRg( pCpyBox ?
         new SwNodeRange ( *pCpyBox->GetSttNd(), 1,
         *pCpyBox->GetSttNd()->EndOfSectionNode() ) : 0 );
 

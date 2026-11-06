@@ -37,7 +37,7 @@
 #include <uno/lbnames.h>			// CPPU_CURRENT_LANGUAGE_BINDING_NAME macro, which specify the environment type
 #include <cppuhelper/implbase1.hxx>	// helper for implementations
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <map>
 
 #include "lngopt.hxx"
@@ -55,7 +55,7 @@ class HyphenatorDispatcher :
 	>,
 	public LinguDispatcher
 {
-    typedef boost::shared_ptr< LangSvcEntries_Hyph >                LangSvcEntries_Hyph_Ptr_t;
+    typedef std::shared_ptr< LangSvcEntries_Hyph >                LangSvcEntries_Hyph_Ptr_t;
     typedef std::map< LanguageType, LangSvcEntries_Hyph_Ptr_t >     HyphSvcByLangMap_t;
     HyphSvcByLangMap_t      aSvcMap;
 

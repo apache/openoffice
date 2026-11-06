@@ -29,6 +29,7 @@
 #include "Window.hxx"
 #include <rtl/math.hxx>
 #include <basegfx/numeric/ftools.hxx>
+#include <memory>
 
 namespace {
 	sal_Int32 RoundToInt (const double nValue)
@@ -71,8 +72,8 @@ public:
 	/// rows.
 	sal_Int32 mnMaxRowCount;
 	Size maPageObjectSize;
-	::boost::shared_ptr<PageObjectLayouter> mpPageObjectLayouter;
-	::boost::shared_ptr<view::Theme> mpTheme;
+	::std::shared_ptr<PageObjectLayouter> mpPageObjectLayouter;
+	::std::shared_ptr<view::Theme> mpTheme;
 
 	/** Specify how the gap between two page objects is associated with the
 		page objects.
@@ -215,7 +216,7 @@ public:
 protected:
 	Implementation (
 		const SharedSdWindow& rpWindow,
-		const ::boost::shared_ptr<view::Theme>& rpTheme);
+		const ::std::shared_ptr<view::Theme>& rpTheme);
 	Implementation (const Implementation& rImplementation);
 
 	virtual void CalculateRowAndColumnCount (const Size& rWindowSize) = 0;
@@ -242,7 +243,7 @@ class VerticalImplementation : public Layouter::Implementation
 public:
 	VerticalImplementation (
 		const SharedSdWindow& rpWindow,
-		const ::boost::shared_ptr<view::Theme>& rpTheme);
+		const ::std::shared_ptr<view::Theme>& rpTheme);
 	VerticalImplementation (const Implementation& rImplementation);
 
 	virtual Layouter::Orientation GetOrientation (void) const;
@@ -268,7 +269,7 @@ class HorizontalImplementation : public Layouter::Implementation
 public:
 	HorizontalImplementation (
 		const SharedSdWindow& rpWindow,
-		const ::boost::shared_ptr<view::Theme>& rpTheme);
+		const ::std::shared_ptr<view::Theme>& rpTheme);
 	HorizontalImplementation (const Implementation& rImplementation);
 
 	virtual Layouter::Orientation GetOrientation (void) const;
@@ -295,7 +296,7 @@ class GridImplementation : public Layouter::Implementation
 public:
 	GridImplementation (
 		const SharedSdWindow& rpWindow,
-		const ::boost::shared_ptr<view::Theme>& rpTheme);
+		const ::std::shared_ptr<view::Theme>& rpTheme);
 	GridImplementation (const Implementation& rImplementation);
 
 	virtual Layouter::Orientation GetOrientation (void) const;
@@ -319,7 +320,7 @@ protected:
 
 Layouter::Layouter (
 	const SharedSdWindow& rpWindow,
-	const ::boost::shared_ptr<Theme>& rpTheme)
+	const ::std::shared_ptr<Theme>& rpTheme)
 	: mpImplementation(new GridImplementation(rpWindow, rpTheme)),
 	  mpWindow(rpWindow)
 {
@@ -335,7 +336,7 @@ Layouter::~Layouter (void)
 
 
 
-::boost::shared_ptr<PageObjectLayouter> Layouter::GetPageObjectLayouter (void) const
+::std::shared_ptr<PageObjectLayouter> Layouter::GetPageObjectLayouter (void) const
 {
 	return mpImplementation->mpPageObjectLayouter;
 }
@@ -566,7 +567,7 @@ Layouter::Implementation* Layouter::Implementation::Create (
 
 Layouter::Implementation::Implementation (
 	const SharedSdWindow& rpWindow,
-	const ::boost::shared_ptr<view::Theme>& rpTheme)
+	const ::std::shared_ptr<view::Theme>& rpTheme)
 	: mpWindow(rpWindow),
 	  mnRequestedLeftBorder(5),
 	  mnRequestedRightBorder(5),
@@ -1201,7 +1202,7 @@ void Layouter::Implementation::CalculateVerticalLogicalInsertPosition (
 
 HorizontalImplementation::HorizontalImplementation (
 	const SharedSdWindow& rpWindow,
-	const ::boost::shared_ptr<view::Theme>& rpTheme)
+	const ::std::shared_ptr<view::Theme>& rpTheme)
 	: Implementation(rpWindow, rpTheme)
 {
 }
@@ -1280,7 +1281,7 @@ void HorizontalImplementation::CalculateLogicalInsertPosition (
 
 VerticalImplementation::VerticalImplementation (
 	const SharedSdWindow& rpWindow,
-	const ::boost::shared_ptr<view::Theme>& rpTheme)
+	const ::std::shared_ptr<view::Theme>& rpTheme)
 	: Implementation(rpWindow, rpTheme)
 {
 }
@@ -1351,7 +1352,7 @@ void VerticalImplementation::CalculateLogicalInsertPosition (
 
 GridImplementation::GridImplementation (
 	const SharedSdWindow& rpWindow,
-	const ::boost::shared_ptr<view::Theme>& rpTheme)
+	const ::std::shared_ptr<view::Theme>& rpTheme)
 	: Implementation(rpWindow, rpTheme)
 {
 }

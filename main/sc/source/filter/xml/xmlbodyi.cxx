@@ -317,7 +317,7 @@ void ScXMLBodyContext::EndElement()
         // #i37959# handle document protection after the sheet settings
 		if (bProtected)
 		{
-            ::std::auto_ptr<ScDocProtection> pProtection(new ScDocProtection);
+            ::std::unique_ptr<ScDocProtection> pProtection(new ScDocProtection);
             pProtection->setProtected(true);
 
 			uno::Sequence<sal_Int8> aPass;

@@ -69,7 +69,7 @@ namespace sfx2
         bool    handleNotifyEvent( const NotifyEvent& _rEvent );
 
     private:
-        ::std::auto_ptr< UserInputInterception_Data >   m_pData;
+        ::std::unique_ptr< UserInputInterception_Data >   m_pData;
 	};
 
 //........................................................................

@@ -372,7 +372,7 @@ void SvtFilePicker::notify( sal_Int16 _nEventId, sal_Int16 _nControlId )
 //------------------------------------------------------------------------------------
 namespace {
 	//................................................................................
-	struct FilterTitleMatch : public ::std::unary_function< FilterEntry, bool >
+	struct FilterTitleMatch 
 	{
 	protected:
 		const ::rtl::OUString& rTitle;

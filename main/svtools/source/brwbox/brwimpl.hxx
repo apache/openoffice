@@ -38,7 +38,7 @@ namespace svt
         typedef ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible >    AccessibleRef;
 		typedef ::std::map< sal_Int32, AccessibleRef >                                              THeaderCellMap;
 
-        struct  THeaderCellMapFunctorDispose : ::std::unary_function<THeaderCellMap::value_type,void>
+        struct  THeaderCellMapFunctorDispose
 		{
 			inline void operator()(const THeaderCellMap::value_type& _aType)
 			{

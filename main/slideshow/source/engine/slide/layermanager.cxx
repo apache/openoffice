@@ -34,6 +34,7 @@
 
 #include <boost/bind.hpp>
 #include <algorithm>
+#include <memory>
 
 #include "layermanager.hxx"
 
@@ -45,7 +46,7 @@ namespace boost
     inline bool operator!=( slideshow::internal::LayerWeakPtr const& rLHS,
                             slideshow::internal::LayerWeakPtr const& rRHS )
     {
-        return (rLHS<rRHS) || (rRHS<rLHS);
+        return rLHS.owner_before(rRHS) || rRHS.owner_before(rLHS);
     }
 }
 
@@ -620,7 +621,7 @@ namespace slideshow
                 {
                 }
 
-                virtual bool isOnView(boost::shared_ptr<View> const& /*rView*/) const
+                virtual bool isOnView(std::shared_ptr<View> const& /*rView*/) const
                 {
                     return true; // visible on all views
                 }
@@ -844,7 +845,8 @@ namespace slideshow
                     bIsBackgroundLayer = false;
 
                     if( aWeakLayers.size() <= nCurrLayerIndex ||
-                        aWeakLayers.at(nCurrLayerIndex) != aCurrShapeEntry->second )
+                        aWeakLayers.at(nCurrLayerIndex).owner_before( aCurrShapeEntry->second ) ||
+                        aCurrShapeEntry->second.owner_before( aWeakLayers.at(nCurrLayerIndex) ) )
                     {
                         // no more layers left, or shape was not
                         // member of this layer - create a new one
@@ -861,7 +863,7 @@ namespace slideshow
                 // above invalidates iterators
                 LayerSharedPtr& rCurrLayer( maLayers.at(nCurrLayerIndex) );
                 LayerWeakPtr& rCurrWeakLayer( aWeakLayers.at(nCurrLayerIndex) );
-                if( rCurrWeakLayer != aCurrShapeEntry->second )
+                if( rCurrWeakLayer.owner_before( aCurrShapeEntry->second ) || aCurrShapeEntry->second.owner_before( rCurrWeakLayer ) )
                 {
                     // mismatch: shape is not contained in current
                     // layer - move shape to that layer, then.

@@ -104,6 +104,7 @@
 #include <ndole.hxx>
 
 #include <cstdio>
+#include <memory>
 
 using namespace ::com::sun::star;
 using namespace ::com::sun::star::i18n;
@@ -234,8 +235,7 @@ public:
     const SwFmtDrop& GetSwFmtDrop() const { return mrSwFmtDrop; }
 };
 
-class sortswflys :
-    public std::binary_function<const sw::Frame&, const sw::Frame&, bool>
+class sortswflys 
 {
 public:
     bool operator()(const sw::Frame &rOne, const sw::Frame &rTwo) const
@@ -287,7 +287,7 @@ WW8SwAttrIter::WW8SwAttrIter(MSWordExportBase& rWr, const SwTxtNode& rTxtNd) :
     if (rWr.HackIsWW8OrHigher() && rWr.bInWriteEscher)
     {
         std::for_each(maFlyFrms.begin(), maFlyFrms.end(),
-            std::mem_fun_ref(&sw::Frame::ForceTreatAsInline));
+            [](auto& _x) { _x.ForceTreatAsInline(); }));
     }
 
     maFlyIter = maFlyFrms.begin();
@@ -499,7 +499,7 @@ void WW8SwAttrIter::OutAttr( xub_StrLen nSwPos )
                 if (nWhich == RES_TXTATR_AUTOFMT)
                 {
                     const SwFmtAutoFmt& rAutoFmt = static_cast<const SwFmtAutoFmt&>(pHt->GetAttr());
-                    const boost::shared_ptr<SfxItemSet> pSet = rAutoFmt.GetStyleHandle();
+                    const std::shared_ptr<SfxItemSet> pSet = rAutoFmt.GetStyleHandle();
                     SfxWhichIter aIter( *pSet );
                     const SfxPoolItem* pItem;
                     sal_uInt16 nWhichId = aIter.FirstWhich();
@@ -1705,7 +1705,7 @@ bool MSWordExportBase::GetBookmarks(
     return ( rArr.size() > 0 );
 }
 
-class CompareMarksEnd : public std::binary_function < const IMark *, const IMark *, bool >
+class CompareMarksEnd 
 {
 public:
     inline bool operator() ( const IMark * pOneB, const IMark * pTwoB ) const

@@ -33,7 +33,7 @@
 /** === end UNO includes === **/
 
 #include <boost/noncopyable.hpp>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <memory>
 
 namespace cppu
@@ -64,7 +64,7 @@ namespace svx
 
         virtual ~IPropertyValueProvider();
     };
-    typedef ::boost::shared_ptr< IPropertyValueProvider >  PPropertyValueProvider;
+    typedef ::std::shared_ptr< IPropertyValueProvider >  PPropertyValueProvider;
 
 	//====================================================================
 	//= PropertyValueProvider
@@ -135,7 +135,7 @@ namespace svx
         void    disposing();
 
     private:
-        ::std::auto_ptr< PropertyChangeNotifier_Data >  m_pData;
+        ::std::unique_ptr< PropertyChangeNotifier_Data >  m_pData;
 	};
 
 //........................................................................

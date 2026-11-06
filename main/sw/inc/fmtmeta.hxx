@@ -29,8 +29,8 @@
 #include <svl/poolitem.hxx>
 #include <sfx2/Metadatable.hxx>
 
-#include <boost/shared_ptr.hpp>
-#include <boost/weak_ptr.hpp>
+#include <memory>
+#include <memory>
 
 #include <vector>
 
@@ -94,7 +94,7 @@ private:
     friend class SwTxtMeta; // needs SetTxtAttr, DoCopy
     friend class ::sw::Meta; // needs m_pTxtAttr
 
-    ::boost::shared_ptr< ::sw::Meta > m_pMeta;
+    ::std::shared_ptr< ::sw::Meta > m_pMeta;
     SwTxtMeta * m_pTxtAttr;
 
     SwTxtMeta * GetTxtAttr() { return m_pTxtAttr; }
@@ -108,7 +108,7 @@ private:
 
 public:
     // takes ownership
-    explicit SwFmtMeta( ::boost::shared_ptr< ::sw::Meta > const & i_pMeta,
+    explicit SwFmtMeta( ::std::shared_ptr< ::sw::Meta > const & i_pMeta,
                         const sal_uInt16 i_nWhich );
     virtual ~SwFmtMeta();
 
@@ -204,12 +204,12 @@ class MetaFieldManager
     : private ::boost::noncopyable
 {
 private:
-    typedef ::std::vector< ::boost::weak_ptr<MetaField> > MetaFieldList_t;
+    typedef ::std::vector< ::std::weak_ptr<MetaField> > MetaFieldList_t;
     MetaFieldList_t m_MetaFields;
 
 public:
     MetaFieldManager();
-    ::boost::shared_ptr<MetaField> makeMetaField(
+    ::std::shared_ptr<MetaField> makeMetaField(
                 SwFmtMeta * const i_pFmt = 0,
                 const sal_uInt32 nNumberFormat = SAL_MAX_UINT32,
                 const bool bIsFixedLanguage = false );

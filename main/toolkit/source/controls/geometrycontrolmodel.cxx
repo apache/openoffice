@@ -504,7 +504,7 @@
 	}
 
 	//--------------------------------------------------------------------
-	struct PropertyNameLess : public ::std::binary_function< Property, Property, bool >
+	struct PropertyNameLess 
 	{
 		bool operator()( const Property& _rLHS, const Property& _rRHS )
 		{
@@ -513,7 +513,7 @@
 	};
 
 	//--------------------------------------------------------------------
-	struct PropertyNameEqual : public ::std::unary_function< Property, bool >
+	struct PropertyNameEqual 
 	{
 		const ::rtl::OUString&	m_rCompare;
 		PropertyNameEqual( const ::rtl::OUString& _rCompare ) : m_rCompare( _rCompare ) { }
@@ -607,7 +607,7 @@
 	}
 
 	//--------------------------------------------------------------------
-	struct Int32Equal : public ::std::unary_function< sal_Int32, bool >
+	struct Int32Equal 
 	{
 		sal_Int32	m_nCompare;
 		Int32Equal( sal_Int32 _nCompare ) : m_nCompare( _nCompare ) { }

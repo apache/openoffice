@@ -31,7 +31,7 @@
 #include <com/sun/star/lang/XMultiServiceFactory.hpp>
 
 #include <vector>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 class SdrModel;
 
@@ -66,7 +66,7 @@ protected:
     virtual bool ApplySpecialItem( sal_uInt16 nWhichId, const SfxItemSet & rItemSet );
 
 private:
-    ::boost::shared_ptr< ItemConverter >  m_spGraphicConverter;
+    ::std::shared_ptr< ItemConverter >  m_spGraphicConverter;
     ::com::sun::star::uno::Reference<
             ::com::sun::star::frame::XModel >  m_xModel;
 };

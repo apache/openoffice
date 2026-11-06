@@ -140,13 +140,13 @@ public:
 };
 
 template< class DestIterator, class DestAccessor >
-    std::auto_ptr< Renderer< DestIterator, DestAccessor > > makeRenderer(
+    std::unique_ptr< Renderer< DestIterator, DestAccessor > > makeRenderer(
         const basegfx::B2DPolyPolygon&                          rPolyPolyRaster,
         typename DestIterator::value_type                       fillColor,
         typename DestIterator::value_type                       clearColor,
         vigra::triple<DestIterator, DestIterator, DestAccessor> dest )
 {
-    return std::auto_ptr< Renderer< DestIterator, DestAccessor > >(
+    return std::unique_ptr< Renderer< DestIterator, DestAccessor > >(
         new Renderer< DestIterator, DestAccessor >(rPolyPolyRaster,
                                                    fillColor,
                                                    clearColor,
@@ -240,10 +240,10 @@ inline bool is_negative( int x )
 /// Get bitmask for data at given intra-word position, for given bit depth
 template< typename data_type, int bits_per_pixel, bool MsbFirst, typename difference_type > inline data_type get_mask( difference_type d )
 {
-    BOOST_STATIC_ASSERT(bits_per_pixel > 0);
-    BOOST_STATIC_ASSERT(sizeof(data_type)*8 % bits_per_pixel == 0);
-    BOOST_STATIC_ASSERT(sizeof(data_type)*8 / bits_per_pixel > 1);
-    BOOST_STATIC_ASSERT(vigra::TypeTraits<data_type>::isPOD::asBool);
+    static_assert(bits_per_pixel > 0);
+    static_assert(sizeof(data_type)*8 % bits_per_pixel == 0);
+    static_assert(sizeof(data_type)*8 / bits_per_pixel > 1);
+    static_assert(vigra::TypeTraits<data_type>::isPOD::asBool);
 
     const unsigned int nIntraWordPositions( sizeof(data_type)*8 / bits_per_pixel );
 

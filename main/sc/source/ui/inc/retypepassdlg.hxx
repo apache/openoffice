@@ -34,7 +34,7 @@
 
 #include "tabprotection.hxx"
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 class Window;
 class ScDocProtection;
@@ -44,8 +44,8 @@ class ScDocument;
 class ScRetypePassDlg : public ModalDialog
 {
 public:
-    typedef ::boost::shared_ptr<ScDocProtection>    DocProtectionPtr;
-    typedef ::boost::shared_ptr<ScTableProtection>  TabProtectionPtr;
+    typedef ::std::shared_ptr<ScDocProtection>    DocProtectionPtr;
+    typedef ::std::shared_ptr<ScTableProtection>  TabProtectionPtr;
 
     explicit ScRetypePassDlg(Window* pParent);
     virtual ~ScRetypePassDlg();

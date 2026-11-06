@@ -126,10 +126,10 @@ OReportSection::~OReportSection()
 
 	if ( m_pReportListener.is() )
 		m_pReportListener->dispose();
-	m_pFunc = ::std::auto_ptr<DlgEdFunc>();
+	m_pFunc = ::std::unique_ptr<DlgEdFunc>();
 
 	{
-		::std::auto_ptr<OSectionView> aTemp( m_pView);
+		::std::unique_ptr<OSectionView> aTemp( m_pView);
 		if ( m_pView )
 			m_pView->EndListening( *m_pModel );
 		m_pView = NULL;

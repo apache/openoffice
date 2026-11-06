@@ -24,7 +24,7 @@
 #define INCLUDED_DRAWINGLAYERANIMATION_HXX
 
 #include <sal/config.h>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 namespace slideshow {
 namespace internal {
@@ -33,9 +33,9 @@ class Activity;
 struct SlideShowContext;
 class DrawShape;
 
-boost::shared_ptr<Activity> createDrawingLayerAnimActivity(
+std::shared_ptr<Activity> createDrawingLayerAnimActivity(
     SlideShowContext const&                 rContext,
-    boost::shared_ptr<DrawShape> const&     pDrawShape );
+    std::shared_ptr<DrawShape> const&     pDrawShape );
 
 } // namespace internal
 } // namespace presentation

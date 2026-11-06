@@ -24,7 +24,7 @@
 #define _FLYPOS_HXX
 
 #include <swdllapi.h>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <set>
 
 class SwFrmFmt;
@@ -50,7 +50,7 @@ public:
 // contained SwPosFlyFrm* will be copied. When releasing the last SwPosFlyFrmPtr
 // instance the allocated instance will be freed. The array is sorted by
 // GetNdIndex by using a ::std::set container.
-typedef ::boost::shared_ptr< SwPosFlyFrm > SwPosFlyFrmPtr;
+typedef ::std::shared_ptr< SwPosFlyFrm > SwPosFlyFrmPtr;
 struct SwPosFlyFrmCmp { bool operator()(const SwPosFlyFrmPtr& rA, const SwPosFlyFrmPtr& rB) const; };
 typedef ::std::set< SwPosFlyFrmPtr, SwPosFlyFrmCmp > SwPosFlyFrms;
 

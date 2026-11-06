@@ -222,7 +222,7 @@ void UIConfigurationManager::impl_preloadUIElementTypeList( sal_Int16 nElementTy
                         aUIElementData.bModified    = false;
                         aUIElementData.bDefault     = false;
 
-                        // Create unordered_map entries for all user interface elements inside the storage. We don't load the
+                        // Create std::unordered_map entries for all user interface elements inside the storage. We don't load the
                         // settings to speed up the process.
                         rHashMap.insert( UIElementDataHashMap::value_type( aUIElementData.aResourceURL, aUIElementData ));
                     }
@@ -341,7 +341,7 @@ UIConfigurationManager::UIElementData* UIConfigurationManager::impl_findUIElemen
     // preload list of element types on demand
     impl_preloadUIElementTypeList( nElementType );
 
-    // try to look into our document vector/unordered_map combination
+    // try to look into our document vector/std::unordered_map combination
     UIElementDataHashMap& rUserHashMap = m_aUIElements[nElementType].aElementsHashMap;
     UIElementDataHashMap::iterator pIter = rUserHashMap.find( aResourceURL );
     if ( pIter != rUserHashMap.end() )

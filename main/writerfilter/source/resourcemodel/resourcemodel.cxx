@@ -29,6 +29,7 @@
 #include <resourcemodel/SubSequence.hxx>
 #include <resourcemodel/util.hxx>
 #include <resourcemodel.hxx>
+#include <memory>
 
 namespace writerfilter {
 
@@ -82,7 +83,7 @@ string gInfo = "";
 class TablePropsRef : public writerfilter::Reference<Properties>
 {
 public:
-    typedef boost::shared_ptr<TablePropsRef> Pointer_t;
+    typedef std::shared_ptr<TablePropsRef> Pointer_t;
 
     TablePropsRef() {}
     virtual ~TablePropsRef() {}
@@ -100,7 +101,7 @@ class WW8TableDataHandler : public TableDataHandler<string,
                             TablePropsRef_t>
 {
 public:
-    typedef boost::shared_ptr<WW8TableDataHandler> Pointer_t;
+    typedef std::shared_ptr<WW8TableDataHandler> Pointer_t;
     virtual void startTable(unsigned int nRows, unsigned int nDepth,
                             TablePropsRef_t pProps);
     virtual void endTable(
@@ -411,7 +412,7 @@ void WW8StreamHandler::info(const string & info_)
 
 void WW8PropertiesHandler::attribute(Id name, Value & val)
 {
-    boost::shared_ptr<rtl::OString> pStr(new ::rtl::OString());
+    std::shared_ptr<rtl::OString> pStr(new ::rtl::OString());
     ::rtl::OUString aStr = val.getString();
     aStr.convertToString(pStr.get(), RTL_TEXTENCODING_ASCII_US,
                          OUSTRING_TO_OSTRING_CVTFLAGS);

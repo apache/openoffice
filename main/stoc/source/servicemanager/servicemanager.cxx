@@ -282,7 +282,7 @@ struct equaltoRef_Impl
 		{ return rName1 == rName2; }
 };
 
-typedef unordered_set
+typedef std::unordered_set
 <
 	Reference<XInterface >,
 	hashRef_Impl,
@@ -436,14 +436,14 @@ struct hashOWString_Impl
 		{ return rName.hashCode(); }
 };
 
-typedef unordered_set
+typedef std::unordered_set
 <
 	OUString,
 	hashOWString_Impl,
 	equalOWString_Impl
 > HashSet_OWString;
 
-typedef unordered_multimap
+typedef std::unordered_multimap
 <
 	OUString,
 	Reference<XInterface >,
@@ -451,7 +451,7 @@ typedef unordered_multimap
 	equalOWString_Impl
 > HashMultimap_OWString_Interface;
 
-typedef unordered_map
+typedef std::unordered_map
 <
 	OUString,
 	Reference<XInterface >,

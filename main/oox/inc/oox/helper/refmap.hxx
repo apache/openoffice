@@ -25,8 +25,9 @@
 #define OOX_HELPER_REFMAP_HXX
 
 #include <map>
+#include <algorithm>
 #include <boost/bind.hpp>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <sal/types.h>
 
 namespace oox {
@@ -36,15 +37,15 @@ namespace oox {
 /** Template for a map of ref-counted objects with additional accessor functions.
 
     An instance of the class RefMap< Type > stores elements of the type
-    ::boost::shared_ptr< Type >. The new accessor functions has() and get()
+    ::std::shared_ptr< Type >. The new accessor functions has() and get()
     work correctly for nonexisting keys, there is no need to check the passed
     key before.
  */
 template< typename KeyType, typename ObjType, typename CompType = ::std::less< KeyType > >
-class RefMap : public ::std::map< KeyType, ::boost::shared_ptr< ObjType >, CompType >
+class RefMap : public ::std::map< KeyType, ::std::shared_ptr< ObjType >, CompType >
 {
 public:
-    typedef ::std::map< KeyType, ::boost::shared_ptr< ObjType >, CompType > container_type;
+    typedef ::std::map< KeyType, ::std::shared_ptr< ObjType >, CompType > container_type;
     typedef typename container_type::key_type                               key_type;
     typedef typename container_type::mapped_type                            mapped_type;
     typedef typename container_type::value_type                             value_type;

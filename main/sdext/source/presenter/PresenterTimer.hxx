@@ -35,6 +35,7 @@
 #include <boost/enable_shared_from_this.hpp>
 #include <boost/function.hpp>
 #include <vector>
+#include <memory>
 
 namespace css = ::com::sun::star;
 
@@ -92,7 +93,7 @@ public:
     class Listener { public:
         virtual void TimeHasChanged (const oslDateTime& rCurrentTime) = 0;
     };
-    typedef ::boost::shared_ptr<Listener> SharedListener;
+    typedef ::std::shared_ptr<Listener> SharedListener;
 
     static ::rtl::Reference<PresenterClockTimer> Instance (
         const css::uno::Reference<css::uno::XComponentContext>& rxContext);

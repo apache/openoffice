@@ -24,7 +24,7 @@
 #ifndef OOX_DRAWINGML_CUSTOMSHAPEPROPERTIES_HXX
 #define OOX_DRAWINGML_CUSTOMSHAPEPROPERTIES_HXX
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <vector>
 #include <map>
 #include <com/sun/star/drawing/EnhancedCustomShapeParameterPair.hpp>
@@ -49,7 +49,7 @@ namespace oox { namespace drawingml {
 
 class CustomShapeProperties;
 
-typedef boost::shared_ptr< CustomShapeProperties > CustomShapePropertiesPtr;
+typedef std::shared_ptr< CustomShapeProperties > CustomShapePropertiesPtr;
 
 struct CustomShapeGuide
 {

@@ -45,7 +45,7 @@
 #include <set>
 #include <vector>
 #include <unordered_map>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 //............................................................................
 namespace pcr
@@ -61,7 +61,7 @@ namespace pcr
     //========================================================================
     //= administrative structures for OBrowserListBox
     //========================================================================
-    typedef ::boost::shared_ptr< OBrowserLine > BrowserLinePointer;
+    typedef ::std::shared_ptr< OBrowserLine > BrowserLinePointer;
     struct ListBoxLine
     {
         BrowserLinePointer                      pLine;
@@ -102,7 +102,7 @@ namespace pcr
     protected:
         Window                      m_aLinesPlayground;
         ScrollBar                   m_aVScroll;
-        ::std::auto_ptr< InspectorHelpWindow >
+        ::std::unique_ptr< InspectorHelpWindow >
                                     m_pHelpWindow;
         ListBoxLines                m_aLines;
         OrderedListBoxLines         m_aOrderedLines;

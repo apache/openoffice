@@ -86,7 +86,7 @@ using ::com::sun::star::sheet::XDimensionsSupplier;
 using ::rtl::OUString;
 using ::rtl::OUStringHash;
 using ::rtl::OUStringBuffer;
-using ::std::auto_ptr;
+using ::std::unique_ptr;
 using ::std::list;
 using ::std::vector;
 using ::std::unordered_map;
@@ -1786,7 +1786,7 @@ bool ScDBFunc::DataPilotSort( const ScAddress& rPos, bool bAscending, sal_uInt16
 		typedef ScDPSaveDimension::MemberList MemList;
 		const MemList& rDimMembers = pSaveDim->GetMembers();
 		list<OUString> aMembers;
-		unordered_set<OUString, ::rtl::OUStringHash> aMemberSet;
+		std::unordered_set<OUString, ::rtl::OUStringHash> aMemberSet;
 		size_t nMemberCount = 0;
 		for (MemList::const_iterator itr = rDimMembers.begin(), itrEnd = rDimMembers.end();
 			 itr != itrEnd; ++itr)
@@ -1803,7 +1803,7 @@ bool ScDBFunc::DataPilotSort( const ScAddress& rPos, bool bAscending, sal_uInt16
 
 		// Collect and rank those custom sort strings that also exist in the member name list.
 
-		typedef unordered_map<OUString, sal_uInt16, OUStringHash> UserSortMap;
+		typedef std::unordered_map<OUString, sal_uInt16, OUStringHash> UserSortMap;
 		UserSortMap aSubStrs;
 		sal_uInt16 nSubCount = 0;
 		if (pUserListId)

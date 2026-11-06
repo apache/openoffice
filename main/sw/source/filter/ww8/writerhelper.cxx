@@ -95,8 +95,7 @@ namespace
 
     // --> OD 2009-02-04 #i98791# - adjust sorting
     //Utility to sort SwTxtFmtColl's by their assigned outline style list level
-    class outlinecmp : public
-        std::binary_function<const SwTxtFmtColl*, const SwTxtFmtColl*, bool>
+    class outlinecmp 
     {
     public:
         bool operator()(const SwTxtFmtColl *pA, const SwTxtFmtColl *pB) const
@@ -167,7 +166,7 @@ namespace
     }
 
     //Utility to test if a frame is anchored at a given node index
-    class anchoredto: public std::unary_function<const sw::Frame&, bool>
+    class anchoredto
     {
     private:
         sal_uLong mnNode;
@@ -785,8 +784,7 @@ namespace sw
         }
 
 
-        class SameOpenRedlineType :
-            public std::unary_function<const SwFltStackEntry*, bool>
+        class SameOpenRedlineType 
         {
         private:
             RedlineType_t meType;

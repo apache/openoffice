@@ -31,7 +31,7 @@
 #include <basegfx/point/b2dpoint.hxx>
 #include <basegfx/polygon/b2dpolypolygon.hxx>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <boost/noncopyable.hpp>
 
 namespace com { namespace sun { namespace star { namespace rendering
@@ -84,7 +84,7 @@ namespace slideshow
                 ::com::sun::star::rendering::XBitmap >		mxBitmap;
         };
 
-        typedef ::boost::shared_ptr< SlideBitmap > SlideBitmapSharedPtr;
+        typedef ::std::shared_ptr< SlideBitmap > SlideBitmapSharedPtr;
     }
 }
 

@@ -48,7 +48,7 @@
 #include "xmloff/xmlnmspe.hxx"
 #include "table.hxx"
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 // --------------------------------------------------------------------
 
@@ -98,7 +98,7 @@ struct MergeInfo
 		: mnStartColumn( nStartColumn ), mnStartRow( nStartRow ), mnEndColumn( nStartColumn + nColumnSpan - 1 ), mnEndRow( nStartRow + nRowSpan - 1 ) {};
 };
 
-typedef std::vector< boost::shared_ptr< MergeInfo > > MergeInfoVector;
+typedef std::vector< std::shared_ptr< MergeInfo > > MergeInfoVector;
 
 // --------------------------------------------------------------------
 
@@ -127,7 +127,7 @@ public:
 	Reference< XTableColumns > mxColumns;
 	Reference< XTableRows > mxRows;
 
-	std::vector< boost::shared_ptr< ColumnInfo > > maColumnInfos;
+	std::vector< std::shared_ptr< ColumnInfo > > maColumnInfos;
 	sal_Int32 mnCurrentRow;
 	sal_Int32 mnCurrentColumn;
 
@@ -284,7 +284,7 @@ SvXMLStyleContext* XMLTableImport::CreateTableTemplateContext( sal_uInt16 nPrfx,
 
 void XMLTableImport::addTableTemplate( const rtl::OUString& rsStyleName, XMLTableTemplate& xTableTemplate )
 {
-	boost::shared_ptr< XMLTableTemplate > xPtr( new XMLTableTemplate );
+	std::shared_ptr< XMLTableTemplate > xPtr( new XMLTableTemplate );
 	xPtr->swap( xTableTemplate );
 	maTableTemplates[rsStyleName] = xPtr;
 }
@@ -310,7 +310,7 @@ void XMLTableImport::finishStyles()
 			const OUString sTemplateName( (*aTemplateIter).first );
 			Reference< XNameReplace > xTemplate( xFactory->createInstance(), UNO_QUERY_THROW );
 
-			boost::shared_ptr< XMLTableTemplate > xT( (*aTemplateIter).second );
+			std::shared_ptr< XMLTableTemplate > xT( (*aTemplateIter).second );
 
 			for( XMLTableTemplate::iterator aStyleIter( xT->begin() ); aStyleIter != xT->end(); aStyleIter++ ) try
 			{
@@ -371,7 +371,7 @@ SvXMLImportContext * XMLTableImportContext::ImportColumn( sal_uInt16 nPrefix, co
 {
 	if( mxColumns.is() && (mnCurrentRow == -1) ) try
 	{
-		boost::shared_ptr< ColumnInfo > xInfo ( new ColumnInfo );
+		std::shared_ptr< ColumnInfo > xInfo ( new ColumnInfo );
 
 		sal_Int32 nRepeated = 1;
 
@@ -443,7 +443,7 @@ void XMLTableImportContext::InitColumns()
 
 		for( sal_Int32 nCol = 0; nCol < nCount2; nCol++ )
 		{
-			boost::shared_ptr< ColumnInfo > xInfo( maColumnInfos[nCol] );
+			std::shared_ptr< ColumnInfo > xInfo( maColumnInfos[nCol] );
 
 			if( pAutoStyles && xInfo->msStyleName.getLength() )
 			{
@@ -564,7 +564,7 @@ SvXMLImportContext * XMLTableImportContext::ImportCell( sal_uInt16 nPrefix, cons
 		const sal_Int32 nColumnSpan = pCellContext->getColumnSpan();
 		const sal_Int32 nRowSpan = pCellContext->getRowSpan();
 		if( (nColumnSpan > 1) || (nRowSpan > 1) )
-			maMergeInfos.push_back( boost::shared_ptr< MergeInfo >( new MergeInfo( mnCurrentColumn, mnCurrentRow, nColumnSpan, nRowSpan ) ) );
+			maMergeInfos.push_back( std::shared_ptr< MergeInfo >( new MergeInfo( mnCurrentColumn, mnCurrentRow, nColumnSpan, nRowSpan ) ) );
 
 		const sal_Int32 nRepeated = pCellContext->getRepeated();
 		if( nRepeated > 1 )
@@ -620,7 +620,7 @@ void XMLTableImportContext::EndElement()
 		MergeInfoVector::iterator aIter( maMergeInfos.begin() );
 		while( aIter != maMergeInfos.end() )
 		{
-			boost::shared_ptr< MergeInfo > xInfo( (*aIter++) );
+			std::shared_ptr< MergeInfo > xInfo( (*aIter++) );
 
 			if( xInfo.get() ) try
 			{

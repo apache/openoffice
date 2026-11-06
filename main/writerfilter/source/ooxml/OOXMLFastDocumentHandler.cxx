@@ -22,7 +22,7 @@
 
 
 #include <iostream>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #ifdef DEBUG_CONTEXT_HANDLER
 #include "ooxmlLoggers.hxx"
 #endif

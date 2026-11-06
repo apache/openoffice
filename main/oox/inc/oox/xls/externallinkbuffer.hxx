@@ -25,6 +25,7 @@
 #define OOX_XLS_EXTERNALLINKBUFFER_HXX
 
 #include <com/sun/star/sheet/ExternalLinkInfo.hpp>
+#include <memory>
 #include "oox/helper/containerhelper.hxx"
 #include "oox/xls/defnamesbuffer.hxx"
 
@@ -134,7 +135,7 @@ private:
     bool                mbDdeLinkCreated;   /// True = already tried to create the DDE link.
 };
 
-typedef ::boost::shared_ptr< ExternalName > ExternalNameRef;
+typedef ::std::shared_ptr< ExternalName > ExternalNameRef;
 
 // ============================================================================
 
@@ -309,7 +310,7 @@ private:
     ExternalNameVector  maExtNames;         /// Defined names in external document.
 };
 
-typedef ::boost::shared_ptr< ExternalLink > ExternalLinkRef;
+typedef ::std::shared_ptr< ExternalLink > ExternalLinkRef;
 
 // ============================================================================
 

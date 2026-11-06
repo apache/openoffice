@@ -26,6 +26,7 @@
 
 #include "animation.hxx"
 #include <basegfx/tuple/b2dtuple.hxx>
+#include <memory>
 
 
 /* Definition of PairAnimation interface */
@@ -66,7 +67,7 @@ namespace slideshow
             virtual ValueType getUnderlyingValue() const = 0;
         };
 
-        typedef ::boost::shared_ptr< PairAnimation > PairAnimationSharedPtr;
+        typedef ::std::shared_ptr< PairAnimation > PairAnimationSharedPtr;
 
     }
 }

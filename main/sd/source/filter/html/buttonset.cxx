@@ -37,7 +37,7 @@
 #include <vcl/image.hxx>
 #include <unotools/pathoptions.hxx>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 #include "buttonset.hxx"
 
@@ -137,7 +137,7 @@ bool ButtonsImpl::copyGraphic( const OUString& rName, const OUString& rPath )
 	return false;
 }
 
-typedef std::vector< boost::shared_ptr< ButtonsImpl > > ButtonVector;
+typedef std::vector< std::shared_ptr< ButtonsImpl > > ButtonVector;
 class ButtonSetImpl
 {
 public:
@@ -183,7 +183,7 @@ void ButtonSetImpl::scanForButtonSets( const OUString& rPath )
 			{
 				OUString sFileName( aStatus.getFileName() );
 				if( sFileName.endsWithIgnoreAsciiCaseAsciiL( RTL_CONSTASCII_STRINGPARAM(".zip" ) ) )
-					maButtons.push_back( boost::shared_ptr< ButtonsImpl >( new ButtonsImpl( aStatus.getFileURL() ) ) );
+					maButtons.push_back( std::shared_ptr< ButtonsImpl >( new ButtonsImpl( aStatus.getFileURL() ) ) );
 			}
 		}
 	}

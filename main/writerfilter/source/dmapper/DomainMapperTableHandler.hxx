@@ -27,6 +27,7 @@
 #include <PropertyMap.hxx>
 
 #include <com/sun/star/text/XTextAppendAndConvert.hpp>
+#include <memory>
 
 namespace writerfilter {
 namespace dmapper {
@@ -36,11 +37,11 @@ using namespace ::com::sun::star;
 typedef text::XTextRange TextRange_t;
 typedef uno::Reference< TextRange_t > Handle_t;
 typedef uno::Sequence< Handle_t> CellSequence_t;
-typedef boost::shared_ptr<CellSequence_t> CellSequencePointer_t;
+typedef std::shared_ptr<CellSequence_t> CellSequencePointer_t;
 typedef uno::Sequence< CellSequence_t > RowSequence_t;
-typedef boost::shared_ptr<RowSequence_t> RowSequencePointer_t;
+typedef std::shared_ptr<RowSequence_t> RowSequencePointer_t;
 typedef uno::Sequence< RowSequence_t> TableSequence_t;
-typedef boost::shared_ptr<TableSequence_t> TableSequencePointer_t;
+typedef std::shared_ptr<TableSequence_t> TableSequencePointer_t;
 typedef text::XTextAppendAndConvert Text_t;
 typedef uno::Reference<Text_t> TextReference_t;
 
@@ -64,7 +65,7 @@ struct TableInfo;
 class DomainMapperTableHandler : public TableDataHandler<Handle_t , TablePropertyMapPtr >
 {
 public:
-    typedef boost::shared_ptr<DomainMapperTableHandler> Pointer_t;
+    typedef std::shared_ptr<DomainMapperTableHandler> Pointer_t;
 
     DomainMapperTableHandler(TextReference_t xText, DomainMapper_Impl& rDMapper_Impl);
     virtual ~DomainMapperTableHandler();

@@ -28,6 +28,7 @@
 #include <com/sun/star/table/BorderLine.hpp>
 #include <com/sun/star/text/TableColumnSeparator.hpp>
 #include <com/sun/star/text/VertOrientation.hpp>
+#include <memory>
 
 #include "dmapperLoggers.hxx"
 
@@ -271,7 +272,7 @@ PropertyMapPtr  TDefTableHandler::getRowProperties() const
 
   -----------------------------------------------------------------------*/
 void TDefTableHandler::fillCellProperties(
-            size_t nCell, ::boost::shared_ptr< TablePropertyMap > pCellProperties ) const
+            size_t nCell, ::std::shared_ptr< TablePropertyMap > pCellProperties ) const
 {
     if( m_aCellBorderPositions.size() > nCell )
     {

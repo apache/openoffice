@@ -33,6 +33,7 @@
 #include "shape.hxx"
 
 #include <stack>
+#include <memory>
 
 namespace slideshow {
 namespace internal {
@@ -40,7 +41,7 @@ namespace internal {
 struct SlideShowContext;
 
 typedef ::std::vector< ::cppcanvas::PolyPolygonSharedPtr> PolyPolygonVector;
-typedef ::boost::shared_ptr< UnoView > 		UnoViewSharedPtr;
+typedef ::std::shared_ptr< UnoView > 		UnoViewSharedPtr;
 typedef ::std::vector< UnoViewSharedPtr >	UnoViewVector;
 
 /** This class imports all shapes from a given XShapes object

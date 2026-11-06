@@ -80,6 +80,7 @@
 #include <vector>
 #endif
 #include <boost/foreach.hpp>
+#include <memory>
 
 
 using namespace std;
@@ -346,7 +347,7 @@ void SlideSorterView::HandleDataChangeEvent (void)
 	GetPageObjectPainter()->SetTheme(mrSlideSorter.GetTheme());
 
 	// Update the color used by the background painter.
-	::boost::shared_ptr<BackgroundPainter> pPainter (
+	::std::shared_ptr<BackgroundPainter> pPainter (
 		::boost::dynamic_pointer_cast<BackgroundPainter>(mpBackgroundPainter));
 	if (pPainter)
 		pPainter->SetColor(mrSlideSorter.GetTheme()->GetColor(Theme::Color_Background));
@@ -494,7 +495,7 @@ void SlideSorterView::Layout ()
 		pWindow->SetViewOrigin (aViewBox.TopLeft());
 		pWindow->SetViewSize (aViewBox.GetSize());
 
-		::boost::shared_ptr<PageObjectLayouter> pPageObjectLayouter(
+		::std::shared_ptr<PageObjectLayouter> pPageObjectLayouter(
 			mpLayouter->GetPageObjectLayouter());
 		if (pPageObjectLayouter)
 		{
@@ -600,7 +601,7 @@ void SlideSorterView::UpdatePreciousFlags (void)
 		mbPreciousFlagUpdatePending = false;
 
 		model::SharedPageDescriptor pDescriptor;
-		::boost::shared_ptr<cache::PageCache> pCache = GetPreviewCache();
+		::std::shared_ptr<cache::PageCache> pCache = GetPreviewCache();
 		sal_Int32 nPageCount (mrModel.GetPageCount());
 
 		for (int nIndex=0; nIndex<=nPageCount; ++nIndex)
@@ -825,7 +826,7 @@ void SlideSorterView::ConfigurationChanged (
 
 
 
-::boost::shared_ptr<cache::PageCache> SlideSorterView::GetPreviewCache (void)
+::std::shared_ptr<cache::PageCache> SlideSorterView::GetPreviewCache (void)
 {
 	SharedSdWindow pWindow (mrSlideSorter.GetContentWindow());
 	if (pWindow && mpPreviewCache.get() == NULL)
@@ -921,8 +922,8 @@ void SlideSorterView::Notify (SfxBroadcaster& rBroadcaster, const SfxHint& rHint
 
 void SlideSorterView::UpdatePageUnderMouse (bool bAnimate)
 {
-	::boost::shared_ptr<ScrollBar> pVScrollBar (mrSlideSorter.GetVerticalScrollBar());
-	::boost::shared_ptr<ScrollBar> pHScrollBar (mrSlideSorter.GetHorizontalScrollBar());
+	::std::shared_ptr<ScrollBar> pVScrollBar (mrSlideSorter.GetVerticalScrollBar());
+	::std::shared_ptr<ScrollBar> pHScrollBar (mrSlideSorter.GetHorizontalScrollBar());
 	if ((pVScrollBar && pVScrollBar->IsVisible() && pVScrollBar->IsTracking())
 		|| (pHScrollBar && pHScrollBar->IsVisible() && pHScrollBar->IsTracking()))
 	{
@@ -981,7 +982,7 @@ void SlideSorterView::UpdatePageUnderMouse (
 	SharedSdWindow pWindow (mrSlideSorter.GetContentWindow());
 	const Point aMouseModelPosition (pWindow->PixelToLogic(rMousePosition));
 
-	::boost::shared_ptr<ViewShell> pMainViewShell (mrSlideSorter.GetViewShellBase()->GetMainViewShell());
+	::std::shared_ptr<ViewShell> pMainViewShell (mrSlideSorter.GetViewShellBase()->GetMainViewShell());
 	if (pMainViewShell
 		&& pMainViewShell->GetShellType()!=ViewShell::ST_DRAW)
 	{
@@ -1048,7 +1049,7 @@ bool SlideSorterView::SetState (
 			RequestRepaint(pDescriptor);
 	}
 
-	::boost::shared_ptr<ViewShell> pMainViewShell(mrSlideSorter.GetViewShellBase()->GetMainViewShell());
+	::std::shared_ptr<ViewShell> pMainViewShell(mrSlideSorter.GetViewShellBase()->GetMainViewShell());
 	if (pMainViewShell
 		&& pMainViewShell->GetShellType()!=ViewShell::ST_DRAW)
 	{
@@ -1068,7 +1069,7 @@ bool SlideSorterView::SetState (
 
 
 
-::boost::shared_ptr<PageObjectPainter> SlideSorterView::GetPageObjectPainter (void)
+::std::shared_ptr<PageObjectPainter> SlideSorterView::GetPageObjectPainter (void)
 {
 	if ( ! mpPageObjectPainter)
 		mpPageObjectPainter.reset(new PageObjectPainter(mrSlideSorter));
@@ -1078,7 +1079,7 @@ bool SlideSorterView::SetState (
 
 
 
-::boost::shared_ptr<LayeredDevice> SlideSorterView::GetLayeredDevice (void) const
+::std::shared_ptr<LayeredDevice> SlideSorterView::GetLayeredDevice (void) const
 {
 	return mpLayeredDevice;
 }

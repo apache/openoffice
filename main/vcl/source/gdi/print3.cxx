@@ -48,6 +48,7 @@
 
 #include <unordered_map>
 #include <unordered_set>
+#include <memory>
 
 using namespace com::sun::star;
 using namespace com::sun::star::uno;
@@ -149,7 +150,7 @@ public:
     typedef std::unordered_map< rtl::OUString, ControlDependency, rtl::OUStringHash > ControlDependencyMap;
     typedef std::unordered_map< rtl::OUString, Sequence< sal_Bool >, rtl::OUStringHash > ChoiceDisableMap;
 
-    boost::shared_ptr<Printer>                                  mpPrinter;
+    std::shared_ptr<Printer>                                  mpPrinter;
     Sequence< PropertyValue >                                   maUIOptions;
     std::vector< PropertyValue >                                maUIProperties;
     std::vector< bool >                                         maUIPropertyEnabled;
@@ -203,7 +204,7 @@ PrinterController::PrinterController()
 {
 }
 
-PrinterController::PrinterController( const boost::shared_ptr<Printer>& i_pPrinter )
+PrinterController::PrinterController( const std::shared_ptr<Printer>& i_pPrinter )
     : mpImplData( new ImplPrinterControllerData )
 {
     mpImplData->mpPrinter = i_pPrinter;
@@ -268,10 +269,10 @@ static rtl::OUString queryFile( Printer* pPrinter )
 
 struct PrintJobAsync
 {
-    boost::shared_ptr<PrinterController>  mpController;
+    std::shared_ptr<PrinterController>  mpController;
     JobSetup                            maInitSetup;
 
-    PrintJobAsync( const boost::shared_ptr<PrinterController>& i_pController,
+    PrintJobAsync( const std::shared_ptr<PrinterController>& i_pController,
                    const JobSetup& i_rInitSetup
                    )
     : mpController( i_pController ), maInitSetup( i_rInitSetup )
@@ -290,7 +291,7 @@ IMPL_LINK( PrintJobAsync, ExecJob, void*, EMPTYARG )
     return 0;
 }
 
-void Printer::PrintJob( const boost::shared_ptr<PrinterController>& i_pController,
+void Printer::PrintJob( const std::shared_ptr<PrinterController>& i_pController,
                         const JobSetup& i_rInitSetup
                         )
 {
@@ -308,11 +309,11 @@ void Printer::PrintJob( const boost::shared_ptr<PrinterController>& i_pControlle
     }
 }
 
-void Printer::ImplPrintJob( const boost::shared_ptr<PrinterController>& i_pController,
+void Printer::ImplPrintJob( const std::shared_ptr<PrinterController>& i_pController,
                             const JobSetup& i_rInitSetup
                             )
 {
-    boost::shared_ptr<PrinterController> pController( i_pController );
+    std::shared_ptr<PrinterController> pController( i_pController );
 
     // check if there is a default printer; if not, show an error box (if appropriate)
     if( GetDefaultPrinterName().Len() == 0  )
@@ -335,7 +336,7 @@ void Printer::ImplPrintJob( const boost::shared_ptr<PrinterController>& i_pContr
     if( ! pController->getPrinter() )
     {
         rtl::OUString aPrinterName( i_rInitSetup.GetPrinterName() );
-        boost::shared_ptr<Printer> pPrinter( new Printer( aPrinterName ) );
+        std::shared_ptr<Printer> pPrinter( new Printer( aPrinterName ) );
         pPrinter->SetJobSetup( i_rInitSetup );
         pController->setPrinter( pPrinter );
     }
@@ -520,7 +521,7 @@ void Printer::ImplPrintJob( const boost::shared_ptr<PrinterController>& i_pContr
     pController->jobFinished( pController->getJobState() );
 }
 
-bool Printer::StartJob( const rtl::OUString& i_rJobName, boost::shared_ptr<vcl::PrinterController>& i_pController )
+bool Printer::StartJob( const rtl::OUString& i_rJobName, std::shared_ptr<vcl::PrinterController>& i_pController )
 {
     mnError = PRINTER_OK;
 
@@ -757,12 +758,12 @@ void PrinterController::setJobState( view::PrintableState i_eState )
     mpImplData->meJobState = i_eState;
 }
 
-const boost::shared_ptr<Printer>& PrinterController::getPrinter() const
+const std::shared_ptr<Printer>& PrinterController::getPrinter() const
 {
     return mpImplData->mpPrinter;
 }
 
-void PrinterController::setPrinter( const boost::shared_ptr<Printer>& i_rPrinter )
+void PrinterController::setPrinter( const std::shared_ptr<Printer>& i_rPrinter )
 {
     mpImplData->mpPrinter = i_rPrinter;
     setValue( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "Name" ) ),

@@ -107,7 +107,7 @@ namespace frm
     ORichTextModel::ORichTextModel( const ORichTextModel* _pOriginal, const Reference< XMultiServiceFactory >& _rxFactory )
         :OControlModel       ( _pOriginal, _rxFactory, sal_False )
         ,FontControlModel    ( _pOriginal                        )
-        ,m_pEngine           ( NULL                              )
+        ,m_pEngine           ( )
         ,m_bSettingEngineText( false                             )
         ,m_aModifyListeners  ( m_aMutex                          )
     {

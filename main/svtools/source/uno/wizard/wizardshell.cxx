@@ -33,6 +33,7 @@
 /** === end UNO includes === **/
 
 #include <vcl/msgbox.hxx>
+#include <memory>
 
 //......................................................................................................................
 namespace svt { namespace uno
@@ -202,7 +203,7 @@ namespace svt { namespace uno
     {
         ENSURE_OR_RETURN( m_xController.is(), "WizardShell::createPage: no WizardController!", NULL );
 
-        ::boost::shared_ptr< WizardPageController > pController( new WizardPageController( *this, m_xController, impl_stateToPageId( i_nState ) ) );
+        ::std::shared_ptr< WizardPageController > pController( new WizardPageController( *this, m_xController, impl_stateToPageId( i_nState ) ) );
         TabPage* pPage = pController->getTabPage();
         OSL_ENSURE( pPage != NULL, "WizardShell::createPage: illegal tab page!" );
         if ( pPage == NULL )

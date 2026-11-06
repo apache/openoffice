@@ -32,7 +32,7 @@
 #include <vector>
 #include <stack>
 #include <unordered_map>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <iostream>
 
 namespace writerfilter
@@ -54,7 +54,7 @@ namespace writerfilter
     {
     public:
         enum eMode { START, END, COMPLETE };
-        typedef boost::shared_ptr<XMLTag> Pointer_t;
+        typedef std::shared_ptr<XMLTag> Pointer_t;
         static Pointer_t NIL;
 
     private:
@@ -87,7 +87,7 @@ namespace writerfilter
     class WRITERFILTER_DLLPUBLIC TagLogger
     {
     public:
-        typedef boost::shared_ptr<TagLogger> Pointer_t;
+        typedef std::shared_ptr<TagLogger> Pointer_t;
 
     private:
         stack<XMLTag::Pointer_t> mTags;
@@ -124,7 +124,7 @@ namespace writerfilter
     class IdToString
     {
     public:
-        typedef boost::shared_ptr<IdToString> Pointer_t;
+        typedef std::shared_ptr<IdToString> Pointer_t;
         virtual string toString(const Id & id) const = 0;
     };
 

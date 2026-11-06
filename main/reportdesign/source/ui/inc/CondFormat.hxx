@@ -33,7 +33,7 @@
 #include <vcl/fixed.hxx>
 #include <vcl/scrbar.hxx>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <boost/noncopyable.hpp>
 
 #include <vector>
@@ -71,7 +71,7 @@ namespace rptui
                                         ,public IConditionalFormatAction
                                         ,private ::boost::noncopyable
     {
-        typedef ::boost::shared_ptr< Condition >    ConditionPtr;
+        typedef ::std::shared_ptr< Condition >    ConditionPtr;
         typedef ::std::vector< ConditionPtr >       Conditions;
 
         OModuleClient   m_aModuleClient;

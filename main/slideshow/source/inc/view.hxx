@@ -26,7 +26,7 @@
 
 #include "viewlayer.hxx"
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <vector>
 
 
@@ -83,7 +83,7 @@ namespace slideshow
             virtual void setCursorShape( sal_Int16 nPointerShape ) = 0;
         };
 
-        typedef ::boost::shared_ptr< View > 	ViewSharedPtr;
+        typedef ::std::shared_ptr< View > 	ViewSharedPtr;
         typedef ::std::vector< ViewSharedPtr >	ViewVector;
     }
 }

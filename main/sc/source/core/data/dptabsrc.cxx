@@ -442,7 +442,7 @@ Sequence< Sequence<Any> > SAL_CALL ScDPSource::getDrillDownData(const Sequence<s
 {
     long nColumnCount = GetData()->GetColumnCount();
 
-    typedef unordered_map<String, long, ScStringHashCode> FieldNameMapType;
+    typedef std::unordered_map<String, long, ScStringHashCode> FieldNameMapType;
     FieldNameMapType aFieldNames;
     for (long i = 0; i < nColumnCount; ++i)
     {
@@ -485,7 +485,7 @@ Sequence< Sequence<Any> > SAL_CALL ScDPSource::getDrillDownData(const Sequence<s
     aResVisData.fillFieldFilters(aFilterCriteria);
 
     Sequence< Sequence<Any> > aTabData;
-    unordered_set<sal_Int32> aCatDims;
+    std::unordered_set<sal_Int32> aCatDims;
     GetCategoryDimensionIndices(aCatDims);
     pData->GetDrillDownData(aFilterCriteria, aCatDims, aTabData);
     return aTabData;
@@ -706,9 +706,9 @@ void ScDPSource::FillCalcInfo(bool bIsRow, ScDPTableData::CalcInfo& rInfo, bool 
     }
 }
 
-void ScDPSource::GetCategoryDimensionIndices(unordered_set<sal_Int32>& rCatDims)
+void ScDPSource::GetCategoryDimensionIndices(std::unordered_set<sal_Int32>& rCatDims)
 {
-    unordered_set<sal_Int32> aCatDims;
+    std::unordered_set<sal_Int32> aCatDims;
     for (long i = 0; i < nColDimCount; ++i)
     {
         sal_Int32 nDim = static_cast<sal_Int32>(nColDims[i]);
@@ -791,7 +791,7 @@ void ScDPSource::FilterCacheTableByPageDimensions()
     }
     if (!aCriteria.empty())
     {
-        unordered_set<sal_Int32> aCatDims;
+        std::unordered_set<sal_Int32> aCatDims;
         GetCategoryDimensionIndices(aCatDims);
         pData->FilterCacheTable(aCriteria, aCatDims);
         bPageFiltered = true;

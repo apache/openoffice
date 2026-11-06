@@ -25,7 +25,7 @@
 #define INCLUDED_SLIDESHOW_DISPOSABLE_HXX
 
 #include <sal/types.h>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 
 /* Definition of Disposable interface */

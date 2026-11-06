@@ -24,6 +24,7 @@
 #ifndef OOX_DRAWINGML_CHART_CHARTDRAWINGFRAGMENT_HXX
 #define OOX_DRAWINGML_CHART_CHARTDRAWINGFRAGMENT_HXX
 
+#include <memory>
 #include "oox/core/fragmenthandler2.hxx"
 #include "oox/drawingml/shape.hxx"
 
@@ -77,7 +78,7 @@ private:
     bool                mbRelSize;          /// True = relative size, false = absolute size.
 };
 
-typedef ::boost::shared_ptr< ShapeAnchor > ShapeAnchorRef;
+typedef ::std::shared_ptr< ShapeAnchor > ShapeAnchorRef;
 
 // ============================================================================
 

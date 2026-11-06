@@ -38,7 +38,7 @@
 using namespace formula;
 
 using ::std::vector;
-using ::std::auto_ptr;
+using ::std::unique_ptr;
 using ::rtl::OUString;
 
 void ScRefTokenHelper::compileRangeRepresentation(

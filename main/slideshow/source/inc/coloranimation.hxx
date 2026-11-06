@@ -24,6 +24,7 @@
 #ifndef INCLUDED_SLIDESHOW_COLORANIMATION_HXX
 #define INCLUDED_SLIDESHOW_COLORANIMATION_HXX
 
+#include <memory>
 #include "animation.hxx"
 #include "rgbcolor.hxx"
 
@@ -65,7 +66,7 @@ namespace slideshow
             virtual ValueType getUnderlyingValue() const = 0;
         };
 
-        typedef ::boost::shared_ptr< ColorAnimation > ColorAnimationSharedPtr;
+        typedef ::std::shared_ptr< ColorAnimation > ColorAnimationSharedPtr;
 
     }
 }

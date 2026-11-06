@@ -25,7 +25,7 @@
 #include "precompiled_sfx2.hxx"
 #include <sfx2/itemconnect.hxx>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <list>
 #include <svl/itempool.hxx>
 
@@ -334,7 +334,7 @@ public:
     bool                        FillItemSet( SfxItemSet& rDestSet, const SfxItemSet& rOldSet );
 
 private:
-    typedef boost::shared_ptr< ItemConnectionBase > ItemConnectionRef;
+    typedef std::shared_ptr< ItemConnectionBase > ItemConnectionRef;
     typedef std::list< ItemConnectionRef >          ItemConnectionList;
     typedef ItemConnectionList::iterator            ItemConnectionListIt;
 

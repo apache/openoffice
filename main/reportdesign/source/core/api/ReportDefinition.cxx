@@ -122,6 +122,7 @@
 #include <boost/bind.hpp>
 #include <boost/mem_fn.hpp>
 #include <boost/utility.hpp>
+#include <memory>
 
 #define MAP_LEN(x) x, sizeof(x) - 1
 #define MAP_CHAR_LEN(x) ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(x))
@@ -204,7 +205,7 @@ namespace reportdesign
 // -----------------------------------------------------------------------------
 // local functions
 // -----------------------------------------------------------------------------
-void lcl_setModelReadOnly(const uno::Reference< embed::XStorage >& _xStorage,::boost::shared_ptr<rptui::OReportModel>& _rModel)
+void lcl_setModelReadOnly(const uno::Reference< embed::XStorage >& _xStorage,::std::shared_ptr<rptui::OReportModel>& _rModel)
 {
     uno::Reference<beans::XPropertySet> xProp(_xStorage,uno::UNO_QUERY);
     sal_Int32 nOpenMode = embed::ElementModes::READ;
@@ -608,9 +609,9 @@ struct OReportDefinitionImpl
     uno::Reference< frame::XUntitledNumbers >               m_xNumberedControllers;
     uno::Reference< document::XDocumentProperties >         m_xDocumentProperties;
 
-    ::boost::shared_ptr< ::comphelper::EmbeddedObjectContainer>
+    ::std::shared_ptr< ::comphelper::EmbeddedObjectContainer>
                                                             m_pObjectContainer;
-    ::boost::shared_ptr<rptui::OReportModel>                m_pReportModel;
+    ::std::shared_ptr<rptui::OReportModel>                m_pReportModel;
     ::rtl::Reference< ::dbaui::UndoManager >                m_pUndoManager;
 	::rtl::OUString 										m_sCaption;
 	::rtl::OUString 										m_sCommand;
@@ -2255,14 +2256,14 @@ uno::Reference< uno::XComponentContext > OReportDefinition::getContext()
     return m_aProps->m_xContext;
 }
 // -----------------------------------------------------------------------------
-::boost::shared_ptr<rptui::OReportModel> OReportDefinition::getSdrModel() const
+::std::shared_ptr<rptui::OReportModel> OReportDefinition::getSdrModel() const
 {
     return m_pImpl->m_pReportModel;
 }
 // -----------------------------------------------------------------------------
-::boost::shared_ptr<rptui::OReportModel> OReportDefinition::getSdrModel(const uno::Reference< report::XReportDefinition >& _xReportDefinition)
+::std::shared_ptr<rptui::OReportModel> OReportDefinition::getSdrModel(const uno::Reference< report::XReportDefinition >& _xReportDefinition)
 {
-    ::boost::shared_ptr<rptui::OReportModel> pReportModel;
+    ::std::shared_ptr<rptui::OReportModel> pReportModel;
     uno::Reference< lang::XUnoTunnel > xUT( _xReportDefinition, uno::UNO_QUERY );
 	if( xUT.is() )
 		pReportModel = reinterpret_cast<OReportDefinition*>(sal::static_int_cast<sal_uIntPtr>(xUT->getSomething( OReportDefinition::getUnoTunnelImplementationId())))->getSdrModel();

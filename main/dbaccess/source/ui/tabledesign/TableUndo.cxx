@@ -49,6 +49,7 @@
 #endif
 #ifndef _TOOLS_DEBUG_HXX
 #include <tools/debug.hxx>
+#include <memory>
 #endif
 
 using namespace dbaui;
@@ -235,10 +236,10 @@ OTableEditorDelUndoAct::OTableEditorDelUndoAct( OTableEditorCtrl* pOwner) :
 	DBG_CTOR(OTableEditorDelUndoAct,NULL);
 	//////////////////////////////////////////////////////////////////////
 	// DeletedRowList fuellen
-	::std::vector< ::boost::shared_ptr<OTableRow> >* pOriginalRows = pOwner->GetRowList();
+	::std::vector< ::std::shared_ptr<OTableRow> >* pOriginalRows = pOwner->GetRowList();
 	long nIndex = pOwner->FirstSelectedRow();
-	 ::boost::shared_ptr<OTableRow>  pOriginalRow;
-	 ::boost::shared_ptr<OTableRow>  pNewRow;
+	 ::std::shared_ptr<OTableRow>  pOriginalRow;
+	 ::std::shared_ptr<OTableRow>  pNewRow;
 
 	while( nIndex >= 0 )
 	{
@@ -263,11 +264,11 @@ void OTableEditorDelUndoAct::Undo()
 	//////////////////////////////////////////////////////////////////////
 	// Geloeschte Zeilen wieder einfuegen
 	sal_uLong nPos;
-	::std::vector< ::boost::shared_ptr<OTableRow> >::iterator aIter = m_aDeletedRows.begin();
-    ::std::vector< ::boost::shared_ptr<OTableRow> >::iterator aEnd = m_aDeletedRows.end();
+	::std::vector< ::std::shared_ptr<OTableRow> >::iterator aIter = m_aDeletedRows.begin();
+    ::std::vector< ::std::shared_ptr<OTableRow> >::iterator aEnd = m_aDeletedRows.end();
 
-	 ::boost::shared_ptr<OTableRow>  pNewOrigRow;
-	::std::vector< ::boost::shared_ptr<OTableRow> >* pOriginalRows = pTabEdCtrl->GetRowList();
+	 ::std::shared_ptr<OTableRow>  pNewOrigRow;
+	::std::vector< ::std::shared_ptr<OTableRow> >* pOriginalRows = pTabEdCtrl->GetRowList();
 
 	for(;aIter != aEnd;++aIter)
 	{
@@ -287,9 +288,9 @@ void OTableEditorDelUndoAct::Redo()
 	//////////////////////////////////////////////////////////////////////
 	// Zeilen wieder loeschen
 	sal_uLong nPos;
-	::std::vector< ::boost::shared_ptr<OTableRow> >::iterator aIter = m_aDeletedRows.begin();
-    ::std::vector< ::boost::shared_ptr<OTableRow> >::iterator aEnd = m_aDeletedRows.end();
-	::std::vector< ::boost::shared_ptr<OTableRow> >* pOriginalRows = pTabEdCtrl->GetRowList();
+	::std::vector< ::std::shared_ptr<OTableRow> >::iterator aIter = m_aDeletedRows.begin();
+    ::std::vector< ::std::shared_ptr<OTableRow> >::iterator aEnd = m_aDeletedRows.end();
+	::std::vector< ::std::shared_ptr<OTableRow> >* pOriginalRows = pTabEdCtrl->GetRowList();
 
 	for(;aIter != aEnd;++aIter)
 	{
@@ -309,7 +310,7 @@ void OTableEditorDelUndoAct::Redo()
 DBG_NAME(OTableEditorInsUndoAct);
 OTableEditorInsUndoAct::OTableEditorInsUndoAct( OTableEditorCtrl* pOwner,
 											   long nInsertPosition ,
-											   const ::std::vector<  ::boost::shared_ptr<OTableRow> >& _vInsertedRows)
+											   const ::std::vector<  ::std::shared_ptr<OTableRow> >& _vInsertedRows)
 	:OTableEditorUndoAct( pOwner,STR_TABED_UNDO_ROWINSERTED )
 	,m_vInsertedRows(_vInsertedRows)
 	,m_nInsPos( nInsertPosition )
@@ -329,7 +330,7 @@ void OTableEditorInsUndoAct::Undo()
 {
 	//////////////////////////////////////////////////////////////////////
 	// Eingefuegte Zeilen wieder loeschen
-	::std::vector< ::boost::shared_ptr<OTableRow> >* pOriginalRows = pTabEdCtrl->GetRowList();
+	::std::vector< ::std::shared_ptr<OTableRow> >* pOriginalRows = pTabEdCtrl->GetRowList();
 	for( long i=(m_nInsPos+m_vInsertedRows.size()-1); i>(m_nInsPos-1); i-- )
 	{
 		pOriginalRows->erase(pOriginalRows->begin()+i);
@@ -347,10 +348,10 @@ void OTableEditorInsUndoAct::Redo()
 	//////////////////////////////////////////////////////////////////////
 	// Zeilen wieder einfuegen
 	long nInsertRow = m_nInsPos;
-	 ::boost::shared_ptr<OTableRow>  pRow;
-	::std::vector< ::boost::shared_ptr<OTableRow> >::iterator aIter = m_vInsertedRows.begin();
-    ::std::vector< ::boost::shared_ptr<OTableRow> >::iterator aEnd = m_vInsertedRows.end();
-	::std::vector< ::boost::shared_ptr<OTableRow> >* pRowList = pTabEdCtrl->GetRowList();
+	 ::std::shared_ptr<OTableRow>  pRow;
+	::std::vector< ::std::shared_ptr<OTableRow> >::iterator aIter = m_vInsertedRows.begin();
+    ::std::vector< ::std::shared_ptr<OTableRow> >::iterator aEnd = m_vInsertedRows.end();
+	::std::vector< ::std::shared_ptr<OTableRow> >* pRowList = pTabEdCtrl->GetRowList();
 	for(;aIter != aEnd;++aIter)
 	{
 		pRow.reset(new OTableRow( **aIter ));
@@ -387,7 +388,7 @@ void OTableEditorInsNewUndoAct::Undo()
 {
 	//////////////////////////////////////////////////////////////////////
 	// Eingefuegte Zeilen wieder loeschen
-	::std::vector< ::boost::shared_ptr<OTableRow> >* pOriginalRows = pTabEdCtrl->GetRowList();
+	::std::vector< ::std::shared_ptr<OTableRow> >* pOriginalRows = pTabEdCtrl->GetRowList();
 
 	for( long i=(m_nInsPos+m_nInsRows-1); i>(m_nInsPos-1); i-- )
 	{
@@ -405,10 +406,10 @@ void OTableEditorInsNewUndoAct::Redo()
 {
 	//////////////////////////////////////////////////////////////////////
 	// Zeilen wieder einfuegen
-	::std::vector< ::boost::shared_ptr<OTableRow> >* pRowList = pTabEdCtrl->GetRowList();
+	::std::vector< ::std::shared_ptr<OTableRow> >* pRowList = pTabEdCtrl->GetRowList();
 
 	for( long i=m_nInsPos; i<(m_nInsPos+m_nInsRows); i++ )
-		pRowList->insert( pRowList->begin()+i,::boost::shared_ptr<OTableRow>(new OTableRow()) );
+		pRowList->insert( pRowList->begin()+i,::std::shared_ptr<OTableRow>(new OTableRow()) );
 
 	pTabEdCtrl->RowInserted( m_nInsPos, m_nInsRows, sal_True );
 	pTabEdCtrl->InvalidateHandleColumn();
@@ -440,8 +441,8 @@ OPrimKeyUndoAct::~OPrimKeyUndoAct()
 //-------------------------------------------------------------------------
 void OPrimKeyUndoAct::Undo()
 {
-	::std::vector< ::boost::shared_ptr<OTableRow> >* pRowList = pTabEdCtrl->GetRowList();
-	::boost::shared_ptr<OTableRow>  pRow;
+	::std::vector< ::std::shared_ptr<OTableRow> >* pRowList = pTabEdCtrl->GetRowList();
+	::std::shared_ptr<OTableRow>  pRow;
 	long nIndex;
 
 	//////////////////////////////////////////////////////////////////////
@@ -469,7 +470,7 @@ void OPrimKeyUndoAct::Undo()
 //-------------------------------------------------------------------------
 void OPrimKeyUndoAct::Redo()
 {
-	::std::vector< ::boost::shared_ptr<OTableRow> >* pRowList = pTabEdCtrl->GetRowList();
+	::std::vector< ::std::shared_ptr<OTableRow> >* pRowList = pTabEdCtrl->GetRowList();
 	long nIndex;
 
 	//////////////////////////////////////////////////////////////////////

@@ -28,6 +28,7 @@
 #include <com/sun/star/logging/LogLevel.hpp>
 #include <comphelper/docpasswordhelper.hxx>
 #include <comphelper/mediadescriptor.hxx>
+#include <memory>
 #include "oox/core/fastparser.hxx"
 #include "oox/core/relationshandler.hxx"
 #include "oox/helper/attributelist.hxx"
@@ -252,7 +253,7 @@ bool lclIsZipPackage( const Reference< XComponentContext >& rxContext, const Ref
 class PasswordVerifier : public ::comphelper::IDocPasswordVerifier
 {
 public:
-    explicit            PasswordVerifier( const ::boost::shared_ptr< EncryptionInfo >& rEncryptInfo, const ::comphelper::EventLogger& rLogger );
+    explicit            PasswordVerifier( const ::std::shared_ptr< EncryptionInfo >& rEncryptInfo, const ::comphelper::EventLogger& rLogger );
 
     virtual ::comphelper::DocPasswordVerifierResult
                         verifyPassword( const OUString& rPassword, Sequence< NamedValue >& o_rEncryptionData );
@@ -260,11 +261,11 @@ public:
                         verifyEncryptionData( const Sequence< NamedValue >& rEncryptionData );
 
 private:
-    const ::boost::shared_ptr< EncryptionInfo> encryptionInfo;
+    const ::std::shared_ptr< EncryptionInfo> encryptionInfo;
     const ::comphelper::EventLogger            logger;
 };
 
-PasswordVerifier::PasswordVerifier( const ::boost::shared_ptr< EncryptionInfo>& rEncryptInfo, const ::comphelper::EventLogger& rLogger ) :
+PasswordVerifier::PasswordVerifier( const ::std::shared_ptr< EncryptionInfo>& rEncryptInfo, const ::comphelper::EventLogger& rLogger ) :
     encryptionInfo( rEncryptInfo ),
     logger( rLogger )
 {
@@ -345,7 +346,7 @@ Reference< XInputStream > FilterDetect::extractUnencryptedPackage( MediaDescript
         Reference< XInputStream > xEncryptedPackage( aOleStorage.openInputStream( CREATE_OUSTRING( "EncryptedPackage" ) ), UNO_SET_THROW );
 
         // read the encryption info stream
-        ::boost::shared_ptr< EncryptionInfo > encryptionInfo( EncryptionInfo::readEncryptionInfo( mxContext, xEncryptionInfo ) );
+        ::std::shared_ptr< EncryptionInfo > encryptionInfo( EncryptionInfo::readEncryptionInfo( mxContext, xEncryptionInfo ) );
 
         // check flags and algorithm IDs, required are AES128 and SHA-1
         bool bImplemented = encryptionInfo->isImplemented();

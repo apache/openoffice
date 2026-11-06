@@ -48,7 +48,7 @@
 #include <cppuhelper/compbase8.hxx>
 #include <cppuhelper/interfacecontainer.hxx>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 // needed for registration
 namespace com { namespace sun { namespace star {

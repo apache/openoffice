@@ -50,6 +50,7 @@
 #include "res_bmp.hrc"
 #include <basegfx/polygon/b2dpolygon.hxx>
 #include <basegfx/polygon/b2dpolygontools.hxx>
+#include <memory>
 
 #include "CustomAnimationEffect.hxx"
 
@@ -216,7 +217,7 @@ sal_Bool FuConstructBezierPolygon::MouseButtonUp(const MouseEvent& rMEvt )
 		SdPage* pPage = dynamic_cast< SdPage* >( pPathObj ? pPathObj->GetPage() : 0 );
 		if( pPage )
 		{
-			boost::shared_ptr< sd::MainSequence > pMainSequence( pPage->getMainSequence() );
+			std::shared_ptr< sd::MainSequence > pMainSequence( pPage->getMainSequence() );
 			if( pMainSequence.get() )
 			{
 				Sequence< Any > aTargets;

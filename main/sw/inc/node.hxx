@@ -27,7 +27,7 @@
 #include <vector>
 
 #include <boost/utility.hpp>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 #include <tools/mempool.hxx>
 #include <tools/gen.hxx>
@@ -84,7 +84,7 @@ class SwOLENodes;
 //UUUU
 namespace drawinglayer { namespace attribute {
     class SdrAllFillAttributesHelper;
-    typedef boost::shared_ptr< SdrAllFillAttributesHelper > SdrAllFillAttributesHelperPtr;
+    typedef std::shared_ptr< SdrAllFillAttributesHelper > SdrAllFillAttributesHelperPtr;
 }}
 
 // --------------------
@@ -390,7 +390,7 @@ protected:
 
 	// Attribut-Set fuer alle AUTO-Attribute eines CntntNodes
 	//	( z.B: TxtNode oder NoTxtNode
-    boost::shared_ptr<const SfxItemSet> mpAttrSet;
+    std::shared_ptr<const SfxItemSet> mpAttrSet;
 
 	// lasse von den entsprechenden Nodes die spz. AttrSets anlegen
 	virtual void NewAttrSet( SwAttrPool& ) = 0;
@@ -575,7 +575,7 @@ class SwSectionNode
 	friend class SwNodes;
 
 private:
-    ::std::auto_ptr<SwSection> const m_pSection;
+    ::std::unique_ptr<SwSection> const m_pSection;
 
 protected:
 	virtual ~SwSectionNode();

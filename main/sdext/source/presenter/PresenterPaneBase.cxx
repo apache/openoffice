@@ -38,6 +38,7 @@
 #include <com/sun/star/rendering/CompositeOperation.hpp>
 #include <com/sun/star/rendering/TexturingMode.hpp>
 #include <osl/mutex.hxx>
+#include <memory>
 
 using namespace ::com::sun::star;
 using namespace ::com::sun::star::uno;
@@ -193,9 +194,9 @@ awt::Point PresenterPaneBase::GetCalloutAnchor (void) const
 
 
 
-::boost::shared_ptr<PresenterTextView> PresenterPaneBase::GetTextViewForTitle (void)
+::std::shared_ptr<PresenterTextView> PresenterPaneBase::GetTextViewForTitle (void)
 {
-    ::boost::shared_ptr<PresenterTextView> pTextView(
+    ::std::shared_ptr<PresenterTextView> pTextView(
         new PresenterTextView(
             mxComponentContext,
             mxBorderCanvas));

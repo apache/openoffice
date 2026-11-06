@@ -56,6 +56,7 @@
 #include <functional>
 #include <algorithm>
 #include <stack>
+#include <memory>
 
 
 
@@ -88,7 +89,7 @@ namespace slideshow
                 bool						mbParseAnimationFunction;
             };
 
-            typedef ::boost::shared_ptr< ParserContext > ParserContextSharedPtr;
+            typedef ::std::shared_ptr< ParserContext > ParserContextSharedPtr;
 
 
             template< typename Generator > class ShapeBoundsFunctor
@@ -438,10 +439,10 @@ namespace slideshow
 	                            	str_p( "$" 	 	)[ ValueTFunctor(															   self.getContext()) ]
                               |		str_p( "pi"     )[ ConstantFunctor(M_PI, 					  	  	  						   self.getContext()) ]
                               |		str_p( "e"      )[ ConstantFunctor(M_E, 					  	  	  						   self.getContext()) ]
-                              |		str_p( "x"      )[ makeShapeBoundsFunctor(::std::mem_fun_ref(&::basegfx::B2DRange::getCenterX),self.getContext()) ]
-                              |		str_p( "y"      )[ makeShapeBoundsFunctor(::std::mem_fun_ref(&::basegfx::B2DRange::getCenterY),self.getContext()) ]
-                              |   	str_p( "width"  )[ makeShapeBoundsFunctor(::std::mem_fun_ref(&::basegfx::B2DRange::getWidth),  self.getContext()) ]
-                              |		str_p( "height" )[ makeShapeBoundsFunctor(::std::mem_fun_ref(&::basegfx::B2DRange::getHeight), self.getContext()) ]
+                              |		str_p( "x"      )[ makeShapeBoundsFunctor( [](const ::basegfx::B2DRange& rRange) { return rRange.getCenterX(); }, self.getContext()) ]
+                              |		str_p( "y"      )[ makeShapeBoundsFunctor( [](const ::basegfx::B2DRange& rRange) { return rRange.getCenterY(); }, self.getContext()) ]
+                              |   	str_p( "width"  )[ makeShapeBoundsFunctor( [](const ::basegfx::B2DRange& rRange) { return rRange.getWidth(); }, self.getContext()) ]
+                              |		str_p( "height" )[ makeShapeBoundsFunctor( [](const ::basegfx::B2DRange& rRange) { return rRange.getHeight(); }, self.getContext()) ]
                               ;
 
                         unaryFunction =

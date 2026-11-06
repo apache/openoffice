@@ -25,6 +25,7 @@
 #define OOX_VML_VMLSHAPECONTAINER_HXX
 
 #include <com/sun/star/awt/Rectangle.hpp>
+#include <memory>
 #include "oox/helper/refmap.hxx"
 #include "oox/helper/refvector.hxx"
 
@@ -113,7 +114,7 @@ private:
 template< typename ShapeT >
 ShapeT& ShapeContainer::createShape()
 {
-    ::boost::shared_ptr< ShapeT > xShape( new ShapeT( mrDrawing ) );
+    ::std::shared_ptr< ShapeT > xShape( new ShapeT( mrDrawing ) );
     maShapes.push_back( xShape );
     return *xShape;
 }

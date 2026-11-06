@@ -24,6 +24,7 @@
 #ifndef _CAIROCANVAS_OS2_CAIRO_HXX
 #define _CAIROCANVAS_OS2_CAIRO_HXX
 
+#include <memory>
 #include "cairo_cairo.hxx"
 
 typedef ULONG HFONT;
@@ -47,7 +48,7 @@ namespace cairo {
 		virtual CairoSurfaceSharedPtr getCairoSurface() const { return mpSurface; }
 		virtual SurfaceSharedPtr getSimilar( Content aContent, int width, int height ) const;
 
-        virtual boost::shared_ptr<VirtualDevice> createVirtualDevice() const;
+        virtual std::shared_ptr<VirtualDevice> createVirtualDevice() const;
 
 		virtual void Resize( int width, int height );
 

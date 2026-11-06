@@ -57,6 +57,7 @@
 #include <svtools/embedtransfer.hxx>
 #include <comphelper/processfactory.hxx>
 #include <tools/diagnose_ex.h>
+#include <memory>
 
 using namespace com::sun::star;
 
@@ -1751,7 +1752,7 @@ void SdPageObjsTLB::AddShapeToTransferable (
 			if (pBase->GetDocShell() != &rDocShell)
 				continue;
 
-			const ::boost::shared_ptr<sd::ViewShell> pViewShell (pBase->GetMainViewShell());
+			const ::std::shared_ptr<sd::ViewShell> pViewShell (pBase->GetMainViewShell());
 			if (pViewShell)
 				return pViewShell.get();
 		}

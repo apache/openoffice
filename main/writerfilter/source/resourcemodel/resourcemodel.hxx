@@ -21,6 +21,7 @@
 
 
 #include <resourcemodel/WW8ResourceModel.hxx>
+#include <memory>
 
 namespace writerfilter {
 class WW8StreamHandler : public Stream
@@ -54,7 +55,7 @@ public:
 
 class WW8PropertiesHandler : public Properties
 {
-    typedef boost::shared_ptr<Sprm> SprmSharedPointer_t;
+    typedef std::shared_ptr<Sprm> SprmSharedPointer_t;
     typedef vector<SprmSharedPointer_t> SprmPointers_t;
     SprmPointers_t sprms;
 

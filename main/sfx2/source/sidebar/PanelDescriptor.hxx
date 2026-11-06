@@ -24,7 +24,7 @@
 
 #include "sfx2/sidebar/EnumContext.hxx"
 #include "ContextList.hxx"
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 
 namespace sfx2 { namespace sidebar {
@@ -49,7 +49,7 @@ public:
     PanelDescriptor (const PanelDescriptor& rPanelDescriptor);
     ~PanelDescriptor (void);
 };
-typedef ::boost::shared_ptr<PanelDescriptor> SharedPanelDescriptor;
+typedef ::std::shared_ptr<PanelDescriptor> SharedPanelDescriptor;
 
 } } // end of namespace sfx2::sidebar
 

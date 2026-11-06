@@ -33,7 +33,7 @@
 #include "vcl/timer.hxx"
 #include "svx/checklbx.hxx"
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <memory>
 #include <unordered_map>
 
@@ -206,8 +206,8 @@ private:
         ::rtl::OUString maText;
         bool            mbEnabled;
 
-        ::boost::shared_ptr<Action> mpAction;
-        ::boost::shared_ptr<ScMenuFloatingWindow> mpSubMenuWin;
+        ::std::shared_ptr<Action> mpAction;
+        ::std::shared_ptr<ScMenuFloatingWindow> mpSubMenuWin;
 
         MenuItemData();
     };
@@ -349,8 +349,8 @@ private:
     size_t                          mnCurTabStop;
 
     ::std::vector<Member>           maMembers;
-    ::std::auto_ptr<ExtendedData>   mpExtendedData;
-    ::std::auto_ptr<Action>         mpOKAction;
+    ::std::unique_ptr<ExtendedData>   mpExtendedData;
+    ::std::unique_ptr<Action>         mpOKAction;
 
     const Size      maWndSize;  /// hard-coded window size.
     TriState mePrevToggleAllState;

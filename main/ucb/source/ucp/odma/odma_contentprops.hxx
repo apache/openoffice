@@ -62,9 +62,7 @@ namespace odma
 		inline ::rtl::OUString getTitle()		const { return m_sTitle;		}
 		inline ::rtl::OUString getSavedAsName() const { return m_sSavedAsName;	}
 	};
-	typedef ::std::binary_function< ::rtl::Reference<ContentProperties>, ::rtl::OUString,bool> TContentPropertiesFunctorBase;
-	/// binary_function Functor object for class ContentProperties return type is bool
-	class ContentPropertiesMemberFunctor : public TContentPropertiesFunctorBase
+	class ContentPropertiesMemberFunctor
 	{
 		::std::const_mem_fun_t< ::rtl::OUString,ContentProperties> m_aFunction;
 	public:

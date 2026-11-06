@@ -83,7 +83,7 @@ TYPEINIT2( SwCntntNode, SwModify, SwIndexReg )
 namespace AttrSetHandleHelper
 {
 
-void GetNewAutoStyle( boost::shared_ptr<const SfxItemSet>& mrpAttrSet,
+void GetNewAutoStyle( std::shared_ptr<const SfxItemSet>& mrpAttrSet,
                       const SwCntntNode& rNode,
                       SwAttrSet& rNewAttrSet )
 {
@@ -99,7 +99,7 @@ void GetNewAutoStyle( boost::shared_ptr<const SfxItemSet>& mrpAttrSet,
 }
 
 
-void SetParent( boost::shared_ptr<const SfxItemSet>& mrpAttrSet,
+void SetParent( std::shared_ptr<const SfxItemSet>& mrpAttrSet,
                 const SwCntntNode& rNode,
                 const SwFmt* pParentFmt,
                 const SwFmt* pConditionalFmt )
@@ -135,7 +135,7 @@ void SetParent( boost::shared_ptr<const SfxItemSet>& mrpAttrSet,
     }
 }
 
-const SfxPoolItem* Put( boost::shared_ptr<const SfxItemSet>& mrpAttrSet,
+const SfxPoolItem* Put( std::shared_ptr<const SfxItemSet>& mrpAttrSet,
                         const SwCntntNode& rNode,
                         const SfxPoolItem& rAttr )
 {
@@ -146,7 +146,7 @@ const SfxPoolItem* Put( boost::shared_ptr<const SfxItemSet>& mrpAttrSet,
     return pRet;
 }
 
-int Put( boost::shared_ptr<const SfxItemSet>& mrpAttrSet, const SwCntntNode& rNode,
+int Put( std::shared_ptr<const SfxItemSet>& mrpAttrSet, const SwCntntNode& rNode,
          const SfxItemSet& rSet )
 {
     SwAttrSet aNewSet( (SwAttrSet&)*mrpAttrSet );
@@ -176,7 +176,7 @@ int Put( boost::shared_ptr<const SfxItemSet>& mrpAttrSet, const SwCntntNode& rNo
     return nRet;
 }
 
-int Put_BC( boost::shared_ptr<const SfxItemSet>& mrpAttrSet,
+int Put_BC( std::shared_ptr<const SfxItemSet>& mrpAttrSet,
             const SwCntntNode& rNode, const SfxPoolItem& rAttr,
             SwAttrSet* pOld, SwAttrSet* pNew )
 {
@@ -195,7 +195,7 @@ int Put_BC( boost::shared_ptr<const SfxItemSet>& mrpAttrSet,
     return nRet;
 }
 
-int Put_BC( boost::shared_ptr<const SfxItemSet>& mrpAttrSet,
+int Put_BC( std::shared_ptr<const SfxItemSet>& mrpAttrSet,
             const SwCntntNode& rNode, const SfxItemSet& rSet,
             SwAttrSet* pOld, SwAttrSet* pNew )
 {
@@ -231,7 +231,7 @@ int Put_BC( boost::shared_ptr<const SfxItemSet>& mrpAttrSet,
     return nRet;
 }
 
-sal_uInt16 ClearItem_BC( boost::shared_ptr<const SfxItemSet>& mrpAttrSet,
+sal_uInt16 ClearItem_BC( std::shared_ptr<const SfxItemSet>& mrpAttrSet,
                      const SwCntntNode& rNode, sal_uInt16 nWhich,
                      SwAttrSet* pOld, SwAttrSet* pNew )
 {
@@ -244,7 +244,7 @@ sal_uInt16 ClearItem_BC( boost::shared_ptr<const SfxItemSet>& mrpAttrSet,
     return nRet;
 }
 
-sal_uInt16 ClearItem_BC( boost::shared_ptr<const SfxItemSet>& mrpAttrSet,
+sal_uInt16 ClearItem_BC( std::shared_ptr<const SfxItemSet>& mrpAttrSet,
                      const SwCntntNode& rNode,
                      sal_uInt16 nWhich1, sal_uInt16 nWhich2,
                      SwAttrSet* pOld, SwAttrSet* pNew )
@@ -1549,6 +1549,7 @@ sal_Bool SwCntntNode::SetAttr(const SfxPoolItem& rAttr )
 	return bRet;
 }
 #include <svl/itemiter.hxx>
+#include <memory>
 
 sal_Bool SwCntntNode::SetAttr( const SfxItemSet& rSet )
 {

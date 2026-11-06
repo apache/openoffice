@@ -38,6 +38,7 @@
 #include <svx/sdr/contact/viewcontact.hxx>
 #include <vcl/window.hxx>
 #include <svx/sdr/contact/objectcontact.hxx>
+#include <memory>
 
 namespace sd { namespace slidesorter { namespace view {
 
@@ -108,9 +109,9 @@ const SdrPage* ViewCacheContext::GetPage (cache::CacheKey aKey)
 
 
 
-::boost::shared_ptr<std::vector<cache::CacheKey> > ViewCacheContext::GetEntryList (bool bVisible)
+::std::shared_ptr<std::vector<cache::CacheKey> > ViewCacheContext::GetEntryList (bool bVisible)
 {
-	::boost::shared_ptr<std::vector<cache::CacheKey> > pKeys (new std::vector<cache::CacheKey>());
+	::std::shared_ptr<std::vector<cache::CacheKey> > pKeys (new std::vector<cache::CacheKey>());
 
 	model::PageEnumeration aPageEnumeration (
 		bVisible

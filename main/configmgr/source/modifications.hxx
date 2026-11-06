@@ -27,6 +27,7 @@
 #include "sal/config.h"
 
 #include <map>
+#include <memory>
 
 #include "boost/noncopyable.hpp"
 #include "boost/shared_ptr.hpp"
@@ -39,7 +40,7 @@ namespace configmgr {
 class Modifications: private boost::noncopyable {
 public:
     struct Node {
-        typedef boost::shared_ptr< Node > NodePtr;
+        typedef std::shared_ptr< Node > NodePtr;
         typedef std::map< rtl::OUString, NodePtr > Children;
 
         Children children;

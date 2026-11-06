@@ -34,6 +34,7 @@
 
 #include <boost/noncopyable.hpp>
 #include <vector>
+#include <memory>
 
 namespace slideshow {
 namespace internal {
@@ -91,7 +92,7 @@ class BaseNode : public AnimationNode,
 public:
     BaseNode( ::com::sun::star::uno::Reference<
               ::com::sun::star::animations::XAnimationNode> const& xNode,
-              ::boost::shared_ptr<BaseContainerNode> const&        pParent,
+              ::std::shared_ptr<BaseContainerNode> const&        pParent,
               NodeContext const&                                   rContext );
 
     /** Provide the node with a shared_ptr to itself.
@@ -101,7 +102,7 @@ public:
         retrieve a shared_ptr to itself internally, have to
         set that from the outside.
     */
-    void setSelf( const ::boost::shared_ptr< BaseNode >& rSelf );
+    void setSelf( const ::std::shared_ptr< BaseNode >& rSelf );
 
 
 #if defined(VERBOSE) && defined(DBG_UTIL)
@@ -110,7 +111,7 @@ public:
     void showTreeFromWithin() const;
 #endif
 
-    const ::boost::shared_ptr< BaseContainerNode >& getParentNode() const
+    const ::std::shared_ptr< BaseContainerNode >& getParentNode() const
         { return mpParent; }
 
     // Disposable:
@@ -137,7 +138,7 @@ protected:
                                     EventSharedPtr() );
 
     SlideShowContext const&                 getContext() const { return maContext; }
-    ::boost::shared_ptr<BaseNode> const&    getSelf() const { return mpSelf; }
+    ::std::shared_ptr<BaseNode> const&    getSelf() const { return mpSelf; }
 
     bool checkValidNode() const {
         ENSURE_OR_THROW( mpSelf, "no self ptr set!" );
@@ -206,8 +207,8 @@ private:
     ListenerVector                                     maDeactivatingListeners;
     ::com::sun::star::uno::Reference<
         ::com::sun::star::animations::XAnimationNode > mxAnimationNode;
-    ::boost::shared_ptr< BaseContainerNode >           mpParent;
-    ::boost::shared_ptr< BaseNode >                    mpSelf;
+    ::std::shared_ptr< BaseContainerNode >           mpParent;
+    ::std::shared_ptr< BaseNode >                    mpSelf;
     const int*                                         mpStateTransitionTable;
     const double                                       mnStartDelay;
     NodeState                                          meCurrState;
@@ -216,7 +217,7 @@ private:
     const bool                                         mbIsMainSequenceRootNode;
 };
 
-typedef ::boost::shared_ptr< BaseNode > BaseNodeSharedPtr;
+typedef ::std::shared_ptr< BaseNode > BaseNodeSharedPtr;
 
 } // namespace internal
 } // namespace slideshow

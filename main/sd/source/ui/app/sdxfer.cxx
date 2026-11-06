@@ -617,6 +617,7 @@ sal_Bool SdTransferable::GetData( const DataFlavor& rFlavor )
 
 /* testcode
 #include <sfx2/docfile.hxx>
+#include <memory>
 */
 
 sal_Bool SdTransferable::WriteObject( SotStorageStreamRef& rxOStm, void* pObject, sal_uInt32 nObjectType, const DataFlavor& )
@@ -820,7 +821,7 @@ SdDrawDocument* SdTransferable::GetSourceDoc (void) const
 
 
 
-void SdTransferable::AddUserData (const ::boost::shared_ptr<UserData>& rpData)
+void SdTransferable::AddUserData (const ::std::shared_ptr<UserData>& rpData)
 {
 	maUserData.push_back(rpData);
 }
@@ -828,7 +829,7 @@ void SdTransferable::AddUserData (const ::boost::shared_ptr<UserData>& rpData)
 
 
 
-void SdTransferable::RemoveUserData (const ::boost::shared_ptr<UserData>& rpData)
+void SdTransferable::RemoveUserData (const ::std::shared_ptr<UserData>& rpData)
 {
 	maUserData.erase(::std::find(maUserData.begin(), maUserData.end(), rpData));
 }
@@ -844,12 +845,12 @@ sal_Int32 SdTransferable::GetUserDataCount (void) const
 
 
 
-::boost::shared_ptr<SdTransferable::UserData> SdTransferable::GetUserData (const sal_Int32 nIndex) const
+::std::shared_ptr<SdTransferable::UserData> SdTransferable::GetUserData (const sal_Int32 nIndex) const
 {
 	if (nIndex>=0 && nIndex<sal_Int32(maUserData.size()))
 		return maUserData[nIndex];
 	else
-		return ::boost::shared_ptr<UserData>();
+		return ::std::shared_ptr<UserData>();
 }
 
 

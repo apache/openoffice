@@ -43,10 +43,10 @@ template< typename value_type,
           typename difference_type >
 inline value_type get_mask( difference_type d )
 {
-    BOOST_STATIC_ASSERT(bits_per_pixel > 0);
-    BOOST_STATIC_ASSERT(sizeof(value_type)*8 % bits_per_pixel == 0);
-    BOOST_STATIC_ASSERT(sizeof(value_type)*8 / bits_per_pixel > 1);
-    BOOST_STATIC_ASSERT(vigra::TypeTraits<value_type>::isPOD::asBool);
+    static_assert(bits_per_pixel > 0);
+    static_assert(sizeof(value_type)*8 % bits_per_pixel == 0);
+    static_assert(sizeof(value_type)*8 / bits_per_pixel > 1);
+    static_assert(vigra::TypeTraits<value_type>::isPOD::asBool);
 
     const unsigned int nIntraWordPositions( sizeof(value_type)*8 / bits_per_pixel );
 

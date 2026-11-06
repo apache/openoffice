@@ -35,7 +35,7 @@
 
 #include <unordered_map>
 #include <memory>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 
 /* An interface to get the clipboard data in either
@@ -57,7 +57,7 @@ public:
   virtual com::sun::star::uno::Any getOOoData() = 0;
 };
 
-typedef std::auto_ptr<DataProvider> DataProviderPtr_t;
+typedef std::unique_ptr<DataProvider> DataProviderPtr_t;
 
 
 //################################
@@ -138,6 +138,6 @@ private:
   mutable OfficeOnlyTypes maOfficeOnlyTypes;
 };
 
-typedef boost::shared_ptr<DataFlavorMapper> DataFlavorMapperPtr_t;
+typedef std::shared_ptr<DataFlavorMapper> DataFlavorMapperPtr_t;
 
 #endif

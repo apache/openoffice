@@ -32,6 +32,7 @@
 #include <vcl/image.hxx>
 #include <vcl/svapp.hxx>
 #include <svtools/colorcfg.hxx>
+#include <memory>
 
 namespace sd { namespace slidesorter { namespace view {
 
@@ -68,7 +69,7 @@ ColorData HGBAdapt (
 
 
 
-Theme::Theme (const ::boost::shared_ptr<controller::Properties>& rpProperties)
+Theme::Theme (const ::std::shared_ptr<controller::Properties>& rpProperties)
 	: mbIsHighContrastMode(false),
 	  maBackgroundColor(rpProperties->GetBackgroundColor().GetColor()),
 	  maPageBackgroundColor(COL_WHITE),
@@ -121,7 +122,7 @@ Theme::Theme (const ::boost::shared_ptr<controller::Properties>& rpProperties)
 
 
 
-void Theme::Update (const ::boost::shared_ptr<controller::Properties>& rpProperties)
+void Theme::Update (const ::std::shared_ptr<controller::Properties>& rpProperties)
 {
 	const bool bSavedHighContrastMode (mbIsHighContrastMode);
 	mbIsHighContrastMode = rpProperties->IsHighContrastModeActive();
@@ -246,11 +247,11 @@ void Theme::Update (const ::boost::shared_ptr<controller::Properties>& rpPropert
 
 
 
-::boost::shared_ptr<Font> Theme::GetFont (
+::std::shared_ptr<Font> Theme::GetFont (
 	const FontType eType,
 	const OutputDevice& rDevice)
 {
-	::boost::shared_ptr<Font> pFont;
+	::std::shared_ptr<Font> pFont;
 
 	switch (eType)
 	{

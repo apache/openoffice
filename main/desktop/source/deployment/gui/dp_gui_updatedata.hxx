@@ -28,7 +28,7 @@
 #include "rtl/ustring.hxx"
 #include "com/sun/star/uno/Reference.hxx"
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 
 namespace com { namespace sun { namespace star { namespace deployment {

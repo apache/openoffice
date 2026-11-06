@@ -33,6 +33,7 @@
 #include <com/sun/star/chart2/XChartType.hpp>
 #include <com/sun/star/chart2/XDataSeriesContainer.hpp>
 #include <com/sun/star/drawing/LineJoint.hpp>
+#include <memory>
 
 #include "LineProperties.hxx"
 #include "UserDefinedProperties.hxx"
@@ -135,7 +136,7 @@ namespace chart
 namespace wrapper
 {
 
-MinMaxLineWrapper::MinMaxLineWrapper( ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact )
+MinMaxLineWrapper::MinMaxLineWrapper( ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact )
         : m_spChart2ModelContact( spChart2ModelContact )
         , m_aEventListenerContainer( m_aMutex )
         , m_aWrappedLineJointProperty( C2U("LineJoint"), uno::makeAny( drawing::LineJoint_NONE ))

@@ -26,7 +26,7 @@
 
 #include <com/sun/star/uno/Sequence.hxx>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 
 /* Definition of Color class */
@@ -49,7 +49,7 @@ namespace cppcanvas
         virtual ::com::sun::star::uno::Sequence< double > 	getDeviceColor( IntSRGBA aSRGBA ) const = 0;
     };
 
-    typedef ::boost::shared_ptr< ::cppcanvas::Color > ColorSharedPtr;
+    typedef ::std::shared_ptr< ::cppcanvas::Color > ColorSharedPtr;
 
     inline sal_uInt8 getRed( Color::IntSRGBA nCol )
     {

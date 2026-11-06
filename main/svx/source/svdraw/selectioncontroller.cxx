@@ -26,6 +26,7 @@
 
 #include <tools/debug.hxx>
 #include <svx/selectioncontroller.hxx>
+#include <memory>
 
 namespace sdr
 {
@@ -97,7 +98,7 @@ bool SelectionController::PasteObjModel( const SdrModel& /*rModel*/ )
 	return false;
 }
 
-bool SelectionController::TakeFormatPaintBrush( boost::shared_ptr< SfxItemSet >& /*rFormatSet*/  )
+bool SelectionController::TakeFormatPaintBrush( std::shared_ptr< SfxItemSet >& /*rFormatSet*/  )
 {
     return false;
 }

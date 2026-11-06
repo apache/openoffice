@@ -100,7 +100,7 @@ struct hashOWString_Impl
 		{ return rName.hashCode(); }
 };
 
-typedef unordered_map
+typedef std::unordered_map
 <
 	OUString,
 	Reference<XInterface >,

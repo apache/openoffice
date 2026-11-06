@@ -1379,8 +1379,8 @@ sal_Bool SfxInternetPage::FillItemSet( SfxItemSet& rSet )
     DBG_ASSERT( eState != S_Init, "*SfxInternetPage::FillItemSet(): state init is not acceptable at this point!" );
 
 	sal_Bool						bEnableReload = sal_False;
-	::std::auto_ptr< String >	aURL( NULL );
-	::std::auto_ptr< String >	aFrame( NULL );
+	::std::unique_ptr< String >	aURL( nullptr );
+	::std::unique_ptr< String >	aFrame( nullptr );
 	sal_uIntPtr						nDelay = 0;
 
 	switch( eState )
@@ -1389,16 +1389,16 @@ sal_Bool SfxInternetPage::FillItemSet( SfxItemSet& rSet )
 			break;
 		case S_Reload:
 			bEnableReload = sal_True;
-			aURL = ::std::auto_ptr< String >( new String() );
-			aFrame = ::std::auto_ptr< String >( new String() );
+			aURL = ::std::unique_ptr< String >( new String() );
+			aFrame = ::std::unique_ptr< String >( new String() );
 			nDelay = static_cast<sal_uIntPtr>(aNFReload.GetValue());
 			break;
 		case S_Forward:
 			DBG_ASSERT( aEDForwardURL.GetText().Len(), "+SfxInternetPage::FillItemSet(): empty URL should be not possible for forward option!" );
 
 			bEnableReload = sal_True;
-            aURL = ::std::auto_ptr< String >( new String( URIHelper::SmartRel2Abs( INetURLObject(aBaseURL), aEDForwardURL.GetText(), URIHelper::GetMaybeFileHdl(), true ) ) );
-			aFrame = ::std::auto_ptr< String >( new String( aCBFrame.GetText() ) );
+            aURL = ::std::unique_ptr< String >( new String( URIHelper::SmartRel2Abs( INetURLObject(aBaseURL), aEDForwardURL.GetText(), URIHelper::GetMaybeFileHdl(), true ) ) );
+			aFrame = ::std::unique_ptr< String >( new String( aCBFrame.GetText() ) );
 			nDelay = static_cast<sal_uIntPtr>(aNFAfter.GetValue());
 			break;
               default:

@@ -32,7 +32,7 @@
 #include <basegfx/polygon/b2dpolypolygon.hxx>
 #include <basegfx/numeric/ftools.hxx>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include "dx_canvasfont.hxx"
 
 namespace basegfx
@@ -114,11 +114,11 @@ namespace dxcanvas
 
         bool drawGdiPlusBitmap( const GraphicsSharedPtr& rGraphics,
                                 const BitmapSharedPtr&	 rBitmap );
-        bool drawDIBits( const ::boost::shared_ptr< Gdiplus::Graphics >& rGraphics,
+        bool drawDIBits( const ::std::shared_ptr< Gdiplus::Graphics >& rGraphics,
                          const BITMAPINFO&                               rBI,
                          const void*                                     pBits );
 
-        bool drawRGBABits( const ::boost::shared_ptr< Gdiplus::Graphics >& rGraphics,
+        bool drawRGBABits( const ::std::shared_ptr< Gdiplus::Graphics >& rGraphics,
                            const RawRGBABitmap&							   rRawRGBAData );
 
         BitmapSharedPtr bitmapFromXBitmap( const ::com::sun::star::uno::Reference<

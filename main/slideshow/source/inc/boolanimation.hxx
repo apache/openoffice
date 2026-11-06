@@ -24,6 +24,7 @@
 #ifndef INCLUDED_SLIDESHOW_BOOLANIMATION_HXX
 #define INCLUDED_SLIDESHOW_BOOLANIMATION_HXX
 
+#include <memory>
 #include "animation.hxx"
 
 
@@ -65,7 +66,7 @@ namespace slideshow
             virtual ValueType getUnderlyingValue() const = 0;
         };
 
-        typedef ::boost::shared_ptr< BoolAnimation > BoolAnimationSharedPtr;
+        typedef ::std::shared_ptr< BoolAnimation > BoolAnimationSharedPtr;
 
     }
 }

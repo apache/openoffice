@@ -24,7 +24,7 @@
 
 #include <map>
 #include <list>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 ///////////////////////////////////////////////////////////////////////
 
@@ -52,7 +52,7 @@ private:
 	rtl::OUString maName;
 	ElementConfigType mnType;
 };
-typedef boost::shared_ptr< ElementConfig > ElementConfigPtr;
+typedef std::shared_ptr< ElementConfig > ElementConfigPtr;
 typedef std::list< ElementConfigPtr > ElementConfigList;
 
 ///////////////////////////////////////////////////////////////////////

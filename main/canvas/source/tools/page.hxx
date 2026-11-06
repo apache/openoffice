@@ -32,14 +32,14 @@
 
 #include <list>
 #include <vector>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include "surfacerect.hxx"
 
 namespace canvas
 {
 	class PageFragment;
 
-	typedef ::boost::shared_ptr< PageFragment > FragmentSharedPtr;
+	typedef ::std::shared_ptr< PageFragment > FragmentSharedPtr;
 
     /** One page of IRenderModule-provided texture space
      */
@@ -66,7 +66,7 @@ namespace canvas
         bool isValidLocation( const SurfaceRect& r ) const;
 	};
 
-	typedef ::boost::shared_ptr< Page > PageSharedPtr;
+	typedef ::std::shared_ptr< Page > PageSharedPtr;
 
 
     /** A part of a page, which gets allocated to a surface

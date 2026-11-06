@@ -25,7 +25,7 @@
 
 #include <string.h>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 #include <com/sun/star/xml/dom/events/XDocumentEvent.hpp>
 
@@ -84,7 +84,7 @@ namespace DOM
         if (m_aNodePtr != NULL)
         {
             // get current data
-            ::boost::shared_ptr<xmlChar const> const pContent(
+            ::std::shared_ptr<xmlChar const> const pContent(
                 xmlNodeGetContent(m_aNodePtr), xmlFree);
             OString aData(reinterpret_cast<sal_Char const*>(pContent.get()));
             OUString tmp( aData.getStr(), aData.getLength(), RTL_TEXTENCODING_UTF8);
@@ -154,7 +154,7 @@ namespace DOM
         if (m_aNodePtr != NULL)
         {
             // get current data
-            ::boost::shared_ptr<xmlChar const> const pContent(
+            ::std::shared_ptr<xmlChar const> const pContent(
                 xmlNodeGetContent(m_aNodePtr), xmlFree);
             OString aData(reinterpret_cast<sal_Char const*>(pContent.get()));
             OUString tmp( aData.getStr(), aData.getLength(), RTL_TEXTENCODING_UTF8);
@@ -188,7 +188,7 @@ namespace DOM
         if (m_aNodePtr != NULL)
         {
             // get current data
-            ::boost::shared_ptr<xmlChar const> const pContent(
+            ::std::shared_ptr<xmlChar const> const pContent(
                 xmlNodeGetContent(m_aNodePtr), xmlFree);
             OString aData(reinterpret_cast<sal_Char const*>(pContent.get()));
             OUString tmp( aData.getStr(), aData.getLength(), RTL_TEXTENCODING_UTF8);
@@ -241,7 +241,7 @@ namespace DOM
         if (m_aNodePtr != NULL)
         {
             // get current data
-            ::boost::shared_ptr<xmlChar const> const pContent(
+            ::std::shared_ptr<xmlChar const> const pContent(
                 xmlNodeGetContent(m_aNodePtr), xmlFree);
             OString aData(reinterpret_cast<sal_Char const*>(pContent.get()));
             OUString tmp( aData.getStr(), aData.getLength(), RTL_TEXTENCODING_UTF8);

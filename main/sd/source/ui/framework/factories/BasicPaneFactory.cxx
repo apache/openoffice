@@ -498,7 +498,7 @@ Reference<XResource> BasicPaneFactory::CreateChildWindowPane (
     {
         // Create the corresponding shell and determine the id of the child window.
         sal_uInt16 nChildWindowId = 0;
-        ::std::auto_ptr<SfxShell> pShell;
+        ::std::unique_ptr<SfxShell> pShell;
         switch (rDescriptor.mePaneId)
         {
             case LeftImpressPaneId:

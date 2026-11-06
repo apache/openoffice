@@ -848,7 +848,7 @@ FILE* CUPSManager::startSpool( const OUString& rPrintername, bool bQuickCommand 
 #endif
 }
 
-struct less_ppd_key : public ::std::binary_function<double, double, bool>
+struct less_ppd_key 
 {
     bool operator()(const PPDKey* left, const PPDKey* right)
     { return left->getOrderDependency() < right->getOrderDependency(); }

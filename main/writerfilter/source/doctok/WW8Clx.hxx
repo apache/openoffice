@@ -25,6 +25,7 @@
 #define INCLUDED_WW8_CLX_HXX
 
 #include <resources.hxx>
+#include <memory>
 
 #ifndef INCLUDED_WW8_OUTPUT_WITH_DEPTH_HXX
 #include <WW8OutputWithDepth.hxx>
@@ -50,7 +51,7 @@ class WW8Clx : public WW8StructBase
 
 public:
     /// Pointer to Clx.
-    typedef boost::shared_ptr<WW8Clx> Pointer_t;
+    typedef std::shared_ptr<WW8Clx> Pointer_t;
 
     WW8Clx(WW8Stream & rStream,
            sal_uInt32 nOffset, sal_uInt32 nCount);

@@ -26,6 +26,7 @@
 #include "DocumentHelper.hxx"
 #include "sdpage.hxx"
 #include <tools/urlobj.hxx>
+#include <memory>
 
 namespace sd { namespace sidebar {
 
@@ -39,8 +40,8 @@ MasterPageDescriptor::MasterPageDescriptor (
     const String& rsPageName,
     const String& rsStyleName,
     const bool bIsPrecious,
-    const ::boost::shared_ptr<PageObjectProvider>& rpPageObjectProvider,
-    const ::boost::shared_ptr<PreviewProvider>& rpPreviewProvider)
+    const ::std::shared_ptr<PageObjectProvider>& rpPageObjectProvider,
+    const ::std::shared_ptr<PreviewProvider>& rpPreviewProvider)
     : maToken(MasterPageContainer::NIL_TOKEN),
       meOrigin(eOrigin),
       msURL(INetURLObject(rsURL).GetMainURL(INetURLObject::DECODE_UNAMBIGUOUS)),
@@ -110,7 +111,7 @@ Image MasterPageDescriptor::GetPreview (MasterPageContainer::PreviewSize eSize)
 
 
 
-::std::auto_ptr<std::vector<MasterPageContainerChangeEvent::EventType> >
+::std::unique_ptr<std::vector<MasterPageContainerChangeEvent::EventType> >
     MasterPageDescriptor::Update (
         const MasterPageDescriptor& rDescriptor)
 {
@@ -162,7 +163,7 @@ Image MasterPageDescriptor::GetPreview (MasterPageContainer::PreviewSize eSize)
      }
 
      // Prepare the list of event types that will be returned.
-     ::std::auto_ptr<std::vector<MasterPageContainerChangeEvent::EventType> > pResult;
+     ::std::unique_ptr<std::vector<MasterPageContainerChangeEvent::EventType> > pResult;
      if (bDataChanged || bIndexChanged || bPreviewChanged)
      {
          pResult.reset(new std::vector<MasterPageContainerChangeEvent::EventType>());
@@ -219,7 +220,7 @@ bool MasterPageDescriptor::UpdatePageObject (
             // will create the real one.
             maSmallPreview = Image();
             maLargePreview = Image();
-            mpPreviewProvider = ::boost::shared_ptr<PreviewProvider>(new PagePreviewProvider());
+            mpPreviewProvider = ::std::shared_ptr<PreviewProvider>(new PagePreviewProvider());
         }
         else
         {

@@ -26,7 +26,7 @@
 
 #include <utility>
 #include <vector>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <cppuhelper/weakref.hxx>
 #include <rtl/ref.hxx>
 #include <vcl/ctrl.hxx>

@@ -26,7 +26,7 @@
 
 #include <com/sun/star/rendering/XCanvas.hpp>
 #include <com/sun/star/rendering/XIntegerBitmap.hpp>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <basegfx/vector/b2ivector.hxx>
 #include <basegfx/point/b2dpoint.hxx>
 #include <basegfx/range/b2drange.hxx>
@@ -83,7 +83,7 @@ namespace dxcanvas
         bool                 mbAlpha;
 	};
 
-    typedef ::boost::shared_ptr< DXBitmap > DXBitmapSharedPtr;
+    typedef ::std::shared_ptr< DXBitmap > DXBitmapSharedPtr;
 }
 
 #endif

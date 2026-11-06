@@ -51,6 +51,7 @@
 
 #include <boost/bind.hpp>
 #include <algorithm>
+#include <memory>
 
 using namespace com::sun::star;
 using namespace com::sun::star::uno;
@@ -62,7 +63,7 @@ class RehearseTimingsActivity::WakeupEvent : public Event,
                                              private ::boost::noncopyable
 {
 public:
-    WakeupEvent( boost::shared_ptr< ::canvas::tools::ElapsedTime > const& pTimeBase,
+    WakeupEvent( std::shared_ptr< ::canvas::tools::ElapsedTime > const& pTimeBase,
                  ActivitySharedPtr const&                                 rActivity,
                  ActivitiesQueue &                                        rActivityQueue ) :
 #if OSL_DEBUG_LEVEL > 1
@@ -109,7 +110,7 @@ public:
 private:
     ::canvas::tools::ElapsedTime    maTimer;
     double                          mnNextTime;
-    boost::weak_ptr<Activity>       mpActivity;
+    std::weak_ptr<Activity>       mpActivity;
     ActivitiesQueue&                mrActivityQueue;
 };
 
@@ -198,10 +199,10 @@ RehearseTimingsActivity::~RehearseTimingsActivity()
     }
 }
 
-boost::shared_ptr<RehearseTimingsActivity> RehearseTimingsActivity::create(
+std::shared_ptr<RehearseTimingsActivity> RehearseTimingsActivity::create(
     const SlideShowContext& rContext )
 {
-    boost::shared_ptr<RehearseTimingsActivity> pActivity(
+    std::shared_ptr<RehearseTimingsActivity> pActivity(
         new RehearseTimingsActivity( rContext ));
 
     pActivity->mpMouseHandler.reset(

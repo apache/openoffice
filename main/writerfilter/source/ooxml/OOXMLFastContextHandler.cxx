@@ -32,6 +32,7 @@
 #include <ooxml/resourceids.hxx>
 #include <doctok/sprmids.hxx>
 #include <ooxml/OOXMLnamespaceids.hxx>
+#include <memory>
 #include "OOXMLFastContextHandler.hxx"
 #include "OOXMLFactory.hxx"
 #include "Handler.hxx"
@@ -1776,7 +1777,7 @@ void OOXMLFastContextHandlerTextTable::lcl_startFastElement
     mpParserState->startTable();
     mnTableDepth++;
 
-    boost::shared_ptr<OOXMLPropertySet> pProps( new OOXMLPropertySetImpl );
+    std::shared_ptr<OOXMLPropertySet> pProps( new OOXMLPropertySetImpl );
     {
         OOXMLValue::Pointer_t pVal
             (new OOXMLIntegerValue(mnTableDepth));

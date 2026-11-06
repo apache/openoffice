@@ -160,6 +160,7 @@
 #include <cppuhelper/exc_hlp.hxx>
 #include <unotools/confignode.hxx>
 #include <helpids.hrc>
+#include <memory>
 
 #include <ReportControllerObserver.hxx>
 
@@ -189,7 +190,7 @@ using namespace ::cppu;
 namespace
 {
     // comparing two PropertyValue instances
-    struct PropertyValueCompare : public ::std::binary_function< beans::PropertyValue, ::rtl::OUString , bool >
+    struct PropertyValueCompare 
     {
 	    bool operator() (const beans::PropertyValue& x, const ::rtl::OUString& y) const
 	    {
@@ -346,7 +347,7 @@ void OReportController::disposing()
 	{
         SvtViewOptions aDlgOpt( E_WINDOW, String::CreateFromInt32( RID_GROUPS_SORTING ) );
         aDlgOpt.SetWindowState( ::rtl::OUString::createFromAscii( m_pGroupsFloater->GetWindowState(WINDOWSTATE_MASK_ALL).GetBuffer() ) );
-		::std::auto_ptr<FloatingWindow> aTemp(m_pGroupsFloater);
+		::std::unique_ptr<FloatingWindow> aTemp(m_pGroupsFloater);
 		m_pGroupsFloater = NULL;
 	}
 
@@ -369,7 +370,7 @@ void OReportController::disposing()
     {
         try
 	    {
-            ::boost::shared_ptr<OSectionWindow> pSectionWindow;
+            ::std::shared_ptr<OSectionWindow> pSectionWindow;
             if ( getDesignView() )
                 pSectionWindow = getDesignView()->getMarkedSection();
             if ( pSectionWindow )
@@ -590,7 +591,7 @@ FeatureState OReportController::GetState(sal_uInt16 _nId) const
 			aReturn.bEnabled = isEditable() && getDesignView()->HasSelection() && !getDesignView()->isHandleEvent(_nId);
             if ( aReturn.bEnabled )
             {
-                ::boost::shared_ptr<OSectionWindow> pSectionWindow = getDesignView()->getMarkedSection();
+                ::std::shared_ptr<OSectionWindow> pSectionWindow = getDesignView()->getMarkedSection();
                 if ( pSectionWindow )
                     aReturn.bEnabled = !pSectionWindow->getReportSection().isUiActive();
             }
@@ -1141,7 +1142,7 @@ void OReportController::Execute(sal_uInt16 _nId, const Sequence< PropertyValue >
             break;
         case SID_TERMINATE_INPLACEACTIVATION:
             {
-                ::boost::shared_ptr<OSectionWindow> pSection = getDesignView()->getMarkedSection();
+                ::std::shared_ptr<OSectionWindow> pSection = getDesignView()->getMarkedSection();
                 if ( pSection )
                     pSection->getReportSection().deactivateOle();
             }
@@ -2433,7 +2434,7 @@ void OReportController::openPageDialog(const uno::Reference<report::XSection>& _
 
 	try
 	{
-		::std::auto_ptr<SfxItemSet> pDescriptor(new SfxItemSet(*pPool, pRanges));
+		::std::unique_ptr<SfxItemSet> pDescriptor(new SfxItemSet(*pPool, pRanges));
 		// fill it
 		if ( _xSection.is() )
 			pDescriptor->Put(SvxBrushItem(::Color(_xSection->getBackColor()),ITEMID_BRUSH));
@@ -2777,7 +2778,7 @@ uno::Any SAL_CALL OReportController::getViewData(void)
             aViewData.put( "CollapsedSections", aCollapsedSections );
         }
 
-        ::boost::shared_ptr<OSectionWindow> pSectionWindow = getDesignView()->getMarkedSection();
+        ::std::shared_ptr<OSectionWindow> pSectionWindow = getDesignView()->getMarkedSection();
         if ( pSectionWindow.get() )
         {
             aViewData.put( "MarkedSection", (sal_Int32)pSectionWindow->getReportSection().getPage()->GetPageNum() );
@@ -3009,7 +3010,7 @@ uno::Reference< sdbc::XRowSet > OReportController::getRowSet()
         xRowSetProp->setPropertyValue( PROPERTY_ACTIVECONNECTION, uno::makeAny( getConnection() ) );
         xRowSetProp->setPropertyValue( PROPERTY_APPLYFILTER, uno::makeAny( sal_True ) );
 
-        ::boost::shared_ptr<AnyConverter> aNoConverter(new AnyConverter());
+        ::std::shared_ptr<AnyConverter> aNoConverter(new AnyConverter());
         TPropertyNamePair aPropertyMediation;
         aPropertyMediation.insert( TPropertyNamePair::value_type( PROPERTY_COMMAND, TPropertyConverter(PROPERTY_COMMAND,aNoConverter) ) );
         aPropertyMediation.insert( TPropertyNamePair::value_type( PROPERTY_COMMANDTYPE, TPropertyConverter(PROPERTY_COMMANDTYPE,aNoConverter) ) );
@@ -3060,7 +3061,7 @@ void OReportController::insertGraphic()
 	}
 }
 // -----------------------------------------------------------------------------
-::boost::shared_ptr<rptui::OReportModel> OReportController::getSdrModel() const
+::std::shared_ptr<rptui::OReportModel> OReportController::getSdrModel() const
 {
     return m_aReportModel;
 }
@@ -3149,7 +3150,7 @@ void OReportController::createControl(const Sequence< PropertyValue >& _aArgs,co
 {
     SequenceAsHashMap aMap(_aArgs);
     getDesignView()->setMarked(_xSection ,sal_True);
-    ::boost::shared_ptr<OSectionWindow> pSectionWindow = getDesignView()->getMarkedSection();
+    ::std::shared_ptr<OSectionWindow> pSectionWindow = getDesignView()->getMarkedSection();
     if ( !pSectionWindow )
         return;
 
@@ -3325,7 +3326,7 @@ void OReportController::addPairControls(const Sequence< PropertyValue >& aArgs)
     getDesignView()->unmarkAllObjects(NULL);
 	//////////////////////////////////////////////////////////////////////
 	// Anhand des FormatKeys wird festgestellt, welches Feld benoetigt wird
-    ::boost::shared_ptr<OSectionWindow> pSectionWindow[2];
+    ::std::shared_ptr<OSectionWindow> pSectionWindow[2];
     pSectionWindow[0] = getDesignView()->getMarkedSection();
 
 	if ( !pSectionWindow[0] )
@@ -3368,7 +3369,7 @@ void OReportController::addPairControls(const Sequence< PropertyValue >& aArgs)
 		    // LLA: new feature, add the Label in dependency of the given DND_ACTION one section up, normal or one section down
 		    sal_Int8 nDNDAction = aMap.getUnpackedValueOrDefault(::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("DNDAction")), sal_Int8(0));
 		    pSectionWindow[1] = pSectionWindow[0];
-		    // ::boost::shared_ptr<OReportSection> pReportSectionPost;
+		    // ::std::shared_ptr<OReportSection> pReportSectionPost;
 		    sal_Bool bLabelAboveTextField = nDNDAction == DND_ACTION_COPY;
 		    if ( bLabelAboveTextField || nDNDAction == DND_ACTION_LINK )
 		    {
@@ -3652,7 +3653,7 @@ void OReportController::addPairControls(const Sequence< PropertyValue >& aArgs)
 OSectionView* OReportController::getCurrentSectionView() const
 {
     OSectionView* pSectionView = NULL;
-    ::boost::shared_ptr<OSectionWindow> pSectionWindow = getDesignView()->getMarkedSection();
+    ::std::shared_ptr<OSectionWindow> pSectionWindow = getDesignView()->getMarkedSection();
 	if ( pSectionWindow.get() )
         pSectionView = &pSectionWindow->getReportSection().getSectionView();
     return pSectionView;
@@ -3972,7 +3973,7 @@ void OReportController::createGroupSection(const bool _bUndo,const bool _bHeader
 // -----------------------------------------------------------------------------
 void OReportController::collapseSection(const bool _bCollapse)
 {
-    ::boost::shared_ptr<OSectionWindow> pSection = getDesignView()->getMarkedSection();
+    ::std::shared_ptr<OSectionWindow> pSection = getDesignView()->getMarkedSection();
     if ( pSection )
     {
         pSection->setCollapsed(_bCollapse);
@@ -3981,10 +3982,10 @@ void OReportController::collapseSection(const bool _bCollapse)
 // -----------------------------------------------------------------------------
 void OReportController::markSection(const bool _bNext)
 {
-    ::boost::shared_ptr<OSectionWindow> pSection = getDesignView()->getMarkedSection();
+    ::std::shared_ptr<OSectionWindow> pSection = getDesignView()->getMarkedSection();
     if ( pSection )
     {
-        ::boost::shared_ptr<OSectionWindow> pPrevSection = getDesignView()->getMarkedSection(_bNext ? POST : PREVIOUS);
+        ::std::shared_ptr<OSectionWindow> pPrevSection = getDesignView()->getMarkedSection(_bNext ? POST : PREVIOUS);
         if ( pPrevSection != pSection && pPrevSection )
             select(uno::makeAny(pPrevSection->getReportSection().getSection()));
         else
@@ -4010,7 +4011,7 @@ void OReportController::createDefaultControl(const uno::Sequence< beans::Propert
         const ::rtl::OUString sKeyModifier(RTL_CONSTASCII_USTRINGPARAM("KeyModifier"));
         const beans::PropertyValue* pIter = _aArgs.getConstArray();
         const beans::PropertyValue* pEnd  = pIter + _aArgs.getLength();
-        const beans::PropertyValue* pKeyModifier = ::std::find_if(pIter,pEnd,::std::bind2nd(PropertyValueCompare(),boost::cref(sKeyModifier)));
+        const beans::PropertyValue* pKeyModifier = ::std::find_if(pIter,pEnd,[&sKeyModifier](auto& _x) { return PropertyValueCompare()(_x, sKeyModifier); });
         sal_Int16 nKeyModifier = 0;
         if ( pKeyModifier == pEnd || ((pKeyModifier->Value >>= nKeyModifier) && nKeyModifier == KEY_MOD1) )
         {
@@ -4230,7 +4231,7 @@ void OReportController::impl_fillCustomShapeState_nothrow(const char* _pCustomSh
 }
 
 // -----------------------------------------------------------------------------
-::boost::shared_ptr<OSectionWindow> OReportController::getSectionWindow(const ::com::sun::star::uno::Reference< ::com::sun::star::report::XSection>& _xSection) const
+::std::shared_ptr<OSectionWindow> OReportController::getSectionWindow(const ::com::sun::star::uno::Reference< ::com::sun::star::report::XSection>& _xSection) const
 {
     if ( getDesignView() )
     {
@@ -4238,7 +4239,7 @@ void OReportController::impl_fillCustomShapeState_nothrow(const char* _pCustomSh
     }
 
     // throw NullPointerException?
-    ::boost::shared_ptr<OSectionWindow> pEmpty;
+    ::std::shared_ptr<OSectionWindow> pEmpty;
     return pEmpty;
 }
 
@@ -4267,13 +4268,13 @@ void OReportController::openZoomDialog()
 		pPool->FreezeIdRanges();						// the same
         try
         {
-		    ::std::auto_ptr<SfxItemSet> pDescriptor(new SfxItemSet(*pPool, pRanges));
+		    ::std::unique_ptr<SfxItemSet> pDescriptor(new SfxItemSet(*pPool, pRanges));
 		    // fill it
             SvxZoomItem aZoomItem( m_eZoomType, m_nZoomValue, SID_ATTR_ZOOM );
             aZoomItem.SetValueSet(SVX_ZOOM_ENABLE_100|SVX_ZOOM_ENABLE_WHOLEPAGE|SVX_ZOOM_ENABLE_PAGEWIDTH);
             pDescriptor->Put(aZoomItem);
 
-            ::std::auto_ptr<AbstractSvxZoomDialog> pDlg( pFact->CreateSvxZoomDialog(NULL, *pDescriptor.get()) );
+            ::std::unique_ptr<AbstractSvxZoomDialog> pDlg( pFact->CreateSvxZoomDialog(NULL, *pDescriptor.get()) );
 		    pDlg->SetLimits( 20, 400 );
 		    bool bCancel = ( RET_CANCEL == pDlg->Execute() );
 
@@ -4395,7 +4396,7 @@ SfxUndoManager& OReportController::getUndoManager() const
     DBG_TESTSOLARMUTEX();
         // this is expected to be called during UI actions, so the SM is assumed to be locked
 
-    ::boost::shared_ptr< OReportModel > pReportModel( getSdrModel() );
+    ::std::shared_ptr< OReportModel > pReportModel( getSdrModel() );
     ENSURE_OR_THROW( !!pReportModel, "no access to our model" );
 
     SfxUndoManager* pUndoManager( pReportModel->GetSdrUndoManager() );

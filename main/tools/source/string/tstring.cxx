@@ -99,7 +99,7 @@ xub_StrLen ImplStringLen( const sal_Unicode* pStr )
 ByteString ByteString::CreateFromInt32( sal_Int32 n, sal_Int16 nRadix )
 {
 	sal_Char aBuf[RTL_STR_MAX_VALUEOFINT32];
-    BOOST_STATIC_ASSERT(RTL_STR_MAX_VALUEOFINT32 <= STRING_MAXLEN);
+    static_assert(RTL_STR_MAX_VALUEOFINT32 <= STRING_MAXLEN);
 	return ByteString(
         aBuf,
         static_cast< xub_StrLen >(rtl_str_valueOfInt32( aBuf, n, nRadix )) );
@@ -110,7 +110,7 @@ ByteString ByteString::CreateFromInt32( sal_Int32 n, sal_Int16 nRadix )
 ByteString ByteString::CreateFromInt64( sal_Int64 n, sal_Int16 nRadix )
 {
 	sal_Char aBuf[RTL_STR_MAX_VALUEOFINT64];
-    BOOST_STATIC_ASSERT(RTL_STR_MAX_VALUEOFINT64 <= STRING_MAXLEN);
+    static_assert(RTL_STR_MAX_VALUEOFINT64 <= STRING_MAXLEN);
 	return ByteString(
         aBuf,
         static_cast< xub_StrLen >(rtl_str_valueOfInt64( aBuf, n, nRadix )) );
@@ -121,7 +121,7 @@ ByteString ByteString::CreateFromInt64( sal_Int64 n, sal_Int16 nRadix )
 ByteString ByteString::CreateFromFloat( float f )
 {
 	sal_Char aBuf[RTL_STR_MAX_VALUEOFFLOAT];
-    BOOST_STATIC_ASSERT(RTL_STR_MAX_VALUEOFFLOAT <= STRING_MAXLEN);
+    static_assert(RTL_STR_MAX_VALUEOFFLOAT <= STRING_MAXLEN);
 	return ByteString(
         aBuf, static_cast< xub_StrLen >(rtl_str_valueOfFloat( aBuf, f )) );
 }
@@ -131,7 +131,7 @@ ByteString ByteString::CreateFromFloat( float f )
 ByteString ByteString::CreateFromDouble( double d )
 {
 	sal_Char aBuf[RTL_STR_MAX_VALUEOFDOUBLE];
-    BOOST_STATIC_ASSERT(RTL_STR_MAX_VALUEOFDOUBLE <= STRING_MAXLEN);
+    static_assert(RTL_STR_MAX_VALUEOFDOUBLE <= STRING_MAXLEN);
 	return ByteString(
         aBuf, static_cast< xub_StrLen >(rtl_str_valueOfDouble( aBuf, d )) );
 }

@@ -24,7 +24,7 @@
 #ifndef INCLUDED_WW8_STRUCT_BASE_HXX
 #define INCLUDED_WW8_STRUCT_BASE_HXX
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <doctok/WW8Document.hxx>
 #include <resourcemodel/OutputWithDepth.hxx>
 
@@ -43,7 +43,7 @@ class WW8StructBase
 {
 public:
     typedef SubSequence<sal_uInt8> Sequence;
-    typedef boost::shared_ptr<WW8StructBase> Pointer_t;
+    typedef std::shared_ptr<WW8StructBase> Pointer_t;
 
 protected:
     /**

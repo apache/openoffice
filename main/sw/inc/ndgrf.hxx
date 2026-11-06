@@ -26,8 +26,8 @@
 #include <svtools/grfmgr.hxx>
 #include <ndnotxt.hxx>
 #include <com/sun/star/embed/XStorage.hpp>
-#include <boost/shared_ptr.hpp>
-#include <boost/weak_ptr.hpp>
+#include <memory>
+#include <memory>
 class SwAsyncRetrieveInputStreamThreadConsumer;
 
 class SwGrfFmtColl;
@@ -53,7 +53,7 @@ class SW_DLLPUBLIC SwGrfNode: public SwNoTxtNode
     sal_Bool bFrameInPaint :1;  // Um Start-/EndActions im Paint (ueber SwapIn zu verhindern.
     sal_Bool bScaleImageMap :1; // Image-Map in SetTwipSize skalieren
 
-    boost::shared_ptr< SwAsyncRetrieveInputStreamThreadConsumer > mpThreadConsumer;
+    std::shared_ptr< SwAsyncRetrieveInputStreamThreadConsumer > mpThreadConsumer;
     bool mbLinkedInputStreamReady;
     com::sun::star::uno::Reference<com::sun::star::io::XInputStream> mxInputStream;
     sal_Bool mbIsStreamReadOnly;
@@ -208,7 +208,7 @@ public:
 	GraphicAttr& GetGraphicAttr( GraphicAttr&, const SwFrm* pFrm ) const;
 
 #endif
-    boost::weak_ptr< SwAsyncRetrieveInputStreamThreadConsumer > GetThreadConsumer();
+    std::weak_ptr< SwAsyncRetrieveInputStreamThreadConsumer > GetThreadConsumer();
     bool IsLinkedInputStreamReady() const;
     void TriggerAsyncRetrieveInputStream();
     void ApplyInputStream(

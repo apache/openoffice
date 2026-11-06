@@ -34,6 +34,7 @@
 #include "diagnose_ex.h"
 
 #include <string.h>
+#include <memory>
 
 using namespace ::com::sun::star::container;
 using namespace ::com::sun::star::uno;
@@ -78,7 +79,7 @@ SAL_DLLPUBLIC_EXPORT void JNICALL Java_com_sun_star_sdbcx_comp_hsqldb_NativeStor
 		::rtl::OUString sName = StorageContainer::jstring2ustring(env,name);
 	}
 #endif
-    ::boost::shared_ptr<StreamHelper> pHelper = StorageContainer::getRegisteredStream(env,name,key);
+    ::std::shared_ptr<StreamHelper> pHelper = StorageContainer::getRegisteredStream(env,name,key);
     Reference< XOutputStream> xFlush = pHelper.get() ? pHelper->getOutputStream() : Reference< XOutputStream>();
     if ( xFlush.is() )
         try
@@ -116,7 +117,7 @@ SAL_DLLPUBLIC_EXPORT jlong JNICALL Java_com_sun_star_sdbcx_comp_hsqldb_NativeSto
     aOpLog.logOperation( "getFilePointer" );
 #endif
 
-    ::boost::shared_ptr<StreamHelper> pHelper = StorageContainer::getRegisteredStream(env,name,key);
+    ::std::shared_ptr<StreamHelper> pHelper = StorageContainer::getRegisteredStream(env,name,key);
 	OSL_ENSURE(pHelper.get(),"No stream helper!");
 
     jlong nReturn = pHelper.get() ? pHelper->getSeek()->getPosition() : jlong(0);
@@ -140,7 +141,7 @@ SAL_DLLPUBLIC_EXPORT jlong JNICALL Java_com_sun_star_sdbcx_comp_hsqldb_NativeSto
     aOpLog.logOperation( "length" );
 #endif
 
-    ::boost::shared_ptr<StreamHelper> pHelper = StorageContainer::getRegisteredStream(env,name,key);
+    ::std::shared_ptr<StreamHelper> pHelper = StorageContainer::getRegisteredStream(env,name,key);
 	OSL_ENSURE(pHelper.get(),"No stream helper!");
 
     jlong nReturn = pHelper.get() ? pHelper->getSeek()->getLength() :jlong(0);
@@ -155,7 +156,7 @@ SAL_DLLPUBLIC_EXPORT jlong JNICALL Java_com_sun_star_sdbcx_comp_hsqldb_NativeSto
 jint read_from_storage_stream( JNIEnv * env, jobject /*obj_this*/, jstring name, jstring key, DataLogFile* logger )
 {
     OSL_UNUSED( logger );
-	::boost::shared_ptr<StreamHelper> pHelper = StorageContainer::getRegisteredStream(env,name,key);
+	::std::shared_ptr<StreamHelper> pHelper = StorageContainer::getRegisteredStream(env,name,key);
     Reference< XInputStream> xIn = pHelper.get() ? pHelper->getInputStream() : Reference< XInputStream>();
 	OSL_ENSURE(xIn.is(),"Input stream is NULL!");
 	if ( xIn.is() )
@@ -224,7 +225,7 @@ jint read_from_storage_stream_into_buffer( JNIEnv * env, jobject /*obj_this*/,js
 		::rtl::OUString sName = StorageContainer::jstring2ustring(env,name);
 	}
 #endif
-	::boost::shared_ptr<StreamHelper> pHelper = StorageContainer::getRegisteredStream(env,name,key);
+	::std::shared_ptr<StreamHelper> pHelper = StorageContainer::getRegisteredStream(env,name,key);
 	Reference< XInputStream> xIn = pHelper.get() ? pHelper->getInputStream() : Reference< XInputStream>();
 	OSL_ENSURE(xIn.is(),"Input stream is NULL!");
 	if ( xIn.is() )
@@ -301,7 +302,7 @@ SAL_DLLPUBLIC_EXPORT jint JNICALL Java_com_sun_star_sdbcx_comp_hsqldb_NativeStor
     aOpLog.logOperation( "readInt" );
 #endif
 
-	::boost::shared_ptr<StreamHelper> pHelper = StorageContainer::getRegisteredStream(env,name,key);
+	::std::shared_ptr<StreamHelper> pHelper = StorageContainer::getRegisteredStream(env,name,key);
 	Reference< XInputStream> xIn = pHelper.get() ? pHelper->getInputStream() : Reference< XInputStream>();
 	OSL_ENSURE(xIn.is(),"Input stream is NULL!");
 	if ( xIn.is() )
@@ -369,7 +370,7 @@ SAL_DLLPUBLIC_EXPORT void JNICALL Java_com_sun_star_sdbcx_comp_hsqldb_NativeStor
     aOpLog.logOperation( "seek", position );
 #endif
 
-    ::boost::shared_ptr<StreamHelper> pHelper = StorageContainer::getRegisteredStream(env,name,key);
+    ::std::shared_ptr<StreamHelper> pHelper = StorageContainer::getRegisteredStream(env,name,key);
 	Reference< XSeekable> xSeek = pHelper.get() ? pHelper->getSeek() : Reference< XSeekable>();
 
 	OSL_ENSURE(xSeek.is(),"No Seekable stream!");
@@ -426,7 +427,7 @@ SAL_DLLPUBLIC_EXPORT void JNICALL Java_com_sun_star_sdbcx_comp_hsqldb_NativeStor
 void write_to_storage_stream_from_buffer( JNIEnv* env, jobject /*obj_this*/, jstring name, jstring key, jbyteArray buffer, jint off, jint len, DataLogFile* logger )
 {
     OSL_UNUSED( logger );
-    ::boost::shared_ptr<StreamHelper> pHelper = StorageContainer::getRegisteredStream(env,name,key);
+    ::std::shared_ptr<StreamHelper> pHelper = StorageContainer::getRegisteredStream(env,name,key);
 	Reference< XOutputStream> xOut = pHelper.get() ? pHelper->getOutputStream() : Reference< XOutputStream>();
 	OSL_ENSURE(xOut.is(),"Stream is NULL");
 
@@ -492,7 +493,7 @@ void write_to_storage_stream( JNIEnv* env, jobject /*obj_this*/, jstring name, j
 {
     OSL_UNUSED( logger );
 
-	::boost::shared_ptr<StreamHelper> pHelper = StorageContainer::getRegisteredStream(env,name,key);
+	::std::shared_ptr<StreamHelper> pHelper = StorageContainer::getRegisteredStream(env,name,key);
 	Reference< XOutputStream> xOut = pHelper.get() ? pHelper->getOutputStream() : Reference< XOutputStream>();
 	OSL_ENSURE(xOut.is(),"Stream is NULL");
 	try

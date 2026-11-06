@@ -39,7 +39,7 @@ namespace sun {
 namespace star {
 namespace lang {
 
-// equality operator needed for unordered_map;
+// equality operator needed for std::unordered_map;
 // (-> why does this need to be in the namespace of Locale ? g++ fails to compile else)
 inline bool operator==( const com::sun::star::lang::Locale& rLeft, const com::sun::star::lang::Locale& rRight )
 {

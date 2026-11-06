@@ -26,7 +26,7 @@
 
 #include <sal/types.h>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 #include "disposable.hxx"
 
@@ -88,7 +88,7 @@ namespace slideshow
             virtual void end() = 0;
         };
 
-        typedef ::boost::shared_ptr< Activity > ActivitySharedPtr;
+        typedef ::std::shared_ptr< Activity > ActivitySharedPtr;
 
     }
 }

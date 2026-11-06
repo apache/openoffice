@@ -25,7 +25,7 @@
 #define OOX_HELPER_BINARYSTREAMBASE_HXX
 
 #include <com/sun/star/uno/Sequence.hxx>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include "oox/helper/helper.hxx"
 
 namespace com { namespace sun { namespace star {

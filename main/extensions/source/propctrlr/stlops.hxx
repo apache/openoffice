@@ -34,10 +34,7 @@ namespace pcr
 
 	//========================================================================
 	struct PropertyLessByName
-				:public ::std::binary_function	<	::com::sun::star::beans::Property,
-													::com::sun::star::beans::Property,
-													bool
-												>
+				
 	{
 		bool operator() (::com::sun::star::beans::Property _rLhs, ::com::sun::star::beans::Property _rRhs) const
 		{
@@ -47,10 +44,7 @@ namespace pcr
 
 	//========================================================================
 	struct TypeLessByName
-				:public ::std::binary_function	<	::com::sun::star::uno::Type,
-													::com::sun::star::uno::Type,
-													bool
-												>
+				
 	{
 		bool operator() (::com::sun::star::uno::Type _rLhs, ::com::sun::star::uno::Type _rRhs) const
 		{

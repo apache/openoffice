@@ -28,7 +28,7 @@
 #include <com/sun/star/drawing/framework/XResource.hpp>
 #include <com/sun/star/drawing/framework/XResourceFactory.hpp>
 #include <boost/noncopyable.hpp>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <map>
 #include <vector>
 
@@ -62,8 +62,8 @@ public:
         resources.
     */
     ConfigurationControllerResourceManager (
-        const ::boost::shared_ptr<ResourceFactoryManager>& rpResourceFactoryContainer,
-        const ::boost::shared_ptr<ConfigurationControllerBroadcaster>& rpBroadcaster);
+        const ::std::shared_ptr<ResourceFactoryManager>& rpResourceFactoryContainer,
+        const ::std::shared_ptr<ConfigurationControllerBroadcaster>& rpBroadcaster);
 
     ~ConfigurationControllerResourceManager (void);
 
@@ -112,12 +112,12 @@ private:
         ResourceComparator> ResourceMap;
     ResourceMap maResourceMap;
 
-    ::boost::shared_ptr<ResourceFactoryManager> mpResourceFactoryContainer;
+    ::std::shared_ptr<ResourceFactoryManager> mpResourceFactoryContainer;
 
     /** This broadcaster is used to notify the activation and deactivation
         of resources.
     */
-    ::boost::shared_ptr<ConfigurationControllerBroadcaster> mpBroadcaster;
+    ::std::shared_ptr<ConfigurationControllerBroadcaster> mpBroadcaster;
 
     void ActivateResource (
         const css::uno::Reference<css::drawing::framework::XResourceId>& rxResourceId,

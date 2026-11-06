@@ -24,6 +24,7 @@
 #ifndef OOX_XLS_WORKSHEETHELPER_HXX
 #define OOX_XLS_WORKSHEETHELPER_HXX
 
+#include <memory>
 #include "oox/helper/containerhelper.hxx"
 #include "oox/helper/progressbar.hxx"
 #include "oox/ole/olehelper.hxx"
@@ -181,7 +182,7 @@ struct ValidationModel
 // ============================================================================
 
 class WorksheetGlobals;
-typedef ::boost::shared_ptr< WorksheetGlobals > WorksheetGlobalsRef;
+typedef ::std::shared_ptr< WorksheetGlobals > WorksheetGlobalsRef;
 
 class WorksheetHelper : public WorkbookHelper
 {

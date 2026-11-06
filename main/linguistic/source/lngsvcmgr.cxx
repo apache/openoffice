@@ -33,6 +33,7 @@
 #include <com/sun/star/linguistic2/LinguServiceEventFlags.hpp>
 
 #include <tools/solar.h>
+#include <algorithm>
 #include <unotools/lingucfg.hxx>
 #include <unotools/processfactory.hxx>
 #include <i18npool/lang.h>

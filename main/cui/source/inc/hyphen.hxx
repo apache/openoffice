@@ -49,7 +49,7 @@ struct SvxHyphenWordDialog_Impl;
 
 class SvxHyphenWordDialog : public SfxModalDialog
 {
-    std::auto_ptr< SvxHyphenWordDialog_Impl > m_pImpl;
+    std::unique_ptr< SvxHyphenWordDialog_Impl > m_pImpl;
 
 public:
 	SvxHyphenWordDialog( const String &rWord, LanguageType nLang,

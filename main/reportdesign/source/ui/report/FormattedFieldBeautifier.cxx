@@ -48,6 +48,7 @@
 #include <tools/debug.hxx>
 // DBG_UNHANDLED_EXCEPTION
 #include <tools/diagnose_ex.h>
+#include <memory>
 
 namespace rptui
 {
@@ -169,7 +170,7 @@ namespace rptui
     {
         uno::Reference<awt::XVclWindowPeer> xVclWindowPeer;
 
-        ::boost::shared_ptr<OReportModel> pModel = const_cast< OReportController& >( m_rReportController ).getSdrModel();
+        ::std::shared_ptr<OReportModel> pModel = const_cast< OReportController& >( m_rReportController ).getSdrModel();
 
         uno::Reference<report::XSection> xSection(_xComponent->getSection());
         if ( xSection.is() )
@@ -183,7 +184,7 @@ namespace rptui
                 if ( pUnoObj ) // this doesn't need to be done for shapes
                 {
                     // Rectangle aRect = pUnoObj->GetCurrentBoundRect();
-                    ::boost::shared_ptr<OSectionWindow> pSectionWindow = m_rReportController.getSectionWindow(xSection);
+                    ::std::shared_ptr<OSectionWindow> pSectionWindow = m_rReportController.getSectionWindow(xSection);
                     if( bool(pSectionWindow))
                     {
                         OReportSection& aOutputDevice = pSectionWindow->getReportSection(); // OutputDevice

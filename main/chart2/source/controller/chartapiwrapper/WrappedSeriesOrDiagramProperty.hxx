@@ -29,7 +29,7 @@
 #include "DiagramHelper.hxx"
 #include <com/sun/star/chart2/XDataSeries.hpp>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <vector>
 
 // this operator is not defined by default
@@ -61,7 +61,7 @@ public:
     virtual void setValueToSeries( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& xSeriesPropertySet, PROPERTYTYPE aNewValue ) const =0;
 
     explicit WrappedSeriesOrDiagramProperty( const ::rtl::OUString& rName, const ::com::sun::star::uno::Any& rDefaulValue
-        , ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact
+        , ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact
         , tSeriesOrDiagramPropertyType ePropertyType )
             : WrappedProperty(rName,::rtl::OUString())
             , m_spChart2ModelContact(spChart2ModelContact)
@@ -175,7 +175,7 @@ public:
     }
 
 protected:
-    ::boost::shared_ptr< Chart2ModelContact >  m_spChart2ModelContact;
+    ::std::shared_ptr< Chart2ModelContact >  m_spChart2ModelContact;
     mutable ::com::sun::star::uno::Any         m_aOuterValue;
     ::com::sun::star::uno::Any                 m_aDefaultValue;
     tSeriesOrDiagramPropertyType               m_ePropertyType;

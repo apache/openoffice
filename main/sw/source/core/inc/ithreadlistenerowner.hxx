@@ -26,6 +26,7 @@
 #include <ifinishedthreadlistener.hxx>
 
 #include <boost/weak_ptr.hpp>
+#include <memory>
 
 /** interface class of the owner of a thread listener
 
@@ -41,7 +42,7 @@ class IThreadListenerOwner
         {
         };
 
-        virtual boost::weak_ptr< IFinishedThreadListener > GetThreadListenerWeakRef() = 0;
+        virtual std::weak_ptr< IFinishedThreadListener > GetThreadListenerWeakRef() = 0;
 
         virtual void NotifyAboutFinishedThread( const oslInterlockedCount nThreadID ) = 0;
 

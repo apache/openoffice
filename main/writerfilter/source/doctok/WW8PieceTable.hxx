@@ -27,7 +27,7 @@
 #include <sal/types.h>
 #include <doctok/WW8Document.hxx>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <iostream>
 
 namespace writerfilter {
@@ -56,7 +56,7 @@ public:
     /**
        Shared pointer to piece table
      */
-    typedef boost::shared_ptr<WW8PieceTable> Pointer_t;
+    typedef std::shared_ptr<WW8PieceTable> Pointer_t;
 
     /**
        Convert CP to FC.

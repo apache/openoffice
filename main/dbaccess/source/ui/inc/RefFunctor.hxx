@@ -34,7 +34,7 @@
 
 namespace dbaui
 {
-	template <class T> class OUnaryRefFunctor : public ::std::unary_function< ::vos::ORef<T> ,void>
+	template <class T> class OUnaryRefFunctor  ,void>
 	{
 		::std::mem_fun_t<bool,T> m_aFunction;
 	public:

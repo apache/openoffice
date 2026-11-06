@@ -243,10 +243,10 @@ public:
 
     const uno::Reference< uno::XComponentContext > mxComponentContext;
 
-    std::auto_ptr< xmloff::RDFaImportHelper > mpRDFaHelper;
+    std::unique_ptr< xmloff::RDFaImportHelper > mpRDFaHelper;
 
     // --> ORW
-    std::auto_ptr< DocumentInfo > mpDocumentInfo;
+    std::unique_ptr< DocumentInfo > mpDocumentInfo;
     // <--
 
     SvXMLImport_Impl()

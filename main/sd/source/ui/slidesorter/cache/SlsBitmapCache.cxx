@@ -22,6 +22,7 @@
 
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
+#include <memory>
 #include "precompiled_sd.hxx"
 
 #include "SlsBitmapCache.hxx"
@@ -55,7 +56,7 @@ public:
     ~CacheEntry (void) {};
     inline void Recycle (const CacheEntry& rEntry);
     inline sal_Int32 GetMemorySize (void) const;
-    void Compress (const ::boost::shared_ptr<BitmapCompressor>& rpCompressor);
+    void Compress (const ::std::shared_ptr<BitmapCompressor>& rpCompressor);
     inline void Decompress (void);
 
     bool IsUpToDate (void) const { return mbIsUpToDate; }
@@ -82,8 +83,8 @@ public:
 private:
     Bitmap maPreview;
     Bitmap maMarkedPreview;
-    ::boost::shared_ptr<BitmapReplacement> mpReplacement;
-    ::boost::shared_ptr<BitmapCompressor> mpCompressor;
+    ::std::shared_ptr<BitmapReplacement> mpReplacement;
+    ::std::shared_ptr<BitmapCompressor> mpCompressor;
     Size maBitmapSize;
     bool mbIsUpToDate;
     sal_Int32 mnLastAccessTime;
@@ -457,7 +458,7 @@ void BitmapCache::Recycle (const BitmapCache& rCache)
 
 
 
-::std::auto_ptr<BitmapCache::CacheIndex> BitmapCache::GetCacheIndex (
+::std::unique_ptr<BitmapCache::CacheIndex> BitmapCache::GetCacheIndex (
     bool bIncludePrecious,
     bool bIncludeNoPreview) const
 {
@@ -485,7 +486,7 @@ void BitmapCache::Recycle (const BitmapCache& rCache)
     ::std::sort(aSortedContainer.begin(), aSortedContainer.end(), AccessTimeComparator());
 
     // Return a list with the keys of the sorted entries.
-    ::std::auto_ptr<CacheIndex> pIndex(new CacheIndex());
+    ::std::unique_ptr<CacheIndex> pIndex(new CacheIndex());
     SortableBitmapContainer::iterator iIndexEntry;
     pIndex->reserve(aSortedContainer.size());
     for (iIndexEntry=aSortedContainer.begin(); iIndexEntry!=aSortedContainer.end(); ++iIndexEntry)
@@ -498,7 +499,7 @@ void BitmapCache::Recycle (const BitmapCache& rCache)
 
 void BitmapCache::Compress (
     const CacheKey& rKey,
-    const ::boost::shared_ptr<BitmapCompressor>& rpCompressor)
+    const ::std::shared_ptr<BitmapCompressor>& rpCompressor)
 {
     ::osl::MutexGuard aGuard (maMutex);
 
@@ -608,7 +609,7 @@ inline sal_Int32 BitmapCache::CacheEntry::GetMemorySize (void) const
 
 
 
-void BitmapCache::CacheEntry::Compress (const ::boost::shared_ptr<BitmapCompressor>& rpCompressor)
+void BitmapCache::CacheEntry::Compress (const ::std::shared_ptr<BitmapCompressor>& rpCompressor)
 {
     if ( ! maPreview.IsEmpty())
     {

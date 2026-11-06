@@ -351,7 +351,7 @@ SwXReferenceMark::getAnchor()
                     &m_pImpl->m_pDoc->GetNodes()))
             {
                 SwTxtNode const& rTxtNode = pTxtMark->GetTxtNode();
-                const ::std::auto_ptr<SwPaM> pPam( (pTxtMark->End())
+                const ::std::unique_ptr<SwPaM> pPam( (pTxtMark->End())
                     ?   new SwPaM( rTxtNode, *pTxtMark->End(),
                                    rTxtNode, *pTxtMark->GetStart())
                     :   new SwPaM( rTxtNode, *pTxtMark->GetStart()) );
@@ -705,7 +705,7 @@ class SwXMeta::Impl
 public:
 
     SwEventListenerContainer m_ListenerContainer;
-    ::std::auto_ptr<const TextRangeList_t> m_pTextPortions;
+    ::std::unique_ptr<const TextRangeList_t> m_pTextPortions;
     // 3 possible states: not attached, attached, disposed
     bool m_bIsDisposed;
     bool m_bIsDescriptor;
@@ -780,7 +780,7 @@ SwXMeta::~SwXMeta()
 uno::Reference<rdf::XMetadatable>
 SwXMeta::CreateXMeta(::sw::Meta & rMeta,
             uno::Reference<text::XText> const& i_xParent,
-            ::std::auto_ptr<TextRangeList_t const> pPortions)
+            ::std::unique_ptr<TextRangeList_t const> pPortions)
 {
     // re-use existing SwXMeta
     // #i105557#: do not iterate over the registered clients: race condition
@@ -1076,9 +1076,9 @@ SwXMeta::AttachImpl(const uno::Reference< text::XTextRange > & i_xTextRange,
             | nsSetAttrMode::SETATTR_DONTEXPAND)
         : nsSetAttrMode::SETATTR_DONTEXPAND );
 
-    const ::boost::shared_ptr< ::sw::Meta> pMeta( (RES_TXTATR_META == i_nWhich)
-        ? ::boost::shared_ptr< ::sw::Meta>( new ::sw::Meta() )
-        : ::boost::shared_ptr< ::sw::Meta>(
+    const ::std::shared_ptr< ::sw::Meta> pMeta( (RES_TXTATR_META == i_nWhich)
+        ? ::std::shared_ptr< ::sw::Meta>( new ::sw::Meta() )
+        : ::std::shared_ptr< ::sw::Meta>(
             pDoc->GetMetaFieldManager().makeMetaField()) );
     SwFmtMeta meta(pMeta, i_nWhich); // this is cloned by Insert!
     const bool bSuccess( pDoc->InsertPoolItem( aPam, meta, nInsertFlags ) );
@@ -1540,6 +1540,7 @@ SwXMetaField::removeVetoableChangeListener(
 #include <com/sun/star/rdf/XLiteral.hpp>
 #include <com/sun/star/rdf/XRepositorySupplier.hpp>
 #include <comphelper/processfactory.hxx>
+#include <memory>
 
 static uno::Reference<rdf::XURI> const&
 lcl_getURI(const bool bPrefix)

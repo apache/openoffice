@@ -35,7 +35,7 @@
 
 #include <rtl/ref.hxx>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <boost/utility.hpp>
 
 #include "null_usagecounter.hxx"

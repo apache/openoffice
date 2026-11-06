@@ -92,7 +92,7 @@ namespace
     }
 
     //....................................................................
-    struct StringCompare : public ::std::unary_function< ::rtl::OUString, bool >
+    struct StringCompare 
     {
     private:
         const ::rtl::OUString m_sReference;

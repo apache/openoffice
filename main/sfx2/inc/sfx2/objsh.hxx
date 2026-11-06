@@ -41,7 +41,7 @@
 
 #include <com/sun/star/beans/XPropertySet.hpp>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 
 //________________________________________________________________________________________________________________
@@ -458,7 +458,7 @@ public:
 	virtual Size                GetFirstPageSize();
 	virtual sal_Bool			DoClose();
 	virtual void                PrepareReload();
-	virtual ::boost::shared_ptr<GDIMetaFile> GetPreviewMetaFile( sal_Bool bFullContent = sal_False ) const;
+	virtual ::std::shared_ptr<GDIMetaFile> GetPreviewMetaFile( sal_Bool bFullContent = sal_False ) const;
 	virtual void                CancelTransfers();
 
 	sal_Bool					GenerateAndStoreThumbnail(
@@ -706,7 +706,7 @@ public:
 
 //#if 0 // _SOLAR__PRIVATE
 
-	SAL_DLLPRIVATE ::boost::shared_ptr<GDIMetaFile> CreatePreviewMetaFile_Impl( sal_Bool bFullContent, sal_Bool bHighContrast ) const;
+	SAL_DLLPRIVATE ::std::shared_ptr<GDIMetaFile> CreatePreviewMetaFile_Impl( sal_Bool bFullContent, sal_Bool bHighContrast ) const;
 
 	SAL_DLLPRIVATE sal_Bool IsOwnStorageFormat_Impl(const SfxMedium &) const;
 

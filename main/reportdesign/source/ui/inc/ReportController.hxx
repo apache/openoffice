@@ -62,7 +62,7 @@
 #include <svx/zoomitem.hxx>
 
 #include <boost/noncopyable.hpp>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <functional>
 
 class TransferableHelper;
@@ -119,7 +119,7 @@ namespace rptui
         mutable ::com::sun::star::uno::Reference< ::com::sun::star::container::XNameAccess >    m_xColumns;
         ::com::sun::star::awt::Size												                m_aVisualAreaSize;
 
-        ::boost::shared_ptr<rptui::OReportModel>
+        ::std::shared_ptr<rptui::OReportModel>
                                 m_aReportModel;
 		::rtl::OUString			m_sName;			    /// name for the report definition
         ::rtl::OUString         m_sLastActivePage;      /// last active property browser page
@@ -451,7 +451,7 @@ namespace rptui
         *
         * \return
         */
-        ::boost::shared_ptr<rptui::OReportModel> getSdrModel() const;
+        ::std::shared_ptr<rptui::OReportModel> getSdrModel() const;
 
         inline ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext >  getContext() const { return m_xContext; }
         inline sal_Int16   getZoomValue() const     { return m_nZoomValue; }
@@ -468,7 +468,7 @@ namespace rptui
 	// cppu::OPropertySetHelper
 		virtual ::cppu::IPropertyArrayHelper& SAL_CALL getInfoHelper();
 
-        ::boost::shared_ptr<OSectionWindow> getSectionWindow(const ::com::sun::star::uno::Reference< ::com::sun::star::report::XSection>& _xSection) const;
+        ::std::shared_ptr<OSectionWindow> getSectionWindow(const ::com::sun::star::uno::Reference< ::com::sun::star::report::XSection>& _xSection) const;
 
         ::com::sun::star::uno::Reference< ::com::sun::star::container::XNameAccess > getColumns() const;
         ::rtl::OUString getColumnLabel_throw(const ::rtl::OUString& i_sColumnName) const;

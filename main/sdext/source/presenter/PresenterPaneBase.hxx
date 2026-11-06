@@ -41,6 +41,7 @@
 #include <com/sun/star/rendering/XCanvas.hpp>
 #include <rtl/ref.hxx>
 #include <boost/noncopyable.hpp>
+#include <memory>
 
 namespace css = ::com::sun::star;
 namespace cssu = ::com::sun::star::uno;
@@ -88,7 +89,7 @@ public:
     void SetCalloutAnchor (const css::awt::Point& rAnchorPosition);
     css::awt::Point GetCalloutAnchor (void) const;
 
-    ::boost::shared_ptr<PresenterTextView> GetTextViewForTitle (void);
+    ::std::shared_ptr<PresenterTextView> GetTextViewForTitle (void);
 
     // XInitialization
 

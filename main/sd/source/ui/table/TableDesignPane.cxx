@@ -48,6 +48,7 @@
 #include <editeng/colritem.hxx>
 #include <editeng/eeitem.hxx>
 #include <svx/sdr/table/tabledesign.hxx>
+#include <memory>
 
 #include "TableDesignPane.hxx"
 
@@ -672,8 +673,8 @@ CellInfo::CellInfo( const Reference< XStyle >& xStyle )
 
 // --------------------------------------------------------------------
 
-typedef std::vector< boost::shared_ptr< CellInfo > > CellInfoVector;
-typedef boost::shared_ptr< CellInfo > CellInfoMatrix[nPreviewColumns][nPreviewRows];
+typedef std::vector< std::shared_ptr< CellInfo > > CellInfoVector;
+typedef std::shared_ptr< CellInfo > CellInfoMatrix[nPreviewColumns][nPreviewRows];
 
 struct TableStyleSettings
 {
@@ -724,7 +725,7 @@ static void FillCellInfoMatrix( const CellInfoVector& rStyle, const TableStyleSe
 
 		for( sal_Int32 nCol = 0; nCol < nPreviewColumns; ++nCol )
 		{
-			boost::shared_ptr< CellInfo > xCellInfo;
+			std::shared_ptr< CellInfo > xCellInfo;
 
 			// first and last row win first, if used and available
 			if( bFirstRow )
@@ -826,7 +827,7 @@ const Bitmap CreateDesignPreview( const Reference< XIndexAccess >& xTableStyle, 
 			sal_Int32 nX = 0;
 			for( sal_Int32 nCol = 0; nCol < nPreviewColumns; ++nCol, nX += nCellWidth-1 )
 			{
-				boost::shared_ptr< CellInfo > xCellInfo( aMatrix[nCol][nRow] );
+				std::shared_ptr< CellInfo > xCellInfo( aMatrix[nCol][nRow] );
 
 				Color aTextColor( COL_AUTO );
 				if( xCellInfo.get() )
@@ -860,7 +861,7 @@ const Bitmap CreateDesignPreview( const Reference< XIndexAccess >& xTableStyle, 
 			sal_Int32 nX = 0;
 			for( sal_Int32 nCol = 0; nCol < nPreviewColumns; ++nCol, nX += nCellWidth-1 )
 			{
-				boost::shared_ptr< CellInfo > xCellInfo( aMatrix[nCol][nRow] );
+				std::shared_ptr< CellInfo > xCellInfo( aMatrix[nCol][nRow] );
 
 				if( xCellInfo.get() )
 				{
@@ -884,7 +885,7 @@ const Bitmap CreateDesignPreview( const Reference< XIndexAccess >& xTableStyle, 
 						if( (nBorderCol >= 0) && (nBorderCol < nPreviewColumns) && (nBorderRow >= 0) && (nBorderRow < nPreviewRows) )
 						{
 							// check border
-							boost::shared_ptr< CellInfo > xBorderInfo( aMatrix[nBorderCol][nBorderRow] );
+							std::shared_ptr< CellInfo > xBorderInfo( aMatrix[nBorderCol][nBorderRow] );
 							if( xBorderInfo.get() )
 							{
 								const sal_uInt16 nOtherLine = nLine ^ 1;

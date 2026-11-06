@@ -41,6 +41,7 @@
 #include <com/sun/star/rendering/XPolyPolygon2D.hpp>
 #include <com/sun/star/rendering/XSprite.hpp>
 #include <com/sun/star/rendering/XSpriteCanvas.hpp>
+#include <memory>
 
 namespace css = ::com::sun::star;
 
@@ -161,7 +162,7 @@ private:
     bool mbIsPaintPending;
     bool mbIsLayoutPending;
     class Layout;
-    ::boost::shared_ptr<Layout> mpLayout;
+    ::std::shared_ptr<Layout> mpLayout;
     ::rtl::Reference<PresenterScrollBar> mpHorizontalScrollBar;
     ::rtl::Reference<PresenterScrollBar> mpVerticalScrollBar;
     ::rtl::Reference<PresenterButton> mpCloseButton;
@@ -174,7 +175,7 @@ private:
     css::awt::Point maCloseButtonCenter;
     css::awt::Rectangle maCurrentSlideFrameBoundingBox;
     class CurrentSlideFrameRenderer;
-    ::boost::shared_ptr<CurrentSlideFrameRenderer> mpCurrentSlideFrameRenderer;
+    ::std::shared_ptr<CurrentSlideFrameRenderer> mpCurrentSlideFrameRenderer;
     css::uno::Reference<css::rendering::XPolyPolygon2D> mxPreviewFrame;
 
     void UpdateLayout (void);

@@ -31,7 +31,7 @@
 #include <com/sun/star/beans/XPropertySet.hpp>
 #include <com/sun/star/uno/Any.h>
 #include <PropertyIds.hxx>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <map>
 #include <vector>
 
@@ -114,7 +114,7 @@ public:
      */
     void Insert( PropertyIds eId, bool bIsTextProperty, const ::com::sun::star::uno::Any& rAny, bool bOverwrite = true );
     using _PropertyMap::insert;
-    void insert(const boost::shared_ptr<PropertyMap> pMap, bool bOverwrite = true);
+    void insert(const std::shared_ptr<PropertyMap> pMap, bool bOverwrite = true);
 
     const ::com::sun::star::uno::Reference< ::com::sun::star::text::XFootnote>&  GetFootnote() const;
     void SetFootnote( ::com::sun::star::uno::Reference< ::com::sun::star::text::XFootnote> xF ) { m_xFootnote = xF; }
@@ -132,7 +132,7 @@ public:
 
     virtual XMLTag::Pointer_t toTag() const;
 };
-typedef boost::shared_ptr<PropertyMap>  PropertyMapPtr;
+typedef std::shared_ptr<PropertyMap>  PropertyMapPtr;
 
 /*-- 24.07.2006 08:26:33---------------------------------------------------
 
@@ -275,7 +275,7 @@ public:
 
     void CloseSectionGroup( DomainMapper_Impl& rDM_Impl );
 };
-typedef boost::shared_ptr<SectionPropertyMap> SectionPropertyMapPtr;
+typedef std::shared_ptr<SectionPropertyMap> SectionPropertyMapPtr;
 
 /*-- 28.12.2007 08:17:34---------------------------------------------------
 
@@ -378,7 +378,7 @@ public:
 
 
 };
-typedef boost::shared_ptr<ParagraphProperties>  ParagraphPropertiesPtr;
+typedef std::shared_ptr<ParagraphProperties>  ParagraphPropertiesPtr;
 /*-- 14.06.2007 12:12:34---------------------------------------------------
     property map of a stylesheet
   -----------------------------------------------------------------------*/
@@ -552,7 +552,7 @@ public:
 
     virtual void insertTableProperties( const PropertyMap* );
 };
-typedef boost::shared_ptr<TablePropertyMap>  TablePropertyMapPtr;
+typedef std::shared_ptr<TablePropertyMap>  TablePropertyMapPtr;
 } //namespace dmapper
 } //namespace writerfilter
 #endif

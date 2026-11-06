@@ -24,6 +24,7 @@
 #define DBAUI_TABLEEDITORCONTROL_HXX
 
 #ifndef DBAUI_TABLEDESIGNCONTROL_HXX
+#include <memory>
 #include "TableDesignControl.hxx"
 #endif
 #ifndef DBAUI_TABLEDESIGNVIEW_HXX
@@ -59,8 +60,8 @@ namespace dbaui
 			NONE
 		};
 
-		::std::vector< ::boost::shared_ptr<OTableRow> >	m_aUndoList;
-		::std::vector< ::boost::shared_ptr<OTableRow> >*	m_pRowList;
+		::std::vector< ::std::shared_ptr<OTableRow> >	m_aUndoList;
+		::std::vector< ::std::shared_ptr<OTableRow> >*	m_pRowList;
 
 		OSQLNameEdit*				pNameCell;
 		::svt::ListBoxControl*		pTypeCell;
@@ -68,7 +69,7 @@ namespace dbaui
         Edit*						pDescrCell;
 		OTableFieldDescWin*			pDescrWin;			// properties of one column
 
-		 ::boost::shared_ptr<OTableRow> pActRow;
+		 ::std::shared_ptr<OTableRow> pActRow;
 
 		sal_uLong						nIndexEvent;
 		sal_uLong						nCutEvent;
@@ -161,9 +162,9 @@ namespace dbaui
 
 		virtual OTableDesignView* GetView() const;
 
-        ::std::vector< ::boost::shared_ptr<OTableRow> >* GetRowList(){ return m_pRowList; }
+        ::std::vector< ::std::shared_ptr<OTableRow> >* GetRowList(){ return m_pRowList; }
 
-        ::boost::shared_ptr<OTableRow>         GetActRow(){ return pActRow; }
+        ::std::shared_ptr<OTableRow>         GetActRow(){ return pActRow; }
         void            CellModified( long nRow, sal_uInt16 nColId );
 		void			SetReadOnly( sal_Bool bRead=sal_True );
 

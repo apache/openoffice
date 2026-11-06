@@ -22,6 +22,7 @@
 
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
+#include <memory>
 #include "precompiled_vcl.hxx"
 
 #include "vcl/outdev.hxx"
@@ -137,9 +138,9 @@ sal_Bool OutputDevice::HitTestNativeControl( ControlType nType,
 
 // -----------------------------------------------------------------------
 
-static boost::shared_ptr< ImplControlValue > lcl_transformControlValue( const ImplControlValue& rVal, OutputDevice& rDev )
+static std::shared_ptr< ImplControlValue > lcl_transformControlValue( const ImplControlValue& rVal, OutputDevice& rDev )
 {
-    boost::shared_ptr< ImplControlValue > aResult;
+    std::shared_ptr< ImplControlValue > aResult;
     switch( rVal.getType() )
     {
     case CTRL_SLIDER:
@@ -243,7 +244,7 @@ sal_Bool OutputDevice::DrawNativeControl( ControlType nType,
 
     // Convert the coordinates from relative to Window-absolute, so we draw
     // in the correct place in platform code
-    boost::shared_ptr< ImplControlValue > aScreenCtrlValue( lcl_transformControlValue( aValue, *this ) );
+    std::shared_ptr< ImplControlValue > aScreenCtrlValue( lcl_transformControlValue( aValue, *this ) );
     Rectangle screenRegion( ImplLogicToDevicePixel( rControlRegion ) );
 
     Region aTestRegion( GetActiveClipRegion() );
@@ -286,7 +287,7 @@ sal_Bool OutputDevice::DrawNativeControlText(ControlType nType,
 
     // Convert the coordinates from relative to Window-absolute, so we draw
     // in the correct place in platform code
-    boost::shared_ptr< ImplControlValue > aScreenCtrlValue( lcl_transformControlValue( aValue, *this ) );
+    std::shared_ptr< ImplControlValue > aScreenCtrlValue( lcl_transformControlValue( aValue, *this ) );
     Rectangle screenRegion( ImplLogicToDevicePixel( rControlRegion ) );
 
     sal_Bool bRet = mpGraphics->DrawNativeControlText(nType, nPart, screenRegion, nState, *aScreenCtrlValue, aCaption, this );
@@ -315,7 +316,7 @@ sal_Bool OutputDevice::GetNativeControlRegion(  ControlType nType,
 
     // Convert the coordinates from relative to Window-absolute, so we draw
     // in the correct place in platform code
-    boost::shared_ptr< ImplControlValue > aScreenCtrlValue( lcl_transformControlValue( aValue, *this ) );
+    std::shared_ptr< ImplControlValue > aScreenCtrlValue( lcl_transformControlValue( aValue, *this ) );
     Rectangle screenRegion( ImplLogicToDevicePixel( rControlRegion ) );
 
     sal_Bool bRet = mpGraphics->GetNativeControlRegion(nType, nPart, screenRegion, nState, *aScreenCtrlValue,

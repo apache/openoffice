@@ -25,7 +25,7 @@
 
 #include <WriterFilterDllApi.hxx>
 #include <resourcemodel/LoggedResources.hxx>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <com/sun/star/table/BorderLine.hpp>
 #include <vector>
 namespace com{ namespace sun{ namespace star{namespace table {
@@ -73,11 +73,11 @@ public:
     virtual ~TDefTableHandler();
 
     size_t                                      getCellCount() const;
-    void                                        fillCellProperties( size_t nCell, ::boost::shared_ptr< TablePropertyMap > pCellProperties) const;
-    ::boost::shared_ptr<PropertyMap>            getRowProperties() const;
+    void                                        fillCellProperties( size_t nCell, ::std::shared_ptr< TablePropertyMap > pCellProperties) const;
+    ::std::shared_ptr<PropertyMap>            getRowProperties() const;
     sal_Int32                                   getTableWidth() const;
 };
-typedef boost::shared_ptr< TDefTableHandler >          TDefTableHandlerPtr;
+typedef std::shared_ptr< TDefTableHandler >          TDefTableHandlerPtr;
 }}
 
 #endif //

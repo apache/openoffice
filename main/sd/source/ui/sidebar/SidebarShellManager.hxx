@@ -25,6 +25,7 @@
 #include "ShellFactory.hxx"
 #include "ViewShellManager.hxx"
 #include <map>
+#include <memory>
 
 class FrameView;
 class SfxShell;
@@ -51,7 +52,7 @@ public:
 		view shell.  It works together with the given view shell manager.
 	*/
 	SidebarShellManager (
-		const ::boost::shared_ptr<ViewShellManager>& rpViewShellManager,
+		const ::std::shared_ptr<ViewShellManager>& rpViewShellManager,
 		const ViewShell& rViewShell);
 	~SidebarShellManager (void);
 
@@ -95,7 +96,7 @@ public:
 	DECL_LINK(WindowCallback,VclWindowEvent*);
 
 private:
-	::boost::shared_ptr<ViewShellManager> mpViewShellManager;
+	::std::shared_ptr<ViewShellManager> mpViewShellManager;
 
 	// The view shell whose sub-shells this class manages.
 	const ViewShell& mrViewShell;

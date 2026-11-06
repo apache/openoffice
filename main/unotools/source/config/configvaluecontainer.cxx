@@ -204,7 +204,7 @@ namespace utl
 	//--- 21.08.01 12:01:16 -----------------------------------------------
 
 	/// base class for functors syncronizing between exchange locations and config sub nodes
-	struct SubNodeAccess : public ::std::unary_function< NodeValueAccessor, void >
+	struct SubNodeAccess 
 	{
 	protected:
 		const OConfigurationNode&	m_rRootNode;

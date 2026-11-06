@@ -243,7 +243,7 @@ Sequence< PropertyValue > VCLXAccessibleTextComponent::getCharacterAttributes( s
 		}
 		*/
 
-		::std::auto_ptr< CharacterAttributesHelper > pHelper( new CharacterAttributesHelper( aFont, nBackColor, nColor ) );
+		::std::unique_ptr< CharacterAttributesHelper > pHelper( new CharacterAttributesHelper( aFont, nBackColor, nColor ) );
 
 		aValues = pHelper->GetCharacterAttributes( aRequestedAttributes );
 	}

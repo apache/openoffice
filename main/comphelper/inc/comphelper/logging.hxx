@@ -32,7 +32,7 @@
 #include <com/sun/star/logging/LogLevel.hpp>
 /** === end UNO includes === **/
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <boost/optional.hpp>
 
 //........................................................................
@@ -98,7 +98,7 @@ namespace comphelper
 	class COMPHELPER_DLLPUBLIC EventLogger
 	{
     protected:
-        ::boost::shared_ptr< EventLogger_Impl > m_pImpl;
+        ::std::shared_ptr< EventLogger_Impl > m_pImpl;
 
     public:
         /** creates an <code>EventLogger</code> instance working with a css.logging.XLogger
@@ -561,7 +561,7 @@ namespace comphelper
     class COMPHELPER_DLLPUBLIC ResourceBasedEventLogger : public EventLogger
     {
     private:
-        ::boost::shared_ptr< ResourceBasedEventLogger_Data >    m_pData;
+        ::std::shared_ptr< ResourceBasedEventLogger_Data >    m_pData;
 
     public:
         /** creates a resource based event logger

@@ -40,7 +40,7 @@ namespace CloneHelper
 
 /// functor that clones a UNO-Reference
 template< class Interface >
-    struct CreateRefClone : public ::std::unary_function< Interface, Interface >
+    struct CreateRefClone 
 {
     Interface operator() ( const Interface & xOther )
     {
@@ -56,9 +56,7 @@ template< class Interface >
 
 /// functor that clones a map element with a UNO-Reference as value
 template< typename Key, class Interface >
-    struct CreateRefWithKeyClone : public ::std::unary_function<
-        ::std::pair<  Key, Interface >,
-        ::std::pair<  Key, Interface > >
+    struct CreateRefWithKeyClone
 {
     ::std::pair< Key, Interface > operator() (
         const ::std::pair< Key, Interface > & rOther )

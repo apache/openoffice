@@ -96,8 +96,8 @@ static void lcl_sendPartialGETRequest( bool &bError,
                                        DAVException &aLastException,
                                        const std::vector< rtl::OUString > aProps,
                                        std::vector< rtl::OUString > &aHeaderNames,
-                                       const std::auto_ptr< DAVResourceAccess > &xResAccess,
-                                       std::auto_ptr< ContentProperties > &xProps,
+                                       const std::unique_ptr< DAVResourceAccess > &xResAccess,
+                                       std::unique_ptr< ContentProperties > &xProps,
                                        const uno::Reference< ucb::XCommandEnvironment >& xEnv )
 {
     bool bIsRequestSize = false;
@@ -649,7 +649,7 @@ uno::Any SAL_CALL Content::execute(
 //  {
         try
         {
-            std::auto_ptr< DAVResourceAccess > xResAccess;
+            std::unique_ptr< DAVResourceAccess > xResAccess;
             {
                 osl::Guard< osl::Mutex > aGuard( m_aMutex );
                 xResAccess.reset( new DAVResourceAccess( *m_xResAccess.get() ) );
@@ -847,7 +847,7 @@ void SAL_CALL Content::abort( sal_Int32 /*CommandId*/ )
 {
     try
     {
-        std::auto_ptr< DAVResourceAccess > xResAccess;
+        std::unique_ptr< DAVResourceAccess > xResAccess;
         {
             osl::MutexGuard aGuard( m_aMutex );
             xResAccess.reset( new DAVResourceAccess( *m_xResAccess.get() ) );
@@ -930,7 +930,7 @@ void Content::addProperty( const com::sun::star::ucb::PropertyCommandArgument &a
     try
     {
         // Set property value at server.
-        std::auto_ptr< DAVResourceAccess > xResAccess;
+        std::unique_ptr< DAVResourceAccess > xResAccess;
         {
             osl::Guard< osl::Mutex > aGuard( m_aMutex );
             xResAccess.reset( new DAVResourceAccess( *m_xResAccess.get() ) );
@@ -1039,7 +1039,7 @@ void Content::removeProperty( const rtl::OUString& Name,
         aProppatchValues.push_back( aValue );
 
         // Remove property value from server.
-        std::auto_ptr< DAVResourceAccess > xResAccess;
+        std::unique_ptr< DAVResourceAccess > xResAccess;
         {
             osl::Guard< osl::Mutex > aGuard( m_aMutex );
             xResAccess.reset( new DAVResourceAccess( *m_xResAccess.get() ) );
@@ -1322,7 +1322,7 @@ uno::Reference< sdbc::XRow > Content::getPropertyValues(
     {
         // Append all standard UCB, DAV and HTTP properties.
 
-        const std::auto_ptr< PropertyValueMap > & xProps = rData.getProperties();
+        const std::unique_ptr< PropertyValueMap > & xProps = rData.getProperties();
 
         PropertyValueMap::const_iterator it  = xProps->begin();
         PropertyValueMap::const_iterator end = xProps->end();
@@ -1354,9 +1354,9 @@ uno::Reference< sdbc::XRow > Content::getPropertyValues(
                 const uno::Sequence< beans::Property >& rProperties,
                 const uno::Reference< ucb::XCommandEnvironment >& xEnv )
 {
-    std::auto_ptr< ContentProperties > xProps;
-    std::auto_ptr< ContentProperties > xCachedProps;
-    std::auto_ptr< DAVResourceAccess > xResAccess;
+    std::unique_ptr< ContentProperties > xProps;
+    std::unique_ptr< ContentProperties > xCachedProps;
+    std::unique_ptr< DAVResourceAccess > xResAccess;
     rtl::OUString aUnescapedTitle;
     bool bHasAll = false;
     uno::Reference< lang::XMultiServiceFactory > xSMgr;
@@ -1704,7 +1704,7 @@ uno::Sequence< uno::Any > Content::setPropertyValues(
     uno::Reference< ucb::XContentIdentifier >    xIdentifier;
     rtl::Reference< ContentProvider >            xProvider;
     sal_Bool bTransient;
-    std::auto_ptr< DAVResourceAccess > xResAccess;
+    std::unique_ptr< DAVResourceAccess > xResAccess;
 
     {
         osl::Guard< osl::Mutex > aGuard( m_aMutex );
@@ -2191,7 +2191,7 @@ uno::Any Content::open(
             // PUSH: write data
             try
             {
-                std::auto_ptr< DAVResourceAccess > xResAccess;
+                std::unique_ptr< DAVResourceAccess > xResAccess;
 
                 {
                     osl::MutexGuard aGuard( m_aMutex );
@@ -2236,7 +2236,7 @@ uno::Any Content::open(
                 // PULL: wait for client read
                 try
                 {
-                    std::auto_ptr< DAVResourceAccess > xResAccess;
+                    std::unique_ptr< DAVResourceAccess > xResAccess;
                     {
                         osl::MutexGuard aGuard( m_aMutex );
 
@@ -2305,7 +2305,7 @@ void Content::post(
     {
         try
         {
-            std::auto_ptr< DAVResourceAccess > xResAccess;
+            std::unique_ptr< DAVResourceAccess > xResAccess;
             {
                 osl::MutexGuard aGuard( m_aMutex );
                 xResAccess.reset(
@@ -2339,7 +2339,7 @@ void Content::post(
         {
             try
             {
-                std::auto_ptr< DAVResourceAccess > xResAccess;
+                std::unique_ptr< DAVResourceAccess > xResAccess;
                 {
                     osl::MutexGuard aGuard( m_aMutex );
                     xResAccess.reset(
@@ -2437,7 +2437,7 @@ void Content::insert(
 {
     sal_Bool bTransient, bCollection;
     rtl::OUString aEscapedTitle;
-    std::auto_ptr< DAVResourceAccess > xResAccess;
+    std::unique_ptr< DAVResourceAccess > xResAccess;
 
     {
         osl::Guard< osl::Mutex > aGuard( m_aMutex );
@@ -2682,7 +2682,7 @@ void Content::transfer(
     uno::Reference< lang::XMultiServiceFactory > xSMgr;
     uno::Reference< ucb::XContentIdentifier >    xIdentifier;
     uno::Reference< ucb::XContentProvider >      xProvider;
-    std::auto_ptr< DAVResourceAccess > xResAccess;
+    std::unique_ptr< DAVResourceAccess > xResAccess;
 
     {
         osl::Guard< osl::Mutex > aGuard( m_aMutex );
@@ -2995,7 +2995,7 @@ void Content::lock(
 
     try
     {
-        std::auto_ptr< DAVResourceAccess > xResAccess;
+        std::unique_ptr< DAVResourceAccess > xResAccess;
         {
             osl::Guard< osl::Mutex > aGuard( m_aMutex );
             xResAccess.reset( new DAVResourceAccess( *m_xResAccess.get() ) );
@@ -3087,7 +3087,7 @@ void Content::unlock(
 {
     try
     {
-        std::auto_ptr< DAVResourceAccess > xResAccess;
+        std::unique_ptr< DAVResourceAccess > xResAccess;
         {
             osl::Guard< osl::Mutex > aGuard( m_aMutex );
             xResAccess.reset( new DAVResourceAccess( *m_xResAccess.get() ) );
@@ -3445,7 +3445,7 @@ void Content::cancelCommandExecution(
 
 //=========================================================================
 const rtl::OUString
-Content::getBaseURI( const std::auto_ptr< DAVResourceAccess > & rResAccess )
+Content::getBaseURI( const std::unique_ptr< DAVResourceAccess > & rResAccess )
 {
     osl::Guard< osl::Mutex > aGuard( m_aMutex );
 
@@ -3478,7 +3478,7 @@ Content::getBaseURI( const std::auto_ptr< DAVResourceAccess > & rResAccess )
 //=========================================================================
 const Content::ResourceType & Content::getResourceType(
                     const uno::Reference< ucb::XCommandEnvironment >& xEnv,
-                    const std::auto_ptr< DAVResourceAccess > & rResAccess )
+                    const std::unique_ptr< DAVResourceAccess > & rResAccess )
 {
     if ( m_eResourceType == UNKNOWN )
     {

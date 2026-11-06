@@ -31,7 +31,7 @@
 #include <vcl/image.hxx>
 #include <sfx2/viewfrm.hxx>
 #include <memory>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 class SdrPage;
 
@@ -75,14 +75,14 @@ public:
     PageObjectViewObjectContact (
         ::sdr::contact::ObjectContact& rObjectContact,
         ::sdr::contact::ViewContact& rViewContact,
-        const ::boost::shared_ptr<cache::PageCache>& rpCache,
-        const ::boost::shared_ptr<controller::Properties>& rpProperties);
+        const ::std::shared_ptr<cache::PageCache>& rpCache,
+        const ::std::shared_ptr<controller::Properties>& rpProperties);
     virtual ~PageObjectViewObjectContact (void);
 
     /** This method is primarily for releasing the current preview cache (by
         providing a NULL pointer.)
     */
-    void SetCache (const ::boost::shared_ptr<cache::PageCache>& rpCache);
+    void SetCache (const ::std::shared_ptr<cache::PageCache>& rpCache);
 
     /** Return the page that is painted by this object.
     */
@@ -202,9 +202,9 @@ private:
     /// and prepared for painting
     drawinglayer::primitive2d::Primitive2DSequence      mxCurrentPageContents;
 
-    ::boost::shared_ptr<cache::PageCache> mpCache;
+    ::std::shared_ptr<cache::PageCache> mpCache;
 
-    ::boost::shared_ptr<controller::Properties> mpProperties;
+    ::std::shared_ptr<controller::Properties> mpProperties;
 
     BitmapEx GetPreview (
         const sdr::contact::DisplayInfo& rDisplayInfo,

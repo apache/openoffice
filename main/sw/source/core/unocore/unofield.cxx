@@ -90,6 +90,7 @@
 #include <docsh.hxx>
 #include <fmtmeta.hxx> // MetaFieldManager
 #include <switerator.hxx>
+#include <memory>
 
 
 using ::rtl::OUString;
@@ -1888,7 +1889,7 @@ uno::Reference< text::XTextRange >  SwXTextField::getAnchor(void)
         if ( !pTxtFld )
             throw uno::RuntimeException();
 
-        boost::shared_ptr< SwPaM > pPamForTxtFld;
+        std::shared_ptr< SwPaM > pPamForTxtFld;
         SwTxtFld::GetPamForTxtFld( *pTxtFld, pPamForTxtFld );
         if ( pPamForTxtFld.get() != NULL )
         {

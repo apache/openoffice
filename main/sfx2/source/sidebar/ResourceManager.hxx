@@ -28,7 +28,7 @@
 #include <unotools/confignode.hxx>
 #include <com/sun/star/frame/XFrame.hpp>
 #include <set>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 
 namespace css = ::com::sun::star;

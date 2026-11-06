@@ -49,6 +49,7 @@
 
 #include <algorithm>
 #include <limits>
+#include <memory>
 
 namespace canvas {
 namespace tools {
@@ -127,7 +128,7 @@ ElapsedTime::ElapsedTime()
 }
 
 ElapsedTime::ElapsedTime(
-    boost::shared_ptr<ElapsedTime> const & pTimeBase )
+    std::shared_ptr<ElapsedTime> const & pTimeBase )
     : m_pTimeBase( pTimeBase ),
       m_fLastQueriedTime( 0.0 ),
       m_fStartTime( getCurrentTime() ),
@@ -137,7 +138,7 @@ ElapsedTime::ElapsedTime(
 {
 }
 
-boost::shared_ptr<ElapsedTime> const & ElapsedTime::getTimeBase() const
+std::shared_ptr<ElapsedTime> const & ElapsedTime::getTimeBase() const
 {
     return m_pTimeBase;
 }

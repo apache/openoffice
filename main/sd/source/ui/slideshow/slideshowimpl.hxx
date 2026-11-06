@@ -64,6 +64,7 @@
 
 #ifndef _SVX_SVXIDS_HRC
 #include <svx/svxids.hrc>
+#include <memory>
 #endif
 #include "sdmod.hxx"
 #include "cusshow.hxx"
@@ -124,7 +125,7 @@ struct WrappedShapeEventImpl
 	WrappedShapeEventImpl() : meClickAction( css::presentation::ClickAction_NONE ), mnVerb( 0 ) {};
 };
 
-typedef boost::shared_ptr< WrappedShapeEventImpl > WrappedShapeEventImplPtr;
+typedef std::shared_ptr< WrappedShapeEventImpl > WrappedShapeEventImplPtr;
 typedef std::map< css::uno::Reference< css::drawing::XShape >, WrappedShapeEventImplPtr > WrappedShapeEventImplMap;
 
 // --------------------------------------------------------------------
@@ -356,7 +357,7 @@ private:
 	ShowWindow*		mpShowWindow;
 	PushButton* 	mpTimeButton;
 
-	boost::shared_ptr< AnimationSlideController > mpSlideController;
+	std::shared_ptr< AnimationSlideController > mpSlideController;
 
 	long			mnRestoreSlide;
 	Point			maSlideOrigin;
@@ -406,7 +407,7 @@ private:
 
 	css::uno::Reference< css::media::XPlayer > mxPlayer;
 
-	::std::auto_ptr<PaneHider> mpPaneHider;
+	::std::unique_ptr<PaneHider> mpPaneHider;
 
 	sal_uLong	mnEndShowEvent;
 	sal_uLong	mnContextMenuEvent;

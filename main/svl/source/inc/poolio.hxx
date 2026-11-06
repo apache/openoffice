@@ -21,7 +21,7 @@
 
 
 #include <svl/brdcst.hxx>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <deque>
 
 #ifndef DELETEZ
@@ -52,7 +52,7 @@ struct SfxPoolVersion_Impl
 
 typedef std::deque<SfxPoolItem*> SfxPoolItemArrayBase_Impl;
 
-typedef boost::shared_ptr< SfxPoolVersion_Impl > SfxPoolVersion_ImplPtr;
+typedef std::shared_ptr< SfxPoolVersion_Impl > SfxPoolVersion_ImplPtr;
 typedef std::deque< SfxPoolVersion_ImplPtr > SfxPoolVersionArr_Impl;
 
 struct SfxPoolItemArray_Impl: public SfxPoolItemArrayBase_Impl

@@ -47,7 +47,7 @@
 #include "dpglobal.hxx"
 
 #include <vector>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 class SubTotal;
 #include "collect.hxx"

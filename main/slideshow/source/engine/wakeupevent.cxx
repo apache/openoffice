@@ -29,6 +29,7 @@
 #include <canvas/verbosetrace.hxx>
 
 #include <wakeupevent.hxx>
+#include <memory>
 
 
 namespace slideshow
@@ -36,7 +37,7 @@ namespace slideshow
     namespace internal
     {
         WakeupEvent::WakeupEvent(
-            boost::shared_ptr<canvas::tools::ElapsedTime> const & pTimeBase,
+            std::shared_ptr<canvas::tools::ElapsedTime> const & pTimeBase,
             ActivitiesQueue& rActivityQueue ) :
 #if OSL_DEBUG_LEVEL > 1
             Event(::rtl::OUString::createFromAscii("WakeupEvent")),

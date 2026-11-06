@@ -28,6 +28,7 @@
 #include <com/sun/star/table/CellAddress.hpp>
 #include <com/sun/star/table/CellRangeAddress.hpp>
 #include <com/sun/star/uno/Sequence.hxx>
+#include <memory>
 #include "oox/helper/propertyset.hxx"
 #include "oox/helper/refvector.hxx"
 #include "oox/xls/addressconverter.hxx"
@@ -573,7 +574,7 @@ protected:
     const FunctionInfoVector& getFuncs() const;
 
 private:
-    typedef ::boost::shared_ptr< FunctionProviderImpl > FunctionProviderImplRef;
+    typedef ::std::shared_ptr< FunctionProviderImpl > FunctionProviderImplRef;
     FunctionProviderImplRef mxFuncImpl;     /// Shared implementation between all copies of the provider.
 };
 
@@ -604,7 +605,7 @@ public:
                         getOoxParserMap() const;
 
 private:
-    typedef ::boost::shared_ptr< OpCodeProviderImpl > OpCodeProviderImplRef;
+    typedef ::std::shared_ptr< OpCodeProviderImpl > OpCodeProviderImplRef;
     OpCodeProviderImplRef mxOpCodeImpl;     /// Shared implementation between all copies of the provider.
 };
 

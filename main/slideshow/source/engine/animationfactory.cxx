@@ -46,6 +46,7 @@
 #include <basegfx/polygon/b2dpolypolygontools.hxx>
 
 #include <functional>
+#include <memory>
 
 
 using namespace ::com::sun::star;
@@ -593,7 +594,7 @@ namespace slideshow
                 Type of animation to generate (determines the
                 interface GenericAnimation will implement).
              */
-            template< typename AnimationBase > ::boost::shared_ptr< AnimationBase >
+            template< typename AnimationBase > ::std::shared_ptr< AnimationBase >
             	makeGenericAnimation( const ShapeManagerSharedPtr&							   rShapeManager,
                                       int													   nFlags,
                                       bool 								(ShapeAttributeLayer::*pIsValid)() const,
@@ -601,7 +602,7 @@ namespace slideshow
                                       typename AnimationBase::ValueType (ShapeAttributeLayer::*pGetValue)() const,
                                       void 								(ShapeAttributeLayer::*pSetValue)( const typename AnimationBase::ValueType& ) )
             {
-                return ::boost::shared_ptr< AnimationBase >(
+                return ::std::shared_ptr< AnimationBase >(
                     new GenericAnimation< AnimationBase,
                     					  ::std::identity< typename AnimationBase::ValueType > >(
                                               rShapeManager,

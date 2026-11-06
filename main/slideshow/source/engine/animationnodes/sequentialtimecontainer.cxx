@@ -112,13 +112,13 @@ bool SequentialTimeContainer::resolveChild(
         // event that will deactivate the resolved/running child:
         mpCurrentSkipEvent = makeEvent(
             boost::bind( &SequentialTimeContainer::skipEffect,
-                         boost::dynamic_pointer_cast<SequentialTimeContainer>( getSelf() ),
+                         std::dynamic_pointer_cast<SequentialTimeContainer>( getSelf() ),
                          pChildNode ),
             "SequentialTimeContainer::skipEffect, resolveChild");
         // event that will reresolve the resolved/activated child:
         mpCurrentRewindEvent = makeEvent(
             boost::bind( &SequentialTimeContainer::rewindEffect,
-                         boost::dynamic_pointer_cast<SequentialTimeContainer>( getSelf() ),
+                         std::dynamic_pointer_cast<SequentialTimeContainer>( getSelf() ),
                          pChildNode ),
             "SequentialTimeContainer::rewindEffect, resolveChild");
 

@@ -51,6 +51,7 @@
 #include <sfx2/event.hxx>
 #include <sfx2/docfile.hxx>
 #include <sfx2/docfilt.hxx>
+#include <memory>
 
 #include "toolkit/awt/vclxdevice.hxx"
 
@@ -82,7 +83,7 @@ class SfxPrinterController : public vcl::PrinterController, public SfxListener
     Sequence< beans::PropertyValue > getMergedOptions() const;
     const Any& getSelectionObject() const;
 public:
-    SfxPrinterController( const boost::shared_ptr<Printer>& i_rPrinter,
+    SfxPrinterController( const std::shared_ptr<Printer>& i_rPrinter,
                           const Any& i_rComplete,
                           const Any& i_rSelection,
                           const Any& i_rViewProp,
@@ -102,7 +103,7 @@ public:
     virtual void jobFinished( com::sun::star::view::PrintableState );
 };
 
-SfxPrinterController::SfxPrinterController( const boost::shared_ptr<Printer>& i_rPrinter,
+SfxPrinterController::SfxPrinterController( const std::shared_ptr<Printer>& i_rPrinter,
                                             const Any& i_rComplete,
                                             const Any& i_rSelection,
                                             const Any& i_rViewProp,
@@ -211,7 +212,7 @@ const Any& SfxPrinterController::getSelectionObject() const
 
 Sequence< beans::PropertyValue > SfxPrinterController::getMergedOptions() const
 {
-    boost::shared_ptr<Printer> pPrinter( getPrinter() );
+    std::shared_ptr<Printer> pPrinter( getPrinter() );
     if( pPrinter.get() != mpLastPrinter )
     {
         mpLastPrinter = pPrinter.get();
@@ -231,7 +232,7 @@ Sequence< beans::PropertyValue > SfxPrinterController::getMergedOptions() const
 int SfxPrinterController::getPageCount() const
 {
     int nPages = 0;
-    boost::shared_ptr<Printer> pPrinter( getPrinter() );
+    std::shared_ptr<Printer> pPrinter( getPrinter() );
     if( mxRenderable.is() && pPrinter )
     {
         Sequence< beans::PropertyValue > aJobOptions( getMergedOptions() );
@@ -242,7 +243,7 @@ int SfxPrinterController::getPageCount() const
 
 Sequence< beans::PropertyValue > SfxPrinterController::getPageParameters( int i_nPage ) const
 {
-    boost::shared_ptr<Printer> pPrinter( getPrinter() );
+    std::shared_ptr<Printer> pPrinter( getPrinter() );
     Sequence< beans::PropertyValue > aResult;
 
     if( mxRenderable.is() && pPrinter )
@@ -261,7 +262,7 @@ Sequence< beans::PropertyValue > SfxPrinterController::getPageParameters( int i_
 
 void SfxPrinterController::printPage( int i_nPage ) const
 {
-    boost::shared_ptr<Printer> pPrinter( getPrinter() );
+    std::shared_ptr<Printer> pPrinter( getPrinter() );
     if( mxRenderable.is() && pPrinter )
     {
         Sequence< beans::PropertyValue > aJobOptions( getMergedOptions() );
@@ -622,7 +623,7 @@ void SfxViewShell::ExecPrint( const uno::Sequence < beans::PropertyValue >& rPro
         aSelection <<= GetObjectShell()->GetModel();
     Any aComplete( makeAny( GetObjectShell()->GetModel() ) );
     Any aViewProp( makeAny( xController ) );
-    boost::shared_ptr<Printer> aPrt;
+    std::shared_ptr<Printer> aPrt;
 
     const beans::PropertyValue* pVal = rProps.getConstArray();
     for( sal_Int32 i = 0; i < rProps.getLength(); i++ )
@@ -636,7 +637,7 @@ void SfxViewShell::ExecPrint( const uno::Sequence < beans::PropertyValue >& rPro
         }
     }
 
-    boost::shared_ptr<vcl::PrinterController> pController( new SfxPrinterController(
+    std::shared_ptr<vcl::PrinterController> pController( new SfxPrinterController(
                                                                                aPrt,
                                                                                aComplete,
                                                                                aSelection,

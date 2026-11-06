@@ -28,7 +28,7 @@
 #include <osl/diagnose.h>
 #include <basegfx/vector/b2dsize.hxx>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 
 #include <cppcanvas/bitmapcanvas.hxx>
@@ -48,7 +48,7 @@ namespace cppcanvas
     class SpriteCanvas;
 
     // forward declaration, since cloneSpriteCanvas() also references SpriteCanvas
-    typedef ::boost::shared_ptr< ::cppcanvas::SpriteCanvas > SpriteCanvasSharedPtr;
+    typedef ::std::shared_ptr< ::cppcanvas::SpriteCanvas > SpriteCanvasSharedPtr;
 
     /** SpriteCanvas interface
      */
@@ -63,7 +63,7 @@ namespace cppcanvas
         // shared_ptr does not allow for covariant return types
         SpriteCanvasSharedPtr			cloneSpriteCanvas() const
         {
-            SpriteCanvasSharedPtr p( ::boost::dynamic_pointer_cast< SpriteCanvas >(this->clone()) );
+            SpriteCanvasSharedPtr p( ::std::dynamic_pointer_cast< SpriteCanvas >(this->clone()) );
             OSL_ENSURE(p.get(), "SpriteCanvas::cloneSpriteCanvas(): dynamic cast failed");
             return p;
         }

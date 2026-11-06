@@ -27,7 +27,7 @@
 #include <vector>
 #include <map>
 #include <algorithm>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <sot/storage.hxx>
 #ifndef _SVTOOLS_HRC
 #include <svtools/svtools.hrc>
@@ -179,8 +179,8 @@ bool Atom::compareContent( Atom& rAtom )
 		SvStream& rStream2 = rAtom.getStream();
 
 		const int nBufferSize = 1024;
-		boost::shared_ptr< char > buffer1( new char[nBufferSize] );
-		boost::shared_ptr< char > buffer2( new char[nBufferSize] );
+		std::shared_ptr< char > buffer1( new char[nBufferSize] );
+		std::shared_ptr< char > buffer2( new char[nBufferSize] );
 
 		sal_uInt32 nLength = maRecordHeader.nRecLen;
 		sal_Size nRead = 0;
@@ -777,7 +777,7 @@ private:
 	SotStorageRef maStorage;
 };
 
-typedef boost::shared_ptr< PPTDocument > PPTDocumentPtr;
+typedef std::shared_ptr< PPTDocument > PPTDocumentPtr;
 
 PPTDocument::PPTDocument(const rtl::OUString& rFilePath)
 : mpAtom(0), mpDocStream(0)

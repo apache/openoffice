@@ -200,14 +200,10 @@ namespace svt
 	//= stl helpers
 	//=====================================================================
 	//---------------------------------------------------------------------
-	/// compares two TemplateContent by URL
-	struct TemplateContentURLLess
-		:public ::std::binary_function	<	::vos::ORef< TemplateContent >
-										,	::vos::ORef< TemplateContent >
-										,	bool
-										>
-	{
-		bool operator() ( const ::vos::ORef< TemplateContent >& _rxLHS, const ::vos::ORef< TemplateContent >& _rxRHS ) const
+/// compares two TemplateContent by URL
+struct TemplateContentURLLess
+{
+    bool operator() ( const ::vos::ORef< TemplateContent >& _rxLHS, const ::vos::ORef< TemplateContent >& _rxRHS ) const
 		{
 			return	_rxLHS->getURL() < _rxRHS->getURL()
 				?	true
@@ -217,7 +213,7 @@ namespace svt
 
 	//---------------------------------------------------------------------
 	/// sorts the sib contents of a TemplateFolderContent
-	struct SubContentSort : public ::std::unary_function< ::vos::ORef< TemplateContent >, void >
+	struct SubContentSort
 	{
 		void operator() ( TemplateFolderContent& _rFolder ) const
 		{
@@ -247,13 +243,9 @@ namespace svt
 	//---------------------------------------------------------------------
 	/** does a deep compare of two template contents
 	*/
-	struct TemplateContentEqual
-		:public ::std::binary_function	<	::vos::ORef< TemplateContent >
-										,	::vos::ORef< TemplateContent >
-										,	bool
-										>
+
+struct TemplateContentEqual
 	{
-		//.................................................................
 		bool operator() (const ::vos::ORef< TemplateContent >& _rLHS, const ::vos::ORef< TemplateContent >& _rRHS )
 		{
 			if ( !_rLHS.isValid() || !_rRHS.isValid() )
@@ -300,9 +292,8 @@ namespace svt
 
 	//---------------------------------------------------------------------
 	/// functor which allows storing a string
-	struct StoreString
-			:public ::std::unary_function< String, void >
-			,public StorageHelper
+struct StoreString
+		: public StorageHelper
 	{
 		StoreString( SvStream& _rStorage ) : StorageHelper( _rStorage ) { }
 
@@ -314,9 +305,8 @@ namespace svt
 
 	//---------------------------------------------------------------------
 	/// functor which stores the local name of a TemplateContent
-	struct StoreLocalContentName
-			:public ::std::unary_function< ::vos::ORef< TemplateContent >, void >
-			,public StoreString
+struct StoreLocalContentName
+		: public StoreString
 	{
 		StoreLocalContentName( SvStream& _rStorage ) : StoreString( _rStorage ) { }
 
@@ -330,9 +320,8 @@ namespace svt
 	};
 
 	//---------------------------------------------------------------------
-	struct StoreContentURL
-			:public ::std::unary_function< ::vos::ORef< TemplateContent >, void >
-			,public StoreString
+struct StoreContentURL
+		: public StoreString
 	{
         uno::Reference< util::XOfficeInstallationDirectories > m_xOfficeInstDirs;
 
@@ -355,9 +344,8 @@ namespace svt
 
 	//---------------------------------------------------------------------
 	/// functor which stores the complete content of a TemplateContent
-	struct StoreFolderContent
-			:public ::std::unary_function< ::vos::ORef< TemplateContent >, void >
-			,public StorageHelper
+struct StoreFolderContent
+		: public StorageHelper
 	{
         uno::Reference< util::XOfficeInstallationDirectories > m_xOfficeInstDirs;
 
@@ -403,9 +391,8 @@ namespace svt
 
 	//---------------------------------------------------------------------
 	/// functor which reads a complete TemplateContent instance
-	struct ReadFolderContent
-			:public ::std::unary_function< ::vos::ORef< TemplateContent >, void >
-			,public StorageHelper
+struct ReadFolderContent
+		: public StorageHelper
 	{
         uno::Reference< util::XOfficeInstallationDirectories > m_xOfficeInstDirs;
 

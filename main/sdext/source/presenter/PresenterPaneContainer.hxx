@@ -40,7 +40,7 @@
 #include <vector>
 #include <boost/function.hpp>
 #include <boost/noncopyable.hpp>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 namespace css = ::com::sun::star;
 
@@ -86,7 +86,7 @@ public:
     {
     public:
         typedef ::boost::function<void(bool)> Activator;
-        typedef ::boost::function<boost::shared_ptr<PresenterSprite>()> SpriteProvider;
+        typedef ::boost::function<std::shared_ptr<PresenterSprite>()> SpriteProvider;
         css::uno::Reference<css::drawing::framework::XResourceId> mxPaneId;
         ::rtl::OUString msViewURL;
         ::rtl::Reference<PresenterPaneBase> mxPane;
@@ -113,7 +113,7 @@ public:
 
         void SetActivationState (const bool bIsActive);
     };
-    typedef ::boost::shared_ptr<PaneDescriptor> SharedPaneDescriptor;
+    typedef ::std::shared_ptr<PaneDescriptor> SharedPaneDescriptor;
     typedef ::std::vector<SharedPaneDescriptor> PaneList;
     PaneList maPanes;
 

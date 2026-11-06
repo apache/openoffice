@@ -40,6 +40,7 @@
 #include <cppuhelper/typeprovider.hxx>
 #include <cppuhelper/implbase4.hxx>
 #include <toolkit/helper/listenermultiplexer.hxx>
+#include <memory>
 
 
 namespace svt { namespace table {
@@ -55,7 +56,7 @@ typedef ::cppu::ImplInheritanceHelper4  <   VCLXWindow
 class SVTXGridControl : public SVTXGridControl_Base
 {
 private:
-    ::boost::shared_ptr< ::svt::table::UnoControlTableModel >   m_pTableModel;
+    ::std::shared_ptr< ::svt::table::UnoControlTableModel >   m_pTableModel;
     bool                                                        m_bTableModelInitCompleted;
 	SelectionListenerMultiplexer                                m_aSelectionListeners;
 

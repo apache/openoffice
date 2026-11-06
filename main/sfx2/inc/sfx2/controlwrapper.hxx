@@ -472,7 +472,7 @@ public:
     virtual void        SetControlDontKnow( bool bSet );
 
 private:
-    std::auto_ptr< MultiControlWrapperHelper_Impl > mxImpl;
+    std::unique_ptr< MultiControlWrapperHelper_Impl > mxImpl;
 };
 
 // ----------------------------------------------------------------------------

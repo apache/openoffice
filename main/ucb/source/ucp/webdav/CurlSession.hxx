@@ -25,7 +25,7 @@
 #define INCLUDED_CURLSESSION_HXX
 
 #include <vector>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <osl/mutex.hxx>
 #include <comphelper/componentcontext.hxx>
 #include <comphelper/logging.hxx>

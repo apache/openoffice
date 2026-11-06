@@ -38,7 +38,7 @@
 #include <deque>
 
 #include <boost/noncopyable.hpp>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 class SdrUndoAction;
 
@@ -76,7 +76,7 @@ public:
     */
     UndoElement( const ::rtl::OUString & i_actionString,
                  const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XModel >& i_documentModel,
-                 const ::boost::shared_ptr< ChartModelClone >& i_modelClone
+                 const ::std::shared_ptr< ChartModelClone >& i_modelClone
                );
 
     // XUndoAction
@@ -96,7 +96,7 @@ private:
 private:
     ::rtl::OUString                                                     m_sActionString;
     ::com::sun::star::uno::Reference< ::com::sun::star::frame::XModel > m_xDocumentModel;
-    ::boost::shared_ptr< ChartModelClone >                              m_pModelClone;
+    ::std::shared_ptr< ChartModelClone >                              m_pModelClone;
 };
 
 

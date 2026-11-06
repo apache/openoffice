@@ -90,7 +90,7 @@ namespace comphelper
 
         /** creates an iterator for looping through all registered listeners
         */
-        inline ::std::auto_ptr< ::cppu::OInterfaceIteratorHelper >
+        inline ::std::unique_ptr< ::cppu::OInterfaceIteratorHelper >
                 createIterator();
 
     protected:
@@ -153,9 +153,9 @@ namespace comphelper
         return m_aListeners.getLength();
     }
 
-    inline ::std::auto_ptr< ::cppu::OInterfaceIteratorHelper > OListenerContainer::createIterator()
+    inline ::std::unique_ptr< ::cppu::OInterfaceIteratorHelper > OListenerContainer::createIterator()
     {
-        ::std::auto_ptr< ::cppu::OInterfaceIteratorHelper > pIterator( new ::cppu::OInterfaceIteratorHelper( m_aListeners ) );
+        ::std::unique_ptr< ::cppu::OInterfaceIteratorHelper > pIterator( new ::cppu::OInterfaceIteratorHelper( m_aListeners ) );
         return pIterator;
     }
 

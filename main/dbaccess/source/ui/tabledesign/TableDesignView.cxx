@@ -58,6 +58,7 @@
 #endif
 #ifndef INCLUDED_SVTOOLS_SYSLOCALE_HXX
 #include <unotools/syslocale.hxx>
+#include <memory>
 #endif
 #ifndef DBAUI_TOOLS_HXX
 #include "UITools.hxx"
@@ -106,11 +107,11 @@ OTableBorderWindow::~OTableBorderWindow()
 	m_pFieldDescWin->Hide();
 
 	{
-		::std::auto_ptr<Window> aTemp(m_pEditorCtrl);
+		::std::unique_ptr<Window> aTemp(m_pEditorCtrl);
 		m_pEditorCtrl = NULL;
 	}
 	{
-		::std::auto_ptr<Window> aTemp(m_pFieldDescWin);
+		::std::unique_ptr<Window> aTemp(m_pFieldDescWin);
 		m_pFieldDescWin = NULL;
 	}
 
@@ -244,7 +245,7 @@ OTableDesignView::~OTableDesignView()
 	m_pWin->Hide();
 
 	{
-		::std::auto_ptr<Window> aTemp(m_pWin);
+		::std::unique_ptr<Window> aTemp(m_pWin);
 		m_pWin = NULL;
 	}
 }
@@ -286,7 +287,7 @@ IMPL_LINK( OTableDesignView, SwitchHdl, Accelerator*, /*pAcc*/ )
 	}
 	else
 	{
-		 ::boost::shared_ptr<OTableRow>  pRow = (*GetEditorCtrl()->GetRowList())[GetEditorCtrl()->GetCurRow()];
+		 ::std::shared_ptr<OTableRow>  pRow = (*GetEditorCtrl()->GetRowList())[GetEditorCtrl()->GetCurRow()];
 		OFieldDescription* pFieldDescr = pRow ? pRow->GetActFieldDescr() : NULL;
 		if ( pFieldDescr )
 			GetDescWin()->GrabFocus();
@@ -381,7 +382,7 @@ void OTableDesignView::setReadOnly(sal_Bool _bReadOnly)
 void OTableDesignView::reSync()
 {
 	GetEditorCtrl()->DeactivateCell();
-	 ::boost::shared_ptr<OTableRow>  pRow = (*GetEditorCtrl()->GetRowList())[GetEditorCtrl()->GetCurRow()];
+	 ::std::shared_ptr<OTableRow>  pRow = (*GetEditorCtrl()->GetRowList())[GetEditorCtrl()->GetCurRow()];
 	OFieldDescription* pFieldDescr = pRow ? pRow->GetActFieldDescr() : NULL;
 	if ( pFieldDescr )
 		GetDescWin()->DisplayData(pFieldDescr);

@@ -81,7 +81,7 @@ namespace dbmm
                 );
 
     private:
-        ::std::auto_ptr< InteractionHandler_Data >  m_pData;
+        ::std::unique_ptr< InteractionHandler_Data >  m_pData;
     };
 
 //........................................................................

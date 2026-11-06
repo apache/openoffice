@@ -37,6 +37,7 @@
 #include "UserDefinedProperties.hxx"
 
 #include <algorithm>
+#include <memory>
 
 using namespace ::com::sun::star;
 using ::com::sun::star::beans::Property;
@@ -92,7 +93,7 @@ namespace chart
 namespace wrapper
 {
 
-AreaWrapper::AreaWrapper( ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact ) :
+AreaWrapper::AreaWrapper( ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact ) :
         m_spChart2ModelContact( spChart2ModelContact ),
         m_aEventListenerContainer( m_aMutex )
 {

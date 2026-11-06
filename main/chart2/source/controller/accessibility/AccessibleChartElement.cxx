@@ -158,7 +158,7 @@ void AccessibleChartElement::InitTextEdit()
 //             {
 //                 SvxEditSource * pEditSource = new SvxEditSource( pTextObj, pView, pWindow );
 //                 m_pTextHelper = new ::accessibility::AccessibleTextHelper(
-//                     ::std::auto_ptr< SvxEditSource >( pEditSource ));
+//                     ::std::unique_ptr< SvxEditSource >( pEditSource ));
 //                 if( m_pTextHelper )
 //                     m_pTextHelper->SetEventSource( this );
 //             }

@@ -26,7 +26,7 @@
 
 #include <vector>
 #include <unordered_set>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 #include "dptabdat.hxx"
 #include "scdllapi.h"
@@ -191,7 +191,7 @@ class ScDPGroupTableData : public ScDPTableData
 {
     typedef ::std::unordered_set< ::rtl::OUString, ::rtl::OUStringHash, ::std::equal_to< ::rtl::OUString > > StringHashSet;
 
-    ::boost::shared_ptr<ScDPTableData> pSourceData;
+    ::std::shared_ptr<ScDPTableData> pSourceData;
     long                    nSourceCount;
     ScDPGroupDimensionVec   aGroups;
     ScDPNumGroupDimension*  pNumGroups;     // array[nSourceCount]
@@ -212,7 +212,7 @@ class ScDPGroupTableData : public ScDPTableData
 
 public:
                 // takes ownership of pSource
-                ScDPGroupTableData( const ::boost::shared_ptr<ScDPTableData>& pSource, ScDocument* pDocument );
+                ScDPGroupTableData( const ::std::shared_ptr<ScDPTableData>& pSource, ScDocument* pDocument );
     virtual     ~ScDPGroupTableData();
 
     void        AddGroupDimension( const ScDPGroupDimension& rGroup );

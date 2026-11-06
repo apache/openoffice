@@ -44,6 +44,7 @@
 #include <cppuhelper/basemutex.hxx>
 #include <cppuhelper/weakref.hxx>
 #include <comphelper/stl_types.hxx>
+#include <memory>
 
 
 namespace css = ::com::sun::star;
@@ -210,7 +211,7 @@ private:
         const Rectangle& rButtonBox,
         const ::std::vector<TabBar::DeckMenuData>& rMenuData) const;
     void ShowDetailMenu (const ::rtl::OUString& rsMenuCommand) const;
-    ::boost::shared_ptr<PopupMenu> CreatePopupMenu (
+    ::std::shared_ptr<PopupMenu> CreatePopupMenu (
         const ::std::vector<TabBar::DeckMenuData>& rMenuData) const;
     DECL_LINK(OnMenuItemSelected, Menu*);
     void BroadcastPropertyChange (void);

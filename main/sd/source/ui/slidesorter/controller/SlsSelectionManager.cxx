@@ -47,6 +47,7 @@
 #include <svx/svxids.hrc>
 #include <com/sun/star/drawing/XMasterPagesSupplier.hpp>
 #include <com/sun/star/drawing/XDrawPagesSupplier.hpp>
+#include <memory>
 
 #include "res_bmp.hrc"
 #include "sdresid.hxx"
@@ -347,7 +348,7 @@ void SelectionManager::SetInsertionPosition (const sal_Int32 nInsertionPosition)
 
 
 
-::boost::shared_ptr<SelectionObserver> SelectionManager::GetSelectionObserver (void) const
+::std::shared_ptr<SelectionObserver> SelectionManager::GetSelectionObserver (void) const
 {
     return mpSelectionObserver;
 }

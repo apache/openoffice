@@ -24,6 +24,7 @@
 #ifndef SD_SIDEBAR_PANELS_RECENT_MASTER_PAGES_SELECTOR_HXX
 #define SD_SIDEBAR_PANELS_RECENT_MASTER_PAGES_SELECTOR_HXX
 
+#include <memory>
 #include "MasterPagesSelector.hxx"
 
 namespace sd { namespace sidebar {
@@ -58,7 +59,7 @@ protected:
     */
     virtual void AssignMasterPageToPageList (
         SdPage* pMasterPage,
-        const ::boost::shared_ptr<std::vector<SdPage*> >& rpPageList);
+        const ::std::shared_ptr<std::vector<SdPage*> >& rpPageList);
 
     virtual void ProcessPopupMenu (Menu& rMenu);
 
@@ -67,7 +68,7 @@ private:
         ::Window* pParent,
         SdDrawDocument& rDocument,
         ViewShellBase& rBase,
-        const ::boost::shared_ptr<MasterPageContainer>& rpContainer,
+        const ::std::shared_ptr<MasterPageContainer>& rpContainer,
         const cssu::Reference<css::ui::XSidebar>& rxSidebar);
     virtual ~RecentMasterPagesSelector (void);
 

@@ -28,7 +28,7 @@
 #include <com/sun/star/io/XOutputStream.hpp>
 #include <com/sun/star/xml/sax/XFastTokenHandler.hpp>
 #include <stdarg.h>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <sax/fastattribs.hxx>
 #include "sax/dllapi.h"
 
@@ -107,7 +107,7 @@ private:
 
 };
 
-typedef boost::shared_ptr< FastSerializerHelper > FSHelperPtr;
+typedef std::shared_ptr< FastSerializerHelper > FSHelperPtr;
 
 }
 

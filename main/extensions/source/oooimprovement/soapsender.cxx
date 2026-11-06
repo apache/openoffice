@@ -33,13 +33,13 @@
 #include <com/sun/star/io/XInputStream.hpp>
 #include <osl/socket.hxx>
 #include <rtl/strbuf.hxx>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 
 using namespace com::sun::star::uno;
 using namespace com::sun::star::lang;
 using namespace com::sun::star::io;
-using boost::shared_ptr;
+using std::shared_ptr;
 using com::sun::star::io::XTempFile;
 using com::sun::star::ucb::XSimpleFileAccess;
 using com::sun::star::util::URL;

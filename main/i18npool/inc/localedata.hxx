@@ -115,7 +115,7 @@ public:
 private :
 	friend sal_Bool operator ==(const com::sun::star::lang::Locale& l1, const com::sun::star::lang::Locale& l2);
 
-    ::std::auto_ptr< LocaleDataLookupTableItem > cachedItem;
+    ::std::unique_ptr< LocaleDataLookupTableItem > cachedItem;
 
 	oslGenericFunction SAL_CALL getFunctionSymbol( const com::sun::star::lang::Locale& rLocale, const sal_Char* pFunction );
 	oslGenericFunction SAL_CALL getFunctionSymbolByName( const rtl::OUString& localeName, const sal_Char* pFunction );

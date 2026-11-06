@@ -23,6 +23,7 @@
 #ifndef INCLUDED_SLIDESHOW_PROPERTYANIMATIONNODE_HXX
 #define INCLUDED_SLIDESHOW_PROPERTYANIMATIONNODE_HXX
 
+#include <memory>
 #include "animationbasenode.hxx"
 
 namespace slideshow {
@@ -34,7 +35,7 @@ public:
     PropertyAnimationNode(
         ::com::sun::star::uno::Reference<
         ::com::sun::star::animations::XAnimationNode> const& xNode,
-        ::boost::shared_ptr<BaseContainerNode> const& pParent,
+        ::std::shared_ptr<BaseContainerNode> const& pParent,
         NodeContext const& rContext )
         : AnimationBaseNode( xNode, pParent, rContext ) {}
 

@@ -59,6 +59,7 @@
 #include <com/sun/star/drawing/FillStyle.hpp>
 #include <com/sun/star/drawing/LineJoint.hpp>
 #include <com/sun/star/drawing/LineStyle.hpp>
+#include <memory>
 
 using namespace ::com::sun::star;
 using namespace ::chart::wrapper;
@@ -227,7 +228,7 @@ struct StaticPointWrapperPropertyArray : public rtl::StaticAggregate< Sequence< 
 class WrappedAttachedAxisProperty : public ::chart::WrappedProperty
 {
 public:
-    WrappedAttachedAxisProperty( ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact );
+    WrappedAttachedAxisProperty( ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact );
     virtual ~WrappedAttachedAxisProperty();
 
     virtual void setPropertyValue( const Any& rOuterValue, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& xInnerPropertySet ) const;
@@ -237,11 +238,11 @@ public:
     virtual Any getPropertyDefault( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyState >& xInnerPropertyState ) const;
 
 protected:
-    ::boost::shared_ptr< Chart2ModelContact >   m_spChart2ModelContact;
+    ::std::shared_ptr< Chart2ModelContact >   m_spChart2ModelContact;
 };
 
 WrappedAttachedAxisProperty::WrappedAttachedAxisProperty(
-                ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact )
+                ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact )
                 : WrappedProperty(C2U("Axis"),rtl::OUString())
             , m_spChart2ModelContact( spChart2ModelContact )
 {
@@ -455,7 +456,7 @@ namespace wrapper
 {
 
 DataSeriesPointWrapper::DataSeriesPointWrapper(
-            ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact )
+            ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact )
         : m_spChart2ModelContact( spChart2ModelContact )
         , m_aEventListenerContainer( m_aMutex )
         , m_eType( DATA_SERIES )
@@ -495,7 +496,7 @@ void SAL_CALL DataSeriesPointWrapper::initialize( const uno::Sequence< uno::Any 
 DataSeriesPointWrapper::DataSeriesPointWrapper( eType _eType
             , sal_Int32 nSeriesIndexInNewAPI
             , sal_Int32 nPointIndex //ignored for series
-            , ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact )
+            , ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact )
         : m_spChart2ModelContact( spChart2ModelContact )
         , m_aEventListenerContainer( m_aMutex )
         , m_eType( _eType )

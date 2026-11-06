@@ -37,7 +37,7 @@
 #include <unotools/options.hxx>
 #include <list>
 #include <vector>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 #include <MarkedSection.hxx>
 #include <SectionWindow.hxx>
@@ -53,7 +53,7 @@ namespace rptui
 
 
     // -----------------------------------------------------------------------------
-    struct RectangleLess : public ::std::binary_function< Rectangle, Rectangle, bool>
+    struct RectangleLess 
     {
         enum CompareMode { POS_LEFT,POS_RIGHT,POS_UPPER,POS_DOWN,POS_CENTER_HORIZONTAL,POS_CENTER_VERTICAL };
         CompareMode m_eCompareMode;
@@ -115,16 +115,16 @@ namespace rptui
 	{
         typedef ::std::multimap<Rectangle,::std::pair<SdrObject*,OSectionView*>,RectangleLess>      TRectangleMap;
 	public:
-		typedef ::std::vector< ::boost::shared_ptr<OSectionWindow> >								TSectionsMap;
+		typedef ::std::vector< ::std::shared_ptr<OSectionWindow> >								TSectionsMap;
 
-		struct TReportPairHelper : public ::std::unary_function< TSectionsMap::value_type, OReportSection >
+		struct TReportPairHelper 
 		{
 			OReportSection& operator() (const TSectionsMap::value_type& lhs) const
 			{
 				return lhs->getReportSection();
 			}
 		};
-        struct TStartMarkerHelper : public ::std::unary_function< TSectionsMap::value_type, OStartMarker >
+        struct TStartMarkerHelper 
 		{
 			OStartMarker& operator() (const TSectionsMap::value_type& lhs) const
 			{
@@ -193,7 +193,7 @@ namespace rptui
         * \param _nPos
         * \return the section at this pos or an empty section
         */
-        ::boost::shared_ptr<OSectionWindow> getSectionWindow(const sal_uInt16 _nPos) const;
+        ::std::shared_ptr<OSectionWindow> getSectionWindow(const sal_uInt16 _nPos) const;
 
 		/** turns the grid on or off
 		*
@@ -247,8 +247,8 @@ namespace rptui
 		/** returns the report section window for the given xsection
 			@param	_xSection	the section
 		*/
-		// ::boost::shared_ptr<OSectionWindow>	getReportSection(const ::com::sun::star::uno::Reference< ::com::sun::star::report::XSection >& _xSection);
-		::boost::shared_ptr<OSectionWindow> getSectionWindow(const ::com::sun::star::uno::Reference< ::com::sun::star::report::XSection>& _xSection) const;
+		// ::std::shared_ptr<OSectionWindow>	getReportSection(const ::com::sun::star::uno::Reference< ::com::sun::star::report::XSection >& _xSection);
+		::std::shared_ptr<OSectionWindow> getSectionWindow(const ::com::sun::star::uno::Reference< ::com::sun::star::report::XSection>& _xSection) const;
 
 		/** checks if the keycode is known by the child windows
 			@param	_rCode	the keycode
@@ -265,7 +265,7 @@ namespace rptui
         void			setMarked(const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::report::XReportComponent> >& _xShape,sal_Bool _bMark);
 
 		// IMarkedSection
-		::boost::shared_ptr<OSectionWindow> getMarkedSection(NearSectionAccess nsa = CURRENT) const;
+		::std::shared_ptr<OSectionWindow> getMarkedSection(NearSectionAccess nsa = CURRENT) const;
         virtual void markSection(const sal_uInt16 _nPos);
 
         /** align all marked objects in all sections

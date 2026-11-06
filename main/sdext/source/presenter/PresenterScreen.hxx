@@ -39,7 +39,7 @@
 #include <com/sun/star/presentation/XPresentation2.hpp>
 #include <rtl/ref.hxx>
 #include <boost/noncopyable.hpp>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <boost/scoped_ptr.hpp>
 
 namespace css = ::com::sun::star;

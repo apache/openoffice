@@ -32,6 +32,7 @@
 
 #include <tools/link.hxx>
 #include <set>
+#include <memory>
 
 namespace {
 
@@ -97,7 +98,7 @@ MasterPagesSelector* AllMasterPagesSelector::Create (
     if (pDocument == NULL)
         return NULL;
 
-    ::boost::shared_ptr<MasterPageContainer> pContainer (new MasterPageContainer());
+    ::std::shared_ptr<MasterPageContainer> pContainer (new MasterPageContainer());
 
     MasterPagesSelector* pSelector(
         new AllMasterPagesSelector (
@@ -119,7 +120,7 @@ AllMasterPagesSelector::AllMasterPagesSelector (
     ::Window* pParent,
     SdDrawDocument& rDocument,
     ViewShellBase& rBase,
-    const ::boost::shared_ptr<MasterPageContainer>& rpContainer,
+    const ::std::shared_ptr<MasterPageContainer>& rpContainer,
     const cssu::Reference<css::ui::XSidebar>& rxSidebar)
     : MasterPagesSelector(pParent, rDocument, rBase, rpContainer, rxSidebar),
       mpSortedMasterPages(new SortedMasterPageDescriptorList())

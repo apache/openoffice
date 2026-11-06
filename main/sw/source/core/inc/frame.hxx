@@ -32,6 +32,7 @@
 
 #include <com/sun/star/style/TabStop.hpp>
 #include <comphelper/stlunosequence.hxx>
+#include <memory>
 using namespace ::com::sun::star;
 class SwLayoutFrm;
 class SwRootFrm;
@@ -274,7 +275,7 @@ enum MakePageType
 //UUUU
 namespace drawinglayer { namespace attribute {
     class SdrAllFillAttributesHelper;
-    typedef boost::shared_ptr< SdrAllFillAttributesHelper > SdrAllFillAttributesHelperPtr;
+    typedef std::shared_ptr< SdrAllFillAttributesHelper > SdrAllFillAttributesHelperPtr;
 }}
 
 class SwFrm: public SwClient, public SfxBroadcaster

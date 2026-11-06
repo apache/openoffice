@@ -108,7 +108,7 @@ private:
     { return stoc_bootstrap::simreg_getSupportedServiceNames(); }
 
     Registry registry_;
-    std::auto_ptr< stoc::simpleregistry::TextualServices > textual_;
+    std::unique_ptr< stoc::simpleregistry::TextualServices > textual_;
 };
 
 class Key: public cppu::WeakImplHelper1< css::registry::XRegistryKey > {

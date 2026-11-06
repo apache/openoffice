@@ -40,7 +40,7 @@
 
 #include <vector>
 #include <boost/scoped_ptr.hpp>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 namespace sd { namespace tools {
     class EventMultiplexerEvent;
@@ -81,7 +81,7 @@ public:
 
     virtual void SAL_CALL disposing (void);
 
-    ::boost::shared_ptr< ::TabControl> GetTabControl (void) const;
+    ::std::shared_ptr< ::TabControl> GetTabControl (void) const;
 
     bool ActivatePage (void);
 
@@ -159,7 +159,7 @@ public:
         GetTabBarButtons (void);
 
 private:
-    ::boost::shared_ptr< ::TabControl> mpTabControl;
+    ::std::shared_ptr< ::TabControl> mpTabControl;
     ::com::sun::star::uno::Reference<
         ::com::sun::star::frame::XController> mxController;
     ::com::sun::star::uno::Reference<

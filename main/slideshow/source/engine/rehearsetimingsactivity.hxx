@@ -27,7 +27,7 @@
 #include "activity.hxx"
 
 #include <basegfx/range/b2drange.hxx>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <boost/enable_shared_from_this.hpp>
 #include <boost/noncopyable.hpp>
 
@@ -51,13 +51,13 @@ class EventMultiplexer;
 class ScreenUpdater;
 class RehearseTimingsActivity : public Activity,
                                 public ViewEventHandler,
-                                public boost::enable_shared_from_this<RehearseTimingsActivity>,
+                                public std::enable_shared_from_this<RehearseTimingsActivity>,
                                 private ::boost::noncopyable
 {
 public:
     /** Creates the activity.
      */
-    static boost::shared_ptr<RehearseTimingsActivity> create(
+    static std::shared_ptr<RehearseTimingsActivity> create(
         const SlideShowContext& rContext );
 
     virtual ~RehearseTimingsActivity();
@@ -103,7 +103,7 @@ private:
 
     typedef ::std::vector<
         ::std::pair<UnoViewSharedPtr,
-                    boost::shared_ptr<cppcanvas::CustomSprite> > > ViewsVecT;
+                    std::shared_ptr<cppcanvas::CustomSprite> > > ViewsVecT;
 
     template <typename func_type>
     void for_each_sprite( func_type const & func ) const
@@ -129,8 +129,8 @@ private:
     ::basegfx::B2DRange             maSpriteRectangle;
 
     Font                            maFont;
-    boost::shared_ptr<WakeupEvent>  mpWakeUpEvent;
-    boost::shared_ptr<MouseHandler> mpMouseHandler;
+    std::shared_ptr<WakeupEvent>  mpWakeUpEvent;
+    std::shared_ptr<MouseHandler> mpMouseHandler;
     ::basegfx::B2IVector            maSpriteSizePixel;
     sal_Int32                       mnYOffset;
     bool                            mbActive;

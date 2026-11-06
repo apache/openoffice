@@ -90,7 +90,7 @@ AxisItemConverter::AxisItemConverter(
     const Reference< chart2::XChartDocument > & xChartDoc,
     ::chart::ExplicitScaleData * pScale /* = NULL */,
     ::chart::ExplicitIncrementData * pIncrement /* = NULL */,
-    ::std::auto_ptr< awt::Size > pRefSize /* = NULL */ ) :
+    ::std::unique_ptr< awt::Size > pRefSize /* = NULL */ ) :
         ItemConverter( rPropertySet, rItemPool ),
         m_xChartDoc( xChartDoc ),
         m_pExplicitScale( NULL ),

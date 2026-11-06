@@ -32,7 +32,7 @@
 #include "oox/drawingml/textliststyle.hxx"
 #include <com/sun/star/table/XCell.hpp>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <boost/optional.hpp>
 #include <vector>
 #include <map>

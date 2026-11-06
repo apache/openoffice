@@ -28,6 +28,7 @@
 #include <com/sun/star/uno/Reference.hxx>
 
 #include <vector>
+#include <memory>
 
 namespace com { namespace sun { namespace star { namespace presentation
 {
@@ -73,7 +74,7 @@ namespace slideshow
             virtual void setIsSoundEnabled (const bool bValue) = 0;
         };
 
-        typedef ::boost::shared_ptr< UnoView > 		UnoViewSharedPtr;
+        typedef ::std::shared_ptr< UnoView > 		UnoViewSharedPtr;
         typedef ::std::vector< UnoViewSharedPtr >	UnoViewVector;
     }
 }

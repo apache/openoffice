@@ -24,6 +24,7 @@
 #ifndef OOX_DUMP_BIFFDUMPER_HXX
 #define OOX_DUMP_BIFFDUMPER_HXX
 
+#include <memory>
 #include "oox/dump/dumperbase.hxx"
 #include "oox/dump/dffdumper.hxx"
 #include "oox/dump/oledumper.hxx"
@@ -43,7 +44,7 @@ namespace oox {
 namespace dump {
 namespace biff {
 
-typedef ::boost::shared_ptr< ::oox::xls::BiffInputStream > BiffInputStreamRef;
+typedef ::std::shared_ptr< ::oox::xls::BiffInputStream > BiffInputStreamRef;
 
 // ============================================================================
 // ============================================================================
@@ -224,9 +225,9 @@ protected:
     void                dumpControl();
 
 private:
-    typedef ::boost::shared_ptr< BiffSharedData >       BiffSharedDataRef;
-    typedef ::boost::shared_ptr< BiffDffStreamObject >  BiffDffStreamObjRef;
-    typedef ::boost::shared_ptr< BiffCtlsStreamObject > BiffCtlsStrmObjRef;
+    typedef ::std::shared_ptr< BiffSharedData >       BiffSharedDataRef;
+    typedef ::std::shared_ptr< BiffDffStreamObject >  BiffDffStreamObjRef;
+    typedef ::std::shared_ptr< BiffCtlsStreamObject > BiffCtlsStrmObjRef;
 
     BiffSharedDataRef   mxBiffData;
     BiffInputStreamRef  mxBiffStrm;
@@ -367,8 +368,8 @@ private:
 private:
     enum AddDataType { ADDDATA_NLR, ADDDATA_ARRAY, ADDDATA_MEMAREA };
 
-    typedef ::boost::shared_ptr< FormulaStack >                 FormulaStackRef;
-    typedef ::boost::shared_ptr< ::oox::xls::FunctionProvider > FuncProvRef;
+    typedef ::std::shared_ptr< FormulaStack >                 FormulaStackRef;
+    typedef ::std::shared_ptr< ::oox::xls::FunctionProvider > FuncProvRef;
     typedef ::std::vector< AddDataType >                        AddDataTypeVec;
 
     NameListRef         mxTokens;
@@ -406,7 +407,7 @@ protected:
     inline FormulaObject& getFormulaDumper() const { return *mxFmlaObj; }
 
 private:
-    typedef ::boost::shared_ptr< FormulaObject > FormulaObjectRef;
+    typedef ::std::shared_ptr< FormulaObject > FormulaObjectRef;
     FormulaObjectRef    mxFmlaObj;
 };
 

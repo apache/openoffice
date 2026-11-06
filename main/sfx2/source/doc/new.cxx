@@ -55,6 +55,7 @@
 #include <vcl/virdev.hxx>
 #include <vcl/jobset.hxx>
 #include <svtools/accessibilityoptions.hxx>
+#include <memory>
 
 // Draw modes
 #define OUTPUT_DRAWMODE_COLOR		(DRAWMODE_DEFAULT)
@@ -70,9 +71,9 @@
 
 void SfxPreviewBase_Impl::SetObjectShell( SfxObjectShell* pObj )
 {
-    ::boost::shared_ptr<GDIMetaFile> pFile = pObj
+    ::std::shared_ptr<GDIMetaFile> pFile = pObj
         ? pObj->GetPreviewMetaFile()
-        : ::boost::shared_ptr<GDIMetaFile>();
+        : ::std::shared_ptr<GDIMetaFile>();
 	pMetaFile = pFile;
 	Invalidate();
 }
@@ -99,7 +100,7 @@ void SfxPreviewBase_Impl::Resize()
 	Invalidate();
 }
 
-void SfxPreviewBase_Impl::SetGDIFile( ::boost::shared_ptr<GDIMetaFile> pFile )
+void SfxPreviewBase_Impl::SetGDIFile( ::std::shared_ptr<GDIMetaFile> pFile )
 {
 	pMetaFile = pFile;
 	Invalidate();

@@ -383,7 +383,7 @@ void SwDoc::setForbiddenCharacters(/*[in]*/ sal_uInt16 nLang,
     {
         pTmpRoot->StartAllAction();
 		std::set<SwRootFrm*> aAllLayouts = GetAllLayouts();
-		std::for_each( aAllLayouts.begin(), aAllLayouts.end(), std::bind2nd(std::mem_fun(&SwRootFrm::InvalidateAllCntnt), INV_SIZE));
+		std::for_each( aAllLayouts.begin(), aAllLayouts.end(), [INV_SIZE](auto _x) { _x->InvalidateAllCntnt(INV_SIZE); });
         pTmpRoot->EndAllAction();
     }//swmod 080310
     SetModified();
@@ -454,7 +454,7 @@ void SwDoc::setCharacterCompressionType( /*[in]*/SwCharCompressType n )
         {
 			pTmpRoot->StartAllAction();
 			std::set<SwRootFrm*> aAllLayouts = GetAllLayouts();
-			std::for_each( aAllLayouts.begin(), aAllLayouts.end(), std::bind2nd(std::mem_fun(&SwRootFrm::InvalidateAllCntnt), INV_SIZE));
+			std::for_each( aAllLayouts.begin(), aAllLayouts.end(), [INV_SIZE](auto _x) { _x->InvalidateAllCntnt(INV_SIZE); });
 			pTmpRoot->EndAllAction();
 		}//swmod 080310
         SetModified();
@@ -2058,8 +2058,8 @@ void SwDoc::SpellItAgainSam( sal_Bool bInvalid, sal_Bool bOnlyWrong, sal_Bool bS
 	ASSERT( GetCurrentLayout(), "SpellAgain: Where's my RootFrm?" );
 	if( bInvalid )
 	{
-		std::for_each( aAllLayouts.begin(), aAllLayouts.end(),std::bind2nd(std::mem_fun(&SwRootFrm::AllInvalidateSmartTagsOrSpelling),bSmartTags));//swmod 080305
-		std::for_each( aAllLayouts.begin(), aAllLayouts.end(),std::bind2nd(std::mem_fun(&SwRootFrm::SetNeedGrammarCheck), true) );
+		std::for_each( aAllLayouts.begin(), aAllLayouts.end(),[bSmartTags](auto _x) { _x->AllInvalidateSmartTagsOrSpelling(bSmartTags); });//swmod 080305
+		std::for_each( aAllLayouts.begin(), aAllLayouts.end(),[true](auto _x) { _x->SetNeedGrammarCheck(true); } );
 		if ( bSmartTags )
 			GetNodes().ForEach( lcl_CheckSmartTagsAgain, &bOnlyWrong );
 		GetNodes().ForEach( lcl_SpellAndGrammarAgain, &bOnlyWrong );

@@ -37,6 +37,7 @@
 #include <rtl/ref.hxx>
 #include <vcl/print.hxx>
 #include <queue>
+#include <memory>
 
 // forward ---------------------------------------------------------------
 
@@ -69,10 +70,10 @@ struct SfxViewShell_Impl
     SfxScrollingMode            m_eScroll;
     sal_uInt16                      m_nFamily;
     ::rtl::Reference<SfxBaseController> m_pController;
-    ::std::auto_ptr< ::svt::AcceleratorExecute >    m_pAccExec;
+    ::std::unique_ptr< ::svt::AcceleratorExecute >    m_pAccExec;
 	com::sun::star::uno::Sequence < com::sun::star::beans::PropertyValue > aPrintOpts;
     ::rtl::Reference< SfxClipboardChangeListener > xClipboardListener;
-    ::boost::shared_ptr< vcl::PrinterController > m_pPrinterController;
+    ::std::shared_ptr< vcl::PrinterController > m_pPrinterController;
 
     SfxViewShell_Impl(sal_uInt16 const nFlags);
 };

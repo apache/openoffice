@@ -44,6 +44,7 @@
 #include <vcl/svapp.hxx>
 
 #include <sfx2/dispatch.hxx>
+#include <memory>
 #include "sdresid.hxx"
 
 using namespace ::com::sun::star::uno;
@@ -78,14 +79,14 @@ private:
 
 //===== SlideSorter ===========================================================
 
-::boost::shared_ptr<SlideSorter> SlideSorter::CreateSlideSorter(
+::std::shared_ptr<SlideSorter> SlideSorter::CreateSlideSorter(
     ViewShell& rViewShell,
-    const ::boost::shared_ptr<sd::Window>& rpContentWindow,
-	const ::boost::shared_ptr<ScrollBar>& rpHorizontalScrollBar,
-	const ::boost::shared_ptr<ScrollBar>& rpVerticalScrollBar,
-    const ::boost::shared_ptr<ScrollBarBox>& rpScrollBarBox)
+    const ::std::shared_ptr<sd::Window>& rpContentWindow,
+	const ::std::shared_ptr<ScrollBar>& rpHorizontalScrollBar,
+	const ::std::shared_ptr<ScrollBar>& rpVerticalScrollBar,
+    const ::std::shared_ptr<ScrollBarBox>& rpScrollBarBox)
 {
-    ::boost::shared_ptr<SlideSorter> pSlideSorter(
+    ::std::shared_ptr<SlideSorter> pSlideSorter(
         new SlideSorter(
             rViewShell,
             rpContentWindow,
@@ -99,12 +100,12 @@ private:
 
 
 
-::boost::shared_ptr<SlideSorter> SlideSorter::CreateSlideSorter (
+::std::shared_ptr<SlideSorter> SlideSorter::CreateSlideSorter (
     ViewShellBase& rBase,
     ViewShell* pViewShell,
     ::Window& rParentWindow)
 {
-    ::boost::shared_ptr<SlideSorter> pSlideSorter(
+    ::std::shared_ptr<SlideSorter> pSlideSorter(
         new SlideSorter(
             rBase,
             pViewShell,
@@ -118,10 +119,10 @@ private:
 
 SlideSorter::SlideSorter (
     ViewShell& rViewShell,
-	const ::boost::shared_ptr<sd::Window>& rpContentWindow,
-	const ::boost::shared_ptr<ScrollBar>& rpHorizontalScrollBar,
-	const ::boost::shared_ptr<ScrollBar>& rpVerticalScrollBar,
-    const ::boost::shared_ptr<ScrollBarBox>& rpScrollBarBox)
+	const ::std::shared_ptr<sd::Window>& rpContentWindow,
+	const ::std::shared_ptr<ScrollBar>& rpHorizontalScrollBar,
+	const ::std::shared_ptr<ScrollBar>& rpVerticalScrollBar,
+    const ::std::shared_ptr<ScrollBarBox>& rpScrollBarBox)
     : mbIsValid(false),
       mpSlideSorterController(),
       mpSlideSorterModel(),
@@ -260,7 +261,7 @@ bool SlideSorter::IsValid (void) const
 
 
 
-::boost::shared_ptr<ScrollBar> SlideSorter::GetVerticalScrollBar (void) const
+::std::shared_ptr<ScrollBar> SlideSorter::GetVerticalScrollBar (void) const
 {
     return mpVerticalScrollBar;
 }
@@ -269,7 +270,7 @@ bool SlideSorter::IsValid (void) const
 
 
 
-::boost::shared_ptr<ScrollBar> SlideSorter::GetHorizontalScrollBar (void) const
+::std::shared_ptr<ScrollBar> SlideSorter::GetHorizontalScrollBar (void) const
 {
     return mpHorizontalScrollBar;
 }
@@ -277,7 +278,7 @@ bool SlideSorter::IsValid (void) const
 
 
 
-::boost::shared_ptr<ScrollBarBox> SlideSorter::GetScrollBarFiller (void) const
+::std::shared_ptr<ScrollBarBox> SlideSorter::GetScrollBarFiller (void) const
 {
     return mpScrollBarBox;
 }
@@ -512,7 +513,7 @@ SvBorder SlideSorter::GetBorder (void)
 {
     SvBorder aBorder;
 
-    ::boost::shared_ptr<ScrollBar> pScrollBar = GetVerticalScrollBar();
+    ::std::shared_ptr<ScrollBar> pScrollBar = GetVerticalScrollBar();
     if (pScrollBar.get() != NULL && pScrollBar->IsVisible())
         aBorder.Right() = pScrollBar->GetOutputSizePixel().Width();
 
@@ -574,7 +575,7 @@ void SlideSorter::SetCurrentFunction (const FunctionReference& rpFunction)
 
 
 
-::boost::shared_ptr<controller::Properties> SlideSorter::GetProperties (void) const
+::std::shared_ptr<controller::Properties> SlideSorter::GetProperties (void) const
 {
     OSL_ASSERT(mpProperties);
     return mpProperties;
@@ -583,7 +584,7 @@ void SlideSorter::SetCurrentFunction (const FunctionReference& rpFunction)
 
 
 
-::boost::shared_ptr<view::Theme> SlideSorter::GetTheme (void) const
+::std::shared_ptr<view::Theme> SlideSorter::GetTheme (void) const
 {
     OSL_ASSERT(mpTheme);
     return mpTheme;

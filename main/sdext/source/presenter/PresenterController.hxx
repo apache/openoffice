@@ -51,7 +51,7 @@
 #include <map>
 #include <vector>
 #include <boost/function.hpp>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <boost/scoped_ptr.hpp>
 
 namespace css = ::com::sun::star;
@@ -107,16 +107,16 @@ public:
         GetViewBackground (const ::rtl::OUString& rsViewURL) const;
     PresenterTheme::SharedFontDescriptor
         GetViewFont (const ::rtl::OUString& rsViewURL) const;
-    ::boost::shared_ptr<PresenterTheme> GetTheme (void) const;
+    ::std::shared_ptr<PresenterTheme> GetTheme (void) const;
     ::rtl::Reference<PresenterWindowManager> GetWindowManager (void) const;
     css::uno::Reference<css::presentation::XSlideShowController>
         GetSlideShowController (void) const;
     rtl::Reference<PresenterPaneContainer> GetPaneContainer (void) const;
     ::rtl::Reference<PresenterPaneBorderPainter> GetPaneBorderPainter (void) const;
-    ::boost::shared_ptr<PresenterAnimator> GetAnimator (void) const;
-    ::boost::shared_ptr<PresenterCanvasHelper> GetCanvasHelper (void) const;
+    ::std::shared_ptr<PresenterAnimator> GetAnimator (void) const;
+    ::std::shared_ptr<PresenterCanvasHelper> GetCanvasHelper (void) const;
     css::uno::Reference<css::drawing::XPresenterHelper> GetPresenterHelper (void) const;
-    ::boost::shared_ptr<PresenterPaintManager> GetPaintManager (void) const;
+    ::std::shared_ptr<PresenterPaintManager> GetPaintManager (void) const;
     void HideSlideSorter (void);
     double GetSlideAspectRatio (void) const;
     void ShowView (const ::rtl::OUString& rsViewURL);
@@ -207,15 +207,15 @@ private:
     css::uno::Reference<css::drawing::XDrawPage> mxCurrentSlide;
     css::uno::Reference<css::drawing::XDrawPage> mxNextSlide;
     ::rtl::Reference<PresenterWindowManager> mpWindowManager;
-    ::boost::shared_ptr<PresenterPaneAnimator> mpCurrentPaneAnimation;
+    ::std::shared_ptr<PresenterPaneAnimator> mpCurrentPaneAnimation;
     sal_Int32 mnWindowBackgroundColor;
-    ::boost::shared_ptr<PresenterTheme> mpTheme;
+    ::std::shared_ptr<PresenterTheme> mpTheme;
     css::uno::Reference<css::awt::XWindow> mxMainWindow;
     ::rtl::Reference<PresenterPaneBorderPainter> mpPaneBorderPainter;
-    ::boost::shared_ptr<PresenterAnimator> mpAnimator;
-    ::boost::shared_ptr<PresenterCanvasHelper> mpCanvasHelper;
+    ::std::shared_ptr<PresenterAnimator> mpAnimator;
+    ::std::shared_ptr<PresenterCanvasHelper> mpCanvasHelper;
     css::uno::Reference<css::drawing::XPresenterHelper> mxPresenterHelper;
-    ::boost::shared_ptr<PresenterPaintManager> mpPaintManager;
+    ::std::shared_ptr<PresenterPaintManager> mpPaintManager;
     sal_Int32 mnPendingSlideNumber;
     css::uno::Reference<css::util::XURLTransformer> mxUrlTransformer;
     ::rtl::Reference<PresenterAccessible> mpAccessibleObject;

@@ -155,7 +155,7 @@ namespace svt
     //---------------------------------------------------------------------
     namespace
     {
-        struct ResetDialogController : public ::std::unary_function< const PDialogController&, void >
+        struct ResetDialogController 
         {
             void operator()( const PDialogController& _pController )
             {

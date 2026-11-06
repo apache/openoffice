@@ -25,7 +25,7 @@
 #define INCLUDED_SLIDESHOW_CURSORMANAGER_HXX
 
 #include <sal/types.h>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 
 /* Definition of CursorManager interface */
@@ -60,7 +60,7 @@ namespace slideshow
             virtual void resetCursor() = 0;
         };
 
-        typedef ::boost::shared_ptr< CursorManager > CursorManagerSharedPtr;
+        typedef ::std::shared_ptr< CursorManager > CursorManagerSharedPtr;
 
     }
 }

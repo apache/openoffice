@@ -31,7 +31,7 @@
 #include <com/sun/star/container/XIndexAccess.hpp>
 #include <com/sun/star/sdbc/XConnection.hpp>
 #include <unotools/eventlisteneradapter.hxx>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <vector>
 
 namespace dbaui
@@ -96,6 +96,6 @@ namespace dbaui
 		virtual void _disposing( const ::com::sun::star::lang::EventObject& _rSource );
 	};
 
-    typedef ::std::vector< ::boost::shared_ptr<OTableWindowData> >		TTableWindowData;
+    typedef ::std::vector< ::std::shared_ptr<OTableWindowData> >		TTableWindowData;
 }
 #endif // DBAUI_TABLEWINDOWDATA_HXX

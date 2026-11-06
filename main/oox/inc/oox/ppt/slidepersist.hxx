@@ -24,7 +24,7 @@
 #ifndef OOX_POWERPOINT_SLIDEPERSIST_HXX
 #define OOX_POWERPOINT_SLIDEPERSIST_HXX
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include "oox/drawingml/shape.hxx"
 #include "oox/drawingml/theme.hxx"
 #include "oox/drawingml/clrscheme.hxx"
@@ -53,9 +53,9 @@ enum ShapeLocation
 class TimeNode;
 class SlidePersist;
 
-typedef boost::shared_ptr< SlidePersist > SlidePersistPtr;
+typedef std::shared_ptr< SlidePersist > SlidePersistPtr;
 
-class SlidePersist : public boost::enable_shared_from_this< SlidePersist >
+class SlidePersist : public std::enable_shared_from_this< SlidePersist >
 {
 
 public:
@@ -102,7 +102,7 @@ public:
     oox::drawingml::TextListStylePtr getOtherTextStyle() const { return maOtherTextStylePtr; }
 
     oox::drawingml::ShapePtr getShapes() { return maShapesPtr; }
-    ::std::list< boost::shared_ptr< TimeNode > >& getTimeNodeList() { return maTimeNodeList; }
+    ::std::list< std::shared_ptr< TimeNode > >& getTimeNodeList() { return maTimeNodeList; }
 	oox::ppt::HeaderFooter& getHeaderFooter(){ return maHeaderFooter; };
 
     oox::vml::Drawing* getDrawing() { return mpDrawingPtr.get(); }
@@ -118,7 +118,7 @@ public:
 private:
 	rtl::OUString															maPath;
 	rtl::OUString															maLayoutPath;
-    ::boost::shared_ptr< oox::vml::Drawing >                                mpDrawingPtr;
+    ::std::shared_ptr< oox::vml::Drawing >                                mpDrawingPtr;
 	com::sun::star::uno::Reference< com::sun::star::drawing::XDrawPage >	mxPage;
 	oox::drawingml::ThemePtr												mpThemePtr;			// the theme that is used
 	oox::drawingml::ClrSchemePtr											mpClrSchemePtr;		// the local color scheme (if any)
@@ -128,7 +128,7 @@ private:
 	oox::drawingml::ShapePtr												maShapesPtr;
 	oox::drawingml::Color													maBackgroundColor;
 	oox::drawingml::FillPropertiesPtr										mpBackgroundPropertiesPtr;
-	::std::list< boost::shared_ptr< TimeNode > >							maTimeNodeList;
+	::std::list< std::shared_ptr< TimeNode > >							maTimeNodeList;
 
 	oox::ppt::HeaderFooter													maHeaderFooter;
 	sal_Int32																mnLayoutValueToken;

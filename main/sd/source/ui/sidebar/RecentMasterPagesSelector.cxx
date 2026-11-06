@@ -35,6 +35,7 @@
 
 #include <vcl/bitmap.hxx>
 #include <tools/color.hxx>
+#include <memory>
 
 namespace sd { namespace sidebar {
 
@@ -47,7 +48,7 @@ MasterPagesSelector* RecentMasterPagesSelector::Create (
     if (pDocument == NULL)
         return NULL;
 
-    ::boost::shared_ptr<MasterPageContainer> pContainer (new MasterPageContainer());
+    ::std::shared_ptr<MasterPageContainer> pContainer (new MasterPageContainer());
 
     MasterPagesSelector* pSelector(
         new RecentMasterPagesSelector (
@@ -68,7 +69,7 @@ RecentMasterPagesSelector::RecentMasterPagesSelector (
     ::Window* pParent,
     SdDrawDocument& rDocument,
     ViewShellBase& rBase,
-    const ::boost::shared_ptr<MasterPageContainer>& rpContainer,
+    const ::std::shared_ptr<MasterPageContainer>& rpContainer,
     const cssu::Reference<css::ui::XSidebar>& rxSidebar)
     : MasterPagesSelector (pParent, rDocument, rBase, rpContainer, rxSidebar)
 {
@@ -143,7 +144,7 @@ void RecentMasterPagesSelector::Fill (ItemList& rItemList)
 
 void RecentMasterPagesSelector::AssignMasterPageToPageList (
     SdPage* pMasterPage,
-    const ::boost::shared_ptr<std::vector<SdPage*> >& rpPageList)
+    const ::std::shared_ptr<std::vector<SdPage*> >& rpPageList)
 {
 	sal_uInt16 nSelectedItemId = PreviewValueSet::GetSelectItemId();
 

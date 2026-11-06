@@ -189,7 +189,7 @@ Sequence< sal_Int8 > OConnectionWrapper::getUnoTunnelImplementationId()
 // -----------------------------------------------------------------------------
 namespace
 {
-	class TPropertyValueLessFunctor : public ::std::binary_function< ::com::sun::star::beans::PropertyValue,::com::sun::star::beans::PropertyValue,bool>
+	class TPropertyValueLessFunctor 
 	{
 	public:
 		TPropertyValueLessFunctor()

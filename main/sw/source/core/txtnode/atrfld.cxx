@@ -43,6 +43,7 @@
 #include <IDocumentFieldsAccess.hxx>
 #include <fieldhint.hxx>
 #include <svl/smplhint.hxx>
+#include <memory>
 
 TYPEINIT3( SwFmtFld, SfxPoolItem, SwClient,SfxBroadcaster)
 TYPEINIT1(SwFmtFldHint, SfxHint);
@@ -463,7 +464,7 @@ void SwTxtFld::NotifyContentChange(SwFmtFld& rFmtFld)
 /*static*/
 void SwTxtFld::GetPamForTxtFld(
     const SwTxtFld& rTxtFld,
-    boost::shared_ptr< SwPaM >& rPamForTxtFld )
+    std::shared_ptr< SwPaM >& rPamForTxtFld )
 {
     if ( rTxtFld.GetpTxtNode() == NULL )
     {
@@ -486,7 +487,7 @@ void SwTxtFld::DeleteTxtFld( const SwTxtFld& rTxtFld )
 {
     if ( rTxtFld.GetpTxtNode() != NULL )
     {
-        boost::shared_ptr< SwPaM > pPamForTxtFld;
+        std::shared_ptr< SwPaM > pPamForTxtFld;
         GetPamForTxtFld( rTxtFld, pPamForTxtFld );
         if ( pPamForTxtFld.get() != NULL )
         {

@@ -24,7 +24,7 @@
 #ifndef INCLUDED_SLIDESHOW_ANIMATIONEVENTHANDLER_HXX
 #define INCLUDED_SLIDESHOW_ANIMATIONEVENTHANDLER_HXX
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include "animationnode.hxx"
 
 
@@ -59,7 +59,7 @@ namespace slideshow
             virtual bool handleAnimationEvent( const AnimationNodeSharedPtr& rNode ) = 0;
         };
 
-        typedef ::boost::shared_ptr< AnimationEventHandler > AnimationEventHandlerSharedPtr;
+        typedef ::std::shared_ptr< AnimationEventHandler > AnimationEventHandlerSharedPtr;
 
     }
 }

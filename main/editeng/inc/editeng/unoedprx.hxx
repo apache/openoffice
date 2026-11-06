@@ -156,7 +156,7 @@ public:
 	virtual void								UpdateData();
     virtual SfxBroadcaster&						GetBroadcaster() const;
 
-    void		SetEditSource( ::std::auto_ptr< SvxEditSource > pAdaptee );
+    void		SetEditSource( ::std::unique_ptr< SvxEditSource > pAdaptee );
     sal_Bool	IsValid() const;
 
 private:
@@ -164,7 +164,7 @@ private:
 	SvxEditSourceAdapter( const SvxEditSourceAdapter& );
 	SvxEditSourceAdapter& operator= ( const SvxEditSourceAdapter& );
 
-    ::std::auto_ptr< SvxEditSource > 	mpAdaptee;
+    ::std::unique_ptr< SvxEditSource > 	mpAdaptee;
 
     SvxAccessibleTextAdapter			maTextAdapter;
     SvxAccessibleTextEditViewAdapter 	maEditViewAdapter;

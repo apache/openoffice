@@ -30,7 +30,7 @@
 
 #include <boost/function.hpp>
 #include <boost/scoped_ptr.hpp>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <vector>
 
 namespace css = ::com::sun::star;
@@ -84,7 +84,7 @@ private:
     const ::boost::function<void(void)> maDeckLayoutTrigger;
     const ::boost::function<Context(void)> maContextAccess;
 };
-typedef ::boost::shared_ptr<Panel> SharedPanel;
+typedef ::std::shared_ptr<Panel> SharedPanel;
 typedef ::std::vector<SharedPanel> SharedPanelContainer;
 
 

@@ -27,6 +27,7 @@
 #include <canvas/debug.hxx>
 #include <tools/diagnose_ex.h>
 #include <canvas/verbosetrace.hxx>
+#include <memory>
 
 #include "animationactivity.hxx"
 #include "animation.hxx"
@@ -49,7 +50,7 @@ template <class AnimationT>
 class SetActivity : public AnimationActivity
 {
 public:
-    typedef ::boost::shared_ptr< AnimationT >   AnimationSharedPtrT;
+    typedef ::std::shared_ptr< AnimationT >   AnimationSharedPtrT;
     typedef typename AnimationT::ValueType      ValueT;
 
     SetActivity( const ActivitiesFactory::CommonParameters& rParms,
@@ -138,7 +139,7 @@ private:
 
 template <class AnimationT> AnimationActivitySharedPtr makeSetActivity(
     const ActivitiesFactory::CommonParameters& rParms,
-    const ::boost::shared_ptr< AnimationT >&   rAnimation,
+    const ::std::shared_ptr< AnimationT >&   rAnimation,
     const typename AnimationT::ValueType&      rToValue )
 {
     return AnimationActivitySharedPtr(

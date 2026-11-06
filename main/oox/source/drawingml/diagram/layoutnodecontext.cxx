@@ -44,7 +44,7 @@ public:
 			   const LayoutAtomPtr & pNode )
         : LayoutNodeContext( rParent, xAttribs, pNode )
 		{
-			ConditionAtomPtr pAtom( boost::dynamic_pointer_cast< ConditionAtom >(pNode) );
+			ConditionAtomPtr pAtom( std::dynamic_pointer_cast< ConditionAtom >(pNode) );
 			OSL_ENSURE( pAtom, "Must pass a ConditionAtom" );
 
 			pAtom->iterator().loadFromXAttr( xAttribs );
@@ -143,7 +143,7 @@ public:
     ForEachContext( ContextHandler& rParent, const Reference< XFastAttributeList >& xAttribs, const LayoutAtomPtr & pNode )
         : LayoutNodeContext( rParent, xAttribs, pNode )
 		{
-			ForEachAtomPtr pAtom( boost::dynamic_pointer_cast< ForEachAtom >(pNode) );
+			ForEachAtomPtr pAtom( std::dynamic_pointer_cast< ForEachAtom >(pNode) );
 			OSL_ENSURE( pAtom, "Must pass a ForEachAtom" );
 			xAttribs->getOptionalValue( XML_ref );
 
@@ -324,7 +324,7 @@ LayoutNodeContext::createFastChildContext( ::sal_Int32 aElement,
 		break;
 	case DGM_TOKEN( varLst ):
 	{
-		LayoutNodePtr pNode( boost::dynamic_pointer_cast< LayoutNode >( mpNode ) );
+		LayoutNodePtr pNode( std::dynamic_pointer_cast< LayoutNode >( mpNode ) );
 		if( pNode )
 		{
             xRet.set( new LayoutVariablePropertySetContext( *this, pNode->variables() ) );

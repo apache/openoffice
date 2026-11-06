@@ -30,6 +30,7 @@
 #include <resourcemodel/LoggedResources.hxx>
 
 #include <com/sun/star/container/XIndexReplace.hpp>
+#include <memory>
 
 namespace writerfilter {
 namespace dmapper {
@@ -54,11 +55,11 @@ class ListLevel : public PropertyMap
     sal_Int32                                     m_nXChFollow;      //LN_IXCHFOLLOW
     ::rtl::OUString                               m_sBulletChar;
     sal_Int32                                     m_nTabstop;
-    boost::shared_ptr< StyleSheetEntry >          m_pParaStyle;
+    std::shared_ptr< StyleSheetEntry >          m_pParaStyle;
 
 public:
 
-    typedef boost::shared_ptr< ListLevel > Pointer;
+    typedef std::shared_ptr< ListLevel > Pointer;
 
     ListLevel() :
         m_nIStartAt(-1)
@@ -78,7 +79,7 @@ public:
     // Setters for the import
     void SetValue( Id nId, sal_Int32 nValue );
     void SetBulletChar( rtl::OUString sValue ) { m_sBulletChar = sValue; };
-    void SetParaStyle( boost::shared_ptr< StyleSheetEntry > pStyle )
+    void SetParaStyle( std::shared_ptr< StyleSheetEntry > pStyle )
     {
         m_pParaStyle = pStyle;
     };
@@ -86,7 +87,7 @@ public:
 
     // Getters
     rtl::OUString GetBulletChar( ) { return m_sBulletChar; };
-    boost::shared_ptr< StyleSheetEntry > GetParaStyle( ) { return m_pParaStyle; };
+    std::shared_ptr< StyleSheetEntry > GetParaStyle( ) { return m_pParaStyle; };
 
     // UNO mapping functions
 
@@ -132,7 +133,7 @@ private:
     ::rtl::OUString                      m_sNumStyleLink;
 
 public:
-    typedef boost::shared_ptr< AbstractListDef > Pointer;
+    typedef std::shared_ptr< AbstractListDef > Pointer;
 
     AbstractListDef( );
     ~AbstractListDef( );
@@ -169,7 +170,7 @@ private:
     uno::Reference< container::XIndexReplace > m_xNumRules;
 
 public:
-    typedef boost::shared_ptr< ListDef > Pointer;
+    typedef std::shared_ptr< ListDef > Pointer;
 
     ListDef( );
     ~ListDef( );
@@ -232,7 +233,7 @@ public:
             const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > xFactory);
     virtual ~ListsManager();
 
-    typedef boost::shared_ptr< ListsManager >  Pointer;
+    typedef std::shared_ptr< ListsManager >  Pointer;
 
     // Config methods
     void SetLFOImport( bool bLFOImport ) { m_bIsLFOImport = bLFOImport; };

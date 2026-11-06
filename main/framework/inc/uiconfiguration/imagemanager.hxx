@@ -117,7 +117,7 @@ namespace framework
             void setStorage( const ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage >& Storage );
 
         private:
-            ::std::auto_ptr<ImageManagerImpl> m_pImpl;
+            ::std::unique_ptr<ImageManagerImpl> m_pImpl;
    };
 }
 

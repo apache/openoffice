@@ -33,6 +33,7 @@
 #include <cppcanvas/vclfactory.hxx>
 #include <com/sun/star/drawing/XDrawPage.hpp>
 #include <com/sun/star/rendering/XBitmapCanvas.hpp>
+#include <memory>
 
 using namespace ::com::sun::star;
 using namespace ::com::sun::star::uno;
@@ -65,7 +66,7 @@ public:
     virtual bool IsIdle (void);
     virtual bool IsVisible (CacheKey aKey);
     virtual const SdrPage* GetPage (CacheKey aKey);
-    virtual ::boost::shared_ptr<std::vector<CacheKey> > GetEntryList (bool bVisible);
+    virtual ::std::shared_ptr<std::vector<CacheKey> > GetEntryList (bool bVisible);
     virtual sal_Int32 GetPriority (CacheKey aKey);
     virtual ::com::sun::star::uno::Reference<com::sun::star::uno::XInterface> GetModel (void);
 
@@ -408,10 +409,10 @@ const SdrPage* PresenterPreviewCache::PresenterCacheContext::GetPage (CacheKey a
 
 
 
-::boost::shared_ptr<std::vector<CacheKey> >
+::std::shared_ptr<std::vector<CacheKey> >
     PresenterPreviewCache::PresenterCacheContext::GetEntryList (bool bVisible)
 {
-    ::boost::shared_ptr<std::vector<CacheKey> > pKeys (new std::vector<CacheKey>());
+    ::std::shared_ptr<std::vector<CacheKey> > pKeys (new std::vector<CacheKey>());
 
     if ( ! mxSlides.is())
         return pKeys;

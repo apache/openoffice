@@ -33,7 +33,7 @@
 
 #include <basegfx/vector/b2isize.hxx>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 #include <cppuhelper/compbase3.hxx>
 #include <comphelper/uno3.hxx>

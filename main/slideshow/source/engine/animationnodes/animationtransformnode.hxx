@@ -24,6 +24,7 @@
 #ifndef INCLUDED_SLIDESHOW_ANIMATIONTRANSFORMNODE_HXX
 #define INCLUDED_SLIDESHOW_ANIMATIONTRANSFORMNODE_HXX
 
+#include <memory>
 #include "animationbasenode.hxx"
 #include "com/sun/star/animations/XAnimateTransform.hpp"
 
@@ -36,7 +37,7 @@ public:
     AnimationTransformNode(
         ::com::sun::star::uno::Reference<
         ::com::sun::star::animations::XAnimationNode> const& xNode,
-        ::boost::shared_ptr<BaseContainerNode> const& pParent,
+        ::std::shared_ptr<BaseContainerNode> const& pParent,
         NodeContext const& rContext )
         : AnimationBaseNode( xNode, pParent, rContext ),
           mxTransformNode( xNode, ::com::sun::star::uno::UNO_QUERY_THROW ) {}

@@ -35,7 +35,7 @@
 
 #include <rtl/ref.hxx>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <boost/utility.hpp>
 
 #include "dx_winstuff.hxx"
@@ -48,8 +48,8 @@ namespace dxcanvas
 {
     class SpriteCanvas;
 
-	typedef ::boost::shared_ptr< Gdiplus::Font > 		FontSharedPtr;
-    typedef ::boost::shared_ptr< Gdiplus::FontFamily > 	FontFamilySharedPtr;
+	typedef ::std::shared_ptr< Gdiplus::Font > 		FontSharedPtr;
+    typedef ::std::shared_ptr< Gdiplus::FontFamily > 	FontFamilySharedPtr;
 
     typedef ::cppu::WeakComponentImplHelper2< ::com::sun::star::rendering::XCanvasFont,
                          					  ::com::sun::star::lang::XServiceInfo > CanvasFont_Base;

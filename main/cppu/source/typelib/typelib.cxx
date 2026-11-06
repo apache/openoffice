@@ -25,6 +25,7 @@
 #include "precompiled_cppu.hxx"
 
 #include <unordered_map>
+#include <functional>
 #include <list>
 #include <set>
 #include <vector>
@@ -177,7 +178,7 @@ struct hashStr_Impl
 
 //-----------------------------------------------------------------------------
 // Heavy hack, the const sal_Unicode * is held by the type description reference
-typedef unordered_map< const sal_Unicode *, typelib_TypeDescriptionReference *,
+typedef std::unordered_map< const sal_Unicode *, typelib_TypeDescriptionReference *,
 				  hashStr_Impl, equalStr_Impl > WeakMap_Impl;
 
 typedef pair< void *, typelib_typedescription_Callback > CallbackEntry;

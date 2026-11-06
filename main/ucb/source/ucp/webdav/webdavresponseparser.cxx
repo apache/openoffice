@@ -74,7 +74,7 @@ namespace
 } // end of anonymous namespace
 
 //////////////////////////////////////////////////////////////////////////////
-// WebDAVName enum and StringToEnum converter using unordered_map
+// WebDAVName enum and StringToEnum converter using std::unordered_map
 
 namespace
 {

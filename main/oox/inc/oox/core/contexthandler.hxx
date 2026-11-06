@@ -25,7 +25,7 @@
 #define OOX_CORE_CONTEXTHANDLER_HXX
 
 #include <com/sun/star/xml/sax/XFastContextHandler.hpp>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <cppuhelper/implbase1.hxx>
 #include <rtl/ref.hxx>
 #include "oox/token/namespaces.hxx"
@@ -51,7 +51,7 @@ class ContextHandler;
 typedef ::rtl::Reference< ContextHandler > ContextHandlerRef;
 
 struct FragmentBaseData;
-typedef ::boost::shared_ptr< FragmentBaseData > FragmentBaseDataRef;
+typedef ::std::shared_ptr< FragmentBaseData > FragmentBaseDataRef;
 
 typedef ::cppu::WeakImplHelper1< ::com::sun::star::xml::sax::XFastContextHandler > ContextHandler_BASE;
 

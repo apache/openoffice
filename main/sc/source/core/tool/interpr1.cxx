@@ -83,7 +83,7 @@ ScTokenStack* ScInterpreter::pGlobalStack = NULL;
 sal_Bool ScInterpreter::bGlobalStackInUse = sal_False;
 
 using namespace formula;
-using ::std::auto_ptr;
+using ::std::unique_ptr;
 
 //-----------------------------------------------------------------------------
 // Funktionen
@@ -6522,7 +6522,7 @@ ScDBQueryParamBase* ScInterpreter::GetDBParams( sal_Bool& rMissingField )
     if ( GetByte() == 3 )
     {
         // First, get the query criteria range.
-        ::std::auto_ptr<ScDBRangeBase> pQueryRef( PopDoubleRef() );
+        ::std::unique_ptr<ScDBRangeBase> pQueryRef( PopDoubleRef() );
         if (!pQueryRef.get())
             return NULL;
 

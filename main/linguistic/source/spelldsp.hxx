@@ -43,7 +43,7 @@
 #include <com/sun/star/linguistic2/XSearchableDictionaryList.hpp>
 #include <com/sun/star/linguistic2/XLinguServiceEventBroadcaster.hpp>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <map>
 
 class LngSvcMgr;
@@ -58,7 +58,7 @@ class SpellCheckerDispatcher :
 	>,
 	public LinguDispatcher
 {
-    typedef boost::shared_ptr< LangSvcEntries_Spell >               LangSvcEntries_Spell_Ptr_t;
+    typedef std::shared_ptr< LangSvcEntries_Spell >               LangSvcEntries_Spell_Ptr_t;
     typedef std::map< LanguageType, LangSvcEntries_Spell_Ptr_t >    SpellSvcByLangMap_t;
     SpellSvcByLangMap_t     aSvcMap;
     LinguOptions            aOpt;

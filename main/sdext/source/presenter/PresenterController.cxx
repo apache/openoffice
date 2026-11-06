@@ -63,6 +63,7 @@
 
 #include <rtl/ustrbuf.hxx>
 #include <boost/bind.hpp>
+#include <memory>
 
 using namespace ::com::sun::star;
 using namespace ::com::sun::star::uno;
@@ -498,7 +499,7 @@ PresenterTheme::SharedFontDescriptor
 
 
 
-::boost::shared_ptr<PresenterTheme> PresenterController::GetTheme (void) const
+::std::shared_ptr<PresenterTheme> PresenterController::GetTheme (void) const
 {
     return mpTheme;
 }
@@ -539,7 +540,7 @@ rtl::Reference<PresenterPaneContainer> PresenterController::GetPaneContainer (vo
 
 
 
-::boost::shared_ptr<PresenterAnimator> PresenterController::GetAnimator (void) const
+::std::shared_ptr<PresenterAnimator> PresenterController::GetAnimator (void) const
 {
     return mpAnimator;
 }
@@ -547,7 +548,7 @@ rtl::Reference<PresenterPaneContainer> PresenterController::GetPaneContainer (vo
 
 
 
-::boost::shared_ptr<PresenterCanvasHelper> PresenterController::GetCanvasHelper (void) const
+::std::shared_ptr<PresenterCanvasHelper> PresenterController::GetCanvasHelper (void) const
 {
     return mpCanvasHelper;
 }
@@ -563,7 +564,7 @@ Reference<drawing::XPresenterHelper> PresenterController::GetPresenterHelper (vo
 
 
 
-::boost::shared_ptr<PresenterPaintManager> PresenterController::GetPaintManager (void) const
+::std::shared_ptr<PresenterPaintManager> PresenterController::GetPaintManager (void) const
 {
     return mpPaintManager;
 }

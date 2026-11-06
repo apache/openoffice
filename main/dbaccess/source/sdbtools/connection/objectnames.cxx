@@ -50,7 +50,7 @@
 #include <rtl/ustrbuf.hxx>
 #include <tools/string.hxx>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 //........................................................................
 namespace sdbtools
@@ -90,7 +90,7 @@ namespace sdbtools
 
         virtual ~INameValidation() { }
     };
-    typedef ::boost::shared_ptr< INameValidation >   PNameValidation;
+    typedef ::std::shared_ptr< INameValidation >   PNameValidation;
 
 	//====================================================================
 	//= PlainExistenceCheck

@@ -62,7 +62,7 @@ using ::rtl::OUStringBuffer;
 namespace
 {
 
-class lcl_MatchesRole : public ::std::unary_function< Reference< chart2::data::XLabeledDataSequence >, bool >
+class lcl_MatchesRole
 {
 public:
     explicit lcl_MatchesRole( const OUString & aRole, bool bMatchPrefix ) :
@@ -243,7 +243,10 @@ Reference< chart2::data::XLabeledDataSequence >
     ::std::vector< Reference< chart2::data::XLabeledDataSequence > > aResultVec;
     ::std::remove_copy_if( aDataSequences.getConstArray(), aDataSequences.getConstArray() + aDataSequences.getLength(),
                            ::std::back_inserter( aResultVec ),
-                           ::std::not1( lcl_MatchesRole( aRole, bMatchPrefix )));
+                           [&]( const Reference< chart2::data::XLabeledDataSequence >& _x )
+                           {
+                               return !lcl_MatchesRole( aRole, bMatchPrefix )( _x );
+                           } );
     return aResultVec;
 }
 

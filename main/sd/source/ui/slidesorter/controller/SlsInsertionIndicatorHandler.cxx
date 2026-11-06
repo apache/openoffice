@@ -31,6 +31,7 @@
 #include "model/SlideSorterModel.hxx"
 #include "model/SlsPageEnumerationProvider.hxx"
 #include <com/sun/star/datatransfer/dnd/DNDConstants.hpp>
+#include <memory>
 
 #include "SlideSorter.hxx"
 
@@ -234,7 +235,7 @@ void InsertionIndicatorHandler::SetPosition (
 
 
 
-::boost::shared_ptr<view::InsertAnimator> InsertionIndicatorHandler::GetInsertAnimator (void)
+::std::shared_ptr<view::InsertAnimator> InsertionIndicatorHandler::GetInsertAnimator (void)
 {
     if ( ! mpInsertAnimator)
         mpInsertAnimator.reset(new view::InsertAnimator(mrSlideSorter));
@@ -306,7 +307,7 @@ bool InsertionIndicatorHandler::IsInsertionTrivial (const sal_Int8 nDndAction)
 //===== InsertionIndicatorHandler::ForceShowContext ===========================
 
 InsertionIndicatorHandler::ForceShowContext::ForceShowContext (
-    const ::boost::shared_ptr<InsertionIndicatorHandler>& rpHandler)
+    const ::std::shared_ptr<InsertionIndicatorHandler>& rpHandler)
     : mpHandler(rpHandler)
 {
     mpHandler->ForceShow();

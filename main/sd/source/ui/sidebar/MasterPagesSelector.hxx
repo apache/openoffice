@@ -36,6 +36,7 @@
 #include <com/sun/star/ui/XSidebar.hpp>
 
 #include <queue>
+#include <memory>
 
 namespace css = ::com::sun::star;
 namespace cssu = ::com::sun::star::uno;
@@ -70,7 +71,7 @@ public:
         ::Window* pParent,
         SdDrawDocument& rDocument,
         ViewShellBase& rBase,
-        const ::boost::shared_ptr<MasterPageContainer>& rpContainer,
+        const ::std::shared_ptr<MasterPageContainer>& rpContainer,
         const cssu::Reference<css::ui::XSidebar>& rxSidebar);
     virtual ~MasterPagesSelector (void);
 
@@ -137,7 +138,7 @@ public:
 
 protected:
     mutable ::osl::Mutex maMutex;
-    ::boost::shared_ptr<MasterPageContainer> mpContainer;
+    ::std::shared_ptr<MasterPageContainer> mpContainer;
 
     SdDrawDocument& mrDocument;
     bool mbSmallPreviewSize;
@@ -180,7 +181,7 @@ protected:
 
     virtual sal_Int32 GetIndexForToken (MasterPageContainer::Token aToken) const;
     typedef ::std::vector<MasterPageContainer::Token> ItemList;
-    void UpdateItemList (::std::auto_ptr<ItemList> pList);
+    void UpdateItemList (::std::unique_ptr<ItemList> pList);
     void Clear (void);
     /** Invalidate the specified item so that on the next Fill() this item
         is updated.

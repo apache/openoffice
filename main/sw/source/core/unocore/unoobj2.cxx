@@ -120,6 +120,7 @@
 #include <iterator>
 #include <boost/bind.hpp>
 #include <switerator.hxx>
+#include <memory>
 
 using namespace ::com::sun::star;
 using ::rtl::OUString;
@@ -469,7 +470,7 @@ public:
     uno::Reference< text::XTextContent >    m_xNextPara;
 
     Impl(   uno::Reference< text::XText > const& xParent,
-            ::std::auto_ptr<SwUnoCrsr> pCursor,
+            ::std::unique_ptr<SwUnoCrsr> pCursor,
             const CursorType eType,
             SwStartNode const*const pStartNode, SwTable const*const pTable)
         : SwClient( pCursor.release() )
@@ -528,7 +529,7 @@ void SwXParagraphEnumeration::Impl::Modify( const SfxPoolItem *pOld, const SfxPo
 
 SwXParagraphEnumeration::SwXParagraphEnumeration(
         uno::Reference< text::XText > const& xParent,
-        ::std::auto_ptr<SwUnoCrsr> pCursor,
+        ::std::unique_ptr<SwUnoCrsr> pCursor,
         const CursorType eType,
         SwStartNode const*const pStartNode, SwTable const*const pTable)
     : m_pImpl( new SwXParagraphEnumeration::Impl(xParent, pCursor, eType,
@@ -626,7 +627,7 @@ SwXParagraphEnumeration::Impl::NextElement_Impl()
          (CURSOR_SELECTION_IN_TABLE == m_eCursorType)))
     {
         SwPosition* pStart = pUnoCrsr->Start();
-        const ::std::auto_ptr<SwUnoCrsr> aNewCrsr(
+        const ::std::unique_ptr<SwUnoCrsr> aNewCrsr(
             pUnoCrsr->GetDoc()->CreateUnoCrsr(*pStart, sal_False) );
         // one may also go into tables here
         if ((CURSOR_TBLTEXT != m_eCursorType) &&
@@ -1173,7 +1174,7 @@ SwXTextRange::CreateXTextRange(
 {
     const uno::Reference<text::XText> xParentText(
             ::sw::CreateParentXText(rDoc, rPos));
-    const ::std::auto_ptr<SwUnoCrsr> pNewCrsr(
+    const ::std::unique_ptr<SwUnoCrsr> pNewCrsr(
             rDoc.CreateUnoCrsr(rPos, sal_False));
     if(pMark)
     {
@@ -1308,7 +1309,7 @@ SwXTextRange::createContentEnumeration(const OUString& rServiceName)
         throw uno::RuntimeException();
     }
     const SwPosition aPos(GetDoc()->GetNodes().GetEndOfContent());
-    const ::std::auto_ptr<SwUnoCrsr> pNewCrsr(
+    const ::std::unique_ptr<SwUnoCrsr> pNewCrsr(
             m_pImpl->m_rDoc.CreateUnoCrsr(aPos, sal_False));
     if (!GetPositions(*pNewCrsr))
     {
@@ -1330,7 +1331,7 @@ SwXTextRange::createEnumeration()
         throw uno::RuntimeException();
     }
     const SwPosition aPos(GetDoc()->GetNodes().GetEndOfContent());
-    ::std::auto_ptr<SwUnoCrsr> pNewCrsr(
+    ::std::unique_ptr<SwUnoCrsr> pNewCrsr(
             m_pImpl->m_rDoc.CreateUnoCrsr(aPos, sal_False));
     if (!GetPositions(*pNewCrsr))
     {
@@ -1740,7 +1741,7 @@ protected:
 };
 
 struct InvalidFrameDepend {
-    bool operator() (::boost::shared_ptr<SwDepend> const & rEntry)
+    bool operator() (::std::shared_ptr<SwDepend> const & rEntry)
     { return !rEntry->GetRegisteredIn(); }
 };
 
@@ -1820,7 +1821,7 @@ lcl_FillFrame(SwClient & rEnum, SwUnoCrsr& rUnoCrsr,
         const SwFmtFlyCnt& rFlyCnt = pTxtAttr->GetFlyCnt();
         SwFrmFmt * const  pFrmFmt = rFlyCnt.GetFrmFmt();
         SwDepend * const pNewDepend = new SwDepend(&rEnum, pFrmFmt);
-        rFrames.push_back( ::boost::shared_ptr<SwDepend>(pNewDepend) );
+        rFrames.push_back( ::std::shared_ptr<SwDepend>(pNewDepend) );
     }
 }
 
@@ -1842,7 +1843,7 @@ SwXParaFrameEnumeration::SwXParaFrameEnumeration(
     {
         // create SwDepend for frame and insert into array
         SwDepend *const pNewDepend = new SwDepend(m_pImpl.get(), pFmt);
-        m_pImpl->m_Frames.push_back(::boost::shared_ptr<SwDepend>(pNewDepend));
+        m_pImpl->m_Frames.push_back(::std::shared_ptr<SwDepend>(pNewDepend));
     }
     else if ((PARAFRAME_PORTION_CHAR == eParaFrameMode) ||
              (PARAFRAME_PORTION_TEXTRANGE == eParaFrameMode))
@@ -1858,7 +1859,7 @@ SwXParaFrameEnumeration::SwXParaFrameEnumeration(
 
                 // create SwDepend for frame and insert into array
                 SwDepend *const pNewDepend = new SwDepend(m_pImpl.get(), pFrmFmt);
-                m_pImpl->m_Frames.push_back(::boost::shared_ptr<SwDepend>(pNewDepend));
+                m_pImpl->m_Frames.push_back(::std::shared_ptr<SwDepend>(pNewDepend));
             }
 
             //created from any text range

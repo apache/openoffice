@@ -27,7 +27,7 @@
 #include <stack>
 #include <string>
 #include <vector>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <WriterFilterDllApi.hxx>
 
 namespace writerfilter
@@ -39,8 +39,8 @@ using ::std::vector;
 
 class WRITERFILTER_DLLPUBLIC XPathLogger
 {
-    typedef unordered_map<string, unsigned int> TokenMap_t;
-    typedef boost::shared_ptr<TokenMap_t> TokenMapPointer_t;
+    typedef std::unordered_map<string, unsigned int> TokenMap_t;
+    typedef std::shared_ptr<TokenMap_t> TokenMapPointer_t;
 
     TokenMapPointer_t mp_tokenMap;
     stack<TokenMapPointer_t> m_tokenMapStack;

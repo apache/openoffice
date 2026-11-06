@@ -26,6 +26,7 @@
 
 #include <sal/config.h>
 #include <list>
+#include <memory>
 
 
 namespace pdfi
@@ -59,7 +60,7 @@ namespace pdfi
         virtual void visit( PageElement&, const std::list< Element* >::const_iterator&  ) = 0;
         virtual void visit( DocumentElement&, const std::list< Element* >::const_iterator&  ) = 0;
     };
-    typedef boost::shared_ptr<ElementTreeVisitor> ElementTreeVisitorSharedPtr;
+    typedef std::shared_ptr<ElementTreeVisitor> ElementTreeVisitorSharedPtr;
 
     /** Visitee interface
 
@@ -70,7 +71,7 @@ namespace pdfi
     {
         virtual void visitedBy( ElementTreeVisitor&, const std::list< Element* >::const_iterator& rParentIt ) = 0;
     };
-    typedef boost::shared_ptr<ElementTreeVisitable> ElementTreeVisitableSharedPtr;
+    typedef std::shared_ptr<ElementTreeVisitable> ElementTreeVisitableSharedPtr;
 }
 
 #endif

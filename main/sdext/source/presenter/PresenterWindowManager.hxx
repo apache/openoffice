@@ -45,7 +45,7 @@
 #include <tools/gen.hxx>
 #include <rtl/ref.hxx>
 #include <boost/noncopyable.hpp>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 namespace css = ::com::sun::star;
 
@@ -84,7 +84,7 @@ public:
     void SAL_CALL disposing (void);
 
     void SetParentPane (const css::uno::Reference<css::drawing::framework::XPane>& rxPane);
-    void SetTheme (const ::boost::shared_ptr<PresenterTheme>& rpTheme);
+    void SetTheme (const ::std::shared_ptr<PresenterTheme>& rpTheme);
     void NotifyPaneCreation (const PresenterPaneContainer::SharedPaneDescriptor& rpDescriptor);
     void NotifyViewCreation (const css::uno::Reference<css::drawing::framework::XView>& rxView);
     void SetPanePosSizeRelative (
@@ -187,7 +187,7 @@ private:
         the window sizes.
     */
     bool mbIsLayouting;
-    ::boost::shared_ptr<PresenterTheme> mpTheme;
+    ::std::shared_ptr<PresenterTheme> mpTheme;
     SharedBitmapDescriptor mpBackgroundBitmap;
     css::uno::Reference<css::rendering::XBitmap> mxScaledBackgroundBitmap;
     css::util::Color maPaneBackgroundColor;

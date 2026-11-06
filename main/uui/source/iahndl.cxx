@@ -1181,7 +1181,7 @@ NameClashResolveDialogResult executeSimpleNameClashResolveDialog( Window *pParen
                                                                   rtl::OUString & rProposedNewName,
                                                                   bool bAllowOverwrite )
 {
-    std::auto_ptr< ResMgr > xManager( ResMgr::CreateResMgr( CREATEVERSIONRESMGR_NAME( uui ) ) );
+    std::unique_ptr< ResMgr > xManager( ResMgr::CreateResMgr( CREATEVERSIONRESMGR_NAME( uui ) ) );
     if ( !xManager.get() )
         return ABORT;
 
@@ -1289,7 +1289,7 @@ UUIInteractionHelper::handleGenericErrorRequest(
             String aErrorString;
             ErrorHandler::GetErrorString( nErrorCode, aErrorString );
 
-            std::auto_ptr< ResMgr > xManager(
+            std::unique_ptr< ResMgr > xManager(
                 ResMgr::CreateResMgr( CREATEVERSIONRESMGR_NAME( uui ) ) );
             ::rtl::OUString aTitle;
 
@@ -1343,7 +1343,7 @@ UUIInteractionHelper::handleMacroConfirmRequest(
 
     bool bApprove = false;
 
-    std::auto_ptr< ResMgr > pResMgr(
+    std::unique_ptr< ResMgr > pResMgr(
         ResMgr::CreateResMgr( CREATEVERSIONRESMGR_NAME( uui ) ) );
     if ( pResMgr.get() )
     {
@@ -1406,7 +1406,7 @@ UUIInteractionHelper::handleFutureDocumentVersionUpdateRequest(
 
     if ( !s_bDeferredToNextSession )
     {
-        std::auto_ptr< ResMgr > pResMgr(
+        std::unique_ptr< ResMgr > pResMgr(
             ResMgr::CreateResMgr( CREATEVERSIONRESMGR_NAME( uui ) ) );
         if ( pResMgr.get() )
         {
@@ -1477,7 +1477,7 @@ UUIInteractionHelper::handleBrokenPackageRequest(
     ::rtl::OUString aMessage;
     {
         vos::OGuard aGuard(Application::GetSolarMutex());
-        std::auto_ptr< ResMgr > xManager(
+        std::unique_ptr< ResMgr > xManager(
             ResMgr::CreateResMgr(CREATEVERSIONRESMGR_NAME(uui)));
         if (!xManager.get())
             return;

@@ -32,7 +32,7 @@
 #include "eventmultiplexer.hxx"
 #include "unoview.hxx"
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <boost/bind.hpp>
 #include <boost/utility.hpp> // for noncopyable
 #include <vector>
@@ -41,7 +41,7 @@ namespace slideshow {
 namespace internal {
 
 class EventMultiplexer;
-typedef boost::shared_ptr<class WaitSymbol> WaitSymbolSharedPtr;
+typedef std::shared_ptr<class WaitSymbol> WaitSymbolSharedPtr;
 
 class WaitSymbol : public ViewEventHandler,
                    private ::boost::noncopyable

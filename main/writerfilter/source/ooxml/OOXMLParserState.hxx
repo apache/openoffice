@@ -30,6 +30,7 @@
 #ifdef DEBUG
 #include <resourcemodel/TagLogger.hxx>
 #include <resourcemodel/XPathLogger.hxx>
+#include <memory>
 #endif
 
 namespace writerfilter {
@@ -58,7 +59,7 @@ class OOXMLParserState
 #endif
 
 public:
-    typedef boost::shared_ptr<OOXMLParserState> Pointer_t;
+    typedef std::shared_ptr<OOXMLParserState> Pointer_t;
 
     OOXMLParserState();
     virtual ~OOXMLParserState();

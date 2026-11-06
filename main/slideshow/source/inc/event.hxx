@@ -26,7 +26,7 @@
 #include "disposable.hxx"
 #include "debug.hxx"
 #include <rtl/ustring.hxx>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <vector>
 
 namespace slideshow {
@@ -79,7 +79,7 @@ private:
 #endif
 };
 
-typedef ::boost::shared_ptr< Event > EventSharedPtr;
+typedef ::std::shared_ptr< Event > EventSharedPtr;
 typedef ::std::vector< EventSharedPtr > VectorOfEvents;
 
 } // namespace internal

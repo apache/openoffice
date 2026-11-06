@@ -64,7 +64,7 @@
 
 #include <boost/scoped_ptr.hpp>
 
-using ::std::auto_ptr;
+using ::std::unique_ptr;
 using ::com::sun::star::uno::Any;
 using ::rtl::OUString;
 using ::std::vector;
@@ -81,7 +81,7 @@ using namespace formula;
 
 namespace {
 
-class TabNameSearchPredicate : public unary_function<bool, ScExternalRefCache::TableName>
+class TabNameSearchPredicate
 {
 public:
     explicit TabNameSearchPredicate(const String& rSearchName) :
@@ -99,7 +99,7 @@ private:
     String maSearchName;
 };
 
-class FindSrcFileByName : public unary_function<ScExternalRefManager::SrcFileData, bool>
+class FindSrcFileByName
 {
 public:
     FindSrcFileByName(const String& rMatchName) :
@@ -116,7 +116,7 @@ private:
     const String& mrMatchName;
 };
 
-class NotifyLinkListener : public unary_function<ScExternalRefManager::LinkListener*,  void>
+class NotifyLinkListener
 {
 public:
     NotifyLinkListener(sal_uInt16 nFileId, ScExternalRefManager::LinkUpdateType eType) :
@@ -134,7 +134,7 @@ private:
     ScExternalRefManager::LinkUpdateType meType;
 };
 
-struct UpdateFormulaCell : public unary_function<ScFormulaCell*, void>
+struct UpdateFormulaCell
 {
     void operator() (ScFormulaCell* pCell) const
     {
@@ -156,7 +156,7 @@ struct UpdateFormulaCell : public unary_function<ScFormulaCell*, void>
     }
 };
 
-class RemoveFormulaCell : public unary_function<pair<const sal_uInt16, ScExternalRefManager::RefCellSet>, void>
+class RemoveFormulaCell
 {
 public:
     explicit RemoveFormulaCell(ScFormulaCell* p) : mpCell(p) {}
@@ -168,7 +168,7 @@ private:
     ScFormulaCell* mpCell;
 };
 
-class ConvertFormulaToStatic : public unary_function<ScFormulaCell*, void>
+class ConvertFormulaToStatic
 {
 public:
     explicit ConvertFormulaToStatic(ScDocument* pDoc) : mpDoc(pDoc) {}

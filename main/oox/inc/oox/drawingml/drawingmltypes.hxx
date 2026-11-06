@@ -24,7 +24,7 @@
 #ifndef OOX_DRAWINGML_TYPES_HXX
 #define OOX_DRAWINGML_TYPES_HXX
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <com/sun/star/style/TabAlign.hpp>
 #include <com/sun/star/drawing/TextVerticalAdjust.hpp>
 #include <com/sun/star/geometry/IntegerRectangle2D.hpp>
@@ -47,35 +47,35 @@ const sal_Int32 MAX_DEGREE      = 360 * PER_DEGREE;
 // ============================================================================
 
 struct LineProperties;
-typedef ::boost::shared_ptr< LineProperties > LinePropertiesPtr;
+typedef ::std::shared_ptr< LineProperties > LinePropertiesPtr;
 
 struct FillProperties;
-typedef ::boost::shared_ptr< FillProperties > FillPropertiesPtr;
+typedef ::std::shared_ptr< FillProperties > FillPropertiesPtr;
 
 struct GraphicProperties;
-typedef ::boost::shared_ptr< GraphicProperties > GraphicPropertiesPtr;
+typedef ::std::shared_ptr< GraphicProperties > GraphicPropertiesPtr;
 
 struct TextCharacterProperties;
-typedef ::boost::shared_ptr< TextCharacterProperties > TextCharacterPropertiesPtr;
+typedef ::std::shared_ptr< TextCharacterProperties > TextCharacterPropertiesPtr;
 
 struct TextBodyProperties;
-typedef ::boost::shared_ptr< TextBodyProperties > TextBodyPropertiesPtr;
+typedef ::std::shared_ptr< TextBodyProperties > TextBodyPropertiesPtr;
 
 class TextBody;
-typedef ::boost::shared_ptr< TextBody > TextBodyPtr;
+typedef ::std::shared_ptr< TextBody > TextBodyPtr;
 
 class Shape;
-typedef ::boost::shared_ptr< Shape > ShapePtr;
+typedef ::std::shared_ptr< Shape > ShapePtr;
 
 class Theme;
-typedef ::boost::shared_ptr< Theme > ThemePtr;
+typedef ::std::shared_ptr< Theme > ThemePtr;
 
 // ---------------------------------------------------------------------------
 
 namespace table {
 
 class TableProperties;
-typedef ::boost::shared_ptr< TableProperties > TablePropertiesPtr;
+typedef ::std::shared_ptr< TableProperties > TablePropertiesPtr;
 
 } // namespace table
 

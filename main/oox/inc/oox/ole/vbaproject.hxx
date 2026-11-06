@@ -26,6 +26,7 @@
 
 #include <map>
 #include <com/sun/star/uno/XInterface.hpp>
+#include <memory>
 #include "oox/helper/refvector.hxx"
 #include "oox/helper/storagebase.hxx"
 #include "oox/dllapi.h"
@@ -105,7 +106,7 @@ private:
     ::rtl::OUString     maMacroName;
 };
 
-typedef ::boost::shared_ptr< VbaMacroAttacherBase > VbaMacroAttacherRef;
+typedef ::std::shared_ptr< VbaMacroAttacherBase > VbaMacroAttacherRef;
 
 // ============================================================================
 

@@ -2924,7 +2924,7 @@ void SwXFrame::attachToRange(const uno::Reference< text::XTextRange > & xTextRan
                 OUString aCLSID;
                 SvGlobalName aClassName;
                 uno::Reference < embed::XEmbeddedObject > xIPObj;
-                std::auto_ptr < comphelper::EmbeddedObjectContainer > pCnt;
+                std::unique_ptr < comphelper::EmbeddedObjectContainer > pCnt;
                 if( (*pCLSID) >>= aCLSID )
                 {
                     if( !aClassName.MakeId( aCLSID ) )
@@ -3302,7 +3302,7 @@ uno::Reference< container::XEnumeration >  SwXTextFrame::createEnumeration(void)
 	if(pFmt)
 	{
 		SwPosition aPos(pFmt->GetCntnt().GetCntntIdx()->GetNode());
-        ::std::auto_ptr<SwUnoCrsr> pUnoCursor(
+        ::std::unique_ptr<SwUnoCrsr> pUnoCursor(
                 GetDoc()->CreateUnoCrsr(aPos, sal_False));
         pUnoCursor->Move(fnMoveForward, fnGoNode);
 //		// no Cursor in protected sections

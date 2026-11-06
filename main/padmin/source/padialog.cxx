@@ -26,6 +26,7 @@
 #include <unistd.h>
 #include <string.h>
 #include <math.h>
+#include <memory>
 
 #include "padialog.hrc"
 #include "fontentry.hxx"
@@ -376,7 +377,7 @@ static Color approachColor( const Color& rFrom, const Color& rTo )
 class SpaPrinterController : public vcl::PrinterController
 {
 public:
-	SpaPrinterController( const boost::shared_ptr<Printer>& i_pPrinter )
+	SpaPrinterController( const std::shared_ptr<Printer>& i_pPrinter )
 	: vcl::PrinterController( i_pPrinter )
 	{}
 	virtual ~SpaPrinterController()
@@ -407,7 +408,7 @@ void SpaPrinterController::printPage( int ) const
 {
 	const double DELTA = 5.0;
 
-	boost::shared_ptr<Printer> pPrinter( getPrinter() );
+	std::shared_ptr<Printer> pPrinter( getPrinter() );
 
 	PrinterInfo aInfo( psp::PrinterInfoManager::get().getPrinterInfo( pPrinter->GetName() ) );
 	const PPDParser* pPrintParser = aInfo.m_pParser;
@@ -598,7 +599,7 @@ void PADialog::PrintTestPage()
 {
 	String sPrinter( getSelectedDevice() );
 
-	boost::shared_ptr<Printer> pPrinter( new Printer( sPrinter ) );
+	std::shared_ptr<Printer> pPrinter( new Printer( sPrinter ) );
 
 	if( pPrinter->GetName() != sPrinter )
 	{
@@ -611,7 +612,7 @@ void PADialog::PrintTestPage()
 		return;
 	}
 
-	boost::shared_ptr<vcl::PrinterController> pController( new SpaPrinterController( pPrinter ) );
+	std::shared_ptr<vcl::PrinterController> pController( new SpaPrinterController( pPrinter ) );
 	JobSetup aJobSetup( pPrinter->GetJobSetup() );
 	aJobSetup.SetValue( String( RTL_CONSTASCII_USTRINGPARAM( "IsQuickJob" ) ),
 						String( RTL_CONSTASCII_USTRINGPARAM( "true" ) ) );

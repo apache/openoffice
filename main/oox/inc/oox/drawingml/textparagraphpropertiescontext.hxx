@@ -27,6 +27,7 @@
 #include <list>
 
 #include <com/sun/star/style/TabStop.hpp>
+#include <memory>
 #include "oox/drawingml/drawingmltypes.hxx"
 #include "oox/drawingml/textparagraphproperties.hxx"
 #include "oox/drawingml/textspacing.hxx"
@@ -52,7 +53,7 @@ protected:
 	TextSpacing&    mrSpaceAfter;
 	BulletList&		mrBulletList;
 	::std::list< ::com::sun::star::style::TabStop >  maTabList;
-    ::boost::shared_ptr< BlipFillProperties > mxBlipProps;
+    ::std::shared_ptr< BlipFillProperties > mxBlipProps;
 };
 
 } }

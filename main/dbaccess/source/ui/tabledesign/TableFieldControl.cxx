@@ -46,6 +46,7 @@
 #endif
 #ifndef _COMPHELPER_TYPES_HXX_
 #include <comphelper/types.hxx>
+#include <memory>
 #endif
 #ifndef DBAUI_TYPEINFO_HXX
 #include "TypeInfo.hxx"
@@ -81,13 +82,13 @@ sal_Bool OTableFieldControl::IsReadOnly()
 	sal_Bool bRead(GetCtrl()->IsReadOnly());
 	if( !bRead )
 	{
-		// Die Spalten einer ::com::sun::star::sdbcx::View können nicht verändert werden
+		// Die Spalten einer ::com::sun::star::sdbcx::View kï¿½nnen nicht verï¿½ndert werden
 		Reference<XPropertySet> xTable = GetCtrl()->GetView()->getController().getTable();
 		if(xTable.is() && ::comphelper::getString(xTable->getPropertyValue(PROPERTY_TYPE)) == ::rtl::OUString::createFromAscii("VIEW"))
 			bRead = sal_True;
 		else
 		{
-			 ::boost::shared_ptr<OTableRow>  pCurRow = GetCtrl()->GetActRow();
+			 ::std::shared_ptr<OTableRow>  pCurRow = GetCtrl()->GetActRow();
 			if( pCurRow )
 				bRead = pCurRow->IsReadOnly();
 		}

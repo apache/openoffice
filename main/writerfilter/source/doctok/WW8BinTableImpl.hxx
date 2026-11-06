@@ -29,6 +29,7 @@
 #include <PLCF.hxx>
 
 #include <unordered_map>
+#include <memory>
 
 namespace writerfilter {
 namespace doctok
@@ -45,7 +46,7 @@ class PageNumber
 
 public:
     /// Pointer to a page number
-    typedef boost::shared_ptr<PageNumber> Pointer_t;
+    typedef std::shared_ptr<PageNumber> Pointer_t;
 
     /// get size of a page number
     static size_t getSize() { return 4; }
@@ -69,7 +70,7 @@ class WW8BinTableImpl : public WW8BinTable
 {
     /// PLCF containing the numbers of the FKPs of the binary table
     PLCF<PageNumber> mData;
-    mutable unordered_map<Fc, sal_uInt32, FcHash> mPageMap;
+    mutable std::unordered_map<Fc, sal_uInt32, FcHash> mPageMap;
 
 public:
     WW8BinTableImpl(WW8Stream & rStream, sal_uInt32 nOffset,

@@ -406,7 +406,7 @@ void SAL_CALL OGenericUnoController::initialize( const Sequence< Any >& aArgumen
 	catch(Exception& e)
 	{
 		// no one clears my view if I won't
-		::std::auto_ptr<Window> aTemp(m_pView);
+		::std::unique_ptr<Window> aTemp(m_pView);
 		m_pView = NULL;
 		throw;
 	}
@@ -497,7 +497,7 @@ void OGenericUnoController::attachFrame( const Reference< XFrame >& _rxFrame )
 }
 
 // -----------------------------------------------------------------------------
-struct CommandCollector : public ::std::unary_function< SupportedFeatures::value_type, void>
+struct CommandCollector 
 {
 	sal_uInt16  m_nFeature;
 	StringBag&  m_rFeatureCommands;
@@ -628,7 +628,7 @@ sal_Bool OGenericUnoController::isFeatureSupported( sal_Int32 _nId )
 	SupportedFeatures::iterator aFeaturePos = ::std::find_if(
 		m_aSupportedFeatures.begin(),
 		m_aSupportedFeatures.end(),
-		::std::bind2nd( CompareFeatureById(), _nId )
+		[_nId](auto& _x) { return CompareFeatureById()(_x, _nId); }
 	);
 
     return ( m_aSupportedFeatures.end() != aFeaturePos && aFeaturePos->first.getLength());
@@ -668,7 +668,7 @@ void OGenericUnoController::InvalidateFeature_Impl()
 			SupportedFeatures::iterator aFeaturePos = ::std::find_if(
 				m_aSupportedFeatures.begin(),
 				m_aSupportedFeatures.end(),
-				::std::bind2nd( CompareFeatureById(), aNextFeature.nId )
+				[aNextFeature.nId](auto& _x) { return CompareFeatureById()(_x, aNextFeature.nId); }
 			);
 
 #if OSL_DEBUG_LEVEL > 0
@@ -706,7 +706,7 @@ void OGenericUnoController::ImplInvalidateFeature( sal_Int32 _nId, const Referen
 	    SupportedFeatures::iterator aFeaturePos = ::std::find_if(
 		    m_aSupportedFeatures.begin(),
 		    m_aSupportedFeatures.end(),
-		    ::std::bind2nd( CompareFeatureById(), _nId )
+		    [_nId](auto& _x) { return CompareFeatureById()(_x, _nId); }
 	    );
         OSL_ENSURE( aFeaturePos != m_aSupportedFeatures.end(), "OGenericUnoController::ImplInvalidateFeature: invalidating an unsupported feature is suspicious, at least!" );
     }
@@ -912,7 +912,7 @@ void OGenericUnoController::removeStatusListener(const Reference< XStatusListene
 	m_aFeaturesToInvalidate.erase(
 		::std::remove_if(	m_aFeaturesToInvalidate.begin(),
 							m_aFeaturesToInvalidate.end(),
-							::std::bind2nd(FindFeatureListener(),aListener))
+							[aListener](auto& _x) { return FindFeatureListener()(_x, aListener); })
 		,m_aFeaturesToInvalidate.end());
 }
 // -----------------------------------------------------------------------------
@@ -1060,7 +1060,7 @@ URL OGenericUnoController::getURLForId(sal_Int32 _nId) const
 		SupportedFeatures::const_iterator aIter = ::std::find_if(
 			m_aSupportedFeatures.begin(),
 			m_aSupportedFeatures.end(),
-			::std::bind2nd( CompareFeatureById(), _nId )
+			[_nId](auto& _x) { return CompareFeatureById()(_x, _nId); }
 		);
 
 		if ( m_aSupportedFeatures.end() != aIter && aIter->first.getLength() )

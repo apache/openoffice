@@ -74,7 +74,7 @@
 #include <swcss1.hxx>
 #include <swhtml.hxx>
 #include <numrule.hxx>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 using namespace ::com::sun::star;
 

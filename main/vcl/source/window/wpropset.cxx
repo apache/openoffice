@@ -40,6 +40,7 @@
 #include "cppuhelper/compbase1.hxx"
 
 #include <map>
+#include <memory>
 
 using namespace vcl;
 using namespace com::sun::star;
@@ -94,11 +95,11 @@ public:
     struct PropertyMapEntry
     {
         Window*                                 mpWindow;
-        boost::shared_ptr<WindowArranger>       mpLayout;
+        std::shared_ptr<WindowArranger>       mpLayout;
         uno::Sequence< beans::PropertyValue >   maSavedValues;
 
         PropertyMapEntry( Window* i_pWindow = NULL,
-                         const boost::shared_ptr<WindowArranger>& i_pLayout = boost::shared_ptr<WindowArranger>() )
+                         const std::shared_ptr<WindowArranger>& i_pLayout = std::shared_ptr<WindowArranger>() )
         : mpWindow( i_pWindow )
         , mpLayout( i_pLayout )
         {}
@@ -206,7 +207,7 @@ uno::Reference< beans::XPropertySet > WindowPropertySet::getPropertySet() const
     return mpImpl->mxPropSet;
 }
 
-void WindowPropertySet::addLayoutToSet( const boost::shared_ptr< WindowArranger >& i_pLayout )
+void WindowPropertySet::addLayoutToSet( const std::shared_ptr< WindowArranger >& i_pLayout )
 {
     if( i_pLayout.get() )
     {

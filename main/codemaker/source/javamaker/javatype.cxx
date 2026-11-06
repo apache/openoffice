@@ -802,7 +802,7 @@ void addTypeInfo(
                 RTL_CONSTASCII_STRINGPARAM(
                     "[Lcom/sun/star/lib/uno/typeinfo/TypeInfo;")),
             0, rtl::OString());
-        std::auto_ptr< ClassFile::Code > code(classFile->newCode());
+        std::unique_ptr< ClassFile::Code > code(classFile->newCode());
         code->loadIntegerConstant(static_cast< sal_Int32 >(typeInfos));
         code->instrAnewarray(
             rtl::OString(
@@ -857,7 +857,7 @@ void handleEnumType(
             //TODO
     }
     rtl::OString className(codemaker::convertString(reader.getTypeName()));
-    std::auto_ptr< ClassFile > cf(
+    std::unique_ptr< ClassFile > cf(
         new ClassFile(
             static_cast< ClassFile::AccessFlags >(
                 ClassFile::ACC_PUBLIC | ClassFile::ACC_FINAL
@@ -895,7 +895,7 @@ void handleEnumType(
             rtl::OString(RTL_CONSTASCII_STRINGPARAM("I")),
             cf->addIntegerInfo(fieldValue.m_value.aLong), rtl::OString());
     }}
-    std::auto_ptr< ClassFile::Code > code(cf->newCode());
+    std::unique_ptr< ClassFile::Code > code(cf->newCode());
     code->loadLocalReference(0);
     code->loadLocalInteger(1);
     code->instrInvokespecial(
@@ -939,7 +939,7 @@ void handleEnumType(
          <= 2 * size)
         || size > SAL_MAX_INT32)
     {
-        std::auto_ptr< ClassFile::Code > defCode(cf->newCode());
+        std::unique_ptr< ClassFile::Code > defCode(cf->newCode());
         defCode->instrAconstNull();
         defCode->instrAreturn();
         std::list< ClassFile::Code * > blocks;
@@ -955,7 +955,7 @@ void handleEnumType(
                 }
             }
             last = value;
-            std::auto_ptr< ClassFile::Code > blockCode(cf->newCode());
+            std::unique_ptr< ClassFile::Code > blockCode(cf->newCode());
             blockCode->instrGetstatic(className, i->second, classDescriptor);
             blockCode->instrAreturn();
             blocks.push_back(blockCode.get());
@@ -968,7 +968,7 @@ void handleEnumType(
             delete *i;
         }}
     } else {
-        std::auto_ptr< ClassFile::Code > defCode(cf->newCode());
+        std::unique_ptr< ClassFile::Code > defCode(cf->newCode());
         defCode->instrAconstNull();
         defCode->instrAreturn();
         std::list< std::pair< sal_Int32, ClassFile::Code * > > blocks;
@@ -976,7 +976,7 @@ void handleEnumType(
         for (std::map< sal_Int32, rtl::OString >::iterator i(map.begin());
              i != map.end(); ++i)
         {
-            std::auto_ptr< ClassFile::Code > blockCode(cf->newCode());
+            std::unique_ptr< ClassFile::Code > blockCode(cf->newCode());
             blockCode->instrGetstatic(className, i->second, classDescriptor);
             blockCode->instrAreturn();
             blocks.push_back(std::make_pair(i->first, blockCode.get()));
@@ -1920,7 +1920,7 @@ void handleAggregatingType(
         buf.append(RTL_CONSTASCII_STRINGPARAM(">Ljava/lang/Object;"));
         sig = buf.makeStringAndClear();
     }
-    std::auto_ptr< ClassFile > cf(
+    std::unique_ptr< ClassFile > cf(
         new ClassFile(
             static_cast< ClassFile::AccessFlags >(
                 ClassFile::ACC_PUBLIC | ClassFile::ACC_SUPER),
@@ -1964,7 +1964,7 @@ void handleAggregatingType(
                 RTL_CONSTASCII_STRINGPARAM("com/sun/star/uno/XInterface")),
             rtl::OString(RTL_CONSTASCII_STRINGPARAM("Context")), 0);
     }
-    std::auto_ptr< ClassFile::Code > code(cf->newCode());
+    std::unique_ptr< ClassFile::Code > code(cf->newCode());
     code->loadLocalReference(0);
     code->instrInvokespecial(
         superClass, rtl::OString(RTL_CONSTASCII_STRINGPARAM("<init>")),
@@ -2129,7 +2129,7 @@ void handleInterfaceType(
             rtl::OString(RTL_CONSTASCII_STRINGPARAM("Bad type information")));
             //TODO
     }
-    std::auto_ptr< ClassFile > cf(
+    std::unique_ptr< ClassFile > cf(
         new ClassFile(
             static_cast< ClassFile::AccessFlags >(
                 ClassFile::ACC_PUBLIC | ClassFile::ACC_INTERFACE
@@ -2540,7 +2540,7 @@ void handleConstantGroup(
             //TODO
     }
     rtl::OString className(codemaker::convertString(reader.getTypeName()));
-    std::auto_ptr< ClassFile > cf(
+    std::unique_ptr< ClassFile > cf(
         new ClassFile(
             static_cast< ClassFile::AccessFlags >(
                 ClassFile::ACC_PUBLIC | ClassFile::ACC_INTERFACE
@@ -2574,7 +2574,7 @@ void handleModule(
     for (sal_uInt16 i = 0; i < fields; ++i) {
         rtl::OString className(
             prefix + codemaker::convertString(reader.getFieldName(i)));
-        std::auto_ptr< ClassFile > cf(
+        std::unique_ptr< ClassFile > cf(
             new ClassFile(
                 static_cast< ClassFile::AccessFlags >(
                     ClassFile::ACC_PUBLIC | ClassFile::ACC_INTERFACE
@@ -2618,7 +2618,7 @@ void addConstructor(
         rtl::OString(
             RTL_CONSTASCII_STRINGPARAM("com/sun/star/uno/XComponentContext")),
         false, false, 0);
-    std::auto_ptr< ClassFile::Code > code(classFile->newCode());
+    std::unique_ptr< ClassFile::Code > code(classFile->newCode());
     code->loadLocalReference(0);
     // stack: context
     code->instrInvokestatic(
@@ -2837,7 +2837,7 @@ void handleService(
         translateUnoTypeToJavaFullyQualifiedName(
             unoName, rtl::OString(RTL_CONSTASCII_STRINGPARAM("service"))));
     unoName = unoName.replace('/', '.');
-    std::auto_ptr< ClassFile > cf(
+    std::unique_ptr< ClassFile > cf(
         new ClassFile(
             static_cast< ClassFile::AccessFlags >(
                 ClassFile::ACC_PUBLIC | ClassFile::ACC_FINAL
@@ -2893,7 +2893,7 @@ void handleService(
         }
         // Synthetic getFactory method:
         {
-            std::auto_ptr< ClassFile::Code > code(cf->newCode());
+            std::unique_ptr< ClassFile::Code > code(cf->newCode());
             code->loadLocalReference(0);
             // stack: context
             code->instrInvokeinterface(
@@ -2952,7 +2952,7 @@ void handleService(
         }
         // Synthetic castInstance method:
         {
-            std::auto_ptr< ClassFile::Code > code(cf->newCode());
+            std::unique_ptr< ClassFile::Code > code(cf->newCode());
             code->instrNew(
                 rtl::OString(
                     RTL_CONSTASCII_STRINGPARAM("com/sun/star/uno/Type")));
@@ -3081,7 +3081,7 @@ void handleSingleton(
     dependencies->insert(
         rtl::OString(
             RTL_CONSTASCII_STRINGPARAM("com/sun/star/uno/XComponentContext")));
-    std::auto_ptr< ClassFile > cf(
+    std::unique_ptr< ClassFile > cf(
         new ClassFile(
             static_cast< ClassFile::AccessFlags >(
                 ClassFile::ACC_PUBLIC | ClassFile::ACC_FINAL
@@ -3094,7 +3094,7 @@ void handleSingleton(
         rtl::OString(
             RTL_CONSTASCII_STRINGPARAM("com/sun/star/uno/XComponentContext")),
         false, false, 0);
-    std::auto_ptr< ClassFile::Code > code(cf->newCode());
+    std::unique_ptr< ClassFile::Code > code(cf->newCode());
     code->loadLocalReference(0);
     // stack: context
     code->loadStringConstant(

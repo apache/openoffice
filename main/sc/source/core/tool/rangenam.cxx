@@ -248,7 +248,7 @@ void ScRangeData::GetSymbol( String& rSymbol, const FormulaGrammar::Grammar eGra
 void ScRangeData::UpdateSymbol(	rtl::OUStringBuffer& rBuffer, const ScAddress& rPos,
 								const FormulaGrammar::Grammar eGrammar )
 {
-    ::std::auto_ptr<ScTokenArray> pTemp( pCode->Clone() );
+    ::std::unique_ptr<ScTokenArray> pTemp( pCode->Clone() );
 	ScCompiler aComp( pDoc, rPos, *pTemp.get());
     aComp.SetGrammar(eGrammar);
     aComp.MoveRelWrap(GetMaxCol(), GetMaxRow());
@@ -394,7 +394,7 @@ sal_Bool ScRangeData::IsReference( ScRange& rRange, const ScAddress& rPos ) cons
 {
 	if ( (eType & ( RT_ABSAREA | RT_REFAREA | RT_ABSPOS ) ) && pCode )
     {
-        ::std::auto_ptr<ScTokenArray> pTemp( pCode->Clone() );
+        ::std::unique_ptr<ScTokenArray> pTemp( pCode->Clone() );
         ScCompiler aComp( pDoc, rPos, *pTemp);
         aComp.SetGrammar(pDoc->GetGrammar());
         aComp.MoveRelWrap(MAXCOL, MAXROW);

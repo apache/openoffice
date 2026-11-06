@@ -44,6 +44,7 @@
 #include <algorithm>
 #include <functional>
 #include <limits>
+#include <memory>
 
 using namespace ::com::sun::star;
 
@@ -285,7 +286,7 @@ namespace slideshow
             mbNodeTreeInitialized = false;
         }
 
-        void DrawShapeSubsetting::reset( const ::boost::shared_ptr< GDIMetaFile >& rMtf )
+        void DrawShapeSubsetting::reset( const ::std::shared_ptr< GDIMetaFile >& rMtf )
         {
             reset();
             mpMtf = rMtf;
@@ -294,7 +295,7 @@ namespace slideshow
         }
 
         void DrawShapeSubsetting::reset( const DocTreeNode&                          rShapeSubset,
-                                         const ::boost::shared_ptr< GDIMetaFile >&   rMtf )
+                                         const ::std::shared_ptr< GDIMetaFile >&   rMtf )
         {
             reset();
             mpMtf = rMtf;

@@ -30,6 +30,7 @@
 #include <svtools/grfmgr.hxx>
 #include <svx/XPropertyEntry.hxx>
 #include <vcl/bitmap.hxx>
+#include <memory>
 
 // Standard compare string
 extern sal_Unicode __FAR_DATA pszStandard[]; // "standard"
@@ -202,12 +203,12 @@ class XHatchList;
 class XGradientList;
 class XBitmapList;
 
-typedef ::boost::shared_ptr< XColorList > XColorListSharedPtr;
-typedef ::boost::shared_ptr< XLineEndList > XLineEndListSharedPtr;
-typedef ::boost::shared_ptr< XDashList > XDashListSharedPtr;
-typedef ::boost::shared_ptr< XHatchList > XHatchListSharedPtr;
-typedef ::boost::shared_ptr< XGradientList > XGradientListSharedPtr;
-typedef ::boost::shared_ptr< XBitmapList > XBitmapListSharedPtr;
+typedef ::std::shared_ptr< XColorList > XColorListSharedPtr;
+typedef ::std::shared_ptr< XLineEndList > XLineEndListSharedPtr;
+typedef ::std::shared_ptr< XDashList > XDashListSharedPtr;
+typedef ::std::shared_ptr< XHatchList > XHatchListSharedPtr;
+typedef ::std::shared_ptr< XGradientList > XGradientListSharedPtr;
+typedef ::std::shared_ptr< XBitmapList > XBitmapListSharedPtr;
 
 //////////////////////////////////////////////////////////////////////////////
 // XPropertyListFactory to limit XListSharedPtr creation and thus XPropertyList creation

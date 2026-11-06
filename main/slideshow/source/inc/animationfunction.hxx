@@ -25,7 +25,7 @@
 #define INCLUDED_SLIDESHOW_ANIMATIONFUNCTION_HXX
 
 #include <sal/config.h>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 
 /* Definition of AnimationFunction interface */
@@ -59,7 +59,7 @@ namespace slideshow
 
         };
 
-        typedef ::boost::shared_ptr< AnimationFunction > AnimationFunctionSharedPtr;
+        typedef ::std::shared_ptr< AnimationFunction > AnimationFunctionSharedPtr;
 
     }
 }

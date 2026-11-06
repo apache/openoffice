@@ -29,14 +29,14 @@
 #include <com/sun/star/uno/Sequence.hxx>
 #include <com/sun/star/drawing/LineDash.hpp>
 #include "svx/svxdllapi.h"
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 //==================================================================
 //	SvxColorTableItem
 //==================================================================
 
 class XColorList;
-typedef ::boost::shared_ptr< XColorList > XColorListSharedPtr;
+typedef ::std::shared_ptr< XColorList > XColorListSharedPtr;
 
 class SVX_DLLPUBLIC SvxColorTableItem : public SfxPoolItem
 {
@@ -69,7 +69,7 @@ public:
 
 
 class XGradientList;
-typedef ::boost::shared_ptr< XGradientList > XGradientListSharedPtr;
+typedef ::std::shared_ptr< XGradientList > XGradientListSharedPtr;
 
 class SVX_DLLPUBLIC SvxGradientListItem : public SfxPoolItem
 {
@@ -103,7 +103,7 @@ public:
 
 
 class XHatchList;
-typedef ::boost::shared_ptr< XHatchList > XHatchListSharedPtr;
+typedef ::std::shared_ptr< XHatchList > XHatchListSharedPtr;
 
 class SVX_DLLPUBLIC SvxHatchListItem : public SfxPoolItem
 {
@@ -137,7 +137,7 @@ public:
 
 
 class XBitmapList;
-typedef ::boost::shared_ptr< XBitmapList > XBitmapListSharedPtr;
+typedef ::std::shared_ptr< XBitmapList > XBitmapListSharedPtr;
 
 class SVX_DLLPUBLIC SvxBitmapListItem : public SfxPoolItem
 {
@@ -171,7 +171,7 @@ public:
 
 
 class XDashList;
-typedef ::boost::shared_ptr< XDashList > XDashListSharedPtr;
+typedef ::std::shared_ptr< XDashList > XDashListSharedPtr;
 
 class SVX_DLLPUBLIC SvxDashListItem : public SfxPoolItem
 {
@@ -205,7 +205,7 @@ public:
 
 
 class XLineEndList;
-typedef ::boost::shared_ptr< XLineEndList > XLineEndListSharedPtr;
+typedef ::std::shared_ptr< XLineEndList > XLineEndListSharedPtr;
 
 class SVX_DLLPUBLIC SvxLineEndListItem : public SfxPoolItem
 {

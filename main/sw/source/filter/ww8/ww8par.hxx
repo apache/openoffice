@@ -48,6 +48,7 @@
 #include "wrtww8.hxx"
 #include "../inc/msfilter.hxx"
 #include <xmloff/odffields.hxx>
+#include <memory>
 #include <IMark.hxx>
 
 class SwDoc;
@@ -1209,7 +1210,7 @@ private:
     int nIdctHint;
     bool bBidi;
     bool bReadTable;
-    boost::shared_ptr<SwPaM> mpTableEndPaM;
+    std::shared_ptr<SwPaM> mpTableEndPaM;
     WW8PLCFx_Cp_FKP* pFirstTablePap;
 
     // Indicate that currently on loading a TOX, managed by Read_F_TOX() and End_Field()

@@ -77,7 +77,7 @@
 
 #include <memory>
 
-using ::std::auto_ptr;
+using ::std::unique_ptr;
 
 #define IS_EDITMODE() GetViewData()->HasEditView( GetViewData()->GetActivePart() )
 #define IS_AVAILABLE(WhichId,ppItem) \

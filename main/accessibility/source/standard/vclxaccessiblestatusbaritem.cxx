@@ -528,7 +528,7 @@ Sequence< PropertyValue > VCLXAccessibleStatusBarItem::getCharacterAttributes( s
 		Font aFont = m_pStatusBar->GetFont();
 		sal_Int32 nBackColor = getBackground();
 		sal_Int32 nColor = getForeground();
-		::std::auto_ptr< CharacterAttributesHelper > pHelper( new CharacterAttributesHelper( aFont, nBackColor, nColor ) );
+		::std::unique_ptr< CharacterAttributesHelper > pHelper( new CharacterAttributesHelper( aFont, nBackColor, nColor ) );
 		aValues = pHelper->GetCharacterAttributes( aRequestedAttributes );
 	}
 

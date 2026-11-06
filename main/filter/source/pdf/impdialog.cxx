@@ -38,7 +38,7 @@
 #include "com/sun/star/frame/XController.hpp"
 #include "com/sun/star/view/XSelectionSupplier.hpp"
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 static ResMgr& getPDFFilterResMgr()
 {

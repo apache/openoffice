@@ -136,6 +136,7 @@
 #include <osl/file.hxx>
 #include <stdio.h>
 #include <sys/ea.h>
+#include <memory>
 #endif
 
 #include "../appl/app.hrc"
@@ -3784,7 +3785,7 @@ sal_Bool SfxObjectShell::WriteThumbnail( sal_Bool bEncrypted,
             }
             else
             {
-                ::boost::shared_ptr<GDIMetaFile> pMetaFile =
+                ::std::shared_ptr<GDIMetaFile> pMetaFile =
                     GetPreviewMetaFile( sal_False );
                 if ( pMetaFile )
                 {

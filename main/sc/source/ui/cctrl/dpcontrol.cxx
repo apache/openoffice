@@ -53,7 +53,7 @@ using ::rtl::OUString;
 using ::rtl::OUStringHash;
 using ::std::vector;
 using ::std::unordered_map;
-using ::std::auto_ptr;
+using ::std::unique_ptr;
 
 ScDPFieldButton::ScDPFieldButton(OutputDevice* pOutDev, const StyleSettings* pStyle, const Fraction* pZoomX, const Fraction* pZoomY, ScDocument* pDoc) :
     mpDoc(pDoc),
@@ -1380,9 +1380,9 @@ const Size& ScDPFieldPopupWindow::getWindowSize() const
     return maWndSize;
 }
 
-void ScDPFieldPopupWindow::getResult(unordered_map<OUString, bool, OUStringHash>& rResult)
+void ScDPFieldPopupWindow::getResult(std::unordered_map<OUString, bool, OUStringHash>& rResult)
 {
-    typedef unordered_map<OUString, bool, OUStringHash> ResultMap;
+    typedef std::unordered_map<OUString, bool, OUStringHash> ResultMap;
     ResultMap aResult;
     size_t n = maMembers.size();
     for (size_t i = 0; i < n; ++i)

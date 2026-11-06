@@ -95,6 +95,7 @@
 #include <editeng/eeitem.hxx>
 #include <svl/poolitem.hxx>
 #include <glob.hrc>
+#include <memory>
 #include "AccessibleDocumentViewBase.hxx"
 #ifndef SO2_DECL_SVINPLACEOBJECT_DEFINED
 #define SO2_DECL_SVINPLACEOBJECT_DEFINED
@@ -589,7 +590,7 @@ void ViewShell::MouseMove(const MouseEvent& rMEvt, ::sd::Window* pWin)
     {
         if ( ! mpImpl->mpUpdateLockForMouse.expired())
         {
-            ::boost::shared_ptr<ViewShell::Implementation::ToolBarManagerLock> pLock(
+            ::std::shared_ptr<ViewShell::Implementation::ToolBarManagerLock> pLock(
                 mpImpl->mpUpdateLockForMouse);
             if (pLock.get() != NULL)
                 pLock->Release();
@@ -645,7 +646,7 @@ void ViewShell::MouseButtonUp(const MouseEvent& rMEvt, ::sd::Window* pWin)
 
     if ( ! mpImpl->mpUpdateLockForMouse.expired())
     {
-        ::boost::shared_ptr<ViewShell::Implementation::ToolBarManagerLock> pLock(
+        ::std::shared_ptr<ViewShell::Implementation::ToolBarManagerLock> pLock(
             mpImpl->mpUpdateLockForMouse);
         if (pLock.get() != NULL)
             pLock->Release();

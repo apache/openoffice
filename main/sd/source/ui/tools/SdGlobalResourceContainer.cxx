@@ -28,6 +28,7 @@
 
 #include <algorithm>
 #include <vector>
+#include <memory>
 
 using namespace ::com::sun::star;
 using namespace ::com::sun::star::uno;
@@ -52,7 +53,7 @@ private:
     typedef ::std::vector<SdGlobalResource*> ResourceList;
     ResourceList maResources;
 
-    typedef ::std::vector<boost::shared_ptr<SdGlobalResource> > SharedResourceList;
+    typedef ::std::vector<std::shared_ptr<SdGlobalResource> > SharedResourceList;
     SharedResourceList maSharedResources;
 
     typedef ::std::vector<Reference<XInterface> > XInterfaceResourceList;
@@ -80,7 +81,7 @@ SdGlobalResourceContainer*
 //===== SdGlobalResourceContainer =============================================
 
 void SdGlobalResourceContainer::AddResource (
-    ::std::auto_ptr<SdGlobalResource> pResource)
+    ::std::unique_ptr<SdGlobalResource> pResource)
 {
     ::osl::MutexGuard aGuard (mpImpl->maMutex);
 
@@ -107,7 +108,7 @@ void SdGlobalResourceContainer::AddResource (
 
 
 void SdGlobalResourceContainer::AddResource (
-    ::boost::shared_ptr<SdGlobalResource> pResource)
+    ::std::shared_ptr<SdGlobalResource> pResource)
 {
     ::osl::MutexGuard aGuard (mpImpl->maMutex);
 

@@ -26,6 +26,7 @@
 
 #include <vector>
 #include <com/sun/star/io/XInputStream.hpp>
+#include <memory>
 #include "oox/helper/binarystreambase.hxx"
 
 namespace com { namespace sun { namespace star {
@@ -236,7 +237,7 @@ protected:
     inline explicit     BinaryInputStream() : BinaryStreamBase( false ) {}
 };
 
-typedef ::boost::shared_ptr< BinaryInputStream > BinaryInputStreamRef;
+typedef ::std::shared_ptr< BinaryInputStream > BinaryInputStreamRef;
 
 // ----------------------------------------------------------------------------
 

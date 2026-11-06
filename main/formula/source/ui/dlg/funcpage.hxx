@@ -34,7 +34,7 @@
 #include <vcl/button.hxx>
 #include <svtools/svtreebx.hxx>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <vector>
 #include "ModuleHelper.hxx"
 //============================================================================

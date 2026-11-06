@@ -25,7 +25,7 @@
 #ifndef OOX_DRAWINGML_TIMENODE_HXX
 #define OOX_DRAWINGML_TIMENODE_HXX
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <vector>
 #include <list>
 #include <rtl/ustring.hxx>
@@ -43,7 +43,7 @@ namespace oox { namespace ppt {
 	class TimeNode;
 	class SlideTransition;
 
-	typedef boost::shared_ptr< TimeNode > TimeNodePtr;
+	typedef std::shared_ptr< TimeNode > TimeNodePtr;
 	typedef ::std::list< TimeNodePtr > TimeNodePtrList;
 
 	class TimeNode

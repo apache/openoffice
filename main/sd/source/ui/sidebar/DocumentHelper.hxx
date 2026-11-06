@@ -23,7 +23,7 @@
 #define SD_SIDEBAR_PANELS_DCUMENT_HELPER_HXX
 
 #include <tools/solar.h>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <vector>
 
 class SdDrawDocument;
@@ -69,7 +69,7 @@ public:
     static void AssignMasterPageToPageList (
         SdDrawDocument& rTargetDocument,
         SdPage* pMasterPage,
-        const ::boost::shared_ptr<std::vector<SdPage*> >& rPageList);
+        const ::std::shared_ptr<std::vector<SdPage*> >& rPageList);
 
 private:
     static SdPage* AddMasterPage (
@@ -82,7 +82,7 @@ private:
     static SdPage* ProvideMasterPage (
         SdDrawDocument& rTargetDocument,
         SdPage* pMasterPage,
-        const ::boost::shared_ptr<std::vector<SdPage*> >& rpPageList);
+        const ::std::shared_ptr<std::vector<SdPage*> >& rpPageList);
 
     /** Assign the given master page to the given page.
         @param pMasterPage

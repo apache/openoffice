@@ -28,7 +28,7 @@
 #include <com/sun/star/awt/Point.hpp>
 
 #include <boost/utility.hpp>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 #include "viewlayer.hxx"
 
@@ -157,7 +157,7 @@ namespace slideshow
                 ::com::sun::star::uno::XComponentContext>         mxComponentContext;
 		};
 
-        typedef ::boost::shared_ptr< ViewAppletShape > ViewAppletShapeSharedPtr;
+        typedef ::std::shared_ptr< ViewAppletShape > ViewAppletShapeSharedPtr;
 
     }
 }

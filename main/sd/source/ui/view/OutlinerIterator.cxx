@@ -29,6 +29,7 @@
 #include <svx/svditer.hxx>
 #include <sfx2/dispatch.hxx>
 #include <sfx2/viewfrm.hxx>
+#include <memory>
 #include "Outliner.hxx"
 
 #include "drawdoc.hxx"
@@ -211,7 +212,7 @@ Iterator OutlinerContainer::CreateIterator (IteratorLocation aLocation)
 Iterator OutlinerContainer::CreateSelectionIterator (
     const ::std::vector<SdrObjectWeakRef>& rObjectList,
     SdDrawDocument* pDocument,
-    const ::boost::shared_ptr<ViewShell>& rpViewShell,
+    const ::std::shared_ptr<ViewShell>& rpViewShell,
     bool bDirectionIsForward,
     IteratorLocation aLocation)
 {
@@ -250,7 +251,7 @@ Iterator OutlinerContainer::CreateSelectionIterator (
 
 Iterator OutlinerContainer::CreateDocumentIterator (
     SdDrawDocument* pDocument,
-    const ::boost::shared_ptr<ViewShell>& rpViewShell,
+    const ::std::shared_ptr<ViewShell>& rpViewShell,
     bool bDirectionIsForward,
     IteratorLocation aLocation)
 {
@@ -289,7 +290,7 @@ Iterator OutlinerContainer::CreateDocumentIterator (
             break;
 
         case CURRENT:
-            const ::boost::shared_ptr<DrawViewShell> pDrawViewShell(
+            const ::std::shared_ptr<DrawViewShell> pDrawViewShell(
                 ::boost::dynamic_pointer_cast<DrawViewShell>(rpViewShell));
             if (pDrawViewShell.get())
             {
@@ -314,7 +315,7 @@ Iterator OutlinerContainer::CreateDocumentIterator (
 
 sal_Int32 OutlinerContainer::GetPageIndex (
     SdDrawDocument* pDocument,
-    const ::boost::shared_ptr<ViewShell>& rpViewShell,
+    const ::std::shared_ptr<ViewShell>& rpViewShell,
     PageKind ePageKind,
     EditMode eEditMode,
     bool bDirectionIsForward,
@@ -325,7 +326,7 @@ sal_Int32 OutlinerContainer::GetPageIndex (
     sal_Int32 nPageIndex;
     sal_Int32 nPageCount;
 
-    const ::boost::shared_ptr<DrawViewShell> pDrawViewShell(
+    const ::std::shared_ptr<DrawViewShell> pDrawViewShell(
         ::boost::dynamic_pointer_cast<DrawViewShell>(rpViewShell));
 
     switch (eEditMode)
@@ -380,14 +381,14 @@ sal_Int32 OutlinerContainer::GetPageIndex (
 //===== IteratorImplBase ====================================================
 
 IteratorImplBase::IteratorImplBase(SdDrawDocument* pDocument,
-    const ::boost::weak_ptr<ViewShell>& rpViewShellWeak,
+    const ::std::weak_ptr<ViewShell>& rpViewShellWeak,
     bool bDirectionIsForward)
 :	maPosition()
 ,	mpDocument (pDocument)
 ,	mpViewShellWeak (rpViewShellWeak)
 ,	mbDirectionIsForward (bDirectionIsForward)
 {
-    ::boost::shared_ptr<DrawViewShell> pDrawViewShell;
+    ::std::shared_ptr<DrawViewShell> pDrawViewShell;
     if ( ! mpViewShellWeak.expired())
         pDrawViewShell = ::boost::dynamic_pointer_cast<DrawViewShell>(rpViewShellWeak.lock());
 
@@ -404,7 +405,7 @@ IteratorImplBase::IteratorImplBase(SdDrawDocument* pDocument,
 }
 
 IteratorImplBase::IteratorImplBase( SdDrawDocument* pDocument,
-    const ::boost::weak_ptr<ViewShell>& rpViewShellWeak,
+    const ::std::weak_ptr<ViewShell>& rpViewShellWeak,
     bool bDirectionIsForward, PageKind ePageKind, EditMode eEditMode)
 : maPosition()
 , mpDocument (pDocument)
@@ -466,7 +467,7 @@ SelectionIteratorImpl::SelectionIteratorImpl (
     const ::std::vector<SdrObjectWeakRef>& rObjectList,
     sal_Int32 nObjectIndex,
     SdDrawDocument* pDocument,
-    const ::boost::weak_ptr<ViewShell>& rpViewShellWeak,
+    const ::std::weak_ptr<ViewShell>& rpViewShellWeak,
     bool bDirectionIsForward)
     : IteratorImplBase (pDocument, rpViewShellWeak, bDirectionIsForward),
       mrObjectList(rObjectList),
@@ -573,7 +574,7 @@ bool SelectionIteratorImpl::IsEqual (
 ViewIteratorImpl::ViewIteratorImpl (
     sal_Int32 nPageIndex,
     SdDrawDocument* pDocument,
-    const ::boost::weak_ptr<ViewShell>& rpViewShellWeak,
+    const ::std::weak_ptr<ViewShell>& rpViewShellWeak,
     bool bDirectionIsForward)
     : IteratorImplBase (pDocument, rpViewShellWeak, bDirectionIsForward),
       mbPageChangeOccured(false),
@@ -589,7 +590,7 @@ ViewIteratorImpl::ViewIteratorImpl (
 ViewIteratorImpl::ViewIteratorImpl (
     sal_Int32 nPageIndex,
     SdDrawDocument* pDocument,
-    const ::boost::weak_ptr<ViewShell>& rpViewShellWeak,
+    const ::std::weak_ptr<ViewShell>& rpViewShellWeak,
     bool bDirectionIsForward,
     PageKind ePageKind,
     EditMode eEditMode)
@@ -776,7 +777,7 @@ DocumentIteratorImpl::DocumentIteratorImpl (
     sal_Int32 nPageIndex,
     PageKind ePageKind, EditMode eEditMode,
     SdDrawDocument* pDocument,
-    const ::boost::weak_ptr<ViewShell>& rpViewShellWeak,
+    const ::std::weak_ptr<ViewShell>& rpViewShellWeak,
     bool bDirectionIsForward)
     : ViewIteratorImpl (nPageIndex, pDocument, rpViewShellWeak, bDirectionIsForward,
         ePageKind, eEditMode)

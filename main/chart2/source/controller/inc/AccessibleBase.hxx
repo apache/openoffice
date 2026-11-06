@@ -42,7 +42,7 @@
 
 #include <vector>
 #include <map>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 #include "MutexContainer.hxx"
 
@@ -76,7 +76,7 @@ struct AccessibleElementInfo
     ::com::sun::star::uno::WeakReference<
             ::com::sun::star::awt::XWindow >      m_xWindow;
 
-    ::boost::shared_ptr< ObjectHierarchy > m_spObjectHierarchy;
+    ::std::shared_ptr< ObjectHierarchy > m_spObjectHierarchy;
 
     AccessibleBase * m_pParent;
     SdrView* m_pSdrView;

@@ -26,7 +26,7 @@
 
 #include "tools/SdGlobalResourceContainer.hxx"
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <vcl/mapmod.hxx>
 
 class Font;
@@ -42,7 +42,7 @@ class FontProvider
     : public SdGlobalResource
 {
 public:
-    typedef ::boost::shared_ptr<Font> SharedFontPointer;
+    typedef ::std::shared_ptr<Font> SharedFontPointer;
 
     /** Return the single instance of this class.  Throws a RuntimeException
         when no instance can be created.

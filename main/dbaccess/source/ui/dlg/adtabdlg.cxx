@@ -206,7 +206,7 @@ void TableListFacade::updateTableObjectList( bool _bAllowViews )
 		    const ::rtl::OUString* pViewEnd	  = pViewBegin + sViews.getLength();
 		    ::comphelper::TStringMixEqualFunctor aEqualFunctor;
 		    for(;pViewBegin != pViewEnd;++pViewBegin)
-			    aTables.erase(::std::remove_if(aTables.begin(),aTables.end(),::std::bind2nd(aEqualFunctor,*pViewBegin)),aTables.end());
+			    aTables.erase(::std::remove_if(aTables.begin(),aTables.end(),[pViewBegin](auto& _x) { return aEqualFunctor(_x, *pViewBegin); }),aTables.end());
 		    ::rtl::OUString* pTables = aTables.empty() ? 0 : &aTables[0];
 		    sTables = Sequence< ::rtl::OUString>(pTables, aTables.size());
 		    sViews = Sequence< ::rtl::OUString>();

@@ -26,6 +26,7 @@
 
 #include <canvas/rendering/isurfaceproxy.hxx>
 #include <canvas/rendering/icolorbuffer.hxx>
+#include <memory>
 
 #include "pagemanager.hxx"
 #include "surface.hxx"
@@ -124,7 +125,7 @@ namespace canvas
         canvas::IColorBufferSharedPtr mpBuffer;
 	};
 
-    typedef ::boost::shared_ptr< SurfaceProxy > SurfaceProxySharedPtr;
+    typedef ::std::shared_ptr< SurfaceProxy > SurfaceProxySharedPtr;
 }
 
 #endif

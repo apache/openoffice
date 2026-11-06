@@ -92,7 +92,7 @@ public:
     static ResultT exec( FuncT const& func )
     {
         typedef GenericSolarThreadExecutor<FuncT, ResultT> ExecutorT;
-        ::std::auto_ptr<ExecutorT> const pExecutor( new ExecutorT(func) );
+        ::std::unique_ptr<ExecutorT> const pExecutor( new ExecutorT(func) );
         pExecutor->execute();
 #if ! defined(EXCEPTIONS_OFF)
         if (pExecutor->m_exc.hasValue())
@@ -135,7 +135,7 @@ public:
     static void exec( FuncT const& func )
     {
         typedef GenericSolarThreadExecutor<FuncT, void> ExecutorT;
-        ::std::auto_ptr<ExecutorT> const pExecutor( new ExecutorT(func) );
+        ::std::unique_ptr<ExecutorT> const pExecutor( new ExecutorT(func) );
         pExecutor->execute();
 #if ! defined(EXCEPTIONS_OFF)
         if (pExecutor->m_exc.hasValue())

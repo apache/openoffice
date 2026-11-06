@@ -30,7 +30,7 @@
 #include <svx/svdtypes.hxx>
 #include <filter/msfilter/msfiltertracer.hxx>
 #include <com/sun/star/uno/Any.h>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 class SdDrawDocument;
 class SfxMedium;
@@ -46,7 +46,7 @@ class SdAnimationInfo;
 struct PptInteractiveInfoAtom;
 class Ppt97Animation;
 
-typedef boost::shared_ptr< Ppt97Animation > Ppt97AnimationPtr;
+typedef std::shared_ptr< Ppt97Animation > Ppt97AnimationPtr;
 typedef ::std::map < SdrObject*, Ppt97AnimationPtr > tAnimationMap;
 typedef std::vector< std::pair< SdrObject*, Ppt97AnimationPtr > > tAnimationVector;
 

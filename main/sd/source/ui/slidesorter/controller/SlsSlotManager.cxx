@@ -90,6 +90,7 @@
 #include <vcl/svapp.hxx>
 
 #include <boost/bind.hpp>
+#include <memory>
 
 using namespace ::com::sun::star;
 using namespace ::com::sun::star::uno;
@@ -354,7 +355,7 @@ void SlotManager::FuSupport (SfxRequest& rRequest)
             ViewShellBase* pBase = mrSlideSorter.GetViewShellBase();
             if (pBase != NULL)
             {
-                ::boost::shared_ptr<DrawViewShell> pDrawViewShell (
+                ::std::shared_ptr<DrawViewShell> pDrawViewShell (
                     ::boost::dynamic_pointer_cast<DrawViewShell>(pBase->GetMainViewShell()));
                 if (pDrawViewShell.get() != NULL)
                     pDrawViewShell->FuSupport(rRequest);
@@ -719,7 +720,7 @@ void SlotManager::GetClipboardState ( SfxItemSet& rSet)
                 ViewShellBase* pBase = mrSlideSorter.GetViewShellBase();
                 if (pBase != NULL)
                 {
-                    ::boost::shared_ptr<DrawViewShell> pDrawViewShell (
+                    ::std::shared_ptr<DrawViewShell> pDrawViewShell (
                         ::boost::dynamic_pointer_cast<DrawViewShell>(pBase->GetMainViewShell()));
                     if (pDrawViewShell.get() != NULL)
                     {
@@ -1162,7 +1163,7 @@ void SlotManager::DuplicateSelectedSlides (SfxRequest& rRequest)
 
 
 
-void SlotManager::ExecuteCommandAsynchronously (::std::auto_ptr<Command> pCommand)
+void SlotManager::ExecuteCommandAsynchronously (::std::unique_ptr<Command> pCommand)
 {
     // Ownership of command is (implicitly) transferred to the queue.
     maCommandQueue.push(pCommand.get());

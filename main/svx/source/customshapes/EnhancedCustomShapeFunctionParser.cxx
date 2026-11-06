@@ -47,6 +47,7 @@
 #include <stack>
 
 #include <math.h> // fabs, sqrt, sin, cos, tan, atan, atan2
+#include <memory>
 using namespace EnhancedCustomShape;
 using namespace com::sun::star;
 using namespace com::sun::star::drawing;
@@ -759,7 +760,7 @@ struct ParserContext
 
 };
 
-typedef ::boost::shared_ptr< ParserContext > ParserContextSharedPtr;
+typedef ::std::shared_ptr< ParserContext > ParserContextSharedPtr;
 
 /** Generate apriori constant value
     */

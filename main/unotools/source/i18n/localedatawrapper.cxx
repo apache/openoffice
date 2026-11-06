@@ -50,6 +50,7 @@
 #include <com/sun/star/i18n/NumberFormatIndex.hdl>
 #endif
 #include <rtl/instance.hxx>
+#include <memory>
 
 #define LOCALEDATA_LIBRARYNAME "i18npool"
 #define LOCALEDATA_SERVICENAME "com.sun.star.i18n.LocaleData"
@@ -667,7 +668,7 @@ void LocaleDataWrapper::getDefaultCalendarImpl()
 }
 
 
-const ::boost::shared_ptr< ::com::sun::star::i18n::Calendar > LocaleDataWrapper::getDefaultCalendar() const
+const ::std::shared_ptr< ::com::sun::star::i18n::Calendar > LocaleDataWrapper::getDefaultCalendar() const
 {
     ::utl::ReadWriteGuard aGuard( aMutex );
 	if (!xDefaultCalendar)

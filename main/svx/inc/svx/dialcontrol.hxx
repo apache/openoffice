@@ -138,7 +138,7 @@ protected:
         explicit            DialControl_Impl( Window& rParent );
         void                Init( const Size& rWinSize, const Font& rWinFont );
     };
-    std::auto_ptr< DialControl_Impl > mpImpl;
+    std::unique_ptr< DialControl_Impl > mpImpl;
 
     virtual void        HandleMouseEvent( const Point& rPos, bool bInitial );
     virtual void        HandleEscapeEvent();

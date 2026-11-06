@@ -29,7 +29,7 @@
 #include <tools/link.hxx>
 #include <tools/gen.hxx>
 #include <vcl/timer.hxx>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <boost/function.hpp>
 
 class Point;
@@ -192,12 +192,12 @@ private:
     /** The horizontal scroll bar.  Note that is used but not owned by
         objects of this class.  It is given to the constructor.
     */
-    ::boost::shared_ptr<ScrollBar> mpHorizontalScrollBar;
+    ::std::shared_ptr<ScrollBar> mpHorizontalScrollBar;
 
     /** The vertical scroll bar.  Note that is used but not owned by
         objects of this class.  It is given to the constructor.
     */
-    ::boost::shared_ptr<ScrollBar> mpVerticalScrollBar;
+    ::std::shared_ptr<ScrollBar> mpVerticalScrollBar;
 
     /// Relative horizontal position of the visible area in the view.
     double mnHorizontalPosition;
@@ -213,7 +213,7 @@ private:
         the bottom right corner left by the two scroll bars (when both are
         visible).
     */
-    ::boost::shared_ptr<ScrollBarBox> mpScrollBarFiller;
+    ::std::shared_ptr<ScrollBarBox> mpScrollBarFiller;
 
     /** The auto scroll timer is used for keep scrolling the window when the
         mouse reaches its border while dragging a selection.  When the mouse

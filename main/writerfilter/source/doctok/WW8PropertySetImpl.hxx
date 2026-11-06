@@ -30,6 +30,7 @@
 #include <WW8OutputWithDepth.hxx>
 
 #include <map>
+#include <memory>
 
 namespace writerfilter {
 namespace doctok
@@ -72,7 +73,7 @@ class WW8PropertySetImpl : public WW8PropertySet, public WW8StructBase,
     bool mbPap;
 
 public:
-    typedef boost::shared_ptr<WW8PropertySet> Pointer_t;
+    typedef std::shared_ptr<WW8PropertySet> Pointer_t;
 
     WW8PropertySetImpl(WW8Stream & rStream, sal_uInt32 nOffset,
                        sal_uInt32 nCount, bool bPap = false);

@@ -70,6 +70,10 @@ public:
 	virtual sal_Int32	SAL_CALL	available();
 	virtual void		SAL_CALL	closeInput();
 
+    // XInterface
+    virtual void SAL_CALL acquire() throw ();
+    virtual void SAL_CALL release() throw ();
+
 protected:
 	/// throws a NotConnectedException if the object is not connected anymore
 	void checkConnected() const;
@@ -97,6 +101,10 @@ public:
     virtual void SAL_CALL seek( sal_Int64 _nLocation );
     virtual sal_Int64 SAL_CALL getPosition(  );
     virtual sal_Int64 SAL_CALL getLength(  );
+
+    // XInterface
+    virtual void SAL_CALL acquire() throw ();
+    virtual void SAL_CALL release() throw ();
 };
 
 //==================================================================

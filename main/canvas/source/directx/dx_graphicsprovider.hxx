@@ -26,7 +26,7 @@
 
 #include "dx_winstuff.hxx"
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <boost/utility.hpp>
 
 namespace Gdiplus{ class Graphics; }
@@ -43,7 +43,7 @@ namespace dxcanvas
         virtual GraphicsSharedPtr getGraphics() = 0;
     };
 
-    typedef ::boost::shared_ptr< GraphicsProvider > GraphicsProviderSharedPtr;
+    typedef ::std::shared_ptr< GraphicsProvider > GraphicsProviderSharedPtr;
 }
 
 #endif /* _DXCANVAS_GRAPHICSPROVIDER_HXX */

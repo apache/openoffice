@@ -27,7 +27,7 @@
 #include <com/sun/star/uno/Reference.hxx>
 #include <com/sun/star/util/TriState.hpp>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 
 namespace com { namespace sun { namespace star { namespace lang
@@ -48,10 +48,10 @@ namespace dxcanvas
         {
             sal_Int32							mnWidth;
             sal_Int32							mnHeight;
-            ::boost::shared_ptr< sal_uInt8 >	mpBitmapData;
+            ::std::shared_ptr< sal_uInt8 >	mpBitmapData;
         };
 
-        bool drawVCLBitmapFromXBitmap( const ::boost::shared_ptr< Gdiplus::Graphics >& rGraphics,
+        bool drawVCLBitmapFromXBitmap( const ::std::shared_ptr< Gdiplus::Graphics >& rGraphics,
                                        const ::com::sun::star::uno::Reference<
                                              ::com::sun::star::rendering::XBitmap >&   xBitmap );
     }

@@ -31,7 +31,7 @@
 #include <com/sun/star/io/XInputStreamProvider.hpp>
 /** === end UNO includes === **/
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <vector>
 
 class BasicManager;
@@ -80,7 +80,7 @@ namespace basctl
     class ScriptDocument
 	{
     private:
-        ::boost::shared_ptr< ScriptDocument_Impl > m_pImpl;
+        ::std::shared_ptr< ScriptDocument_Impl > m_pImpl;
 
     private:
         /** creates a ScriptDocument instance which operates on the application-wide

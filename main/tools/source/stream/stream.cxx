@@ -1648,7 +1648,7 @@ SvStream& SvStream::ReadByteString( UniString& rStr, rtl_TextEncoding eSrcCharSe
             }
             sal_Unicode *pStr = rStr.AllocBuffer(
                 static_cast< xub_StrLen >(nLen));
-            BOOST_STATIC_ASSERT(STRING_MAXLEN <= SAL_MAX_SIZE / 2);
+            static_assert(STRING_MAXLEN <= SAL_MAX_SIZE / 2);
             Read( pStr, nLen << 1 );
 
             if (bSwap)

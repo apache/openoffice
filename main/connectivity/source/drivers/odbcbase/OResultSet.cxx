@@ -1145,7 +1145,7 @@ Any SAL_CALL OResultSet::getBookmark(  )
 	checkDisposed(OResultSet_BASE::rBHelper.bDisposed);
 
 	TBookmarkPosMap::iterator aFind = ::std::find_if(m_aPosToBookmarks.begin(),m_aPosToBookmarks.end(),
-		::std::compose1(::std::bind2nd(::std::equal_to<sal_Int32>(),m_nRowPos),::std::select2nd<TBookmarkPosMap::value_type>()));
+		[this](const TBookmarkPosMap::value_type& _x) { return _x.second == this->m_nRowPos; });
 
 	if ( aFind == m_aPosToBookmarks.end() )
 	{

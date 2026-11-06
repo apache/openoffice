@@ -27,6 +27,7 @@
 #include <svtools/valueset.hxx>
 #include <svl/lstner.hxx>
 #include <sfx2/tbxctrl.hxx>
+#include <memory>
 #include "svx/svxdllapi.h"
 
 class XLineStyleItem;
@@ -35,7 +36,7 @@ class SvxLineBox;
 class SvxMetricField;
 class SvxColorBox;
 class XLineEndList;
-typedef ::boost::shared_ptr< XLineEndList > XLineEndListSharedPtr;
+typedef ::std::shared_ptr< XLineEndList > XLineEndListSharedPtr;
 
 //========================================================================
 // SvxLineStyleController:

@@ -98,9 +98,8 @@ template< typename     PixelType,
                                   ColorType,
                                   RedMask,
                                   GreenMask,
-                                  BlueMask,
-                                  SwapBytes>,
-        public std::unary_function<PixelType, ColorType>
+                                   BlueMask,
+                                   SwapBytes>
 {
     typedef RGBMaskFunctorBase<PixelType,
                                ColorType,
@@ -108,6 +107,8 @@ template< typename     PixelType,
                                GreenMask,
                                BlueMask,
                                SwapBytes> base_type;
+    typedef PixelType  argument_type;
+    typedef ColorType  result_type;
 
     ColorType operator()( PixelType v ) const
     {
@@ -160,9 +161,8 @@ template< typename     PixelType,
                                   ColorType,
                                   RedMask,
                                   GreenMask,
-                                  BlueMask,
-                                  SwapBytes>,
-        public std::unary_function<ColorType, PixelType>
+                                   BlueMask,
+                                   SwapBytes>
 {
     typedef RGBMaskFunctorBase<PixelType,
                                ColorType,
@@ -170,6 +170,8 @@ template< typename     PixelType,
                                GreenMask,
                                BlueMask,
                                SwapBytes> base_type;
+    typedef ColorType  argument_type;
+    typedef PixelType  result_type;
 
     PixelType operator()( ColorType const& c ) const
     {

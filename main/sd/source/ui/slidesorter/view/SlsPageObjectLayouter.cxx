@@ -21,6 +21,7 @@
 
 
 
+#include <memory>
 #include "precompiled_sd.hxx"
 
 #include "view/SlsPageObjectLayouter.hxx"
@@ -42,7 +43,7 @@ const static sal_Int32 gnInfoAreaMinWidth = 26;
 }
 
 PageObjectLayouter::PageObjectLayouter (
-	const ::boost::shared_ptr<Theme>& rpTheme,
+	const ::std::shared_ptr<Theme>& rpTheme,
 	const Size& rPageObjectWindowSize,
 	const Size& rPageSize,
 	const SharedSdWindow& rpWindow,

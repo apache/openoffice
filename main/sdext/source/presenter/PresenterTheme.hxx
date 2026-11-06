@@ -32,7 +32,7 @@
 #include <com/sun/star/rendering/XCanvasFont.hpp>
 #include <com/sun/star/rendering/XIntegerBitmap.hpp>
 #include <com/sun/star/util/Color.hpp>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 namespace css = ::com::sun::star;
 
@@ -88,7 +88,7 @@ public:
     {
     public:
         explicit FontDescriptor (void);
-        explicit FontDescriptor (const ::boost::shared_ptr<FontDescriptor>& rpDescriptor);
+        explicit FontDescriptor (const ::std::shared_ptr<FontDescriptor>& rpDescriptor);
 
         ::rtl::OUString msFamilyName;
         ::rtl::OUString msStyleName;
@@ -109,7 +109,7 @@ public:
             const css::uno::Reference<css::rendering::XCanvas>& rxCanvas,
             const double nDesignSize) const;
     };
-    typedef ::boost::shared_ptr<FontDescriptor> SharedFontDescriptor;
+    typedef ::std::shared_ptr<FontDescriptor> SharedFontDescriptor;
 
     ::rtl::OUString GetThemeName (void) const;
 
@@ -120,7 +120,7 @@ public:
     SharedBitmapDescriptor GetBitmap (
         const ::rtl::OUString& rsBitmapName) const;
 
-    ::boost::shared_ptr<PresenterBitmapContainer> GetBitmapContainer (void) const;
+    ::std::shared_ptr<PresenterBitmapContainer> GetBitmapContainer (void) const;
 
     SharedFontDescriptor GetFont (
         const ::rtl::OUString& rsStyleName) const;
@@ -134,18 +134,18 @@ public:
         const css::uno::Any& rColorSequence,
         sal_uInt32& rColor);
 
-    ::boost::shared_ptr<PresenterConfigurationAccess> GetNodeForViewStyle (
+    ::std::shared_ptr<PresenterConfigurationAccess> GetNodeForViewStyle (
         const ::rtl::OUString& rsStyleName,
         const PresenterConfigurationAccess::WriteMode) const;
 
 private:
     css::uno::Reference<css::uno::XComponentContext> mxContext;
     const ::rtl::OUString msThemeName;
-    ::boost::shared_ptr<Theme> mpTheme;
-    ::boost::shared_ptr<PresenterBitmapContainer> mpBitmapContainer;
+    ::std::shared_ptr<Theme> mpTheme;
+    ::std::shared_ptr<PresenterBitmapContainer> mpBitmapContainer;
     css::uno::Reference<css::rendering::XCanvas> mxCanvas;
 
-    ::boost::shared_ptr<Theme> ReadTheme (void);
+    ::std::shared_ptr<Theme> ReadTheme (void);
 };
 
 } } // end of namespace ::sd::presenter

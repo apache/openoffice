@@ -26,6 +26,7 @@
 
 #include <animatableshape.hxx>
 #include <shapeattributelayer.hxx>
+#include <memory>
 
 
 /* Definition of Animation interface */
@@ -85,7 +86,7 @@ namespace slideshow
             virtual void end() = 0;
         };
 
-        typedef ::boost::shared_ptr< Animation > AnimationSharedPtr;
+        typedef ::std::shared_ptr< Animation > AnimationSharedPtr;
 
     }
 }

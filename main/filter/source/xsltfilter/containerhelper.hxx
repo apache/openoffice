@@ -25,16 +25,17 @@
 #define FILTER_SOURCE_XSLTFILTER_CONTAINERHELPER_HXX
 
 #include <map>
-#include <boost/shared_ptr.hpp>
+#include <memory>
+#include <algorithm>
 #include <boost/bind.hpp>
 
 namespace XSLT{
 
 template< typename KeyType, typename ObjType, typename CompType = ::std::less< KeyType > >
-class RefMap : public ::std::map< KeyType, ::boost::shared_ptr< ObjType >, CompType >
+class RefMap : public ::std::map< KeyType, ::std::shared_ptr< ObjType >, CompType >
 {
 public:
-	typedef ::std::map< KeyType, ::boost::shared_ptr< ObjType >, CompType > container_type;
+	typedef ::std::map< KeyType, ::std::shared_ptr< ObjType >, CompType > container_type;
 	typedef typename container_type::key_type		key_type;
 	typedef typename container_type::mapped_type	mapped_type;
 	typedef typename container_type::value_type		value_type;

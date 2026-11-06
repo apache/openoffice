@@ -21,6 +21,7 @@
 
 
 
+#include <memory>
 #include "precompiled_vcl.hxx"
 
 #include "svdata.hxx"
@@ -490,19 +491,19 @@ size_t RowOrColumn::addWindow( Window* i_pWindow, sal_Int32 i_nExpandPrio, const
     if( i_nIndex >= m_aElements.size() )
     {
         nIndex = m_aElements.size();
-        m_aElements.push_back( WindowArranger::Element( i_pWindow, boost::shared_ptr<WindowArranger>(), i_nExpandPrio, i_rMinSize ) );
+        m_aElements.push_back( WindowArranger::Element( i_pWindow, std::shared_ptr<WindowArranger>(), i_nExpandPrio, i_rMinSize ) );
     }
     else
     {
         std::vector< WindowArranger::Element >::iterator it = m_aElements.begin();
         while( i_nIndex-- )
             ++it;
-        m_aElements.insert( it, WindowArranger::Element( i_pWindow, boost::shared_ptr<WindowArranger>(), i_nExpandPrio, i_rMinSize ) );
+        m_aElements.insert( it, WindowArranger::Element( i_pWindow, std::shared_ptr<WindowArranger>(), i_nExpandPrio, i_rMinSize ) );
     }
     return nIndex;
 }
 
-size_t RowOrColumn::addChild( boost::shared_ptr<WindowArranger> const & i_pChild, sal_Int32 i_nExpandPrio, size_t i_nIndex )
+size_t RowOrColumn::addChild( std::shared_ptr<WindowArranger> const & i_pChild, sal_Int32 i_nExpandPrio, size_t i_nIndex )
 {
     size_t nIndex = i_nIndex;
     if( i_nIndex >= m_aElements.size() )
@@ -536,7 +537,7 @@ void RowOrColumn::remove( Window* i_pWindow )
     }
 }
 
-void RowOrColumn::remove( boost::shared_ptr<WindowArranger> const & i_pChild )
+void RowOrColumn::remove( std::shared_ptr<WindowArranger> const & i_pChild )
 {
     if( i_pChild )
     {
@@ -629,7 +630,7 @@ void LabeledElement::setLabel( Window* i_pLabel )
     m_aLabel.m_pChild.reset();
 }
 
-void LabeledElement::setLabel( boost::shared_ptr<WindowArranger> const & i_pLabel )
+void LabeledElement::setLabel( std::shared_ptr<WindowArranger> const & i_pLabel )
 {
     m_aLabel.m_pElement = NULL;
     m_aLabel.m_pChild = i_pLabel;
@@ -641,7 +642,7 @@ void LabeledElement::setElement( Window* i_pElement )
     m_aElement.m_pChild.reset();
 }
 
-void LabeledElement::setElement( boost::shared_ptr<WindowArranger> const & i_pElement )
+void LabeledElement::setElement( std::shared_ptr<WindowArranger> const & i_pElement )
 {
     m_aElement.m_pElement = NULL;
     m_aElement.m_pChild = i_pElement;
@@ -753,9 +754,9 @@ void LabelColumn::resize()
     RowOrColumn::resize();
 }
 
-size_t LabelColumn::addRow( Window* i_pLabel, boost::shared_ptr<WindowArranger> const& i_rElement, long i_nIndent )
+size_t LabelColumn::addRow( Window* i_pLabel, std::shared_ptr<WindowArranger> const& i_rElement, long i_nIndent )
 {
-    boost::shared_ptr< LabeledElement > xLabel( new LabeledElement( this, 1 ) );
+    std::shared_ptr< LabeledElement > xLabel( new LabeledElement( this, 1 ) );
     xLabel->setLabel( i_pLabel );
     xLabel->setBorders( 0, i_nIndent, 0, 0, 0 );
     xLabel->setElement( i_rElement );
@@ -766,7 +767,7 @@ size_t LabelColumn::addRow( Window* i_pLabel, boost::shared_ptr<WindowArranger> 
 
 size_t LabelColumn::addRow( Window* i_pLabel, Window* i_pElement, long i_nIndent, const Size& i_rElementMinSize )
 {
-    boost::shared_ptr< LabeledElement > xLabel( new LabeledElement( this, 1 ) );
+    std::shared_ptr< LabeledElement > xLabel( new LabeledElement( this, 1 ) );
     xLabel->setLabel( i_pLabel );
     xLabel->setBorders( 0, i_nIndent, 0, 0, 0 );
     xLabel->setElement( i_pElement );
@@ -816,7 +817,7 @@ void Indenter::setWindow( Window* i_pWindow, sal_Int32 i_nExpandPrio )
     m_aElement.m_nExpandPriority = i_nExpandPrio;
 }
 
-void Indenter::setChild( boost::shared_ptr<WindowArranger> const & i_pChild, sal_Int32 i_nExpandPrio )
+void Indenter::setChild( std::shared_ptr<WindowArranger> const & i_pChild, sal_Int32 i_nExpandPrio )
 {
     OSL_VERIFY( (m_aElement.m_pElement == 0 && m_aElement.m_pChild == 0 ) || i_pChild == 0 );
     m_aElement.m_pChild = i_pChild;
@@ -996,7 +997,7 @@ size_t MatrixArranger::addWindow( Window* i_pWindow, sal_uInt32 i_nX, sal_uInt32
     if( it == m_aMatrixMap.end() )
     {
         m_aMatrixMap[ nMapValue ] = nIndex = m_aElements.size();
-        m_aElements.push_back( MatrixElement( i_pWindow, i_nX, i_nY, boost::shared_ptr<WindowArranger>(), i_nExpandPrio, i_rMinSize ) );
+        m_aElements.push_back( MatrixElement( i_pWindow, i_nX, i_nY, std::shared_ptr<WindowArranger>(), i_nExpandPrio, i_rMinSize ) );
     }
     else
     {
@@ -1029,7 +1030,7 @@ void MatrixArranger::remove( Window* i_pWindow )
     }
 }
 
-size_t MatrixArranger::addChild( boost::shared_ptr<WindowArranger> const &i_pChild, sal_uInt32 i_nX, sal_uInt32 i_nY, sal_Int32 i_nExpandPrio )
+size_t MatrixArranger::addChild( std::shared_ptr<WindowArranger> const &i_pChild, sal_uInt32 i_nX, sal_uInt32 i_nY, sal_Int32 i_nExpandPrio )
 {
     sal_uInt64 nMapValue = getMap( i_nX, i_nY );
     std::map< sal_uInt64, size_t >::const_iterator it = m_aMatrixMap.find( nMapValue );
@@ -1052,7 +1053,7 @@ size_t MatrixArranger::addChild( boost::shared_ptr<WindowArranger> const &i_pChi
     return nIndex;
 }
 
-void MatrixArranger::remove( boost::shared_ptr<WindowArranger> const &i_pChild )
+void MatrixArranger::remove( std::shared_ptr<WindowArranger> const &i_pChild )
 {
     if( i_pChild )
     {

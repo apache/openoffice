@@ -198,7 +198,7 @@ public:
     sal_Int32           GetTotalHeight() const;
 
 private:    // types
-    typedef ::std::auto_ptr< XclFontData > XclFontDataPtr;
+    typedef ::std::unique_ptr< XclFontData > XclFontDataPtr;
 
     /** Enumerates the supported header/footer portions. */
     enum XclImpHFPortion { EXC_HF_LEFT, EXC_HF_CENTER, EXC_HF_RIGHT, EXC_HF_PORTION_COUNT };
@@ -329,8 +329,8 @@ public:
     inline const ScTokenArray* GetBoolErrFmla() const { return mxTokArr.get(); }
 
 protected:
-    typedef ::std::auto_ptr< String >               StringPtr;
-    typedef ::std::auto_ptr< const ScTokenArray >   ScTokenArrayPtr;
+    typedef ::std::unique_ptr< String >               StringPtr;
+    typedef ::std::unique_ptr< const ScTokenArray >   ScTokenArrayPtr;
 
     StringPtr           mxStr;      /// Cached value is a string.
     double              mfValue;    /// Cached value is a double.

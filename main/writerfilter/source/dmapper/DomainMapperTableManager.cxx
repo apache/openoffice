@@ -35,6 +35,7 @@
 #include <ooxml/resourceids.hxx>
 #include <doctok/sprmids.hxx>
 #include <dmapperLoggers.hxx>
+#include <memory>
 
 namespace writerfilter {
 namespace dmapper {
@@ -356,12 +357,12 @@ void DomainMapperTableManager::popStackOfMembers()
 }
 
 
-boost::shared_ptr< vector<sal_Int32> > DomainMapperTableManager::getCurrentGrid()
+std::shared_ptr< vector<sal_Int32> > DomainMapperTableManager::getCurrentGrid()
 {
     return m_aTableGrid.top();
 }
 
-boost::shared_ptr< vector< sal_Int32 > > DomainMapperTableManager::getCurrentSpans()
+std::shared_ptr< vector< sal_Int32 > > DomainMapperTableManager::getCurrentSpans()
 {
     return m_aGridSpans.top();
 }

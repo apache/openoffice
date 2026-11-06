@@ -54,6 +54,7 @@
 #include <unordered_map>
 
 #include <string.h>
+#include <memory>
 
 namespace com{ namespace sun{ namespace star{
         namespace awt{
@@ -180,7 +181,7 @@ struct TextAppendContext
     }
 };
 
-typedef boost::shared_ptr<FieldContext>  FieldContextPtr;
+typedef std::shared_ptr<FieldContext>  FieldContextPtr;
 
 typedef std::stack<ContextType>                 ContextStack;
 typedef std::stack<PropertyMapPtr>              PropertyStack;
@@ -259,7 +260,7 @@ struct RedlineParams
     sal_Int32       m_nId;
     sal_Int32       m_nToken;
 };
-typedef boost::shared_ptr< RedlineParams > RedlineParamsPtr;
+typedef std::shared_ptr< RedlineParams > RedlineParamsPtr;
 
 /*-- 03.03.2008 11:01:38---------------------------------------------------
 
@@ -323,7 +324,7 @@ private:
 
 
     // TableManagers are stacked: one for each stream to avoid any confusion
-    std::stack< boost::shared_ptr< DomainMapperTableManager > > m_aTableManagers;
+    std::stack< std::shared_ptr< DomainMapperTableManager > > m_aTableManagers;
 
     //each context needs a stack of currently used attributes
     FIB                     m_aFIB;
@@ -563,13 +564,13 @@ public:
 
     DomainMapperTableManager& getTableManager()
     {
-        boost::shared_ptr< DomainMapperTableManager > pMngr = m_aTableManagers.top();
+        std::shared_ptr< DomainMapperTableManager > pMngr = m_aTableManagers.top();
         return *pMngr.get( );
     }
 
     void appendTableManager()
     {
-        boost::shared_ptr< DomainMapperTableManager > pMngr(
+        std::shared_ptr< DomainMapperTableManager > pMngr(
                 new DomainMapperTableManager( m_eDocumentType == DOCUMENT_OOXML ) );
         m_aTableManagers.push( pMngr );
     }

@@ -2973,8 +2973,7 @@ void WW8PLCFx::SetIdx2(sal_uLong )
 {
 }
 
-class SamePos :
-    public std::unary_function<const WW8PLCFx_Fc_FKP::WW8Fkp *, bool>
+class SamePos 
 {
 private:
     long mnPo;

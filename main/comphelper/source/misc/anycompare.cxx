@@ -186,9 +186,9 @@ namespace comphelper
     };
 
 	//------------------------------------------------------------------------------------------------------------------
-    ::std::auto_ptr< IKeyPredicateLess > getStandardLessPredicate( Type const & i_type, Reference< XCollator > const & i_collator )
+    ::std::unique_ptr< IKeyPredicateLess > getStandardLessPredicate( Type const & i_type, Reference< XCollator > const & i_collator )
     {
-        ::std::auto_ptr< IKeyPredicateLess > pComparator;
+        ::std::unique_ptr< IKeyPredicateLess > pComparator;
         switch ( i_type.getTypeClass() )
         {
         case TypeClass_CHAR:

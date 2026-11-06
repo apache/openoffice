@@ -26,7 +26,7 @@
 
 #include <sal/config.h>
 #ifndef BOOST_SHARED_PTR_HPP_INCLUDED
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #endif
 #include "FDatabaseMetaDataResultSet.hxx"
 #include <vector>
@@ -82,7 +82,7 @@ public:
 	virtual ODatabaseMetaDataResultSet::ORow fillNode(
 		std::vector< RowEquation >& rEquations, ExpressionNode* pOptionalArg, sal_uInt32 nFlags ) = 0;
 };
-typedef ::boost::shared_ptr< ExpressionNode > ExpressionNodeSharedPtr;
+typedef ::std::shared_ptr< ExpressionNode > ExpressionNodeSharedPtr;
 
 /** This exception is thrown, when the arithmetic expression
     parser failed to parse a string.

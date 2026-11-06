@@ -34,13 +34,13 @@
 
 #include <rtl/ref.hxx>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <map>
 
 class SvXMLStyleContext;
 
 typedef std::map< ::rtl::OUString, ::rtl::OUString > XMLTableTemplate;
-typedef std::map < ::rtl::OUString, boost::shared_ptr< XMLTableTemplate > > XMLTableTemplateMap;
+typedef std::map < ::rtl::OUString, std::shared_ptr< XMLTableTemplate > > XMLTableTemplateMap;
 
 class XMLTableImport : public UniRefBase
 {

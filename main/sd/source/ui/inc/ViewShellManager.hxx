@@ -28,7 +28,7 @@
 #include <tools/link.hxx>
 #include <memory>
 #include <vector>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 class FmFormShell;
 class SfxShell;
@@ -61,7 +61,7 @@ class ViewShellBase;
 class ViewShellManager
 {
 public:
-    typedef ::boost::shared_ptr<ShellFactory<SfxShell> > SharedShellFactory;
+    typedef ::std::shared_ptr<ShellFactory<SfxShell> > SharedShellFactory;
 
     ViewShellManager (ViewShellBase& rBase);
 
@@ -183,17 +183,17 @@ public:
     class UpdateLock
     {
     public:
-        UpdateLock (const ::boost::shared_ptr<ViewShellManager>& rpManager)
+        UpdateLock (const ::std::shared_ptr<ViewShellManager>& rpManager)
             : mpManager(rpManager) {mpManager->LockUpdate();}
         ~UpdateLock (void) {mpManager->UnlockUpdate();};
     private:
-        ::boost::shared_ptr<ViewShellManager> mpManager;
+        ::std::shared_ptr<ViewShellManager> mpManager;
     };
     friend class UpdateLock;
 
 private:
     class Implementation;
-    ::std::auto_ptr<ViewShellManager::Implementation> mpImpl;
+    ::std::unique_ptr<ViewShellManager::Implementation> mpImpl;
     bool mbValid;
 
     void LockUpdate (void);

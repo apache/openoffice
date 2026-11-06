@@ -61,6 +61,7 @@
 #include <sfx2/request.hxx>
 #include <svl/itempool.hxx>
 #include <sfx2/sidebar/Theme.hxx>
+#include <memory>
 
 
 using namespace ::com::sun::star::text;
@@ -74,7 +75,7 @@ MasterPagesSelector::MasterPagesSelector (
     ::Window* pParent,
     SdDrawDocument& rDocument,
     ViewShellBase& rBase,
-    const ::boost::shared_ptr<MasterPageContainer>& rpContainer,
+    const ::std::shared_ptr<MasterPageContainer>& rpContainer,
     const cssu::Reference<css::ui::XSidebar>& rxSidebar)
     : PreviewValueSet(pParent),
       maMutex(),
@@ -189,7 +190,7 @@ void MasterPagesSelector::UpdateLocks (const ItemList& rItemList)
 
 void MasterPagesSelector::Fill (void)
 {
-    ::std::auto_ptr<ItemList> pItemList (new ItemList());
+    ::std::unique_ptr<ItemList> pItemList (new ItemList());
 
     Fill(*pItemList);
 
@@ -799,7 +800,7 @@ void MasterPagesSelector::InvalidateItem (MasterPageContainer::Token aToken)
 
 
 
-void MasterPagesSelector::UpdateItemList (::std::auto_ptr<ItemList> pNewItemList)
+void MasterPagesSelector::UpdateItemList (::std::unique_ptr<ItemList> pNewItemList)
 {
     const ::osl::MutexGuard aGuard (maMutex);
 

@@ -128,6 +128,7 @@
 #include <sfx2/DocumentMetadataAccess.hxx>
 
 #include <sfx2/sfxresid.hxx>
+#include <memory>
 
 //________________________________________________________________________________________________________
 // const
@@ -605,7 +606,7 @@ namespace
             io_rTypes.getConstArray(),
             io_rTypes.getConstArray() + io_rTypes.getLength(),
             aStrippedTypes.getArray(),
-            ::std::bind2nd( ::std::equal_to< Type >(), i_rTypeToStrip )
+            [i_rTypeToStrip](auto& _x) { return ::std::equal_to< Type >()(_x, i_rTypeToStrip); }
         );
         io_rTypes = aStrippedTypes;
     }
@@ -2031,7 +2032,7 @@ uno::Any SAL_CALL SfxBaseModel::getTransferData( const DATAFLAVOR& aFlavor )
 			if ( aFlavor.DataType == getCppuType( (const Sequence< sal_Int8 >*) 0 ) )
 			{
 
-                ::boost::shared_ptr<GDIMetaFile> pMetaFile =
+                ::std::shared_ptr<GDIMetaFile> pMetaFile =
                     m_pData->m_pObjectShell->GetPreviewMetaFile( sal_True );
 
 				if ( pMetaFile )
@@ -2051,7 +2052,7 @@ uno::Any SAL_CALL SfxBaseModel::getTransferData( const DATAFLAVOR& aFlavor )
 		{
 			if ( aFlavor.DataType == getCppuType( (const Sequence< sal_Int8 >*) 0 ) )
 			{
-                ::boost::shared_ptr<GDIMetaFile> pMetaFile =
+                ::std::shared_ptr<GDIMetaFile> pMetaFile =
                     m_pData->m_pObjectShell->CreatePreviewMetaFile_Impl( sal_True, sal_True );
 
 				if ( pMetaFile )
@@ -2071,12 +2072,12 @@ uno::Any SAL_CALL SfxBaseModel::getTransferData( const DATAFLAVOR& aFlavor )
 		{
 			if ( aFlavor.DataType == getCppuType( (const Sequence< sal_Int8 >*) 0 ) )
 			{
-                ::boost::shared_ptr<GDIMetaFile> pMetaFile =
+                ::std::shared_ptr<GDIMetaFile> pMetaFile =
                     m_pData->m_pObjectShell->GetPreviewMetaFile( sal_True );
 
 				if ( pMetaFile )
 				{
-                    ::boost::shared_ptr<SvMemoryStream> pStream(
+                    ::std::shared_ptr<SvMemoryStream> pStream(
                         GraphicHelper::getFormatStrFromGDI_Impl(
                             pMetaFile.get(), CVT_EMF ) );
 					if ( pStream )
@@ -2090,7 +2091,7 @@ uno::Any SAL_CALL SfxBaseModel::getTransferData( const DATAFLAVOR& aFlavor )
 			else if ( GraphicHelper::supportsMetaFileHandle_Impl()
 			  && aFlavor.DataType == getCppuType( (const sal_uInt64*) 0 ) )
 			{
-                ::boost::shared_ptr<GDIMetaFile> pMetaFile =
+                ::std::shared_ptr<GDIMetaFile> pMetaFile =
                     m_pData->m_pObjectShell->GetPreviewMetaFile( sal_True );
 
 				if ( pMetaFile )
@@ -2106,12 +2107,12 @@ uno::Any SAL_CALL SfxBaseModel::getTransferData( const DATAFLAVOR& aFlavor )
 		{
 			if ( aFlavor.DataType == getCppuType( (const Sequence< sal_Int8 >*) 0 ) )
 			{
-                ::boost::shared_ptr<GDIMetaFile> pMetaFile =
+                ::std::shared_ptr<GDIMetaFile> pMetaFile =
                     m_pData->m_pObjectShell->GetPreviewMetaFile( sal_True );
 
 				if ( pMetaFile )
 				{
-                    ::boost::shared_ptr<SvMemoryStream> pStream(
+                    ::std::shared_ptr<SvMemoryStream> pStream(
                         GraphicHelper::getFormatStrFromGDI_Impl(
                             pMetaFile.get(), CVT_WMF ) );
 
@@ -2128,7 +2129,7 @@ uno::Any SAL_CALL SfxBaseModel::getTransferData( const DATAFLAVOR& aFlavor )
 			{
 				// means HGLOBAL handler to memory storage containing METAFILEPICT structure
 
-                ::boost::shared_ptr<GDIMetaFile> pMetaFile =
+                ::std::shared_ptr<GDIMetaFile> pMetaFile =
                     m_pData->m_pObjectShell->GetPreviewMetaFile( sal_True );
 
 				if ( pMetaFile )
@@ -2146,12 +2147,12 @@ uno::Any SAL_CALL SfxBaseModel::getTransferData( const DATAFLAVOR& aFlavor )
         {
             if ( aFlavor.DataType == getCppuType( (const Sequence< sal_Int8 >*) 0 ) )
             {
-                ::boost::shared_ptr<GDIMetaFile> pMetaFile =
+                ::std::shared_ptr<GDIMetaFile> pMetaFile =
                     m_pData->m_pObjectShell->GetPreviewMetaFile( sal_True );
 
                 if ( pMetaFile )
                 {
-                    ::boost::shared_ptr<SvMemoryStream> pStream(
+                    ::std::shared_ptr<SvMemoryStream> pStream(
                         GraphicHelper::getFormatStrFromGDI_Impl(
                             pMetaFile.get(), CVT_SVG ) );
 
@@ -2170,12 +2171,12 @@ uno::Any SAL_CALL SfxBaseModel::getTransferData( const DATAFLAVOR& aFlavor )
 		{
 			if ( aFlavor.DataType == getCppuType( (const Sequence< sal_Int8 >*) 0 ) )
 			{
-                ::boost::shared_ptr<GDIMetaFile> pMetaFile =
+                ::std::shared_ptr<GDIMetaFile> pMetaFile =
                     m_pData->m_pObjectShell->GetPreviewMetaFile( sal_True );
 
 				if ( pMetaFile )
 				{
-                    ::boost::shared_ptr<SvMemoryStream> pStream(
+                    ::std::shared_ptr<SvMemoryStream> pStream(
                         GraphicHelper::getFormatStrFromGDI_Impl(
                             pMetaFile.get(), CVT_BMP ) );
 
@@ -2194,12 +2195,12 @@ uno::Any SAL_CALL SfxBaseModel::getTransferData( const DATAFLAVOR& aFlavor )
 		{
 			if ( aFlavor.DataType == getCppuType( (const Sequence< sal_Int8 >*) 0 ) )
 			{
-                ::boost::shared_ptr<GDIMetaFile> pMetaFile =
+                ::std::shared_ptr<GDIMetaFile> pMetaFile =
                     m_pData->m_pObjectShell->GetPreviewMetaFile( sal_True );
 
 				if ( pMetaFile )
 				{
-                    ::boost::shared_ptr<SvMemoryStream> pStream(
+                    ::std::shared_ptr<SvMemoryStream> pStream(
                         GraphicHelper::getFormatStrFromGDI_Impl(
                             pMetaFile.get(), CVT_PNG ) );
 

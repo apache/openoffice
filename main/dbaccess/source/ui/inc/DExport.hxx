@@ -35,6 +35,7 @@
 #include <vector>
 #include <tools/string.hxx>
 #include <comphelper/stl_types.hxx>
+#include <memory>
 #include "TypeInfo.hxx"
 #include "WTypeSelect.hxx"
 #include "commontypes.hxx"
@@ -81,7 +82,7 @@ namespace dbaui
 		::com::sun::star::uno::Reference< ::com::sun::star::container::XNameAccess>		m_xTables;		// container
 		SharedConnection                                                                m_xConnection;	// dest conn
 
-        ::boost::shared_ptr<IUpdateHelper>                                              m_pUpdateHelper;
+        ::std::shared_ptr<IUpdateHelper>                                              m_pUpdateHelper;
 		::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XResultSet >			m_xResultSet;	//
 		::com::sun::star::uno::Reference< ::com::sun::star::util::XNumberFormatter > 	m_xFormatter;	// a number formatter working with the connection's NumberFormatsSupplier
 		::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory> m_xFactory;

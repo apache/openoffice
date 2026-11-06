@@ -24,7 +24,7 @@
 #ifndef INCLUDED_WW8_DOCUMENT_HXX
 #define INCLUDED_WW8_DOCUMENT_HXX
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <sal/types.h>
 #include <com/sun/star/uno/Reference.hxx>
 #include <resourcemodel/SubSequence.hxx>
@@ -58,7 +58,7 @@ public:
     /**
        Pointer to a WW8Stream.
     */
-    typedef boost::shared_ptr<WW8Stream> Pointer_t;
+    typedef std::shared_ptr<WW8Stream> Pointer_t;
 
     /**
        Type for the content of the stream
@@ -112,7 +112,7 @@ public:
     /**
        Pointer to a property.
     */
-    typedef boost::shared_ptr<WW8Property> Pointer_t;
+    typedef std::shared_ptr<WW8Property> Pointer_t;
 
     virtual ~WW8Property();
 
@@ -156,7 +156,7 @@ public:
 class WRITERFILTER_DLLPUBLIC WW8PropertySetIterator
 {
 public:
-    typedef boost::shared_ptr<WW8PropertySetIterator> Pointer_t;
+    typedef std::shared_ptr<WW8PropertySetIterator> Pointer_t;
 
     virtual ~WW8PropertySetIterator();
 
@@ -193,7 +193,7 @@ bool operator != (const WW8PropertySetIterator & rA,
 class WRITERFILTER_DLLPUBLIC WW8PropertySet
 {
 public:
-    typedef boost::shared_ptr<WW8PropertySet> Pointer_t;
+    typedef std::shared_ptr<WW8PropertySet> Pointer_t;
 
     virtual ~WW8PropertySet();
 
@@ -280,7 +280,7 @@ enum PropertyType {
 class WRITERFILTER_DLLPUBLIC WW8DocumentIterator
 {
 public:
-    typedef boost::shared_ptr<WW8DocumentIterator> Pointer_t;
+    typedef std::shared_ptr<WW8DocumentIterator> Pointer_t;
 
     virtual ~WW8DocumentIterator();
 
@@ -396,7 +396,7 @@ class WRITERFILTER_DLLPUBLIC WW8Document :
     public writerfilter::Reference<Stream>
 {
 public:
-    typedef boost::shared_ptr<WW8Document> Pointer_t;
+    typedef std::shared_ptr<WW8Document> Pointer_t;
 
     virtual ~WW8Document();
 

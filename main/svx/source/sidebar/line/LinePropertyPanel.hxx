@@ -32,6 +32,7 @@
 #include <boost/scoped_ptr.hpp>
 #include <boost/scoped_array.hpp>
 #include <svx/sidebar/ColorPopup.hxx>
+#include <memory>
 #include "LineWidthPopup.hxx"
 
 namespace svx { class ToolboxButtonColorUpdater; }
@@ -48,8 +49,8 @@ class ListBox;
 class ToolBox;
 class FloatingWindow;
 
-typedef ::boost::shared_ptr< XLineEndList > XLineEndListSharedPtr;
-typedef ::boost::shared_ptr< XDashList > XDashListSharedPtr;
+typedef ::std::shared_ptr< XLineEndList > XLineEndListSharedPtr;
+typedef ::std::shared_ptr< XDashList > XDashListSharedPtr;
 
 namespace {
     #define SIDEBAR_LINE_WIDTH_GLOBAL_VALUE String("PopupPanel_LineWidth", 20, RTL_TEXTENCODING_ASCII_US)

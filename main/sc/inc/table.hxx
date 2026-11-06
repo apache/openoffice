@@ -36,7 +36,7 @@
 
 #include <memory>
 #include <set>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 namespace utl {
 	class SearchParam;
@@ -99,7 +99,7 @@ private:
     typedef ::std::vector< ScRange > ScRangeVec;
     typedef ::std::pair< SCCOL, SCROW > ScAddress2D;
     typedef ::std::vector< ScAddress2D > ScAddress2DVec;
-    typedef ::std::auto_ptr< ScAddress2DVec > ScAddress2DVecPtr;
+    typedef ::std::unique_ptr< ScAddress2DVec > ScAddress2DVecPtr;
 
 											//	Daten pro Tabelle	------------------
 	ScColumn		aCol[MAXCOLCOUNT];
@@ -127,17 +127,17 @@ private:
 	SCROW			nRepeatStartY;
 	SCROW			nRepeatEndY;
 
-    ::std::auto_ptr<ScTableProtection> pTabProtection;
+    ::std::unique_ptr<ScTableProtection> pTabProtection;
 
 	sal_uInt16*			pColWidth;
-    ::boost::shared_ptr<ScFlatUInt16RowSegments> mpRowHeights;
+    ::std::shared_ptr<ScFlatUInt16RowSegments> mpRowHeights;
 
 	sal_uInt8*			pColFlags;
 	ScBitMaskCompressedArray< SCROW, sal_uInt8>*     pRowFlags;
-    ::boost::shared_ptr<ScFlatBoolColSegments>  mpHiddenCols;
-    ::boost::shared_ptr<ScFlatBoolRowSegments>  mpHiddenRows;
-    ::boost::shared_ptr<ScFlatBoolColSegments>  mpFilteredCols;
-    ::boost::shared_ptr<ScFlatBoolRowSegments>  mpFilteredRows;
+    ::std::shared_ptr<ScFlatBoolColSegments>  mpHiddenCols;
+    ::std::shared_ptr<ScFlatBoolRowSegments>  mpHiddenRows;
+    ::std::shared_ptr<ScFlatBoolColSegments>  mpFilteredCols;
+    ::std::shared_ptr<ScFlatBoolRowSegments>  mpFilteredRows;
 
     ::std::set<SCROW>                      maRowPageBreaks;
     ::std::set<SCROW>                      maRowManualBreaks;

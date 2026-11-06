@@ -97,10 +97,10 @@ namespace dbaccess
 
         OUpdatedParameter                                       m_aUpdatedParameter;    // contains all parameter which have been updated and are needed for refetching
         ORowSetValueVector                                      m_aParameterValueForCache;
-        ::std::auto_ptr<SelectColumnsMetaData>                  m_pKeyColumnNames;      // contains all key column names
-        ::std::auto_ptr<SelectColumnsMetaData>                  m_pColumnNames;         // contains all column names
-        ::std::auto_ptr<SelectColumnsMetaData>                  m_pParameterNames;      // contains all parameter names
-        ::std::auto_ptr<SelectColumnsMetaData>                  m_pForeignColumnNames;  // contains all column names of the rest
+        ::std::unique_ptr<SelectColumnsMetaData>                  m_pKeyColumnNames;      // contains all key column names
+        ::std::unique_ptr<SelectColumnsMetaData>                  m_pColumnNames;         // contains all column names
+        ::std::unique_ptr<SelectColumnsMetaData>                  m_pParameterNames;      // contains all parameter names
+        ::std::unique_ptr<SelectColumnsMetaData>                  m_pForeignColumnNames;  // contains all column names of the rest
 		connectivity::OSQLTable									m_xTable; // reference to our table
         ::com::sun::star::uno::Reference< ::com::sun::star::container::XIndexAccess>    m_xTableKeys;
 		::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XPreparedStatement>	m_xStatement;
@@ -143,7 +143,7 @@ namespace dbaccess
                                              const ::rtl::OUString& i_rUpdateTableName,
                                              const ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XDatabaseMetaData>& i_xMeta,
                                              const ::com::sun::star::uno::Reference< ::com::sun::star::container::XNameAccess>& i_xQueryColumns,
-                                             ::std::auto_ptr<SelectColumnsMetaData>& o_pKeyColumnNames);
+                                             ::std::unique_ptr<SelectColumnsMetaData>& o_pKeyColumnNames);
         ::rtl::OUStringBuffer createKeyFilter();
         void tryRefetch(const ORowSetRow& _rInsertRow,bool bRefetch);
         void executeUpdate(const ORowSetRow& _rInsertRow ,const ORowSetRow& _rOrginalRow,const ::rtl::OUString& i_sSQL,const ::rtl::OUString& i_sTableName,const ::std::vector<sal_Int32>& _aIndexColumnPositions = ::std::vector<sal_Int32>());

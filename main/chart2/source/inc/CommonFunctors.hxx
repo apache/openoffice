@@ -42,7 +42,7 @@ namespace CommonFunctors
     (via mem_fun_ptr)</p>
 */
 template< typename T >
-    struct makeAny : public ::std::unary_function< T, ::com::sun::star::uno::Any >
+    struct makeAny 
 {
     ::com::sun::star::uno::Any operator() ( const T & aVal )
     {
@@ -55,7 +55,7 @@ template< typename T >
     <p>In case no number can be generated from the Any, NaN (see
     rtl::math::SetNAN()) is returned.</p>
 */
-struct OOO_DLLPUBLIC_CHARTTOOLS AnyToDouble : public ::std::unary_function< ::com::sun::star::uno::Any, double >
+struct OOO_DLLPUBLIC_CHARTTOOLS AnyToDouble 
 {
     double operator() ( const ::com::sun::star::uno::Any & rAny )
     {
@@ -75,7 +75,7 @@ struct OOO_DLLPUBLIC_CHARTTOOLS AnyToDouble : public ::std::unary_function< ::co
 /** unary function to convert ::com::sun::star::uno::Any into an
     ::rtl::OUString.
 */
-struct OOO_DLLPUBLIC_CHARTTOOLS AnyToString : public ::std::unary_function< ::com::sun::star::uno::Any,  ::rtl::OUString >
+struct OOO_DLLPUBLIC_CHARTTOOLS AnyToString 
 {
     ::rtl::OUString operator() ( const ::com::sun::star::uno::Any & rAny )
     {
@@ -106,7 +106,7 @@ struct OOO_DLLPUBLIC_CHARTTOOLS AnyToString : public ::std::unary_function< ::co
 
     <p>For conversion rtl::math::StringToDouble is used.</p>
  */
-struct OOO_DLLPUBLIC_CHARTTOOLS OUStringToDouble : public ::std::unary_function< ::rtl::OUString, double >
+struct OOO_DLLPUBLIC_CHARTTOOLS OUStringToDouble 
 {
     double operator() ( const ::rtl::OUString & rStr )
     {
@@ -124,7 +124,7 @@ struct OOO_DLLPUBLIC_CHARTTOOLS OUStringToDouble : public ::std::unary_function<
 
     <p>For conversion rtl::math::DoubleToOUString is used.</p>
  */
-struct OOO_DLLPUBLIC_CHARTTOOLS DoubleToOUString : public ::std::unary_function< double, ::rtl::OUString >
+struct OOO_DLLPUBLIC_CHARTTOOLS DoubleToOUString 
 {
     ::rtl::OUString operator() ( double fNumber )
     {
@@ -144,7 +144,7 @@ struct OOO_DLLPUBLIC_CHARTTOOLS DoubleToOUString : public ::std::unary_function<
     vector of pairs (for searching keys in maps you will of course use map::find)
  */
 template< typename First, typename Second >
-    class FirstOfPairEquals : public ::std::unary_function< ::std::pair< First, Second >, bool >
+    class FirstOfPairEquals
 {
 public:
     FirstOfPairEquals( const First & aVal )
@@ -165,7 +165,7 @@ private:
                     SecondOfPairEquals< string, int >( 42 ));
  */
 template< typename Key, typename Value >
-    class SecondOfPairEquals : public ::std::unary_function< ::std::pair< Key, Value >, bool >
+    class SecondOfPairEquals
 {
 public:
     SecondOfPairEquals( const Value & aVal )
@@ -190,17 +190,14 @@ template< class MapType >
     findValueInMap( const MapType & rMap, const typename MapType::mapped_type & rData )
 {
     return ::std::find_if( rMap.begin(), rMap.end(),
-                           ::std::compose1( ::std::bind2nd(
-                                                ::std::equal_to< typename MapType::mapped_type >(),
-                                                rData ),
-                                            ::std::select2nd< typename MapType::value_type >()));
+                           [rData](auto& _x) { return _x.second == rData; });
 }
 
 /** Functor that deletes the object behind the given pointer by calling the
     delete operator
  */
 template< typename T >
-    struct DeletePtr : public ::std::unary_function< T *, void >
+    struct DeletePtr 
 {
     void operator() ( T * pObj )
     { delete pObj; }

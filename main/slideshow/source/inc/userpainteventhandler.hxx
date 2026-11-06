@@ -24,7 +24,7 @@
 #ifndef INCLUDED_SLIDESHOW_USERPAINTEVENTHANDLER_HXX
 #define INCLUDED_SLIDESHOW_USERPAINTEVENTHANDLER_HXX
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 /* Definition of UserPaintEventHandler interface */
 
@@ -53,7 +53,7 @@ namespace slideshow
             virtual bool disable() = 0;
         };
 
-        typedef ::boost::shared_ptr< UserPaintEventHandler > UserPaintEventHandlerSharedPtr;
+        typedef ::std::shared_ptr< UserPaintEventHandler > UserPaintEventHandlerSharedPtr;
 
     }
 }

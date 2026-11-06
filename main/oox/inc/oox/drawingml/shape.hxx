@@ -31,7 +31,7 @@
 
 #include <com/sun/star/frame/XModel.hpp>
 #include <com/sun/star/drawing/XDrawPage.hpp>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <boost/enable_shared_from_this.hpp>
 #include <vector>
 #include <map>
@@ -43,7 +43,7 @@ namespace oox { namespace vml {
 namespace oox { namespace drawingml {
 
 class CustomShapeProperties;
-typedef boost::shared_ptr< CustomShapeProperties > CustomShapePropertiesPtr;
+typedef std::shared_ptr< CustomShapeProperties > CustomShapePropertiesPtr;
 
 typedef ::std::map< ::rtl::OUString, ShapePtr > ShapeIdMap;
 
@@ -69,7 +69,7 @@ struct ChartShapeInfo
 // ============================================================================
 
 class Shape
-    : public boost::enable_shared_from_this< Shape >
+    : public std::enable_shared_from_this< Shape >
 {
 public:
 
@@ -203,8 +203,8 @@ private:
         FRAMETYPE_TABLE             /// A table embedded in a shape.
     };
 
-    typedef ::boost::shared_ptr< ::oox::vml::OleObjectInfo >    OleObjectInfoRef;
-    typedef ::boost::shared_ptr< ChartShapeInfo >               ChartShapeInfoRef;
+    typedef ::std::shared_ptr< ::oox::vml::OleObjectInfo >    OleObjectInfoRef;
+    typedef ::std::shared_ptr< ChartShapeInfo >               ChartShapeInfoRef;
 
     FrameType           meFrameType;        /// Type for graphic frame shapes.
     OleObjectInfoRef    mxOleObjectInfo;    /// Additional data for OLE objects.

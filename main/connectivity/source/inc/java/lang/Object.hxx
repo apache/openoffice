@@ -32,7 +32,7 @@
 #include <jvmaccess/virtualmachine.hxx>
 #include <memory>
 #include <functional>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 //=====================================================================
 
@@ -52,7 +52,7 @@ namespace comphelper
 
 namespace connectivity
 {
-	typedef ::boost::shared_ptr< jvmaccess::VirtualMachine::AttachGuard> TGuard;
+	typedef ::std::shared_ptr< jvmaccess::VirtualMachine::AttachGuard> TGuard;
 	class SDBThreadAttach
 	{
 		jvmaccess::VirtualMachine::AttachGuard m_aGuard;

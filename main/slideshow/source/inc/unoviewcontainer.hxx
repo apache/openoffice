@@ -26,7 +26,7 @@
 
 #include <com/sun/star/uno/Reference.hxx>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <boost/utility.hpp>
 
 #include <vector>
@@ -98,7 +98,7 @@ namespace slideshow
             UnoViewVector	maViews;
         };
 
-        typedef ::boost::shared_ptr< UnoViewContainer > UnoViewContainerSharedPtr;
+        typedef ::std::shared_ptr< UnoViewContainer > UnoViewContainerSharedPtr;
 
     }
 }

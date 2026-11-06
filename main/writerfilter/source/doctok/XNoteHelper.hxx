@@ -71,7 +71,7 @@ class XNoteHelper
     CpAndFc getRefCpAndFc(sal_uInt32 nPos);
 
 public:
-    typedef boost::shared_ptr<XNoteHelper> Pointer_t;
+    typedef std::shared_ptr<XNoteHelper> Pointer_t;
 
     XNoteHelper(WW8StructBase::Pointer_t pCps,
                 typename PLCF<T>::Pointer_t pRefs,

@@ -27,6 +27,7 @@
 #include <undobj.hxx>
 
 #include <tools/mempool.hxx>
+#include <memory>
 
 
 class SwRedlineSaveDatas;
@@ -46,8 +47,8 @@ class SwUndoDelete
     String *pSttStr, *pEndStr;
     SwRedlineData* pRedlData;
     SwRedlineSaveDatas* pRedlSaveData;
-    ::boost::shared_ptr< ::sfx2::MetadatableUndo > m_pMetadataUndoStart;
-    ::boost::shared_ptr< ::sfx2::MetadatableUndo > m_pMetadataUndoEnd;
+    ::std::shared_ptr< ::sfx2::MetadatableUndo > m_pMetadataUndoStart;
+    ::std::shared_ptr< ::sfx2::MetadatableUndo > m_pMetadataUndoEnd;
 
     String sTableName;
 

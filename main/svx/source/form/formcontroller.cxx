@@ -26,8 +26,8 @@
 
 #include "fmcontrolbordermanager.hxx"
 #include "fmcontrollayout.hxx"
-#include "formcontroller.hxx"
 #include "formfeaturedispatcher.hxx"
+#include "formcontroller.hxx"
 #include "fmdocumentclassification.hxx"
 #include "formcontrolling.hxx"
 #include "fmprop.hrc"
@@ -103,7 +103,11 @@ using namespace ::connectivity::simple;
 ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL
     FormController_NewInstance_Impl( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > & _rxORB )
 {
-    return *( new ::svxform::FormController( _rxORB ) );
+    return ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >(
+        static_cast< ::com::sun::star::uno::XInterface* >(
+            static_cast< ::cppu::OWeakObject* >( new ::svxform::FormController( _rxORB ) )
+        )
+    );
 }
 
 namespace svxform
@@ -160,6 +164,8 @@ namespace svxform
     using ::com::sun::star::sdbc::XResultSet;
     using ::com::sun::star::awt::XControlModel;
     using ::com::sun::star::awt::XTabControllerModel;
+    using ::com::sun::star::awt::XMouseListener;
+    using ::com::sun::star::awt::XFocusListener;
     using ::com::sun::star::beans::PropertyChangeEvent;
     using ::com::sun::star::form::validation::XValidatableFormComponent;
     using ::com::sun::star::form::XLoadable;
@@ -174,10 +180,12 @@ namespace svxform
     using ::com::sun::star::awt::ItemEvent;
     using ::com::sun::star::util::XModifyListener;
     using ::com::sun::star::form::XReset;
+    using ::com::sun::star::form::XResetListener;
     using ::com::sun::star::frame::XDispatchProviderInterception;
     using ::com::sun::star::form::XGridControl;
     using ::com::sun::star::awt::XVclWindowPeer;
     using ::com::sun::star::form::validation::XValidator;
+    using ::com::sun::star::form::validation::XFormComponentValidityListener;
     using ::com::sun::star::awt::FocusEvent;
     using ::com::sun::star::sdb::SQLContext;
     using ::com::sun::star::container::XChild;
@@ -201,6 +209,14 @@ namespace svxform
     using ::com::sun::star::form::runtime::FormOperations;
     using ::com::sun::star::container::XContainer;
     using ::com::sun::star::sdbc::SQLWarning;
+    using ::com::sun::star::container::XContainerListener;
+    using ::com::sun::star::form::XLoadListener;
+    using ::com::sun::star::sdb::XSQLErrorListener;
+    using ::com::sun::star::form::XDatabaseParameterListener;
+    using ::com::sun::star::awt::XItemListener;
+    using ::com::sun::star::form::XGridControlListener;
+    using ::com::sun::star::sdbc::XRowSetListener;
+    using ::com::sun::star::sdb::XRowSetApproveListener;
     /** === end UNO using === **/
     namespace ColumnValue = ::com::sun::star::sdbc::ColumnValue;
     namespace PropertyAttribute = ::com::sun::star::beans::PropertyAttribute;
@@ -519,7 +535,7 @@ IMPL_LINK( FormController, OnActivateTabOrder, void*, /*EMPTYTAG*/ )
 }
 
 //------------------------------------------------------------------------------
-struct UpdateAllListeners : public ::std::unary_function< Reference< XDispatch >, bool >
+struct UpdateAllListeners
 {
     bool operator()( const Reference< XDispatch >& _rxDispatcher ) const
     {
@@ -758,7 +774,7 @@ Sequence< ::rtl::OUString> FormController::getSupportedServiceNames_Static(void)
 // -----------------------------------------------------------------------------
 namespace
 {
-    struct ResetComponentText : public ::std::unary_function< Reference< XTextComponent >, void >
+    struct ResetComponentText
     {
         void operator()( const Reference< XTextComponent >& _rxText )
         {
@@ -766,7 +782,7 @@ namespace
         }
     };
 
-    struct RemoveComponentTextListener : public ::std::unary_function< Reference< XTextComponent >, void >
+    struct RemoveComponentTextListener
     {
         RemoveComponentTextListener( const Reference< XTextListener >& _rxListener )
             :m_xListener( _rxListener )
@@ -837,7 +853,7 @@ void FormController::getFastPropertyValue( Any& rValue, sal_Int32 nHandle ) cons
         {
             ::rtl::OUStringBuffer aFilter;
 			OStaticDataAccessTools aStaticTools;
-            Reference<XConnection> xConnection(aStaticTools.getRowSetConnection(Reference< XRowSet>(m_xModelAsIndex, UNO_QUERY)));
+            Reference<XConnection> xConnection(aStaticTools.getRowSetConnection(Reference< ::com::sun::star::sdbc::XRowSet>(m_xModelAsIndex, UNO_QUERY)));
             if (xConnection.is())
             {
                 Reference< XDatabaseMetaData> xMetaData(xConnection->getMetaData());
@@ -1127,11 +1143,11 @@ sal_Bool SAL_CALL FormController::hasElements(void)
 //------------------------------------------------------------------------------
 Type SAL_CALL  FormController::getElementType(void)
 {
-    return ::getCppuType((const Reference< XFormController>*)0);
+    return ::getCppuType((const Reference< ::com::sun::star::form::runtime::XFormController>*)0);
 
 }
 
-// XEnumerationAccess
+// ::com::sun::star::container::XEnumerationAccess
 //------------------------------------------------------------------------------
 Reference< XEnumeration > SAL_CALL  FormController::createEnumeration(void)
 {
@@ -1209,7 +1225,7 @@ void FormController::disposing(void)
 
     // if we're still active, simulate a "deactivated" event
     if ( m_xActiveControl.is() )
-        m_aActivateListeners.notifyEach( &XFormControllerListener::formDeactivated, aEvt );
+        m_aActivateListeners.notifyEach( &::com::sun::star::form::XFormControllerListener::formDeactivated, aEvt );
 
     // notify all our listeners
     m_aActivateListeners.disposeAndClear(aEvt);
@@ -1305,7 +1321,7 @@ void SAL_CALL FormController::propertyChange(const PropertyChangeEvent& evt)
 				startControlModifyListening( xControl );
 				Reference<XPropertySet> xProp(xControlModel,UNO_QUERY);
 				if ( xProp.is() )
-					xProp->removePropertyChangeListener(FM_PROP_BOUNDFIELD, this);
+					xProp->removePropertyChangeListener(FM_PROP_BOUNDFIELD, Reference< XPropertyChangeListener >());
 			}
 		}
     }
@@ -1802,7 +1818,7 @@ void FormController::focusGained(const FocusEvent& e)
         return;
 
 	// Control erhaelt Focus, dann eventuell in den sichtbaren Bereich
-    Reference< XFormControllerContext > xContext( m_xContext );
+    Reference< ::com::sun::star::form::runtime::XFormControllerContext > xContext( m_xContext );
     Reference< XControl > xCurrentControl( m_xCurrentControl );
     aGuard.clear();
     // <-- SYNCHRONIZED
@@ -1816,7 +1832,7 @@ IMPL_LINK( FormController, OnActivated, void*, /**/ )
 {
     EventObject aEvent;
     aEvent.Source = *this;
-    m_aActivateListeners.notifyEach( &XFormControllerListener::formActivated, aEvent );
+    m_aActivateListeners.notifyEach( &::com::sun::star::form::XFormControllerListener::formActivated, aEvent );
 
     return 0L;
 }
@@ -1826,7 +1842,7 @@ IMPL_LINK( FormController, OnDeactivated, void*, /**/ )
 {
     EventObject aEvent;
     aEvent.Source = *this;
-    m_aActivateListeners.notifyEach( &XFormControllerListener::formDeactivated, aEvent );
+    m_aActivateListeners.notifyEach( &::com::sun::star::form::XFormControllerListener::formDeactivated, aEvent );
 
     return 0L;
 }
@@ -1906,15 +1922,15 @@ void FormController::setModel(const Reference< XTabControllerModel > & Model)
 
             Reference< XLoadable >  xForm(m_xModelAsIndex, UNO_QUERY);
             if (xForm.is())
-                xForm->removeLoadListener(this);
+                xForm->removeLoadListener( Reference< XLoadListener >() );
 
             Reference< XSQLErrorBroadcaster >  xBroadcaster(m_xModelAsIndex, UNO_QUERY);
             if (xBroadcaster.is())
-                xBroadcaster->removeSQLErrorListener(this);
+                xBroadcaster->removeSQLErrorListener( Reference< XSQLErrorListener >() );
 
             Reference< XDatabaseParameterBroadcaster >  xParamBroadcaster(m_xModelAsIndex, UNO_QUERY);
             if (xParamBroadcaster.is())
-                xParamBroadcaster->removeParameterListener(this);
+                xParamBroadcaster->removeParameterListener( Reference< XDatabaseParameterListener >() );
 
         }
 
@@ -1946,15 +1962,15 @@ void FormController::setModel(const Reference< XTabControllerModel > & Model)
             // adding load and ui interaction listeners
             Reference< XLoadable >  xForm(Model, UNO_QUERY);
             if (xForm.is())
-                xForm->addLoadListener(this);
+                xForm->addLoadListener( Reference< XLoadListener >() );
 
             Reference< XSQLErrorBroadcaster >  xBroadcaster(Model, UNO_QUERY);
             if (xBroadcaster.is())
-                xBroadcaster->addSQLErrorListener(this);
+                xBroadcaster->addSQLErrorListener( Reference< XSQLErrorListener >() );
 
             Reference< XDatabaseParameterBroadcaster >  xParamBroadcaster(Model, UNO_QUERY);
             if (xParamBroadcaster.is())
-                xParamBroadcaster->addParameterListener(this);
+                xParamBroadcaster->addParameterListener( Reference< XDatabaseParameterListener >() );
 
             // well, is the database already loaded?
             // then we have to simulate a load event
@@ -2080,13 +2096,13 @@ void FormController::setContainer(const Reference< XControlContainer > & xContai
         xCurrentContainer = Reference< XContainer > (m_xTabController->getContainer(), UNO_QUERY);
     if (xCurrentContainer.is())
     {
-        xCurrentContainer->removeContainerListener(this);
+        xCurrentContainer->removeContainerListener( Reference< XContainerListener >() );
 
         if ( m_aTabActivationTimer.IsActive() )
             m_aTabActivationTimer.Stop();
 
         // clear the filter map
-        ::std::for_each( m_aFilterComponents.begin(), m_aFilterComponents.end(), RemoveComponentTextListener( this ) );
+    ::std::for_each( m_aFilterComponents.begin(), m_aFilterComponents.end(), RemoveComponentTextListener( Reference< XTextListener >() ) );
         m_aFilterComponents.clear();
 
         // einsammeln der Controls
@@ -2135,7 +2151,7 @@ void FormController::setContainer(const Reference< XControlContainer > & xContai
         // am Container horchen
         Reference< XContainer >  xNewContainer(xContainer, UNO_QUERY);
         if (xNewContainer.is())
-            xNewContainer->addContainerListener(this);
+            xNewContainer->addContainerListener( Reference< XContainerListener >() );
 
         // Datenbank spezifische Dinge vornehmen
         if (m_bDBConnection)
@@ -2235,7 +2251,7 @@ void FormController::setControlLock(const Reference< XControl > & xControl)
     // b.) wenn das zugehoerige Feld gespeert ist
     Reference< XBoundControl >  xBound(xControl, UNO_QUERY);
     if (xBound.is() && (( (bLocked && bLocked != xBound->getLock()) ||
-                         !bLocked)))    // beim entlocken immer einzelne Felder ueberprüfen
+                         !bLocked)))    // beim entlocken immer einzelne Felder ueberprï¿½fen
     {
         // gibt es eine Datenquelle
         Reference< XPropertySet >  xSet(xControl->getModel(), UNO_QUERY);
@@ -2332,7 +2348,7 @@ void FormController::startControlModifyListening(const Reference< XControl > & x
         Reference< XModifyBroadcaster >  xMod(xControl, UNO_QUERY);
         if (xMod.is())
         {
-            xMod->addModifyListener(this);
+            xMod->addModifyListener( Reference< XModifyListener >() );
             break;
         }
 
@@ -2340,28 +2356,28 @@ void FormController::startControlModifyListening(const Reference< XControl > & x
         Reference< XTextComponent >  xText(xControl, UNO_QUERY);
         if (xText.is())
         {
-            xText->addTextListener(this);
+            xText->addTextListener( Reference< XTextListener >() );
             break;
         }
 
         Reference< XCheckBox >  xBox(xControl, UNO_QUERY);
         if (xBox.is())
         {
-            xBox->addItemListener(this);
+            xBox->addItemListener( Reference< XItemListener >() );
             break;
         }
 
         Reference< XComboBox >  xCbBox(xControl, UNO_QUERY);
         if (xCbBox.is())
         {
-            xCbBox->addItemListener(this);
+            xCbBox->addItemListener( Reference< XItemListener >() );
             break;
         }
 
         Reference< XListBox >  xListBox(xControl, UNO_QUERY);
         if (xListBox.is())
         {
-            xListBox->addItemListener(this);
+            xListBox->addItemListener( Reference< XItemListener >() );
             break;
         }
         break;
@@ -2381,35 +2397,35 @@ void FormController::stopControlModifyListening(const Reference< XControl > & xC
         Reference< XModifyBroadcaster >  xMod(xControl, UNO_QUERY);
         if (xMod.is())
         {
-            xMod->removeModifyListener(this);
+            xMod->removeModifyListener( Reference< XModifyListener >() );
             break;
         }
         // alle die Text um vorzeitig ein modified zu erkennen
         Reference< XTextComponent >  xText(xControl, UNO_QUERY);
         if (xText.is())
         {
-            xText->removeTextListener(this);
+            xText->removeTextListener( Reference< XTextListener >() );
             break;
         }
 
         Reference< XCheckBox >  xBox(xControl, UNO_QUERY);
         if (xBox.is())
         {
-            xBox->removeItemListener(this);
+            xBox->removeItemListener( Reference< XItemListener >() );
             break;
         }
 
         Reference< XComboBox >  xCbBox(xControl, UNO_QUERY);
         if (xCbBox.is())
         {
-            xCbBox->removeItemListener(this);
+            xCbBox->removeItemListener( Reference< XItemListener >() );
             break;
         }
 
         Reference< XListBox >  xListBox(xControl, UNO_QUERY);
         if (xListBox.is())
         {
-            xListBox->removeItemListener(this);
+            xListBox->removeItemListener( Reference< XItemListener >() );
             break;
         }
         break;
@@ -2476,8 +2492,8 @@ void FormController::implControlInserted( const Reference< XControl>& _rxControl
     Reference< XWindow > xWindow( _rxControl, UNO_QUERY );
     if ( xWindow.is() )
     {
-        xWindow->addFocusListener( this );
-        xWindow->addMouseListener( this );
+        xWindow->addFocusListener( Reference< XFocusListener >() );
+        xWindow->addMouseListener( Reference< XMouseListener >() );
 
         if ( _bAddToEventAttacher )
             addToEventAttacher( _rxControl );
@@ -2496,13 +2512,13 @@ void FormController::implControlInserted( const Reference< XControl>& _rxControl
         // (for correctly resetting m_bModified)
         Reference< XReset >  xReset( xModel, UNO_QUERY );
 		if ( xReset.is() )
-			xReset->addResetListener( this );
+			xReset->addResetListener( Reference< XResetListener >() );
 
         // and we want to know about the validity, to visually indicate it
         Reference< XValidatableFormComponent > xValidatable( xModel, UNO_QUERY );
         if ( xValidatable.is() )
         {
-            xValidatable->addFormComponentValidityListener( this );
+            xValidatable->addFormComponentValidityListener( Reference< XFormComponentValidityListener >() );
             m_pControlBorderManager->validityChanged( _rxControl, xValidatable );
         }
     }
@@ -2515,8 +2531,8 @@ void FormController::implControlRemoved( const Reference< XControl>& _rxControl,
 	Reference< XWindow > xWindow( _rxControl, UNO_QUERY );
 	if ( xWindow.is() )
 	{
-        xWindow->removeFocusListener( this );
-        xWindow->removeMouseListener( this );
+        xWindow->removeFocusListener( Reference< XFocusListener >() );
+        xWindow->removeMouseListener( Reference< XMouseListener >() );
 
         if ( _bRemoveFromEventAttacher )
 			removeFromEventAttacher( _rxControl );
@@ -2532,11 +2548,11 @@ void FormController::implControlRemoved( const Reference< XControl>& _rxControl,
 
         Reference< XReset >  xReset( xModel, UNO_QUERY );
 		if ( xReset.is() )
-			xReset->removeResetListener( this );
+			xReset->removeResetListener( Reference< XResetListener >() );
 
         Reference< XValidatableFormComponent > xValidatable( xModel, UNO_QUERY );
         if ( xValidatable.is() )
-            xValidatable->removeFormComponentValidityListener( this );
+            xValidatable->removeFormComponentValidityListener( Reference< XFormComponentValidityListener >() );
 	}
 }
 
@@ -2548,13 +2564,13 @@ void FormController::implSetCurrentControl( const Reference< XControl >& _rxCont
 
     Reference< XGridControl > xGridControl( m_xCurrentControl, UNO_QUERY );
     if ( xGridControl.is() )
-        xGridControl->removeGridControlListener( this );
+        xGridControl->removeGridControlListener( Reference< XGridControlListener >() );
 
     m_xCurrentControl = _rxControl;
 
     xGridControl.set( m_xCurrentControl, UNO_QUERY );
     if ( xGridControl.is() )
-        xGridControl->addGridControlListener( this );
+        xGridControl->addGridControlListener( Reference< XGridControlListener >() );
 }
 
 //------------------------------------------------------------------------------
@@ -2610,7 +2626,7 @@ void FormController::loaded(const EventObject& rEvent)
 
 	OSL_ENSURE( !impl_isDisposed_nofail(), "FormController: already disposed!" );
     ::osl::MutexGuard aGuard( m_aMutex );
-    Reference< XRowSet >  xForm(rEvent.Source, UNO_QUERY);
+    Reference< ::com::sun::star::sdbc::XRowSet >  xForm(rEvent.Source, UNO_QUERY);
     // do we have a connected data source
 	OStaticDataAccessTools aStaticTools;
     if (xForm.is() && aStaticTools.getRowSetConnection(xForm).is())
@@ -2665,10 +2681,7 @@ void FormController::updateAllDispatchers() const
     ::std::for_each(
         m_aFeatureDispatchers.begin(),
         m_aFeatureDispatchers.end(),
-        ::std::compose1(
-            UpdateAllListeners(),
-            ::std::select2nd< DispatcherContainer::value_type >()
-        )
+        [](auto& _x) { UpdateAllListeners()(_x.second); }
     );
 }
 
@@ -2767,7 +2780,7 @@ void FormController::removeBoundFieldListener()
     {
 		Reference< XPropertySet > xProp( *pControls++, UNO_QUERY );
 		if ( xProp.is() )
-			xProp->removePropertyChangeListener( FM_PROP_BOUNDFIELD, this );
+			xProp->removePropertyChangeListener( FM_PROP_BOUNDFIELD, Reference< XPropertyChangeListener >() );
 	}
 }
 
@@ -2778,26 +2791,26 @@ void FormController::startFormListening( const Reference< XPropertySet >& _rxFor
     {
         if ( m_bCanInsert || m_bCanUpdate )   // form can be modified
         {
-            _rxForm->addPropertyChangeListener( FM_PROP_ISNEW, this );
-            _rxForm->addPropertyChangeListener( FM_PROP_ISMODIFIED, this );
+            _rxForm->addPropertyChangeListener( FM_PROP_ISNEW, Reference< XPropertyChangeListener >() );
+            _rxForm->addPropertyChangeListener( FM_PROP_ISMODIFIED, Reference< XPropertyChangeListener >() );
 
 		    if ( !_bPropertiesOnly )
 		    {
 			    // set the Listener for UI interaction
-			    Reference< XRowSetApproveBroadcaster > xApprove( _rxForm, UNO_QUERY );
+			    Reference< ::com::sun::star::sdb::XRowSetApproveBroadcaster > xApprove( _rxForm, UNO_QUERY );
 			    if ( xApprove.is() )
-				    xApprove->addRowSetApproveListener( this );
+				    xApprove->addRowSetApproveListener( Reference< XRowSetApproveListener >() );
 
 			    // listener for row set changes
-			    Reference< XRowSet > xRowSet( _rxForm, UNO_QUERY );
+			    Reference< ::com::sun::star::sdbc::XRowSet > xRowSet( _rxForm, UNO_QUERY );
 			    if ( xRowSet.is() )
-				    xRowSet->addRowSetListener( this );
+				    xRowSet->addRowSetListener( Reference< XRowSetListener >() );
 		    }
         }
 
         Reference< XPropertySetInfo > xInfo = _rxForm->getPropertySetInfo();
         if ( xInfo.is() && xInfo->hasPropertyByName( FM_PROP_DYNAMIC_CONTROL_BORDER ) )
-            _rxForm->addPropertyChangeListener( FM_PROP_DYNAMIC_CONTROL_BORDER, this );
+            _rxForm->addPropertyChangeListener( FM_PROP_DYNAMIC_CONTROL_BORDER, Reference< XPropertyChangeListener >() );
     }
     catch( const Exception& )
     {
@@ -2812,24 +2825,24 @@ void FormController::stopFormListening( const Reference< XPropertySet >& _rxForm
     {
         if ( m_bCanInsert || m_bCanUpdate )
         {
-            _rxForm->removePropertyChangeListener( FM_PROP_ISNEW, this );
-            _rxForm->removePropertyChangeListener( FM_PROP_ISMODIFIED, this );
+            _rxForm->removePropertyChangeListener( FM_PROP_ISNEW, Reference< XPropertyChangeListener >() );
+            _rxForm->removePropertyChangeListener( FM_PROP_ISMODIFIED, Reference< XPropertyChangeListener >() );
 
 		    if ( !_bPropertiesOnly )
 		    {
-			    Reference< XRowSetApproveBroadcaster > xApprove( _rxForm, UNO_QUERY );
+			    Reference< ::com::sun::star::sdb::XRowSetApproveBroadcaster > xApprove( _rxForm, UNO_QUERY );
 			    if (xApprove.is())
-				    xApprove->removeRowSetApproveListener(this);
+				    xApprove->removeRowSetApproveListener( Reference< XRowSetApproveListener >() );
 
-			    Reference< XRowSet > xRowSet( _rxForm, UNO_QUERY );
+			    Reference< ::com::sun::star::sdbc::XRowSet > xRowSet( _rxForm, UNO_QUERY );
 			    if ( xRowSet.is() )
-				    xRowSet->removeRowSetListener( this );
+				    xRowSet->removeRowSetListener( Reference< XRowSetListener >() );
 		    }
         }
 
         Reference< XPropertySetInfo > xInfo = _rxForm->getPropertySetInfo();
         if ( xInfo.is() && xInfo->hasPropertyByName( FM_PROP_DYNAMIC_CONTROL_BORDER ) )
-            _rxForm->removePropertyChangeListener( FM_PROP_DYNAMIC_CONTROL_BORDER, this );
+            _rxForm->removePropertyChangeListener( FM_PROP_DYNAMIC_CONTROL_BORDER, Reference< XPropertyChangeListener >() );
     }
     catch( const Exception& )
     {
@@ -2837,7 +2850,7 @@ void FormController::stopFormListening( const Reference< XPropertySet >& _rxForm
     }
 }
 
-// com::sun::star::sdbc::XRowSetListener
+// com::sun::star::sdbc::::com::sun::star::sdbc::XRowSetListener
 //------------------------------------------------------------------------------
 void FormController::cursorMoved(const EventObject& /*event*/)
 {
@@ -2892,8 +2905,8 @@ void SAL_CALL FormController::elementInserted(const ContainerEvent& evt)
 
         m_aTabActivationTimer.Start();
     }
-    // are we in filtermode and a XModeSelector has inserted an element
-    else if (m_bFiltering && Reference< XModeSelector > (evt.Source, UNO_QUERY).is())
+    // are we in filtermode and a ::com::sun::star::util::XModeSelector has inserted an element
+    else if (m_bFiltering && Reference< ::com::sun::star::util::XModeSelector > (evt.Source, UNO_QUERY).is())
     {
         xModel = Reference< XFormComponent > (evt.Source, UNO_QUERY);
         if (xModel.is() && m_xModelAsIndex == xModel->getParent())
@@ -2911,7 +2924,7 @@ void SAL_CALL FormController::elementInserted(const ContainerEvent& evt)
                     ::comphelper::getBOOL(xField->getPropertyValue(FM_PROP_SEARCHABLE)))
                 {
                     m_aFilterComponents.push_back( xText );
-                    xText->addTextListener( this );
+                    xText->addTextListener( Reference< XTextListener >() );
                 }
             }
         }
@@ -2948,10 +2961,10 @@ void SAL_CALL FormController::elementRemoved(const ContainerEvent& evt)
     if (xModel.is() && m_xModelAsIndex == xModel->getParent())
     {
         removeControl(xControl);
-        // TabOrder nicht neu berechnen, da das intern schon funktionieren muß!
+        // TabOrder nicht neu berechnen, da das intern schon funktionieren muï¿½!
     }
-    // are we in filtermode and a XModeSelector has inserted an element
-    else if (m_bFiltering && Reference< XModeSelector > (evt.Source, UNO_QUERY).is())
+    // are we in filtermode and a ::com::sun::star::util::XModeSelector has inserted an element
+    else if (m_bFiltering && Reference< ::com::sun::star::util::XModeSelector > (evt.Source, UNO_QUERY).is())
     {
         FilterComponents::iterator componentPos = ::std::find(
             m_aFilterComponents.begin(), m_aFilterComponents.end(), xControl );
@@ -3001,7 +3014,7 @@ void FormController::activateLast()
         m_xTabController->activateLast();
 }
 
-// XFormController
+// ::com::sun::star::form::runtime::XFormController
 //------------------------------------------------------------------------------
 Reference< XFormOperations > SAL_CALL FormController::getFormOperations()
 {
@@ -3020,14 +3033,14 @@ Reference< XControl> SAL_CALL FormController::getCurrentControl(void)
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL FormController::addActivateListener(const Reference< XFormControllerListener > & l)
+void SAL_CALL FormController::addActivateListener(const Reference< ::com::sun::star::form::XFormControllerListener > & l)
 {
 	::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
 	m_aActivateListeners.addInterface(l);
 }
 //------------------------------------------------------------------------------
-void SAL_CALL FormController::removeActivateListener(const Reference< XFormControllerListener > & l)
+void SAL_CALL FormController::removeActivateListener(const Reference< ::com::sun::star::form::XFormControllerListener > & l)
 {
 	::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -3035,27 +3048,27 @@ void SAL_CALL FormController::removeActivateListener(const Reference< XFormContr
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL FormController::addChildController( const Reference< XFormController >& _ChildController )
+void SAL_CALL FormController::addChildController( const Reference< ::com::sun::star::form::runtime::XFormController >& _ChildController )
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
 
     if ( !_ChildController.is() )
-        throw IllegalArgumentException( ::rtl::OUString(), *this, 1 );
+        throw IllegalArgumentException( ::rtl::OUString(), Reference< XInterface >(), 1 );
         // TODO: (localized) error message
 
     // the parent of our (to-be-)child must be our own model
     Reference< XFormComponent > xFormOfChild( _ChildController->getModel(), UNO_QUERY );
     if ( !xFormOfChild.is() )
-        throw IllegalArgumentException( ::rtl::OUString(), *this, 1 );
+        throw IllegalArgumentException( ::rtl::OUString(), Reference< XInterface >(), 1 );
         // TODO: (localized) error message
 
     if ( xFormOfChild->getParent() != m_xModelAsIndex )
-        throw IllegalArgumentException( ::rtl::OUString(), *this, 1 );
+        throw IllegalArgumentException( ::rtl::OUString(), Reference< XInterface >(), 1 );
         // TODO: (localized) error message
 
     m_aChilds.push_back( _ChildController );
-    _ChildController->setParent( *this );
+    _ChildController->setParent( Reference< XInterface >() );
 
     // search the position of the model within the form
     sal_uInt32 nPos = m_xModelAsIndex->getCount();
@@ -3073,7 +3086,7 @@ void SAL_CALL FormController::addChildController( const Reference< XFormControll
 }
 
 //------------------------------------------------------------------------------
-Reference< XFormControllerContext > SAL_CALL FormController::getContext()
+Reference< ::com::sun::star::form::runtime::XFormControllerContext > SAL_CALL FormController::getContext()
 {
 	::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -3081,7 +3094,7 @@ Reference< XFormControllerContext > SAL_CALL FormController::getContext()
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL FormController::setContext( const Reference< XFormControllerContext >& _context )
+void SAL_CALL FormController::setContext( const Reference< ::com::sun::star::form::runtime::XFormControllerContext >& _context )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -3109,7 +3122,7 @@ void FormController::setFilter(::std::vector<FmFieldInfo>& rFieldInfos)
 {
 	OSL_ENSURE( !impl_isDisposed_nofail(), "FormController: already disposed!" );
 	// create the composer
-	Reference< XRowSet > xForm(m_xModelAsIndex, UNO_QUERY);
+	Reference< ::com::sun::star::sdbc::XRowSet > xForm(m_xModelAsIndex, UNO_QUERY);
 	Reference< XConnection > xConnection(OStaticDataAccessTools().getRowSetConnection(xForm));
 	if (xForm.is())
 	{
@@ -3283,7 +3296,7 @@ void FormController::startFiltering()
     OSL_ENSURE( !impl_isDisposed_nofail(), "FormController: already disposed!" );
 
 	OStaticDataAccessTools aStaticTools;
-    Reference< XConnection >  xConnection( aStaticTools.getRowSetConnection( Reference< XRowSet >( m_xModelAsIndex, UNO_QUERY ) ) );
+    Reference< XConnection >  xConnection( aStaticTools.getRowSetConnection( Reference< ::com::sun::star::sdbc::XRowSet >( m_xModelAsIndex, UNO_QUERY ) ) );
 	if ( !xConnection.is() )
 		// nothing to do - can't filter a form which is not connected
 		// 98023 - 19.03.2002 - fs@openoffice.org
@@ -3322,7 +3335,7 @@ void FormController::startFiltering()
             removeFromEventAttacher(xControl);
 
             // do we have a mode selector
-            Reference< XModeSelector >  xSelector(xControl, UNO_QUERY);
+            Reference< ::com::sun::star::util::XModeSelector >  xSelector(xControl, UNO_QUERY);
             if (xSelector.is())
             {
                 xSelector->setMode( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "FilterMode" ) ) );
@@ -3330,9 +3343,9 @@ void FormController::startFiltering()
                 // listening for new controls of the selector
                 Reference< XContainer >  xContainer(xSelector, UNO_QUERY);
                 if (xContainer.is())
-                    xContainer->addContainerListener(this);
+                    xContainer->addContainerListener( Reference< XContainerListener >() );
 
-                Reference< XEnumerationAccess >  xElementAccess(xSelector, UNO_QUERY);
+                Reference< ::com::sun::star::container::XEnumerationAccess >  xElementAccess(xSelector, UNO_QUERY);
                 if (xElementAccess.is())
                 {
                     Reference< XEnumeration >  xEnumeration(xElementAccess->createEnumeration());
@@ -3355,7 +3368,7 @@ void FormController::startFiltering()
                                     ::comphelper::getBOOL(xField->getPropertyValue(FM_PROP_SEARCHABLE)))
                                 {
                                     aFieldInfos.push_back(FmFieldInfo(xField, xText));
-                                    xText->addTextListener(this);
+                                    xText->addTextListener( Reference< XTextListener >() );
                                 }
                             }
                         }
@@ -3394,7 +3407,7 @@ void FormController::startFiltering()
                     {
                         Reference< XTextComponent > xFilterText( xFilterControl, UNO_QUERY );
                         aFieldInfos.push_back( FmFieldInfo( xField, xFilterText ) );
-                        xFilterText->addTextListener(this);
+                        xFilterText->addTextListener( Reference< XTextListener >() );
                     }
                 }
             }
@@ -3441,7 +3454,7 @@ void FormController::stopFiltering()
     sal_Int32 nControlCount = aControlsCopy.getLength();
 
     // clear the filter control map
-    ::std::for_each( m_aFilterComponents.begin(), m_aFilterComponents.end(), RemoveComponentTextListener( this ) );
+    ::std::for_each( m_aFilterComponents.begin(), m_aFilterComponents.end(), RemoveComponentTextListener( Reference< XTextListener >() ) );
     m_aFilterComponents.clear();
 
     for ( sal_Int32 i = nControlCount; i > 0; )
@@ -3452,7 +3465,7 @@ void FormController::stopFiltering()
             // now enable eventhandling again
             addToEventAttacher(xControl);
 
-            Reference< XModeSelector >  xSelector(xControl, UNO_QUERY);
+            Reference< ::com::sun::star::util::XModeSelector >  xSelector(xControl, UNO_QUERY);
             if (xSelector.is())
             {
                 xSelector->setMode( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "DataMode" ) ) );
@@ -3460,7 +3473,7 @@ void FormController::stopFiltering()
                 // listening for new controls of the selector
                 Reference< XContainer >  xContainer(xSelector, UNO_QUERY);
                 if (xContainer.is())
-                    xContainer->removeContainerListener(this);
+                    xContainer->removeContainerListener( Reference< XContainerListener >() );
                 continue;
             }
 
@@ -3505,7 +3518,7 @@ void FormController::stopFiltering()
         startListening();
 }
 
-// XModeSelector
+// ::com::sun::star::util::XModeSelector
 //------------------------------------------------------------------------------
 void FormController::setMode(const ::rtl::OUString& Mode)
 {
@@ -3528,7 +3541,7 @@ void FormController::setMode(const ::rtl::OUString& Mode)
     for (FmFormControllers::const_iterator i = m_aChilds.begin();
         i != m_aChilds.end(); ++i)
     {
-		Reference< XModeSelector > xMode(*i, UNO_QUERY);
+		Reference< ::com::sun::star::util::XModeSelector > xMode(*i, UNO_QUERY);
 		if ( xMode.is() )
 			xMode->setMode(Mode);
     }
@@ -3598,7 +3611,7 @@ bool FormController::checkFormComponentValidity( ::rtl::OUString& /* [out] */ _r
 {
     try
     {
-        Reference< XEnumerationAccess > xControlEnumAcc( getModel(), UNO_QUERY );
+        Reference< ::com::sun::star::container::XEnumerationAccess > xControlEnumAcc( getModel(), UNO_QUERY );
         Reference< XEnumeration > xControlEnumeration;
         if ( xControlEnumAcc.is() )
             xControlEnumeration = xControlEnumAcc->createEnumeration();
@@ -3723,7 +3736,7 @@ namespace
     }
 }
 
-// XRowSetApproveListener
+// ::com::sun::star::sdb::XRowSetApproveListener
 //------------------------------------------------------------------------------
 sal_Bool SAL_CALL FormController::approveRowChange(const RowChangeEvent& _rEvent)
 {
@@ -3735,8 +3748,8 @@ sal_Bool SAL_CALL FormController::approveRowChange(const RowChangeEvent& _rEvent
     if (aIter.hasMoreElements())
     {
         RowChangeEvent aEvt( _rEvent );
-        aEvt.Source = *this;
-        bValid = ((XRowSetApproveListener*)aIter.next())->approveRowChange(aEvt);
+        aEvt.Source = Reference< XInterface >();
+        bValid = ((::com::sun::star::sdb::XRowSetApproveListener*)aIter.next())->approveRowChange(aEvt);
     }
 
     if ( !bValid )
@@ -3822,8 +3835,8 @@ sal_Bool SAL_CALL FormController::approveCursorMove(const EventObject& event)
     if (aIter.hasMoreElements())
     {
         EventObject aEvt(event);
-        aEvt.Source = *this;
-        return ((XRowSetApproveListener*)aIter.next())->approveCursorMove(aEvt);
+        aEvt.Source = Reference< XInterface >();
+        return ((::com::sun::star::sdb::XRowSetApproveListener*)aIter.next())->approveCursorMove(aEvt);
     }
 
     return sal_True;
@@ -3839,16 +3852,16 @@ sal_Bool SAL_CALL FormController::approveRowSetChange(const EventObject& event)
     if (aIter.hasMoreElements())
     {
         EventObject aEvt(event);
-        aEvt.Source = *this;
-        return ((XRowSetApproveListener*)aIter.next())->approveRowSetChange(aEvt);
+        aEvt.Source = Reference< XInterface >();
+        return ((::com::sun::star::sdb::XRowSetApproveListener*)aIter.next())->approveRowSetChange(aEvt);
     }
 
     return sal_True;
 }
 
-// XRowSetApproveBroadcaster
+// ::com::sun::star::sdb::XRowSetApproveBroadcaster
 //------------------------------------------------------------------------------
-void SAL_CALL FormController::addRowSetApproveListener(const Reference< XRowSetApproveListener > & _rxListener)
+void SAL_CALL FormController::addRowSetApproveListener(const Reference< ::com::sun::star::sdb::XRowSetApproveListener > & _rxListener)
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -3857,7 +3870,7 @@ void SAL_CALL FormController::addRowSetApproveListener(const Reference< XRowSetA
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL FormController::removeRowSetApproveListener(const Reference< XRowSetApproveListener > & _rxListener)
+void SAL_CALL FormController::removeRowSetApproveListener(const Reference< ::com::sun::star::sdb::XRowSetApproveListener > & _rxListener)
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -3876,8 +3889,8 @@ void SAL_CALL FormController::errorOccured(const SQLErrorEvent& aEvent)
     if (aIter.hasMoreElements())
     {
         SQLErrorEvent aEvt(aEvent);
-        aEvt.Source = *this;
-        ((XSQLErrorListener*)aIter.next())->errorOccured(aEvt);
+        aEvt.Source = Reference< XInterface >();
+        ((::com::sun::star::sdb::XSQLErrorListener*)aIter.next())->errorOccured(aEvt);
     }
     else
     {
@@ -3888,7 +3901,7 @@ void SAL_CALL FormController::errorOccured(const SQLErrorEvent& aEvent)
 
 // XErrorBroadcaster
 //------------------------------------------------------------------------------
-void SAL_CALL FormController::addSQLErrorListener(const Reference< XSQLErrorListener > & aListener)
+void SAL_CALL FormController::addSQLErrorListener(const Reference< ::com::sun::star::sdb::XSQLErrorListener > & aListener)
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -3897,7 +3910,7 @@ void SAL_CALL FormController::addSQLErrorListener(const Reference< XSQLErrorList
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL FormController::removeSQLErrorListener(const Reference< XSQLErrorListener > & aListener)
+void SAL_CALL FormController::removeSQLErrorListener(const Reference< ::com::sun::star::sdb::XSQLErrorListener > & aListener)
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -3907,7 +3920,7 @@ void SAL_CALL FormController::removeSQLErrorListener(const Reference< XSQLErrorL
 
 // XDatabaseParameterBroadcaster2
 //------------------------------------------------------------------------------
-void SAL_CALL FormController::addDatabaseParameterListener(const Reference< XDatabaseParameterListener > & aListener)
+void SAL_CALL FormController::addDatabaseParameterListener(const Reference< ::com::sun::star::form::XDatabaseParameterListener > & aListener)
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -3916,7 +3929,7 @@ void SAL_CALL FormController::addDatabaseParameterListener(const Reference< XDat
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL FormController::removeDatabaseParameterListener(const Reference< XDatabaseParameterListener > & aListener)
+void SAL_CALL FormController::removeDatabaseParameterListener(const Reference< ::com::sun::star::form::XDatabaseParameterListener > & aListener)
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -3926,18 +3939,18 @@ void SAL_CALL FormController::removeDatabaseParameterListener(const Reference< X
 
 // XDatabaseParameterBroadcaster
 //------------------------------------------------------------------------------
-void SAL_CALL FormController::addParameterListener(const Reference< XDatabaseParameterListener > & aListener)
+void SAL_CALL FormController::addParameterListener(const Reference< ::com::sun::star::form::XDatabaseParameterListener > & aListener)
 {
     FormController::addDatabaseParameterListener( aListener );
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL FormController::removeParameterListener(const Reference< XDatabaseParameterListener > & aListener)
+void SAL_CALL FormController::removeParameterListener(const Reference< ::com::sun::star::form::XDatabaseParameterListener > & aListener)
 {
     FormController::removeDatabaseParameterListener( aListener );
 }
 
-// XDatabaseParameterListener
+// ::com::sun::star::form::XDatabaseParameterListener
 //------------------------------------------------------------------------------
 sal_Bool SAL_CALL FormController::approveParameter(const DatabaseParameterEvent& aEvent)
 {
@@ -3949,8 +3962,8 @@ sal_Bool SAL_CALL FormController::approveParameter(const DatabaseParameterEvent&
     if (aIter.hasMoreElements())
     {
         DatabaseParameterEvent aEvt(aEvent);
-        aEvt.Source = *this;
-        return ((XDatabaseParameterListener*)aIter.next())->approveParameter(aEvt);
+        aEvt.Source = Reference< XInterface >();
+        return ((::com::sun::star::form::XDatabaseParameterListener*)aIter.next())->approveParameter(aEvt);
     }
     else
     {
@@ -3966,7 +3979,7 @@ sal_Bool SAL_CALL FormController::approveParameter(const DatabaseParameterEvent&
             // the request
             ParametersRequest aRequest;
             aRequest.Parameters = aEvent.Parameters;
-            aRequest.Connection = OStaticDataAccessTools().getRowSetConnection(Reference< XRowSet >(aEvent.Source, UNO_QUERY));
+            aRequest.Connection = OStaticDataAccessTools().getRowSetConnection(Reference< ::com::sun::star::sdbc::XRowSet >(aEvent.Source, UNO_QUERY));
             OInteractionRequest* pParamRequest = new OInteractionRequest(makeAny(aRequest));
             Reference< XInteractionRequest > xParamRequest(pParamRequest);
             // some knittings
@@ -4017,7 +4030,7 @@ sal_Bool SAL_CALL FormController::approveParameter(const DatabaseParameterEvent&
 
 // XConfirmDeleteBroadcaster
 //------------------------------------------------------------------------------
-void SAL_CALL FormController::addConfirmDeleteListener(const Reference< XConfirmDeleteListener > & aListener)
+void SAL_CALL FormController::addConfirmDeleteListener(const Reference< ::com::sun::star::form::XConfirmDeleteListener > & aListener)
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -4026,7 +4039,7 @@ void SAL_CALL FormController::addConfirmDeleteListener(const Reference< XConfirm
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL FormController::removeConfirmDeleteListener(const Reference< XConfirmDeleteListener > & aListener)
+void SAL_CALL FormController::removeConfirmDeleteListener(const Reference< ::com::sun::star::form::XConfirmDeleteListener > & aListener)
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -4045,8 +4058,8 @@ sal_Bool SAL_CALL FormController::confirmDelete(const RowChangeEvent& aEvent)
     if (aIter.hasMoreElements())
     {
         RowChangeEvent aEvt(aEvent);
-        aEvt.Source = *this;
-        return ((XConfirmDeleteListener*)aIter.next())->confirmDelete(aEvt);
+        aEvt.Source = Reference< XInterface >();
+        return ((::com::sun::star::form::XConfirmDeleteListener*)aIter.next())->confirmDelete(aEvt);
     }
     // default handling: instantiate an interaction handler and let it handle the request
 
@@ -4117,11 +4130,11 @@ void SAL_CALL FormController::invalidateAllFeatures(  )
     ::osl::ClearableMutexGuard aGuard( m_aMutex );
 
     Sequence< sal_Int16 > aInterceptedFeatures( m_aFeatureDispatchers.size() );
-    ::std::transform(
+        ::std::transform(
         m_aFeatureDispatchers.begin(),
         m_aFeatureDispatchers.end(),
         aInterceptedFeatures.getArray(),
-        ::std::select1st< DispatcherContainer::value_type >()
+        []( const auto& rPair ) { return rPair.first; }
     );
 
     aGuard.clear();
@@ -4142,7 +4155,7 @@ FormController::interceptedQueryDispatch( const URL& aURL,
             &&  ensureInteractionHandler()
             )
         )
-		xReturn = static_cast< XDispatch* >( this );
+		xReturn = Reference< XDispatch >();
 
     // dispatches of FormSlot-URLs we have to translate
     if ( !xReturn.is() && m_xFormOperations.is() )
@@ -4153,11 +4166,11 @@ FormController::interceptedQueryDispatch( const URL& aURL,
         if ( nFormFeature > 0 )
         {
             // get the dispatcher for this feature, create if necessary
-            DispatcherContainer::const_iterator aDispatcherPos = m_aFeatureDispatchers.find( nFormFeature );
+            FormController::DispatcherContainer::const_iterator aDispatcherPos = m_aFeatureDispatchers.find( nFormFeature );
             if ( aDispatcherPos == m_aFeatureDispatchers.end() )
             {
                 aDispatcherPos = m_aFeatureDispatchers.insert(
-                    DispatcherContainer::value_type( nFormFeature, new ::svx::OSingleFeatureDispatcher( aURL, nFormFeature, m_xFormOperations, m_aMutex ) )
+                    FormController::DispatcherContainer::value_type( nFormFeature, new ::svx::OSingleFeatureDispatcher( aURL, nFormFeature, m_xFormOperations, m_aMutex ) )
                 ).first;
             }
 

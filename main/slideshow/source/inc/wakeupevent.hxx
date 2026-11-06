@@ -30,6 +30,7 @@
 
 #include <boost/bind.hpp>
 #include <boost/noncopyable.hpp>
+#include <memory>
 
 namespace slideshow {
 namespace internal {
@@ -46,7 +47,7 @@ class WakeupEvent : public Event,
 {
 public:
     WakeupEvent(
-        ::boost::shared_ptr< ::canvas::tools::ElapsedTime > const& pTimeBase,
+        ::std::shared_ptr< ::canvas::tools::ElapsedTime > const& pTimeBase,
         ActivitiesQueue & rActivityQueue );
 
     virtual void dispose();
@@ -81,7 +82,7 @@ private:
     ActivitiesQueue&                mrActivityQueue;
 };
 
-typedef ::boost::shared_ptr< WakeupEvent > WakeupEventSharedPtr;
+typedef ::std::shared_ptr< WakeupEvent > WakeupEventSharedPtr;
 
 } // namespace internal
 } // namespace presentation

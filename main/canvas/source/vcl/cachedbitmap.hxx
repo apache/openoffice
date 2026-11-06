@@ -28,14 +28,14 @@
 
 #include <svtools/grfmgr.hxx>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 
 /* Definition of CachedBitmap class */
 
 namespace vclcanvas
 {
-    typedef ::boost::shared_ptr< GraphicObject > GraphicObjectSharedPtr;
+    typedef ::std::shared_ptr< GraphicObject > GraphicObjectSharedPtr;
 
     class CachedBitmap : public ::canvas::CachedPrimitiveBase
     {

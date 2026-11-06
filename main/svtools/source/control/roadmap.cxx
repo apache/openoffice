@@ -952,11 +952,11 @@ namespace svt
 	RoadmapItem::~RoadmapItem( )
 	{
         {
-            ::std::auto_ptr<Control> aTemp(mpID);
+            ::std::unique_ptr<Control> aTemp(mpID);
 		    mpID = NULL;
         }
         {
-            ::std::auto_ptr<Control> aTemp(mpDescription);
+            ::std::unique_ptr<Control> aTemp(mpDescription);
 		    mpDescription = NULL;
         }
 	}

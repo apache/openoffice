@@ -653,7 +653,7 @@ private:
     std::map< sal_Int32, sal_Int32 >	m_aRadioGroupWidgets;
     /* used to store control id during beginControlAppearance/endControlAppearance */
     sal_Int32							m_nCurrentControl;
-    /* unordered_map for field names, used to ensure unique field names */
+    /* std::unordered_map for field names, used to ensure unique field names */
     std::unordered_map< rtl::OString, sal_Int32, rtl::OStringHash > m_aFieldNameMap;
 
     /* contains Bitmaps for gradient functions until they are written

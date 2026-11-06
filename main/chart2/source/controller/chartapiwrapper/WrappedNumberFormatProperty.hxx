@@ -26,7 +26,7 @@
 #include "WrappedDirectStateProperty.hxx"
 #include "Chart2ModelContact.hxx"
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 //.............................................................................
 namespace chart
@@ -40,7 +40,7 @@ class WrappedLinkNumberFormatProperty;
 class WrappedNumberFormatProperty : public WrappedDirectStateProperty
 {
 public:
-    WrappedNumberFormatProperty( ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact );
+    WrappedNumberFormatProperty( ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact );
     virtual ~WrappedNumberFormatProperty();
 
     virtual void setPropertyValue( const ::com::sun::star::uno::Any& rOuterValue, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& xInnerPropertySet ) const;
@@ -51,7 +51,7 @@ public:
 
     friend class WrappedLinkNumberFormatProperty;
 private:
-    ::boost::shared_ptr< Chart2ModelContact >   m_spChart2ModelContact;
+    ::std::shared_ptr< Chart2ModelContact >   m_spChart2ModelContact;
     mutable ::com::sun::star::uno::Any m_aOuterValue;
     WrappedLinkNumberFormatProperty* m_pWrappedLinkNumberFormatProperty;
 };

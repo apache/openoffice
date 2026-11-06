@@ -224,7 +224,7 @@ inline void LRU_Cache< t_Key, t_Val, t_KeyHash, t_KeyEqual >::clear()
 }
 
 //==================================================================================================
-struct FctHashOUString : public ::std::unary_function< const ::rtl::OUString &, size_t >
+struct FctHashOUString 
 {
 	size_t operator()( const ::rtl::OUString & rKey ) const
 		{ return rKey.hashCode(); }

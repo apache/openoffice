@@ -25,7 +25,7 @@
 #include "precompiled_comphelper.hxx"
 
 #include <comphelper/uieventslogger.hxx>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <com/sun/star/frame/XDesktop.hpp>
 #include <com/sun/star/frame/XTerminateListener.hpp>
 #include <com/sun/star/lang/XEventListener.hpp>

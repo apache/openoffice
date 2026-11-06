@@ -38,6 +38,7 @@
 #include "stlpool.hxx"
 #include <svx/xfillit0.hxx>
 #include <tools/diagnose_ex.h>
+#include <memory>
 
 using namespace ::com::sun::star;
 
@@ -302,7 +303,7 @@ void DocumentHelper::ProvideStyles (
 void DocumentHelper::AssignMasterPageToPageList (
     SdDrawDocument& rTargetDocument,
     SdPage* pMasterPage,
-    const ::boost::shared_ptr<std::vector<SdPage*> >& rpPageList)
+    const ::std::shared_ptr<std::vector<SdPage*> >& rpPageList)
 {
     do
     {
@@ -494,7 +495,7 @@ void DocumentHelper::AssignMasterPageToPage (
 SdPage* DocumentHelper::ProvideMasterPage (
     SdDrawDocument& rTargetDocument,
     SdPage* pMasterPage,
-    const ::boost::shared_ptr<std::vector<SdPage*> >& rpPageList)
+    const ::std::shared_ptr<std::vector<SdPage*> >& rpPageList)
 {
     // Make sure that both the master page and its notes master exist
     // in the source document.  If one is missing then return without

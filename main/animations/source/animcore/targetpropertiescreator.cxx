@@ -136,7 +136,7 @@ namespace animcore
              */
             sal_Int16							mnParagraphIndex;
 
-            /// Comparison needed for unordered_map
+            /// Comparison needed for std::unordered_map
             bool operator==( const ShapeHashKey& rRHS ) const
             {
                 return mxRef == rRHS.mxRef && mnParagraphIndex == rRHS.mnParagraphIndex;

@@ -118,7 +118,7 @@ Any SAL_CALL ODriverEnumeration::nextElement(  )
 	//--- 24.08.01 11:27:59 -----------------------------------------------
 
 	/// an STL functor which ensures that a SdbcDriver described by a DriverAccess is loaded
-	struct EnsureDriver : public ::std::unary_function< DriverAccess, DriverAccess >
+	struct EnsureDriver 
 	{
         EnsureDriver( const Reference< XComponentContext > &rxContext )
             : mxContext( rxContext ) {}
@@ -142,7 +142,7 @@ Any SAL_CALL ODriverEnumeration::nextElement(  )
 	//--- 24.08.01 11:28:04 -----------------------------------------------
 
 	/// an STL functor which extracts a SdbcDriver from a DriverAccess
-	struct ExtractDriverFromAccess : public ::std::unary_function< DriverAccess, SdbcDriver >
+	struct ExtractDriverFromAccess 
 	{
 		SdbcDriver operator()( const DriverAccess& _rAccess ) const
 		{
@@ -153,18 +153,25 @@ Any SAL_CALL ODriverEnumeration::nextElement(  )
 	//---------------------------------------------------------------------
 	//--- 24.08.01 12:37:50 -----------------------------------------------
 
-	typedef ::std::unary_compose< ExtractDriverFromAccess, EnsureDriver > ExtractAfterLoad_BASE;
 	/// an STL functor which loads a driver described by a DriverAccess, and extracts the SdbcDriver
-	struct ExtractAfterLoad : public ExtractAfterLoad_BASE
+	struct ExtractAfterLoad
 	{
         ExtractAfterLoad( const Reference< XComponentContext > &rxContext )
-            : ExtractAfterLoad_BASE( ExtractDriverFromAccess(), EnsureDriver( rxContext ) ) {}
+            : mxContext( rxContext ) {}
+
+        SdbcDriver operator()( const DriverAccess& _rAccess ) const
+        {
+            return ExtractDriverFromAccess()( EnsureDriver( mxContext )( _rAccess ) );
+        }
+
+    private:
+        Reference< XComponentContext > mxContext;
 	};
 
 	//---------------------------------------------------------------------
 	//--- 24.08.01 11:42:36 -----------------------------------------------
 
-	struct ExtractDriverFromCollectionElement : public ::std::unary_function< DriverCollection::value_type, SdbcDriver >
+	struct ExtractDriverFromCollectionElement 
 	{
 		SdbcDriver operator()( const DriverCollection::value_type& _rElement ) const
 		{
@@ -176,7 +183,7 @@ Any SAL_CALL ODriverEnumeration::nextElement(  )
 	//--- 24.08.01 11:51:03 -----------------------------------------------
 
 	// predicate for checking whether or not a driver accepts a given URL
-	class AcceptsURL : public ::std::unary_function< SdbcDriver, bool >
+	class AcceptsURL 
 	{
 	protected:
 		const ::rtl::OUString& m_rURL;
@@ -253,7 +260,7 @@ Any SAL_CALL ODriverEnumeration::nextElement(  )
 	//--- 24.08.01 13:01:56 -----------------------------------------------
 
 	/// an STL argorithm compatible predicate comparing two DriverAccess instances by their implementation names
-	struct CompareDriverAccessByName : public ::std::binary_function< DriverAccess, DriverAccess, bool >
+	struct CompareDriverAccessByName 
 	{
 		//.................................................................
 		bool operator()( const DriverAccess& lhs, const DriverAccess& rhs )
@@ -266,7 +273,7 @@ Any SAL_CALL ODriverEnumeration::nextElement(  )
 	//--- 24.08.01 13:08:17 -----------------------------------------------
 
 	/// and STL argorithm compatible predicate comparing a DriverAccess' impl name to a string
-	struct CompareDriverAccessToName : public ::std::binary_function< DriverAccess, ::rtl::OUString, bool >
+	struct CompareDriverAccessToName 
 	{
 		//.................................................................
 		bool operator()( const DriverAccess& lhs, const ::rtl::OUString& rhs )
@@ -281,7 +288,7 @@ Any SAL_CALL ODriverEnumeration::nextElement(  )
 	};
 
     /// and STL argorithm compatible predicate comparing a DriverAccess' impl name to a string
-	struct EqualDriverAccessToName : public ::std::binary_function< DriverAccess, ::rtl::OUString, bool >
+	struct EqualDriverAccessToName 
 	{
         ::rtl::OUString m_sImplName;
         EqualDriverAccessToName(const ::rtl::OUString& _sImplName) : m_sImplName(_sImplName){}
@@ -711,8 +718,10 @@ Reference< XDriver > OSDBCDriverManager::implGetDriverForURL(const ::rtl::OUStri
 		    aFind = ::std::find_if(
 			    m_aDriversBS.begin(),		// begin of search range
 			    m_aDriversBS.end(),			// end of search range
-			    std::unary_compose< AcceptsURL, ExtractAfterLoad >( AcceptsURL( _rURL ), ExtractAfterLoad( m_aContext.getUNOContext() ) )
-										    // compose two functors: extract the driver from the access, then ask the resulting driver for acceptance
+			    [this, &_rURL]( const DriverAccess& _rAccess )
+			    {
+			        return ExtractAfterLoad( m_aContext.getUNOContext() )( _rAccess )->acceptsURL( _rURL );
+			    }
 		    );
         } // if ( m_aDriversBS.find(sDriverFactoryName ) == m_aDriversBS.end() )
         else
@@ -732,8 +741,10 @@ Reference< XDriver > OSDBCDriverManager::implGetDriverForURL(const ::rtl::OUStri
 		DriverCollectionIterator aPos = ::std::find_if(
 			m_aDriversRT.begin(),		// begin of search range
 			m_aDriversRT.end(),			// end of search range
-			std::unary_compose< AcceptsURL, ExtractDriverFromCollectionElement >( AcceptsURL( _rURL ), ExtractDriverFromCollectionElement() )
-										// compose two functors: extract the driver from the access, then ask the resulting driver for acceptance
+			[&_rURL]( const DriverCollection::value_type& _rElement )
+			{
+				return ExtractDriverFromCollectionElement()( _rElement )->acceptsURL( _rURL );
+			}
 		);
 
 		if ( m_aDriversRT.end() != aPos )

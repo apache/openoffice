@@ -30,6 +30,7 @@
 # include <tools/postwin.h>
 #endif
 
+#include <memory>
 #include "cairo_cairo.hxx"
 
 namespace cairo {
@@ -51,7 +52,7 @@ namespace cairo {
 		virtual CairoSurfaceSharedPtr getCairoSurface() const { return mpSurface; }
 		virtual SurfaceSharedPtr getSimilar( Content aContent, int width, int height ) const;
 
-        virtual boost::shared_ptr<VirtualDevice> createVirtualDevice() const;
+        virtual std::shared_ptr<VirtualDevice> createVirtualDevice() const;
 
 		virtual void Resize( int width, int height );
 

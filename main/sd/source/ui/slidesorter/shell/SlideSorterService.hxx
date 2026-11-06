@@ -36,7 +36,7 @@
 #include <cppuhelper/compbase3.hxx>
 #include <cppuhelper/propshlp.hxx>
 #include <boost/noncopyable.hpp>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <boost/scoped_ptr.hpp>
 
 namespace css = ::com::sun::star;
@@ -158,7 +158,7 @@ public:
     virtual void SAL_CALL setIsShowFocus (sal_Bool bIsShowFocus);
 
 private:
-    ::boost::shared_ptr<SlideSorter> mpSlideSorter;
+    ::std::shared_ptr<SlideSorter> mpSlideSorter;
     css::uno::Reference<css::drawing::framework::XResourceId> mxViewId;
     css::uno::Reference<css::awt::XWindow> mxParentWindow;
     ::boost::scoped_ptr<cppu::IPropertyArrayHelper> mpPropertyArrayHelper;

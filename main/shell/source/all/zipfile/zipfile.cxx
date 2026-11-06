@@ -42,7 +42,7 @@
 namespace internal
 {
     /* for case in-sensitive string comparison */
-    struct stricmp : public std::unary_function<std::string, bool>
+    struct stricmp 
     {
         stricmp(const std::string& str) : str_(str)
         {}

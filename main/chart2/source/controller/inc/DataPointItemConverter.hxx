@@ -62,8 +62,8 @@ public:
             ::com::sun::star::lang::XMultiServiceFactory > & xNamedPropertyContainerFactory,
         GraphicPropertyItemConverter::eGraphicObjectType eMapTo =
             GraphicPropertyItemConverter::FILLED_DATA_POINT,
-        ::std::auto_ptr< ::com::sun::star::awt::Size > pRefSize =
-            ::std::auto_ptr< ::com::sun::star::awt::Size >(),
+        ::std::unique_ptr< ::com::sun::star::awt::Size > pRefSize =
+            ::std::unique_ptr< ::com::sun::star::awt::Size >(),
         bool bDataSeries = false,
         bool bUseSpecialFillColor = false,
         sal_Int32 nSpecialFillColor = 0,

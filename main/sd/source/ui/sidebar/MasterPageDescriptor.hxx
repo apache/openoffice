@@ -23,7 +23,7 @@
 #define SD_SIDEBAR_PANELS_MASTER_PAGE_DESCRIPTOR_HXX
 
 #include "MasterPageContainer.hxx"
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 namespace sd { namespace sidebar {
 
@@ -31,7 +31,7 @@ class PageObjectProvider;
 class PreviewProvider;
 
 class MasterPageDescriptor;
-typedef ::boost::shared_ptr<MasterPageDescriptor> SharedMasterPageDescriptor;
+typedef ::std::shared_ptr<MasterPageDescriptor> SharedMasterPageDescriptor;
 
 /** A collection of data that is stored for every master page in the
     MasterpageContainer.
@@ -46,8 +46,8 @@ public:
         const String& rPageName,
         const String& rStyleName,
         const bool bIsPrecious,
-        const ::boost::shared_ptr<PageObjectProvider>& rpPageObjectProvider,
-        const ::boost::shared_ptr<PreviewProvider>& rpPreviewProvider);
+        const ::std::shared_ptr<PageObjectProvider>& rpPageObjectProvider,
+        const ::std::shared_ptr<PreviewProvider>& rpPreviewProvider);
     MasterPageDescriptor (const MasterPageDescriptor& rDescriptor);
     ~MasterPageDescriptor (void);
 
@@ -61,7 +61,7 @@ public:
             Returns a list of event types for which event notifications have
             to be sent to listeners.  The list may be empty or NULL.
     */
-    ::std::auto_ptr<std::vector<MasterPageContainerChangeEvent::EventType> >
+    ::std::unique_ptr<std::vector<MasterPageContainerChangeEvent::EventType> >
         Update (
             const MasterPageDescriptor& rDescriptor);
 
@@ -186,12 +186,12 @@ public:
     /** The prewview provider. May be empty.  May be replaced during the
         lifetime of a MasterPageDescriptor object.
     */
-    ::boost::shared_ptr<PreviewProvider> mpPreviewProvider;
+    ::std::shared_ptr<PreviewProvider> mpPreviewProvider;
 
     /** The master page provider.  May be empty.  May be replaced during
         the lifetime of a MasterPageDescriptor object.
     */
-    ::boost::shared_ptr<PageObjectProvider> mpPageObjectProvider;
+    ::std::shared_ptr<PageObjectProvider> mpPageObjectProvider;
 
     /** This index represents the order in which templates are provided via
         the TemplateScanner.  It defines the order in which the entries in

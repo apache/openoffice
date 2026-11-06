@@ -51,6 +51,7 @@
 #include <boost/scoped_ptr.hpp>
 #include <boost/function.hpp>
 #include <boost/noncopyable.hpp>
+#include <memory>
 
 namespace css = ::com::sun::star;
 
@@ -166,7 +167,7 @@ private:
     css::uno::Reference<css::uno::XComponentContext> mxComponentContext;
 
     class ElementContainerPart;
-    typedef ::boost::shared_ptr<ElementContainerPart> SharedElementContainerPart;
+    typedef ::std::shared_ptr<ElementContainerPart> SharedElementContainerPart;
     typedef ::std::vector<SharedElementContainerPart> ElementContainer;
     ElementContainer maElementContainer;
     SharedElementContainerPart mpCurrentContainerPart;

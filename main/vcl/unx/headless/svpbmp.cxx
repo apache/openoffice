@@ -30,6 +30,7 @@
 
 #include <vcl/salbtype.hxx>
 #include <vcl/bitmap.hxx>
+#include <memory>
 
 using namespace basebmp;
 using namespace basegfx;
@@ -288,7 +289,7 @@ void SvpSalBitmap::ReleaseBuffer( BitmapBuffer* pBuffer, bool bReadOnly )
         {
             sal_uInt32 nEntries = 1U << nBitCount;
 
-            boost::shared_ptr< std::vector<basebmp::Color> > pPal(
+            std::shared_ptr< std::vector<basebmp::Color> > pPal(
                 new std::vector<basebmp::Color>( nEntries,
                                                  basebmp::Color(COL_WHITE)));
             const sal_uInt32 nColors = std::min(

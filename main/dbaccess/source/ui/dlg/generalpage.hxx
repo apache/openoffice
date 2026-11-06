@@ -78,12 +78,12 @@ namespace dbaui
         RadioButton         m_aRB_OpenDocument;
         RadioButton         m_aRB_GetExistingDatabase;
         FixedText           m_aFT_DocListLabel;
-        ::std::auto_ptr< OpenDocumentListBox >
+        ::std::unique_ptr< OpenDocumentListBox >
                             m_pLB_DocumentList;
         OpenDocumentButton  m_aPB_OpenDocument;
 		FixedText			m_aTypePreLabel;
 		FixedText			m_aDatasourceTypeLabel;
-        ::std::auto_ptr< ListBox >
+        ::std::unique_ptr< ListBox >
                             m_pDatasourceType;
         FixedText           m_aFTDataSourceAppendix;
         FixedText			m_aTypePostLabel;

@@ -30,6 +30,7 @@
 #include <sfx2/sfxdlg.hxx>
 #include <com/sun/star/uno/Sequence.h>
 #include <com/sun/star/beans/XPropertyAccess.hpp>
+#include <memory>
 #include "prlayout.hxx"
 #include "sdenumdef.hxx"
 #include "pres.hxx"
@@ -66,7 +67,7 @@ class SdPage;
 class TabPage;
 class ViewShell;
 class XColorList;
-typedef ::boost::shared_ptr< XColorList > XColorListSharedPtr;
+typedef ::std::shared_ptr< XColorList > XColorListSharedPtr;
 
 class AbstractCopyDlg : public VclAbstractDialog  //add for CopyDlg
 {

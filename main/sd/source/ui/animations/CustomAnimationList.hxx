@@ -24,6 +24,7 @@
 
 #include <com/sun/star/drawing/XShape.hpp>
 #include <svtools/svtreebx.hxx>
+#include <memory>
 #include <CustomAnimationEffect.hxx>
 #include "CustomAnimationPreset.hxx"
 #ifndef _SD_CUSTOMANIMATION_HRC
@@ -33,7 +34,7 @@
 namespace sd {
 
 class CustomAnimationEffect;
-typedef boost::shared_ptr< CustomAnimationEffect > CustomAnimationEffectPtr;
+typedef std::shared_ptr< CustomAnimationEffect > CustomAnimationEffectPtr;
 
 class ICustomAnimationListController
 {

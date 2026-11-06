@@ -31,6 +31,7 @@
 #include <PropertyMap.hxx>
 #include <FontTable.hxx>
 #include <resourcemodel/LoggedResources.hxx>
+#include <memory>
 
 namespace com{ namespace sun { namespace star { namespace text{
     class XTextDocument;
@@ -72,9 +73,9 @@ public:
     virtual ~StyleSheetEntry();
 };
 
-typedef boost::shared_ptr<StyleSheetEntry> StyleSheetEntryPtr;
+typedef std::shared_ptr<StyleSheetEntry> StyleSheetEntryPtr;
 typedef ::std::deque<StyleSheetEntryPtr> StyleSheetEntryDeque;
-typedef boost::shared_ptr<StyleSheetEntryDeque> StyleSheetEntryDequePtr;
+typedef std::shared_ptr<StyleSheetEntryDeque> StyleSheetEntryDequePtr;
 
 class DomainMapper;
 class StyleSheetTable :
@@ -112,7 +113,7 @@ private:
     void resolveSprmProps(Sprm & sprm_);
     void applyDefaults(bool bParaProperties);
 };
-typedef boost::shared_ptr< StyleSheetTable >    StyleSheetTablePtr;
+typedef std::shared_ptr< StyleSheetTable >    StyleSheetTablePtr;
 
 
 class WRITERFILTER_DLLPRIVATE TableStyleSheetEntry :
@@ -149,7 +150,7 @@ protected:
     void           MergePropertiesFromMask(const short nBit, const sal_Int32 nMask,
                                            const TblStyleType nStyleId, PropertyMapPtr pToFill);
 };
-typedef boost::shared_ptr<TableStyleSheetEntry> TableStyleSheetEntryPtr;
+typedef std::shared_ptr<TableStyleSheetEntry> TableStyleSheetEntryPtr;
 
 }}
 

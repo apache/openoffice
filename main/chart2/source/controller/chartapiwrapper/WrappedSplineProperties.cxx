@@ -30,6 +30,7 @@
 #include "DiagramHelper.hxx"
 #include <com/sun/star/chart2/CurveStyle.hpp>
 #include <com/sun/star/beans/PropertyAttribute.hpp>
+#include <memory>
 
 using namespace ::com::sun::star;
 using ::com::sun::star::uno::Any;
@@ -56,7 +57,7 @@ class WrappedSplineProperty : public WrappedProperty
 public:
     explicit WrappedSplineProperty( const ::rtl::OUString& rOuterName, const ::rtl::OUString& rInnerName
         , const ::com::sun::star::uno::Any& rDefaulValue
-        , ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact )
+        , ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact )
             : WrappedProperty(rOuterName,OUString())
             , m_spChart2ModelContact(spChart2ModelContact)
             , m_aOuterValue(rDefaulValue)
@@ -158,7 +159,7 @@ public:
     }
 
 protected:
-    ::boost::shared_ptr< Chart2ModelContact >   m_spChart2ModelContact;
+    ::std::shared_ptr< Chart2ModelContact >   m_spChart2ModelContact;
     mutable ::com::sun::star::uno::Any     m_aOuterValue;
     ::com::sun::star::uno::Any             m_aDefaultValue;
     // this inner name is not set as inner name at the base class
@@ -168,7 +169,7 @@ protected:
 class WrappedSplineTypeProperty : public WrappedSplineProperty< sal_Int32 >
 {
 public:
-    explicit WrappedSplineTypeProperty( ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact );
+    explicit WrappedSplineTypeProperty( ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact );
     virtual ~WrappedSplineTypeProperty();
 
     virtual ::com::sun::star::uno::Any convertInnerToOuterValue( const ::com::sun::star::uno::Any& rInnerValue ) const;
@@ -219,7 +220,7 @@ void WrappedSplineProperties::addProperties( ::std::vector< Property > & rOutPro
 //-----------------------------------------------------------------------------
 
 void WrappedSplineProperties::addWrappedProperties( std::vector< WrappedProperty* >& rList
-                                    , ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact )
+                                    , ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact )
 {
     rList.push_back( new WrappedSplineTypeProperty( spChart2ModelContact ) );
     rList.push_back( new WrappedSplineProperty<sal_Int32>( C2U("SplineOrder"),      C2U("SplineOrder"), uno::makeAny(sal_Int32(3)), spChart2ModelContact ) );
@@ -231,7 +232,7 @@ void WrappedSplineProperties::addWrappedProperties( std::vector< WrappedProperty
 //-----------------------------------------------------------------------------
 
 
-WrappedSplineTypeProperty::WrappedSplineTypeProperty( ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact )
+WrappedSplineTypeProperty::WrappedSplineTypeProperty( ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact )
     : WrappedSplineProperty<sal_Int32>( C2U("SplineType"), C2U("CurveStyle"), uno::makeAny(sal_Int32(0)), spChart2ModelContact )
 {
 }

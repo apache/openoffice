@@ -39,7 +39,7 @@
 #include <comphelper/stl_types.hxx>
 #include "ReportDefines.hxx"
 #include <svtools/colorcfg.hxx>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <svx/svdedtv.hxx>
 #include <vcl/tabpage.hxx>
 #include <vcl/splitwin.hxx>
@@ -228,8 +228,8 @@ namespace rptui
 		::com::sun::star::uno::Reference< ::com::sun::star::report::XReportComponent > getCurrentControlModel() const;
 
         // IMarkedSection
-		::boost::shared_ptr<OSectionWindow> getMarkedSection(NearSectionAccess nsa = CURRENT) const;
-        ::boost::shared_ptr<OSectionWindow> getSectionWindow(const ::com::sun::star::uno::Reference< ::com::sun::star::report::XSection>& _xSection) const;
+		::std::shared_ptr<OSectionWindow> getMarkedSection(NearSectionAccess nsa = CURRENT) const;
+        ::std::shared_ptr<OSectionWindow> getSectionWindow(const ::com::sun::star::uno::Reference< ::com::sun::star::report::XSection>& _xSection) const;
         virtual void markSection(const sal_uInt16 _nPos);
 
         /** fills the positions of all collapsed sections.

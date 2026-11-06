@@ -64,7 +64,7 @@ using ::std::vector;
 
 namespace {
 
-class AddRemoveEventListener : public ::std::unary_function<void, Reference<XAccessible> >
+class AddRemoveEventListener  >
 {
 public:
     explicit AddRemoveEventListener(const Reference<XAccessibleEventListener>& rListener, bool bAdd) :

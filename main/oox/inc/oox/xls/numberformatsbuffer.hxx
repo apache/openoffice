@@ -25,6 +25,7 @@
 #define OOX_XLS_NUMBERFORMATSBUFFER_HXX
 
 #include <com/sun/star/lang/Locale.hpp>
+#include <memory>
 #include "oox/xls/workbookhelper.hxx"
 
 namespace com { namespace sun { namespace star {
@@ -89,7 +90,7 @@ private:
     ApiNumFmtData       maApiData;
 };
 
-typedef ::boost::shared_ptr< NumberFormat > NumberFormatRef;
+typedef ::std::shared_ptr< NumberFormat > NumberFormatRef;
 
 // ============================================================================
 

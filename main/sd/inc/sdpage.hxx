@@ -25,7 +25,7 @@
 #define _SDPAGE_HXX
 
 #ifndef BOOST_SHARED_PTR_HPP_INCLUDED
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #endif
 
 #ifndef INCLUDED_FUNCTIONAL
@@ -151,7 +151,7 @@ protected:
 	::com::sun::star::uno::Reference< ::com::sun::star::animations::XAnimationNode > mxAnimationNode;
 
 	/** a helper class to manipulate effects inside the main sequence */
-	boost::shared_ptr< sd::MainSequence > mpMainSequence;
+	std::shared_ptr< sd::MainSequence > mpMainSequence;
 
 	virtual ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > createUnoPage();
 
@@ -324,7 +324,7 @@ public:
 	void setAnimationNode( ::com::sun::star::uno::Reference< ::com::sun::star::animations::XAnimationNode >& xNode );
 
 	/** returns a helper class to manipulate effects inside the main sequence */
-	boost::shared_ptr< sd::MainSequence > getMainSequence();
+	std::shared_ptr< sd::MainSequence > getMainSequence();
 
 	/** quick check if this slide has an animation node.
 		This can be used to have a cost free check if there are no animations ad this slide.

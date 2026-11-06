@@ -38,6 +38,7 @@
 #include <vcl/svapp.hxx>
 #include <vos/mutex.hxx>
 #include <tools/diagnose_ex.h>
+#include <memory>
 
 
 using namespace ::com::sun::star;
@@ -53,7 +54,7 @@ using ::rtl::OUString;
 namespace sd { namespace framework {
 
 ViewShellWrapper::ViewShellWrapper (
-    ::boost::shared_ptr<ViewShell> pViewShell,
+    ::std::shared_ptr<ViewShell> pViewShell,
     const Reference<XResourceId>& rxViewId,
     const Reference<awt::XWindow>& rxWindow)
     : ViewShellWrapperInterfaceBase(MutexOwner::maMutex),
@@ -99,7 +100,7 @@ void SAL_CALL ViewShellWrapper::disposing (void)
 
 
 
-::boost::shared_ptr<ViewShell> ViewShellWrapper::GetViewShell (void)
+::std::shared_ptr<ViewShell> ViewShellWrapper::GetViewShell (void)
 {
     return mpViewShell;
 }

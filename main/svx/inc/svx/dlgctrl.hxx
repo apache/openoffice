@@ -30,6 +30,7 @@
 #include "svx/svxdllapi.h"
 #include <svx/rectenum.hxx>
 #include <vcl/graph.hxx>
+#include <memory>
 
 #ifndef _XTABLE_HXX
 class XBitmapEntry;
@@ -268,7 +269,7 @@ public:
 \************************************************************************/
 
 class XColorList;
-typedef ::boost::shared_ptr< XColorList > XColorListSharedPtr;
+typedef ::std::shared_ptr< XColorList > XColorListSharedPtr;
 
 class SVX_DLLPUBLIC ColorLB : public ColorListBox
 {
@@ -290,7 +291,7 @@ public:
 \************************************************************************/
 
 class XHatchList;
-typedef ::boost::shared_ptr< XHatchList > XHatchListSharedPtr;
+typedef ::std::shared_ptr< XHatchList > XHatchListSharedPtr;
 
 class SVX_DLLPUBLIC HatchingLB : public ListBox
 {
@@ -312,7 +313,7 @@ public:
 \************************************************************************/
 
 class XGradientList;
-typedef ::boost::shared_ptr< XGradientList > XGradientListSharedPtr;
+typedef ::std::shared_ptr< XGradientList > XGradientListSharedPtr;
 
 class SVX_DLLPUBLIC GradientLB : public ListBox
 {
@@ -337,7 +338,7 @@ private:
 \************************************************************************/
 
 class XBitmapList;
-typedef ::boost::shared_ptr< XBitmapList > XBitmapListSharedPtr;
+typedef ::std::shared_ptr< XBitmapList > XBitmapListSharedPtr;
 
 class SVX_DLLPUBLIC BitmapLB : public ListBox
 {
@@ -398,7 +399,7 @@ public:
 \************************************************************************/
 
 class XDashList;
-typedef ::boost::shared_ptr< XDashList > XDashListSharedPtr;
+typedef ::std::shared_ptr< XDashList > XDashListSharedPtr;
 
 class SVX_DLLPUBLIC LineLB : public ListBox
 {
@@ -429,7 +430,7 @@ public:
 \************************************************************************/
 
 class XLineEndList;
-typedef ::boost::shared_ptr< XLineEndList > XLineEndListSharedPtr;
+typedef ::std::shared_ptr< XLineEndList > XLineEndListSharedPtr;
 
 class SVX_DLLPUBLIC LineEndLB : public ListBox
 {

@@ -43,6 +43,7 @@
 #include <sfx2/request.hxx>
 
 #include <set>
+#include <memory>
 
 
 using namespace ::com::sun::star;
@@ -58,7 +59,7 @@ MasterPagesSelector* CurrentMasterPagesSelector::Create (
     if (pDocument == NULL)
         return NULL;
 
-    ::boost::shared_ptr<MasterPageContainer> pContainer (new MasterPageContainer());
+    ::std::shared_ptr<MasterPageContainer> pContainer (new MasterPageContainer());
 
     MasterPagesSelector* pSelector(
         new CurrentMasterPagesSelector (
@@ -80,7 +81,7 @@ CurrentMasterPagesSelector::CurrentMasterPagesSelector (
     ::Window* pParent,
     SdDrawDocument& rDocument,
     ViewShellBase& rBase,
-    const ::boost::shared_ptr<MasterPageContainer>& rpContainer,
+    const ::std::shared_ptr<MasterPageContainer>& rpContainer,
     const cssu::Reference<css::ui::XSidebar>& rxSidebar)
     : MasterPagesSelector (pParent, rDocument, rBase, rpContainer, rxSidebar)
 {
@@ -168,8 +169,8 @@ void CurrentMasterPagesSelector::Fill (ItemList& rItemList)
                 pMasterPage->GetName(),
                 String(),
                 pMasterPage->IsPrecious(),
-                ::boost::shared_ptr<PageObjectProvider>(new ExistingPageProvider(pMasterPage)),
-                ::boost::shared_ptr<PreviewProvider>(new PagePreviewProvider())));
+                ::std::shared_ptr<PageObjectProvider>(new ExistingPageProvider(pMasterPage)),
+                ::std::shared_ptr<PreviewProvider>(new PagePreviewProvider())));
             aToken = mpContainer->PutMasterPage(pDescriptor);
         }
 
@@ -269,7 +270,7 @@ void CurrentMasterPagesSelector::ProcessPopupMenu (Menu& rMenu)
             rMenu.EnableItem(SID_DELETE_MASTER_PAGE, sal_False);
     }
 
-    ::boost::shared_ptr<DrawViewShell> pDrawViewShell (
+    ::std::shared_ptr<DrawViewShell> pDrawViewShell (
         ::boost::dynamic_pointer_cast<DrawViewShell>(mrBase.GetMainViewShell()));
 	if (pDrawViewShell
         && pDrawViewShell->GetEditMode() == EM_MASTERPAGE)
@@ -334,7 +335,7 @@ void CurrentMasterPagesSelector::Notify (SfxBroadcaster&, const SfxHint& rHint)
         if (pSimpleHint->GetId() == SFX_HINT_DOCCHANGED)
         {
             // Is the edit view visible in the center pane?
-            ::boost::shared_ptr<DrawViewShell> pDrawViewShell (
+            ::std::shared_ptr<DrawViewShell> pDrawViewShell (
                 ::boost::dynamic_pointer_cast<DrawViewShell>(mrBase.GetMainViewShell()));
             if (pDrawViewShell.get() != NULL)
             {

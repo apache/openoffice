@@ -24,13 +24,13 @@
 #ifndef SD_SLIDESORTER_SHARED_PAGE_DESCRIPTOR_HXX
 #define SD_SLIDESORTER_SHARED_PAGE_DESCRIPTOR_HXX
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 namespace sd { namespace slidesorter { namespace model {
 
 class PageDescriptor;
 
-typedef ::boost::shared_ptr<PageDescriptor> SharedPageDescriptor;
+typedef ::std::shared_ptr<PageDescriptor> SharedPageDescriptor;
 
 } } } // end of namespace ::sd::slidesorter::model
 

@@ -73,6 +73,7 @@
 #include <tools/debug.hxx>
 #include <com/sun/star/lang/XServiceName.hpp>
 #include <com/sun/star/util/XRefreshable.hpp>
+#include <memory>
 
 using namespace ::com::sun::star;
 using namespace ::chart::wrapper;
@@ -628,7 +629,7 @@ namespace wrapper
 {
 
 DiagramWrapper::DiagramWrapper(
-    ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact ) :
+    ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact ) :
         m_spChart2ModelContact( spChart2ModelContact ),
         m_aEventListenerContainer( m_aMutex )
 {
@@ -1176,7 +1177,7 @@ void SAL_CALL DiagramWrapper::removeEventListener(
 class WrappedDataRowSourceProperty : public WrappedProperty
 {
 public:
-    WrappedDataRowSourceProperty( ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact );
+    WrappedDataRowSourceProperty( ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact );
     virtual ~WrappedDataRowSourceProperty();
 
     virtual void setPropertyValue( const ::com::sun::star::uno::Any& rOuterValue, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& xInnerPropertySet ) const;
@@ -1186,11 +1187,11 @@ public:
     virtual ::com::sun::star::uno::Any getPropertyDefault( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyState >& xInnerPropertyState ) const;
 
 private: //member
-    ::boost::shared_ptr< Chart2ModelContact >   m_spChart2ModelContact;
+    ::std::shared_ptr< Chart2ModelContact >   m_spChart2ModelContact;
     mutable Any                                 m_aOuterValue;
 };
 
-WrappedDataRowSourceProperty::WrappedDataRowSourceProperty( ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact )
+WrappedDataRowSourceProperty::WrappedDataRowSourceProperty( ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact )
             : WrappedProperty(C2U("DataRowSource"),OUString())
             , m_spChart2ModelContact( spChart2ModelContact )
             , m_aOuterValue()
@@ -1277,7 +1278,7 @@ Any WrappedDataRowSourceProperty::getPropertyDefault( const Reference< beans::XP
 class WrappedStackingProperty : public WrappedProperty
 {
 public:
-    WrappedStackingProperty( StackMode eStackMode, ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact );
+    WrappedStackingProperty( StackMode eStackMode, ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact );
     virtual ~WrappedStackingProperty();
 
     virtual void setPropertyValue( const ::com::sun::star::uno::Any& rOuterValue, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& xInnerPropertySet ) const;
@@ -1290,12 +1291,12 @@ protected: //methods
     bool    detectInnerValue( StackMode& eInnerStackMode ) const;
 
 private: //member
-::boost::shared_ptr< Chart2ModelContact >   m_spChart2ModelContact;
+::std::shared_ptr< Chart2ModelContact >   m_spChart2ModelContact;
     const StackMode                         m_eStackMode;
     mutable Any                             m_aOuterValue;
 };
 
-WrappedStackingProperty::WrappedStackingProperty( StackMode eStackMode, ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact )
+WrappedStackingProperty::WrappedStackingProperty( StackMode eStackMode, ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact )
             : WrappedProperty(OUString(),OUString())
             , m_spChart2ModelContact( spChart2ModelContact )
             , m_eStackMode( eStackMode )
@@ -1387,7 +1388,7 @@ Any WrappedStackingProperty::getPropertyDefault( const Reference< beans::XProper
 class WrappedDim3DProperty : public WrappedProperty
 {
 public:
-    WrappedDim3DProperty( ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact );
+    WrappedDim3DProperty( ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact );
     virtual ~WrappedDim3DProperty();
 
     virtual void setPropertyValue( const ::com::sun::star::uno::Any& rOuterValue, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& xInnerPropertySet ) const;
@@ -1397,11 +1398,11 @@ public:
     virtual ::com::sun::star::uno::Any getPropertyDefault( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyState >& xInnerPropertyState ) const;
 
 private: //member
-    ::boost::shared_ptr< Chart2ModelContact >   m_spChart2ModelContact;
+    ::std::shared_ptr< Chart2ModelContact >   m_spChart2ModelContact;
     mutable Any                                 m_aOuterValue;
 };
 
-WrappedDim3DProperty::WrappedDim3DProperty( ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact )
+WrappedDim3DProperty::WrappedDim3DProperty( ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact )
             : WrappedProperty(C2U("Dim3D"),OUString())
             , m_spChart2ModelContact( spChart2ModelContact )
             , m_aOuterValue()
@@ -1456,7 +1457,7 @@ Any WrappedDim3DProperty::getPropertyDefault( const Reference< beans::XPropertyS
 class WrappedVerticalProperty : public WrappedProperty
 {
 public:
-    WrappedVerticalProperty( ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact );
+    WrappedVerticalProperty( ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact );
     virtual ~WrappedVerticalProperty();
 
     virtual void setPropertyValue( const ::com::sun::star::uno::Any& rOuterValue, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& xInnerPropertySet ) const;
@@ -1466,11 +1467,11 @@ public:
     virtual ::com::sun::star::uno::Any getPropertyDefault( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyState >& xInnerPropertyState ) const;
 
 private: //member
-    ::boost::shared_ptr< Chart2ModelContact >   m_spChart2ModelContact;
+    ::std::shared_ptr< Chart2ModelContact >   m_spChart2ModelContact;
     mutable Any                                 m_aOuterValue;
 };
 
-WrappedVerticalProperty::WrappedVerticalProperty( ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact )
+WrappedVerticalProperty::WrappedVerticalProperty( ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact )
             : WrappedProperty(C2U("Vertical"),OUString())
             , m_spChart2ModelContact( spChart2ModelContact )
             , m_aOuterValue()
@@ -1530,7 +1531,7 @@ Any WrappedVerticalProperty::getPropertyDefault( const Reference< beans::XProper
 class WrappedNumberOfLinesProperty : public WrappedProperty
 {
 public:
-    WrappedNumberOfLinesProperty( ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact );
+    WrappedNumberOfLinesProperty( ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact );
     virtual ~WrappedNumberOfLinesProperty();
 
     virtual void setPropertyValue( const ::com::sun::star::uno::Any& rOuterValue, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& xInnerPropertySet ) const;
@@ -1543,11 +1544,11 @@ protected: //methods
     bool    detectInnerValue( uno::Any& rInnerValue ) const;
 
 private: //member
-    ::boost::shared_ptr< Chart2ModelContact >   m_spChart2ModelContact;
+    ::std::shared_ptr< Chart2ModelContact >   m_spChart2ModelContact;
     mutable Any                                 m_aOuterValue;
 };
 
-WrappedNumberOfLinesProperty::WrappedNumberOfLinesProperty( ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact )
+WrappedNumberOfLinesProperty::WrappedNumberOfLinesProperty( ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact )
             : WrappedProperty(C2U("NumberOfLines"),OUString())
             , m_spChart2ModelContact( spChart2ModelContact )
             , m_aOuterValue( this->getPropertyDefault(0) )
@@ -1683,7 +1684,7 @@ Any WrappedNumberOfLinesProperty::getPropertyDefault( const Reference< beans::XP
 class WrappedAttributedDataPointsProperty : public WrappedProperty
 {
 public:
-    WrappedAttributedDataPointsProperty( ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact );
+    WrappedAttributedDataPointsProperty( ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact );
     virtual ~WrappedAttributedDataPointsProperty();
 
     virtual void setPropertyValue( const ::com::sun::star::uno::Any& rOuterValue, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& xInnerPropertySet ) const;
@@ -1693,11 +1694,11 @@ public:
     virtual ::com::sun::star::uno::Any getPropertyDefault( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyState >& xInnerPropertyState ) const;
 
 private: //member
-    ::boost::shared_ptr< Chart2ModelContact >   m_spChart2ModelContact;
+    ::std::shared_ptr< Chart2ModelContact >   m_spChart2ModelContact;
     mutable Any                                 m_aOuterValue;
 };
 
-WrappedAttributedDataPointsProperty::WrappedAttributedDataPointsProperty( ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact )
+WrappedAttributedDataPointsProperty::WrappedAttributedDataPointsProperty( ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact )
             : WrappedProperty(C2U("AttributedDataPoints"),OUString())
             , m_spChart2ModelContact( spChart2ModelContact )
             , m_aOuterValue()
@@ -1798,7 +1799,7 @@ Any WrappedAttributedDataPointsProperty::getPropertyDefault( const Reference< be
 class WrappedSolidTypeProperty : public WrappedProperty
 {
 public:
-    WrappedSolidTypeProperty( ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact );
+    WrappedSolidTypeProperty( ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact );
     virtual ~WrappedSolidTypeProperty();
 
     virtual void setPropertyValue( const ::com::sun::star::uno::Any& rOuterValue, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& xInnerPropertySet ) const;
@@ -1808,11 +1809,11 @@ public:
     virtual ::com::sun::star::uno::Any getPropertyDefault( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyState >& xInnerPropertyState ) const;
 
 private: //member
-    ::boost::shared_ptr< Chart2ModelContact >   m_spChart2ModelContact;
+    ::std::shared_ptr< Chart2ModelContact >   m_spChart2ModelContact;
     mutable Any                                 m_aOuterValue;
 };
 
-WrappedSolidTypeProperty::WrappedSolidTypeProperty( ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact )
+WrappedSolidTypeProperty::WrappedSolidTypeProperty( ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact )
             : WrappedProperty( C2U( "SolidType" ), OUString() )
             , m_spChart2ModelContact( spChart2ModelContact )
             , m_aOuterValue()
@@ -1939,16 +1940,16 @@ Any WrappedAutomaticSizeProperty::getPropertyDefault( const Reference< beans::XP
 class WrappedIncludeHiddenCellsProperty : public WrappedProperty
 {
 public:
-    WrappedIncludeHiddenCellsProperty( ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact );
+    WrappedIncludeHiddenCellsProperty( ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact );
     virtual ~WrappedIncludeHiddenCellsProperty();
 
     virtual void setPropertyValue( const ::com::sun::star::uno::Any& rOuterValue, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& xInnerPropertySet ) const;
 
 private: //member
-    ::boost::shared_ptr< Chart2ModelContact >   m_spChart2ModelContact;
+    ::std::shared_ptr< Chart2ModelContact >   m_spChart2ModelContact;
 };
 
-WrappedIncludeHiddenCellsProperty::WrappedIncludeHiddenCellsProperty( ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact )
+WrappedIncludeHiddenCellsProperty::WrappedIncludeHiddenCellsProperty( ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact )
             : WrappedProperty(C2U("IncludeHiddenCells"),C2U("IncludeHiddenCells"))
             , m_spChart2ModelContact( spChart2ModelContact )
 {

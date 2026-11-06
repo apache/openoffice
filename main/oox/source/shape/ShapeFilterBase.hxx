@@ -24,7 +24,7 @@
 #ifndef OOX_SHAPE_SHAPEFILTERBASE_HXX
 #define OOX_SHAPE_SHAPEFILTERBASE_HXX
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <rtl/ref.hxx>
 #include "oox/vml/vmldrawing.hxx"
 #include "oox/drawingml/table/tablestylelist.hxx"
@@ -38,7 +38,7 @@ namespace shape {
 class ShapeFilterBase : public core::XmlFilterBase
 {
 public:
-    typedef boost::shared_ptr<ShapeFilterBase> Pointer_t;
+    typedef std::shared_ptr<ShapeFilterBase> Pointer_t;
 
     explicit            ShapeFilterBase(
                             const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext >& rxContext );
@@ -63,7 +63,7 @@ private:
     virtual ::oox::ole::VbaProject* implCreateVbaProject() const;
     virtual rtl::OUString implGetImplementationName() const;
 
-    ::boost::shared_ptr< ::oox::drawingml::chart::ChartConverter > mxChartConv;
+    ::std::shared_ptr< ::oox::drawingml::chart::ChartConverter > mxChartConv;
 };
 
 // ============================================================================

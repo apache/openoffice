@@ -39,19 +39,19 @@
 class AutoOGuardArray
 {
     sal_Int32                       nSize;
-    std::auto_ptr< vos::OGuard > *  pGuardArray;
+    std::unique_ptr< vos::OGuard > *  pGuardArray;
 
 public:
     AutoOGuardArray( sal_Int32 nNumElements );
     ~AutoOGuardArray();
 
-    std::auto_ptr< vos::OGuard > &  operator[] ( sal_Int32 i ) { return pGuardArray[i]; }
+    std::unique_ptr< vos::OGuard > &  operator[] ( sal_Int32 i ) { return pGuardArray[i]; }
 };
 
 AutoOGuardArray::AutoOGuardArray( sal_Int32 nNumElements )
 {
     nSize       = nNumElements;
-    pGuardArray = new std::auto_ptr< vos::OGuard >[ nSize ];
+    pGuardArray = new std::unique_ptr< vos::OGuard >[ nSize ];
 }
 
 AutoOGuardArray::~AutoOGuardArray()
@@ -125,7 +125,7 @@ void MasterPropertySet::registerSlave ( ChainablePropertySet *pNewSet )
 void SAL_CALL MasterPropertySet::setPropertyValue( const ::rtl::OUString& rPropertyName, const Any& rValue )
 {
     // acquire mutex in c-tor and releases it in the d-tor (exception safe!).
-    std::auto_ptr< vos::OGuard > pMutexGuard;
+    std::unique_ptr< vos::OGuard > pMutexGuard;
     if (mpMutex)
         pMutexGuard.reset( new vos::OGuard(mpMutex) );
 
@@ -145,7 +145,7 @@ void SAL_CALL MasterPropertySet::setPropertyValue( const ::rtl::OUString& rPrope
         ChainablePropertySet * pSlave = maSlaveMap [ (*aIter).second->mnMapId ]->mpSlave;
 
         // acquire mutex in c-tor and releases it in the d-tor (exception safe!).
-        std::auto_ptr< vos::OGuard > pMutexGuard2;
+        std::unique_ptr< vos::OGuard > pMutexGuard2;
         if (pSlave->mpMutex)
             pMutexGuard2.reset( new vos::OGuard(pSlave->mpMutex) );
 
@@ -158,7 +158,7 @@ void SAL_CALL MasterPropertySet::setPropertyValue( const ::rtl::OUString& rPrope
 Any SAL_CALL MasterPropertySet::getPropertyValue( const ::rtl::OUString& rPropertyName )
 {
     // acquire mutex in c-tor and releases it in the d-tor (exception safe!).
-    std::auto_ptr< vos::OGuard > pMutexGuard;
+    std::unique_ptr< vos::OGuard > pMutexGuard;
     if (mpMutex)
         pMutexGuard.reset( new vos::OGuard(mpMutex) );
 
@@ -179,7 +179,7 @@ Any SAL_CALL MasterPropertySet::getPropertyValue( const ::rtl::OUString& rProper
 		ChainablePropertySet * pSlave = maSlaveMap [ (*aIter).second->mnMapId ]->mpSlave;
 
         // acquire mutex in c-tor and releases it in the d-tor (exception safe!).
-        std::auto_ptr< vos::OGuard > pMutexGuard2;
+        std::unique_ptr< vos::OGuard > pMutexGuard2;
         if (pSlave->mpMutex)
             pMutexGuard2.reset( new vos::OGuard(pSlave->mpMutex) );
 
@@ -214,7 +214,7 @@ void SAL_CALL MasterPropertySet::removeVetoableChangeListener( const ::rtl::OUSt
 void SAL_CALL MasterPropertySet::setPropertyValues( const Sequence< ::rtl::OUString >& aPropertyNames, const Sequence< Any >& aValues )
 {
     // acquire mutex in c-tor and releases it in the d-tor (exception safe!).
-    std::auto_ptr< vos::OGuard > pMutexGuard;
+    std::unique_ptr< vos::OGuard > pMutexGuard;
     if (mpMutex)
         pMutexGuard.reset( new vos::OGuard(mpMutex) );
 
@@ -279,7 +279,7 @@ void SAL_CALL MasterPropertySet::setPropertyValues( const Sequence< ::rtl::OUStr
 Sequence< Any > SAL_CALL MasterPropertySet::getPropertyValues( const Sequence< ::rtl::OUString >& aPropertyNames )
 {
     // acquire mutex in c-tor and releases it in the d-tor (exception safe!).
-    std::auto_ptr< vos::OGuard > pMutexGuard;
+    std::unique_ptr< vos::OGuard > pMutexGuard;
     if (mpMutex)
         pMutexGuard.reset( new vos::OGuard(mpMutex) );
 
@@ -376,7 +376,7 @@ PropertyState SAL_CALL MasterPropertySet::getPropertyState( const ::rtl::OUStrin
 		ChainablePropertySet * pSlave = maSlaveMap [ (*aIter).second->mnMapId ]->mpSlave;
 
         // acquire mutex in c-tor and releases it in the d-tor (exception safe!).
-        std::auto_ptr< vos::OGuard > pMutexGuard;
+        std::unique_ptr< vos::OGuard > pMutexGuard;
         if (pSlave->mpMutex)
             pMutexGuard.reset( new vos::OGuard(pSlave->mpMutex) );
 

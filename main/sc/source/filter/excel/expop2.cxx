@@ -51,6 +51,7 @@
 
 #include <com/sun/star/document/XDocumentProperties.hpp>
 #include <com/sun/star/document/XDocumentPropertiesSupplier.hpp>
+#include <memory>
 
 
 ExportBiff5::ExportBiff5( XclExpRootData& rExpData, SvStream& rStrm ):
@@ -113,7 +114,7 @@ FltError ExportBiff5::Write()
                 = xDPS->getDocumentProperties();
 		if ( SvtFilterOptions::Get()->IsEnableCalcPreview() )
 		{
-			::boost::shared_ptr<GDIMetaFile> pMetaFile =
+			::std::shared_ptr<GDIMetaFile> pMetaFile =
 				pDocShell->GetPreviewMetaFile (sal_False);
 			uno::Sequence<sal_uInt8> metaFile(
 				sfx2::convertMetaFile(pMetaFile.get()));
@@ -197,7 +198,7 @@ FltError ExportXml2007::Write()
                 pDocShell->GetModel(), uno::UNO_QUERY_THROW);
         uno::Reference<document::XDocumentProperties> xDocProps
                 = xDPS->getDocumentProperties();
-        ::boost::shared_ptr<GDIMetaFile> pMetaFile =
+        ::std::shared_ptr<GDIMetaFile> pMetaFile =
             pDocShell->GetPreviewMetaFile (sal_False);
         uno::Sequence<sal_uInt8> metaFile(
             sfx2::convertMetaFile(pMetaFile.get()));

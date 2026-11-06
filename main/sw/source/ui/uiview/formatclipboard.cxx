@@ -61,7 +61,7 @@
 #include <fmtpdsc.hxx>
 #include <fmtrowsplt.hxx>
 #include <swundo.hxx>			// fuer die UndoIds
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 //#define FORMAT_PAINTBRUSH_ALSO_COPY_NUMBERFORMAT_FOR_TABLES 1
 
@@ -445,7 +445,7 @@ void SwFormatClipboard::Copy( SwWrtShell& rWrtShell, SfxItemPool& rPool, bool bP
     rWrtShell.Pop(sal_False);
     rWrtShell.EndAction();
 }
-typedef boost::shared_ptr< SfxPoolItem > SfxPoolItemSharedPtr;
+typedef std::shared_ptr< SfxPoolItem > SfxPoolItemSharedPtr;
 typedef std::vector< SfxPoolItemSharedPtr > ItemVector;
 // #144857# collect all PoolItems from the applied styles
 void lcl_AppendSetItems( ItemVector& rItemVector, const SfxItemSet& rStyleAttrSet )

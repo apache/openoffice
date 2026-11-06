@@ -24,7 +24,7 @@
 #ifndef INCLUDED_PLCF_HXX
 #define INCLUDED_PLCF_HXX
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <WW8StructBase.hxx>
 
 namespace writerfilter {
@@ -34,7 +34,7 @@ namespace doctok
 class Empty
 {
 public:
-    typedef boost::shared_ptr<Empty> Pointer_t;
+    typedef std::shared_ptr<Empty> Pointer_t;
 
     Empty() {}
     virtual ~Empty() {}
@@ -66,7 +66,7 @@ class PLCF : public WW8StructBase
     sal_uInt32 getEntryCount_() const;
 
 public:
-    typedef boost::shared_ptr< PLCF< T > > Pointer_t;
+    typedef std::shared_ptr< PLCF< T > > Pointer_t;
 
     PLCF(sal_uInt32 nLength)
     : WW8StructBase(nLength), nEntryCount(getEntryCount_()),

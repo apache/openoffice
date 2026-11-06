@@ -102,6 +102,7 @@
 #include <com/sun/star/view/XSelectionSupplier.hpp>
 #include <svl/languageoptions.hxx>
 #include <sot/clsids.hxx>
+#include <memory>
 #include "servicenames_charttypes.hxx"
 
 //.............................................................................
@@ -196,7 +197,7 @@ void SAL_CALL ChartView::initialize( const uno::Sequence< uno::Any >& aArguments
     {
         // /--
         ::vos::OGuard aSolarGuard( Application::GetSolarMutex());
-        m_pDrawModelWrapper = ::boost::shared_ptr< DrawModelWrapper >( new DrawModelWrapper( m_xCC ) );
+        m_pDrawModelWrapper = ::std::shared_ptr< DrawModelWrapper >( new DrawModelWrapper( m_xCC ) );
         m_xShapeFactory = m_pDrawModelWrapper->getShapeFactory();
         m_xDrawPage = m_pDrawModelWrapper->getMainDrawPage();
         StartListening( m_pDrawModelWrapper->getSdrModel(), sal_False /*bPreventDups*/ );
@@ -1220,7 +1221,7 @@ bool lcl_IsPieOrDonut( const uno::Reference< XDiagram >& xDiagram )
     return DiagramHelper::isPieOrDonutChart( xDiagram );
 }
 
-void lcl_setDefaultWritingMode( ::boost::shared_ptr< DrawModelWrapper > pDrawModelWrapper, const Reference< frame::XModel >& xChartModel )
+void lcl_setDefaultWritingMode( ::std::shared_ptr< DrawModelWrapper > pDrawModelWrapper, const Reference< frame::XModel >& xChartModel )
 {
     //get writing mode from parent document:
     if( SvtLanguageOptions().IsCTLFontEnabled() )
@@ -1354,7 +1355,7 @@ void lcl_setDefaultWritingMode( ::boost::shared_ptr< DrawModelWrapper > pDrawMod
     }
 }
 
-sal_Int16 lcl_getDefaultWritingModeFromPool( ::boost::shared_ptr< DrawModelWrapper > pDrawModelWrapper )
+sal_Int16 lcl_getDefaultWritingModeFromPool( ::std::shared_ptr< DrawModelWrapper > pDrawModelWrapper )
 {
     sal_Int16 nWritingMode = text::WritingMode2::LR_TB;
     if( pDrawModelWrapper.get() )
@@ -1821,7 +1822,7 @@ awt::Rectangle ChartView::getRectangleOfObject( const rtl::OUString& rObjectCID,
     return aRet;
 }
 
-::boost::shared_ptr< DrawModelWrapper > ChartView::getDrawModelWrapper()
+::std::shared_ptr< DrawModelWrapper > ChartView::getDrawModelWrapper()
 {
     return m_pDrawModelWrapper;
 }
@@ -2187,7 +2188,7 @@ void changePositionOfAxisTitle( VTitle* pVTitle, TitleAlignment eAlignment
     pVTitle->changePosition( aNewPosition );
 }
 
-std::auto_ptr<VTitle> lcl_createTitle( TitleHelper::eTitleType eType
+std::unique_ptr<VTitle> lcl_createTitle( TitleHelper::eTitleType eType
                 , const uno::Reference< drawing::XShapes>& xPageShapes
                 , const uno::Reference< lang::XMultiServiceFactory>& xShapeFactory
                 , const uno::Reference< frame::XModel >& xChartModel
@@ -2196,7 +2197,7 @@ std::auto_ptr<VTitle> lcl_createTitle( TitleHelper::eTitleType eType
                 , TitleAlignment eAlignment
                 , bool& rbAutoPosition )
 {
-    std::auto_ptr<VTitle> apVTitle;
+    std::unique_ptr<VTitle> apVTitle;
 
     // #i109336# Improve auto positioning in chart
     double fPercentage = lcl_getPageLayoutDistancePercentage();
@@ -2223,7 +2224,7 @@ std::auto_ptr<VTitle> lcl_createTitle( TitleHelper::eTitleType eType
     if( !aCompleteString.isEmpty() )
     {
         //create title
-        apVTitle = std::auto_ptr<VTitle>(new VTitle(xTitle));
+        apVTitle = std::unique_ptr<VTitle>(new VTitle(xTitle));
         rtl::OUString aCID( ObjectIdentifier::createClassifiedIdentifierForObject( xTitle, xChartModel ) );
         apVTitle->init(xPageShapes,xShapeFactory,aCID);
         apVTitle->createShapes( awt::Point(0,0), rPageSize );
@@ -2559,7 +2560,7 @@ void ChartView::createShapes()
         uno::Reference< drawing::XShapes > xDiagramPlusAxes_Shapes( ShapeFactory(m_xShapeFactory).createGroup2D(xDiagramPlusAxesPlusMarkHandlesGroup_Shapes ) );
 
         //------------ create some titles
-        std::auto_ptr<VTitle> apVTitle(0);
+        std::unique_ptr<VTitle> apVTitle{};
         bool bAutoPositionDummy = true;
 
         //------------ create main title shape
@@ -2591,7 +2592,7 @@ void ChartView::createShapes()
 
         //------------ create x axis title
         bool bAutoPosition_XTitle = true;
-        std::auto_ptr<VTitle> apVTitle_X;
+        std::unique_ptr<VTitle> apVTitle_X;
         if( ChartTypeHelper::isSupportingMainAxis( xChartType, nDimension, 0 ) )
             apVTitle_X = lcl_createTitle( TitleHelper::TITLE_AT_STANDARD_X_AXIS_POSITION, xPageShapes, m_xShapeFactory, m_xChartModel
                     , aRemainingSpace, aPageSize, ALIGN_BOTTOM, bAutoPosition_XTitle );
@@ -2600,7 +2601,7 @@ void ChartView::createShapes()
 
         //------------ create y axis title
         bool bAutoPosition_YTitle = true;
-        std::auto_ptr<VTitle> apVTitle_Y;
+        std::unique_ptr<VTitle> apVTitle_Y;
         if( ChartTypeHelper::isSupportingMainAxis( xChartType, nDimension, 1 ) )
             apVTitle_Y = lcl_createTitle( TitleHelper::TITLE_AT_STANDARD_Y_AXIS_POSITION, xPageShapes, m_xShapeFactory, m_xChartModel
                     , aRemainingSpace, aPageSize, ALIGN_LEFT, bAutoPosition_YTitle );
@@ -2609,7 +2610,7 @@ void ChartView::createShapes()
 
         //------------ create z axis title
         bool bAutoPosition_ZTitle = true;
-        std::auto_ptr<VTitle> apVTitle_Z;
+        std::unique_ptr<VTitle> apVTitle_Z;
         if( ChartTypeHelper::isSupportingMainAxis( xChartType, nDimension, 2 ) )
             apVTitle_Z = lcl_createTitle( TitleHelper::Z_AXIS_TITLE, xPageShapes, m_xShapeFactory, m_xChartModel
                     , aRemainingSpace, aPageSize, ALIGN_RIGHT, bAutoPosition_ZTitle );
@@ -2621,7 +2622,7 @@ void ChartView::createShapes()
 
         //------------ create secondary x axis title
         bool bAutoPosition_SecondXTitle = true;
-        std::auto_ptr<VTitle> apVTitle_SecondX;
+        std::unique_ptr<VTitle> apVTitle_SecondX;
         if( ChartTypeHelper::isSupportingSecondaryAxis( xChartType, nDimension, 0 ) )
             apVTitle_SecondX = lcl_createTitle( TitleHelper::SECONDARY_X_AXIS_TITLE, xPageShapes, m_xShapeFactory, m_xChartModel
                     , aRemainingSpace, aPageSize, bIsVertical? ALIGN_RIGHT : ALIGN_TOP, bAutoPosition_SecondXTitle );
@@ -2630,7 +2631,7 @@ void ChartView::createShapes()
 
         //------------ create secondary y axis title
         bool bAutoPosition_SecondYTitle = true;
-        std::auto_ptr<VTitle> apVTitle_SecondY;
+        std::unique_ptr<VTitle> apVTitle_SecondY;
         if( ChartTypeHelper::isSupportingSecondaryAxis( xChartType, nDimension, 1 ) )
             apVTitle_SecondY = lcl_createTitle( TitleHelper::SECONDARY_Y_AXIS_TITLE, xPageShapes, m_xShapeFactory, m_xChartModel
                     , aRemainingSpace, aPageSize, bIsVertical? ALIGN_TOP : ALIGN_RIGHT, bAutoPosition_SecondYTitle );

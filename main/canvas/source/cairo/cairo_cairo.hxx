@@ -25,7 +25,7 @@
 #define _CAIROCANVAS_CAIRO_HXX
 
 #include <sal/config.h>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 struct SystemEnvData;
 struct BitmapSystemData;
@@ -44,8 +44,8 @@ namespace cairo {
 	typedef cairo_content_t Content;
 	typedef cairo_pattern_t Pattern;
 
-    typedef boost::shared_ptr<cairo_surface_t> CairoSurfaceSharedPtr;
-    typedef boost::shared_ptr<Cairo>           CairoSharedPtr;
+    typedef std::shared_ptr<cairo_surface_t> CairoSurfaceSharedPtr;
+    typedef std::shared_ptr<Cairo>           CairoSharedPtr;
 
     const SystemEnvData* GetSysData(const Window *pOutputWindow);
 
@@ -62,10 +62,10 @@ namespace cairo {
         // Query methods
 		virtual CairoSharedPtr getCairo() const = 0;
 		virtual CairoSurfaceSharedPtr getCairoSurface() const = 0;
-		virtual boost::shared_ptr<Surface> getSimilar( Content aContent, int width, int height ) const = 0;
+		virtual std::shared_ptr<Surface> getSimilar( Content aContent, int width, int height ) const = 0;
 
         /// factory for VirDev on this surface
-        virtual boost::shared_ptr<VirtualDevice> createVirtualDevice() const = 0;
+        virtual std::shared_ptr<VirtualDevice> createVirtualDevice() const = 0;
 
         /// Resize the surface (possibly destroying content)
 		virtual void Resize( int width, int height ) = 0;
@@ -74,7 +74,7 @@ namespace cairo {
         virtual void flush() const = 0;
 	};
 
-    typedef boost::shared_ptr<Surface> SurfaceSharedPtr;
+    typedef std::shared_ptr<Surface> SurfaceSharedPtr;
 
     /// Create Surface from given cairo surface
     SurfaceSharedPtr createSurface( const CairoSurfaceSharedPtr& rSurface );

@@ -23,6 +23,7 @@
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_ado.hxx"
+#include <algorithm>
 #include "ado/AColumn.hxx"
 #include "ado/AConnection.hxx"
 #include "ado/Awrapado.hxx"
@@ -223,12 +224,8 @@ void OAdoColumn::fillPropertyValues()
 			::comphelper::TStringMixEqualFunctor aCase(sal_False);
 			OTypeInfoMap::const_iterator aFind = ::std::find_if(pTypeInfoMap->begin(),
 															pTypeInfoMap->end(),
-															::std::compose1(
-															::std::bind2nd(aCase, ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("VarBinary"))),
-																::std::compose1(
-																	::std::mem_fun(&OExtendedTypeInfo::getDBName),
-																	::std::select2nd<OTypeInfoMap::value_type>())
-																)
+															[](const OTypeInfoMap::value_type& _x) { return aCase(_x.second->getDBName(), ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("VarBinary"))); }
+															)
 
 													);
 

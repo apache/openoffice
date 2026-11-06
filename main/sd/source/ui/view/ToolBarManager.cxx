@@ -54,6 +54,7 @@
 #include <map>
 #include <vector>
 #include <iterator>
+#include <memory>
 
 using namespace ::com::sun::star;
 using namespace ::com::sun::star::uno;
@@ -170,8 +171,8 @@ public:
             This ViewShellManager is used to activate or deactivate shells.
     */
     void UpdateShells (
-        const ::boost::shared_ptr<ViewShell>& rpMainViewShell,
-        const ::boost::shared_ptr<ViewShellManager>& rpManager);
+        const ::std::shared_ptr<ViewShell>& rpMainViewShell,
+        const ::std::shared_ptr<ViewShellManager>& rpManager);
 
 private:
     class ShellDescriptor
@@ -206,8 +207,8 @@ class ToolBarRules
 {
 public:
     ToolBarRules (
-        const ::boost::shared_ptr<ToolBarManager>& rpToolBarManager,
-        const ::boost::shared_ptr<ViewShellManager>& rpViewShellManager);
+        const ::std::shared_ptr<ToolBarManager>& rpToolBarManager,
+        const ::std::shared_ptr<ViewShellManager>& rpViewShellManager);
 
     /** This method calls MainViewShellChanged() and SelectionHasChanged()
         for the current main view shell and its view.
@@ -244,8 +245,8 @@ public:
         sd::ShellId nShellId);
 
 private:
-    ::boost::shared_ptr<ToolBarManager> mpToolBarManager;
-    ::boost::shared_ptr<ViewShellManager> mpViewShellManager;
+    ::std::shared_ptr<ToolBarManager> mpToolBarManager;
+    ::std::shared_ptr<ViewShellManager> mpViewShellManager;
 };
 
 } // end of anonymous namespace
@@ -268,9 +269,9 @@ public:
     */
     Implementation (
         ViewShellBase& rBase,
-        const ::boost::shared_ptr<sd::tools::EventMultiplexer>& rpMultiplexer,
-        const ::boost::shared_ptr<ViewShellManager>& rpViewShellManager,
-        const ::boost::shared_ptr<ToolBarManager>& rpToolBarManager);
+        const ::std::shared_ptr<sd::tools::EventMultiplexer>& rpMultiplexer,
+        const ::std::shared_ptr<ViewShellManager>& rpViewShellManager,
+        const ::std::shared_ptr<ToolBarManager>& rpToolBarManager);
     ~Implementation (void);
 
     void SetValid (bool bValid);
@@ -302,7 +303,7 @@ public:
             this method and that is either released at its end or assigned
             to mpAsynchronousLock in order to be unlocked later.
     */
-    void Update (::std::auto_ptr<LayouterLock> pLayouterLock);
+    void Update (::std::unique_ptr<LayouterLock> pLayouterLock);
 
     class UpdateLockImplementation
     {
@@ -325,7 +326,7 @@ private:
 
     mutable ::osl::Mutex maMutex;
     ViewShellBase& mrBase;
-    ::boost::shared_ptr<sd::tools::EventMultiplexer> mpEventMultiplexer;
+    ::std::shared_ptr<sd::tools::EventMultiplexer> mpEventMultiplexer;
     bool mbIsValid;
     ToolBarList maToolBarList;
     ToolBarShellList maToolBarShellList;
@@ -338,9 +339,9 @@ private:
         (final) unlocking  is usually done asynchronously *after* the
         list of requested toolbars is updated.
     */
-    ::std::auto_ptr<LayouterLock> mpSynchronousLayouterLock;
-    ::std::auto_ptr<LayouterLock> mpAsynchronousLayouterLock;
-    ::std::auto_ptr<ViewShellManager::UpdateLock> mpViewShellManagerLock;
+    ::std::unique_ptr<LayouterLock> mpSynchronousLayouterLock;
+    ::std::unique_ptr<LayouterLock> mpAsynchronousLayouterLock;
+    ::std::unique_ptr<ViewShellManager::UpdateLock> mpViewShellManagerLock;
     sal_uLong mnPendingUpdateCall;
     sal_uLong mnPendingSetValidCall;
     ToolBarRules maToolBarRules;
@@ -374,12 +375,12 @@ const ::rtl::OUString ToolBarManager::msMediaObjectBar(OUSTRING("mediaobjectbar"
 const ::rtl::OUString ToolBarManager::msTableObjectBar(OUSTRING("tableobjectbar"));
 
 
-::boost::shared_ptr<ToolBarManager> ToolBarManager::Create (
+::std::shared_ptr<ToolBarManager> ToolBarManager::Create (
     ViewShellBase& rBase,
-    const ::boost::shared_ptr<sd::tools::EventMultiplexer>& rpMultiplexer,
-    const ::boost::shared_ptr<ViewShellManager>& rpViewShellManager)
+    const ::std::shared_ptr<sd::tools::EventMultiplexer>& rpMultiplexer,
+    const ::std::shared_ptr<ViewShellManager>& rpViewShellManager)
 {
-    ::boost::shared_ptr<ToolBarManager> pManager (new ToolBarManager());
+    ::std::shared_ptr<ToolBarManager> pManager (new ToolBarManager());
     pManager->mpImpl.reset(
         new Implementation(rBase,rpMultiplexer,rpViewShellManager,pManager));
     return pManager;
@@ -600,9 +601,9 @@ const ::rtl::OUString ToolBarManager::Implementation::msToolBarResourcePrefix(
 
 ToolBarManager::Implementation::Implementation (
     ViewShellBase& rBase,
-    const ::boost::shared_ptr<sd::tools::EventMultiplexer>& rpMultiplexer,
-    const ::boost::shared_ptr<ViewShellManager>& rpViewShellManager,
-    const ::boost::shared_ptr<ToolBarManager>& rpToolBarManager)
+    const ::std::shared_ptr<sd::tools::EventMultiplexer>& rpMultiplexer,
+    const ::std::shared_ptr<ViewShellManager>& rpViewShellManager,
+    const ::std::shared_ptr<ToolBarManager>& rpToolBarManager)
     : maMutex(),
       mrBase(rBase),
       mpEventMultiplexer(rpMultiplexer),
@@ -918,7 +919,7 @@ void ToolBarManager::Implementation::UnlockUpdate (void)
 
 
 void ToolBarManager::Implementation::Update (
-    ::std::auto_ptr<LayouterLock> pLocalLayouterLock)
+    ::std::unique_ptr<LayouterLock> pLocalLayouterLock)
 {
     // When the lock is released and there are pending changes to the set of
     // tool bars then update this set now.
@@ -1142,8 +1143,8 @@ LayouterLock::~LayouterLock (void)
 //===== ToolBarRules ==========================================================
 
 ToolBarRules::ToolBarRules (
-    const ::boost::shared_ptr<sd::ToolBarManager>& rpToolBarManager,
-    const ::boost::shared_ptr<sd::ViewShellManager>& rpViewShellManager)
+    const ::std::shared_ptr<sd::ToolBarManager>& rpToolBarManager,
+    const ::std::shared_ptr<sd::ViewShellManager>& rpViewShellManager)
     : mpToolBarManager(rpToolBarManager),
       mpViewShellManager(rpViewShellManager)
 {
@@ -1648,8 +1649,8 @@ void ToolBarShellList::ReleaseAllShells (ToolBarRules& rRules)
 
 
 void ToolBarShellList::UpdateShells (
-    const ::boost::shared_ptr<ViewShell>& rpMainViewShell,
-    const ::boost::shared_ptr<ViewShellManager>& rpManager)
+    const ::std::shared_ptr<ViewShell>& rpMainViewShell,
+    const ::std::shared_ptr<ViewShellManager>& rpManager)
 {
     if (rpMainViewShell.get() != NULL)
     {

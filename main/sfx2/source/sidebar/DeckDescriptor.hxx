@@ -24,7 +24,7 @@
 
 #include "sfx2/sidebar/EnumContext.hxx"
 #include "ContextList.hxx"
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 
 namespace sfx2 { namespace sidebar {
@@ -48,7 +48,7 @@ public:
     DeckDescriptor (const DeckDescriptor& rOther);
     ~DeckDescriptor (void);
 };
-typedef ::boost::shared_ptr<DeckDescriptor> SharedDeckDescriptor;
+typedef ::std::shared_ptr<DeckDescriptor> SharedDeckDescriptor;
 
 } } // end of namespace sfx2::sidebar
 

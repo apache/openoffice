@@ -37,7 +37,7 @@
 #include <vector>
 
 using ::rtl::OUString;
-using ::std::auto_ptr;
+using ::std::unique_ptr;
 using ::std::vector;
 
 namespace {

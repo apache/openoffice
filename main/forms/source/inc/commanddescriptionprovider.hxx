@@ -30,7 +30,7 @@
 
 #include <comphelper/componentcontext.hxx>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 //........................................................................
 namespace frm
@@ -48,7 +48,7 @@ namespace frm
         virtual ~ICommandDescriptionProvider() { }
 	};
 
-    typedef ::boost::shared_ptr< const ICommandDescriptionProvider >  PCommandDescriptionProvider;
+    typedef ::std::shared_ptr< const ICommandDescriptionProvider >  PCommandDescriptionProvider;
 
     //=====================================================================
     //= factory

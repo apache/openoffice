@@ -1395,7 +1395,7 @@ void FilterCache::impl_resolveItem4TypeRegistration(      CacheItemList*   pList
                                                     const ::rtl::OUString& sType)
 {
     CacheItem& rItem = (*pList)[sItem];
-    // In case it's a new created entry (automatically done by the unordered_map index operator!)
+    // In case it's a new created entry (automatically done by the std::unordered_map index operator!)
     // we must be sure, that this entry has its own name as property available.
     // It's needed later at our container interface!
     rItem[PROPNAME_NAME] <<= sItem;

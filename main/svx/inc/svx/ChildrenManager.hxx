@@ -159,7 +159,7 @@ public:
         @param pShape
             This class <em>does</em> take ownership of the argument.
     */
-    void AddAccessibleShape (std::auto_ptr<AccessibleShape> pShape);
+    void AddAccessibleShape (std::unique_ptr<AccessibleShape> pShape);
 
     /** Clear the list of accessible shapes which have been added by
         previous calls to <member>AddAccessibleShape</member>.

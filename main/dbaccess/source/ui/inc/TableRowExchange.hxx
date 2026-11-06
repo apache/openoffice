@@ -32,16 +32,16 @@
 #ifndef _TRANSFER_HXX
 #include <svtools/transfer.hxx>
 #endif
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 namespace dbaui
 {
 	class OTableRow;
 	class OTableRowExchange : public TransferableHelper
 	{
-		::std::vector< ::boost::shared_ptr<OTableRow> > m_vTableRow;
+		::std::vector< ::std::shared_ptr<OTableRow> > m_vTableRow;
 	public:
-		OTableRowExchange(const ::std::vector< ::boost::shared_ptr<OTableRow> >& _rvTableRow);
+		OTableRowExchange(const ::std::vector< ::std::shared_ptr<OTableRow> >& _rvTableRow);
 	protected:
 		virtual void		AddSupportedFormats();
 		virtual sal_Bool	GetData( const ::com::sun::star::datatransfer::DataFlavor& rFlavor );

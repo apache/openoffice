@@ -24,6 +24,7 @@
 #include "oox/xls/workbookfragment.hxx"
 
 #include <com/sun/star/table/CellAddress.hpp>
+#include <memory>
 #include "oox/core/filterbase.hxx"
 #include "oox/drawingml/themefragmenthandler.hxx"
 #include "oox/helper/attributelist.hxx"
@@ -737,7 +738,7 @@ bool BiffWorkbookFragment::importSheetFragment( ISegmentProgressBar& rProgressBa
         return false;
 
     // create the worksheet fragment
-    ::boost::shared_ptr< BiffWorksheetFragmentBase > xFragment;
+    ::std::shared_ptr< BiffWorksheetFragmentBase > xFragment;
     switch( eSheetType )
     {
         case SHEETTYPE_WORKSHEET:

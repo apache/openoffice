@@ -60,7 +60,7 @@
 #include "tools.hxx"
 #include "slideshowcontext.hxx"
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <boost/scoped_ptr.hpp>
 
 using namespace com::sun::star;

@@ -45,7 +45,7 @@ namespace pcr
 {
 //........................................................................
 
-    struct TypeLess : ::std::binary_function< ::com::sun::star::uno::Type, ::com::sun::star::uno::Type, bool >
+    struct TypeLess
     {
         bool operator()( const ::com::sun::star::uno::Type& _rLHS, const ::com::sun::star::uno::Type& _rRHS ) const
         {
@@ -58,9 +58,8 @@ namespace pcr
 	//====================================================================
 	//= GenericPropertyHandler
 	//====================================================================
-    typedef ::cppu::WeakComponentImplHelper2    <   ::com::sun::star::inspection::XPropertyHandler
-                                                ,   ::com::sun::star::lang::XServiceInfo
-                                                >   GenericPropertyHandler_Base;
+    typedef ::cppu::WeakComponentImplHelper1    <   ::com::sun::star::inspection::XPropertyHandler
+   GenericPropertyHandler_Base;
 	class GenericPropertyHandler : public GenericPropertyHandler_Base
 	{
     private:

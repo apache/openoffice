@@ -25,7 +25,7 @@
 
 #include <string.h>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 #include <rtl/ustrbuf.hxx>
 
@@ -239,7 +239,7 @@ namespace DOM
         }
         // search properties
         OString o1 = OUStringToOString(name, RTL_TEXTENCODING_UTF8);
-        ::boost::shared_ptr<xmlChar const> const pValue(
+        ::std::shared_ptr<xmlChar const> const pValue(
             xmlGetProp(m_aNodePtr, (xmlChar*)o1.getStr()), xmlFree);
         OUString const ret( (pValue)
             ?   OUString(reinterpret_cast<sal_Char const*>(pValue.get()),
@@ -320,7 +320,7 @@ namespace DOM
         OString o2 = OUStringToOString(namespaceURI, RTL_TEXTENCODING_UTF8);
         xmlChar const*const pNS =
             reinterpret_cast<xmlChar const*>(o2.getStr());
-        ::boost::shared_ptr<xmlChar const> const pValue(
+        ::std::shared_ptr<xmlChar const> const pValue(
                 xmlGetNsProp(m_aNodePtr, pName, pNS), xmlFree);
         if (0 == pValue) {
             return ::rtl::OUString();
@@ -613,7 +613,7 @@ namespace DOM
         }
         OUString oldValue;
         AttrChangeType aChangeType = AttrChangeType_MODIFICATION;
-        ::boost::shared_ptr<xmlChar const> const pOld(
+        ::std::shared_ptr<xmlChar const> const pOld(
             xmlGetProp(m_aNodePtr, xName), xmlFree);
         if( !bool(pOld)) {
             aChangeType = AttrChangeType_ADDITION;
@@ -695,7 +695,7 @@ namespace DOM
 
         OUString oldValue;
         AttrChangeType aChangeType = AttrChangeType_MODIFICATION;
-        ::boost::shared_ptr<xmlChar const> const pOld(
+        ::std::shared_ptr<xmlChar const> const pOld(
                 xmlGetNsProp(m_aNodePtr, xLName, pNs->href), xmlFree);
         if( !bool(pOld)) {
             aChangeType = AttrChangeType_ADDITION;

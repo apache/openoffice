@@ -24,6 +24,7 @@
 #ifndef INCLUDED_SLIDESHOW_EXPRESSIONNODE_HXX
 #define INCLUDED_SLIDESHOW_EXPRESSIONNODE_HXX
 
+#include <memory>
 #include "animationfunction.hxx"
 
 
@@ -55,7 +56,7 @@ namespace slideshow
             virtual bool isConstant() const = 0;
         };
 
-        typedef ::boost::shared_ptr< ExpressionNode > ExpressionNodeSharedPtr;
+        typedef ::std::shared_ptr< ExpressionNode > ExpressionNodeSharedPtr;
     }
 }
 

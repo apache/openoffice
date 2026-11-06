@@ -58,8 +58,8 @@ namespace CPPU_CURRENT_NAMESPACE
 
 namespace {
 
-typedef unordered_map< void *, typelib_TypeDescription * > ThrownTypes;
-typedef unordered_map< OUString, type_info *, OUStringHash > ObservedRttiMap;
+typedef std::unordered_map< void *, typelib_TypeDescription * > ThrownTypes;
+typedef std::unordered_map< OUString, type_info *, OUStringHash > ObservedRttiMap;
 
 ThrownTypes & thrownTypes()
 {
@@ -178,7 +178,7 @@ static OString mangledRttiSymbol( OUString const & unoName ) SAL_THROW( () )
 //==================================================================================================
 class RTTI
 {
-	typedef unordered_map< OUString, type_info *, OUStringHash > t_rtti_map;
+	typedef std::unordered_map< OUString, type_info *, OUStringHash > t_rtti_map;
 
 	Mutex m_mutex;
 	t_rtti_map m_rttis;

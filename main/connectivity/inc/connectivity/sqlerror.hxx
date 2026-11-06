@@ -30,7 +30,7 @@
 
 #include <comphelper/componentcontext.hxx>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <boost/optional.hpp>
 #include "connectivity/dbtoolsdllapi.hxx"
 
@@ -326,7 +326,7 @@ namespace connectivity
                         ) const;
 
     private:
-        ::boost::shared_ptr< SQLError_Impl > m_pImpl;
+        ::std::shared_ptr< SQLError_Impl > m_pImpl;
 	};
 
 //........................................................................

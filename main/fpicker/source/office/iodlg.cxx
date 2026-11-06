@@ -374,7 +374,7 @@ namespace
 	}
 
 	//---------------------------------------------------------------------
-	struct RemoveFinalSlash : public ::std::unary_function< String, void >
+	struct RemoveFinalSlash 
 	{
 		void operator()( String& _rURL )
 		{

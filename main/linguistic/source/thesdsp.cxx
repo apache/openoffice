@@ -32,6 +32,7 @@
 #include <com/sun/star/beans/XPropertySet.hpp>
 #include <unotools/processfactory.hxx>
 #include <osl/mutex.hxx>
+#include <memory>
 
 #include "thesdsp.hxx"
 #include "linguistic/lngprops.hxx"
@@ -238,7 +239,7 @@ void ThesaurusDispatcher::SetServiceList( const Locale &rLocale,
         }
         else
         {
-            boost::shared_ptr< LangSvcEntries_Thes > pTmpEntry( new LangSvcEntries_Thes( rSvcImplNames ) );
+            std::shared_ptr< LangSvcEntries_Thes > pTmpEntry( new LangSvcEntries_Thes( rSvcImplNames ) );
             pTmpEntry->aSvcRefs = Sequence< Reference < XThesaurus > >( nLen );
             aSvcMap[ nLanguage ] = pTmpEntry;
         }

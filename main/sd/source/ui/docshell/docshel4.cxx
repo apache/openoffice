@@ -848,7 +848,7 @@ sal_Bool DrawDocShell::GotoBookmark(const String& rBookmark)
                 }
                 if (sViewURL.getLength() > 0)
                 {
-                    ::boost::shared_ptr<FrameworkHelper> pHelper (
+                    ::std::shared_ptr<FrameworkHelper> pHelper (
                         FrameworkHelper::Instance(rBase));
                     pHelper->RequestView(
                         sViewURL,
@@ -1163,6 +1163,7 @@ sal_Bool DrawDocShell::GotoTreeBookmark(const String& rBookmark)
 |*
 \************************************************************************/
 #include <tools/urlobj.hxx>
+#include <memory>
 
 sal_Bool DrawDocShell::SaveAsOwnFormat( SfxMedium& rMedium )
 {

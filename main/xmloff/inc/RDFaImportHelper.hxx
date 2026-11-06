@@ -26,7 +26,7 @@
 
 #include <vector>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 #include <com/sun/star/uno/Reference.h>
 
@@ -65,7 +65,7 @@ public:
     ~RDFaImportHelper();
 
     /** Parse RDFa attributes */
-    ::boost::shared_ptr<ParsedRDFaAttributes> ParseRDFa(
+    ::std::shared_ptr<ParsedRDFaAttributes> ParseRDFa(
         ::rtl::OUString const & i_rAbout,
         ::rtl::OUString const & i_rProperty,
         ::rtl::OUString const & i_rContent,
@@ -75,7 +75,7 @@ public:
     void AddRDFa(
         ::com::sun::star::uno::Reference< ::com::sun::star::rdf::XMetadatable>
             const & i_xObject,
-        ::boost::shared_ptr<ParsedRDFaAttributes> & i_pRDFaAttributes);
+        ::std::shared_ptr<ParsedRDFaAttributes> & i_pRDFaAttributes);
 
     /** Parse and add a RDFa statement; parameters are XML attribute values */
     void ParseAndAddRDFa(

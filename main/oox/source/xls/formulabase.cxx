@@ -37,6 +37,7 @@
 #include <com/sun/star/sheet/XFormulaParser.hpp>
 #include <rtl/strbuf.hxx>
 #include <rtl/ustrbuf.hxx>
+#include <memory>
 #include "oox/core/filterbase.hxx"
 #include "oox/helper/containerhelper.hxx"
 #include "oox/xls/biffinputstream.hxx"
@@ -227,7 +228,7 @@ const sal_uInt16 FUNCFLAG_PARAMPAIRS        = 0x0200;   /// Optional parameters 
 /// Extracts a function library index (value of enum FunctionLibraryType) from function flags.
 #define FUNCFLAGS_TO_FUNCLIB( func_flags ) extractValue< FunctionLibraryType >( func_flags, 12, 4 )
 
-typedef ::boost::shared_ptr< FunctionInfo > FunctionInfoRef;
+typedef ::std::shared_ptr< FunctionInfo > FunctionInfoRef;
 
 struct FunctionData
 {

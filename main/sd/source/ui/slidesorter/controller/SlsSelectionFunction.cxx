@@ -67,6 +67,7 @@
 #include <svx/svxids.hrc>
 #include <boost/bind.hpp>
 #include <boost/optional.hpp>
+#include <memory>
 
 namespace {
 static const sal_uInt32 SINGLE_CLICK			(0x00000001);
@@ -722,7 +723,7 @@ void SelectionFunction::ProcessEvent (EventDescriptor& rDescriptor)
 	// The call to ProcessEvent may switch to another mode handler.
 	// Prevent the untimely destruction of the called handler by acquiring a
 	// temporary reference here.
-	::boost::shared_ptr<ModeHandler> pModeHandler (mpModeHandler);
+	::std::shared_ptr<ModeHandler> pModeHandler (mpModeHandler);
 	pModeHandler->ProcessEvent(rDescriptor);
 }
 
@@ -736,7 +737,7 @@ bool Match (
 void SelectionFunction::SwitchToNormalMode (void)
 {
 	if (mpModeHandler->GetMode() != NormalMode)
-		SwitchMode(::boost::shared_ptr<ModeHandler>(
+		SwitchMode(::std::shared_ptr<ModeHandler>(
 			new NormalModeHandler(mrSlideSorter, *this)));
 }
 
@@ -744,7 +745,7 @@ void SelectionFunction::SwitchToDragAndDropMode (const Point aMousePosition)
 {
 	if (mpModeHandler->GetMode() != DragAndDropMode)
 	{
-		SwitchMode(::boost::shared_ptr<ModeHandler>(
+		SwitchMode(::std::shared_ptr<ModeHandler>(
 			new DragAndDropModeHandler(mrSlideSorter, *this, aMousePosition, mpWindow)));
 	}
 }
@@ -754,26 +755,26 @@ void SelectionFunction::SwitchToMultiSelectionMode (
 	const sal_uInt32 nEventCode)
 {
 	if (mpModeHandler->GetMode() != MultiSelectionMode)
-		SwitchMode(::boost::shared_ptr<ModeHandler>(
+		SwitchMode(::std::shared_ptr<ModeHandler>(
 			new MultiSelectionModeHandler(mrSlideSorter, *this, aMousePosition, nEventCode)));
 }
 
 bool SelectionFunction::SwitchToButtonMode (void)
 {
 	// Do not show the buttons for draw pages.
-	::boost::shared_ptr<ViewShell> pMainViewShell (mrSlideSorter.GetViewShellBase()->GetMainViewShell());
+	::std::shared_ptr<ViewShell> pMainViewShell (mrSlideSorter.GetViewShellBase()->GetMainViewShell());
 	if (pMainViewShell
 		&& pMainViewShell->GetShellType()!=ViewShell::ST_DRAW
 		&& mpModeHandler->GetMode() != ButtonMode)
 	{
-		SwitchMode(::boost::shared_ptr<ModeHandler>(new ButtonModeHandler(mrSlideSorter, *this)));
+		SwitchMode(::std::shared_ptr<ModeHandler>(new ButtonModeHandler(mrSlideSorter, *this)));
 		return true;
 	}
 	else
 		return false;
 }
 
-void SelectionFunction::SwitchMode (const ::boost::shared_ptr<ModeHandler>& rpHandler)
+void SelectionFunction::SwitchMode (const ::std::shared_ptr<ModeHandler>& rpHandler)
 {
 	// Not all modes allow mouse over indicator.
 	if (mpModeHandler->IsMouseOverIndicatorAllowed() != rpHandler->IsMouseOverIndicatorAllowed())
@@ -799,7 +800,7 @@ void SelectionFunction::ResetMouseAnchor (void)
 {
 	if (mpModeHandler && mpModeHandler->GetMode() == NormalMode)
 	{
-		::boost::shared_ptr<NormalModeHandler> pHandler (
+		::std::shared_ptr<NormalModeHandler> pHandler (
 			::boost::dynamic_pointer_cast<NormalModeHandler>(mpModeHandler));
 		if (pHandler)
 			pHandler->ResetButtonDownLocation();

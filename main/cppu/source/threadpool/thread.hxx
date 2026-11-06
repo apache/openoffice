@@ -27,6 +27,7 @@
 #include <sal/types.h>
 
 #include <osl/thread.h>
+#include <memory>
 
 #include "jobqueue.hxx"
 
@@ -34,7 +35,7 @@ namespace cppu_threadpool {
 
 	class JobQueue;
 	class ThreadAdmin;
-	typedef boost::shared_ptr<ThreadAdmin> ThreadAdminHolder;
+	typedef std::shared_ptr<ThreadAdmin> ThreadAdminHolder;
 
     //-----------------------------------------
     // private thread class for the threadpool

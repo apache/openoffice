@@ -24,6 +24,7 @@
 #ifndef SD_SLIDESORTER_INSERTION_INDICATOR_HANDLER_HXX
 #define SD_SLIDESORTER_INSERTION_INDICATOR_HANDLER_HXX
 
+#include <memory>
 #include "view/SlsInsertAnimator.hxx"
 
 #include "view/SlsLayouter.hxx"
@@ -72,10 +73,10 @@ public:
     class ForceShowContext
     {
     public:
-        ForceShowContext (const ::boost::shared_ptr<InsertionIndicatorHandler>& rpHandler);
+        ForceShowContext (const ::std::shared_ptr<InsertionIndicatorHandler>& rpHandler);
         ~ForceShowContext (void);
     private:
-        const ::boost::shared_ptr<InsertionIndicatorHandler> mpHandler;
+        const ::std::shared_ptr<InsertionIndicatorHandler> mpHandler;
     };
 
     /** Update the indicator icon from the current transferable (from the
@@ -117,8 +118,8 @@ public:
 
 private:
     SlideSorter& mrSlideSorter;
-    ::boost::shared_ptr<view::InsertAnimator> mpInsertAnimator;
-    ::boost::shared_ptr<view::InsertionIndicatorOverlay> mpInsertionIndicatorOverlay;
+    ::std::shared_ptr<view::InsertAnimator> mpInsertAnimator;
+    ::std::shared_ptr<view::InsertionIndicatorOverlay> mpInsertionIndicatorOverlay;
     view::InsertPosition maInsertPosition;
     Mode meMode;
     bool mbIsInsertionTrivial;
@@ -131,7 +132,7 @@ private:
     void SetPosition (
         const Point& rPoint,
         const Mode eMode);
-    ::boost::shared_ptr<view::InsertAnimator> GetInsertAnimator (void);
+    ::std::shared_ptr<view::InsertAnimator> GetInsertAnimator (void);
 
     /** Make the insertion indicator visible (that is the show part) and
         keep it visible, even when the mouse leaves the window (that is the

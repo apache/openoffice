@@ -30,6 +30,7 @@
 #include <tools/debug.hxx>
 #include "XMLPropertyBackpatcher.hxx"
 #include <xmloff/txtimp.hxx>	// XMLTextImportHelper partially implemented here
+#include <memory>
 
 
 using ::rtl::OUString;
@@ -203,23 +204,23 @@ template class XMLPropertyBackpatcher<OUString>;
 struct SAL_DLLPRIVATE XMLTextImportHelper::BackpatcherImpl
 {
     /// backpatcher for references to footnotes and endnotes
-    ::std::auto_ptr< XMLPropertyBackpatcher<sal_Int16> >
+    ::std::unique_ptr< XMLPropertyBackpatcher<sal_Int16> >
         m_pFootnoteBackpatcher;
 
     /// backpatchers for references to sequences
-    ::std::auto_ptr< XMLPropertyBackpatcher<sal_Int16> >
+    ::std::unique_ptr< XMLPropertyBackpatcher<sal_Int16> >
         m_pSequenceIdBackpatcher;
 
-    ::std::auto_ptr< XMLPropertyBackpatcher< ::rtl::OUString> >
+    ::std::unique_ptr< XMLPropertyBackpatcher< ::rtl::OUString> >
         m_pSequenceNameBackpatcher;
 
 };
 
-::boost::shared_ptr<XMLTextImportHelper::BackpatcherImpl>
+::std::shared_ptr<XMLTextImportHelper::BackpatcherImpl>
 XMLTextImportHelper::MakeBackpatcherImpl()
 {
     // n.b.: the shared_ptr stores the dtor!
-    return ::boost::shared_ptr<BackpatcherImpl>(new BackpatcherImpl);
+    return ::std::shared_ptr<BackpatcherImpl>(new BackpatcherImpl);
 }
 
 static ::rtl::OUString const& GetSequenceNumber()

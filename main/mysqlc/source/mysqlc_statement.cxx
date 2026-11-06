@@ -201,7 +201,7 @@ Reference< XResultSet > SAL_CALL OCommonStatement::executeQuery(const OUString& 
 
     Reference< XResultSet > xResultSet;
 	try {
-		std::auto_ptr< sql::ResultSet > rset(cppStatement->executeQuery(OUStringToOString(sSqlStatement, m_pConnection->getConnectionEncoding()).getStr()));
+		std::unique_ptr< sql::ResultSet > rset(cppStatement->executeQuery(OUStringToOString(sSqlStatement, m_pConnection->getConnectionEncoding()).getStr()));
 		xResultSet = new OResultSet(this, rset.get(), m_pConnection->getConnectionEncoding());
 		rset.release();
 	} catch (sql::SQLException &e) {
@@ -300,7 +300,7 @@ Reference< XResultSet > SAL_CALL OCommonStatement::getResultSet()
 
     Reference< XResultSet > xResultSet;
 	try {
-		std::auto_ptr< sql::ResultSet > rset(cppStatement->getResultSet());
+		std::unique_ptr< sql::ResultSet > rset(cppStatement->getResultSet());
 		xResultSet = new OResultSet(this, rset.get(), m_pConnection->getConnectionEncoding());
 		rset.release();
 	} catch (sql::SQLException &e) {

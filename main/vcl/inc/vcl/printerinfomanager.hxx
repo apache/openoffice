@@ -140,7 +140,7 @@ protected:
     virtual void initialize();
 
     // fill in font substitutions
-    // the resulting unordered_map maps from source to target font ids
+    // the resulting std::unordered_map maps from source to target font ids
     void fillFontSubstitutions( PrinterInfo& rInfo ) const;
 
     // fill default paper if not configured in config file

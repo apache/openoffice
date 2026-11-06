@@ -100,8 +100,8 @@ public:
             ::sw::Meta & rMeta,
             ::com::sun::star::uno::Reference< ::com::sun::star::text::XText>
                 const& xParentText = 0,
-            ::std::auto_ptr<TextRangeList_t const> pPortions =
-                ::std::auto_ptr<TextRangeList_t const>(0));
+            ::std::unique_ptr<TextRangeList_t const> pPortions =
+                ::std::unique_ptr<TextRangeList_t const>(0));
 
     /// init params with position of the attribute content (w/out CH_TXTATR)
     bool SetContentRange(
@@ -223,7 +223,7 @@ private:
         SwXMeta::CreateXMeta(::sw::Meta &,
             ::com::sun::star::uno::Reference< ::com::sun::star::text::XText>
                 const&,
-            ::std::auto_ptr<TextRangeList_t const> pPortions);
+            ::std::unique_ptr<TextRangeList_t const> pPortions);
 
     SwXMetaField(SwDoc *const pDoc, ::sw::Meta *const pMeta,
         ::com::sun::star::uno::Reference< ::com::sun::star::text::XText> const&

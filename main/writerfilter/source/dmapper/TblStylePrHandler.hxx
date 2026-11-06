@@ -27,7 +27,7 @@
 #include <dmapper/DomainMapper.hxx>
 #include <WriterFilterDllApi.hxx>
 #include <resourcemodel/LoggedResources.hxx>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 namespace writerfilter {
 namespace dmapper {
@@ -78,7 +78,7 @@ private:
     void resolveSprmProps(Sprm & rSprm);
 };
 
-typedef boost::shared_ptr< TblStylePrHandler > TblStylePrHandlerPtr;
+typedef std::shared_ptr< TblStylePrHandler > TblStylePrHandlerPtr;
 
 }}
 

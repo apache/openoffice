@@ -64,31 +64,31 @@ public:
 
 OUString DebugGetDescription (const AnimationNodeSharedPtr& rpNode)
 {
-    if (::boost::dynamic_pointer_cast<BaseContainerNode>(rpNode))
+    if (::std::dynamic_pointer_cast<BaseContainerNode>(rpNode))
     {
         // Node is a container.
-        if (::boost::dynamic_pointer_cast<ParallelTimeContainer>(rpNode))
+        if (::std::dynamic_pointer_cast<ParallelTimeContainer>(rpNode))
             return OUString::createFromAscii("ParallelTimeContainer");
-        else if (::boost::dynamic_pointer_cast<SequentialTimeContainer>(rpNode))
+        else if (::std::dynamic_pointer_cast<SequentialTimeContainer>(rpNode))
             return OUString::createFromAscii("SequentialTimeContainer");
         else
             return OUString::createFromAscii("<unknown container>");
     }
-    else if (::boost::dynamic_pointer_cast<AnimationTransitionFilterNode>(rpNode))
+    else if (::std::dynamic_pointer_cast<AnimationTransitionFilterNode>(rpNode))
         return OUString::createFromAscii("AnimationTransitionFilterNode");
-    else if (::boost::dynamic_pointer_cast<AnimationAudioNode>(rpNode))
+    else if (::std::dynamic_pointer_cast<AnimationAudioNode>(rpNode))
         return OUString::createFromAscii("AnimationAudioNode");
-    else if (::boost::dynamic_pointer_cast<AnimationColorNode>(rpNode))
+    else if (::std::dynamic_pointer_cast<AnimationColorNode>(rpNode))
         return OUString::createFromAscii("AnimationColorNode");
-    else if (::boost::dynamic_pointer_cast<AnimationCommandNode>(rpNode))
+    else if (::std::dynamic_pointer_cast<AnimationCommandNode>(rpNode))
         return OUString::createFromAscii("AnimationCommandNode");
-    else if (::boost::dynamic_pointer_cast<AnimationPathMotionNode>(rpNode))
+    else if (::std::dynamic_pointer_cast<AnimationPathMotionNode>(rpNode))
         return OUString::createFromAscii("AnimationPathMotionNode");
-    else if (::boost::dynamic_pointer_cast<AnimationSetNode>(rpNode))
+    else if (::std::dynamic_pointer_cast<AnimationSetNode>(rpNode))
         return OUString::createFromAscii("AnimationSetNode");
-    else if (::boost::dynamic_pointer_cast<AnimationTransformNode>(rpNode))
+    else if (::std::dynamic_pointer_cast<AnimationTransformNode>(rpNode))
         return OUString::createFromAscii("AnimationTransformNode");
-    else if (::boost::dynamic_pointer_cast<PropertyAnimationNode>(rpNode))
+    else if (::std::dynamic_pointer_cast<PropertyAnimationNode>(rpNode))
         return OUString::createFromAscii("PropertyAnimationNode");
     else
         return OUString::createFromAscii("<unknown node type>");
@@ -169,7 +169,7 @@ void DebugShowState (const AnimationNodeSharedPtr& rpNode)
         ::rtl::OUStringToOString(sStateColor, RTL_TEXTENCODING_ASCII_US).getStr());
 
     BaseContainerNodeSharedPtr pContainer (
-        ::boost::dynamic_pointer_cast<BaseContainerNode>(rpNode));
+        ::std::dynamic_pointer_cast<BaseContainerNode>(rpNode));
     if (pContainer)
         ::boost::static_pointer_cast<NodeContainer>(rpNode)->ShowChildrenState();
 }
@@ -213,7 +213,7 @@ void Debug_ShowNodeTree (const AnimationNodeSharedPtr& rpNode)
 {
     DebugTraceScope aTraceScope ("NodeTree");
 
-    DebugShowState(DebugGetTreeRoot(::boost::dynamic_pointer_cast<BaseNode>(rpNode)));
+    DebugShowState(DebugGetTreeRoot(::std::dynamic_pointer_cast<BaseNode>(rpNode)));
 }
 
 

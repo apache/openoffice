@@ -58,6 +58,7 @@
 #include <unocrsr.hxx>
 #include <viscrs.hxx>
 #include <stdio.h>
+#include <memory>
 
 
 using namespace ::sw::mark;
@@ -105,11 +106,11 @@ namespace
             pMark);
     }
 
-    static inline ::std::auto_ptr<SwPosition> lcl_PositionFromCntntNode(
+    static inline ::std::unique_ptr<SwPosition> lcl_PositionFromCntntNode(
         SwCntntNode * const pCntntNode,
         const bool bAtEnd=false)
     {
-        ::std::auto_ptr<SwPosition> pResult(new SwPosition(*pCntntNode));
+        ::std::unique_ptr<SwPosition> pResult(new SwPosition(*pCntntNode));
         pResult->nContent.Assign(pCntntNode, bAtEnd ? pCntntNode->Len() : 0);
         return pResult;
     }
@@ -118,7 +119,7 @@ namespace
     // else set it to the begin of the Node after rEnd, if there is one
     // else set it to the end of the node before rStt
     // else set it to the CntntNode of the Pos outside the Range
-    static inline ::std::auto_ptr<SwPosition> lcl_FindExpelPosition(
+    static inline ::std::unique_ptr<SwPosition> lcl_FindExpelPosition(
         const SwNodeIndex& rStt,
         const SwNodeIndex& rEnd,
         const SwPosition& rOtherPosition)
@@ -142,7 +143,7 @@ namespace
             return lcl_PositionFromCntntNode( pNode, bPosAtEndOfNode );
         }
 
-        return ::std::auto_ptr<SwPosition>(new SwPosition(rOtherPosition));
+        return ::std::unique_ptr<SwPosition>(new SwPosition(rOtherPosition));
     };
 
     static IMark* lcl_getMarkAfter(const IDocumentMarkAccess::container_t& rMarks, const SwPosition& rPos)
@@ -428,7 +429,7 @@ namespace sw { namespace mark
             "MarkManager::makeMark(..)"
             " - Mark was not created.");
 
-        pMark_t pMark = boost::shared_ptr<IMark>( pMarkBase);
+        pMark_t pMark = std::shared_ptr<IMark>( pMarkBase);
         if(pMark->GetMarkPos() != pMark->GetMarkStart())
             pMarkBase->Swap();
 
@@ -733,11 +734,11 @@ namespace sw { namespace mark
                 // the bookmark is partitially in the range
                 // move position of that is in the range out of it
 
-                ::std::auto_ptr< SwPosition > pNewPos;
+                ::std::unique_ptr< SwPosition > pNewPos;
                 {
                     if ( pEndIdx != NULL )
                     {
-                        pNewPos = ::std::auto_ptr< SwPosition >( new SwPosition( rEnd, *pEndIdx ) );
+                        pNewPos = ::std::unique_ptr< SwPosition >( new SwPosition( rEnd, *pEndIdx ) );
                     }
                     else
                     {
@@ -904,7 +905,7 @@ namespace sw { namespace mark
             find_if(
                 pMarkLow,
                 pMarkHigh,
-                boost::bind( ::std::equal_to<const IMark*>(), bind(&boost::shared_ptr<IMark>::get, _1), pMark ) );
+                boost::bind( ::std::equal_to<const IMark*>(), bind(&std::shared_ptr<IMark>::get, _1), pMark ) );
         if(pMarkFound != pMarkHigh)
             deleteMark(pMarkFound);
     }

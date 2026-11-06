@@ -36,7 +36,7 @@
 #include <tools/urlobj.hxx>
 #include <time.h>
 #include <stdlib.h>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 using namespace std;
 //
@@ -356,7 +356,7 @@ bool Export::CopyFile( const ByteString& source , const ByteString& dest )
     }
 
     static const int BUFFERSIZE = 0x100000;
-    boost::shared_ptr<char> aScopedBuffer( new char[BUFFERSIZE] );
+    std::shared_ptr<char> aScopedBuffer( new char[BUFFERSIZE] );
     char* buf = aScopedBuffer.get();
 
     bool bOk = true;

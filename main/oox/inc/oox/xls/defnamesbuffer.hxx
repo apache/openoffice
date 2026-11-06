@@ -24,6 +24,7 @@
 #ifndef OOX_XLS_DEFINEDNAMESBUFFER_HXX
 #define OOX_XLS_DEFINEDNAMESBUFFER_HXX
 
+#include <memory>
 #include "oox/xls/formulabase.hxx"
 
 namespace com { namespace sun { namespace star {
@@ -152,8 +153,8 @@ private:
     void                implImportBiffFormula();
 
 private:
-    typedef ::std::auto_ptr< StreamDataSequence >   StreamDataSeqPtr;
-    typedef ::std::auto_ptr< BiffInputStreamPos >   BiffStreamPosPtr;
+    typedef ::std::unique_ptr< StreamDataSequence >   StreamDataSeqPtr;
+    typedef ::std::unique_ptr< BiffInputStreamPos >   BiffStreamPosPtr;
 
     ::com::sun::star::uno::Reference< ::com::sun::star::sheet::XNamedRange2 >
                         mxNamedRange;       /// XNamedRange interface of the defined name.
@@ -165,7 +166,7 @@ private:
     sal_uInt16          mnFmlaSize;         /// Cached BIFF formula size for formula import.
 };
 
-typedef ::boost::shared_ptr< DefinedName > DefinedNameRef;
+typedef ::std::shared_ptr< DefinedName > DefinedNameRef;
 
 // ============================================================================
 

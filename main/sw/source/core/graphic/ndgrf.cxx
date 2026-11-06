@@ -60,6 +60,7 @@
 #include <drawinglayer/processor2d/objectinfoextractor2d.hxx>
 #include <drawinglayer/primitive2d/objectinfoprimitive2d.hxx>
 #include <unotools/cacheoptions.hxx>
+#include <memory>
 
 using namespace com::sun::star;
 
@@ -1283,7 +1284,7 @@ sal_Bool SwGrfNode::IsSelected() const
     return bRet;
 }
 
-boost::weak_ptr< SwAsyncRetrieveInputStreamThreadConsumer > SwGrfNode::GetThreadConsumer()
+std::weak_ptr< SwAsyncRetrieveInputStreamThreadConsumer > SwGrfNode::GetThreadConsumer()
 {
     return mpThreadConsumer;
 }

@@ -28,7 +28,7 @@
 .IF "$(SECOND_BUILD)"!=""
 .IF "$($(SECOND_BUILD)_OBJFILES)"!=""
 
-$(OBJ)/$(SECOND_BUILD)_%.obj : %.cxx
+$(OBJ)/$(SECOND_BUILD)_%.obj $(OBJ)/$(SECOND_BUILD)_%.o : %.cxx
 	@echo "Making:   " $@
 .IF "$(GUI)"=="UNX"
 	@$(RM) $@ $(@:s/.obj/.o/)
@@ -42,7 +42,7 @@ $(OBJ)/$(SECOND_BUILD)_%.obj : %.cxx
 	$(COMMAND_ECHO)$(CXX) $(CFLAGS) $(INCLUDE) $(CFLAGSCXX) $(CFLAGSOBJ) $(CDEFS) $($(SECOND_BUILD)CDEFS) $(CDEFSOBJ) $(!eq,$(EXCEPTIONSFILES),$(subst,$@, $(EXCEPTIONSFILES)) $(LOCAL_EXCEPTIONS_FLAGS) $(GLOBAL_EXCEPTIONS_FLAGS)) $(CFLAGSAPPEND) $(CFLAGSOUTOBJ)$(OBJ)/$(SECOND_BUILD)_$*.obj $(CFLAGSINCXX)$(PWD)/$*.cxx
 .ENDIF
 
-$(OBJ)/$(SECOND_BUILD)_%.obj : %.c
+$(OBJ)/$(SECOND_BUILD)_%.obj $(OBJ)/$(SECOND_BUILD)_%.o : %.c
 	@echo "Making:   " $@
 .IF "$(GUI)"=="UNX"
 .IF "$(TEST)"!=""
@@ -70,7 +70,7 @@ $(OBJ)/$(SECOND_BUILD)_%.obj : %.c
 
 .IF "$($(SECOND_BUILD)_SLOFILES)"!=""
 
-$(SLO)/$(SECOND_BUILD)_%.obj : %.cxx
+$(SLO)/$(SECOND_BUILD)_%.obj $(SLO)/$(SECOND_BUILD)_%.o : %.cxx
 	@echo "Making:   " $@
 .IF "$(GUI)"=="UNX"
 	@$(RM) $@ $(@:s/.obj/.o/)
@@ -88,7 +88,7 @@ $(SLO)/$(SECOND_BUILD)_%.obj : %.cxx
 .ENDIF
 .ENDIF
 
-$(SLO)/$(SECOND_BUILD)_%.obj :  %.c
+$(SLO)/$(SECOND_BUILD)_%.obj $(SLO)/$(SECOND_BUILD)_%.o :  %.c
 	@echo "Making:   " $@
 .IF "$(GUI)"=="UNX"
 	@$(RM) $@ $(@:s/.obj/.o/)

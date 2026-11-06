@@ -38,7 +38,7 @@
 #if defined(BOOST_SP_ENABLE_DEBUG_HOOKS)
 
 #include <boost/assert.hpp>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <boost/detail/lightweight_mutex.hpp>
 #include <cstdlib>
 #include <map>
@@ -198,7 +198,7 @@ std::size_t find_unreachable_objects(bool report)
     return m2.size();
 }
 
-typedef std::deque< boost::shared_ptr<X> > free_list_type;
+typedef std::deque< std::shared_ptr<X> > free_list_type;
 
 static void scan_and_free(void * area, size_t size, map2_type const & m2, free_list_type & free)
 {
@@ -210,7 +210,7 @@ static void scan_and_free(void * area, size_t size, map2_type const & m2, free_l
 
         if(q->pn.id == boost::detail::shared_count_id && q->pn.pi != 0 && m2.count(q->pn.pi) != 0 && q->px != 0)
         {
-            boost::shared_ptr<X> * ppx = reinterpret_cast< boost::shared_ptr<X> * >(p);
+            std::shared_ptr<X> * ppx = reinterpret_cast< std::shared_ptr<X> * >(p);
             free.push_back(*ppx);
             ppx->reset();
         }

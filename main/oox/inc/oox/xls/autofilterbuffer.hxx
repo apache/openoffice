@@ -25,6 +25,7 @@
 #define OOX_XLS_AUTOFILTERBUFFER_HXX
 
 #include <com/sun/star/table/CellRangeAddress.hpp>
+#include <memory>
 #include "oox/helper/refvector.hxx"
 #include "oox/xls/workbookhelper.hxx"
 
@@ -73,7 +74,7 @@ public:
     virtual ApiFilterSettings finalizeImport( sal_Int32 nMaxCount );
 };
 
-typedef ::boost::shared_ptr< FilterSettingsBase > FilterSettingsRef;
+typedef ::std::shared_ptr< FilterSettingsBase > FilterSettingsRef;
 
 // ============================================================================
 

@@ -25,7 +25,7 @@
 #define SD_SLIDESORTER_PREVIEW_BITMAP_FACTORY_HXX
 
 #include "PreviewRenderer.hxx"
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 class SdPage;
 class Size;

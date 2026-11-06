@@ -26,6 +26,7 @@
 #include "CanvasUpdateRequester.hxx"
 #include <vcl/svapp.hxx>
 #include <com/sun/star/lang/XComponent.hpp>
+#include <memory>
 
 using namespace ::com::sun::star;
 using namespace ::com::sun::star::uno;
@@ -48,7 +49,7 @@ public:
 
 CanvasUpdateRequester::RequesterMap CanvasUpdateRequester::maRequesterMap;
 
-::boost::shared_ptr<CanvasUpdateRequester> CanvasUpdateRequester::Instance (
+::std::shared_ptr<CanvasUpdateRequester> CanvasUpdateRequester::Instance (
     const Reference<rendering::XSpriteCanvas>& rxSharedCanvas)
 {
     RequesterMap::const_iterator iRequester;
@@ -59,7 +60,7 @@ CanvasUpdateRequester::RequesterMap CanvasUpdateRequester::maRequesterMap;
     }
 
     // No requester for the given canvas found.  Create a new one.
-    ::boost::shared_ptr<CanvasUpdateRequester> pRequester (
+    ::std::shared_ptr<CanvasUpdateRequester> pRequester (
         new CanvasUpdateRequester(rxSharedCanvas), Deleter());
     maRequesterMap.push_back(RequesterMap::value_type(rxSharedCanvas,pRequester));
     return pRequester;

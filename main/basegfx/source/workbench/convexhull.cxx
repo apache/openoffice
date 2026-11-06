@@ -52,7 +52,7 @@ template <class PointType> double theta( const PointType& p1, const PointType& p
 /* Model of LessThanComparable for theta sort.
  * Uses the theta function from Sedgewick: Algorithms in XXX, chapter 24
  */
-template <class PointType> class ThetaCompare : public ::std::binary_function< const PointType&, const PointType&, bool >
+template <class PointType> class ThetaCompare 
 {
 public:
     ThetaCompare( const PointType& rRefPoint ) : maRefPoint( rRefPoint ) {}

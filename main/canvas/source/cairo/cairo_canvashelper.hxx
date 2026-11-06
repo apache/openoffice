@@ -32,6 +32,7 @@
 #include <com/sun/star/rendering/XLinePolyPolygon2D.hpp>
 
 #include <boost/utility.hpp>
+#include <memory>
 
 #include "cairo_cairo.hxx"
 #include "cairo_surfaceprovider.hxx"
@@ -305,7 +306,7 @@ namespace cairocanvas
 
     private:
 
-		boost::shared_ptr<VirtualDevice> mpVirtualDevice;
+		std::shared_ptr<VirtualDevice> mpVirtualDevice;
 
 	void useStates( const ::com::sun::star::rendering::ViewState& viewState,
 			const ::com::sun::star::rendering::RenderState& renderState,

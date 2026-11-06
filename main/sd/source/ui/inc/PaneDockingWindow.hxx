@@ -28,7 +28,7 @@
 #include <sfx2/viewfrm.hxx>
 
 #include <boost/scoped_ptr.hpp>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 class ToolBox;
 class SplitWindow;

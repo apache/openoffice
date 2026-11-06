@@ -24,7 +24,7 @@
 #ifndef OOX_OLE_AXCONTROL_HXX
 #define OOX_OLE_AXCONTROL_HXX
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include "oox/helper/binarystreambase.hxx"
 #include "oox/helper/propertyset.hxx"
 #include "oox/ole/axbinaryreader.hxx"
@@ -343,7 +343,7 @@ protected:
     bool                mbAwtModel;     /// True = AWT control model, false = form component.
 };
 
-typedef ::boost::shared_ptr< ControlModelBase > ControlModelRef;
+typedef ::std::shared_ptr< ControlModelBase > ControlModelRef;
 
 // ============================================================================
 
@@ -747,7 +747,7 @@ private:
     sal_Int32           mnTabFlagCount;     /// Number of entries in tab flag array.
 };
 
-typedef ::boost::shared_ptr< AxTabStripModel > AxTabStripModelRef;
+typedef ::std::shared_ptr< AxTabStripModel > AxTabStripModelRef;
 
 // ============================================================================
 
@@ -790,7 +790,7 @@ public: // direct access needed for legacy VML drawing controls
     bool                mbFontSupport;      /// True = control supports the font property.
 };
 
-typedef ::boost::shared_ptr< AxContainerModelBase > AxContainerModelRef;
+typedef ::std::shared_ptr< AxContainerModelBase > AxContainerModelRef;
 
 // ============================================================================
 
@@ -895,7 +895,7 @@ private:
 template< typename ModelType >
 inline ModelType& EmbeddedControl::createModel()
 {
-    ::boost::shared_ptr< ModelType > xModel( new ModelType );
+    ::std::shared_ptr< ModelType > xModel( new ModelType );
     mxModel = xModel;
     xModel->setFormComponentMode();
     return *xModel;
@@ -904,7 +904,7 @@ inline ModelType& EmbeddedControl::createModel()
 template< typename ModelType, typename ParamType >
 inline ModelType& EmbeddedControl::createModel( const ParamType& rParam )
 {
-    ::boost::shared_ptr< ModelType > xModel( new ModelType( rParam ) );
+    ::std::shared_ptr< ModelType > xModel( new ModelType( rParam ) );
     mxModel = xModel;
     xModel->setFormComponentMode();
     return *xModel;

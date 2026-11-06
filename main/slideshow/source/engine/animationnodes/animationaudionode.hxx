@@ -24,6 +24,7 @@
 #ifndef INCLUDED_SLIDESHOW_ANIMATIONAUDIONODE_HXX
 #define INCLUDED_SLIDESHOW_ANIMATIONAUDIONODE_HXX
 
+#include <memory>
 #include "basecontainernode.hxx"
 #include "soundplayer.hxx"
 #include "com/sun/star/animations/XAnimationNode.hpp"
@@ -44,7 +45,7 @@ public:
     AnimationAudioNode(
         ::com::sun::star::uno::Reference<
         ::com::sun::star::animations::XAnimationNode> const& xNode,
-        ::boost::shared_ptr<BaseContainerNode> const& pParent,
+        ::std::shared_ptr<BaseContainerNode> const& pParent,
         NodeContext const& rContext );
 
 protected:

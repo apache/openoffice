@@ -24,7 +24,7 @@
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_scfilt.hxx"
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 #define SC_HTMLPARS_CXX
 #include "scitems.hxx"
@@ -1820,7 +1820,7 @@ void ScHTMLEntry::Strip( const EditEngine& rEditEngine )
 class ScHTMLTableMap
 {
 private:
-    typedef ::boost::shared_ptr< ScHTMLTable >          ScHTMLTablePtr;
+    typedef ::std::shared_ptr< ScHTMLTable >          ScHTMLTablePtr;
     typedef ::std::map< ScHTMLTableId, ScHTMLTablePtr > ScHTMLTableStdMap;
 
 public:
@@ -2093,7 +2093,7 @@ void ScHTMLTable::DataOn( const ImportInfo& rInfo )
     {
         // read needed options from the <td> tag
         ScHTMLSize aSpanSize( 1, 1 );
-        ::std::auto_ptr< String > pValStr, pNumStr;
+        ::std::unique_ptr< String > pValStr, pNumStr;
         for( ScHTMLOptionIterator aIter( rInfo ); aIter.is(); ++aIter )
         {
             switch( aIter->GetToken() )

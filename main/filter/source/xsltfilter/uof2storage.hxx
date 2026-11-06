@@ -30,6 +30,7 @@
 
 #include <com/sun/star/uno/Reference.h>
 #include <rtl/ustring.hxx>
+#include <memory>
 
 namespace com { namespace sun { namespace star {
 	namespace embed { class XStorage; }
@@ -50,7 +51,7 @@ const ::rtl::OUString UOFELEMNAME = ::rtl::OUString::createFromAscii("uof.xml");
 const ::rtl::OUString CONTENTELEMNAME = ::rtl::OUString::createFromAscii("content.xml");
 
 class StorageBase;
-typedef ::boost::shared_ptr< StorageBase > StorageRef;
+typedef ::std::shared_ptr< StorageBase > StorageRef;
 
 class StorageBase
 {

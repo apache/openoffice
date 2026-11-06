@@ -91,7 +91,7 @@ namespace dbaui
 
 		OTableTreeListBox	m_aTableList;
         SvTreeListBox       m_aQueryList;
-        ::std::auto_ptr< TableObjectListFacade >
+        ::std::unique_ptr< TableObjectListFacade >
                             m_pCurrentList;
 
 		PushButton			aAddButton;

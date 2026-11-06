@@ -82,7 +82,7 @@ sal_Bool OGroupCompAcc::operator==( const OGroupCompAcc& rCompAcc ) const
 }
 
 //------------------------------------------------------------------
-class OGroupCompAccLess : public ::std::binary_function<OGroupCompAcc, OGroupCompAcc, sal_Bool>
+class OGroupCompAccLess 
 {
 public:
 	sal_Bool operator() (const OGroupCompAcc& lhs, const OGroupCompAcc& rhs) const
@@ -138,7 +138,7 @@ sal_Bool OGroupComp::operator==( const OGroupComp& rComp ) const
 }
 
 //------------------------------------------------------------------
-class OGroupCompLess : public ::std::binary_function<OGroupComp, OGroupComp, sal_Bool>
+class OGroupCompLess 
 {
 public:
 	sal_Bool operator() (const OGroupComp& lhs, const OGroupComp& rhs) const
@@ -238,7 +238,7 @@ sal_Bool OGroup::operator==( const OGroup& rGroup ) const
 }
 
 //------------------------------------------------------------------
-class OGroupLess : public ::std::binary_function<OGroup, OGroup, sal_Bool>
+class OGroupLess 
 {
 public:
 	sal_Bool operator() (const OGroup& lhs, const OGroup& rhs) const

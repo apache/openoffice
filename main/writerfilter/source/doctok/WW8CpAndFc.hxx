@@ -348,7 +348,7 @@ struct CpAndFcHash
     }
 };
 
-typedef unordered_map<Cp, Fc, CpHash, CpEq> Cp2FcHashMap_t;
+typedef std::unordered_map<Cp, Fc, CpHash, CpEq> Cp2FcHashMap_t;
 
 } // namespace doctok
 } // namespace writerfilter

@@ -24,6 +24,7 @@
 #ifndef OOX_HELPER_BINARYOUTPUTSTREAM_HXX
 #define OOX_HELPER_BINARYOUTPUTSTREAM_HXX
 
+#include <memory>
 #include "oox/helper/binarystreambase.hxx"
 
 namespace com { namespace sun { namespace star {
@@ -75,7 +76,7 @@ protected:
     inline explicit     BinaryOutputStream() : BinaryStreamBase( false ) {}
 };
 
-typedef ::boost::shared_ptr< BinaryOutputStream > BinaryOutputStreamRef;
+typedef ::std::shared_ptr< BinaryOutputStream > BinaryOutputStreamRef;
 
 // ----------------------------------------------------------------------------
 

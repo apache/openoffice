@@ -46,6 +46,7 @@
 #include <stack>
 #include <map>
 #include <algorithm>
+#include <memory>
 
 using namespace ::com::sun::star;
 using ::rtl::OUString;
@@ -172,7 +173,7 @@ struct SvxThesaurusDialog_Impl
     FixedText               aWordText;
     LookUpComboBox_Impl     aWordCB;
     FixedText               m_aAlternativesText;
-    boost::shared_ptr< ThesaurusAlternativesCtrl_Impl > m_pAlternativesCT;
+    std::shared_ptr< ThesaurusAlternativesCtrl_Impl > m_pAlternativesCT;
     FixedText               aReplaceText;
     ReplaceEdit_Impl        aReplaceEdit;
     FixedLine               aFL;

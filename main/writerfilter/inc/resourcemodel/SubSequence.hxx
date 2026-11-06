@@ -26,7 +26,7 @@
 
 #include <com/sun/star/uno/Sequence.hxx>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <iostream>
 #include <stdio.h>
 #include <ctype.h>
@@ -47,7 +47,7 @@ void dumpLine(OutputWithDepth<string> & o, SubSequence<T> & rSeq,
 template <class T>
 class WRITERFILTER_DLLPUBLIC SubSequence
 {
-    typedef boost::shared_ptr<com::sun::star::uno::Sequence<T> >
+    typedef std::shared_ptr<com::sun::star::uno::Sequence<T> >
     SequencePointer;
 
     SequencePointer mpSequence;
@@ -55,7 +55,7 @@ class WRITERFILTER_DLLPUBLIC SubSequence
     sal_uInt32 mnCount;
 
 public:
-    typedef boost::shared_ptr<SubSequence> Pointer_t;
+    typedef std::shared_ptr<SubSequence> Pointer_t;
 
     SubSequence() : mpSequence(new ::com::sun::star::uno::Sequence<T>()),
                     mnOffset(0), mnCount(0)

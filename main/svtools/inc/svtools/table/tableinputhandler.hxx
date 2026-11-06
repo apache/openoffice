@@ -24,7 +24,7 @@
 #ifndef SVTOOLS_INC_TABLE_TABLEINPUTHANDLER_HXX
 #define SVTOOLS_INC_TABLE_TABLEINPUTHANDLER_HXX
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 class MouseEvent;
 class KeyEvent;
@@ -66,7 +66,7 @@ namespace svt { namespace table
 
         virtual ~ITableInputHandler() { }
 	};
-    typedef ::boost::shared_ptr< ITableInputHandler >   PTableInputHandler;
+    typedef ::std::shared_ptr< ITableInputHandler >   PTableInputHandler;
 
 //........................................................................
 } } // namespace svt::table

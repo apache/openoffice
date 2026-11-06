@@ -65,6 +65,7 @@
 #include <boost/bind.hpp>
 #include <boost/function.hpp>
 #include <boost/scoped_array.hpp>
+#include <memory>
 
 
 using namespace css;
@@ -847,7 +848,7 @@ void SidebarController::ShowPopupMenu (
     const Rectangle& rButtonBox,
     const ::std::vector<TabBar::DeckMenuData>& rMenuData) const
 {
-    ::boost::shared_ptr<PopupMenu> pMenu = CreatePopupMenu(rMenuData);
+    ::std::shared_ptr<PopupMenu> pMenu = CreatePopupMenu(rMenuData);
     pMenu->SetSelectHdl(LINK(this, SidebarController, OnMenuItemSelected));
 
     // pass toolbox button rect so the menu can stay open on button up
@@ -878,11 +879,11 @@ void SidebarController::ShowDetailMenu (const ::rtl::OUString& rsMenuCommand) co
 
 
 
-::boost::shared_ptr<PopupMenu> SidebarController::CreatePopupMenu (
+::std::shared_ptr<PopupMenu> SidebarController::CreatePopupMenu (
     const ::std::vector<TabBar::DeckMenuData>& rMenuData) const
 {
     // Create the top level popup menu.
-    ::boost::shared_ptr<PopupMenu> pMenu (new PopupMenu());
+    ::std::shared_ptr<PopupMenu> pMenu (new PopupMenu());
     FloatingWindow* pMenuWindow = dynamic_cast<FloatingWindow*>(pMenu->GetWindow());
     if (pMenuWindow != NULL)
     {

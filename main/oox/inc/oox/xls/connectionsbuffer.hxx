@@ -24,6 +24,7 @@
 #ifndef OOX_XLS_CONNECTIONSBUFFER_HXX
 #define OOX_XLS_CONNECTIONSBUFFER_HXX
 
+#include <memory>
 #include "oox/helper/refvector.hxx"
 #include "oox/xls/workbookhelper.hxx"
 
@@ -72,7 +73,7 @@ struct WebPrModel
 /** Common properties of an external data connection. */
 struct ConnectionModel
 {
-    typedef ::std::auto_ptr< WebPrModel > WebPrModelPtr;
+    typedef ::std::unique_ptr< WebPrModel > WebPrModelPtr;
 
     WebPrModelPtr       mxWebPr;            /// Special settings for web queries.
     ::rtl::OUString     maName;             /// Unique name of this connection.
@@ -141,7 +142,7 @@ private:
     ConnectionModel     maModel;
 };
 
-typedef ::boost::shared_ptr< Connection > ConnectionRef;
+typedef ::std::shared_ptr< Connection > ConnectionRef;
 
 // ============================================================================
 

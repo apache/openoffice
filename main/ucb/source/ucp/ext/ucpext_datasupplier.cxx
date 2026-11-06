@@ -40,7 +40,7 @@
 #include <rtl/ustrbuf.hxx>
 
 #include <vector>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 //......................................................................................................................
 namespace ucb { namespace ucp { namespace ext

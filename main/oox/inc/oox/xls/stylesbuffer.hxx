@@ -30,6 +30,7 @@
 #include <com/sun/star/table/CellVertJustify.hpp>
 #include <com/sun/star/table/TableBorder.hpp>
 #include <com/sun/star/util/CellProtection.hpp>
+#include <memory>
 #include "oox/drawingml/color.hxx"
 #include "oox/helper/graphichelper.hxx"
 #include "oox/helper/refmap.hxx"
@@ -327,7 +328,7 @@ private:
     bool                mbDxf;
 };
 
-typedef ::boost::shared_ptr< Font > FontRef;
+typedef ::std::shared_ptr< Font > FontRef;
 
 // ============================================================================
 
@@ -415,7 +416,7 @@ private:
     ApiAlignmentData    maApiData;          /// Alignment data converted to API constants.
 };
 
-typedef ::boost::shared_ptr< Alignment > AlignmentRef;
+typedef ::std::shared_ptr< Alignment > AlignmentRef;
 
 // ============================================================================
 
@@ -475,7 +476,7 @@ private:
     ApiProtectionData   maApiData;          /// Protection data converted to API constants.
 };
 
-typedef ::boost::shared_ptr< Protection > ProtectionRef;
+typedef ::std::shared_ptr< Protection > ProtectionRef;
 
 // ============================================================================
 
@@ -588,7 +589,7 @@ private:
     bool                mbDxf;
 };
 
-typedef ::boost::shared_ptr< Border > BorderRef;
+typedef ::std::shared_ptr< Border > BorderRef;
 
 // ============================================================================
 
@@ -704,8 +705,8 @@ public:
     void                writeToPropertyMap( PropertyMap& rPropMap ) const;
 
 private:
-    typedef ::boost::shared_ptr< PatternFillModel >   PatternModelRef;
-    typedef ::boost::shared_ptr< GradientFillModel >  GradientModelRef;
+    typedef ::std::shared_ptr< PatternFillModel >   PatternModelRef;
+    typedef ::std::shared_ptr< GradientFillModel >  GradientModelRef;
 
     PatternModelRef     mxPatternModel;
     GradientModelRef    mxGradientModel;
@@ -713,7 +714,7 @@ private:
     bool                mbDxf;
 };
 
-typedef ::boost::shared_ptr< Fill > FillRef;
+typedef ::std::shared_ptr< Fill > FillRef;
 
 // ============================================================================
 
@@ -803,7 +804,7 @@ private:
                         meRotationRef;      /// Rotation reference dependent on border.
 };
 
-typedef ::boost::shared_ptr< Xf > XfRef;
+typedef ::std::shared_ptr< Xf > XfRef;
 
 // ============================================================================
 
@@ -849,7 +850,7 @@ private:
     FillRef             mxFill;             /// Fill data.
 };
 
-typedef ::boost::shared_ptr< Dxf > DxfRef;
+typedef ::std::shared_ptr< Dxf > DxfRef;
 
 // ============================================================================
 
@@ -903,7 +904,7 @@ private:
     bool                mbCreated;          /// True = style sheet created.
 };
 
-typedef ::boost::shared_ptr< CellStyle > CellStyleRef;
+typedef ::std::shared_ptr< CellStyle > CellStyleRef;
 
 // ============================================================================
 

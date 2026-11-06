@@ -512,7 +512,7 @@ namespace
 									double fDXOffset= *(pCandidate->getDoubleDXArray().begin() + (nPortionIndex - 1));
 									::std::transform(
 										aNewDXArray.begin(), aNewDXArray.end(),
-										aNewDXArray.begin(), ::std::bind2nd(::std::minus<double>(), fDXOffset));
+										aNewDXArray.begin(), 										[fDXOffset](auto& _x) { return ::std::minus<double>()(_x, fDXOffset); });
 								}
 
 								if(bAutosizeScale)
@@ -520,7 +520,7 @@ namespace
 									// when autosize scaling, adapt to DXArray, too
 									::std::transform(
 										aNewDXArray.begin(), aNewDXArray.end(),
-										aNewDXArray.begin(), ::std::bind2nd(::std::multiplies<double>(), fAutosizeScaleFactor));
+										aNewDXArray.begin(), [fAutosizeScaleFactor](auto& _x) { return ::std::multiplies<double>()(_x, fAutosizeScaleFactor); });
 								}
 							}
 

@@ -301,7 +301,7 @@ public:
 class SwInsertSectionTabDialog : public SfxTabDialog
 {
 	SwWrtShell& 	rWrtSh;
-    ::std::auto_ptr<SwSectionData> m_pSectionData;
+    ::std::unique_ptr<SwSectionData> m_pSectionData;
 
 protected:
 	virtual void 	PageCreated( sal_uInt16 nId, SfxTabPage &rPage );

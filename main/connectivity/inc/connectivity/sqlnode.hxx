@@ -31,7 +31,7 @@
 #include <vector>
 #include <functional>
 #include <set>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <rtl/ustrbuf.hxx>
 
 // forward declarations
@@ -87,7 +87,7 @@ namespace connectivity
 	    const ::com::sun::star::lang::Locale&	rLocale;
         ::dbtools::DatabaseMetaData             aMetaData;
         OSQLParser*                             pParser;
-        ::boost::shared_ptr< QueryNameSet >     pSubQueryHistory;
+        ::std::shared_ptr< QueryNameSet >     pSubQueryHistory;
 	    ::com::sun::star::uno::Reference< ::com::sun::star::util::XNumberFormatter >    xFormatter;
 	    ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >       xField;
 	    ::com::sun::star::uno::Reference< ::com::sun::star::container::XNameAccess >    xQueries;  // see bParseToSDBCLevel

@@ -581,7 +581,7 @@ void CustomAnimationList::update( MainSequencePtr pMainSequence )
 
 // --------------------------------------------------------------------
 
-struct stl_append_effect_func : public std::unary_function<CustomAnimationEffectPtr, void>
+struct stl_append_effect_func 
 {
 	stl_append_effect_func( CustomAnimationList& rList ) : mrList( rList ) {}
 	void operator()(CustomAnimationEffectPtr pEffect);

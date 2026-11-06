@@ -21,6 +21,7 @@
 
 
 
+#include <memory>
 #include "precompiled_sd.hxx"
 
 #include "SlsQueueProcessor.hxx"
@@ -34,7 +35,7 @@ namespace sd { namespace slidesorter { namespace cache {
 
 QueueProcessor::QueueProcessor (
     RequestQueue& rQueue,
-    const ::boost::shared_ptr<BitmapCache>& rpCache,
+    const ::std::shared_ptr<BitmapCache>& rpCache,
     const Size& rPreviewSize,
     const bool bDoSuperSampling,
     const SharedCacheContext& rpCacheContext)
@@ -243,7 +244,7 @@ void QueueProcessor::RemoveRequest (CacheKey aKey)
 
 
 void QueueProcessor::SetBitmapCache (
-    const ::boost::shared_ptr<BitmapCache>& rpCache)
+    const ::std::shared_ptr<BitmapCache>& rpCache)
 {
     mpCache = rpCache;
 }

@@ -28,7 +28,7 @@
 #include "tools/AsynchronousTask.hxx"
 #include <tools/time.hxx>
 #include <osl/diagnose.h>
-#include <boost/weak_ptr.hpp>
+#include <memory>
 
 #undef VERBOSE
 
@@ -48,12 +48,12 @@ public:
 
 
 
-::boost::shared_ptr<TimerBasedTaskExecution> TimerBasedTaskExecution::Create (
-    const ::boost::shared_ptr<AsynchronousTask>& rpTask,
+::std::shared_ptr<TimerBasedTaskExecution> TimerBasedTaskExecution::Create (
+    const ::std::shared_ptr<AsynchronousTask>& rpTask,
     sal_uInt32 nMillisecondsBetweenSteps,
     sal_uInt32 nMaxTimePerStep)
 {
-    ::boost::shared_ptr<TimerBasedTaskExecution> pExecution(
+    ::std::shared_ptr<TimerBasedTaskExecution> pExecution(
         new TimerBasedTaskExecution(rpTask,nMillisecondsBetweenSteps,nMaxTimePerStep),
         Deleter());
     // Let the new object have a shared_ptr to itself, so that it can
@@ -77,13 +77,13 @@ void TimerBasedTaskExecution::Release (void)
 
 //static
 void TimerBasedTaskExecution::ReleaseTask (
-    const ::boost::weak_ptr<TimerBasedTaskExecution>& rpExecution)
+    const ::std::weak_ptr<TimerBasedTaskExecution>& rpExecution)
 {
     if ( ! rpExecution.expired())
     {
         try
         {
-            ::boost::shared_ptr<tools::TimerBasedTaskExecution> pExecution (rpExecution);
+            ::std::shared_ptr<tools::TimerBasedTaskExecution> pExecution (rpExecution);
             pExecution->Release();
         }
         catch (::boost::bad_weak_ptr)
@@ -100,7 +100,7 @@ void TimerBasedTaskExecution::ReleaseTask (
 
 
 TimerBasedTaskExecution::TimerBasedTaskExecution (
-    const ::boost::shared_ptr<AsynchronousTask>& rpTask,
+    const ::std::shared_ptr<AsynchronousTask>& rpTask,
     sal_uInt32 nMillisecondsBetweenSteps,
     sal_uInt32 nMaxTimePerStep)
     : mpTask(rpTask),
@@ -126,7 +126,7 @@ TimerBasedTaskExecution::~TimerBasedTaskExecution (void)
 
 
 void TimerBasedTaskExecution::SetSelf (
-    const ::boost::shared_ptr<TimerBasedTaskExecution>& rpSelf)
+    const ::std::shared_ptr<TimerBasedTaskExecution>& rpSelf)
 {
     if (mpTask.get() != NULL)
         mpSelf = rpSelf;

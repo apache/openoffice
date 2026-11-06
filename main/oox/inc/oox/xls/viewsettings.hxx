@@ -26,6 +26,7 @@
 
 #include <com/sun/star/table/CellAddress.hpp>
 #include <com/sun/star/table/CellRangeAddress.hpp>
+#include <memory>
 #include "oox/xls/addressconverter.hxx"
 #include "oox/xls/stylesbuffer.hxx"
 #include "oox/xls/worksheethelper.hxx"
@@ -95,7 +96,7 @@ struct SheetViewModel
     PaneSelectionModel& createPaneSelection( sal_Int32 nPaneId );
 };
 
-typedef ::boost::shared_ptr< SheetViewModel > SheetViewModelRef;
+typedef ::std::shared_ptr< SheetViewModel > SheetViewModelRef;
 
 // ----------------------------------------------------------------------------
 
@@ -166,7 +167,7 @@ struct WorkbookViewModel
     explicit            WorkbookViewModel();
 };
 
-typedef ::boost::shared_ptr< WorkbookViewModel > WorkbookViewModelRef;
+typedef ::std::shared_ptr< WorkbookViewModel > WorkbookViewModelRef;
 
 // ----------------------------------------------------------------------------
 

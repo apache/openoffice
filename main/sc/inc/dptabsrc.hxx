@@ -141,7 +141,7 @@ private:
 	sal_Bool					bResultOverflow;
     bool                    bPageFiltered;      // set if page field filters have been applied to cache table
 
-    ::std::auto_ptr<rtl::OUString> mpGrandTotalName;
+    ::std::unique_ptr<rtl::OUString> mpGrandTotalName;
 
 	void					CreateRes_Impl();
 	void					FillMemberResults();
@@ -314,8 +314,8 @@ private:
 	long				nUsedHier;
 	sal_uInt16				nFunction;			// enum GeneralFunction
 	String				aName;				// if empty, take from source
-    ::std::auto_ptr<rtl::OUString> mpLayoutName;
-    ::std::auto_ptr<rtl::OUString> mpSubtotalName;
+    ::std::unique_ptr<rtl::OUString> mpLayoutName;
+    ::std::unique_ptr<rtl::OUString> mpSubtotalName;
 	long				nSourceDim;			// >=0 if dup'ed
     ::com::sun::star::sheet::DataPilotFieldReference
                         aReferenceValue;    // settings for "show data as" / "displayed value"
@@ -656,7 +656,7 @@ private:
     SCROW       mnDataId;
     // End Comments
 //	String			aCaption;			// visible name (changeable by user)
-    ::std::auto_ptr<rtl::OUString> mpLayoutName;
+    ::std::unique_ptr<rtl::OUString> mpLayoutName;
 
     sal_Int32       nPosition;          // manual sorting
 	sal_Bool			bVisible;

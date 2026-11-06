@@ -64,7 +64,7 @@ class OTableTreeListBox : public OMarkableTreeListBox
 protected:
     ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XConnection >
                     m_xConnection;      // the connection we're working for, set in implOnNewConnection, called by UpdateTableList
-    ::std::auto_ptr< ImageProvider >
+    ::std::unique_ptr< ImageProvider >
                     m_pImageProvider;   // provider for our images
 	sal_Bool		m_bVirtualRoot; // should the first entry be visible
     bool            m_bNoEmptyFolders;  // should empty catalogs/schematas be prevented from being displayed?

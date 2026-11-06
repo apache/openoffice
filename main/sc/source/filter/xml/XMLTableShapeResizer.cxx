@@ -40,7 +40,7 @@
 #include <vector>
 
 using namespace ::com::sun::star;
-using ::std::auto_ptr;
+using ::std::unique_ptr;
 using ::std::vector;
 using ::rtl::OUString;
 

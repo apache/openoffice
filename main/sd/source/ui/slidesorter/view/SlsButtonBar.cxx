@@ -50,6 +50,7 @@
 #include <basegfx/numeric/ftools.hxx>
 #include <com/sun/star/presentation/XPresentation2.hpp>
 #include <boost/bind.hpp>
+#include <memory>
 
 using ::com::sun::star::uno::Any;
 using ::com::sun::star::uno::Reference;
@@ -66,7 +67,7 @@ class ButtonBar::BackgroundTheme
 {
 public:
 	BackgroundTheme(
-		const ::boost::shared_ptr<Theme>& rpTheme,
+		const ::std::shared_ptr<Theme>& rpTheme,
 		const ::std::vector<SharedButton>& rButtons);
 	/** Set the preview bounding box, the maximal area in which to display
 		buttons. A call to this method triggers a call to Layout().
@@ -81,7 +82,7 @@ public:
 	virtual Rectangle GetButtonArea (void) = 0;
 
 protected:
-	::boost::shared_ptr<Theme> mpTheme;
+	::std::shared_ptr<Theme> mpTheme;
 	Rectangle maPreviewBoundingBox;
 	Size maMinimumLargeButtonAreaSize;
 	Size maMinimumMediumButtonAreaSize;
@@ -102,7 +103,7 @@ namespace {
 	{
 	public:
 		RectangleBackgroundTheme(
-			const ::boost::shared_ptr<Theme>& rpTheme,
+			const ::std::shared_ptr<Theme>& rpTheme,
 			const ::std::vector<SharedButton>& rButtons);
 		virtual BitmapEx CreateBackground (
 			const OutputDevice& rTemplateDevice,
@@ -123,7 +124,7 @@ namespace {
 	{
 	public:
 		BitmapBackgroundTheme(
-			const ::boost::shared_ptr<Theme>& rpTheme,
+			const ::std::shared_ptr<Theme>& rpTheme,
 			const ::std::vector<SharedButton>& rButtons);
 		virtual BitmapEx CreateBackground (
 			const OutputDevice& rTemplateDevice,
@@ -359,18 +360,18 @@ sal_Int32 ButtonBar::GetButtonCount (const bool bIsExcluded) const
 
 
 
-::boost::shared_ptr<Button> ButtonBar::GetButton (
+::std::shared_ptr<Button> ButtonBar::GetButton (
 	const bool bIsExcluded,
 	const sal_Int32 nIndex) const
 {
-	const ::std::vector<boost::shared_ptr<Button> >& rButtons (bIsExcluded
+	const ::std::vector<std::shared_ptr<Button> >& rButtons (bIsExcluded
 		? maExcludedButtons
 		: maRegularButtons);
 
 	if (nIndex<0 || sal_uInt32(nIndex)>=rButtons.size())
 	{
 		OSL_ASSERT(nIndex<0 || sal_uInt32(nIndex)>=rButtons.size());
-		return ::boost::shared_ptr<Button>();
+		return ::std::shared_ptr<Button>();
 	}
 	else
 		return rButtons[sal_uInt32(nIndex)];
@@ -688,12 +689,12 @@ bool ButtonBar::IsVisible (const model::SharedPageDescriptor& rpDescriptor)
 void ButtonBar::HandleDataChangeEvent (void)
 {
 	maExcludedButtons.clear();
-	maExcludedButtons.push_back(::boost::shared_ptr<Button>(new UnhideButton(mrSlideSorter)));
+	maExcludedButtons.push_back(::std::shared_ptr<Button>(new UnhideButton(mrSlideSorter)));
 
 	maRegularButtons.clear();
-	maRegularButtons.push_back(::boost::shared_ptr<Button>(new StartShowButton(mrSlideSorter)));
-	maRegularButtons.push_back(::boost::shared_ptr<Button>(new HideButton(mrSlideSorter)));
-	maRegularButtons.push_back(::boost::shared_ptr<Button>(new DuplicateButton(mrSlideSorter)));
+	maRegularButtons.push_back(::std::shared_ptr<Button>(new StartShowButton(mrSlideSorter)));
+	maRegularButtons.push_back(::std::shared_ptr<Button>(new HideButton(mrSlideSorter)));
+	maRegularButtons.push_back(::std::shared_ptr<Button>(new DuplicateButton(mrSlideSorter)));
 
 	mpBackgroundTheme.reset(
 		new BitmapBackgroundTheme(
@@ -795,7 +796,7 @@ void ButtonBar::ReleaseLock (void)
 //===== BackgroundTheme =====================================================
 
 ButtonBar::BackgroundTheme::BackgroundTheme (
-	const ::boost::shared_ptr<Theme>& rpTheme,
+	const ::std::shared_ptr<Theme>& rpTheme,
 	const ::std::vector<SharedButton>& rButtons)
 	: mpTheme(rpTheme)
 {
@@ -866,7 +867,7 @@ Button::IconSize ButtonBar::BackgroundTheme::GetIconSize (void) const
 //===== RectangleBackgroundTheme ============================================
 
 RectangleBackgroundTheme::RectangleBackgroundTheme (
-	const ::boost::shared_ptr<Theme>& rpTheme,
+	const ::std::shared_ptr<Theme>& rpTheme,
 	const ::std::vector<SharedButton>& rButtons)
 	: BackgroundTheme(rpTheme, rButtons),
 	  mnBarHeight(0)
@@ -982,7 +983,7 @@ void RectangleBackgroundTheme::Layout (void)
 //===== BitmapBackgroundTheme =================================================
 
 BitmapBackgroundTheme::BitmapBackgroundTheme (
-	const ::boost::shared_ptr<Theme>& rpTheme,
+	const ::std::shared_ptr<Theme>& rpTheme,
 	const ::std::vector<SharedButton>& rButtons)
 	: BackgroundTheme(rpTheme, rButtons),
 	  maButtonArea(),
@@ -1208,7 +1209,7 @@ void TextButton::Paint (
 	OutputDevice& rDevice,
 	const Point aOffset,
 	const double nAlpha,
-	const ::boost::shared_ptr<Theme>& rpTheme) const
+	const ::std::shared_ptr<Theme>& rpTheme) const
 {
 	(void)nAlpha;
 
@@ -1286,7 +1287,7 @@ void ImageButton::Paint (
 	OutputDevice& rDevice,
 	const Point aOffset,
 	const double nAlpha,
-	const ::boost::shared_ptr<Theme>& rpTheme) const
+	const ::std::shared_ptr<Theme>& rpTheme) const
 {
 	(void)rpTheme;
 

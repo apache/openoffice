@@ -30,7 +30,7 @@
 #include <basegfx/range/b2irectangle.hxx>
 #include <basegfx/tuple/b2ituple.hxx>
 #include <tools/gen.hxx>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <vector>
 #include <map>
 

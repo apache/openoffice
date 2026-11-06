@@ -40,7 +40,7 @@
 #import <Cocoa/Cocoa.h>
 #include <postmac.h>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <boost/utility.hpp>
 #include <vector>
 

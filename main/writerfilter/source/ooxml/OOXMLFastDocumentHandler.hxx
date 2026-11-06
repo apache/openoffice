@@ -30,6 +30,7 @@
 #include <com/sun/star/xml/sax/XFastDocumentHandler.hpp>
 #include <resourcemodel/WW8ResourceModel.hxx>
 #include <ooxml/OOXMLDocument.hxx>
+#include <memory>
 #include "OOXMLParserState.hxx"
 
 namespace writerfilter {
@@ -93,8 +94,8 @@ private:
     Stream::Pointer_t mpTmpStream;
 #endif
     OOXMLDocument * mpDocument;
-    mutable boost::shared_ptr<OOXMLFastContextHandler> mpContextHandler;
-    boost::shared_ptr<OOXMLFastContextHandler> getContextHandler() const;
+    mutable std::shared_ptr<OOXMLFastContextHandler> mpContextHandler;
+    std::shared_ptr<OOXMLFastContextHandler> getContextHandler() const;
 };
 }}
 

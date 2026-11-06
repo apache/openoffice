@@ -89,6 +89,7 @@
 #include <svx/sdr/properties/properties.hxx>
 #include <editeng/eeitem.hxx>
 #include <svl/itemset.hxx>
+#include <memory>
 
 using namespace ::com::sun::star;
 using namespace ::com::sun::star::uno;
@@ -834,9 +835,9 @@ SdrOutliner& SdrModel::GetDrawOutliner(const SdrTextObj* pObj) const
 	return *pDrawOutliner;
 }
 
-boost::shared_ptr< SdrOutliner > SdrModel::CreateDrawOutliner(const SdrTextObj* pObj)
+std::shared_ptr< SdrOutliner > SdrModel::CreateDrawOutliner(const SdrTextObj* pObj)
 {
-	boost::shared_ptr< SdrOutliner > xDrawOutliner( SdrMakeOutliner( OUTLINERMODE_TEXTOBJECT, this ) );
+	std::shared_ptr< SdrOutliner > xDrawOutliner( SdrMakeOutliner( OUTLINERMODE_TEXTOBJECT, this ) );
 	ImpSetOutlinerDefaults(xDrawOutliner.get(), sal_True);
 	xDrawOutliner->SetTextObj(pObj);
 	return xDrawOutliner;

@@ -41,7 +41,7 @@
 #include <cppuhelper/compbase3.hxx>
 #include <cppuhelper/basemutex.hxx>
 #include <rtl/ref.hxx>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 namespace css = ::com::sun::star;
 namespace cssu = ::com::sun::star::uno;
@@ -135,7 +135,7 @@ private:
 		const ::rtl::OUString& rsTitle,
 		const css::uno::Reference<css::awt::XWindow>& rxNotesContentWindow,
 		const css::uno::Reference<css::awt::XWindow>& rxNotesBorderWindow,
-		const ::boost::shared_ptr<PresenterTextView>& rpNotesTextView);
+		const ::std::shared_ptr<PresenterTextView>& rpNotesTextView);
 	PresenterPaneContainer::SharedPaneDescriptor GetPreviewPane (void) const;
 };
 

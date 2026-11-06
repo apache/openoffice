@@ -217,6 +217,7 @@
 #endif
 #ifndef _VCL_STDTEXT_HXX
 #include <vcl/stdtext.hxx>
+#include <memory>
 #endif
 #ifndef DBAUI_TOOLS_HXX
 #include "UITools.hxx"
@@ -909,9 +910,9 @@ void SbaGridHeader::PostExecuteColumnContextMenu(sal_uInt16 nColId, const PopupM
 
 				if(!xField.is())
 					break;
-				::std::vector< ::boost::shared_ptr<OTableRow> > vClipboardList;
+				::std::vector< ::std::shared_ptr<OTableRow> > vClipboardList;
 				// send it to the clipboard
-				vClipboardList.push_back(::boost::shared_ptr<OTableRow>(new OTableRow(xField)));
+				vClipboardList.push_back(::std::shared_ptr<OTableRow>(new OTableRow(xField)));
 				OTableRowExchange* pData = new OTableRowExchange(vClipboardList);
 				Reference< ::com::sun::star::datatransfer::XTransferable> xRef = pData;
 				pData->CopyToClipboard(GetParent());
@@ -1499,7 +1500,7 @@ void SbaGridControl::DoFieldDrag(sal_uInt16 nColumnPos, sal_Int16 nRowPos)
 
 }
 /// unary_function Functor object for class ZZ returntype is void
-	struct SbaGridControlPrec : ::std::unary_function<DataFlavorExVector::value_type,bool>
+	struct SbaGridControlPrec
 	{
 		sal_Bool	bQueryDrop;
 		SbaGridControlPrec(sal_Bool _bQueryDrop)

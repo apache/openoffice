@@ -31,7 +31,7 @@
 #include <com/sun/star/util/XChangesListener.hpp>
 #include <tools/string.hxx>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 #include <comphelper/stl_types.hxx>
 #include <vcl/timer.hxx>
@@ -53,9 +53,9 @@ class CustomAnimationEffect;
 class AnimationTrigger;
 
 class CustomAnimationPreset;
-typedef boost::shared_ptr< CustomAnimationPreset > CustomAnimationPresetPtr;
+typedef std::shared_ptr< CustomAnimationPreset > CustomAnimationPresetPtr;
 
-typedef boost::shared_ptr< CustomAnimationEffect > CustomAnimationEffectPtr;
+typedef std::shared_ptr< CustomAnimationEffect > CustomAnimationEffectPtr;
 
 typedef std::list< CustomAnimationEffectPtr > EffectSequence;
 
@@ -272,7 +272,7 @@ private:
 	sal_Int32 mnGroupId;
 };
 
-typedef boost::shared_ptr< CustomAnimationTextGroup > CustomAnimationTextGroupPtr;
+typedef std::shared_ptr< CustomAnimationTextGroup > CustomAnimationTextGroupPtr;
 typedef std::map< sal_Int32, CustomAnimationTextGroupPtr > CustomAnimationTextGroupMap;
 
 class EffectSequenceHelper
@@ -382,7 +382,7 @@ private:
 	MainSequence*	mpMainSequence;
 };
 
-typedef boost::shared_ptr< InteractiveSequence > InteractiveSequencePtr;
+typedef std::shared_ptr< InteractiveSequence > InteractiveSequencePtr;
 typedef std::list< InteractiveSequencePtr > InteractiveSequenceList;
 
 class MainSequence : public EffectSequenceHelper, public ISequenceListener
@@ -455,7 +455,7 @@ protected:
 	sal_Int32 mbIgnoreChanges;
 };
 
-typedef boost::shared_ptr< MainSequence > MainSequencePtr;
+typedef std::shared_ptr< MainSequence > MainSequencePtr;
 
 class MainSequenceRebuildGuard
 {

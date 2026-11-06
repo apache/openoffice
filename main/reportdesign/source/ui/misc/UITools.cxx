@@ -101,6 +101,7 @@
 #include <i18npool/mslangid.hxx>
 #include "dlgpage.hxx"
 #include <vcl/msgbox.hxx>
+#include <memory>
 #include "rptui_slotid.hrc"
 #include "uistrings.hrc"
 #include "RptObject.hxx"
@@ -277,7 +278,7 @@ namespace
                 const SfxPoolItem* pItem = _rItemSet.GetItem(aIt->nWID);
                 if ( pItem )
                 {
-                    ::std::auto_ptr<SfxPoolItem> pClone(pItem->Clone());
+                    ::std::unique_ptr<SfxPoolItem> pClone(pItem->Clone());
                     pClone->PutValue(_xShape->getPropertyValue(aIt->sName), aIt->nMemberId);
                     _rItemSet.Put(*pClone, aIt->nWID);
                 }
@@ -653,7 +654,7 @@ bool openCharDialog( const uno::Reference<report::XReportControlFormat >& _rxRep
         { SID_ATTR_CHAR_CTL_WEIGHT, SFX_ITEM_POOLABLE }
 	};
     Window* pParent = VCLUnoHelper::GetWindow( _rxParentWindow );
-	::std::auto_ptr<FontList> pFontList(new FontList( pParent ));
+	::std::unique_ptr<FontList> pFontList(new FontList( pParent ));
 	XColorListSharedPtr aColorTable(XPropertyListFactory::CreateSharedXColorList(SvtPathOptions().GetPalettePath()));
 	SfxPoolItem* pDefaults[] =
 	{
@@ -715,7 +716,7 @@ bool openCharDialog( const uno::Reference<report::XReportControlFormat >& _rxRep
     bool bSuccess = false;
 	try
 	{
-		::std::auto_ptr<SfxItemSet> pDescriptor( new SfxItemSet( *pPool, pRanges ) );
+		::std::unique_ptr<SfxItemSet> pDescriptor( new SfxItemSet( *pPool, pRanges ) );
         lcl_CharPropertiesToItems( _rxReportControlFormat, *pDescriptor );
 
 		{	// want the dialog to be destroyed before our set
@@ -750,7 +751,7 @@ bool openAreaDialog( const uno::Reference<report::XShape >& _xShape,const uno::R
     if ( !_xShape.is() || !_rxParentWindow.is() )
         return false;
 
-    ::boost::shared_ptr<rptui::OReportModel> pModel  = ::reportdesign::OReportDefinition::getSdrModel(_xShape->getSection()->getReportDefinition());
+    ::std::shared_ptr<rptui::OReportModel> pModel  = ::reportdesign::OReportDefinition::getSdrModel(_xShape->getSection()->getReportDefinition());
 
     Window* pParent = VCLUnoHelper::GetWindow( _rxParentWindow );
 
@@ -764,13 +765,13 @@ bool openAreaDialog( const uno::Reference<report::XShape >& _xShape,const uno::R
 	try
 	{
         SfxItemPool& rItemPool = pModel->GetItemPool();
-        ::std::auto_ptr<SfxItemSet> pDescriptor( new SfxItemSet( rItemPool, rItemPool.GetFirstWhich(),rItemPool.GetLastWhich() ) );
+        ::std::unique_ptr<SfxItemSet> pDescriptor( new SfxItemSet( rItemPool, rItemPool.GetFirstWhich(),rItemPool.GetLastWhich() ) );
 
         lcl_fillShapeToItems(_xShape,*pDescriptor);
 
         {	// want the dialog to be destroyed before our set
             SvxAbstractDialogFactory* pFact = SvxAbstractDialogFactory::Create();
-            ::std::auto_ptr<AbstractSvxAreaTabDialog> pDialog(pFact->CreateSvxAreaTabDialog( pParent,pDescriptor.get(),pModel.get(), true));
+            ::std::unique_ptr<AbstractSvxAreaTabDialog> pDialog(pFact->CreateSvxAreaTabDialog( pParent,pDescriptor.get(),pModel.get(), true));
             bSuccess = ( RET_OK == pDialog->Execute() );
             if ( bSuccess )
             {
@@ -1040,7 +1041,7 @@ bool openDialogFormula_nothrow( ::rtl::OUString& _in_out_rFormula
         uno::Reference< report::meta::XFunctionManager> xMgr(xFactory->createInstanceWithContext(::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.report.pentaho.SOFunctionManager")),_xContext),uno::UNO_QUERY);
         if ( xMgr.is() )
         {
-            ::boost::shared_ptr< formula::IFunctionManager > pFormulaManager(new FunctionManager(xMgr) );
+            ::std::shared_ptr< formula::IFunctionManager > pFormulaManager(new FunctionManager(xMgr) );
             ReportFormula aFormula( _in_out_rFormula );
             FormulaDialog aDlg(pParent,xServiceFactory,pFormulaManager,aFormula.getUndecoratedContent(),_xRowSet);
             bSuccess = aDlg.Execute() == RET_OK;

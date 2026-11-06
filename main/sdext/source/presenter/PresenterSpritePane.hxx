@@ -42,7 +42,7 @@
 #include <cppuhelper/compbase1.hxx>
 #include <rtl/ref.hxx>
 #include <boost/noncopyable.hpp>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 namespace css = ::com::sun::star;
 
@@ -66,7 +66,7 @@ public:
 
     using css::lang::XEventListener::disposing;
 
-    ::boost::shared_ptr<PresenterSprite> GetSprite (void);
+    ::std::shared_ptr<PresenterSprite> GetSprite (void);
 
     static ::rtl::OUString getImplementationName_static (void);
     static css::uno::Sequence< ::rtl::OUString > getSupportedServiceNames_static (void);
@@ -101,7 +101,7 @@ public:
 private:
     css::uno::Reference<css::awt::XWindow> mxParentWindow;
     css::uno::Reference<css::rendering::XSpriteCanvas> mxParentCanvas;
-    ::boost::shared_ptr<PresenterSprite> mpSprite;
+    ::std::shared_ptr<PresenterSprite> mpSprite;
 
     virtual void CreateCanvases (
         const css::uno::Reference<css::awt::XWindow>& rxParentWindow,

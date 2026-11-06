@@ -63,7 +63,7 @@
 #include <vcl/svapp.hxx>
 #include <set>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <boost/bind.hpp>
 #include <algorithm>
 #include <stack>
@@ -110,7 +110,7 @@ namespace
             return aPosition.nContent.GetIndex();
         }
     };
-    typedef boost::shared_ptr < SwXBookmarkPortion_Impl > SwXBookmarkPortion_ImplSharedPtr;
+    typedef std::shared_ptr < SwXBookmarkPortion_Impl > SwXBookmarkPortion_ImplSharedPtr;
     struct BookmarkCompareStruct
     {
         bool operator () ( const SwXBookmarkPortion_ImplSharedPtr &r1,
@@ -219,7 +219,7 @@ namespace
             return maPosition.nContent.GetIndex();
         }
     };
-    typedef boost::shared_ptr < SwAnnotationStartPortion_Impl > SwAnnotationStartPortion_ImplSharedPtr;
+    typedef std::shared_ptr < SwAnnotationStartPortion_Impl > SwAnnotationStartPortion_ImplSharedPtr;
     struct AnnotationStartCompareStruct
     {
         bool operator () ( const SwAnnotationStartPortion_ImplSharedPtr &r1,
@@ -588,7 +588,7 @@ static uno::Reference<text::XTextRange>
 lcl_CreateMetaPortion(
     uno::Reference<text::XText> const& xParent,
     const SwUnoCrsr * const pUnoCrsr,
-    SwTxtAttr & rAttr, ::std::auto_ptr<TextRangeList_t const> & pPortions)
+    SwTxtAttr & rAttr, ::std::unique_ptr<TextRangeList_t const> & pPortions)
 {
     const uno::Reference<rdf::XMetadatable> xMeta( SwXMeta::CreateXMeta(
             *static_cast<SwFmtMeta &>(rAttr.GetAttr()).GetMeta(),
@@ -707,7 +707,7 @@ struct SwXRedlinePortion_Impl
     }
 };
 
-typedef boost::shared_ptr < SwXRedlinePortion_Impl >
+typedef std::shared_ptr < SwXRedlinePortion_Impl >
     SwXRedlinePortion_ImplSharedPtr;
 
 struct RedlineCompareStruct
@@ -810,7 +810,7 @@ lcl_ExportHints(
                         }
                         else
                         {
-                            ::std::auto_ptr<const TextRangeList_t>
+                            ::std::unique_ptr<const TextRangeList_t>
                                 pCurrentPortions(Top.first);
                             rPortionStack.pop();
                             const uno::Reference<text::XTextRange> xPortion(

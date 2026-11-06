@@ -26,7 +26,7 @@
 
 #include "sdmod.hxx"
 #include <memory>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <com/sun/star/uno/XInterface.hpp>
 
 namespace css = ::com::sun::star;
@@ -72,7 +72,7 @@ public:
 
         When in doubt, use the shared_ptr variant of this method.
     */
-    void AddResource (::std::auto_ptr<SdGlobalResource> pResource);
+    void AddResource (::std::unique_ptr<SdGlobalResource> pResource);
 
     /** Add a resource to the container.  By using a shared_ptr and
         releasing it only when the SgGlobalResourceContainer is destroyed
@@ -80,7 +80,7 @@ public:
         time of the destruction of SgGlobalResourceContainer no other
         references exist the resource is destroyed as well.
     */
-    void AddResource (::boost::shared_ptr<SdGlobalResource> pResource);
+    void AddResource (::std::shared_ptr<SdGlobalResource> pResource);
 
     /** Add a resource that is implemented as UNO object.  Destruction
         (when the sd modules is unloaded) is done by a) calling dispose()
@@ -90,10 +90,10 @@ public:
 
 protected:
     friend class ::SdModule;
-    friend class ::std::auto_ptr<SdGlobalResourceContainer>;
+    friend class ::std::unique_ptr<SdGlobalResourceContainer>;
 
     class Implementation;
-    ::std::auto_ptr<Implementation> mpImpl;
+    ::std::unique_ptr<Implementation> mpImpl;
 
     SdGlobalResourceContainer (void);
     ~SdGlobalResourceContainer (void);

@@ -36,6 +36,7 @@
 
 #include <boost/scoped_ptr.hpp>
 #include <boost/noncopyable.hpp>
+#include <memory>
 
 
 namespace slideshow {
@@ -570,7 +571,7 @@ public:
         anybody. If false is returned, no handler processed
         this event (and probably, nothing will happen at all)
     */
-    bool notifyAnimationStart( const boost::shared_ptr<AnimationNode>& rNode );
+    bool notifyAnimationStart( const std::shared_ptr<AnimationNode>& rNode );
 
     /** Notify that the given node leaves its active duration.
 
@@ -586,7 +587,7 @@ public:
         anybody. If false is returned, no handler processed
         this event (and probably, nothing will happen at all)
     */
-    bool notifyAnimationEnd( const boost::shared_ptr<AnimationNode>& rNode );
+    bool notifyAnimationEnd( const std::shared_ptr<AnimationNode>& rNode );
 
     /** Notify that the slide animations sequence leaves its
         active duration.
@@ -611,7 +612,7 @@ public:
         anybody. If false is returned, no handler processed
         this event (and probably, nothing will happen at all)
     */
-    bool notifyAudioStopped( const boost::shared_ptr<AnimationNode>& rNode );
+    bool notifyAudioStopped( const std::shared_ptr<AnimationNode>& rNode );
 
     /** Notify that the show has entered or exited pause mode
 
@@ -636,7 +637,7 @@ public:
         anybody. If false is returned, no handler processed
         this event (and probably, nothing will happen at all)
     */
-    bool notifyCommandStopAudio( const boost::shared_ptr<AnimationNode>& rNode );
+    bool notifyCommandStopAudio( const std::shared_ptr<AnimationNode>& rNode );
 
     /** Botifies that a hyperlink has been clicked.
 

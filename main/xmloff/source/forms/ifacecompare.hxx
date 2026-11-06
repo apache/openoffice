@@ -38,12 +38,9 @@ namespace xmloff
 	//=====================================================================
 	/** is stl-compliant structure for comparing Reference&lt; &lt;iface&gt; &gt; instances
 	*/
-	template < class IAFCE >
+
+	template<typename IAFCE>
 	struct OInterfaceCompare
-		:public ::std::binary_function	<	::com::sun::star::uno::Reference< IAFCE >
-										,	::com::sun::star::uno::Reference< IAFCE >
-										,	bool
-										>
 	{
 		bool operator() (const ::com::sun::star::uno::Reference< IAFCE >& lhs, const ::com::sun::star::uno::Reference< IAFCE >& rhs) const
 		{

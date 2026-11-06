@@ -37,6 +37,7 @@
 #include "OOXMLDocumentImpl.hxx"
 #include "RefAndPointer.hxx"
 #include <ooxml/OOXMLFastTokens.hxx>
+#include <memory>
 
 namespace writerfilter {
 namespace ooxml
@@ -45,7 +46,7 @@ using namespace ::std;
 using namespace ::com::sun::star;
 using namespace ::com::sun::star::xml::sax;
 
-typedef boost::shared_ptr<Stream> StreamPointer_t;
+typedef std::shared_ptr<Stream> StreamPointer_t;
 
 class OOXMLFastContextHandler:
     public ::cppu::WeakImplHelper1<
@@ -54,7 +55,7 @@ class OOXMLFastContextHandler:
 public:
     typedef RefAndPointer<XFastContextHandler, OOXMLFastContextHandler>
     RefAndPointer_t;
-    typedef boost::shared_ptr<OOXMLFastContextHandler> Pointer_t;
+    typedef std::shared_ptr<OOXMLFastContextHandler> Pointer_t;
 
     enum ResourceEnum_t { UNKNOWN, STREAM, PROPERTIES, TABLE, SHAPE };
 

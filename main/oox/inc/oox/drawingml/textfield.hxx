@@ -24,7 +24,7 @@
 #ifndef OOX_DRAWINGML_TEXTFIELD_HXX
 #define OOX_DRAWINGML_TEXTFIELD_HXX
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 #include "oox/drawingml/textrun.hxx"
 #include "oox/drawingml/textparagraphproperties.hxx"
@@ -57,7 +57,7 @@ private:
     ::rtl::OUString msUuid;
 };
 
-typedef boost::shared_ptr< TextField > TextFieldPtr;
+typedef std::shared_ptr< TextField > TextFieldPtr;
 
 } }
 

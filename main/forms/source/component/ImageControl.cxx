@@ -420,7 +420,7 @@ void OImageControlModel::read(const Reference<XObjectInputStream>& _rxInStream)
 sal_Bool OImageControlModel::impl_updateStreamForURL_lck( const ::rtl::OUString& _rURL, ValueChangeInstigator _eInstigator )
 {
     // create a stream for the image specified by the URL
-    ::std::auto_ptr< SvStream > pImageStream;
+    ::std::unique_ptr< SvStream > pImageStream;
     Reference< XInputStream > xImageStream;
 
     if ( ::svt::GraphicAccess::isSupportedURL( _rURL ) )

@@ -235,20 +235,20 @@ private: //member
     sal_Int32               m_nGlobalSeriesIndex;
 
     //some cached values for data labels as they are very expensive
-    mutable ::std::auto_ptr< ::com::sun::star::chart2::DataPointLabel >
+    mutable ::std::unique_ptr< ::com::sun::star::chart2::DataPointLabel >
                                                     m_apLabel_Series;
-    mutable ::std::auto_ptr< tNameSequence >        m_apLabelPropNames_Series;
-    mutable ::std::auto_ptr< tAnySequence >         m_apLabelPropValues_Series;
-    mutable ::std::auto_ptr< ::com::sun::star::chart2::Symbol >
+    mutable ::std::unique_ptr< tNameSequence >        m_apLabelPropNames_Series;
+    mutable ::std::unique_ptr< tAnySequence >         m_apLabelPropValues_Series;
+    mutable ::std::unique_ptr< ::com::sun::star::chart2::Symbol >
                                                     m_apSymbolProperties_Series;
 
-    mutable ::std::auto_ptr< ::com::sun::star::chart2::DataPointLabel >
+    mutable ::std::unique_ptr< ::com::sun::star::chart2::DataPointLabel >
                                                     m_apLabel_AttributedPoint;
-    mutable ::std::auto_ptr< tNameSequence >        m_apLabelPropNames_AttributedPoint;
-    mutable ::std::auto_ptr< tAnySequence >         m_apLabelPropValues_AttributedPoint;
-    mutable ::std::auto_ptr< ::com::sun::star::chart2::Symbol >
+    mutable ::std::unique_ptr< tNameSequence >        m_apLabelPropNames_AttributedPoint;
+    mutable ::std::unique_ptr< tAnySequence >         m_apLabelPropValues_AttributedPoint;
+    mutable ::std::unique_ptr< ::com::sun::star::chart2::Symbol >
                                                     m_apSymbolProperties_AttributedPoint;
-    mutable ::std::auto_ptr< ::com::sun::star::chart2::Symbol >
+    mutable ::std::unique_ptr< ::com::sun::star::chart2::Symbol >
                                                     m_apSymbolProperties_InvisibleSymbolForSelection;
     mutable sal_Int32                               m_nCurrentAttributedPoint;
     ::com::sun::star::awt::Size                     m_aReferenceSize;

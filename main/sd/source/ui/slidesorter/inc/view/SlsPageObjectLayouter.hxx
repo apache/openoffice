@@ -28,6 +28,7 @@
 #include "model/SlsSharedPageDescriptor.hxx"
 #include "tools/gen.hxx"
 #include <vcl/image.hxx>
+#include <memory>
 
 namespace sd { namespace slidesorter { namespace view {
 
@@ -49,7 +50,7 @@ public:
             area has to be, how many digits to except for the largest page number.
     */
     PageObjectLayouter(
-        const ::boost::shared_ptr<Theme>& rpTheme,
+        const ::std::shared_ptr<Theme>& rpTheme,
         const Size& rPageObjectWindowSize,
         const Size& rPreviewModelSize,
         const SharedSdWindow& rpWindow,
@@ -125,7 +126,7 @@ private:
     Rectangle maPreviewBoundingBox;
     Rectangle maTransitionEffectBoundingBox;
     const Image maTransitionEffectIcon;
-    const ::boost::shared_ptr<Font> mpPageNumberFont;
+    const ::std::shared_ptr<Font> mpPageNumberFont;
 
     Size GetPageNumberAreaSize (const int nPageCount);
     Rectangle CalculatePreviewBoundingBox (

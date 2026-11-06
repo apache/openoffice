@@ -7289,14 +7289,14 @@ public:
 
 	void test_context1()
 	{
-		std::auto_ptr<QNameTokenizerContext> context=QName::tokenizer().createQNameTokenizerContext();
+		std::unique_ptr<QNameTokenizerContext> context=QName::tokenizer().createQNameTokenizerContext();
 		context->addBinding("xmlns:test", "http://sample.org/test1");
 		CPPUNIT_ASSERT(rtl_str_compare(context->resolvePrefix("test"), "http://sample.org/test1")==0);
 	}
 
 	void test_context2()
 	{
-		std::auto_ptr<QNameTokenizerContext> context=QName::tokenizer().createQNameTokenizerContext();
+		std::unique_ptr<QNameTokenizerContext> context=QName::tokenizer().createQNameTokenizerContext();
 		context->addBinding("xmlns:test", "http://sample.org/test1");
 		context->enterScope();
 		CPPUNIT_ASSERT(rtl_str_compare(context->resolvePrefix("test"), "http://sample.org/test1")==0);
@@ -7306,7 +7306,7 @@ public:
 
 	void test_context3()
 	{
-		std::auto_ptr<QNameTokenizerContext> context=QName::tokenizer().createQNameTokenizerContext();
+		std::unique_ptr<QNameTokenizerContext> context=QName::tokenizer().createQNameTokenizerContext();
 		context->addBinding("xmlns:test", "http://sample.org/test1");
 		context->enterScope();
 		context->addBinding("xmlns:test", "http://sample.org/test2");
@@ -7318,7 +7318,7 @@ public:
 	void test_resolver1()
 	{
 		QName_t qn;
-		std::auto_ptr<QNameTokenizerContext> context=QName::tokenizer().createQNameTokenizerContext();
+		std::unique_ptr<QNameTokenizerContext> context=QName::tokenizer().createQNameTokenizerContext();
 		context->addBinding("xmlns:text", "urn:oasis:names:tc:opendocument:xmlns:text:1.0");
 		CPPUNIT_ASSERT(QName::tokenizer().insert("text:span", *context, &qn));
 		CPPUNIT_ASSERT(qn== NS_text::LN_span);
@@ -7326,7 +7326,7 @@ public:
 
 	void test_serializer1()
 	{
-		std::auto_ptr<QNameSerializerContext> context=QName::tokenizer().createQNameSerializerContext();
+		std::unique_ptr<QNameSerializerContext> context=QName::tokenizer().createQNameSerializerContext();
 		{
 			context->addPrefix("text", "urn:oasis:names:tc:opendocument:xmlns:text:1.0");
 			CPPUNIT_ASSERT(rtl_str_compare(context->getPrefix("urn:oasis:names:tc:opendocument:xmlns:text:1.0"), "text")==0);
@@ -7335,7 +7335,7 @@ public:
 
 	void test_serializer2()
 	{
-		std::auto_ptr<QNameSerializerContext> context=QName::tokenizer().createQNameSerializerContext();
+		std::unique_ptr<QNameSerializerContext> context=QName::tokenizer().createQNameSerializerContext();
 		{
 			CPPUNIT_ASSERT(rtl_str_compare(context->getPrefix("http://sample.org/test1"), "_p0")==0);
 			CPPUNIT_ASSERT(rtl_str_compare(context->getPrefix("http://sample.org/test2"), "_p1")==0);
@@ -7345,7 +7345,7 @@ public:
 
 	void test_prefix()
 	{
-		std::auto_ptr<QNameSerializerContext> context=QName::tokenizer().createQNameSerializerContext();
+		std::unique_ptr<QNameSerializerContext> context=QName::tokenizer().createQNameSerializerContext();
 		CPPUNIT_ASSERT(context->getPrefix("")==QName::EMPTY_STRING);
 		CPPUNIT_ASSERT(rtl_str_compare(context->getPrefix("urn:oasis:names:tc:opendocument:xmlns:animation:1.0"), "anium")==0);
 		CPPUNIT_ASSERT(rtl_str_compare(context->getPrefix("http://www.w3.org/1998/Math/MathML"), "math")==0);

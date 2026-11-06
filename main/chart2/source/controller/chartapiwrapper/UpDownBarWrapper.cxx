@@ -32,6 +32,7 @@
 #include "ContainerHelper.hxx"
 #include <com/sun/star/chart2/XChartType.hpp>
 #include <com/sun/star/chart2/XDataSeriesContainer.hpp>
+#include <memory>
 
 #include "LineProperties.hxx"
 #include "FillProperties.hxx"
@@ -139,7 +140,7 @@ namespace wrapper
 {
 
 UpDownBarWrapper::UpDownBarWrapper(
-    bool bUp, ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact )
+    bool bUp, ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact )
         : m_spChart2ModelContact( spChart2ModelContact )
         , m_aEventListenerContainer( m_aMutex )
         , m_aPropertySetName( bUp ? C2U("WhiteDay") : C2U("BlackDay") )

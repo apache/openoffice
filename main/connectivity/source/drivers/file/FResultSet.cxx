@@ -24,6 +24,7 @@
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_file.hxx"
 #include <limits>  // included here to prevent problems if compiling with C52
+#include <algorithm>
 
 #ifdef GCC
 #include <iostream>
@@ -1564,7 +1565,7 @@ sal_Bool OResultSet::OpenImpl()
 						}
 
 						m_pFileSet->get().erase(::std::remove_if(m_pFileSet->get().begin(),m_pFileSet->get().end(),
-															::std::bind2nd(::std::equal_to<sal_Int32>(),0))
+															[](const sal_Int32& _x) { return ::std::equal_to<sal_Int32>()(_x, 0); })
 										  ,m_pFileSet->get().end());
 
 						if (bWasSorted)

@@ -1190,7 +1190,7 @@ void LibPage::Export( void )
 
 
 	Window* pWin = static_cast<Window*>( this );
-    std::auto_ptr< ExportDialog > xNewDlg( new ExportDialog( pWin ) );
+    std::unique_ptr< ExportDialog > xNewDlg( new ExportDialog( pWin ) );
 
     if ( xNewDlg->Execute() == RET_OK )
 	{
@@ -1619,7 +1619,7 @@ void createLibImpl( Window* pWin, const ScriptDocument& rDocument,
 		i++;
 	}
 
-    std::auto_ptr< NewObjectDialog > xNewDlg( new NewObjectDialog( pWin, NEWOBJECTMODE_LIB ) );
+    std::unique_ptr< NewObjectDialog > xNewDlg( new NewObjectDialog( pWin, NEWOBJECTMODE_LIB ) );
 	xNewDlg->SetObjectName( aLibName );
 
     if ( xNewDlg->Execute() )
@@ -1691,7 +1691,7 @@ void createLibImpl( Window* pWin, const ScriptDocument& rDocument,
                         Image( IDEResId( nId ) ),
                         Image( IDEResId( nIdHC ) ),
                         pRootEntry, false,
-						std::auto_ptr< BasicEntry >( new BasicEntry( OBJ_TYPE_LIBRARY ) ) );
+						std::unique_ptr< BasicEntry >( new BasicEntry( OBJ_TYPE_LIBRARY ) ) );
 					DBG_ASSERT( pNewLibEntry, "InsertEntry fehlgeschlagen!" );
 
 					if( pNewLibEntry )
@@ -1701,7 +1701,7 @@ void createLibImpl( Window* pWin, const ScriptDocument& rDocument,
                             Image( IDEResId( RID_IMG_MODULE ) ),
                             Image( IDEResId( RID_IMG_MODULE_HC ) ),
                             pNewLibEntry, false,
-							std::auto_ptr< BasicEntry >( new BasicEntry( OBJ_TYPE_MODULE ) ) );
+							std::unique_ptr< BasicEntry >( new BasicEntry( OBJ_TYPE_MODULE ) ) );
 						DBG_ASSERT( pEntry_, "InsertEntry fehlgeschlagen!" );
 						pBasicBox->SetCurEntry( pEntry_ );
 						pBasicBox->Select( pBasicBox->GetCurEntry() );		// OV-Bug?!

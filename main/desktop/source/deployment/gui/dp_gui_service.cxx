@@ -216,7 +216,7 @@ void ServiceImpl::startExecuteModal(
     Reference< ui::dialogs::XDialogClosedListener > const & xListener )
 {
     bool bCloseDialog = true;  // only used if m_bShowUpdateOnly is true
-    ::std::auto_ptr<Application> app;
+    ::std::unique_ptr<Application> app;
     //ToDo: synchronize access to s_dialog !!!
     if (! dp_gui::TheExtensionManager::s_ExtMgr.is())
     {
@@ -228,7 +228,7 @@ void ServiceImpl::startExecuteModal(
         catch (Exception & exc) {
             if (bAppUp) {
                 const vos::OGuard guard( Application::GetSolarMutex() );
-                std::auto_ptr<ErrorBox> box(
+                std::unique_ptr<ErrorBox> box(
                     new ErrorBox( Application::GetActiveTopWindow(),
                                   WB_OK, exc.Message ) );
                 box->Execute();

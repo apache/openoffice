@@ -29,6 +29,7 @@
 #include "premac.h"
 #include <Cocoa/Cocoa.h>
 #include <cairo-quartz.h>
+#include <memory>
 #include "postmac.h"
 
 namespace cairo {
@@ -53,7 +54,7 @@ namespace cairo {
 		virtual CairoSurfaceSharedPtr getCairoSurface() const { return mpSurface; }
 		virtual SurfaceSharedPtr getSimilar( Content aContent, int width, int height ) const;
 
-        virtual boost::shared_ptr<VirtualDevice> createVirtualDevice() const;
+        virtual std::shared_ptr<VirtualDevice> createVirtualDevice() const;
 
 		virtual void Resize( int width, int height );
 

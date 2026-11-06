@@ -95,7 +95,7 @@ CharacterPropertyItemConverter::CharacterPropertyItemConverter(
 CharacterPropertyItemConverter::CharacterPropertyItemConverter(
     const uno::Reference< beans::XPropertySet > & rPropertySet,
     SfxItemPool& rItemPool,
-    ::std::auto_ptr< awt::Size > pRefSize,
+    ::std::unique_ptr< awt::Size > pRefSize,
     const ::rtl::OUString & rRefSizePropertyName,
     const uno::Reference< beans::XPropertySet > & rRefSizePropSet ) :
         ItemConverter( rPropertySet, rItemPool ),

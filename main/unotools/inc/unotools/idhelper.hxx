@@ -41,7 +41,7 @@ namespace utl
 typedef ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type >	TypeSequence;
 
 // compare to Sequences of Types
-struct TypeSequenceLess : public ::std::binary_function<TypeSequence, TypeSequence, bool>
+struct TypeSequenceLess 
 {
 public:
 	inline bool operator() (const TypeSequence& lhs, const TypeSequence& rhs) const

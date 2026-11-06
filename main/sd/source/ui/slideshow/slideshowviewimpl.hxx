@@ -123,7 +123,7 @@ protected:
 	::osl::Mutex& mrMutex;
 };
 
-typedef ::std::auto_ptr< SlideShowViewListeners >	SlideShowViewListenersPtr;
+typedef ::std::unique_ptr< SlideShowViewListeners >	SlideShowViewListenersPtr;
 
 // SlideShowViewPaintListeners
 
@@ -138,7 +138,7 @@ public:
 protected:
 	virtual bool implTypedNotify( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XPaintListener >& rListener, const ::com::sun::star::awt::PaintEvent& rEvent );
 };
-typedef ::std::auto_ptr< SlideShowViewPaintListeners >	SlideShowViewPaintListenersPtr;
+typedef ::std::unique_ptr< SlideShowViewPaintListeners >	SlideShowViewPaintListenersPtr;
 
 // SlideShowViewMouseListeners
 
@@ -154,7 +154,7 @@ protected:
 								  const WrappedMouseEvent&						rEvent );
 };
 
-typedef ::std::auto_ptr< SlideShowViewMouseListeners >	SlideShowViewMouseListenersPtr;
+typedef ::std::unique_ptr< SlideShowViewMouseListeners >	SlideShowViewMouseListenersPtr;
 
 
 // SlideShowViewMouseMotionListeners
@@ -171,7 +171,7 @@ protected:
 	virtual bool implTypedNotify( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XMouseMotionListener >&	rListener,
 								  const WrappedMouseMotionEvent&					rEvent );
 };
-typedef ::std::auto_ptr< SlideShowViewMouseMotionListeners >	SlideShowViewMouseMotionListenersPtr;
+typedef ::std::unique_ptr< SlideShowViewMouseMotionListeners >	SlideShowViewMouseMotionListenersPtr;
 
 
 // SlideShowView

@@ -39,7 +39,7 @@
 
 
 #include <boost/scoped_ptr.hpp>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 namespace css = ::com::sun::star;
 
@@ -120,7 +120,7 @@ private:
     class PaneContainer;
     ::boost::scoped_ptr<PaneContainer> mpPaneContainer;
     bool mbFirstUpdateSeen;
-    ::boost::shared_ptr<UpdateLockManager> mpUpdateLockManager;
+    ::std::shared_ptr<UpdateLockManager> mpUpdateLockManager;
 
     /** Create a new instance of FrameWindowPane.
         @param rPaneId

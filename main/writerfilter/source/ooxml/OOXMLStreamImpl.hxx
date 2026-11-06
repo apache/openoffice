@@ -27,6 +27,7 @@
 #include <comphelper/storagehelper.hxx>
 #include <com/sun/star/embed/XRelationshipAccess.hpp>
 #include <com/sun/star/io/XStream.hpp>
+#include <memory>
 
 namespace writerfilter {
 namespace ooxml
@@ -58,7 +59,7 @@ class OOXMLStreamImpl : public OOXMLStream
                        const ::rtl::OUString & rId,
                        ::rtl::OUString & rDocumentTarget);
 public:
-    typedef boost::shared_ptr<OOXMLStreamImpl> Pointer_t;
+    typedef std::shared_ptr<OOXMLStreamImpl> Pointer_t;
 
     OOXMLStreamImpl
     (OOXMLStreamImpl & rStream, StreamType_t nType);

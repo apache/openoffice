@@ -25,6 +25,7 @@
 #define INCLUDED_SLIDESHOW_EXTERNALSHAPEBASE_HXX
 
 #include <vector>
+#include <memory>
 
 #include "externalmediashape.hxx"
 #include "unoview.hxx"
@@ -126,7 +127,7 @@ namespace slideshow
             /// The associated XShape
             ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape > 	mxShape;
 
-            boost::shared_ptr<ExternalShapeBaseListener>                            mpListener;
+            std::shared_ptr<ExternalShapeBaseListener>                            mpListener;
 
             SubsettableShapeManagerSharedPtr                                        mpShapeManager;
             EventMultiplexer&                                                       mrEventMultiplexer;

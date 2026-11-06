@@ -87,8 +87,8 @@ namespace
     , SdrModel & rDrawModel
     , NumberFormatterWrapper * pNumberFormatterWrapper = NULL
     , ExplicitValueProvider * pExplicitValueProvider = NULL
-    , ::std::auto_ptr< ReferenceSizeProvider > pRefSizeProvider =
-          ::std::auto_ptr< ReferenceSizeProvider >()
+    , ::std::unique_ptr< ReferenceSizeProvider > pRefSizeProvider =
+          ::std::unique_ptr< ReferenceSizeProvider >()
     )
 {
     ::comphelper::ItemConverter* pItemConverter=NULL;
@@ -122,7 +122,7 @@ namespace
                     break;
             case OBJECTTYPE_TITLE:
             {
-                ::std::auto_ptr< awt::Size > pRefSize;
+                ::std::unique_ptr< awt::Size > pRefSize;
                 if( pRefSizeProvider.get() )
                     pRefSize.reset( new awt::Size( pRefSizeProvider->getPageSize()));
 
@@ -134,7 +134,7 @@ namespace
             break;
             case OBJECTTYPE_LEGEND:
             {
-                ::std::auto_ptr< awt::Size > pRefSize;
+                ::std::unique_ptr< awt::Size > pRefSize;
                 if( pRefSizeProvider.get() )
                     pRefSize.reset( new awt::Size( pRefSizeProvider->getPageSize()));
 
@@ -157,7 +157,7 @@ namespace
                     break;
             case OBJECTTYPE_AXIS:
             {
-                ::std::auto_ptr< awt::Size > pRefSize;
+                ::std::unique_ptr< awt::Size > pRefSize;
                 if( pRefSizeProvider.get() )
                     pRefSize.reset( new awt::Size( pRefSizeProvider->getPageSize()));
 
@@ -190,7 +190,7 @@ namespace
             case OBJECTTYPE_DATA_LABEL:
             case OBJECTTYPE_DATA_POINT:
             {
-                ::std::auto_ptr< awt::Size > pRefSize;
+                ::std::unique_ptr< awt::Size > pRefSize;
                 if( pRefSizeProvider.get() )
                     pRefSize.reset( new awt::Size( pRefSizeProvider->getPageSize()));
 
@@ -272,7 +272,7 @@ namespace
                 break;
             case OBJECTTYPE_DATA_CURVE_EQUATION:
             {
-                ::std::auto_ptr< awt::Size > pRefSize;
+                ::std::unique_ptr< awt::Size > pRefSize;
                 if( pRefSizeProvider.get() )
                     pRefSize.reset( new awt::Size( pRefSizeProvider->getPageSize()));
 
@@ -312,7 +312,7 @@ namespace
                 break;
             case OBJECTTYPE_AXIS:
             {
-                ::std::auto_ptr< awt::Size > pRefSize;
+                ::std::unique_ptr< awt::Size > pRefSize;
                 if( pRefSizeProvider.get() )
                     pRefSize.reset( new awt::Size( pRefSizeProvider->getPageSize()));
 
@@ -755,9 +755,9 @@ bool ChartController::executeDlg_ObjectProperties_withoutUndoGuard( const ::rtl:
 
         awt::Size aPageSize( ChartModelHelper::getPageSize(getModel()) );
 
-        ::std::auto_ptr< ReferenceSizeProvider > pRefSizeProv(
+        ::std::unique_ptr< ReferenceSizeProvider > pRefSizeProv(
             impl_createReferenceSizeProvider());
-        ::std::auto_ptr< ::comphelper::ItemConverter > apItemConverter(
+        ::std::unique_ptr< ::comphelper::ItemConverter > apItemConverter(
             createItemConverter( rObjectCID, getModel(), m_xCC,
                                  m_pDrawModelWrapper->getSdrModel(),
                                  &aNumberFormatterWrapper,

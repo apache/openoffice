@@ -33,6 +33,7 @@
 #include <com/sun/star/container/XNamed.hpp>
 #include <com/sun/star/drawing/framework/XConfiguration.hpp>
 #include <com/sun/star/drawing/framework/ConfigurationChangeEvent.hpp>
+#include <memory>
 
 using namespace ::com::sun::star;
 using namespace ::com::sun::star::uno;
@@ -62,7 +63,7 @@ namespace sd { namespace framework {
 
 ChangeRequestQueueProcessor::ChangeRequestQueueProcessor (
     const ::rtl::Reference<ConfigurationController>& rpConfigurationController,
-    const ::boost::shared_ptr<ConfigurationUpdater>& rpConfigurationUpdater)
+    const ::std::shared_ptr<ConfigurationUpdater>& rpConfigurationUpdater)
     : maMutex(),
       maQueue(),
       mnUserEventId(0),

@@ -202,8 +202,8 @@ private:
 	::com::sun::star::lang::Locale* mpLocale;
 
 	// #109538#
-	::std::auto_ptr<ImpDrawPageListWatcher> mpDrawPageListWatcher;
-	::std::auto_ptr<ImpMasterPageListWatcher> mpMasterPageListWatcher;
+	::std::unique_ptr<ImpDrawPageListWatcher> mpDrawPageListWatcher;
+	::std::unique_ptr<ImpMasterPageListWatcher> mpMasterPageListWatcher;
 
 	void                UpdatePageObjectsInNotes(sal_uInt16 nStartPos);
     void                UpdatePageRelativeURLs(SdPage* pPage, sal_uInt16 nPos, sal_Int32 nIncrement);

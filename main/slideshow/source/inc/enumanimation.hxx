@@ -24,6 +24,7 @@
 #ifndef INCLUDED_SLIDESHOW_ENUMANIMATION_HXX
 #define INCLUDED_SLIDESHOW_ENUMANIMATION_HXX
 
+#include <memory>
 #include "animation.hxx"
 
 
@@ -67,7 +68,7 @@ namespace slideshow
             virtual ValueType getUnderlyingValue() const = 0;
         };
 
-        typedef ::boost::shared_ptr< EnumAnimation > EnumAnimationSharedPtr;
+        typedef ::std::shared_ptr< EnumAnimation > EnumAnimationSharedPtr;
 
     }
 }

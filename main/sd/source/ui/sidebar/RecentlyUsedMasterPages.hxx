@@ -32,6 +32,7 @@
 #include "DrawDocShell.hxx"
 #include "MasterPageContainer.hxx"
 #include <com/sun/star/uno/XInterface.hpp>
+#include <memory>
 
 class SdPage;
 
@@ -66,9 +67,9 @@ private:
 	::std::vector<Link> maListeners;
 
 	class MasterPageList;
-	::std::auto_ptr<MasterPageList> mpMasterPages;
+	::std::unique_ptr<MasterPageList> mpMasterPages;
 	unsigned long int mnMaxListSize;
-	::boost::shared_ptr<MasterPageContainer> mpContainer;
+	::std::shared_ptr<MasterPageContainer> mpContainer;
 
 	RecentlyUsedMasterPages (void);
 	virtual ~RecentlyUsedMasterPages (void);

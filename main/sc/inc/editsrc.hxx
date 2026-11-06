@@ -171,10 +171,10 @@ public:
 class ScAccessibilityEditSource : public SvxEditSource
 {
 private:
-	::std::auto_ptr < ScAccessibleTextData > mpAccessibleTextData;
+	::std::unique_ptr < ScAccessibleTextData > mpAccessibleTextData;
 
 public:
-						ScAccessibilityEditSource( ::std::auto_ptr < ScAccessibleTextData > pAccessibleCellTextData );
+						ScAccessibilityEditSource( ::std::unique_ptr < ScAccessibleTextData > pAccessibleCellTextData );
 	virtual				~ScAccessibilityEditSource();
 
 	virtual SvxEditSource*		Clone() const;

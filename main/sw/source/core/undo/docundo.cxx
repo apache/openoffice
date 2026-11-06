@@ -49,7 +49,7 @@ using namespace ::com::sun::star;
 
 namespace sw {
 
-UndoManager::UndoManager(::std::auto_ptr<SwNodes> pUndoNodes,
+UndoManager::UndoManager(::std::unique_ptr<SwNodes> pUndoNodes,
             IDocumentDrawModelAccess & rDrawModelAccess,
             IDocumentRedlineAccess & rRedlineAccess,
             IDocumentState & rState)

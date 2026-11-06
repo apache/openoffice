@@ -126,7 +126,7 @@ using namespace ::com::sun::star;
 //using namespace formula;
 
 // comparing two property instances
-struct PropertyCompare : public ::std::binary_function< beans::Property, ::rtl::OUString , bool >
+struct PropertyCompare 
 {
 	bool operator() (const beans::Property& x, const ::rtl::OUString& y) const
 	{
@@ -803,9 +803,7 @@ inspection::LineDescriptor SAL_CALL GeometryHandler::describePropertyLine(const 
                 {
                     // add function names
                     ::std::for_each( m_aFunctionNames.begin(), m_aFunctionNames.end(),
-                        ::std::compose1(
-                            ::boost::bind( &inspection::XStringListControl::appendListEntry, xListControl,_1 ),
-                            ::std::select1st<TFunctions::value_type>()));
+                        [xListControl](auto& _x) { xListControl->appendListEntry(_x.first); });
                 }
                 else
                 {
@@ -923,7 +921,7 @@ beans::Property GeometryHandler::getProperty(const ::rtl::OUString & PropertyNam
     uno::Sequence< beans::Property > aProps = getSupportedProperties();
     const beans::Property* pIter = aProps.getConstArray();
     const beans::Property* pEnd  = pIter + aProps.getLength();
-    const beans::Property* pFind = ::std::find_if(pIter,pEnd,::std::bind2nd(PropertyCompare(),boost::cref(PropertyName)));
+    const beans::Property* pFind = ::std::find_if(pIter,pEnd,[&PropertyName](auto& _x) { return PropertyCompare()(_x, PropertyName); });
     if ( pFind == pEnd )
         return beans::Property();
     return *pFind;
@@ -1313,7 +1311,7 @@ uno::Sequence< beans::Property > SAL_CALL GeometryHandler::getSupportedPropertie
     {
         const beans::Property* pIter = aSeq.getConstArray();
         const beans::Property* pEnd  = pIter + aSeq.getLength();
-        const beans::Property* pFind = ::std::find_if(pIter,pEnd,::std::bind2nd(PropertyCompare(),boost::cref(pIncludeProperties[i])));
+        const beans::Property* pFind = ::std::find_if(pIter,pEnd,[&pIncludeProperties[i]](auto& _x) { return PropertyCompare()(_x, pIncludeProperties[i]); });
         if ( pFind != pEnd )
         {
             // special case for controls which contain a data field

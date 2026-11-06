@@ -37,7 +37,7 @@
 #include <com/sun/star/chart2/XTitle.hpp>
 #include <com/sun/star/uno/XComponentContext.hpp>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 namespace chart
 {
@@ -54,7 +54,7 @@ class TitleWrapper : public ::cppu::ImplInheritanceHelper3<
 {
 public:
     TitleWrapper( ::chart::TitleHelper::eTitleType eTitleType,
-                  ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact );
+                  ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact );
 	virtual ~TitleWrapper();
 
     /// XServiceInfo declarations
@@ -109,7 +109,7 @@ private:
     ::com::sun::star::uno::Reference< ::com::sun::star::chart2::XTitle > getTitleObject();
 
 private:
-    ::boost::shared_ptr< Chart2ModelContact >   m_spChart2ModelContact;
+    ::std::shared_ptr< Chart2ModelContact >   m_spChart2ModelContact;
 	::cppu::OInterfaceContainerHelper           m_aEventListenerContainer;
 
     ::chart::TitleHelper::eTitleType        m_eTitleType;

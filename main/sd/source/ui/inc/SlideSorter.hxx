@@ -30,7 +30,7 @@
 #include <cppuhelper/weakref.hxx>
 #include <sfx2/viewfrm.hxx>
 #include <boost/noncopyable.hpp>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <boost/scoped_ptr.hpp>
 #include <boost/current_function.hpp>
 
@@ -63,7 +63,7 @@ class Properties;
 } } }
 
 
-typedef ::boost::shared_ptr<sd::Window> SharedSdWindow;
+typedef ::std::shared_ptr<sd::Window> SharedSdWindow;
 
 
 namespace sd { namespace slidesorter {
@@ -105,12 +105,12 @@ public:
             The little square enclosed by the two scroll bars.  Typically
             the one from the ViewShell.
     */
-    static ::boost::shared_ptr<SlideSorter> CreateSlideSorter (
+    static ::std::shared_ptr<SlideSorter> CreateSlideSorter (
         ViewShell& rViewShell,
-        const ::boost::shared_ptr<sd::Window>& rpContentWindow,
-        const ::boost::shared_ptr<ScrollBar>& rpHorizontalScrollBar,
-        const ::boost::shared_ptr<ScrollBar>& rpVerticalScrollBar,
-        const ::boost::shared_ptr<ScrollBarBox>& rpScrollBarBox);
+        const ::std::shared_ptr<sd::Window>& rpContentWindow,
+        const ::std::shared_ptr<ScrollBar>& rpHorizontalScrollBar,
+        const ::std::shared_ptr<ScrollBar>& rpVerticalScrollBar,
+        const ::std::shared_ptr<ScrollBarBox>& rpScrollBarBox);
 
     /** Create a new slide sorter that is losely coupled to the given view
         shell.  The view shell may even be missing.
@@ -122,23 +122,23 @@ public:
             The parent window of the internally created content window and
             scroll bars.
     */
-    static ::boost::shared_ptr<SlideSorter> CreateSlideSorter (
+    static ::std::shared_ptr<SlideSorter> CreateSlideSorter (
         ViewShellBase& rBase,
         ViewShell* pViewShell,
         ::Window& rParentWindow);
 
     /** Return the control of the vertical scroll bar.
     */
-    ::boost::shared_ptr<ScrollBar> GetVerticalScrollBar (void) const;
+    ::std::shared_ptr<ScrollBar> GetVerticalScrollBar (void) const;
 
     /** Return the control of the horizontal scroll bar.
     */
-    ::boost::shared_ptr<ScrollBar> GetHorizontalScrollBar (void) const;
+    ::std::shared_ptr<ScrollBar> GetHorizontalScrollBar (void) const;
 
     /** Return the scroll bar filler that paints the little square that is
         enclosed by the two scroll bars.
     */
-    ::boost::shared_ptr<ScrollBarBox> GetScrollBarFiller (void) const;
+    ::std::shared_ptr<ScrollBarBox> GetScrollBarFiller (void) const;
 
     /** Return the content window.  This is a sibling and is geometrically
         enclosed by the scroll bars.
@@ -190,11 +190,11 @@ public:
     /** Return a collection of properties that are used throughout the slide
         sorter.
     */
-    ::boost::shared_ptr<controller::Properties> GetProperties (void) const;
+    ::std::shared_ptr<controller::Properties> GetProperties (void) const;
 
     /** Return the active theme which gives access to colors and fonts.
     */
-    ::boost::shared_ptr<view::Theme> GetTheme (void) const;
+    ::std::shared_ptr<view::Theme> GetTheme (void) const;
 
 protected:
     /** This virtual method makes it possible to create a specialization of
@@ -234,9 +234,9 @@ private:
     ViewShellBase* mpViewShellBase;
     SharedSdWindow mpContentWindow;
     bool mbOwnesContentWindow;
-    ::boost::shared_ptr<ScrollBar> mpHorizontalScrollBar;
-    ::boost::shared_ptr<ScrollBar> mpVerticalScrollBar;
-    ::boost::shared_ptr<ScrollBarBox> mpScrollBarBox;
+    ::std::shared_ptr<ScrollBar> mpHorizontalScrollBar;
+    ::std::shared_ptr<ScrollBar> mpVerticalScrollBar;
+    ::std::shared_ptr<ScrollBarBox> mpScrollBarBox;
 
     /** Set this flag to <TRUE/> to force a layout before the next paint.
     */
@@ -245,15 +245,15 @@ private:
     /** Some slide sorter wide properties that are used in different
         classes.
     */
-    ::boost::shared_ptr<controller::Properties> mpProperties;
-    ::boost::shared_ptr<view::Theme> mpTheme;
+    ::std::shared_ptr<controller::Properties> mpProperties;
+    ::std::shared_ptr<view::Theme> mpTheme;
 
     SlideSorter (
         ViewShell& rViewShell,
-        const ::boost::shared_ptr<sd::Window>& rpContentWindow,
-        const ::boost::shared_ptr<ScrollBar>& rpHorizontalScrollBar,
-        const ::boost::shared_ptr<ScrollBar>& rpVerticalScrollBar,
-        const ::boost::shared_ptr<ScrollBarBox>& rpScrollBarBox);
+        const ::std::shared_ptr<sd::Window>& rpContentWindow,
+        const ::std::shared_ptr<ScrollBar>& rpHorizontalScrollBar,
+        const ::std::shared_ptr<ScrollBar>& rpVerticalScrollBar,
+        const ::std::shared_ptr<ScrollBarBox>& rpScrollBarBox);
     SlideSorter (
         ViewShellBase& rBase,
         ViewShell* pViewShell,

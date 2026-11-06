@@ -23,6 +23,7 @@
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_ado.hxx"
+#include <algorithm>
 #include "ado/AConnection.hxx"
 #include "ado/ADatabaseMetaData.hxx"
 #include "ado/ADriver.hxx"
@@ -605,12 +606,8 @@ const OExtendedTypeInfo* OConnection::getTypeInfoFromType(const OTypeInfoMap& _r
 		// search for typeinfo where the typename is equal _sTypeName
 		OTypeInfoMap::const_iterator aFind = ::std::find_if(_rTypeInfo.begin(),
 															_rTypeInfo.end(),
-															::std::compose1(
-																::std::bind2nd(aCase, _sTypeName),
-																::std::compose1(
-																	::std::mem_fun(&OExtendedTypeInfo::getDBName),
-																	::std::select2nd<OTypeInfoMap::value_type>())
-																)
+															[_sTypeName](const OTypeInfoMap::value_type& _x) { return aCase(_x.second->getDBName(), _sTypeName); }
+															)
 															);
 		if(aFind != _rTypeInfo.end())
 			pTypeInfo = aFind->second;

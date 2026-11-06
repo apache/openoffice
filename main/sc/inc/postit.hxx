@@ -24,7 +24,7 @@
 #ifndef SC_POSTIT_HXX
 #define SC_POSTIT_HXX
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <rtl/ustring.hxx>
 #include <tools/gen.hxx>
 #include "address.hxx"
@@ -43,7 +43,7 @@ struct ScCaptionInitData;
 /** Internal data for a cell annotation. */
 struct SC_DLLPUBLIC ScNoteData
 {
-    typedef ::boost::shared_ptr< ScCaptionInitData > ScCaptionInitDataRef;
+    typedef ::std::shared_ptr< ScCaptionInitData > ScCaptionInitDataRef;
 
     ::rtl::OUString     maDate;             /// Creation date of the note.
     ::rtl::OUString     maAuthor;           /// Author of the note.

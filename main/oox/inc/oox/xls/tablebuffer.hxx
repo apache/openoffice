@@ -25,6 +25,7 @@
 #define OOX_XLS_TABLEBUFFER_HXX
 
 #include <com/sun/star/table/CellRangeAddress.hpp>
+#include <memory>
 #include "oox/xls/autofilterbuffer.hxx"
 #include "oox/xls/workbookhelper.hxx"
 
@@ -93,7 +94,7 @@ private:
     sal_Int32           mnTokenIndex;       /// Token index used in API token array.
 };
 
-typedef ::boost::shared_ptr< Table > TableRef;
+typedef ::std::shared_ptr< Table > TableRef;
 
 // ============================================================================
 

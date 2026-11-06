@@ -31,7 +31,7 @@
 #include "dlgedfunc.hxx"
 #include <svtools/transfer.hxx>
 #include <rtl/ref.hxx>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <memory>
 
 namespace rptui
@@ -49,8 +49,8 @@ namespace rptui
 		OReportPage*				        m_pPage;
 		OSectionView*				        m_pView;
 		OSectionWindow*				        m_pParent;
-		::std::auto_ptr<DlgEdFunc>	        m_pFunc;
-		::boost::shared_ptr<OReportModel>   m_pModel;
+		::std::unique_ptr<DlgEdFunc>	        m_pFunc;
+		::std::shared_ptr<OReportModel>   m_pModel;
 		::rtl::Reference< comphelper::OPropertyChangeMultiplexer>				            m_pMulti;
 		::rtl::Reference< comphelper::OPropertyChangeMultiplexer>				            m_pReportListener;
 		::com::sun::star::uno::Reference< ::com::sun::star::report::XSection >              m_xSection;

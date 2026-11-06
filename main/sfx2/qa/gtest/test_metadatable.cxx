@@ -84,9 +84,9 @@ static bool operator==(beans::StringPair p1, beans::StringPair p2)
 TEST_F(MetadatableTest, test)
 {
     OSL_TRACE("SwMetadatable test(): start\n");
-    ::std::auto_ptr< ::sfx2::IXmlIdRegistry > const pReg(
+    ::std::unique_ptr< ::sfx2::IXmlIdRegistry > const pReg(
         ::sfx2::createXmlIdRegistry(false) );
-    ::std::auto_ptr< ::sfx2::IXmlIdRegistry > const pRegClip(
+    ::std::unique_ptr< ::sfx2::IXmlIdRegistry > const pRegClip(
         ::sfx2::createXmlIdRegistry(true) );
 
     MockMetadatable m1(*pReg);

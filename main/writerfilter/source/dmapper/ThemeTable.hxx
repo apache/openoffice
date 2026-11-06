@@ -28,6 +28,7 @@
 #include <resourcemodel/LoggedResources.hxx>
 #include <com/sun/star/lang/XComponent.hpp>
 #include <map>
+#include <memory>
 
 namespace writerfilter {
 namespace dmapper
@@ -53,7 +54,7 @@ public:
     // Table
     virtual void lcl_entry(int pos, writerfilter::Reference<Properties>::Pointer_t ref);
 };
-typedef boost::shared_ptr< ThemeTable >          ThemeTablePtr;
+typedef std::shared_ptr< ThemeTable >          ThemeTablePtr;
 }}
 
 #endif //

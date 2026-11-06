@@ -39,6 +39,7 @@
 #include <algorithm>
 #include <rtl/ustrbuf.hxx>
 #include <rtl/math.hxx>
+#include <memory>
 
 using namespace ::com::sun::star;
 using namespace ::com::sun::star::chart2;
@@ -93,7 +94,7 @@ namespace wrapper
 {
 
 WallFloorWrapper::WallFloorWrapper( bool bWall,
-    ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact ) :
+    ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact ) :
         m_spChart2ModelContact( spChart2ModelContact ),
         m_aEventListenerContainer( m_aMutex ),
         m_bWall( bWall )

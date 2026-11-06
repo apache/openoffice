@@ -59,7 +59,7 @@ class INIreader
             delete section_match;
             delete parameter_match;
         }
-        // open "filename", fill unordered_map with sections / parameters
+        // open "filename", fill std::unordered_map with sections / parameters
         bool read( INImap& myMap , string& filename );
 
     private:

@@ -51,6 +51,7 @@
 #include "metadata.hxx"
 #include <vcl/svapp.hxx>
 #include <vos/mutex.hxx>
+#include <memory>
 #include "helpids.hrc"
 #include "uistrings.hrc"
 #include "RptResId.hrc"
@@ -157,7 +158,7 @@ void SAL_CALL DataProviderHandler::inspect(const uno::Reference< uno::XInterface
         m_xReportComponent.set( xNameCont->getByName( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "ReportComponent" ) ) ), uno::UNO_QUERY );
         if ( m_xDataProvider.is() )
         {
-            ::boost::shared_ptr<AnyConverter> aNoConverter(new AnyConverter());
+            ::std::shared_ptr<AnyConverter> aNoConverter(new AnyConverter());
             TPropertyNamePair aPropertyMediation;
             aPropertyMediation.insert( TPropertyNamePair::value_type( PROPERTY_MASTERFIELDS, TPropertyConverter(PROPERTY_MASTERFIELDS,aNoConverter) ) );
             aPropertyMediation.insert( TPropertyNamePair::value_type( PROPERTY_DETAILFIELDS, TPropertyConverter(PROPERTY_DETAILFIELDS,aNoConverter) ) );

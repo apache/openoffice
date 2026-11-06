@@ -37,6 +37,7 @@
 
 #include <swtypes.hxx>
 #include <itabenum.hxx>
+#include <memory>
 
 
 class SfxItemSet;
@@ -159,7 +160,7 @@ class SwUndoTblAutoFmt : public SwUndo
 {
     sal_uLong nSttNode;
     _SaveTable* pSaveTbl;
-    ::std::vector< ::boost::shared_ptr<SwUndoTblNumFmt> > m_Undos;
+    ::std::vector< ::std::shared_ptr<SwUndoTblNumFmt> > m_Undos;
     sal_Bool bSaveCntntAttr;
 
     void UndoRedo(bool const bUndo, ::sw::UndoRedoContext & rContext);

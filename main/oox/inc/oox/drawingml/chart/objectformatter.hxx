@@ -24,6 +24,7 @@
 #ifndef OOX_DRAWINGML_CHART_OBJECTFORMATTER_HXX
 #define OOX_DRAWINGML_CHART_OBJECTFORMATTER_HXX
 
+#include <memory>
 #include "oox/helper/propertyset.hxx"
 #include "oox/drawingml/drawingmltypes.hxx"
 #include "oox/drawingml/chart/modelbase.hxx"
@@ -155,7 +156,7 @@ public:
     static bool         isAutomaticFill( const ModelRef< Shape >& rxShapeProp );
 
 private:
-    ::boost::shared_ptr< ObjectFormatterData > mxData;
+    ::std::shared_ptr< ObjectFormatterData > mxData;
 };
 
 // ============================================================================

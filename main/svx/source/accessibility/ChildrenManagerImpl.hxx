@@ -206,7 +206,7 @@ public:
         @param pShape
             The new shape that is added to the list of accessible shapes.
     */
-    void AddAccessibleShape (std::auto_ptr<AccessibleShape> pShape);
+    void AddAccessibleShape (std::unique_ptr<AccessibleShape> pShape);
 
     /** Clear the lists of accessible shapes and that of visible accessible
         shapes.  The list of UNO shapes is not modified.

@@ -37,6 +37,7 @@
 #include <com/sun/star/uno/XComponentContext.hpp>
 #include <cppuhelper/compbase1.hxx>
 #include <cppuhelper/basemutex.hxx>
+#include <memory>
 
 namespace css = ::com::sun::star;
 namespace cssu = ::com::sun::star::uno;
@@ -87,7 +88,7 @@ private:
 
     void InvertCaret (void);
 };
-typedef ::boost::shared_ptr<PresenterTextCaret> SharedPresenterTextCaret;
+typedef ::std::shared_ptr<PresenterTextCaret> SharedPresenterTextCaret;
 
 
 
@@ -229,7 +230,7 @@ private:
     sal_Int8 GetTextDirection (void) const;
     bool IsTextReferencePointLeft (void) const;
 };
-typedef ::boost::shared_ptr<PresenterTextParagraph> SharedPresenterTextParagraph;
+typedef ::std::shared_ptr<PresenterTextParagraph> SharedPresenterTextParagraph;
 
 
 

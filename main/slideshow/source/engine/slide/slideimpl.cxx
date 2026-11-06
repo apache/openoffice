@@ -75,6 +75,7 @@
 #include <algorithm>
 #include <functional>
 #include <iostream>
+#include <memory>
 
 using namespace ::com::sun::star;
 
@@ -239,8 +240,8 @@ private:
     uno::Reference< animations::XAnimationNode >        mxRootNode;
 
     LayerManagerSharedPtr                               mpLayerManager;
-    boost::shared_ptr<ShapeManagerImpl>                 mpShapeManager;
-    boost::shared_ptr<SubsettableShapeManager>          mpSubsettableShapeManager;
+    std::shared_ptr<ShapeManagerImpl>                 mpShapeManager;
+    std::shared_ptr<SubsettableShapeManager>          mpSubsettableShapeManager;
 
     /// Contains common objects needed throughout the slideshow
     SlideShowContext									maContext;
@@ -1057,7 +1058,7 @@ bool SlideImpl::applyInitialShapeAttributes(
             }
 
             AttributableShapeSharedPtr pAttrShape(
-                ::boost::dynamic_pointer_cast< AttributableShape >( pShape ) );
+                ::std::dynamic_pointer_cast< AttributableShape >( pShape ) );
 
             if( !pAttrShape )
             {
@@ -1278,7 +1279,7 @@ SlideSharedPtr createSlide( const uno::Reference< drawing::XDrawPage >&			xDrawP
                             bool                                                bIntrinsicAnimationsAllowed,
                             bool                                                bDisableAnimationZOrder )
 {
-    boost::shared_ptr<SlideImpl> pRet( new SlideImpl( xDrawPage, xDrawPages, xRootNode, rEventQueue,
+    std::shared_ptr<SlideImpl> pRet( new SlideImpl( xDrawPage, xDrawPages, xRootNode, rEventQueue,
                                                       rEventMultiplexer, rScreenUpdater,
                                                       rActivitiesQueue, rUserEventQueue,
                                                       rCursorManager, rViewContainer,

@@ -26,6 +26,7 @@
 
 #include "animation.hxx"
 #include <rtl/ustring.hxx>
+#include <memory>
 
 
 /* Definition of StringAnimation interface */
@@ -65,7 +66,7 @@ namespace slideshow
             virtual ValueType getUnderlyingValue() const = 0;
         };
 
-        typedef ::boost::shared_ptr< StringAnimation > StringAnimationSharedPtr;
+        typedef ::std::shared_ptr< StringAnimation > StringAnimationSharedPtr;
 
     }
 }

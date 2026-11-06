@@ -30,7 +30,7 @@
 #include <comphelper/stl_types.hxx>
 #include <comphelper/uno3.hxx>
 #include <svx/fmglob.hxx>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 
 FORWARD_DECLARE_INTERFACE(report,XReportComponent)
@@ -75,7 +75,7 @@ namespace ControlModification
     static const ::sal_Int32 HEIGHT_GREATEST    = (sal_Int32)10;
 }
 
-class AnyConverter : public ::std::binary_function< ::rtl::OUString,::com::sun::star::uno::Any,::com::sun::star::uno::Any >
+class AnyConverter 
 {
 public:
     virtual ~AnyConverter(){}
@@ -88,7 +88,7 @@ public:
 	@param	_xComponent the report component
 */
 REPORTDESIGN_DLLPUBLIC sal_uInt16 getObjectType(const ::com::sun::star::uno::Reference< ::com::sun::star::report::XReportComponent>& _xComponent);
-typedef ::std::pair< ::rtl::OUString, ::boost::shared_ptr<AnyConverter> > TPropertyConverter;
+typedef ::std::pair< ::rtl::OUString, ::std::shared_ptr<AnyConverter> > TPropertyConverter;
 DECLARE_STL_USTRINGACCESS_MAP(TPropertyConverter , TPropertyNamePair);
 /** returns the property name map for the givern property id
 	@param	_nObjectId	the object id

@@ -35,7 +35,7 @@
 
 namespace
 {
-    class SameName: public std::unary_function<const sal_Char*, bool>
+    class SameName
     {
     private:
         const String &mrName;

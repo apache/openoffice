@@ -29,6 +29,7 @@
 #include <com/sun/star/lang/XMultiComponentFactory.hpp>
 #include <com/sun/star/rendering/CompositeOperation.hpp>
 #include <osl/mutex.hxx>
+#include <memory>
 
 using namespace ::com::sun::star;
 using namespace ::com::sun::star::uno;
@@ -181,7 +182,7 @@ void SAL_CALL PresenterSpritePane::windowPaint (const awt::PaintEvent& rEvent)
 //-----------------------------------------------------------------------------
 
 
-::boost::shared_ptr<PresenterSprite> PresenterSpritePane::GetSprite (void)
+::std::shared_ptr<PresenterSprite> PresenterSpritePane::GetSprite (void)
 {
     return mpSprite;
 }

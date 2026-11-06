@@ -27,6 +27,7 @@
 #include <resourcemodel/TableManager.hxx>
 #include <rtl/string.hxx>
 #include <resourcemodel/QNameToString.hxx>
+#include <memory>
 
 namespace writerfilter {
 
@@ -43,7 +44,7 @@ class WW8TableDataHandler : public TableDataHandler<string,
                             TablePropsPointer_t>
 {
 public:
-    typedef boost::shared_ptr<WW8TableDataHandler> Pointer_t;
+    typedef std::shared_ptr<WW8TableDataHandler> Pointer_t;
     virtual void startTable(
         unsigned int nRows,
         unsigned int nDepth,

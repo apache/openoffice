@@ -23,6 +23,7 @@
 #ifndef INCLUDED_SLIDESHOW_ANIMATIONCOMMANDNODE_HXX
 #define INCLUDED_SLIDESHOW_ANIMATIONCOMMANDNODE_HXX
 
+#include <memory>
 #include "basecontainernode.hxx"
 #include "externalmediashape.hxx"
 #include "soundplayer.hxx"
@@ -42,7 +43,7 @@ public:
     AnimationCommandNode(
         ::com::sun::star::uno::Reference<
         ::com::sun::star::animations::XAnimationNode> const& xNode,
-        ::boost::shared_ptr<BaseContainerNode> const& pParent,
+        ::std::shared_ptr<BaseContainerNode> const& pParent,
         NodeContext const& rContext );
 
 protected:

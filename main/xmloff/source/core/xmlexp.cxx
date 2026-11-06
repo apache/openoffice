@@ -289,7 +289,7 @@ public:
     // counts depth (number of open elements/start tags)
     long mDepth;
 
-    ::std::auto_ptr< ::xmloff::RDFaExportHelper> mpRDFaHelper;
+    ::std::unique_ptr< ::xmloff::RDFaExportHelper> mpRDFaHelper;
 
     // --> OD 2008-11-26 #158694#
     sal_Bool                                            mbExportTextNumberElement;

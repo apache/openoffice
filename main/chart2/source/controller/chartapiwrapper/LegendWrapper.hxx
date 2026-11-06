@@ -36,7 +36,7 @@
 #include <com/sun/star/uno/XComponentContext.hpp>
 #include <com/sun/star/chart2/XLegend.hpp>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 namespace chart
 {
@@ -55,7 +55,7 @@ class LegendWrapper : public ::cppu::ImplInheritanceHelper3<
                     , public ReferenceSizePropertyProvider
 {
 public:
-    LegendWrapper( ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact );
+    LegendWrapper( ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact );
 	virtual ~LegendWrapper();
 
     /// XServiceInfo declarations
@@ -89,7 +89,7 @@ protected:
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > getInnerPropertySet();
 
 private:
-    ::boost::shared_ptr< Chart2ModelContact >   m_spChart2ModelContact;
+    ::std::shared_ptr< Chart2ModelContact >   m_spChart2ModelContact;
 	::cppu::OInterfaceContainerHelper           m_aEventListenerContainer;
 };
 

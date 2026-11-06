@@ -24,6 +24,7 @@
 #ifndef INCLUDED_SLIDESHOW_ANIMATIONACTIVITY_HXX
 #define INCLUDED_SLIDESHOW_ANIMATIONACTIVITY_HXX
 
+#include <memory>
 #include "activity.hxx"
 #include "animatableshape.hxx"
 #include "shapeattributelayer.hxx"
@@ -63,7 +64,7 @@ namespace slideshow
                                      const ShapeAttributeLayerSharedPtr& 	rAttrLayer ) = 0;
         };
 
-        typedef ::boost::shared_ptr< AnimationActivity > AnimationActivitySharedPtr;
+        typedef ::std::shared_ptr< AnimationActivity > AnimationActivitySharedPtr;
 
     }
 }

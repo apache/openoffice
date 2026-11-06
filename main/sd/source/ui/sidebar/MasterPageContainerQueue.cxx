@@ -26,6 +26,7 @@
 #include "tools/IdleDetection.hxx"
 
 #include <set>
+#include <memory>
 
 namespace sd { namespace sidebar {
 
@@ -88,7 +89,7 @@ public:
 //===== MasterPageContainerQueue ==============================================
 
 MasterPageContainerQueue* MasterPageContainerQueue::Create (
-    const ::boost::weak_ptr<ContainerAdapter>& rpContainer)
+    const ::std::weak_ptr<ContainerAdapter>& rpContainer)
 {
     MasterPageContainerQueue* pQueue = new MasterPageContainerQueue(rpContainer);
     pQueue->LateInit();
@@ -99,7 +100,7 @@ MasterPageContainerQueue* MasterPageContainerQueue::Create (
 
 
 MasterPageContainerQueue::MasterPageContainerQueue (
-    const ::boost::weak_ptr<ContainerAdapter>& rpContainer)
+    const ::std::weak_ptr<ContainerAdapter>& rpContainer)
     : mpWeakContainer(rpContainer),
       mpRequestQueue(new RequestQueue()),
       maDelayedPreviewCreationTimer(),
@@ -243,7 +244,7 @@ IMPL_LINK(MasterPageContainerQueue, DelayedPreviewCreation, Timer*, pTimer)
             mnRequestsServedCount += 1;
             if ( ! mpWeakContainer.expired())
             {
-                ::boost::shared_ptr<ContainerAdapter> pContainer (mpWeakContainer);
+                ::std::shared_ptr<ContainerAdapter> pContainer (mpWeakContainer);
                 if (pContainer.get() != NULL)
                     pContainer->UpdateDescriptor(aRequest.mpDescriptor,false,true,true);
             }

@@ -21,6 +21,7 @@
 
 
 
+#include <memory>
 #include "precompiled_sd.hxx"
 
 #include "SlsSelectionCommand.hxx"
@@ -37,7 +38,7 @@ namespace sd { namespace slidesorter { namespace controller {
 
 SelectionCommand::SelectionCommand (
     PageSelector& rSelector,
-    const ::boost::shared_ptr<CurrentSlideManager>& rpCurrentSlideManager,
+    const ::std::shared_ptr<CurrentSlideManager>& rpCurrentSlideManager,
     const model::SlideSorterModel& rModel)
     : mrPageSelector(rSelector),
       mpCurrentSlideManager(rpCurrentSlideManager),

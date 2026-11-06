@@ -39,6 +39,7 @@
 #include <com/sun/star/xml/sax/XFastTokenHandler.hpp>
 #include <com/sun/star/frame/XModel.hpp>
 #include <com/sun/star/drawing/XDrawPage.hpp>
+#include <memory>
 
 /**
    @file OOXMLDocument.hxx
@@ -85,7 +86,7 @@ class WRITERFILTER_DLLPUBLIC OOXMLStream
 public:
     enum StreamType_t { UNKNOWN, DOCUMENT, STYLES, FONTTABLE, NUMBERING,
         FOOTNOTES, ENDNOTES, COMMENTS, THEME, SETTINGS };
-    typedef boost::shared_ptr<OOXMLStream> Pointer_t;
+    typedef std::shared_ptr<OOXMLStream> Pointer_t;
 
     virtual ~OOXMLStream() {}
 
@@ -130,7 +131,7 @@ public:
     /**
        Pointer to this stream.
     */
-    typedef boost::shared_ptr<OOXMLDocument> Pointer_t;
+    typedef std::shared_ptr<OOXMLDocument> Pointer_t;
 
     virtual ~OOXMLDocument() {}
 

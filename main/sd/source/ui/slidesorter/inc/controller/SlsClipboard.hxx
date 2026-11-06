@@ -33,6 +33,7 @@
 #include <svx/svdpage.hxx>
 
 #include <set>
+#include <memory>
 
 class SfxRequest;
 class Window;
@@ -73,7 +74,7 @@ public:
         transferable.  The returned transferable is set up with all
         information necessary so that it can be dropped on a slide sorter.
     */
-    ::boost::shared_ptr<SdTransferable::UserData> CreateTransferableUserData (SdTransferable* pTransferable);
+    ::std::shared_ptr<SdTransferable::UserData> CreateTransferableUserData (SdTransferable* pTransferable);
 
     void HandleSlotCall (SfxRequest& rRequest);
 

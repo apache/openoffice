@@ -24,7 +24,7 @@
 #ifndef OOX_DRAWINGML_CLRSCHEME_HXX
 #define OOX_DRAWINGML_CLRSCHEME_HXX
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <map>
 #include <vector>
 #include "oox/drawingml/color.hxx"
@@ -41,7 +41,7 @@ public:
 	void	 setColorMap( sal_Int32 nClrToken, sal_Int32 nMappedClrToken );
 };
 
-typedef boost::shared_ptr< ClrMap > ClrMapPtr;
+typedef std::shared_ptr< ClrMap > ClrMapPtr;
 
 class ClrScheme
 {
@@ -56,7 +56,7 @@ public:
 	void	 setColor( sal_Int32 nSchemeClrToken, sal_Int32 nColor );
 };
 
-typedef boost::shared_ptr< ClrScheme > ClrSchemePtr;
+typedef std::shared_ptr< ClrScheme > ClrSchemePtr;
 
 } }
 

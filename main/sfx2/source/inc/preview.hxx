@@ -26,6 +26,7 @@
 
 #include <sfx2/doctempl.hxx>
 #include <sfx2/basedlgs.hxx>
+#include <memory>
 
 class SfxObjectShell;
 //REMOVE	class SvStorageRef;
@@ -37,14 +38,14 @@ class GDIMetaFile;
 class SfxPreviewBase_Impl : public Window
 {
 protected:
-	::boost::shared_ptr<GDIMetaFile> pMetaFile;
+	::std::shared_ptr<GDIMetaFile> pMetaFile;
 public:
 					SfxPreviewBase_Impl( Window* pParent,
 										 const ResId& rResId );
 					SfxPreviewBase_Impl( Window* pParent );
 					~SfxPreviewBase_Impl(  );
 	void            SetObjectShell( SfxObjectShell* pObj );
-	void            SetGDIFile( ::boost::shared_ptr<GDIMetaFile> pFile );
+	void            SetGDIFile( ::std::shared_ptr<GDIMetaFile> pFile );
 	virtual void    Resize();
 };
 

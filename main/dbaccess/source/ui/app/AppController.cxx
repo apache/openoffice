@@ -205,7 +205,7 @@ Reference< XInterface > SAL_CALL OApplicationController::Create(const Reference<
 }
 // -----------------------------------------------------------------------------
 
-struct XContainerFunctor : public ::std::unary_function< OApplicationController::TContainerVector::value_type , bool>
+struct XContainerFunctor 
 {
 	Reference<XContainerListener> m_xContainerListener;
 	XContainerFunctor( const Reference<XContainerListener>& _xContainerListener)
@@ -337,7 +337,7 @@ OApplicationController::~OApplicationController()
         osl_incrementInterlockedCount( &m_refCount );
         dispose();
 	}
-	::std::auto_ptr< Window> aTemp( getView() );
+	::std::unique_ptr< Window> aTemp( getView() );
     clearView();
 
     DBG_DTOR(OApplicationController,NULL);
@@ -474,7 +474,7 @@ sal_Bool OApplicationController::Construct(Window* _pParent)
 
 	if ( !bSuccess )
 	{
-		::std::auto_ptr< Window> aTemp( getView() );
+		::std::unique_ptr< Window> aTemp( getView() );
         clearView();
 		return sal_False;
 	}
@@ -983,6 +983,8 @@ FeatureState OApplicationController::GetState(sal_uInt16 _nId) const
 // -----------------------------------------------------------------------------
 namespace
 {
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wunused-function"
     bool lcl_handleException_nothrow( const Reference< XModel >& _rxDocument, const Any& _rException )
     {
         bool bHandled = false;
@@ -1009,6 +1011,7 @@ namespace
         }
         return bHandled;
     }
+#pragma GCC diagnostic pop
 }
 
 // -----------------------------------------------------------------------------
@@ -1094,7 +1097,7 @@ void OApplicationController::Execute(sal_uInt16 _nId, const Sequence< PropertyVa
 					if ( !aArgs.getLength() )
 					{
                         SvxAbstractDialogFactory* pFact = SvxAbstractDialogFactory::Create();
-                        ::std::auto_ptr<SfxAbstractPasteDialog> pDlg(pFact->CreatePasteDialog( getView() ));
+                        ::std::unique_ptr<SfxAbstractPasteDialog> pDlg(pFact->CreatePasteDialog( getView() ));
 						::std::vector<SotFormatStringId> aFormatIds;
 						getSupportedFormats(getContainer()->getElementType(),aFormatIds);
 						const ::std::vector<SotFormatStringId>::iterator aEnd = aFormatIds.end();
@@ -1850,7 +1853,7 @@ Reference< XComponent > OApplicationController::openElementWithArguments( const 
 	{
         if ( isStandaloneDocument || !m_pSubComponentManager->activateSubFrame( _sName, _eType, _eOpenMode, xRet ) )
         {
-		    ::std::auto_ptr< OLinkedDocumentsAccess > aHelper = getDocumentsAccess( _eType );
+		    ::std::unique_ptr< OLinkedDocumentsAccess > aHelper = getDocumentsAccess( _eType );
             if ( !aHelper->isConnected() )
                 break;
 
@@ -1872,7 +1875,7 @@ Reference< XComponent > OApplicationController::openElementWithArguments( const 
 		    if ( !xConnection.is() )
                 break;
 
-            ::std::auto_ptr< DatabaseObjectView > pDesigner;
+            ::std::unique_ptr< DatabaseObjectView > pDesigner;
             ::comphelper::NamedValueCollection aArguments( _rAdditionalArguments );
 
             Any aDataSource;
@@ -1956,7 +1959,7 @@ void OApplicationController::newElementWithPilot( ElementType _eType )
 		case E_REPORT:
 		case E_FORM:
 		{
-			::std::auto_ptr<OLinkedDocumentsAccess> aHelper = getDocumentsAccess(_eType);
+			::std::unique_ptr<OLinkedDocumentsAccess> aHelper = getDocumentsAccess(_eType);
             if ( aHelper->isConnected() )
 			{
                 sal_Int32 nCommandType = -1;
@@ -1971,7 +1974,7 @@ void OApplicationController::newElementWithPilot( ElementType _eType )
         case E_QUERY:
         case E_TABLE:
  		{
-		    ::std::auto_ptr<OLinkedDocumentsAccess> aHelper = getDocumentsAccess(_eType);
+		    ::std::unique_ptr<OLinkedDocumentsAccess> aHelper = getDocumentsAccess(_eType);
             if ( aHelper->isConnected() )
             {
 		        if ( E_QUERY == _eType )
@@ -2003,7 +2006,7 @@ Reference< XComponent > OApplicationController::newElement( ElementType _eType, 
         case E_FORM:
 		case E_REPORT:
 		{
-			::std::auto_ptr<OLinkedDocumentsAccess> aHelper = getDocumentsAccess( _eType );
+			::std::unique_ptr<OLinkedDocumentsAccess> aHelper = getDocumentsAccess( _eType );
             if ( !aHelper->isConnected() )
                 break;
 
@@ -2014,7 +2017,7 @@ Reference< XComponent > OApplicationController::newElement( ElementType _eType, 
 		case E_QUERY:
 		case E_TABLE:
 		{
-			::std::auto_ptr< DatabaseObjectView > pDesigner;
+			::std::unique_ptr< DatabaseObjectView > pDesigner;
 			SharedConnection xConnection( ensureConnection() );
 			if ( !xConnection.is() )
                 break;
@@ -2085,8 +2088,8 @@ void OApplicationController::renameEntry()
 	{
 		if ( xContainer.is() )
 		{
-            ::std::auto_ptr< IObjectNameCheck > pNameChecker;
-            ::std::auto_ptr< OSaveAsDlg > aDialog;
+            ::std::unique_ptr< IObjectNameCheck > pNameChecker;
+            ::std::unique_ptr< OSaveAsDlg > aDialog;
 
 			Reference<XRename> xRename;
 			const ElementType eType = getContainer()->getElementType();

@@ -44,6 +44,7 @@
 #include "com/sun/star/awt/Size.hpp"
 
 #include <algorithm>
+#include <memory>
 
 using namespace rtl;
 using namespace vcl;
@@ -553,7 +554,7 @@ sal_Bool AquaSalInfoPrinter::StartJob( const String* i_pFileName,
             // information (e.g. brochure printing scales to the found paper size)
             // also SetPaperSizeUser has the advantage that we can share a
             // platform independent paper matching algorithm
-            boost::shared_ptr<Printer> pPrinter( i_rController.getPrinter() );
+            std::shared_ptr<Printer> pPrinter( i_rController.getPrinter() );
             pPrinter->SetMapMode( MapMode( MAP_100TH_MM ) );
             pPrinter->SetPaperSizeUser( aCurSize, true );
 

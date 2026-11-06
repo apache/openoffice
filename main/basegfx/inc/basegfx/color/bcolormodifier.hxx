@@ -24,7 +24,7 @@
 
 #include <basegfx/color/bcolor.hxx>
 #include <boost/utility.hpp>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <vector>
 #include <basegfx/basegfxdllapi.h>
 
@@ -54,7 +54,7 @@ namespace basegfx
         operator); local values cannot be changed after construction. The
         instances are cheap and the idea is to create them on demand. To
         be able to reuse these as much as possible, a define for a
-        ::boost::shared_ptr named BColorModifierSharedPtr exists below.
+        ::std::shared_ptr named BColorModifierSharedPtr exists below.
         All usages should handle instances of BColorModifier encapsulated
         into these shared pointers.
     */
@@ -68,7 +68,7 @@ namespace basegfx
 
     public:
         // no one should directly destroy it; all incarnations should be
-        // handled in a boost::shared_ptr of type BColorModifierSharedPtr
+        // handled in a std::shared_ptr of type BColorModifierSharedPtr
         virtual ~BColorModifier();
 
         // compare operator
@@ -377,7 +377,7 @@ namespace basegfx
 {
     /// typedef to allow working with shared instances of BColorModifier
     /// for the whole mechanism
-    typedef ::boost::shared_ptr< BColorModifier > BColorModifierSharedPtr;
+    typedef ::std::shared_ptr< BColorModifier > BColorModifierSharedPtr;
 
     /** Class to hold a stack of BColorModifierSharedPtrs and to get the modified color with
         applying all existing entry changes as defined in the stack. Instances of BColorModifier

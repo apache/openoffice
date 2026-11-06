@@ -49,7 +49,7 @@ public:
     /**
        Shared pointer to an FKP.
      */
-    typedef boost::shared_ptr<WW8FKP> Pointer_t;
+    typedef std::shared_ptr<WW8FKP> Pointer_t;
 
     /**
        Create FKP from stream.
@@ -113,7 +113,7 @@ public:
     /**
        Shared pointer to cache.
      */
-    typedef boost::shared_ptr<WW8FKPCache> Pointer_t;
+    typedef std::shared_ptr<WW8FKPCache> Pointer_t;
 
     virtual ~WW8FKPCache();
 

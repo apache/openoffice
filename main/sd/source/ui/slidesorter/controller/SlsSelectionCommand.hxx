@@ -27,7 +27,7 @@
 #include <tools/solar.h>
 #include <com/sun/star/drawing/XDrawPage.hpp>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <vector>
 
 namespace sd { namespace slidesorter { namespace model {
@@ -54,7 +54,7 @@ public:
 	 */
 	SelectionCommand (
 		PageSelector& rSelector,
-		const ::boost::shared_ptr<controller::CurrentSlideManager>& rpCurrentSlideManager,
+		const ::std::shared_ptr<controller::CurrentSlideManager>& rpCurrentSlideManager,
 		const model::SlideSorterModel& rModel);
 
 	/** Remember the specified page to be selected when this command is
@@ -71,7 +71,7 @@ private:
 	// The page selector is used to select pages and set the current page.
 	PageSelector& mrPageSelector;
 	// Used for setting the current slide.
-	::boost::shared_ptr<controller::CurrentSlideManager> mpCurrentSlideManager;
+	::std::shared_ptr<controller::CurrentSlideManager> mpCurrentSlideManager;
 	// The model is used to translate page indices into page pointers.
 	const model::SlideSorterModel& mrModel;
 	// The list of pages to be selected when the command is executed.

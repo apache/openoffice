@@ -26,7 +26,7 @@
 
 #include <tools/gen.hxx>
 #include <vector>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 namespace sd { namespace slidesorter {
 class SlideSorter;
@@ -64,7 +64,7 @@ public:
         ~Context(void);
         void Abort (void);
     private:
-        ::boost::shared_ptr<SelectionObserver> mpSelectionObserver;
+        ::std::shared_ptr<SelectionObserver> mpSelectionObserver;
     };
 
 private:

@@ -26,7 +26,7 @@
 
 #include <sal/types.h>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <cppcanvas/sprite.hxx>
 #include <cppcanvas/canvas.hxx>
 
@@ -43,7 +43,7 @@ namespace cppcanvas
         virtual CanvasSharedPtr getContentCanvas() const = 0;
     };
 
-    typedef ::boost::shared_ptr< ::cppcanvas::CustomSprite > CustomSpriteSharedPtr;
+    typedef ::std::shared_ptr< ::cppcanvas::CustomSprite > CustomSpriteSharedPtr;
 }
 
 #endif /* _CPPCANVAS_CUSTOMSPRITE_HXX */

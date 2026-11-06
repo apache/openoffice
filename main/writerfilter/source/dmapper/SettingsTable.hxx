@@ -29,6 +29,7 @@
 #include <com/sun/star/lang/XComponent.hpp>
 #include <com/sun/star/text/XTextDocument.hpp>
 #include <map>
+#include <memory>
 
 namespace com{ namespace sun{ namespace star{
 namespace lang{
@@ -70,7 +71,7 @@ class WRITERFILTER_DLLPRIVATE SettingsTable : public LoggedProperties, public Lo
     virtual void lcl_entry(int pos, writerfilter::Reference<Properties>::Pointer_t ref);
 
 };
-typedef boost::shared_ptr< SettingsTable >          SettingsTablePtr;
+typedef std::shared_ptr< SettingsTable >          SettingsTablePtr;
 }}
 
 #endif //

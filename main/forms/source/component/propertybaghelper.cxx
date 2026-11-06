@@ -246,25 +246,25 @@ namespace frm
     namespace
     {
         //----------------------------------------------------------------
-        struct SelectNameOfProperty : public ::std::unary_function< Property, ::rtl::OUString >
+        struct SelectNameOfProperty 
         {
             const ::rtl::OUString& operator()( const Property& _rProp ) const { return _rProp.Name; }
         };
 
         //----------------------------------------------------------------
-        struct SelectNameOfPropertyValue : public ::std::unary_function< PropertyValue, ::rtl::OUString >
+        struct SelectNameOfPropertyValue 
         {
             const ::rtl::OUString& operator()( const PropertyValue& _rProp ) const { return _rProp.Name; }
         };
 
         //----------------------------------------------------------------
-        struct SelectValueOfPropertyValue : public ::std::unary_function< PropertyValue, Any >
+        struct SelectValueOfPropertyValue 
         {
             const Any& operator()( const PropertyValue& _rProp ) const { return _rProp.Value; }
         };
 
         //----------------------------------------------------------------
-        struct PropertyValueLessByName : public ::std::binary_function< PropertyValue, PropertyValue, bool >
+        struct PropertyValueLessByName 
         {
             bool operator()( const PropertyValue& _lhs, const PropertyValue _rhs ) const
             {

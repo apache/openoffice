@@ -62,6 +62,7 @@
 #include <boost/bind.hpp>
 #include <boost/bind/protect.hpp>
 #include <math.h>
+#include <memory>
 
 using namespace ::com::sun::star;
 using namespace ::com::sun::star::uno;
@@ -87,7 +88,7 @@ namespace {
             const Reference<drawing::framework::XConfigurationController>& rxConfigurationController,
             const Reference<awt::XWindow>& rxWindow,
             const Reference<rendering::XSpriteCanvas>& rxCanvas,
-            const ::boost::shared_ptr<PresenterAnimator>& rpAnimator);
+            const ::std::shared_ptr<PresenterAnimator>& rpAnimator);
         virtual ~ModeChangeAnimationStarter (void);
         virtual void SAL_CALL disposing (void);
 
@@ -104,8 +105,8 @@ namespace {
 
     private:
         Reference<drawing::framework::XConfigurationController> mxConfigurationController;
-        ::boost::shared_ptr<PresenterAnimator> mpAnimator;
-        ::boost::shared_ptr<PresenterSprite> mpSprite;
+        ::std::shared_ptr<PresenterAnimator> mpAnimator;
+        ::std::shared_ptr<PresenterSprite> mpSprite;
         Reference<rendering::XSpriteCanvas> mxCanvas;
     };
 
@@ -223,7 +224,7 @@ void PresenterWindowManager::SetParentPane (
 
 
 
-void PresenterWindowManager::SetTheme (const ::boost::shared_ptr<PresenterTheme>& rpTheme)
+void PresenterWindowManager::SetTheme (const ::std::shared_ptr<PresenterTheme>& rpTheme)
 {
     mpTheme = rpTheme;
 
@@ -1493,7 +1494,7 @@ class ModeChangeAnimation : public PresenterAnimation
 {
 public:
     ModeChangeAnimation (
-        const ::boost::shared_ptr<PresenterSprite>& rpSprite,
+        const ::std::shared_ptr<PresenterSprite>& rpSprite,
         const Reference<rendering::XSpriteCanvas>& rxCanvas)
         : PresenterAnimation (0, 1000, 20),
           mpSprite(rpSprite),
@@ -1509,7 +1510,7 @@ public:
     }
 
 private:
-    ::boost::shared_ptr<PresenterSprite> mpSprite;
+    ::std::shared_ptr<PresenterSprite> mpSprite;
     Reference<rendering::XSpriteCanvas> mxCanvas;
 };
 
@@ -1520,7 +1521,7 @@ ModeChangeAnimationStarter::ModeChangeAnimationStarter (
     const Reference<drawing::framework::XConfigurationController>& rxConfigurationController,
     const Reference<awt::XWindow>& rxWindow,
     const Reference<rendering::XSpriteCanvas>& rxCanvas,
-    const ::boost::shared_ptr<PresenterAnimator>& rpAnimator)
+    const ::std::shared_ptr<PresenterAnimator>& rpAnimator)
     : ModeChangeAnimationStarterInterfaceBase(m_aMutex),
       mxConfigurationController(rxConfigurationController),
       mpAnimator(rpAnimator),

@@ -24,6 +24,7 @@
 #ifndef OOX_XLS_DRAWINGMANAGER_HXX
 #define OOX_XLS_DRAWINGMANAGER_HXX
 
+#include <memory>
 #include "oox/xls/drawingbase.hxx"
 
 namespace com { namespace sun { namespace star {
@@ -111,7 +112,7 @@ struct BiffObjTextModel
 
 class BiffDrawingBase;
 class BiffDrawingObjectBase;
-typedef ::boost::shared_ptr< BiffDrawingObjectBase > BiffDrawingObjectRef;
+typedef ::std::shared_ptr< BiffDrawingObjectBase > BiffDrawingObjectRef;
 
 // ----------------------------------------------------------------------------
 

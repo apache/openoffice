@@ -56,7 +56,7 @@ namespace css = ::com::sun::star;
     fade symbol.</p>
 */
 class PageDescriptor
-    : public ::boost::enable_shared_from_this<PageDescriptor>
+    : public ::std::enable_shared_from_this<PageDescriptor>
 {
 public:
     /** Create a PageDescriptor for the given SdPage object.

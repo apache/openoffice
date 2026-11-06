@@ -73,6 +73,7 @@
 #include <com/sun/star/drawing/framework/ResourceId.hpp>
 #include <cppuhelper/bootstrap.hxx>
 #include <comphelper/processfactory.hxx>
+#include <memory>
 
 using namespace ::sd::slidesorter;
 #define SlideSorterViewShell
@@ -99,7 +100,7 @@ TYPEINIT1(SlideSorterViewShell, ViewShell);
 
 
 
-::boost::shared_ptr<SlideSorterViewShell> SlideSorterViewShell::Create (
+::std::shared_ptr<SlideSorterViewShell> SlideSorterViewShell::Create (
     SfxViewFrame* pFrame,
     ViewShellBase& rViewShellBase,
     ::Window* pParentWindow,
@@ -108,7 +109,7 @@ TYPEINIT1(SlideSorterViewShell, ViewShell);
 {
     (void)bIsCenterPane;
 
-    ::boost::shared_ptr<SlideSorterViewShell> pViewShell;
+    ::std::shared_ptr<SlideSorterViewShell> pViewShell;
     try
     {
         pViewShell.reset(
@@ -241,7 +242,7 @@ SlideSorterViewShell* SlideSorterViewShell::GetSlideSorter (ViewShellBase& rBase
 
     try
     {
-        ::boost::shared_ptr<FrameworkHelper> pFrameworkHelper (FrameworkHelper::Instance(rBase));
+        ::std::shared_ptr<FrameworkHelper> pFrameworkHelper (FrameworkHelper::Instance(rBase));
         if (pFrameworkHelper->IsValid())
             for (int i=0; pViewShell==NULL && aPaneURLs[i].getLength()>0; ++i)
             {
@@ -398,7 +399,7 @@ SdPage*	SlideSorterViewShell::GetActualPage (void)
     // (if we are that not ourself).
     if ( ! IsMainViewShell())
     {
-        ::boost::shared_ptr<ViewShell> pMainViewShell = GetViewShellBase().GetMainViewShell();
+        ::std::shared_ptr<ViewShell> pMainViewShell = GetViewShellBase().GetMainViewShell();
         if (pMainViewShell.get() != NULL)
             pCurrentPage = pMainViewShell->GetActualPage();
     }
@@ -571,7 +572,7 @@ void SlideSorterViewShell::Activate (sal_Bool bIsMDIActivate)
 
     // Determine and broadcast the context that belongs to the main view shell.
     EnumContext::Context eContext = EnumContext::Context_Unknown;
-    ::boost::shared_ptr<ViewShell> pMainViewShell (GetViewShellBase().GetMainViewShell());
+    ::std::shared_ptr<ViewShell> pMainViewShell (GetViewShellBase().GetMainViewShell());
 	ViewShell::ShellType eMainViewShellType (
         pMainViewShell
             ? pMainViewShell->GetShellType()
@@ -662,7 +663,7 @@ void SlideSorterViewShell::ReadFrameViewData (FrameView* pFrameView)
     // certain values.
     if ( ! IsMainViewShell())
     {
-        ::boost::shared_ptr<ViewShell> pMainViewShell = GetViewShellBase().GetMainViewShell();
+        ::std::shared_ptr<ViewShell> pMainViewShell = GetViewShellBase().GetMainViewShell();
         if (pMainViewShell.get() != NULL)
             mpSlideSorter->GetController().GetCurrentSlideManager()->NotifyCurrentSlideChange(
                 pMainViewShell->getCurrentPage());
@@ -830,7 +831,7 @@ sal_Int8 SlideSorterViewShell::ExecuteDrop (
 
 
 
-::boost::shared_ptr<SlideSorterViewShell::PageSelection>
+::std::shared_ptr<SlideSorterViewShell::PageSelection>
     SlideSorterViewShell::GetPageSelection (void) const
 {
     OSL_ASSERT(mpSlideSorter.get()!=NULL);
@@ -841,7 +842,7 @@ sal_Int8 SlideSorterViewShell::ExecuteDrop (
 
 
 void SlideSorterViewShell::SetPageSelection (
-    const ::boost::shared_ptr<PageSelection>& rSelection)
+    const ::std::shared_ptr<PageSelection>& rSelection)
 {
     OSL_ASSERT(mpSlideSorter.get()!=NULL);
     mpSlideSorter->GetController().GetPageSelector().SetPageSelection(rSelection);

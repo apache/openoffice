@@ -41,7 +41,7 @@ protected:
 
 inline IUrlFilter::~IUrlFilter() {}
 
-struct FilterMatch : public ::std::unary_function< bool, WildCard >
+struct FilterMatch 
 {
 private:
 	const String&	m_rCompareString;

@@ -26,7 +26,7 @@
 
 #include <com/sun/star/uno/Reference.hxx>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <cppcanvas/canvasgraphic.hxx>
 
 namespace basegfx
@@ -83,7 +83,7 @@ namespace cppcanvas
             ::com::sun::star::rendering::XPolyPolygon2D > getUNOPolyPolygon() const = 0;
     };
 
-    typedef ::boost::shared_ptr< ::cppcanvas::PolyPolygon > PolyPolygonSharedPtr;
+    typedef ::std::shared_ptr< ::cppcanvas::PolyPolygon > PolyPolygonSharedPtr;
 }
 
 #endif /* _CPPCANVAS_POLYPOLYGON_HXX */

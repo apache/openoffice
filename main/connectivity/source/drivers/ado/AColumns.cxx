@@ -94,12 +94,8 @@ sdbcx::ObjectType OColumns::appendObject( const ::rtl::OUString&, const Referenc
 	// search for typeinfo where the typename is equal sTypeName
 	OTypeInfoMap::const_iterator aFind = ::std::find_if(pTypeInfoMap->begin(),
 														pTypeInfoMap->end(),
-														::std::compose1(
-															::std::bind2nd(aCase, sTypeName),
-															::std::compose1(
-																::std::mem_fun(&OExtendedTypeInfo::getDBName),
-																::std::select2nd<OTypeInfoMap::value_type>())
-															)
+														[sTypeName](const OTypeInfoMap::value_type& _x) { return aCase(_x.second->getDBName(), sTypeName); }
+														)
 
 												);
 

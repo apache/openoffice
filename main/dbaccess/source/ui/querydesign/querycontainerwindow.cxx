@@ -93,7 +93,7 @@ namespace dbaui
 	{
 		DBG_DTOR(OQueryContainerWindow,NULL);
 		{
-			::std::auto_ptr<OQueryViewSwitch> aTemp(m_pViewSwitch);
+			::std::unique_ptr<OQueryViewSwitch> aTemp(m_pViewSwitch);
 			m_pViewSwitch = NULL;
 		}
 		if ( m_pBeamer )
@@ -108,7 +108,7 @@ namespace dbaui
 			//	m_xBeamer->setComponent(NULL,NULL);
 		}
 		{
-			::std::auto_ptr<Window> aTemp(m_pSplitter);
+			::std::unique_ptr<Window> aTemp(m_pSplitter);
 			m_pSplitter = NULL;
 		}
 	}

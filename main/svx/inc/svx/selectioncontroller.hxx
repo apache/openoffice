@@ -26,7 +26,7 @@
 
 #include "svx/svxdllapi.h"
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 #include <cppuhelper/weak.hxx>
 
@@ -67,7 +67,7 @@ public:
 	virtual bool PasteObjModel( const SdrModel& rModel );
 
 	/** returns a format paint brush set from the current selection */
-	virtual bool TakeFormatPaintBrush( boost::shared_ptr< SfxItemSet >& rFormatSet  );
+	virtual bool TakeFormatPaintBrush( std::shared_ptr< SfxItemSet >& rFormatSet  );
 
 	/** applies a format paint brush set from the current selection.
 	    if bNoCharacterFormats is true, no character attributes are changed.

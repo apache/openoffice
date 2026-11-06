@@ -52,7 +52,7 @@ namespace sdbtools
                         ,public ConnectionDependentComponent
 	{
     private:
-        ::std::auto_ptr< ObjectNames_Impl >   m_pImpl;
+        ::std::unique_ptr< ObjectNames_Impl >   m_pImpl;
 
     public:
         /** constructs the instance

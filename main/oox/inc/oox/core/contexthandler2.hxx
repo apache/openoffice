@@ -25,7 +25,7 @@
 #define OOX_CORE_CONTEXTHANDLER2_HXX
 
 #include <vector>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include "oox/helper/attributelist.hxx"
 #include "oox/helper/binaryinputstream.hxx"
 #include "oox/core/contexthandler.hxx"
@@ -202,7 +202,7 @@ private:
 
 private:
     typedef ::std::vector< ElementInfo >        ContextStack;
-    typedef ::boost::shared_ptr< ContextStack > ContextStackRef;
+    typedef ::std::shared_ptr< ContextStack > ContextStackRef;
 
     ContextStackRef     mxContextStack;     /// Stack of all processed elements.
     size_t              mnRootStackSize;    /// Stack size on construction time.

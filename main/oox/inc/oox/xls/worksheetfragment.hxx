@@ -24,6 +24,7 @@
 #ifndef OOX_XLS_WORKSHEETFRAGMENT_HXX
 #define OOX_XLS_WORKSHEETFRAGMENT_HXX
 
+#include <memory>
 #include "oox/xls/excelhandlers.hxx"
 
 namespace oox {
@@ -50,7 +51,7 @@ private:
     void                importDataValidation( SequenceInputStream& rStrm );
 
 private:
-    ::std::auto_ptr< ValidationModel > mxValModel;
+    ::std::unique_ptr< ValidationModel > mxValModel;
 };
 
 // ============================================================================
@@ -175,7 +176,7 @@ private:
     void                importStandardWidth( BiffInputStream& rStrm );
 
 private:
-    ::boost::shared_ptr< BiffWorksheetContextBase > mxContext;
+    ::std::shared_ptr< BiffWorksheetContextBase > mxContext;
 };
 
 // ============================================================================

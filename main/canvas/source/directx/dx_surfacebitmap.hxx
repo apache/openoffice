@@ -26,6 +26,7 @@
 
 #include <canvas/rendering/isurfaceproxy.hxx>
 #include <canvas/rendering/isurfaceproxymanager.hxx>
+#include <memory>
 #include "dx_ibitmap.hxx"
 #include "dx_canvasfont.hxx" //winstuff
 #include "dx_gdiplususer.hxx"
@@ -137,7 +138,7 @@ namespace dxcanvas
         bool mbAlpha;
 	};
 
-    typedef ::boost::shared_ptr< DXSurfaceBitmap > DXSurfaceBitmapSharedPtr;
+    typedef ::std::shared_ptr< DXSurfaceBitmap > DXSurfaceBitmapSharedPtr;
 }
 
 #endif

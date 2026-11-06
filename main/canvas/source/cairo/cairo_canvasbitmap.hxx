@@ -34,7 +34,7 @@
 
 #include <basegfx/vector/b2isize.hxx>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 #include <canvas/base/integerbitmapbase.hxx>
 

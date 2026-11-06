@@ -360,10 +360,8 @@ void OWizColumnSelect::moveColumn(	ListBox* _pRight,
 	{
 		// find the new column in the dest name mapping to obtain the old column
 		OCopyTableWizard::TNameMapping::iterator aIter = ::std::find_if(m_pParent->m_mNameMapping.begin(),m_pParent->m_mNameMapping.end(),
-																::std::compose1(
-																	::std::bind2nd(_aCase, _sColumnName),
-																	::std::select2nd<OCopyTableWizard::TNameMapping::value_type>())
-																	);
+																[_sColumnName](auto& _x) { return _aCase(_x.second, _sColumnName); }
+																);
 
 		DBG_ASSERT(aIter != m_pParent->m_mNameMapping.end(),"Column must be defined");
         if ( aIter == m_pParent->m_mNameMapping.end() )
@@ -410,9 +408,7 @@ sal_uInt16 OWizColumnSelect::adjustColumnPosition( ListBox* _pLeft,
         {
             // find the new column in the dest name mapping to obtain the old column
             OCopyTableWizard::TNameMapping::iterator aIter = ::std::find_if(m_pParent->m_mNameMapping.begin(),m_pParent->m_mNameMapping.end(),
-                                                                    ::std::compose1(
-                                                                    ::std::bind2nd(_aCase, sColumnString),
-                                                                    ::std::select2nd<OCopyTableWizard::TNameMapping::value_type>())
+                                                                    [sColumnString](auto& _x) { return _aCase(_x.second, sColumnString); }
                                                                     );
 
             DBG_ASSERT(aIter != m_pParent->m_mNameMapping.end(),"Column must be defined");

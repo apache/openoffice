@@ -27,7 +27,7 @@
 #include <sal/types.h>
 #include <rtl/ustring.hxx>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <boost/optional.hpp>
 #include <basegfx/matrix/b2dhommatrix.hxx>
 #include <cppcanvas/canvasgraphic.hxx>
@@ -140,7 +140,7 @@ namespace cppcanvas
         };
     };
 
-    typedef ::boost::shared_ptr< ::cppcanvas::Renderer > RendererSharedPtr;
+    typedef ::std::shared_ptr< ::cppcanvas::Renderer > RendererSharedPtr;
 }
 
 #endif /* _CPPCANVAS_RENDERER_HXX */

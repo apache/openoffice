@@ -34,6 +34,7 @@
 
 #ifndef _COM_SUN_STAR_UNO_ANY_H_
 #include <com/sun/star/uno/Any.h>
+#include <memory>
 #endif
 #ifndef DBAUI_TYPEINFO_HXX
 #include "TypeInfo.hxx"
@@ -110,7 +111,7 @@ namespace dbaui
 	class OTableEditorDelUndoAct : public OTableEditorUndoAct
 	{
 	protected:
-		::std::vector< ::boost::shared_ptr<OTableRow> >	m_aDeletedRows;
+		::std::vector< ::std::shared_ptr<OTableRow> >	m_aDeletedRows;
 
 		virtual void	Undo();
 		virtual void	Redo();
@@ -124,7 +125,7 @@ namespace dbaui
 	class OTableEditorInsUndoAct : public OTableEditorUndoAct
 	{
 	protected:
-		::std::vector< ::boost::shared_ptr<OTableRow> >	m_vInsertedRows;
+		::std::vector< ::std::shared_ptr<OTableRow> >	m_vInsertedRows;
 		long						m_nInsPos;
 
 		virtual void	Undo();
@@ -133,7 +134,7 @@ namespace dbaui
     	TYPEINFO();
 		OTableEditorInsUndoAct( OTableEditorCtrl* pOwner,
 								long nInsertPosition,
-								const ::std::vector<  ::boost::shared_ptr<OTableRow> >& _vInsertedRows);
+								const ::std::vector<  ::std::shared_ptr<OTableRow> >& _vInsertedRows);
 		virtual ~OTableEditorInsUndoAct();
 	};
 

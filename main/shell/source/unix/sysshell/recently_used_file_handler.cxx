@@ -59,8 +59,7 @@ namespace /* private */ {
     // compare two string_t's case insensitive, may also be done
     // by specifying special traits for the string type but in this
     // case it's easier to do it this way
-    struct str_icase_cmp :
-        public std::binary_function<string_t, string_t, bool>
+    struct str_icase_cmp 
     {
         bool operator() (const string_t& s1, const string_t& s2) const
         { return (0 == strcasecmp(s1.c_str(), s2.c_str())); }
@@ -121,7 +120,7 @@ namespace /* private */ {
             return (has_groups() &&
                     iter_end != std::find_if(
                         groups_.begin(), iter_end,
-                        std::bind2nd(str_icase_cmp(), name)));
+                        [name](const string_t& _x) { return str_icase_cmp()(_x, name); }));
         }
 
         void write_xml(const recently_used_file& file) const

@@ -95,7 +95,7 @@ namespace xmloff
 	};
 
 	//=====================================================================
-	struct PropertyValueCompare : public ::std::binary_function< PropertyValue, ::rtl::OUString, bool>
+	struct PropertyValueCompare 
 	{
 		bool operator() (const PropertyValue& lhs, const ::rtl::OUString& rhs) const
 		{
@@ -1483,7 +1483,7 @@ namespace xmloff
 	}
 
 	//---------------------------------------------------------------------
-    struct EqualHandle : public ::std::unary_function< PropertyValue, bool >
+    struct EqualHandle 
     {
         const sal_Int32 m_nHandle;
         EqualHandle( sal_Int32 _nHandle ) : m_nHandle( _nHandle ) { }
@@ -1538,7 +1538,7 @@ namespace xmloff
     }
 
 	//---------------------------------------------------------------------
-    struct EqualName : public ::std::unary_function< PropertyValue, bool >
+    struct EqualName 
     {
         const ::rtl::OUString m_sName;
         EqualName( const ::rtl::OUString& _rName ) : m_sName( _rName ) { }

@@ -25,6 +25,7 @@
 
 #include <vcl/window.hxx>
 #include <toolkit/helper/vclunohelper.hxx>
+#include <memory>
 
 
 using namespace css;
@@ -42,7 +43,7 @@ namespace {
         ::Window* pWindow = NULL;
         if (rxResourceId.is() && rxResourceId->getAnchor().is())
         {
-            ::boost::shared_ptr<FrameworkHelper> pFrameworkHelper (FrameworkHelper::Instance(rViewShellBase));
+            ::std::shared_ptr<FrameworkHelper> pFrameworkHelper (FrameworkHelper::Instance(rViewShellBase));
             Reference<awt::XWindow> xWindow (
                 pFrameworkHelper->GetPaneWindow(rxResourceId->getAnchor()->getAnchor()));
             pWindow = VCLUnoHelper::GetWindow(xWindow);

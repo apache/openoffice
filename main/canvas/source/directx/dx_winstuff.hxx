@@ -26,7 +26,7 @@
 
 #include <algorithm>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 #include <basegfx/numeric/ftools.hxx>
 
@@ -104,13 +104,13 @@ using ::std::min;
 namespace dxcanvas
 {
     // some shared pointer typedefs to Gdiplus objects
-	typedef ::boost::shared_ptr< Gdiplus::Graphics > 		GraphicsSharedPtr;
-    typedef ::boost::shared_ptr< Gdiplus::GraphicsPath > 	GraphicsPathSharedPtr;
-    typedef ::boost::shared_ptr< Gdiplus::Bitmap > 			BitmapSharedPtr;
-	typedef ::boost::shared_ptr< Gdiplus::CachedBitmap > 	CachedBitmapSharedPtr;
-	typedef ::boost::shared_ptr< Gdiplus::Font > 			FontSharedPtr;
-	typedef ::boost::shared_ptr< Gdiplus::Brush > 			BrushSharedPtr;
-	typedef ::boost::shared_ptr< Gdiplus::TextureBrush > 	TextureBrushSharedPtr;
+	typedef ::std::shared_ptr< Gdiplus::Graphics > 		GraphicsSharedPtr;
+    typedef ::std::shared_ptr< Gdiplus::GraphicsPath > 	GraphicsPathSharedPtr;
+    typedef ::std::shared_ptr< Gdiplus::Bitmap > 			BitmapSharedPtr;
+	typedef ::std::shared_ptr< Gdiplus::CachedBitmap > 	CachedBitmapSharedPtr;
+	typedef ::std::shared_ptr< Gdiplus::Font > 			FontSharedPtr;
+	typedef ::std::shared_ptr< Gdiplus::Brush > 			BrushSharedPtr;
+	typedef ::std::shared_ptr< Gdiplus::TextureBrush > 	TextureBrushSharedPtr;
 
     /** COM object RAII wrapper
 

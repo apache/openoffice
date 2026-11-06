@@ -31,6 +31,7 @@
 #include <com/sun/star/chart2/DataPointLabel.hpp>
 #include <com/sun/star/chart/ChartDataCaption.hpp>
 #include <com/sun/star/beans/PropertyAttribute.hpp>
+#include <memory>
 
 using namespace ::com::sun::star;
 using ::com::sun::star::uno::Any;
@@ -55,7 +56,7 @@ public:
     virtual sal_Int32 getValueFromSeries( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& xSeriesPropertySet ) const;
     virtual void setValueToSeries( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& xSeriesPropertySet, sal_Int32 aNewValue ) const;
 
-    explicit WrappedDataCaptionProperty( ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact,
+    explicit WrappedDataCaptionProperty( ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact,
                                          tSeriesOrDiagramPropertyType ePropertyType );
     virtual ~WrappedDataCaptionProperty();
 };
@@ -101,7 +102,7 @@ chart2::DataPointLabel lcl_CaptionToLabel( sal_Int32 nCaption )
 }
 
 void lcl_addWrappedProperties( std::vector< WrappedProperty* >& rList
-                                    , ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact
+                                    , ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact
                                     , tSeriesOrDiagramPropertyType ePropertyType )
 {
     //if !spChart2ModelContact.get() is then the created properties do belong to a single series or single datapoint
@@ -129,7 +130,7 @@ void WrappedDataCaptionProperties::addProperties( ::std::vector< Property > & rO
 //-----------------------------------------------------------------------------
 
 void WrappedDataCaptionProperties::addWrappedPropertiesForSeries( std::vector< WrappedProperty* >& rList
-                                    , ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact )
+                                    , ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact )
 {
     lcl_addWrappedProperties( rList, spChart2ModelContact, DATA_SERIES );
 }
@@ -138,7 +139,7 @@ void WrappedDataCaptionProperties::addWrappedPropertiesForSeries( std::vector< W
 //-----------------------------------------------------------------------------
 
 void WrappedDataCaptionProperties::addWrappedPropertiesForDiagram( std::vector< WrappedProperty* >& rList
-                                    , ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact )
+                                    , ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact )
 {
     lcl_addWrappedProperties( rList, spChart2ModelContact, DIAGRAM );
 }
@@ -148,7 +149,7 @@ void WrappedDataCaptionProperties::addWrappedPropertiesForDiagram( std::vector< 
 //-----------------------------------------------------------------------------
 
 WrappedDataCaptionProperty::WrappedDataCaptionProperty(
-      ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact
+      ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact
     , tSeriesOrDiagramPropertyType ePropertyType )
         : WrappedSeriesOrDiagramProperty< sal_Int32 >( C2U("DataCaption")
             , uno::makeAny( sal_Int32(0) ), spChart2ModelContact, ePropertyType )

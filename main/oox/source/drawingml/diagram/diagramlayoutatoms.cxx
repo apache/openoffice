@@ -102,7 +102,7 @@ static bool _test_atom( const LayoutAtomPtr & pAtom)
 {
 	try {
 		bool bResult = false;
-		const ConditionAtomPtr pCond = boost::dynamic_pointer_cast< ConditionAtom >(pAtom);
+		const ConditionAtomPtr pCond = std::dynamic_pointer_cast< ConditionAtom >(pAtom);
 		if( pCond )
 		{
 			bResult = pCond->test();

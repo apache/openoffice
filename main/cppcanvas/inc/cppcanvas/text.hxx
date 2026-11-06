@@ -24,7 +24,7 @@
 #ifndef _CPPCANVAS_TEXT_HXX
 #define _CPPCANVAS_TEXT_HXX
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <cppcanvas/canvasgraphic.hxx>
 
 
@@ -45,7 +45,7 @@ namespace cppcanvas
         virtual FontSharedPtr getFont() = 0;
     };
 
-    typedef ::boost::shared_ptr< ::cppcanvas::Text > TextSharedPtr;
+    typedef ::std::shared_ptr< ::cppcanvas::Text > TextSharedPtr;
 }
 
 #endif /* _CPPCANVAS_TEXT_HXX */

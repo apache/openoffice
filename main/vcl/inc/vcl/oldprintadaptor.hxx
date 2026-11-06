@@ -24,6 +24,7 @@
 #ifndef _VCL_OLDPRINTADAPTOR
 #define _VCL_OLDPRINTADAPTOR
 
+#include <memory>
 #include "vcl/print.hxx"
 
 namespace vcl
@@ -33,7 +34,7 @@ namespace vcl
     {
         ImplOldStyleAdaptorData*    mpData;
     public:
-        OldStylePrintAdaptor( const boost::shared_ptr< Printer >& );
+        OldStylePrintAdaptor( const std::shared_ptr< Printer >& );
         virtual ~OldStylePrintAdaptor();
 
         void StartPage();

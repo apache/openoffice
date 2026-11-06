@@ -33,6 +33,7 @@
 #include <vcl/sysdata.hxx>
 #include <vcl/bitmap.hxx>
 #include <vcl/virdev.hxx>
+#include <memory>
 
 #include "cairo_cairo.hxx"
 
@@ -256,12 +257,12 @@ namespace cairo
      *
      * @return The new virtual device
      **/
-    boost::shared_ptr<VirtualDevice> QuartzSurface::createVirtualDevice() const
+    std::shared_ptr<VirtualDevice> QuartzSurface::createVirtualDevice() const
     {
         SystemGraphicsData aSystemGraphicsData;
         aSystemGraphicsData.nSize = sizeof(SystemGraphicsData);
         aSystemGraphicsData.rCGContext = getCGContext();
-        return boost::shared_ptr<VirtualDevice>(
+        return std::shared_ptr<VirtualDevice>(
             new VirtualDevice( &aSystemGraphicsData, getDepth() ));
     }
 

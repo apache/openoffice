@@ -131,7 +131,7 @@ namespace svt
 		};
 
 		// ................................................................
-		struct ExtractControlName : public ::std::unary_function< ControlDescription, ::rtl::OUString >
+		struct ExtractControlName 
 		{
 			::rtl::OUString operator()( const ControlDescription& _rDesc )
 			{

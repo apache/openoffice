@@ -25,7 +25,7 @@
 
 #include <vector>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 #include <svl/undo.hxx>
 
@@ -235,7 +235,7 @@ class SwUndoInserts : public SwUndo, public SwUndRng, private SwUndoSaveCntnt
 {
 	SwTxtFmtColl *pTxtFmtColl, *pLastNdColl;
 	SvPtrarr* pFrmFmts;
-    ::std::vector< ::boost::shared_ptr<SwUndoInsLayFmt> > m_FlyUndos;
+    ::std::vector< ::std::shared_ptr<SwUndoInsLayFmt> > m_FlyUndos;
 	SwRedlineData* pRedlData;
 	sal_Bool bSttWasTxtNd;
 protected:

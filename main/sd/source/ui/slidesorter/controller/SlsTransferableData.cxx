@@ -22,6 +22,7 @@
 
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
+#include <memory>
 #include "precompiled_sd.hxx"
 
 #include "controller/SlsTransferableData.hxx"
@@ -39,7 +40,7 @@ SdTransferable* TransferableData::CreateTransferable (
     const ::std::vector<Representative>& rRepresentatives)
 {
     SdTransferable* pTransferable = new SdTransferable (pSrcDoc, pWorkView, bInitOnGetData);
-    ::boost::shared_ptr<TransferableData> pData (new TransferableData(pViewShell, rRepresentatives));
+    ::std::shared_ptr<TransferableData> pData (new TransferableData(pViewShell, rRepresentatives));
     pTransferable->AddUserData(pData);
     return pTransferable;
 }
@@ -47,16 +48,16 @@ SdTransferable* TransferableData::CreateTransferable (
 
 
 
-::boost::shared_ptr<TransferableData> TransferableData::GetFromTransferable (const SdTransferable* pTransferable)
+::std::shared_ptr<TransferableData> TransferableData::GetFromTransferable (const SdTransferable* pTransferable)
 {
-    ::boost::shared_ptr<TransferableData> pData;
+    ::std::shared_ptr<TransferableData> pData;
     for (sal_Int32 nIndex=0,nCount=pTransferable->GetUserDataCount(); nIndex<nCount; ++nIndex)
     {
         pData = ::boost::dynamic_pointer_cast<TransferableData>(pTransferable->GetUserData(nIndex));
         if (pData)
             return pData;
     }
-    return ::boost::shared_ptr<TransferableData>();
+    return ::std::shared_ptr<TransferableData>();
 }
 
 

@@ -27,7 +27,7 @@
 #include <cppuhelper/interfacecontainer.h>
 #include <com/sun/star/uno/Reference.hxx>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <map>
 
 namespace com { namespace sun { namespace star { namespace drawing
@@ -44,7 +44,7 @@ namespace slideshow
         /// Maps XShape to shape listener
         typedef ::std::map< ::com::sun::star::uno::Reference<
                                 ::com::sun::star::drawing::XShape>,
-                            boost::shared_ptr< ::cppu::OInterfaceContainerHelper >
+                            std::shared_ptr< ::cppu::OInterfaceContainerHelper >
                             >                  ShapeEventListenerMap;
 
         /// Maps XShape to mouse cursor

@@ -56,7 +56,7 @@ extern sal_Bool bDrawIsInUndo;			//! irgendwo als Member !!!
 
 using namespace com::sun::star;
 using ::com::sun::star::uno::Sequence;
-using ::std::auto_ptr;
+using ::std::unique_ptr;
 
 // STATIC DATA -----------------------------------------------------------
 

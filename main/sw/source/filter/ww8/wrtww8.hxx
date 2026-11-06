@@ -48,6 +48,7 @@
 #include <expfld.hxx>
 
 #include <vcl/graph.hxx>
+#include <memory>
 class SvxBrushItem;
 
 // einige Forward Deklarationen
@@ -231,7 +232,7 @@ public:
 class WW8_WrPlcSepx : public MSWordSections
 {
     SvULongs aCps;              // PTRARR von CPs
-    ::std::vector< ::boost::shared_ptr<WW8_PdAttrDesc> > m_SectionAttributes;
+    ::std::vector< ::std::shared_ptr<WW8_PdAttrDesc> > m_SectionAttributes;
     // HACK to prevent adding sections in endnotes
     bool m_bHeaderFooterWritten;
     WW8_WrPlc0* pTxtPos;        // Pos der einzelnen Header / Footer
@@ -476,7 +477,7 @@ public:
     WW8_WrtBookmarks* pBkmks;
     WW8_WrtRedlineAuthor* pRedlAuthors;
     BitmapPalette* pBmpPal;
-    boost::shared_ptr<NfKeywordTable> pKeyMap;
+    std::shared_ptr<NfKeywordTable> pKeyMap;
     SvxMSExportOLEObjects* pOLEExp;
     SwMSConvertControls* pOCXExp;
     WW8OleMaps* pOleMap;

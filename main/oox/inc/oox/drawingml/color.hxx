@@ -25,7 +25,7 @@
 #define OOX_DRAWINGML_COLOR_HXX
 
 #include <vector>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <sal/types.h>
 #include <rtl/instance.hxx>
 #include <rtl/ustring.hxx>
@@ -135,7 +135,7 @@ private:
     sal_Int32           mnAlpha;        /// Alpha value (color opacity).
 };
 
-typedef boost::shared_ptr< Color > ColorPtr;
+typedef std::shared_ptr< Color > ColorPtr;
 
 // ============================================================================
 

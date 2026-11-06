@@ -23,6 +23,7 @@
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_hsqldb.hxx"
+#include <algorithm>
 #include "hsqldb/HStorageMap.hxx"
 #include <comphelper/types.hxx>
 #include <com/sun/star/embed/XTransactionBroadcaster.hpp>
@@ -180,10 +181,7 @@ namespace connectivity
 			TStorages& rMap = lcl_getStorageMap();
 			// check if the storage is already in our map
 			TStorages::iterator aFind = ::std::find_if(rMap.begin(),rMap.end(),
-										::std::compose1(
-											::std::bind2nd(::std::equal_to<Reference<XStorage> >(),_xStorage)
-											,::std::compose1(::std::select1st<TStorageURLPair>(),::std::compose1(::std::select1st<TStorages::mapped_type>(),::std::select2nd<TStorages::value_type>())))
-					);
+										[_xStorage](const TStorages::value_type& _x) { return _x.second.first.first == _xStorage; });
 			if ( aFind == rMap.end() )
 			{
 				aFind = rMap.insert(TStorages::value_type(lcl_getNextCount(),TStorages::mapped_type(TStorageURLPair(_xStorage,_sURL),TStreamMap()))).first;
@@ -211,10 +209,7 @@ namespace connectivity
 			TStorages& rMap = lcl_getStorageMap();
 			// check if the storage is already in our map
 			TStorages::iterator aFind = ::std::find_if(rMap.begin(),rMap.end(),
-										::std::compose1(
-											::std::bind2nd(::std::equal_to<Reference<XStorage> >(),_xStorage)
-											,::std::compose1(::std::select1st<TStorageURLPair>(),::std::compose1(::std::select1st<TStorages::mapped_type>(),::std::select2nd<TStorages::value_type>())))
-					);
+										[_xStorage](const TStorages::value_type& _x) { return _x.second.first.first == _xStorage; });
 			if ( aFind != rMap.end() )
                 sKey = aFind->first;
             return sKey;

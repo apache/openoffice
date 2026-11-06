@@ -63,6 +63,7 @@
 #include <drawinglayer/geometry/viewinformation2d.hxx>
 #include <vcl/virdev.hxx>
 #include <basegfx/matrix/b2dhommatrixtools.hxx>
+#include <memory>
 
 //////////////////////////////////////////////////////////////////////////////
 
@@ -1394,9 +1395,9 @@ SdrOutliner& SdrTextObj::ImpGetDrawOutliner() const
 	return rOutl;
 }
 
-boost::shared_ptr< SdrOutliner > SdrTextObj::CreateDrawOutliner()
+std::shared_ptr< SdrOutliner > SdrTextObj::CreateDrawOutliner()
 {
-	boost::shared_ptr< SdrOutliner > xDrawOutliner( pModel->CreateDrawOutliner(this) );
+	std::shared_ptr< SdrOutliner > xDrawOutliner( pModel->CreateDrawOutliner(this) );
 	ImpInitDrawOutliner( *(xDrawOutliner.get()) );
 	return xDrawOutliner;
 }

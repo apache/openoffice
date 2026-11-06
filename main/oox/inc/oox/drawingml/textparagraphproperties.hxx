@@ -31,6 +31,7 @@
 #include "oox/drawingml/textfont.hxx"
 #include "textspacing.hxx"
 #include <boost/optional.hpp>
+#include <memory>
 
 namespace com { namespace sun { namespace star {
     namespace graphic { class XGraphic; }
@@ -40,7 +41,7 @@ namespace oox { namespace drawingml {
 
 class TextParagraphProperties;
 
-typedef boost::shared_ptr< TextParagraphProperties > TextParagraphPropertiesPtr;
+typedef std::shared_ptr< TextParagraphProperties > TextParagraphPropertiesPtr;
 
 class BulletList
 {

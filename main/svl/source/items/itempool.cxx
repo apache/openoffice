@@ -26,6 +26,7 @@
 
 #include <string.h>
 #include <stdio.h>
+#include <algorithm>
 #ifndef GCC
 #endif
 

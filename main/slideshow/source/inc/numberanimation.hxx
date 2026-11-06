@@ -25,6 +25,7 @@
 #define INCLUDED_SLIDESHOW_NUMBERANIMATION_HXX
 
 #include <animation.hxx>
+#include <memory>
 
 
 /* Definition of NumberAnimation interface */
@@ -67,7 +68,7 @@ namespace slideshow
             virtual ValueType getUnderlyingValue() const = 0;
         };
 
-        typedef ::boost::shared_ptr< NumberAnimation > NumberAnimationSharedPtr;
+        typedef ::std::shared_ptr< NumberAnimation > NumberAnimationSharedPtr;
 
     }
 }

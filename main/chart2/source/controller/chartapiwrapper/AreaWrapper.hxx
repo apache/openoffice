@@ -34,7 +34,7 @@
 #include <com/sun/star/chart2/XChartDocument.hpp>
 #include <com/sun/star/uno/XComponentContext.hpp>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 namespace chart
 {
@@ -52,7 +52,7 @@ class AreaWrapper : public ::cppu::ImplInheritanceHelper3<
                     >
 {
 public:
-    AreaWrapper( ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact );
+    AreaWrapper( ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact );
 	virtual ~AreaWrapper();
 
     /// XServiceInfo declarations
@@ -81,7 +81,7 @@ protected:
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > getInnerPropertySet();
 
 private:
-    ::boost::shared_ptr< Chart2ModelContact >   m_spChart2ModelContact;
+    ::std::shared_ptr< Chart2ModelContact >   m_spChart2ModelContact;
 	::cppu::OInterfaceContainerHelper           m_aEventListenerContainer;
 };
 

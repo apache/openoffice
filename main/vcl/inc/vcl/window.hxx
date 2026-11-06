@@ -46,7 +46,7 @@
 #include <rtl/ustring.hxx>
 #include <cppuhelper/weakref.hxx>
 #include <com/sun/star/uno/Reference.hxx>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 class VirtualDevice;
 struct ImplDelData;
@@ -1134,7 +1134,7 @@ public:
     // ExtImpl
 
     // layouting
-    boost::shared_ptr< vcl::WindowArranger > getLayout();
+    std::shared_ptr< vcl::WindowArranger > getLayout();
 
     /* add a child Window
        addWindow will do the following things

@@ -28,6 +28,7 @@
 #include <vcl/graph.hxx>
 #include <sfx2/objsh.hxx>
 #include <svl/lstner.hxx>
+#include <memory>
 
 // ------------------
 // - SdTransferable -
@@ -98,12 +99,12 @@ public:
     /** Add a user data object.  When it was added before (and not
         removed) then this call is ignored.
     */
-    void AddUserData (const ::boost::shared_ptr<UserData>& rpData);
+    void AddUserData (const ::std::shared_ptr<UserData>& rpData);
 
     /** Remove a previously added user data object.  When the object
         was never added or removed before then this call is ignored.
     */
-    void RemoveUserData (const ::boost::shared_ptr<UserData>& rpData);
+    void RemoveUserData (const ::std::shared_ptr<UserData>& rpData);
 
     /** Return the number of user data objects.
     */
@@ -113,7 +114,7 @@ public:
         valid, ie not in the range [0,count) then an empty pointer is
         returned.
     */
-    ::boost::shared_ptr<UserData> GetUserData (const sal_Int32 nIndex) const;
+    ::std::shared_ptr<UserData> GetUserData (const sal_Int32 nIndex) const;
 
 protected:
 
@@ -149,7 +150,7 @@ private:
     sal_Bool                            mbPageTransferable           : 1;
     sal_Bool                            mbPageTransferablePersistent : 1;
 	bool							mbIsUnoObj					: 1;
-    ::std::vector<boost::shared_ptr<UserData> > maUserData;
+    ::std::vector<std::shared_ptr<UserData> > maUserData;
 
 									// not available
 									SdTransferable();

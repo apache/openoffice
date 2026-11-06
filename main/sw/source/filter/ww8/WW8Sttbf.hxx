@@ -22,7 +22,7 @@
 
 
 #include <vector>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <boost/shared_array.hpp>
 #include <tools/solar.h>
 #include <rtl/ustring.hxx>
@@ -61,7 +61,7 @@ typedef ::std::vector<rtl::OUString> StringVector_t;
     template <class T>
     class WW8Sttb : public WW8Struct
     {
-        typedef ::boost::shared_ptr< void > ExtraPointer_t;
+        typedef ::std::shared_ptr< void > ExtraPointer_t;
         typedef ::std::vector< ExtraPointer_t > ExtrasVector_t;
         bool bDoubleByteCharacters;
         StringVector_t m_Strings;

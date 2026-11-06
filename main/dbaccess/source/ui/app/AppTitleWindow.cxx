@@ -65,7 +65,7 @@ OTitleWindow::~OTitleWindow()
 	if ( m_pChild )
 	{
 		m_pChild->Hide();
-		::std::auto_ptr<Window> aTemp(m_pChild);
+		::std::unique_ptr<Window> aTemp(m_pChild);
 		m_pChild = NULL;
 	}
 

@@ -1238,7 +1238,7 @@ SwXParagraph::setPropertyToDefault(const OUString& rPropertyName)
             // to paragraph boundaries
             SwPosition aStart( *aCursor.Start() );
             SwPosition aEnd  ( *aCursor.End()   );
-            ::std::auto_ptr<SwUnoCrsr> pTemp( aCursor.GetDoc()->CreateUnoCrsr(aStart, sal_False) );
+            ::std::unique_ptr<SwUnoCrsr> pTemp( aCursor.GetDoc()->CreateUnoCrsr(aStart, sal_False) );
 
             if(!SwUnoCursorHelper::IsStartOfPara(*pTemp))
             {

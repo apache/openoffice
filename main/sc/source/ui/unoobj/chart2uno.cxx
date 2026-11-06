@@ -53,6 +53,7 @@
 #include <vector>
 #include <list>
 #include <rtl/math.hxx>
+#include <memory>
 
 SC_SIMPLE_SERVICE_INFO( ScChart2DataProvider, "ScChart2DataProvider",
         "com.sun.star.chart2.data.DataProvider")
@@ -71,13 +72,13 @@ using ::rtl::OUString;
 using ::rtl::OUStringBuffer;
 using ::com::sun::star::uno::Sequence;
 using ::com::sun::star::uno::Reference;
-using ::std::auto_ptr;
+using ::std::unique_ptr;
 using ::std::vector;
 using ::std::list;
 using ::std::distance;
 using ::std::unary_function;
 using ::std::unordered_set;
-using ::boost::shared_ptr;
+using ::std::shared_ptr;
 
 namespace
 {
@@ -112,7 +113,7 @@ template< typename T >
     return aResult;
 }
 
-struct lcl_appendTableNumber : public ::std::unary_function< SCTAB, void >
+struct lcl_appendTableNumber 
 {
     lcl_appendTableNumber( ::rtl::OUStringBuffer & rBuffer ) :
             m_rBuffer( rBuffer )
@@ -155,7 +156,7 @@ uno::Reference< sheet::XSpreadsheetDocument > lcl_GetSpreadSheetDocument( ScDocu
 
 namespace {
 
-struct DeleteInstance : public unary_function<FormulaToken*, void>
+struct DeleteInstance
 {
     void operator() (FormulaToken* p) const
     {
@@ -830,7 +831,7 @@ void Chart2Positioner::createPositionMap()
 /**
  * Function object to create a range string from a token list.
  */
-class Tokens2RangeString : public unary_function<ScSharedTokenRef, void>
+class Tokens2RangeString
 {
 public:
     Tokens2RangeString(ScDocument* pDoc, FormulaGrammar::Grammar eGram, sal_Unicode cRangeSep) :
@@ -888,7 +889,7 @@ private:
  *
  * and each address doesn't include any '$' symbols.
  */
-class Tokens2RangeStringXML : public unary_function<ScSharedTokenRef, void>
+class Tokens2RangeStringXML
 {
 public:
     Tokens2RangeStringXML(ScDocument* pDoc) :
@@ -1571,7 +1572,7 @@ namespace
 /**
  * Function object to create a list of table numbers from a token list.
  */
-class InsertTabNumber : public unary_function<ScSharedTokenRef, void>
+class InsertTabNumber
 {
 public:
     InsertTabNumber() :
@@ -2729,8 +2730,8 @@ void ScChart2DataSequence::StopListeningToAllExternalRefs()
     if (!m_pExtRefListener.get())
         return;
 
-    const unordered_set<sal_uInt16>& rFileIds = m_pExtRefListener->getAllFileIds();
-    unordered_set<sal_uInt16>::const_iterator itr = rFileIds.begin(), itrEnd = rFileIds.end();
+    const std::unordered_set<sal_uInt16>& rFileIds = m_pExtRefListener->getAllFileIds();
+    std::unordered_set<sal_uInt16>::const_iterator itr = rFileIds.begin(), itrEnd = rFileIds.end();
     ScExternalRefManager* pRefMgr = m_pDocument->GetExternalRefManager();
     for (; itr != itrEnd; ++itr)
         pRefMgr->removeLinkListener(*itr, m_pExtRefListener.get());
@@ -2762,8 +2763,8 @@ void ScChart2DataSequence::CopyData(const ScChart2DataSequence& r)
 
         ScExternalRefManager* pRefMgr = m_pDocument->GetExternalRefManager();
         m_pExtRefListener.reset(new ExternalRefListener(*this, m_pDocument));
-        const unordered_set<sal_uInt16>& rFileIds = r.m_pExtRefListener->getAllFileIds();
-        unordered_set<sal_uInt16>::const_iterator itr = rFileIds.begin(), itrEnd = rFileIds.end();
+        const std::unordered_set<sal_uInt16>& rFileIds = r.m_pExtRefListener->getAllFileIds();
+        std::unordered_set<sal_uInt16>::const_iterator itr = rFileIds.begin(), itrEnd = rFileIds.end();
         for (; itr != itrEnd; ++itr)
         {
             pRefMgr->addLinkListener(*itr, m_pExtRefListener.get());
@@ -2947,7 +2948,7 @@ void ScChart2DataSequence::ExternalRefListener::removeFileId(sal_uInt16 nFileId)
     maFileIds.erase(nFileId);
 }
 
-const unordered_set<sal_uInt16>& ScChart2DataSequence::ExternalRefListener::getAllFileIds()
+const std::unordered_set<sal_uInt16>& ScChart2DataSequence::ExternalRefListener::getAllFileIds()
 {
     return maFileIds;
 }
@@ -3041,7 +3042,7 @@ namespace {
  * This function object is used to accumulatively count the numbers of
  * columns and rows in all reference tokens.
  */
-class AccumulateRangeSize : public unary_function<ScSharedTokenRef, void>
+class AccumulateRangeSize
 {
 public:
     AccumulateRangeSize() :
@@ -3071,7 +3072,7 @@ private:
  * This function object is used to generate label strings from a list of
  * reference tokens.
  */
-class GenerateLabelStrings : public unary_function<ScSharedTokenRef, void>
+class GenerateLabelStrings
 {
 public:
     GenerateLabelStrings(sal_Int32 nSize, chart2::data::LabelOrigin eOrigin, bool bColumn) :

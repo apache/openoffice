@@ -31,6 +31,7 @@
 #include <tools/diagnose_ex.h>
 #include <algorithm>
 #include <boost/bind.hpp>
+#include <memory>
 
 using namespace ::com::sun::star;
 using namespace ::com::sun::star::uno;
@@ -45,8 +46,8 @@ namespace sd { namespace framework {
 //===== ConfigurationControllerResourceManager ================================
 
 ConfigurationControllerResourceManager::ConfigurationControllerResourceManager (
-    const ::boost::shared_ptr<ResourceFactoryManager>& rpResourceFactoryContainer,
-    const ::boost::shared_ptr<ConfigurationControllerBroadcaster>& rpBroadcaster)
+    const ::std::shared_ptr<ResourceFactoryManager>& rpResourceFactoryContainer,
+    const ::std::shared_ptr<ConfigurationControllerBroadcaster>& rpBroadcaster)
     : maResourceMap(ResourceComparator()),
       mpResourceFactoryContainer(rpResourceFactoryContainer),
       mpBroadcaster(rpBroadcaster)

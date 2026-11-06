@@ -35,6 +35,7 @@
 #include "shapemanagerimpl.hxx"
 
 #include <boost/bind.hpp>
+#include <memory>
 
 using namespace com::sun::star;
 
@@ -166,7 +167,7 @@ bool ShapeManagerImpl::handleMouseReleased( awt::MouseEvent const& e )
             // shape hit, and shape is visible. Raise
             // event.
 
-            boost::shared_ptr<cppu::OInterfaceContainerHelper> const pCont(
+            std::shared_ptr<cppu::OInterfaceContainerHelper> const pCont(
                 aCurrBroadcaster->second );
             uno::Reference<drawing::XShape> const xShape(
                 aCurrBroadcaster->first->getXShape() );

@@ -69,6 +69,7 @@
 #include <swmodule.hxx>
 
 #include <writerfilter/doctok/sprmids.hxx>
+#include <memory>
 
 #include "writerhelper.hxx"
 #include "writerwordglue.hxx"
@@ -841,7 +842,7 @@ void wwFontHelper::WriteFontTable(SvStream *pTableStream, WW8Fib& rFib)
      * Write them all to pTableStream
      */
     ::std::for_each(aFontList.begin(), aFontList.end(),
-        ::std::bind2nd(::std::mem_fun(&wwFont::Write),pTableStream));
+        [pTableStream](auto _x) { _x->Write(pTableStream); });
 
     /*
      * Write the position and len in the FIB
@@ -862,7 +863,7 @@ void wwFontHelper::WriteFontTable( const DocxAttributeOutput& rAttrOutput )
     ::std::vector<const wwFont *> aFontList( AsVector() );
 
     ::std::for_each( aFontList.begin(), aFontList.end(),
-        ::std::bind2nd( ::std::mem_fun( &wwFont::WriteDocx ), &rAttrOutput ) );
+        [&rAttrOutput](auto _x) { _x->WriteDocx(&rAttrOutput); } );
 }
 #endif
 
@@ -871,7 +872,7 @@ void wwFontHelper::WriteFontTable( const RtfAttributeOutput& rAttrOutput )
     ::std::vector<const wwFont *> aFontList( AsVector() );
 
     ::std::for_each( aFontList.begin(), aFontList.end(),
-        ::std::bind2nd( ::std::mem_fun( &wwFont::WriteRtf ), &rAttrOutput ) );
+        [&rAttrOutput](auto _x) { _x->WriteRtf(&rAttrOutput); } );
 }
 
 /* */
@@ -1761,7 +1762,7 @@ bool WW8_WrPlcSepx::WriteKFTxt( WW8Export& rWrt )
     m_bHeaderFooterWritten = true;
     for ( sal_uInt16 i = 0; i < aSects.Count(); ++i )
     {
-        ::boost::shared_ptr<WW8_PdAttrDesc> const pAttrDesc(new WW8_PdAttrDesc);
+        ::std::shared_ptr<WW8_PdAttrDesc> const pAttrDesc(new WW8_PdAttrDesc);
         m_SectionAttributes.push_back(pAttrDesc);
 
         WW8_SepInfo& rSepInfo = aSects[i];

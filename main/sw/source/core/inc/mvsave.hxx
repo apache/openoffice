@@ -28,6 +28,7 @@
 #include <svl/svarray.hxx>
 #include <IDocumentMarkAccess.hxx>
 #include <vector>
+#include <memory>
 
 namespace sfx2 {
     class MetadatableUndo;
@@ -74,7 +75,7 @@ namespace sw { namespace mark
             sal_uLong m_nNode2;
             xub_StrLen m_nCntnt1;
             xub_StrLen m_nCntnt2;
-            ::boost::shared_ptr< ::sfx2::MetadatableUndo > m_pMetadataUndo;
+            ::std::shared_ptr< ::sfx2::MetadatableUndo > m_pMetadataUndo;
     };
 }}
 

@@ -142,7 +142,7 @@ private:
 
     // #i36749#
     /**
-       unordered_map containing "name->rule" relation
+       std::unordered_map containing "name->rule" relation
      */
     std::unordered_map<String, SwNumRule *, StringHash> * pNumRuleMap;
 

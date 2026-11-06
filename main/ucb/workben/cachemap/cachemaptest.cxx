@@ -146,7 +146,7 @@ int main()
                          Object1 >(0)),
                static_cast< unsigned long >(
                    test< ObjectContainer2,
-                         std::auto_ptr< ObjectContainer2 >,
+                         std::unique_ptr< ObjectContainer2 >,
                          Object2 >(0)),
                static_cast< unsigned long >(
                    test< ObjectContainer3,

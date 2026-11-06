@@ -32,6 +32,7 @@
 #include <vcl/mapmod.hxx>
 #include <vector>
 #include <utility>
+#include <memory>
 
 
 class MapMode;
@@ -74,10 +75,10 @@ public:
 
     Layouter (
         const SharedSdWindow& rpWindow,
-        const ::boost::shared_ptr<Theme>& rpTheme);
+        const ::std::shared_ptr<Theme>& rpTheme);
     ~Layouter (void);
 
-    ::boost::shared_ptr<PageObjectLayouter> GetPageObjectLayouter (void) const;
+    ::std::shared_ptr<PageObjectLayouter> GetPageObjectLayouter (void) const;
     /** Set the horizontal and vertical borders in pixel coordinates between
         the enclosing window and page objects.  The borders may be painted
         larger then the given values when the space for the insertion marker

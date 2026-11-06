@@ -31,7 +31,7 @@
 #include <com/sun/star/container/XIndexAccess.hpp>
 #include <com/sun/star/container/XNameAccess.hpp>
 #include <com/sun/star/frame/XLayoutManager.hpp>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 
 static const char ITEM_DESCRIPTOR_COMMANDURL[]  = "CommandURL";
@@ -52,7 +52,7 @@ static const char CUSTOM_TOOLBAR_STR[] = "custom_toolbar_";
 static const char CUSTOM_MENU_STR[] = "vnd.openoffice.org:CustomMenu";
 
 class VbaCommandBarHelper;
-typedef ::boost::shared_ptr< VbaCommandBarHelper > VbaCommandBarHelperRef;
+typedef ::std::shared_ptr< VbaCommandBarHelper > VbaCommandBarHelperRef;
 
 class VbaCommandBarHelper
 {

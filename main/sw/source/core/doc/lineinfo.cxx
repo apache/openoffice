@@ -45,7 +45,7 @@ void SwDoc::SetLineNumberInfo( const SwLineNumberInfo &rNew )
         // FME 2007-08-14 #i80120# Invalidate size, because ChgThisLines()
         // is only (onny may only be) called by the formatting routines
         //pTmpRoot->InvalidateAllCntnt( INV_LINENUM | INV_SIZE );
-		std::for_each( aAllLayouts.begin(), aAllLayouts.end(),std::bind2nd(std::mem_fun(&SwRootFrm::InvalidateAllCntnt), INV_LINENUM | INV_SIZE));//swmod 080226
+		std::for_each( aAllLayouts.begin(), aAllLayouts.end(),[INV_LINENUM | INV_SIZE](auto _x) { _x->InvalidateAllCntnt(INV_LINENUM | INV_SIZE); });//swmod 080226
 		 pTmpRoot->EndAllAction();
 	}	//swmod 080219
 	*pLineNumberInfo = rNew;

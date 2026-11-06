@@ -92,7 +92,7 @@
 
 #include <queue>
 #include <boost/bind.hpp>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 #if (defined(_MSC_VER) && (_MSC_VER < 1400))
 #define _WIN32_WINNT 0x0400
@@ -206,7 +206,7 @@ struct ExtensionCmd
           m_vExtensionList( vExtensionList ) {};
 };
 
-typedef ::boost::shared_ptr< ExtensionCmd > TExtensionCmd;
+typedef ::std::shared_ptr< ExtensionCmd > TExtensionCmd;
 
 //------------------------------------------------------------------------------
 class ExtensionCmdQueue::Thread: public dp_gui::Thread

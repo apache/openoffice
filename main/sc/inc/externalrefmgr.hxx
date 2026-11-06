@@ -36,7 +36,7 @@
 
 #include <unordered_map>
 #include <unordered_set>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <vector>
 #include <list>
 #include <set>
@@ -89,8 +89,8 @@ private:
 class ScExternalRefCache
 {
 public:
-    typedef ::boost::shared_ptr< formula::FormulaToken>     TokenRef;
-    typedef ::boost::shared_ptr<ScTokenArray>               TokenArrayRef;
+    typedef ::std::shared_ptr< formula::FormulaToken>     TokenRef;
+    typedef ::std::shared_ptr<ScTokenArray>               TokenArrayRef;
 
     struct TableName
     {
@@ -201,7 +201,7 @@ public:
         ReferencedFlag                  meReferenced;
     };
 
-    typedef ::boost::shared_ptr<Table>      TableTypeRef;
+    typedef ::std::shared_ptr<Table>      TableTypeRef;
     typedef ::std::unordered_map<String, size_t, ScStringHashCode>   TableNameIndexMap;
 
     ScExternalRefCache();

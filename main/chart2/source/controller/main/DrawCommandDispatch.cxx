@@ -65,7 +65,7 @@ namespace
 //.............................................................................
 
     // comparing two PropertyValue instances
-    struct PropertyValueCompare : public ::std::binary_function< beans::PropertyValue, ::rtl::OUString, bool >
+    struct PropertyValueCompare 
     {
 	    bool operator() ( const beans::PropertyValue& rPropValue, const ::rtl::OUString& rName ) const
 	    {
@@ -391,7 +391,7 @@ void DrawCommandDispatch::execute( const ::rtl::OUString& rCommand, const Sequen
                 const beans::PropertyValue* pIter = rArgs.getConstArray();
                 const beans::PropertyValue* pEnd  = pIter + rArgs.getLength();
                 const beans::PropertyValue* pKeyModifier = ::std::find_if(
-                    pIter, pEnd, ::std::bind2nd( PropertyValueCompare(), boost::cref( sKeyModifier ) ) );
+                    pIter, pEnd, [&sKeyModifier](auto& _x) { return PropertyValueCompare()(_x, sKeyModifier); } );
                 sal_Int16 nKeyModifier = 0;
                 if ( pKeyModifier && ( pKeyModifier->Value >>= nKeyModifier ) && nKeyModifier == KEY_MOD1 )
                 {

@@ -35,6 +35,7 @@
 
 #include <nodelist.hxx>
 #include <xpathobject.hxx>
+#include <memory>
 
 #include "../dom/node.hxx"
 #include "../dom/document.hxx"
@@ -374,7 +375,7 @@ namespace XPath
         }
 
         /* Create xpath evaluation context */
-        ::boost::shared_ptr<xmlXPathContext> const xpathCtx(
+        ::std::shared_ptr<xmlXPathContext> const xpathCtx(
                 xmlXPathNewContext(pDoc), xmlXPathFreeContext);
         if( !bool(xpathCtx)) { throw XPathException(); }
 
@@ -391,7 +392,7 @@ namespace XPath
 		/* run the query */
         OString o1 = OUStringToOString(expr, RTL_TEXTENCODING_UTF8);
         xmlChar *xStr = (xmlChar*)o1.getStr();
-        ::boost::shared_ptr<xmlXPathObject> const xpathObj(
+        ::std::shared_ptr<xmlXPathObject> const xpathObj(
                 xmlXPathEval(xStr, xpathCtx.get()), xmlXPathFreeObject);
         if (0 == xpathObj) {
             // OSL_ENSURE(xpathCtx->lastError == NULL, xpathCtx->lastError->message);

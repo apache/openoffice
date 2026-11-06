@@ -50,6 +50,7 @@
 #include <vcl/graph.hxx>
 #include <rtl/ustrbuf.hxx>
 #include <basegfx/matrix/b2dhommatrix.hxx>
+#include <memory>
 #include "exportdialog.hxx"
 #include "exportdialog.hrc"
 
@@ -749,11 +750,11 @@ void ExportDialog::createSizeControls( vcl::RowOrColumn& rLayout )
 	Size aLbMax( maLbSizeX.GetSizePixel() );
 	aLbMax.Width() = Max( aLbMax.Width(), maLbResolution.GetSizePixel().Width() );
 
-	boost::shared_ptr< vcl::LabelColumn > xSizeColumns( new vcl::LabelColumn( &rLayout ) );
+	std::shared_ptr< vcl::LabelColumn > xSizeColumns( new vcl::LabelColumn( &rLayout ) );
 	rLayout.addChild( xSizeColumns );
 
 	// row 1
-	boost::shared_ptr< vcl::RowOrColumn > xColumn( new vcl::RowOrColumn( xSizeColumns.get(), false ) );
+	std::shared_ptr< vcl::RowOrColumn > xColumn( new vcl::RowOrColumn( xSizeColumns.get(), false ) );
 	xSizeColumns->addRow( &maFtSizeX, xColumn, nIndent );
 	Size aMinSize( maMfSizeX.GetSizePixel() );
 	nIndex = xColumn->addWindow( &maMfSizeX );
@@ -762,7 +763,7 @@ void ExportDialog::createSizeControls( vcl::RowOrColumn& rLayout )
 	xColumn->setMinimumSize( nIndex, aLbMax );
 
 	// row 2
-	xColumn = boost::shared_ptr< vcl::RowOrColumn >( new vcl::RowOrColumn( xSizeColumns.get(), false ) );
+	xColumn = std::shared_ptr< vcl::RowOrColumn >( new vcl::RowOrColumn( xSizeColumns.get(), false ) );
 	xSizeColumns->addRow( &maFtSizeY, xColumn, nIndent );
 	nIndex = xColumn->addWindow( &maMfSizeY );
 	xColumn->setMinimumSize( nIndex, aMinSize );
@@ -772,7 +773,7 @@ void ExportDialog::createSizeControls( vcl::RowOrColumn& rLayout )
 	// row 3
 	if ( mbIsPixelFormat )		// TODO: (metafileresolutionsupport)
 	{
-		xColumn = boost::shared_ptr< vcl::RowOrColumn >( new vcl::RowOrColumn( xSizeColumns.get(), false ) );
+		xColumn = std::shared_ptr< vcl::RowOrColumn >( new vcl::RowOrColumn( xSizeColumns.get(), false ) );
 		xSizeColumns->addRow( &maFtResolution, xColumn, nIndent );
 		nIndex = xColumn->addWindow( &maNfResolution );
 		xColumn->setMinimumSize( nIndex, aMinSize );
@@ -810,7 +811,7 @@ void ExportDialog::createSizeControls( vcl::RowOrColumn& rLayout )
 		maLbResolution.SelectEntryPos( static_cast< sal_uInt16 >( nResolutionUnit ) );
 	}
 
-    boost::shared_ptr< vcl::Spacer > xSpacer( new vcl::Spacer( &rLayout, 2 ) );
+    std::shared_ptr< vcl::Spacer > xSpacer( new vcl::Spacer( &rLayout, 2 ) );
 	rLayout.addChild( xSpacer );
 }
 
@@ -820,25 +821,25 @@ void ExportDialog::createColorDepthControls( vcl::RowOrColumn& rLayout )
 	Size aBorder( LogicToPixel( Size( 5, 5 ), MapMode( MAP_APPFONT ) ) );
 	long nIndent = aBorder.Width();
 
-	boost::shared_ptr< vcl::RowOrColumn > xRow( new vcl::RowOrColumn( &rLayout, false ) );
+	std::shared_ptr< vcl::RowOrColumn > xRow( new vcl::RowOrColumn( &rLayout, false ) );
 	rLayout.addChild( xRow );
 	xRow->addWindow( &maFlColorDepth );
 
-	xRow = boost::shared_ptr< vcl::RowOrColumn >( new vcl::RowOrColumn( &rLayout, false ) );
+	xRow = std::shared_ptr< vcl::RowOrColumn >( new vcl::RowOrColumn( &rLayout, false ) );
 	rLayout.addChild( xRow );
-	boost::shared_ptr< vcl::Indenter > xIndenter( new vcl::Indenter( &rLayout, nIndent ) );
+	std::shared_ptr< vcl::Indenter > xIndenter( new vcl::Indenter( &rLayout, nIndent ) );
 	xRow->addChild( xIndenter );
-	boost::shared_ptr< vcl::RowOrColumn > xRows( new vcl::RowOrColumn( &rLayout, true ) );
+	std::shared_ptr< vcl::RowOrColumn > xRows( new vcl::RowOrColumn( &rLayout, true ) );
 	xIndenter->setChild( xRows );
 	xRows->addWindow( &maLbColorDepth );
 
-	boost::shared_ptr< vcl::Spacer > xSpacer( new vcl::Spacer( &rLayout, 2 ) );
+	std::shared_ptr< vcl::Spacer > xSpacer( new vcl::Spacer( &rLayout, 2 ) );
 	rLayout.addChild( xSpacer );
 }
 
 void ExportDialog::createScrollBar( vcl::RowOrColumn& rLayout )
 {
-	boost::shared_ptr< vcl::RowOrColumn > xRow( new vcl::RowOrColumn( &rLayout, false ) );
+	std::shared_ptr< vcl::RowOrColumn > xRow( new vcl::RowOrColumn( &rLayout, false ) );
 	rLayout.addChild( xRow );
 
 	Size aMinSize( maSbCompression.GetSizePixel() );
@@ -871,9 +872,9 @@ void ExportDialog::createFilterOptions( vcl::RowOrColumn& rLayout )
 			rLayout.addWindow( &maFlJPGQuality );
 
 			// Quality
-			boost::shared_ptr< vcl::Indenter > xIndenter( new vcl::Indenter( &rLayout, nIndent ) );
+			std::shared_ptr< vcl::Indenter > xIndenter( new vcl::Indenter( &rLayout, nIndent ) );
 			rLayout.addChild( xIndenter );
-			boost::shared_ptr< vcl::RowOrColumn > xRows( new vcl::RowOrColumn( &rLayout, true ) );
+			std::shared_ptr< vcl::RowOrColumn > xRows( new vcl::RowOrColumn( &rLayout, true ) );
 			xIndenter->setChild( xRows );
 			createScrollBar( *xRows.get() );
 			xRows->addWindow( &maFtJPGMin );
@@ -881,7 +882,7 @@ void ExportDialog::createFilterOptions( vcl::RowOrColumn& rLayout )
 			if ( maCbJPGPreview.IsEnabled() )
 				xRows->addWindow( &maCbJPGPreview );
 
-			boost::shared_ptr< vcl::Spacer > xSpacer( new vcl::Spacer( &rLayout, 2 ) );
+			std::shared_ptr< vcl::Spacer > xSpacer( new vcl::Spacer( &rLayout, 2 ) );
 			rLayout.addChild( xSpacer );
 
 			sal_Int32 nQuality = mpFilterOptionsItem->ReadInt32( String( RTL_CONSTASCII_USTRINGPARAM( "Quality" ) ), 75 );
@@ -903,14 +904,14 @@ void ExportDialog::createFilterOptions( vcl::RowOrColumn& rLayout )
 			rLayout.addWindow( &maFlCompression );
 
 			// Compression 1..9
-			boost::shared_ptr< vcl::Indenter > xIndenter( new vcl::Indenter( &rLayout, nIndent ) );
+			std::shared_ptr< vcl::Indenter > xIndenter( new vcl::Indenter( &rLayout, nIndent ) );
 			rLayout.addChild( xIndenter );
-			boost::shared_ptr< vcl::RowOrColumn > xRows( new vcl::RowOrColumn( &rLayout, true ) );
+			std::shared_ptr< vcl::RowOrColumn > xRows( new vcl::RowOrColumn( &rLayout, true ) );
 			xIndenter->setChild( xRows );
 			createScrollBar( *xRows.get() );
 			xRows->addWindow( &maFtPNGMin );
 			xRows->addWindow( &maFtPNGMax );
-		    boost::shared_ptr< vcl::Spacer > xSpacer( new vcl::Spacer( &rLayout, 2 ) );
+		    std::shared_ptr< vcl::Spacer > xSpacer( new vcl::Spacer( &rLayout, 2 ) );
 			rLayout.addChild( xSpacer );
 
 			// Interlaced
@@ -935,9 +936,9 @@ void ExportDialog::createFilterOptions( vcl::RowOrColumn& rLayout )
 			maNfCompression.SetStrictFormat( sal_True );
 
             // transparency
-			xIndenter = boost::shared_ptr< vcl::Indenter >( new vcl::Indenter( &rLayout, nIndent ) );
+			xIndenter = std::shared_ptr< vcl::Indenter >( new vcl::Indenter( &rLayout, nIndent ) );
 			rLayout.addChild( xIndenter );
-			xRows = boost::shared_ptr< vcl::RowOrColumn >( new vcl::RowOrColumn( &rLayout, true ) );
+			xRows = std::shared_ptr< vcl::RowOrColumn >( new vcl::RowOrColumn( &rLayout, true ) );
 			xIndenter->setChild( xRows );
 			xRows->addWindow( &maCbSaveTransparency );
 		    xSpacer.reset( new vcl::Spacer( &rLayout, 2 ) );
@@ -966,12 +967,12 @@ void ExportDialog::createFilterOptions( vcl::RowOrColumn& rLayout )
 
 			rLayout.addWindow( &maFlCompression );
 			// RLE coding
-			boost::shared_ptr< vcl::Indenter > xIndenter( new vcl::Indenter( &rLayout, nIndent ) );
+			std::shared_ptr< vcl::Indenter > xIndenter( new vcl::Indenter( &rLayout, nIndent ) );
 			rLayout.addChild( xIndenter );
-			boost::shared_ptr< vcl::RowOrColumn > xRows( new vcl::RowOrColumn( &rLayout, true ) );
+			std::shared_ptr< vcl::RowOrColumn > xRows( new vcl::RowOrColumn( &rLayout, true ) );
 			xIndenter->setChild( xRows );
 			xRows->addWindow( &maCbRLEEncoding );
-		    boost::shared_ptr< vcl::Spacer > xSpacer( new vcl::Spacer( &rLayout, 2 ) );
+		    std::shared_ptr< vcl::Spacer > xSpacer( new vcl::Spacer( &rLayout, 2 ) );
 			rLayout.addChild( xSpacer );
 
 			maCbRLEEncoding.Check( mpFilterOptionsItem->ReadBool( String( RTL_CONSTASCII_USTRINGPARAM( "RLE_Coding" ) ), sal_True ) );
@@ -980,18 +981,18 @@ void ExportDialog::createFilterOptions( vcl::RowOrColumn& rLayout )
 		case FORMAT_GIF :
 		{
 			rLayout.addWindow( &maFlMode );
-			boost::shared_ptr< vcl::Indenter > xIndenter( new vcl::Indenter( &rLayout, nIndent ) );
+			std::shared_ptr< vcl::Indenter > xIndenter( new vcl::Indenter( &rLayout, nIndent ) );
 			rLayout.addChild( xIndenter );
-			boost::shared_ptr< vcl::RowOrColumn > xRows( new vcl::RowOrColumn( &rLayout, true ) );
+			std::shared_ptr< vcl::RowOrColumn > xRows( new vcl::RowOrColumn( &rLayout, true ) );
 			xIndenter->setChild( xRows );
 			xRows->addWindow( &maCbInterlaced );
-		    boost::shared_ptr< vcl::Spacer > xSpacer( new vcl::Spacer( &rLayout, 2 ) );
+		    std::shared_ptr< vcl::Spacer > xSpacer( new vcl::Spacer( &rLayout, 2 ) );
 			rLayout.addChild( xSpacer );
 
 			rLayout.addWindow( &maFlGIFDrawingObjects );
-			xIndenter = boost::shared_ptr< vcl::Indenter >( new vcl::Indenter( &rLayout, nIndent ) );
+			xIndenter = std::shared_ptr< vcl::Indenter >( new vcl::Indenter( &rLayout, nIndent ) );
 			rLayout.addChild( xIndenter );
-			xRows = boost::shared_ptr< vcl::RowOrColumn >( new vcl::RowOrColumn( &rLayout, true ) );
+			xRows = std::shared_ptr< vcl::RowOrColumn >( new vcl::RowOrColumn( &rLayout, true ) );
 			xIndenter->setChild( xRows );
 			xRows->addWindow( &maCbSaveTransparency );
 		    xSpacer.reset( new vcl::Spacer( &rLayout, 2 ) );
@@ -1008,13 +1009,13 @@ void ExportDialog::createFilterOptions( vcl::RowOrColumn& rLayout )
 			rLayout.addWindow( &maFlJPGQuality );
 
 			// RB Binary / Text
-			boost::shared_ptr< vcl::Indenter > xIndenter( new vcl::Indenter( &rLayout, nIndent ) );
+			std::shared_ptr< vcl::Indenter > xIndenter( new vcl::Indenter( &rLayout, nIndent ) );
 			rLayout.addChild( xIndenter );
-			boost::shared_ptr< vcl::RowOrColumn > xRows( new vcl::RowOrColumn( &rLayout, true ) );
+			std::shared_ptr< vcl::RowOrColumn > xRows( new vcl::RowOrColumn( &rLayout, true ) );
 			xIndenter->setChild( xRows );
 			xRows->addWindow( &maRbBinary );
 			xRows->addWindow( &maRbText );
-		    boost::shared_ptr< vcl::Spacer > xSpacer( new vcl::Spacer( &rLayout, 2 ) );
+		    std::shared_ptr< vcl::Spacer > xSpacer( new vcl::Spacer( &rLayout, 2 ) );
 			rLayout.addChild( xSpacer );
 
 			sal_Int32 nFormat = mpFilterOptionsItem->ReadInt32( String( RTL_CONSTASCII_USTRINGPARAM( "FileFormat" ) ), 1 );
@@ -1024,38 +1025,38 @@ void ExportDialog::createFilterOptions( vcl::RowOrColumn& rLayout )
 		break;
 		case FORMAT_EPS :
 		{
-			boost::shared_ptr< vcl::RowOrColumn > xColumns( new vcl::RowOrColumn( &rLayout, false ) );
+			std::shared_ptr< vcl::RowOrColumn > xColumns( new vcl::RowOrColumn( &rLayout, false ) );
 			rLayout.addChild( xColumns );
-			boost::shared_ptr< vcl::RowOrColumn > xLeft( new vcl::RowOrColumn( &rLayout, true ) );
+			std::shared_ptr< vcl::RowOrColumn > xLeft( new vcl::RowOrColumn( &rLayout, true ) );
 			xColumns->addChild( xLeft );
 
 			xLeft->addWindow( &maFlEPSPreview );
-			boost::shared_ptr< vcl::Indenter > xIndenter( new vcl::Indenter( xLeft.get(), nIndent ) );
+			std::shared_ptr< vcl::Indenter > xIndenter( new vcl::Indenter( xLeft.get(), nIndent ) );
 			xLeft->addChild( xIndenter );
-			boost::shared_ptr< vcl::RowOrColumn > xRows( new vcl::RowOrColumn( xLeft.get(), true ) );
+			std::shared_ptr< vcl::RowOrColumn > xRows( new vcl::RowOrColumn( xLeft.get(), true ) );
 			xIndenter->setChild( xRows );
 			xRows->addWindow( &maCbEPSPreviewTIFF );
 			xRows->addWindow( &maCbEPSPreviewEPSI );
-			boost::shared_ptr< vcl::Spacer > xSpacer( new vcl::Spacer( xLeft.get(), 2 ) );
+			std::shared_ptr< vcl::Spacer > xSpacer( new vcl::Spacer( xLeft.get(), 2 ) );
 			xLeft->addChild( xSpacer );
 
 			xLeft->addWindow( &maFlEPSVersion );
-			xIndenter = boost::shared_ptr< vcl::Indenter >( new vcl::Indenter( xLeft.get(), nIndent ) );
+			xIndenter = std::shared_ptr< vcl::Indenter >( new vcl::Indenter( xLeft.get(), nIndent ) );
 			xLeft->addChild( xIndenter );
-			xRows = boost::shared_ptr< vcl::RowOrColumn >( new vcl::RowOrColumn( xLeft.get(), true ) );
+			xRows = std::shared_ptr< vcl::RowOrColumn >( new vcl::RowOrColumn( xLeft.get(), true ) );
 			xIndenter->setChild( xRows );
 			xRows->addWindow( &maRbEPSLevel1 );
 			xRows->addWindow( &maRbEPSLevel2 );
 		    xSpacer.reset( new vcl::Spacer( xLeft.get(), 2 ) );
 			xLeft->addChild( xSpacer );
 
-			boost::shared_ptr< vcl::RowOrColumn > xRight( new vcl::RowOrColumn( &rLayout, true ) );
+			std::shared_ptr< vcl::RowOrColumn > xRight( new vcl::RowOrColumn( &rLayout, true ) );
 			xColumns->addChild( xRight );
 
 			xRight->addWindow( &maFlEPSColorFormat );
-			xIndenter = boost::shared_ptr< vcl::Indenter >( new vcl::Indenter( xRight.get(), nIndent ) );
+			xIndenter = std::shared_ptr< vcl::Indenter >( new vcl::Indenter( xRight.get(), nIndent ) );
 			xRight->addChild( xIndenter );
-			xRows = boost::shared_ptr< vcl::RowOrColumn >( new vcl::RowOrColumn( xRight.get(), true ) );
+			xRows = std::shared_ptr< vcl::RowOrColumn >( new vcl::RowOrColumn( xRight.get(), true ) );
 			xIndenter->setChild( xRows );
 			xRows->addWindow( &maRbEPSColorFormat1 );
 			xRows->addWindow( &maRbEPSColorFormat2 );
@@ -1063,9 +1064,9 @@ void ExportDialog::createFilterOptions( vcl::RowOrColumn& rLayout )
 			xRight->addChild( xSpacer );
 
 			xRight->addWindow( &maFlCompression );
-			xIndenter = boost::shared_ptr< vcl::Indenter >( new vcl::Indenter( xRight.get(), nIndent ) );
+			xIndenter = std::shared_ptr< vcl::Indenter >( new vcl::Indenter( xRight.get(), nIndent ) );
 			xRight->addChild( xIndenter );
-			xRows = boost::shared_ptr< vcl::RowOrColumn >( new vcl::RowOrColumn( xRight.get(), true ) );
+			xRows = std::shared_ptr< vcl::RowOrColumn >( new vcl::RowOrColumn( xRight.get(), true ) );
 			xIndenter->setChild( xRows );
 			xRows->addWindow( &maRbEPSCompressionLZW );
 			xRows->addWindow( &maRbEPSCompressionNone );
@@ -1099,12 +1100,12 @@ void ExportDialog::createFilterOptions( vcl::RowOrColumn& rLayout )
 void ExportDialog::createButtons( vcl::RowOrColumn& rLayout )
 {
 	rLayout.addWindow( &maFlButtons );
-	boost::shared_ptr< vcl::Spacer > xSpacer( new vcl::Spacer( &rLayout, 2 ) );
+	std::shared_ptr< vcl::Spacer > xSpacer( new vcl::Spacer( &rLayout, 2 ) );
 	rLayout.addChild( xSpacer );
 
 	Size aBorder( LogicToPixel( Size( 5, 5 ), MapMode( MAP_APPFONT ) ) );
 
-	boost::shared_ptr< vcl::RowOrColumn > xButtons( new vcl::RowOrColumn( &rLayout, false ) );
+	std::shared_ptr< vcl::RowOrColumn > xButtons( new vcl::RowOrColumn( &rLayout, false ) );
 	size_t nIndex = rLayout.addChild( xButtons );
     rLayout.setBorders( nIndex, aBorder.Width(), 0, aBorder.Width(), aBorder.Width() );
 

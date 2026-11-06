@@ -30,6 +30,7 @@
 #include <boost/enable_shared_from_this.hpp>
 #include <set>
 #include <iterator>
+#include <memory>
 
 using namespace ::com::sun::star;
 using namespace ::com::sun::star::uno;
@@ -56,7 +57,7 @@ public:
     bool mbIsCanceled;
 };
 
-typedef ::boost::shared_ptr<TimerTask> SharedTimerTask;
+typedef ::std::shared_ptr<TimerTask> SharedTimerTask;
 
 
 class TimerTaskComparator
@@ -75,11 +76,11 @@ public:
 /** Queue all scheduled tasks and process them when their time has come.
 */
 class TimerScheduler
-    : public ::boost::enable_shared_from_this<TimerScheduler>,
+    : public ::std::enable_shared_from_this<TimerScheduler>,
       public ::osl::Thread
 {
 public:
-    static ::boost::shared_ptr<TimerScheduler> Instance (void);
+    static ::std::shared_ptr<TimerScheduler> Instance (void);
     static SharedTimerTask CreateTimerTask (
         const PresenterTimer::Task& rTask,
         const TimeValue& rDueTime,
@@ -99,7 +100,7 @@ public:
         const TimeValue& rTimeValue);
 
 private:
-    static ::boost::shared_ptr<TimerScheduler> mpInstance;
+    static ::std::shared_ptr<TimerScheduler> mpInstance;
     static ::osl::Mutex maInstanceMutex;
     static sal_Int32 mnTaskId;
 
@@ -180,13 +181,13 @@ void PresenterTimer::CancelTask (const sal_Int32 nTaskId)
 
 //===== TimerScheduler ========================================================
 
-::boost::shared_ptr<TimerScheduler> TimerScheduler::mpInstance;
+::std::shared_ptr<TimerScheduler> TimerScheduler::mpInstance;
 ::osl::Mutex TimerScheduler::maInstanceMutex;
 sal_Int32 TimerScheduler::mnTaskId = PresenterTimer::NotAValidTaskId;
 
-::boost::shared_ptr<TimerScheduler> TimerScheduler::Instance (void)
+::std::shared_ptr<TimerScheduler> TimerScheduler::Instance (void)
 {
-    ::boost::shared_ptr<TimerScheduler> pInstance = mpInstance;
+    ::std::shared_ptr<TimerScheduler> pInstance = mpInstance;
     if (pInstance.get() == NULL)
     {
         ::osl::MutexGuard aGuard (maInstanceMutex);

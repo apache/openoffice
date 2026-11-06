@@ -26,7 +26,7 @@
 
 #include <memory>
 #include <vector>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 #include "formula/opcode.hxx"
 #include "refdata.hxx"
@@ -52,7 +52,7 @@ typedef formula::SimpleIntrusiveReference< class ScToken > ScTokenRef;
  *
  * You have been warned.
  */
-typedef ::boost::shared_ptr< ScToken > ScSharedTokenRef;
+typedef ::std::shared_ptr< ScToken > ScSharedTokenRef;
 
 class SC_DLLPUBLIC ScToken : public formula::FormulaToken
 {

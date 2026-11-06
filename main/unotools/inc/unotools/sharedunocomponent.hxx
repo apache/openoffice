@@ -26,7 +26,7 @@
 
 #include "unotoolsdllapi.h"
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <com/sun/star/uno/Reference.hxx>
 #include <rtl/ref.hxx>
 
@@ -149,7 +149,7 @@ namespace utl
     {
     private:
         typedef COMPONENT                           Component;
-        typedef ::boost::shared_ptr< Component >    ComponentPointer;
+        typedef ::std::shared_ptr< Component >    ComponentPointer;
 
     private:
         ComponentPointer                                m_pComponent;

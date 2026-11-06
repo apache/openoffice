@@ -257,7 +257,7 @@ void OTableTreeListBox::UpdateTableList( const Reference< XConnection >& _rxConn
 // -----------------------------------------------------------------------------
 namespace
 {
-	struct OViewSetter : public ::std::unary_function< OTableTreeListBox::TNames::value_type, bool>
+	struct OViewSetter 
 	{
 		const Sequence< ::rtl::OUString> m_aViews;
 		::comphelper::TStringMixEqualFunctor m_aEqualFunctor;
@@ -269,7 +269,7 @@ namespace
 			aRet.first = lhs;
 			const ::rtl::OUString* pIter = m_aViews.getConstArray();
 			const ::rtl::OUString* pEnd = m_aViews.getConstArray() + m_aViews.getLength();
-			aRet.second = (::std::find_if(pIter,pEnd,::std::bind2nd(m_aEqualFunctor,lhs)) != pEnd);
+			aRet.second = (::std::find_if(pIter,pEnd,[lhs](auto& _x) { return m_aEqualFunctor(_x, lhs); }) != pEnd);
 
 			return aRet;
 		}
@@ -335,9 +335,9 @@ void OTableTreeListBox::UpdateTableList( const Reference< XConnection >& _rxConn
 		{
 			String sRootEntryText;
 			TNames::const_iterator aViews = ::std::find_if(_rTables.begin(),_rTables.end(),
-			::std::compose1(::std::bind2nd(::std::equal_to<sal_Bool>(),sal_False),::std::select2nd<TNames::value_type>()));
+			[sal_False](auto& _x) { return _x.second == sal_False; }));
 			TNames::const_iterator aTables = ::std::find_if(_rTables.begin(),_rTables.end(),
-			::std::compose1(::std::bind2nd(::std::equal_to<sal_Bool>(),sal_True),::std::select2nd<TNames::value_type>()));
+			[sal_True](auto& _x) { return _x.second == sal_True; }));
 
 			if ( aViews == _rTables.end() )
 				sRootEntryText  = String(ModuleRes(STR_ALL_TABLES));

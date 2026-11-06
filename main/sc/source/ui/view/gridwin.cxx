@@ -5018,7 +5018,7 @@ sal_Bool ScGridWindow::GetEditUrlOrError( sal_Bool bSpellErr, const Point& rPos,
 		aPaperSize.Width() = nThisColLogic;
 	aEngine.SetPaperSize( aPaperSize );
 
-	::std::auto_ptr< EditTextObject > pTextObj;
+	::std::unique_ptr< EditTextObject > pTextObj;
 	const EditTextObject* pData;
 	if(pCell->GetCellType() == CELLTYPE_EDIT)
 	{

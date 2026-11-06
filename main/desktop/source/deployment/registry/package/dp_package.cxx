@@ -212,7 +212,7 @@ class BackendImpl : public ImplBaseT
     const Reference<deployment::XPackageTypeInfo> m_xLegacyBundleTypeInfo;
     Sequence< Reference<deployment::XPackageTypeInfo> > m_typeInfos;
 
-    std::auto_ptr<ExtensionBackendDb> m_backendDb;
+    std::unique_ptr<ExtensionBackendDb> m_backendDb;
 
     void addDataToDb(OUString const & url, ExtensionBackendDb::Data const & data);
     ExtensionBackendDb::Data readDataFromDb(OUString const & url);
@@ -246,7 +246,7 @@ public:
 };
 
 //Used to find a XPackage with a particular URL
-class XPackage_eq : public std::unary_function<Reference<deployment::XPackage>, bool>
+class XPackage_eq
 {
     OUString m_URL;
 public:
@@ -703,7 +703,9 @@ bool BackendImpl::PackageImpl::checkDependencies(
         sal_Bool alreadyInstalled)
 {
     if (m_bRemoved)
+    {
         throw deployment::ExtensionRemovedException();
+    }
 	DescriptionInfoset info = getDescriptionInfoset();
     if (!info.hasDescription())
 		return 0;

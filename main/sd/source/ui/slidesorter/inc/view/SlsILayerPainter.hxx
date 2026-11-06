@@ -24,7 +24,7 @@
 #ifndef SD_SLIDESORTER_VIEW_LAYER_PAINTER_HXX
 #define SD_SLIDESORTER_VIEW_LAYER_PAINTER_HXX
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <sal/types.h>
 
 class OutputDevice;
@@ -37,7 +37,7 @@ class ILayerInvalidator
 public:
 	virtual void Invalidate (const Rectangle& rInvalidationBox) = 0;
 };
-typedef ::boost::shared_ptr<ILayerInvalidator> SharedILayerInvalidator;
+typedef ::std::shared_ptr<ILayerInvalidator> SharedILayerInvalidator;
 
 class ILayerPainter
 {
@@ -48,7 +48,7 @@ public:
 		OutputDevice& rDevice,
 		const Rectangle& rRepaintArea) = 0;
 };
-typedef ::boost::shared_ptr<ILayerPainter> SharedILayerPainter;
+typedef ::std::shared_ptr<ILayerPainter> SharedILayerPainter;
 
 
 } } } // end of namespace ::sd::slidesorter::view

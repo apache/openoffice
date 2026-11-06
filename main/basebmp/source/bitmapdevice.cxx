@@ -69,6 +69,7 @@
 #include <vigra/rgbvalue.hxx>
 #include <vigra/copyimage.hxx>
 #include <vigra/tuple.hxx>
+#include <memory>
 
 namespace vigra
 {
@@ -312,9 +313,9 @@ namespace
         {}
 
     private:
-        boost::shared_ptr<BitmapRenderer> getCompatibleBitmap( const BitmapDeviceSharedPtr& bmp ) const
+        std::shared_ptr<BitmapRenderer> getCompatibleBitmap( const BitmapDeviceSharedPtr& bmp ) const
         {
-            return boost::dynamic_pointer_cast< BitmapRenderer >( bmp );
+            return std::dynamic_pointer_cast< BitmapRenderer >( bmp );
         }
 
         virtual bool isCompatibleBitmap( const BitmapDeviceSharedPtr& bmp ) const
@@ -324,9 +325,9 @@ namespace
             return getCompatibleBitmap(bmp).get() != NULL;
         }
 
-        boost::shared_ptr<mask_bitmap_type> getCompatibleClipMask( const BitmapDeviceSharedPtr& bmp ) const
+        std::shared_ptr<mask_bitmap_type> getCompatibleClipMask( const BitmapDeviceSharedPtr& bmp ) const
         {
-            boost::shared_ptr<mask_bitmap_type> pMask( boost::dynamic_pointer_cast<mask_bitmap_type>( bmp ));
+            std::shared_ptr<mask_bitmap_type> pMask( std::dynamic_pointer_cast<mask_bitmap_type>( bmp ));
 
             if( !pMask )
                 return pMask;
@@ -341,12 +342,12 @@ namespace
         {
             // TODO(P1): dynamic_cast usually called twice for
             // compatible formats
-            return boost::dynamic_pointer_cast<mask_bitmap_type>( bmp ).get() != NULL;
+            return std::dynamic_pointer_cast<mask_bitmap_type>( bmp ).get() != NULL;
         }
 
-        boost::shared_ptr<alphamask_bitmap_type> getCompatibleAlphaMask( const BitmapDeviceSharedPtr& bmp ) const
+        std::shared_ptr<alphamask_bitmap_type> getCompatibleAlphaMask( const BitmapDeviceSharedPtr& bmp ) const
         {
-            return boost::dynamic_pointer_cast<alphamask_bitmap_type>( bmp );
+            return std::dynamic_pointer_cast<alphamask_bitmap_type>( bmp );
         }
 
         virtual bool isCompatibleAlphaMask( const BitmapDeviceSharedPtr& bmp ) const
@@ -387,7 +388,7 @@ namespace
                                  DrawMode                     drawMode,
                                  const BitmapDeviceSharedPtr& rClip )
         {
-            boost::shared_ptr<mask_bitmap_type> pMask( getCompatibleClipMask(rClip) );
+            std::shared_ptr<mask_bitmap_type> pMask( getCompatibleClipMask(rClip) );
             OSL_ASSERT( pMask );
 
             const vigra::Diff2D offset(rPt.getX(),
@@ -484,7 +485,7 @@ namespace
 
         composite_iterator_type getMaskedIter( const BitmapDeviceSharedPtr& rClip ) const
         {
-            boost::shared_ptr<mask_bitmap_type> pMask( getCompatibleClipMask(rClip) );
+            std::shared_ptr<mask_bitmap_type> pMask( getCompatibleClipMask(rClip) );
             OSL_ASSERT( pMask );
 
             return composite_iterator_type( maBegin,
@@ -629,7 +630,7 @@ namespace
                             const Iterator&              begin,
                             const RawAcc&                acc)
         {
-            boost::shared_ptr<BitmapRenderer> pSrcBmp( getCompatibleBitmap(rSrcBitmap) );
+            std::shared_ptr<BitmapRenderer> pSrcBmp( getCompatibleBitmap(rSrcBitmap) );
             OSL_ASSERT( pSrcBmp );
 
             scaleImage(
@@ -724,8 +725,8 @@ namespace
                                        const basegfx::B2IRange&     rSrcRect,
                                        const basegfx::B2IPoint&     rDstPoint )
         {
-            boost::shared_ptr<mask_bitmap_type>      pMask( getCompatibleClipMask(rAlphaMask) );
-            boost::shared_ptr<alphamask_bitmap_type> pAlpha( getCompatibleAlphaMask(rAlphaMask) );
+            std::shared_ptr<mask_bitmap_type>      pMask( getCompatibleClipMask(rAlphaMask) );
+            std::shared_ptr<alphamask_bitmap_type> pAlpha( getCompatibleAlphaMask(rAlphaMask) );
 
             if( pAlpha )
             {
@@ -773,8 +774,8 @@ namespace
                                        const basegfx::B2IPoint&     rDstPoint,
                                        const BitmapDeviceSharedPtr& rClip )
         {
-            boost::shared_ptr<mask_bitmap_type>      pMask( getCompatibleClipMask(rAlphaMask) );
-            boost::shared_ptr<alphamask_bitmap_type> pAlpha( getCompatibleAlphaMask(rAlphaMask) );
+            std::shared_ptr<mask_bitmap_type>      pMask( getCompatibleClipMask(rAlphaMask) );
+            std::shared_ptr<alphamask_bitmap_type> pAlpha( getCompatibleAlphaMask(rAlphaMask) );
 
             if( pAlpha )
             {
@@ -791,7 +792,7 @@ namespace
             }
             else if( pMask )
             {
-                boost::shared_ptr<mask_bitmap_type> pClipMask( getCompatibleClipMask(rClip) );
+                std::shared_ptr<mask_bitmap_type> pClipMask( getCompatibleClipMask(rClip) );
                 OSL_ASSERT( pClipMask );
 
                 // setup a ((iter,mask),clipMask) composite composite
@@ -837,8 +838,8 @@ namespace
                                   const Iterator&              begin,
                                   const Acc&                   acc)
         {
-            boost::shared_ptr<BitmapRenderer>   pSrcBmp( getCompatibleBitmap(rSrcBitmap) );
-            boost::shared_ptr<mask_bitmap_type> pMask( getCompatibleClipMask(rMask) );
+            std::shared_ptr<BitmapRenderer>   pSrcBmp( getCompatibleBitmap(rSrcBitmap) );
+            std::shared_ptr<mask_bitmap_type> pMask( getCompatibleClipMask(rMask) );
             OSL_ASSERT( pMask && pSrcBmp );
 
             scaleImage(
@@ -1690,7 +1691,7 @@ PaletteMemorySharedVector createStandardPalette(
     if( pPal || nNumEntries <= 0 )
         return pPal;
 
-    boost::shared_ptr< std::vector<Color> > pLocalPal(
+    std::shared_ptr< std::vector<Color> > pLocalPal(
         new std::vector<Color>(nNumEntries) );
 
     const sal_Int32 nIncrement( 0x00FFFFFF/nNumEntries );

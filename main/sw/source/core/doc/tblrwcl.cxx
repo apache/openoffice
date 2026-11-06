@@ -57,7 +57,7 @@
 #include <poolfmt.hxx>
 #include <tblrwcl.hxx>
 #include <unochart.hxx>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <switerator.hxx>
 
 using namespace com::sun::star;
@@ -289,7 +289,7 @@ void lcl_DelCpyTabFrmFmts( _CpyTabFrm& rArr );
 
 struct _CpyPara
 {
-    boost::shared_ptr< std::vector< std::vector< sal_uLong > > > pWidths;
+    std::shared_ptr< std::vector< std::vector< sal_uLong > > > pWidths;
 	SwDoc* pDoc;
 	SwTableNode* pTblNd;
 	_CpyTabFrms& rTabFrmArr;
@@ -1918,7 +1918,7 @@ void lcl_CalcNewWidths( const _FndLines& rFndLines, _CpyPara& rPara )
     sal_uInt16 nLineCount = rFndLines.Count();
     if( nLineCount )
     {
-        rPara.pWidths = boost::shared_ptr< std::vector< std::vector< sal_uLong > > >
+        rPara.pWidths = std::shared_ptr< std::vector< std::vector< sal_uLong > > >
                         ( new std::vector< std::vector< sal_uLong > >( nLineCount ));
         // First we collect information about the left/right borders of all
         // selected cells

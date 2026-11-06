@@ -32,6 +32,7 @@
 #include "ControllerLockGuard.hxx"
 #include <com/sun/star/chart2/XChartDocument.hpp>
 #include <com/sun/star/beans/PropertyAttribute.hpp>
+#include <memory>
 
 using namespace ::com::sun::star;
 using ::com::sun::star::uno::Any;
@@ -56,7 +57,7 @@ class WrappedStockProperty : public WrappedProperty
 public:
     explicit WrappedStockProperty( const ::rtl::OUString& rOuterName
         , const ::com::sun::star::uno::Any& rDefaulValue
-        , ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact );
+        , ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact );
     virtual ~WrappedStockProperty();
 
     void setPropertyValue( const ::com::sun::star::uno::Any& rOuterValue, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& xInnerPropertySet ) const;
@@ -66,14 +67,14 @@ public:
     virtual uno::Reference< chart2::XChartTypeTemplate > getNewTemplate( sal_Bool bNewValue, const rtl::OUString& rCurrentTemplate, const Reference< lang::XMultiServiceFactory >& xFactory ) const = 0;
 
 protected:
-    ::boost::shared_ptr< Chart2ModelContact >   m_spChart2ModelContact;
+    ::std::shared_ptr< Chart2ModelContact >   m_spChart2ModelContact;
     mutable ::com::sun::star::uno::Any     m_aOuterValue;
     ::com::sun::star::uno::Any             m_aDefaultValue;
 };
 
 WrappedStockProperty::WrappedStockProperty( const ::rtl::OUString& rOuterName
     , const ::com::sun::star::uno::Any& rDefaulValue
-    , ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact )
+    , ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact )
     : WrappedProperty(rOuterName,rtl::OUString())
         , m_spChart2ModelContact(spChart2ModelContact)
         , m_aOuterValue()
@@ -133,7 +134,7 @@ void WrappedStockProperty::setPropertyValue( const ::com::sun::star::uno::Any& r
 class WrappedVolumeProperty : public WrappedStockProperty
 {
 public:
-    explicit WrappedVolumeProperty( ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact );
+    explicit WrappedVolumeProperty( ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact );
     virtual ~WrappedVolumeProperty();
 
     ::com::sun::star::uno::Any getPropertyValue( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& xInnerPropertySet ) const;
@@ -141,7 +142,7 @@ public:
     uno::Reference< chart2::XChartTypeTemplate > getNewTemplate( sal_Bool bNewValue, const rtl::OUString& rCurrentTemplate, const Reference< lang::XMultiServiceFactory >& xFactory ) const;
 };
 
-WrappedVolumeProperty::WrappedVolumeProperty( ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact )
+WrappedVolumeProperty::WrappedVolumeProperty( ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact )
         : WrappedStockProperty( C2U("Volume"), uno::makeAny(sal_False) , spChart2ModelContact )
 {
 }
@@ -206,14 +207,14 @@ uno::Reference< chart2::XChartTypeTemplate > WrappedVolumeProperty::getNewTempla
 class WrappedUpDownProperty : public WrappedStockProperty
 {
 public:
-    explicit WrappedUpDownProperty( ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact );
+    explicit WrappedUpDownProperty( ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact );
     virtual ~WrappedUpDownProperty();
 
     ::com::sun::star::uno::Any getPropertyValue( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& xInnerPropertySet ) const;
 
     uno::Reference< chart2::XChartTypeTemplate > getNewTemplate( sal_Bool bNewValue, const rtl::OUString& rCurrentTemplate, const Reference< lang::XMultiServiceFactory >& xFactory ) const;
 };
-WrappedUpDownProperty::WrappedUpDownProperty( ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact )
+WrappedUpDownProperty::WrappedUpDownProperty( ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact )
         : WrappedStockProperty( C2U("UpDown"), uno::makeAny(sal_False) , spChart2ModelContact )
 {
 }
@@ -301,7 +302,7 @@ void WrappedStockProperties::addProperties( ::std::vector< Property > & rOutProp
 //-----------------------------------------------------------------------------
 
 void WrappedStockProperties::addWrappedProperties( std::vector< WrappedProperty* >& rList
-                                    , ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact )
+                                    , ::std::shared_ptr< Chart2ModelContact > spChart2ModelContact )
 {
     rList.push_back( new WrappedVolumeProperty( spChart2ModelContact ) );
     rList.push_back( new WrappedUpDownProperty( spChart2ModelContact ) );

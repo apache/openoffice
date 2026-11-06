@@ -457,7 +457,7 @@ namespace pcr
     class WaitCursor
     {
     private:
-        ::std::auto_ptr< WaitObject >       m_aWaitObject;
+        ::std::unique_ptr< WaitObject >       m_aWaitObject;
 
     public:
         WaitCursor( Window* _pWindow )

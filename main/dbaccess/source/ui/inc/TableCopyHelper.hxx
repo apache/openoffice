@@ -53,7 +53,7 @@ namespace dbaui
 //........................................................................
     class OGenericUnoController;
     /// unary_function Functor object for class DataFlavorExVector::value_type returntype is bool
-    struct TAppSupportedSotFunctor : ::std::unary_function<DataFlavorExVector::value_type,bool>
+    struct TAppSupportedSotFunctor
     {
 	    ElementType	eEntryType;
 	    sal_Bool	bQueryDrop;

@@ -24,7 +24,7 @@
 #ifndef OOX_HELPER_PROGRESSBAR_HXX
 #define OOX_HELPER_PROGRESSBAR_HXX
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <com/sun/star/uno/Reference.hxx>
 
 namespace rtl { class OUString; }
@@ -60,12 +60,12 @@ public:
     virtual void        setPosition( double fPosition ) = 0;
 };
 
-typedef ::boost::shared_ptr< IProgressBar > IProgressBarRef;
+typedef ::std::shared_ptr< IProgressBar > IProgressBarRef;
 
 // ----------------------------------------------------------------------------
 
 class ISegmentProgressBar;
-typedef ::boost::shared_ptr< ISegmentProgressBar > ISegmentProgressBarRef;
+typedef ::std::shared_ptr< ISegmentProgressBar > ISegmentProgressBarRef;
 
 /** Interface for a segment in a progress bar, that is able to create sub
     segments from itself.

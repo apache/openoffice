@@ -1768,7 +1768,7 @@ struct ListItem
 
 typedef beans::Pair< ::rtl::OUString, ::rtl::OUString > UnoListItem;
 
-struct StripItemData : public ::std::unary_function< ListItem, UnoListItem >
+struct StripItemData 
 {
     UnoListItem operator()( const ListItem& i_rItem )
     {
@@ -1911,7 +1911,7 @@ uno::Reference< beans::XPropertySetInfo > UnoControlListBoxModel::getPropertySet
 // ---------------------------------------------------------------------------------------------------------------------
 namespace
 {
-    struct CreateListItem : public ::std::unary_function< ::rtl::OUString, ListItem >
+    struct CreateListItem 
     {
         ListItem operator()( const ::rtl::OUString& i_rItemText )
         {

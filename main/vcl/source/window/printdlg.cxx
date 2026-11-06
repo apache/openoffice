@@ -21,6 +21,7 @@
 
 
 
+#include <memory>
 #include "precompiled_vcl.hxx"
 
 #include "printdlg.hxx"
@@ -553,30 +554,30 @@ void PrintDialog::NUpTabPage::showAdvancedControls( bool i_bShow )
 
 void PrintDialog::NUpTabPage::setupLayout()
 {
-    boost::shared_ptr<vcl::RowOrColumn> xLayout =
-        boost::dynamic_pointer_cast<vcl::RowOrColumn>( getLayout() );
+    std::shared_ptr<vcl::RowOrColumn> xLayout =
+        std::dynamic_pointer_cast<vcl::RowOrColumn>( getLayout() );
     Size aBorder( LogicToPixel( Size( 6, 6 ), MapMode( MAP_APPFONT ) ) );
     /*  According to OOo style guide, the horizontal indentation of child
         elements to their parent element should always be 6 map units. */
     long nIndent = aBorder.Width();
 
     xLayout->addWindow( &maNupLine );
-    boost::shared_ptr< vcl::RowOrColumn > xRow( new vcl::RowOrColumn( xLayout.get(), false ) );
+    std::shared_ptr< vcl::RowOrColumn > xRow( new vcl::RowOrColumn( xLayout.get(), false ) );
     xLayout->addChild( xRow );
-    boost::shared_ptr< vcl::Indenter > xIndent( new vcl::Indenter( xRow.get() ) );
+    std::shared_ptr< vcl::Indenter > xIndent( new vcl::Indenter( xRow.get() ) );
     xRow->addChild( xIndent );
 
-    boost::shared_ptr< vcl::RowOrColumn > xShowNupCol( new vcl::RowOrColumn( xRow.get() ) );
+    std::shared_ptr< vcl::RowOrColumn > xShowNupCol( new vcl::RowOrColumn( xRow.get() ) );
     xRow->addChild( xShowNupCol, -1 );
     xShowNupCol->setMinimumSize( xShowNupCol->addWindow( &maNupOrderWin ), Size( 70, 70 ) );
-    boost::shared_ptr< vcl::Spacer > xSpacer( new vcl::Spacer( xShowNupCol.get() ) );
+    std::shared_ptr< vcl::Spacer > xSpacer( new vcl::Spacer( xShowNupCol.get() ) );
     xShowNupCol->addChild( xSpacer );
 
-    boost::shared_ptr< vcl::LabelColumn > xMainCol( new vcl::LabelColumn( xIndent.get() ) );
+    std::shared_ptr< vcl::LabelColumn > xMainCol( new vcl::LabelColumn( xIndent.get() ) );
     xIndent->setChild( xMainCol );
 
     size_t nPagesIndex = xMainCol->addRow( &maPagesBtn, &maNupPagesBox );
-    mxPagesBtnLabel = boost::dynamic_pointer_cast<vcl::LabeledElement>( xMainCol->getChild( nPagesIndex ) );
+    mxPagesBtnLabel = std::dynamic_pointer_cast<vcl::LabeledElement>( xMainCol->getChild( nPagesIndex ) );
 
     xRow.reset( new vcl::RowOrColumn( xMainCol.get(), false ) );
     xMainCol->addRow( &maNupNumPagesTxt, xRow, nIndent );
@@ -584,7 +585,7 @@ void PrintDialog::NUpTabPage::setupLayout()
     xRow->addWindow( &maNupTimesTxt );
     xRow->addWindow( &maNupRowsEdt );
 
-    boost::shared_ptr< vcl::LabeledElement > xLab( new vcl::LabeledElement( xMainCol.get(), 2 ) );
+    std::shared_ptr< vcl::LabeledElement > xLab( new vcl::LabeledElement( xMainCol.get(), 2 ) );
     xLab->setLabel( &maPageMarginEdt );
     xLab->setElement( &maPageMarginTxt2 );
     xMainCol->addRow( &maPageMarginTxt1, xLab, nIndent );
@@ -684,8 +685,8 @@ void PrintDialog::JobTabPage::setupLayout()
     // sets the results of GetOptimalSize in a normal ListBox
     maPrinters.SetDropDownLineCount( 4 );
 
-    boost::shared_ptr<vcl::RowOrColumn> xLayout =
-        boost::dynamic_pointer_cast<vcl::RowOrColumn>( getLayout() );
+    std::shared_ptr<vcl::RowOrColumn> xLayout =
+        std::dynamic_pointer_cast<vcl::RowOrColumn>( getLayout() );
 
     // add printer fixed line
     xLayout->addWindow( &maPrinterFL );
@@ -693,19 +694,19 @@ void PrintDialog::JobTabPage::setupLayout()
     xLayout->addWindow( &maPrinters, 3 );
 
     // create a row for details button/text and properties button
-    boost::shared_ptr< vcl::RowOrColumn > xDetRow( new vcl::RowOrColumn( xLayout.get(), false ) );
+    std::shared_ptr< vcl::RowOrColumn > xDetRow( new vcl::RowOrColumn( xLayout.get(), false ) );
     xLayout->addChild( xDetRow );
     xDetRow->addWindow( &maDetailsBtn );
     xDetRow->addChild( new vcl::Spacer( xDetRow.get(), 2 ) );
     xDetRow->addWindow( &maSetupButton );
 
     // create an indent for details
-    boost::shared_ptr< vcl::Indenter > xIndent( new vcl::Indenter( xLayout.get() ) );
+    std::shared_ptr< vcl::Indenter > xIndent( new vcl::Indenter( xLayout.get() ) );
     xLayout->addChild( xIndent );
     // remember details controls
     mxDetails = xIndent;
     // create a column for the details
-    boost::shared_ptr< vcl::LabelColumn > xLabelCol( new vcl::LabelColumn( xIndent.get() ) );
+    std::shared_ptr< vcl::LabelColumn > xLabelCol( new vcl::LabelColumn( xIndent.get() ) );
     xIndent->setChild( xLabelCol );
     xLabelCol->addRow( &maStatusLabel, &maStatusTxt );
     xLabelCol->addRow( &maLocationLabel, &maLocationTxt );
@@ -713,7 +714,7 @@ void PrintDialog::JobTabPage::setupLayout()
 
     // add print range and copies columns
     xLayout->addWindow( &maCopies );
-    boost::shared_ptr< vcl::RowOrColumn > xRangeRow( new vcl::RowOrColumn( xLayout.get(), false ) );
+    std::shared_ptr< vcl::RowOrColumn > xRangeRow( new vcl::RowOrColumn( xLayout.get(), false ) );
     xLayout->addChild( xRangeRow );
 
     // create print range and add to range row
@@ -721,15 +722,15 @@ void PrintDialog::JobTabPage::setupLayout()
     xRangeRow->addChild( mxPrintRange );
     xRangeRow->addWindow( &maCopySpacer );
 
-    boost::shared_ptr< vcl::RowOrColumn > xCopyCollateCol( new vcl::RowOrColumn( xRangeRow.get() ) );
+    std::shared_ptr< vcl::RowOrColumn > xCopyCollateCol( new vcl::RowOrColumn( xRangeRow.get() ) );
     xRangeRow->addChild( xCopyCollateCol );
 
     // add copies row to copy/collate column
-    boost::shared_ptr< vcl::LabeledElement > xCopiesRow( new vcl::LabeledElement( xCopyCollateCol.get(), 2 ) );
+    std::shared_ptr< vcl::LabeledElement > xCopiesRow( new vcl::LabeledElement( xCopyCollateCol.get(), 2 ) );
     xCopyCollateCol->addChild( xCopiesRow );
     xCopiesRow->setLabel( &maCopyCount );
     xCopiesRow->setElement( &maCopyCountField );
-    boost::shared_ptr< vcl::LabeledElement > xCollateRow( new vcl::LabeledElement( xCopyCollateCol.get(), 2 ) );
+    std::shared_ptr< vcl::LabeledElement > xCollateRow( new vcl::LabeledElement( xCopyCollateCol.get(), 2 ) );
     xCopyCollateCol->addChild( xCollateRow );
     xCollateRow->setLabel( &maCollateBox );
     xCollateRow->setElement( &maCollateImage );
@@ -798,13 +799,13 @@ PrintDialog::OutputOptPage::~OutputOptPage()
 
 void PrintDialog::OutputOptPage::setupLayout()
 {
-    boost::shared_ptr<vcl::RowOrColumn> xLayout =
-        boost::dynamic_pointer_cast<vcl::RowOrColumn>( getLayout() );
+    std::shared_ptr<vcl::RowOrColumn> xLayout =
+        std::dynamic_pointer_cast<vcl::RowOrColumn>( getLayout() );
 
     xLayout->addWindow( &maOptionsLine );
-    boost::shared_ptr<vcl::Indenter> xIndent( new vcl::Indenter( xLayout.get(), -1 ) );
+    std::shared_ptr<vcl::Indenter> xIndent( new vcl::Indenter( xLayout.get(), -1 ) );
     xLayout->addChild( xIndent );
-    boost::shared_ptr<vcl::RowOrColumn> xCol( new vcl::RowOrColumn( xIndent.get() ) );
+    std::shared_ptr<vcl::RowOrColumn> xCol( new vcl::RowOrColumn( xIndent.get() ) );
     xIndent->setChild( xCol );
     mxOptGroup = xCol;
     xCol->addWindow( &maToFileBox );
@@ -831,7 +832,7 @@ void PrintDialog::OutputOptPage::storeToSettings()
                      rtl::OUString::createFromAscii( maToFileBox.IsChecked() ? "true" : "false" ) );
 }
 
-PrintDialog::PrintDialog( Window* i_pParent, const boost::shared_ptr<PrinterController>& i_rController )
+PrintDialog::PrintDialog( Window* i_pParent, const std::shared_ptr<PrinterController>& i_rController )
     : ModalDialog( i_pParent, VclResId( SV_DLG_PRINT ) )
     , maOKButton( this, VclResId( SV_PRINT_OK ) )
     , maCancelButton( this, VclResId( SV_PRINT_CANCEL ) )
@@ -899,13 +900,13 @@ PrintDialog::PrintDialog( Window* i_pParent, const boost::shared_ptr<PrinterCont
         if( maJobPage.maPrinters.GetEntryPos( aValue ) != LISTBOX_ENTRY_NOTFOUND )
         {
             maJobPage.maPrinters.SelectEntry( aValue );
-            maPController->setPrinter( boost::shared_ptr<Printer>( new Printer( aValue ) ) );
+            maPController->setPrinter( std::shared_ptr<Printer>( new Printer( aValue ) ) );
         }
         else
         {
             // fall back to default printer
             maJobPage.maPrinters.SelectEntry( Printer::GetDefaultPrinterName() );
-            maPController->setPrinter( boost::shared_ptr<Printer>( new Printer( Printer::GetDefaultPrinterName() ) ) );
+            maPController->setPrinter( std::shared_ptr<Printer>( new Printer( Printer::GetDefaultPrinterName() ) ) );
         }
     }
     // not printing to file
@@ -1029,23 +1030,23 @@ PrintDialog::~PrintDialog()
 
 void PrintDialog::setupLayout()
 {
-    boost::shared_ptr<vcl::RowOrColumn> xLayout =
-        boost::dynamic_pointer_cast<vcl::RowOrColumn>( getLayout() );
+    std::shared_ptr<vcl::RowOrColumn> xLayout =
+        std::dynamic_pointer_cast<vcl::RowOrColumn>( getLayout() );
     xLayout->setOuterBorder( 0 );
 
 
-    boost::shared_ptr< vcl::RowOrColumn > xPreviewAndTab( new vcl::RowOrColumn( xLayout.get(), false ) );
+    std::shared_ptr< vcl::RowOrColumn > xPreviewAndTab( new vcl::RowOrColumn( xLayout.get(), false ) );
     size_t nIndex = xLayout->addChild( xPreviewAndTab, 5 );
     xLayout->setBorders( nIndex, -1, -1, -1, 0 );
 
     // setup column for preview and sub controls
-    boost::shared_ptr< vcl::RowOrColumn > xPreview( new vcl::RowOrColumn( xPreviewAndTab.get() ) );
+    std::shared_ptr< vcl::RowOrColumn > xPreview( new vcl::RowOrColumn( xPreviewAndTab.get() ) );
     xPreviewAndTab->addChild( xPreview, 5 );
     xPreview->addWindow( &maPreviewWindow, 5 );
     // get a row for the preview controls
     mxPreviewCtrls.reset( new vcl::RowOrColumn( xPreview.get(), false ) );
     nIndex = xPreview->addChild( mxPreviewCtrls );
-    boost::shared_ptr< vcl::Spacer > xSpacer( new vcl::Spacer( mxPreviewCtrls.get(), 2 ) );
+    std::shared_ptr< vcl::Spacer > xSpacer( new vcl::Spacer( mxPreviewCtrls.get(), 2 ) );
     mxPreviewCtrls->addChild( xSpacer );
     mxPreviewCtrls->addWindow( &maPageEdit );
     mxPreviewCtrls->addWindow( &maNumPagesText );
@@ -1063,7 +1064,7 @@ void PrintDialog::setupLayout()
     xLayout->addWindow( &maButtonLine );
 
     // add the row for the buttons
-    boost::shared_ptr< vcl::RowOrColumn > xButtons( new vcl::RowOrColumn( xLayout.get(), false ) );
+    std::shared_ptr< vcl::RowOrColumn > xButtons( new vcl::RowOrColumn( xLayout.get(), false ) );
     nIndex = xLayout->addChild( xButtons );
     xLayout->setBorders( nIndex, -1, 0, -1, -1 );
 
@@ -1178,15 +1179,15 @@ void updateMaxSize( const Size& i_rCheckSize, Size& o_rMaxSize )
 
 void PrintDialog::setupOptionalUI()
 {
-    std::vector< boost::shared_ptr<vcl::RowOrColumn> > aDynamicColumns;
-    boost::shared_ptr< vcl::RowOrColumn > pCurColumn;
+    std::vector< std::shared_ptr<vcl::RowOrColumn> > aDynamicColumns;
+    std::shared_ptr< vcl::RowOrColumn > pCurColumn;
 
     Window* pCurParent = 0, *pDynamicPageParent = 0;
     sal_uInt16 nOptPageId = 9, nCurSubGroup = 0;
     bool bOnStaticPage = false;
     bool bSubgroupOnStaticPage = false;
 
-    std::multimap< rtl::OUString, boost::shared_ptr<vcl::RowOrColumn> > aPropertyToDependencyRowMap;
+    std::multimap< rtl::OUString, std::shared_ptr<vcl::RowOrColumn> > aPropertyToDependencyRowMap;
 
     const Sequence< PropertyValue >& rOptions( maPController->getUIOptions() );
     for( int i = 0; i < rOptions.getLength(); i++ )
@@ -1325,7 +1326,7 @@ void PrintDialog::setupOptionalUI()
             }
             else if( aGroupingHint.equalsAscii( "OptionsPage" ) )
             {
-                pCurColumn = boost::dynamic_pointer_cast<vcl::RowOrColumn>(maOptionsPage.getLayout());
+                pCurColumn = std::dynamic_pointer_cast<vcl::RowOrColumn>(maOptionsPage.getLayout());
                 pCurParent = &maOptionsPage;        // set options page as current parent
                 bOnStaticPage = true;
             }
@@ -1337,13 +1338,13 @@ void PrintDialog::setupOptionalUI()
             }
             else if( aGroupingHint.equalsAscii( "LayoutPage" ) )
             {
-                pCurColumn = boost::dynamic_pointer_cast<vcl::RowOrColumn>(maNUpPage.getLayout());
+                pCurColumn = std::dynamic_pointer_cast<vcl::RowOrColumn>(maNUpPage.getLayout());
                 pCurParent = &maNUpPage;            // set layout page as current parent
                 bOnStaticPage = true;
             }
             else if( aGroupingHint.getLength() )
             {
-                pCurColumn = boost::dynamic_pointer_cast<vcl::RowOrColumn>(maJobPage.getLayout());
+                pCurColumn = std::dynamic_pointer_cast<vcl::RowOrColumn>(maJobPage.getLayout());
                 pCurParent = &maJobPage;            // set job page as current parent
                 bOnStaticPage = true;
             }
@@ -1368,7 +1369,7 @@ void PrintDialog::setupOptionalUI()
             // reset subgroup counter
             nCurSubGroup = 0;
 
-            aDynamicColumns.push_back( boost::dynamic_pointer_cast<vcl::RowOrColumn>(pNewGroup->getLayout()) );
+            aDynamicColumns.push_back( std::dynamic_pointer_cast<vcl::RowOrColumn>(pNewGroup->getLayout()) );
             pCurColumn = aDynamicColumns.back();
             pCurColumn->setParentWindow( pNewGroup );
             bSubgroupOnStaticPage = false;
@@ -1427,17 +1428,17 @@ void PrintDialog::setupOptionalUI()
             maPropertyToWindowMap[ aPropertyName ].push_back( &maNUpPage.maBrochureBtn );
             maControlToPropertyMap[&maNUpPage.maBrochureBtn] = aPropertyName;
 
-            aPropertyToDependencyRowMap.insert( std::pair< rtl::OUString, boost::shared_ptr<vcl::RowOrColumn> >( aPropertyName, maNUpPage.mxBrochureDep ) );
+            aPropertyToDependencyRowMap.insert( std::pair< rtl::OUString, std::shared_ptr<vcl::RowOrColumn> >( aPropertyName, maNUpPage.mxBrochureDep ) );
         }
         else
         {
-            boost::shared_ptr<vcl::RowOrColumn> pSaveCurColumn( pCurColumn );
+            std::shared_ptr<vcl::RowOrColumn> pSaveCurColumn( pCurColumn );
 
             if( bUseDependencyRow )
             {
                 // find the correct dependency row (if any)
-                std::pair< std::multimap< rtl::OUString, boost::shared_ptr<vcl::RowOrColumn> >::iterator,
-                           std::multimap< rtl::OUString, boost::shared_ptr<vcl::RowOrColumn> >::iterator > aDepRange;
+                std::pair< std::multimap< rtl::OUString, std::shared_ptr<vcl::RowOrColumn> >::iterator,
+                           std::multimap< rtl::OUString, std::shared_ptr<vcl::RowOrColumn> >::iterator > aDepRange;
                 aDepRange = aPropertyToDependencyRowMap.equal_range( aDependsOnName );
                 if( aDepRange.first != aDepRange.second )
                 {
@@ -1476,16 +1477,16 @@ void PrintDialog::setupOptionalUI()
                 // set help text
                 setHelpText( pNewBox, aHelpTexts, 0 );
 
-                boost::shared_ptr<vcl::RowOrColumn> pDependencyRow( new vcl::RowOrColumn( pCurColumn.get(), false ) );
+                std::shared_ptr<vcl::RowOrColumn> pDependencyRow( new vcl::RowOrColumn( pCurColumn.get(), false ) );
                 pCurColumn->addChild( pDependencyRow );
-                aPropertyToDependencyRowMap.insert( std::pair< rtl::OUString, boost::shared_ptr<vcl::RowOrColumn> >( aPropertyName, pDependencyRow ) );
+                aPropertyToDependencyRowMap.insert( std::pair< rtl::OUString, std::shared_ptr<vcl::RowOrColumn> >( aPropertyName, pDependencyRow ) );
 
                 // add checkbox to current column
                 pDependencyRow->addWindow( pNewBox );
             }
             else if( aCtrlType.equalsAscii( "Radio" ) && pCurParent )
             {
-                boost::shared_ptr<vcl::RowOrColumn> pRadioColumn( pCurColumn );
+                std::shared_ptr<vcl::RowOrColumn> pRadioColumn( pCurColumn );
                 if( aText.getLength() )
                 {
                     // add a FixedText:
@@ -1515,11 +1516,11 @@ void PrintDialog::setupOptionalUI()
                     pVal->Value >>= nSelectVal;
                 for( sal_Int32 m = 0; m < aChoices.getLength(); m++ )
                 {
-                    boost::shared_ptr<vcl::LabeledElement> pLabel( new vcl::LabeledElement( pRadioColumn.get(), 1 ) );
+                    std::shared_ptr<vcl::LabeledElement> pLabel( new vcl::LabeledElement( pRadioColumn.get(), 1 ) );
                     pRadioColumn->addChild( pLabel );
-                    boost::shared_ptr<vcl::RowOrColumn> pDependencyRow( new vcl::RowOrColumn( pLabel.get(), false ) );
+                    std::shared_ptr<vcl::RowOrColumn> pDependencyRow( new vcl::RowOrColumn( pLabel.get(), false ) );
                     pLabel->setElement( pDependencyRow );
-                    aPropertyToDependencyRowMap.insert( std::pair< rtl::OUString, boost::shared_ptr<vcl::RowOrColumn> >( aPropertyName, pDependencyRow ) );
+                    aPropertyToDependencyRowMap.insert( std::pair< rtl::OUString, std::shared_ptr<vcl::RowOrColumn> >( aPropertyName, pDependencyRow ) );
 
                     RadioButton* pBtn = new RadioButton( pCurParent, m == 0 ? WB_GROUP : 0 );
                     maControls.push_front( pBtn );
@@ -1548,9 +1549,9 @@ void PrintDialog::setupOptionalUI()
                      ) && pCurParent )
             {
                 // create a row in the current column
-                boost::shared_ptr<vcl::RowOrColumn> pFieldColumn( new vcl::RowOrColumn( pCurColumn.get(), false ) );
+                std::shared_ptr<vcl::RowOrColumn> pFieldColumn( new vcl::RowOrColumn( pCurColumn.get(), false ) );
                 pCurColumn->addChild( pFieldColumn );
-                aPropertyToDependencyRowMap.insert( std::pair< rtl::OUString, boost::shared_ptr<vcl::RowOrColumn> >( aPropertyName, pFieldColumn ) );
+                aPropertyToDependencyRowMap.insert( std::pair< rtl::OUString, std::shared_ptr<vcl::RowOrColumn> >( aPropertyName, pFieldColumn ) );
 
                 vcl::LabeledElement* pLabel = NULL;
                 if( aText.getLength() )
@@ -1727,7 +1728,7 @@ void PrintDialog::setupOptionalUI()
     // and options page
     updateMaxSize( maOptionsPage.getLayout()->getOptimalSize( WINDOWSIZE_PREFERRED ), aMaxSize );
 
-    for( std::vector< boost::shared_ptr<vcl::RowOrColumn> >::iterator it = aDynamicColumns.begin();
+    for( std::vector< std::shared_ptr<vcl::RowOrColumn> >::iterator it = aDynamicColumns.begin();
          it != aDynamicColumns.end(); ++it )
     {
         Size aPageSize( (*it)->getOptimalSize( WINDOWSIZE_PREFERRED ) );
@@ -1933,7 +1934,7 @@ void PrintDialog::preparePreview( bool i_bNewPage, bool i_bMayUseCache )
     {
         const MapMode aMapMode( MAP_100TH_MM );
         GDIMetaFile aMtf;
-        boost::shared_ptr<Printer> aPrt( maPController->getPrinter() );
+        std::shared_ptr<Printer> aPrt( maPController->getPrinter() );
         if( nPages > 0 )
         {
             PrinterController::PageSize aPageSize =
@@ -2140,7 +2141,7 @@ IMPL_LINK( PrintDialog, SelectHdl, ListBox*, pBox )
     {
         String aNewPrinter( pBox->GetSelectEntry() );
         // set new printer
-        maPController->setPrinter( boost::shared_ptr<Printer>( new Printer( aNewPrinter ) ) );
+        maPController->setPrinter( std::shared_ptr<Printer>( new Printer( aNewPrinter ) ) );
         maPController->resetPrinterOptions( maOptionsPage.maToFileBox.IsChecked() );
         // update text fields
         updatePrinterText();

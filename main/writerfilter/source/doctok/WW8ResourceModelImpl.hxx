@@ -36,6 +36,7 @@
 #endif
 
 #include <map>
+#include <memory>
 
 namespace writerfilter {
 namespace doctok
@@ -82,7 +83,7 @@ class WW8BinaryObjReference : public writerfilter::Reference<BinaryObj>,
                               public WW8StructBase
 {
 public:
-    typedef boost::shared_ptr<WW8BinaryObjReference> Pointer_t;
+    typedef std::shared_ptr<WW8BinaryObjReference> Pointer_t;
     WW8BinaryObjReference(WW8Stream & rStream, sal_uInt32 nOffset,
                           sal_uInt32 nCount);
     WW8BinaryObjReference(WW8StructBase & rParent, sal_uInt32 nOffset,

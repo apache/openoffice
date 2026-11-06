@@ -189,7 +189,7 @@ protected:
     virtual void        DataChanged( const DataChangedEvent& rDCEvt );
 
 private:
-    std::auto_ptr< FrameSelectorImpl > mxImpl;
+    std::unique_ptr< FrameSelectorImpl > mxImpl;
 };
 
 // ============================================================================

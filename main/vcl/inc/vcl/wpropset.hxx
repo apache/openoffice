@@ -24,6 +24,7 @@
 #ifndef VCL_WPROPSET_HXX
 #define VCL_WPROPSET_HXX
 
+#include <memory>
 #include "vcl/dllapi.h"
 
 #include "tools/link.hxx"
@@ -43,7 +44,7 @@ namespace vcl
         WindowPropertySetData* mpImpl;
 
         void addWindowToSet( Window* );
-        void addLayoutToSet( const boost::shared_ptr<WindowArranger>& );
+        void addLayoutToSet( const std::shared_ptr<WindowArranger>& );
         void setupProperties();
 
         DECL_LINK( ChildEventListener, VclWindowEvent* );

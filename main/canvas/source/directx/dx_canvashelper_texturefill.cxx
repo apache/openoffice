@@ -50,6 +50,7 @@
 #include <boost/scoped_ptr.hpp>
 #include <boost/bind.hpp>
 #include <boost/tuple/tuple.hpp>
+#include <memory>
 
 
 using namespace ::com::sun::star;
@@ -58,7 +59,7 @@ namespace dxcanvas
 {
     namespace
     {
-        typedef ::boost::shared_ptr< Gdiplus::PathGradientBrush > 	PathGradientBrushSharedPtr;
+        typedef ::std::shared_ptr< Gdiplus::PathGradientBrush > 	PathGradientBrushSharedPtr;
 
         bool fillLinearGradient( GraphicsSharedPtr&                             rGraphics,
                                  const ::canvas::ParametricPolyPolygon::Values& /*rValues*/,

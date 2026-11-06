@@ -84,7 +84,7 @@ struct MemberInfo
 	OUString name;
 };
 
-typedef unordered_map
+typedef std::unordered_map
 <
 	OUString,
 	DISPID,
@@ -92,7 +92,7 @@ typedef unordered_map
 	equalOUString_Impl
 > NameToIdMap;
 
-typedef unordered_map
+typedef std::unordered_map
 <
 	OUString,
 	sal_Bool,
@@ -100,7 +100,7 @@ typedef unordered_map
 	equalOUString_Impl
 > BadNameMap;
 
-typedef unordered_map
+typedef std::unordered_map
 <
 	DISPID,
 	MemberInfo

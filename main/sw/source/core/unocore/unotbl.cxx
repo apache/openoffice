@@ -1142,7 +1142,7 @@ uno::Reference< container::XEnumeration >  SwXCell::createEnumeration(void)
 	{
 		const SwStartNode* pSttNd = pBox->GetSttNd();
 		SwPosition aPos(*pSttNd);
-        ::std::auto_ptr<SwUnoCrsr> pUnoCursor(
+        ::std::unique_ptr<SwUnoCrsr> pUnoCursor(
             GetDoc()->CreateUnoCrsr(aPos, sal_False));
         pUnoCursor->Move(fnMoveForward, fnGoNode);
 

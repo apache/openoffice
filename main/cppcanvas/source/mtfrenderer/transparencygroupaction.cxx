@@ -187,7 +187,7 @@ namespace cppcanvas
                                                               double 						nAlpha,
                                                               const CanvasSharedPtr&		rCanvas,
                                                               const OutDevState& 			rState ) :
-                mpGroupMtf( rGroupMtf ),
+                mpGroupMtf( std::move( rGroupMtf ) ),
                 mpAlphaGradient(),
                 maParms( rParms ),
                 maDstSize( rDstSize ),
@@ -219,8 +219,8 @@ namespace cppcanvas
                                                               const ::basegfx::B2DVector& 	rDstSize,
                                                               const CanvasSharedPtr&		rCanvas,
                                                               const OutDevState& 			rState ) :
-                mpGroupMtf( rGroupMtf ),
-                mpAlphaGradient( rAlphaGradient ),
+                mpGroupMtf( std::move( rGroupMtf ) ),
+                mpAlphaGradient( std::move( rAlphaGradient ) ),
                 maParms( rParms ),
                 maDstSize( rDstSize ),
                 mxBufferBitmap(),

@@ -25,6 +25,7 @@
 #include "precompiled_sd.hxx"
 #include <com/sun/star/util/XCloneable.hpp>
 #include <com/sun/star/animations/XAnimationNode.hpp>
+#include <memory>
 #include "CustomAnimationCloner.hxx"
 
 #include "undoanim.hxx"
@@ -133,7 +134,7 @@ struct UndoAnimationPathImpl
 	{
 		if( mpPage && xNode.is() )
 		{
-			boost::shared_ptr< sd::MainSequence > pMainSequence( mpPage->getMainSequence() );
+			std::shared_ptr< sd::MainSequence > pMainSequence( mpPage->getMainSequence() );
 			if( pMainSequence.get() )
 			{
 				CustomAnimationEffectPtr pEffect( pMainSequence->findEffect( xNode ) );
@@ -151,7 +152,7 @@ struct UndoAnimationPathImpl
 		CustomAnimationEffectPtr pEffect;
 		if( mpPage && (mnEffectOffset >= 0) )
 		{
-			boost::shared_ptr< sd::MainSequence > pMainSequence( mpPage->getMainSequence() );
+			std::shared_ptr< sd::MainSequence > pMainSequence( mpPage->getMainSequence() );
 			if( pMainSequence.get() )
 				pEffect = pMainSequence->getEffectFromOffset( mnEffectOffset );
 		}

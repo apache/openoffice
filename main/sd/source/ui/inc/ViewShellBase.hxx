@@ -32,7 +32,7 @@
 #include <sfx2/viewsh.hxx>
 #include <sfx2/viewfac.hxx>
 #include <memory>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <boost/scoped_ptr.hpp>
 
 #include <set>
@@ -88,13 +88,13 @@ public:
     */
     virtual void LateInit (const ::rtl::OUString& rsDefaultView);
 
-    ::boost::shared_ptr<ViewShellManager> GetViewShellManager (void) const;
+    ::std::shared_ptr<ViewShellManager> GetViewShellManager (void) const;
 
     /** Return the main view shell stacked on the called ViewShellBase
         object.  This is usually the view shell displayed in the center
         pane.
     */
-    ::boost::shared_ptr<ViewShell> GetMainViewShell (void) const;
+    ::std::shared_ptr<ViewShell> GetMainViewShell (void) const;
 
     /** When given a view frame this static method returns the
         corresponding sd::ViewShellBase object.
@@ -209,18 +209,18 @@ public:
         events from various sources.  This method must not be called before
         LateInit() has terminated.
     */
-    ::boost::shared_ptr<tools::EventMultiplexer> GetEventMultiplexer (void);
+    ::std::shared_ptr<tools::EventMultiplexer> GetEventMultiplexer (void);
 
     /** returns the complete area of the current view relative to the frame
         window
     */
     const Rectangle& getClientRectangle() const;
 
-    ::boost::shared_ptr<UpdateLockManager> GetUpdateLockManager (void) const;
+    ::std::shared_ptr<UpdateLockManager> GetUpdateLockManager (void) const;
 
-    ::boost::shared_ptr<ToolBarManager> GetToolBarManager (void) const;
+    ::std::shared_ptr<ToolBarManager> GetToolBarManager (void) const;
 
-    ::boost::shared_ptr<FormShellManager> GetFormShellManager (void) const;
+    ::std::shared_ptr<FormShellManager> GetFormShellManager (void) const;
 
     DrawController& GetDrawController (void) const;
 

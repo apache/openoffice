@@ -496,7 +496,7 @@ void SwDoc::PreDelPageDesc(SwPageDesc * pDel)
         if ( bHasLayout )
         {
             std::set<SwRootFrm*> aAllLayouts = GetAllLayouts();
-            std::for_each( aAllLayouts.begin(), aAllLayouts.end(),std::bind2nd(std::mem_fun(&SwRootFrm::CheckFtnPageDescs), false));
+            std::for_each( aAllLayouts.begin(), aAllLayouts.end(),[false](auto _x) { _x->CheckFtnPageDescs(false); });
         }
     }
     else if ( pEndNoteInfo->DependsOn( pDel ) )
@@ -505,7 +505,7 @@ void SwDoc::PreDelPageDesc(SwPageDesc * pDel)
         if ( bHasLayout )
         {
             std::set<SwRootFrm*> aAllLayouts = GetAllLayouts();
-            std::for_each( aAllLayouts.begin(), aAllLayouts.end(),std::bind2nd(std::mem_fun(&SwRootFrm::CheckFtnPageDescs), true));
+            std::for_each( aAllLayouts.begin(), aAllLayouts.end(),[true](auto _x) { _x->CheckFtnPageDescs(true); });
         }
     }
 
@@ -688,7 +688,7 @@ void SwDoc::PrtDataChanged()
 			pFntCache->Flush();
 
 			std::set<SwRootFrm*> aAllLayouts = GetAllLayouts();
-			std::for_each( aAllLayouts.begin(), aAllLayouts.end(),std::bind2nd(std::mem_fun(&SwRootFrm::InvalidateAllCntnt), INV_SIZE));//swmod 080304
+			std::for_each( aAllLayouts.begin(), aAllLayouts.end(),[INV_SIZE](auto _x) { _x->InvalidateAllCntnt(INV_SIZE); });//swmod 080304
 
 			if ( pSh )
 			{

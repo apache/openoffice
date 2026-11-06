@@ -37,8 +37,11 @@ namespace basebmp
 
 
 /// combine two values via XOR
-template< typename T > struct XorFunctor : public std::binary_function<T,T,T>
+template< typename T > struct XorFunctor 
 {
+    typedef T first_argument_type;
+    typedef T second_argument_type;
+    typedef T result_type;
     T operator()( T v1, T v2 ) const { return v1 ^ v2; }
 };
 
@@ -146,12 +149,13 @@ template< typename T, typename M > struct FastIntegerOutputMaskFunctor<T,M,false
     An adaptable ternary functor (as can e.g. be passed to the
     TernarySetterFunctionAccessorAdapter)
  */
-template< typename Functor > struct BinaryFunctorSplittingWrapper :
-        public std::binary_function<typename Functor::first_argument_type,
-                                    std::pair<typename Functor::third_argument_type,
-                                              typename Functor::second_argument_type>,
-                                    typename Functor::result_type>
+template< typename Functor > struct BinaryFunctorSplittingWrapper
 {
+    typedef Functor functor_type;
+    typedef typename Functor::first_argument_type  first_argument_type;
+    typedef std::pair<typename Functor::third_argument_type,
+                      typename Functor::second_argument_type> second_argument_type;
+    typedef typename Functor::result_type          result_type;
 #ifndef BOOST_NO_MEMBER_TEMPLATE_FRIENDS
 // making all members public, if no member template friends
 private:

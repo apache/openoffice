@@ -25,7 +25,7 @@
 #include "precompiled_svx.hxx"
 
 #include <vector>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 #include <com/sun/star/table/XTable.hpp>
 
@@ -64,7 +64,7 @@ struct RTFCellDefault
 	RTFCellDefault( SfxItemPool* pPool ) : maItemSet( *pPool ), mnCol(0), mnTwips(0 ), mnColSpan(1) {}
 };
 
-typedef std::vector< boost::shared_ptr< RTFCellDefault > > RTFCellDefaultVector;
+typedef std::vector< std::shared_ptr< RTFCellDefault > > RTFCellDefaultVector;
 
 struct RTFCellInfo
 {
@@ -76,10 +76,10 @@ struct RTFCellInfo
 	RTFCellInfo( SfxItemPool& rPool ) : maItemSet(  rPool ), mnStartPara(0), mnParaCount(0), mnColSpan(0) {}
 };
 
-typedef boost::shared_ptr< RTFCellInfo > RTFCellInfoPtr;
+typedef std::shared_ptr< RTFCellInfo > RTFCellInfoPtr;
 typedef std::vector< RTFCellInfoPtr > RTFColumnVector;
 
-typedef boost::shared_ptr< RTFColumnVector > RTFColumnVectorPtr;
+typedef std::shared_ptr< RTFColumnVector > RTFColumnVectorPtr;
 
 typedef std::vector< RTFColumnVectorPtr > RTFRowVector;
 
@@ -371,7 +371,7 @@ void SdrTableRTFParser::ProcToken( ImportInfo* pInfo )
 		{
 			mbNewDef = sal_True;
 			mpInsDefault->mnCol = mnColCnt;
-			maDefaultList.push_back( boost::shared_ptr< RTFCellDefault >( mpInsDefault ) );
+			maDefaultList.push_back( std::shared_ptr< RTFCellDefault >( mpInsDefault ) );
 
 			if( (sal_Int32)maColumnEdges.size() <= mnColCnt )
 				maColumnEdges.resize( mnColCnt + 1 );

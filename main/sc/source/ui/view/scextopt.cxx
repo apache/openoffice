@@ -25,7 +25,7 @@
 
 #include <vector>
 #include <map>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 // ============================================================================
 
@@ -72,7 +72,7 @@ public:
     ScExtTabSettings&   GetOrCreateTabSettings( SCTAB nTab );
 
 private:
-    typedef ::boost::shared_ptr< ScExtTabSettings >     ScExtTabSettingsRef;
+    typedef ::std::shared_ptr< ScExtTabSettings >     ScExtTabSettingsRef;
     typedef ::std::map< SCTAB, ScExtTabSettingsRef >    ScExtTabSettingsMap;
 
     /** Makes a deep copy of all objects in the passed map. */

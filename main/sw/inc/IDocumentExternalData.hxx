@@ -24,7 +24,7 @@
 #define INCLUDED_I_DOCUMENT_EXTERNAL_DATA_HXX
 
 #include <unordered_map>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 namespace sw
 {
@@ -42,7 +42,7 @@ public:
     virtual ~ExternalData() {}
 };
 
-typedef ::boost::shared_ptr<ExternalData> tExternalDataPointer;
+typedef ::std::shared_ptr<ExternalData> tExternalDataPointer;
 }
 
 

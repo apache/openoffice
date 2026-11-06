@@ -37,6 +37,7 @@
 #include "nodetools.hxx"
 
 #include <boost/bind.hpp>
+#include <memory>
 
 using namespace com::sun::star;
 
@@ -46,7 +47,7 @@ namespace internal {
 namespace EffectCommands = com::sun::star::presentation::EffectCommands;
 
 AnimationCommandNode::AnimationCommandNode( uno::Reference<animations::XAnimationNode> const& xNode,
-                                             ::boost::shared_ptr<BaseContainerNode> const& pParent,
+                                             ::std::shared_ptr<BaseContainerNode> const& pParent,
                                              NodeContext const& rContext ) :
     BaseNode( xNode, pParent, rContext ),
     mpShape(),
@@ -55,7 +56,7 @@ AnimationCommandNode::AnimationCommandNode( uno::Reference<animations::XAnimatio
     uno::Reference< drawing::XShape > xShape( mxCommandNode->getTarget(),
                                               uno::UNO_QUERY );
     ShapeSharedPtr pShape( getContext().mpSubsettableShapeManager->lookupShape( xShape ) );
-    mpShape = ::boost::dynamic_pointer_cast< ExternalMediaShape >( pShape );
+    mpShape = ::std::dynamic_pointer_cast< ExternalMediaShape >( pShape );
 }
 
 void AnimationCommandNode::dispose()

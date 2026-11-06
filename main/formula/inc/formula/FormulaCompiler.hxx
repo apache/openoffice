@@ -29,7 +29,7 @@
 #include <tools/debug.hxx>
 #include <rtl/ustrbuf.hxx>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <unordered_map>
 
 #include <com/sun/star/uno/Sequence.hxx>
@@ -186,8 +186,8 @@ public:
     };
 
 public:
-    typedef ::boost::shared_ptr< const OpCodeMap >  OpCodeMapPtr;
-    typedef ::boost::shared_ptr< OpCodeMap >        NonConstOpCodeMapPtr;
+    typedef ::std::shared_ptr< const OpCodeMap >  OpCodeMapPtr;
+    typedef ::std::shared_ptr< OpCodeMap >        NonConstOpCodeMapPtr;
 
     /** Get OpCodeMap for formula language.
         @param nLanguage

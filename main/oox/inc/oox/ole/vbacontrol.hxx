@@ -24,6 +24,7 @@
 #ifndef OOX_OLE_VBACONTROL_HXX
 #define OOX_OLE_VBACONTROL_HXX
 
+#include <memory>
 #include "oox/ole/axcontrol.hxx"
 
 namespace com { namespace sun { namespace star {
@@ -101,7 +102,7 @@ protected:
     sal_uInt16          mnGroupId;          /// Group identifier for grouped controls.
 };
 
-typedef ::boost::shared_ptr< VbaSiteModel > VbaSiteModelRef;
+typedef ::std::shared_ptr< VbaSiteModel > VbaSiteModelRef;
 
 // ============================================================================
 

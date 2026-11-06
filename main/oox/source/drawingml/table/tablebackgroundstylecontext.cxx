@@ -22,6 +22,7 @@
 
 
 #include <osl/diagnose.h>
+#include <memory>
 
 #include "oox/drawingml/table/tablebackgroundstylecontext.hxx"
 #include "oox/drawingml/fillpropertiesgroupcontext.hxx"
@@ -56,7 +57,7 @@ TableBackgroundStyleContext::createFastChildContext( ::sal_Int32 aElementToken, 
 		// EG_ThemeableFillStyle (choice)
 		case A_TOKEN( fill ):		// CT_FillProperties
 			{
-                boost::shared_ptr< FillProperties >& rxFillProperties = mrTableStyle.getBackgroundFillProperties();
+                std::shared_ptr< FillProperties >& rxFillProperties = mrTableStyle.getBackgroundFillProperties();
                 rxFillProperties.reset( new FillProperties );
                 xRet.set( new FillPropertiesContext( *this, *rxFillProperties ) );
 			}

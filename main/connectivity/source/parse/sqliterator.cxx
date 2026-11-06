@@ -46,6 +46,7 @@
 #include <com/sun/star/sdb/SQLFilterOperator.hpp>
 #include "diagnose_ex.h"
 #include <rtl/logfile.hxx>
+#include <memory>
 
 #define SQL_ISRULEOR2(pParseNode, e1,e2) 	((pParseNode)->isRule() && (\
 											(pParseNode)->getRuleID() == OSQLParser::RuleID(OSQLParseNode::e1) || \
@@ -74,9 +75,9 @@ namespace connectivity
 		Reference< XNameAccess >        m_xTableContainer;
         Reference< XNameAccess >        m_xQueryContainer;
 
-        ::boost::shared_ptr< OSQLTables >   m_pTables;      /// all tables which participate in the SQL statement
-        ::boost::shared_ptr< OSQLTables >   m_pSubTables;   /// all tables from sub queries not the tables from the select tables
-        ::boost::shared_ptr< QueryNameSet > m_pForbiddenQueryNames;
+        ::std::shared_ptr< OSQLTables >   m_pTables;      /// all tables which participate in the SQL statement
+        ::std::shared_ptr< OSQLTables >   m_pSubTables;   /// all tables from sub queries not the tables from the select tables
+        ::std::shared_ptr< QueryNameSet > m_pForbiddenQueryNames;
 
         sal_uInt32                      m_nIncludeMask;
 
@@ -123,7 +124,7 @@ namespace connectivity
     */
     class ForbidQueryName
     {
-        ::boost::shared_ptr< QueryNameSet >&    m_rpAllForbiddenNames;
+        ::std::shared_ptr< QueryNameSet >&    m_rpAllForbiddenNames;
         ::rtl::OUString                         m_sForbiddenQueryName;
 
     public:
@@ -348,7 +349,7 @@ void OSQLParseTreeIterator::impl_getQueryParameterColumns( const OSQLTable& _rQu
         break;
 
     ::rtl::OUString sError;
-    ::std::auto_ptr< OSQLParseNode > pSubQueryNode( const_cast< OSQLParser& >( m_rParser ).parseTree( sError, sSubQueryCommand, sal_False ) );
+    ::std::unique_ptr< OSQLParseNode > pSubQueryNode( const_cast< OSQLParser& >( m_rParser ).parseTree( sError, sSubQueryCommand, sal_False ) );
     if ( !pSubQueryNode.get() )
         break;
 
@@ -490,7 +491,7 @@ void OSQLParseTreeIterator::impl_fillJoinConditions(const OSQLParseNode* i_pJoin
 	else if (SQL_ISRULEOR2(i_pJoinCondition,search_condition,boolean_term)	&&			// AND/OR-Verknuepfung:
 			 i_pJoinCondition->count() == 3)
 	{
-		// nur AND Verknüpfung zulassen
+		// nur AND Verknï¿½pfung zulassen
 		if ( SQL_ISTOKEN(i_pJoinCondition->getChild(1),AND) )
         {
             impl_fillJoinConditions(i_pJoinCondition->getChild(0));

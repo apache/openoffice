@@ -27,7 +27,7 @@
 #include <WriterFilterDllApi.hxx>
 #include <resourcemodel/LoggedResources.hxx>
 
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 namespace writerfilter {
 namespace dmapper
@@ -47,7 +47,7 @@ public:
     virtual void lcl_attribute( Id aName, Value& rVal );
     virtual void lcl_sprm( Sprm& rSprm );
 };
-typedef boost::shared_ptr<PositionHandler> PositionHandlerPtr;
+typedef std::shared_ptr<PositionHandler> PositionHandlerPtr;
 
 class WRITERFILTER_DLLPRIVATE WrapHandler: public LoggedProperties
 {
@@ -64,7 +64,7 @@ public:
     virtual void lcl_attribute( Id aName, Value& rVal );
     virtual void lcl_sprm( Sprm& rSprm );
 };
-typedef boost::shared_ptr<WrapHandler> WrapHandlerPtr;
+typedef std::shared_ptr<WrapHandler> WrapHandlerPtr;
 
 } }
 

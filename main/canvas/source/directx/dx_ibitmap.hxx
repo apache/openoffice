@@ -26,7 +26,7 @@
 
 #include <com/sun/star/rendering/XCanvas.hpp>
 #include <com/sun/star/rendering/XIntegerBitmap.hpp>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <basegfx/vector/b2ivector.hxx>
 #include <basegfx/point/b2dpoint.hxx>
 #include <basegfx/range/b2drange.hxx>
@@ -60,7 +60,7 @@ namespace dxcanvas
             const ::com::sun::star::geometry::IntegerPoint2D&		pos ) = 0;
     };
 
-    typedef boost::shared_ptr<IBitmap> IBitmapSharedPtr;
+    typedef std::shared_ptr<IBitmap> IBitmapSharedPtr;
 }
 
 #endif

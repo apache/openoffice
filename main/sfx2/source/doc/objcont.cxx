@@ -77,6 +77,7 @@
 #include <sfx2/sfxbasemodel.hxx>
 #include <sfx2/docfile.hxx>
 #include <sfx2/request.hxx>
+#include <memory>
 #include "openflag.hxx"
 #include "querytemplate.hxx"
 
@@ -115,14 +116,14 @@ bool operator> (const util::DateTime& i_rLeft, const util::DateTime& i_rRight)
 }
 
 
-::boost::shared_ptr<GDIMetaFile>
+::std::shared_ptr<GDIMetaFile>
 SfxObjectShell::GetPreviewMetaFile( sal_Bool bFullContent ) const
 {
 	return CreatePreviewMetaFile_Impl( bFullContent, sal_False );
 }
 
 
-::boost::shared_ptr<GDIMetaFile>
+::std::shared_ptr<GDIMetaFile>
 SfxObjectShell::CreatePreviewMetaFile_Impl( sal_Bool bFullContent, sal_Bool bHighContrast ) const
 {
 	// Nur wenn gerade nicht gedruckt wird, darf DoDraw aufgerufen
@@ -131,9 +132,9 @@ SfxObjectShell::CreatePreviewMetaFile_Impl( sal_Bool bFullContent, sal_Bool bHig
 	if ( pFrame && pFrame->GetViewShell() &&
 		 pFrame->GetViewShell()->GetPrinter() &&
 		 pFrame->GetViewShell()->GetPrinter()->IsPrinting() )
-		 return ::boost::shared_ptr<GDIMetaFile>();
+		 return ::std::shared_ptr<GDIMetaFile>();
 
-    ::boost::shared_ptr<GDIMetaFile> pFile(new GDIMetaFile);
+    ::std::shared_ptr<GDIMetaFile> pFile(new GDIMetaFile);
 
 	VirtualDevice aDevice;
 	aDevice.EnableOutput( sal_False );
@@ -766,9 +767,9 @@ sal_Bool SfxObjectShell::Print
 				return sal_True;
 
             // pepare adaptor for old style StartPage/EndPage printing
-            boost::shared_ptr< Printer > pPrinter( new Printer( rPrt.GetJobSetup() ) );
+            std::shared_ptr< Printer > pPrinter( new Printer( rPrt.GetJobSetup() ) );
             vcl::OldStylePrintAdaptor* pAdaptor = new vcl::OldStylePrintAdaptor( pPrinter );
-            boost::shared_ptr< vcl::PrinterController > pController( pAdaptor );
+            std::shared_ptr< vcl::PrinterController > pController( pAdaptor );
 
             pAdaptor->StartPage();
 

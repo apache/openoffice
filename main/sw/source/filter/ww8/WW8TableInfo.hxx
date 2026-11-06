@@ -28,7 +28,7 @@
 #include <map>
 #include <vector>
 #include <functional>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <sal/types.h>
 #include <swrect.hxx>
 
@@ -46,15 +46,15 @@ using namespace ::std;
 const unsigned int MAXTABLECELLS = 63;
 
 class WW8TableNodeInfo;
-typedef boost::shared_ptr<SwRect> SwRectPtr;
+typedef std::shared_ptr<SwRect> SwRectPtr;
 typedef ::std::vector<const SwTableBox *> TableBoxVector;
-typedef boost::shared_ptr<TableBoxVector> TableBoxVectorPtr;
+typedef std::shared_ptr<TableBoxVector> TableBoxVectorPtr;
 typedef ::std::vector<sal_uInt32> GridCols;
-typedef boost::shared_ptr<GridCols> GridColsPtr;
+typedef std::shared_ptr<GridCols> GridColsPtr;
 typedef ::std::vector<sal_Int32> RowSpans;
-typedef boost::shared_ptr<RowSpans> RowSpansPtr;
+typedef std::shared_ptr<RowSpans> RowSpansPtr;
 typedef ::std::vector<sal_uInt32> Widths;
-typedef boost::shared_ptr<Widths> WidthsPtr;
+typedef std::shared_ptr<Widths> WidthsPtr;
 
 class WW8TableNodeInfoInner
 {
@@ -73,7 +73,7 @@ class WW8TableNodeInfoInner
     SwRect maRect;
 
 public:
-    typedef boost::shared_ptr<WW8TableNodeInfoInner> Pointer_t;
+    typedef std::shared_ptr<WW8TableNodeInfoInner> Pointer_t;
 
     WW8TableNodeInfoInner(WW8TableNodeInfo * pParent);
     ~WW8TableNodeInfoInner();
@@ -157,7 +157,7 @@ public:
 };
 
 typedef ::std::multiset<CellInfo, less<CellInfo> > CellInfoMultiSet;
-typedef boost::shared_ptr<CellInfoMultiSet> CellInfoMultiSetPtr;
+typedef std::shared_ptr<CellInfoMultiSet> CellInfoMultiSetPtr;
 
 class WW8TableInfo;
 class WW8TableNodeInfo
@@ -175,7 +175,7 @@ private:
     const SwNode * mpNextNode;
 
 public:
-    typedef boost::shared_ptr<WW8TableNodeInfo> Pointer_t;
+    typedef std::shared_ptr<WW8TableNodeInfo> Pointer_t;
 
     WW8TableNodeInfo(WW8TableInfo * pParent, const SwNode * pTxtNode);
     virtual ~WW8TableNodeInfo();
@@ -239,7 +239,7 @@ class WW8TableCellGridRow
     RowSpansPtr m_pRowSpans;
 
 public:
-    typedef boost::shared_ptr<WW8TableCellGridRow> Pointer_t;
+    typedef std::shared_ptr<WW8TableCellGridRow> Pointer_t;
     WW8TableCellGridRow();
     ~WW8TableCellGridRow();
 
@@ -271,7 +271,7 @@ class WW8TableCellGrid
     CellInfoMultiSet::const_iterator getCellsEnd(long nTop);
 
 public:
-    typedef ::boost::shared_ptr<WW8TableCellGrid> Pointer_t;
+    typedef ::std::shared_ptr<WW8TableCellGrid> Pointer_t;
 
     WW8TableCellGrid();
     ~WW8TableCellGrid();
@@ -291,13 +291,13 @@ public:
 class WW8TableInfo
 {
     friend class WW8TableNodeInfoInner;
-    typedef unordered_map<const SwNode *, WW8TableNodeInfo::Pointer_t, hashNode > Map_t;
+    typedef std::unordered_map<const SwNode *, WW8TableNodeInfo::Pointer_t, hashNode > Map_t;
     Map_t mMap;
 
-    typedef unordered_map<const SwTable *, WW8TableCellGrid::Pointer_t, hashTable > CellGridMap_t;
+    typedef std::unordered_map<const SwTable *, WW8TableCellGrid::Pointer_t, hashTable > CellGridMap_t;
     CellGridMap_t mCellGridMap;
 
-    typedef unordered_map<const SwTable *, const SwNode *, hashTable > FirstInTableMap_t;
+    typedef std::unordered_map<const SwTable *, const SwNode *, hashTable > FirstInTableMap_t;
     FirstInTableMap_t mFirstInTableMap;
 
     WW8TableNodeInfo *
@@ -334,7 +334,7 @@ class WW8TableInfo
                                                     bool bCreate = true);
 
 public:
-    typedef boost::shared_ptr<WW8TableInfo> Pointer_t;
+    typedef std::shared_ptr<WW8TableInfo> Pointer_t;
 
     WW8TableInfo();
     virtual ~WW8TableInfo();
