@@ -49,7 +49,6 @@
 #include "mouseeventhandler.hxx"
 #include "rehearsetimingsactivity.hxx"
 
-#include <boost/bind.hpp>
 #include <algorithm>
 #include <memory>
 
@@ -179,9 +178,7 @@ RehearseTimingsActivity::RehearseTimingsActivity( const SlideShowContext& rConte
 
     std::for_each( rContext.mrViewContainer.begin(),
                    rContext.mrViewContainer.end(),
-                   boost::bind( &RehearseTimingsActivity::viewAdded,
-                                this,
-                                _1 ));
+                   [this](auto& view) { this->viewAdded( view ); } );
 }
 
 RehearseTimingsActivity::~RehearseTimingsActivity()
@@ -225,7 +222,7 @@ void RehearseTimingsActivity::start()
 
     // paint and show all sprites:
     paintAllSprites();
-    for_each_sprite( boost::bind( &cppcanvas::Sprite::show, _1 ) );
+    for_each_sprite( [](auto& sprite) { sprite->show(); } );
 
     mrActivitiesQueue.addActivity( shared_from_this() );
 
@@ -243,7 +240,7 @@ double RehearseTimingsActivity::stop()
 
     mbActive = false; // will be removed from queue
 
-    for_each_sprite( boost::bind( &cppcanvas::Sprite::hide, _1 ) );
+    for_each_sprite( [](auto& sprite) { sprite->hide(); } );
 
     return maElapsedTime.getElapsedTime();
 }
@@ -366,11 +363,7 @@ void RehearseTimingsActivity::viewRemoved( const UnoViewSharedPtr& rView )
     maViews.erase(
         std::remove_if(
             maViews.begin(), maViews.end(),
-            boost::bind(
-                std::equal_to<UnoViewSharedPtr>(),
-                rView,
-                // select view:
-                boost::bind( std::select1st<ViewsVecT::value_type>(), _1 ))),
+            [&rView](const auto& entry) { return rView == entry.first; })),
         maViews.end() );
 }
 
@@ -381,11 +374,7 @@ void RehearseTimingsActivity::viewChanged( const UnoViewSharedPtr& rView )
         std::find_if(
             maViews.begin(),
             maViews.end(),
-            boost::bind(
-                std::equal_to<UnoViewSharedPtr>(),
-                rView,
-                // select view:
-                boost::bind( std::select1st<ViewsVecT::value_type>(), _1 ))));
+            [&rView](const auto& entry) { return rView == entry.first; })));
 
     OSL_ASSERT( aModifiedEntry != maViews.end() );
     if( aModifiedEntry == maViews.end() )
@@ -410,9 +399,7 @@ void RehearseTimingsActivity::viewsChanged()
 
         // reposition sprites
         ::basegfx::B2DPoint aSpriteRectangleMinimum = maSpriteRectangle.getMinimum();
-        for_each_sprite( boost::bind( &cppcanvas::Sprite::move,
-                                      _1,
-                                      boost::cref( aSpriteRectangleMinimum ) ) );
+        for_each_sprite( [&](auto& sprite) { sprite->move( aSpriteRectangleMinimum ); } );
 
         // sprites changed, need screen update
         mrScreenUpdater.notifyUpdate();
@@ -422,10 +409,7 @@ void RehearseTimingsActivity::viewsChanged()
 void RehearseTimingsActivity::paintAllSprites() const
 {
     for_each_sprite(
-        boost::bind( &RehearseTimingsActivity::paint, this,
-                     // call getContentCanvas() on each sprite:
-                     boost::bind(
-                         &cppcanvas::CustomSprite::getContentCanvas, _1 ) ) );
+        [this](auto& sprite) { this->paint( sprite->getContentCanvas() ); } );
 }
 
 void RehearseTimingsActivity::paint( cppcanvas::CanvasSharedPtr const & canvas ) const
