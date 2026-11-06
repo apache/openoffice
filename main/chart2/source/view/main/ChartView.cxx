@@ -2224,7 +2224,7 @@ std::unique_ptr<VTitle> lcl_createTitle( TitleHelper::eTitleType eType
     if( !aCompleteString.isEmpty() )
     {
         //create title
-        apVTitle = std::unique_ptr<VTitle>(new VTitle(xTitle));
+        apVTitle = std::make_unique<VTitle>(xTitle);
         rtl::OUString aCID( ObjectIdentifier::createClassifiedIdentifierForObject( xTitle, xChartModel ) );
         apVTitle->init(xPageShapes,xShapeFactory,aCID);
         apVTitle->createShapes( awt::Point(0,0), rPageSize );

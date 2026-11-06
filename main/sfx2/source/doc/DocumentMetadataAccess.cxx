@@ -929,9 +929,9 @@ DocumentMetadataAccess::getMetadataGraphsWithType(
         getAllParts(*m_pImpl) );
     ::std::remove_copy_if(parts.begin(), parts.end(),
         ::std::back_inserter(ret),
-        ::boost::bind(
-            ::std::logical_not<bool>(),
-            ::boost::bind(&isPartOfType, ::boost::ref(*m_pImpl), _1, i_xType) ));
+        [&](const uno::Reference< rdf::XURI >& part) {
+            return !isPartOfType(*m_pImpl, part, i_xType);
+        });
     return ret.getAsConstList();
 }
 
@@ -1199,11 +1199,14 @@ void SAL_CALL DocumentMetadataAccess::loadMetadataFromStorage(
     }
 
     std::for_each(StgFiles.begin(), StgFiles.end(),
-        boost::bind(addContentOrStylesFileImpl, boost::ref(*m_pImpl), _1));
+        [&](const ::rtl::OUString& file) {
+            addContentOrStylesFileImpl(*m_pImpl, file);
+        });
 
     std::for_each(MfstMetadataFiles.begin(), MfstMetadataFiles.end(),
-        boost::bind(importFile, boost::ref(*m_pImpl),
-            i_xStorage, baseURI, i_xHandler, _1));
+        [&](const ::rtl::OUString& file) {
+            importFile(*m_pImpl, i_xStorage, baseURI, i_xHandler, file);
+        });
 }
 
 void SAL_CALL DocumentMetadataAccess::storeMetadataToStorage(

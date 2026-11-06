@@ -561,7 +561,7 @@ sal_Bool GetDocFontList_Impl( const FontList** ppFontList, SvxFontNameBox_Impl* 
 			(SvxFontListItem*)pDocSh->GetItem( SID_ATTR_CHAR_FONTLIST );
     else
     {
-        ::std::unique_ptr<FontList> aFontList(new FontList( pBox ));
+        ::std::unique_ptr<FontList> aFontList = std::make_unique<FontList>( pBox );
         *ppFontList = aFontList.get();
         pBox->SetOwnFontList(std::move(aFontList));
         bChanged = sal_True;

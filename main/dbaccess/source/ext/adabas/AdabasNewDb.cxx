@@ -551,8 +551,8 @@ IMPL_LINK( OAdabasNewDbDlg, ImplOKHdl, OKButton*, /*EMPTYARG*/ )
 
 	Disable();
 
-	m_aCreatorWait = ::std::unique_ptr<WaitObject>(new WaitObject(this));
-	m_aCreatorThread = ::std::unique_ptr<ODatabaseCreator>(new ODatabaseCreator(m_xCreateCatalog,this,m_xORB,aCreateArgs));
+	m_aCreatorWait = ::std::make_unique<WaitObject>(this);
+	m_aCreatorThread = ::std::make_unique<ODatabaseCreator>(m_xCreateCatalog,this,m_xORB,aCreateArgs);
 	m_aCreatorThread->setTerminateHandler(LINK(this,OAdabasNewDbDlg,TerminateHdl));
 	m_aCreatorThread->create();
 
