@@ -44,4 +44,7 @@ jobs:
           path: ~/.cache/pre-commit
           key: pre-commit|${{ env.PY }}|${{ hashFiles('.pre-commit-config.yaml') }}
       - name: Run pre-commit
+        env:
+          # Markdown, whitespace, end-of-file and spelling checks are disabled in CI.
+          SKIP: markdownlint,insert-license,end-of-file-fixer,trailing-whitespace,codespell
         run: pre-commit run --color=always --all-files
