@@ -214,7 +214,7 @@ newHandler (Display *display, XErrorEvent *xerror)
  *
  * RegisterFwsWindow() -
  *
- * Send a client message to the FWS_COMM_WINDOW indicating the existance
+ * Send a client message to the FWS_COMM_WINDOW indicating the existence
  * of a new FWS client window.  Be careful to avoid BadWindow errors on
  * the XSendEvent in case the FWS_COMM_WINDOW root window property had
  * old/obsolete junk in it.
