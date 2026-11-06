@@ -42,7 +42,7 @@
 #include "app.hrc"
 #include "sdtreelb.hxx"
 #include <sfx2/bindings.hxx>
-#include <boost/bind.hpp>
+#include <memory>
 
 namespace sd { namespace slidesorter { namespace controller {
 
@@ -157,14 +157,13 @@ void DragAndDropContext::UpdatePosition (
     // constant while scrolling.)
     SharedSdWindow pWindow (mpTargetSlideSorter->GetContentWindow());
     const Point aMouseModelPosition (pWindow->PixelToLogic(rMousePosition));
-    ::boost::shared_ptr<InsertionIndicatorHandler> pInsertionIndicatorHandler (
+    ::std::shared_ptr<InsertionIndicatorHandler> pInsertionIndicatorHandler (
         mpTargetSlideSorter->GetController().GetInsertionIndicatorHandler());
 
     if ( ! (bAllowAutoScroll
             && mpTargetSlideSorter->GetController().GetScrollBarManager().AutoScroll(
                 rMousePosition,
-                ::boost::bind(
-                    &DragAndDropContext::UpdatePosition, this, rMousePosition, eMode, false))))
+                [this, rMousePosition, eMode]() { this->UpdatePosition( rMousePosition, eMode, false ); })))
     {
         pInsertionIndicatorHandler->UpdatePosition(aMouseModelPosition, eMode);
 
