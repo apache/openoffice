@@ -35,7 +35,7 @@
 #include <com/sun/star/drawing/XPresenterHelper.hpp>
 #include <com/sun/star/rendering/CompositeOperation.hpp>
 #include <com/sun/star/rendering/TextDirection.hpp>
-#include <boost/bind.hpp>
+#include <memory>
 
 using namespace ::com::sun::star;
 using namespace ::com::sun::star::uno;
@@ -53,7 +53,7 @@ const static double gnVerticalBorder (5);
 ::rtl::Reference<PresenterButton> PresenterButton::Create (
     const css::uno::Reference<css::uno::XComponentContext>& rxComponentContext,
     const ::rtl::Reference<PresenterController>& rpPresenterController,
-    const ::boost::shared_ptr<PresenterTheme>& rpTheme,
+    const ::std::shared_ptr<PresenterTheme>& rpTheme,
     const css::uno::Reference<css::awt::XWindow>& rxParentWindow,
     const css::uno::Reference<css::rendering::XCanvas>& rxParentCanvas,
     const OUString& rsConfigurationName)
@@ -99,7 +99,7 @@ const static double gnVerticalBorder (5);
 PresenterButton::PresenterButton (
     const css::uno::Reference<css::uno::XComponentContext>& rxComponentContext,
     const ::rtl::Reference<PresenterController>& rpPresenterController,
-    const ::boost::shared_ptr<PresenterTheme>& rpTheme,
+    const ::std::shared_ptr<PresenterTheme>& rpTheme,
     const css::uno::Reference<css::awt::XWindow>& rxParentWindow,
     const PresenterTheme::SharedFontDescriptor& rpFont,
     const PresenterTheme::SharedFontDescriptor& rpMouseOverFont,
@@ -570,10 +570,7 @@ Reference<beans::XPropertySet> PresenterButton::GetConfigurationProperties (
             Reference<container::XNameAccess>(
                 aConfiguration.GetConfigurationNode(A2S("PresenterScreenSettings/Buttons")),
                 UNO_QUERY),
-            ::boost::bind(&PresenterConfigurationAccess::IsStringPropertyEqual,
-                rsConfgurationName,
-                A2S("Name"),
-                _2)),
+            [&rsConfgurationName](const auto& key, const auto& value) { return PresenterConfigurationAccess::IsStringPropertyEqual( rsConfgurationName, A2S("Name"), value ); }),
         UNO_QUERY);
 }
 
