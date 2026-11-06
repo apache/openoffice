@@ -86,7 +86,7 @@ namespace framework
     virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source );
 
     private:
-        class FactoryManagerMap : public std::hash_map< rtl::OUString,
+        class FactoryManagerMap : public std::unordered_map< rtl::OUString,
                                                      rtl::OUString,
                                                      rtl::OUStringHash,
                                                      ::std::equal_to< ::rtl::OUString > >

@@ -80,7 +80,7 @@ class BackendImpl : public ::dp_registry::backend::PackageRegistryBackend
     };
     friend class ExecutablePackageImpl;
 
-    typedef ::std::hash_map< OUString, Reference<XInterface>,
+    typedef ::std::unordered_map< OUString, Reference<XInterface>,
                              ::rtl::OUStringHash > t_string2object;
 
     // PackageRegistryBackend

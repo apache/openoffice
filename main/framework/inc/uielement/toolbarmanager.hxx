@@ -204,11 +204,11 @@ class ToolBarManager : public ::com::sun::star::frame::XFrameActionListener     
 		bool RetrieveShortcut( const rtl::OUString& rCommandURL, rtl::OUString& rShortCut );
 
     protected:
-        typedef ::std::hash_map< sal_uInt16, ::com::sun::star::uno::Reference< com::sun::star::frame::XStatusListener > > ToolBarControllerMap;
+        typedef ::std::unordered_map< sal_uInt16, ::com::sun::star::uno::Reference< com::sun::star::frame::XStatusListener > > ToolBarControllerMap;
         typedef ::std::vector< ::com::sun::star::uno::Reference< ::com::sun::star::frame::XSubToolbarController > > SubToolBarControllerVector;
         typedef BaseHash< SubToolBarControllerVector >                                                              SubToolBarToSubToolBarControllerMap;
 
-        typedef ::std::hash_map< sal_uInt16, ::com::sun::star::uno::Reference< com::sun::star::container::XIndexAccess > > MenuDescriptionMap;
+        typedef ::std::unordered_map< sal_uInt16, ::com::sun::star::uno::Reference< com::sun::star::container::XIndexAccess > > MenuDescriptionMap;
         sal_Bool                                                                               m_bDisposed : 1,
                                                                                                m_bIsHiContrast : 1,
                                                                                                m_bSmallSymbols : 1,

@@ -109,7 +109,7 @@ class FWE_DLLPUBLIC OReadToolBoxDocumentHandler : private ThreadHelpBase,   // S
     private:
         ::rtl::OUString getErrorLineString();
 
-        class ToolBoxHashMap : public ::std::hash_map<  ::rtl::OUString                 ,
+        class ToolBoxHashMap : public ::std::unordered_map<  ::rtl::OUString                 ,
                                                         ToolBox_XML_Entry               ,
                                                         rtl::OUStringHash,
                                                         ::std::equal_to< ::rtl::OUString >  >
