@@ -33,7 +33,7 @@
 #include <comphelper/scopeguard.hxx>
 #include <tools/diagnose_ex.h>
 
-#include <boost/bind.hpp>
+#include <memory>
 
 using namespace ::com::sun::star;
 using namespace ::com::sun::star::uno;
@@ -74,8 +74,8 @@ private:
 //===== ConfigurationUpdater ==================================================
 
 ConfigurationUpdater::ConfigurationUpdater (
-    const ::boost::shared_ptr<ConfigurationControllerBroadcaster>& rpBroadcaster,
-    const ::boost::shared_ptr<ConfigurationControllerResourceManager>& rpResourceManager,
+    const ::std::shared_ptr<ConfigurationControllerBroadcaster>& rpBroadcaster,
+    const ::std::shared_ptr<ConfigurationControllerResourceManager>& rpResourceManager,
     const Reference<XControllerManager>& rxControllerManager)
     : mxControllerManager(),
       mpBroadcaster(rpBroadcaster),
@@ -178,7 +178,7 @@ void ConfigurationUpdater::UpdateConfiguration (void)
 #endif
     SetUpdateBeingProcessed(true);
     comphelper::ScopeGuard aScopeGuard (
-        ::boost::bind(&ConfigurationUpdater::SetUpdateBeingProcessed, this, false));
+        [this]() { this->SetUpdateBeingProcessed( false ); });
 
     try
     {
@@ -428,9 +428,9 @@ void ConfigurationUpdater::UnlockUpdates (void)
 
 
 
-::boost::shared_ptr<ConfigurationUpdaterLock> ConfigurationUpdater::GetLock (void)
+::std::shared_ptr<ConfigurationUpdaterLock> ConfigurationUpdater::GetLock (void)
 {
-    return ::boost::shared_ptr<ConfigurationUpdaterLock>(new ConfigurationUpdaterLock(*this));
+    return ::std::shared_ptr<ConfigurationUpdaterLock>(new ConfigurationUpdaterLock(*this));
 }
 
 
