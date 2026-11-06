@@ -36,7 +36,6 @@
 #include <algorithm>
 #include <functional>
 #include <iterator>
-#include <boost/bind.hpp>
 
 
 namespace canvas
@@ -420,19 +419,13 @@ namespace canvas
         ::basegfx::B2DRange aTrueArea( aBegin->second.getUpdateArea() );
         ::std::for_each( aBegin,
                          aEnd,
-                         ::boost::bind( ::basegfx::B2DRangeExpander(aTrueArea),
-                                        ::boost::bind( &SpriteInfo::getUpdateArea,
-                                                       ::boost::bind( ::std::select2nd<AreaComponent>(),
-                                                                      _1 ) ) ) );
+                         [&](const auto& component) { B2DRangeExpander(aTrueArea)( component.second->getUpdateArea() ); } );
 
         // and check whether _any_ of the sprites tells that its area
         // update will not be opaque.
         return (::std::find_if( aBegin,
                                 aEnd,
-                                ::boost::bind( &SpriteRedrawManager::isAreaUpdateNotOpaque,
-                                               this,
-                                               ::boost::cref(aTrueArea),
-                                               _1 ) ) == aEnd );
+                                [&](const auto& component) { return this->isAreaUpdateNotOpaque( aTrueArea, component ); } ) == aEnd );
     }
 
     bool SpriteRedrawManager::areSpritesChanged( const UpdateArea& rUpdateArea ) const
@@ -446,10 +439,7 @@ namespace canvas
             rUpdateArea.maComponentList.end() );
         return (::std::find_if( rUpdateArea.maComponentList.begin(),
                                 aEnd,
-                                ::boost::bind( &SpriteInfo::needsUpdate,
-                                               ::boost::bind(
-                                                   ::std::select2nd<SpriteConnectedRanges::ComponentType>(),
-                                                   _1 ) ) ) != aEnd );
+                                [](const auto& component) { return component.second->needsUpdate(); } ) != aEnd );
     }
 
     SpriteRedrawManager::SpriteRedrawManager() :
