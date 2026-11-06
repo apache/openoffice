@@ -29,7 +29,7 @@
 #include <sfx2/viewfrm.hxx>
 #include <svx/svxids.hrc>
 #include <vcl/svapp.hxx>
-#include <boost/bind.hpp>
+#include <memory>
 
 using namespace ::com::sun::star::uno;
 using namespace ::com::sun::star::lang;
@@ -117,7 +117,7 @@ IMPL_LINK(SlideShowRestarter, EndPresentation, void*, EMPTYARG)
 			// restart of the slide show.
 			if (mpViewShellBase != NULL)
 			{
-				::boost::shared_ptr<FrameworkHelper> pHelper(
+				::std::shared_ptr<FrameworkHelper> pHelper(
 					FrameworkHelper::Instance(*mpViewShellBase));
 				if (pHelper->GetConfigurationController()->getResource(
 					pHelper->CreateResourceId(FrameworkHelper::msFullScreenPaneURL)).is())
@@ -127,7 +127,7 @@ IMPL_LINK(SlideShowRestarter, EndPresentation, void*, EMPTYARG)
 
 					pHelper->RunOnConfigurationEvent(
 						FrameworkHelper::msConfigurationUpdateEndEvent,
-						::boost::bind(&SlideShowRestarter::StartPresentation, shared_from_this()));
+						[self = shared_from_this()]() { self->StartPresentation(); });
 					pHelper->UpdateConfiguration();
 				}
 				else

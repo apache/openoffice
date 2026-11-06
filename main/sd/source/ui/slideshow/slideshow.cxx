@@ -54,7 +54,7 @@
 #include "ViewShell.hxx"
 #include "SlideShowRestarter.hxx"
 #include "DrawController.hxx"
-#include <boost/bind.hpp>
+#include <memory>
 
 using ::com::sun::star::presentation::XSlideShowController;
 using ::com::sun::star::container::XIndexAccess;
@@ -100,7 +100,7 @@ namespace {
 		}
 
 	private:
-		::boost::shared_ptr<SlideShowRestarter> mpRestarter;
+		::std::shared_ptr<SlideShowRestarter> mpRestarter;
 	};
 
 	/** Return the default display id (or -1 when that can not be
@@ -754,7 +754,7 @@ void SAL_CALL SlideShow::end()
 				// Get the shell pointer in its own scope to be sure that
 				// the shared_ptr to the shell is released before DoClose()
 				// is called.
-				::boost::shared_ptr<ViewShell> pSharedView (pFullScreenViewShellBase->GetMainViewShell());
+				::std::shared_ptr<ViewShell> pSharedView (pFullScreenViewShellBase->GetMainViewShell());
 				pShell = dynamic_cast<PresentationViewShell*>(pSharedView.get());
 			}
 			if( pShell && pShell->GetViewFrame() )
@@ -1032,7 +1032,7 @@ void SlideShow::activate( ViewShellBase& rBase )
 {
 	if( (mpFullScreenViewShellBase == &rBase) && !mxController.is() )
 	{
-		::boost::shared_ptr<PresentationViewShell> pShell = ::boost::dynamic_pointer_cast<PresentationViewShell>(rBase.GetMainViewShell());
+		::std::shared_ptr<PresentationViewShell> pShell = ::boost::dynamic_pointer_cast<PresentationViewShell>(rBase.GetMainViewShell());
 		if(pShell.get() != NULL)
 		{
 			pShell->FinishInitialization( mpFullScreenFrameView );
@@ -1168,8 +1168,8 @@ void SlideShow::StartInPlacePresentation()
 
 		ViewShell::ShellType eShell = ViewShell::ST_NONE;
 
-		::boost::shared_ptr<FrameworkHelper> pHelper(FrameworkHelper::Instance(*mpCurrentViewShellBase));
-		::boost::shared_ptr<ViewShell> pMainViewShell(pHelper->GetViewShell(FrameworkHelper::msCenterPaneURL));
+		::std::shared_ptr<FrameworkHelper> pHelper(FrameworkHelper::Instance(*mpCurrentViewShellBase));
+		::std::shared_ptr<ViewShell> pMainViewShell(pHelper->GetViewShell(FrameworkHelper::msCenterPaneURL));
 
 		if( pMainViewShell.get() )
 			eShell = pMainViewShell->GetShellType();
@@ -1187,7 +1187,7 @@ void SlideShow::StartInPlacePresentation()
 			}
 
 			pHelper->RequestView( FrameworkHelper::msImpressViewURL, FrameworkHelper::msCenterPaneURL );
-			pHelper->RunOnConfigurationEvent( FrameworkHelper::msConfigurationUpdateEndEvent, ::boost::bind(&SlideShow::StartInPlacePresentationConfigurationCallback, this) );
+			pHelper->RunOnConfigurationEvent( FrameworkHelper::msConfigurationUpdateEndEvent, [this]() { this->StartInPlacePresentationConfigurationCallback(); } );
 			return;
 		}
 		else
