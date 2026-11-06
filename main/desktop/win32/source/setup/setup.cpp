@@ -67,10 +67,13 @@
 #define ERROR_OS_TO_OLD       -5
 #define ERROR_RUNTIME_FAILED  -6
 
-// Lowest Windows this office can run on.  Not an arbitrary policy: the VC v14
-// redistributable that supplies the runtime the binaries need installs only on
-// Windows 10/11 and Server 2016 and later, so the floor comes with the toolset.
-#define REQUIRED_WINDOWS_MAJOR  10
+// Lowest Windows this office can run on: Windows 7 SP1 (6.1 SP1), matching the
+// WINVER/_WIN32_WINNT 0x0601 the office is compiled for and the MSI launch
+// condition.  The bundled VC v14 redistributable must still install there --
+// current releases do not; see external/vcredist/README.
+#define REQUIRED_WINDOWS_MAJOR  6
+#define REQUIRED_WINDOWS_MINOR  1
+#define REQUIRED_WINDOWS_SP     1
 
 #define PARAM_SETUP_USED    TEXT( " SETUP_USED=1 " )
 #define PARAM_PACKAGE       TEXT( "/I " )
@@ -1861,9 +1864,9 @@ boolean SetupApp::IsPatchInstalled( TCHAR* pBaseDir, TCHAR* pFileName )
 // as an MSI LaunchCondition, and lives here instead.
 //
 // RtlGetVersion is not subject to that shim.
-static bool GetRealWindowsVersion( DWORD *pMajor, DWORD *pBuild )
+static bool GetRealWindowsVersion( OSVERSIONINFOEXW *pInfo )
 {
-    typedef LONG ( WINAPI *pfnRtlGetVersion_t )( OSVERSIONINFOW * );
+    typedef LONG ( WINAPI *pfnRtlGetVersion_t )( OSVERSIONINFOEXW * );
 
     HMODULE hNtdll = ::GetModuleHandle( TEXT( "ntdll.dll" ) );
     if ( hNtdll == NULL )
@@ -1874,25 +1877,18 @@ static bool GetRealWindowsVersion( DWORD *pMajor, DWORD *pBuild )
     if ( pRtlGetVersion == NULL )
         return false;
 
-    OSVERSIONINFOW aInfo;
-    ZeroMemory( &aInfo, sizeof( aInfo ) );
-    aInfo.dwOSVersionInfoSize = sizeof( aInfo );
+    ZeroMemory( pInfo, sizeof( *pInfo ) );
+    pInfo->dwOSVersionInfoSize = sizeof( *pInfo );
 
-    if ( pRtlGetVersion( &aInfo ) != 0 )
-        return false;
-
-    *pMajor = aInfo.dwMajorVersion;
-    *pBuild = aInfo.dwBuildNumber;
-    return true;
+    return pRtlGetVersion( pInfo ) == 0;
 }
 
 //--------------------------------------------------------------------------
 boolean SetupApp::CheckOSVersion()
 {
-    DWORD nMajor = 0;
-    DWORD nBuild = 0;
+    OSVERSIONINFOEXW aInfo;
 
-    if ( !GetRealWindowsVersion( &nMajor, &nBuild ) )
+    if ( !GetRealWindowsVersion( &aInfo ) )
     {
         // Could not determine the version.  Let the install proceed rather than
         // refuse on a machine we simply failed to identify -- if the OS really is too
@@ -1903,15 +1899,24 @@ boolean SetupApp::CheckOSVersion()
 
     TCHAR sBuf[ 128 ];
 
-    StringCchPrintf( sBuf, 128, TEXT( " Windows major version %u, build %u\r\n" ),
-                     nMajor, nBuild );
+    StringCchPrintf( sBuf, 128, TEXT( " Windows version %u.%u build %u, service pack %u\r\n" ),
+                     aInfo.dwMajorVersion, aInfo.dwMinorVersion, aInfo.dwBuildNumber,
+                     (DWORD)aInfo.wServicePackMajor );
     Log( sBuf );
 
-    if ( nMajor < REQUIRED_WINDOWS_MAJOR )
+    const DWORD nHave = ( aInfo.dwMajorVersion << 16 ) | ( aInfo.dwMinorVersion << 8 )
+                        | aInfo.wServicePackMajor;
+    const DWORD nNeed = ( REQUIRED_WINDOWS_MAJOR << 16 ) | ( REQUIRED_WINDOWS_MINOR << 8 )
+                        | REQUIRED_WINDOWS_SP;
+
+    if ( nHave < nNeed )
     {
         StringCchPrintf( sBuf, 128,
-                         TEXT( "ERROR: Windows %u is older than the required Windows %u.\r\n" ),
-                         nMajor, (DWORD)REQUIRED_WINDOWS_MAJOR );
+                         TEXT( "ERROR: Windows %u.%u SP%u is older than the required Windows %u.%u SP%u.\r\n" ),
+                         aInfo.dwMajorVersion, aInfo.dwMinorVersion,
+                         (DWORD)aInfo.wServicePackMajor,
+                         (DWORD)REQUIRED_WINDOWS_MAJOR, (DWORD)REQUIRED_WINDOWS_MINOR,
+                         (DWORD)REQUIRED_WINDOWS_SP );
         Log( sBuf );
         SetError( ERROR_OS_TO_OLD );
         return false;
