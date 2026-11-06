@@ -25,7 +25,6 @@
 
 #include <unotools/viewoptions.hxx>
 
-#include <boost/bind.hpp>
 
 
 namespace svx { namespace sidebar {
@@ -38,7 +37,7 @@ LineWidthPopup::LineWidthPopup (
         rControlCreator,
         ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Width")))
 {
-    SetPopupModeEndHandler(::boost::bind(&LineWidthPopup::PopupModeEndCallback, this));
+    SetPopupModeEndHandler( [this]() { this->PopupModeEndCallback(); } );
 }
 
 

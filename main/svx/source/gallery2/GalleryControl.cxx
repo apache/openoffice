@@ -32,7 +32,6 @@
 #include <vcl/svapp.hxx>
 #include <sfx2/sidebar/Theme.hxx>
 
-#include <boost/bind.hpp>
 
 namespace svx { namespace sidebar {
 
@@ -47,13 +46,13 @@ GalleryControl::GalleryControl (
       mpSplitter(new GallerySplitter(
               this,
               GAL_RESID(GALLERY_SPLITTER),
-              ::boost::bind(&GalleryControl::InitSettings, this))),
+              [this]() { this->InitSettings(); }))),
       mpBrowser1(new GalleryBrowser1(
               this,
               GAL_RESID(GALLERY_BROWSER1),
               mpGallery,
-              ::boost::bind(&GalleryControl::KeyInput,this,_1,_2),
-              ::boost::bind(&GalleryControl::ThemeSelectionHasChanged, this))),
+              [this](auto& a1, auto& a2) { this->KeyInput( a1, a2 ); },
+              [this]() { this->ThemeSelectionHasChanged(); }))),
       mpBrowser2(new GalleryBrowser2(this, GAL_RESID(GALLERY_BROWSER2), mpGallery)),
       maLastSize(GetOutputSizePixel()),
       mbIsInitialResize(true)

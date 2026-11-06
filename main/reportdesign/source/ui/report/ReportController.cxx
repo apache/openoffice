@@ -153,7 +153,6 @@
 #include "ReportControllerObserver.hxx"
 
 #include <boost/mem_fn.hpp>
-#include <boost/bind.hpp>
 #include <boost/utility.hpp>
 #include <memory>
 
@@ -2599,7 +2598,7 @@ void OReportController::Notify(SfxBroadcaster & /* _rBc */, SfxHint const & _rHi
         }
         lang::EventObject aEvent(*this);
         m_aSelectionListeners.forEach<view::XSelectionChangeListener>(
-			::boost::bind(&view::XSelectionChangeListener::selectionChanged,_1,boost::cref(aEvent)));
+			[this](const auto& listener) { listener->selectionChanged( aEvent ); }));
 
 	}
 }

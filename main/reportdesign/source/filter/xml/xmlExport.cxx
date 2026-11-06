@@ -62,7 +62,6 @@
 #include <vcl/svapp.hxx>
 #include <vos/mutex.hxx>
 
-#include <boost/bind.hpp>
 
 //--------------------------------------------------------------------------
 namespace rptxml
@@ -1247,7 +1246,7 @@ void ORptExport::exportAutoStyle(XPropertySet* _xProp,const Reference<XFormatted
         uno::Any aEmpty;
         aEmpty <<= aValue;
         ::std::for_each(aProps.begin(),aProps.end(),
-            ::boost::bind(&beans::XPropertySet::setPropertyValue,xBorderProp,_1,aEmpty));
+            [&](const auto& prop) { xBorderProp->setPropertyValue( prop, aEmpty ); }));
 
         ::std::vector< XMLPropertyState > aBorderStates(m_xCellStylesExportPropertySetMapper->Filter(xBorderProp));
         ::std::copy(aBorderStates.begin(),aBorderStates.end(),::std::back_inserter(aPropertyStates));
