@@ -212,7 +212,7 @@ static void initAppMenu()
 SalMenu* AquaSalInstance::CreateMenu( sal_Bool bMenuBar, Menu* pVCLMenu )
 {
     if( ! isNSAppThread() )
-        return callOnMainThread< SalMenu* >( boost::bind( &AquaSalInstance::CreateMenu, this, bMenuBar, pVCLMenu ) );
+        return callOnMainThread< SalMenu* >( [this]&{ return this->CreateMenu( bMenuBar, pVCLMenu ); } );
 
     initAppMenu();
 
@@ -224,7 +224,7 @@ SalMenu* AquaSalInstance::CreateMenu( sal_Bool bMenuBar, Menu* pVCLMenu )
 
 void AquaSalInstance::DestroyMenu( SalMenu* pSalMenu )
 {
-    if( forwardToMainThread( boost::bind( &AquaSalInstance::DestroyMenu, this, pSalMenu ) ) )
+    if( forwardToMainThread( [this]&{ this->DestroyMenu( pSalMenu ); } ) )
         return;
     delete pSalMenu;
 }
@@ -232,7 +232,7 @@ void AquaSalInstance::DestroyMenu( SalMenu* pSalMenu )
 SalMenuItem* AquaSalInstance::CreateMenuItem( const SalItemParams* pItemData )
 {
     if( ! isNSAppThread() )
-        return callOnMainThread< SalMenuItem* >( boost::bind( &AquaSalInstance::CreateMenuItem, this, pItemData ) );
+        return callOnMainThread< SalMenuItem* >( [this]&{ return this->CreateMenuItem( pItemData ); } );
 
     if( !pItemData )
         return NULL;
@@ -244,7 +244,7 @@ SalMenuItem* AquaSalInstance::CreateMenuItem( const SalItemParams* pItemData )
 
 void AquaSalInstance::DestroyMenuItem( SalMenuItem* pSalMenuItem )
 {
-    if( forwardToMainThread( boost::bind( &AquaSalInstance::DestroyMenuItem, this, pSalMenuItem ) ) )
+    if( forwardToMainThread( [this]&{ this->DestroyMenuItem( pSalMenuItem ); } ) )
         return;
     delete pSalMenuItem;
 }
@@ -355,7 +355,7 @@ bool AquaSalMenu::ShowNativePopupMenu(FloatingWindow * pWin, const Rectangle& rR
 {
     AquaSalInstance* pInst = GetSalData()->mpFirstInstance;
     if( ! pInst->isNSAppThread() )
-        return pInst->callOnMainThread< bool >( boost::bind( &AquaSalMenu::ShowNativePopupMenu, this, pWin, boost::cref( rRect ), nFlags ) );
+        return pInst->callOnMainThread< bool >( [this]&{ return this->ShowNativePopupMenu( pWin, rRect, nFlags ); } );
 
     // do not use native popup menu when AQUA_NATIVE_MENUS is set to sal_False
     if( ! VisibleMenuBar() ) {
@@ -439,7 +439,7 @@ void AquaSalMenu::unsetMainMenu()
 
 void AquaSalMenu::setMainMenu()
 {
-    if( GetSalData()->mpFirstInstance->forwardToMainThread( boost::bind( &AquaSalMenu::setMainMenu, this ) ) )
+    if( GetSalData()->mpFirstInstance->forwardToMainThread( [this]&{ this->setMainMenu(); } ) )
         return;
 
     DBG_ASSERT( mbMenuBar, "setMainMenu on non menubar" );
@@ -484,7 +484,7 @@ void AquaSalMenu::setDefaultMenu()
 
 void AquaSalMenu::enableMainMenu( bool bEnable )
 {
-    if( GetSalData()->mpFirstInstance->forwardToMainThread( boost::bind( &AquaSalMenu::enableMainMenu, bEnable ) ) )
+    if( GetSalData()->mpFirstInstance->forwardToMainThread( [this]&{ this->enableMainMenu( bEnable ); } ) )
         return;
 
     NSMenu* pMainMenu = [NSApp mainMenu];
@@ -502,7 +502,7 @@ void AquaSalMenu::enableMainMenu( bool bEnable )
 
 void AquaSalMenu::addFallbackMenuItem( NSMenuItem* pNewItem )
 {
-    if( GetSalData()->mpFirstInstance->forwardToMainThread( boost::bind( &AquaSalMenu::addFallbackMenuItem, pNewItem ) ) )
+    if( GetSalData()->mpFirstInstance->forwardToMainThread( [this]&{ this->addFallbackMenuItem( pNewItem ); } ) )
         return;
 
     initAppMenu();
@@ -527,7 +527,7 @@ void AquaSalMenu::addFallbackMenuItem( NSMenuItem* pNewItem )
 
 void AquaSalMenu::removeFallbackMenuItem( NSMenuItem* pOldItem )
 {
-    if( GetSalData()->mpFirstInstance->forwardToMainThread( boost::bind( &AquaSalMenu::removeFallbackMenuItem, pOldItem ) ) )
+    if( GetSalData()->mpFirstInstance->forwardToMainThread( [this]&{ this->removeFallbackMenuItem( pOldItem ); } ) )
         return;
 
     std::vector< NSMenuItem* >& rFallbackMenu( GetSalData()->maFallbackMenu );
@@ -573,7 +573,7 @@ void AquaSalMenu::SetFrame( const SalFrame *pFrame )
 
 void AquaSalMenu::InsertItem( SalMenuItem* pSalMenuItem, unsigned nPos )
 {
-    if( GetSalData()->mpFirstInstance->forwardToMainThread( boost::bind( &AquaSalMenu::InsertItem, this, pSalMenuItem, nPos ) ) )
+    if( GetSalData()->mpFirstInstance->forwardToMainThread( [this]&{ this->InsertItem( pSalMenuItem, nPos ); } ) )
         return;
 
     AquaSalMenuItem *pAquaSalMenuItem = static_cast<AquaSalMenuItem*>(pSalMenuItem);
@@ -602,7 +602,7 @@ void AquaSalMenu::InsertItem( SalMenuItem* pSalMenuItem, unsigned nPos )
 
 void AquaSalMenu::RemoveItem( unsigned nPos )
 {
-    if( GetSalData()->mpFirstInstance->forwardToMainThread( boost::bind( &AquaSalMenu::RemoveItem, this, nPos ) ) )
+    if( GetSalData()->mpFirstInstance->forwardToMainThread( [this]&{ this->RemoveItem( nPos ); } ) )
         return;
 
     AquaSalMenuItem* pRemoveItem = NULL;
@@ -630,7 +630,7 @@ void AquaSalMenu::RemoveItem( unsigned nPos )
 
 void AquaSalMenu::SetSubMenu( SalMenuItem* pSalMenuItem, SalMenu* pSubMenu, unsigned nPos )
 {
-    if( GetSalData()->mpFirstInstance->forwardToMainThread( boost::bind( &AquaSalMenu::SetSubMenu, this, pSalMenuItem, pSubMenu, nPos ) ) )
+    if( GetSalData()->mpFirstInstance->forwardToMainThread( [this]&{ this->SetSubMenu( pSalMenuItem, pSubMenu, nPos ); } ) )
         return;
 
     AquaSalMenuItem *pAquaSalMenuItem = static_cast<AquaSalMenuItem*>(pSalMenuItem);
@@ -673,7 +673,7 @@ void AquaSalMenu::SetSubMenu( SalMenuItem* pSalMenuItem, SalMenu* pSubMenu, unsi
 
 void AquaSalMenu::CheckItem( unsigned nPos, sal_Bool bCheck )
 {
-    if( GetSalData()->mpFirstInstance->forwardToMainThread( boost::bind( &AquaSalMenu::CheckItem, this, nPos, bCheck ) ) )
+    if( GetSalData()->mpFirstInstance->forwardToMainThread( [this]&{ this->CheckItem( nPos, bCheck ); } ) )
         return;
 
     if( nPos < maItems.size() )
@@ -685,7 +685,7 @@ void AquaSalMenu::CheckItem( unsigned nPos, sal_Bool bCheck )
 
 void AquaSalMenu::EnableItem( unsigned nPos, sal_Bool bEnable )
 {
-    if( GetSalData()->mpFirstInstance->forwardToMainThread( boost::bind( &AquaSalMenu::EnableItem, this, nPos, bEnable ) ) )
+    if( GetSalData()->mpFirstInstance->forwardToMainThread( [this]&{ this->EnableItem( nPos, bEnable ); } ) )
         return;
 
     if( nPos < maItems.size() )
@@ -697,7 +697,7 @@ void AquaSalMenu::EnableItem( unsigned nPos, sal_Bool bEnable )
 
 void AquaSalMenu::SetItemImage( unsigned nPos, SalMenuItem* pSMI, const Image& rImage )
 {
-    if( GetSalData()->mpFirstInstance->forwardToMainThread( boost::bind( &AquaSalMenu::SetItemImage, this, nPos, pSMI, boost::cref( rImage ) ) ) )
+    if( GetSalData()->mpFirstInstance->forwardToMainThread( [this]&{ this->SetItemImage( nPos, pSMI, rImage ); } ) )
         return;
 
     AquaSalMenuItem* pSalMenuItem = static_cast<AquaSalMenuItem*>( pSMI );
@@ -713,7 +713,7 @@ void AquaSalMenu::SetItemImage( unsigned nPos, SalMenuItem* pSMI, const Image& r
 
 void AquaSalMenu::SetItemText( unsigned i_nPos, SalMenuItem* i_pSalMenuItem, const XubString& i_rText )
 {
-    if( GetSalData()->mpFirstInstance->forwardToMainThread( boost::bind( &AquaSalMenu::SetItemText, this, i_nPos, i_pSalMenuItem, boost::cref( i_rText ) ) ) )
+    if( GetSalData()->mpFirstInstance->forwardToMainThread( [this]&{ this->SetItemText( i_nPos, i_pSalMenuItem, i_rText ); } ) )
         return;
 
     if (!i_pSalMenuItem)
@@ -753,7 +753,7 @@ void AquaSalMenu::SetItemText( unsigned i_nPos, SalMenuItem* i_pSalMenuItem, con
 
 void AquaSalMenu::SetAccelerator( unsigned nPos, SalMenuItem* pSalMenuItem, const KeyCode& rKeyCode, const XubString& rKeyName )
 {
-    if( GetSalData()->mpFirstInstance->forwardToMainThread( boost::bind( &AquaSalMenu::SetAccelerator, this, nPos, pSalMenuItem, boost::cref( rKeyCode ), boost::cref( rKeyName ) ) ) )
+    if( GetSalData()->mpFirstInstance->forwardToMainThread( [this]&{ this->SetAccelerator( nPos, pSalMenuItem, rKeyCode, rKeyName ); } ) )
         return;
 
     sal_uInt16 nModifier;
@@ -881,7 +881,7 @@ bool AquaSalMenu::AddMenuBarButton( const SalMenuButtonItem& i_rNewItem )
 {
     AquaSalInstance* pInst = GetSalData()->mpFirstInstance;
     if( ! pInst->isNSAppThread() )
-        return pInst->callOnMainThread< bool >( boost::bind( &AquaSalMenu::AddMenuBarButton, this, boost::cref( i_rNewItem ) ) );
+        return pInst->callOnMainThread< bool >( [this]&{ return this->AddMenuBarButton( i_rNewItem ); } );
 
     if( ! mbMenuBar || ! VisibleMenuBar() )
         return false;
@@ -913,7 +913,7 @@ bool AquaSalMenu::AddMenuBarButton( const SalMenuButtonItem& i_rNewItem )
 
 void AquaSalMenu::RemoveMenuBarButton( sal_uInt16 i_nId )
 {
-    if( GetSalData()->mpFirstInstance->forwardToMainThread( boost::bind( &AquaSalMenu::RemoveMenuBarButton, this, i_nId ) ) )
+    if( GetSalData()->mpFirstInstance->forwardToMainThread( [this]&{ this->RemoveMenuBarButton( i_nId ); } ) )
         return;
 
     MenuBarButtonEntry* pEntry = findButtonItem( i_nId );
@@ -932,7 +932,7 @@ Rectangle AquaSalMenu::GetMenuBarButtonRectPixel( sal_uInt16 i_nItemId, SalFrame
 {
     AquaSalInstance* pInst = GetSalData()->mpFirstInstance;
     if( ! pInst->isNSAppThread() )
-        return pInst->callOnMainThread< Rectangle >( boost::bind( &AquaSalMenu::GetMenuBarButtonRectPixel, this, i_nItemId, i_pReferenceFrame ) );
+        return pInst->callOnMainThread< Rectangle >( [this]&{ return this->GetMenuBarButtonRectPixel( i_nItemId, i_pReferenceFrame ); } );
 
     if( GetSalData()->mnSystemVersion < OSX_VER_LEOPARD )
         return Rectangle( Point( -1, -1 ), Size( 1, 1 ) );

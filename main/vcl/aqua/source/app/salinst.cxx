@@ -1009,7 +1009,7 @@ void AquaSalInstance::Yield( bool bWait, bool bHandleAllCurrentEvents )
 bool AquaSalInstance::AnyInput( sal_uInt16 nType )
 {
     if( ! isNSAppThread() )
-        return callOnMainThread< bool >( boost::bind( &AquaSalInstance::AnyInput, this, nType ) );
+        return callOnMainThread< bool >( [this, nType]() { return this->AnyInput( nType ); } );
 
     if( nType & INPUT_APPEVENT )
     {
@@ -1074,7 +1074,7 @@ SalFrame* AquaSalInstance::CreateFrame( SalFrame* pParent, sal_uLong nSalFrameSt
 
 void AquaSalInstance::DestroyFrame( SalFrame* pFrame )
 {
-    if( forwardToMainThread( boost::bind( &AquaSalInstance::DestroyFrame, this, pFrame ) ) )
+    if( forwardToMainThread( [this, pFrame]() { this->DestroyFrame( pFrame ); } ) )
         return;
 	delete pFrame;
 }

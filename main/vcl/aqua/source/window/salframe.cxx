@@ -301,7 +301,7 @@ sal_Bool AquaSalFrame::PostEvent( void *pData )
 // -----------------------------------------------------------------------
 void AquaSalFrame::SetTitle(const XubString& rTitle)
 {
-    if( GetSalData()->mpFirstInstance->forwardToMainThread( boost::bind( &AquaSalFrame::SetTitle, this, boost::cref( rTitle ) ) ) )
+    if( GetSalData()->mpFirstInstance->forwardToMainThread( [this]&{ this->SetTitle( rTitle ); } ) )
         return;
 
     if ( !mpNSWindow )
@@ -348,7 +348,7 @@ void AquaSalFrame::SetIcon( sal_uInt16 )
 
 void AquaSalFrame::SetRepresentedURL( const rtl::OUString& i_rDocURL )
 {
-    if( GetSalData()->mpFirstInstance->forwardToMainThread( boost::bind( &AquaSalFrame::SetRepresentedURL, this, boost::cref( i_rDocURL ) ) ) )
+    if( GetSalData()->mpFirstInstance->forwardToMainThread( [this]&{ this->SetRepresentedURL( i_rDocURL ); } ) )
         return;
 
     // #i113170# may not be the main thread if called from UNO API
@@ -424,7 +424,7 @@ void AquaSalFrame::SendPaintEvent( const Rectangle* pRect )
 
 void AquaSalFrame::Show(sal_Bool bVisible, sal_Bool bNoActivate)
 {
-    if( GetSalData()->mpFirstInstance->forwardToMainThread( boost::bind( &AquaSalFrame::Show, this, bVisible, bNoActivate ) ) )
+    if( GetSalData()->mpFirstInstance->forwardToMainThread( [this]&{ this->Show( bVisible, bNoActivate ); } ) )
         return;
 
     if ( !mpNSWindow )
@@ -496,7 +496,7 @@ void AquaSalFrame::Enable( sal_Bool )
 
 void AquaSalFrame::SetMinClientSize( long nWidth, long nHeight )
 {
-    if( GetSalData()->mpFirstInstance->forwardToMainThread( boost::bind( &AquaSalFrame::SetMinClientSize, this, nWidth, nHeight ) ) )
+    if( GetSalData()->mpFirstInstance->forwardToMainThread( [this]&{ this->SetMinClientSize( nWidth, nHeight ); } ) )
         return;
 
     // #i113170# may not be the main thread if called from UNO API
@@ -524,7 +524,7 @@ void AquaSalFrame::SetMinClientSize( long nWidth, long nHeight )
 
 void AquaSalFrame::SetMaxClientSize( long nWidth, long nHeight )
 {
-    if( GetSalData()->mpFirstInstance->forwardToMainThread( boost::bind( &AquaSalFrame::SetMaxClientSize, this, nWidth, nHeight ) ) )
+    if( GetSalData()->mpFirstInstance->forwardToMainThread( [this]&{ this->SetMaxClientSize( nWidth, nHeight ); } ) )
         return;
 
     // #i113170# may not be the main thread if called from UNO API
@@ -556,7 +556,7 @@ void AquaSalFrame::SetMaxClientSize( long nWidth, long nHeight )
 
 void AquaSalFrame::SetClientSize( long nWidth, long nHeight )
 {
-    if( GetSalData()->mpFirstInstance->forwardToMainThread( boost::bind( &AquaSalFrame::SetClientSize, this, nWidth, nHeight ) ) )
+    if( GetSalData()->mpFirstInstance->forwardToMainThread( [this]&{ this->SetClientSize( nWidth, nHeight ); } ) )
         return;
 
     // #i113170# may not be the main thread if called from UNO API
@@ -594,7 +594,7 @@ void AquaSalFrame::GetClientSize( long& rWidth, long& rHeight )
 
 void AquaSalFrame::SetWindowState( const SalFrameState* pState )
 {
-    if( GetSalData()->mpFirstInstance->forwardToMainThread( boost::bind( &AquaSalFrame::SetWindowState, this, pState ) ) )
+    if( GetSalData()->mpFirstInstance->forwardToMainThread( [this]&{ this->SetWindowState( pState ); } ) )
         return;
 
     // #i113170# may not be the main thread if called from UNO API
@@ -675,7 +675,7 @@ sal_Bool AquaSalFrame::GetWindowState( SalFrameState* pState )
 {
     AquaSalInstance* pInst = GetSalData()->mpFirstInstance;
     if( ! pInst->isNSAppThread() )
-        return pInst->callOnMainThread< sal_Bool >( boost::bind( &AquaSalFrame::GetWindowState, this, pState ) );
+        return pInst->callOnMainThread< sal_Bool >( [this]&{ return this->GetWindowState( pState ); } );
 
     if ( !mpNSWindow )
         return FALSE;
@@ -717,7 +717,7 @@ sal_Bool AquaSalFrame::GetWindowState( SalFrameState* pState )
 
 void AquaSalFrame::SetScreenNumber(unsigned int nScreen)
 {
-    if( GetSalData()->mpFirstInstance->forwardToMainThread( boost::bind( &AquaSalFrame::SetScreenNumber, this, nScreen ) ) )
+    if( GetSalData()->mpFirstInstance->forwardToMainThread( [this]&{ this->SetScreenNumber( nScreen ); } ) )
         return;
 
     if ( !mpNSWindow )
@@ -757,7 +757,7 @@ void AquaSalFrame::SetScreenNumber(unsigned int nScreen)
 
 void AquaSalFrame::ShowFullScreen( sal_Bool bFullScreen, sal_Int32 nDisplay )
 {
-    if( GetSalData()->mpFirstInstance->forwardToMainThread( boost::bind( &AquaSalFrame::ShowFullScreen, this, bFullScreen, nDisplay ) ) )
+    if( GetSalData()->mpFirstInstance->forwardToMainThread( [this]&{ this->ShowFullScreen( bFullScreen, nDisplay ); } ) )
         return;
 
     if ( !mpNSWindow )
@@ -873,7 +873,7 @@ public:
 
 void AquaSalFrame::StartPresentation( sal_Bool bStart )
 {
-    if( GetSalData()->mpFirstInstance->forwardToMainThread( boost::bind( &AquaSalFrame::StartPresentation, this, bStart ) ) )
+    if( GetSalData()->mpFirstInstance->forwardToMainThread( [this]&{ this->StartPresentation( bStart ); } ) )
         return;
 
     if ( !mpNSWindow )
@@ -908,7 +908,7 @@ void AquaSalFrame::SetAlwaysOnTop( sal_Bool )
 
 void AquaSalFrame::ToTop(sal_uInt16 nFlags)
 {
-    if( GetSalData()->mpFirstInstance->forwardToMainThread( boost::bind( &AquaSalFrame::ToTop, this, nFlags ) ) )
+    if( GetSalData()->mpFirstInstance->forwardToMainThread( [this]&{ this->ToTop( nFlags ); } ) )
         return;
 
     if ( !mpNSWindow )
@@ -973,7 +973,7 @@ NSCursor* AquaSalFrame::getCurrentCursor() const
 
 void AquaSalFrame::SetPointer( PointerStyle ePointerStyle )
 {
-    if( GetSalData()->mpFirstInstance->forwardToMainThread( boost::bind( &AquaSalFrame::SetPointer, this, ePointerStyle ) ) )
+    if( GetSalData()->mpFirstInstance->forwardToMainThread( [this]&{ this->SetPointer( ePointerStyle ); } ) )
         return;
 
     if ( !mpNSWindow )
@@ -1277,7 +1277,7 @@ void AquaSalFrame::getResolution( sal_Int32& o_rDPIX, sal_Int32& o_rDPIY )
 // doesn't make the anything cleaner for now
 void AquaSalFrame::UpdateSettings( AllSettings& rSettings )
 {
-    if( GetSalData()->mpFirstInstance->forwardToMainThread( boost::bind( &AquaSalFrame::UpdateSettings, this, boost::ref( rSettings ) ) ) )
+    if( GetSalData()->mpFirstInstance->forwardToMainThread( [this]&{ this->UpdateSettings( rSettings ); } ) )
         return;
 
     if ( !mpNSWindow )
@@ -1397,7 +1397,7 @@ void AquaSalFrame::Beep( SoundType eSoundType )
 
 void AquaSalFrame::SetPosSize(long nX, long nY, long nWidth, long nHeight, sal_uInt16 nFlags)
 {
-    if( GetSalData()->mpFirstInstance->forwardToMainThread( boost::bind( &AquaSalFrame::SetPosSize, this, nX, nY, nWidth, nHeight, nFlags ) ) )
+    if( GetSalData()->mpFirstInstance->forwardToMainThread( [this]&{ this->SetPosSize( nX, nY, nWidth, nHeight, nFlags ); } ) )
         return;
 
     if ( !mpNSWindow )
@@ -1490,7 +1490,7 @@ void AquaSalFrame::SetPosSize(long nX, long nY, long nWidth, long nHeight, sal_u
 
 void AquaSalFrame::GetWorkArea( Rectangle& rRect )
 {
-    if( GetSalData()->mpFirstInstance->forwardToMainThread( boost::bind( &AquaSalFrame::GetWorkArea, this, boost::ref( rRect ) ) ) )
+    if( GetSalData()->mpFirstInstance->forwardToMainThread( [this]&{ this->GetWorkArea( rRect ); } ) )
         return;
 
     if ( !mpNSWindow )
@@ -1514,7 +1514,7 @@ SalPointerState	AquaSalFrame::GetPointerState()
 {
     AquaSalInstance* pInst = GetSalData()->mpFirstInstance;
     if( ! pInst->isNSAppThread() )
-        return pInst->callOnMainThread< SalPointerState >( boost::bind( &AquaSalFrame::GetPointerState, this ) );
+        return pInst->callOnMainThread< SalPointerState >( [this]&{ return this->GetPointerState(); } );
 
     // #i113170# may not be the main thread if called from UNO API
     SalData::ensureThreadAutoreleasePool();
@@ -1626,7 +1626,7 @@ void AquaSalFrame::DrawMenuBar()
 
 void AquaSalFrame::SetMenu( SalMenu* pSalMenu )
 {
-    if( GetSalData()->mpFirstInstance->forwardToMainThread( boost::bind( &AquaSalFrame::SetMenu, this, pSalMenu ) ) )
+    if( GetSalData()->mpFirstInstance->forwardToMainThread( [this]&{ this->SetMenu( pSalMenu ); } ) )
         return;
 
     // #i113170# may not be the main thread if called from UNO API
@@ -1641,7 +1641,7 @@ void AquaSalFrame::SetMenu( SalMenu* pSalMenu )
 
 void AquaSalFrame::SetExtendedFrameStyle( SalExtStyle nStyle )
 {
-    if( GetSalData()->mpFirstInstance->forwardToMainThread( boost::bind( &AquaSalFrame::SetExtendedFrameStyle, this, nStyle ) ) )
+    if( GetSalData()->mpFirstInstance->forwardToMainThread( [this]&{ this->SetExtendedFrameStyle( nStyle ); } ) )
         return;
 
     if ( mpNSWindow )
@@ -1760,7 +1760,7 @@ void AquaSalFrame::CaptureMouse( sal_Bool bCapture )
 
 void AquaSalFrame::ResetClipRegion()
 {
-    if( GetSalData()->mpFirstInstance->forwardToMainThread( boost::bind( &AquaSalFrame::ResetClipRegion, this ) ) )
+    if( GetSalData()->mpFirstInstance->forwardToMainThread( [this]&{ this->ResetClipRegion(); } ) )
         return;
 
     if ( !mpNSWindow )
@@ -1786,7 +1786,7 @@ void AquaSalFrame::ResetClipRegion()
 
 void AquaSalFrame::BeginSetClipRegion( sal_uLong nRects )
 {
-    if( GetSalData()->mpFirstInstance->forwardToMainThread( boost::bind( &AquaSalFrame::BeginSetClipRegion, this, nRects ) ) )
+    if( GetSalData()->mpFirstInstance->forwardToMainThread( [this]&{ this->BeginSetClipRegion( nRects ); } ) )
         return;
 
     if ( !mpNSWindow )
@@ -1828,7 +1828,7 @@ void AquaSalFrame::UnionClipRegion( long nX, long nY, long nWidth, long nHeight 
 
 void AquaSalFrame::EndSetClipRegion()
 {
-    if( GetSalData()->mpFirstInstance->forwardToMainThread( boost::bind( &AquaSalFrame::EndSetClipRegion, this ) ) )
+    if( GetSalData()->mpFirstInstance->forwardToMainThread( [this]&{ this->EndSetClipRegion(); } ) )
         return;
 
     if ( !mpNSWindow )

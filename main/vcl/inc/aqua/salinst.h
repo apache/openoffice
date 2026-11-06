@@ -33,7 +33,6 @@
 #include "salinst.hxx"
 
 #include <boost/function.hpp>
-#include <boost/bind.hpp>
 #include <boost/ref.hpp>
 
 #include <exception>
@@ -207,7 +206,7 @@ public:
     template< typename R > R callOnMainThread( const boost::function0<R>& rFunc )
     {
         R aResult = R();
-        mpSalYieldMutex->runOnMainThread( boost::bind( &AquaSalInstance::assignResult<R>, &aResult, boost::cref( rFunc ) ) );
+        mpSalYieldMutex->runOnMainThread( [&aResult, &rFunc]() { this->template assignResult<R>( &aResult, rFunc ); } );
         return aResult;
     }
 
