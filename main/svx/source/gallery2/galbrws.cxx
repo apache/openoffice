@@ -35,7 +35,6 @@
 #include "svx/galbrws.hxx"
 #include "GallerySplitter.hxx"
 
-#include <boost/bind.hpp>
 
 // -------------------------
 // - SvxGalleryChildWindow -
@@ -88,10 +87,10 @@ GalleryBrowser::GalleryBrowser(
         this,
         GAL_RESID( GALLERY_BROWSER1 ),
         mpGallery,
-        ::boost::bind(&GalleryBrowser::KeyInput,this,_1,_2),
-        ::boost::bind(&GalleryBrowser::ThemeSelectionHasChanged, this));
+        [this](auto& a1, auto& a2) { this->KeyInput( a1, a2 ); },
+        [this]() { this->ThemeSelectionHasChanged(); });
 	mpSplitter = new GallerySplitter( this, GAL_RESID( GALLERY_SPLITTER ),
-        ::boost::bind(&GalleryBrowser::InitSettings, this));
+        [this]() { this->InitSettings(); });
 	mpBrowser2 = new GalleryBrowser2( this, GAL_RESID( GALLERY_BROWSER2 ), mpGallery );
 
 	FreeResource();

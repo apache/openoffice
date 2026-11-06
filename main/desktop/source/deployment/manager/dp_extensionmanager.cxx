@@ -57,7 +57,6 @@
 #include "dp_extensionmanager.hxx"
 #include "dp_commandenvironments.hxx"
 #include "dp_properties.hxx"
-#include "boost/bind.hpp"
 
 #include <list>
 #include <unordered_map>
@@ -1550,8 +1549,8 @@ void ExtensionManager::fireModified()
         util::XModifyListener::static_type() );
     if (pContainer != 0) {
         pContainer->forEach<util::XModifyListener>(
-            boost::bind(&util::XModifyListener::modified, _1,
-                        lang::EventObject(static_cast<OWeakObject *>(this))) );
+            [this](const auto& listener) { listener->modified(
+                lang::EventObject(static_cast<OWeakObject *>(this))) });
     }
 }
 

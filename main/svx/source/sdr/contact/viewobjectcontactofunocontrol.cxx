@@ -63,7 +63,6 @@
 #include <basegfx/matrix/b2dhommatrix.hxx>
 #include <drawinglayer/primitive2d/controlprimitive2d.hxx>
 
-#include <boost/bind.hpp>
 
 /*
 
@@ -1150,7 +1149,7 @@ namespace sdr { namespace contact {
         }
 
         m_bCreatingControl = true;
-        ::comphelper::ScopeGuard aGuard( ::boost::bind( lcl_resetFlag, ::boost::ref( m_bCreatingControl ) ) );
+        ::comphelper::ScopeGuard aGuard( [&]() { lcl_resetFlag( m_bCreatingControl ); } );
 
         if ( m_aControl.is() )
         {

@@ -42,7 +42,6 @@
 #include <basegfx/polygon/b2dpolypolygon.hxx>
 #include <basegfx/numeric/ftools.hxx>
 
-#include <boost/bind.hpp>
 
 using namespace ::basegfx;
 
@@ -178,14 +177,7 @@ public:
             rtl::OUString::createFromAscii(randomSvg), false, 0);
         std::for_each(randomPoly.begin(),
                       randomPoly.end(),
-                      boost::bind(
-             &B2DPolyRange::appendElement,
-                          boost::ref(aRandomIntersections),
-                          boost::bind(
-                 &B2DPolygon::getB2DRange,
-                              _1),
-                          ORIENTATION_NEGATIVE,
-                          1));
+                      [&](const auto& poly) { aRandomIntersections.appendElement( poly.getB2DRange(), ORIENTATION_NEGATIVE, 1 ); });
 #endif
     }
 
@@ -226,14 +218,7 @@ public:
         // now, sort all polygons with increasing 0th point
         std::sort(aRes.begin(),
                   aRes.end(),
-                  boost::bind(
-                      &compare,
-                      boost::bind(
-                          &B2DPolygon::getB2DPoint,
-                          _1,0),
-                      boost::bind(
-                          &B2DPolygon::getB2DPoint,
-                          _2,0)));
+                  [](const auto& p1, const auto& p2) { return compare( p1.getB2DPoint(0), p2.getB2DPoint(0) ); });
 
         return aRes;
     }

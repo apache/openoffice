@@ -23,7 +23,6 @@
 
 #include "oox/ppt/timenode.hxx"
 
-#include <boost/bind.hpp>
 
 #include <com/sun/star/beans/XPropertySet.hpp>
 #include <com/sun/star/beans/NamedValue.hpp>
@@ -544,8 +543,7 @@ namespace oox { namespace ppt {
 			}
 
             std::for_each( maChildren.begin(), maChildren.end(),
-                           boost::bind(&TimeNode::addNode, _1, boost::cref(rFilter), boost::ref(xNode),
-									   boost::ref(pSlide) ) );
+            [this, &rFilter, &xNode, &pSlide](auto& child) { child->addNode( rFilter, xNode, pSlide ); } );
 
 			switch( mnNodeType )
 			{

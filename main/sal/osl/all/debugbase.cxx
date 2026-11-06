@@ -29,7 +29,6 @@
 #include "rtl/ustring.hxx"
 #include "osl/process.h"
 #include "osl/diagnose.hxx"
-#include "boost/bind.hpp"
 #include <vector>
 #include <algorithm>
 
@@ -98,7 +97,7 @@ bool SAL_CALL osl_detail_ObjectRegistry_storeAddresses( char const* pName )
         return true;
     OStringVec::const_iterator const iEnd( rVec.end() );
     return std::find_if( rVec.begin(), iEnd,
-                         boost::bind( &isSubStr, pName, _1 ) ) != iEnd;
+                         [&](const auto& s) { return isSubStr( pName, s ); } ) != iEnd;
 }
 
 bool SAL_CALL osl_detail_ObjectRegistry_checkObjectCount(

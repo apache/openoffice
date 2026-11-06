@@ -102,7 +102,6 @@
 #include "unopolyhelper.hxx"
 
 #include <comphelper/scopeguard.hxx>
-#include <boost/bind.hpp>
 
 using ::rtl::OUString;
 using namespace ::osl;
@@ -1946,7 +1945,7 @@ void SAL_CALL SvxShape::setPropertyValues( const ::com::sun::star::uno::Sequence
 
 	// make sure mbIsMultiPropertyCall and mpImpl->mpItemSet are
 	// reseted even when an exception is thrown
-    const ::comphelper::ScopeGuard aGuard( boost::bind( &SvxShape::endSetPropertyValues, this ) );
+    const ::comphelper::ScopeGuard aGuard( [this]() { this->endSetPropertyValues(); } );
 
 	mbIsMultiPropertyCall = sal_True;
 

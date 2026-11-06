@@ -24,7 +24,6 @@
 #include "oox/drawingml/diagram/diagramlayoutatoms.hxx"
 
 #include <functional>
-#include <boost/bind.hpp>
 
 #include "oox/helper/attributelist.hxx"
 #include "layoutnodecontext.hxx"
@@ -84,7 +83,7 @@ void LayoutAtom::dump(int level)
 			   OUSTRING_TO_CSTR( msName ),
 			   typeid(*this).name() );
 	std::for_each( mpChildNodes.begin(), mpChildNodes.end(),
-				  boost::bind( &LayoutAtom::dump, _1, level + 1 ) );
+				  [level](const auto& child) { child->dump( level + 1 ); } );
 }
 
 
@@ -92,7 +91,7 @@ void ForEachAtom::processAtom()
 {
 	// TODO there is likely some conditions
 	std::for_each( mpChildNodes.begin(), mpChildNodes.end(),
-				   boost::bind( &LayoutAtom::processAtom, _1 ) );
+				   [](const auto& child) { child->processAtom(); } );
 }
 
 /** call ConditionAtom::test() if pAtom is one
@@ -119,7 +118,7 @@ void ChooseAtom::processAtom()
 {
 	std::vector< LayoutAtomPtr >::iterator
 		iter = std::find_if( mpChildNodes.begin(), mpChildNodes.end(),
-							 boost::bind( &_test_atom, _1 ) );
+				[](const auto& pAtom) { return _test_atom( pAtom ); } );
 	if( iter != mpChildNodes.end() )
 	{
 		// TODO do something

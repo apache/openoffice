@@ -57,7 +57,6 @@
 #include "com/sun/star/deployment/Prerequisites.hpp"
 #include "com/sun/star/task/XInteractionApprove.hpp"
 #include "com/sun/star/ucb/UnsupportedCommandException.hpp"
-#include "boost/bind.hpp"
 #include "tools/urlobj.hxx"
 #include "unotools/tempfile.hxx"
 
@@ -496,8 +495,8 @@ void PackageManagerImpl::fireModified()
         util::XModifyListener::static_type() );
     if (pContainer != 0) {
         pContainer->forEach<util::XModifyListener>(
-            boost::bind(&util::XModifyListener::modified, _1,
-                        lang::EventObject(static_cast<OWeakObject *>(this))) );
+            [this](const auto& listener) { listener->modified(
+                lang::EventObject(static_cast<OWeakObject *>(this))) });
     }
 }
 
