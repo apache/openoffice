@@ -32,7 +32,7 @@
 #include <vector>
 #include <boost/function.hpp>
 #include <boost/noncopyable.hpp>
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 #include <memory>
 
 
@@ -109,7 +109,7 @@ private:
     AnimationList maAnimations;
     ::canvas::tools::ElapsedTime maElapsedTime;
 
-    ::boost::scoped_ptr<view::SlideSorterView::DrawLock> mpDrawLock;
+    ::std::unique_ptr<view::SlideSorterView::DrawLock> mpDrawLock;
 
     AnimationId mnNextAnimationId;
 

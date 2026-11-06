@@ -35,7 +35,7 @@
 
 #include <svl/undo.hxx>
 
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 
 //......................................................................................................................
 namespace dbaui
@@ -65,7 +65,7 @@ namespace dbaui
 	//==================================================================================================================
     struct OSingleDocumentController_Data
     {
-        ::boost::scoped_ptr< UndoManager >  m_pUndoManager;
+        ::std::unique_ptr< UndoManager >  m_pUndoManager;
 
         OSingleDocumentController_Data( ::cppu::OWeakObject& i_parent, ::osl::Mutex& i_mutex )
             :m_pUndoManager( new UndoManager( i_parent, i_mutex ) )

@@ -31,7 +31,7 @@
 #include <com/sun/star/container/XNamed.hpp>
 #include <cppuhelper/compbase2.hxx>
 
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 
 namespace {
 
@@ -136,7 +136,7 @@ private:
     /** The resource container holds the URLs of unique resource and of
         resource linked to unique resources.
     */
-    ::boost::scoped_ptr<ResourceContainer> mpResourceContainer;
+    ::std::unique_ptr<ResourceContainer> mpResourceContainer;
 
     /** The broadcaster used for notifying listeners of requests for
         configuration changes.

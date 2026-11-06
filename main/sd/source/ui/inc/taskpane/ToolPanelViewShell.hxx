@@ -34,7 +34,7 @@
 #include <sfx2/dockwin.hxx>
 
 #include <memory>
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 
 class PopupMenu;
 
@@ -131,7 +131,7 @@ public:
 			);
 
 private:
-	::boost::scoped_ptr< ToolPanelViewShell_Impl > mpImpl;
+	::std::unique_ptr< ToolPanelViewShell_Impl > mpImpl;
 
 	::std::shared_ptr<TaskPaneShellManager> mpSubShellManager;
 

@@ -31,7 +31,7 @@
 
 #include <tools/gen.hxx>
 #include <vcl/bitmapex.hxx>
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 #include <boost/enable_shared_from_this.hpp>
 #include <vector>
 
@@ -97,7 +97,7 @@ private:
     Point maLocation;
     BitmapEx maIcon;
     Point maIconOffset;
-    ::boost::scoped_ptr<FramePainter> mpShadowPainter;
+    ::std::unique_ptr<FramePainter> mpShadowPainter;
 
     void SetPositionAndSize (const Rectangle& rBoundingBox);
     void SelectRepresentatives (

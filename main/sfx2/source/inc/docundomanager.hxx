@@ -32,7 +32,7 @@
 
 #include <cppuhelper/implbase1.hxx>
 
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 #include <boost/noncopyable.hpp>
 
 namespace svl
@@ -103,7 +103,7 @@ namespace sfx2
         virtual void SAL_CALL setParent( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& Parent );
 
     private:
-        ::boost::scoped_ptr< DocumentUndoManager_Impl > m_pImpl;
+        ::std::unique_ptr< DocumentUndoManager_Impl > m_pImpl;
 	};
 
 //......................................................................................................................

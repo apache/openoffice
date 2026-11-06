@@ -24,7 +24,7 @@
 
 #include <sfx2/sidebar/ControllerItem.hxx>
 #include <sfx2/sidebar/IContextChangeReceiver.hxx>
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 #include <svx/sidebar/ColorPopup.hxx>
 
 class FixedText;
@@ -73,24 +73,24 @@ public:
 
 private:
     //ui controls
-    ::boost::scoped_ptr< FixedText >        mpFTFillColor;
-    ::boost::scoped_ptr< Window >           mpTBFillColorBackground;
-    ::boost::scoped_ptr< ToolBox >          mpTBFillColor;
-    ::boost::scoped_ptr< ::svx::ToolboxButtonColorUpdater > mpFillColorUpdater;
+    ::std::unique_ptr< FixedText >        mpFTFillColor;
+    ::std::unique_ptr< Window >           mpTBFillColorBackground;
+    ::std::unique_ptr< ToolBox >          mpTBFillColor;
+    ::std::unique_ptr< ::svx::ToolboxButtonColorUpdater > mpFillColorUpdater;
 
-    ::boost::scoped_ptr< FixedText >        mpFTCellBorder;
-    ::boost::scoped_ptr< Window >           mpTBCellBorderBackground;
-    ::boost::scoped_ptr< ToolBox >          mpTBCellBorder;
-    ::boost::scoped_ptr< CellBorderUpdater > mpCellBorderUpdater;
+    ::std::unique_ptr< FixedText >        mpFTCellBorder;
+    ::std::unique_ptr< Window >           mpTBCellBorderBackground;
+    ::std::unique_ptr< ToolBox >          mpTBCellBorder;
+    ::std::unique_ptr< CellBorderUpdater > mpCellBorderUpdater;
 
-    ::boost::scoped_ptr< Window >           mpTBLineStyleBackground;
-    ::boost::scoped_ptr< ToolBox >          mpTBLineStyle;
+    ::std::unique_ptr< Window >           mpTBLineStyleBackground;
+    ::std::unique_ptr< ToolBox >          mpTBLineStyle;
 
-    ::boost::scoped_ptr< Window >           mpTBLineColorBackground;
-    ::boost::scoped_ptr< ToolBox >          mpTBLineColor;
-    ::boost::scoped_ptr< ::svx::ToolboxButtonColorUpdater > mpLineColorUpdater;
+    ::std::unique_ptr< Window >           mpTBLineColorBackground;
+    ::std::unique_ptr< ToolBox >          mpTBLineColor;
+    ::std::unique_ptr< ::svx::ToolboxButtonColorUpdater > mpLineColorUpdater;
 
-    ::boost::scoped_ptr< CheckBox >         mpCBXShowGrid;
+    ::std::unique_ptr< CheckBox >         mpCBXShowGrid;
 
     ::sfx2::sidebar::ControllerItem         maBackColorControl;
     ::sfx2::sidebar::ControllerItem         maLineColorControl;
@@ -169,8 +169,8 @@ private:
     // popups
     svx::sidebar::ColorPopup                maFillColorPopup;
     svx::sidebar::ColorPopup                maLineColorPopup;
-    ::boost::scoped_ptr< CellLineStylePopup > mpCellLineStylePopup;
-    ::boost::scoped_ptr< CellBorderStylePopup > mpCellBorderStylePopup;
+    ::std::unique_ptr< CellLineStylePopup > mpCellLineStylePopup;
+    ::std::unique_ptr< CellBorderStylePopup > mpCellBorderStylePopup;
 
     cssu::Reference<css::frame::XFrame>     mxFrame;
     ::sfx2::sidebar::EnumContext            maContext;

@@ -110,7 +110,7 @@
 #include <editeng/charrotateitem.hxx>
 #include "WW8FibData.hxx"
 #include "numrule.hxx"
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 #include <drawdoc.hxx>
 #include <memory>
 
@@ -3107,7 +3107,7 @@ void MSWordExportBase::ExportDocument( bool bWriteAll )
         aTOXArr.Remove( 0, aTOXArr.Count() );
 
     // update layout as it is needed for the export - e.g. for the export of tables
-    boost::scoped_ptr< ViewShell > pTemporaryViewShell( 0 );
+    std::unique_ptr< ViewShell > pTemporaryViewShell( 0 );
     {
         ViewShell* pViewShell = NULL;
         pDoc->GetEditShell( &pViewShell );

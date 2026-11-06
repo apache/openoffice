@@ -32,7 +32,7 @@
 #include <com/sun/star/drawing/framework/XView.hpp>
 #include <com/sun/star/lang/XEventListener.hpp>
 
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 #include <memory>
 #include <boost/enable_shared_from_this.hpp>
 #include <boost/function.hpp>
@@ -370,7 +370,7 @@ private:
     */
     static InstanceMap maInstanceMap;
     class ViewURLMap;
-    static ::boost::scoped_ptr<ViewURLMap> mpViewURLMap;
+    static ::std::unique_ptr<ViewURLMap> mpViewURLMap;
 
     ViewShellBase& mrBase;
     cssu::Reference<cssdf::XConfigurationController>

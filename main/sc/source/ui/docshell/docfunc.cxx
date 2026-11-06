@@ -94,7 +94,7 @@
 
 #include <memory>
 #include <basic/basmgr.hxx>
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 
 using namespace com::sun::star;
 using ::com::sun::star::uno::Sequence;
@@ -1041,7 +1041,7 @@ sal_Bool ScDocFunc::SetCellText( const ScAddress& rPos, const String& rText,
 	{
 		if ( bEnglish )
 		{
-            ::boost::scoped_ptr<ScExternalRefManager::ApiGuard> pExtRefGuard;
+            ::std::unique_ptr<ScExternalRefManager::ApiGuard> pExtRefGuard;
             if (bApi)
                 pExtRefGuard.reset(new ScExternalRefManager::ApiGuard(pDoc));
 

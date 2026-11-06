@@ -30,7 +30,7 @@
 #include <com/sun/star/uno/XInterface.hpp>
 /** === end UNO includes === **/
 
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 
 //......................................................................................................................
 namespace dbaui
@@ -54,7 +54,7 @@ namespace dbaui
         ~CloseVeto();
 
     private:
-        ::boost::scoped_ptr< CloseVeto_Data >   m_pData;
+        ::std::unique_ptr< CloseVeto_Data >   m_pData;
 	};
 
 //......................................................................................................................

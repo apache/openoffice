@@ -23,6 +23,7 @@
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sd.hxx"
+#include <memory>
 
 #include <com/sun/star/drawing/XDrawPagesSupplier.hpp>
 
@@ -983,7 +984,7 @@ void DrawViewShell::ShowSnapLineContextMenu (
     const Point& rMouseLocation)
 {
     const SdrHelpLine& rHelpLine (rPageView.GetHelpLines()[nSnapLineIndex]);
-    ::boost::scoped_ptr<PopupMenu> pMenu (new PopupMenu ());
+    ::std::unique_ptr<PopupMenu> pMenu (new PopupMenu ());
 
     if (rHelpLine.GetKind() == SDRHELPLINE_POINT)
     {

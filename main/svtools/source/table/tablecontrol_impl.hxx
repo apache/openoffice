@@ -33,7 +33,7 @@
 
 #include <vector>
 
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 
 class ScrollBar;
 class ScrollBarBox;
@@ -133,7 +133,7 @@ namespace svt { namespace table
             The window's upper left corner is at position (0,0), relative to the
             table control, which is the direct parent of the data window.
         */
-        ::boost::scoped_ptr< TableDataWindow >
+        ::std::unique_ptr< TableDataWindow >
                                 m_pDataWindow;
         /// the vertical scrollbar, if any
         ScrollBar*          	m_pVScroll;

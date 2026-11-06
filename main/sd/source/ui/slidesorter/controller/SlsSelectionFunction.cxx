@@ -311,7 +311,7 @@ protected:
 	virtual bool ProcessDragEvent (SelectionFunction::EventDescriptor& rDescriptor);
 
 private:
-	::boost::scoped_ptr<DragAndDropContext> mpDragAndDropContext;
+	::std::unique_ptr<DragAndDropContext> mpDragAndDropContext;
 };
 
 /** Handle events while the left mouse button is pressed over the button

@@ -29,7 +29,7 @@
 #include <sfx2/sidebar/ControllerItem.hxx>
 #include <sfx2/sidebar/GridLayouter.hxx>
 #include <vcl/fixed.hxx>
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 
 class FixedText;
 class MetricField;
@@ -64,18 +64,18 @@ public:
 
 private:
     //ui controls
-    ::boost::scoped_ptr< FixedText >                    mpFtBrightness;
-    ::boost::scoped_ptr< MetricField >                  mpMtrBrightness;
-    ::boost::scoped_ptr< FixedText >                    mpFtContrast;
-    ::boost::scoped_ptr< MetricField >                  mpMtrContrast;
-    ::boost::scoped_ptr< FixedText >                    mpFtColorMode;
-    ::boost::scoped_ptr< ListBox >                      mpLBColorMode;
-    ::boost::scoped_ptr< FixedText >                    mpFtTrans;
-    ::boost::scoped_ptr< MetricField >                  mpMtrTrans;
-    ::boost::scoped_ptr< MetricField >                  mpMtrRed;
-    ::boost::scoped_ptr< MetricField >                  mpMtrGreen;
-    ::boost::scoped_ptr< MetricField >                  mpMtrBlue;
-    ::boost::scoped_ptr< MetricField >                  mpMtrGamma;
+    ::std::unique_ptr< FixedText >                    mpFtBrightness;
+    ::std::unique_ptr< MetricField >                  mpMtrBrightness;
+    ::std::unique_ptr< FixedText >                    mpFtContrast;
+    ::std::unique_ptr< MetricField >                  mpMtrContrast;
+    ::std::unique_ptr< FixedText >                    mpFtColorMode;
+    ::std::unique_ptr< ListBox >                      mpLBColorMode;
+    ::std::unique_ptr< FixedText >                    mpFtTrans;
+    ::std::unique_ptr< MetricField >                  mpMtrTrans;
+    ::std::unique_ptr< MetricField >                  mpMtrRed;
+    ::std::unique_ptr< MetricField >                  mpMtrGreen;
+    ::std::unique_ptr< MetricField >                  mpMtrBlue;
+    ::std::unique_ptr< MetricField >                  mpMtrGamma;
 
     ::sfx2::sidebar::ControllerItem                     maBrightControl;
     ::sfx2::sidebar::ControllerItem                     maContrastControl;

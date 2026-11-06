@@ -28,6 +28,7 @@
 #include <tools/debug.hxx>
 #include <tools/date.hxx>
 #include <tools/time.hxx>
+#include <tuple>
 
 #include <xmloff/txtimp.hxx>
 #include <xmloff/xmlimp.hxx>
@@ -85,7 +86,7 @@ void XMLTextListsHelper::PushListContext(
     XMLTextListBlockContext *i_pListBlock)
 {
 //    fprintf(stderr, "PushListContext\n");
-    mListStack.push(::boost::make_tuple(i_pListBlock,
+    mListStack.push(::std::make_tuple(i_pListBlock,
         static_cast<XMLTextListItemContext*>(0),
         static_cast<XMLNumberedParaContext*>(0)));
 }
@@ -94,7 +95,7 @@ void XMLTextListsHelper::PushListContext(
     XMLNumberedParaContext *i_pNumberedParagraph)
 {
 //    fprintf(stderr, "PushListContext(NP)\n");
-    mListStack.push(::boost::make_tuple(
+    mListStack.push(::std::make_tuple(
         static_cast<XMLTextListBlockContext*>(0),
         static_cast<XMLTextListItemContext*>(0), i_pNumberedParagraph));
 }

@@ -23,6 +23,7 @@
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sd.hxx"
+#include <memory>
 
 #include "PreviewRenderer.hxx"
 
@@ -346,7 +347,7 @@ void PreviewRenderer::PaintPage (
     }
 
     // Use a special redirector to prevent PresObj shapes from being painted.
-    boost::scoped_ptr<ViewRedirector> pRedirector;
+    std::unique_ptr<ViewRedirector> pRedirector;
     if ( ! bDisplayPresentationObjects)
         pRedirector.reset(new ViewRedirector());
 

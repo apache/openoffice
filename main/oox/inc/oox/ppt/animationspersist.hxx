@@ -27,7 +27,7 @@
 
 #include <list>
 #include <memory>
-#include <boost/array.hpp>
+#include <array>
 
 #include <rtl/ustring.hxx>
 
@@ -52,7 +52,7 @@ namespace oox { namespace ppt {
 		_NP_SIZE
 	};
 
-	typedef boost::array< ::com::sun::star::uno::Any, _NP_SIZE > NodePropertyMap;
+	typedef std::array< ::com::sun::star::uno::Any, _NP_SIZE > NodePropertyMap;
 
 
 	/** data for CT_TLShapeTargetElement */

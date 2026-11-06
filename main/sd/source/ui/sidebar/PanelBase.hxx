@@ -28,7 +28,7 @@
 
 #include <vcl/ctrl.hxx>
 
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 
 
 namespace css = ::com::sun::star;
@@ -73,7 +73,7 @@ public:
             ::com::sun::star::accessibility::XAccessible>& rxParent);
 
 protected:
-    ::boost::scoped_ptr< ::Window> mpWrappedControl;
+    ::std::unique_ptr< ::Window> mpWrappedControl;
     virtual ::Window* CreateWrappedControl (
         ::Window* pParentWindow,
         ViewShellBase& rViewShellBase) = 0;

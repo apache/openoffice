@@ -32,7 +32,7 @@
 
 #include <cppuhelper/implbase2.hxx>
 
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 
 //......................................................................................................................
 namespace chart
@@ -96,7 +96,7 @@ namespace chart
         virtual void SAL_CALL removeModifyListener( const ::com::sun::star::uno::Reference< ::com::sun::star::util::XModifyListener >& aListener );
 
     private:
-        ::boost::scoped_ptr< impl::UndoManager_Impl >   m_pImpl;
+        ::std::unique_ptr< impl::UndoManager_Impl >   m_pImpl;
 	};
 
 //......................................................................................................................

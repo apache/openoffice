@@ -62,7 +62,7 @@
 #include <memory>
 #include <algorithm>
 
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 
 using ::std::unique_ptr;
 using ::com::sun::star::uno::Any;
@@ -562,7 +562,7 @@ ScExternalRefCache::TokenArrayRef ScExternalRefCache::getCellRangeData(
         // Cache hit!
         return itrRange->second;
 
-    ::boost::scoped_ptr<ScRange> pNewRange;
+    ::std::unique_ptr<ScRange> pNewRange;
     TokenArrayRef pArray;
     bool bFirstTab = true;
     for (size_t nTab = nTabFirstId; nTab <= nTabLastId; ++nTab)
@@ -1357,7 +1357,7 @@ static ScTokenArray* lcl_convertToTokenArray(ScDocument* pSrcDoc, ScRange& rRang
         // range to it.
         return NULL;
 
-    ::boost::scoped_ptr<ScRange> pUsedRange;
+    ::std::unique_ptr<ScRange> pUsedRange;
 
     auto_ptr<ScTokenArray> pArray(new ScTokenArray);
     bool bFirstTab = true;

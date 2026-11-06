@@ -103,7 +103,7 @@
 #include <com/sun/star/text/WritingMode2.hpp>
 #include <editeng/brshitem.hxx>
 #include <viewimp.hxx>
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 #include <textmarkuphelper.hxx>
 // --> OD 2010-02-22 #i10825#
 #include <parachangetrackinginfo.hxx>
@@ -1950,7 +1950,7 @@ void SwAccessibleParagraph::_getDefaultAttributesImpl(
 {
     // retrieve default attributes
     const SwTxtNode* pTxtNode( GetTxtNode() );
-    ::boost::scoped_ptr<SfxItemSet> pSet;
+    ::std::unique_ptr<SfxItemSet> pSet;
     if ( !bOnlyCharAttrs )
     {
         pSet.reset( new SfxItemSet( const_cast<SwAttrPool&>(pTxtNode->GetDoc()->GetAttrPool()),
@@ -2328,7 +2328,7 @@ void SwAccessibleParagraph::_getSupplementalAttributesImpl(
         tAccParaPropValMap& rSupplementalAttrSeq )
 {
 	const SwTxtNode* pTxtNode( GetTxtNode() );
-	::boost::scoped_ptr<SfxItemSet> pSet;
+	::std::unique_ptr<SfxItemSet> pSet;
 	pSet.reset( new SfxItemSet( const_cast<SwAttrPool&>(pTxtNode->GetDoc()->GetAttrPool()),
 		RES_PARATR_ADJUST, RES_PARATR_ADJUST,
 		RES_PARATR_TABSTOP, RES_PARATR_TABSTOP,

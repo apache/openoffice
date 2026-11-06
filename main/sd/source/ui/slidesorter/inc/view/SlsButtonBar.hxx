@@ -29,7 +29,7 @@
 #include <rtl/ustring.hxx>
 #include <vcl/bitmapex.hxx>
 #include <vcl/bmpacc.hxx>
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 #include <memory>
 
 namespace sd { namespace slidesorter {
@@ -166,7 +166,7 @@ private:
     BitmapEx maNormalBackground;
     BitmapEx maButtonDownBackground;
     bool mbIsMouseOverBar;
-    ::boost::scoped_ptr<BackgroundTheme> mpBackgroundTheme;
+    ::std::unique_ptr<BackgroundTheme> mpBackgroundTheme;
     int mnLockCount;
 
     /** Remember the specified page.  If it differs from mpDescriptor then

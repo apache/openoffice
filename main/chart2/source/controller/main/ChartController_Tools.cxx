@@ -84,7 +84,7 @@
 #include <svx/unoapi.hxx>
 #include <svx/unopage.hxx>
 
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 
 using namespace ::com::sun::star;
 
@@ -316,7 +316,7 @@ void ChartController::executeDispatch_Paste()
                 {
                     xStm->Seek( 0 );
                     Reference< io::XInputStream > xInputStream( new utl::OInputStreamWrapper( *xStm ) );
-                    ::boost::scoped_ptr< SdrModel > spModel( new SdrModel() );
+                    ::std::unique_ptr< SdrModel > spModel( new SdrModel() );
                     if ( SvxDrawingLayerImport( spModel.get(), xInputStream ) )
                     {
                         impl_PasteShapes( spModel.get() );

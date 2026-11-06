@@ -29,7 +29,7 @@
 #include <sfx2/itemconnect.hxx>
 #include "svx/svxdllapi.h"
 
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 
 class NumericField;
 
@@ -122,9 +122,9 @@ public:
 protected:
     struct DialControl_Impl
     {
-        ::boost::scoped_ptr<DialControlBmp>      mpBmpEnabled;
-        ::boost::scoped_ptr<DialControlBmp>      mpBmpDisabled;
-        ::boost::scoped_ptr<DialControlBmp>      mpBmpBuffered;
+        ::std::unique_ptr<DialControlBmp>      mpBmpEnabled;
+        ::std::unique_ptr<DialControlBmp>      mpBmpDisabled;
+        ::std::unique_ptr<DialControlBmp>      mpBmpBuffered;
         Link                maModifyHdl;
         NumericField*       mpLinkField;
         Size                maWinSize;

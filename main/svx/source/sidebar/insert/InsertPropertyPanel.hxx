@@ -22,7 +22,7 @@
 #ifndef SVX_SIDEBAR_INSERT_PROPERTY_PAGE_HXX
 #define SVX_SIDEBAR_INSERT_PROPERTY_PAGE_HXX
 
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 
 #include <vcl/ctrl.hxx>
 #include <com/sun/star/frame/XFrame.hpp>
@@ -51,10 +51,10 @@ public:
     virtual ~InsertPropertyPanel (void);
 
 private:
-    ::boost::scoped_ptr<Window> mpStandardShapesBackground;
-    ::boost::scoped_ptr<ToolBox> mpStandardShapesToolBox;
-    ::boost::scoped_ptr<Window> mpCustomShapesBackground;
-    ::boost::scoped_ptr<ToolBox> mpCustomShapesToolBox;
+    ::std::unique_ptr<Window> mpStandardShapesBackground;
+    ::std::unique_ptr<ToolBox> mpStandardShapesToolBox;
+    ::std::unique_ptr<Window> mpCustomShapesBackground;
+    ::std::unique_ptr<ToolBox> mpCustomShapesToolBox;
     const cssu::Reference<css::frame::XFrame> mxFrame;
 
     DECL_LINK(WindowEventListener, VclSimpleEvent*);

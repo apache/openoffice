@@ -36,7 +36,7 @@
 #include <com/sun/star/frame/XFrame.hpp>
 #include <com/sun/star/ui/XSidebar.hpp>
 
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 
 #include <svx/sidebar/ColorPopup.hxx>
 #include <vcl/vclenum.hxx>
@@ -100,33 +100,33 @@ private:
 	 **
 	***********************************************************/
 	//Alignment
-	::boost::scoped_ptr<Window> 			mpAlignToolBoxBackground;
-	::boost::scoped_ptr<ToolBox>			mpAlignToolBox;
-	::boost::scoped_ptr<Window> 			mpTBxVertAlignBackground;
-	::boost::scoped_ptr<ToolBox>			mpTBxVertAlign;
+	::std::unique_ptr<Window> 			mpAlignToolBoxBackground;
+	::std::unique_ptr<ToolBox>			mpAlignToolBox;
+	::std::unique_ptr<Window> 			mpTBxVertAlignBackground;
+	::std::unique_ptr<ToolBox>			mpTBxVertAlign;
 	//NumBullet&Backcolor
-	::boost::scoped_ptr<Window> 			mpTBxNumBulletBackground;
-	::boost::scoped_ptr<ToolBox>			mpTBxNumBullet;
-	::boost::scoped_ptr<Window> 			mpTBxBackColorBackground;
-	::boost::scoped_ptr<ToolBox>			mpTBxBackColor;
+	::std::unique_ptr<Window> 			mpTBxNumBulletBackground;
+	::std::unique_ptr<ToolBox>			mpTBxNumBullet;
+	::std::unique_ptr<Window> 			mpTBxBackColorBackground;
+	::std::unique_ptr<ToolBox>			mpTBxBackColor;
 	//Paragraph spacing
-	::boost::scoped_ptr<FixedText>			mpFTUL;
-	::boost::scoped_ptr<Window> 			mpTbxUL_IncDecBackground;
-	::boost::scoped_ptr<ToolBox>			mpTbxUL_IncDec;
-    ::boost::scoped_ptr<SvxRelativeField>	mpTopDist;
-	::boost::scoped_ptr<SvxRelativeField>	mpBottomDist;
-	::boost::scoped_ptr<Window> 			mpLineSPTbxBackground;
-	::boost::scoped_ptr<ToolBox>			mpLineSPTbx;
-    ::boost::scoped_ptr<FixedText>			mpFTIndent;
-	::boost::scoped_ptr<Window> 			mpTbxIndent_IncDecBackground;
-	::boost::scoped_ptr<ToolBox>			mpTbxIndent_IncDec;
-	::boost::scoped_ptr<Window> 			mpTbxProDemoteBackground;
-	::boost::scoped_ptr<ToolBox>			mpTbxProDemote;
-    ::boost::scoped_ptr<SvxRelativeField>	mpLeftIndent;
-    ::boost::scoped_ptr<SvxRelativeField>	mpRightIndent;
-	::boost::scoped_ptr<SvxRelativeField>	mpFLineIndent;
+	::std::unique_ptr<FixedText>			mpFTUL;
+	::std::unique_ptr<Window> 			mpTbxUL_IncDecBackground;
+	::std::unique_ptr<ToolBox>			mpTbxUL_IncDec;
+    ::std::unique_ptr<SvxRelativeField>	mpTopDist;
+	::std::unique_ptr<SvxRelativeField>	mpBottomDist;
+	::std::unique_ptr<Window> 			mpLineSPTbxBackground;
+	::std::unique_ptr<ToolBox>			mpLineSPTbx;
+    ::std::unique_ptr<FixedText>			mpFTIndent;
+	::std::unique_ptr<Window> 			mpTbxIndent_IncDecBackground;
+	::std::unique_ptr<ToolBox>			mpTbxIndent_IncDec;
+	::std::unique_ptr<Window> 			mpTbxProDemoteBackground;
+	::std::unique_ptr<ToolBox>			mpTbxProDemote;
+    ::std::unique_ptr<SvxRelativeField>	mpLeftIndent;
+    ::std::unique_ptr<SvxRelativeField>	mpRightIndent;
+	::std::unique_ptr<SvxRelativeField>	mpFLineIndent;
 
-	::boost::scoped_ptr< ::svx::ToolboxButtonColorUpdater > mpColorUpdater;
+	::std::unique_ptr< ::svx::ToolboxButtonColorUpdater > mpColorUpdater;
 
 	/**********************************************************
 	 **
@@ -220,7 +220,7 @@ private:
         const cssu::Reference<css::ui::XSidebar>& rxSidebar);
 	virtual ~ParaPropertyPanel (void);
 
-	void InitImageList(::boost::scoped_ptr<ToolBox>& rTbx, ImageList& rImglst, ImageList& rImgHlst);
+	void InitImageList(::std::unique_ptr<ToolBox>& rTbx, ImageList& rImglst, ImageList& rImgHlst);
 
 	DECL_LINK(AlignStyleModifyHdl_Impl, ToolBox*);
 	DECL_LINK(VertTbxSelectHandler, ToolBox*);

@@ -30,7 +30,7 @@
 
 #include <cppuhelper/implbase1.hxx>
 
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 
 namespace vos
 {
@@ -175,7 +175,7 @@ namespace toolkit
         virtual void SAL_CALL removeStyleChangeListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XStyleChangeListener >& Listener );
 
     private:
-        ::boost::scoped_ptr< WindowStyleSettings_Data > m_pData;
+        ::std::unique_ptr< WindowStyleSettings_Data > m_pData;
 	};
 
 //......................................................................................................................

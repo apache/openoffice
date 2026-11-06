@@ -167,7 +167,7 @@ private:
     ::rtl::Reference<PresenterScrollBar> mpVerticalScrollBar;
     ::rtl::Reference<PresenterButton> mpCloseButton;
     class MouseOverManager;
-    ::boost::scoped_ptr<MouseOverManager> mpMouseOverManager;
+    ::std::unique_ptr<MouseOverManager> mpMouseOverManager;
     sal_Int32 mnSlideIndexMousePressed;
     sal_Int32 mnCurrentSlideIndex;
     sal_Int32 mnSeparatorY;

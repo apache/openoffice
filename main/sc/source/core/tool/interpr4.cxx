@@ -3378,7 +3378,7 @@ StackVar ScInterpreter::Interpret()
     pJumpMatrix = NULL;
     glSubTotal = sal_False;
     ScTokenMatrixMap::const_iterator aTokenMatrixMapIter;
-    ::boost::scoped_ptr< FormulaTokenDtor > pTokenDtor;
+    ::std::unique_ptr< FormulaTokenDtor > pTokenDtor;
 
     // Once upon a time we used to have FP exceptions on, and there was a
     // Windows printer driver that kept switching off exceptions, so we had to

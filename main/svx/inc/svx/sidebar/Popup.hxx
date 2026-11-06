@@ -27,7 +27,7 @@
 #include <tools/link.hxx>
 
 #include <boost/function.hpp>
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 
 class Window;
 class ToolBox;
@@ -80,7 +80,7 @@ public :
     void SetPopupModeEndHandler (const ::boost::function<void(void)>& rCallback);
 
 protected:
-    ::boost::scoped_ptr<PopupControl> mpControl;
+    ::std::unique_ptr<PopupControl> mpControl;
 
     /** Make sure that both PopupContainer and PopupControl objects
         exist.  Calls the maControlCreator functor if necessary.
@@ -97,7 +97,7 @@ private:
     ::boost::function<PopupControl*(PopupContainer*)> maControlCreator;
     ::boost::function<void(void)> maPopupModeEndCallback;
     const ::rtl::OUString msAccessibleName;
-    ::boost::scoped_ptr<PopupContainer> mpContainer;
+    ::std::unique_ptr<PopupContainer> mpContainer;
 
     DECL_LINK(PopupModeEndHandler, void*);
 };

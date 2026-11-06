@@ -28,7 +28,7 @@
 #include <com/sun/star/frame/XLayoutManager.hpp>
 #include <com/sun/star/uno/XComponentContext.hpp>
 #include <vcl/vclevent.hxx>
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 
 namespace css = ::com::sun::star;
 
@@ -84,7 +84,7 @@ protected:
 
 private:
     css::uno::Reference<css::uno::XComponentContext> mxComponentContext;
-    ::boost::scoped_ptr<WorkWindow> mpWorkWindow;
+    ::std::unique_ptr<WorkWindow> mpWorkWindow;
 
     void ExtractArguments (
         const css::uno::Reference<css::drawing::framework::XResourceId>& rxPaneId,

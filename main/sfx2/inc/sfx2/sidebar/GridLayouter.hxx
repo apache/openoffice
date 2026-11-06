@@ -23,7 +23,7 @@
 #define SFX_SIDEBAR_GRID_LAYOUTER_HXX
 
 #include "sfx2/dllapi.h"
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 
 class Rectangle;
 class Window;
@@ -75,7 +75,7 @@ public:
 
 private:
     class Implementation;
-    ::boost::scoped_ptr<Implementation> mpImplementation;
+    ::std::unique_ptr<Implementation> mpImplementation;
 };
 
 

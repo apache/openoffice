@@ -27,7 +27,7 @@
 #include <sal/types.h>
 #include <basebmp/drawmodes.hxx>
 
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 #include <memory>
 #include <boost/shared_array.hpp>
 #include <boost/enable_shared_from_this.hpp>
@@ -636,7 +636,7 @@ private:
 
     BitmapDeviceSharedPtr getGenericRenderer() const;
 
-    boost::scoped_ptr< ImplBitmapDevice > mpImpl;
+    std::unique_ptr< ImplBitmapDevice > mpImpl;
 };
 
 /** Factory method to create a BitmapDevice for given scanline format

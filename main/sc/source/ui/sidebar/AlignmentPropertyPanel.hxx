@@ -25,7 +25,7 @@
 #include <sfx2/sidebar/ControllerItem.hxx>
 #include <sfx2/sidebar/IContextChangeReceiver.hxx>
 #include <vcl/fixed.hxx>
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 #include <editeng/svxenum.hxx>
 
 class ToolBox;
@@ -65,18 +65,18 @@ public:
 
 private:
     //ui controls
-	::boost::scoped_ptr<Window> 			    mpTBHorizontalBackground;
-    ::boost::scoped_ptr< ToolBox >              mpTBHorizontal;
-	::boost::scoped_ptr<Window> 			    mpTBVerticalBackground;
-    ::boost::scoped_ptr< ToolBox >              mpTBVertical;
-    ::boost::scoped_ptr< FixedText >            mpFTLeftIndent;
-    ::boost::scoped_ptr< MetricField >          mpMFLeftIndent;
-    ::boost::scoped_ptr< CheckBox >             mpCBXWrapText;
-    ::boost::scoped_ptr< CheckBox >             mpCBXMergeCell;
-    ::boost::scoped_ptr< FixedText >            mpFtRotate;
-    ::boost::scoped_ptr< svx::sidebar::SidebarDialControl > mpCtrlDial;
-    ::boost::scoped_ptr< MetricBox >            mpMtrAngle;
-    ::boost::scoped_ptr< CheckBox >             mpCbStacked;
+	::std::unique_ptr<Window> 			    mpTBHorizontalBackground;
+    ::std::unique_ptr< ToolBox >              mpTBHorizontal;
+	::std::unique_ptr<Window> 			    mpTBVerticalBackground;
+    ::std::unique_ptr< ToolBox >              mpTBVertical;
+    ::std::unique_ptr< FixedText >            mpFTLeftIndent;
+    ::std::unique_ptr< MetricField >          mpMFLeftIndent;
+    ::std::unique_ptr< CheckBox >             mpCBXWrapText;
+    ::std::unique_ptr< CheckBox >             mpCBXMergeCell;
+    ::std::unique_ptr< FixedText >            mpFtRotate;
+    ::std::unique_ptr< svx::sidebar::SidebarDialControl > mpCtrlDial;
+    ::std::unique_ptr< MetricBox >            mpMtrAngle;
+    ::std::unique_ptr< CheckBox >             mpCbStacked;
 
     ::sfx2::sidebar::ControllerItem             maAlignHorControl;
     ::sfx2::sidebar::ControllerItem             maAlignVerControl;

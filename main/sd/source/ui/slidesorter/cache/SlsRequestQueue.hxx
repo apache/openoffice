@@ -29,6 +29,7 @@
 #include "taskpane/SlideSorterCacheDisplay.hxx"
 #include <drawdoc.hxx>
 #include "osl/mutex.hxx"
+#include <memory>
 
 
 namespace sd { namespace slidesorter { namespace cache {
@@ -106,7 +107,7 @@ public:
 private:
     ::osl::Mutex maMutex;
     class Container;
-    ::boost::scoped_ptr<Container> mpRequestQueue;
+    ::std::unique_ptr<Container> mpRequestQueue;
     SharedCacheContext mpCacheContext;
 
     /** A lower bound of the lowest priority of all elements in the queues.

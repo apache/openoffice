@@ -23,6 +23,7 @@
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sdext.hxx"
+#include <memory>
 
 #include "PresenterProtocolHandler.hxx"
 #include "PresenterConfigurationAccess.hxx"
@@ -223,7 +224,7 @@ public:
 
 private:
     OUString msURLPath;
-    ::boost::scoped_ptr<Command> mpCommand;
+    ::std::unique_ptr<Command> mpCommand;
     ::rtl::Reference<PresenterController> mpPresenterController;
     typedef ::std::vector<Reference<frame::XStatusListener> > StatusListenerContainer;
     StatusListenerContainer maStatusListenerContainer;

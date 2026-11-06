@@ -27,7 +27,7 @@
 #include <sal/types.h>
 #include <boost/function.hpp>
 #include <boost/noncopyable.hpp>
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 #include <memory>
 #include <vector>
 
@@ -110,8 +110,8 @@ private:
     const sal_uInt64 mnStartTime;
     const sal_uInt64 mnTotalDuration;
     const sal_uInt64 mnStepDuration;
-    ::boost::scoped_ptr<std::vector<Callback> > mpStartCallbacks;
-    ::boost::scoped_ptr<std::vector<Callback> > mpEndCallbacks;
+    ::std::unique_ptr<std::vector<Callback> > mpStartCallbacks;
+    ::std::unique_ptr<std::vector<Callback> > mpEndCallbacks;
 };
 
 sal_uInt64 GetCurrentTime (void);

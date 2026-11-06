@@ -24,7 +24,7 @@
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sc.hxx"
 
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 
 #include "scitems.hxx"
 #include <sfx2/request.hxx>
@@ -58,7 +58,7 @@
 #include "tabbgcolordlg.hxx"
 #include "sccommands.h"
 
-using ::boost::scoped_ptr;
+using ::std::unique_ptr;
 using namespace com::sun::star;
 
 #define IS_AVAILABLE(WhichId,ppItem) \

@@ -357,7 +357,7 @@ public:
 
 //----- FrameworkHelper -------------------------------------------------------
 
-::boost::scoped_ptr<FrameworkHelper::ViewURLMap> FrameworkHelper::mpViewURLMap(new ViewURLMap());
+::std::unique_ptr<FrameworkHelper::ViewURLMap> FrameworkHelper::mpViewURLMap(new ViewURLMap());
 
 
 FrameworkHelper::InstanceMap FrameworkHelper::maInstanceMap;

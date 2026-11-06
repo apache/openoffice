@@ -28,7 +28,7 @@
 #include <com/sun/star/lang/XInitialization.hpp>
 #include <com/sun/star/util/XURLTransformer.hpp>
 #include <cppuhelper/compbase2.hxx>
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 
 namespace css = ::com::sun::star;
 
@@ -172,7 +172,7 @@ private:
     */
     ::std::vector<rtl::OUString> maResourceURLs;
 
-    ::boost::scoped_ptr<css::util::URL> mpURL;
+    ::std::unique_ptr<css::util::URL> mpURL;
 
     static css::uno::WeakReference<css::util::XURLTransformer> mxURLTransformerWeak;
 

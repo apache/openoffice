@@ -41,7 +41,7 @@
 
 #include <editeng/unoipset.hxx>
 
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 
 class ModifyListenerForewarder;
 
@@ -142,7 +142,7 @@ protected:
     /** broadcast helper for events */
     ::cppu::OBroadcastHelper mrBHelper;
 
-	boost::scoped_ptr< ModifyListenerForewarder > mpModifyListenerForewarder;
+	std::unique_ptr< ModifyListenerForewarder > mpModifyListenerForewarder;
 
 private:
 	SdStyleSheet& operator=( const SdStyleSheet& );	// not implemented

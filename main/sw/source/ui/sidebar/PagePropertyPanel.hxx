@@ -50,7 +50,7 @@ namespace svx { namespace sidebar {
 #include <vcl/field.hxx>
 #include <svl/intitem.hxx>
 
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 
 
 namespace css = ::com::sun::star;
@@ -120,17 +120,17 @@ namespace sw { namespace sidebar {
 
 		// toolboxes - on click open corresponding popup
 		FixedText maFtOrientation;
-		::boost::scoped_ptr<Window> mpToolBoxOrientationBackground;
-		::boost::scoped_ptr<ToolBox> mpToolBoxOrientation;
+		::std::unique_ptr<Window> mpToolBoxOrientationBackground;
+		::std::unique_ptr<ToolBox> mpToolBoxOrientation;
 		FixedText				maFtMargin;
-		::boost::scoped_ptr<Window> mpToolBoxMarginBackground;
-		::boost::scoped_ptr<ToolBox> mpToolBoxMargin;
+		::std::unique_ptr<Window> mpToolBoxMarginBackground;
+		::std::unique_ptr<ToolBox> mpToolBoxMargin;
 		FixedText				maFtSize;
-		::boost::scoped_ptr<Window> mpToolBoxSizeBackground;
-		::boost::scoped_ptr<ToolBox> mpToolBoxSize;
+		::std::unique_ptr<Window> mpToolBoxSizeBackground;
+		::std::unique_ptr<ToolBox> mpToolBoxSize;
 		FixedText				maFtColumn;
-		::boost::scoped_ptr<Window> mpToolBoxColumnBackground;
-		::boost::scoped_ptr<ToolBox> mpToolBoxColumn;
+		::std::unique_ptr<Window> mpToolBoxColumnBackground;
+		::std::unique_ptr<ToolBox> mpToolBoxColumn;
 
 		Image*					maImgSize;
 		Image*					maImgSize_L;
@@ -182,20 +182,20 @@ namespace sw { namespace sidebar {
 		// - page usage - only left, only right, both, mirrored
 		// item also hold the numbering type for the page style which should
 		// be kept stable.
-		::boost::scoped_ptr<SvxPageItem> mpPageItem;
+		::std::unique_ptr<SvxPageItem> mpPageItem;
 
 		// item keeping the page style's left and right margins
-		::boost::scoped_ptr<SvxLongLRSpaceItem> mpPageLRMarginItem;
+		::std::unique_ptr<SvxLongLRSpaceItem> mpPageLRMarginItem;
 		// item keeping the page style's top and bottom margins
-		::boost::scoped_ptr<SvxLongULSpaceItem> mpPageULMarginItem;
+		::std::unique_ptr<SvxLongULSpaceItem> mpPageULMarginItem;
 
 		// item keeping the page style's page size
-		::boost::scoped_ptr<SvxSizeItem> mpPageSizeItem;
+		::std::unique_ptr<SvxSizeItem> mpPageSizeItem;
 		// Paper corresponding to the page style's page size
 		Paper mePaper;
 
 		// item keeping the page column type
-		::boost::scoped_ptr<SfxInt16Item> mpPageColumnTypeItem;
+		::std::unique_ptr<SfxInt16Item> mpPageColumnTypeItem;
 
 		FieldUnit 			meFUnit;
 		SfxMapUnit			meUnit;

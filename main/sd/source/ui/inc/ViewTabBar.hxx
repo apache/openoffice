@@ -39,7 +39,7 @@
 #include "MutexOwner.hxx"
 
 #include <vector>
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 #include <memory>
 
 namespace sd { namespace tools {
@@ -166,7 +166,7 @@ private:
         ::com::sun::star::drawing::framework::XConfigurationController> mxConfigurationController;
     typedef ::std::vector<com::sun::star::drawing::framework::TabBarButton> TabBarButtonList;
     TabBarButtonList maTabBarButtons;
-    ::boost::scoped_ptr<TabPage> mpTabPage;
+    ::std::unique_ptr<TabPage> mpTabPage;
     ::com::sun::star::uno::Reference<
         ::com::sun::star::drawing::framework::XResourceId> mxViewTabBarId;
     ViewShellBase* mpViewShellBase;

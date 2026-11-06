@@ -41,7 +41,7 @@
 #include <com/sun/star/uno/XComponentContext.hpp>
 #include <osl/thread.hxx>
 #include <rtl/ref.hxx>
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 
 namespace css = ::com::sun::star;
 
@@ -140,12 +140,12 @@ private:
     */
     class Timer;
     Timer* mpTimer;
-    ::boost::scoped_ptr<Painter> mpClockPainter;
+    ::std::unique_ptr<Painter> mpClockPainter;
     /**
         This is used for debugging to show one clock atop another to compare
         the output of the painters.
     */
-    ::boost::scoped_ptr<Painter> mpClockPainter2;
+    ::std::unique_ptr<Painter> mpClockPainter2;
     int mnMode;
     sal_Int32 mnHour;
     sal_Int32 mnMinute;

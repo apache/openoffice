@@ -87,7 +87,7 @@ class SwList;
 #include <map>
 #include <memory>
 
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 #include <memory>
 #include <flypos.hxx>
 
@@ -283,7 +283,7 @@ class SW_DLLPUBLIC SwDoc :
     //---------------- private Member --------------------------------
 
 	// -------------------------------------------------------------------
-    ::boost::scoped_ptr<SwNodes> m_pNodes;  /// document content (Nodes Array)
+    ::std::unique_ptr<SwNodes> m_pNodes;  /// document content (Nodes Array)
 	SwAttrPool*	mpAttrPool;				// der Attribut Pool
 	SwPageDescs	aPageDescs;				// PageDescriptoren
 	Link 		aOle2Link;				// OLE 2.0-Benachrichtigung
@@ -300,9 +300,9 @@ class SW_DLLPUBLIC SwDoc :
         xXForms;                        // container with XForms models
     mutable com::sun::star::uno::Reference< com::sun::star::linguistic2::XProofreadingIterator > m_xGCIterator;
 
-    const ::boost::scoped_ptr< ::sw::mark::MarkManager> pMarkManager;
-    const ::boost::scoped_ptr< ::sw::MetaFieldManager > m_pMetaFieldManager;
-    const ::boost::scoped_ptr< ::sw::UndoManager > m_pUndoManager;
+    const ::std::unique_ptr< ::sw::mark::MarkManager> pMarkManager;
+    const ::std::unique_ptr< ::sw::MetaFieldManager > m_pMetaFieldManager;
+    const ::std::unique_ptr< ::sw::UndoManager > m_pUndoManager;
 
 	// -------------------------------------------------------------------
 	// die Pointer

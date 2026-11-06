@@ -26,7 +26,7 @@
 
 #include "SlideSorter.hxx"
 #include "SlsRequestQueue.hxx"
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 #include <memory>
 
 namespace sd { namespace slidesorter { namespace cache {
@@ -143,7 +143,7 @@ private:
 
     RequestQueue maRequestQueue;
 
-    ::boost::scoped_ptr<QueueProcessor> mpQueueProcessor;
+    ::std::unique_ptr<QueueProcessor> mpQueueProcessor;
 
     SharedCacheContext mpCacheContext;
 

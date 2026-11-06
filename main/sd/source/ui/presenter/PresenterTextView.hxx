@@ -30,7 +30,7 @@
 #include <cppuhelper/basemutex.hxx>
 #include <cppuhelper/implbase1.hxx>
 #include <boost/noncopyable.hpp>
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 
 namespace css = ::com::sun::star;
 
@@ -71,7 +71,7 @@ protected:
 
 private:
     class Implementation;
-    ::boost::scoped_ptr<Implementation> mpImplementation;
+    ::std::unique_ptr<Implementation> mpImplementation;
 
     /** This method throws a DisposedException when the object has already been
         disposed.

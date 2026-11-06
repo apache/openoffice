@@ -38,7 +38,7 @@
 #include "sax/tools/saxobject.hxx"
 #include "sax/tools/attributemap.hxx"
 
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 
 namespace sax
 {
@@ -138,7 +138,7 @@ public:
 private:
 	void AddNamespace( sal_uInt32 nNamespaceId, sal_uInt32 nNamespaceURIToken );
 
-	boost::scoped_ptr< SaxParserImpl > mpImpl;
+	std::unique_ptr< SaxParserImpl > mpImpl;
 };
 
 }

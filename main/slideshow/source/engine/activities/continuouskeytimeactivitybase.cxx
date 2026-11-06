@@ -31,7 +31,7 @@
 
 #include <continuouskeytimeactivitybase.hxx>
 
-#include <boost/tuple/tuple.hpp>
+#include <tuple>
 #include <algorithm>
 #include <iterator>
 
@@ -61,7 +61,7 @@ namespace slideshow
             double fAlpha( calcAcceleratedTime( nSimpleTime ) );
             std::ptrdiff_t nIndex;
 
-            boost::tuples::tie(nIndex,fAlpha) = maLerper.lerp(fAlpha);
+            std::tie(nIndex,fAlpha) = maLerper.lerp(fAlpha);
 
             perform(
                 nIndex,

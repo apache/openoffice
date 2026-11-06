@@ -35,7 +35,7 @@
 #include <comphelper/sequence.hxx>
 #include <toolkit/helper/listenermultiplexer.hxx>
 
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 
 namespace toolkit
 {
@@ -123,7 +123,7 @@ protected:
 private:
 	::com::sun::star::view::SelectionType       mSelectionMode;
 	SelectionListenerMultiplexer 	            m_aSelectionListeners;
-    ::boost::scoped_ptr< GridEventForwarder >   m_pEventForwarder;
+    ::std::unique_ptr< GridEventForwarder >   m_pEventForwarder;
 };
 
 } // toolkit

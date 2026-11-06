@@ -34,7 +34,7 @@
 #include <cppuhelper/basemutex.hxx>
 #include <cppuhelper/compbase1.hxx>
 #include <boost/noncopyable.hpp>
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 #include <memory>
 
 namespace css = ::com::sun::star;
@@ -133,7 +133,7 @@ public:
 private:
     css::uno::Reference<css::uno::XComponentContext> mxContext;
     ::std::shared_ptr<PresenterTheme> mpTheme;
-    ::boost::scoped_ptr<Renderer> mpRenderer;
+    ::std::unique_ptr<Renderer> mpRenderer;
 
     /** When the theme for the border has not yet been loaded then try again
         when this method is called.

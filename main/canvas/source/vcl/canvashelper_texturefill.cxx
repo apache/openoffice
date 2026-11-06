@@ -23,6 +23,7 @@
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_canvas.hxx"
+#include <tuple>
 
 #include <canvas/debug.hxx>
 #include <tools/diagnose_ex.h>
@@ -59,9 +60,7 @@
 
 #include <canvas/canvastools.hxx>
 #include <canvas/parametricpolypolygon.hxx>
-
 #include <boost/bind.hpp>
-#include <boost/tuple/tuple.hpp>
 
 #include "spritecanvas.hxx"
 #include "canvashelper.hxx"
@@ -217,7 +216,7 @@ namespace vclcanvas
             {
                 std::ptrdiff_t nIndex;
                 double fAlpha;
-                boost::tuples::tie(nIndex,fAlpha)=aLerper.lerp(double(i)/nStepCount);
+                std::tie(nIndex,fAlpha)=aLerper.lerp(double(i)/nStepCount);
 
                 rOutDev.SetFillColor(
                     Color( (sal_uInt8)(basegfx::tools::lerp(rColors[nIndex].GetRed(),rColors[nIndex+1].GetRed(),fAlpha)),
@@ -383,7 +382,7 @@ namespace vclcanvas
 
                     std::ptrdiff_t nIndex;
                     double fAlpha;
-                    boost::tuples::tie(nIndex,fAlpha)=aLerper.lerp(fT);
+                    std::tie(nIndex,fAlpha)=aLerper.lerp(fT);
 
                     // lerp color
                     rOutDev.SetFillColor(
@@ -441,7 +440,7 @@ namespace vclcanvas
 
                     std::ptrdiff_t nIndex;
                     double fAlpha;
-                    boost::tuples::tie(nIndex,fAlpha)=aLerper.lerp(fT);
+                    std::tie(nIndex,fAlpha)=aLerper.lerp(fT);
 
                     // lerp color
                     rOutDev.SetFillColor(

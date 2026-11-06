@@ -33,7 +33,7 @@
 #include <sfx2/viewfac.hxx>
 #include <memory>
 #include <memory>
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 
 #include <set>
 
@@ -245,7 +245,7 @@ protected:
 
 private:
     class Implementation;
-    ::boost::scoped_ptr<Implementation> mpImpl;
+    ::std::unique_ptr<Implementation> mpImpl;
 	DrawDocShell* mpDocShell;
 	SdDrawDocument* mpDocument;
 

@@ -30,7 +30,7 @@
 #include <comphelper/accessiblecomponenthelper.hxx>
 #include <cppuhelper/implbase1.hxx>
 
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 
 namespace svt
 {
@@ -94,7 +94,7 @@ namespace accessibility
         virtual void SAL_CALL disposing();
 
     protected:
-        ::boost::scoped_ptr< AccessibleToolPanelDeckTabBarItem_Impl >   m_pImpl;
+        ::std::unique_ptr< AccessibleToolPanelDeckTabBarItem_Impl >   m_pImpl;
 	};
 
 //......................................................................................................................

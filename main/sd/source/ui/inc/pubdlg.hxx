@@ -45,7 +45,7 @@
 #include "pres.hxx"
 #include "assclass.hxx"
 
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 
 #define NOOFPAGES 6
 
@@ -166,7 +166,7 @@ private:
 	RadioButton*	pPage6_DocColors;
 	SdHtmlAttrPreview*	pPage6_Preview;
 
-	boost::scoped_ptr< ButtonSet > mpButtonSet;
+	std::unique_ptr< ButtonSet > mpButtonSet;
 
 //	CheckBox*		pPage6_Sound;
 

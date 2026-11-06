@@ -36,7 +36,7 @@
 #include <svtools/valueset.hxx>
 #include <sfx2/sidebar/ILayoutableWindow.hxx>
 
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 
 #include "TableDesignPane.hrc"
 
@@ -90,7 +90,7 @@ private:
 	ViewShellBase& mrBase;
 	const rtl::OUString msTableTemplate;
 
-	boost::scoped_ptr< Control > mxControls[DESIGNPANE_CONTROL_COUNT];
+	std::unique_ptr< Control > mxControls[DESIGNPANE_CONTROL_COUNT];
 	int mnOrgOffsetY[DESIGNPANE_CONTROL_COUNT];
 
 	::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > mxSelectedTable;
@@ -113,13 +113,13 @@ public:
 	virtual short Execute();
 private:
 	ViewShellBase& mrBase;
-	boost::scoped_ptr< TableDesignPane > mpDesignPane;
+	std::unique_ptr< TableDesignPane > mpDesignPane;
 
-	boost::scoped_ptr< FixedLine >		 mxFlSep1;
-	boost::scoped_ptr< FixedLine >		 mxFlSep2;
-	boost::scoped_ptr< HelpButton >		 mxHelpButton;
-	boost::scoped_ptr< OKButton >		 mxOkButton;
-	boost::scoped_ptr< CancelButton >	 mxCancelButton;
+	std::unique_ptr< FixedLine >		 mxFlSep1;
+	std::unique_ptr< FixedLine >		 mxFlSep2;
+	std::unique_ptr< HelpButton >		 mxHelpButton;
+	std::unique_ptr< OKButton >		 mxOkButton;
+	std::unique_ptr< CancelButton >	 mxCancelButton;
 };
 
 }

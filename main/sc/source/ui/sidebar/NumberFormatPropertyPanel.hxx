@@ -24,7 +24,7 @@
 
 #include <sfx2/sidebar/ControllerItem.hxx>
 #include <sfx2/sidebar/IContextChangeReceiver.hxx>
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 
 class FixedText;
 class ListBox;
@@ -62,16 +62,16 @@ public:
 
 private:
     //ui controls
-    ::boost::scoped_ptr< FixedText >        mpFtCategory;
-    ::boost::scoped_ptr< ListBox >          mpLbCategory;
-    ::boost::scoped_ptr< Window >           mpTBCategoryBackground;
-    ::boost::scoped_ptr< ToolBox >          mpTBCategory;
-    ::boost::scoped_ptr< FixedText >        mpFtDecimals;
-    ::boost::scoped_ptr< NumericField >     mpEdDecimals;
-    ::boost::scoped_ptr< FixedText >        mpFtLeadZeroes;
-    ::boost::scoped_ptr< NumericField >     mpEdLeadZeroes;
-    ::boost::scoped_ptr< CheckBox >         mpBtnNegRed;
-    ::boost::scoped_ptr< CheckBox >         mpBtnThousand;
+    ::std::unique_ptr< FixedText >        mpFtCategory;
+    ::std::unique_ptr< ListBox >          mpLbCategory;
+    ::std::unique_ptr< Window >           mpTBCategoryBackground;
+    ::std::unique_ptr< ToolBox >          mpTBCategory;
+    ::std::unique_ptr< FixedText >        mpFtDecimals;
+    ::std::unique_ptr< NumericField >     mpEdDecimals;
+    ::std::unique_ptr< FixedText >        mpFtLeadZeroes;
+    ::std::unique_ptr< NumericField >     mpEdLeadZeroes;
+    ::std::unique_ptr< CheckBox >         mpBtnNegRed;
+    ::std::unique_ptr< CheckBox >         mpBtnThousand;
 
     ::sfx2::sidebar::ControllerItem         maNumFormatControl;
     ::sfx2::sidebar::ControllerItem         maFormatControl;

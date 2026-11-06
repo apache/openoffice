@@ -279,8 +279,8 @@ private:
     ::std::shared_ptr<SelectionPainter> mpSelectionPainter;
     Region maRedrawRegion;
     SharedILayerPainter mpBackgroundPainter;
-    ::boost::scoped_ptr<ButtonBar> mpButtonBar;
-    ::boost::scoped_ptr<ToolTip> mpToolTip;
+    ::std::unique_ptr<ButtonBar> mpButtonBar;
+    ::std::unique_ptr<ToolTip> mpToolTip;
     bool mbIsRearrangePending;
     ::std::vector<Link> maVisibilityChangeListeners;
 

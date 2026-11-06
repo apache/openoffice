@@ -28,7 +28,7 @@
 #include <com/sun/star/uno/Any.hxx>
 /** === end UNO includes === **/
 
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 
 namespace comphelper
 {
@@ -53,7 +53,7 @@ namespace svt
         ::rtl::OUString convertToString( const ::com::sun::star::uno::Any& i_cellValue );
 
     private:
-        ::boost::scoped_ptr< CellValueConversion_Data > m_pData;
+        ::std::unique_ptr< CellValueConversion_Data > m_pData;
 	};
 
 //......................................................................................................................

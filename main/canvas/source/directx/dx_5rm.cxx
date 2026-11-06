@@ -55,7 +55,7 @@
 #include <basegfx/vector/b2isize.hxx>
 #include <basegfx/point/b2ipoint.hxx>
 #include <basegfx/range/b2irectangle.hxx>
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 #include <com/sun/star/lang/NoSupportException.hpp>
 
 #define COMPILE_MULTIMON_STUBS
@@ -641,7 +641,7 @@ namespace dxcanvas
             static ::osl::Mutex						maMutex;
 
             HWND                                    mhWnd;
-			::boost::scoped_ptr<SystemChildWindow>	mpWindow;
+			::std::unique_ptr<SystemChildWindow>	mpWindow;
 			::basegfx::B2IVector					maSize;
 
             ModeSelectContext						maSelectedFullscreenMode;

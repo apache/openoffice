@@ -143,9 +143,9 @@ private:
     > SidebarControllerContainer;
     static SidebarControllerContainer maSidebarControllerContainer;
 
-    ::boost::scoped_ptr<Deck> mpCurrentDeck;
+    ::std::unique_ptr<Deck> mpCurrentDeck;
     SidebarDockingWindow* mpParentWindow;
-    ::boost::scoped_ptr<TabBar> mpTabBar;
+    ::std::unique_ptr<TabBar> mpTabBar;
     cssu::Reference<css::frame::XFrame> mxFrame;
     Context maCurrentContext;
     Context maRequestedContext;
@@ -185,7 +185,7 @@ private:
         to indicate that when the current mouse drag operation ends, the
         sidebar will only show the tab bar.
     */
-    ::boost::scoped_ptr<Window> mpCloseIndicator;
+    ::std::unique_ptr<Window> mpCloseIndicator;
 
     DECL_LINK(WindowEventHandler, VclWindowEvent*);
     /** Make maRequestedContext the current context.

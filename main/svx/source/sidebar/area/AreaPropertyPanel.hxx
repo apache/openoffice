@@ -44,7 +44,7 @@
 #include <svl/intitem.hxx>
 #include <svx/tbxcolorupdate.hxx>
 #include <com/sun/star/ui/XUIElement.hpp>
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 
 
 class XFillFloatTransparenceItem;
@@ -107,24 +107,24 @@ private:
 	XGradient											maGradientRect;
 
 	// ui controls
-	::boost::scoped_ptr< FixedText >					mpColorTextFT;
-	::boost::scoped_ptr< SvxFillTypeBox >				mpLbFillType;
-	::boost::scoped_ptr< SvxFillAttrBox >				mpLbFillAttr;
-	::boost::scoped_ptr< Window >						mpToolBoxColorBackground;
-	::boost::scoped_ptr< ToolBox >						mpToolBoxColor; // for new color picker
-	::boost::scoped_ptr< FixedText >					mpTrspTextFT;
-	::boost::scoped_ptr< ListBox >						mpLBTransType;
-	::boost::scoped_ptr< MetricField >					mpMTRTransparent;
-	::boost::scoped_ptr< Window >						mpBTNGradientBackground;
-	::boost::scoped_ptr< ToolBox >						mpBTNGradient;
+	::std::unique_ptr< FixedText >					mpColorTextFT;
+	::std::unique_ptr< SvxFillTypeBox >				mpLbFillType;
+	::std::unique_ptr< SvxFillAttrBox >				mpLbFillAttr;
+	::std::unique_ptr< Window >						mpToolBoxColorBackground;
+	::std::unique_ptr< ToolBox >						mpToolBoxColor; // for new color picker
+	::std::unique_ptr< FixedText >					mpTrspTextFT;
+	::std::unique_ptr< ListBox >						mpLBTransType;
+	::std::unique_ptr< MetricField >					mpMTRTransparent;
+	::std::unique_ptr< Window >						mpBTNGradientBackground;
+	::std::unique_ptr< ToolBox >						mpBTNGradient;
 
-	::boost::scoped_ptr< ::svx::ToolboxButtonColorUpdater >	mpColorUpdater;
+	::std::unique_ptr< ::svx::ToolboxButtonColorUpdater >	mpColorUpdater;
 
-	::boost::scoped_ptr< XFillStyleItem >				mpStyleItem;
-	::boost::scoped_ptr< XFillColorItem >				mpColorItem;
-	::boost::scoped_ptr< XFillGradientItem >			mpFillGradientItem;
-	::boost::scoped_ptr< XFillHatchItem >				mpHatchItem;
-	::boost::scoped_ptr< XFillBitmapItem >				mpBitmapItem;
+	::std::unique_ptr< XFillStyleItem >				mpStyleItem;
+	::std::unique_ptr< XFillColorItem >				mpColorItem;
+	::std::unique_ptr< XFillGradientItem >			mpFillGradientItem;
+	::std::unique_ptr< XFillHatchItem >				mpHatchItem;
+	::std::unique_ptr< XFillBitmapItem >				mpBitmapItem;
 
 	::sfx2::sidebar::ControllerItem						maStyleControl;
 	::sfx2::sidebar::ControllerItem						maColorControl;
@@ -161,8 +161,8 @@ private:
 	AreaTransparencyGradientPopup maTrGrPopup;
 	ColorPopup maColorPopup;
 
-	::boost::scoped_ptr< XFillFloatTransparenceItem >	mpFloatTransparenceItem;
-	::boost::scoped_ptr< SfxUInt16Item >				mpTransparanceItem;
+	::std::unique_ptr< XFillFloatTransparenceItem >	mpFloatTransparenceItem;
+	::std::unique_ptr< SfxUInt16Item >				mpTransparanceItem;
 
 	cssu::Reference<css::frame::XFrame>					mxFrame;
 	SfxBindings*										mpBindings;

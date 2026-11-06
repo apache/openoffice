@@ -238,7 +238,7 @@ private:
     class MousePressRepeater;
     ::std::shared_ptr<MousePressRepeater> mpMousePressRepeater;
     SharedBitmapDescriptor mpBackgroundBitmap;
-    ::boost::scoped_ptr<PresenterCanvasHelper> mpCanvasHelper;
+    ::std::unique_ptr<PresenterCanvasHelper> mpCanvasHelper;
 
     Area GetArea (const double nX, const double nY) const;
 };

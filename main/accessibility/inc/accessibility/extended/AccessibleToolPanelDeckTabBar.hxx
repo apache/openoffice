@@ -30,7 +30,7 @@
 #include <cppuhelper/implbase1.hxx>
 #include <toolkit/awt/vclxaccessiblecomponent.hxx>
 
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 
 namespace svt
 {
@@ -79,7 +79,7 @@ namespace accessibility
         virtual void FillAccessibleStateSet( ::utl::AccessibleStateSetHelper& i_rStateSet );
 
     private:
-        ::boost::scoped_ptr< AccessibleToolPanelTabBar_Impl > m_pImpl;
+        ::std::unique_ptr< AccessibleToolPanelTabBar_Impl > m_pImpl;
 	};
 
 //......................................................................................................................

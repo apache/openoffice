@@ -28,7 +28,7 @@
 
 #include <sfx2/Metadatable.hxx>
 
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 #include <boost/noncopyable.hpp>
 #include <map>
 
@@ -112,8 +112,8 @@ namespace sw { namespace mark
 
             MarkBase(const SwPaM& rPaM,
                 const ::rtl::OUString& rName);
-            ::boost::scoped_ptr<SwPosition> m_pPos1;
-            ::boost::scoped_ptr<SwPosition> m_pPos2;
+            ::std::unique_ptr<SwPosition> m_pPos1;
+            ::std::unique_ptr<SwPosition> m_pPos2;
             ::rtl::OUString m_aName;
             static ::rtl::OUString GenerateNewName(const ::rtl::OUString& rPrefix);
 

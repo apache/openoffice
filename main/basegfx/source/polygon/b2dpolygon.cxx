@@ -31,7 +31,7 @@
 #include <basegfx/curve/b2dcubicbezier.hxx>
 #include <rtl/instance.hxx>
 #include <basegfx/polygon/b2dpolygontools.hxx>
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 #include <vector>
 #include <algorithm>
 
@@ -521,10 +521,10 @@ class ImplBufferedData
 {
 private:
 	// Possibility to hold the last subdivision
-	boost::scoped_ptr< basegfx::B2DPolygon >		mpDefaultSubdivision;
+	std::unique_ptr< basegfx::B2DPolygon >		mpDefaultSubdivision;
 
     // Possibility to hold the last B2DRange calculation
-	boost::scoped_ptr< basegfx::B2DRange >		    mpB2DRange;
+	std::unique_ptr< basegfx::B2DRange >		    mpB2DRange;
 
 public:
     ImplBufferedData()
@@ -622,10 +622,10 @@ private:
 
 	// The control point vectors. This vectors are created on demand
 	// and may be zero.
-	boost::scoped_ptr< ControlVectorArray2D >		mpControlVector;
+	std::unique_ptr< ControlVectorArray2D >		mpControlVector;
 
     // buffered data for e.g. default subdivision and range
-    boost::scoped_ptr< ImplBufferedData >           mpBufferedData;
+    std::unique_ptr< ImplBufferedData >           mpBufferedData;
 
 	// flag which decides if this polygon is opened or closed
 	bool                                            mbIsClosed;

@@ -23,6 +23,7 @@
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_canvas.hxx"
+#include <tuple>
 
 #include <canvas/debug.hxx>
 #include <tools/diagnose_ex.h>
@@ -68,7 +69,6 @@
 #include "cairo_canvashelper.hxx"
 #include "cairo_canvasbitmap.hxx"
 
-#include <boost/tuple/tuple.hpp>
 #include <algorithm>
 
 using namespace ::cairo;
@@ -860,7 +860,7 @@ namespace cairocanvas
 
                     std::ptrdiff_t nIndex;
                     double fAlpha;
-                    boost::tuples::tie(nIndex,fAlpha)=aLerper.lerp(fT);
+                    std::tie(nIndex,fAlpha)=aLerper.lerp(fT);
 
                     setColor(pCairo, lerp(pColors[nIndex], pColors[nIndex+1], fAlpha));
                     cairo_rectangle( pCairo, -1+fT, -1+fT, 2-2*fT, 2-2*fT );

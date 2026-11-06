@@ -27,7 +27,7 @@
 #include <cppuhelper/basemutex.hxx>
 #include <cppuhelper/compbase1.hxx>
 #include <com/sun/star/beans/XPropertySet.hpp>
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 #include <map>
 
 namespace css = ::com::sun::star;
@@ -103,7 +103,7 @@ protected:
 private:
     typedef ::std::multimap<rtl::OUString,
         css::uno::Reference<css::beans::XPropertyChangeListener> > ChangeListenerContainer;
-    ::boost::scoped_ptr<ChangeListenerContainer> mpChangeListeners;
+    ::std::unique_ptr<ChangeListenerContainer> mpChangeListeners;
 
     /** Call all listeners that are registered for the given property name.
         Call this method with an empty property name to call listeners that

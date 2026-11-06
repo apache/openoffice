@@ -29,7 +29,7 @@
 #include <com/sun/star/drawing/framework/XConfigurationController.hpp>
 #include <com/sun/star/frame/XController.hpp>
 #include <cppuhelper/compbase1.hxx>
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 
 namespace css = ::com::sun::star;
 
@@ -99,7 +99,7 @@ protected:
 
 private:
     class MainViewContainer;
-    ::boost::scoped_ptr<MainViewContainer> mpActiveMainViewContainer;
+    ::std::unique_ptr<MainViewContainer> mpActiveMainViewContainer;
 
     /// The resource managed by this class.
     css::uno::Reference<css::drawing::framework::XResourceId> mxResourceId;

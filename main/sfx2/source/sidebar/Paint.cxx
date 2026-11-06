@@ -24,6 +24,7 @@
 #include "Paint.hxx"
 #include "sfx2/sidebar/Tools.hxx"
 #include <com/sun/star/awt/Gradient.hpp>
+#include <tuple>
 
 
 using namespace ::com::sun::star;
@@ -98,7 +99,7 @@ const Color& Paint::GetColor (void) const
         return aErrorColor;
     }
     else
-        return ::boost::get<Color>(maValue);
+        return ::std::get<Color>(maValue);
 }
 
 
@@ -113,7 +114,7 @@ const Gradient& Paint::GetGradient (void) const
         return aErrorGradient;
     }
     else
-        return ::boost::get<Gradient>(maValue);
+        return ::std::get<Gradient>(maValue);
 }
 
 

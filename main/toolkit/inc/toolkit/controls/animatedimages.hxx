@@ -36,7 +36,7 @@
 #include <cppuhelper/implbase1.hxx>
 #include <cppuhelper/implbase2.hxx>
 
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 
 //......................................................................................................................
 namespace toolkit
@@ -130,7 +130,7 @@ namespace toolkit
 	    void SAL_CALL                   setFastPropertyValue_NoBroadcast( sal_Int32 nHandle, const ::com::sun::star::uno::Any& rValue );
 
     private:
-        ::boost::scoped_ptr< AnimatedImagesControlModel_Data >
+        ::std::unique_ptr< AnimatedImagesControlModel_Data >
                 m_pData;
     };
 

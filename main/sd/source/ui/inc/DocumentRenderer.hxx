@@ -29,7 +29,7 @@
 #include <com/sun/star/view/XRenderable.hpp>
 #include <cppuhelper/compbase1.hxx>
 #include <cppuhelper/basemutex.hxx>
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 
 namespace css = ::com::sun::star;
 
@@ -67,7 +67,7 @@ public:
 
 private:
     class Implementation;
-    ::boost::scoped_ptr<Implementation> mpImpl;
+    ::std::unique_ptr<Implementation> mpImpl;
 };
 
 } // end of namespace sd

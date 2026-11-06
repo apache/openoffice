@@ -57,7 +57,7 @@
 #include <basegfx/vector/b2isize.hxx>
 #include <basegfx/point/b2ipoint.hxx>
 #include <basegfx/range/b2irectangle.hxx>
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 #include <com/sun/star/lang/NoSupportException.hpp>
 
 #include "dx_rendermodule.hxx"
@@ -234,7 +234,7 @@ namespace dxcanvas
             COMReference<IDirect3DSwapChain9>           mpSwapChain;
             COMReference<IDirect3DVertexBuffer9>        mpVertexBuffer;
             ::canvas::ISurfaceSharedPtr                 mpTexture;
-            ::boost::scoped_ptr<SystemChildWindow>      mpWindow;
+            ::std::unique_ptr<SystemChildWindow>      mpWindow;
             ::basegfx::B2IVector                        maSize;
             typedef std::vector<canvas::Vertex>         vertexCache_t;
             vertexCache_t                               maVertexCache;

@@ -27,7 +27,7 @@
 #include <tools/urlobj.hxx>
 #include "svx/svxdllapi.h"
 
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 
 class SfxBindings;
 
@@ -52,9 +52,9 @@ public:
 
 private:
     Gallery* mpGallery;
-    ::boost::scoped_ptr<GallerySplitter> mpSplitter;
-    ::boost::scoped_ptr<GalleryBrowser1> mpBrowser1;
-    ::boost::scoped_ptr<GalleryBrowser2> mpBrowser2;
+    ::std::unique_ptr<GallerySplitter> mpSplitter;
+    ::std::unique_ptr<GalleryBrowser1> mpBrowser1;
+    ::std::unique_ptr<GalleryBrowser2> mpBrowser2;
 	Size maLastSize;
     bool mbIsInitialResize;
 

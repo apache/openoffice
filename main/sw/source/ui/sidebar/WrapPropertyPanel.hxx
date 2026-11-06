@@ -30,7 +30,7 @@
 #include <sfx2/sidebar/ControllerItem.hxx>
 #include <com/sun/star/frame/XFrame.hpp>
 
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 
 
 namespace sw { namespace sidebar {
@@ -63,12 +63,12 @@ namespace sw { namespace sidebar {
 		::com::sun::star::uno::Reference< ::com::sun::star::frame::XFrame > mxFrame;
 		SfxBindings* mpBindings;
 
-		::boost::scoped_ptr<ImageRadioButton> mpRBNoWrap;
-		::boost::scoped_ptr<ImageRadioButton> mpRBWrapLeft;
-		::boost::scoped_ptr<ImageRadioButton> mpRBWrapRight;
-		::boost::scoped_ptr<ImageRadioButton> mpRBWrapParallel;
-		::boost::scoped_ptr<ImageRadioButton> mpRBWrapThrough;
-		::boost::scoped_ptr<ImageRadioButton> mpRBIdealWrap;
+		::std::unique_ptr<ImageRadioButton> mpRBNoWrap;
+		::std::unique_ptr<ImageRadioButton> mpRBWrapLeft;
+		::std::unique_ptr<ImageRadioButton> mpRBWrapRight;
+		::std::unique_ptr<ImageRadioButton> mpRBWrapParallel;
+		::std::unique_ptr<ImageRadioButton> mpRBWrapThrough;
+		::std::unique_ptr<ImageRadioButton> mpRBIdealWrap;
 
 		// Image resource
 		ImageList aWrapIL;

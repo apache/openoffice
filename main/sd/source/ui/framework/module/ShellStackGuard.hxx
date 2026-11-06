@@ -32,7 +32,7 @@
 
 #include <vcl/timer.hxx>
 #include <cppuhelper/compbase1.hxx>
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 
 namespace css = ::com::sun::star;
 
@@ -86,7 +86,7 @@ private:
     css::uno::Reference<css::drawing::framework::XConfigurationController>
         mxConfigurationController;
     ViewShellBase* mpBase;
-    ::boost::scoped_ptr<ConfigurationController::Lock> mpUpdateLock;
+    ::std::unique_ptr<ConfigurationController::Lock> mpUpdateLock;
     Timer maPrinterPollingTimer;
 
     DECL_LINK(TimeoutHandler, Timer*);

@@ -29,7 +29,7 @@
 #include <com/sun/star/ui/LayoutSize.hpp>
 
 #include <boost/function.hpp>
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 
 class ScrollBar;
 
@@ -97,11 +97,11 @@ private:
     const ::rtl::OUString msIconURL;
     const ::rtl::OUString msHighContrastIconURL;
     SharedPanelContainer maPanels;
-    ::boost::scoped_ptr<DeckTitleBar> mpTitleBar;
-    ::boost::scoped_ptr<Window> mpScrollClipWindow;
-    ::boost::scoped_ptr<ScrollContainerWindow> mpScrollContainer;
-    ::boost::scoped_ptr<Window> mpFiller;
-    ::boost::scoped_ptr<ScrollBar> mpVerticalScrollBar;
+    ::std::unique_ptr<DeckTitleBar> mpTitleBar;
+    ::std::unique_ptr<Window> mpScrollClipWindow;
+    ::std::unique_ptr<ScrollContainerWindow> mpScrollContainer;
+    ::std::unique_ptr<Window> mpFiller;
+    ::std::unique_ptr<ScrollBar> mpVerticalScrollBar;
 
     DECL_LINK(HandleVerticalScrollBarChange,void*);
     bool ProcessWheelEvent (

@@ -75,7 +75,7 @@
 #include <svx/svdoutl.hxx>
 #include <editeng/flditem.hxx>
 
-#include "boost/scoped_ptr.hpp"
+#include <memory>
 
 #define MAX_EXT_PIX			2048
 
@@ -744,7 +744,7 @@ bool GraphicExporter::GetGraphic( ExportSettings& rSettings, Graphic& aGraphic, 
                     }
                 }
 
-				boost::scoped_ptr< SdrView > pLocalView;
+				std::unique_ptr< SdrView > pLocalView;
 				if( PTR_CAST( FmFormModel, mpDoc ) )
 				{
 					pLocalView.reset( new FmFormView( PTR_CAST( FmFormModel, mpDoc ), &aVDev ) );
@@ -919,7 +919,7 @@ bool GraphicExporter::GetGraphic( ExportSettings& rSettings, Graphic& aGraphic, 
                     Rectangle aScrollRectangle;
                     Rectangle aPaintRectangle;
 
-                    const boost::scoped_ptr< GDIMetaFile > pMtf(
+                    const std::unique_ptr< GDIMetaFile > pMtf(
                         ( (SdrTextObj*) pObj )->GetTextScrollMetaFileAndRectangle(
                         aScrollRectangle, aPaintRectangle ) );
 

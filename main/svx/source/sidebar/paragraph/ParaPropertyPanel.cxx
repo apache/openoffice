@@ -20,6 +20,7 @@
  *************************************************************/
 
 #include "precompiled_svx.hxx"
+#include <memory>
 #include <svx/sidebar/ColorControl.hxx>
 
 #include "ParaPropertyPanel.hxx"
@@ -594,7 +595,7 @@ void ParaPropertyPanel::initial()
 #endif
 }
 
-void ParaPropertyPanel::InitImageList(::boost::scoped_ptr<ToolBox>& rTbx, ImageList& rImglst, ImageList& rImgHlst)
+void ParaPropertyPanel::InitImageList(::std::unique_ptr<ToolBox>& rTbx, ImageList& rImglst, ImageList& rImgHlst)
 {
 	sal_Bool bHighContrast = GetDisplayBackground().GetColor().IsDark();
 

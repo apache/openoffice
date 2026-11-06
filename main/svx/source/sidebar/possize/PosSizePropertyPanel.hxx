@@ -27,7 +27,7 @@
 #include <sfx2/sidebar/ControllerItem.hxx>
 #include <sfx2/sidebar/IContextChangeReceiver.hxx>
 #include <sfx2/sidebar/GridLayouter.hxx>
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 #include <svx/rectenum.hxx>
 #include <svl/poolitem.hxx>
 #include <tools/fldunit.hxx>
@@ -76,29 +76,29 @@ public:
 
 private:
     //Position
-    ::boost::scoped_ptr< FixedText >        mpFtPosX;
-    ::boost::scoped_ptr< MetricField >      mpMtrPosX;
-    ::boost::scoped_ptr< FixedText >        mpFtPosY;
-    ::boost::scoped_ptr< MetricField >      mpMtrPosY;
+    ::std::unique_ptr< FixedText >        mpFtPosX;
+    ::std::unique_ptr< MetricField >      mpMtrPosX;
+    ::std::unique_ptr< FixedText >        mpFtPosY;
+    ::std::unique_ptr< MetricField >      mpMtrPosY;
 
     // size
-    ::boost::scoped_ptr< FixedText >        mpFtWidth;
-    ::boost::scoped_ptr< MetricField >      mpMtrWidth;
-    ::boost::scoped_ptr< FixedText >        mpFtHeight;
-    ::boost::scoped_ptr< MetricField >      mpMtrHeight;
-    ::boost::scoped_ptr< CheckBox >         mpCbxScale;
+    ::std::unique_ptr< FixedText >        mpFtWidth;
+    ::std::unique_ptr< MetricField >      mpMtrWidth;
+    ::std::unique_ptr< FixedText >        mpFtHeight;
+    ::std::unique_ptr< MetricField >      mpMtrHeight;
+    ::std::unique_ptr< CheckBox >         mpCbxScale;
 
     //rotation
-    ::boost::scoped_ptr< FixedText >        mpFtAngle;
-    ::boost::scoped_ptr< MetricBox >        mpMtrAngle;
+    ::std::unique_ptr< FixedText >        mpFtAngle;
+    ::std::unique_ptr< MetricBox >        mpMtrAngle;
 
     //rotation control
-    ::boost::scoped_ptr<SidebarDialControl> mpDial;
+    ::std::unique_ptr<SidebarDialControl> mpDial;
 
     //flip
-    ::boost::scoped_ptr< FixedText >        mpFtFlip;
-    ::boost::scoped_ptr< Window >           mpFlipTbxBackground;
-    ::boost::scoped_ptr< ToolBox >          mpFlipTbx;
+    ::std::unique_ptr< FixedText >        mpFtFlip;
+    ::std::unique_ptr< Window >           mpFlipTbxBackground;
+    ::std::unique_ptr< ToolBox >          mpFlipTbx;
 
     // Internal variables
     Rectangle                               maRect;

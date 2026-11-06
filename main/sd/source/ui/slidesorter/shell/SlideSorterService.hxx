@@ -37,7 +37,7 @@
 #include <cppuhelper/propshlp.hxx>
 #include <boost/noncopyable.hpp>
 #include <memory>
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 
 namespace css = ::com::sun::star;
 
@@ -161,7 +161,7 @@ private:
     ::std::shared_ptr<SlideSorter> mpSlideSorter;
     css::uno::Reference<css::drawing::framework::XResourceId> mxViewId;
     css::uno::Reference<css::awt::XWindow> mxParentWindow;
-    ::boost::scoped_ptr<cppu::IPropertyArrayHelper> mpPropertyArrayHelper;
+    ::std::unique_ptr<cppu::IPropertyArrayHelper> mpPropertyArrayHelper;
 
     void Resize (void);
 

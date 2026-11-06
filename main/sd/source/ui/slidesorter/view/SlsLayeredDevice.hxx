@@ -32,7 +32,7 @@
 #include <vcl/virdev.hxx>
 
 #include <boost/noncopyable.hpp>
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 #include <memory>
 #include <boost/enable_shared_from_this.hpp>
 #include <vector>
@@ -81,8 +81,8 @@ public:
 private:
 	SharedSdWindow mpTargetWindow;
 	class LayerContainer;
-	::boost::scoped_ptr<LayerContainer> mpLayers;
-	::boost::scoped_ptr<VirtualDevice> mpBackBuffer;
+	::std::unique_ptr<LayerContainer> mpLayers;
+	::std::unique_ptr<VirtualDevice> mpBackBuffer;
 	MapMode maSavedMapMode;
 
 	void RepaintRectangle (const Rectangle& rRepaintRectangle);

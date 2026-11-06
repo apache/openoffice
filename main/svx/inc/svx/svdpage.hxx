@@ -39,7 +39,7 @@
 #include "svx/svxdllapi.h"
 #include <com/sun/star/container/XIndexAccess.hpp>
 #include <svx/svdobj.hxx>
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 
 //////////////////////////////////////////////////////////////////////////////
 // predefines
@@ -258,7 +258,7 @@ private:
     class WeakSdrObjectContainerType;
     /// This list, if it exists, defines the navigation order.  It it does
     /// not exist then maList defines the navigation order.
-    ::boost::scoped_ptr<WeakSdrObjectContainerType> mpNavigationOrder;
+    ::std::unique_ptr<WeakSdrObjectContainerType> mpNavigationOrder;
 
     /// This flag is <TRUE/> when the mpNavigation list has been changed but
     /// the indices of the referenced SdrObjects still have their old values.

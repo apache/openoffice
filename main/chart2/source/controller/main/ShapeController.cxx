@@ -49,7 +49,7 @@
 #include <svx/svxdlg.hxx>
 #include <editeng/widwitem.hxx>
 
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 
 using namespace ::com::sun::star;
 using namespace ::com::sun::star::frame;
@@ -275,7 +275,7 @@ void ShapeController::executeDispatch_FormatLine()
             SvxAbstractDialogFactory* pFact = SvxAbstractDialogFactory::Create();
             if ( pFact )
             {
-                ::boost::scoped_ptr< SfxAbstractTabDialog > pDlg(
+                ::std::unique_ptr< SfxAbstractTabDialog > pDlg(
                     pFact->CreateSvxLineTabDialog( pParent, &aAttr, &pDrawModelWrapper->getSdrModel(),
                         pSelectedObj, bHasMarked ) );
                 if ( pDlg.get() && ( pDlg->Execute() == RET_OK ) )
@@ -314,7 +314,7 @@ void ShapeController::executeDispatch_FormatArea()
             SvxAbstractDialogFactory* pFact = SvxAbstractDialogFactory::Create();
             if ( pFact )
             {
-                ::boost::scoped_ptr< AbstractSvxAreaTabDialog > pDlg(
+                ::std::unique_ptr< AbstractSvxAreaTabDialog > pDlg(
                     pFact->CreateSvxAreaTabDialog( pParent, &aAttr, &pDrawModelWrapper->getSdrModel(), true ) );
                 if ( pDlg.get() )
                 {
@@ -358,7 +358,7 @@ void ShapeController::executeDispatch_TextAttributes()
             SvxAbstractDialogFactory* pFact = SvxAbstractDialogFactory::Create();
             if ( pFact )
             {
-                ::boost::scoped_ptr< SfxAbstractTabDialog > pDlg(
+                ::std::unique_ptr< SfxAbstractTabDialog > pDlg(
                     pFact->CreateTextTabDialog( pParent, &aAttr, pDrawViewWrapper ) );
                 if ( pDlg.get() && ( pDlg->Execute() == RET_OK ) )
                 {
@@ -397,7 +397,7 @@ void ShapeController::executeDispatch_TransformDialog()
                 SvxAbstractDialogFactory* pFact = SvxAbstractDialogFactory::Create();
                 if ( pFact )
                 {
-                    ::boost::scoped_ptr< SfxAbstractTabDialog > pDlg(
+                    ::std::unique_ptr< SfxAbstractTabDialog > pDlg(
                         pFact->CreateCaptionDialog( pParent, pDrawViewWrapper ) );
                     if ( pDlg.get() )
                     {
@@ -421,7 +421,7 @@ void ShapeController::executeDispatch_TransformDialog()
                 SvxAbstractDialogFactory* pFact = SvxAbstractDialogFactory::Create();
                 if ( pFact )
                 {
-                    ::boost::scoped_ptr< SfxAbstractTabDialog > pDlg(
+                    ::std::unique_ptr< SfxAbstractTabDialog > pDlg(
                         pFact->CreateSvxTransformTabDialog( pParent, &aGeoAttr, pDrawViewWrapper ) );
                     if ( pDlg.get() && ( pDlg->Execute() == RET_OK ) )
                     {
@@ -450,7 +450,7 @@ void ShapeController::executeDispatch_ObjectTitleDescription()
                 SvxAbstractDialogFactory* pFact = SvxAbstractDialogFactory::Create();
                 if ( pFact )
                 {
-                    ::boost::scoped_ptr< AbstractSvxObjectTitleDescDialog > pDlg(
+                    ::std::unique_ptr< AbstractSvxObjectTitleDescDialog > pDlg(
                         pFact->CreateSvxObjectTitleDescDialog( NULL, aTitle, aDescription ) );
                     if ( pDlg.get() && ( pDlg->Execute() == RET_OK ) )
                     {
@@ -480,7 +480,7 @@ void ShapeController::executeDispatch_RenameObject()
                 SvxAbstractDialogFactory* pFact = SvxAbstractDialogFactory::Create();
                 if ( pFact )
                 {
-                    ::boost::scoped_ptr< AbstractSvxObjectNameDialog > pDlg(
+                    ::std::unique_ptr< AbstractSvxObjectNameDialog > pDlg(
                         pFact->CreateSvxObjectNameDialog( NULL, aName ) );
                     pDlg->SetCheckNameHdl( LINK( this, ShapeController, CheckNameHdl ) );
                     if ( pDlg.get() && ( pDlg->Execute() == RET_OK ) )
@@ -559,7 +559,7 @@ void ShapeController::executeDispatch_FontDialog()
             SfxItemSet aAttr( pDrawViewWrapper->GetModel()->GetItemPool() );
             pDrawViewWrapper->GetAttributes( aAttr );
             ViewElementListProvider aViewElementListProvider( pDrawModelWrapper );
-            ::boost::scoped_ptr< ShapeFontDialog > pDlg( new ShapeFontDialog( pParent, &aAttr, &aViewElementListProvider ) );
+            ::std::unique_ptr< ShapeFontDialog > pDlg( new ShapeFontDialog( pParent, &aAttr, &aViewElementListProvider ) );
             if ( pDlg.get() && ( pDlg->Execute() == RET_OK ) )
             {
                 const SfxItemSet* pOutAttr = pDlg->GetOutputItemSet();
@@ -597,7 +597,7 @@ void ShapeController::executeDispatch_ParagraphDialog()
             aNewAttr.Put( SvxWidowsItem( 0, SID_ATTR_PARA_WIDOWS) );
             aNewAttr.Put( SvxOrphansItem( 0, SID_ATTR_PARA_ORPHANS) );
 
-            ::boost::scoped_ptr< ShapeParagraphDialog > pDlg( new ShapeParagraphDialog( pParent, &aNewAttr ) );
+            ::std::unique_ptr< ShapeParagraphDialog > pDlg( new ShapeParagraphDialog( pParent, &aNewAttr ) );
             if ( pDlg.get() && ( pDlg->Execute() == RET_OK ) )
             {
                 const SfxItemSet* pOutAttr = pDlg->GetOutputItemSet();

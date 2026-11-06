@@ -20,6 +20,7 @@
  *************************************************************/
 
 #include "precompiled_sw.hxx"
+#include <memory>
 
 #include <SidebarWin.hxx>
 #include <SidebarWinAcc.hxx>
@@ -611,7 +612,7 @@ void SwSidebarWin::SetPosAndSize()
                     pCrsr->GetMark()->nContent.Assign( pTxtNode, *(pTxtAnnotationFld->GetStart())+1 );
                     pTmpCrsr = pCrsr;
                 }
-                ::boost::scoped_ptr<SwShellCrsr> pTmpCrsrForAnnotationTextRange( pTmpCrsr );
+                ::std::unique_ptr<SwShellCrsr> pTmpCrsrForAnnotationTextRange( pTmpCrsr );
 
                 pTmpCrsrForAnnotationTextRange->FillRects();
 

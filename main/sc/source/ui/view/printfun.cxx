@@ -80,7 +80,7 @@
 #include <vcl/lineinfo.hxx>
 #include <tools/pstm.hxx>
 
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 
 #define ZOOM_MIN	10
 
@@ -3078,7 +3078,7 @@ void ScPrintFunc::CalcPages()               // berechnet aPageRect und Seiten au
     SCROW nPageStartRow = nStartRow;
     SCROW nLastVisibleRow = -1;
 
-    ::boost::scoped_ptr<ScRowBreakIterator> pRowBreakIter(pDoc->GetRowBreakIterator(nPrintTab));
+    ::std::unique_ptr<ScRowBreakIterator> pRowBreakIter(pDoc->GetRowBreakIterator(nPrintTab));
     SCROW nNextPageBreak = pRowBreakIter->first();
     while (nNextPageBreak != ScRowBreakIterator::NOT_FOUND && nNextPageBreak < nStartRow)
         // Skip until the page break position is at the start row or greater.

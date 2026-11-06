@@ -140,7 +140,7 @@ private:
     Point maRequestedTopLeft;
 
     class PageInsertionListener;
-    ::boost::scoped_ptr<PageInsertionListener> mpPageInsertionListener;
+    ::std::unique_ptr<PageInsertionListener> mpPageInsertionListener;
 
     ::std::shared_ptr<SelectionObserver> mpSelectionObserver;
 

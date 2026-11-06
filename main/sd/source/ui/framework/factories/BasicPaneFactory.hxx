@@ -38,7 +38,7 @@
 #include "UpdateLockManager.hxx"
 
 
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 #include <memory>
 
 namespace css = ::com::sun::star;
@@ -118,7 +118,7 @@ private:
     ViewShellBase* mpViewShellBase;
     class PaneDescriptor;
     class PaneContainer;
-    ::boost::scoped_ptr<PaneContainer> mpPaneContainer;
+    ::std::unique_ptr<PaneContainer> mpPaneContainer;
     bool mbFirstUpdateSeen;
     ::std::shared_ptr<UpdateLockManager> mpUpdateLockManager;
 

@@ -59,7 +59,7 @@
 #include <svx/sdr/overlay/overlayselection.hxx>
 #include <overlayrangesoutline.hxx>
 
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 
 extern void SwCalcPixStatics( OutputDevice *pOut );
 
@@ -642,7 +642,7 @@ void SwSelPaintRects::HighlightInputFld()
         if ( pCurTxtInputFldAtCrsr != NULL )
         {
             SwTxtNode* pTxtNode = pCurTxtInputFldAtCrsr->GetpTxtNode();
-            ::boost::scoped_ptr<SwShellCrsr> pCrsrForInputTxtFld(
+            ::std::unique_ptr<SwShellCrsr> pCrsrForInputTxtFld(
                 new SwShellCrsr( *GetShell(), SwPosition( *pTxtNode, *(pCurTxtInputFldAtCrsr->GetStart()) ) ) );
             pCrsrForInputTxtFld->SetMark();
             pCrsrForInputTxtFld->GetMark()->nNode = *pTxtNode;

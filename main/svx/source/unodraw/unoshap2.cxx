@@ -42,7 +42,7 @@
 #include <svtools/fltcall.hxx>
 #include <svtools/filter.hxx>
 
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 #include <svx/svdpool.hxx>
 #include <rtl/uuid.h>
 #include <rtl/memory.h>
@@ -2083,7 +2083,7 @@ void SAL_CALL SvxCustomShape::setPropertyValue( const OUString& aPropertyName, c
 		bool bNeedsMirrorX = ((SdrObjCustomShape*)pObject)->IsMirroredX() != bMirroredX;
 		bool bNeedsMirrorY = ((SdrObjCustomShape*)pObject)->IsMirroredY() != bMirroredY;
 
-		boost::scoped_ptr< SdrGluePointList > pListCopy;
+		std::unique_ptr< SdrGluePointList > pListCopy;
 		if( bNeedsMirrorX || bNeedsMirrorY )
 		{
 			const SdrGluePointList* pList = pObject->GetGluePointList();

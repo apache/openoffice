@@ -44,7 +44,7 @@
 #include "pubdlg.hxx"
 
 #include <vector>
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 
 #define NUM_BUTTONS 12
 
@@ -155,7 +155,7 @@ class HtmlExport
 
 	const String maHTMLHeader;
 
-	boost::scoped_ptr< ButtonSet > mpButtonSet;
+	std::unique_ptr< ButtonSet > mpButtonSet;
 
 	SdrTextObj* GetLayoutTextObject(SdrPage* pPage);
 

@@ -28,7 +28,7 @@
 #include <tools/string.hxx>
 #include <svl/svarray.hxx>
 
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 
 #include <vector>
 #include <limits>
@@ -345,7 +345,7 @@ class SVL_DLLPUBLIC SfxUndoManager : public ::svl::IUndoManager
 {
 	friend class SfxLinkUndoAction;
 
-    ::boost::scoped_ptr< SfxUndoManager_Data >
+    ::std::unique_ptr< SfxUndoManager_Data >
                             m_pData;
 public:
 							SfxUndoManager( size_t nMaxUndoActionCount = 20 );

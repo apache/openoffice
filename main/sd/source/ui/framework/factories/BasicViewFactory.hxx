@@ -37,7 +37,7 @@
 #include <osl/mutex.hxx>
 
 #include <memory>
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 
 namespace css = ::com::sun::star;
 
@@ -107,7 +107,7 @@ private:
         mxConfigurationController;
     class ViewDescriptor;
     class ViewShellContainer;
-    ::boost::scoped_ptr<ViewShellContainer> mpViewShellContainer;
+    ::std::unique_ptr<ViewShellContainer> mpViewShellContainer;
     ViewShellBase* mpBase;
     FrameView* mpFrameView;
 

@@ -23,6 +23,7 @@
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
+#include <memory>
 
 
 #include <bookmrk.hxx>
@@ -157,13 +158,13 @@ namespace sw { namespace mark
 
     void MarkBase::SetMarkPos(const SwPosition& rNewPos)
     {
-        ::boost::scoped_ptr<SwPosition>(new SwPosition(rNewPos)).swap(m_pPos1);
+        ::std::unique_ptr<SwPosition>(new SwPosition(rNewPos)).swap(m_pPos1);
         //lcl_FixPosition(*m_pPos1);
     }
 
     void MarkBase::SetOtherMarkPos(const SwPosition& rNewPos)
     {
-        ::boost::scoped_ptr<SwPosition>(new SwPosition(rNewPos)).swap(m_pPos2);
+        ::std::unique_ptr<SwPosition>(new SwPosition(rNewPos)).swap(m_pPos2);
         //lcl_FixPosition(*m_pPos2);
     }
 

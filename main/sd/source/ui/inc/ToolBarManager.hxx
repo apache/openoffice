@@ -30,7 +30,7 @@
 #include <com/sun/star/frame/XFrame.hpp>
 
 #include <sal/types.h>
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 #include <memory>
 #include <boost/enable_shared_from_this.hpp>
 
@@ -263,7 +263,7 @@ public:
 
 private:
     class Implementation;
-    ::boost::scoped_ptr<Implementation> mpImpl;
+    ::std::unique_ptr<Implementation> mpImpl;
 
     /** The ViewShellBase is used to get the XLayoutManager and to determine
         the plug in mode.

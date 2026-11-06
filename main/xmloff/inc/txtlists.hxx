@@ -28,9 +28,9 @@
 #include <comphelper/stl_types.hxx>
 #include <map>
 #include <vector>
+#include <tuple>
 #include <stack>
 #include <boost/utility.hpp>
-#include <boost/tuple/tuple.hpp>
 #include <com/sun/star/container/XIndexReplace.hpp>
 #include <xmloff/xmlictxt.hxx>
 
@@ -139,7 +139,7 @@ class XMLTextListsHelper : private boost::noncopyable
             XMLTextListBlockContext, XMLTextListItemContext,
             XMLNumberedParaContext
          */
-        typedef ::boost::tuple<SvXMLImportContextRef,
+        typedef ::std::tuple<SvXMLImportContextRef,
             SvXMLImportContextRef, SvXMLImportContextRef> ListStackFrame_t;
         ::std::stack< ListStackFrame_t > mListStack;
 

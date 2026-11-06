@@ -34,7 +34,7 @@
 #include "vieweventhandler.hxx"
 #include "viewrepainthandler.hxx"
 
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 #include <boost/noncopyable.hpp>
 #include <memory>
 
@@ -648,7 +648,7 @@ public:
     bool notifyHyperlinkClicked( ::rtl::OUString const& hyperLink );
 
 private:
-    boost::scoped_ptr<EventMultiplexerImpl> mpImpl;
+    std::unique_ptr<EventMultiplexerImpl> mpImpl;
 };
 
 } // namespace internal

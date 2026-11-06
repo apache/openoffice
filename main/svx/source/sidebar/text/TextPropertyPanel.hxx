@@ -37,7 +37,7 @@
 #include <com/sun/star/ui/XSidebar.hpp>
 #include <com/sun/star/frame/XToolbarController.hpp>
 
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 #include "TextCharacterSpacingPopup.hxx"
 #include "TextUnderlinePopup.hxx"
 #include <svx/sidebar/ColorPopup.hxx>
@@ -91,26 +91,26 @@ public:
 
 private:
     //ui controls
-    ::boost::scoped_ptr<SvxSBFontNameBox> mpFontNameBox;
+    ::std::unique_ptr<SvxSBFontNameBox> mpFontNameBox;
     FontSizeBox maFontSizeBox;
-    ::boost::scoped_ptr<Window> mpToolBoxFontBackground;
-    ::boost::scoped_ptr<ToolBox> mpToolBoxFont;
-    ::boost::scoped_ptr<Window> mpToolBoxIncDecBackground;
-    ::boost::scoped_ptr<ToolBox> mpToolBoxIncDec;
-    ::boost::scoped_ptr<Window> mpToolBoxScriptBackground;
-    ::boost::scoped_ptr<ToolBox> mpToolBoxScript;
-    ::boost::scoped_ptr<Window> mpToolBoxScriptSwBackground;
-    ::boost::scoped_ptr<ToolBox> mpToolBoxScriptSw;
-    ::boost::scoped_ptr<Window> mpToolBoxSpacingBackground;
-    ::boost::scoped_ptr<ToolBox> mpToolBoxSpacing;
-    ::boost::scoped_ptr<Window> mpToolBoxFontColorBackground;
-    ::boost::scoped_ptr<ToolBox> mpToolBoxFontColor;
-    ::boost::scoped_ptr<Window> mpToolBoxFontColorBackgroundSW;
-    ::boost::scoped_ptr<ToolBox> mpToolBoxFontColorSW;
-    ::boost::scoped_ptr<Window> mpToolBoxHighlightBackground;
-    ::boost::scoped_ptr<ToolBox> mpToolBoxHighlight;
-    ::boost::scoped_ptr<ToolboxButtonColorUpdater> mpFontColorUpdater;
-    ::boost::scoped_ptr<ToolboxButtonColorUpdater> mpHighlightUpdater;
+    ::std::unique_ptr<Window> mpToolBoxFontBackground;
+    ::std::unique_ptr<ToolBox> mpToolBoxFont;
+    ::std::unique_ptr<Window> mpToolBoxIncDecBackground;
+    ::std::unique_ptr<ToolBox> mpToolBoxIncDec;
+    ::std::unique_ptr<Window> mpToolBoxScriptBackground;
+    ::std::unique_ptr<ToolBox> mpToolBoxScript;
+    ::std::unique_ptr<Window> mpToolBoxScriptSwBackground;
+    ::std::unique_ptr<ToolBox> mpToolBoxScriptSw;
+    ::std::unique_ptr<Window> mpToolBoxSpacingBackground;
+    ::std::unique_ptr<ToolBox> mpToolBoxSpacing;
+    ::std::unique_ptr<Window> mpToolBoxFontColorBackground;
+    ::std::unique_ptr<ToolBox> mpToolBoxFontColor;
+    ::std::unique_ptr<Window> mpToolBoxFontColorBackgroundSW;
+    ::std::unique_ptr<ToolBox> mpToolBoxFontColorSW;
+    ::std::unique_ptr<Window> mpToolBoxHighlightBackground;
+    ::std::unique_ptr<ToolBox> mpToolBoxHighlight;
+    ::std::unique_ptr<ToolboxButtonColorUpdater> mpFontColorUpdater;
+    ::std::unique_ptr<ToolboxButtonColorUpdater> mpHighlightUpdater;
 
     //control items
     ::sfx2::sidebar::ControllerItem maFontNameControl;

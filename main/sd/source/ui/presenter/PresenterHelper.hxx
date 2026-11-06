@@ -31,7 +31,7 @@
 #include <cppuhelper/compbase2.hxx>
 #include <svtools/filter.hxx>
 #include <boost/noncopyable.hpp>
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 
 namespace css = ::com::sun::star;
 
@@ -99,7 +99,7 @@ public:
 
 private:
     css::uno::Reference<css::uno::XComponentContext> mxComponentContext;
-    ::boost::scoped_ptr<GraphicFilter> mpGraphicFilter;
+    ::std::unique_ptr<GraphicFilter> mpGraphicFilter;
 };
 
 } } // end of namespace ::sd::presenter
