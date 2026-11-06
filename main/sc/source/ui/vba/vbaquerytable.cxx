@@ -56,6 +56,20 @@ ScVbaQueryTable::~ScVbaQueryTable()
 {
 }
 
+// MS VBA: QueryTable.Refresh - Updates an external data range in a QueryTable object.
+// Parameters (MS): BackgroundQuery (Optional, Variant) - True for async/background update,
+//   False for synchronous; if omitted, BackgroundQuery property determines the mode.
+// Return value (MS): Boolean - True if query successfully completed or started;
+//   False if user cancels a connection or parameter dialog box.
+// Remarks (MS): Connects to data source, executes SQL query, returns data to the range.
+//   Uses Connection property; may prompt for missing connection info/parameters unless
+//   DisplayAlerts is False. Stores completed connection string for session reuse.
+// Compliance: partial. AOO searches the document's LinkManager for an ScAreaLink whose
+//   destination range contains the parent range's address, and calls pBase->Update().
+//   BackgroundQuery is read but not used to control async/sync behavior (area link update
+//   semantics differ from Excel's ODBC/SQL query model). Returns True if any matching
+//   area link was found and updated; False if no link exists or parent/document is missing.
+//   No Connection/CommandText/parameter/prompting/DisplayAlerts behavior is implemented.
 sal_Bool SAL_CALL
 ScVbaQueryTable::Refresh( const css::uno::Any& aBackgroundQuery ) throw ( css::uno::RuntimeException )
 {
@@ -96,6 +110,9 @@ ScVbaQueryTable::Refresh( const css::uno::Any& aBackgroundQuery ) throw ( css::u
     return bFoundLink ? sal_True : sal_False;
 }
 
+// MS VBA: QueryTable.Delete - Deletes the object.
+// Compliance: implemented for the area-link-backed subset. Removes the matching ScAreaLink
+// from the LinkManager for the parent range. No-op if parent/document missing or no link found.
 void SAL_CALL
 ScVbaQueryTable::Delete() throw ( css::uno::RuntimeException )
 {

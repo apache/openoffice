@@ -27,8 +27,14 @@
 
 namespace css = ::com::sun::star;
 
-// MS Excel VBA: Represents a worksheet table built from data returned from an external data source.
-// Status: partial - only Refresh and Delete implemented; CommandText, Connection, Destination, etc. missing
+// MS Excel VBA: Represents a worksheet table built from data returned from an external data source
+// (e.g. SQL server or Microsoft Access database).
+// Status: partial - only Refresh and Delete implemented per XQueryTable.idl.
+// Missing (per MS docs): CommandText, CommandType, Connection, Destination, Name, Parameters,
+// BackgroundQuery, RefreshOnFileOpen, RefreshPeriod, RefreshStyle, SaveData, SavePassword,
+// EnableEditing, EnableRefresh, FieldNames, FillAdjacentFormulas, PreserveFormatting,
+// AdjustColumnWidth, ListObject, WorkbookConnection, and TextFile*/Web* import properties.
+// Events not implemented: AfterRefresh, BeforeRefresh.
 typedef InheritedHelperInterfaceImpl1< ooo::vba::excel::XQueryTable > ScVbaQueryTableImpl_BASE;
 
 class ScDocument;
@@ -56,17 +62,24 @@ public:
     virtual ~ScVbaQueryTable();
 
     // MS Excel VBA: Methods - QueryTable actions
-    // MS Excel VBA: Reloads the query table from the external data source.
-    // Status: implemented - delegates to area link update
+    // MS VBA: Updates an external data range in a QueryTable object.
+    // Parameters: BackgroundQuery - Used only with QueryTables based on SQL query results.
+    //   True to return control as soon as connection is made and query submitted (background).
+    //   False to return control only after all data has been fetched.
+    //   If omitted, the BackgroundQuery property setting determines the query mode.
+    // Return value: Boolean - True if query is successfully completed or started; False if
+    //   user cancels a connection or parameter dialog box.
+    // Remarks (MS): Refresh causes Excel to connect to the data source, execute the SQL query,
+    //   and return data to the range. Unless called, the QueryTable doesn't communicate with
+    //   the data source.
+    // Status: partial - checks for area links in the destination range and updates them;
+    //   returns True if a link was found/updated, False otherwise. Does not implement full
+    //   SQL/ODBC connection semantics, parameter binding, or BackgroundQuery async behavior.
     virtual sal_Bool SAL_CALL Refresh( const css::uno::Any& aBackgroundQuery )
         throw ( css::uno::RuntimeException );
-    // MS Excel VBA: Deletes the query table and removes it from the worksheet.
-    // Status: implemented - calls LinkManager::Remove()
+    // MS VBA: Deletes the QueryTable object.
+    // Status: implemented - removes matching area link from LinkManager for the parent range.
     virtual void SAL_CALL Delete() throw ( css::uno::RuntimeException );
-
-    // Missing properties (per MS Excel VBA reference):
-    //   CommandText, CommandType, Connection, Destination, RefreshOnFileOpen,
-    //   RefreshPeriod, RefreshStyle, SaveData, SavePassword, TextFile*, Web*
 
     // XHelperInterface
     // MS Excel VBA: Returns the implementation name for UNO service identification.

@@ -79,16 +79,33 @@ public:
     explicit ScVbaDictionary(const uno::Reference< uno::XComponentContext >& xContext);
     virtual ~ScVbaDictionary() {}
 
-    // XDictionary
+    // XDictionary (Scripting.Dictionary compatibility)
+    // MS VBA: Adds a key and item pair to a Dictionary object.
+    // Remarks: An error occurs if the key already exists (runtime error 457).
     virtual void SAL_CALL Add(const uno::Any& Key, const uno::Any& Item);
+    // MS VBA: Returns True if a specified key exists in the Dictionary object; False if it does not.
     virtual sal_Bool SAL_CALL Exists(const uno::Any& Key);
+    // MS VBA: Returns an array containing all the items in a Dictionary object.
     virtual uno::Any SAL_CALL Items();
+    // MS VBA: Returns an array containing all existing keys in a Dictionary object.
     virtual uno::Any SAL_CALL Keys();
+    // MS VBA: Removes a key/item pair from a Dictionary object.
+    // Remarks: An error occurs if the specified key/item pair does not exist.
     virtual void SAL_CALL Remove(const uno::Any& Key);
+    // MS VBA: Removes all key, item pairs from a Dictionary object.
     virtual void SAL_CALL RemoveAll();
+    // MS VBA: Sets or returns an item for a specified key in a Dictionary object.
+    // Remarks: If key is not found when changing an item, a new key is created with the specified newitem.
+    //          If key is not found when attempting to return an existing item, a new key is created and its
+    //          corresponding item is left empty.
     virtual uno::Any SAL_CALL Item(const uno::Any& Key);
+    // MS VBA: Returns a Long containing the number of items in a Dictionary object. Read-only.
     virtual sal_Int32 SAL_CALL getCount();
     virtual void SAL_CALL setCount(sal_Int32 /*nCount*/);
+    // MS VBA: Sets and returns the comparison mode for comparing string keys in a Dictionary object.
+    // Values: vbUseCompareOption (-1), vbBinaryCompare (0), vbTextCompare (1), vbDatabaseCompare (2).
+    // Remarks: An error occurs if you try to change the comparison mode of a Dictionary object that
+    //          already contains data.
     virtual sal_Int32 SAL_CALL getCompareMode();
     virtual void SAL_CALL setCompareMode(sal_Int32 CompareMode);
 

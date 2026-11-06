@@ -142,6 +142,10 @@ sal_Int32 ScVbaDictionary::findKeyIndex(const uno::Any& aKey)
     return -1;
 }
 
+// MS VBA: Adds a key and item pair to a Dictionary object.
+// Remarks (MS): An error occurs if the key already exists.
+// AOO: Throws BasicErrorException with error code 457 ("Duplicate key") on duplicate,
+// matching VBA's "This key is already associated with an element of this collection".
 void ScVbaDictionary::Add(const uno::Any& Key, const uno::Any& Item)
 {
     sal_Int32 nIndex = findKeyIndex(Key);
@@ -164,11 +168,18 @@ void ScVbaDictionary::Add(const uno::Any& Key, const uno::Any& Item)
     maEntries.push_back(entry);
 }
 
+// MS VBA: Returns True if a specified key exists in the Dictionary object; False if it does not.
 sal_Bool ScVbaDictionary::Exists(const uno::Any& Key)
 {
     return findKeyIndex(Key) >= 0;
 }
 
+// MS VBA: Sets or returns an item for a specified key in a Dictionary object.
+// Remarks (MS): If key is not found when changing an item, a new key is created with the
+// specified newitem. If key is not found when attempting to return an existing item, a new
+// key is created and its corresponding item is left empty.
+// AOO (getItem): Returns an empty Any for missing key (approximates VBA's empty variant
+// behavior for reads; VBA's default-property semantics for writes are handled via invoke/setItem).
 uno::Any ScVbaDictionary::getItem(const uno::Any& Key)
 {
     sal_Int32 nIndex = findKeyIndex(Key);
@@ -351,6 +362,7 @@ uno::Reference< beans::XIntrospectionAccess > SAL_CALL ScVbaDictionary::getIntro
     return uno::Reference< beans::XIntrospectionAccess >();
 }
 
+// MS VBA: Returns an array containing all existing keys in a Dictionary object.
 uno::Any ScVbaDictionary::Keys()
 {
     uno::Sequence< uno::Any > aKeys(maEntries.size());
@@ -363,6 +375,7 @@ uno::Any ScVbaDictionary::Keys()
     return aResult;
 }
 
+// MS VBA: Returns an array containing all the items in a Dictionary object.
 uno::Any ScVbaDictionary::Items()
 {
     uno::Sequence< uno::Any > aItems(maEntries.size());
@@ -375,6 +388,9 @@ uno::Any ScVbaDictionary::Items()
     return aResult;
 }
 
+// MS VBA: Removes a key/item pair from a Dictionary object.
+// Remarks (MS): An error occurs if the specified key/item pair does not exist.
+// AOO: Throws BasicErrorException with error code 32811 on missing key.
 void ScVbaDictionary::Remove(const uno::Any& Key)
 {
     sal_Int32 nIndex = findKeyIndex(Key);
@@ -390,6 +406,7 @@ void ScVbaDictionary::Remove(const uno::Any& Key)
     maEntries.erase(maEntries.begin() + nIndex);
 }
 
+// MS VBA: Removes all key, item pairs from a Dictionary object.
 void ScVbaDictionary::RemoveAll()
 {
     maEntries.clear();
@@ -404,6 +421,13 @@ void SAL_CALL ScVbaDictionary::setCount(sal_Int32 /*nCount*/)
 {
 }
 
+// MS VBA: CompareMode property - sets and returns the comparison mode for comparing string keys.
+// Values (MS): vbUseCompareOption (-1), vbBinaryCompare (0), vbTextCompare (1), vbDatabaseCompare (2).
+// Remarks (MS): An error occurs if you try to change the comparison mode of a Dictionary object
+// that already contains data.
+// AOO: Stores the mode but does NOT enforce "cannot change when non-empty" (compliance gap).
+//      Compare behavior: mode 0 treated as case-sensitive/binary-like; others use case-insensitive
+//      string comparison for string keys. vbUseCompareOption/vbDatabaseCompare semantics are partial.
 sal_Int32 ScVbaDictionary::getCompareMode()
 {
     return mnCompareMode;

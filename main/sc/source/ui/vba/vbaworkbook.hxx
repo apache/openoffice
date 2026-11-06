@@ -106,8 +106,16 @@ public:
     // MS Excel VBA: Saves a copy of the workbook to the specified filename.
     // Status: implemented - uses storeToURL with MS Excel 97 filter
 	virtual void SAL_CALL SaveCopyAs( const rtl::OUString& Filename );
-    // MS Excel VBA: Saves the workbook with specified options.
-    // Status: partial - only uses FileName and FileFormat parameters; Password/WriteResPassword/ReadOnlyRecommended/CreateBackup ignored
+    // MS Excel VBA: Saves changes to the workbook in a different file.
+    // Parameters (per MS docs): FileName, FileFormat, Password, WriteResPassword,
+    //   ReadOnlyRecommended, CreateBackup, AccessMode, ConflictResolution, AddToMru,
+    //   TextCodepage, TextVisualLayout, Local.
+    // Remarks (MS): For an existing file, default format is the last file format specified;
+    //   for a new file, default is the format of the version of Excel being used.
+    // Status: partial - implements FileName, FileFormat, Password, WriteResPassword,
+    //   ReadOnlyRecommended, CreateBackup. AccessMode, ConflictResolution, AddToMru,
+    //   TextCodepage, TextVisualLayout, Local are not implemented (XWorkbook.SaveAs takes
+    //   only 6 parameters in the current IDL).
 	virtual void SAL_CALL SaveAs( const css::uno::Any& FileName, const css::uno::Any& FileFormat, const css::uno::Any& Password, const css::uno::Any& WriteResPassword, const css::uno::Any& ReadOnlyRecommended, const css::uno::Any& CreateBackup );
     // code name
     // MS Excel VBA: Returns the code name of the workbook.

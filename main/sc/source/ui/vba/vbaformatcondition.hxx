@@ -60,40 +60,47 @@ public:
     static css::sheet::ConditionOperator retrieveAPIType(sal_Int32 _nVBAType, const css::uno::Reference< css::sheet::XSheetCondition >& _xSheetCondition );
 
     // MS Excel VBA: Methods - FormatCondition actions
-    // MS Excel VBA: Deletes the formatting condition and its associated XStyle.
-    // Status: implemented
+    // MS VBA: Deletes the FormatCondition object.
+    // Status: implemented - removes the condition entry and its associated style, notifies range.
     virtual void SAL_CALL Delete(  );
-    // MS Excel VBA: Modifies an existing conditional formatting rule's type and parameters.
-    // Status: implemented - updates Type, Operator, Formula1, Formula2
+    // MS VBA: Modifies an existing conditional format.
+    // Parameters:
+    //   Type (Required, XlFormatConditionType): xlCellValue or xlExpression.
+    //   Operator (Optional, XlFormatConditionOperator): xlBetween, xlEqual, xlGreater,
+    //     xlGreaterEqual, xlLess, xlLessEqual, xlNotBetween, xlNotEqual. Ignored if Type is xlExpression.
+    //   Formula1 (Optional, Variant): Value or expression associated with the conditional format.
+    //     Can be a constant value, string value, cell reference, or formula.
+    //   Formula2 (Optional, Variant): Second value/expression when Operator is xlBetween/xlNotBetween.
+    // Status: implemented - removes old condition, re-adds via FormatConditions.Add, notifies range.
     virtual void SAL_CALL Modify( ::sal_Int32 Type, const css::uno::Any& Operator, const css::uno::Any& Formula1, const css::uno::Any& Formula2 );
-    // MS Excel VBA: Returns the condition type (xlCellValue or xlExpression).
+    // MS VBA: Returns the condition type (xlCellValue=1 or xlExpression=2).
     // Status: implemented
     virtual ::sal_Int32 SAL_CALL Type(  );
-    // MS Excel VBA: Returns the comparison operator type for the condition.
+    // MS VBA: Returns the comparison operator type for the condition.
     // Status: implemented - non-const overload for internal use
     virtual ::sal_Int32 Operator( sal_Bool  );
-    // MS Excel VBA: Returns the comparison operator type for the condition.
+    // MS VBA: Returns the comparison operator type for the condition.
     // Status: implemented
     virtual ::sal_Int32 SAL_CALL Operator(  );
-    // MS Excel VBA: Returns the first formula (or value) for the condition.
+    // MS VBA: Returns the first formula (or value) for the condition.
     // Status: implemented
     virtual rtl::OUString SAL_CALL Formula1(  );
-    // MS Excel VBA: Returns the second formula (or value) for the condition.
+    // MS VBA: Returns the second formula (or value) for the condition.
     // Status: implemented
     virtual rtl::OUString SAL_CALL Formula2(  );
-    // MS Excel VBA: Sets the first formula (or value) for the condition.
+    // MS VBA: Sets the first formula (or value) for the condition.
     // Status: implemented
     virtual void setFormula1( const css::uno::Any& _aFormula1);
-    // MS Excel VBA: Sets the second formula (or value) for the condition.
+    // MS VBA: Sets the second formula (or value) for the condition.
     // Status: implemented
     virtual void setFormula2( const css::uno::Any& _aFormula2);
-    // MS Excel VBA: Returns the Interior object (fill color, pattern) for the condition.
+    // MS VBA: Returns the Interior object (fill color, pattern) for the condition.
     // Status: implemented
     virtual css::uno::Reference< ::ooo::vba::excel::XInterior > SAL_CALL Interior(  );
-    // MS Excel VBA: Returns the Borders collection for the condition.
+    // MS VBA: Returns the Borders collection for the condition.
     // Status: implemented
     virtual css::uno::Any SAL_CALL Borders( const css::uno::Any& Index );
-    // MS Excel VBA: Returns the Font object for the condition's text.
+    // MS VBA: Returns the Font object for the condition's text.
     // Status: implemented
     virtual css::uno::Reference< ::ooo::vba::excel::XFont > SAL_CALL Font(  );
     // XHelperInterface

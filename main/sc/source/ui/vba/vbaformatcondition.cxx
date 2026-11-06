@@ -50,6 +50,9 @@ ScVbaFormatCondition::ScVbaFormatCondition(  const uno::Reference< XHelperInterf
 }
 
 
+// MS VBA: FormatCondition.Delete - Deletes the object.
+// Compliance: implemented - removes the condition (and its style) via FormatConditions helper,
+// then notifies the parent range to refresh conditional format state.
 void SAL_CALL
 ScVbaFormatCondition::Delete(  )
 {
@@ -58,6 +61,13 @@ ScVbaFormatCondition::Delete(  )
         notifyRange();
 }
 
+// MS VBA: FormatCondition.Modify - Modifies an existing conditional format.
+// Parameters (MS): Type (Required, XlFormatConditionType: xlCellValue=1, xlExpression=2),
+//   Operator (Optional, XlFormatConditionOperator; ignored if Type is xlExpression),
+//   Formula1 (Optional, Variant: constant/string/cell ref/formula),
+//   Formula2 (Optional, Variant: used for xlBetween/xlNotBetween).
+// Compliance: implemented via remove+re-add pattern. Removes the existing condition (keeping
+// style state as handled by helper) and re-adds with new parameters and the current style.
 void SAL_CALL
 ScVbaFormatCondition::Modify( ::sal_Int32 _nType, const uno::Any& _aOperator, const uno::Any& _aFormula1, const uno::Any& _aFormula2 )
 {

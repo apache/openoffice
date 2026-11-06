@@ -327,8 +327,19 @@ ScVbaWorkbook::SaveCopyAs( const rtl::OUString& sFileName )
 	xStor->storeToURL( aURL, storeProps );
 }
 
-// MS Excel VBA: Saves the workbook with specified options.
-// Status: partial - only uses FileName and FileFormat; Password/WriteResPassword/ReadOnlyRecommended/CreateBackup ignored
+// MS VBA: Workbook.SaveAs - Saves changes to the workbook in a different file.
+// Syntax (MS): expression.SaveAs(FileName, FileFormat, Password, WriteResPassword,
+//   ReadOnlyRecommended, CreateBackup, AccessMode, ConflictResolution, AddToMru,
+//   TextCodepage, TextVisualLayout, Local)
+// Parameters implemented: FileName, FileFormat (mapped to AOO filter names; defaults to
+//   xlExcel9795/MS Excel 97 when omitted), Password, WriteResPassword, ReadOnlyRecommended,
+//   CreateBackup. Extension appended if FileName has no dot.
+// Not implemented (IDL takes 6 params): AccessMode, ConflictResolution, AddToMru,
+//   TextCodepage, TextVisualLayout, Local.
+// Remarks (MS): If no FileName path, Excel saves in current folder. FileFormat defaults to
+//   last format for existing file or Excel version format for new file.
+// Compliance: partial - core save-as with common formats works; several MS parameters and
+//   default-format semantics differ from Excel.
 void SAL_CALL
 ScVbaWorkbook::SaveAs( const css::uno::Any& FileName, const css::uno::Any& FileFormat, const css::uno::Any& Password, const css::uno::Any& WriteResPassword, const css::uno::Any& ReadOnlyRecommended, const css::uno::Any& CreateBackup )
 {
