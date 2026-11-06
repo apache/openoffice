@@ -75,7 +75,6 @@
 #include "gdimtftools.hxx"
 #include "drawinglayeranimation.hxx"
 
-#include <boost/bind.hpp>
 #include <math.h>
 
 using namespace ::com::sun::star;
@@ -214,17 +213,7 @@ namespace slideshow
             ViewShape::RenderArgs aViewRenderArgs = getViewRenderArgs();
             if( ::std::count_if( maViewShapes.begin(),
                                  maViewShapes.end(),
-                                 ::boost::bind<bool>(
-                                     ::boost::mem_fn( &ViewShape::update ), // though _theoretically_,
-                                     										// bind should eat this even
-                                     										// with _1 being a shared_ptr,
-                                     										// it does _not_ for MSVC without
-                                     										// the extra mem_fn. WTF.
-                                     _1,
-                                     ::boost::cref( mpCurrMtf ),
-                                     ::boost::cref( aViewRenderArgs ),
-                                     nUpdateFlags,
-                                     isVisible() ) )
+                                 [&](const auto& vs) { return vs->update( mpCurrMtf, aViewRenderArgs, nUpdateFlags, isVisible() ); } )
                 != static_cast<ViewShapeVector::difference_type>(maViewShapes.size()) )
             {
                 // at least one of the ViewShape::update() calls did return
@@ -365,8 +354,7 @@ namespace slideshow
 
                         // restore old transformation when leaving the scope
                         const ::comphelper::ScopeGuard aGuard(
-                            boost::bind( &::cppcanvas::Canvas::setTransformation,
-                                         pDestinationCanvas, aOldTransform ) );
+                            [&]() { pDestinationCanvas->setTransformation( aOldTransform ); } );
 
 
                         // retrieve bounds for subset of whole metafile
@@ -683,11 +671,7 @@ namespace slideshow
             // already added?
             if( ::std::find_if( maViewShapes.begin(),
                                 aEnd,
-                                ::boost::bind<bool>(
-                                    ::std::equal_to< ViewLayerSharedPtr >(),
-                                    ::boost::bind( &ViewShape::getViewLayer,
-                                                   _1 ),
-                                    ::boost::cref( rNewLayer ) ) ) != aEnd )
+                                [&rNewLayer](const auto& vs) { return rNewLayer == vs->getViewLayer(); } ) != aEnd )
             {
                 // yes, nothing to do
                 return;
@@ -720,22 +704,14 @@ namespace slideshow
 
             OSL_ENSURE( ::std::count_if(maViewShapes.begin(),
                                         aEnd,
-                                        ::boost::bind<bool>(
-                                            ::std::equal_to< ViewLayerSharedPtr >(),
-                                            ::boost::bind( &ViewShape::getViewLayer,
-                                                           _1 ),
-                                            ::boost::cref( rLayer ) ) ) < 2,
+                                        [&rLayer](const auto& vs) { return rLayer == vs->getViewLayer(); } ) < 2,
                         "DrawShape::removeViewLayer(): Duplicate ViewLayer entries!" );
 
             ViewShapeVector::iterator aIter;
 
             if( (aIter=::std::remove_if( maViewShapes.begin(),
                                          aEnd,
-                                         ::boost::bind<bool>(
-                                             ::std::equal_to< ViewLayerSharedPtr >(),
-                                             ::boost::bind( &ViewShape::getViewLayer,
-                                                            _1 ),
-                                             ::boost::cref( rLayer ) ) )) == aEnd )
+                                         [&rLayer](const auto& vs) { return rLayer == vs->getViewLayer(); } )) == aEnd )
             {
                 // view layer seemingly was not added, failed
                 return false;
@@ -1053,9 +1029,7 @@ namespace slideshow
                     pCanvas->setTransformation( aTransform /* empty */ );
 
                     comphelper::ScopeGuard const resetOldTransformation(
-                        boost::bind( &cppcanvas::Canvas::setTransformation,
-                                     pCanvas.get(),
-                                     boost::cref(aOldTransform) ));
+                        [&]() { pCanvas->setTransformation( aOldTransform ); } );
 
                     aTransform.scale( maBounds.getWidth(),
                                       maBounds.getHeight() );
