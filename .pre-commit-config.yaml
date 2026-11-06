@@ -73,7 +73,7 @@ repos:
         name: run codespell
         description: check spelling with codespell
         args: [--ignore-words=.github/linters/codespell.txt]
-        exclude: ^extras/
+        exclude: ^(extras/|test/odf-validate/fixtures/.*\.json$)
   - repo: https://github.com/igorshubovych/markdownlint-cli
     rev: v0.47.0
     hooks:

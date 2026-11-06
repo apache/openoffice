@@ -1144,7 +1144,7 @@ def doc_forms():
           TimeFormat=i * 2, Spin=(i == 0), StrictFormat=(i == 1), ReadOnly=(i == 1), RepeatDelay=30, Enabled=(i == 0), Printable=(i == 0),
           Tabstop=True, TabIndex=65 + i, HelpText="time tip", DataField="T", ConvertEmptyToNull=(i == 0), InputRequired=(i == 1))
     for i in range(2):
-        C(f1, "ListBox", "list%d" % i, StringItemList=("one", "two", "three"), 
+        C(f1, "ListBox", "list%d" % i, StringItemList=("one", "two", "three"),
           SelectedItems=uno.Any("[]short", (1,)) if i == 0 else uno.Any("[]short", (0, 2)),
           DefaultSelection=uno.Any("[]short", (2,)), Dropdown=(i == 0), MultiSelection=(i == 1), LineCount=4 + i,
           ListSourceType=enum("ListSourceType", "VALUELIST"), BoundColumn=i, Enabled=(i == 0), Printable=(i == 0), Tabstop=(i == 1),

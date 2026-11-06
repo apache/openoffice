@@ -1,7 +1,25 @@
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License.
+-->
+
 # DRAFT: Apache OpenOffice: ODF 1.2 implementation-defined values
 
 > **DRAFT. Work in progress, for discussion only.** This document has not been reviewed or approved by the Apache OpenOffice project and may change or be withdrawn. It is not an announcement, and it makes no claim that Apache OpenOffice conforms to ODF 1.2.
-
 
 ODF 1.2 Part 1 (section 2.3.1 B) requires a conforming producer to be accompanied by a document that defines the implementation-defined values it uses, and section 2.3.2 B asks an extended producer to document the foreign elements and attributes it writes. This document does both for Apache OpenOffice. It describes the behaviour of the OpenOffice development source of 2026-10-29 and is to be updated for the release that carries the claim.
 
@@ -159,6 +177,7 @@ AOO does not claim the Part 2 evaluator groups (Small, Medium, Large). The 77 im
 ## 6. Not documented
 
 These were looked at and not determined from the code:
+
 - Which default button is first when several are set in a form (the creation order of the control peers decides) (§19.265).
 - Formula functions beyond those listed that depend on the host locale (for example BAHTTEXT, ROMAN) (§19.642).
 - Option strings of the Excel-family link filters (§19.639).
