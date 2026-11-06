@@ -26,7 +26,7 @@
 
 #include <vector>
 
-#include <memory>
+#include <boost/scoped_array.hpp>
 #include <tuple>
 
 #include <tools/solar.h>
@@ -558,7 +558,7 @@ struct SAL_DLLPRIVATE XMLTextImportHelper::Impl
     //   will be assigned to the outline style
     // - data structure contains more than one candidate for each list level
     //   of the outline style
-    ::std::unique_ptr< ::std::vector< ::rtl::OUString []> >
+    ::boost::scoped_array< ::std::vector< ::rtl::OUString > >
         m_pOutlineStylesCandidates;
     // <--
 
