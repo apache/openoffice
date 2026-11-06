@@ -101,7 +101,6 @@
 #include "ViewShellHint.hxx"
 
 #include <sfx2/request.hxx>
-#include <boost/bind.hpp>
 
 #ifdef _MSC_VER
 #if (_MSC_VER < 1400)
@@ -937,16 +936,13 @@ sal_Bool DrawViewShell::SwitchPage(sal_uInt16 nSelectedPage)
     if (mbIsInSwitchPage)
         return sal_False;
     mbIsInSwitchPage = true;
-    comphelper::ScopeGuard aGuard (::boost::bind(LclResetFlag, ::boost::ref(mbIsInSwitchPage)));
+    comphelper::ScopeGuard aGuard ( [&]() { LclResetFlag( mbIsInSwitchPage ); } );
 
     if (GetActiveWindow()->IsInPaint())
     {
         // Switching the current page while a Paint is being executed is
         // dangerous.  So, post it for later execution and return.
-        maAsynchronousSwitchPageCall.Post(::boost::bind(
-            ::std::mem_fun(&DrawViewShell::SwitchPage),
-            this,
-            nSelectedPage));
+        maAsynchronousSwitchPageCall.Post([this, nSelectedPage]() { this->SwitchPage( nSelectedPage ); });
         return sal_False;
     }
 
