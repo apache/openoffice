@@ -44,7 +44,6 @@
 
 #include <rtl/ustrbuf.hxx>
 
-#include <boost/bind.hpp>
 #include <boost/iterator_adaptors.hpp>
 #ifndef BOOST_ITERATOR_ADAPTOR_DWA053000_HPP_ // from iterator_adaptors.hpp
 // N.B.: the check for the header guard _of a specific version of boost_
@@ -202,13 +201,11 @@ RDFaExportHelper::AddRDFa(
         ::comphelper::intersperse(
             ::boost::make_transform_iterator(
                 ::comphelper::stl_begin(rStatements),
-                ::boost::bind(&makeCURIE, &m_rExport,
-                    ::boost::bind(&rdf::Statement::Predicate, _1))),
+                [&](const auto& stmt) { return makeCURIE( &m_rExport, stmt.Predicate ); }),
             // argh, this must be the same type :(
             ::boost::make_transform_iterator(
                 ::comphelper::stl_end(rStatements),
-                ::boost::bind(&makeCURIE, &m_rExport,
-                    ::boost::bind(&rdf::Statement::Predicate, _1))),
+                [&](const auto& stmt) { return makeCURIE( &m_rExport, stmt.Predicate ); }),
             ::comphelper::OUStringBufferAppender(property),
             ::rtl::OUString::createFromAscii(" "));
 

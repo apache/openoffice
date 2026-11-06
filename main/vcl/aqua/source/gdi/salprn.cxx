@@ -24,7 +24,6 @@
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_vcl.hxx"
 
-#include <boost/bind.hpp>
 
 #include "vcl/print.hxx"
 #include "vcl/unohelp.hxx"
@@ -90,7 +89,7 @@ AquaSalInfoPrinter::AquaSalInfoPrinter( const SalPrinterQueueInfo& i_rQueue ) :
 
     const int nWidth = 100, nHeight = 100;
     maContextMemory.reset( reinterpret_cast<sal_uInt8*>( rtl_allocateMemory( nWidth * 4 * nHeight ) ),
-                           boost::bind( rtl_freeMemory, _1 ) );
+                            [](void* p) { rtl_freeMemory( p ); } );
 
     if( maContextMemory )
     {

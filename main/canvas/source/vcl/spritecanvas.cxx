@@ -71,17 +71,11 @@ namespace vclcanvas
         maPropHelper.addProperties(
             ::canvas::PropertySetHelper::MakeMap
             ("UnsafeScrolling",
-             boost::bind(&SpriteCanvasHelper::isUnsafeScrolling,
-                         boost::ref(maCanvasHelper)),
-             boost::bind(&SpriteCanvasHelper::enableUnsafeScrolling,
-                         boost::ref(maCanvasHelper),
-                         _1))
-            ("SpriteBounds",
-             boost::bind(&SpriteCanvasHelper::isSpriteBounds,
-                         boost::ref(maCanvasHelper)),
-             boost::bind(&SpriteCanvasHelper::enableSpriteBounds,
-                         boost::ref(maCanvasHelper),
-                         _1)));
+             [&]() { return maCanvasHelper.isUnsafeScrolling(); },
+             [&](auto& val) { maCanvasHelper.enableUnsafeScrolling( val ); })
+             ("SpriteBounds",
+             [&]() { return maCanvasHelper.isSpriteBounds(); },
+             [&](auto& val) { maCanvasHelper.enableSpriteBounds( val ); }));
 
         VERBOSE_TRACE( "VCLSpriteCanvas::initialize called" );
 

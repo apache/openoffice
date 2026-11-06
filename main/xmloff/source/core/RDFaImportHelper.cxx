@@ -38,7 +38,6 @@
 
 #include <rtl/ustring.hxx>
 
-#include <boost/bind.hpp>
 #include <boost/iterator_adaptors.hpp>
 #ifndef BOOST_ITERATOR_ADAPTOR_DWA053000_HPP_ // from iterator_adaptors.hpp
 // N.B.: the check for the header guard _of a specific version of boost_
@@ -361,14 +360,15 @@ void RDFaInserter::InsertRDFaEntry(
 
     predicates.reserve(i_rEntry.m_pRDFaAttributes->m_Properties.size());
 
+    auto makeURI = [this](const auto& prop) { return this->MakeURI( prop ); };
     ::std::remove_copy_if(
         ::boost::make_transform_iterator(
             i_rEntry.m_pRDFaAttributes->m_Properties.begin(),
-            ::boost::bind(&RDFaInserter::MakeURI, this, _1)),
+            makeURI),
         // argh, this must be the same type :(
         ::boost::make_transform_iterator(
             i_rEntry.m_pRDFaAttributes->m_Properties.end(),
-            ::boost::bind(&RDFaInserter::MakeURI, this, _1)),
+            makeURI),
         ::std::back_inserter(predicates),
         ref_is_null() );
         // compiles only on wntmsci12
@@ -490,7 +490,7 @@ void RDFaImportHelper::InsertRDFa(
     if (!xRepository.is()) return;
     RDFaInserter inserter(GetImport().GetComponentContext(), xRepository);
     ::std::for_each(m_RDFaEntries.begin(), m_RDFaEntries.end(),
-        ::boost::bind(&RDFaInserter::InsertRDFaEntry, &inserter, _1));
+        [&inserter](const auto& entry) { inserter.InsertRDFaEntry( entry ); });
 }
 
 } // namespace xmloff

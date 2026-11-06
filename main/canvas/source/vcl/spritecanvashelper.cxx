@@ -323,10 +323,7 @@ namespace vclcanvas
             // repaint all active sprites on top of background into
             // VDev.
             mpRedrawManager->forEachSprite(
-                ::boost::bind(
-                    &spriteRedraw,
-                    ::boost::ref( maVDev.get() ),
-                    _1 ) );
+                [&](auto& sprite) { spriteRedraw( maVDev.get(), sprite ); } );
 
             // flush to screen
             rOutDev.EnableMapMode( sal_False );
@@ -435,12 +432,9 @@ namespace vclcanvas
             // opaque sprite content)
 
             // repaint all affected sprites directly to output device
-            ::std::for_each( rUpdateArea.maComponentList.begin(),
-                             rUpdateArea.maComponentList.end(),
-                             ::boost::bind(
-                                 &spriteRedrawStub3,
-                                 ::boost::ref( rOutDev ),
-                                 _1 ) );
+                             ::std::for_each( rUpdateArea.maComponentList.begin(),
+                              rUpdateArea.maComponentList.end(),
+                              [&](auto& sprite) { spriteRedrawStub3( rOutDev, sprite ); } );
         }
         else
         {
@@ -464,12 +458,9 @@ namespace vclcanvas
             // sprite
             rOutDev.Push( PUSH_CLIPREGION );
             const Sprite::Reference& rSprite = aFirst->second.getSprite();
-            ::std::for_each( aUnscrollableAreas.begin(),
-                             aUnscrollableAreas.end(),
-                             ::boost::bind( &opaqueUpdateSpriteArea,
-                                            ::boost::cref(rSprite),
-                                            ::boost::ref(rOutDev),
-                                            _1 ) );
+                             ::std::for_each( aUnscrollableAreas.begin(),
+                              aUnscrollableAreas.end(),
+                              [&](auto& area) { opaqueUpdateSpriteArea( rSprite, rOutDev, area ); } );
             rOutDev.Pop();
         }
 
@@ -482,10 +473,7 @@ namespace vclcanvas
                                          ::basegfx::B2DRange( rDestRect ) );
         ::std::for_each( aUncoveredAreas.begin(),
                          aUncoveredAreas.end(),
-                         ::boost::bind( &repaintBackground,
-                                        ::boost::ref(rOutDev),
-                                        ::boost::ref(rBackOutDev),
-                                        _1 ) );
+                         [&](auto& area) { repaintBackground( rOutDev, rBackOutDev, area ); } );
     }
 
     void SpriteCanvasHelper::opaqueUpdate( const ::basegfx::B2DRange&                          rTotalArea,
@@ -510,10 +498,7 @@ namespace vclcanvas
         // repaint all affected sprites directly to output device
         ::std::for_each( rSortedUpdateSprites.begin(),
                          rSortedUpdateSprites.end(),
-                         ::boost::bind(
-                             &spriteRedrawStub,
-                             ::boost::ref( rOutDev ),
-                             _1 ) );
+                         [&](auto& sprite) { spriteRedrawStub( rOutDev, sprite ); } );
     }
 
     void SpriteCanvasHelper::genericUpdate( const ::basegfx::B2DRange&                          rRequestedArea,
@@ -588,10 +573,7 @@ namespace vclcanvas
         ::basegfx::B2DPoint aPoint = ::vcl::unotools::b2DPointFromPoint(aOutputPosition);
         ::std::for_each( rSortedUpdateSprites.begin(),
                          rSortedUpdateSprites.end(),
-                         ::boost::bind( &spriteRedrawStub2,
-                                        ::boost::ref( maVDev.get() ),
-                                        ::boost::cref( aPoint ),
-                                        _1 ) );
+                         [&](auto& sprite) { spriteRedrawStub2( maVDev.get(), aPoint, sprite ); } );
 
         // flush to screen
         rOutDev.EnableMapMode( sal_False );
@@ -683,11 +665,8 @@ namespace vclcanvas
             double nPixel(0.0);
 
             // accumulate pixel count for each sprite into fCount
-            mpRedrawManager->forEachSprite( ::boost::bind(
-                                                makeAdder(nPixel,1.0),
-                                                ::boost::bind(
-                                                    &calcNumPixel,
-                                                    _1 ) ) );
+            auto adder = makeAdder(nPixel, 1.0);
+            mpRedrawManager->forEachSprite( [adder](auto& sprite) { adder( calcNumPixel( sprite ) ); } );
 
             static const int NUM_VIRDEV(2);
             static const int BYTES_PER_PIXEL(3);

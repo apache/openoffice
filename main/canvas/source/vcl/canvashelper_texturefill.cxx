@@ -60,7 +60,6 @@
 
 #include <canvas/canvastools.hxx>
 #include <canvas/parametricpolypolygon.hxx>
-#include <boost/bind.hpp>
 
 #include "spritecanvas.hxx"
 #include "canvashelper.hxx"
@@ -772,9 +771,7 @@ namespace vclcanvas
                         std::transform(&rValues.maColors[0],
                                        &rValues.maColors[0]+rValues.maColors.getLength(),
                                        aColors.begin(),
-                                       boost::bind(
-                                           &vcl::unotools::stdColorSpaceSequenceToColor,
-                                           _1));
+                                        [](const auto& val) { return vcl::unotools::stdColorSpaceSequenceToColor( val ); }));
 
                         // TODO(E1): Return value
                         // TODO(F1): FillRule

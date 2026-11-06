@@ -39,7 +39,6 @@
 #include <editeng/colritem.hxx>
 #include <vcl/svapp.hxx>
 #include <svx/sidebar/ColorControl.hxx>
-#include <boost/bind.hpp>
 #include <svx/sidebar/PopupContainer.hxx>
 #include <CellLineStyleControl.hxx>
 #include <CellLineStylePopup.hxx>
@@ -81,8 +80,8 @@ svx::sidebar::PopupControl* CellAppearancePropertyPanel::CreateFillColorPopupCon
         mpBindings,
         ScResId(RID_POPUPPANEL_CELLAPPEARANCE_FILLCOLOR),
         ScResId(VS_FILLCOLOR),
-        ::boost::bind(GetTransparentColor),
-        ::boost::bind(&CellAppearancePropertyPanel::SetFillColor, this, _1, _2),
+        []() { return GetTransparentColor(); },
+        [this](auto& a1, auto& a2) { this->SetFillColor( a1, a2 ); },
         pParent,
         &aResId);
 }
@@ -105,8 +104,8 @@ svx::sidebar::PopupControl* CellAppearancePropertyPanel::CreateLineColorPopupCon
         mpBindings,
         ScResId(RID_POPUPPANEL_CELLAPPEARANCE_LINECOLOR),
         ScResId(VS_LINECOLOR),
-        ::boost::bind(GetTransparentColor),
-        ::boost::bind(&CellAppearancePropertyPanel::SetLineColor, this, _1, _2),
+        []() { return GetTransparentColor(); },
+        [this](auto& a1, auto& a2) { this->SetLineColor( a1, a2 ); },
         pParent,
         0);
 }
@@ -239,8 +238,8 @@ CellAppearancePropertyPanel::CellAppearancePropertyPanel(
     mbTLBR(false),
     mbBLTR(false),
 
-    maFillColorPopup(this, ::boost::bind(&CellAppearancePropertyPanel::CreateFillColorPopupControl, this, _1)),
-    maLineColorPopup(this, ::boost::bind(&CellAppearancePropertyPanel::CreateLineColorPopupControl, this, _1)),
+    maFillColorPopup(this, [this](const auto& param) { return this->CreateFillColorPopupControl( param ); }),
+    maLineColorPopup(this, [this](const auto& param) { return this->CreateLineColorPopupControl( param ); }),
     mpCellLineStylePopup(),
     mpCellBorderStylePopup(),
 
@@ -370,7 +369,7 @@ IMPL_LINK(CellAppearancePropertyPanel, TbxCellBorderSelectHdl, ToolBox*, pToolBo
             mpCellBorderStylePopup.reset(
                 new CellBorderStylePopup(
                     this,
-                    ::boost::bind(&CellAppearancePropertyPanel::CreateCellBorderStylePopupControl, this, _1)));
+                    [this](const auto& param) { return this->CreateCellBorderStylePopupControl( param ); }));
         }
 
         if(mpCellBorderStylePopup.get())
@@ -394,7 +393,7 @@ IMPL_LINK(CellAppearancePropertyPanel, TbxLineStyleSelectHdl, ToolBox*, pToolBox
             mpCellLineStylePopup.reset(
                 new CellLineStylePopup(
                     this,
-                    ::boost::bind(&CellAppearancePropertyPanel::CreateCellLineStylePopupControl, this, _1)));
+                    [this](const auto& param) { return this->CreateCellLineStylePopupControl( param ); }));
         }
 
         if(mpCellLineStylePopup.get())

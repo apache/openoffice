@@ -24,7 +24,6 @@
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_canvas.hxx"
 
-#include <boost/bind.hpp>
 #include <basegfx/polygon/b2dpolygoncutandtouch.hxx>
 #include <basegfx/polygon/b2dpolygontriangulator.hxx>
 #include <basegfx/polygon/b2dpolypolygontools.hxx>
@@ -109,11 +108,7 @@ namespace canvas
 	{
 		::std::for_each( maSurfaceList.begin(),
                          maSurfaceList.end(),
-						 ::boost::bind( &Surface::draw,
-                                        _1,
-                                        fAlpha,
-                                        ::boost::cref(rPos),
-                                        ::boost::cref(rTransform)));
+                         [&](auto& surface) { surface->draw( fAlpha, rPos, rTransform ); } );
 
 		return true;
 	}
@@ -129,12 +124,7 @@ namespace canvas
 	{
 		::std::for_each( maSurfaceList.begin(),
                          maSurfaceList.end(),
-						 ::boost::bind(&Surface::drawRectangularArea,
-                                       _1,
-                                       fAlpha,
-                                       ::boost::cref(rPos),
-                                       ::boost::cref(rArea),
-                                       ::boost::cref(rTransform)));
+                         [&](auto& surface) { surface->drawRectangularArea( fAlpha, rPos, rArea, rTransform ); } );
 
 		return true;
 	}
@@ -166,12 +156,7 @@ namespace canvas
 
 		::std::for_each( maSurfaceList.begin(),
                          maSurfaceList.end(),
-						 ::boost::bind(&Surface::drawWithClip,
-                                       _1,
-                                       fAlpha,
-                                       ::boost::cref(rPos),
-                                       ::boost::cref(rTriangulatedPolygon),
-                                       ::boost::cref(rTransform)));
+                         [&](auto& surface) { surface->drawWithClip( fAlpha, rPos, rTriangulatedPolygon, rTransform ); } );
 
 		return true;
 	}

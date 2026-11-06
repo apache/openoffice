@@ -31,7 +31,6 @@
 #include "tests.hxx"
 #include "com/sun/star/presentation/XSlideShowView.hpp"
 
-#include <boost/bind.hpp>
 
 namespace target = slideshow::internal;
 using namespace ::com::sun::star;
@@ -131,20 +130,14 @@ private:
         if( std::find_if(
                 maViewLayers.begin(),
                 maViewLayers.end(),
-                boost::bind( std::equal_to< target::ViewLayerSharedPtr >(),
-                             boost::cref( rNewLayer ),
-                             boost::bind( std::select1st<ViewVector::value_type>(),
-                                          _1 ))) == maViewLayers.end() )
+                [&rNewLayer](const auto& entry) { return rNewLayer == entry.first; }) == maViewLayers.end() )
             throw std::exception();
 
         maViewLayers.erase(
             std::remove_if(
                 maViewLayers.begin(),
                 maViewLayers.end(),
-                boost::bind( std::equal_to< target::ViewLayerSharedPtr >(),
-                             boost::cref( rNewLayer ),
-                             boost::bind( std::select1st<ViewVector::value_type>(),
-                                          _1 ))));
+                [&rNewLayer](const auto& entry) { return rNewLayer == entry.first; }));
         return true;
     }
     virtual bool clearAllViewLayers()
