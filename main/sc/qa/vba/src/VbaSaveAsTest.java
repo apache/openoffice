@@ -31,20 +31,25 @@ import static org.junit.Assert.*;
 /**
  * P2: Tests for VBA Workbook.SaveAs API.
  *
- * Tests the following VBA object model features:
- * - ThisWorkbook.SaveAs with xlCSV format
- * - ThisWorkbook.SaveAs with xlExcel9795 format
- * - File creation verification after SaveAs
- * - SaveAs with overwrite behavior (second save to same path)
- * - SaveAs with default format (no explicit format parameter)
+ * MS VBA reference (mined from MicrosoftDocs/VBA-Docs, Workbook.SaveAs):
+ * Syntax: expression.SaveAs(FileName, FileFormat, Password, WriteResPassword,
+ *   ReadOnlyRecommended, CreateBackup, AccessMode, ConflictResolution, AddToMru,
+ *   TextCodepage, TextVisualLayout, Local)
+ * - FileName: name/path of file to save; if no full path, Excel saves in current folder.
+ * - FileFormat: XlFileFormat value; default for existing file is last format specified,
+ *   default for new file is format of Excel version being used.
+ * - Password/WriteResPassword: protection passwords (case-sensitive, <=15 chars).
+ * - ReadOnlyRecommended/CreateBackup/AccessMode/ConflictResolution/AddToMru: file behavior.
+ * - TextCodepage/TextVisualLayout: ignored for all languages in Excel (CSV/text saving uses
+ *   system locale code page/logical layout).
+ * - Local: True saves against Excel language; False (default) against VBA language.
  *
- * Reference Excel constants:
- * - xlCSV = 6
- * - xlExcel9795 = 43
- *
- * Test methodology: BASIC macros call SaveAs to save the document to a
- * temp path, then Java verifies the file exists on disk. Uses temp
- * directory created by Java for deterministic file operations.
+ * AOO compliance notes (vbaworkbook.cxx/SaveAs):
+ * - Implements FileName, FileFormat, Password, WriteResPassword, ReadOnlyRecommended,
+ *   CreateBackup. Appends extension if FileName has no dot. Defaults FileFormat to
+ *   xlExcel9795 (MS Excel 97 filter) when omitted.
+ * - AccessMode, ConflictResolution, AddToMru, TextCodepage, TextVisualLayout, Local are
+ *   not implemented (current XWorkbook.SaveAs IDL has 6 parameters).
  *
  * Result columns:
  * - Z column (index 25): numeric results (1 = success)

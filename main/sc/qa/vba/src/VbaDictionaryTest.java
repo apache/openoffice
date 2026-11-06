@@ -29,24 +29,28 @@ import static org.junit.Assert.*;
 /**
  * P3: Tests for VBA Scripting.Dictionary (ooo.vba.Scripting.Dictionary).
  *
- * Tests the following VBA object model features:
- * - CreateObject("Scripting.Dictionary") returns a Dictionary object
- * - Dictionary.Add adds key-value pairs
- * - Dictionary.Item (default property) get/set
- * - Dictionary.Exists checks if key exists
- * - Dictionary.Count returns number of items
- * - Dictionary.Remove removes a key
- * - Dictionary.RemoveAll removes all keys
- * - Dictionary.Keys returns array of keys
- * - Dictionary.Items returns array of values
- * - Dictionary.CompareMode get/set
- * - Dictionary.Key renames a key
+ * MS VBA reference (mined from MicrosoftDocs/VBA-Docs):
+ * - Add(key, item): Adds key/item pair; error if key already exists.
+ * - Exists(key): True if key exists, False otherwise.
+ * - Item(key) [default, read/write]: Returns/sets item for key. If key not found when
+ *   changing an item, a new key is created with newitem. If key not found when reading,
+ *   a new key is created and its item is left empty.
+ * - Remove(key): Removes key/item pair; error if key does not exist.
+ * - RemoveAll(): Removes all key/item pairs.
+ * - Keys(): Array of all existing keys.
+ * - Items(): Array of all items.
+ * - Count: Read-only Long number of key/item pairs.
+ * - CompareMode: vbUseCompareOption(-1), vbBinaryCompare(0), vbTextCompare(1),
+ *   vbDatabaseCompare(2). Changing CompareMode on a Dictionary that already contains data
+ *   causes an error.
+ * - Key(key) = newkey: Sets a key; run-time error if key not found.
  *
- * The AOO implementation (vbadictionary.cxx) matches the
- * Scripting.Dictionary interface. See XDictionary.idl.
- *
- * Test methodology: BASIC macros create Dictionary objects and exercise
- * methods. Results written to Z column (index 25).
+ * AOO compliance notes (vbadictionary.cxx/XDictionary.idl):
+ * - Implements Add/Exists/Item/Remove/RemoveAll/Keys/Items/Count/CompareMode and Key via
+ *   XInvocation. CompareMode is stored but "cannot change when non-empty" is not enforced
+ *   (see testCompareModeWithItems - currently lenient). Reading a missing Item returns an
+ *   empty Any rather than auto-creating an empty entry on read (behavioral difference from
+ *   strict VBA Item semantics).
  *
  * Result columns:
  * - Z column (index 25): numeric results

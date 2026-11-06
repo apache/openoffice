@@ -29,23 +29,28 @@ import static org.junit.Assert.*;
 /**
  * P1: Tests for VBA FormatCondition and FormatConditions APIs.
  *
- * Tests the following VBA object model features:
- * - Range.FormatConditions.Add with xlExpression and xlCellValue types
- * - FormatCondition.Type, Formula1, Formula2, Operator properties
- * - FormatCondition.Modify to change existing conditions
- * - FormatCondition.Delete to remove individual conditions
- * - FormatConditions.Delete to remove all conditions
- * - FormatConditions.Count and Item collection access
- * - For Each enumeration over FormatConditions
+ * MS VBA reference (mined from MicrosoftDocs/VBA-Docs):
+ * - FormatConditions.Add(Type, Operator, Formula1, Formula2): Adds a new conditional format.
+ *   Type is XlFormatConditionType (xlCellValue or xlExpression). Operator is
+ *   XlFormatConditionOperator (xlBetween, xlEqual, xlGreater, xlGreaterEqual, xlLess,
+ *   xlLessEqual, xlNotBetween, xlNotEqual); ignored if Type is xlExpression. Formula1/2
+ *   can be constant/string/cell ref/formula; Formula2 used for xlBetween/xlNotBetween.
+ * - FormatCondition.Modify(Type, Operator, Formula1, Formula2): Modifies an existing
+ *   conditional format with the same parameter semantics as Add.
+ * - FormatCondition.Delete: Deletes the object.
+ * - FormatCondition properties: Type, Operator, Formula1, Formula2, plus formatting
+ *   (Font, Borders, Interior, NumberFormat, etc.) and priority/scope properties.
+ *
+ * AOO compliance notes (vbaformatcondition*.cxx):
+ * - Core Add/Modify/Delete/Type/Operator/Formula1/Formula2 are implemented.
+ * - getA1Formula in FormatConditions currently does not convert R1C1 to A1 (hook/TODO).
+ * - Some Excel FormatCondition properties (Priority, StopIfTrue, AppliesTo, etc.) may be
+ *   absent depending on XFormatCondition.idl coverage.
  *
  * Reference Excel constants:
  * - XlFormatConditionType: xlCellValue=1, xlExpression=2
  * - XlFormatConditionOperator: xlBetween=1, xlEqual=3, xlGreater=5,
  *   xlGreaterEqual=7, xlLess=6, xlLessEqual=8, xlNotBetween=2, xlNotEqual=4
- *
- * Test methodology: BASIC macros exercise the VBA APIs and write results
- * to cells Z1, Z2, etc. (column 25). Java code verifies via UNO.
- * Follows AAA pattern with '@TestMethod' markers in comments.
  */
 public class VbaFormatConditionTest extends VbaCompatTest {
 

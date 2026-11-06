@@ -29,20 +29,22 @@ import static org.junit.Assert.*;
 /**
  * P3: Tests for VBA Range.QueryTable API.
  *
- * Tests the following VBA object model features:
- * - Range.QueryTable returns a QueryTable object (not Nothing)
- * - QueryTable.Refresh method (returns Boolean indicating if link was updated)
- * - QueryTable.Delete method (removes from internal link manager)
- * - QueryTable.Refresh with background query parameter
+ * MS VBA reference (mined from MicrosoftDocs/VBA-Docs):
+ * - QueryTable.Refresh(BackgroundQuery): Updates external data range. Returns Boolean -
+ *   True if query successfully completed or started; False if user cancels a
+ *   connection/parameter dialog. BackgroundQuery controls async behavior for SQL-based
+ *   QueryTables; if omitted, BackgroundQuery property determines mode.
+ * - QueryTable.Delete: Deletes the QueryTable object.
+ * - Excel QueryTable also exposes Connection, CommandText, Destination, Parameters,
+ *   BackgroundQuery, RefreshStyle, SaveData, and many TextFile*/Web* properties; AOO's
+ *   XQueryTable.idl currently exposes only Refresh/Delete.
  *
- * Note: The current AOO QueryTable implementation (vbaquerytable.cxx)
- * only implements Refresh and Delete. Properties like Connection,
- * CommandText, Destination are NOT implemented per the IDL.
- * Tests on a plain range (without external data links) verify that
- * these methods do not throw and return appropriate values.
- *
- * Test methodology: BASIC macros access Range.QueryTable and call
- * methods. Results written to Z column (index 25).
+ * AOO compliance notes (vbaquerytable.cxx):
+ * - Refresh searches LinkManager for an ScAreaLink whose destination contains the parent
+ *   range and updates it. Returns True if any matching area link was found/updated,
+ *   False otherwise. This is an area-link approximation, not full ODBC/SQL query behavior.
+ * - BackgroundQuery is accepted but not used for async control.
+ * - On a plain range with no external data link, tests expect Refresh to return False.
  *
  * Result columns:
  * - Z column (index 25): numeric results (1 = success/true, 0 = failure/false)
