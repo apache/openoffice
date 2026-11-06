@@ -29,7 +29,6 @@
 
 #include <sfx2/sidebar/Theme.hxx>
 
-#include <boost/bind.hpp>
 
 
 namespace sd { namespace sidebar {
@@ -45,7 +44,7 @@ NavigatorWrapper::NavigatorWrapper (
 		NULL,
 		SdResId(FLT_NAVIGATOR),
 		pBindings,
-		::boost::bind(&NavigatorWrapper::UpdateNavigator, this))
+		[this]() { this->UpdateNavigator(); })
 {
 	maNavigator.SetPosSizePixel(
 	Point(0,0),

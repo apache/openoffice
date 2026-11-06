@@ -81,7 +81,6 @@
 #include "ToolBarManager.hxx"
 #include "annotationmanager.hxx"
 
-#include <boost/bind.hpp>
 
 using namespace ::rtl;
 using namespace ::com::sun::star;
@@ -143,7 +142,7 @@ DrawViewShell::DrawViewShell( SfxViewFrame* pFrame, ViewShellBase& rViewShellBas
 , maTabControl(this, pParentWindow)
 , mbIsInSwitchPage(false),
   mpSelectionChangeHandler(new svx::sidebar::SelectionChangeHandler(
-          ::boost::bind(&DrawViewShell::GetSidebarContextName, this),
+          [this]() { return this->GetSidebarContextName(); },
           uno::Reference<frame::XController>(&rViewShellBase.GetDrawController()),
           sfx2::sidebar::EnumContext::Context_Default))
 
