@@ -26,7 +26,7 @@
 
 #include <vector>
 
-#include <boost/scoped_array.hpp>
+#include <memory>
 #include <tuple>
 
 #include <tools/solar.h>
@@ -92,6 +92,7 @@
 #include <txtlists.hxx>
 #include <xmloff/odffields.hxx>
 #include <comphelper/stlunosequence.hxx>
+#include <memory>
 
 using ::rtl::OUString;
 using ::rtl::OUStringBuffer;
@@ -557,14 +558,14 @@ struct SAL_DLLPRIVATE XMLTextImportHelper::Impl
     //   will be assigned to the outline style
     // - data structure contains more than one candidate for each list level
     //   of the outline style
-    ::boost::scoped_array< ::std::vector< ::rtl::OUString > >
+    ::std::unique_ptr< ::std::vector< ::rtl::OUString []> >
         m_pOutlineStylesCandidates;
     // <--
 
     // start range, xml:id, RDFa stuff
     typedef ::std::tuple<
         uno::Reference<text::XTextRange>, ::rtl::OUString,
-        ::boost::shared_ptr< ::xmloff::ParsedRDFaAttributes > >
+        ::std::shared_ptr< ::xmloff::ParsedRDFaAttributes > >
             BookmarkMapEntry_t;
     /// start ranges for open bookmarks
     ::std::map< ::rtl::OUString, BookmarkMapEntry_t,
@@ -636,7 +637,7 @@ struct SAL_DLLPRIVATE XMLTextImportHelper::Impl
         // <--
         ,   m_pRenameMap()
         // --> OD 2006-10-12 #i69629#
-        ,   m_pOutlineStylesCandidates( 0 )
+        ,   m_pOutlineStylesCandidates( nullptr )
         // <--
         ,   m_xServiceFactory( rModel, UNO_QUERY )
         ,   m_rSvXMLImport( rImport )
@@ -2721,7 +2722,7 @@ void XMLTextImportHelper::InsertBookmarkStartRange(
 	const OUString sName,
 	const Reference<XTextRange> & rRange,
     OUString const& i_rXmlId,
-    ::boost::shared_ptr< ::xmloff::ParsedRDFaAttributes > & i_rpRDFaAttributes)
+    ::std::shared_ptr< ::xmloff::ParsedRDFaAttributes > & i_rpRDFaAttributes)
 {
     m_pImpl->m_BookmarkStartRanges[sName] =
         ::std::make_tuple(rRange, i_rXmlId, i_rpRDFaAttributes);
@@ -2732,7 +2733,7 @@ sal_Bool XMLTextImportHelper::FindAndRemoveBookmarkStartRange(
 	const OUString sName,
 	Reference<XTextRange> & o_rRange,
     OUString & o_rXmlId,
-    ::boost::shared_ptr< ::xmloff::ParsedRDFaAttributes > & o_rpRDFaAttributes)
+    ::std::shared_ptr< ::xmloff::ParsedRDFaAttributes > & o_rpRDFaAttributes)
 {
     if (m_pImpl->m_BookmarkStartRanges.count(sName))
     {

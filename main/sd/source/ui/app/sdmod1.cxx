@@ -70,8 +70,8 @@
 #include "FactoryIds.hxx"
 #include "sdabstdlg.hxx"
 #include <memory>
-#include <boost/shared_ptr.hpp>
-#include <boost/scoped_array.hpp>
+#include <memory>
+#include <memory>
 #include "slideshow.hxx"
 
 #include <com/sun/star/document/XDocumentPropertiesSupplier.hpp>
@@ -96,7 +96,7 @@ public:
 private:
 	::sd::ViewShellBase& mrBase;
 	SdDrawDocument& mrDocument;
-	::boost::shared_ptr<SvMemoryStream> mpStream;
+	::std::shared_ptr<SvMemoryStream> mpStream;
 };
 
 
@@ -315,7 +315,7 @@ void SdModule::OutlineToImpress (SfxRequest& rRequest)
 						= dynamic_cast< ::sd::ViewShellBase*>(pViewFrame->GetViewShell());
 					if (pBase != NULL)
 					{
-						::boost::shared_ptr<FrameworkHelper> pHelper (
+						::std::shared_ptr<FrameworkHelper> pHelper (
 							FrameworkHelper::Instance(*pBase));
 						pHelper->RequestView(
 							FrameworkHelper::msOutlineViewURL,
@@ -691,7 +691,7 @@ SfxFrame* SdModule::ExecuteNewDocument( SfxRequest& rReq )
 								  ::sd::ViewShellBase::GetViewShellBase (
 									  pViewFrame);
 							OSL_ASSERT (pBase!=NULL);
-							::boost::shared_ptr<sd::ViewShell> pViewSh = pBase->GetMainViewShell();
+							::std::shared_ptr<sd::ViewShell> pViewSh = pBase->GetMainViewShell();
 							SdOptions* pOptions = GetSdOptions(pDoc->GetDocumentType());
 
 							if (pOptions && pViewSh.get())
@@ -954,7 +954,7 @@ OutlineToImpressFinalizer::OutlineToImpressFinalizer (
 		// the original stream.
 		mpStream.reset(new SvMemoryStream());
 		static const sal_Size nBufferSize = 4096;
-		::boost::scoped_array<sal_Int8> pBuffer (new sal_Int8[nBufferSize]);
+		::std::unique_ptr<sal_Int8[]> pBuffer (new sal_Int8[nBufferSize]);
 
 		sal_Size nReadPosition (0);
 		bool bLoop (true);

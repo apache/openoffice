@@ -64,7 +64,7 @@
 
 #include <boost/bind.hpp>
 #include <boost/function.hpp>
-#include <boost/scoped_array.hpp>
+#include <memory>
 #include <memory>
 #include <functional>
 
