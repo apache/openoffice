@@ -791,7 +791,7 @@ void SVGActionWriter::ImplWriteText( const Point& rPos, const String& rText,
 {
 	sal_Int32                               nLen = rText.Len(), i;
     Size                                    aNormSize;
-    ::std::unique_ptr< sal_Int32 >            apTmpArray;
+    ::std::unique_ptr< sal_Int32[] >          apTmpArray;
     ::std::unique_ptr< SvXMLElementExport >	apTransform;
     sal_Int32*                              pDX;
     Point                                   aPos;
