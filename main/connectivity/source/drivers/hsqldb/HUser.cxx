@@ -271,6 +271,7 @@ void SAL_CALL OHSQLUser::revokePrivileges( const ::rtl::OUString& objName, sal_I
 		sGrant += ::dbtools::quoteTableName(xMeta,objName,::dbtools::eInDataManipulation);
 		sGrant += ::rtl::OUString::createFromAscii(" FROM ");
 		sGrant += m_Name;
+		sGrant += ::rtl::OUString::createFromAscii(" RESTRICT");
 
 		Reference<XStatement> xStmt = m_xConnection->createStatement();
 		if(xStmt.is())
