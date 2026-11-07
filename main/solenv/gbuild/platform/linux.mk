@@ -89,7 +89,7 @@ gb_CXXFLAGS := \
 	-fuse-cxa-atexit \
 	-fvisibility-inlines-hidden \
 	-fvisibility=hidden \
-	-std=gnu++11 \
+	-std=gnu++17 \
 	-pipe \
 
 ifeq ($(CPUNAME),AARCH64)

@@ -32,9 +32,8 @@
 #include <iterator>
 
 #include <boost/utility.hpp>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <boost/shared_array.hpp>
-#include <boost/bind.hpp>
 
 #include <libxslt/security.h>
 #include <libxml/parser.h>
@@ -128,7 +127,7 @@ bool isInternalContext(librdf_node *i_pNode) throw ()
 ////////////////////////////////////////////////////////////////////////////
 
 // n.b.: librdf destructor functions dereference null pointers!
-//       so they need to be wrapped to be usable with boost::shared_ptr.
+//       so they need to be wrapped to be usable with std::shared_ptr.
 static void safe_librdf_free_world(librdf_world *const world)
 {
     if (world) { librdf_free_world(world); }
@@ -339,7 +338,7 @@ private:
               And of course this is not documented anywhere that I could find.
               So we allocate a single world, and refcount that.
      */
-    static boost::shared_ptr<librdf_world> m_pWorld;
+    static std::shared_ptr<librdf_world> m_pWorld;
     /// refcount
     static sal_uInt32 m_NumInstances;
     /// mutex for m_pWorld - redland is not as threadsafe as is often claimed
@@ -347,9 +346,9 @@ private:
 
     // NB: sequence of the shared pointers is important!
     /// librdf repository storage
-    boost::shared_ptr<librdf_storage> m_pStorage;
+    std::shared_ptr<librdf_storage> m_pStorage;
     /// librdf repository model
-    boost::shared_ptr<librdf_model> m_pModel;
+    std::shared_ptr<librdf_model> m_pModel;
 
     /// all named graphs
     NamedGraphMap_t m_NamedGraphs;
@@ -376,10 +375,10 @@ public:
 
     librdf_GraphResult(librdf_Repository *i_pRepository,
             ::osl::Mutex & i_rMutex,
-            boost::shared_ptr<librdf_stream> const& i_pStream,
-            boost::shared_ptr<librdf_node> const& i_pContext,
-            boost::shared_ptr<librdf_query>  const& i_pQuery =
-                boost::shared_ptr<librdf_query>() )
+            std::shared_ptr<librdf_stream> const& i_pStream,
+            std::shared_ptr<librdf_node> const& i_pContext,
+            std::shared_ptr<librdf_query>  const& i_pQuery =
+                std::shared_ptr<librdf_query>() )
         : m_xRep(i_pRepository)
         , m_rMutex(i_rMutex)
         , m_pQuery(i_pQuery)
@@ -403,9 +402,9 @@ private:
     // the query (in case this is a result of a graph query)
     // not that the redland documentation spells this out explicity, but
     // queries must be freed only after all the results are completely read
-    boost::shared_ptr<librdf_query>  const m_pQuery;
-    boost::shared_ptr<librdf_node>   const m_pContext;
-    boost::shared_ptr<librdf_stream> const m_pStream;
+    std::shared_ptr<librdf_query>  const m_pQuery;
+    std::shared_ptr<librdf_node>   const m_pContext;
+    std::shared_ptr<librdf_stream> const m_pStream;
 
     librdf_node* getContext() const;
 };
@@ -475,8 +474,8 @@ public:
 
     librdf_QuerySelectResult(librdf_Repository *i_pRepository,
             ::osl::Mutex & i_rMutex,
-            boost::shared_ptr<librdf_query>  const& i_pQuery,
-            boost::shared_ptr<librdf_query_results> const& i_pQueryResult,
+            std::shared_ptr<librdf_query>  const& i_pQuery,
+            std::shared_ptr<librdf_query_results> const& i_pQueryResult,
             uno::Sequence< ::rtl::OUString > const& i_rBindingNames )
         : m_xRep(i_pRepository)
         , m_rMutex(i_rMutex)
@@ -504,8 +503,8 @@ private:
     ::osl::Mutex & m_rMutex;
     // not that the redland documentation spells this out explicity, but
     // queries must be freed only after all the results are completely read
-    boost::shared_ptr<librdf_query>  m_pQuery;
-    boost::shared_ptr<librdf_query_results> m_pQueryResult;
+    std::shared_ptr<librdf_query>  m_pQuery;
+    std::shared_ptr<librdf_query_results> m_pQueryResult;
     uno::Sequence< ::rtl::OUString > m_BindingNames;
 };
 
@@ -711,7 +710,7 @@ librdf_NamedGraph::getStatements(
 
 ////////////////////////////////////////////////////////////////////////////
 
-boost::shared_ptr<librdf_world> librdf_Repository::m_pWorld;
+std::shared_ptr<librdf_world> librdf_Repository::m_pWorld;
 sal_uInt32 librdf_Repository::m_NumInstances = 0;
 osl::Mutex librdf_Repository::m_aMutex;
 
@@ -777,7 +776,7 @@ librdf_Repository::getSupportedServiceNames()
 uno::Reference< rdf::XBlankNode > SAL_CALL librdf_Repository::createBlankNode()
 {
     ::osl::MutexGuard g(m_aMutex);
-    const boost::shared_ptr<librdf_node> pNode(
+    const std::shared_ptr<librdf_node> pNode(
         librdf_new_node_from_blank_identifier(m_pWorld.get(), NULL),
         safe_librdf_free_node);
     if (!pNode) {
@@ -866,7 +865,7 @@ librdf_Repository::importGraph(::sal_Int16 i_Format,
     const ::rtl::OString context(
         ::rtl::OUStringToOString(contextU, RTL_TEXTENCODING_UTF8) );
 
-    const boost::shared_ptr<librdf_node> pContext(
+    const std::shared_ptr<librdf_node> pContext(
         librdf_new_node_from_uri_string(m_pWorld.get(),
             reinterpret_cast<const unsigned char*> (context.getStr())),
         safe_librdf_free_node);
@@ -878,7 +877,7 @@ librdf_Repository::importGraph(::sal_Int16 i_Format,
 
     const ::rtl::OString baseURI(
         ::rtl::OUStringToOString(baseURIU, RTL_TEXTENCODING_UTF8) );
-    const boost::shared_ptr<librdf_uri> pBaseURI(
+    const std::shared_ptr<librdf_uri> pBaseURI(
         librdf_new_uri(m_pWorld.get(),
             reinterpret_cast<const unsigned char*> (baseURI.getStr())),
         safe_librdf_free_uri);
@@ -888,7 +887,7 @@ librdf_Repository::importGraph(::sal_Int16 i_Format,
             "librdf_new_uri failed"), *this);
     }
 
-    const boost::shared_ptr<librdf_parser> pParser(
+    const std::shared_ptr<librdf_parser> pParser(
         librdf_new_parser(m_pWorld.get(), "rdfxml", NULL, NULL),
         safe_librdf_free_parser);
     if (!pParser) {
@@ -906,7 +905,7 @@ librdf_Repository::importGraph(::sal_Int16 i_Format,
     const sal_Int64 sz( xSeekable.is() ? xSeekable->getLength() : 1 << 20 );
     // exceptions are propagated
     i_xInStream->readBytes( buf, static_cast<sal_Int32>( sz ) );
-    const boost::shared_ptr<librdf_stream> pStream(
+    const std::shared_ptr<librdf_stream> pStream(
         librdf_parser_parse_counted_string_as_stream(pParser.get(),
             reinterpret_cast<const unsigned char*>(buf.getConstArray()),
             buf.getLength(), pBaseURI.get()),
@@ -974,7 +973,7 @@ librdf_Repository::exportGraph(::sal_Int16 i_Format,
     const ::rtl::OString context(
         ::rtl::OUStringToOString(contextU, RTL_TEXTENCODING_UTF8) );
 
-    const boost::shared_ptr<librdf_node> pContext(
+    const std::shared_ptr<librdf_node> pContext(
         librdf_new_node_from_uri_string(m_pWorld.get(),
             reinterpret_cast<const unsigned char*> (context.getStr())),
         safe_librdf_free_node);
@@ -985,7 +984,7 @@ librdf_Repository::exportGraph(::sal_Int16 i_Format,
     }
     const ::rtl::OString baseURI(
         ::rtl::OUStringToOString(baseURIU, RTL_TEXTENCODING_UTF8) );
-    const boost::shared_ptr<librdf_uri> pBaseURI(
+    const std::shared_ptr<librdf_uri> pBaseURI(
         librdf_new_uri(m_pWorld.get(),
             reinterpret_cast<const unsigned char*> (baseURI.getStr())),
         safe_librdf_free_uri);
@@ -995,7 +994,7 @@ librdf_Repository::exportGraph(::sal_Int16 i_Format,
             "librdf_new_uri failed"), *this);
     }
 
-    const boost::shared_ptr<librdf_stream> pStream(
+    const std::shared_ptr<librdf_stream> pStream(
         librdf_model_context_as_stream(m_pModel.get(), pContext.get()),
         safe_librdf_free_stream);
     if (!pStream) {
@@ -1006,7 +1005,7 @@ librdf_Repository::exportGraph(::sal_Int16 i_Format,
     const char *format("rdfxml");
     // #i116443#: abbrev breaks when certain URIs are used as data types
 //    const char *format("rdfxml-abbrev");
-    const boost::shared_ptr<librdf_serializer> pSerializer(
+    const std::shared_ptr<librdf_serializer> pSerializer(
         librdf_new_serializer(m_pWorld.get(), format, NULL, NULL),
         safe_librdf_free_serializer);
     if (!pSerializer) {
@@ -1015,19 +1014,19 @@ librdf_Repository::exportGraph(::sal_Int16 i_Format,
             "librdf_new_serializer failed"), *this);
     }
 
-    const boost::shared_ptr<librdf_uri> pRelativeURI(
+    const std::shared_ptr<librdf_uri> pRelativeURI(
         librdf_new_uri(m_pWorld.get(), reinterpret_cast<const unsigned char*>
                 ("http://feature.librdf.org/raptor-relativeURIs")),
         safe_librdf_free_uri);
-    const boost::shared_ptr<librdf_uri> pWriteBaseURI(
+    const std::shared_ptr<librdf_uri> pWriteBaseURI(
         librdf_new_uri(m_pWorld.get(), reinterpret_cast<const unsigned char*>
             ("http://feature.librdf.org/raptor-writeBaseURI")),
         safe_librdf_free_uri);
-    const boost::shared_ptr<librdf_node> p0(
+    const std::shared_ptr<librdf_node> p0(
         librdf_new_node_from_literal(m_pWorld.get(),
             reinterpret_cast<const unsigned char*> ("0"), NULL, 0),
         safe_librdf_free_node);
-    const boost::shared_ptr<librdf_node> p1(
+    const std::shared_ptr<librdf_node> p1(
         librdf_new_node_from_literal(m_pWorld.get(),
             reinterpret_cast<const unsigned char*> ("1"), NULL, 0),
         safe_librdf_free_node);
@@ -1055,7 +1054,7 @@ librdf_Repository::exportGraph(::sal_Int16 i_Format,
     }
 
     size_t length;
-    const boost::shared_ptr<unsigned char> pBuf(
+    const std::shared_ptr<unsigned char> pBuf(
         librdf_serializer_serialize_stream_to_counted_string(
             pSerializer.get(), pBaseURI.get(), pStream.get(), &length), free);
     if (!pBuf) {
@@ -1075,10 +1074,9 @@ librdf_Repository::getGraphNames()
 {
     ::osl::MutexGuard g(m_aMutex);
     ::comphelper::SequenceAsVector< uno::Reference<rdf::XURI> > ret;
-    std::transform(m_NamedGraphs.begin(), m_NamedGraphs.end(),
-        std::back_inserter(ret),
-        boost::bind(&rdf::XNamedGraph::getName,
-            boost::bind(&NamedGraphMap_t::value_type::second, _1)));
+        std::transform(m_NamedGraphs.begin(), m_NamedGraphs.end(),
+            std::back_inserter(ret),
+            [](const std::pair<const ::rtl::OUString, ::rtl::Reference<librdf_NamedGraph>>& pair) { return pair.second->getName(); }));
     return ret.getAsConstList();
 }
 
@@ -1158,18 +1156,18 @@ librdf_Repository::getStatements(
         isMetadatableWithoutMetadata(i_xObject))
     {
         return new librdf_GraphResult(this, m_aMutex,
-            ::boost::shared_ptr<librdf_stream>(),
-            ::boost::shared_ptr<librdf_node>());
+            ::std::shared_ptr<librdf_stream>(),
+            ::std::shared_ptr<librdf_node>());
     }
 
     ::osl::MutexGuard g(m_aMutex);
-    const boost::shared_ptr<librdf_statement> pStatement(
+    const std::shared_ptr<librdf_statement> pStatement(
         m_TypeConverter.mkStatement(m_pWorld.get(),
             i_xSubject, i_xPredicate, i_xObject),
         safe_librdf_free_statement);
     OSL_ENSURE(pStatement, "mkStatement failed");
 
-    const boost::shared_ptr<librdf_stream> pStream(
+    const std::shared_ptr<librdf_stream> pStream(
         librdf_model_find_statements(m_pModel.get(), pStatement.get()),
         safe_librdf_free_stream);
     if (!pStream) {
@@ -1179,7 +1177,7 @@ librdf_Repository::getStatements(
     }
 
     return new librdf_GraphResult(this, m_aMutex, pStream,
-        ::boost::shared_ptr<librdf_node>());
+        ::std::shared_ptr<librdf_node>());
 }
 
 
@@ -1189,7 +1187,7 @@ librdf_Repository::querySelect(const ::rtl::OUString & i_rQuery)
     ::osl::MutexGuard g(m_aMutex);
     const ::rtl::OString query(
         ::rtl::OUStringToOString(i_rQuery, RTL_TEXTENCODING_UTF8) );
-    const boost::shared_ptr<librdf_query> pQuery(
+    const std::shared_ptr<librdf_query> pQuery(
         librdf_new_query(m_pWorld.get(), s_sparql, NULL,
             reinterpret_cast<const unsigned char*> (query.getStr()), NULL),
         safe_librdf_free_query);
@@ -1198,7 +1196,7 @@ librdf_Repository::querySelect(const ::rtl::OUString & i_rQuery)
             "librdf_Repository::querySelect: "
             "librdf_new_query failed"), *this);
     }
-    const boost::shared_ptr<librdf_query_results> pResults(
+    const std::shared_ptr<librdf_query_results> pResults(
         librdf_model_query_execute(m_pModel.get(), pQuery.get()),
         safe_librdf_free_query_results);
     if (!pResults || !librdf_query_results_is_bindings(pResults.get())) {
@@ -1238,7 +1236,7 @@ librdf_Repository::queryConstruct(const ::rtl::OUString & i_rQuery)
     ::osl::MutexGuard g(m_aMutex);
     const ::rtl::OString query(
         ::rtl::OUStringToOString(i_rQuery, RTL_TEXTENCODING_UTF8) );
-    const boost::shared_ptr<librdf_query> pQuery(
+    const std::shared_ptr<librdf_query> pQuery(
         librdf_new_query(m_pWorld.get(), s_sparql, NULL,
             reinterpret_cast<const unsigned char*> (query.getStr()), NULL),
         safe_librdf_free_query);
@@ -1247,7 +1245,7 @@ librdf_Repository::queryConstruct(const ::rtl::OUString & i_rQuery)
             "librdf_Repository::queryConstruct: "
             "librdf_new_query failed"), *this);
     }
-    const boost::shared_ptr<librdf_query_results> pResults(
+    const std::shared_ptr<librdf_query_results> pResults(
         librdf_model_query_execute(m_pModel.get(), pQuery.get()),
         safe_librdf_free_query_results);
     if (!pResults || !librdf_query_results_is_graph(pResults.get())) {
@@ -1255,7 +1253,7 @@ librdf_Repository::queryConstruct(const ::rtl::OUString & i_rQuery)
             "librdf_Repository::queryConstruct: "
             "query result is null or not graph"), *this);
     }
-    const boost::shared_ptr<librdf_stream> pStream(
+    const std::shared_ptr<librdf_stream> pStream(
         librdf_query_results_as_stream(pResults.get()),
         safe_librdf_free_stream);
     if (!pStream) {
@@ -1265,7 +1263,7 @@ librdf_Repository::queryConstruct(const ::rtl::OUString & i_rQuery)
     }
 
     return new librdf_GraphResult(this, m_aMutex, pStream,
-                                  ::boost::shared_ptr<librdf_node>(), pQuery);
+                                  ::std::shared_ptr<librdf_node>(), pQuery);
 }
 
 ::sal_Bool SAL_CALL
@@ -1275,7 +1273,7 @@ librdf_Repository::queryAsk(const ::rtl::OUString & i_rQuery)
 
     const ::rtl::OString query(
         ::rtl::OUStringToOString(i_rQuery, RTL_TEXTENCODING_UTF8) );
-    const boost::shared_ptr<librdf_query> pQuery(
+    const std::shared_ptr<librdf_query> pQuery(
         librdf_new_query(m_pWorld.get(), s_sparql, NULL,
             reinterpret_cast<const unsigned char*> (query.getStr()), NULL),
         safe_librdf_free_query);
@@ -1284,7 +1282,7 @@ librdf_Repository::queryAsk(const ::rtl::OUString & i_rQuery)
             "librdf_Repository::queryAsk: "
             "librdf_new_query failed"), *this);
     }
-    const boost::shared_ptr<librdf_query_results> pResults(
+    const std::shared_ptr<librdf_query_results> pResults(
         librdf_model_query_execute(m_pModel.get(), pQuery.get()),
         safe_librdf_free_query_results);
     if (!pResults || !librdf_query_results_is_boolean(pResults.get())) {
@@ -1405,10 +1403,9 @@ void SAL_CALL librdf_Repository::setStatementRDFa(
     } else {
         m_RDFaXHTMLContentSet.insert(sXmlId);
     }
-    ::std::for_each(::comphelper::stl_begin(i_rPredicates),
-        ::comphelper::stl_end(i_rPredicates),
-        ::boost::bind( &librdf_Repository::addStatementGraph,
-            this, i_xSubject, _1, xContent, xXmlId, true));
+        ::std::for_each(::comphelper::stl_begin(i_rPredicates),
+            ::comphelper::stl_end(i_rPredicates),
+            [this, &i_xSubject, &xContent, &xXmlId](uno::Reference< rdf::XURI >& predicate) { this->addStatementGraph( i_xSubject, predicate, xContent, xXmlId, true ); }));
 }
 
 void SAL_CALL librdf_Repository::removeStatementRDFa(
@@ -1512,18 +1509,18 @@ librdf_Repository::getStatementsRDFa(
         isMetadatableWithoutMetadata(i_xObject))
     {
         return new librdf_GraphResult(this, m_aMutex,
-            ::boost::shared_ptr<librdf_stream>(),
-            ::boost::shared_ptr<librdf_node>());
+            ::std::shared_ptr<librdf_stream>(),
+            ::std::shared_ptr<librdf_node>());
     }
 
     ::osl::MutexGuard g(m_aMutex);
-    const boost::shared_ptr<librdf_statement> pStatement(
+    const std::shared_ptr<librdf_statement> pStatement(
         m_TypeConverter.mkStatement(m_pWorld.get(),
             i_xSubject, i_xPredicate, i_xObject),
         safe_librdf_free_statement);
     OSL_ENSURE(pStatement, "mkStatement failed");
 
-    const boost::shared_ptr<librdf_stream> pStream(
+    const std::shared_ptr<librdf_stream> pStream(
         librdf_model_find_statements(m_pModel.get(), pStatement.get()),
         safe_librdf_free_stream);
     if (!pStream) {
@@ -1540,7 +1537,7 @@ librdf_Repository::getStatementsRDFa(
     }
 
     return new librdf_GraphResult(this, m_aMutex, pStream,
-                                  ::boost::shared_ptr<librdf_node>());
+                                  ::std::shared_ptr<librdf_node>());
 }
 
 // ::com::sun::star::lang::XInitialization:
@@ -1579,7 +1576,7 @@ const NamedGraphMap_t::iterator SAL_CALL librdf_Repository::clearGraph(
     const ::rtl::OString context(
         ::rtl::OUStringToOString(contextU, RTL_TEXTENCODING_UTF8) );
 
-    const boost::shared_ptr<librdf_node> pContext(
+    const std::shared_ptr<librdf_node> pContext(
         librdf_new_node_from_uri_string(m_pWorld.get(),
             reinterpret_cast<const unsigned char*> (context.getStr())),
         safe_librdf_free_node);
@@ -1630,7 +1627,7 @@ void SAL_CALL librdf_Repository::addStatementGraph(
     const ::rtl::OString context(
         ::rtl::OUStringToOString(contextU, RTL_TEXTENCODING_UTF8) );
 
-    const boost::shared_ptr<librdf_node> pContext(
+    const std::shared_ptr<librdf_node> pContext(
         librdf_new_node_from_uri_string(m_pWorld.get(),
             reinterpret_cast<const unsigned char*> (context.getStr())),
         safe_librdf_free_node);
@@ -1639,7 +1636,7 @@ void SAL_CALL librdf_Repository::addStatementGraph(
             "librdf_Repository::addStatement: "
             "librdf_new_node_from_uri_string failed"), *this);
     }
-    const boost::shared_ptr<librdf_statement> pStatement(
+    const std::shared_ptr<librdf_statement> pStatement(
         m_TypeConverter.mkStatement(m_pWorld.get(),
             i_xSubject, i_xPredicate, i_xObject),
         safe_librdf_free_statement);
@@ -1649,7 +1646,7 @@ void SAL_CALL librdf_Repository::addStatementGraph(
     // librdf_model_add_statement disallows duplicates while
     // librdf_model_context_add_statement allows duplicates
     {
-        const boost::shared_ptr<librdf_stream> pStream(
+        const std::shared_ptr<librdf_stream> pStream(
             librdf_model_find_statements_in_context(m_pModel.get(),
                 pStatement.get(), pContext.get()),
             safe_librdf_free_stream);
@@ -1691,7 +1688,7 @@ void SAL_CALL librdf_Repository::removeStatementsGraph(
     const ::rtl::OString context(
         ::rtl::OUStringToOString(contextU, RTL_TEXTENCODING_UTF8) );
 
-    const boost::shared_ptr<librdf_node> pContext(
+    const std::shared_ptr<librdf_node> pContext(
         librdf_new_node_from_uri_string(m_pWorld.get(),
             reinterpret_cast<const unsigned char*> (context.getStr())),
         safe_librdf_free_node);
@@ -1700,13 +1697,13 @@ void SAL_CALL librdf_Repository::removeStatementsGraph(
             "librdf_Repository::removeStatements: "
             "librdf_new_node_from_uri_string failed"), *this);
     }
-    const boost::shared_ptr<librdf_statement> pStatement(
+    const std::shared_ptr<librdf_statement> pStatement(
         m_TypeConverter.mkStatement(m_pWorld.get(),
             i_xSubject, i_xPredicate, i_xObject),
         safe_librdf_free_statement);
     OSL_ENSURE(pStatement, "mkStatement failed");
 
-    const boost::shared_ptr<librdf_stream> pStream(
+    const std::shared_ptr<librdf_stream> pStream(
         librdf_model_find_statements_in_context(m_pModel.get(),
             pStatement.get(), pContext.get()),
         safe_librdf_free_stream);
@@ -1753,8 +1750,8 @@ librdf_Repository::getStatementsGraph(
         isMetadatableWithoutMetadata(i_xObject))
     {
         return new librdf_GraphResult(this, m_aMutex,
-            ::boost::shared_ptr<librdf_stream>(),
-            ::boost::shared_ptr<librdf_node>());
+            ::std::shared_ptr<librdf_stream>(),
+            ::std::shared_ptr<librdf_node>());
     }
 
     ::osl::MutexGuard g(m_aMutex);
@@ -1768,7 +1765,7 @@ librdf_Repository::getStatementsGraph(
     const ::rtl::OString context(
         ::rtl::OUStringToOString(contextU, RTL_TEXTENCODING_UTF8) );
 
-    const boost::shared_ptr<librdf_node> pContext(
+    const std::shared_ptr<librdf_node> pContext(
         librdf_new_node_from_uri_string(m_pWorld.get(),
             reinterpret_cast<const unsigned char*> (context.getStr())),
         safe_librdf_free_node);
@@ -1777,13 +1774,13 @@ librdf_Repository::getStatementsGraph(
             "librdf_Repository::getStatements: "
             "librdf_new_node_from_uri_string failed"), *this);
     }
-    const boost::shared_ptr<librdf_statement> pStatement(
+    const std::shared_ptr<librdf_statement> pStatement(
         m_TypeConverter.mkStatement(m_pWorld.get(),
             i_xSubject, i_xPredicate, i_xObject),
         safe_librdf_free_statement);
     OSL_ENSURE(pStatement, "mkStatement failed");
 
-    const boost::shared_ptr<librdf_stream> pStream(
+    const std::shared_ptr<librdf_stream> pStream(
         librdf_model_find_statements_in_context(m_pModel.get(),
             pStatement.get(), pContext.get()),
         safe_librdf_free_stream);
@@ -1940,7 +1937,7 @@ librdf_node* librdf_TypeConverter::mkNode( librdf_world* i_pWorld,
                 reinterpret_cast<const unsigned char*> (val.getStr()),
                 NULL, 0);
         } else {
-            const boost::shared_ptr<librdf_uri> pDatatype(
+            const std::shared_ptr<librdf_uri> pDatatype(
                 mkURI(i_pWorld, xType), safe_librdf_free_uri);
             ret = librdf_new_node_from_typed_literal(i_pWorld,
                 reinterpret_cast<const unsigned char*> (val.getStr()),

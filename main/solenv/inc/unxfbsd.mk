@@ -112,7 +112,7 @@ CFLAGS_NO_EXCEPTIONS=-fno-exceptions
 # code base still uses constructs deprecated in C++11 (notably std::auto_ptr and
 # dynamic exception specifications); those remain valid until C++17 and are kept
 # non-fatal via -Wno-error= below.
-CFLAGSCXX= -pipe $(ARCH_FLAGS) -std=gnu++11
+CFLAGSCXX= -pipe $(ARCH_FLAGS) -std=gnu++17
 .IF "$(HAVE_GCC_VISIBILITY_FEATURE)" == "TRUE"
 CFLAGSCXX += -fvisibility-inlines-hidden
 .ENDIF # "$(HAVE_GCC_VISIBILITY_FEATURE)" == "TRUE"
