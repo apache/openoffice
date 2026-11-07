@@ -298,7 +298,7 @@ void OTableHelper::refreshColumns()
             aSortedColumns.begin(),
             aSortedColumns.end(),
             ::std::insert_iterator< TStringVector >( aVector, aVector.begin() ),
-            ::std::select2nd< ::std::map< OrdinalPosition, ::rtl::OUString >::value_type >()
+            []( const ::std::map< OrdinalPosition, ::rtl::OUString >::value_type& _rPair ) { return _rPair.second; }
         );
 	}
 

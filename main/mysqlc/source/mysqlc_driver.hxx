@@ -28,9 +28,7 @@
 #include <com/sun/star/lang/XServiceInfo.hpp>
 
 #include <cppuhelper/compbase2.hxx>
-#include <preextstl.h>
 #include <cppconn/driver.h>
-#include <postextstl.h>
 #include <osl/module.h>
 
 namespace connectivity

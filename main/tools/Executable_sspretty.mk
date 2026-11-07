@@ -32,7 +32,6 @@ $(eval $(call gb_Executable_set_include,sspretty,\
 
 $(eval $(call gb_Executable_add_defs,sspretty,\
 	-D_TOOLS_STRINGLIST \
-	$(STLPORT_DEBUGFLAG) \
 ))
 
 $(eval $(call gb_Executable_add_linked_libs,sspretty,\

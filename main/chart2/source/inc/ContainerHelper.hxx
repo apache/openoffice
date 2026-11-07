@@ -150,7 +150,7 @@ template< class Map >
 {
     ::com::sun::star::uno::Sequence< typename Map::key_type > aResult( rCont.size());
     ::std::transform( rCont.begin(), rCont.end(), aResult.getArray(),
-                      ::std::select1st< typename Map::value_type >());
+                      []( const typename Map::value_type& _rPair ) { return _rPair.first; });
     return aResult;
 }
 
@@ -167,7 +167,7 @@ template< class Map >
 {
     ::com::sun::star::uno::Sequence< typename Map::mapped_type > aResult( rCont.size());
     ::std::transform( rCont.begin(), rCont.end(), aResult.getArray(),
-                      ::std::select2nd< typename Map::value_type >());
+                      []( const typename Map::value_type& _rPair ) { return _rPair.second; });
     return aResult;
 }
 

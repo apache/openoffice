@@ -44,9 +44,7 @@
 #include "accmap.hxx"
 #include <acccell.hxx>
 
-#ifndef _STLP_CFLOAT
 #include <cfloat>
-#endif
 
 #include <limits.h>
 

@@ -1076,7 +1076,7 @@ librdf_Repository::getGraphNames()
     ::comphelper::SequenceAsVector< uno::Reference<rdf::XURI> > ret;
         std::transform(m_NamedGraphs.begin(), m_NamedGraphs.end(),
             std::back_inserter(ret),
-            [](const std::pair<const ::rtl::OUString, ::rtl::Reference<librdf_NamedGraph>>& pair) { return pair.second->getName(); }));
+            [](const std::pair<const ::rtl::OUString, ::rtl::Reference<librdf_NamedGraph>>& pair) { return pair.second->getName(); });
     return ret.getAsConstList();
 }
 
@@ -1405,7 +1405,7 @@ void SAL_CALL librdf_Repository::setStatementRDFa(
     }
         ::std::for_each(::comphelper::stl_begin(i_rPredicates),
             ::comphelper::stl_end(i_rPredicates),
-            [this, &i_xSubject, &xContent, &xXmlId](uno::Reference< rdf::XURI >& predicate) { this->addStatementGraph( i_xSubject, predicate, xContent, xXmlId, true ); }));
+            [this, &i_xSubject, &xContent, &xXmlId](const uno::Reference< rdf::XURI >& predicate) { this->addStatementGraph( i_xSubject, predicate, xContent, xXmlId, true ); });
 }
 
 void SAL_CALL librdf_Repository::removeStatementRDFa(

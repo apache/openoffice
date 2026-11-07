@@ -716,7 +716,8 @@ namespace pcr
         }
 
         _rElementNames.resize( rMapUINameToElement.size() );
-        ::std::transform( rMapUINameToElement.begin(), rMapUINameToElement.end(), _rElementNames.begin(), ::std::select1st< MapStringToPropertySet::value_type >() );
+        ::std::transform( rMapUINameToElement.begin(), rMapUINameToElement.end(), _rElementNames.begin(),
+                          []( const MapStringToPropertySet::value_type& _rPair ) { return _rPair.first; } );
     }
 
     //--------------------------------------------------------------------

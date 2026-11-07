@@ -289,17 +289,11 @@ LINKFLAGSOPT=
 
 UWINAPILIB*=uwinapi.lib
 .IF "$(DYNAMIC_CRT)"!=""
-.IF "$(USE_STLP_DEBUG)" != ""
 LIBCMT=msvcrt.lib
-.ELSE  # "$(USE_STLP_DEBUG)" != ""
 LIBCMT=msvcrt.lib
-.ENDIF # "$(USE_STLP_DEBUG)" != ""
 .ELSE # "$(DYNAMIC_CRT)"!=""
-.IF "$(USE_STLP_DEBUG)" != ""
 LIBCMT=libcmt.lib
-.ELSE  # "$(USE_STLP_DEBUG)" != ""
 LIBCMT=libcmt.lib
-.ENDIF # "$(USE_STLP_DEBUG)" != ""
 .ENDIF # "$(DYNAMIC_CRT)"!=""
 
 STDOBJVCL=$(L)/salmain.obj
@@ -315,27 +309,16 @@ STDSHLCUIMT=$(LIBCMT) $(UWINAPILIB) kernel32.lib user32.lib oldnames.lib
 
 .IF "$(USE_SYSTEM_STL)" == "YES"
 .IF "$(DYNAMIC_CRT)"!=""
-.IF "$(USE_STLP_DEBUG)" != ""
 LIBCMT+= msvcprt.lib
 .ELSE
 LIBCMT+= msvcprt.lib
 .ENDIF
 .ELSE # "$(DYNAMIC_CRT)"==""
-.IF "$(USE_STLP_DEBUG)" != ""
 LIBCMT+= libcpmt.lib
 .ELSE
 LIBCMT+= libcpmt.lib
-.ENDIF "$(USE_STLP_DEBUG)" == ""
 .ENDIF # "$(DYNAMIC_CRT)"!=""
-.ELSE # !USE_SYSTEM_STL
-.IF "$(USE_STLP_DEBUG)" != ""
-LIBSTLPORT=stlport_vc71_stldebug.lib
-LIBSTLPORTST=stlport_vc71_stldebug_static.lib
-.ELSE
-LIBSTLPORT=stlport_vc71.lib
-LIBSTLPORTST=stlport_vc71_static.lib
-.ENDIF
-.ENDIF
+
 
 .IF "$(PROF_EDITION)" == ""
 ATL_INCLUDE*=$(COMPATH)/PlatformSDK/include/atl

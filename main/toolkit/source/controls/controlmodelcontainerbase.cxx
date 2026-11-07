@@ -300,7 +300,7 @@ void SAL_CALL ControlModelContainerBase::dispose(  )
 	::std::transform(
 		maModels.begin(), maModels.end(),				// source range
 		aChildModels.begin(),							// target location
-		::std::select1st< UnoControlModelHolder >( )	// operation to apply -> select the XControlModel part
+		[]( const UnoControlModelHolder& _rPair ) { return _rPair.first; }	// operation to apply -> select the XControlModel part
 	);
 
 	// now dispose
@@ -541,7 +541,7 @@ Sequence< ::rtl::OUString > ControlModelContainerBase::getElementNames()
 	::std::transform(
 		maModels.begin(), maModels.end(),				// source range
 		aNames.getArray(),								// target range
-		::std::select2nd< UnoControlModelHolder >()		// operator to apply: select the second element (the name)
+		[]( const UnoControlModelHolder& _rPair ) { return _rPair.second; }		// operator to apply: select the second element (the name)
 	);
 
 	return aNames;
@@ -726,7 +726,7 @@ Sequence< Reference< XControlModel > > SAL_CALL ControlModelContainerBase::getCo
 	::std::transform(
 			aSortedModels.begin(), aSortedModels.end(),
 			::std::copy( aUnindexedModels.begin(), aUnindexedModels.end(), aReturn.getArray() ),
-			::std::select2nd< MapIndexToModel::value_type >( )
+			[]( const MapIndexToModel::value_type& _rPair ) { return _rPair.second; }
 		);
 
 	return aReturn;

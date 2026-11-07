@@ -365,11 +365,7 @@ void RehearseTimingsActivity::viewRemoved( const UnoViewSharedPtr& rView )
     maViews.erase(
         std::remove_if(
             maViews.begin(), maViews.end(),
-            boost::bind(
-                std::equal_to<UnoViewSharedPtr>(),
-                rView,
-                // select view:
-                boost::bind( std::select1st<ViewsVecT::value_type>(), _1 ))),
+            [&rView]( const ViewsVecT::value_type& _rPair ) { return _rPair.first == rView; } ),
         maViews.end() );
 }
 
@@ -380,11 +376,7 @@ void RehearseTimingsActivity::viewChanged( const UnoViewSharedPtr& rView )
         std::find_if(
             maViews.begin(),
             maViews.end(),
-            boost::bind(
-                std::equal_to<UnoViewSharedPtr>(),
-                rView,
-                // select view:
-                boost::bind( std::select1st<ViewsVecT::value_type>(), _1 ))));
+            [&rView]( const ViewsVecT::value_type& _rPair ) { return _rPair.first == rView; } ))));
 
     OSL_ASSERT( aModifiedEntry != maViews.end() );
     if( aModifiedEntry == maViews.end() )

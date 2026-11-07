@@ -64,11 +64,7 @@ SHL1STDLIBS= \
 #.ENDIF
 
 .IF "$(COMEX)"=="8" || "$(COMEX)"=="10"
-.IF "$(USE_STLP_DEBUG)" != ""
-    SHL1STDLIBS+= $(ATL_LIB)$/atlsd.lib
-.ELSE
     SHL1STDLIBS+= $(ATL_LIB)$/atls.lib
-.ENDIF
 .ENDIF
 
 

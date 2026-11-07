@@ -25,14 +25,10 @@
 
 # setup INCLUDE variable for use by VC++
 .IF "$(GUI)$(COM)"=="WNTMSC"
-.IF "$(EXT_USE_STLPORT)"==""
 INCLUDE!:=. $(subst,/stl, $(SOLARINC))
-.ELSE			# "$(EXT_USE_STLPORT)"==""
-INCLUDE!:=. $(SOLARINC)
-.ENDIF			# "$(EXT_USE_STLPORT)"==""
+.ENDIF			# "$(GUI)$(COM)"=="WNTMSC"
 INCLUDE!:=$(INCLUDE:s/ -I/;/)
 .EXPORT : INCLUDE
-.ENDIF			# "$(GUI)$(COM)"=="WNTMSC"
 
 .IF "$(OS)"=="MACOSX"
 LDFLAGS!:=$(EXTRA_LINKFLAGS) $(LDFLAGS)

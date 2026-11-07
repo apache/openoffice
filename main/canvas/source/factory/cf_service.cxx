@@ -257,7 +257,7 @@ Sequence<OUString> CanvasFactory::getAvailableServiceNames()
     std::transform(m_aAvailableImplementations.begin(),
                    m_aAvailableImplementations.end(),
                    aServiceNames.getArray(),
-                   std::select1st<AvailPair>());
+                   []( const AvailPair& _rPair ) { return _rPair.first; });
     return aServiceNames;
 }
 
@@ -338,11 +338,7 @@ Reference<XInterface> CanvasFactory::lookupAndUse(
     CacheVector::iterator aMatch;
     if( (aMatch=std::find_if(m_aCachedImplementations.begin(),
                              aEnd,
-                             boost::bind(&OUString::equals,
-                                         boost::cref(serviceName),
-                                         boost::bind(
-                                             std::select1st<CachePair>(),
-                                             _1)))) != aEnd )
+                             [&serviceName]( const CachePair& _rPair ) { return OUString::equals( serviceName, _rPair.first ); }))) != aEnd )
     {
         Reference<XInterface> xCanvas( use( aMatch->second, args, xContext ) );
         if(xCanvas.is())
@@ -354,11 +350,7 @@ Reference<XInterface> CanvasFactory::lookupAndUse(
     AvailVector::const_iterator aAvailImplsMatch;
     if( (aAvailImplsMatch=std::find_if(m_aAvailableImplementations.begin(),
                                        aAvailEnd,
-                                       boost::bind(&OUString::equals,
-                                                   boost::cref(serviceName),
-                                                   boost::bind(
-                                                       std::select1st<AvailPair>(),
-                                                       _1)))) == aAvailEnd )
+                                       [&serviceName]( const AvailPair& _rPair ) { return OUString::equals( serviceName, _rPair.first ); }))) == aAvailEnd )
     {
         return Reference<XInterface>();
     }
@@ -367,11 +359,7 @@ Reference<XInterface> CanvasFactory::lookupAndUse(
     AvailVector::const_iterator aAAImplsMatch;
     if( (aAAImplsMatch=std::find_if(m_aAAImplementations.begin(),
                                     aAAEnd,
-                                    boost::bind(&OUString::equals,
-                                                boost::cref(serviceName),
-                                                boost::bind(
-                                                    std::select1st<AvailPair>(),
-                                                    _1)))) == aAAEnd )
+                                    [&serviceName]( const AvailPair& _rPair ) { return OUString::equals( serviceName, _rPair.first ); }))) == aAAEnd )
     {
         return Reference<XInterface>();
     }
@@ -380,11 +368,7 @@ Reference<XInterface> CanvasFactory::lookupAndUse(
     AvailVector::const_iterator aAccelImplsMatch;
     if( (aAccelImplsMatch=std::find_if(m_aAcceleratedImplementations.begin(),
                                        aAccelEnd,
-                                       boost::bind(&OUString::equals,
-                                                   boost::cref(serviceName),
-                                                   boost::bind(
-                                                       std::select1st<AvailPair>(),
-                                                       _1)))) == aAccelEnd )
+                                       [&serviceName]( const AvailPair& _rPair ) { return OUString::equals( serviceName, _rPair.first ); }))) == aAccelEnd )
     {
         return Reference<XInterface>();
     }

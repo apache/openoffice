@@ -1415,7 +1415,7 @@ uno::Sequence< ::rtl::OUString > SAL_CALL ChartDocumentWrapper::getAvailableServ
 
     ::std::transform( rMap.begin(), rMap.end(),
                       aResult.getArray(),
-                      ::std::select1st< tServiceNameMap::value_type >() );
+                      []( const tServiceNameMap::value_type& _rPair ) { return _rPair.first; } );
 
     return aResult;
 

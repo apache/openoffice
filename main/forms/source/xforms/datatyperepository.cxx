@@ -206,7 +206,7 @@ namespace xforms
             m_aRepository.begin(),
             m_aRepository.end(),
             aNames.getArray(),
-            ::std::select1st< Repository::value_type >()
+            []( const Repository::value_type& _rPair ) { return _rPair.first; }
         );
         return aNames;
     }

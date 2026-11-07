@@ -381,7 +381,7 @@ IMPL_LINK( TakeProgress, ClickCancelBtn, void*, EMPTYARG )
 IMPL_LINK( TakeProgress, CleanUpHdl, void*, EMPTYARG )
 {
 	TPGalleryThemeProperties*	mpBrowser = (TPGalleryThemeProperties*) GetParent();
-	::std::bit_vector           aRemoveEntries( mpBrowser->aFoundList.Count(), false );
+	::std::vector<bool>           aRemoveEntries( mpBrowser->aFoundList.Count(), false );
 	::std::vector< String >     aRemainingVector;
 	sal_uInt32                  i, nCount;
 

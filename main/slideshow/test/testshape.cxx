@@ -129,22 +129,20 @@ private:
     virtual bool removeViewLayer( const target::ViewLayerSharedPtr& rNewLayer )
     {
         if( std::find_if(
-                maViewLayers.begin(),
-                maViewLayers.end(),
-                boost::bind( std::equal_to< target::ViewLayerSharedPtr >(),
-                             boost::cref( rNewLayer ),
-                             boost::bind( std::select1st<ViewVector::value_type>(),
-                                          _1 ))) == maViewLayers.end() )
+                 maViewLayers.begin(),
+                 maViewLayers.end(),
+                 boost::bind( std::equal_to< target::ViewLayerSharedPtr >(),
+                              boost::cref( rNewLayer ),
+                              [&rNewLayer]( const ViewVector::value_type& _rPair ) { return _rPair.first == rNewLayer; } )) == maViewLayers.end() )
             throw std::exception();
 
         maViewLayers.erase(
             std::remove_if(
-                maViewLayers.begin(),
-                maViewLayers.end(),
-                boost::bind( std::equal_to< target::ViewLayerSharedPtr >(),
-                             boost::cref( rNewLayer ),
-                             boost::bind( std::select1st<ViewVector::value_type>(),
-                                          _1 ))));
+                 maViewLayers.begin(),
+                 maViewLayers.end(),
+                 boost::bind( std::equal_to< target::ViewLayerSharedPtr >(),
+                              boost::cref( rNewLayer ),
+                              [&rNewLayer]( const ViewVector::value_type& _rPair ) { return _rPair.first == rNewLayer; } ))));
         return true;
     }
     virtual bool clearAllViewLayers()

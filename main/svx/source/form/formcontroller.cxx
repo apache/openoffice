@@ -2671,10 +2671,7 @@ void FormController::updateAllDispatchers() const
     ::std::for_each(
         m_aFeatureDispatchers.begin(),
         m_aFeatureDispatchers.end(),
-        ::std::compose1(
-            UpdateAllListeners(),
-            ::std::select2nd< DispatcherContainer::value_type >()
-        )
+        []( const DispatcherContainer::value_type& _rPair ) { UpdateAllListeners()( _rPair.second ); }
     );
 }
 
@@ -4127,7 +4124,7 @@ void SAL_CALL FormController::invalidateAllFeatures(  )
         m_aFeatureDispatchers.begin(),
         m_aFeatureDispatchers.end(),
         aInterceptedFeatures.getArray(),
-        ::std::select1st< DispatcherContainer::value_type >()
+        []( const DispatcherContainer::value_type& _rPair ) { return _rPair.first; }
     );
 
     aGuard.clear();

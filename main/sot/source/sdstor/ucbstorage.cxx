@@ -85,7 +85,7 @@ static int nOpenFiles=0;
 static int nOpenStreams=0;
 #endif
 
-typedef ::cppu::WeakImplHelper2 < XInputStream, XSeekable > FileInputStreamWrapper_Base;
+typedef ::cppu::WeakImplHelper1 < XInputStream > FileInputStreamWrapper_Base;
 class FileStreamWrapper_Impl : public FileInputStreamWrapper_Base
 {
 protected:
@@ -97,7 +97,8 @@ public:
     FileStreamWrapper_Impl( const String& rName );
     virtual ~FileStreamWrapper_Impl();
 
-    //DECLARE_UNO3_AGG_DEFAULTS( FileStreamWrapper_Impl, FileInputStreamWrapper_Base);
+    virtual void SAL_CALL acquire() throw ();
+    virtual void SAL_CALL release() throw ();
 
     virtual void SAL_CALL seek( sal_Int64 _nLocation );
     virtual sal_Int64 SAL_CALL getPosition(  );
@@ -134,6 +135,16 @@ FileStreamWrapper_Impl::~FileStreamWrapper_Impl()
 
     if ( m_aURL.Len() )
         ::utl::UCBContentHelper::Kill( m_aURL );
+}
+
+void SAL_CALL FileStreamWrapper_Impl::acquire()
+{
+    OWeakObject::acquire();
+}
+
+void SAL_CALL FileStreamWrapper_Impl::release()
+{
+    OWeakObject::release();
 }
 
 //------------------------------------------------------------------------------

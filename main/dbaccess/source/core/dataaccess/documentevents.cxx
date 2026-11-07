@@ -230,7 +230,7 @@ namespace dbaccess
             m_pData->rEventsData.begin(),
             m_pData->rEventsData.end(),
             aNames.getArray(),
-            ::std::select1st< DocumentEventsData::value_type >()
+            []( const DocumentEventsData::value_type& _rPair ) { return _rPair.first; }
         );
         return aNames;
     }

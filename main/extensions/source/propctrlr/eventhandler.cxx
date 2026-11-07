@@ -842,7 +842,7 @@ namespace pcr
 
         StlSyntaxSequence< Property > aReturn( aOrderedProperties.size() );
         ::std::transform( aOrderedProperties.begin(), aOrderedProperties.end(), aReturn.begin(),
-            ::std::select2nd< ::std::map< EventId, Property >::value_type >() );
+            []( const ::std::map< EventId, Property >::value_type& _rPair ) { return _rPair.second; } );
         return aReturn;
     }
 

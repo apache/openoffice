@@ -27,9 +27,7 @@
 #include <com/sun/star/sdbc/XResultSetMetaData.hpp>
 
 #include <cppuhelper/implbase1.hxx>
-#include <preextstl.h>
 #include <cppconn/resultset_metadata.h>
-#include <postextstl.h>
 
 namespace connectivity
 {

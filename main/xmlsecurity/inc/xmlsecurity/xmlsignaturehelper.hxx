@@ -24,9 +24,7 @@
 #ifndef _XMLSECURITY_XMLSIGNATUREHELPER_HXX
 #define _XMLSECURITY_XMLSIGNATUREHELPER_HXX
 
-#ifndef _STLP_VECTOR
 #include <vector>
-#endif
 
 #include <tools/link.hxx>
 

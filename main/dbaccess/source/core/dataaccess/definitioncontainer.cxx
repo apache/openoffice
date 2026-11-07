@@ -110,10 +110,7 @@ ODefinitionContainer_Impl::const_iterator ODefinitionContainer_Impl::find( TCont
 	return ::std::find_if(
         m_aDefinitions.begin(),
         m_aDefinitions.end(),
-        ::std::compose1(
-			::std::bind( ::std::equal_to< TContentPtr >(), ::std::placeholders::_1, _pDefinition ),
-            ::std::select2nd< NamedDefinitions::value_type >()
-        )
+        [&_pDefinition]( const NamedDefinitions::value_type& _rPair ) { return _rPair.second == _pDefinition; }
     );
 }
 
@@ -123,10 +120,7 @@ ODefinitionContainer_Impl::iterator ODefinitionContainer_Impl::find( TContentPtr
 	return ::std::find_if(
         m_aDefinitions.begin(),
         m_aDefinitions.end(),
-        ::std::compose1(
-			::std::bind( ::std::equal_to< TContentPtr >(), ::std::placeholders::_1, _pDefinition ),
-            ::std::select2nd< NamedDefinitions::value_type >()
-        )
+        [&_pDefinition]( const NamedDefinitions::value_type& _rPair ) { return _rPair.second == _pDefinition; }
     );
 }
 

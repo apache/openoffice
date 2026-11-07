@@ -28,23 +28,23 @@
 
 // USED SERVICES
 	// BASE CLASSES
-#include <slist>
+#include <forward_list>
 	// COMPONENTS
 	// PARAMETERS
 
 
 
 template <class ELEM>
-class EStack : private std::slist<ELEM>
+class EStack : private std::forward_list<ELEM>
 {
   private:
-    typedef std::slist<ELEM>    base;
+    typedef std::forward_list<ELEM>    base;
     const base &        Base() const            { return *this; }
     base &              Base()                  { return *this; }
 
   public:
     typedef ELEM                                    value_type;
-    typedef typename std::slist<ELEM>::size_type    size_type;
+    typedef typename std::forward_list<ELEM>::size_type    size_type;
 
     // LIFECYCLE
 						EStack() 				{}

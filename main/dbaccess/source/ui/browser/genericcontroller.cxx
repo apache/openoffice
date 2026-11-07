@@ -1634,11 +1634,11 @@ Sequence< ::sal_Int16 > SAL_CALL OGenericUnoController::getSupportedCommandGroup
             aCmdHashMap.insert( CommandHashMap::value_type( aIter->second.GroupId, 0 ));
 
     Sequence< sal_Int16 > aCommandGroups( aCmdHashMap.size() );
-    ::std::transform( aCmdHashMap.begin(),
-        aCmdHashMap.end(),
-        aCommandGroups.getArray(),
-        ::std::select1st< CommandHashMap::value_type >()
-    );
+        ::std::transform( aCmdHashMap.begin(),
+            aCmdHashMap.end(),
+            aCommandGroups.getArray(),
+            []( const CommandHashMap::value_type& _rPair ) { return _rPair.first; }
+        );
 
     return aCommandGroups;
 }

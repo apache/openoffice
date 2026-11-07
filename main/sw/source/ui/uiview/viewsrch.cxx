@@ -25,7 +25,7 @@
 #include "precompiled_sw.hxx"
 
 
-#include <string> // HACK: prevent conflict between STLPORT and Workshop headers
+#include <string> 
 #include <hintids.hxx>
 #include <com/sun/star/util/SearchOptions.hpp>
 #include <svl/cjkoptions.hxx>

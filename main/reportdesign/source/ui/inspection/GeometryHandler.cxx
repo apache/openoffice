@@ -807,9 +807,7 @@ inspection::LineDescriptor SAL_CALL GeometryHandler::describePropertyLine(const 
                 {
                     // add function names
                     ::std::for_each( m_aFunctionNames.begin(), m_aFunctionNames.end(),
-                        ::std::compose1(
-                            ::boost::bind( &inspection::XStringListControl::appendListEntry, xListControl,_1 ),
-                            ::std::select1st<TFunctions::value_type>()));
+                        [&xListControl]( const TFunctions::value_type& _rPair ) { xListControl->appendListEntry( _rPair.first ); } );
                 }
                 else
                 {
@@ -1655,7 +1653,7 @@ void GeometryHandler::impl_fillFormulaList_nothrow(::std::vector< ::rtl::OUStrin
     if ( m_nDataFieldType == FUNCTION )
         ::std::transform(m_aDefaultFunctions.begin(),m_aDefaultFunctions.end(),::std::back_inserter(_out_rList),::boost::bind( &DefaultFunction::getName, _1 ));
     else if ( m_nDataFieldType == USER_DEF_FUNCTION )
-        ::std::transform(m_aFunctionNames.begin(),m_aFunctionNames.end(),::std::back_inserter(_out_rList),::std::select1st<TFunctions::value_type>());
+        ::std::transform(m_aFunctionNames.begin(),m_aFunctionNames.end(),::std::back_inserter(_out_rList),[]( const TFunctions::value_type& _rPair ) { return _rPair.first; });
 }
 // -----------------------------------------------------------------------------
 ::rtl::OUString GeometryHandler::impl_ConvertUIToMimeType_nothrow(const ::rtl::OUString& _sUIName) const

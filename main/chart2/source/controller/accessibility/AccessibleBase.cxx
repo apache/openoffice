@@ -268,7 +268,7 @@ bool AccessibleBase::ImplUpdateChildren()
         aAccChildren.reserve( aModelChildren.size());
         ::std::transform( m_aChildOIDMap.begin(), m_aChildOIDMap.end(),
                           ::std::back_inserter( aAccChildren ),
-                          ::std::select1st< ChildOIDMap::value_type >());
+                          []( const ChildOIDMap::value_type& _rPair ) { return _rPair.first; });
 
         ::std::sort( aModelChildren.begin(), aModelChildren.end());
 

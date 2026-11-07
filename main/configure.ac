@@ -648,9 +648,6 @@ AC_ARG_WITH(external-libtextcat-data,
 AC_ARG_WITH(system-redland,
 [  --with-system-redland   Use redland library already on system
 ],,)
-AC_ARG_WITH(stlport,
-[  --with-stlport         Only building --without-stlport is supported.
-], WITH_STLPORT=$withval , WITH_STLPORT=no)
 AC_ARG_WITH(jdk-home,
 [  --with-jdk-home         if you have installed JDK 1.3 or later on your system
                           please supply the path here.
@@ -3335,12 +3332,7 @@ dnl ===================================================================
 dnl Checks for what the default STL should be
 dnl ===================================================================
    AC_MSG_CHECKING([what the default STL should be])
-   DEFAULT_TO_STLPORT="no"
-if test "$WITH_STLPORT" != "no"; then
-   AC_MSG_ERROR([Option --with-stlport is no longer available.])
-else
    USE_SYSTEM_STL="YES"
-fi
 
 AC_SUBST(USE_SYSTEM_STL)
 

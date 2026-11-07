@@ -534,7 +534,7 @@ Convert::Types_t Convert::getTypes()
 {
     Types_t aTypes( maMap.size() );
     transform( maMap.begin(), maMap.end(), aTypes.getArray(),
-               select1st<Map_t::value_type>() );
+               []( const Map_t::value_type& _rPair ) { return _rPair.first; } );
     return aTypes;
 }
 
