@@ -623,18 +623,15 @@ void OFormLayerXMLImport_Impl::documentDone( )
     // process XForms-bindings; call registerXFormsValueBinding for each
     std::for_each( m_aXFormsValueBindings.begin(),
                    m_aXFormsValueBindings.end(),
-                   std::bind( bindXFormsValueBinding,
-                            rImport.GetModel(), std::placeholders::_1 ) );
+                    [&rImport](const ModelStringPair& pair) { bindXFormsValueBinding( rImport.GetModel(), pair ); } );
     // same for list bindings
     std::for_each( m_aXFormsListBindings.begin(),
                    m_aXFormsListBindings.end(),
-                   std::bind( bindXFormsListBinding,
-                            rImport.GetModel(), std::placeholders::_1 ) );
+                    [&rImport](const ModelStringPair& pair) { bindXFormsListBinding( rImport.GetModel(), pair ); } );
     // same for submissions
     std::for_each( m_aXFormsSubmissions.begin(),
                    m_aXFormsSubmissions.end(),
-                   std::bind( bindXFormsSubmission,
-                            rImport.GetModel(), std::placeholders::_1 ) );
+                    [&rImport](const ModelStringPair& pair) { bindXFormsSubmission( rImport.GetModel(), pair ); } );
 }
 
 //.........................................................................
