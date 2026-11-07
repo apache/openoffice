@@ -54,9 +54,11 @@ ifneq ($(origin CXX),default)
 gb_CXX := $(CXX)
 endif
 
+# The Windows API floor, Windows 7 SP1 -- the same values as
+# solenv/inc/wntmsci11.mk and wntmscx.mk, see there.
 gb_OSDEFS := \
-	-DWINVER=0x0500 \
-	-D_WIN32_IE=0x0500 \
+	-DWINVER=0x0601 \
+	-D_WIN32_WINNT=0x0601 \
 	-DNT351 \
 	-DWIN32 \
 	-DWNT \

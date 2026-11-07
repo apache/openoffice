@@ -273,7 +273,25 @@ public:
 		OSL_ASSERT(prt);
 		replacement_table_t::iterator iter = prt->find(Text);
 		if (iter != prt->end())
+		{
 			Text = iter->second;
+			return;
+		}
+
+		// Not translated into this language (typically a string newer than the
+		// last translation round): fall back to en-US.  Without this the raw
+		// placeholder, e.g. "%RUNTIME_FAILED%", ends up in the resource and is
+		// what a non-English user sees.  Looked up with find(), not
+		// get_replacement_table(), which would create a table and with it an
+		// extra language section in the output.
+		iso_lang_replacement_table_t::iterator en =
+			iso_lang_replacement_table_.find("en-US");
+		if (en != iso_lang_replacement_table_.end())
+		{
+			iter = en->second->find(Text);
+			if (iter != en->second->end())
+				Text = iter->second;
+		}
 	}
 
 	void add_substitution(
