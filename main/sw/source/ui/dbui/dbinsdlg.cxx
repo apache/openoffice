@@ -1223,7 +1223,7 @@ void SwInsertDBColAutoPilot::DataToDoc( const Sequence<Any>& rSelection,
 				break;
 
 			if( 10 == i )
-				pWait = ::std::unique_ptr<SwWait>(new SwWait( *pView->GetDocShell(), true ));
+				pWait = ::std::make_unique<SwWait>( *pView->GetDocShell(), true );
 		}
 
         rSh.MoveTable( GetfnTableCurr(), GetfnTableStart() );
@@ -1455,7 +1455,7 @@ void SwInsertDBColAutoPilot::DataToDoc( const Sequence<Any>& rSelection,
 					rSh.SwEditShell::SplitNode();
 
 				if( 10 == i )
-					pWait = ::std::unique_ptr<SwWait>(new SwWait( *pView->GetDocShell(), true ));
+			pWait = ::std::make_unique<SwWait>( *pView->GetDocShell(), true );
 			}
 
 			if( !bSetCrsr && pMark != NULL)

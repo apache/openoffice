@@ -526,13 +526,9 @@ XmlIdRegistryDocument::XmlIdRegistry_Impl::LookupElement(
     {
         const XmlIdList_t::const_iterator iter(
             ::std::find_if(pList->begin(), pList->end(),
-                ::boost::bind(
-                    ::std::logical_not<bool>(),
-                        ::boost::bind(
-                            ::std::logical_or<bool>(),
-                                ::boost::bind( &Metadatable::IsInUndo, _1 ),
-                                ::boost::bind( &Metadatable::IsInClipboard, _1 )
-            ) ) ) );
+                [](Metadatable* pElem) {
+                    return !pElem->IsInUndo() && !pElem->IsInClipboard();
+                } ));
         if (iter != pList->end())
         {
             return *iter;
@@ -587,13 +583,9 @@ XmlIdRegistryDocument::XmlIdRegistry_Impl::TryInsertMetadatable(
             // if all elements in the list are deleted (in undo) or
             // placeholders, then "steal" the id from them
             if ( pList->end() == ::std::find_if(pList->begin(), pList->end(),
-                ::boost::bind(
-                    ::std::logical_not<bool>(),
-                        ::boost::bind(
-                            ::std::logical_or<bool>(),
-                                ::boost::bind( &Metadatable::IsInUndo, _1 ),
-                                ::boost::bind( &Metadatable::IsInClipboard, _1 )
-                ) ) ) )
+                [](Metadatable* pElem) {
+                    return !pElem->IsInUndo() && !pElem->IsInClipboard();
+                } ))
             {
 // ???  this is not undoable
 //                pList->clear();

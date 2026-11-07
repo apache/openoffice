@@ -659,7 +659,7 @@ SvxThesaurusDialog::SvxThesaurusDialog(
 
 	SvxStandardDialog( pParent, CUI_RES( RID_SVXDLG_THESAURUS ) )
 {
-    m_pImpl = std::unique_ptr< SvxThesaurusDialog_Impl >(new SvxThesaurusDialog_Impl( this ));
+    m_pImpl = std::make_unique< SvxThesaurusDialog_Impl >( this );
 
     m_pImpl->xThesaurus = xThes;
     m_pImpl->aLookUpText = OUString( rWord );

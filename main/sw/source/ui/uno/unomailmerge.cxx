@@ -778,7 +778,7 @@ uno::Any SAL_CALL SwXMailMerge::execute(
             aMergeDesc.bSendAsAttachment = bSendAsAttachment;
 
             aMergeDesc.bCreateSingleFile = sal_False;
-            pMMConfigItem = std::unique_ptr< SwMailMergeConfigItem >(new SwMailMergeConfigItem);
+            pMMConfigItem = std::make_unique< SwMailMergeConfigItem >();
             aMergeDesc.pMailMergeConfigItem = pMMConfigItem.get();
             aMergeDesc.xSmtpServer = SwMailMergeHelper::ConnectToSmtpServer(
                     *pMMConfigItem,

@@ -515,7 +515,7 @@ SfxTabPage* SfxSecurityPage::Create( Window * pParent, const SfxItemSet & rItemS
 SfxSecurityPage::SfxSecurityPage( Window* pParent, const SfxItemSet& rItemSet ) :
     SfxTabPage( pParent, SfxResId( TP_DOCINFOSECURITY ), rItemSet )
 {
-    m_pImpl = std::unique_ptr< SfxSecurityPage_Impl >(new SfxSecurityPage_Impl( *this, rItemSet ));
+    m_pImpl = std::make_unique< SfxSecurityPage_Impl >( *this, rItemSet );
 
     FreeResource();
 }
