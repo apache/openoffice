@@ -40,7 +40,7 @@ namespace jni_uno
 //------------------------------------------------------------------------------
 inline rtl_mem * seq_allocate( sal_Int32 nElements, sal_Int32 nSize )
 {
-    auto_ptr< rtl_mem > seq(
+    std::unique_ptr< rtl_mem > seq(
         rtl_mem::allocate( SAL_SEQUENCE_HEADER_SIZE + (nElements * nSize) ) );
     uno_Sequence * p = (uno_Sequence *)seq.get();
     p->nRefCount = 1;
@@ -132,7 +132,7 @@ void createDefaultUnoValue(
 
     case typelib_TypeClass_SEQUENCE:
         {
-            auto_ptr< rtl_mem > seq(seq_allocate(0, 0));
+            std::unique_ptr< rtl_mem > seq(seq_allocate(0, 0));
             if (assign) {
                 uno_type_destructData(uno_data, type, 0);
             }
@@ -599,7 +599,7 @@ void Bridge::map_to_uno(
                 }
                 else
                 {
-                    auto_ptr< rtl_mem > mem(
+                    std::unique_ptr< rtl_mem > mem(
                         rtl_mem::allocate( sizeof (sal_Int64) ) );
                     *(jlong *) mem.get() = jni->CallLongMethodA(
                         java_data.l, m_jni_info->m_method_Long_longValue, 0 );
@@ -617,7 +617,7 @@ void Bridge::map_to_uno(
                 }
                 else
                 {
-                    auto_ptr< rtl_mem > mem(
+                    std::unique_ptr< rtl_mem > mem(
                         rtl_mem::allocate( sizeof (float) ) );
                     *(jfloat *) mem.get() = jni->CallFloatMethodA(
                         java_data.l, m_jni_info->m_method_Float_floatValue, 0 );
@@ -637,7 +637,7 @@ void Bridge::map_to_uno(
                 }
                 else
                 {
-                    auto_ptr< rtl_mem > mem(
+                    std::unique_ptr< rtl_mem > mem(
                         rtl_mem::allocate( sizeof (double) ) );
                     *(jdouble *) mem.get() =
                         jni->CallDoubleMethodA(
@@ -668,7 +668,7 @@ void Bridge::map_to_uno(
             case typelib_TypeClass_STRUCT:
             case typelib_TypeClass_EXCEPTION:
             {
-                auto_ptr< rtl_mem > mem(
+                std::unique_ptr< rtl_mem > mem(
                     rtl_mem::allocate( value_td.get()->nSize ) );
                 map_to_uno(
                     jni, mem.get(), java_data, value_td.get()->pWeakRef, 0,
@@ -1023,7 +1023,7 @@ void Bridge::map_to_uno(
         typelib_TypeDescriptionReference * element_type =
             ((typelib_IndirectTypeDescription *)td.get())->pType;
 
-        auto_ptr< rtl_mem > seq;
+        std::unique_ptr< rtl_mem > seq;
         sal_Int32 nElements = jni->GetArrayLength( (jarray) java_data.l );
 
         switch (element_type->eTypeClass)

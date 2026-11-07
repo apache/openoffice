@@ -733,7 +733,7 @@ namespace basegfx
                                  aNewEdges );
         }
 
-        inline bool isSameRect(ActiveEdge&              rEdge,
+        inline bool isSameRect(const ActiveEdge&         rEdge,
                                const basegfx::B2DRange& rRect)
         {
             return &rEdge.getRect() == &rRect;

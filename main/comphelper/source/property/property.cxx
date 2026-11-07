@@ -157,7 +157,7 @@ bool findProperty(Property&              o_rProp,
     const sal_Int32 nLen(i_seqProps.getLength());
     const Property* pRes(
         std::find_if(pAry,pAry+nLen,
-                      [&](const auto* prop) { return PropertyStringEqualFunctor()(prop, i_rPropName); }));
+                      [&](const auto* prop) { return PropertyStringEqualFunctor()(*prop, i_rPropName); }));
     if( pRes == pAry+nLen )
         return false;
 

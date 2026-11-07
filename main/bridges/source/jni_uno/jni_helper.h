@@ -42,7 +42,7 @@ inline void jstring_to_ustring(
     else
     {
         jsize len = jni->GetStringLength( jstr );
-        ::std::auto_ptr< rtl_mem > mem(
+        ::std::unique_ptr< rtl_mem > mem(
             rtl_mem::allocate(
                 sizeof (rtl_uString) + (len * sizeof (sal_Unicode)) ) );
         rtl_uString * ustr = (rtl_uString *)mem.get();
