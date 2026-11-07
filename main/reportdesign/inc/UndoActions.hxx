@@ -71,7 +71,7 @@ namespace rptui
 		Removed	 = 2
 	};
 
-    /** Helper class to allow std::mem_fun for SAL_CALL
+    /** Helper class to adapt SAL_CALL member functions
 	*/
 	class REPORTDESIGN_DLLPUBLIC OGroupHelper
 	{
@@ -95,7 +95,7 @@ namespace rptui
 	};
 	typedef com::sun::star::uno::Reference< ::com::sun::star::report::XSection > TSection;
 
-	/** Helper class to allow std::mem_fun for SAL_CALL
+	/** Helper class to adapt SAL_CALL member functions
 	*/
 	class REPORTDESIGN_DLLPUBLIC OReportHelper
 	{

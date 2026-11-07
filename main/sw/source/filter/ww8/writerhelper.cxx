@@ -34,7 +34,6 @@
 #include <com/sun/star/embed/EmbedStates.hpp>
 
 #include <algorithm>                //std::swap
-#include <functional>               //std::binary_function
 #   include <svl/itemiter.hxx>  //SfxItemIter
 #   include <svx/svdobj.hxx>        //SdrObject
 #   include <svx/svdoole2.hxx>      //SdrOle2Obj

@@ -30,7 +30,6 @@
 #   include "writerhelper.hxx"
 
 #include <algorithm>                //std::find_if
-#include <functional>               //std::unary_function
 
 #include <unicode/ubidi.h>          //ubidi_getLogicalRun
 #   include <tools/tenccvt.hxx>     //GetExtendedTextEncoding

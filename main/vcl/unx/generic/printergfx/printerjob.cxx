@@ -770,8 +770,11 @@ PrinterJob::GetErrorCode ()
     return 0;
 }
 
-struct less_ppd_key : public ::std::binary_function<double, double, bool>
+struct less_ppd_key
 {
+    typedef const PPDKey* first_argument_type;
+    typedef const PPDKey* second_argument_type;
+    typedef bool result_type;
     bool operator()(const PPDKey* left, const PPDKey* right)
     { return left->getOrderDependency() < right->getOrderDependency(); }
 };

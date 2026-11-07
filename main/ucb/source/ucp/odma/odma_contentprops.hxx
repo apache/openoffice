@@ -62,18 +62,18 @@ namespace odma
 		inline ::rtl::OUString getTitle()		const { return m_sTitle;		}
 		inline ::rtl::OUString getSavedAsName() const { return m_sSavedAsName;	}
 	};
-	typedef ::std::binary_function< ::rtl::Reference<ContentProperties>, ::rtl::OUString,bool> TContentPropertiesFunctorBase;
-	/// binary_function Functor object for class ContentProperties return type is bool
-	class ContentPropertiesMemberFunctor : public TContentPropertiesFunctorBase
+	/// Functor object for comparing a ContentProperties string member result.
+	class ContentPropertiesMemberFunctor
 	{
-		::std::const_mem_fun_t< ::rtl::OUString,ContentProperties> m_aFunction;
+		typedef ::rtl::OUString (ContentProperties::*MemberFunction)() const;
+		MemberFunction m_aFunction;
 	public:
-		ContentPropertiesMemberFunctor(const ::std::const_mem_fun_t< ::rtl::OUString,ContentProperties>& _rFunc)
-			: m_aFunction(_rFunc){}
+		ContentPropertiesMemberFunctor(MemberFunction _aFunction)
+			: m_aFunction(_aFunction){}
 
 		inline bool operator()(const ::rtl::Reference<ContentProperties>& lhs,const ::rtl::OUString& rhs) const
 		{
-			return !!(m_aFunction(lhs.get()) == rhs);
+			return !!((lhs.get()->*m_aFunction)() == rhs);
 		}
 	};
 }

@@ -377,7 +377,7 @@ inline void createTestFile( const ::rtl::OUString filename )
 	if ( !isURL( filename ) )
 		::osl::FileBase::getFileURLFromSystemPath( filename, aPathURL ); //convert if not full qualified URL
 
-	//::std::auto_ptr<File> pFile( new File( aPathURL ) );
+	//::std::unique_ptr<File> pFile( new File( aPathURL ) );
 	File aFile(aPathURL);
 	//nError = pFile->open( OpenFlag_Read | OpenFlag_Write | OpenFlag_Create );
 	nError = aFile.open( OpenFlag_Read | OpenFlag_Write | OpenFlag_Create );
@@ -617,7 +617,7 @@ inline sal_Bool checkDirectory( const ::rtl::OUString & str, oslCheckMode nCheck
 	FileBase::RC	rc;
 	sal_Bool		bCheckResult= sal_False;
 
-	//::std::auto_ptr<Directory> pDir( new Directory( str ) );
+	//::std::unique_ptr<Directory> pDir( new Directory( str ) );
 	Directory aDir( str );
 	rc = aDir.open( );
 
@@ -2555,7 +2555,7 @@ namespace osl_FileStatus
 			createTestFile( aTmpName4 );
 
 			pDir = new Directory( aTmpName3 );
-			//::std::auto_ptr<Directory> pDir( new Directory( aTmpName3 ) );
+			//::std::unique_ptr<Directory> pDir( new Directory( aTmpName3 ) );
                 	::osl::FileBase::RC nError1 = pDir->open( );
 			ASSERT_TRUE( ::osl::FileBase::E_None == nError1 );
 			nError1 = pDir->getNextItem( rItem_file, 1 );

@@ -182,7 +182,7 @@ namespace accessibility
             This class does not have a dispose method, since it is not
             a UNO component. Nevertheless, it holds C++ references to
             several core objects, so you should issue a
-            SetEditSource(::std::auto_ptr<SvxEditSource>(NULL)) in
+            SetEditSource(::std::unique_ptr<SvxEditSource>()) in
             your dispose() method.
 
         	@param pEditSource

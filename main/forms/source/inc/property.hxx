@@ -76,9 +76,11 @@ public:
 		// public typedef
 private:
 	friend struct PropertyAssignmentNameCompareLess;
-	typedef ::std::binary_function< PUBLIC_SOLARIS_COMPILER_HACK, PUBLIC_SOLARIS_COMPILER_HACK, sal_Bool > PropertyAssignmentNameCompareLess_Base;
-	struct PropertyAssignmentNameCompareLess : public PropertyAssignmentNameCompareLess_Base
+	struct PropertyAssignmentNameCompareLess
 	{
+		typedef PUBLIC_SOLARIS_COMPILER_HACK first_argument_type;
+		typedef PUBLIC_SOLARIS_COMPILER_HACK second_argument_type;
+		typedef sal_Bool result_type;
 		inline sal_Bool operator() (const PUBLIC_SOLARIS_COMPILER_HACK& _rL, const PUBLIC_SOLARIS_COMPILER_HACK& _rR) const
 		{
 			return (_rL.sName.compareTo(_rR.sName) < 0);

@@ -774,7 +774,7 @@ struct lcl_TableData
     ::std::vector< sal_Int32 > aHiddenColumns;
 };
 
-// ::std::bind2nd( ::std::mem_fun_ref( &T::resize ), nSize ) does not work
+// Function object that binds the size and default value for T::resize.
 template< class T >
     struct lcl_resize
     {

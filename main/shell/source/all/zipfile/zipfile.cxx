@@ -42,8 +42,10 @@
 namespace internal
 {
     /* for case in-sensitive string comparison */
-    struct stricmp : public std::unary_function<std::string, bool>
+    struct stricmp
     {
+        typedef std::string argument_type;
+        typedef bool result_type;
         stricmp(const std::string& str) : str_(str)
         {}
 

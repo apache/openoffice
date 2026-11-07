@@ -257,7 +257,7 @@ namespace dbaui
 		/** returns the document access for the specific type
 			@param	_eType
 				the type
-			@return	::std::auto_ptr<OLinkedDocumentsAccess>
+			@return	::std::unique_ptr<OLinkedDocumentsAccess>
 		*/
 		::std::unique_ptr<OLinkedDocumentsAccess> getDocumentsAccess(ElementType _eType);
 

@@ -38,12 +38,15 @@ namespace frm
 {
 //........................................................................
 
-    struct TypeCompareLess : public ::std::binary_function< ::com::sun::star::uno::Type, ::com::sun::star::uno::Type, bool >
+    struct TypeCompareLess
     {
     private:
         typedef ::com::sun::star::uno::Type             Type;
 
     public:
+        typedef Type first_argument_type;
+        typedef Type second_argument_type;
+        typedef bool result_type;
         bool operator()( const Type& _rLHS, const Type& _rRHS ) const
         {
             return _rLHS.getTypeName() < _rRHS.getTypeName();

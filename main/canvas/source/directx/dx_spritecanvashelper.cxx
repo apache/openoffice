@@ -241,7 +241,7 @@ namespace dxcanvas
             mpBackBuffer->draw(aUpdateArea);
 
 			// redraw sprites
-			mpRedrawManager->forEachSprite(::std::ptr_fun( &spriteRedraw ) );
+			mpRedrawManager->forEachSprite( &spriteRedraw );
 
             // flip primary surface to screen
             // ==============================
@@ -296,7 +296,7 @@ namespace dxcanvas
         // are avoided.
         ::std::for_each( rUpdateArea.maComponentList.begin(),
                          rUpdateArea.maComponentList.end(),
-                         ::std::ptr_fun( &spriteRedrawStub2 ) );
+                         &spriteRedrawStub2 );
 
         // repaint uncovered areas from backbuffer - take the
         // _rounded_ rectangles from above, to have the update
@@ -334,7 +334,7 @@ namespace dxcanvas
         // buffer.
         ::std::for_each( rSortedUpdateSprites.begin(),
                          rSortedUpdateSprites.end(),
-                         ::std::ptr_fun( &spriteRedrawStub ) );
+                         &spriteRedrawStub );
 
         // TODO(E1): Use numeric_cast to catch overflow here
         ::basegfx::B2IRange aActualArea( 0, 0,
@@ -370,7 +370,7 @@ namespace dxcanvas
 
         ::std::for_each( rSortedUpdateSprites.begin(),
                          rSortedUpdateSprites.end(),
-                         ::std::ptr_fun( &spriteRedrawStub ) );
+                         &spriteRedrawStub );
 
         // add given update area to the 'blit to foreground' rect
         maUpdateRect.expand( aActualArea );

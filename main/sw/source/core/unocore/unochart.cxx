@@ -1848,7 +1848,7 @@ rtl::OUString SAL_CALL SwChartDataProvider::convertRangeToXML( const rtl::OUStri
         SwFrmFmt    *pTblFmt  = 0;      // pointer to table format
         // BM: For what should the check be necessary? for #i79009# it is required that NO check is done
 //         SwUnoCrsr   *pUnoCrsr = 0;      // here required to check if the cells in the range do actually exist
-//         std::auto_ptr< SwUnoCrsr > pAuto( pUnoCrsr );  // to end lifetime of object pointed to by pUnoCrsr
+//         std::unique_ptr< SwUnoCrsr > pAuto( pUnoCrsr );  // to end lifetime of object pointed to by pUnoCrsr
         GetFormatAndCreateCursorFromRangeRep( pDoc, aRange, &pTblFmt, NULL );
         if (!pTblFmt)
             throw lang::IllegalArgumentException();

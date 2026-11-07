@@ -75,7 +75,6 @@ using ::std::unique_ptr;
 using ::std::vector;
 using ::std::list;
 using ::std::distance;
-using ::std::unary_function;
 using ::std::hash_set;
 using ::boost::shared_ptr;
 

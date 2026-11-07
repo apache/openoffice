@@ -40,8 +40,7 @@ namespace configmgr {
 
 namespace {
 
-// Work around some compilers' failure to accept
-// std::binder1st(std::ptr_fun(&Data::equalTemplateNames), ...):
+// Predicate that binds the short name for Data::equalTemplateNames.
 class EqualTemplateNames
 {
 public:

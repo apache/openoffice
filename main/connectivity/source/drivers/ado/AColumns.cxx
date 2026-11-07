@@ -93,15 +93,11 @@ sdbcx::ObjectType OColumns::appendObject( const ::rtl::OUString&, const Referenc
 	::comphelper::TStringMixEqualFunctor aCase(sal_False);
 	// search for typeinfo where the typename is equal sTypeName
 	OTypeInfoMap::const_iterator aFind = ::std::find_if(pTypeInfoMap->begin(),
-														pTypeInfoMap->end(),
-														::std::compose1(
-															::std::bind2nd(aCase, sTypeName),
-															::std::compose1(
-																::std::mem_fun(&OExtendedTypeInfo::getDBName),
-																::std::select2nd<OTypeInfoMap::value_type>())
-															)
-
-												);
+												pTypeInfoMap->end(),
+												[&aCase, &sTypeName](const OTypeInfoMap::value_type& rTypeInfo) {
+													return aCase(rTypeInfo.second->getDBName(), sTypeName);
+												}
+										);
 
 	if ( aFind != pTypeInfoMap->end() ) // change column type if necessary
 		aColumn.put_Type(aFind->first);
