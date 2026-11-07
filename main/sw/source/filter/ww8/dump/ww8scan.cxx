@@ -2636,12 +2636,13 @@ void WW8PLCFx::SetIdx2(sal_uLong )
 {
 }
 
-class SamePos :
-    public std::unary_function<const WW8PLCFx_Fc_FKP::WW8Fkp *, bool>
+class SamePos
 {
 private:
     long mnPo;
 public:
+    typedef const WW8PLCFx_Fc_FKP::WW8Fkp * argument_type;
+    typedef bool result_type;
     SamePos(long nPo) : mnPo(nPo) {};
     bool operator()(const WW8PLCFx_Fc_FKP::WW8Fkp *pFkp)
         {return mnPo == pFkp->GetFilePos();}

@@ -60,8 +60,10 @@ struct OStringEqual
   { return lhs.equals( rhs );}
 };
 
-struct OStringHash : public std::unary_function< const ::rtl::OString &, size_t >
+struct OStringHash
 {
+	typedef const ::rtl::OString & argument_type;
+	typedef size_t result_type;
 	size_t operator()( const ::rtl::OString & rStr ) const
 		{ return rStr.hashCode(); }
 };

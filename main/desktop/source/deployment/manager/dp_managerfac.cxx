@@ -29,6 +29,7 @@
 #include "cppuhelper/compbase1.hxx"
 #include "comphelper/servicedecl.hxx"
 #include "com/sun/star/deployment/thePackageManagerFactory.hpp"
+#include <unordered_map>
 
 
 using namespace ::dp_misc;

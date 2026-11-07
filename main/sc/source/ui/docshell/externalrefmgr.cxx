@@ -74,7 +74,6 @@ using ::std::for_each;
 using ::std::distance;
 using ::std::pair;
 using ::std::list;
-using ::std::unary_function;
 using namespace formula;
 
 #define SRCDOC_LIFE_SPAN     6000       // 1 minute (in 100th of a sec)
@@ -85,8 +84,8 @@ namespace {
 class TabNameSearchPredicate
 {
 public:
-    typedef bool argument_type;
-    typedef ScExternalRefCache::TableName result_type;
+    typedef ScExternalRefCache::TableName argument_type;
+    typedef bool result_type;
     explicit TabNameSearchPredicate(const String& rSearchName) :
         maSearchName(ScGlobal::pCharClass->upper(rSearchName))
     {

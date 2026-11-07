@@ -47,8 +47,8 @@ namespace csv
     You only need to write
     class DX;
     but needn't include  #include <DX>.hxx.
-    This is a difference to std::auto_ptr, where it is not absolutely clear
-    if it is allowed to use it with incomplete types.
+    Unlike some historical standard-library ownership types, Dyn's support for
+    incomplete types is explicit.
 
     You can also use Dyn within function bodies, to make them exception safe.
 

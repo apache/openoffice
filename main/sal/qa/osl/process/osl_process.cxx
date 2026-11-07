@@ -255,9 +255,11 @@ typedef string_container_t::const_iterator string_container_const_iter_t;
 typedef string_container_t::iterator       string_container_iter_t;
 
 //#########################################################
-class exclude : public std::unary_function<std::string, bool>
+class exclude
 {
 public:
+    typedef std::string argument_type;
+    typedef bool result_type;
     //------------------------------------------------
     exclude(const string_container_t& exclude_list)
     {

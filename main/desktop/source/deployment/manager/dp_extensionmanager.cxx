@@ -60,7 +60,6 @@
 #include "boost/bind.hpp"
 
 #include <list>
-#include <hash_map>
 #include <algorithm>
 
 namespace deploy = com::sun::star::deployment;

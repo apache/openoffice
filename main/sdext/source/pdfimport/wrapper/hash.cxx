@@ -73,7 +73,7 @@ public:
 };
 
 inline unsigned int
-PdfKeywordHash::hash (register const char *str, register unsigned int len)
+PdfKeywordHash::hash (const char *str, unsigned int len)
 {
   static const unsigned char asso_values[] =
     {
@@ -108,7 +108,7 @@ PdfKeywordHash::hash (register const char *str, register unsigned int len)
 }
 
 const struct hash_entry *
-PdfKeywordHash::in_word_set (register const char *str, register unsigned int len)
+PdfKeywordHash::in_word_set (const char *str, unsigned int len)
 {
   static const unsigned char lengthtable[] =
     {
@@ -220,12 +220,12 @@ PdfKeywordHash::in_word_set (register const char *str, register unsigned int len
 
   if (len <= MAX_WORD_LENGTH && len >= MIN_WORD_LENGTH)
     {
-      register int key = hash (str, len);
+      int key = hash (str, len);
 
       if (key <= MAX_HASH_VALUE && key >= 0)
         if (len == lengthtable[key])
           {
-            register const char *s = wordlist[key].name;
+            const char *s = wordlist[key].name;
 
             if (*str == *s && !memcmp (str + 1, s + 1, len - 1))
               return &wordlist[key];

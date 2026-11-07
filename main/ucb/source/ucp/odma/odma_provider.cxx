@@ -494,12 +494,11 @@ void ContentProvider::append(const ::rtl::Reference<ContentProperties>& _rProp)
 {
 	::rtl::Reference<ContentProperties> aReturn;
 	ContentsMap::const_iterator aFind = ::std::find_if(	m_aContents.begin(),
-														m_aContents.end(),
-														::std::compose1(
-															::std::bind2nd(_aFunctor,_sName),
-															::std::select2nd<ContentsMap::value_type>()
-														)
-													);
+												m_aContents.end(),
+												[&_aFunctor, &_sName](const ContentsMap::value_type& rContent) {
+													return _aFunctor(rContent.second, _sName);
+												}
+											);
 	if(aFind != m_aContents.end())
 		aReturn = aFind->second;
 	return aReturn;
@@ -507,13 +506,13 @@ void ContentProvider::append(const ::rtl::Reference<ContentProperties>& _rProp)
 // -----------------------------------------------------------------------------
 ::rtl::Reference<ContentProperties> ContentProvider::getContentPropertyWithSavedAsName(const ::rtl::OUString& _sSaveAsName) const
 {
-	ContentPropertiesMemberFunctor aFunc(::std::mem_fun(&ContentProperties::getSavedAsName));
+	ContentPropertiesMemberFunctor aFunc(&ContentProperties::getSavedAsName);
 	return getContentProperty(_sSaveAsName,aFunc);
 }
 // -----------------------------------------------------------------------------
 ::rtl::Reference<ContentProperties> ContentProvider::getContentPropertyWithTitle(const ::rtl::OUString& _sTitle) const
 {
-	ContentPropertiesMemberFunctor aFunc(::std::mem_fun(&ContentProperties::getTitle));
+	ContentPropertiesMemberFunctor aFunc(&ContentProperties::getTitle);
 	return getContentProperty(_sTitle,aFunc);
 }
 // -----------------------------------------------------------------------------

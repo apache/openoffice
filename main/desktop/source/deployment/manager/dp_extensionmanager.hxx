@@ -36,6 +36,8 @@
 #include "com/sun/star/deployment/XPackageManager.hpp"
 #include "osl/mutex.hxx"
 #include <list>
+#include <unordered_map>
+#include <vector>
 
 
 namespace css = ::com::sun::star;

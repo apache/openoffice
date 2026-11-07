@@ -38,7 +38,6 @@ using ::std::vector;
 using ::std::list;
 using ::std::hash_set;
 using ::std::unique_ptr;
-using ::std::unary_function;
 using ::std::for_each;
 
 //TODO: DocOption TimeOut?

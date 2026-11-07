@@ -1412,7 +1412,7 @@ SvxViewForwarder* ScAccessiblePreviewCellTextData::GetViewForwarder()
 //UNUSED2008-05  {
 //UNUSED2008-05      if( aNotify )
 //UNUSED2008-05      {
-//UNUSED2008-05          ::std::auto_ptr< SfxHint > aHint = SvxEditSourceHelper::EENotification2Hint( aNotify);
+//UNUSED2008-05          ::std::unique_ptr< SfxHint > aHint = SvxEditSourceHelper::EENotification2Hint( aNotify);
 //UNUSED2008-05
 //UNUSED2008-05          if( aHint.get() )
 //UNUSED2008-05              GetBroadcaster().Broadcast( *aHint.get() );
@@ -1540,7 +1540,7 @@ SvxViewForwarder* ScAccessiblePreviewHeaderCellTextData::GetViewForwarder()
 //UNUSED2008-05  {
 //UNUSED2008-05      if( aNotify )
 //UNUSED2008-05      {
-//UNUSED2008-05          ::std::auto_ptr< SfxHint > aHint = SvxEditSourceHelper::EENotification2Hint( aNotify);
+//UNUSED2008-05          ::std::unique_ptr< SfxHint > aHint = SvxEditSourceHelper::EENotification2Hint( aNotify);
 //UNUSED2008-05
 //UNUSED2008-05          if( aHint.get() )
 //UNUSED2008-05              GetBroadcaster().Broadcast( *aHint.get() );

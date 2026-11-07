@@ -26,7 +26,6 @@
 
 #include "../inc/wwstyles.hxx"
 
-#include <functional>               //std::unary_function
 #include <algorithm>                //std::find_if
 #include <tools/string.hxx>         //do we have to...
 

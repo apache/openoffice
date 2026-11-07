@@ -154,9 +154,11 @@ struct OOO_DLLPUBLIC_CHARTTOOLS DoubleToOUString
     vector of pairs (for searching keys in maps you will of course use map::find)
  */
 template< typename First, typename Second >
-    class FirstOfPairEquals : public ::std::unary_function< ::std::pair< First, Second >, bool >
+    class FirstOfPairEquals
 {
 public:
+    typedef ::std::pair< First, Second > argument_type;
+    typedef bool result_type;
     FirstOfPairEquals( const First & aVal )
             : m_aValueToCompareWith( aVal )
     {}
@@ -175,9 +177,11 @@ private:
                     SecondOfPairEquals< string, int >( 42 ));
  */
 template< typename Key, typename Value >
-    class SecondOfPairEquals : public ::std::unary_function< ::std::pair< Key, Value >, bool >
+    class SecondOfPairEquals
 {
 public:
+    typedef ::std::pair< Key, Value > argument_type;
+    typedef bool result_type;
     SecondOfPairEquals( const Value & aVal )
             : m_aValueToCompareWith( aVal )
     {}
@@ -210,8 +214,10 @@ template< class MapType >
     delete operator
  */
 template< typename T >
-    struct DeletePtr : public ::std::unary_function< T *, void >
+    struct DeletePtr
 {
+    typedef T * argument_type;
+    typedef void result_type;
     void operator() ( T * pObj )
     { delete pObj; }
 };

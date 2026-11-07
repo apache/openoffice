@@ -43,8 +43,8 @@ inline IUrlFilter::~IUrlFilter() {}
 
 struct FilterMatch
 {
-	typedef bool argument_type;
-	typedef WildCard result_type;
+	typedef WildCard argument_type;
+	typedef bool result_type;
 private:
 	const String&	m_rCompareString;
 public:
