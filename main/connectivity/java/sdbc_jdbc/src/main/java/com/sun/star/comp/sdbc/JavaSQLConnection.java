@@ -35,6 +35,7 @@ import com.sun.star.beans.PropertyValue;
 import com.sun.star.comp.sdbc.classloading.ClassLoaderAndClass;
 import com.sun.star.comp.sdbc.ConnectionLog.ObjectType;
 import com.sun.star.container.XNameAccess;
+import com.sun.star.lang.DisposedException;
 import com.sun.star.lang.IllegalArgumentException;
 import com.sun.star.lang.XMultiServiceFactory;
 import com.sun.star.lang.XServiceInfo;
@@ -175,7 +176,10 @@ public class JavaSQLConnection extends ComponentBase
 
     @Override
     public synchronized XStatement createStatement() throws SQLException {
-        checkDisposed();
+        // not checkDisposed(): the HSQLDB driver sends SHUTDOWN from its disposing() listener
+        if (bDisposed) {
+            throw new DisposedException();
+        }
         logger.log(LogLevel.FINE, Resources.STR_LOG_CREATE_STATEMENT);
         JavaSQLStatement statement = new JavaSQLStatement(this);
         statements.put(statement, statement);
