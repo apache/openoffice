@@ -514,6 +514,7 @@ namespace osl
 							oslSocketType	Type = osl_Socket_TypeStream);
 
 		inline StreamSocket( const StreamSocket & );
+		StreamSocket& operator=(const StreamSocket&) = default;
 
 		inline StreamSocket( oslSocket Socket , __sal_NoAcquire noacquire );
 

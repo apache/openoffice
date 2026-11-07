@@ -47,6 +47,7 @@ public:
     SwFmtVertOrient( SwTwips nY = 0, sal_Int16 eVert = com::sun::star::text::VertOrientation::NONE,
                      sal_Int16 eRel = com::sun::star::text::RelOrientation::PRINT_AREA );
 	inline SwFmtVertOrient &operator=( const SwFmtVertOrient &rCpy );
+	SwFmtVertOrient(const SwFmtVertOrient&) = default;
 
 	// "pure virtual Methoden" vom SfxPoolItem
 	virtual int             operator==( const SfxPoolItem& ) const;
@@ -85,6 +86,7 @@ public:
     SwFmtHoriOrient( SwTwips nX = 0, sal_Int16 eHori = com::sun::star::text::HoriOrientation::NONE,
         sal_Int16 eRel = com::sun::star::text::RelOrientation::PRINT_AREA, sal_Bool bPos = sal_False );
 	inline SwFmtHoriOrient &operator=( const SwFmtHoriOrient &rCpy );
+	SwFmtHoriOrient(const SwFmtHoriOrient&) = default;
 
 	// "pure virtual Methoden" vom SfxPoolItem
 	virtual int             operator==( const SfxPoolItem& ) const;

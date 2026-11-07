@@ -46,6 +46,7 @@ public:
 
     SvxPrintItem( const sal_uInt16 nId , const sal_Bool bPrt = sal_True );
 	inline SvxPrintItem &operator=( const SvxPrintItem &rCpy );
+	SvxPrintItem(const SvxPrintItem&) = default;
 
 	// "pure virtual Methoden" vom SfxPoolItem
 	virtual SfxPoolItem*    Clone( SfxItemPool *pPool = 0 ) const;

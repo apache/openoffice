@@ -622,6 +622,7 @@ public:
 	SwDistance() { nMain = nSub = 0; }
 	SwDistance& operator=( const SwDistance &rTwo )
 		{ nMain = rTwo.nMain; nSub = rTwo.nSub; return *this; }
+	SwDistance(const SwDistance&) = default;
 	sal_Bool operator<( const SwDistance& rTwo )
 		{ return nMain < rTwo.nMain || ( nMain == rTwo.nMain && nSub &&
 		  rTwo.nSub && nSub < rTwo.nSub ); }

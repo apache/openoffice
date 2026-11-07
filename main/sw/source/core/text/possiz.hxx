@@ -46,6 +46,7 @@ public:
 	inline void SvLSize( const Size &rSize );
 	inline void SvXSize( const Size &rSize );
 	inline SwPosSize &operator=( const SwPosSize &rSize );
+	SwPosSize(const SwPosSize&) = default;
 	inline SwPosSize &operator=( const Size &rSize );
 };
 

@@ -80,6 +80,7 @@ public:
 	SwRepaint() : SwRect(), nOfst( 0 ), nRightOfst( 0 ) {}
 	SwRepaint( const SwRepaint& rRep ) : SwRect( rRep ), nOfst( rRep.nOfst ),
 		nRightOfst( rRep.nRightOfst ) {}
+	SwRepaint& operator=(const SwRepaint&) = default;
 
 	SwTwips GetOfst() const { return nOfst; }
 	void   SetOfst( const SwTwips nNew ) { nOfst = nNew; }

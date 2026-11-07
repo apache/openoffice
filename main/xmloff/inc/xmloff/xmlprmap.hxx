@@ -73,6 +73,7 @@ struct XMLPropertySetMapperEntry_Impl
 
 	XMLPropertySetMapperEntry_Impl(
 		const XMLPropertySetMapperEntry_Impl& rEntry );
+	XMLPropertySetMapperEntry_Impl& operator=(const XMLPropertySetMapperEntry_Impl&) = default;
 
 	sal_uInt32 GetPropType() const { return nType & XML_TYPE_PROP_MASK; }
 };

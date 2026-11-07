@@ -101,6 +101,7 @@ public:
 							cFill = rTS.cFill;
 							return *this;
 						}
+	SvxTabStop(const SvxTabStop&) = default;
 };
 
 // class SvxTabStopItem --------------------------------------------------

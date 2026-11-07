@@ -77,6 +77,7 @@ public:
 			SetValue( rCross.GetValue() );
 			return *this;
 		}
+	SvxCrossedOutItem(const SvxCrossedOutItem&) = default;
 
 	// enum cast
 	FontStrikeout 			GetStrikeout() const

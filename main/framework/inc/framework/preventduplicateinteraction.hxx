@@ -114,6 +114,7 @@ class FWE_DLLPUBLIC PreventDuplicateInteraction : private ThreadHelpBase2
                     , m_nCallCount  (aCopy.m_nCallCount  )
                     , m_xRequest    (aCopy.m_xRequest    )
                 {}
+                InteractionInfo& operator=(const InteractionInfo&) = default;
         };
 
         typedef ::std::vector< InteractionInfo > InteractionList;

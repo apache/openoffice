@@ -527,6 +527,7 @@ public:
 
         return *this;
     }
+	RasterPrimitive3D(const RasterPrimitive3D&) = default;
 
 	bool operator<(const RasterPrimitive3D& rComp) const
 	{

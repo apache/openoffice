@@ -121,6 +121,7 @@ namespace dbaui
 
 	public:
 		ExtendedCharsetIterator(const ExtendedCharsetIterator& _rSource);
+		ExtendedCharsetIterator& operator=(const ExtendedCharsetIterator&) = default;
 
 		CharsetDisplayDerefHelper operator*() const;
 

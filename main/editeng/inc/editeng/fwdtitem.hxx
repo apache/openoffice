@@ -70,6 +70,7 @@ public:
 			SetProp( rItem.GetProp() );
 			return *this;
 		}
+	SvxFontWidthItem(const SvxFontWidthItem&) = default;
 
 	void SetWidth( sal_uInt16 nNewWidth, const sal_uInt16 nNewProp = 100 )
 		{

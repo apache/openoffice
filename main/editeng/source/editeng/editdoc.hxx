@@ -317,6 +317,7 @@ public:
 	sal_Bool			DbgIsBuggy( EditDoc& rDoc );
 
 	EditPaM&	operator = ( const EditPaM& rPaM );
+	EditPaM(const EditPaM&) = default;
 	friend sal_Bool operator == ( const EditPaM& r1,  const EditPaM& r2  );
 	friend sal_Bool operator != ( const EditPaM& r1,  const EditPaM& r2  );
 };

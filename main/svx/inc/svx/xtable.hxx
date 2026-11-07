@@ -49,6 +49,7 @@ private:
 public:
     XColorEntry(const Color& rColor, const String& rName);
     XColorEntry(const XColorEntry& rOther);
+    XColorEntry& operator=(const XColorEntry&) = default;
 
     const Color& GetColor() const
     {

@@ -64,6 +64,7 @@ public:
 		SetValue( rOrphans.GetValue() );
 		return *this;
 	}
+	SvxOrphansItem(const SvxOrphansItem&) = default;
 };
 
 #endif

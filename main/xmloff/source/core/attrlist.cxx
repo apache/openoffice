@@ -53,6 +53,7 @@ struct SvXMLTagAttribute_Impl
 		sValue(r.sValue)
 	{
 	}
+	SvXMLTagAttribute_Impl& operator=(const SvXMLTagAttribute_Impl&) = default;
 
 	OUString sName;
 	OUString sValue;
@@ -70,6 +71,7 @@ struct SvXMLAttributeList_Impl
 			vecAttribute( r.vecAttribute )
 	{
 	}
+	SvXMLAttributeList_Impl& operator=(const SvXMLAttributeList_Impl&) = default;
 
 	::std::vector<struct SvXMLTagAttribute_Impl> vecAttribute;
 	typedef ::std::vector<struct SvXMLTagAttribute_Impl>::size_type size_type;

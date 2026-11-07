@@ -79,6 +79,7 @@ public:
                     const long nTLeft /*= 0*/, const short nOfset /*= 0*/,
                     const sal_uInt16 nId  );
 	inline SvxLRSpaceItem& operator=( const SvxLRSpaceItem &rCpy );
+	SvxLRSpaceItem(const SvxLRSpaceItem&) = default;
 
 	// "pure virtual Methoden" vom SfxPoolItem
 	virtual int 			 operator==( const SfxPoolItem& ) const;

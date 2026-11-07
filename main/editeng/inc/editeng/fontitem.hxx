@@ -94,6 +94,7 @@ public:
     inline rtl_TextEncoding GetCharSet() const { return eTextEncoding; }
 
 	SvxFontItem& operator=(const SvxFontItem& rFont);
+	SvxFontItem(const SvxFontItem&) = default;
 
     static void EnableStoreUnicodeNames( sal_Bool bEnable );
 

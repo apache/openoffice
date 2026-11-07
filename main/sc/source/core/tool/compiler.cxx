@@ -2681,7 +2681,7 @@ sal_Bool ScCompiler::IsValue( const String& rSym )
 
 sal_Bool ScCompiler::IsString()
 {
-    register const sal_Unicode* p = cSymbol;
+    const sal_Unicode* p = cSymbol;
     while ( *p )
         p++;
     xub_StrLen nLen = sal::static_int_cast<xub_StrLen>( p - cSymbol - 1 );

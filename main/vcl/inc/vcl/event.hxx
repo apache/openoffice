@@ -73,6 +73,7 @@ public:
 
     KeyEvent        LogicalTextDirectionality (TextDirectionality eMode) const;
                     KeyEvent (const KeyEvent& rKeyEvent);
+                    KeyEvent& operator=(const KeyEvent&) = default;
 
 };
 

@@ -48,6 +48,7 @@ public:
 	SvxSizeItem( const sal_uInt16 nId, const Size& rSize);
 
 	inline SvxSizeItem& operator=( const SvxSizeItem &rCpy );
+	SvxSizeItem(const SvxSizeItem&) = default;
 
 	// "pure virtual Methoden" vom SfxPoolItem
 	virtual int 			 operator==( const SfxPoolItem& ) const;

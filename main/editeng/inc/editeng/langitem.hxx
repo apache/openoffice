@@ -66,6 +66,7 @@ public:
 			SetValue( rLang.GetValue() );
 			return *this;
 		}
+	SvxLanguageItem(const SvxLanguageItem&) = default;
 
 	// enum cast
 	LanguageType 			GetLanguage() const

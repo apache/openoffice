@@ -55,6 +55,7 @@ namespace basegfx
             Base( rBox )
 		{
 		}
+		BasicBox& operator=(const BasicBox&) = default;
 
 		double getCenter() const
 		{

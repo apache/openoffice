@@ -67,6 +67,7 @@ public:
 			SetValue( rKern.GetValue() );
 			return *this;
 		}
+	SvxKerningItem(const SvxKerningItem&) = default;
 
 	virtual	sal_Bool        	QueryValue( com::sun::star::uno::Any& rVal, sal_uInt8 nMemberId = 0 ) const;
 	virtual	sal_Bool			PutValue( const com::sun::star::uno::Any& rVal, sal_uInt8 nMemberId = 0 );

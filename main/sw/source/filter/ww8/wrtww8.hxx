@@ -357,6 +357,7 @@ public:
         mnThick(0), mnDirection(nDir), mnHdFtIndex(nHdFtIndex) {}
     void SetShapeDetails(sal_uInt32 nId, sal_Int32 nThick);
     DrawObj& operator=(const DrawObj &rOther);
+    DrawObj(const DrawObj&) = default;
 };
 
 typedef std::vector<DrawObj> DrawObjVector;
@@ -1350,6 +1351,7 @@ public:
         : maFly(rFly), mnPos(0), mnWid(nWid), mnHei(nHei)
     {}
     GraphicDetails& operator=(const GraphicDetails& rOther);
+    GraphicDetails(const GraphicDetails&) = default;
 
     bool operator==(const GraphicDetails& rIn) const
     {

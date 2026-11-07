@@ -57,6 +57,7 @@ public:
 
     WildCard&       operator =( const String& rString );
     WildCard&       operator =( const WildCard& rWildCard );
+    WildCard(const WildCard&) = default;
 };
 
 inline WildCard::WildCard() :

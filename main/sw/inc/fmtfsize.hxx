@@ -67,6 +67,7 @@ public:
 	SwFmtFrmSize( SwFrmSize eSize = ATT_VAR_SIZE,
 				  SwTwips nWidth = 0, SwTwips nHeight = 0 );
 	SwFmtFrmSize& operator=( const SwFmtFrmSize& rCpy );
+	SwFmtFrmSize(const SwFmtFrmSize&) = default;
 
 	// "pure virtual Methoden" vom SfxPoolItem
 	virtual int             operator==( const SfxPoolItem& ) const;

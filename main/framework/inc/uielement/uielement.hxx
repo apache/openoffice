@@ -111,6 +111,7 @@ struct UIElement
 
     bool operator< ( const UIElement& aUIElement ) const;
     UIElement& operator=( const UIElement& rUIElement );
+    UIElement(const UIElement&) = default;
 
     rtl::OUString                                                      m_aType;
     rtl::OUString                                                      m_aName;

@@ -73,6 +73,7 @@ public:
 		SetValue( rPost.GetValue() );
 		return *this;
 	}
+	SvxPostureItem(const SvxPostureItem&) = default;
 
 	// enum cast
 	FontItalic				GetPosture() const

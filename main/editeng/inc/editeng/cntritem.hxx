@@ -58,6 +58,7 @@ public:
 		SetValue(rCont.GetValue());
 		return *this;
 	}
+	SvxContourItem(const SvxContourItem&) = default;
 };
 
 #endif

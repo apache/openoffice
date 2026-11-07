@@ -222,6 +222,7 @@ public:
 			SetValue( rCopy.GetValue() );
 			return *this;
 		}
+	SwGammaGrf(const SwGammaGrf&) = default;
 
 	// pure virtual-Methiden von SfxEnumItem
     virtual SfxPoolItem* 	Clone( SfxItemPool *pPool = 0 ) const;

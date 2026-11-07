@@ -196,6 +196,7 @@ public:
             m_nMaskChecksum	= rCopy.m_nMaskChecksum;
             return *this;
         }
+        BitmapID(const BitmapID&) = default;
 
         bool operator==( const BitmapID& rComp )
         {

@@ -394,6 +394,7 @@ namespace sw
             SwDoc &mrDoc;
         public:
             explicit SetInDocAndDelete(SwDoc &rDoc) : mrDoc(rDoc) {}
+            SetInDocAndDelete(const SetInDocAndDelete&) = default;
             void operator()(SwFltStackEntry *pEntry);
         private:
             //No assignment
@@ -410,6 +411,7 @@ namespace sw
             const SwPosition &mrPos;
         public:
             explicit CloseIfOpen(const SwPosition &rPos) : mrPos(rPos) {}
+            CloseIfOpen(const CloseIfOpen&) = default;
                 void operator()(SwFltStackEntry *pEntry) const
             {
                 if (pEntry->bLocked)

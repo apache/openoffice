@@ -47,6 +47,7 @@ public:
     inline SvxPaperBinItem( const sal_uInt16 nId ,
                             const sal_uInt8 nTray = PAPERBIN_PRINTER_SETTINGS );
 	inline SvxPaperBinItem &operator=( const SvxPaperBinItem &rCpy );
+	SvxPaperBinItem(const SvxPaperBinItem&) = default;
 
 	// "pure virtual Methoden" vom SfxPoolItem
 	virtual SfxPoolItem*    Clone( SfxItemPool *pPool = 0 ) const;

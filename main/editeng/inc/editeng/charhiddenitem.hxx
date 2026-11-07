@@ -52,6 +52,7 @@ public:
             SetValue(rHidden.GetValue());
             return *this;
         }
+    SvxCharHiddenItem(const SvxCharHiddenItem&) = default;
 };
 
 #endif

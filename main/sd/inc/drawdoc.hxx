@@ -147,6 +147,7 @@ namespace sd
 
 		PresentationSettings();
 		PresentationSettings( const PresentationSettings& r );
+		PresentationSettings& operator=(const PresentationSettings&) = default;
 	};
 }
 
