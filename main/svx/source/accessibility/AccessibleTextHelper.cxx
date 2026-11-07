@@ -403,9 +403,11 @@ namespace accessibility
     }
 
 	// functor for sending child events (no stand-alone function, they are maybe not inlined)
-    class AccessibleTextHelper_OffsetChildIndex : public ::std::unary_function< ::accessibility::AccessibleEditableTextPara&, void >
+    class AccessibleTextHelper_OffsetChildIndex
     {
     public:
+        typedef ::accessibility::AccessibleEditableTextPara& argument_type;
+        typedef void result_type;
         AccessibleTextHelper_OffsetChildIndex( sal_Int32 nDifference ) : mnDifference(nDifference) {}
         void operator()( ::accessibility::AccessibleEditableTextPara& rPara )
         {
@@ -946,10 +948,11 @@ namespace accessibility
     }
 
 	// functor for checking changes in paragraph bounding boxes (no stand-alone function, maybe not inlined)
-    class AccessibleTextHelper_UpdateChildBounds : public ::std::unary_function< const ::accessibility::AccessibleParaManager::WeakChild&,
-        ::accessibility::AccessibleParaManager::WeakChild >
+    class AccessibleTextHelper_UpdateChildBounds
     {
     public:
+        typedef const ::accessibility::AccessibleParaManager::WeakChild& argument_type;
+        typedef ::accessibility::AccessibleParaManager::WeakChild result_type;
         AccessibleTextHelper_UpdateChildBounds( AccessibleTextHelper_Impl& rImpl ) : mrImpl(rImpl) {}
         ::accessibility::AccessibleParaManager::WeakChild operator()( const ::accessibility::AccessibleParaManager::WeakChild& rChild )
         {
@@ -1003,9 +1006,11 @@ namespace accessibility
 #endif
 
 	// functor for sending child events (no stand-alone function, they are maybe not inlined)
-    class AccessibleTextHelper_LostChildEvent : public ::std::unary_function< const ::accessibility::AccessibleParaManager::WeakChild&, void >
+    class AccessibleTextHelper_LostChildEvent
     {
     public:
+        typedef const ::accessibility::AccessibleParaManager::WeakChild& argument_type;
+        typedef void result_type;
         AccessibleTextHelper_LostChildEvent( AccessibleTextHelper_Impl& rImpl ) : mrImpl(rImpl) {}
         void operator()( const ::accessibility::AccessibleParaManager::WeakChild& rPara )
         {
@@ -1100,9 +1105,11 @@ namespace accessibility
     }
 
 	// functor for sending child events (no stand-alone function, they are maybe not inlined)
-    class AccessibleTextHelper_ChildrenTextChanged : public ::std::unary_function< ::accessibility::AccessibleEditableTextPara&, void >
+    class AccessibleTextHelper_ChildrenTextChanged
     {
     public:
+        typedef ::accessibility::AccessibleEditableTextPara& argument_type;
+        typedef void result_type;
         void operator()( ::accessibility::AccessibleEditableTextPara& rPara )
         {
             rPara.TextChanged();
@@ -1114,9 +1121,11 @@ namespace accessibility
     	Reacts on TEXT_HINT_PARAINSERTED/REMOVED events and stores
     	their content
      */
-    class AccessibleTextHelper_QueueFunctor : public ::std::unary_function< const SfxHint*, void >
+    class AccessibleTextHelper_QueueFunctor
     {
     public:
+        typedef const SfxHint* argument_type;
+        typedef void result_type;
         AccessibleTextHelper_QueueFunctor() :
             mnParasChanged( 0 ),
             mnParaIndex(-1),

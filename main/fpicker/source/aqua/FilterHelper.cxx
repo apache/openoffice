@@ -133,8 +133,10 @@ shrinkFilterName( const rtl::OUString aFilterName, bool bAllowNoStar = false )
 //------------------------------------------------------------------------------------
 namespace {
     //................................................................................
-    struct FilterTitleMatch : public ::std::unary_function< FilterEntry, bool >
+    struct FilterTitleMatch
     {
+        typedef FilterEntry argument_type;
+        typedef bool result_type;
 protected:
         const rtl::OUString rTitle;
 

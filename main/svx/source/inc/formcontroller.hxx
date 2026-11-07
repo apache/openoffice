@@ -88,8 +88,11 @@
 #include <comphelper/implbase_var.hxx>
 #endif
 
-struct FmXTextComponentLess : public ::std::binary_function< ::com::sun::star::uno::Reference< ::com::sun::star::awt::XTextComponent >, ::com::sun::star::uno::Reference< ::com::sun::star::awt::XTextComponent> , sal_Bool>
+struct FmXTextComponentLess
 {
+    typedef ::com::sun::star::uno::Reference< ::com::sun::star::awt::XTextComponent > first_argument_type;
+    typedef ::com::sun::star::uno::Reference< ::com::sun::star::awt::XTextComponent> second_argument_type;
+    typedef sal_Bool result_type;
     sal_Bool operator() (const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XTextComponent >& x, const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XTextComponent >& y) const
     {
         return reinterpret_cast<sal_Int64>(x.get()) < reinterpret_cast<sal_Int64>(y.get());

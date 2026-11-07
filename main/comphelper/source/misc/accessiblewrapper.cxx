@@ -45,8 +45,10 @@ namespace comphelper
 	//=========================================================================
 	//--------------------------------------------------------------------
 	struct RemoveEventListener
-			: public ::std::unary_function< AccessibleMap::value_type, void >
+
 	{
+		typedef AccessibleMap::value_type argument_type;
+		typedef void result_type;
 	private:
 		Reference< XEventListener >	m_xListener;
 
@@ -66,8 +68,10 @@ namespace comphelper
 
 	//--------------------------------------------------------------------
 	struct DisposeMappedChild
-			: public ::std::unary_function< AccessibleMap::value_type, void >
+
 	{
+		typedef AccessibleMap::value_type argument_type;
+		typedef void result_type;
 		void operator()( const AccessibleMap::value_type& _rMapEntry ) const
 		{
             Reference< XComponent > xContextComponent;

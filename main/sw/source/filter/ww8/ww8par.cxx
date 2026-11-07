@@ -2257,8 +2257,12 @@ void wwSectionManager::SetHdFt(wwSection &rSection, int nSect,
 
 }
 
-class AttribHere : public std::unary_function<const xub_StrLen*, bool>
+class AttribHere
 {
+public:
+    typedef const xub_StrLen* argument_type;
+    typedef bool result_type;
+private:
 private:
     xub_StrLen nPosition;
 public:
@@ -5171,8 +5175,12 @@ sal_uLong SwWW8ImplReader::LoadThroughDecryption(SwPaM& rPaM ,WW8Glossary *pGlos
     return nErrRet;
 }
 
-class outlineeq : public std::unary_function<const SwTxtFmtColl*, bool>
+class outlineeq
 {
+public:
+    typedef const SwTxtFmtColl* argument_type;
+    typedef bool result_type;
+private:
 private:
     sal_uInt8 mnNum;
 public:

@@ -42,8 +42,10 @@ namespace CommonFunctors
     (via mem_fun_ptr)</p>
 */
 template< typename T >
-    struct makeAny : public ::std::unary_function< T, ::com::sun::star::uno::Any >
+    struct makeAny
 {
+    typedef T argument_type;
+    typedef ::com::sun::star::uno::Any result_type;
     ::com::sun::star::uno::Any operator() ( const T & aVal )
     {
         return ::com::sun::star::uno::makeAny( aVal );
@@ -55,8 +57,10 @@ template< typename T >
     <p>In case no number can be generated from the Any, NaN (see
     rtl::math::SetNAN()) is returned.</p>
 */
-struct OOO_DLLPUBLIC_CHARTTOOLS AnyToDouble : public ::std::unary_function< ::com::sun::star::uno::Any, double >
+struct OOO_DLLPUBLIC_CHARTTOOLS AnyToDouble
 {
+    typedef ::com::sun::star::uno::Any argument_type;
+    typedef double result_type;
     double operator() ( const ::com::sun::star::uno::Any & rAny )
     {
         double fResult;
@@ -75,8 +79,10 @@ struct OOO_DLLPUBLIC_CHARTTOOLS AnyToDouble : public ::std::unary_function< ::co
 /** unary function to convert ::com::sun::star::uno::Any into an
     ::rtl::OUString.
 */
-struct OOO_DLLPUBLIC_CHARTTOOLS AnyToString : public ::std::unary_function< ::com::sun::star::uno::Any,  ::rtl::OUString >
+struct OOO_DLLPUBLIC_CHARTTOOLS AnyToString
 {
+    typedef ::com::sun::star::uno::Any argument_type;
+    typedef ::rtl::OUString result_type;
     ::rtl::OUString operator() ( const ::com::sun::star::uno::Any & rAny )
     {
         ::com::sun::star::uno::TypeClass eClass( rAny.getValueType().getTypeClass() );
@@ -106,8 +112,10 @@ struct OOO_DLLPUBLIC_CHARTTOOLS AnyToString : public ::std::unary_function< ::co
 
     <p>For conversion rtl::math::StringToDouble is used.</p>
  */
-struct OOO_DLLPUBLIC_CHARTTOOLS OUStringToDouble : public ::std::unary_function< ::rtl::OUString, double >
+struct OOO_DLLPUBLIC_CHARTTOOLS OUStringToDouble
 {
+    typedef ::rtl::OUString argument_type;
+    typedef double result_type;
     double operator() ( const ::rtl::OUString & rStr )
     {
         rtl_math_ConversionStatus eConversionStatus;
@@ -124,8 +132,10 @@ struct OOO_DLLPUBLIC_CHARTTOOLS OUStringToDouble : public ::std::unary_function<
 
     <p>For conversion rtl::math::DoubleToOUString is used.</p>
  */
-struct OOO_DLLPUBLIC_CHARTTOOLS DoubleToOUString : public ::std::unary_function< double, ::rtl::OUString >
+struct OOO_DLLPUBLIC_CHARTTOOLS DoubleToOUString
 {
+    typedef double argument_type;
+    typedef ::rtl::OUString result_type;
     ::rtl::OUString operator() ( double fNumber )
     {
         return ::rtl::math::doubleToUString(

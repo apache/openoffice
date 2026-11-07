@@ -293,9 +293,11 @@ void ScChartListener::SetRangeList( const ScRange& rRange )
 
 namespace {
 
-class StartEndListening : public unary_function<ScSharedTokenRef, void>
+class StartEndListening
 {
 public:
+    typedef ScSharedTokenRef argument_type;
+    typedef void result_type;
     StartEndListening(ScDocument* pDoc, ScChartListener& rParent, bool bStart) :
         mpDoc(pDoc), mrParent(rParent), mbStart(bStart) {}
 
@@ -707,9 +709,10 @@ void ScChartListenerCollection::StartListeningHiddenRange( const ScRange& rRange
 
 namespace {
 
-struct MatchListener : public ::std::unary_function<
-        ScChartListenerCollection::RangeListenerItem, bool>
+struct MatchListener
 {
+    typedef ScChartListenerCollection::RangeListenerItem argument_type;
+    typedef bool result_type;
     MatchListener(const ScChartHiddenRangeListener* pMatch) :
         mpMatch(pMatch)
     {

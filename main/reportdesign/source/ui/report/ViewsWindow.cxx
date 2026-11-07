@@ -987,8 +987,12 @@ namespace
         eForceToAnotherPage,
         eBreakAction
     };
-    class ApplySectionViewAction : public ::std::unary_function< OViewsWindow::TSectionsMap::value_type, void >
+    class ApplySectionViewAction
     {
+    public:
+        typedef OViewsWindow::TSectionsMap::value_type argument_type;
+        typedef void result_type;
+    private:
     private:
         SectionViewAction   m_eAction;
         sal_Bool            m_bCopy;

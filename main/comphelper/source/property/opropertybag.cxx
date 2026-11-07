@@ -376,8 +376,11 @@ namespace comphelper
     //--------------------------------------------------------------------
     namespace
     {
-        struct ComparePropertyValueByName : public ::std::binary_function< PropertyValue, PropertyValue, bool >
+        struct ComparePropertyValueByName
         {
+            typedef PropertyValue first_argument_type;
+            typedef PropertyValue second_argument_type;
+            typedef bool result_type;
             bool operator()( const PropertyValue& _rLHS, const PropertyValue& _rRHS )
             {
                 return _rLHS.Name < _rRHS.Name;
@@ -385,16 +388,20 @@ namespace comphelper
         };
 
         template< typename CLASS >
-        struct TransformPropertyToName : public ::std::unary_function< CLASS, ::rtl::OUString >
+        struct TransformPropertyToName
         {
+            typedef CLASS argument_type;
+            typedef ::rtl::OUString result_type;
             const ::rtl::OUString& operator()( const CLASS& _rProp )
             {
                 return _rProp.Name;
             }
         };
 
-        struct ExtractPropertyValue : public ::std::unary_function< PropertyValue, Any >
+        struct ExtractPropertyValue
         {
+            typedef PropertyValue argument_type;
+            typedef Any result_type;
             const Any& operator()( const PropertyValue& _rProp )
             {
                 return _rProp.Value;

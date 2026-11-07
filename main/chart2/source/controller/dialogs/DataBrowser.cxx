@@ -435,8 +435,10 @@ Image SeriesHeader::GetChartTypeImage(
     return aResult;
 }
 
-struct applyChangesFunctor : public ::std::unary_function< ::boost::shared_ptr< SeriesHeader >, void >
+struct applyChangesFunctor
 {
+    typedef ::boost::shared_ptr< SeriesHeader > argument_type;
+    typedef void result_type;
     void operator() ( ::boost::shared_ptr< SeriesHeader > spHeader )
     {
         spHeader->applyChanges();

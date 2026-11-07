@@ -490,16 +490,22 @@ struct ImpContent
     sal_uInt32   nOffset;
 };
 
-struct ImpContentLessCompare : public ::std::binary_function< ImpContent, ImpContent, bool>
+struct ImpContentLessCompare
 {
+	typedef ImpContent first_argument_type;
+	typedef ImpContent second_argument_type;
+	typedef bool result_type;
 	inline bool operator() (const ImpContent& lhs, const ImpContent& rhs) const
 	{
 		return lhs.nTypeAndId < rhs.nTypeAndId;
 	}
 };
 
-struct ImpContentMixLessCompare : public ::std::binary_function< ImpContent, sal_uInt64, bool>
+struct ImpContentMixLessCompare
 {
+	typedef ImpContent first_argument_type;
+	typedef sal_uInt64 second_argument_type;
+	typedef bool result_type;
 	inline bool operator() (const ImpContent& lhs, const sal_uInt64& rhs) const
 	{
 		return lhs.nTypeAndId < rhs;

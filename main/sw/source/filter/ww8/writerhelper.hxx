@@ -65,9 +65,12 @@ namespace sw
     namespace util
     {
         class ItemSort
-            : public std::binary_function<sal_uInt16, sal_uInt16, bool>
+
         {
         public:
+            typedef sal_uInt16 first_argument_type;
+            typedef sal_uInt16 second_argument_type;
+            typedef bool result_type;
             bool operator()(sal_uInt16 nA, sal_uInt16 nB) const;
         };
     }

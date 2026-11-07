@@ -174,8 +174,10 @@ namespace dbaui
         };
 
         //..............................................................................................................
-        struct SelectSubComponent : public ::std::unary_function< SubComponentDescriptor, Reference< XComponent > >
+        struct SelectSubComponent
         {
+            typedef SubComponentDescriptor argument_type;
+            typedef Reference< XComponent > result_type;
             Reference< XComponent > operator()( const SubComponentDescriptor _desc ) const
             {
                 if ( _desc.xModel.is() )
@@ -189,8 +191,10 @@ namespace dbaui
         typedef ::std::vector< SubComponentDescriptor > SubComponents;
 
         //..............................................................................................................
-        struct SubComponentMatch : public ::std::unary_function< SubComponentDescriptor, bool >
+        struct SubComponentMatch
         {
+            typedef SubComponentDescriptor argument_type;
+            typedef bool result_type;
         public:
             SubComponentMatch( const ::rtl::OUString& i_rName, const sal_Int32 i_nComponentType,
                     const ElementOpenMode i_eOpenMode )

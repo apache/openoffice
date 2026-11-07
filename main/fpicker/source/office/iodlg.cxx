@@ -374,8 +374,10 @@ namespace
 	}
 
 	//---------------------------------------------------------------------
-	struct RemoveFinalSlash : public ::std::unary_function< String, void >
+	struct RemoveFinalSlash
 	{
+		typedef String argument_type;
+		typedef void result_type;
 		void operator()( String& _rURL )
 		{
 			INetURLObject aURL( _rURL );

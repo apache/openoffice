@@ -52,8 +52,10 @@ template< class Intf >
 }
 
 template< class T >
-    struct DisposeFunctor : public ::std::unary_function< T, void >
+    struct DisposeFunctor
 {
+    typedef T argument_type;
+    typedef void result_type;
     void operator() ( const T & xIntf )
     {
         Dispose< T >( xIntf );

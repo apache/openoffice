@@ -112,8 +112,10 @@ template< typename T >
     return aResult;
 }
 
-struct lcl_appendTableNumber : public ::std::unary_function< SCTAB, void >
+struct lcl_appendTableNumber
 {
+    typedef SCTAB argument_type;
+    typedef void result_type;
     lcl_appendTableNumber( ::rtl::OUStringBuffer & rBuffer ) :
             m_rBuffer( rBuffer )
     {}
@@ -155,8 +157,10 @@ uno::Reference< sheet::XSpreadsheetDocument > lcl_GetSpreadSheetDocument( ScDocu
 
 namespace {
 
-struct DeleteInstance : public unary_function<FormulaToken*, void>
+struct DeleteInstance
 {
+    typedef FormulaToken* argument_type;
+    typedef void result_type;
     void operator() (FormulaToken* p) const
     {
         delete p;
@@ -830,9 +834,11 @@ void Chart2Positioner::createPositionMap()
 /**
  * Function object to create a range string from a token list.
  */
-class Tokens2RangeString : public unary_function<ScSharedTokenRef, void>
+class Tokens2RangeString
 {
 public:
+    typedef ScSharedTokenRef argument_type;
+    typedef void result_type;
     Tokens2RangeString(ScDocument* pDoc, FormulaGrammar::Grammar eGram, sal_Unicode cRangeSep) :
         mpRangeStr(new OUStringBuffer),
         mpDoc(pDoc),
@@ -889,9 +895,11 @@ private:
  *
  * and each address doesn't include any '$' symbols.
  */
-class Tokens2RangeStringXML : public unary_function<ScSharedTokenRef, void>
+class Tokens2RangeStringXML
 {
 public:
+    typedef ScSharedTokenRef argument_type;
+    typedef void result_type;
     Tokens2RangeStringXML(ScDocument* pDoc) :
         mpRangeStr(new OUStringBuffer),
         mpDoc(pDoc),
@@ -1573,9 +1581,11 @@ namespace
 /**
  * Function object to create a list of table numbers from a token list.
  */
-class InsertTabNumber : public unary_function<ScSharedTokenRef, void>
+class InsertTabNumber
 {
 public:
+    typedef ScSharedTokenRef argument_type;
+    typedef void result_type;
     InsertTabNumber() :
         mpTabNumList(new list<SCTAB>())
     {
@@ -3044,9 +3054,11 @@ namespace {
  * This function object is used to accumulatively count the numbers of
  * columns and rows in all reference tokens.
  */
-class AccumulateRangeSize : public unary_function<ScSharedTokenRef, void>
+class AccumulateRangeSize
 {
 public:
+    typedef ScSharedTokenRef argument_type;
+    typedef void result_type;
     AccumulateRangeSize() :
         mnCols(0), mnRows(0) {}
 
@@ -3075,9 +3087,11 @@ private:
  * This function object is used to generate label strings from a list of
  * reference tokens.
  */
-class GenerateLabelStrings : public unary_function<ScSharedTokenRef, void>
+class GenerateLabelStrings
 {
 public:
+    typedef ScSharedTokenRef argument_type;
+    typedef void result_type;
     GenerateLabelStrings(sal_Int32 nSize, chart2::data::LabelOrigin eOrigin, bool bColumn) :
         mpLabels(new Sequence<OUString>(nSize)),
         meOrigin(eOrigin),

@@ -53,8 +53,11 @@ namespace rptui
 
 
     // -----------------------------------------------------------------------------
-    struct RectangleLess : public ::std::binary_function< Rectangle, Rectangle, bool>
+    struct RectangleLess
     {
+        typedef Rectangle first_argument_type;
+        typedef Rectangle second_argument_type;
+        typedef bool result_type;
         enum CompareMode { POS_LEFT,POS_RIGHT,POS_UPPER,POS_DOWN,POS_CENTER_HORIZONTAL,POS_CENTER_VERTICAL };
         CompareMode m_eCompareMode;
         Point       m_aRefPoint;
@@ -117,15 +120,19 @@ namespace rptui
 	public:
 		typedef ::std::vector< ::boost::shared_ptr<OSectionWindow> >								TSectionsMap;
 
-		struct TReportPairHelper : public ::std::unary_function< TSectionsMap::value_type, OReportSection >
+		struct TReportPairHelper
 		{
+			typedef TSectionsMap::value_type argument_type;
+			typedef OReportSection result_type;
 			OReportSection& operator() (const TSectionsMap::value_type& lhs) const
 			{
 				return lhs->getReportSection();
 			}
 		};
-        struct TStartMarkerHelper : public ::std::unary_function< TSectionsMap::value_type, OStartMarker >
+        struct TStartMarkerHelper
 		{
+			typedef TSectionsMap::value_type argument_type;
+			typedef OStartMarker result_type;
 			OStartMarker& operator() (const TSectionsMap::value_type& lhs) const
 			{
 				return lhs->getStartMarker();

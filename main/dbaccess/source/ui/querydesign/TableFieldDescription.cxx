@@ -156,8 +156,10 @@ void OTableFieldDesc::SetCriteria( sal_uInt16 nIdx, const ::rtl::OUString& rCrit
 // -----------------------------------------------------------------------------
 namespace
 {
-    struct SelectPropertyValueAsString : public ::std::unary_function< PropertyValue, ::rtl::OUString >
+    struct SelectPropertyValueAsString
     {
+        typedef PropertyValue argument_type;
+        typedef ::rtl::OUString result_type;
         ::rtl::OUString operator()( const PropertyValue& i_rPropValue ) const
         {
             ::rtl::OUString sValue;

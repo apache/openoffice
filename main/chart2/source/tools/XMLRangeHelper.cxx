@@ -42,9 +42,11 @@ namespace
     array (which you can get from an OUString with getStr()) and puts the result
     into the OUStringBuffer given in the CTOR
  */
-class lcl_Escape : public ::std::unary_function< sal_Unicode, void >
+class lcl_Escape
 {
 public:
+    typedef sal_Unicode argument_type;
+    typedef void result_type;
     lcl_Escape( ::rtl::OUStringBuffer & aResultBuffer ) : m_aResultBuffer( aResultBuffer ) {}
     void operator() ( sal_Unicode aChar )
     {
@@ -67,9 +69,11 @@ private:
     you can get from an OUString with getStr()) and puts the result into the
     OUStringBuffer given in the CTOR
  */
-class lcl_UnEscape : public ::std::unary_function< sal_Unicode, void >
+class lcl_UnEscape
 {
 public:
+    typedef sal_Unicode argument_type;
+    typedef void result_type;
     lcl_UnEscape( ::rtl::OUStringBuffer & aResultBuffer ) : m_aResultBuffer( aResultBuffer ) {}
     void operator() ( sal_Unicode aChar )
     {

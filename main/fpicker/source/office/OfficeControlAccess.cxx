@@ -131,8 +131,10 @@ namespace svt
 		};
 
 		// ................................................................
-		struct ExtractControlName : public ::std::unary_function< ControlDescription, ::rtl::OUString >
+		struct ExtractControlName
 		{
+			typedef ControlDescription argument_type;
+			typedef ::rtl::OUString result_type;
 			::rtl::OUString operator()( const ControlDescription& _rDesc )
 			{
 				return ::rtl::OUString::createFromAscii( _rDesc.pControlName );

@@ -99,17 +99,19 @@ struct ObjectEntry
 };
 
 //------------------------------------------------------------------------------
-struct FctPtrHash :
-    public ::std::unary_function< const void *, ::std::size_t >
+struct FctPtrHash
 {
+    typedef const void * argument_type;
+    typedef ::std::size_t result_type;
     ::std::size_t operator () ( const void * pKey ) const
         { return (::std::size_t) pKey; }
 };
 
 //------------------------------------------------------------------------------
-struct FctOUStringHash :
-    public ::std::unary_function< const OUString &, ::std::size_t >
+struct FctOUStringHash
 {
+    typedef const OUString & argument_type;
+    typedef ::std::size_t result_type;
     ::std::size_t operator () ( const OUString & rKey ) const
         { return rKey.hashCode(); }
 };

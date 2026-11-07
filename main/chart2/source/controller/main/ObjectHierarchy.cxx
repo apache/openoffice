@@ -62,8 +62,10 @@ using ::rtl::OUString;
 namespace
 {
 
-struct lcl_ObjectToOID : public ::std::unary_function< Reference< uno::XInterface >, ::chart::ObjectIdentifier >
+struct lcl_ObjectToOID
 {
+    typedef Reference< uno::XInterface > argument_type;
+    typedef ::chart::ObjectIdentifier result_type;
     explicit lcl_ObjectToOID( const Reference< chart2::XChartDocument > & xChartDoc ) :
             m_xModel( xChartDoc, uno::UNO_QUERY )
     {}

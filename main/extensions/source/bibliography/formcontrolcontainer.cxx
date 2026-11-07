@@ -93,8 +93,10 @@ namespace bib
 
 	//---------------------------------------------------------------------
 	//--- 18.10.01 18:50:14 -----------------------------------------------
-	struct ControlModeSwitch : public ::std::unary_function< Reference< XControl >, void >
+	struct ControlModeSwitch
 	{
+		typedef Reference< XControl > argument_type;
+		typedef void result_type;
 		sal_Bool bDesign;
 		ControlModeSwitch( sal_Bool _bDesign ) : bDesign( _bDesign ) { }
 

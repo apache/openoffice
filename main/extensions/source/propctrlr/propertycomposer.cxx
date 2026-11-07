@@ -53,8 +53,10 @@ namespace pcr
     namespace
     {
         //----------------------------------------------------------------
-        struct SetPropertyValue : public ::std::unary_function< Reference< XPropertyHandler >, void >
+        struct SetPropertyValue
         {
+            typedef Reference< XPropertyHandler > argument_type;
+            typedef void result_type;
             ::rtl::OUString sPropertyName;
             const Any&      rValue;
             SetPropertyValue( const ::rtl::OUString& _rPropertyName, const Any& _rValue ) : sPropertyName( _rPropertyName ), rValue( _rValue ) { }

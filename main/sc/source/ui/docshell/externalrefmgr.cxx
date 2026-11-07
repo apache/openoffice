@@ -81,9 +81,11 @@ using namespace formula;
 
 namespace {
 
-class TabNameSearchPredicate : public unary_function<bool, ScExternalRefCache::TableName>
+class TabNameSearchPredicate
 {
 public:
+    typedef bool argument_type;
+    typedef ScExternalRefCache::TableName result_type;
     explicit TabNameSearchPredicate(const String& rSearchName) :
         maSearchName(ScGlobal::pCharClass->upper(rSearchName))
     {
@@ -99,9 +101,11 @@ private:
     String maSearchName;
 };
 
-class FindSrcFileByName : public unary_function<ScExternalRefManager::SrcFileData, bool>
+class FindSrcFileByName
 {
 public:
+    typedef ScExternalRefManager::SrcFileData argument_type;
+    typedef bool result_type;
     FindSrcFileByName(const String& rMatchName) :
         mrMatchName(rMatchName)
     {
@@ -116,9 +120,11 @@ private:
     const String& mrMatchName;
 };
 
-class NotifyLinkListener : public unary_function<ScExternalRefManager::LinkListener*,  void>
+class NotifyLinkListener
 {
 public:
+    typedef ScExternalRefManager::LinkListener* argument_type;
+    typedef void result_type;
     NotifyLinkListener(sal_uInt16 nFileId, ScExternalRefManager::LinkUpdateType eType) :
         mnFileId(nFileId), meType(eType) {}
 
@@ -134,8 +140,10 @@ private:
     ScExternalRefManager::LinkUpdateType meType;
 };
 
-struct UpdateFormulaCell : public unary_function<ScFormulaCell*, void>
+struct UpdateFormulaCell
 {
+    typedef ScFormulaCell* argument_type;
+    typedef void result_type;
     void operator() (ScFormulaCell* pCell) const
     {
         // Check to make sure the cell really contains ocExternalRef.
@@ -156,9 +164,11 @@ struct UpdateFormulaCell : public unary_function<ScFormulaCell*, void>
     }
 };
 
-class RemoveFormulaCell : public unary_function<pair<const sal_uInt16, ScExternalRefManager::RefCellSet>, void>
+class RemoveFormulaCell
 {
 public:
+    typedef pair<const sal_uInt16, ScExternalRefManager::RefCellSet> argument_type;
+    typedef void result_type;
     explicit RemoveFormulaCell(ScFormulaCell* p) : mpCell(p) {}
     void operator() (pair<const sal_uInt16, ScExternalRefManager::RefCellSet>& r) const
     {
@@ -168,9 +178,11 @@ private:
     ScFormulaCell* mpCell;
 };
 
-class ConvertFormulaToStatic : public unary_function<ScFormulaCell*, void>
+class ConvertFormulaToStatic
 {
 public:
+    typedef ScFormulaCell* argument_type;
+    typedef void result_type;
     explicit ConvertFormulaToStatic(ScDocument* pDoc) : mpDoc(pDoc) {}
     void operator() (ScFormulaCell* pCell) const
     {

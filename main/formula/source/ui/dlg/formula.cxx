@@ -466,8 +466,11 @@ void FormulaDlg_Impl::DeleteArgs()
 namespace
 {
     // comparing two property instances
-    struct OpCodeCompare : public ::std::binary_function< sheet::FormulaOpCodeMapEntry, sal_Int32 , bool >
+    struct OpCodeCompare
     {
+	    typedef sheet::FormulaOpCodeMapEntry first_argument_type;
+	    typedef sal_Int32 second_argument_type;
+	    typedef bool result_type;
 	    bool operator() (const sheet::FormulaOpCodeMapEntry& x, sal_Int32 y) const
 	    {
 		    return x.Token.OpCode == y;

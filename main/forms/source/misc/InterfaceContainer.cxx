@@ -361,8 +361,10 @@ void SAL_CALL OInterfaceContainer::writeEvents(const Reference<XObjectOutputStre
 }
 
 //------------------------------------------------------------------------------
-struct TransformEventTo52Format : public ::std::unary_function< ScriptEventDescriptor, void >
+struct TransformEventTo52Format
 {
+	typedef ScriptEventDescriptor argument_type;
+	typedef void result_type;
 	void operator()( ScriptEventDescriptor& _rDescriptor )
 	{
 		if ( 0 == _rDescriptor.ScriptType.compareToAscii( "StarBasic" ) )
@@ -384,8 +386,10 @@ struct TransformEventTo52Format : public ::std::unary_function< ScriptEventDescr
 };
 
 //------------------------------------------------------------------------------
-struct TransformEventTo60Format : public ::std::unary_function< ScriptEventDescriptor, void >
+struct TransformEventTo60Format
 {
+	typedef ScriptEventDescriptor argument_type;
+	typedef void result_type;
 	void operator()( ScriptEventDescriptor& _rDescriptor )
 	{
 		if ( 0 == _rDescriptor.ScriptType.compareToAscii( "StarBasic" ) )

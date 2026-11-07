@@ -40,8 +40,10 @@ namespace CloneHelper
 
 /// functor that clones a UNO-Reference
 template< class Interface >
-    struct CreateRefClone : public ::std::unary_function< Interface, Interface >
+    struct CreateRefClone
 {
+    typedef Interface argument_type;
+    typedef Interface result_type;
     Interface operator() ( const Interface & xOther )
     {
         Interface xResult;

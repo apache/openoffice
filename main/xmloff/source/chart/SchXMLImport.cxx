@@ -84,9 +84,11 @@ Reference< uno::XComponentContext > lcl_getComponentContext()
     return xContext;
 }
 
-class lcl_MatchesChartType : public ::std::unary_function< Reference< chart2::XChartType >, bool >
+class lcl_MatchesChartType
 {
 public:
+    typedef Reference< chart2::XChartType > argument_type;
+    typedef bool result_type;
     explicit lcl_MatchesChartType( const OUString & aChartTypeName ) :
             m_aChartTypeName( aChartTypeName )
     {}

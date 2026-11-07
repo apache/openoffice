@@ -497,8 +497,10 @@ void OGenericUnoController::attachFrame( const Reference< XFrame >& _rxFrame )
 }
 
 // -----------------------------------------------------------------------------
-struct CommandCollector : public ::std::unary_function< SupportedFeatures::value_type, void>
+struct CommandCollector
 {
+	typedef SupportedFeatures::value_type argument_type;
+	typedef void result_type;
 	sal_uInt16  m_nFeature;
 	StringBag&  m_rFeatureCommands;
 	CommandCollector( sal_uInt16 _nFeature, StringBag& _rFeatureCommands )

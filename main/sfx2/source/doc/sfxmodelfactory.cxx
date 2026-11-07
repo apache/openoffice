@@ -140,8 +140,10 @@ namespace sfx2
     //--------------------------------------------------------------------
     namespace
     {
-        struct IsSpecialArgument : public ::std::unary_function< Any, bool >
+        struct IsSpecialArgument
         {
+            typedef Any argument_type;
+            typedef bool result_type;
             static bool isSpecialArgumentName( const ::rtl::OUString& _rValueName )
             {
                 return  _rValueName.equalsAscii( "EmbeddedObject" )

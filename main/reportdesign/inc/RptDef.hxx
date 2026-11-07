@@ -75,9 +75,12 @@ namespace ControlModification
     static const ::sal_Int32 HEIGHT_GREATEST    = (sal_Int32)10;
 }
 
-class AnyConverter : public ::std::binary_function< ::rtl::OUString,::com::sun::star::uno::Any,::com::sun::star::uno::Any >
+class AnyConverter
 {
 public:
+    typedef ::rtl::OUString first_argument_type;
+    typedef ::com::sun::star::uno::Any second_argument_type;
+    typedef ::com::sun::star::uno::Any result_type;
     virtual ~AnyConverter(){}
     virtual ::com::sun::star::uno::Any operator() (const ::rtl::OUString& /*_sPropertyName*/,const ::com::sun::star::uno::Any& lhs) const
 	{

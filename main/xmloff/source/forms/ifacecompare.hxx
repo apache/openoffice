@@ -40,11 +40,11 @@ namespace xmloff
 	*/
 	template < class IAFCE >
 	struct OInterfaceCompare
-		:public ::std::binary_function	<	::com::sun::star::uno::Reference< IAFCE >
-										,	::com::sun::star::uno::Reference< IAFCE >
-										,	bool
-										>
+
 	{
+		typedef ::com::sun::star::uno::Reference< IAFCE > first_argument_type;
+		typedef ::com::sun::star::uno::Reference< IAFCE > second_argument_type;
+		typedef bool result_type;
 		bool operator() (const ::com::sun::star::uno::Reference< IAFCE >& lhs, const ::com::sun::star::uno::Reference< IAFCE >& rhs) const
 		{
 			return lhs.get() < rhs.get();

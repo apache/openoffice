@@ -426,11 +426,12 @@ namespace sw
             @author
                 <a href="mailto:mmaher@openoffice.org">Martin Maher</a>
          */
-        class CompareRedlines:
-            public std::binary_function<const SwFltStackEntry*, const SwFltStackEntry*,
-            bool>
+        class CompareRedlines
         {
         public:
+            typedef const SwFltStackEntry* first_argument_type;
+            typedef const SwFltStackEntry* second_argument_type;
+            typedef bool result_type;
             bool operator()(const SwFltStackEntry *pOneE, const SwFltStackEntry *pTwoE)
                 const;
         };

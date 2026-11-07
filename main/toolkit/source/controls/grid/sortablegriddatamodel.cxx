@@ -437,9 +437,12 @@ namespace toolkit
     //------------------------------------------------------------------------------------------------------------------
     namespace
     {
-        class CellDataLessComparison : public ::std::binary_function< sal_Int32, sal_Int32, bool >
+        class CellDataLessComparison
         {
         public:
+            typedef sal_Int32 first_argument_type;
+            typedef sal_Int32 second_argument_type;
+            typedef bool result_type;
             CellDataLessComparison(
                 ::std::vector< Any > const & i_data,
                 ::comphelper::IKeyPredicateLess& i_predicate,

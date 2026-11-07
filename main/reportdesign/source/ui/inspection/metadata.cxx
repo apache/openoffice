@@ -82,8 +82,11 @@ namespace rptui
 
 	//------------------------------------------------------------------------
 	// Vergleichen von PropertyInfo
-    struct PropertyInfoLessByName : public ::std::binary_function< OPropertyInfoImpl, OPropertyInfoImpl, bool >
+    struct PropertyInfoLessByName
     {
+        typedef OPropertyInfoImpl first_argument_type;
+        typedef OPropertyInfoImpl second_argument_type;
+        typedef bool result_type;
         bool operator()( const OPropertyInfoImpl& _lhs, const OPropertyInfoImpl& _rhs )
         {
             return _lhs.sName < _rhs.sName;

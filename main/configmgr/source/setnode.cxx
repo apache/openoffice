@@ -42,10 +42,11 @@ namespace {
 
 // Work around some compilers' failure to accept
 // std::binder1st(std::ptr_fun(&Data::equalTemplateNames), ...):
-class EqualTemplateNames:
-    public std::unary_function< rtl::OUString const &, bool >
+class EqualTemplateNames
 {
 public:
+    typedef rtl::OUString const & argument_type;
+    typedef bool result_type;
     inline explicit EqualTemplateNames(rtl::OUString const & shortName):
         shortName_(shortName) {}
 

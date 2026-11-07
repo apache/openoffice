@@ -124,8 +124,10 @@ namespace ucb { namespace ucp { namespace ext
         }
 
         //--------------------------------------------------------------------------------------------------------------
-        struct SelectPropertyName : public ::std::unary_function< Property, ::rtl::OUString >
+        struct SelectPropertyName
         {
+            typedef Property argument_type;
+            typedef ::rtl::OUString result_type;
             const ::rtl::OUString& operator()( const Property& i_rProperty ) const
             {
                 return i_rProperty.Name;

@@ -1190,8 +1190,11 @@ namespace basctl
     //--------------------------------------------------------------------
     namespace
     {
-        struct DocumentTitleLess : public ::std::binary_function< ScriptDocument, ScriptDocument, bool >
+        struct DocumentTitleLess
         {
+            typedef ScriptDocument first_argument_type;
+            typedef ScriptDocument second_argument_type;
+            typedef bool result_type;
             DocumentTitleLess( const CollatorWrapper& _rCollator )
                 :m_aCollator( _rCollator )
             {

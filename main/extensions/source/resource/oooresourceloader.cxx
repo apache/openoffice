@@ -69,8 +69,11 @@ namespace res
 	//====================================================================
     typedef ::std::pair< ::rtl::OUString, Locale >  ResourceBundleDescriptor;
 
-    struct ResourceBundleDescriptorLess : public ::std::binary_function< ResourceBundleDescriptor, ResourceBundleDescriptor, bool >
+    struct ResourceBundleDescriptorLess
     {
+        typedef ResourceBundleDescriptor first_argument_type;
+        typedef ResourceBundleDescriptor second_argument_type;
+        typedef bool result_type;
         bool operator()( const ResourceBundleDescriptor& _lhs, const ResourceBundleDescriptor& _rhs ) const
         {
             if ( _lhs.first < _rhs.first )

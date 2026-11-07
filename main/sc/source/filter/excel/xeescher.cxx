@@ -1104,8 +1104,11 @@ XclExpComments::XclExpComments( SCTAB nTab, XclExpRecordList< XclExpNote >& rNot
 {
 }
 
-struct OUStringLess : public std::binary_function<OUString, OUString, bool>
+struct OUStringLess
 {
+    typedef OUString first_argument_type;
+    typedef OUString second_argument_type;
+    typedef bool result_type;
     bool operator()(const OUString& x, const OUString& y) const
     {
         return x.compareTo( y ) <= 0;

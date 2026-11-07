@@ -54,21 +54,23 @@
 namespace std
 {
 // emulate SGI extensions to the STL using http://www.sgi.com/tech/stl/stl_function.h as reference
-template< typename T> struct identity : unary_function<T,T> { T operator()(const T& t) const { return t;} };
-template< typename T, typename U> struct project2nd : public binary_function<T,U,U> { U operator()(const T&, const U& u) const { return u;}};
-template<typename P> struct select1st : public unary_function<P, typename P::first_type> { const typename P::first_type& operator()(const P& p) const { return p.first; }};
-template<typename P> struct select2nd : public unary_function<P, typename P::second_type> { const typename P::second_type& operator()(const P& p) const { return p.second; }};
+template< typename T> struct identity { typedef T argument_type; typedef T result_type; T operator()(const T& t) const { return t;} };
+template< typename T, typename U> struct project2nd { typedef T first_argument_type; typedef U second_argument_type; typedef U result_type; U operator()(const T&, const U& u) const { return u;}};
+template<typename P> struct select1st { typedef P argument_type; typedef typename P::first_type result_type; const typename P::first_type& operator()(const P& p) const { return p.first; }};
+template<typename P> struct select2nd { typedef P argument_type; typedef typename P::second_type result_type; const typename P::second_type& operator()(const P& p) const { return p.second; }};
 
 #if (defined(_MSC_VER) && (_MSC_VER >= 1600)) || defined(__GXX_EXPERIMENTAL_CXX0X__)
 template<typename T> inline T&& forward( typename identity<T>::type&& t) { return t; }
 #endif // C++11 move semantics
 
-template<typename Op1, typename Op2> class unary_compose : public unary_function<typename Op2::argument_type, typename Op1::result_type> 
+template<typename Op1, typename Op2> class unary_compose
 {
 protected:
 	Op1 aOp1;
 	Op2 aOp2;
 public:
+	typedef typename Op2::argument_type argument_type;
+	typedef typename Op1::result_type result_type;
 	unary_compose( const Op1& rOp1, const Op2& rOp2) : aOp1(rOp1), aOp2(rOp2) {}
 	typename Op1::result_type operator()( const typename Op2::argument_type& x) const { return aOp1(aOp2(x)); }
 };

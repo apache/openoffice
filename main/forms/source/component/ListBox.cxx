@@ -92,8 +92,10 @@ namespace frm
     namespace
     {
         //--------------------------------------------------------------------------
-        struct RowSetValueToString : public ::std::unary_function< ORowSetValue, ::rtl::OUString >
+        struct RowSetValueToString
         {
+            typedef ORowSetValue argument_type;
+            typedef ::rtl::OUString result_type;
             ::rtl::OUString operator()( const ORowSetValue& _value ) const
             {
                 return _value.getString();
@@ -101,8 +103,10 @@ namespace frm
         };
 
         //--------------------------------------------------------------------------
-        struct AppendRowSetValueString : public ::std::unary_function< ::rtl::OUString, void >
+        struct AppendRowSetValueString
         {
+            typedef ::rtl::OUString argument_type;
+            typedef void result_type;
             AppendRowSetValueString( ::rtl::OUString& _string )
                 :m_string( _string )
             {
@@ -1234,8 +1238,10 @@ namespace frm
     namespace
     {
         //................................................................
-        struct ExtractStringFromSequence_Safe : public ::std::unary_function< sal_Int16, ::rtl::OUString >
+        struct ExtractStringFromSequence_Safe
         {
+            typedef sal_Int16 argument_type;
+            typedef ::rtl::OUString result_type;
         protected:
             const Sequence< ::rtl::OUString >&  m_rList;
 

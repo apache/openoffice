@@ -41,9 +41,10 @@ using ::com::sun::star::uno::Any;
 namespace
 {
 
-struct lcl_getPropertyStateByHandle :
-        public ::std::unary_function< sal_Int32,  beans::PropertyState >
+struct lcl_getPropertyStateByHandle
 {
+    typedef sal_Int32 argument_type;
+    typedef beans::PropertyState result_type;
     lcl_getPropertyStateByHandle(
         const ::property::impl::ImplOPropertySet::tPropertyMap & rMap )
             : m_rMap( rMap )
@@ -61,9 +62,10 @@ private:
 };
 
 template< typename K, typename V >
-struct lcl_eraseMapEntry :
-        public ::std::unary_function< K, void >
+struct lcl_eraseMapEntry
 {
+    typedef K argument_type;
+    typedef void result_type;
     lcl_eraseMapEntry( ::std::map< K, V > & rMap )
             : m_rMap( rMap )
     {}
@@ -77,9 +79,10 @@ private:
     ::std::map< K, V > m_rMap;
 };
 
-struct lcl_replaceInterfacePropertiesByClones :
-    public ::std::unary_function< ::property::impl::ImplOPropertySet::tPropertyMap::value_type, void >
+struct lcl_replaceInterfacePropertiesByClones
 {
+    typedef ::property::impl::ImplOPropertySet::tPropertyMap::value_type argument_type;
+    typedef void result_type;
     inline void operator() ( ::property::impl::ImplOPropertySet::tPropertyMap::value_type & rProp )
     {
         if( rProp.second.hasValue() &&

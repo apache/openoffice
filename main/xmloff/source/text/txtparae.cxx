@@ -154,8 +154,10 @@ namespace
     };
 
     struct FrameRefHash
-        : public unary_function<Reference<XTextFrame>, size_t>
+
     {
+        typedef Reference<XTextFrame> argument_type;
+        typedef size_t result_type;
         size_t operator()(const Reference<XTextFrame> xFrame) const
             { return sal::static_int_cast<size_t>(reinterpret_cast<sal_uIntPtr>(xFrame.get())); }
     };

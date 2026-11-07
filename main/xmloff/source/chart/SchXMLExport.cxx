@@ -300,9 +300,11 @@ Reference< uno::XComponentContext > lcl_getComponentContext()
     return xContext;
 }
 
-class lcl_MatchesRole : public ::std::unary_function< Reference< chart2::data::XLabeledDataSequence >, bool >
+class lcl_MatchesRole
 {
 public:
+    typedef Reference< chart2::data::XLabeledDataSequence > argument_type;
+    typedef bool result_type;
     explicit lcl_MatchesRole( const OUString & aRole ) :
             m_aRole( aRole )
     {}
@@ -788,9 +790,10 @@ template< class T >
 typedef ::std::map< sal_Int32, SchXMLExportHelper_Impl::tLabelValuesDataPair >
     lcl_DataSequenceMap;
 
-struct lcl_SequenceToMapElement :
-    public ::std::unary_function< lcl_DataSequenceMap::mapped_type, lcl_DataSequenceMap::value_type >
+struct lcl_SequenceToMapElement
 {
+    typedef lcl_DataSequenceMap::mapped_type argument_type;
+    typedef lcl_DataSequenceMap::value_type result_type;
     lcl_SequenceToMapElement()
     {}
     result_type operator() ( const argument_type & rContent )
