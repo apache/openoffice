@@ -1,160 +1,296 @@
---- misc/build/hsqldb-2.5.0/hsqldb/src/org/hsqldb/persist/Logger.java	2019-05-31 10:26:20.000000000 -0500
-+++ misc/build/hsqldb-2.5.0/hsqldb/src/org/hsqldb/persist/Logger.java	2026-11-06 10:22:37.173757415 -0500
-@@ -62,6 +62,7 @@
- import org.hsqldb.lib.FileAccess;
- import org.hsqldb.lib.FileUtil;
- import org.hsqldb.lib.FrameworkLogger;
+--- misc/hsqldb/hsqldb-2.5.0/hsqldb/src/org/hsqldb/persist/Logger.java
++++ misc/build/hsqldb-2.5.0/hsqldb/src/org/hsqldb/persist/Logger.java
+@@ -34,6 +34,7 @@
+ import java.io.File;
+ import java.io.FileInputStream;
+ import java.io.IOException;
 +import java.lang.reflect.Constructor;
- import org.hsqldb.lib.HsqlArrayList;
- import org.hsqldb.lib.InputStreamInterface;
- import org.hsqldb.lib.InputStreamWrapper;
-@@ -183,6 +184,26 @@
-         this.database = database;
-     }
+ import java.text.SimpleDateFormat;
+ import java.util.Locale;
+ import java.util.concurrent.atomic.AtomicInteger;
+@@ -137,6 +138,7 @@
+     private Crypto    crypto;
+     boolean           cryptLobs;
+     public FileAccess fileAccess;
++    private boolean   isStoredFileAccess;
+     String            tempDirectoryPath;
  
-+    private static FileAccess getFileAccessCustom(Database database) {
-+        String fileAccessClassName = database.urlProperties.getProperty("fileaccess_class_name");
-+        if (fileAccessClassName != null && !fileAccessClassName.isEmpty()) {
-+            try {
-+                Class<?> fileAccessClass = Class.forName(fileAccessClassName);
-+                String storageKey = database.urlProperties.getProperty("storage_key");
-+                if (storageKey != null) {
-+                    Constructor<?> ctor = fileAccessClass.getConstructor(Object.class);
-+                    return (FileAccess) ctor.newInstance(storageKey);
-+                } else {
-+                    Constructor<?> ctor = fileAccessClass.getConstructor();
-+                    return (FileAccess) ctor.newInstance();
-+                }
-+            } catch (Exception e) {
-+                return FileUtil.getFileAccess(database.isFilesInJar());
-+            }
-+        }
-+        return FileUtil.getFileAccess(database.isFilesInJar());
-+    }
-+
-     /**
-      *  Opens the specified Database object's database files and starts up
-      *  the logging process. <p>
-@@ -198,7 +219,7 @@
+     //
+@@ -198,7 +200,12 @@
          boolean hasFileProps = false;
          boolean hasScript    = false;
  
 -        fileAccess = FileUtil.getFileAccess(database.isFilesInJar());
-+        fileAccess = getFileAccessCustom(database);
++        fileAccess = newStoredFileAccess();
++
++        if (fileAccess == null) {
++            fileAccess = FileUtil.getFileAccess(database.isFilesInJar());
++        }
++
          propIsFileDatabase          = database.getType().isFileBased();
          database.databaseProperties = new HsqlDatabaseProperties(database);
          propTextAllowFullPath = database.databaseProperties.isPropertyTrue(
---- misc/build/hsqldb-2.5.0/hsqldb/src/org/hsqldb/persist/RAFile.java	2019-04-27 08:55:26.000000000 -0500
-+++ misc/build/hsqldb-2.5.0/hsqldb/src/org/hsqldb/persist/RAFile.java	2026-11-06 10:22:37.174321115 -0500
-@@ -43,6 +43,8 @@
- import org.hsqldb.lib.ArrayUtil;
- import org.hsqldb.lib.HsqlByteArrayInputStream;
- import org.hsqldb.lib.HsqlByteArrayOutputStream;
-+import org.hsqldb.lib.Storage;
-+import java.lang.reflect.Constructor;
- 
- /**
-  * This class is a wrapper for a random access file such as that used for
-@@ -93,6 +95,20 @@
-             String name, boolean readonly,
-             int type) throws FileNotFoundException, IOException {
- 
-+        String storageClassName = database.urlProperties.getProperty("storage_class_name");
-+        if (storageClassName != null && !storageClassName.isEmpty()) {
-+            try {
-+                Class<?> storageClass = Class.forName(storageClassName);
-+                String storageKey = database.urlProperties.getProperty("storage_key");
-+                Constructor<?> ctor = storageClass.getConstructor(
-+                        String.class, Boolean.class, Object.class);
-+                Storage storage = (Storage) ctor.newInstance(
-+                        name, Boolean.valueOf(readonly), storageKey);
-+                return new RAStorageWrapper(storage);
-+            } catch (Exception e) {
-+                // fall through to default implementation
-+            }
+@@ -283,6 +290,12 @@
+                 database.databaseProperties.setProperty(
+                     HsqlDatabaseProperties.hsqldb_lock_file, false);
+             }
 +        }
-         if (type == DATA_FILE_JAR) {
-             return new RAFileInJar(name);
-         } else if (type == DATA_FILE_TEXT) {
-@@ -424,6 +440,81 @@
++
++        // the shadow file used for incremental backup is not reachable through FileAccess
++        if (isStoredFileAccess) {
++            database.databaseProperties.setProperty(
++                HsqlDatabaseProperties.hsqldb_inc_backup, false);
          }
+ 
+         setVariables();
+@@ -391,6 +404,10 @@
+             if (database.getType() == DatabaseType.DB_MEM) {
+                 tempDirectoryPath = database.getProperties().getStringProperty(
+                     HsqlDatabaseProperties.hsqldb_temp_directory);
++            } else if (isStoredFileAccess) {
++
++                // no temporary directory next to the document
++                tempDirectoryPath = null;
+             } else {
+                 tempDirectoryPath = database.getPath() + ".tmp";
+             }
+@@ -1102,7 +1119,7 @@
+ 
+     public synchronized void setIncrementBackup(boolean val) {
+ 
+-        if (val == propIncrementBackup) {
++        if (val == propIncrementBackup || isStoredFileAccess) {
+             return;
+         }
+ 
+@@ -1313,8 +1330,67 @@
+ 
+     public FileAccess getFileAccess() {
+         return fileAccess;
++    }
++
++    /**
++     * True if the database files are kept in a storage supplied by the host
++     * application instead of the file system.
++     */
++    public boolean isStoredFileAccess() {
++        return isStoredFileAccess;
++    }
++
++    // oj@openoffice.org - the database files are accessed through a class
++    // named in the connection properties, with a key identifying the storage
++    static final String url_fileaccess_class_name = "fileaccess_class_name";
++    static final String url_storage_class_name    = "storage_class_name";
++    static final String url_storage_key           = "storage_key";
++
++    static Class<?> loadStorageClass(String name) throws ClassNotFoundException {
++
++        ClassLoader loader = Thread.currentThread().getContextClassLoader();
++
++        if (loader != null) {
++            try {
++                return loader.loadClass(name);
++            } catch (ClassNotFoundException e) {}
++        }
++
++        return Class.forName(name);
      }
  
-+    /**
-+     * Wrapper that adapts org.hsqldb.lib.Storage to
-+     * org.hsqldb.persist.RandomAccessInterface.
-+     * Used for OpenOffice.org storage integration.
-+     */
-+    static class RAStorageWrapper implements RandomAccessInterface {
-+        private final Storage storage;
++    private FileAccess newStoredFileAccess() {
 +
-+        RAStorageWrapper(Storage storage) {
-+            this.storage = storage;
++        String className =
++            database.urlProperties.getProperty(url_fileaccess_class_name);
++
++        if (className == null) {
++            return null;
 +        }
 +
-+        public long length() throws IOException {
-+            return storage.length();
-+        }
++        try {
++            Class<?> fileAccessClass = loadStorageClass(className);
 +
-+        public void seek(long position) throws IOException {
-+            storage.seek(position);
-+        }
++            if (!FileAccess.class.isAssignableFrom(fileAccessClass)) {
++                throw new ClassCastException(className);
++            }
 +
-+        public long getFilePointer() throws IOException {
-+            return storage.getFilePointer();
-+        }
++            Constructor<?> constructor =
++                fileAccessClass.getConstructor(Object.class);
++            FileAccess access = (FileAccess) constructor.newInstance(
++                database.urlProperties.getProperty(url_storage_key));
 +
-+        public int read() throws IOException {
-+            return storage.read();
-+        }
++            isStoredFileAccess = true;
 +
-+        public void read(byte[] b, int offset, int length) throws IOException {
-+            storage.read(b, offset, length);
-+        }
-+
-+        public void write(byte[] b, int offset, int length) throws IOException {
-+            storage.write(b, offset, length);
-+        }
-+
-+        public int readInt() throws IOException {
-+            return storage.readInt();
-+        }
-+
-+        public void writeInt(int i) throws IOException {
-+            storage.writeInt(i);
-+        }
-+
-+        public long readLong() throws IOException {
-+            return storage.readLong();
-+        }
-+
-+        public void writeLong(long i) throws IOException {
-+            storage.writeLong(i);
-+        }
-+
-+        public void close() throws IOException {
-+            storage.close();
-+        }
-+
-+        public boolean isReadOnly() {
-+            return storage.isReadOnly();
-+        }
-+
-+        public void synch() {
-+            // Storage interface does not have synch, delegate to no-op
-+        }
-+
-+        public boolean ensureLength(long newLength) {
-+            // Storage interface does not have ensureLength
-+            return true;
-+        }
-+
-+        public boolean setLength(long newLength) {
-+            // Storage interface does not have setLength
-+            return false;
++            return access;
++        } catch (Throwable t) {
++            throw Error.error(t, ErrorCode.FILE_IO_ERROR,
++                              ErrorCode.M_Message_Pair, new Object[] {
++                t.toString(), className
++            });
 +        }
 +    }
 +
-     private void resetPointer() {
+     public boolean isFileDatabase() {
+         return propIsFileDatabase;
+     }
+--- misc/hsqldb/hsqldb-2.5.0/hsqldb/src/org/hsqldb/persist/RAStorageWrapper.java
++++ misc/build/hsqldb-2.5.0/hsqldb/src/org/hsqldb/persist/RAStorageWrapper.java
+@@ -32,7 +32,9 @@
+ package org.hsqldb.persist;
+ 
+ import java.io.IOException;
++import java.lang.reflect.Constructor;
+ 
++import org.hsqldb.Database;
+ import org.hsqldb.lib.Storage;
+ 
+ /**
+@@ -52,6 +54,36 @@
+         this.file = virtualFile;
+     }
+ 
++    /**
++     * Opens a file in the storage supplied by the host application, using the
++     * class and key given in the connection properties.
++     */
++    static RAStorageWrapper newInstance(Database database, String name,
++                                        boolean readonly) throws IOException {
++
++        String className =
++            database.urlProperties.getProperty(Logger.url_storage_class_name);
++
++        try {
++            Class<?> storageClass = Logger.loadStorageClass(className);
++
++            if (!Storage.class.isAssignableFrom(storageClass)) {
++                throw new ClassCastException(className);
++            }
++
++            Constructor<?> constructor =
++                storageClass.getConstructor(String.class, Boolean.class,
++                                            Object.class);
++            Storage storage = (Storage) constructor.newInstance(name,
++                Boolean.valueOf(readonly),
++                database.urlProperties.getProperty(Logger.url_storage_key));
++
++            return new RAStorageWrapper(storage);
++        } catch (Exception e) {
++            throw new IOException("invalid storage class: " + e, e);
++        }
++    }
++
+     public long length() throws IOException {
+         return file.length();
+     }
+--- misc/hsqldb/hsqldb-2.5.0/hsqldb/src/org/hsqldb/persist/RAFile.java
++++ misc/build/hsqldb-2.5.0/hsqldb/src/org/hsqldb/persist/RAFile.java
+@@ -92,6 +92,10 @@
+     static RandomAccessInterface newScaledRAFile(Database database,
+             String name, boolean readonly,
+             int type) throws FileNotFoundException, IOException {
++
++        if (type == DATA_FILE_STORED) {
++            return RAStorageWrapper.newInstance(database, name, readonly);
++        }
+ 
+         if (type == DATA_FILE_JAR) {
+             return new RAFileInJar(name);
+--- misc/hsqldb/hsqldb-2.5.0/hsqldb/src/org/hsqldb/persist/DataFileCache.java
++++ misc/build/hsqldb-2.5.0/hsqldb/src/org/hsqldb/persist/DataFileCache.java
+@@ -156,7 +156,7 @@
+         cache = new Cache(this);
  
          try {
+-            dataFile = new RAFileSimple(database.logger, dataFileName, "rw");
++            dataFile = newSimpleFile(false);
+         } catch (Throwable t) {
+             throw Error.error(ErrorCode.FILE_IO_ERROR, t);
+         }
+@@ -224,6 +224,8 @@
+ 
+             if (database.isFilesInJar()) {
+                 fileType = RAFile.DATA_FILE_JAR;
++            } else if (database.logger.isStoredFileAccess()) {
++                fileType = RAFile.DATA_FILE_STORED;
+             } else if (isNio) {
+                 fileType = RAFile.DATA_FILE_NIO;
+             } else {
+@@ -263,8 +265,7 @@
+             boolean isSaved       = false;
+ 
+             if (preexists) {
+-                dataFile = new RAFileSimple(database.logger, dataFileName,
+-                                            "r");
++                dataFile = newSimpleFile(true);
+ 
+                 long    length       = dataFile.length();
+                 boolean wrongVersion = false;
+@@ -389,7 +390,20 @@
+                               ErrorCode.M_DataFileCache_open, new Object[] {
+                 t.toString(), dataFileName
+             });
++        }
++    }
++
++    private RandomAccessInterface newSimpleFile(boolean readonly)
++    throws IOException {
++
++        if (database.logger.isStoredFileAccess()) {
++            return RAStorageWrapper.newInstance(database, dataFileName,
++                                                readonly);
+         }
++
++        return new RAFileSimple(database.logger, dataFileName,
++                                readonly ? "r"
++                                         : "rw");
+     }
+ 
+     boolean setDataSpaceManager() {
+@@ -1368,7 +1382,29 @@
+      * @throws  HsqlException
+      */
+     void backupDataFile(boolean newFile) {
+-        backupFile(database, dataFileName, backupFileName, newFile);
++
++        if (!database.logger.isStoredFileAccess() || dataFile == null) {
++            backupFile(database, dataFileName, backupFileName, newFile);
++
++            return;
++        }
++
++        // the storage keeps one handle per file: reading the data file for
++        // the archive would close the handle held by this cache
++        try {
++            dataFile.close();
++            backupFile(database, dataFileName, backupFileName, newFile);
++        } catch (IOException e) {
++            throw Error.error(ErrorCode.DATA_FILE_ERROR, e);
++        } finally {
++            try {
++                dataFile = RAFile.newScaledRAFile(database, dataFileName,
++                                                  false,
++                                                  RAFile.DATA_FILE_STORED);
++            } catch (IOException e) {
++                throw Error.error(ErrorCode.DATA_FILE_ERROR, e);
++            }
++        }
+     }
+ 
+     void backupNewDataFile(boolean newFile) {
+--- misc/hsqldb/hsqldb-2.5.0/hsqldb/src/org/hsqldb/persist/LobStoreRAFile.java
++++ misc/build/hsqldb-2.5.0/hsqldb/src/org/hsqldb/persist/LobStoreRAFile.java
+@@ -70,8 +70,14 @@
+         try {
+             boolean readonly = database.isFilesReadOnly();
+ 
+-            file = new RAFileSimple(database.logger, fileName, readonly ? "r"
+-                                                                        : "rws");
++            if (database.logger.isStoredFileAccess()) {
++                file = RAStorageWrapper.newInstance(database, fileName,
++                                                    readonly);
++            } else {
++                file = new RAFileSimple(database.logger, fileName,
++                                        readonly ? "r"
++                                                 : "rws");
++            }
+         } catch (Throwable t) {
+             throw Error.error(ErrorCode.DATA_FILE_ERROR, t);
+         }
