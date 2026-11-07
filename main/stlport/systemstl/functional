@@ -43,6 +43,23 @@
 #endif	
 #elif defined(__cplusplus) && (__cplusplus >= 201103L)
     #include_next <functional>
+#if __cplusplus >= 201703L
+    // std::unary_function and std::binary_function were removed in C++17,
+    // but the SGI emulation below inherits from them.
+    namespace std {
+    template<typename Arg, typename Result>
+    struct unary_function {
+        using argument_type = Arg;
+        using result_type = Result;
+    };
+    template<typename Arg1, typename Arg2, typename Result>
+    struct binary_function {
+        using first_argument_type = Arg1;
+        using second_argument_type = Arg2;
+        using result_type = Result;
+    };
+    }
+#endif // C++17
 #else // fall back to boost/tr1
 	#include <boost/tr1/tr1/functional>
 	#include <boost/functional/hash.hpp>
