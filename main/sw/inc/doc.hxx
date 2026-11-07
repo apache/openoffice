@@ -87,8 +87,8 @@ class SwList;
 #include <map>
 #include <memory>
 
-#include <boost/scoped_ptr.hpp>
-#include <boost/shared_ptr.hpp>
+#include <memory>
+#include <memory>
 #include <flypos.hxx>
 
 class SvxForbiddenCharactersTable;
@@ -283,7 +283,7 @@ class SW_DLLPUBLIC SwDoc :
     //---------------- private Member --------------------------------
 
 	// -------------------------------------------------------------------
-    ::boost::scoped_ptr<SwNodes> m_pNodes;  /// document content (Nodes Array)
+    ::std::unique_ptr<SwNodes> m_pNodes;  /// document content (Nodes Array)
 	SwAttrPool*	mpAttrPool;				// der Attribut Pool
 	SwPageDescs	aPageDescs;				// PageDescriptoren
 	Link 		aOle2Link;				// OLE 2.0-Benachrichtigung
@@ -300,9 +300,9 @@ class SW_DLLPUBLIC SwDoc :
         xXForms;                        // container with XForms models
     mutable com::sun::star::uno::Reference< com::sun::star::linguistic2::XProofreadingIterator > m_xGCIterator;
 
-    const ::boost::scoped_ptr< ::sw::mark::MarkManager> pMarkManager;
-    const ::boost::scoped_ptr< ::sw::MetaFieldManager > m_pMetaFieldManager;
-    const ::boost::scoped_ptr< ::sw::UndoManager > m_pUndoManager;
+    const ::std::unique_ptr< ::sw::mark::MarkManager> pMarkManager;
+    const ::std::unique_ptr< ::sw::MetaFieldManager > m_pMetaFieldManager;
+    const ::std::unique_ptr< ::sw::UndoManager > m_pUndoManager;
 
 	// -------------------------------------------------------------------
 	// die Pointer
@@ -326,7 +326,7 @@ class SW_DLLPUBLIC SwDoc :
 	SwDefTOXBase_Impl * pDefTOXBases;	// defaults of SwTOXBase's
 
 	ViewShell		*pCurrentView;	// SwDoc should get a new member pCurrentView//swmod 071225
-	boost::shared_ptr<SwRootFrm> pLayoutPtr;
+	std::shared_ptr<SwRootFrm> pLayoutPtr;
 	SwDrawModel*     pDrawModel;		// StarView Drawing
 
 	SwDocUpdtFld 	*pUpdtFlds;			// Struktur zum Field-Update
@@ -1839,7 +1839,7 @@ public:
 	const SwDocShell* GetDocShell() const	{ return pDocShell; }
 	void SetDocShell( SwDocShell* pDSh );
 
-	void ShareLayout( boost::shared_ptr<SwRootFrm>& rPtr);
+	void ShareLayout( std::shared_ptr<SwRootFrm>& rPtr);
 
 	// in case during copying of embedded object a new shell is created,
     // it should be set here and cleaned later

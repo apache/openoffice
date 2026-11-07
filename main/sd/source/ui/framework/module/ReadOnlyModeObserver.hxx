@@ -38,8 +38,8 @@
 #include <cppuhelper/compbase2.hxx>
 #include <tools/link.hxx>
 #include <boost/function.hpp>
-#include <boost/scoped_ptr.hpp>
-#include <boost/shared_ptr.hpp>
+#include <memory>
+#include <memory>
 
 namespace {
 
@@ -119,7 +119,7 @@ private:
     ::com::sun::star::uno::Reference<com::sun::star::frame::XDispatch>
         mxDispatch;
     class ModifyBroadcaster;
-    ::boost::scoped_ptr<ModifyBroadcaster> mpBroadcaster;
+    ::std::unique_ptr<ModifyBroadcaster> mpBroadcaster;
 
     /** Listen for the .uno:EditMode command.  Returns <TRUE/> when the connection
         has been established.

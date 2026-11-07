@@ -27,7 +27,7 @@
 #include <vector>
 
 #include <boost/scoped_array.hpp>
-#include <boost/tuple/tuple.hpp>
+#include <tuple>
 
 #include <tools/solar.h>
 #include <tools/debug.hxx>
@@ -562,7 +562,7 @@ struct SAL_DLLPRIVATE XMLTextImportHelper::Impl
     // <--
 
     // start range, xml:id, RDFa stuff
-    typedef ::boost::tuple<
+    typedef ::std::tuple<
         uno::Reference<text::XTextRange>, ::rtl::OUString,
         ::boost::shared_ptr< ::xmloff::ParsedRDFaAttributes > >
             BookmarkMapEntry_t;
@@ -2724,7 +2724,7 @@ void XMLTextImportHelper::InsertBookmarkStartRange(
     ::boost::shared_ptr< ::xmloff::ParsedRDFaAttributes > & i_rpRDFaAttributes)
 {
     m_pImpl->m_BookmarkStartRanges[sName] =
-        ::boost::make_tuple(rRange, i_rXmlId, i_rpRDFaAttributes);
+        ::std::make_tuple(rRange, i_rXmlId, i_rpRDFaAttributes);
     m_pImpl->m_BookmarkVector.push_back(sName);
 }
 

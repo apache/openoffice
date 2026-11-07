@@ -23,6 +23,7 @@
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_canvas.hxx"
+#include <tuple>
 
 #include <canvas/debug.hxx>
 #include <tools/diagnose_ex.h>
@@ -49,7 +50,7 @@
 
 #include <boost/scoped_ptr.hpp>
 #include <boost/bind.hpp>
-#include <boost/tuple/tuple.hpp>
+#include <memory>
 
 
 using namespace ::com::sun::star;
@@ -58,7 +59,7 @@ namespace dxcanvas
 {
     namespace
     {
-        typedef ::boost::shared_ptr< Gdiplus::PathGradientBrush > 	PathGradientBrushSharedPtr;
+        typedef ::std::shared_ptr< Gdiplus::PathGradientBrush > 	PathGradientBrushSharedPtr;
 
         bool fillLinearGradient( GraphicsSharedPtr&                             rGraphics,
                                  const ::canvas::ParametricPolyPolygon::Values& /*rValues*/,
@@ -335,7 +336,7 @@ namespace dxcanvas
                     std::ptrdiff_t nIndex;
                     double fAlpha;
                     const double fT( i/double(nStepCount) );
-                    boost::tuples::tie(nIndex,fAlpha)=aLerper.lerp(fT);
+                    std::tie(nIndex,fAlpha)=aLerper.lerp(fT);
 
                     const Gdiplus::Color aFillColor(
                         static_cast<BYTE>( basegfx::tools::lerp(rColors[nIndex].GetRed(),rColors[nIndex+1].GetRed(),fAlpha) ),

@@ -40,8 +40,8 @@
 #include <tools/link.hxx>
 #include <rtl/ref.hxx>
 
-#include <boost/scoped_ptr.hpp>
-#include <boost/shared_ptr.hpp>
+#include <memory>
+#include <memory>
 #include <boost/noncopyable.hpp>
 
 namespace css = ::com::sun::star;
@@ -193,7 +193,7 @@ public:
 
 private:
     class Implementation;
-    ::boost::scoped_ptr<Implementation> mpImplementation;
+    ::std::unique_ptr<Implementation> mpImplementation;
     bool mbIsDisposed;
 
     /** When the called object has already been disposed this method throws

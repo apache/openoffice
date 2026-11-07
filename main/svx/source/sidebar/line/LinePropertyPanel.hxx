@@ -29,9 +29,10 @@
 #include <sfx2/sidebar/GridLayouter.hxx>
 #include <vcl/fixed.hxx>
 #include <vcl/field.hxx>
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 #include <boost/scoped_array.hpp>
 #include <svx/sidebar/ColorPopup.hxx>
+#include <memory>
 #include "LineWidthPopup.hxx"
 
 namespace svx { class ToolboxButtonColorUpdater; }
@@ -48,8 +49,8 @@ class ListBox;
 class ToolBox;
 class FloatingWindow;
 
-typedef ::boost::shared_ptr< XLineEndList > XLineEndListSharedPtr;
-typedef ::boost::shared_ptr< XDashList > XDashListSharedPtr;
+typedef ::std::shared_ptr< XLineEndList > XLineEndListSharedPtr;
+typedef ::std::shared_ptr< XDashList > XDashListSharedPtr;
 
 namespace {
     #define SIDEBAR_LINE_WIDTH_GLOBAL_VALUE String("PopupPanel_LineWidth", 20, RTL_TEXTENCODING_ASCII_US)
@@ -97,23 +98,23 @@ public:
 
 private:
     //ui controls
-    ::boost::scoped_ptr< FixedText >                        mpFTWidth;
-    ::boost::scoped_ptr< Window >                           mpTBWidthBackground;
-    ::boost::scoped_ptr< ToolBox >                          mpTBWidth;
-    ::boost::scoped_ptr< FixedText >                        mpFTColor;
-    ::boost::scoped_ptr< Window >                           mpTBColorBackground;
-    ::boost::scoped_ptr< ToolBox >                          mpTBColor;
-    ::boost::scoped_ptr< FixedText >                        mpFTStyle;
-    ::boost::scoped_ptr< ListBox >                          mpLBStyle;
-    ::boost::scoped_ptr< FixedText >                        mpFTTrancparency;
-    ::boost::scoped_ptr< MetricField >                      mpMFTransparent;
-    ::boost::scoped_ptr< FixedText >                        mpFTArrow;
-    ::boost::scoped_ptr< ListBox >                          mpLBStart;
-    ::boost::scoped_ptr< ListBox >                          mpLBEnd;
-    ::boost::scoped_ptr< FixedText >                        mpFTEdgeStyle;
-    ::boost::scoped_ptr< ListBox >                          mpLBEdgeStyle;
-    ::boost::scoped_ptr< FixedText >                        mpFTCapStyle;
-    ::boost::scoped_ptr< ListBox >                          mpLBCapStyle;
+    ::std::unique_ptr< FixedText >                        mpFTWidth;
+    ::std::unique_ptr< Window >                           mpTBWidthBackground;
+    ::std::unique_ptr< ToolBox >                          mpTBWidth;
+    ::std::unique_ptr< FixedText >                        mpFTColor;
+    ::std::unique_ptr< Window >                           mpTBColorBackground;
+    ::std::unique_ptr< ToolBox >                          mpTBColor;
+    ::std::unique_ptr< FixedText >                        mpFTStyle;
+    ::std::unique_ptr< ListBox >                          mpLBStyle;
+    ::std::unique_ptr< FixedText >                        mpFTTrancparency;
+    ::std::unique_ptr< MetricField >                      mpMFTransparent;
+    ::std::unique_ptr< FixedText >                        mpFTArrow;
+    ::std::unique_ptr< ListBox >                          mpLBStart;
+    ::std::unique_ptr< ListBox >                          mpLBEnd;
+    ::std::unique_ptr< FixedText >                        mpFTEdgeStyle;
+    ::std::unique_ptr< ListBox >                          mpLBEdgeStyle;
+    ::std::unique_ptr< FixedText >                        mpFTCapStyle;
+    ::std::unique_ptr< ListBox >                          mpLBCapStyle;
 
     //ControllerItem
     ::sfx2::sidebar::ControllerItem                         maStyleControl;
@@ -129,16 +130,16 @@ private:
     ::sfx2::sidebar::ControllerItem                         maCapStyle;
 
     Color                                                   maColor;
-    ::boost::scoped_ptr< ::svx::ToolboxButtonColorUpdater > mpColorUpdater;
-    ::boost::scoped_ptr< XLineStyleItem >                   mpStyleItem;
-    ::boost::scoped_ptr< XLineDashItem >                    mpDashItem;
+    ::std::unique_ptr< ::svx::ToolboxButtonColorUpdater > mpColorUpdater;
+    ::std::unique_ptr< XLineStyleItem >                   mpStyleItem;
+    ::std::unique_ptr< XLineDashItem >                    mpDashItem;
     sal_uInt16                                              mnTrans;
     SfxMapUnit                                              meMapUnit;
     sal_Int32                                               mnWidthCoreValue;
     XLineEndListSharedPtr                                   maLineEndList;
     XDashListSharedPtr                                      maLineStyleList;
-    ::boost::scoped_ptr< XLineStartItem >                   mpStartItem;
-    ::boost::scoped_ptr< XLineEndItem >                     mpEndItem;
+    ::std::unique_ptr< XLineStartItem >                   mpStartItem;
+    ::std::unique_ptr< XLineEndItem >                     mpEndItem;
 
     //popup windows
     ColorPopup maColorPopup;

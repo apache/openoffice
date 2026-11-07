@@ -27,8 +27,8 @@
 #include <sal/types.h>
 #include <basebmp/drawmodes.hxx>
 
-#include <boost/scoped_ptr.hpp>
-#include <boost/shared_ptr.hpp>
+#include <memory>
+#include <memory>
 #include <boost/shared_array.hpp>
 #include <boost/enable_shared_from_this.hpp>
 #include <boost/noncopyable.hpp>
@@ -56,9 +56,9 @@ namespace basebmp
 
 // Temporary. Use like the tools color object
 class Color;
-typedef boost::shared_ptr< class BitmapDevice >         BitmapDeviceSharedPtr;
+typedef std::shared_ptr< class BitmapDevice >         BitmapDeviceSharedPtr;
 typedef boost::shared_array< sal_uInt8 >                RawMemorySharedArray;
-typedef boost::shared_ptr< const std::vector<Color> >   PaletteMemorySharedVector;
+typedef std::shared_ptr< const std::vector<Color> >   PaletteMemorySharedVector;
 
 struct ImplBitmapDevice;
 
@@ -74,7 +74,7 @@ struct ImplBitmapDevice;
     works best when given as an eight bit grey bitmap. Everything else
     is accepted, but potentially slow.
  */
-class BASEBMP_DLLPUBLIC BitmapDevice : public boost::enable_shared_from_this<BitmapDevice>,
+class BASEBMP_DLLPUBLIC BitmapDevice : public std::enable_shared_from_this<BitmapDevice>,
                      private boost::noncopyable
 {
 public:
@@ -636,7 +636,7 @@ private:
 
     BitmapDeviceSharedPtr getGenericRenderer() const;
 
-    boost::scoped_ptr< ImplBitmapDevice > mpImpl;
+    std::unique_ptr< ImplBitmapDevice > mpImpl;
 };
 
 /** Factory method to create a BitmapDevice for given scanline format

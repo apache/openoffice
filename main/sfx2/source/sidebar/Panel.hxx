@@ -29,8 +29,7 @@
 #include <com/sun/star/ui/XSidebarPanel.hpp>
 
 #include <boost/function.hpp>
-#include <boost/scoped_ptr.hpp>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 #include <vector>
 
 namespace css = ::com::sun::star;
@@ -76,7 +75,7 @@ public:
 
 private:
     const ::rtl::OUString msPanelId;
-    ::boost::scoped_ptr<PanelTitleBar> mpTitleBar;
+    ::std::unique_ptr<PanelTitleBar> mpTitleBar;
     const bool mbIsTitleBarOptional;
     cssu::Reference<css::ui::XUIElement> mxElement;
     cssu::Reference<css::ui::XSidebarPanel> mxPanelComponent;
@@ -84,7 +83,7 @@ private:
     const ::boost::function<void(void)> maDeckLayoutTrigger;
     const ::boost::function<Context(void)> maContextAccess;
 };
-typedef ::boost::shared_ptr<Panel> SharedPanel;
+typedef ::std::shared_ptr<Panel> SharedPanel;
 typedef ::std::vector<SharedPanel> SharedPanelContainer;
 
 

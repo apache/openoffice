@@ -31,7 +31,7 @@
 #include <com/sun/star/frame/XFrame.hpp>
 #include <boost/function.hpp>
 #include <boost/tuple/tuple.hpp>
-#include <boost/scoped_ptr.hpp>
+#include <memory>
 
 class Button;
 class CheckBox;
@@ -99,12 +99,12 @@ public:
 
 private:
     cssu::Reference<css::frame::XFrame> mxFrame;
-    ::boost::scoped_ptr<CheckBox> mpMenuButton;
+    ::std::unique_ptr<CheckBox> mpMenuButton;
     class Item
     {
     public:
         DECL_LINK(HandleClick, Button*);
-        ::boost::shared_ptr<RadioButton> mpButton;
+        ::std::shared_ptr<RadioButton> mpButton;
         ::rtl::OUString msDeckId;
         ::boost::function<void(const ::rtl::OUString&rsDeckId)> maDeckActivationFunctor;
         bool mbIsHidden;
@@ -122,7 +122,7 @@ private:
     void Layout (void);
     void UpdateButtonIcons (void);
 
-    ::boost::shared_ptr<PopupMenu> CreatePopupMenu (void) const;
+    ::std::shared_ptr<PopupMenu> CreatePopupMenu (void) const;
     void ShowPopupMenu (void) const;
     DECL_LINK(OnToolboxClicked, void*);
 

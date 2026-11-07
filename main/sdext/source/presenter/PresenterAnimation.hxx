@@ -27,8 +27,8 @@
 #include <sal/types.h>
 #include <boost/function.hpp>
 #include <boost/noncopyable.hpp>
-#include <boost/scoped_ptr.hpp>
-#include <boost/shared_ptr.hpp>
+#include <memory>
+#include <memory>
 #include <vector>
 
 namespace sdext { namespace presenter {
@@ -110,15 +110,15 @@ private:
     const sal_uInt64 mnStartTime;
     const sal_uInt64 mnTotalDuration;
     const sal_uInt64 mnStepDuration;
-    ::boost::scoped_ptr<std::vector<Callback> > mpStartCallbacks;
-    ::boost::scoped_ptr<std::vector<Callback> > mpEndCallbacks;
+    ::std::unique_ptr<std::vector<Callback> > mpStartCallbacks;
+    ::std::unique_ptr<std::vector<Callback> > mpEndCallbacks;
 };
 
 sal_uInt64 GetCurrentTime (void);
 inline sal_uInt32 GetSeconds (const sal_uInt64 nTime) { return sal_uInt32(nTime / 1000); }
 inline sal_uInt32 GetNanoSeconds (const sal_uInt64 nTime) { return sal_uInt32((nTime % 1000) * 1000000); }
 
-typedef ::boost::shared_ptr<PresenterAnimation> SharedPresenterAnimation;
+typedef ::std::shared_ptr<PresenterAnimation> SharedPresenterAnimation;
 
 
 } } // end of namespace ::sdext::presenter
