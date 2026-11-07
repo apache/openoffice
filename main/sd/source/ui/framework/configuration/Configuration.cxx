@@ -43,9 +43,12 @@ namespace {
     for STL containers.
 */
 class XResourceIdLess
-    : 	public ::std::binary_function <Reference<XResourceId>, Reference<XResourceId>, bool>
+
 {
 public:
+    typedef Reference<XResourceId> first_argument_type;
+    typedef Reference<XResourceId> second_argument_type;
+    typedef bool result_type;
     bool operator () (const Reference<XResourceId>& rId1, const Reference<XResourceId>& rId2) const
 	{
         return rId1->compareTo(rId2) == -1;

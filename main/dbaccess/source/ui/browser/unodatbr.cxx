@@ -421,8 +421,10 @@ sal_Bool SbaTableQueryBrowser::Construct(Window* pParent)
 namespace
 {
     // -----------------------------------------------------------------------------------------------------------------
-    struct SelectValueByName : public ::std::unary_function< ::rtl::OUString, Any >
+    struct SelectValueByName
     {
+        typedef ::rtl::OUString argument_type;
+        typedef Any result_type;
         const Any& operator()( ::rtl::OUString const& i_name ) const
         {
             return m_rCollection.get( i_name );

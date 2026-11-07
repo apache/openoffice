@@ -172,8 +172,10 @@ namespace sfx2
 	}
 
 	//--------------------------------------------------------------------
-	struct CreateEmptyClassRememberPos : public ::std::unary_function< FilterName, void >
+	struct CreateEmptyClassRememberPos
 	{
+		typedef FilterName argument_type;
+		typedef void result_type;
 	protected:
 		FilterClassList&		m_rClassList;
 		FilterClassReferrer&	m_rClassesReferrer;
@@ -199,8 +201,10 @@ namespace sfx2
 	};
 
 	//--------------------------------------------------------------------
-	struct ReadGlobalFilter : public ::std::unary_function< FilterName, void >
+	struct ReadGlobalFilter
 	{
+		typedef FilterName argument_type;
+		typedef void result_type;
 	protected:
 		OConfigurationNode		m_aClassesNode;
 		FilterClassReferrer&	m_aClassReferrer;
@@ -276,8 +280,10 @@ namespace sfx2
 	}
 
 	//--------------------------------------------------------------------
-	struct ReadLocalFilter : public ::std::unary_function< FilterName, void >
+	struct ReadLocalFilter
 	{
+		typedef FilterName argument_type;
+		typedef void result_type;
 	protected:
 		OConfigurationNode		m_aClassesNode;
 		FilterClassList&		m_rClasses;
@@ -346,8 +352,10 @@ namespace sfx2
 
 	//--------------------------------------------------------------------
 	// a struct which adds helps remembering a reference to a class entry
-	struct ReferToFilterEntry : public ::std::unary_function< FilterName, void >
+	struct ReferToFilterEntry
 	{
+		typedef FilterName argument_type;
+		typedef void result_type;
 	protected:
 		FilterGroupEntryReferrer&	m_rEntryReferrer;
 		FilterGroup::iterator		m_aClassPos;
@@ -371,8 +379,10 @@ namespace sfx2
 	};
 
 	//--------------------------------------------------------------------
-	struct FillClassGroup : public ::std::unary_function< FilterClass, void >
+	struct FillClassGroup
 	{
+		typedef FilterClass argument_type;
+		typedef void result_type;
 	protected:
 		FilterGroup&				m_rClassGroup;
 		FilterGroupEntryReferrer&	m_rClassReferrer;
@@ -419,8 +429,10 @@ namespace sfx2
 	}
 
     //====================================================================
-	struct CheckAppendSingleWildcard : public ::std::unary_function< ::rtl::OUString, void >
+	struct CheckAppendSingleWildcard
 	{
+		typedef ::rtl::OUString argument_type;
+		typedef void result_type;
 		::rtl::OUString& _rToBeExtended;
 
 		CheckAppendSingleWildcard( ::rtl::OUString& _rBase ) : _rToBeExtended( _rBase ) { }
@@ -456,8 +468,10 @@ namespace sfx2
 
     //====================================================================
 	// a helper struct which adds a fixed (Sfx-)filter to a filter group entry given by iterator
-	struct AppendWildcardToDescriptor : public ::std::unary_function< FilterGroupEntryReferrer::value_type, void >
+	struct AppendWildcardToDescriptor
 	{
+		typedef FilterGroupEntryReferrer::value_type argument_type;
+		typedef void result_type;
 	protected:
 		::std::vector< ::rtl::OUString > aWildCards;
 
@@ -540,8 +554,10 @@ namespace sfx2
 			MapGroupEntry2GroupEntry;
 			// this is not really a map - it's just called this way because it is used as a map
 
-	struct FindGroupEntry : public ::std::unary_function< MapGroupEntry2GroupEntry::value_type, sal_Bool >
+	struct FindGroupEntry
 	{
+		typedef MapGroupEntry2GroupEntry::value_type argument_type;
+		typedef sal_Bool result_type;
 		FilterGroupEntryReferrer::mapped_type aLookingFor;
 		FindGroupEntry( FilterGroupEntryReferrer::mapped_type _rLookingFor ) : aLookingFor( _rLookingFor ) { }
 
@@ -551,8 +567,10 @@ namespace sfx2
 		}
 	};
 
-	struct CopyGroupEntryContent : public ::std::unary_function< MapGroupEntry2GroupEntry::value_type, void >
+	struct CopyGroupEntryContent
 	{
+		typedef MapGroupEntry2GroupEntry::value_type argument_type;
+		typedef void result_type;
 		void operator() ( const MapGroupEntry2GroupEntry::value_type& _rMapEntry )
 		{
 #ifdef DBG_UTIL
@@ -563,8 +581,10 @@ namespace sfx2
 	};
 
 	//--------------------------------------------------------------------
-	struct CopyNonEmptyFilter : public ::std::unary_function< FilterDescriptor, void >
+	struct CopyNonEmptyFilter
 	{
+		typedef FilterDescriptor argument_type;
+		typedef void result_type;
 		FilterGroup& rTarget;
 		CopyNonEmptyFilter( FilterGroup& _rTarget ) :rTarget( _rTarget ) { }
 
@@ -741,8 +761,10 @@ namespace sfx2
 	}
 
 	//--------------------------------------------------------------------
-	struct AppendFilter : public ::std::unary_function< FilterDescriptor, void >
+	struct AppendFilter
 	{
+			typedef FilterDescriptor argument_type;
+			typedef void result_type;
 		protected:
 			Reference< XFilterManager > 		m_xFilterManager;
 			FileDialogHelper_Impl*				m_pFileDlgImpl;
@@ -840,8 +862,10 @@ namespace sfx2
 // =======================================================================
 
 	//--------------------------------------------------------------------
-	struct AppendFilterGroup : public ::std::unary_function< FilterGroup, void >
+	struct AppendFilterGroup
 	{
+		typedef FilterGroup argument_type;
+		typedef void result_type;
 	protected:
 		Reference< XFilterManager > 		m_xFilterManager;
 		Reference< XFilterGroupManager >	m_xFilterGroupManager;

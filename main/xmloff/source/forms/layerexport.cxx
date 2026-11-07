@@ -503,8 +503,11 @@ namespace xmloff
 	//---------------------------------------------------------------------
     namespace
     {
-        struct AccumulateSize : public ::std::binary_function< size_t, MapPropertySet2Map::value_type, size_t >
+        struct AccumulateSize
         {
+            typedef size_t first_argument_type;
+            typedef MapPropertySet2Map::value_type second_argument_type;
+            typedef size_t result_type;
             size_t operator()( size_t _size, const MapPropertySet2Map::value_type& _map ) const
             {
                 return _size + _map.second.size();

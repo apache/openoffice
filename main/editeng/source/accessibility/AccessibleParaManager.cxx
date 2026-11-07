@@ -309,9 +309,11 @@ namespace accessibility
     }
 
     // not generic yet, no arguments...
-    class AccessibleParaManager_DisposeChildren : public ::std::unary_function< ::accessibility::AccessibleEditableTextPara&, void >
+    class AccessibleParaManager_DisposeChildren
     {
     public:
+        typedef ::accessibility::AccessibleEditableTextPara& argument_type;
+        typedef void result_type;
         AccessibleParaManager_DisposeChildren() {}
         void operator()( ::accessibility::AccessibleEditableTextPara& rPara )
         {
@@ -328,9 +330,11 @@ namespace accessibility
     }
 
     // not generic yet, too many method arguments...
-    class StateChangeEvent : public ::std::unary_function< ::accessibility::AccessibleEditableTextPara&, void >
+    class StateChangeEvent
     {
     public:
+        typedef ::accessibility::AccessibleEditableTextPara& argument_type;
+        typedef void result_type;
         typedef void return_type;
         StateChangeEvent( const sal_Int16 nEventId,
                           const uno::Any& rNewValue,
@@ -373,9 +377,11 @@ namespace accessibility
         }
     }
 
-    class ReleaseChild : public ::std::unary_function< const AccessibleParaManager::WeakChild&, AccessibleParaManager::WeakChild >
+    class ReleaseChild
     {
     public:
+        typedef const AccessibleParaManager::WeakChild& argument_type;
+        typedef AccessibleParaManager::WeakChild result_type;
         AccessibleParaManager::WeakChild operator()( const AccessibleParaManager::WeakChild& rPara )
         {
             AccessibleParaManager::ShutdownPara( rPara );

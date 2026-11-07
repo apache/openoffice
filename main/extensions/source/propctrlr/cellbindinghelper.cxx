@@ -66,8 +66,10 @@ namespace pcr
     namespace
     {
         //....................................................................
-        struct StringCompare : public ::std::unary_function< ::rtl::OUString, bool >
+        struct StringCompare
         {
+            typedef ::rtl::OUString argument_type;
+            typedef bool result_type;
         private:
             ::rtl::OUString m_sReference;
 

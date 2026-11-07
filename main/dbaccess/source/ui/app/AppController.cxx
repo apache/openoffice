@@ -205,8 +205,10 @@ Reference< XInterface > SAL_CALL OApplicationController::Create(const Reference<
 }
 // -----------------------------------------------------------------------------
 
-struct XContainerFunctor : public ::std::unary_function< OApplicationController::TContainerVector::value_type , bool>
+struct XContainerFunctor
 {
+	typedef OApplicationController::TContainerVector::value_type argument_type;
+	typedef bool result_type;
 	Reference<XContainerListener> m_xContainerListener;
 	XContainerFunctor( const Reference<XContainerListener>& _xContainerListener)
 		: m_xContainerListener(_xContainerListener){}

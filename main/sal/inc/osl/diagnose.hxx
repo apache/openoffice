@@ -72,7 +72,9 @@ namespace osl {
 /// @internal
 namespace detail {
 
-struct VoidPtrHash : ::std::unary_function<void const*, ::std::size_t> {
+struct VoidPtrHash {
+    typedef void const* argument_type;
+    typedef ::std::size_t result_type;
     ::std::size_t operator()( void const* p ) const {
         ::std::size_t const d = static_cast< ::std::size_t >(
             reinterpret_cast< ::std::ptrdiff_t >(p) );

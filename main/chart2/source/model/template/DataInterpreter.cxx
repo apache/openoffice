@@ -228,8 +228,10 @@ sal_Bool SAL_CALL DataInterpreter::isDataCompatible(
 namespace
 {
 
-struct lcl_LabeledSequenceEquals : public unary_function< Reference< data::XLabeledDataSequence >, bool >
+struct lcl_LabeledSequenceEquals
 {
+    typedef Reference< data::XLabeledDataSequence > argument_type;
+    typedef bool result_type;
     lcl_LabeledSequenceEquals( const Reference< data::XLabeledDataSequence > & xLSeqToCmp ) :
             m_bHasLabels ( false ),
             m_bHasValues ( false )

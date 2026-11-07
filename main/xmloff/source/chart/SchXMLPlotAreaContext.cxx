@@ -72,8 +72,10 @@ using com::sun::star::uno::Reference;
 namespace
 {
 
-struct lcl_AxisHasCategories : public ::std::unary_function< SchXMLAxis, bool >
+struct lcl_AxisHasCategories
 {
+    typedef SchXMLAxis argument_type;
+    typedef bool result_type;
     bool operator() ( const SchXMLAxis & rAxis )
     {
         return rAxis.bHasCategories;

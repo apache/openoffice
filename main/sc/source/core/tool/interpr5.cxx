@@ -60,36 +60,51 @@ using namespace formula;
 const double fInvEpsilon = 1.0E-7;
 
 // -----------------------------------------------------------------------
-    struct MatrixAdd : public ::std::binary_function<double,double,double>
+    struct MatrixAdd
     {
+        typedef double first_argument_type;
+        typedef double second_argument_type;
+        typedef double result_type;
         inline double operator() (const double& lhs, const double& rhs) const
         {
             return ::rtl::math::approxAdd( lhs,rhs);
         }
     };
-    struct MatrixSub : public ::std::binary_function<double,double,double>
+    struct MatrixSub
     {
+        typedef double first_argument_type;
+        typedef double second_argument_type;
+        typedef double result_type;
         inline double operator() (const double& lhs, const double& rhs) const
         {
             return ::rtl::math::approxSub( lhs,rhs);
         }
     };
-    struct MatrixMul : public ::std::binary_function<double,double,double>
+    struct MatrixMul
     {
+        typedef double first_argument_type;
+        typedef double second_argument_type;
+        typedef double result_type;
         inline double operator() (const double& lhs, const double& rhs) const
         {
             return lhs * rhs;
         }
     };
-    struct MatrixDiv : public ::std::binary_function<double,double,double>
+    struct MatrixDiv
     {
+        typedef double first_argument_type;
+        typedef double second_argument_type;
+        typedef double result_type;
         inline double operator() (const double& lhs, const double& rhs) const
         {
             return ScInterpreter::div( lhs,rhs);
         }
     };
-    struct MatrixPow : public ::std::binary_function<double,double,double>
+    struct MatrixPow
     {
+        typedef double first_argument_type;
+        typedef double second_argument_type;
+        typedef double result_type;
         inline double operator() (const double& lhs, const double& rhs) const
         {
             return ::pow( lhs,rhs);

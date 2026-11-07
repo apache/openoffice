@@ -189,8 +189,11 @@ using namespace ::cppu;
 namespace
 {
     // comparing two PropertyValue instances
-    struct PropertyValueCompare : public ::std::binary_function< beans::PropertyValue, ::rtl::OUString , bool >
+    struct PropertyValueCompare
     {
+	    typedef beans::PropertyValue first_argument_type;
+	    typedef ::rtl::OUString second_argument_type;
+	    typedef bool result_type;
 	    bool operator() (const beans::PropertyValue& x, const ::rtl::OUString& y) const
 	    {
 		    return x.Name.equals(y);// ? true : false;

@@ -39,9 +39,11 @@ typedef ::std::map< ItemConverter::tWhichIdType, ::std::pair< ItemConverter::tPr
 typedef ::comphelper::MakeMap< ItemConverter::tWhichIdType, ::std::pair< ItemConverter::tPropertyNameType, ItemConverter::tMemberIdType > >
     MakeItemPropertyMap;
 
-class FillItemSetFunc : public ::std::unary_function< ItemConverter *, void >
+class FillItemSetFunc
 {
 public:
+    typedef ItemConverter * argument_type;
+    typedef void result_type;
     explicit FillItemSetFunc( SfxItemSet & rOutItemSet ) :
             m_rOutItemSet( rOutItemSet )
     {}
@@ -55,9 +57,11 @@ private:
     SfxItemSet & m_rOutItemSet;
 };
 
-class ApplyItemSetFunc : public ::std::unary_function< ItemConverter *, void >
+class ApplyItemSetFunc
 {
 public:
+    typedef ItemConverter * argument_type;
+    typedef void result_type;
     explicit ApplyItemSetFunc( const SfxItemSet & rItemSet,
                                bool & rOutResult ) :
             m_rItemSet( rItemSet ),
@@ -74,8 +78,10 @@ private:
     bool & m_rOutResult;
 };
 
-struct DeleteItemConverterPtr : public ::std::unary_function< ItemConverter *, void >
+struct DeleteItemConverterPtr
 {
+    typedef ItemConverter * argument_type;
+    typedef void result_type;
     void operator() ( ItemConverter * pConv )
     { delete pConv; }
 };

@@ -71,8 +71,11 @@ namespace connectivity
 		typedef ::std::vector<TVoidPtr> TVoidVector;
 		//	typedef ::com::sun::star::uno::Sequence<TVoidPtr> TVoidVector;
 		/// unary_function Functor object for class ZZ returntype is void
-		struct OOO_DLLPUBLIC_ODBCBASE TBookmarkPosMapCompare : ::std::binary_function< ::com::sun::star::uno::Sequence<sal_Int8>, ::com::sun::star::uno::Sequence<sal_Int8>, bool >
+		struct OOO_DLLPUBLIC_ODBCBASE TBookmarkPosMapCompare
 		{
+			typedef ::com::sun::star::uno::Sequence<sal_Int8> first_argument_type;
+			typedef ::com::sun::star::uno::Sequence<sal_Int8> second_argument_type;
+			typedef bool result_type;
 			inline bool operator()( const ::com::sun::star::uno::Sequence<sal_Int8>& _rLH,
 									const ::com::sun::star::uno::Sequence<sal_Int8>& _rRH) const
 			{

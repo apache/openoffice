@@ -141,8 +141,10 @@ namespace xmloff { namespace metadata
         }
 
         //..............................................................................................................
-        struct AttributeHash : public ::std::unary_function< AttributeDescription, size_t >
+        struct AttributeHash
         {
+            typedef AttributeDescription argument_type;
+            typedef size_t result_type;
             size_t operator()( const AttributeDescription& i_attribute ) const
             {
                 return size_t( i_attribute.attributeToken * 100 ) + size_t( i_attribute.namespacePrefix );

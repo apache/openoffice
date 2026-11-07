@@ -1437,8 +1437,10 @@ void ODatabaseDocument::impl_closeControllerFrames_nolck_throw( sal_Bool _bDeliv
 }
 
 // -----------------------------------------------------------------------------
-struct DisposeControllerFrame : public ::std::unary_function< Reference< XController >, void >
+struct DisposeControllerFrame
 {
+    typedef Reference< XController > argument_type;
+    typedef void result_type;
     void operator()( const Reference< XController >& _rxController ) const
     {
         try
@@ -1998,8 +2000,10 @@ Reference< XInterface > ODatabaseDocument::getThis() const
     return *const_cast< ODatabaseDocument* >( this );
 }
 // -----------------------------------------------------------------------------
-struct CreateAny : public ::std::unary_function< Reference<XController>, Any>
+struct CreateAny
 {
+    typedef Reference<XController> argument_type;
+    typedef Any result_type;
     Any operator() (const Reference<XController>& lhs) const
     {
         return makeAny(lhs);

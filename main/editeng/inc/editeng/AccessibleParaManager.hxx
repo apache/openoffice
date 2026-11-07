@@ -255,9 +255,11 @@ namespace accessibility
             void operator() ( AccessibleEditablePara& )
 
         */
-        template < typename Functor > class WeakChildAdapter : public ::std::unary_function< const WeakChild&, void >
+        template < typename Functor > class WeakChildAdapter
         {
         public:
+            typedef const WeakChild& argument_type;
+            typedef void result_type;
             WeakChildAdapter( Functor& rFunctor ) : mrFunctor(rFunctor) {}
             void operator()( const WeakChild& rPara )
             {
@@ -281,9 +283,11 @@ namespace accessibility
             Create with pointer to member function of
             AccessibleEditableTextPara and the corresponding argument.
          */
-        template < typename Argument > class MemFunAdapter : public ::std::unary_function< const WeakChild&, void >
+        template < typename Argument > class MemFunAdapter
         {
         public:
+            typedef const WeakChild& argument_type;
+            typedef void result_type;
             typedef void (::accessibility::AccessibleEditableTextPara::*FunctionPointer)( Argument );
 
             MemFunAdapter( FunctionPointer aFunPtr, Argument aArg ) : maFunPtr(aFunPtr), maArg(aArg) {}

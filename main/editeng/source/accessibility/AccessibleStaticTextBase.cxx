@@ -73,9 +73,12 @@ namespace accessibility
 {
     typedef ::comphelper::SequenceAsVector< beans::PropertyValue > PropertyValueVector;
 
-    class PropertyValueEqualFunctor : public ::std::binary_function< beans::PropertyValue, beans::PropertyValue, bool >
+    class PropertyValueEqualFunctor
     {
     public:
+        typedef beans::PropertyValue first_argument_type;
+        typedef beans::PropertyValue second_argument_type;
+        typedef bool result_type;
         PropertyValueEqualFunctor()
         {}
         bool operator() ( const beans::PropertyValue& lhs, const beans::PropertyValue& rhs ) const

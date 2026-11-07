@@ -1768,8 +1768,10 @@ struct ListItem
 
 typedef beans::Pair< ::rtl::OUString, ::rtl::OUString > UnoListItem;
 
-struct StripItemData : public ::std::unary_function< ListItem, UnoListItem >
+struct StripItemData
 {
+    typedef ListItem argument_type;
+    typedef UnoListItem result_type;
     UnoListItem operator()( const ListItem& i_rItem )
     {
         return UnoListItem( i_rItem.ItemText, i_rItem.ItemImageURL );
@@ -1911,8 +1913,10 @@ uno::Reference< beans::XPropertySetInfo > UnoControlListBoxModel::getPropertySet
 // ---------------------------------------------------------------------------------------------------------------------
 namespace
 {
-    struct CreateListItem : public ::std::unary_function< ::rtl::OUString, ListItem >
+    struct CreateListItem
     {
+        typedef ::rtl::OUString argument_type;
+        typedef ListItem result_type;
         ListItem operator()( const ::rtl::OUString& i_rItemText )
         {
             return ListItem( i_rItemText );

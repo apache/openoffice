@@ -112,8 +112,10 @@ namespace
 
 // ----------------------------------------------------------------------------
 // functor for disposing a control model
-struct DisposeControlModel : public ::std::unary_function< Reference< XControlModel >, void >
+struct DisposeControlModel
 {
+	typedef Reference< XControlModel > argument_type;
+	typedef void result_type;
 	void operator()( Reference< XControlModel >& _rxModel )
 	{
 		try
@@ -129,8 +131,10 @@ struct DisposeControlModel : public ::std::unary_function< Reference< XControlMo
 
 // ----------------------------------------------------------------------------
 // functor for searching control model by name
-struct FindControlModel : public ::std::unary_function< ControlModelContainerBase::UnoControlModelHolder, bool >
+struct FindControlModel
 {
+	typedef ControlModelContainerBase::UnoControlModelHolder argument_type;
+	typedef bool result_type;
 private:
 	const ::rtl::OUString& m_rName;
 
@@ -145,8 +149,10 @@ public:
 
 // ----------------------------------------------------------------------------
 // functor for cloning a control model, and insertion into a target list
-struct CloneControlModel : public ::std::unary_function< ControlModelContainerBase::UnoControlModelHolder, void >
+struct CloneControlModel
 {
+	typedef ControlModelContainerBase::UnoControlModelHolder argument_type;
+	typedef void result_type;
 private:
 	ControlModelContainerBase::UnoControlModelHolderList&	m_rTargetList;
 
@@ -168,8 +174,10 @@ public:
 
 // ----------------------------------------------------------------------------
 // functor for comparing a XControlModel with a given reference
-struct CompareControlModel : public ::std::unary_function< ControlModelContainerBase::UnoControlModelHolder, bool >
+struct CompareControlModel
 {
+	typedef ControlModelContainerBase::UnoControlModelHolder argument_type;
+	typedef bool result_type;
 private:
 	Reference< XControlModel > m_xReference;
 public:

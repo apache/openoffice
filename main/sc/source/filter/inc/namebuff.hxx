@@ -167,8 +167,10 @@ inline void NameBuffer::SetBase( sal_uInt16 nNewBase )
 
 class ShrfmlaBuffer : public ExcRoot
 {
-	struct ScAddressHashFunc : public std::unary_function< const ScAddress &, size_t >
+	struct ScAddressHashFunc
 	{
+		typedef const ScAddress & argument_type;
+		typedef size_t result_type;
 		size_t operator() (const ScAddress &addr) const;
 	};
     typedef std::hash_map <ScAddress, sal_uInt16, ScAddressHashFunc> ShrfmlaHash;

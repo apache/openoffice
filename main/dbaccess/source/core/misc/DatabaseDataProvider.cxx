@@ -670,16 +670,20 @@ namespace
         }
     };
 
-    struct CreateColumnDescription : public ::std::unary_function< ::rtl::OUString, ColumnDescription >
+    struct CreateColumnDescription
     {
+        typedef ::rtl::OUString argument_type;
+        typedef ColumnDescription result_type;
         ColumnDescription operator()( const ::rtl::OUString& i_rName )
         {
             return ColumnDescription( i_rName );
         }
     };
 
-    struct SelectColumnName : public ::std::unary_function< ColumnDescription, ::rtl::OUString >
+    struct SelectColumnName
     {
+        typedef ColumnDescription argument_type;
+        typedef ::rtl::OUString result_type;
         const ::rtl::OUString& operator()( const ColumnDescription& i_rColumn )
         {
             return i_rColumn.sName;

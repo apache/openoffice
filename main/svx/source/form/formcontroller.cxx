@@ -519,8 +519,10 @@ IMPL_LINK( FormController, OnActivateTabOrder, void*, /*EMPTYTAG*/ )
 }
 
 //------------------------------------------------------------------------------
-struct UpdateAllListeners : public ::std::unary_function< Reference< XDispatch >, bool >
+struct UpdateAllListeners
 {
+    typedef Reference< XDispatch > argument_type;
+    typedef bool result_type;
     bool operator()( const Reference< XDispatch >& _rxDispatcher ) const
     {
         static_cast< ::svx::OSingleFeatureDispatcher* >( _rxDispatcher.get() )->updateAllListeners();
@@ -758,16 +760,20 @@ Sequence< ::rtl::OUString> FormController::getSupportedServiceNames_Static(void)
 // -----------------------------------------------------------------------------
 namespace
 {
-    struct ResetComponentText : public ::std::unary_function< Reference< XTextComponent >, void >
+    struct ResetComponentText
     {
+        typedef Reference< XTextComponent > argument_type;
+        typedef void result_type;
         void operator()( const Reference< XTextComponent >& _rxText )
         {
             _rxText->setText( ::rtl::OUString() );
         }
     };
 
-    struct RemoveComponentTextListener : public ::std::unary_function< Reference< XTextComponent >, void >
+    struct RemoveComponentTextListener
     {
+        typedef Reference< XTextComponent > argument_type;
+        typedef void result_type;
         RemoveComponentTextListener( const Reference< XTextListener >& _rxListener )
             :m_xListener( _rxListener )
         {

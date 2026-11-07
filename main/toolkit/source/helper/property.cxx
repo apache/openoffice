@@ -302,8 +302,11 @@ ImplPropertyInfo* ImplGetPropertyInfos( sal_uInt16& rElementCount )
 }
 
 
-struct ImplPropertyInfoCompareFunctor : ::std::binary_function<ImplPropertyInfo,::rtl::OUString,bool>
+struct ImplPropertyInfoCompareFunctor
 {
+	typedef ImplPropertyInfo first_argument_type;
+	typedef ::rtl::OUString second_argument_type;
+	typedef bool result_type;
 	inline bool operator()(const ImplPropertyInfo& lhs,const ImplPropertyInfo& rhs)	const
 	{
 		return lhs.aName.compareTo(rhs.aName) < 0;

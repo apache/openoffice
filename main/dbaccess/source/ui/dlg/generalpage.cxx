@@ -163,8 +163,11 @@ namespace dbaui
         };
         typedef ::std::vector< DisplayedType > DisplayedTypes;
 
-        struct DisplayedTypeLess : ::std::binary_function< DisplayedType, DisplayedType, bool >
+        struct DisplayedTypeLess
         {
+            typedef DisplayedType first_argument_type;
+            typedef DisplayedType second_argument_type;
+            typedef bool result_type;
             bool operator() ( const DisplayedType& _rLHS, const DisplayedType& _rRHS )
             {
                 return _rLHS.eType < _rRHS.eType;

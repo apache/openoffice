@@ -89,8 +89,10 @@ namespace
 {
 
 template< class MAP >
-struct lcl_UpdateController : public std::unary_function< typename MAP::value_type, void >
+struct lcl_UpdateController
 {
+    typedef typename MAP::value_type argument_type;
+    typedef void result_type;
     void operator()( typename MAP::value_type &rElement ) const
     {
         try
@@ -105,8 +107,10 @@ struct lcl_UpdateController : public std::unary_function< typename MAP::value_ty
 };
 
 template< class MAP >
-struct lcl_RemoveController : public std::unary_function< typename MAP::value_type, void >
+struct lcl_RemoveController
 {
+    typedef typename MAP::value_type argument_type;
+    typedef void result_type;
     void operator()( typename MAP::value_type &rElement ) const
     {
         try

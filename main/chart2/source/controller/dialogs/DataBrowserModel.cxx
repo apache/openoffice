@@ -190,8 +190,10 @@ sal_Int32 lcl_getValuesRepresentationIndex(
     return nResult;
 }
 
-struct lcl_RepresentationsOfLSeqMatch : public ::std::unary_function< Reference< chart2::data::XLabeledDataSequence >, bool >
+struct lcl_RepresentationsOfLSeqMatch
 {
+    typedef Reference< chart2::data::XLabeledDataSequence > argument_type;
+    typedef bool result_type;
     lcl_RepresentationsOfLSeqMatch( const Reference< chart2::data::XLabeledDataSequence > & xLSeq ) :
             m_aValuesRep( xLSeq.is() ?
                           (xLSeq->getValues().is() ? xLSeq->getValues()->getSourceRangeRepresentation() : OUString())
@@ -207,8 +209,10 @@ private:
     OUString m_aValuesRep;
 };
 
-struct lcl_RolesOfLSeqMatch : public ::std::unary_function< Reference< chart2::data::XLabeledDataSequence >, bool >
+struct lcl_RolesOfLSeqMatch
 {
+    typedef Reference< chart2::data::XLabeledDataSequence > argument_type;
+    typedef bool result_type;
     lcl_RolesOfLSeqMatch( const Reference< chart2::data::XLabeledDataSequence > & xLSeq ) :
             m_aRole( lcl_getRole( xLSeq ))
     {}
@@ -270,9 +274,11 @@ struct DataBrowserModel::tDataColumn
     {}
 };
 
-struct DataBrowserModel::implColumnLess : public ::std::binary_function<
-        DataBrowserModel::tDataColumn, DataBrowserModel::tDataColumn, bool >
+struct DataBrowserModel::implColumnLess
 {
+    typedef DataBrowserModel::tDataColumn first_argument_type;
+    typedef DataBrowserModel::tDataColumn second_argument_type;
+    typedef bool result_type;
     bool operator() ( const first_argument_type & rLeft, const second_argument_type & rRight )
     {
         if( rLeft.m_xLabeledDataSequence.is() && rRight.m_xLabeledDataSequence.is())
@@ -299,8 +305,10 @@ DataBrowserModel::~DataBrowserModel()
 
 namespace
 {
-struct lcl_DataSeriesOfHeaderMatches : public ::std::unary_function< ::chart::DataBrowserModel::tDataHeader, bool >
+struct lcl_DataSeriesOfHeaderMatches
 {
+    typedef ::chart::DataBrowserModel::tDataHeader argument_type;
+    typedef bool result_type;
     lcl_DataSeriesOfHeaderMatches(
         const Reference< chart2::XDataSeries > & xSeriesToCompareWith ) :
             m_xSeries( xSeriesToCompareWith )

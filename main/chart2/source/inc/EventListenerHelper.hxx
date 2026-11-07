@@ -40,8 +40,10 @@ namespace impl
 {
 
 template< class InterfaceRef >
-struct addListenerFunctor : public ::std::unary_function< InterfaceRef, void >
+struct addListenerFunctor
 {
+    typedef InterfaceRef argument_type;
+    typedef void result_type;
     explicit addListenerFunctor( const ::com::sun::star::uno::Reference<
                                      ::com::sun::star::lang::XEventListener > & xListener ) :
             m_xListener( xListener )
@@ -59,8 +61,10 @@ private:
 };
 
 template< class InterfaceRef >
-struct removeListenerFunctor : public ::std::unary_function< InterfaceRef, void >
+struct removeListenerFunctor
 {
+    typedef InterfaceRef argument_type;
+    typedef void result_type;
     explicit removeListenerFunctor( const ::com::sun::star::uno::Reference<
                                         ::com::sun::star::lang::XEventListener > & xListener ) :
             m_xListener( xListener )

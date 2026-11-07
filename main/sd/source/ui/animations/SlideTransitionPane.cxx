@@ -333,8 +333,10 @@ sal_uInt16 lcl_getTransitionEffectIndex(
     return pResult;
 }
 
-struct lcl_EqualsSoundFileName : public ::std::unary_function< String, bool >
+struct lcl_EqualsSoundFileName
 {
+    typedef String argument_type;
+    typedef bool result_type;
     explicit lcl_EqualsSoundFileName( const String & rStr ) :
             maStr( rStr )
     {}
@@ -394,8 +396,10 @@ String lcl_getSoundFileURL(
     return aResult;
 }
 
-struct lcl_AppendSoundToListBox : public ::std::unary_function< String, void >
+struct lcl_AppendSoundToListBox
 {
+    typedef String argument_type;
+    typedef void result_type;
     lcl_AppendSoundToListBox( ListBox & rListBox ) :
             mrListBox( rListBox )
     {}

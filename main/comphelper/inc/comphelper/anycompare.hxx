@@ -54,8 +54,11 @@ namespace comphelper
 	//==================================================================================================================
 	//= LessPredicateAdapter
 	//==================================================================================================================
-    struct LessPredicateAdapter : public ::std::binary_function< ::com::sun::star::uno::Any, ::com::sun::star::uno::Any, bool >
+    struct LessPredicateAdapter
     {
+        typedef ::com::sun::star::uno::Any first_argument_type;
+        typedef ::com::sun::star::uno::Any second_argument_type;
+        typedef bool result_type;
         LessPredicateAdapter( const IKeyPredicateLess& _predicate )
             :m_predicate( _predicate )
         {

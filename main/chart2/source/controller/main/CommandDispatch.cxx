@@ -38,9 +38,10 @@ using ::rtl::OUString;
 namespace
 {
 template< class Map >
-	struct lcl_DisposeAndClearAndDeleteMapElement :
-		public ::std::unary_function< typename Map::value_type, void >
+	struct lcl_DisposeAndClearAndDeleteMapElement
 	{
+		typedef typename Map::value_type argument_type;
+		typedef void result_type;
 		lcl_DisposeAndClearAndDeleteMapElement( const Reference< uno::XInterface > & xEventSource ) :
 				m_aEvent( xEventSource )
 		{}

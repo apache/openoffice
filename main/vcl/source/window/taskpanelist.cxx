@@ -54,8 +54,11 @@ Point ImplTaskPaneListGetPos( const Window *w )
 }
 
 // compares window pos left-to-right
-struct LTRSort : public ::std::binary_function< const Window*, const Window*, bool >
+struct LTRSort
 {
+    typedef const Window* first_argument_type;
+    typedef const Window* second_argument_type;
+    typedef bool result_type;
     bool operator()( const Window* w1, const Window* w2 ) const
     {
         Point pos1(ImplTaskPaneListGetPos( w1 ));
@@ -67,8 +70,11 @@ struct LTRSort : public ::std::binary_function< const Window*, const Window*, bo
             return ( pos1.X() < pos2.X() );
     }
 };
-struct LTRSortBackward : public ::std::binary_function< const Window*, const Window*, bool >
+struct LTRSortBackward
 {
+    typedef const Window* first_argument_type;
+    typedef const Window* second_argument_type;
+    typedef bool result_type;
     bool operator()( const Window* w2, const Window* w1 ) const
     {
         Point pos1(ImplTaskPaneListGetPos( w1 ));

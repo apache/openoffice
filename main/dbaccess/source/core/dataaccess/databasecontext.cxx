@@ -149,8 +149,10 @@ namespace dbaccess
             }
         }
 
-        struct TerminateFunctor : ::std::unary_function<ODatabaseModelImpl* , void>
+        struct TerminateFunctor
         {
+            typedef ODatabaseModelImpl* argument_type;
+            typedef void result_type;
             void operator()( const ODatabaseModelImpl* _pModelImpl ) const
             {
                 try

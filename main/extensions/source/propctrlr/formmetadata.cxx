@@ -81,8 +81,11 @@ namespace pcr
 
 	//------------------------------------------------------------------------
 	// Vergleichen von PropertyInfo
-    struct PropertyInfoLessByName : public ::std::binary_function< OPropertyInfoImpl, OPropertyInfoImpl, bool >
+    struct PropertyInfoLessByName
     {
+        typedef OPropertyInfoImpl first_argument_type;
+        typedef OPropertyInfoImpl second_argument_type;
+        typedef bool result_type;
         bool operator()( const OPropertyInfoImpl& _rLHS, const OPropertyInfoImpl& _rRHS )
         {
             return _rLHS.sName.CompareTo( _rRHS.sName ) == COMPARE_LESS;

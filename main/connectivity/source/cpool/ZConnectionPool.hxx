@@ -83,8 +83,11 @@ namespace connectivity
 
 	//	typedef TDigestHolder
 
-	struct TDigestLess : public ::std::binary_function< TDigestHolder, TDigestHolder, bool>
+	struct TDigestLess
 	{
+		typedef TDigestHolder first_argument_type;
+		typedef TDigestHolder second_argument_type;
+		typedef bool result_type;
 		bool operator() (const TDigestHolder& x, const TDigestHolder& y) const
 		{
 			sal_uInt32 i;

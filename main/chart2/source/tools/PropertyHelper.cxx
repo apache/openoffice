@@ -46,8 +46,10 @@ using ::com::sun::star::uno::Sequence;
 
 namespace
 {
-struct lcl_EqualsElement : public ::std::unary_function< OUString, bool >
+struct lcl_EqualsElement
 {
+    typedef OUString argument_type;
+    typedef bool result_type;
     explicit lcl_EqualsElement( const Any & rValue, const Reference< container::XNameAccess > & xAccess )
             : m_aValue( rValue ), m_xAccess( xAccess )
     {
@@ -72,8 +74,10 @@ private:
     Reference< container::XNameAccess > m_xAccess;
 };
 
-struct lcl_StringMatches : public ::std::unary_function< OUString ,bool >
+struct lcl_StringMatches
 {
+    typedef OUString argument_type;
+    typedef bool result_type;
     lcl_StringMatches( const OUString & rCmpStr ) :
             m_aCmpStr( rCmpStr )
     {}
@@ -87,8 +91,10 @@ private:
     OUString m_aCmpStr;
 };
 
-struct lcl_OUStringRestToInt32 : public ::std::unary_function< OUString, sal_Int32 >
+struct lcl_OUStringRestToInt32
 {
+    typedef OUString argument_type;
+    typedef sal_Int32 result_type;
     lcl_OUStringRestToInt32( sal_Int32 nPrefixLength ) :
             m_nPrefixLength( nPrefixLength )
     {}

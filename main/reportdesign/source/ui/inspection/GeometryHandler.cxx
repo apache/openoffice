@@ -126,8 +126,11 @@ using namespace ::com::sun::star;
 //using namespace formula;
 
 // comparing two property instances
-struct PropertyCompare : public ::std::binary_function< beans::Property, ::rtl::OUString , bool >
+struct PropertyCompare
 {
+	typedef beans::Property first_argument_type;
+	typedef ::rtl::OUString second_argument_type;
+	typedef bool result_type;
 	bool operator() (const beans::Property& x, const ::rtl::OUString& y) const
 	{
 		return x.Name.equals(y);// ? true : false;

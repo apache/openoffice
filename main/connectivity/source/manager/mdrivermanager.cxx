@@ -118,8 +118,10 @@ Any SAL_CALL ODriverEnumeration::nextElement(  )
 	//--- 24.08.01 11:27:59 -----------------------------------------------
 
 	/// an STL functor which ensures that a SdbcDriver described by a DriverAccess is loaded
-	struct EnsureDriver : public ::std::unary_function< DriverAccess, DriverAccess >
+	struct EnsureDriver
 	{
+        typedef DriverAccess argument_type;
+        typedef DriverAccess result_type;
         EnsureDriver( const Reference< XComponentContext > &rxContext )
             : mxContext( rxContext ) {}
 
@@ -142,8 +144,10 @@ Any SAL_CALL ODriverEnumeration::nextElement(  )
 	//--- 24.08.01 11:28:04 -----------------------------------------------
 
 	/// an STL functor which extracts a SdbcDriver from a DriverAccess
-	struct ExtractDriverFromAccess : public ::std::unary_function< DriverAccess, SdbcDriver >
+	struct ExtractDriverFromAccess
 	{
+		typedef DriverAccess argument_type;
+		typedef SdbcDriver result_type;
 		SdbcDriver operator()( const DriverAccess& _rAccess ) const
 		{
 			return _rAccess.xDriver;
@@ -164,8 +168,10 @@ Any SAL_CALL ODriverEnumeration::nextElement(  )
 	//---------------------------------------------------------------------
 	//--- 24.08.01 11:42:36 -----------------------------------------------
 
-	struct ExtractDriverFromCollectionElement : public ::std::unary_function< DriverCollection::value_type, SdbcDriver >
+	struct ExtractDriverFromCollectionElement
 	{
+		typedef DriverCollection::value_type argument_type;
+		typedef SdbcDriver result_type;
 		SdbcDriver operator()( const DriverCollection::value_type& _rElement ) const
 		{
 			return _rElement.second;
@@ -176,8 +182,12 @@ Any SAL_CALL ODriverEnumeration::nextElement(  )
 	//--- 24.08.01 11:51:03 -----------------------------------------------
 
 	// predicate for checking whether or not a driver accepts a given URL
-	class AcceptsURL : public ::std::unary_function< SdbcDriver, bool >
+	class AcceptsURL
 	{
+	public:
+		typedef SdbcDriver argument_type;
+		typedef bool result_type;
+	private:
 	protected:
 		const ::rtl::OUString& m_rURL;
 
@@ -253,8 +263,11 @@ Any SAL_CALL ODriverEnumeration::nextElement(  )
 	//--- 24.08.01 13:01:56 -----------------------------------------------
 
 	/// an STL argorithm compatible predicate comparing two DriverAccess instances by their implementation names
-	struct CompareDriverAccessByName : public ::std::binary_function< DriverAccess, DriverAccess, bool >
+	struct CompareDriverAccessByName
 	{
+		typedef DriverAccess first_argument_type;
+		typedef DriverAccess second_argument_type;
+		typedef bool result_type;
 		//.................................................................
 		bool operator()( const DriverAccess& lhs, const DriverAccess& rhs )
 		{
@@ -266,8 +279,11 @@ Any SAL_CALL ODriverEnumeration::nextElement(  )
 	//--- 24.08.01 13:08:17 -----------------------------------------------
 
 	/// and STL argorithm compatible predicate comparing a DriverAccess' impl name to a string
-	struct CompareDriverAccessToName : public ::std::binary_function< DriverAccess, ::rtl::OUString, bool >
+	struct CompareDriverAccessToName
 	{
+		typedef DriverAccess first_argument_type;
+		typedef ::rtl::OUString second_argument_type;
+		typedef bool result_type;
 		//.................................................................
 		bool operator()( const DriverAccess& lhs, const ::rtl::OUString& rhs )
 		{
@@ -281,8 +297,11 @@ Any SAL_CALL ODriverEnumeration::nextElement(  )
 	};
 
     /// and STL argorithm compatible predicate comparing a DriverAccess' impl name to a string
-	struct EqualDriverAccessToName : public ::std::binary_function< DriverAccess, ::rtl::OUString, bool >
+	struct EqualDriverAccessToName
 	{
+        typedef DriverAccess first_argument_type;
+        typedef ::rtl::OUString second_argument_type;
+        typedef bool result_type;
         ::rtl::OUString m_sImplName;
         EqualDriverAccessToName(const ::rtl::OUString& _sImplName) : m_sImplName(_sImplName){}
 		//.................................................................
