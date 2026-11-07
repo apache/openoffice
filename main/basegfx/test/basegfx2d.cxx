@@ -266,8 +266,8 @@ TEST_F(b2dpolyrange, check)
     aRange.appendElement(B2DRange(2,2,3,3),ORIENTATION_POSITIVE);
 
     ASSERT_TRUE(aRange.count() == 2) << "simple poly range - count";
-    ASSERT_TRUE(aRange.getElement(0).head == B2DRange(0,0,1,1)) << "simple poly range - first element";
-    ASSERT_TRUE(aRange.getElement(1).head == B2DRange(2,2,3,3)) << "simple poly range - second element";
+    ASSERT_TRUE(std::get<0>(aRange.getElement(0)) == B2DRange(0,0,1,1)) << "simple poly range - first element";
+    ASSERT_TRUE(std::get<0>(aRange.getElement(1)) == B2DRange(2,2,3,3)) << "simple poly range - second element";
 
     // B2DPolyRange relies on correctly orientated rects
     const B2DRange aRect(0,0,1,1);

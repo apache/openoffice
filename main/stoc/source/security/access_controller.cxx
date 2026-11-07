@@ -612,7 +612,7 @@ inline void AccessController::clearPostPoned() SAL_THROW( () )
 void AccessController::checkAndClearPostPoned()
 {
     // check postponed permissions
-    auto_ptr< t_rec_vec > rec( reinterpret_cast< t_rec_vec * >( m_rec.getData() ) );
+    std::unique_ptr< t_rec_vec > rec( reinterpret_cast< t_rec_vec * >( m_rec.getData() ) );
     m_rec.setData( 0 ); // takeover ownership
     OSL_ASSERT( rec.get() );
     if (rec.get())
