@@ -99,7 +99,7 @@ private:
     typedef ::std::vector< ScRange > ScRangeVec;
     typedef ::std::pair< SCCOL, SCROW > ScAddress2D;
     typedef ::std::vector< ScAddress2D > ScAddress2DVec;
-    typedef ::std::auto_ptr< ScAddress2DVec > ScAddress2DVecPtr;
+    typedef ::std::unique_ptr< ScAddress2DVec > ScAddress2DVecPtr;
 
 											//	Daten pro Tabelle	------------------
 	ScColumn		aCol[MAXCOLCOUNT];
@@ -127,7 +127,7 @@ private:
 	SCROW			nRepeatStartY;
 	SCROW			nRepeatEndY;
 
-    ::std::auto_ptr<ScTableProtection> pTabProtection;
+    ::std::unique_ptr<ScTableProtection> pTabProtection;
 
 	sal_uInt16*			pColWidth;
     ::boost::shared_ptr<ScFlatUInt16RowSegments> mpRowHeights;

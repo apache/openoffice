@@ -533,7 +533,7 @@ uno::Reference< graphic::XGraphic > MediaWindow::grabFrame( const ::rtl::OUStrin
     // the media object got its URL (see SdrMediaObj).
     uno::Reference< media::XPlayer >    xPlayer( createPlayer( rURL ) );
     uno::Reference< graphic::XGraphic > xRet;
-    ::std::auto_ptr< Graphic >          apGraphic;
+    ::std::unique_ptr< Graphic >          apGraphic;
 
     if( xPlayer.is() )
     {

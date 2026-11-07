@@ -240,16 +240,16 @@ struct rtl_mem
 	inline static void operator delete ( void *, void * )
 		{}
 
-    static inline ::std::auto_ptr< rtl_mem > allocate( ::std::size_t bytes );
+    static inline ::std::unique_ptr< rtl_mem > allocate( ::std::size_t bytes );
 };
 
 //______________________________________________________________________________
-inline ::std::auto_ptr< rtl_mem > rtl_mem::allocate( ::std::size_t bytes )
+inline ::std::unique_ptr< rtl_mem > rtl_mem::allocate( ::std::size_t bytes )
 {
     void * p = rtl_allocateMemory( bytes );
     if (0 == p)
         throw BridgeRuntimeError( OUSTR("out of memory!") );
-    return ::std::auto_ptr< rtl_mem >( (rtl_mem *)p );
+    return ::std::unique_ptr< rtl_mem >( (rtl_mem *)p );
 }
 
 

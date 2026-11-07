@@ -1746,7 +1746,7 @@ ErrCode SfxObjectShell::CallXScript( const Reference< XInterface >& _rxScriptCon
 
 	if ( bCaughtException && bRaiseError )
 	{
-        ::std::auto_ptr< VclAbstractDialog > pScriptErrDlg;
+        ::std::unique_ptr< VclAbstractDialog > pScriptErrDlg;
 		SfxAbstractDialogFactory* pFact = SfxAbstractDialogFactory::Create();
         if ( pFact )
             pScriptErrDlg.reset( pFact->CreateScriptErrorDialog( NULL, aException ) );

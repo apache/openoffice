@@ -585,7 +585,7 @@ void AnnotationWindow::setAnnotation( const Reference< XAnnotation >& xAnnotatio
 
 		if( pTextApi )
 		{
-			std::auto_ptr< OutlinerParaObject > pOPO( pTextApi->CreateText() );
+			std::unique_ptr< OutlinerParaObject > pOPO( pTextApi->CreateText() );
 			Engine()->SetText( *pOPO.get() );
 		}
 

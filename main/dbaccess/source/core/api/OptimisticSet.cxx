@@ -129,7 +129,7 @@ void OptimisticSet::construct(const Reference< XResultSet>& _xDriverSet,const ::
     const ::rtl::OUString* pTableNameEnd = pTableNameIter + aTableNames.getLength();
     for( ; pTableNameIter != pTableNameEnd ; ++pTableNameIter)
     {
-        ::std::auto_ptr<SelectColumnsMetaData> pKeyColumNames(new SelectColumnsMetaData(bCase));
+        ::std::unique_ptr<SelectColumnsMetaData> pKeyColumNames(new SelectColumnsMetaData(bCase));
         findTableColumnsMatching_throw(xTables->getByName(*pTableNameIter),*pTableNameIter,xMeta,xQueryColumns,pKeyColumNames);
         m_pKeyColumnNames->insert(pKeyColumNames->begin(),pKeyColumNames->end());
     }
@@ -148,7 +148,7 @@ void OptimisticSet::construct(const Reference< XResultSet>& _xDriverSet,const ::
 	xAnalyzer->setElementaryQuery(xSourceComposer->getElementaryQuery());
     // check for joins
     ::rtl::OUString aErrorMsg;
-    ::std::auto_ptr<OSQLParseNode> pStatementNode( m_aSqlParser.parseTree( aErrorMsg, sQuery ) );
+    ::std::unique_ptr<OSQLParseNode> pStatementNode( m_aSqlParser.parseTree( aErrorMsg, sQuery ) );
     m_aSqlIterator.setParseTree( pStatementNode.get() );
 	m_aSqlIterator.traverseAll();
     fillJoinedColumns_throw(m_aSqlIterator.getJoinConditions());

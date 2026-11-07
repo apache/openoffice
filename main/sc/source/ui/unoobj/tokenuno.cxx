@@ -446,8 +446,8 @@ bool ScTokenConversion::ConvertToTokenSequence( ScDocument& rDoc,
 
 // ============================================================================
 
-ScFormulaOpCodeMapperObj::ScFormulaOpCodeMapperObj(::std::auto_ptr<formula::FormulaCompiler> _pCompiler)
-: formula::FormulaOpCodeMapperObj(_pCompiler)
+ScFormulaOpCodeMapperObj::ScFormulaOpCodeMapperObj(::std::unique_ptr<formula::FormulaCompiler> _pCompiler)
+: formula::FormulaOpCodeMapperObj(std::move(_pCompiler))
 {
 }
 

@@ -66,7 +66,7 @@
 #include <memory>
 
 using ::com::sun::star::uno::Sequence;
-using ::std::auto_ptr;
+using ::std::unique_ptr;
 
 // Shared string table ========================================================
 
@@ -201,7 +201,7 @@ void lclInsertUrl( const XclImpRoot& rRoot, const String& rUrl, SCCOL nScCol, SC
                     rEE.QuickSetAttribs( aItemSet, ESelection( 0, 0, EE_PARA_MAX, 0 ) );
                 }
             }
-            ::std::auto_ptr< EditTextObject > xTextObj( rEE.CreateTextObject() );
+            ::std::unique_ptr< EditTextObject > xTextObj( rEE.CreateTextObject() );
 
             ScEditCell* pCell = new ScEditCell( xTextObj.get(), &rDoc, rEE.GetEditTextObjectPool() );
             rDoc.PutCell( aScPos, pCell );
@@ -261,9 +261,9 @@ String XclImpHyperlink::ReadEmbeddedData( XclImpStream& rStrm )
     DBG_ASSERT( aGuid == XclTools::maGuidStdLink, "XclImpHyperlink::ReadEmbeddedData - unknown header GUID" );
 
     sal_uInt16 nLevel = 0;                  // counter for level to climb down in path
-    ::std::auto_ptr< String > xLongName;    // link / file name
-    ::std::auto_ptr< String > xShortName;   // 8.3-representation of file name
-    ::std::auto_ptr< String > xTextMark;    // text mark
+    ::std::unique_ptr< String > xLongName;    // link / file name
+    ::std::unique_ptr< String > xShortName;   // 8.3-representation of file name
+    ::std::unique_ptr< String > xTextMark;    // text mark
 
     // description (ignore)
     if( ::get_flag( nFlags, EXC_HLINK_DESCR ) )
@@ -337,7 +337,7 @@ String XclImpHyperlink::ReadEmbeddedData( XclImpStream& rStrm )
     DBG_ASSERT( rStrm.GetRecLeft() == 0, "XclImpHyperlink::ReadEmbeddedData - record size mismatch" );
 
     if( !xLongName.get() && xShortName.get() )
-        xLongName = xShortName;
+        xLongName = std::move(xShortName);
     else if( !xLongName.get() && xTextMark.get() )
         xLongName.reset( new String );
 
@@ -609,7 +609,7 @@ void XclImpCondFormat::ReadCF( XclImpStream& rStrm )
     const ScAddress& rPos = maRanges.GetObject( 0 )->aStart;    // assured above that maRanges is not empty
     ExcelToSc& rFmlaConv = GetOldFmlaConverter();
 
-    ::std::auto_ptr< ScTokenArray > xTokArr1;
+    ::std::unique_ptr< ScTokenArray > xTokArr1;
     if( nFmlaSize1 > 0 )
     {
         const ScTokenArray* pTokArr = 0;
@@ -620,7 +620,7 @@ void XclImpCondFormat::ReadCF( XclImpStream& rStrm )
             xTokArr1.reset( pTokArr->Clone() );
     }
 
-    ::std::auto_ptr< ScTokenArray > pTokArr2;
+    ::std::unique_ptr< ScTokenArray > pTokArr2;
     if( nFmlaSize2 > 0 )
     {
         const ScTokenArray* pTokArr = 0;
@@ -741,7 +741,7 @@ void XclImpValidation::ReadDV( XclImpStream& rStrm )
         // first formula
         // string list is single tStr token with NUL separators -> replace them with LF
         rStrm.SetNulSubstChar( '\n' );
-        ::std::auto_ptr< ScTokenArray > xTokArr1;
+        ::std::unique_ptr< ScTokenArray > xTokArr1;
         rStrm >> nLen;
         rStrm.Ignore( 2 );
         if( nLen > 0 )
@@ -756,7 +756,7 @@ void XclImpValidation::ReadDV( XclImpStream& rStrm )
         rStrm.SetNulSubstChar();    // back to default
 
         // second formula
-        ::std::auto_ptr< ScTokenArray > xTokArr2;
+        ::std::unique_ptr< ScTokenArray > xTokArr2;
         rStrm >> nLen;
         rStrm.Ignore( 2 );
         if( nLen > 0 )
@@ -1152,7 +1152,7 @@ void XclImpDocProtectBuffer::Apply() const
         // If neither is set then the document is not protected at all.
         return;
 
-    auto_ptr<ScDocProtection> pProtect(new ScDocProtection);
+    unique_ptr<ScDocProtection> pProtect(new ScDocProtection);
     pProtect->setProtected(true);
 
 #if ENABLE_SHEET_PROTECTION
@@ -1257,7 +1257,7 @@ void XclImpSheetProtectBuffer::Apply() const
             // This sheet is (for whatever reason) not protected.
             continue;
 
-        auto_ptr<ScTableProtection> pProtect(new ScTableProtection);
+        unique_ptr<ScTableProtection> pProtect(new ScTableProtection);
         pProtect->setProtected(true);
 
 #if ENABLE_SHEET_PROTECTION

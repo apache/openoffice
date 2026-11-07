@@ -1033,7 +1033,7 @@ MultiLineEdit::MultiLineEdit( Window* pParent, const ResId& rResId )
 MultiLineEdit::~MultiLineEdit()
 {
     {
-        ::std::auto_ptr< ImpSvMEdit > pDelete( pImpSvMEdit );
+        ::std::unique_ptr< ImpSvMEdit > pDelete( pImpSvMEdit );
         pImpSvMEdit = NULL;
     }
 	delete pUpdateDataTimer;
@@ -1644,7 +1644,7 @@ MultiLineEdit::GetComponentInterface(sal_Bool bCreate)
         Edit::GetComponentInterface(false));
     if (!xPeer.is() && bCreate)
     {
-        ::std::auto_ptr< VCLXMultiLineEdit > xEdit(new VCLXMultiLineEdit());
+        ::std::unique_ptr< VCLXMultiLineEdit > xEdit(new VCLXMultiLineEdit());
         xEdit->SetWindow(this);
         xPeer = xEdit.release();
         SetComponentInterface(xPeer);

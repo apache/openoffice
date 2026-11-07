@@ -161,7 +161,7 @@ public:
 	void test()
 	{
 		MyHandler handler;
-		std::auto_ptr<xxml::XXmlReader> reader=xxml::XXmlReader::createXXmlReader(handler);
+		std::unique_ptr<xxml::XXmlReader> reader=xxml::XXmlReader::createXXmlReader(handler);
 		TimeValue t1; osl_getSystemTime(&t1);
 
 //		reader->read("test.xml");

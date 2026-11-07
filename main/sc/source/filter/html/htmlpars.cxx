@@ -2093,7 +2093,7 @@ void ScHTMLTable::DataOn( const ImportInfo& rInfo )
     {
         // read needed options from the <td> tag
         ScHTMLSize aSpanSize( 1, 1 );
-        ::std::auto_ptr< String > pValStr, pNumStr;
+        ::std::unique_ptr< String > pValStr, pNumStr;
         for( ScHTMLOptionIterator aIter( rInfo ); aIter.is(); ++aIter )
         {
             switch( aIter->GetToken() )

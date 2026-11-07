@@ -341,7 +341,7 @@ void SAL_CALL java_sql_PreparedStatement::setObjectWithInfo( sal_Int32 parameter
                 case DataType::DECIMAL:
 			    case DataType::NUMERIC:
                     {
-                        ::std::auto_ptr<java_math_BigDecimal> pBigDecimal;
+                        ::std::unique_ptr<java_math_BigDecimal> pBigDecimal;
                         if ( x >>= nTemp)
                         {
                             pBigDecimal.reset(new java_math_BigDecimal(nTemp));

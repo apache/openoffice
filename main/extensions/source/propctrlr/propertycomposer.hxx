@@ -65,7 +65,7 @@ namespace pcr
 
     private:
         HandlerArray                                    m_aSlaveHandlers;
-        ::std::auto_ptr< ComposedPropertyUIUpdate >     m_pUIRequestComposer;
+        ::std::unique_ptr< ComposedPropertyUIUpdate >     m_pUIRequestComposer;
         PropertyChangeListeners                         m_aPropertyListeners;
         bool                                            m_bSupportedPropertiesAreKnown;
         PropertyBag                                     m_aSupportedProperties;

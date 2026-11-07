@@ -86,7 +86,7 @@ FltError ImportExcel::Read( void )
 
 	DBG_ASSERT( &aIn != NULL, "-ImportExcel::Read(): Kein Stream - wie dass?!" );
 
-    ::std::auto_ptr< ScfSimpleProgressBar > pProgress( new ScfSimpleProgressBar(
+    ::std::unique_ptr< ScfSimpleProgressBar > pProgress( new ScfSimpleProgressBar(
         aIn.GetSvStreamSize(), GetDocShell(), STR_LOAD_DOC ) );
 
     /*  #i104057# Need to track a base position for progress bar calculation,
@@ -813,7 +813,7 @@ FltError ImportExcel8::Read( void )
 
     FltError eLastErr = eERR_OK;
 
-    ::std::auto_ptr< ScfSimpleProgressBar > pProgress( new ScfSimpleProgressBar(
+    ::std::unique_ptr< ScfSimpleProgressBar > pProgress( new ScfSimpleProgressBar(
         aIn.GetSvStreamSize(), GetDocShell(), STR_LOAD_DOC ) );
 
     /*  #i104057# Need to track a base position for progress bar calculation,

@@ -92,7 +92,7 @@ namespace basctl { namespace docs {
         ) const;
 
     private:
-        ::std::auto_ptr< DocumentEnumeration_Data > m_pData;
+        ::std::unique_ptr< DocumentEnumeration_Data > m_pData;
 	};
 
 //........................................................................

@@ -64,7 +64,7 @@ namespace com { namespace sun { namespace star {
 #include "mip.hxx"
 #include <rtl/ustring.hxx>
 #include <vector>
-#include <memory> // auto_ptr
+#include <memory> // unique_ptr
 
 
 

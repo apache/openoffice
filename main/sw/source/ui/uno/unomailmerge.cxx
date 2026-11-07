@@ -702,7 +702,7 @@ uno::Any SAL_CALL SwXMailMerge::execute(
 
     SwMergeDescriptor aMergeDesc( nMergeType, rSh, aDescriptor );
 
-    std::auto_ptr< SwMailMergeConfigItem > pMMConfigItem;
+    std::unique_ptr< SwMailMergeConfigItem > pMMConfigItem;
     uno::Reference< mail::XMailService > xInService;
     if (MailMergeType::PRINTER == nCurOutputType)
     {
@@ -778,7 +778,7 @@ uno::Any SAL_CALL SwXMailMerge::execute(
             aMergeDesc.bSendAsAttachment = bSendAsAttachment;
 
             aMergeDesc.bCreateSingleFile = sal_False;
-            pMMConfigItem = std::auto_ptr< SwMailMergeConfigItem >(new SwMailMergeConfigItem);
+            pMMConfigItem = std::unique_ptr< SwMailMergeConfigItem >(new SwMailMergeConfigItem);
             aMergeDesc.pMailMergeConfigItem = pMMConfigItem.get();
             aMergeDesc.xSmtpServer = SwMailMergeHelper::ConnectToSmtpServer(
                     *pMMConfigItem,

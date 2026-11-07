@@ -153,13 +153,13 @@ OAppBorderWindow::~OAppBorderWindow()
 	if ( m_pPanel )
 	{
 		m_pPanel->Hide();
-		::std::auto_ptr<Window> aTemp(m_pPanel);
+		::std::unique_ptr<Window> aTemp(m_pPanel);
 		m_pPanel = NULL;
 	}
 	if ( m_pDetailView )
 	{
 		m_pDetailView->Hide();
-		::std::auto_ptr<Window> aTemp(m_pDetailView);
+		::std::unique_ptr<Window> aTemp(m_pDetailView);
 		m_pDetailView = NULL;
 	}
 
@@ -294,7 +294,7 @@ OApplicationView::~OApplicationView()
 	{
 		stopComponentListening(m_xObject);
 		m_pWin->Hide();
-		::std::auto_ptr<Window> aTemp(m_pWin);
+		::std::unique_ptr<Window> aTemp(m_pWin);
 		m_pWin = NULL;
 	}
 }

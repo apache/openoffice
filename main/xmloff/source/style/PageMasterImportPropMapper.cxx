@@ -122,13 +122,13 @@ void PageMasterImportPropertyMapper::finished(::std::vector< XMLPropertyState >&
 	XMLPropertyState* pFooterDynamic = NULL;
     XMLPropertyState* pAllMarginProperty = NULL;
     XMLPropertyState* pMargins[4] = { NULL, NULL, NULL, NULL };
-    ::std::auto_ptr<XMLPropertyState> pNewMargins[4];
+    ::std::unique_ptr<XMLPropertyState> pNewMargins[4];
     XMLPropertyState* pAllHeaderMarginProperty = NULL;
     XMLPropertyState* pHeaderMargins[4] = { NULL, NULL, NULL, NULL };
-    ::std::auto_ptr<XMLPropertyState> pNewHeaderMargins[4];
+    ::std::unique_ptr<XMLPropertyState> pNewHeaderMargins[4];
     XMLPropertyState* pAllFooterMarginProperty = NULL;
     XMLPropertyState* pFooterMargins[4] = { NULL, NULL, NULL, NULL };
-    ::std::auto_ptr<XMLPropertyState> pNewFooterMargins[4];
+    ::std::unique_ptr<XMLPropertyState> pNewFooterMargins[4];
 
 	::std::vector< XMLPropertyState >::iterator aEnd = rProperties.end();
 	for (::std::vector< XMLPropertyState >::iterator aIter = rProperties.begin(); aIter != aEnd; ++aIter)

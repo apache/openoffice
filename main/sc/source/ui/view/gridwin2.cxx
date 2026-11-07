@@ -62,7 +62,7 @@
 using namespace com::sun::star;
 using ::com::sun::star::sheet::DataPilotFieldOrientation;
 using ::std::vector;
-using ::std::auto_ptr;
+using ::std::unique_ptr;
 using ::std::hash_map;
 using ::rtl::OUString;
 using ::rtl::OUStringHash;
@@ -470,7 +470,7 @@ void ScGridWindow::DPLaunchFieldPopupMenu(
     const Point& rScrPos, const Size& rScrSize, const ScAddress& rPos, ScDPObject* pDPObj)
 {
     // We need to get the list of field members.
-    auto_ptr<DPFieldPopupData> pDPData(new DPFieldPopupData);
+    unique_ptr<DPFieldPopupData> pDPData(new DPFieldPopupData);
     pDPObj->FillLabelData(pDPData->maDPParam);
     pDPData->mpDPObj = pDPObj;
 

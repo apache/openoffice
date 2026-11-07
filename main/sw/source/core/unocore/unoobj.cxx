@@ -364,7 +364,7 @@ SwUnoCursorHelper::SetPageDesc(
     {
         return false;
     }
-    ::std::auto_ptr<SwFmtPageDesc> pNewDesc;
+    ::std::unique_ptr<SwFmtPageDesc> pNewDesc;
 	const SfxPoolItem* pItem;
 	if(SFX_ITEM_SET == rSet.GetItemState( RES_PAGEDESC, sal_True, &pItem ) )
     {
@@ -489,7 +489,7 @@ lcl_setDropcapCharStyle(SwPaM & rPam, SfxItemSet & rItemSet,
     {
         throw lang::IllegalArgumentException();
     }
-    ::std::auto_ptr<SwFmtDrop> pDrop;
+    ::std::unique_ptr<SwFmtDrop> pDrop;
     SfxPoolItem const* pItem(0);
     if (SFX_ITEM_SET ==
             rItemSet.GetItemState(RES_PARATR_DROP, sal_True, &pItem))
@@ -514,7 +514,7 @@ lcl_setRubyCharstyle(SfxItemSet & rItemSet, uno::Any const& rValue)
         throw lang::IllegalArgumentException();
     }
 
-    ::std::auto_ptr<SwFmtRuby> pRuby;
+    ::std::unique_ptr<SwFmtRuby> pRuby;
     const SfxPoolItem* pItem;
     if (SFX_ITEM_SET ==
             rItemSet.GetItemState(RES_TXTATR_CJK_RUBY, sal_True, &pItem))
@@ -2080,8 +2080,8 @@ SwUnoCursorHelper::GetPropertyStates(
     uno::Sequence< beans::PropertyState > aRet(rPropertyNames.getLength());
     beans::PropertyState* pStates = aRet.getArray();
     SfxItemPropertyMap const*const pMap = rPropSet.getPropertyMap();
-    ::std::auto_ptr<SfxItemSet> pSet;
-    ::std::auto_ptr<SfxItemSet> pSetParent;
+    ::std::unique_ptr<SfxItemSet> pSet;
+    ::std::unique_ptr<SfxItemSet> pSetParent;
 
     for (sal_Int32 i = 0, nEnd = rPropertyNames.getLength(); i < nEnd; i++)
     {
@@ -2206,7 +2206,7 @@ lcl_SelectParaAndReset( SwPaM &rPaM, SwDoc & rDoc,
 	// if we are reseting paragraph attributes, we need to select the full paragraph first
 	SwPosition aStart = *rPaM.Start();
 	SwPosition aEnd = *rPaM.End();
-    ::std::auto_ptr< SwUnoCrsr > pTemp ( rDoc.CreateUnoCrsr(aStart, sal_False) );
+    ::std::unique_ptr< SwUnoCrsr > pTemp ( rDoc.CreateUnoCrsr(aStart, sal_False) );
 	if(!SwUnoCursorHelper::IsStartOfPara(*pTemp))
     {
 		pTemp->MovePara(fnParaCurr, fnParaStart);
@@ -3145,7 +3145,7 @@ SwXTextCursor::createEnumeration()
         throw uno::RuntimeException();
     }
 
-    ::std::auto_ptr<SwUnoCrsr> pNewCrsr(
+    ::std::unique_ptr<SwUnoCrsr> pNewCrsr(
         rUnoCursor.GetDoc()->CreateUnoCrsr(*rUnoCursor.GetPoint()) );
     if (rUnoCursor.HasMark())
     {
@@ -3161,7 +3161,7 @@ SwXTextCursor::createEnumeration()
             (pStartNode) ? & pStartNode->GetTable() : 0 );
     const uno::Reference< container::XEnumeration > xRet =
         new SwXParagraphEnumeration(
-                pParentText, pNewCrsr, eSetType, pStartNode, pTable);
+                pParentText, std::move(pNewCrsr), eSetType, pStartNode, pTable);
 
     return xRet;
 }

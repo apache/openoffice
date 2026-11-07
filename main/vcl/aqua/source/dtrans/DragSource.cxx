@@ -257,7 +257,7 @@ void SAL_CALL DragSource::startDrag(const DragGestureEvent& trigger,
   m_MouseButton= mMouseEvent.Buttons;
   mXDragSrcListener = listener;
   mXCurrentContext = static_cast<XDragSourceContext*>(new DragSourceContext(this));
-  auto_ptr<AquaClipboard> clipb(new AquaClipboard(NULL, false));
+  unique_ptr<AquaClipboard> clipb(new AquaClipboard(NULL, false));
   g_XTransferable = transferable;
   clipb->setContents(g_XTransferable, uno::Reference<XClipboardOwner>());
   mDragSourceActions = sourceActions;

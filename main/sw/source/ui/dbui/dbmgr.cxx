@@ -940,7 +940,7 @@ sal_Bool SwNewDBMgr::MergeMailFiles(SwWrtShell* pSourceShell,
             SfxObjectShellLock xTargetDocShell;
 
             SwView* pTargetView = 0;
-            std::auto_ptr< utl::TempFile > aTempFile;
+            std::unique_ptr< utl::TempFile > aTempFile;
             String sModifiedStartingPageDesc;
             String sStartingPageDesc;
             sal_uInt16 nStartingPageNo = 0;
@@ -1037,7 +1037,7 @@ sal_Bool SwNewDBMgr::MergeMailFiles(SwWrtShell* pSourceShell,
                         sPath = aEntry.GetMainURL( INetURLObject::NO_DECODE );
                         String sExt( pStoreToFilter->GetDefaultExtension() );
                         sExt.EraseLeadingChars('*');
-                        aTempFile = std::auto_ptr< utl::TempFile >(
+                        aTempFile = std::unique_ptr< utl::TempFile >(
                                 new utl::TempFile(sLeading,&sExt,&sPath ));
                         if( bAsSingleFile )
                             aTempFile->EnableKillingFile();

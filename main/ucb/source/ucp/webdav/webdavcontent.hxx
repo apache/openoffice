@@ -77,8 +77,8 @@ class Content : public ::ucbhelper::ContentImplHelper,
         DAV
     };
 
-    std::auto_ptr< DAVResourceAccess > m_xResAccess;
-    std::auto_ptr< CachableContentProperties >
+    std::unique_ptr< DAVResourceAccess > m_xResAccess;
+    std::unique_ptr< CachableContentProperties >
                       m_xCachedProps; // locally cached props
     rtl::OUString     m_aEscapedTitle;
     ResourceType      m_eResourceType;
@@ -122,7 +122,7 @@ private:
                           ::com::sun::star::ucb::XContentIdentifier >& xNewId );
 
     const rtl::OUString
-    getBaseURI( const std::auto_ptr< DAVResourceAccess > & rResAccess );
+    getBaseURI( const std::unique_ptr< DAVResourceAccess > & rResAccess );
 
     const ResourceType &
     getResourceType( const ::com::sun::star::uno::Reference<
@@ -131,7 +131,7 @@ private:
     const ResourceType &
     getResourceType( const ::com::sun::star::uno::Reference<
                           ::com::sun::star::ucb::XCommandEnvironment >& xEnv,
-                     const std::auto_ptr< DAVResourceAccess > & rResAccess );
+                     const std::unique_ptr< DAVResourceAccess > & rResAccess );
 
     /// Command "open"
     com::sun::star::uno::Any open(

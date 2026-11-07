@@ -167,7 +167,7 @@ private:
 
     /** The resource container controls the lifetime of some singletons.
     */
-    ::std::auto_ptr< ::sd::SdGlobalResourceContainer> mpResourceContainer;
+    ::std::unique_ptr< ::sd::SdGlobalResourceContainer> mpResourceContainer;
 
     /** Create a new summary page.  When the document has been created in
         the kiosk mode with automatical transitions then this method adds

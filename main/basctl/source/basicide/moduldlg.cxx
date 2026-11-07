@@ -817,7 +817,7 @@ void ObjectPage::NewDialog()
     {
         aDocument.getOrCreateLibrary( E_DIALOGS, aLibName );
 
-        std::auto_ptr< NewObjectDialog > xNewDlg(
+        std::unique_ptr< NewObjectDialog > xNewDlg(
             new NewObjectDialog(this, NEWOBJECTMODE_DLG, true));
 		xNewDlg->SetObjectName( aDocument.createObjectName( E_DIALOGS, aLibName ) );
 
@@ -867,7 +867,7 @@ void ObjectPage::NewDialog()
                                 Image( IDEResId( RID_IMG_DIALOG ) ),
                                 Image( IDEResId( RID_IMG_DIALOG_HC ) ),
                                 pLibEntry, false,
-                                std::auto_ptr< BasicEntry >( new BasicEntry( OBJ_TYPE_DIALOG ) ) );
+                                std::unique_ptr< BasicEntry >( new BasicEntry( OBJ_TYPE_DIALOG ) ) );
                             DBG_ASSERT( pEntry, "InsertEntry fehlgeschlagen!" );
                         }
                         aBasicBox.SetCurEntry( pEntry );
@@ -979,7 +979,7 @@ SbModule* createModImpl( Window* pWin, const ScriptDocument& rDocument,
 	if ( !aModName.Len() )
 		aModName = rDocument.createObjectName( E_SCRIPTS, aLibName );
 
-    std::auto_ptr< NewObjectDialog > xNewDlg(
+    std::unique_ptr< NewObjectDialog > xNewDlg(
         new NewObjectDialog( pWin, NEWOBJECTMODE_MOD, true ) );
     xNewDlg->SetObjectName( aModName );
 
@@ -1041,7 +1041,7 @@ SbModule* createModImpl( Window* pWin, const ScriptDocument& rDocument,
                             Image( IDEResId( RID_IMG_MODULE ) ),
                             Image( IDEResId( RID_IMG_MODULE_HC ) ),
                             pSubRootEntry, false,
-                            std::auto_ptr< BasicEntry >( new BasicEntry( OBJ_TYPE_MODULE ) ) );
+                            std::unique_ptr< BasicEntry >( new BasicEntry( OBJ_TYPE_MODULE ) ) );
                         DBG_ASSERT( pEntry, "InsertEntry fehlgeschlagen!" );
                     }
                     rBasicBox.SetCurEntry( pEntry );

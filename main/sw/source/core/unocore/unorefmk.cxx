@@ -351,7 +351,7 @@ SwXReferenceMark::getAnchor()
                     &m_pImpl->m_pDoc->GetNodes()))
             {
                 SwTxtNode const& rTxtNode = pTxtMark->GetTxtNode();
-                const ::std::auto_ptr<SwPaM> pPam( (pTxtMark->End())
+                const ::std::unique_ptr<SwPaM> pPam( (pTxtMark->End())
                     ?   new SwPaM( rTxtNode, *pTxtMark->End(),
                                    rTxtNode, *pTxtMark->GetStart())
                     :   new SwPaM( rTxtNode, *pTxtMark->GetStart()) );
@@ -705,7 +705,7 @@ class SwXMeta::Impl
 public:
 
     SwEventListenerContainer m_ListenerContainer;
-    ::std::auto_ptr<const TextRangeList_t> m_pTextPortions;
+    ::std::unique_ptr<const TextRangeList_t> m_pTextPortions;
     // 3 possible states: not attached, attached, disposed
     bool m_bIsDisposed;
     bool m_bIsDescriptor;
@@ -780,7 +780,7 @@ SwXMeta::~SwXMeta()
 uno::Reference<rdf::XMetadatable>
 SwXMeta::CreateXMeta(::sw::Meta & rMeta,
             uno::Reference<text::XText> const& i_xParent,
-            ::std::auto_ptr<TextRangeList_t const> pPortions)
+            ::std::unique_ptr<TextRangeList_t const> pPortions)
 {
     // re-use existing SwXMeta
     // #i105557#: do not iterate over the registered clients: race condition
@@ -796,7 +796,7 @@ SwXMeta::CreateXMeta(::sw::Meta & rMeta,
             // NB: the meta must always be created with the complete content
             // if SwXTextPortionEnumeration is created for a selection,
             // it must be checked that the Meta is contained in the selection!
-            pXMeta->m_pImpl->m_pTextPortions = pPortions;
+            pXMeta->m_pImpl->m_pTextPortions = std::move(pPortions);
             // ??? is this necessary?
             if (pXMeta->m_pImpl->m_xParentText.get() != i_xParent.get())
             {
@@ -823,7 +823,7 @@ SwXMeta::CreateXMeta(::sw::Meta & rMeta,
     if (!xParentText.is()) { return 0; }
     SwXMeta *const pXMeta( (RES_TXTATR_META == rMeta.GetFmtMeta()->Which())
         ? new SwXMeta     (pTxtNode->GetDoc(), &rMeta, xParentText,
-                            pPortions.release()) // temporarily un-auto_ptr :-(
+                            pPortions.release()) // temporarily un-unique_ptr :-(
         : new SwXMetaField(pTxtNode->GetDoc(), &rMeta, xParentText,
                             pPortions.release()));
     // this is why the constructor is private: need to acquire pXMeta here

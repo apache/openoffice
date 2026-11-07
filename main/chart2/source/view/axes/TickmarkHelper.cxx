@@ -673,7 +673,7 @@ void TickmarkHelper::getAllTicks( ::std::vector< ::std::vector< TickInfo > >& rA
 
 void TickmarkHelper::getAllTicksShifted( ::std::vector< ::std::vector< TickInfo > >& rAllTickInfos ) const
 {
-    std::auto_ptr< TickmarkHelper > apShiftedTickmarkHelper( createShiftedTickmarkHelper() );
+    std::unique_ptr< TickmarkHelper > apShiftedTickmarkHelper( createShiftedTickmarkHelper() );
     apShiftedTickmarkHelper->getAllTicks( rAllTickInfos );
 }
 

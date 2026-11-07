@@ -154,7 +154,7 @@ void UnoDataBrowserView::Construct(const Reference< ::com::sun::star::awt::XCont
 UnoDataBrowserView::~UnoDataBrowserView()
 {
 	{
-		::std::auto_ptr<Splitter> aTemp(m_pSplitter);
+		::std::unique_ptr<Splitter> aTemp(m_pSplitter);
 		m_pSplitter = NULL;
 	}
 	setTreeView(NULL);
@@ -198,7 +198,7 @@ void UnoDataBrowserView::setTreeView(DBTreeView* _pTreeView)
 	{
 		if (m_pTreeView)
 		{
-			::std::auto_ptr<Window> aTemp(m_pTreeView);
+			::std::unique_ptr<Window> aTemp(m_pTreeView);
 			m_pTreeView = NULL;
 		}
 		m_pTreeView = _pTreeView;

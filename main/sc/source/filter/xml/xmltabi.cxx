@@ -152,7 +152,7 @@ ScXMLTableContext::ScXMLTableContext( ScXMLImport& rImport,
 									  const sal_Bool bTempIsSubTable,
 									  const sal_Int32 nSpannedCols) :
 	SvXMLImportContext( rImport, nPrfx, rLName ),
-    pExternalRefInfo(NULL),
+    pExternalRefInfo(),
     nStartOffset(-1),
 	bStartFormPage(sal_False),
     bPrintEntireSheet(sal_True)

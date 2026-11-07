@@ -82,7 +82,7 @@ public:
 
 TEST_F(Test, testCondition) {
     osl::Mutex mutex;
-    std::auto_ptr< salhelper::Condition > p(new DerivedCondition(mutex));
+    std::unique_ptr< salhelper::Condition > p(new DerivedCondition(mutex));
     ASSERT_TRUE(typeid (*p.get()) != typeid (salhelper::Condition));
     ASSERT_TRUE(typeid (p.get()) == typeid (salhelper::Condition *));
     ASSERT_TRUE(
@@ -183,12 +183,12 @@ TEST_F(Test, testSimpleReferenceObject) {
 
 TEST_F(Test, testDerivedCondition) {
     osl::Mutex mutex;
-    std::auto_ptr< salhelper::Condition > p(new DerivedCondition(mutex));
+    std::unique_ptr< salhelper::Condition > p(new DerivedCondition(mutex));
     ASSERT_TRUE(dynamic_cast< DerivedCondition * >(p.get()) != 0);
 }
 
 TEST_F(Test, testDerivedConditionWaiterTimedout) {
-    std::auto_ptr< salhelper::ConditionWaiter::timedout > p(
+    std::unique_ptr< salhelper::ConditionWaiter::timedout > p(
         new DerivedConditionWaiterTimedout);
     ASSERT_TRUE(
         dynamic_cast< DerivedConditionWaiterTimedout * >(p.get()) != 0);

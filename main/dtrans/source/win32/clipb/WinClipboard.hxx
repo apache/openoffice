@@ -135,7 +135,7 @@ private:
 	void SAL_CALL notifyAllClipboardListener( );
 
 private:
-	::std::auto_ptr< CWinClipbImpl >												  m_pImpl;
+	::std::unique_ptr< CWinClipbImpl >												  m_pImpl;
 	::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >  m_SrvMgr;
 
 	friend class CWinClipbImpl;

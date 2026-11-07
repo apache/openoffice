@@ -86,7 +86,7 @@ using ::com::sun::star::sheet::XDimensionsSupplier;
 using ::rtl::OUString;
 using ::rtl::OUStringHash;
 using ::rtl::OUStringBuffer;
-using ::std::auto_ptr;
+using ::std::unique_ptr;
 using ::std::list;
 using ::std::vector;
 using ::std::hash_map;
@@ -1888,7 +1888,7 @@ bool ScDBFunc::DataPilotSort( const ScAddress& rPos, bool bAscending, sal_uInt16
 
 	// Update the datapilot with the newly sorted field members.
 
-	auto_ptr<ScDPObject> pNewObj(new ScDPObject(*pDPObj));
+	unique_ptr<ScDPObject> pNewObj(new ScDPObject(*pDPObj));
 	pNewObj->SetSaveData(aNewSaveData);
 	ScDBDocFunc aFunc(*GetViewData()->GetDocShell());
 
@@ -2143,7 +2143,7 @@ void ScDBFunc::ShowDataPilotSourceData( ScDPObject& rDPObj, const Sequence<sheet
 
 	SCTAB nNewTab = GetViewData()->GetTabNo();
 
-	auto_ptr<ScDocument> pInsDoc(new ScDocument(SCDOCMODE_CLIP));
+	unique_ptr<ScDocument> pInsDoc(new ScDocument(SCDOCMODE_CLIP));
 	pInsDoc->ResetClip( pDoc, nNewTab );
 	for (SCROW nRow = 0; nRow < nRowSize; ++nRow)
 	{

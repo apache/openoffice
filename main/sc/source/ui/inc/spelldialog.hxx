@@ -77,9 +77,9 @@ private:
     bool                IsSelectionChanged();
 
 private:
-    typedef ::std::auto_ptr< ScConversionEngineBase >   ScConvEnginePtr;
-    typedef ::std::auto_ptr< ScDocument >               ScDocumentPtr;
-    typedef ::std::auto_ptr< ScSelectionState >         ScSelectionStatePtr;
+    typedef ::std::unique_ptr< ScConversionEngineBase >   ScConvEnginePtr;
+    typedef ::std::unique_ptr< ScDocument >               ScDocumentPtr;
+    typedef ::std::unique_ptr< ScSelectionState >         ScSelectionStatePtr;
 
     ScConvEnginePtr     mxEngine;
     ScDocumentPtr       mxUndoDoc;

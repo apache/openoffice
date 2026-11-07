@@ -37,7 +37,7 @@
 #include <vector>
 
 using ::rtl::OUString;
-using ::std::auto_ptr;
+using ::std::unique_ptr;
 using ::std::vector;
 
 namespace {
@@ -387,7 +387,7 @@ SCCOL ScDBInternalRange::findFieldColumn(const OUString& rStr, sal_uInt16* pErr)
 
 ScDBQueryParamBase* ScDBInternalRange::createQueryParam(const ScDBRangeBase* pQueryRef) const
 {
-    auto_ptr<ScDBQueryParamInternal> pParam(new ScDBQueryParamInternal);
+    unique_ptr<ScDBQueryParamInternal> pParam(new ScDBQueryParamInternal);
 
     // Set the database range first.
     const ScAddress& s = maRange.aStart;
@@ -492,7 +492,7 @@ SCCOL ScDBExternalRange::findFieldColumn(const OUString& rStr, sal_uInt16* pErr)
 
 ScDBQueryParamBase* ScDBExternalRange::createQueryParam(const ScDBRangeBase* pQueryRef) const
 {
-    auto_ptr<ScDBQueryParamMatrix> pParam(new ScDBQueryParamMatrix);
+    unique_ptr<ScDBQueryParamMatrix> pParam(new ScDBQueryParamMatrix);
     pParam->mpMatrix = mpMatrix;
     fillQueryOptions(pParam.get());
 

@@ -71,7 +71,7 @@ using ::rtl::OUString;
 using ::rtl::OUStringBuffer;
 using ::com::sun::star::uno::Sequence;
 using ::com::sun::star::uno::Reference;
-using ::std::auto_ptr;
+using ::std::unique_ptr;
 using ::std::vector;
 using ::std::list;
 using ::std::distance;
@@ -213,7 +213,7 @@ vector<ScSharedTokenRef>* TokenTable::getColRanges(SCCOL nCol) const
     if( mnRowCount<=0 )
         return NULL;
 
-    auto_ptr< vector<ScSharedTokenRef> > pTokens(new vector<ScSharedTokenRef>);
+    unique_ptr< vector<ScSharedTokenRef> > pTokens(new vector<ScSharedTokenRef>);
     sal_uInt32 nLast = getIndex(nCol, mnRowCount-1);
     for (sal_uInt32 i = getIndex(nCol, 0); i <= nLast; ++i)
     {
@@ -234,7 +234,7 @@ vector<ScSharedTokenRef>* TokenTable::getRowRanges(SCROW nRow) const
     if( mnColCount<=0 )
         return NULL;
 
-    auto_ptr< vector<ScSharedTokenRef> > pTokens(new vector<ScSharedTokenRef>);
+    unique_ptr< vector<ScSharedTokenRef> > pTokens(new vector<ScSharedTokenRef>);
     sal_uInt32 nLast = getIndex(mnColCount-1, nRow);
     for (sal_uInt32 i = getIndex(0, nRow); i <= nLast; i += mnRowCount)
     {
@@ -250,7 +250,7 @@ vector<ScSharedTokenRef>* TokenTable::getRowRanges(SCROW nRow) const
 
 vector<ScSharedTokenRef>* TokenTable::getAllRanges() const
 {
-    auto_ptr< vector<ScSharedTokenRef> > pTokens(new vector<ScSharedTokenRef>);
+    unique_ptr< vector<ScSharedTokenRef> > pTokens(new vector<ScSharedTokenRef>);
     sal_uInt32 nStop = mnColCount*mnRowCount;
     for (sal_uInt32 i = 0; i < nStop; i++)
     {
@@ -463,7 +463,7 @@ class Chart2Positioner
 public:
     Chart2Positioner(ScDocument* pDoc, const vector<ScSharedTokenRef>& rRefTokens) :
         mpRefTokens(new vector<ScSharedTokenRef>(rRefTokens)),
-        mpPositionMap(NULL),
+        mpPositionMap(),
         meGlue(GLUETYPE_NA),
         mpDoc(pDoc),
         mbColHeaders(false),
@@ -500,7 +500,7 @@ private:
 
 private:
     shared_ptr< vector<ScSharedTokenRef> >  mpRefTokens;
-    auto_ptr<Chart2PositionMap>             mpPositionMap;
+    unique_ptr<Chart2PositionMap>             mpPositionMap;
     GlueType    meGlue;
     SCCOL       mnStartCol;
     SCROW       mnStartRow;
@@ -712,9 +712,9 @@ void Chart2Positioner::createPositionMap()
     glueState();
 
     bool bNoGlue = (meGlue == GLUETYPE_NONE);
-    auto_ptr<Table> pCols(new Table);
-    auto_ptr<FormulaToken> pNewAddress;
-    auto_ptr<Table> pNewRowTable(new Table);
+    unique_ptr<Table> pCols(new Table);
+    unique_ptr<FormulaToken> pNewAddress;
+    unique_ptr<Table> pNewRowTable(new Table);
     Table* pCol = NULL;
     SCROW nNoGlueRow = 0;
     for (vector<ScSharedTokenRef>::const_iterator itr = mpRefTokens->begin(), itrEnd = mpRefTokens->end();
@@ -1055,7 +1055,7 @@ namespace
 {
 
 Reference< chart2::data::XLabeledDataSequence > lcl_createLabeledDataSequenceFromTokens(
-    auto_ptr< vector< ScSharedTokenRef > > pValueTokens, auto_ptr< vector< ScSharedTokenRef > > pLabelTokens,
+    unique_ptr< vector< ScSharedTokenRef > > pValueTokens, unique_ptr< vector< ScSharedTokenRef > > pLabelTokens,
     ScDocument* pDoc, const Reference< chart2::data::XDataProvider >& xDP, bool bIncludeHiddenCells )
 {
     Reference< chart2::data::XLabeledDataSequence >  xResult;
@@ -1494,17 +1494,17 @@ ScChart2DataProvider::createDataSource(
     // Fill Categories
     if( bCategories )
     {
-        auto_ptr< vector<ScSharedTokenRef> > pValueTokens(NULL);
+        unique_ptr< vector<ScSharedTokenRef> > pValueTokens;
         if (bOrientCol)
             pValueTokens.reset(pChartMap->getAllRowHeaderRanges());
         else
             pValueTokens.reset(pChartMap->getAllColHeaderRanges());
 
-        auto_ptr< vector<ScSharedTokenRef> > pLabelTokens(NULL);
+        unique_ptr< vector<ScSharedTokenRef> > pLabelTokens;
             pLabelTokens.reset(pChartMap->getLeftUpperCornerRanges());
 
         Reference< chart2::data::XLabeledDataSequence > xCategories = lcl_createLabeledDataSequenceFromTokens(
-            pValueTokens, pLabelTokens, m_pDocument, this, m_bIncludeHiddenCells ); //ownership of pointers is transferred!
+            std::move(pValueTokens), std::move(pLabelTokens), m_pDocument, this, m_bIncludeHiddenCells ); //ownership of pointers is transferred!
         if ( xCategories.is() )
         {
             aSeqs.push_back( xCategories );
@@ -1515,8 +1515,8 @@ ScChart2DataProvider::createDataSource(
     sal_Int32 nCount = bOrientCol ? pChartMap->getDataColCount() : pChartMap->getDataRowCount();
     for (sal_Int32 i = 0; i < nCount; ++i)
     {
-        auto_ptr< vector<ScSharedTokenRef> > pValueTokens(NULL);
-        auto_ptr< vector<ScSharedTokenRef> > pLabelTokens(NULL);
+        unique_ptr< vector<ScSharedTokenRef> > pValueTokens;
+        unique_ptr< vector<ScSharedTokenRef> > pLabelTokens;
         if (bOrientCol)
         {
             pValueTokens.reset(pChartMap->getDataColRanges(static_cast<SCCOL>(i)));
@@ -1528,7 +1528,7 @@ ScChart2DataProvider::createDataSource(
             pLabelTokens.reset(pChartMap->getRowHeaderRanges(static_cast<SCROW>(i)));
         }
         Reference< chart2::data::XLabeledDataSequence > xChartSeries = lcl_createLabeledDataSequenceFromTokens(
-            pValueTokens, pLabelTokens, m_pDocument, this, m_bIncludeHiddenCells ); //ownership of pointers is transferred!
+            ::std::move(pValueTokens), ::std::move(pLabelTokens), m_pDocument, this, m_bIncludeHiddenCells ); //ownership of pointers is transferred!
         if ( xChartSeries.is() )
         {
             aSeqs.push_back( xChartSeries );
@@ -2413,11 +2413,11 @@ ScChart2DataSequence::ScChart2DataSequence( ScDocument* pDoc,
     , m_nObjectId( 0 )
     , m_pDocument( pDoc)
     , m_pTokens(pTokens)
-    , m_pRangeIndices(NULL)
-    , m_pExtRefListener(NULL)
+    , m_pRangeIndices()
+    , m_pExtRefListener()
     , m_xDataProvider( xDP)
     , m_aPropSet(lcl_GetDataSequencePropertyMap())
-    , m_pHiddenListener(NULL)
+    , m_pHiddenListener()
     , m_pValueListener( NULL )
     , m_bGotDataChangedHint(false)
     , m_bExtDataRebuildQueued(false)
@@ -2845,7 +2845,7 @@ void ScChart2DataSequence::Notify( SfxBroadcaster& /*rBC*/, const SfxHint& rHint
         DBG_ASSERT(m_pRangeIndices->size() == static_cast<size_t>(aRanges.Count()),
                    "range list and range index list have different sizes.");
 
-        auto_ptr<ScRangeList> pUndoRanges;
+        unique_ptr<ScRangeList> pUndoRanges;
         if ( m_pDocument->HasUnoRefUndo() )
             pUndoRanges.reset(new ScRangeList(aRanges));
 
@@ -3287,7 +3287,7 @@ uno::Reference< util::XCloneable > SAL_CALL ScChart2DataSequence::createClone()
 {
     ScUnoGuard aGuard;
 
-    auto_ptr< vector<ScSharedTokenRef> > pTokensNew;
+    unique_ptr< vector<ScSharedTokenRef> > pTokensNew;
     if (m_pTokens.get())
     {
         // Clone tokens.
@@ -3301,7 +3301,7 @@ uno::Reference< util::XCloneable > SAL_CALL ScChart2DataSequence::createClone()
         }
     }
 
-    auto_ptr<ScChart2DataSequence> p(new ScChart2DataSequence(m_pDocument, m_xDataProvider, pTokensNew.release(), m_bIncludeHiddenCells));
+    unique_ptr<ScChart2DataSequence> p(new ScChart2DataSequence(m_pDocument, m_xDataProvider, pTokensNew.release(), m_bIncludeHiddenCells));
     p->CopyData(*this);
     Reference< util::XCloneable > xClone(p.release());
 

@@ -268,7 +268,7 @@ namespace connectivity
                         Reference<XStream > xStream = xStorage->openStreamElement(sProperties,ElementModes::READ);
                         if ( xStream.is() )
                         {
-                            ::std::auto_ptr<SvStream> pStream( ::utl::UcbStreamHelper::CreateStream(xStream) );
+                            ::std::unique_ptr<SvStream> pStream( ::utl::UcbStreamHelper::CreateStream(xStream) );
                             if ( pStream.get() )
                             {
                                 ByteString sLine;

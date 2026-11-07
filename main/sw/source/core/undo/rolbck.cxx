@@ -265,7 +265,7 @@ void SwHistorySetTxt::SetInDoc( SwDoc* pDoc, bool )
 
 SwHistorySetTxtFld::SwHistorySetTxtFld( SwTxtFld* pTxtFld, sal_uLong nNodePos )
     : SwHistoryHint( HSTRY_SETTXTFLDHNT )
-    , m_pFldType( 0 )
+    , m_pFldType()
     , m_pFld( new SwFmtFld( *pTxtFld->GetFmtFld().GetField() ) )
 {
     // only copy if not Sys-FieldType
@@ -459,7 +459,7 @@ SwHistorySetFootnote::SwHistorySetFootnote( SwTxtFtn* pTxtFtn, sal_uLong nNodePo
 
 SwHistorySetFootnote::SwHistorySetFootnote( const SwTxtFtn &rTxtFtn )
     : SwHistoryHint( HSTRY_SETFTNHNT )
-    , m_pUndo( 0 )
+    , m_pUndo()
     , m_FootnoteNumber( rTxtFtn.GetFtn().GetNumStr() )
     , m_nNodeIndex( _SwTxtFtn_GetIndex( (&rTxtFtn) ) )
     , m_nStart( *rTxtFtn.GetStart() )
@@ -628,7 +628,7 @@ void SwHistoryBookmark::SetInDoc( SwDoc* pDoc, bool )
 
     SwNodes& rNds = pDoc->GetNodes();
     IDocumentMarkAccess* pMarkAccess = pDoc->getIDocumentMarkAccess();
-    ::std::auto_ptr<SwPaM> pPam;
+    ::std::unique_ptr<SwPaM> pPam;
     ::sw::mark::IMark* pMark = NULL;
 
     if(m_bSavePos)
@@ -640,12 +640,12 @@ void SwHistoryBookmark::SetInDoc( SwDoc* pDoc, bool )
 
         // #111660# don't crash when nNode1 doesn't point to content node.
         if(pCntntNd)
-            pPam = ::std::auto_ptr<SwPaM>(new SwPaM(*pCntntNd, m_nCntnt));
+            pPam = ::std::unique_ptr<SwPaM>(new SwPaM(*pCntntNd, m_nCntnt));
     }
     else
     {
         pMark = pMarkAccess->findMark(m_aName)->get();
-        pPam = ::std::auto_ptr<SwPaM>(new SwPaM(pMark->GetMarkPos()));
+        pPam = ::std::unique_ptr<SwPaM>(new SwPaM(pMark->GetMarkPos()));
     }
 
     if(m_bSaveOtherPos)

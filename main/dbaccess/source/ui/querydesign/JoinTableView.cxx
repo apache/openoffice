@@ -145,7 +145,7 @@ OScrollWindowHelper::OScrollWindowHelper( Window* pParent) : Window( pParent)
 OScrollWindowHelper::~OScrollWindowHelper()
 {
 	DBG_DTOR(OScrollWindowHelper,NULL);
-	::std::auto_ptr<Window> aTemp(m_pCornerWindow);
+	::std::unique_ptr<Window> aTemp(m_pCornerWindow);
 	m_pCornerWindow = NULL;
 	m_pTableView = NULL;
 }
@@ -1686,7 +1686,7 @@ void OJoinTableView::clearLayoutInformation()
 	{
 		if ( aIter->second )
 			aIter->second->clearListBox();
-		::std::auto_ptr<Window> aTemp(aIter->second);
+		::std::unique_ptr<Window> aTemp(aIter->second);
 		aIter->second = NULL;
 	}
 

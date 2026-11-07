@@ -207,7 +207,7 @@ namespace xforms
     //--------------------------------------------------------------------
     namespace
     {
-        static void lcl_initializePatternMatcher( ::std::auto_ptr< RegexMatcher >& _rpMatcher, const ::rtl::OUString& _rPattern )
+        static void lcl_initializePatternMatcher( ::std::unique_ptr< RegexMatcher >& _rpMatcher, const ::rtl::OUString& _rPattern )
         {
             UErrorCode nMatchStatus = U_ZERO_ERROR;
             UnicodeString aIcuPattern( reinterpret_cast<const UChar *>(_rPattern.getStr()), _rPattern.getLength() );	// UChar != sal_Unicode in MinGW

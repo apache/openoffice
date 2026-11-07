@@ -87,7 +87,7 @@ void FuTransform::DoExecute( SfxRequest& rReq )
 				SvxAbstractDialogFactory* pFact = SvxAbstractDialogFactory::Create();
 				if ( pFact )
 				{
-					std::auto_ptr< SfxAbstractTabDialog > pDlg( pFact->CreateCaptionDialog( NULL, mpView ) );
+					std::unique_ptr< SfxAbstractTabDialog > pDlg( pFact->CreateCaptionDialog( NULL, mpView ) );
 
 					const sal_uInt16* pRange = pDlg->GetInputRanges( *aNewAttr.GetPool() );
 					SfxItemSet aCombSet( *aNewAttr.GetPool(), pRange );
@@ -107,7 +107,7 @@ void FuTransform::DoExecute( SfxRequest& rReq )
 				SvxAbstractDialogFactory* pFact = SvxAbstractDialogFactory::Create();
 				if(pFact)
 				{
-					std::auto_ptr< SfxAbstractTabDialog > pDlg( pFact->CreateSvxTransformTabDialog( NULL, &aSet, mpView ) );
+					std::unique_ptr< SfxAbstractTabDialog > pDlg( pFact->CreateSvxTransformTabDialog( NULL, &aSet, mpView ) );
 					if( pDlg.get() && (pDlg->Execute() == RET_OK) )
 					{
 						rReq.Done( *( pDlg->GetOutputItemSet() ) );

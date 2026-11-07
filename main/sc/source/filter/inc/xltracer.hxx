@@ -129,7 +129,7 @@ public:
     inline MSFilterTracer&      GetBaseTracer() { return *mpTracer; }
 
 private:
-    typedef ::std::auto_ptr< MSFilterTracer > MSFilterTracerPtr;
+    typedef ::std::unique_ptr< MSFilterTracer > MSFilterTracerPtr;
     MSFilterTracerPtr           mpTracer;
     bool                        mbEnabled;
     typedef ::std::vector< bool >     BoolVec;

@@ -53,7 +53,7 @@ CSubmissionPut::CSubmissionPut(const rtl::OUString& aURL, const CSS::uno::Refere
 CSubmission::SubmissionResult CSubmissionPut::submit(const CSS::uno::Reference< CSS::task::XInteractionHandler >& aInteractionHandler)
 {
     CSS::uno::Reference< XCommandEnvironment > aEnvironment;
-    auto_ptr< CSerialization > apSerialization(createSerialization(aInteractionHandler,aEnvironment));
+    unique_ptr< CSerialization > apSerialization(createSerialization(aInteractionHandler,aEnvironment));
 
     try
     {

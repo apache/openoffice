@@ -56,7 +56,7 @@ extern sal_Bool bDrawIsInUndo;			//! irgendwo als Member !!!
 
 using namespace com::sun::star;
 using ::com::sun::star::uno::Sequence;
-using ::std::auto_ptr;
+using ::std::unique_ptr;
 
 // STATIC DATA -----------------------------------------------------------
 
@@ -1230,9 +1230,9 @@ String ScUndoShowHideTab::GetComment() const
 
 // ============================================================================
 
-ScUndoDocProtect::ScUndoDocProtect(ScDocShell* pShell, auto_ptr<ScDocProtection> pProtectSettings) :
+ScUndoDocProtect::ScUndoDocProtect(ScDocShell* pShell, unique_ptr<ScDocProtection> pProtectSettings) :
     ScSimpleUndo(pShell),
-    mpProtectSettings(pProtectSettings)
+    mpProtectSettings(std::move(pProtectSettings))
 {
 }
 
@@ -1247,7 +1247,7 @@ void ScUndoDocProtect::DoProtect(bool bProtect)
     if (bProtect)
     {
         // set protection.
-        auto_ptr<ScDocProtection> pCopy(new ScDocProtection(*mpProtectSettings));
+        unique_ptr<ScDocProtection> pCopy(new ScDocProtection(*mpProtectSettings));
         pCopy->setProtected(true);
         pDoc->SetDocProtection(pCopy.get());
     }
@@ -1299,10 +1299,10 @@ String ScUndoDocProtect::GetComment() const
 
 // ============================================================================
 
-ScUndoTabProtect::ScUndoTabProtect(ScDocShell* pShell, SCTAB nTab, auto_ptr<ScTableProtection> pProtectSettings) :
+ScUndoTabProtect::ScUndoTabProtect(ScDocShell* pShell, SCTAB nTab, unique_ptr<ScTableProtection> pProtectSettings) :
     ScSimpleUndo(pShell),
     mnTab(nTab),
-    mpProtectSettings(pProtectSettings)
+    mpProtectSettings(std::move(pProtectSettings))
 {
 }
 
@@ -1317,7 +1317,7 @@ void ScUndoTabProtect::DoProtect(bool bProtect)
     if (bProtect)
     {
         // set protection.
-        auto_ptr<ScTableProtection> pCopy(new ScTableProtection(*mpProtectSettings));
+        unique_ptr<ScTableProtection> pCopy(new ScTableProtection(*mpProtectSettings));
         pCopy->setProtected(true);
         pDoc->SetTabProtection(mnTab, pCopy.get());
     }

@@ -1547,7 +1547,7 @@ void ORptExport::exportShapes(const Reference< XSection>& _xSection,bool _bAddPa
     UniReference< XMLShapeExport > xShapeExport = GetShapeExport();
     xShapeExport->seekShapes(_xSection.get());
     const sal_Int32 nCount = _xSection->getCount();
-    ::std::auto_ptr<SvXMLElementExport> pParagraphContent;
+    ::std::unique_ptr<SvXMLElementExport> pParagraphContent;
     if ( _bAddParagraph )
         pParagraphContent.reset(new SvXMLElementExport(*this,XML_NAMESPACE_TEXT, XML_P, sal_True, sal_False));
 
@@ -1558,7 +1558,7 @@ void ORptExport::exportShapes(const Reference< XSection>& _xSection,bool _bAddPa
         uno::Reference< XShape > xShape(_xSection->getByIndex(i),uno::UNO_QUERY);
         if ( xShape.is() )
         {
-            ::std::auto_ptr<SvXMLElementExport> pSubDocument;
+            ::std::unique_ptr<SvXMLElementExport> pSubDocument;
             uno::Reference< frame::XModel> xModel(xShape->getPropertyValue(::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("Model"))),uno::UNO_QUERY);
             if ( xModel.is() ) // special handling for chart object
             {

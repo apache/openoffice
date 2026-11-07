@@ -1027,7 +1027,7 @@ sal_uLong SwCursor::FindAll( SwFindParas& rParas,
 	{
 		// Cursor als Kopie vom akt. und in den Ring aufnehmen
 		// Verkettung zeigt immer auf den zuerst erzeugten, also vorwaerts
-		std::auto_ptr< SwCursor > pSav( Create( this ) ); 	// save the current cursor
+		std::unique_ptr< SwCursor > pSav( Create( this ) ); 	// save the current cursor
 
 		// wenn schon ausserhalb vom Bodytext, suche von der Position,
 		// ansonsten beginne mit der 1. GrundSection
@@ -1085,7 +1085,7 @@ sal_uLong SwCursor::FindAll( SwFindParas& rParas,
 	}
 	else if( FND_IN_SELALL & eFndRngs )
 	{
-		::std::auto_ptr< SwCursor> pSav( Create( this ) ); 	// save the current cursor
+		::std::unique_ptr< SwCursor> pSav( Create( this ) ); 	// save the current cursor
 
 		const SwNode* pSttNd = ( FND_IN_BODYONLY & eFndRngs )
 							? rNds.GetEndOfContent().StartOfSectionNode()

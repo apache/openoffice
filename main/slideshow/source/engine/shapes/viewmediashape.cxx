@@ -149,7 +149,7 @@ namespace slideshow
 				mxPlayerWindow.clear();
 			}
 
-            mpMediaWindow = ::std::auto_ptr< SystemChildWindow >();
+            mpMediaWindow = ::std::unique_ptr< SystemChildWindow >();
 
 			// shutdown player
 			if( mxPlayer.is() )
@@ -433,7 +433,7 @@ namespace slideshow
 														  		  rRangePix.getMaxX() - rRangePix.getMinX(),
 														  		  rRangePix.getMaxY() - rRangePix.getMinY() );
 
-							mpMediaWindow = ::std::auto_ptr< SystemChildWindow >( new
+							mpMediaWindow = ::std::unique_ptr< SystemChildWindow >( new
                                                 SystemChildWindow( pWindow, WB_CLIPCHILDREN ) );
 							mpMediaWindow->SetBackground( Color( COL_BLACK ) );
 							mpMediaWindow->SetPosSizePixel( Point( aAWTRect.X, aAWTRect.Y ),

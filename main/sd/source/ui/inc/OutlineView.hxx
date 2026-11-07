@@ -225,7 +225,7 @@ private:
     DECL_LINK(EventMultiplexerListener, sd::tools::EventMultiplexerEvent*);
 
 	/** holds a model guard during drag and drop between BeginMovingHdl and EndMovingHdl */
-	std::auto_ptr< OutlineViewModelChangeGuard > maDragAndDropModelGuard;
+	std::unique_ptr< OutlineViewModelChangeGuard > maDragAndDropModelGuard;
 
 	Font maPageNumberFont;
 	sal_Int32 mnPageNumberWidthPixel;

@@ -123,7 +123,7 @@ class OComponentDefinition	:public OContentHelper
 	OComponentDefinition();
 
 protected:
-    ::std::auto_ptr< OColumns >     m_pColumns;
+    ::std::unique_ptr< OColumns >     m_pColumns;
     ::comphelper::ImplementationReference< OColumnPropertyListener,::com::sun::star::beans::XPropertyChangeListener>
                                     m_xColumnPropertyListener;
 	sal_Bool	                    m_bTable;

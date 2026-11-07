@@ -628,7 +628,7 @@ void ChartModel::impl_loadGraphics(
 
                     if( xElementStream.is() )
                     {
-                        std::auto_ptr< SvStream > apIStm(
+                        std::unique_ptr< SvStream > apIStm(
                             ::utl::UcbStreamHelper::CreateStream(
                                 xElementStream, true ) );
 

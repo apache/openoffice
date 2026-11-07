@@ -187,10 +187,10 @@ private:
 
     friend class DAVSessionFactory;
 #if defined WNT && _MSC_VER < 1310
-    friend struct std::auto_ptr< DAVSession >;
+    friend struct std::default_delete< DAVSession >;
     // work around compiler bug...
 #else // WNT
-    friend class std::auto_ptr< DAVSession >;
+    friend struct std::default_delete< DAVSession >;
 #endif // WNT
 };
 

@@ -69,7 +69,7 @@ namespace frm
     private:
         ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >
                             m_xORB;
-        ::std::auto_ptr< ControlFeatureInterception >
+        ::std::unique_ptr< ControlFeatureInterception >
                             m_pFeatureInterception;
 
         // all supported features
@@ -185,7 +185,7 @@ namespace frm
     class OFormNavigationMapper
     {
     private:
-        ::std::auto_ptr< UrlTransformer >   m_pUrlTransformer;
+        ::std::unique_ptr< UrlTransformer >   m_pUrlTransformer;
 
     public:
         OFormNavigationMapper(

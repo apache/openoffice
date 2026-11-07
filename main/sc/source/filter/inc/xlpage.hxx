@@ -96,7 +96,7 @@ class SfxPrinter;
 /** Contains all page (print) settings for a single sheet. */
 struct XclPageData : ScfNoCopy
 {
-    typedef ::std::auto_ptr< SvxBrushItem > SvxBrushItemPtr;
+    typedef ::std::unique_ptr< SvxBrushItem > SvxBrushItemPtr;
 
     ScfUInt16Vec        maHorPageBreaks;    /// Horizontal page breaks.
     ScfUInt16Vec        maVerPageBreaks;    /// Vertical page breaks.

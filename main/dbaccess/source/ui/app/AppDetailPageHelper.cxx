@@ -344,7 +344,7 @@ OAppDetailPageHelper::~OAppDetailPageHelper()
         {
             m_pLists[i]->clearCurrentSelection();
             m_pLists[i]->Hide();
-            ::std::auto_ptr<DBTreeListBox> aTemp(m_pLists[i]);
+            ::std::unique_ptr<DBTreeListBox> aTemp(m_pLists[i]);
             m_pLists[i]->clearCurrentSelection();   // why a second time?
             m_pLists[i] = NULL;
         }
@@ -1278,7 +1278,7 @@ void OAppDetailPageHelper::showPreview( const ::rtl::OUString& _sDataSourceName,
         }
 
         Reference< XDatabaseDocumentUI > xApplication( getBorderWin().getView()->getAppController().getXController(), UNO_QUERY );
-        ::std::auto_ptr< DatabaseObjectView > pDispatcher( new ResultSetBrowser(
+        ::std::unique_ptr< DatabaseObjectView > pDispatcher( new ResultSetBrowser(
             getBorderWin().getView()->getORB(), xApplication, NULL, _bTable
         ) );
         pDispatcher->setTargetFrame( m_xFrame );
@@ -1323,7 +1323,7 @@ IMPL_LINK(OAppDetailPageHelper, OnDropdownClickHdl, ToolBox*, /*pToolBox*/)
     m_aTBPreview.Update();
 
     // execute the menu
-    ::std::auto_ptr<PopupMenu> aMenu(new PopupMenu( ModuleRes( RID_MENU_APP_PREVIEW ) ));
+    ::std::unique_ptr<PopupMenu> aMenu(new PopupMenu( ModuleRes( RID_MENU_APP_PREVIEW ) ));
 
     sal_uInt16 pActions[] = { SID_DB_APP_DISABLE_PREVIEW
                             , SID_DB_APP_VIEW_DOC_PREVIEW

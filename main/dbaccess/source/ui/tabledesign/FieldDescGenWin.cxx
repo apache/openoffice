@@ -65,7 +65,7 @@ OFieldDescGenWin::OFieldDescGenWin( Window* pParent, OTableDesignHelpBar* pHelp 
 OFieldDescGenWin::~OFieldDescGenWin()
 {
 	DBG_DTOR(OFieldDescGenWin,NULL);
-	::std::auto_ptr<Window> aTemp(m_pFieldControl);
+	::std::unique_ptr<Window> aTemp(m_pFieldControl);
 	m_pFieldControl = NULL;
 }
 //------------------------------------------------------------------------------

@@ -648,7 +648,7 @@ void GraphicCache::AddGraphicObject( const GraphicObject& rObj, Graphic& rSubsti
         if( !bInserted )
         {
             GraphicCacheEntry* pEntry = static_cast< GraphicCacheEntry* >( maGraphicCache.First() );
-            ::std::auto_ptr< GraphicID > apID;
+            ::std::unique_ptr< GraphicID > apID;
 
             if( !pID )
             {

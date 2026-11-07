@@ -37,7 +37,7 @@ using namespace com::sun::star;
 using ::std::vector;
 using ::std::list;
 using ::std::hash_set;
-using ::std::auto_ptr;
+using ::std::unique_ptr;
 using ::std::unary_function;
 using ::std::for_each;
 
@@ -123,7 +123,7 @@ ScChartListener::ScChartListener( const String& rName, ScDocument* pDocP,
         const ScRange& rRange ) :
     StrData( rName ),
     SvtListener(),
-    mpExtRefListener(NULL),
+    mpExtRefListener(),
     mpTokens(new vector<ScSharedTokenRef>),
     pUnoData( NULL ),
     pDoc( pDocP ),
@@ -138,7 +138,7 @@ ScChartListener::ScChartListener( const String& rName, ScDocument* pDocP,
         const ScRangeListRef& rRangeList ) :
     StrData( rName ),
     SvtListener(),
-    mpExtRefListener(NULL),
+    mpExtRefListener(),
     mpTokens(new vector<ScSharedTokenRef>),
     pUnoData( NULL ),
     pDoc( pDocP ),
@@ -152,7 +152,7 @@ ScChartListener::ScChartListener( const String& rName, ScDocument* pDocP,
 ScChartListener::ScChartListener( const String& rName, ScDocument* pDocP, vector<ScSharedTokenRef>* pTokens ) :
     StrData( rName ),
     SvtListener(),
-    mpExtRefListener(NULL),
+    mpExtRefListener(),
     mpTokens(pTokens),
     pUnoData( NULL ),
     pDoc( pDocP ),
@@ -165,7 +165,7 @@ ScChartListener::ScChartListener( const String& rName, ScDocument* pDocP, vector
 ScChartListener::ScChartListener( const ScChartListener& r ) :
     StrData( r ),
     SvtListener(),
-    mpExtRefListener(NULL),
+    mpExtRefListener(),
     mpTokens(new vector<ScSharedTokenRef>(*r.mpTokens)),
     pUnoData( NULL ),
     pDoc( r.pDoc ),

@@ -63,7 +63,7 @@ ScFormulaReferenceHelper::ScFormulaReferenceHelper(IAnyRefDialog* _pDlg,SfxBindi
  , pRefEdit (NULL)
  , m_pWindow(NULL)
  , m_pBindings(_pBindings)
- , pAccel( NULL )
+ , pAccel()
  , pHiddenMarks(NULL)
  , nRefTab(0)
  , bHighLightRef( sal_False )

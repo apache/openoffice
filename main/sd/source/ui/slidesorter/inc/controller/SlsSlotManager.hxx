@@ -64,7 +64,7 @@ public:
 	void ExecCtrl (SfxRequest& rRequest);
 	void GetAttrState (SfxItemSet& rSet);
 
-	void ExecuteCommandAsynchronously (::std::auto_ptr<Command> pCommand);
+	void ExecuteCommandAsynchronously (::std::unique_ptr<Command> pCommand);
 
 	/** Exclude or include one slide or all selected slides.
 		@param rpDescriptor

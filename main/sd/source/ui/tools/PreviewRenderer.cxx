@@ -75,7 +75,7 @@ PreviewRenderer::PreviewRenderer (
     OutputDevice* pTemplate,
     const bool bHasFrame)
     : mpPreviewDevice (new VirtualDevice()),
-      mpView(NULL),
+      mpView(),
       mpDocShellOfView(NULL),
       mnWidthOfView(0),
       maFrameColor (svtools::ColorConfig().GetColorValue(svtools::DOCBOUNDARIES).nColor),

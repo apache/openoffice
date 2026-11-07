@@ -57,7 +57,7 @@ public:
             under this number.  However, it is not guaranteed that this
             works in all cases.
     */
-    static ::std::auto_ptr<CacheCompactor> Create (
+    static ::std::unique_ptr<CacheCompactor> Create (
         BitmapCache& rCache,
         sal_Int32 nMaximalCacheSize);
 

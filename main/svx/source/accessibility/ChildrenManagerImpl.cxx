@@ -546,7 +546,7 @@ void ChildrenManagerImpl::SetShapeList (const ::com::sun::star::uno::Reference<
 
 
 
-void ChildrenManagerImpl::AddAccessibleShape (std::auto_ptr<AccessibleShape> pShape)
+void ChildrenManagerImpl::AddAccessibleShape (std::unique_ptr<AccessibleShape> pShape)
 {
     if (pShape.get() != NULL)
         maAccessibleShapes.push_back (pShape.release());

@@ -74,7 +74,7 @@ public:
             ::com::sun::star::drawing::framework::XResourceId>& rxPaneId,
         sal_uInt16 nChildWindowId,
         ViewShellBase& rViewShellBase,
-        ::std::auto_ptr<SfxShell> pShell);
+        ::std::unique_ptr<SfxShell> pShell);
     virtual ~ChildWindowPane (void) throw();
 
     /** Hide the pane.  To make the pane visible again, call GetWindow().
@@ -111,7 +111,7 @@ private:
     ::com::sun::star::uno::Reference<com::sun::star::drawing::framework::XResourceId> mxPaneId;
     sal_uInt16 mnChildWindowId;
     ViewShellBase& mrViewShellBase;
-    ::std::auto_ptr<SfxShell> mpShell;
+    ::std::unique_ptr<SfxShell> mpShell;
 
     /** This flag is set when the pane shell has been activated at least
         once.  It is used to optimize the start-up performance (by not

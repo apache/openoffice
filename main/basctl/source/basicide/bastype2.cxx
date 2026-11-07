@@ -236,7 +236,7 @@ void BasicTreeListBox::ScanEntry( const ScriptDocument& rDocument, LibraryLocati
             aImage,
             aImageHC,
             0, true,
-            std::auto_ptr< BasicEntry >( new BasicDocumentEntry( rDocument, eLocation ) ) );
+            std::unique_ptr< BasicEntry >( new BasicDocumentEntry( rDocument, eLocation ) ) );
     }
 
 	SetUpdateMode( sal_True );
@@ -306,7 +306,7 @@ void BasicTreeListBox::ImpCreateLibEntries( SvLBoxEntry* pDocumentRootEntry, con
                     Image( IDEResId( nId ) ),
                     Image( IDEResId( nIdHC ) ),
                     pDocumentRootEntry, true,
-                    std::auto_ptr< BasicEntry >( new BasicEntry( OBJ_TYPE_LIBRARY ) ) );
+                    std::unique_ptr< BasicEntry >( new BasicEntry( OBJ_TYPE_LIBRARY ) ) );
             }
         }
     }
@@ -344,7 +344,7 @@ void BasicTreeListBox::ImpCreateLibSubEntries( SvLBoxEntry* pLibRootEntry, const
                                 Image( IDEResId( RID_IMG_MODULE ) ),
                                 Image( IDEResId( RID_IMG_MODULE_HC ) ),
                                 pLibRootEntry, false,
-                                std::auto_ptr< BasicEntry >( new BasicEntry( OBJ_TYPE_MODULE ) ) );
+                                std::unique_ptr< BasicEntry >( new BasicEntry( OBJ_TYPE_MODULE ) ) );
 
     					// methods
     					if ( nMode & BROWSEMODE_SUBS )
@@ -363,7 +363,7 @@ void BasicTreeListBox::ImpCreateLibSubEntries( SvLBoxEntry* pLibRootEntry, const
                                         Image( IDEResId( RID_IMG_MACRO ) ),
                                         Image( IDEResId( RID_IMG_MACRO_HC ) ),
                                         pModuleEntry, false,
-                                        std::auto_ptr< BasicEntry >( new BasicEntry( OBJ_TYPE_METHOD ) ) );
+                                        std::unique_ptr< BasicEntry >( new BasicEntry( OBJ_TYPE_METHOD ) ) );
     						}
                         }
     				}
@@ -400,7 +400,7 @@ void BasicTreeListBox::ImpCreateLibSubEntries( SvLBoxEntry* pLibRootEntry, const
                             Image( IDEResId( RID_IMG_DIALOG ) ),
                             Image( IDEResId( RID_IMG_DIALOG_HC ) ),
                             pLibRootEntry, false,
-                            std::auto_ptr< BasicEntry >( new BasicEntry( OBJ_TYPE_DIALOG ) ) );
+                            std::unique_ptr< BasicEntry >( new BasicEntry( OBJ_TYPE_DIALOG ) ) );
 				}
             }
 		    catch ( container::NoSuchElementException& )
@@ -439,7 +439,7 @@ void BasicTreeListBox::ImpCreateLibSubEntriesInVBAMode( SvLBoxEntry* pLibRootEnt
                 Image( IDEResId( RID_IMG_MODLIB ) ),
                 Image( IDEResId( RID_IMG_MODLIB_HC ) ),
                 pLibRootEntry, true,
-                std::auto_ptr< BasicEntry >( new BasicEntry( eType ) ) );
+                std::unique_ptr< BasicEntry >( new BasicEntry( eType ) ) );
         }
     }
 }
@@ -501,7 +501,7 @@ void BasicTreeListBox::ImpCreateLibSubSubEntriesInVBAMode( SvLBoxEntry* pLibSubR
                     Image( IDEResId( RID_IMG_MODULE ) ),
                     Image( IDEResId( RID_IMG_MODULE_HC ) ),
                     pLibSubRootEntry, false,
-                    std::auto_ptr< BasicEntry >( new BasicEntry( OBJ_TYPE_MODULE ) ) );
+                    std::unique_ptr< BasicEntry >( new BasicEntry( OBJ_TYPE_MODULE ) ) );
 
 			// methods
 			if ( nMode & BROWSEMODE_SUBS )
@@ -520,7 +520,7 @@ void BasicTreeListBox::ImpCreateLibSubSubEntriesInVBAMode( SvLBoxEntry* pLibSubR
                             Image( IDEResId( RID_IMG_MACRO ) ),
                             Image( IDEResId( RID_IMG_MACRO_HC ) ),
                             pModuleEntry, false,
-                            std::auto_ptr< BasicEntry >( new BasicEntry( OBJ_TYPE_METHOD ) ) );
+                            std::unique_ptr< BasicEntry >( new BasicEntry( OBJ_TYPE_METHOD ) ) );
     			}
             }
 	    }
@@ -708,7 +708,7 @@ sal_Bool BasicTreeListBox::IsEntryProtected( SvLBoxEntry* pEntry )
 
 SvLBoxEntry* BasicTreeListBox::AddEntry(
     const String& rText, const Image& rImage, const Image& rImageHC,
-    SvLBoxEntry* pParent, bool bChildrenOnDemand, std::auto_ptr< BasicEntry > aUserData )
+    SvLBoxEntry* pParent, bool bChildrenOnDemand, std::unique_ptr< BasicEntry > aUserData )
 {
     SvLBoxEntry* p = InsertEntry(
         rText, rImage, rImage, pParent, bChildrenOnDemand, LIST_APPEND,

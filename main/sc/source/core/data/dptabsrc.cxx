@@ -137,7 +137,7 @@ ScDPSource::ScDPSource( ScDPTableData* pD ) :
 	pRowResults( NULL ),
 	bResultOverflow( sal_False ),
     bPageFiltered( false ),
-    mpGrandTotalName(NULL)
+    mpGrandTotalName()
 {
 	pData->SetEmptyFlags( bIgnoreEmptyRows, bRepeatIfEmpty );
 }
@@ -1372,8 +1372,8 @@ ScDPDimension::ScDPDimension( ScDPSource* pSrc, long nD ) :
 	pHierarchies( NULL ),
 	nUsedHier( 0 ),
 	nFunction( SUBTOTAL_FUNC_SUM ),		// sum is default
-    mpLayoutName(NULL),
-    mpSubtotalName(NULL),
+    mpLayoutName(),
+    mpSubtotalName(),
 	nSourceDim( -1 ),
 	bHasSelectedPage( sal_False ),
 	pSelectedData( NULL ),
@@ -2654,7 +2654,7 @@ ScDPMember::ScDPMember( ScDPSource* pSrc, long nD, long nH, long nL,
 	nHier( nH ),
 	nLev( nL ),
     mnDataId( nIndex ),
-    mpLayoutName(NULL),
+    mpLayoutName(),
     nPosition( -1 ),
 	bVisible( sal_True ),
 	bShowDet( sal_True )

@@ -99,7 +99,7 @@ void WW8SttbTableResource::resolve(Table & rTable)
     for (sal_uInt32 n = 0; n < nCount; n++)
     {
         WW8StringValue::Pointer_t pVal(new WW8StringValue(mpSttbf->getEntry(n)));
-        ::writerfilter::Reference<Properties>::Pointer_t pProps(new WW8StringProperty(0, pVal));
+        ::writerfilter::Reference<Properties>::Pointer_t pProps(new WW8StringProperty(0, std::move(pVal)));
 
         rTable.entry(n, pProps);
     }
@@ -111,7 +111,7 @@ string WW8SttbTableResource::getType() const
 }
 
 WW8StringProperty::WW8StringProperty(sal_uInt32 nId, WW8StringValue::Pointer_t pValue)
-: mnId(nId), mpValue(pValue)
+: mnId(nId), mpValue(std::move(pValue))
 {
 }
 

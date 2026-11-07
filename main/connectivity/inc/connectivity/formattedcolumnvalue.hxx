@@ -105,7 +105,7 @@ namespace dbtools
         virtual ::rtl::OUString getFormattedValue() const;
 
     private:
-        ::std::auto_ptr< FormattedColumnValue_Data >    m_pData;
+        ::std::unique_ptr< FormattedColumnValue_Data >    m_pData;
 	};
 
 //........................................................................

@@ -730,7 +730,7 @@ void SvxTableController::onFormatTable( SfxRequest& rReq )
 		aNewAttr.Put( aBoxItem );
 
 		SvxAbstractDialogFactory* pFact = SvxAbstractDialogFactory::Create();
-		std::auto_ptr< SfxAbstractTabDialog > pDlg( pFact ? pFact->CreateSvxFormatCellsDialog( NULL, &aNewAttr, pTableObj->GetModel(), pTableObj) : 0 );
+		std::unique_ptr< SfxAbstractTabDialog > pDlg( pFact ? pFact->CreateSvxFormatCellsDialog( NULL, &aNewAttr, pTableObj->GetModel(), pTableObj) : 0 );
 		if( pDlg.get() && pDlg->Execute() )
 		{
 			SfxItemSet aNewSet( *(pDlg->GetOutputItemSet ()) );
@@ -1026,7 +1026,7 @@ void SvxTableController::SplitMarkedCells()
 		getSelectedCells( aStart, aEnd );
 
 		SvxAbstractDialogFactory* pFact = SvxAbstractDialogFactory::Create();
-		std::auto_ptr< SvxAbstractSplittTableDialog > xDlg( pFact ? pFact->CreateSvxSplittTableDialog( NULL, false, 99, 99 ) : 0 );
+		std::unique_ptr< SvxAbstractSplittTableDialog > xDlg( pFact ? pFact->CreateSvxSplittTableDialog( NULL, false, 99, 99 ) : 0 );
 		if( xDlg.get() && xDlg->Execute() )
 		{
 			const sal_Int32 nCount = xDlg->GetCount() - 1;

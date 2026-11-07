@@ -39,7 +39,7 @@ class TitleResources;
 class SchTitleDlg : public ModalDialog
 {
 private:
-    ::std::auto_ptr< TitleResources >  m_apTitleResources;
+    ::std::unique_ptr< TitleResources >  m_apTitleResources;
 
 	OKButton			aBtnOK;
 	CancelButton		aBtnCancel;

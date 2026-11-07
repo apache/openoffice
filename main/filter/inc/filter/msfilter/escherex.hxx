@@ -1444,7 +1444,7 @@ class ImplEscherExSdr;
 class MSFILTER_DLLPUBLIC EscherEx : public EscherPersistTable
 {
     protected:
-        typedef ::std::auto_ptr< ImplEscherExSdr > ImplEscherExSdrPtr;
+        typedef ::std::unique_ptr< ImplEscherExSdr > ImplEscherExSdrPtr;
 
         EscherExGlobalRef			mxGlobal;
         ImplEscherExSdrPtr			mpImplEscherExSdr;

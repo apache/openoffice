@@ -962,7 +962,7 @@ IMPL_LINK(SmTextForwarder, NotifyHdl, EENotify*, aNotify)
 {
     if (aNotify)
     {
-        ::std::auto_ptr< SfxHint > aHint = SvxEditSourceHelper::EENotification2Hint( aNotify );
+        ::std::unique_ptr< SfxHint > aHint = SvxEditSourceHelper::EENotification2Hint( aNotify );
         if (aHint.get())
             rEditSource.GetBroadcaster().Broadcast( *aHint.get() );
     }
@@ -1700,9 +1700,9 @@ void SmEditAccessible::Init()
         EditView   *pEditView   = pWin->GetEditView();
         if (pEditEngine && pEditView)
         {
-            ::std::auto_ptr< SvxEditSource > pEditSource(
+            ::std::unique_ptr< SvxEditSource > pEditSource(
                     new SmEditSource( pWin, *this ) );
-            pTextHelper = new ::accessibility::AccessibleTextHelper( pEditSource );
+            pTextHelper = new ::accessibility::AccessibleTextHelper( std::move(pEditSource) );
             pTextHelper->SetEventSource( this );
         }
     }
@@ -1727,7 +1727,7 @@ void SmEditAccessible::ClearWin()
 	pWin = 0;   // implicitly results in AccessibleStateType::DEFUNC set
 
     //! make TextHelper implicitly release C++ references to some core objects
-    pTextHelper->SetEditSource( ::std::auto_ptr<SvxEditSource>(NULL) );
+    pTextHelper->SetEditSource( ::std::unique_ptr<SvxEditSource>() );
     //! make TextHelper release references
     //! (e.g. the one set by the 'SetEventSource' call)
     pTextHelper->Dispose();

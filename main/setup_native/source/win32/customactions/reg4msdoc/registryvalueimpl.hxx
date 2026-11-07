@@ -123,7 +123,7 @@ private:
 };
 
 
-typedef std::auto_ptr<RegistryValueImpl> RegistryValue;
+typedef std::unique_ptr<RegistryValueImpl> RegistryValue;
 
 
 #endif

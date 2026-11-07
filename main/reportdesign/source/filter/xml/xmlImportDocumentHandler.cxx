@@ -197,7 +197,7 @@ void SAL_CALL ImportDocumentHandler::startElement(const ::rtl::OUString & _sName
     {
         const sal_Int16 nLength = (_xAttrList.is()) ? _xAttrList->getLength() : 0;
         static const ::rtl::OUString s_sTRUE = ::xmloff::token::GetXMLToken(XML_TRUE);
-        ::std::auto_ptr<SvXMLTokenMap> pMasterElemTokenMap( OXMLHelper::GetSubDocumentElemTokenMap());
+        ::std::unique_ptr<SvXMLTokenMap> pMasterElemTokenMap( OXMLHelper::GetSubDocumentElemTokenMap());
 	    try
 	    {
             ::rtl::OUString sMasterField,sDetailField;
@@ -243,7 +243,7 @@ void SAL_CALL ImportDocumentHandler::startElement(const ::rtl::OUString & _sName
     {
         sal_Bool bHasCategories = sal_True;
         const sal_Int16 nLength = (_xAttrList.is()) ? _xAttrList->getLength() : 0;
-        ::std::auto_ptr<SvXMLTokenMap> pMasterElemTokenMap( OXMLHelper::GetSubDocumentElemTokenMap());
+        ::std::unique_ptr<SvXMLTokenMap> pMasterElemTokenMap( OXMLHelper::GetSubDocumentElemTokenMap());
 	    for(sal_Int16 i = 0; i < nLength; ++i)
 	    {
 	        ::rtl::OUString sLocalName;

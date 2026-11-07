@@ -50,7 +50,7 @@ namespace dbaui
                                     ,public IDatabaseSettingsDialog
 	{
 		OModuleClient                                       m_aModuleClient;
-		::std::auto_ptr<ODbDataSourceAdministrationHelper>	m_pImpl;
+		::std::unique_ptr<ODbDataSourceAdministrationHelper>	m_pImpl;
 		SfxItemSet*                                         m_pItemSet;
 
     protected:

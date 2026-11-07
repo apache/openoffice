@@ -28,7 +28,7 @@
 #include <cppcanvas/renderer.hxx>
 #include <action.hxx>
 
-#include <memory> // auto_ptr
+#include <memory> // unique_ptr
 
 namespace basegfx {
     class B2DPoint;
@@ -47,8 +47,8 @@ namespace cppcanvas
     {
         struct OutDevState;
 
-        typedef ::std::auto_ptr< GDIMetaFile >	MtfAutoPtr;
-        typedef ::std::auto_ptr< Gradient > 	GradientAutoPtr;
+        typedef ::std::unique_ptr< GDIMetaFile >	MtfAutoPtr;
+        typedef ::std::unique_ptr< Gradient > 	GradientAutoPtr;
 
         /** Transparency group action.
 

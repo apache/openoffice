@@ -216,7 +216,7 @@ DataPointItemConverter::DataPointItemConverter(
     NumberFormatterWrapper * pNumFormatter,
     const uno::Reference< lang::XMultiServiceFactory > & xNamedPropertyContainerFactory,
     GraphicPropertyItemConverter::eGraphicObjectType eMapTo /* = FILL_PROPERTIES */,
-    ::std::auto_ptr< awt::Size > pRefSize /* = NULL */,
+    ::std::unique_ptr< awt::Size > pRefSize /* = NULL */,
     bool bDataSeries /* = false */,
     bool bUseSpecialFillColor /* = false */,
     sal_Int32 nSpecialFillColor /* =0 */,
@@ -237,7 +237,7 @@ DataPointItemConverter::DataPointItemConverter(
 {
     m_aConverters.push_back( new GraphicPropertyItemConverter(
                                  rPropertySet, rItemPool, rDrawModel, xNamedPropertyContainerFactory, eMapTo ));
-    m_aConverters.push_back( new CharacterPropertyItemConverter( rPropertySet, rItemPool, pRefSize,
+    m_aConverters.push_back( new CharacterPropertyItemConverter( rPropertySet, rItemPool, std::move(pRefSize),
                                                                  C2U( "ReferencePageSize" )));
     if( bDataSeries )
     {

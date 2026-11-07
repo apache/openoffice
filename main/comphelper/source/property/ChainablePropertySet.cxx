@@ -27,7 +27,7 @@
 #include <comphelper/ChainablePropertySetInfo.hxx>
 #include <vos/mutex.hxx>
 
-#include <memory> // STL auto_ptr
+#include <memory> // STL unique_ptr
 
 
 using namespace ::rtl;
@@ -72,7 +72,7 @@ void ChainablePropertySet::unlockMutex()
 void SAL_CALL ChainablePropertySet::setPropertyValue( const ::rtl::OUString& rPropertyName, const Any& rValue )
 {
 	// acquire mutex in c-tor and releases it in the d-tor (exception safe!).
-	std::auto_ptr< vos::OGuard > pMutexGuard;
+	std::unique_ptr< vos::OGuard > pMutexGuard;
 	if (mpMutex)
 		pMutexGuard.reset( new vos::OGuard(mpMutex) );
 
@@ -89,7 +89,7 @@ void SAL_CALL ChainablePropertySet::setPropertyValue( const ::rtl::OUString& rPr
 Any SAL_CALL ChainablePropertySet::getPropertyValue( const ::rtl::OUString& rPropertyName )
 {
 	// acquire mutex in c-tor and releases it in the d-tor (exception safe!).
-	std::auto_ptr< vos::OGuard > pMutexGuard;
+	std::unique_ptr< vos::OGuard > pMutexGuard;
 	if (mpMutex)
 		pMutexGuard.reset( new vos::OGuard(mpMutex) );
 
@@ -130,7 +130,7 @@ void SAL_CALL ChainablePropertySet::removeVetoableChangeListener( const ::rtl::O
 void SAL_CALL ChainablePropertySet::setPropertyValues( const Sequence< ::rtl::OUString >& aPropertyNames, const Sequence< Any >& aValues )
 {
 	// acquire mutex in c-tor and releases it in the d-tor (exception safe!).
-	std::auto_ptr< vos::OGuard > pMutexGuard;
+	std::unique_ptr< vos::OGuard > pMutexGuard;
 	if (mpMutex)
 		pMutexGuard.reset( new vos::OGuard(mpMutex) );
 
@@ -163,7 +163,7 @@ void SAL_CALL ChainablePropertySet::setPropertyValues( const Sequence< ::rtl::OU
 Sequence< Any > SAL_CALL ChainablePropertySet::getPropertyValues( const Sequence< ::rtl::OUString >& aPropertyNames )
 {
 	// acquire mutex in c-tor and releases it in the d-tor (exception safe!).
-	std::auto_ptr< vos::OGuard > pMutexGuard;
+	std::unique_ptr< vos::OGuard > pMutexGuard;
 	if (mpMutex)
 		pMutexGuard.reset( new vos::OGuard(mpMutex) );
 

@@ -533,15 +533,15 @@ private:
     bool volatile       m_bConnectingToView;
 
     ::com::sun::star::uno::Reference< ::com::sun::star::document::XUndoManager >    m_xUndoManager;
-    ::std::auto_ptr< UndoGuard >                                                    m_pTextActionUndoGuard;
+    ::std::unique_ptr< UndoGuard >                                                    m_pTextActionUndoGuard;
     /// needed for dispatching URLs in FeatureStateEvents
     mutable ::com::sun::star::uno::Reference< ::com::sun::star::util::XURLTransformer > m_xURLTransformer;
 
-    ::std::auto_ptr< ::svt::AcceleratorExecute >  m_apAccelExecute;
+    ::std::unique_ptr< ::svt::AcceleratorExecute >  m_apAccelExecute;
 
     CommandDispatchContainer m_aDispatchContainer;
 
-    ::std::auto_ptr< DropTargetHelper >           m_apDropTargetHelper;
+    ::std::unique_ptr< DropTargetHelper >           m_apDropTargetHelper;
     ::com::sun::star::uno::Reference<
             ::com::sun::star::frame::XLayoutManagerEventBroadcaster >
                                                   m_xLayoutManagerEventBroadcaster;
@@ -552,7 +552,7 @@ private:
 	//private methods
 
 	sal_Bool	        impl_isDisposedOrSuspended() const;
-    ::std::auto_ptr< ReferenceSizeProvider > impl_createReferenceSizeProvider();
+    ::std::unique_ptr< ReferenceSizeProvider > impl_createReferenceSizeProvider();
     void                impl_adaptDataSeriesAutoResize();
 
     void                impl_createDrawViewController();

@@ -236,7 +236,7 @@ public:
 
 	SfxObjectShellLock xDocShell;
 
-	::std::auto_ptr<WindowUpdater> mpWindowUpdater;
+	::std::unique_ptr<WindowUpdater> mpWindowUpdater;
 
 	sal_Bool mbPreview;
 	sal_uInt16 mnShowPage;

@@ -819,7 +819,7 @@ static void removeAndCreateFile(rtl::OUString const& _suFileURL, rtl::OString co
 {
     osl::File::remove(_suFileURL);
 
-    ::std::auto_ptr<osl::File> pFile( new osl::File( _suFileURL ) );
+    ::std::unique_ptr<osl::File> pFile( new osl::File( _suFileURL ) );
     ::osl::FileBase::RC nError = pFile->open( OpenFlag_Write | OpenFlag_Create );
     if ( ::osl::FileBase::E_None == nError || ::osl::FileBase::E_EXIST == nError )
     {

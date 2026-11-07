@@ -64,7 +64,7 @@
 
 #include <boost/scoped_ptr.hpp>
 
-using ::std::auto_ptr;
+using ::std::unique_ptr;
 using ::com::sun::star::uno::Any;
 using ::rtl::OUString;
 using ::std::vector;
@@ -1371,7 +1371,7 @@ static ScTokenArray* lcl_convertToTokenArray(ScDocument* pSrcDoc, ScRange& rRang
 
     ::boost::scoped_ptr<ScRange> pUsedRange;
 
-    auto_ptr<ScTokenArray> pArray(new ScTokenArray);
+    unique_ptr<ScTokenArray> pArray(new ScTokenArray);
     bool bFirstTab = true;
     vector<ScExternalRefCache::SingleRangeData>::iterator
         itrCache = rCacheData.begin(), itrCacheEnd = rCacheData.end();
@@ -1489,7 +1489,7 @@ static ScTokenArray* lcl_fillEmptyMatrix(const ScRange& rRange)
 
     ScMatrix* pMat2 = xMat;
     ScMatrixToken aToken(pMat2);
-    auto_ptr<ScTokenArray> pArray(new ScTokenArray);
+    unique_ptr<ScTokenArray> pArray(new ScTokenArray);
     pArray->AddToken(aToken);
     return pArray.release();
 }
@@ -2031,7 +2031,7 @@ SfxObjectShellRef ScExternalRefManager::loadSrcDocument(sal_uInt16 nFileId, Stri
     // make medium hidden to prevent assertion from progress bar
     pSet->Put( SfxBoolItem( SID_HIDDEN, sal_True ) );
 
-    auto_ptr<SfxMedium> pMedium(new SfxMedium(aFile, STREAM_STD_READ, false, pFilter, pSet));
+    unique_ptr<SfxMedium> pMedium(new SfxMedium(aFile, STREAM_STD_READ, false, pFilter, pSet));
     if (pMedium->GetError() != ERRCODE_NONE)
         return NULL;
 

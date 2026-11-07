@@ -575,7 +575,7 @@ class SwSectionNode
 	friend class SwNodes;
 
 private:
-    ::std::auto_ptr<SwSection> const m_pSection;
+    ::std::unique_ptr<SwSection> const m_pSection;
 
 protected:
 	virtual ~SwSectionNode();

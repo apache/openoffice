@@ -555,8 +555,8 @@ private:
     String  impl_formatText( const String& _rText );
 
 private:
-    ::std::auto_ptr< ::dbtools::FormattedColumnValue >  m_pValueFormatter;
-    ::std::auto_ptr< ::dbtools::FormattedColumnValue >  m_pPaintFormatter;
+    ::std::unique_ptr< ::dbtools::FormattedColumnValue >  m_pValueFormatter;
+    ::std::unique_ptr< ::dbtools::FormattedColumnValue >  m_pPaintFormatter;
     ::comphelper::ComponentContext                      m_aContext;
 };
 

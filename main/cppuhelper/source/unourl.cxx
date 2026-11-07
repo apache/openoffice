@@ -152,8 +152,8 @@ UnoUrlDescriptor::UnoUrlDescriptor(rtl::OUString const & rDescriptor):
     m_xImpl(new Impl(rDescriptor))
 {}
 
-UnoUrlDescriptor::UnoUrlDescriptor(std::auto_ptr< Impl > & rImpl):
-    m_xImpl(rImpl)
+UnoUrlDescriptor::UnoUrlDescriptor(std::unique_ptr< Impl > & rImpl):
+    m_xImpl(std::move(rImpl))
 {}
 
 UnoUrlDescriptor::UnoUrlDescriptor(UnoUrlDescriptor const & rOther):
@@ -206,13 +206,13 @@ public:
     static inline Impl * create(rtl::OUString const & rUrl);
 
 private:
-    inline Impl(std::auto_ptr< UnoUrlDescriptor::Impl > & rConnection,
-                std::auto_ptr< UnoUrlDescriptor::Impl > & rProtocol,
+    inline Impl(std::unique_ptr< UnoUrlDescriptor::Impl > & rConnection,
+                std::unique_ptr< UnoUrlDescriptor::Impl > & rProtocol,
                 rtl::OUString const & rObjectName);
 };
 
-inline UnoUrl::Impl::Impl(std::auto_ptr< UnoUrlDescriptor::Impl > & rConnection,
-                          std::auto_ptr< UnoUrlDescriptor::Impl > & rProtocol,
+inline UnoUrl::Impl::Impl(std::unique_ptr< UnoUrlDescriptor::Impl > & rConnection,
+                          std::unique_ptr< UnoUrlDescriptor::Impl > & rProtocol,
                           rtl::OUString const & rObjectName):
     m_aConnection(rConnection),
     m_aProtocol(rProtocol),
@@ -231,7 +231,7 @@ inline UnoUrl::Impl * UnoUrl::Impl::create(rtl::OUString const & rUrl)
         throw rtl::MalformedUriException(
             rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(
                               "UNO URL has too few semicolons")));
-    std::auto_ptr< UnoUrlDescriptor::Impl >
+    std::unique_ptr< UnoUrlDescriptor::Impl >
         xConnection(new UnoUrlDescriptor::Impl(rUrl.copy(i, j - i)));
     i = j + 1;
     j = rUrl.indexOf(0x3B, i); // ';'
@@ -239,7 +239,7 @@ inline UnoUrl::Impl * UnoUrl::Impl::create(rtl::OUString const & rUrl)
         throw rtl::MalformedUriException(
             rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(
                               "UNO URL has too few semicolons")));
-    std::auto_ptr< UnoUrlDescriptor::Impl >
+    std::unique_ptr< UnoUrlDescriptor::Impl >
         xProtocol(new UnoUrlDescriptor::Impl(rUrl.copy(i, j - i)));
     i = j + 1;
     if (i == rUrl.getLength())

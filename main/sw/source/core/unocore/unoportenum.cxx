@@ -176,7 +176,7 @@ namespace
             const SwPosition& rEndPos = pBkmk->GetMarkEnd();
             if(rEndPos.nNode == nOwnNode)
             {
-                auto_ptr<SwPosition> pCrossRefEndPos;
+                unique_ptr<SwPosition> pCrossRefEndPos;
                 const SwPosition* pEndPos = NULL;
                 if(hasOther)
                 {
@@ -185,7 +185,7 @@ namespace
                 else if (pCrossRefMark)
                 {
                     // Crossrefbookmarks only remember the start position but have to span the whole paragraph
-                    pCrossRefEndPos = auto_ptr<SwPosition>(new SwPosition(rEndPos));
+                    pCrossRefEndPos = unique_ptr<SwPosition>(new SwPosition(rEndPos));
                     pCrossRefEndPos->nContent = pCrossRefEndPos->nNode.GetNode().GetTxtNode()->Len();
                     pEndPos = pCrossRefEndPos.get();
                 }
@@ -588,11 +588,11 @@ static uno::Reference<text::XTextRange>
 lcl_CreateMetaPortion(
     uno::Reference<text::XText> const& xParent,
     const SwUnoCrsr * const pUnoCrsr,
-    SwTxtAttr & rAttr, ::std::auto_ptr<TextRangeList_t const> & pPortions)
+    SwTxtAttr & rAttr, ::std::unique_ptr<TextRangeList_t const> & pPortions)
 {
     const uno::Reference<rdf::XMetadatable> xMeta( SwXMeta::CreateXMeta(
             *static_cast<SwFmtMeta &>(rAttr.GetAttr()).GetMeta(),
-            xParent, pPortions));
+            xParent, std::move(pPortions)));
     SwXTextPortion * pPortion(0);
     if (RES_TXTATR_META == rAttr.Which())
     {
@@ -810,7 +810,7 @@ lcl_ExportHints(
                         }
                         else
                         {
-                            ::std::auto_ptr<const TextRangeList_t>
+                            ::std::unique_ptr<const TextRangeList_t>
                                 pCurrentPortions(Top.first);
                             rPortionStack.pop();
                             const uno::Reference<text::XTextRange> xPortion(

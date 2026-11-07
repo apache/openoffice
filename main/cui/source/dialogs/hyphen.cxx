@@ -610,7 +610,7 @@ SvxHyphenWordDialog::SvxHyphenWordDialog(
 
     SfxModalDialog( pParent, CUI_RES( RID_SVXDLG_HYPHENATE ) )
 {
-    m_pImpl = std::auto_ptr< SvxHyphenWordDialog_Impl >(
+    m_pImpl = std::unique_ptr< SvxHyphenWordDialog_Impl >(
             new SvxHyphenWordDialog_Impl( this, rWord, nLang, xHyphen, pWrapper ) );
 
     FreeResource();

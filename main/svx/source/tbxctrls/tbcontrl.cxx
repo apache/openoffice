@@ -183,7 +183,7 @@ class SvxFontNameBox_Impl : public FontNameBox
 	using Window::Update;
 private:
 	const FontList*	               pFontList;
-    ::std::auto_ptr<FontList>      m_aOwnFontList;
+    ::std::unique_ptr<FontList>      m_aOwnFontList;
 	Font			               aCurFont;
     Size                           aLogicalSize;
 	String			               aCurText;
@@ -214,7 +214,7 @@ public:
 	virtual long	PreNotify( NotifyEvent& rNEvt );
 	virtual long	Notify( NotifyEvent& rNEvt );
 	virtual Reference< ::com::sun::star::accessibility::XAccessible > CreateAccessible();
-    inline void     SetOwnFontList(::std::auto_ptr<FontList> _aOwnFontList) { m_aOwnFontList = _aOwnFontList; }
+    inline void     SetOwnFontList(::std::unique_ptr<FontList> _aOwnFontList) { m_aOwnFontList = ::std::move(_aOwnFontList); }
 };
 
 //========================================================================
@@ -561,9 +561,9 @@ sal_Bool GetDocFontList_Impl( const FontList** ppFontList, SvxFontNameBox_Impl* 
 			(SvxFontListItem*)pDocSh->GetItem( SID_ATTR_CHAR_FONTLIST );
     else
     {
-        ::std::auto_ptr<FontList> aFontList(new FontList( pBox ));
+        ::std::unique_ptr<FontList> aFontList(new FontList( pBox ));
         *ppFontList = aFontList.get();
-        pBox->SetOwnFontList(aFontList);
+        pBox->SetOwnFontList(std::move(aFontList));
         bChanged = sal_True;
     }
 

@@ -867,7 +867,7 @@ void SwTxtNode::Update(
 {
     SetAutoCompleteWordDirty( sal_True );
 
-    ::std::auto_ptr<TmpHints> pCollector;
+    ::std::unique_ptr<TmpHints> pCollector;
     const xub_StrLen nChangePos = rPos.GetIndex();
 
     if ( HasHints() )

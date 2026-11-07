@@ -156,7 +156,7 @@ bool HelpParser::CreateSDF(
     String strFullPath( fullFilePath.GetBuffer() , RTL_TEXTENCODING_ASCII_US );
 
     //printf( "%s\n", fullFilePath.GetBuffer() );
-    std::auto_ptr <XMLFile> file ( aParser.Execute( strFullPath , sXmlFile, pXmlFile ) );
+    std::unique_ptr <XMLFile> file ( aParser.Execute( strFullPath , sXmlFile, pXmlFile ) );
 
 	if(file.get() == NULL){
 		printf("%s\n",ByteString(aParser.GetError().sMessage,RTL_TEXTENCODING_ASCII_US).GetBuffer());

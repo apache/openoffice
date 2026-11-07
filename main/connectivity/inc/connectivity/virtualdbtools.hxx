@@ -332,7 +332,7 @@ namespace connectivity
 			/// creates a helper which can be used to access the static methods in dbtools.hxx
 			virtual ::rtl::Reference< IDataAccessTools > getDataAccessTools() = 0;
 
-            virtual ::std::auto_ptr< ::dbtools::FormattedColumnValue >  createFormattedColumnValue(
+            virtual ::std::unique_ptr< ::dbtools::FormattedColumnValue >  createFormattedColumnValue(
                 const ::comphelper::ComponentContext& _rContext,
                 const ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XRowSet >& _rxRowSet,
                 const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& _rxColumn

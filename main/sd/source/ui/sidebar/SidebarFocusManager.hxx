@@ -100,7 +100,7 @@ public:
 
 private:
     class LinkMap;
-    ::std::auto_ptr<LinkMap> mpLinks;
+    ::std::unique_ptr<LinkMap> mpLinks;
 
     FocusManager (void);
     ~FocusManager (void);

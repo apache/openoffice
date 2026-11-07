@@ -344,7 +344,7 @@ BOOL UcbExplorerListBoxEntry::createNewContent( const ContentInfo& rInfo,
         {
             const OUString& rName = pProps[ n ].Name;
 
-            std::auto_ptr< ResMgr > xManager(
+            std::unique_ptr< ResMgr > xManager(
                 ResMgr::CreateResMgr( CREATEVERSIONRESMGR_NAME( ucbexplorer ) ) );
             StringInputDialog* pDlg = new StringInputDialog( *xManager.get(), rName, rName );
             USHORT nRet = pDlg->Execute();
@@ -432,7 +432,7 @@ BOOL UcbExplorerListBoxEntry::createNewContent( const ContentInfo& rInfo,
         // Let the user specify the URL of a content containing the
         // data to supply to the new content.
 
-        std::auto_ptr< ResMgr > xManager(
+        std::unique_ptr< ResMgr > xManager(
             ResMgr::CreateResMgr( CREATEVERSIONRESMGR_NAME( ucbexplorer ) ) );
         StringInputDialog* pDlg = new StringInputDialog(
                                             *xManager.get(),
@@ -640,7 +640,7 @@ void UcbExplorerTreeListBox::Command( const CommandEvent& rCEvt )
                 GetEntry( rPos, TRUE ) );
         if ( pEntry )
         {
-           std::auto_ptr< ResMgr > xManager(
+           std::unique_ptr< ResMgr > xManager(
                 ResMgr::CreateResMgr( CREATEVERSIONRESMGR_NAME( ucbexplorer ) ) );
            PopupMenu* pMenu = new PopupMenu( ResId( MENU_POPUP, *xManager.get() ) );
             PopupMenu* pNewMenu = 0;
@@ -755,7 +755,7 @@ void UcbExplorerTreeListBox::Command( const CommandEvent& rCEvt )
                     {
                     }
 
-                    std::auto_ptr< ResMgr > xManager(
+                    std::unique_ptr< ResMgr > xManager(
                         ResMgr::CreateResMgr( CREATEVERSIONRESMGR_NAME( ucbexplorer ) ) );
                     StringInputDialog* pDlg
                             = new StringInputDialog(
@@ -1129,7 +1129,7 @@ void MyApp::Main()
     // Create/init/show app window.
     //////////////////////////////////////////////////////////////////////
 
-    std::auto_ptr< ResMgr > xManager(
+    std::unique_ptr< ResMgr > xManager(
         ResMgr::CreateResMgr( CREATEVERSIONRESMGR_NAME( ucbexplorer ) ) );
 
     UcbExplorerWindow aAppWin( *xManager.get(), 0, WB_APP | WB_STDWORK );

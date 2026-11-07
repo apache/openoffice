@@ -1268,7 +1268,7 @@ SwSectionNode* SwSectionNode::MakeCopy( SwDoc* pDoc, const SwNodeIndex& rIdx ) c
 	SwSectionFmt* pSectFmt = pDoc->MakeSectionFmt( 0 );
 	pSectFmt->CopyAttrs( *GetSection().GetFmt() );
 
-    ::std::auto_ptr<SwTOXBase> pTOXBase;
+    ::std::unique_ptr<SwTOXBase> pTOXBase;
     if (TOX_CONTENT_SECTION == GetSection().GetType())
     {
         ASSERT( GetSection().ISA( SwTOXBaseSection ), "no TOXBaseSection!" );

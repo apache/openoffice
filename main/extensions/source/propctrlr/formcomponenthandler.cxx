@@ -2728,7 +2728,7 @@ namespace pcr
             aCoreSet.Put( aFormatter );
 
             // a tab dialog with a single page
-            ::std::auto_ptr< SfxSingleTabDialog > pDialog( new SfxSingleTabDialog( impl_getDefaultDialogParent_nothrow(), aCoreSet, 0 ) );
+            ::std::unique_ptr< SfxSingleTabDialog > pDialog( new SfxSingleTabDialog( impl_getDefaultDialogParent_nothrow(), aCoreSet, 0 ) );
             SvxAbstractDialogFactory* pFact = SvxAbstractDialogFactory::Create();
             DBG_ASSERT( pFact, "CreateFactory fail!" );
             ::CreateTabPage fnCreatePage = pFact->GetTabPageCreatorFunc( RID_SVXPAGE_NUMBERFORMAT );

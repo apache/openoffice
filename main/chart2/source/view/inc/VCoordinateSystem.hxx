@@ -195,7 +195,7 @@ private:
     tFullExplicitScaleMap       m_aSecondaryExplicitScales;
     tFullExplicitIncrementMap   m_aSecondaryExplicitIncrements;
 
-    ::std::auto_ptr< ExplicitCategoriesProvider > m_apExplicitCategoriesProvider;
+    ::std::unique_ptr< ExplicitCategoriesProvider > m_apExplicitCategoriesProvider;
 };
 
 //.............................................................................

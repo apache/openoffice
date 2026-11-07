@@ -264,7 +264,7 @@ void SFTreeListBox::Init( const ::rtl::OUString& language  )
 
         /*SvLBoxEntry* pBasicManagerRootEntry =*/
             insertEntry( uiName, app ? IMG_HARDDISK : IMG_DOCUMENT,
-                0, true, std::auto_ptr< SFEntry >(new SFEntry( OBJTYPE_SFROOT, langEntries, xDocumentModel )), factoryURL );
+                0, true, std::unique_ptr< SFEntry >(new SFEntry( OBJTYPE_SFROOT, langEntries, xDocumentModel )), factoryURL );
     }
 
     SetUpdateMode( sal_True );
@@ -350,13 +350,13 @@ void SFTreeListBox:: RequestSubEntries( SvLBoxEntry* pRootEntry, Reference< ::co
 		::rtl::OUString name( children[ n ]->getName() );
         if (  children[ n ]->getType() !=  browse::BrowseNodeTypes::SCRIPT)
         {
-            insertEntry( name, IMG_LIB, pRootEntry, true, std::auto_ptr< SFEntry >(new SFEntry( OBJTYPE_SCRIPTCONTAINER, children[ n ],model )));
+            insertEntry( name, IMG_LIB, pRootEntry, true, std::unique_ptr< SFEntry >(new SFEntry( OBJTYPE_SCRIPTCONTAINER, children[ n ],model )));
         }
         else
         {
             if ( children[ n ]->getType() == browse::BrowseNodeTypes::SCRIPT )
             {
-                insertEntry( name, IMG_MACRO, pRootEntry, false, std::auto_ptr< SFEntry >(new SFEntry( OBJTYPE_METHOD, children[ n ],model )));
+                insertEntry( name, IMG_MACRO, pRootEntry, false, std::unique_ptr< SFEntry >(new SFEntry( OBJTYPE_METHOD, children[ n ],model )));
 
             }
         }
@@ -374,7 +374,7 @@ void SFTreeListBox::ExpandAllTrees()
 
 SvLBoxEntry * SFTreeListBox::insertEntry(
     String const & rText, sal_uInt16 nBitmap, SvLBoxEntry * pParent,
-    bool bChildrenOnDemand, std::auto_ptr< SFEntry > aUserData, ::rtl::OUString factoryURL )
+    bool bChildrenOnDemand, std::unique_ptr< SFEntry > aUserData, ::rtl::OUString factoryURL )
 {
     SvLBoxEntry * p;
     if( nBitmap == IMG_DOCUMENT && factoryURL.getLength() > 0 )
@@ -393,14 +393,14 @@ SvLBoxEntry * SFTreeListBox::insertEntry(
     }
     else
     {
-        p = insertEntry( rText, nBitmap, pParent, bChildrenOnDemand, aUserData );
+        p = insertEntry( rText, nBitmap, pParent, bChildrenOnDemand, std::move(aUserData) );
     }
     return p;
 }
 
 SvLBoxEntry * SFTreeListBox::insertEntry(
     String const & rText, sal_uInt16 nBitmap, SvLBoxEntry * pParent,
-    bool bChildrenOnDemand, std::auto_ptr< SFEntry > aUserData )
+    bool bChildrenOnDemand, std::unique_ptr< SFEntry > aUserData )
 {
     Image aHCImage, aImage;
     if( nBitmap == IMG_HARDDISK )
@@ -981,7 +981,7 @@ void SvxScriptOrgDialog::createEntry( SvLBoxEntry* pEntry )
             }
         }
 
-        std::auto_ptr< InputDialog > xNewDlg( new InputDialog( static_cast<Window*>(this), nMode ) );
+        std::unique_ptr< InputDialog > xNewDlg( new InputDialog( static_cast<Window*>(this), nMode ) );
         xNewDlg->SetObjectName( aNewName );
 
         do
@@ -1056,13 +1056,13 @@ void SvxScriptOrgDialog::createEntry( SvLBoxEntry* pEntry )
         if ( aChildNode->getType() == browse::BrowseNodeTypes::SCRIPT )
         {
             pNewEntry = aScriptsBox.insertEntry( aChildName,
-                    IMG_MACRO, pEntry, false, std::auto_ptr< SFEntry >(new SFEntry( OBJTYPE_METHOD, aChildNode,xDocumentModel ) ) );
+                    IMG_MACRO, pEntry, false, std::unique_ptr< SFEntry >(new SFEntry( OBJTYPE_METHOD, aChildNode,xDocumentModel ) ) );
 
         }
         else
         {
             pNewEntry = aScriptsBox.insertEntry( aChildName,
-                IMG_LIB, pEntry, false, std::auto_ptr< SFEntry >(new SFEntry( OBJTYPE_SCRIPTCONTAINER, aChildNode,xDocumentModel ) ) );
+                IMG_LIB, pEntry, false, std::unique_ptr< SFEntry >(new SFEntry( OBJTYPE_SCRIPTCONTAINER, aChildNode,xDocumentModel ) ) );
                         // If the Parent is not loaded then set to
                         // loaded, this will prevent RequestingChilds ( called
                         // from vcl via RequestingChilds ) from
@@ -1106,7 +1106,7 @@ void SvxScriptOrgDialog::renameEntry( SvLBoxEntry* pEntry )
         }
         sal_uInt16 nMode = INPUTMODE_RENAME;
 
-        std::auto_ptr< InputDialog > xNewDlg( new InputDialog( static_cast<Window*>(this), nMode ) );
+        std::unique_ptr< InputDialog > xNewDlg( new InputDialog( static_cast<Window*>(this), nMode ) );
         xNewDlg->SetObjectName( aNewName );
 
         sal_Bool bValid;

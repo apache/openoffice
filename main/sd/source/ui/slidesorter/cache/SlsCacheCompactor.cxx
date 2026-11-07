@@ -95,7 +95,7 @@ private:
 namespace sd { namespace slidesorter { namespace cache {
 
 
-::std::auto_ptr<CacheCompactor> CacheCompactor::Create (
+::std::unique_ptr<CacheCompactor> CacheCompactor::Create (
     BitmapCache& rCache,
     sal_Int32 nMaximalCacheSize)
 {
@@ -120,7 +120,7 @@ namespace sd { namespace slidesorter { namespace cache {
     else
         pCompressor.reset(new PngCompression());
 
-    ::std::auto_ptr<CacheCompactor> pCompactor (NULL);
+    ::std::unique_ptr<CacheCompactor> pCompactor;
     ::rtl::OUString sCompactionPolicy(sCompress);
     Any aCompactionPolicy (CacheConfiguration::Instance()->GetValue(
         ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("CompactionPolicy"))));
@@ -131,7 +131,7 @@ namespace sd { namespace slidesorter { namespace cache {
     else
         pCompactor.reset(new CacheCompactionByCompression(rCache,nMaximalCacheSize,pCompressor));
 
-    return pCompactor;
+    return std::move(pCompactor);
 }
 
 
@@ -209,7 +209,7 @@ void CacheCompactionByCompression::Run (void)
             mrCache.GetSize(), mnMaximalCacheSize);
 #endif
 
-        ::std::auto_ptr< ::sd::slidesorter::cache::BitmapCache::CacheIndex> pIndex (
+        ::std::unique_ptr< ::sd::slidesorter::cache::BitmapCache::CacheIndex> pIndex (
             mrCache.GetCacheIndex(false,false));
         ::sd::slidesorter::cache::BitmapCache::CacheIndex::iterator iIndex;
         for (iIndex=pIndex->begin(); iIndex!=pIndex->end(); ++iIndex)

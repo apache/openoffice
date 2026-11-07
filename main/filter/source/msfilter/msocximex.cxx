@@ -670,7 +670,7 @@ class ContainerRecReader
             sal_uInt32 nTipBufSize = lclGetBufferSize( nTipLen );
             if( nTipBufSize > 0 )
             {
-                std::auto_ptr< sal_Char > pTipName;
+                std::unique_ptr< sal_Char > pTipName;
                 pTipName.reset( new sal_Char[ nTipBufSize ] );
                 ReadAlign( pS, pS->Tell() - nStartPos, 4 );
                 pS->Read( pTipName.get(), nTipBufSize );
@@ -3642,7 +3642,7 @@ sal_Bool OCX_ContainerControl::Read(SvStorageStream *pS)
         mnBackColor = mpParent->mnBackColor;
     }
 
-    std::auto_ptr< ContainerRecReader > reader (
+    std::unique_ptr< ContainerRecReader > reader (
         ContainerRecordReaderFac::instance( containerType ) );
 
     reader->Read( this, pS );

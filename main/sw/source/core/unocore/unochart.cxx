@@ -732,7 +732,7 @@ uno::Reference< chart2::data::XDataSource > SwChartDataProvider::Impl_createData
     // get table format for that single table from above
     SwFrmFmt    *pTblFmt  = 0;      // pointer to table format
     SwUnoCrsr   *pUnoCrsr = 0;      // here required to check if the cells in the range do actually exist
-    std::auto_ptr< SwUnoCrsr > pAuto( pUnoCrsr );  // to end lifetime of object pointed to by pUnoCrsr
+    std::unique_ptr< SwUnoCrsr > pAuto( pUnoCrsr );  // to end lifetime of object pointed to by pUnoCrsr
     if (aSubRanges.getLength() > 0)
         GetFormatAndCreateCursorFromRangeRep( pDoc, pSubRanges[0], &pTblFmt, &pUnoCrsr );
     if (!pTblFmt || !pUnoCrsr)

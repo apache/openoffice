@@ -191,7 +191,7 @@ void SwBaseShell::InsertRegionDialog(SfxRequest& rReq)
 
 IMPL_STATIC_LINK( SwWrtShell, InsertRegionDialog, SwSectionData*, pSect )
 {
-    ::std::auto_ptr<SwSectionData> pSectionData(pSect);
+    ::std::unique_ptr<SwSectionData> pSectionData(pSect);
     if (pSectionData.get())
     {
 		SfxItemSet aSet(pThis->GetView().GetPool(),

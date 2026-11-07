@@ -159,7 +159,7 @@ private:
                                 m_xOwnNumberFormatsSupplier;
     ::com::sun::star::uno::Reference< com::sun::star::util::XNumberFormatsSupplier >
                                 m_xNumberFormatsSupplier;
-    std::auto_ptr< SvNumberFormatter > m_apSvNumberFormatter; // #i113784# avoid memory leak
+    std::unique_ptr< SvNumberFormatter > m_apSvNumberFormatter; // #i113784# avoid memory leak
 
     ::com::sun::star::uno::Reference< ::com::sun::star::chart2::XChartTypeManager >
         m_xChartTypeManager;

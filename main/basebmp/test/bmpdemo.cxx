@@ -140,13 +140,13 @@ public:
 };
 
 template< class DestIterator, class DestAccessor >
-    std::auto_ptr< Renderer< DestIterator, DestAccessor > > makeRenderer(
+    std::unique_ptr< Renderer< DestIterator, DestAccessor > > makeRenderer(
         const basegfx::B2DPolyPolygon&                          rPolyPolyRaster,
         typename DestIterator::value_type                       fillColor,
         typename DestIterator::value_type                       clearColor,
         vigra::triple<DestIterator, DestIterator, DestAccessor> dest )
 {
-    return std::auto_ptr< Renderer< DestIterator, DestAccessor > >(
+    return std::unique_ptr< Renderer< DestIterator, DestAccessor > >(
         new Renderer< DestIterator, DestAccessor >(rPolyPolyRaster,
                                                    fillColor,
                                                    clearColor,

@@ -230,7 +230,7 @@ namespace basctl
         Reference< XModel >             m_xDocument;
         Reference< XModifiable >        m_xDocModify;
         Reference< XEmbeddedScripts >   m_xScriptAccess;
-        ::std::auto_ptr< DocumentEventNotifier >
+        ::std::unique_ptr< DocumentEventNotifier >
                                         m_pDocListener;
 
     public:

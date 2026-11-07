@@ -53,7 +53,7 @@ using ::rtl::OUString;
 using ::rtl::OUStringHash;
 using ::std::vector;
 using ::std::hash_map;
-using ::std::auto_ptr;
+using ::std::unique_ptr;
 
 ScDPFieldButton::ScDPFieldButton(OutputDevice* pOutDev, const StyleSettings* pStyle, const Fraction* pZoomX, const Fraction* pZoomY, ScDocument* pDoc) :
     mpDoc(pDoc),
@@ -985,8 +985,8 @@ ScDPFieldPopupWindow::ScDPFieldPopupWindow(Window* pParent, ScDocument* pDoc) :
     maBtnOk(this),
     maBtnCancel(this),
     mnCurTabStop(0),
-    mpExtendedData(NULL),
-    mpOKAction(NULL),
+    mpExtendedData(),
+    mpOKAction(),
     maWndSize(240, 330),
     mePrevToggleAllState(STATE_DONTKNOW)
 {

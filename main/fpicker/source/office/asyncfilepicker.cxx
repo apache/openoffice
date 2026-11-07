@@ -109,7 +109,7 @@ namespace svt
         if ( nMaxTimeout <= nMinTimeout )
             nMaxTimeout = nMinTimeout + 30000;
 
-        ::std::auto_ptr< FileViewAsyncAction > pActionDescriptor;
+        ::std::unique_ptr< FileViewAsyncAction > pActionDescriptor;
         if ( nMinTimeout )
         {
             pActionDescriptor.reset( new FileViewAsyncAction );

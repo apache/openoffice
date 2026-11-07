@@ -1443,7 +1443,7 @@ SdPage* OutlineView::GetActualPage()
 {
     ::sd::Window* pWin = mpOutlineViewShell->GetActiveWindow();
 	OutlinerView* pActiveView = GetViewByWindow(pWin);
-	std::auto_ptr<List> pSelList( static_cast< List* >(pActiveView->CreateSelectionList()) );
+	std::unique_ptr<List> pSelList( static_cast< List* >(pActiveView->CreateSelectionList()) );
 
 	SdPage* pCurrent = GetPageForParagraph(static_cast<Paragraph*>(pSelList->First()) );
 	DBG_ASSERT( pCurrent ||

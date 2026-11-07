@@ -522,22 +522,22 @@ static __FAR_DATA SvXMLTokenMapEntry aTextFieldAttrTokenMap[] =
 struct SAL_DLLPRIVATE XMLTextImportHelper::Impl
     : private ::boost::noncopyable
 {
-    ::std::auto_ptr<SvXMLTokenMap> m_pTextElemTokenMap;
-    ::std::auto_ptr<SvXMLTokenMap> m_pTextPElemTokenMap;
-    ::std::auto_ptr<SvXMLTokenMap> m_pTextPAttrTokenMap;
-    ::std::auto_ptr<SvXMLTokenMap> m_pTextFieldAttrTokenMap;
-    ::std::auto_ptr<SvXMLTokenMap> m_pTextNumberedParagraphAttrTokenMap;
-    ::std::auto_ptr<SvXMLTokenMap> m_pTextListBlockAttrTokenMap;
-    ::std::auto_ptr<SvXMLTokenMap> m_pTextListBlockElemTokenMap;
-    ::std::auto_ptr<SvXMLTokenMap> m_pTextFrameAttrTokenMap;
-    ::std::auto_ptr<SvXMLTokenMap> m_pTextContourAttrTokenMap;
-    ::std::auto_ptr<SvXMLTokenMap> m_pTextHyperlinkAttrTokenMap;
-    ::std::auto_ptr<SvXMLTokenMap> m_pTextMasterPageElemTokenMap;
-    ::std::auto_ptr<SvStringsDtor> m_pPrevFrmNames;
-    ::std::auto_ptr<SvStringsDtor> m_pNextFrmNames;
+    ::std::unique_ptr<SvXMLTokenMap> m_pTextElemTokenMap;
+    ::std::unique_ptr<SvXMLTokenMap> m_pTextPElemTokenMap;
+    ::std::unique_ptr<SvXMLTokenMap> m_pTextPAttrTokenMap;
+    ::std::unique_ptr<SvXMLTokenMap> m_pTextFieldAttrTokenMap;
+    ::std::unique_ptr<SvXMLTokenMap> m_pTextNumberedParagraphAttrTokenMap;
+    ::std::unique_ptr<SvXMLTokenMap> m_pTextListBlockAttrTokenMap;
+    ::std::unique_ptr<SvXMLTokenMap> m_pTextListBlockElemTokenMap;
+    ::std::unique_ptr<SvXMLTokenMap> m_pTextFrameAttrTokenMap;
+    ::std::unique_ptr<SvXMLTokenMap> m_pTextContourAttrTokenMap;
+    ::std::unique_ptr<SvXMLTokenMap> m_pTextHyperlinkAttrTokenMap;
+    ::std::unique_ptr<SvXMLTokenMap> m_pTextMasterPageElemTokenMap;
+    ::std::unique_ptr<SvStringsDtor> m_pPrevFrmNames;
+    ::std::unique_ptr<SvStringsDtor> m_pNextFrmNames;
 
     // --> OD 2008-04-25 #refactorlists#
-    ::std::auto_ptr<XMLTextListsHelper> m_pTextListsHelper;
+    ::std::unique_ptr<XMLTextListsHelper> m_pTextListsHelper;
     // <--
 
     SvXMLImportContextRef m_xAutoStyles;
@@ -551,7 +551,7 @@ struct SAL_DLLPRIVATE XMLTextImportHelper::Impl
     UniReference< SvXMLImportPropertyMapper > m_xSectionImpPrMap;
     UniReference< SvXMLImportPropertyMapper > m_xRubyImpPrMap;
 
-    ::std::auto_ptr<SvI18NMap> m_pRenameMap;
+    ::std::unique_ptr<SvI18NMap> m_pRenameMap;
     // --> OD 2006-10-12 #i69629# - change and extend data structure:
     // - data structure contains candidates of paragraph styles, which
     //   will be assigned to the outline style
@@ -618,23 +618,23 @@ struct SAL_DLLPRIVATE XMLTextImportHelper::Impl
                 bool const bInsertMode, bool const bStylesOnlyMode,
                 bool const bProgress, bool const bBlockMode,
                 bool const bOrganizerMode)
-        :   m_pTextElemTokenMap( 0 )
-        ,   m_pTextPElemTokenMap( 0 )
-        ,   m_pTextPAttrTokenMap( 0 )
-        ,   m_pTextFieldAttrTokenMap( 0 )
-        ,   m_pTextNumberedParagraphAttrTokenMap( 0 )
-        ,   m_pTextListBlockAttrTokenMap( 0 )
-        ,   m_pTextListBlockElemTokenMap( 0 )
-        ,   m_pTextFrameAttrTokenMap( 0 )
-        ,   m_pTextContourAttrTokenMap( 0 )
-        ,   m_pTextHyperlinkAttrTokenMap( 0 )
-        ,   m_pTextMasterPageElemTokenMap( 0 )
-        ,   m_pPrevFrmNames( 0 )
-        ,   m_pNextFrmNames( 0 )
+        :   m_pTextElemTokenMap()
+        ,   m_pTextPElemTokenMap()
+        ,   m_pTextPAttrTokenMap()
+        ,   m_pTextFieldAttrTokenMap()
+        ,   m_pTextNumberedParagraphAttrTokenMap()
+        ,   m_pTextListBlockAttrTokenMap()
+        ,   m_pTextListBlockElemTokenMap()
+        ,   m_pTextFrameAttrTokenMap()
+        ,   m_pTextContourAttrTokenMap()
+        ,   m_pTextHyperlinkAttrTokenMap()
+        ,   m_pTextMasterPageElemTokenMap()
+        ,   m_pPrevFrmNames()
+        ,   m_pNextFrmNames()
         // --> OD 2008-04-25 #refactorlists#
         ,   m_pTextListsHelper( new XMLTextListsHelper() )
         // <--
-        ,   m_pRenameMap( 0 )
+        ,   m_pRenameMap()
         // --> OD 2006-10-12 #i69629#
         ,   m_pOutlineStylesCandidates( 0 )
         // <--

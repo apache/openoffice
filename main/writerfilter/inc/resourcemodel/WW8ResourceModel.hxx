@@ -293,7 +293,7 @@ public:
     /**
        Pointer to a value.
      */
-    typedef auto_ptr<Value> Pointer_t;
+    typedef unique_ptr<Value> Pointer_t;
 
     /**
        Returns integer representation of the value.
@@ -340,7 +340,7 @@ public:
 class WRITERFILTER_DLLPUBLIC Sprm
 {
 public:
-    typedef auto_ptr<Sprm> Pointer_t;
+    typedef unique_ptr<Sprm> Pointer_t;
     enum Kind { UNKNOWN, CHARACTER, PARAGRAPH, TABLE };
     /**
        Returns id of the SPRM.

@@ -80,7 +80,7 @@ protected: //methods
     virtual bool prepareShapeCreation();
 
 private: //member
-    std::auto_ptr<VCartesianAxis>  m_apAxisWithLabels;
+    std::unique_ptr<VCartesianAxis>  m_apAxisWithLabels;
 };
 
 //.............................................................................

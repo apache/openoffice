@@ -66,7 +66,7 @@ public:
     FormattedStringsConverter(
         const uno::Sequence< uno::Reference< chart2::XFormattedString > > & aStrings,
         SfxItemPool & rItemPool,
-        ::std::auto_ptr< awt::Size > pRefSize,
+        ::std::unique_ptr< awt::Size > pRefSize,
         const uno::Reference< beans::XPropertySet > & xParentProp );
     virtual ~FormattedStringsConverter();
 
@@ -79,7 +79,7 @@ protected:
 FormattedStringsConverter::FormattedStringsConverter(
     const uno::Sequence< uno::Reference< chart2::XFormattedString > > & aStrings,
     SfxItemPool & rItemPool,
-    ::std::auto_ptr< ::com::sun::star::awt::Size > pRefSize,
+    ::std::unique_ptr< ::com::sun::star::awt::Size > pRefSize,
     const uno::Reference< beans::XPropertySet > & xParentProp ) :
         MultipleItemConverter( rItemPool )
 {
@@ -92,7 +92,7 @@ FormattedStringsConverter::FormattedStringsConverter(
             if( bHasRefSize )
                 m_aConverters.push_back( new CharacterPropertyItemConverter(
                                              xProp, rItemPool,
-                                             ::std::auto_ptr< awt::Size >( new awt::Size( *pRefSize )),
+                                             ::std::unique_ptr< awt::Size >( new awt::Size( *pRefSize )),
                                              C2U( "ReferencePageSize" ),
                                              xParentProp ));
             else
@@ -118,7 +118,7 @@ TitleItemConverter::TitleItemConverter(
     SfxItemPool& rItemPool,
     SdrModel& rDrawModel,
     const uno::Reference< lang::XMultiServiceFactory > & xNamedPropertyContainerFactory,
-    ::std::auto_ptr< ::com::sun::star::awt::Size > pRefSize ) :
+    ::std::unique_ptr< ::com::sun::star::awt::Size > pRefSize ) :
         ItemConverter( rPropertySet, rItemPool )
 {
     m_aConverters.push_back( new GraphicPropertyItemConverter(
@@ -135,7 +135,7 @@ TitleItemConverter::TitleItemConverter(
         if( aStringSeq.getLength() > 0 )
         {
             m_aConverters.push_back(
-                new FormattedStringsConverter( aStringSeq, rItemPool, pRefSize, rPropertySet ));
+                new FormattedStringsConverter( aStringSeq, rItemPool, ::std::move(pRefSize), rPropertySet ));
         }
     }
 }

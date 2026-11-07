@@ -54,10 +54,10 @@ namespace pcr
         FixedText                       m_aExplanation;
         FixedText                       m_aDetailLabel;
         FixedText                       m_aMasterLabel;
-        ::std::auto_ptr< FieldLinkRow > m_aRow1;
-        ::std::auto_ptr< FieldLinkRow > m_aRow2;
-        ::std::auto_ptr< FieldLinkRow > m_aRow3;
-        ::std::auto_ptr< FieldLinkRow > m_aRow4;
+        ::std::unique_ptr< FieldLinkRow > m_aRow1;
+        ::std::unique_ptr< FieldLinkRow > m_aRow2;
+        ::std::unique_ptr< FieldLinkRow > m_aRow3;
+        ::std::unique_ptr< FieldLinkRow > m_aRow4;
         OKButton                        m_aOK;
         CancelButton                    m_aCancel;
         HelpButton                      m_aHelp;

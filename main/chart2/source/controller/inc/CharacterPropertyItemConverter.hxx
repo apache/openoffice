@@ -47,7 +47,7 @@ public:
         const ::com::sun::star::uno::Reference<
             ::com::sun::star::beans::XPropertySet > & rPropertySet,
         SfxItemPool& rItemPool,
-        ::std::auto_ptr< ::com::sun::star::awt::Size > pRefSize,
+        ::std::unique_ptr< ::com::sun::star::awt::Size > pRefSize,
         const ::rtl::OUString & rRefSizePropertyName,
         const ::com::sun::star::uno::Reference<
             ::com::sun::star::beans::XPropertySet > & rRefSizePropSet =
@@ -65,7 +65,7 @@ protected:
         ::com::sun::star::beans::XPropertySet >  GetRefSizePropertySet() const;
 
 private:
-    ::std::auto_ptr< ::com::sun::star::awt::Size > m_pRefSize;
+    ::std::unique_ptr< ::com::sun::star::awt::Size > m_pRefSize;
     ::rtl::OUString                                m_aRefSizePropertyName;
     ::com::sun::star::uno::Reference<
         ::com::sun::star::beans::XPropertySet >    m_xRefSizePropSet;

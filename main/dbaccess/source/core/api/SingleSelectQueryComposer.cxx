@@ -681,7 +681,7 @@ void OSingleSelectQueryComposer::setSingleAdditiveClause( SQLPart _ePart, const 
         aClauses.push_back( getSQLPart( eLoopParts, m_aSqlIterator, sal_True ) );
 
     // overwrite the one part in question here
-    ::std::auto_ptr< TokenComposer > pComposer;
+    ::std::unique_ptr< TokenComposer > pComposer;
     if ( ( _ePart == Where ) || ( _ePart == Having ) )
         pComposer.reset( new FilterCreator );
     else
@@ -830,7 +830,7 @@ Reference< XNameAccess > SAL_CALL OSingleSelectQueryComposer::getColumns(  )
         ::rtl::OUString sSQL( aSQL.makeStringAndClear() );
         // normalize the statement so that it doesn't contain any application-level features anymore
         ::rtl::OUString sError;
-        const ::std::auto_ptr< OSQLParseNode > pStatementTree( m_aSqlParser.parseTree( sError, sSQL, false ) );
+        const ::std::unique_ptr< OSQLParseNode > pStatementTree( m_aSqlParser.parseTree( sError, sSQL, false ) );
         DBG_ASSERT( pStatementTree.get(), "OSingleSelectQueryComposer::getColumns: could not parse the column retrieval statement!" );
         if ( pStatementTree.get() )
             if ( !pStatementTree->parseNodeToExecutableStatement( sSQL, m_xConnection, m_aSqlParser, NULL ) )
@@ -1792,7 +1792,7 @@ Sequence< Sequence< PropertyValue > > OSingleSelectQueryComposer::getStructuredC
 		aSql += sFilter;
 
 		::rtl::OUString aErrorMsg;
-		::std::auto_ptr<OSQLParseNode> pSqlParseNode( m_aSqlParser.parseTree(aErrorMsg,aSql));
+		::std::unique_ptr<OSQLParseNode> pSqlParseNode( m_aSqlParser.parseTree(aErrorMsg,aSql));
 		if ( pSqlParseNode.get() )
 		{
 			m_aAdditiveIterator.setParseTree(pSqlParseNode.get());

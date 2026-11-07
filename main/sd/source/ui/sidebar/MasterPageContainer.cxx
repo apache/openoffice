@@ -810,7 +810,7 @@ MasterPageContainer::Token MasterPageContainer::Implementation::PutMasterPage (
     {
         // Update an existing MasterPageDescriptor.
         aResult = (*aEntry)->maToken;
-        ::std::auto_ptr<std::vector<MasterPageContainerChangeEvent::EventType> > pEventTypes(
+        ::std::unique_ptr<std::vector<MasterPageContainerChangeEvent::EventType> > pEventTypes(
             (*aEntry)->Update(*rpDescriptor));
         if (pEventTypes.get()!=NULL && pEventTypes->size()>0)
         {

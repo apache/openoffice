@@ -154,7 +154,7 @@ public:
     ::rtl::OUString     importMacroName( const ::rtl::OUString& rFormulaString );
 
 private:
-    ::std::auto_ptr< FormulaParserImpl > mxImpl;
+    ::std::unique_ptr< FormulaParserImpl > mxImpl;
 };
 
 // ============================================================================

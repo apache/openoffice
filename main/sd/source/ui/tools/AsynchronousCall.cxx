@@ -67,7 +67,7 @@ IMPL_LINK(AsynchronousCall,TimerCallback,Timer*,pTimer)
 {
     if (pTimer == &maTimer)
     {
-        ::std::auto_ptr<AsynchronousFunction> pFunction (mpFunction);
+        ::std::unique_ptr<AsynchronousFunction> pFunction (::std::move(mpFunction));
         mpFunction.reset();
         (*pFunction)();
     }

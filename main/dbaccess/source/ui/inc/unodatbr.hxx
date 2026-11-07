@@ -382,7 +382,7 @@ namespace dbaui
         sal_Bool getExistentConnectionFor( SvLBoxEntry* _pDSEntry, SharedConnection& _rConnection );
         /** returns an image provider which works with the connection belonging to the given entry
         */
-        ::std::auto_ptr< ImageProvider >
+        ::std::unique_ptr< ImageProvider >
                 getImageProviderFor( SvLBoxEntry* _pAnyEntry );
 
 		void	implAdministrate( SvLBoxEntry* _pApplyTo );

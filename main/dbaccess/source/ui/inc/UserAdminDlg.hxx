@@ -59,7 +59,7 @@ namespace dbaui
 	class OUserAdminDlg : public SfxTabDialog, public IItemSetHelper, public IDatabaseSettingsDialog,public dbaui::OModuleClient
 	{
 		OModuleClient m_aModuleClient;
-		::std::auto_ptr<ODbDataSourceAdministrationHelper>	m_pImpl;
+		::std::unique_ptr<ODbDataSourceAdministrationHelper>	m_pImpl;
 		SfxItemSet* m_pItemSet;
 		::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XConnection>			m_xConnection;
 		sal_Bool	m_bOwnConnection;

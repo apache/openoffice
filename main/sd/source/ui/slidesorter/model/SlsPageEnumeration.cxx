@@ -41,7 +41,7 @@ public:
     virtual ~PageEnumerationImpl (void);
     /** Create a copy of the called enumeration object.
     */
-    virtual inline ::std::auto_ptr<Enumeration<SharedPageDescriptor> > Clone (void);
+    virtual inline ::std::unique_ptr<Enumeration<SharedPageDescriptor> > Clone (void);
 
     virtual inline bool HasMoreElements (void) const;
     virtual inline SharedPageDescriptor GetNextElement (void);
@@ -84,7 +84,7 @@ PageEnumeration PageEnumeration::Create (
     const SlideSorterModel& rModel,
     const PagePredicate& rPredicate)
 {
-    return PageEnumeration(::std::auto_ptr<Enumeration<SharedPageDescriptor> >(
+    return PageEnumeration(::std::unique_ptr<Enumeration<SharedPageDescriptor> >(
         new PageEnumerationImpl(rModel, rPredicate)));
 }
 
@@ -92,8 +92,8 @@ PageEnumeration PageEnumeration::Create (
 
 
 PageEnumeration::PageEnumeration (
-    ::std::auto_ptr<Enumeration<SharedPageDescriptor> > pImpl)
-    : mpImpl(pImpl)
+    ::std::unique_ptr<Enumeration<SharedPageDescriptor> > pImpl)
+    : mpImpl(std::move(pImpl))
 {
 }
 
@@ -111,7 +111,7 @@ PageEnumeration::PageEnumeration (
 	}
 	else
 	{
-		mpImpl = rEnumeration.mpImpl;
+		mpImpl = std::move(rEnumeration.mpImpl);
 	}
 }
 
@@ -144,9 +144,9 @@ PageEnumeration& PageEnumeration::operator= (
 
 
 
-::std::auto_ptr<Enumeration<SharedPageDescriptor> > PageEnumeration::Clone (void)
+::std::unique_ptr<Enumeration<SharedPageDescriptor> > PageEnumeration::Clone (void)
 {
-    return ::std::auto_ptr<Enumeration<SharedPageDescriptor> >(
+    return ::std::unique_ptr<Enumeration<SharedPageDescriptor> >(
         new PageEnumeration (*this, true));
 }
 
@@ -213,10 +213,10 @@ PageEnumerationImpl::~PageEnumerationImpl (void)
 
 
 
-::std::auto_ptr<Enumeration<SharedPageDescriptor> >
+::std::unique_ptr<Enumeration<SharedPageDescriptor> >
     PageEnumerationImpl::Clone (void)
 {
-    return ::std::auto_ptr<Enumeration<SharedPageDescriptor> >(
+    return ::std::unique_ptr<Enumeration<SharedPageDescriptor> >(
         new PageEnumerationImpl(mrModel,maPredicate,mnIndex));
 }
 

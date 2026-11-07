@@ -592,7 +592,7 @@ void OApplicationController::getSelectionElementNames(::std::vector< ::rtl::OUSt
 }
 
 // -----------------------------------------------------------------------------
-::std::auto_ptr< OLinkedDocumentsAccess > OApplicationController::getDocumentsAccess( ElementType _eType )
+::std::unique_ptr< OLinkedDocumentsAccess > OApplicationController::getDocumentsAccess( ElementType _eType )
 {
     OSL_ENSURE( ( _eType == E_TABLE ) || ( _eType == E_QUERY ) || ( _eType == E_FORM ) || ( _eType == E_REPORT ),
         "OApplicationController::getDocumentsAccess: only forms and reports are supported here!" );
@@ -606,7 +606,7 @@ void OApplicationController::getSelectionElementNames(::std::vector< ::rtl::OUSt
         OSL_ENSURE( xDocContainer.is(), "OApplicationController::getDocumentsAccess: invalid container!" );
     }
 
-    ::std::auto_ptr< OLinkedDocumentsAccess > pDocuments( new OLinkedDocumentsAccess(
+    ::std::unique_ptr< OLinkedDocumentsAccess > pDocuments( new OLinkedDocumentsAccess(
         getView(), this, getORB(), xDocContainer, xConnection, getDatabaseName()
     ) );
     return pDocuments;

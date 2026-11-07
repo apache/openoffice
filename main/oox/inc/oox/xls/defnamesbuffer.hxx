@@ -152,8 +152,8 @@ private:
     void                implImportBiffFormula();
 
 private:
-    typedef ::std::auto_ptr< StreamDataSequence >   StreamDataSeqPtr;
-    typedef ::std::auto_ptr< BiffInputStreamPos >   BiffStreamPosPtr;
+    typedef ::std::unique_ptr< StreamDataSequence >   StreamDataSeqPtr;
+    typedef ::std::unique_ptr< BiffInputStreamPos >   BiffStreamPosPtr;
 
     ::com::sun::star::uno::Reference< ::com::sun::star::sheet::XNamedRange2 >
                         mxNamedRange;       /// XNamedRange interface of the defined name.

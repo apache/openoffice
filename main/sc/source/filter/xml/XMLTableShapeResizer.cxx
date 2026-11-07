@@ -40,7 +40,7 @@
 #include <vector>
 
 using namespace ::com::sun::star;
-using ::std::auto_ptr;
+using ::std::unique_ptr;
 using ::std::vector;
 using ::rtl::OUString;
 
@@ -88,7 +88,7 @@ void ScMyShapeResizer::CreateChartListener(ScDocument* pDoc,
     if (!pCollection)
         return;
 
-    auto_ptr< vector<ScSharedTokenRef> > pRefTokens(new vector<ScSharedTokenRef>);
+    unique_ptr< vector<ScSharedTokenRef> > pRefTokens(new vector<ScSharedTokenRef>);
     ScRefTokenHelper::compileRangeRepresentation(*pRefTokens, aRangeStr, pDoc);
     if (!pRefTokens->empty())
     {
