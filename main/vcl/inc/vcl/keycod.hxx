@@ -101,6 +101,7 @@ public:
 	KeyFuncType GetFunction() const;
 
     KeyCode&    operator = ( const KeyCode& rKeyCode );
+    KeyCode(const KeyCode&) = default;
 	sal_Bool		operator ==( const KeyCode& rKeyCode ) const;
 	sal_Bool		operator !=( const KeyCode& rKeyCode ) const;
 };

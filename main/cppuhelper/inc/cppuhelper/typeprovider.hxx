@@ -58,6 +58,7 @@ public:
 		SAL_THROW( () )
 		: _aTypes( rCollection._aTypes )
 		{}
+	OTypeCollection& operator=(const OTypeCollection&) = default;
 	OTypeCollection(
 		const ::com::sun::star::uno::Type & rType1,
 		const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > & rAddTypes = ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type >() )

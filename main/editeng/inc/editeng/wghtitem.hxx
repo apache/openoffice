@@ -73,6 +73,7 @@ public:
 			SetValue( rWeight.GetValue() );
 			return *this;
 		}
+	SvxWeightItem(const SvxWeightItem&) = default;
 
 	// enum cast
 	FontWeight				GetWeight() const

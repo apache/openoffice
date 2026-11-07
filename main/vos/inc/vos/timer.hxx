@@ -53,6 +53,7 @@ struct TTimeValue : public TimeValue
 
     TTimeValue(const TTimeValue& rTimeValue)
     { Seconds = rTimeValue.Seconds; Nanosec = rTimeValue.Nanosec; }
+    TTimeValue& operator=(const TTimeValue&) = default;
 
     TTimeValue(const TimeValue& rTimeValue)
     { Seconds = rTimeValue.Seconds; Nanosec = rTimeValue.Nanosec; }

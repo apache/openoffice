@@ -60,6 +60,7 @@ public:
                  const SvxShadowLocation eLoc = SVX_SHADOW_NONE );
 
 	inline SvxShadowItem& operator=( const SvxShadowItem& rFmtShadow );
+	SvxShadowItem(const SvxShadowItem&) = default;
 
 	// "pure virtual Methoden" vom SfxPoolItem
 	virtual int 			 operator==( const SfxPoolItem& ) const;

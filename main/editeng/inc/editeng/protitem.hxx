@@ -55,6 +55,7 @@ public:
 
     inline SvxProtectItem( const sal_uInt16 nId  );
 	inline SvxProtectItem &operator=( const SvxProtectItem &rCpy );
+	SvxProtectItem(const SvxProtectItem&) = default;
 
 	// "pure virtual Methoden" vom SfxPoolItem
 	virtual int 			 operator==( const SfxPoolItem& ) const;

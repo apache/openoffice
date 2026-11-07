@@ -63,6 +63,7 @@ public:
 			SetValue(rShadow.GetValue());
 			return *this;
 		}
+	SvxShadowedItem(const SvxShadowedItem&) = default;
 
 };
 

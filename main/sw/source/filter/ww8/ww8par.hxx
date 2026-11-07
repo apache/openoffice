@@ -470,6 +470,7 @@ namespace sw
         public:
             Position(const SwPosition &rPos);
             Position(const Position &rPos);
+            Position& operator=(const Position&) = default;
             operator SwPosition() const;
 	        SwNodeIndex GetPtNode() { return maPtNode; };
 	        xub_StrLen GetPtCntnt() { return mnPtCntnt; };

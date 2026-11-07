@@ -287,7 +287,7 @@ void SvxAutocorrWordList::DeleteAndDestroy( sal_uInt16 nP, sal_uInt16 nL )
 
 sal_Bool SvxAutocorrWordList::Seek_Entry( const SvxAutocorrWordPtr aE, sal_uInt16* pP ) const
 {
-	register sal_uInt16 nO  = SvxAutocorrWordList_SAR::Count(),
+	sal_uInt16 nO  = SvxAutocorrWordList_SAR::Count(),
 			nM,
 			nU = 0;
 	if( nO > 0 )

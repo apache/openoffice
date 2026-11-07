@@ -116,6 +116,7 @@ public:
 
 	// @@@ public copy assignment, but no copy ctor?
 	inline SwRegisterItem& operator=( const SwRegisterItem& rRegister );
+	SwRegisterItem(const SwRegisterItem&) = default;
 
 	// "pure virtual Methoden" vom SfxPoolItem
 	virtual SfxPoolItem*	Clone( SfxItemPool *pPool = 0 ) const;
@@ -178,6 +179,7 @@ public:
 
 	// @@@ public copy assignment, but no copy ctor?
     inline SwParaConnectBorderItem& operator=( const SwParaConnectBorderItem& rConnect );
+    SwParaConnectBorderItem(const SwParaConnectBorderItem&) = default;
 
     // "pure virtual Methoden" vom SfxPoolItem
     virtual SfxPoolItem*    Clone( SfxItemPool *pPool = 0 ) const;

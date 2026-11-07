@@ -2385,7 +2385,7 @@ void ScInterpreter::ScDecimal()
         {
             double fVal = 0.0;
             int nBase = (int) fBase;
-            register const sal_Unicode* p = aStr.GetBuffer();
+            const sal_Unicode* p = aStr.GetBuffer();
             while ( *p == ' ' || *p == '\t' )
                 p++;        // strip leading white space
             if ( nBase == 16 )

@@ -43,6 +43,7 @@ private:
 public:
     SvxChartColorTable();
     explicit SvxChartColorTable( const SvxChartColorTable & _rSource );
+    SvxChartColorTable& operator=(const SvxChartColorTable&) = default;
 
     // accessors
     size_t size() const;

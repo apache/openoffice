@@ -49,6 +49,7 @@ public:
 
     SvxOpaqueItem( const sal_uInt16 nId , const sal_Bool bOpa = sal_True );
 	inline SvxOpaqueItem &operator=( const SvxOpaqueItem &rCpy );
+	SvxOpaqueItem(const SvxOpaqueItem&) = default;
 
 	// "pure virtual Methoden" vom SfxPoolItem
 	virtual SfxPoolItem*    Clone( SfxItemPool *pPool = 0 ) const;

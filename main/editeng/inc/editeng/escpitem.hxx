@@ -99,6 +99,7 @@ public:
 			nProp = rEsc.GetProp();
 			return *this;
 		}
+	SvxEscapementItem(const SvxEscapementItem&) = default;
 
 	virtual sal_uInt16			GetValueCount() const;
 	virtual String			GetValueTextByPos( sal_uInt16 nPos ) const;

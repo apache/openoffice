@@ -44,6 +44,7 @@ class SwFmtFillOrder: public SfxEnumItem
 public:
 	SwFmtFillOrder( SwFillOrder = ATT_TOP_DOWN );
 	inline SwFmtFillOrder &operator=( const SwFmtFillOrder &rCpy );
+	SwFmtFillOrder(const SwFmtFillOrder&) = default;
 
 	// "pure virtual Methoden" vom SfxPoolItem
 	virtual SfxPoolItem*	Clone( SfxItemPool *pPool = 0 ) const;

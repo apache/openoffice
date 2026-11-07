@@ -81,6 +81,7 @@ public:
 			SetColor( rTextLine.GetColor() );
 			return *this;
 		}
+	SvxTextLineItem(const SvxTextLineItem&) = default;
 
 	// enum cast
 	FontUnderline 			GetLineStyle() const

@@ -71,6 +71,7 @@ public:
 			SetValue( rMap.GetValue() );
 			return *this;
 		}
+	SvxCaseMapItem(const SvxCaseMapItem&) = default;
 
 	// enum cast
 	SvxCaseMap 				GetCaseMap() const

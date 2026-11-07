@@ -58,6 +58,7 @@ public:
 		SetValue( rPropSize.GetValue() );
 		return *this;
 	}
+	SvxPropSizeItem(const SvxPropSizeItem&) = default;
 };
 
 #endif

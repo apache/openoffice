@@ -53,6 +53,7 @@ public:
                 Bottom() = rBorder.Bottom();
                 return *this;
 			}
+    SvBorder(const SvBorder&) = default;
 	SvBorder & operator += ( const SvBorder & rBorder )
 			{
 				Left()   += rBorder.Left();

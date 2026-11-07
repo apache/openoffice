@@ -44,6 +44,7 @@ public:
 	{}
 
 	inline FmInterfaceItem&	 operator=( const FmInterfaceItem &rCpy );
+	FmInterfaceItem(const FmInterfaceItem&) = default;
 
 	// "pure virtual Methoden" vom SfxPoolItem
 	virtual int				operator==( const SfxPoolItem& ) const;

@@ -248,6 +248,7 @@ class InsertPosition
 public:
     InsertPosition (void);
     InsertPosition& operator= (const InsertPosition& rInsertPosition);
+    InsertPosition(const InsertPosition&) = default;
     bool operator== (const InsertPosition& rInsertPosition) const;
     bool operator!= (const InsertPosition& rInsertPosition) const;
 

@@ -57,6 +57,7 @@ public:
 		SetValue( rAuthor.GetValue() );
 		return *this;
 	}
+	SvxPostItAuthorItem(const SvxPostItAuthorItem&) = default;
 };
 
 
@@ -88,6 +89,7 @@ public:
 		SetValue( rDate.GetValue() );
 		return *this;
 	}
+	SvxPostItDateItem(const SvxPostItDateItem&) = default;
 };
 
 
@@ -121,6 +123,7 @@ public:
 		SetValue( rText.GetValue() );
 		return *this;
 	}
+	SvxPostItTextItem(const SvxPostItTextItem&) = default;
 };
 
 

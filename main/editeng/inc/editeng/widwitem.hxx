@@ -64,6 +64,7 @@ public:
 		SetValue( rWidows.GetValue() );
 		return *this;
 	}
+	SvxWidowsItem(const SvxWidowsItem&) = default;
 };
 
 #endif

@@ -63,6 +63,7 @@ private:
 public:
 	OTableIndex() { }
 	OTableIndex( const OTableIndex& _rSource) : aIndexFileName(_rSource.aIndexFileName) { }
+	OTableIndex& operator=(const OTableIndex&) = default;
 	OTableIndex( const String& rFileName ) : aIndexFileName( rFileName ) { }
 
 	void SetIndexFileName( const String& rFileName ) { aIndexFileName = rFileName; }

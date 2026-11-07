@@ -290,6 +290,7 @@ namespace utl
 		/// copy ctor
 		OConfigurationTreeRoot(const OConfigurationTreeRoot& _rSource)
 			:OConfigurationNode(_rSource), m_xCommitter(_rSource.m_xCommitter) { }
+		OConfigurationTreeRoot& operator=(const OConfigurationTreeRoot&) = default;
 
 		/** open a new top-level configuration node
 

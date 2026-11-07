@@ -850,6 +850,7 @@ public:
         mbFirst(r.mbFirst)
     {
     }
+    Tokens2RangeString& operator=(const Tokens2RangeString&) = default;
 
     void operator() (const ScSharedTokenRef& rToken)
     {
@@ -908,6 +909,7 @@ public:
         mbFirst(r.mbFirst)
     {
     }
+    Tokens2RangeStringXML& operator=(const Tokens2RangeStringXML&) = default;
 
     void operator() (const ScSharedTokenRef& rToken)
     {
@@ -1583,6 +1585,7 @@ public:
         mpTabNumList(r.mpTabNumList)
     {
     }
+    InsertTabNumber& operator=(const InsertTabNumber&) = default;
 
     void operator() (const ScSharedTokenRef& pToken) const
     {
@@ -3049,6 +3052,7 @@ public:
 
     AccumulateRangeSize(const AccumulateRangeSize& r) :
         mnCols(r.mnCols), mnRows(r.mnRows) {}
+    AccumulateRangeSize& operator=(const AccumulateRangeSize&) = default;
 
     void operator() (const ScSharedTokenRef& pToken)
     {
@@ -3085,6 +3089,7 @@ public:
         meOrigin(r.meOrigin),
         mnCount(r.mnCount),
         mbColumn(r.mbColumn) {}
+    GenerateLabelStrings& operator=(const GenerateLabelStrings&) = default;
 
     void operator() (const ScSharedTokenRef& pToken)
     {

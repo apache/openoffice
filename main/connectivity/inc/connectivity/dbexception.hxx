@@ -88,6 +88,7 @@ public:
     SQLExceptionInfo( const ::rtl::OUString& _rSimpleErrorMessage );
 
 	SQLExceptionInfo(const SQLExceptionInfo& _rCopySource);
+	SQLExceptionInfo& operator=(const SQLExceptionInfo&) = default;
 
 	SQLExceptionInfo(const ::com::sun::star::sdb::SQLErrorEvent& _rError);
 			// use for events got via XSQLErrorListener::errorOccured

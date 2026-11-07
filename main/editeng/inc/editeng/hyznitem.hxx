@@ -96,6 +96,7 @@ public:
 		nMaxHyphens = rNew.GetMaxHyphens();
 		return *this;
 	}
+	SvxHyphenZoneItem(const SvxHyphenZoneItem&) = default;
 };
 
 #endif

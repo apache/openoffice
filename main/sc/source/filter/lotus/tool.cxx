@@ -538,14 +538,14 @@ void RangeNameBufferWK3::Add( const String& rOrgName, const ScComplexRefData& rC
 	String				aScName( rOrgName );
     ScfTools::ConvertToScDefinedName( aScName );
 
-	register ENTRY*		pInsert = new ENTRY( rOrgName, aScName, rCRD );
+	ENTRY*		pInsert = new ENTRY( rOrgName, aScName, rCRD );
 
 	List::Insert( pInsert, CONTAINER_APPEND );
 
 	pScTokenArray->Clear();
 
-	register const ScSingleRefData&	rRef1 = rCRD.Ref1;
-	register const ScSingleRefData&	rRef2 = rCRD.Ref2;
+	const ScSingleRefData&	rRef1 = rCRD.Ref1;
+	const ScSingleRefData&	rRef2 = rCRD.Ref2;
 
 	if( rRef1.nCol == rRef2.nCol && rRef1.nRow == rRef2.nRow && rRef1.nTab == rRef2.nTab )
 	{

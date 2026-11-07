@@ -48,6 +48,7 @@ public:
     inline SvxFmtKeepItem( const sal_Bool bKeep /*= sal_False*/,
                            const sal_uInt16 _nWhich  );
 	inline SvxFmtKeepItem& operator=( const SvxFmtKeepItem& rSplit );
+	SvxFmtKeepItem(const SvxFmtKeepItem&) = default;
 
 	// "pure virtual Methoden" vom SfxPoolItem
 	virtual SfxPoolItem*	Clone( SfxItemPool *pPool = 0 ) const;

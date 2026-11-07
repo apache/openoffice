@@ -65,6 +65,7 @@ public:
 		eFrom = rColor.GetCharSet();
 		return *this;
 	}
+	SvxCharSetColorItem(const SvxCharSetColorItem&) = default;
 };
 
 #endif
