@@ -2988,13 +2988,7 @@ dnl ===================================================================
 dnl Check if stdc headers are available excluding Windows.
 dnl ===================================================================
 if test "$_os" != "WINNT" -o "$WITH_MINGWIN" = "yes"; then
-   m4_warn([obsolete],
-[The preprocessor macro 'STDC_HEADERS' is obsolete.
-  Except in unusual embedded environments, you can safely include all
-  C89 headers unconditionally.])dnl
-# Autoupdate added the next two lines to ensure that your configure
-# script's behavior did not change.  They are probably safe to remove.
-AC_CHECK_INCLUDES_DEFAULT
+   AC_CHECK_INCLUDES_DEFAULT
 AC_PROG_EGREP
 
 fi
@@ -3021,7 +3015,7 @@ fi
 AC_CHECK_SIZEOF(long)
 SIZEOF_LONG=$ac_cv_sizeof_long
 AC_SUBST(SIZEOF_LONG)
-AC_C_BIGENDIAN
+AC_C_BIGENDIAN([], [], [], [:])
 WORDS_BIGENDIAN=$ac_cv_c_bigendian
 AC_SUBST(WORDS_BIGENDIAN)
 
