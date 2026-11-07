@@ -524,7 +524,7 @@ void VCLXAccessibleList::UpdateSelection (::rtl::OUString sTextOfSelectedItem)
 }
 // -----------------------------------------------------------------------------
 
-void VCLXAccessibleList::adjustEntriesIndexInParent(ListItems::iterator& _aBegin,::std::mem_fun_t<bool,VCLXAccessibleListItem>& _rMemFun)
+void VCLXAccessibleList::adjustEntriesIndexInParent(ListItems::iterator& _aBegin,::std::function<bool(VCLXAccessibleListItem*)>& _rMemFun)
 {
 	ListItems::iterator aIter = _aBegin;
 	ListItems::iterator aEnd = m_aAccessibleChildren.end();

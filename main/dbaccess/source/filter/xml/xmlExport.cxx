@@ -1088,7 +1088,7 @@ void ODBExport::exportQueries(sal_Bool _bExportContext)
 		    Reference< XNameAccess > xCollection = xSup->getQueryDefinitions();
 		    if ( xCollection.is() && xCollection->hasElements() )
 		    {
-			    ::std::auto_ptr< ::comphelper::mem_fun1_t<ODBExport,XPropertySet* > > pMemFunc;
+			    ::std::unique_ptr< ::comphelper::mem_fun1_t<ODBExport,XPropertySet* > > pMemFunc;
 			    if ( _bExportContext )
 				    pMemFunc.reset( new ::comphelper::mem_fun1_t<ODBExport,XPropertySet* >(&ODBExport::exportQuery) );
 			    else
@@ -1108,7 +1108,7 @@ void ODBExport::exportTables(sal_Bool _bExportContext)
 		Reference< XNameAccess > xCollection = xSup->getTables();
 		if ( xCollection.is() && xCollection->hasElements() )
 		{
-			::std::auto_ptr< ::comphelper::mem_fun1_t<ODBExport,XPropertySet* > > pMemFunc;
+			::std::unique_ptr< ::comphelper::mem_fun1_t<ODBExport,XPropertySet* > > pMemFunc;
 			if ( _bExportContext )
 				pMemFunc.reset( new ::comphelper::mem_fun1_t<ODBExport,XPropertySet* >(&ODBExport::exportTable) );
 			else

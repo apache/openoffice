@@ -200,8 +200,8 @@ template< class MapType >
     findValueInMap( const MapType & rMap, const typename MapType::mapped_type & rData )
 {
     return ::std::find_if( rMap.begin(), rMap.end(),
-                           ::std::compose1( ::std::bind2nd(
-                                                ::std::equal_to< typename MapType::mapped_type >(),
+                           ::std::compose1( ::std::bind(
+                                                ::std::equal_to< typename MapType::mapped_type >(), ::std::placeholders::_1,
                                                 rData ),
                                             ::std::select2nd< typename MapType::value_type >()));
 }

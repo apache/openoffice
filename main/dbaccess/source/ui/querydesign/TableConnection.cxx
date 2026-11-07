@@ -42,6 +42,7 @@
 #include "ConnectionLineAccess.hxx"
 #endif
 #include <algorithm>
+#include <functional>
 
 
 using namespace dbaui;
@@ -146,7 +147,7 @@ namespace dbaui
 	bool OTableConnection::RecalcLines()
 	{
 		// call RecalcLines on each line
-		::std::for_each(m_vConnLine.begin(),m_vConnLine.end(),::std::mem_fun(&OConnectionLine::RecalcLine));
+		::std::for_each(m_vConnLine.begin(),m_vConnLine.end(),::std::mem_fn(&OConnectionLine::RecalcLine));
 		return true;
 	}
 	//------------------------------------------------------------------------
@@ -193,7 +194,7 @@ namespace dbaui
 		// check if the point hit our line
 		::std::vector<OConnectionLine*>::const_iterator aIter = ::std::find_if(m_vConnLine.begin(),
 																		 m_vConnLine.end(),
-																		 ::std::bind2nd(TConnectionLineCheckHitFunctor(),rMousePos));
+																		 ::std::bind(TConnectionLineCheckHitFunctor(), ::std::placeholders::_1,rMousePos));
 		return aIter != m_vConnLine.end();
 	}
 

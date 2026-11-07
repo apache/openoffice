@@ -134,6 +134,7 @@
 #include <rtl/logfile.hxx>
 
 #include <memory>
+#include <functional>
 
 using namespace ::com::sun::star::uno;
 using namespace ::com::sun::star::awt;
@@ -286,7 +287,7 @@ Sequence< Type > SAL_CALL SbaTableQueryBrowser::getTypes(  )
             aTypes.getConstArray(),
             aTypes.getConstArray() + aTypes.getLength(),
             aStrippedTypes.getArray(),
-            ::std::bind2nd( ::std::equal_to< Type >(), XScriptInvocationContext::static_type() )
+            ::std::bind( ::std::equal_to< Type >(), ::std::placeholders::_1, XScriptInvocationContext::static_type() )
         );
         aTypes = aStrippedTypes;
     }

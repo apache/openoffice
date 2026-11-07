@@ -51,6 +51,7 @@
 #include <tools/diagnose_ex.h>
 #include <unotools/sharedunocomponent.hxx>
 #include <comphelper/configurationhelper.hxx>
+#include <functional>
 
 //.........................................................................
 namespace dbtools
@@ -618,7 +619,7 @@ sal_Bool isDataSourcePropertyEnabled(const Reference<XInterface>& _xProp,const :
 			xProp->getPropertyValue(::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("Info"))) >>= aInfo;
 			const PropertyValue* pValue =::std::find_if(aInfo.getConstArray(),
 												aInfo.getConstArray() + aInfo.getLength(),
-												::std::bind2nd(TPropertyValueEqualFunctor(),_sProperty));
+												::std::bind(TPropertyValueEqualFunctor(), ::std::placeholders::_1,_sProperty));
 			if ( pValue && pValue != (aInfo.getConstArray() + aInfo.getLength()) )
 				pValue->Value >>= bEnabled;
 		}

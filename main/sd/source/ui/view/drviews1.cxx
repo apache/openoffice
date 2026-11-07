@@ -944,7 +944,7 @@ sal_Bool DrawViewShell::SwitchPage(sal_uInt16 nSelectedPage)
         // Switching the current page while a Paint is being executed is
         // dangerous.  So, post it for later execution and return.
         maAsynchronousSwitchPageCall.Post(::boost::bind(
-            ::std::mem_fun(&DrawViewShell::SwitchPage),
+            ::std::mem_fn(&DrawViewShell::SwitchPage),
             this,
             nSelectedPage));
         return sal_False;

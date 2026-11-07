@@ -419,11 +419,11 @@ namespace frm
         const ::rtl::OUString* pEndPos   = _rPropertyNames.getConstArray() + _rPropertyNames.getLength();
         const ::rtl::OUString* pSelectedItemsPos = ::std::find_if(
             pStartPos, pEndPos,
-             ::std::bind2nd( ::std::equal_to< ::rtl::OUString >(), PROPERTY_SELECT_SEQ )
+             ::std::bind( ::std::equal_to< ::rtl::OUString >(), ::std::placeholders::_1, static_cast< ::rtl::OUString >( PROPERTY_SELECT_SEQ ) )
         );
         const ::rtl::OUString* pStringItemListPos = ::std::find_if(
             pStartPos, pEndPos,
-             ::std::bind2nd( ::std::equal_to< ::rtl::OUString >(), PROPERTY_STRINGITEMLIST )
+             ::std::bind( ::std::equal_to< ::rtl::OUString >(), ::std::placeholders::_1, static_cast< ::rtl::OUString >( PROPERTY_STRINGITEMLIST ) )
         );
         if ( ( pSelectedItemsPos != pEndPos ) && ( pStringItemListPos != pEndPos ) )
         {

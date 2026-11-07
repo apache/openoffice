@@ -40,6 +40,7 @@
 #include <ndtxt.hxx>
 #include <poolfmt.hxx>
 #include <ftninfo.hxx>
+#include <functional>
 
 /*********************** SwFtnInfo ***************************/
 
@@ -293,14 +294,14 @@ void SwDoc::SetFtnInfo(const SwFtnInfo& rInfo)
 			std::set<SwRootFrm*> aAllLayouts = GetAllLayouts();//swmod 080304
 			if ( bFtnPos )
 				//pTmpRoot->RemoveFtns();
-				std::for_each( aAllLayouts.begin(), aAllLayouts.end(),std::mem_fun(&SwRootFrm::AllRemoveFtns));//swmod 080305
+				std::for_each( aAllLayouts.begin(), aAllLayouts.end(),std::mem_fn(&SwRootFrm::AllRemoveFtns));//swmod 080305
 			else
 			{
 				//pTmpRoot->UpdateFtnNums();
-				std::for_each( aAllLayouts.begin(), aAllLayouts.end(),std::mem_fun(&SwRootFrm::UpdateFtnNums));//swmod 080304
+				std::for_each( aAllLayouts.begin(), aAllLayouts.end(),std::mem_fn(&SwRootFrm::UpdateFtnNums));//swmod 080304
 				if ( bFtnDesc )
 					//pTmpRoot->CheckFtnPageDescs( FALSE );
-					std::for_each( aAllLayouts.begin(), aAllLayouts.end(),std::bind2nd(std::mem_fun(&SwRootFrm::CheckFtnPageDescs), sal_False));//swmod 080304
+					std::for_each( aAllLayouts.begin(), aAllLayouts.end(),std::bind(std::mem_fn(&SwRootFrm::CheckFtnPageDescs), std::placeholders::_1, sal_False));//swmod 080304
 				if ( bExtra )
 				{
 					//Fuer die Benachrichtung bezueglich ErgoSum usw. sparen wir uns
@@ -370,7 +371,7 @@ void SwDoc::SetEndNoteInfo(const SwEndNoteInfo& rInfo)
 				//pTmpRoot->CheckFtnPageDescs( TRUE );
 			{
 				std::set<SwRootFrm*> aAllLayouts = GetAllLayouts();
-			    std::for_each( aAllLayouts.begin(), aAllLayouts.end(),std::bind2nd(std::mem_fun(&SwRootFrm::CheckFtnPageDescs), sal_True));//swmod 080304
+			    std::for_each( aAllLayouts.begin(), aAllLayouts.end(),std::bind(std::mem_fn(&SwRootFrm::CheckFtnPageDescs), std::placeholders::_1, sal_True));//swmod 080304
 			}
 			if ( bExtra )
 			{
@@ -512,7 +513,7 @@ bool SwDoc::SetCurFtn( const SwPaM& rPam, const String& rNumStr,
 			//
 		{
 			std::set<SwRootFrm*> aAllLayouts = GetAllLayouts();
-			std::for_each( aAllLayouts.begin(), aAllLayouts.end(),std::mem_fun(&SwRootFrm::UpdateFtnNums));
+			std::for_each( aAllLayouts.begin(), aAllLayouts.end(),std::mem_fn(&SwRootFrm::UpdateFtnNums));
 		}	//swmod 080304pTmpRoot->UpdateFtnNums();	//swmod 080219
         SetModified();
 	}

@@ -55,6 +55,7 @@
 // --> OD 2008-02-19 #refactorlists#
 #include <list.hxx>
 #include <algorithm>
+#include <functional>
 // <--
 // --> OD 2008-06-06 #i89178#
 #include <unotools/saveopt.hxx>
@@ -1024,7 +1025,7 @@ void SwNumRule::SetInvalidRule(sal_Bool bFlag)
             // <--
         }
         std::for_each( aLists.begin(), aLists.end(),
-                       std::mem_fun( &SwList::InvalidateListTree ) );
+                       std::mem_fn( &SwList::InvalidateListTree ) );
         // <--
     }
 
@@ -1207,7 +1208,7 @@ void SwNumRule::Validate()
         aLists.insert( pTxtNode->GetDoc()->getListByName( pTxtNode->GetListId() ) );
     }
     std::for_each( aLists.begin(), aLists.end(),
-                   std::mem_fun( &SwList::ValidateListTree ) );
+                   std::mem_fn( &SwList::ValidateListTree ) );
     // <--
 
     SetInvalidRule(sal_False);

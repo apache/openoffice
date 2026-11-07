@@ -123,6 +123,7 @@
 #include "switerator.hxx"
 #include <layouter.hxx>
 #include <drawdoc.hxx>
+#include <functional>
 
 using namespace ::com::sun::star;
 using ::rtl::OUString;
@@ -383,7 +384,7 @@ void SwDoc::setForbiddenCharacters(/*[in]*/ sal_uInt16 nLang,
     {
         pTmpRoot->StartAllAction();
 		std::set<SwRootFrm*> aAllLayouts = GetAllLayouts();
-		std::for_each( aAllLayouts.begin(), aAllLayouts.end(), std::bind2nd(std::mem_fun(&SwRootFrm::InvalidateAllCntnt), INV_SIZE));
+		std::for_each( aAllLayouts.begin(), aAllLayouts.end(), std::bind(std::mem_fn(&SwRootFrm::InvalidateAllCntnt), std::placeholders::_1, INV_SIZE));
         pTmpRoot->EndAllAction();
     }//swmod 080310
     SetModified();
@@ -454,7 +455,7 @@ void SwDoc::setCharacterCompressionType( /*[in]*/SwCharCompressType n )
         {
 			pTmpRoot->StartAllAction();
 			std::set<SwRootFrm*> aAllLayouts = GetAllLayouts();
-			std::for_each( aAllLayouts.begin(), aAllLayouts.end(), std::bind2nd(std::mem_fun(&SwRootFrm::InvalidateAllCntnt), INV_SIZE));
+			std::for_each( aAllLayouts.begin(), aAllLayouts.end(), std::bind(std::mem_fn(&SwRootFrm::InvalidateAllCntnt), std::placeholders::_1, INV_SIZE));
 			pTmpRoot->EndAllAction();
 		}//swmod 080310
         SetModified();
@@ -2058,14 +2059,14 @@ void SwDoc::SpellItAgainSam( sal_Bool bInvalid, sal_Bool bOnlyWrong, sal_Bool bS
 	ASSERT( GetCurrentLayout(), "SpellAgain: Where's my RootFrm?" );
 	if( bInvalid )
 	{
-		std::for_each( aAllLayouts.begin(), aAllLayouts.end(),std::bind2nd(std::mem_fun(&SwRootFrm::AllInvalidateSmartTagsOrSpelling),bSmartTags));//swmod 080305
-		std::for_each( aAllLayouts.begin(), aAllLayouts.end(),std::bind2nd(std::mem_fun(&SwRootFrm::SetNeedGrammarCheck), true) );
+		std::for_each( aAllLayouts.begin(), aAllLayouts.end(),std::bind(std::mem_fn(&SwRootFrm::AllInvalidateSmartTagsOrSpelling), std::placeholders::_1,bSmartTags));//swmod 080305
+		std::for_each( aAllLayouts.begin(), aAllLayouts.end(),std::bind(std::mem_fn(&SwRootFrm::SetNeedGrammarCheck), std::placeholders::_1, true) );
 		if ( bSmartTags )
 			GetNodes().ForEach( lcl_CheckSmartTagsAgain, &bOnlyWrong );
 		GetNodes().ForEach( lcl_SpellAndGrammarAgain, &bOnlyWrong );
 	}
 
-	std::for_each( aAllLayouts.begin(), aAllLayouts.end(),std::mem_fun(&SwRootFrm::SetIdleFlags));//swmod 080307
+	std::for_each( aAllLayouts.begin(), aAllLayouts.end(),std::mem_fn(&SwRootFrm::SetIdleFlags));//swmod 080307
 }
 
 void SwDoc::InvalidateAutoCompleteFlag()
@@ -2074,14 +2075,14 @@ void SwDoc::InvalidateAutoCompleteFlag()
 	if( pTmpRoot )
 	{
 		std::set<SwRootFrm*> aAllLayouts = GetAllLayouts();
-		std::for_each( aAllLayouts.begin(), aAllLayouts.end(),std::mem_fun(&SwRootFrm::AllInvalidateAutoCompleteWords));//swmod 080305
+		std::for_each( aAllLayouts.begin(), aAllLayouts.end(),std::mem_fn(&SwRootFrm::AllInvalidateAutoCompleteWords));//swmod 080305
 		for( sal_uLong nNd = 1, nCnt = GetNodes().Count(); nNd < nCnt; ++nNd )
         {
             SwTxtNode* pTxtNode = GetNodes()[ nNd ]->GetTxtNode();
             if ( pTxtNode ) pTxtNode->SetAutoCompleteWordDirty( true );
         }
 
-		std::for_each( aAllLayouts.begin(), aAllLayouts.end(),std::mem_fun(&SwRootFrm::SetIdleFlags));//swmod 080228
+		std::for_each( aAllLayouts.begin(), aAllLayouts.end(),std::mem_fn(&SwRootFrm::SetIdleFlags));//swmod 080228
 	}	//swmod 080219
 }
 

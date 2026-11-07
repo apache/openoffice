@@ -289,7 +289,7 @@ WW8SwAttrIter::WW8SwAttrIter(MSWordExportBase& rWr, const SwTxtNode& rTxtNd) :
     if (rWr.HackIsWW8OrHigher() && rWr.bInWriteEscher)
     {
         std::for_each(maFlyFrms.begin(), maFlyFrms.end(),
-            std::mem_fun_ref(&sw::Frame::ForceTreatAsInline));
+            std::mem_fn(&sw::Frame::ForceTreatAsInline));
     }
 
     maFlyIter = maFlyFrms.begin();

@@ -113,7 +113,7 @@ sal_Bool ORowSetImportExport::Read()
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "misc", "Ocke.Janssen@sun.com", "ORowSetImportExport::Read" );
 	// check if there is any column to copy
 	if(::std::find_if(m_aColumnMapping.begin(),m_aColumnMapping.end(),
-						::std::bind2nd(::std::greater<sal_Int32>(),0)) == m_aColumnMapping.end())
+						::std::bind(::std::greater<sal_Int32>(), ::std::placeholders::_1,0)) == m_aColumnMapping.end())
 		return sal_False;
 	sal_Int32 nCurrentRow = 0;
 	sal_Int32 nRowFilterIndex = 0;

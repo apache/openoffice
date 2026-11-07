@@ -111,6 +111,7 @@
 #include "dlgpage.hxx"
 #include "helpids.hrc"
 #include <toolkit/helper/convert.hxx>
+#include <functional>
 
 #define DATA_OR_FORMULA     0
 #define FUNCTION            1
@@ -926,7 +927,7 @@ beans::Property GeometryHandler::getProperty(const ::rtl::OUString & PropertyNam
     uno::Sequence< beans::Property > aProps = getSupportedProperties();
     const beans::Property* pIter = aProps.getConstArray();
     const beans::Property* pEnd  = pIter + aProps.getLength();
-    const beans::Property* pFind = ::std::find_if(pIter,pEnd,::std::bind2nd(PropertyCompare(),boost::cref(PropertyName)));
+    const beans::Property* pFind = ::std::find_if(pIter,pEnd,::std::bind(PropertyCompare(), ::std::placeholders::_1,boost::cref(PropertyName)));
     if ( pFind == pEnd )
         return beans::Property();
     return *pFind;
@@ -1316,7 +1317,7 @@ uno::Sequence< beans::Property > SAL_CALL GeometryHandler::getSupportedPropertie
     {
         const beans::Property* pIter = aSeq.getConstArray();
         const beans::Property* pEnd  = pIter + aSeq.getLength();
-        const beans::Property* pFind = ::std::find_if(pIter,pEnd,::std::bind2nd(PropertyCompare(),boost::cref(pIncludeProperties[i])));
+        const beans::Property* pFind = ::std::find_if(pIter,pEnd,::std::bind(PropertyCompare(), ::std::placeholders::_1,boost::cref(pIncludeProperties[i])));
         if ( pFind != pEnd )
         {
             // special case for controls which contain a data field
