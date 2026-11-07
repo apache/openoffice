@@ -65,6 +65,8 @@
 #include <boost/bind.hpp>
 #include <boost/function.hpp>
 #include <boost/scoped_array.hpp>
+#include <memory>
+#include <functional>
 
 
 using namespace css;
@@ -113,22 +115,25 @@ SidebarController::SidebarController (
       mpTabBar(new TabBar(
               mpParentWindow,
               rxFrame,
-              ::boost::bind(&SidebarController::OpenThenSwitchToDeck, this, _1),
-              ::boost::bind(&SidebarController::ShowPopupMenu, this, _1,_2))),
+              [this](const ::rtl::OUString& rsDeckId) { OpenThenSwitchToDeck(rsDeckId); },
+              [this](const Rectangle& rButtonBox,
+                     const ::std::vector<TabBar::DeckMenuData>& rMenuData) {
+                  ShowPopupMenu(rButtonBox, rMenuData);
+              })),
       mxFrame(rxFrame),
       maCurrentContext(OUString(), OUString()),
       maRequestedContext(),
       mnRequestedForceFlags(SwitchFlag_NoForce),
       msCurrentDeckId(gsDefaultDeckId),
       msCurrentDeckTitle(),
-      maPropertyChangeForwarder(::boost::bind(&SidebarController::BroadcastPropertyChange, this)),
-      maContextChangeUpdate(::boost::bind(&SidebarController::UpdateConfigurations, this)),
+      maPropertyChangeForwarder(std::bind(&SidebarController::BroadcastPropertyChange, this)),
+      maContextChangeUpdate(std::bind(&SidebarController::UpdateConfigurations, this)),
       maAsynchronousDeckSwitch(),
       mbIsDeckRequestedOpen(),
       mbIsDeckOpen(),
       mbCanDeckBeOpened(true),
       mnSavedSidebarWidth(pParentWindow->GetSizePixel().Width()),
-      maFocusManager(::boost::bind(&SidebarController::ShowPanel, this, _1)),
+      maFocusManager(std::bind(&SidebarController::ShowPanel, this, std::placeholders::_1)),
       mxReadOnlyModeDispatch(),
       mbIsDocumentReadOnly(false),
       mpSplitWindow(NULL),
@@ -496,7 +501,7 @@ void SidebarController::RequestSwitchToDeck (
 {
     maContextChangeUpdate.CancelRequest();
     maAsynchronousDeckSwitch.RequestCall(
-        ::boost::bind(&SidebarController::OpenThenSwitchToDeck, this, rsDeckId));
+        [this, rsDeckId]() { OpenThenSwitchToDeck(rsDeckId); });
 }
 
 
@@ -578,7 +583,7 @@ void SidebarController::SwitchToDeck (
             new Deck(
                 rDeckDescriptor,
                 mpParentWindow,
-                ::boost::bind(&SidebarController::RequestCloseDeck, this)));
+                [this]() { RequestCloseDeck(); }));
         msCurrentDeckTitle = rDeckDescriptor.msTitle;
 
     }
@@ -623,7 +628,9 @@ void SidebarController::SwitchToDeck (
             iPanel = ::std::find_if(
                 rCurrentPanels.begin(),
                 rCurrentPanels.end(),
-                ::boost::bind(&Panel::HasIdPredicate, _1, ::boost::cref(rPanelContexDescriptor.msId)));
+                [&](const SharedPanel& rPanel) {
+                    return rPanel->HasIdPredicate(rPanelContexDescriptor.msId);
+                });
         }
         if (iPanel != rCurrentPanels.end())
         {
@@ -700,8 +707,8 @@ SharedPanel SidebarController::CreatePanel (
         *pPanelDescriptor,
         pParentWindow,
         bIsInitiallyExpanded,
-        ::boost::bind(&Deck::RequestLayout, mpCurrentDeck.get()),
-        ::boost::bind(&SidebarController::GetCurrentContext, this)));
+        [this]() { mpCurrentDeck->RequestLayout(); },
+        [this]() { return GetCurrentContext(); }));
 
     // Create the XUIElement.
     Reference<ui::XUIElement> xUIElement (CreateUIElement(
@@ -847,7 +854,7 @@ void SidebarController::ShowPopupMenu (
     const Rectangle& rButtonBox,
     const ::std::vector<TabBar::DeckMenuData>& rMenuData) const
 {
-    ::boost::shared_ptr<PopupMenu> pMenu = CreatePopupMenu(rMenuData);
+    ::std::shared_ptr<PopupMenu> pMenu = CreatePopupMenu(rMenuData);
     pMenu->SetSelectHdl(LINK(this, SidebarController, OnMenuItemSelected));
 
     // pass toolbox button rect so the menu can stay open on button up
@@ -878,11 +885,11 @@ void SidebarController::ShowDetailMenu (const ::rtl::OUString& rsMenuCommand) co
 
 
 
-::boost::shared_ptr<PopupMenu> SidebarController::CreatePopupMenu (
+::std::shared_ptr<PopupMenu> SidebarController::CreatePopupMenu (
     const ::std::vector<TabBar::DeckMenuData>& rMenuData) const
 {
     // Create the top level popup menu.
-    ::boost::shared_ptr<PopupMenu> pMenu (new PopupMenu());
+    ::std::shared_ptr<PopupMenu> pMenu (new PopupMenu());
     FloatingWindow* pMenuWindow = dynamic_cast<FloatingWindow*>(pMenu->GetWindow());
     if (pMenuWindow != NULL)
     {

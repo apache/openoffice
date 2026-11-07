@@ -75,7 +75,7 @@ ODbAdminDialog::ODbAdminDialog(Window* _pParent
 {
     DBG_CTOR(ODbAdminDialog,NULL);
 
-	m_pImpl = ::std::unique_ptr<ODbDataSourceAdministrationHelper>(new ODbDataSourceAdministrationHelper(_rxORB,this,this));
+	m_pImpl = ::std::make_unique<ODbDataSourceAdministrationHelper>(_rxORB,this,this);
 
     // add the initial tab page
     AddTabPage( m_nMainPageID, String( ModuleRes( STR_PAGETITLE_GENERAL ) ), OConnectionTabPage::Create, NULL );

@@ -142,7 +142,7 @@ namespace
             return lcl_PositionFromCntntNode( pNode, bPosAtEndOfNode );
         }
 
-        return ::std::unique_ptr<SwPosition>(new SwPosition(rOtherPosition));
+        return ::std::make_unique<SwPosition>(rOtherPosition);
     };
 
     static IMark* lcl_getMarkAfter(const IDocumentMarkAccess::container_t& rMarks, const SwPosition& rPos)

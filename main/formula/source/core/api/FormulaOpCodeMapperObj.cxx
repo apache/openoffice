@@ -107,7 +107,7 @@ uno::Sequence< rtl::OUString > SAL_CALL FormulaOpCodeMapperObj::getSupportedServ
 uno::Reference< uno::XInterface > SAL_CALL FormulaOpCodeMapperObj::create(
                 uno::Reference< uno::XComponentContext > const & /*_xContext*/)
 {
-    return static_cast<sheet::XFormulaOpCodeMapper*>(new FormulaOpCodeMapperObj(::std::unique_ptr<FormulaCompiler>(new FormulaCompiler())));
+    return static_cast<sheet::XFormulaOpCodeMapper*>(new FormulaOpCodeMapperObj(::std::make_unique<FormulaCompiler>()));
 }
 // -----------------------------------------------------------------------------
 
