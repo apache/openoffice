@@ -220,7 +220,7 @@ private:
 private:
 	::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > m_xServiceMgr;   // to instantiate own services
     CAsyncEventNotifier				                                               m_aAsyncEventNotifier;
-	std::auto_ptr<CWinFileOpenImpl>	    										   m_pImpl;
+	std::unique_ptr<CWinFileOpenImpl>	    										   m_pImpl;
 };
 
 #endif

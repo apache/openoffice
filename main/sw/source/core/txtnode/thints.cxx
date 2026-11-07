@@ -1019,7 +1019,7 @@ SwTxtAttr* MakeTxtAttr(
         // If the attribute is an auto-style which refers to a pool that is
         // different from rDoc's pool, we have to correct this:
         const StylePool::SfxItemSet_Pointer_t pAutoStyle = static_cast<const SwFmtAutoFmt&>(rAttr).GetStyleHandle();
-        ::std::auto_ptr<const SfxItemSet> pNewSet(
+        ::std::unique_ptr<const SfxItemSet> pNewSet(
                 pAutoStyle->SfxItemSet::Clone( sal_True, &rDoc.GetAttrPool() ));
         SwTxtAttr* pNew = MakeTxtAttr( rDoc, *pNewSet, nStt, nEnd );
         return pNew;
@@ -2147,7 +2147,7 @@ sal_Bool SwTxtNode::GetAttr( SfxItemSet& rSet, xub_StrLen nStt, xub_StrLen nEnd,
 		else							// es ist ein Bereich definiert
 		{
             // --> FME 2007-03-13 #i75299#
-            ::std::auto_ptr< std::vector< SwPoolItemEndPair > > pAttrArr;
+            ::std::unique_ptr< std::vector< SwPoolItemEndPair > > pAttrArr;
             // <--
 
 			const sal_uInt16 coArrSz = static_cast<sal_uInt16>(RES_TXTATR_WITHEND_END) -
@@ -2184,7 +2184,7 @@ sal_Bool SwTxtNode::GetAttr( SfxItemSet& rSet, xub_StrLen nStt, xub_StrLen nEnd,
 				if( bChkInvalid )
 				{
 					// uneindeutig ?
-                    ::std::auto_ptr< SfxItemIter > pItemIter;
+                    ::std::unique_ptr< SfxItemIter > pItemIter;
                     const SfxPoolItem* pItem = 0;
 
                     if ( RES_TXTATR_AUTOFMT == pHt->Which() )

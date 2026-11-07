@@ -72,7 +72,7 @@ OPreparedStatement::OPreparedStatement( OConnection* _pConnection,const ::rtl::O
 			OSQLParser aParser(_pConnection->getDriver()->getORB());
 			::rtl::OUString sErrorMessage;
 			::rtl::OUString sNewSql;
-            ::std::auto_ptr<OSQLParseNode> pNode( aParser.parseTree(sErrorMessage,sql) );
+            ::std::unique_ptr<OSQLParseNode> pNode( aParser.parseTree(sErrorMessage,sql) );
 			if ( pNode.get() )
 			{	// special handling for parameters
 				OSQLParseNode::substituteParameterNames(pNode.get());

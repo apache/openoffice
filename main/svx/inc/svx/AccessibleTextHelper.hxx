@@ -128,7 +128,7 @@ namespace accessibility
 	        model) contained in the given SvxEditSource.
 
         */
-        explicit AccessibleTextHelper( ::std::auto_ptr< SvxEditSource > pEditSource );
+        explicit AccessibleTextHelper( ::std::unique_ptr< SvxEditSource > pEditSource );
         virtual ~AccessibleTextHelper();
 
     protected:
@@ -189,7 +189,7 @@ namespace accessibility
 	        The new edit source to set. Object ownership is transferred
     	    from the caller to the callee.
         */
-        virtual void SetEditSource( ::std::auto_ptr< SvxEditSource > pEditSource );
+        virtual void SetEditSource( ::std::unique_ptr< SvxEditSource > pEditSource );
 
         /** Set the event source
 
@@ -418,7 +418,7 @@ namespace accessibility
     private:
 
         /// @dyn
-        const std::auto_ptr< AccessibleTextHelper_Impl > mpImpl;
+        const std::unique_ptr< AccessibleTextHelper_Impl > mpImpl;
 
     };
 

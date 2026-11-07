@@ -71,7 +71,7 @@
 
 using namespace com::sun::star;
 using namespace formula;
-using ::std::auto_ptr;
+using ::std::unique_ptr;
 
 #define ADDIN_MAXSTRLEN 256
 
@@ -2113,7 +2113,7 @@ void ScInterpreter::ScDBGet()
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScDBGet" );
     sal_Bool bMissingField = sal_False;
-    auto_ptr<ScDBQueryParamBase> pQueryParam( GetDBParams(bMissingField) );
+    unique_ptr<ScDBQueryParamBase> pQueryParam( GetDBParams(bMissingField) );
     if (!pQueryParam.get())
     {
         // Failed to create query param.

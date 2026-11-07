@@ -52,7 +52,7 @@ class ScXMLTableRowCellContext : public SvXMLImportContext
 	::boost::optional< rtl::OUString > pOUTextContent;
     ::boost::optional< FormulaWithNamespace > pOUFormula;
 	rtl::OUString* pContentValidationName;
-    ::std::auto_ptr< ScXMLAnnotationData > mxAnnotationData;
+    ::std::unique_ptr< ScXMLAnnotationData > mxAnnotationData;
 	ScMyImpDetectiveObjVec*	pDetectiveObjVec;
 	ScMyImpCellRangeSource*	pCellRangeSource;
 	double		fValue;

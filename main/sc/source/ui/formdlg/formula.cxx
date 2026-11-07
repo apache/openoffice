@@ -334,7 +334,7 @@ bool ScFormulaDlg::calculateValue( const String& rStrExp, String& rStrResult )
 {
 	sal_Bool bResult = sal_True;
 
-    ::std::auto_ptr<ScFormulaCell> pFCell( new ScFormulaCell( pDoc, aCursorPos, rStrExp ) );
+    ::std::unique_ptr<ScFormulaCell> pFCell( new ScFormulaCell( pDoc, aCursorPos, rStrExp ) );
 
 	// #35521# HACK! um bei ColRowNames kein #REF! zu bekommen,
 	// wenn ein Name eigentlich als Bereich in die Gesamt-Formel
@@ -654,9 +654,9 @@ table::CellAddress ScFormulaDlg::getReferencePosition() const
     return table::CellAddress(aCursorPos.Tab(),aCursorPos.Col(),aCursorPos.Row());
 }
 
-::std::auto_ptr<formula::FormulaTokenArray> ScFormulaDlg::convertToTokenArray(const uno::Sequence< sheet::FormulaToken >& _aTokenList)
+::std::unique_ptr<formula::FormulaTokenArray> ScFormulaDlg::convertToTokenArray(const uno::Sequence< sheet::FormulaToken >& _aTokenList)
 {
-    ::std::auto_ptr<formula::FormulaTokenArray> pArray(new ScTokenArray());
+    ::std::unique_ptr<formula::FormulaTokenArray> pArray(new ScTokenArray());
     pArray->Fill( _aTokenList, pDoc->GetExternalRefManager());
     return pArray;
 }

@@ -299,7 +299,7 @@ PasswordToOpenModifyDialog::PasswordToOpenModifyDialog(
         bool bIsPasswordToModify ) :
     SfxModalDialog( pParent, CUI_RES( RID_DLG_PASSWORD_TO_OPEN_MODIFY ) )
 {
-    m_pImpl = std::auto_ptr< PasswordToOpenModifyDialog_Impl >(
+    m_pImpl = std::unique_ptr< PasswordToOpenModifyDialog_Impl >(
             new PasswordToOpenModifyDialog_Impl( this, nMinPasswdLen, nMaxPasswdLen, bIsPasswordToModify ) );
 
     FreeResource();

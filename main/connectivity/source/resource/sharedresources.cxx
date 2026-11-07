@@ -59,7 +59,7 @@ namespace connectivity
         static  oslInterlockedCount     s_nClients;
 
     private:
-        ::std::auto_ptr< ::comphelper::OfficeResourceBundle >
+        ::std::unique_ptr< ::comphelper::OfficeResourceBundle >
                                         m_pResourceBundle;
 
     public:

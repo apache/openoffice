@@ -2491,7 +2491,7 @@ namespace osl_FileStatus
 			createTestDirectory( aTmpName3 );
 			createTestFile( aTmpName4 );
 
-			::std::auto_ptr<Directory> pDir( new Directory( aTmpName3 ) );
+			::std::unique_ptr<Directory> pDir( new Directory( aTmpName3 ) );
 			nError1 = pDir->open( );
 			ASSERT_TRUE( ::osl::FileBase::E_None == nError1 );
 			nError1 = pDir->getNextItem( rItem, 0 );
@@ -2752,7 +2752,7 @@ namespace osl_FileStatus
 			createTestFile( aTmpName3, aTmpName2 );
 			createTestDirectory( aTmpName3, aTmpName1 );
 
-			::std::auto_ptr<Directory> pDir( new Directory( aTmpName3 ) );
+			::std::unique_ptr<Directory> pDir( new Directory( aTmpName3 ) );
 			nError1 = pDir->open( );
 			ASSERT_TRUE(::osl::FileBase::E_None == nError1) << "open aTmpName3 failed!";
 			//getNextItem can not assure which item retrieved

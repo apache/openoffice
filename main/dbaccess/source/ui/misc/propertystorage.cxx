@@ -80,7 +80,7 @@ namespace dbaui
                 // TODO: one could throw an IllegalArgumentException here - finally, this method
                 // is (to be) used from within an XPropertySet::setPropertyValue implementation,
                 // where this would be the appropriate reaction on wrong value types
-                ::std::auto_ptr< ITEMTYPE > pClone( dynamic_cast< ITEMTYPE* >( pTypedItem->Clone() ) );
+                ::std::unique_ptr< ITEMTYPE > pClone( dynamic_cast< ITEMTYPE* >( pTypedItem->Clone() ) );
                 pClone->SetValue( aValue );
                 _rSet.Put( *pClone );
                 return true;

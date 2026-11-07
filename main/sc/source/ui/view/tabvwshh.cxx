@@ -270,11 +270,11 @@ sal_Bool ScTabViewShell::HasAccessibilityObjects()
 
 bool ScTabViewShell::ExecuteRetypePassDlg(ScPasswordHash eDesiredHash)
 {
-    using ::std::auto_ptr;
+    using ::std::unique_ptr;
 
     ScDocument* pDoc = GetViewData()->GetDocument();
 
-    auto_ptr<ScRetypePassDlg> pDlg(new ScRetypePassDlg(GetDialogParent()));
+    unique_ptr<ScRetypePassDlg> pDlg(new ScRetypePassDlg(GetDialogParent()));
     pDlg->SetDataFromDocument(*pDoc);
     pDlg->SetDesiredHash(eDesiredHash);
     if (pDlg->Execute() != RET_OK)

@@ -94,9 +94,9 @@ protected:
     ::cppu::OInterfaceContainerHelper       aFlushListeners;
 
     ConvMap                         aFromLeft;
-    std::auto_ptr< ConvMap >        pFromRight;     // only available for bidirectional conversion dictionaries
+    std::unique_ptr< ConvMap >        pFromRight;     // only available for bidirectional conversion dictionaries
 
-    std::auto_ptr< PropTypeMap >    pConvPropType;
+    std::unique_ptr< PropTypeMap >    pConvPropType;
 
     String          aMainURL;   // URL to file
     rtl::OUString   aName;

@@ -181,7 +181,7 @@ void XclObj::ImplWriteAnchor( const XclExpRoot& /*rRoot*/, const SdrObject* pSdr
     }
     else if( pSdrObj )
     {
-        ::std::auto_ptr< XclExpDffAnchorBase > xDffAnchor( mrEscherEx.CreateDffAnchor( *pSdrObj ) );
+        ::std::unique_ptr< XclExpDffAnchorBase > xDffAnchor( mrEscherEx.CreateDffAnchor( *pSdrObj ) );
         xDffAnchor->WriteDffData( mrEscherEx );
     }
 }
@@ -234,7 +234,7 @@ void XclObj::WriteBody( XclExpStream& rStrm )
 
     // create a substream to be able to create subrecords
     SvMemoryStream aMemStrm;
-    ::std::auto_ptr< XclExpStream > pXclStrm( new XclExpStream( aMemStrm, rStrm.GetRoot() ) );
+    ::std::unique_ptr< XclExpStream > pXclStrm( new XclExpStream( aMemStrm, rStrm.GetRoot() ) );
 
     // write the ftCmo subrecord
     pXclStrm->StartRecord( EXC_ID_OBJCMO, 18 );

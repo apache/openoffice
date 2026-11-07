@@ -77,7 +77,7 @@
 
 #include <memory>
 
-using ::std::auto_ptr;
+using ::std::unique_ptr;
 
 #define IS_EDITMODE() GetViewData()->HasEditView( GetViewData()->GetActivePart() )
 #define IS_AVAILABLE(WhichId,ppItem) \
@@ -1074,7 +1074,7 @@ void ScTabViewShell::Execute( SfxRequest& rReq )
 				if (pProtect && pProtect->isProtectedWithPass())
 				{
 					String aText( ScResId(SCSTR_PASSWORDOPT) );
-					auto_ptr<SfxPasswordDialog> pDlg(new SfxPasswordDialog(GetDialogParent(), &aText));
+					unique_ptr<SfxPasswordDialog> pDlg(new SfxPasswordDialog(GetDialogParent(), &aText));
 					pDlg->SetText( ScResId(SCSTR_UNPROTECTTAB) );
 					pDlg->SetMinLen( 0 );
 					pDlg->SetHelpId( GetStaticInterface()->GetSlot(FID_PROTECT_TABLE)->GetCommand() );
@@ -1100,7 +1100,7 @@ void ScTabViewShell::Execute( SfxRequest& rReq )
 			{
 				// Protect a current sheet.
 
-				auto_ptr<ScTableProtectionDlg> pDlg(new ScTableProtectionDlg(GetDialogParent()));
+				unique_ptr<ScTableProtectionDlg> pDlg(new ScTableProtectionDlg(GetDialogParent()));
 
 				ScTableProtection* pProtect = pDoc->GetTabProtection(nTab);
 				if (pProtect)
@@ -1121,7 +1121,7 @@ void ScTabViewShell::Execute( SfxRequest& rReq )
 				}
 			}
 #else
-			auto_ptr<SfxPasswordDialog> pDlg;
+			unique_ptr<SfxPasswordDialog> pDlg;
 			String				aPassword;
 			sal_Bool				bCancel = sal_False;
 			bool				bNewProtection = ! bOldProtection;

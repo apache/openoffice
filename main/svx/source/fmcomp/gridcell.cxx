@@ -1834,7 +1834,7 @@ String DbPatternField::impl_formatText( const String& _rText )
 String DbPatternField::GetFormatText(const Reference< ::com::sun::star::sdb::XColumn >& _rxField, const Reference< XNumberFormatter >& /*xFormatter*/, Color** /*ppColor*/)
 {
     bool bIsForPaint = _rxField != m_rColumn.GetField();
-    ::std::auto_ptr< ::dbtools::FormattedColumnValue >& rpFormatter = bIsForPaint ? m_pPaintFormatter : m_pValueFormatter;
+    ::std::unique_ptr< ::dbtools::FormattedColumnValue >& rpFormatter = bIsForPaint ? m_pPaintFormatter : m_pValueFormatter;
 
     if ( !rpFormatter.get() )
     {

@@ -344,10 +344,10 @@ namespace svxform
     }
 
 	//----------------------------------------------------------------
-    ::std::auto_ptr< ::dbtools::FormattedColumnValue > DBToolsObjectFactory::createFormattedColumnValue(
+    ::std::unique_ptr< ::dbtools::FormattedColumnValue > DBToolsObjectFactory::createFormattedColumnValue(
         const ::comphelper::ComponentContext& _rContext, const Reference< XRowSet >& _rxRowSet, const Reference< XPropertySet >& _rxColumn )
     {
-        ::std::auto_ptr< ::dbtools::FormattedColumnValue > pValue;
+        ::std::unique_ptr< ::dbtools::FormattedColumnValue > pValue;
 		if ( ensureLoaded() )
             pValue = getFactory()->createFormattedColumnValue( _rContext, _rxRowSet, _rxColumn );
         return pValue;

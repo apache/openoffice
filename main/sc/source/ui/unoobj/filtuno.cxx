@@ -184,7 +184,7 @@ sal_Int16 SAL_CALL ScFilterOptionsObj::execute()
         else
         {
             // HTML import.
-            ::std::auto_ptr<AbstractScTextImportOptionsDlg> pDlg(
+            ::std::unique_ptr<AbstractScTextImportOptionsDlg> pDlg(
                 pFact->CreateScTextImportOptionsDlg(NULL, RID_SCDLG_TEXT_IMPORT_OPTIONS));
 
             if (pDlg->Execute() == RET_OK)

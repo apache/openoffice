@@ -1039,7 +1039,7 @@ IMPL_LINK(ScAccessibleCellTextData, NotifyHdl, EENotify*, aNotify)
 {
     if( aNotify )
     {
-        ::std::auto_ptr< SfxHint > aHint = SvxEditSourceHelper::EENotification2Hint( aNotify );
+        ::std::unique_ptr< SfxHint > aHint = SvxEditSourceHelper::EENotification2Hint( aNotify );
 
         if( aHint.get() )
             GetBroadcaster().Broadcast( *aHint.get() );
@@ -1159,7 +1159,7 @@ IMPL_LINK(ScAccessibleEditObjectTextData, NotifyHdl, EENotify*, aNotify)
 {
     if( aNotify )
     {
-        ::std::auto_ptr< SfxHint > aHint = SvxEditSourceHelper::EENotification2Hint( aNotify );
+        ::std::unique_ptr< SfxHint > aHint = SvxEditSourceHelper::EENotification2Hint( aNotify );
 
         if( aHint.get() )
             GetBroadcaster().Broadcast( *aHint.get() );

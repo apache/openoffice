@@ -222,7 +222,7 @@ void SVGAttributeWriter::AddGradientDef( const Rectangle& rObjRect, const Gradie
                             ( rGradientId = B2UCONST( "Gradient_" ) ) += ::rtl::OUString::valueOf( nCurGradientId++ ) );
 
         {
-            ::std::auto_ptr< SvXMLElementExport >   apGradient;
+            ::std::unique_ptr< SvXMLElementExport >   apGradient;
             ::rtl::OUString                         aColorStr;
 
             if( rGradient.GetStyle() == GRADIENT_LINEAR || rGradient.GetStyle() == GRADIENT_AXIAL )
@@ -791,8 +791,8 @@ void SVGActionWriter::ImplWriteText( const Point& rPos, const String& rText,
 {
 	sal_Int32                               nLen = rText.Len(), i;
     Size                                    aNormSize;
-    ::std::auto_ptr< sal_Int32 >            apTmpArray;
-    ::std::auto_ptr< SvXMLElementExport >	apTransform;
+    ::std::unique_ptr< sal_Int32 >            apTmpArray;
+    ::std::unique_ptr< SvXMLElementExport >	apTransform;
     sal_Int32*                              pDX;
     Point                                   aPos;
     Point                                   aBaseLinePos( rPos );

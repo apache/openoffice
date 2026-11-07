@@ -234,7 +234,7 @@ void SbaTableQueryBrowser::notifyHiContrastChanged()
             }
 
             // the connection to which this entry belongs, if any
-            ::std::auto_ptr< ImageProvider > pImageProvider( getImageProviderFor( pEntryLoop ) );
+            ::std::unique_ptr< ImageProvider > pImageProvider( getImageProviderFor( pEntryLoop ) );
 
             // the images for this entry
             Image aImage, aImageHC;

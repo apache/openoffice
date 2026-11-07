@@ -102,7 +102,7 @@ namespace pcr
     protected:
         Window                      m_aLinesPlayground;
         ScrollBar                   m_aVScroll;
-        ::std::auto_ptr< InspectorHelpWindow >
+        ::std::unique_ptr< InspectorHelpWindow >
                                     m_pHelpWindow;
         ListBoxLines                m_aLines;
         OrderedListBoxLines         m_aOrderedLines;

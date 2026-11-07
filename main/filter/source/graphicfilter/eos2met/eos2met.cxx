@@ -159,7 +159,7 @@ private:
 	sal_uLong				nWrittenBitmaps;  // Anzahl der bereits geschriebenen Bitmaps
 	sal_uLong				nActBitmapPercent; // Wieviel Prozent die naechste Bitmap schon geschrieben ist.
 
-	::std::auto_ptr< VirtualDevice >    apDummyVDev;
+	::std::unique_ptr< VirtualDevice >    apDummyVDev;
 	OutputDevice*                       pCompDev;
 
 	com::sun::star::uno::Reference< com::sun::star::task::XStatusIndicator > xStatusIndicator;

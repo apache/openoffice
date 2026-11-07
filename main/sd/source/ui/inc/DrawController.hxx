@@ -309,7 +309,7 @@ private:
     */
     bool mbDisposing;
 
-    ::std::auto_ptr< ::cppu::IPropertyArrayHelper> mpPropertyArrayHelper;
+    ::std::unique_ptr< ::cppu::IPropertyArrayHelper> mpPropertyArrayHelper;
 
     /** The current sub controller.  May be NULL.
     */

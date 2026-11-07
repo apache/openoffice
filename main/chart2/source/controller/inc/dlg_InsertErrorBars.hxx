@@ -64,7 +64,7 @@ private:
     CancelButton      aBtnCancel;
     HelpButton        aBtnHelp;
 
-    ::std::auto_ptr< ErrorBarResources >    m_apErrorBarResources;
+    ::std::unique_ptr< ErrorBarResources >    m_apErrorBarResources;
 };
 
 //.............................................................................

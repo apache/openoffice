@@ -84,7 +84,7 @@ public:
 
     /** Create and return an exact copy of the called object.
     */
-    virtual ::std::auto_ptr<Enumeration<SharedPageDescriptor> > Clone (void);
+    virtual ::std::unique_ptr<Enumeration<SharedPageDescriptor> > Clone (void);
 
     PageEnumeration& operator= (const PageEnumeration& rEnumeration);
 
@@ -107,12 +107,12 @@ public:
 
 private:
     /// Implementation object.
-    ::std::auto_ptr<Enumeration<SharedPageDescriptor> > mpImpl;
+    ::std::unique_ptr<Enumeration<SharedPageDescriptor> > mpImpl;
 
     /** This constructor expects an implementation object that holds
         the predicate that filters the pages.
     */
-    PageEnumeration (::std::auto_ptr<Enumeration<SharedPageDescriptor> > pImpl);
+    PageEnumeration (::std::unique_ptr<Enumeration<SharedPageDescriptor> > pImpl);
 
     // Default constructor not implemented.
     PageEnumeration (void);

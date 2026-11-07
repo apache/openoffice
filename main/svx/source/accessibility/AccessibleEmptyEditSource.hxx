@@ -81,7 +81,7 @@ namespace accessibility
 
             @dyn
          */
-        std::auto_ptr< SvxEditSource > 	mpEditSource;
+        std::unique_ptr< SvxEditSource > 	mpEditSource;
 
         SdrObject& 						mrObj;
         SdrView& 						mrView;

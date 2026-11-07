@@ -144,7 +144,7 @@ struct SVGShapeDescriptor
     Color                               maShapeLineColor;
     sal_Int32                           mnStrokeWidth;
     SvtGraphicStroke::DashArray         maDashArray;
-    ::std::auto_ptr< Gradient >         mapShapeGradient;
+    ::std::unique_ptr< Gradient >         mapShapeGradient;
     ::rtl::OUString                     maId;
 
     // added support for LineJoin and LineCap
@@ -176,7 +176,7 @@ class SVGActionWriter
 private:
 
 	Stack					                maContextStack;
-    ::std::auto_ptr< SVGShapeDescriptor >   mapCurShape;
+    ::std::unique_ptr< SVGShapeDescriptor >   mapCurShape;
 	SVGExport&								mrExport;
     SVGFontExport&                          mrFontExport;
 	SVGAttributeWriter*                     mpContext;

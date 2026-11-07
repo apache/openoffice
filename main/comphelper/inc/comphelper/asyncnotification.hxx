@@ -111,7 +111,7 @@ namespace comphelper
         friend struct EventNotifierImpl;
 
     private:
-        ::std::auto_ptr< EventNotifierImpl >        m_pImpl;
+        ::std::unique_ptr< EventNotifierImpl >        m_pImpl;
 
     protected:
         // Thread

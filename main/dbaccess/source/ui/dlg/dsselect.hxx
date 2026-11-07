@@ -60,7 +60,7 @@ protected:
 	PushButton		m_aCreateAdabasDB;
 	SfxItemSet*		m_pOutputSet;
 #ifdef HAVE_ODBC_ADMINISTRATION
-    ::std::auto_ptr< OOdbcManagement >
+    ::std::unique_ptr< OOdbcManagement >
                     m_pODBCManagement;
 #endif
 

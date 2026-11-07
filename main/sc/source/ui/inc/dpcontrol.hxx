@@ -349,8 +349,8 @@ private:
     size_t                          mnCurTabStop;
 
     ::std::vector<Member>           maMembers;
-    ::std::auto_ptr<ExtendedData>   mpExtendedData;
-    ::std::auto_ptr<Action>         mpOKAction;
+    ::std::unique_ptr<ExtendedData>   mpExtendedData;
+    ::std::unique_ptr<Action>         mpOKAction;
 
     const Size      maWndSize;  /// hard-coded window size.
     TriState mePrevToggleAllState;

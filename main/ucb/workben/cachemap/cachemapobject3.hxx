@@ -87,10 +87,10 @@ private:
     friend class ObjectContainer3;
         // to access m_aContainerIt, m_nRefCount, Object3(), ~Object3()
 #if defined WNT
-    friend struct std::auto_ptr< Object3 >; // to access ~Object3()
+    friend struct std::default_delete< Object3 >; // to access ~Object3()
         // work around compiler bug...
 #else // WNT
-    friend class std::auto_ptr< Object3 >; // to access ~Object3()
+    friend struct std::default_delete< Object3 >; // to access ~Object3()
 #endif // WNT
 };
 

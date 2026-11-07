@@ -331,7 +331,7 @@ void OutlineViewShell::FuTemporary(SfxRequest &rReq)
 void OutlineViewShell::FuTemporaryModify(SfxRequest &rReq)
 {
 	sal_uInt16 nSId = rReq.GetSlot();
-	std::auto_ptr< OutlineViewModelChangeGuard > aGuard;
+	std::unique_ptr< OutlineViewModelChangeGuard > aGuard;
 	if (nSId != SID_OUTLINE_BULLET && nSId != FN_SVX_SET_BULLET && nSId != FN_SVX_SET_NUMBER)
 	{
 		aGuard.reset( new OutlineViewModelChangeGuard(*pOlView) );

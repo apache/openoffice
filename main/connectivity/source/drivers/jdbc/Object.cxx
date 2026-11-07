@@ -183,14 +183,14 @@ namespace
 
         if ( _pEnvironment->IsInstanceOf( jThrow, java_sql_SQLException_BASE::st_getMyClass() ) )
         {
-            ::std::auto_ptr< java_sql_SQLException_BASE > pException( new java_sql_SQLException_BASE( _pEnvironment, jThrow ) );
+            ::std::unique_ptr< java_sql_SQLException_BASE > pException( new java_sql_SQLException_BASE( _pEnvironment, jThrow ) );
             _out_rException = SQLException( pException->getMessage(), _rxContext,
                 pException->getSQLState(), pException->getErrorCode(), Any() );
             return true;
         }
         else if ( _pEnvironment->IsInstanceOf( jThrow, java_lang_Throwable::st_getMyClass() ) )
         {
-            ::std::auto_ptr< java_lang_Throwable > pThrow( new java_lang_Throwable( _pEnvironment, jThrow ) );
+            ::std::unique_ptr< java_lang_Throwable > pThrow( new java_lang_Throwable( _pEnvironment, jThrow ) );
             ::rtl::OUString sMessage = pThrow->getMessage();
             if ( !sMessage.getLength() )
                 sMessage = pThrow->getLocalizedMessage();

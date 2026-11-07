@@ -1162,7 +1162,7 @@ void SlotManager::DuplicateSelectedSlides (SfxRequest& rRequest)
 
 
 
-void SlotManager::ExecuteCommandAsynchronously (::std::auto_ptr<Command> pCommand)
+void SlotManager::ExecuteCommandAsynchronously (::std::unique_ptr<Command> pCommand)
 {
     // Ownership of command is (implicitly) transferred to the queue.
     maCommandQueue.push(pCommand.get());

@@ -400,7 +400,7 @@ sal_Bool SwTabPortion::PreFormat( SwTxtFormatInfo &rInf )
         // --> OD 2008-06-05 #i89179#
         // tab portion representing the list tab of a list label gets the
         // same font as the corresponding number portion
-        std::auto_ptr< SwFontSave > pSave( 0 );
+        std::unique_ptr< SwFontSave > pSave;
         if ( GetLen() == 0 &&
              rInf.GetLast() && rInf.GetLast()->InNumberGrp() &&
              static_cast<SwNumberPortion*>(rInf.GetLast())->HasFont() )
@@ -590,7 +590,7 @@ void SwTabPortion::Paint( const SwTxtPaintInfo &rInf ) const
     // --> OD 2008-06-05 #i89179#
     // tab portion representing the list tab of a list label gets the
     // same font as the corresponding number portion
-    std::auto_ptr< SwFontSave > pSave( 0 );
+    std::unique_ptr< SwFontSave > pSave;
     if ( GetLen() == 0 )
     {
         const SwLinePortion* pPrevPortion =

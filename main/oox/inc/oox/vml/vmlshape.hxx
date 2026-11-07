@@ -167,8 +167,8 @@ struct ClientData
 struct ShapeModel
 {
     typedef ::std::vector< ::com::sun::star::awt::Point >   PointVector;
-    typedef ::std::auto_ptr< TextBox >                      TextBoxPtr;
-    typedef ::std::auto_ptr< ClientData >                   ClientDataPtr;
+    typedef ::std::unique_ptr< TextBox >                      TextBoxPtr;
+    typedef ::std::unique_ptr< ClientData >                   ClientDataPtr;
 
     ::rtl::OUString     maType;             /// Shape template with default properties.
     PointVector         maPoints;           /// Points for the polyline shape.
@@ -361,7 +361,7 @@ protected:
                             const ::com::sun::star::awt::Rectangle& rShapeRect ) const;
 
 private:
-    typedef ::std::auto_ptr< ShapeContainer > ShapeContainerPtr;
+    typedef ::std::unique_ptr< ShapeContainer > ShapeContainerPtr;
     ShapeContainerPtr   mxChildren;         /// Shapes and templates that are part of this group.
 };
 

@@ -66,7 +66,7 @@ private:
 	::std::vector<Link> maListeners;
 
 	class MasterPageList;
-	::std::auto_ptr<MasterPageList> mpMasterPages;
+	::std::unique_ptr<MasterPageList> mpMasterPages;
 	unsigned long int mnMaxListSize;
 	::boost::shared_ptr<MasterPageContainer> mpContainer;
 

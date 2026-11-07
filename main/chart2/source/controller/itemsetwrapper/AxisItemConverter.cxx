@@ -90,7 +90,7 @@ AxisItemConverter::AxisItemConverter(
     const Reference< chart2::XChartDocument > & xChartDoc,
     ::chart::ExplicitScaleData * pScale /* = NULL */,
     ::chart::ExplicitIncrementData * pIncrement /* = NULL */,
-    ::std::auto_ptr< awt::Size > pRefSize /* = NULL */ ) :
+    ::std::unique_ptr< awt::Size > pRefSize /* = NULL */ ) :
         ItemConverter( rPropertySet, rItemPool ),
         m_xChartDoc( xChartDoc ),
         m_pExplicitScale( NULL ),
@@ -107,7 +107,7 @@ AxisItemConverter::AxisItemConverter(
                                  rPropertySet, rItemPool, rDrawModel,
                                  xNamedPropertyContainerFactory,
                                  GraphicPropertyItemConverter::LINE_PROPERTIES ));
-    m_aConverters.push_back( new CharacterPropertyItemConverter( rPropertySet, rItemPool, pRefSize,
+    m_aConverters.push_back( new CharacterPropertyItemConverter( rPropertySet, rItemPool, std::move(pRefSize),
                                                                  C2U( "ReferencePageSize" ) ));
 
     m_xAxis.set( Reference< chart2::XAxis >( rPropertySet, uno::UNO_QUERY ) );

@@ -77,7 +77,7 @@ namespace dbaccess
         virtual ::sal_Bool SAL_CALL hasElements(  );
 
     private:
-        ::std::auto_ptr< DocumentEvents_Data >  m_pData;
+        ::std::unique_ptr< DocumentEvents_Data >  m_pData;
 	};
 
 //........................................................................

@@ -192,8 +192,8 @@ class InterfaceAttributeImpl : public WeakImplHelper1< XInterfaceAttributeTypeDe
 	sal_Bool							  _bBound;
 	sal_Int32							  _nPosition;
 
-    std::auto_ptr< stoc::registry_tdprovider::FunctionDescription > _getter;
-    std::auto_ptr< stoc::registry_tdprovider::FunctionDescription > _setter;
+    std::unique_ptr< stoc::registry_tdprovider::FunctionDescription > _getter;
+    std::unique_ptr< stoc::registry_tdprovider::FunctionDescription > _setter;
 
 public:
 	InterfaceAttributeImpl(
@@ -203,9 +203,9 @@ public:
         const OUString & rMemberTypeName,
         sal_Bool bReadOnly,
         sal_Bool bBound,
-        std::auto_ptr< stoc::registry_tdprovider::FunctionDescription > &
+        std::unique_ptr< stoc::registry_tdprovider::FunctionDescription > &
             getter,
-        std::auto_ptr< stoc::registry_tdprovider::FunctionDescription > &
+        std::unique_ptr< stoc::registry_tdprovider::FunctionDescription > &
             setter,
         sal_Int32 nPosition )
 		: _xTDMgr( xTDMgr )
@@ -215,8 +215,8 @@ public:
 		, _bReadOnly( bReadOnly )
 		, _bBound( bBound )
 		, _nPosition( nPosition )
-        , _getter( getter )
-        , _setter( setter )
+        , _getter( std::move(getter) )
+        , _setter( std::move(setter) )
 		{
 			g_moduleCount.modCnt.acquire( &g_moduleCount.modCnt );
 		}
@@ -452,9 +452,9 @@ Sequence< Reference< XInterfaceMemberTypeDescription > > InterfaceTypeDescriptio
             typeName.appendAscii(RTL_CONSTASCII_STRINGPARAM("::"));
             typeName.append(name);
             RTFieldAccess flags = reader.getFieldFlags(i);
-            std::auto_ptr< stoc::registry_tdprovider::FunctionDescription >
+            std::unique_ptr< stoc::registry_tdprovider::FunctionDescription >
                 getter;
-            std::auto_ptr< stoc::registry_tdprovider::FunctionDescription >
+            std::unique_ptr< stoc::registry_tdprovider::FunctionDescription >
                 setter;
             for (sal_uInt16 j = 0; j < methodCount; ++j) {
                 if (reader.getMethodName(j) == name) {

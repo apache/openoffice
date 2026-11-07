@@ -43,10 +43,10 @@ struct TitleDialogData
     ::com::sun::star::uno::Sequence< sal_Bool > aPossibilityList;
     ::com::sun::star::uno::Sequence< sal_Bool > aExistenceList;
     ::com::sun::star::uno::Sequence< rtl::OUString > aTextList;
-    ::std::auto_ptr< ReferenceSizeProvider >    apReferenceSizeProvider;
+    ::std::unique_ptr< ReferenceSizeProvider >    apReferenceSizeProvider;
 
-    TitleDialogData( ::std::auto_ptr< ReferenceSizeProvider > apRefSizeProvider =
-                     ::std::auto_ptr< ReferenceSizeProvider >( 0 ));
+    TitleDialogData( ::std::unique_ptr< ReferenceSizeProvider > apRefSizeProvider =
+                     ::std::unique_ptr< ReferenceSizeProvider >());
 
     void readFromModel( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XModel >& xChartModel );
     /* return true if anything has changed;

@@ -203,14 +203,14 @@ template class XMLPropertyBackpatcher<OUString>;
 struct SAL_DLLPRIVATE XMLTextImportHelper::BackpatcherImpl
 {
     /// backpatcher for references to footnotes and endnotes
-    ::std::auto_ptr< XMLPropertyBackpatcher<sal_Int16> >
+    ::std::unique_ptr< XMLPropertyBackpatcher<sal_Int16> >
         m_pFootnoteBackpatcher;
 
     /// backpatchers for references to sequences
-    ::std::auto_ptr< XMLPropertyBackpatcher<sal_Int16> >
+    ::std::unique_ptr< XMLPropertyBackpatcher<sal_Int16> >
         m_pSequenceIdBackpatcher;
 
-    ::std::auto_ptr< XMLPropertyBackpatcher< ::rtl::OUString> >
+    ::std::unique_ptr< XMLPropertyBackpatcher< ::rtl::OUString> >
         m_pSequenceNameBackpatcher;
 
 };

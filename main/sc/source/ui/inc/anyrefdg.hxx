@@ -60,13 +60,13 @@ typedef        formula::RefEdit	ScRefEdit;
 class ScFormulaReferenceHelper
 {
     IAnyRefDialog*      m_pDlg;
-    ::std::auto_ptr<ScFormulaCell>      pRefCell;
-    ::std::auto_ptr<ScCompiler>         pRefComp;
+    ::std::unique_ptr<ScFormulaCell>      pRefCell;
+    ::std::unique_ptr<ScCompiler>         pRefComp;
     formula::RefEdit*    pRefEdit;               // aktives Eingabefeld
     formula::RefButton*  pRefBtn;                // Button dazu
     Window*             m_pWindow;
     SfxBindings*        m_pBindings;
-    ::std::auto_ptr<Accelerator>
+    ::std::unique_ptr<Accelerator>
                         pAccel;                 // fuer Enter/Escape
     sal_Bool*               pHiddenMarks;           // Merkfeld fuer versteckte Controls
     SCTAB               nRefTab;                // used for ShowReference

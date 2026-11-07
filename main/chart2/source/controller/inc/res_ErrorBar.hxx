@@ -127,7 +127,7 @@ private:
 
     Window *             m_pParentWindow;
     Dialog *             m_pParentDialog;
-    ::std::auto_ptr< RangeSelectionHelper >
+    ::std::unique_ptr< RangeSelectionHelper >
                          m_apRangeSelectionHelper;
     Edit *               m_pCurrentRangeChoosingField;
     bool                 m_bHasInternalDataProvider;

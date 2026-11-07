@@ -48,7 +48,7 @@ class ZipFile
 public:
 
 	typedef std::vector<std::string>   Directory_t;
-	typedef std::auto_ptr<Directory_t> DirectoryPtr_t;
+	typedef std::unique_ptr<Directory_t> DirectoryPtr_t;
 	typedef std::vector<char>		   ZipContentBuffer_t;
 
 public:

@@ -162,7 +162,7 @@ namespace connectivity
 	// informations on the current parse action
 		const IParseContext*		m_pContext;
 		OSQLParseNode*				m_pParseTree;	// result from parsing
-        ::std::auto_ptr< OSQLParser_Data >
+        ::std::unique_ptr< OSQLParser_Data >
                                     m_pData;
 		::rtl::OUString						m_sFieldName;	// current field name for a predicate
 		::rtl::OUString						m_sErrorMessage;// current error msg

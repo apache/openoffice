@@ -302,7 +302,7 @@ public:
             this method and that is either released at its end or assigned
             to mpAsynchronousLock in order to be unlocked later.
     */
-    void Update (::std::auto_ptr<LayouterLock> pLayouterLock);
+    void Update (::std::unique_ptr<LayouterLock> pLayouterLock);
 
     class UpdateLockImplementation
     {
@@ -338,9 +338,9 @@ private:
         (final) unlocking  is usually done asynchronously *after* the
         list of requested toolbars is updated.
     */
-    ::std::auto_ptr<LayouterLock> mpSynchronousLayouterLock;
-    ::std::auto_ptr<LayouterLock> mpAsynchronousLayouterLock;
-    ::std::auto_ptr<ViewShellManager::UpdateLock> mpViewShellManagerLock;
+    ::std::unique_ptr<LayouterLock> mpSynchronousLayouterLock;
+    ::std::unique_ptr<LayouterLock> mpAsynchronousLayouterLock;
+    ::std::unique_ptr<ViewShellManager::UpdateLock> mpViewShellManagerLock;
     sal_uLong mnPendingUpdateCall;
     sal_uLong mnPendingSetValidCall;
     ToolBarRules maToolBarRules;
@@ -910,7 +910,7 @@ void ToolBarManager::Implementation::UnlockUpdate (void)
     --mnLockCount;
     if (mnLockCount == 0)
     {
-        Update(mpSynchronousLayouterLock);
+        Update(::std::move(mpSynchronousLayouterLock));
     }
 }
 
@@ -918,7 +918,7 @@ void ToolBarManager::Implementation::UnlockUpdate (void)
 
 
 void ToolBarManager::Implementation::Update (
-    ::std::auto_ptr<LayouterLock> pLocalLayouterLock)
+    ::std::unique_ptr<LayouterLock> pLocalLayouterLock)
 {
     // When the lock is released and there are pending changes to the set of
     // tool bars then update this set now.
@@ -976,7 +976,7 @@ void ToolBarManager::Implementation::Update (
             // UnlockUpdate() calls will post the UpdateCallback.
             if (mnPendingUpdateCall==0 && mnLockCount==0)
             {
-                mpAsynchronousLayouterLock = pLocalLayouterLock;
+                mpAsynchronousLayouterLock = std::move(pLocalLayouterLock);
                 mnPendingUpdateCall = Application::PostUserEvent(
                     LINK(this,ToolBarManager::Implementation,UpdateCallback));
             }

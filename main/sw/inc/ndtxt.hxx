@@ -121,7 +121,7 @@ class SW_DLLPUBLIC SwTxtNode: public SwCntntNode, public ::sfx2::Metadatable
 	// pointer to the list, to whose the text node is added to
 	SwList* mpList;
 	/// #i111677# cached expansion (for clipboard)
-	::std::auto_ptr< ::rtl::OUString > m_pNumStringCache;
+	::std::unique_ptr< ::rtl::OUString > m_pNumStringCache;
 
 	::com::sun::star::uno::WeakReference<
 		::com::sun::star::text::XTextContent> m_wXParagraph;

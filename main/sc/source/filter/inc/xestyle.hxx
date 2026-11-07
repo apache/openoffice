@@ -310,7 +310,7 @@ private:
     String              GetFormatCode ( const XclExpNumFmt& rFormat );
 
 private:
-    typedef ::std::auto_ptr< SvNumberFormatter >    SvNumberFormatterPtr;
+    typedef ::std::unique_ptr< SvNumberFormatter >    SvNumberFormatterPtr;
     typedef ::std::vector< XclExpNumFmt >           XclExpNumFmtVec;
     typedef NfKeywordTable*                         NfKeywordTablePtr;
 

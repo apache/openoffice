@@ -149,9 +149,9 @@ executeUnknownAuthDialog(
     {
         vos::OGuard aGuard(Application::GetSolarMutex());
 
-        std::auto_ptr< ResMgr > xManager(
+        std::unique_ptr< ResMgr > xManager(
             ResMgr::CreateResMgr(CREATEVERSIONRESMGR_NAME(uui)));
-        std::auto_ptr< UnknownAuthDialog > xDialog(
+        std::unique_ptr< UnknownAuthDialog > xDialog(
             new UnknownAuthDialog( pParent,
                                    rXCert,
                                    xServiceFactory,
@@ -197,9 +197,9 @@ executeSSLWarnDialog(
     {
         vos::OGuard aGuard(Application::GetSolarMutex());
 
-        std::auto_ptr< ResMgr > xManager(
+        std::unique_ptr< ResMgr > xManager(
            ResMgr::CreateResMgr(CREATEVERSIONRESMGR_NAME(uui)));
-        std::auto_ptr< SSLWarnDialog > xDialog(
+        std::unique_ptr< SSLWarnDialog > xDialog(
            new SSLWarnDialog( pParent,
                               rXCert,
                               xServiceFactory,

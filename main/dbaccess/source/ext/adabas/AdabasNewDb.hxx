@@ -125,8 +125,8 @@ namespace adabasui
 		sal_Bool				m_bRestore;
 		sal_Int8				m_nSetBitmap;
 
-		::std::auto_ptr<WaitObject>			m_aCreatorWait;
-		::std::auto_ptr<ODatabaseCreator>	m_aCreatorThread;
+		::std::unique_ptr<WaitObject>			m_aCreatorWait;
+		::std::unique_ptr<ODatabaseCreator>	m_aCreatorThread;
 
 		DECL_LINK( LoadButtonClickHdl,	Button		* );
 		DECL_LINK( ButtonClickHdl,		Button		* );

@@ -58,7 +58,7 @@ public:
 
 		Derived classes should overload InternalCreateControl.
 	*/
-	::std::auto_ptr<TreeNode> CreateControl( ::Window& i_rParent );
+	::std::unique_ptr<TreeNode> CreateControl( ::Window& i_rParent );
 
 protected:
 	virtual TreeNode* InternalCreateControl( ::Window& i_rParent ) = 0;

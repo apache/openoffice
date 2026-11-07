@@ -85,8 +85,8 @@ public:
 	void test()
 	{
 		odiapi::props::PropertyPool::Pointer_t propertyPool=odiapi::props::createPropertyPool();
-		std::auto_ptr<ODSLHandler> handler=ODSLHandler::createODSLHandler(propertyPool);
-		std::auto_ptr<xxml::XXmlReader> reader=xxml::XXmlReader::createXXmlReader(*handler);
+		std::unique_ptr<ODSLHandler> handler=ODSLHandler::createODSLHandler(propertyPool);
+		std::unique_ptr<xxml::XXmlReader> reader=xxml::XXmlReader::createXXmlReader(*handler);
 		reader->read("helloworld.odt.flat.xml");
 
 		OString tmpFileName = getTempFileName(OUString::createFromAscii("dumpSlPool_int.dot"));

@@ -294,7 +294,7 @@ const SfxItemSet* FuPage::ExecuteDialog( Window* pParent )
 		}
 	}
 
-	std::auto_ptr< SfxItemSet > pTempSet;
+	std::unique_ptr< SfxItemSet > pTempSet;
 
 	if( GetSlotID() == SID_SELECT_BACKGROUND )
 	{
@@ -324,7 +324,7 @@ const SfxItemSet* FuPage::ExecuteDialog( Window* pParent )
 	{
 		// create the dialog
 		SdAbstractDialogFactory* pFact = SdAbstractDialogFactory::Create();
-		std::auto_ptr<SfxAbstractTabDialog> pDlg( pFact ? pFact->CreateSdTabPageDialog(NULL, &aMergedAttr, mpDocSh, mbDisplayBackgroundTabPage ) : 0 );
+		std::unique_ptr<SfxAbstractTabDialog> pDlg( pFact ? pFact->CreateSdTabPageDialog(NULL, &aMergedAttr, mpDocSh, mbDisplayBackgroundTabPage ) : 0 );
 		if( pDlg.get() && pDlg->Execute() == RET_OK )
 			pTempSet.reset( new SfxItemSet(*pDlg->GetOutputItemSet()) );
 	}

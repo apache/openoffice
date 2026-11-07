@@ -132,7 +132,7 @@ OUString SAL_CALL getWinCPFromLocaleId( LCID lcid, LCTYPE lctype )
 
 		OSL_ASSERT( len > 0 );
 
-		std::auto_ptr< sal_Unicode > lpwchBuff( new sal_Unicode[len] );
+		std::unique_ptr< sal_Unicode > lpwchBuff( new sal_Unicode[len] );
 
 		if ( NULL != lpwchBuff.get( ) )
 		{

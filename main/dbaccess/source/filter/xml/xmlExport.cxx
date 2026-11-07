@@ -688,7 +688,7 @@ void ODBExport::exportDataSourceSettings()
 		else
 		{
 			// the not-that-simple case, we need to iterate through the sequence elements
-			::std::auto_ptr<IIterator> pSequenceIterator;
+			::std::unique_ptr<IIterator> pSequenceIterator;
 			switch (aSimpleType.getTypeClass())
 			{
 				case TypeClass_STRING:
@@ -809,7 +809,7 @@ void ODBExport::exportCollection(const Reference< XNameAccess >& _xCollection
 {
 	if ( _xCollection.is() )
 	{
-		::std::auto_ptr<SvXMLElementExport> pComponents;
+		::std::unique_ptr<SvXMLElementExport> pComponents;
 		if ( _bExportContext )
 			pComponents.reset( new SvXMLElementExport(*this,XML_NAMESPACE_DB, _eComponents, sal_True, sal_True));
 		Sequence< ::rtl::OUString> aSeq = _xCollection->getElementNames();

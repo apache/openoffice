@@ -297,9 +297,9 @@ void SwWW8ImplReader::ReadEmbeddedData( SvMemoryStream& rStrm, SwDocShell* pDocS
     	rStrm >> nFlags;
 
     	sal_uInt16 nLevel = 0;                  // counter for level to climb down in path
-    	::std::auto_ptr< String > xLongName;    // link / file name
-    	::std::auto_ptr< String > xShortName;   // 8.3-representation of file name
-    	::std::auto_ptr< String > xTextMark;    // text mark
+    	::std::unique_ptr< String > xLongName;    // link / file name
+    	::std::unique_ptr< String > xShortName;   // 8.3-representation of file name
+    	::std::unique_ptr< String > xTextMark;    // text mark
 
    	// description (ignore)
     	if( ::get_flag( nFlags, WW8_HLINK_DESCR ) )
@@ -308,7 +308,7 @@ void SwWW8ImplReader::ReadEmbeddedData( SvMemoryStream& rStrm, SwDocShell* pDocS
    	// target frame
     	if( ::get_flag( nFlags, WW8_HLINK_FRAME ) )
 	{
-		::std::auto_ptr< String > FrmName;
+		::std::unique_ptr< String > FrmName;
 		FrmName.reset( new String );
 		lclAppendString32(*FrmName , rStrm , true);
 		hlStr.tarFrm = *FrmName;

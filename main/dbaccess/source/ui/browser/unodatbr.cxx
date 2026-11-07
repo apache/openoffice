@@ -330,7 +330,7 @@ void SAL_CALL SbaTableQueryBrowser::disposing()
 	clearTreeModel();
 	// clear the tree model
 	{
-		::std::auto_ptr<SvLBoxTreeList> aTemp(m_pTreeModel);
+		::std::unique_ptr<SvLBoxTreeList> aTemp(m_pTreeModel);
 		m_pTreeModel = NULL;
 	}
 
@@ -2215,7 +2215,7 @@ void SbaTableQueryBrowser::populateTree(const Reference<XNameAccess>& _xNameAcce
 //------------------------------------------------------------------------------
 SvLBoxEntry* SbaTableQueryBrowser::implAppendEntry( SvLBoxEntry* _pParent, const String& _rName, void* _pUserData, EntryType _eEntryType )
 {
-    ::std::auto_ptr< ImageProvider > pImageProvider( getImageProviderFor( _pParent ) );
+    ::std::unique_ptr< ImageProvider > pImageProvider( getImageProviderFor( _pParent ) );
 
     Image aImage, aImageHC;
     pImageProvider->getImages( _rName, getDatabaseObjectType( _eEntryType ), aImage, aImageHC );
@@ -3378,9 +3378,9 @@ sal_Bool SbaTableQueryBrowser::ensureConnection(SvLBoxEntry* _pAnyEntry, SharedC
 }
 
 // -----------------------------------------------------------------------------
-::std::auto_ptr< ImageProvider > SbaTableQueryBrowser::getImageProviderFor( SvLBoxEntry* _pAnyEntry )
+::std::unique_ptr< ImageProvider > SbaTableQueryBrowser::getImageProviderFor( SvLBoxEntry* _pAnyEntry )
 {
-    ::std::auto_ptr< ImageProvider > pImageProvider( new ImageProvider );
+    ::std::unique_ptr< ImageProvider > pImageProvider( new ImageProvider );
     SharedConnection xConnection;
     if ( getExistentConnectionFor( _pAnyEntry, xConnection ) )
         pImageProvider.reset( new ImageProvider( xConnection ) );

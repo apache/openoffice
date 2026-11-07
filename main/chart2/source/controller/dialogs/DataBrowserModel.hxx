@@ -162,7 +162,7 @@ private:
             ::com::sun::star::chart2::XChartDocument > m_xChartDocument;
     ::com::sun::star::uno::Reference<
             ::com::sun::star::uno::XComponentContext > m_xContext;
-    ::std::auto_ptr< DialogModel > m_apDialogModel;
+    ::std::unique_ptr< DialogModel > m_apDialogModel;
 
     struct tDataColumn;
     struct implColumnLess;

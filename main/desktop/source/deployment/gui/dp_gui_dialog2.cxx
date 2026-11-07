@@ -98,7 +98,7 @@ struct StrAllFiles : public rtl::StaticWithInit< const OUString, StrAllFiles >
 {
 	const OUString operator () () {
 		const ::vos::OGuard guard( Application::GetSolarMutex() );
-		::std::auto_ptr< ResMgr > const resmgr( ResMgr::CreateResMgr( "fps_office" ) );
+		::std::unique_ptr< ResMgr > const resmgr( ResMgr::CreateResMgr( "fps_office" ) );
 		OSL_ASSERT( resmgr.get() != 0 );
 		String ret( ResId( STR_FILTERNAME_ALL, *resmgr.get() ) );
 		return ret;

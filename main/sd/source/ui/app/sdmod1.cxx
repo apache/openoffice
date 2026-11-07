@@ -588,7 +588,7 @@ SfxFrame* SdModule::ExecuteNewDocument( SfxRequest& rReq )
 		else
 		{
 			SdAbstractDialogFactory* pFact = SdAbstractDialogFactory::Create();
-			std::auto_ptr< AbstractAssistentDlg > pPilotDlg( pFact ? pFact->CreateAssistentDlg( NULL, !bNewDocDirect ) : 0 );
+			std::unique_ptr< AbstractAssistentDlg > pPilotDlg( pFact ? pFact->CreateAssistentDlg( NULL, !bNewDocDirect ) : 0 );
 
 			// Open the Pilot
 			if(	pPilotDlg.get() && pPilotDlg->Execute()==RET_OK )
@@ -658,7 +658,7 @@ SfxFrame* SdModule::ExecuteNewDocument( SfxRequest& rReq )
 					pOpt->SetStartWithTemplate(bStartWithTemplate);
 					if(bNewDocDirect && !bStartWithTemplate)
 					{
-						std::auto_ptr< SfxItemSet > pRet( CreateItemSet( SID_SD_EDITOPTIONS ) );
+						std::unique_ptr< SfxItemSet > pRet( CreateItemSet( SID_SD_EDITOPTIONS ) );
 						if(pRet.get())
 							ApplyItemSet( SID_SD_EDITOPTIONS, *pRet.get() );
 
@@ -676,7 +676,7 @@ SfxFrame* SdModule::ExecuteNewDocument( SfxRequest& rReq )
 
 						if(bNewDocDirect && !bStartWithTemplate)
 						{
-							std::auto_ptr< SfxItemSet > pRet( CreateItemSet( SID_SD_EDITOPTIONS ) );
+							std::unique_ptr< SfxItemSet > pRet( CreateItemSet( SID_SD_EDITOPTIONS ) );
 							if(pRet.get())
 								ApplyItemSet( SID_SD_EDITOPTIONS, *pRet.get() );
 						}

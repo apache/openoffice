@@ -98,7 +98,7 @@ private:
 	bool mbExpanded;
 	bool mbFocused;
 	// Size of the bounding box that encloses the title string.
-	::std::auto_ptr<VirtualDevice> mpDevice;
+	::std::unique_ptr<VirtualDevice> mpDevice;
 	bool mbIsExpandable;
 
 	/** Return whether this TitleBar object has an expansion indicator

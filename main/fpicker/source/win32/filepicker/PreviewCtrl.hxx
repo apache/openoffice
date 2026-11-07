@@ -165,7 +165,7 @@ protected:
 	virtual ~CFilePreview( );
 
 	// we use the stl auto_ptr class as singleton destroyer
-	typedef std::auto_ptr< CFilePreview > FILEPREVIEW_SINGLETON_DESTROYER_T;
+	typedef std::unique_ptr< CFilePreview > FILEPREVIEW_SINGLETON_DESTROYER_T;
 
 protected:
 	virtual void SAL_CALL onPaint( HWND hWnd, HDC hDC );

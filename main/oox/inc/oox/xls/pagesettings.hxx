@@ -201,7 +201,7 @@ private:
                             const ::rtl::OUString& rContent );
 
 private:
-    typedef ::std::auto_ptr< HeaderFooterParser > HeaderFooterParserPtr;
+    typedef ::std::unique_ptr< HeaderFooterParser > HeaderFooterParserPtr;
     HeaderFooterParserPtr mxHFParser;
     HFHelperData        maHeaderData;
     HFHelperData        maFooterData;

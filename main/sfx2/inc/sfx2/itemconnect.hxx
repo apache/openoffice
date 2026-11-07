@@ -252,8 +252,8 @@ public:
     typedef typename ControlWrpT::ControlType               ControlType;
     typedef typename ControlWrpT::ControlValueType          ControlValueType;
 
-    typedef std::auto_ptr< ItemWrpT >                       ItemWrapperRef;
-    typedef std::auto_ptr< ControlWrpT >                    ControlWrapperRef;
+    typedef std::unique_ptr< ItemWrpT >                       ItemWrapperRef;
+    typedef std::unique_ptr< ControlWrpT >                    ControlWrapperRef;
 
     /** Receives pointer to a newly created control wrapper.
         @descr  Takes ownership of the control wrapper. */
@@ -464,7 +464,7 @@ protected:
     virtual bool        FillItemSet( SfxItemSet& rDestSet, const SfxItemSet& rOldSet );
 
 private:
-    std::auto_ptr< ItemConnectionArrayImpl > mxImpl;
+    std::unique_ptr< ItemConnectionArrayImpl > mxImpl;
 };
 
 // ============================================================================
@@ -532,7 +532,7 @@ bool ItemControlConnection< ItemWrpT, ControlWrpT >::FillItemSet(
         if( !pOldItem || !(maItemWrp.GetItemValue( *pOldItem ) == aNewValue) )
         {
             sal_uInt16 nWhich = ItemWrapperHelper::GetWhichId( rDestSet, maItemWrp.GetSlotId() );
-            std::auto_ptr< ItemType > xItem(
+            std::unique_ptr< ItemType > xItem(
                 static_cast< ItemType* >( maItemWrp.GetDefaultItem( rDestSet ).Clone() ) );
             xItem->SetWhich( nWhich );
             maItemWrp.SetItemValue( *xItem, aNewValue );

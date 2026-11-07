@@ -61,7 +61,7 @@ public:
     void                Progress();
 
 private:
-    typedef ::std::auto_ptr< ScfProgressBar > ScfProgressBarPtr;
+    typedef ::std::unique_ptr< ScfProgressBar > ScfProgressBarPtr;
 
     ScfProgressBarPtr   mxProgress;         /// Progress bar implementation.
     ScfProgressBar*     mpSubProgress;      /// Current sub progress bar.

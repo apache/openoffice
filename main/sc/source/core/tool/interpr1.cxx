@@ -83,7 +83,7 @@ ScTokenStack* ScInterpreter::pGlobalStack = NULL;
 sal_Bool ScInterpreter::bGlobalStackInUse = sal_False;
 
 using namespace formula;
-using ::std::auto_ptr;
+using ::std::unique_ptr;
 
 //-----------------------------------------------------------------------------
 // Funktionen
@@ -6522,7 +6522,7 @@ ScDBQueryParamBase* ScInterpreter::GetDBParams( sal_Bool& rMissingField )
     if ( GetByte() == 3 )
     {
         // First, get the query criteria range.
-        ::std::auto_ptr<ScDBRangeBase> pQueryRef( PopDoubleRef() );
+        ::std::unique_ptr<ScDBRangeBase> pQueryRef( PopDoubleRef() );
         if (!pQueryRef.get())
             return NULL;
 
@@ -6580,7 +6580,7 @@ ScDBQueryParamBase* ScInterpreter::GetDBParams( sal_Bool& rMissingField )
                 SetError( errIllegalParameter );
         }
 
-        auto_ptr<ScDBRangeBase> pDBRef( PopDoubleRef() );
+        unique_ptr<ScDBRangeBase> pDBRef( PopDoubleRef() );
 
         if (nGlobalError || !pDBRef.get())
             return NULL;
@@ -6616,7 +6616,7 @@ ScDBQueryParamBase* ScInterpreter::GetDBParams( sal_Bool& rMissingField )
         if (!ValidCol(nField))
             return NULL;
 
-        auto_ptr<ScDBQueryParamBase> pParam( pDBRef->createQueryParam(pQueryRef.get()) );
+        unique_ptr<ScDBQueryParamBase> pParam( pDBRef->createQueryParam(pQueryRef.get()) );
 
         if (pParam.get())
         {
@@ -6657,7 +6657,7 @@ void ScInterpreter::DBIterator( ScIterFunc eFunc )
     sal_Bool bNull = sal_True;
     sal_uLong nCount = 0;
     sal_Bool bMissingField = sal_False;
-    auto_ptr<ScDBQueryParamBase> pQueryParam( GetDBParams(bMissingField) );
+    unique_ptr<ScDBQueryParamBase> pQueryParam( GetDBParams(bMissingField) );
     if (pQueryParam.get())
     {
         ScDBQueryDataIterator aValIter(pDok, pQueryParam.release());
@@ -6721,7 +6721,7 @@ void ScInterpreter::ScDBCount()
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScDBCount" );
     sal_Bool bMissingField = sal_True;
-    auto_ptr<ScDBQueryParamBase> pQueryParam( GetDBParams(bMissingField) );
+    unique_ptr<ScDBQueryParamBase> pQueryParam( GetDBParams(bMissingField) );
     if (pQueryParam.get())
     {
         sal_uLong nCount = 0;
@@ -6775,7 +6775,7 @@ void ScInterpreter::ScDBCount2()
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScDBCount2" );
     sal_Bool bMissingField = sal_True;
-    auto_ptr<ScDBQueryParamBase> pQueryParam( GetDBParams(bMissingField) );
+    unique_ptr<ScDBQueryParamBase> pQueryParam( GetDBParams(bMissingField) );
     if (pQueryParam.get())
     {
         sal_uLong nCount = 0;
@@ -6836,7 +6836,7 @@ void ScInterpreter::GetDBStVarParams( double& rVal, double& rValCount )
     rValCount = 0.0;
     double fSum    = 0.0;
     sal_Bool bMissingField = sal_False;
-    auto_ptr<ScDBQueryParamBase> pQueryParam( GetDBParams(bMissingField) );
+    unique_ptr<ScDBQueryParamBase> pQueryParam( GetDBParams(bMissingField) );
     if (pQueryParam.get())
     {
         ScDBQueryDataIterator aValIter(pDok, pQueryParam.release());

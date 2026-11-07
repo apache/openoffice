@@ -210,7 +210,7 @@ public:
 
 private:
     class Implementation;
-    ::std::auto_ptr<Implementation> mpImpl;
+    ::std::unique_ptr<Implementation> mpImpl;
 };
 
 } } // end of namespace ::sd::tools

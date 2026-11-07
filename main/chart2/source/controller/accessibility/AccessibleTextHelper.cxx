@@ -96,7 +96,7 @@ void SAL_CALL AccessibleTextHelper::initialize( const Sequence< uno::Any >& aArg
             {
                 SvxEditSource * pEditSource = new SvxTextEditSource( *pTextObj, 0, *pView, *pWindow );
                 m_pTextHelper = new ::accessibility::AccessibleTextHelper(
-                    ::std::auto_ptr< SvxEditSource >( pEditSource ));
+                    ::std::unique_ptr< SvxEditSource >( pEditSource ));
                 if( m_pTextHelper )
                     m_pTextHelper->SetEventSource( xEventSource );
             }

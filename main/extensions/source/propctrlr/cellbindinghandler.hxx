@@ -48,7 +48,7 @@ namespace pcr
     class CellBindingPropertyHandler : public CellBindingPropertyHandler_Base
 	{
     private:
-        ::std::auto_ptr< CellBindingHelper >            m_pHelper;
+        ::std::unique_ptr< CellBindingHelper >            m_pHelper;
         ::rtl::Reference< IPropertyEnumRepresentation > m_pCellExchangeConverter;
 
     public:

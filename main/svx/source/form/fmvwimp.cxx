@@ -1551,7 +1551,7 @@ bool FmXFormView::createControlLabelPair( const ::comphelper::ComponentContext& 
     bool bNeedLabel = ( _nControlObjectID != OBJ_FM_CHECKBOX );
 
 	// the label
-    ::std::auto_ptr< SdrUnoObj > pLabel;
+    ::std::unique_ptr< SdrUnoObj > pLabel;
     Reference< XPropertySet > xLabelModel;
     if ( bNeedLabel )
     {
@@ -1583,7 +1583,7 @@ bool FmXFormView::createControlLabelPair( const ::comphelper::ComponentContext& 
     }
 
 	// the control
-    ::std::auto_ptr< SdrUnoObj > pControl( dynamic_cast< SdrUnoObj* >(
+    ::std::unique_ptr< SdrUnoObj > pControl( dynamic_cast< SdrUnoObj* >(
 	    SdrObjFactory::MakeNewObject( _nInventor, _nControlObjectID, _pControlPage, _pModel ) ) );
     OSL_ENSURE( pControl.get(), "FmXFormView::createControlLabelPair: could not create the control!" );
     if ( !pControl.get() )

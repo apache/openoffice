@@ -1422,7 +1422,7 @@ ScAccessibleCsvCell::ScAccessibleCsvCell(
         const String& rCellText,
         sal_Int32 nRow, sal_Int32 nColumn ) :
     ScAccessibleCsvControl( rGrid.GetAccessible(), rGrid, nCellRole ),
-    AccessibleStaticTextBase( SvxEditSourcePtr( NULL ) ),
+    AccessibleStaticTextBase( SvxEditSourcePtr() ),
     maCellText( rCellText ),
     mnLine( nRow ? (nRow + rGrid.GetFirstVisLine() - 1) : CSV_LINE_HEADER ),
     mnColumn( lcl_GetGridColumn( nColumn ) ),
@@ -1440,7 +1440,7 @@ ScAccessibleCsvCell::~ScAccessibleCsvCell()
 void SAL_CALL ScAccessibleCsvCell::disposing()
 {
     ScUnoGuard aGuard;
-    SetEditSource( SvxEditSourcePtr( NULL ) );
+    SetEditSource( SvxEditSourcePtr() );
     ScAccessibleCsvControl::disposing();
 }
 
@@ -1602,16 +1602,16 @@ Rectangle ScAccessibleCsvCell::implGetBoundingBox() const
     return aRect;
 }
 
-::std::auto_ptr< SvxEditSource > ScAccessibleCsvCell::implCreateEditSource()
+::std::unique_ptr< SvxEditSource > ScAccessibleCsvCell::implCreateEditSource()
 {
     ScCsvGrid& rGrid = implGetGrid();
     Rectangle aBoundRect( implGetBoundingBox() );
     aBoundRect -= implGetRealPos();
 
-    ::std::auto_ptr< ScAccessibleTextData > pCsvTextData( new ScAccessibleCsvTextData(
+    ::std::unique_ptr< ScAccessibleTextData > pCsvTextData( new ScAccessibleCsvTextData(
         &rGrid, rGrid.GetEditEngine(), maCellText, aBoundRect, implGetRealSize() ) );
 
-    ::std::auto_ptr< SvxEditSource > pEditSource( new ScAccessibilityEditSource( pCsvTextData ) );
+    ::std::unique_ptr< SvxEditSource > pEditSource( new ScAccessibilityEditSource( ::std::move(pCsvTextData) ) );
     return pEditSource;
 }
 

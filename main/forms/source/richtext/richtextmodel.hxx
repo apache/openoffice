@@ -95,7 +95,7 @@ namespace frm
         sal_Bool                    m_bMultiLine;
         // </properties_for_awt_edit_compatibility>
 
-        ::std::auto_ptr<RichTextEngine>
+        ::std::unique_ptr<RichTextEngine>
                                     m_pEngine;
         bool                        m_bSettingEngineText;
 

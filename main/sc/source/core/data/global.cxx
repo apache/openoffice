@@ -1233,7 +1233,7 @@ ScFunctionList::ScFunctionList() :
 
 	for ( sal_uInt16 k = 0; k < nBlocks; k++ )
 	{
-        ::std::auto_ptr<ScResourcePublisher> pBlock( new ScResourcePublisher( ScResId( nDescBlock[k] ) ) );
+        ::std::unique_ptr<ScResourcePublisher> pBlock( new ScResourcePublisher( ScResId( nDescBlock[k] ) ) );
         // Browse for all possible OpCodes. This is not the fastest method, but
         // otherwise the sub resources within the resource blocks and the
         // resource blocks themselves would had to be ordered according to
@@ -1899,7 +1899,7 @@ String ScFunctionMgr::GetCategoryName(sal_uInt32 _nCategoryNumber )
         return String();
     } // if ( _nCategoryNumber >= SC_FUNCGROUP_COUNT )
 
-    ::std::auto_ptr<ScResourcePublisher> pCategories( new ScResourcePublisher( ScResId( RID_FUNCTION_CATEGORIES ) ) );
+    ::std::unique_ptr<ScResourcePublisher> pCategories( new ScResourcePublisher( ScResId( RID_FUNCTION_CATEGORIES ) ) );
     return String(ScResId((sal_uInt16)_nCategoryNumber));
 }
 sal_Unicode ScFunctionMgr::getSingleToken(const formula::IFunctionManager::EToken _eToken) const

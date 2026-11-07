@@ -96,7 +96,7 @@ OApplicationIconControl::~OApplicationIconControl()
 		SvxIconChoiceCtrlEntry* pEntry = GetEntry( i );
 		if ( pEntry )
 		{
-			::std::auto_ptr<ElementType> aType(static_cast<ElementType*>(pEntry->GetUserData()));
+			::std::unique_ptr<ElementType> aType(static_cast<ElementType*>(pEntry->GetUserData()));
 			pEntry->SetUserData(NULL);
 		}
 	}

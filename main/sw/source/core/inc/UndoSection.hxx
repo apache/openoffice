@@ -39,11 +39,11 @@ class SwTOXBase;
 class SwUndoInsSection : public SwUndo, private SwUndRng
 {
 private:
-	const ::std::auto_ptr<SwSectionData> m_pSectionData;
-	const ::std::auto_ptr<SwTOXBase> m_pTOXBase; // set iff section is TOX
-	const ::std::auto_ptr<SfxItemSet> m_pAttrSet;
-	::std::auto_ptr<SwHistory> m_pHistory;
-	::std::auto_ptr<SwRedlineData> m_pRedlData;
+	const ::std::unique_ptr<SwSectionData> m_pSectionData;
+	const ::std::unique_ptr<SwTOXBase> m_pTOXBase; // set iff section is TOX
+	const ::std::unique_ptr<SfxItemSet> m_pAttrSet;
+	::std::unique_ptr<SwHistory> m_pHistory;
+	::std::unique_ptr<SwRedlineData> m_pRedlData;
 	sal_uLong m_nSectionNodePos;
 	bool m_bSplitAtStart : 1;
 	bool m_bSplitAtEnd : 1;

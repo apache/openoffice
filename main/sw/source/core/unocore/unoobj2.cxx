@@ -469,7 +469,7 @@ public:
     uno::Reference< text::XTextContent >    m_xNextPara;
 
     Impl(   uno::Reference< text::XText > const& xParent,
-            ::std::auto_ptr<SwUnoCrsr> pCursor,
+            ::std::unique_ptr<SwUnoCrsr> pCursor,
             const CursorType eType,
             SwStartNode const*const pStartNode, SwTable const*const pTable)
         : SwClient( pCursor.release() )
@@ -528,10 +528,10 @@ void SwXParagraphEnumeration::Impl::Modify( const SfxPoolItem *pOld, const SfxPo
 
 SwXParagraphEnumeration::SwXParagraphEnumeration(
         uno::Reference< text::XText > const& xParent,
-        ::std::auto_ptr<SwUnoCrsr> pCursor,
+        ::std::unique_ptr<SwUnoCrsr> pCursor,
         const CursorType eType,
         SwStartNode const*const pStartNode, SwTable const*const pTable)
-    : m_pImpl( new SwXParagraphEnumeration::Impl(xParent, pCursor, eType,
+    : m_pImpl( new SwXParagraphEnumeration::Impl(xParent, std::move(pCursor), eType,
                     pStartNode, pTable) )
 {
 }
@@ -626,7 +626,7 @@ SwXParagraphEnumeration::Impl::NextElement_Impl()
          (CURSOR_SELECTION_IN_TABLE == m_eCursorType)))
     {
         SwPosition* pStart = pUnoCrsr->Start();
-        const ::std::auto_ptr<SwUnoCrsr> aNewCrsr(
+        const ::std::unique_ptr<SwUnoCrsr> aNewCrsr(
             pUnoCrsr->GetDoc()->CreateUnoCrsr(*pStart, sal_False) );
         // one may also go into tables here
         if ((CURSOR_TBLTEXT != m_eCursorType) &&
@@ -1173,7 +1173,7 @@ SwXTextRange::CreateXTextRange(
 {
     const uno::Reference<text::XText> xParentText(
             ::sw::CreateParentXText(rDoc, rPos));
-    const ::std::auto_ptr<SwUnoCrsr> pNewCrsr(
+    const ::std::unique_ptr<SwUnoCrsr> pNewCrsr(
             rDoc.CreateUnoCrsr(rPos, sal_False));
     if(pMark)
     {
@@ -1308,7 +1308,7 @@ SwXTextRange::createContentEnumeration(const OUString& rServiceName)
         throw uno::RuntimeException();
     }
     const SwPosition aPos(GetDoc()->GetNodes().GetEndOfContent());
-    const ::std::auto_ptr<SwUnoCrsr> pNewCrsr(
+    const ::std::unique_ptr<SwUnoCrsr> pNewCrsr(
             m_pImpl->m_rDoc.CreateUnoCrsr(aPos, sal_False));
     if (!GetPositions(*pNewCrsr))
     {
@@ -1330,7 +1330,7 @@ SwXTextRange::createEnumeration()
         throw uno::RuntimeException();
     }
     const SwPosition aPos(GetDoc()->GetNodes().GetEndOfContent());
-    ::std::auto_ptr<SwUnoCrsr> pNewCrsr(
+    ::std::unique_ptr<SwUnoCrsr> pNewCrsr(
             m_pImpl->m_rDoc.CreateUnoCrsr(aPos, sal_False));
     if (!GetPositions(*pNewCrsr))
     {
@@ -1344,7 +1344,7 @@ SwXTextRange::createEnumeration()
     const CursorType eSetType = (RANGE_IN_CELL == m_pImpl->m_eRangePosition)
             ? CURSOR_SELECTION_IN_TABLE : CURSOR_SELECTION;
     const uno::Reference< container::XEnumeration > xRet =
-        new SwXParagraphEnumeration(m_pImpl->m_xParentText, pNewCrsr, eSetType);
+        new SwXParagraphEnumeration(m_pImpl->m_xParentText, std::move(pNewCrsr), eSetType);
     return xRet;
 }
 

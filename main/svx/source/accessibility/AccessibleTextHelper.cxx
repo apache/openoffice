@@ -132,7 +132,7 @@ namespace accessibility
         uno::Reference< XAccessible > SAL_CALL getAccessibleAtPoint( const awt::Point& aPoint );
 
         SvxEditSourceAdapter& GetEditSource() const;
-        void SetEditSource( ::std::auto_ptr< SvxEditSource > pEditSource );
+        void SetEditSource( ::std::unique_ptr< SvxEditSource > pEditSource );
 
         void SetEventSource( const uno::Reference< XAccessible >& rInterface )
         {
@@ -827,10 +827,10 @@ namespace accessibility
         if( maEditSource.IsValid() )
             EndListening( maEditSource.GetBroadcaster() );
 
-        maEditSource.SetEditSource( ::std::auto_ptr< SvxEditSource >(NULL) );
+        maEditSource.SetEditSource( ::std::unique_ptr< SvxEditSource >() );
     }
 
-    void AccessibleTextHelper_Impl::SetEditSource( ::std::auto_ptr< SvxEditSource > pEditSource )
+    void AccessibleTextHelper_Impl::SetEditSource( ::std::unique_ptr< SvxEditSource > pEditSource )
     {
         DBG_CHKTHIS( AccessibleTextHelper_Impl, NULL );
 
@@ -840,7 +840,7 @@ namespace accessibility
         ShutdownEditSource();
 
         // set new edit source
-        maEditSource.SetEditSource( pEditSource );
+        maEditSource.SetEditSource( std::move(pEditSource) );
 
         // init child vector to the current child count
         if( maEditSource.IsValid() )
@@ -1300,7 +1300,7 @@ namespace accessibility
 
         while( !maEventQueue.IsEmpty() )
         {
-            ::std::auto_ptr< SfxHint > pHint( maEventQueue.PopFront() );
+            ::std::unique_ptr< SfxHint > pHint( maEventQueue.PopFront() );
             if( pHint.get() )
             {
                 const SfxHint& rHint = *(pHint.get());
@@ -1639,7 +1639,7 @@ namespace accessibility
             EndListening( maEditSource.GetBroadcaster() );
 
         // clear references
-        maEditSource.SetEditSource( ::std::auto_ptr< SvxEditSource >(NULL) );
+        maEditSource.SetEditSource( ::std::unique_ptr< SvxEditSource >() );
         mxFrontEnd = NULL;
     }
 
@@ -1776,12 +1776,12 @@ namespace accessibility
 	// AccessibleTextHelper implementation (simply forwards to impl)
 	//------------------------------------------------------------------------
 
-    AccessibleTextHelper::AccessibleTextHelper( ::std::auto_ptr< SvxEditSource > pEditSource ) :
+    AccessibleTextHelper::AccessibleTextHelper( ::std::unique_ptr< SvxEditSource > pEditSource ) :
         mpImpl( new AccessibleTextHelper_Impl() )
     {
         ::vos::OGuard aGuard( Application::GetSolarMutex() );
 
-        SetEditSource( pEditSource );
+        SetEditSource( std::move(pEditSource) );
     }
 
     AccessibleTextHelper::~AccessibleTextHelper()
@@ -1803,7 +1803,7 @@ namespace accessibility
 #endif
     }
 
-    void AccessibleTextHelper::SetEditSource( ::std::auto_ptr< SvxEditSource > pEditSource )
+    void AccessibleTextHelper::SetEditSource( ::std::unique_ptr< SvxEditSource > pEditSource )
     {
 #ifdef DBG_UTIL
         // precondition: solar mutex locked
@@ -1812,7 +1812,7 @@ namespace accessibility
         mpImpl->CheckInvariants();
 #endif
 
-        mpImpl->SetEditSource( pEditSource );
+        mpImpl->SetEditSource( std::move(pEditSource) );
 
 #ifdef DBG_UTIL
         mpImpl->CheckInvariants();

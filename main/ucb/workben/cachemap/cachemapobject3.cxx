@@ -78,7 +78,7 @@ rtl::Reference< Object3 > ObjectContainer3::get(rtl::OUString const & rKey)
     Map::iterator aIt(m_aMap.find(rKey));
     if (aIt == m_aMap.end())
     {
-        std::auto_ptr< Object3 > xElement(new Object3(this));
+        std::unique_ptr< Object3 > xElement(new Object3(this));
         aIt = m_aMap.insert(Map::value_type(rKey, xElement.get())).first;
         aIt->second->m_aContainerIt = aIt;
         xElement.release();

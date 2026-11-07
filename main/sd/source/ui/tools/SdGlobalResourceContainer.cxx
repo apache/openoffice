@@ -80,7 +80,7 @@ SdGlobalResourceContainer*
 //===== SdGlobalResourceContainer =============================================
 
 void SdGlobalResourceContainer::AddResource (
-    ::std::auto_ptr<SdGlobalResource> pResource)
+    ::std::unique_ptr<SdGlobalResource> pResource)
 {
     ::osl::MutexGuard aGuard (mpImpl->maMutex);
 

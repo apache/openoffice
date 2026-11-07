@@ -77,7 +77,7 @@ AccessibleOutlineView::AccessibleOutlineView (
     const uno::Reference<frame::XController>& rxController,
     const uno::Reference<XAccessible>& rxParent)
     : AccessibleDocumentViewBase (pSdWindow, pViewShell, rxController, rxParent),
-      maTextHelper( ::std::auto_ptr< SvxEditSource >( NULL ) )
+      maTextHelper( ::std::unique_ptr< SvxEditSource >() )
 {
     ::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -96,7 +96,7 @@ AccessibleOutlineView::AccessibleOutlineView (
 
             if( pOutlineView && pOutliner )
             {
-                maTextHelper.SetEditSource( ::std::auto_ptr< SvxEditSource >( new AccessibleOutlineEditSource(
+                maTextHelper.SetEditSource( ::std::unique_ptr< SvxEditSource >( new AccessibleOutlineEditSource(
                                                                                   *pOutliner, *pView, *pOutlineView, *pSdWindow ) ) );
             }
         }

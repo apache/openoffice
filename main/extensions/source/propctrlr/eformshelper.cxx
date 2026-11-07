@@ -254,7 +254,7 @@ namespace pcr
     {
         if ( !_bDoListen )
         {
-            ::std::auto_ptr< ::cppu::OInterfaceIteratorHelper > pListenerIterator = m_aPropertyListeners.createIterator();
+            ::std::unique_ptr< ::cppu::OInterfaceIteratorHelper > pListenerIterator = m_aPropertyListeners.createIterator();
             while ( pListenerIterator->hasMoreElements() )
             {
                 PropertyEventTranslation* pTranslator = dynamic_cast< PropertyEventTranslation* >( pListenerIterator->next() );
@@ -288,7 +288,7 @@ namespace pcr
             }
             else
             {
-                ::std::auto_ptr< ::cppu::OInterfaceIteratorHelper > pListenerIterator = m_aPropertyListeners.createIterator();
+                ::std::unique_ptr< ::cppu::OInterfaceIteratorHelper > pListenerIterator = m_aPropertyListeners.createIterator();
                 while ( pListenerIterator->hasMoreElements() )
                 {
                     Reference< XPropertyChangeListener > xListener( pListenerIterator->next(), UNO_QUERY );

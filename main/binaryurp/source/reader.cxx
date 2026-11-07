@@ -95,7 +95,7 @@ css::uno::Sequence< sal_Int8 > read(
 
 extern "C" void SAL_CALL request(void * pThreadSpecificData) {
     OSL_ASSERT(pThreadSpecificData != 0);
-    std::auto_ptr< IncomingRequest >(
+    std::unique_ptr< IncomingRequest >(
         static_cast< IncomingRequest * >(pThreadSpecificData))->
         execute();
 }
@@ -392,7 +392,7 @@ void Reader::readMessage(Unmarshal & unmarshal) {
             }
             break;
         }
-        std::auto_ptr< IncomingRequest > req(
+        std::unique_ptr< IncomingRequest > req(
             new IncomingRequest(
                 bridge_, tid, oid, obj, type, functionId, synchronous, memberTd,
                 setter, inArgs, ccMode, cc));
@@ -509,7 +509,7 @@ void Reader::readReplyMessage(Unmarshal & unmarshal, sal_uInt8 flags1) {
     switch (req.kind) {
     case OutgoingRequest::KIND_NORMAL:
         {
-            std::auto_ptr< IncomingReply > resp(
+            std::unique_ptr< IncomingReply > resp(
                 new IncomingReply(exc, ret, outArgs));
             uno_threadpool_putJob(
                 bridge_->getThreadPool(), tid.getHandle(), resp.get(), 0,

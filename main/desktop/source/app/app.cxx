@@ -1808,8 +1808,8 @@ struct ExecuteGlobals
 	Reference < css::document::XEventListener > xGlobalBroadcaster;
 	sal_Bool bRestartRequested;
 	sal_Bool bUseSystemFileDialog;
-	std::auto_ptr<SvtLanguageOptions> pLanguageOptions;
-    std::auto_ptr<SvtPathOptions> pPathOptions;
+	std::unique_ptr<SvtLanguageOptions> pLanguageOptions;
+    std::unique_ptr<SvtPathOptions> pPathOptions;
 
     ExecuteGlobals()
     : bRestartRequested( sal_False )

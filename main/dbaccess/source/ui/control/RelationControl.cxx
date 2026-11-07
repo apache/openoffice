@@ -95,7 +95,7 @@ namespace dbaui
 	{
 		friend class OTableListBoxControl;
 
-        ::std::auto_ptr< ::svt::ListBoxControl> m_pListCell;
+        ::std::unique_ptr< ::svt::ListBoxControl> m_pListCell;
 		TTableConnectionData::value_type		m_pConnData;
 		const OJoinTableView::OTableWindowMap*	m_pTableMap;
 		OTableListBoxControl*					m_pBoxControl;

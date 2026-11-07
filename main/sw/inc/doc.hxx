@@ -414,7 +414,7 @@ private:
     tImplSortedNodeNumList* mpListItemsList;
     // <--
 
-    ::std::auto_ptr< ::sfx2::IXmlIdRegistry > m_pXmlIdRegistry;
+    ::std::unique_ptr< ::sfx2::IXmlIdRegistry > m_pXmlIdRegistry;
 
 	// -------------------------------------------------------------------
 	// sonstige

@@ -746,7 +746,7 @@ Reference< text::XAutoTextEntry > SwGlossaries::GetAutoTextEntry( const String& 
 {
 	//standard must be created
 	sal_Bool bCreate = ( _rCompleteGroupName == GetDefName() );
-	::std::auto_ptr< SwTextBlocks > pGlosGroup( GetGroupDoc( _rCompleteGroupName, bCreate ) );
+	::std::unique_ptr< SwTextBlocks > pGlosGroup( GetGroupDoc( _rCompleteGroupName, bCreate ) );
 
     if ( pGlosGroup.get() && !pGlosGroup->GetError() )
 	{

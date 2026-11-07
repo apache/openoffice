@@ -61,7 +61,7 @@ RegressionEquationItemConverter::RegressionEquationItemConverter(
     SfxItemPool& rItemPool,
     SdrModel& rDrawModel,
     const uno::Reference< lang::XMultiServiceFactory > & xNamedPropertyContainerFactory,
-    ::std::auto_ptr< ::com::sun::star::awt::Size > pRefSize ) :
+    ::std::unique_ptr< ::com::sun::star::awt::Size > pRefSize ) :
         ItemConverter( rPropertySet, rItemPool )
 {
     m_aConverters.push_back( new GraphicPropertyItemConverter(
@@ -70,7 +70,7 @@ RegressionEquationItemConverter::RegressionEquationItemConverter(
                                  GraphicPropertyItemConverter::LINE_AND_FILL_PROPERTIES ));
 
     m_aConverters.push_back( new CharacterPropertyItemConverter(
-                                 rPropertySet, rItemPool, pRefSize, C2U("ReferencePageSize")));
+                                 rPropertySet, rItemPool, std::move(pRefSize), C2U("ReferencePageSize")));
 
 //     // CharacterProperties are not at the title but at its contained XFormattedString objects
 //     // take the first formatted string in the sequence

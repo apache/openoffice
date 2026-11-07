@@ -23,7 +23,7 @@
 #ifndef _SFX2_OPENGRF_HXX
 #define _SFX2_OPENGRF_HXX
 
-#include <memory>		// auto_ptr
+#include <memory>		// unique_ptr
 #include <svtools/filter.hxx>
 #include <sfx2/dllapi.h>
 
@@ -56,7 +56,7 @@ private:
 	SFX2_DLLPRIVATE SvxOpenGraphicDialog	(const SvxOpenGraphicDialog&);
 	SFX2_DLLPRIVATE SvxOpenGraphicDialog& operator = ( const SvxOpenGraphicDialog & );
 
-	const std::auto_ptr< SvxOpenGrf_Impl >	mpImpl;
+	const std::unique_ptr< SvxOpenGrf_Impl >	mpImpl;
 };
 
 #endif // _SVX_OPENGRF_HXX

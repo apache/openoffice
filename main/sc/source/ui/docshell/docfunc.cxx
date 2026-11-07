@@ -3423,10 +3423,10 @@ void ScDocFunc::ProtectSheet( SCTAB nTab, const ScTableProtection& rProtect )
         DBG_ASSERT(pProtect, "ScDocFunc::Unprotect: ScTableProtection pointer is NULL!");
         if (pProtect)
         {
-            ::std::auto_ptr<ScTableProtection> p(new ScTableProtection(*pProtect));
+            ::std::unique_ptr<ScTableProtection> p(new ScTableProtection(*pProtect));
             p->setProtected(true); // just in case ...
             rDocShell.GetUndoManager()->AddUndoAction(
-                new ScUndoTabProtect(&rDocShell, nTab, p) );
+                new ScUndoTabProtect(&rDocShell, nTab, std::move(p)) );
 
             // ownership of auto_ptr now transferred to ScUndoTabProtect.
         }
@@ -3453,10 +3453,10 @@ sal_Bool ScDocFunc::Protect( SCTAB nTab, const String& rPassword, sal_Bool /*bAp
             DBG_ASSERT(pProtect, "ScDocFunc::Unprotect: ScDocProtection pointer is NULL!");
             if (pProtect)
             {
-                ::std::auto_ptr<ScDocProtection> p(new ScDocProtection(*pProtect));
+                ::std::unique_ptr<ScDocProtection> p(new ScDocProtection(*pProtect));
                 p->setProtected(true); // just in case ...
                 rDocShell.GetUndoManager()->AddUndoAction(
-                    new ScUndoDocProtect(&rDocShell, p) );
+                    new ScUndoDocProtect(&rDocShell, std::move(p)) );
                 // ownership of auto_ptr is transferred to ScUndoDocProtect.
             }
         }
@@ -3475,10 +3475,10 @@ sal_Bool ScDocFunc::Protect( SCTAB nTab, const String& rPassword, sal_Bool /*bAp
             DBG_ASSERT(pProtect, "ScDocFunc::Unprotect: ScTableProtection pointer is NULL!");
             if (pProtect)
             {
-                ::std::auto_ptr<ScTableProtection> p(new ScTableProtection(*pProtect));
+                ::std::unique_ptr<ScTableProtection> p(new ScTableProtection(*pProtect));
                 p->setProtected(true); // just in case ...
                 rDocShell.GetUndoManager()->AddUndoAction(
-                    new ScUndoTabProtect(&rDocShell, nTab, p) );
+                    new ScUndoTabProtect(&rDocShell, nTab, std::move(p)) );
                 // ownership of auto_ptr now transferred to ScUndoTabProtect.
             }
         }
@@ -3505,7 +3505,7 @@ sal_Bool ScDocFunc::Unprotect( SCTAB nTab, const String& rPassword, sal_Bool bAp
             return true;
 
         // save the protection state before unprotect (for undo).
-        ::std::auto_ptr<ScDocProtection> pProtectCopy(new ScDocProtection(*pDocProtect));
+        ::std::unique_ptr<ScDocProtection> pProtectCopy(new ScDocProtection(*pDocProtect));
 
         if (!pDocProtect->verifyPassword(rPassword))
         {
@@ -3522,7 +3522,7 @@ sal_Bool ScDocFunc::Unprotect( SCTAB nTab, const String& rPassword, sal_Bool bAp
         {
             pProtectCopy->setProtected(false);
             rDocShell.GetUndoManager()->AddUndoAction(
-                new ScUndoDocProtect(&rDocShell, pProtectCopy) );
+                new ScUndoDocProtect(&rDocShell, std::move(pProtectCopy)) );
             // ownership of auto_ptr now transferred to ScUndoDocProtect.
         }
     }
@@ -3536,7 +3536,7 @@ sal_Bool ScDocFunc::Unprotect( SCTAB nTab, const String& rPassword, sal_Bool bAp
             return true;
 
         // save the protection state before unprotect (for undo).
-        ::std::auto_ptr<ScTableProtection> pProtectCopy(new ScTableProtection(*pTabProtect));
+        ::std::unique_ptr<ScTableProtection> pProtectCopy(new ScTableProtection(*pTabProtect));
         if (!pTabProtect->verifyPassword(rPassword))
         {
             if (!bApi)
@@ -3552,7 +3552,7 @@ sal_Bool ScDocFunc::Unprotect( SCTAB nTab, const String& rPassword, sal_Bool bAp
         {
             pProtectCopy->setProtected(false);
             rDocShell.GetUndoManager()->AddUndoAction(
-                new ScUndoTabProtect(&rDocShell, nTab, pProtectCopy) );
+                new ScUndoTabProtect(&rDocShell, nTab, std::move(pProtectCopy)) );
             // ownership of auto_ptr now transferred to ScUndoTabProtect.
         }
     }

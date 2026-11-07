@@ -103,7 +103,7 @@ bool ScConversionEngineBase::FindNextConversionCell()
     ScBaseCell* pCell = NULL;
     const ScPatternAttr* pPattern = NULL;
     const ScPatternAttr* pLastPattern = NULL;
-    ::std::auto_ptr< SfxItemSet > pEditDefaults( new SfxItemSet( GetEmptyItemSet() ) );
+    ::std::unique_ptr< SfxItemSet > pEditDefaults( new SfxItemSet( GetEmptyItemSet() ) );
 
     if( IsModified() )
     {
@@ -140,7 +140,7 @@ bool ScConversionEngineBase::FindNextConversionCell()
                     if( pCell )
                     {
                         ScEditCell* pEditCell = static_cast< ScEditCell* >( pCell );
-                        ::std::auto_ptr< EditTextObject > pEditObj( CreateTextObject() );
+                        ::std::unique_ptr< EditTextObject > pEditObj( CreateTextObject() );
                         pEditCell->SetData( pEditObj.get(), GetEditTextObjectPool() );
                     }
                 }

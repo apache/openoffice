@@ -633,7 +633,7 @@ CachableContentProperties::CachableContentProperties(
 void CachableContentProperties::addProperties(
     const ContentProperties & rProps )
 {
-    const std::auto_ptr< PropertyValueMap > & props = rProps.getProperties();
+    const std::unique_ptr< PropertyValueMap > & props = rProps.getProperties();
 
     PropertyValueMap::const_iterator it = props->begin();
     const PropertyValueMap::const_iterator end = props->end();

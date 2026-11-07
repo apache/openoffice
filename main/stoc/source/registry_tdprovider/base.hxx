@@ -396,7 +396,7 @@ class ServiceTypeDescriptionImpl:
     bool _bInitReferences;
 
     com::sun::star::uno::Reference< XTypeDescription > _xInterfaceTD;
-    std::auto_ptr<
+    std::unique_ptr<
         Sequence<
             com::sun::star::uno::Reference< XServiceConstructorDescription > > >
     _pCtors;
@@ -408,7 +408,7 @@ class ServiceTypeDescriptionImpl:
     _aMandatoryInterfaces;
     Sequence< com::sun::star::uno::Reference< XInterfaceTypeDescription > >
     _aOptionalInterfaces;
-    std::auto_ptr<
+    std::unique_ptr<
         Sequence< com::sun::star::uno::Reference< XPropertyTypeDescription > > >
     _pProps;
 

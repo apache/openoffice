@@ -1943,7 +1943,7 @@ ErrCode SfxMacroLoader::loadMacro( const ::rtl::OUString& rURL, com::sun::star::
 
                 {
                     // attempt to protect the document against the script tampering with its Undo Context
-                    ::std::auto_ptr< ::framework::DocumentUndoGuard > pUndoGuard;
+                    ::std::unique_ptr< ::framework::DocumentUndoGuard > pUndoGuard;
                     if ( bIsDocBasic )
                         pUndoGuard.reset( new ::framework::DocumentUndoGuard( pDoc->GetModel() ) );
 

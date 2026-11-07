@@ -3619,7 +3619,7 @@ sal_Int32 SAL_CALL SwAccessibleParagraph::getHyperLinkIndex( sal_Int32 nCharInde
 // --> OD 2010-02-22 #i108125# - adjustments for change tracking text markup
 sal_Int32 SAL_CALL SwAccessibleParagraph::getTextMarkupCount( sal_Int32 nTextMarkupType )
 {
-    std::auto_ptr<SwTextMarkupHelper> pTextMarkupHelper;
+    std::unique_ptr<SwTextMarkupHelper> pTextMarkupHelper;
     switch ( nTextMarkupType )
     {
         case text::TextMarkupType::TRACK_CHANGE_INSERTION:
@@ -3834,7 +3834,7 @@ sal_Int32 SAL_CALL SwAccessibleParagraph::addSelection( sal_Int32, sal_Int32 sta
         SwAccessibleParagraph::getTextMarkup( sal_Int32 nTextMarkupIndex,
                                               sal_Int32 nTextMarkupType )
 {
-    std::auto_ptr<SwTextMarkupHelper> pTextMarkupHelper;
+    std::unique_ptr<SwTextMarkupHelper> pTextMarkupHelper;
     switch ( nTextMarkupType )
     {
         case text::TextMarkupType::TRACK_CHANGE_INSERTION:
@@ -3866,7 +3866,7 @@ uno::Sequence< /*accessibility::*/TextSegment > SAL_CALL
         throw lang::IndexOutOfBoundsException();
     }
 
-    std::auto_ptr<SwTextMarkupHelper> pTextMarkupHelper;
+    std::unique_ptr<SwTextMarkupHelper> pTextMarkupHelper;
     switch ( nTextMarkupType )
     {
         case text::TextMarkupType::TRACK_CHANGE_INSERTION:

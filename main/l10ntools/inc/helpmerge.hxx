@@ -26,7 +26,7 @@
 #include <rtl/ustring.hxx>
 #include <rtl/ustrbuf.hxx>
 #include <rtl/strbuf.hxx>
-#include <memory> /* auto_ptr */
+#include <memory> /* unique_ptr */
 #include "tools/isofallback.hxx"
 
 #define MOVEFILE_REPLACE_EXISTING 0x01

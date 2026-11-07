@@ -39,8 +39,8 @@ sal_Bool SAL_CALL FormulaOpCodeMapperObj::supportsService( const ::rtl::OUString
 	return ::comphelper::findValue( getSupportedServiceNames_Static(), _rServiceName, sal_True ).getLength() != 0;
 }
 //------------------------------------------------------------------------
-FormulaOpCodeMapperObj::FormulaOpCodeMapperObj(::std::auto_ptr<FormulaCompiler> _pCompiler)
-: m_pCompiler(_pCompiler)
+FormulaOpCodeMapperObj::FormulaOpCodeMapperObj(::std::unique_ptr<FormulaCompiler> _pCompiler)
+: m_pCompiler(std::move(_pCompiler))
 {
 }
 
@@ -107,7 +107,7 @@ uno::Sequence< rtl::OUString > SAL_CALL FormulaOpCodeMapperObj::getSupportedServ
 uno::Reference< uno::XInterface > SAL_CALL FormulaOpCodeMapperObj::create(
                 uno::Reference< uno::XComponentContext > const & /*_xContext*/)
 {
-    return static_cast<sheet::XFormulaOpCodeMapper*>(new FormulaOpCodeMapperObj(::std::auto_ptr<FormulaCompiler>(new FormulaCompiler())));
+    return static_cast<sheet::XFormulaOpCodeMapper*>(new FormulaOpCodeMapperObj(::std::unique_ptr<FormulaCompiler>(new FormulaCompiler())));
 }
 // -----------------------------------------------------------------------------
 

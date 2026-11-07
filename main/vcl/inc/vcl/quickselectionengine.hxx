@@ -78,7 +78,7 @@ namespace vcl
         void    Reset();
 
     private:
-        ::std::auto_ptr< QuickSelectionEngine_Data >    m_pData;
+        ::std::unique_ptr< QuickSelectionEngine_Data >    m_pData;
 
     private:
         QuickSelectionEngine();                                         // never implemented

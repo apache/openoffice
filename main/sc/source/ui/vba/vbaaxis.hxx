@@ -39,7 +39,7 @@ class ScVbaAxis : public ScVbaAxis_BASE
 	sal_Bool bCrossesAreCustomized;
 	ScVbaChart* getChartPtr();
 	sal_Bool isValueAxis();
-	std::auto_ptr<ov::ShapeHelper> oShapeHelper;
+	std::unique_ptr<ov::ShapeHelper> oShapeHelper;
 
 public:
 	ScVbaAxis( const css::uno::Reference< ov::XHelperInterface >& xParent, const css::uno::Reference< css::uno::XComponentContext > & xContext, const css::uno::Reference< css::beans::XPropertySet >& _xPropertySet, sal_Int32 _nType, sal_Int32 _nGroup );

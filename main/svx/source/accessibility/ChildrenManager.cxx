@@ -117,10 +117,10 @@ void ChildrenManager::SetShapeList (const ::com::sun::star::uno::Reference<
 
 
 
-void ChildrenManager::AddAccessibleShape (std::auto_ptr<AccessibleShape> pShape)
+void ChildrenManager::AddAccessibleShape (std::unique_ptr<AccessibleShape> pShape)
 {
     OSL_ASSERT (mpImpl != NULL);
-    mpImpl->AddAccessibleShape (pShape);
+    mpImpl->AddAccessibleShape (std::move(pShape));
 }
 
 

@@ -124,7 +124,7 @@ IMPL_LINK(SidebarTextEditSource, NotifyHdl, EENotify*, pNotify)
 {
     if ( pNotify )
     {
-        ::std::auto_ptr< SfxHint > aHint( SvxEditSourceHelper::EENotification2Hint( pNotify ) );
+        ::std::unique_ptr< SfxHint > aHint( SvxEditSourceHelper::EENotification2Hint( pNotify ) );
 
         if( aHint.get() )
         {
@@ -180,9 +180,9 @@ SidebarTxtControlAccessibleContext::SidebarTxtControlAccessibleContext( SidebarT
     , mpAccessibleTextHelper( 0 )
     , maMutex()
 {
-    ::std::auto_ptr<SvxEditSource> pEditSource(
+    ::std::unique_ptr<SvxEditSource> pEditSource(
                         new SidebarTextEditSource( mrSidebarTxtControl ) );
-    mpAccessibleTextHelper = new ::accessibility::AccessibleTextHelper( pEditSource );
+    mpAccessibleTextHelper = new ::accessibility::AccessibleTextHelper( std::move(pEditSource) );
     mpAccessibleTextHelper->SetEventSource( mrSidebarTxtControl.GetWindowPeer() );
 }
 

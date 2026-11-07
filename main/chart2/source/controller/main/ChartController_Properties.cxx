@@ -87,8 +87,8 @@ namespace
     , SdrModel & rDrawModel
     , NumberFormatterWrapper * pNumberFormatterWrapper = NULL
     , ExplicitValueProvider * pExplicitValueProvider = NULL
-    , ::std::auto_ptr< ReferenceSizeProvider > pRefSizeProvider =
-          ::std::auto_ptr< ReferenceSizeProvider >()
+    , ::std::unique_ptr< ReferenceSizeProvider > pRefSizeProvider =
+          ::std::unique_ptr< ReferenceSizeProvider >()
     )
 {
     ::comphelper::ItemConverter* pItemConverter=NULL;
@@ -122,26 +122,26 @@ namespace
                     break;
             case OBJECTTYPE_TITLE:
             {
-                ::std::auto_ptr< awt::Size > pRefSize;
+                ::std::unique_ptr< awt::Size > pRefSize;
                 if( pRefSizeProvider.get() )
                     pRefSize.reset( new awt::Size( pRefSizeProvider->getPageSize()));
 
                 pItemConverter = new wrapper::TitleItemConverter( xObjectProperties,
                                                                   rDrawModel.GetItemPool(), rDrawModel,
                                                                   uno::Reference< lang::XMultiServiceFactory >( xChartModel, uno::UNO_QUERY ),
-                                                                  pRefSize );
+                                                                  ::std::move(pRefSize) );
             }
             break;
             case OBJECTTYPE_LEGEND:
             {
-                ::std::auto_ptr< awt::Size > pRefSize;
+                ::std::unique_ptr< awt::Size > pRefSize;
                 if( pRefSizeProvider.get() )
                     pRefSize.reset( new awt::Size( pRefSizeProvider->getPageSize()));
 
                 pItemConverter = new wrapper::LegendItemConverter( xObjectProperties,
                                                                    rDrawModel.GetItemPool(), rDrawModel,
                                                                    uno::Reference< lang::XMultiServiceFactory >( xChartModel, uno::UNO_QUERY ),
-                                                                   pRefSize );
+                                                                   std::move(pRefSize) );
             }
             break;
             case OBJECTTYPE_LEGEND_ENTRY:
@@ -157,7 +157,7 @@ namespace
                     break;
             case OBJECTTYPE_AXIS:
             {
-                ::std::auto_ptr< awt::Size > pRefSize;
+                ::std::unique_ptr< awt::Size > pRefSize;
                 if( pRefSizeProvider.get() )
                     pRefSize.reset( new awt::Size( pRefSizeProvider->getPageSize()));
 
@@ -180,7 +180,7 @@ namespace
                     rDrawModel,
                     uno::Reference< chart2::XChartDocument >( xChartModel, uno::UNO_QUERY ),
                     &aExplicitScale, &aExplicitIncrement,
-                    pRefSize );
+                    ::std::move(pRefSize) );
             }
             break;
             case OBJECTTYPE_AXIS_UNITLABEL:
@@ -190,7 +190,7 @@ namespace
             case OBJECTTYPE_DATA_LABEL:
             case OBJECTTYPE_DATA_POINT:
             {
-                ::std::auto_ptr< awt::Size > pRefSize;
+                ::std::unique_ptr< awt::Size > pRefSize;
                 if( pRefSizeProvider.get() )
                     pRefSize.reset( new awt::Size( pRefSizeProvider->getPageSize()));
 
@@ -244,7 +244,7 @@ namespace
                                         xObjectProperties, xSeries, rDrawModel.GetItemPool(), rDrawModel,
                                         pNumberFormatterWrapper,
                                         uno::Reference< lang::XMultiServiceFactory >( xChartModel, uno::UNO_QUERY ),
-                                        eMapTo, pRefSize, bDataSeries, bUseSpecialFillColor, nSpecialFillColor, false,
+                                        eMapTo, std::move(pRefSize), bDataSeries, bUseSpecialFillColor, nSpecialFillColor, false,
                                         nNumberFormat, nPercentNumberFormat );
                     break;
             }
@@ -272,14 +272,14 @@ namespace
                 break;
             case OBJECTTYPE_DATA_CURVE_EQUATION:
             {
-                ::std::auto_ptr< awt::Size > pRefSize;
+                ::std::unique_ptr< awt::Size > pRefSize;
                 if( pRefSizeProvider.get() )
                     pRefSize.reset( new awt::Size( pRefSizeProvider->getPageSize()));
 
                 pItemConverter =  new wrapper::RegressionEquationItemConverter(
                                         xObjectProperties, rDrawModel.GetItemPool(), rDrawModel,
                                         uno::Reference< lang::XMultiServiceFactory >( xChartModel, uno::UNO_QUERY ),
-                                        pRefSize );
+                                        std::move(pRefSize) );
                     break;
             }
             case OBJECTTYPE_DATA_ERRORS_X:
@@ -312,12 +312,12 @@ namespace
                 break;
             case OBJECTTYPE_AXIS:
             {
-                ::std::auto_ptr< awt::Size > pRefSize;
+                ::std::unique_ptr< awt::Size > pRefSize;
                 if( pRefSizeProvider.get() )
                     pRefSize.reset( new awt::Size( pRefSizeProvider->getPageSize()));
 
                 pItemConverter =  new wrapper::AllAxisItemConverter( xChartModel, rDrawModel.GetItemPool(),
-                                                                     rDrawModel, uno::Reference< lang::XMultiServiceFactory >( xChartModel, uno::UNO_QUERY ), pRefSize );
+                                                                     rDrawModel, uno::Reference< lang::XMultiServiceFactory >( xChartModel, uno::UNO_QUERY ), std::move(pRefSize) );
             }
             break;
             case OBJECTTYPE_GRID:
@@ -755,14 +755,14 @@ bool ChartController::executeDlg_ObjectProperties_withoutUndoGuard( const ::rtl:
 
         awt::Size aPageSize( ChartModelHelper::getPageSize(getModel()) );
 
-        ::std::auto_ptr< ReferenceSizeProvider > pRefSizeProv(
+        ::std::unique_ptr< ReferenceSizeProvider > pRefSizeProv(
             impl_createReferenceSizeProvider());
-        ::std::auto_ptr< ::comphelper::ItemConverter > apItemConverter(
+        ::std::unique_ptr< ::comphelper::ItemConverter > apItemConverter(
             createItemConverter( rObjectCID, getModel(), m_xCC,
                                  m_pDrawModelWrapper->getSdrModel(),
                                  &aNumberFormatterWrapper,
                                  ExplicitValueProvider::getExplicitValueProvider(m_xChartView),
-                                 pRefSizeProv ));
+                                 std::move(pRefSizeProv) ));
         if(!apItemConverter.get())
             return bRet;
 

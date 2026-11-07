@@ -105,7 +105,7 @@ namespace accessibility
 	        model) contained in the given SvxEditSource.
 
         */
-        explicit AccessibleStaticTextBase( ::std::auto_ptr< SvxEditSource > pEditSource );
+        explicit AccessibleStaticTextBase( ::std::unique_ptr< SvxEditSource > pEditSource );
         virtual ~AccessibleStaticTextBase();
 
     private:
@@ -153,7 +153,7 @@ namespace accessibility
 	        The new edit source to set. Object ownership is transferred
     	    from the caller to the callee.
         */
-        virtual void SetEditSource( ::std::auto_ptr< SvxEditSource > pEditSource );
+        virtual void SetEditSource( ::std::unique_ptr< SvxEditSource > pEditSource );
 
         /** Set the event source
 
@@ -267,7 +267,7 @@ namespace accessibility
     private:
 
         /// @dyn
-        const std::auto_ptr< AccessibleStaticTextBase_Impl > mpImpl;
+        const std::unique_ptr< AccessibleStaticTextBase_Impl > mpImpl;
 
     };
 

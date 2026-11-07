@@ -66,7 +66,7 @@ class OSQLMessageBox : public ButtonDialog
 	FixedText		m_aMessage;
     ::rtl::OUString m_sHelpURL;
 
-    ::std::auto_ptr< SQLMessageBox_Impl >   m_pImpl;
+    ::std::unique_ptr< SQLMessageBox_Impl >   m_pImpl;
 
 public:
 	enum MessageType

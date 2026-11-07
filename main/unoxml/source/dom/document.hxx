@@ -97,7 +97,7 @@ namespace DOM
                     ::std::pair< WeakReference<XNode>, CNode* > > nodemap_t;
         nodemap_t m_NodeMap;
 
-        ::std::auto_ptr<events::CEventDispatcher> const m_pEventDispatcher;
+        ::std::unique_ptr<events::CEventDispatcher> const m_pEventDispatcher;
 
         CDocument(xmlDocPtr const pDocPtr);
 

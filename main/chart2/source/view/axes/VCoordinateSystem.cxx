@@ -89,7 +89,7 @@ VCoordinateSystem::VCoordinateSystem( const Reference< XCoordinateSystem >& xCoo
     , m_aMergedMinimumAndMaximumSupplier()
     , m_aExplicitScales(3)
     , m_aExplicitIncrements(3)
-    , m_apExplicitCategoriesProvider(NULL)
+    , m_apExplicitCategoriesProvider()
 {
     if( !m_xCooSysModel.is() || m_xCooSysModel->getDimension()<3 )
     {
@@ -257,7 +257,7 @@ void VCoordinateSystem::impl_adjustDimensionAndIndex( sal_Int32& rDimensionIndex
 
 void VCoordinateSystem::setExplicitCategoriesProvider( ExplicitCategoriesProvider* pExplicitCategoriesProvider /*takes ownership*/ )
 {
-    m_apExplicitCategoriesProvider = ::std::auto_ptr< ExplicitCategoriesProvider >(pExplicitCategoriesProvider);
+    m_apExplicitCategoriesProvider = ::std::unique_ptr< ExplicitCategoriesProvider >(pExplicitCategoriesProvider);
 }
 
 ExplicitCategoriesProvider* VCoordinateSystem::getExplicitCategoriesProvider()

@@ -66,8 +66,8 @@ public:
 
 private:
 
-    ::std::auto_ptr<ExternalRefListener>                mpExtRefListener;
-    ::std::auto_ptr< ::std::vector<ScSharedTokenRef> >  mpTokens;
+    ::std::unique_ptr<ExternalRefListener>                mpExtRefListener;
+    ::std::unique_ptr< ::std::vector<ScSharedTokenRef> >  mpTokens;
 
 	ScChartUnoData*	pUnoData;
 	ScDocument* 	pDoc;

@@ -38,7 +38,7 @@
 using namespace formula;
 
 using ::std::vector;
-using ::std::auto_ptr;
+using ::std::unique_ptr;
 using ::rtl::OUString;
 
 void ScRefTokenHelper::compileRangeRepresentation(
@@ -63,7 +63,7 @@ void ScRefTokenHelper::compileRangeRepresentation(
 
         ScCompiler aCompiler(pDoc, ScAddress(0,0,0));
         aCompiler.SetGrammar(eGrammar);
-        auto_ptr<ScTokenArray> pArray(aCompiler.CompileString(aToken));
+        unique_ptr<ScTokenArray> pArray(aCompiler.CompileString(aToken));
 
         // There MUST be exactly one reference per range token and nothing
         // else, and it MUST be a valid reference, not some #REF!

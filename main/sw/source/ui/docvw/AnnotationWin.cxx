@@ -106,7 +106,7 @@ void SwAnnotationWin::UpdateData()
     {
         IDocumentUndoRedo & rUndoRedo(
             DocView().GetDocShell()->GetDoc()->GetIDocumentUndoRedo());
-        ::std::auto_ptr<SwField> pOldField;
+        ::std::unique_ptr<SwField> pOldField;
         if (rUndoRedo.DoesUndo())
         {
             pOldField.reset(mpFld->Copy());
@@ -247,7 +247,7 @@ void SwAnnotationWin::InitAnswer(OutlinerParaObject* pText)
     Engine()->SetModifyHdl( Link() );
     IDocumentUndoRedo & rUndoRedo(
         DocView().GetDocShell()->GetDoc()->GetIDocumentUndoRedo());
-    ::std::auto_ptr<SwField> pOldField;
+    ::std::unique_ptr<SwField> pOldField;
     if (rUndoRedo.DoesUndo())
     {
         pOldField.reset(mpFld->Copy());

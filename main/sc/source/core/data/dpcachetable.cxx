@@ -51,7 +51,7 @@ using ::std::vector;
 using ::std::pair;
 using ::std::hash_map;
 using ::std::hash_set;
-using ::std::auto_ptr;
+using ::std::unique_ptr;
 using ::com::sun::star::i18n::LocaleDataItem;
 using ::com::sun::star::uno::Exception;
 using ::com::sun::star::uno::Reference;

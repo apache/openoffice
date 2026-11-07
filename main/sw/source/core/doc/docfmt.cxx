@@ -394,7 +394,7 @@ void SwDoc::ResetAttrs( const SwPaM &rRg,
 
     // --> OD 2008-11-28 #i96644#
 //    SwDataChanged aTmp( *pPam, 0 );
-    std::auto_ptr< SwDataChanged > pDataChanged;
+    std::unique_ptr< SwDataChanged > pDataChanged;
     if ( bSendDataChangedEvents )
     {
         pDataChanged.reset( new SwDataChanged( *pPam, 0 ) );
@@ -1747,7 +1747,7 @@ sal_Bool lcl_SetTxtFmtColl( const SwNodePtr& rpNode, void* pArgs )
 
                 if ( bChangeOfListStyleAtParagraph )
                 {
-                    std::auto_ptr< SwRegHistory > pRegH;
+                    std::unique_ptr< SwRegHistory > pRegH;
                     if ( pPara->pHistory )
                     {
                         pRegH.reset( new SwRegHistory( pTNd, *pTNd, pPara->pHistory ) );

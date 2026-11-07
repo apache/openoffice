@@ -1156,7 +1156,7 @@ sal_Bool ScImportExport::ExtText2Doc( SvStream& rStrm )
 
 	sal_uLong nOldPos = rStrm.Tell();
 	rStrm.Seek( STREAM_SEEK_TO_END );
-    ::std::auto_ptr<ScProgress> xProgress( new ScProgress( pDocSh,
+    ::std::unique_ptr<ScProgress> xProgress( new ScProgress( pDocSh,
             ScGlobal::GetRscString( STR_LOAD_DOC ), rStrm.Tell() - nOldPos ));
 	rStrm.Seek( nOldPos );
     rStrm.StartReadingUnicodeText( rStrm.GetStreamCharSet() );

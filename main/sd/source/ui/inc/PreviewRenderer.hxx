@@ -132,8 +132,8 @@ protected:
 	virtual void Notify(SfxBroadcaster& rBC, const SfxHint& rHint);
 
 private:
-    ::std::auto_ptr<VirtualDevice> mpPreviewDevice;
-    ::std::auto_ptr<DrawView> mpView;
+    ::std::unique_ptr<VirtualDevice> mpPreviewDevice;
+    ::std::unique_ptr<DrawView> mpView;
     DrawDocShell* mpDocShellOfView;
     int mnWidthOfView;
     const Color maFrameColor;

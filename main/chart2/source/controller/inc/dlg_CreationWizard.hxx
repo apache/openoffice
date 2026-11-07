@@ -84,7 +84,7 @@ private:
     bool m_bIsClosable;
     sal_Int32 m_nOnePageOnlyIndex;//if nOnePageOnlyIndex is an index of an existing page starting with 0, then only this page is displayed without next/previous and roadmap
     ChartTypeTemplateProvider*   m_pTemplateProvider;
-    ::std::auto_ptr< DialogModel > m_apDialogModel;
+    ::std::unique_ptr< DialogModel > m_apDialogModel;
 
     WizardState m_nFirstState;
     WizardState m_nLastState;

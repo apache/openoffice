@@ -558,7 +558,7 @@ void XMLShapeExport::exportShape(const uno::Reference< drawing::XShape >& xShape
 	uno::Reference< beans::XPropertySet > xSet( xShape, uno::UNO_QUERY );
 
 
-	::std::auto_ptr< SvXMLElementExport >  mpHyperlinkElement;
+	::std::unique_ptr< SvXMLElementExport >  mpHyperlinkElement;
 
 	// export hyperlinks with <a><shape/></a>. Currently only in draw since draw
 	// does not support document events

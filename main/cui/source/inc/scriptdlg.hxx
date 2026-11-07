@@ -108,12 +108,12 @@ public:
 	SvLBoxEntry * insertEntry(String const & rText, sal_uInt16 nBitmap,
                               SvLBoxEntry * pParent,
                               bool bChildrenOnDemand,
-                              std::auto_ptr< SFEntry > aUserData,
+                              std::unique_ptr< SFEntry > aUserData,
                               ::rtl::OUString factoryURL );
 	SvLBoxEntry * insertEntry(String const & rText, sal_uInt16 nBitmap,
                               SvLBoxEntry * pParent,
                               bool bChildrenOnDemand,
-                              std::auto_ptr< SFEntry > aUserData );
+                              std::unique_ptr< SFEntry > aUserData );
 	void deleteTree( SvLBoxEntry * pEntry );
 	void deleteAllTree( );
 };

@@ -61,7 +61,7 @@ namespace pcr
 	{
     protected:
         ::comphelper::ComponentContext                                  m_aContext;
-        ::std::auto_ptr< InspectorModelProperties >                     m_pProperties;
+        ::std::unique_ptr< InspectorModelProperties >                     m_pProperties;
 
     protected:
         ~ImplInspectorModel();

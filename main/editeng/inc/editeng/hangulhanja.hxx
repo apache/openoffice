@@ -97,7 +97,7 @@ namespace editeng
 		};
 
 	private:
-		::std::auto_ptr< HangulHanjaConversion_Impl >	m_pImpl;
+		::std::unique_ptr< HangulHanjaConversion_Impl >	m_pImpl;
 
 		// used to set initial values of m_pImpl object from saved ones
 		static sal_Bool				m_bUseSavedValues;	// defines if the following two values should be used for initialization

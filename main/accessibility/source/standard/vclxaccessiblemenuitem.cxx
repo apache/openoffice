@@ -254,7 +254,7 @@ Sequence< PropertyValue > VCLXAccessibleMenuItem::getCharacterAttributes( sal_In
 	Font aFont = Application::GetSettings().GetStyleSettings().GetMenuFont();
 	sal_Int32 nBackColor = getBackground();
 	sal_Int32 nColor = getForeground();
-	::std::auto_ptr< CharacterAttributesHelper > pHelper( new CharacterAttributesHelper( aFont, nBackColor, nColor ) );
+	::std::unique_ptr< CharacterAttributesHelper > pHelper( new CharacterAttributesHelper( aFont, nBackColor, nColor ) );
 	aValues = pHelper->GetCharacterAttributes( aRequestedAttributes );
 
 	return aValues;

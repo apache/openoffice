@@ -78,7 +78,7 @@ private:
     /** The function object that will be executed when the TimerCallback
         function is called the next time.  This pointer may be NULL.
     */
-    ::std::auto_ptr<AsynchronousFunction> mpFunction;
+    ::std::unique_ptr<AsynchronousFunction> mpFunction;
     DECL_LINK(TimerCallback,Timer*);
 };
 

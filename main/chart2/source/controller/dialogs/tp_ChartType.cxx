@@ -623,7 +623,7 @@ private:
 private:
 	CheckBox    m_aCB_Splines;
     PushButton  m_aPB_DetailsDialog;
-    ::std::auto_ptr< SplinePropertiesDialog > m_pSplinePropertiesDialog;
+    ::std::unique_ptr< SplinePropertiesDialog > m_pSplinePropertiesDialog;
 };
 SplineResourceGroup::SplineResourceGroup( Window* pWindow )
         : ChangingResource()
@@ -652,7 +652,7 @@ SplineResourceGroup::~SplineResourceGroup()
 SplinePropertiesDialog& SplineResourceGroup::getSplinePropertiesDialog()
 {
     if( !m_pSplinePropertiesDialog.get() )
-        m_pSplinePropertiesDialog = ::std::auto_ptr< SplinePropertiesDialog >( new SplinePropertiesDialog( m_aPB_DetailsDialog.GetParent() ) );
+        m_pSplinePropertiesDialog = ::std::unique_ptr< SplinePropertiesDialog >( new SplinePropertiesDialog( m_aPB_DetailsDialog.GetParent() ) );
     return *m_pSplinePropertiesDialog;
 }
 void SplineResourceGroup::showControls( bool bShow )

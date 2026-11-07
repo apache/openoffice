@@ -260,7 +260,7 @@ ScBaseCell* XclImpStringHelper::CreateCell(
 
     if( rString.GetText().Len() )
     {
-        ::std::auto_ptr< EditTextObject > pTextObj( lclCreateTextObject( rRoot, rString, EXC_FONTITEM_EDITENG, nXFIndex ) );
+        ::std::unique_ptr< EditTextObject > pTextObj( lclCreateTextObject( rRoot, rString, EXC_FONTITEM_EDITENG, nXFIndex ) );
         ScDocument& rDoc = rRoot.GetDoc();
 
         if( pTextObj.get() )

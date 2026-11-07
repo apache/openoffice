@@ -94,7 +94,7 @@ void TextObjectBar::Execute( SfxRequest &rReq )
 	sal_Bool bOutlineMode = sal_False;
 	OutlinerView* pOLV = mpView->GetTextEditOutlinerView();
 
-	std::auto_ptr< OutlineViewModelChangeGuard > aGuard;
+	std::unique_ptr< OutlineViewModelChangeGuard > aGuard;
 
 	if (mpView->ISA(OutlineView))
 	{

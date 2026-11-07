@@ -80,7 +80,7 @@ namespace dbaccess
             );
 
     private:
-        const ::std::auto_ptr< DatabaseDocumentRecovery_Data >  m_pData;
+        const ::std::unique_ptr< DatabaseDocumentRecovery_Data >  m_pData;
 	};
 
 //........................................................................

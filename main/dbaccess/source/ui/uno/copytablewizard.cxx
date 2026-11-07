@@ -250,7 +250,7 @@ namespace dbaui
         /** extracts the source object (table or query) described by the given descriptor,
             relative to m_xSourceConnection
         */
-        ::std::auto_ptr< ICopyTableSourceObject >
+        ::std::unique_ptr< ICopyTableSourceObject >
                 impl_extractSourceObject_throw(
                     const Reference< XPropertySet >& _rxDescriptor,
                     sal_Int32& _out_rCommandType
@@ -349,7 +349,7 @@ private:
         // source
         SharedConnection                m_xSourceConnection;
         sal_Int32                       m_nCommandType;
-        ::std::auto_ptr< ICopyTableSourceObject >
+        ::std::unique_ptr< ICopyTableSourceObject >
                                         m_pSourceObject;
         Reference< XResultSet >         m_xSourceResultSet;
         Sequence< Any >                 m_aSourceSelection;
@@ -767,7 +767,7 @@ void CopyTableWizard::impl_checkForUnsupportedSettings_throw( const Reference< X
 }
 
 //-------------------------------------------------------------------------
-::std::auto_ptr< ICopyTableSourceObject > CopyTableWizard::impl_extractSourceObject_throw( const Reference< XPropertySet >& _rxDescriptor, sal_Int32& _out_rCommandType ) const
+::std::unique_ptr< ICopyTableSourceObject > CopyTableWizard::impl_extractSourceObject_throw( const Reference< XPropertySet >& _rxDescriptor, sal_Int32& _out_rCommandType ) const
 {
     OSL_PRECOND( _rxDescriptor.is() && m_xSourceConnection.is(), "CopyTableWizard::impl_extractSourceObject_throw: illegal arguments!" );
 
@@ -787,7 +787,7 @@ void CopyTableWizard::impl_checkForUnsupportedSettings_throw( const Reference< X
     OSL_VERIFY( _rxDescriptor->getPropertyValue( PROPERTY_COMMAND ) >>= sCommand );
     OSL_VERIFY( _rxDescriptor->getPropertyValue( PROPERTY_COMMAND_TYPE ) >>= _out_rCommandType );
 
-    ::std::auto_ptr< ICopyTableSourceObject > pSourceObject;
+    ::std::unique_ptr< ICopyTableSourceObject > pSourceObject;
     Reference< XNameAccess > xContainer;
     switch ( _out_rCommandType )
     {

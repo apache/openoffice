@@ -108,15 +108,15 @@ OTableFieldDescWin::~OTableFieldDescWin()
 	m_pHeader->Hide();
 
 	{
-		::std::auto_ptr<Window> aTemp(m_pGenPage);
+		::std::unique_ptr<Window> aTemp(m_pGenPage);
 		m_pGenPage = NULL;
 	}
 	{
-		::std::auto_ptr<Window> aTemp(m_pHeader);
+		::std::unique_ptr<Window> aTemp(m_pHeader);
 		m_pHeader = NULL;
 	}
 	{
-		::std::auto_ptr<Window> aTemp(m_pHelpBar);
+		::std::unique_ptr<Window> aTemp(m_pHelpBar);
 		m_pHelpBar = NULL;
 	}
 }
