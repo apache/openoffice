@@ -625,12 +625,10 @@ SlideBitmapSharedPtr SlideImpl::getCurrentSlideBitmap( const UnoViewSharedPtr& r
     if( (aIter=std::find_if( maSlideBitmaps.begin(),
                              aEnd,
                              boost::bind(
-                                 std::equal_to<UnoViewSharedPtr>(),
-                                 rView,
-                                 // select view:
-                                 boost::bind(
-                                     std::select1st<VectorOfVectorOfSlideBitmaps::value_type>(),
-                                     _1 )))) == aEnd )
+                                  std::equal_to<UnoViewSharedPtr>(),
+                                  rView,
+                                  // select view:
+                                  [&rView]( const VectorOfVectorOfSlideBitmaps::value_type& _rPair ) { return _rPair.first == rView; } )))) == aEnd )
     {
         // corresponding view not found - maybe view was not
         // added to Slide?
@@ -702,9 +700,7 @@ void SlideImpl::viewRemoved( const UnoViewSharedPtr& rView )
                             std::equal_to<UnoViewSharedPtr>(),
                             rView,
                             // select view:
-                            boost::bind(
-                                std::select1st<VectorOfVectorOfSlideBitmaps::value_type>(),
-                                _1 ))),
+                            [&rView]( const VectorOfVectorOfSlideBitmaps::value_type& _rPair ) { return _rPair.first == rView; } ))),
         aEnd );
 }
 

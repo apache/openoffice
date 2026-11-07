@@ -26,18 +26,10 @@
 #include <unotools/fontcvt.hxx>
 #include <unotools/fontdefs.hxx>
 
-#ifndef _STLP_MAP
 #include <map>
-#endif
-#ifndef _STLP_VECTOR
 #include <vector>
-#endif
-#ifndef _STLP_ALGORITHM
 #include <algorithm>
-#endif
-#ifndef _STLP_FUNCTIONAL
 #include <functional>
-#endif
 
 //=======================================================================
 // note: the character mappings that are only approximations

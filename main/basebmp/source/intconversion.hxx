@@ -24,6 +24,7 @@
 
 #include <vigra/rgbvalue.hxx>
 #include <functional>
+#include <utility>
 
 namespace basebmp
 {
@@ -53,8 +54,14 @@ namespace basebmp
 	// Get converter from given data type to sal_uInt32
 	template< typename DataType > struct uInt32Converter
 	{
-		typedef std::identity<DataType> to;
-		typedef std::identity<DataType> from;
+		struct to
+		{
+			DataType operator()( const DataType& v ) const { return v; }
+		};
+		struct from
+		{
+			DataType operator()( const DataType& v ) const { return v; }
+		};
 	};
 	template< unsigned int RedIndex,
 			  unsigned int GreenIndex,

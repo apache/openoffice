@@ -422,7 +422,7 @@ namespace canvas
                          aEnd,
                          ::boost::bind( ::basegfx::B2DRangeExpander(aTrueArea),
                                         ::boost::bind( &SpriteInfo::getUpdateArea,
-                                                       ::boost::bind( ::std::select2nd<AreaComponent>(),
+                                                       []( const AreaComponent& _rPair ) { return _rPair.second; },
                                                                       _1 ) ) ) );
 
         // and check whether _any_ of the sprites tells that its area
@@ -448,7 +448,7 @@ namespace canvas
                                 aEnd,
                                 ::boost::bind( &SpriteInfo::needsUpdate,
                                                ::boost::bind(
-                                                   ::std::select2nd<SpriteConnectedRanges::ComponentType>(),
+                                                   []( const SpriteConnectedRanges::ComponentType& _rPair ) { return _rPair.second; },
                                                    _1 ) ) ) != aEnd );
     }
 

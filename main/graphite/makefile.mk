@@ -50,7 +50,7 @@ all:
 
 TARFILE_NAME=silgraphite-2.3.1
 TARFILE_MD5=d35724900f6a4105550293686688bbb3
-PATCH_FILES=graphite-2.3.1.patch graphite-2.3.1_debug.patch graphite-2.3.1_stlportemu.patch graphite-2.3.1-CVE-2016-1521.patch
+PATCH_FILES=graphite-2.3.1.patch graphite-2.3.1_debug.patch graphite-2.3.1-CVE-2016-1521.patch
 
 # convert line-endings to avoid problems when patching
 CONVERTFILES=\
@@ -72,8 +72,7 @@ VCNUM=7
 VCNUM=8
 .ENDIF
 .IF "$(USE_SYSTEM_STL)"!="YES"
-# make use of stlport headerfiles
-EXT_USE_STLPORT=TRUE
+
 .ENDIF
 BUILD_ACTION=nmake VERBOSE=1
 .IF "x$(debug)"!="x"
@@ -104,7 +103,7 @@ EXTRA_GR_CXX_FLAGS=-fPIC
 
 .IF "$(USE_SYSTEM_STL)"!="YES"
 # #i112124# STLPort seems to require libstdc++
-EXTRA_GR_LD_FLAGS=$(LIBSTLPORT) -lm -lstdc++
+EXTRA_GR_LD_FLAGS=-lm -lstdc++
 GR_LIB_PATH=LD_LIBRARY_PATH=$(SOLARVERSION)/$(INPATH)/lib$(UPDMINOREXT)
 .ELSE
 GR_LIB_PATH=

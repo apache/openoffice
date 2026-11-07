@@ -74,24 +74,15 @@ void ShapeManagerImpl::activate( bool bSlideBackgoundPainted )
         uno::Reference<presentation::XShapeEventListener> xDummyListener;
         std::for_each( mrGlobalListenersMap.begin(),
                        mrGlobalListenersMap.end(),
-                       boost::bind( &ShapeManagerImpl::listenerAdded,
-                                    this,
-                                    boost::cref(xDummyListener),
-                                    boost::bind(
-                                        std::select1st<ShapeEventListenerMap::value_type>(),
-                                        _1 )));
+                        boost::bind( &ShapeManagerImpl::listenerAdded,
+                                     this,
+                                     boost::cref(xDummyListener),
+                                     [this, &xDummyListener]( const ShapeEventListenerMap::value_type& _rPair ) { this->listenerAdded( _rPair.first, xDummyListener ); } )));
 
         // clone cursor map
         std::for_each( mrGlobalCursorMap.begin(),
-                       mrGlobalCursorMap.end(),
-                       boost::bind( &ShapeManagerImpl::cursorChanged,
-                                    this,
-                                    boost::bind(
-                                        std::select1st<ShapeCursorMap::value_type>(),
-                                        _1 ),
-                                    boost::bind(
-                                        std::select2nd<ShapeCursorMap::value_type>(),
-                                        _1 )));
+                        mrGlobalCursorMap.end(),
+                        [this]( const ShapeCursorMap::value_type& _rPair ) { this->cursorChanged( _rPair.first, _rPair.second ); } ));
 
         if( mpLayerManager )
             mpLayerManager->activate( bSlideBackgoundPainted );

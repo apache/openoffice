@@ -172,7 +172,7 @@ namespace comphelper
             m_pImpl->aValues.begin(),
             m_pImpl->aValues.end(),
             aNames.begin(),
-            ::std::select1st< NamedValueRepository::value_type >()
+            []( const NamedValueRepository::value_type& _rPair ) { return _rPair.first; }
         );
         return aNames;
     }

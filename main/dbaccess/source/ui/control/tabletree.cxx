@@ -338,9 +338,9 @@ void OTableTreeListBox::UpdateTableList( const Reference< XConnection >& _rxConn
 		{
 			String sRootEntryText;
 			TNames::const_iterator aViews = ::std::find_if(_rTables.begin(),_rTables.end(),
-			::std::compose1(::std::bind(::std::equal_to<sal_Bool>(), ::std::placeholders::_1,sal_False),::std::select2nd<TNames::value_type>()));
+			[]( const TNames::value_type& _rPair ) { return _rPair.second == sal_False; });
 			TNames::const_iterator aTables = ::std::find_if(_rTables.begin(),_rTables.end(),
-			::std::compose1(::std::bind(::std::equal_to<sal_Bool>(), ::std::placeholders::_1,sal_True),::std::select2nd<TNames::value_type>()));
+			[]( const TNames::value_type& _rPair ) { return _rPair.second == sal_True; });
 
 			if ( aViews == _rTables.end() )
 				sRootEntryText  = String(ModuleRes(STR_ALL_TABLES));

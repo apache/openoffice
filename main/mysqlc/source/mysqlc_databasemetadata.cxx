@@ -46,13 +46,11 @@ using namespace com::sun::star::sdbc;
 using ::rtl::OUString;
 using mysqlc_sdbc_driver::getStringFromAny;
 
-#include <preextstl.h>
 #include <cppconn/connection.h>
 #include <cppconn/resultset.h>
 #include <cppconn/metadata.h>
 #include <cppconn/statement.h>
 #include <cppconn/prepared_statement.h>
-#include <postextstl.h>
 
 static ext_std::string wild("%");
 

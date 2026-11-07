@@ -184,8 +184,7 @@ gb_GLOBALDEFS += \
 
 else
 gb_GLOBALDEFS += \
-	-DDBG_UTIL \
-	-D_STLP_DEBUG \
+	-DDBG_UTIL
 
 endif
 

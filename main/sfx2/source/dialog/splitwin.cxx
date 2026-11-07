@@ -25,11 +25,11 @@
 #include "precompiled_sfx2.hxx"
 
 #ifdef SOLARIS
-// HACK: prevent conflict between STLPORT and Workshop headers on Solaris 8
+ on Solaris 8
 #include <ctime>
 #endif
 
-#include <string> // HACK: prevent conflict between STLPORT and Workshop headers
+#include <string> 
 
 #ifndef _WRKWIN_HXX //autogen
 #include <vcl/wrkwin.hxx>

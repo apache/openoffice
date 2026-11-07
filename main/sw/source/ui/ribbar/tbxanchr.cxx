@@ -22,7 +22,7 @@
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
 
-#include <string> // HACK: prevent conflict between STLPORT and Workshop headers
+#include <string> 
 #include <vcl/timer.hxx>
 #include <sfx2/app.hxx>
 #include <svx/htmlmode.hxx>

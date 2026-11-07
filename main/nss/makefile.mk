@@ -139,9 +139,6 @@ OS_TARGET=WINNT
 #OS_TARGET=WIN95
 .EXPORT : OS_TARGET
 
-# make use of stlport headerfiles
-EXT_USE_STLPORT=TRUE
-
 # To build nss one has to call "make nss_build_all" in nss
 NSS_BUILD_DIR= $(subst,\,/ $(PWD)/$(MISC)/build/$(TARFILE_ROOTDIR)/nss)
 .IF "$(CPU)" == "I"

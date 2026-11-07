@@ -609,7 +609,7 @@ namespace pcr
 
         Sequence< Property > aReturn( m_aProperties.size() );
         ::std::transform( m_aProperties.begin(), m_aProperties.end(),
-            aReturn.getArray(), ::std::select2nd< PropertyMap::value_type >() );
+            aReturn.getArray(), []( const PropertyMap::value_type& _rPair ) { return _rPair.second; } );
         return aReturn;
     }
 

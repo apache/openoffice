@@ -156,9 +156,7 @@ namespace slideshow
                 // sprites
                 std::for_each(maAllShapes.begin(),
                               maAllShapes.end(),
-                              boost::bind( &Shape::clearAllViewLayers,
-                                           boost::bind( std::select1st<LayerShapeMap::value_type>(),
-                                                        _1 )));
+                              []( const LayerShapeMap::value_type& _rPair ) { _rPair.first->clearAllViewLayers(); } );
 
                 for (LayerShapeMap::iterator
                          iShape (maAllShapes.begin()),
@@ -266,8 +264,7 @@ namespace slideshow
             // render all shapes
             std::for_each( maAllShapes.begin(),
                            maAllShapes.end(),
-                           boost::bind(&Shape::render,
-                               boost::bind( ::std::select1st<LayerShapeMap::value_type>(), _1)) );
+                           []( const LayerShapeMap::value_type& _rPair ) { _rPair.first->render(); } );
         }
 
         void LayerManager::addShape( const ShapeSharedPtr& rShape )

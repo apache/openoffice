@@ -204,10 +204,7 @@ template< class MapType >
     findValueInMap( const MapType & rMap, const typename MapType::mapped_type & rData )
 {
     return ::std::find_if( rMap.begin(), rMap.end(),
-                           ::std::compose1( ::std::bind(
-                                                ::std::equal_to< typename MapType::mapped_type >(), ::std::placeholders::_1,
-                                                rData ),
-                                            ::std::select2nd< typename MapType::value_type >()));
+                           [&rData]( const typename MapType::value_type& _rPair ) { return _rPair.second == rData; } );
 }
 
 /** Functor that deletes the object behind the given pointer by calling the

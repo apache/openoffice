@@ -55,7 +55,7 @@ JAVAFLAGSDEBUG=-g
 #LINKOUTPUT_FILTER=" |& $(SOLARENV)/bin/msg_filter"
 
 # _PTHREADS is needed for the stl
-CDEFS+=$(PTHREAD_CFLAGS) -D_PTHREADS -D_REENTRANT -DNEW_SOLAR -D_USE_NAMESPACE=1 -DSTLPORT_VERSION=450
+CDEFS+=$(PTHREAD_CFLAGS) -D_PTHREADS -D_REENTRANT -DNEW_SOLAR -D_USE_NAMESPACE=1
 .IF "$(COM)"=="CLANG"
 CDEFS+=-DHAVE_STL_INCLUDE_PATH
 .ELSE
@@ -249,24 +249,6 @@ STDSHLCUIMT+=-Wl,--as-needed $(PTHREAD_LIBS) -lm -Wl,--no-as-needed ${FBSD_GCC_R
 X11LINK_DYNAMIC = -Wl,--as-needed -lXext -lX11 -Wl,--no-as-needed
 
 LIBSALCPPRT*=-Wl,--whole-archive -lsalcpprt -Wl,--no-whole-archive
-
-.IF "$(USE_STLP_DEBUG)" != ""
-.IF "$(STLPORT_VER)" >= "500"
-LIBSTLPORT=$(DYNAMIC) -lstlportstlg
-LIBSTLPORTST=$(STATIC) -lstlportstlg $(DYNAMIC)
-.ELSE
-LIBSTLPORT=$(DYNAMIC) -lstlport_gcc_stldebug
-LIBSTLPORTST=$(STATIC) -lstlport_gcc_stldebug $(DYNAMIC)
-.ENDIF
-.ELSE # "$(USE_STLP_DEBUG)" != ""
-.IF "$(STLPORT_VER)" >= "500"
-LIBSTLPORT=$(DYNAMIC) -lstlport
-LIBSTLPORTST=$(STATIC) -lstlport $(DYNAMIC)
-.ELSE
-LIBSTLPORT=$(DYNAMIC) -lstlport_gcc
-LIBSTLPORTST=$(STATIC) -lstlport_gcc $(DYNAMIC)
-.ENDIF
-.ENDIF # "$(USE_STLP_DEBUG)" != ""
 
 #FILLUPARC=$(STATIC) -lsupc++ $(DYNAMIC)
 

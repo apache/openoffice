@@ -179,7 +179,7 @@ namespace toolkit
         Sequence< Any > resultData( m_nColumnCount );
         RowData& rRowData = impl_getRowDataAccess_throw( i_rowIndex, m_nColumnCount );
 
-        ::std::transform( rRowData.begin(), rRowData.end(), resultData.getArray(), ::std::select1st< CellData >() );
+        ::std::transform( rRowData.begin(), rRowData.end(), resultData.getArray(), []( const CellData& _rPair ) { return _rPair.first; } );
         return resultData;
     }
 

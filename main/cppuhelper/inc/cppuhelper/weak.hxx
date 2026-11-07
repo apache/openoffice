@@ -47,7 +47,7 @@ class OWeakConnectionPoint;
     @derive
     Inherit from this class and delegate acquire()/ release() calls.
 */
-class CPPUHELPER_DLLPUBLIC OWeakObject : public ::com::sun::star::uno::XWeak
+class CPPUHELPER_DLLPUBLIC OWeakObject : public virtual ::com::sun::star::uno::XWeak
 {
     /** @internal */
 	friend class OWeakConnectionPoint;
@@ -138,12 +138,10 @@ public:
 		const ::com::sun::star::uno::Type & rType );
     /** increasing m_refCount
     */
-    virtual void SAL_CALL acquire()
-		throw ();
+    virtual void SAL_CALL acquire() throw ();
     /** decreasing m_refCount
     */
-    virtual void SAL_CALL release()
-		throw ();
+    virtual void SAL_CALL release() throw ();
 
 	/** XWeak::queryAdapter() implementation
 

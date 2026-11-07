@@ -97,7 +97,7 @@ struct TKeyValueFunc
 	::std::transform(m_aKeyValues.begin()
 					,m_aKeyValues.end()
                     ,::std::back_inserter(pKeySet->get())
-					,::std::select1st<TIntValuePairVector::value_type>());
+					,[](const TIntValuePairVector::value_type& _rPair){ return _rPair.first; });
 	pKeySet->setFrozen();
 	return pKeySet;
 }

@@ -86,7 +86,14 @@ template< class Accessor > struct AccessorTraits
     typedef typename Accessor::value_type           value_type;
 
     /// Retrieve stand-alone color lookup function for given Accessor type
-    typedef std::project2nd< Accessor, value_type > color_lookup;
+    struct color_lookup
+    {
+        typedef value_type result_type;
+        value_type operator()( const Accessor& acc, const value_type& val ) const
+        {
+            return acc( val );
+        }
+    };
 
     /// Retrieve raw pixel data accessor for given Accessor type
     typedef Accessor                                raw_accessor;

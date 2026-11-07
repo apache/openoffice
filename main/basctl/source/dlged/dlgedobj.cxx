@@ -644,7 +644,7 @@ void DlgEdObj::TabIndexChange( const beans::PropertyChangeEvent& evt )
 		    ::std::transform(
 				    aIndexToNameMap.begin(), aIndexToNameMap.end(),
 				    aNameList.begin(),
-				    ::std::select2nd< IndexToNameMap::value_type >( )
+				    []( const IndexToNameMap::value_type& _rPair ) { return _rPair.second; }
 			    );
 
 		    // check tab index

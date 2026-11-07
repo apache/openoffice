@@ -314,7 +314,7 @@ namespace
     private:
         boost::shared_ptr<BitmapRenderer> getCompatibleBitmap( const BitmapDeviceSharedPtr& bmp ) const
         {
-            return boost::dynamic_pointer_cast< BitmapRenderer >( bmp );
+            return boost::shared_ptr<BitmapRenderer>( dynamic_cast<BitmapRenderer*>( bmp.get() ), [](BitmapRenderer*){} );
         }
 
         virtual bool isCompatibleBitmap( const BitmapDeviceSharedPtr& bmp ) const
@@ -326,7 +326,7 @@ namespace
 
         boost::shared_ptr<mask_bitmap_type> getCompatibleClipMask( const BitmapDeviceSharedPtr& bmp ) const
         {
-            boost::shared_ptr<mask_bitmap_type> pMask( boost::dynamic_pointer_cast<mask_bitmap_type>( bmp ));
+            boost::shared_ptr<mask_bitmap_type> pMask( dynamic_cast<mask_bitmap_type*>( bmp.get() ), [](mask_bitmap_type*){} );
 
             if( !pMask )
                 return pMask;
@@ -341,12 +341,12 @@ namespace
         {
             // TODO(P1): dynamic_cast usually called twice for
             // compatible formats
-            return boost::dynamic_pointer_cast<mask_bitmap_type>( bmp ).get() != NULL;
+            return dynamic_cast<mask_bitmap_type*>( bmp.get() ) != NULL;
         }
 
         boost::shared_ptr<alphamask_bitmap_type> getCompatibleAlphaMask( const BitmapDeviceSharedPtr& bmp ) const
         {
-            return boost::dynamic_pointer_cast<alphamask_bitmap_type>( bmp );
+            return boost::shared_ptr<alphamask_bitmap_type>( dynamic_cast<alphamask_bitmap_type*>( bmp.get() ), [](alphamask_bitmap_type*){} );
         }
 
         virtual bool isCompatibleAlphaMask( const BitmapDeviceSharedPtr& bmp ) const
@@ -1690,7 +1690,7 @@ PaletteMemorySharedVector createStandardPalette(
     if( pPal || nNumEntries <= 0 )
         return pPal;
 
-    boost::shared_ptr< std::vector<Color> > pLocalPal(
+    std::shared_ptr< std::vector<Color> > pLocalPal(
         new std::vector<Color>(nNumEntries) );
 
     const sal_Int32 nIncrement( 0x00FFFFFF/nNumEntries );

@@ -31,7 +31,6 @@ USE_DEFFILE=TRUE
 USE_DEFFILE_X64=TRUE
 .ENDIF
 NO_DEFAULT_STL=TRUE
-USE_STLP_DEBUG=
 
 # --- Settings -----------------------------------------------------
 

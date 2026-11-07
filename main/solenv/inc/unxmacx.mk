@@ -156,27 +156,6 @@ CDEFS+=$(EXTRA_CDEFS)
 STDLIBCPP=-lstdc++
 
 # ---------------------------------
-#  STLport library names
-# ---------------------------------
-.IF "$(USE_STLP_DEBUG)" != ""
-.IF "$(STLPORT_VER)" >= "500"
-LIBSTLPORT=-lstlportstlg
-LIBSTLPORTST=$(STATIC) -lstlportstlg
-.ELSE
-LIBSTLPORT=-lstlport_gcc_stldebug
-LIBSTLPORTST=$(SOLARVERSION)/$(INPATH)/lib/libstlport_gcc_stldebug.a
-.ENDIF
-.ELSE # "$(USE_STLP_DEBUG" != ""
-.IF "$(STLPORT_VER)" >= "500"
-LIBSTLPORT=-lstlport
-LIBSTLPORTST=$(STATIC) -lstlport
-.ELSE
-LIBSTLPORT=-lstlport_gcc
-LIBSTLPORTST=$(SOLARVERSION)/$(INPATH)/lib/libstlport_gcc.a
-.ENDIF
-.ENDIF # "$(USE_STLP_DEBUG" != ""
-
-# ---------------------------------
 #  Link stage flags
 # ---------------------------------
 # always link with gcc since you may be linking c code and don't want -lstdc++ linked in!

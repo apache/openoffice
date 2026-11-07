@@ -32,7 +32,6 @@ $(eval $(call gb_Executable_set_include,so_checksum,\
 
 $(eval $(call gb_Executable_add_defs,so_checksum,\
 	-D_TOOLS_STRINGLIST \
-	$(STLPORT_DEBUGFLAG) \
 ))
 
 $(eval $(call gb_Executable_add_linked_libs,so_checksum,\

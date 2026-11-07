@@ -926,7 +926,7 @@ IMPL_LINK( OCopyTableWizard, ImplOKHdl, OKButton*, EMPTYARG )
                     if ( supportsPrimaryKey() )
                     {
                         ODatabaseExport::TColumns::iterator aFind = ::std::find_if(m_vDestColumns.begin(),m_vDestColumns.end()
-                            ,::std::compose1(::std::mem_fn(&OFieldDescription::IsPrimaryKey),::std::select2nd<ODatabaseExport::TColumns::value_type>()));
+                            ,[]( const ODatabaseExport::TColumns::value_type& _rPair ) { return _rPair.second.IsPrimaryKey(); });
                         if ( aFind == m_vDestColumns.end() && m_xInteractionHandler.is() )
                         {
 
@@ -1370,12 +1370,10 @@ Reference< XPropertySet > OCopyTableWizard::createTable()
 					sal_Int32 nPos = (aFind - m_aDestVec.begin())+1;
 
 					ODatabaseExport::TPositions::iterator aPosFind = ::std::find_if(
-                        m_vColumnPos.begin(),
-                        m_vColumnPos.end(),
-						::std::compose1(    ::std::bind( ::std::equal_to< sal_Int32 >(), ::std::placeholders::_1, nPos ),
-                                            ::std::select1st< ODatabaseExport::TPositions::value_type >()
-                        )
-                    );
+                         m_vColumnPos.begin(),
+                         m_vColumnPos.end(),
+						[]( const ODatabaseExport::TPositions::value_type& _rPair ) { return _rPair.first == nPos; }
+                     );
 
 					if ( m_vColumnPos.end() != aPosFind )
 					{

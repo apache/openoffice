@@ -122,9 +122,6 @@ BUILD_ACTION=make
 OUT2BIN=$(BUILD_DIR)$/.libs$/libcurl*.dll
 OUT2LIB=$(BUILD_DIR)$/.libs$/libcurl*.dll.a
 .ELSE
-# make use of stlport headerfiles
-EXT_USE_STLPORT=TRUE
-
 .IF "$(CCNUMVER)" > "001399999999"
 EXCFLAGS="/EHa /Zc:wchar_t- /D "_CRT_SECURE_NO_DEPRECATE""
 .ELSE
@@ -170,8 +167,6 @@ OUT2LIB=$(BUILD_DIR)$/../builds/libcurl-vc9-X64-debug-dll-ssl-dll-zlib-dll-ipv6-
 .ENDIF			# "$(GUI)"=="WNT"
 
 .IF "$(GUI)"=="OS2"
-# make use of stlport headerfiles
-EXT_USE_STLPORT=TRUE
 
 BUILD_DIR=.$/lib
 .IF "$(debug)"==""

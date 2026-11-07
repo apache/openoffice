@@ -28,7 +28,6 @@ LIBTARGET=NO
 ENABLE_EXCEPTIONS=TRUE
 .IF "$(OS)" == "WNT"
 	NO_DEFAULT_STL=TRUE
-	USE_STLP_DEBUG=
 .ENDIF
 USE_DEFFILE=TRUE
 # --- Settings -----------------------------------------------------
