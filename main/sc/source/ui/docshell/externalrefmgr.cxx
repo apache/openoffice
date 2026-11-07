@@ -70,6 +70,7 @@ using ::rtl::OUString;
 using ::std::vector;
 using ::std::find;
 using ::std::find_if;
+using ::std::for_each;
 using ::std::distance;
 using ::std::pair;
 using ::std::list;
