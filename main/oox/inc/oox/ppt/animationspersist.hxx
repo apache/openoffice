@@ -26,8 +26,8 @@
 #define OOX_PPT_ANIMATIONPERSIST
 
 #include <list>
-#include <boost/shared_ptr.hpp>
-#include <boost/array.hpp>
+#include <memory>
+#include <array>
 
 #include <rtl/ustring.hxx>
 
@@ -52,7 +52,7 @@ namespace oox { namespace ppt {
 		_NP_SIZE
 	};
 
-	typedef boost::array< ::com::sun::star::uno::Any, _NP_SIZE > NodePropertyMap;
+	typedef std::array< ::com::sun::star::uno::Any, _NP_SIZE > NodePropertyMap;
 
 
 	/** data for CT_TLShapeTargetElement */
@@ -85,7 +85,7 @@ namespace oox { namespace ppt {
 	  ShapeTargetElement         maShapeTarget;
 	};
 
-	typedef boost::shared_ptr< AnimTargetElement > AnimTargetElementPtr;
+	typedef std::shared_ptr< AnimTargetElement > AnimTargetElementPtr;
 
     struct AnimationCondition;
 

@@ -29,7 +29,8 @@
 #include <rtl/ustring.hxx>
 #include <vcl/bitmapex.hxx>
 #include <vcl/bmpacc.hxx>
-#include <boost/scoped_ptr.hpp>
+#include <memory>
+#include <memory>
 
 namespace sd { namespace slidesorter {
 class SlideSorter;
@@ -41,7 +42,7 @@ namespace sd { namespace slidesorter { namespace view {
 class Theme;
 
 class Button;
-typedef ::boost::shared_ptr<Button> SharedButton;
+typedef ::std::shared_ptr<Button> SharedButton;
 
 /** This is a container of buttons and a coordinating controller.
     The last means that it receives mouse events and forwards them to
@@ -85,7 +86,7 @@ public:
         @return
             Returns an empty pointer when the given index is not valid.
     */
-    ::boost::shared_ptr<Button> GetButton (
+    ::std::shared_ptr<Button> GetButton (
         const bool bIsExcluded,
         const sal_Int32 nIndex) const;
 
@@ -157,15 +158,15 @@ private:
     Point maBackgroundLocation;
     model::SharedPageDescriptor mpDescriptor;
     bool mbIsExcluded;
-    boost::shared_ptr<Button> mpButtonUnderMouse;
+    std::shared_ptr<Button> mpButtonUnderMouse;
     // The button on which the mouse button was pressed.
-    boost::shared_ptr<Button> mpDownButton;
+    std::shared_ptr<Button> mpDownButton;
     ::std::vector<SharedButton> maRegularButtons;
     ::std::vector<SharedButton> maExcludedButtons;
     BitmapEx maNormalBackground;
     BitmapEx maButtonDownBackground;
     bool mbIsMouseOverBar;
-    ::boost::scoped_ptr<BackgroundTheme> mpBackgroundTheme;
+    ::std::unique_ptr<BackgroundTheme> mpBackgroundTheme;
     int mnLockCount;
 
     /** Remember the specified page.  If it differs from mpDescriptor then
@@ -223,7 +224,7 @@ public:
         OutputDevice& rDevice,
         const Point aOffset,
         const double nAlpha,
-        const ::boost::shared_ptr<Theme>& rpTheme) const = 0;
+        const ::std::shared_ptr<Theme>& rpTheme) const = 0;
     virtual void ProcessClick (const model::SharedPageDescriptor& rpDescriptor) = 0;
 
     /** Return the bounding box of the layouted button.
@@ -269,7 +270,7 @@ public:
         OutputDevice& rDevice,
         const Point aOffset,
         const double nAlpha,
-        const ::boost::shared_ptr<Theme>& rpTheme) const;
+        const ::std::shared_ptr<Theme>& rpTheme) const;
     virtual Size GetSize (void) const;
     virtual Size GetSize (const IconSize eIconSize) const;
 
@@ -297,7 +298,7 @@ public:
         OutputDevice& rDevice,
         const Point aOffset,
         const double nAlpha,
-        const ::boost::shared_ptr<Theme>& rpTheme) const;
+        const ::std::shared_ptr<Theme>& rpTheme) const;
     virtual Size GetSize (void) const;
     virtual Size GetSize (const IconSize eIconSize) const;
 

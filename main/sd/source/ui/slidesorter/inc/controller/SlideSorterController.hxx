@@ -34,6 +34,7 @@
 #include <tools/link.hxx>
 #include <tools/gen.hxx>
 #include <comphelper/implementationreference.hxx>
+#include <memory>
 
 namespace sd { namespace slidesorter {
 class SlideSorter;
@@ -123,10 +124,10 @@ public:
     */
     ScrollBarManager& GetScrollBarManager (void);
 
-    ::boost::shared_ptr<CurrentSlideManager> GetCurrentSlideManager (void) const;
-    ::boost::shared_ptr<SlotManager> GetSlotManager (void) const;
-    ::boost::shared_ptr<SelectionManager> GetSelectionManager (void) const;
-    ::boost::shared_ptr<InsertionIndicatorHandler> GetInsertionIndicatorHandler (void) const;
+    ::std::shared_ptr<CurrentSlideManager> GetCurrentSlideManager (void) const;
+    ::std::shared_ptr<SlotManager> GetSlotManager (void) const;
+    ::std::shared_ptr<SelectionManager> GetSelectionManager (void) const;
+    ::std::shared_ptr<InsertionIndicatorHandler> GetInsertionIndicatorHandler (void) const;
 
     /** This method forwards the call to the SlideSorterView and executes
         pending operations like moving selected pages into the visible area.
@@ -231,7 +232,7 @@ public:
 
     /** Return an Animator object.
     */
-    ::boost::shared_ptr<Animator> GetAnimator (void) const;
+    ::std::shared_ptr<Animator> GetAnimator (void) const;
 
     VisibleAreaManager& GetVisibleAreaManager (void) const;
 
@@ -242,16 +243,16 @@ private:
     SlideSorter& mrSlideSorter;
     model::SlideSorterModel& mrModel;
     view::SlideSorterView& mrView;
-    ::boost::scoped_ptr<PageSelector> mpPageSelector;
-    ::boost::scoped_ptr<FocusManager> mpFocusManager;
-    ::boost::shared_ptr<SlotManager> mpSlotManager;
-    ::boost::scoped_ptr<controller::Clipboard> mpClipboard;
-    ::boost::scoped_ptr<ScrollBarManager> mpScrollBarManager;
-    mutable ::boost::shared_ptr<CurrentSlideManager> mpCurrentSlideManager;
-    ::boost::shared_ptr<SelectionManager> mpSelectionManager;
-    ::boost::shared_ptr<InsertionIndicatorHandler> mpInsertionIndicatorHandler;
-    ::boost::shared_ptr<Animator> mpAnimator;
-    ::boost::scoped_ptr<VisibleAreaManager> mpVisibleAreaManager;
+    ::std::unique_ptr<PageSelector> mpPageSelector;
+    ::std::unique_ptr<FocusManager> mpFocusManager;
+    ::std::shared_ptr<SlotManager> mpSlotManager;
+    ::std::unique_ptr<controller::Clipboard> mpClipboard;
+    ::std::unique_ptr<ScrollBarManager> mpScrollBarManager;
+    mutable ::std::shared_ptr<CurrentSlideManager> mpCurrentSlideManager;
+    ::std::shared_ptr<SelectionManager> mpSelectionManager;
+    ::std::shared_ptr<InsertionIndicatorHandler> mpInsertionIndicatorHandler;
+    ::std::shared_ptr<Animator> mpAnimator;
+    ::std::unique_ptr<VisibleAreaManager> mpVisibleAreaManager;
 
     // The listener listens to UNO events and thus is a UNO object.
     // For proper life time management and at the same time free access to

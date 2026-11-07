@@ -58,6 +58,7 @@
 #include <unotools/moduleoptions.hxx>
 
 #include <vector>
+#include <memory>
 
 using namespace ::com::sun::star;
 using namespace ::com::sun::star::uno;
@@ -296,7 +297,7 @@ namespace {
         const bool mbAreAllPagesSelected;
         const bool mbIsShapeSelection;
         const sal_Int32 mnCurrentPageIndex;
-        ::boost::scoped_ptr<MultiSelection> mpSelectedPages;
+        ::std::unique_ptr<MultiSelection> mpSelectedPages;
     };
 
     /** A collection of values that helps to reduce the number of arguments
@@ -309,7 +310,7 @@ namespace {
         PrintInfo (
             const Printer* pPrinter,
             const OUString& rsPrinterSelection,
-            const ::boost::shared_ptr<ViewShell> pView)
+            const ::std::shared_ptr<ViewShell> pView)
             : mpPrinter(pPrinter),
               mnDrawMode(DRAWMODE_DEFAULT),
               msTimeDate(),
@@ -1204,7 +1205,7 @@ namespace {
         }
 
     private:
-        ::boost::scoped_ptr<OutlinerParaObject> mpParaObject;
+        ::std::unique_ptr<OutlinerParaObject> mpParaObject;
     };
 }
 
@@ -1346,14 +1347,14 @@ public:
 
         Printer& rPrinter (*mpPrinter);
 
-        ::boost::shared_ptr<ViewShell> pViewShell (mrBase.GetMainViewShell());
+        ::std::shared_ptr<ViewShell> pViewShell (mrBase.GetMainViewShell());
         if ( ! pViewShell)
             return;
 
         SdDrawDocument* pDocument = pViewShell->GetDoc();
         OSL_ASSERT(pDocument!=NULL);
 
-        ::boost::shared_ptr<DrawViewShell> pDrawViewShell(
+        ::std::shared_ptr<DrawViewShell> pDrawViewShell(
             ::boost::dynamic_pointer_cast<DrawViewShell>(mrBase.GetMainViewShell()));
 
         if ( ! mpPrintView)
@@ -1362,7 +1363,7 @@ public:
         if (nIndex<0 || sal::static_int_cast<sal_uInt32>(nIndex)>=maPrinterPages.size())
             return;
 
-        const ::boost::shared_ptr<PrinterPage> pPage (maPrinterPages[nIndex]);
+        const ::std::shared_ptr<PrinterPage> pPage (maPrinterPages[nIndex]);
         OSL_ASSERT(pPage);
         if ( ! pPage)
             return;
@@ -1423,9 +1424,9 @@ private:
     bool mbIsDisposed;
     Printer* mpPrinter;
     Size maPrinterPageSizePixel;
-    ::boost::scoped_ptr<PrintOptions> mpOptions;
-    ::std::vector< ::boost::shared_ptr< ::sd::PrinterPage> > maPrinterPages;
-    ::boost::scoped_ptr<DrawView> mpPrintView;
+    ::std::unique_ptr<PrintOptions> mpOptions;
+    ::std::vector< ::std::shared_ptr< ::sd::PrinterPage> > maPrinterPages;
+    ::std::unique_ptr<DrawView> mpPrintView;
     bool mbHasOrientationWarningBeenShown;
     ::std::vector<sal_Int32> maSlidesPerPage;
     awt::Size maPrintSize;
@@ -1845,7 +1846,7 @@ private:
             }
 
             maPrinterPages.push_back(
-                ::boost::shared_ptr<PrinterPage>(
+                ::std::shared_ptr<PrinterPage>(
                     new OutlinerPrinterPage(
                         pOutliner->CreateParaObject(),
                         aMap,
@@ -1925,7 +1926,7 @@ private:
             aMap.SetOrigin(Point());
         }
 
-        ::boost::shared_ptr<ViewShell> pViewShell (mrBase.GetMainViewShell());
+        ::std::shared_ptr<ViewShell> pViewShell (mrBase.GetMainViewShell());
         pViewShell->WriteFrameViewData();
 
         // Count page shapes.
@@ -1964,7 +1965,7 @@ private:
             if (!aPageIndices.empty() && (aPageIndices.size() == nShapeCount || nIndex==nCount))
             {
                 maPrinterPages.push_back(
-                    ::boost::shared_ptr<PrinterPage>(
+                    ::std::shared_ptr<PrinterPage>(
                         new HandoutPrinterPage(
                             nHandoutPageIndex++,
                             aPageIndices,
@@ -2020,7 +2021,7 @@ private:
         const PageKind ePageKind,
         PrintInfo& rInfo)
     {
-        ::boost::shared_ptr<ViewShell> pViewShell (mrBase.GetMainViewShell());
+        ::std::shared_ptr<ViewShell> pViewShell (mrBase.GetMainViewShell());
         pViewShell->WriteFrameViewData();
         Point aPtZero;
 
@@ -2200,7 +2201,7 @@ private:
                 else
                     aSecondOffset.Y() += aAdjustedPrintSize.Height() / 2;
                 maPrinterPages.push_back(
-                    ::boost::shared_ptr<PrinterPage>(
+                    ::std::shared_ptr<PrinterPage>(
                         new BookletPrinterPage(
                             aPair.first,
                             aPair.second,
@@ -2236,7 +2237,7 @@ private:
             nPaperBin = rInfo.mpPrinter->GetPaperBin();
 
         maPrinterPages.push_back(
-            ::boost::shared_ptr<PrinterPage>(
+            ::std::shared_ptr<PrinterPage>(
                 new TiledPrinterPage(
                     sal::static_int_cast<sal_uInt16>(nPageIndex),
                     ePageKind,
@@ -2292,7 +2293,7 @@ private:
                 aMap.SetOrigin(Point(0,0));
             #endif
             maPrinterPages.push_back(
-                ::boost::shared_ptr<PrinterPage>(
+                ::std::shared_ptr<PrinterPage>(
                     new RegularPrinterPage(
                         sal::static_int_cast<sal_uInt16>(nPageIndex),
                         ePageKind,
@@ -2332,7 +2333,7 @@ private:
                 {
                     aMap.SetOrigin(aPageOrigin);
                     maPrinterPages.push_back(
-                        ::boost::shared_ptr<PrinterPage>(
+                        ::std::shared_ptr<PrinterPage>(
                             new RegularPrinterPage(
                                 sal::static_int_cast<sal_uInt16>(nPageIndex),
                                 ePageKind,

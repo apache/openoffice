@@ -59,6 +59,7 @@
 
 #include <canvas/canvastools.hxx>
 #include <canvas/parametricpolypolygon.hxx>
+#include <boost/bind.hpp>
 
 #include <boost/bind.hpp>
 #include <boost/tuple/tuple.hpp>

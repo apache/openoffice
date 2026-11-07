@@ -39,8 +39,8 @@
 #include "MutexOwner.hxx"
 
 #include <vector>
-#include <boost/scoped_ptr.hpp>
-#include <boost/shared_ptr.hpp>
+#include <memory>
+#include <memory>
 
 namespace sd { namespace tools {
     class EventMultiplexerEvent;
@@ -81,7 +81,7 @@ public:
 
     virtual void SAL_CALL disposing (void);
 
-    ::boost::shared_ptr< ::TabControl> GetTabControl (void) const;
+    ::std::shared_ptr< ::TabControl> GetTabControl (void) const;
 
     bool ActivatePage (void);
 
@@ -159,14 +159,14 @@ public:
         GetTabBarButtons (void);
 
 private:
-    ::boost::shared_ptr< ::TabControl> mpTabControl;
+    ::std::shared_ptr< ::TabControl> mpTabControl;
     ::com::sun::star::uno::Reference<
         ::com::sun::star::frame::XController> mxController;
     ::com::sun::star::uno::Reference<
         ::com::sun::star::drawing::framework::XConfigurationController> mxConfigurationController;
     typedef ::std::vector<com::sun::star::drawing::framework::TabBarButton> TabBarButtonList;
     TabBarButtonList maTabBarButtons;
-    ::boost::scoped_ptr<TabPage> mpTabPage;
+    ::std::unique_ptr<TabPage> mpTabPage;
     ::com::sun::star::uno::Reference<
         ::com::sun::star::drawing::framework::XResourceId> mxViewTabBarId;
     ViewShellBase* mpViewShellBase;

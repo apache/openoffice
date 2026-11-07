@@ -31,8 +31,8 @@
 #include <map>
 #include <string>
 
-#include <boost/shared_ptr.hpp>
-#include <boost/array.hpp>
+#include <memory>
+#include <array>
 
 #include <com/sun/star/uno/Any.hxx>
 #include <com/sun/star/xml/sax/XFastAttributeList.hpp>
@@ -78,7 +78,7 @@ private:
 
 class LayoutAtom;
 
-typedef boost::shared_ptr< LayoutAtom > LayoutAtomPtr;
+typedef std::shared_ptr< LayoutAtom > LayoutAtomPtr;
 
 /** abstract Atom for the layout */
 class LayoutAtom
@@ -129,7 +129,7 @@ private:
 	IteratorAttr maIter;
 };
 
-typedef boost::shared_ptr< ForEachAtom > ForEachAtomPtr;
+typedef std::shared_ptr< ForEachAtom > ForEachAtomPtr;
 
 
 class ConditionAtom
@@ -155,7 +155,7 @@ private:
 	ConditionAttr maCond;
 };
 
-typedef boost::shared_ptr< ConditionAtom > ConditionAtomPtr;
+typedef std::shared_ptr< ConditionAtom > ConditionAtomPtr;
 
 
 /** "choose" statements. Atoms will be tested in order. */
@@ -185,7 +185,7 @@ public:
 	};
 	// we know that the array is of fixed size
 	// the use of Any allow having empty values
-	typedef boost::array< ::com::sun::star::uno::Any, 9 > VarMap;
+	typedef std::array< ::com::sun::star::uno::Any, 9 > VarMap;
 
 	virtual ~LayoutNode()
 		{}
@@ -198,7 +198,7 @@ private:
 	std::vector< ShapePtr >      mpShapes;
 };
 
-typedef boost::shared_ptr< LayoutNode > LayoutNodePtr;
+typedef std::shared_ptr< LayoutNode > LayoutNodePtr;
 
 } }
 

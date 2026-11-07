@@ -33,8 +33,8 @@
 #include <sfx2/viewfac.hxx>
 #include <sfx2/dockwin.hxx>
 
-#include <boost/shared_ptr.hpp>
-#include <boost/scoped_ptr.hpp>
+#include <memory>
+#include <memory>
 
 class PopupMenu;
 
@@ -131,9 +131,9 @@ public:
 			);
 
 private:
-	::boost::scoped_ptr< ToolPanelViewShell_Impl > mpImpl;
+	::std::unique_ptr< ToolPanelViewShell_Impl > mpImpl;
 
-	::boost::shared_ptr<TaskPaneShellManager> mpSubShellManager;
+	::std::shared_ptr<TaskPaneShellManager> mpSubShellManager;
 
 	/** The id of the menu in the menu bar/tool box of the parent docking
 		window.
