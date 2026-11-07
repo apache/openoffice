@@ -35,6 +35,7 @@
 #include <section.hxx>
 #include <fmtftntx.hxx>
 #include <rootfrm.hxx>
+#include <functional>
 
 
 _SV_IMPL_SORTAR_ALG( _SwFtnIdxs, SwTxtFtnPtr )
@@ -290,7 +291,7 @@ void SwFtnIdxs::UpdateAllFtn()
 	}
 
 	if( pTmpRoot && FTNNUM_PAGE == rFtnInfo.eNum )
-		std::for_each( aAllLayouts.begin(), aAllLayouts.end(),std::mem_fun(&SwRootFrm::UpdateFtnNums));//swmod 0
+		std::for_each( aAllLayouts.begin(), aAllLayouts.end(),std::mem_fn(&SwRootFrm::UpdateFtnNums));//swmod 0
 }
 
 SwTxtFtn* SwFtnIdxs::SeekEntry( const SwNodeIndex& rPos, sal_uInt16* pFndPos ) const

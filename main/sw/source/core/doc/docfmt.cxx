@@ -78,6 +78,7 @@
 #include <istyleaccess.hxx>
 #include <SwUndoFmt.hxx>
 #include <docsh.hxx>
+#include <functional>
 
 using namespace ::com::sun::star::i18n;
 using namespace ::com::sun::star::lang;
@@ -2206,7 +2207,7 @@ void SwDoc::CopyPageDesc( const SwPageDesc& rSrcDesc, SwPageDesc& rDstDesc,
 	if( bNotifyLayout && pTmpRoot )
 	{
 		std::set<SwRootFrm*> aAllLayouts = GetAllLayouts();//swmod 080225
-		std::for_each( aAllLayouts.begin(), aAllLayouts.end(),std::mem_fun(&SwRootFrm::AllCheckPageDescs));//swmod 080226
+		std::for_each( aAllLayouts.begin(), aAllLayouts.end(),std::mem_fn(&SwRootFrm::AllCheckPageDescs));//swmod 080226
 	}
 
 	//Wenn sich FussnotenInfo veraendert, so werden die Seiten

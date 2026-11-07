@@ -73,6 +73,7 @@
 #ifndef _UCBHELPER_CONTENTIDENTIFIER_HXX
 #include <ucbhelper/contentidentifier.hxx>
 #endif
+#include <functional>
 
 
 using namespace ::com::sun::star::uno;
@@ -110,7 +111,7 @@ ODefinitionContainer_Impl::const_iterator ODefinitionContainer_Impl::find( TCont
         m_aDefinitions.begin(),
         m_aDefinitions.end(),
         ::std::compose1(
-			::std::bind2nd( ::std::equal_to< TContentPtr >(), _pDefinition ),
+			::std::bind( ::std::equal_to< TContentPtr >(), ::std::placeholders::_1, _pDefinition ),
             ::std::select2nd< NamedDefinitions::value_type >()
         )
     );
@@ -123,7 +124,7 @@ ODefinitionContainer_Impl::iterator ODefinitionContainer_Impl::find( TContentPtr
         m_aDefinitions.begin(),
         m_aDefinitions.end(),
         ::std::compose1(
-			::std::bind2nd( ::std::equal_to< TContentPtr >(), _pDefinition ),
+			::std::bind( ::std::equal_to< TContentPtr >(), ::std::placeholders::_1, _pDefinition ),
             ::std::select2nd< NamedDefinitions::value_type >()
         )
     );

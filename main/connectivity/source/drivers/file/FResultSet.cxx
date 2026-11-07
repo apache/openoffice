@@ -50,6 +50,7 @@
 #include <com/sun/star/sdbcx/XIndexesSupplier.hpp>
 
 #include <algorithm>
+#include <functional>
 #include <comphelper/extract.hxx>
 #include "connectivity/dbexception.hxx"
 #include <comphelper/types.hxx>
@@ -1564,7 +1565,7 @@ sal_Bool OResultSet::OpenImpl()
 						}
 
 						m_pFileSet->get().erase(::std::remove_if(m_pFileSet->get().begin(),m_pFileSet->get().end(),
-															::std::bind2nd(::std::equal_to<sal_Int32>(),0))
+															::std::bind(::std::equal_to<sal_Int32>(), ::std::placeholders::_1,0))
 										  ,m_pFileSet->get().end());
 
 						if (bWasSorted)

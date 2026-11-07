@@ -31,6 +31,7 @@
 #include <com/sun/star/lang/DisposedException.hpp>
 #include "diagnose_ex.h"
 #include <osl/thread.h>
+#include <functional>
 
 //........................................................................
 namespace connectivity
@@ -181,7 +182,7 @@ namespace connectivity
 			// check if the storage is already in our map
 			TStorages::iterator aFind = ::std::find_if(rMap.begin(),rMap.end(),
 										::std::compose1(
-											::std::bind2nd(::std::equal_to<Reference<XStorage> >(),_xStorage)
+											::std::bind(::std::equal_to<Reference<XStorage> >(), ::std::placeholders::_1,_xStorage)
 											,::std::compose1(::std::select1st<TStorageURLPair>(),::std::compose1(::std::select1st<TStorages::mapped_type>(),::std::select2nd<TStorages::value_type>())))
 					);
 			if ( aFind == rMap.end() )
@@ -212,7 +213,7 @@ namespace connectivity
 			// check if the storage is already in our map
 			TStorages::iterator aFind = ::std::find_if(rMap.begin(),rMap.end(),
 										::std::compose1(
-											::std::bind2nd(::std::equal_to<Reference<XStorage> >(),_xStorage)
+											::std::bind(::std::equal_to<Reference<XStorage> >(), ::std::placeholders::_1,_xStorage)
 											,::std::compose1(::std::select1st<TStorageURLPair>(),::std::compose1(::std::select1st<TStorages::mapped_type>(),::std::select2nd<TStorages::value_type>())))
 					);
 			if ( aFind != rMap.end() )

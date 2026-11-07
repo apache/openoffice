@@ -54,6 +54,7 @@
 #include <tools/debug.hxx>
 #include <tools/diagnose_ex.h>
 #include <vcl/msgbox.hxx>
+#include <functional>
 
 //........................................................................
 namespace dbaui
@@ -249,7 +250,7 @@ namespace dbaui
                 aTypes.getConstArray(),
                 aTypes.getConstArray() + aTypes.getLength(),
                 aStrippedTypes.getArray(),
-                ::std::bind2nd( ::std::equal_to< Type >(), XScriptInvocationContext::static_type() )
+                ::std::bind( ::std::equal_to< Type >(), ::std::placeholders::_1, XScriptInvocationContext::static_type() )
             );
             aTypes = aStrippedTypes;
         }

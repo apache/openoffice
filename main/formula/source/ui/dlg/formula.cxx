@@ -68,6 +68,7 @@
 #include <boost/bind.hpp>
 #include <comphelper/processfactory.hxx>
 #include <map>
+#include <functional>
 
 #define TOKEN_OPEN  0
 #define TOKEN_CLOSE 1
@@ -553,7 +554,7 @@ xub_StrLen FormulaDlg_Impl::GetFunctionPos(xub_StrLen nPos)
 				    bFlag=sal_False;
 				    nFuncPos=nPrevFuncPos;
 			    }
-                bool bIsFunction = ::std::find_if(m_aFunctionOpCodes.getConstArray(),m_pFunctionOpCodesEnd,::std::bind2nd(OpCodeCompare(),boost::cref(eOp))) != m_pFunctionOpCodesEnd;
+                bool bIsFunction = ::std::find_if(m_aFunctionOpCodes.getConstArray(),m_pFunctionOpCodesEnd,::std::bind(OpCodeCompare(), ::std::placeholders::_1,boost::cref(eOp))) != m_pFunctionOpCodesEnd;
 
 			    if ( bIsFunction && m_aSpecialOpCodes[sheet::FormulaMapGroupSpecialOffset::SPACES].Token.OpCode != eOp )
 			    {

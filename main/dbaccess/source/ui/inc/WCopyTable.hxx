@@ -82,7 +82,7 @@ namespace dbaui
 		inline bool operator()(const ::rtl::OUString& _sColumnName)	const
 		{
 			return ::std::find_if(m_pVector->begin(),m_pVector->end(),
-				::std::bind2nd(m_aCase, _sColumnName)) != m_pVector->end();
+				::std::bind(m_aCase, ::std::placeholders::_1, _sColumnName)) != m_pVector->end();
 		}
     };
 

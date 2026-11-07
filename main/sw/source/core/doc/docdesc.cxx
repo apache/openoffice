@@ -73,6 +73,7 @@
 #include <pagedeschint.hxx>
 #include <tgrditem.hxx>
 #include <drawdoc.hxx>
+#include <functional>
 
 using namespace com::sun::star;
 
@@ -427,7 +428,7 @@ void SwDoc::ChgPageDesc( sal_uInt16 i, const SwPageDesc &rChged )
 		// notify Layot!
 	{
 		std::set<SwRootFrm*> aAllLayouts = GetAllLayouts();
-		std::for_each( aAllLayouts.begin(), aAllLayouts.end(),std::mem_fun(&SwRootFrm::AllCheckPageDescs));//swmod 080304
+		std::for_each( aAllLayouts.begin(), aAllLayouts.end(),std::mem_fn(&SwRootFrm::AllCheckPageDescs));//swmod 080304
 	}
 
 	// now take over the page attributes
@@ -496,7 +497,7 @@ void SwDoc::PreDelPageDesc(SwPageDesc * pDel)
         if ( bHasLayout )
         {
             std::set<SwRootFrm*> aAllLayouts = GetAllLayouts();
-            std::for_each( aAllLayouts.begin(), aAllLayouts.end(),std::bind2nd(std::mem_fun(&SwRootFrm::CheckFtnPageDescs), false));
+            std::for_each( aAllLayouts.begin(), aAllLayouts.end(),std::bind(std::mem_fn(&SwRootFrm::CheckFtnPageDescs), std::placeholders::_1, false));
         }
     }
     else if ( pEndNoteInfo->DependsOn( pDel ) )
@@ -505,7 +506,7 @@ void SwDoc::PreDelPageDesc(SwPageDesc * pDel)
         if ( bHasLayout )
         {
             std::set<SwRootFrm*> aAllLayouts = GetAllLayouts();
-            std::for_each( aAllLayouts.begin(), aAllLayouts.end(),std::bind2nd(std::mem_fun(&SwRootFrm::CheckFtnPageDescs), true));
+            std::for_each( aAllLayouts.begin(), aAllLayouts.end(),std::bind(std::mem_fn(&SwRootFrm::CheckFtnPageDescs), std::placeholders::_1, true));
         }
     }
 
@@ -517,7 +518,7 @@ void SwDoc::PreDelPageDesc(SwPageDesc * pDel)
             if( bHasLayout )
             {
                 std::set<SwRootFrm*> aAllLayouts = GetAllLayouts();
-                std::for_each( aAllLayouts.begin(), aAllLayouts.end(),std::mem_fun(&SwRootFrm::AllCheckPageDescs));//swmod 080228
+                std::for_each( aAllLayouts.begin(), aAllLayouts.end(),std::mem_fn(&SwRootFrm::AllCheckPageDescs));//swmod 080228
             }
         }
     }
@@ -688,7 +689,7 @@ void SwDoc::PrtDataChanged()
 			pFntCache->Flush();
 
 			std::set<SwRootFrm*> aAllLayouts = GetAllLayouts();
-			std::for_each( aAllLayouts.begin(), aAllLayouts.end(),std::bind2nd(std::mem_fun(&SwRootFrm::InvalidateAllCntnt), INV_SIZE));//swmod 080304
+			std::for_each( aAllLayouts.begin(), aAllLayouts.end(),std::bind(std::mem_fn(&SwRootFrm::InvalidateAllCntnt), std::placeholders::_1, INV_SIZE));//swmod 080304
 
 			if ( pSh )
 			{

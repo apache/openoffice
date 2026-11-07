@@ -93,6 +93,7 @@
 #include <connectivity/dbmetadata.hxx>
 
 #include <algorithm>
+#include <functional>
 
 //.........................................................................
 namespace dbaui
@@ -271,7 +272,7 @@ namespace
 			aRet.first = lhs;
 			const ::rtl::OUString* pIter = m_aViews.getConstArray();
 			const ::rtl::OUString* pEnd = m_aViews.getConstArray() + m_aViews.getLength();
-			aRet.second = (::std::find_if(pIter,pEnd,::std::bind2nd(m_aEqualFunctor,lhs)) != pEnd);
+			aRet.second = (::std::find_if(pIter,pEnd,::std::bind(m_aEqualFunctor, ::std::placeholders::_1,lhs)) != pEnd);
 
 			return aRet;
 		}
@@ -337,9 +338,9 @@ void OTableTreeListBox::UpdateTableList( const Reference< XConnection >& _rxConn
 		{
 			String sRootEntryText;
 			TNames::const_iterator aViews = ::std::find_if(_rTables.begin(),_rTables.end(),
-			::std::compose1(::std::bind2nd(::std::equal_to<sal_Bool>(),sal_False),::std::select2nd<TNames::value_type>()));
+			::std::compose1(::std::bind(::std::equal_to<sal_Bool>(), ::std::placeholders::_1,sal_False),::std::select2nd<TNames::value_type>()));
 			TNames::const_iterator aTables = ::std::find_if(_rTables.begin(),_rTables.end(),
-			::std::compose1(::std::bind2nd(::std::equal_to<sal_Bool>(),sal_True),::std::select2nd<TNames::value_type>()));
+			::std::compose1(::std::bind(::std::equal_to<sal_Bool>(), ::std::placeholders::_1,sal_True),::std::select2nd<TNames::value_type>()));
 
 			if ( aViews == _rTables.end() )
 				sRootEntryText  = String(ModuleRes(STR_ALL_TABLES));

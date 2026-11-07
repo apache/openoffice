@@ -227,8 +227,8 @@ void OSectionUndo::Redo()
 TYPEINIT1( OReportSectionUndo, OSectionUndo );
 //----------------------------------------------------------------------------
 OReportSectionUndo::OReportSectionUndo(OReportModel& _rMod,sal_uInt16 _nSlot
-									   ,::std::mem_fun_t< uno::Reference< report::XSection >
-											,OReportHelper> _pMemberFunction
+									   ,::std::function< uno::Reference< report::XSection >
+											(OReportHelper*)> _pMemberFunction
 									   ,const uno::Reference< report::XReportDefinition >& _xReport
 									   ,Action _eAction
 									   ,sal_uInt16 nCommentID)
@@ -266,8 +266,8 @@ void OReportSectionUndo::implReRemove( )
 TYPEINIT1( OGroupSectionUndo, OSectionUndo );
 //----------------------------------------------------------------------------
 OGroupSectionUndo::OGroupSectionUndo(OReportModel& _rMod,sal_uInt16 _nSlot
-									   ,::std::mem_fun_t< uno::Reference< report::XSection >
-											,OGroupHelper> _pMemberFunction
+									   ,::std::function< uno::Reference< report::XSection >
+											(OGroupHelper*)> _pMemberFunction
 									   ,const uno::Reference< report::XGroup >& _xGroup
 									   ,Action _eAction
 									   ,sal_uInt16 nCommentID)

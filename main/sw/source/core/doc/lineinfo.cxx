@@ -33,6 +33,7 @@
 #include "rootfrm.hxx"
 #include "viewsh.hxx"
 #include <set>
+#include <functional>
 void SwDoc::SetLineNumberInfo( const SwLineNumberInfo &rNew )
 {
 	SwRootFrm* pTmpRoot = GetCurrentLayout();//swmod 080219
@@ -45,7 +46,7 @@ void SwDoc::SetLineNumberInfo( const SwLineNumberInfo &rNew )
         // FME 2007-08-14 #i80120# Invalidate size, because ChgThisLines()
         // is only (onny may only be) called by the formatting routines
         //pTmpRoot->InvalidateAllCntnt( INV_LINENUM | INV_SIZE );
-		std::for_each( aAllLayouts.begin(), aAllLayouts.end(),std::bind2nd(std::mem_fun(&SwRootFrm::InvalidateAllCntnt), INV_LINENUM | INV_SIZE));//swmod 080226
+		std::for_each( aAllLayouts.begin(), aAllLayouts.end(),std::bind(std::mem_fn(&SwRootFrm::InvalidateAllCntnt), std::placeholders::_1, INV_LINENUM | INV_SIZE));//swmod 080226
 		 pTmpRoot->EndAllAction();
 	}	//swmod 080219
 	*pLineNumberInfo = rNew;
@@ -147,7 +148,7 @@ void SwLineNumberInfo::Modify( const SfxPoolItem* pOld, const SfxPoolItem* pNew 
 	{
 		pRoot->StartAllAction();
 		std::set<SwRootFrm*> aAllLayouts = pDoc->GetAllLayouts();
-		std::for_each( aAllLayouts.begin(), aAllLayouts.end(),std::mem_fun(&SwRootFrm::AllAddPaintRect));//swmod 080305
+		std::for_each( aAllLayouts.begin(), aAllLayouts.end(),std::mem_fn(&SwRootFrm::AllAddPaintRect));//swmod 080305
 		//pRoot->GetCurrShell()->AddPaintRect( pRoot->Frm() );
 		pRoot->EndAllAction();
 	}

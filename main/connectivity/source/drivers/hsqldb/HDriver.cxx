@@ -52,6 +52,7 @@
 #include <unotools/ucbstreamhelper.hxx>
 #include "resource/hsqldb_res.hrc"
 #include "resource/sharedresources.hxx"
+#include <functional>
 
 //........................................................................
 namespace connectivity
@@ -587,7 +588,7 @@ namespace connectivity
             {
                 ::rtl::OUString sKey = StorageContainer::getRegisteredKey(xStorage);
                 TWeakPairVector::iterator i = ::std::find_if(m_aConnections.begin(),m_aConnections.end(),::std::compose1(
-                                ::std::bind2nd(::std::equal_to< ::rtl::OUString >(),sKey)
+                                ::std::bind(::std::equal_to< ::rtl::OUString >(), ::std::placeholders::_1,sKey)
                                 ,::std::compose1(::std::select1st<TWeakConnectionPair>(),::std::select2nd< TWeakPair >())));
                 if ( i != m_aConnections.end() )
                     shutdownConnection(i);
@@ -639,7 +640,7 @@ namespace connectivity
         if ( sKey.getLength() )
         {
             TWeakPairVector::iterator i = ::std::find_if(m_aConnections.begin(),m_aConnections.end(),::std::compose1(
-                            ::std::bind2nd(::std::equal_to< ::rtl::OUString >(),sKey)
+                            ::std::bind(::std::equal_to< ::rtl::OUString >(), ::std::placeholders::_1,sKey)
                             ,::std::compose1(::std::select1st<TWeakConnectionPair>(),::std::select2nd< TWeakPair >())));
             OSL_ENSURE( i != m_aConnections.end(), "ODriverDelegator::preCommit: they're committing a storage which I do not know!" );
             if ( i != m_aConnections.end() )

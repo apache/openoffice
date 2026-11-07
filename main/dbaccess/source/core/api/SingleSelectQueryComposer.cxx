@@ -63,6 +63,7 @@
 #include <unotools/sharedunocomponent.hxx>
 
 #include <memory>
+#include <functional>
 
 using namespace ::dbaccess;
 using namespace ::dbtools;
@@ -480,14 +481,14 @@ Sequence< Sequence< PropertyValue > > SAL_CALL OSingleSelectQueryComposer::getSt
 void SAL_CALL OSingleSelectQueryComposer::appendHavingClauseByColumn( const Reference< XPropertySet >& column, sal_Bool andCriteria,sal_Int32 filterOperator )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OSingleSelectQueryComposer::appendHavingClauseByColumn" );
-	::std::mem_fun1_t<bool,OSingleSelectQueryComposer,::rtl::OUString> F_tmp(&OSingleSelectQueryComposer::implSetHavingClause);
+	::std::function<bool(OSingleSelectQueryComposer*,::rtl::OUString)> F_tmp(&OSingleSelectQueryComposer::implSetHavingClause);
 	setConditionByColumn(column,andCriteria,F_tmp,filterOperator);
 }
 // -----------------------------------------------------------------------------
 void SAL_CALL OSingleSelectQueryComposer::appendFilterByColumn( const Reference< XPropertySet >& column, sal_Bool andCriteria,sal_Int32 filterOperator )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OSingleSelectQueryComposer::appendFilterByColumn" );
-	::std::mem_fun1_t<bool,OSingleSelectQueryComposer,::rtl::OUString> F_tmp(&OSingleSelectQueryComposer::implSetFilter);
+	::std::function<bool(OSingleSelectQueryComposer*,::rtl::OUString)> F_tmp(&OSingleSelectQueryComposer::implSetFilter);
 	setConditionByColumn(column,andCriteria,F_tmp,filterOperator);
 }
 // -----------------------------------------------------------------------------
@@ -956,12 +957,12 @@ Reference< XNameAccess > SAL_CALL OSingleSelectQueryComposer::getColumns(  )
 					xProp->getPropertyValue(PROPERTY_NAME) >>= sColumnName;
 
 
-                aFindName = ::std::find_if(aNames.begin(),aNames.end(),::std::bind2nd(aCaseCompareFunctor,sColumnName));
+                aFindName = ::std::find_if(aNames.begin(),aNames.end(),::std::bind(aCaseCompareFunctor, ::std::placeholders::_1,sColumnName));
                 sal_Int32 j = 0;
                 while ( aFindName != aNames.end() )
                 {
                     sColumnName += ::rtl::OUString::valueOf(++j);
-                    aFindName = ::std::find_if(aNames.begin(),aNames.end(),::std::bind2nd(aCaseCompareFunctor,sColumnName));
+                    aFindName = ::std::find_if(aNames.begin(),aNames.end(),::std::bind(aCaseCompareFunctor, ::std::placeholders::_1,sColumnName));
                 }
 
                 pColumn->setName(sColumnName);
@@ -1600,7 +1601,7 @@ void SAL_CALL OSingleSelectQueryComposer::setStructuredHavingClause( const Seque
 	setHavingClause(lcl_getCondition(filter,aPredicateInput,getColumns(), m_xMetaData->getIdentifierQuoteString()));
 }
 // -----------------------------------------------------------------------------
-void OSingleSelectQueryComposer::setConditionByColumn( const Reference< XPropertySet >& column, sal_Bool andCriteria ,::std::mem_fun1_t<bool,OSingleSelectQueryComposer,::rtl::OUString>& _aSetFunctor,sal_Int32 filterOperator)
+void OSingleSelectQueryComposer::setConditionByColumn( const Reference< XPropertySet >& column, sal_Bool andCriteria ,::std::function<bool(OSingleSelectQueryComposer*,::rtl::OUString)>& _aSetFunctor,sal_Int32 filterOperator)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OSingleSelectQueryComposer::setConditionByColumn" );
 	::connectivity::checkDisposed(OSubComponent::rBHelper.bDisposed);

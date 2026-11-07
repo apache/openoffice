@@ -1074,7 +1074,7 @@ void OJoinTableView::InvalidateConnections()
 	//////////////////////////////////////////////////////////////////////
 	// Die Joins zeichnen
 	::std::for_each(m_vTableConnection.begin(),m_vTableConnection.end(),
-		::std::mem_fun(& OTableConnection::InvalidateConnection));
+		::std::mem_fn(& OTableConnection::InvalidateConnection));
 }
 
 //------------------------------------------------------------------------------
@@ -1095,14 +1095,14 @@ void OJoinTableView::DrawConnections( const Rectangle& rRect )
 {
 	return ::std::find_if(	m_vTableConnection.begin(),
 							m_vTableConnection.end(),
-							::std::bind2nd(::std::mem_fun(&OTableConnection::isTableConnection),_pFromWin));
+							::std::bind(::std::mem_fn(&OTableConnection::isTableConnection), ::std::placeholders::_1,_pFromWin));
 }
 // -----------------------------------------------------------------------------
 sal_Int32 OJoinTableView::getConnectionCount(const OTableWindow* _pFromWin) const
 {
 	return ::std::count_if(	m_vTableConnection.begin(),
 							m_vTableConnection.end(),
-							::std::bind2nd(::std::mem_fun(&OTableConnection::isTableConnection),_pFromWin));
+							::std::bind(::std::mem_fn(&OTableConnection::isTableConnection), ::std::placeholders::_1,_pFromWin));
 }
 //------------------------------------------------------------------------------
 sal_Bool OJoinTableView::ExistsAConn(const OTableWindow* pFrom) const
@@ -1311,7 +1311,7 @@ void OJoinTableView::Command(const CommandEvent& rEvt)
 				if( pSelConnection )
 				{
 					const ::std::vector<OConnectionLine*>* pLines = pSelConnection->GetConnLineList();
-					::std::vector<OConnectionLine*>::const_iterator aIter = ::std::find_if(pLines->begin(),pLines->end(),::std::mem_fun(&OConnectionLine::IsValid));
+					::std::vector<OConnectionLine*>::const_iterator aIter = ::std::find_if(pLines->begin(),pLines->end(),::std::mem_fn(&OConnectionLine::IsValid));
 					if( aIter != pLines->end() )
 						executePopup((*aIter)->getMidPoint(),pSelConnection);
 				}

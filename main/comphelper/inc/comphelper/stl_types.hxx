@@ -183,7 +183,7 @@ struct OInterfaceCompare
 };
 
 template <class _Tp, class _Arg>
-class mem_fun1_t : public ::std::binary_function<_Tp*,_Arg,void>
+class mem_fun1_t
 {
 public:
 	typedef _Tp* first_argument_type;

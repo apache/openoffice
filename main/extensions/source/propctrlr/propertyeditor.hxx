@@ -33,6 +33,7 @@
 #include <comphelper/stl_types.hxx>
 #include <boost/mem_fn.hpp>
 #include <map>
+#include <functional>
 
 //............................................................................
 namespace pcr
@@ -134,7 +135,7 @@ namespace pcr
         OBrowserPage* getPage( const ::rtl::OUString& _rPropertyName );
         const OBrowserPage* getPage( const ::rtl::OUString& _rPropertyName ) const;
 
-        void Update(const ::std::mem_fun_t<void,OBrowserListBox>& _aUpdateFunction);
+        void Update(const ::std::function<void(OBrowserListBox*)>& _aUpdateFunction);
 
         typedef void (OPropertyEditor::*PageOperation)( OBrowserPage&, const void* );
         void    forEachPage( PageOperation _pOperation, const void* _pArgument = NULL );

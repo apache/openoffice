@@ -33,6 +33,7 @@
 #include <limits.h>
 #include <vector>
 #include <algorithm>
+#include <functional>
 #include <boost/bind.hpp>
 #include <vos/mutex.hxx>
 #include <vcl/window.hxx>
@@ -1105,7 +1106,7 @@ sal_Unicode cNewLine(0x0a);
             {
                 const beans::PropertyValue* pItr = aSeq.getConstArray();
                 const beans::PropertyValue* pEnd  = pItr + aSeq.getLength();
-                const beans::PropertyValue* pFind = ::std::find_if( pItr, pEnd, ::std::bind2nd( PropertyValueEqualFunctor(), boost::cref( *aItr ) ) );
+                const beans::PropertyValue* pFind = ::std::find_if( pItr, pEnd, ::std::bind( PropertyValueEqualFunctor(), ::std::placeholders::_1, boost::cref( *aItr ) ) );
                 if ( pFind != pEnd )
                 {
                     aIntersectionVec.push_back( *pFind );
@@ -1143,7 +1144,7 @@ sal_Unicode cNewLine(0x0a);
         {
             const beans::PropertyValue* pItr = aIntersectionSeq.getConstArray();
             const beans::PropertyValue* pEnd  = pItr + aIntersectionSeq.getLength();
-            const beans::PropertyValue* pFind = ::std::find_if( pItr, pEnd, ::std::bind2nd( PropertyValueEqualFunctor(), boost::cref( pDefAttr[i] ) ) );
+            const beans::PropertyValue* pFind = ::std::find_if( pItr, pEnd, ::std::bind( PropertyValueEqualFunctor(), ::std::placeholders::_1, boost::cref( pDefAttr[i] ) ) );
             if ( pFind == pEnd && pDefAttr[i].Handle != 0)
             {
                 aDiffVec.push_back( pDefAttr[i] );
