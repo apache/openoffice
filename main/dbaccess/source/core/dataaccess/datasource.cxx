@@ -764,6 +764,15 @@ Reference< XConnection > ODatabaseSource::buildLowLevelConnection(const ::rtl::O
 				aDriverInfo[nCount].Name = ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("Storage"));
                 Reference< css::document::XDocumentSubStorageSupplier> xDocSup( m_pImpl->getDocumentSubStorageSupplier() );
 				aDriverInfo[nCount++].Value <<= xDocSup->getDocumentSubStorage(::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("database")),ElementModes::READWRITE);
+
+                // lets the embedded driver ask before it converts a database from an older engine
+                Reference< XInteractionHandler > xHandler( m_pImpl->getMediaDescriptor().getOrDefault( "InteractionHandler", Reference< XInteractionHandler >() ) );
+                if ( xHandler.is() )
+                {
+                    aDriverInfo.realloc( nCount + 1 );
+                    aDriverInfo[nCount].Name = ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("InteractionHandler"));
+                    aDriverInfo[nCount++].Value <<= xHandler;
+                }
 			}
 			if (nAdditionalArgs)
 				xReturn = xManager->getConnectionWithInfo(m_pImpl->m_sConnectURL, ::comphelper::concatSequences(aUserPwd,aDriverInfo));
