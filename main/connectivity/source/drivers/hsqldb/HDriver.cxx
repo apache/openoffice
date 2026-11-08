@@ -273,7 +273,7 @@ namespace connectivity
 				aProperties.put( "jdbc.interval_as_varchar", ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "true" ) ) );
 				aProperties.put( "get_column_name", ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "false" ) ) );
 
-                bool bAskUser = false,bModified = false;
+                bool bAskUser = false;
                 ::rtl::OUString sMessage;
                 ::rtl::OUString sProperties( RTL_CONSTASCII_USTRINGPARAM( "properties" ) );
                 try
@@ -298,10 +298,6 @@ namespace connectivity
                                     {
                                         sVersionString = sValue;
                                     }
-									else if ( sLine.Equals("modified=yes",0,sizeof("modified=yes")-1) )
-                                    {
-										bModified = true;
-									}
                                     else
                                     {
                                         if  (   (  sVersionString.Len() == 0 )
@@ -352,11 +348,11 @@ namespace connectivity
                     OInteraction< XInteractionDisapprove >* pDisApprove = new OInteraction< XInteractionDisapprove >;
 			        pRequest->addContinuation(pDisApprove);
                     xInteraction->handle(xRequest);
-                    if ( !pDisApprove->wasSelected() )
+                    if ( pDisApprove->wasSelected() )
                     {
-                        bAskUser = false;
+                        StorageContainer::revokeStorage(sKey,NULL);
+                        ::dbtools::throwGenericSQLException(aResources.getResourceString(STR_CONVERSION_DECLINED) ,*this);
                     }
-                    aProperties.put( "sql.enforce_size", ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "false" ) ) );
                 }
 
                 // readonly?
