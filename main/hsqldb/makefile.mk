@@ -50,6 +50,8 @@ CONVERTFILES=build$/build.xml \
 
 PATCH_FILES=patches$/aoo_integration.patch patches$/jar_duplicates.patch
 
+# hsqldb's build.xml javac tasks specify no source/target; pin them so bytecode
+# stays Java 8 compatible regardless of the (possibly much newer) build JDK.
 JAVAC_SRCTGT=-Dant.build.javac.source=1.8 -Dant.build.javac.target=1.8
 
 .IF "$(JAVACISGCJ)"=="yes"
