@@ -34,7 +34,7 @@
 
 #include <com/sun/star/beans/XPropertySet.hpp>
 
-#include <hash_map>
+#include <unordered_map>
 #include <map>
 #include <boost/optional.hpp>
 
@@ -203,7 +203,7 @@ private:
     bool mbIsHighContrastMode;
     bool mbIsHighContrastModeSetManually;
 
-    typedef ::std::hash_map<rtl::OUString,ThemeItem, rtl::OUStringHash> PropertyNameToIdMap;
+    typedef ::std::unordered_map<rtl::OUString,ThemeItem, rtl::OUStringHash> PropertyNameToIdMap;
     PropertyNameToIdMap maPropertyNameToIdMap;
     typedef ::std::vector<rtl::OUString> PropertyIdToNameMap;
     PropertyIdToNameMap maPropertyIdToNameMap;
