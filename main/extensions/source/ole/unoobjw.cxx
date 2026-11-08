@@ -30,7 +30,7 @@
 #include <olectl.h>
 #include <vector>
 #include <list>
-#include <hash_map>
+#include <unordered_map>
 #include "comifaces.hxx"
 #include <tools/postsys.h>
 
@@ -82,7 +82,7 @@ extern "C" const GUID IID_IDispatchEx;
 
 namespace ole_adapter
 {
-unordered_map<sal_uInt32, WeakReference<XInterface> > UnoObjToWrapperMap;
+std::unordered_map<sal_uInt32, WeakReference<XInterface> > UnoObjToWrapperMap;
 static sal_Bool writeBackOutParameter(VARIANTARG* pDest, VARIANT* pSource);
 static sal_Bool writeBackOutParameter2( VARIANTARG* pDest, VARIANT* pSource);
 static HRESULT mapCannotConvertException( CannotConvertException e, unsigned int * puArgErr);

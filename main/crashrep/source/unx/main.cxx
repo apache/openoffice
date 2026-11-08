@@ -36,7 +36,7 @@
 #include <pthread.h>
 #include <limits.h>
 
-#include <hash_map>
+#include <unordered_map>
 #include <vector>
 #include <string>
 
@@ -178,7 +178,7 @@ static size_t fcopy( FILE *fpout, FILE *fpin )
    from which it can be reviewed and sent
 */
 
-bool write_report( const unordered_map< string, string >& rSettings )
+bool write_report( const std::unordered_map< string, string >& rSettings )
 {
 	FILE	*fp = fopen( tmpnam( g_szReportFile ), "w" );
 	const char *pszUserType = getenv( "STAROFFICE_USERTYPE" );
@@ -245,7 +245,7 @@ bool write_report( const unordered_map< string, string >& rSettings )
 }
 
 
-bool write_description( const unordered_map< string, string >& rSettings )
+bool write_description( const std::unordered_map< string, string >& rSettings )
 {
 	bool	bSuccess = false;
 	FILE	*fp = fopen( tmpnam( g_szDescriptionFile ), "w" );
@@ -263,17 +263,17 @@ bool write_description( const unordered_map< string, string >& rSettings )
 
 #if 0
 // unused
-static void printSettings( const unordered_map<string,string>& rSettings )
+static void printSettings( const std::unordered_map<string,string>& rSettings )
 {
     printf( "Settings:\n" );
-    for( unordered_map<string,string>::const_iterator it = rSettings.begin(); it != rSettings.end(); ++it )
+    for( std::unordered_map<string,string>::const_iterator it = rSettings.begin(); it != rSettings.end(); ++it )
     {
         printf( "%s=\"%s\"\n", it->first.c_str(), it->second.c_str() );
     }
 }
 #endif
 
-bool save_crash_report( const string& rFileName, const unordered_map< string, string >& /*rSettings*/ )
+bool save_crash_report( const string& rFileName, const std::unordered_map< string, string >& /*rSettings*/ )
 {
 	bool bSuccess = false;
 	FILE	*fpout = fopen( rFileName.c_str(), "w" );
@@ -489,7 +489,7 @@ struct RequestParams
 };
 
 
-bool send_crash_report( const unordered_map< string, string >& rSettings )
+bool send_crash_report( const std::unordered_map< string, string >& rSettings )
 {
 	if ( 0 == strcasecmp( rSettings.find( "CONTACT" )->second.c_str(), "true" ) &&
 		 !trim_string(rSettings.find( "EMAIL" )->second).length() )
@@ -553,7 +553,7 @@ static bool append_file( const char *filename, string& rString )
 	return true;
 }
 
-string crash_get_details( const unordered_map< string, string >& rSettings )
+string crash_get_details( const std::unordered_map< string, string >& rSettings )
 {
     string aRet;
 
@@ -907,7 +907,7 @@ static bool write_crash_data()
 
 #if 0
 // unused
-static bool write_settings( const unordered_map< string, string >& rSettings )
+static bool write_settings( const std::unordered_map< string, string >& rSettings )
 {
 	bool success = false;
 	string	sRCFile = get_home_dir();
@@ -932,7 +932,7 @@ static bool write_settings( const unordered_map< string, string >& rSettings )
 }
 #endif
 
-static void read_settings( unordered_map< string, string >& rSettings )
+static void read_settings( std::unordered_map< string, string >& rSettings )
 {
 	string	sRCFile = get_home_dir();
 
@@ -948,7 +948,7 @@ static void read_settings( unordered_map< string, string >& rSettings )
 	rSettings[ "TITLE" ] = "";
 }
 
-static void read_settings_from_environment( unordered_map< string, string >& rSettings )
+static void read_settings_from_environment( std::unordered_map< string, string >& rSettings )
 {
 	string	strEnv;
 
@@ -1067,7 +1067,7 @@ int main( int argc, char** argv )
 
 		if ( g_bSendReport )
 		{
-			unordered_map< string, string > aDialogSettings;
+			std::unordered_map< string, string > aDialogSettings;
 
 			read_settings( aDialogSettings );
 			read_settings_from_environment( aDialogSettings );
@@ -1076,7 +1076,7 @@ int main( int argc, char** argv )
 		}
 		else
 		{
-			unordered_map< string, string > aDialogSettings;
+			std::unordered_map< string, string > aDialogSettings;
 
 			read_settings( aDialogSettings );
 			read_settings_from_environment( aDialogSettings );

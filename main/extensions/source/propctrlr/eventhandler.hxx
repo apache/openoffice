@@ -72,7 +72,7 @@ namespace pcr
             const rtl::OString& _sUniqueBrowseId );
     };
 
-    typedef ::std::hash_map< ::rtl::OUString, EventDescription, ::rtl::OUStringHash >   EventMap;
+    typedef ::std::unordered_map< ::rtl::OUString, EventDescription, ::rtl::OUStringHash >   EventMap;
 
     //====================================================================
     //= EventHandler
