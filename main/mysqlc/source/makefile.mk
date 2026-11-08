@@ -110,9 +110,6 @@ CFLAGS+=-DSYSTEM_MYSQL_CPPCONN
 CDEFS+=-DCPPDBC_EXPORTS -DCPPCONN_LIB_BUILD
 .IF "$(SYSTEM_MYSQL_CPPCONN)" == "YES"
 CDEFS += -DCPPCONN_LIB=\"$(shell readlink /usr/lib/libmysqlcppconn.so)\"
-.IF "$(USE_SYSTEM_STL)"!="YES"
-CDEFS += -DADAPT_EXT_STL
-.ENDIF
 .ENDIF
 
 # --------------- MySQL settings ------------------

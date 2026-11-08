@@ -328,14 +328,6 @@ LIBCMT+= libcpmt.lib
 .ENDIF "$(USE_STLP_DEBUG)" == ""
 .ENDIF # "$(DYNAMIC_CRT)"!=""
 .ELSE # !USE_SYSTEM_STL
-.IF "$(USE_STLP_DEBUG)" != ""
-LIBSTLPORT=stlport_vc71_stldebug.lib
-LIBSTLPORTST=stlport_vc71_stldebug_static.lib
-.ELSE
-LIBSTLPORT=stlport_vc71.lib
-LIBSTLPORTST=stlport_vc71_static.lib
-.ENDIF
-.ENDIF
 
 .IF "$(PROF_EDITION)" == ""
 ATL_INCLUDE*=$(COMPATH)/PlatformSDK/include/atl

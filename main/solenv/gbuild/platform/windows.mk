@@ -202,8 +202,7 @@ gb_MakeDepend_FILTEROUT :=
 # reasoning behind each of these.
 ifeq ($(COMEX),14)
 
-# C++14, not 17.  std::tr1 -- which boost/tr1 and the stlport shims name
-# directly -- is only present while _HAS_CXX17 is 0; the tree is still full of
+# C++14, not 17.  std::tr1 -- which boost/tr1 names directly -- is only present while _HAS_CXX17 is 0
 # empty exception specifications, which C++20 removes; and <hash_map> and
 # <hash_set> become a hard #error under C++17.  /std:c++03 is not an escape,
 # a modern cl rejects it outright (D9002).
@@ -222,8 +221,7 @@ gb_CXXFLAGS += -std:c++14
 # is called out at this length.
 gb_MakeDepend_FILTEROUT += -std:%
 
-# Without this MSVC reports __cplusplus as 199711L whatever /std: says, and
-# the shims in main/stlport/systemstl branch on that value.
+# Without this MSVC reports __cplusplus as 199711L whatever /std: says.
 gb_CXXFLAGS += -Zc:__cplusplus
 
 # The two halves of the old snprintf shim are not symmetric.  The UCRT
@@ -635,19 +633,7 @@ gb_Library_DLLEXT := .dll
 gb_Library_MAJORVER := 3
 gb_Library_RTEXT := MSC$(gb_Library_DLLEXT)
 
-ifeq ($(USE_SYSTEM_STL),YES)
-ifeq ($(gb_PRODUCT),$(true))
 gb_Library_STLEXT := msvcprt.lib
-else
-gb_Library_STLEXT := msvcprt.lib
-endif
-else
-ifeq ($(gb_PRODUCT),$(true))
-gb_Library_STLEXT := port_vc7145$(gb_Library_DLLEXT)
-else
-gb_Library_STLEXT := port_vc7145_stldebug$(gb_Library_DLLEXT)
-endif
-endif
 
 gb_Library_OOOEXT := $(gb_Library_DLLEXT)
 gb_Library_UNOEXT := .uno$(gb_Library_DLLEXT)

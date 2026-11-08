@@ -1208,17 +1208,9 @@ STDSHL=$(STDSHLCUIMT)
 
 .EXPORT : PICSWITCH
 
-.IF "$(USE_SYSTEM_STL)"=="YES"
-.IF "$(GUI)"=="OS2"
-LIBSTLPORT=
-.ELSE
-LIBSTLPORT=""
-.ENDIF
-.ENDIF
-
 .IF "$(NO_DEFAULT_STL)"==""
-STDLIB+=$(LIBSTLPORT)
-STDSHL+=$(LIBSTLPORT)
+STDLIB+=
+STDSHL+=
 .ENDIF			# "$(NO_DEFAULT_STL)"==""
 
 # fill up unresolved symbols not found else where

@@ -204,7 +204,7 @@ CFLAGSWERRCC=-WX
 MODULES_WITH_WARNINGS := \
     lingucomponent
 
-CDEFS+=-DSTLPORT_VERSION=$(STLPORT_VER) -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500
+CDEFS+=-D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500
 
 COMMENTFLAG=/COMMENT:"$(PRJNAME)_$(UPD)_$(VCSID)_"
 
@@ -272,15 +272,6 @@ STDLIBGUIMT=$(LIBCMT) $(UWINAPILIB) kernel32.lib user32.lib oldnames.lib psapi.l
 STDLIBCUIMT=$(LIBCMT) $(UWINAPILIB) kernel32.lib user32.lib oldnames.lib psapi.lib
 STDSHLGUIMT=$(LIBCMT) $(UWINAPILIB) kernel32.lib user32.lib oldnames.lib psapi.lib
 STDSHLCUIMT=$(LIBCMT) $(UWINAPILIB) kernel32.lib user32.lib oldnames.lib psapi.lib
-
-.IF "$(USE_STLP_DEBUG)" != ""
-CFLAGS+=-MTd
-LIBSTLPORT=stlport_vc71_stldebug.lib
-LIBSTLPORTST=stlport_vc71_stldebug_static.lib
-.ELSE
-LIBSTLPORT=stlport_vc71.lib
-LIBSTLPORTST=stlport_vc71_static.lib
-.ENDIF
 
 ATL_INCLUDE*=$(COMPATH)/atlmfc/include
 ATL_LIB*=$(COMPATH)/atlmfc/lib

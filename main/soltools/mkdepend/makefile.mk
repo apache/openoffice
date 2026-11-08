@@ -63,7 +63,6 @@ APP1STDLIBS+=msvcprt.lib
 .ENDIF                        # "$(COM)"=="MSC"
 
 .IF "$(OS)"=="SOLARIS"
-#APP1STDLIBS+=-lstlport
 APP1STDLIBS+=-lCstd
 .ENDIF
 

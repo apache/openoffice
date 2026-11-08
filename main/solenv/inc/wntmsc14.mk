@@ -40,8 +40,7 @@
 # three say 14:
 #
 #   * std::tr1.  The MSVC standard library still ships it, but only while
-#     _HAS_CXX17 is 0 -- and boost/tr1 and the shims in main/stlport reach for
-#     std::tr1 by name.
+#     _HAS_CXX17 is 0 -- and boost/tr1 reaches for std::tr1 by name.
 #   * the empty exception specification.  throw() is deprecated in C++17 and
 #     removed in C++20, and there are still thousands of them here; migrating
 #     them to noexcept is a separate change.
@@ -53,10 +52,7 @@
 CFLAGSCXX+=-std:c++14
 
 # Report the real __cplusplus.  Without this MSVC reports 199711L whatever
-# /std: says, and the shims in main/stlport/systemstl branch on
-# __cplusplus >= 201103L to decide whether <hash_map> can forward to
-# <unordered_map>.  Left off, they take the pre-C++11 branch and reach for
-# boost/tr1 instead.
+# /std: says.
 CFLAGSCXX+=-Zc:__cplusplus
 
 # --- the CRT -------------------------------------------------------------
@@ -76,9 +72,7 @@ CFLAGSCXX+=-Zc:__cplusplus
 CDEFS+=-Dsnwprintf=_snwprintf
 
 # stdext::hash_map and stdext::hash_set are deprecated to the point of a hard
-# #error.  The tree reaches them through the stlport shims in a great many
-# places; these are the stdext containers, not std::unordered_map, so
-# replacing them is a refactor and not a build fix.
+# #error.
 CDEFS+=-D_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS
 
 # The CRT split in three when the UCRT arrived: a startup/import library, the
