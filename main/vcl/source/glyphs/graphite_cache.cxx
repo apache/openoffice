@@ -32,10 +32,8 @@
 #include <tools/debug.hxx>
 #include <sallayout.hxx>
 
-#include <preextstl.h>
 #include <graphite/GrClient.h>
-#include <graphite/Segment.h>
-#include <postextstl.h>
+#include <graphite/Font.h>
 
 #include <rtl/ustring.hxx>
 #include <graphite_layout.hxx>

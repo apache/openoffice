@@ -30,10 +30,7 @@ using namespace connectivity::mysqlc;
 using ::rtl::OUString;
 #include <stdio.h>
 
-#include <preextstl.h>
-#include <cppconn/exception.h>
-#include <mysql_driver.h>
-#include <postextstl.h>
+#include <cppconn/driver.h>
 
 
 /* {{{ MysqlCDriver::MysqlCDriver() -I- */

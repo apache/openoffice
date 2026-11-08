@@ -80,12 +80,10 @@ SHL1STDLIBS+=msvcrt.lib
 .ENDIF
 
 
-#	$(LIBSTLPORTST)
-
 SHL1LIBS+=$(SLB)$/util.lib\
 	$(SLB)$/ooofilereader.lib
-
 SHL1DEPN=
+
 SHL1OBJS=$(SLOFILES)
 SHL1DEF=$(MISC)$/$(SHL1TARGET).def
 DEF1NAME=$(SHL1TARGET)
