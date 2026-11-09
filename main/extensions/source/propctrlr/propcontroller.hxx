@@ -137,7 +137,7 @@ namespace pcr
         typedef ::std::vector< PropertyHandlerRef >     PropertyHandlerArray;
         typedef ::std::unordered_map< ::rtl::OUString, PropertyHandlerRef, ::rtl::OUStringHash >
                                                         PropertyHandlerRepository;
-        typedef ::std::hash_multimap< ::rtl::OUString, PropertyHandlerRef, ::rtl::OUStringHash >
+        typedef ::std::unordered_multimap< ::rtl::OUString, PropertyHandlerRef, ::rtl::OUStringHash >
                                                         PropertyHandlerMultiRepository;
         PropertyHandlerRepository                       m_aPropertyHandlers;
         PropertyHandlerMultiRepository                  m_aDependencyHandlers;
