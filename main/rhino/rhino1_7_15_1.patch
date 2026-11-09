@@ -427,7 +427,7 @@ diff -ruN a/b/rhino1.7.15.1/src/org/mozilla/javascript/tools/debugger/OfficeScri
 +}
 diff -ruN a/b/rhino1.7.15.1/src/org/mozilla/javascript/tools/debugger/SwingGui.java b/b/rhino1.7.15.1/src/org/mozilla/javascript/tools/debugger/SwingGui.java
 --- a/b/rhino1.7.15.1/src/org/mozilla/javascript/tools/debugger/SwingGui.java	2026-11-09 08:26:49
-+++ b/b/rhino1.7.15.1/src/org/mozilla/javascript/tools/debugger/SwingGui.java	2026-11-09 08:46:21
++++ b/b/rhino1.7.15.1/src/org/mozilla/javascript/tools/debugger/SwingGui.java	2026-11-09 15:07:38
 @@ -48,6 +48,7 @@
  import java.io.PrintStream;
  import java.io.Reader;
@@ -625,7 +625,17 @@ diff -ruN a/b/rhino1.7.15.1/src/org/mozilla/javascript/tools/debugger/SwingGui.j
          w.setVisible(true);
  
          if (activate) {
-@@ -749,6 +873,7 @@
+@@ -662,6 +786,9 @@
+     /** Returns the current selected internal frame. */
+     private JInternalFrame getSelectedFrame() {
+         JInternalFrame[] frames = desk.getAllFrames();
++        if (frames.length == 0) {
++            return null;
++        }
+         for (int i = 0; i < frames.length; i++) {
+             if (frames[i].isShowing()) {
+                 return frames[i];
+@@ -749,6 +876,7 @@
              proxy.alertMessage = alertMessage;
              SwingUtilities.invokeLater(proxy);
          }
@@ -633,7 +643,7 @@ diff -ruN a/b/rhino1.7.15.1/src/org/mozilla/javascript/tools/debugger/SwingGui.j
      }
  
      /** Returns whether the current thread is the GUI event thread. */
-@@ -824,16 +949,19 @@
+@@ -824,16 +952,19 @@
                      new Thread(proxy).start();
                  }
              }
@@ -660,7 +670,7 @@ diff -ruN a/b/rhino1.7.15.1/src/org/mozilla/javascript/tools/debugger/SwingGui.j
          } else if (cmd.equals("Cut")) {
          } else if (cmd.equals("Copy")) {
          } else if (cmd.equals("Paste")) {
-@@ -1448,7 +1576,9 @@
+@@ -1448,7 +1579,9 @@
              case KeyEvent.VK_ENTER:
              case KeyEvent.VK_DELETE:
              case KeyEvent.VK_TAB:
@@ -671,7 +681,7 @@ diff -ruN a/b/rhino1.7.15.1/src/org/mozilla/javascript/tools/debugger/SwingGui.j
                  break;
          }
      }
-@@ -1456,13 +1586,17 @@
+@@ -1456,13 +1589,17 @@
      /** Called when a key is typed. */
      @Override
      public void keyTyped(KeyEvent e) {
@@ -691,7 +701,7 @@ diff -ruN a/b/rhino1.7.15.1/src/org/mozilla/javascript/tools/debugger/SwingGui.j
      }
  }
  
-@@ -1880,7 +2014,8 @@
+@@ -1880,7 +2017,8 @@
  }
  
  /** An internal frame for script files. */
@@ -701,7 +711,7 @@ diff -ruN a/b/rhino1.7.15.1/src/org/mozilla/javascript/tools/debugger/SwingGui.j
  
      /** Serializable magic number. */
      private static final long serialVersionUID = -6212382604952082370L;
-@@ -1903,13 +2038,92 @@
+@@ -1903,13 +2041,92 @@
      /** The current offset position. */
      int currentPos;
  
@@ -795,7 +805,7 @@ diff -ruN a/b/rhino1.7.15.1/src/org/mozilla/javascript/tools/debugger/SwingGui.j
              new Thread(proxy).start();
          }
      }
-@@ -1976,8 +2190,19 @@
+@@ -1976,8 +2193,19 @@
          pack();
          updateText(sourceInfo);
          textArea.select(0);
@@ -815,7 +825,7 @@ diff -ruN a/b/rhino1.7.15.1/src/org/mozilla/javascript/tools/debugger/SwingGui.j
      /** Updates the tool tip contents. */
      private void updateToolTip() {
          // Try to set tool tip on frame. On Mac OS X 10.5,
-@@ -2005,7 +2230,10 @@
+@@ -2005,7 +2233,10 @@
          this.sourceInfo = sourceInfo;
          String newText = sourceInfo.source();
          if (!textArea.getText().equals(newText)) {
@@ -826,7 +836,7 @@ diff -ruN a/b/rhino1.7.15.1/src/org/mozilla/javascript/tools/debugger/SwingGui.j
              int pos = 0;
              if (currentPos != -1) {
                  pos = currentPos;
-@@ -2044,11 +2272,11 @@
+@@ -2044,11 +2275,11 @@
      public void actionPerformed(ActionEvent e) {
          String cmd = e.getActionCommand();
          if (cmd.equals("Cut")) {
@@ -840,7 +850,7 @@ diff -ruN a/b/rhino1.7.15.1/src/org/mozilla/javascript/tools/debugger/SwingGui.j
          }
      }
  }
-@@ -2550,7 +2778,7 @@
+@@ -2550,7 +2781,7 @@
      /** Creates a new ContextWindow. */
      public ContextWindow(final SwingGui debugGui) {
          this.debugGui = debugGui;
@@ -849,7 +859,7 @@ diff -ruN a/b/rhino1.7.15.1/src/org/mozilla/javascript/tools/debugger/SwingGui.j
          JPanel left = new JPanel();
          JToolBar t1 = new JToolBar();
          t1.setName("Variables");
-@@ -2801,6 +3029,11 @@
+@@ -2801,6 +3032,11 @@
          enabled = true;
      }
  
@@ -861,7 +871,7 @@ diff -ruN a/b/rhino1.7.15.1/src/org/mozilla/javascript/tools/debugger/SwingGui.j
      // ActionListener
  
      /** Performs an action. */
-@@ -2868,8 +3101,8 @@
+@@ -2868,8 +3104,8 @@
      Menubar(SwingGui debugGui) {
          super();
          this.debugGui = debugGui;
@@ -872,7 +882,7 @@ diff -ruN a/b/rhino1.7.15.1/src/org/mozilla/javascript/tools/debugger/SwingGui.j
          char[] fileShortCuts = {'0', 'N', 0, 'X'};
          int[] fileAccelerators = {KeyEvent.VK_O, KeyEvent.VK_N, 0, KeyEvent.VK_Q};
          String[] editItems = {"Cut", "Copy", "Paste", "Go to function...", "Go to line..."};
-@@ -2917,6 +3150,9 @@
+@@ -2917,6 +3153,9 @@
                          KeyStroke.getKeyStroke(editAccelerators[i], InputEvent.CTRL_DOWN_MASK);
                  item.setAccelerator(k);
              }
@@ -882,7 +892,7 @@ diff -ruN a/b/rhino1.7.15.1/src/org/mozilla/javascript/tools/debugger/SwingGui.j
          }
          for (int i = 0; i < plafItems.length; ++i) {
              JMenuItem item = new JMenuItem(plafItems[i], plafShortCuts[i]);
-@@ -2964,9 +3200,6 @@
+@@ -2964,9 +3203,6 @@
          item.addActionListener(this);
          windowMenu.add(item = new JMenuItem("Tile", 'T'));
          item.addActionListener(this);
@@ -892,7 +902,7 @@ diff -ruN a/b/rhino1.7.15.1/src/org/mozilla/javascript/tools/debugger/SwingGui.j
          add(windowMenu);
  
          updateEnabled(false);
-@@ -3119,6 +3352,9 @@
+@@ -3119,6 +3355,9 @@
      /** The message of the exception thrown that caused the thread interruption, if any. */
      String alertMessage;
  
@@ -902,7 +912,7 @@ diff -ruN a/b/rhino1.7.15.1/src/org/mozilla/javascript/tools/debugger/SwingGui.j
      /** Creates a new RunProxy. */
      public RunProxy(SwingGui debugGui, int type) {
          this.debugGui = debugGui;
-@@ -3143,7 +3379,11 @@
+@@ -3143,7 +3382,11 @@
  
              case LOAD_FILE:
                  try {
@@ -915,7 +925,7 @@ diff -ruN a/b/rhino1.7.15.1/src/org/mozilla/javascript/tools/debugger/SwingGui.j
                  } catch (RuntimeException ex) {
                      MessageDialogWrapper.showMessageDialog(
                              debugGui,
-@@ -3170,4 +3410,5 @@
+@@ -3170,4 +3413,5 @@
                  throw new IllegalArgumentException(String.valueOf(type));
          }
      }
