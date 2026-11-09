@@ -1069,8 +1069,7 @@ AC_PROG_EGREP
 if test -z "$GREP"; then
 GREP=$EGREP
 fi
-AC_PROG_AWK
-AC_PATH_PROG( AWK, $AWK)
+AC_PATH_PROG(AWK, gawk)
 
 dnl ===================================================================
 dnl  A space in $AWK is fatal, so take the 8.3 form when there is one
@@ -1106,12 +1105,12 @@ volume; several checks below will fail on the space otherwise.])
    ;;
 esac
 if test -z "$AWK"; then
-   AC_MSG_ERROR([install awk to run this script])
+   AC_MSG_ERROR([install GNU awk to build Apache OpenOffice])
 fi
 
 AC_PATH_PROGS(SED, sed )
 if test -z "$SED"; then
-   AC_MSG_ERROR([install sed to run this script])
+   AC_MSG_ERROR([install sed to build Apache OpenOffice])
 fi
 
 AC_MSG_CHECKING([for solenv environment])
