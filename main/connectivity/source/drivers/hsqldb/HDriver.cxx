@@ -335,7 +335,7 @@ namespace connectivity
 				{
 					::dbtools::throwGenericSQLException(sMessage ,*this);
 				}
-				// need to convert file, ask for user approvement
+				// need to convert file, ask for user approval
                 if ( xInteraction.is() && bAskUser )
                 {
 					::connectivity::SharedResources aResources;
