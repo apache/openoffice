@@ -88,7 +88,7 @@
 #include <vos/mutex.hxx>
 
 #include <ctype.h>
-#include <hash_map>
+#include <unordered_map>
 
 // compatibility: DatabaseCursorType is dead, but for compatibility reasons we still have to write it ...
 namespace com {

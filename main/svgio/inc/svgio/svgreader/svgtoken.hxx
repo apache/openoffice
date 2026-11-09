@@ -24,7 +24,7 @@
 
 #include <svgio/svgiodllapi.h>
 #include <rtl/ustring.hxx>
-#include <hash_map>
+#include <unordered_map>
 
 //////////////////////////////////////////////////////////////////////////////
 

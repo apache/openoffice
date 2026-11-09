@@ -58,10 +58,10 @@
 #include <winver.h>
 #endif // USE_UNISCRIBE
 
-#include <hash_map>
+#include <unordered_map>
 #include <set>
 
-typedef std::hash_map<int,int> IntMap;
+typedef std::unordered_map<int,int> IntMap;
 typedef std::set<int> IntSet;
 
 // Graphite headers

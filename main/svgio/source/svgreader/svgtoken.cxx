@@ -169,7 +169,7 @@ namespace svgio
 
         SVGToken StrToSVGToken(const rtl::OUString& rStr, bool bCaseIndependent)
         {
-            typedef std::hash_map< rtl::OUString, SVGToken, rtl::OUStringHash > SVGTokenMapper;
+            typedef std::unordered_map< rtl::OUString, SVGToken, rtl::OUStringHash > SVGTokenMapper;
             typedef std::pair< rtl::OUString, SVGToken > SVGTokenValueType;
             static SVGTokenMapper aSVGTokenMapperList;
 

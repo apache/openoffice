@@ -52,8 +52,8 @@
     #include <algorithm>
 #endif // GCP_KERN_HACK
 
-#include <hash_map>
-typedef std::hash_map<int,int> IntMap;
+#include <unordered_map>
+typedef std::unordered_map<int,int> IntMap;
 
 #define DROPPED_OUTGLYPH 0xFFFF
 

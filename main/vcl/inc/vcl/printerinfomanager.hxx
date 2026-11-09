@@ -24,7 +24,7 @@
 #ifndef _PSPRINT_PRINTERINFOMANAGER_HXX_
 #define _PSPRINT_PRINTERINFOMANAGER_HXX_
 
-#include <hash_map>
+#include <unordered_map>
 #include <list>
 
 #include "vcl/dllapi.h"
@@ -65,9 +65,9 @@ struct PrinterInfo : JobData
     // this vector is currently implicitly given by the adobe
     // standard encoding
     bool                        m_bPerformFontSubstitution;
-    std::hash_map< rtl::OUString, rtl::OUString, rtl::OUStringHash >
+    std::unordered_map< rtl::OUString, rtl::OUString, rtl::OUStringHash >
     m_aFontSubstitutes;
-    std::hash_map< fontID, fontID >
+    std::unordered_map< fontID, fontID >
     m_aFontSubstitutions;
 
     PrinterInfo() :
@@ -117,7 +117,7 @@ protected:
         PrinterInfo             m_aInfo;
     };
 
-    std::hash_map< rtl::OUString, Printer, rtl::OUStringHash > m_aPrinters;
+    std::unordered_map< rtl::OUString, Printer, rtl::OUStringHash > m_aPrinters;
     PrinterInfo                         m_aGlobalDefaults;
     std::list< WatchFile >            m_aWatchFiles;
     rtl::OUString                     m_aDefaultPrinter;
@@ -140,7 +140,7 @@ protected:
     virtual void initialize();
 
     // fill in font substitutions
-    // the resulting hash_map maps from source to target font ids
+    // the resulting unordered_map maps from source to target font ids
     void fillFontSubstitutions( PrinterInfo& rInfo ) const;
 
     // fill default paper if not configured in config file

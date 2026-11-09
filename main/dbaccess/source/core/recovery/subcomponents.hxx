@@ -32,7 +32,7 @@
 
 #include <rtl/ustring.hxx>
 
-#include <hash_map>
+#include <unordered_map>
 #include <map>
 
 //........................................................................
@@ -75,7 +75,7 @@ namespace dbaccess
     };
 
     // -------------------------------------------------------------------
-    typedef ::std::hash_map< ::rtl::OUString, SubComponentDescriptor, ::rtl::OUStringHash > MapStringToCompDesc;
+    typedef ::std::unordered_map< ::rtl::OUString, SubComponentDescriptor, ::rtl::OUStringHash > MapStringToCompDesc;
     typedef ::std::map< SubComponentType, MapStringToCompDesc > MapCompTypeToCompDescs;
 
 

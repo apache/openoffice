@@ -29,7 +29,7 @@
 */
 #include <vector>
 #include <list>
-#include <hash_map>
+#include <unordered_map>
 
 //_________________________________________________________________________________________________________________
 //	my own includes
@@ -99,12 +99,12 @@ class WindowStateConfiguration :  private ThreadHelpBase						,	// Struct for ri
         virtual ::com::sun::star::uno::Type SAL_CALL getElementType();
         virtual sal_Bool SAL_CALL hasElements();
 
-        typedef ::std::hash_map< ::rtl::OUString,
+        typedef ::std::unordered_map< ::rtl::OUString,
                                  ::rtl::OUString,
                                  rtl::OUStringHash,
                                  ::std::equal_to< ::rtl::OUString > > ModuleToWindowStateFileMap;
 
-        typedef ::std::hash_map< ::rtl::OUString,
+        typedef ::std::unordered_map< ::rtl::OUString,
                                  ::com::sun::star::uno::Reference< ::com::sun::star::container::XNameAccess >,
                                  rtl::OUStringHash,
 								 ::std::equal_to< ::rtl::OUString > > ModuleToWindowStateConfigHashMap;

@@ -25,7 +25,7 @@
 
 #include <com/sun/star/xml/sax/FastToken.hpp>
 #include <comphelper/stl_types.hxx>
-#include <hash_map>
+#include <unordered_map>
 #include "oox/helper/helper.hxx"
 #include "oox/helper/attributelist.hxx"
 #include "oox/helper/propertymap.hxx"
@@ -86,7 +86,7 @@ static FormularCommandNameTable pFormularCommandNameTable[] =
 	{ "val",	FC_VAL }
 
 };
-typedef std::hash_map< rtl::OUString, FormularCommand, comphelper::UStringHash, comphelper::UStringEqual > FormulaCommandHMap;
+typedef std::unordered_map< rtl::OUString, FormularCommand, comphelper::UStringHash, comphelper::UStringEqual > FormulaCommandHMap;
 
 static const FormulaCommandHMap* pCommandHashMap;
 

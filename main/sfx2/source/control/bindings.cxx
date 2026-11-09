@@ -24,7 +24,7 @@
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sfx2.hxx"
 
-#include <hash_map>
+#include <unordered_map>
 #include <svl/itempool.hxx>
 #include <svl/itemiter.hxx>
 #include <svl/eitem.hxx>
@@ -96,7 +96,7 @@ static sal_uInt16 nTimeOut = 300;
 static sal_uInt32 nCache1 = 0;
 static sal_uInt32 nCache2 = 0;
 
-typedef std::hash_map< sal_uInt16, bool > InvalidateSlotMap;
+typedef std::unordered_map< sal_uInt16, bool > InvalidateSlotMap;
 
 //====================================================================
 

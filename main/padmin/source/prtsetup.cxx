@@ -632,7 +632,7 @@ RTSFontSubstPage::RTSFontSubstPage( RTSDialog* pParent ) :
 	::std::list< FastPrintFontInfo > aFonts;
 	rFontManager.getFontListWithFastInfo( aFonts, m_pParent->m_aJobData.m_pParser, false );
 	::std::list< FastPrintFontInfo >::const_iterator it;
-	::std::hash_map< OUString, int, OUStringHash > aToMap, aFromMap;
+	::std::unordered_map< OUString, int, OUStringHash > aToMap, aFromMap;
 	for( it = aFonts.begin(); it != aFonts.end(); ++it )
 	{
 		if( it->m_eType == fonttype::Builtin )
@@ -684,7 +684,7 @@ void RTSFontSubstPage::update()
 	m_aSubstitutionsBox.Clear();
 	m_aRemoveButton.Enable( sal_False );
 	// fill substitutions box
-	::std::hash_map< OUString, OUString, OUStringHash >::const_iterator it;
+	::std::unordered_map< OUString, OUString, OUStringHash >::const_iterator it;
 	for( it = m_pParent->m_aJobData.m_aFontSubstitutes.begin();
 		 it != m_pParent->m_aJobData.m_aFontSubstitutes.end(); ++it )
 	{

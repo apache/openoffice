@@ -45,7 +45,7 @@
 #include <unotools/syslocale.hxx>
 
 #include <boost/shared_ptr.hpp>
-#include <hash_map>
+#include <unordered_map>
 
 //......................................................................................................................
 namespace svt
@@ -118,7 +118,7 @@ namespace svt
     };
 
     typedef ::boost::shared_ptr< IValueNormalization >                                      PValueNormalization;
-    typedef ::std::hash_map< ::rtl::OUString, PValueNormalization, ::rtl::OUStringHash >    NormalizerCache;
+    typedef ::std::unordered_map< ::rtl::OUString, PValueNormalization, ::rtl::OUStringHash >    NormalizerCache;
 
     //==================================================================================================================
     //= CellValueConversion_Data

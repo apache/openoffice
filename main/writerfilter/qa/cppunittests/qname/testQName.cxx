@@ -27,7 +27,7 @@
 #include <rtl/string.hxx>
 #include <rtl/random.h>
 #include <osl/time.h>
-#include <hash_set>
+#include <unordered_set>
 #include <stdexcept>
 
 

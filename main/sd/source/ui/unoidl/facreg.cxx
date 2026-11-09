@@ -38,7 +38,7 @@
 #define INCLUDED_STRING_H
 #endif
 #include <comphelper/stl_types.hxx>
-#include <hash_map>
+#include <unordered_map>
 #include <boost/shared_ptr.hpp>
 
 using namespace rtl;
@@ -204,7 +204,7 @@ enum FactoryId
 	SlideLayoutControllerFactoryId,
 	InsertSlideControllerFactoryId,
 };
-typedef ::std::hash_map<OUString, FactoryId, comphelper::UStringHash, comphelper::UStringEqual> FactoryMap;
+typedef ::std::unordered_map<OUString, FactoryId, comphelper::UStringHash, comphelper::UStringEqual> FactoryMap;
 
 
 namespace {

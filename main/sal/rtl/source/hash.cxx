@@ -27,7 +27,7 @@
 #include "hash.h"
 #include "strimp.h"
 
-#include <hash_set>
+#include <unordered_set>
 
 namespace {
 
@@ -51,7 +51,7 @@ struct UStringEqual
     }
 };
 
-typedef std::hash_set< rtl_uString *, UStringHash, UStringEqual > StringHashTable;
+typedef std::unordered_set< rtl_uString *, UStringHash, UStringEqual > StringHashTable;
 
 StringHashTable *
 getHashTable ()

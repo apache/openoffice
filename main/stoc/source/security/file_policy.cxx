@@ -24,7 +24,7 @@
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_stoc.hxx"
 
-#include <hash_map>
+#include <unordered_map>
 
 #include <osl/diagnose.h>
 #include <osl/file.h>
@@ -93,7 +93,7 @@ class FilePolicy
     AccessControl m_ac;
 
     Sequence< Any > m_defaultPermissions;
-    typedef std::hash_map< OUString, Sequence< Any >, OUStringHash > t_permissions;
+    typedef std::unordered_map< OUString, Sequence< Any >, OUStringHash > t_permissions;
     t_permissions m_userPermissions;
     bool m_init;
 

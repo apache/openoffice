@@ -24,7 +24,7 @@
 #ifndef _CODEMAKER_OPTIONS_HXX_
 #define _CODEMAKER_OPTIONS_HXX_
 
-#include	<hash_map>
+#include	<unordered_map>
 #include	<codemaker/global.hxx>
 
 #if defined( _MSC_VER ) && ( _MSC_VER < 1200 )
@@ -37,7 +37,7 @@ typedef	::std::__hash_map__
 	NewAlloc
 > OptionMap;
 #else
-typedef	::std::hash_map
+typedef	::std::unordered_map
 <
 	::rtl::OString,
 	::rtl::OString,

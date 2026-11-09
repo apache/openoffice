@@ -34,7 +34,7 @@
 #include <sal/types.h>
 #include <vector>
 #include <list>
-#include <hash_map>
+#include <unordered_map>
 #include <iterator>
 #include <com/sun/star/lang/XServiceInfo.hpp>
 #include <com/sun/star/container/XEnumerationAccess.hpp>
@@ -211,7 +211,7 @@ namespace
             };
 
         private:
-            typedef hash_map<
+            typedef unordered_map<
                 Reference<XTextFrame>,
                 TextContentSet,
                 FrameRefHash> framebound_map_t;

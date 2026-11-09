@@ -37,7 +37,7 @@
 #include <comphelper/broadcasthelper.hxx>
 
 #ifndef INCLUDED_HASH_MAP
-#include <hash_map>
+#include <unordered_map>
 #define INCLUDED_HASH_MAP
 #endif
 
@@ -115,7 +115,7 @@ class SVT_DLLPUBLIC StatusbarController :
             ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatch > xDispatch;
         };
 
-        typedef ::std::hash_map< ::rtl::OUString,
+        typedef ::std::unordered_map< ::rtl::OUString,
 				                 com::sun::star::uno::Reference< com::sun::star::frame::XDispatch >,
                                  ::rtl::OUStringHash,
 								 ::std::equal_to< ::rtl::OUString > > URLToDispatchMap;

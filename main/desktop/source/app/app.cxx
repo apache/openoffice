@@ -162,7 +162,7 @@
 #include "com/sun/star/task/XInteractionApprove.hpp"
 #include "com/sun/star/task/XInteractionAbort.hpp"
 #include "cppuhelper/compbase3.hxx"
-#include <hash_set>
+#include <unordered_set>
 
 #include "com/sun/star/deployment/VersionException.hpp"
 #include <dp_gui_handleversionexception.hxx>

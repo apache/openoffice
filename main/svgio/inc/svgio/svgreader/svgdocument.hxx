@@ -42,12 +42,12 @@ namespace svgio
             const rtl::OUString     maAbsolutePath;
 
             /// hash mapper to find nodes by their id
-            typedef std::hash_map< const rtl::OUString, const SvgNode*, rtl::OUStringHash > IdTokenMapper;
+            typedef std::unordered_map< const rtl::OUString, const SvgNode*, rtl::OUStringHash > IdTokenMapper;
             typedef std::pair< const rtl::OUString, const SvgNode* > IdTokenValueType;
             IdTokenMapper           maIdTokenMapperList;
 
             /// hash mapper to find css styles by their id
-            typedef std::hash_map< const rtl::OUString, const SvgStyleAttributes*, rtl::OUStringHash > IdStyleTokenMapper;
+            typedef std::unordered_map< const rtl::OUString, const SvgStyleAttributes*, rtl::OUStringHash > IdStyleTokenMapper;
             typedef std::pair< const rtl::OUString, const SvgStyleAttributes* > IdStyleTokenValueType;
             IdStyleTokenMapper      maIdStyleTokenMapperList;
 

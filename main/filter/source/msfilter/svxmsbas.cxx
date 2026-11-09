@@ -282,9 +282,9 @@ sal_Bool SvxImportMSVBasic::ImportCode_Impl( const String& rStorageName,
 					catch( Exception& ) { }
 				}
 			}
-			typedef  std::hash_map< rtl::OUString, uno::Any, ::rtl::OUStringHash,
+			typedef  std::unordered_map< rtl::OUString, uno::Any, ::rtl::OUStringHash,
 ::std::equal_to< ::rtl::OUString > > NameModuleDataHash;
-			typedef  std::hash_map< rtl::OUString, script::ModuleInfo, ::rtl::OUStringHash,
+			typedef  std::unordered_map< rtl::OUString, script::ModuleInfo, ::rtl::OUStringHash,
 ::std::equal_to< ::rtl::OUString > > NameModuleInfoHash;
 
 			NameModuleDataHash moduleData;

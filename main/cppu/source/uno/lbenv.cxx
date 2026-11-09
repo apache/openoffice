@@ -46,7 +46,7 @@
 #include "destr.hxx"
 #include "loadmodule.hxx"
 
-#include <hash_map>
+#include <unordered_map>
 #include <vector>
 #include <stdio.h>
 
@@ -117,16 +117,16 @@ struct FctOUStringHash
 };
 
 // mapping from environment name to environment
-typedef ::std::hash_map<
+typedef ::std::unordered_map<
     OUString, uno_Environment *, FctOUStringHash,
     ::std::equal_to< OUString > > OUString2EnvironmentMap;
 
 // mapping from ptr to object entry
-typedef ::std::hash_map<
+typedef ::std::unordered_map<
     void *, ObjectEntry *, FctPtrHash,
     ::std::equal_to< void * > > Ptr2ObjectMap;
 // mapping from oid to object entry
-typedef ::std::hash_map<
+typedef ::std::unordered_map<
     OUString, ObjectEntry *, FctOUStringHash,
     ::std::equal_to< OUString > > OId2ObjectMap;
 

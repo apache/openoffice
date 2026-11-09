@@ -23,7 +23,7 @@
 #include "precompiled_svx.hxx"
 #include "svx/EnhancedCustomShapeTypeNames.hxx"
 #include <osl/mutex.hxx>
-#include <hash_map>
+#include <unordered_map>
 
 struct TCheck
 {
@@ -32,7 +32,7 @@ struct TCheck
 		return strcmp( s1, s2 ) == 0;
 	}
 };
-typedef std::hash_map< const char*, MSO_SPT, rtl::CStringHash, rtl::CStringEqual> TypeNameHashMap;
+typedef std::unordered_map< const char*, MSO_SPT, rtl::CStringHash, rtl::CStringEqual> TypeNameHashMap;
 static TypeNameHashMap* pHashMap = NULL;
 static ::osl::Mutex& getHashMapMutex()
 {
@@ -314,7 +314,7 @@ rtl::OUString EnhancedCustomShapeTypeNames::Get( const MSO_SPT eShapeType )
 		? rtl::OUString::createFromAscii( pNameTypeTableArray[ eShapeType ].pS )
 		: rtl::OUString();
 }
-typedef std::hash_map< const char*, const char*, std::hash<const char*>, TCheck> TypeACCNameHashMap;
+typedef std::unordered_map< const char*, const char*, std::hash<const char*>, TCheck> TypeACCNameHashMap;
 static TypeACCNameHashMap* pACCHashMap = NULL;
 struct ACCNameTypeTable
 {

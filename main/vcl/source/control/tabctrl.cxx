@@ -39,7 +39,7 @@
 #include "svdata.hxx"
 #include "window.h"
 
-#include <hash_map>
+#include <unordered_map>
 #include <vector>
 
 // =======================================================================
@@ -69,8 +69,8 @@ struct ImplTabItem
 
 struct ImplTabCtrlData
 {
-	std::hash_map< int, int >		maLayoutPageIdToLine;
-	std::hash_map< int, int >		maLayoutLineToPageId;
+	std::unordered_map< int, int >		maLayoutPageIdToLine;
+	std::unordered_map< int, int >		maLayoutLineToPageId;
 	std::vector< Rectangle >		maTabRectangles;
 	Point							maItemsOffset; // offset of the tabitems
 	std::vector< ImplTabItem >		maItemList;
@@ -2074,7 +2074,7 @@ Rectangle TabControl::GetCharacterBounds( sal_uInt16 nPageId, long nIndex ) cons
 
 	if( HasLayoutData() )
 	{
-		std::hash_map< int, int >::const_iterator it = mpTabCtrlData->maLayoutPageIdToLine.find( (int)nPageId );
+		std::unordered_map< int, int >::const_iterator it = mpTabCtrlData->maLayoutPageIdToLine.find( (int)nPageId );
 		if( it != mpTabCtrlData->maLayoutPageIdToLine.end() )
 		{
 			Pair aPair = mpControlData->mpLayoutData->GetLineStartEnd( it->second );
@@ -2139,7 +2139,7 @@ Rectangle TabControl::GetTabPageBounds( sal_uInt16 nPage ) const
 
 	if( HasLayoutData() )
 	{
-		std::hash_map< int, int >::const_iterator it = mpTabCtrlData->maLayoutPageIdToLine.find( (int)nPage );
+		std::unordered_map< int, int >::const_iterator it = mpTabCtrlData->maLayoutPageIdToLine.find( (int)nPage );
 		if( it != mpTabCtrlData->maLayoutPageIdToLine.end() )
 		{
 			if( it->second >= 0 && it->second < static_cast<int>(mpTabCtrlData->maTabRectangles.size()) )

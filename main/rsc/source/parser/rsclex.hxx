@@ -22,14 +22,14 @@
 
 #include <tools/stack.hxx>
 
-#include <hash_set>
+#include <unordered_set>
 #include <rtl/strbuf.hxx>
 #include <rtl/string.hxx>
 
 // a buffer for unique strings
 class StringContainer
 {
-    std::hash_set< rtl::OString, rtl::OStringHash >		m_aStrings;
+    std::unordered_set< rtl::OString, rtl::OStringHash >		m_aStrings;
 public:
     StringContainer() {}
     ~StringContainer() {}

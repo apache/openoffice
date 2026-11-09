@@ -39,7 +39,7 @@
 #include <cmath>
 #include <vector>
 #include <algorithm>
-#include <hash_map>
+#include <unordered_map>
 
 typedef struct _cairo_font_options cairo_font_options_t;
 
@@ -145,7 +145,7 @@ struct NWFWidgetData
 // Keep a hash table of Widgets->default flags so that we can
 // easily and quickly reset each to a default state before using
 // them
-static std::hash_map<sal_IntPtr, guint>	gWidgetDefaultFlags;
+static std::unordered_map<sal_IntPtr, guint>	gWidgetDefaultFlags;
 static std::vector<NWFWidgetData>   gWidgetData;
 
 static const GtkBorder aDefDefBorder		= { 1, 1, 1, 1 };

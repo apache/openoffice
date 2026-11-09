@@ -33,7 +33,7 @@
 #endif
 
 #include <vector>
-#include <hash_map>
+#include <unordered_map>
 #ifdef CONTEXT_DIAG
 #include <map>
 #endif
@@ -59,7 +59,7 @@
 #include <com/sun/star/beans/XPropertySet.hpp>
 #include "com/sun/star/uno/RuntimeException.hpp"
 
-#include <hash_map>
+#include <unordered_map>
 #include <memory>
 
 #define SMGR_SINGLETON "/singletons/com.sun.star.lang.theServiceManager"
@@ -352,7 +352,7 @@ protected:
             , lateInit( lateInit_ )
             {}
     };
-    typedef ::std::hash_map< OUString, ContextEntry * , OUStringHash > t_map;
+    typedef ::std::unordered_map< OUString, ContextEntry * , OUStringHash > t_map;
     t_map m_map;
 
     Reference< lang::XMultiComponentFactory > m_xSMgr;

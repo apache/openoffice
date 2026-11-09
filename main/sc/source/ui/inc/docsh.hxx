@@ -37,7 +37,7 @@
 #include "shellids.hxx"
 #include "refreshtimer.hxx"
 
-#include <hash_map>
+#include <unordered_map>
 
 class ScEditEngineDefaulter;
 class FontList;
@@ -67,7 +67,7 @@ class ScSheetSaveData;
 namespace sfx2 { class FileDialogHelper; }
 struct DocShell_Impl;
 
-typedef ::std::hash_map< sal_uLong, sal_uLong > ScChangeActionMergeMap;
+typedef ::std::unordered_map< sal_uLong, sal_uLong > ScChangeActionMergeMap;
 
 //==================================================================
 

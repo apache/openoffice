@@ -28,7 +28,7 @@
 #include <basegfx/matrix/b2dhommatrix.hxx>
 #include <basegfx/matrix/b2dhommatrixtools.hxx>
 #include <svgio/svgreader/svgtoken.hxx>
-#include <hash_map>
+#include <unordered_map>
 
 //////////////////////////////////////////////////////////////////////////////
 
@@ -651,7 +651,7 @@ namespace svgio
             const rtl::OUString& rName,
             bool bCaseIndependent)
         {
-            typedef std::hash_map< rtl::OUString, Color, rtl::OUStringHash > ColorTokenMapper;
+            typedef std::unordered_map< rtl::OUString, Color, rtl::OUStringHash > ColorTokenMapper;
             typedef std::pair< rtl::OUString, Color > ColorTokenValueType;
             ColorTokenMapper aColorTokenMapperList;
 

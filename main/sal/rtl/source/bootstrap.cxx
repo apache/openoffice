@@ -44,7 +44,7 @@
 
 #include "macro.hxx"
 
-#include <hash_map>
+#include <unordered_map>
 #include <list>
 
 #define MY_STRING_(x) # x
@@ -623,7 +623,7 @@ void Bootstrap_Impl::expandValue(
 namespace {
 
 struct bootstrap_map {
-    typedef std::hash_map< const rtl::OUString, Bootstrap_Impl*, rtl::OUStringHash > t;
+    typedef std::unordered_map< const rtl::OUString, Bootstrap_Impl*, rtl::OUStringHash > t;
 
     // get and release must only be called properly synchronized via some mutex
     // (e.g., osl::Mutex::getGlobalMutex()):

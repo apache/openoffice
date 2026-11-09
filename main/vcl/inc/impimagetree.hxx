@@ -30,7 +30,7 @@
 #include <utility>
 #include <vector>
 
-#include <hash_map>
+#include <unordered_map>
 
 #include "boost/noncopyable.hpp"
 #include "com/sun/star/uno/Reference.hxx"
@@ -67,9 +67,9 @@ private:
             com::sun::star::uno::Reference<
                 com::sun::star::container::XNameAccess > > > Zips;
 
-    typedef std::hash_map<
+    typedef std::unordered_map<
         rtl::OUString, bool, rtl::OUStringHash > CheckStyleCache;
-    typedef std::hash_map<
+    typedef std::unordered_map<
         rtl::OUString, std::pair< bool, BitmapEx >, rtl::OUStringHash > IconCache;
 
     rtl::OUString m_style;

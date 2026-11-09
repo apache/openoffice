@@ -30,7 +30,7 @@
 #include "sal/types.h"
 
 #ifndef INCLUDED_HASH_MAP
-#include <hash_map>
+#include <unordered_map>
 #define INCLUDED_HASH_MAP
 #endif
 
@@ -52,7 +52,7 @@ public:
     rtl::Reference< Object2 > get(rtl::OUString const & rKey);
 
 private:
-    typedef std::hash_map< rtl::OUString,
+    typedef std::unordered_map< rtl::OUString,
                            com::sun::star::uno::WeakReference< Object2 >,
                            rtl::OUStringHash >
     Map;

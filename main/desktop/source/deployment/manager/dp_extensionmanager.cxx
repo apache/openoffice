@@ -60,6 +60,7 @@
 #include "boost/bind.hpp"
 
 #include <list>
+#include <unordered_map>
 #include <algorithm>
 
 namespace deploy = com::sun::star::deployment;

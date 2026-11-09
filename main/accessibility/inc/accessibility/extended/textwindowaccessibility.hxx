@@ -69,7 +69,7 @@
 #endif
 #include <memory>
 #include <queue>
-#include <hash_map>
+#include <unordered_map>
 
 class TextEngine;
 class TextView;
@@ -343,7 +343,7 @@ private:
 };
 
 
-typedef ::std::hash_map< ::rtl::OUString,
+typedef ::std::unordered_map< ::rtl::OUString,
                          ::css::beans::PropertyValue,
                          ::rtl::OUStringHash,
                          ::std::equal_to< ::rtl::OUString > > tPropValMap;

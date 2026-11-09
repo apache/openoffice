@@ -23,7 +23,7 @@
 #ifndef _FRAMEWORK_SCRIPT_PROVIDER_OPENDOCUMENTLIST_HXX_
 #define _FRAMEWORK_SCRIPT_PROVIDER_OPENDOCUMENTLIST_HXX_
 
-#include <hash_map>
+#include <unordered_map>
 #include <map>
 
 #include <osl/mutex.hxx>
@@ -54,7 +54,7 @@ typedef ::std::map  <   css::uno::Reference< css::uno::XInterface >
                     ,   ::comphelper::OInterfaceCompare< css::uno::XInterface >
                     >   ScriptComponent_map;
 
-typedef ::std::hash_map< ::rtl::OUString,
+typedef ::std::unordered_map< ::rtl::OUString,
     css::uno::Reference< css::script::provider::XScriptProvider >,
     ::rtl::OUStringHash,
             ::std::equal_to< ::rtl::OUString > > Msp_hash;

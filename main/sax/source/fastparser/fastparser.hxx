@@ -26,7 +26,7 @@
 
 #include <vector>
 #include <stack>
-#include <hash_map>
+#include <unordered_map>
 #include <boost/shared_ptr.hpp>
 #include <rtl/ref.hxx>
 #include <com/sun/star/xml/sax/XFastParser.hpp>
@@ -52,7 +52,7 @@ struct SaxContextImpl;
 typedef ::boost::shared_ptr< SaxContextImpl > SaxContextImplPtr;
 typedef ::boost::shared_ptr< NamespaceDefine > NamespaceDefineRef;
 
-typedef ::std::hash_map< ::rtl::OUString, sal_Int32,
+typedef ::std::unordered_map< ::rtl::OUString, sal_Int32,
         ::rtl::OUStringHash, ::std::equal_to< ::rtl::OUString > > NamespaceMap;
 
 // --------------------------------------------------------------------

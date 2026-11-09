@@ -25,7 +25,7 @@
 #define INCLUDED_PDFI_STYLE_HXX
 
 #include "pdfihelper.hxx"
-#include <hash_map>
+#include <unordered_map>
 #include <vector>
 #include <rtl/ustring.hxx>
 #include <rtl/string.hxx>
@@ -128,16 +128,16 @@ namespace pdfi
         friend struct StyleIdNameSort;
         struct StyleIdNameSort
         {
-            const std::hash_map< sal_Int32, HashedStyle >* m_pMap;
+            const std::unordered_map< sal_Int32, HashedStyle >* m_pMap;
 
-            StyleIdNameSort( const std::hash_map< sal_Int32, HashedStyle >* pMap ) :
+            StyleIdNameSort( const std::unordered_map< sal_Int32, HashedStyle >* pMap ) :
                 m_pMap(pMap)
             {}
             bool operator()( sal_Int32 nLeft, sal_Int32 nRight )
             {
-                const std::hash_map< sal_Int32, HashedStyle >::const_iterator left_it =
+                const std::unordered_map< sal_Int32, HashedStyle >::const_iterator left_it =
                     m_pMap->find( nLeft );
-                const std::hash_map< sal_Int32, HashedStyle >::const_iterator right_it =
+                const std::unordered_map< sal_Int32, HashedStyle >::const_iterator right_it =
                     m_pMap->find( nRight );
                 if( left_it == m_pMap->end() )
                     return false;
@@ -149,8 +149,8 @@ namespace pdfi
         };
 
         sal_Int32                                               m_nNextId;
-        std::hash_map< sal_Int32, HashedStyle >                 m_aIdToStyle;
-        std::hash_map< HashedStyle, sal_Int32, StyleHash >      m_aStyleToId;
+        std::unordered_map< sal_Int32, HashedStyle >                 m_aIdToStyle;
+        std::unordered_map< HashedStyle, sal_Int32, StyleHash >      m_aStyleToId;
 
         void impl_emitStyle( sal_Int32           nStyleId,
                              EmitContext&        rContext,

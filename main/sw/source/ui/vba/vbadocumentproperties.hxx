@@ -26,7 +26,7 @@
 #include <ooo/vba/XDocumentProperties.hpp>
 #include <com/sun/star/frame/XModel.hpp>
 #include <vbahelper/vbacollectionimpl.hxx>
-#include <hash_map>
+#include <unordered_map>
 
 typedef CollTestImplHelper< ov::XDocumentProperties > SwVbaDocumentproperties_BASE;
 

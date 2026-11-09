@@ -2710,7 +2710,7 @@ SwList* SwDoc::getListByName( const String sListId ) const
 {
     SwList* pList = 0;
 
-    std::hash_map< String, SwList*, StringHash >::const_iterator
+    std::unordered_map< String, SwList*, StringHash >::const_iterator
                                             aListIter = maLists.find( sListId );
     if ( aListIter != maLists.end() )
     {
@@ -2760,7 +2760,7 @@ SwList* SwDoc::getListForListStyle( const String sListStyleName ) const
 {
     SwList* pList = 0;
 
-    std::hash_map< String, SwList*, StringHash >::const_iterator
+    std::unordered_map< String, SwList*, StringHash >::const_iterator
                             aListIter = maListStyleLists.find( sListStyleName );
     if ( aListIter != maListStyleLists.end() )
     {

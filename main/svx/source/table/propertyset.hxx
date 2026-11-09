@@ -29,7 +29,7 @@
 #include <com/sun/star/beans/XFastPropertySet.hpp>
 #include <rtl/ref.hxx>
 #include <functional>
-#include <hash_map>
+#include <unordered_map>
 #include <vector>
 
 #include <cppuhelper/implbase1.hxx>
@@ -40,7 +40,7 @@ namespace comphelper {
 // -----------------------------------------------------------------------------
 
 typedef std::vector< ::com::sun::star::beans::Property > PropertyVector;
-typedef std::hash_map< ::rtl::OUString, ::sal_uInt32, ::rtl::OUStringHash, ::std::equal_to< ::rtl::OUString > > PropertyMap;
+typedef std::unordered_map< ::rtl::OUString, ::sal_uInt32, ::rtl::OUStringHash, ::std::equal_to< ::rtl::OUString > > PropertyMap;
 
 // -----------------------------------------------------------------------------
 

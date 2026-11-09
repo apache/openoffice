@@ -30,7 +30,7 @@
 #include <xmloff/xmlstyle.hxx>
 
 //UUUU
-#include <hash_set>
+#include <unordered_set>
 
 struct XMLPropertyState;
 class SvXMLStylesContext;
@@ -40,7 +40,7 @@ namespace com { namespace sun { namespace star {
 } } }
 
 //UUUU
-typedef std::hash_set< rtl::OUString, rtl::OUStringHash > OldFillStyleDefinitionSet;
+typedef std::unordered_set< rtl::OUString, rtl::OUStringHash > OldFillStyleDefinitionSet;
 
 class XMLOFF_DLLPUBLIC XMLPropStyleContext : public SvXMLStyleContext
 {

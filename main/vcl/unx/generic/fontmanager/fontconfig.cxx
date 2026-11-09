@@ -255,8 +255,8 @@ public:
 
 public: // TODO: cleanup
     FcResult FamilyFromPattern(FcPattern* pPattern, FcChar8 **family);
-    std::hash_map< rtl::OString, rtl::OString, rtl::OStringHash > m_aFontNameToLocalized;
-    std::hash_map< rtl::OString, rtl::OString, rtl::OStringHash > m_aLocalizedToCanonical;
+    std::unordered_map< rtl::OString, rtl::OString, rtl::OStringHash > m_aFontNameToLocalized;
+    std::unordered_map< rtl::OString, rtl::OString, rtl::OStringHash > m_aLocalizedToCanonical;
 };
 
 oslGenericFunction FontCfgWrapper::loadSymbol( const char* pSymbol )
@@ -699,7 +699,7 @@ namespace
     }
 }
 
-int PrintFontManager::countFontconfigFonts( std::hash_map<rtl::OString, int, rtl::OStringHash>& o_rVisitedPaths )
+int PrintFontManager::countFontconfigFonts( std::unordered_map<rtl::OString, int, rtl::OStringHash>& o_rVisitedPaths )
 {
     int nFonts = 0;
 
@@ -1064,7 +1064,7 @@ rtl::OUString PrintFontManager::Substitute(const rtl::OUString& rFontName,
             if( eFileRes == FcResultMatch )
             {
                 OString sFamily((sal_Char*)family);
-                std::hash_map< rtl::OString, rtl::OString, rtl::OStringHash >::const_iterator aI = rWrapper.m_aFontNameToLocalized.find(sFamily);
+                std::unordered_map< rtl::OString, rtl::OString, rtl::OStringHash >::const_iterator aI = rWrapper.m_aFontNameToLocalized.find(sFamily);
                 if (aI != rWrapper.m_aFontNameToLocalized.end())
                     sFamily = aI->second;
                 aName = rtl::OStringToOUString( sFamily, RTL_TEXTENCODING_UTF8 );
@@ -1124,7 +1124,7 @@ bool PrintFontManager::getFontOptions(
 
     OString sFamily = OUStringToOString( rInfo.m_aFamilyName, RTL_TEXTENCODING_UTF8 );
 
-    std::hash_map< rtl::OString, rtl::OString, rtl::OStringHash >::const_iterator aI = rWrapper.m_aLocalizedToCanonical.find(sFamily);
+    std::unordered_map< rtl::OString, rtl::OString, rtl::OStringHash >::const_iterator aI = rWrapper.m_aLocalizedToCanonical.find(sFamily);
     if (aI != rWrapper.m_aLocalizedToCanonical.end())
         sFamily = aI->second;
     if( sFamily.getLength() )
@@ -1265,7 +1265,7 @@ bool PrintFontManager::initFontconfig()
     return false;
 }
 
-int PrintFontManager::countFontconfigFonts( std::hash_map<rtl::OString, int, rtl::OStringHash>& )
+int PrintFontManager::countFontconfigFonts( std::unordered_map<rtl::OString, int, rtl::OStringHash>& )
 {
     return 0;
 }

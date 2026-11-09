@@ -255,7 +255,7 @@ void FontNameDlg::init()
     m_aRemoveButton.Enable( sal_False );
     m_aRenameButton.Enable( sal_False );
 
-    ::std::hash_map< OUString, int, OUStringHash > aFamilies;
+    ::std::unordered_map< OUString, int, OUStringHash > aFamilies;
     ::std::list< fontID >::iterator font_it;
 	for( font_it = aFonts.begin(); font_it != aFonts.end(); ++font_it )
 	{
@@ -572,8 +572,8 @@ void FontImportDialog::fillFontBox()
     rtl_TextEncoding aEncoding = osl_getThreadTextEncoding();
     m_aNewFontsBox.Clear();
 
-    ::std::hash_map< OUString, int, OUStringHash > aFamilies;
-    ::std::hash_map< OString, ::std::list< FastPrintFontInfo >, OStringHash >::iterator it;
+    ::std::unordered_map< OUString, int, OUStringHash > aFamilies;
+    ::std::unordered_map< OString, ::std::list< FastPrintFontInfo >, OStringHash >::iterator it;
 	for( it = m_aNewFonts.begin(); it != m_aNewFonts.end(); ++it )
 	{
         const OUString& rFamily( it->second.front().m_aFamilyName );

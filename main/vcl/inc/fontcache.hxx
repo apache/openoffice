@@ -29,7 +29,7 @@
 
 #include "tools/string.hxx"
 
-#include <hash_map>
+#include <unordered_map>
 
 namespace psp
 {
@@ -42,7 +42,7 @@ class VCL_PLUGIN_PUBLIC FontCache
         FontCacheEntry		m_aEntry;
     };
 
-    typedef std::hash_map< ::rtl::OString, FontFile, ::rtl::OStringHash > FontDirMap;
+    typedef std::unordered_map< ::rtl::OString, FontFile, ::rtl::OStringHash > FontDirMap;
     struct FontDir
     {
         sal_Int64	m_nTimestamp;
@@ -53,7 +53,7 @@ class VCL_PLUGIN_PUBLIC FontCache
         FontDir() : m_nTimestamp(0), m_bNoFiles(false), m_bUserOverrideOnly( false ) {}
     };
 
-    typedef std::hash_map< int, FontDir > FontCacheData;
+    typedef std::unordered_map< int, FontDir > FontCacheData;
     FontCacheData	m_aCache;
     String			m_aCacheFile;
     bool			m_bDoFlush;

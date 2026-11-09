@@ -34,7 +34,7 @@
 #include "rtl/logfile.hxx"
 #include "uno/environment.hxx"
 #include <com/sun/star/uno/Type.hxx>
-#include <hash_map>
+#include <unordered_map>
 #include <memory>
 
 namespace

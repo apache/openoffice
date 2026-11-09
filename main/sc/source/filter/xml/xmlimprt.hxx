@@ -48,7 +48,7 @@
 #include <com/sun/star/sheet/XSheetCellRangeContainer.hpp>
 
 #include <vector>
-#include <hash_map>
+#include <unordered_map>
 
 class ScRangeList;
 class ScMyStyleNumberFormats;
@@ -658,7 +658,7 @@ class ScMyStylesImportHelper;
 
 class ScXMLImport: public SvXMLImport
 {
-	typedef ::std::hash_map< ::rtl::OUString, sal_Int16, ::rtl::OUStringHash >	CellTypeMap;
+	typedef ::std::unordered_map< ::rtl::OUString, sal_Int16, ::rtl::OUStringHash >	CellTypeMap;
 	CellTypeMap				aCellTypeMap;
 
 	ScDocument*				pDoc;

@@ -30,7 +30,7 @@
 #include	"corbatype.hxx"
 #include	"corbaoptions.hxx"
 
-#include <hash_set>
+#include <unordered_set>
 #include <list>
 
 using namespace rtl;

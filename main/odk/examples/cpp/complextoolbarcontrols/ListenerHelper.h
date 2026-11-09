@@ -20,7 +20,7 @@
  *************************************************************/
 
 #include <vector>
-#include <hash_map>
+#include <unordered_map>
 
 #include <com/sun/star/frame/XFrame.hpp>
 #include <com/sun/star/frame/XStatusListener.hpp>
@@ -32,14 +32,14 @@
 
 typedef std::vector < com::sun::star::uno::Reference < com::sun::star::frame::XStatusListener > > StatusListeners;
 
-typedef std::hash_map < rtl::OUString,
+typedef std::unordered_map < rtl::OUString,
                         StatusListeners,
                         rtl::OUStringHash,
                         std::equal_to< rtl::OUString > > ListenerMap;
 
 // For every frame there is *one* Dispatch object for all possible commands
 // this struct contains an array of listeners for every supported command
-// these arrays are accessed by a hash_map (with the command string as index)
+// these arrays are accessed by a std::unordered_map (with the command string as index)
 struct ListenerItem
 {
 	ListenerMap	aContainer;

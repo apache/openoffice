@@ -689,7 +689,7 @@ SwDoc::~SwDoc()
 
     // --> OD 2008-03-26 #refactorlists#
     {
-        for ( std::hash_map< String, SwList*, StringHash >::iterator
+        for ( std::unordered_map< String, SwList*, StringHash >::iterator
                                                     aListIter = maLists.begin();
               aListIter != maLists.end();
               ++aListIter )
@@ -873,7 +873,7 @@ void SwDoc::ClearDoc()
     pNumRuleTbl->DeleteAndDestroy( 0, pNumRuleTbl->Count() );
     // --> OD #i114725#,#i115828#
     {
-        for ( std::hash_map< String, SwList*, StringHash >::iterator
+        for ( std::unordered_map< String, SwList*, StringHash >::iterator
                                                     aListIter = maLists.begin();
               aListIter != maLists.end();
               ++aListIter )

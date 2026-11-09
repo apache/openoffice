@@ -29,7 +29,7 @@
 #include <osl/diagnose.h>
 #include <osl/mutex.hxx>
 
-#include <hash_map>
+#include <unordered_map>
 
 #include <com/sun/star/lang/XEventListener.hpp>
 

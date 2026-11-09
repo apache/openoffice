@@ -25,7 +25,7 @@
 #include "precompiled_bridges.hxx"
 
 #pragma warning( disable : 4237 )
-#include <hash_map>
+#include <unordered_map>
 #include <sal/config.h>
 #include <malloc.h>
 // <typeinfo.h> was a Microsoft compatibility header, removed in VS2015+.

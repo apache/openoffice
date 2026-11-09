@@ -26,7 +26,7 @@
 
 
 #include "swstylemanager.hxx"
-#include <hash_map>
+#include <unordered_map>
 #include <svl/stylepool.hxx>
 #include <doc.hxx>
 #include <charfmt.hxx>
@@ -34,7 +34,7 @@
 #include <swtypes.hxx>
 #include <istyleaccess.hxx>
 
-typedef ::std::hash_map< const ::rtl::OUString,
+typedef ::std::unordered_map< const ::rtl::OUString,
                          StylePool::SfxItemSet_Pointer_t,
                          ::rtl::OUStringHash,
                          ::std::equal_to< ::rtl::OUString > > SwStyleNameCache;

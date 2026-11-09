@@ -26,7 +26,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <hash_map>
+#include <unordered_map>
 #include <libkern/OSCacheControl.h>
 
 #include <rtl/alloc.h>

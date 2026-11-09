@@ -33,7 +33,7 @@
 #import <Cocoa/Cocoa.h>
 #include <postmac.h>
 
-#include <hash_map>
+#include <unordered_map>
 #include <memory>
 #include <boost/shared_ptr.hpp>
 
@@ -134,7 +134,7 @@ private:
 
 private:
   ::com::sun::star::uno::Reference< ::com::sun::star::datatransfer::XMimeContentTypeFactory> mrXMimeCntFactory;
-  typedef std::hash_map< rtl::OUString, NSString*, rtl::OUStringHash > OfficeOnlyTypes;
+  typedef std::unordered_map< rtl::OUString, NSString*, rtl::OUStringHash > OfficeOnlyTypes;
   mutable OfficeOnlyTypes maOfficeOnlyTypes;
 };
 

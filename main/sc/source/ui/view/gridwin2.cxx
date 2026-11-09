@@ -57,13 +57,13 @@
 #include "scabstdlg.hxx" //CHINA001
 
 #include <vector>
-#include <hash_map>
+#include <unordered_map>
 
 using namespace com::sun::star;
 using ::com::sun::star::sheet::DataPilotFieldOrientation;
 using ::std::vector;
 using ::std::unique_ptr;
-using ::std::hash_map;
+using ::std::unordered_map;
 using ::rtl::OUString;
 using ::rtl::OUStringHash;
 
@@ -557,8 +557,8 @@ void ScGridWindow::DPLaunchFieldPopupMenu(
 
 void ScGridWindow::UpdateDPFromFieldPopupMenu()
 {
-    typedef hash_map<OUString, OUString, OUStringHash> MemNameMapType;
-    typedef hash_map<OUString, bool, OUStringHash> MemVisibilityType;
+    typedef unordered_map<OUString, OUString, OUStringHash> MemNameMapType;
+    typedef unordered_map<OUString, bool, OUStringHash> MemVisibilityType;
 
     if (!mpDPFieldPopup.get())
         return;

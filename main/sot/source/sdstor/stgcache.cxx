@@ -27,7 +27,7 @@
 #if defined(_MSC_VER) && (_MSC_VER<1200)
 #include <tools/presys.h>
 #endif
-#include <hash_map>
+#include <unordered_map>
 #if defined(_MSC_VER) && (_MSC_VER<1200)
 #include <tools/postsys.h>
 #endif
@@ -46,7 +46,7 @@
 
 /*************************************************************************/
 //-----------------------------------------------------------------------------
-typedef std::hash_map
+typedef std::unordered_map
 <
 	sal_Int32,
 	StgPage *,

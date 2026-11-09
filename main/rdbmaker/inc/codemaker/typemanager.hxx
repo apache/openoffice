@@ -20,7 +20,7 @@
  *************************************************************/
 
 
-#include	<hash_map>
+#include	<unordered_map>
 
 #ifndef _CODEMAKER_TYPEMANAGER_HXX_
 #define _CODEMAKER_TYPEMANAGER_HXX_
@@ -38,7 +38,7 @@ typedef	::std::__hash_map__
 	NewAlloc
 > T2TypeClassMap;
 #else
-typedef	::std::hash_map
+typedef	::std::unordered_map
 <
 	::rtl::OString, // Typename
 	RTTypeClass, 	// TypeClass

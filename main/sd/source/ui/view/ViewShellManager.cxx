@@ -35,7 +35,7 @@
 #include <svx/svxids.hrc>
 #include <svx/fmshell.hxx>
 
-#include <hash_map>
+#include <unordered_map>
 
 #undef VERBOSE
 //#define VERBOSE 2
@@ -177,7 +177,7 @@ private:
 	mutable ::osl::Mutex maMutex;
 
 	class ShellHash{public: size_t operator()(const SfxShell* p) const { return (size_t)p;} };
-	typedef ::std::hash_multimap<const SfxShell*,SharedShellFactory,ShellHash>
+	typedef ::std::unordered_multimap<const SfxShell*,SharedShellFactory,ShellHash>
 		FactoryList;
 	FactoryList maShellFactories;
 
@@ -189,7 +189,7 @@ private:
 	ActiveShellList maActiveViewShells;
 
 	typedef ::std::list<ShellDescriptor> SubShellSubList;
-	typedef ::std::hash_map<const SfxShell*,SubShellSubList,ShellHash> SubShellList;
+	typedef ::std::unordered_map<const SfxShell*,SubShellSubList,ShellHash> SubShellList;
 	SubShellList maActiveSubShells;
 
 	/** In this member we remember what shells we have pushed on the shell

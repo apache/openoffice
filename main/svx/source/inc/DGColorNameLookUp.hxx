@@ -25,7 +25,7 @@
 #define _SVX_ACCESSIBILITY_DG_COLOR_NAME_LOOK_UP_HXX
 
 #include <rtl/ustrbuf.hxx>
-#include <hash_map>
+#include <unordered_map>
 
 namespace accessibility {
 
@@ -66,7 +66,7 @@ public:
 
 private:
     /// Define hash map type to convert numerical color values to names.
-    typedef std::hash_map<long int, ::rtl::OUString>
+    typedef std::unordered_map<long int, ::rtl::OUString>
         tColorValueToNameMap;
 
     /// This ma translates from numerical color values to names.

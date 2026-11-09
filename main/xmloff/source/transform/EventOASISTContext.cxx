@@ -41,7 +41,7 @@
 #include <comphelper/processfactory.hxx>
 #endif
 
-#include <hash_map>
+#include <unordered_map>
 
 using ::rtl::OUString;
 
@@ -50,7 +50,7 @@ using namespace ::com::sun::star::xml::sax;
 using namespace ::xmloff::token;
 
 class XMLTransformerOASISEventMap_Impl:
-	public ::std::hash_map< NameKey_Impl, ::rtl::OUString,
+	public ::std::unordered_map< NameKey_Impl, ::rtl::OUString,
 						    NameHash_Impl, NameHash_Impl >
 {
 public:

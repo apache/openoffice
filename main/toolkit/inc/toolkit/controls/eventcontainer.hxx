@@ -32,7 +32,7 @@
 
 #include <toolkit/helper/listenermultiplexer.hxx>
 
-#include <hash_map>
+#include <unordered_map>
 #include <cppuhelper/implbase2.hxx>
 typedef ::cppu::WeakImplHelper2< ::com::sun::star::container::XNameContainer,
 								 ::com::sun::star::container::XContainer > NameContainerHelper;
@@ -58,7 +58,7 @@ struct eqName_Impl
 	}
 };
 
-typedef std::hash_map
+typedef std::unordered_map
 <
 	::rtl::OUString,
 	sal_Int32,

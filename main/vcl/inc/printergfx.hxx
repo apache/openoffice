@@ -30,7 +30,7 @@
 #include "tools/gen.hxx"
 
 #include <list>
-#include <hash_map>
+#include <unordered_map>
 
 namespace psp {
 
@@ -248,7 +248,7 @@ private:
 
     /* font / font substitution */
     friend class Font3;
-    const ::std::hash_map< fontID, fontID >*    mpFontSubstitutes;
+    const ::std::unordered_map< fontID, fontID >*    mpFontSubstitutes;
     int             getCharWidth (sal_Bool b_vert, sal_Unicode n_char,
                                   CharacterMetric *p_bbox);
     fontID          getCharMetric (const Font3 &rFont, sal_Unicode n_char,

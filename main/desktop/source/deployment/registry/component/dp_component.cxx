@@ -50,7 +50,7 @@
 #include "com/sun/star/ucb/NameClash.hpp"
 #include "com/sun/star/util/XMacroExpander.hpp"
 #include <list>
-#include <hash_map>
+#include <unordered_map>
 #include <vector>
 #include <memory>
 #include <algorithm>
@@ -236,7 +236,7 @@ class BackendImpl : public ::dp_registry::backend::PackageRegistryBackend
     bool m_unorc_modified;
     bool bSwitchedRdbFiles;
 
-    typedef ::std::hash_map< OUString, Reference<XInterface>,
+    typedef ::std::unordered_map< OUString, Reference<XInterface>,
                              ::rtl::OUStringHash > t_string2object;
     t_string2object m_backendObjects;
 
