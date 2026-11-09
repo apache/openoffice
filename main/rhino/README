@@ -9,9 +9,9 @@ Checksum: (see external_deps.lst)
 In addition, to support the debugging of scripts contained in OpenOffice.org
 documents, we have modified the Java source files:
 - GuiCallback.java (added exitInterrupt method)
-- Main.java (added AOO-specific shortcut methods, nullified console I/O)
+- Main.java (added AOO-specific shortcut methods, console I/O uses System.in/out/err)
 - Dim.java (added evalScriptWithReturn, changed default URL from "<stdin>" to "document")
-- SwingGui.java (AOO-specific debugger GUI modifications)
+- SwingGui.java (AOO-specific debugger GUI modifications, no console window)
 - OfficeScriptInfo.java (new AOO-specific class)
 - DefiningClassLoader.java (modified class loading to check thread context class loader)
 
