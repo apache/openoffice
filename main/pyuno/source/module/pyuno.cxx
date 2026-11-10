@@ -652,12 +652,12 @@ static PyObject *PyUNO_dir( PyObject *self, PyObject *that )
     Sequence<OUString> oo_member_list;
 
     me = (PyUNO*) self;
-    Reference< XInvocation2 > inv2( me->members->xInvocation, UNO_QUERY );
-    if( inv2.is() )
-        oo_member_list = inv2->getMemberNames ();
-    else
+    try
     {
-        try
+        Reference< XInvocation2 > inv2( me->members->xInvocation, UNO_QUERY );
+        if( inv2.is() )
+            oo_member_list = inv2->getMemberNames ();
+        else
         {
             Runtime runtime;
             std::vector< OUString > names;
@@ -677,16 +677,16 @@ static PyObject *PyUNO_dir( PyObject *self, PyObject *that )
             for( size_t k = 0 ; k < names.size() ; k ++ )
                 oo_member_list[k] = names[k];
         }
-        catch( com::sun::star::uno::RuntimeException &e )
-        {
-            raisePyExceptionWithAny( makeAny( e ) );
-            return NULL;
-        }
-        catch( com::sun::star::uno::Exception &e )
-        {
-            raisePyExceptionWithAny( makeAny( e ) );
-            return NULL;
-        }
+    }
+    catch( com::sun::star::uno::RuntimeException &e )
+    {
+        raisePyExceptionWithAny( makeAny( e ) );
+        return NULL;
+    }
+    catch( com::sun::star::uno::Exception &e )
+    {
+        raisePyExceptionWithAny( makeAny( e ) );
+        return NULL;
     }
     member_list = PyList_New (oo_member_list.getLength ());
     for (int i = 0; i < oo_member_list.getLength (); i++)
