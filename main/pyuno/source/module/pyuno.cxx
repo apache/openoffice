@@ -399,7 +399,12 @@ PyObject *PyUNO_invoke( PyObject *object, const char *name , PyObject *args )
             PyUNO* me = (PyUNO*) object;
             OUString attrName = OUString::createFromAscii(name);
             Reference< XIdlMethod > xMethod;
-            if (! me->members->xInvocation->hasMethod (attrName))
+            bool hasMethod = false;
+            {
+                PyThreadDetach antiguard;
+                hasMethod = me->members->xInvocation->hasMethod (attrName);
+            }
+            if (! hasMethod)
             {
                 xMethod = findReflectedMethod( me, attrName, runtime );
                 if (! xMethod.is())
@@ -534,7 +539,15 @@ PyObject* PyUNO_getattr (PyObject* self, PyObject* attr_name)
 
         OUString attrName( OUString::createFromAscii( name ) );
         //We need to find out if it's a method...
-        if (me->members->xInvocation->hasMethod (attrName))
+        bool isMethod = false;
+        bool isProperty = false;
+        {
+            PyThreadDetach antiguard;
+            isMethod = me->members->xInvocation->hasMethod (attrName);
+            if (! isMethod)
+                isProperty = me->members->xInvocation->hasProperty (attrName);
+        }
+        if (isMethod)
         {
             //Create a callable object to invoke this...
             PyRef ret = PyUNO_callable_new (
@@ -546,7 +559,7 @@ PyObject* PyUNO_getattr (PyObject* self, PyObject* attr_name)
         }
 
         //or a property
-        if (me->members->xInvocation->hasProperty ( attrName))
+        if (isProperty)
         {
             //Return the value of the property
             Any anyRet;
@@ -656,7 +669,10 @@ static PyObject *PyUNO_dir( PyObject *self, PyObject *that )
     {
         Reference< XInvocation2 > inv2( me->members->xInvocation, UNO_QUERY );
         if( inv2.is() )
+        {
+            PyThreadDetach antiguard;
             oo_member_list = inv2->getMemberNames ();
+        }
         else
         {
             Runtime runtime;
