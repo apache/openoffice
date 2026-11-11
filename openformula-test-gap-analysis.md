@@ -39,10 +39,10 @@ Source-of-truth: `test/aoo-test/`, `test/odf-validate/`, and AOO source. Finding
 - **[CONFIRMED]** EASTERSUNDAY: implemented (`interpr2.cxx:261`) but NOT in either function inventory. No dedicated test coverage confirmed.
 
 **[CONFIRMED] IFNA and SKEWP are no longer missing functions.** Both were implemented in Milestone B. The test inventories list them as standard ODF functions, which is now correct.
-
 ### Missing semantic tests
-- No confirmed semantic test for CONVERT `atm` discrepancy (101324.996583 Pa vs ODF 1.4 1.0132510E+5).
-- No confirmed semantic test for INDEX row-vector single-argument (ODF 1.4: error; AOO: returns column).
+
+- No confirmed semantic test for CONVERT `atm` (fixed in Milestone C: 101325.1 Pa vs old 101324.996583 Pa).
+- No confirmed semantic test for INDEX row-vector single-argument (fixed in Milestone A: ODF 1.4 error vs old column return).
 - No confirmed semantic test for DATE pre-1583 (#VALUE! before 15 Oct 1582; proleptic Gregorian for YEAR/MONTH/DAY).
 - No confirmed semantic test for BITAND/BITOR/BITXOR/BITLSHIFT/BITRSHIFT variadic params or negative-shift handling (interpr1.cxx:1231-1234 appears inverted).
 - No confirmed semantic test for short-circuit AND/OR.
@@ -55,10 +55,10 @@ Source-of-truth: `test/aoo-test/`, `test/odf-validate/`, and AOO source. Finding
 ### Missing ODF round-trip tests
 - No confirmed round-trip test verifying function names written on ODF export (e.g. `ORG.OPENOFFICE.CURRENT` vs `CURRENT`, `ORG.OPENOFFICE.ERRORTYPE` vs `ERROR.TYPE`, `ORG.OPENOFFICE.EASTERSUNDAY` vs `EASTERSUNDAY`, `ORG.OPENOFFICE.STYLE` vs `STYLE`, `ORG.OPENOFFICE.MULTIRANGE` vs `~`, `MULTIRANGE` legacy).
 - `odf_docs/ODF14-KNOWN-LIMITATIONS-PUBLIC.md` notes formula cells with error results written as `office:value-type="string"` (ODF 1.4 adds `error` type) — no confirmed round-trip test for error value type.
-
 ### Existing tests that produce false confidence
-- `openformula-functions.txt` lists IFNA/SKEWP as standard ODF 1.2 functions, but AOO does not implement them — a test that only checks "name in inventory" passes while implementation is absent.
-- Inventories are ODF 1.2, so they do not flag ODF 1.4 regressions (INDEX row-vector, CONVERT atm, COUNTA empty cells).
+
+- `openformula-functions.txt` lists IFNA/SKEWP as standard ODF 1.2 functions; AOO now implements them (Milestone B), so this is no longer a false-negative for conformance.
+- Inventories are ODF 1.2, so they do not flag ODF 1.4 regressions (INDEX row-vector fixed in Milestone A, CONVERT atm fixed in Milestone C, COUNTA empty cells).
 
 ## 3. Proposed versioned test inventory
 
