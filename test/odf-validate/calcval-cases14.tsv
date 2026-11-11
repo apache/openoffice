@@ -147,7 +147,8 @@ COUNTA.empty	=COUNTA(D6:D7)	cell	0	6.13.7 COUNTA: truly empty cells are not coun
 COUNTA.emptystr	=COUNTA(1;"";"x")	cell	3	6.13.7 COUNTA: empty string "" is non-blank and counted
 COUNTBLANK.range	=COUNTBLANK(D1:D3)	cell	0	6.13.8 COUNTBLANK over range with no empty cells
 COUNTBLANK.empty	=COUNTBLANK(D6:D7)	cell	2	6.13.8 COUNTBLANK: truly empty cells are counted (D6:D7 unset)
-DATE.pre1583	=DATE(1500;1;1)	cell	#ERR	6.10.2 DATE(1500;1;1) outside constraints (Year>=1904); impl-defined/diagnostic, not mandatory #ERR (AOO observed #VALUE!)
+DATE.pre1583	=DATE(1500;1;1)	cell	#ERR	6.10.2 DATE(1500;1;1) outside constraints (Year>=1904); impl-defined/diagnostic per ODF 1.4 — NOT mandatory #ERR. THIS CALCVAL ASSERTION IS AOO-SPECIFIC DIAGNOSTIC ONLY (observed #VALUE!), not an ODF conformance assertion.
+SYN-001-criteria	=DCOUNT(R1:T6;;V1:V2)	cell	4	6.x Criteria syntax §4.11.11 via DCOUNT against existing R1:T6 database and V1:V2 criteria fixtures (Age>=30 → B,C,D,E)
 INDEX.rowvec.single	=INDEX(H1:L1;3)	cell	#ERR	6.14.6 INDEX row vector single arg: ODF 1.4 error (Milestone A fix)
 INDEX.rowvec.colarg	=INDEX(H1:L1;;3)	cell	30	6.14.6 INDEX row vector with column arg only (col 3 of H1:L1=10,20,30,40,50)
 INDEX.row.outrange	=INDEX(D1:D5;6)	cell	#ERR	6.14.6 INDEX row out of range

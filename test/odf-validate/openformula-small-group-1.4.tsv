@@ -67,10 +67,10 @@ SG-FN-013	6.13.7	FN-013-COUNTA-empty-cells	=COUNTA(D6:D7)	0	-	UNVERIFIED	COUNTA 
 SG-FN-013	6.13.7	FN-013-COUNTA-empty-string	=COUNTA(1;"";"x")	3	-	UNVERIFIED	COUNTA counts empty string "" as non-blank per §6.13.7
 SG-FN-014	6.13.8	FN-014-COUNTBLANK-nonempty	=COUNTBLANK(D1:D3)	0	-	UNVERIFIED	COUNTBLANK over range with no empty cells
 SG-FN-014	6.13.8	FN-014-COUNTBLANK-empty-cells	=COUNTBLANK(D6:D7)	2	-	UNVERIFIED	COUNTBLANK over truly empty cells (D6:D7 unset)
-SG-FN-014	6.13.8	FN-014-COUNTBLANK-empty-string	=COUNTBLANK(D6:D7)	2	-	UNVERIFIED	COUNTBLANK does not count "" text values as blank in ranges; harness cannot place "" in data cells (scratch cleared), so this verifies only empty-cell counting; ""-in-cell case impl-defined per §6.13.8
+SG-FN-014	6.13.8	FN-014-COUNTBLANK-empty-string	=COUNTBLANK(D6:D7)	-	-	UNVERIFIED	DIAGNOSTIC: does NOT test cell containing "" — D6:D7 are genuinely empty cells, already covered by FN-014-COUNTBLANK-empty-cells. Required ""-in-cell fixture cannot be established by calcval harness (scratch AA1:AF12 cleared each case; no pre-populated "" data cells). ""-in-cell blankness is impl-defined per §6.13.8.
 
 # ===== Functions (§6.x) — Priority 2: DATE pre-1583 =====
-SG-FN-016	6.10.2	FN-016-DATE-pre1583	=DATE(1500;1;1)	#ERR	-	UNVERIFIED	DATE(1500;1;1) outside §6.10.2 constraints (Year>=1904); impl-defined/evaluator-diagnostic, not mandatory #ERR (AOO observed #VALUE!)
+SG-FN-016	6.10.2	FN-016-DATE-pre1583	=DATE(1500;1;1)	-	-	UNVERIFIED	DATE(1500;1;1) outside §6.10.2 constraints (Year>=1904); result impl-defined/diagnostic, NOT a mandatory ODF error. AOO observed #VALUE! as a diagnostic only — not a conformance assertion.
 SG-FN-067	6.13.27	FN-067-NA	=NA()	#N/A	-	UNVERIFIED	NA function returns #N/A error
 
 # ===== Functions (§6.x) — Priority 3: INDEX =====
