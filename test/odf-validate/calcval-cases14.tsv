@@ -65,6 +65,27 @@ Y1500.leap	=DATE(1500;3;1)-DATE(1500;2;28)	cell	-	7.4 before 1583 the system is 
 Y1582.switch	=DATE(1582;10;15)-DATE(1582;10;4)	cell	-	7.4 proleptic Gregorian gives 11, a Julian-to-Gregorian switch gives 1
 CONVERT.g.kg	=CONVERT(1;"g";"kg")	cell	0.001	control: the add-in rewrite reaches a known unit pair
 CONVERT.bogus	=CONVERT(1;"nosuchunit";"Pa")	cell	#ERR	control: an unknown unit is an error
+CONVERT.Torr	=CONVERT(1;"Torr";"Pa")	cell	133.32236842105263	6.16.18 Table 24: Torr = 101325/760 Pa exactly
+CONVERT.Pica.in	=CONVERT(1;"Pica";"in")	cell	0.013888888888888888	6.16.18 Table 24: Pica point = 1/72 inch
+CONVERT.picapt.in	=CONVERT(1;"picapt";"in")	cell	0.013888888888888888	6.16.18 Table 24: picapt alias = 1/72 inch
+CONVERT.pica.in	=CONVERT(1;"pica";"in")	cell	0.16666666666666666	6.16.18 Table 24: Pica = 1/6 inch
+CONVERT.Pica2.in2	=CONVERT(1;"Pica2";"in2")	cell	0.00019290123456790123	6.16.18 Table 24: square Pica point
+CONVERT.pica2.in2	=CONVERT(1;"pica2";"in2")	cell	0.027777777777777776	6.16.18 Table 24: square Pica
+CONVERT.Pica3.in3	=CONVERT(1;"Pica3";"in3")	cell	0.0000026791838134430725	6.16.18 Table 24: cubic Pica point
+CONVERT.pica3.in3	=CONVERT(1;"pica3";"in3")	cell	0.004629629629629629	6.16.18 Table 24: cubic Pica
+CONVERT.picapt2.in2	=CONVERT(1;"picapt2";"in2")	cell	0.00019290123456790123	6.16.18 Table 24: picapt2 alias = square Pica point
+CONVERT.picapt3.in3	=CONVERT(1;"picapt3";"in3")	cell	0.0000026791838134430725	6.16.18 Table 24: picapt3 alias = cubic Pica point
+CONVERT.Pica^2.in2	=CONVERT(1;"Pica^2";"in2")	cell	0.00019290123456790123	6.16.18 Table 24: caret exponent spelling Pica^2
+CONVERT.picapt^2.in2	=CONVERT(1;"picapt^2";"in2")	cell	0.00019290123456790123	6.16.18 Table 24: caret exponent spelling picapt^2
+CONVERT.pica^2.in2	=CONVERT(1;"pica^2";"in2")	cell	0.027777777777777776	6.16.18 Table 24: caret exponent spelling pica^2
+CONVERT.Pica^3.in3	=CONVERT(1;"Pica^3";"in3")	cell	0.0000026791838134430725	6.16.18 Table 24: caret exponent spelling Pica^3
+CONVERT.picapt^3.in3	=CONVERT(1;"picapt^3";"in3")	cell	0.0000026791838134430725	6.16.18 Table 24: caret exponent spelling picapt^3
+CONVERT.pica^3.in3	=CONVERT(1;"pica^3";"in3")	cell	0.004629629629629629	6.16.18 Table 24: caret exponent spelling pica^3
+CONVERT.km.m	=CONVERT(1;"km";"m")	cell	1000	6.16.18 Table 25: kilo prefix on meter
+CONVERT.cm2.m2	=CONVERT(1;"cm2";"m2")	cell	0.0001	6.16.18 Table 25: centi prefix on squared meter
+CONVERT.Kibyte.bit	=CONVERT(1;"Kibyte";"bit")	cell	8192	6.16.18 Table 26: kibi prefix on byte to bit
+CONVERT.km.Pa	=CONVERT(1;"km";"Pa")	cell	#ERR	invalid conversion: different unit groups
+CONVERT.ATM.Pa	=CONVERT(1;"ATM";"Pa")	cell	#ERR	invalid conversion: case-sensitive unit names
 EASTER.mid	=EASTERSUNDAY(1000)	cell	#ERR	6.10.8 constraint 1583 <= Year (100 to 1582)
 EASTER.neg	=EASTERSUNDAY(-1)	cell	#ERR	6.10.8 constraint 1583 <= Year (negative years used to wrap)
 EASTER.wrap	=EASTERSUNDAY(67536)	cell	#ERR	6.10.8 constraint Year <= 9956 (67536 used to wrap to 2000)
