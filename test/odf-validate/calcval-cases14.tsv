@@ -115,3 +115,9 @@ SKEWP.range	=SKEWP(D1:D3)	cell	0	6.x numeric range input (D1:D3 = 10,20,30, symm
 SKEWP.array	=SKEWP({1;1;2})	cell	0.7071067812	6.x array/matrix input
 SKEWP.mixed	=SKEWP(1;"text";2)	cell	0	6.x text skipped, {1,2} is symmetric
 SKEWP.err	=SKEWP(1/0)	cell	#ERR	6.x error value propagates
+IFNA.ref	=IFNA(D1;10)	cell	10	6.x cell reference containing a value (D1 = 10), returned unchanged
+IFNA.ref.text	=IFNA(A1;10)	cell	y	6.x cell reference containing text (A1 = y), returned unchanged
+IFNA.range	=IFNA(D1:D3;99)	cell	10	6.x range reference, implicit intersection takes first cell (D1 = 10)
+SKEWP.two	=SKEWP(1;2)	cell	0	6.x two observations, non-constant, zero skewness
+SKEW.text	=SKEW(1;"text";2)	cell	0	6.x regression: direct scalar text skipped, {1,2} symmetric
+SKEW.err	=SKEW(1/0)	cell	#ERR	6.x regression: error argument propagates

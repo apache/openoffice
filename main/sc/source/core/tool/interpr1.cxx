@@ -325,19 +325,83 @@ void ScInterpreter::ScIfna()
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScIfna" );
     const short* pJump = pCur->GetJump();
-    // value is on the stack.  If it is the #N/A error, discard it and jump
-    // to the fallback argument; otherwise jump to the end and leave the
-    // original value on the stack as the result.  The fallback argument is
-    // only compiled (and therefore only evaluated) when value is #N/A.
-    if (sp && pStack[sp-1]->GetType() == formula::svError
-        && pStack[sp-1]->GetError() == NOTAVAILABLE)
+
+    switch ( GetStackType() )
     {
-        --sp;  // discard the #N/A value without setting nGlobalError
-        aCode.Jump( pJump[ 1 ], pJump[ 2 ] );
-    }
-    else
-    {
-        aCode.Jump( pJump[ 2 ], pJump[ 2 ] );
+        case formula::svError:
+        {
+            // Direct error value on stack (e.g. NA() or 1/0).
+            // Peek without popping: if #N/A, discard and jump to fallback;
+            // otherwise leave on stack and jump to end (propagate error).
+            if ( pStack[sp-1]->GetError() == NOTAVAILABLE )
+            {
+                --sp;  // discard #N/A without touching nGlobalError
+                aCode.Jump( pJump[ 1 ], pJump[ 2 ] );
+            }
+            else
+            {
+                aCode.Jump( pJump[ 2 ], pJump[ 2 ] );
+            }
+        }
+        break;
+
+        case formula::svSingleRef :
+        case formula::svDoubleRef :
+        {
+            // Reference: resolve to a single cell (implicit intersection for
+            // ranges) and check whether the cell contains #N/A.
+            ScAddress aAdr;
+            if ( !PopDoubleRefOrSingleRef( aAdr ) )
+            {
+                // Reference resolution failed: propagate error, jump to end.
+                aCode.Jump( pJump[ 2 ], pJump[ 2 ] );
+            }
+            else if ( nGlobalError )
+            {
+                // Error resolving reference: propagate, jump to end.
+                aCode.Jump( pJump[ 2 ], pJump[ 2 ] );
+            }
+            else
+            {
+                ScBaseCell* pCell = GetCell( aAdr );
+                sal_uInt16 nErr = GetCellErrCode( pCell );
+                if ( nErr == NOTAVAILABLE )
+                {
+                    // Cell contains #N/A: jump to fallback.
+                    aCode.Jump( pJump[ 1 ], pJump[ 2 ] );
+                }
+                else if ( nErr )
+                {
+                    // Cell contains another error: push it, jump to end.
+                    PushError( nErr );
+                    aCode.Jump( pJump[ 2 ], pJump[ 2 ] );
+                }
+                else
+                {
+                    // Cell has a value: push it, jump to end.
+                    PushCellResultToken( true, aAdr, NULL, NULL );
+                    aCode.Jump( pJump[ 2 ], pJump[ 2 ] );
+                }
+            }
+        }
+        break;
+
+        case formula::svRefList :
+        case formula::svMatrix:
+        {
+            // Reference list or matrix input: IFNA is not an array-forcing
+            // function.  Return the value as-is; per-element #N/A
+            // substitution is not implemented.  This is a documented
+            // limitation (see openformula-milestone-b-report.md).
+            aCode.Jump( pJump[ 2 ], pJump[ 2 ] );
+        }
+        break;
+
+        default:
+        {
+            // Regular value (double, string, logical, etc.): not #N/A.
+            aCode.Jump( pJump[ 2 ], pJump[ 2 ] );
+        }
     }
 }
 
