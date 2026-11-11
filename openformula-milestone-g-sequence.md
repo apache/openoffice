@@ -5,6 +5,20 @@
 **Source:** `openformula-small-group-semantic-audit.md`, `openformula-small-group-semantic-gaps.tsv`  
 **Scope:** Implementation planning only. No code changes in this document.
 
+## Current Status
+
+| Phase | Status | Commit | Notes |
+|---|---|---|---|
+| G.1 | Complete | `41da3628f9` | STRING_MAXLEN documented; ScDBCount empty-cell TODO investigated |
+| G.2 | Investigated (not implemented) | — | Fix approach documented; requires AOO build/test environment |
+| G.3 | Pending | — | Decision record needed before any code change |
+| G.4 | Pending | — | Corpus regression analysis needed |
+| G.5 | Pending | — | Runtime verification only; no build available |
+| G.6 | Pending | — | Runtime verification only; no build available |
+
+**Blocker:** No configured AOO build tree; `sc`/`scaddins` not built; calcval harness macOS-only. Runtime verification deferred to consolidated Calc testing phase.
+
+
 ## Principles
 
 1. **Audit-first:** Implementation follows the F-audit findings; no speculative fixes.
@@ -15,24 +29,30 @@
 
 ## Phase G.1 — Zero-Risk Documentation & Test Harness (No Code Changes)
 
+**STATUS: COMPLETE** (committed at `41da3628f9`)
+
 These items require no production source modification and can be completed immediately.
 
-| Order | Gap ID | Area | Action | Rationale |
-|---|---|---|---|---|
-| G.1.1 | F-GAP-008 | Basic Limits — strings | Locate `STRING_MAXLEN` definition; confirm value >= 32767 or document actual limit | Static lookup; no code change |
-| G.1.2 | F-GAP-012 | Syntax — named expressions | Document named expression test requirement (pre-defined `MYNAME` not available in calcval harness) | Test infrastructure note |
-| G.1.3 | F-GAP-015 | COUNTA/COUNTBLANK | Document scalar `""` vs formula-cell `""` distinction as implementation-defined | Audit documentation |
-
-## Phase G.2 — Low-Risk: Criteria Syntax Empty-Cell Fix (ScDBCount)
-
-This is a targeted fix with a clear TODO in source and contained blast radius.
-
-| Order | Gap ID | Area | File | Change | Risk |
+| Order | Gap ID | Area | Action | Rationale | Status |
 |---|---|---|---|---|---|
-| G.2.1 | F-GAP-004 / F-GAP-005 | Criteria — DCOUNT empty-cell matching | `main/sc/source/core/tool/interpr1.cxx:6838-6845` | Address ScDBCount TODO: ensure empty cells matched by query are counted when field is missing; adapt ScQueryCellIterator callers as noted | Low — isolated to DCOUNT without field; documented TODO already exists |
+| G.1.1 | F-GAP-008 | Basic Limits — strings | Locate `STRING_MAXLEN` definition; confirm value >= 32767 or document actual limit | Static lookup; no code change | Complete — `main/tools/inc/tools/string.hxx:110-120`; default `STRING_MAXLEN = 65,535` (0xFFFF without STRING32), exceeds ODF 1.4 32,767 minimum |
+| G.1.2 | F-GAP-012 | Syntax — named expressions | Document named expression test requirement (pre-defined `MYNAME` not available in calcval harness) | Test infrastructure note | Complete — documented in F-GAP-012; SYN-009-named marked not directly executable |
+| G.1.3 | F-GAP-015 | COUNTA/COUNTBLANK | Document scalar `""` vs formula-cell `""` distinction as implementation-defined | Audit documentation | Complete — documented in F-GAP-001, F-GAP-002, F-GAP-015 |
+
+## Phase G.2 — Investigation Complete: Criteria Syntax Empty-Cell Fix (ScDBCount)
+
+**STATUS: INVESTIGATED — implementation requires build/test environment**
+
+This is a targeted fix with a clear TODO in source and contained blast radius. The root cause is confirmed: `ScQueryCellIterator` ("run through all not empty cells") skips empty cells, and `ScDBQueryDataIterator` skips `CELLTYPE_NONE` via `default` case at `dociter.cxx:655-657`. Per ODF 1.4 §6.9.3, DCOUNT without a field should count ALL matching rows including those with empty result cells.
+
+| Order | Gap ID | Area | File | Finding | Fix Approach | Risk |
+|---|---|---|---|---|---|---|
+| G.2.1 | F-GAP-004 | Criteria — DCOUNT empty-cell matching | `main/sc/source/core/tool/interpr1.cxx:6838-6845` | ScDBCount missing-field path uses `ScQueryCellIterator` which skips empty cells; DCOUNT undercounts when matching rows have empty result cells | Replace `ScQueryCellIterator` iteration with row-by-row iteration using `ScDBQueryDataIterator::IsQueryValid()` per row, counting all matching rows regardless of cell emptiness; keep fix isolated to ScDBCount missing-field path | Low — isolated to DCOUNT without field; documented TODO already exists |
+
+**Implementation detail:** The fix would iterate `nRow` from `nRow1` to `nRow2`, calling `IsQueryValid(*pDok, *pQueryParam, nTab, nRow, pCell)` for each row (with `pCell` possibly NULL for empty cells), and incrementing `nCount` for each valid match. This differs from current `ScQueryCellIterator` approach which only visits rows with non-empty cells.
 
 **Dependencies:** None.  
-**Runtime validation needed:** Yes — DCOUNT with empty result cells.
+**Runtime validation needed:** Yes — DCOUNT with empty result cells. **Blocked:** No AOO build tree available; cannot build/test.
 
 ## Phase G.3 — Medium-Risk: COUNTA/COUNTBLANK Behavior Review
 
@@ -86,30 +106,30 @@ No code changes expected (no hard limits found). Verification only.
 ## Dependency Summary
 
 ```
-G.1 (docs/tests, no code) ──┐
-                            ├── G.2 (ScDBCount empty-cell) ──┐
-G.5 (limits verification) ──┤                                ├── G.3 (COUNTBLANK decision)
-G.6 (syntax verification) ──┤                                │
-G.4 (INDEX compatibility) ──┘                                └── (runtime-validated)
+G.1 (docs, COMPLETE) ──┐
+                       ├── G.2 (ScDBCount empty-cell, INVESTIGATED) ──┐
+G.5 (limits verification) ──┤                                        ├── G.3 (COUNTBLANK decision)
+G.6 (syntax verification) ──┤                                        │
+G.4 (INDEX compatibility) ──┘                                        └── (runtime-validated)
 ```
 
 ## Estimated Implementation Complexity
 
-| Phase | Complexity | Rationale |
-|---|---|---|
-| G.1 (docs) | Trivial | No code changes |
-| G.2 (ScDBCount) | Low | Isolated TODO; contained scope |
-| G.3 (COUNTBLANK) | Medium | Behavior decision; may need compatibility option |
-| G.4 (INDEX compat) | Medium | Corpus regression analysis needed |
-| G.5/G.6 (verification) | Low | Test execution only; no code changes |
+| Phase | Complexity | Rationale | Status |
+|---|---|---|---|
+| G.1 (docs) | Trivial | No code changes | Complete |
+| G.2 (ScDBCount) | Low | Isolated TODO; contained scope | Investigated — blocked on build |
+| G.3 (COUNTBLANK) | Medium | Behavior decision; may need compatibility option | Pending decision record |
+| G.4 (INDEX compat) | Medium | Corpus regression analysis needed | Pending |
+| G.5/G.6 (verification) | Low | Test execution only; no code changes | Pending build |
 
 ## Definition of Done for Milestone G
 
-- All G.1 documentation items complete
-- G.2 ScDBCount empty-cell fix implemented (if corpus testing confirms need)
-- G.3 COUNTBLANK behavior documented (change or no-change decision recorded)
-- G.4 INDEX compatibility impact assessed
-- G.5/G.6 all runtime tests executed against built AOO
+- All G.1 documentation items complete (committed at `41da3628f9`)
+- G.2 ScDBCount empty-cell fix approach documented (blocked: no build/test environment)
+- G.3 COUNTBLANK behavior: decision record required before any code change
+- G.4 INDEX compatibility: corpus regression analysis required before compatibility option
+- G.5/G.6 all runtime tests: prepared, awaiting build environment
 - No production changes without corresponding calcval test coverage
 - All changes verified against ODF 1.4 normative expected results
 
