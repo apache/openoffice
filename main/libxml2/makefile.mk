@@ -86,6 +86,10 @@ xml2_CFLAGS+=$(ARCH_FLAGS) $(C_RESTRICTIONFLAGS)
 .ENDIF			# "$(COMNAME)"=="sunpro5"
 xml2_LDFLAGS+=-L$(SYSBASE)$/usr$/lib
 .ENDIF			# "$(SYSBASE)"!=""
+.IF "$(HAVE_LD_UNDEFINED_VERSION)"=="TRUE"
+# lld rejects libxml2.syms entries for symbols the configure options leave out
+xml2_LDFLAGS+=-Wl,--undefined-version
+.ENDIF
 
 # --without-iconv: no OpenOffice code calls iconv, and libxml2-configure.patch
 # has always meant to turn it off -- it patches the generated xmlversion.h,

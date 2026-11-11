@@ -100,6 +100,10 @@ CONFIGURE_FLAGS=--disable-pkg-config --with-blas=BUILD --with-lapack=BUILD --dis
 # each link line (and sets -no-undefined), which is the correct fix.
 CONFIGURE_FLAGS+=--enable-dependency-linking
 .ENDIF
+.IF "$(OS)"=="FREEBSD" && "$(COM)"=="CLANG"
+# clang defaults to C++17, which removed the 'register' and std::bind2nd CoinMP uses
+CONFIGURE_FLAGS+=ADD_CXXFLAGS='-std=gnu++14'
+.ENDIF
 #BUILD_ACTION= CC="$(CC) $(ARCH_FLAGS)" CPP="$(CXX) $(ARCH_FLAGS)" $(GNUMAKE) -j8
 BUILD_ACTION= $(GNUMAKE) -j$(MAXPROCESS)
 .ENDIF
