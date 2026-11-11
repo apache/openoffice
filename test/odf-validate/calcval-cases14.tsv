@@ -68,3 +68,32 @@ CONVERT.bogus	=CONVERT(1;"nosuchunit";"Pa")	cell	#ERR	control: an unknown unit i
 EASTER.mid	=EASTERSUNDAY(1000)	cell	#ERR	6.10.8 constraint 1583 <= Year (100 to 1582)
 EASTER.neg	=EASTERSUNDAY(-1)	cell	#ERR	6.10.8 constraint 1583 <= Year (negative years used to wrap)
 EASTER.wrap	=EASTERSUNDAY(67536)	cell	#ERR	6.10.8 constraint Year <= 9956 (67536 used to wrap to 2000)
+BITLSHIFT.pos	=BITLSHIFT(8;1)	cell	16	6.3.x left shift by 1
+BITLSHIFT.neg	=BITLSHIFT(8;-1)	cell	4	6.3.x negative shift count reverses direction
+BITLSHIFT.zero	=BITLSHIFT(8;0)	cell	8	6.3.x zero shift count returns value unchanged
+BITRSHIFT.pos	=BITRSHIFT(8;1)	cell	4	6.3.x right shift by 1
+BITRSHIFT.neg	=BITRSHIFT(8;-1)	cell	16	6.3.x negative shift count reverses direction
+BITRSHIFT.zero	=BITRSHIFT(8;0)	cell	8	6.3.x zero shift count returns value unchanged
+BITLSHIFT.bit63	=BITLSHIFT(1;63)	cell	9223372036854775808	6.3.x shift by 63 bits
+BITLSHIFT.bit64	=BITLSHIFT(1;64)	cell	0	6.3.x shift by the width of the result yields 0
+BITRSHIFT.bit64	=BITRSHIFT(1;64)	cell	0	6.3.x shift by the width of the result yields 0
+BITLSHIFT.neg64	=BITLSHIFT(8;-64)	cell	0	6.3.x negative shift by the width yields 0
+BITLSHIFT.negval	=BITLSHIFT(-1;1)	cell	#ERR	6.3.x negative operand is an error
+BITRSHIFT.negval	=BITRSHIFT(-1;1)	cell	#ERR	6.3.x negative operand is an error
+BITLSHIFT.ovr	=BITLSHIFT(281474976710657;1)	cell	#ERR	6.3.x operand beyond the 48-bit range is an error
+INDEX.row.twod	=INDEX(D1:F3;2;3)	cell	202	6.14.6 two-dimensional reference, row and column
+INDEX.row.outrange	=INDEX(D1:D5;6)	cell	#ERR	6.14.6 row beyond the number of rows is an error
+BITAND.maxval	=BITAND(281474976710655;281474976710655)	cell	281474976710655	6.6.1 max unsigned operand (2^48 - 1) is valid
+BITAND.ovr2	=BITAND(281474976710656;1)	cell	#ERR	6.6.1 operand 2^48 is beyond the allowed range
+BITOR.maxval	=BITOR(281474976710655;0)	cell	281474976710655	6.6.1 max unsigned operand is valid
+BITOR.ovr2	=BITOR(281474976710656;1)	cell	#ERR	6.6.1 operand 2^48 is beyond the allowed range
+BITXOR.maxval	=BITXOR(281474976710655;0)	cell	281474976710655	6.6.1 max unsigned operand is valid
+BITXOR.ovr2	=BITXOR(281474976710656;1)	cell	#ERR	6.6.1 operand 2^48 is beyond the allowed range
+BITAND.negval	=BITAND(-1;1)	cell	#ERR	6.6.1 negative operand is an error
+BITOR.negval	=BITOR(-1;1)	cell	#ERR	6.6.1 negative operand is an error
+BITXOR.negval	=BITXOR(-1;1)	cell	#ERR	6.6.1 negative operand is an error
+BITLSHIFT.maxval	=BITLSHIFT(281474976710655;0)	cell	281474976710655	6.6.1 max unsigned operand is valid
+BITLSHIFT.ovr2	=BITLSHIFT(281474976710656;1)	cell	#ERR	6.6.1 operand 2^48 is beyond the allowed range
+BITRSHIFT.maxval	=BITRSHIFT(281474976710655;0)	cell	281474976710655	6.6.1 max unsigned operand is valid
+BITRSHIFT.ovr2	=BITRSHIFT(281474976710656;1)	cell	#ERR	6.6.1 operand 2^48 is beyond the allowed range
+INDEX.array	=INDEX({10;20|30;40|50;60};3;1)	cell	50	6.14.6 array (matrix) input, row and column
