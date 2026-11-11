@@ -143,9 +143,11 @@ SKEWP.two	=SKEWP(1;2)	cell	0	6.x two observations, non-constant, zero skewness
 SKEW.text	=SKEW(1;"text";2)	cell	0	6.x regression: direct scalar text skipped, {1,2} symmetric
 SKEW.err	=SKEW(1/0)	cell	#ERR	6.x regression: error argument propagates
 COUNTA.range	=COUNTA(D1:D3)	cell	3	6.13.7 COUNTA over numeric range (D1:D3=10,20,30)
-COUNTA.text	=COUNTA(E1:E3)	cell	3	6.13.7 COUNTA over text range (E1:E3=y,x,y)
+COUNTA.empty	=COUNTA(D6:D7)	cell	0	6.13.7 COUNTA: truly empty cells are not counted (D6:D7 unset)
+COUNTA.emptystr	=COUNTA(1;"";"x")	cell	3	6.13.7 COUNTA: empty string "" is non-blank and counted
 COUNTBLANK.range	=COUNTBLANK(D1:D3)	cell	0	6.13.8 COUNTBLANK over range with no empty cells
-DATE.pre1583	=DATE(1500;1;1)	cell	#ERR	6.10.2 DATE before 1583: impl-defined #VALUE!
+COUNTBLANK.empty	=COUNTBLANK(D6:D7)	cell	2	6.13.8 COUNTBLANK: truly empty cells are counted (D6:D7 unset)
+DATE.pre1583	=DATE(1500;1;1)	cell	#ERR	6.10.2 DATE(1500;1;1) outside constraints (Year>=1904); impl-defined/diagnostic, not mandatory #ERR (AOO observed #VALUE!)
 INDEX.rowvec.single	=INDEX(H1:L1;3)	cell	#ERR	6.14.6 INDEX row vector single arg: ODF 1.4 error (Milestone A fix)
 INDEX.rowvec.colarg	=INDEX(H1:L1;;3)	cell	30	6.14.6 INDEX row vector with column arg only (col 3 of H1:L1=10,20,30,40,50)
 INDEX.row.outrange	=INDEX(D1:D5;6)	cell	#ERR	6.14.6 INDEX row out of range

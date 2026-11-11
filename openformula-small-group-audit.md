@@ -33,10 +33,10 @@ Therefore **no conformance level (Small/Medium/Large) may be claimed for AOO Cal
 
 | ReqID | Requirement | Status | Source Evidence | Runtime Verified |
 |-------|-------------|--------|-----------------|-------------------|
-| SG-BL-001 | Formula length >= 1024 characters | **UNVERIFIED** | FormulaCompiler parses token arrays dynamically; no fixed 1024-char limit found in source | No |
+| SG-BL-001 | Formula length >= 1024 characters | **UNVERIFIED** | FormulaCompiler parses token arrays dynamically; no fixed 1024-char limit found in source. E.1 test corrected to 1026-char expression (`=1`+`+1`*512, result 513). | No |
 | SG-BL-002 | >= 30 parameters per function | **UNVERIFIED** | MustHaveParamCount validates exact counts; no 30-param cap found | No |
 | SG-BL-003 | Strings up to 32767 ASCII chars | **UNVERIFIED** | OUString used for strings; no specific 32767 limit found | No |
-| SG-BL-004 | >= 7 nesting levels of functions | **UNVERIFIED** | No nesting depth limit found in compiler/interpreter | No |
+| SG-BL-004 | >= 7 nesting levels of functions | **UNVERIFIED** | No nesting depth limit found in compiler/interpreter. E.1 test corrected to 7 genuinely nested IF levels with balanced parens. | No |
 
 **Finding:** The absence of hard-coded limits in source does **not** prove conformance. All four Basic Limits requirements are marked UNVERIFIED pending actual runtime tests.
 
@@ -146,13 +146,13 @@ The Small Group requires 110 functions (§2.3.2.E). All 110 have opcodes and imp
 | Category | Total | Status | Count |
 |----------|-------|--------|-------|
 | Basic Limits | 4 | UNVERIFIED runtime | 0 verified, 4 UNVERIFIED |
-| Syntax | 11 | UNVERIFIED runtime | 0 verified, 11 UNVERIFIED |
+| Syntax | 11 | UNVERIFIED runtime | 0 verified, 11 UNVERIFIED (SG-SYN-001 criteria §4.11.11 now included in E.1 test inventory) |
 | Conversions | 5 | IMPLEMENTED_UNVERIFIED | 0 verified, 5 UNVERIFIED |
 | Operators | 14 | IMPLEMENTED_UNVERIFIED | 0 verified, 14 UNVERIFIED |
 | Functions | 110 | IMPLEMENTED_UNVERIFIED | 0 verified, 110 UNVERIFIED |
 | Allowances | 4 | Documented | 4 documented |
 
-**Grand total: 148 requirements, 0 runtime-verified, 148 UNVERIFIED.**
+**Grand total: 148 requirements (4 Basic Limits + 11 Syntax + 5 Conversions + 14 Operators + 110 Functions + 4 Allowances), 0 runtime-verified, 148 UNVERIFIED.**
 
 ---
 
@@ -162,11 +162,25 @@ The Small Group requires 110 functions (§2.3.2.E). All 110 have opcodes and imp
 |---------------|---------|-------------|-------------------|----------|--------|
 | INDEX row-vector single-arg | 6.14.6 | Returns error (Milestone A fix: removed ODF 1.3 row-vector shortcut) | Error (ODF 1.4 removed rule) | Fixed in Milestone A; regression risk | interpr1.cxx; KNOWN-LIMITATIONS:71 |
 | CONVERT atm | 6.16.18 | 101325.1 Pa (Milestone C fix: corrected from 101324.996583 Pa) | 101325.1 Pa | Fixed in Milestone C | interpr2.cxx; KNOWN-LIMITATIONS:72 |
-| DATE pre-1583 | 6.10.2 | #VALUE! before 15 Oct 1582 | Support from 1583; earlier impl-defined | Documented impl-defined | interpr2.cxx; IMPLEMENTATION-DEFINED:155 |
-| COUNTA empty cells | 6.13.7 | ODF 1.3 semantics | ODF 1.4 changed empty-cell handling | UNVERIFIED | interpr1.cxx:ScCount2 |
-| COUNTBLANK "" | 6.13.8 | Unverified | ODF 1.4: "" case impl-defined | UNVERIFIED | interpr1.cxx:ScCountEmptyCells |
+| DATE pre-1583 (FN-016-DATE-pre1583) | 6.10.2 | AOO observed #VALUE! for `DATE(1500;1;1)` (outside 1904 ≤ Year ≤ 9956) | §6.10.2 constrains Year/Month/Day; evaluators may evaluate out-of-constraint but `DATE(1500;1;1)` is implementation-defined/diagnostic, not a mandatory `#ERR` | Impl-defined/diagnostic (E.1 reclassified) | interpr2.cxx; IMPLEMENTATION-DEFINED:155 |
+| COUNTA empty cells / empty string | 6.13.7 | ODF 1.3 semantics | ODF 1.4 §6.13.7: counts non-blank cells; empty string `""` is not blank. E.1 adds fixtures for empty cells and `""` (where harness-expressible). | UNVERIFIED | interpr1.cxx:ScCount2 |
+| COUNTBLANK "" in cell | 6.13.8 | Unverified | §6.13.8: implementation-defined whether a cell returning `""` is blank. E.1 documents limitation: calcval harness cannot place `""` into a data cell (scratch AA1:AF12 cleared each case); range fixtures cover truly empty cells. | Impl-defined/UNVERIFIED | interpr1.cxx:ScCountEmptyCells |
 
 ---
+
+
+
+## E.1 Corrections (this milestone)
+
+- **SG-BL-001**: corrected to formula expression length 1026 chars (`=1` + `+1`*512), expected 513 (replaces `REPT("a";1024)` which measured string length, not formula length).
+- **SG-BL-004**: corrected to 7 genuinely nested function levels (`IF(TRUE;IF(...IF(TRUE;1;2)...))`, 7 nested IF calls), balanced parens, deterministic result 1.
+- **SG-SYN-001**: added Criteria syntax §4.11.11 test `SYN-001-criteria` (`=DCOUNT(R1:T6;;V1:V2)`, expected 4) using existing calcval database/criteria fixtures.
+- **SG-SYN-009**: marked not directly executable in calcval harness (requires pre-defined named expression `MYNAME`); test remains UNVERIFIED with explicit note.
+- **SG-FN-013/COUNTA**: fixtures added for truly empty cells and empty string `""` per §6.13.7 (empty string non-blank). Harness-expressible via inline args; empty-cell cases use unset D6:D7.
+- **SG-FN-014/COUNTBLANK**: fixtures added for truly empty cells; `""`-in-range-cell case documented as implementation-defined per §6.13.8 and not directly reproducible because calcval clears scratch AA1:AF12 and does not pre-populate `""` cells.
+- **SG-FN-016/FN-016-DATE-pre1583**: reclassified as implementation-defined/diagnostic (out-of-constraint Year < 1904), not mandatory `#ERR`; AOO observed `#VALUE!`.
+- **BITAND arity**: confirmed `BITAND.3params` (`=BITAND(6;3;1)` expected `#ERR`) remains valid per §6.6.2 (`BITAND(Integer X; Integer Y)`); no classification change.
+- **Runtime verification**: not performed (no AOO build tree; calcval harness macOS-only). Only static/syntax/fixture checks applied.
 
 ## 10. Runtime-Verification Limitations
 
@@ -187,7 +201,7 @@ Static source tracing confirms all opcodes, implementations, dispatch, and metad
 |----------|-----|----------|-----------|--------|
 | 1 | COUNTA ODF 1.4 empty-cell semantics | Semantic difference | ODF 1.4 changed COUNTA/COUNTBLANK empty-cell handling; AOO uses ODF 1.3 semantics | Medium |
 | 2 | COUNTBLANK "" impl-defined | Semantic difference | ODF 1.4 marks "" case as impl-defined; AOO behavior unverified | Low |
-| 3 | DATE pre-1583 proleptic Gregorian | Semantic difference | YEAR/MONTH/DAY of pre-1583 serial computed proleptic Gregorian with no validity check | Low |
+| 3 | DATE out-of-constraint/pre-1583 behavior | Semantic difference (impl-defined) | `DATE(1500;1;1)` outside §6.10.2 constraints; result is impl-defined/diagnostic (AOO observed #VALUE!), not mandatory error. | Low |
 | 4 | INDEX row-vector compatibility | Semantic difference | Milestone A fixed ODF 1.4 behavior; legacy ODF 1.3 documents may break | High (regression risk) |
 
 **Recommended next milestone:** Small Group semantic conformance — verify and correct COUNTA/COUNTBLANK empty-cell semantics per ODF 1.4, verify DATE pre-1583 behavior, and assess INDEX row-vector regression risk.

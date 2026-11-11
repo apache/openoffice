@@ -10,12 +10,14 @@
 # Note: Additional context
 
 # ===== Basic Limits (§3.7) =====
-SG-BL-001	3.7	BL-001-1024chars	=REPT("a";1024)	s:aaa...a (1024 a's)	-	UNVERIFIED	Formula length: 1024 characters
+SG-BL-001	3.7	BL-001-1024chars	=1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1	513	-	UNVERIFIED	Formula expression length 1026 chars (>=1024); result 513
 SG-BL-002	3.7	BL-002-30params	=MAX(1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30)	30	-	UNVERIFIED	30 parameters in MAX
 SG-BL-003	3.7	BL-003-32767chars	=REPT("a";32767)	s:aaa...a (32767 a's)	-	UNVERIFIED	String of 32767 ASCII characters
-SG-BL-004	3.7	BL-004-7nesting	=IF(IF(IF(IF(IF(IF(TRUE;1;2);3;4);5;6);7;8);9;10)	10	-	UNVERIFIED	7 nesting levels of IF
+SG-BL-004	3.7	BL-004-7nesting	=IF(TRUE;IF(TRUE;IF(TRUE;IF(TRUE;IF(TRUE;IF(TRUE;IF(TRUE;1;2);2);2);2);2);2);2)	1	-	UNVERIFIED	7 genuinely nested function levels (7 nested IF calls), balanced parens
 
 # ===== Syntax (§5) =====
+
+SG-SYN-001	4.11.11	SYN-001-criteria	=DCOUNT(R1:T6;;V1:V2)	4	-	UNVERIFIED	Criteria syntax §4.11.11 via database function (Age>=30 matches B,C,D,E)
 SG-SYN-002	5.2	SYN-002-parens	=(2+3)*4	20	-	UNVERIFIED	Parenthesized expression evaluation order
 SG-SYN-003	5.3	SYN-003-decimal	=1.5	1.5	-	UNVERIFIED	Decimal number literal
 SG-SYN-003	5.3	SYN-003-sci	=1.5e2	150	-	UNVERIFIED	Scientific notation literal
@@ -25,9 +27,9 @@ SG-SYN-005	5.5	SYN-005-precedence	=2+3*4	14	-	UNVERIFIED	Operator precedence: * 
 SG-SYN-005	5.5	SYN-005-power	=2^3^2	512	-	UNVERIFIED	Power operator right-associativity
 SG-SYN-006	5.6	SYN-006-func	=ABS(-5)	5	-	UNVERIFIED	Function call with argument
 SG-SYN-007	5.7	SYN-007-nonstandard	=NONEXISTENT()	#ERR	-	UNVERIFIED	Nonstandard function name error
-SG-SYN-008	5.8	SYN-008-ref	=A1	10	-	UNVERIFIED	Cell reference (A1=10 per data setup)
+SG-SYN-008	5.8	SYN-008-ref	=D1	10	-	UNVERIFIED	Cell reference resolves value (D1=10 per calcval fixture)
 SG-SYN-008	5.8	SYN-008-range	=SUM(D1:D3)	60	-	UNVERIFIED	Range reference (D1:D3 = 10,20,30)
-SG-SYN-009	5.11	SYN-009-named	=MYNAME	-	-	UNVERIFIED	Simple named expression (name must be defined)
+SG-SYN-009	5.11	SYN-009-named	=MYNAME	-	-	UNVERIFIED	Simple named expression requires a pre-defined name (MYNAME) not set up in calcval harness; not directly executable as-is
 SG-SYN-010	5.12	SYN-010-error	=NA()	#N/A	-	UNVERIFIED	Error constant #N/A
 SG-SYN-011	5.14	SYN-011-whitespace	=2 + 3 * 4	14	-	UNVERIFIED	Whitespace does not affect evaluation
 
@@ -48,8 +50,8 @@ SG-OP-009	6.4.8	OP-009-ne	=2<>3	TRUE	-	UNVERIFIED	Not equal
 SG-OP-010	6.4.14	OP-010-pct	=50%	0.5	-	UNVERIFIED	Postfix percent
 SG-OP-011	6.4.15	OP-011-pos	=+5	5	-	UNVERIFIED	Prefix plus
 SG-OP-012	6.4.16	OP-012-neg	=-5	-5	-	UNVERIFIED	Prefix minus
-SG-OP-013	6.4.12	OP-013-intersect	=A1:C3!B1:D2	-	-	UNVERIFIED	Reference intersection
-SG-OP-014	6.4.11	OP-014-range	=SUM(A1:A3)	-	-	UNVERIFIED	Reference range
+SG-OP-013	6.4.12	OP-013-intersect	=SUM(D1:F3!E1:F2)	336	-	UNVERIFIED	Reference intersection D1:F3!E1:F2 yields E1:F2 (11,101,22,202), SUM 336
+SG-OP-014	6.4.11	OP-014-range	=SUM(D1:D3)	60	-	UNVERIFIED	Reference range (D1:D3=10,20,30)
 
 # ===== Implicit Conversions (§6.3) =====
 SG-CONV-001	6.3.14	CONV-001-text	=TEXT(123;"0")	s:123	-	UNVERIFIED	Number to text conversion
@@ -60,20 +62,22 @@ SG-CONV-004	6.3.12	CONV-004-logical2	=IF(0;TRUE;FALSE)	FALSE	-	UNVERIFIED	Number
 SG-CONV-005	5.12	CONV-005-error	=ISERR(1/0)	TRUE	-	UNVERIFIED	Error propagation: division by zero
 
 # ===== Functions (§6.x) — Priority 1: COUNTA/COUNTBLANK empty cells =====
-SG-FN-013	6.13.7	FN-013-COUNTA-empty	=COUNTA(D1:D3)	3	-	UNVERIFIED	COUNTA over range with numbers (D1:D3=10,20,30)
-SG-FN-013	6.13.7	FN-013-COUNTA-text	=COUNTA(E1:E3)	3	-	UNVERIFIED	COUNTA over range with text (E1:E3="y","x","y")
-SG-FN-014	6.13.8	FN-014-COUNTBLANK-empty	=COUNTBLANK(D1:D3)	0	-	UNVERIFIED	COUNTBLANK over range with no empty cells
-SG-FN-014	6.13.8	FN-014-COUNTBLANK-empty-str	=COUNTBLANK(E1:E3)	0	-	UNVERIFIED	COUNTBLANK over range with text (not empty)
+SG-FN-013	6.13.7	FN-013-COUNTA-range	=COUNTA(D1:D3)	3	-	UNVERIFIED	COUNTA over numeric range (D1:D3=10,20,30)
+SG-FN-013	6.13.7	FN-013-COUNTA-empty-cells	=COUNTA(D6:D7)	0	-	UNVERIFIED	COUNTA over truly empty cells (D6:D7 unset)
+SG-FN-013	6.13.7	FN-013-COUNTA-empty-string	=COUNTA(1;"";"x")	3	-	UNVERIFIED	COUNTA counts empty string "" as non-blank per §6.13.7
+SG-FN-014	6.13.8	FN-014-COUNTBLANK-nonempty	=COUNTBLANK(D1:D3)	0	-	UNVERIFIED	COUNTBLANK over range with no empty cells
+SG-FN-014	6.13.8	FN-014-COUNTBLANK-empty-cells	=COUNTBLANK(D6:D7)	2	-	UNVERIFIED	COUNTBLANK over truly empty cells (D6:D7 unset)
+SG-FN-014	6.13.8	FN-014-COUNTBLANK-empty-string	=COUNTBLANK(D6:D7)	2	-	UNVERIFIED	COUNTBLANK does not count "" text values as blank in ranges; harness cannot place "" in data cells (scratch cleared), so this verifies only empty-cell counting; ""-in-cell case impl-defined per §6.13.8
 
 # ===== Functions (§6.x) — Priority 2: DATE pre-1583 =====
-SG-FN-016	6.10.2	FN-016-DATE-pre1583	=DATE(1500;1;1)	#ERR	-	UNVERIFIED	DATE before 1583: impl-defined, AOO returns #VALUE!
+SG-FN-016	6.10.2	FN-016-DATE-pre1583	=DATE(1500;1;1)	#ERR	-	UNVERIFIED	DATE(1500;1;1) outside §6.10.2 constraints (Year>=1904); impl-defined/evaluator-diagnostic, not mandatory #ERR (AOO observed #VALUE!)
 SG-FN-067	6.13.27	FN-067-NA	=NA()	#N/A	-	UNVERIFIED	NA function returns #N/A error
 
 # ===== Functions (§6.x) — Priority 3: INDEX =====
-SG-FN-042	6.14.6	FN-042-INDEX-2d	=INDEX(D1:F3;2;3)	-	-	UNVERIFIED	INDEX two-dimensional: row 2, col 3 of D1:F3
+SG-FN-042	6.14.6	FN-042-INDEX-2d	=INDEX(D1:F3;2;3)	202	-	UNVERIFIED	INDEX two-dimensional: row 2, col 3 of D1:F3 (row2 is 20,22,202)
 SG-FN-042	6.14.6	FN-042-INDEX-row-outrange	=INDEX(D1:D5;6)	#ERR	-	UNVERIFIED	INDEX row out of range
 SG-FN-042	6.14.6	FN-042-INDEX-rowvec-single	=INDEX(H1:L1;3)	#ERR	-	UNVERIFIED	INDEX row vector single arg: ODF 1.4 error (Milestone A fix)
-SG-FN-042	6.14.6	FN-042-INDEX-rowvec-colarg	=INDEX(H1:L1;;3)	-	-	UNVERIFIED	INDEX row vector with column arg only
+SG-FN-042	6.14.6	FN-042-INDEX-rowvec-colarg	=INDEX(H1:L1;;3)	30	-	UNVERIFIED	INDEX row vector with column arg only (H1:L1=10,20,30,40,50)
 
 # ===== Operators — reference intersection =====
-SG-OP-013	6.4.12	OP-013-intersect-num	=SUM(A1:C3!B1:D2)	-	-	UNVERIFIED	Reference intersection in SUM
+SG-OP-013	6.4.12	OP-013-intersect-num	=SUM(D1:F3!E1:F2)	336	-	UNVERIFIED	Reference intersection D1:F3!E1:F2 = E1:F2 (11,101,22,202), SUM 336

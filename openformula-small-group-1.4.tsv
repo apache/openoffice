@@ -1,9 +1,9 @@
 ReqID	Section	Requirement Description	Mandatory/Optional	Conformance Group	ODF Version Introduced/Changed	Suggested Test	Status
-SG-BL-001	3.7	Formula length: at least 1024 characters long as measured in OpenDocument interchange format	Mandatory	Small	ODF 1.4	Parse a 1024+ character formula; verify accepted.	UNVERIFIED
+SG-BL-001	3.7	Formula length: at least 1024 characters long as measured in OpenDocument interchange format	Mandatory	Small	ODF 1.4	Parse formula expression >=1024 chars (e.g. =1+1+...+1, 1026 chars, result 513); verify accepted.	UNVERIFIED
 SG-BL-002	3.7	At least 30 parameters per function when prototype permits parameter list	Mandatory	Small	ODF 1.4	Call function with 30 parameters; verify accepted.	UNVERIFIED
 SG-BL-003	3.7	Permit strings of ASCII characters up to 32767 (2^15-1) characters	Mandatory	Small	ODF 1.4	Parse/return 32767-character string; verify accepted.	UNVERIFIED
-SG-BL-004	3.7	Support at least 7 nesting levels of functions	Mandatory	Small	ODF 1.4	Nest 7 levels of functions; verify accepted.	UNVERIFIED
-SG-SYN-001	4.11.11	Criteria syntax supported	Mandatory	Small	ODF 1.4	Use criteria in database functions; verify parsed correctly.	UNVERIFIED
+SG-BL-004	3.7	Support at least 7 nesting levels of functions	Mandatory	Small	ODF 1.4	Nest >=7 genuinely nested function levels with balanced parens and deterministic result (e.g. 7 nested IFs); verify accepted.	UNVERIFIED
+SG-SYN-001	4.11.11	Criteria syntax (§4.11.11) supported	Mandatory	Small	ODF 1.4	Use criteria in database functions (e.g. DCOUNT with criteria range); verify parsed/evaluated correctly.	UNVERIFIED
 SG-SYN-002	5.2	Basic Expressions syntax supported	Mandatory	Small	ODF 1.4	Parse parenthesized expressions; verify evaluation.	UNVERIFIED
 SG-SYN-003	5.3	Constant Numbers syntax supported	Mandatory	Small	ODF 1.4	Parse numeric literals including decimals, scientific notation; verify.	UNVERIFIED
 SG-SYN-004	5.4	Constant Strings syntax supported	Mandatory	Small	ODF 1.4	Parse string literals with quote escaping; verify.	UNVERIFIED
@@ -11,7 +11,7 @@ SG-SYN-005	5.5	Operators syntax supported (precedence per Table 1)	Mandatory	Sma
 SG-SYN-006	5.6	Functions and Function Parameters syntax supported	Mandatory	Small	ODF 1.4	Call functions with various argument counts; verify.	UNVERIFIED
 SG-SYN-007	5.7	Nonstandard Function Names recognized as errors	Mandatory	Small	ODF 1.4	Use unknown function name; verify error result.	UNVERIFIED
 SG-SYN-008	5.8	References syntax supported	Mandatory	Small	ODF 1.4	Use cell and range references; verify resolution.	UNVERIFIED
-SG-SYN-009	5.11	Simple Named Expressions supported	Mandatory	Small	ODF 1.4	Define and use named expression; verify.	UNVERIFIED
+SG-SYN-009	5.11	Simple Named Expressions supported	Mandatory	Small	ODF 1.4	Define and use a simple named expression; verify. Requires pre-defined name in test environment (not expressible as plain calcval cell formula without name setup).	UNVERIFIED
 SG-SYN-010	5.12	Errors syntax supported	Mandatory	Small	ODF 1.4	Use error constants (#N/A, etc.); verify propagation.	UNVERIFIED
 SG-SYN-011	5.14	Whitespace handling per specification	Mandatory	Small	ODF 1.4	Insert whitespace in formula; verify identical result.	UNVERIFIED
 SG-CONV-001	6.3.14	Conversion to Text implemented	Mandatory	Small	ODF 1.4	Convert number/date/logical to text; verify result.	IMPLEMENTED_UNVERIFIED
@@ -31,7 +31,7 @@ SG-OP-009	6.4.8	Infix Operator "<>" implemented	Mandatory	Small	ODF 1.4	Evaluate
 SG-OP-010	6.4.14	Postfix Operator "%" implemented	Mandatory	Small	ODF 1.4	Evaluate 50%; verify 0.5.	IMPLEMENTED_UNVERIFIED
 SG-OP-011	6.4.15	Prefix Operator "+" implemented	Mandatory	Small	ODF 1.4	Evaluate +5; verify 5.	IMPLEMENTED_UNVERIFIED
 SG-OP-012	6.4.16	Prefix Operator "-" implemented	Mandatory	Small	ODF 1.4	Evaluate -5; verify -5.	IMPLEMENTED_UNVERIFIED
-SG-OP-013	6.4.12	Infix Operator Reference Intersection ("!") implemented	Mandatory	Small	ODF 1.4	Evaluate A1:C3!B1:D2; verify intersection.	IMPLEMENTED_UNVERIFIED
+SG-OP-013	6.4.12	Infix Operator Reference Intersection ("!") implemented	Mandatory	Small	ODF 1.4	Evaluate numeric range intersection (e.g. SUM(D1:F3!E1:F2)); verify intersection.	IMPLEMENTED_UNVERIFIED
 SG-OP-014	6.4.11	Infix Operator Range (":") implemented	Mandatory	Small	ODF 1.4	Evaluate SUM(A1:A3); verify range.	IMPLEMENTED_UNVERIFIED
 SG-FN-001	6.16.2	ABS	Mandatory	Small	ODF 1.2	Evaluate ABS(-3); verify 3.	IMPLEMENTED_UNVERIFIED
 SG-FN-002	6.16.3	ACOS	Mandatory	Small	ODF 1.2	Evaluate ACOS(0); verify pi/2.	IMPLEMENTED_UNVERIFIED
@@ -45,10 +45,10 @@ SG-FN-009	6.14.3	CHOOSE	Mandatory	Small	ODF 1.2	Evaluate CHOOSE(2,"a","b","c"); 
 SG-FN-010	6.13.5	COLUMNS	Mandatory	Small	ODF 1.2	Evaluate COLUMNS(A1:C1); verify 3.	IMPLEMENTED_UNVERIFIED
 SG-FN-011	6.16.19	COS	Mandatory	Small	ODF 1.2	Evaluate COS(0); verify 1.	IMPLEMENTED_UNVERIFIED
 SG-FN-012	6.13.6	COUNT	Mandatory	Small	ODF 1.2	Evaluate COUNT(1,2,"x"); verify 2.	IMPLEMENTED_UNVERIFIED
-SG-FN-013	6.13.7	COUNTA	Mandatory	Small	ODF 1.2	Evaluate COUNTA(1,"x",""); verify non-empty count.	IMPLEMENTED_UNVERIFIED
-SG-FN-014	6.13.8	COUNTBLANK	Mandatory	Small	ODF 1.2	Evaluate COUNTBLANK(range); verify blank count.	IMPLEMENTED_UNVERIFIED
+SG-FN-013	6.13.7	COUNTA	Mandatory	Small	ODF 1.2	Evaluate COUNTA over numbers, text, empty cells, and empty string ""; verify non-blank count per §6.13.7.	IMPLEMENTED_UNVERIFIED
+SG-FN-014	6.13.8	COUNTBLANK	Mandatory	Small	ODF 1.2	Evaluate COUNTBLANK over truly empty cells; ""-in-cell blankness is implementation-defined per §6.13.8.	IMPLEMENTED_UNVERIFIED
 SG-FN-015	6.13.9	COUNTIF	Mandatory	Small	ODF 1.2	Evaluate COUNTIF(range,criteria); verify count.	IMPLEMENTED_UNVERIFIED
-SG-FN-016	6.10.2	DATE	Mandatory	Small	ODF 1.2	Evaluate DATE(2025,1,1); verify serial.	IMPLEMENTED_UNVERIFIED
+SG-FN-016	6.10.2	DATE	Mandatory	Small	ODF 1.2	Evaluate DATE(2025,1,1); verify serial. Values outside §6.10.2 constraints (e.g. year < 1904) are impl-defined/diagnostic.	IMPLEMENTED_UNVERIFIED
 SG-FN-017	6.9.2	DAVERAGE	Mandatory	Small	ODF 1.2	Evaluate DAVERAGE(database,field,criteria); verify average.	IMPLEMENTED_UNVERIFIED
 SG-FN-018	6.10.5	DAY	Mandatory	Small	ODF 1.2	Evaluate DAY(DATE(2025,3,15)); verify 15.	IMPLEMENTED_UNVERIFIED
 SG-FN-019	6.9.3	DCOUNT	Mandatory	Small	ODF 1.2	Evaluate DCOUNT(database,field,criteria); verify count.	IMPLEMENTED_UNVERIFIED

@@ -61,7 +61,7 @@ Source-of-truth: `openformula-functions.tsv`, `openformula-operators.tsv`, `open
 
 ## 2. Dependencies between proposed changes
 
-1. COUNTA/COUNTBLANK change should be coordinated with any document-compatibility option; test against existing corpus before enabling.
+1. COUNTA/COUNTBLANK change should be coordinated with any document-compatibility option; test against existing corpus before enabling. E.1 clarified fixtures/impl-defined `""` handling but did not change implementation.
 2. Test inventories depend on having the ODF 1.4 function list extracted; do P3.1 before P3.2/P3.3.
 
 ## 3. Estimated implementation complexity
@@ -69,7 +69,7 @@ Source-of-truth: `openformula-functions.tsv`, `openformula-operators.tsv`, `open
 | Item | Complexity | Rationale |
 |------|------------|-----------|
 | COUNTA/COUNTBLANK empty-cell semantics | Medium | Behavior change; regression risk medium; needs corpus testing. |
-| DATE pre-1583 documentation | Low | Document existing impl-defined behavior; no code change needed. |
+| DATE out-of-constraint/pre-1583 behavior | Low | Document impl-defined/diagnostic behavior for inputs outside §6.10.2 constraints (e.g. Year < 1904); no code change needed. E.1 reclassified tests. |
 | INDEX row-vector regression testing | Medium | Corpus regression run; may need compatibility option. |
 | Test inventories | Medium | Requires ODF 1.4 Part 4 text extraction; tooling exists (formulacheck.py). |
 | Semantic/parser/round-trip tests | Medium-High | Many cases; runtime validation needed. |
@@ -91,8 +91,16 @@ Source-of-truth: `openformula-functions.tsv`, `openformula-operators.tsv`, `open
 
 ## 6. Definition of done for P1
 
-- COUNTA/COUNTBLANK: verified against ODF 1.4 §6.13.7/§6.13.8; documented any semantic differences.
-- DATE pre-1583: documented impl-defined behavior per ODF 1.4 §7.4.
+- COUNTA/COUNTBLANK: verify against ODF 1.4 §6.13.7/§6.13.8 (empty string non-blank for COUNTA; `""`-in-cell COUNTBLANK impl-defined); document semantic differences. E.1 test data/docs corrected.
+- DATE out-of-constraint/pre-1583: impl-defined/diagnostic per §6.10.2 constraints; E.1 reclassified `FN-016-DATE-pre1583` accordingly.
 - INDEX row-vector: regression-tested against document corpus.
 - Versioned test inventories created (not in production build).
 - All findings documented with file:line references (this audit's deliverables).
+
+
+## E.1 Test inventory corrections
+
+- Corrected Small Group Basic Limits tests: `SG-BL-001` uses a 1026-char formula expression (expected 513), `SG-BL-004` uses 7 genuinely nested IF levels.
+- Added `SG-SYN-001` (Criteria syntax §4.11.11) and documented `SG-SYN-009` named-expression harness dependency (`MYNAME`).
+- Updated COUNTA/COUNTBLANK and DATE out-of-constraint fixtures/classifications in `openformula-small-group-1.4.tsv`, `test/odf-validate/openformula-small-group-1.4.tsv`, and `test/odf-validate/calcval-cases14.tsv`.
+- No runtime verification performed (no build; calcval macOS-only).

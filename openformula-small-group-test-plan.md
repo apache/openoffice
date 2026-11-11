@@ -10,7 +10,7 @@ milestones are complete. No production evaluator changes are made in this milest
 
 | File | Purpose |
 |------|---------|
-| `test/odf-validate/openformula-small-group-1.4.tsv` | Requirement-referenced test inventory (148 ReqIDs from D inventory) |
+| `test/odf-validate/openformula-small-group-1.4.tsv` | Requirement-referenced test inventory (148 ReqIDs; includes E.1 corrections and added `SG-SYN-001` criteria test) |
 | `test/odf-validate/calcval-cases14.tsv` | Existing calcval cases, extended with Small Group semantic tests |
 | `openformula-small-group-test-plan.md` | This document: execution instructions and outstanding runtime requirements |
 
@@ -52,8 +52,8 @@ Each calcval case has 5 tab-separated columns:
 
 | Priority | Area | Test Cases | Rationale |
 |----------|------|------------|-----------|
-| 1 | COUNTA/COUNTBLANK empty cells | `COUNTA.range`, `COUNTA.text`, `COUNTBLANK.range` | ODF 1.4 changed empty-cell semantics; can silently alter spreadsheet results |
-| 2 | DATE pre-1583 | `DATE.pre1583` | ODF 1.4 §7.4 impl-defined; verify AOO behavior |
+| 1 | COUNTA/COUNTBLANK empty cells / empty string | `COUNTA.empty`, `COUNTA.emptystr`, `COUNTBLANK.empty`, `COUNTBLANK.range` (calcval14) and corresponding SG tests | ODF 1.4 §6.13.7 counts `""` as non-blank; §6.13.8 `""`-in-cell is impl-defined and not directly reproducible with current calcval fixtures |
+| 2 | DATE out-of-constraint/pre-1583 | `DATE.pre1583` / `FN-016-DATE-pre1583` | §6.10.2 constrains Year>=1904; `DATE(1500;1;1)` is impl-defined/diagnostic (not mandatory `#ERR`) |
 | 3 | INDEX row-vector | `INDEX.rowvec.single`, `INDEX.rowvec.colarg`, `INDEX.row.outrange` | Milestone A fix; regression risk for legacy documents |
 | 4 | Bitwise functions | `BITLSHIFT.neg`, `BITRSHIFT.neg`, `BITAND.3params` | Parameter count and negative shift behavior |
 | 5 | Parser/operators | `SYN-005-precedence`, `SYN-005-power`, `OP-006-div0` | Operator precedence and associativity |
@@ -88,3 +88,15 @@ The following cannot be verified until a configured AOO build tree exists:
 - No mandatory `sc` or `scaddins` builds during this milestone
 - Tests use existing `test/odf-validate` tooling and `calcval-cases14.tsv` conventions
 - Tests are NOT added to the normal production build
+
+
+## E.1 Corrections
+
+- `SG-BL-001` / `BL-001-1024chars`: formula expression length 1026 chars (`=1` + `+1`*512), expected 513.
+- `SG-BL-004` / `BL-004-7nesting`: 7 genuinely nested `IF` function levels, balanced parens, expected 1.
+- `SG-SYN-001` / `SYN-001-criteria`: added Criteria syntax §4.11.11 test using `DCOUNT(R1:T6;;V1:V2)` against existing database/criteria fixtures (expected 4).
+- `SG-SYN-009` / `SYN-009-named`: requires pre-defined named expression `MYNAME`; not directly executable in calcval harness without name setup.
+- `SG-FN-013` / `FN-016` tests updated: COUNTA covers empty cells and empty string `""`; COUNTBLANK covers truly empty cells; `""`-in-cell blankness is implementation-defined and not directly reproducible with calcval fixtures.
+- `SG-FN-016` / `FN-016-DATE-pre1583`: reclassified as impl-defined/diagnostic (Year < 1904 outside §6.10.2 constraints).
+
+**Static validation only** (no AOO build tree; calcval macOS-only): TSV structure/columns, duplicate IDs, char/nesting counts, fixture references, and count reconciliation checked. Runtime execution not performed.
