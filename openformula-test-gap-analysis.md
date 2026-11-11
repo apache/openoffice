@@ -43,7 +43,7 @@ Source-of-truth: `test/aoo-test/`, `test/odf-validate/`, and AOO source. Finding
 
 - No confirmed semantic test for CONVERT `atm` (fixed in Milestone C: 101325.1 Pa vs old 101324.996583 Pa).
 - No confirmed semantic test for INDEX row-vector single-argument (fixed in Milestone A: ODF 1.4 error vs old column return).
-- No confirmed semantic test for DATE pre-1583 (#VALUE! before 15 Oct 1582; proleptic Gregorian for YEAR/MONTH/DAY).
+- DATE `DATE(1500;1;1)` is out of §6.10.2 constraints (Year>=1904) and impl-defined/diagnostic (AOO observed #VALUE!); E.1 reclassified tests to reflect this (not a mandatory #ERR).
 - No confirmed semantic test for BITAND/BITOR/BITXOR/BITLSHIFT/BITRSHIFT variadic params or negative-shift handling (interpr1.cxx:1231-1234 appears inverted).
 - No confirmed semantic test for short-circuit AND/OR.
 
@@ -58,7 +58,7 @@ Source-of-truth: `test/aoo-test/`, `test/odf-validate/`, and AOO source. Finding
 ### Existing tests that produce false confidence
 
 - `openformula-functions.txt` lists IFNA/SKEWP as standard ODF 1.2 functions; AOO now implements them (Milestone B), so this is no longer a false-negative for conformance.
-- Inventories are ODF 1.2, so they do not flag ODF 1.4 regressions (INDEX row-vector fixed in Milestone A, CONVERT atm fixed in Milestone C, COUNTA empty cells).
+- Inventories are ODF 1.2, so they do not flag ODF 1.4 regressions (INDEX row-vector fixed in Milestone A, CONVERT atm fixed in Milestone C, COUNTA empty cells/empty string).
 
 ## 3. Proposed versioned test inventory
 
@@ -88,3 +88,12 @@ Source-of-truth: `test/aoo-test/`, `test/odf-validate/`, and AOO source. Finding
 | Parser tests | Precedence, intersection, union, quoted labels | Medium |
 | Round-trip tests | Function-name export aliases, error value type | Medium |
 | False confidence | None — IFNA/SKEWP now implemented, matching inventory | None |
+
+
+## E.1 Small Group corrections
+
+- Corrected `BL-001-1024chars` to 1026-char formula expression (`=1`+`+1`*512, result 513) and `BL-004-7nesting` to 7 genuinely nested IF levels.
+- Added `SG-SYN-001` Criteria syntax (§4.11.11) coverage in the Small Group test inventory.
+- Clarified `SG-SYN-009` named-expression test requires pre-defined name (`MYNAME`) not provided by calcval harness.
+- Updated COUNTA/COUNTBLANK fixtures for empty cells and empty string semantics per §6.13.7/§6.13.8; documented `""`-in-cell COUNTBLANK limitation of calcval fixtures.
+- Reclassified `FN-016-DATE-pre1583` / `DATE.pre1583` as implementation-defined/diagnostic for out-of-constraint input.
