@@ -121,6 +121,10 @@ CONFIGURE_ACTION=.$/configure
 CONFIGURE_FLAGS=--enable-ipv6=no --without-crypto --without-python --without-iconv --enable-static=yes --enable-shared=no --with-sax1=yes --with-libxml-prefix=$(SOLARVERSION)/$(INPATH) ac_cv_func_clock_gettime=false
 .ELSE
 CONFIGURE_FLAGS=--enable-ipv6=no --without-crypto --without-python --enable-static=no --with-sax1=yes ac_cv_func_clock_gettime=false
+.IF "$(OS)"=="FREEBSD"
+# the libxml2 package registers a .pc file; same pkg-config trap as above
+CONFIGURE_FLAGS+=--with-libxml-prefix=$(SOLARVERSION)/$(INPATH)
+.ENDIF
 .ENDIF
 BUILD_ACTION=chmod 777 xslt-config && $(GNUMAKE)
 BUILD_FLAGS+= -j$(EXTMAXPROCESS)
