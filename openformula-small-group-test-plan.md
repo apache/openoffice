@@ -76,10 +76,10 @@ The following cannot be verified until a configured AOO build tree exists:
 
 The `test/odf-validate/` calcval launcher is macOS-only and is NOT directly Linux-compatible. It is not ported in this milestone.
 
-- **zsh shebangs and `${0:A:h}` path expansion**: `start.sh`, `runpy.sh`, and `env.sh` use `#!/bin/zsh` and `${0:A:h}` (zsh-specific path resolution) at `test/odf-validate/start.sh:1,23`, `test/odf-validate/runpy.sh:1,23`, `test/odf-validate/env.sh:23`.
-- **macOS application bundle path**: `env.sh` sets `APP=${ODFV_APP:-$D/app/OpenOffice.app}/Contents`, and `start.sh:25` launches `$APP/MacOS/soffice` (an `.app` bundle structure, macOS-only).
+- **zsh `${0:A:h}` path expansion**: `start.sh`, `runpy.sh`, and `env.sh` rely on the zsh-specific `${0:A:h}` parameter expansion for path resolution; `start.sh` and `runpy.sh` use `#!/bin/zsh` shebangs, while `env.sh` (sourced, no shebang) also uses zsh-specific syntax at `test/odf-validate/env.sh:23`.
+- **macOS application bundle path**: `env.sh` sets `APP=${ODFV_APP:-$D/app/OpenOffice.app}/Contents`, and `start.sh:25` launches `$APP/MacOS/soffice` (an `.app` bundle structure that does not exist on Linux).
 - **Apple Python Framework default**: `env.sh:28` defaults `PY=/usr/local/Library/Frameworks/Python.framework/Versions/3.14/bin/python3.14` (macOS Python Framework path).
-- **`lsof` startup check**: `start.sh:28` polls with `lsof -nP -iTCP:$2 -sTCP:LISTEN` to wait for the office socket — macOS/BSD-specific `lsof` invocation.
+- **External `lsof` dependency**: `start.sh:28` polls with `lsof -nP -iTCP:$2 -sTCP:LISTEN` to wait for the office socket; `lsof` itself is available on Linux, but the harness depends on its presence.
 
 No production source or runtime behavior changed. All corrections are test data/docs only.
 
