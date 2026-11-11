@@ -321,6 +321,26 @@ void ScInterpreter::ScChoseJump()
         aCode.Jump( pJump[ nJumpCount ], pJump[ nJumpCount ] );
 }
 
+void ScInterpreter::ScIfna()
+{
+    RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScIfna" );
+    const short* pJump = pCur->GetJump();
+    // value is on the stack.  If it is the #N/A error, discard it and jump
+    // to the fallback argument; otherwise jump to the end and leave the
+    // original value on the stack as the result.  The fallback argument is
+    // only compiled (and therefore only evaluated) when value is #N/A.
+    if (sp && pStack[sp-1]->GetType() == formula::svError
+        && pStack[sp-1]->GetError() == NOTAVAILABLE)
+    {
+        --sp;  // discard the #N/A value without setting nGlobalError
+        aCode.Jump( pJump[ 1 ], pJump[ 2 ] );
+    }
+    else
+    {
+        aCode.Jump( pJump[ 2 ], pJump[ 2 ] );
+    }
+}
+
 void lcl_AdjustJumpMatrix( ScJumpMatrix* pJumpM, ScMatrixRef& pResMat, SCSIZE nParmCols, SCSIZE nParmRows )
 {
     SCSIZE nJumpCols, nJumpRows;
