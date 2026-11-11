@@ -145,14 +145,14 @@ The Small Group requires 110 functions (§2.3.2.E). All 110 have opcodes and imp
 
 | Category | Total | Status | Count |
 |----------|-------|--------|-------|
-| Basic Limits | 4 | UNVERIFIED runtime | 0 verified, 4 UNVERIFIED |
-| Syntax | 11 | UNVERIFIED runtime | 0 verified, 11 UNVERIFIED (SG-SYN-001 criteria §4.11.11 now included in E.1 test inventory) |
+| Basic Limits | 4 | Awaiting runtime | 0 verified, 4 awaiting |
+| Syntax | 11 | Awaiting runtime | 0 verified, 11 awaiting (SG-SYN-001 criteria §4.11.11 now included in E.1 test inventory) |
 | Conversions | 5 | IMPLEMENTED_UNVERIFIED | 0 verified, 5 UNVERIFIED |
 | Operators | 14 | IMPLEMENTED_UNVERIFIED | 0 verified, 14 UNVERIFIED |
 | Functions | 110 | IMPLEMENTED_UNVERIFIED | 0 verified, 110 UNVERIFIED |
-| Allowances | 4 | Documented | 4 documented |
+| Allowances | 4 | NOT_APPLICABLE | 4 documented (§2.3.2.F/G explicit permissions to omit) |
 
-**Grand total: 148 requirements (4 Basic Limits + 11 Syntax + 5 Conversions + 14 Operators + 110 Functions + 4 Allowances), 0 runtime-verified, 148 UNVERIFIED.**
+**Grand total: 148 inventory entries — 144 applicable requirements awaiting runtime verification (Basic Limits 4 + Syntax 11 + Conversions 5 + Operators 14 + Functions 110), 4 explicit allowances marked NOT_APPLICABLE (§2.3.2.F/G: inline arrays, complex numbers, multi-area references, reference union), 0 runtime-verified.**
 
 ---
 
@@ -162,9 +162,9 @@ The Small Group requires 110 functions (§2.3.2.E). All 110 have opcodes and imp
 |---------------|---------|-------------|-------------------|----------|--------|
 | INDEX row-vector single-arg | 6.14.6 | Returns error (Milestone A fix: removed ODF 1.3 row-vector shortcut) | Error (ODF 1.4 removed rule) | Fixed in Milestone A; regression risk | interpr1.cxx; KNOWN-LIMITATIONS:71 |
 | CONVERT atm | 6.16.18 | 101325.1 Pa (Milestone C fix: corrected from 101324.996583 Pa) | 101325.1 Pa | Fixed in Milestone C | interpr2.cxx; KNOWN-LIMITATIONS:72 |
-| DATE pre-1583 (FN-016-DATE-pre1583) | 6.10.2 | AOO observed #VALUE! for `DATE(1500;1;1)` (outside 1904 ≤ Year ≤ 9956) | §6.10.2 constrains Year/Month/Day; evaluators may evaluate out-of-constraint but `DATE(1500;1;1)` is implementation-defined/diagnostic, not a mandatory `#ERR` | Impl-defined/diagnostic (E.1 reclassified) | interpr2.cxx; IMPLEMENTATION-DEFINED:155 |
+| DATE pre-1583 (FN-016-DATE-pre1583) | 6.10.2 | AOO observed #VALUE! for `DATE(1500;1;1)` (outside 1904 ≤ Year ≤ 9956) | §6.10.2 constrains Year/Month/Day; evaluators may evaluate out-of-constraint but `DATE(1500;1;1)` is implementation-defined/diagnostic, not a mandatory `#ERR`. Normative expected value is `-` (not an ODF conformance error assertion); calcval `DATE.pre1583` retains `#ERR` only as explicitly identified AOO-specific diagnostic. | Impl-defined/diagnostic (E.1 reclassified) | interpr2.cxx; IMPLEMENTATION-DEFINED:155 |
 | COUNTA empty cells / empty string | 6.13.7 | ODF 1.3 semantics | ODF 1.4 §6.13.7: counts non-blank cells; empty string `""` is not blank. E.1 adds fixtures for empty cells and `""` (where harness-expressible). | UNVERIFIED | interpr1.cxx:ScCount2 |
-| COUNTBLANK "" in cell | 6.13.8 | Unverified | §6.13.8: implementation-defined whether a cell returning `""` is blank. E.1 documents limitation: calcval harness cannot place `""` into a data cell (scratch AA1:AF12 cleared each case); range fixtures cover truly empty cells. | Impl-defined/UNVERIFIED | interpr1.cxx:ScCountEmptyCells |
+| COUNTBLANK "" in cell | 6.13.8 | Unverified | §6.13.8: implementation-defined whether a cell returning `""` is blank. `FN-014-COUNTBLANK-empty-cells` covers truly empty cells; `FN-014-COUNTBLANK-empty-string` retained as diagnostic only with expected `-` (NOT testing `""`-in-cell). `""`-in-cell blankness is impl-defined; calcval harness cannot place `""` into a data cell. | Impl-defined/UNVERIFIED | interpr1.cxx:ScCountEmptyCells |
 
 ---
 
@@ -176,9 +176,9 @@ The Small Group requires 110 functions (§2.3.2.E). All 110 have opcodes and imp
 - **SG-BL-004**: corrected to 7 genuinely nested function levels (`IF(TRUE;IF(...IF(TRUE;1;2)...))`, 7 nested IF calls), balanced parens, deterministic result 1.
 - **SG-SYN-001**: added Criteria syntax §4.11.11 test `SYN-001-criteria` (`=DCOUNT(R1:T6;;V1:V2)`, expected 4) using existing calcval database/criteria fixtures.
 - **SG-SYN-009**: marked not directly executable in calcval harness (requires pre-defined named expression `MYNAME`); test remains UNVERIFIED with explicit note.
-- **SG-FN-013/COUNTA**: fixtures added for truly empty cells and empty string `""` per §6.13.7 (empty string non-blank). Harness-expressible via inline args; empty-cell cases use unset D6:D7.
-- **SG-FN-014/COUNTBLANK**: fixtures added for truly empty cells; `""`-in-range-cell case documented as implementation-defined per §6.13.8 and not directly reproducible because calcval clears scratch AA1:AF12 and does not pre-populate `""` cells.
-- **SG-FN-016/FN-016-DATE-pre1583**: reclassified as implementation-defined/diagnostic (out-of-constraint Year < 1904), not mandatory `#ERR`; AOO observed `#VALUE!`.
+- **SG-FN-013/COUNTA**: fixtures added for truly empty cells and empty string "" per §6.13.7 (empty string non-blank). Harness-expressible via inline args; empty-cell cases use unset D6:D7.
+- **SG-FN-014/COUNTBLANK**: FN-014-COUNTBLANK-empty-cells (=COUNTBLANK(D6:D7), expected 2) covers truly empty cells. FN-014-COUNTBLANK-empty-string is retained as diagnostic only with expected - — it uses =COUNTBLANK(D6:D7) (genuinely empty cells, not ""), clearly labeled as NOT testing a cell containing ""; the required ""-in-cell fixture cannot be established by calcval harness (scratch cleared each case; no pre-populated "" data cells). ""-in-cell blankness is impl-defined per §6.13.8.
+- **SG-FN-016/FN-016-DATE-pre1583**: reclassified as implementation-defined/diagnostic (out-of-constraint Year < 1904), not mandatory #ERR. Normative expected value is - (not an ODF conformance error assertion). The calcval DATE.pre1583 row retains #ERR only as an explicitly identified AOO-specific diagnostic assertion (AOO observed #VALUE!), clearly labeled as not an ODF conformance assertion.
 - **BITAND arity**: confirmed `BITAND.3params` (`=BITAND(6;3;1)` expected `#ERR`) remains valid per §6.6.2 (`BITAND(Integer X; Integer Y)`); no classification change.
 - **Runtime verification**: not performed (no AOO build tree; calcval harness macOS-only). Only static/syntax/fixture checks applied.
 
