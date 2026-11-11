@@ -16,7 +16,7 @@ Source-of-truth: `test/aoo-test/`, `test/odf-validate/`, and AOO source. Finding
 - **[CONFIRMED]** Includes IFNA (line 162), SKEWP (line 329), BIT functions.
 - **[CONFIRMED]** Does NOT include EASTERSUNDAY.
 
-**[CONFIRMED] Both inventories are ODF 1.2-based baselines.** They are stale relative to ODF 1.4 (2025-10-06): EASTERSUNDAY (ODF 1.3/1.4) is absent from both. They list IFNA/SKEWP as "standard" but AOO does not implement them (see `openformula-functions.tsv`), so the inventories themselves contain functions AOO lacks — false negatives for conformance.
+**[CONFIRMED] Both inventories are ODF 1.2-based baselines.** They are stale relative to ODF 1.4 (2025-10-06): EASTERSUNDAY (ODF 1.3/1.4) is absent from both. They list IFNA/SKEWP as "standard" — IFNA and SKEWP were implemented in Milestone B and are no longer missing, so this is no longer a false-negative for conformance.
 
 ### test/aoo-test/data/calcval-cases.tsv
 - Present (test/aoo-test/data/). Formula evaluation test cases.
@@ -32,11 +32,13 @@ Source-of-truth: `test/aoo-test/`, `test/odf-validate/`, and AOO source. Finding
 ### Outdated specification inventories
 - Both `openformula-functions.txt` files are explicitly ODF 1.2 chapter 6. No ODF 1.3 or ODF 1.4 function inventory exists in test data.
 - **[GAP]** No machine-readable ODF 1.4 Part 4 function/operator/requirements inventory in `test/`.
-
 ### Missing function tests
-- **[CONFIRMED]** IFNA: listed in inventories but NOT implemented in AOO (`xlformula.cxx:404` ocNoName stub only). No AOO function test can pass; inventory lists it as standard — false expectation.
-- **[CONFIRMED]** SKEWP: listed in inventories but NOT implemented (`xlformula.cxx:415` ocNoName stub only). `SKEW` (sample) is implemented; SKEWP (population) missing.
+
+- **[CONFIRMED]** IFNA: listed in inventories; implemented in Milestone B (`SC_OPCODE_IFNA=409`, `ScIfna` in `interpr1.cxx`, dispatch in `interpr4.cxx:3451`). Regression tests added to `calcval-cases14.tsv` (IFNA.num, IFNA.text, IFNA.na.num, IFNA.na.text, IFNA.otherr, IFNA.lazy.ok, IFNA.lazy.err, IFNA.nested, IFNA.ref, IFNA.ref.text, IFNA.range).
+- **[CONFIRMED]** SKEWP: listed in inventories; implemented in Milestone B (`SC_OPCODE_SKEWP=410`, `ScSkewP` in `interpr3.cxx`, dispatch in `interpr4.cxx:3695`). Regression tests added to `calcval-cases14.tsv` (SKEWP.sym, SKEWP.pos, SKEWP.neg, SKEWP.vs.skew, SKEWP.one, SKEWP.zero, SKEWP.two, SKEWP.range, SKEWP.array, SKEWP.mixed, SKEWP.err).
 - **[CONFIRMED]** EASTERSUNDAY: implemented (`interpr2.cxx:261`) but NOT in either function inventory. No dedicated test coverage confirmed.
+
+**[CONFIRMED] IFNA and SKEWP are no longer missing functions.** Both were implemented in Milestone B. The test inventories list them as standard ODF functions, which is now correct.
 
 ### Missing semantic tests
 - No confirmed semantic test for CONVERT `atm` discrepancy (101324.996583 Pa vs ODF 1.4 1.0132510E+5).
@@ -80,9 +82,9 @@ Source-of-truth: `test/aoo-test/`, `test/odf-validate/`, and AOO source. Finding
 | Category | Gap | Severity |
 |----------|-----|----------|
 | Spec inventory | No ODF 1.3/1.4 function/operator inventory in test/ | High |
-| Missing functions | IFNA, SKEWP not implemented (inventories falsely list them) | High |
+| Missing functions | None — IFNA and SKEWP implemented in Milestone B | None |
 | Implemented but uninventoried | EASTERSUNDAY not in either test inventory | Medium |
-| Semantic tests | CONVERT atm, INDEX row-vector, DATE pre-1583, bit ops, short-circuit | High |
+| Semantic tests | CONVERT atm (fixed Milestone C), INDEX row-vector (fixed Milestone A), DATE pre-1583, bit ops, short-circuit | High |
 | Parser tests | Precedence, intersection, union, quoted labels | Medium |
 | Round-trip tests | Function-name export aliases, error value type | Medium |
-| False confidence | ODF 1.2 inventories listing unimplemented IFNA/SKEWP | High |
+| False confidence | None — IFNA/SKEWP now implemented, matching inventory | None |

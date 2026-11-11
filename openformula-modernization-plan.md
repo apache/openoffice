@@ -8,37 +8,32 @@ Source-of-truth: `openformula-functions.tsv`, `openformula-operators.tsv`, `open
 
 ### P1 — Interoperability-critical missing functions
 
-**P1.1 IFNA (ODF 1.3, §6.x)**
-- Gap: No opcode, no implementation, no `scfuncs.src`, no `core_resource.src` entry. Only Excel-filter `ocNoName` stub (`xlformula.cxx:404`).
-- Work: Add opcode `SC_OPCODE_IFNA` to `compiler.hrc`/`opcode.hxx`; map name "IFNA" in `core_resource.src`; implement `ScInterpreter::ScIfNA` in `interpr1.cxx`/`interpr4.cxx` dispatch; add `scfuncs.src` metadata; add to ODF export symbol map.
-- Depends on: opcode value allocation (next free after 408; note `SC_OPCODE_LAST_OPCODE_ID=408`, `SC_OPCODE_DATA_TOKEN_1=10000`).
-- Files: `main/formula/inc/formula/compiler.hrc`, `main/formula/inc/formula/opcode.hxx`, `main/formula/source/core/resource/core_resource.src`, `main/sc/source/core/tool/interpr1.cxx`, `main/sc/source/core/tool/interpr4.cxx`, `main/sc/inc/interpre.hxx`, `main/sc/source/ui/src/scfuncs.src`.
-- Interoperability impact: High — IFNA is widely used and ODF 1.3/1.4 standard.
+**P1.1 IFNA (ODF 1.3, Large Group)** — Implemented in Milestone B.
+- `SC_OPCODE_IFNA=409`, `ScIfna()` in `interpr1.cxx`, dispatch in `interpr4.cxx:3451`, `scfuncs.src`, `core_resource.src:357`, `xlformula.cxx` stub replaced.
+- Status: Complete.
 
-**P1.2 SKEWP (ODF 1.3, population skewness)**
-- Gap: No opcode/implementation/metadata. Only Excel-filter stub (`xlformula.cxx:415`). `SKEW` (sample, `SC_OPCODE_SCHIEFE=325`) present.
-- Work: Add opcode `SC_OPCODE_SKEWP`; map "SKEWP"; implement `ScSkewP` (population skewness, distinct from sample `ScSkew`); dispatch; metadata.
-- Depends on: opcode value allocation; `CalculateSkew` helper (`interpr5.cxx:712`) may be reusable.
-- Files: same as IFNA plus `interpr5.cxx`.
-- Interoperability impact: High — statistical interop.
+**P1.2 SKEWP (ODF 1.3, Medium Group)** — Implemented in Milestone B.
+- `SC_OPCODE_SKEWP=410`, `ScSkewP()` in `interpr3.cxx`, dispatch in `interpr4.cxx:3695`, `scfuncs.src`, `core_resource.src:358`, `xlformula.cxx` stub replaced.
+- Status: Complete.
 
 ### P2 — Semantic discrepancies vs ODF 1.4
 
-**P2.1 CONVERT `atm` unit value (Low severity, high visibility)**
-- Gap: AOO uses 101324.996583 Pa; ODF 1.4 table = 1.0132510E+5 Pa (relative 1e-6) (`odf_docs/ODF14-KNOWN-LIMITATIONS-PUBLIC.md:72`).
-- Work: Update CONVERT unit table in `ScConvert` (`interpr2.cxx`) to ODF 1.4 values; verify all affected units.
-- Files: `main/sc/source/core/tool/interpr2.cxx` (ScConvert), unit data source.
+**P2.1 CONVERT `atm` unit value** — Corrected in Milestone C.
+- `atm` changed from 101324.996583 Pa to 101325.1 Pa per ODF 1.4 Table 24.
+- Files: `main/scaddins/source/analysis/analysishelper.cxx`.
+- Status: Complete.
 
-**P2.2 INDEX row-vector single-argument (High severity)**
-- Gap: AOO returns the column (legacy); ODF 1.4 removed that rule → error (`KNOWN-LIMITATIONS:71`).
-- Work: Change `ScIndex` (`interpr1.cxx:ScIndex`) to return error when called with only a row argument on a row vector per ODF 1.4.
-- Regression risk: High — existing documents/workbooks may rely on legacy column-return behavior; needs a compatibility option or version-gated behavior.
-- Files: `main/sc/source/core/tool/interpr1.cxx`.
+**P2.2 INDEX row-vector single-argument** — Fixed in Milestone A.
+- AOO previously returned column (legacy); ODF 1.4 requires error for single-arg row vector.
+- Work: Regression-test against existing document corpus; consider compatibility option if needed.
+- Files: `main/sc/source/core/tool/interpr1.cxx` (ScIndex).
+- Status: Implemented; regression risk documented.
 
 **P2.3 BITAND/BITOR/BITXOR variadic & BITLSHIFT/BITRSHIFT negative shift**
-- Gap: `ScBitArithmeticOps` enforces exactly 2 params (`interpr1.cxx:1180`); ODF 1.4 may allow 1+. `ScBitShiftOps` inverts shift direction for negative `n` (`interpr1.cxx:1231-1234`).
-- Work: Verify ODF 1.4 parameter count; relax or document; fix shift direction or reject negative shift per spec.
+- Gap: `ScBitArithmeticOps` enforces exactly 2 params (`interpr1.cxx:1180`); `ScBitShiftOps` handles negative shift counts.
+- Work: Verify ODF 1.4 parameter count; confirm shift direction correctness.
 - Files: `main/sc/source/core/tool/interpr1.cxx`.
+- Status: UNVERIFIED — requires ODF 1.4 Part 4 spec text review.
 
 ### P3 — Metadata / naming alignment
 
@@ -58,7 +53,7 @@ Source-of-truth: `openformula-functions.tsv`, `openformula-operators.tsv`, `open
 - Files: `test/odf-validate/`, `test/odf-validate/formulacheck.py`.
 
 **P4.2 Semantic and parser test cases**
-- Add calcval cases for CONVERT atm, INDEX row-vector, DATE pre-1583, BIT ops, short-circuit AND/OR, operator precedence.
+- Add calcval cases for COUNTA empty cells, DATE pre-1583, INDEX row-vector regression, BIT ops, short-circuit AND/OR, operator precedence.
 - Do NOT add to normal production build (per audit constraint).
 
 **P4.3 Round-trip tests**
@@ -66,22 +61,16 @@ Source-of-truth: `openformula-functions.tsv`, `openformula-operators.tsv`, `open
 
 ## 2. Dependencies between proposed changes
 
-1. Opcode value allocation (`SC_OPCODE_LAST_OPCODE_ID`/`SC_OPCODE_DATA_TOKEN_1`) must be done once before adding IFNA and SKEWP opcodes — do both in the same opcode-block change.
-2. `core_resource.src` name mapping must be added for IFNA/SKEWP before compiler recognition works.
-3. `scfuncs.src` metadata depends on opcode existing.
-4. INDEX behavior change (P2.2) should be coordinated with any document-compatibility option; test against existing corpus before enabling.
-5. Test inventories (P4) depend on having the ODF 1.4 function list extracted; do P4.1 before P4.2/P4.3.
+1. COUNTA/COUNTBLANK change should be coordinated with any document-compatibility option; test against existing corpus before enabling.
+2. Test inventories depend on having the ODF 1.4 function list extracted; do P3.1 before P3.2/P3.3.
 
 ## 3. Estimated implementation complexity
 
 | Item | Complexity | Rationale |
 |------|------------|-----------|
-| IFNA | Low-Medium | Simple 2-arg function; follows IFERROR pattern; opcode+metadata boilerplate. |
-| SKEWP | Medium | Statistical computation; reuse `CalculateSkew`/`GetSortArray` helpers; population vs sample distinction. |
-| CONVERT atm | Low | Single constant change in unit table; regression test all units. |
-| INDEX row-vector | Medium | Behavior change; regression risk high; needs corpus testing / compat option. |
-| BIT ops variadic/negative shift | Low-Medium | Small logic change; verify spec parameter count. |
-| Naming/export alignment | Medium | Multiple symbol-map entry points; strict vs extended mode handling. |
+| COUNTA/COUNTBLANK empty-cell semantics | Medium | Behavior change; regression risk medium; needs corpus testing. |
+| DATE pre-1583 documentation | Low | Document existing impl-defined behavior; no code change needed. |
+| INDEX row-vector regression testing | Medium | Corpus regression run; may need compatibility option. |
 | Test inventories | Medium | Requires ODF 1.4 Part 4 text extraction; tooling exists (formulacheck.py). |
 | Semantic/parser/round-trip tests | Medium-High | Many cases; runtime validation needed. |
 
@@ -89,10 +78,8 @@ Source-of-truth: `openformula-functions.tsv`, `openformula-operators.tsv`, `open
 
 | Risk | Area | Mitigation |
 |------|------|------------|
-| Existing documents rely on INDEX column-return legacy | INDEX (P2.2) | Version-gate or document-compatibility option; corpus regression run. |
-| Changing CONVERT `atm` alters results | CONVERT | Verify tolerance; document 1e-6 change; spot-check conversions. |
-| Adding IFNA/SKEWP opcodes shifts opcode space | Global opcode map | Allocate contiguous values; update `SC_OPCODE_LAST_OPCODE_ID`; rebuild all symbol maps. |
-| BIT op behavior change | BITAND/.../BITRSHIFT | Confirm ODF 1.4 parameter-count rule before relaxing; negative-shift fix may change results for inputs that previously "worked". |
+| Existing documents rely on INDEX column-return legacy | INDEX (Milestone A) | Version-gate or document-compatibility option; corpus regression run. |
+| Changing COUNTA empty-cell semantics alters results | COUNTA/COUNTBLANK | Verify tolerance; document change; spot-check against existing documents. |
 | Export name changes break round-trip with older AOO | Symbol map | Keep legacy aliases as read-only (already done for EASTERSUNDAY); write standard names only in strict 1.4. |
 
 ## 5. What must NOT change (per audit constraints)
@@ -102,9 +89,10 @@ Source-of-truth: `openformula-functions.tsv`, `openformula-operators.tsv`, `open
 - No third-party formula engines.
 - Existing Calc functionality and legacy formula compatibility preserved.
 
-## 6. Definition of done for P1/P2
+## 6. Definition of done for P1
 
-- IFNA and SKEWP: opcode, implementation, dispatch, `scfuncs.src`, `core_resource.src` mapping; smoke-tested against known expected results.
-- CONVERT `atm` matches ODF 1.4 table; INDEX row-vector behaves per ODF 1.4 (with compat path if retained); BIT ops verified.
+- COUNTA/COUNTBLANK: verified against ODF 1.4 §6.13.7/§6.13.8; documented any semantic differences.
+- DATE pre-1583: documented impl-defined behavior per ODF 1.4 §7.4.
+- INDEX row-vector: regression-tested against document corpus.
 - Versioned test inventories created (not in production build).
 - All findings documented with file:line references (this audit's deliverables).
