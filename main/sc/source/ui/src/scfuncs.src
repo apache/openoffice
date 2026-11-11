@@ -1024,6 +1024,38 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 			Text [ en-US ] = "An integer between 1583 and 9956, or 0 and 99 (19xx or 20xx depending on the option set). If omitted, the next Easter Sunday on or after today is returned." ;
 		};
 	};
+	// -=*# Resource for function IFNA #*=-
+	Resource SC_OPCODE_IFNA
+	{
+		String 1 // Description
+		{
+			Text [ en-US ] = "Returns the value if the cell does not contain an #N/A error value, otherwise it returns the alternative value." ;
+		};
+		ExtraData =
+		{
+			0;
+			ID_FUNCTION_GRP_LOGICAL;
+			U2S( HID_FUNC_IFNA );
+			2;	2;	0;
+			0;
+		};
+		String 2 // Name of Parameter 1
+		{
+			Text [ en-US ] = "Value" ;
+		};
+		String 3 // Description of Parameter 1
+		{
+			Text [ en-US ] = "The value to be checked for an #N/A error." ;
+		};
+		String 4 // Name of Parameter 2
+		{
+			Text [ en-US ] = "Value_if_na" ;
+		};
+		String 5 // Description of Parameter 2
+		{
+			Text [ en-US ] = "The value to be returned if Value is an #N/A error." ;
+		};
+	};
 	// -=*# Resource for function BW #*=-
 	Resource SC_OPCODE_BW
 	{
@@ -5263,6 +5295,30 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		String 3 // Description of Parameter 1
 		{
 			Text [ en-US ] = "Number 1, number 2, ... are 1 to 30 numerical arguments portraying a sample of the distribution." ;
+		};
+	};
+	// -=*# Resource for function SKEWP #*=-
+	Resource SC_OPCODE_SKEWP
+	{
+		String 1 // Description
+		{
+			Text [ en-US ] = "Returns the skewness of a distribution using the population standard deviation." ;
+		};
+		ExtraData =
+		{
+			0;
+			ID_FUNCTION_GRP_STATISTIC;
+			U2S( HID_FUNC_SKEWP );
+			VAR_ARGS;	0;
+			0;
+		};
+		String 2 // Name of Parameter 1
+		{
+			Text [ en-US ] = "number " ;
+		};
+		String 3 // Description of Parameter 1
+		{
+			Text [ en-US ] = "Number 1, number 2, ... are 1 to 30 numerical arguments portraying the population." ;
 		};
 	};
 	// -=*# Resource for function KURT #*=-

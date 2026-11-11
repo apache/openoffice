@@ -1011,6 +1011,42 @@ void FormulaCompiler::Factor()
             PutCode( pFacToken );
             eOp = NextToken();
         }
+        else if (eOp == ocIfna)
+        {
+            // IFNA(value; value_if_na): lazy evaluation of the second argument.
+            // jump[0] = 2  (value path, fallback path, behind)
+            pFacToken = pToken;
+            pFacToken->GetJump()[ 0 ] = 2;
+            eOp = NextToken();
+            if (eOp == ocOpen)
+            {
+                NextToken();
+                eOp = Expression();
+            }
+            else
+                SetError(errPairExpected);
+            short nJumpCount = 0;
+            PutCode( pFacToken );
+            if ( ++nJumpCount <= 2 )
+                pFacToken->GetJump()[nJumpCount] = pc-1;  // fallback starts here
+            NextToken();
+            if ( pToken->GetOpCode() == ocSep )
+            {
+                NextToken();
+                eOp = Expression();
+            }
+            else
+                SetError(errPairExpected);
+            if (eOp != ocClose)
+                SetError(errPairExpected);
+            else
+            {
+                eOp = NextToken();
+                if ( ++nJumpCount <= 2 )
+                    pFacToken->GetJump()[ nJumpCount ] = pc-1;  // behind
+                pFacToken->GetJump()[ 0 ] = nJumpCount;
+            }
+        }
         else if ((SC_OPCODE_START_2_PAR <= eOp && eOp < SC_OPCODE_STOP_2_PAR)
                 || eOp == ocExternal
                 || eOp == ocMacro

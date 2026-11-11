@@ -401,7 +401,7 @@ static const XclFunctionInfo saFuncTable_Odf[] =
     EXC_FUNCENTRY_ODF( ocFormula,       1,  1,  0,  "FORMULA" ),
     EXC_FUNCENTRY_ODF( ocGamma,         1,  1,  0,  "GAMMA" ),
     EXC_FUNCENTRY_ODF( ocGauss,         1,  1,  0,  "GAUSS" ),
-    EXC_FUNCENTRY_ODF( ocNoName,        2,  2,  0,  "IFNA" ),
+    EXC_FUNCENTRY_ODF( ocIfna,        2,  2,  0,  "IFNA" ),
     EXC_FUNCENTRY_ODF( ocIsFormula,     1,  1,  0,  "ISFORMULA" ),
     EXC_FUNCENTRY_ODF( ocWeek,          1,  2,  0,  "ISOWEEKNUM" ),
     EXC_FUNCENTRY_ODF( ocMatrixUnit,    1,  1,  0,  "MUNIT" ),
@@ -412,7 +412,7 @@ static const XclFunctionInfo saFuncTable_Odf[] =
     EXC_FUNCENTRY_ODF( ocZGZ,           3,  3,  0,  "RRI" ),
     EXC_FUNCENTRY_ODF( ocTable,         0,  1,  0,  "SHEET" ),
     EXC_FUNCENTRY_ODF( ocTables,        0,  1,  0,  "SHEETS" ),
-    EXC_FUNCENTRY_ODF( ocNoName,        1,  MX, 0,  "SKEWP" ),
+    EXC_FUNCENTRY_ODF( ocSkewP,        1,  MX, 0,  "SKEWP" ),
     EXC_FUNCENTRY_ODF( ocUnichar,       1,  1,  0,  "UNICHAR" ),
     EXC_FUNCENTRY_ODF( ocUnicode,       1,  1,  0,  "UNICODE" ),
     EXC_FUNCENTRY_ODF( ocXor,           1,  MX, 0,  "XOR" )
