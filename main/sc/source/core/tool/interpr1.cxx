@@ -1174,34 +1174,43 @@ void ScInterpreter::ScBitArithmeticOps(bitOperations::bitArithmetic bitOp)
 {
     nFuncFmtType = NUMBERFORMAT_NUMBER;
     short nParamCount = GetByte();
-    static const sal_uInt64 max_val = SAL_CONST_UINT64( 281474976710656 );
+    static const sal_uInt64 max_val = SAL_CONST_UINT64( 281474976710655 );
     static const int NUMBER_OF_ARGUMENTS = 2;
 
     if ( MustHaveParamCount( nParamCount, NUMBER_OF_ARGUMENTS ) )
     {
         double *arguments = new double[NUMBER_OF_ARGUMENTS];
+        sal_Bool bValid = sal_True;
 
         for (int i=0; i<NUMBER_OF_ARGUMENTS; i++)
         {
             arguments[i] = ::rtl::math::approxFloor( GetDouble() );
-            if ( arguments[i] < 0 || arguments[i] > max_val )
+            if ( !::rtl::math::isFinite( arguments[i] )
+                 || arguments[i] < 0
+                 || arguments[i] > max_val )
             {
-                PushIllegalArgument();
+                bValid = sal_False;
             }
         }
 
-        sal_uInt64 res = 0;
-        sal_Bool first = sal_True;
-
-
-        for (int i=0; i<NUMBER_OF_ARGUMENTS; i++)
+        if ( bValid )
         {
-            doOperation( ( sal_uInt64 )arguments[i], bitOp, res, first );
+            sal_uInt64 res = 0;
+            sal_Bool first = sal_True;
+
+            for (int i=0; i<NUMBER_OF_ARGUMENTS; i++)
+            {
+                doOperation( ( sal_uInt64 )arguments[i], bitOp, res, first );
+            }
+
+            delete[] arguments;
+            PushDouble( (double) res );
         }
-
-        delete[] arguments;
-        PushDouble( (double) res );
-
+        else
+        {
+            delete[] arguments;
+            PushIllegalArgument();
+        }
     }
 }
 
@@ -1219,29 +1228,44 @@ void ScInterpreter::ScBitShiftOps(bitOperations::bitShift bitOp) {
         double n = ::rtl::math::approxFloor( GetDouble() );
         double val = ::rtl::math::approxFloor( GetDouble() );
 
-        if ( val < 0 )
+        static const sal_uInt64 max_val = SAL_CONST_UINT64( 281474976710655 );
+
+        if ( !::rtl::math::isFinite( n )
+             || !::rtl::math::isFinite( val )
+             || val < 0.0
+             || static_cast<double>( max_val ) < val )
         {
             PushIllegalArgument();
         }
         else
         {
             double result;
-            if (n < 0)
+            const sal_uInt64 uVal = static_cast<sal_uInt64>( val );
+            const sal_uInt64 nShift = ( n >= 64.0 || n <= -64.0 )
+                ? SAL_CONST_UINT64( 64 )
+                : ( n < 0.0 ? static_cast<sal_uInt64>( -n )
+                            : static_cast<sal_uInt64>( n ) );
+            if ( nShift == 0 )
             {
-                if (bitOp == bitOperations::BITLSHIFT)
-                    result = (sal_uInt64) val >> (sal_uInt64) -n;
-                else
-                    result = (sal_uInt64) val << (sal_uInt64) -n;
+                result = static_cast<double>( uVal );
             }
-            else if( n == 0)
-                result = val;
+            else if ( nShift >= 64 )
+            {
+                result = 0.0;
+            }
+            else if ( n < 0.0 )
+            {
+                if ( bitOp == bitOperations::BITLSHIFT )
+                    result = static_cast<double>( uVal >> nShift );
+                else
+                    result = static_cast<double>( uVal << nShift );
+            }
             else
             {
-                if (bitOp == bitOperations::BITLSHIFT)
-                    result = (sal_uInt64) val << (sal_uInt64) n;
+                if ( bitOp == bitOperations::BITLSHIFT )
+                    result = static_cast<double>( uVal << nShift );
                 else
-                    result = (sal_uInt64) val >> (sal_uInt64) n;
-
+                    result = static_cast<double>( uVal >> nShift );
             }
             PushDouble( result );
         }
@@ -7448,7 +7472,6 @@ void ScInterpreter::ScIndex()
                     SCCOL nCol2 = 0;
                     SCROW nRow2 = 0;
                     SCTAB nTab2 = 0;
-                    sal_Bool bRowArray = sal_False;
                     if (GetStackType() == svRefList)
                     {
                         FormulaTokenRef xRef = PopToken();
@@ -7460,19 +7483,14 @@ void ScInterpreter::ScIndex()
                         ScRange aRange( ScAddress::UNINITIALIZED);
                         DoubleRefToRange( (*(static_cast<ScToken*>(xRef.get())->GetRefList()))[nArea-1], aRange);
                         aRange.GetVars( nCol1, nRow1, nTab1, nCol2, nRow2, nTab2);
-                        if ( nParamCount == 2 && nRow1 == nRow2 )
-                            bRowArray = sal_True;
                     }
                     else
                     {
                         PopDoubleRef( nCol1, nRow1, nTab1, nCol2, nRow2, nTab2);
-                        if ( nParamCount == 2 && nRow1 == nRow2 )
-                            bRowArray = sal_True;
                     }
                     if ( nTab1 != nTab2 ||
                             (nCol > 0 && nCol1+nCol-1 > nCol2) ||
-                            (nRow > 0 && nRow1+nRow-1 > nRow2 && !bRowArray ) ||
-                            ( nRow > nCol2 - nCol1 + 1 && bRowArray ))
+                            (nRow > 0 && nRow1+nRow-1 > nRow2 ))
                         PushIllegalArgument();
                     else if (nCol == 0 && nRow == 0)
                     {
@@ -7493,12 +7511,6 @@ void ScInterpreter::ScIndex()
                     {
                         if ( nCol1 == nCol2 )
                             PushSingleRef( nCol1, nRow1+nRow-1, nTab1 );
-                        else if ( bRowArray )
-                        {
-                            nCol =(SCCOL) nRow;
-                            nRow = 1;
-                            PushSingleRef( nCol1+nCol-1, nRow1+nRow-1, nTab1);
-                        }
                         else
                             PushDoubleRef( nCol1, nRow1+nRow-1, nTab1,
                                     nCol2, nRow1+nRow-1, nTab1);
