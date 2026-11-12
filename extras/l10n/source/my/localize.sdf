@@ -3919,8 +3919,8 @@ sd	source\ui\slideshow\slideshow.src	0	menuitem	RID_SLIDESHOW_CONTEXTMENU	CM_SCR
 sd	source\ui\slideshow\slideshow.src	0	menuitem	RID_SLIDESHOW_CONTEXTMENU	CM_ENDSHOW			0	my	~ရုပ်ပုံဆလိုက်ပြသမှုအဆုံးသတ်သည်				2002-02-02 02:02:02
 formula	source\ui\dlg\parawin.src	0	#define	RB_ARGBLOCK( y )				13	my	-		ရွေးချယ်ပါ		2002-02-02 02:02:02
 formula	source\ui\dlg\parawin.src	0	fixedtext	RID_FORMULATAB_PARAMETER	FT_EDITDESC			198	my	လုပ်ဆောင်ချက်မသိပါ				2002-02-02 02:02:02
-formula	source\ui\dlg\parawin.src	0	string	RID_FORMULATAB_PARAMETER	STR_OPTIONAL			8	my	(ရွေးပိုင်ခွင့်)				2002-02-02 02:02:02
-formula	source\ui\dlg\parawin.src	0	string	RID_FORMULATAB_PARAMETER	STR_REQUIRED			8	my	(လိုအပ်ခဲ့သည်)				2002-02-02 02:02:02
+formula	source\ui\dlg\parawin.src	0	string	RID_FORMULATAB_PARAMETER.FT_ARG1.FT_ARG2.FT_ARG3.FT_ARG4	STR_OPTIONAL			8	my	(ရွေးပိုင်ခွင့်)				2002-02-02 02:02:02
+formula	source\ui\dlg\parawin.src	0	string	RID_FORMULATAB_PARAMETER.FT_ARG1.FT_ARG2.FT_ARG3.FT_ARG4	STR_REQUIRED			8	my	(လိုအပ်ခဲ့သည်)				2002-02-02 02:02:02
 formula	source\ui\dlg\formdlgs.src	0	stringlist	RID_FORMULATAB_FUNCTION.LB_CATEGORY	1			0	my	နောက်ဆုံးအသုံးပြုမှု				2002-02-02 02:02:02
 formula	source\ui\dlg\formdlgs.src	0	stringlist	RID_FORMULATAB_FUNCTION.LB_CATEGORY	2			0	my	အားလုံး				2002-02-02 02:02:02
 formula	source\ui\dlg\formdlgs.src	0	fixedtext	RID_FORMULATAB_FUNCTION	FT_CATEGORY			84	my	~အမျိုးအစား				2002-02-02 02:02:02
@@ -4027,8 +4027,8 @@ wizards	source\euro\euro.src	0	string	CURRENCIES + 12				0	my	မှတ်တမ
 wizards	source\euro\euro.src	0	string	CURRENCIES + 13				0	my	ဆိုက်ပရက်စ် ပေါင်				2002-02-02 02:02:02
 wizards	source\euro\euro.src	0	string	CURRENCIES + 14				0	my	မော်တာ လိုင်ရာ				2002-02-02 02:02:02
 wizards	source\euro\euro.src	0	string	CURRENCIES + 15				0	my	ဆလိုဗက် ကိုရုနာ				2002-02-02 02:02:02
-wizards	source\euro\euro.src	0	string	CURRENCIES + 16				0	my	မှတ်တမ်းမှတ်ရာမှာထည့်ထားသောငွေကြေးစနစ်သည် ဥရောပငွေကြေးစနစ်မဟုတ်ပါ။				2002-02-02 02:02:02
-wizards	source\euro\euro.src	0	string	CURRENCIES + 17				0	my	သင်၏ကွန်ပျူတာအလုပ်လုပ်ရန်ဘာသာစကားအစုအဝေးသည်ဥရောပဘုံငွေကြေးအဖွဲ့၏ ဘာသာစကားမဟုတ်ပေ။				2002-02-02 02:02:02
+wizards	source\euro\euro.src	0	string	CURRENCIES + 21				0	my	မှတ်တမ်းမှတ်ရာမှာထည့်ထားသောငွေကြေးစနစ်သည် ဥရောပငွေကြေးစနစ်မဟုတ်ပါ။				2002-02-02 02:02:02
+wizards	source\euro\euro.src	0	string	CURRENCIES + 22				0	my	သင်၏ကွန်ပျူတာအလုပ်လုပ်ရန်ဘာသာစကားအစုအဝေးသည်ဥရောပဘုံငွေကြေးအဖွဲ့၏ ဘာသာစကားမဟုတ်ပေ။				2002-02-02 02:02:02
 wizards	source\euro\euro.src	0	string	STEP_LASTPAGE				0	my	တိုးတက်မှု				2002-02-02 02:02:02
 wizards	source\euro\euro.src	0	string	STEP_LASTPAGE + 1				0	my	ဆက်စပ်သည့် မှတ်တမ်းမှတ်ရာများ ပြန်ထုတ်နေသည်...				2002-02-02 02:02:02
 wizards	source\euro\euro.src	0	string	STEP_LASTPAGE + 2				0	my	မှတ်တမ်းမှတ်ရာများ ကူးပြောင်းနေသည်...				2002-02-02 02:02:02
@@ -4474,77 +4474,77 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_FAXWIZARDROADMAP_START + 2		
 wizards	source\formwizard\dbwizres.src	0	string	RID_FAXWIZARDROADMAP_START + 3				0	my	ပို့သူနှင့် လက်ခံရရှိသူ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_FAXWIZARDROADMAP_START + 4				0	my	စာမျက်နှာအောက်				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_FAXWIZARDROADMAP_START + 5				0	my	အမည်နှင့် နေရာ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +1				0	my	ကွန်ယက် ဝဇ္ဇတ်				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +2				0	my	ဤကွန်ယက် ဝဇ္ဇတ် သည် အင်တာနက်ပေါ် ပုံနှိပ် ထုတ်ဝေသည့် မှတ်တမ်းမှတ်ရာတွင် အထောက်အကူ ပြုရန် ဖြစ်သည်။ \n\n မှတ်တမ်းမှတ်ရာများကို ကူးပြောင်းနိုင်၍ ကွန်ယက် ဘလောက်ဇာ တစ်ခုအားဖြင့် အသေးစိတ်ကြည့်နိုင်သည်။ ထို့အပြင်၊ မှတ်တမ်းမှတ်ရာများသို့ လွယ်ကူစွာ အချက်အလက်များ သွားရောက်ရယူရန်အတွက် ကွင်းဆက်များနှင့်အတူ မာတိကာများ၏ဇယားတစ်ခု ဖြစ်ပေါ်စေလိမ့်မည်။ ကွန်ယက် ဝဇ္ဇတ်သည် ဒီဇိုင်း ပုံစံ လိုအပ်ချက်နှင့် ကိုက်ညီအောင် ပြုပြင်ရေးသားရန်နှင့် သင့်ကွန်ရက်နေရာအစု၏ အဆင်အပြင်လဲပဲ ခွင့်ပြုလိမ့်မည်။ \n\n ခေတ်မီသော ကွန်ယက်ပေါ် ပုံနှိပ် ထုတ်ဝေပြီးသည့် မှတ်တမ်းမှတ်ရာများ ထိန်းသိမ်းရန်နှင့် မည်သည့်အချိန်တွင်မဆို မှတ်တမ်းမှတ်ရာများ ပေါင်းထည့်ရန် (သို့) ဖယ်ရှားရန် ဖြစ်နိုင်လိမ့်မည်။ 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +4				0	my	ဖျက်ပါ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +5				0	my	နိဒါန်း				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +6				0	my	ပုံနှိပ် ထုတ်ဝေလိုသည့် မှတ်တမ်းမှတ်ရာများ ရွေးချယ်ပါ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +8				0	my	သတင်း အချက်အလက် မှတ်တမ်းမှတ်ရာ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +9				0	my	ခေါင်းစဉ် -				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +10				0	my	အကျဉ်းချုပ် -				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +11				0	my	လက်ရာရှင် -				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +12				0	my	စီစဉ် ဖွဲ့စည်းမှု ပုံစံ ဖိုင်သို့ ပို့ပါ -				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +13				0	my	သင့် ကွန်ယက် နေရာအစုအတွက် အထွေထွေ သတင်း အချက်အလက်သို့ ဝင်ရောက်ပါ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 1				0	my	ကွန်ယက် ဝဇ္ဇတ်				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 2				0	my	ဤကွန်ယက် ဝဇ္ဇတ် သည် အင်တာနက်ပေါ် ပုံနှိပ် ထုတ်ဝေသည့် မှတ်တမ်းမှတ်ရာတွင် အထောက်အကူ ပြုရန် ဖြစ်သည်။ \n\n မှတ်တမ်းမှတ်ရာများကို ကူးပြောင်းနိုင်၍ ကွန်ယက် ဘလောက်ဇာ တစ်ခုအားဖြင့် အသေးစိတ်ကြည့်နိုင်သည်။ ထို့အပြင်၊ မှတ်တမ်းမှတ်ရာများသို့ လွယ်ကူစွာ အချက်အလက်များ သွားရောက်ရယူရန်အတွက် ကွင်းဆက်များနှင့်အတူ မာတိကာများ၏ဇယားတစ်ခု ဖြစ်ပေါ်စေလိမ့်မည်။ ကွန်ယက် ဝဇ္ဇတ်သည် ဒီဇိုင်း ပုံစံ လိုအပ်ချက်နှင့် ကိုက်ညီအောင် ပြုပြင်ရေးသားရန်နှင့် သင့်ကွန်ရက်နေရာအစု၏ အဆင်အပြင်လဲပဲ ခွင့်ပြုလိမ့်မည်။ \n\n ခေတ်မီသော ကွန်ယက်ပေါ် ပုံနှိပ် ထုတ်ဝေပြီးသည့် မှတ်တမ်းမှတ်ရာများ ထိန်းသိမ်းရန်နှင့် မည်သည့်အချိန်တွင်မဆို မှတ်တမ်းမှတ်ရာများ ပေါင်းထည့်ရန် (သို့) ဖယ်ရှားရန် ဖြစ်နိုင်လိမ့်မည်။ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 4				0	my	ဖျက်ပါ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 5				0	my	နိဒါန်း				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 6				0	my	ပုံနှိပ် ထုတ်ဝေလိုသည့် မှတ်တမ်းမှတ်ရာများ ရွေးချယ်ပါ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 8				0	my	သတင်း အချက်အလက် မှတ်တမ်းမှတ်ရာ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 9				0	my	ခေါင်းစဉ် -				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 10				0	my	အကျဉ်းချုပ် -				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 11				0	my	လက်ရာရှင် -				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 12				0	my	စီစဉ် ဖွဲ့စည်းမှု ပုံစံ ဖိုင်သို့ ပို့ပါ -				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 13				0	my	သင့် ကွန်ယက် နေရာအစုအတွက် အထွေထွေ သတင်း အချက်အလက်သို့ ဝင်ရောက်ပါ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +14				0	my	ခေါင်းစဉ် -				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +16				0	my	ဖော်ပြချက် -				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +18				0	my	ဖန်တီးထားသည် -				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +20				0	my	အီးမေးလ် -				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +21				0	my	မူပိုင် ဆင့်စာ -				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +22				0	my	အထူးပြုခြင်း -				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +24				0	my	~အသေးစိတ်ကြည့်ပါ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +25				0	my	သင့် ကွန်ယက် နေရာအစု  မည်သည့် နေရာတွင် ပုံနှိပ်ထုတ်ဝေရန် ဆန္ဒရှိပါသလဲ?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +26				0	my	ကွန်ယက်နေရာအစုအသစ် ပုံနှိပ်ထုတ်ဝေပါ-				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +27				0	my	လက်လှမ်းမှီသော ဖိုင်တွဲ တစ်ခုသို့				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 16				0	my	ဖော်ပြချက် -				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 18				0	my	ဖန်တီးထားသည် -				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 20				0	my	အီးမေးလ် -				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 21				0	my	မူပိုင် ဆင့်စာ -				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 22				0	my	အထူးပြုခြင်း -				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 24				0	my	~အသေးစိတ်ကြည့်ပါ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 25				0	my	သင့် ကွန်ယက် နေရာအစု  မည်သည့် နေရာတွင် ပုံနှိပ်ထုတ်ဝေရန် ဆန္ဒရှိပါသလဲ?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 26				0	my	ကွန်ယက်နေရာအစုအသစ် ပုံနှိပ်ထုတ်ဝေပါ-				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 27				0	my	လက်လှမ်းမှီသော ဖိုင်တွဲ တစ်ခုသို့				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +28				0	my	...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +29				0	my	FTP မှတစ်ဆင့် ကွန်ယက် ချိတ်ထားသော ကွန်ပျူတာများသို့ အချက်အလက် ပေးပို့ခြင်းသို့				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +31				0	my	သီးသန့် စီမံထားပါ...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +32				0	my	ဖိသိပ် သိမ်းဆည်းသော ZIP တစ်ခုသို့				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 29				0	my	FTP မှတစ်ဆင့် ကွန်ယက် ချိတ်ထားသော ကွန်ပျူတာများသို့ အချက်အလက် ပေးပို့ခြင်းသို့				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 31				0	my	သီးသန့် စီမံထားပါ...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 32				0	my	ဖိသိပ် သိမ်းဆည်းသော ZIP တစ်ခုသို့				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +33				0	my	...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +34				0	my	ရွေးနိုင်ခြင်းများ သိမ်းပါ (အကြံပြုချက်)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +35				0	my	အဖြစ် သိမ်းပါ -				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +36				0	my	ကွန်ယက် ဝဇ္ဇတ် အတွက် ရွေးနိုင်ခြင်းများ ရွေးပါ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +37				0	my	ကွန်ယက်နေရာအစု မာတိကာ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +38				0	my	ပေါင်းထည့်ပါ...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +39				0	my	ဖယ်ရှားပါ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +40				0	my	သင့် ကွန်ယက် နေရာအစု၏ မာတိကာများ၏ ဇယားအတွက် အဆင်အပြင် တစ်ခု ရွေးပါ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +41				0	my	စာမျက်နှာ မာတိကာများ၏ ဇယားအတွက် စတိုင်လ် တစ်ခု ရွေးချယ်ပါ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +42				0	my	စတိုင်လ်-				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +48				0	my	အဆင်အပြင်များ-				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +50				0	my	ဖော်ပြချက်				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +51				0	my	လက်ရာရှင်				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +52				0	my	ရက်စွဲ ဖန်တီးခြင်း				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +53				0	my	နောက်ဆုံး ပြောင်းသော ရက်စွဲ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +54				0	my	ဖိုင် အမည်				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +55				0	my	စီစဉ် ဖွဲ့စည်းမှု ပုံစံ ဖိုင်				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +56				0	my	အိုင်ကွန် စီစဉ် ဖွဲ့စည်းမှု ပုံစံ ဖိုင်				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +57				0	my	စာမျက်နှာများ၏ နံပါတ်				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +58				0	my	KB ရှိ အရွယ်				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +59				0	my	သင့်ဘလောက်ဇာတွင် အစမ်း တစ်ခု ကြည့်ရန် 'Preview' ကို ကလစ် နှိပ်ပါ -				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +60				0	my	ရွေးချယ်ထားသည့် အဆင်အပြင် လိုအပ်ချက်နဲ့ ကိုက်ညီအောင် ပြုပြင် ရေးသားပါ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +61				0	my	မာတိကာများ၏ ဇယားတွင် မှတ်တမ်းမှတ်ရာ တစ်ခုစီအတွက် အောက်ပါ သတင်း အချက်အလက် ပါဝင်စေပါ -				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +62				0	my	ဖန်သား မျက်နှာပြင် ပုံရိပ် ကွဲပြား ပြတ်သားမှုအတွက် အဆင်အပြင် သင့်မြတ်အောင် ဆောင်ရွက်ပါ -				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +64				0	my	၆၄၀ x ၄၈၀				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +65				0	my	၈၀၀ x ၆၀၀				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +66				0	my	၁၀၂၄ x ၇၆၈				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +70				0	my	ဖြစ်ပေါ်စေသော သင့်ကွန်ယက်နေရာအစု				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +71				0	my	%START - %END/%TOTAL				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +72				0	my	ကျွန်ုပ်၏ဝက်ဆိုဒ်				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +73				0	my	FTP ပစ်မှတ် '%FILENAME' သည် ဖိုင်တစ်ခု ဖြစ်သည်။				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +74				0	my	လက်လှမ်းမှီသော ပစ်မှတ် '%FILENAME' သည် ဖိုင်တစ်ခု ဖြစ်သည်။				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +75				0	my	ZIP ပစ်မှတ် '%FILENAME' အဆင်သင့် တည်ရှိသည်။ တည်ရှိသော ပစ်မှတ် ဖိုင်ဟောင်းတွင် အချက်အလက်သစ်များ ထပ်မံ ဖြည့်စွပ် သိမ်းဆည်းရန် ဆန္ဒရှိပါသလား? 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +76				0	my	FTP ပစ်မှတ် အညွှန်း '%FILENAME' သည် ဗလာ မဟုတ်ပါ။ အချို့ဖိုင်များသည် ဖိုင်ဟောင်းတွင် အချက်အလက်သစ်များ ဖြည့်စွပ် သိမ်းဆည်းရလိမ့်မည်။ ဆက်လုပ်ရန် ဆန္ဒရှိပါသလား?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +77				0	my	လက်လှမ်းမှီသော ပစ်မှတ် အညွှန်း '%FILENAME' သည် ဗလာ မဟုတ်ပါ။ အချို့ဖိုင်များသည် ဖိုင်ဟောင်းတွင် အချက်အလက်သစ်များ ဖြည့်စွပ် သိမ်းဆည်းရလိမ့်မည်။ ဆက်လုပ်ရန် ဆန္ဒရှိပါသလား?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +78				0	my	ပေးထားသော အမည်အောက်တွင် ရွေးနိုင်ခြင်းများ အဆင်သင့် တည်ရှိသည်။ တည်ရှိနေသော ရွေးနိုင်ခြင်းများ ဖိုင်ဟောင်းတွင် အချက်အလက်သစ်များ ဖြည့်စွပ် သိမ်းဆည်းရန် ဆန္ဒရှိပါသလား?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +79				0	my	ပို့နေသည့် မှတ်တမ်းမှတ်ရာများ ...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +80				0	my	ပြင်ဆင်နေသည့် ပို့ကုန်...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +81				0	my	မိတ္တူကူးယူနေသော အဆင်အပြင် ဖိုင်များ...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +82				0	my	ပစ္စည်းတစ်ခု၏ တိုးတက်လာမှု အဆင့်တစ်ဆင့် မာတိကာများ၏ ဇယား ပြင်ဆင်နေသည်...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +83				0	my	မာတိကာများ၏ ဇယား ဖြစ်ပေါ်နေသည်...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +84				0	my	အစပျိုး ပြင်ဆင်နေသည်...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +86				0	my	ပုံနှိပ် ထုတ်ဝေရန် ပြင်ဆင်နေသည်...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +87				0	my	လက်လှမ်းမှီသော အညွှန်းသို့ ပုံနှိပ် ထုတ်ဝေနေသည်...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +88				0	my	FTP သွားရမည့် နေရာသို့ ပုံနှိပ် ထုတ်ဝေနေသည်...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +89				0	my	ဖိသိပ် သိမ်းဆည်းသည့် ZIP တစ်ခုသို့ ပုံနှိပ် ထုတ်ဝေနေသည် ...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 34				0	my	ရွေးနိုင်ခြင်းများ သိမ်းပါ (အကြံပြုချက်)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 35				0	my	အဖြစ် သိမ်းပါ -				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 36				0	my	ကွန်ယက် ဝဇ္ဇတ် အတွက် ရွေးနိုင်ခြင်းများ ရွေးပါ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 37				0	my	ကွန်ယက်နေရာအစု မာတိကာ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 38				0	my	ပေါင်းထည့်ပါ...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 39				0	my	ဖယ်ရှားပါ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 40				0	my	သင့် ကွန်ယက် နေရာအစု၏ မာတိကာများ၏ ဇယားအတွက် အဆင်အပြင် တစ်ခု ရွေးပါ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 41				0	my	စာမျက်နှာ မာတိကာများ၏ ဇယားအတွက် စတိုင်လ် တစ်ခု ရွေးချယ်ပါ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 42				0	my	စတိုင်လ်-				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 48				0	my	အဆင်အပြင်များ-				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 50				0	my	ဖော်ပြချက်				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 51				0	my	လက်ရာရှင်				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 52				0	my	ရက်စွဲ ဖန်တီးခြင်း				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 53				0	my	နောက်ဆုံး ပြောင်းသော ရက်စွဲ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 54				0	my	ဖိုင် အမည်				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 55				0	my	စီစဉ် ဖွဲ့စည်းမှု ပုံစံ ဖိုင်				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 56				0	my	အိုင်ကွန် စီစဉ် ဖွဲ့စည်းမှု ပုံစံ ဖိုင်				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 57				0	my	စာမျက်နှာများ၏ နံပါတ်				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 58				0	my	KB ရှိ အရွယ်				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 59				0	my	သင့်ဘလောက်ဇာတွင် အစမ်း တစ်ခု ကြည့်ရန် 'Preview' ကို ကလစ် နှိပ်ပါ -				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 60				0	my	ရွေးချယ်ထားသည့် အဆင်အပြင် လိုအပ်ချက်နဲ့ ကိုက်ညီအောင် ပြုပြင် ရေးသားပါ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 61				0	my	မာတိကာများ၏ ဇယားတွင် မှတ်တမ်းမှတ်ရာ တစ်ခုစီအတွက် အောက်ပါ သတင်း အချက်အလက် ပါဝင်စေပါ -				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 62				0	my	ဖန်သား မျက်နှာပြင် ပုံရိပ် ကွဲပြား ပြတ်သားမှုအတွက် အဆင်အပြင် သင့်မြတ်အောင် ဆောင်ရွက်ပါ -				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 64				0	my	၆၄၀ x ၄၈၀				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 65				0	my	၈၀၀ x ၆၀၀				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 66				0	my	၁၀၂၄ x ၇၆၈				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 70				0	my	ဖြစ်ပေါ်စေသော သင့်ကွန်ယက်နေရာအစု				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 71				0	my	%START - %END/%TOTAL				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 72				0	my	ကျွန်ုပ်၏ဝက်ဆိုဒ်				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 73				0	my	FTP ပစ်မှတ် '%FILENAME' သည် ဖိုင်တစ်ခု ဖြစ်သည်။				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 74				0	my	လက်လှမ်းမှီသော ပစ်မှတ် '%FILENAME' သည် ဖိုင်တစ်ခု ဖြစ်သည်။				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 75				0	my	ZIP ပစ်မှတ် '%FILENAME' အဆင်သင့် တည်ရှိသည်။ တည်ရှိသော ပစ်မှတ် ဖိုင်ဟောင်းတွင် အချက်အလက်သစ်များ ထပ်မံ ဖြည့်စွပ် သိမ်းဆည်းရန် ဆန္ဒရှိပါသလား? 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 76				0	my	FTP ပစ်မှတ် အညွှန်း '%FILENAME' သည် ဗလာ မဟုတ်ပါ။ အချို့ဖိုင်များသည် ဖိုင်ဟောင်းတွင် အချက်အလက်သစ်များ ဖြည့်စွပ် သိမ်းဆည်းရလိမ့်မည်။ ဆက်လုပ်ရန် ဆန္ဒရှိပါသလား?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 77				0	my	လက်လှမ်းမှီသော ပစ်မှတ် အညွှန်း '%FILENAME' သည် ဗလာ မဟုတ်ပါ။ အချို့ဖိုင်များသည် ဖိုင်ဟောင်းတွင် အချက်အလက်သစ်များ ဖြည့်စွပ် သိမ်းဆည်းရလိမ့်မည်။ ဆက်လုပ်ရန် ဆန္ဒရှိပါသလား?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 78				0	my	ပေးထားသော အမည်အောက်တွင် ရွေးနိုင်ခြင်းများ အဆင်သင့် တည်ရှိသည်။ တည်ရှိနေသော ရွေးနိုင်ခြင်းများ ဖိုင်ဟောင်းတွင် အချက်အလက်သစ်များ ဖြည့်စွပ် သိမ်းဆည်းရန် ဆန္ဒရှိပါသလား?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 79				0	my	ပို့နေသည့် မှတ်တမ်းမှတ်ရာများ ...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 80				0	my	ပြင်ဆင်နေသည့် ပို့ကုန်...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 81				0	my	မိတ္တူကူးယူနေသော အဆင်အပြင် ဖိုင်များ...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 82				0	my	ပစ္စည်းတစ်ခု၏ တိုးတက်လာမှု အဆင့်တစ်ဆင့် မာတိကာများ၏ ဇယား ပြင်ဆင်နေသည်...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 83				0	my	မာတိကာများ၏ ဇယား ဖြစ်ပေါ်နေသည်...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 84				0	my	အစပျိုး ပြင်ဆင်နေသည်...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 86				0	my	ပုံနှိပ် ထုတ်ဝေရန် ပြင်ဆင်နေသည်...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 87				0	my	လက်လှမ်းမှီသော အညွှန်းသို့ ပုံနှိပ် ထုတ်ဝေနေသည်...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 88				0	my	FTP သွားရမည့် နေရာသို့ ပုံနှိပ် ထုတ်ဝေနေသည်...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 89				0	my	ဖိသိပ် သိမ်းဆည်းသည့် ZIP တစ်ခုသို့ ပုံနှိပ် ထုတ်ဝေနေသည် ...				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 90				0	my	ပြီးစီးနေပြီ...				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 94				0	my	ပန်းချီဒီဇိုင်း ဖိုင်များ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 95				0	my	ဖိုင်များအားလုံး				2002-02-02 02:02:02
@@ -4553,96 +4553,96 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 98		
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 99				0	my	နောက်ခံ ပေါ်လာသော ဂရပ်ဖစ်ပုံတစ်ခု ရွေးပါ -				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 100				0	my	အိုင်ကွန် အစုံများ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 101				0	my	အိုင်ကွန် တစ်စုံ ရွေးပါ -				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +102				0	my	အခြား...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +103				0	my	ဘာမျှ မရှိပါ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +104				0	my	အတွင်း၌ သင့် ကွန်ယက်နေရာအစုသည် အောင်မြင်စွာ ဖန်တီးထားသည် - %FILENAME 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +105				0	my	ကွန်ရက် နေရာအစု ဖြစ်ပေါ်သောအချိန် တစ်ခု (သို့) ပိုများသော အမှားများ ဖြစ်ပွားသည်။				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +106				0	my	မာတိကာများ စာမျက်နှာ(များ)၏ ဇယား ဖြစ်ပေါ်စဉ် အမှားတစ်ခု ဖြစ်ပွားသည်။  				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +107				0	my	အဆင်အပြင် ဖိုင်များ မိတ္တူကူးယူစဉ် အမှားတစ်ခု ဖြစ်ပွားသည်။				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +108				0	my	%FILENAME' အတွက် သတင်း အချက်အလက် မှတ်တမ်းမှတ်ရာ စုဆောင်းစဉ် အမှားတစ်ခု ဖြစ်ပွားသည်။ 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +109				0	my	%FILENAME' မှတ်တမ်းမှတ်ရာ ပို့စဉ် အမှားတစ်ခု ဖြစ်ပွားသည်။				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +110				0	my	ပို့သော '%FILENAME' အတွက် အညွှန်းတစ်ခု ဖန်တီးစဉ် အမှားတစ်ခု ဖြစ်ပွားသည်။				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +111				0	my	%FILENAME' မှတ်တမ်းမှတ်ရာ ပို့စဉ် လုံခြုံရေး အမှားတစ်ခု ဖြစ်ပွားသည်။				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +112				0	my	%FILENAME' မှတ်တမ်းမှတ်ရာပို့စဉ် အသွင်း/အထုတ် အမှားတစ်ခု ဖြစ်ပွားသည်။				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +113				0	my	ယာယီအညွှန်းသို့ ကြားခံဖိုင်များ မိတ္တူကူးယူစဉ် အမှားတစ်ခု ဖြစ်ပွားသည်။				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +114				0	my	အောက်ပါ သွားရမည့် နေရာသို့ ကွန်ယက်နေရာအစု မိတ္တူကူးယူနိုင်လိမ့်မည် မဟုတ်ပါ - %URL				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +115				0	my	မလိုလားသော အမှားတစ်ခု ဖြစ်ပွားသည် - %ERROR				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +116				0	my	ဖိုင်အထောက်အထားပြစဉ် မလိုလားသော အမှားတစ်ခု ဖြစ်ပွားသည် - '%FILENAME'				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +117				0	my	%FILENAME' သည် ဖိုင်တွဲတစ်ခု ဖြစ်သည်။				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +118				0	my	ဆွဲတင်နေသော ကွန်ယက် ဝဇ္ဇတ် ရွေးနိုင်ခြင်းများ...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +119				0	my	မလိုလားသော အမှားတစ်ခု ဖြစ်ပွားသည်။				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +120				0	my	အထောက်အထားပြနေသည့် မှတ်တမ်းမှတ်ရာများ...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +121				0	my	ကျွန်ုပ် ဖိသိပ် သိမ်းဆည်းသည်				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +122				0	my	နိဒါန်း				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +123				0	my	မှတ်တမ်းမှတ်ရာများ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +124				0	my	အဓိက အဆင်အပြင်				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +125				0	my	အဆင်အပြင် အနုစိတ်များ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +126				0	my	စတိုင်လ်				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +127				0	my	ကွန်ယက်နေရာအစု သတင်း အချက်အလက်				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +128				0	my	အသေးစိတ် ကြည့်ပါ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +130				0	my	ရွေးချယ်ထားသည့် ရွေးနိုင်ခြင်းများ ဖျက်ရလိမ့်မည်။ \n\nအမှန်တကယ် ဖျက်ချင်ပါသလား?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +131				0	my	%NUMBER စာမျက်နှာများ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +132				0	my	%NUMBER ရုပ်ပုံ ဆလိုက်များ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +133				0	my	ဖန်တီးထားသည် - %DATE				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +134				0	my	နောက်ဆုံး အထူးပြုခြင်း - %DATE				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +135				0	my	ကွန်ယက်နေရာ ဝဇ္ဇတ် ရွေးနိုင်ခြင်းများ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +136				0	my	နောက်ခံ ပေါ်လာသော ဂရပ်ဖစ်ပုံ -				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +137				0	my	အိုင်ကွန် အစုံ -				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +138				0	my	အိုင်ကွန် အစုံသည် HTML စီစဉ် ဖွဲ့စည်းမှု ပုံစံတွင် တင်ပြချက်များအတွက် အသုံးပြုထားသည်။				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +139				0	my	HTML အသေးစိတ်လေ့လာဖော်ပြပေးသည့်စနစ်အချက်အလက်များ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 102				0	my	အခြား...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 103				0	my	ဘာမျှ မရှိပါ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 104				0	my	အတွင်း၌ သင့် ကွန်ယက်နေရာအစုသည် အောင်မြင်စွာ ဖန်တီးထားသည် - %FILENAME 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 105				0	my	ကွန်ရက် နေရာအစု ဖြစ်ပေါ်သောအချိန် တစ်ခု (သို့) ပိုများသော အမှားများ ဖြစ်ပွားသည်။				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 106				0	my	မာတိကာများ စာမျက်နှာ(များ)၏ ဇယား ဖြစ်ပေါ်စဉ် အမှားတစ်ခု ဖြစ်ပွားသည်။  				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 107				0	my	အဆင်အပြင် ဖိုင်များ မိတ္တူကူးယူစဉ် အမှားတစ်ခု ဖြစ်ပွားသည်။				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 108				0	my	%FILENAME' အတွက် သတင်း အချက်အလက် မှတ်တမ်းမှတ်ရာ စုဆောင်းစဉ် အမှားတစ်ခု ဖြစ်ပွားသည်။ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 109				0	my	%FILENAME' မှတ်တမ်းမှတ်ရာ ပို့စဉ် အမှားတစ်ခု ဖြစ်ပွားသည်။				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 110				0	my	ပို့သော '%FILENAME' အတွက် အညွှန်းတစ်ခု ဖန်တီးစဉ် အမှားတစ်ခု ဖြစ်ပွားသည်။				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 111				0	my	%FILENAME' မှတ်တမ်းမှတ်ရာ ပို့စဉ် လုံခြုံရေး အမှားတစ်ခု ဖြစ်ပွားသည်။				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 112				0	my	%FILENAME' မှတ်တမ်းမှတ်ရာပို့စဉ် အသွင်း/အထုတ် အမှားတစ်ခု ဖြစ်ပွားသည်။				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 113				0	my	ယာယီအညွှန်းသို့ ကြားခံဖိုင်များ မိတ္တူကူးယူစဉ် အမှားတစ်ခု ဖြစ်ပွားသည်။				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 114				0	my	အောက်ပါ သွားရမည့် နေရာသို့ ကွန်ယက်နေရာအစု မိတ္တူကူးယူနိုင်လိမ့်မည် မဟုတ်ပါ - %URL				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 115				0	my	မလိုလားသော အမှားတစ်ခု ဖြစ်ပွားသည် - %ERROR				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 116				0	my	ဖိုင်အထောက်အထားပြစဉ် မလိုလားသော အမှားတစ်ခု ဖြစ်ပွားသည် - '%FILENAME'				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 117				0	my	%FILENAME' သည် ဖိုင်တွဲတစ်ခု ဖြစ်သည်။				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 118				0	my	ဆွဲတင်နေသော ကွန်ယက် ဝဇ္ဇတ် ရွေးနိုင်ခြင်းများ...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 119				0	my	မလိုလားသော အမှားတစ်ခု ဖြစ်ပွားသည်။				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 120				0	my	အထောက်အထားပြနေသည့် မှတ်တမ်းမှတ်ရာများ...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 121				0	my	ကျွန်ုပ် ဖိသိပ် သိမ်းဆည်းသည်				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 122				0	my	နိဒါန်း				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 123				0	my	မှတ်တမ်းမှတ်ရာများ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 124				0	my	အဓိက အဆင်အပြင်				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 125				0	my	အဆင်အပြင် အနုစိတ်များ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 126				0	my	စတိုင်လ်				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 127				0	my	ကွန်ယက်နေရာအစု သတင်း အချက်အလက်				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 128				0	my	အသေးစိတ် ကြည့်ပါ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 130				0	my	ရွေးချယ်ထားသည့် ရွေးနိုင်ခြင်းများ ဖျက်ရလိမ့်မည်။ \n\nအမှန်တကယ် ဖျက်ချင်ပါသလား?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 131				0	my	%NUMBER စာမျက်နှာများ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 132				0	my	%NUMBER ရုပ်ပုံ ဆလိုက်များ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 133				0	my	ဖန်တီးထားသည် - %DATE				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 134				0	my	နောက်ဆုံး အထူးပြုခြင်း - %DATE				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 135				0	my	ကွန်ယက်နေရာ ဝဇ္ဇတ် ရွေးနိုင်ခြင်းများ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 136				0	my	နောက်ခံ ပေါ်လာသော ဂရပ်ဖစ်ပုံ -				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 137				0	my	အိုင်ကွန် အစုံ -				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 138				0	my	အိုင်ကွန် အစုံသည် HTML စီစဉ် ဖွဲ့စည်းမှု ပုံစံတွင် တင်ပြချက်များအတွက် အသုံးပြုထားသည်။				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 139				0	my	HTML အသေးစိတ်လေ့လာဖော်ပြပေးသည့်စနစ်အချက်အလက်များ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +140				0	my	ရွေးပါ...				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +141				0	my	ရွေးပါ...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +142				0	my	<နဂိုတည်ရှိသော နောက်ခံ>				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +143				0	my	FTP ကိုယ်စားလှယ်မှတစ်ဆင့် ပုံနှိပ် ထုတ်ဝေမှု မထောက်ပံ့နိုင်ပါ။				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +144				0	my	<နောက်ခံ ပေါ်လာသော ဂရပ်ဖစ်ပုံ မရှိပါ>				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +145				0	my	<အိုင်ကွန် အစုံ မရှိပါ>				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +146				0	my	The FTP အညွှန်း '%FILENAME' ဖန်တီးနိုင်လိမ့်မည် မဟုတ်ပါ။				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 142				0	my	<နဂိုတည်ရှိသော နောက်ခံ>				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 143				0	my	FTP ကိုယ်စားလှယ်မှတစ်ဆင့် ပုံနှိပ် ထုတ်ဝေမှု မထောက်ပံ့နိုင်ပါ။				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 144				0	my	<နောက်ခံ ပေါ်လာသော ဂရပ်ဖစ်ပုံ မရှိပါ>				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 145				0	my	<အိုင်ကွန် အစုံ မရှိပါ>				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 146				0	my	The FTP အညွှန်း '%FILENAME' ဖန်တီးနိုင်လိမ့်မည် မဟုတ်ပါ။				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +147				0	my	The FTP အညွှန်း '%FILENAME' မတည်ရှိပါ။ \n ယခု အညွှန်း ဖန်တီးပါ?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +148				0	my	Zip ဖိုင် '%FILENAME' ဖန်တီးနိုင်လိမ့်မည် မဟုတ်ပါ - တူညီသော အမည် အညွှန်းတစ်ခု အဆင်သင့် တည်ရှိနေသည်။				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 148				0	my	Zip ဖိုင် '%FILENAME' ဖန်တီးနိုင်လိမ့်မည် မဟုတ်ပါ - တူညီသော အမည် အညွှန်းတစ်ခု အဆင်သင့် တည်ရှိနေသည်။				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +149				0	my	လက်လှမ်းမှီသော အညွှန်း '%FILENAME' ဖန်တီးနိုင်လိမ့်မည် မဟုတ်ပါ။ \nသင့် ရေးသားသော အချက်အလက်များ သွားရောက်ရယူခြင်းကို စစ်ဆေးပေးပါ။				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +150				0	my	လက်လှမ်းမှီသော အညွှန်း '%FILENAME' မတည်ရှိပါ။ \nယခု အညွှန်း ဖန်တီးပါ?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +151				0	my	အရွယ် - %NUMBERKB				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +152				0	my	ဖိုင် ရှာမတွေ့ပါ။ ဖိုင်နေရာသစ်တစ်ခု သတ်မှတ်ရန် ကြိုက်ပါသလား။				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +0				0	my	FTP အချိတ်အဆက်				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +1				0	my	အသုံးပြုသူအမည်-				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +2				0	my	စကားဝှက်-				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +3				0	my	အချိတ်အဆက်				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +4				0	my	၁။ FTP သတင်း အချက်အလက် အချိတ်အဆက်သို့ ဝင်ပါ။				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +5				0	my	⁠~ ဆာဗာ အမည် (သို့) IP လိပ်စာ -				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +6				0	my	၂။ ဆာဗာသို့ချိတ်ဆက်ပါ။				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +7				0	my	၃။ ကွန်ပျူတာနှင့် ဝေးသောနေရာရှိ အညွှန်း တစ်ခု (စိတ်ကြိုက်) ရွေးပါ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 151				0	my	အရွယ် - %NUMBERKB				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 152				0	my	ဖိုင် ရှာမတွေ့ပါ။ ဖိုင်နေရာသစ်တစ်ခု သတ်မှတ်ရန် ကြိုက်ပါသလား။				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 0				0	my	FTP အချိတ်အဆက်				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 1				0	my	အသုံးပြုသူအမည်-				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 2				0	my	စကားဝှက်-				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 3				0	my	အချိတ်အဆက်				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 4				0	my	၁။ FTP သတင်း အချက်အလက် အချိတ်အဆက်သို့ ဝင်ပါ။				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 5				0	my	⁠~ ဆာဗာ အမည် (သို့) IP လိပ်စာ -				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 6				0	my	၂။ ဆာဗာသို့ချိတ်ဆက်ပါ။				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 7				0	my	၃။ ကွန်ပျူတာနှင့် ဝေးသောနေရာရှိ အညွှန်း တစ်ခု (စိတ်ကြိုက်) ရွေးပါ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +8				0	my	...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +9				0	my	လက်ရှိအခြေအနေ အချိတ်အဆက် မသိရပါ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +10				0	my	အချိတ်အဆက် အောင်မြင်စွာ တည်ဆောက်ပြီး ဖြစ်သည်				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +11				0	my	အသုံးပြုသူအမည် (သို့) စကားဝှက် မှားနေသည်				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +12				0	my	ဆာဗာအမည် ဖြေရှင်းနိုင်လိမ့်မည် မဟုတ်ပါ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +13				0	my	လုံလောက်သော အသုံးပြုသူ အခွင့်အရေးများ မရှိပါ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +14				0	my	ဆာဗာသို့ ချိတ်ဆက်နိုင်လိမ့်မည် မဟုတ်ပါ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +15				0	my	မလိုလားသော အမှား				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +16				0	my	FTP ပုံနှိပ် ထုတ်ဝေသော အညွှန်း				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +17				0	my	FTP ဖိုင်တွဲတစ်ခု မဟုတ်ပါ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +18				0	my	ချိတ်ဆက်နေသည်...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +1				0	my	ဝဇ္ဇတ် လုပ်ငန်း အစီအစဉ်				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +2				0	my	ဤလုပ်ငန်းအစီအစဉ် ပုံစံပြားသို့ လက်စွဲစာစောင် ပြောင်းလဲမှုများ ပြုလုပ်ပါ။				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 9				0	my	လက်ရှိအခြေအနေ အချိတ်အဆက် မသိရပါ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 10				0	my	အချိတ်အဆက် အောင်မြင်စွာ တည်ဆောက်ပြီး ဖြစ်သည်				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 11				0	my	အသုံးပြုသူအမည် (သို့) စကားဝှက် မှားနေသည်				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 12				0	my	ဆာဗာအမည် ဖြေရှင်းနိုင်လိမ့်မည် မဟုတ်ပါ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 13				0	my	လုံလောက်သော အသုံးပြုသူ အခွင့်အရေးများ မရှိပါ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 14				0	my	ဆာဗာသို့ ချိတ်ဆက်နိုင်လိမ့်မည် မဟုတ်ပါ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 15				0	my	မလိုလားသော အမှား				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 16				0	my	FTP ပုံနှိပ် ထုတ်ဝေသော အညွှန်း				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 17				0	my	FTP ဖိုင်တွဲတစ်ခု မဟုတ်ပါ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 18				0	my	ချိတ်ဆက်နေသည်...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 1				0	my	ဝဇ္ဇတ် လုပ်ငန်း အစီအစဉ်				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 2				0	my	ဤလုပ်ငန်းအစီအစဉ် ပုံစံပြားသို့ လက်စွဲစာစောင် ပြောင်းလဲမှုများ ပြုလုပ်ပါ။				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +3				0	my	ပုံစံပြား အမည် -				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +6				0	my	လုပ်ငန်း အစီအစဉ်အတွက် စာမျက်နှာ ဒီဇိုင်း ပုံစံ ရွေးပေးပါ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +7				0	my	သင့်လုပ်ငန်းအစီအစဉ် ပုံစံပြားတွင် ပါဝင်ရန် ဆန္ဒရှိသည့် ခေါင်းစဉ်များ ရွေးချယ်ပေးပါ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +8				0	my	ဖြစ်ရပ်အတွက် အထွေထွေ သတင်း အချက်အလက်သို့ ဝင်ပေးပါ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +9				0	my	လုပ်ငန်း အစီအစဉ်အတွက် အချက်များ သတ်မှတ်ပေးပါ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +10				0	my	သင့်လုပ်ငန်းအစီအစဉ် ပုံစံပြားတွင် ပါဝင်ရန် ဆန္ဒရှိသည့် အမည်များ ရွေးချယ်ပေးပါ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 6				0	my	လုပ်ငန်း အစီအစဉ်အတွက် စာမျက်နှာ ဒီဇိုင်း ပုံစံ ရွေးပေးပါ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 7				0	my	သင့်လုပ်ငန်းအစီအစဉ် ပုံစံပြားတွင် ပါဝင်ရန် ဆန္ဒရှိသည့် ခေါင်းစဉ်များ ရွေးချယ်ပေးပါ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 8				0	my	ဖြစ်ရပ်အတွက် အထွေထွေ သတင်း အချက်အလက်သို့ ဝင်ပေးပါ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 9				0	my	လုပ်ငန်း အစီအစဉ်အတွက် အချက်များ သတ်မှတ်ပေးပါ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 10				0	my	သင့်လုပ်ငန်းအစီအစဉ် ပုံစံပြားတွင် ပါဝင်ရန် ဆန္ဒရှိသည့် အမည်များ ရွေးချယ်ပေးပါ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +11				0	my	အမည်တစ်ခု ရွေးပြီး ပုံစံပြား သိမ်းပါ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +12				0	my	အသံသွင်းထားသော မိနစ်အတွက် ပုံစံ ပါဝင်စေပါ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +13				0	my	ဤ ဝဇ္ဇတ် သည် ပုံစံပြား အစီအစဉ်တစ်ခု ဖန်တီးရန် ကူညီသည်။ ပုံစံပြားသည် ၎င်းဖန်တီးရန် လိုအပ်ချိန်တိုင်းတွင် အသုံးပြုနိုင်လိမ့်မည်။				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +14				0	my	အချိန် -				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 12				0	my	အသံသွင်းထားသော မိနစ်အတွက် ပုံစံ ပါဝင်စေပါ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 13				0	my	ဤ ဝဇ္ဇတ် သည် ပုံစံပြား အစီအစဉ်တစ်ခု ဖန်တီးရန် ကူညီသည်။ ပုံစံပြားသည် ၎င်းဖန်တီးရန် လိုအပ်ချိန်တိုင်းတွင် အသုံးပြုနိုင်လိမ့်မည်။				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 14				0	my	အချိန် -				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +15				0	my	အမည် -				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 16				0	my	နေရာ -				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +17				0	my	ချန်လှပ်ထားသောနေရာများသည် ဗလာ နေရာကွက်များတွင် အသုံးပြုလိမ့်မည်။ မကြာမီ စာသားနှင့်အတူ ချန်လှပ်ထားသောနေရာများ အစားထိုင်းနိုင်လိမ့်မည်။				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 17				0	my	ချန်လှပ်ထားသောနေရာများသည် ဗလာ နေရာကွက်များတွင် အသုံးပြုလိမ့်မည်။ မကြာမီ စာသားနှင့်အတူ ချန်လှပ်ထားသောနေရာများ အစားထိုင်းနိုင်လိမ့်မည်။				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +18				0	my	...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +19				0	my	ဤပုံစံပြားမှ လုပ်ငန်း အစီအစဉ် တစ်ခု ဖန်တီးပါ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +20				0	my	ပုံစံပြားပြင်ပရှိ လုပ်ငန်း အစီအစဉ်အသစ် ဖန်တီးရန်၊ သိမ်းထားသော ပုံစံပြား နေရာသို့ သွားပြီး ဖိုင်ကို နှစ်ကြိမ် ကလစ် နှိပ်ပါ။				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +21				0	my	လုပ်ငန်း အစီအစဉ် အချက်				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +22				0	my	တာဝန်သိသော				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +23				0	my	သက်တမ်း				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 19				0	my	ဤပုံစံပြားမှ လုပ်ငန်း အစီအစဉ် တစ်ခု ဖန်တီးပါ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 20				0	my	ပုံစံပြားပြင်ပရှိ လုပ်ငန်း အစီအစဉ်အသစ် ဖန်တီးရန်၊ သိမ်းထားသော ပုံစံပြား နေရာသို့ သွားပြီး ဖိုင်ကို နှစ်ကြိမ် ကလစ် နှိပ်ပါ။				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 21				0	my	လုပ်ငန်း အစီအစဉ် အချက်				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 22				0	my	တာဝန်သိသော				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 23				0	my	သက်တမ်း				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +24				0	my	အားဖြင့် ခေါ်သည့် အစည်းအဝေး				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +25				0	my	ဥက္ကဌ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +26				0	my	မိနစ် ထိန်းသူ				2002-02-02 02:02:02
@@ -4650,30 +4650,30 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +27
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +28				0	my	တက်ရောက်သော ပရိသတ်များ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +29				0	my	လေ့လာသူများ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +30				0	my	ဝန်ထမ်းရေးရာဌာန				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +31				0	my	လုပ်ငန်း အစီအစဉ် ပုံစံပြားသည် ရွေးချယ်ထားသည့် လူများ၏ အမည်များအတွက် ချန်လှပ်ထားသော နေရာများ ပါဝင်လိမ့်မည်။ ပုံစံပြားမှ လုပ်ငန်း အစီအစဉ် တစ်ခု ဖန်တီးသောအခါ၊ သင့်တော်သော အမည်များနှင့်အတူ ဤချန်လှပ်ထားသော နေရာ အစားထိုးနိုင်လိမ့်မည်။				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 31				0	my	လုပ်ငန်း အစီအစဉ် ပုံစံပြားသည် ရွေးချယ်ထားသည့် လူများ၏ အမည်များအတွက် ချန်လှပ်ထားသော နေရာများ ပါဝင်လိမ့်မည်။ ပုံစံပြားမှ လုပ်ငန်း အစီအစဉ် တစ်ခု ဖန်တီးသောအခါ၊ သင့်တော်သော အမည်များနှင့်အတူ ဤချန်လှပ်ထားသော နေရာ အစားထိုးနိုင်လိမ့်မည်။				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +32				0	my	အစည်းအဝေးပုံစံ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +33				0	my	ဖတ်ပေးပါ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +34				0	my	သယ်ဆောင်ပေးပါ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +35				0	my	မှတ်ချက်များ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +36				0	my	လုပ်ငန်း အစီအစဉ် ပုံစံပြားသည် ရွေးချယ်ထားသည့် အချက်များအတွက် ချန်လှပ်ထားသော နေရာများ ပါဝင်လိမ့်မည်။ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 36				0	my	လုပ်ငန်း အစီအစဉ် ပုံစံပြားသည် ရွေးချယ်ထားသည့် အချက်များအတွက် ချန်လှပ်ထားသော နေရာများ ပါဝင်လိမ့်မည်။ 				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +38				0	my	ရက်စွဲ-				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +39				0	my	ဤ ဝဇ္ဇတ် သည် တူညီသော အဆင်အပြင်နှင့် ရွေးနိုင်ခြင်းများနှင့်အတူ လုပ်ငန်း အစီအစဉ် ပေါင်းစုံ ဖန်တီးရန် အလုပ်လုပ်နိုင်သည့် လုပ်ငန်း အစီအစဉ်တစ်ခုကို ဖန်တီးသည်။				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +40				0	my	စာမျက်နှာ ဒီဇိုင်းပုံစံ -				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +41				0	my	myAgendaTemplate.stw				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +42				0	my	ကျွန်ုပ် လုပ်ငန်း အစီအစဉ် ပုံစံပြား (My Agenda Template)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +43				0	my	လုပ်ငန်း အစီအစဉ် ပုံစံပြားသိမ်းထားစဉ် မလိုလားသောအမှားတစ်ခု ဖြစ်ပွားသည်။				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +44				0	my	အမည်				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +45				0	my	ရက်စွဲ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +46				0	my	အချိန်				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 39				0	my	ဤ ဝဇ္ဇတ် သည် တူညီသော အဆင်အပြင်နှင့် ရွေးနိုင်ခြင်းများနှင့်အတူ လုပ်ငန်း အစီအစဉ် ပေါင်းစုံ ဖန်တီးရန် အလုပ်လုပ်နိုင်သည့် လုပ်ငန်း အစီအစဉ်တစ်ခုကို ဖန်တီးသည်။				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 40				0	my	စာမျက်နှာ ဒီဇိုင်းပုံစံ -				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 41				0	my	myAgendaTemplate.stw				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 42				0	my	ကျွန်ုပ် လုပ်ငန်း အစီအစဉ် ပုံစံပြား (My Agenda Template)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 43				0	my	လုပ်ငန်း အစီအစဉ် ပုံစံပြားသိမ်းထားစဉ် မလိုလားသောအမှားတစ်ခု ဖြစ်ပွားသည်။				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 44				0	my	အမည်				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 45				0	my	ရက်စွဲ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 46				0	my	အချိန်				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 47				0	my	နေရာ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +48				0	my	ဤစာသား အစားထိုးရန် ကလစ် နှိပ်ပါ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 48				0	my	ဤစာသား အစားထိုးရန် ကလစ် နှိပ်ပါ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +50				0	my	စာမျက်နှာ ဒီဇိုင်းပုံစံ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +51				0	my	အထွေထွေ သတင်း အချက်အလက်				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +52				0	my	ပါဝင်ရန် ခေါင်းစဉ်များ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +53				0	my	အမည်များ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +54				0	my	လုပ်ငန်း အစီအစဉ် အချက်များ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 51				0	my	အထွေထွေ သတင်း အချက်အလက်				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 52				0	my	ပါဝင်ရန် ခေါင်းစဉ်များ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 53				0	my	အမည်များ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 54				0	my	လုပ်ငန်း အစီအစဉ် အချက်များ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +55				0	my	အမည်နှင့် နေရာ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +56				0	my	လုပ်ငန်း အစီအစဉ် ပုံစံပြား ဖွင့်နေစဉ် မလိုလားသောအမှားတစ်ခု ဖြစ်ပွားသည်။				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 56				0	my	လုပ်ငန်း အစီအစဉ် ပုံစံပြား ဖွင့်နေစဉ် မလိုလားသောအမှားတစ်ခု ဖြစ်ပွားသည်။				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +57				0	my	အစည်းအဝေးပုံစံ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +58				0	my	သယ်ဆောင်ပေးပါ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +59				0	my	ဖတ်ပေးပါ				2002-02-02 02:02:02
@@ -4685,10 +4685,10 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +64
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +65				0	my	သဘာပတိ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +66				0	my	လေ့လာသူများ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +67				0	my	ဝန်ထမ်းရေးရာဌာန				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +68				0	my	ထည့်သွင်းပါ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +69				0	my	ဖယ်ရှားပါ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +70				0	my	အပေါ်သို့ ရွှေ့ပြောင်းပါ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +71				0	my	အောက်သို့ ရွှေ့ပြောင်းပါ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 68				0	my	ထည့်သွင်းပါ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 69				0	my	ဖယ်ရှားပါ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 70				0	my	အပေါ်သို့ ရွှေ့ပြောင်းပါ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 71				0	my	အောက်သို့ ရွှေ့ပြောင်းပါ				2002-02-02 02:02:02
 wizards	source\schedule\schedule.src	0	string	dlgCalTitle				0	my	%PRODUCTNAME ပြက္ခဒိန်				2002-02-02 02:02:02
 wizards	source\schedule\schedule.src	0	string	dlgCalTitleBack				0	my	နောက်သို့				2002-02-02 02:02:02
 wizards	source\schedule\schedule.src	0	string	dlgCalTitleOwnData				0	my	ကိုယ်ရေး အချက်အလက်များ				2002-02-02 02:02:02
@@ -11280,7 +11280,7 @@ sw	source\ui\docvw\docvw.src	0	string	STR_REDLINE_FORMAT				0	my	စီစဉ်
 sw	source\ui\docvw\docvw.src	0	string	STR_REDLINE_TABLE				0	my	ဇယား ပြောင်းသည်				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_REDLINE_FMTCOLL				0	my	လက်တွေ့အသုံးချသော စာပိုဒ် စတိုင်ပုံစံများ				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_ENDNOTE				0	my	အဆုံးသတ် မှတ်ချက်-				2002-02-02 02:02:02
-sw	source\ui\docvw\docvw.src	0	string	STR_FTNNOTE				0	my	အောက်ခြေ မှတ်ချက်-				2002-02-02 02:02:02
+sw	source\ui\docvw\docvw.src	0	string	STR_FOOTNOTE				0	my	အောက်ခြေ မှတ်ချက်-				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	infobox	MSG_READONLY_CONTENT				0	my	မာတိကာ ဖတ်ရုံဆိုလျှင် မပြောင်းနိုင်ပါ။\nမပြုပြင်ခြင်းများ လက်ခံလိမ့်မည်				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_TABLE_COL_ADJUST				0	my	ကော်လံအကန့် ဇယား ညှိပါ				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_TABLE_ROW_ADJUST				0	my	အတန်းလိုက် ဇယား ညှိပါ				2002-02-02 02:02:02
@@ -11387,11 +11387,11 @@ sw	source\ui\ribbar\inputwin.src	0	string	STR_TBL_FORMULA				0	my	စာသာ�
 sw	source\ui\ribbar\inputwin.src	0	toolboxitem	TB_INPUT	FN_FORMULA_CALC	HID_TBX_FORMULA_CALC		0	my	ပုံသေနည်း				2002-02-02 02:02:02
 sw	source\ui\ribbar\inputwin.src	0	toolboxitem	TB_INPUT	FN_FORMULA_CANCEL	HID_TBX_FORMULA_CANCEL		0	my	ရုတ်သိမ်းပါ				2002-02-02 02:02:02
 sw	source\ui\ribbar\inputwin.src	0	toolboxitem	TB_INPUT	FN_FORMULA_APPLY	HID_TBX_FORMULA_APPLY		0	my	လက်တွေ့အသုံးချပါ				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_PAGE			0	my	စာမျက်နှာသို့				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_PARAGRAPH			0	my	စာပိုဒ်သို့				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_AT_CHAR			0	my	အက္ခရာများသို့				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_CHAR			0	my	အက္ခရာများအဖြစ်				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_FRAME			0	my	ဘောင်သို့				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_PAGE			0	my	စာမျက်နှာသို့				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_PARAGRAPH			0	my	စာပိုဒ်သို့				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_AT_CHAR			0	my	အက္ခရာများသို့				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_CHAR			0	my	အက္ခရာများအဖြစ်				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_FRAME			0	my	ဘောင်သို့				2002-02-02 02:02:02
 sw	source\ui\wrtsh\wrtsh.src	0	string	STR_DDEERROR_APP1				0	my	အသုံးချပရိုဂရမ် [				2002-02-02 02:02:02
 sw	source\ui\wrtsh\wrtsh.src	0	string	STR_DDEERROR_APP2				0	my	] တုန့်ပြန်မှုမရှိပါ။				2002-02-02 02:02:02
 sw	source\ui\wrtsh\wrtsh.src	0	string	STR_DDEERROR_DATA1				0	my	အချက်အလက်များအတွက် [				2002-02-02 02:02:02
@@ -11812,12 +11812,12 @@ sw	source\ui\app\mn.src	0	menuitem	MN_WRAP_DRAW.MN_WRAP	FN_FRAME_WRAPTHRU_TRANSP
 sw	source\ui\app\mn.src	0	menuitem	MN_WRAP_DRAW.MN_WRAP	FN_WRAP_ANCHOR_ONLY	CMD_FN_WRAP_ANCHOR_ONLY		0	my	~ပထမဆုံးစာပိုဒ်				2002-02-02 02:02:02
 sw	source\ui\app\mn.src	0	menuitem	MN_WRAP_DRAW.MN_WRAP	FN_DRAW_WRAP_DLG	CMD_FN_DRAW_WRAP_DLG		0	my	~တည်းဖြတ်ပါ...				2002-02-02 02:02:02
 sw	source\ui\app\mn.src	0	menuitem	MN_WRAP_DRAW	MN_WRAP			0	my	~စာသားများနယ်ပယ်တစ်ခုသို့ဝင်နေစေခြင်း				2002-02-02 02:02:02
-sw	source\ui\app\mn.src	0	menuitem	MN_AT_FRAME	FN_TOOL_ANKER_FRAME	CMD_FN_TOOL_ANKER_FRAME		0	my	ဘောင် သို့				2002-02-02 02:02:02
-sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANKER	FN_TOOL_ANKER_PAGE	CMD_FN_TOOL_ANKER_PAGE		0	my	စာမျက်နှာသို့				2002-02-02 02:02:02
-sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANKER	FN_TOOL_ANKER_PARAGRAPH	CMD_FN_TOOL_ANKER_PARAGRAPH		0	my	စာပိုဒ်သို့				2002-02-02 02:02:02
-sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANKER	FN_TOOL_ANKER_AT_CHAR	CMD_FN_TOOL_ANKER_AT_CHAR		0	my	အက္ခရာများသို့				2002-02-02 02:02:02
-sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANKER	FN_TOOL_ANKER_CHAR	CMD_FN_TOOL_ANKER_CHAR		0	my	အက္ခရာများကဲ့သို့				2002-02-02 02:02:02
-sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR	FN_TOOL_ANKER	CMD_FN_TOOL_ANKER		0	my	ကျောက်ဆူး				2002-02-02 02:02:02
+sw	source\ui\app\mn.src	0	menuitem	MN_AT_FRAME	FN_TOOL_ANCHOR_FRAME	CMD_FN_TOOL_ANCHOR_FRAME		0	my	ဘောင် သို့				2002-02-02 02:02:02
+sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANCHOR	FN_TOOL_ANCHOR_PAGE	CMD_FN_TOOL_ANCHOR_PAGE		0	my	စာမျက်နှာသို့				2002-02-02 02:02:02
+sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANCHOR	FN_TOOL_ANCHOR_PARAGRAPH	CMD_FN_TOOL_ANCHOR_PARAGRAPH		0	my	စာပိုဒ်သို့				2002-02-02 02:02:02
+sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANCHOR	FN_TOOL_ANCHOR_AT_CHAR	CMD_FN_TOOL_ANCHOR_AT_CHAR		0	my	အက္ခရာများသို့				2002-02-02 02:02:02
+sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANCHOR	FN_TOOL_ANCHOR_CHAR	CMD_FN_TOOL_ANCHOR_CHAR		0	my	အက္ခရာများကဲ့သို့				2002-02-02 02:02:02
+sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR	FN_TOOL_ANCHOR	CMD_FN_TOOL_ANCHOR		0	my	ကျောက်ဆူး				2002-02-02 02:02:02
 sw	source\ui\app\mn.src	0	string	MN_DRAWFORM_POPUPMENU				0	my	ထိန်းချုပ်မှု				2002-02-02 02:02:02
 sw	source\ui\app\mn.src	0	string	MN_DRWTXT_POPUPMENU				0	my	အရာဝတ္ထု စာသား ရေးဆွဲပါ				2002-02-02 02:02:02
 sw	source\ui\app\mn.src	0	menuitem	MN_REDCOMMENT	FN_DELETE_COMMENT	CMD_FN_DELETE_COMMENT		0	my	မှတ်စုပြောင်းလဲမှုများဖျက်ပါ				2002-02-02 02:02:02
@@ -11914,7 +11914,7 @@ sw	source\ui\app\app.src	0	string	STR_WRITER_DOCUMENT_FULLTYPE				0	my	%PRODUCTN
 sw	source\ui\app\app.src	0	string	STR_CANTOPEN				0	my	မှတ်တမ်းမှတ်ရာ မဖွင့်နိုင်ပါ။				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_CANTCREATE				0	my	မှတ်တမ်းမှတ်ရာ မဖန်တီးနိုင်ပါ။				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_DLLNOTFOUND				0	my	စစ်ထုတ်ကိရိယာ ရှာမတွေ့ပါ။				2002-02-02 02:02:02
-sw	source\ui\app\app.src	0	string	STR_UNBENANNT				0	my	ခေါင်းစဉ်မဲ့				2002-02-02 02:02:02
+sw	source\ui\app\app.src	0	string	STR_UNTITLED				0	my	ခေါင်းစဉ်မဲ့				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_LOAD_GLOBAL_DOC				0	my	အမည် နှင့် ပင်မ မှတ်တမ်းမှတ်ရာ၏ လမ်းကြောင်း				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_LOAD_HTML_DOC				0	my	အမည် နှင့် HTML မှတ်တမ်းမှတ်ရာ၏ လမ်းကြောင်း				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	infobox	MSG_ERROR_SEND_MAIL				0	my	အီးမေးလ်ပေးပို့မှုအမှား။				2002-02-02 02:02:02

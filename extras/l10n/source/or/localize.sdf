@@ -4258,8 +4258,8 @@ formula	source\core\resource\core_resource.src	0	string	RID_STRLIST_FUNCTION_NAM
 formula	source\core\resource\core_resource.src	0	string	RID_STRLIST_FUNCTION_NAMES	SC_OPCODE_ERROR_NA			0	or	#N/A				2002-02-02 02:02:02
 formula	source\ui\dlg\parawin.src	0	#define	RB_ARGBLOCK( y )				13	or	-		ମନୋନିତକର		2002-02-02 02:02:02
 formula	source\ui\dlg\parawin.src	0	fixedtext	RID_FORMULATAB_PARAMETER	FT_EDITDESC			198	or	କାର୍ୟ୍ଯ				2002-02-02 02:02:02
-formula	source\ui\dlg\parawin.src	0	string	RID_FORMULATAB_PARAMETER	STR_OPTIONAL			8	or	 (ବୈକଳ୍ପିକ)				2002-02-02 02:02:02
-formula	source\ui\dlg\parawin.src	0	string	RID_FORMULATAB_PARAMETER	STR_REQUIRED			8	or	(ଆବଶ୍ଯକ)				2002-02-02 02:02:02
+formula	source\ui\dlg\parawin.src	0	string	RID_FORMULATAB_PARAMETER.FT_ARG1.FT_ARG2.FT_ARG3.FT_ARG4	STR_OPTIONAL			8	or	 (ବୈକଳ୍ପିକ)				2002-02-02 02:02:02
+formula	source\ui\dlg\parawin.src	0	string	RID_FORMULATAB_PARAMETER.FT_ARG1.FT_ARG2.FT_ARG3.FT_ARG4	STR_REQUIRED			8	or	(ଆବଶ୍ଯକ)				2002-02-02 02:02:02
 formula	source\ui\dlg\formdlgs.src	0	stringlist	RID_FORMULATAB_FUNCTION.LB_CATEGORY	1			0	or	ଶେଷରେ ବ୍ୟବହୃତ				2002-02-02 02:02:02
 formula	source\ui\dlg\formdlgs.src	0	stringlist	RID_FORMULATAB_FUNCTION.LB_CATEGORY	2			0	or	ସମସ୍ତ				2002-02-02 02:02:02
 formula	source\ui\dlg\formdlgs.src	0	fixedtext	RID_FORMULATAB_FUNCTION	FT_CATEGORY			84	or	ଶ୍ରେଣୀବିଭାଗ (~C)				2002-02-02 02:02:02
@@ -4366,8 +4366,8 @@ wizards	source\euro\euro.src	0	string	CURRENCIES + 12				0	or	ସ୍ଲୋଭେ
 wizards	source\euro\euro.src	0	string	CURRENCIES + 13				0	or	କିପ୍ରିୟଟ ପାଉଣ୍ଡ				2002-02-02 02:02:02
 wizards	source\euro\euro.src	0	string	CURRENCIES + 14				0	or	ମାଲଟିଜ ଲିରା				2002-02-02 02:02:02
 wizards	source\euro\euro.src	0	string	CURRENCIES + 15				0	or	ସ୍ଲୋଭାକ କୋରୁନା				2002-02-02 02:02:02
-wizards	source\euro\euro.src	0	string	CURRENCIES + 16				0	or	ଦଲିଲ ପାଇଁ ସେଟହୋଇଥିବା ମୁଦ୍ରା ଗୋଟିଏ ଯୁରୋପିଆନ ମୁଦ୍ରା ନୁହେଁ!				2002-02-02 02:02:02
-wizards	source\euro\euro.src	0	string	CURRENCIES + 17				0	or	ତୁମର କାର୍ୟ୍ଯକରିବା ସିସ୍ଟମ ପାଇଁ ସେଟହୋଇଥିବା ଭାଷା ଗୋଟିଏ ଯୁରୋପିଆନ ମନିଟାରି ଯୁନିଅନର ଭାଷା ନୁହେଁ୤ 				2002-02-02 02:02:02
+wizards	source\euro\euro.src	0	string	CURRENCIES + 21				0	or	ଦଲିଲ ପାଇଁ ସେଟହୋଇଥିବା ମୁଦ୍ରା ଗୋଟିଏ ଯୁରୋପିଆନ ମୁଦ୍ରା ନୁହେଁ!				2002-02-02 02:02:02
+wizards	source\euro\euro.src	0	string	CURRENCIES + 22				0	or	ତୁମର କାର୍ୟ୍ଯକରିବା ସିସ୍ଟମ ପାଇଁ ସେଟହୋଇଥିବା ଭାଷା ଗୋଟିଏ ଯୁରୋପିଆନ ମନିଟାରି ଯୁନିଅନର ଭାଷା ନୁହେଁ୤ 				2002-02-02 02:02:02
 wizards	source\euro\euro.src	0	string	STEP_LASTPAGE				0	or	ପ୍ରଗତି				2002-02-02 02:02:02
 wizards	source\euro\euro.src	0	string	STEP_LASTPAGE + 1				0	or	ପୁର୍ନଦଖଲକରିବା ଦରକାରୀ ଦଲିଲଗୁଡିକ...				2002-02-02 02:02:02
 wizards	source\euro\euro.src	0	string	STEP_LASTPAGE + 2				0	or	ରୂପାନ୍ତରକରିବା ଦଲିଲଗୁଡିକ...				2002-02-02 02:02:02
@@ -4813,77 +4813,77 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_FAXWIZARDROADMAP_START + 2		
 wizards	source\formwizard\dbwizres.src	0	string	RID_FAXWIZARDROADMAP_START + 3				0	or	ପ୍ରେରକ ଏବଂ ପ୍ରାପ୍ତିକର୍ତ୍ତା				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_FAXWIZARDROADMAP_START + 4				0	or	ପାଦଟୀକା				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_FAXWIZARDROADMAP_START + 5				0	or	ନାମ ଏବଂ ସ୍ଥାନ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +1				0	or	ଉଏବ ଉଇଜାର୍ଡ 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +2				0	or	ଇଣ୍ଟରନେଟରେ ଦଲିଲଗୁଡିକ ପ୍ରକାଶନକରିବା ପାଇଁ ଏହି ଉଏବ ଉଇଜାର୍ଡ ତୁମକୁ ସାହାୟ୍ଯ କରିବ।\n\nଏହା ଦଲିଲଗୁଡିକୁ ରୂପାନ୍ତରକରିବ ୟାହାଦ୍ବାରା ଗୋଟିଏ ଉଏବ୍ ବ୍ରାଉଜର ଦ୍ବାରା ୟାହା ଦେଖା ୟାଇପାରିବ। ଆଉମଧ୍ଯ,ଦଲିଲଗୁଡିକୁ ସହଜ ପ୍ରବେଶକରିବା ପାଇଁ ଲିଙ୍କଗୁଡିକ ସହିତ ଏହା ଗୋଟିଏ ଟେବୁଲର ସୂଚୀପତ୍ରଗୁଡିକ ସୃଷ୍ଟି କରିବ। ତୁମ ଉଏବ ସାଇଟର ଲେପନ ଏବଂ ଡିଜାଇନକୁ ବ୍ଯବସ୍ଥା କରିବାକୁ ତୁମକୁ ଏହି ଉଏବ ଉଇଜାର୍ଡ ମଧ୍ଯ ସ୍ବୀକୃତ ଦେବ।\n\nଅପଟୁଡେଟ ଉଏବରେ ତୁମ ପ୍ରକାଶିତ ଦଲିଲଗୁଡିକୁ ତୁମେ ରଖିବାକୁ ୟୋଗ୍ଯହେବ ଏବଂ ୟେକୈଣସି ସମଯରେ ଦଲିଲଗୁଡିକ ମିଶାଅ କିମ୍ବା ହଟାଅ।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +4				0	or	ବିଲୋପ କର				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +5				0	or	ଉପକ୍ରମ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +6				0	or	ତୁମେ ପ୍ରକାଶ କରିବାକୁ ଚାହୁଁଥିବା ଦଲିଲଗୁଡିକ ମନୋନୀତ କର				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +8				0	or	ଦଲିଲ ସୂଚନା				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +9				0	or	ଶୀର୍ଷକ:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +10				0	or	ସାରାଶଂ:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +11				0	or	ଲେଖକ:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +12				0	or	ଫାଇଲ ଫର୍ମାଟକୁ ରତ୍ପାନୀ କର:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +13				0	or	ତୁମ ଉଏବ ସାଇଟ ପାଇଁ ସାଧାରଣ ସୂଚନା ପ୍ରବେଶ କର				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 1				0	or	ଉଏବ ଉଇଜାର୍ଡ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 2				0	or	ଇଣ୍ଟରନେଟରେ ଦଲିଲଗୁଡିକ ପ୍ରକାଶନକରିବା ପାଇଁ ଏହି ଉଏବ ଉଇଜାର୍ଡ ତୁମକୁ ସାହାୟ୍ଯ କରିବ।\n\nଏହା ଦଲିଲଗୁଡିକୁ ରୂପାନ୍ତରକରିବ ୟାହାଦ୍ବାରା ଗୋଟିଏ ଉଏବ୍ ବ୍ରାଉଜର ଦ୍ବାରା ୟାହା ଦେଖା ୟାଇପାରିବ। ଆଉମଧ୍ଯ,ଦଲିଲଗୁଡିକୁ ସହଜ ପ୍ରବେଶକରିବା ପାଇଁ ଲିଙ୍କଗୁଡିକ ସହିତ ଏହା ଗୋଟିଏ ଟେବୁଲର ସୂଚୀପତ୍ରଗୁଡିକ ସୃଷ୍ଟି କରିବ। ତୁମ ଉଏବ ସାଇଟର ଲେପନ ଏବଂ ଡିଜାଇନକୁ ବ୍ଯବସ୍ଥା କରିବାକୁ ତୁମକୁ ଏହି ଉଏବ ଉଇଜାର୍ଡ ମଧ୍ଯ ସ୍ବୀକୃତ ଦେବ।\n\nଅପଟୁଡେଟ ଉଏବରେ ତୁମ ପ୍ରକାଶିତ ଦଲିଲଗୁଡିକୁ ତୁମେ ରଖିବାକୁ ୟୋଗ୍ଯହେବ ଏବଂ ୟେକୈଣସି ସମଯରେ ଦଲିଲଗୁଡିକ ମିଶାଅ କିମ୍ବା ହଟାଅ।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 4				0	or	ବିଲୋପ କର				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 5				0	or	ଉପକ୍ରମ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 6				0	or	ତୁମେ ପ୍ରକାଶ କରିବାକୁ ଚାହୁଁଥିବା ଦଲିଲଗୁଡିକ ମନୋନୀତ କର				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 8				0	or	ଦଲିଲ ସୂଚନା				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 9				0	or	ଶୀର୍ଷକ:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 10				0	or	ସାରାଶଂ:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 11				0	or	ଲେଖକ:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 12				0	or	ଫାଇଲ ଫର୍ମାଟକୁ ରତ୍ପାନୀ କର:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 13				0	or	ତୁମ ଉଏବ ସାଇଟ ପାଇଁ ସାଧାରଣ ସୂଚନା ପ୍ରବେଶ କର				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +14				0	or	ଶୀର୍ଷକ:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +16				0	or	ବର୍ଣ୍ଣନା				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +18				0	or	ସୃଷ୍ଟି କରାହୋଇଥିବା:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +20				0	or	ଇ-ମେଲ:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +21				0	or	ପ୍ରତିଲିପିସ୍ବତ୍ତ ନୋଟିସ:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +22				0	or	ପରିବର୍ତ୍ତନ କରାହୋଇଥିବା:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +24				0	or	ପୂର୍ବଦୃଶ୍ଯ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +25				0	or	ତୁମ ଉଏବ ସାଇଟକୁ ତୁମେ ପ୍ରକାଶ କରିବାକୁ ଚାହୁଁଛ କି?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +26				0	or	ନୂଆ ଉଏବ୍ସାଇଟ ପ୍ରକାଶ କର:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +27				0	or	ଗୋଟିଏ ସ୍ଥାନୀଯ ଫୋଲଡରକୁ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 16				0	or	ବର୍ଣ୍ଣନା				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 18				0	or	ସୃଷ୍ଟି କରାହୋଇଥିବା:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 20				0	or	ଇ-ମେଲ:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 21				0	or	ପ୍ରତିଲିପିସ୍ବତ୍ତ ନୋଟିସ:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 22				0	or	ପରିବର୍ତ୍ତନ କରାହୋଇଥିବା:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 24				0	or	ପୂର୍ବଦୃଶ୍ଯ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 25				0	or	ତୁମ ଉଏବ ସାଇଟକୁ ତୁମେ ପ୍ରକାଶ କରିବାକୁ ଚାହୁଁଛ କି?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 26				0	or	ନୂଆ ଉଏବ୍ସାଇଟ ପ୍ରକାଶ କର:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 27				0	or	ଗୋଟିଏ ସ୍ଥାନୀଯ ଫୋଲଡରକୁ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +28				0	or	...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +29				0	or	ଗୋଟିଏ ଉଏବ୍ ସରବର via FTPକୁ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +31				0	or	କନଫିଗର...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +32				0	or	ଗୋଟିଏ  ZIP ଆର୍ଚିଭକୁ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 29				0	or	ଗୋଟିଏ ଉଏବ୍ ସରବର via FTPକୁ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 31				0	or	କନଫିଗର...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 32				0	or	ଗୋଟିଏ  ZIP ଆର୍ଚିଭକୁ 				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +33				0	or	...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +34				0	or	ସେଟିଙ୍ଗଗୁଡିକ ସଞ୍ଚଯ କର (ସୁପାରିଶ ହୋଇଥିବା)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +35				0	or	ପରି ସଞ୍ଚଯ କର				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +36				0	or	ଉଏବ ଉଇଜାର୍ଡ ପାଇଁ ସେଟିଙ୍ଗଗୁଡିକ ବାଛ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +37				0	or	ଉଏବ ସାଇଟ ସୂଚୀପତ୍ରଗୁଡିକ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +38				0	or	ମିଶାଅ...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +39				0	or	ହଟାଅ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +40				0	or	ତୁମ ଉଏବ ସାଇଟର ଟେବୁଲର ସୂଚୀପତ୍ରଗୁଡିକ ପାଇଁ ଗୋଟିଏ ଲେପନ ବାଛ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +41				0	or	ଟେବୁଲର ସୂଚୀପତ୍ର ପୃଷ୍ଠା ପାଇଁ ଗୋଟିଏ ଶୈଳୀ ମନୋନୀତ କର				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +42				0	or	ଶୈଳୀ:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +48				0	or	ଲେପନଗୁଡିକ:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +50				0	or	ବର୍ଣ୍ଣନା				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +51				0	or	ଲେଖକ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +52				0	or	ସୃଷ୍ଟିକରିବା ତାରିଖ 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +53				0	or	ଶେଷ ପରିବର୍ତ୍ତନ ତାରିଖ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +54				0	or	ଫାଇଲ ନାମ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +55				0	or	ଫାଇଲ ଫର୍ମାଟ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +56				0	or	ଫାଇଲ ଫର୍ମାଟ ଆଇକନ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +57				0	or	ପୃଷ୍ଠାଗୁଡିକର ସଂଖ୍ଯା				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +58				0	or	KBରେ ଆକାର				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +59				0	or	ତୁମ ବ୍ରାଉଜରରେ ଗୋଟିଏ ପୂର୍ବଦୃଶ୍ଯ ଦେଖିବାକୁ 'ପୂର୍ବଦୃଶ୍ଯ' କ୍ଲିକ୍ କର:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +60				0	or	ମନୋନୀତ ଲେପନ ବ୍ଯବସ୍ଥା କର				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +61				0	or	ଟେବୁଲର ସୂଚୀପତ୍ରଗୁଡିକରେ ପ୍ରତ୍ଯେକ ଦଲିଲ ପାଇଁ ନିମ୍ନ ସୂଚନା ଅର୍ନ୍ତଭୁକ୍ତ କର:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +62				0	or	ସ୍କ୍ରିନ ବିଶ୍ଳେଷଣ ପାଇଁ ଲେପନ ଅପଟିମାଇଜ କର:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +64				0	or	୬୪୦x୪୮୦				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +65				0	or	୮୦୦x୬୦୦				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +66				0	or	୧୦୨୪x୭୬୮				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +70				0	or	ତୁମର ଉଏବ ସାଇଟ ସୃଷ୍ଟିକରିବା				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +71				0	or	%START - %END/%TOTAL				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +72				0	or	ମୋରଉଏବ୍ସାଇଟ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +73				0	or	FTP ଲକ୍ଷ୍ଯ '%FILENAME' ଗୋଟିଏ ଫାଇଲ ଅଟେ।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +74				0	or	ସ୍ଥାନୀଯ ଲକ୍ଷ୍ଯ  '%FILENAME' ଗୋଟିଏ ଫାଇଲ ଅଟେ।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +75				0	or	ZIP ଲକ୍ଷ୍ଯ  '%FILENAME' ପୂର୍ବରୁ ଅଛି। ତୁମେ ରହିଥିବା ଲକ୍ଷ୍ଯକୁ ପୁନଃଲିଖନ କରିବାକୁ ଚାହୁଁଛ କି? 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +76				0	or	FTP ଲକ୍ଷ୍ଯ ବିବରଣୀପଞ୍ଜିକା '%FILENAME' ଶୂନ୍ଯ ନାହିଁ।କେତେକ ଫାଇଲଗୁଡିକ ପୁନଃଲିଖନ ହୋଇପାରେ। ତୁମେ ଚାଲୁ ରଖିବାକୁ ଚାହୁଁଛ କି?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +77				0	or	ସ୍ଥାନୀଯ ଲକ୍ଷ୍ଯ ବିବରଣୀପଞ୍ଜିକା '%FILENAME' ଶୂନ୍ଯ ନାହିଁ।କେତେକ ଫାଇଲଗୁଡିକ ପୁନଃଲିଖନ ହୋଇପାରେ। ତୁମେ ଚାଲୁ ରଖିବାକୁ ଚାହୁଁଛ କି?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +78				0	or	ନିମ୍ନ ନାମ ତଳେ ସେଟିଙ୍ଗଗୁଡିକ ପୂର୍ବରୁ ଅଛି। ତୁମେ ରହିଥିବା ସେଟିଙ୍ଗଗୁଡିକ ପୁନଃଲିଖନକରିବାକୁ ଚାହୁଁଛ କି? 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +79				0	or	ଦଲିଲଗୁଡିକ ରତ୍ପାନୀକରୁଛି...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +80				0	or	ରତ୍ପାନୀ ପ୍ରସ୍ତୁତକରୁଛି...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +81				0	or	ଲେପନ ଫାଇଲଗୁଡିକ ନକଲକରୁଛି...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +82				0	or	ସୂଚୀପତ୍ରଗୁଡିକର ଟେବୁଲ ସୃଷ୍ଟି ପ୍ରସ୍ତୁତକରୁଛି...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +83				0	or	ସୂଚୀପତ୍ରଗୁଡିକର ଟେବୁଲ ସୃଷ୍ଟିକରୁଛି...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +84				0	or	ଆରମ୍ଭକରୁଛି...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +86				0	or	ପ୍ରକାଶନକରିବାକୁ ପ୍ରସ୍ତୁତକରୁଛି...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +87				0	or	ସ୍ଥାନୀଯ ବିବରଣୀପଞ୍ଜିକାକୁ ପ୍ରକାଶନକରୁଛି...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +88				0	or	ଗୋଟିଏ FTP ଗନ୍ତବ୍ଯସ୍ଥଳକୁ ପ୍ରକାଶନକରୁଛି...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +89				0	or	ଗୋଟିଏ  ZIP ଆର୍ଚିଭକୁ ପ୍ରକାଶନକରୁଛି...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 34				0	or	ସେଟିଙ୍ଗଗୁଡିକ ସଞ୍ଚଯ କର (ସୁପାରିଶ ହୋଇଥିବା)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 35				0	or	ପରି ସଞ୍ଚଯ କର				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 36				0	or	ଉଏବ ଉଇଜାର୍ଡ ପାଇଁ ସେଟିଙ୍ଗଗୁଡିକ ବାଛ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 37				0	or	ଉଏବ ସାଇଟ ସୂଚୀପତ୍ରଗୁଡିକ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 38				0	or	ମିଶାଅ...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 39				0	or	ହଟାଅ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 40				0	or	ତୁମ ଉଏବ ସାଇଟର ଟେବୁଲର ସୂଚୀପତ୍ରଗୁଡିକ ପାଇଁ ଗୋଟିଏ ଲେପନ ବାଛ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 41				0	or	ଟେବୁଲର ସୂଚୀପତ୍ର ପୃଷ୍ଠା ପାଇଁ ଗୋଟିଏ ଶୈଳୀ ମନୋନୀତ କର				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 42				0	or	ଶୈଳୀ:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 48				0	or	ଲେପନଗୁଡିକ:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 50				0	or	ବର୍ଣ୍ଣନା				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 51				0	or	ଲେଖକ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 52				0	or	ସୃଷ୍ଟିକରିବା ତାରିଖ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 53				0	or	ଶେଷ ପରିବର୍ତ୍ତନ ତାରିଖ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 54				0	or	ଫାଇଲ ନାମ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 55				0	or	ଫାଇଲ ଫର୍ମାଟ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 56				0	or	ଫାଇଲ ଫର୍ମାଟ ଆଇକନ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 57				0	or	ପୃଷ୍ଠାଗୁଡିକର ସଂଖ୍ଯା				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 58				0	or	KBରେ ଆକାର				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 59				0	or	ତୁମ ବ୍ରାଉଜରରେ ଗୋଟିଏ ପୂର୍ବଦୃଶ୍ଯ ଦେଖିବାକୁ 'ପୂର୍ବଦୃଶ୍ଯ' କ୍ଲିକ୍ କର:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 60				0	or	ମନୋନୀତ ଲେପନ ବ୍ଯବସ୍ଥା କର				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 61				0	or	ଟେବୁଲର ସୂଚୀପତ୍ରଗୁଡିକରେ ପ୍ରତ୍ଯେକ ଦଲିଲ ପାଇଁ ନିମ୍ନ ସୂଚନା ଅର୍ନ୍ତଭୁକ୍ତ କର:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 62				0	or	ସ୍କ୍ରିନ ବିଶ୍ଳେଷଣ ପାଇଁ ଲେପନ ଅପଟିମାଇଜ କର:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 64				0	or	୬୪୦x୪୮୦				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 65				0	or	୮୦୦x୬୦୦				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 66				0	or	୧୦୨୪x୭୬୮				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 70				0	or	ତୁମର ଉଏବ ସାଇଟ ସୃଷ୍ଟିକରିବା				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 71				0	or	%START - %END/%TOTAL				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 72				0	or	ମୋରଉଏବ୍ସାଇଟ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 73				0	or	FTP ଲକ୍ଷ୍ଯ '%FILENAME' ଗୋଟିଏ ଫାଇଲ ଅଟେ।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 74				0	or	ସ୍ଥାନୀଯ ଲକ୍ଷ୍ଯ  '%FILENAME' ଗୋଟିଏ ଫାଇଲ ଅଟେ।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 75				0	or	ZIP ଲକ୍ଷ୍ଯ  '%FILENAME' ପୂର୍ବରୁ ଅଛି। ତୁମେ ରହିଥିବା ଲକ୍ଷ୍ଯକୁ ପୁନଃଲିଖନ କରିବାକୁ ଚାହୁଁଛ କି? 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 76				0	or	FTP ଲକ୍ଷ୍ଯ ବିବରଣୀପଞ୍ଜିକା '%FILENAME' ଶୂନ୍ଯ ନାହିଁ।କେତେକ ଫାଇଲଗୁଡିକ ପୁନଃଲିଖନ ହୋଇପାରେ। ତୁମେ ଚାଲୁ ରଖିବାକୁ ଚାହୁଁଛ କି?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 77				0	or	ସ୍ଥାନୀଯ ଲକ୍ଷ୍ଯ ବିବରଣୀପଞ୍ଜିକା '%FILENAME' ଶୂନ୍ଯ ନାହିଁ।କେତେକ ଫାଇଲଗୁଡିକ ପୁନଃଲିଖନ ହୋଇପାରେ। ତୁମେ ଚାଲୁ ରଖିବାକୁ ଚାହୁଁଛ କି?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 78				0	or	ନିମ୍ନ ନାମ ତଳେ ସେଟିଙ୍ଗଗୁଡିକ ପୂର୍ବରୁ ଅଛି। ତୁମେ ରହିଥିବା ସେଟିଙ୍ଗଗୁଡିକ ପୁନଃଲିଖନକରିବାକୁ ଚାହୁଁଛ କି? 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 79				0	or	ଦଲିଲଗୁଡିକ ରତ୍ପାନୀକରୁଛି...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 80				0	or	ରତ୍ପାନୀ ପ୍ରସ୍ତୁତକରୁଛି...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 81				0	or	ଲେପନ ଫାଇଲଗୁଡିକ ନକଲକରୁଛି...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 82				0	or	ସୂଚୀପତ୍ରଗୁଡିକର ଟେବୁଲ ସୃଷ୍ଟି ପ୍ରସ୍ତୁତକରୁଛି...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 83				0	or	ସୂଚୀପତ୍ରଗୁଡିକର ଟେବୁଲ ସୃଷ୍ଟିକରୁଛି...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 84				0	or	ଆରମ୍ଭକରୁଛି...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 86				0	or	ପ୍ରକାଶନକରିବାକୁ ପ୍ରସ୍ତୁତକରୁଛି...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 87				0	or	ସ୍ଥାନୀଯ ବିବରଣୀପଞ୍ଜିକାକୁ ପ୍ରକାଶନକରୁଛି...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 88				0	or	ଗୋଟିଏ FTP ଗନ୍ତବ୍ଯସ୍ଥଳକୁ ପ୍ରକାଶନକରୁଛି...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 89				0	or	ଗୋଟିଏ  ZIP ଆର୍ଚିଭକୁ ପ୍ରକାଶନକରୁଛି...				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 90				0	or	ଶେଷକରୁଛି...				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 94				0	or	ଲେଖାଚିତ୍ର ଫାଇଲଗୁଡିକ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 95				0	or	ସମସ୍ତ ଫାଇଲ				2002-02-02 02:02:02
@@ -4892,98 +4892,98 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 98		
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 99				0	or	ଗୋଟିଏ ପୃଷ୍ଠଭାଗ ଚିତ୍ର ବାଛ: 				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 100				0	or	ଆଇକନ ସେଟ୍ କର				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 101				0	or	ଗୋଟିଏ ଆଇକନ ସେଟ୍ ବାଛନ୍ତୁ:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +102				0	or	ଅନ୍ଯାନ୍ୟ...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +103				0	or	କିଛି ନାହିଁ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +104				0	or	'%FILENAME': କୁ ତୁମ ଉଏବ୍ ସାଇଟ ସଫଳଭାବରେ ସୃଷ୍ଟି ହୋଇଛି				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +105				0	or	ଗୋଟିଏ ଉଏବ୍  ସାଇଟ ସୃଷ୍ଟିକରିବା ସମଯରେ ଗୋଟିଏ କିମ୍ବା ଅଧିକ ତୃଟି ଘଟିଲା।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +106				0	or	ଟେବୁଲର ସୂଚୀପତ୍ର ପୃଷ୍ଠାଗୁଡିକ ସୃଷ୍ଟିକରିବା ସମଯରେ ଗୋଟିଏ  ତୃଟି ଘଟିଲା।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +107				0	or	ଲେପନ ଫାଇଲଗୁଡିକୁ ନକଲକରିବା ସମଯରେ ଗୋଟିଏ ତୃଟି ଘଟିଲା।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +108				0	or	'%FILENAME' ପାଇଁ ଦଲିଲ ସୂଚନା ଏକତ୍ରକରିବା  ସମଯରେ ଗୋଟିଏ ତୃଟି ଘଟିଲା।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +109				0	or	'%FILENAME' ଦଲିଲକୁ ରତ୍ପାନୀକରିବା ସମଯରେ ଗୋଟିଏ  ତୃଟି ଘଟିଲା।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +110				0	or	'%FILENAME' ରତ୍ପାନୀକରିବା ପାଇଁ ଗୋଟିଏ ଦଲିଲ ସୃଷ୍ଟିକରିବା ସମଯରେ ଗୋଟିଏ ତୃଟି ଘଟିଲା।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +111				0	or	'%FILENAME' ଦଲିଲକୁ ରତ୍ପାନୀକରିବା ସମୟରେ ଗୋଟିଏ ସୁରକ୍ଷା ତୃଟି ଘଟିଲା।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +112				0	or	'%FILENAME' ଦଲିଲକୁ ରତ୍ପାନୀକରିବା ସମଯରେ ଗୋଟିଏ ଇନପୁଟ/ଆଉଟପୁଟ ତୃଟି ଘଟିଲା।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +113				0	or	କ୍ଷଣସ୍ଥାଯୀ ବିବରଣୀପଞ୍ଜିକା ପାଇଁ ମିଡିଆ ଫାଇଲଗୁଡିକ ନକଲକରିବା ସମଯରେ ଗୋଟିଏ ଅଜ୍ଞାତ ତୃଟି ଘଟିଲା। 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +114				0	or	 ନିମ୍ନ ଗନ୍ତବ୍ଯସ୍ଥଳକୁ ଉଏବ୍ ସାଇଟ ନକଲ ହୋଇପାରିବ ନାହିଁ :%URL				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +115				0	or	%ERROR: ଗୋଟିଏ ଅପ୍ରତିକ୍ଷୀତ ତୃଟି ଘଟିଲା।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +116				0	or	'%FILENAME': ଫାଇଲକୁ ଭାଲିଡେଟିଙ୍ଗକରିବା ସମଯରେ ଗୋଟିଏ ଅପ୍ରତିକ୍ଷୀତ ତୃଟି ଘଟିଲା।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +117				0	or	%FILENAME' ଗୋଟିଏ ଫୋଲଡର୍ ଅଟେ।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +118				0	or	ଉଏବ୍ ଉଇଜାର୍ଡ ସେଟିଙ୍ଗଗୁଡିକ ଲୋଡକରୁଛି...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +119				0	or	ଗୋଟିଏ ଅପ୍ରତିକ୍ଷୀତ ତୃଟି ଘଟିଲା।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +120				0	or	ଦଲିଲଗୁଡିକ ଭାଲିଡେଟିଙ୍ଗକରୁଛି...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +121				0	or	ମୋର ଆର୍ଚିଭ 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +122				0	or	ଉପକ୍ରମ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +123				0	or	ଦଲିଲଗୁଡିକ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +124				0	or	ମୂଖ୍ଯ ଲେପନ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +125				0	or	ଲେପନ ପୁଙ୍ଖାନୁପୁଙ୍ଖଗୁଡିକ 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +126				0	or	ଶୈଳୀ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +127				0	or	ଉଏବ୍ ସାଇଟ ସୂଚନା:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +128				0	or	ପୂର୍ବଦୃଶ୍ଯ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +130				0	or	ମନୋନୀତ ହୋଇଥିବା ସେଟିଙ୍ଗଗୁଡିକ ବିଲୋପ ହେବ।\n\nଏହି ସେଟିଙ୍ଗଗୁଡିକ ତୁମେ ନିଶ୍ଚଯ ବିଲୋପ କରିବାକୁ ଚାହୁଁଛ କି?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +131				0	or	%NUMBER ପୃଷ୍ଠଗୁଡିକ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +132				0	or	%NUMBER ସ୍ଲାଇଡଗୁଡିକ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +133				0	or	ସୃଷ୍ଟିହୋଇଥିବା: %DATE				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +134				0	or	ଶେଷ ପରିବର୍ତ୍ତିତ : %DATE				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +135				0	or	ଉଏବ୍ ଉଇଜାର୍ଡ ସେଟିଙ୍ଗଗୁଡିକ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +136				0	or	ପୃଷ୍ଠାଭାଗ ଚିତ୍ର:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +137				0	or	ଆଇକନ ସେଟ କର:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +138				0	or	HTML ଫର୍ମାଟରେ ଉପସ୍ଥାପନାଗୁଡିକ ପାଇଁ ଆଇକନ ସେଟ୍ ଉପୟୋଗ ହୋଇଛି।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +139				0	or	HTML  ମେଟାତଥ୍ଯ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 102				0	or	ଅନ୍ଯାନ୍ୟ...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 103				0	or	କିଛି ନାହିଁ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 104				0	or	'%FILENAME': କୁ ତୁମ ଉଏବ୍ ସାଇଟ ସଫଳଭାବରେ ସୃଷ୍ଟି ହୋଇଛି				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 105				0	or	ଗୋଟିଏ ଉଏବ୍  ସାଇଟ ସୃଷ୍ଟିକରିବା ସମଯରେ ଗୋଟିଏ କିମ୍ବା ଅଧିକ ତୃଟି ଘଟିଲା।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 106				0	or	ଟେବୁଲର ସୂଚୀପତ୍ର ପୃଷ୍ଠାଗୁଡିକ ସୃଷ୍ଟିକରିବା ସମଯରେ ଗୋଟିଏ  ତୃଟି ଘଟିଲା।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 107				0	or	ଲେପନ ଫାଇଲଗୁଡିକୁ ନକଲକରିବା ସମଯରେ ଗୋଟିଏ ତୃଟି ଘଟିଲା।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 108				0	or	'%FILENAME' ପାଇଁ ଦଲିଲ ସୂଚନା ଏକତ୍ରକରିବା  ସମଯରେ ଗୋଟିଏ ତୃଟି ଘଟିଲା।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 109				0	or	'%FILENAME' ଦଲିଲକୁ ରତ୍ପାନୀକରିବା ସମଯରେ ଗୋଟିଏ  ତୃଟି ଘଟିଲା।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 110				0	or	'%FILENAME' ରତ୍ପାନୀକରିବା ପାଇଁ ଗୋଟିଏ ଦଲିଲ ସୃଷ୍ଟିକରିବା ସମଯରେ ଗୋଟିଏ ତୃଟି ଘଟିଲା।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 111				0	or	'%FILENAME' ଦଲିଲକୁ ରତ୍ପାନୀକରିବା ସମୟରେ ଗୋଟିଏ ସୁରକ୍ଷା ତୃଟି ଘଟିଲା।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 112				0	or	'%FILENAME' ଦଲିଲକୁ ରତ୍ପାନୀକରିବା ସମଯରେ ଗୋଟିଏ ଇନପୁଟ/ଆଉଟପୁଟ ତୃଟି ଘଟିଲା।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 113				0	or	କ୍ଷଣସ୍ଥାଯୀ ବିବରଣୀପଞ୍ଜିକା ପାଇଁ ମିଡିଆ ଫାଇଲଗୁଡିକ ନକଲକରିବା ସମଯରେ ଗୋଟିଏ ଅଜ୍ଞାତ ତୃଟି ଘଟିଲା। 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 114				0	or	 ନିମ୍ନ ଗନ୍ତବ୍ଯସ୍ଥଳକୁ ଉଏବ୍ ସାଇଟ ନକଲ ହୋଇପାରିବ ନାହିଁ :%URL				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 115				0	or	%ERROR: ଗୋଟିଏ ଅପ୍ରତିକ୍ଷୀତ ତୃଟି ଘଟିଲା।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 116				0	or	'%FILENAME': ଫାଇଲକୁ ଭାଲିଡେଟିଙ୍ଗକରିବା ସମଯରେ ଗୋଟିଏ ଅପ୍ରତିକ୍ଷୀତ ତୃଟି ଘଟିଲା।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 117				0	or	%FILENAME' ଗୋଟିଏ ଫୋଲଡର୍ ଅଟେ।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 118				0	or	ଉଏବ୍ ଉଇଜାର୍ଡ ସେଟିଙ୍ଗଗୁଡିକ ଲୋଡକରୁଛି...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 119				0	or	ଗୋଟିଏ ଅପ୍ରତିକ୍ଷୀତ ତୃଟି ଘଟିଲା।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 120				0	or	ଦଲିଲଗୁଡିକ ଭାଲିଡେଟିଙ୍ଗକରୁଛି...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 121				0	or	ମୋର ଆର୍ଚିଭ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 122				0	or	ଉପକ୍ରମ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 123				0	or	ଦଲିଲଗୁଡିକ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 124				0	or	ମୂଖ୍ଯ ଲେପନ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 125				0	or	ଲେପନ ପୁଙ୍ଖାନୁପୁଙ୍ଖଗୁଡିକ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 126				0	or	ଶୈଳୀ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 127				0	or	ଉଏବ୍ ସାଇଟ ସୂଚନା:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 128				0	or	ପୂର୍ବଦୃଶ୍ଯ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 130				0	or	ମନୋନୀତ ହୋଇଥିବା ସେଟିଙ୍ଗଗୁଡିକ ବିଲୋପ ହେବ।\n\nଏହି ସେଟିଙ୍ଗଗୁଡିକ ତୁମେ ନିଶ୍ଚଯ ବିଲୋପ କରିବାକୁ ଚାହୁଁଛ କି?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 131				0	or	%NUMBER ପୃଷ୍ଠଗୁଡିକ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 132				0	or	%NUMBER ସ୍ଲାଇଡଗୁଡିକ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 133				0	or	ସୃଷ୍ଟିହୋଇଥିବା: %DATE				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 134				0	or	ଶେଷ ପରିବର୍ତ୍ତିତ : %DATE				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 135				0	or	ଉଏବ୍ ଉଇଜାର୍ଡ ସେଟିଙ୍ଗଗୁଡିକ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 136				0	or	ପୃଷ୍ଠାଭାଗ ଚିତ୍ର:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 137				0	or	ଆଇକନ ସେଟ କର:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 138				0	or	HTML ଫର୍ମାଟରେ ଉପସ୍ଥାପନାଗୁଡିକ ପାଇଁ ଆଇକନ ସେଟ୍ ଉପୟୋଗ ହୋଇଛି।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 139				0	or	HTML  ମେଟାତଥ୍ଯ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +140				0	or	ବାଛ...				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +141				0	or	ବାଛ...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +142				0	or	<ଡିଫଲଟ>				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +143				0	or	ପ୍ରକାଶନକରିବା via FTP ପ୍ରୋକ୍ସି ସମର୍ଥିତ ନୁହେଁ।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +144				0	or	<କୌଣସି ପୃଷ୍ଠଭାଗ ଚିତ୍ର ନାହିଁ>				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +145				0	or	<କୌଣସି ଆଇକନ ସେଟ ନାହିଁ>				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +146				0	or	FTP ବିବରଣୀପଞ୍ଜିକା  '%FILENAME'ସୃଷ୍ଟି ହୋଇ ପାରିବ ନାହିଁ।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 142				0	or	<ଡିଫଲଟ>				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 143				0	or	ପ୍ରକାଶନକରିବା via FTP ପ୍ରୋକ୍ସି ସମର୍ଥିତ ନୁହେଁ।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 144				0	or	<କୌଣସି ପୃଷ୍ଠଭାଗ ଚିତ୍ର ନାହିଁ>				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 145				0	or	<କୌଣସି ଆଇକନ ସେଟ ନାହିଁ>				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 146				0	or	FTP ବିବରଣୀପଞ୍ଜିକା  '%FILENAME'ସୃଷ୍ଟି ହୋଇ ପାରିବ ନାହିଁ।				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +147				0	or	FTP ବିବରଣୀପଞ୍ଜିକା  '%FILENAME' ଉପସ୍ଥିତ ନାହିଁ।\nବର୍ତ୍ତମାନ ବିବରଣୀପଞ୍ଜିକା ସୃଷ୍ଟି କର?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +148				0	or	ଜିପ ଫାଇଲ '%FILENAME' ସୃଷ୍ଟି ହୋଇ ପାରିବ ନାହିଁ: ଗୋଟିଏ ବିବରଣୀପଞ୍ଜିକାର ସମାନ ନାମ ପୂର୍ବରୁ ଅଛି।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 148				0	or	ଜିପ ଫାଇଲ '%FILENAME' ସୃଷ୍ଟି ହୋଇ ପାରିବ ନାହିଁ: ଗୋଟିଏ ବିବରଣୀପଞ୍ଜିକାର ସମାନ ନାମ ପୂର୍ବରୁ ଅଛି।				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +149				0	or	ସ୍ଥାନୀଯ ବିବରଣୀପଞ୍ଜିକା  '%FILENAME' ସୃଷ୍ଟି ହୋଇ ପାରିବ ନାହିଁ।\nବର୍ତ୍ତମାନ ବିବରଣୀପଞ୍ଜିକା ସୃଷ୍ଟି କର?				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +150				0	or	ସ୍ଥାନୀଯ ବିବରଣୀପଞ୍ଜିକା  '%FILENAME' ଉପସ୍ଥିତ ନାହିଁ।\nବର୍ତ୍ତମାନ ବିବରଣୀପଞ୍ଜିକା ସୃଷ୍ଟି କର?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +151				0	or	ଆକାର: %NUMBERKB				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +152				0	or	ଫାଇଲ ମିଳୁନାହିଁ। ଗୋଟିଏ ନୂଆ ଫାଇଲ ସ୍ଥାନ ନିର୍ଦ୍ଦିଷ୍ଟକରିବାକୁ ତୁମେ ଇଚ୍ଛାକରୁଛ କି? 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +0				0	or	FTP ସଂୟୋଗ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +1				0	or	ଉପୟୋଗକର୍ତ୍ତା  ନାମ:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +2				0	or	ଗୁପ୍ତଶବ୍ଦ:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +3				0	or	ସଂୟୋଗ କର				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +4				0	or	୧. FTP ସଂୟୋଗ ସୂଚନା ପ୍ରବେଶ କର।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +5				0	or	ସରବର ନାମ କିମ୍ବା  IP ଠିକଣା:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +6				0	or	୨.ସରବରକୁ ସଂୟୋଗ କର				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +7				0	or	୩. ଗୋଟିଏ ରିମୋଟ ବିବରଣୀପଞ୍ଜିକା (ବୈକଳ୍ପିକ) ବାଛ।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 151				0	or	ଆକାର: %NUMBERKB				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 152				0	or	ଫାଇଲ ମିଳୁନାହିଁ। ଗୋଟିଏ ନୂଆ ଫାଇଲ ସ୍ଥାନ ନିର୍ଦ୍ଦିଷ୍ଟକରିବାକୁ ତୁମେ ଇଚ୍ଛାକରୁଛ କି? 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 0				0	or	FTP ସଂୟୋଗ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 1				0	or	ଉପୟୋଗକର୍ତ୍ତା  ନାମ:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 2				0	or	ଗୁପ୍ତଶବ୍ଦ:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 3				0	or	ସଂୟୋଗ କର				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 4				0	or	୧. FTP ସଂୟୋଗ ସୂଚନା ପ୍ରବେଶ କର।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 5				0	or	ସରବର ନାମ କିମ୍ବା  IP ଠିକଣା:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 6				0	or	୨.ସରବରକୁ ସଂୟୋଗ କର				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 7				0	or	୩. ଗୋଟିଏ ରିମୋଟ ବିବରଣୀପଞ୍ଜିକା (ବୈକଳ୍ପିକ) ବାଛ।				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +8				0	or	...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +9				0	or	ସଂୟୋଗ ସ୍ଥିତି ଅଜ୍ଞାତ ଅଟେ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +10				0	or	ସଂୟୋଗ ସଫଳଭାବରେ ପ୍ରତିଷ୍ଠାପିତ ହୋଇଛି				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +11				0	or	ଉପୟୋଗକର୍ତ୍ତାନାମ କିମ୍ବା ଗୁପ୍ତଶବ୍ଦ ଭୂଲ ଅଛି				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +12				0	or	ସରବର ନାମ ବିଶ୍ଳେଷଣ ହୋଇ ପାରିବ ନାହିଁ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +13				0	or	ତୁମପାଖରେ ୟଥେଷ୍ଟ ଉପୟୋଗକର୍ତ୍ତା ଅଧୀକାର ନାହିଁ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +14				0	or	ସରବରକୁ ସଂୟୋଗ ହୋଇପାରିବ ନାହିଁ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +15				0	or	ଅପ୍ରତିକ୍ଷୀତ ତୃଟି 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +16				0	or	FTP ପ୍ରକାଶନକରିବା ବିବରଣୀପଞ୍ଜିକା				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +17				0	or	ଏହା ଗୋଟିଏ  FTP ଫୋଲଡର ନୁହେଁ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +18				0	or	ସଂୟୋଗକରୁଛି...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +1				0	or	କାର୍ୟ୍ଯସୂଚୀ ଉଇଜାର୍ଡ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +2				0	or	ଏହି କାର୍ୟ୍ଯସୂଚୀ ନମୁନା ପାଇଁ ପୁସ୍ତିକା ପରିବର୍ତ୍ତନଗୁଡିକ ତିଆରି କର				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 9				0	or	ସଂୟୋଗ ସ୍ଥିତି ଅଜ୍ଞାତ ଅଟେ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 10				0	or	ସଂୟୋଗ ସଫଳଭାବରେ ପ୍ରତିଷ୍ଠାପିତ ହୋଇଛି				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 11				0	or	ଉପୟୋଗକର୍ତ୍ତାନାମ କିମ୍ବା ଗୁପ୍ତଶବ୍ଦ ଭୂଲ ଅଛି				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 12				0	or	ସରବର ନାମ ବିଶ୍ଳେଷଣ ହୋଇ ପାରିବ ନାହିଁ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 13				0	or	ତୁମପାଖରେ ୟଥେଷ୍ଟ ଉପୟୋଗକର୍ତ୍ତା ଅଧୀକାର ନାହିଁ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 14				0	or	ସରବରକୁ ସଂୟୋଗ ହୋଇପାରିବ ନାହିଁ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 15				0	or	ଅପ୍ରତିକ୍ଷୀତ ତୃଟି 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 16				0	or	FTP ପ୍ରକାଶନକରିବା ବିବରଣୀପଞ୍ଜିକା				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 17				0	or	ଏହା ଗୋଟିଏ  FTP ଫୋଲଡର ନୁହେଁ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 18				0	or	ସଂୟୋଗକରୁଛି...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 1				0	or	କାର୍ୟ୍ଯସୂଚୀ ଉଇଜାର୍ଡ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 2				0	or	ଏହି କାର୍ୟ୍ଯସୂଚୀ ନମୁନା ପାଇଁ ପୁସ୍ତିକା ପରିବର୍ତ୍ତନଗୁଡିକ ତିଆରି କର				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +3				0	or	ନମୁନା ନାମ:				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 4				0	or	ସ୍ଥାନ ଏବଂ ଫାଇଲ ନାମ:				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +5				0	or	ଏହାପରେ ଆପଣ କଣ କରିବାକୁ ଚାହୁଁଛନ୍ତି?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +6				0	or	ଦଯାକରି କାର୍ୟ୍ଯସୂଚୀ ପାଇଁ ପୃଷ୍ଠା ଡିଜାଇନ ବାଛ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +7				0	or	ଦଯାକରି ଶୀର୍ଷକଗୁଡିକ ମନୋନୀତ କର ତୁମ କାର୍ୟ୍ଯସୂଚୀ ନମୁନାରେ ତୁମେ ଅର୍ନ୍ତଭୁକ୍ତ କରିବାକୁ ଇଚ୍ଛା କରୁଛ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +8				0	or	ଦଯାକରି ଘଟଣା ପାଇଁ ସାଧାରଣ ସୂଚନା ପ୍ରବେଶ କର				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +9				0	or	ଦଯାକରି କାର୍ୟ୍ଯସୂଚୀ ପାଇଁ ଆଇଟମଗୁଡିକ ମନୋନୀତ କର				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +10				0	or	ଦଯାକରି ନାମଗୁଡିକ ମନୋନୀତ କର ତୁମ କାର୍ୟ୍ଯସୂଚୀ ନମୁନାରେ ତୁମେ ଅର୍ନ୍ତଭୁକ୍ତକରିବାକୁ ଇଚ୍ଛା କରୁଛ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 6				0	or	ଦଯାକରି କାର୍ୟ୍ଯସୂଚୀ ପାଇଁ ପୃଷ୍ଠା ଡିଜାଇନ ବାଛ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 7				0	or	ଦଯାକରି ଶୀର୍ଷକଗୁଡିକ ମନୋନୀତ କର ତୁମ କାର୍ୟ୍ଯସୂଚୀ ନମୁନାରେ ତୁମେ ଅର୍ନ୍ତଭୁକ୍ତ କରିବାକୁ ଇଚ୍ଛା କରୁଛ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 8				0	or	ଦଯାକରି ଘଟଣା ପାଇଁ ସାଧାରଣ ସୂଚନା ପ୍ରବେଶ କର				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 9				0	or	ଦଯାକରି କାର୍ୟ୍ଯସୂଚୀ ପାଇଁ ଆଇଟମଗୁଡିକ ମନୋନୀତ କର				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 10				0	or	ଦଯାକରି ନାମଗୁଡିକ ମନୋନୀତ କର ତୁମ କାର୍ୟ୍ଯସୂଚୀ ନମୁନାରେ ତୁମେ ଅର୍ନ୍ତଭୁକ୍ତକରିବାକୁ ଇଚ୍ଛା କରୁଛ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +11				0	or	ଗୋଟିଏ ନାମ ବାଛ ଏବଂ  ନମୁନା ସଞ୍ଚଯ କର				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +12				0	or	ମିନିଟଗୁଡିକୁ ଅଭିଲେଖକରିବା ପାଇଁ ଫର୍ମ ଅର୍ନ୍ତଭୁକ୍ତ କର				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +13				0	or	ତୁମକୁ ଏହି ଉଇଜାର୍ଡ ଗୋଟିଏ କାର୍ୟ୍ଯସୂଚୀ ସୃଷ୍ଟିକରିବା ପାଇଁ ସାହାୟ୍ଯ କରିବ। ତାପରେ ୟେତେବେଳେ ଦରକାର ନମୁନା ଗୋଟିଏ କାର୍ୟ୍ଯସୂଚୀ ସୃଷ୍ଟିକରିବାକୁ ଉପୟୋଗ ହୋଇପାରିବ।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +14				0	or	ସମଯ:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 12				0	or	ମିନିଟଗୁଡିକୁ ଅଭିଲେଖକରିବା ପାଇଁ ଫର୍ମ ଅର୍ନ୍ତଭୁକ୍ତ କର				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 13				0	or	ତୁମକୁ ଏହି ଉଇଜାର୍ଡ ଗୋଟିଏ କାର୍ୟ୍ଯସୂଚୀ ସୃଷ୍ଟିକରିବା ପାଇଁ ସାହାୟ୍ଯ କରିବ। ତାପରେ ୟେତେବେଳେ ଦରକାର ନମୁନା ଗୋଟିଏ କାର୍ୟ୍ଯସୂଚୀ ସୃଷ୍ଟିକରିବାକୁ ଉପୟୋଗ ହୋଇପାରିବ।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 14				0	or	ସମଯ:				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +15				0	or	ନାମ:				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 16				0	or	ସ୍ଥାନ:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +17				0	or	ଶୂନ୍ଯ କ୍ଷେତ୍ରଗୁଡିକରେ ସ୍ଥାନଧାରକଗୁଡିକ ଉପୟୋଗହେବ। ପରେ ଟେକ୍ସଟ ସହିତ ତୁମେ ସ୍ଥାନଧାରକଗୁଡିକ ପୁନଃସ୍ଥାପିତ କରି ପାରିବ।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 17				0	or	ଶୂନ୍ଯ କ୍ଷେତ୍ରଗୁଡିକରେ ସ୍ଥାନଧାରକଗୁଡିକ ଉପୟୋଗହେବ। ପରେ ଟେକ୍ସଟ ସହିତ ତୁମେ ସ୍ଥାନଧାରକଗୁଡିକ ପୁନଃସ୍ଥାପିତ କରି ପାରିବ।				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +18				0	or	...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +19				0	or	ଏହି ନମୁନାରୁ ଗୋଟିଏ କାର୍ୟ୍ଯସୂଚୀ ସୃଷ୍ଟି କର				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +20				0	or	ନମୁନା ମଧ୍ଯରୁ ଗୋଟିଏ ନୂଆ କାର୍ୟ୍ଯସୂଚୀ ସୃଷ୍ଟିକରିବାକୁ,ସ୍ଥାନକୁ ୟାଅ ୟେଉଁଠାରେକି ତୁମେ ନମୁନାକୁ ସଞ୍ଚିତ କରିବ ଏବଂ ଫାଇଲକୁ ଦୁଇଥର-ଦବାଅ।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +21				0	or	କାର୍ୟ୍ଯସୂଚୀ  ଆଇଟମ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +22				0	or	ଦାଯିତ୍ବସମ୍ପନ୍ନ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +23				0	or	ସ୍ଥିତିକାଳ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 19				0	or	ଏହି ନମୁନାରୁ ଗୋଟିଏ କାର୍ୟ୍ଯସୂଚୀ ସୃଷ୍ଟି କର				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 20				0	or	ନମୁନା ମଧ୍ଯରୁ ଗୋଟିଏ ନୂଆ କାର୍ୟ୍ଯସୂଚୀ ସୃଷ୍ଟିକରିବାକୁ,ସ୍ଥାନକୁ ୟାଅ ୟେଉଁଠାରେକି ତୁମେ ନମୁନାକୁ ସଞ୍ଚିତ କରିବ ଏବଂ ଫାଇଲକୁ ଦୁଇଥର-ଦବାଅ।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 21				0	or	କାର୍ୟ୍ଯସୂଚୀ  ଆଇଟମ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 22				0	or	ଦାଯିତ୍ବସମ୍ପନ୍ନ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 23				0	or	ସ୍ଥିତିକାଳ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +24				0	or	ଦ୍ବାରା ଡକାହୋଇଥିବା ମିଟିଙ୍ଗ 				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +25				0	or	ସଭାଧକ୍ଷ୍ଯ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +26				0	or	ମିନିଟ ରକ୍ଷକ				2002-02-02 02:02:02
@@ -4991,30 +4991,30 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +27
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +28				0	or	ଆଟେଣ୍ଡିସ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +29				0	or	ନିରୀକ୍ଷକମାନେ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +30				0	or	ସୁବିଧାଜନକ କର୍ମଚାରୀ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +31				0	or	ମନୋନୀତ ବ୍ଯକ୍ତିମାନଙ୍କର ନାମଗୁଡିକ ପାଇଁ କାର୍ୟ୍ଯସୂଚୀ ନମୁନା ସ୍ଥାନଧାରକଗୁଡିକୁ ଅର୍ନ୍ତଭୁକ୍ତ କରିବ। ନମୁନାରୁ ଗୋଟିଏ କାର୍ୟ୍ଯସୂଚୀ ସୃଷ୍ଟିକରିବା ସମଯରେ,ୟଥାର୍ଥ ନାମଗୁଡିକ ସହିତ ତୁମେ ଏହି ସ୍ଥାନଧାରକକୁ ପୁନଃସ୍ଥାପିତ କରି ପାରିବ।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 31				0	or	ମନୋନୀତ ବ୍ଯକ୍ତିମାନଙ୍କର ନାମଗୁଡିକ ପାଇଁ କାର୍ୟ୍ଯସୂଚୀ ନମୁନା ସ୍ଥାନଧାରକଗୁଡିକୁ ଅର୍ନ୍ତଭୁକ୍ତ କରିବ। ନମୁନାରୁ ଗୋଟିଏ କାର୍ୟ୍ଯସୂଚୀ ସୃଷ୍ଟିକରିବା ସମଯରେ,ୟଥାର୍ଥ ନାମଗୁଡିକ ସହିତ ତୁମେ ଏହି ସ୍ଥାନଧାରକକୁ ପୁନଃସ୍ଥାପିତ କରି ପାରିବ।				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +32				0	or	ମିଟିଙ୍ଗର ପ୍ରକାର				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +33				0	or	ଦଯାକରି ପଢ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +34				0	or	ଦଯାକରି ଆଣ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +35				0	or	ଟିପପ୍ଣୀଗୁଡିକ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +36				0	or	ମନୋନୀତ ଆଇଟମଗୁଡିକ ପାଇଁ କାର୍ୟ୍ଯସୂଚୀ ନମୁନା ସ୍ଥାନଧାରକଗୁଡିକୁ ଅର୍ନ୍ତଭୁକ୍ତ କରିବ।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 36				0	or	ମନୋନୀତ ଆଇଟମଗୁଡିକ ପାଇଁ କାର୍ୟ୍ଯସୂଚୀ ନମୁନା ସ୍ଥାନଧାରକଗୁଡିକୁ ଅର୍ନ୍ତଭୁକ୍ତ କରିବ।				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +38				0	or	ତାରିଖ:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +39				0	or	ଏହି ଉଇଜାର୍ଡ ଗୋଟିଏ କାର୍ୟ୍ଯସୂଚୀ ନମୁନା ସୃଷ୍ଟିକରିବ ୟାହାଦ୍ବାରା ସମାନ ଲେପନ ଏବଂ ସେଟିଙ୍ଗଗୁଡିକ ସହିତ ତୁମେ ବହୁବିଧ କାର୍ୟ୍ଯସୂଚୀଗୁଡିକୁ ସୃଷ୍ଟି କରିବାକୁ ସକ୍ଷମ ହେବ।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +40				0	or	ପୃଷ୍ଠା ଡିଜାଇନ:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +41				0	or	ମୋର କାର୍ୟ୍ଯସୂଚୀ ନମୁନା.stw				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +42				0	or	ମୋର କାର୍ୟ୍ଯସୂଚୀ  ନମୁନା 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +43				0	or	କାର୍ୟ୍ଯସୂଚୀ ନମୁନା ସଞ୍ଚଯକରିବା ସମଯରେ ଗୋଟିଏ ଅପ୍ରତୀକ୍ଷିତ ତୃଟି ଘଟିଲା।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +44				0	or	ନାମ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +45				0	or	ତାରିଖ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +46				0	or	ସମଯ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 39				0	or	ଏହି ଉଇଜାର୍ଡ ଗୋଟିଏ କାର୍ୟ୍ଯସୂଚୀ ନମୁନା ସୃଷ୍ଟିକରିବ ୟାହାଦ୍ବାରା ସମାନ ଲେପନ ଏବଂ ସେଟିଙ୍ଗଗୁଡିକ ସହିତ ତୁମେ ବହୁବିଧ କାର୍ୟ୍ଯସୂଚୀଗୁଡିକୁ ସୃଷ୍ଟି କରିବାକୁ ସକ୍ଷମ ହେବ।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 40				0	or	ପୃଷ୍ଠା ଡିଜାଇନ:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 41				0	or	ମୋର କାର୍ୟ୍ଯସୂଚୀ ନମୁନା.stw				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 42				0	or	ମୋର କାର୍ୟ୍ଯସୂଚୀ  ନମୁନା 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 43				0	or	କାର୍ୟ୍ଯସୂଚୀ ନମୁନା ସଞ୍ଚଯକରିବା ସମଯରେ ଗୋଟିଏ ଅପ୍ରତୀକ୍ଷିତ ତୃଟି ଘଟିଲା।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 44				0	or	ନାମ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 45				0	or	ତାରିଖ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 46				0	or	ସମଯ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 47				0	or	ସ୍ଥାନ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +48				0	or	ଏହି ଟେକ୍ସଟ ପୁନଃସ୍ଥାପିତକରିବା ପାଇଁ  କ୍ଲିକ୍ କର				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 48				0	or	ଏହି ଟେକ୍ସଟ ପୁନଃସ୍ଥାପିତକରିବା ପାଇଁ  କ୍ଲିକ୍ କର				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +50				0	or	ପୃଷ୍ଠା ଡିଜାଇନ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +51				0	or	ସାଧାରଣ ସୂଚନା				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +52				0	or	ଅନ୍ତର୍ଭୁକ୍ତକରିବା ପାଇଁ ଶୀର୍ଷକ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +53				0	or	ନାମଗୁଡିକ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +54				0	or	କାର୍ୟ୍ଯସୂଚୀ ଆଇଟମଗୁଡିକ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 51				0	or	ସାଧାରଣ ସୂଚନା				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 52				0	or	ଅନ୍ତର୍ଭୁକ୍ତକରିବା ପାଇଁ ଶୀର୍ଷକ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 53				0	or	ନାମଗୁଡିକ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 54				0	or	କାର୍ୟ୍ଯସୂଚୀ ଆଇଟମଗୁଡିକ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +55				0	or	ନାମ ଏବଂ ସ୍ଥାନ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +56				0	or	କାର୍ୟ୍ଯସୂଚୀ ନମୁନା ଖୋଲିବା ସମଯରେ ଗୋଟିଏ ଅପ୍ରତୀକ୍ଷିତ ତୃଟି ଘଟିଲା।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 56				0	or	କାର୍ୟ୍ଯସୂଚୀ ନମୁନା ଖୋଲିବା ସମଯରେ ଗୋଟିଏ ଅପ୍ରତୀକ୍ଷିତ ତୃଟି ଘଟିଲା।				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +57				0	or	ମିଟିଙ୍ଗର ପ୍ରକାର				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +58				0	or	ଦଯାକରି ଆଣ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +59				0	or	ଦଯାକରି ପଢ				2002-02-02 02:02:02
@@ -5026,10 +5026,10 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +64
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +65				0	or	ମଡରେଟର				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +66				0	or	ନିରୀକ୍ଷକମାନେ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +67				0	or	ସୁବିଧାଜନକ କର୍ମଚାରୀ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +68				0	or	ଭର୍ତ୍ତି କର				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +69				0	or	ହଟାଅ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +70				0	or	ଉପରକୁ ଘୁଞ୍ଚାଅ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +71				0	or	ତଳକୁ ଘୁଞ୍ଚାଅ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 68				0	or	ଭର୍ତ୍ତି କର				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 69				0	or	ହଟାଅ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 70				0	or	ଉପରକୁ ଘୁଞ୍ଚାଅ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 71				0	or	ତଳକୁ ଘୁଞ୍ଚାଅ				2002-02-02 02:02:02
 wizards	source\schedule\schedule.src	0	string	dlgCalTitle				0	or	%PRODUCTNAME ପଞ୍ଜିକା				2002-02-02 02:02:02
 wizards	source\schedule\schedule.src	0	string	dlgCalTitleBack				0	or	ପଛ				2002-02-02 02:02:02
 wizards	source\schedule\schedule.src	0	string	dlgCalTitleOwnData				0	or	ବ୍ଯକ୍ତିଗତ ତଥ୍ଯ				2002-02-02 02:02:02
@@ -11734,7 +11734,7 @@ sw	source\ui\docvw\docvw.src	0	string	STR_REDLINE_FORMAT				0	or	ଫର୍ମା
 sw	source\ui\docvw\docvw.src	0	string	STR_REDLINE_TABLE				0	or	ଟେବୁଲ ପରିବର୍ତ୍ତିତ  				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_REDLINE_FMTCOLL				0	or	ପ୍ରଯୋଗ ପରିଚ୍ଛେଦ ଶୈଳୀଗୁଡିକ				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_ENDNOTE				0	or	ଶେଷଟିପପ୍ଣୀ: 				2002-02-02 02:02:02
-sw	source\ui\docvw\docvw.src	0	string	STR_FTNNOTE				0	or	ପାଦଟିପପ୍ଣୀ: 				2002-02-02 02:02:02
+sw	source\ui\docvw\docvw.src	0	string	STR_FOOTNOTE				0	or	ପାଦଟିପପ୍ଣୀ: 				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	infobox	MSG_READONLY_CONTENT				0	or	କେବଳପଢିବା ସୂଚୀପତ୍ର ପରିବର୍ତ୍ତିତ ହୋଇ ପାରିବ ନାହିଁ୤\nକୌଣସି ପରିବର୍ତ୍ତନ ଗ୍ରହଣ କରା ହେବ ନାହିଁ				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_TABLE_COL_ADJUST				0	or	ସ୍ତମ୍ଭ ଓସାର ବ୍ଯବସ୍ଥା କର 				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_TABLE_ROW_ADJUST				0	or	ଟେବୁଲ ପଂକ୍ତି ବ୍ଯବସ୍ଥା କର 				2002-02-02 02:02:02
@@ -11841,11 +11841,11 @@ sw	source\ui\ribbar\inputwin.src	0	string	STR_TBL_FORMULA				0	or	ଟେକ୍�
 sw	source\ui\ribbar\inputwin.src	0	toolboxitem	TB_INPUT	FN_FORMULA_CALC	HID_TBX_FORMULA_CALC		0	or	ସୂତ୍ର				2002-02-02 02:02:02
 sw	source\ui\ribbar\inputwin.src	0	toolboxitem	TB_INPUT	FN_FORMULA_CANCEL	HID_TBX_FORMULA_CANCEL		0	or	ରଦ୍ଦ କର				2002-02-02 02:02:02
 sw	source\ui\ribbar\inputwin.src	0	toolboxitem	TB_INPUT	FN_FORMULA_APPLY	HID_TBX_FORMULA_APPLY		0	or	ପ୍ରଯୋଗକର				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_PAGE			0	or	ପୃଷ୍ଠା				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_PARAGRAPH			0	or	ପରଚ୍ଛେଦ				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_AT_CHAR			0	or	ଅକ୍ଷରକୁ				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_CHAR			0	or	ଅକ୍ଷର   ପରି				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_FRAME			0	or	ଫ୍ରେମ				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_PAGE			0	or	ପୃଷ୍ଠା				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_PARAGRAPH			0	or	ପରଚ୍ଛେଦ				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_AT_CHAR			0	or	ଅକ୍ଷରକୁ				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_CHAR			0	or	ଅକ୍ଷର   ପରି				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_FRAME			0	or	ଫ୍ରେମ				2002-02-02 02:02:02
 sw	source\ui\wrtsh\wrtsh.src	0	string	STR_DDEERROR_APP1				0	or	ପ୍ରଯୋଗ [				2002-02-02 02:02:02
 sw	source\ui\wrtsh\wrtsh.src	0	string	STR_DDEERROR_APP2				0	or	] ଉତ୍ତର ଦେଉ ନାହିଁ୤				2002-02-02 02:02:02
 sw	source\ui\wrtsh\wrtsh.src	0	string	STR_DDEERROR_DATA1				0	or	ପାଇଁ ତଥ୍ଯ [				2002-02-02 02:02:02
@@ -12287,12 +12287,12 @@ sw	source\ui\app\mn.src	0	menuitem	MN_WRAP_DRAW.MN_WRAP	FN_FRAME_WRAPTHRU_TRANSP
 sw	source\ui\app\mn.src	0	menuitem	MN_WRAP_DRAW.MN_WRAP	FN_WRAP_ANCHOR_ONLY	CMD_FN_WRAP_ANCHOR_ONLY		0	or	ପ୍ରଥମ ପରିଚ୍ଛେଦ (~F)				2002-02-02 02:02:02
 sw	source\ui\app\mn.src	0	menuitem	MN_WRAP_DRAW.MN_WRAP	FN_DRAW_WRAP_DLG	CMD_FN_DRAW_WRAP_DLG		0	or	ସମ୍ପାଦନ କର...				2002-02-02 02:02:02
 sw	source\ui\app\mn.src	0	menuitem	MN_WRAP_DRAW	MN_WRAP			0	or	ଗୁଡାଇବା (~W)				2002-02-02 02:02:02
-sw	source\ui\app\mn.src	0	menuitem	MN_AT_FRAME	FN_TOOL_ANKER_FRAME	CMD_FN_TOOL_ANKER_FRAME		0	or	ଫ୍ରେମକୁ				2002-02-02 02:02:02
-sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANKER	FN_TOOL_ANKER_PAGE	CMD_FN_TOOL_ANKER_PAGE		0	or	ପୃଷ୍ଠାକୁ				2002-02-02 02:02:02
-sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANKER	FN_TOOL_ANKER_PARAGRAPH	CMD_FN_TOOL_ANKER_PARAGRAPH		0	or	ପରିଚ୍ଛେଦକୁ				2002-02-02 02:02:02
-sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANKER	FN_TOOL_ANKER_AT_CHAR	CMD_FN_TOOL_ANKER_AT_CHAR		0	or	ଅକ୍ଷରକୁ				2002-02-02 02:02:02
-sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANKER	FN_TOOL_ANKER_CHAR	CMD_FN_TOOL_ANKER_CHAR		0	or	ଅକ୍ଷର ପରି				2002-02-02 02:02:02
-sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR	FN_TOOL_ANKER	CMD_FN_TOOL_ANKER		0	or	ୟୋଡ				2002-02-02 02:02:02
+sw	source\ui\app\mn.src	0	menuitem	MN_AT_FRAME	FN_TOOL_ANCHOR_FRAME	CMD_FN_TOOL_ANCHOR_FRAME		0	or	ଫ୍ରେମକୁ				2002-02-02 02:02:02
+sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANCHOR	FN_TOOL_ANCHOR_PAGE	CMD_FN_TOOL_ANCHOR_PAGE		0	or	ପୃଷ୍ଠାକୁ				2002-02-02 02:02:02
+sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANCHOR	FN_TOOL_ANCHOR_PARAGRAPH	CMD_FN_TOOL_ANCHOR_PARAGRAPH		0	or	ପରିଚ୍ଛେଦକୁ				2002-02-02 02:02:02
+sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANCHOR	FN_TOOL_ANCHOR_AT_CHAR	CMD_FN_TOOL_ANCHOR_AT_CHAR		0	or	ଅକ୍ଷରକୁ				2002-02-02 02:02:02
+sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANCHOR	FN_TOOL_ANCHOR_CHAR	CMD_FN_TOOL_ANCHOR_CHAR		0	or	ଅକ୍ଷର ପରି				2002-02-02 02:02:02
+sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR	FN_TOOL_ANCHOR	CMD_FN_TOOL_ANCHOR		0	or	ୟୋଡ				2002-02-02 02:02:02
 sw	source\ui\app\mn.src	0	string	MN_DRAWFORM_POPUPMENU				0	or	ନିଯନ୍ତ୍ରଣ				2002-02-02 02:02:02
 sw	source\ui\app\mn.src	0	string	MN_DRWTXT_POPUPMENU				0	or	ବସ୍ତୁ ଟେକ୍ସଟ ଅଙ୍କନ କର				2002-02-02 02:02:02
 sw	source\ui\app\mn.src	0	menuitem	MN_REDCOMMENT	FN_DELETE_COMMENT	CMD_FN_DELETE_COMMENT		0	or	ବିଲୋପ କର ଟିପପ୍ଣୀ				2002-02-02 02:02:02
@@ -12386,7 +12386,7 @@ sw	source\ui\app\app.src	0	string	STR_WRITER_DOCUMENT_FULLTYPE				0	or	%PRODUCTN
 sw	source\ui\app\app.src	0	string	STR_CANTOPEN				0	or	ଦଲିଲ ଖୋଲା ହୋଇପାରିବ ନାହିଁ ।				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_CANTCREATE				0	or	ଦଲିଲ ସୃଷ୍ଟି ହୋଇ ପାରିବ ନାହିଁ୤				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_DLLNOTFOUND				0	or	ଫିଲଟର ମିଳୁ ନାହିଁ୤				2002-02-02 02:02:02
-sw	source\ui\app\app.src	0	string	STR_UNBENANNT				0	or	ଶୀର୍ଷକ- ରହିତ				2002-02-02 02:02:02
+sw	source\ui\app\app.src	0	string	STR_UNTITLED				0	or	ଶୀର୍ଷକ- ରହିତ				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_LOAD_GLOBAL_DOC				0	or	ମାଷ୍ଟର ଦଲିଲର ନାମ ଏବଂ ପଥ				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_LOAD_HTML_DOC				0	or	HTML ଦଲିଲର ନାମ ଏବଂ ପଥ				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	infobox	MSG_ERROR_SEND_MAIL				0	or	ମେଲ ପଠାଇବାରେ ତୃଟି୤				2002-02-02 02:02:02

@@ -21696,7 +21696,7 @@ sw	source\ui\app\app.src	0	string	STR_STATSTR_TOX_UPDATE				1	sa-IN	अनुक
 sw	source\ui\app\app.src	0	string	STR_STATSTR_W4WREAD				1	sa-IN	लेख्यपत्रस्य निर्यातम्...				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_STATSTR_W4WWRITE				1	sa-IN	लेख्यपत्रं निर्यातयति...				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_TABLE_DEFNAME				1	sa-IN	सारणी				2002-02-02 02:02:02
-sw	source\ui\app\app.src	0	string	STR_UNBENANNT				1	sa-IN	शीर्षकरहितम्				2002-02-02 02:02:02
+sw	source\ui\app\app.src	0	string	STR_UNTITLED				1	sa-IN	शीर्षकरहितम्				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_WESTERN_FONT				1	sa-IN	पाश्चात्यपाठ्यम् : 				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_WRITER_DOCUMENT_FULLTYPE				1	sa-IN	%PRODUCTNAME %PRODUCTVERSION पाठ्यलेख्यपत्रम्				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	warningbox	MSG_DATA_SOURCES_UNAVAILABLE		HID_DATA_SOURCES_UNAVAILABLE		202	sa-IN	इदानीं पर्यन्तं न किमपि लेखामूलं स्थापितम् । भवन्तं एकलेखामूलम् आवश्यकमस्ति यथा लेखाधिकरणम् , क्षेत्रार्थं लेखानां आपूर्ति-हेतु (उदाहरणस्य कृते, नाम पत्रसङ्केतं च) ।				2002-02-02 02:02:02
@@ -22636,7 +22636,7 @@ sw	source\ui\docvw\docvw.src	0	string	STR_DELETE_ALL_NOTES				0	sa-IN	सर्�
 sw	source\ui\docvw\docvw.src	0	string	STR_DELETE_AUTHOR_NOTES				0	sa-IN	अनेन टिप्पण्यः 				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_ENDNOTE				0	sa-IN	अंतटिप्पणी : 				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_EXPORT_GRAFIK_TITLE				0	sa-IN	चित्रनिर्यातम्				2002-02-02 02:02:02
-sw	source\ui\docvw\docvw.src	0	string	STR_FTNNOTE				0	sa-IN	पादटिप्पणी : 				2002-02-02 02:02:02
+sw	source\ui\docvw\docvw.src	0	string	STR_FOOTNOTE				0	sa-IN	पादटिप्पणी : 				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_POSTIT_TODAY				0	sa-IN	अद्य,				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_POSTIT_YESTERDAY				0	sa-IN	ह्यः				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_REDLINE_DELETE				0	sa-IN	लोपितम्				2002-02-02 02:02:02
@@ -23796,11 +23796,11 @@ sw	source\ui\ribbar\inputwin.src	0	toolboxitem	TB_INPUT	FN_FORMULA_APPLY	FN_FORM
 sw	source\ui\ribbar\inputwin.src	0	toolboxitem	TB_INPUT	FN_FORMULA_CALC	FN_FORMULA_CALC		500	sa-IN	सूत्रम्				2002-02-02 02:02:02
 sw	source\ui\ribbar\inputwin.src	0	toolboxitem	TB_INPUT	FN_FORMULA_CANCEL	FN_FORMULA_CANCEL		500	sa-IN	निरसनं कुरु				2002-02-02 02:02:02
 sw	source\ui\ribbar\tblctrl.src	0	floatingwindow	RID_TBL_OPT_CTRL		HID_TBL_OPT_CTRL		0	sa-IN	योग्य-क्रिया				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_AT_CHAR			0	sa-IN	अक्षरम् प्रति				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_CHAR			0	sa-IN	अक्षरमिव				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_FRAME			0	sa-IN	आबन्धम्				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_PAGE			0	sa-IN	पृष्ठम्				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_PARAGRAPH			0	sa-IN	अनुच्छेदः				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_AT_CHAR			0	sa-IN	अक्षरम् प्रति				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_CHAR			0	sa-IN	अक्षरमिव				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_FRAME			0	sa-IN	आबन्धम्				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_PAGE			0	sa-IN	पृष्ठम्				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_PARAGRAPH			0	sa-IN	अनुच्छेदः				2002-02-02 02:02:02
 sw	source\ui\ribbar\workctrl.src	0	floatingwindow	RID_INSERT_CTRL		HID_INSERT_CTRL		0	sa-IN	समावेशय				2002-02-02 02:02:02
 sw	source\ui\ribbar\workctrl.src	0	floatingwindow	RID_INSERT_OBJ_CTRL		HID_INSERT_OBJ_CTRL		0	sa-IN	वस्तु समावेशय				2002-02-02 02:02:02
 sw	source\ui\ribbar\workctrl.src	0	floatingwindow	RID_SCROLL_NAVIGATION_WIN		HID_INSERT_CTRL		0	sa-IN	संचरकः				2002-02-02 02:02:02
@@ -25078,21 +25078,21 @@ wizards	source\euro\euro.src	0	string	STEP_ZERO + 8				0	sa-IN	पिधत्�
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 16				1	sa-IN	स्थानम् :				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 4				1	sa-IN	स्थानं सञ्चिकानाम च :				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 47				1	sa-IN	स्थानम्				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +1				1	sa-IN	कार्यावलीविजर्ड्				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +10				1	sa-IN	स्वकार्यावलीरचनायां यानि नामानि समावेशयितुम् इच्छसि तानि वृणु				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 1				1	sa-IN	कार्यावलीविजर्ड्				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 10				1	sa-IN	स्वकार्यावलीरचनायां यानि नामानि समावेशयितुम् इच्छसि तानि वृणु				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +11				1	sa-IN	नाम वृत्वा रचनां सञ्चय				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +12				1	sa-IN	विवरणलेखनाय प्रपत्रं अन्तर्गमय				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +13				1	sa-IN	इदं विजर्ड् कार्यावलीरचनाम् उत्पादयितुं तव साहाय्यं करोति। आवश्यकानुसारं कार्यावलीम् उत्पादयितुम् इमां रचनाम् उपयोजयितुं शक्यते।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +14				1	sa-IN	समयः :				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 12				1	sa-IN	विवरणलेखनाय प्रपत्रं अन्तर्गमय				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 13				1	sa-IN	इदं विजर्ड् कार्यावलीरचनाम् उत्पादयितुं तव साहाय्यं करोति। आवश्यकानुसारं कार्यावलीम् उत्पादयितुम् इमां रचनाम् उपयोजयितुं शक्यते।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 14				1	sa-IN	समयः :				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +15				1	sa-IN	नाम :				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +17				1	sa-IN	रिक्तक्षेत्रेषु स्थानधारकाः उपयोक्ष्यन्ते। पश्चात् विषयेण स्थानधारकान् प्रतिसमाधातुं शक्नोषि।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 17				1	sa-IN	रिक्तक्षेत्रेषु स्थानधारकाः उपयोक्ष्यन्ते। पश्चात् विषयेण स्थानधारकान् प्रतिसमाधातुं शक्नोषि।				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +18				1	sa-IN	...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +19				1	sa-IN	अस्याः रचनायाः कार्यावलीम् उत्पादय				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +2				1	sa-IN	अस्यां कार्यावलीरचनायां मानविकपरिणामान् कुरु				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +20				1	sa-IN	रचनायाः नूतनकार्यावलीम् उत्पादयितुं, यत्र रचना सञ्चिता तत् स्थानं गत्वा सञ्चिकां द्विगुणक्लिक्कुरु।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +21				1	sa-IN	कार्यावलीवस्तु				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +22				1	sa-IN	उत्तरदानाधीनः				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +23				1	sa-IN	कालः				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 19				1	sa-IN	अस्याः रचनायाः कार्यावलीम् उत्पादय				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 2				1	sa-IN	अस्यां कार्यावलीरचनायां मानविकपरिणामान् कुरु				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 20				1	sa-IN	रचनायाः नूतनकार्यावलीम् उत्पादयितुं, यत्र रचना सञ्चिता तत् स्थानं गत्वा सञ्चिकां द्विगुणक्लिक्कुरु।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 21				1	sa-IN	कार्यावलीवस्तु				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 22				1	sa-IN	उत्तरदानाधीनः				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 23				1	sa-IN	कालः				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +24				1	sa-IN	द्वारा सम्मेलनम् आहूतम्				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +25				1	sa-IN	सभापतिः				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +26				1	sa-IN	विवरणाधिकारी				2002-02-02 02:02:02
@@ -25101,34 +25101,34 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +28
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +29				1	sa-IN	प्रेक्षकाः				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +3				1	sa-IN	रचनानाम :				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +30				1	sa-IN	सौकर्यकार्मिकः				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +31				1	sa-IN	कार्यावलीरचना वृतजननामभ्यः स्थानधारकान् अन्तर्गमयिष्यति । रचनायाः कार्यावल्युत्पादनसमये इमान् स्थानधारकान् उचितनामभिः प्रतिसमाधातुं शक्नोषि।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 31				1	sa-IN	कार्यावलीरचना वृतजननामभ्यः स्थानधारकान् अन्तर्गमयिष्यति । रचनायाः कार्यावल्युत्पादनसमये इमान् स्थानधारकान् उचितनामभिः प्रतिसमाधातुं शक्नोषि।				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +32				1	sa-IN	सम्मेलनप्रकारः				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +33				1	sa-IN	कृपया पठ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +34				1	sa-IN	कृपया आनय				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +35				1	sa-IN	टिप्पण्यः				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +36				1	sa-IN	कार्यावलीरचना वृतवस्तुभ्यः स्थानधारकान् अन्तर्गमयिष्यति।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 36				1	sa-IN	कार्यावलीरचना वृतवस्तुभ्यः स्थानधारकान् अन्तर्गमयिष्यति।				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +38				1	sa-IN	दिनाङ्कः :				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +39				1	sa-IN	इदं विजर्ड् कार्यावलीरचनाम् उत्पादयति, यया त्वं समानपरिलेखेन निर्धारणैश्च बहुकार्यावलीः उत्पादयितुं शक्नोषि।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +40				1	sa-IN	पृष्ठवैचित्र्यम् :				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +41				1	sa-IN	myAgendaTemplate.stw				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +42				1	sa-IN	मम कार्यावलीरचना				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +43				1	sa-IN	कार्यावलीरचनायाः सञ्चयसमये एकः अनपेक्षितः दोषः सञ्जातः।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +44				1	sa-IN	नाम				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +45				1	sa-IN	दिनाङ्कः				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +46				1	sa-IN	समयः				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +48				1	sa-IN	इमं विषयं प्रतिसमाधातुं क्लिक्कुरु				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 39				1	sa-IN	इदं विजर्ड् कार्यावलीरचनाम् उत्पादयति, यया त्वं समानपरिलेखेन निर्धारणैश्च बहुकार्यावलीः उत्पादयितुं शक्नोषि।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 40				1	sa-IN	पृष्ठवैचित्र्यम् :				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 41				1	sa-IN	myAgendaTemplate.stw				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 42				1	sa-IN	मम कार्यावलीरचना				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 43				1	sa-IN	कार्यावलीरचनायाः सञ्चयसमये एकः अनपेक्षितः दोषः सञ्जातः।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 44				1	sa-IN	नाम				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 45				1	sa-IN	दिनाङ्कः				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 46				1	sa-IN	समयः				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 48				1	sa-IN	इमं विषयं प्रतिसमाधातुं क्लिक्कुरु				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +5				1	sa-IN	अग्रे किं कर्तुमिच्छसि?				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +50				1	sa-IN	पृष्ठवैचित्र्यम्				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +51				1	sa-IN	सामान्यसूचना				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +52				1	sa-IN	अन्तर्गमयितुं शीर्षकाः				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +53				1	sa-IN	नामानि				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +54				1	sa-IN	कार्यावलीवस्तूनि				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 51				1	sa-IN	सामान्यसूचना				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 52				1	sa-IN	अन्तर्गमयितुं शीर्षकाः				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 53				1	sa-IN	नामानि				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 54				1	sa-IN	कार्यावलीवस्तूनि				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +55				1	sa-IN	नाम स्थानं च				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +56				1	sa-IN	कार्यावलीरचनायाः उद्घाटनसमये एकः अनपेक्षितः दोषः सञ्जातः।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 56				1	sa-IN	कार्यावलीरचनायाः उद्घाटनसमये एकः अनपेक्षितः दोषः सञ्जातः।				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +57				1	sa-IN	सम्मेलनप्रकारः				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +58				1	sa-IN	कृपया आनय				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +59				1	sa-IN	कृपया पठ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +6				1	sa-IN	कृपया कार्यावल्यै पृष्ठवैचित्र्यं वृणु				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 6				1	sa-IN	कृपया कार्यावल्यै पृष्ठवैचित्र्यं वृणु				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +60				1	sa-IN	टिप्पण्यः				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +61				1	sa-IN	द्वारा सम्मेलनम् आहूतम्				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +62				1	sa-IN	सभापतिः				2002-02-02 02:02:02
@@ -25137,13 +25137,13 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +64
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +65				1	sa-IN	विनियन्ता				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +66				1	sa-IN	प्रेक्षकाः				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +67				1	sa-IN	सौकर्यकार्मिकः				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +68				1	sa-IN	समावेशय				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +69				1	sa-IN	अपनय				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +7				1	sa-IN	स्वकार्यावलीरचनायां यान् शीर्षकान् समावेशयितुम् इच्छसि तान् वृणु				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +70				1	sa-IN	उपरि चेष्टय				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +71				1	sa-IN	अधः चेष्टय				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +8				1	sa-IN	कृपया घटनायै सामान्यसूचनां निवेशय				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +9				1	sa-IN	कृपया कार्यावल्यै वस्तूनि निर्दिश				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 68				1	sa-IN	समावेशय				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 69				1	sa-IN	अपनय				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 7				1	sa-IN	स्वकार्यावलीरचनायां यान् शीर्षकान् समावेशयितुम् इच्छसि तान् वृणु				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 70				1	sa-IN	उपरि चेष्टय				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 71				1	sa-IN	अधः चेष्टय				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 8				1	sa-IN	कृपया घटनायै सामान्यसूचनां निवेशय				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 9				1	sa-IN	कृपया कार्यावल्यै वस्तूनि निर्दिश				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_COMMON_START + 0				1	sa-IN	'%1' निर्देशिकाम् उत्पादयितुं न शक्यते।<BR> तव हार्डडिस्क् मध्ये पर्याप्तस्थानं न भवेत्।				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_COMMON_START + 1				1	sa-IN	विषयलेख्यपत्रम् उत्पादयितुं न शक्यते ।<BR>'PRODUCTNAME Writer' मोड्यूल् संस्थापितं वेति कृपया परीक्षस्व।				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_COMMON_START + 10				1	sa-IN	न				2002-02-02 02:02:02
@@ -25578,25 +25578,25 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_LETTERWIZARDROADMAP_START + 
 wizards	source\formwizard\dbwizres.src	0	string	RID_LETTERWIZARDSALUTATION_START + 1				1	sa-IN	यं प्रत्यपि इदं निर्देष्टुं शक्यते				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_LETTERWIZARDSALUTATION_START + 2				1	sa-IN	प्रिय महोदय महोदया वा				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_LETTERWIZARDSALUTATION_START + 3				1	sa-IN	नमस्ते				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +0				1	sa-IN	FTP संयोगः				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +1				1	sa-IN	प्रयोक्तृनाम :				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +10				1	sa-IN	साफल्येन संयोगः प्रतिष्ठापितः				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +11				1	sa-IN	प्रयोक्तृनाम गुह्यपदं वा अशुद्धमस्ति				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +12				1	sa-IN	सर्वर्नाम विनिश्चेतुं न शक्यते				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +13				1	sa-IN	तव पार्श्वे पर्याप्ताः प्रयोक्तुः अधिकाराः न सन्ति				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +14				1	sa-IN	सर्वर् प्रति संयोजयितुं न शक्यते				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +15				1	sa-IN	अनपेक्षितः दोषः				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +16				1	sa-IN	FTP प्रकाशननिर्देशिका				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +17				1	sa-IN	अयं FTP पुटकः नास्ति				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +18				1	sa-IN	संयोजयति...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +2				1	sa-IN	गुह्यपदम् :				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +3				1	sa-IN	संयोजय				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +4				1	sa-IN	1. FTP संयोगसूचनां निवेशय।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +5				1	sa-IN	सर्वर्नाम IPपत्रसङ्केतः वा :				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +6				1	sa-IN	2. सर्वर् प्रति संयोजय।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +7				1	sa-IN	3. एकाम् असन्निकृष्टनिर्देशिकां वृणु (वैकल्पिकम्)।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 0				1	sa-IN	FTP संयोगः				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 1				1	sa-IN	प्रयोक्तृनाम :				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 10				1	sa-IN	साफल्येन संयोगः प्रतिष्ठापितः				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 11				1	sa-IN	प्रयोक्तृनाम गुह्यपदं वा अशुद्धमस्ति				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 12				1	sa-IN	सर्वर्नाम विनिश्चेतुं न शक्यते				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 13				1	sa-IN	तव पार्श्वे पर्याप्ताः प्रयोक्तुः अधिकाराः न सन्ति				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 14				1	sa-IN	सर्वर् प्रति संयोजयितुं न शक्यते				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 15				1	sa-IN	अनपेक्षितः दोषः				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 16				1	sa-IN	FTP प्रकाशननिर्देशिका				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 17				1	sa-IN	अयं FTP पुटकः नास्ति				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 18				1	sa-IN	संयोजयति...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 2				1	sa-IN	गुह्यपदम् :				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 3				1	sa-IN	संयोजय				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 4				1	sa-IN	1. FTP संयोगसूचनां निवेशय।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 5				1	sa-IN	सर्वर्नाम IPपत्रसङ्केतः वा :				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 6				1	sa-IN	2. सर्वर् प्रति संयोजय।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 7				1	sa-IN	3. एकाम् असन्निकृष्टनिर्देशिकां वृणु (वैकल्पिकम्)।				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +8				1	sa-IN	...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +9				1	sa-IN	संयोगवस्तुस्थितिः अज्ञातः अस्ति				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 9				1	sa-IN	संयोगवस्तुस्थितिः अज्ञातः अस्ति				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 100				1	sa-IN	प्रतीकसमुच्चयम्				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 101				1	sa-IN	एकं प्रतीकसमुच्चयं वृणु				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 90				1	sa-IN	समाप्नोति...				2002-02-02 02:02:02
@@ -25605,127 +25605,127 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 95		
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 96				1	sa-IN	ZIP अभिलेखसञ्चिकाः				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 98				1	sa-IN	पृष्ठपटलचित्राणि				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 99				1	sa-IN	एकं पृष्ठपटलचित्रं वृणु				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +1				1	sa-IN	जालविजर्ड्				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +10				1	sa-IN	सारांशः : 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +102				1	sa-IN	अन्यत्...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +103				1	sa-IN	न किमपि				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +104				1	sa-IN	तव जालस्थानं साफल्येन अत्र उत्पादितम् : %FILENAME				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +105				1	sa-IN	जालस्थानस्य उत्पादनसमये एकः तदधिको वा दोषः सञ्जातः।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +106				1	sa-IN	विषयसूचीपृष्ठस्य(पृष्ठानाम्) उत्पादनसमये एकः दोषः सञ्जातः।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +107				1	sa-IN	परिलेखसञ्चिकानाम् अनुरूपणसमये एकः दोषः सञ्जातः।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +108				1	sa-IN	'%FILENAME' कृते लेख्यपत्रसूचनासङ्ग्रहसमये एकः दोषः सञ्जातः।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +109				1	sa-IN	'%FILENAME' लेख्यपत्र-निर्याणसमये एकः दोषः सञ्जातः।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +11				1	sa-IN	लेखकः :				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +110				1	sa-IN	'%FILENAME' निर्याणाय निर्देशिकोत्पादनसमये एकः दोषः सञ्जातः।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +111				1	sa-IN	'%FILENAME' लेख्यपत्रनिर्याणसमये एकः सुरक्षादोषः सञ्जातः।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +112				1	sa-IN	'%FILENAME' लेख्यपत्र-निर्याणसमये एकः निवेश/निर्गम-दोषः सञ्जातः।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +113				1	sa-IN	तात्कालिकनिर्देशिकां प्रति मीडियासञ्चिकानाम् अनुरूपणसमये एकः सुरक्षादोषः सञ्जातः।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +114				1	sa-IN	जालस्थानं निम्नगन्तव्ये अनुरूपयितुं न शक्यते : %URL				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +115				1	sa-IN	एकः अनपेक्षितः दोषः सञ्जातः : %ERROR				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +116				1	sa-IN	सञ्चिकासिद्धीकरणसमये एकः अनपेक्षितः दोषः सञ्जातः : '%FILENAME'				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +117				1	sa-IN	%FILENAME' एका सञ्चिका अस्ति।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +118				1	sa-IN	जालविजर्ड्-निर्धारणानि लोड् करोति...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +119				1	sa-IN	एकः अनपेक्षितः दोषः सञ्जातः।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +12				1	sa-IN	सञ्चिकारचनां प्रति निर्याणं कुरु :				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +120				1	sa-IN	लेख्यपत्राणि सिद्धीकरोति...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +121				1	sa-IN	ममाभिलेखः				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +122				1	sa-IN	उपोद्घातः				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +123				1	sa-IN	लेख्यपत्राणि				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +124				1	sa-IN	मुख्यपरिलेखः				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +125				1	sa-IN	परिलेखनिर्देशाः				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +126				1	sa-IN	शैली				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +127				1	sa-IN	जालस्थानसूचना				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +128				1	sa-IN	पूर्वदृश्यः				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +13				1	sa-IN	तव जालस्थानाय सामान्यसूचनां निवेशय				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +130				1	sa-IN	वृतनिर्धारणानि लुप्तानि भविष्यन्ति ।\n\nइमानि निर्धारणानि वस्तुतः लोपयितुमिच्छसि किम्?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +131				1	sa-IN	%NUMBER पृष्ठानि				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +132				1	sa-IN	%NUMBER अवसर्पिण्यः				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +133				1	sa-IN	उत्पादितम् : %DATE				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +134				1	sa-IN	अन्तिमविकृतम् : %DATE				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +135				1	sa-IN	जालविजर्ड्-निर्धारणानि				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +136				1	sa-IN	पृष्ठपटलचित्रम् :				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +137				1	sa-IN	प्रतीकसमुच्चयम् :				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +138				1	sa-IN	इदं प्रतीक-समुच्चयं HTML रचनायां प्रस्तुतिभ्यः उपयुज्यते। 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +139				1	sa-IN	HTML मेटाडाटा				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 1				1	sa-IN	जालविजर्ड्				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 10				1	sa-IN	सारांशः : 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 102				1	sa-IN	अन्यत्...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 103				1	sa-IN	न किमपि				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 104				1	sa-IN	तव जालस्थानं साफल्येन अत्र उत्पादितम् : %FILENAME				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 105				1	sa-IN	जालस्थानस्य उत्पादनसमये एकः तदधिको वा दोषः सञ्जातः।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 106				1	sa-IN	विषयसूचीपृष्ठस्य(पृष्ठानाम्) उत्पादनसमये एकः दोषः सञ्जातः।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 107				1	sa-IN	परिलेखसञ्चिकानाम् अनुरूपणसमये एकः दोषः सञ्जातः।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 108				1	sa-IN	'%FILENAME' कृते लेख्यपत्रसूचनासङ्ग्रहसमये एकः दोषः सञ्जातः।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 109				1	sa-IN	'%FILENAME' लेख्यपत्र-निर्याणसमये एकः दोषः सञ्जातः।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 11				1	sa-IN	लेखकः :				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 110				1	sa-IN	'%FILENAME' निर्याणाय निर्देशिकोत्पादनसमये एकः दोषः सञ्जातः।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 111				1	sa-IN	'%FILENAME' लेख्यपत्रनिर्याणसमये एकः सुरक्षादोषः सञ्जातः।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 112				1	sa-IN	'%FILENAME' लेख्यपत्र-निर्याणसमये एकः निवेश/निर्गम-दोषः सञ्जातः।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 113				1	sa-IN	तात्कालिकनिर्देशिकां प्रति मीडियासञ्चिकानाम् अनुरूपणसमये एकः सुरक्षादोषः सञ्जातः।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 114				1	sa-IN	जालस्थानं निम्नगन्तव्ये अनुरूपयितुं न शक्यते : %URL				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 115				1	sa-IN	एकः अनपेक्षितः दोषः सञ्जातः : %ERROR				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 116				1	sa-IN	सञ्चिकासिद्धीकरणसमये एकः अनपेक्षितः दोषः सञ्जातः : '%FILENAME'				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 117				1	sa-IN	%FILENAME' एका सञ्चिका अस्ति।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 118				1	sa-IN	जालविजर्ड्-निर्धारणानि लोड् करोति...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 119				1	sa-IN	एकः अनपेक्षितः दोषः सञ्जातः।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 12				1	sa-IN	सञ्चिकारचनां प्रति निर्याणं कुरु :				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 120				1	sa-IN	लेख्यपत्राणि सिद्धीकरोति...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 121				1	sa-IN	ममाभिलेखः				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 122				1	sa-IN	उपोद्घातः				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 123				1	sa-IN	लेख्यपत्राणि				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 124				1	sa-IN	मुख्यपरिलेखः				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 125				1	sa-IN	परिलेखनिर्देशाः				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 126				1	sa-IN	शैली				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 127				1	sa-IN	जालस्थानसूचना				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 128				1	sa-IN	पूर्वदृश्यः				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 13				1	sa-IN	तव जालस्थानाय सामान्यसूचनां निवेशय				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 130				1	sa-IN	वृतनिर्धारणानि लुप्तानि भविष्यन्ति ।\n\nइमानि निर्धारणानि वस्तुतः लोपयितुमिच्छसि किम्?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 131				1	sa-IN	%NUMBER पृष्ठानि				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 132				1	sa-IN	%NUMBER अवसर्पिण्यः				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 133				1	sa-IN	उत्पादितम् : %DATE				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 134				1	sa-IN	अन्तिमविकृतम् : %DATE				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 135				1	sa-IN	जालविजर्ड्-निर्धारणानि				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 136				1	sa-IN	पृष्ठपटलचित्रम् :				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 137				1	sa-IN	प्रतीकसमुच्चयम् :				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 138				1	sa-IN	इदं प्रतीक-समुच्चयं HTML रचनायां प्रस्तुतिभ्यः उपयुज्यते। 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 139				1	sa-IN	HTML मेटाडाटा				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +14				1	sa-IN	शीर्षकः :				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +140				1	sa-IN	वृणु...				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +141				1	sa-IN	वृणु...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +142				1	sa-IN	<मूलभूतम्>				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +143				1	sa-IN	FTP प्रोक्सी द्वारा प्रकाशनं न समर्थितम्।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +144				1	sa-IN	<किमपि पृष्ठपटलचित्रं न>				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +145				1	sa-IN	<किमपि प्रतीकसमुच्चयं न>				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +146				1	sa-IN	'%FILENAME' इति FTP निर्देशिकाम् उत्पादयितुं न शक्यते।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 142				1	sa-IN	<मूलभूतम्>				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 143				1	sa-IN	FTP प्रोक्सी द्वारा प्रकाशनं न समर्थितम्।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 144				1	sa-IN	<किमपि पृष्ठपटलचित्रं न>				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 145				1	sa-IN	<किमपि प्रतीकसमुच्चयं न>				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 146				1	sa-IN	'%FILENAME' इति FTP निर्देशिकाम् उत्पादयितुं न शक्यते।				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +147				1	sa-IN	'%FILENAME' इति FTP निर्देशिका नास्ति। \nसम्प्रति निर्देशिकां उत्पादय?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +148				1	sa-IN	'%FILENAME' इति Zipसञ्चिकाम् उत्पादयितुं न शक्यते : समाननाम्ना निर्देशिका पूर्वमेव विद्यते।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 148				1	sa-IN	'%FILENAME' इति Zipसञ्चिकाम् उत्पादयितुं न शक्यते : समाननाम्ना निर्देशिका पूर्वमेव विद्यते।				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +149				1	sa-IN	'%FILENAME' इति स्थानिकनिर्देशिकाम् उत्पादयितुं न शक्यते। \nकृपया तव लेखनप्रवेशं परीक्षस्व।				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +150				1	sa-IN	'%FILENAME' इति स्थानिकनिर्देशिका न विद्यते। \nसम्प्रत्येव निर्देशिकां उत्पादय?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +151				1	sa-IN	परिमाणम् : %NUMBERKB				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +152				1	sa-IN	सञ्चिका न प्राप्ता। नूतनसञ्चिकावस्थानं निर्देष्टुमिच्छसि किम्?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +16				1	sa-IN	विवरणम् :				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +18				1	sa-IN	उत्पादितम् :				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +2				1	sa-IN	इदं जाल विजर्ड् इण्टर्नेट् मध्ये लेख्यपत्रप्रकाशने तव साहाय्यं करोति।\n\nइदं लेख्यपत्राणि परिवर्तयिष्यति अतः तानि जालकब्रौसर् मध्ये द्रष्टुं शक्यन्ते। एतदतिरिच्य, लेख्यपत्राणां सरलप्राप्त्यर्थम् इदं सम्बन्धैः द्वारा विषयसूचीपृष्ठम् उत्पादयिष्यति। अपि च, जालविजर्ड् तव जालस्थानस्य वैचित्र्यं परिलेखं च इष्टप्रकारेण कर्तुम् अनुमोदयिष्यति।\n\nजाले प्रकाशितानि लेख्यपत्राणि अद्यतनीकर्तुं तथा लेख्यपत्राणि कदापि सङ्कलयितुम् अपनेतुं च शक्नोषि।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +20				1	sa-IN	ई-मैल् :				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +21				1	sa-IN	कापीरैट् सूचना :				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +22				1	sa-IN	विकृतम् :				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +24				1	sa-IN	पूर्वदृश्यः				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +25				1	sa-IN	तव जालस्थानं कुत्र प्रकाशयितुमिच्छसि?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +26				1	sa-IN	नूतनजालस्थानं प्रकाशय :				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +27				1	sa-IN	स्थानिकसञ्चिकां प्रति				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 151				1	sa-IN	परिमाणम् : %NUMBERKB				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 152				1	sa-IN	सञ्चिका न प्राप्ता। नूतनसञ्चिकावस्थानं निर्देष्टुमिच्छसि किम्?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 16				1	sa-IN	विवरणम् :				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 18				1	sa-IN	उत्पादितम् :				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 2				1	sa-IN	इदं जाल विजर्ड् इण्टर्नेट् मध्ये लेख्यपत्रप्रकाशने तव साहाय्यं करोति।\n\nइदं लेख्यपत्राणि परिवर्तयिष्यति अतः तानि जालकब्रौसर् मध्ये द्रष्टुं शक्यन्ते। एतदतिरिच्य, लेख्यपत्राणां सरलप्राप्त्यर्थम् इदं सम्बन्धैः द्वारा विषयसूचीपृष्ठम् उत्पादयिष्यति। अपि च, जालविजर्ड् तव जालस्थानस्य वैचित्र्यं परिलेखं च इष्टप्रकारेण कर्तुम् अनुमोदयिष्यति।\n\nजाले प्रकाशितानि लेख्यपत्राणि अद्यतनीकर्तुं तथा लेख्यपत्राणि कदापि सङ्कलयितुम् अपनेतुं च शक्नोषि।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 20				1	sa-IN	ई-मैल् :				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 21				1	sa-IN	कापीरैट् सूचना :				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 22				1	sa-IN	विकृतम् :				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 24				1	sa-IN	पूर्वदृश्यः				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 25				1	sa-IN	तव जालस्थानं कुत्र प्रकाशयितुमिच्छसि?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 26				1	sa-IN	नूतनजालस्थानं प्रकाशय :				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 27				1	sa-IN	स्थानिकसञ्चिकां प्रति				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +28				1	sa-IN	...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +29				1	sa-IN	FTP द्वारा जालसर्वर् प्रति				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +31				1	sa-IN	विन्यासं कुरु...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +32				1	sa-IN	ZIP अभिलेखं प्रति				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 29				1	sa-IN	FTP द्वारा जालसर्वर् प्रति				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 31				1	sa-IN	विन्यासं कुरु...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 32				1	sa-IN	ZIP अभिलेखं प्रति				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +33				1	sa-IN	...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +34				1	sa-IN	निर्धारणानि सञ्चय (अनुशंसितः)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +35				1	sa-IN	एवं सञ्चय :				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +36				1	sa-IN	जालविजर्ड् कृते निर्धारणानि वृणु				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +37				1	sa-IN	जालस्थानान्तर्गतवस्तु				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +38				1	sa-IN	सङ्कलय...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +39				1	sa-IN	अपनय				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +4				1	sa-IN	लोपय				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +40				1	sa-IN	तव जालस्थानस्य विषयसूच्यै परिलेखं वृणु				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +41				1	sa-IN	विषयसूचीपृष्ठाय शैलीं वृणु				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +42				1	sa-IN	शैली :				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +48				1	sa-IN	परिलेखाः : 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +5				1	sa-IN	उपोद्घातः				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +50				1	sa-IN	विवरणम्				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +51				1	sa-IN	लेखकः				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +52				1	sa-IN	उत्पादनदिनाङ्कः				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +53				1	sa-IN	अन्तिमपरिणामदिनाङ्कः				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +54				1	sa-IN	सञ्चिकानाम				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +55				1	sa-IN	सञ्चिकासंरचना				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +56				1	sa-IN	सञ्चिकासंरचनाप्रतीकः				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +57				1	sa-IN	पृष्ठानां सङ्ख्या				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +58				1	sa-IN	KB इत्यस्मिन् परिमाणम्				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +59				1	sa-IN	तव ब्रौसर् मध्ये  पूर्वदृश्यं द्रष्टुं 'पूर्वदृश्यं' क्लिक्कुरु :				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +6				1	sa-IN	यानि प्रकाशितुमिच्छसि तानि लेख्यपत्राणि वृणु				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +60				1	sa-IN	वृतपरिलेखम् इष्टप्रकारेण कुरु				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +61				1	sa-IN	विषयसूच्यां प्रत्येकलेख्यपत्राय निम्नसूचनां समावेशय :				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +62				1	sa-IN	पटविश्लेषणाय परिलेखम् अनुकूलतमं कुरु :				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +64				1	sa-IN	~640x480				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +65				1	sa-IN	~800x600				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +66				1	sa-IN	~1024x768				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +70				1	sa-IN	तव जालस्थानं उत्पादयति				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +71				1	sa-IN	%START - %END/%TOTAL				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +72				1	sa-IN	मम जालस्थानम्				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +73				1	sa-IN	FTP लक्ष्यं '%FILENAME' एका सञ्चिकाऽस्ति।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +74				1	sa-IN	स्थानिकलक्ष्यं '%FILENAME' एका सञ्चिकाऽस्ति।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +75				1	sa-IN	ZIP लक्ष्यं '%FILENAME' पूर्वमेव विद्यते। वर्तमानलक्ष्यम् अधिलिखितुमिच्छसि किम्?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +76				1	sa-IN	FTP लक्ष्यनिर्देशिका '%FILENAME' रिक्ता नास्ति। कतिपयसञ्चिकाः अधिलिखिताः भवेयुः। अनुसन्तनोतुमिच्छसि किम्?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +77				1	sa-IN	स्थानिकलक्ष्यनिर्देशिका '%FILENAME' रिक्ता नास्ति। कतिपयसञ्चिकाः अधिलिखिताः भवेयुः। अनुसन्तनोतुमिच्छसि किम्?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +78				1	sa-IN	दत्तनाम्नि निर्धारणानि पूर्वमेव विद्यन्ते। वर्तमाननिर्धारणानि अधिलिखितुमिच्छसि किम्?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +79				1	sa-IN	लेख्यपत्राणां निर्याणं करोति...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +8				1	sa-IN	लेख्यपत्रसूचना				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +80				1	sa-IN	निर्याणं सज्जीकरोति...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +81				1	sa-IN	परिलेखसञ्चिकाः अनुरूपयति...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +82				1	sa-IN	विषयसूच्युत्पादनं सज्जीकरोति...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +83				1	sa-IN	विषयसूचीम् उत्पादयति...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +84				1	sa-IN	आरभते...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +86				1	sa-IN	प्रकाशनार्थं सन्नद्धं करोति...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +87				1	sa-IN	स्थानिकनिर्देशिकायां प्रकाशयति...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +88				1	sa-IN	FTP गन्तव्ये प्रकाशयति...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +89				1	sa-IN	ZIP अभिलेखे प्रकाशयति...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +9				1	sa-IN	शीर्षकः :				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 34				1	sa-IN	निर्धारणानि सञ्चय (अनुशंसितः)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 35				1	sa-IN	एवं सञ्चय :				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 36				1	sa-IN	जालविजर्ड् कृते निर्धारणानि वृणु				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 37				1	sa-IN	जालस्थानान्तर्गतवस्तु				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 38				1	sa-IN	सङ्कलय...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 39				1	sa-IN	अपनय				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 4				1	sa-IN	लोपय				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 40				1	sa-IN	तव जालस्थानस्य विषयसूच्यै परिलेखं वृणु				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 41				1	sa-IN	विषयसूचीपृष्ठाय शैलीं वृणु				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 42				1	sa-IN	शैली :				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 48				1	sa-IN	परिलेखाः : 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 5				1	sa-IN	उपोद्घातः				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 50				1	sa-IN	विवरणम्				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 51				1	sa-IN	लेखकः				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 52				1	sa-IN	उत्पादनदिनाङ्कः				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 53				1	sa-IN	अन्तिमपरिणामदिनाङ्कः				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 54				1	sa-IN	सञ्चिकानाम				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 55				1	sa-IN	सञ्चिकासंरचना				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 56				1	sa-IN	सञ्चिकासंरचनाप्रतीकः				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 57				1	sa-IN	पृष्ठानां सङ्ख्या				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 58				1	sa-IN	KB इत्यस्मिन् परिमाणम्				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 59				1	sa-IN	तव ब्रौसर् मध्ये  पूर्वदृश्यं द्रष्टुं 'पूर्वदृश्यं' क्लिक्कुरु :				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 6				1	sa-IN	यानि प्रकाशितुमिच्छसि तानि लेख्यपत्राणि वृणु				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 60				1	sa-IN	वृतपरिलेखम् इष्टप्रकारेण कुरु				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 61				1	sa-IN	विषयसूच्यां प्रत्येकलेख्यपत्राय निम्नसूचनां समावेशय :				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 62				1	sa-IN	पटविश्लेषणाय परिलेखम् अनुकूलतमं कुरु :				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 64				1	sa-IN	~640x480				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 65				1	sa-IN	~800x600				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 66				1	sa-IN	~1024x768				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 70				1	sa-IN	तव जालस्थानं उत्पादयति				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 71				1	sa-IN	%START - %END/%TOTAL				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 72				1	sa-IN	मम जालस्थानम्				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 73				1	sa-IN	FTP लक्ष्यं '%FILENAME' एका सञ्चिकाऽस्ति।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 74				1	sa-IN	स्थानिकलक्ष्यं '%FILENAME' एका सञ्चिकाऽस्ति।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 75				1	sa-IN	ZIP लक्ष्यं '%FILENAME' पूर्वमेव विद्यते। वर्तमानलक्ष्यम् अधिलिखितुमिच्छसि किम्?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 76				1	sa-IN	FTP लक्ष्यनिर्देशिका '%FILENAME' रिक्ता नास्ति। कतिपयसञ्चिकाः अधिलिखिताः भवेयुः। अनुसन्तनोतुमिच्छसि किम्?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 77				1	sa-IN	स्थानिकलक्ष्यनिर्देशिका '%FILENAME' रिक्ता नास्ति। कतिपयसञ्चिकाः अधिलिखिताः भवेयुः। अनुसन्तनोतुमिच्छसि किम्?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 78				1	sa-IN	दत्तनाम्नि निर्धारणानि पूर्वमेव विद्यन्ते। वर्तमाननिर्धारणानि अधिलिखितुमिच्छसि किम्?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 79				1	sa-IN	लेख्यपत्राणां निर्याणं करोति...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 8				1	sa-IN	लेख्यपत्रसूचना				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 80				1	sa-IN	निर्याणं सज्जीकरोति...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 81				1	sa-IN	परिलेखसञ्चिकाः अनुरूपयति...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 82				1	sa-IN	विषयसूच्युत्पादनं सज्जीकरोति...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 83				1	sa-IN	विषयसूचीम् उत्पादयति...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 84				1	sa-IN	आरभते...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 86				1	sa-IN	प्रकाशनार्थं सन्नद्धं करोति...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 87				1	sa-IN	स्थानिकनिर्देशिकायां प्रकाशयति...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 88				1	sa-IN	FTP गन्तव्ये प्रकाशयति...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 89				1	sa-IN	ZIP अभिलेखे प्रकाशयति...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 9				1	sa-IN	शीर्षकः :				2002-02-02 02:02:02
 wizards	source\importwizard\importwi.src	0	string	sBackButton				1	sa-IN	<<पृष्ठे				2002-02-02 02:02:02
 wizards	source\importwizard\importwi.src	0	string	sBeginButton				1	sa-IN	परिवर्तय				2002-02-02 02:02:02
 wizards	source\importwizard\importwi.src	0	string	sCancelButton				1	sa-IN	निरसनं कुरु				2002-02-02 02:02:02
