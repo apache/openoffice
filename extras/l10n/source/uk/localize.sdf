@@ -5665,7 +5665,7 @@ filter	source\pdf\impdialog.src	0	fixedtext	RID_PDF_TAB_GENER	FT_QUALITY			83	uk
 filter	source\pdf\impdialog.src	0	checkbox	RID_PDF_TAB_GENER	CB_REDUCEIMAGERESOLUTION			101	uk	~Роздільна здатність зображення				20220827 09:49:47
 filter	source\pdf\impdialog.src	0	tabpage	RID_PDF_TAB_GENER		HID_FILTER_PDF_OPTIONS		0	uk	Загальні				20220827 09:49:47
 filter	source\pdf\impdialog.src	0	fixedline	FL_GENERAL				164	uk	Загальні				20220827 09:49:47
-filter	source\pdf\impdialog.src	0	checkbox	CB_PDFA_1B_SELECT				158	uk	P~DF/A-1a				20220827 09:49:47
+filter	source\pdf\impdialog.src	0	checkbox	CB_PDFA_1B_SELECT				158	uk	PDF/A-1				20220827 09:49:47
 filter	source\pdf\impdialog.src	0	checkbox	CB_TAGGEDPDF				158	uk	~Структурований PDF				20220827 09:49:47
 filter	source\pdf\impdialog.src	0	checkbox	CB_EXPORTFORMFIELDS				158	uk	~Створити форму PDF				20220827 09:49:47
 filter	source\pdf\impdialog.src	0	fixedtext	FT_FORMSFORMAT				93	uk	~Формат передачі				20220827 09:49:47
@@ -52354,7 +52354,7 @@ instsetoo_native	inc_openoffice\windows\msi_languages\Control.ulf	0	LngText	OOO_
 instsetoo_native	inc_openoffice\windows\msi_languages\Control.ulf	0	LngText	OOO_CONTROL_203				0	uk	За допомогою підключення до Інтернету можна переконатися, що у вас є останні оновлення.				20220827 09:49:47
 instsetoo_native	inc_openoffice\windows\msi_languages\Control.ulf	0	LngText	OOO_CONTROL_204				0	uk	&Перервати				20220827 09:49:47
 instsetoo_native	inc_openoffice\windows\msi_languages\Control.ulf	0	LngText	OOO_CONTROL_205				0	uk	&Скасувати				20220827 09:49:47
-instsetoo_native	inc_openoffice\windows\msi_languages\Control.ulf	0	LngText	OOO_CONTROL_206				0	uk	error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here				20220827 09:49:47
+instsetoo_native	inc_openoffice\windows\msi_languages\Control.ulf	0	LngText	OOO_CONTROL_206				0	uk	текст помилки помістити сюди  текст помилки помістити сюди  текст помилки помістити сюди  текст помилки помістити сюди  текст помилки помістити сюди  текст помилки помістити сюди  текст помилки помістити сюди  текст помилки помістити сюди  текст помилки помістити сюди  текст помилки помістити сюди				20220827 09:49:47
 instsetoo_native	inc_openoffice\windows\msi_languages\Control.ulf	0	LngText	OOO_CONTROL_207				0	uk	&Ігнорувати				20220827 09:49:47
 instsetoo_native	inc_openoffice\windows\msi_languages\Control.ulf	0	LngText	OOO_CONTROL_208				0	uk	&Ні				20220827 09:49:47
 instsetoo_native	inc_openoffice\windows\msi_languages\Control.ulf	0	LngText	OOO_CONTROL_209				0	uk	&Гаразд				20220827 09:49:47
@@ -53203,7 +53203,7 @@ officecfg	registry\data\org\openoffice\Office\TableWizard.xcu	0	value	..TableWiz
 officecfg	registry\data\org\openoffice\Office\TableWizard.xcu	0	value	..TableWizard.TableWizard.business.Tables.projects.Fields.begindate	ShortName			0	uk	BeginDate				20220827 09:49:47
 officecfg	registry\data\org\openoffice\Office\TableWizard.xcu	0	value	..TableWizard.TableWizard.business.Tables.projects.Fields.enddate	Name			0	uk	EndDate				20220827 09:49:47
 officecfg	registry\data\org\openoffice\Office\TableWizard.xcu	0	value	..TableWizard.TableWizard.business.Tables.projects.Fields.enddate	ShortName			0	uk	EndDate				20220827 09:49:47
-officecfg	registry\data\org\openoffice\Office\TableWizard.xcu	0	value	..TableWizard.TableWizard.business.Tables.events	Name			0	uk	Events				20220827 09:49:47
+officecfg	registry\data\org\openoffice\Office\TableWizard.xcu	0	value	..TableWizard.TableWizard.business.Tables.events	Name			0	uk	Події				20220827 09:49:47
 officecfg	registry\data\org\openoffice\Office\TableWizard.xcu	0	value	..TableWizard.TableWizard.business.Tables.events.Fields.eventID	Name			0	uk	EventID				20220827 09:49:47
 officecfg	registry\data\org\openoffice\Office\TableWizard.xcu	0	value	..TableWizard.TableWizard.business.Tables.events.Fields.eventID	ShortName			0	uk	EventID				20220827 09:49:47
 officecfg	registry\data\org\openoffice\Office\TableWizard.xcu	0	value	..TableWizard.TableWizard.business.Tables.events.Fields.eventname	Name			0	uk	EventName				20220827 09:49:47
@@ -60124,13 +60124,13 @@ sc	source\ui\src\globstr.src	0	string	RID_GLOBSTR	STR_NEWTABNAMENOTUNIQUE			0	uk
 sc	source\ui\src\globstr.src	0	string	RID_GLOBSTR	STR_INVALIDTABNAME			0	uk	Неправильна назва аркушу.				20220827 09:49:47
 sc	source\ui\src\globstr.src	0	string	RID_GLOBSTR	STR_SCENARIO			0	uk	Сценарій				20220827 09:49:47
 sc	source\ui\src\globstr.src	0	string	RID_GLOBSTR	STR_PIVOT_TABLE			0	uk	Зведена таблиця				20220827 09:49:47
-sc	source\ui\src\globstr.src	0	string	RID_GLOBSTR	STR_FUN_TEXT_SUM			0	uk	Sum				20220827 09:49:47
-sc	source\ui\src\globstr.src	0	string	RID_GLOBSTR	STR_FUN_TEXT_COUNT			0	uk	Count				20220827 09:49:47
+sc	source\ui\src\globstr.src	0	string	RID_GLOBSTR	STR_FUN_TEXT_SUM			0	uk	Сума				20220827 09:49:47
+sc	source\ui\src\globstr.src	0	string	RID_GLOBSTR	STR_FUN_TEXT_COUNT			0	uk	Кількість				20220827 09:49:47
 sc	source\ui\src\globstr.src	0	string	RID_GLOBSTR	STR_FUN_TEXT_COUNT2			0	uk	КількістьА				20220827 09:49:47
-sc	source\ui\src\globstr.src	0	string	RID_GLOBSTR	STR_FUN_TEXT_AVG			0	uk	Average				20220827 09:49:47
-sc	source\ui\src\globstr.src	0	string	RID_GLOBSTR	STR_FUN_TEXT_MAX			0	uk	Max				20220827 09:49:47
-sc	source\ui\src\globstr.src	0	string	RID_GLOBSTR	STR_FUN_TEXT_MIN			0	uk	Min				20220827 09:49:47
-sc	source\ui\src\globstr.src	0	string	RID_GLOBSTR	STR_FUN_TEXT_PRODUCT			0	uk	Product				20220827 09:49:47
+sc	source\ui\src\globstr.src	0	string	RID_GLOBSTR	STR_FUN_TEXT_AVG			0	uk	Середнє значення				20220827 09:49:47
+sc	source\ui\src\globstr.src	0	string	RID_GLOBSTR	STR_FUN_TEXT_MAX			0	uk	Максимум				20220827 09:49:47
+sc	source\ui\src\globstr.src	0	string	RID_GLOBSTR	STR_FUN_TEXT_MIN			0	uk	Мінімум				20220827 09:49:47
+sc	source\ui\src\globstr.src	0	string	RID_GLOBSTR	STR_FUN_TEXT_PRODUCT			0	uk	Добуток				20220827 09:49:47
 sc	source\ui\src\globstr.src	0	string	RID_GLOBSTR	STR_FUN_TEXT_STDDEV			0	uk	СтдВідх				20220827 09:49:47
 sc	source\ui\src\globstr.src	0	string	RID_GLOBSTR	STR_FUN_TEXT_VAR			0	uk	Дисперсія				20220827 09:49:47
 sc	source\ui\src\globstr.src	0	string	RID_GLOBSTR	STR_NOCHARTATCURSOR			0	uk	Діаграму не знайдено у цій позиції.				20220827 09:49:47
@@ -62182,7 +62182,7 @@ sd	source\filter\html\pubdlg.src	0	timefield	DLG_PUBLISHING	PAGE2_DURATION_TMF		
 sd	source\filter\html\pubdlg.src	0	checkbox	DLG_PUBLISHING	PAGE2_ENDLESS			108	uk	~Нескінченно				20220827 09:49:47
 sd	source\filter\html\pubdlg.src	0	fixedline	DLG_PUBLISHING	PAGE2_TITEL_WEBCAST			128	uk	Інтернет-трансляція				20220827 09:49:47
 sd	source\filter\html\pubdlg.src	0	radiobutton	DLG_PUBLISHING	PAGE2_ASP			116	uk	~Active Server Pages (ASP)				20220827 09:49:47
-sd	source\filter\html\pubdlg.src	0	radiobutton	DLG_PUBLISHING	PAGE2_PERL			116	uk	Perl				20220827 09:49:47
+sd	source\filter\html\pubdlg.src	0	radiobutton	DLG_PUBLISHING	PAGE2_PERL			116	uk	Rerl				20220827 09:49:47
 sd	source\filter\html\pubdlg.src	0	fixedtext	DLG_PUBLISHING	PAGE2_INDEX_TXT			105	uk	~URL для слухачів				20220827 09:49:47
 sd	source\filter\html\pubdlg.src	0	fixedtext	DLG_PUBLISHING	PAGE2_URL_TXT			105	uk	URL для ~презентації:				20220827 09:49:47
 sd	source\filter\html\pubdlg.src	0	fixedtext	DLG_PUBLISHING	PAGE2_CGI_TXT			105	uk	URL для сценаріїв ~Perl				20220827 09:49:47
@@ -64514,7 +64514,7 @@ starmath	source\symbol.src	0	itemlist	RID_UI_SYMBOL_NAMES	46			0	uk	PSI				20220
 starmath	source\symbol.src	0	itemlist	RID_UI_SYMBOL_NAMES	47			0	uk	omega				20220827 09:49:47
 starmath	source\symbol.src	0	itemlist	RID_UI_SYMBOL_NAMES	48			0	uk	OMEGA				20220827 09:49:47
 starmath	source\symbol.src	0	itemlist	RID_UI_SYMBOL_NAMES	49			0	uk	varepsilon				20220827 09:49:47
-starmath	source\symbol.src	0	itemlist	RID_UI_SYMBOL_NAMES	50			0	uk	vartheta				20220827 09:49:47
+starmath	source\symbol.src	0	itemlist	RID_UI_SYMBOL_NAMES	50			0	uk	vjlr				20220827 09:49:47
 starmath	source\symbol.src	0	itemlist	RID_UI_SYMBOL_NAMES	51			0	uk	varpi				20220827 09:49:47
 starmath	source\symbol.src	0	itemlist	RID_UI_SYMBOL_NAMES	52			0	uk	varrho				20220827 09:49:47
 starmath	source\symbol.src	0	itemlist	RID_UI_SYMBOL_NAMES	53			0	uk	varsigma				20220827 09:49:47
@@ -71041,8 +71041,8 @@ sw	source\ui\utlui\utlui.src	0	string	STR_MULT_INTERACT_SPELL_WARN				0	uk	Ін�
 sw	source\ui\utlui\utlui.src	0	string	STR_MULT_INTERACT_HYPH_WARN				0	uk	Інтерактивну розстановку переносів\nвже увімкнено у іншому документі				20220827 09:49:47
 sw	source\ui\utlui\utlui.src	0	string	STR_SPELL_TITLE				0	uk	Перевірка орфографії				20220827 09:49:47
 sw	source\ui\utlui\utlui.src	0	string	STR_HYPH_TITLE				0	uk	Розстановка переносів				20220827 09:49:47
-sw	source\ui\utlui\utlui.src	0	string	STR_HYPERCTRL_SEL				0	uk	SEL				20220827 09:49:47
-sw	source\ui\utlui\utlui.src	0	string	STR_HYPERCTRL_HYP				0	uk	HYP				20220827 09:49:47
+sw	source\ui\utlui\utlui.src	0	string	STR_HYPERCTRL_SEL				0	uk	ТЕКСТ				20220827 09:49:47
+sw	source\ui\utlui\utlui.src	0	string	STR_HYPERCTRL_HYP				0	uk	ПОСИЛ				20220827 09:49:47
 sw	source\ui\utlui\unotools.src	0	fixedtext	DLG_RENAME_XNAMED	FT_NEW_NAME			50	uk	Нова назва				20220827 09:49:47
 sw	source\ui\utlui\unotools.src	0	fixedline	DLG_RENAME_XNAMED	FL_NAME			152	uk	Змінити назву				20220827 09:49:47
 sw	source\ui\utlui\unotools.src	0	modaldialog	DLG_RENAME_XNAMED		HID_RENAME_XNAMED		220	uk	Перейменувати об'єкт:				20220827 09:49:47

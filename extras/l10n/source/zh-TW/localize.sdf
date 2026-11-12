@@ -4543,6 +4543,24 @@ svx	source\form\fmexpl.src	0	menuitem	RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTT
 svx	source\form\fmexpl.src	0	groupbox	RID_SVXDLG_SETFORM	GB_PATH			188	zh-TW	路徑				20200411 15:09:53
 svx	source\form\fmexpl.src	0	modaldialog	RID_SVXDLG_SETFORM				200	zh-TW	選擇表單				20200411 15:09:53
 svx	source\form\fmexpl.src	0	dockingwindow	RID_SVX_FMEXPLORER				200	zh-TW	表單助手				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_EDIT	CMD_SID_FM_CONVERTTO_EDIT		42916	zh-TW	文字方塊(~T)				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_BUTTON	CMD_SID_FM_CONVERTTO_BUTTON		42916	zh-TW	按鈕(~B)				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_FIXEDTEXT	CMD_SID_FM_CONVERTTO_FIXEDTEXT		42916	zh-TW	標籤欄位(~B)				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_GROUPBOX	CMD_SID_FM_CONVERTTO_GROUPBOX		42916	zh-TW	群組方塊(~g)				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_LISTBOX	CMD_SID_FM_CONVERTTO_LISTBOX		42916	zh-TW	清單方塊(~l)				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_CHECKBOX	CMD_SID_FM_CONVERTTO_CHECKBOX		42916	zh-TW	核取方塊(~C)				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_RADIOBUTTON	CMD_SID_FM_CONVERTTO_RADIOBUTTON		42916	zh-TW	選項按鈕(~R)				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_COMBOBOX	CMD_SID_FM_CONVERTTO_COMBOBOX		42916	zh-TW	群組方塊(~x)				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_IMAGEBUTTON	CMD_SID_FM_CONVERTTO_IMAGEBUTTON		42916	zh-TW	圖型按鈕(~p)				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_FILECONTROL	CMD_SID_FM_CONVERTTO_FILECONTROL		42916	zh-TW	選擇檔案(~S)				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_DATE	CMD_SID_FM_CONVERTTO_DATE		42916	zh-TW	日期欄位(~D)				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_TIME	CMD_SID_FM_CONVERTTO_TIME		42916	zh-TW	時間欄位(~h)				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_NUMERIC	CMD_SID_FM_CONVERTTO_NUMERIC		42916	zh-TW	數字欄位(~n)				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_CURRENCY	CMD_SID_FM_CONVERTTO_CURRENCY		42916	zh-TW	貨幣欄位(~m)				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_PATTERN	CMD_SID_FM_CONVERTTO_PATTERN		42916	zh-TW	樣式欄位(~m)				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_IMAGECONTROL	CMD_SID_FM_CONVERTTO_IMAGECONTROL		42916	zh-TW	圖式控制項(~p)				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_FORMATTED	CMD_SID_FM_CONVERTTO_FORMATTED		42916	zh-TW	格式化的欄位(~C)				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_SCROLLBAR	CMD_SID_FM_CONVERTTO_SCROLLBAR		42916	zh-TW	捲動軸				20200411 15:09:53
 svx	source\form\filtnav.src	0	menuitem	RID_FM_FILTER_MENU	SID_FM_DELETE	HID_FM_DELETE		0	zh-TW	刪除(~D)				20200411 15:09:53
 svx	source\form\filtnav.src	0	menuitem	RID_FM_FILTER_MENU	SID_FM_FILTER_EDIT	HID_FM_FILTER_EDIT		0	zh-TW	編輯(~E)				20200411 15:09:53
 svx	source\form\filtnav.src	0	menuitem	RID_FM_FILTER_MENU	SID_FM_FILTER_IS_NULL	HID_FM_FILTER_IS_NULL		0	zh-TW	是空值(~E)				20200411 15:09:53
@@ -15672,6 +15690,7 @@ officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..G
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Popups..uno:TransliterateMenu	Label			0	zh-TW	變更大小寫(~C)				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Popups..uno:ViewMenu	Label			0	zh-TW	~View				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Popups..uno:WindowList	Label			0	zh-TW	~Window				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:Substract	Label			0	zh-TW	減去(~S)				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:AcceptChange	Label			0	zh-TW	接受變更				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:AcceptTracedChange	Label			0	zh-TW	接受變更				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:AcceptTrackedChanges	Label			0	zh-TW	接受或捨棄(~A)...				20200411 15:09:53
@@ -53911,6 +53930,7 @@ helpcontent2	source\text\scalc\guide\multioperation.xhp	0	help	par_id3156113				
 helpcontent2	source\text\scalc\guide\multioperation.xhp	0	help	par_id3154049				0	zh-TW	將游標置於 \<emph\>[欄]\</emph\> 欄位中，然後按一下 B4。這表示 B4 (即數量) 為垂直輸入的變數。				20200411 15:09:53
 helpcontent2	source\text\scalc\guide\multioperation.xhp	0	help	par_id3149141				0	zh-TW	選取 [確定] 以關閉對話方塊。您會看見範圍 E2:H11 中不同售價的利潤。				20200411 15:09:53
 helpcontent2	source\text\scalc\guide\multioperation.xhp	0	help	par_id3155104				0	zh-TW	\<link href=\"text/scalc/01/12060000.xhp\" name=\"多重運算\"\>多重運算\</link\>				20200411 15:09:53
+helpcontent2	source\text\scalc\guide\multioperation.xhp	0	help	par_id3153189				0	zh-TW	假定您生產玩具，且每個玩·的價格為 $10。每個玩具的成本為 $2，另外每年的固定成本為 $10,000。如果一年售出一定數量的玩具，則利潤為多少？				20200411 15:09:53
 helpcontent2	source\text\scalc\guide\csv_files.xhp	0	help	tit				0	zh-TW	匯入與匯出 CSV 檔案				20200411 15:09:53
 helpcontent2	source\text\scalc\guide\csv_files.xhp	0	help	bm_id892361				0	zh-TW	\<bookmark_value\>數字序列匯入\</bookmark_value\>\<bookmark_value\>資料序列匯入\</bookmark_value\>\<bookmark_value\>匯出; 表格匯出為文字\</bookmark_value\>\<bookmark_value\>匯入; 表格匯入為文字\</bookmark_value\>\<bookmark_value\>分隔的值與檔案\</bookmark_value\>\<bookmark_value\>逗號分隔的檔案與值\</bookmark_value\>\<bookmark_value\>文字檔匯入與匯出\</bookmark_value\>\<bookmark_value\>csv 檔案; 匯入與匯出\</bookmark_value\>\<bookmark_value\>表格; 匯入/匯出為文字\</bookmark_value\>\<bookmark_value\>文字文件; 匯入試算表\</bookmark_value\>\<bookmark_value\>開啟; 文字 csv 檔案\</bookmark_value\>\<bookmark_value\>儲存; 為文字 csv\</bookmark_value\>				20200411 15:09:53
 helpcontent2	source\text\scalc\guide\csv_files.xhp	0	help	par_idN10862				0	zh-TW	\<variable id=\"csv_files\"\>\<link href=\"text/scalc/guide/csv_files.xhp\"\>開啟並儲存文字 CSV 檔案\</link\>\</variable\>				20200411 15:09:53
@@ -71951,6 +71971,15 @@ dbaccess	source\ui\browser\sbabrw.src	0	string	STR_LOADING_TABLE				0	zh-TW	載�
 dbaccess	source\ui\browser\sbabrw.src	0	string	STR_NO_TABLE_FORMAT_INSIDE				0	zh-TW	找不到資料表格式。				20200411 15:09:53
 dbaccess	source\ui\browser\sbabrw.src	0	string	STR_COULDNOTCONNECT_DATASOURCE				0	zh-TW	無法建立與資料來源「$name$」的連線。				20200411 15:09:53
 dbaccess	source\ui\browser\sbabrw.src	0	menuitem	RID_MENU_REFRESH_DATA	ID_BROWSER_REFRESH_REBUILD			0	zh-TW	重新建立				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_TITLE_CONFIRM_DELETION			7527	zh-TW	確認刪除				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_QUERY_DELETE_TABLE			7527	zh-TW	要刪除資料表「%1」？				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	querybox	MENU_BROWSER_DEFAULTCONTEXT	QUERY_BRW_DELETE_QUERY_CONFIRM			7527	zh-TW	查詢已經存在。您是否要刪除？				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	querybox	MENU_BROWSER_DEFAULTCONTEXT	QUERY_CONNECTION_LOST			7527	zh-TW	和資料庫的連線已經關閉。要重新連線？				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_OPENTABLES_WARNINGS			7527	zh-TW	遇到警告訊息				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_OPENTABLES_WARNINGS_DETAILS			7527	zh-TW	讀取資料表時，資料庫連線傳回警告。				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_NO_TABLE_FORMAT_INSIDE			7527	zh-TW	找不到資料表格式。				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_COULDNOTCONNECT_DATASOURCE			7527	zh-TW	無法建立與資料來源「$name$」的連線。				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	menuitem	MENU_BROWSER_DEFAULTCONTEXT.RID_MENU_REFRESH_DATA	ID_BROWSER_REFRESH_REBUILD			25336	zh-TW	重新建立				20200411 15:09:53
 dbaccess	source\ui\browser\sbagrid.src	0	menuitem	RID_SBA_GRID_COLCTXMENU	ID_BROWSER_COLATTRSET	HID_BROWSER_COLUMNFORMAT		0	zh-TW	欄格式(~F)...				20200411 15:09:53
 dbaccess	source\ui\browser\sbagrid.src	0	menuitem	RID_SBA_GRID_COLCTXMENU	ID_BROWSER_COLUMNINFO	HID_BROWSER_COLUMNINFO		0	zh-TW	複製列標題(~E)				20200411 15:09:53
 dbaccess	source\ui\browser\sbagrid.src	0	menuitem	RID_SBA_GRID_ROWCTXMENU	ID_BROWSER_TABLEATTR	HID_BROWSER_TABLEFORMAT		0	zh-TW	資料表格式...				20200411 15:09:53
@@ -72916,3 +72945,16 @@ padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_TXT			14
 padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_USER_TXT			60	zh-TW	使用者(~U)				20200411 15:09:53
 padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_PASS_TXT			60	zh-TW	密碼(~P)				20200411 15:09:53
 padmin	source\rtsetup.src	0	modaldialog	RID_RTS_PWDIALOG				150	zh-TW	認證請求				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10652				0	zh-TW	\<ahelp hid=\".\" visibility=\"hidden\"\>開啟 [母片] 標籤頁，您可以在其中對所有投影片 (按一下滑鼠左鍵) 或選取的投影片 (按一下滑鼠右鍵) 套用母片 (背景)。\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1067D				0	zh-TW	\<ahelp hid=\".\" visibility=\"hidden\"\>列出目前使用的母片。\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106A8				0	zh-TW	\<ahelp hid=\".\" visibility=\"hidden\"\>列出最近使用的母片。\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106D3				0	zh-TW	\<ahelp hid=\".\" visibility=\"hidden\"\>列出所有可用的母片。\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106FA				0	zh-TW	\<ahelp hid=\".\" visibility=\"hidden\"\>按一下滑鼠左鍵，以對所有投影片套用母片。按一下滑鼠右鍵會顯示子功能表。\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10747				0	zh-TW	\<ahelp hid=\".\" visibility=\"hidden\"\>對所有投影片套用母片。\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10762				0	zh-TW	\<ahelp hid=\".\" visibility=\"hidden\"\>對選取的投影片套用母片或投影片設計。\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10785				0	zh-TW	\<ahelp hid=\".\" visibility=\"hidden\"\>調整母片的預覽大小。\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107B4				0	zh-TW	\<ahelp hid=\".\" visibility=\"hidden\"\>開啟 [版面配置] 標籤頁，您可以在其中對選取的一張或多張投影片套用投影片設計。\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107CB				0	zh-TW	\<ahelp hid=\".\" visibility=\"hidden\"\>按一下以對所有選取的投影片套用投影片設計。按一下滑鼠右鍵會顯示子功能表。\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1080E				0	zh-TW	\<ahelp hid=\".\" visibility=\"hidden\"\>開啟 [自訂動畫] 標籤頁，您可以在其中對投影片上選取的物件套用效果。\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10839				0	zh-TW	\<ahelp hid=\".\" visibility=\"hidden\"\>開啟 [投影片切換] 標籤頁，您可以在其中對選取的投影片套用變換效果。\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_id0916200812240344				0	zh-TW	\<ahelp hid=\".\" visibility=\"hidden\"\>開啟 [表格設計]。連按兩下預覽可插入新表格。\</ahelp\>				20200411 15:09:53

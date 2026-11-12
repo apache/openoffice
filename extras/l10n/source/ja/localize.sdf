@@ -4543,6 +4543,24 @@ svx	source\form\fmexpl.src	0	menuitem	RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTT
 svx	source\form\fmexpl.src	0	groupbox	RID_SVXDLG_SETFORM	GB_PATH			188	ja	パス				20200411 15:09:53
 svx	source\form\fmexpl.src	0	modaldialog	RID_SVXDLG_SETFORM				200	ja	フォームの選択				20200411 15:09:53
 svx	source\form\fmexpl.src	0	dockingwindow	RID_SVX_FMEXPLORER				200	ja	フォームナビゲータ				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_EDIT	CMD_SID_FM_CONVERTTO_EDIT		42916	ja	テキストボックス(~T)				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_BUTTON	CMD_SID_FM_CONVERTTO_BUTTON		42916	ja	ボタン(~B)				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_FIXEDTEXT	CMD_SID_FM_CONVERTTO_FIXEDTEXT		42916	ja	ラベルフィールド(~B)				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_GROUPBOX	CMD_SID_FM_CONVERTTO_GROUPBOX		42916	ja	グループボックス(~R)				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_LISTBOX	CMD_SID_FM_CONVERTTO_LISTBOX		42916	ja	リストボックス(~I)				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_CHECKBOX	CMD_SID_FM_CONVERTTO_CHECKBOX		42916	ja	チェックボックス(~C)				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_RADIOBUTTON	CMD_SID_FM_CONVERTTO_RADIOBUTTON		42916	ja	ラジオボタン(~R)				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_COMBOBOX	CMD_SID_FM_CONVERTTO_COMBOBOX		42916	ja	コンボボックス(~X)				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_IMAGEBUTTON	CMD_SID_FM_CONVERTTO_IMAGEBUTTON		42916	ja	イメージボタン(~M)				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_FILECONTROL	CMD_SID_FM_CONVERTTO_FILECONTROL		42916	ja	ファイル選択(~F)				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_DATE	CMD_SID_FM_CONVERTTO_DATE		42916	ja	日付フィールド(~D)				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_TIME	CMD_SID_FM_CONVERTTO_TIME		42916	ja	時刻フィールド(~E)				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_NUMERIC	CMD_SID_FM_CONVERTTO_NUMERIC		42916	ja	数値フィールド(~N)				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_CURRENCY	CMD_SID_FM_CONVERTTO_CURRENCY		42916	ja	通貨フィールド(~U)				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_PATTERN	CMD_SID_FM_CONVERTTO_PATTERN		42916	ja	パターンフィールド(~P)				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_IMAGECONTROL	CMD_SID_FM_CONVERTTO_IMAGECONTROL		42916	ja	イメージコントロールフィールド(~G)				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_FORMATTED	CMD_SID_FM_CONVERTTO_FORMATTED		42916	ja	書式設定されたフィールド(~R)				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_SCROLLBAR	CMD_SID_FM_CONVERTTO_SCROLLBAR		42916	ja	スクロールバー				20200411 15:09:53
 svx	source\form\filtnav.src	0	menuitem	RID_FM_FILTER_MENU	SID_FM_DELETE	HID_FM_DELETE		0	ja	削除(~D)				20200411 15:09:53
 svx	source\form\filtnav.src	0	menuitem	RID_FM_FILTER_MENU	SID_FM_FILTER_EDIT	HID_FM_FILTER_EDIT		0	ja	編集(~E)				20200411 15:09:53
 svx	source\form\filtnav.src	0	menuitem	RID_FM_FILTER_MENU	SID_FM_FILTER_IS_NULL	HID_FM_FILTER_IS_NULL		0	ja	Null (~I)				20200411 15:09:53
@@ -15672,6 +15690,7 @@ officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..G
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Popups..uno:TransliterateMenu	Label			0	ja	文字種の変換				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Popups..uno:ViewMenu	Label			0	ja	~View				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Popups..uno:WindowList	Label			0	ja	~Window				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:Substract	Label			0	ja	差分				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:AcceptChange	Label			0	ja	変更を承認する				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:AcceptTracedChange	Label			0	ja	変更を承認する				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:AcceptTrackedChanges	Label			0	ja	承認または却下(~A)...				20200411 15:09:53
@@ -69421,7 +69440,7 @@ cui	source\dialogs\insrc.src	0	modaldialog	DLG_INS_ROW_COL				136	ja	挿入				2
 cui	source\dialogs\passwdomdlg.src	0	fixedline	RID_DLG_PASSWORD_TO_OPEN_MODIFY	FL_FILE_ENCRYPTION			165	ja	ファイルの暗号化パスワード				20200411 15:09:53
 cui	source\dialogs\passwdomdlg.src	0	fixedtext	RID_DLG_PASSWORD_TO_OPEN_MODIFY	FT_PASSWD_TO_OPEN			159	ja	開くためのパスワードを入力(~E)				20200411 15:09:53
 cui	source\dialogs\passwdomdlg.src	0	fixedtext	RID_DLG_PASSWORD_TO_OPEN_MODIFY	FT_REENTER_PASSWD_TO_OPEN			159	ja	開くためのパスワードを再入力				20200411 15:09:53
-cui	source\dialogs\passwdomdlg.src	0	fixedtext	RID_DLG_PASSWORD_TO_OPEN_MODIFY	FT_PASSWD_NOTE			159	ja	Note: After a password has been set, the document will only open with the password. Should you lose the password, there will be no way to recover the document. Please also note that this password is case-sensitive.				20200411 15:09:53
+cui	source\dialogs\passwdomdlg.src	0	fixedtext	RID_DLG_PASSWORD_TO_OPEN_MODIFY	FT_PASSWD_NOTE			159	ja	注意: パスワードを設定すると、ドキュメントはパスワードが無いと開けなくなります。パスワードをなくさないようにしてください、ドキュメントを復元できなくなります。パスワードは大文字と小文字を区別することに注意してください。				20200411 15:09:53
 cui	source\dialogs\passwdomdlg.src	0	fixedline	RID_DLG_PASSWORD_TO_OPEN_MODIFY	FL_FILE_SHARING_OPTIONS			165	ja	ファイル共有パスワード				20200411 15:09:53
 cui	source\dialogs\passwdomdlg.src	0	checkbox	RID_DLG_PASSWORD_TO_OPEN_MODIFY	CB_OPEN_READONLY	HID_DLG_PASSWORD_TO_OPEN_MODIFY_FILE_READONLY		159	ja	ファイルを読み取り専用で開く				20200411 15:09:53
 cui	source\dialogs\passwdomdlg.src	0	fixedtext	RID_DLG_PASSWORD_TO_OPEN_MODIFY	FT_PASSWD_TO_MODIFY			159	ja	編集するためのパスワードを入力				20200411 15:09:53
@@ -71953,6 +71972,15 @@ dbaccess	source\ui\browser\sbabrw.src	0	string	STR_LOADING_TABLE				0	ja	テー�
 dbaccess	source\ui\browser\sbabrw.src	0	string	STR_NO_TABLE_FORMAT_INSIDE				0	ja	テーブルフォーマットが見つかりません。				20200411 15:09:53
 dbaccess	source\ui\browser\sbabrw.src	0	string	STR_COULDNOTCONNECT_DATASOURCE				0	ja	データソース "$name$" への接続が確立できませんでした。				20200411 15:09:53
 dbaccess	source\ui\browser\sbabrw.src	0	menuitem	RID_MENU_REFRESH_DATA	ID_BROWSER_REFRESH_REBUILD			0	ja	再構築				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_TITLE_CONFIRM_DELETION			7527	ja	削除の確認				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_QUERY_DELETE_TABLE			7527	ja	表 '%1' を削除しますか。				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	querybox	MENU_BROWSER_DEFAULTCONTEXT	QUERY_BRW_DELETE_QUERY_CONFIRM			7527	ja	このクエリはすでに存在します。削除しますか。				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	querybox	MENU_BROWSER_DEFAULTCONTEXT	QUERY_CONNECTION_LOST			7527	ja	データベースへの接続が切断されました。再接続しますか。				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_OPENTABLES_WARNINGS			7527	ja	警告が表示されました				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_OPENTABLES_WARNINGS_DETAILS			7527	ja	テーブルの取得中にデータベース接続により警告がレポートされました。				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_NO_TABLE_FORMAT_INSIDE			7527	ja	テーブルフォーマットが見つかりません。				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_COULDNOTCONNECT_DATASOURCE			7527	ja	データソース "$name$" への接続が確立できませんでした。				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	menuitem	MENU_BROWSER_DEFAULTCONTEXT.RID_MENU_REFRESH_DATA	ID_BROWSER_REFRESH_REBUILD			25336	ja	再構築				20200411 15:09:53
 dbaccess	source\ui\browser\sbagrid.src	0	menuitem	RID_SBA_GRID_COLCTXMENU	ID_BROWSER_COLATTRSET	HID_BROWSER_COLUMNFORMAT		0	ja	列の書式(~F)...				20200411 15:09:53
 dbaccess	source\ui\browser\sbagrid.src	0	menuitem	RID_SBA_GRID_COLCTXMENU	ID_BROWSER_COLUMNINFO	HID_BROWSER_COLUMNINFO		0	ja	列の見出しをコピー(~E)				20200411 15:09:53
 dbaccess	source\ui\browser\sbagrid.src	0	menuitem	RID_SBA_GRID_ROWCTXMENU	ID_BROWSER_TABLEATTR	HID_BROWSER_TABLEFORMAT		0	ja	テーブルの書式...				20200411 15:09:53
@@ -72491,7 +72519,7 @@ dbaccess	source\ui\dlg\RelationDlg.src	0	radiobutton	DLG_REL_PROPERTIES	RB_CASC_
 dbaccess	source\ui\dlg\RelationDlg.src	0	radiobutton	DLG_REL_PROPERTIES	RB_CASC_DEL_NULL	HID_DLG_REL_CASC_DEL_NULL		72	ja	null に設定(~S)				20200411 15:09:53
 dbaccess	source\ui\dlg\RelationDlg.src	0	radiobutton	DLG_REL_PROPERTIES	RB_CASC_DEL_DEFAULT	HID_DLG_REL_CASC_DEL_DEFAULT		72	ja	デフォルトの設定(~D)				20200411 15:09:53
 dbaccess	source\ui\dlg\RelationDlg.src	0	modaldialog	DLG_REL_PROPERTIES				186	ja	リレーション				20200411 15:09:53
-dbaccess	source\ui\dlg\AutoControls_tmpl.hrc	0	pushbutton	AUTO_BROWSECONTROLGROUP( AUTO_X, AUTO_Y, AUTOPAGE_X, AUTO_HID, AUTO_HID2)	PB_AUTOBROWSEURL	AUTO_HID2		0	ja	Browse...				20200411 15:09:53
+dbaccess	source\ui\dlg\AutoControls_tmpl.hrc	0	pushbutton	AUTO_BROWSECONTROLGROUP( AUTO_X, AUTO_Y, AUTOPAGE_X, AUTO_HID, AUTO_HID2)	PB_AUTOBROWSEURL	AUTO_HID2		0	ja	ブラウズ...				20200411 15:09:53
 dbaccess	source\ui\dlg\AutoControls_tmpl.hrc	0	fixedtext	AUTO_NAMECONTROLGROUP(AUTO_Y, AUTO_HID)	FT_AUTODATABASENAME			0	ja	データベース名				20200411 15:09:53
 dbaccess	source\ui\dlg\AutoControls_tmpl.hrc	0	fixedtext	AUTO_HOSTCONTROLGROUP(AUTO_Y, AUTO_HID)	FT_AUTOHOSTNAME			0	ja	サーバー				20200411 15:09:53
 dbaccess	source\ui\dlg\AutoControls_tmpl.hrc	0	fixedtext	AUTO_BASEDNCONTROLGROUP(AUTO_Y, AUTO_HID)	FT_AUTOBASEDN			0	ja	ベース ~DN				20200411 15:09:53
@@ -72918,3 +72946,16 @@ padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_TXT			14
 padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_USER_TXT			60	ja	ユーザー(~U)				20200411 15:09:53
 padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_PASS_TXT			60	ja	パスワード(~P)				20200411 15:09:53
 padmin	source\rtsetup.src	0	modaldialog	RID_RTS_PWDIALOG				150	ja	認証要求				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10652				0	ja	\<ahelp hid=\".\" visibility=\"hidden\"\>マスターページ タブページを開きます。このページでは、マスターページ (背景) をすべてのスライド (左クリック) または選択したスライド (右クリック) に適用します。\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1067D				0	ja	\<ahelp hid=\".\" visibility=\"hidden\"\>現在使用されているマスターページを表示します。\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106A8				0	ja	\<ahelp hid=\".\" visibility=\"hidden\"\>最近使用したマスターページを表示します。\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106D3				0	ja	\<ahelp hid=\".\" visibility=\"hidden\"\>すべての使用可能なマスターページを表示します。\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106FA				0	ja	\<ahelp hid=\".\" visibility=\"hidden\"\>左クリックすると、マスターページをすべてのスライドに適用します。右クリックはサブメニューが対象です。\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10747				0	ja	\<ahelp hid=\".\" visibility=\"hidden\"\>マスターページをすべてのスライドに適用します。\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10762				0	ja	\<ahelp hid=\".\" visibility=\"hidden\"\>マスターページまたはページスタイルを、選択したスライドに適用します。\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10785				0	ja	\<ahelp hid=\".\" visibility=\"hidden\"\>マスターページのプレビューのサイズを変更します。\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107B4				0	ja	\<ahelp hid=\".\" visibility=\"hidden\"\>レイアウト タブページを開きます。このページでは選択したスライド (複数可) にページスタイルを適用します。\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107CB				0	ja	\<ahelp hid=\".\" visibility=\"hidden\"\>クリックすると、すべての選択したスライドにページスタイルを適用します。右クリックはサブメニューが対象です。\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1080E				0	ja	\<ahelp hid=\".\" visibility=\"hidden\"\>アニメーション設定タブページを開きます。このページではスライド上の選択したオブジェクトに効果を適用します。\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10839				0	ja	\<ahelp hid=\".\" visibility=\"hidden\"\>スライド切り替えタブページを開きます。このページでは、選択したスライドに切り替え効果を適用します。\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_id0916200812240344				0	ja	\<ahelp hid=\".\" visibility=\"hidden\"\>テーブルデザインを開きます。新しいテーブルを挿入するには、プレビューをダブルクリックします。\</ahelp\>				20200411 15:09:53

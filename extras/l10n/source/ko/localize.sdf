@@ -4543,6 +4543,24 @@ svx	source\form\fmexpl.src	0	menuitem	RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTT
 svx	source\form\fmexpl.src	0	groupbox	RID_SVXDLG_SETFORM	GB_PATH			188	ko	경로				20200411 15:09:53
 svx	source\form\fmexpl.src	0	modaldialog	RID_SVXDLG_SETFORM				200	ko	양식 선택				20200411 15:09:53
 svx	source\form\fmexpl.src	0	dockingwindow	RID_SVX_FMEXPLORER				200	ko	양식 네비게이터				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_EDIT	CMD_SID_FM_CONVERTTO_EDIT		42916	ko	텍스트 필드(~T)				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_BUTTON	CMD_SID_FM_CONVERTTO_BUTTON		42916	ko	버튼(~B)				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_FIXEDTEXT	CMD_SID_FM_CONVERTTO_FIXEDTEXT		42916	ko	레이블 필드(~B)				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_GROUPBOX	CMD_SID_FM_CONVERTTO_GROUPBOX		42916	ko	그룹 상자(~R)				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_LISTBOX	CMD_SID_FM_CONVERTTO_LISTBOX		42916	ko	목록 필드(~I)				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_CHECKBOX	CMD_SID_FM_CONVERTTO_CHECKBOX		42916	ko	확인란(~C)				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_RADIOBUTTON	CMD_SID_FM_CONVERTTO_RADIOBUTTON		42916	ko	라디오 버튼(~R)				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_COMBOBOX	CMD_SID_FM_CONVERTTO_COMBOBOX		42916	ko	콤보 상자(~X)				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_IMAGEBUTTON	CMD_SID_FM_CONVERTTO_IMAGEBUTTON		42916	ko	이미지 버튼(~M)				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_FILECONTROL	CMD_SID_FM_CONVERTTO_FILECONTROL		42916	ko	파일 선택(~F)				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_DATE	CMD_SID_FM_CONVERTTO_DATE		42916	ko	날짜 필드(~D)				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_TIME	CMD_SID_FM_CONVERTTO_TIME		42916	ko	시간 필드(~E)				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_NUMERIC	CMD_SID_FM_CONVERTTO_NUMERIC		42916	ko	숫자 필드(~N)				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_CURRENCY	CMD_SID_FM_CONVERTTO_CURRENCY		42916	ko	통화 필드(~U)				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_PATTERN	CMD_SID_FM_CONVERTTO_PATTERN		42916	ko	패턴 필드(~P)				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_IMAGECONTROL	CMD_SID_FM_CONVERTTO_IMAGECONTROL		42916	ko	이미지 콘트롤(~G)				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_FORMATTED	CMD_SID_FM_CONVERTTO_FORMATTED		42916	ko	서식 지정된 필드(~R)				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_SCROLLBAR	CMD_SID_FM_CONVERTTO_SCROLLBAR		42916	ko	스크롤 막대				20200411 15:09:53
 svx	source\form\filtnav.src	0	menuitem	RID_FM_FILTER_MENU	SID_FM_DELETE	HID_FM_DELETE		0	ko	삭제(~D)				20200411 15:09:53
 svx	source\form\filtnav.src	0	menuitem	RID_FM_FILTER_MENU	SID_FM_FILTER_EDIT	HID_FM_FILTER_EDIT		0	ko	편집(~E)				20200411 15:09:53
 svx	source\form\filtnav.src	0	menuitem	RID_FM_FILTER_MENU	SID_FM_FILTER_IS_NULL	HID_FM_FILTER_IS_NULL		0	ko	Null임(~I)				20200411 15:09:53
@@ -15672,6 +15690,7 @@ officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..G
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Popups..uno:TransliterateMenu	Label			0	ko	대/소문자 바꾸기(~C)				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Popups..uno:ViewMenu	Label			0	ko	~View				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Popups..uno:WindowList	Label			0	ko	~Window				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:Substract	Label			0	ko	빼기(~S)				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:AcceptChange	Label			0	ko	변경 사항 승인				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:AcceptTracedChange	Label			0	ko	변경 사항 승인				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:AcceptTrackedChanges	Label			0	ko	동의 또는 거부(~A)...				20200411 15:09:53
@@ -68027,6 +68046,7 @@ helpcontent2	source\text\swriter\01\02120000.xhp	0	help	hd_id3154590				0	ko	미
 helpcontent2	source\text\swriter\01\02120000.xhp	0	help	par_id3154610				0	ko	\<ahelp hid=\"SW:CHECKBOX:DLG_GLOSSARY:CB_SHOW_EXAMPLE\"\>선택한 자동 텍스트 항목의 미리 보기를 적용하거나 해제합니다.\</ahelp\>				20200411 15:09:53
 helpcontent2	source\text\swriter\01\02120000.xhp	0	help	hd_id3154909				0	ko	미리보기				20200411 15:09:53
 helpcontent2	source\text\swriter\01\02120000.xhp	0	help	par_id3154922				0	ko	선택한 자동 텍스트 항목의 미리 보기를 표시합니다.				20200411 15:09:53
+helpcontent2	source\text\swriter\01\02120000.xhp	0	help	par_id3149583				0	ko	제공된 자동 텍스트 항목 중 일부에 연결된 매크로를 사용자가 만든 자동 텍스트 항목에서 사용할 수도 있습니다. 자동 텍스트 항목은 "텍스트§" 옵을 사용해서 만들어야 합니다. 예를 들어, 자동 텍스트 항목에 <field:company> 문자열을 삽입하면 $[officename]은(는) 이 문자열을 해당 데이터베이스 필드의 내용으로 바꿉니다.				20200411 15:09:53
 helpcontent2	source\text\swriter\01\05100300.xhp	0	help	tit				0	ko	보호				20200411 15:09:53
 helpcontent2	source\text\swriter\01\05100300.xhp	0	help	hd_id3146322				0	ko	\<link href=\"text/swriter/01/05100300.xhp\" name=\"보호\"\>보호\</link\>				20200411 15:09:53
 helpcontent2	source\text\swriter\01\05100300.xhp	0	help	par_id3145822				0	ko	\<ahelp hid=\".uno:Protect\"\>선택한 셀의 내용을 수정하는 것을 방지합니다.\</ahelp\>				20200411 15:09:53
@@ -71953,6 +71973,15 @@ dbaccess	source\ui\browser\sbabrw.src	0	string	STR_LOADING_TABLE				0	ko	$name$ 
 dbaccess	source\ui\browser\sbabrw.src	0	string	STR_NO_TABLE_FORMAT_INSIDE				0	ko	테이블 서식을 찾을 수 없습니다.				20200411 15:09:53
 dbaccess	source\ui\browser\sbabrw.src	0	string	STR_COULDNOTCONNECT_DATASOURCE				0	ko	데이터 원본 "$name$"에 연결하지 못했습니다.				20200411 15:09:53
 dbaccess	source\ui\browser\sbabrw.src	0	menuitem	RID_MENU_REFRESH_DATA	ID_BROWSER_REFRESH_REBUILD			0	ko	다시 구성				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_TITLE_CONFIRM_DELETION			7527	ko	삭제 확인				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_QUERY_DELETE_TABLE			7527	ko	테이블 '%1' 을 삭제하시겠습니까?				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	querybox	MENU_BROWSER_DEFAULTCONTEXT	QUERY_BRW_DELETE_QUERY_CONFIRM			7527	ko	쿼리가 이미 있습니다. 삭제하시겠습니까?				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	querybox	MENU_BROWSER_DEFAULTCONTEXT	QUERY_CONNECTION_LOST			7527	ko	데이터베이스로의 연결이 끊어졌습니다. 다시 연결하시겠습니까?				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_OPENTABLES_WARNINGS			7527	ko	표시된 경고				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_OPENTABLES_WARNINGS_DETAILS			7527	ko	테이블 검색 시, 데이터베이스 연결에서 경고가 보고되었습니다.				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_NO_TABLE_FORMAT_INSIDE			7527	ko	테이블 서식을 찾을 수 없습니다.				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_COULDNOTCONNECT_DATASOURCE			7527	ko	데이터 원본 "$name$"에 연결하지 못했습니다.				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	menuitem	MENU_BROWSER_DEFAULTCONTEXT.RID_MENU_REFRESH_DATA	ID_BROWSER_REFRESH_REBUILD			25336	ko	다시 구성				20200411 15:09:53
 dbaccess	source\ui\browser\sbagrid.src	0	menuitem	RID_SBA_GRID_COLCTXMENU	ID_BROWSER_COLATTRSET	HID_BROWSER_COLUMNFORMAT		0	ko	열 서식(~F)...				20200411 15:09:53
 dbaccess	source\ui\browser\sbagrid.src	0	menuitem	RID_SBA_GRID_COLCTXMENU	ID_BROWSER_COLUMNINFO	HID_BROWSER_COLUMNINFO		0	ko	열 설명 복사(~E)				20200411 15:09:53
 dbaccess	source\ui\browser\sbagrid.src	0	menuitem	RID_SBA_GRID_ROWCTXMENU	ID_BROWSER_TABLEATTR	HID_BROWSER_TABLEFORMAT		0	ko	테이블 서식...				20200411 15:09:53
@@ -72918,3 +72947,16 @@ padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_TXT			14
 padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_USER_TXT			60	ko	사용자(~U)				20200411 15:09:53
 padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_PASS_TXT			60	ko	암호(~P)				20200411 15:09:53
 padmin	source\rtsetup.src	0	modaldialog	RID_RTS_PWDIALOG				150	ko	인증 요청				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10652				0	ko	\<ahelp hid=\".\" visibility=\"hidden\"\>마스터 페이지(배경)를 모든 슬라이드(마우스 왼쪽 버튼 클릭)나 선택한 슬라이드(마우스 오른쪽 버튼 클릭)에 적용할 수 있는 마스터 페이지 탭 페이지를 엽니다.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1067D				0	ko	\<ahelp hid=\".\" visibility=\"hidden\"\>현재 사용되는 마스터 페이지를 나열합니다.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106A8				0	ko	\<ahelp hid=\".\" visibility=\"hidden\"\>최근에 사용한 마스터 페이지를 나열합니다.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106D3				0	ko	\<ahelp hid=\".\" visibility=\"hidden\"\>사용 가능한 모든 마스터 페이지를 나열합니다.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106FA				0	ko	\<ahelp hid=\".\" visibility=\"hidden\"\>마우스 왼쪽 버튼을 클릭하여 모든 슬라이드에 마스터 페이지를 적용합니다. 하위 메뉴에 대해서는 마우스 오른쪽 버튼을 클릭합니다.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10747				0	ko	\<ahelp hid=\".\" visibility=\"hidden\"\>모든 슬라이드에 마스터 페이지를 적용합니다.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10762				0	ko	\<ahelp hid=\".\" visibility=\"hidden\"\>선택한 슬라이드에 마스터 페이지나 슬라이드 디자인을 적용합니다.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10785				0	ko	\<ahelp hid=\".\" visibility=\"hidden\"\>마스터 페이지의 미리 보기 크기를 지정합니다.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107B4				0	ko	\<ahelp hid=\".\" visibility=\"hidden\"\>선택한 슬라이드에 슬라이드 디자인을 적용할 수 있는 레이아웃 탭 페이지를 엽니다.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107CB				0	ko	\<ahelp hid=\".\" visibility=\"hidden\"\>선택한 모든 슬라이드에 슬라이드 디자인을 적용하려면 클릭합니다. 하위 메뉴에 대해서는 마우스 오른쪽 버튼을 클릭합니다.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1080E				0	ko	\<ahelp hid=\".\" visibility=\"hidden\"\>슬라이드에서 선택한 개체에 효과를 적용할 수 있는 사용자 정의 애니메이션 탭 페이지를 엽니다.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10839				0	ko	\<ahelp hid=\".\" visibility=\"hidden\"\>선택한 슬라이드에 전환 효과를 적용할 수 있는 슬라이드 전환 탭 페이지를 엽니다.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_id0916200812240344				0	ko	\<ahelp hid=\".\" visibility=\"hidden\"\>표 디자인을 엽니다. 새 표로 넣을 디자인을 두 번 클릭하십시요.\</ahelp\>				20200411 15:09:53

@@ -4543,6 +4543,24 @@ svx	source\form\fmexpl.src	0	menuitem	RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTT
 svx	source\form\fmexpl.src	0	groupbox	RID_SVXDLG_SETFORM	GB_PATH			188	km	ផ្លូវ				20200411 15:09:53
 svx	source\form\fmexpl.src	0	modaldialog	RID_SVXDLG_SETFORM				200	km	ជ្រើស​សំណុំ​បែបបទ				20200411 15:09:53
 svx	source\form\fmexpl.src	0	dockingwindow	RID_SVX_FMEXPLORER				200	km	កម្មវិធី​រុករក​សំណុំ​បែបបទ				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_EDIT	CMD_SID_FM_CONVERTTO_EDIT		42916	km	ប្រអប់​អត្ថបទ​ 				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_BUTTON	CMD_SID_FM_CONVERTTO_BUTTON		42916	km	ប៊ូតុង 				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_FIXEDTEXT	CMD_SID_FM_CONVERTTO_FIXEDTEXT		42916	km	វាល​​ស្លាក​ 				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_GROUPBOX	CMD_SID_FM_CONVERTTO_GROUPBOX		42916	km	​ប្រអប់​ក្រុម 				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_LISTBOX	CMD_SID_FM_CONVERTTO_LISTBOX		42916	km	ប្រអប់​បញ្ជី 				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_CHECKBOX	CMD_SID_FM_CONVERTTO_CHECKBOX		42916	km	ប្រអប់​ធីក 				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_RADIOBUTTON	CMD_SID_FM_CONVERTTO_RADIOBUTTON		42916	km	ប៊ូតុង​មូល 				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_COMBOBOX	CMD_SID_FM_CONVERTTO_COMBOBOX		42916	km	ប្រអប់​បន្សំ 				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_IMAGEBUTTON	CMD_SID_FM_CONVERTTO_IMAGEBUTTON		42916	km	ប៊ូតុង​រូបភាព 				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_FILECONTROL	CMD_SID_FM_CONVERTTO_FILECONTROL		42916	km	ជម្រើស​ឯកសារ 				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_DATE	CMD_SID_FM_CONVERTTO_DATE		42916	km	វាល​​កាលបរិច្ឆេទ 				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_TIME	CMD_SID_FM_CONVERTTO_TIME		42916	km	វាល​​ពេលវេលា 				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_NUMERIC	CMD_SID_FM_CONVERTTO_NUMERIC		42916	km	វាល​ជា​លេខ 				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_CURRENCY	CMD_SID_FM_CONVERTTO_CURRENCY		42916	km	វាល​​រូបិយប័ណ្ណ 				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_PATTERN	CMD_SID_FM_CONVERTTO_PATTERN		42916	km	វាល​​លំនាំ 				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_IMAGECONTROL	CMD_SID_FM_CONVERTTO_IMAGECONTROL		42916	km	​វត្ថុ​​​​បញ្ជា​រូបភាព 				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_FORMATTED	CMD_SID_FM_CONVERTTO_FORMATTED		42916	km	វាល​មាន​ទ្រង់ទ្រាយ 				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_SCROLLBAR	CMD_SID_FM_CONVERTTO_SCROLLBAR		42916	km	របារ​រមូរ				20200411 15:09:53
 svx	source\form\filtnav.src	0	menuitem	RID_FM_FILTER_MENU	SID_FM_DELETE	HID_FM_DELETE		0	km	លុប​ 				20200411 15:09:53
 svx	source\form\filtnav.src	0	menuitem	RID_FM_FILTER_MENU	SID_FM_FILTER_EDIT	HID_FM_FILTER_EDIT		0	km	កែ​សម្រួល​ 				20200411 15:09:53
 svx	source\form\filtnav.src	0	menuitem	RID_FM_FILTER_MENU	SID_FM_FILTER_IS_NULL	HID_FM_FILTER_IS_NULL		0	km	គឺ Null 				20200411 15:09:53
@@ -7462,6 +7480,7 @@ sw	source\ui\utlui\poolfmt.src	0	string	STR_COLUMN_VALUESET_ITEM2				0	km	ជួ
 sw	source\ui\utlui\poolfmt.src	0	string	STR_COLUMN_VALUESET_ITEM3				0	km	ជួរឈរ ២ មាន​ទំហំ​ខុស​គ្នា (ឆ្វេង > ស្ដាំ)				20200411 15:09:53
 sw	source\ui\utlui\poolfmt.src	0	string	STR_COLUMN_VALUESET_ITEM4				0	km	ជួរឈរ ២ មាន​ទំហំ​ខុស​គ្នា (ឆ្វេង < ស្ដាំ)				20200411 15:09:53
 sw	source\ui\utlui\poolfmt.src	0	string	STR_POOLCHR_VERT_NUM				0	km	និមិត្ត​​សញ្ញា​​​​លេខរៀង​​បញ្ឈរ				20200411 15:09:53
+sw	source\ui\utlui\poolfmt.src	0	string	STR_POOLCHR_BUL_LEVEL				36248	km	ចំណុច				20200411 15:09:53
 sw	source\ui\utlui\unotools.src	0	fixedtext	DLG_RENAME_XNAMED	FT_NEW_NAME			50	km	ឈ្មោះ​​ថ្មី				20200411 15:09:53
 sw	source\ui\utlui\unotools.src	0	fixedline	DLG_RENAME_XNAMED	FL_NAME			152	km	ប្តូរ​​ឈ្មោះ				20200411 15:09:53
 sw	source\ui\utlui\unotools.src	0	modaldialog	DLG_RENAME_XNAMED		HID_RENAME_XNAMED		220	km	ប្តូរ​ឈ្មោះ​វត្ថុ ៖				20200411 15:09:53
@@ -15672,6 +15691,7 @@ officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..G
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Popups..uno:TransliterateMenu	Label			0	km	ប្ដូរ​លក្ខណៈ​អក្សរ				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Popups..uno:ViewMenu	Label			0	km	~View				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Popups..uno:WindowList	Label			0	km	~Window				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:Substract	Label			0	km	ដក				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:AcceptChange	Label			0	km	ទទួល​យក​ការ​ផ្លាស់ប្ដូរ				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:AcceptTracedChange	Label			0	km	ព្រម​ទទួលការ​ផ្លាស់ប្ដូរ				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:AcceptTrackedChanges	Label			0	km	ទទួល​យក ឬ​ច្រានចោល...​ 				20200411 15:09:53
@@ -55741,6 +55761,7 @@ helpcontent2	source\text\scalc\01\12090105.xhp	0	help	par_idN107BA				0	km	វ�
 helpcontent2	source\text\scalc\01\12090105.xhp	0	help	par_idN107BE				0	km	\<ahelp hid=\"1495371267\"\>ជ្រើស​វាល​ដែល​តម្លៃ​រៀង​គ្នា​របស់​ពួកវា ត្រូវ​បាន​យក​មក​ប្រើជា​មូល​ដ្ឋាន​ក្នុង​ការ​គណនា ។\</ahelp\>				20200411 15:09:53
 helpcontent2	source\text\scalc\01\12090105.xhp	0	help	par_idN107C1				0	km	វត្ថុ​គោល				20200411 15:09:53
 helpcontent2	source\text\scalc\01\12090105.xhp	0	help	par_idN107C5				0	km	\<ahelp hid=\"1495371268\"\>ជ្រើស​ធាតុ​របស់​វាល​គោល ដែល​តម្លៃ​រៀងគ្នា​ត្រូវ​បាន​យក​ធ្វើ​ជា​គោល​ក្នុង​ការ​គណនា ។\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\scalc\01\12090105.xhp	0	help	par_idN10770				0	km	សម្រាប់​លទ្ធផល​នីមួយៗ តម្លៃ​យោង​របស់​វា​ត្រូវ​បាន​ដក ហើយ​ផលដក​ត្រូវ​បាន​ែក​នឹង​តម្លៃ​យោង ។ តម្លៃ​យោង​ត្រូវ​បាន​កំណត់​តាម​វិធី​ដូចគ្នា​នឹង "ផលដក" ។ សរុប​នៅ​ក្រៅ​វាល​មូលដ្ឋាន ត្រូវ​បាន​បង្ហាញ​ជា​លទ្ធផល​ទទេ ។				20200411 15:09:53
 helpcontent2	source\text\scalc\01\12080100.xhp	0	help	tit				0	km	លាក់​​សេចក្តី​​លម្អិត				20200411 15:09:53
 helpcontent2	source\text\scalc\01\12080100.xhp	0	help	bm_id3155628				0	km	\<bookmark_value\>សន្លឹក; ការ​លាក់​សេចក្តី​លម្អិត\</bookmark_value\>				20200411 15:09:53
 helpcontent2	source\text\scalc\01\12080100.xhp	0	help	hd_id3155628				0	km	\<link href=\"text/scalc/01/12080100.xhp\" name=\"Hide Details\"\>លាក់​សេចក្តី​លម្អិត\</link\>				20200411 15:09:53
@@ -71953,6 +71974,15 @@ dbaccess	source\ui\browser\sbabrw.src	0	string	STR_LOADING_TABLE				0	km	កំ�
 dbaccess	source\ui\browser\sbabrw.src	0	string	STR_NO_TABLE_FORMAT_INSIDE				0	km	គ្មាន​​ទ្រង់​ទ្រាយរបស់​​​តារាង ​​អាច​​ត្រូវ​បាន​​រក​​ឃើញ ។				20200411 15:09:53
 dbaccess	source\ui\browser\sbabrw.src	0	string	STR_COULDNOTCONNECT_DATASOURCE				0	km	មិន​អាច​បង្កើត​ការ​​ត​ភ្ចាប់​​ទៅ​​ប្រភព​​ទិន្នន័យ "$name$" ។				20200411 15:09:53
 dbaccess	source\ui\browser\sbabrw.src	0	menuitem	RID_MENU_REFRESH_DATA	ID_BROWSER_REFRESH_REBUILD			0	km	ស្ថាបនា​​​ឡើងវិញ				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_TITLE_CONFIRM_DELETION			7527	km	អះអាង​​ការលុប				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_QUERY_DELETE_TABLE			7527	km	តើ​អ្នក​ចង់​លុប​តារាង '%1' ឬទេ?				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	querybox	MENU_BROWSER_DEFAULTCONTEXT	QUERY_BRW_DELETE_QUERY_CONFIRM			7527	km	សំណួរ​នេះ​មាន​រួច​ហើយ ។ តើ​អ្នក​ចង់​លុប​វា​ឬ​ទេ ?				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	querybox	MENU_BROWSER_DEFAULTCONTEXT	QUERY_CONNECTION_LOST			7527	km	បាត់​បង់​ការ​​ត​ភ្ចាប់​​ទៅ​​​​មូល​ដ្ឋាន​​ទិន្នន័យ ។ តើ​អ្នក​​ចង់​​ត​ភ្ជាប់​​ឡើ​ង​​វិញ​ឬ​ទេ ?				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_OPENTABLES_WARNINGS			7527	km	បាន​ជួប​ប្រទះ​ការ​ព្រមាន				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_OPENTABLES_WARNINGS_DETAILS			7527	km	ការ​តភ្ជាប់​មូលដ្ឋានទិន្នន័យ​បាន​រាយការណ៍​ការ​ព្រមាន​មួយ ខណៈ​ពេល​ទៅ​យក​តារាង ។				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_NO_TABLE_FORMAT_INSIDE			7527	km	គ្មាន​​ទ្រង់​ទ្រាយរបស់​​​តារាង ​​អាច​​ត្រូវ​បាន​​រក​​ឃើញ ។				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_COULDNOTCONNECT_DATASOURCE			7527	km	មិន​អាច​បង្កើត​ការ​​ត​ភ្ចាប់​​ទៅ​​ប្រភព​​ទិន្នន័យ "$name$" ។				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	menuitem	MENU_BROWSER_DEFAULTCONTEXT.RID_MENU_REFRESH_DATA	ID_BROWSER_REFRESH_REBUILD			25336	km	ស្ថាបនា​​​ឡើងវិញ				20200411 15:09:53
 dbaccess	source\ui\browser\sbagrid.src	0	menuitem	RID_SBA_GRID_COLCTXMENU	ID_BROWSER_COLATTRSET	HID_BROWSER_COLUMNFORMAT		0	km	ទ្រង់​ទ្រាយ​​​របស់​ជួរឈរ... 				20200411 15:09:53
 dbaccess	source\ui\browser\sbagrid.src	0	menuitem	RID_SBA_GRID_COLCTXMENU	ID_BROWSER_COLUMNINFO	HID_BROWSER_COLUMNINFO		0	km	ចម្លង​ពិពណ៌នា​ជួរឈរ 				20200411 15:09:53
 dbaccess	source\ui\browser\sbagrid.src	0	menuitem	RID_SBA_GRID_ROWCTXMENU	ID_BROWSER_TABLEATTR	HID_BROWSER_TABLEFORMAT		0	km	ទ្រង់ទ្រាយ​​​​​តារាង...				20200411 15:09:53
@@ -72918,3 +72948,16 @@ padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_TXT			14
 padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_USER_TXT			60	km	អ្នកប្រើ 				20200411 15:09:53
 padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_PASS_TXT			60	km	ពាក្យ​សម្ងាត់ 				20200411 15:09:53
 padmin	source\rtsetup.src	0	modaldialog	RID_RTS_PWDIALOG				150	km	សំណើ​​​ផ្ទៀង​​ផ្ទាត់​​ភាព​​ត្រឹម​​ត្រូវ​​				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10652				0	km	\<ahelp hid=\".\" visibility=\"hidden\"\>បើក​ទំព័រ​ផ្ទាំង ទំព័រ​មេ ដែល​អ្នក​អាច​អនុវត្ត​ទំព័រ​មេ​មួយ (ផ្ទៃ​ខាង​ក្រោយ) ទៅ​ស្លាយ​ទាំងអស់ (ចុច​ប៊ូតុង​កណ្ដុរ​ឆ្វេង) ឬ​ទៅ​ស្លាយ​ដែល​បាន​ជ្រើស (ចុច​ប៊ូតុង​កណ្ដុរ​ស្ដាំ) ។\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1067D				0	km	\<ahelp hid=\".\" visibility=\"hidden\"\>រាយ​ទំព័រ​មេ​ដែល​បាន​ប្រើ​បច្ចុប្បន្ន ។\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106A8				0	km	\<ahelp hid=\".\" visibility=\"hidden\"\>រាយ​ទំព័រ​មេ​ដែល​បាន​ប្រើ​ថ្មីៗ​នេះ ។\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106D3				0	km	\<ahelp hid=\".\" visibility=\"hidden\"\>រាយ​ទំព័រ​មេ​ដែល​មាន​ទាំងអស់ ។\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106FA				0	km	\<ahelp hid=\".\" visibility=\"hidden\"\>ចុច​ប៊ូតុង​កណ្ដុរ​ឆ្វេង ដើម្បី​អនុវត្ត​ទំព័រ​មេ​ទៅ​ស្លាយ​ទាំងអស់ ។ ចុច​ប៊ូតុង​កណ្ដុរ​ស្ដាំ​ដើម្បី​បើក​ម៉ឺនុយ​រង ។\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10747				0	km	\<ahelp hid=\".\" visibility=\"hidden\"\>អនុវត្ត​ទំព័រ​មេ​ទៅ​ស្លាយ​ទាំងអស់ ។\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10762				0	km	\<ahelp hid=\".\" visibility=\"hidden\"\>អនុវត្ត​ទំព័រ​មេ ឬ​ការ​រចនា​ស្លាយ​ទៅ​ស្លាយ​ដែល​បាន​ជ្រើស ។\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10785				0	km	\<ahelp hid=\".\" visibility=\"hidden\"\>ប្ដូរ​ទំហំ​មើល​ជា​មុន​របស់​ទំព័រ​មេ ។\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107B4				0	km	\<ahelp hid=\".\" visibility=\"hidden\"\>បើក​ទំព័រ​ផ្ទាំង ប្លង់ ដែល​អ្នក​អាច​អនុវត្ត​ការ​រចនា​ស្លាយ​មួយ​ទៅ​ស្លាយ​មួយ ឬ​ច្រើន​ដែល​បាន​ជ្រើស ។\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107CB				0	km	\<ahelp hid=\".\" visibility=\"hidden\"\>ចុច ដើម្បី​អនុវត្ត​ការ​រចនា​ស្លាយ​មួយ​ទៅ​ស្លាយ​ដែល​បាន​ជ្រើស​ទាំងអស់ ។ ចុច​ប៊ូតុង​កណ្ដុរ​ស្ដាំ​ដើម្បី​បើក​ម៉ឺនុយ​រង ។\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1080E				0	km	\<ahelp hid=\".\" visibility=\"hidden\"\>បើក​ទំព័រ​ផ្ទាំង ចលនា​ផ្ទាល់​ខ្លួន ដែល​អ្នក​អាច​អនុវត្ត​បែបផែន​ទៅ​វត្ថុ​ដែល​បាន​ជ្រើស​លើ​ស្លាយ​មួយ ។\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10839				0	km	\<ahelp hid=\".\" visibility=\"hidden\"\>បើក​ទំព័រ​ផ្ទាំង ដំណើរ​ផ្លាស់ប្ដូរ​ស្លាយ ដែល​អ្នក​អនុវត្ត​បែបផែន​ផ្លាស់ប្ដូរ​ទៅ​ស្លាយ​ដែល​បាន​ជ្រើស ។\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_id0916200812240344				0	km	\<ahelp hid=\".\" visibility=\"hidden\"\>បើក​ការ​រចនាតារាង ។ ចុច​ទ្វេដង​លើ​កា​រមើលជាមុន​ ដើម្បី​បញ្ចូលតារាង​ថ្មី ។\</ahelp\>				20200411 15:09:53

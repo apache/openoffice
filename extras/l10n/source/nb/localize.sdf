@@ -4543,6 +4543,24 @@ svx	source\form\fmexpl.src	0	menuitem	RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTT
 svx	source\form\fmexpl.src	0	groupbox	RID_SVXDLG_SETFORM	GB_PATH			188	nb	Sti				20200411 15:09:53
 svx	source\form\fmexpl.src	0	modaldialog	RID_SVXDLG_SETFORM				200	nb	Velg skjema				20200411 15:09:53
 svx	source\form\fmexpl.src	0	dockingwindow	RID_SVX_FMEXPLORER				200	nb	Skjemastruktur				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_EDIT	CMD_SID_FM_CONVERTTO_EDIT		42916	nb	~Skrivefelt				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_BUTTON	CMD_SID_FM_CONVERTTO_BUTTON		42916	nb	~Knapp				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_FIXEDTEXT	CMD_SID_FM_CONVERTTO_FIXEDTEXT		42916	nb	~Overskriftfelt				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_GROUPBOX	CMD_SID_FM_CONVERTTO_GROUPBOX		42916	nb	~Gruppeboks				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_LISTBOX	CMD_SID_FM_CONVERTTO_LISTBOX		42916	nb	~Listeboks				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_CHECKBOX	CMD_SID_FM_CONVERTTO_CHECKBOX		42916	nb	~Avkryssingsboks				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_RADIOBUTTON	CMD_SID_FM_CONVERTTO_RADIOBUTTON		42916	nb	~Radioknapp				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_COMBOBOX	CMD_SID_FM_CONVERTTO_COMBOBOX		42916	nb	~Kombinasjonsboks				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_IMAGEBUTTON	CMD_SID_FM_CONVERTTO_IMAGEBUTTON		42916	nb	~Bildeknapp				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_FILECONTROL	CMD_SID_FM_CONVERTTO_FILECONTROL		42916	nb	~Filutvalg				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_DATE	CMD_SID_FM_CONVERTTO_DATE		42916	nb	~Datofelt				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_TIME	CMD_SID_FM_CONVERTTO_TIME		42916	nb	~Tidsfelt				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_NUMERIC	CMD_SID_FM_CONVERTTO_NUMERIC		42916	nb	~Tallfelt				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_CURRENCY	CMD_SID_FM_CONVERTTO_CURRENCY		42916	nb	~Valutafelt				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_PATTERN	CMD_SID_FM_CONVERTTO_PATTERN		42916	nb	~Mønsterfelt				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_IMAGECONTROL	CMD_SID_FM_CONVERTTO_IMAGECONTROL		42916	nb	~Bildekontroll				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_FORMATTED	CMD_SID_FM_CONVERTTO_FORMATTED		42916	nb	~Formatert felt				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_SCROLLBAR	CMD_SID_FM_CONVERTTO_SCROLLBAR		42916	nb	~Rullefelt				20200411 15:09:53
 svx	source\form\filtnav.src	0	menuitem	RID_FM_FILTER_MENU	SID_FM_DELETE	HID_FM_DELETE		0	nb	~Slett				20200411 15:09:53
 svx	source\form\filtnav.src	0	menuitem	RID_FM_FILTER_MENU	SID_FM_FILTER_EDIT	HID_FM_FILTER_EDIT		0	nb	~Rediger				20200411 15:09:53
 svx	source\form\filtnav.src	0	menuitem	RID_FM_FILTER_MENU	SID_FM_FILTER_IS_NULL	HID_FM_FILTER_IS_NULL		0	nb	~Er null				20200411 15:09:53
@@ -15672,6 +15690,7 @@ officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..G
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Popups..uno:TransliterateMenu	Label			0	nb	~Små/store bokstaver				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Popups..uno:ViewMenu	Label			0	nb	~View				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Popups..uno:WindowList	Label			0	nb	~Window				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:Substract	Label			0	nb	~Trekk fra				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:AcceptChange	Label			0	nb	Godta endring				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:AcceptTracedChange	Label			0	nb	Godta endring				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:AcceptTrackedChanges	Label			0	nb	~Godta eller avvis …				20200411 15:09:53
@@ -61738,6 +61757,8 @@ helpcontent2	source\text\swriter\02\08010000.xhp	0	help	par_id3145078	6			0	nb	D
 helpcontent2	source\text\swriter\02\08010000.xhp	0	help	par_id3145417	3			0	nb	Du kan slå \<link href=\"text/swriter/01/02110000.xhp\" name=\"Navigator \"\>Dokumentstruktur\</link\> av og på ved å dobbeltklikke \<emph\>sidetallfeltet\</emph\>.				20200411 15:09:53
 helpcontent2	source\text\swriter\02\08010000.xhp	0	help	par_id3149806	4			0	nb	Du kan gå til en bestemt side ved å skrive inn sidetallet i tallboksen i  \<emph\>Dokumentstruktur\</emph\> og trykke «Enter».				20200411 15:09:53
 helpcontent2	source\text\swriter\02\08010000.xhp	0	help	par_id3149095				0	nb	Du kan bruke hurtigtastene «Shift + \<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Kommando\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\> + F5» til å bytte til innskriving av sidetall. Når du trykker «Enter» flyttes skrivemerket til den valgte siden.				20200411 15:09:53
+helpcontent2	source\text\swriter\02\08010000.xhp	0	help	par_id3145078				0	nb	Den viste siden (x) og det totale antallet sider (y) vises på formen  \<emph\>Side x/y\</emph\>. Når du blar gjennom et dokument med  musa, vises sidetallet når du slipper museknappen. Når du blar med  rullefeltet til høyre, vises sidetallet som et tips. Formatet for  sidenummerering er det samme på både statuslinja og i rullefeltet.				20200411 15:09:53
+helpcontent2	source\text\swriter\02\08010000.xhp	0	help	par_id3149806				0	nb	Du kan gå til en bestemt side ved å skrive inn sidetallet i tallboksen i  \<emph\>Dokumentstruktur\</emph\> og trykke «Enter».				20200411 15:09:53
 helpcontent2	source\text\swriter\02\04220000.xhp	0	help	tit				0	nb	Tabell: fast				20200411 15:09:53
 helpcontent2	source\text\swriter\02\04220000.xhp	0	help	hd_id3151187				0	nb	\<link href=\"text/swriter/02/04220000.xhp\" name=\"Table: Fixed\"\>Tabell: fast\</link\>				20200411 15:09:53
 helpcontent2	source\text\swriter\02\04220000.xhp	0	help	par_id3151174				0	nb	\<ahelp hid=\".uno:TableModeFix\" visibility=\"visible\"\>Hvis denne modusen er på, påvirker endringer i en rad og/eller en kolonne bare radene og kolonnene rundt den.\</ahelp\>				20200411 15:09:53
@@ -61748,6 +61769,7 @@ helpcontent2	source\text\swriter\02\08080000.xhp	0	help	hd_id3151186				0	nb	\<l
 helpcontent2	source\text\swriter\02\08080000.xhp	0	help	par_id3151172				0	nb	\<ahelp hid=\".uno:StatusBarFunc\" visibility=\"visible\"\>Viser informasjon om det åpne dokumentet.\</ahelp\>				20200411 15:09:53
 helpcontent2	source\text\swriter\02\08080000.xhp	0	help	par_id3156375	3			0	nb	Når skrivemerket står i en bolk med et navn, vises navnet til bolken. Når  skrivemerket står i en tabell, vises navnet på tabellcellen. Størrelsen til objektet vises når du redigerer rammer eller tegneobjekter.				20200411 15:09:53
 helpcontent2	source\text\swriter\02\08080000.xhp	0	help	par_id3145416				0	nb	Når skrivemerket står inne i tekst, kan du dobbeltklikke dette feltet for å åpne dialogvinduet \<link href=\"text/swriter/01/04090000.xhp\" name=\"Fields\"\>\<emph\>Felter\</emph\>\</link\>. I dette vinduet kan du sette inn et felt der skrivemerket er plassert. Når skrivemerket står i en tabell, kan du dobbeltklikke dette feltet for å åpne dialogvinduet \<emph\>Tabellformat\</emph\>. Avhengig av hva slags objekt som er valgt, kan du åpne et vindu du kan bruke til å redigere en bolk, et bilde, en flytende ramme, et OLE-objekt, direkte nummerering eller plasseringa og størrelsen til et tegneobjekt.				20200411 15:09:53
+helpcontent2	source\text\swriter\02\08080000.xhp	0	help	par_id3156375				0	nb	Når skrivemerket står i en bolk med et navn, vises navnet til bolken. Når  skrivemerket står i en tabell, vises navnet på tabellcellen. Størrelsen til objektet vises når du redigerer rammer eller tegneobjekter.				20200411 15:09:53
 helpcontent2	source\text\swriter\02\06120000.xhp	0	help	tit				0	nb	Flytt opp med underpunkter				20200411 15:09:53
 helpcontent2	source\text\swriter\02\06120000.xhp	0	help	hd_id3147174				0	nb	\<link href=\"text/swriter/02/06120000.xhp\" name=\"Move Up with Subpoints\"\>Flytt opp med underpunkter\</link\>				20200411 15:09:53
 helpcontent2	source\text\swriter\02\06120000.xhp	0	help	par_id3148768				0	nb	\<ahelp hid=\".uno:MoveUpSubItems\" visibility=\"visible\"\>Flytter et avsnitt med underpunkter opp over det forrige avsnittet.\</ahelp\> Dette er bare synlig når skrivemerket står inne i nummerert eller punktmerket tekst.				20200411 15:09:53
@@ -71951,6 +71973,15 @@ dbaccess	source\ui\browser\sbabrw.src	0	string	STR_LOADING_TABLE				0	nb	Henter 
 dbaccess	source\ui\browser\sbabrw.src	0	string	STR_NO_TABLE_FORMAT_INSIDE				0	nb	Fant ingen tabellegenskaper.				20200411 15:09:53
 dbaccess	source\ui\browser\sbabrw.src	0	string	STR_COULDNOTCONNECT_DATASOURCE				0	nb	Klarte ikke opprette forbindelse til datakilden «$name$».				20200411 15:09:53
 dbaccess	source\ui\browser\sbabrw.src	0	menuitem	RID_MENU_REFRESH_DATA	ID_BROWSER_REFRESH_REBUILD			0	nb	Gjenoppbygg				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_TITLE_CONFIRM_DELETION			7527	nb	Bekreft sletting				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_QUERY_DELETE_TABLE			7527	nb	Vil du slette tabellen «%1»?				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	querybox	MENU_BROWSER_DEFAULTCONTEXT	QUERY_BRW_DELETE_QUERY_CONFIRM			7527	nb	Denne spørringa finnes allerede. Vil du slette den?				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	querybox	MENU_BROWSER_DEFAULTCONTEXT	QUERY_CONNECTION_LOST			7527	nb	Mistet tilkoblinga til databasen. Vil du koble til igjen?				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_OPENTABLES_WARNINGS			7527	nb	Påtrufne advarsler				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_OPENTABLES_WARNINGS_DETAILS			7527	nb	Databaseforbindelsen ga advarsler ved henting av tabellene.				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_NO_TABLE_FORMAT_INSIDE			7527	nb	Fant ingen tabellegenskaper.				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_COULDNOTCONNECT_DATASOURCE			7527	nb	Klarte ikke opprette forbindelse til datakilden «$name$».				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	menuitem	MENU_BROWSER_DEFAULTCONTEXT.RID_MENU_REFRESH_DATA	ID_BROWSER_REFRESH_REBUILD			25336	nb	Gjenoppbygg				20200411 15:09:53
 dbaccess	source\ui\browser\sbagrid.src	0	menuitem	RID_SBA_GRID_COLCTXMENU	ID_BROWSER_COLATTRSET	HID_BROWSER_COLUMNFORMAT		0	nb	~Kolonneformat …				20200411 15:09:53
 dbaccess	source\ui\browser\sbagrid.src	0	menuitem	RID_SBA_GRID_COLCTXMENU	ID_BROWSER_COLUMNINFO	HID_BROWSER_COLUMNINFO		0	nb	Kopier kolonne~beskrivelse				20200411 15:09:53
 dbaccess	source\ui\browser\sbagrid.src	0	menuitem	RID_SBA_GRID_ROWCTXMENU	ID_BROWSER_TABLEATTR	HID_BROWSER_TABLEFORMAT		0	nb	Tabellegenskaper …				20200411 15:09:53
@@ -72916,3 +72947,16 @@ padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_TXT			14
 padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_USER_TXT			60	nb	~Bruker				20200411 15:09:53
 padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_PASS_TXT			60	nb	~Passord				20200411 15:09:53
 padmin	source\rtsetup.src	0	modaldialog	RID_RTS_PWDIALOG				150	nb	Autentiseringsforespørsel				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10652				0	nb	\<ahelp hid=\".\" visibility=\"hidden\"\>Åpne «Hovedsider», hvor du kan bruke en hovedutforming på lysbildene dine. Venstreklikk for å bruke utformingen på alle lysbildene, eller høyreklikk for å bruke utformingen kun på de valgte lysbildene.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1067D				0	nb	\<ahelp hid=\".\" visibility=\"hidden\"\>En liste over utformingene som brukes i denne presentasjonen.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106A8				0	nb	\<ahelp hid=\".\" visibility=\"hidden\"\>En liste over utformingene som nylig har vært i bruk.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106D3				0	nb	\<ahelp hid=\".\" visibility=\"hidden\"\>En liste over alle tilgjengelige utforminger.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106FA				0	nb	\<ahelp hid=\".\" visibility=\"hidden\"\>Venstreklikk for å bruke hovedutformingen på alle lysbildene. Høyreklikk for å åpne en undermeny.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10747				0	nb	\<ahelp hid=\".\" visibility=\"hidden\"\>Bruk hovedutformingen på alle lysbildene.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10762				0	nb	\<ahelp hid=\".\" visibility=\"hidden\"\>Bruk hovedutformingen på de valgte lysbildene.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10785				0	nb	\<ahelp hid=\".\" visibility=\"hidden\"\>Endrer størrelsen på forhåndsvisning av hovedsider.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107B4				0	nb	\<ahelp hid=\".\" visibility=\"hidden\"\>Åpne «Oppsett», der du kan velge en utforming for de valgte lysbildene.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107CB				0	nb	\<ahelp hid=\".\" visibility=\"hidden\"\>Klikk for å bruke en utforming på de valgte lysbildene. Høyreklikk for å åpne en undermeny.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1080E				0	nb	\<ahelp hid=\".\" visibility=\"hidden\"\>Åpne «Tilpasset animasjon» hvor du kan gi de valgte objektene i lysbildet ulike effekter.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10839				0	nb	\<ahelp hid=\".\" visibility=\"hidden\"\>Åpne «Lysbildeovergang», hvor du kan gi ulike overgangseffekter til de valgte lysbildene.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_id0916200812240344				0	nb	\<ahelp hid=\".\" visibility=\"hidden\"\>Åpner «Tabellutforming». Dobbeltklikk for å forhåndsvise innsettelse av ny tabell.\</ahelp\>				20200411 15:09:53

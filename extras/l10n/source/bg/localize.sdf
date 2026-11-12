@@ -242,7 +242,7 @@ reportbuilder	registry\data\org\openoffice\Office\UI\ReportCommands.xcu	0	value	
 reportbuilder	registry\data\org\openoffice\Office\UI\ReportCommands.xcu	0	value	..ReportCommands.UserInterface.Popups..uno:SymbolShapesMenu	Label			0	bg	Фигури - символи				20200411 15:09:53
 editeng	source\misc\lingu.src	0	querybox	RID_SVXQB_CONTINUE				0	bg	Желаете ли проверката да продължи от началото на документа?				20200411 15:09:53
 editeng	source\misc\lingu.src	0	querybox	RID_SVXQB_BW_CONTINUE				0	bg	Желаете ли проверката да продължи от края на документа?				20200411 15:09:53
-editeng	source\misc\lingu.src	0	string	RID_SVXSTR_HMERR_THESAURUS				0	bg	No thesaurus is available for the selected language.\nPlease check your installation and install the desired language\n				20200411 15:09:53
+editeng	source\misc\lingu.src	0	string	RID_SVXSTR_HMERR_THESAURUS				0	bg	Не е наличен синонимен речник за избрания език. \nМоля, проверете вашата инсталация и инстралирайте желания от Вас език \n				20200411 15:09:53
 editeng	source\misc\lingu.src	0	string	RID_SVXSTR_DIC_ERR_UNKNOWN				0	bg	Думата не може да бъде добавена\nв речника по неизвестна причина.				20200411 15:09:53
 editeng	source\misc\lingu.src	0	string	RID_SVXSTR_DIC_ERR_FULL				0	bg	Речникът вече е пълен.				20200411 15:09:53
 editeng	source\misc\lingu.src	0	string	RID_SVXSTR_DIC_ERR_READONLY				0	bg	Речникът е само за четене.				20200411 15:09:53
@@ -466,6 +466,12 @@ editeng	source\items\svxitems.src	0	string	RID_SVXITEMS_PARASNAPTOGRID_ON				0	b
 editeng	source\items\svxitems.src	0	string	RID_SVXITEMS_PARASNAPTOGRID_OFF				0	bg	Абзацът не прилепва към текстовата мрежа				20200411 15:09:53
 editeng	source\items\svxitems.src	0	string	RID_SVXITEMS_CHARHIDDEN_FALSE				0	bg	Не скрит				20200411 15:09:53
 editeng	source\items\svxitems.src	0	string	RID_SVXITEMS_CHARHIDDEN_TRUE				0	bg	Скрит				20200411 15:09:53
+editeng	source\items\svxitems.src	0	string	RID_SVXITEMS_METRIC_MM				8143	bg	мм				20200411 15:09:53
+editeng	source\items\svxitems.src	0	string	RID_SVXITEMS_METRIC_CM				8143	bg	см				20200411 15:09:53
+editeng	source\items\svxitems.src	0	string	RID_SVXITEMS_METRIC_INCH				8143	bg	инч				20200411 15:09:53
+editeng	source\items\svxitems.src	0	string	RID_SVXITEMS_METRIC_POINT				8143	bg	точка				20200411 15:09:53
+editeng	source\items\svxitems.src	0	string	RID_SVXITEMS_METRIC_TWIP				8143	bg	туип				20200411 15:09:53
+editeng	source\items\svxitems.src	0	string	RID_SVXITEMS_METRIC_PIXEL				8143	bg	пиксел				20200411 15:09:53
 editeng	source\outliner\outliner.src	0	string	RID_OUTLUNDO_HEIGHT				0	bg	Местене				20200411 15:09:53
 editeng	source\outliner\outliner.src	0	string	RID_OUTLUNDO_DEPTH				0	bg	Отстъп				20200411 15:09:53
 editeng	source\outliner\outliner.src	0	string	RID_OUTLUNDO_EXPAND				0	bg	Показване на подточките				20200411 15:09:53
@@ -688,14 +694,14 @@ instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ER
 instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_23				0	bg	Инсталирането {на [ProductName] }завърши успешно.				20200411 15:09:53
 instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_24				0	bg	Инсталирането {на [ProductName] }завърши неуспешно.				20200411 15:09:53
 instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_25				0	bg	Грешка при четене от файла [2]. {{ Системна грешка [3].}}  Уверете се, че файлът съществува и имате достъп до него.				20200411 15:09:53
-instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_26				0	bg	Cannot create the file [3]. A directory with this name already exists. Cancel the installation and try installing to a different location.				20200411 15:09:53
+instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_26				0	bg	Не може да се създаде файлът [3]. Вече съществува директория със същото име. Откажете инсталацията и опитайте да инсталирате отново на друго място. 				20200411 15:09:53
 instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_27				0	bg	Моля, поставете диска: [2]				20200411 15:09:53
 instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_28				0	bg	Инсталаторът няма достатъчно права, за да получи достъп до директорията [2]. Инсталацията не може да продължи. Легитимирайте се като администратор или се свържете със системния администратор.				20200411 15:09:53
 instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_29				0	bg	Грешка при записване във файла [2]. Уверете се, че имате достъп до съответната директория.				20200411 15:09:53
 instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_30				0	bg	Грешка при четене от файла [2]. Уверете се, че файлът съществува и имате достъп до него.				20200411 15:09:53
 instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_31				0	bg	Another application has exclusive access to the file [2]. Please shut down all other applications, then click Retry.				20200411 15:09:53
 instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_32				0	bg	There is not enough disk space to install the file [2]. Free some disk space and click Retry, or click Cancel to exit.				20200411 15:09:53
-instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_33				0	bg	Source file not found: [2]. Verify that the file exists and that you can access it.				20200411 15:09:53
+instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_33				0	bg	Изходният файл не е намерен: [2]. Уверете се, че файлът съществува и имате достъп до него.				20200411 15:09:53
 instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_34				0	bg	Грешка при четене от файла [3]. {{ Системна грешка [2].}} Уверете се, че файлът съществува и имате достъп до него.				20200411 15:09:53
 instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_35				0	bg	Грешка при записване във файла [3]. {{ Системна грешка [2].}} Уверете се, че имате достъп до съответната директория.				20200411 15:09:53
 instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_36				0	bg	Не бе намерен файлът - източник{{ (CAB)}} [2]. Моля, уверете се, че файлът същестува и имате достъп до него.				20200411 15:09:53
@@ -716,15 +722,15 @@ instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ER
 instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_51				0	bg	Грешка при извличане на защитата на файла: [3] GetLastError: [2]				20200411 15:09:53
 instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_52				0	bg	Невалидно устройство: [2]				20200411 15:09:53
 instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_53				0	bg	Error applying patch to file [2]. It has probably been updated by other means, and can no longer be modified by this patch.  For more information contact your patch vendor. {{System Error: [3]}}				20200411 15:09:53
-instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_54				0	bg	Could not create key [2]. {{ System error [3].}} Verify that you have sufficient access to that key, or contact your support personnel.				20200411 15:09:53
-instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_55				0	bg	Could not open key: [2]. {{ System error [3].}} Verify that you have sufficient access to that key, or contact your support personnel.				20200411 15:09:53
-instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_56				0	bg	Could not delete value [2] from key [3]. {{ System error [4].}} Verify that you have sufficient access to that key, or contact your support personnel.				20200411 15:09:53
-instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_57				0	bg	Could not delete key [2]. {{ System error [3].}} Verify that you have sufficient access to that key, or contact your support personnel.				20200411 15:09:53
-instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_58				0	bg	Could not read value [2] from key [3]. {{ System error [4].}} Verify that you have sufficient access to that key, or contact your support personnel.				20200411 15:09:53
-instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_59				0	bg	Could not write value [2] to key [3]. {{ System error [4].}} Verify that you have sufficient access to that key, or contact your support personnel.				20200411 15:09:53
-instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_60				0	bg	Could not get value names for key [2]. {{ System error [3].}} Verify that you have sufficient access to that key, or contact your support personnel.				20200411 15:09:53
-instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_61				0	bg	Could not get sub key names for key [2]. {{ System error [3].}} Verify that you have sufficient access to that key, or contact your support personnel.				20200411 15:09:53
-instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_62				0	bg	Could not read security information for key [2]. {{ System error [3].}} Verify that you have sufficient access to that key, or contact your support personnel.				20200411 15:09:53
+instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_54				0	bg	Не бе възможно създаването на ключ [2]. {{Системна грешка [3].}} Проверете дали имате пълен достъп до ключа или се свържете с вашия поддържащ персонал.				20200411 15:09:53
+instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_55				0	bg	Не бе възможно отварянето на ключа: [2]. {{Системна грешка [3].}} Уверете се, че имате достатчъно права за достъп до ключа или се свържете с Вашия поддържащ персонал. 				20200411 15:09:53
+instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_56				0	bg	Не може да се изтрие стойност [2] от ключ [3]. {{ Системна грешка [4]. }} Уверете се, че имате права за достъп до този ключ или се свържете с поддържащия персонал.				20200411 15:09:53
+instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_57				0	bg	Не може да се изтрие ключа [2]. {{ Системна грешка [3].}} Уверете се, че имате права за достъп до този ключ или се свържете с поддържащия персонал.				20200411 15:09:53
+instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_58				0	bg	Не може да се прочете стойност [2] от ключ [3]. {{ Системна грешка [4].}} Уверете се, че имате право на достъп до този ключ или се свържете с поддържащия персонал.				20200411 15:09:53
+instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_59				0	bg	Не може да се запише стойност [2] на ключ [3]. {{ Системна грешка [4].}} Уверете се, че имате права на достъп до този ключ или се свържете с поддържащия персонал.				20200411 15:09:53
+instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_60				0	bg	Не може да вземе имена на стойности за ключ [2]. {{ Системна грешка [3].}} Уверете се, че имате права на достъп до този ключ или се свържете с поддръжащия персонал.				20200411 15:09:53
+instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_61				0	bg	Не може да се вземат под ключови имена за ключа [2] {{ Системна грешка [3].}} Уверете се, че имате права на достъп до този ключ или се свържете с персонала по поддръжка.				20200411 15:09:53
+instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_62				0	bg	Не може да прочете секретна информация за ключ [2]. {{ Системна грешка [3].}} Уверете се, че имате право на достъп до този ключ или се свържете с персонала по поддръжка.				20200411 15:09:53
 instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_63				0	bg	Не бе възможно увеличаването на наличното пространство в регистъра. За инсталирането на това приложение са нужни [2] кБ свободно пространство в регистъра.				20200411 15:09:53
 instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_64				0	bg	В момента протича друга инсталация. Трябва да я завършите, преди да продължите настоящата.				20200411 15:09:53
 instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_65				0	bg	Грешка при достъп до защитени данни. Моля уверете се, че Windows Installer е конфигурирана правилно и стартирайте инсталацията отново.				20200411 15:09:53
@@ -4543,6 +4549,24 @@ svx	source\form\fmexpl.src	0	menuitem	RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTT
 svx	source\form\fmexpl.src	0	groupbox	RID_SVXDLG_SETFORM	GB_PATH			188	bg	Път				20200411 15:09:53
 svx	source\form\fmexpl.src	0	modaldialog	RID_SVXDLG_SETFORM				200	bg	Избор на формуляр				20200411 15:09:53
 svx	source\form\fmexpl.src	0	dockingwindow	RID_SVX_FMEXPLORER				200	bg	Навигатор за формуляри				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_EDIT	CMD_SID_FM_CONVERTTO_EDIT		42916	bg	~Текстово поле				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_BUTTON	CMD_SID_FM_CONVERTTO_BUTTON		42916	bg	~Бутон				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_FIXEDTEXT	CMD_SID_FM_CONVERTTO_FIXEDTEXT		42916	bg	Поле за на~дпис				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_GROUPBOX	CMD_SID_FM_CONVERTTO_GROUPBOX		42916	bg	~Групираща рамка				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_LISTBOX	CMD_SID_FM_CONVERTTO_LISTBOX		42916	bg	~Списъчно поле				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_CHECKBOX	CMD_SID_FM_CONVERTTO_CHECKBOX		42916	bg	Поле за ~отметка				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_RADIOBUTTON	CMD_SID_FM_CONVERTTO_RADIOBUTTON		42916	bg	Б~утон за избор				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_COMBOBOX	CMD_SID_FM_CONVERTTO_COMBOBOX		42916	bg	~Комбинирано поле				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_IMAGEBUTTON	CMD_SID_FM_CONVERTTO_IMAGEBUTTON		42916	bg	Бутон с ~изображение				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_FILECONTROL	CMD_SID_FM_CONVERTTO_FILECONTROL		42916	bg	Избор на ~файл				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_DATE	CMD_SID_FM_CONVERTTO_DATE		42916	bg	Поле за ~дата				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_TIME	CMD_SID_FM_CONVERTTO_TIME		42916	bg	Поле за ~час				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_NUMERIC	CMD_SID_FM_CONVERTTO_NUMERIC		42916	bg	Чис~лово поле				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_CURRENCY	CMD_SID_FM_CONVERTTO_CURRENCY		42916	bg	Поле за ~валута				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_PATTERN	CMD_SID_FM_CONVERTTO_PATTERN		42916	bg	Поле с ~маска				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_IMAGECONTROL	CMD_SID_FM_CONVERTTO_IMAGECONTROL		42916	bg	Поле за изобра~жение				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_FORMATTED	CMD_SID_FM_CONVERTTO_FORMATTED		42916	bg	Фо~рматирано поле				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_SCROLLBAR	CMD_SID_FM_CONVERTTO_SCROLLBAR		42916	bg	Лента с плъзгач				20200411 15:09:53
 svx	source\form\filtnav.src	0	menuitem	RID_FM_FILTER_MENU	SID_FM_DELETE	HID_FM_DELETE		0	bg	~Изтриване				20200411 15:09:53
 svx	source\form\filtnav.src	0	menuitem	RID_FM_FILTER_MENU	SID_FM_FILTER_EDIT	HID_FM_FILTER_EDIT		0	bg	~Редактиране				20200411 15:09:53
 svx	source\form\filtnav.src	0	menuitem	RID_FM_FILTER_MENU	SID_FM_FILTER_IS_NULL	HID_FM_FILTER_IS_NULL		0	bg	~Е празно				20200411 15:09:53
@@ -13871,7 +13895,7 @@ officecfg	registry\data\org\openoffice\Office\UI\CalcWindowState.xcu	0	value	..C
 officecfg	registry\data\org\openoffice\Office\UI\CalcWindowState.xcu	0	value	..CalcWindowState.UIElements.States.private:resource/toolbar/moreformcontrols	UIName			0	bg	Още елементи за управление				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\CalcWindowState.xcu	0	value	..CalcWindowState.UIElements.States.private:resource/toolbar/formdesign	UIName			0	bg	Проектиране на формуляр				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\CalcWindowState.xcu	0	value	..CalcWindowState.UIElements.States.private:resource/toolbar/formatobjectbar	UIName			0	bg	Форматиране				20200411 15:09:53
-officecfg	registry\data\org\openoffice\Office\UI\CalcWindowState.xcu	0	value	..CalcWindowState.UIElements.States.private:resource/toolbar/insertbar	UIName			0	bg	Insert				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\CalcWindowState.xcu	0	value	..CalcWindowState.UIElements.States.private:resource/toolbar/insertbar	UIName			0	bg	Вмъкни				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\CalcWindowState.xcu	0	value	..CalcWindowState.UIElements.States.private:resource/toolbar/insertcellsbar	UIName			0	bg	Вмъкване на клетка				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\CalcWindowState.xcu	0	value	..CalcWindowState.UIElements.States.private:resource/toolbar/standardbar	UIName			0	bg	Стандартни				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\CalcWindowState.xcu	0	value	..CalcWindowState.UIElements.States.private:resource/toolbar/findbar	UIName			0	bg	Търсене				20200411 15:09:53
@@ -15672,6 +15696,7 @@ officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..G
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Popups..uno:TransliterateMenu	Label			0	bg	~Смяна на регистъра				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Popups..uno:ViewMenu	Label			0	bg	~View				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Popups..uno:WindowList	Label			0	bg	~Window				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:Substract	Label			0	bg	~Разлика				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:AcceptChange	Label			0	bg	Приемане на промяната				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:AcceptTracedChange	Label			0	bg	Приемане на промяната				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:AcceptTrackedChanges	Label			0	bg	П~риемане или отхвърляне...				20200411 15:09:53
@@ -21980,7 +22005,7 @@ filter	source\xsltdialog\xmlfilterdialogstrings.src	0	string	STR_ERROR_EXPORT_XS
 filter	source\xsltdialog\xmlfilterdialogstrings.src	0	string	STR_ERROR_IMPORT_XSLT_NOT_FOUND				0	bg	XSLT за импортиране не беше открит. Моля, въведете валиден път.				20200411 15:09:53
 filter	source\xsltdialog\xmlfilterdialogstrings.src	0	string	STR_ERROR_IMPORT_TEMPLATE_NOT_FOUND				0	bg	Даденият шаблон за импортиране не беше намерен. Моля, въведете валиден път.				20200411 15:09:53
 filter	source\xsltdialog\xmlfilterdialogstrings.src	0	string	STR_NOT_SPECIFIED				0	bg	Неуточнен				20200411 15:09:53
-filter	source\xsltdialog\xmlfilterdialogstrings.src	0	string	STR_NO_ERRORS_FOUND				0	bg	No errors found.				20200411 15:09:53
+filter	source\xsltdialog\xmlfilterdialogstrings.src	0	string	STR_NO_ERRORS_FOUND				0	bg	Не са намерени грешки.				20200411 15:09:53
 filter	source\xsltdialog\xmlfilterdialogstrings.src	0	string	STR_DEFAULT_FILTER_NAME				0	bg	Нов филтър				20200411 15:09:53
 filter	source\xsltdialog\xmlfilterdialogstrings.src	0	string	STR_DEFAULT_UI_NAME				0	bg	Неозаглавено				20200411 15:09:53
 filter	source\xsltdialog\xmlfilterdialogstrings.src	0	string	STR_UNDEFINED_FILTER				0	bg	неопределен филтър				20200411 15:09:53
@@ -69421,7 +69446,7 @@ cui	source\dialogs\insrc.src	0	modaldialog	DLG_INS_ROW_COL				136	bg	Вмъкв�
 cui	source\dialogs\passwdomdlg.src	0	fixedline	RID_DLG_PASSWORD_TO_OPEN_MODIFY	FL_FILE_ENCRYPTION			165	bg	Парола за шифроване				20200411 15:09:53
 cui	source\dialogs\passwdomdlg.src	0	fixedtext	RID_DLG_PASSWORD_TO_OPEN_MODIFY	FT_PASSWD_TO_OPEN			159	bg	В~ъведете парола за отваряне				20200411 15:09:53
 cui	source\dialogs\passwdomdlg.src	0	fixedtext	RID_DLG_PASSWORD_TO_OPEN_MODIFY	FT_REENTER_PASSWD_TO_OPEN			159	bg	Потвърдете паролата				20200411 15:09:53
-cui	source\dialogs\passwdomdlg.src	0	fixedtext	RID_DLG_PASSWORD_TO_OPEN_MODIFY	FT_PASSWD_NOTE			159	bg	Note: After a password has been set, the document will only open with the password. Should you lose the password, there will be no way to recover the document. Please also note that this password is case-sensitive.				20200411 15:09:53
+cui	source\dialogs\passwdomdlg.src	0	fixedtext	RID_DLG_PASSWORD_TO_OPEN_MODIFY	FT_PASSWD_NOTE			159	bg	Забележка: След като бъде създадена парола, документът ще може да бъде отворен само с паролата. Ако изгубите паролата, няма начин документът Ви да бъде възстановен. Моля, също да обърнете внимание, че от значение за паролата е изписването на главни и малки букви.				20200411 15:09:53
 cui	source\dialogs\passwdomdlg.src	0	fixedline	RID_DLG_PASSWORD_TO_OPEN_MODIFY	FL_FILE_SHARING_OPTIONS			165	bg	Парола за споделяне				20200411 15:09:53
 cui	source\dialogs\passwdomdlg.src	0	checkbox	RID_DLG_PASSWORD_TO_OPEN_MODIFY	CB_OPEN_READONLY	HID_DLG_PASSWORD_TO_OPEN_MODIFY_FILE_READONLY		159	bg	Отваряне само за четене				20200411 15:09:53
 cui	source\dialogs\passwdomdlg.src	0	fixedtext	RID_DLG_PASSWORD_TO_OPEN_MODIFY	FT_PASSWD_TO_MODIFY			159	bg	Въведете парола за редактиране				20200411 15:09:53
@@ -69432,7 +69457,7 @@ cui	source\dialogs\passwdomdlg.src	0	string	RID_DLG_PASSWORD_TO_OPEN_MODIFY	STR_
 cui	source\dialogs\passwdomdlg.src	0	string	RID_DLG_PASSWORD_TO_OPEN_MODIFY	STR_ONE_PASSWORD_MISMATCH			159	bg	Паролата за потвърждение не съвпада. Задайте паролата отново, като я въведете в двете полета.				20200411 15:09:53
 cui	source\dialogs\passwdomdlg.src	0	string	RID_DLG_PASSWORD_TO_OPEN_MODIFY	STR_TWO_PASSWORDS_MISMATCH			159	bg	Паролите за потвърждение не съвпадат с оригиналните. Задайте паролите отново.				20200411 15:09:53
 cui	source\dialogs\passwdomdlg.src	0	string	RID_DLG_PASSWORD_TO_OPEN_MODIFY	STR_INVALID_STATE_FOR_OK_BUTTON			159	bg	Въведете парола за отваряне или за промяна или отметнете настройката „само за четене“, за да продължите.				20200411 15:09:53
-cui	source\dialogs\passwdomdlg.src	0	string	RID_DLG_PASSWORD_TO_OPEN_MODIFY	STR_INVALID_STATE_FOR_OK_BUTTON_V2			159	bg	Set the password by entering the same password in both boxes.				20200411 15:09:53
+cui	source\dialogs\passwdomdlg.src	0	string	RID_DLG_PASSWORD_TO_OPEN_MODIFY	STR_INVALID_STATE_FOR_OK_BUTTON_V2			159	bg	Задайте парола, като въведете една и съща парола в двете полета.				20200411 15:09:53
 cui	source\dialogs\passwdomdlg.src	0	modaldialog	RID_DLG_PASSWORD_TO_OPEN_MODIFY		HID_DLG_PASSWORD_TO_OPEN_MODIFY		171	bg	Задаване на парола				20200411 15:09:53
 cui	source\dialogs\fmsearch.src	0	fixedline	RID_SVXDLG_SEARCHFORM	FL_SEARCHFOR			232	bg	Търсене за				20200411 15:09:53
 cui	source\dialogs\fmsearch.src	0	radiobutton	RID_SVXDLG_SEARCHFORM	RB_SEARCHFORTEXT			50	bg	~Текст				20200411 15:09:53
@@ -71953,6 +71978,18 @@ dbaccess	source\ui\browser\sbabrw.src	0	string	STR_LOADING_TABLE				0	bg	Зар�
 dbaccess	source\ui\browser\sbabrw.src	0	string	STR_NO_TABLE_FORMAT_INSIDE				0	bg	Не може да бъде намерен табличен формат.				20200411 15:09:53
 dbaccess	source\ui\browser\sbabrw.src	0	string	STR_COULDNOTCONNECT_DATASOURCE				0	bg	Не може да бъде установена връзка с източника на данни "$name$".				20200411 15:09:53
 dbaccess	source\ui\browser\sbabrw.src	0	menuitem	RID_MENU_REFRESH_DATA	ID_BROWSER_REFRESH_REBUILD			0	bg	Обновяване				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_TITLE_CONFIRM_DELETION			7527	bg	Потвърдете изтриването				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_QUERY_DELETE_TABLE			7527	bg	Желаете ли таблицата '%1' да бъде изтрита?				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	querybox	MENU_BROWSER_DEFAULTCONTEXT	QUERY_BRW_DELETE_QUERY_CONFIRM			7527	bg	Заявката вече съществува. Желаете ли да бъде изтрита?				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	querybox	MENU_BROWSER_DEFAULTCONTEXT	QUERY_CONNECTION_LOST			7527	bg	Връзката към базата от данни е загубена. Желаете ли да подновите връзката?				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_OPENTABLES_WARNINGS			7527	bg	Срещнати са предупреждения				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_OPENTABLES_WARNINGS_DETAILS			7527	bg	При извличане на таблиците са получени предупреждения от връзката с базата от данни.				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_CONNECTING_DATASOURCE			7527	bg	Свързване към "$name$"				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_LOADING_QUERY			7527	bg	Зареждане на заявка $name$...				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_LOADING_TABLE			7527	bg	Зареждане на таблица $name$...				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_NO_TABLE_FORMAT_INSIDE			7527	bg	Не може да бъде намерен табличен формат.				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_COULDNOTCONNECT_DATASOURCE			7527	bg	Не може да бъде установена връзка с източника на данни "$name$".				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	menuitem	MENU_BROWSER_DEFAULTCONTEXT.RID_MENU_REFRESH_DATA	ID_BROWSER_REFRESH_REBUILD			25336	bg	Обновяване				20200411 15:09:53
 dbaccess	source\ui\browser\sbagrid.src	0	menuitem	RID_SBA_GRID_COLCTXMENU	ID_BROWSER_COLATTRSET	HID_BROWSER_COLUMNFORMAT		0	bg	~Формат на колоната...				20200411 15:09:53
 dbaccess	source\ui\browser\sbagrid.src	0	menuitem	RID_SBA_GRID_COLCTXMENU	ID_BROWSER_COLUMNINFO	HID_BROWSER_COLUMNINFO		0	bg	Копиране на описанието на ~колоната				20200411 15:09:53
 dbaccess	source\ui\browser\sbagrid.src	0	menuitem	RID_SBA_GRID_ROWCTXMENU	ID_BROWSER_TABLEATTR	HID_BROWSER_TABLEFORMAT		0	bg	Формат на таблицата...				20200411 15:09:53
@@ -72918,3 +72955,16 @@ padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_TXT			14
 padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_USER_TXT			60	bg	~Потребител				20200411 15:09:53
 padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_PASS_TXT			60	bg	~Парола				20200411 15:09:53
 padmin	source\rtsetup.src	0	modaldialog	RID_RTS_PWDIALOG				150	bg	Искане за индентификация				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10652				0	bg	\<ahelp hid=\".\" visibility=\"hidden\"\>Отваря раздела Образци за страници, в който можете да приложите образец (фон) върху всички кадри (щракнете с левия бутон) или само върху избрания кадър (щракнете с десния бутон).\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1067D				0	bg	\<ahelp hid=\".\" visibility=\"hidden\"\>Изброява използваните в момента образци на страници.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106A8				0	bg	\<ahelp hid=\".\" visibility=\"hidden\"\>Изброява наскоро използваните образци на страници.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106D3				0	bg	\<ahelp hid=\".\" visibility=\"hidden\"\>Изброява всички налични образци на страници.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106FA				0	bg	\<ahelp hid=\".\" visibility=\"hidden\"\>Щракнете с левия бутон, за да приложите образеца върху всички кадри. Щракнете с десния бутон за подменю.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10747				0	bg	\<ahelp hid=\".\" visibility=\"hidden\"\>Прилагат образеца върху всички кадри.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10762				0	bg	\<ahelp hid=\".\" visibility=\"hidden\"\>Прилага образеца или дизайна на кадър върху избраните кадри.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10785				0	bg	\<ahelp hid=\".\" visibility=\"hidden\"\>Преоразмерява мострите на образците.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107B4				0	bg	\<ahelp hid=\".\" visibility=\"hidden\"\>Отваря раздела Оформления, в който можете да приложите дизайн на кадър върху избрания кадър или кадри.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107CB				0	bg	\<ahelp hid=\".\" visibility=\"hidden\"\>Щракнете, за да приложите дизайн на кадър върху всички избрани кадри. Щракнете с десния бутон за подменю.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1080E				0	bg	\<ahelp hid=\".\" visibility=\"hidden\"\>Отваря раздела Анимация по избор, в който можете да прилагате ефекти върху избраните обекти в даден кадър.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10839				0	bg	\<ahelp hid=\".\" visibility=\"hidden\"\>Отваря раздела Преход между кадрите, в който можете да прилагате ефекти за преход върху избраните кадри.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_id0916200812240344				0	bg	\<ahelp hid=\".\" visibility=\"hidden\"\>Отваря раздела Дизайн на таблица. Щракнете двукратно, за да вмъкнете нова таблица.\</ahelp\>				20200411 15:09:53

@@ -189,12 +189,12 @@ reportbuilder	registry\data\org\openoffice\Office\ExtendedColorScheme.xcu	0	valu
 reportbuilder	registry\data\org\openoffice\Office\ExtendedColorScheme.xcu	0	value	.ExtendedColorScheme.EntryNames.SunReportBuilder.Entries.TextBoxBoundContent	DisplayName			0	hi	पाठ बॉक्स बाउंड सामग्री				20200411 15:09:53
 reportbuilder	registry\data\org\openoffice\Office\UI\DbReportWindowState.xcu	0	value	.DbReportWindowState.UIElements.States.private:resource/toolbar/toolbar	UIName			0	hi	मानक				20200411 15:09:53
 reportbuilder	registry\data\org\openoffice\Office\UI\DbReportWindowState.xcu	0	value	.DbReportWindowState.UIElements.States.private:resource/toolbar/Formatting	UIName			0	hi	प्रारूपण				20200411 15:09:53
-reportbuilder	registry\data\org\openoffice\Office\UI\DbReportWindowState.xcu	0	value	.DbReportWindowState.UIElements.States.private:resource/toolbar/reportcontrols	UIName			0	hi	Report Controls				20200411 15:09:53
+reportbuilder	registry\data\org\openoffice\Office\UI\DbReportWindowState.xcu	0	value	.DbReportWindowState.UIElements.States.private:resource/toolbar/reportcontrols	UIName			0	hi	रिपोर्ट नियंत्रण				20200411 15:09:53
 reportbuilder	registry\data\org\openoffice\Office\UI\DbReportWindowState.xcu	0	value	.DbReportWindowState.UIElements.States.private:resource/toolbar/drawbar	UIName			0	hi	वस्तु का रेखाचित्र बना रहा है				20200411 15:09:53
 reportbuilder	registry\data\org\openoffice\Office\UI\DbReportWindowState.xcu	0	value	.DbReportWindowState.UIElements.States.private:resource/toolbar/alignmentbar	UIName			0	hi	पंक्तिबद्ध करें				20200411 15:09:53
 reportbuilder	registry\data\org\openoffice\Office\UI\DbReportWindowState.xcu	0	value	.DbReportWindowState.UIElements.States.private:resource/toolbar/sectionalignmentbar	UIName			0	hi	विभाग पंक्तिबद्ध करें				20200411 15:09:53
 reportbuilder	registry\data\org\openoffice\Office\UI\DbReportWindowState.xcu	0	value	.DbReportWindowState.UIElements.States.private:resource/toolbar/sectionshrinkbar	UIName			0	hi	विभाग सिकोड़ें				20200411 15:09:53
-reportbuilder	registry\data\org\openoffice\Office\UI\DbReportWindowState.xcu	0	value	.DbReportWindowState.UIElements.States.private:resource/toolbar/resizebar	UIName			0	hi	Object Resizing				20200411 15:09:53
+reportbuilder	registry\data\org\openoffice\Office\UI\DbReportWindowState.xcu	0	value	.DbReportWindowState.UIElements.States.private:resource/toolbar/resizebar	UIName			0	hi	वस्तु का आकार बदलना				20200411 15:09:53
 reportbuilder	registry\data\org\openoffice\Office\UI\ReportCommands.xcu	0	value	..ReportCommands.UserInterface.Commands..uno:ColumnHeaderFooter	Label			0	hi	स्तंभ शीर्षिका/पादिका				20200411 15:09:53
 reportbuilder	registry\data\org\openoffice\Office\UI\ReportCommands.xcu	0	value	..ReportCommands.UserInterface.Commands..uno:ConditionalFormatting	Label			0	hi	सशर्त प्रारूपण...				20200411 15:09:53
 reportbuilder	registry\data\org\openoffice\Office\UI\ReportCommands.xcu	0	value	..ReportCommands.UserInterface.Commands..uno:DbSortingAndGrouping	Label			0	hi	छाँटना और समूहन				20200411 15:09:53
@@ -242,7 +242,7 @@ reportbuilder	registry\data\org\openoffice\Office\UI\ReportCommands.xcu	0	value	
 reportbuilder	registry\data\org\openoffice\Office\UI\ReportCommands.xcu	0	value	..ReportCommands.UserInterface.Popups..uno:SymbolShapesMenu	Label			0	hi	चिन्ह आकार				20200411 15:09:53
 editeng	source\misc\lingu.src	0	querybox	RID_SVXQB_CONTINUE				0	hi	दस्तावेज़ की प्रारंभ से जाँच जारी रखनी है?				20200411 15:09:53
 editeng	source\misc\lingu.src	0	querybox	RID_SVXQB_BW_CONTINUE				0	hi	दस्तावेज़ की अंत से जाँच जारी रखनी है?				20200411 15:09:53
-editeng	source\misc\lingu.src	0	string	RID_SVXSTR_HMERR_THESAURUS				0	hi	No thesaurus is available for the selected language.\nPlease check your installation and install the desired language\n				20200411 15:09:53
+editeng	source\misc\lingu.src	0	string	RID_SVXSTR_HMERR_THESAURUS				0	hi	चयनित भाषा के लिए कोई कोश उपलब्ध नहीं है।\nकृपया अपनी इंस्टालेशन की जांच करें और इच्छित भाषा स्थापित करें\n				20200411 15:09:53
 editeng	source\misc\lingu.src	0	string	RID_SVXSTR_DIC_ERR_UNKNOWN				0	hi	शब्दकोष में शब्द जोड़ा नहीं जा सकता है\nकिसी अनजान कारण से।				20200411 15:09:53
 editeng	source\misc\lingu.src	0	string	RID_SVXSTR_DIC_ERR_FULL				0	hi	शब्दकोश पहले से ही भरा हुआ है।				20200411 15:09:53
 editeng	source\misc\lingu.src	0	string	RID_SVXSTR_DIC_ERR_READONLY				0	hi	शब्दकोश केवल पढ़ने-योग्य है।				20200411 15:09:53
@@ -688,16 +688,16 @@ instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ER
 instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_23				0	hi	{[ProductName] }व्यवस्थापन सफलतापूर्वक समाप्त हुआ।				20200411 15:09:53
 instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_24				0	hi	{[ProductName] }व्यवस्थापन विफल हुआ।				20200411 15:09:53
 instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_25				0	hi	फ़ाइल से पढ़ने में त्रुटि: [2]। {{ तंत्र की त्रुटि [3].}}  जाँचे कि फ़ाइल मौजूद है और आप इसको अभिगम्य कर सकते हैं।				20200411 15:09:53
-instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_26				0	hi	Cannot create the file [3]. A directory with this name already exists. Cancel the installation and try installing to a different location.				20200411 15:09:53
+instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_26				0	hi	फ़ाइल नहीं बना सकता [3]। इस नाम की एक निर्देशिका पहले से मौजूद है। स्थापना रद्द करें और किसी भिन्न स्थान पर स्थापित करने का प्रयास करें।				20200411 15:09:53
 instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_27				0	hi	कृपया एक डिस्क डालें: [2]				20200411 15:09:53
 instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_28				0	hi	The installer has insufficient privileges to access this directory: [2]. The installation cannot continue.  Log on as an administrator or contact your system administrator.				20200411 15:09:53
-instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_29				0	hi	Error writing to file [2]. Verify that you have access to that directory.				20200411 15:09:53
-instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_30				0	hi	Error reading from file [2]. Verify that the file exists and that you can access it.				20200411 15:09:53
+instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_29				0	hi	फ़ाइल में लिखने में त्रुटि [2]। सत्यापित करें कि आपके पास उस निर्देशिका तक पहुंच है।				20200411 15:09:53
+instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_30				0	hi	फ़ाइल से पढ़ने में त्रुटि [2]। सत्यापित करें कि फ़ाइल मौजूद है और आप इसे एक्सेस कर सकते हैं।				20200411 15:09:53
 instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_31				0	hi	Another application has exclusive access to the file [2]. Please shut down all other applications, then click Retry.				20200411 15:09:53
 instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_32				0	hi	There is not enough disk space to install the file [2]. Free some disk space and click Retry, or click Cancel to exit.				20200411 15:09:53
-instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_33				0	hi	Source file not found: [2]. Verify that the file exists and that you can access it.				20200411 15:09:53
-instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_34				0	hi	Error reading from file: [3]. {{ System error [2].}} Verify that the file exists and that you can access it.				20200411 15:09:53
-instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_35				0	hi	Error writing to file: [3]. {{ System error [2].}} Verify that you have access to that directory.				20200411 15:09:53
+instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_33				0	hi	स्रोत फ़ाइल नहीं मिली: [2]। सत्यापित करें कि फ़ाइल मौजूद है और आप इसे एक्सेस कर सकते हैं।				20200411 15:09:53
+instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_34				0	hi	फ़ाइल से पढ़ने में त्रुटि: [3]। {{ System error [2].}} सत्यापित करें कि फ़ाइल मौजूद है और आप इसे एक्सेस कर सकते हैं।				20200411 15:09:53
+instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_35				0	hi	फ़ाइल में लिखने में त्रुटि: [3]। {{ System error [2].}} सत्यापित करें कि आपके पास उस निर्देशिका तक पहुंच है।				20200411 15:09:53
 instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_36				0	hi	Source file not found{{(cabinet)}}: [2]. Verify that the file exists and that you can access it.				20200411 15:09:53
 instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_37				0	hi	Cannot create the directory [2]. A file with this name already exists. Please rename or remove the file and click Retry, or click Cancel to exit.				20200411 15:09:53
 instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_38				0	hi	The volume [2] is currently unavailable. Please select another.				20200411 15:09:53
@@ -4543,6 +4543,24 @@ svx	source\form\fmexpl.src	0	menuitem	RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTT
 svx	source\form\fmexpl.src	0	groupbox	RID_SVXDLG_SETFORM	GB_PATH			188	hi	पथ				20200411 15:09:53
 svx	source\form\fmexpl.src	0	modaldialog	RID_SVXDLG_SETFORM				200	hi	प्रपत्र चुनें				20200411 15:09:53
 svx	source\form\fmexpl.src	0	dockingwindow	RID_SVX_FMEXPLORER				200	hi	नेविगेटर प्रपत्र				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_EDIT	CMD_SID_FM_CONVERTTO_EDIT		42916	hi	पाठ बॉक्स				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_BUTTON	CMD_SID_FM_CONVERTTO_BUTTON		42916	hi	बटन				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_FIXEDTEXT	CMD_SID_FM_CONVERTTO_FIXEDTEXT		42916	hi	स्तर क्षेत्र				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_GROUPBOX	CMD_SID_FM_CONVERTTO_GROUPBOX		42916	hi	समूह बॉक्स				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_LISTBOX	CMD_SID_FM_CONVERTTO_LISTBOX		42916	hi	सूची बॉक्स				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_CHECKBOX	CMD_SID_FM_CONVERTTO_CHECKBOX		42916	hi	जाँच बॉक्स				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_RADIOBUTTON	CMD_SID_FM_CONVERTTO_RADIOBUTTON		42916	hi	रेडियो बटन				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_COMBOBOX	CMD_SID_FM_CONVERTTO_COMBOBOX		42916	hi	कॉम्बो बॉक्स				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_IMAGEBUTTON	CMD_SID_FM_CONVERTTO_IMAGEBUTTON		42916	hi	चित्र बटन				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_FILECONTROL	CMD_SID_FM_CONVERTTO_FILECONTROL		42916	hi	फ़ाइल चुनाव				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_DATE	CMD_SID_FM_CONVERTTO_DATE		42916	hi	दिनांक क्षेत्र				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_TIME	CMD_SID_FM_CONVERTTO_TIME		42916	hi	समय क्षेत्र				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_NUMERIC	CMD_SID_FM_CONVERTTO_NUMERIC		42916	hi	संख्या क्षेत्र				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_CURRENCY	CMD_SID_FM_CONVERTTO_CURRENCY		42916	hi	मुद्रा क्षेत्र				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_PATTERN	CMD_SID_FM_CONVERTTO_PATTERN		42916	hi	नमूना क्षेत्र				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_IMAGECONTROL	CMD_SID_FM_CONVERTTO_IMAGECONTROL		42916	hi	चित्र नियंत्रण				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_FORMATTED	CMD_SID_FM_CONVERTTO_FORMATTED		42916	hi	संरूपित क्षेत्र				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_SCROLLBAR	CMD_SID_FM_CONVERTTO_SCROLLBAR		42916	hi	स्क्रॉल पट्टी				20200411 15:09:53
 svx	source\form\filtnav.src	0	menuitem	RID_FM_FILTER_MENU	SID_FM_DELETE	HID_FM_DELETE		0	hi	मिटाएँ				20200411 15:09:53
 svx	source\form\filtnav.src	0	menuitem	RID_FM_FILTER_MENU	SID_FM_FILTER_EDIT	HID_FM_FILTER_EDIT		0	hi	संपादन				20200411 15:09:53
 svx	source\form\filtnav.src	0	menuitem	RID_FM_FILTER_MENU	SID_FM_FILTER_IS_NULL	HID_FM_FILTER_IS_NULL		0	hi	रिक्त है				20200411 15:09:53
@@ -15672,6 +15690,7 @@ officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..G
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Popups..uno:TransliterateMenu	Label			0	hi	केस बदलें				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Popups..uno:ViewMenu	Label			0	hi	~View				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Popups..uno:WindowList	Label			0	hi	~Window				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:Substract	Label			0	hi	घटाएँ				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:AcceptChange	Label			0	hi	परिवर्तन स्वीकारें				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:AcceptTracedChange	Label			0	hi	परिवर्तन स्वीकारें				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:AcceptTrackedChanges	Label			0	hi	स्वीकारें या अस्वीकारें...				20200411 15:09:53
@@ -17444,7 +17463,7 @@ desktop	source\migration\wizard.src	0	string	STR_STATE_USER				0	hi	उपयो
 desktop	source\migration\wizard.src	0	string	STR_STATE_UPDATE_CHECK				0	hi	ऑनलाइन अद्यतन				20200411 15:09:53
 desktop	source\migration\wizard.src	0	string	STR_STATE_REGISTRATION				0	hi	पंजीयन				20200411 15:09:53
 desktop	source\migration\wizard.src	0	string	STR_WELCOME_MIGRATION				0	hi	यह सहायक अनुज्ञापत्र अनुबंध से होकर मार्गदर्शन करेगा, %OLD_VERSION से उपयोक्ता आँकड़ा का हस्तांतरण और %PRODUCTNAME का पंजीयन।\n\nजारी रखने के लिए 'आगे' क्लिक करें।				20200411 15:09:53
-desktop	source\migration\wizard.src	0	string	STR_WELCOME_WITHOUT_LICENSE				0	hi	This wizard will guide you through the setup of %PRODUCTNAME.\n\nClick 'Next' to continue.				20200411 15:09:53
+desktop	source\migration\wizard.src	0	string	STR_WELCOME_WITHOUT_LICENSE				0	hi	यह विज़ार्ड %PRODUCTNAME के सेटअप में आपका मार्गदर्शन करेगा।\n\nजारी रखने के लिए 'आगे' दबाएँ।				20200411 15:09:53
 desktop	source\migration\wizard.src	0	string	STR_FINISH				0	hi	समाप्त				20200411 15:09:53
 desktop	source\migration\wizard.src	0	string	STR_REGISTRATION_OOO				0	hi	आपके पास अब दुनिया की सबसे तेजी से बढ़ रहे मुक्त स्रोत के समुदाय को समर्थन और योगदान करने का मौका है।\n\nपंजीयन करके हमें यह साबित करने में मदद करें कि %PRODUCTNAME पहले से महत्वपूर्ण बाजार में भागीदारी पा लिया है।\n\nपंजीयन स्वैच्छिक है और बिना किसी दायित्व का है।				20200411 15:09:53
 desktop	source\migration\wizard.src	0	errorbox	ERRBOX_REG_NOSYSBROWSER				0	hi	अंतर्जाल को आरंभ करने के दौरान त्रुटि।\nकृपया %PRODUCTNAME और अंतर्जाल विन्यास को जाँचें।				20200411 15:09:53
@@ -18461,7 +18480,7 @@ basctl	source\dlged\managelang.src	0	string	RID_DLG_SETDEF_LANGUAGE	STR_ADDLANG_
 basctl	source\dlged\managelang.src	0	string	RID_DLG_SETDEF_LANGUAGE	STR_ADDLANG_LABEL			0	hi	मौजूद भाषाएँ				20200411 15:09:53
 basctl	source\dlged\managelang.src	0	string	RID_DLG_SETDEF_LANGUAGE	STR_ADDLANG_INFO			0	hi	जोड़ी जाने वाली भाषाओं को चुनें। यह सभी भाषाओं के लिए संसाधन को लेखागार में बनाया जाएगा। उपयोक्ता अंतरफलक भाषा के स्ट्रिंगों को तयशुदा रूप से इन नये संसाधनों मे नकल किया जाएगा।				20200411 15:09:53
 basctl	source\dlged\managelang.src	0	modaldialog	RID_DLG_SETDEF_LANGUAGE		HID_BASICIDE_SETDEFAULT_LANGUAGE		0	hi	तयशुदा उपयोक्ता अंतरफलक भाषा नियत करें				20200411 15:09:53
-setup_native	source\mac\macinstall.ulf	0	LngText	OKLabel				0	hi	OK				20200411 15:09:53
+setup_native	source\mac\macinstall.ulf	0	LngText	OKLabel				0	hi	ठीक है				20200411 15:09:53
 setup_native	source\mac\macinstall.ulf	0	LngText	InstallLabel				0	hi	संस्थापित करें				20200411 15:09:53
 setup_native	source\mac\macinstall.ulf	0	LngText	AbortLabel				0	hi	छोड़ें				20200411 15:09:53
 setup_native	source\mac\macinstall.ulf	0	LngText	IntroText1				0	hi	[FULLPRODUCTNAME] के स्थापना सहायक में आपका स्वागत है				20200411 15:09:53
@@ -18482,7 +18501,7 @@ setup_native	source\mac\macinstall.ulf	0	LngText	IdentifyYES				0	hi	हाँ, 
 setup_native	source\mac\macinstall.ulf	0	LngText	IdentifyNO				0	hi	नहीं, संस्थापन छोड़ें				20200411 15:09:53
 setup_native	source\mac\macinstall.ulf	0	LngText	InstallFailedText				0	hi	संस्थापन विफल।				20200411 15:09:53
 setup_native	source\mac\macinstall.ulf	0	LngText	InstallCompleteText				0	hi	[PRODUCTNAME] भाषा पैक का संस्थापन संपन्न हुआ।				20200411 15:09:53
-setup_native	source\mac\macinstall.ulf	0	LngText	InstallCompleteText2				0	hi	Call '[PRODUCTNAME] - Preferences - Language Settings - Languages' to change the user interface language.				20200411 15:09:53
+setup_native	source\mac\macinstall.ulf	0	LngText	InstallCompleteText2				0	hi	उपयोगकर्ता इंटरफ़ेस भाषा बदलने के लिए '[PRODUCTNAME] - वरीयताएँ - भाषा सेटिंग्स - भाषाएँ' पर कॉल करें।				20200411 15:09:53
 setup_native	source\mac\macinstall.ulf	0	LngText	InstallCompleteTextPatch				0	hi	[FULLPRODUCTNAME] का संस्थापन पूर्ण हुआ				20200411 15:09:53
 sd	source\core\glob.src	0	string	STR_LAYER_BCKGRND				0	hi	पृष्ठभूमि				20200411 15:09:53
 sd	source\core\glob.src	0	string	STR_LAYER_BCKGRNDOBJ				0	hi	पृष्ठभूमि वस्तु				20200411 15:09:53
@@ -21974,13 +21993,13 @@ filter	source\xsltdialog\xmlfilterdialogstrings.src	0	string	STR_IMPORT_EXPORT		
 filter	source\xsltdialog\xmlfilterdialogstrings.src	0	string	STR_EXPORT_ONLY				0	hi	फ़िल्टर निर्यात करें				20200411 15:09:53
 filter	source\xsltdialog\xmlfilterdialogstrings.src	0	string	STR_WARN_DELETE				0	hi	क्या आप XML फ़िल्टर '%s' को वास्तव में मिटाना चाहते हैं? यह क्रिया वापस नहीं लौटायी जा सकती है।				20200411 15:09:53
 filter	source\xsltdialog\xmlfilterdialogstrings.src	0	string	STR_ERROR_FILTER_NAME_EXISTS				0	hi	एक XML फ़िल्टर '%s' नाम के साथ पहले से मौजूद है। एक अलग नाम प्रविष्ट करें।				20200411 15:09:53
-filter	source\xsltdialog\xmlfilterdialogstrings.src	0	string	STR_ERROR_TYPE_NAME_EXISTS				0	hi	The name for the user interface '%s1' is already used by the XML filter '%s2'. Please enter a different name.				20200411 15:09:53
+filter	source\xsltdialog\xmlfilterdialogstrings.src	0	string	STR_ERROR_TYPE_NAME_EXISTS				0	hi	उपयोगकर्ता इंटरफ़ेस '%s1' का नाम पहले से ही XML फ़िल्टर '%s2' द्वारा प्रयोग किया जा रहा है। कृपया कोई दूसरा नाम दर्ज करें।				20200411 15:09:53
 filter	source\xsltdialog\xmlfilterdialogstrings.src	0	string	STR_ERROR_DTD_NOT_FOUND				0	hi	डीटीडी को नहीं खोजा जा सका। कृपया एक वैध पथ प्रविष्ट करें।				20200411 15:09:53
 filter	source\xsltdialog\xmlfilterdialogstrings.src	0	string	STR_ERROR_EXPORT_XSLT_NOT_FOUND				0	hi	निर्यात के लिए XSLT पाया नहीं जा सका। कृपया एक वैध पथ प्रविष्ट करें।				20200411 15:09:53
 filter	source\xsltdialog\xmlfilterdialogstrings.src	0	string	STR_ERROR_IMPORT_XSLT_NOT_FOUND				0	hi	आयात के लिए XSLT नहीं पाया जा सका। कृपया एक वैध पथ प्रविष्ट करें।				20200411 15:09:53
 filter	source\xsltdialog\xmlfilterdialogstrings.src	0	string	STR_ERROR_IMPORT_TEMPLATE_NOT_FOUND				0	hi	दिया गया आयात नमूना पाया नहीं जा सका। कृपया एक वैध पथ प्रविष्ट करें।				20200411 15:09:53
 filter	source\xsltdialog\xmlfilterdialogstrings.src	0	string	STR_NOT_SPECIFIED				0	hi	निर्दिष्ट नहीं				20200411 15:09:53
-filter	source\xsltdialog\xmlfilterdialogstrings.src	0	string	STR_NO_ERRORS_FOUND				0	hi	No errors found.				20200411 15:09:53
+filter	source\xsltdialog\xmlfilterdialogstrings.src	0	string	STR_NO_ERRORS_FOUND				0	hi	कोई त्रुटि नहीं मिली।				20200411 15:09:53
 filter	source\xsltdialog\xmlfilterdialogstrings.src	0	string	STR_DEFAULT_FILTER_NAME				0	hi	नया फ़िल्टर				20200411 15:09:53
 filter	source\xsltdialog\xmlfilterdialogstrings.src	0	string	STR_DEFAULT_UI_NAME				0	hi	बेनाम				20200411 15:09:53
 filter	source\xsltdialog\xmlfilterdialogstrings.src	0	string	STR_UNDEFINED_FILTER				0	hi	अपरिभाषित फिल्टर				20200411 15:09:53
@@ -22192,8 +22211,8 @@ sccomp	source\solver\solver.src	0	string	RID_PROPERTY_INTEGER				0	hi	चरो�
 sccomp	source\solver\solver.src	0	string	RID_PROPERTY_TIMEOUT				0	hi	हल करने की समय सीमा (सेकेंड)				20200411 15:09:53
 sccomp	source\solver\solver.src	0	string	RID_PROPERTY_EPSILONLEVEL				0	hi	एप्सिलन स्तर (0-3)				20200411 15:09:53
 sccomp	source\solver\solver.src	0	string	RID_PROPERTY_LIMITBBDEPTH				0	hi	ब्रांच और बाऊंड गहराई सीमा तय करें				20200411 15:09:53
-sccomp	source\solver\solver.src	0	string	RID_PROPERTY_NONLINEARTEST				0	hi	Run strict linearity checks				20200411 15:09:53
-sccomp	source\solver\solver.src	0	string	RID_ERROR_NONLINEAR				0	hi	The model seems nonlinear (see options).				20200411 15:09:53
+sccomp	source\solver\solver.src	0	string	RID_PROPERTY_NONLINEARTEST				0	hi	सख्त रैखिकता जांच चलाएं				20200411 15:09:53
+sccomp	source\solver\solver.src	0	string	RID_ERROR_NONLINEAR				0	hi	मॉडल अरेखीय लगता है (विकल्प देखें)।				20200411 15:09:53
 sccomp	source\solver\solver.src	0	string	RID_ERROR_EPSILONLEVEL				0	hi	एप्सिलन स्तर अवैध है।				20200411 15:09:53
 sccomp	source\solver\solver.src	0	string	RID_ERROR_INFEASIBLE				0	hi	नमूना संभव नहीं है। परिसीमन की शर्तों को जाँचें।				20200411 15:09:53
 sccomp	source\solver\solver.src	0	string	RID_ERROR_UNBOUNDED				0	hi	नमूना अपरिसीमित है।				20200411 15:09:53
@@ -22319,7 +22338,7 @@ connectivity	source\resource\conn_shared_res.src	0	string	STR_NO_TABLE				0	hi	�
 connectivity	source\resource\conn_shared_res.src	0	string	STR_NO_MAC_OS_FOUND				0	hi	कोई उपयुक्त मैक ओएस संस्थापन नहीं मिला।				20200411 15:09:53
 connectivity	source\resource\conn_shared_res.src	0	string	STR_NO_DISK_SPACE				0	hi	यह डेटाबेस फ़ाइल '$filename$' बनाई नहीं जा सकी। कृपया अपना डिस्क स्थान जाँचें।				20200411 15:09:53
 connectivity	source\resource\conn_shared_res.src	0	string	STR_COMMAND_NOT_FOUND				0	hi	यह डेटाबेस '$databasename$' बनाई नहीं जा सकी क्योंकि कमांड '$progname$' निष्पादित नहीं किया जा सका।				20200411 15:09:53
-connectivity	source\resource\conn_shared_res.src	0	string	STR_DATABASE_NEEDS_CONVERTING				0	hi	The current database needs to be converted. Please insert control user and password.				20200411 15:09:53
+connectivity	source\resource\conn_shared_res.src	0	string	STR_DATABASE_NEEDS_CONVERTING				0	hi	वर्तमान डेटाबेस को परिवर्तित करने की आवश्यकता है। कृपया नियंत्रण उपयोगकर्ता और पासवर्ड डालें।				20200411 15:09:53
 connectivity	source\resource\conn_shared_res.src	0	string	STR_USER_NO_DELETE				0	hi	यह उपयोक्ता मिटाया नहीं जा सकता। अन्यथा डेटाबेस एक अस्थिर स्थिति में रहेगा।				20200411 15:09:53
 connectivity	source\resource\conn_shared_res.src	0	string	STR_NO_STROAGE				0	hi	यह संयोजन स्थापित नहीं किया जा सकता है। कोई स्टोरेज या URL नहीं दिया गया था।				20200411 15:09:53
 connectivity	source\resource\conn_shared_res.src	0	string	STR_INVALID_FILE_URL				0	hi	इस दिए गए URL में कोई वैध स्थानीय फ़ाइल तंत्र पथ नहीं है। कृपया अपने डेटाबेस फ़ाइल के स्थान को जाँचें।				20200411 15:09:53
@@ -22494,9 +22513,9 @@ vcl	source\src\print.src	0	itemlist	RID_STR_PAPERNAMES	27			0	hi	Long Bond				20
 vcl	source\src\print.src	0	itemlist	RID_STR_PAPERNAMES	28			0	hi	#8 (Monarch) Envelope				20200411 15:09:53
 vcl	source\src\print.src	0	itemlist	RID_STR_PAPERNAMES	29			0	hi	#6 3/4 (Personal) Envelope				20200411 15:09:53
 vcl	source\src\print.src	0	itemlist	RID_STR_PAPERNAMES	30			0	hi	#9 Envelope				20200411 15:09:53
-vcl	source\src\print.src	0	itemlist	RID_STR_PAPERNAMES	31			0	hi	#10 Envelope				20200411 15:09:53
-vcl	source\src\print.src	0	itemlist	RID_STR_PAPERNAMES	32			0	hi	#11 Envelope				20200411 15:09:53
-vcl	source\src\print.src	0	itemlist	RID_STR_PAPERNAMES	33			0	hi	#12 Envelope				20200411 15:09:53
+vcl	source\src\print.src	0	itemlist	RID_STR_PAPERNAMES	31			0	hi	#10 लिफाफा				20200411 15:09:53
+vcl	source\src\print.src	0	itemlist	RID_STR_PAPERNAMES	32			0	hi	#11 लिफाफा				20200411 15:09:53
+vcl	source\src\print.src	0	itemlist	RID_STR_PAPERNAMES	33			0	hi	#12 लिफाफा				20200411 15:09:53
 vcl	source\src\print.src	0	itemlist	RID_STR_PAPERNAMES	34			0	hi	16 Kai				20200411 15:09:53
 vcl	source\src\print.src	0	itemlist	RID_STR_PAPERNAMES	35			0	hi	32 Kai				20200411 15:09:53
 vcl	source\src\print.src	0	itemlist	RID_STR_PAPERNAMES	36			0	hi	Big 32 Kai				20200411 15:09:53
@@ -69419,7 +69438,7 @@ cui	source\dialogs\insrc.src	0	modaldialog	DLG_INS_ROW_COL				136	hi	घुस�
 cui	source\dialogs\passwdomdlg.src	0	fixedline	RID_DLG_PASSWORD_TO_OPEN_MODIFY	FL_FILE_ENCRYPTION			165	hi	फाइल कूटबद्ध करने का कूटशब्द				20200411 15:09:53
 cui	source\dialogs\passwdomdlg.src	0	fixedtext	RID_DLG_PASSWORD_TO_OPEN_MODIFY	FT_PASSWD_TO_OPEN			159	hi	खोलने हेतू कूटशब्द प्रविष्ट करें				20200411 15:09:53
 cui	source\dialogs\passwdomdlg.src	0	fixedtext	RID_DLG_PASSWORD_TO_OPEN_MODIFY	FT_REENTER_PASSWD_TO_OPEN			159	hi	कूटशब्द की पुष्टि करें				20200411 15:09:53
-cui	source\dialogs\passwdomdlg.src	0	fixedtext	RID_DLG_PASSWORD_TO_OPEN_MODIFY	FT_PASSWD_NOTE			159	hi	Note: After a password has been set, the document will only open with the password. Should you lose the password, there will be no way to recover the document. Please also note that this password is case-sensitive.				20200411 15:09:53
+cui	source\dialogs\passwdomdlg.src	0	fixedtext	RID_DLG_PASSWORD_TO_OPEN_MODIFY	FT_PASSWD_NOTE			159	hi	नोट: पासवर्ड सेट होने के बाद, दस्तावेज़ केवल पासवर्ड के साथ खुलेगा। यदि आप पासवर्ड खो देते हैं, तो दस्तावेज़ को पुनर्प्राप्त करने का कोई तरीका नहीं होगा। कृपया यह भी ध्यान दें कि यह पासवर्ड केस-संवेदी है।				20200411 15:09:53
 cui	source\dialogs\passwdomdlg.src	0	fixedline	RID_DLG_PASSWORD_TO_OPEN_MODIFY	FL_FILE_SHARING_OPTIONS			165	hi	फाइल साझा करने का कूटशब्द				20200411 15:09:53
 cui	source\dialogs\passwdomdlg.src	0	checkbox	RID_DLG_PASSWORD_TO_OPEN_MODIFY	CB_OPEN_READONLY	HID_DLG_PASSWORD_TO_OPEN_MODIFY_FILE_READONLY		159	hi	फाइल केवल पढ़ने-योग्य खोले				20200411 15:09:53
 cui	source\dialogs\passwdomdlg.src	0	fixedtext	RID_DLG_PASSWORD_TO_OPEN_MODIFY	FT_PASSWD_TO_MODIFY			159	hi	संपादन को अधिकृत करने के लिये कूटशब्द प्रविष्ट करें				20200411 15:09:53
@@ -69430,7 +69449,7 @@ cui	source\dialogs\passwdomdlg.src	0	string	RID_DLG_PASSWORD_TO_OPEN_MODIFY	STR_
 cui	source\dialogs\passwdomdlg.src	0	string	RID_DLG_PASSWORD_TO_OPEN_MODIFY	STR_ONE_PASSWORD_MISMATCH			159	hi	संपुष्टि कूटशब्द, कूटशब्द के साथ मेल नहीं खाता है। दोनों‌ बॉक्स में समान कूटशब्द प्रविष्ट करके कूटशब्द को पुनः नियत करें।				20200411 15:09:53
 cui	source\dialogs\passwdomdlg.src	0	string	RID_DLG_PASSWORD_TO_OPEN_MODIFY	STR_TWO_PASSWORDS_MISMATCH			159	hi	संपुष्टि कूटशब्द मौलिक कूटशब्द के साथ मेल नहीं खाया। पुनः कूटशब्द को नियत करें।				20200411 15:09:53
 cui	source\dialogs\passwdomdlg.src	0	string	RID_DLG_PASSWORD_TO_OPEN_MODIFY	STR_INVALID_STATE_FOR_OK_BUTTON			159	hi	कृपया, खोलने या संपादन के लिये कूटशब्द प्रविष्ट करें या फ़िर पढ़ने-योग्य विकल्प चुनकर आगे बढ़ें।				20200411 15:09:53
-cui	source\dialogs\passwdomdlg.src	0	string	RID_DLG_PASSWORD_TO_OPEN_MODIFY	STR_INVALID_STATE_FOR_OK_BUTTON_V2			159	hi	Set the password by entering the same password in both boxes.				20200411 15:09:53
+cui	source\dialogs\passwdomdlg.src	0	string	RID_DLG_PASSWORD_TO_OPEN_MODIFY	STR_INVALID_STATE_FOR_OK_BUTTON_V2			159	hi	दोनों बॉक्स में एक ही पासवर्ड डालकर पासवर्ड सेट करें।				20200411 15:09:53
 cui	source\dialogs\passwdomdlg.src	0	modaldialog	RID_DLG_PASSWORD_TO_OPEN_MODIFY		HID_DLG_PASSWORD_TO_OPEN_MODIFY		171	hi	कूटशब्द नियत करें				20200411 15:09:53
 cui	source\dialogs\fmsearch.src	0	fixedline	RID_SVXDLG_SEARCHFORM	FL_SEARCHFOR			232	hi	के लिए ढूंढें				20200411 15:09:53
 cui	source\dialogs\fmsearch.src	0	radiobutton	RID_SVXDLG_SEARCHFORM	RB_SEARCHFORTEXT			50	hi	पाठ				20200411 15:09:53
@@ -70512,7 +70531,7 @@ cui	source\tabpages\backgrnd.src	0	radiobutton	RID_SVXPAGE_BACKGROUND	BTN_TILE		
 cui	source\tabpages\backgrnd.src	0	fixedline	RID_SVXPAGE_BACKGROUND	FL_GRAPH_TRANS			153	hi	पारदर्शिता				20200411 15:09:53
 cui	source\tabpages\backgrnd.src	0	checkbox	RID_SVXPAGE_BACKGROUND	BTN_PREVIEW			141	hi	पूर्वावलोकन				20200411 15:09:53
 cui	source\tabpages\backgrnd.src	0	string	RID_SVXPAGE_BACKGROUND	STR_BROWSE			141	hi	आलेखी ढूँढें				20200411 15:09:53
-cui	source\tabpages\backgrnd.src	0	tabpage	RID_SVXPAGE_BACKGROUND		HID_BACKGROUND		260	hi	Background				20200411 15:09:53
+cui	source\tabpages\backgrnd.src	0	tabpage	RID_SVXPAGE_BACKGROUND		HID_BACKGROUND		260	hi	पृष्ठभूमि				20200411 15:09:53
 cui	source\tabpages\paragrph.src	0	fixedtext	RID_SVXPAGE_STD_PARAGRAPH	FT_LEFTINDENT			120	hi	पाठ के पहले				20200411 15:09:53
 cui	source\tabpages\paragrph.src	0	fixedtext	RID_SVXPAGE_STD_PARAGRAPH	FT_RIGHTINDENT			120	hi	पाठ के बाद				20200411 15:09:53
 cui	source\tabpages\paragrph.src	0	fixedtext	RID_SVXPAGE_STD_PARAGRAPH	FT_FLINEINDENT			120	hi	पहली पंक्ति				20200411 15:09:53
@@ -71356,7 +71375,7 @@ cui	source\tabpages\autocdlg.src	0	string	RID_OFAPAGE_AUTOCORR_EXCEPT	STR_PB_SGL
 cui	source\tabpages\autocdlg.src	0	string	RID_OFAPAGE_AUTOCORR_EXCEPT	STR_PB_DBL_END			111	hi	युग्म उद्धरण को उद्धृत करना बंद करें				20200411 15:09:53
 cui	source\tabpages\autocdlg.src	0	string	RID_OFAPAGE_AUTOCORR_QUOTE	STR_HEADER1			252	hi	[M]				20200411 15:09:53
 cui	source\tabpages\autocdlg.src	0	string	RID_OFAPAGE_AUTOCORR_QUOTE	STR_HEADER2			252	hi	[T]				20200411 15:09:53
-cui	source\tabpages\autocdlg.src	0	string	RID_OFAPAGE_AUTOCORR_QUOTE	ST_NON_BREAK_SPACE			252	hi	Add non breaking space before specific punctuation marks in French text				20200411 15:09:53
+cui	source\tabpages\autocdlg.src	0	string	RID_OFAPAGE_AUTOCORR_QUOTE	ST_NON_BREAK_SPACE			252	hi	फ़्रेंच लेख में विशिष्ट विराम चिह्नों से पहले मानक या स्थायी जगह जोड़ें				20200411 15:09:53
 cui	source\tabpages\autocdlg.src	0	string	RID_OFAPAGE_AUTOCORR_QUOTE	ST_ORDINAL			252	hi	क्रमसूचक संख्या के प्रत्ययों को प्रारूप दें (1st -> 1^st)				20200411 15:09:53
 cui	source\tabpages\autocdlg.src	0	fixedline	RID_OFAPAGE_AUTOCORR_QUOTE	FL_SINGLE			122	hi	एकल उद्धरण				20200411 15:09:53
 cui	source\tabpages\autocdlg.src	0	checkbox	RID_OFAPAGE_AUTOCORR_QUOTE	CB_SGL_TYPO			86	hi	बदलें				20200411 15:09:53
@@ -71901,8 +71920,8 @@ dbaccess	source\ui\app\app.src	0	string	RID_STR_REPORTS_HELP_TEXT_WIZARD				0	hi
 dbaccess	source\ui\app\app.src	0	string	RID_STR_FORMS_HELP_TEXT				0	hi	अभिलेख स्रोत, नियंत्रण, और नियंत्रण गुण को निर्दिष्ट करता हुआ एक प्रपत्र बनाएँ।				20200411 15:09:53
 dbaccess	source\ui\app\app.src	0	string	RID_STR_REPORT_HELP_TEXT				0	hi	अभिलेख स्रोत, नियंत्रण, और नियंत्रण गुण को निर्दिष्ट करता एक प्रतिवेदन तैयार करें।				20200411 15:09:53
 dbaccess	source\ui\app\app.src	0	string	RID_STR_FORMS_HELP_TEXT_WIZARD				0	hi	सहायक आपको प्रपत्र बनाने के जरूरी चरणों के लिए निर्देश देगा।				20200411 15:09:53
-dbaccess	source\ui\app\app.src	0	string	RID_STR_QUERIES_HELP_TEXT				0	hi	Create a query by specifying the filters, input tables, field names, and properties for sorting or grouping.				20200411 15:09:53
-dbaccess	source\ui\app\app.src	0	string	RID_STR_QUERIES_HELP_TEXT_SQL				0	hi	Create a query by entering an SQL statement directly.				20200411 15:09:53
+dbaccess	source\ui\app\app.src	0	string	RID_STR_QUERIES_HELP_TEXT				0	hi	छँटाई या समूहीकरण के लिए फ़िल्टर, इनपुट तालिकाएँ, फ़ील्ड नाम और गुण निर्दिष्ट करके एक क्वेरी बनाएँ।				20200411 15:09:53
+dbaccess	source\ui\app\app.src	0	string	RID_STR_QUERIES_HELP_TEXT_SQL				0	hi	सीधे SQL स्टेटमेंट दर्ज करके एक क्वेरी बनाएं।				20200411 15:09:53
 dbaccess	source\ui\app\app.src	0	string	RID_STR_QUERIES_HELP_TEXT_WIZARD				0	hi	सहायक आपको प्रश्न बनाने के जरूरी चरणों के लिए निर्देश देगा।				20200411 15:09:53
 dbaccess	source\ui\app\app.src	0	string	RID_STR_TABLES_HELP_TEXT_DESIGN				0	hi	क्षेत्र नाम व विशेषता निर्दिष्ट करते हुये एक सारणी बनाएँ, साथ ही साथ एक आँकड़ा प्रकार।				20200411 15:09:53
 dbaccess	source\ui\app\app.src	0	string	RID_STR_TABLES_HELP_TEXT_WIZARD				0	hi	व्यापार और निजी सारणी नमूना के चयन से चुनें जिसे आप एक सारणी बनाने के लिए मनपसंद बनाना चाहते हैं।				20200411 15:09:53
@@ -71924,7 +71943,7 @@ dbaccess	source\ui\app\app.src	0	string	STR_FRM_LABEL				0	hi	प्रपत्
 dbaccess	source\ui\app\app.src	0	string	STR_RPT_LABEL				0	hi	प्रतिवेदन नाम				20200411 15:09:53
 dbaccess	source\ui\app\app.src	0	string	STR_FOLDER_LABEL				0	hi	फ़ोल्डर नाम				20200411 15:09:53
 dbaccess	source\ui\app\app.src	0	string	STR_SUB_DOCS_WITH_SCRIPTS				0	hi	दस्तावेज़ में प्रपत्र या प्रतिवेदन अंतःस्थापित मैक्रोज के साथ समाहित है।				20200411 15:09:53
-dbaccess	source\ui\app\app.src	0	string	STR_SUB_DOCS_WITH_SCRIPTS_DETAIL				0	hi	Macros should be embedded into the database document itself.\n\nYou can continue to use your document as before, however, you are encouraged to migrate your macros. The menu item 'Tools - Migrate Macros...' will assist you with this.\n\nNote that you won't be able to embed macros into the database document itself until this migration is done.				20200411 15:09:53
+dbaccess	source\ui\app\app.src	0	string	STR_SUB_DOCS_WITH_SCRIPTS_DETAIL				0	hi	मैक्रोज़ को डेटाबेस दस्तावेज़ में ही अंतर्निहित किया जाना चाहिए।\n\nआप पहले की तरह अपने दस्तावेज़ का उपयोग करना जारी रख सकते हैं, हालाँकि, आपको अपने मैक्रोज़ को माइग्रेट करने के लिए प्रोत्साहित किया जाता है। मेनू आइटम 'टूल्स - माइग्रेट मैक्रोज़...' इसमें आपकी सहायता करेगा।\n\nध्यान दें कि जब तक यह माइग्रेशन नहीं हो जाता तब तक आप मैक्रोज़ को डेटाबेस दस्तावेज़ में एम्बेड नहीं कर पाएंगे।				20200411 15:09:53
 dbaccess	source\ui\app\app.src	0	string	RID_STR_EMBEDDED_DATABASE				0	hi	अंतस्थापित डेटाबेस				20200411 15:09:53
 dbaccess	source\ui\app\app.src	0	string	RID_STR_NO_DIFF_CAT				0	hi	आप विभिन्न श्रेणियों का चयन नहीं कर सकते हैं।				20200411 15:09:53
 dbaccess	source\ui\app\app.src	0	string	RID_STR_UNSUPPORTED_OBJECT_TYPE				0	hi	असमर्थित वस्तु प्रकार मिला($type$)।				20200411 15:09:53
@@ -71951,6 +71970,18 @@ dbaccess	source\ui\browser\sbabrw.src	0	string	STR_LOADING_TABLE				0	hi	$name$ 
 dbaccess	source\ui\browser\sbabrw.src	0	string	STR_NO_TABLE_FORMAT_INSIDE				0	hi	कोई सारणी प्रारुप नहीं खोज सका।				20200411 15:09:53
 dbaccess	source\ui\browser\sbabrw.src	0	string	STR_COULDNOTCONNECT_DATASOURCE				0	hi	"$name$" आंकड़े स्रोत का संयोजन स्थापित नहीं किया जा सका।				20200411 15:09:53
 dbaccess	source\ui\browser\sbabrw.src	0	menuitem	RID_MENU_REFRESH_DATA	ID_BROWSER_REFRESH_REBUILD			0	hi	पुनः निर्माण				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_TITLE_CONFIRM_DELETION			7527	hi	मिटाने की पुष्टि करें				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_QUERY_DELETE_TABLE			7527	hi	क्या आप सारणी '%1' को मिटाना चाहते हैं?				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	querybox	MENU_BROWSER_DEFAULTCONTEXT	QUERY_BRW_DELETE_QUERY_CONFIRM			7527	hi	प्रश्न पहले से ही अस्तित्व में है। आप इसको मिटाना चाहते हैं?				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	querybox	MENU_BROWSER_DEFAULTCONTEXT	QUERY_CONNECTION_LOST			7527	hi	डेटाबेस से संयोजन नष्ट हो गया है। क्या आप पुनः जुड़ना चाहते हैं?				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_OPENTABLES_WARNINGS			7527	hi	चेतावनी मिली				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_OPENTABLES_WARNINGS_DETAILS			7527	hi	सारणी को प्राप्त करने के समय, डेटाबेस संयोजन से चेतावनी मिली।				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_CONNECTING_DATASOURCE			7527	hi	"$name$" से जोड़ने हो रहा है...				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_LOADING_QUERY			7527	hi	क्वेरी $name$ लोड हो रही है...				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_LOADING_TABLE			7527	hi	तालिका $name$ लोड हो रही है...				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_NO_TABLE_FORMAT_INSIDE			7527	hi	कोई सारणी प्रारुप नहीं खोज सका।				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_COULDNOTCONNECT_DATASOURCE			7527	hi	"$name$" आंकड़े स्रोत का संयोजन स्थापित नहीं किया जा सका।				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	menuitem	MENU_BROWSER_DEFAULTCONTEXT.RID_MENU_REFRESH_DATA	ID_BROWSER_REFRESH_REBUILD			25336	hi	पुनः निर्माण				20200411 15:09:53
 dbaccess	source\ui\browser\sbagrid.src	0	menuitem	RID_SBA_GRID_COLCTXMENU	ID_BROWSER_COLATTRSET	HID_BROWSER_COLUMNFORMAT		0	hi	स्तंभ प्रारुप...				20200411 15:09:53
 dbaccess	source\ui\browser\sbagrid.src	0	menuitem	RID_SBA_GRID_COLCTXMENU	ID_BROWSER_COLUMNINFO	HID_BROWSER_COLUMNINFO		0	hi	स्तंभ विवरण का प्रतिलिपि				20200411 15:09:53
 dbaccess	source\ui\browser\sbagrid.src	0	menuitem	RID_SBA_GRID_ROWCTXMENU	ID_BROWSER_TABLEATTR	HID_BROWSER_TABLEFORMAT		0	hi	सारणी प्रारुप...				20200411 15:09:53
@@ -72213,10 +72244,10 @@ dbaccess	source\ui\dlg\UserAdmin.src	0	pushbutton	TAB_PAGE_USERADMIN	PB_DELETEUS
 dbaccess	source\ui\dlg\UserAdmin.src	0	fixedline	TAB_PAGE_USERADMIN	FL_TABLE_GRANTS			0	hi	चुने हुए उपयोक्ता के लिए प्रवेश अधिकार				20200411 15:09:53
 dbaccess	source\ui\dlg\UserAdmin.src	0	querybox	QUERY_USERADMIN_DELETE_USER				0	hi	क्या आप सचमुच में उपयोक्ता को मिटाना चाहते हैं?				20200411 15:09:53
 dbaccess	source\ui\dlg\UserAdmin.src	0	string	STR_USERADMIN_NOT_AVAILABLE				0	hi	डेटाबेस उपयोक्ता प्रशासन का समर्थन नहीं करता है।				20200411 15:09:53
-dbaccess	source\ui\dlg\UserAdmin.src	0	fixedline	DLG_PASSWORD	FL_USER			0	hi	User "$name$: $"				20200411 15:09:53
+dbaccess	source\ui\dlg\UserAdmin.src	0	fixedline	DLG_PASSWORD	FL_USER			0	hi	उपयोक्ता "$name$: $"				20200411 15:09:53
 dbaccess	source\ui\dlg\UserAdmin.src	0	fixedtext	DLG_PASSWORD	FT_OLDPASSWORD			0	hi	पुराना कूटशब्द				20200411 15:09:53
 dbaccess	source\ui\dlg\UserAdmin.src	0	fixedtext	DLG_PASSWORD	FT_PASSWORD			0	hi	कूटशब्द				20200411 15:09:53
-dbaccess	source\ui\dlg\UserAdmin.src	0	fixedtext	DLG_PASSWORD	FT_PASSWORD_REPEAT			0	hi	~Confirm password				20200411 15:09:53
+dbaccess	source\ui\dlg\UserAdmin.src	0	fixedtext	DLG_PASSWORD	FT_PASSWORD_REPEAT			0	hi	~कूटशब्द की पुष्टि करें				20200411 15:09:53
 dbaccess	source\ui\dlg\UserAdmin.src	0	modaldialog	DLG_PASSWORD		HID_DLG_PASSWORD		0	hi	कूटशब्द बदलें				20200411 15:09:53
 dbaccess	source\ui\dlg\UserAdmin.src	0	string	STR_ERROR_PASSWORDS_NOT_IDENTICAL				0	hi	कूटशब्द मेल नहीं खाया। कृपया फ़िर से कूटशब्द को प्रविष्ट कीजिए।				20200411 15:09:53
 dbaccess	source\ui\dlg\dsselect.src	0	fixedtext	DLG_DATASOURCE_SELECTION	FT_DESCRIPTION			154	hi	एक आँकड़ा स्रोत चुनें:				20200411 15:09:53
@@ -72489,7 +72520,7 @@ dbaccess	source\ui\dlg\RelationDlg.src	0	radiobutton	DLG_REL_PROPERTIES	RB_CASC_
 dbaccess	source\ui\dlg\RelationDlg.src	0	radiobutton	DLG_REL_PROPERTIES	RB_CASC_DEL_NULL	HID_DLG_REL_CASC_DEL_NULL		72	hi	रिक्त नियत करें				20200411 15:09:53
 dbaccess	source\ui\dlg\RelationDlg.src	0	radiobutton	DLG_REL_PROPERTIES	RB_CASC_DEL_DEFAULT	HID_DLG_REL_CASC_DEL_DEFAULT		72	hi	तयशुदा नियत करें				20200411 15:09:53
 dbaccess	source\ui\dlg\RelationDlg.src	0	modaldialog	DLG_REL_PROPERTIES				186	hi	सम्बन्ध				20200411 15:09:53
-dbaccess	source\ui\dlg\AutoControls_tmpl.hrc	0	pushbutton	AUTO_BROWSECONTROLGROUP( AUTO_X, AUTO_Y, AUTOPAGE_X, AUTO_HID, AUTO_HID2)	PB_AUTOBROWSEURL	AUTO_HID2		0	hi	Browse...				20200411 15:09:53
+dbaccess	source\ui\dlg\AutoControls_tmpl.hrc	0	pushbutton	AUTO_BROWSECONTROLGROUP( AUTO_X, AUTO_Y, AUTOPAGE_X, AUTO_HID, AUTO_HID2)	PB_AUTOBROWSEURL	AUTO_HID2		0	hi	ब्राउज़ करें...				20200411 15:09:53
 dbaccess	source\ui\dlg\AutoControls_tmpl.hrc	0	fixedtext	AUTO_NAMECONTROLGROUP(AUTO_Y, AUTO_HID)	FT_AUTODATABASENAME			0	hi	डेटाबेस का नाम				20200411 15:09:53
 dbaccess	source\ui\dlg\AutoControls_tmpl.hrc	0	fixedtext	AUTO_HOSTCONTROLGROUP(AUTO_Y, AUTO_HID)	FT_AUTOHOSTNAME			0	hi	सर्वर				20200411 15:09:53
 dbaccess	source\ui\dlg\AutoControls_tmpl.hrc	0	fixedtext	AUTO_BASEDNCONTROLGROUP(AUTO_Y, AUTO_HID)	FT_AUTOBASEDN			0	hi	आधार ~DN				20200411 15:09:53
@@ -72660,7 +72691,7 @@ dbaccess	source\ext\adabas\AdabasNewDb.src	0	string	STR_ADABAS_START_DATABASE			
 dbaccess	source\ext\adabas\AdabasNewDb.src	0	string	STR_ADABAS_DB_EXISTS				0	hi	प्रविष्ट नाम पहले से मौजूद है।				20200411 15:09:53
 dbaccess	source\ext\adabas\AdabasNewDb.src	0	string	STR_ADABAS_NO_DEFAULTNAME				0	hi	कोई तयशुदा नाम डेटाबेस फ़ाइल के लिए नियत नहीं किया जा सका। कुल लम्बाई 40 वर्ण से अधिक है।				20200411 15:09:53
 dbaccess	source\ext\adabas\AdabasNewDb.src	0	string	STR_ADABAS_NO_ACCESSRIGHTS				0	hi	कोई तयशुदा नाम डेटाबेस फ़ाइल के लिए नियत नहीं किया जा सका। कोई लेखन अधिकार नहीं है।				20200411 15:09:53
-dbaccess	source\ext\adabas\AdabasNewDb.src	0	string	STR_ADABAS_CANNOT_CONVERT				0	hi	The current database needs to be converted. Please insert control user and password.				20200411 15:09:53
+dbaccess	source\ext\adabas\AdabasNewDb.src	0	string	STR_ADABAS_CANNOT_CONVERT				0	hi	वर्तमान डेटाबेस को परिवर्तित करने की आवश्यकता है। कृपया नियंत्रण उपयोगकर्ता और पासवर्ड डालें।				20200411 15:09:53
 dbaccess	source\ext\adabas\AdabasNewDb.src	0	string	STR_ADABAS_PASSWORD_ILLEGAL				0	hi	कूटशब्द में अंतरण की अनुमति नहीं है। कृपया एक नया कूटशब्द प्रविष्ट करें।				20200411 15:09:53
 dbaccess	source\ext\macromigration\macromigration.src	0	string	DLG_MACRO_MIGRATION	STR_STATE_CLOSE_SUB_DOCS			0	hi	तैयार करें				20200411 15:09:53
 dbaccess	source\ext\macromigration\macromigration.src	0	string	DLG_MACRO_MIGRATION	STR_STATE_BACKUP_DBDOC			0	hi	बैकअप दस्तावेज़				20200411 15:09:53

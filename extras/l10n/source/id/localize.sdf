@@ -4656,6 +4656,24 @@ svx	source\form\fmexpl.src	0	menuitem	RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTT
 svx	source\form\fmexpl.src	0	groupbox	RID_SVXDLG_SETFORM	GB_PATH			188	id	Direktori				20181231 09:50:43
 svx	source\form\fmexpl.src	0	modaldialog	RID_SVXDLG_SETFORM				200	id	Pilih formulir				20181231 09:50:43
 svx	source\form\fmexpl.src	0	dockingwindow	RID_SVX_FMEXPLORER				200	id	Navigator formulir				20181231 09:50:43
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_EDIT	CMD_SID_FM_CONVERTTO_EDIT		42916	id	Kotak ~Teks				20181231 09:50:43
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_BUTTON	CMD_SID_FM_CONVERTTO_BUTTON		42916	id	Tom~bol				20181231 09:50:43
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_FIXEDTEXT	CMD_SID_FM_CONVERTTO_FIXEDTEXT		42916	id	Ruas la~bel				20181231 09:50:43
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_GROUPBOX	CMD_SID_FM_CONVERTTO_GROUPBOX		42916	id	Kotak Kelom~pok				20181231 09:50:43
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_LISTBOX	CMD_SID_FM_CONVERTTO_LISTBOX		42916	id	Kotak Senara~i				20181231 09:50:43
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_CHECKBOX	CMD_SID_FM_CONVERTTO_CHECKBOX		42916	id	Kotak ~Cek				20181231 09:50:43
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_RADIOBUTTON	CMD_SID_FM_CONVERTTO_RADIOBUTTON		42916	id	Tombol ~Radio				20181231 09:50:43
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_COMBOBOX	CMD_SID_FM_CONVERTTO_COMBOBOX		42916	id	Kota~k Kombo				20181231 09:50:43
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_IMAGEBUTTON	CMD_SID_FM_CONVERTTO_IMAGEBUTTON		42916	id	To~mbol Gambar				20181231 09:50:43
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_FILECONTROL	CMD_SID_FM_CONVERTTO_FILECONTROL		42916	id	Seleksi B~erkas				20181231 09:50:43
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_DATE	CMD_SID_FM_CONVERTTO_DATE		42916	id	Ruas Tan~ggal				20181231 09:50:43
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_TIME	CMD_SID_FM_CONVERTTO_TIME		42916	id	~Ruas Waktu				20181231 09:50:43
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_NUMERIC	CMD_SID_FM_CONVERTTO_NUMERIC		42916	id	Ruas ~Numerik				20181231 09:50:43
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_CURRENCY	CMD_SID_FM_CONVERTTO_CURRENCY		42916	id	Ruas K~urs				20181231 09:50:43
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_PATTERN	CMD_SID_FM_CONVERTTO_PATTERN		42916	id	Ruas ~Pola				20181231 09:50:43
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_IMAGECONTROL	CMD_SID_FM_CONVERTTO_IMAGECONTROL		42916	id	Kontrol ~Gambar				20181231 09:50:43
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_FORMATTED	CMD_SID_FM_CONVERTTO_FORMATTED		42916	id	Ruas Be~rformat				20181231 09:50:43
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_SCROLLBAR	CMD_SID_FM_CONVERTTO_SCROLLBAR		42916	id	Batang penggulung				20181231 09:50:43
 svx	source\accessibility\accessibility.src	0	string	RID_SVXSTR_A11Y_3D_MATERIAL_COLOR				0	id	Warna materi 3D				20181231 09:50:43
 svx	source\accessibility\accessibility.src	0	string	RID_SVXSTR_A11Y_TEXT_COLOR				0	id	Warna fonta				20181231 09:50:43
 svx	source\accessibility\accessibility.src	0	string	RID_SVXSTR_A11Y_BACKGROUND_COLOR				0	id	Warna latar belakang				20181231 09:50:43
@@ -7271,6 +7289,25 @@ sw	source\ui\config\mailconfigpage.src	0	radiobutton	DLG_MM_SERVERAUTHENTICATION
 sw	source\ui\config\mailconfigpage.src	0	fixedtext	DLG_MM_SERVERAUTHENTICATION	FT_INUSERNAME			53	id	Nama p~engguna				20181231 09:50:43
 sw	source\ui\config\mailconfigpage.src	0	fixedtext	DLG_MM_SERVERAUTHENTICATION	FT_INPASSWORD			53	id	Sand~i				20181231 09:50:43
 sw	source\ui\config\mailconfigpage.src	0	modaldialog	DLG_MM_SERVERAUTHENTICATION		HID_MM_SERVERAUTHENTICATION		250	id	Otentikasi Server				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	string	DLG_MM_TESTACCOUNTSETTINGS	ST_TASK			33321	id	Tugas				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	string	DLG_MM_TESTACCOUNTSETTINGS	ST_ESTABLISH			33321	id	Melakukan koneksi jaringan				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	string	DLG_MM_TESTACCOUNTSETTINGS	ST_FINDSERVER			33321	id	Mencari server surat keluar				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	string	DLG_MM_TESTACCOUNTSETTINGS	ST_COMPLETED			33321	id	Berhasil				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	string	DLG_MM_TESTACCOUNTSETTINGS	ST_FAILED			33321	id	Gagal				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	string	DLG_MM_TESTACCOUNTSETTINGS	ST_ERROR_SERVER			33321	id	%PRODUCTNAME tidak dapat menghubungi server surat keluar. Periksa pengaturan sistem Anda dan pengaturan pada %PRODUCTNAME. Periksa nama server, porta dan pengaturan sambungan aman.				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	modaldialog	DLG_MM_TESTACCOUNTSETTINGS	DLG_MM_SERVERAUTHENTICATION	HID_MM_SERVERAUTHENTICATION		250	id	Otentikasi Server				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	checkbox	CB_AUTHENTICATION				238	id	Server sura~t keluar (SMTP) mensyaratkan otentikasi.				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	radiobutton	RB_SEP_AUTHENTICATION				232	id	~Server surat keluar (SMTP) mensyaratkan otentikasi terpisah.				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	fixedtext	FT_OUTGOINGSERVER				200	id	Server surat keluar:				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	fixedtext	FT_USERNAME				53	id	Nama pengg~una				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	fixedtext	FT_OUTPASSWORD				53	id	~Sandi				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	radiobutton	RB_SMTPAFTERPOP				232	id	Server surat keluar menggunakan otent~ikasi yang sama dengan server surat masuk. Masukkan pengaturan server surat masuk.				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	fixedtext	FT_INCOMINGSERVER				230	id	Server surat masuk:				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	fixedtext	FT_SERVER				53	id	~Nama server				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	fixedtext	FT_PORT				20	id	P~orta				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	fixedtext	FT_PROTOCOL				53	id	Jenis				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	fixedtext	FT_INUSERNAME				53	id	Nama p~engguna				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	fixedtext	FT_INPASSWORD				53	id	Sand~i				20181231 09:50:43
 sw	source\ui\utlui\unotools.src	0	fixedtext	DLG_RENAME_XNAMED	FT_NEW_NAME			50	id	Nama baru				20181231 09:50:43
 sw	source\ui\utlui\unotools.src	0	fixedline	DLG_RENAME_XNAMED	FL_NAME			152	id	Ubah nama				20181231 09:50:43
 sw	source\ui\utlui\unotools.src	0	modaldialog	DLG_RENAME_XNAMED		HID_RENAME_XNAMED		220	id	Ubah nama objek:				20181231 09:50:43
@@ -15221,22 +15258,22 @@ officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..G
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:DeleteRecord	Label			0	id	Delete Record				20181231 09:50:43
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:DeleteRows	Label			0	id	Hapus Baris				20181231 09:50:43
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:DeleteRows	ContextLabel			0	id	~Rows				20181231 09:50:43
-officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:DesignerDialog	Label			0	id	St~yles and Formatting				20181231 09:50:43
+officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:DesignerDialog	Label			0	id	Ga~ya dan Pemformatan				20181231 09:50:43
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:DistributeColumns	Label			0	id	Samakan ~Distribusi Kolom				20181231 09:50:43
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:DistributeRows	Label			0	id	Bagikan Baris secara Merata				20181231 09:50:43
-officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:DistributeSelection	Label			0	id	~Distribution...				20181231 09:50:43
+officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:DistributeSelection	Label			0	id	~Pembagian...				20181231 09:50:43
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:DownSearch	Label			0	id	Cari Berikutnya				20181231 09:50:43
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:DrawCaption	Label			0	id	Dialog Komik				20181231 09:50:43
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:DrawText	Label			0	id	Teks				20181231 09:50:43
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:Edit	Label			0	id	Kotak Teks				20181231 09:50:43
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:EditDoc	Label			0	id	Sunting Berkas				20181231 09:50:43
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:EditFrameSet	Label			0	id	Sunting SetBingkai				20181231 09:50:43
-officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:EditHyperlink	Label			0	id	H~yperlink...				20181231 09:50:43
+officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:EditHyperlink	Label			0	id	Tautan l~uar...				20181231 09:50:43
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:Ellipse	Label			0	id	Elips				20181231 09:50:43
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:EllipseCut	Label			0	id	Segmen Elips				20181231 09:50:43
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:EllipseCut_Unfilled	Label			0	id	Segmen Elips, tanpa isi				20181231 09:50:43
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:Ellipse_Unfilled	Label			0	id	Lonjong, Tanpa Isi				20181231 09:50:43
-officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:EnterGroup	Label			0	id	~Enter Group				20181231 09:50:43
+officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:EnterGroup	Label			0	id	~Masuki Kelompok				20181231 09:50:43
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:EntireColumn	Label			0	id	Pilih Kolom				20181231 09:50:43
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:EntireColumn	ContextLabel			0	id	~Columns				20181231 09:50:43
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:EntireRow	Label			0	id	Pilih Baris				20181231 09:50:43
@@ -17400,7 +17437,7 @@ desktop	source\app\desktop.src	0	string	STR_INTERNAL_ERRMSG				0	id	The followin
 desktop	source\app\desktop.src	0	querybox	QBX_USERDATALOCKED				0	id	Mungkin terdapat proses %PRODUCTNAME lain yang tengah mengakses pengaturan pribadi Anda. Atau, pengaturan pribadi tersebut tengah terkunci.\nPengaksesan secara bersama-sama dapat membuat ketidak-konsistenan bagi pengaturan pribadi Anda. Sebelum melanjutkan ini, Anda harus yakin bahwa pengguna '$u' telah menutup %PRODUCTNAME pada komputer '$h'.\n\nAnda yakin untuk lanjut?				20181231 09:50:43
 desktop	source\app\desktop.src	0	string	STR_TITLE_USERDATALOCKED				0	id	%PRODUCTNAME %PRODUCTVERSION				20181231 09:50:43
 desktop	source\app\desktop.src	0	errorbox	EBX_ERR_PRINTDISABLED				275	id	Fungsi cetak tidak diaktifkan. Tidak ada dokumen yang dapat dicetak.				20181231 09:50:43
-desktop	source\app\desktop.src	0	infobox	INFOBOX_EXPIRED				275	id	This Evaluation Version has expired. To find out more about %PRODUCTNAME,\nvisit https://www.openoffice.org				20181231 09:50:43
+desktop	source\app\desktop.src	0	infobox	INFOBOX_EXPIRED				275	id	Versi Evaluasi telah kadaluwarsa. Untuk mengetahui lebih lanjut tentang %PRODUCTNAME,\nkunjungi https://www.openoffice.org				20181231 09:50:43
 desktop	source\app\desktop.src	0	string	STR_TITLE_EXPIRED				275	id	%PRODUCTNAME %PRODUCTVERSION				20181231 09:50:43
 desktop	source\app\desktop.src	0	string	STR_BOOTSTRAP_ERR_NO_PATHSET_SERVICE				275	id	Manajer lokasi tidak tersedia.\n				20181231 09:50:43
 desktop	source\app\desktop.src	0	string	STR_BOOSTRAP_ERR_NOTENOUGHDISKSPACE				275	id	%PRODUCTNAME tidak selesai dipasang karena kurangnya kapasitas media simpan. Mohon beri ruang kosong pada lokasi berikut dan jalankan kembali %PRODUCTNAME:\n\n				20181231 09:50:43
@@ -22285,7 +22322,7 @@ connectivity	source\resource\conn_shared_res.src	0	string	STR_NO_TABLE				0	id	T
 connectivity	source\resource\conn_shared_res.src	0	string	STR_NO_MAC_OS_FOUND				0	id	Tidak ditemukan adanya instalasi Mac OS.				20181231 09:50:43
 connectivity	source\resource\conn_shared_res.src	0	string	STR_NO_DISK_SPACE				0	id	Berkas '$filename$' tidak bisa dibuat. Periksa sisa ruang pada media simpan Anda.				20181231 09:50:43
 connectivity	source\resource\conn_shared_res.src	0	string	STR_COMMAND_NOT_FOUND				0	id	Basis data '$databasename$' tidak bisa dijalankan, karena perintah '$progname$' tidak bisa dieksekusi.				20181231 09:50:43
-connectivity	source\resource\conn_shared_res.src	0	string	STR_DATABASE_NEEDS_CONVERTING				0	id	The current database needs to be converted. Please insert control user and password.				20181231 09:50:43
+connectivity	source\resource\conn_shared_res.src	0	string	STR_DATABASE_NEEDS_CONVERTING				0	id	Basis data yang sekarang tidak bisa dikonversi. Harap masukkan pengguna kontrol dan sandi.				20181231 09:50:43
 connectivity	source\resource\conn_shared_res.src	0	string	STR_USER_NO_DELETE				0	id	Pengguna ini tidak bisa dihapus. Jika tidak, basis data berada pada kondisi tidak konsisten.				20181231 09:50:43
 connectivity	source\resource\conn_shared_res.src	0	string	STR_NO_STROAGE				0	id	Koneksi tidak bisa dibuat. Tidak ada penyimpanan atau URL yang diberikan.				20181231 09:50:43
 connectivity	source\resource\conn_shared_res.src	0	string	STR_INVALID_FILE_URL				0	id	URL yang diberikan bukanlah lokasi berkas lokal yang sah. Harap periksa lokasi berkas basis data Anda.				20181231 09:50:43
@@ -22499,9 +22536,9 @@ vcl	source\src\print.src	0	itemlist	RID_STR_PAPERNAMES	16			0	id	Amplop C6				20
 vcl	source\src\print.src	0	itemlist	RID_STR_PAPERNAMES	17			0	id	Amplop C6/5				20181231 09:50:43
 vcl	source\src\print.src	0	itemlist	RID_STR_PAPERNAMES	18			0	id	Amplop DL				20181231 09:50:43
 vcl	source\src\print.src	0	itemlist	RID_STR_PAPERNAMES	19			0	id	Slide Dia				20181231 09:50:43
-vcl	source\src\print.src	0	itemlist	RID_STR_PAPERNAMES	20			0	id	Screen (4:3)				20181231 09:50:43
-vcl	source\src\print.src	0	itemlist	RID_STR_PAPERNAMES	21			0	id	Screen (16:9)				20181231 09:50:43
-vcl	source\src\print.src	0	itemlist	RID_STR_PAPERNAMES	22			0	id	Screen (16:10)				20181231 09:50:43
+vcl	source\src\print.src	0	itemlist	RID_STR_PAPERNAMES	20			0	id	Layar (4:3)				20181231 09:50:43
+vcl	source\src\print.src	0	itemlist	RID_STR_PAPERNAMES	21			0	id	Layar (16:9)				20181231 09:50:43
+vcl	source\src\print.src	0	itemlist	RID_STR_PAPERNAMES	22			0	id	Layar (16:10)				20181231 09:50:43
 vcl	source\src\print.src	0	itemlist	RID_STR_PAPERNAMES	23			0	id	C				20181231 09:50:43
 vcl	source\src\print.src	0	itemlist	RID_STR_PAPERNAMES	24			0	id	D				20181231 09:50:43
 vcl	source\src\print.src	0	itemlist	RID_STR_PAPERNAMES	25			0	id	E				20181231 09:50:43
@@ -69695,7 +69732,7 @@ cui	source\options\optfltr.src	0	string	RID_OFAPAGE_MSFILTEROPT2	ST_HEADER2			24
 cui	source\options\optfltr.src	0	fixedtext	RID_OFAPAGE_MSFILTEROPT2	FT_HEADER1_EXPLANATION			248	id	[L]: Muat dan konversi objek				20181231 09:50:43
 cui	source\options\optfltr.src	0	fixedtext	RID_OFAPAGE_MSFILTEROPT2	FT_HEADER2_EXPLANATION			248	id	[S]: Konversi dan simpan objek				20181231 09:50:43
 cui	source\options\optfltr.src	0	string	RID_OFAPAGE_MSFILTEROPT2	ST_CHG_MATH			248	id	MathType ke %PRODUCTNAME Math atau kebalikannya				20181231 09:50:43
-cui	source\options\optfltr.src	0	string	RID_OFAPAGE_MSFILTEROPT2	ST_CHG_WRITER			248	id	Word to %PRODUCTNAME Writer or reverse				20181231 09:50:43
+cui	source\options\optfltr.src	0	string	RID_OFAPAGE_MSFILTEROPT2	ST_CHG_WRITER			248	id	Word ke %PRODUCTNAME Writer atau kebalikannya				20181231 09:50:43
 cui	source\options\optfltr.src	0	string	RID_OFAPAGE_MSFILTEROPT2	ST_CHG_CALC			248	id	Excel ke %PRODUCTNAME Calc atau kebalikannya				20181231 09:50:43
 cui	source\options\optfltr.src	0	string	RID_OFAPAGE_MSFILTEROPT2	ST_CHG_IMPRESS			248	id	PowerPoint ke %PRODUCTNAME Impress atau kebalikannya				20181231 09:50:43
 cui	source\options\optaccessibility.src	0	fixedline	RID_SVXPAGE_ACCESSIBILITYCONFIG	FL_MISCELLANEOUS			0	id	Opsi lain-lain				20181231 09:50:43
@@ -70760,9 +70797,9 @@ cui	source\tabpages\page.src	0	itemlist	RID_SVXSTRARY_PAPERSIZE_DRAW	24			0	id	C
 cui	source\tabpages\page.src	0	itemlist	RID_SVXSTRARY_PAPERSIZE_DRAW	25			0	id	C5 Amplop				20181231 09:50:43
 cui	source\tabpages\page.src	0	itemlist	RID_SVXSTRARY_PAPERSIZE_DRAW	26			0	id	C4 Amplop				20181231 09:50:43
 cui	source\tabpages\page.src	0	itemlist	RID_SVXSTRARY_PAPERSIZE_DRAW	27			0	id	Slide Dia				20181231 09:50:43
-cui	source\tabpages\page.src	0	itemlist	RID_SVXSTRARY_PAPERSIZE_DRAW	28			0	id	Screen (4:3)				20181231 09:50:43
-cui	source\tabpages\page.src	0	itemlist	RID_SVXSTRARY_PAPERSIZE_DRAW	29			0	id	Screen (16:9)				20181231 09:50:43
-cui	source\tabpages\page.src	0	itemlist	RID_SVXSTRARY_PAPERSIZE_DRAW	30			0	id	Screen (16:10)				20181231 09:50:43
+cui	source\tabpages\page.src	0	itemlist	RID_SVXSTRARY_PAPERSIZE_DRAW	28			0	id	Layar (4:3)				20181231 09:50:43
+cui	source\tabpages\page.src	0	itemlist	RID_SVXSTRARY_PAPERSIZE_DRAW	29			0	id	Layar (16:9)				20181231 09:50:43
+cui	source\tabpages\page.src	0	itemlist	RID_SVXSTRARY_PAPERSIZE_DRAW	30			0	id	Layar (16:10)				20181231 09:50:43
 cui	source\tabpages\paragrph.src	0	fixedtext	RID_SVXPAGE_STD_PARAGRAPH	FT_LEFTINDENT			120	id	Sebelum teks				20181231 09:50:43
 cui	source\tabpages\paragrph.src	0	fixedtext	RID_SVXPAGE_STD_PARAGRAPH	FT_RIGHTINDENT			120	id	Sesudah teks				20181231 09:50:43
 cui	source\tabpages\paragrph.src	0	fixedtext	RID_SVXPAGE_STD_PARAGRAPH	FT_FLINEINDENT			120	id	Baris pe~rtama				20181231 09:50:43
@@ -71149,7 +71186,7 @@ cui	source\tabpages\autocdlg.src	0	string	RID_OFAPAGE_AUTOCORR_EXCEPT	STR_PB_SGL
 cui	source\tabpages\autocdlg.src	0	string	RID_OFAPAGE_AUTOCORR_EXCEPT	STR_PB_DBL_END			111	id	Akhir kutipan petik ganda				20181231 09:50:43
 cui	source\tabpages\autocdlg.src	0	string	RID_OFAPAGE_AUTOCORR_QUOTE	STR_HEADER1			252	id	[M]				20181231 09:50:43
 cui	source\tabpages\autocdlg.src	0	string	RID_OFAPAGE_AUTOCORR_QUOTE	STR_HEADER2			252	id	[T]				20181231 09:50:43
-cui	source\tabpages\autocdlg.src	0	string	RID_OFAPAGE_AUTOCORR_QUOTE	ST_NON_BREAK_SPACE			252	id	Add non breaking space before specific punctuation marks in French text				20181231 09:50:43
+cui	source\tabpages\autocdlg.src	0	string	RID_OFAPAGE_AUTOCORR_QUOTE	ST_NON_BREAK_SPACE			252	id	Tambahkan spasi sebelum tanda baca tertentu pada teks bahasa Perancis				20181231 09:50:43
 cui	source\tabpages\autocdlg.src	0	string	RID_OFAPAGE_AUTOCORR_QUOTE	ST_ORDINAL			252	id	Format akhiran angka ordinal (1st -> 1^st)				20181231 09:50:43
 cui	source\tabpages\autocdlg.src	0	fixedline	RID_OFAPAGE_AUTOCORR_QUOTE	FL_SINGLE			122	id	Petik tunggal				20181231 09:50:43
 cui	source\tabpages\autocdlg.src	0	checkbox	RID_OFAPAGE_AUTOCORR_QUOTE	CB_SGL_TYPO			86	id	Gan~ti				20181231 09:50:43
@@ -71931,6 +71968,15 @@ dbaccess	source\ui\browser\sbabrw.src	0	string	STR_LOADING_TABLE				0	id	Memuat 
 dbaccess	source\ui\browser\sbabrw.src	0	string	STR_NO_TABLE_FORMAT_INSIDE				0	id	Tak ada format tabel yang ditemukan.				20181231 09:50:43
 dbaccess	source\ui\browser\sbabrw.src	0	string	STR_COULDNOTCONNECT_DATASOURCE				0	id	Koneksi ke sumber data "$name$" tidak bisa dilakukan.				20181231 09:50:43
 dbaccess	source\ui\browser\sbabrw.src	0	menuitem	RID_MENU_REFRESH_DATA	ID_BROWSER_REFRESH_REBUILD			0	id	Bangun Ulang				20181231 09:50:43
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_TITLE_CONFIRM_DELETION			7527	id	Konfirmasi Penghapusan				20181231 09:50:43
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_QUERY_DELETE_TABLE			7527	id	Anda ingin menghapus tabel '%1'?				20181231 09:50:43
+dbaccess	source\ui\browser\sbabrw.src	0	querybox	MENU_BROWSER_DEFAULTCONTEXT	QUERY_BRW_DELETE_QUERY_CONFIRM			7527	id	Kuiri sudah ada. Apakah Anda hendak menghapusnya?				20181231 09:50:43
+dbaccess	source\ui\browser\sbabrw.src	0	querybox	MENU_BROWSER_DEFAULTCONTEXT	QUERY_CONNECTION_LOST			7527	id	Koneksi pada basis data terputus. Anda ingin terhubung kembali?				20181231 09:50:43
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_OPENTABLES_WARNINGS			7527	id	Ditemukan peringatan				20181231 09:50:43
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_OPENTABLES_WARNINGS_DETAILS			7527	id	Ketika menerima tabel, terdapat peringatan dari koneksi basis data.				20181231 09:50:43
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_NO_TABLE_FORMAT_INSIDE			7527	id	Tak ada format tabel yang ditemukan.				20181231 09:50:43
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_COULDNOTCONNECT_DATASOURCE			7527	id	Koneksi ke sumber data "$name$" tidak bisa dilakukan.				20181231 09:50:43
+dbaccess	source\ui\browser\sbabrw.src	0	menuitem	MENU_BROWSER_DEFAULTCONTEXT.RID_MENU_REFRESH_DATA	ID_BROWSER_REFRESH_REBUILD			25336	id	Bangun Ulang				20181231 09:50:43
 dbaccess	source\ui\uno\copytablewizard.src	0	string	STR_CTW_NO_VIEWS_SUPPORT				0	id	Basis data tujuan tidak mendukung tampilan.				20181231 09:50:43
 dbaccess	source\ui\uno\copytablewizard.src	0	string	STR_CTW_NO_PRIMARY_KEY_SUPPORT				0	id	Basis data tujuan tidak mendukung kunci utama.				20181231 09:50:43
 dbaccess	source\ui\uno\copytablewizard.src	0	string	STR_CTW_INVALID_DATA_ACCESS_DESCRIPTOR				0	id	tidak ditemukan deskriptor akses data, atau tidak ada deskriptor akses data yang mampu memberi informasi yang diperlukan				20181231 09:50:43
@@ -72625,7 +72671,7 @@ dbaccess	source\ext\adabas\AdabasNewDb.src	0	string	STR_ADABAS_START_DATABASE			
 dbaccess	source\ext\adabas\AdabasNewDb.src	0	string	STR_ADABAS_DB_EXISTS				0	id	Nama yang diberikan sudah ada.				20181231 09:50:43
 dbaccess	source\ext\adabas\AdabasNewDb.src	0	string	STR_ADABAS_NO_DEFAULTNAME				0	id	Tidak ada nama baku yang bisa diset untuk berkas basis data. Panjang total lebih dari 40 karakter.				20181231 09:50:43
 dbaccess	source\ext\adabas\AdabasNewDb.src	0	string	STR_ADABAS_NO_ACCESSRIGHTS				0	id	Tidak ada nama baku yang bisa diset untuk berkas basis data. Tidak ada akses tulis.				20181231 09:50:43
-dbaccess	source\ext\adabas\AdabasNewDb.src	0	string	STR_ADABAS_CANNOT_CONVERT				0	id	The current database needs to be converted. Please insert control user and password.				20181231 09:50:43
+dbaccess	source\ext\adabas\AdabasNewDb.src	0	string	STR_ADABAS_CANNOT_CONVERT				0	id	Basis data yang terpilih saat ini harus dikonversi. Harap masukkan pengguna kontrol dan sandinya.				20181231 09:50:43
 dbaccess	source\ext\adabas\AdabasNewDb.src	0	string	STR_ADABAS_PASSWORD_ILLEGAL				0	id	Spasi tidak diperbolehkan untuk sandi. Masukkan sandi baru.				20181231 09:50:43
 dbaccess	source\ext\macromigration\macromigration.src	0	string	DLG_MACRO_MIGRATION	STR_STATE_CLOSE_SUB_DOCS			0	id	Mempersiapkan				20181231 09:50:43
 dbaccess	source\ext\macromigration\macromigration.src	0	string	DLG_MACRO_MIGRATION	STR_STATE_BACKUP_DBDOC			0	id	Dokumen Cadangan				20181231 09:50:43
@@ -72881,3 +72927,8 @@ padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_TXT			14
 padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_USER_TXT			60	id	Pengg~una				20181231 09:50:43
 padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_PASS_TXT			60	id	~Sandi				20181231 09:50:43
 padmin	source\rtsetup.src	0	modaldialog	RID_RTS_PWDIALOG				150	id	Permintaan otentikasi				20181231 09:50:43
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1067D				0	id	\<ahelp hid=\".\" visibility=\"hidden\"\>Daftar halaman induk yang saat ini dipakai.\</ahelp\>				20181231 09:50:43
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106A8				0	id	\<ahelp hid=\".\" visibility=\"hidden\"\>Daftar halaman induk yang baru-baru ini dipakai.\</ahelp\>				20181231 09:50:43
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106D3				0	id	\<ahelp hid=\".\" visibility=\"hidden\"\>Daftar semua halaman induk yang tersedia.\</ahelp\>				20181231 09:50:43
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10785				0	id	\<ahelp hid=\".\" visibility=\"hidden\"\>Daftar halaman induk yang baru-baru ini dipakai.\</ahelp\>				20181231 09:50:43
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10839				0	id	\<ahelp hid=\".\" visibility=\"hidden\"\>Membuka halaman tabulasi Transisi Slide, di mana Anda bisa menerapkan sejumlah efek transisi pada slide yang dipilih.\</ahelp\>				20181231 09:50:43
