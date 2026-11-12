@@ -1697,7 +1697,7 @@ readlicense_oo	docs\readme\readme.xrm	0	readmeitem	joining1	joining1			0	sh	Na <
 readlicense_oo	docs\readme\readme.xrm	0	readmeitem	joining3	joining3			0	sh	Možete i da se pridružite Marketing mreži projekta na <a href="http://marketing.openoffice.org/contacts.html">http://marketing.openoffice.org/contacts.html</a> gde možete postati tačka za komunikaciju sa štampom, medijima, vladinim agencijama, konsultantima, školama, grupama korisnika Linuksa i programerima u svojoj zemlji i lokalnoj zajednici.				20181231 09:50:43
 readlicense_oo	docs\readme\readme.xrm	0	readmeitem	credits	credits			0	sh	Nadamo se da ćete uživati u radu sa novim ${PRODUCTNAME} ${PRODUCTVERSION} i da ćete nam se pridružiti na Internetu.				20181231 09:50:43
 readlicense_oo	docs\readme\readme.xrm	0	readmeitem	credits2	credits2			0	sh	OpenOffice.org zajednica				20181231 09:50:43
-readlicense_oo	docs\readme\readme.xrm	0	readmeitem	ModifiedSourceCodeHeading	ModifiedSourceCodeHeading			0	sh	Used / Modified Source Code				20181231 09:50:43
+readlicense_oo	docs\readme\readme.xrm	0	readmeitem	ModifiedSourceCodeHeading	ModifiedSourceCodeHeading			0	sh	Korišćen/ izmenjen izvorni kod				20181231 09:50:43
 readlicense_oo	docs\readme\readme.xrm	0	readmeitem	ModifiedSourceCodePara	ModifiedSourceCodePara			0	sh	For detailed information about used and/or modified source code, see the NOTICE file which is part of the installation.				20181231 09:50:43
 javainstaller2	src\Localization\setupstrings.ulf	0	LngText	STRING_PREVIOUS				0	sh	Nazad				20181231 09:50:43
 javainstaller2	src\Localization\setupstrings.ulf	0	LngText	STRING_NEXT				0	sh	Sledeći				20181231 09:50:43
@@ -4656,6 +4656,24 @@ svx	source\form\fmexpl.src	0	menuitem	RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTT
 svx	source\form\fmexpl.src	0	groupbox	RID_SVXDLG_SETFORM	GB_PATH			188	sh	Putanja				20181231 09:50:43
 svx	source\form\fmexpl.src	0	modaldialog	RID_SVXDLG_SETFORM				200	sh	Obrazac za izbor				20181231 09:50:43
 svx	source\form\fmexpl.src	0	dockingwindow	RID_SVX_FMEXPLORER				200	sh	Navigator obrasca				20181231 09:50:43
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_EDIT	CMD_SID_FM_CONVERTTO_EDIT		0	sh	~Polje za tekst				20181231 09:50:43
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_BUTTON	CMD_SID_FM_CONVERTTO_BUTTON		0	sh	~Dugme				20181231 09:50:43
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_FIXEDTEXT	CMD_SID_FM_CONVERTTO_FIXEDTEXT		0	sh	Polje ~oznake				20181231 09:50:43
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_GROUPBOX	CMD_SID_FM_CONVERTTO_GROUPBOX		0	sh	G~rupni okvir				20181231 09:50:43
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_LISTBOX	CMD_SID_FM_CONVERTTO_LISTBOX		0	sh	~Lista				20181231 09:50:43
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_CHECKBOX	CMD_SID_FM_CONVERTTO_CHECKBOX		0	sh	Polje za ~potvrdu				20181231 09:50:43
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_RADIOBUTTON	CMD_SID_FM_CONVERTTO_RADIOBUTTON		0	sh	~Dugme za opciju				20181231 09:50:43
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_COMBOBOX	CMD_SID_FM_CONVERTTO_COMBOBOX		0	sh	Kom~binovana lista				20181231 09:50:43
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_IMAGEBUTTON	CMD_SID_FM_CONVERTTO_IMAGEBUTTON		0	sh	Dugme sa ~slikom				20181231 09:50:43
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_FILECONTROL	CMD_SID_FM_CONVERTTO_FILECONTROL		0	sh	Izbor ~datoteke				20181231 09:50:43
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_DATE	CMD_SID_FM_CONVERTTO_DATE		0	sh	Polje sa ~datumom				20181231 09:50:43
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_TIME	CMD_SID_FM_CONVERTTO_TIME		0	sh	Polje sa ~vremenom				20181231 09:50:43
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_NUMERIC	CMD_SID_FM_CONVERTTO_NUMERIC		0	sh	~Numeričko polje				20181231 09:50:43
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_CURRENCY	CMD_SID_FM_CONVERTTO_CURRENCY		0	sh	Polje sa ~valutom				20181231 09:50:43
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_PATTERN	CMD_SID_FM_CONVERTTO_PATTERN		0	sh	Polje sa ~maskom				20181231 09:50:43
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_IMAGECONTROL	CMD_SID_FM_CONVERTTO_IMAGECONTROL		0	sh	Kontrola s~like				20181231 09:50:43
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_FORMATTED	CMD_SID_FM_CONVERTTO_FORMATTED		0	sh	~Formatirano polje				20181231 09:50:43
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_SCROLLBAR	CMD_SID_FM_CONVERTTO_SCROLLBAR		0	sh	Klizač				20181231 09:50:43
 svx	source\accessibility\accessibility.src	0	string	RID_SVXSTR_A11Y_3D_MATERIAL_COLOR				0	sh	Boja 3D materijala				20181231 09:50:43
 svx	source\accessibility\accessibility.src	0	string	RID_SVXSTR_A11Y_TEXT_COLOR				0	sh	Boja fonta				20181231 09:50:43
 svx	source\accessibility\accessibility.src	0	string	RID_SVXSTR_A11Y_BACKGROUND_COLOR				0	sh	Boja pozadine				20181231 09:50:43
@@ -5669,7 +5687,7 @@ sw	source\ui\app\mn.src	0	string	MN_DRAWFORM_POPUPMENU				0	sh	Kontrola				20181
 sw	source\ui\app\mn.src	0	string	MN_DRWTXT_POPUPMENU				0	sh	Tekst objekta sa crtežom				20181231 09:50:43
 sw	source\ui\app\mn.src	0	menuitem	MN_REDCOMMENT	FN_DELETE_COMMENT	CMD_FN_DELETE_COMMENT		0	sh	Obriši belešku sa ~izmenama				20181231 09:50:43
 sw	source\ui\app\mn.src	0	string	MN_GRF_POPUPMENU				0	sh	Grafika				20181231 09:50:43
-sw	source\ui\app\mn.src	0	menuitem	MN_ALIGN_FRAME	MN_SUB_ALIGN	HID_MN_SUB_ALIGN		0	sh	~Raspored				20181231 09:50:43
+sw	source\ui\app\mn.src	0	menuitem	MN_ALIGN_FRAME	MN_SUB_ALIGN	HID_MN_SUB_ALIGN		0	sh	~Redosled				20181231 09:50:43
 sw	source\ui\app\mn.src	0	menuitem	MN_ALIGN_FRAME.MN_FORMAT_FRM_HORZ	FN_FRAME_ALIGN_HORZ_LEFT	CMD_FN_FRAME_ALIGN_HORZ_LEFT		0	sh	~Levo				20181231 09:50:43
 sw	source\ui\app\mn.src	0	menuitem	MN_ALIGN_FRAME.MN_FORMAT_FRM_HORZ	FN_FRAME_ALIGN_HORZ_CENTER	CMD_FN_FRAME_ALIGN_HORZ_CENTER		0	sh	~Centrirano				20181231 09:50:43
 sw	source\ui\app\mn.src	0	menuitem	MN_ALIGN_FRAME.MN_FORMAT_FRM_HORZ	FN_FRAME_ALIGN_HORZ_RIGHT	CMD_FN_FRAME_ALIGN_HORZ_RIGHT		0	sh	~Desno				20181231 09:50:43
@@ -7109,7 +7127,7 @@ sw	source\ui\config\optdlg.src	0	itemlist	STR_PRINTOPTUI	4			0	sh	Ako je uključ
 sw	source\ui\config\optdlg.src	0	itemlist	STR_PRINTOPTUI	5			0	sh	Sl~ike i druga grafika				20181231 09:50:43
 sw	source\ui\config\optdlg.src	0	itemlist	STR_PRINTOPTUI	6			0	sh	Ako je uključeno biće štampane slike, crteži i OLE objekti umetnuti u dokument.				20181231 09:50:43
 sw	source\ui\config\optdlg.src	0	itemlist	STR_PRINTOPTUI	7			0	sh	~Skriven tekst				20181231 09:50:43
-sw	source\ui\config\optdlg.src	0	itemlist	STR_PRINTOPTUI	8			0	sh	Ako je uključeno tekst koji je označen kao skriven će biti odštampan.				20181231 09:50:43
+sw	source\ui\config\optdlg.src	0	itemlist	STR_PRINTOPTUI	8			0	sh	Boja				20181231 09:50:43
 sw	source\ui\config\optdlg.src	0	itemlist	STR_PRINTOPTUI	9			0	sh	~Mestodržači i polja za tekst				20181231 09:50:43
 sw	source\ui\config\optdlg.src	0	itemlist	STR_PRINTOPTUI	10			0	sh	Ako je uključeno biće štampani nazivi polja i drugih mestodržača za tekst. Isključite opciju za praznu štampu mestodržača.				20181231 09:50:43
 sw	source\ui\config\optdlg.src	0	itemlist	STR_PRINTOPTUI	11			0	sh	Kontrole obra~sca				20181231 09:50:43
@@ -7271,6 +7289,26 @@ sw	source\ui\config\mailconfigpage.src	0	radiobutton	DLG_MM_SERVERAUTHENTICATION
 sw	source\ui\config\mailconfigpage.src	0	fixedtext	DLG_MM_SERVERAUTHENTICATION	FT_INUSERNAME			53	sh	~Korisničko ime				20181231 09:50:43
 sw	source\ui\config\mailconfigpage.src	0	fixedtext	DLG_MM_SERVERAUTHENTICATION	FT_INPASSWORD			53	sh	~Lozinka				20181231 09:50:43
 sw	source\ui\config\mailconfigpage.src	0	modaldialog	DLG_MM_SERVERAUTHENTICATION		HID_MM_SERVERAUTHENTICATION		250	sh	Prijava na server				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	string	DLG_MM_TESTACCOUNTSETTINGS	ST_TASK			0	sh	Zadatak				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	string	DLG_MM_TESTACCOUNTSETTINGS	ST_STATUS			0	sh	Stanje				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	string	DLG_MM_TESTACCOUNTSETTINGS	ST_ESTABLISH			0	sh	Uspostavi mrežnu vezu				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	string	DLG_MM_TESTACCOUNTSETTINGS	ST_FINDSERVER			0	sh	Pronađi odlazni server pošte				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	string	DLG_MM_TESTACCOUNTSETTINGS	ST_COMPLETED			0	sh	Uspešno				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	string	DLG_MM_TESTACCOUNTSETTINGS	ST_FAILED			0	sh	Neuspešno				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	string	DLG_MM_TESTACCOUNTSETTINGS	ST_ERROR_SERVER			0	sh	%PRODUCTNAME ne može da se poveže na odlazni server pošte. Proverite svoja sistemska podešavanja i podešavanja u %PRODUCTNAME. Proverite ime servera, port i podešavanja obezbeđene veze				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	modaldialog	DLG_MM_TESTACCOUNTSETTINGS	DLG_MM_SERVERAUTHENTICATION	HID_MM_SERVERAUTHENTICATION		250	sh	Prijava na server				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	checkbox	CB_AUTHENTICATION				238	sh	Server odlazne pošte (SMTP) zahteva ~prijavljivanje				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	radiobutton	RB_SEP_AUTHENTICATION				232	sh	Server odlazne pošte (SMTP) zahteva ~odvojeno prijavljivanje				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	fixedtext	FT_OUTGOINGSERVER				200	sh	Server odlazne pošte:				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	fixedtext	FT_USERNAME				53	sh	~Korisničko ime				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	fixedtext	FT_OUTPASSWORD				53	sh	~Lozinka				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	radiobutton	RB_SMTPAFTERPOP				232	sh	Server odlazne pošte koristi istu prijavu kao i server ~dolazne pošte. Unesite podešavanja servera dolazne pošte.				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	fixedtext	FT_INCOMINGSERVER				230	sh	Server dolazne pošte:				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	fixedtext	FT_SERVER				53	sh	~Ime servera				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	fixedtext	FT_PORT				20	sh	~Port				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	fixedtext	FT_PROTOCOL				53	sh	Vrsta				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	fixedtext	FT_INUSERNAME				53	sh	~Korisničko ime				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	fixedtext	FT_INPASSWORD				53	sh	~Lozinka				20181231 09:50:43
 sw	source\ui\utlui\unotools.src	0	fixedtext	DLG_RENAME_XNAMED	FT_NEW_NAME			50	sh	Novo ime				20181231 09:50:43
 sw	source\ui\utlui\unotools.src	0	fixedline	DLG_RENAME_XNAMED	FL_NAME			152	sh	Promeni ime				20181231 09:50:43
 sw	source\ui\utlui\unotools.src	0	modaldialog	DLG_RENAME_XNAMED		HID_RENAME_XNAMED		220	sh	Preimenuj objekat: 				20181231 09:50:43
@@ -9923,10 +9961,10 @@ sc	source\ui\src\scfuncs.src	0	string	RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SU
 sc	source\ui\src\scfuncs.src	0	string	RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_IF	6			0	sh	opseg_zbira				20181231 09:50:43
 sc	source\ui\src\scfuncs.src	0	string	RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_IF	7			0	sh	Opseg za sabiranje vrednosti.				20181231 09:50:43
 sc	source\ui\src\scfuncs.src	0	string	RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_AVERAGE_IF	1			0	sh	Averages the arguments that meet the conditions.				20181231 09:50:43
-sc	source\ui\src\scfuncs.src	0	string	RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_AVERAGE_IF	2			0	sh	range				20181231 09:50:43
+sc	source\ui\src\scfuncs.src	0	string	RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_AVERAGE_IF	2			0	sh	opseg				20181231 09:50:43
 sc	source\ui\src\scfuncs.src	0	string	RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_AVERAGE_IF	3			0	sh	The range to be evaluated by the criteria given.				20181231 09:50:43
-sc	source\ui\src\scfuncs.src	0	string	RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_AVERAGE_IF	4			0	sh	criteria				20181231 09:50:43
-sc	source\ui\src\scfuncs.src	0	string	RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_AVERAGE_IF	5			0	sh	The cell range in which the search criteria are given.				20181231 09:50:43
+sc	source\ui\src\scfuncs.src	0	string	RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_AVERAGE_IF	4			0	sh	kriterijum				20181231 09:50:43
+sc	source\ui\src\scfuncs.src	0	string	RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_AVERAGE_IF	5			0	sh	Opseg ćelija u kom je dat kriterijum pretrage.				20181231 09:50:43
 sc	source\ui\src\scfuncs.src	0	string	RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_AVERAGE_IF	6			0	sh	average_range				20181231 09:50:43
 sc	source\ui\src\scfuncs.src	0	string	RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_AVERAGE_IF	7			0	sh	The range from which the values are to be averaged.				20181231 09:50:43
 sc	source\ui\src\scfuncs.src	0	string	RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_IFS	1			0	sh	Totals the values of cells in a range that meet multiple criteria in multiple ranges.				20181231 09:50:43
@@ -10514,7 +10552,7 @@ sc	source\ui\src\scfuncs.src	0	string	RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CH
 sc	source\ui\src\scfuncs.src	0	string	RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHISQ_DIST	4			0	sh	Stepeni slobode				20181231 09:50:43
 sc	source\ui\src\scfuncs.src	0	string	RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHISQ_DIST	5			0	sh	Stepeni slobode hi-kvadrat raspodele.				20181231 09:50:43
 sc	source\ui\src\scfuncs.src	0	string	RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHISQ_DIST	6			0	sh	Kumulativna				20181231 09:50:43
-sc	source\ui\src\scfuncs.src	0	string	RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHISQ_DIST	7			0	sh	0 ili FALSE (netačno) računa funkciju gustine verovatnoće. Bilo koja druga vrednost, TRUE (tačno) ili ako je izostavljeno daje funkciju kumulativne raspodele.  				20181231 09:50:43
+sc	source\ui\src\scfuncs.src	0	string	RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHISQ_DIST	7			0	sh	0 ili FALSE (netačno) izračunava funkciju gustine verovatnoće. Bilo koja druga vrednost, TRUE (tačno) ili ako je izostavljeno računa funkciju kumulativne raspodele.  				20181231 09:50:43
 sc	source\ui\src\scfuncs.src	0	string	RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHI_INV	1			0	sh	Vrednosti inverza CHIDIST(x; stepeni_slobode). 				20181231 09:50:43
 sc	source\ui\src\scfuncs.src	0	string	RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHI_INV	2			0	sh	broj				20181231 09:50:43
 sc	source\ui\src\scfuncs.src	0	string	RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHI_INV	3			0	sh	Vrednost verovatnoće za koju inverzna hi-kvadrat raspodela treba da bude računata.				20181231 09:50:43
@@ -12461,7 +12499,7 @@ chart2	source\controller\dialogs\res_DataLabel_tmpl.hrc	0	checkbox	RESOURCE_DATA
 chart2	source\controller\dialogs\res_DataLabel_tmpl.hrc	0	checkbox	RESOURCE_DATALABEL( xpos, ypos )	CB_SYMBOL	HID_SCH_DATALABEL_SYMBOL	!defined _CHART2_RESOURCE_DATALABEL_HXX	254	sh	Prikaži ~legendu				20181231 09:50:43
 chart2	source\controller\dialogs\res_DataLabel_tmpl.hrc	0	fixedtext	RESOURCE_DATALABEL( xpos, ypos )	FT_LABEL_PLACEMENT		!defined _CHART2_RESOURCE_DATALABEL_HXX	182	sh	Po~zicija				20181231 09:50:43
 chart2	source\controller\dialogs\res_DataLabel_tmpl.hrc	0	fixedline	RESOURCE_DATALABEL( xpos, ypos )	FL_LABEL_ROTATE		!defined _CHART2_RESOURCE_DATALABEL_HXX	248	sh	Rotiraj tekst				20181231 09:50:43
-chart2	source\controller\dialogs\res_DataLabel_tmpl.hrc	0	fixedtext	RESOURCE_DATALABEL( xpos, ypos )	FT_LABEL_DEGREES		!defined _CHART2_RESOURCE_DATALABEL_HXX	46	sh	~stepeni				20181231 09:50:43
+chart2	source\controller\dialogs\res_DataLabel_tmpl.hrc	0	fixedtext	RESOURCE_DATALABEL( xpos, ypos )	FT_LABEL_DEGREES		!defined _CHART2_RESOURCE_DATALABEL_HXX	46	sh	~Stepeni				20181231 09:50:43
 chart2	source\controller\dialogs\res_DataLabel_tmpl.hrc	0	fixedtext	RESOURCE_DATALABEL( xpos, ypos )	FT_LABEL_TEXTDIR		!defined _CHART2_RESOURCE_DATALABEL_HXX	64	sh	Smer te~ksta				20181231 09:50:43
 chart2	source\controller\dialogs\res_LegendPosition_tmpl.hrc	0	checkbox	RESOURCE_LEGENDDISPLAY( xpos , ypos )	CBX_SHOWLEGEND	HID_SCH_LEGEND_SHOW	!defined _CHART2_RESOURCE_LEGEND_HXX	95	sh	Prikaži le~gendu				20181231 09:50:43
 chart2	source\controller\dialogs\res_LegendPosition_tmpl.hrc	0	radiobutton	RESOURCE_LEGENDPOSITION( xpos , ypos )	RBT_LEFT	HID_SCH_LEGEND_POS_LEFT	!defined _CHART2_RESOURCE_LEGEND_HXX	75	sh	~Levo				20181231 09:50:43
@@ -12683,7 +12721,7 @@ officecfg	registry\data\org\openoffice\Office\TableWizard.xcu	0	value	..TableWiz
 officecfg	registry\data\org\openoffice\Office\TableWizard.xcu	0	value	..TableWizard.TableWizard.business.Tables.employees.Fields.employeeID	ShortName			0	sh	IB_zaposl				20181231 09:50:43
 officecfg	registry\data\org\openoffice\Office\TableWizard.xcu	0	value	..TableWizard.TableWizard.business.Tables.employees.Fields.firstname	Name			0	sh	Ime				20181231 09:50:43
 officecfg	registry\data\org\openoffice\Office\TableWizard.xcu	0	value	..TableWizard.TableWizard.business.Tables.employees.Fields.firstname	ShortName			0	sh	Ime				20181231 09:50:43
-officecfg	registry\data\org\openoffice\Office\TableWizard.xcu	0	value	..TableWizard.TableWizard.business.Tables.employees.Fields.middlename	Name			0	sh	Srednje_ime				20181231 09:50:43
+officecfg	registry\data\org\openoffice\Office\TableWizard.xcu	0	value	..TableWizard.TableWizard.business.Tables.employees.Fields.middlename	Name			0	sh	Srednje ime				20181231 09:50:43
 officecfg	registry\data\org\openoffice\Office\TableWizard.xcu	0	value	..TableWizard.TableWizard.business.Tables.employees.Fields.middlename	ShortName			0	sh	Sred_ime				20181231 09:50:43
 officecfg	registry\data\org\openoffice\Office\TableWizard.xcu	0	value	..TableWizard.TableWizard.business.Tables.employees.Fields.lastname	Name			0	sh	Prezime				20181231 09:50:43
 officecfg	registry\data\org\openoffice\Office\TableWizard.xcu	0	value	..TableWizard.TableWizard.business.Tables.employees.Fields.lastname	ShortName			0	sh	Prezime				20181231 09:50:43
@@ -13040,7 +13078,7 @@ officecfg	registry\data\org\openoffice\Office\TableWizard.xcu	0	value	..TableWiz
 officecfg	registry\data\org\openoffice\Office\TableWizard.xcu	0	value	..TableWizard.TableWizard.business.Tables.deliveries.Fields.pickuptime	ShortName			0	sh	Dat. preuz.				20181231 09:50:43
 officecfg	registry\data\org\openoffice\Office\TableWizard.xcu	0	value	..TableWizard.TableWizard.business.Tables.deliveries.Fields.receivedby	Name			0	sh	Primio				20181231 09:50:43
 officecfg	registry\data\org\openoffice\Office\TableWizard.xcu	0	value	..TableWizard.TableWizard.business.Tables.deliveries.Fields.receivedby	ShortName			0	sh	Primio				20181231 09:50:43
-officecfg	registry\data\org\openoffice\Office\TableWizard.xcu	0	value	..TableWizard.TableWizard.business.Tables.deliveries.Fields.freightcharge	Name			0	sh	Cena vozarine				20181231 09:50:43
+officecfg	registry\data\org\openoffice\Office\TableWizard.xcu	0	value	..TableWizard.TableWizard.business.Tables.deliveries.Fields.freightcharge	Name			0	sh	Cena_vozarine				20181231 09:50:43
 officecfg	registry\data\org\openoffice\Office\TableWizard.xcu	0	value	..TableWizard.TableWizard.business.Tables.deliveries.Fields.freightcharge	ShortName			0	sh	Vozarina				20181231 09:50:43
 officecfg	registry\data\org\openoffice\Office\TableWizard.xcu	0	value	..TableWizard.TableWizard.business.Tables.deliveries.Fields.notes	Name			0	sh	Beleške				20181231 09:50:43
 officecfg	registry\data\org\openoffice\Office\TableWizard.xcu	0	value	..TableWizard.TableWizard.business.Tables.deliveries.Fields.notes	ShortName			0	sh	Beleške				20181231 09:50:43
@@ -13066,7 +13104,7 @@ officecfg	registry\data\org\openoffice\Office\TableWizard.xcu	0	value	..TableWiz
 officecfg	registry\data\org\openoffice\Office\TableWizard.xcu	0	value	..TableWizard.TableWizard.business.Tables.assets.Fields.modelnumber	Name			0	sh	Broj modela				20181231 09:50:43
 officecfg	registry\data\org\openoffice\Office\TableWizard.xcu	0	value	..TableWizard.TableWizard.business.Tables.assets.Fields.modelnumber	ShortName			0	sh	Br. modela				20181231 09:50:43
 officecfg	registry\data\org\openoffice\Office\TableWizard.xcu	0	value	..TableWizard.TableWizard.business.Tables.assets.Fields.serialnumber	Name			0	sh	Serijski broj				20181231 09:50:43
-officecfg	registry\data\org\openoffice\Office\TableWizard.xcu	0	value	..TableWizard.TableWizard.business.Tables.assets.Fields.serialnumber	ShortName			0	sh	SerijskiBr				20181231 09:50:43
+officecfg	registry\data\org\openoffice\Office\TableWizard.xcu	0	value	..TableWizard.TableWizard.business.Tables.assets.Fields.serialnumber	ShortName			0	sh	Ser_br				20181231 09:50:43
 officecfg	registry\data\org\openoffice\Office\TableWizard.xcu	0	value	..TableWizard.TableWizard.business.Tables.assets.Fields.barcodenumber	Name			0	sh	Barkod broj				20181231 09:50:43
 officecfg	registry\data\org\openoffice\Office\TableWizard.xcu	0	value	..TableWizard.TableWizard.business.Tables.assets.Fields.barcodenumber	ShortName			0	sh	BarkodBr				20181231 09:50:43
 officecfg	registry\data\org\openoffice\Office\TableWizard.xcu	0	value	..TableWizard.TableWizard.business.Tables.assets.Fields.dateacquired	Name			0	sh	Datum nabavke				20181231 09:50:43
@@ -15850,6 +15888,7 @@ officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..G
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Popups..uno:TransliterateMenu	Label			0	sh	~Zamena malih i VELIKIH slova				20181231 09:50:43
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Popups..uno:ViewMenu	Label			0	sh	P~rikaz				20181231 09:50:43
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Popups..uno:WindowList	Label			0	sh	Pro~zor				20181231 09:50:43
+officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:Substract	Label			0	sh	~Oduzmi				20181231 09:50:43
 officecfg	registry\data\org\openoffice\Office\UI\DbQueryWindowState.xcu	0	value	..DbQueryWindowState.UIElements.States.private:resource/toolbar/designobjectbar	UIName			0	sh	Grafički uređivač				20181231 09:50:43
 officecfg	registry\data\org\openoffice\Office\UI\DbQueryWindowState.xcu	0	value	..DbQueryWindowState.UIElements.States.private:resource/toolbar/sqlobjectbar	UIName			0	sh	SQL				20181231 09:50:43
 officecfg	registry\data\org\openoffice\Office\UI\DbQueryWindowState.xcu	0	value	..DbQueryWindowState.UIElements.States.private:resource/toolbar/toolbar	UIName			0	sh	Uređivač upita				20181231 09:50:43
@@ -17494,7 +17533,7 @@ desktop	source\deployment\gui\dp_gui_dialog.src	0	pushbutton	RID_DLG_LICENSE	PB_
 desktop	source\deployment\gui\dp_gui_dialog.src	0	okbutton	RID_DLG_LICENSE	BTN_LICENSE_ACCEPT			0	sh	Prihvatam				20181231 09:50:43
 desktop	source\deployment\gui\dp_gui_dialog.src	0	cancelbutton	RID_DLG_LICENSE	BTN_LICENSE_DECLINE			0	sh	Ne prihvatam				20181231 09:50:43
 desktop	source\deployment\gui\dp_gui_dialog.src	0	modaldialog	RID_DLG_LICENSE				0	sh	Ugovor o licenciranju dodatka				20181231 09:50:43
-desktop	source\deployment\gui\dp_gui_dialog.src	0	okbutton	RID_DLG_SHOW_LICENSE	RID_EM_BTN_CLOSE			0	sh	Close				20181231 09:50:43
+desktop	source\deployment\gui\dp_gui_dialog.src	0	okbutton	RID_DLG_SHOW_LICENSE	RID_EM_BTN_CLOSE			0	sh	Zatvori				20181231 09:50:43
 desktop	source\deployment\gui\dp_gui_dialog.src	0	modaldialog	RID_DLG_SHOW_LICENSE				300	sh	Extension Software License Agreement				20181231 09:50:43
 desktop	source\deployment\gui\dp_gui_dialog.src	0	warningbox	RID_WARNINGBOX_INSTALL_EXTENSION				300	sh	Započinjete instaliranje paketa „%NAME“.\nZa nastavak instaliranja kliknite „U redu“.\nZa prekid instaliranja kliknite „Odustani“.				20181231 09:50:43
 desktop	source\deployment\gui\dp_gui_dialog.src	0	warningbox	RID_WARNINGBOX_REMOVE_EXTENSION				300	sh	Započinjete uklanjanje paketa „%NAME“.\nZa nastavak kliknite „U redu“.\nZa prekid kliknite „Odustani“.				20181231 09:50:43
@@ -18546,167 +18585,167 @@ sd	source\ui\app\res_bmp.src	0	filterlist	DLG_STYLE_DESIGNER.RID_GRAPHICSTYLEFAM
 sd	source\ui\app\res_bmp.src	0	filterlist	DLG_STYLE_DESIGNER.RID_GRAPHICSTYLEFAMILY	2			0	sh	Applied Styles				20181231 09:50:43
 sd	source\ui\app\res_bmp.src	0	filterlist	DLG_STYLE_DESIGNER.RID_GRAPHICSTYLEFAMILY	3			0	sh	Custom Styles				20181231 09:50:43
 sd	source\ui\app\res_bmp.src	0	filterlist	DLG_STYLE_DESIGNER.RID_PRESENTATIONSTYLEFAMILY	1			0	sh	All Styles				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	SID_CHANGEBEZIER		CMD_SID_CHANGEBEZIER		0	sh	To ~Curve				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_CHANGEPOLYGON	SID_CHANGEPOLYGON	CMD_SID_CHANGEPOLYGON		0	sh	To ~Polygon				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_CONVERT_TO_CONTOUR	SID_CONVERT_TO_CONTOUR	CMD_SID_CONVERT_TO_CONTOUR		0	sh	To C~ontour				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_CONVERT_TO_3D	SID_CONVERT_TO_3D	CMD_SID_CONVERT_TO_3D		0	sh	To 3~D				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_CONVERT_TO_BITMAP	SID_CONVERT_TO_BITMAP	CMD_SID_CONVERT_TO_BITMAP		0	sh	To ~Bitmap				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_CONVERT_TO_METAFILE	SID_CONVERT_TO_METAFILE	CMD_SID_CONVERT_TO_METAFILE		0	sh	To ~Metafile				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_CONVERT_TO_3D_LATHE_FAST	SID_CONVERT_TO_3D_LATHE_FAST	CMD_SID_CONVERT_TO_3D_LATHE_FAST		0	sh	To 3D ~Rotation Object				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_VERTICAL	SID_VERTICAL	CMD_SID_VERTICAL		0	sh	~Vertically				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_HORIZONTAL	SID_HORIZONTAL	CMD_SID_HORIZONTAL		0	sh	~Horizontally				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_3D_WIN	SID_3D_WIN	CMD_SID_3D_WIN		0	sh	~3D Effects				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_PRESENTATION_LAYOUT	SID_PRESENTATION_LAYOUT	CMD_SID_PRESENTATION_LAYOUT		0	sh	~Slide Design				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_DIA	SID_SLIDE_TRANSITIONS_PANEL	CMD_SID_SLIDE_TRANSITIONS_PANEL		0	sh	Slide ~Transition				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_SHOW_SLIDE	SID_SHOW_SLIDE	CMD_SID_SHOW_SLIDE		0	sh	~Show Slide				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_HIDE_SLIDE	SID_HIDE_SLIDE	CMD_SID_HIDE_SLIDE		0	sh	~Hide Slide				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	SID_CHANGEBEZIER		CMD_SID_CHANGEBEZIER		0	sh	U ~krivu				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_CHANGEPOLYGON	SID_CHANGEPOLYGON	CMD_SID_CHANGEPOLYGON		0	sh	U ~poligon				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_CONVERT_TO_CONTOUR	SID_CONVERT_TO_CONTOUR	CMD_SID_CONVERT_TO_CONTOUR		0	sh	U k~onturu				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_CONVERT_TO_3D	SID_CONVERT_TO_3D	CMD_SID_CONVERT_TO_3D		0	sh	U 3~D				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_CONVERT_TO_BITMAP	SID_CONVERT_TO_BITMAP	CMD_SID_CONVERT_TO_BITMAP		0	sh	U ~bitmapu				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_CONVERT_TO_METAFILE	SID_CONVERT_TO_METAFILE	CMD_SID_CONVERT_TO_METAFILE		0	sh	U ~metadatoteku				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_CONVERT_TO_3D_LATHE_FAST	SID_CONVERT_TO_3D_LATHE_FAST	CMD_SID_CONVERT_TO_3D_LATHE_FAST		0	sh	U 3D ~rotacioni objekat				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_VERTICAL	SID_VERTICAL	CMD_SID_VERTICAL		0	sh	~Uspravno				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_HORIZONTAL	SID_HORIZONTAL	CMD_SID_HORIZONTAL		0	sh	~Vodoravno				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_3D_WIN	SID_3D_WIN	CMD_SID_3D_WIN		0	sh	~3D efekti				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_PRESENTATION_LAYOUT	SID_PRESENTATION_LAYOUT	CMD_SID_PRESENTATION_LAYOUT		0	sh	~Dizajn slajda				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_DIA	SID_SLIDE_TRANSITIONS_PANEL	CMD_SID_SLIDE_TRANSITIONS_PANEL		0	sh	~Prelaz slajda				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_SHOW_SLIDE	SID_SHOW_SLIDE	CMD_SID_SHOW_SLIDE		0	sh	~Pokreni				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_HIDE_SLIDE	SID_HIDE_SLIDE	CMD_SID_HIDE_SLIDE		0	sh	~Sakrij slajd				20181231 09:50:43
 sd	source\ui\app\popup.src	0	menuitem	MN_GROUP_IMPRESS	SID_GROUP	CMD_SID_GROUP		0	sh	~Group				20181231 09:50:43
 sd	source\ui\app\popup.src	0	menuitem	MN_UNGROUP_IMPRESS	SID_UNGROUP	CMD_SID_UNGROUP		0	sh	~Ungroup				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_ENTER_GROUP_IMPRESS	SID_ENTER_GROUP	CMD_SID_ENTER_GROUP		0	sh	~Edit Group				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_LEAVE_GROUP_IMPRESS	SID_LEAVE_GROUP	CMD_SID_LEAVE_GROUP		0	sh	E~xit group				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_ENTER_GROUP_IMPRESS	SID_ENTER_GROUP	CMD_SID_ENTER_GROUP		0	sh	~Uredi grupu				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_LEAVE_GROUP_IMPRESS	SID_LEAVE_GROUP	CMD_SID_LEAVE_GROUP		0	sh	~Izađi iz grupe				20181231 09:50:43
 sd	source\ui\app\popup.src	0	menuitem	MNSUB_GROUP	MN_SUB_GROUP	HID_MN_SUB_GROUP		0	sh	~Group				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_DISTRIBUTE	SID_DISTRIBUTE_DLG	CMD_SID_DISTRIBUTE_DLG		0	sh	~Distribution...				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_DRAWINGMODE	SID_DRAWINGMODE	CMD_SID_DRAWINGMODE		0	sh	~Drawing View				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_OUTLINEMODE	SID_OUTLINEMODE	CMD_SID_OUTLINEMODE		0	sh	~Outline View				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_DIAMODE	SID_DIAMODE	CMD_SID_DIAMODE		0	sh	~Slide Sorter				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_PRESENTATION	SID_PRESENTATION	CMD_SID_PRESENTATION		0	sh	Slide Sho~w				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_CAPTUREPOINT	SID_CAPTUREPOINT	CMD_SID_CAPTUREPOINT		0	sh	~Insert Snap Point/Line...				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_SET_SNAPITEM	SID_SET_SNAPITEM	CMD_SID_SET_SNAPITEM		0	sh	~Edit...				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_DISTRIBUTE	SID_DISTRIBUTE_DLG	CMD_SID_DISTRIBUTE_DLG		0	sh	~Distribucija...				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_DRAWINGMODE	SID_DRAWINGMODE	CMD_SID_DRAWINGMODE		0	sh	Prikaz ~crteža				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_OUTLINEMODE	SID_OUTLINEMODE	CMD_SID_OUTLINEMODE		0	sh	Prikaz ~konture				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_DIAMODE	SID_DIAMODE	CMD_SID_DIAMODE		0	sh	Ređanje ~slajdova				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_PRESENTATION	SID_PRESENTATION	CMD_SID_PRESENTATION		0	sh	Prika~z slajdova				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_CAPTUREPOINT	SID_CAPTUREPOINT	CMD_SID_CAPTUREPOINT		0	sh	~Umetni privlačeću tačku ili liniju				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_SET_SNAPITEM	SID_SET_SNAPITEM	CMD_SID_SET_SNAPITEM		0	sh	~Uredi...				20181231 09:50:43
 sd	source\ui\app\popup.src	0	menuitem	MN_DELETE_SNAPITEM	SID_DELETE_SNAPITEM	CMD_SID_DELETE_SNAPITEM		0	sh	~Delete				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_MODIFY_PAGE	SID_MODIFYPAGE	CMD_SID_MODIFYPAGE		0	sh	Slide ~Layout				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_FORMAT_PAGE	SID_PAGESETUP	CMD_SID_PAGESETUP		0	sh	~Page Setup...				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_INSERT_SLIDE	SID_INSERTPAGE	CMD_SID_INSERTPAGE		0	sh	~New Slide				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_INSERT_MASTER	SID_INSERT_MASTER_PAGE	CMD_SID_INSERT_MASTER_PAGE		0	sh	~New Master				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_INSERT_PAGE	SID_INSERTPAGE	CMD_SID_INSERTPAGE		0	sh	~New Page				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_MODIFY_PAGE	SID_MODIFYPAGE	CMD_SID_MODIFYPAGE		0	sh	Izgled s~lajda				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_FORMAT_PAGE	SID_PAGESETUP	CMD_SID_PAGESETUP		0	sh	Podešavanje ~stranice...				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_INSERT_SLIDE	SID_INSERTPAGE	CMD_SID_INSERTPAGE		0	sh	~Novi slajd				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_INSERT_MASTER	SID_INSERT_MASTER_PAGE	CMD_SID_INSERT_MASTER_PAGE		0	sh	~Novi osnovni				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_INSERT_PAGE	SID_INSERTPAGE	CMD_SID_INSERTPAGE		0	sh	~Nova stranica				20181231 09:50:43
 sd	source\ui\app\popup.src	0	menuitem	MN_INSERT_PAGE.MN_SELECT_BACKGROUND	SID_SELECT_BACKGROUND	CMD_SID_SELECT_BACKGROUND		0	sh	Set Background Picture for Slide ...				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_INSERT_PAGE.MN_SELECT_BACKGROUND.MN_DISPLAY_MASTER_BACKGROUND	SID_DISPLAY_MASTER_BACKGROUND	CMD_SID_DISPLAY_MASTER_BACKGROUND		0	sh	Display Background of Master				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_INSERT_PAGE.MN_SELECT_BACKGROUND.MN_DISPLAY_MASTER_BACKGROUND.MN_DISPLAY_MASTER_OBJECTS	SID_DISPLAY_MASTER_OBJECTS	CMD_SID_DISPLAY_MASTER_OBJECTS		0	sh	Display Objects from Master				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_PAGE_MENU	DUMMY+3			0	sh	Pag~e				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_INSERT_PAGE.MN_SELECT_BACKGROUND.MN_DISPLAY_MASTER_BACKGROUND	SID_DISPLAY_MASTER_BACKGROUND	CMD_SID_DISPLAY_MASTER_BACKGROUND		0	sh	Prikaži pozadinu osnovnog slajda				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_INSERT_PAGE.MN_SELECT_BACKGROUND.MN_DISPLAY_MASTER_BACKGROUND.MN_DISPLAY_MASTER_OBJECTS	SID_DISPLAY_MASTER_OBJECTS	CMD_SID_DISPLAY_MASTER_OBJECTS		0	sh	Prikaži objekte osnovnog slajda				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_PAGE_MENU	DUMMY+3			0	sh	Str~anica				20181231 09:50:43
 sd	source\ui\app\popup.src	0	menuitem	MN_SLIDE_MENU	DUMMY+8			0	sh	Slid~e				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_RENAME_LAYER	SID_RENAMELAYER	CMD_SID_RENAMELAYER		0	sh	~Rename Layer...				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_DELETE_SLIDE	SID_DELETE_PAGE	CMD_SID_DELETE_PAGE		0	sh	D~elete Slide				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_DELETE_MASTER	SID_DELETE_MASTER_PAGE	CMD_SID_DELETE_MASTER_PAGE		0	sh	D~elete Master				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_DELETE_PAGE	SID_DELETE_PAGE	CMD_SID_DELETE_PAGE		0	sh	D~elete Page				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_RENAME_SLIDE	SID_RENAMEPAGE	CMD_SID_RENAMEPAGE		0	sh	~Rename Slide				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_RENAME_MASTER	SID_RENAME_MASTER_PAGE	CMD_SID_RENAME_MASTER_PAGE		0	sh	~Rename Master				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_RENAME_PAGE	SID_RENAMEPAGE	CMD_SID_RENAMEPAGE		0	sh	~Rename Page				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_LINE	SID_ATTRIBUTES_LINE	CMD_SID_ATTRIBUTES_LINE		0	sh	L~ine...				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_AREA	SID_ATTRIBUTES_AREA	CMD_SID_ATTRIBUTES_AREA		0	sh	~Area...				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_TEXTATTR	SID_TEXTATTR_DLG	CMD_SID_TEXTATTR_DLG		0	sh	~Text...				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_RENAME_LAYER	SID_RENAMELAYER	CMD_SID_RENAMELAYER		0	sh	P~reimenuj sloj...				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_DELETE_SLIDE	SID_DELETE_PAGE	CMD_SID_DELETE_PAGE		0	sh	O~briši slajd				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_DELETE_MASTER	SID_DELETE_MASTER_PAGE	CMD_SID_DELETE_MASTER_PAGE		0	sh	O~briši osnovni				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_DELETE_PAGE	SID_DELETE_PAGE	CMD_SID_DELETE_PAGE		0	sh	O~briši stranicu				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_RENAME_SLIDE	SID_RENAMEPAGE	CMD_SID_RENAMEPAGE		0	sh	P~reimenuj slajd				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_RENAME_MASTER	SID_RENAME_MASTER_PAGE	CMD_SID_RENAME_MASTER_PAGE		0	sh	P~reimenuj osnovni				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_RENAME_PAGE	SID_RENAMEPAGE	CMD_SID_RENAMEPAGE		0	sh	P~reimenuj stranicu				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_LINE	SID_ATTRIBUTES_LINE	CMD_SID_ATTRIBUTES_LINE		0	sh	L~inija...				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_AREA	SID_ATTRIBUTES_AREA	CMD_SID_ATTRIBUTES_AREA		0	sh	Ob~last...				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_TEXTATTR	SID_TEXTATTR_DLG	CMD_SID_TEXTATTR_DLG		0	sh	~Tekst				20181231 09:50:43
 sd	source\ui\app\popup.src	0	menuitem	MN_CONNECTION	SID_CONNECTION_DLG	CMD_SID_CONNECTION_DLG		0	sh	~Connector...				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_NEW_ROUTING	SID_CONNECTION_NEW_ROUTING	CMD_SID_CONNECTION_NEW_ROUTING		0	sh	Reset ~Routing				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_NEW_ROUTING	SID_CONNECTION_NEW_ROUTING	CMD_SID_CONNECTION_NEW_ROUTING		0	sh	Resetuj ~usmeravanje				20181231 09:50:43
 sd	source\ui\app\popup.src	0	menuitem	MN_MEASURE	SID_MEASURE_DLG	CMD_SID_MEASURE_DLG		0	sh	Dimen~sions...				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_TRANSFORM	SID_ATTR_TRANSFORM	CMD_SID_ATTR_TRANSFORM		0	sh	Position and Si~ze...				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_TRANSFORM	SID_ATTR_TRANSFORM	CMD_SID_ATTR_TRANSFORM		0	sh	Mesto i ~veličina...				20181231 09:50:43
 sd	source\ui\app\popup.src	0	menuitem	MN_EDIT_POINTS	SID_BEZIER_EDIT	CMD_SID_BEZIER_EDIT		0	sh	Edit ~Points				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_POSITION.SID_POSITION	SID_FRAME_TO_TOP	CMD_SID_FRAME_TO_TOP		0	sh	~Bring to Front				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_POSITION.SID_POSITION	SID_FRAME_TO_TOP	CMD_SID_FRAME_TO_TOP		0	sh	Iz~nad svega				20181231 09:50:43
 sd	source\ui\app\popup.src	0	menuitem	MN_POSITION.SID_POSITION	SID_MOREFRONT	CMD_SID_MOREFRONT		0	sh	Bring ~Forward				20181231 09:50:43
 sd	source\ui\app\popup.src	0	menuitem	MN_POSITION.SID_POSITION	SID_MOREBACK	CMD_SID_MOREBACK		0	sh	Send Back~ward				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_POSITION.SID_POSITION	SID_FRAME_TO_BOTTOM	CMD_SID_FRAME_TO_BOTTOM		0	sh	~Send to Back				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_POSITION.SID_POSITION	SID_FRAME_TO_BOTTOM	CMD_SID_FRAME_TO_BOTTOM		0	sh	Is~pod svega				20181231 09:50:43
 sd	source\ui\app\popup.src	0	menuitem	MN_POSITION.SID_POSITION	SID_BEFORE_OBJ	CMD_SID_BEFORE_OBJ		0	sh	In Front of ~Object				20181231 09:50:43
 sd	source\ui\app\popup.src	0	menuitem	MN_POSITION.SID_POSITION	SID_BEHIND_OBJ	CMD_SID_BEHIND_OBJ		0	sh	Be~hind Object				20181231 09:50:43
 sd	source\ui\app\popup.src	0	menuitem	MN_POSITION.SID_POSITION	SID_REVERSE_ORDER	CMD_SID_REVERSE_ORDER		0	sh	~Reverse				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_POSITION	SID_POSITION	CMD_SID_POSITION		0	sh	Arra~nge				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_CHAR	SID_CHAR_DLG	CMD_SID_CHAR_DLG		0	sh	C~haracter...				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_CHAR_PARAGRAPH	SID_PARA_DLG	CMD_SID_PARA_DLG		0	sh	P~aragraph...				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_POSITION	SID_POSITION	CMD_SID_POSITION		0	sh	~Redosled				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_CHAR	SID_CHAR_DLG	CMD_SID_CHAR_DLG		0	sh	~Znak...				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_CHAR_PARAGRAPH	SID_PARA_DLG	CMD_SID_PARA_DLG		0	sh	P~asus...				20181231 09:50:43
 sd	source\ui\app\popup.src	0	menuitem	MN_TEXT_ATTR	SID_ATTR_CHAR_FONT	CMD_SID_ATTR_CHAR_FONT		0	sh	~Font				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_TEXT_ATTR	SID_ATTR_CHAR_FONTHEIGHT	CMD_SID_ATTR_CHAR_FONTHEIGHT		0	sh	~Size				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_TEXT_ATTR.DUMMY	SID_ATTR_CHAR_WEIGHT	CMD_SID_ATTR_CHAR_WEIGHT		0	sh	Bold				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_TEXT_ATTR.DUMMY	SID_ATTR_CHAR_POSTURE	CMD_SID_ATTR_CHAR_POSTURE		0	sh	Italic				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_TEXT_ATTR.DUMMY	SID_ATTR_CHAR_OVERLINE	CMD_SID_ATTR_CHAR_OVERLINE		0	sh	Overline				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_TEXT_ATTR.DUMMY	SID_ATTR_CHAR_UNDERLINE	CMD_SID_ATTR_CHAR_UNDERLINE		0	sh	Underline				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_TEXT_ATTR.DUMMY	SID_ATTR_CHAR_STRIKEOUT	CMD_SID_ATTR_CHAR_STRIKEOUT		0	sh	Strikethrough				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_TEXT_ATTR.DUMMY	SID_ATTR_CHAR_SHADOWED	CMD_SID_ATTR_CHAR_SHADOWED		0	sh	Shadow				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_TEXT_ATTR.DUMMY	SID_ATTR_CHAR_CONTOUR	CMD_SID_ATTR_CHAR_CONTOUR		0	sh	~Contour				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_TEXT_ATTR	DUMMY			0	sh	St~yle				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_LINESPACING_ATTR.DUMMY+1	SID_ATTR_PARA_LINESPACE_10	CMD_SID_ATTR_PARA_LINESPACE_10		0	sh	Single Line Spacing				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_LINESPACING_ATTR.DUMMY+1	SID_ATTR_PARA_LINESPACE_15	CMD_SID_ATTR_PARA_LINESPACE_15		0	sh	1.5 Lines				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_LINESPACING_ATTR.DUMMY+1	SID_ATTR_PARA_LINESPACE_20	CMD_SID_ATTR_PARA_LINESPACE_20		0	sh	~Double				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_LINESPACING_ATTR	DUMMY+1			0	sh	~Line Spacing				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_BULLET	SID_CHARMAP	CMD_SID_CHARMAP		0	sh	S~pecial Character...				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_TEXT_ATTR	SID_ATTR_CHAR_FONTHEIGHT	CMD_SID_ATTR_CHAR_FONTHEIGHT		0	sh	~Veličina				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_TEXT_ATTR.DUMMY	SID_ATTR_CHAR_WEIGHT	CMD_SID_ATTR_CHAR_WEIGHT		0	sh	Podebljano				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_TEXT_ATTR.DUMMY	SID_ATTR_CHAR_POSTURE	CMD_SID_ATTR_CHAR_POSTURE		0	sh	Kurziv				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_TEXT_ATTR.DUMMY	SID_ATTR_CHAR_OVERLINE	CMD_SID_ATTR_CHAR_OVERLINE		0	sh	Nadvučeno				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_TEXT_ATTR.DUMMY	SID_ATTR_CHAR_UNDERLINE	CMD_SID_ATTR_CHAR_UNDERLINE		0	sh	Podvučeno				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_TEXT_ATTR.DUMMY	SID_ATTR_CHAR_STRIKEOUT	CMD_SID_ATTR_CHAR_STRIKEOUT		0	sh	Precrtano				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_TEXT_ATTR.DUMMY	SID_ATTR_CHAR_SHADOWED	CMD_SID_ATTR_CHAR_SHADOWED		0	sh	Senka				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_TEXT_ATTR.DUMMY	SID_ATTR_CHAR_CONTOUR	CMD_SID_ATTR_CHAR_CONTOUR		0	sh	~Kontura				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_TEXT_ATTR	DUMMY			0	sh	~Stil				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_LINESPACING_ATTR.DUMMY+1	SID_ATTR_PARA_LINESPACE_10	CMD_SID_ATTR_PARA_LINESPACE_10		0	sh	Jednostruki prored				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_LINESPACING_ATTR.DUMMY+1	SID_ATTR_PARA_LINESPACE_15	CMD_SID_ATTR_PARA_LINESPACE_15		0	sh	1,5 red				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_LINESPACING_ATTR.DUMMY+1	SID_ATTR_PARA_LINESPACE_20	CMD_SID_ATTR_PARA_LINESPACE_20		0	sh	~Dvostruk				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_LINESPACING_ATTR	DUMMY+1			0	sh	~Prored				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_BULLET	SID_CHARMAP	CMD_SID_CHARMAP		0	sh	Po~seban znak...				20181231 09:50:43
 sd	source\ui\app\popup.src	0	menuitem	MN_TEXT_ALIGN.DUMMY+2	SID_ATTR_PARA_ADJUST_LEFT	CMD_SID_ATTR_PARA_ADJUST_LEFT		0	sh	~Left				20181231 09:50:43
 sd	source\ui\app\popup.src	0	menuitem	MN_TEXT_ALIGN.DUMMY+2	SID_ATTR_PARA_ADJUST_RIGHT	CMD_SID_ATTR_PARA_ADJUST_RIGHT		0	sh	~Right				20181231 09:50:43
 sd	source\ui\app\popup.src	0	menuitem	MN_TEXT_ALIGN.DUMMY+2	SID_ATTR_PARA_ADJUST_CENTER	CMD_SID_ATTR_PARA_ADJUST_CENTER		0	sh	~Centered				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_TEXT_ALIGN.DUMMY+2	SID_ATTR_PARA_ADJUST_BLOCK	CMD_SID_ATTR_PARA_ADJUST_BLOCK		0	sh	Justified				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_TEXT_ALIGN	DUMMY+2			0	sh	A~lignment				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_TEXT_ALIGN.DUMMY+2	SID_ATTR_PARA_ADJUST_BLOCK	CMD_SID_ATTR_PARA_ADJUST_BLOCK		0	sh	Obostrano poravnato				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_TEXT_ALIGN	DUMMY+2			0	sh	~Poravnanje				20181231 09:50:43
 sd	source\ui\app\popup.src	0	menuitem	MN_OBJECT_ALIGN.SID_OBJECT_ALIGN	SID_OBJECT_ALIGN_LEFT	CMD_SID_OBJECT_ALIGN_LEFT		0	sh	~Left				20181231 09:50:43
 sd	source\ui\app\popup.src	0	menuitem	MN_OBJECT_ALIGN.SID_OBJECT_ALIGN	SID_OBJECT_ALIGN_CENTER	CMD_SID_OBJECT_ALIGN_CENTER		0	sh	~Centered				20181231 09:50:43
 sd	source\ui\app\popup.src	0	menuitem	MN_OBJECT_ALIGN.SID_OBJECT_ALIGN	SID_OBJECT_ALIGN_RIGHT	CMD_SID_OBJECT_ALIGN_RIGHT		0	sh	~Right				20181231 09:50:43
 sd	source\ui\app\popup.src	0	menuitem	MN_OBJECT_ALIGN.SID_OBJECT_ALIGN	SID_OBJECT_ALIGN_UP	CMD_SID_OBJECT_ALIGN_UP		0	sh	~Top				20181231 09:50:43
 sd	source\ui\app\popup.src	0	menuitem	MN_OBJECT_ALIGN.SID_OBJECT_ALIGN	SID_OBJECT_ALIGN_MIDDLE	CMD_SID_OBJECT_ALIGN_MIDDLE		0	sh	C~enter				20181231 09:50:43
 sd	source\ui\app\popup.src	0	menuitem	MN_OBJECT_ALIGN.SID_OBJECT_ALIGN	SID_OBJECT_ALIGN_DOWN	CMD_SID_OBJECT_ALIGN_DOWN		0	sh	~Bottom				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_OBJECT_ALIGN	SID_OBJECT_ALIGN	CMD_SID_OBJECT_ALIGN		0	sh	Al~ignment				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_OBJECT_ALIGN	SID_OBJECT_ALIGN	CMD_SID_OBJECT_ALIGN		0	sh	~Poravnanje				20181231 09:50:43
 sd	source\ui\app\popup.src	0	menuitem	MN_CLOSE_OBJECT	SID_OBJECT_CLOSE	CMD_SID_OBJECT_CLOSE		0	sh	Close ~Object				20181231 09:50:43
 sd	source\ui\app\popup.src	0	menuitem	MN_BEZIER	SID_BEZIER_EDIT	CMD_SID_BEZIER_EDIT		0	sh	Edit ~Points				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_BEZIER	SID_BEZIER_MOVE	CMD_SID_BEZIER_MOVE		0	sh	~Move Points				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_BEZIER	SID_BEZIER_INSERT	CMD_SID_BEZIER_INSERT		0	sh	Insert ~Points				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_BEZIER	SID_BEZIER_DELETE	CMD_SID_BEZIER_DELETE		0	sh	~Delete Points				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_BEZIER	SID_BEZIER_MOVE	CMD_SID_BEZIER_MOVE		0	sh	~Premesti tačke				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_BEZIER	SID_BEZIER_INSERT	CMD_SID_BEZIER_INSERT		0	sh	Umetni ~tačke				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_BEZIER	SID_BEZIER_DELETE	CMD_SID_BEZIER_DELETE		0	sh	O~briši tačke				20181231 09:50:43
 sd	source\ui\app\popup.src	0	menuitem	MN_BEZIER	SID_BEZIER_CLOSE	CMD_SID_BEZIER_CLOSE		0	sh	Close ~Object				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_BEZIER	SID_BEZIER_CUTLINE	CMD_SID_BEZIER_CUTLINE		0	sh	~Split Curve				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_BEZIER	SID_BEZIER_CONVERT	CMD_SID_BEZIER_CONVERT		0	sh	Con~vert to Curve				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_BEZIER	SID_BEZIER_EDGE	CMD_SID_BEZIER_EDGE		0	sh	~Corner				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_BEZIER	SID_BEZIER_SMOOTH	CMD_SID_BEZIER_SMOOTH		0	sh	Smoot~h				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_BEZIER	SID_BEZIER_SYMMTR	CMD_SID_BEZIER_SYMMTR		0	sh	S~ymmetric				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_BEZIER	SID_BEZIER_ELIMINATE_POINTS	CMD_SID_BEZIER_ELIMINATE_POINTS		0	sh	~Reduce Points				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_BEZIER	SID_BEZIER_CUTLINE	CMD_SID_BEZIER_CUTLINE		0	sh	Po~deli krivu				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_BEZIER	SID_BEZIER_CONVERT	CMD_SID_BEZIER_CONVERT		0	sh	Pret~vori u krivu				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_BEZIER	SID_BEZIER_EDGE	CMD_SID_BEZIER_EDGE		0	sh	~Ugao				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_BEZIER	SID_BEZIER_SMOOTH	CMD_SID_BEZIER_SMOOTH		0	sh	G~latko				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_BEZIER	SID_BEZIER_SYMMTR	CMD_SID_BEZIER_SYMMTR		0	sh	S~imetrično				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_BEZIER	SID_BEZIER_ELIMINATE_POINTS	CMD_SID_BEZIER_ELIMINATE_POINTS		0	sh	~Smanji tačke				20181231 09:50:43
 sd	source\ui\app\popup.src	0	menuitem	MN_GROUP	SID_GROUP	CMD_SID_GROUP		0	sh	~Group				20181231 09:50:43
 sd	source\ui\app\popup.src	0	menuitem	MN_UNGROUP	SID_UNGROUP	CMD_SID_UNGROUP		0	sh	~Ungroup				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_COMBINE	SID_COMBINE	CMD_SID_COMBINE		0	sh	Comb~ine				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_DISMANTLE	SID_DISMANTLE	CMD_SID_DISMANTLE		0	sh	~Split				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_ENTER_GROUP	SID_ENTER_GROUP	CMD_SID_ENTER_GROUP		0	sh	~Enter Group				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_LEAVE_GROUP	SID_LEAVE_GROUP	CMD_SID_LEAVE_GROUP		0	sh	E~xit Group				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_NAME_GROUP	SID_NAME_GROUP	CMD_SID_NAME_GROUP		0	sh	Name...				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_OBJECT_TITLE_DESCRIPTION	SID_OBJECT_TITLE_DESCRIPTION	CMD_SID_OBJECT_TITLE_DESCRIPTION		0	sh	Description...				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_EFFECT	SID_CUSTOM_ANIMATION_PANEL	CMD_SID_CUSTOM_ANIMATION_PANEL		0	sh	Custom Animation...				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_ACTION	SID_ANIMATION_EFFECTS	CMD_SID_ANIMATION_EFFECTS		0	sh	Int~eraction...				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_PRESENTATIONOBJECT	SID_PRESENTATIONOBJECT	CMD_SID_PRESENTATIONOBJECT		0	sh	Presentation ~Object...				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_SET_DEFAULT	SID_SET_DEFAULT	CMD_SID_SET_DEFAULT		0	sh	~Default				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_FONTWORK	SID_FONTWORK	CMD_SID_FONTWORK		0	sh	F~ontwork				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_COMBINE	SID_COMBINE	CMD_SID_COMBINE		0	sh	Komb~inuj				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_DISMANTLE	SID_DISMANTLE	CMD_SID_DISMANTLE		0	sh	~Podeli				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_ENTER_GROUP	SID_ENTER_GROUP	CMD_SID_ENTER_GROUP		0	sh	~Uđi u grupu				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_LEAVE_GROUP	SID_LEAVE_GROUP	CMD_SID_LEAVE_GROUP		0	sh	Iza~đi iz grupe				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_NAME_GROUP	SID_NAME_GROUP	CMD_SID_NAME_GROUP		0	sh	Ime...				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_OBJECT_TITLE_DESCRIPTION	SID_OBJECT_TITLE_DESCRIPTION	CMD_SID_OBJECT_TITLE_DESCRIPTION		0	sh	Opis...				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_EFFECT	SID_CUSTOM_ANIMATION_PANEL	CMD_SID_CUSTOM_ANIMATION_PANEL		0	sh	Prilagođena animacija...				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_ACTION	SID_ANIMATION_EFFECTS	CMD_SID_ANIMATION_EFFECTS		0	sh	Interakcija...				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_PRESENTATIONOBJECT	SID_PRESENTATIONOBJECT	CMD_SID_PRESENTATIONOBJECT		0	sh	~Objekat prezentacije...				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_SET_DEFAULT	SID_SET_DEFAULT	CMD_SID_SET_DEFAULT		0	sh	~Podrazumevano				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_FONTWORK	SID_FONTWORK	CMD_SID_FONTWORK		0	sh	~Slovopis				20181231 09:50:43
 sd	source\ui\app\popup.src	0	menuitem	MN_OLE_OBJECT	SID_OBJECT	CMD_SID_OBJECT		0	sh	~OLE Object				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_ORIGINAL_SIZE	SID_ORIGINAL_SIZE	CMD_SID_ORIGINAL_SIZE		0	sh	~Original Size				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_SAVEGRAPHIC	SID_SAVEGRAPHIC	CMD_SID_SAVEGRAPHIC		0	sh	Save as Picture...				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_CROP	SID_ATTR_GRAF_CROP	CMD_SID_ATTR_GRAF_CROP		0	sh	Crop Picture...				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_NAVIGATOR	SID_NAVIGATOR	CMD_SID_NAVIGATOR		0	sh	Na~vigator				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_GLUE_INSERT_POINT	SID_GLUE_INSERT_POINT	CMD_SID_GLUE_INSERT_POINT		0	sh	Insert ~Point				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_ORIGINAL_SIZE	SID_ORIGINAL_SIZE	CMD_SID_ORIGINAL_SIZE		0	sh	~Prvobitna veličina				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_SAVEGRAPHIC	SID_SAVEGRAPHIC	CMD_SID_SAVEGRAPHIC		0	sh	Sačuvaj kao sliku...				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_CROP	SID_ATTR_GRAF_CROP	CMD_SID_ATTR_GRAF_CROP		0	sh	Izreži sliku...				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_NAVIGATOR	SID_NAVIGATOR	CMD_SID_NAVIGATOR		0	sh	Na~vigacija				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_GLUE_INSERT_POINT	SID_GLUE_INSERT_POINT	CMD_SID_GLUE_INSERT_POINT		0	sh	Umetni ~tačku				20181231 09:50:43
 sd	source\ui\app\popup.src	0	menuitem	MN_GLUE_ESC_DIR_LEFT	SID_GLUE_ESCDIR_LEFT	CMD_SID_GLUE_ESCDIR_LEFT		0	sh	~Left				20181231 09:50:43
 sd	source\ui\app\popup.src	0	menuitem	MN_GLUE_ESC_DIR_TOP	SID_GLUE_ESCDIR_TOP	CMD_SID_GLUE_ESCDIR_TOP		0	sh	~Top				20181231 09:50:43
 sd	source\ui\app\popup.src	0	menuitem	MN_GLUE_ESC_DIR_RIGHT	SID_GLUE_ESCDIR_RIGHT	CMD_SID_GLUE_ESCDIR_RIGHT		0	sh	~Right				20181231 09:50:43
 sd	source\ui\app\popup.src	0	menuitem	MN_GLUE_ESC_DIR_BOTTOM	SID_GLUE_ESCDIR_BOTTOM	CMD_SID_GLUE_ESCDIR_BOTTOM		0	sh	~Bottom				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_GLUE_PERCENT	SID_GLUE_PERCENT	CMD_SID_GLUE_PERCENT		0	sh	~Adapt Position to Object				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_GLUE_HORZALIGN_LEFT	SID_GLUE_HORZALIGN_LEFT	CMD_SID_GLUE_HORZALIGN_LEFT		0	sh	Fixed ~Horizontal Left				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_GLUE_HORZALIGN_CENTER	SID_GLUE_HORZALIGN_CENTER	CMD_SID_GLUE_HORZALIGN_CENTER		0	sh	Fixed Horizontal ~Center				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_GLUE_HORZALIGN_RIGHT	SID_GLUE_HORZALIGN_RIGHT	CMD_SID_GLUE_HORZALIGN_RIGHT		0	sh	Fixed Hori~zontal Right				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_GLUE_VERTALIGN_TOP	SID_GLUE_VERTALIGN_TOP	CMD_SID_GLUE_VERTALIGN_TOP		0	sh	Fixed ~Vertical Top				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_GLUE_VERTALIGN_CENTER	SID_GLUE_VERTALIGN_CENTER	CMD_SID_GLUE_VERTALIGN_CENTER		0	sh	Fixed V~ertical Center				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_GLUE_VERTALIGN_BOTTOM	SID_GLUE_VERTALIGN_BOTTOM	CMD_SID_GLUE_VERTALIGN_BOTTOM		0	sh	Fixed Ver~tical Bottom				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_GRID_VISIBLE	SID_GRID_VISIBLE	CMD_SID_GRID_VISIBLE		0	sh	~Visible Grid				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_GRID_USE	SID_GRID_USE	CMD_SID_GRID_USE		0	sh	Snap to Grid				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_GRID_FRONT	SID_GRID_FRONT	CMD_SID_GRID_FRONT		0	sh	Grid to ~Front				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_GRID	DUMMY+5			0	sh	~Grid				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_HELPLINES_VISIBLE	SID_HELPLINES_VISIBLE	CMD_SID_HELPLINES_VISIBLE		0	sh	~Snap Lines Visible				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_HELPLINES_USE	SID_HELPLINES_USE	CMD_SID_HELPLINES_USE		0	sh	Snap to Snap Lines				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_HELPLINES_FRONT	SID_HELPLINES_FRONT	CMD_SID_HELPLINES_FRONT		0	sh	Snap Lines to Front				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_HELPLINES	DUMMY+6			0	sh	~Snap Lines				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_CONTROL_SHOW_BROWSER	SID_SHOW_BROWSER	CMD_SID_SHOW_BROWSER		0	sh	Propert~ies...				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_CONVERT_TO_1BIT_THRESHOLD	SID_CONVERT_TO_1BIT_THRESHOLD	CMD_SID_CONVERT_TO_1BIT_THRESHOLD		0	sh	1Bit ~Threshold				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_CONVERT_TO_1BIT_MATRIX	SID_CONVERT_TO_1BIT_MATRIX	CMD_SID_CONVERT_TO_1BIT_MATRIX		0	sh	1 Bit ~Dithering				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_CONVERT_TO_4BIT_GRAYS	SID_CONVERT_TO_4BIT_GRAYS	CMD_SID_CONVERT_TO_4BIT_GRAYS		0	sh	4 Bit G~rayscales				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_CONVERT_TO_4BIT_COLORS	SID_CONVERT_TO_4BIT_COLORS	CMD_SID_CONVERT_TO_4BIT_COLORS		0	sh	4 Bit ~Color Palette				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_CONVERT_TO_8BIT_GRAYS	SID_CONVERT_TO_8BIT_GRAYS	CMD_SID_CONVERT_TO_8BIT_GRAYS		0	sh	8 Bit Gr~ayscales				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_CONVERT_TO_8BIT_COLORS	SID_CONVERT_TO_8BIT_COLORS	CMD_SID_CONVERT_TO_8BIT_COLORS		0	sh	8 Bit C~olor Palette				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_CONVERT_TO_24BIT	SID_CONVERT_TO_24BIT	CMD_SID_CONVERT_TO_24BIT		0	sh	24 Bit ~True Colors				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_COLORRESOLUTION	DUMMY+4			0	sh	~Color Resolution				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MNSUB_CONVERT	SID_CONVERT	HID_MN_SUB_CONVERT		0	sh	Con~vert				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MNSUB_MIRROR	SID_MIRROR	HID_MN_SUB_MIRROR		0	sh	~Flip				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MNSUB_ROTATE	SID_OBJECT_ROTATE	CMD_SID_OBJECT_ROTATE		0	sh	~Rotate				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_CONNECT	SID_CONNECT	CMD_SID_CONNECT		0	sh	C~onnect				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_BREAK	SID_BREAK	CMD_SID_BREAK		0	sh	~Break				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_STYLEDT	SID_STYLE_EDIT	CMD_SID_STYLE_EDIT		0	sh	Edit Style...				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_EDIT_HYPERLINK	SID_EDIT_HYPERLINK	CMD_SID_EDIT_HYPERLINK		0	sh	H~yperlink...				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_POINT_EDITMODE	SID_BEZIER_EDIT	CMD_SID_BEZIER_EDIT		0	sh	Poi~nts				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_GLUE_EDITMODE	SID_GLUE_EDITMODE	CMD_SID_GLUE_EDITMODE		0	sh	~Glue Points				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_GLUE_PERCENT	SID_GLUE_PERCENT	CMD_SID_GLUE_PERCENT		0	sh	Pril~agodi položaj objektu				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_GLUE_HORZALIGN_LEFT	SID_GLUE_HORZALIGN_LEFT	CMD_SID_GLUE_HORZALIGN_LEFT		0	sh	Fiksirano ~vodoravno levo				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_GLUE_HORZALIGN_CENTER	SID_GLUE_HORZALIGN_CENTER	CMD_SID_GLUE_HORZALIGN_CENTER		0	sh	Fiksirano vodoravno na ~sredini				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_GLUE_HORZALIGN_RIGHT	SID_GLUE_HORZALIGN_RIGHT	CMD_SID_GLUE_HORZALIGN_RIGHT		0	sh	Fiksirano vodoravno ~desno				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_GLUE_VERTALIGN_TOP	SID_GLUE_VERTALIGN_TOP	CMD_SID_GLUE_VERTALIGN_TOP		0	sh	Fiksirano ~uspravno uz vrh				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_GLUE_VERTALIGN_CENTER	SID_GLUE_VERTALIGN_CENTER	CMD_SID_GLUE_VERTALIGN_CENTER		0	sh	Fiksirano uspravno na ~sredini				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_GLUE_VERTALIGN_BOTTOM	SID_GLUE_VERTALIGN_BOTTOM	CMD_SID_GLUE_VERTALIGN_BOTTOM		0	sh	Fiksirano uspravno uz ~dno				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_GRID_VISIBLE	SID_GRID_VISIBLE	CMD_SID_GRID_VISIBLE		0	sh	~Mreža prikazana				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_GRID_USE	SID_GRID_USE	CMD_SID_GRID_USE		0	sh	Prema vođicama mreže				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_GRID_FRONT	SID_GRID_FRONT	CMD_SID_GRID_FRONT		0	sh	Mreža u pr~vi plan				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_GRID	DUMMY+5			0	sh	~Mreža				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_HELPLINES_VISIBLE	SID_HELPLINES_VISIBLE	CMD_SID_HELPLINES_VISIBLE		0	sh	~Vođice prikazane				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_HELPLINES_USE	SID_HELPLINES_USE	CMD_SID_HELPLINES_USE		0	sh	Postavi uz vođice				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_HELPLINES_FRONT	SID_HELPLINES_FRONT	CMD_SID_HELPLINES_FRONT		0	sh	Vođice u prvi plan				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_HELPLINES	DUMMY+6			0	sh	~Vođice				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_CONTROL_SHOW_BROWSER	SID_SHOW_BROWSER	CMD_SID_SHOW_BROWSER		0	sh	Svo~jstva...				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_CONVERT_TO_1BIT_THRESHOLD	SID_CONVERT_TO_1BIT_THRESHOLD	CMD_SID_CONVERT_TO_1BIT_THRESHOLD		0	sh	1-bitni pra~g				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_CONVERT_TO_1BIT_MATRIX	SID_CONVERT_TO_1BIT_MATRIX	CMD_SID_CONVERT_TO_1BIT_MATRIX		0	sh	1-bitno mešanje boja				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_CONVERT_TO_4BIT_GRAYS	SID_CONVERT_TO_4BIT_GRAYS	CMD_SID_CONVERT_TO_4BIT_GRAYS		0	sh	4-bitne nija~nse sive				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_CONVERT_TO_4BIT_COLORS	SID_CONVERT_TO_4BIT_COLORS	CMD_SID_CONVERT_TO_4BIT_COLORS		0	sh	4-bitna paleta ~boja				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_CONVERT_TO_8BIT_GRAYS	SID_CONVERT_TO_8BIT_GRAYS	CMD_SID_CONVERT_TO_8BIT_GRAYS		0	sh	8-bitne nija~nse sive				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_CONVERT_TO_8BIT_COLORS	SID_CONVERT_TO_8BIT_COLORS	CMD_SID_CONVERT_TO_8BIT_COLORS		0	sh	8-bitna pa~leta boja				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_CONVERT_TO_24BIT	SID_CONVERT_TO_24BIT	CMD_SID_CONVERT_TO_24BIT		0	sh	24-bitne ~pune boje				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_COLORRESOLUTION	DUMMY+4			0	sh	Re~zolucija boje				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MNSUB_CONVERT	SID_CONVERT	HID_MN_SUB_CONVERT		0	sh	Pre~tvori				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MNSUB_MIRROR	SID_MIRROR	HID_MN_SUB_MIRROR		0	sh	~Obrni				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MNSUB_ROTATE	SID_OBJECT_ROTATE	CMD_SID_OBJECT_ROTATE		0	sh	~Rotiraj				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_CONNECT	SID_CONNECT	CMD_SID_CONNECT		0	sh	P~oveži				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_BREAK	SID_BREAK	CMD_SID_BREAK		0	sh	~Prelom				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_STYLEDT	SID_STYLE_EDIT	CMD_SID_STYLE_EDIT		0	sh	Uredi stil..				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_EDIT_HYPERLINK	SID_EDIT_HYPERLINK	CMD_SID_EDIT_HYPERLINK		0	sh	~Hiperveza...				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_POINT_EDITMODE	SID_BEZIER_EDIT	CMD_SID_BEZIER_EDIT		0	sh	Ta~čke				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_GLUE_EDITMODE	SID_GLUE_EDITMODE	CMD_SID_GLUE_EDITMODE		0	sh	Tačke ~spajanja				20181231 09:50:43
 sd	source\ui\app\popup.src	0	menuitem	MN_LAYER_EDITMODE.DUMMY+7	SID_INSERTLAYER	CMD_SID_INSERTLAYER		0	sh	~Insert				20181231 09:50:43
 sd	source\ui\app\popup.src	0	menuitem	MN_LAYER_EDITMODE.DUMMY+7	SID_MODIFYLAYER	CMD_SID_MODIFYLAYER		0	sh	~Modify				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_LAYER_EDITMODE.DUMMY+7	SID_DELETE_LAYER	CMD_SID_DELETE_LAYER		0	sh	Delete				20181231 09:50:43
-sd	source\ui\app\popup.src	0	menuitem	MN_LAYER_EDITMODE.DUMMY+7	SID_RENAMELAYER	CMD_SID_RENAMELAYER		0	sh	~Rename				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_LAYER_EDITMODE.DUMMY+7	SID_DELETE_LAYER	CMD_SID_DELETE_LAYER		0	sh	Obriši				20181231 09:50:43
+sd	source\ui\app\popup.src	0	menuitem	MN_LAYER_EDITMODE.DUMMY+7	SID_RENAMELAYER	CMD_SID_RENAMELAYER		0	sh	~Preimenuj				20181231 09:50:43
 sd	source\ui\app\popup.src	0	menuitem	MN_LAYER_EDITMODE	DUMMY+7			0	sh	La~yer				20181231 09:50:43
 sd	source\ui\app\popup.src	0	menuitem	RID_DRAW_TABLE_POPUP	SID_FORMAT_TABLE_DLG	CMD_SID_FORMAT_TABLE_DLG		0	sh	~Table...				20181231 09:50:43
 sd	source\ui\app\popup.src	0	menuitem	RID_DRAW_TABLE_POPUP.DUMMY+10	SID_TABLE_MERGE_CELLS	CMD_SID_TABLE_MERGE_CELLS		0	sh	~Merge				20181231 09:50:43
@@ -19060,13 +19099,13 @@ sd	source\ui\app\strings.src	0	string	STR_INSERT_PICTURE				175	sh	Umetni sliku	
 sd	source\ui\app\strings.src	0	string	STR_INSERT_MOVIE				175	sh	Umetni film				20181231 09:50:43
 sd	source\ui\app\strings.src	0	string	RID_DRAW_VIEWER_TOOLBOX				175	sh	Function Bar (viewing mode)				20181231 09:50:43
 sd	source\ui\app\strings.src	0	string	RID_GRAPHIC_VIEWER_TOOLBOX				175	sh	Function Bar (viewing mode)				20181231 09:50:43
-sd	source\ui\app\strings.src	0	string	RID_DRAW_MEDIA_TOOLBOX				175	sh	Media Playback				20181231 09:50:43
-sd	source\ui\app\strings.src	0	string	RID_DRAW_TABLE_TOOLBOX				175	sh	Table				20181231 09:50:43
+sd	source\ui\app\strings.src	0	string	RID_DRAW_MEDIA_TOOLBOX				175	sh	Reprodukcija				20181231 09:50:43
+sd	source\ui\app\strings.src	0	string	RID_DRAW_TABLE_TOOLBOX				175	sh	Tabela				20181231 09:50:43
 sd	source\ui\app\strings.src	0	string	STR_SAR_NOT_FOUND				175	sh	Search key not found.				20181231 09:50:43
-sd	source\ui\app\strings.src	0	string	STR_SAR_WRAP_FORWARD				175	sh	%PRODUCTNAME Impress has searched to the end of the presentation. Do you want to continue at the beginning?				20181231 09:50:43
-sd	source\ui\app\strings.src	0	string	STR_SAR_WRAP_BACKWARD				175	sh	%PRODUCTNAME Impress has searched to the beginning of the presentation. Do you want to continue at the end?				20181231 09:50:43
-sd	source\ui\app\strings.src	0	string	STR_SAR_WRAP_FORWARD_DRAW				175	sh	%PRODUCTNAME Draw has searched to the end of the document. Do you want to continue at the beginning?				20181231 09:50:43
-sd	source\ui\app\strings.src	0	string	STR_SAR_WRAP_BACKWARD_DRAW				175	sh	%PRODUCTNAME Draw has searched to the beginning of the document. Do you want to continue at the end?				20181231 09:50:43
+sd	source\ui\app\strings.src	0	string	STR_SAR_WRAP_FORWARD				175	sh	%PRODUCTNAME Prezentacija je pretražila do kraja prezentacije. Želite li da nastavite od početka?				20181231 09:50:43
+sd	source\ui\app\strings.src	0	string	STR_SAR_WRAP_BACKWARD				175	sh	%PRODUCTNAME Prezentacija je pretražila do početka prezentacije. Želite li da nastavite od kraja?				20181231 09:50:43
+sd	source\ui\app\strings.src	0	string	STR_SAR_WRAP_FORWARD_DRAW				175	sh	%PRODUCTNAME Crtanje je pretražio do kraja dokumenta. Želite li da nastavite od početka?				20181231 09:50:43
+sd	source\ui\app\strings.src	0	string	STR_SAR_WRAP_BACKWARD_DRAW				175	sh	%PRODUCTNAME Crtanje je pretražio do početka dokumenta. Želite li da nastavite od kraja?				20181231 09:50:43
 sd	source\ui\table\TableDesignPane.src	0	fixedline	DLG_TABLEDESIGNPANE	FL_STYLE_OPTIONS+1			120	sh	Prikaži				20181231 09:50:43
 sd	source\ui\table\TableDesignPane.src	0	checkbox	DLG_TABLEDESIGNPANE	CB_HEADER_ROW+1			120	sh	Red zaglavlja				20181231 09:50:43
 sd	source\ui\table\TableDesignPane.src	0	checkbox	DLG_TABLEDESIGNPANE	CB_TOTAL_ROW+1			120	sh	Red sa zbirom				20181231 09:50:43
@@ -71127,7 +71166,7 @@ cui	source\tabpages\autocdlg.src	0	pushbutton	RID_OFAPAGE_AUTOCORR_REPLACE	PB_NE
 cui	source\tabpages\autocdlg.src	0	pushbutton	RID_OFAPAGE_AUTOCORR_REPLACE	PB_DELETE_REPLACE			50	sh	~Obriši				20181231 09:50:43
 cui	source\tabpages\autocdlg.src	0	string	RID_OFAPAGE_AUTOCORR_REPLACE	STR_MODIFY			187	sh	~Zameni				20181231 09:50:43
 cui	source\tabpages\autocdlg.src	0	fixedline	RID_OFAPAGE_AUTOCORR_EXCEPT	FL_ABBREV			252	sh	Skraćenice (bez velikog slova)				20181231 09:50:43
-cui	source\tabpages\autocdlg.src	0	pushbutton	RID_OFAPAGE_AUTOCORR_EXCEPT	PB_NEWABBREV			50	sh	~Nov				20181231 09:50:43
+cui	source\tabpages\autocdlg.src	0	pushbutton	RID_OFAPAGE_AUTOCORR_EXCEPT	PB_NEWABBREV			50	sh	~Novo				20181231 09:50:43
 cui	source\tabpages\autocdlg.src	0	pushbutton	RID_OFAPAGE_AUTOCORR_EXCEPT	PB_DELABBREV			50	sh	~Obriši				20181231 09:50:43
 cui	source\tabpages\autocdlg.src	0	checkbox	RID_OFAPAGE_AUTOCORR_EXCEPT	CB_AUTOABBREV			111	sh	~Automatsko ubacivanje				20181231 09:50:43
 cui	source\tabpages\autocdlg.src	0	fixedline	RID_OFAPAGE_AUTOCORR_EXCEPT	FL_DOUBLECAPS			252	sh	Reči sa DVa POčetna VElika SLova				20181231 09:50:43
@@ -71233,12 +71272,12 @@ cui	source\tabpages\chardlg.src	0	tristatebox	RID_SVXPAGE_CHAR_EFFECTS	CB_BLINKI
 cui	source\tabpages\chardlg.src	0	tristatebox	RID_SVXPAGE_CHAR_EFFECTS	CB_CHARHIDDEN			82	sh	Skr~iveno				20181231 09:50:43
 cui	source\tabpages\chardlg.src	0	fixedtext	RID_SVXPAGE_CHAR_EFFECTS	FT_OVERLINE			68	sh	~Nadvlačenje				20181231 09:50:43
 cui	source\tabpages\chardlg.src	0	stringlist	RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE	1			0	sh	(Bez)				20181231 09:50:43
-cui	source\tabpages\chardlg.src	0	stringlist	RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE	2			0	sh	Jednostruko				20181231 09:50:43
-cui	source\tabpages\chardlg.src	0	stringlist	RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE	3			0	sh	Dvostruko				20181231 09:50:43
+cui	source\tabpages\chardlg.src	0	stringlist	RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE	2			0	sh	Jednostruk				20181231 09:50:43
+cui	source\tabpages\chardlg.src	0	stringlist	RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE	3			0	sh	Dvostruki				20181231 09:50:43
 cui	source\tabpages\chardlg.src	0	stringlist	RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE	4			0	sh	Podebljano				20181231 09:50:43
 cui	source\tabpages\chardlg.src	0	stringlist	RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE	5			0	sh	Tačkice				20181231 09:50:43
 cui	source\tabpages\chardlg.src	0	stringlist	RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE	6			0	sh	Tačkice (podebljano)				20181231 09:50:43
-cui	source\tabpages\chardlg.src	0	stringlist	RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE	7			0	sh	Crtice				20181231 09:50:43
+cui	source\tabpages\chardlg.src	0	stringlist	RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE	7			0	sh	Crta				20181231 09:50:43
 cui	source\tabpages\chardlg.src	0	stringlist	RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE	8			0	sh	Crtice (podebljano)				20181231 09:50:43
 cui	source\tabpages\chardlg.src	0	stringlist	RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE	9			0	sh	Duže crtice				20181231 09:50:43
 cui	source\tabpages\chardlg.src	0	stringlist	RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE	10			0	sh	Duže crtice (podebljano)				20181231 09:50:43
@@ -71928,6 +71967,15 @@ dbaccess	source\ui\browser\sbabrw.src	0	string	STR_LOADING_TABLE				0	sh	Učitav
 dbaccess	source\ui\browser\sbabrw.src	0	string	STR_NO_TABLE_FORMAT_INSIDE				0	sh	Ne mogu da pronađem format tabele.				20181231 09:50:43
 dbaccess	source\ui\browser\sbabrw.src	0	string	STR_COULDNOTCONNECT_DATASOURCE				0	sh	Ne mogu da uspostavim vezu sa izvorom podataka „$name$“.				20181231 09:50:43
 dbaccess	source\ui\browser\sbabrw.src	0	menuitem	RID_MENU_REFRESH_DATA	ID_BROWSER_REFRESH_REBUILD			0	sh	Ponovo napravi				20181231 09:50:43
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_TITLE_CONFIRM_DELETION			0	sh	Potvrdi brisanje				20181231 09:50:43
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_QUERY_DELETE_TABLE			0	sh	Želite li da izbrišete tabelu „%1“?				20181231 09:50:43
+dbaccess	source\ui\browser\sbabrw.src	0	querybox	MENU_BROWSER_DEFAULTCONTEXT	QUERY_BRW_DELETE_QUERY_CONFIRM			0	sh	Ovaj upit već postoji. Da li želite da ga izbrišete?				20181231 09:50:43
+dbaccess	source\ui\browser\sbabrw.src	0	querybox	MENU_BROWSER_DEFAULTCONTEXT	QUERY_CONNECTION_LOST			0	sh	Veza sa bazom podataka je izgubljena. Da li želite da ponovo uspostavite vezu?				20181231 09:50:43
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_OPENTABLES_WARNINGS			0	sh	Pojavila su se upozorenja				20181231 09:50:43
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_OPENTABLES_WARNINGS_DETAILS			0	sh	Prilikom prikupljanja tabela veza sa bazom podataka je prijavila grešku.				20181231 09:50:43
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_NO_TABLE_FORMAT_INSIDE			0	sh	Ne mogu da pronađem format tabele.				20181231 09:50:43
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_COULDNOTCONNECT_DATASOURCE			0	sh	Ne mogu da uspostavim vezu sa izvorom podataka „$name$“.				20181231 09:50:43
+dbaccess	source\ui\browser\sbabrw.src	0	menuitem	MENU_BROWSER_DEFAULTCONTEXT.RID_MENU_REFRESH_DATA	ID_BROWSER_REFRESH_REBUILD			0	sh	Ponovo napravi				20181231 09:50:43
 dbaccess	source\ui\uno\copytablewizard.src	0	string	STR_CTW_NO_VIEWS_SUPPORT				0	sh	Ciljna baza podataka ne podržava poglede.				20181231 09:50:43
 dbaccess	source\ui\uno\copytablewizard.src	0	string	STR_CTW_NO_PRIMARY_KEY_SUPPORT				0	sh	Ciljna baza ne podržava primarne ključeve.				20181231 09:50:43
 dbaccess	source\ui\uno\copytablewizard.src	0	string	STR_CTW_INVALID_DATA_ACCESS_DESCRIPTOR				0	sh	Opis pristupa podataka nije pronaćen ili opis podataka pristupa nije u mogućnosti da dostavi sve potrebne informacije.				20181231 09:50:43
@@ -72475,7 +72523,7 @@ dbaccess	source\ui\dlg\AutoControls_tmpl.hrc	0	string	STR_AUTODELIMITER_MISSING	
 dbaccess	source\ui\dlg\AutoControls_tmpl.hrc	0	string	STR_AUTODELIMITER_MUST_DIFFER				150	sh	#1 i #2 moraju biti različiti.				20181231 09:50:43
 dbaccess	source\ui\dlg\AutoControls_tmpl.hrc	0	string	STR_AUTONO_WILDCARDS				150	sh	Džoker znaci, kao npr. ? i *, nisu dozvoljeni u #1.				20181231 09:50:43
 dbaccess	source\ui\dlg\AutoControls_tmpl.hrc	0	fixedtext	AUTO_JDBCDRIVERCLASSGROUP(AUTO_Y, AUTO_HID, AUTO_HID2)	FT_AUTOJDBCDRIVERCLASS			0	sh	JDBC d~river class				20181231 09:50:43
-dbaccess	source\ui\dlg\AutoControls_tmpl.hrc	0	pushbutton	AUTO_JDBCDRIVERCLASSGROUP(AUTO_Y, AUTO_HID, AUTO_HID2)	PB_AUTOTESTDRIVERCLASS	AUTO_HID2		50	sh	Test class				20181231 09:50:43
+dbaccess	source\ui\dlg\AutoControls_tmpl.hrc	0	pushbutton	AUTO_JDBCDRIVERCLASSGROUP(AUTO_Y, AUTO_HID, AUTO_HID2)	PB_AUTOTESTDRIVERCLASS	AUTO_HID2		50	sh	Test klasa				20181231 09:50:43
 dbaccess	source\ui\dlg\AutoControls_tmpl.hrc	0	fixedtext	AUTO_SOCKETCONTROLGROUP(AUTO_Y)	FT_SOCKET			0	sh	Priključak				20181231 09:50:43
 dbaccess	source\ui\inc\toolbox_tmpl.hrc	0	#define	MID_SBA_QRY_REFRESH			!defined DBAUI_TOOLBOX_HXX	0	sh	Osveži				20181231 09:50:43
 dbaccess	source\ui\inc\toolbox_tmpl.hrc	0	#define	MID_NEW_VIEW_DESIGN		HID_BROWSER_VIEW_CREATE_DESIGN	!defined DBAUI_TOOLBOX_HXX	0	sh	Novi ~pogled				20181231 09:50:43
