@@ -22335,27 +22335,27 @@ connectivity	source\resource\conn_error_message.src	0	string	256 + 2*303 + 0				
 connectivity	source\resource\conn_error_message.src	0	string	256 + 2*304 + 0				0	da	Ingen forbindelse til databasen.				20200411 15:09:53
 connectivity	source\resource\conn_error_message.src	0	string	256 + 2*500 + 0				0	da	$1$ eksisterer ikke.				20200411 15:09:53
 connectivity	source\resource\conn_error_message.src	0	string	256 + 2*550 + 0				0	da	Kan ikke vise hele indholdet af tabellen. Anvend venligst et filter.				20200411 15:09:53
-connectivity	source\drivers\adabas\adabas.xcu	0	value	.Drivers.Installed.sdbc:adabas:*	DriverTypeDisplayName			0	da	Adabas D				20200411 15:09:53
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:*	DriverTypeDisplayName			0	da	ADO				20200411 15:09:53
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:PROVIDER=Microsoft.Jet.OLEDB.4.0;DATA SOURCE=*	DriverTypeDisplayName			0	da	Microsoft Access				20200411 15:09:53
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:Provider=Microsoft.ACE.OLEDB.12.0;DATA SOURCE=*	DriverTypeDisplayName			0	da	Microsoft Access 2007				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\adabas.xcu	0	value	.Drivers.Installed.sdbc:adabas:*	DriverTypeDisplayName			0	da	Adabas D				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:*	DriverTypeDisplayName			0	da	ADO				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:PROVIDER=Microsoft.Jet.OLEDB.4.0;DATA SOURCE=*	DriverTypeDisplayName			0	da	Microsoft Access				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:Provider=Microsoft.ACE.OLEDB.12.0;DATA SOURCE=*	DriverTypeDisplayName			0	da	Microsoft Access 2007				20200411 15:09:53
 connectivity	source\drivers\calc\calc.xcu	0	value	.Drivers.Installed.sdbc:calc:*	DriverTypeDisplayName			0	da	Regneark				20200411 15:09:53
 connectivity	source\drivers\jdbc\jdbc.xcu	0	value	.Drivers.Installed.jdbc:*	DriverTypeDisplayName			0	da	JDBC				20200411 15:09:53
 connectivity	source\drivers\jdbc\jdbc.xcu	0	value	.Drivers.Installed.jdbc:oracle:thin:*	DriverTypeDisplayName			0	da	Oracle JDBC				20200411 15:09:53
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:jdbc:*	DriverTypeDisplayName			0	da	MySQL (JDBC)				20200411 15:09:53
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:odbc:*	DriverTypeDisplayName			0	da	MySQL (ODBC)				20200411 15:09:53
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:mysqlc:*	DriverTypeDisplayName			0	da	MySQL (Native)				20200411 15:09:53
-connectivity	source\drivers\flat\flat.xcu	0	value	.Drivers.Installed.sdbc:flat:*	DriverTypeDisplayName			0	da	Tekst				20200411 15:09:53
-connectivity	source\drivers\dbase\dbase.xcu	0	value	.Drivers.Installed.sdbc:dbase:*	DriverTypeDisplayName			0	da	dBASE				20200411 15:09:53
-connectivity	source\drivers\hsqldb\hsqldb.xcu	0	value	.Drivers.Installed.sdbc:embedded:hsqldb	DriverTypeDisplayName			0	da	HSQL-databasemotor				20200411 15:09:53
-connectivity	source\drivers\odbc\odbc.xcu	0	value	.Drivers.Installed.sdbc:odbc:*	DriverTypeDisplayName			0	da	ODBC				20200411 15:09:53
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:local	DriverTypeDisplayName			0	da	Evolution lokal				20200411 15:09:53
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:ldap	DriverTypeDisplayName			0	da	Evolution LDAP				20200411 15:09:53
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:groupwise	DriverTypeDisplayName			0	da	Groupwise				20200411 15:09:53
-connectivity	source\drivers\macab\macab.xcu	0	value	.Drivers.Installed.sdbc:address:macab	DriverTypeDisplayName			0	da	Mac OS X-adressebog				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:jdbc:*	DriverTypeDisplayName			0	da	MySQL (JDBC)				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:odbc:*	DriverTypeDisplayName			0	da	MySQL (ODBC)				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:mysqlc:*	DriverTypeDisplayName			0	da	MySQL (Native)				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\flat.xcu	0	value	.Drivers.Installed.sdbc:flat:*	DriverTypeDisplayName			0	da	Tekst				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\dbase.xcu	0	value	.Drivers.Installed.sdbc:dbase:*	DriverTypeDisplayName			0	da	dBASE				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\hsqldb.xcu	0	value	.Drivers.Installed.sdbc:embedded:hsqldb	DriverTypeDisplayName			0	da	HSQL-databasemotor				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\odbc.xcu	0	value	.Drivers.Installed.sdbc:odbc:*	DriverTypeDisplayName			0	da	ODBC				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:local	DriverTypeDisplayName			0	da	Evolution lokal				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:ldap	DriverTypeDisplayName			0	da	Evolution LDAP				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:groupwise	DriverTypeDisplayName			0	da	Groupwise				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\macab.xcu	0	value	.Drivers.Installed.sdbc:address:macab	DriverTypeDisplayName			0	da	Mac OS X-adressebog				20200411 15:09:53
 connectivity	java\sdbc_jdbc\sdbc_jdbc.xcu	0	value	.Drivers.Installed.jdbc:*	DriverTypeDisplayName			0	da	JDBC				20200411 15:09:53
 connectivity	java\sdbc_jdbc\sdbc_jdbc.xcu	0	value	.Drivers.Installed.jdbc:oracle:thin:*	DriverTypeDisplayName			0	da	Oracle JDBC				20200411 15:09:53
-connectivity	java\sdbc_postgresql\sdbc_postgresql.xcu	0	value	.Drivers.Installed.sdbc:postgresql:jdbc:*	DriverTypeDisplayName			0	da	PostgreSQL				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\sdbc_postgresql.xcu	0	value	.Drivers.Installed.sdbc:postgresql:jdbc:*	DriverTypeDisplayName			0	da	PostgreSQL				20200411 15:09:53
 shell	source\win32\shlxthandler\res\shlxthdl.ulf	0	LngText	%TITLE%				0	da	Titel				20200411 15:09:53
 shell	source\win32\shlxthandler\res\shlxthdl.ulf	0	LngText	%TITLE_COLON%				0	da	Titel:				20200411 15:09:53
 shell	source\win32\shlxthandler\res\shlxthdl.ulf	0	LngText	%SUBJECT%				0	da	Emne				20200411 15:09:53
@@ -51774,20 +51774,20 @@ helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	bm_id3274636				0	da	\
 helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10544				0	da	\<link href=\"text/simpress/01/taskpanel.xhp\"\>Opgavepanel\</link\>				20200411 15:09:53
 helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10554				0	da	\<ahelp hid=\".\"\>Slår %PRODUCTNAME Impress opgavepanelet til og fra.\</ahelp\>				20200411 15:09:53
 helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10557				0	da	Opgavepanelet indeholder sider til at angive mastersider, layout, brugerdefinerede animationer og diasovergange. Klik på en anden overskrift for at åbne en anden side i Opgavepanelet.				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN105D4				0	da	\<embedvar href=\"text/simpress/guide/masterpage.xhp#masterpage\"/\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10652				0	da	\<ahelp hid=\".\" visibility=\"hidden\"\>Åbner fanebladet Mastersider, hvor du tildeler en masterside (baggrund) til alle dias (venstreklik) eller til det valgte dias (højreklik).\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN1067D				0	da	\<ahelp hid=\".\" visibility=\"hidden\"\>Lister de aktuelt anvendte mastersider.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN106A8				0	da	\<ahelp hid=\".\" visibility=\"hidden\"\>Lister de nyligt anvendte mastersider.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN106D3				0	da	\<ahelp hid=\".\" visibility=\"hidden\"\>Lister alle tilgængelig mastersider.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN106FA				0	da	\<ahelp hid=\".\" visibility=\"hidden\"\>Venstreklik for at tildele mastersiden til alle dias. Højreklik for en undermenu.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10747				0	da	\<ahelp hid=\".\" visibility=\"hidden\"\>Tildeler mastersiden til alle dias.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10762				0	da	\<ahelp hid=\".\" visibility=\"hidden\"\>Tildeler hovedsiden eller diasdesignet til de valgte dias.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10785				0	da	\<ahelp hid=\".\" visibility=\"hidden\"\>Tilpasser størrelsen for forhåndsvisning af hovedsiderne.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN107B4				0	da	\<ahelp hid=\".\" visibility=\"hidden\"\>Åbner fanebladet Layout, hvor du tildeler et diasdesign til de valgte dias.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN107CB				0	da	\<ahelp hid=\".\" visibility=\"hidden\"\>Klik for at tildele et diasdesign til alle valgte dias. Højreklik for en undermenu.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN1080E				0	da	\<ahelp hid=\".\" visibility=\"hidden\"\>Åbner fanebladet Brugerdefineret animation, hvor du tildeler effekter til de valgte objekter på et dias.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10839				0	da	\<ahelp hid=\".\" visibility=\"hidden\"\>Åbner fanebladet Diasovergang, hvor du tildeler overgangseffekter til de valgte dias.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_id0916200812240344				0	da	\<ahelp hid=\".\" visibility=\"hidden\"\>Åbner Tabeldesign. Dobbeltklik en forhåndsvisning for at indsætte en ny tabel.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN105D4				0	da	\<embedvar href=\"text/simpress/guide/masterpage.xhp#masterpage\"/\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10652				0	da	\<ahelp hid=\".\" visibility=\"hidden\"\>Åbner fanebladet Mastersider, hvor du tildeler en masterside (baggrund) til alle dias (venstreklik) eller til det valgte dias (højreklik).\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1067D				0	da	\<ahelp hid=\".\" visibility=\"hidden\"\>Lister de aktuelt anvendte mastersider.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106A8				0	da	\<ahelp hid=\".\" visibility=\"hidden\"\>Lister de nyligt anvendte mastersider.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106D3				0	da	\<ahelp hid=\".\" visibility=\"hidden\"\>Lister alle tilgængelig mastersider.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106FA				0	da	\<ahelp hid=\".\" visibility=\"hidden\"\>Venstreklik for at tildele mastersiden til alle dias. Højreklik for en undermenu.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10747				0	da	\<ahelp hid=\".\" visibility=\"hidden\"\>Tildeler mastersiden til alle dias.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10762				0	da	\<ahelp hid=\".\" visibility=\"hidden\"\>Tildeler hovedsiden eller diasdesignet til de valgte dias.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10785				0	da	\<ahelp hid=\".\" visibility=\"hidden\"\>Tilpasser størrelsen for forhåndsvisning af hovedsiderne.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107B4				0	da	\<ahelp hid=\".\" visibility=\"hidden\"\>Åbner fanebladet Layout, hvor du tildeler et diasdesign til de valgte dias.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107CB				0	da	\<ahelp hid=\".\" visibility=\"hidden\"\>Klik for at tildele et diasdesign til alle valgte dias. Højreklik for en undermenu.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1080E				0	da	\<ahelp hid=\".\" visibility=\"hidden\"\>Åbner fanebladet Brugerdefineret animation, hvor du tildeler effekter til de valgte objekter på et dias.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10839				0	da	\<ahelp hid=\".\" visibility=\"hidden\"\>Åbner fanebladet Diasovergang, hvor du tildeler overgangseffekter til de valgte dias.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_id0916200812240344				0	da	\<ahelp hid=\".\" visibility=\"hidden\"\>Åbner Tabeldesign. Dobbeltklik en forhåndsvisning for at indsætte en ny tabel.\</ahelp\>				20200411 15:09:53
 helpcontent2	source\text\simpress\01\05110500m.xhp	0	help	tit				0	da	Slet				20200411 15:09:53
 helpcontent2	source\text\simpress\01\05110500m.xhp	0	help	hd_id3149502				0	da	\<link href=\"text/simpress/01/05110500m.xhp\" name=\"Slet\"\>Slet\</link\>				20200411 15:09:53
 helpcontent2	source\text\simpress\01\05110500m.xhp	0	help	par_id3149050				0	da	\<variable id=\"loeschentext\"\>\<ahelp hid=\".uno:DeleteRows\"\>Sletter den markerede række(s) fra tabellen.\</ahelp\>\</variable\>				20200411 15:09:53
@@ -72926,16 +72926,3 @@ padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_TXT			14
 padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_USER_TXT			60	da	~Bruger				20200411 15:09:53
 padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_PASS_TXT			60	da	~Adgangskode				20200411 15:09:53
 padmin	source\rtsetup.src	0	modaldialog	RID_RTS_PWDIALOG				150	da	Anmodning om godkendelse				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10652				0	da	\<ahelp hid=\".\" visibility=\"hidden\"\>Åbner fanebladet Mastersider, hvor du tildeler en masterside (baggrund) til alle dias (venstreklik) eller til det valgte dias (højreklik).\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1067D				0	da	\<ahelp hid=\".\" visibility=\"hidden\"\>Lister de aktuelt anvendte mastersider.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106A8				0	da	\<ahelp hid=\".\" visibility=\"hidden\"\>Lister de nyligt anvendte mastersider.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106D3				0	da	\<ahelp hid=\".\" visibility=\"hidden\"\>Lister alle tilgængelig mastersider.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106FA				0	da	\<ahelp hid=\".\" visibility=\"hidden\"\>Venstreklik for at tildele mastersiden til alle dias. Højreklik for en undermenu.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10747				0	da	\<ahelp hid=\".\" visibility=\"hidden\"\>Tildeler mastersiden til alle dias.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10762				0	da	\<ahelp hid=\".\" visibility=\"hidden\"\>Tildeler hovedsiden eller diasdesignet til de valgte dias.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10785				0	da	\<ahelp hid=\".\" visibility=\"hidden\"\>Tilpasser størrelsen for forhåndsvisning af hovedsiderne.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107B4				0	da	\<ahelp hid=\".\" visibility=\"hidden\"\>Åbner fanebladet Layout, hvor du tildeler et diasdesign til de valgte dias.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107CB				0	da	\<ahelp hid=\".\" visibility=\"hidden\"\>Klik for at tildele et diasdesign til alle valgte dias. Højreklik for en undermenu.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1080E				0	da	\<ahelp hid=\".\" visibility=\"hidden\"\>Åbner fanebladet Brugerdefineret animation, hvor du tildeler effekter til de valgte objekter på et dias.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10839				0	da	\<ahelp hid=\".\" visibility=\"hidden\"\>Åbner fanebladet Diasovergang, hvor du tildeler overgangseffekter til de valgte dias.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_id0916200812240344				0	da	\<ahelp hid=\".\" visibility=\"hidden\"\>Åbner Tabeldesign. Dobbeltklik en forhåndsvisning for at indsætte en ny tabel.\</ahelp\>				20200411 15:09:53

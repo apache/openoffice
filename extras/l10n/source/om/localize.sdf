@@ -22354,27 +22354,27 @@ connectivity	source\resource\conn_error_message.src	0	string	256 + 2*303 + 0				
 connectivity	source\resource\conn_error_message.src	0	string	256 + 2*304 + 0				0	om	Kuusdeetaa kanatti walindhaa homtuu hin jiru.				20200411 15:09:53
 connectivity	source\resource\conn_error_message.src	0	string	256 + 2*500 + 0				0	om	$1$ hin jiru. exists.				20200411 15:09:53
 connectivity	source\resource\conn_error_message.src	0	string	256 + 2*550 + 0				0	om	Qabeentaa gabatee guutuu agarsiisuu hin dandeenye. Mee gingilchaa fayyadami.				20200411 15:09:53
-connectivity	source\drivers\adabas\adabas.xcu	0	value	.Drivers.Installed.sdbc:adabas:*	DriverTypeDisplayName			0	om	D Adabasii				20200411 15:09:53
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:*	DriverTypeDisplayName			0	om	ADO				20200411 15:09:53
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:PROVIDER=Microsoft.Jet.OLEDB.4.0;DATA SOURCE=*	DriverTypeDisplayName			0	om	Akseesii Maayikroosoftii				20200411 15:09:53
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:Provider=Microsoft.ACE.OLEDB.12.0;DATA SOURCE=*	DriverTypeDisplayName			0	om	Akseesii Maayikroosoftii 2007				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\adabas.xcu	0	value	.Drivers.Installed.sdbc:adabas:*	DriverTypeDisplayName			0	om	D Adabasii				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:*	DriverTypeDisplayName			0	om	ADO				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:PROVIDER=Microsoft.Jet.OLEDB.4.0;DATA SOURCE=*	DriverTypeDisplayName			0	om	Akseesii Maayikroosoftii				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:Provider=Microsoft.ACE.OLEDB.12.0;DATA SOURCE=*	DriverTypeDisplayName			0	om	Akseesii Maayikroosoftii 2007				20200411 15:09:53
 connectivity	source\drivers\calc\calc.xcu	0	value	.Drivers.Installed.sdbc:calc:*	DriverTypeDisplayName			0	om	Wardii				20200411 15:09:53
 connectivity	source\drivers\jdbc\jdbc.xcu	0	value	.Drivers.Installed.jdbc:*	DriverTypeDisplayName			0	om	JDBC				20200411 15:09:53
 connectivity	source\drivers\jdbc\jdbc.xcu	0	value	.Drivers.Installed.jdbc:oracle:thin:*	DriverTypeDisplayName			0	om	Oracle JDBC				20200411 15:09:53
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:jdbc:*	DriverTypeDisplayName			0	om	MySQL (JDBC)				20200411 15:09:53
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:odbc:*	DriverTypeDisplayName			0	om	MySQL (ODBC)				20200411 15:09:53
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:mysqlc:*	DriverTypeDisplayName			0	om	MySQL (Dhalootaa)				20200411 15:09:53
-connectivity	source\drivers\flat\flat.xcu	0	value	.Drivers.Installed.sdbc:flat:*	DriverTypeDisplayName			0	om	Barruu				20200411 15:09:53
-connectivity	source\drivers\dbase\dbase.xcu	0	value	.Drivers.Installed.sdbc:dbase:*	DriverTypeDisplayName			0	om	dBASE				20200411 15:09:53
-connectivity	source\drivers\hsqldb\hsqldb.xcu	0	value	.Drivers.Installed.sdbc:embedded:hsqldb	DriverTypeDisplayName			0	om	Mala kuusdeetaa HSQL				20200411 15:09:53
-connectivity	source\drivers\odbc\odbc.xcu	0	value	.Drivers.Installed.sdbc:odbc:*	DriverTypeDisplayName			0	om	ODBC				20200411 15:09:53
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:local	DriverTypeDisplayName			0	om	Naannoo Jijjirama Suutawaa				20200411 15:09:53
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:ldap	DriverTypeDisplayName			0	om	Jijjirama Suutawaa LDAP				20200411 15:09:53
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:groupwise	DriverTypeDisplayName			0	om	Gareedhaan				20200411 15:09:53
-connectivity	source\drivers\macab\macab.xcu	0	value	.Drivers.Installed.sdbc:address:macab	DriverTypeDisplayName			0	om	Yaadannoo Teessoo Mac OS X				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:jdbc:*	DriverTypeDisplayName			0	om	MySQL (JDBC)				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:odbc:*	DriverTypeDisplayName			0	om	MySQL (ODBC)				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:mysqlc:*	DriverTypeDisplayName			0	om	MySQL (Dhalootaa)				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\flat.xcu	0	value	.Drivers.Installed.sdbc:flat:*	DriverTypeDisplayName			0	om	Barruu				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\dbase.xcu	0	value	.Drivers.Installed.sdbc:dbase:*	DriverTypeDisplayName			0	om	dBASE				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\hsqldb.xcu	0	value	.Drivers.Installed.sdbc:embedded:hsqldb	DriverTypeDisplayName			0	om	Mala kuusdeetaa HSQL				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\odbc.xcu	0	value	.Drivers.Installed.sdbc:odbc:*	DriverTypeDisplayName			0	om	ODBC				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:local	DriverTypeDisplayName			0	om	Naannoo Jijjirama Suutawaa				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:ldap	DriverTypeDisplayName			0	om	Jijjirama Suutawaa LDAP				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:groupwise	DriverTypeDisplayName			0	om	Gareedhaan				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\macab.xcu	0	value	.Drivers.Installed.sdbc:address:macab	DriverTypeDisplayName			0	om	Yaadannoo Teessoo Mac OS X				20200411 15:09:53
 connectivity	java\sdbc_jdbc\sdbc_jdbc.xcu	0	value	.Drivers.Installed.jdbc:*	DriverTypeDisplayName			0	om	JDBC				20200411 15:09:53
 connectivity	java\sdbc_jdbc\sdbc_jdbc.xcu	0	value	.Drivers.Installed.jdbc:oracle:thin:*	DriverTypeDisplayName			0	om	Oracle JDBC				20200411 15:09:53
-connectivity	java\sdbc_postgresql\sdbc_postgresql.xcu	0	value	.Drivers.Installed.sdbc:postgresql:jdbc:*	DriverTypeDisplayName			0	om	PostgreSQL				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\sdbc_postgresql.xcu	0	value	.Drivers.Installed.sdbc:postgresql:jdbc:*	DriverTypeDisplayName			0	om	PostgreSQL				20200411 15:09:53
 shell	source\win32\shlxthandler\res\shlxthdl.ulf	0	LngText	%TITLE%				0	om	Mataduree				20200411 15:09:53
 shell	source\win32\shlxthandler\res\shlxthdl.ulf	0	LngText	%TITLE_COLON%				0	om	Mataduree:				20200411 15:09:53
 shell	source\win32\shlxthandler\res\shlxthdl.ulf	0	LngText	%SUBJECT%				0	om	Dhimma				20200411 15:09:53
@@ -51792,20 +51792,20 @@ helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	bm_id3274636				0	om	\
 helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10544				0	om	\<link href=\"text/simpress/01/taskpanel.xhp\"\>Heerata hojii\</link\>				20200411 15:09:53
 helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10554				0	om	\<ahelp hid=\".\"\>Heerata hojii Impressii %PRODUCTNAME cufa yookiin bana.\</ahelp\>				20200411 15:09:53
 helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10557				0	om	Heeratni hojii hundata fuuloota, tessuumoota, sochii fakkinaa maamiloo fi islayidii ce`uumsaa murtessuuf fuulota qabaata. Fuula biroo banuuf irrantoo biraa cuqaasi.				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN105D4				0	om	\<embedvar href=\"text/simpress/guide/masterpage.xhp#masterpage\"/\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10652				0	om	\<ahelp hid=\".\" visibility=\"hidden\"\>Iddoo hundata fulaa (duubbee)islaayidoota hundaaf fayyadamtuttii (cuqaassii - bitaa) ykn islaayidoota filatamanittii (cuqaasii-mirga)hundata fuuloota caancala fulaa bana.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN1067D				0	om	\<ahelp hid=\".\" visibility=\"hidden\"\>Hundata fuloota amma ittii fayyadamman tarressa.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN106A8				0	om	\<ahelp hid=\".\" visibility=\"hidden\"\>Hundata fuloota amma ittii fayyadaman tarressa.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN106D3				0	om	\<ahelp hid=\".\" visibility=\"hidden\"\>Hundata fuuloota jiran hunda tarressa.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN106FA				0	om	\<ahelp hid=\".\" visibility=\"hidden\"\>Hundaticha fuula islayidoota hundaaf fayyadamuuf bitaa-cuqaasii. Citaa baafataaf mirgaa cuqaasii.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10747				0	om	\<ahelp hid=\".\" visibility=\"hidden\"\>Hundatiicha fuula islaayidotaa hundaaf fayyadammii.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10762				0	om	\<ahelp hid=\".\" visibility=\"hidden\"\>Hundatiicha islayidii ykn saxaxxii islaayidii islaayidoota filatamaniif fayyadamaa.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10785				0	om	\<ahelp hid=\".\" visibility=\"hidden\"\>Hagamtaa durargii hundatichaa fuulota jijjira.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN107B4				0	om	\<ahelp hid=\".\" visibility=\"hidden\"\>Iddoo saxaxxii islaayidii islaayidichaa ykn islaayidoota filatamanii fi ittifayadamtuttii kessuuma cancala fulaa bana .\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN107CB				0	om	\<ahelp hid=\".\" visibility=\"hidden\"\>Islaayidoota filataman hundaaf saxaxxii islaayiddii cuqaasii.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN1080E				0	om	\<ahelp hid=\".\" visibility=\"hidden\"\>Iddoo galtee wantoota filataman ittii fayyadamtettii, caancala fuula sochii fakkinaa maamilichaa bana.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10839				0	om	\<ahelp hid=\".\" visibility=\"hidden\"\>Iddoo galtewwan ce`uumsa islaayidotaa filattamniif itti fayyadamtuttii cancala fuula islaayidii ce`uumsaa bana.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_id0916200812240344				0	om	\<ahelp hid=\".\" visibility=\"hidden\"\>Saxaaxxi Gabatee bana. Gabatee haaraa saaguuf durargii lamcuqaasi.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN105D4				0	om	\<embedvar href=\"text/simpress/guide/masterpage.xhp#masterpage\"/\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10652				0	om	\<ahelp hid=\".\" visibility=\"hidden\"\>Iddoo hundata fulaa (duubbee)islaayidoota hundaaf fayyadamtuttii (cuqaassii - bitaa) ykn islaayidoota filatamanittii (cuqaasii-mirga)hundata fuuloota caancala fulaa bana.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1067D				0	om	\<ahelp hid=\".\" visibility=\"hidden\"\>Hundata fuloota amma ittii fayyadamman tarressa.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106A8				0	om	\<ahelp hid=\".\" visibility=\"hidden\"\>Hundata fuloota amma ittii fayyadaman tarressa.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106D3				0	om	\<ahelp hid=\".\" visibility=\"hidden\"\>Hundata fuuloota jiran hunda tarressa.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106FA				0	om	\<ahelp hid=\".\" visibility=\"hidden\"\>Hundaticha fuula islayidoota hundaaf fayyadamuuf bitaa-cuqaasii. Citaa baafataaf mirgaa cuqaasii.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10747				0	om	\<ahelp hid=\".\" visibility=\"hidden\"\>Hundatiicha fuula islaayidotaa hundaaf fayyadammii.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10762				0	om	\<ahelp hid=\".\" visibility=\"hidden\"\>Hundatiicha islayidii ykn saxaxxii islaayidii islaayidoota filatamaniif fayyadamaa.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10785				0	om	\<ahelp hid=\".\" visibility=\"hidden\"\>Hagamtaa durargii hundatichaa fuulota jijjira.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107B4				0	om	\<ahelp hid=\".\" visibility=\"hidden\"\>Iddoo saxaxxii islaayidii islaayidichaa ykn islaayidoota filatamanii fi ittifayadamtuttii kessuuma cancala fulaa bana .\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107CB				0	om	\<ahelp hid=\".\" visibility=\"hidden\"\>Islaayidoota filataman hundaaf saxaxxii islaayiddii cuqaasii.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1080E				0	om	\<ahelp hid=\".\" visibility=\"hidden\"\>Iddoo galtee wantoota filataman ittii fayyadamtettii, caancala fuula sochii fakkinaa maamilichaa bana.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10839				0	om	\<ahelp hid=\".\" visibility=\"hidden\"\>Iddoo galtewwan ce`uumsa islaayidotaa filattamniif itti fayyadamtuttii cancala fuula islaayidii ce`uumsaa bana.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_id0916200812240344				0	om	\<ahelp hid=\".\" visibility=\"hidden\"\>Saxaaxxi Gabatee bana. Gabatee haaraa saaguuf durargii lamcuqaasi.\</ahelp\>				20200411 15:09:53
 helpcontent2	source\text\simpress\01\05110500m.xhp	0	help	tit				0	om	Haqi				20200411 15:09:53
 helpcontent2	source\text\simpress\01\05110500m.xhp	0	help	hd_id3149502				0	om	\<link href=\"text/simpress/01/05110500m.xhp\" name=\"Delete\"\>Haqi\</link\>				20200411 15:09:53
 helpcontent2	source\text\simpress\01\05110500m.xhp	0	help	par_id3149050				0	om	\<variable id=\"loeschentext\"\>\<ahelp hid=\".uno:DeleteRows\"\>Gabaticha irraa tarree(wwan) filataman haqa.\</ahelp\>\</variable\>				20200411 15:09:53
@@ -72944,16 +72944,3 @@ padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_TXT			14
 padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_USER_TXT			60	om	Fayyadamaa				20200411 15:09:53
 padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_PASS_TXT			60	om	Iggitaa				20200411 15:09:53
 padmin	source\rtsetup.src	0	modaldialog	RID_RTS_PWDIALOG				150	om	Gaafii dhugoomsaa				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10652				0	om	\<ahelp hid=\".\" visibility=\"hidden\"\>Iddoo hundata fulaa (duubbee)islaayidoota hundaaf fayyadamtuttii (cuqaassii - bitaa) ykn islaayidoota filatamanittii (cuqaasii-mirga)hundata fuuloota caancala fulaa bana.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1067D				0	om	\<ahelp hid=\".\" visibility=\"hidden\"\>Hundata fuloota amma ittii fayyadamman tarressa.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106A8				0	om	\<ahelp hid=\".\" visibility=\"hidden\"\>Hundata fuloota amma ittii fayyadaman tarressa.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106D3				0	om	\<ahelp hid=\".\" visibility=\"hidden\"\>Hundata fuuloota jiran hunda tarressa.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106FA				0	om	\<ahelp hid=\".\" visibility=\"hidden\"\>Hundaticha fuula islayidoota hundaaf fayyadamuuf bitaa-cuqaasii. Citaa baafataaf mirgaa cuqaasii.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10747				0	om	\<ahelp hid=\".\" visibility=\"hidden\"\>Hundatiicha fuula islaayidotaa hundaaf fayyadammii.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10762				0	om	\<ahelp hid=\".\" visibility=\"hidden\"\>Hundatiicha islayidii ykn saxaxxii islaayidii islaayidoota filatamaniif fayyadamaa.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10785				0	om	\<ahelp hid=\".\" visibility=\"hidden\"\>Hagamtaa durargii hundatichaa fuulota jijjira.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107B4				0	om	\<ahelp hid=\".\" visibility=\"hidden\"\>Iddoo saxaxxii islaayidii islaayidichaa ykn islaayidoota filatamanii fi ittifayadamtuttii kessuuma cancala fulaa bana .\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107CB				0	om	\<ahelp hid=\".\" visibility=\"hidden\"\>Islaayidoota filataman hundaaf saxaxxii islaayiddii cuqaasii.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1080E				0	om	\<ahelp hid=\".\" visibility=\"hidden\"\>Iddoo galtee wantoota filataman ittii fayyadamtettii, caancala fuula sochii fakkinaa maamilichaa bana.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10839				0	om	\<ahelp hid=\".\" visibility=\"hidden\"\>Iddoo galtewwan ce`uumsa islaayidotaa filattamniif itti fayyadamtuttii cancala fuula islaayidii ce`uumsaa bana.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_id0916200812240344				0	om	\<ahelp hid=\".\" visibility=\"hidden\"\>Saxaaxxi Gabatee bana. Gabatee haaraa saaguuf durargii lamcuqaasi.\</ahelp\>				20200411 15:09:53

@@ -22355,27 +22355,27 @@ connectivity	source\resource\conn_error_message.src	0	string	256 + 2*303 + 0				
 connectivity	source\resource\conn_error_message.src	0	string	256 + 2*304 + 0				0	cs	Neexistuje spojení s databází.				20200411 15:09:53
 connectivity	source\resource\conn_error_message.src	0	string	256 + 2*500 + 0				0	cs	Neexistuje $1$.				20200411 15:09:53
 connectivity	source\resource\conn_error_message.src	0	string	256 + 2*550 + 0				0	cs	Nelze zobrazit kompletní obsah tabulky. Použijte filtr, prosím.				20200411 15:09:53
-connectivity	source\drivers\adabas\adabas.xcu	0	value	.Drivers.Installed.sdbc:adabas:*	DriverTypeDisplayName			0	cs	Adabas D				20200411 15:09:53
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:*	DriverTypeDisplayName			0	cs	ADO				20200411 15:09:53
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:PROVIDER=Microsoft.Jet.OLEDB.4.0;DATA SOURCE=*	DriverTypeDisplayName			0	cs	Microsoft Access				20200411 15:09:53
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:Provider=Microsoft.ACE.OLEDB.12.0;DATA SOURCE=*	DriverTypeDisplayName			0	cs	Microsoft Access 2007				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\adabas.xcu	0	value	.Drivers.Installed.sdbc:adabas:*	DriverTypeDisplayName			0	cs	Adabas D				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:*	DriverTypeDisplayName			0	cs	ADO				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:PROVIDER=Microsoft.Jet.OLEDB.4.0;DATA SOURCE=*	DriverTypeDisplayName			0	cs	Microsoft Access				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:Provider=Microsoft.ACE.OLEDB.12.0;DATA SOURCE=*	DriverTypeDisplayName			0	cs	Microsoft Access 2007				20200411 15:09:53
 connectivity	source\drivers\calc\calc.xcu	0	value	.Drivers.Installed.sdbc:calc:*	DriverTypeDisplayName			0	cs	Sešit				20200411 15:09:53
 connectivity	source\drivers\jdbc\jdbc.xcu	0	value	.Drivers.Installed.jdbc:*	DriverTypeDisplayName			0	cs	JDBC				20200411 15:09:53
 connectivity	source\drivers\jdbc\jdbc.xcu	0	value	.Drivers.Installed.jdbc:oracle:thin:*	DriverTypeDisplayName			0	cs	Oracle JDBC				20200411 15:09:53
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:jdbc:*	DriverTypeDisplayName			0	cs	MySQL (JDBC)				20200411 15:09:53
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:odbc:*	DriverTypeDisplayName			0	cs	MySQL (ODBC)				20200411 15:09:53
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:mysqlc:*	DriverTypeDisplayName			0	cs	MySQL (nativní)				20200411 15:09:53
-connectivity	source\drivers\flat\flat.xcu	0	value	.Drivers.Installed.sdbc:flat:*	DriverTypeDisplayName			0	cs	Text				20200411 15:09:53
-connectivity	source\drivers\dbase\dbase.xcu	0	value	.Drivers.Installed.sdbc:dbase:*	DriverTypeDisplayName			0	cs	dBASE				20200411 15:09:53
-connectivity	source\drivers\hsqldb\hsqldb.xcu	0	value	.Drivers.Installed.sdbc:embedded:hsqldb	DriverTypeDisplayName			0	cs	Databáze HSQL				20200411 15:09:53
-connectivity	source\drivers\odbc\odbc.xcu	0	value	.Drivers.Installed.sdbc:odbc:*	DriverTypeDisplayName			0	cs	ODBC				20200411 15:09:53
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:local	DriverTypeDisplayName			0	cs	Místní Evolution				20200411 15:09:53
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:ldap	DriverTypeDisplayName			0	cs	Evolution LDAP				20200411 15:09:53
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:groupwise	DriverTypeDisplayName			0	cs	Groupwise				20200411 15:09:53
-connectivity	source\drivers\macab\macab.xcu	0	value	.Drivers.Installed.sdbc:address:macab	DriverTypeDisplayName			0	cs	Databáze kontaktů Mac OS X				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:jdbc:*	DriverTypeDisplayName			0	cs	MySQL (JDBC)				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:odbc:*	DriverTypeDisplayName			0	cs	MySQL (ODBC)				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:mysqlc:*	DriverTypeDisplayName			0	cs	MySQL (nativní)				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\flat.xcu	0	value	.Drivers.Installed.sdbc:flat:*	DriverTypeDisplayName			0	cs	Text				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\dbase.xcu	0	value	.Drivers.Installed.sdbc:dbase:*	DriverTypeDisplayName			0	cs	dBASE				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\hsqldb.xcu	0	value	.Drivers.Installed.sdbc:embedded:hsqldb	DriverTypeDisplayName			0	cs	Databáze HSQL				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\odbc.xcu	0	value	.Drivers.Installed.sdbc:odbc:*	DriverTypeDisplayName			0	cs	ODBC				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:local	DriverTypeDisplayName			0	cs	Místní Evolution				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:ldap	DriverTypeDisplayName			0	cs	Evolution LDAP				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:groupwise	DriverTypeDisplayName			0	cs	Groupwise				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\macab.xcu	0	value	.Drivers.Installed.sdbc:address:macab	DriverTypeDisplayName			0	cs	Databáze kontaktů Mac OS X				20200411 15:09:53
 connectivity	java\sdbc_jdbc\sdbc_jdbc.xcu	0	value	.Drivers.Installed.jdbc:*	DriverTypeDisplayName			0	cs	JDBC				20200411 15:09:53
 connectivity	java\sdbc_jdbc\sdbc_jdbc.xcu	0	value	.Drivers.Installed.jdbc:oracle:thin:*	DriverTypeDisplayName			0	cs	Oracle JDBC				20200411 15:09:53
-connectivity	java\sdbc_postgresql\sdbc_postgresql.xcu	0	value	.Drivers.Installed.sdbc:postgresql:jdbc:*	DriverTypeDisplayName			0	cs	PostgreSQL				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\sdbc_postgresql.xcu	0	value	.Drivers.Installed.sdbc:postgresql:jdbc:*	DriverTypeDisplayName			0	cs	PostgreSQL				20200411 15:09:53
 shell	source\win32\shlxthandler\res\shlxthdl.ulf	0	LngText	%TITLE%				0	cs	Titulek				20200411 15:09:53
 shell	source\win32\shlxthandler\res\shlxthdl.ulf	0	LngText	%TITLE_COLON%				0	cs	Název:				20200411 15:09:53
 shell	source\win32\shlxthandler\res\shlxthdl.ulf	0	LngText	%SUBJECT%				0	cs	Předmět				20200411 15:09:53
@@ -51794,20 +51794,20 @@ helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	bm_id3274636				0	cs	\
 helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10544				0	cs	\<link href=\"text/simpress/01/taskpanel.xhp\"\>Panel úloh\</link\>				20200411 15:09:53
 helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10554				0	cs	\<ahelp hid=\".\"\>Zobrazí nebo skryje panel úloh %PRODUCTNAME Impress.\</ahelp\>				20200411 15:09:53
 helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10557				0	cs	Panel úloh umožňuje rychlé procházení mezi volbami pro předlohy stránek, rozvržení snímků, vlastních animací a přechody mezi snímky. Klepněte na nadpis stránky s volbami pro jejich rozvinutí				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN105D4				0	cs	\<embedvar href=\"text/simpress/guide/masterpage.xhp#masterpage\"/\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10652				0	cs	\<ahelp hid=\".\" visibility=\"hidden\"\>Otevře předlohu stránky, kde vyberete zda jí chcete použít celou, nebo jen pozadí, na všechny snímky (klepnutím levého tlačítka) nebo jen na vybrané snímky (klepnutím pravého tlačítka).\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN1067D				0	cs	\<ahelp hid=\".\" visibility=\"hidden\"\>Zobrazí předlohy stránek použité v této prezentaci.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN106A8				0	cs	\<ahelp hid=\".\" visibility=\"hidden\"\>Zobrazí naposledy použité předlohy stránek.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN106D3				0	cs	\<ahelp hid=\".\" visibility=\"hidden\"\>Zobrazí všechny dostupné předlohy stránek.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN106FA				0	cs	\<ahelp hid=\".\" visibility=\"hidden\"\>Klepněte levým tlačítkem pro použití předlohy stránky na všechny snímky, pravým tlačítkem vyvoláte místní nabídku.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10747				0	cs	\<ahelp hid=\".\" visibility=\"hidden\"\>Použije předlohu stránky na všechny snímky.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10762				0	cs	\<ahelp hid=\".\" visibility=\"hidden\"\>Použije předlohu stránky nebo rozvržení jen na vybrané snímky.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10785				0	cs	\<ahelp hid=\".\" visibility=\"hidden\"\>Upraví velikost náhledu předlohy stránky.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN107B4				0	cs	\<ahelp hid=\".\" visibility=\"hidden\"\>Otevře záložku rozvržení, kde aplikujte rozvržení na vybrané snímky nebo stránky.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN107CB				0	cs	\<ahelp hid=\".\" visibility=\"hidden\"\>Klepněte pro použití rozvržení snímku na vybrané snímky, pravým tlačítkem vyvoláte místní nabídku.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN1080E				0	cs	\<ahelp hid=\".\" visibility=\"hidden\"\>Otevře panel vlastních animací, kde můžete aplikovat efekty na vybrané snímky.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10839				0	cs	\<ahelp hid=\".\" visibility=\"hidden\"\>Otevře panel přechodů mezi snímky, kde je můžete aplikovat na vybrané snímky.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_id0916200812240344				0	cs	\<ahelp hid=\".\" visibility=\"hidden\"\>Otevře dialog Návrh tabulky. Poklepáním na náhled vložíte novou tabulku.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN105D4				0	cs	\<embedvar href=\"text/simpress/guide/masterpage.xhp#masterpage\"/\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10652				0	cs	\<ahelp hid=\".\" visibility=\"hidden\"\>Otevře předlohu stránky, kde vyberete zda jí chcete použít celou, nebo jen pozadí, na všechny snímky (klepnutím levého tlačítka) nebo jen na vybrané snímky (klepnutím pravého tlačítka).\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1067D				0	cs	\<ahelp hid=\".\" visibility=\"hidden\"\>Zobrazí předlohy stránek použité v této prezentaci.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106A8				0	cs	\<ahelp hid=\".\" visibility=\"hidden\"\>Zobrazí naposledy použité předlohy stránek.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106D3				0	cs	\<ahelp hid=\".\" visibility=\"hidden\"\>Zobrazí všechny dostupné předlohy stránek.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106FA				0	cs	\<ahelp hid=\".\" visibility=\"hidden\"\>Klepněte levým tlačítkem pro použití předlohy stránky na všechny snímky, pravým tlačítkem vyvoláte místní nabídku.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10747				0	cs	\<ahelp hid=\".\" visibility=\"hidden\"\>Použije předlohu stránky na všechny snímky.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10762				0	cs	\<ahelp hid=\".\" visibility=\"hidden\"\>Použije předlohu stránky nebo rozvržení jen na vybrané snímky.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10785				0	cs	\<ahelp hid=\".\" visibility=\"hidden\"\>Upraví velikost náhledu předlohy stránky.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107B4				0	cs	\<ahelp hid=\".\" visibility=\"hidden\"\>Otevře záložku rozvržení, kde aplikujte rozvržení na vybrané snímky nebo stránky.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107CB				0	cs	\<ahelp hid=\".\" visibility=\"hidden\"\>Klepněte pro použití rozvržení snímku na vybrané snímky, pravým tlačítkem vyvoláte místní nabídku.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1080E				0	cs	\<ahelp hid=\".\" visibility=\"hidden\"\>Otevře panel vlastních animací, kde můžete aplikovat efekty na vybrané snímky.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10839				0	cs	\<ahelp hid=\".\" visibility=\"hidden\"\>Otevře panel přechodů mezi snímky, kde je můžete aplikovat na vybrané snímky.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_id0916200812240344				0	cs	\<ahelp hid=\".\" visibility=\"hidden\"\>Otevře dialog Návrh tabulky. Poklepáním na náhled vložíte novou tabulku.\</ahelp\>				20200411 15:09:53
 helpcontent2	source\text\simpress\01\05110500m.xhp	0	help	tit				0	cs	Odstranit				20200411 15:09:53
 helpcontent2	source\text\simpress\01\05110500m.xhp	0	help	hd_id3149502				0	cs	\<link href=\"text/simpress/01/05110500m.xhp\" name=\"Odstranit\"\>Odstranit\</link\>				20200411 15:09:53
 helpcontent2	source\text\simpress\01\05110500m.xhp	0	help	par_id3149050				0	cs	\<variable id=\"loeschentext\"\>\<ahelp hid=\".uno:DeleteRows\"\>Odebere označený řádek či řádky z tabulky.\</ahelp\>\</variable\>				20200411 15:09:53
@@ -72946,16 +72946,3 @@ padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_TXT			14
 padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_USER_TXT			60	cs	Uživatel				20200411 15:09:53
 padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_PASS_TXT			60	cs	Heslo				20200411 15:09:53
 padmin	source\rtsetup.src	0	modaldialog	RID_RTS_PWDIALOG				150	cs	Požadavek na autentizaci				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10652				0	cs	\<ahelp hid=\".\" visibility=\"hidden\"\>Otevře předlohu stránky, kde vyberete zda jí chcete použít celou, nebo jen pozadí, na všechny snímky (klepnutím levého tlačítka) nebo jen na vybrané snímky (klepnutím pravého tlačítka).\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1067D				0	cs	\<ahelp hid=\".\" visibility=\"hidden\"\>Zobrazí předlohy stránek použité v této prezentaci.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106A8				0	cs	\<ahelp hid=\".\" visibility=\"hidden\"\>Zobrazí naposledy použité předlohy stránek.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106D3				0	cs	\<ahelp hid=\".\" visibility=\"hidden\"\>Zobrazí všechny dostupné předlohy stránek.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106FA				0	cs	\<ahelp hid=\".\" visibility=\"hidden\"\>Klepněte levým tlačítkem pro použití předlohy stránky na všechny snímky, pravým tlačítkem vyvoláte místní nabídku.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10747				0	cs	\<ahelp hid=\".\" visibility=\"hidden\"\>Použije předlohu stránky na všechny snímky.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10762				0	cs	\<ahelp hid=\".\" visibility=\"hidden\"\>Použije předlohu stránky nebo rozvržení jen na vybrané snímky.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10785				0	cs	\<ahelp hid=\".\" visibility=\"hidden\"\>Upraví velikost náhledu předlohy stránky.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107B4				0	cs	\<ahelp hid=\".\" visibility=\"hidden\"\>Otevře záložku rozvržení, kde aplikujte rozvržení na vybrané snímky nebo stránky.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107CB				0	cs	\<ahelp hid=\".\" visibility=\"hidden\"\>Klepněte pro použití rozvržení snímku na vybrané snímky, pravým tlačítkem vyvoláte místní nabídku.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1080E				0	cs	\<ahelp hid=\".\" visibility=\"hidden\"\>Otevře panel vlastních animací, kde můžete aplikovat efekty na vybrané snímky.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10839				0	cs	\<ahelp hid=\".\" visibility=\"hidden\"\>Otevře panel přechodů mezi snímky, kde je můžete aplikovat na vybrané snímky.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_id0916200812240344				0	cs	\<ahelp hid=\".\" visibility=\"hidden\"\>Otevře dialog Návrh tabulky. Poklepáním na náhled vložíte novou tabulku.\</ahelp\>				20200411 15:09:53

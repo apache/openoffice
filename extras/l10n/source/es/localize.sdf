@@ -22355,27 +22355,27 @@ connectivity	source\resource\conn_error_message.src	0	string	256 + 2*303 + 0				
 connectivity	source\resource\conn_error_message.src	0	string	256 + 2*304 + 0				0	es	No hay conexión a la base de datos.				20200411 15:09:53
 connectivity	source\resource\conn_error_message.src	0	string	256 + 2*500 + 0				0	es	No existe $1$.				20200411 15:09:53
 connectivity	source\resource\conn_error_message.src	0	string	256 + 2*550 + 0				0	es	No se puede mostrar el contenido completo de la tabla. Por favor aplique un filtro.				20200411 15:09:53
-connectivity	source\drivers\adabas\adabas.xcu	0	value	.Drivers.Installed.sdbc:adabas:*	DriverTypeDisplayName			0	es	Adabas D				20200411 15:09:53
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:*	DriverTypeDisplayName			0	es	ADO				20200411 15:09:53
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:PROVIDER=Microsoft.Jet.OLEDB.4.0;DATA SOURCE=*	DriverTypeDisplayName			0	es	Microsoft Access				20200411 15:09:53
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:Provider=Microsoft.ACE.OLEDB.12.0;DATA SOURCE=*	DriverTypeDisplayName			0	es	Microsoft Access 2007				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\adabas.xcu	0	value	.Drivers.Installed.sdbc:adabas:*	DriverTypeDisplayName			0	es	Adabas D				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:*	DriverTypeDisplayName			0	es	ADO				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:PROVIDER=Microsoft.Jet.OLEDB.4.0;DATA SOURCE=*	DriverTypeDisplayName			0	es	Microsoft Access				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:Provider=Microsoft.ACE.OLEDB.12.0;DATA SOURCE=*	DriverTypeDisplayName			0	es	Microsoft Access 2007				20200411 15:09:53
 connectivity	source\drivers\calc\calc.xcu	0	value	.Drivers.Installed.sdbc:calc:*	DriverTypeDisplayName			0	es	Hoja de cálculo				20200411 15:09:53
 connectivity	source\drivers\jdbc\jdbc.xcu	0	value	.Drivers.Installed.jdbc:*	DriverTypeDisplayName			0	es	JDBC				20200411 15:09:53
 connectivity	source\drivers\jdbc\jdbc.xcu	0	value	.Drivers.Installed.jdbc:oracle:thin:*	DriverTypeDisplayName			0	es	Oracle JDBC				20200411 15:09:53
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:jdbc:*	DriverTypeDisplayName			0	es	MySQL (JDBC)				20200411 15:09:53
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:odbc:*	DriverTypeDisplayName			0	es	MySQL (ODBC)				20200411 15:09:53
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:mysqlc:*	DriverTypeDisplayName			0	es	MySQL (Nativo)				20200411 15:09:53
-connectivity	source\drivers\flat\flat.xcu	0	value	.Drivers.Installed.sdbc:flat:*	DriverTypeDisplayName			0	es	Texto				20200411 15:09:53
-connectivity	source\drivers\dbase\dbase.xcu	0	value	.Drivers.Installed.sdbc:dbase:*	DriverTypeDisplayName			0	es	dBASE				20200411 15:09:53
-connectivity	source\drivers\hsqldb\hsqldb.xcu	0	value	.Drivers.Installed.sdbc:embedded:hsqldb	DriverTypeDisplayName			0	es	Motor de base de datos HSQL				20200411 15:09:53
-connectivity	source\drivers\odbc\odbc.xcu	0	value	.Drivers.Installed.sdbc:odbc:*	DriverTypeDisplayName			0	es	ODBC				20200411 15:09:53
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:local	DriverTypeDisplayName			0	es	Evolution Local				20200411 15:09:53
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:ldap	DriverTypeDisplayName			0	es	Evolution LDAP				20200411 15:09:53
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:groupwise	DriverTypeDisplayName			0	es	Groupwise				20200411 15:09:53
-connectivity	source\drivers\macab\macab.xcu	0	value	.Drivers.Installed.sdbc:address:macab	DriverTypeDisplayName			0	es	Libreta de Direcciones de Mac OS X				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:jdbc:*	DriverTypeDisplayName			0	es	MySQL (JDBC)				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:odbc:*	DriverTypeDisplayName			0	es	MySQL (ODBC)				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:mysqlc:*	DriverTypeDisplayName			0	es	MySQL (Nativo)				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\flat.xcu	0	value	.Drivers.Installed.sdbc:flat:*	DriverTypeDisplayName			0	es	Texto				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\dbase.xcu	0	value	.Drivers.Installed.sdbc:dbase:*	DriverTypeDisplayName			0	es	dBASE				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\hsqldb.xcu	0	value	.Drivers.Installed.sdbc:embedded:hsqldb	DriverTypeDisplayName			0	es	Motor de base de datos HSQL				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\odbc.xcu	0	value	.Drivers.Installed.sdbc:odbc:*	DriverTypeDisplayName			0	es	ODBC				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:local	DriverTypeDisplayName			0	es	Evolution Local				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:ldap	DriverTypeDisplayName			0	es	Evolution LDAP				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:groupwise	DriverTypeDisplayName			0	es	Groupwise				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\macab.xcu	0	value	.Drivers.Installed.sdbc:address:macab	DriverTypeDisplayName			0	es	Libreta de Direcciones de Mac OS X				20200411 15:09:53
 connectivity	java\sdbc_jdbc\sdbc_jdbc.xcu	0	value	.Drivers.Installed.jdbc:*	DriverTypeDisplayName			0	es	JDBC				20200411 15:09:53
 connectivity	java\sdbc_jdbc\sdbc_jdbc.xcu	0	value	.Drivers.Installed.jdbc:oracle:thin:*	DriverTypeDisplayName			0	es	Oracle JDBC				20200411 15:09:53
-connectivity	java\sdbc_postgresql\sdbc_postgresql.xcu	0	value	.Drivers.Installed.sdbc:postgresql:jdbc:*	DriverTypeDisplayName			0	es	PostgreSQL				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\sdbc_postgresql.xcu	0	value	.Drivers.Installed.sdbc:postgresql:jdbc:*	DriverTypeDisplayName			0	es	PostgreSQL				20200411 15:09:53
 shell	source\win32\shlxthandler\res\shlxthdl.ulf	0	LngText	%TITLE%				0	es	Título				20200411 15:09:53
 shell	source\win32\shlxthandler\res\shlxthdl.ulf	0	LngText	%TITLE_COLON%				0	es	Título:				20200411 15:09:53
 shell	source\win32\shlxthandler\res\shlxthdl.ulf	0	LngText	%SUBJECT%				0	es	Asunto				20200411 15:09:53
@@ -51794,20 +51794,20 @@ helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	bm_id3274636				0	es	\
 helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10544				0	es	\<link href=\"text/simpress/01/taskpanel.xhp\"\>Panel de tareas\</link\>				20200411 15:09:53
 helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10554				0	es	\<ahelp hid=\".\"\>Activa y desactiva el panel de tareas de %PRODUCTNAME Impress.\</ahelp\>				20200411 15:09:53
 helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10557				0	es	En el panel de tareas hay fichas para especificar páginas maestras, diseños, animación personalizada y transición de diapositivas. Haga clic en otro encabezado para abrir otra página.				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN105D4				0	es	\<embedvar href=\"text/simpress/guide/masterpage.xhp#masterpage\"/\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10652				0	es	\<ahelp hid=\".\" visibility=\"hidden\"\>Abre la ficha Páginas maestras; en ella se aplica una página maestra (fondo) a todas las diapositivas (haciendo clic) o a las diapositivas seleccionadas (haciendo clic con el botón derecho).\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN1067D				0	es	\<ahelp hid=\".\" visibility=\"hidden\"\>Indica las páginas maestras que están en uso.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN106A8				0	es	\<ahelp hid=\".\" visibility=\"hidden\"\>Indica las páginas maestras que se han utilizado recientemente.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN106D3				0	es	\<ahelp hid=\".\" visibility=\"hidden\"\>Indica todas las páginas maestras disponibles.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN106FA				0	es	\<ahelp hid=\".\" visibility=\"hidden\"\>Haga clic para aplicar la página maestra a todas las diapositivas. Haga clic con el botón derecho para abrir el menú contextual.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10747				0	es	\<ahelp hid=\".\" visibility=\"hidden\"\>Aplica la página maestra a todas las diapositivas.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10762				0	es	\<ahelp hid=\".\" visibility=\"hidden\"\>Aplica la página maestra o el diseño de diapositiva a todas las diapositivas seleccionadas.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10785				0	es	\<ahelp hid=\".\" visibility=\"hidden\"\>Redimensionar la previsualización de las páginas maestras.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN107B4				0	es	\<ahelp hid=\".\" visibility=\"hidden\"\>Abre la pestaña Diseños, en la que se aplica un diseño de diapositiva a las diapositivas que haya seleccionado.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN107CB				0	es	\<ahelp hid=\".\" visibility=\"hidden\"\>Haga clic para aplicar un diseño de diapositiva a todas las diapositivas seleccionadas. Haga clic con el botón derecho para abrir el menú contextual.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN1080E				0	es	\<ahelp hid=\".\" visibility=\"hidden\"\>Abre la ficha Animación personalizada, en la que se aplica efectos a los objetos seleccionados de una diapositiva.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10839				0	es	\<ahelp hid=\".\" visibility=\"hidden\"\>Abre la ficha Transición de diapositivas, en la que se aplica efectos de transición a las diapositivas seleccionadas.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_id0916200812240344				0	es	\<ahelp hid=\".\" visibility=\"hidden\"\>Abre la Tabla de Diseño. Haga doble-clic en previsualizar para insertar una tabla nueva .\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN105D4				0	es	\<embedvar href=\"text/simpress/guide/masterpage.xhp#masterpage\"/\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10652				0	es	\<ahelp hid=\".\" visibility=\"hidden\"\>Abre la ficha Páginas maestras; en ella se aplica una página maestra (fondo) a todas las diapositivas (haciendo clic) o a las diapositivas seleccionadas (haciendo clic con el botón derecho).\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1067D				0	es	\<ahelp hid=\".\" visibility=\"hidden\"\>Indica las páginas maestras que están en uso.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106A8				0	es	\<ahelp hid=\".\" visibility=\"hidden\"\>Indica las páginas maestras que se han utilizado recientemente.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106D3				0	es	\<ahelp hid=\".\" visibility=\"hidden\"\>Indica todas las páginas maestras disponibles.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106FA				0	es	\<ahelp hid=\".\" visibility=\"hidden\"\>Haga clic para aplicar la página maestra a todas las diapositivas. Haga clic con el botón derecho para abrir el menú contextual.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10747				0	es	\<ahelp hid=\".\" visibility=\"hidden\"\>Aplica la página maestra a todas las diapositivas.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10762				0	es	\<ahelp hid=\".\" visibility=\"hidden\"\>Aplica la página maestra o el diseño de diapositiva a todas las diapositivas seleccionadas.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10785				0	es	\<ahelp hid=\".\" visibility=\"hidden\"\>Redimensionar la previsualización de las páginas maestras.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107B4				0	es	\<ahelp hid=\".\" visibility=\"hidden\"\>Abre la pestaña Diseños, en la que se aplica un diseño de diapositiva a las diapositivas que haya seleccionado.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107CB				0	es	\<ahelp hid=\".\" visibility=\"hidden\"\>Haga clic para aplicar un diseño de diapositiva a todas las diapositivas seleccionadas. Haga clic con el botón derecho para abrir el menú contextual.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1080E				0	es	\<ahelp hid=\".\" visibility=\"hidden\"\>Abre la ficha Animación personalizada, en la que se aplica efectos a los objetos seleccionados de una diapositiva.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10839				0	es	\<ahelp hid=\".\" visibility=\"hidden\"\>Abre la ficha Transición de diapositivas, en la que se aplica efectos de transición a las diapositivas seleccionadas.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_id0916200812240344				0	es	\<ahelp hid=\".\" visibility=\"hidden\"\>Abre la Tabla de Diseño. Haga doble-clic en previsualizar para insertar una tabla nueva .\</ahelp\>				20200411 15:09:53
 helpcontent2	source\text\simpress\01\05110500m.xhp	0	help	tit				0	es	Eliminar				20200411 15:09:53
 helpcontent2	source\text\simpress\01\05110500m.xhp	0	help	hd_id3149502				0	es	\<link href=\"text/simpress/01/05110500m.xhp\" name=\"Delete\"\>Eliminar\</link\>				20200411 15:09:53
 helpcontent2	source\text\simpress\01\05110500m.xhp	0	help	par_id3149050				0	es	\<variable id=\"loeschentext\"\>\<ahelp hid=\".uno:DeleteRows\"\>Elimina las filas seleccionadas de la tabla .\</ahelp\>\</variable\>				20200411 15:09:53
@@ -72946,16 +72946,3 @@ padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_TXT			14
 padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_USER_TXT			60	es	~Usuario				20200411 15:09:53
 padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_PASS_TXT			60	es	~Contraseña				20200411 15:09:53
 padmin	source\rtsetup.src	0	modaldialog	RID_RTS_PWDIALOG				150	es	Solicitud de autenticación				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10652				0	es	\<ahelp hid=\".\" visibility=\"hidden\"\>Abre la ficha Páginas maestras; en ella se aplica una página maestra (fondo) a todas las diapositivas (haciendo clic) o a las diapositivas seleccionadas (haciendo clic con el botón derecho).\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1067D				0	es	\<ahelp hid=\".\" visibility=\"hidden\"\>Indica las páginas maestras que están en uso.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106A8				0	es	\<ahelp hid=\".\" visibility=\"hidden\"\>Indica las páginas maestras que se han utilizado recientemente.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106D3				0	es	\<ahelp hid=\".\" visibility=\"hidden\"\>Indica todas las páginas maestras disponibles.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106FA				0	es	\<ahelp hid=\".\" visibility=\"hidden\"\>Haga clic para aplicar la página maestra a todas las diapositivas. Haga clic con el botón derecho para abrir el menú contextual.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10747				0	es	\<ahelp hid=\".\" visibility=\"hidden\"\>Aplica la página maestra a todas las diapositivas.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10762				0	es	\<ahelp hid=\".\" visibility=\"hidden\"\>Aplica la página maestra o el diseño de diapositiva a todas las diapositivas seleccionadas.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10785				0	es	\<ahelp hid=\".\" visibility=\"hidden\"\>Redimensionar la previsualización de las páginas maestras.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107B4				0	es	\<ahelp hid=\".\" visibility=\"hidden\"\>Abre la pestaña Diseños, en la que se aplica un diseño de diapositiva a las diapositivas que haya seleccionado.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107CB				0	es	\<ahelp hid=\".\" visibility=\"hidden\"\>Haga clic para aplicar un diseño de diapositiva a todas las diapositivas seleccionadas. Haga clic con el botón derecho para abrir el menú contextual.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1080E				0	es	\<ahelp hid=\".\" visibility=\"hidden\"\>Abre la ficha Animación personalizada, en la que se aplica efectos a los objetos seleccionados de una diapositiva.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10839				0	es	\<ahelp hid=\".\" visibility=\"hidden\"\>Abre la ficha Transición de diapositivas, en la que se aplica efectos de transición a las diapositivas seleccionadas.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_id0916200812240344				0	es	\<ahelp hid=\".\" visibility=\"hidden\"\>Abre la Tabla de Diseño. Haga doble-clic en previsualizar para insertar una tabla nueva .\</ahelp\>				20200411 15:09:53

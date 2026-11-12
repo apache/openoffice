@@ -22357,27 +22357,27 @@ connectivity	source\resource\conn_error_message.src	0	string	256 + 2*303 + 0				
 connectivity	source\resource\conn_error_message.src	0	string	256 + 2*304 + 0				0	nl	Er bestaat geen verbinding met de database.				20200411 15:09:53
 connectivity	source\resource\conn_error_message.src	0	string	256 + 2*500 + 0				0	nl	$1$ bestaat niet.				20200411 15:09:53
 connectivity	source\resource\conn_error_message.src	0	string	256 + 2*550 + 0				0	nl	Niet mogelijk om de gehele inhoud van de tabel weer te geven. Pas alstublieft een filter toe.				20200411 15:09:53
-connectivity	source\drivers\adabas\adabas.xcu	0	value	.Drivers.Installed.sdbc:adabas:*	DriverTypeDisplayName			0	nl	Adabas D				20200411 15:09:53
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:*	DriverTypeDisplayName			0	nl	ADO				20200411 15:09:53
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:PROVIDER=Microsoft.Jet.OLEDB.4.0;DATA SOURCE=*	DriverTypeDisplayName			0	nl	Microsoft Access				20200411 15:09:53
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:Provider=Microsoft.ACE.OLEDB.12.0;DATA SOURCE=*	DriverTypeDisplayName			0	nl	Microsoft Access 2007				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\adabas.xcu	0	value	.Drivers.Installed.sdbc:adabas:*	DriverTypeDisplayName			0	nl	Adabas D				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:*	DriverTypeDisplayName			0	nl	ADO				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:PROVIDER=Microsoft.Jet.OLEDB.4.0;DATA SOURCE=*	DriverTypeDisplayName			0	nl	Microsoft Access				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:Provider=Microsoft.ACE.OLEDB.12.0;DATA SOURCE=*	DriverTypeDisplayName			0	nl	Microsoft Access 2007				20200411 15:09:53
 connectivity	source\drivers\calc\calc.xcu	0	value	.Drivers.Installed.sdbc:calc:*	DriverTypeDisplayName			0	nl	Werkblad				20200411 15:09:53
 connectivity	source\drivers\jdbc\jdbc.xcu	0	value	.Drivers.Installed.jdbc:*	DriverTypeDisplayName			0	nl	JDBC				20200411 15:09:53
 connectivity	source\drivers\jdbc\jdbc.xcu	0	value	.Drivers.Installed.jdbc:oracle:thin:*	DriverTypeDisplayName			0	nl	Oracle JDBC				20200411 15:09:53
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:jdbc:*	DriverTypeDisplayName			0	nl	MySQL (JDBC)				20200411 15:09:53
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:odbc:*	DriverTypeDisplayName			0	nl	MySQL (ODBC)				20200411 15:09:53
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:mysqlc:*	DriverTypeDisplayName			0	nl	MySQL (Native)				20200411 15:09:53
-connectivity	source\drivers\flat\flat.xcu	0	value	.Drivers.Installed.sdbc:flat:*	DriverTypeDisplayName			0	nl	Tekst				20200411 15:09:53
-connectivity	source\drivers\dbase\dbase.xcu	0	value	.Drivers.Installed.sdbc:dbase:*	DriverTypeDisplayName			0	nl	dBASE				20200411 15:09:53
-connectivity	source\drivers\hsqldb\hsqldb.xcu	0	value	.Drivers.Installed.sdbc:embedded:hsqldb	DriverTypeDisplayName			0	nl	HSQL database				20200411 15:09:53
-connectivity	source\drivers\odbc\odbc.xcu	0	value	.Drivers.Installed.sdbc:odbc:*	DriverTypeDisplayName			0	nl	ODBC				20200411 15:09:53
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:local	DriverTypeDisplayName			0	nl	Evolution lokaal				20200411 15:09:53
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:ldap	DriverTypeDisplayName			0	nl	Evolution LDAP				20200411 15:09:53
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:groupwise	DriverTypeDisplayName			0	nl	Groupwise				20200411 15:09:53
-connectivity	source\drivers\macab\macab.xcu	0	value	.Drivers.Installed.sdbc:address:macab	DriverTypeDisplayName			0	nl	Mac OS X adresboek				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:jdbc:*	DriverTypeDisplayName			0	nl	MySQL (JDBC)				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:odbc:*	DriverTypeDisplayName			0	nl	MySQL (ODBC)				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:mysqlc:*	DriverTypeDisplayName			0	nl	MySQL (Native)				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\flat.xcu	0	value	.Drivers.Installed.sdbc:flat:*	DriverTypeDisplayName			0	nl	Tekst				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\dbase.xcu	0	value	.Drivers.Installed.sdbc:dbase:*	DriverTypeDisplayName			0	nl	dBASE				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\hsqldb.xcu	0	value	.Drivers.Installed.sdbc:embedded:hsqldb	DriverTypeDisplayName			0	nl	HSQL database				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\odbc.xcu	0	value	.Drivers.Installed.sdbc:odbc:*	DriverTypeDisplayName			0	nl	ODBC				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:local	DriverTypeDisplayName			0	nl	Evolution lokaal				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:ldap	DriverTypeDisplayName			0	nl	Evolution LDAP				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:groupwise	DriverTypeDisplayName			0	nl	Groupwise				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\macab.xcu	0	value	.Drivers.Installed.sdbc:address:macab	DriverTypeDisplayName			0	nl	Mac OS X adresboek				20200411 15:09:53
 connectivity	java\sdbc_jdbc\sdbc_jdbc.xcu	0	value	.Drivers.Installed.jdbc:*	DriverTypeDisplayName			0	nl	JDBC				20200411 15:09:53
 connectivity	java\sdbc_jdbc\sdbc_jdbc.xcu	0	value	.Drivers.Installed.jdbc:oracle:thin:*	DriverTypeDisplayName			0	nl	Oracle JDBC				20200411 15:09:53
-connectivity	java\sdbc_postgresql\sdbc_postgresql.xcu	0	value	.Drivers.Installed.sdbc:postgresql:jdbc:*	DriverTypeDisplayName			0	nl	PostgreSQL				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\sdbc_postgresql.xcu	0	value	.Drivers.Installed.sdbc:postgresql:jdbc:*	DriverTypeDisplayName			0	nl	PostgreSQL				20200411 15:09:53
 shell	source\win32\shlxthandler\res\shlxthdl.ulf	0	LngText	%TITLE%				0	nl	Titel				20200411 15:09:53
 shell	source\win32\shlxthandler\res\shlxthdl.ulf	0	LngText	%TITLE_COLON%				0	nl	Titel:				20200411 15:09:53
 shell	source\win32\shlxthandler\res\shlxthdl.ulf	0	LngText	%SUBJECT%				0	nl	Onderwerp				20200411 15:09:53
@@ -51800,20 +51800,20 @@ helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	bm_id3274636				0	nl	\
 helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10544				0	nl	\<link href=\"text/simpress/01/taskpanel.xhp\"\>Zijbalk\</link\>				20200411 15:09:53
 helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10554				0	nl	\<ahelp hid=\".\"\>Hiermee wordt de zijbalk van %PRODUCTNAME Impress in- en uitgeschakeld.\</ahelp\>				20200411 15:09:53
 helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10557				0	nl	De zijbalk bevat pagina's om hoofdpagina's, lay-outs, aangepaste animatie en diawissel te specificeren. Klik op een andere kop om een andere pagina te openen.				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN105D4				0	nl	\<embedvar href=\"text/simpress/guide/masterpage.xhp#masterpage\"/\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10652				0	nl	\<ahelp hid=\".\" visibility=\"hidden\"\>Opent de tabpagina Hoofdpagina's, waar u een hoofdpagina (achtergrond) kunt toepassen op alle dia's (klik met de linkermuisknop) of op de geselecteerde dia's (klik met de rechtermuisknop).\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN1067D				0	nl	\<ahelp hid=\".\" visibility=\"hidden\"\>Toont de momenteel gebruikte hoofdpagina's.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN106A8				0	nl	\<ahelp hid=\".\" visibility=\"hidden\"\>Toont de onlangs gebruikte hoofdpagina's.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN106D3				0	nl	\<ahelp hid=\".\" visibility=\"hidden\"\>Toont alle beschikbare hoofdpagina's.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN106FA				0	nl	\<ahelp hid=\".\" visibility=\"hidden\"\>Klik met de linkermuisknop om de hoofdpagina op alle dia's toe te passen. Klik met de rechtermuisknop voor een submenu.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10747				0	nl	\<ahelp hid=\".\" visibility=\"hidden\"\>Past de hoofdpagina op alle dia's toe.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10762				0	nl	\<ahelp hid=\".\" visibility=\"hidden\"\>Past de hoofdpagina of het dia-ontwerp op de geselecteerde dia's toe.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10785				0	nl	\<ahelp hid=\".\" visibility=\"hidden\"\>Verandert het formaat van het voorbeeld van de hoofdpagina's.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN107B4				0	nl	\<ahelp hid=\".\" visibility=\"hidden\"\>Opent de tabpagina voor lay-outs, waar u een dia-ontwerp op de geselecteerde dia of dia's kunt toepassen.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN107CB				0	nl	\<ahelp hid=\".\" visibility=\"hidden\"\>Klik om een dia-ontwerp op alle geselecteerde dia's toe te passen. Klik met de rechtermuisknop voor een submenu.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN1080E				0	nl	\<ahelp hid=\".\" visibility=\"hidden\"\>Opent de tabpagina Aangepaste animatie, waar u effecten op de geselecteerde objecten op een dia kunt toepassen.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10839				0	nl	\<ahelp hid=\".\" visibility=\"hidden\"\>Opent de tabpagina Diawissel, waar u overgangseffecten op de geselecteerde dia's kunt toepassen.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_id0916200812240344				0	nl	\<ahelp hid=\".\" visibility=\"hidden\"\>Opent Tabelontwerp. Dubbelklik op een voorbeeld om een nieuwe tabel in te voegen.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN105D4				0	nl	\<embedvar href=\"text/simpress/guide/masterpage.xhp#masterpage\"/\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10652				0	nl	\<ahelp hid=\".\" visibility=\"hidden\"\>Opent de tabpagina Hoofdpagina's, waar u een hoofdpagina (achtergrond) kunt toepassen op alle dia's (klik met de linkermuisknop) of op de geselecteerde dia's (klik met de rechtermuisknop).\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1067D				0	nl	\<ahelp hid=\".\" visibility=\"hidden\"\>Toont de momenteel gebruikte hoofdpagina's.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106A8				0	nl	\<ahelp hid=\".\" visibility=\"hidden\"\>Toont de onlangs gebruikte hoofdpagina's.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106D3				0	nl	\<ahelp hid=\".\" visibility=\"hidden\"\>Toont alle beschikbare hoofdpagina's.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106FA				0	nl	\<ahelp hid=\".\" visibility=\"hidden\"\>Klik met de linkermuisknop om de hoofdpagina op alle dia's toe te passen. Klik met de rechtermuisknop voor een submenu.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10747				0	nl	\<ahelp hid=\".\" visibility=\"hidden\"\>Past de hoofdpagina op alle dia's toe.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10762				0	nl	\<ahelp hid=\".\" visibility=\"hidden\"\>Past de hoofdpagina of het dia-ontwerp op de geselecteerde dia's toe.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10785				0	nl	\<ahelp hid=\".\" visibility=\"hidden\"\>Verandert het formaat van het voorbeeld van de hoofdpagina's.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107B4				0	nl	\<ahelp hid=\".\" visibility=\"hidden\"\>Opent de tabpagina voor lay-outs, waar u een dia-ontwerp op de geselecteerde dia of dia's kunt toepassen.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107CB				0	nl	\<ahelp hid=\".\" visibility=\"hidden\"\>Klik om een dia-ontwerp op alle geselecteerde dia's toe te passen. Klik met de rechtermuisknop voor een submenu.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1080E				0	nl	\<ahelp hid=\".\" visibility=\"hidden\"\>Opent de tabpagina Aangepaste animatie, waar u effecten op de geselecteerde objecten op een dia kunt toepassen.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10839				0	nl	\<ahelp hid=\".\" visibility=\"hidden\"\>Opent de tabpagina Diawissel, waar u overgangseffecten op de geselecteerde dia's kunt toepassen.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_id0916200812240344				0	nl	\<ahelp hid=\".\" visibility=\"hidden\"\>Opent Tabelontwerp. Dubbelklik op een voorbeeld om een nieuwe tabel in te voegen.\</ahelp\>				20200411 15:09:53
 helpcontent2	source\text\simpress\01\05110500m.xhp	0	help	tit				0	nl	Verwijderen				20200411 15:09:53
 helpcontent2	source\text\simpress\01\05110500m.xhp	0	help	hd_id3149502				0	nl	\<link href=\"text/simpress/01/05110500m.xhp\" name=\"Verwijderen\"\>Verwijderen\</link\>				20200411 15:09:53
 helpcontent2	source\text\simpress\01\05110500m.xhp	0	help	par_id3149050				0	nl	\<variable id=\"loeschentext\"\>\<ahelp hid=\".uno:DeleteRows\"\>Verwijdert de geselecteerde rij(en) uit de tabel.\</ahelp\>\</variable\>				20200411 15:09:53
@@ -72955,16 +72955,3 @@ padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_TXT			14
 padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_USER_TXT			60	nl	~Gebruiker				20200411 15:09:53
 padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_PASS_TXT			60	nl	~Wachtwoord				20200411 15:09:53
 padmin	source\rtsetup.src	0	modaldialog	RID_RTS_PWDIALOG				150	nl	Verificatieverzoek				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10652				0	nl	\<ahelp hid=\".\" visibility=\"hidden\"\>Opent de tabpagina Hoofdpagina's, waar u een hoofdpagina (achtergrond) kunt toepassen op alle dia's (klik met de linkermuisknop) of op de geselecteerde dia's (klik met de rechtermuisknop).\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1067D				0	nl	\<ahelp hid=\".\" visibility=\"hidden\"\>Toont de momenteel gebruikte hoofdpagina's.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106A8				0	nl	\<ahelp hid=\".\" visibility=\"hidden\"\>Toont de onlangs gebruikte hoofdpagina's.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106D3				0	nl	\<ahelp hid=\".\" visibility=\"hidden\"\>Toont alle beschikbare hoofdpagina's.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106FA				0	nl	\<ahelp hid=\".\" visibility=\"hidden\"\>Klik met de linkermuisknop om de hoofdpagina op alle dia's toe te passen. Klik met de rechtermuisknop voor een submenu.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10747				0	nl	\<ahelp hid=\".\" visibility=\"hidden\"\>Past de hoofdpagina op alle dia's toe.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10762				0	nl	\<ahelp hid=\".\" visibility=\"hidden\"\>Past de hoofdpagina of het dia-ontwerp op de geselecteerde dia's toe.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10785				0	nl	\<ahelp hid=\".\" visibility=\"hidden\"\>Verandert het formaat van het voorbeeld van de hoofdpagina's.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107B4				0	nl	\<ahelp hid=\".\" visibility=\"hidden\"\>Opent de tabpagina voor lay-outs, waar u een dia-ontwerp op de geselecteerde dia of dia's kunt toepassen.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107CB				0	nl	\<ahelp hid=\".\" visibility=\"hidden\"\>Klik om een dia-ontwerp op alle geselecteerde dia's toe te passen. Klik met de rechtermuisknop voor een submenu.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1080E				0	nl	\<ahelp hid=\".\" visibility=\"hidden\"\>Opent de tabpagina Aangepaste animatie, waar u effecten op de geselecteerde objecten op een dia kunt toepassen.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10839				0	nl	\<ahelp hid=\".\" visibility=\"hidden\"\>Opent de tabpagina Diawissel, waar u overgangseffecten op de geselecteerde dia's kunt toepassen.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_id0916200812240344				0	nl	\<ahelp hid=\".\" visibility=\"hidden\"\>Opent Tabelontwerp. Dubbelklik op een voorbeeld om een nieuwe tabel in te voegen.\</ahelp\>				20200411 15:09:53

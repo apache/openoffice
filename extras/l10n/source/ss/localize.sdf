@@ -17366,32 +17366,32 @@ connectivity	source\resource\conn_error_message.src	0	string	256 + 2*304 + 0				
 connectivity	source\resource\conn_error_message.src	0	string	256 + 2*500 + 0				0	ss	Geen $1$ bestaan nie.				2002-02-02 02:02:02
 connectivity	source\resource\conn_error_message.src	0	string	256 + 2*550 + 0				0	ss	Kon nie die volledige tabelinhoud wys nie. Pas asseblief 'n filter toe.				2002-02-02 02:02:02
 connectivity	source\drivers\calc\calc.xcu	0	value	.Drivers.Installed.sdbc:calc:*	DriverTypeDisplayName			0	ss	Sigblad				2002-02-02 02:02:02
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:local	DriverTypeDisplayName			0	ss	Evolution, plaaslik				2002-02-02 02:02:02
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:ldap	DriverTypeDisplayName			0	ss	Evolution LDAP				2002-02-02 02:02:02
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:groupwise	DriverTypeDisplayName			0	ss	Groupwise				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:local	DriverTypeDisplayName			0	ss	Evolution, plaaslik				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:ldap	DriverTypeDisplayName			0	ss	Evolution LDAP				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:groupwise	DriverTypeDisplayName			0	ss	Groupwise				2002-02-02 02:02:02
 connectivity	source\drivers\mozab\mozab.xcu	0	value	.Drivers.Installed.sdbc:address:outlook	DriverTypeDisplayName			0	ss	Microsoft Outlook-adresboek				2002-02-02 02:02:02
 connectivity	source\drivers\mozab\mozab.xcu	0	value	.Drivers.Installed.sdbc:address:outlookexp	DriverTypeDisplayName			0	ss	Microsoft Windows-adresboek				2002-02-02 02:02:02
 connectivity	source\drivers\mozab\mozab.xcu	0	value	.Drivers.Installed.sdbc:address:thunderbird:	DriverTypeDisplayName			0	ss	Thunderbird-adresboek				2002-02-02 02:02:02
 connectivity	source\drivers\mozab\mozab.xcu	0	value	.Drivers.Installed.sdbc:address:ldap:*	DriverTypeDisplayName			0	ss	LDAP-adresboek				2002-02-02 02:02:02
 connectivity	source\drivers\mozab\mozab2.xcu	0	value	.Drivers.Installed.sdbc:address:thunderbird:	DriverTypeDisplayName			0	ss	Thunderbird-adresboek				2002-02-02 02:02:02
 connectivity	source\drivers\mozab\mozab2.xcu	0	value	.Drivers.Installed.sdbc:address:ldap:*	DriverTypeDisplayName			0	ss	LDAP-adresboek				2002-02-02 02:02:02
-connectivity	source\drivers\flat\flat.xcu	0	value	.Drivers.Installed.sdbc:flat:*	DriverTypeDisplayName			0	ss	Teks				2002-02-02 02:02:02
-connectivity	source\drivers\hsqldb\hsqldb.xcu	0	value	.Drivers.Installed.sdbc:embedded:hsqldb	DriverTypeDisplayName			0	ss	HSQL-databasisenjin				2002-02-02 02:02:02
-connectivity	source\drivers\dbase\dbase.xcu	0	value	.Drivers.Installed.sdbc:dbase:*	DriverTypeDisplayName			0	ss	dBASE				2002-02-02 02:02:02
-connectivity	source\drivers\macab\macab.xcu	0	value	.Drivers.Installed.sdbc:address:macab	DriverTypeDisplayName			0	ss	Mac OS X-adresboek				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\flat.xcu	0	value	.Drivers.Installed.sdbc:flat:*	DriverTypeDisplayName			0	ss	Teks				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\hsqldb.xcu	0	value	.Drivers.Installed.sdbc:embedded:hsqldb	DriverTypeDisplayName			0	ss	HSQL-databasisenjin				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\dbase.xcu	0	value	.Drivers.Installed.sdbc:dbase:*	DriverTypeDisplayName			0	ss	dBASE				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\macab.xcu	0	value	.Drivers.Installed.sdbc:address:macab	DriverTypeDisplayName			0	ss	Mac OS X-adresboek				2002-02-02 02:02:02
 connectivity	source\drivers\jdbc\jdbc.xcu	0	value	.Drivers.Installed.jdbc:*	DriverTypeDisplayName			0	ss	JDBC				2002-02-02 02:02:02
 connectivity	source\drivers\jdbc\jdbc.xcu	0	value	.Drivers.Installed.jdbc:oracle:thin:*	DriverTypeDisplayName			0	ss	Oracle JDBC				2002-02-02 02:02:02
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:*	DriverTypeDisplayName			0	ss	ADO				2002-02-02 02:02:02
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:PROVIDER=Microsoft.Jet.OLEDB.4.0;DATA SOURCE=*	DriverTypeDisplayName			0	ss	Microsoft Access				2002-02-02 02:02:02
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:Provider=Microsoft.ACE.OLEDB.12.0;DATA SOURCE=*	DriverTypeDisplayName			0	ss	Microsoft Access 2007				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:*	DriverTypeDisplayName			0	ss	ADO				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:PROVIDER=Microsoft.Jet.OLEDB.4.0;DATA SOURCE=*	DriverTypeDisplayName			0	ss	Microsoft Access				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:Provider=Microsoft.ACE.OLEDB.12.0;DATA SOURCE=*	DriverTypeDisplayName			0	ss	Microsoft Access 2007				2002-02-02 02:02:02
 connectivity	source\drivers\evoab\evoab.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:ldap	DriverTypeDisplayName			0	ss	Evolution LDAP				2002-02-02 02:02:02
 connectivity	source\drivers\evoab\evoab.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:groupwise	DriverTypeDisplayName			0	ss	Groupwise				2002-02-02 02:02:02
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:jdbc:*	DriverTypeDisplayName			0	ss	MySQL (JDBC)				2002-02-02 02:02:02
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:odbc:*	DriverTypeDisplayName			0	ss	MySQL (ODBC)				2002-02-02 02:02:02
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:mysqlc:*	DriverTypeDisplayName			0	ss	MySQL (eie)				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:jdbc:*	DriverTypeDisplayName			0	ss	MySQL (JDBC)				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:odbc:*	DriverTypeDisplayName			0	ss	MySQL (ODBC)				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:mysqlc:*	DriverTypeDisplayName			0	ss	MySQL (eie)				2002-02-02 02:02:02
 connectivity	source\drivers\kab\kab.xcu	0	value	.Drivers.Installed.sdbc:address:kab	DriverTypeDisplayName			0	ss	KDE-adresboek				2002-02-02 02:02:02
-connectivity	source\drivers\adabas\adabas.xcu	0	value	.Drivers.Installed.sdbc:adabas:*	DriverTypeDisplayName			0	ss	Adabas D				2002-02-02 02:02:02
-connectivity	source\drivers\odbc\odbc.xcu	0	value	.Drivers.Installed.sdbc:odbc:*	DriverTypeDisplayName			0	ss	ODBC				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\adabas.xcu	0	value	.Drivers.Installed.sdbc:adabas:*	DriverTypeDisplayName			0	ss	Adabas D				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\odbc.xcu	0	value	.Drivers.Installed.sdbc:odbc:*	DriverTypeDisplayName			0	ss	ODBC				2002-02-02 02:02:02
 readlicense_oo	docs\readme\readme.xrm	0	readmeitem	Welcome	Welcome			0	ss	${PRODUCTNAME} ${PRODUCTVERSION} Leesmy				2002-02-02 02:02:02
 readlicense_oo	docs\readme\readme.xrm	0	readmeitem	A6	A6			0	ss	Hierdie lêer bevat belangrike inligting aangaande hierdie program. Lees asseblief hierdie inligting baie noukeurig deur voor u begin werk.				2002-02-02 02:02:02
 readlicense_oo	docs\readme\readme.xrm	0	readmeitem	A10	A10			0	ss	Is ${PRODUCTNAME} regtig gratis vir enige gebruiker? 				2002-02-02 02:02:02

@@ -22355,27 +22355,27 @@ connectivity	source\resource\conn_error_message.src	0	string	256 + 2*303 + 0				
 connectivity	source\resource\conn_error_message.src	0	string	256 + 2*304 + 0				0	ja	データベースへの接続がありません。				20200411 15:09:53
 connectivity	source\resource\conn_error_message.src	0	string	256 + 2*500 + 0				0	ja	$1$ はありません。				20200411 15:09:53
 connectivity	source\resource\conn_error_message.src	0	string	256 + 2*550 + 0				0	ja	テーブルの完全な内容を表示できません。フィルターを適用してください。				20200411 15:09:53
-connectivity	source\drivers\adabas\adabas.xcu	0	value	.Drivers.Installed.sdbc:adabas:*	DriverTypeDisplayName			0	ja	Adabas D				20200411 15:09:53
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:*	DriverTypeDisplayName			0	ja	ADO				20200411 15:09:53
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:PROVIDER=Microsoft.Jet.OLEDB.4.0;DATA SOURCE=*	DriverTypeDisplayName			0	ja	Microsoft Access				20200411 15:09:53
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:Provider=Microsoft.ACE.OLEDB.12.0;DATA SOURCE=*	DriverTypeDisplayName			0	ja	Microsoft Access 2007				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\adabas.xcu	0	value	.Drivers.Installed.sdbc:adabas:*	DriverTypeDisplayName			0	ja	Adabas D				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:*	DriverTypeDisplayName			0	ja	ADO				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:PROVIDER=Microsoft.Jet.OLEDB.4.0;DATA SOURCE=*	DriverTypeDisplayName			0	ja	Microsoft Access				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:Provider=Microsoft.ACE.OLEDB.12.0;DATA SOURCE=*	DriverTypeDisplayName			0	ja	Microsoft Access 2007				20200411 15:09:53
 connectivity	source\drivers\calc\calc.xcu	0	value	.Drivers.Installed.sdbc:calc:*	DriverTypeDisplayName			0	ja	表計算ドキュメント				20200411 15:09:53
 connectivity	source\drivers\jdbc\jdbc.xcu	0	value	.Drivers.Installed.jdbc:*	DriverTypeDisplayName			0	ja	JDBC				20200411 15:09:53
 connectivity	source\drivers\jdbc\jdbc.xcu	0	value	.Drivers.Installed.jdbc:oracle:thin:*	DriverTypeDisplayName			0	ja	Oracle JDBC				20200411 15:09:53
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:jdbc:*	DriverTypeDisplayName			0	ja	MySQL (JDBC)				20200411 15:09:53
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:odbc:*	DriverTypeDisplayName			0	ja	MySQL (ODBC)				20200411 15:09:53
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:mysqlc:*	DriverTypeDisplayName			0	ja	MySQL (Native)				20200411 15:09:53
-connectivity	source\drivers\flat\flat.xcu	0	value	.Drivers.Installed.sdbc:flat:*	DriverTypeDisplayName			0	ja	テキスト				20200411 15:09:53
-connectivity	source\drivers\dbase\dbase.xcu	0	value	.Drivers.Installed.sdbc:dbase:*	DriverTypeDisplayName			0	ja	dBASE				20200411 15:09:53
-connectivity	source\drivers\hsqldb\hsqldb.xcu	0	value	.Drivers.Installed.sdbc:embedded:hsqldb	DriverTypeDisplayName			0	ja	HSQL database engine				20200411 15:09:53
-connectivity	source\drivers\odbc\odbc.xcu	0	value	.Drivers.Installed.sdbc:odbc:*	DriverTypeDisplayName			0	ja	ODBC				20200411 15:09:53
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:local	DriverTypeDisplayName			0	ja	Evolution Local				20200411 15:09:53
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:ldap	DriverTypeDisplayName			0	ja	Evolution LDAP				20200411 15:09:53
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:groupwise	DriverTypeDisplayName			0	ja	Groupwise				20200411 15:09:53
-connectivity	source\drivers\macab\macab.xcu	0	value	.Drivers.Installed.sdbc:address:macab	DriverTypeDisplayName			0	ja	Mac OS X アドレス帳				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:jdbc:*	DriverTypeDisplayName			0	ja	MySQL (JDBC)				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:odbc:*	DriverTypeDisplayName			0	ja	MySQL (ODBC)				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:mysqlc:*	DriverTypeDisplayName			0	ja	MySQL (Native)				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\flat.xcu	0	value	.Drivers.Installed.sdbc:flat:*	DriverTypeDisplayName			0	ja	テキスト				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\dbase.xcu	0	value	.Drivers.Installed.sdbc:dbase:*	DriverTypeDisplayName			0	ja	dBASE				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\hsqldb.xcu	0	value	.Drivers.Installed.sdbc:embedded:hsqldb	DriverTypeDisplayName			0	ja	HSQL database engine				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\odbc.xcu	0	value	.Drivers.Installed.sdbc:odbc:*	DriverTypeDisplayName			0	ja	ODBC				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:local	DriverTypeDisplayName			0	ja	Evolution Local				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:ldap	DriverTypeDisplayName			0	ja	Evolution LDAP				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:groupwise	DriverTypeDisplayName			0	ja	Groupwise				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\macab.xcu	0	value	.Drivers.Installed.sdbc:address:macab	DriverTypeDisplayName			0	ja	Mac OS X アドレス帳				20200411 15:09:53
 connectivity	java\sdbc_jdbc\sdbc_jdbc.xcu	0	value	.Drivers.Installed.jdbc:*	DriverTypeDisplayName			0	ja	JDBC				20200411 15:09:53
 connectivity	java\sdbc_jdbc\sdbc_jdbc.xcu	0	value	.Drivers.Installed.jdbc:oracle:thin:*	DriverTypeDisplayName			0	ja	Oracle JDBC				20200411 15:09:53
-connectivity	java\sdbc_postgresql\sdbc_postgresql.xcu	0	value	.Drivers.Installed.sdbc:postgresql:jdbc:*	DriverTypeDisplayName			0	ja	PostgreSQL				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\sdbc_postgresql.xcu	0	value	.Drivers.Installed.sdbc:postgresql:jdbc:*	DriverTypeDisplayName			0	ja	PostgreSQL				20200411 15:09:53
 shell	source\win32\shlxthandler\res\shlxthdl.ulf	0	LngText	%TITLE%				0	ja	タイトル				20200411 15:09:53
 shell	source\win32\shlxthandler\res\shlxthdl.ulf	0	LngText	%TITLE_COLON%				0	ja	タイトル:				20200411 15:09:53
 shell	source\win32\shlxthandler\res\shlxthdl.ulf	0	LngText	%SUBJECT%				0	ja	テーマ				20200411 15:09:53
@@ -51794,20 +51794,20 @@ helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	bm_id3274636				0	ja	\
 helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10544				0	ja	\<link href=\"text/simpress/01/taskpanel.xhp\"\>作業ペイン\</link\>				20200411 15:09:53
 helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10554				0	ja	\<ahelp hid=\".\"\>%PRODUCTNAME Impress の作業ペインのオン/オフを切り替えます。\</ahelp\>				20200411 15:09:53
 helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10557				0	ja	作業ペインには、マスターページ、レイアウト、アニメーション設定、およびスライド切り替えを指定するページが含まれています。別の見出しをクリックすると、別のページが開きます。				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN105D4				0	ja	\<embedvar href=\"text/simpress/guide/masterpage.xhp#masterpage\"/\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10652				0	ja	\<ahelp hid=\".\" visibility=\"hidden\"\>マスターページ タブページを開きます。このページでは、マスターページ (背景) をすべてのスライド (左クリック) または選択したスライド (右クリック) に適用します。\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN1067D				0	ja	\<ahelp hid=\".\" visibility=\"hidden\"\>現在使用されているマスターページを表示します。\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN106A8				0	ja	\<ahelp hid=\".\" visibility=\"hidden\"\>最近使用したマスターページを表示します。\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN106D3				0	ja	\<ahelp hid=\".\" visibility=\"hidden\"\>すべての使用可能なマスターページを表示します。\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN106FA				0	ja	\<ahelp hid=\".\" visibility=\"hidden\"\>左クリックすると、マスターページをすべてのスライドに適用します。右クリックはサブメニューが対象です。\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10747				0	ja	\<ahelp hid=\".\" visibility=\"hidden\"\>マスターページをすべてのスライドに適用します。\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10762				0	ja	\<ahelp hid=\".\" visibility=\"hidden\"\>マスターページまたはページスタイルを、選択したスライドに適用します。\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10785				0	ja	\<ahelp hid=\".\" visibility=\"hidden\"\>マスターページのプレビューのサイズを変更します。\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN107B4				0	ja	\<ahelp hid=\".\" visibility=\"hidden\"\>レイアウト タブページを開きます。このページでは選択したスライド (複数可) にページスタイルを適用します。\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN107CB				0	ja	\<ahelp hid=\".\" visibility=\"hidden\"\>クリックすると、すべての選択したスライドにページスタイルを適用します。右クリックはサブメニューが対象です。\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN1080E				0	ja	\<ahelp hid=\".\" visibility=\"hidden\"\>アニメーション設定タブページを開きます。このページではスライド上の選択したオブジェクトに効果を適用します。\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10839				0	ja	\<ahelp hid=\".\" visibility=\"hidden\"\>スライド切り替えタブページを開きます。このページでは、選択したスライドに切り替え効果を適用します。\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_id0916200812240344				0	ja	\<ahelp hid=\".\" visibility=\"hidden\"\>テーブルデザインを開きます。新しいテーブルを挿入するには、プレビューをダブルクリックします。\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN105D4				0	ja	\<embedvar href=\"text/simpress/guide/masterpage.xhp#masterpage\"/\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10652				0	ja	\<ahelp hid=\".\" visibility=\"hidden\"\>マスターページ タブページを開きます。このページでは、マスターページ (背景) をすべてのスライド (左クリック) または選択したスライド (右クリック) に適用します。\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1067D				0	ja	\<ahelp hid=\".\" visibility=\"hidden\"\>現在使用されているマスターページを表示します。\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106A8				0	ja	\<ahelp hid=\".\" visibility=\"hidden\"\>最近使用したマスターページを表示します。\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106D3				0	ja	\<ahelp hid=\".\" visibility=\"hidden\"\>すべての使用可能なマスターページを表示します。\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106FA				0	ja	\<ahelp hid=\".\" visibility=\"hidden\"\>左クリックすると、マスターページをすべてのスライドに適用します。右クリックはサブメニューが対象です。\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10747				0	ja	\<ahelp hid=\".\" visibility=\"hidden\"\>マスターページをすべてのスライドに適用します。\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10762				0	ja	\<ahelp hid=\".\" visibility=\"hidden\"\>マスターページまたはページスタイルを、選択したスライドに適用します。\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10785				0	ja	\<ahelp hid=\".\" visibility=\"hidden\"\>マスターページのプレビューのサイズを変更します。\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107B4				0	ja	\<ahelp hid=\".\" visibility=\"hidden\"\>レイアウト タブページを開きます。このページでは選択したスライド (複数可) にページスタイルを適用します。\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107CB				0	ja	\<ahelp hid=\".\" visibility=\"hidden\"\>クリックすると、すべての選択したスライドにページスタイルを適用します。右クリックはサブメニューが対象です。\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1080E				0	ja	\<ahelp hid=\".\" visibility=\"hidden\"\>アニメーション設定タブページを開きます。このページではスライド上の選択したオブジェクトに効果を適用します。\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10839				0	ja	\<ahelp hid=\".\" visibility=\"hidden\"\>スライド切り替えタブページを開きます。このページでは、選択したスライドに切り替え効果を適用します。\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_id0916200812240344				0	ja	\<ahelp hid=\".\" visibility=\"hidden\"\>テーブルデザインを開きます。新しいテーブルを挿入するには、プレビューをダブルクリックします。\</ahelp\>				20200411 15:09:53
 helpcontent2	source\text\simpress\01\05110500m.xhp	0	help	tit				0	ja	削除				20200411 15:09:53
 helpcontent2	source\text\simpress\01\05110500m.xhp	0	help	hd_id3149502				0	ja	\<link href=\"text/simpress/01/05110500m.xhp\" name=\"削除\"\>削除\</link\>				20200411 15:09:53
 helpcontent2	source\text\simpress\01\05110500m.xhp	0	help	par_id3149050				0	ja	\<variable id=\"loeschentext\"\>\<ahelp hid=\".uno:DeleteRows\"\>テーブルから選択された行を削除します。\</ahelp\>\</variable\>				20200411 15:09:53
@@ -72946,16 +72946,3 @@ padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_TXT			14
 padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_USER_TXT			60	ja	ユーザー(~U)				20200411 15:09:53
 padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_PASS_TXT			60	ja	パスワード(~P)				20200411 15:09:53
 padmin	source\rtsetup.src	0	modaldialog	RID_RTS_PWDIALOG				150	ja	認証要求				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10652				0	ja	\<ahelp hid=\".\" visibility=\"hidden\"\>マスターページ タブページを開きます。このページでは、マスターページ (背景) をすべてのスライド (左クリック) または選択したスライド (右クリック) に適用します。\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1067D				0	ja	\<ahelp hid=\".\" visibility=\"hidden\"\>現在使用されているマスターページを表示します。\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106A8				0	ja	\<ahelp hid=\".\" visibility=\"hidden\"\>最近使用したマスターページを表示します。\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106D3				0	ja	\<ahelp hid=\".\" visibility=\"hidden\"\>すべての使用可能なマスターページを表示します。\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106FA				0	ja	\<ahelp hid=\".\" visibility=\"hidden\"\>左クリックすると、マスターページをすべてのスライドに適用します。右クリックはサブメニューが対象です。\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10747				0	ja	\<ahelp hid=\".\" visibility=\"hidden\"\>マスターページをすべてのスライドに適用します。\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10762				0	ja	\<ahelp hid=\".\" visibility=\"hidden\"\>マスターページまたはページスタイルを、選択したスライドに適用します。\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10785				0	ja	\<ahelp hid=\".\" visibility=\"hidden\"\>マスターページのプレビューのサイズを変更します。\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107B4				0	ja	\<ahelp hid=\".\" visibility=\"hidden\"\>レイアウト タブページを開きます。このページでは選択したスライド (複数可) にページスタイルを適用します。\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107CB				0	ja	\<ahelp hid=\".\" visibility=\"hidden\"\>クリックすると、すべての選択したスライドにページスタイルを適用します。右クリックはサブメニューが対象です。\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1080E				0	ja	\<ahelp hid=\".\" visibility=\"hidden\"\>アニメーション設定タブページを開きます。このページではスライド上の選択したオブジェクトに効果を適用します。\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10839				0	ja	\<ahelp hid=\".\" visibility=\"hidden\"\>スライド切り替えタブページを開きます。このページでは、選択したスライドに切り替え効果を適用します。\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_id0916200812240344				0	ja	\<ahelp hid=\".\" visibility=\"hidden\"\>テーブルデザインを開きます。新しいテーブルを挿入するには、プレビューをダブルクリックします。\</ahelp\>				20200411 15:09:53
