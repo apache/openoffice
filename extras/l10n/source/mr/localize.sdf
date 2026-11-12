@@ -4260,8 +4260,8 @@ formula	source\core\resource\core_resource.src	0	string	RID_STRLIST_FUNCTION_NAM
 formula	source\core\resource\core_resource.src	0	string	RID_STRLIST_FUNCTION_NAMES	SC_OPCODE_ERROR_NA			0	mr	#N/A				2002-02-02 02:02:02
 formula	source\ui\dlg\parawin.src	0	#define	RB_ARGBLOCK( y )				13	mr	-		निवड		2002-02-02 02:02:02
 formula	source\ui\dlg\parawin.src	0	fixedtext	RID_FORMULATAB_PARAMETER	FT_EDITDESC			198	mr	कार्यपद्धती परिचीत नाही				2002-02-02 02:02:02
-formula	source\ui\dlg\parawin.src	0	string	RID_FORMULATAB_PARAMETER	STR_OPTIONAL			8	mr	(वैकल्पीक)				2002-02-02 02:02:02
-formula	source\ui\dlg\parawin.src	0	string	RID_FORMULATAB_PARAMETER	STR_REQUIRED			8	mr	(आवश्यक)				2002-02-02 02:02:02
+formula	source\ui\dlg\parawin.src	0	string	RID_FORMULATAB_PARAMETER.FT_ARG1.FT_ARG2.FT_ARG3.FT_ARG4	STR_OPTIONAL			8	mr	(वैकल्पीक)				2002-02-02 02:02:02
+formula	source\ui\dlg\parawin.src	0	string	RID_FORMULATAB_PARAMETER.FT_ARG1.FT_ARG2.FT_ARG3.FT_ARG4	STR_REQUIRED			8	mr	(आवश्यक)				2002-02-02 02:02:02
 formula	source\ui\dlg\formdlgs.src	0	stringlist	RID_FORMULATAB_FUNCTION.LB_CATEGORY	1			0	mr	शेवटी वापरलेले				2002-02-02 02:02:02
 formula	source\ui\dlg\formdlgs.src	0	stringlist	RID_FORMULATAB_FUNCTION.LB_CATEGORY	2			0	mr	सर्व				2002-02-02 02:02:02
 formula	source\ui\dlg\formdlgs.src	0	fixedtext	RID_FORMULATAB_FUNCTION	FT_CATEGORY			84	mr	विभाग (~C)				2002-02-02 02:02:02
@@ -4368,8 +4368,8 @@ wizards	source\euro\euro.src	0	string	CURRENCIES + 12				0	mr	स्लोवे
 wizards	source\euro\euro.src	0	string	CURRENCIES + 13				0	mr	सिप्रीओट पाऊंड				2002-02-02 02:02:02
 wizards	source\euro\euro.src	0	string	CURRENCIES + 14				0	mr	माल्तेज लिरा				2002-02-02 02:02:02
 wizards	source\euro\euro.src	0	string	CURRENCIES + 15				0	mr	स्लोवाक कोरूना				2002-02-02 02:02:02
-wizards	source\euro\euro.src	0	string	CURRENCIES + 16				0	mr	दस्तऐवजासाठी ठरवलेले चलन हे युरोपियन चलन नाही!				2002-02-02 02:02:02
-wizards	source\euro\euro.src	0	string	CURRENCIES + 17				0	mr	आपल्या ऑपरेटिंग सिस्टमसाठी ठरवलेली भाषा ही युरोपियन मॉनेटरी युनियनची भाषा नाही.				2002-02-02 02:02:02
+wizards	source\euro\euro.src	0	string	CURRENCIES + 21				0	mr	दस्तऐवजासाठी ठरवलेले चलन हे युरोपियन चलन नाही!				2002-02-02 02:02:02
+wizards	source\euro\euro.src	0	string	CURRENCIES + 22				0	mr	आपल्या ऑपरेटिंग सिस्टमसाठी ठरवलेली भाषा ही युरोपियन मॉनेटरी युनियनची भाषा नाही.				2002-02-02 02:02:02
 wizards	source\euro\euro.src	0	string	STEP_LASTPAGE				0	mr	प्रगती				2002-02-02 02:02:02
 wizards	source\euro\euro.src	0	string	STEP_LASTPAGE + 1				0	mr	संबंधित दस्तऐवज पुन्हा मिळवत आहे...				2002-02-02 02:02:02
 wizards	source\euro\euro.src	0	string	STEP_LASTPAGE + 2				0	mr	दस्तऐवजांना रूपांतरित करीत आहे...				2002-02-02 02:02:02
@@ -4814,77 +4814,77 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_FAXWIZARDROADMAP_START + 2		
 wizards	source\formwizard\dbwizres.src	0	string	RID_FAXWIZARDROADMAP_START + 3				0	mr	प्रेषक व प्राप्तकर्ता				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_FAXWIZARDROADMAP_START + 4				0	mr	पायथासमास मजकूर				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_FAXWIZARDROADMAP_START + 5				0	mr	नाव व स्थान				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +1				0	mr	वेब विझार्ड				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +2				0	mr	ह्या वेब विझार्डचा उपयोग इंटरनेटवरील कागदपत्र प्रकाशित करण्यात आपली मदत करण्यासाठी केला जातो.\n\nते कागदपत्र रूपांतरित करेल जेणेकरून ते वेब ब्राऊजर वर पहाता येईल. ह्याच्या व्यतिरिक्त, कागदपत्रात सहज प्रवेश मिळविण्यासाठी हे लिंक सह विषयांची कोष्टक पृष्ठ निर्माण करेल. वेब विझार्ड आपणासाठी आपल्या वेब साईटची नक्षी व मांडणी पूर्वनियत करणे देखील शक्य करेल.\n\nआपण वेब वर प्रकाशित केले कागदपत्र अद्ययावत ठेऊ शकता व कागदपत्र केव्हाही समाविष्ट करू किवां काढून टाकू शकता.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +4				0	mr	काढून टाका (~D)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +5				0	mr	प्रस्तावना				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +6				0	mr	आपणास प्रकाशित करायचे असलेले कागदपत्र निवडा				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +8				0	mr	कागदपत्र माहिती				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +9				0	mr	शीर्षक (~T):				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +10				0	mr	सारांश (~S): 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +11				0	mr	लेखक (~t):				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +12				0	mr	फाइल स्वरूपणात पाठवा (~E):				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +13				0	mr	आपल्या वेब साईटसाठी सर्वसाधारण माहिती एन्टर करा				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 1				0	mr	वेब विझार्ड				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 2				0	mr	ह्या वेब विझार्डचा उपयोग इंटरनेटवरील कागदपत्र प्रकाशित करण्यात आपली मदत करण्यासाठी केला जातो.\n\nते कागदपत्र रूपांतरित करेल जेणेकरून ते वेब ब्राऊजर वर पहाता येईल. ह्याच्या व्यतिरिक्त, कागदपत्रात सहज प्रवेश मिळविण्यासाठी हे लिंक सह विषयांची कोष्टक पृष्ठ निर्माण करेल. वेब विझार्ड आपणासाठी आपल्या वेब साईटची नक्षी व मांडणी पूर्वनियत करणे देखील शक्य करेल.\n\nआपण वेब वर प्रकाशित केले कागदपत्र अद्ययावत ठेऊ शकता व कागदपत्र केव्हाही समाविष्ट करू किवां काढून टाकू शकता.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 4				0	mr	काढून टाका (~D)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 5				0	mr	प्रस्तावना				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 6				0	mr	आपणास प्रकाशित करायचे असलेले कागदपत्र निवडा				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 8				0	mr	कागदपत्र माहिती				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 9				0	mr	शीर्षक (~T):				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 10				0	mr	सारांश (~S): 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 11				0	mr	लेखक (~t):				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 12				0	mr	फाइल स्वरूपणात पाठवा (~E):				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 13				0	mr	आपल्या वेब साईटसाठी सर्वसाधारण माहिती एन्टर करा				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +14				0	mr	शीर्षक:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +16				0	mr	 वर्णन:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +18				0	mr	ने निर्मित केलेले:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +20				0	mr	ई-मेल:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +21				0	mr	हक्क सूचना:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +22				0	mr	सुधारणा केलेले:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +24				0	mr	पूर्वदृश्य (~P)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +25				0	mr	आपणास आपले संकेतस्थळ कुठे प्रकाशित करायचे आहे?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +26				0	mr	नवीन संकेतस्थळ प्रकाशित करा:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +27				0	mr	स्थानिक धारकात (~l)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 16				0	mr	 वर्णन:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 18				0	mr	ने निर्मित केलेले:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 20				0	mr	ई-मेल:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 21				0	mr	हक्क सूचना:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 22				0	mr	सुधारणा केलेले:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 24				0	mr	पूर्वदृश्य (~P)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 25				0	mr	आपणास आपले संकेतस्थळ कुठे प्रकाशित करायचे आहे?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 26				0	mr	नवीन संकेतस्थळ प्रकाशित करा:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 27				0	mr	स्थानिक धारकात (~l)				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +28				0	mr	 ...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +29				0	mr	FTP द्वारा वेब सर्व्हर मध्ये (~w)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +31				0	mr	अंतर्गत रचना करा (~C)...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +32				0	mr	ZIP आर्किव मध्ये (~a)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 29				0	mr	FTP द्वारा वेब सर्व्हर मध्ये (~w)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 31				0	mr	अंतर्गत रचना करा (~C)...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 32				0	mr	ZIP आर्किव मध्ये (~a)				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +33				0	mr	 ...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +34				0	mr	नियंत्रणाना जतन करा (शिफारस केलेले) (~S)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +35				0	mr	याप्रमाणे जतन करा (~a):				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +36				0	mr	वेब विझार्डसाठी नियंत्रणे निवडा (~C)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +37				0	mr	संकेतस्थळाचे विषय				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +38				0	mr	समाविष्ट करा (~A)...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +39				0	mr	काढून टाका (~v)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +40				0	mr	आपल्या संकेतस्थळाच्या विषय कोष्टकासाठी मांडणी निवडा				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +41				0	mr	विषयांच्या कोष्टक पानासाठी शैली निवडा				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +42				0	mr	शैली (~S):				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +48				0	mr	मांडणी (~L): 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +50				0	mr	वर्णन (~D)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +51				0	mr	लेखक (~A)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +52				0	mr	निर्मिती दिनांक (~e)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +53				0	mr	शेवटी बदल केलेली तारीख (~L)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +54				0	mr	धारिकेचे नाव (~F)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +55				0	mr	फाइल स्वरूपण (~t)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +56				0	mr	फाइल स्वरूपण चित्रसंकेत (~i)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +57				0	mr	पानांची संख्या (~o)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +58				0	mr	KB मध्ये आकारमान (~S)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +59				0	mr	आपल्या ब्राउजर मध्ये पूर्वदृश्य पहाण्यासाठी 'पूर्वदृश्य' वर क्लिक करा:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +60				0	mr	निवडलेली मांडणी इच्छित करा				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +61				0	mr	विषयांच्या कोष्टकातील प्रत्येक कागदपत्रासाठी खाली दिलेली माहिती समाविष्ट करा:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +62				0	mr	पडदा पृथक्करणासाठी मांडणी योग्य करा:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +64				0	mr	640x480 (~6)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +65				0	mr	800x600 (~8)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +66				0	mr	1024x768 (~1)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +70				0	mr	आपले संकेतस्थळ  निर्माण करत आहे				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +71				0	mr	%START - %END/%TOTAL				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +72				0	mr	माझे संकेतस्थळ  				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +73				0	mr	FTP लक्ष्य '%FILENAME' ही एक फाइल आहे.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +74				0	mr	स्थानिक लक्ष्य '%FILENAME' ही फाइल आहे.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +75				0	mr	ZIP लक्ष्य '%FILENAME' आधीपासूनच अस्तित्वात आहे. आधीपासूनच असलेल्या लक्ष्यावर आपणास दुसरे घालायचे आहे का? 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +76				0	mr	FTP लक्ष्य डिरेक्टरी '%FILENAME' रिक्त नाही. काही फाइलंवर दुसरया फाइल घालू  शकता. आपणास चालू ठेवायचे आहे का?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +77				0	mr	स्थानिक लक्ष्य डिरेक्टरी '%FILENAME' रिक्त नाही. काही फाइलंवर दुसरया फाइल घालू  शकता.  आपणास चालू ठेवायचे आहे का?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +78				0	mr	दिलेल्या नावाखाली नियंत्रणे आधीपासूनच अस्तित्वात आहेत. आधीपासूनच असलेल्या नियंत्रणावर    दुसरी नियंत्रणे  घालू  शकता. 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +79				0	mr	कागदपत्र पाठवत आहे...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +80				0	mr	आणण्याची तयारी करत आहे...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +81				0	mr	मांडणी फाइलंची प्रत करत आहे...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +82				0	mr	विषयांचे कोष्टक निर्माण करण्याची तयारी करत आहे...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +83				0	mr	विषयांची कोष्टक निर्माण करत आहे...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +84				0	mr	प्रारंभ करीत आहे...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +86				0	mr	प्रकाशनासाठी तयारी करत आहे...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +87				0	mr	स्थानिक डिरेक्टरीत प्रकाशित करत आहे...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +88				0	mr	FTP इष्टस्थळी प्रकाशित करत आहे...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +89				0	mr	ZIP आर्किव मध्ये प्रकाशित करत आहे...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 34				0	mr	नियंत्रणाना जतन करा (शिफारस केलेले) (~S)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 35				0	mr	याप्रमाणे जतन करा (~a):				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 36				0	mr	वेब विझार्डसाठी नियंत्रणे निवडा (~C)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 37				0	mr	संकेतस्थळाचे विषय				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 38				0	mr	समाविष्ट करा (~A)...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 39				0	mr	काढून टाका (~v)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 40				0	mr	आपल्या संकेतस्थळाच्या विषय कोष्टकासाठी मांडणी निवडा				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 41				0	mr	विषयांच्या कोष्टक पानासाठी शैली निवडा				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 42				0	mr	शैली (~S):				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 48				0	mr	मांडणी (~L): 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 50				0	mr	वर्णन (~D)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 51				0	mr	लेखक (~A)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 52				0	mr	निर्मिती दिनांक (~e)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 53				0	mr	शेवटी बदल केलेली तारीख (~L)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 54				0	mr	धारिकेचे नाव (~F)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 55				0	mr	फाइल स्वरूपण (~t)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 56				0	mr	फाइल स्वरूपण चित्रसंकेत (~i)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 57				0	mr	पानांची संख्या (~o)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 58				0	mr	KB मध्ये आकारमान (~S)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 59				0	mr	आपल्या ब्राउजर मध्ये पूर्वदृश्य पहाण्यासाठी 'पूर्वदृश्य' वर क्लिक करा:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 60				0	mr	निवडलेली मांडणी इच्छित करा				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 61				0	mr	विषयांच्या कोष्टकातील प्रत्येक कागदपत्रासाठी खाली दिलेली माहिती समाविष्ट करा:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 62				0	mr	पडदा पृथक्करणासाठी मांडणी योग्य करा:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 64				0	mr	640x480 (~6)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 65				0	mr	800x600 (~8)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 66				0	mr	1024x768 (~1)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 70				0	mr	आपले संकेतस्थळ  निर्माण करत आहे				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 71				0	mr	%START - %END/%TOTAL				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 72				0	mr	माझे संकेतस्थळ  				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 73				0	mr	FTP लक्ष्य '%FILENAME' ही एक फाइल आहे.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 74				0	mr	स्थानिक लक्ष्य '%FILENAME' ही फाइल आहे.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 75				0	mr	ZIP लक्ष्य '%FILENAME' आधीपासूनच अस्तित्वात आहे. आधीपासूनच असलेल्या लक्ष्यावर आपणास दुसरे घालायचे आहे का? 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 76				0	mr	FTP लक्ष्य डिरेक्टरी '%FILENAME' रिक्त नाही. काही फाइलंवर दुसरया फाइल घालू  शकता. आपणास चालू ठेवायचे आहे का?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 77				0	mr	स्थानिक लक्ष्य डिरेक्टरी '%FILENAME' रिक्त नाही. काही फाइलंवर दुसरया फाइल घालू  शकता.  आपणास चालू ठेवायचे आहे का?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 78				0	mr	दिलेल्या नावाखाली नियंत्रणे आधीपासूनच अस्तित्वात आहेत. आधीपासूनच असलेल्या नियंत्रणावर    दुसरी नियंत्रणे  घालू  शकता. 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 79				0	mr	कागदपत्र पाठवत आहे...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 80				0	mr	आणण्याची तयारी करत आहे...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 81				0	mr	मांडणी फाइलंची प्रत करत आहे...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 82				0	mr	विषयांचे कोष्टक निर्माण करण्याची तयारी करत आहे...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 83				0	mr	विषयांची कोष्टक निर्माण करत आहे...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 84				0	mr	प्रारंभ करीत आहे...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 86				0	mr	प्रकाशनासाठी तयारी करत आहे...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 87				0	mr	स्थानिक डिरेक्टरीत प्रकाशित करत आहे...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 88				0	mr	FTP इष्टस्थळी प्रकाशित करत आहे...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 89				0	mr	ZIP आर्किव मध्ये प्रकाशित करत आहे...				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 90				0	mr	समाप्त करत आहे...				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 94				0	mr	चित्रालेख फाइल				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 95				0	mr	सर्व फाइल				2002-02-02 02:02:02
@@ -4893,97 +4893,97 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 98		
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 99				0	mr	प्रतिमांची  पार्श्वभूमी निवडा: 				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 100				0	mr	चित्रसंकेत संच				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 101				0	mr	चित्रसंकेत संच निवडा:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +102				0	mr	इतर...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +103				0	mr	कोणी नाही				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +104				0	mr	आपले संकेतस्थळ ह्यात यशस्वीपणे निर्माण झाले आहे: %FILENAME				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +105				0	mr	संकेतस्थळ निर्माण करताना एक किंवा अनेक दोष घडले.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +106				0	mr	विषयांची कोष्टक पान(ने) निर्माण करताना दोष घडला. 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +107				0	mr	फाइल मांडणीची प्रत करताना दोष घडला. 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +108				0	mr	'%FILENAME' साठी कागदपत्र माहिती गोळा करताना दोष आला. 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +109				0	mr	'%FILENAME' कागदपत्र पाठवताना दोष आला.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +110				0	mr	'%FILENAME' आणण्यासाठी डिरेक्टरी निर्माण करताना दोष आला.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +111				0	mr	दस्तऐवज '%FILENAME' चे स्वरूप बदलतेवेळी सुरक्षा त्रुटी आढळली.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +112				0	mr	'%FILENAME' कागदपत्र पाठवताना इनपुट/आउटपुट त्रुटी घडली.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +113				0	mr	तात्पुरत्या डिरेक्टरीत माध्यम धारिकेची प्रत करताना दोष आला.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +114				0	mr	खाली दिलेल्या इष्टस्थळी संकेतस्थळाची प्रत  करता आली नाही: %URL				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +115				0	mr	अनपेक्षित दोष आला: %ERROR				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +116				0	mr	फाइल वैधता तपासताना अनपेक्षित दोष आढळले: '%FILENAME'				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +117				0	mr	%FILENAME' हे धारक आहे.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +118				0	mr	वेब विझार्ड नियंत्रणाना लोड करत आहे...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +119				0	mr	अनपेक्षित दोष आला.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +120				0	mr	कागदपत्राची वैधता तपासत  आहे...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +121				0	mr	माझे आर्किव				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +122				0	mr	प्रस्तावना				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +123				0	mr	कागदपत्रे				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +124				0	mr	मुख्य मांडणी				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +125				0	mr	मांडणी तपशील				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +126				0	mr	शैली				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +127				0	mr	संकेतस्थळाची माहिती				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +128				0	mr	पूर्वदृश्य				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +130				0	mr	निवडलेली नियंत्रणे काढून टाकली जातील.\n\nआपणास खरोखरीच ही नियंत्रणे काढून टाकायची आहेत का? 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +131				0	mr	%NUMBER पाने				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +132				0	mr	%NUMBER स्लाईड्स				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +133				0	mr	निर्मिती: %DATE				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +134				0	mr	शेवटी सुधारणा केलेले: %DATE				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +135				0	mr	वेब विझार्ड नियंत्रणे				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +136				0	mr	 प्रतिमेची पार्श्वभूमी:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +137				0	mr	चित्रसंकेत संच:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +138				0	mr	चित्रसंकेत संचाचा उपयोग HTML स्वरूपणातील सादरीकरणासाठी केला जातो.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +139				0	mr	HTML मेटाडाटा				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 102				0	mr	इतर...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 103				0	mr	कोणी नाही				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 104				0	mr	आपले संकेतस्थळ ह्यात यशस्वीपणे निर्माण झाले आहे: %FILENAME				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 105				0	mr	संकेतस्थळ निर्माण करताना एक किंवा अनेक दोष घडले.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 106				0	mr	विषयांची कोष्टक पान(ने) निर्माण करताना दोष घडला. 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 107				0	mr	फाइल मांडणीची प्रत करताना दोष घडला. 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 108				0	mr	'%FILENAME' साठी कागदपत्र माहिती गोळा करताना दोष आला. 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 109				0	mr	'%FILENAME' कागदपत्र पाठवताना दोष आला.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 110				0	mr	'%FILENAME' आणण्यासाठी डिरेक्टरी निर्माण करताना दोष आला.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 111				0	mr	दस्तऐवज '%FILENAME' चे स्वरूप बदलतेवेळी सुरक्षा त्रुटी आढळली.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 112				0	mr	'%FILENAME' कागदपत्र पाठवताना इनपुट/आउटपुट त्रुटी घडली.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 113				0	mr	तात्पुरत्या डिरेक्टरीत माध्यम धारिकेची प्रत करताना दोष आला.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 114				0	mr	खाली दिलेल्या इष्टस्थळी संकेतस्थळाची प्रत  करता आली नाही: %URL				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 115				0	mr	अनपेक्षित दोष आला: %ERROR				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 116				0	mr	फाइल वैधता तपासताना अनपेक्षित दोष आढळले: '%FILENAME'				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 117				0	mr	%FILENAME' हे धारक आहे.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 118				0	mr	वेब विझार्ड नियंत्रणाना लोड करत आहे...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 119				0	mr	अनपेक्षित दोष आला.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 120				0	mr	कागदपत्राची वैधता तपासत  आहे...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 121				0	mr	माझे आर्किव				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 122				0	mr	प्रस्तावना				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 123				0	mr	कागदपत्रे				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 124				0	mr	मुख्य मांडणी				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 125				0	mr	मांडणी तपशील				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 126				0	mr	शैली				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 127				0	mr	संकेतस्थळाची माहिती				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 128				0	mr	पूर्वदृश्य				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 130				0	mr	निवडलेली नियंत्रणे काढून टाकली जातील.\n\nआपणास खरोखरीच ही नियंत्रणे काढून टाकायची आहेत का? 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 131				0	mr	%NUMBER पाने				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 132				0	mr	%NUMBER स्लाईड्स				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 133				0	mr	निर्मिती: %DATE				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 134				0	mr	शेवटी सुधारणा केलेले: %DATE				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 135				0	mr	वेब विझार्ड नियंत्रणे				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 136				0	mr	 प्रतिमेची पार्श्वभूमी:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 137				0	mr	चित्रसंकेत संच:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 138				0	mr	चित्रसंकेत संचाचा उपयोग HTML स्वरूपणातील सादरीकरणासाठी केला जातो.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 139				0	mr	HTML मेटाडाटा				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +140				0	mr	निवडा...				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +141				0	mr	निवडा...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +142				0	mr	<मूळस्थिती>				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +143				0	mr	FTP प्रॉक्सी द्वारा प्रकाशनास आधार दिलेला   नाही.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +144				0	mr	<कोणतीही  प्रतिमेची पार्श्वभूमी नाही>				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +145				0	mr	<कोणताही चित्रसंकेत संच नाही>				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +146				0	mr	FTP डिरेक्टरी '%FILENAME' निर्माण करता आली नाही.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 142				0	mr	<मूळस्थिती>				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 143				0	mr	FTP प्रॉक्सी द्वारा प्रकाशनास आधार दिलेला   नाही.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 144				0	mr	<कोणतीही  प्रतिमेची पार्श्वभूमी नाही>				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 145				0	mr	<कोणताही चित्रसंकेत संच नाही>				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 146				0	mr	FTP डिरेक्टरी '%FILENAME' निर्माण करता आली नाही.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +147				0	mr	FTP डिरेक्टरी '%FILENAME' अस्तित्वात नाही. \nआता डिरेक्टरी निर्माण करायची का?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +148				0	mr	Zip फाइल '%FILENAME' निर्माण करता आली नाही: त्याच नावाची डिरेक्टरी आधीपासूनच अस्तित्वात आहे.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 148				0	mr	Zip फाइल '%FILENAME' निर्माण करता आली नाही: त्याच नावाची डिरेक्टरी आधीपासूनच अस्तित्वात आहे.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +149				0	mr	स्थानिक डिरेक्टरी '%FILENAME' निर्माण करता आली नाही. \nकृपया आपला लेखन-प्रवेश तपासा.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +150				0	mr	स्थानिक डिरेक्टरी '%FILENAME' अस्तित्वात नाही. \nडिरेक्टरी आत्ता निर्माण करायची का?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +151				0	mr	आकारमान: %NUMBERKB				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +152				0	mr	फाइल सापडली नाही. आपण नवीन फाइल स्थान निर्देशित करू इच्छिता का?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +0				0	mr	FTP जुळणी				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +1				0	mr	वापरकर्त्याचे नाव (~U):				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +2				0	mr	परवलीचा शब्द (~P):				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +3				0	mr	जोडा				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +4				0	mr	1. FTP जुळणी माहिती एन्टर करा.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +5				0	mr	सर्व्हरचे नाव किंवा IP पत्ता (~S):				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +6				0	mr	2. सर्व्हरशी जुळणी.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +7				0	mr	3. दूरची डिरेक्टरी निवडा (वैकल्पिक) (~C).				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 151				0	mr	आकारमान: %NUMBERKB				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 152				0	mr	फाइल सापडली नाही. आपण नवीन फाइल स्थान निर्देशित करू इच्छिता का?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 0				0	mr	FTP जुळणी				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 1				0	mr	वापरकर्त्याचे नाव (~U):				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 2				0	mr	परवलीचा शब्द (~P):				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 3				0	mr	जोडा				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 4				0	mr	1. FTP जुळणी माहिती एन्टर करा.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 5				0	mr	सर्व्हरचे नाव किंवा IP पत्ता (~S):				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 6				0	mr	2. सर्व्हरशी जुळणी.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 7				0	mr	3. दूरची डिरेक्टरी निवडा (वैकल्पिक) (~C).				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +8				0	mr	 ...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +9				0	mr	अज्ञात जुळणीची सद्यःस्थिती				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +10				0	mr	जुळणी यशस्वीरित्या प्रस्थापित झाली				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +11				0	mr	वापरकर्त्याचे नाव किंवा परवलीचा शब्द चुकीचा आहे				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +12				0	mr	सर्व्हरचे नाव ठरवता आले नाही				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +13				0	mr	आपल्याकडे पर्याप्त वापरकर्ता अधिकार नाहीत				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +14				0	mr	सर्व्हरशी जोडू शकत नाही				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +15				0	mr	अनपेक्षित दोष				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +16				0	mr	FTP प्रकाशन डिरेक्टरी				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +17				0	mr	हे FTP धारक नाही				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +18				0	mr	जोडत आहे...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +1				0	mr	अजेंडा सहाय्यक				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +2				0	mr	ह्या ऐजेन्डा विझार्ड मध्ये मॅन्युअल बदल करा (~m)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 9				0	mr	अज्ञात जुळणीची सद्यःस्थिती				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 10				0	mr	जुळणी यशस्वीरित्या प्रस्थापित झाली				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 11				0	mr	वापरकर्त्याचे नाव किंवा परवलीचा शब्द चुकीचा आहे				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 12				0	mr	सर्व्हरचे नाव ठरवता आले नाही				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 13				0	mr	आपल्याकडे पर्याप्त वापरकर्ता अधिकार नाहीत				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 14				0	mr	सर्व्हरशी जोडू शकत नाही				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 15				0	mr	अनपेक्षित दोष				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 16				0	mr	FTP प्रकाशन डिरेक्टरी				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 17				0	mr	हे FTP धारक नाही				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 18				0	mr	जोडत आहे...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 1				0	mr	अजेंडा सहाय्यक				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 2				0	mr	ह्या ऐजेन्डा विझार्ड मध्ये मॅन्युअल बदल करा (~m)				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +3				0	mr	नमुन्याचे नाव:				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 4				0	mr	स्थान व फाइल नाव:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +6				0	mr	कृपया ऐजेन्डासाठी पान रचना निवडा				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +7				0	mr	कृपया आपणास आपल्या ऐजेन्डा नमुन्यात समाविष्ट करायचे असलेले शीर्षक निवडा				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +8				0	mr	कृपया घटनेसाठी सर्वसाधारण माहिती एन्टर करा				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +9				0	mr	कृपया ऐजेन्डासाठी बाबींना निर्देशित करा				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +10				0	mr	कृपया आपणास आपल्या ऐजेन्डा नमुन्यात समाविष्ट करायची असलेली नावे निवडा				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 6				0	mr	कृपया ऐजेन्डासाठी पान रचना निवडा				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 7				0	mr	कृपया आपणास आपल्या ऐजेन्डा नमुन्यात समाविष्ट करायचे असलेले शीर्षक निवडा				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 8				0	mr	कृपया घटनेसाठी सर्वसाधारण माहिती एन्टर करा				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 9				0	mr	कृपया ऐजेन्डासाठी बाबींना निर्देशित करा				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 10				0	mr	कृपया आपणास आपल्या ऐजेन्डा नमुन्यात समाविष्ट करायची असलेली नावे निवडा				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +11				0	mr	नाव निवडा व प्रारूप जतन करा				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +12				0	mr	मिनिटांची नोंद   करण्यासाठी नमुना  समाविष्ट करा				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +13				0	mr	हे विझार्ड ऐजेन्डा नमुना निर्माण करण्यात आपली मदत करते. नंतर जेव्हा गरज असेल तेव्हा ऐजेन्डा निर्माण करण्यासाठी या नमुन्याचा उपयोग करता येतो.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +14				0	mr	वेळ:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 12				0	mr	मिनिटांची नोंद   करण्यासाठी नमुना  समाविष्ट करा				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 13				0	mr	हे विझार्ड ऐजेन्डा नमुना निर्माण करण्यात आपली मदत करते. नंतर जेव्हा गरज असेल तेव्हा ऐजेन्डा निर्माण करण्यासाठी या नमुन्याचा उपयोग करता येतो.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 14				0	mr	वेळ:				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +15				0	mr	नाव:				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 16				0	mr	स्थान:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +17				0	mr	रिक्त प्रक्षेत्रात स्थानधारकांचा उपयोग केला जाईल. नंतर आपण मजकूराबरोरबर स्थानधारके बदलू शकता.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 17				0	mr	रिक्त प्रक्षेत्रात स्थानधारकांचा उपयोग केला जाईल. नंतर आपण मजकूराबरोरबर स्थानधारके बदलू शकता.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +18				0	mr	 ...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +19				0	mr	ह्या नमुन्यातून ऐजेन्डा निर्माण करा (~a)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +20				0	mr	नमुन्यातून नवीन ऐजेन्डा निर्माण करण्यासाठी, आपण जिथे नमुना जतन केला होता त्या स्थानावर जा व धारिकेवर दोनदा क्लिक करा.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +21				0	mr	ऐजेन्डा बाब				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +22				0	mr	जबाबदार				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +23				0	mr	अवधी				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 19				0	mr	ह्या नमुन्यातून ऐजेन्डा निर्माण करा (~a)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 20				0	mr	नमुन्यातून नवीन ऐजेन्डा निर्माण करण्यासाठी, आपण जिथे नमुना जतन केला होता त्या स्थानावर जा व धारिकेवर दोनदा क्लिक करा.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 21				0	mr	ऐजेन्डा बाब				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 22				0	mr	जबाबदार				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 23				0	mr	अवधी				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +24				0	mr	द्वारा मिटिंग बोलवली आहे				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +25				0	mr	अध्यक्ष				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +26				0	mr	मिनिट ठेवणारा				2002-02-02 02:02:02
@@ -4991,29 +4991,29 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +27
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +28				0	mr	उपस्थित				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +29				0	mr	निरीक्षक				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +30				0	mr	सोय करणारी व्यक्ति				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +31				0	mr	निवडक लोकांच्या नावासाठी ऐजेन्डा नमुन्यात स्थानधारके समाविष्ट केले जातील. नमुन्यातून ऐजेन्डा निर्माण करताना, आपण संबंधित नावांबरोबर हे स्थानधारक बदलू शकता.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 31				0	mr	निवडक लोकांच्या नावासाठी ऐजेन्डा नमुन्यात स्थानधारके समाविष्ट केले जातील. नमुन्यातून ऐजेन्डा निर्माण करताना, आपण संबंधित नावांबरोबर हे स्थानधारक बदलू शकता.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +32				0	mr	मिटिंगचा प्रकार				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +33				0	mr	कृपया वाचा				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +34				0	mr	कृपया आणा				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +35				0	mr	टीपा				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +36				0	mr	निवडक बाबींसाठी ऐजेन्डा नमुन्यात स्थानधारके समाविष्ट केले जातील.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 36				0	mr	निवडक बाबींसाठी ऐजेन्डा नमुन्यात स्थानधारके समाविष्ट केले जातील.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +38				0	mr	दिनांक:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +39				0	mr	हे विझार्ड ऐजेन्डा नमुना निर्माण करते जे आपणासाठी समान मांडणी व नियंत्रण असलेले अनेक ऐजेन्डा निर्माण करणे शक्य करते.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +40				0	mr	पान रचना:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +41				0	mr	myAgendaTemplate.stw				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +42				0	mr	माझा ऐजेन्डा नमुना				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +43				0	mr	ऐजेन्डा नमुना जतन करताना अनपेक्षित दोष आला.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +44				0	mr	नाव				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +45				0	mr	दिनांक				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +46				0	mr	वेळ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 39				0	mr	हे विझार्ड ऐजेन्डा नमुना निर्माण करते जे आपणासाठी समान मांडणी व नियंत्रण असलेले अनेक ऐजेन्डा निर्माण करणे शक्य करते.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 40				0	mr	पान रचना:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 41				0	mr	myAgendaTemplate.stw				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 42				0	mr	माझा ऐजेन्डा नमुना				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 43				0	mr	ऐजेन्डा नमुना जतन करताना अनपेक्षित दोष आला.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 44				0	mr	नाव				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 45				0	mr	दिनांक				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 46				0	mr	वेळ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 47				0	mr	स्थान				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +48				0	mr	हा मजकूर बदलण्यासाठी क्लिक करा				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +51				0	mr	सर्वसाधारण माहिती				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +52				0	mr	समाविष्ट करायचे असलेले शीर्षक				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +53				0	mr	नाव				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +54				0	mr	ऐजेन्डा बाबीं				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 48				0	mr	हा मजकूर बदलण्यासाठी क्लिक करा				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 51				0	mr	सर्वसाधारण माहिती				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 52				0	mr	समाविष्ट करायचे असलेले शीर्षक				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 53				0	mr	नाव				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 54				0	mr	ऐजेन्डा बाबीं				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +55				0	mr	नाव व स्थान				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +56				0	mr	ऐजेन्डा नमुना उघडताना अनपेक्षित दोष आला.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 56				0	mr	ऐजेन्डा नमुना उघडताना अनपेक्षित दोष आला.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +57				0	mr	मिटिंगचा प्रकार				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +58				0	mr	कृपया आणा				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +59				0	mr	कृपया वाचा				2002-02-02 02:02:02
@@ -5025,10 +5025,10 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +64
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +65				0	mr	मॉडरेटर				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +66				0	mr	निरीक्षक				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +67				0	mr	सोय करणारी व्यक्ति				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +68				0	mr	अंतर्भूत करा				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +69				0	mr	काढून टाका				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +70				0	mr	वर हलवा				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +71				0	mr	खाली हलवा				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 68				0	mr	अंतर्भूत करा				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 69				0	mr	काढून टाका				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 70				0	mr	वर हलवा				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 71				0	mr	खाली हलवा				2002-02-02 02:02:02
 wizards	source\schedule\schedule.src	0	string	dlgCalTitle				0	mr	%PRODUCTNAME दिनदर्शिका				2002-02-02 02:02:02
 wizards	source\schedule\schedule.src	0	string	dlgCalTitleBack				0	mr	मागे				2002-02-02 02:02:02
 wizards	source\schedule\schedule.src	0	string	dlgCalTitleOwnData				0	mr	वैयक्तिक डाटा				2002-02-02 02:02:02
@@ -11733,7 +11733,7 @@ sw	source\ui\docvw\docvw.src	0	string	STR_REDLINE_FORMAT				0	mr	स्वरू
 sw	source\ui\docvw\docvw.src	0	string	STR_REDLINE_TABLE				0	mr	तक्ता बदल				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_REDLINE_FMTCOLL				0	mr	लागू केलेली परिच्छेद शैली				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_ENDNOTE				0	mr	अंतटीप: 				2002-02-02 02:02:02
-sw	source\ui\docvw\docvw.src	0	string	STR_FTNNOTE				0	mr	तळटीप: 				2002-02-02 02:02:02
+sw	source\ui\docvw\docvw.src	0	string	STR_FOOTNOTE				0	mr	तळटीप: 				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	infobox	MSG_READONLY_CONTENT				0	mr	केवळ-वाचनीय असलेला पाठ्य बदलता येत नाही.\nकोणतीही सुधारणा स्वीकारली जाणार नाही				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_TABLE_COL_ADJUST				0	mr	तक्ता रकाना सुस्थीत करा				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_TABLE_ROW_ADJUST				0	mr	तक्ता ओळ सुस्थीत करा				2002-02-02 02:02:02
@@ -11840,11 +11840,11 @@ sw	source\ui\ribbar\inputwin.src	0	string	STR_TBL_FORMULA				0	mr	मजकू�
 sw	source\ui\ribbar\inputwin.src	0	toolboxitem	TB_INPUT	FN_FORMULA_CALC	HID_TBX_FORMULA_CALC		0	mr	सूत्र				2002-02-02 02:02:02
 sw	source\ui\ribbar\inputwin.src	0	toolboxitem	TB_INPUT	FN_FORMULA_CANCEL	HID_TBX_FORMULA_CANCEL		0	mr	रद्द करा				2002-02-02 02:02:02
 sw	source\ui\ribbar\inputwin.src	0	toolboxitem	TB_INPUT	FN_FORMULA_APPLY	HID_TBX_FORMULA_APPLY		0	mr	लागू करा				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_PAGE			0	mr	पृष्ठ				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_PARAGRAPH			0	mr	परिच्छेद				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_AT_CHAR			0	mr	अक्षरामध्ये				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_CHAR			0	mr	अक्षरासारखे				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_FRAME			0	mr	चौकट				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_PAGE			0	mr	पृष्ठ				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_PARAGRAPH			0	mr	परिच्छेद				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_AT_CHAR			0	mr	अक्षरामध्ये				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_CHAR			0	mr	अक्षरासारखे				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_FRAME			0	mr	चौकट				2002-02-02 02:02:02
 sw	source\ui\wrtsh\wrtsh.src	0	string	STR_DDEERROR_APP1				0	mr	अनुप्रयोग [				2002-02-02 02:02:02
 sw	source\ui\wrtsh\wrtsh.src	0	string	STR_DDEERROR_APP2				0	mr	] प्रतिसाद देत नाही.				2002-02-02 02:02:02
 sw	source\ui\wrtsh\wrtsh.src	0	string	STR_DDEERROR_DATA1				0	mr	[ साठी डाटा				2002-02-02 02:02:02
@@ -12286,12 +12286,12 @@ sw	source\ui\app\mn.src	0	menuitem	MN_WRAP_DRAW.MN_WRAP	FN_FRAME_WRAPTHRU_TRANSP
 sw	source\ui\app\mn.src	0	menuitem	MN_WRAP_DRAW.MN_WRAP	FN_WRAP_ANCHOR_ONLY	CMD_FN_WRAP_ANCHOR_ONLY		0	mr	पहिला परिच्छेद (~F)				2002-02-02 02:02:02
 sw	source\ui\app\mn.src	0	menuitem	MN_WRAP_DRAW.MN_WRAP	FN_DRAW_WRAP_DLG	CMD_FN_DRAW_WRAP_DLG		0	mr	संपादन (~E)...				2002-02-02 02:02:02
 sw	source\ui\app\mn.src	0	menuitem	MN_WRAP_DRAW	MN_WRAP			0	mr	गुंडाळणे (~W)				2002-02-02 02:02:02
-sw	source\ui\app\mn.src	0	menuitem	MN_AT_FRAME	FN_TOOL_ANKER_FRAME	CMD_FN_TOOL_ANKER_FRAME		0	mr	चौकटीला (~F)				2002-02-02 02:02:02
-sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANKER	FN_TOOL_ANKER_PAGE	CMD_FN_TOOL_ANKER_PAGE		0	mr	पानाला (~a)				2002-02-02 02:02:02
-sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANKER	FN_TOOL_ANKER_PARAGRAPH	CMD_FN_TOOL_ANKER_PARAGRAPH		0	mr	परिच्छेदाला (~P)				2002-02-02 02:02:02
-sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANKER	FN_TOOL_ANKER_AT_CHAR	CMD_FN_TOOL_ANKER_AT_CHAR		0	mr	अक्षराला (~C)				2002-02-02 02:02:02
-sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANKER	FN_TOOL_ANKER_CHAR	CMD_FN_TOOL_ANKER_CHAR		0	mr	अक्षराच्या रुपात (~h)				2002-02-02 02:02:02
-sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR	FN_TOOL_ANKER	CMD_FN_TOOL_ANKER		0	mr	संदर्भबिंदू (~c)				2002-02-02 02:02:02
+sw	source\ui\app\mn.src	0	menuitem	MN_AT_FRAME	FN_TOOL_ANCHOR_FRAME	CMD_FN_TOOL_ANCHOR_FRAME		0	mr	चौकटीला (~F)				2002-02-02 02:02:02
+sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANCHOR	FN_TOOL_ANCHOR_PAGE	CMD_FN_TOOL_ANCHOR_PAGE		0	mr	पानाला (~a)				2002-02-02 02:02:02
+sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANCHOR	FN_TOOL_ANCHOR_PARAGRAPH	CMD_FN_TOOL_ANCHOR_PARAGRAPH		0	mr	परिच्छेदाला (~P)				2002-02-02 02:02:02
+sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANCHOR	FN_TOOL_ANCHOR_AT_CHAR	CMD_FN_TOOL_ANCHOR_AT_CHAR		0	mr	अक्षराला (~C)				2002-02-02 02:02:02
+sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANCHOR	FN_TOOL_ANCHOR_CHAR	CMD_FN_TOOL_ANCHOR_CHAR		0	mr	अक्षराच्या रुपात (~h)				2002-02-02 02:02:02
+sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR	FN_TOOL_ANCHOR	CMD_FN_TOOL_ANCHOR		0	mr	संदर्भबिंदू (~c)				2002-02-02 02:02:02
 sw	source\ui\app\mn.src	0	string	MN_DRAWFORM_POPUPMENU				0	mr	नियंत्रण				2002-02-02 02:02:02
 sw	source\ui\app\mn.src	0	string	MN_DRWTXT_POPUPMENU				0	mr	वस्तू पाठ्य रेखाटा				2002-02-02 02:02:02
 sw	source\ui\app\mn.src	0	menuitem	MN_REDCOMMENT	FN_DELETE_COMMENT	CMD_FN_DELETE_COMMENT		0	mr	बदल टिप नष्ट करा (~C)				2002-02-02 02:02:02
@@ -12388,7 +12388,7 @@ sw	source\ui\app\app.src	0	string	STR_WRITER_DOCUMENT_FULLTYPE				0	mr	%PRODUCTN
 sw	source\ui\app\app.src	0	string	STR_CANTOPEN				0	mr	कागदपत्र उघडू शकत नाही.				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_CANTCREATE				0	mr	कागदपत्र निर्माण करू शकत नाही.				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_DLLNOTFOUND				0	mr	गाळणी सापडली नाही.				2002-02-02 02:02:02
-sw	source\ui\app\app.src	0	string	STR_UNBENANNT				0	mr	शीर्षक-रहित				2002-02-02 02:02:02
+sw	source\ui\app\app.src	0	string	STR_UNTITLED				0	mr	शीर्षक-रहित				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_LOAD_GLOBAL_DOC				0	mr	प्रधान कागदपत्राचे नाव आणि मार्ग				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_LOAD_HTML_DOC				0	mr	HTML कागदपत्राचे नाव आणि मार्ग				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	infobox	MSG_ERROR_SEND_MAIL				0	mr	मेल पाठवितांना दोष.				2002-02-02 02:02:02

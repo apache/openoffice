@@ -19295,7 +19295,7 @@ sw	source\ui\app\app.src	0	string	STR_STATSTR_TOX_UPDATE				1	dgo	इंडै�
 sw	source\ui\app\app.src	0	string	STR_STATSTR_W4WREAD				1	dgo	दस्तावेज दरामद होआ करदा ऐ 				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_STATSTR_W4WWRITE				1	dgo	दस्तावेज बरामद होआ करदा ऐ				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_TABLE_DEFNAME				1	dgo	टेबल 				2002-02-02 02:02:02
-sw	source\ui\app\app.src	0	string	STR_UNBENANNT				1	dgo	बिजन शीर्शक				2002-02-02 02:02:02
+sw	source\ui\app\app.src	0	string	STR_UNTITLED				1	dgo	बिजन शीर्शक				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_WESTERN_FONT				1	dgo	पच्छमी इबारत: 				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_WRITER_DOCUMENT_FULLTYPE				1	dgo	%PRODUCTNAME %PRODUCTVERSION इबारत दस्तावेज 				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	warningbox	MSG_DATA_SOURCES_UNAVAILABLE		HID_DATA_SOURCES_UNAVAILABLE		202	dgo	अजें कोई बी डेटा स्रोत सैट्ट नेईं होए दा ऐ. खेतरें गी डेटा( उदाहरण लेई, नांऽ ते सिरनामें ) भेजने लेई तुसें इक डेटा स्रोत, जि'यां के इक डेटाबेस,  लोड़दा ऐ. 				2002-02-02 02:02:02
@@ -20207,7 +20207,7 @@ sw	source\ui\docvw\docvw.src	0	string	STR_CHAIN_SOURCE_CHAINED				0	dgo	स्�
 sw	source\ui\docvw\docvw.src	0	string	STR_CHAIN_WRONG_AREA				0	dgo	कड़ीबद्ध करने लेई लक्ष्य चगाठ इक अमान्य खित्ते च ऐ. 				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_ENDNOTE				0	dgo	खीरीनोट: 				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_EXPORT_GRAFIK_TITLE				0	dgo	ग्राफिक(बहु.)बरामद करो 				2002-02-02 02:02:02
-sw	source\ui\docvw\docvw.src	0	string	STR_FTNNOTE				0	dgo	फुटनोट: 				2002-02-02 02:02:02
+sw	source\ui\docvw\docvw.src	0	string	STR_FOOTNOTE				0	dgo	फुटनोट: 				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_REDLINE_DELETE				0	dgo	म्हेसेआ 				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_REDLINE_FMTCOLL				0	dgo	इस्तेमाल पैह्‌रा शैलियां 				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_REDLINE_FORMAT				0	dgo	रूप-रचना कीती 				2002-02-02 02:02:02
@@ -21314,11 +21314,11 @@ sw	source\ui\ribbar\inputwin.src	0	toolboxitem	TB_INPUT	FN_FORMULA_APPLY	FN_FORM
 sw	source\ui\ribbar\inputwin.src	0	toolboxitem	TB_INPUT	FN_FORMULA_CALC	FN_FORMULA_CALC		500	dgo	फार्मूला				2002-02-02 02:02:02
 sw	source\ui\ribbar\inputwin.src	0	toolboxitem	TB_INPUT	FN_FORMULA_CANCEL	FN_FORMULA_CANCEL		500	dgo	रद्द करो 				2002-02-02 02:02:02
 sw	source\ui\ribbar\tblctrl.src	0	floatingwindow	RID_TBL_OPT_CTRL		HID_TBL_OPT_CTRL		0	dgo	योग्य करणे 				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_AT_CHAR			0	dgo	वर्ण च 				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_CHAR			0	dgo	जि'यां वर्ण				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_FRAME			0	dgo	चगाठ 				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_PAGE			0	dgo	सफा				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_PARAGRAPH			0	dgo	पैह्‌रा 				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_AT_CHAR			0	dgo	वर्ण च 				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_CHAR			0	dgo	जि'यां वर्ण				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_FRAME			0	dgo	चगाठ 				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_PAGE			0	dgo	सफा				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_PARAGRAPH			0	dgo	पैह्‌रा 				2002-02-02 02:02:02
 sw	source\ui\ribbar\workctrl.src	0	floatingwindow	RID_INSERT_CTRL		HID_INSERT_CTRL		0	dgo	समावेश  करो 				2002-02-02 02:02:02
 sw	source\ui\ribbar\workctrl.src	0	floatingwindow	RID_INSERT_OBJ_CTRL		HID_INSERT_OBJ_CTRL		0	dgo	चीजा दा समावेश  करो 				2002-02-02 02:02:02
 sw	source\ui\ribbar\workctrl.src	0	floatingwindow	RID_SCROLL_NAVIGATION_WIN		HID_INSERT_CTRL		0	dgo	संचालन				2002-02-02 02:02:02

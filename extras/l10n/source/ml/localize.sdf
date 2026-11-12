@@ -3603,8 +3603,8 @@ formula	source\core\resource\core_resource.src	0	string	RID_STRLIST_FUNCTION_NAM
 formula	source\core\resource\core_resource.src	0	string	RID_STRLIST_FUNCTION_NAMES	SC_OPCODE_ERROR_NA			0	ml	#N/A				2002-02-02 02:02:02
 formula	source\ui\dlg\parawin.src	0	#define	RB_ARGBLOCK( y )				13	ml	-		തെരഞ്ഞെടുക്കുക		2002-02-02 02:02:02
 formula	source\ui\dlg\parawin.src	0	fixedtext	RID_FORMULATAB_PARAMETER	FT_EDITDESC			198	ml	ഫംഗ്ഷന്‍ അപരിചിതം				2002-02-02 02:02:02
-formula	source\ui\dlg\parawin.src	0	string	RID_FORMULATAB_PARAMETER	STR_OPTIONAL			8	ml	(ഐച്ഛികം)				2002-02-02 02:02:02
-formula	source\ui\dlg\parawin.src	0	string	RID_FORMULATAB_PARAMETER	STR_REQUIRED			8	ml	(ആവശ്യമുള്ളതു്)				2002-02-02 02:02:02
+formula	source\ui\dlg\parawin.src	0	string	RID_FORMULATAB_PARAMETER.FT_ARG1.FT_ARG2.FT_ARG3.FT_ARG4	STR_OPTIONAL			8	ml	(ഐച്ഛികം)				2002-02-02 02:02:02
+formula	source\ui\dlg\parawin.src	0	string	RID_FORMULATAB_PARAMETER.FT_ARG1.FT_ARG2.FT_ARG3.FT_ARG4	STR_REQUIRED			8	ml	(ആവശ്യമുള്ളതു്)				2002-02-02 02:02:02
 formula	source\ui\dlg\formdlgs.src	0	stringlist	RID_FORMULATAB_FUNCTION.LB_CATEGORY	1			0	ml	അവസാനം ഉപയോഗിച്ചതു്				2002-02-02 02:02:02
 formula	source\ui\dlg\formdlgs.src	0	stringlist	RID_FORMULATAB_FUNCTION.LB_CATEGORY	2			0	ml	എല്ലാം				2002-02-02 02:02:02
 formula	source\ui\dlg\formdlgs.src	0	fixedtext	RID_FORMULATAB_FUNCTION	FT_CATEGORY			84	ml	~വിഭാഗം				2002-02-02 02:02:02
@@ -3711,8 +3711,8 @@ wizards	source\euro\euro.src	0	string	CURRENCIES + 12				0	ml	സ്ലോവേ
 wizards	source\euro\euro.src	0	string	CURRENCIES + 13				0	ml	സിപ്രിയറ്റ് പൌണ്ട്				2002-02-02 02:02:02
 wizards	source\euro\euro.src	0	string	CURRENCIES + 14				0	ml	മാള്‍ട്ടീസ് ലിറാ				2002-02-02 02:02:02
 wizards	source\euro\euro.src	0	string	CURRENCIES + 15				0	ml	സ്ലോവാക്ക് കൊറൂനാ				2002-02-02 02:02:02
-wizards	source\euro\euro.src	0	string	CURRENCIES + 16				0	ml	രേഖയ്ക്കു് സജ്ജമാക്കിയിരിക്കുന്ന കറന്‍സി യൂറോപ്പ്യന്‍ കറന്‍സി അല്ല!				2002-02-02 02:02:02
-wizards	source\euro\euro.src	0	string	CURRENCIES + 17				0	ml	നിങ്ങളുടെ ഓപ്പറേറ്റിങ് സിസ്റ്റത്തിനു് സജ്ജമാക്കിയിരിക്കുന്ന ഭാഷ യൂറോപ്പ്യന്‍ മോണിറ്ററി യൂണിയനില്‍ ഉള്‍പ്പെട്ടതല്ല.				2002-02-02 02:02:02
+wizards	source\euro\euro.src	0	string	CURRENCIES + 21				0	ml	രേഖയ്ക്കു് സജ്ജമാക്കിയിരിക്കുന്ന കറന്‍സി യൂറോപ്പ്യന്‍ കറന്‍സി അല്ല!				2002-02-02 02:02:02
+wizards	source\euro\euro.src	0	string	CURRENCIES + 22				0	ml	നിങ്ങളുടെ ഓപ്പറേറ്റിങ് സിസ്റ്റത്തിനു് സജ്ജമാക്കിയിരിക്കുന്ന ഭാഷ യൂറോപ്പ്യന്‍ മോണിറ്ററി യൂണിയനില്‍ ഉള്‍പ്പെട്ടതല്ല.				2002-02-02 02:02:02
 wizards	source\euro\euro.src	0	string	STEP_LASTPAGE				0	ml	പുരോഗമനം				2002-02-02 02:02:02
 wizards	source\euro\euro.src	0	string	STEP_LASTPAGE + 1				0	ml	പ്രസക്തമായ രേഖകള്‍ വീണ്ടെടുക്കുന്നു...				2002-02-02 02:02:02
 wizards	source\euro\euro.src	0	string	STEP_LASTPAGE + 2				0	ml	രേഖകള്‍ വേര്‍തിരിക്കുന്നു...				2002-02-02 02:02:02
@@ -4149,77 +4149,77 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_FAXWIZARDROADMAP_START + 2		
 wizards	source\formwizard\dbwizres.src	0	string	RID_FAXWIZARDROADMAP_START + 3				0	ml	അയക്കുന്നാളും കൈപ്പറ്റുന്നാളും				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_FAXWIZARDROADMAP_START + 4				0	ml	അടിക്കുറിപ്പു്				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_FAXWIZARDROADMAP_START + 5				0	ml	പേരും സ്ഥലവും				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +1				0	ml	വെബ് വിസാര്ഡ്				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +2				0	ml	ഇന്റര്നെറ്റില് ഡോക്കുമെന്റ് പ്രസിദ്ധീകരിക്കാന് ഈ വെബ് വിസാര്ഡ് താങ്കളെ സഹായിക്കും				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +4				0	ml	നീക്കം ചെയ്യുക				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +5				0	ml	അവതരിപ്പിക്കുക				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +6				0	ml	താങ്കള്ക്ക്  പ്രസിദ്ധീകരിക്കേണ്ട ഡോക്കുമെന്റ്  തിരഞ്ഞെടുക്കുക				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +8				0	ml	ഡോക്കുമെന്റ് വിവരം				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +9				0	ml	ശീര്ഷകം				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +10				0	ml	സംഗ്രഹം				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +11				0	ml	ലേഖകന്				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +12				0	ml	 ഫയല് രൂപരേഖയിലേക്ക് കയറ്റുമതി  				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +13				0	ml	താങ്കളുടെ വെബ്സൈറ്റിലേക്ക് പൊതുവായ വിവരങ്ങള് പ്രവേശിപ്പിക്കുക				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 1				0	ml	വെബ് വിസാര്ഡ്				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 2				0	ml	ഇന്റര്നെറ്റില് ഡോക്കുമെന്റ് പ്രസിദ്ധീകരിക്കാന് ഈ വെബ് വിസാര്ഡ് താങ്കളെ സഹായിക്കും				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 4				0	ml	നീക്കം ചെയ്യുക				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 5				0	ml	അവതരിപ്പിക്കുക				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 6				0	ml	താങ്കള്ക്ക്  പ്രസിദ്ധീകരിക്കേണ്ട ഡോക്കുമെന്റ്  തിരഞ്ഞെടുക്കുക				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 8				0	ml	ഡോക്കുമെന്റ് വിവരം				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 9				0	ml	ശീര്ഷകം				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 10				0	ml	സംഗ്രഹം				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 11				0	ml	ലേഖകന്				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 12				0	ml	 ഫയല് രൂപരേഖയിലേക്ക് കയറ്റുമതി  				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 13				0	ml	താങ്കളുടെ വെബ്സൈറ്റിലേക്ക് പൊതുവായ വിവരങ്ങള് പ്രവേശിപ്പിക്കുക				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +14				0	ml	ശീര്ഷകം:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +16				0	ml	വിവരണം:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +18				0	ml	സൃഷ്ടിച്ച				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +20				0	ml	ഈ-മെയില്				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +21				0	ml	ആവകാശ പത്രം				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +22				0	ml	ആധുനികരിച്ച				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +24				0	ml	പൂര്‍വ്വ ദൃശ്യം				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +25				0	ml	താങ്കള്ക്ക്  എവിടെയാണ‍് താങ്കളുടെ വെബ്സൈറ്റ് പ്രസിദ്ധീകരിക്കേണ്ടത്?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +26				0	ml	പുതിയ വെബ്സൈറ്റ് പ്രസിദ്ധീകരിക്കുക				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +27				0	ml	ലോക്കല് ഫോള്ഡറിലേക്ക് 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 16				0	ml	വിവരണം:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 18				0	ml	സൃഷ്ടിച്ച				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 20				0	ml	ഈ-മെയില്				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 21				0	ml	ആവകാശ പത്രം				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 22				0	ml	ആധുനികരിച്ച				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 24				0	ml	പൂര്‍വ്വ ദൃശ്യം				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 25				0	ml	താങ്കള്ക്ക്  എവിടെയാണ‍് താങ്കളുടെ വെബ്സൈറ്റ് പ്രസിദ്ധീകരിക്കേണ്ടത്?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 26				0	ml	പുതിയ വെബ്സൈറ്റ് പ്രസിദ്ധീകരിക്കുക				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 27				0	ml	ലോക്കല് ഫോള്ഡറിലേക്ക് 				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +28				0	ml	...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +29				0	ml	FTP വഴി വെബ് സൈര്‍വറിലേക്ക്				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +31				0	ml	~Configure...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +32				0	ml	ZIPന്റെ ആര്ക്കീവിലേക്ക്				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 29				0	ml	FTP വഴി വെബ് സൈര്‍വറിലേക്ക്				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 31				0	ml	~Configure...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 32				0	ml	ZIPന്റെ ആര്ക്കീവിലേക്ക്				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +33				0	ml	...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +34				0	ml	സജ്ജീകരണങ്ങള് സംഭരിക്കുക (ശുപാര്ശ ചെയ്തത്)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +35				0	ml	...ആയി സംഭരിക്കുക				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +36				0	ml	വെബ് വിസാര്ഡിന്റെ സജ്ജീകരണങ്ങള്  തിരഞ്ഞെടുക്കുക				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +37				0	ml	വെബ്സൈറ്റിന്റെ ഉള്ളടക്കം				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +38				0	ml	ചേര്ക്കുക				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +39				0	ml	നീക്കം ചെയ്യുക				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +40				0	ml	താങ്കളുടെ വെബ്സൈറ്റിലെ പട്ടികയുടെ ഉള്ളടക്കത്തിന‍് പ്ലാന് തിരഞ്ഞെടുക്കുക				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +41				0	ml	പട്ടികയിലെ ഉള്ളടക്കങ്ങളുടെ പേജിന‌‍് ശൈലി തിരഞ്ഞെടുക്കുക				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +42				0	ml	ശൈലി				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +48				0	ml	പ്ലാനുകള്				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +50				0	ml	~Description				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +51				0	ml	ലേഖകന്				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +52				0	ml	തീയതി  സൃഷ്ടിക്കുക				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +53				0	ml	അവസാനം മാറ്റിയ തീയതി				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +54				0	ml	ഫയല് നാമം				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +55				0	ml	 ഫയല് രൂപരേഖ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +56				0	ml	 ഫയല് രൂപരേഖ ഐക്കണ്				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +57				0	ml	പേജുകളുടെ എണ്ണം				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +58				0	ml	പരിമാണം KB യില്				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +59				0	ml	താങ്കളുടെ ബ്രൌസറിന്റെ പൂര്‍വ്വദൃശ്യം കാണാന് വേണ്ടി പൂര്‍വ്വദൃശ്യം ക്ലിക്ക് ചെയ്യുക				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +60				0	ml	തിരഞ്ഞെടുത്ത പ്ലാന് പ്രാബല്യത്തിലാക്കുക				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +61				0	ml	തന്നിരിക്കുന്ന വിവരങ്ങള്  പട്ടികയിലെ ഉള്ളടക്കത്തിലെ എല്ലാ  ഡോക്കുമെന്റിലും ഉള്പ്പെടുത്തുക				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +62				0	ml	സ്ക്രിന് റസലൂഷന്റെ പ്ലാന് ഓപ്റ്റിമൈസ് ചെയ്യുക				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +64				0	ml	~640x480				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +65				0	ml	~800x600				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +66				0	ml	~1024x768				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +70				0	ml	താങ്കളുടെ വെബ് സൈറ്റ് സൃഷ്ടിക്കുക				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +71				0	ml	%START - %END/%TOTAL				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +72				0	ml	എന്റെ വെബ് സൈറ്റ്				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +73				0	ml	 FTP  ലക്ഷ്യ  ഡയറക്ട്രി '%FILENAME'  ഒരു ഫയലാണ‍്.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +74				0	ml	ലോക്കല് ലക്ഷ്യ  ഡയറക്ട്രി '%FILENAME'   ഒരു ഫയലാണ‍്.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +75				0	ml	  ZIP ലക്ഷ്യ  ഡയറക്ട്രി '%FILENAME' നിലവിലുണ്ട്. താങ്കള്ക്ക് ഫയലുകളില് വീണ്ടും എഴുതണോ?  				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +76				0	ml	 FTP  ലക്ഷ്യ  ഡയറക്ട്രി '%FILENAME' കാലിയല്ല. ചില ഫയലുകള് തിരുത്തി എഴുതി. താങ്കള്ക്ക്  തുടരണോ?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +77				0	ml	ലോക്കല് ലക്ഷ്യ  ഡയറക്ട്രി '%FILENAME' കാലിയല്ല. ചില ഫയലുകളില് തിരുത്തി എഴുതി. താങ്കള്ക്ക്  തുടരണോ?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +78				0	ml	തന്നിരിക്കുന്ന പേരില് സജ്ജീകരണങ്ങള് നിലവിലുണ്ട്. താങ്കള്ക്ക് നിലവിലുള്ള   സജ്ജീകരണത്തില് എഴുതണോ? 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +79				0	ml	ഡോക്കുമെന്റുകള് കറ്റുമതി ചെയ്യുന്നു...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +80				0	ml	 കയറ്റുമതിയ്ക്ക് തയ്യാറാകുന്നു...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +81				0	ml	പ്ലാന് ചെയ്ത ഫയലുകള് പകര്ത്തുന്നു				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +82				0	ml	പട്ടികയുടെ ഉള്ളടക്കം സൃഷ്ടിക്കാന് തയ്യാറാകുന്നു				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +83				0	ml	പട്ടികയുടെ ഉള്ളടക്കം സൃഷ്ടിക്കുക				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +84				0	ml	ഇനിഷ്യലൈസ് ചെയ്യുക				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +86				0	ml	പ്രസിദ്ധീകരിക്കാന് തയ്യാറാക്കുക				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +87				0	ml	ലോക്കല് ഡയറക്ട്രിയില് പ്രസിദ്ധീകരിക്കുക				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +88				0	ml	FTPയുടെ ഉദ്ദിഷ്ടസ്ഥാനം പ്രസിദ്ധീകരിക്കുക				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +89				0	ml	ZIPന്റെ ആര്ക്കീവ് പ്രസിദ്ധീകരിക്കുക				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 34				0	ml	സജ്ജീകരണങ്ങള് സംഭരിക്കുക (ശുപാര്ശ ചെയ്തത്)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 35				0	ml	...ആയി സംഭരിക്കുക				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 36				0	ml	വെബ് വിസാര്ഡിന്റെ സജ്ജീകരണങ്ങള്  തിരഞ്ഞെടുക്കുക				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 37				0	ml	വെബ്സൈറ്റിന്റെ ഉള്ളടക്കം				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 38				0	ml	ചേര്ക്കുക				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 39				0	ml	നീക്കം ചെയ്യുക				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 40				0	ml	താങ്കളുടെ വെബ്സൈറ്റിലെ പട്ടികയുടെ ഉള്ളടക്കത്തിന‍് പ്ലാന് തിരഞ്ഞെടുക്കുക				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 41				0	ml	പട്ടികയിലെ ഉള്ളടക്കങ്ങളുടെ പേജിന‌‍് ശൈലി തിരഞ്ഞെടുക്കുക				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 42				0	ml	ശൈലി				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 48				0	ml	പ്ലാനുകള്				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 50				0	ml	~Description				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 51				0	ml	ലേഖകന്				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 52				0	ml	തീയതി  സൃഷ്ടിക്കുക				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 53				0	ml	അവസാനം മാറ്റിയ തീയതി				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 54				0	ml	ഫയല് നാമം				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 55				0	ml	 ഫയല് രൂപരേഖ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 56				0	ml	 ഫയല് രൂപരേഖ ഐക്കണ്				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 57				0	ml	പേജുകളുടെ എണ്ണം				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 58				0	ml	പരിമാണം KB യില്				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 59				0	ml	താങ്കളുടെ ബ്രൌസറിന്റെ പൂര്‍വ്വദൃശ്യം കാണാന് വേണ്ടി പൂര്‍വ്വദൃശ്യം ക്ലിക്ക് ചെയ്യുക				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 60				0	ml	തിരഞ്ഞെടുത്ത പ്ലാന് പ്രാബല്യത്തിലാക്കുക				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 61				0	ml	തന്നിരിക്കുന്ന വിവരങ്ങള്  പട്ടികയിലെ ഉള്ളടക്കത്തിലെ എല്ലാ  ഡോക്കുമെന്റിലും ഉള്പ്പെടുത്തുക				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 62				0	ml	സ്ക്രിന് റസലൂഷന്റെ പ്ലാന് ഓപ്റ്റിമൈസ് ചെയ്യുക				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 64				0	ml	~640x480				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 65				0	ml	~800x600				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 66				0	ml	~1024x768				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 70				0	ml	താങ്കളുടെ വെബ് സൈറ്റ് സൃഷ്ടിക്കുക				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 71				0	ml	%START - %END/%TOTAL				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 72				0	ml	എന്റെ വെബ് സൈറ്റ്				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 73				0	ml	 FTP  ലക്ഷ്യ  ഡയറക്ട്രി '%FILENAME'  ഒരു ഫയലാണ‍്.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 74				0	ml	ലോക്കല് ലക്ഷ്യ  ഡയറക്ട്രി '%FILENAME'   ഒരു ഫയലാണ‍്.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 75				0	ml	  ZIP ലക്ഷ്യ  ഡയറക്ട്രി '%FILENAME' നിലവിലുണ്ട്. താങ്കള്ക്ക് ഫയലുകളില് വീണ്ടും എഴുതണോ?  				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 76				0	ml	 FTP  ലക്ഷ്യ  ഡയറക്ട്രി '%FILENAME' കാലിയല്ല. ചില ഫയലുകള് തിരുത്തി എഴുതി. താങ്കള്ക്ക്  തുടരണോ?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 77				0	ml	ലോക്കല് ലക്ഷ്യ  ഡയറക്ട്രി '%FILENAME' കാലിയല്ല. ചില ഫയലുകളില് തിരുത്തി എഴുതി. താങ്കള്ക്ക്  തുടരണോ?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 78				0	ml	തന്നിരിക്കുന്ന പേരില് സജ്ജീകരണങ്ങള് നിലവിലുണ്ട്. താങ്കള്ക്ക് നിലവിലുള്ള   സജ്ജീകരണത്തില് എഴുതണോ? 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 79				0	ml	ഡോക്കുമെന്റുകള് കറ്റുമതി ചെയ്യുന്നു...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 80				0	ml	 കയറ്റുമതിയ്ക്ക് തയ്യാറാകുന്നു...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 81				0	ml	പ്ലാന് ചെയ്ത ഫയലുകള് പകര്ത്തുന്നു				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 82				0	ml	പട്ടികയുടെ ഉള്ളടക്കം സൃഷ്ടിക്കാന് തയ്യാറാകുന്നു				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 83				0	ml	പട്ടികയുടെ ഉള്ളടക്കം സൃഷ്ടിക്കുക				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 84				0	ml	ഇനിഷ്യലൈസ് ചെയ്യുക				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 86				0	ml	പ്രസിദ്ധീകരിക്കാന് തയ്യാറാക്കുക				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 87				0	ml	ലോക്കല് ഡയറക്ട്രിയില് പ്രസിദ്ധീകരിക്കുക				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 88				0	ml	FTPയുടെ ഉദ്ദിഷ്ടസ്ഥാനം പ്രസിദ്ധീകരിക്കുക				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 89				0	ml	ZIPന്റെ ആര്ക്കീവ് പ്രസിദ്ധീകരിക്കുക				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 90				0	ml	സമാപ്തമാകുന്നു...				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 94				0	ml	ഗ്രാഫിക്സ് ഫയലുകള് 				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 95				0	ml	എല്ലാ ഫയലുകളും				2002-02-02 02:02:02
@@ -4228,98 +4228,98 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 98		
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 99				0	ml	പശ്ചാത്തല ചിത്രം  തിരഞ്ഞെടുക്കുക				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 100				0	ml	ഐക്കണ് സെറ്റ്				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 101				0	ml	ഐക്കണ് സെറ്റ് തിരഞ്ഞെടുക്കുക				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +102				0	ml	മറ്റുള്ള...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +103				0	ml	 ഒന്നുമില്ല				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +104				0	ml	താങ്കളുടെ വെബ്സൈറ്റ് വിജയകരമായി %FILENAME ല് സൃഷ്ടിച്ചു 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +105				0	ml	വെബ്സൈറ്റ് സൃഷ്ടിച്ചപ്പോള് ഒന്നോ അതില്കൂടുതലോ തെറ്റുണ്ടായി.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +106				0	ml	പട്ടികയുടെ ഉള്ളടക്കപേജ് സൃഷ്ടിച്ചപ്പോള് തെറ്റുണ്ടായി				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +107				0	ml	പ്ലാന് ഫയലുകള്  പകര്ത്തിയപ്പോള് തെറ്റുണ്ടായി				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +108				0	ml	'%FILENAME'  ഡോക്കുമെന്റ് വിവരങ്ങള് ശേഖരിച്ചപ്പോള് തെറ്റുണ്ടായി				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +109				0	ml	'%FILENAME'ഡോക്കുമെന്റ്  കയറ്റുമതി ചെയ്തപ്പോള് തെറ്റുണ്ടായി				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +110				0	ml	%FILENAME'  ഡോക്കുമെന്റ് വിവരങ്ങള് ശേഖരിച്ചപ്പോള് തെറ്റുണ്ടായി				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +111				0	ml	%FILENAME'  ഡോക്കുമെന്റ് കയറ്റുമതി ചെയ്തപ്പോള്  സംരക്ഷണത്തില് തെറ്റുണ്ടായി				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +112				0	ml	%FILENAME'  ഡോക്കുമെന്റ് കയറ്റുമതി ചെയ്തപ്പോള്  ഇന്പുട്ട്/ ഔട്ട്പുട്ട്  തെറ്റുണ്ടായി				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +113				0	ml	മീഡിയ ഫയലുകള് താല്ക്കാലിക ഡയറക്ട്രിയിലോട്ട് പകര്ത്തിയപ്പോള് തെറ്റുണ്ടായി.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +114				0	ml	നിര്ദ്ദിഷ്ട %URL ലൊക്കേഷനിലേക്ക്  വെബ് സൈറ്റ് പകര്ത്താന് കഴിയില്ല.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +115				0	ml	അപ്രതീക്ഷിതമായ തെറ്റുണ്ടായി : %ERROR				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +116				0	ml	ഫയല് വിലയിരുത്തിയപ്പോള് അപ്രതീക്ഷിതമായ തെറ്റുണ്ടായി : '%FILENAME'				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +117				0	ml	%FILENAME' is a folder.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +118				0	ml	വേബ് വിസാര്ഡ് സജ്ജീകരണങ്ങള് ലോഡ് ചെയ്യുന്നു...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +119				0	ml	അപ്രതീക്ഷിതമായ തെറ്റുണ്ടായി.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +120				0	ml	ഡോക്കുമെന്റുകള് വിലയിരുത്തുന്നു...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +121				0	ml	എന്റെ റിക്കോര്ഡുകള് സൂക്ഷിക്കുന്ന സ്ഥലം				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +122				0	ml	അവതരിപ്പിക്കുക				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +123				0	ml	ഡോക്കുമെന്റുകള്				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +124				0	ml	മുഖ്യ പ്ലാന് 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +125				0	ml	പ്ലാന് വിവരങ്ങള് 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +126				0	ml	ശൈലി				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +127				0	ml	വെബ്സൈറ്റ് വിവരങ്ങള്				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +128				0	ml	പൂര്‍വ്വദൃശ്യം				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +130				0	ml	തിരഞ്ഞെടുത്ത സജ്ജീകരണങ്ങള് നീക്കം ചെയ്തേക്കും. താങ്കള്ക്ക്  ഈ സജ്ജീകരണങ്ങള് തീര്ച്ചയായും നീക്കം ചെയ്യണോ? 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +131				0	ml	%NUMBER pages				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +132				0	ml	%NUMBER slides				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +133				0	ml	സൃഷ്ടിച്ചു: %DATE				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +134				0	ml	ആവസാനം പരിഷ്കരിച്ച : %DATE				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +135				0	ml	വെബ് വിസാര്ഡ് സജ്ജീകരണങ്ങള്				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +136				0	ml	പശ്ചാത്തല ചിത്രം  				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +137				0	ml	ഐക്കണ് സെറ്റ്				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +138				0	ml	 HTML രൂപരേഖയില്  അവതരണത്തിനുപയോഗിക്കുന്ന ഐക്കണ് സെറ്റ്.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +139				0	ml	HTML മെറ്റാഡാറ്റാ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 102				0	ml	മറ്റുള്ള...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 103				0	ml	 ഒന്നുമില്ല				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 104				0	ml	താങ്കളുടെ വെബ്സൈറ്റ് വിജയകരമായി %FILENAME ല് സൃഷ്ടിച്ചു 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 105				0	ml	വെബ്സൈറ്റ് സൃഷ്ടിച്ചപ്പോള് ഒന്നോ അതില്കൂടുതലോ തെറ്റുണ്ടായി.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 106				0	ml	പട്ടികയുടെ ഉള്ളടക്കപേജ് സൃഷ്ടിച്ചപ്പോള് തെറ്റുണ്ടായി				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 107				0	ml	പ്ലാന് ഫയലുകള്  പകര്ത്തിയപ്പോള് തെറ്റുണ്ടായി				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 108				0	ml	'%FILENAME'  ഡോക്കുമെന്റ് വിവരങ്ങള് ശേഖരിച്ചപ്പോള് തെറ്റുണ്ടായി				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 109				0	ml	'%FILENAME'ഡോക്കുമെന്റ്  കയറ്റുമതി ചെയ്തപ്പോള് തെറ്റുണ്ടായി				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 110				0	ml	%FILENAME'  ഡോക്കുമെന്റ് വിവരങ്ങള് ശേഖരിച്ചപ്പോള് തെറ്റുണ്ടായി				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 111				0	ml	%FILENAME'  ഡോക്കുമെന്റ് കയറ്റുമതി ചെയ്തപ്പോള്  സംരക്ഷണത്തില് തെറ്റുണ്ടായി				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 112				0	ml	%FILENAME'  ഡോക്കുമെന്റ് കയറ്റുമതി ചെയ്തപ്പോള്  ഇന്പുട്ട്/ ഔട്ട്പുട്ട്  തെറ്റുണ്ടായി				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 113				0	ml	മീഡിയ ഫയലുകള് താല്ക്കാലിക ഡയറക്ട്രിയിലോട്ട് പകര്ത്തിയപ്പോള് തെറ്റുണ്ടായി.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 114				0	ml	നിര്ദ്ദിഷ്ട %URL ലൊക്കേഷനിലേക്ക്  വെബ് സൈറ്റ് പകര്ത്താന് കഴിയില്ല.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 115				0	ml	അപ്രതീക്ഷിതമായ തെറ്റുണ്ടായി : %ERROR				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 116				0	ml	ഫയല് വിലയിരുത്തിയപ്പോള് അപ്രതീക്ഷിതമായ തെറ്റുണ്ടായി : '%FILENAME'				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 117				0	ml	%FILENAME' is a folder.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 118				0	ml	വേബ് വിസാര്ഡ് സജ്ജീകരണങ്ങള് ലോഡ് ചെയ്യുന്നു...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 119				0	ml	അപ്രതീക്ഷിതമായ തെറ്റുണ്ടായി.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 120				0	ml	ഡോക്കുമെന്റുകള് വിലയിരുത്തുന്നു...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 121				0	ml	എന്റെ റിക്കോര്ഡുകള് സൂക്ഷിക്കുന്ന സ്ഥലം				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 122				0	ml	അവതരിപ്പിക്കുക				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 123				0	ml	ഡോക്കുമെന്റുകള്				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 124				0	ml	മുഖ്യ പ്ലാന് 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 125				0	ml	പ്ലാന് വിവരങ്ങള് 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 126				0	ml	ശൈലി				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 127				0	ml	വെബ്സൈറ്റ് വിവരങ്ങള്				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 128				0	ml	പൂര്‍വ്വദൃശ്യം				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 130				0	ml	തിരഞ്ഞെടുത്ത സജ്ജീകരണങ്ങള് നീക്കം ചെയ്തേക്കും. താങ്കള്ക്ക്  ഈ സജ്ജീകരണങ്ങള് തീര്ച്ചയായും നീക്കം ചെയ്യണോ? 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 131				0	ml	%NUMBER pages				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 132				0	ml	%NUMBER slides				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 133				0	ml	സൃഷ്ടിച്ചു: %DATE				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 134				0	ml	ആവസാനം പരിഷ്കരിച്ച : %DATE				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 135				0	ml	വെബ് വിസാര്ഡ് സജ്ജീകരണങ്ങള്				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 136				0	ml	പശ്ചാത്തല ചിത്രം  				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 137				0	ml	ഐക്കണ് സെറ്റ്				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 138				0	ml	 HTML രൂപരേഖയില്  അവതരണത്തിനുപയോഗിക്കുന്ന ഐക്കണ് സെറ്റ്.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 139				0	ml	HTML മെറ്റാഡാറ്റാ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +140				0	ml	തെരഞ്ഞെടുക്കുക...				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +141				0	ml	തെരഞ്ഞെടുക്കുക...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +142				0	ml	<സംസ്ഥാപിതം>				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +143				0	ml	തിരഞ്ഞെടുക്കുക വഴി പ്രസിദ്ധീകരിച്ചതിനെ പിന്താങ്ങുന്നില്ല				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +144				0	ml	<പശ്ചാത്തല ചിത്രം  ഇല്ല>				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +145				0	ml	<ഐക്കണ് സെറ്റ് ഇല്ല>				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +146				0	ml	FTP ഡയറക്ട്രിയില്   '%FILENAME'   സൃഷ്ടിക്കാന് കഴിയില്ല.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 142				0	ml	<സംസ്ഥാപിതം>				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 143				0	ml	തിരഞ്ഞെടുക്കുക വഴി പ്രസിദ്ധീകരിച്ചതിനെ പിന്താങ്ങുന്നില്ല				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 144				0	ml	<പശ്ചാത്തല ചിത്രം  ഇല്ല>				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 145				0	ml	<ഐക്കണ് സെറ്റ് ഇല്ല>				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 146				0	ml	FTP ഡയറക്ട്രിയില്   '%FILENAME'   സൃഷ്ടിക്കാന് കഴിയില്ല.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +147				0	ml	FTP ഡയറക്ട്രിയില്   '%FILENAME'  നിലവിലില്ല. ഇപ്പോള് ഡയറക്ട്രി സൃഷ്ടിക്കണോ?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +148				0	ml	 '%FILENAME' സിപ് ഫയല് സൃഷ്ടിക്കാന് കഴിഞ്ഞില്ല. ഇതേ പേരില് മറ്റൊരു ഡയറക്ട്രി നിലവിലുണ്ട്.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 148				0	ml	 '%FILENAME' സിപ് ഫയല് സൃഷ്ടിക്കാന് കഴിഞ്ഞില്ല. ഇതേ പേരില് മറ്റൊരു ഡയറക്ട്രി നിലവിലുണ്ട്.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +149				0	ml	 '%FILENAME'  ലോക്കല് ഡയറക്ട്രി സൃഷ്ടിക്കാന് കഴിയുന്നില്ല. എഴുതിയ-അക്സെസ് ദയവായി പരിശോധിക്കുക				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +150				0	ml	 '%FILENAME'  ലോക്കല് ഡയറക്ട്രി നിലവിലില്ല. ഇപ്പോള് ഡയറക്ട്രി സൃഷ്ടിക്കണോ?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +151				0	ml	പരിമാണം: %NUMBERKB				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +152				0	ml	ഫയല് കണ്ടെത്താനായില്ല. താങ്കള്ക്ക് പുതിയ ഫയല് ലൊക്കേഷന് നിര്ദ്ദേശിക്കണോ?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +0				0	ml	FTP കണക്ഷന്				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +1				0	ml	ഉപഭോക്താവിന്റെ പേര‍്				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +2				0	ml	സങ്കേതപദം				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +3				0	ml	കണക്ട്				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +4				0	ml	FTP കണക്ഷന് രൂപരേഖ പ്രവേശിപ്പിക്കുക				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +5				0	ml	സെര്‍വര് നാമം അഥവാ IP മേല്‍വിലാസം				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +6				0	ml	സെര്‍വറിലേക്ക് കണക്ട് ചെയ്യുക				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +7				0	ml	റിമോട്ട് ഡയറക്ട്രി തിരഞ്ഞെടുക്കുക (ഐച്ഛികം)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 151				0	ml	പരിമാണം: %NUMBERKB				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 152				0	ml	ഫയല് കണ്ടെത്താനായില്ല. താങ്കള്ക്ക് പുതിയ ഫയല് ലൊക്കേഷന് നിര്ദ്ദേശിക്കണോ?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 0				0	ml	FTP കണക്ഷന്				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 1				0	ml	ഉപഭോക്താവിന്റെ പേര‍്				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 2				0	ml	സങ്കേതപദം				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 3				0	ml	കണക്ട്				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 4				0	ml	FTP കണക്ഷന് രൂപരേഖ പ്രവേശിപ്പിക്കുക				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 5				0	ml	സെര്‍വര് നാമം അഥവാ IP മേല്‍വിലാസം				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 6				0	ml	സെര്‍വറിലേക്ക് കണക്ട് ചെയ്യുക				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 7				0	ml	റിമോട്ട് ഡയറക്ട്രി തിരഞ്ഞെടുക്കുക (ഐച്ഛികം)				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +8				0	ml	...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +9				0	ml	കണക്ഷന്  സ്ഥിതി  അജ്ഞാതമാണ‍്				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +10				0	ml	കണക്ഷന് വിജയകരമായി സ്ഥാപിച്ചു				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +11				0	ml	ഉപഭോക്തൃനാമം അഥവാ സങ്കേതപദം തെറ്റാണ‍്				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +12				0	ml	സെര്‍വര് നാമം  സ്പഷ്ടമാക്കാന് കഴിയുന്നില്ല.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +13				0	ml	താങ്കള്ക്ക് ആവശ്യമായ ഉപഭോക്തൃ അവകാശം ഇല്ല.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +14				0	ml	സെര്‍വറില്  കണക്ട്ചെയ്യാന് സാധിക്കുന്നില്ല				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +15				0	ml	അപ്രതീക്ഷിതമായ തെറ്റ്				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +16				0	ml	FTP പ്രസിദ്ധീകരിക്കുന്ന ഡയറക്ട്രി 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +17				0	ml	ഇത് FTP ഫോള്ഡറല്ല				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +18				0	ml	കണക്ട് ചെയ്യുന്നു..				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +1				0	ml	അജന്ഡ വിസാര്ഡ്				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +2				0	ml	  ഈ അജന്ഡ മാതൃകയ്ക്ക് മാനുവലായി മാറ്റങ്ങള് ഉണ്ടാക്കുക				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 9				0	ml	കണക്ഷന്  സ്ഥിതി  അജ്ഞാതമാണ‍്				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 10				0	ml	കണക്ഷന് വിജയകരമായി സ്ഥാപിച്ചു				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 11				0	ml	ഉപഭോക്തൃനാമം അഥവാ സങ്കേതപദം തെറ്റാണ‍്				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 12				0	ml	സെര്‍വര് നാമം  സ്പഷ്ടമാക്കാന് കഴിയുന്നില്ല.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 13				0	ml	താങ്കള്ക്ക് ആവശ്യമായ ഉപഭോക്തൃ അവകാശം ഇല്ല.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 14				0	ml	സെര്‍വറില്  കണക്ട്ചെയ്യാന് സാധിക്കുന്നില്ല				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 15				0	ml	അപ്രതീക്ഷിതമായ തെറ്റ്				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 16				0	ml	FTP പ്രസിദ്ധീകരിക്കുന്ന ഡയറക്ട്രി 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 17				0	ml	ഇത് FTP ഫോള്ഡറല്ല				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 18				0	ml	കണക്ട് ചെയ്യുന്നു..				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 1				0	ml	അജന്ഡ വിസാര്ഡ്				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 2				0	ml	  ഈ അജന്ഡ മാതൃകയ്ക്ക് മാനുവലായി മാറ്റങ്ങള് ഉണ്ടാക്കുക				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +3				0	ml	മാതൃകയുടെ പേരു്:				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 4				0	ml	സ്ഥാനവും ഫയല്‍ നാമവും:				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +5				0	ml	നിങ്ങള്‍ക്കു് അടുത്തതു് എന്താണു് ചെയ്യേണ്ടതു്?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +6				0	ml	 അജന്ഡ യ്ക്കുള്ള പേജ് ഡിസൈന് ദയവായി തിരഞ്ഞെടുക്കുക				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +7				0	ml	  അജന്ഡ മാതൃക ഉള്പ്പെടുത്താന് താങ്ങള് ആഗ്രഹിക്കുന്ന  തലക്കെട്ടുകള് ദയവായി തിരഞ്ഞെടുക്കുക				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +8				0	ml	 അജെന്ഡായ്ക്ക് ആവശ്യമായ പൊതുവിവരങ്ങള് ദയവായി പ്രവേശിപ്പിക്കുക.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +9				0	ml	 അജെന്ഡയ്ക്ക് വേണ്ടിയുള്ള കാര്യങ്ങള് ദയവായി വ്യക്തമാക്കുക.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +10				0	ml	 അജെന്ഡ മാതൃകയില്  ഉള്പ്പെടുത്താന് താങ്കള് ആഗ്രഹിക്കുന്ന  നാമം ദയവായി തിരഞ്ഞെടുക്കുക				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 6				0	ml	 അജന്ഡ യ്ക്കുള്ള പേജ് ഡിസൈന് ദയവായി തിരഞ്ഞെടുക്കുക				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 7				0	ml	  അജന്ഡ മാതൃക ഉള്പ്പെടുത്താന് താങ്ങള് ആഗ്രഹിക്കുന്ന  തലക്കെട്ടുകള് ദയവായി തിരഞ്ഞെടുക്കുക				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 8				0	ml	 അജെന്ഡായ്ക്ക് ആവശ്യമായ പൊതുവിവരങ്ങള് ദയവായി പ്രവേശിപ്പിക്കുക.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 9				0	ml	 അജെന്ഡയ്ക്ക് വേണ്ടിയുള്ള കാര്യങ്ങള് ദയവായി വ്യക്തമാക്കുക.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 10				0	ml	 അജെന്ഡ മാതൃകയില്  ഉള്പ്പെടുത്താന് താങ്കള് ആഗ്രഹിക്കുന്ന  നാമം ദയവായി തിരഞ്ഞെടുക്കുക				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +11				0	ml	ഒരു പേരു് നല്‍കി മാതൃക സൂക്ഷിക്കുക				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +12				0	ml	മിനിട്ടുകള് റിക്കോര്ഡ് ചെയ്യാന് ഫോം ഉള്പ്പെടുത്തുക				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +13				0	ml	മാതൃക അജെന്ഡ സൃഷ്ടിക്കാന് ഈ  വിസാര്ഡ് സഹായിക്കും.   പിന്നീട് എവിടെ വേണമെങ്കിലും  ഈ മാതൃക ഉപയോഗിച്ച് അജെന്ഡ സൃഷ്ടിക്കാം				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +14				0	ml	സമയം				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 12				0	ml	മിനിട്ടുകള് റിക്കോര്ഡ് ചെയ്യാന് ഫോം ഉള്പ്പെടുത്തുക				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 13				0	ml	മാതൃക അജെന്ഡ സൃഷ്ടിക്കാന് ഈ  വിസാര്ഡ് സഹായിക്കും.   പിന്നീട് എവിടെ വേണമെങ്കിലും  ഈ മാതൃക ഉപയോഗിച്ച് അജെന്ഡ സൃഷ്ടിക്കാം				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 14				0	ml	സമയം				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +15				0	ml	നാമം:				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 16				0	ml	സ്ഥാനം:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +17				0	ml	കാലിയായ മണ്ഡലങ്ങളില്  സ്ഥാനവാഹി ഉപയോഗിക്കുക. താങ്കള്ക്ക് സ്ഥാനവാഹിയെ ടെക്സ്റ്റുമായി പിന്നീട് മാറ്റി സ്ഥാപിക്കാം				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 17				0	ml	കാലിയായ മണ്ഡലങ്ങളില്  സ്ഥാനവാഹി ഉപയോഗിക്കുക. താങ്കള്ക്ക് സ്ഥാനവാഹിയെ ടെക്സ്റ്റുമായി പിന്നീട് മാറ്റി സ്ഥാപിക്കാം				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +18				0	ml	...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +19				0	ml	ഈ മാതൃകയില് നിന്നും പുതിയ അജെന്ഡാ സൃഷ്ടിക്കുക				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +20				0	ml	മാതൃക ഉപയോഗിച്ചു് പുതിയ അജെണ്ടാ ഉണ്ടാക്കുന്നതിനായി, മാതൃക സംഭരിച്ചിരിക്കുന്ന സ്ഥലത്ത് പോയി രണ്ട് പ്രാവശ്യം ക്ലിക്ക് ചെയ്യുക.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +21				0	ml	കാര്യപരിപാടിയുടെ വിഷയം				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +22				0	ml	ഉത്തരവാദിത്വം				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +23				0	ml	കാലാവധി				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 19				0	ml	ഈ മാതൃകയില് നിന്നും പുതിയ അജെന്ഡാ സൃഷ്ടിക്കുക				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 20				0	ml	മാതൃക ഉപയോഗിച്ചു് പുതിയ അജെണ്ടാ ഉണ്ടാക്കുന്നതിനായി, മാതൃക സംഭരിച്ചിരിക്കുന്ന സ്ഥലത്ത് പോയി രണ്ട് പ്രാവശ്യം ക്ലിക്ക് ചെയ്യുക.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 21				0	ml	കാര്യപരിപാടിയുടെ വിഷയം				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 22				0	ml	ഉത്തരവാദിത്വം				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 23				0	ml	കാലാവധി				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +24				0	ml	കൂടിചേര്‍ല്‍ വിളിച്ചിരിക്കുന്നതു്				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +25				0	ml	അദ്ധ്യക്ഷന്				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +26				0	ml	മിനിട്ട് കീപ്പര്‍				2002-02-02 02:02:02
@@ -4327,30 +4327,30 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +27
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +28				0	ml	പങ്കെടുക്കുന്നവര്‍				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +29				0	ml	നിരീക്ഷകര്				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +30				0	ml	സൌകര്യങ്ങള്‍ ലഭ്യമാക്കുന്ന വ്യക്തി				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +31				0	ml	അജെന്ഡാ മാതൃകയില് തിരഞ്ഞെടുത്ത ആളുകളുടെ പേരുകള്ക്ക് സ്ഥാനവാഹിയുണ്ടായിരിക്കും. മാതൃകയില് നിന്നും അജെന്ഡാ സൃഷ്ടിക്കുന്പോള് താങ്കള്ക്ക് ഈ സ്ഥാനവാഹി മാറ്റി സന്ദര്ഭോചിതമായ പേരുകള് ചേര്ക്കാം				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 31				0	ml	അജെന്ഡാ മാതൃകയില് തിരഞ്ഞെടുത്ത ആളുകളുടെ പേരുകള്ക്ക് സ്ഥാനവാഹിയുണ്ടായിരിക്കും. മാതൃകയില് നിന്നും അജെന്ഡാ സൃഷ്ടിക്കുന്പോള് താങ്കള്ക്ക് ഈ സ്ഥാനവാഹി മാറ്റി സന്ദര്ഭോചിതമായ പേരുകള് ചേര്ക്കാം				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +32				0	ml	ഏതു് തരത്തിലുള്ള കൂടിചേരല്‍				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +33				0	ml	ദയവായി വായിക്കുക				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +34				0	ml	ദയവായി കൊണ്ടുവരിക				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +35				0	ml	കുറിപ്പുകള്				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +36				0	ml	അജെന്ഡാ മാതൃകയില് തിരഞ്ഞെടുത്ത ഘടകങ്ങള്ക്ക്  സ്ഥാനവാഹിയുണ്ടായിരിക്കും.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 36				0	ml	അജെന്ഡാ മാതൃകയില് തിരഞ്ഞെടുത്ത ഘടകങ്ങള്ക്ക്  സ്ഥാനവാഹിയുണ്ടായിരിക്കും.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +38				0	ml	തീയതി				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +39				0	ml	ഈ വിസാര്ഡ് അജെന്ഡാ മാതൃക സൃഷ്ടിക്കും അതുവഴി താങ്ങള്ക്ക്  ഒരേ പ്ലാനും സജ്ജീകരണങ്ങളുമുള്ള അനേകം അജെന്ഡകള് സൃഷ്ടിക്കാനാകും.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +40				0	ml	പേജ് ഡിസൈന്				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +41				0	ml	 എന്റെ അജന്ണ്ടാ  മാതൃക.stw				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +42				0	ml	 എന്റെ അജന്ണ്ടാ  മാതൃക				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +43				0	ml	അജന്ണ്ടാ  മാതൃക സംഭരിച്ചപ്പോള് അപ്രതീക്ഷിതമായ തെറ്റുണ്ടായി.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +44				0	ml	നാമം				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +45				0	ml	 തീയതി				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +46				0	ml	 സമയം				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 39				0	ml	ഈ വിസാര്ഡ് അജെന്ഡാ മാതൃക സൃഷ്ടിക്കും അതുവഴി താങ്ങള്ക്ക്  ഒരേ പ്ലാനും സജ്ജീകരണങ്ങളുമുള്ള അനേകം അജെന്ഡകള് സൃഷ്ടിക്കാനാകും.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 40				0	ml	പേജ് ഡിസൈന്				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 41				0	ml	 എന്റെ അജന്ണ്ടാ  മാതൃക.stw				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 42				0	ml	 എന്റെ അജന്ണ്ടാ  മാതൃക				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 43				0	ml	അജന്ണ്ടാ  മാതൃക സംഭരിച്ചപ്പോള് അപ്രതീക്ഷിതമായ തെറ്റുണ്ടായി.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 44				0	ml	നാമം				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 45				0	ml	 തീയതി				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 46				0	ml	 സമയം				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 47				0	ml	സ്ഥാനം				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +48				0	ml	ഈ ടെക്സ്റ്റ് മാറ്റി സ്ഥാപിക്കാന് ക്ലിക്ക് ചെയ്യുക				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 48				0	ml	ഈ ടെക്സ്റ്റ് മാറ്റി സ്ഥാപിക്കാന് ക്ലിക്ക് ചെയ്യുക				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +50				0	ml	താളിന്റെ രീതി				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +51				0	ml	പൊതുവായ വിവരം				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +52				0	ml	 ഉള്പ്പെടുത്തേണ്ട തലക്കെട്ടുകള്				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +53				0	ml	നാമങ്ങള്				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +54				0	ml	അജെന്ഡ വിഭാഗങ്ങള്				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 51				0	ml	പൊതുവായ വിവരം				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 52				0	ml	 ഉള്പ്പെടുത്തേണ്ട തലക്കെട്ടുകള്				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 53				0	ml	നാമങ്ങള്				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 54				0	ml	അജെന്ഡ വിഭാഗങ്ങള്				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +55				0	ml	പേരും സ്ഥലവും				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +56				0	ml	അജെന്ണ്ടാ  മാതൃകയില്  അപ്രതീക്ഷിതമായ തെറ്റുണ്ടായി.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 56				0	ml	അജെന്ണ്ടാ  മാതൃകയില്  അപ്രതീക്ഷിതമായ തെറ്റുണ്ടായി.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +57				0	ml	ഏതു് തരത്തിലുള്ള കൂടിചേരല്‍				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +58				0	ml	ദയവായി കൊണ്ടുവരിക				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +59				0	ml	ദയവായി വായിക്കുക				2002-02-02 02:02:02
@@ -4362,10 +4362,10 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +64
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +65				0	ml	മോഡറേറ്റര്‍				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +66				0	ml	നിരീക്ഷകര്				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +67				0	ml	സൌകര്യങ്ങള്‍ ലഭ്യമാക്കുന്ന വ്യക്തി				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +68				0	ml	ഉള്പ്പെടുത്തുക				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +69				0	ml	നീക്കം ചെയ്യുക				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +70				0	ml	മുകളിലേക്ക് നീക്കുക				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +71				0	ml	താഴോട്ടു നീക്കുക				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 68				0	ml	ഉള്പ്പെടുത്തുക				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 69				0	ml	നീക്കം ചെയ്യുക				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 70				0	ml	മുകളിലേക്ക് നീക്കുക				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 71				0	ml	താഴോട്ടു നീക്കുക				2002-02-02 02:02:02
 wizards	source\schedule\schedule.src	0	string	dlgCalTitle				0	ml	%PRODUCTNAME Calendar				2002-02-02 02:02:02
 wizards	source\schedule\schedule.src	0	string	dlgCalTitleBack				0	ml	പുറകോട്ട്				2002-02-02 02:02:02
 wizards	source\schedule\schedule.src	0	string	dlgCalTitleOwnData				0	ml	വ്യക്തിപരമായ വിവരങ്ങള്‍				2002-02-02 02:02:02
@@ -8788,7 +8788,7 @@ sw	source\ui\docvw\docvw.src	0	string	STR_REDLINE_FORMAT				0	ml	രൂപകല
 sw	source\ui\docvw\docvw.src	0	string	STR_REDLINE_TABLE				0	ml	പട്ടിക മാറ്റിയ				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_REDLINE_FMTCOLL				0	ml	പ്രയോഗിച്ച ഖണ്ഡിക ശൈലികള്				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_ENDNOTE				0	ml	അന്തിമ കുറിപ്പ്: 				2002-02-02 02:02:02
-sw	source\ui\docvw\docvw.src	0	string	STR_FTNNOTE				0	ml	അടിക്കുറിപ്പ്: 				2002-02-02 02:02:02
+sw	source\ui\docvw\docvw.src	0	string	STR_FOOTNOTE				0	ml	അടിക്കുറിപ്പ്: 				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	infobox	MSG_READONLY_CONTENT				0	ml	വായിക്കാന് മാത്രം കഴിയുന്ന ഉള്ളടക്കം നീക്കം ചെയ്യാന് കഴിയില്ല. ഒരു പരിഷ്കരണവും സ്വീകാര്യമല്ല.				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_TABLE_COL_ADJUST				0	ml	പട്ടികയുടെ സ്തംഭം  തിരഞ്ഞെടുക്കുക 				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_TABLE_ROW_ADJUST				0	ml	പട്ടികയുടെ നിര  തിരഞ്ഞെടുക്കുക 				2002-02-02 02:02:02
@@ -8895,11 +8895,11 @@ sw	source\ui\ribbar\inputwin.src	0	string	STR_TBL_FORMULA				0	ml	ടെക്�
 sw	source\ui\ribbar\inputwin.src	0	toolboxitem	TB_INPUT	FN_FORMULA_CALC	HID_TBX_FORMULA_CALC		0	ml	സൂത്രവാക്യം				2002-02-02 02:02:02
 sw	source\ui\ribbar\inputwin.src	0	toolboxitem	TB_INPUT	FN_FORMULA_CANCEL	HID_TBX_FORMULA_CANCEL		0	ml	റദ്ദാക്കുക				2002-02-02 02:02:02
 sw	source\ui\ribbar\inputwin.src	0	toolboxitem	TB_INPUT	FN_FORMULA_APPLY	HID_TBX_FORMULA_APPLY		0	ml	പ്രയോഗം				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_PAGE			0	ml	താള്‍				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_PARAGRAPH			0	ml	ഖണ്ഡിക				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_AT_CHAR			0	ml	അക്ഷരത്തില്				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_CHAR			0	ml	അക്ഷരം പോലെ				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_FRAME			0	ml	ഫ്രെയിം				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_PAGE			0	ml	താള്‍				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_PARAGRAPH			0	ml	ഖണ്ഡിക				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_AT_CHAR			0	ml	അക്ഷരത്തില്				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_CHAR			0	ml	അക്ഷരം പോലെ				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_FRAME			0	ml	ഫ്രെയിം				2002-02-02 02:02:02
 sw	source\ui\wrtsh\wrtsh.src	0	string	STR_DDEERROR_APP1				0	ml	പ്രയോഗം				2002-02-02 02:02:02
 sw	source\ui\wrtsh\wrtsh.src	0	string	STR_DDEERROR_APP2				0	ml	പ്രതികരിക്കുന്നില്ല				2002-02-02 02:02:02
 sw	source\ui\wrtsh\wrtsh.src	0	string	STR_DDEERROR_DATA1				0	ml	[ വേണ്ടി ഡേറ്റാ				2002-02-02 02:02:02
@@ -9315,12 +9315,12 @@ sw	source\ui\app\mn.src	0	menuitem	MN_WRAP_DRAW.MN_WRAP	FN_FRAME_WRAPTHRU_TRANSP
 sw	source\ui\app\mn.src	0	menuitem	MN_WRAP_DRAW.MN_WRAP	FN_WRAP_ANCHOR_ONLY	CMD_FN_WRAP_ANCHOR_ONLY		0	ml	~ആദ്യത്തെ ഖണ്ഡിക				2002-02-02 02:02:02
 sw	source\ui\app\mn.src	0	menuitem	MN_WRAP_DRAW.MN_WRAP	FN_DRAW_WRAP_DLG	CMD_FN_DRAW_WRAP_DLG		0	ml	എഡിറ്റ്				2002-02-02 02:02:02
 sw	source\ui\app\mn.src	0	menuitem	MN_WRAP_DRAW	MN_WRAP			0	ml	~റാപ്പ് ചെയ്യുക				2002-02-02 02:02:02
-sw	source\ui\app\mn.src	0	menuitem	MN_AT_FRAME	FN_TOOL_ANKER_FRAME	CMD_FN_TOOL_ANKER_FRAME		0	ml	ഫ്രെയിമില്				2002-02-02 02:02:02
-sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANKER	FN_TOOL_ANKER_PAGE	CMD_FN_TOOL_ANKER_PAGE		0	ml	പേജിലേക്ക്				2002-02-02 02:02:02
-sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANKER	FN_TOOL_ANKER_PARAGRAPH	CMD_FN_TOOL_ANKER_PARAGRAPH		0	ml	ഖണ്ഡികയ്ക്ക്				2002-02-02 02:02:02
-sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANKER	FN_TOOL_ANKER_AT_CHAR	CMD_FN_TOOL_ANKER_AT_CHAR		0	ml	അക്ഷരത്തിലേക്ക്				2002-02-02 02:02:02
-sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANKER	FN_TOOL_ANKER_CHAR	CMD_FN_TOOL_ANKER_CHAR		0	ml	അക്ഷരമായി				2002-02-02 02:02:02
-sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR	FN_TOOL_ANKER	CMD_FN_TOOL_ANKER		0	ml	ചേര്ക്കുക				2002-02-02 02:02:02
+sw	source\ui\app\mn.src	0	menuitem	MN_AT_FRAME	FN_TOOL_ANCHOR_FRAME	CMD_FN_TOOL_ANCHOR_FRAME		0	ml	ഫ്രെയിമില്				2002-02-02 02:02:02
+sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANCHOR	FN_TOOL_ANCHOR_PAGE	CMD_FN_TOOL_ANCHOR_PAGE		0	ml	പേജിലേക്ക്				2002-02-02 02:02:02
+sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANCHOR	FN_TOOL_ANCHOR_PARAGRAPH	CMD_FN_TOOL_ANCHOR_PARAGRAPH		0	ml	ഖണ്ഡികയ്ക്ക്				2002-02-02 02:02:02
+sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANCHOR	FN_TOOL_ANCHOR_AT_CHAR	CMD_FN_TOOL_ANCHOR_AT_CHAR		0	ml	അക്ഷരത്തിലേക്ക്				2002-02-02 02:02:02
+sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANCHOR	FN_TOOL_ANCHOR_CHAR	CMD_FN_TOOL_ANCHOR_CHAR		0	ml	അക്ഷരമായി				2002-02-02 02:02:02
+sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR	FN_TOOL_ANCHOR	CMD_FN_TOOL_ANCHOR		0	ml	ചേര്ക്കുക				2002-02-02 02:02:02
 sw	source\ui\app\mn.src	0	string	MN_DRAWFORM_POPUPMENU				0	ml	നിയന്ത്രണം				2002-02-02 02:02:02
 sw	source\ui\app\mn.src	0	string	MN_DRWTXT_POPUPMENU				0	ml	ടെക്സ്റ്റ് വസ്തു വരയ്ക്കുക				2002-02-02 02:02:02
 sw	source\ui\app\mn.src	0	string	MN_GRF_POPUPMENU				0	ml	ഗ്രാഫിക്				2002-02-02 02:02:02
@@ -9396,7 +9396,7 @@ sw	source\ui\app\app.src	0	string	STR_WRITER_DOCUMENT_FULLTYPE				0	ml	%PRODUCTN
 sw	source\ui\app\app.src	0	string	STR_CANTOPEN				0	ml	ഡോക്കുമെന്റ് തുറക്കാന് കഴിയുന്നില്ല				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_CANTCREATE				0	ml	ഡോക്കുമെന്റ് സൃഷ്ടിക്കാന്				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_DLLNOTFOUND				0	ml	ഫില്ട്ടര് കണ്ടുപിടിക്കാനായില്ല				2002-02-02 02:02:02
-sw	source\ui\app\app.src	0	string	STR_UNBENANNT				0	ml	ശീര്ഷകമില്ലാത്ത				2002-02-02 02:02:02
+sw	source\ui\app\app.src	0	string	STR_UNTITLED				0	ml	ശീര്ഷകമില്ലാത്ത				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_LOAD_GLOBAL_DOC				0	ml	മുഖ്യ ഡോക്കുമെന്റിന്റ് പേരും മാര്ഗ്ഗവും				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_LOAD_HTML_DOC				0	ml	HTML ഡോക്കുമെന്റിന്റ് പേരും മാര്ഗ്ഗവും				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	infobox	MSG_ERROR_SEND_MAIL				0	ml	 മെയില് അയ്ക്കുന്നതില് തെറ്റ്				2002-02-02 02:02:02

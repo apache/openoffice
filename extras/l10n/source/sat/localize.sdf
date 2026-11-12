@@ -14456,7 +14456,7 @@ sw	source\ui\app\app.src	0	string	STR_STATSTR_TOX_UPDATE				1	sat	अनुक�
 sw	source\ui\app\app.src	0	string	STR_STATSTR_W4WREAD				1	sat	दस्तावेज आयात कर रहा है...				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_STATSTR_W4WWRITE				1	sat	दस्तावेज आयात कर रहा है...				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_TABLE_DEFNAME				1	sat	ता़लिका				2002-02-02 02:02:02
-sw	source\ui\app\app.src	0	string	STR_UNBENANNT				1	sat	शीर्षकहीन				2002-02-02 02:02:02
+sw	source\ui\app\app.src	0	string	STR_UNTITLED				1	sat	शीर्षकहीन				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_WESTERN_FONT				1	sat	पाछिम नाखा ओनोल 				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_WRITER_DOCUMENT_FULLTYPE				1	sat	%PRODUCTNAME 6.0 पाठ दस्तावेज				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	warningbox	MSG_DATA_SOURCES_UNAVAILABLE		HID_DATA_SOURCES_UNAVAILABLE		202	sat	किसी आंकड़ा को अबतक सेटअप नहीं किया गया था. आपको एक आंकड़ा श्रोत की जरूरत है जैसे कि डाटाबेस, क्षेत्र के लिये आंकड़ों की आपूर्ति करने के लिये (उदाहरण के लिये, नाम व पता).				2002-02-02 02:02:02
@@ -15368,7 +15368,7 @@ sw	source\ui\docvw\docvw.src	0	string	STR_CHAIN_SOURCE_CHAINED				0	sat	जो�
 sw	source\ui\docvw\docvw.src	0	string	STR_CHAIN_WRONG_AREA				0	sat	मित् बाङ बाताव जायगा रे खोंजा लागित जोस साज.				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_ENDNOTE				0	sat	मुचाद ओल: 				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_EXPORT_GRAFIK_TITLE				0	sat	चिता़र बाहरे भेजा				2002-02-02 02:02:02
-sw	source\ui\docvw\docvw.src	0	string	STR_FTNNOTE				0	sat	लातार ओल: 				2002-02-02 02:02:02
+sw	source\ui\docvw\docvw.src	0	string	STR_FOOTNOTE				0	sat	लातार ओल: 				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_REDLINE_DELETE				0	sat	मेटाव				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_REDLINE_FMTCOLL				0	sat	खोद हुना़र बाहाल मे				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_REDLINE_FORMAT				0	sat	तेयाराक् 				2002-02-02 02:02:02
@@ -16475,11 +16475,11 @@ sw	source\ui\ribbar\inputwin.src	0	toolboxitem	TB_INPUT	FN_FORMULA_APPLY	FN_FORM
 sw	source\ui\ribbar\inputwin.src	0	toolboxitem	TB_INPUT	FN_FORMULA_CALC	FN_FORMULA_CALC		500	sat	Formula				2002-02-02 02:02:02
 sw	source\ui\ribbar\inputwin.src	0	toolboxitem	TB_INPUT	FN_FORMULA_CANCEL	FN_FORMULA_CANCEL		500	sat	ओचोक्, मुचात्				2002-02-02 02:02:02
 sw	source\ui\ribbar\tblctrl.src	0	floatingwindow	RID_TBL_OPT_CTRL		HID_TBL_OPT_CTRL		0	sat	लेक लेका				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_AT_CHAR			0	sat	  आखोर रे				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_CHAR			0	sat	आखोर लेका				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_FRAME			0	sat	सांचाव				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_PAGE			0	sat	साहटा				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_PARAGRAPH			0	sat	खोद				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_AT_CHAR			0	sat	  आखोर रे				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_CHAR			0	sat	आखोर लेका				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_FRAME			0	sat	सांचाव				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_PAGE			0	sat	साहटा				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_PARAGRAPH			0	sat	खोद				2002-02-02 02:02:02
 sw	source\ui\ribbar\workctrl.src	0	floatingwindow	RID_INSERT_CTRL		HID_INSERT_CTRL		0	sat	सोगे				2002-02-02 02:02:02
 sw	source\ui\ribbar\workctrl.src	0	floatingwindow	RID_INSERT_OBJ_CTRL		HID_INSERT_OBJ_CTRL		0	sat	जिनिस  को सोगे				2002-02-02 02:02:02
 sw	source\ui\ribbar\workctrl.src	0	floatingwindow	RID_SCROLL_NAVIGATION_WIN		HID_INSERT_CTRL		0	sat	पानतेयाक्				2002-02-02 02:02:02
@@ -17560,21 +17560,21 @@ wizards	source\euro\euro.src	0	string	STEP_ZERO + 8				0	sat	बोंद  (~l)	
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 16				1	sat	ठांव				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 4				1	sat	जायगा आर रेत् ञुतुम:				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 47				1	sat	जायगा				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +1				1	sat	का़मी होरा  विजार्ड				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +10				1	sat	आम आमाक् का़मी होरा नामुना रे ओका ञुतुम को सामिल साना येत् मेया बाछाव मे.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 1				1	sat	का़मी होरा  विजार्ड				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 10				1	sat	आम आमाक् का़मी होरा नामुना रे ओका ञुतुम को सामिल साना येत् मेया बाछाव मे.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +11				1	sat	ञुतुम बाछाव मे आर नामुना सांचाव मे.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +12				1	sat	टिपिच् रेकोर्ड़ ला़गित् फार्म सामिल मे.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +13				1	sat	नोवा बिजार्ड आम का़मी होरा तेयार ला़गित ए गोड़ो आमा. तिन रे लाकतीआ का़मी होरा तेयार उन रे नामुनाम बाभार दाड़ोयाक् आ. 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +14				1	sat	ओकतो				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 12				1	sat	टिपिच् रेकोर्ड़ ला़गित् फार्म सामिल मे.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 13				1	sat	नोवा बिजार्ड आम का़मी होरा तेयार ला़गित ए गोड़ो आमा. तिन रे लाकतीआ का़मी होरा तेयार उन रे नामुनाम बाभार दाड़ोयाक् आ. 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 14				1	sat	ओकतो				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +15				1	sat	ञुतुम:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +17				1	sat	दोहो जायगा खाली जायगा रे बेभार दाड़ेयाक् आ. आम ओनोल तायोम दोहो जायगा साहा दाड़ेयाक् आ .				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 17				1	sat	दोहो जायगा खाली जायगा रे बेभार दाड़ेयाक् आ. आम ओनोल तायोम दोहो जायगा साहा दाड़ेयाक् आ .				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +18				1	sat	...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +19				1	sat	नोवा नामुना खोन का़मी होरा तेयार मे . (~a)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +2				1	sat	नोवा का़मी होरा नामुना रे ती तेयाक् तेयार बोदोल  (~m)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +20				1	sat	नामुना छाड़ा नावा का़मी होरा  तेयार  ला़गित्. ओना ठाव चालाच् मे ओकारे आम नामुनाम सांचाव आकादा आर रेत् बारधाव ओताय मे.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +21				1	sat	का़मी होरा जिनिस 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +22				1	sat	जिनमा हाताव				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +23				1	sat	ओकतो हाताव				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 19				1	sat	नोवा नामुना खोन का़मी होरा तेयार मे . (~a)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 2				1	sat	नोवा का़मी होरा नामुना रे ती तेयाक् तेयार बोदोल  (~m)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 20				1	sat	नामुना छाड़ा नावा का़मी होरा  तेयार  ला़गित्. ओना ठाव चालाच् मे ओकारे आम नामुनाम सांचाव आकादा आर रेत् बारधाव ओताय मे.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 21				1	sat	का़मी होरा जिनिस 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 22				1	sat	जिनमा हाताव				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 23				1	sat	ओकतो हाताव				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +24				1	sat	होते ते दुपड़ुब होहो				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +25				1	sat	माझी				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +26				1	sat	विवोरन दोहोयिच्				2002-02-02 02:02:02
@@ -17583,34 +17583,34 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +28
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +29				1	sat	ञेञेल को				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +3				1	sat	नामुना ञुतुम:				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +30				1	sat	निजेर सुविदा				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +31				1	sat	बाछाव होड़ को रेयाक् ञुतुम को ला़गित् का़मी होरा नामुना दोहो जायगा  सामिला नामुना खोन तिन रे का़मी होरा  तेयारोक् आ. आम बेस ञुतुम सांव नोवा दोहो जायगाम साहा दाड़ेयाक् आ.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 31				1	sat	बाछाव होड़ को रेयाक् ञुतुम को ला़गित् का़मी होरा नामुना दोहो जायगा  सामिला नामुना खोन तिन रे का़मी होरा  तेयारोक् आ. आम बेस ञुतुम सांव नोवा दोहो जायगाम साहा दाड़ेयाक् आ.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +32				1	sat	दुपुड़ुप रेयाक् लेकान.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +33				1	sat	 दाया काते पाड़हाव मे				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +34				1	sat	दाया काते आ़गुय मे.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +35				1	sat	खाटो बिचार.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +36				1	sat	बाछावाक् जिनिस ला़गित का़मी होरा नामुना दोहो जायगा सामिला.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 36				1	sat	बाछावाक् जिनिस ला़गित का़मी होरा नामुना दोहो जायगा सामिला.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +38				1	sat	मा़हित्:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +39				1	sat	नोवा बिजार्ड मित् का़मी होरा नामुना तेयारा ओकारे आम सोमान ओडोक ञेंल आर साजाव सांव आ़डी  लेकाय का़मी होरा तेयार होचो आमाय .				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +40				1	sat	साहटा जोह:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +41				1	sat	इञाक् AgendaTemplate.stw				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +42				1	sat	इञाक् का़मी होरा नामुना.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +43				1	sat	का़मी होराक् नामुना सांचाव जोहोक मित् बाङ आंस भुल  हुय एना..				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +44				1	sat	ञुतुम				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +45				1	sat	मा़हित				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +46				1	sat	ओकतो				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +48				1	sat	नोवा ओनोल ओचोक् ला़गित ओचाय मे.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 39				1	sat	नोवा बिजार्ड मित् का़मी होरा नामुना तेयारा ओकारे आम सोमान ओडोक ञेंल आर साजाव सांव आ़डी  लेकाय का़मी होरा तेयार होचो आमाय .				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 40				1	sat	साहटा जोह:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 41				1	sat	इञाक् AgendaTemplate.stw				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 42				1	sat	इञाक् का़मी होरा नामुना.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 43				1	sat	का़मी होराक् नामुना सांचाव जोहोक मित् बाङ आंस भुल  हुय एना..				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 44				1	sat	ञुतुम				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 45				1	sat	मा़हित				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 46				1	sat	ओकतो				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 48				1	sat	नोवा ओनोल ओचोक् ला़गित ओचाय मे.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +5				1	sat	इना़ तायोम चेत् का़मी सानाम काना?				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +50				1	sat	साहटा जोह				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +51				1	sat	साधारोन खोबोर				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +52				1	sat	सामिल ला़गित ते ञुतुम.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +53				1	sat	ञुतुम 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +54				1	sat	का़मी होरा जिनिस.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 51				1	sat	साधारोन खोबोर				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 52				1	sat	सामिल ला़गित ते ञुतुम.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 53				1	sat	ञुतुम 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 54				1	sat	का़मी होरा जिनिस.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +55				1	sat	ञुतुम आर जायगा				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +56				1	sat	का़मी होरा ना़मुना झिज जोहोक मित् बाङ आंस भुल हुय एना.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 56				1	sat	का़मी होरा ना़मुना झिज जोहोक मित् बाङ आंस भुल हुय एना.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +57				1	sat	दुपुड़ुप रेयाक् लेकान.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +58				1	sat	दाया काते आ़गुय मे.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +59				1	sat	 दाया काते पाड़हाव मे				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +6				1	sat	का़मी होरा ला़ित साहटा दोह बाछाव मे. 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 6				1	sat	का़मी होरा ला़ित साहटा दोह बाछाव मे. 				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +60				1	sat	खाटो बिचार.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +61				1	sat	होते ते दुपड़ुब होहो				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +62				1	sat	माझी				2002-02-02 02:02:02
@@ -17619,13 +17619,13 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +64
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +65				1	sat	आरु फेरा़वयिच्				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +66				1	sat	ञेञेल को				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +67				1	sat	निजेर सुविदा				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +68				1	sat	आदेर				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +69				1	sat	ओचोक्				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +7				1	sat	आमाक् का़मी होरा नामुना रे आम ओका ञुतुम सामिल साना चेत् मेया बाछाव मे.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +70				1	sat	चेतान चालाव				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +71				1	sat	लातार चालाव				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +8				1	sat	जिनिस ला़गित साधोरोन खोबोर आदेर मे.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +9				1	sat	का़मी होरा ला़गित कजिनिस को गोटाय मे.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 68				1	sat	आदेर				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 69				1	sat	ओचोक्				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 7				1	sat	आमाक् का़मी होरा नामुना रे आम ओका ञुतुम सामिल साना चेत् मेया बाछाव मे.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 70				1	sat	चेतान चालाव				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 71				1	sat	लातार चालाव				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 8				1	sat	जिनिस ला़गित साधोरोन खोबोर आदेर मे.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 9				1	sat	का़मी होरा ला़गित कजिनिस को गोटाय मे.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_COMMON_START + 0				1	sat	उनुदुक् '%1'  बाङ तेयार दाड़ेयाक् आ.<BR> आमाक् हार्डडिक्स रे ढेर जायगा बाय सारेच् जाहान आकाना.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_COMMON_START + 1				1	sat	ओनोल दोलिल बाङ तेयार दाड़ेयाक् आ.<BR> ञेल मे जोदी बेनाव  'PRODUCTNAME  रे ओओलाक् बोहाल आकाना.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_COMMON_START + 10				1	sat	बाङ				2002-02-02 02:02:02
@@ -18050,25 +18050,25 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_LETTERWIZARDROADMAP_START + 
 wizards	source\formwizard\dbwizres.src	0	string	RID_LETTERWIZARDSALUTATION_START + 1				1	sat	ओकोय सांव नोवा सोम्बोन्ध मेनाक् आ.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_LETTERWIZARDSALUTATION_START + 2				1	sat	हुली़ड़ गोमकें आर बाङ गोमके एरा				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_LETTERWIZARDSALUTATION_START + 3				1	sat	 मा जोहार				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +0				1	sat	FTP जोनोड़ाव				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +1				1	sat	बेभारिज आ ञुतुम (~U)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +10				1	sat	जोनोड़ाव रा़स सेलेत थापोन लेना.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +11				1	sat	बेभारिजाक् ञुतुम बाङ दानाङ साबाद भुल गेया.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +12				1	sat	सर्वर ञुतुम बाङ जुत दाड़ेयाक् आ.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +13				1	sat	आम ठेन ढेर बेभार होक बानुक् आ.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +14				1	sat	सर्वर सांव बाङ जोड़ाव दाड़ेयात ना				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +15				1	sat	बाङ आंस भुल				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +16				1	sat	FTP छापा  सोदोर उनुदुक्उनुदुक् . 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +17				1	sat	नोवा दो  FTP पोटोम बाङ काना. 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +18				1	sat	जोड़ावोक् काना..				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +2				1	sat	दानाङ साबाद(~P)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +3				1	sat	जोडाव				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +4				1	sat	1. FTP जोनोड़ाव खोबोर आदेर मे.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +5				1	sat	सर्वर ञुतुम बाङ IP ठिकाना (~S):				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +6				1	sat	2. सर्वर में जोनड़ावाक्				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +7				1	sat	3. सांगिय उनुदुक् बाछाव मे (~C) (एपेटाक).				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 0				1	sat	FTP जोनोड़ाव				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 1				1	sat	बेभारिज आ ञुतुम (~U)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 10				1	sat	जोनोड़ाव रा़स सेलेत थापोन लेना.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 11				1	sat	बेभारिजाक् ञुतुम बाङ दानाङ साबाद भुल गेया.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 12				1	sat	सर्वर ञुतुम बाङ जुत दाड़ेयाक् आ.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 13				1	sat	आम ठेन ढेर बेभार होक बानुक् आ.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 14				1	sat	सर्वर सांव बाङ जोड़ाव दाड़ेयात ना				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 15				1	sat	बाङ आंस भुल				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 16				1	sat	FTP छापा  सोदोर उनुदुक्उनुदुक् . 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 17				1	sat	नोवा दो  FTP पोटोम बाङ काना. 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 18				1	sat	जोड़ावोक् काना..				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 2				1	sat	दानाङ साबाद(~P)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 3				1	sat	जोडाव				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 4				1	sat	1. FTP जोनोड़ाव खोबोर आदेर मे.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 5				1	sat	सर्वर ञुतुम बाङ IP ठिकाना (~S):				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 6				1	sat	2. सर्वर में जोनड़ावाक्				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 7				1	sat	3. सांगिय उनुदुक् बाछाव मे (~C) (एपेटाक).				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +8				1	sat	...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +9				1	sat	जोनोड़ाव दोसा बाङ बाडाया.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 9				1	sat	जोनोड़ाव दोसा बाङ बाडाया.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 100				1	sat	मोहडा साजाव				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 101				1	sat	मित् मोहडा साजाव बाछाव:				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 90				1	sat	चाबायेत् आ				2002-02-02 02:02:02
@@ -18077,127 +18077,127 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 95		
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 96				1	sat	~ZIP जोगाव जायगा रेत्.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 98				1	sat	ओनोड़  चिता़र				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 99				1	sat	मित् ओनोड़ चिता़र बाछाव: 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +1				1	sat	वेब विजार्ड				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +10				1	sat	सार काथा  (~S): 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +102				1	sat	एटागाक्				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +103				1	sat	ओका हों बाङ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +104				1	sat	आमाक वेब साइटरा़स लेकाते तेयार कान ताहेन : %FILENAME				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +105				1	sat	वेब साइट तेयारोक् जोहोक मित् रे ढेर भुल हुय आकाना.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +106				1	sat	बिसोय साहटा को रेयाक् ता़लिका तेयार जोहोक मित् भुल हुय आकाना(s). 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +107				1	sat	ओडोक ञेंल रेत् नोकोल जोहोक् मित् भुल हुय एना. 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +108				1	sat	 '%FILENAME' ला़गित् दोलिल  खोबोर जारवा जोहोक मित् भुल हुय एना. 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +109				1	sat	'%FILENAME'. दोलिल भेजा जोहोक मित् भुल हुय एना.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +11				1	sat	ओनोलिया (~t):				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +110				1	sat	 '%FILENAME'.भेजा ला़कति उनुदुक् तेयार जोहोक् मित् हुय एना.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +111				1	sat	 '%FILENAME दोलिल भेजा जोहोक् मित् आदेराक्.बाहरे ओडोकाक् भुल हुय एना.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +112				1	sat	दोलिल भेजा जोहोक मित् आदेराक्/बाहरे ओडोकाक् भुल हुय एना  '%FILENAME'.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +113				1	sat	पोनता रेत् खोन तेयार हानताड़ उनुदुक् नोकोल जोहोक मित् भुल हुय एना.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +114				1	sat	 नोवा सांगिञ ठा़वका चालाक् %URL रे वेब साइट बाङ नोकोल दाड़ेयाक् आ.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +115				1	sat	बाङ आंस भुल हुय एना: %ERROR				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +116				1	sat	बाताव ञेल जोहोक् मित् बाङ आंस भुल हुय एना: '%FILENAME'				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +117				1	sat	%FILENAME' मित् पोटोम काना.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +118				1	sat	वेब विजार्ड साजाव लादे येत् आच्..				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +119				1	sat	.मित् बाङ आस भुल हुय एना.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +12				1	sat	रेत् तेयार  रे भेजा(~E):				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +120				1	sat	दोलिल बाताव होचोवाय काना.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +121				1	sat	इञाक् जोगाव जायगा				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +122				1	sat	उनुरुम				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +123				1	sat	 दोलिल				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +124				1	sat	मुल ओडोक् ञेल				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +125				1	sat	ओडोक् ञेल बिबोरोन				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +126				1	sat	हुना़र				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +127				1	sat	वेब साइट खोबोर				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +128				1	sat	लाहा तेयाक् ञेनेल				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +13				1	sat	आम वेब साइट ला़गति साधारोन खोबोर आदेर मे .				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +130				1	sat	बाछावाक् साजाव मेटाक् आ.\n\nचेत् आम सारी गे नोवा  को साजाव  मेटाव सानाम काना? 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +131				1	sat	%NUMBER साहटा				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +132				1	sat	%NUMBER स्लाइड				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +133				1	sat	तेयार: %DATE				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +134				1	sat	माड़ाङ ते मुचात्: %DATE				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +135				1	sat	वेब विजार्ड साजाव				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +136				1	sat	ओनोड़  चिता़र:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +137				1	sat	मोहड़ा साजाव:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +138				1	sat	HTML तेयार रे उनुदुक् ला़गित मोहड़ साजाव भेगार.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +139				1	sat	HTML माराङ सखिया़त				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 1				1	sat	वेब विजार्ड				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 10				1	sat	सार काथा  (~S): 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 102				1	sat	एटागाक्				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 103				1	sat	ओका हों बाङ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 104				1	sat	आमाक वेब साइटरा़स लेकाते तेयार कान ताहेन : %FILENAME				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 105				1	sat	वेब साइट तेयारोक् जोहोक मित् रे ढेर भुल हुय आकाना.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 106				1	sat	बिसोय साहटा को रेयाक् ता़लिका तेयार जोहोक मित् भुल हुय आकाना(s). 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 107				1	sat	ओडोक ञेंल रेत् नोकोल जोहोक् मित् भुल हुय एना. 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 108				1	sat	 '%FILENAME' ला़गित् दोलिल  खोबोर जारवा जोहोक मित् भुल हुय एना. 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 109				1	sat	'%FILENAME'. दोलिल भेजा जोहोक मित् भुल हुय एना.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 11				1	sat	ओनोलिया (~t):				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 110				1	sat	 '%FILENAME'.भेजा ला़कति उनुदुक् तेयार जोहोक् मित् हुय एना.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 111				1	sat	 '%FILENAME दोलिल भेजा जोहोक् मित् आदेराक्.बाहरे ओडोकाक् भुल हुय एना.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 112				1	sat	दोलिल भेजा जोहोक मित् आदेराक्/बाहरे ओडोकाक् भुल हुय एना  '%FILENAME'.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 113				1	sat	पोनता रेत् खोन तेयार हानताड़ उनुदुक् नोकोल जोहोक मित् भुल हुय एना.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 114				1	sat	 नोवा सांगिञ ठा़वका चालाक् %URL रे वेब साइट बाङ नोकोल दाड़ेयाक् आ.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 115				1	sat	बाङ आंस भुल हुय एना: %ERROR				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 116				1	sat	बाताव ञेल जोहोक् मित् बाङ आंस भुल हुय एना: '%FILENAME'				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 117				1	sat	%FILENAME' मित् पोटोम काना.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 118				1	sat	वेब विजार्ड साजाव लादे येत् आच्..				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 119				1	sat	.मित् बाङ आस भुल हुय एना.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 12				1	sat	रेत् तेयार  रे भेजा(~E):				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 120				1	sat	दोलिल बाताव होचोवाय काना.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 121				1	sat	इञाक् जोगाव जायगा				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 122				1	sat	उनुरुम				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 123				1	sat	 दोलिल				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 124				1	sat	मुल ओडोक् ञेल				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 125				1	sat	ओडोक् ञेल बिबोरोन				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 126				1	sat	हुना़र				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 127				1	sat	वेब साइट खोबोर				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 128				1	sat	लाहा तेयाक् ञेनेल				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 13				1	sat	आम वेब साइट ला़गति साधारोन खोबोर आदेर मे .				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 130				1	sat	बाछावाक् साजाव मेटाक् आ.\n\nचेत् आम सारी गे नोवा  को साजाव  मेटाव सानाम काना? 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 131				1	sat	%NUMBER साहटा				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 132				1	sat	%NUMBER स्लाइड				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 133				1	sat	तेयार: %DATE				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 134				1	sat	माड़ाङ ते मुचात्: %DATE				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 135				1	sat	वेब विजार्ड साजाव				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 136				1	sat	ओनोड़  चिता़र:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 137				1	sat	मोहड़ा साजाव:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 138				1	sat	HTML तेयार रे उनुदुक् ला़गित मोहड़ साजाव भेगार.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 139				1	sat	HTML माराङ सखिया़त				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +14				1	sat	ञुतुम:				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +140				1	sat	बाछाव				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +141				1	sat	बाछाव				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +142				1	sat	<मुल फेड़ात>				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +143				1	sat	FTP एड़े सेत् ते छापा ओडोक बाय गोडोवा.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +144				1	sat	<जाहान ओनोड़ चिता़र बाङ>				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +145				1	sat	<जाहान मोहड़ा साजाव वबाङ>				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +146				1	sat	FTP उनुदुक् '%FILENAME' बाङ तेयार दाड़ेयाक् आ.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 142				1	sat	<मुल फेड़ात>				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 143				1	sat	FTP एड़े सेत् ते छापा ओडोक बाय गोडोवा.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 144				1	sat	<जाहान ओनोड़ चिता़र बाङ>				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 145				1	sat	<जाहान मोहड़ा साजाव वबाङ>				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 146				1	sat	FTP उनुदुक् '%FILENAME' बाङ तेयार दाड़ेयाक् आ.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +147				1	sat	FTP उनुदुक् '%FILENAME' बानुक आ. \nनितोक उनुदुक् तेयार मे?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +148				1	sat	The Zip रेत् '%FILENAME'    बाङ तेयार दाड़ेयाक् आ इना़ मित् ञुतुम रेयाक् उनुदुक् माड़ाह खोन मेनाक् आ.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 148				1	sat	The Zip रेत् '%FILENAME'    बाङ तेयार दाड़ेयाक् आ इना़ मित् ञुतुम रेयाक् उनुदुक् माड़ाह खोन मेनाक् आ.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +149				1	sat	नोड़ेनाक् उनुदुक् '%FILENAME'  बाङ तेयार  दाड़ेयाक् आ. \nआमाक् ओओलाक् आ़तुर ञेंल मे?				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +150				1	sat	नोडोनाक उनुदुक् '%FILENAME' बानुक् आ. \nनितोक् उनुदुक् तेयार मे?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +151				1	sat	माराङ तेत्: %NUMBERKB				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +152				1	sat	रेत् बाय ञाम लेना. चेत् आम मित् नावा रेत् जायगा गोटा सानाम काना ?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +16				1	sat	बोरनोन				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +18				1	sat	तेयार:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +2				1	sat	इन्टरनेट रे दोलिल छापा रे  नोवा बवे बिजार्ड  आम गोंडो वामा.\n \n                                                                                              नोवा दोलिल ए बोदोला जांहा ते उनी वेब पानतेयाक् दाराय ते ञेंल दाड़ेयाक् आ. सेलेद रे दोलिल आलगा ते आतुर ला़गित खोंजा सांव साहटा बिसोय रेयाक् ता़लिका तेयार वेब बिजार्ड आमा वेब साहटा रेयाक् कुसियाक् जोह आर ओडोक  तेयार रेहों गोड़ोय एमामा\n\n   आम  दोलिल दोहो दाड़ेयाक् आम वेब चेतान मा़हित रे छापा दाड़ेयाक् आम आर बाङ जाहां  तिन रेगे दोलिल ओचोक् साहा दाड़ेयाक् आ.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +20				1	sat	ईमेल:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +21				1	sat	ओल तोल बहोक ढा़रवा़क:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +22				1	sat	बोदोल				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +24				1	sat	लहातेयाक ञेनेल (~P)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +25				1	sat	आम आमाक वेब साइट ओकारे छापा उठा़न ओडोक सानाम काना?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +26				1	sat	नावा आमाक वेब साइट छापा ओडोक्:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +27				1	sat	नोडेनाक पोटोम रे (~l)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 151				1	sat	माराङ तेत्: %NUMBERKB				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 152				1	sat	रेत् बाय ञाम लेना. चेत् आम मित् नावा रेत् जायगा गोटा सानाम काना ?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 16				1	sat	बोरनोन				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 18				1	sat	तेयार:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 2				1	sat	इन्टरनेट रे दोलिल छापा रे  नोवा बवे बिजार्ड  आम गोंडो वामा.\n \n                                                                                              नोवा दोलिल ए बोदोला जांहा ते उनी वेब पानतेयाक् दाराय ते ञेंल दाड़ेयाक् आ. सेलेद रे दोलिल आलगा ते आतुर ला़गित खोंजा सांव साहटा बिसोय रेयाक् ता़लिका तेयार वेब बिजार्ड आमा वेब साहटा रेयाक् कुसियाक् जोह आर ओडोक  तेयार रेहों गोड़ोय एमामा\n\n   आम  दोलिल दोहो दाड़ेयाक् आम वेब चेतान मा़हित रे छापा दाड़ेयाक् आम आर बाङ जाहां  तिन रेगे दोलिल ओचोक् साहा दाड़ेयाक् आ.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 20				1	sat	ईमेल:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 21				1	sat	ओल तोल बहोक ढा़रवा़क:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 22				1	sat	बोदोल				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 24				1	sat	लहातेयाक ञेनेल (~P)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 25				1	sat	आम आमाक वेब साइट ओकारे छापा उठा़न ओडोक सानाम काना?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 26				1	sat	नावा आमाक वेब साइट छापा ओडोक्:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 27				1	sat	नोडेनाक पोटोम रे (~l)				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +28				1	sat	...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +29				1	sat	 वेब सार्वर रे  FTP लेकाते (~w)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +31				1	sat	तेयार(~C)...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +32				1	sat	 ZIP जोगाव जायगा रे (~a)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 29				1	sat	 वेब सार्वर रे  FTP लेकाते (~w)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 31				1	sat	तेयार(~C)...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 32				1	sat	 ZIP जोगाव जायगा रे (~a)				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +33				1	sat	...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +34				1	sat	साजाव सांचाव (~S) (बातावाकानाक्)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +35				1	sat	लेका सांचाव (~a):				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +36				1	sat	वेब विजार्ड ला़गित  साजाव बाछाव (~C)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +37				1	sat	वेबसाइट विसोय				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +38				1	sat	सेलेद (~A) ...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +39				1	sat	ओचोक्  (~v)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +4				1	sat	मेटाव(~D)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +40				1	sat	आमाक  वेबसाइट  रेयाक् बिसोय रेयाक् ता़लिका ला़गित् ओडोक ञेल  बाछाव				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +41				1	sat	बिसोय साहटा रेयाक् ता़लिका ला़गित हुना़र  बाछाव.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +42				1	sat	हुना़र (~S):				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +48				1	sat	 ओड़ोक ञेंल  (~L): 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +5				1	sat	उपुरुम				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +50				1	sat	विवोरन(~D)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +51				1	sat	ओनोलिया़ (~A)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +52				1	sat	तायार मा़हित (~e)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +53				1	sat	मुचा़दा़क मा़हित बोदोल (~L)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +54				1	sat	रेत् ञुतुम  (~F)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +55				1	sat	रेत् तेयार (~t)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +56				1	sat	रेत् तेयार  मोहडा (~i)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +57				1	sat	साहटा रेयाक् लेखा (~o)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +58				1	sat	KB माराङ तेत् (~S)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +59				1	sat	'ओताय मे 'Preview' आमाक् पानतेयाक् रे लाहा तेयाक् ञेल ला़गित :				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +6				1	sat	दोलिल बाछाव मे आम ओका छापा सानाम काना.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +60				1	sat	बाछावाक ओडोक ञेल कुसियाक् तेयार एदा.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +61				1	sat	बिसोय रेयाक् ता़लिका रे जोतो दोलिल रेयाक् नोवा को खोबोर सामिल मे:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +62				1	sat	पोरदा निसटा ला़गित ओडोक ञेल कुसियाक्  लेका तेयार मे:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +64				1	sat	~640x480				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +65				1	sat	~800x600				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +66				1	sat	~1024x768				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +70				1	sat	आमाक् वेबसाइट तेयार रेयाक्.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +71				1	sat	%START - %END/%TOTAL				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +72				1	sat	इञाक् Website				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +73				1	sat	FTP जोस '%FILENAME' मित् रेत् काना.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +74				1	sat	नोड़े नाक् जोस '%FILENAME' मित् रेत् काना.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +75				1	sat	ZIP जोस '%FILENAME' माड़ाङ खोन मेनाक् आ. चेत् आम मेनाक् जोस  ओल चेतान ओल सानाम काना?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +76				1	sat	The FTP जोस उनुदुक् '%FILENAME'  बाङ खालिया . तिनाक् गान रेत् ओल चेतान ओल हुय दाड़ेयाक् .  चेत् आम लेताड़ सानाम काना?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +77				1	sat	नोड़ेनाक् जोस उनुदुक् '%FILENAME'   बाय खालिया . तिनाक गान रेत् ओल चेतान ओल हुय दाड़ेयाक् आ .  चेत आम लेताड़ सानाम काना?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +78				1	sat	साजाव एमाकान ञुतुम रे माड़ाङ खोन मेनाक् आ चेत् आम मेनाक सादाव चेतान ओल सानाम काना? 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +79				1	sat	दोलिल बाहरे भेजायेताक्.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +8				1	sat	दोलिल खोबोर 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +80				1	sat	भेजाय सापड़ावेत् आ..				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +81				1	sat	ओड़ोक ञेल रेत् को नोकोलोक् काना..				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +82				1	sat	तेयाराक् बिसोय खोन ता़लिका तेयारेत् आ..				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +83				1	sat	बिसोय रेयाक ता़लिका तेयारोक् काना...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +84				1	sat	एहोबो काना.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +86				1	sat	छापा ओडोक लागित् सापड़ाव.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +87				1	sat	नोडेनाक उनुकु रे छापा ओडोक् काना..				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +88				1	sat	FTP सांगिञ ठा़वका चालाक् रे FTP सांगिञ ठा़वका चालाक् रे छापा ओडोक चेत् आ..				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +89				1	sat	 ZIP . जोगाव जायाग रे छापा यात् आ.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +9				1	sat	ञुतुम (~T):				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 34				1	sat	साजाव सांचाव (~S) (बातावाकानाक्)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 35				1	sat	लेका सांचाव (~a):				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 36				1	sat	वेब विजार्ड ला़गित  साजाव बाछाव (~C)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 37				1	sat	वेबसाइट विसोय				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 38				1	sat	सेलेद (~A) ...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 39				1	sat	ओचोक्  (~v)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 4				1	sat	मेटाव(~D)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 40				1	sat	आमाक  वेबसाइट  रेयाक् बिसोय रेयाक् ता़लिका ला़गित् ओडोक ञेल  बाछाव				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 41				1	sat	बिसोय साहटा रेयाक् ता़लिका ला़गित हुना़र  बाछाव.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 42				1	sat	हुना़र (~S):				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 48				1	sat	 ओड़ोक ञेंल  (~L): 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 5				1	sat	उपुरुम				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 50				1	sat	विवोरन(~D)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 51				1	sat	ओनोलिया़ (~A)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 52				1	sat	तायार मा़हित (~e)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 53				1	sat	मुचा़दा़क मा़हित बोदोल (~L)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 54				1	sat	रेत् ञुतुम  (~F)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 55				1	sat	रेत् तेयार (~t)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 56				1	sat	रेत् तेयार  मोहडा (~i)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 57				1	sat	साहटा रेयाक् लेखा (~o)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 58				1	sat	KB माराङ तेत् (~S)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 59				1	sat	'ओताय मे 'Preview' आमाक् पानतेयाक् रे लाहा तेयाक् ञेल ला़गित :				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 6				1	sat	दोलिल बाछाव मे आम ओका छापा सानाम काना.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 60				1	sat	बाछावाक ओडोक ञेल कुसियाक् तेयार एदा.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 61				1	sat	बिसोय रेयाक् ता़लिका रे जोतो दोलिल रेयाक् नोवा को खोबोर सामिल मे:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 62				1	sat	पोरदा निसटा ला़गित ओडोक ञेल कुसियाक्  लेका तेयार मे:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 64				1	sat	~640x480				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 65				1	sat	~800x600				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 66				1	sat	~1024x768				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 70				1	sat	आमाक् वेबसाइट तेयार रेयाक्.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 71				1	sat	%START - %END/%TOTAL				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 72				1	sat	इञाक् Website				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 73				1	sat	FTP जोस '%FILENAME' मित् रेत् काना.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 74				1	sat	नोड़े नाक् जोस '%FILENAME' मित् रेत् काना.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 75				1	sat	ZIP जोस '%FILENAME' माड़ाङ खोन मेनाक् आ. चेत् आम मेनाक् जोस  ओल चेतान ओल सानाम काना?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 76				1	sat	The FTP जोस उनुदुक् '%FILENAME'  बाङ खालिया . तिनाक् गान रेत् ओल चेतान ओल हुय दाड़ेयाक् .  चेत् आम लेताड़ सानाम काना?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 77				1	sat	नोड़ेनाक् जोस उनुदुक् '%FILENAME'   बाय खालिया . तिनाक गान रेत् ओल चेतान ओल हुय दाड़ेयाक् आ .  चेत आम लेताड़ सानाम काना?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 78				1	sat	साजाव एमाकान ञुतुम रे माड़ाङ खोन मेनाक् आ चेत् आम मेनाक सादाव चेतान ओल सानाम काना? 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 79				1	sat	दोलिल बाहरे भेजायेताक्.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 8				1	sat	दोलिल खोबोर 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 80				1	sat	भेजाय सापड़ावेत् आ..				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 81				1	sat	ओड़ोक ञेल रेत् को नोकोलोक् काना..				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 82				1	sat	तेयाराक् बिसोय खोन ता़लिका तेयारेत् आ..				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 83				1	sat	बिसोय रेयाक ता़लिका तेयारोक् काना...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 84				1	sat	एहोबो काना.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 86				1	sat	छापा ओडोक लागित् सापड़ाव.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 87				1	sat	नोडेनाक उनुकु रे छापा ओडोक् काना..				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 88				1	sat	FTP सांगिञ ठा़वका चालाक् रे FTP सांगिञ ठा़वका चालाक् रे छापा ओडोक चेत् आ..				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 89				1	sat	 ZIP . जोगाव जायाग रे छापा यात् आ.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 9				1	sat	ञुतुम (~T):				2002-02-02 02:02:02
 wizards	source\importwizard\importwi.src	0	string	sBackButton				1	sat	<< देया (~B)				2002-02-02 02:02:02
 wizards	source\importwizard\importwi.src	0	string	sBeginButton				1	sat	उचाड़(~C)				2002-02-02 02:02:02
 wizards	source\importwizard\importwi.src	0	string	sCancelButton				1	sat	बा़डरा़(~C)				2002-02-02 02:02:02
