@@ -22355,27 +22355,27 @@ connectivity	source\resource\conn_error_message.src	0	string	256 + 2*303 + 0				
 connectivity	source\resource\conn_error_message.src	0	string	256 + 2*304 + 0				0	km	គ្មានការ​តភ្ជាប់​ទៅ​កាន់​មូលដ្ឋាន​ទិន្នន័យ​ដែលមាន​ស្រាប់​ទេ ។				20200411 15:09:53
 connectivity	source\resource\conn_error_message.src	0	string	256 + 2*500 + 0				0	km	មិនមាន $1$ ទេ ។				20200411 15:09:53
 connectivity	source\resource\conn_error_message.src	0	string	256 + 2*550 + 0				0	km	មិនអាច​បង្ហាញ​មាតិកា​តារាង​ពេញលេញ​បានទេ ។ សូម អនុវត្ត​តម្រង ។				20200411 15:09:53
-connectivity	source\drivers\adabas\adabas.xcu	0	value	.Drivers.Installed.sdbc:adabas:*	DriverTypeDisplayName			0	km	Adabas D				20200411 15:09:53
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:*	DriverTypeDisplayName			0	km	ADO				20200411 15:09:53
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:PROVIDER=Microsoft.Jet.OLEDB.4.0;DATA SOURCE=*	DriverTypeDisplayName			0	km	Microsoft Access				20200411 15:09:53
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:Provider=Microsoft.ACE.OLEDB.12.0;DATA SOURCE=*	DriverTypeDisplayName			0	km	Microsoft Access 2007				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\adabas.xcu	0	value	.Drivers.Installed.sdbc:adabas:*	DriverTypeDisplayName			0	km	Adabas D				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:*	DriverTypeDisplayName			0	km	ADO				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:PROVIDER=Microsoft.Jet.OLEDB.4.0;DATA SOURCE=*	DriverTypeDisplayName			0	km	Microsoft Access				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:Provider=Microsoft.ACE.OLEDB.12.0;DATA SOURCE=*	DriverTypeDisplayName			0	km	Microsoft Access 2007				20200411 15:09:53
 connectivity	source\drivers\calc\calc.xcu	0	value	.Drivers.Installed.sdbc:calc:*	DriverTypeDisplayName			0	km	Spreadsheet				20200411 15:09:53
 connectivity	source\drivers\jdbc\jdbc.xcu	0	value	.Drivers.Installed.jdbc:*	DriverTypeDisplayName			0	km	JDBC				20200411 15:09:53
 connectivity	source\drivers\jdbc\jdbc.xcu	0	value	.Drivers.Installed.jdbc:oracle:thin:*	DriverTypeDisplayName			0	km	Oracle JDBC				20200411 15:09:53
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:jdbc:*	DriverTypeDisplayName			0	km	MySQL (JDBC)				20200411 15:09:53
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:odbc:*	DriverTypeDisplayName			0	km	MySQL (ODBC)				20200411 15:09:53
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:mysqlc:*	DriverTypeDisplayName			0	km	MySQL (Native)				20200411 15:09:53
-connectivity	source\drivers\flat\flat.xcu	0	value	.Drivers.Installed.sdbc:flat:*	DriverTypeDisplayName			0	km	អត្ថបទ				20200411 15:09:53
-connectivity	source\drivers\dbase\dbase.xcu	0	value	.Drivers.Installed.sdbc:dbase:*	DriverTypeDisplayName			0	km	dBASE				20200411 15:09:53
-connectivity	source\drivers\hsqldb\hsqldb.xcu	0	value	.Drivers.Installed.sdbc:embedded:hsqldb	DriverTypeDisplayName			0	km	ម៉ាស៊ីន​មូលដ្ឋាន​ទិន្នន័យ HSQL				20200411 15:09:53
-connectivity	source\drivers\odbc\odbc.xcu	0	value	.Drivers.Installed.sdbc:odbc:*	DriverTypeDisplayName			0	km	ODBC				20200411 15:09:53
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:local	DriverTypeDisplayName			0	km	Evolution Local				20200411 15:09:53
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:ldap	DriverTypeDisplayName			0	km	Evolution LDAP				20200411 15:09:53
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:groupwise	DriverTypeDisplayName			0	km	Groupwise				20200411 15:09:53
-connectivity	source\drivers\macab\macab.xcu	0	value	.Drivers.Installed.sdbc:address:macab	DriverTypeDisplayName			0	km	សៀវភៅ​អាសយដ្ឋាន​របស់ Mac OS X				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:jdbc:*	DriverTypeDisplayName			0	km	MySQL (JDBC)				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:odbc:*	DriverTypeDisplayName			0	km	MySQL (ODBC)				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:mysqlc:*	DriverTypeDisplayName			0	km	MySQL (Native)				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\flat.xcu	0	value	.Drivers.Installed.sdbc:flat:*	DriverTypeDisplayName			0	km	អត្ថបទ				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\dbase.xcu	0	value	.Drivers.Installed.sdbc:dbase:*	DriverTypeDisplayName			0	km	dBASE				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\hsqldb.xcu	0	value	.Drivers.Installed.sdbc:embedded:hsqldb	DriverTypeDisplayName			0	km	ម៉ាស៊ីន​មូលដ្ឋាន​ទិន្នន័យ HSQL				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\odbc.xcu	0	value	.Drivers.Installed.sdbc:odbc:*	DriverTypeDisplayName			0	km	ODBC				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:local	DriverTypeDisplayName			0	km	Evolution Local				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:ldap	DriverTypeDisplayName			0	km	Evolution LDAP				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:groupwise	DriverTypeDisplayName			0	km	Groupwise				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\macab.xcu	0	value	.Drivers.Installed.sdbc:address:macab	DriverTypeDisplayName			0	km	សៀវភៅ​អាសយដ្ឋាន​របស់ Mac OS X				20200411 15:09:53
 connectivity	java\sdbc_jdbc\sdbc_jdbc.xcu	0	value	.Drivers.Installed.jdbc:*	DriverTypeDisplayName			0	km	JDBC				20200411 15:09:53
 connectivity	java\sdbc_jdbc\sdbc_jdbc.xcu	0	value	.Drivers.Installed.jdbc:oracle:thin:*	DriverTypeDisplayName			0	km	Oracle JDBC				20200411 15:09:53
-connectivity	java\sdbc_postgresql\sdbc_postgresql.xcu	0	value	.Drivers.Installed.sdbc:postgresql:jdbc:*	DriverTypeDisplayName			0	km	PostgreSQL				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\sdbc_postgresql.xcu	0	value	.Drivers.Installed.sdbc:postgresql:jdbc:*	DriverTypeDisplayName			0	km	PostgreSQL				20200411 15:09:53
 shell	source\win32\shlxthandler\res\shlxthdl.ulf	0	LngText	%TITLE%				0	km	ចំណង​ជើង				20200411 15:09:53
 shell	source\win32\shlxthandler\res\shlxthdl.ulf	0	LngText	%TITLE_COLON%				0	km	ចំណងជើង ៖				20200411 15:09:53
 shell	source\win32\shlxthandler\res\shlxthdl.ulf	0	LngText	%SUBJECT%				0	km	ប្រធាន​បទ				20200411 15:09:53
@@ -51794,20 +51794,20 @@ helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	bm_id3274636				0	km	\
 helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10544				0	km	\<link href=\"text/simpress/01/taskpanel.xhp\"\>ស្លាបព្រិល​ភារកិច្ច\</link\>				20200411 15:09:53
 helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10554				0	km	\<ahelp hid=\".\"\>បិទ/បើក ស្លាបព្រិល​ភារកិច្ច %PRODUCTNAME Impress ។\</ahelp\>				20200411 15:09:53
 helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10557				0	km	ស្លាបព្រិល​ភារកិច្ច​មាន​ទំព័រ ដើម្បី​បញ្ជាក់​​ទំព័រ​មេ, ប្លង់, ចលនា​ផ្ទាល់​ខ្លួន និង ដំណើរ​ផ្លាស់ប្ដូរ​ស្លាយ ។ ចុច​ក្បាល​ផ្សេង​ទៀត ដើម្បី​បើក​ទំព័រ​ផ្សេង​ទៀត ។				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN105D4				0	km	\<embedvar href=\"text/simpress/guide/masterpage.xhp#masterpage\"/\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10652				0	km	\<ahelp hid=\".\" visibility=\"hidden\"\>បើក​ទំព័រ​ផ្ទាំង ទំព័រ​មេ ដែល​អ្នក​អាច​អនុវត្ត​ទំព័រ​មេ​មួយ (ផ្ទៃ​ខាង​ក្រោយ) ទៅ​ស្លាយ​ទាំងអស់ (ចុច​ប៊ូតុង​កណ្ដុរ​ឆ្វេង) ឬ​ទៅ​ស្លាយ​ដែល​បាន​ជ្រើស (ចុច​ប៊ូតុង​កណ្ដុរ​ស្ដាំ) ។\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN1067D				0	km	\<ahelp hid=\".\" visibility=\"hidden\"\>រាយ​ទំព័រ​មេ​ដែល​បាន​ប្រើ​បច្ចុប្បន្ន ។\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN106A8				0	km	\<ahelp hid=\".\" visibility=\"hidden\"\>រាយ​ទំព័រ​មេ​ដែល​បាន​ប្រើ​ថ្មីៗ​នេះ ។\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN106D3				0	km	\<ahelp hid=\".\" visibility=\"hidden\"\>រាយ​ទំព័រ​មេ​ដែល​មាន​ទាំងអស់ ។\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN106FA				0	km	\<ahelp hid=\".\" visibility=\"hidden\"\>ចុច​ប៊ូតុង​កណ្ដុរ​ឆ្វេង ដើម្បី​អនុវត្ត​ទំព័រ​មេ​ទៅ​ស្លាយ​ទាំងអស់ ។ ចុច​ប៊ូតុង​កណ្ដុរ​ស្ដាំ​ដើម្បី​បើក​ម៉ឺនុយ​រង ។\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10747				0	km	\<ahelp hid=\".\" visibility=\"hidden\"\>អនុវត្ត​ទំព័រ​មេ​ទៅ​ស្លាយ​ទាំងអស់ ។\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10762				0	km	\<ahelp hid=\".\" visibility=\"hidden\"\>អនុវត្ត​ទំព័រ​មេ ឬ​ការ​រចនា​ស្លាយ​ទៅ​ស្លាយ​ដែល​បាន​ជ្រើស ។\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10785				0	km	\<ahelp hid=\".\" visibility=\"hidden\"\>ប្ដូរ​ទំហំ​មើល​ជា​មុន​របស់​ទំព័រ​មេ ។\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN107B4				0	km	\<ahelp hid=\".\" visibility=\"hidden\"\>បើក​ទំព័រ​ផ្ទាំង ប្លង់ ដែល​អ្នក​អាច​អនុវត្ត​ការ​រចនា​ស្លាយ​មួយ​ទៅ​ស្លាយ​មួយ ឬ​ច្រើន​ដែល​បាន​ជ្រើស ។\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN107CB				0	km	\<ahelp hid=\".\" visibility=\"hidden\"\>ចុច ដើម្បី​អនុវត្ត​ការ​រចនា​ស្លាយ​មួយ​ទៅ​ស្លាយ​ដែល​បាន​ជ្រើស​ទាំងអស់ ។ ចុច​ប៊ូតុង​កណ្ដុរ​ស្ដាំ​ដើម្បី​បើក​ម៉ឺនុយ​រង ។\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN1080E				0	km	\<ahelp hid=\".\" visibility=\"hidden\"\>បើក​ទំព័រ​ផ្ទាំង ចលនា​ផ្ទាល់​ខ្លួន ដែល​អ្នក​អាច​អនុវត្ត​បែបផែន​ទៅ​វត្ថុ​ដែល​បាន​ជ្រើស​លើ​ស្លាយ​មួយ ។\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10839				0	km	\<ahelp hid=\".\" visibility=\"hidden\"\>បើក​ទំព័រ​ផ្ទាំង ដំណើរ​ផ្លាស់ប្ដូរ​ស្លាយ ដែល​អ្នក​អនុវត្ត​បែបផែន​ផ្លាស់ប្ដូរ​ទៅ​ស្លាយ​ដែល​បាន​ជ្រើស ។\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_id0916200812240344				0	km	\<ahelp hid=\".\" visibility=\"hidden\"\>បើក​ការ​រចនាតារាង ។ ចុច​ទ្វេដង​លើ​កា​រមើលជាមុន​ ដើម្បី​បញ្ចូលតារាង​ថ្មី ។\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN105D4				0	km	\<embedvar href=\"text/simpress/guide/masterpage.xhp#masterpage\"/\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10652				0	km	\<ahelp hid=\".\" visibility=\"hidden\"\>បើក​ទំព័រ​ផ្ទាំង ទំព័រ​មេ ដែល​អ្នក​អាច​អនុវត្ត​ទំព័រ​មេ​មួយ (ផ្ទៃ​ខាង​ក្រោយ) ទៅ​ស្លាយ​ទាំងអស់ (ចុច​ប៊ូតុង​កណ្ដុរ​ឆ្វេង) ឬ​ទៅ​ស្លាយ​ដែល​បាន​ជ្រើស (ចុច​ប៊ូតុង​កណ្ដុរ​ស្ដាំ) ។\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1067D				0	km	\<ahelp hid=\".\" visibility=\"hidden\"\>រាយ​ទំព័រ​មេ​ដែល​បាន​ប្រើ​បច្ចុប្បន្ន ។\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106A8				0	km	\<ahelp hid=\".\" visibility=\"hidden\"\>រាយ​ទំព័រ​មេ​ដែល​បាន​ប្រើ​ថ្មីៗ​នេះ ។\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106D3				0	km	\<ahelp hid=\".\" visibility=\"hidden\"\>រាយ​ទំព័រ​មេ​ដែល​មាន​ទាំងអស់ ។\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106FA				0	km	\<ahelp hid=\".\" visibility=\"hidden\"\>ចុច​ប៊ូតុង​កណ្ដុរ​ឆ្វេង ដើម្បី​អនុវត្ត​ទំព័រ​មេ​ទៅ​ស្លាយ​ទាំងអស់ ។ ចុច​ប៊ូតុង​កណ្ដុរ​ស្ដាំ​ដើម្បី​បើក​ម៉ឺនុយ​រង ។\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10747				0	km	\<ahelp hid=\".\" visibility=\"hidden\"\>អនុវត្ត​ទំព័រ​មេ​ទៅ​ស្លាយ​ទាំងអស់ ។\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10762				0	km	\<ahelp hid=\".\" visibility=\"hidden\"\>អនុវត្ត​ទំព័រ​មេ ឬ​ការ​រចនា​ស្លាយ​ទៅ​ស្លាយ​ដែល​បាន​ជ្រើស ។\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10785				0	km	\<ahelp hid=\".\" visibility=\"hidden\"\>ប្ដូរ​ទំហំ​មើល​ជា​មុន​របស់​ទំព័រ​មេ ។\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107B4				0	km	\<ahelp hid=\".\" visibility=\"hidden\"\>បើក​ទំព័រ​ផ្ទាំង ប្លង់ ដែល​អ្នក​អាច​អនុវត្ត​ការ​រចនា​ស្លាយ​មួយ​ទៅ​ស្លាយ​មួយ ឬ​ច្រើន​ដែល​បាន​ជ្រើស ។\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107CB				0	km	\<ahelp hid=\".\" visibility=\"hidden\"\>ចុច ដើម្បី​អនុវត្ត​ការ​រចនា​ស្លាយ​មួយ​ទៅ​ស្លាយ​ដែល​បាន​ជ្រើស​ទាំងអស់ ។ ចុច​ប៊ូតុង​កណ្ដុរ​ស្ដាំ​ដើម្បី​បើក​ម៉ឺនុយ​រង ។\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1080E				0	km	\<ahelp hid=\".\" visibility=\"hidden\"\>បើក​ទំព័រ​ផ្ទាំង ចលនា​ផ្ទាល់​ខ្លួន ដែល​អ្នក​អាច​អនុវត្ត​បែបផែន​ទៅ​វត្ថុ​ដែល​បាន​ជ្រើស​លើ​ស្លាយ​មួយ ។\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10839				0	km	\<ahelp hid=\".\" visibility=\"hidden\"\>បើក​ទំព័រ​ផ្ទាំង ដំណើរ​ផ្លាស់ប្ដូរ​ស្លាយ ដែល​អ្នក​អនុវត្ត​បែបផែន​ផ្លាស់ប្ដូរ​ទៅ​ស្លាយ​ដែល​បាន​ជ្រើស ។\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_id0916200812240344				0	km	\<ahelp hid=\".\" visibility=\"hidden\"\>បើក​ការ​រចនាតារាង ។ ចុច​ទ្វេដង​លើ​កា​រមើលជាមុន​ ដើម្បី​បញ្ចូលតារាង​ថ្មី ។\</ahelp\>				20200411 15:09:53
 helpcontent2	source\text\simpress\01\05110500m.xhp	0	help	tit				0	km	លុប				20200411 15:09:53
 helpcontent2	source\text\simpress\01\05110500m.xhp	0	help	hd_id3149502				0	km	\<link href=\"text/simpress/01/05110500m.xhp\" name=\"Delete\"\>លុប\</link\>				20200411 15:09:53
 helpcontent2	source\text\simpress\01\05110500m.xhp	0	help	par_id3149050				0	km	\<variable id=\"loeschentext\"\>\<ahelp hid=\".uno:DeleteRows\"\>លុប​ជួរដេក​ដែល​បានជ្រើស​ពី​តារាង ។\</ahelp\>\</variable\>				20200411 15:09:53
@@ -72946,16 +72946,3 @@ padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_TXT			14
 padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_USER_TXT			60	km	អ្នកប្រើ 				20200411 15:09:53
 padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_PASS_TXT			60	km	ពាក្យ​សម្ងាត់ 				20200411 15:09:53
 padmin	source\rtsetup.src	0	modaldialog	RID_RTS_PWDIALOG				150	km	សំណើ​​​ផ្ទៀង​​ផ្ទាត់​​ភាព​​ត្រឹម​​ត្រូវ​​				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10652				0	km	\<ahelp hid=\".\" visibility=\"hidden\"\>បើក​ទំព័រ​ផ្ទាំង ទំព័រ​មេ ដែល​អ្នក​អាច​អនុវត្ត​ទំព័រ​មេ​មួយ (ផ្ទៃ​ខាង​ក្រោយ) ទៅ​ស្លាយ​ទាំងអស់ (ចុច​ប៊ូតុង​កណ្ដុរ​ឆ្វេង) ឬ​ទៅ​ស្លាយ​ដែល​បាន​ជ្រើស (ចុច​ប៊ូតុង​កណ្ដុរ​ស្ដាំ) ។\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1067D				0	km	\<ahelp hid=\".\" visibility=\"hidden\"\>រាយ​ទំព័រ​មេ​ដែល​បាន​ប្រើ​បច្ចុប្បន្ន ។\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106A8				0	km	\<ahelp hid=\".\" visibility=\"hidden\"\>រាយ​ទំព័រ​មេ​ដែល​បាន​ប្រើ​ថ្មីៗ​នេះ ។\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106D3				0	km	\<ahelp hid=\".\" visibility=\"hidden\"\>រាយ​ទំព័រ​មេ​ដែល​មាន​ទាំងអស់ ។\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106FA				0	km	\<ahelp hid=\".\" visibility=\"hidden\"\>ចុច​ប៊ូតុង​កណ្ដុរ​ឆ្វេង ដើម្បី​អនុវត្ត​ទំព័រ​មេ​ទៅ​ស្លាយ​ទាំងអស់ ។ ចុច​ប៊ូតុង​កណ្ដុរ​ស្ដាំ​ដើម្បី​បើក​ម៉ឺនុយ​រង ។\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10747				0	km	\<ahelp hid=\".\" visibility=\"hidden\"\>អនុវត្ត​ទំព័រ​មេ​ទៅ​ស្លាយ​ទាំងអស់ ។\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10762				0	km	\<ahelp hid=\".\" visibility=\"hidden\"\>អនុវត្ត​ទំព័រ​មេ ឬ​ការ​រចនា​ស្លាយ​ទៅ​ស្លាយ​ដែល​បាន​ជ្រើស ។\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10785				0	km	\<ahelp hid=\".\" visibility=\"hidden\"\>ប្ដូរ​ទំហំ​មើល​ជា​មុន​របស់​ទំព័រ​មេ ។\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107B4				0	km	\<ahelp hid=\".\" visibility=\"hidden\"\>បើក​ទំព័រ​ផ្ទាំង ប្លង់ ដែល​អ្នក​អាច​អនុវត្ត​ការ​រចនា​ស្លាយ​មួយ​ទៅ​ស្លាយ​មួយ ឬ​ច្រើន​ដែល​បាន​ជ្រើស ។\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107CB				0	km	\<ahelp hid=\".\" visibility=\"hidden\"\>ចុច ដើម្បី​អនុវត្ត​ការ​រចនា​ស្លាយ​មួយ​ទៅ​ស្លាយ​ដែល​បាន​ជ្រើស​ទាំងអស់ ។ ចុច​ប៊ូតុង​កណ្ដុរ​ស្ដាំ​ដើម្បី​បើក​ម៉ឺនុយ​រង ។\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1080E				0	km	\<ahelp hid=\".\" visibility=\"hidden\"\>បើក​ទំព័រ​ផ្ទាំង ចលនា​ផ្ទាល់​ខ្លួន ដែល​អ្នក​អាច​អនុវត្ត​បែបផែន​ទៅ​វត្ថុ​ដែល​បាន​ជ្រើស​លើ​ស្លាយ​មួយ ។\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10839				0	km	\<ahelp hid=\".\" visibility=\"hidden\"\>បើក​ទំព័រ​ផ្ទាំង ដំណើរ​ផ្លាស់ប្ដូរ​ស្លាយ ដែល​អ្នក​អនុវត្ត​បែបផែន​ផ្លាស់ប្ដូរ​ទៅ​ស្លាយ​ដែល​បាន​ជ្រើស ។\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_id0916200812240344				0	km	\<ahelp hid=\".\" visibility=\"hidden\"\>បើក​ការ​រចនាតារាង ។ ចុច​ទ្វេដង​លើ​កា​រមើលជាមុន​ ដើម្បី​បញ្ចូលតារាង​ថ្មី ។\</ahelp\>				20200411 15:09:53

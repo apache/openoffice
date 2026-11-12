@@ -22355,27 +22355,27 @@ connectivity	source\resource\conn_error_message.src	0	string	256 + 2*303 + 0				
 connectivity	source\resource\conn_error_message.src	0	string	256 + 2*304 + 0				0	vi	Không tồn tại kết nối tới cơ sở dữ liệu.				20200411 15:09:53
 connectivity	source\resource\conn_error_message.src	0	string	256 + 2*500 + 0				0	vi	Không tồn tại $1$.				20200411 15:09:53
 connectivity	source\resource\conn_error_message.src	0	string	256 + 2*550 + 0				0	vi	Không hiển thị được toàn bộ nội dung bảng. Hãy dùng bộ lọc khác.				20200411 15:09:53
-connectivity	source\drivers\adabas\adabas.xcu	0	value	.Drivers.Installed.sdbc:adabas:*	DriverTypeDisplayName			0	vi	Adabas D				20200411 15:09:53
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:*	DriverTypeDisplayName			0	vi	ADO				20200411 15:09:53
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:PROVIDER=Microsoft.Jet.OLEDB.4.0;DATA SOURCE=*	DriverTypeDisplayName			0	vi	Microsoft Access				20200411 15:09:53
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:Provider=Microsoft.ACE.OLEDB.12.0;DATA SOURCE=*	DriverTypeDisplayName			0	vi	Microsoft Access 2007				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\adabas.xcu	0	value	.Drivers.Installed.sdbc:adabas:*	DriverTypeDisplayName			0	vi	Adabas D				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:*	DriverTypeDisplayName			0	vi	ADO				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:PROVIDER=Microsoft.Jet.OLEDB.4.0;DATA SOURCE=*	DriverTypeDisplayName			0	vi	Microsoft Access				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:Provider=Microsoft.ACE.OLEDB.12.0;DATA SOURCE=*	DriverTypeDisplayName			0	vi	Microsoft Access 2007				20200411 15:09:53
 connectivity	source\drivers\calc\calc.xcu	0	value	.Drivers.Installed.sdbc:calc:*	DriverTypeDisplayName			0	vi	Spreadsheet				20200411 15:09:53
 connectivity	source\drivers\jdbc\jdbc.xcu	0	value	.Drivers.Installed.jdbc:*	DriverTypeDisplayName			0	vi	JDBC				20200411 15:09:53
 connectivity	source\drivers\jdbc\jdbc.xcu	0	value	.Drivers.Installed.jdbc:oracle:thin:*	DriverTypeDisplayName			0	vi	Oracle JDBC				20200411 15:09:53
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:jdbc:*	DriverTypeDisplayName			0	vi	MySQL (JDBC)				20200411 15:09:53
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:odbc:*	DriverTypeDisplayName			0	vi	MySQL (ODBC)				20200411 15:09:53
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:mysqlc:*	DriverTypeDisplayName			0	vi	MySQL (Native)				20200411 15:09:53
-connectivity	source\drivers\flat\flat.xcu	0	value	.Drivers.Installed.sdbc:flat:*	DriverTypeDisplayName			0	vi	Văn bản				20200411 15:09:53
-connectivity	source\drivers\dbase\dbase.xcu	0	value	.Drivers.Installed.sdbc:dbase:*	DriverTypeDisplayName			0	vi	dBASE				20200411 15:09:53
-connectivity	source\drivers\hsqldb\hsqldb.xcu	0	value	.Drivers.Installed.sdbc:embedded:hsqldb	DriverTypeDisplayName			0	vi	Cơ sở dữ liệu HSQL				20200411 15:09:53
-connectivity	source\drivers\odbc\odbc.xcu	0	value	.Drivers.Installed.sdbc:odbc:*	DriverTypeDisplayName			0	vi	ODBC				20200411 15:09:53
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:local	DriverTypeDisplayName			0	vi	Đánh giá cục bộ				20200411 15:09:53
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:ldap	DriverTypeDisplayName			0	vi	Evolution LDAP				20200411 15:09:53
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:groupwise	DriverTypeDisplayName			0	vi	Gom nhóm thông minh				20200411 15:09:53
-connectivity	source\drivers\macab\macab.xcu	0	value	.Drivers.Installed.sdbc:address:macab	DriverTypeDisplayName			0	vi	Sổ địa chỉ MacOS X				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:jdbc:*	DriverTypeDisplayName			0	vi	MySQL (JDBC)				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:odbc:*	DriverTypeDisplayName			0	vi	MySQL (ODBC)				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:mysqlc:*	DriverTypeDisplayName			0	vi	MySQL (Native)				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\flat.xcu	0	value	.Drivers.Installed.sdbc:flat:*	DriverTypeDisplayName			0	vi	Văn bản				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\dbase.xcu	0	value	.Drivers.Installed.sdbc:dbase:*	DriverTypeDisplayName			0	vi	dBASE				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\hsqldb.xcu	0	value	.Drivers.Installed.sdbc:embedded:hsqldb	DriverTypeDisplayName			0	vi	Cơ sở dữ liệu HSQL				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\odbc.xcu	0	value	.Drivers.Installed.sdbc:odbc:*	DriverTypeDisplayName			0	vi	ODBC				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:local	DriverTypeDisplayName			0	vi	Đánh giá cục bộ				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:ldap	DriverTypeDisplayName			0	vi	Evolution LDAP				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:groupwise	DriverTypeDisplayName			0	vi	Gom nhóm thông minh				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\macab.xcu	0	value	.Drivers.Installed.sdbc:address:macab	DriverTypeDisplayName			0	vi	Sổ địa chỉ MacOS X				20200411 15:09:53
 connectivity	java\sdbc_jdbc\sdbc_jdbc.xcu	0	value	.Drivers.Installed.jdbc:*	DriverTypeDisplayName			0	vi	JDBC				20200411 15:09:53
 connectivity	java\sdbc_jdbc\sdbc_jdbc.xcu	0	value	.Drivers.Installed.jdbc:oracle:thin:*	DriverTypeDisplayName			0	vi	Oracle JDBC				20200411 15:09:53
-connectivity	java\sdbc_postgresql\sdbc_postgresql.xcu	0	value	.Drivers.Installed.sdbc:postgresql:jdbc:*	DriverTypeDisplayName			0	vi	PostgreSQL				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\sdbc_postgresql.xcu	0	value	.Drivers.Installed.sdbc:postgresql:jdbc:*	DriverTypeDisplayName			0	vi	PostgreSQL				20200411 15:09:53
 shell	source\win32\shlxthandler\res\shlxthdl.ulf	0	LngText	%TITLE%				0	vi	Tựa đề				20200411 15:09:53
 shell	source\win32\shlxthandler\res\shlxthdl.ulf	0	LngText	%TITLE_COLON%				0	vi	Tựa đề:				20200411 15:09:53
 shell	source\win32\shlxthandler\res\shlxthdl.ulf	0	LngText	%SUBJECT%				0	vi	Chủ đề				20200411 15:09:53
@@ -51793,20 +51793,20 @@ helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	bm_id3274636				0	vi	\
 helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10544				0	vi	\<link href=\"text/simpress/01/taskpanel.xhp\"\>Ô Tác vụ\</link\>				20200411 15:09:53
 helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10554				0	vi	\<ahelp hid=\".\"\>Hiển thị hay ẩn Ô cửa sổ Tác vụ của %PRODUCTNAME Impress.\</ahelp\>				20200411 15:09:53
 helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10557				0	vi	Ô cửa sổ Tác vụ chứa các trang đại diện trang chủ, bố trí, dãy hoạt họa riêng và sự chuyển tiếp ảnh chiếu. Nhấn vào tiêu đề khác để mở trang khác.				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN105D4				0	vi	\<embedvar href=\"text/simpress/guide/masterpage.xhp#masterpage\"/\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10652				0	vi	\<ahelp hid=\".\" visibility=\"hidden\"\>Mở trang thẻ \<emph\>Trang chủ\</emph\>, trên đó bạn áp dụng trang chủ (nền) cho mọi ảnh chiếu (nhấn-trái) hay cho những ảnh chiếu đã chọn (nhấn-phải).\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN1067D				0	vi	\<ahelp hid=\".\" visibility=\"hidden\"\>Liệt kê các trang chủ được dùng hiện thời.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN106A8				0	vi	\<ahelp hid=\".\" visibility=\"hidden\"\>Liệt kê các trang chủ vừa dùng.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN106D3				0	vi	\<ahelp hid=\".\" visibility=\"hidden\"\>Liệt kê mọi trang chủ sẵn sàng hiện thời.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN106FA				0	vi	\<ahelp hid=\".\" visibility=\"hidden\"\>Nhấn-trái để áp dụng trang chủ cho mọi ảnh chiếu. Nhấn-phải để mở trình đơn ngữ cảnh.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10747				0	vi	\<ahelp hid=\".\" visibility=\"hidden\"\>Áp dụng trang chủ cho mọi ảnh chiếu.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10762				0	vi	\<ahelp hid=\".\" visibility=\"hidden\"\>Áp dụng trang chủ hay bản thiết kế ảnh chiếu cho các ảnh chiếu đã chọn.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10785				0	vi	\<ahelp hid=\".\" visibility=\"hidden\"\>Thay đổi kích cỡ của ô xem thử trang chủ.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN107B4				0	vi	\<ahelp hid=\".\" visibility=\"hidden\"\>Mở trang thẻ \<emph\>Bố trí\</emph\>, trên đó bạn có thể áp dụng bản thiết kế ảnh chiếu cho các ảnh chiếu đã chọn.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN107CB				0	vi	\<ahelp hid=\".\" visibility=\"hidden\"\>Nhấn chuột để áp dụng bản thiết kế ảnh chiếu cho các ảnh chiếu đã chọn. Nhấn-phải để mở trình đơn ngữ cảnh.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN1080E				0	vi	\<ahelp hid=\".\" visibility=\"hidden\"\>Mở trang thẻ \<emph\>Hoạt họa riêng\</emph\>, trên đó bạn có thể áp dụng hiệu ứng cho các đối tượng đã chọn trên ảnh chiếu.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10839				0	vi	\<ahelp hid=\".\" visibility=\"hidden\"\>Mở trang thẻ \<emph\>Chuyển tiếp Ảnh chiếu\</emph\>, trên đó bạn có thể áp dụng hiệu ứng chuyển tiếp cho các ảnh chiếu đã chọn.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_id0916200812240344				0	vi	\<ahelp hid=\".\" visibility=\"hidden\"\>Mở hộp thoại Thiết kế Bảng. Nhấn đúp vào một hình thu nhỏ để chèn thêm một bảng mới.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN105D4				0	vi	\<embedvar href=\"text/simpress/guide/masterpage.xhp#masterpage\"/\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10652				0	vi	\<ahelp hid=\".\" visibility=\"hidden\"\>Mở trang thẻ \<emph\>Trang chủ\</emph\>, trên đó bạn áp dụng trang chủ (nền) cho mọi ảnh chiếu (nhấn-trái) hay cho những ảnh chiếu đã chọn (nhấn-phải).\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1067D				0	vi	\<ahelp hid=\".\" visibility=\"hidden\"\>Liệt kê các trang chủ được dùng hiện thời.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106A8				0	vi	\<ahelp hid=\".\" visibility=\"hidden\"\>Liệt kê các trang chủ vừa dùng.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106D3				0	vi	\<ahelp hid=\".\" visibility=\"hidden\"\>Liệt kê mọi trang chủ sẵn sàng hiện thời.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106FA				0	vi	\<ahelp hid=\".\" visibility=\"hidden\"\>Nhấn-trái để áp dụng trang chủ cho mọi ảnh chiếu. Nhấn-phải để mở trình đơn ngữ cảnh.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10747				0	vi	\<ahelp hid=\".\" visibility=\"hidden\"\>Áp dụng trang chủ cho mọi ảnh chiếu.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10762				0	vi	\<ahelp hid=\".\" visibility=\"hidden\"\>Áp dụng trang chủ hay bản thiết kế ảnh chiếu cho các ảnh chiếu đã chọn.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10785				0	vi	\<ahelp hid=\".\" visibility=\"hidden\"\>Thay đổi kích cỡ của ô xem thử trang chủ.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107B4				0	vi	\<ahelp hid=\".\" visibility=\"hidden\"\>Mở trang thẻ \<emph\>Bố trí\</emph\>, trên đó bạn có thể áp dụng bản thiết kế ảnh chiếu cho các ảnh chiếu đã chọn.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107CB				0	vi	\<ahelp hid=\".\" visibility=\"hidden\"\>Nhấn chuột để áp dụng bản thiết kế ảnh chiếu cho các ảnh chiếu đã chọn. Nhấn-phải để mở trình đơn ngữ cảnh.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1080E				0	vi	\<ahelp hid=\".\" visibility=\"hidden\"\>Mở trang thẻ \<emph\>Hoạt họa riêng\</emph\>, trên đó bạn có thể áp dụng hiệu ứng cho các đối tượng đã chọn trên ảnh chiếu.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10839				0	vi	\<ahelp hid=\".\" visibility=\"hidden\"\>Mở trang thẻ \<emph\>Chuyển tiếp Ảnh chiếu\</emph\>, trên đó bạn có thể áp dụng hiệu ứng chuyển tiếp cho các ảnh chiếu đã chọn.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_id0916200812240344				0	vi	\<ahelp hid=\".\" visibility=\"hidden\"\>Mở hộp thoại Thiết kế Bảng. Nhấn đúp vào một hình thu nhỏ để chèn thêm một bảng mới.\</ahelp\>				20200411 15:09:53
 helpcontent2	source\text\simpress\01\05110500m.xhp	0	help	tit				0	vi	Xóa				20200411 15:09:53
 helpcontent2	source\text\simpress\01\05110500m.xhp	0	help	hd_id3149502				0	vi	\<link href=\"text/simpress/01/05110500m.xhp\" name=\"Xóa\"\>Xóa\</link\>				20200411 15:09:53
 helpcontent2	source\text\simpress\01\05110500m.xhp	0	help	par_id3149050				0	vi	\<variable id=\"loeschentext\"\>\<ahelp hid=\".uno:DeleteRows\"\>Xóa những hàng được chọn khỏi bảng.\</ahelp\>\</variable\>				20200411 15:09:53
@@ -72945,16 +72945,3 @@ padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_TXT			14
 padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_USER_TXT			60	vi	~Người dùng				20200411 15:09:53
 padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_PASS_TXT			60	vi	~Mật khẩu				20200411 15:09:53
 padmin	source\rtsetup.src	0	modaldialog	RID_RTS_PWDIALOG				150	vi	Yêu cầu xác thực				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10652				0	vi	\<ahelp hid=\".\" visibility=\"hidden\"\>Mở trang thẻ \<emph\>Trang chủ\</emph\>, trên đó bạn áp dụng trang chủ (nền) cho mọi ảnh chiếu (nhấn-trái) hay cho những ảnh chiếu đã chọn (nhấn-phải).\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1067D				0	vi	\<ahelp hid=\".\" visibility=\"hidden\"\>Liệt kê các trang chủ được dùng hiện thời.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106A8				0	vi	\<ahelp hid=\".\" visibility=\"hidden\"\>Liệt kê các trang chủ vừa dùng.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106D3				0	vi	\<ahelp hid=\".\" visibility=\"hidden\"\>Liệt kê mọi trang chủ sẵn sàng hiện thời.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106FA				0	vi	\<ahelp hid=\".\" visibility=\"hidden\"\>Nhấn-trái để áp dụng trang chủ cho mọi ảnh chiếu. Nhấn-phải để mở trình đơn ngữ cảnh.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10747				0	vi	\<ahelp hid=\".\" visibility=\"hidden\"\>Áp dụng trang chủ cho mọi ảnh chiếu.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10762				0	vi	\<ahelp hid=\".\" visibility=\"hidden\"\>Áp dụng trang chủ hay bản thiết kế ảnh chiếu cho các ảnh chiếu đã chọn.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10785				0	vi	\<ahelp hid=\".\" visibility=\"hidden\"\>Thay đổi kích cỡ của ô xem thử trang chủ.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107B4				0	vi	\<ahelp hid=\".\" visibility=\"hidden\"\>Mở trang thẻ \<emph\>Bố trí\</emph\>, trên đó bạn có thể áp dụng bản thiết kế ảnh chiếu cho các ảnh chiếu đã chọn.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107CB				0	vi	\<ahelp hid=\".\" visibility=\"hidden\"\>Nhấn chuột để áp dụng bản thiết kế ảnh chiếu cho các ảnh chiếu đã chọn. Nhấn-phải để mở trình đơn ngữ cảnh.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1080E				0	vi	\<ahelp hid=\".\" visibility=\"hidden\"\>Mở trang thẻ \<emph\>Hoạt họa riêng\</emph\>, trên đó bạn có thể áp dụng hiệu ứng cho các đối tượng đã chọn trên ảnh chiếu.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10839				0	vi	\<ahelp hid=\".\" visibility=\"hidden\"\>Mở trang thẻ \<emph\>Chuyển tiếp Ảnh chiếu\</emph\>, trên đó bạn có thể áp dụng hiệu ứng chuyển tiếp cho các ảnh chiếu đã chọn.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_id0916200812240344				0	vi	\<ahelp hid=\".\" visibility=\"hidden\"\>Mở hộp thoại Thiết kế Bảng. Nhấn đúp vào một hình thu nhỏ để chèn thêm một bảng mới.\</ahelp\>				20200411 15:09:53

@@ -22355,27 +22355,27 @@ connectivity	source\resource\conn_error_message.src	0	string	256 + 2*303 + 0				
 connectivity	source\resource\conn_error_message.src	0	string	256 + 2*304 + 0				0	zh-CN	不存在到数据库的连接。				20200411 15:09:53
 connectivity	source\resource\conn_error_message.src	0	string	256 + 2*500 + 0				0	zh-CN	不存在 $1$ 。				20200411 15:09:53
 connectivity	source\resource\conn_error_message.src	0	string	256 + 2*550 + 0				0	zh-CN	无法完整显示表格内容。请指定筛选器。				20200411 15:09:53
-connectivity	source\drivers\adabas\adabas.xcu	0	value	.Drivers.Installed.sdbc:adabas:*	DriverTypeDisplayName			0	zh-CN	Adabas D				20200411 15:09:53
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:*	DriverTypeDisplayName			0	zh-CN	ADO				20200411 15:09:53
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:PROVIDER=Microsoft.Jet.OLEDB.4.0;DATA SOURCE=*	DriverTypeDisplayName			0	zh-CN	Microsoft Access				20200411 15:09:53
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:Provider=Microsoft.ACE.OLEDB.12.0;DATA SOURCE=*	DriverTypeDisplayName			0	zh-CN	Microsoft Access 2007				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\adabas.xcu	0	value	.Drivers.Installed.sdbc:adabas:*	DriverTypeDisplayName			0	zh-CN	Adabas D				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:*	DriverTypeDisplayName			0	zh-CN	ADO				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:PROVIDER=Microsoft.Jet.OLEDB.4.0;DATA SOURCE=*	DriverTypeDisplayName			0	zh-CN	Microsoft Access				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:Provider=Microsoft.ACE.OLEDB.12.0;DATA SOURCE=*	DriverTypeDisplayName			0	zh-CN	Microsoft Access 2007				20200411 15:09:53
 connectivity	source\drivers\calc\calc.xcu	0	value	.Drivers.Installed.sdbc:calc:*	DriverTypeDisplayName			0	zh-CN	电子表格				20200411 15:09:53
 connectivity	source\drivers\jdbc\jdbc.xcu	0	value	.Drivers.Installed.jdbc:*	DriverTypeDisplayName			0	zh-CN	JDBC				20200411 15:09:53
 connectivity	source\drivers\jdbc\jdbc.xcu	0	value	.Drivers.Installed.jdbc:oracle:thin:*	DriverTypeDisplayName			0	zh-CN	Oracle JDBC				20200411 15:09:53
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:jdbc:*	DriverTypeDisplayName			0	zh-CN	MySQL (JDBC)				20200411 15:09:53
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:odbc:*	DriverTypeDisplayName			0	zh-CN	MySQL (ODBC)				20200411 15:09:53
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:mysqlc:*	DriverTypeDisplayName			0	zh-CN	MySQL（本地）				20200411 15:09:53
-connectivity	source\drivers\flat\flat.xcu	0	value	.Drivers.Installed.sdbc:flat:*	DriverTypeDisplayName			0	zh-CN	文字				20200411 15:09:53
-connectivity	source\drivers\dbase\dbase.xcu	0	value	.Drivers.Installed.sdbc:dbase:*	DriverTypeDisplayName			0	zh-CN	dBASE				20200411 15:09:53
-connectivity	source\drivers\hsqldb\hsqldb.xcu	0	value	.Drivers.Installed.sdbc:embedded:hsqldb	DriverTypeDisplayName			0	zh-CN	HSQL 数据库引擎				20200411 15:09:53
-connectivity	source\drivers\odbc\odbc.xcu	0	value	.Drivers.Installed.sdbc:odbc:*	DriverTypeDisplayName			0	zh-CN	ODBC				20200411 15:09:53
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:local	DriverTypeDisplayName			0	zh-CN	本地 Evolution 				20200411 15:09:53
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:ldap	DriverTypeDisplayName			0	zh-CN	Evolution LDAP				20200411 15:09:53
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:groupwise	DriverTypeDisplayName			0	zh-CN	Groupwise				20200411 15:09:53
-connectivity	source\drivers\macab\macab.xcu	0	value	.Drivers.Installed.sdbc:address:macab	DriverTypeDisplayName			0	zh-CN	Mac OS X 通讯簿				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:jdbc:*	DriverTypeDisplayName			0	zh-CN	MySQL (JDBC)				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:odbc:*	DriverTypeDisplayName			0	zh-CN	MySQL (ODBC)				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:mysqlc:*	DriverTypeDisplayName			0	zh-CN	MySQL（本地）				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\flat.xcu	0	value	.Drivers.Installed.sdbc:flat:*	DriverTypeDisplayName			0	zh-CN	文字				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\dbase.xcu	0	value	.Drivers.Installed.sdbc:dbase:*	DriverTypeDisplayName			0	zh-CN	dBASE				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\hsqldb.xcu	0	value	.Drivers.Installed.sdbc:embedded:hsqldb	DriverTypeDisplayName			0	zh-CN	HSQL 数据库引擎				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\odbc.xcu	0	value	.Drivers.Installed.sdbc:odbc:*	DriverTypeDisplayName			0	zh-CN	ODBC				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:local	DriverTypeDisplayName			0	zh-CN	本地 Evolution 				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:ldap	DriverTypeDisplayName			0	zh-CN	Evolution LDAP				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:groupwise	DriverTypeDisplayName			0	zh-CN	Groupwise				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\macab.xcu	0	value	.Drivers.Installed.sdbc:address:macab	DriverTypeDisplayName			0	zh-CN	Mac OS X 通讯簿				20200411 15:09:53
 connectivity	java\sdbc_jdbc\sdbc_jdbc.xcu	0	value	.Drivers.Installed.jdbc:*	DriverTypeDisplayName			0	zh-CN	JDBC				20200411 15:09:53
 connectivity	java\sdbc_jdbc\sdbc_jdbc.xcu	0	value	.Drivers.Installed.jdbc:oracle:thin:*	DriverTypeDisplayName			0	zh-CN	Oracle JDBC				20200411 15:09:53
-connectivity	java\sdbc_postgresql\sdbc_postgresql.xcu	0	value	.Drivers.Installed.sdbc:postgresql:jdbc:*	DriverTypeDisplayName			0	zh-CN	PostgreSQL				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\sdbc_postgresql.xcu	0	value	.Drivers.Installed.sdbc:postgresql:jdbc:*	DriverTypeDisplayName			0	zh-CN	PostgreSQL				20200411 15:09:53
 shell	source\win32\shlxthandler\res\shlxthdl.ulf	0	LngText	%TITLE%				0	zh-CN	标题				20200411 15:09:53
 shell	source\win32\shlxthandler\res\shlxthdl.ulf	0	LngText	%TITLE_COLON%				0	zh-CN	标题:				20200411 15:09:53
 shell	source\win32\shlxthandler\res\shlxthdl.ulf	0	LngText	%SUBJECT%				0	zh-CN	主题				20200411 15:09:53
@@ -51794,20 +51794,20 @@ helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	bm_id3274636				0	zh-C
 helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10544				0	zh-CN	\<link href=\"text/simpress/01/taskpanel.xhp\"\>任务窗格\</link\>				20200411 15:09:53
 helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10554				0	zh-CN	\<ahelp hid=\".\"\>打开和关闭 %PRODUCTNAME Impress 任务窗格。\</ahelp\>				20200411 15:09:53
 helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10557				0	zh-CN	任务窗格包含用以指定母版页面、版式、效果以及幻灯片切换方式的页面。单击另一标题可打开另一页面。				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN105D4				0	zh-CN	\<embedvar href=\"text/simpress/guide/masterpage.xhp#masterpage\"/\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10652				0	zh-CN	\<ahelp hid=\".\" visibility=\"hidden\"\>打开"母版页"选项卡页面，在其中可将母版页面（背景）应用于所有幻灯片（单击左键）或选定幻灯片（单击右键）。\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN1067D				0	zh-CN	\<ahelp hid=\".\" visibility=\"hidden\"\>列出当前使用的母版页面。\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN106A8				0	zh-CN	\<ahelp hid=\".\" visibility=\"hidden\"\>列出最近使用的母版页面。\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN106D3				0	zh-CN	\<ahelp hid=\".\" visibility=\"hidden\"\>列出所有可用的母版页面。\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN106FA				0	zh-CN	\<ahelp hid=\".\" visibility=\"hidden\"\>单击左键可将母版页面应用于所有幻灯片。单击右键打开一个子菜单。\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10747				0	zh-CN	\<ahelp hid=\".\" visibility=\"hidden\"\>将母版页面应用于所有幻灯片。\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10762				0	zh-CN	\<ahelp hid=\".\" visibility=\"hidden\"\>将母版页面或幻灯片设计应用于选定幻灯片。\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10785				0	zh-CN	\<ahelp hid=\".\" visibility=\"hidden\"\>调整母版页的预览大小。\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN107B4				0	zh-CN	\<ahelp hid=\".\" visibility=\"hidden\"\>打开"版式"选项卡页面，在其中可将幻灯片设计应用于选定的一个或多个幻灯片。\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN107CB				0	zh-CN	\<ahelp hid=\".\" visibility=\"hidden\"\>单击可将幻灯片设计应用于所有选定的幻灯片。单击右键打开一个子菜单。\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN1080E				0	zh-CN	\<ahelp hid=\".\" visibility=\"hidden\"\>打开"效果"选项卡页面，在其中可将效果应用于幻灯片上的选定对象。\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10839				0	zh-CN	\<ahelp hid=\".\" visibility=\"hidden\"\>打开"幻灯片切换方式"选项卡页面，在其中可将切换效果应用于选定幻灯片。\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_id0916200812240344				0	zh-CN	\<ahelp hid=\".\" visibility=\"hidden\"\>打开“表格设计”。双击预览插入一个新的表格。\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN105D4				0	zh-CN	\<embedvar href=\"text/simpress/guide/masterpage.xhp#masterpage\"/\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10652				0	zh-CN	\<ahelp hid=\".\" visibility=\"hidden\"\>打开"母版页"选项卡页面，在其中可将母版页面（背景）应用于所有幻灯片（单击左键）或选定幻灯片（单击右键）。\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1067D				0	zh-CN	\<ahelp hid=\".\" visibility=\"hidden\"\>列出当前使用的母版页面。\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106A8				0	zh-CN	\<ahelp hid=\".\" visibility=\"hidden\"\>列出最近使用的母版页面。\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106D3				0	zh-CN	\<ahelp hid=\".\" visibility=\"hidden\"\>列出所有可用的母版页面。\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106FA				0	zh-CN	\<ahelp hid=\".\" visibility=\"hidden\"\>单击左键可将母版页面应用于所有幻灯片。单击右键打开一个子菜单。\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10747				0	zh-CN	\<ahelp hid=\".\" visibility=\"hidden\"\>将母版页面应用于所有幻灯片。\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10762				0	zh-CN	\<ahelp hid=\".\" visibility=\"hidden\"\>将母版页面或幻灯片设计应用于选定幻灯片。\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10785				0	zh-CN	\<ahelp hid=\".\" visibility=\"hidden\"\>调整母版页的预览大小。\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107B4				0	zh-CN	\<ahelp hid=\".\" visibility=\"hidden\"\>打开"版式"选项卡页面，在其中可将幻灯片设计应用于选定的一个或多个幻灯片。\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107CB				0	zh-CN	\<ahelp hid=\".\" visibility=\"hidden\"\>单击可将幻灯片设计应用于所有选定的幻灯片。单击右键打开一个子菜单。\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1080E				0	zh-CN	\<ahelp hid=\".\" visibility=\"hidden\"\>打开"效果"选项卡页面，在其中可将效果应用于幻灯片上的选定对象。\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10839				0	zh-CN	\<ahelp hid=\".\" visibility=\"hidden\"\>打开"幻灯片切换方式"选项卡页面，在其中可将切换效果应用于选定幻灯片。\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_id0916200812240344				0	zh-CN	\<ahelp hid=\".\" visibility=\"hidden\"\>打开“表格设计”。双击预览插入一个新的表格。\</ahelp\>				20200411 15:09:53
 helpcontent2	source\text\simpress\01\05110500m.xhp	0	help	tit				0	zh-CN	删除				20200411 15:09:53
 helpcontent2	source\text\simpress\01\05110500m.xhp	0	help	hd_id3149502				0	zh-CN	\<link href=\"text/simpress/01/05110500m.xhp\" name=\"Delete\"\>删除\</link\>				20200411 15:09:53
 helpcontent2	source\text\simpress\01\05110500m.xhp	0	help	par_id3149050				0	zh-CN	\<variable id=\"loeschentext\"\>\<ahelp hid=\".uno:DeleteRows\"\>从表格中删除选定的行。\</ahelp\>\</variable\>				20200411 15:09:53
@@ -72946,16 +72946,3 @@ padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_TXT			14
 padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_USER_TXT			60	zh-CN	用户(~U)				20200411 15:09:53
 padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_PASS_TXT			60	zh-CN	密码(~P)				20200411 15:09:53
 padmin	source\rtsetup.src	0	modaldialog	RID_RTS_PWDIALOG				150	zh-CN	身份验证请求				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10652				0	zh-CN	\<ahelp hid=\".\" visibility=\"hidden\"\>打开"母版页"选项卡页面，在其中可将母版页面（背景）应用于所有幻灯片（单击左键）或选定幻灯片（单击右键）。\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1067D				0	zh-CN	\<ahelp hid=\".\" visibility=\"hidden\"\>列出当前使用的母版页面。\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106A8				0	zh-CN	\<ahelp hid=\".\" visibility=\"hidden\"\>列出最近使用的母版页面。\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106D3				0	zh-CN	\<ahelp hid=\".\" visibility=\"hidden\"\>列出所有可用的母版页面。\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106FA				0	zh-CN	\<ahelp hid=\".\" visibility=\"hidden\"\>单击左键可将母版页面应用于所有幻灯片。单击右键打开一个子菜单。\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10747				0	zh-CN	\<ahelp hid=\".\" visibility=\"hidden\"\>将母版页面应用于所有幻灯片。\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10762				0	zh-CN	\<ahelp hid=\".\" visibility=\"hidden\"\>将母版页面或幻灯片设计应用于选定幻灯片。\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10785				0	zh-CN	\<ahelp hid=\".\" visibility=\"hidden\"\>调整母版页的预览大小。\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107B4				0	zh-CN	\<ahelp hid=\".\" visibility=\"hidden\"\>打开"版式"选项卡页面，在其中可将幻灯片设计应用于选定的一个或多个幻灯片。\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107CB				0	zh-CN	\<ahelp hid=\".\" visibility=\"hidden\"\>单击可将幻灯片设计应用于所有选定的幻灯片。单击右键打开一个子菜单。\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1080E				0	zh-CN	\<ahelp hid=\".\" visibility=\"hidden\"\>打开"效果"选项卡页面，在其中可将效果应用于幻灯片上的选定对象。\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10839				0	zh-CN	\<ahelp hid=\".\" visibility=\"hidden\"\>打开"幻灯片切换方式"选项卡页面，在其中可将切换效果应用于选定幻灯片。\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_id0916200812240344				0	zh-CN	\<ahelp hid=\".\" visibility=\"hidden\"\>打开“表格设计”。双击预览插入一个新的表格。\</ahelp\>				20200411 15:09:53

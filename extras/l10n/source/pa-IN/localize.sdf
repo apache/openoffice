@@ -8026,18 +8026,18 @@ connectivity	source\resource\conn_shared_res.src	0	string	STR_NO_TABLENAME				13
 connectivity	source\resource\conn_shared_res.src	0	string	STR_NO_DOCUMENTUI				13691	pa-IN	ਦਿੱਤਾ DocumentUI NULL ਹੋਣਾ ਮਨਜ਼ੂਰ ਨਹੀਂ ਹੈ।				2002-02-02 02:02:02
 connectivity	source\drivers\jdbc\jdbc.xcu	0	value	.Drivers.Installed.jdbc:*	DriverTypeDisplayName			0	pa-IN	JDBC				2002-02-02 02:02:02
 connectivity	source\drivers\jdbc\jdbc.xcu	0	value	.Drivers.Installed.jdbc:oracle:thin:*	DriverTypeDisplayName			0	pa-IN	ਓਰੇਕਲ JDBC				2002-02-02 02:02:02
-connectivity	source\drivers\dbase\dbase.xcu	0	value	.Drivers.Installed.sdbc:dbase:*	DriverTypeDisplayName			0	pa-IN	dBASE				2002-02-02 02:02:02
-connectivity	source\drivers\odbc\odbc.xcu	0	value	.Drivers.Installed.sdbc:odbc:*	DriverTypeDisplayName			0	pa-IN	ODBC				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\dbase.xcu	0	value	.Drivers.Installed.sdbc:dbase:*	DriverTypeDisplayName			0	pa-IN	dBASE				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\odbc.xcu	0	value	.Drivers.Installed.sdbc:odbc:*	DriverTypeDisplayName			0	pa-IN	ODBC				2002-02-02 02:02:02
 connectivity	source\drivers\kab\kab.xcu	0	value	.Drivers.Installed.sdbc:address:kab	DriverTypeDisplayName			0	pa-IN	KDE ਐਡਰੈੱਸ ਬੁੱਕ				2002-02-02 02:02:02
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:local	DriverTypeDisplayName			0	pa-IN	ਈਵੇਲੂਸ਼ਨ ਲੋਕਲ				2002-02-02 02:02:02
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:ldap	DriverTypeDisplayName			0	pa-IN	ਈਵੇਲੂਸ਼ਨ LDAP				2002-02-02 02:02:02
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:groupwise	DriverTypeDisplayName			0	pa-IN	ਗਰੁੱਪਵਾਈਜ਼				2002-02-02 02:02:02
-connectivity	source\drivers\hsqldb\hsqldb.xcu	0	value	.Drivers.Installed.sdbc:embedded:hsqldb	DriverTypeDisplayName			0	pa-IN	HSQL ਡਾਟਾਬੇਸ ਇੰਜਣ				2002-02-02 02:02:02
-connectivity	source\drivers\macab\macab.xcu	0	value	.Drivers.Installed.sdbc:address:macab	DriverTypeDisplayName			0	pa-IN	Mac OS X ਐਡਰੈੱਸ ਬੁੱਕ				2002-02-02 02:02:02
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:*	DriverTypeDisplayName			0	pa-IN	ADO				2002-02-02 02:02:02
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:PROVIDER=Microsoft.Jet.OLEDB.4.0;DATA SOURCE=*	DriverTypeDisplayName			0	pa-IN	ਮਾਈਕਰੋਸਾਫਟ ਅਸੈੱਸ				2002-02-02 02:02:02
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:Provider=Microsoft.ACE.OLEDB.12.0;DATA SOURCE=*	DriverTypeDisplayName			0	pa-IN	ਮਾਈਕਰੋਸਾਫਟ ਅਸੈੱਸ ੨੦੦੭				2002-02-02 02:02:02
-connectivity	source\drivers\flat\flat.xcu	0	value	.Drivers.Installed.sdbc:flat:*	DriverTypeDisplayName			0	pa-IN	ਟੈਕਸਟ				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:local	DriverTypeDisplayName			0	pa-IN	ਈਵੇਲੂਸ਼ਨ ਲੋਕਲ				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:ldap	DriverTypeDisplayName			0	pa-IN	ਈਵੇਲੂਸ਼ਨ LDAP				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:groupwise	DriverTypeDisplayName			0	pa-IN	ਗਰੁੱਪਵਾਈਜ਼				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\hsqldb.xcu	0	value	.Drivers.Installed.sdbc:embedded:hsqldb	DriverTypeDisplayName			0	pa-IN	HSQL ਡਾਟਾਬੇਸ ਇੰਜਣ				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\macab.xcu	0	value	.Drivers.Installed.sdbc:address:macab	DriverTypeDisplayName			0	pa-IN	Mac OS X ਐਡਰੈੱਸ ਬੁੱਕ				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:*	DriverTypeDisplayName			0	pa-IN	ADO				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:PROVIDER=Microsoft.Jet.OLEDB.4.0;DATA SOURCE=*	DriverTypeDisplayName			0	pa-IN	ਮਾਈਕਰੋਸਾਫਟ ਅਸੈੱਸ				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:Provider=Microsoft.ACE.OLEDB.12.0;DATA SOURCE=*	DriverTypeDisplayName			0	pa-IN	ਮਾਈਕਰੋਸਾਫਟ ਅਸੈੱਸ ੨੦੦੭				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\flat.xcu	0	value	.Drivers.Installed.sdbc:flat:*	DriverTypeDisplayName			0	pa-IN	ਟੈਕਸਟ				2002-02-02 02:02:02
 connectivity	source\drivers\mozab\mozab.xcu	0	value	.Drivers.Installed.sdbc:address:outlook	DriverTypeDisplayName			0	pa-IN	ਮਾਈਕਰੋਸਾਫਟ ਆਉਟਲੁੱਕ ਐਡਰੈੱਸ ਬੁੱਕ				2002-02-02 02:02:02
 connectivity	source\drivers\mozab\mozab.xcu	0	value	.Drivers.Installed.sdbc:address:outlookexp	DriverTypeDisplayName			0	pa-IN	ਮਾਈਕਰੋਸਾਫਟ ਵਿੰਡੋਜ਼ ਐਡਰੈੱਸ ਬੁੱਕ				2002-02-02 02:02:02
 connectivity	source\drivers\mozab\mozab.xcu	0	value	.Drivers.Installed.sdbc:address:mozilla:	DriverTypeDisplayName			0	pa-IN	ਮੋਜ਼ੀਲਾ ਐਡਰੈੱਸ ਬੁੱਕ				2002-02-02 02:02:02
@@ -8046,13 +8046,13 @@ connectivity	source\drivers\mozab\mozab.xcu	0	value	.Drivers.Installed.sdbc:addr
 connectivity	source\drivers\mozab\mozab2.xcu	0	value	.Drivers.Installed.sdbc:address:mozilla:	DriverTypeDisplayName			0	pa-IN	ਮੋਜ਼ੀਲਾ ਐਡਰੈੱਸ ਬੁੱਕ				2002-02-02 02:02:02
 connectivity	source\drivers\mozab\mozab2.xcu	0	value	.Drivers.Installed.sdbc:address:thunderbird:	DriverTypeDisplayName			0	pa-IN	ਥੰਡਰਬਰਡ ਐਡਰੈੱਸ ਬੁੱਕ				2002-02-02 02:02:02
 connectivity	source\drivers\mozab\mozab2.xcu	0	value	.Drivers.Installed.sdbc:address:ldap:*	DriverTypeDisplayName			0	pa-IN	LDAP ਐਡਰੈੱਸ ਬੁੱਕ				2002-02-02 02:02:02
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:jdbc:*	DriverTypeDisplayName			0	pa-IN	MySQL (JDBC)				2002-02-02 02:02:02
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:odbc:*	DriverTypeDisplayName			0	pa-IN	MySQL (ODBC)				2002-02-02 02:02:02
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:mysqlc:*	DriverTypeDisplayName			0	pa-IN	MySQL (ਨੇਟਿਵ)				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:jdbc:*	DriverTypeDisplayName			0	pa-IN	MySQL (JDBC)				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:odbc:*	DriverTypeDisplayName			0	pa-IN	MySQL (ODBC)				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:mysqlc:*	DriverTypeDisplayName			0	pa-IN	MySQL (ਨੇਟਿਵ)				2002-02-02 02:02:02
 connectivity	source\drivers\calc\calc.xcu	0	value	.Drivers.Installed.sdbc:calc:*	DriverTypeDisplayName			0	pa-IN	ਸਪਰੈੱਡਸ਼ੀਟ				2002-02-02 02:02:02
 connectivity	source\drivers\evoab\evoab.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:ldap	DriverTypeDisplayName			0	pa-IN	ਈਵੇਲੂਸ਼ਨ LDAP				2002-02-02 02:02:02
 connectivity	source\drivers\evoab\evoab.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:groupwise	DriverTypeDisplayName			0	pa-IN	ਗਰੁੱਪਵਾਈਜ਼				2002-02-02 02:02:02
-connectivity	source\drivers\adabas\adabas.xcu	0	value	.Drivers.Installed.sdbc:adabas:*	DriverTypeDisplayName			0	pa-IN	Adabas D				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\adabas.xcu	0	value	.Drivers.Installed.sdbc:adabas:*	DriverTypeDisplayName			0	pa-IN	Adabas D				2002-02-02 02:02:02
 accessibility	source\helper\accessiblestrings.src	0	string	RID_STR_ACC_NAME_BROWSEBUTTON				13691	pa-IN	ਝਲਕ				2002-02-02 02:02:02
 accessibility	source\helper\accessiblestrings.src	0	string	RID_STR_ACC_DESC_PANELDECL_TABBAR				13691	pa-IN	ਪੈਨਲ ਡੈੱਕ ਟੈਬ ਪੱਟੀ				2002-02-02 02:02:02
 reportbuilder	registry\data\org\openoffice\Office\ExtendedColorScheme.xcu	0	value	.ExtendedColorScheme.EntryNames.SunReportBuilder	DisplayName			0	pa-IN	ਓਰੇਕਲ ਰਿਪੋਰਟ ਬਿਲਡਰ				2002-02-02 02:02:02

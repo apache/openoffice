@@ -22355,27 +22355,27 @@ connectivity	source\resource\conn_error_message.src	0	string	256 + 2*303 + 0				
 connectivity	source\resource\conn_error_message.src	0	string	256 + 2*304 + 0				0	ko	존재하는 데이터베이스로의 연결이 없습니다.				20200411 15:09:53
 connectivity	source\resource\conn_error_message.src	0	string	256 + 2*500 + 0				0	ko	$1$ 이 존재하지 않습니다.				20200411 15:09:53
 connectivity	source\resource\conn_error_message.src	0	string	256 + 2*550 + 0				0	ko	완전한 표 내용을 표시할 수 없습니다. 필터를 적용하십시오.				20200411 15:09:53
-connectivity	source\drivers\adabas\adabas.xcu	0	value	.Drivers.Installed.sdbc:adabas:*	DriverTypeDisplayName			0	ko	Adabas D				20200411 15:09:53
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:*	DriverTypeDisplayName			0	ko	ADO				20200411 15:09:53
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:PROVIDER=Microsoft.Jet.OLEDB.4.0;DATA SOURCE=*	DriverTypeDisplayName			0	ko	Microsoft Access				20200411 15:09:53
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:Provider=Microsoft.ACE.OLEDB.12.0;DATA SOURCE=*	DriverTypeDisplayName			0	ko	Microsoft Access 2007				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\adabas.xcu	0	value	.Drivers.Installed.sdbc:adabas:*	DriverTypeDisplayName			0	ko	Adabas D				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:*	DriverTypeDisplayName			0	ko	ADO				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:PROVIDER=Microsoft.Jet.OLEDB.4.0;DATA SOURCE=*	DriverTypeDisplayName			0	ko	Microsoft Access				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:Provider=Microsoft.ACE.OLEDB.12.0;DATA SOURCE=*	DriverTypeDisplayName			0	ko	Microsoft Access 2007				20200411 15:09:53
 connectivity	source\drivers\calc\calc.xcu	0	value	.Drivers.Installed.sdbc:calc:*	DriverTypeDisplayName			0	ko	스프레드시트				20200411 15:09:53
 connectivity	source\drivers\jdbc\jdbc.xcu	0	value	.Drivers.Installed.jdbc:*	DriverTypeDisplayName			0	ko	JDBC				20200411 15:09:53
 connectivity	source\drivers\jdbc\jdbc.xcu	0	value	.Drivers.Installed.jdbc:oracle:thin:*	DriverTypeDisplayName			0	ko	Oracle JDBC				20200411 15:09:53
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:jdbc:*	DriverTypeDisplayName			0	ko	MySQL (JDBC)				20200411 15:09:53
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:odbc:*	DriverTypeDisplayName			0	ko	MySQL (ODBC)				20200411 15:09:53
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:mysqlc:*	DriverTypeDisplayName			0	ko	MySQL (Native)				20200411 15:09:53
-connectivity	source\drivers\flat\flat.xcu	0	value	.Drivers.Installed.sdbc:flat:*	DriverTypeDisplayName			0	ko	텍스트				20200411 15:09:53
-connectivity	source\drivers\dbase\dbase.xcu	0	value	.Drivers.Installed.sdbc:dbase:*	DriverTypeDisplayName			0	ko	dBASE				20200411 15:09:53
-connectivity	source\drivers\hsqldb\hsqldb.xcu	0	value	.Drivers.Installed.sdbc:embedded:hsqldb	DriverTypeDisplayName			0	ko	HSQL 데이터베이스 엔진				20200411 15:09:53
-connectivity	source\drivers\odbc\odbc.xcu	0	value	.Drivers.Installed.sdbc:odbc:*	DriverTypeDisplayName			0	ko	ODBC				20200411 15:09:53
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:local	DriverTypeDisplayName			0	ko	Evolution Local				20200411 15:09:53
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:ldap	DriverTypeDisplayName			0	ko	Evolution LDAP				20200411 15:09:53
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:groupwise	DriverTypeDisplayName			0	ko	Groupwise				20200411 15:09:53
-connectivity	source\drivers\macab\macab.xcu	0	value	.Drivers.Installed.sdbc:address:macab	DriverTypeDisplayName			0	ko	Mac OS X 주소록				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:jdbc:*	DriverTypeDisplayName			0	ko	MySQL (JDBC)				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:odbc:*	DriverTypeDisplayName			0	ko	MySQL (ODBC)				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:mysqlc:*	DriverTypeDisplayName			0	ko	MySQL (Native)				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\flat.xcu	0	value	.Drivers.Installed.sdbc:flat:*	DriverTypeDisplayName			0	ko	텍스트				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\dbase.xcu	0	value	.Drivers.Installed.sdbc:dbase:*	DriverTypeDisplayName			0	ko	dBASE				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\hsqldb.xcu	0	value	.Drivers.Installed.sdbc:embedded:hsqldb	DriverTypeDisplayName			0	ko	HSQL 데이터베이스 엔진				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\odbc.xcu	0	value	.Drivers.Installed.sdbc:odbc:*	DriverTypeDisplayName			0	ko	ODBC				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:local	DriverTypeDisplayName			0	ko	Evolution Local				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:ldap	DriverTypeDisplayName			0	ko	Evolution LDAP				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:groupwise	DriverTypeDisplayName			0	ko	Groupwise				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\macab.xcu	0	value	.Drivers.Installed.sdbc:address:macab	DriverTypeDisplayName			0	ko	Mac OS X 주소록				20200411 15:09:53
 connectivity	java\sdbc_jdbc\sdbc_jdbc.xcu	0	value	.Drivers.Installed.jdbc:*	DriverTypeDisplayName			0	ko	JDBC				20200411 15:09:53
 connectivity	java\sdbc_jdbc\sdbc_jdbc.xcu	0	value	.Drivers.Installed.jdbc:oracle:thin:*	DriverTypeDisplayName			0	ko	Oracle JDBC				20200411 15:09:53
-connectivity	java\sdbc_postgresql\sdbc_postgresql.xcu	0	value	.Drivers.Installed.sdbc:postgresql:jdbc:*	DriverTypeDisplayName			0	ko	PostgreSQL				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\sdbc_postgresql.xcu	0	value	.Drivers.Installed.sdbc:postgresql:jdbc:*	DriverTypeDisplayName			0	ko	PostgreSQL				20200411 15:09:53
 shell	source\win32\shlxthandler\res\shlxthdl.ulf	0	LngText	%TITLE%				0	ko	제목				20200411 15:09:53
 shell	source\win32\shlxthandler\res\shlxthdl.ulf	0	LngText	%TITLE_COLON%				0	ko	제목:				20200411 15:09:53
 shell	source\win32\shlxthandler\res\shlxthdl.ulf	0	LngText	%SUBJECT%				0	ko	주제				20200411 15:09:53
@@ -51794,20 +51794,20 @@ helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	bm_id3274636				0	ko	\
 helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10544				0	ko	\<link href=\"text/simpress/01/taskpanel.xhp\"\>작업 창\</link\>				20200411 15:09:53
 helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10554				0	ko	\<ahelp hid=\".\"\>%PRODUCTNAME Impress 작업 창을 표시하거나 숨깁니다.\</ahelp\>				20200411 15:09:53
 helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10557				0	ko	작업 창에는 마스터 페이지, 레이아웃, 사용자 정의 애니메이션 및 슬라이드 전환을 지정할 수 있는 페이지가 포함되어 있습니다. 다른 제목을 클릭하여 다른 페이지를 엽니다.				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN105D4				0	ko	\<embedvar href=\"text/simpress/guide/masterpage.xhp#masterpage\"/\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10652				0	ko	\<ahelp hid=\".\" visibility=\"hidden\"\>마스터 페이지(배경)를 모든 슬라이드(마우스 왼쪽 버튼 클릭)나 선택한 슬라이드(마우스 오른쪽 버튼 클릭)에 적용할 수 있는 마스터 페이지 탭 페이지를 엽니다.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN1067D				0	ko	\<ahelp hid=\".\" visibility=\"hidden\"\>현재 사용되는 마스터 페이지를 나열합니다.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN106A8				0	ko	\<ahelp hid=\".\" visibility=\"hidden\"\>최근에 사용한 마스터 페이지를 나열합니다.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN106D3				0	ko	\<ahelp hid=\".\" visibility=\"hidden\"\>사용 가능한 모든 마스터 페이지를 나열합니다.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN106FA				0	ko	\<ahelp hid=\".\" visibility=\"hidden\"\>마우스 왼쪽 버튼을 클릭하여 모든 슬라이드에 마스터 페이지를 적용합니다. 하위 메뉴에 대해서는 마우스 오른쪽 버튼을 클릭합니다.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10747				0	ko	\<ahelp hid=\".\" visibility=\"hidden\"\>모든 슬라이드에 마스터 페이지를 적용합니다.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10762				0	ko	\<ahelp hid=\".\" visibility=\"hidden\"\>선택한 슬라이드에 마스터 페이지나 슬라이드 디자인을 적용합니다.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10785				0	ko	\<ahelp hid=\".\" visibility=\"hidden\"\>마스터 페이지의 미리 보기 크기를 지정합니다.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN107B4				0	ko	\<ahelp hid=\".\" visibility=\"hidden\"\>선택한 슬라이드에 슬라이드 디자인을 적용할 수 있는 레이아웃 탭 페이지를 엽니다.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN107CB				0	ko	\<ahelp hid=\".\" visibility=\"hidden\"\>선택한 모든 슬라이드에 슬라이드 디자인을 적용하려면 클릭합니다. 하위 메뉴에 대해서는 마우스 오른쪽 버튼을 클릭합니다.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN1080E				0	ko	\<ahelp hid=\".\" visibility=\"hidden\"\>슬라이드에서 선택한 개체에 효과를 적용할 수 있는 사용자 정의 애니메이션 탭 페이지를 엽니다.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10839				0	ko	\<ahelp hid=\".\" visibility=\"hidden\"\>선택한 슬라이드에 전환 효과를 적용할 수 있는 슬라이드 전환 탭 페이지를 엽니다.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_id0916200812240344				0	ko	\<ahelp hid=\".\" visibility=\"hidden\"\>표 디자인을 엽니다. 새 표로 넣을 디자인을 두 번 클릭하십시요.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN105D4				0	ko	\<embedvar href=\"text/simpress/guide/masterpage.xhp#masterpage\"/\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10652				0	ko	\<ahelp hid=\".\" visibility=\"hidden\"\>마스터 페이지(배경)를 모든 슬라이드(마우스 왼쪽 버튼 클릭)나 선택한 슬라이드(마우스 오른쪽 버튼 클릭)에 적용할 수 있는 마스터 페이지 탭 페이지를 엽니다.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1067D				0	ko	\<ahelp hid=\".\" visibility=\"hidden\"\>현재 사용되는 마스터 페이지를 나열합니다.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106A8				0	ko	\<ahelp hid=\".\" visibility=\"hidden\"\>최근에 사용한 마스터 페이지를 나열합니다.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106D3				0	ko	\<ahelp hid=\".\" visibility=\"hidden\"\>사용 가능한 모든 마스터 페이지를 나열합니다.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106FA				0	ko	\<ahelp hid=\".\" visibility=\"hidden\"\>마우스 왼쪽 버튼을 클릭하여 모든 슬라이드에 마스터 페이지를 적용합니다. 하위 메뉴에 대해서는 마우스 오른쪽 버튼을 클릭합니다.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10747				0	ko	\<ahelp hid=\".\" visibility=\"hidden\"\>모든 슬라이드에 마스터 페이지를 적용합니다.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10762				0	ko	\<ahelp hid=\".\" visibility=\"hidden\"\>선택한 슬라이드에 마스터 페이지나 슬라이드 디자인을 적용합니다.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10785				0	ko	\<ahelp hid=\".\" visibility=\"hidden\"\>마스터 페이지의 미리 보기 크기를 지정합니다.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107B4				0	ko	\<ahelp hid=\".\" visibility=\"hidden\"\>선택한 슬라이드에 슬라이드 디자인을 적용할 수 있는 레이아웃 탭 페이지를 엽니다.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107CB				0	ko	\<ahelp hid=\".\" visibility=\"hidden\"\>선택한 모든 슬라이드에 슬라이드 디자인을 적용하려면 클릭합니다. 하위 메뉴에 대해서는 마우스 오른쪽 버튼을 클릭합니다.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1080E				0	ko	\<ahelp hid=\".\" visibility=\"hidden\"\>슬라이드에서 선택한 개체에 효과를 적용할 수 있는 사용자 정의 애니메이션 탭 페이지를 엽니다.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10839				0	ko	\<ahelp hid=\".\" visibility=\"hidden\"\>선택한 슬라이드에 전환 효과를 적용할 수 있는 슬라이드 전환 탭 페이지를 엽니다.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_id0916200812240344				0	ko	\<ahelp hid=\".\" visibility=\"hidden\"\>표 디자인을 엽니다. 새 표로 넣을 디자인을 두 번 클릭하십시요.\</ahelp\>				20200411 15:09:53
 helpcontent2	source\text\simpress\01\05110500m.xhp	0	help	tit				0	ko	삭제				20200411 15:09:53
 helpcontent2	source\text\simpress\01\05110500m.xhp	0	help	hd_id3149502				0	ko	\<link href=\"text/simpress/01/05110500m.xhp\" name=\"삭제\"\>삭제\</link\>				20200411 15:09:53
 helpcontent2	source\text\simpress\01\05110500m.xhp	0	help	par_id3149050				0	ko	\<variable id=\"loeschentext\"\>\<ahelp hid=\".uno:DeleteRows\"\>선택된 열을 표에서 삭제합니다.\</ahelp\>\</variable\>				20200411 15:09:53
@@ -72946,16 +72946,3 @@ padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_TXT			14
 padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_USER_TXT			60	ko	사용자(~U)				20200411 15:09:53
 padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_PASS_TXT			60	ko	암호(~P)				20200411 15:09:53
 padmin	source\rtsetup.src	0	modaldialog	RID_RTS_PWDIALOG				150	ko	인증 요청				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10652				0	ko	\<ahelp hid=\".\" visibility=\"hidden\"\>마스터 페이지(배경)를 모든 슬라이드(마우스 왼쪽 버튼 클릭)나 선택한 슬라이드(마우스 오른쪽 버튼 클릭)에 적용할 수 있는 마스터 페이지 탭 페이지를 엽니다.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1067D				0	ko	\<ahelp hid=\".\" visibility=\"hidden\"\>현재 사용되는 마스터 페이지를 나열합니다.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106A8				0	ko	\<ahelp hid=\".\" visibility=\"hidden\"\>최근에 사용한 마스터 페이지를 나열합니다.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106D3				0	ko	\<ahelp hid=\".\" visibility=\"hidden\"\>사용 가능한 모든 마스터 페이지를 나열합니다.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106FA				0	ko	\<ahelp hid=\".\" visibility=\"hidden\"\>마우스 왼쪽 버튼을 클릭하여 모든 슬라이드에 마스터 페이지를 적용합니다. 하위 메뉴에 대해서는 마우스 오른쪽 버튼을 클릭합니다.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10747				0	ko	\<ahelp hid=\".\" visibility=\"hidden\"\>모든 슬라이드에 마스터 페이지를 적용합니다.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10762				0	ko	\<ahelp hid=\".\" visibility=\"hidden\"\>선택한 슬라이드에 마스터 페이지나 슬라이드 디자인을 적용합니다.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10785				0	ko	\<ahelp hid=\".\" visibility=\"hidden\"\>마스터 페이지의 미리 보기 크기를 지정합니다.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107B4				0	ko	\<ahelp hid=\".\" visibility=\"hidden\"\>선택한 슬라이드에 슬라이드 디자인을 적용할 수 있는 레이아웃 탭 페이지를 엽니다.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107CB				0	ko	\<ahelp hid=\".\" visibility=\"hidden\"\>선택한 모든 슬라이드에 슬라이드 디자인을 적용하려면 클릭합니다. 하위 메뉴에 대해서는 마우스 오른쪽 버튼을 클릭합니다.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1080E				0	ko	\<ahelp hid=\".\" visibility=\"hidden\"\>슬라이드에서 선택한 개체에 효과를 적용할 수 있는 사용자 정의 애니메이션 탭 페이지를 엽니다.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10839				0	ko	\<ahelp hid=\".\" visibility=\"hidden\"\>선택한 슬라이드에 전환 효과를 적용할 수 있는 슬라이드 전환 탭 페이지를 엽니다.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_id0916200812240344				0	ko	\<ahelp hid=\".\" visibility=\"hidden\"\>표 디자인을 엽니다. 새 표로 넣을 디자인을 두 번 클릭하십시요.\</ahelp\>				20200411 15:09:53

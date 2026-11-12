@@ -22361,27 +22361,27 @@ connectivity	source\resource\conn_error_message.src	0	string	256 + 2*303 + 0				
 connectivity	source\resource\conn_error_message.src	0	string	256 + 2*304 + 0				0	bg	Няма връзка с базата от данни.				20200411 15:09:53
 connectivity	source\resource\conn_error_message.src	0	string	256 + 2*500 + 0				0	bg	Не съществува $1$.				20200411 15:09:53
 connectivity	source\resource\conn_error_message.src	0	string	256 + 2*550 + 0				0	bg	Не може да се покаже цялото съдържание на таблицата. Моля, приложете филтър.				20200411 15:09:53
-connectivity	source\drivers\adabas\adabas.xcu	0	value	.Drivers.Installed.sdbc:adabas:*	DriverTypeDisplayName			0	bg	Adabas D				20200411 15:09:53
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:*	DriverTypeDisplayName			0	bg	ADO				20200411 15:09:53
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:PROVIDER=Microsoft.Jet.OLEDB.4.0;DATA SOURCE=*	DriverTypeDisplayName			0	bg	Microsoft Access				20200411 15:09:53
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:Provider=Microsoft.ACE.OLEDB.12.0;DATA SOURCE=*	DriverTypeDisplayName			0	bg	Microsoft Access 2007				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\adabas.xcu	0	value	.Drivers.Installed.sdbc:adabas:*	DriverTypeDisplayName			0	bg	Adabas D				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:*	DriverTypeDisplayName			0	bg	ADO				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:PROVIDER=Microsoft.Jet.OLEDB.4.0;DATA SOURCE=*	DriverTypeDisplayName			0	bg	Microsoft Access				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:Provider=Microsoft.ACE.OLEDB.12.0;DATA SOURCE=*	DriverTypeDisplayName			0	bg	Microsoft Access 2007				20200411 15:09:53
 connectivity	source\drivers\calc\calc.xcu	0	value	.Drivers.Installed.sdbc:calc:*	DriverTypeDisplayName			0	bg	Електронна таблица				20200411 15:09:53
 connectivity	source\drivers\jdbc\jdbc.xcu	0	value	.Drivers.Installed.jdbc:*	DriverTypeDisplayName			0	bg	JDBC				20200411 15:09:53
 connectivity	source\drivers\jdbc\jdbc.xcu	0	value	.Drivers.Installed.jdbc:oracle:thin:*	DriverTypeDisplayName			0	bg	Oracle JDBC				20200411 15:09:53
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:jdbc:*	DriverTypeDisplayName			0	bg	MySQL (JDBC)				20200411 15:09:53
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:odbc:*	DriverTypeDisplayName			0	bg	MySQL (ODBC)				20200411 15:09:53
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:mysqlc:*	DriverTypeDisplayName			0	bg	MySQL (директна поддръжка)				20200411 15:09:53
-connectivity	source\drivers\flat\flat.xcu	0	value	.Drivers.Installed.sdbc:flat:*	DriverTypeDisplayName			0	bg	Текст				20200411 15:09:53
-connectivity	source\drivers\dbase\dbase.xcu	0	value	.Drivers.Installed.sdbc:dbase:*	DriverTypeDisplayName			0	bg	dBASE				20200411 15:09:53
-connectivity	source\drivers\hsqldb\hsqldb.xcu	0	value	.Drivers.Installed.sdbc:embedded:hsqldb	DriverTypeDisplayName			0	bg	СУБД на HSQL				20200411 15:09:53
-connectivity	source\drivers\odbc\odbc.xcu	0	value	.Drivers.Installed.sdbc:odbc:*	DriverTypeDisplayName			0	bg	ODBC				20200411 15:09:53
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:local	DriverTypeDisplayName			0	bg	Локален Evolution				20200411 15:09:53
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:ldap	DriverTypeDisplayName			0	bg	Evolution LDAP				20200411 15:09:53
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:groupwise	DriverTypeDisplayName			0	bg	Groupwise				20200411 15:09:53
-connectivity	source\drivers\macab\macab.xcu	0	value	.Drivers.Installed.sdbc:address:macab	DriverTypeDisplayName			0	bg	Адресен бележник на Mac OS X				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:jdbc:*	DriverTypeDisplayName			0	bg	MySQL (JDBC)				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:odbc:*	DriverTypeDisplayName			0	bg	MySQL (ODBC)				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:mysqlc:*	DriverTypeDisplayName			0	bg	MySQL (директна поддръжка)				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\flat.xcu	0	value	.Drivers.Installed.sdbc:flat:*	DriverTypeDisplayName			0	bg	Текст				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\dbase.xcu	0	value	.Drivers.Installed.sdbc:dbase:*	DriverTypeDisplayName			0	bg	dBASE				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\hsqldb.xcu	0	value	.Drivers.Installed.sdbc:embedded:hsqldb	DriverTypeDisplayName			0	bg	СУБД на HSQL				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\odbc.xcu	0	value	.Drivers.Installed.sdbc:odbc:*	DriverTypeDisplayName			0	bg	ODBC				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:local	DriverTypeDisplayName			0	bg	Локален Evolution				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:ldap	DriverTypeDisplayName			0	bg	Evolution LDAP				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:groupwise	DriverTypeDisplayName			0	bg	Groupwise				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\macab.xcu	0	value	.Drivers.Installed.sdbc:address:macab	DriverTypeDisplayName			0	bg	Адресен бележник на Mac OS X				20200411 15:09:53
 connectivity	java\sdbc_jdbc\sdbc_jdbc.xcu	0	value	.Drivers.Installed.jdbc:*	DriverTypeDisplayName			0	bg	JDBC				20200411 15:09:53
 connectivity	java\sdbc_jdbc\sdbc_jdbc.xcu	0	value	.Drivers.Installed.jdbc:oracle:thin:*	DriverTypeDisplayName			0	bg	Oracle JDBC				20200411 15:09:53
-connectivity	java\sdbc_postgresql\sdbc_postgresql.xcu	0	value	.Drivers.Installed.sdbc:postgresql:jdbc:*	DriverTypeDisplayName			0	bg	PostgreSQL				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\sdbc_postgresql.xcu	0	value	.Drivers.Installed.sdbc:postgresql:jdbc:*	DriverTypeDisplayName			0	bg	PostgreSQL				20200411 15:09:53
 shell	source\win32\shlxthandler\res\shlxthdl.ulf	0	LngText	%TITLE%				0	bg	Заглавие				20200411 15:09:53
 shell	source\win32\shlxthandler\res\shlxthdl.ulf	0	LngText	%TITLE_COLON%				0	bg	Заглавие:				20200411 15:09:53
 shell	source\win32\shlxthandler\res\shlxthdl.ulf	0	LngText	%SUBJECT%				0	bg	Тема				20200411 15:09:53
@@ -51800,20 +51800,20 @@ helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	bm_id3274636				0	bg	\
 helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10544				0	bg	\<link href=\"text/simpress/01/taskpanel.xhp\"\>Панел със задачи\</link\>				20200411 15:09:53
 helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10554				0	bg	\<ahelp hid=\".\"\>Включва и изключва панела със задачите на %PRODUCTNAME Impress.\</ahelp\>				20200411 15:09:53
 helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10557				0	bg	Панелът със задачи съдържа страници за задаване на образци, оформления, анимация по избор и преходи между кадри. Щракнете върху някое от заглавията, за да отворите съответната страница.				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN105D4				0	bg	\<embedvar href=\"text/simpress/guide/masterpage.xhp#masterpage\"/\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10652				0	bg	\<ahelp hid=\".\" visibility=\"hidden\"\>Отваря раздела Образци за страници, в който можете да приложите образец (фон) върху всички кадри (щракнете с левия бутон) или само върху избрания кадър (щракнете с десния бутон).\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN1067D				0	bg	\<ahelp hid=\".\" visibility=\"hidden\"\>Изброява използваните в момента образци на страници.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN106A8				0	bg	\<ahelp hid=\".\" visibility=\"hidden\"\>Изброява наскоро използваните образци на страници.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN106D3				0	bg	\<ahelp hid=\".\" visibility=\"hidden\"\>Изброява всички налични образци на страници.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN106FA				0	bg	\<ahelp hid=\".\" visibility=\"hidden\"\>Щракнете с левия бутон, за да приложите образеца върху всички кадри. Щракнете с десния бутон за подменю.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10747				0	bg	\<ahelp hid=\".\" visibility=\"hidden\"\>Прилагат образеца върху всички кадри.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10762				0	bg	\<ahelp hid=\".\" visibility=\"hidden\"\>Прилага образеца или дизайна на кадър върху избраните кадри.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10785				0	bg	\<ahelp hid=\".\" visibility=\"hidden\"\>Преоразмерява мострите на образците.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN107B4				0	bg	\<ahelp hid=\".\" visibility=\"hidden\"\>Отваря раздела Оформления, в който можете да приложите дизайн на кадър върху избрания кадър или кадри.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN107CB				0	bg	\<ahelp hid=\".\" visibility=\"hidden\"\>Щракнете, за да приложите дизайн на кадър върху всички избрани кадри. Щракнете с десния бутон за подменю.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN1080E				0	bg	\<ahelp hid=\".\" visibility=\"hidden\"\>Отваря раздела Анимация по избор, в който можете да прилагате ефекти върху избраните обекти в даден кадър.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10839				0	bg	\<ahelp hid=\".\" visibility=\"hidden\"\>Отваря раздела Преход между кадрите, в който можете да прилагате ефекти за преход върху избраните кадри.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_id0916200812240344				0	bg	\<ahelp hid=\".\" visibility=\"hidden\"\>Отваря раздела Дизайн на таблица. Щракнете двукратно, за да вмъкнете нова таблица.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN105D4				0	bg	\<embedvar href=\"text/simpress/guide/masterpage.xhp#masterpage\"/\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10652				0	bg	\<ahelp hid=\".\" visibility=\"hidden\"\>Отваря раздела Образци за страници, в който можете да приложите образец (фон) върху всички кадри (щракнете с левия бутон) или само върху избрания кадър (щракнете с десния бутон).\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1067D				0	bg	\<ahelp hid=\".\" visibility=\"hidden\"\>Изброява използваните в момента образци на страници.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106A8				0	bg	\<ahelp hid=\".\" visibility=\"hidden\"\>Изброява наскоро използваните образци на страници.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106D3				0	bg	\<ahelp hid=\".\" visibility=\"hidden\"\>Изброява всички налични образци на страници.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106FA				0	bg	\<ahelp hid=\".\" visibility=\"hidden\"\>Щракнете с левия бутон, за да приложите образеца върху всички кадри. Щракнете с десния бутон за подменю.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10747				0	bg	\<ahelp hid=\".\" visibility=\"hidden\"\>Прилагат образеца върху всички кадри.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10762				0	bg	\<ahelp hid=\".\" visibility=\"hidden\"\>Прилага образеца или дизайна на кадър върху избраните кадри.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10785				0	bg	\<ahelp hid=\".\" visibility=\"hidden\"\>Преоразмерява мострите на образците.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107B4				0	bg	\<ahelp hid=\".\" visibility=\"hidden\"\>Отваря раздела Оформления, в който можете да приложите дизайн на кадър върху избрания кадър или кадри.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107CB				0	bg	\<ahelp hid=\".\" visibility=\"hidden\"\>Щракнете, за да приложите дизайн на кадър върху всички избрани кадри. Щракнете с десния бутон за подменю.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1080E				0	bg	\<ahelp hid=\".\" visibility=\"hidden\"\>Отваря раздела Анимация по избор, в който можете да прилагате ефекти върху избраните обекти в даден кадър.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10839				0	bg	\<ahelp hid=\".\" visibility=\"hidden\"\>Отваря раздела Преход между кадрите, в който можете да прилагате ефекти за преход върху избраните кадри.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_id0916200812240344				0	bg	\<ahelp hid=\".\" visibility=\"hidden\"\>Отваря раздела Дизайн на таблица. Щракнете двукратно, за да вмъкнете нова таблица.\</ahelp\>				20200411 15:09:53
 helpcontent2	source\text\simpress\01\05110500m.xhp	0	help	tit				0	bg	Изтриване				20200411 15:09:53
 helpcontent2	source\text\simpress\01\05110500m.xhp	0	help	hd_id3149502				0	bg	\<link href=\"text/simpress/01/05110500m.xhp\" name=\"Изтриване\"\>Изтриване\</link\>				20200411 15:09:53
 helpcontent2	source\text\simpress\01\05110500m.xhp	0	help	par_id3149050				0	bg	\<variable id=\"loeschentext\"\>\<ahelp hid=\".uno:DeleteRows\"\>Изтрива избраните редове от таблицата.\</ahelp\>\</variable\>				20200411 15:09:53
@@ -72955,16 +72955,3 @@ padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_TXT			14
 padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_USER_TXT			60	bg	~Потребител				20200411 15:09:53
 padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_PASS_TXT			60	bg	~Парола				20200411 15:09:53
 padmin	source\rtsetup.src	0	modaldialog	RID_RTS_PWDIALOG				150	bg	Искане за индентификация				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10652				0	bg	\<ahelp hid=\".\" visibility=\"hidden\"\>Отваря раздела Образци за страници, в който можете да приложите образец (фон) върху всички кадри (щракнете с левия бутон) или само върху избрания кадър (щракнете с десния бутон).\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1067D				0	bg	\<ahelp hid=\".\" visibility=\"hidden\"\>Изброява използваните в момента образци на страници.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106A8				0	bg	\<ahelp hid=\".\" visibility=\"hidden\"\>Изброява наскоро използваните образци на страници.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106D3				0	bg	\<ahelp hid=\".\" visibility=\"hidden\"\>Изброява всички налични образци на страници.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106FA				0	bg	\<ahelp hid=\".\" visibility=\"hidden\"\>Щракнете с левия бутон, за да приложите образеца върху всички кадри. Щракнете с десния бутон за подменю.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10747				0	bg	\<ahelp hid=\".\" visibility=\"hidden\"\>Прилагат образеца върху всички кадри.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10762				0	bg	\<ahelp hid=\".\" visibility=\"hidden\"\>Прилага образеца или дизайна на кадър върху избраните кадри.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10785				0	bg	\<ahelp hid=\".\" visibility=\"hidden\"\>Преоразмерява мострите на образците.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107B4				0	bg	\<ahelp hid=\".\" visibility=\"hidden\"\>Отваря раздела Оформления, в който можете да приложите дизайн на кадър върху избрания кадър или кадри.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107CB				0	bg	\<ahelp hid=\".\" visibility=\"hidden\"\>Щракнете, за да приложите дизайн на кадър върху всички избрани кадри. Щракнете с десния бутон за подменю.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1080E				0	bg	\<ahelp hid=\".\" visibility=\"hidden\"\>Отваря раздела Анимация по избор, в който можете да прилагате ефекти върху избраните обекти в даден кадър.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10839				0	bg	\<ahelp hid=\".\" visibility=\"hidden\"\>Отваря раздела Преход между кадрите, в който можете да прилагате ефекти за преход върху избраните кадри.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_id0916200812240344				0	bg	\<ahelp hid=\".\" visibility=\"hidden\"\>Отваря раздела Дизайн на таблица. Щракнете двукратно, за да вмъкнете нова таблица.\</ahelp\>				20200411 15:09:53

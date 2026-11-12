@@ -22355,27 +22355,27 @@ connectivity	source\resource\conn_error_message.src	0	string	256 + 2*303 + 0				
 connectivity	source\resource\conn_error_message.src	0	string	256 + 2*304 + 0				0	fi	Tietokantayhteyttä ei ole.				20200411 15:09:53
 connectivity	source\resource\conn_error_message.src	0	string	256 + 2*500 + 0				0	fi	Kohdetta $1$ ei ole olemassa.				20200411 15:09:53
 connectivity	source\resource\conn_error_message.src	0	string	256 + 2*550 + 0				0	fi	Koko taulun sisältöä ei voida näyttää. Käytä suodatusta.				20200411 15:09:53
-connectivity	source\drivers\adabas\adabas.xcu	0	value	.Drivers.Installed.sdbc:adabas:*	DriverTypeDisplayName			0	fi	Adabas D				20200411 15:09:53
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:*	DriverTypeDisplayName			0	fi	ADO				20200411 15:09:53
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:PROVIDER=Microsoft.Jet.OLEDB.4.0;DATA SOURCE=*	DriverTypeDisplayName			0	fi	Microsoft Access				20200411 15:09:53
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:Provider=Microsoft.ACE.OLEDB.12.0;DATA SOURCE=*	DriverTypeDisplayName			0	fi	Microsoft Access 2007				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\adabas.xcu	0	value	.Drivers.Installed.sdbc:adabas:*	DriverTypeDisplayName			0	fi	Adabas D				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:*	DriverTypeDisplayName			0	fi	ADO				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:PROVIDER=Microsoft.Jet.OLEDB.4.0;DATA SOURCE=*	DriverTypeDisplayName			0	fi	Microsoft Access				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:Provider=Microsoft.ACE.OLEDB.12.0;DATA SOURCE=*	DriverTypeDisplayName			0	fi	Microsoft Access 2007				20200411 15:09:53
 connectivity	source\drivers\calc\calc.xcu	0	value	.Drivers.Installed.sdbc:calc:*	DriverTypeDisplayName			0	fi	Laskentataulukko				20200411 15:09:53
 connectivity	source\drivers\jdbc\jdbc.xcu	0	value	.Drivers.Installed.jdbc:*	DriverTypeDisplayName			0	fi	JDBC				20200411 15:09:53
 connectivity	source\drivers\jdbc\jdbc.xcu	0	value	.Drivers.Installed.jdbc:oracle:thin:*	DriverTypeDisplayName			0	fi	Oracle JDBC				20200411 15:09:53
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:jdbc:*	DriverTypeDisplayName			0	fi	MySQL (JDBC)				20200411 15:09:53
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:odbc:*	DriverTypeDisplayName			0	fi	MySQL (ODBC)				20200411 15:09:53
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:mysqlc:*	DriverTypeDisplayName			0	fi	MySQL (suora)				20200411 15:09:53
-connectivity	source\drivers\flat\flat.xcu	0	value	.Drivers.Installed.sdbc:flat:*	DriverTypeDisplayName			0	fi	Teksti				20200411 15:09:53
-connectivity	source\drivers\dbase\dbase.xcu	0	value	.Drivers.Installed.sdbc:dbase:*	DriverTypeDisplayName			0	fi	dBASE				20200411 15:09:53
-connectivity	source\drivers\hsqldb\hsqldb.xcu	0	value	.Drivers.Installed.sdbc:embedded:hsqldb	DriverTypeDisplayName			0	fi	HSQL-tietokantamoottori				20200411 15:09:53
-connectivity	source\drivers\odbc\odbc.xcu	0	value	.Drivers.Installed.sdbc:odbc:*	DriverTypeDisplayName			0	fi	ODBC				20200411 15:09:53
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:local	DriverTypeDisplayName			0	fi	Evolution (paikallinen)				20200411 15:09:53
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:ldap	DriverTypeDisplayName			0	fi	Evolution (LDAP)				20200411 15:09:53
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:groupwise	DriverTypeDisplayName			0	fi	Groupwise				20200411 15:09:53
-connectivity	source\drivers\macab\macab.xcu	0	value	.Drivers.Installed.sdbc:address:macab	DriverTypeDisplayName			0	fi	Mac OS X:n osoitekirja				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:jdbc:*	DriverTypeDisplayName			0	fi	MySQL (JDBC)				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:odbc:*	DriverTypeDisplayName			0	fi	MySQL (ODBC)				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:mysqlc:*	DriverTypeDisplayName			0	fi	MySQL (suora)				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\flat.xcu	0	value	.Drivers.Installed.sdbc:flat:*	DriverTypeDisplayName			0	fi	Teksti				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\dbase.xcu	0	value	.Drivers.Installed.sdbc:dbase:*	DriverTypeDisplayName			0	fi	dBASE				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\hsqldb.xcu	0	value	.Drivers.Installed.sdbc:embedded:hsqldb	DriverTypeDisplayName			0	fi	HSQL-tietokantamoottori				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\odbc.xcu	0	value	.Drivers.Installed.sdbc:odbc:*	DriverTypeDisplayName			0	fi	ODBC				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:local	DriverTypeDisplayName			0	fi	Evolution (paikallinen)				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:ldap	DriverTypeDisplayName			0	fi	Evolution (LDAP)				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:groupwise	DriverTypeDisplayName			0	fi	Groupwise				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\macab.xcu	0	value	.Drivers.Installed.sdbc:address:macab	DriverTypeDisplayName			0	fi	Mac OS X:n osoitekirja				20200411 15:09:53
 connectivity	java\sdbc_jdbc\sdbc_jdbc.xcu	0	value	.Drivers.Installed.jdbc:*	DriverTypeDisplayName			0	fi	JDBC				20200411 15:09:53
 connectivity	java\sdbc_jdbc\sdbc_jdbc.xcu	0	value	.Drivers.Installed.jdbc:oracle:thin:*	DriverTypeDisplayName			0	fi	Oracle JDBC				20200411 15:09:53
-connectivity	java\sdbc_postgresql\sdbc_postgresql.xcu	0	value	.Drivers.Installed.sdbc:postgresql:jdbc:*	DriverTypeDisplayName			0	fi	PostgreSQL				20200411 15:09:53
+connectivity	registry\org\openoffice\Office\DataAccess\sdbc_postgresql.xcu	0	value	.Drivers.Installed.sdbc:postgresql:jdbc:*	DriverTypeDisplayName			0	fi	PostgreSQL				20200411 15:09:53
 shell	source\win32\shlxthandler\res\shlxthdl.ulf	0	LngText	%TITLE%				0	fi	Otsikko				20200411 15:09:53
 shell	source\win32\shlxthandler\res\shlxthdl.ulf	0	LngText	%TITLE_COLON%				0	fi	Otsikko:				20200411 15:09:53
 shell	source\win32\shlxthandler\res\shlxthdl.ulf	0	LngText	%SUBJECT%				0	fi	Aihe				20200411 15:09:53
@@ -51794,20 +51794,20 @@ helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	bm_id3274636				0	fi	\
 helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10544				0	fi	\<link href=\"text/simpress/01/taskpanel.xhp\"\>Tehtäväpaneeli\</link\>				20200411 15:09:53
 helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10554				0	fi	\<ahelp hid=\".\"\>Vuorotellaan %PRODUCTNAME Impressin tehtäväpaneelia käyttöön ja pois käytöstä.\</ahelp\>				20200411 15:09:53
 helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10557				0	fi	Tehtäväpaneelissa on sivuja, joilla määritellään dian pohjat, asettelut, muokattu animaatio ja dian vaihtuminen. Sivu eli välilehti avataan sivun otsikkoa napsauttamalla.				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN105D4				0	fi	\<embedvar href=\"text/simpress/guide/masterpage.xhp#masterpage\"/\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10652				0	fi	\<ahelp hid=\".\" visibility=\"hidden\"\>Avataan Pohjatyylisivut-välilehti, jossa otetaan käyttöön dian pohja (tausta) kaikille dioille (napsautus ykköspainikkeella) tai valituille dioille (napsautus kakkospainikkeella).\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN1067D				0	fi	\<ahelp hid=\".\" visibility=\"hidden\"\>Luettelossa on käytössä olevat dian pohjat.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN106A8				0	fi	\<ahelp hid=\".\" visibility=\"hidden\"\>Luettelossa on viimeisimmät käytöstä poistetut dian pohjat.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN106D3				0	fi	\<ahelp hid=\".\" visibility=\"hidden\"\>Luettelossa on kaikki saatavilla olevat dian pohjat.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN106FA				0	fi	\<ahelp hid=\".\" visibility=\"hidden\"\>Napsautetaan ykköspainikkeella dian pohjan käyttämiseksi kaikkiin dioihin. Napsautus kakkospainikkeella avaa kohdevalikon.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10747				0	fi	\<ahelp hid=\".\" visibility=\"hidden\"\>Dian pohjaa käytetään kaikkiin dioihin.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10762				0	fi	\<ahelp hid=\".\" visibility=\"hidden\"\>Dian pohjaa tai diamallia käytetään valittuihin dioihin.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10785				0	fi	\<ahelp hid=\".\" visibility=\"hidden\"\>Dian pohjan esikatselukokoa muutetaan.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN107B4				0	fi	\<ahelp hid=\".\" visibility=\"hidden\"\>Avataan Asettelut-välilehti, josta saatavaa diamallia sovelletaan valittuihin dioihin.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN107CB				0	fi	\<ahelp hid=\".\" visibility=\"hidden\"\>Napsautetaan diamallin käyttämiseksi kaikkiin valittuihin dioihin. Napsautus kakkospainikkeella avaa kohdevalikon.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN1080E				0	fi	\<ahelp hid=\".\" visibility=\"hidden\"\>Avataan Muokattu animaatio -välilehti, jossa voidaan ottaa käyttöön dian valittujen objektien tehosteita.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10839				0	fi	\<ahelp hid=\".\" visibility=\"hidden\"\>Avataan Dian vaihtuminen -välilehti, jossa voidaan ottaa käyttöön valittujen diojen vaihtamistehosteita.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_id0916200812240344				0	fi	\<ahelp hid=\".\" visibility=\"hidden\"\>Avataan taulukon muotoilu. Uusi taulukko lisätään kaksoisnapsauttamalla mallikuvaa.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN105D4				0	fi	\<embedvar href=\"text/simpress/guide/masterpage.xhp#masterpage\"/\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10652				0	fi	\<ahelp hid=\".\" visibility=\"hidden\"\>Avataan Pohjatyylisivut-välilehti, jossa otetaan käyttöön dian pohja (tausta) kaikille dioille (napsautus ykköspainikkeella) tai valituille dioille (napsautus kakkospainikkeella).\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1067D				0	fi	\<ahelp hid=\".\" visibility=\"hidden\"\>Luettelossa on käytössä olevat dian pohjat.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106A8				0	fi	\<ahelp hid=\".\" visibility=\"hidden\"\>Luettelossa on viimeisimmät käytöstä poistetut dian pohjat.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106D3				0	fi	\<ahelp hid=\".\" visibility=\"hidden\"\>Luettelossa on kaikki saatavilla olevat dian pohjat.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106FA				0	fi	\<ahelp hid=\".\" visibility=\"hidden\"\>Napsautetaan ykköspainikkeella dian pohjan käyttämiseksi kaikkiin dioihin. Napsautus kakkospainikkeella avaa kohdevalikon.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10747				0	fi	\<ahelp hid=\".\" visibility=\"hidden\"\>Dian pohjaa käytetään kaikkiin dioihin.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10762				0	fi	\<ahelp hid=\".\" visibility=\"hidden\"\>Dian pohjaa tai diamallia käytetään valittuihin dioihin.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10785				0	fi	\<ahelp hid=\".\" visibility=\"hidden\"\>Dian pohjan esikatselukokoa muutetaan.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107B4				0	fi	\<ahelp hid=\".\" visibility=\"hidden\"\>Avataan Asettelut-välilehti, josta saatavaa diamallia sovelletaan valittuihin dioihin.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107CB				0	fi	\<ahelp hid=\".\" visibility=\"hidden\"\>Napsautetaan diamallin käyttämiseksi kaikkiin valittuihin dioihin. Napsautus kakkospainikkeella avaa kohdevalikon.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1080E				0	fi	\<ahelp hid=\".\" visibility=\"hidden\"\>Avataan Muokattu animaatio -välilehti, jossa voidaan ottaa käyttöön dian valittujen objektien tehosteita.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10839				0	fi	\<ahelp hid=\".\" visibility=\"hidden\"\>Avataan Dian vaihtuminen -välilehti, jossa voidaan ottaa käyttöön valittujen diojen vaihtamistehosteita.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_id0916200812240344				0	fi	\<ahelp hid=\".\" visibility=\"hidden\"\>Avataan taulukon muotoilu. Uusi taulukko lisätään kaksoisnapsauttamalla mallikuvaa.\</ahelp\>				20200411 15:09:53
 helpcontent2	source\text\simpress\01\05110500m.xhp	0	help	tit				0	fi	Poista				20200411 15:09:53
 helpcontent2	source\text\simpress\01\05110500m.xhp	0	help	hd_id3149502				0	fi	\<link href=\"text/simpress/01/05110500m.xhp\" name=\"Poista\"\>Poista\</link\>				20200411 15:09:53
 helpcontent2	source\text\simpress\01\05110500m.xhp	0	help	par_id3149050				0	fi	\<variable id=\"loeschentext\"\>\<ahelp hid=\".uno:DeleteRows\"\>Poistetaan taulukon valitut rivit.\</ahelp\>\</variable\>				20200411 15:09:53
@@ -72948,16 +72948,3 @@ padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_TXT			14
 padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_USER_TXT			60	fi	~Käyttäjä				20200411 15:09:53
 padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_PASS_TXT			60	fi	~Salasana				20200411 15:09:53
 padmin	source\rtsetup.src	0	modaldialog	RID_RTS_PWDIALOG				150	fi	Tunnistuspyyntö				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10652				0	fi	\<ahelp hid=\".\" visibility=\"hidden\"\>Avataan Pohjatyylisivut-välilehti, jossa otetaan käyttöön dian pohja (tausta) kaikille dioille (napsautus ykköspainikkeella) tai valituille dioille (napsautus kakkospainikkeella).\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1067D				0	fi	\<ahelp hid=\".\" visibility=\"hidden\"\>Luettelossa on käytössä olevat dian pohjat.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106A8				0	fi	\<ahelp hid=\".\" visibility=\"hidden\"\>Luettelossa on viimeisimmät käytöstä poistetut dian pohjat.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106D3				0	fi	\<ahelp hid=\".\" visibility=\"hidden\"\>Luettelossa on kaikki saatavilla olevat dian pohjat.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106FA				0	fi	\<ahelp hid=\".\" visibility=\"hidden\"\>Napsautetaan ykköspainikkeella dian pohjan käyttämiseksi kaikkiin dioihin. Napsautus kakkospainikkeella avaa kohdevalikon.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10747				0	fi	\<ahelp hid=\".\" visibility=\"hidden\"\>Dian pohjaa käytetään kaikkiin dioihin.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10762				0	fi	\<ahelp hid=\".\" visibility=\"hidden\"\>Dian pohjaa tai diamallia käytetään valittuihin dioihin.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10785				0	fi	\<ahelp hid=\".\" visibility=\"hidden\"\>Dian pohjan esikatselukokoa muutetaan.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107B4				0	fi	\<ahelp hid=\".\" visibility=\"hidden\"\>Avataan Asettelut-välilehti, josta saatavaa diamallia sovelletaan valittuihin dioihin.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107CB				0	fi	\<ahelp hid=\".\" visibility=\"hidden\"\>Napsautetaan diamallin käyttämiseksi kaikkiin valittuihin dioihin. Napsautus kakkospainikkeella avaa kohdevalikon.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1080E				0	fi	\<ahelp hid=\".\" visibility=\"hidden\"\>Avataan Muokattu animaatio -välilehti, jossa voidaan ottaa käyttöön dian valittujen objektien tehosteita.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10839				0	fi	\<ahelp hid=\".\" visibility=\"hidden\"\>Avataan Dian vaihtuminen -välilehti, jossa voidaan ottaa käyttöön valittujen diojen vaihtamistehosteita.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_id0916200812240344				0	fi	\<ahelp hid=\".\" visibility=\"hidden\"\>Avataan taulukon muotoilu. Uusi taulukko lisätään kaksoisnapsauttamalla mallikuvaa.\</ahelp\>				20200411 15:09:53

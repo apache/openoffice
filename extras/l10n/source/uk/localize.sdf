@@ -810,25 +810,25 @@ chart2	source\controller\dialogs\res_Trendline_tmpl.hrc	0	checkbox	RESOURCE_TREN
 chart2	source\controller\dialogs\res_Trendline_tmpl.hrc	0	checkbox	RESOURCE_TRENDLINE(availablewidth, yoffset)	CB_SHOW_CORRELATION_COEFF	HID_SCH_TRENDLINE_SHOW_R_SQUARED	!defined _CHART2_RESOURCE_TRENDLINE_HXX	0	uk	Показати ко~ефіцієнт детермінації(R²)				20220827 09:49:47
 connectivity	java\sdbc_jdbc\sdbc_jdbc.xcu	0	value	.Drivers.Installed.jdbc:*	DriverTypeDisplayName			0	uk	JDBC				20220827 09:49:47
 connectivity	java\sdbc_jdbc\sdbc_jdbc.xcu	0	value	.Drivers.Installed.jdbc:oracle:thin:*	DriverTypeDisplayName			0	uk	Oracle JDBC				20220827 09:49:47
-connectivity	java\sdbc_postgresql\sdbc_postgresql.xcu	0	value	.Drivers.Installed.sdbc:postgresql:jdbc:*	DriverTypeDisplayName			0	uk	PostgreSQL				20220827 09:49:47
-connectivity	source\drivers\adabas\adabas.xcu	0	value	.Drivers.Installed.sdbc:adabas:*	DriverTypeDisplayName			0	uk	Adabas D				20220827 09:49:47
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:*	DriverTypeDisplayName			0	uk	ADO				20220827 09:49:47
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:PROVIDER=Microsoft.Jet.OLEDB.4.0;DATA SOURCE=*	DriverTypeDisplayName			0	uk	Microsoft Access				20220827 09:49:47
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:Provider=Microsoft.ACE.OLEDB.12.0;DATA SOURCE=*	DriverTypeDisplayName			0	uk	Microsoft Access 2007				20220827 09:49:47
+connectivity	registry\org\openoffice\Office\DataAccess\sdbc_postgresql.xcu	0	value	.Drivers.Installed.sdbc:postgresql:jdbc:*	DriverTypeDisplayName			0	uk	PostgreSQL				20220827 09:49:47
+connectivity	registry\org\openoffice\Office\DataAccess\adabas.xcu	0	value	.Drivers.Installed.sdbc:adabas:*	DriverTypeDisplayName			0	uk	Adabas D				20220827 09:49:47
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:*	DriverTypeDisplayName			0	uk	ADO				20220827 09:49:47
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:PROVIDER=Microsoft.Jet.OLEDB.4.0;DATA SOURCE=*	DriverTypeDisplayName			0	uk	Microsoft Access				20220827 09:49:47
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:Provider=Microsoft.ACE.OLEDB.12.0;DATA SOURCE=*	DriverTypeDisplayName			0	uk	Microsoft Access 2007				20220827 09:49:47
 connectivity	source\drivers\calc\calc.xcu	0	value	.Drivers.Installed.sdbc:calc:*	DriverTypeDisplayName			0	uk	Електронна таблиця				20220827 09:49:47
-connectivity	source\drivers\dbase\dbase.xcu	0	value	.Drivers.Installed.sdbc:dbase:*	DriverTypeDisplayName			0	uk	dBASE				20220827 09:49:47
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:local	DriverTypeDisplayName			0	uk	Evolution локально				20220827 09:49:47
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:ldap	DriverTypeDisplayName			0	uk	Evolution LDAP				20220827 09:49:47
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:groupwise	DriverTypeDisplayName			0	uk	Groupwise				20220827 09:49:47
-connectivity	source\drivers\flat\flat.xcu	0	value	.Drivers.Installed.sdbc:flat:*	DriverTypeDisplayName			0	uk	Текст				20220827 09:49:47
-connectivity	source\drivers\hsqldb\hsqldb.xcu	0	value	.Drivers.Installed.sdbc:embedded:hsqldb	DriverTypeDisplayName			0	uk	Рушій бази даних HSQL				20220827 09:49:47
+connectivity	registry\org\openoffice\Office\DataAccess\dbase.xcu	0	value	.Drivers.Installed.sdbc:dbase:*	DriverTypeDisplayName			0	uk	dBASE				20220827 09:49:47
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:local	DriverTypeDisplayName			0	uk	Evolution локально				20220827 09:49:47
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:ldap	DriverTypeDisplayName			0	uk	Evolution LDAP				20220827 09:49:47
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:groupwise	DriverTypeDisplayName			0	uk	Groupwise				20220827 09:49:47
+connectivity	registry\org\openoffice\Office\DataAccess\flat.xcu	0	value	.Drivers.Installed.sdbc:flat:*	DriverTypeDisplayName			0	uk	Текст				20220827 09:49:47
+connectivity	registry\org\openoffice\Office\DataAccess\hsqldb.xcu	0	value	.Drivers.Installed.sdbc:embedded:hsqldb	DriverTypeDisplayName			0	uk	Рушій бази даних HSQL				20220827 09:49:47
 connectivity	source\drivers\jdbc\jdbc.xcu	0	value	.Drivers.Installed.jdbc:*	DriverTypeDisplayName			0	uk	JDBC				20220827 09:49:47
 connectivity	source\drivers\jdbc\jdbc.xcu	0	value	.Drivers.Installed.jdbc:oracle:thin:*	DriverTypeDisplayName			0	uk	Oracle JDBC				20220827 09:49:47
-connectivity	source\drivers\macab\macab.xcu	0	value	.Drivers.Installed.sdbc:address:macab	DriverTypeDisplayName			0	uk	Адресна книга Mac OS X				20220827 09:49:47
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:jdbc:*	DriverTypeDisplayName			0	uk	MySQL (JDBC)				20220827 09:49:47
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:odbc:*	DriverTypeDisplayName			0	uk	MySQL (ODBC)				20220827 09:49:47
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:mysqlc:*	DriverTypeDisplayName			0	uk	MySQL (Native)				20220827 09:49:47
-connectivity	source\drivers\odbc\odbc.xcu	0	value	.Drivers.Installed.sdbc:odbc:*	DriverTypeDisplayName			0	uk	ODBC				20220827 09:49:47
+connectivity	registry\org\openoffice\Office\DataAccess\macab.xcu	0	value	.Drivers.Installed.sdbc:address:macab	DriverTypeDisplayName			0	uk	Адресна книга Mac OS X				20220827 09:49:47
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:jdbc:*	DriverTypeDisplayName			0	uk	MySQL (JDBC)				20220827 09:49:47
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:odbc:*	DriverTypeDisplayName			0	uk	MySQL (ODBC)				20220827 09:49:47
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:mysqlc:*	DriverTypeDisplayName			0	uk	MySQL (Native)				20220827 09:49:47
+connectivity	registry\org\openoffice\Office\DataAccess\odbc.xcu	0	value	.Drivers.Installed.sdbc:odbc:*	DriverTypeDisplayName			0	uk	ODBC				20220827 09:49:47
 connectivity	source\resource\conn_error_message.src	0	string	256 + 2*100 + 0				0	uk	Операцію запису заборонено.				20220827 09:49:47
 connectivity	source\resource\conn_error_message.src	0	string	256 + 2*200 + 0				0	uk	Вираз містить циклічні посилання на один чи більше вкладених запитів.				20220827 09:49:47
 connectivity	source\resource\conn_error_message.src	0	string	256 + 2*300 + 0				0	uk	Назва не повинна містити символи косої риски ("/").				20220827 09:49:47
@@ -41461,20 +41461,20 @@ helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	bm_id3274636				0	uk	\
 helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10544				0	uk	\<link href=\"text/simpress/01/taskpanel.xhp\"\>Task Pane\</link\>				20220827 09:49:47
 helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10554				0	uk	\<ahelp hid=\".\"\>Switches the %PRODUCTNAME Impress task pane on and off.\</ahelp\>				20220827 09:49:47
 helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10557				0	uk	The task pane contains pages to specify the master pages, layouts, custom animation, and slide transition. Click another heading to open another page.				20220827 09:49:47
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN105D4				0	uk	\<embedvar href=\"text/simpress/guide/masterpage.xhp#masterpage\"/\>				20220827 09:49:47
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10652				0	uk	\<ahelp hid=\".\" visibility=\"hidden\"\>Opens the Master Pages tab page, where you apply a master page (background) to all slides (left-click) or to the selected slides (right-click).\</ahelp\>				20220827 09:49:47
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN1067D				0	uk	\<ahelp hid=\".\" visibility=\"hidden\"\>Lists the currently used master pages.\</ahelp\>				20220827 09:49:47
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN106A8				0	uk	\<ahelp hid=\".\" visibility=\"hidden\"\>Lists the recently used master pages.\</ahelp\>				20220827 09:49:47
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN106D3				0	uk	\<ahelp hid=\".\" visibility=\"hidden\"\>Lists all available master pages.\</ahelp\>				20220827 09:49:47
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN106FA				0	uk	\<ahelp hid=\".\" visibility=\"hidden\"\>Left-click to apply the master page to all slides. Right-click for a submenu.\</ahelp\>				20220827 09:49:47
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10747				0	uk	\<ahelp hid=\".\" visibility=\"hidden\"\>Applies the master page to all slides.\</ahelp\>				20220827 09:49:47
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10762				0	uk	\<ahelp hid=\".\" visibility=\"hidden\"\>Applies the master page or the slide design to the selected slides.\</ahelp\>				20220827 09:49:47
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10785				0	uk	\<ahelp hid=\".\" visibility=\"hidden\"\>Resizes the preview of the master pages.\</ahelp\>				20220827 09:49:47
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN107B4				0	uk	\<ahelp hid=\".\" visibility=\"hidden\"\>Opens the Layouts tab page, where you apply a slide design to the selected slide or slides.\</ahelp\>				20220827 09:49:47
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN107CB				0	uk	\<ahelp hid=\".\" visibility=\"hidden\"\>Click to apply a slide design to all selected slides. Right-click for a submenu.\</ahelp\>				20220827 09:49:47
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN1080E				0	uk	\<ahelp hid=\".\" visibility=\"hidden\"\>Opens the Custom Animation tab page, where you apply effects to the selected objects on a slide.\</ahelp\>				20220827 09:49:47
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_idN10839				0	uk	\<ahelp hid=\".\" visibility=\"hidden\"\>Opens the Slide Transition tab page, where you apply transition effects to the selected slides.\</ahelp\>				20220827 09:49:47
-helpcontent2	source\text\simpress\01\taskpanel.xhp	0	help	par_id0916200812240344				0	uk	\<ahelp hid=\".\" visibility=\"hidden\"\>Opens the Table Design. Double-click a preview to insert a new table.\</ahelp\>				20220827 09:49:47
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN105D4				0	uk	\<embedvar href=\"text/simpress/guide/masterpage.xhp#masterpage\"/\>				20220827 09:49:47
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10652				0	uk	\<ahelp hid=\".\" visibility=\"hidden\"\>Opens the Master Pages tab page, where you apply a master page (background) to all slides (left-click) or to the selected slides (right-click).\</ahelp\>				20220827 09:49:47
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1067D				0	uk	\<ahelp hid=\".\" visibility=\"hidden\"\>Lists the currently used master pages.\</ahelp\>				20220827 09:49:47
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106A8				0	uk	\<ahelp hid=\".\" visibility=\"hidden\"\>Lists the recently used master pages.\</ahelp\>				20220827 09:49:47
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106D3				0	uk	\<ahelp hid=\".\" visibility=\"hidden\"\>Lists all available master pages.\</ahelp\>				20220827 09:49:47
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106FA				0	uk	\<ahelp hid=\".\" visibility=\"hidden\"\>Left-click to apply the master page to all slides. Right-click for a submenu.\</ahelp\>				20220827 09:49:47
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10747				0	uk	\<ahelp hid=\".\" visibility=\"hidden\"\>Applies the master page to all slides.\</ahelp\>				20220827 09:49:47
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10762				0	uk	\<ahelp hid=\".\" visibility=\"hidden\"\>Applies the master page or the slide design to the selected slides.\</ahelp\>				20220827 09:49:47
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10785				0	uk	\<ahelp hid=\".\" visibility=\"hidden\"\>Resizes the preview of the master pages.\</ahelp\>				20220827 09:49:47
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107B4				0	uk	\<ahelp hid=\".\" visibility=\"hidden\"\>Opens the Layouts tab page, where you apply a slide design to the selected slide or slides.\</ahelp\>				20220827 09:49:47
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107CB				0	uk	\<ahelp hid=\".\" visibility=\"hidden\"\>Click to apply a slide design to all selected slides. Right-click for a submenu.\</ahelp\>				20220827 09:49:47
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1080E				0	uk	\<ahelp hid=\".\" visibility=\"hidden\"\>Opens the Custom Animation tab page, where you apply effects to the selected objects on a slide.\</ahelp\>				20220827 09:49:47
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10839				0	uk	\<ahelp hid=\".\" visibility=\"hidden\"\>Opens the Slide Transition tab page, where you apply transition effects to the selected slides.\</ahelp\>				20220827 09:49:47
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_id0916200812240344				0	uk	\<ahelp hid=\".\" visibility=\"hidden\"\>Opens the Table Design. Double-click a preview to insert a new table.\</ahelp\>				20220827 09:49:47
 helpcontent2	source\text\simpress\01\13050200.xhp	0	help	tit				0	uk	To Polygon				20220827 09:49:47
 helpcontent2	source\text\simpress\01\13050200.xhp	0	help	hd_id3152578				0	uk	\<link href=\"text/simpress/01/13050200.xhp\" name=\"To Polygon\"\>To Polygon\</link\>				20220827 09:49:47
 helpcontent2	source\text\simpress\01\13050200.xhp	0	help	par_id3145252				0	uk	\<ahelp hid=\".uno:ChangePolygon\"\>Converts the selected object to a polygon (a closed object bounded by straight lines).\</ahelp\> The appearance of the object does not change. If you want, you can right-click and choose \<link href=\"text/shared/main0227.xhp\" name=\"Edit Points\"\>\<emph\>Edit Points\</emph\>\</link\> to view the changes.				20220827 09:49:47
