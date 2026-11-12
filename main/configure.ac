@@ -501,7 +501,7 @@ AC_ARG_WITH(system-mysql-cppconn,
 [  --with-system-mysql-cppconn  Use MySQL C++ Connector libraries already on system
 ],,)
 AC_ARG_WITH(system-hsqldb,
-[  --with-system-hsqldb    Use hsqldb already on system
+[  --with-system-hsqldb    Not supported: the bundled hsqldb carries the storage access patch
 ],,)
 AC_ARG_WITH(hsqldb-jar,
 [  --with-hsqldb-jar=JARFILE   Specify path to jarfile manually ],
@@ -5000,42 +5000,9 @@ dnl ===================================================================
 dnl Check for system hsqldb
 dnl ===================================================================
 AC_MSG_CHECKING([which hsqldb to use])
-if test -n "$with_system_hsqldb" -o -n "$with_system_libs" && \
-       test "$with_system_hsqldb" != "no" && test "$with_system_jars" != "no"; then
+if test -n "$with_system_hsqldb" && test "$with_system_hsqldb" != "no"; then
         AC_MSG_RESULT([external])
-        SYSTEM_HSQLDB=YES
-        if test -z $HSQLDB_JAR; then
-               HSQLDB_JAR=/usr/share/java/hsqldb.jar
-        fi
-        AC_CHECK_FILE($HSQLDB_JAR, [],
-               [AC_MSG_ERROR(hsqldb.jar not found.)], [])
-        AC_MSG_CHECKING([whether hsqldb is 1.8.0.x])
-        export HSQLDB_JAR
-        if $PERL -e 'use Archive::Zip;
-            my $file = "$ENV{'HSQLDB_JAR'}";
-            my $zip = Archive::Zip->new( $file );
-            my $mf = $zip->contents ( "META-INF/MANIFEST.MF" );
-            if ( $mf =~ m/Specification-Version: 1.8.*/ ) {
-               push @l, split(/\n/, $mf);
-               foreach my $line (@l) {
-                  if ($line =~ m/Specification-Version:/) {
-                      ($t, $version) = split (/:/,$line);
-                      $version =~ s/^\s//;
-                      ($a, $b, $c, $d) = split (/\./,$version);
-                      if ($c == "0" && $d > "8")  {
-                          exit 0;
-                      } else {
-                          exit 1;
-                      }
-                  }
-               }
-            } else {
-                exit 1;
-            }'; then
-            AC_MSG_RESULT([yes])
-         else
-            AC_MSG_ERROR([no, you need hsqldb >= 1.8.0.9 but < 1.8.1])
-         fi
+        AC_MSG_ERROR([a system hsqldb cannot be used: the bundled hsqldb carries main/hsqldb/patches/aoo_integration.patch])
 else
     AC_MSG_RESULT([internal])
     SYSTEM_HSQLDB=NO

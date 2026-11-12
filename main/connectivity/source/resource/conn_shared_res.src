@@ -633,5 +633,13 @@ String STR_ERROR_NEW_VERSION
 {
 	Text = "The connection could not be established. The database was created by a newer version of %PRODUCTNAME." ;
 };
+String STR_CONVERT_TO_NEW_VERSION
+{
+	Text [ en-US ] = "The database file is stored in an old version. Do you want to convert into the new version?" ;
+};
+String STR_CONVERSION_DECLINED
+{
+	Text [ en-US ] = "The database was not opened because it was not converted to the new version." ;
+};
 
 // ********************************************************************** EOF

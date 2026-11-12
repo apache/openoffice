@@ -1338,7 +1338,7 @@ sal_Bool OKeySet::previous_checked( sal_Bool i_bFetchRow )
         if ( i_bFetchRow )
 		    refreshRow();
 	}
-	return m_aKeyIter != m_aKeyMap.begin();
+	return m_aKeyIter != m_aKeyMap.end() && m_aKeyIter != m_aKeyMap.begin();
 }
 // -----------------------------------------------------------------------------
 sal_Bool SAL_CALL OKeySet::previous(  )
