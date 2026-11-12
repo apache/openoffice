@@ -194,7 +194,7 @@ reportbuilder	registry\data\org\openoffice\Office\UI\ReportCommands.xcu	0	value	
 reportbuilder	registry\data\org\openoffice\Office\UI\ReportCommands.xcu	0	value	..ReportCommands.UserInterface.Commands..uno:ExecuteReport	Label			0	is	Keyra skýrslu...				20181231 09:50:43
 reportbuilder	registry\data\org\openoffice\Office\UI\ReportCommands.xcu	0	value	..ReportCommands.UserInterface.Commands..uno:GreatestHeight	Label			0	is	Passa í mestu hæð				20181231 09:50:43
 reportbuilder	registry\data\org\openoffice\Office\UI\ReportCommands.xcu	0	value	..ReportCommands.UserInterface.Commands..uno:GreatestWidth	Label			0	is	Passa í mestu breidd				20181231 09:50:43
-reportbuilder	registry\data\org\openoffice\Office\UI\ReportCommands.xcu	0	value	..ReportCommands.UserInterface.Commands..uno:InsertDateTimeField	Label			0	is	Date and Time...				20181231 09:50:43
+reportbuilder	registry\data\org\openoffice\Office\UI\ReportCommands.xcu	0	value	..ReportCommands.UserInterface.Commands..uno:InsertDateTimeField	Label			0	is	Dagsetning og tími...				20181231 09:50:43
 reportbuilder	registry\data\org\openoffice\Office\UI\ReportCommands.xcu	0	value	..ReportCommands.UserInterface.Commands..uno:PageHeaderFooter	Label			0	is	Haus/fótur síðu				20181231 09:50:43
 reportbuilder	registry\data\org\openoffice\Office\UI\ReportCommands.xcu	0	value	..ReportCommands.UserInterface.Commands..uno:ReportHeaderFooter	Label			0	is	Haus/fótur skýrslu				20181231 09:50:43
 reportbuilder	registry\data\org\openoffice\Office\UI\ReportCommands.xcu	0	value	..ReportCommands.UserInterface.Commands..uno:ReportNavigator	Label			0	is	Skýrsluleiðarvísir				20181231 09:50:43
@@ -1152,10 +1152,10 @@ instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ER
 instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_29				0	is	Villa við að skrifa í skrá [2].  Athugaðu hvort þú hafir aðgang að þessari möppu.				20181231 09:50:43
 instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_30				0	is	Villa við að lesa úr skránni [2].  Athugaðu hvort skráin sé til og hvort þú hafir aðgang að henni.				20181231 09:50:43
 instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_31				0	is	Annað forrit er með einokun á aðgang að skránni [2].  Vinsamlega lokaðu öllum öðrum forritum, smelltu svo á reyna aftur.				20181231 09:50:43
-instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_32				0	is	Ekki er nægjanlegt laust pláss til að setja upp skrána [2].  Losaðu um laust pláss á disknum og smelltu á reyna aftur, eða smelltu á hætta til að hætta.				20181231 09:50:43
-instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_33				0	is	Upprunaskrá fannst ekki: [2].  Athugaðu hvort skráin sé til og hvort þú hafir aðgang að henni.				20181231 09:50:43
-instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_34				0	is	Villa við að lesa úr skrá: [3]. {{ Kerfisvilla [2].}}  Athugaðu hvort skráin sé til og hvort þú hafir aðgang að henni.				20181231 09:50:43
-instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_35				0	is	Villa við að skrifa í skrá: [3]. {{ Kerfisvilla [2].}}  Athugaðu hvort þú hafir aðgang að þessari möppu.				20181231 09:50:43
+instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_32				0	is	Ekki er nægjanlegt laust pláss til að setja upp skrána [2]. Losaðu um laust pláss á disknum og smelltu á reyna aftur, eða smelltu á hætta til að hætta.				20181231 09:50:43
+instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_33				0	is	Upprunaskrá fannst ekki: [2]. Athugaðu hvort skráin sé til og hvort þú hafir aðgang að henni.				20181231 09:50:43
+instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_34				0	is	Villa við að lesa úr skrá: [3]. {{ Kerfisvilla [2].}} Athugaðu hvort skráin sé til og hvort þú hafir aðgang að henni.				20181231 09:50:43
+instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_35				0	is	Villa við að skrifa í skrá: [3]. {{ Kerfisvilla [2].}} Athugaðu hvort þú hafir aðgang að þessari möppu.				20181231 09:50:43
 instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_36				0	is	Upprunaskrá fannst ekki {{(cabinet)}}: [2].  Athugaðu hvort skráin sé til og hvort þú hafir aðgang að henni.				20181231 09:50:43
 instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_37				0	is	Tókst ekki að búa til möppu [2].  Þegar er til skrá með sama nafni.  Vinsamlega endurnefndu eða fjarlægðu skrána og smelltu á reyna aftur, eða smelltu á hætta til að hætta.				20181231 09:50:43
 instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_38				0	is	Gagnageymslan [2] er ekki aðgengileg.   Vinsamlega veldu aðra.				20181231 09:50:43
@@ -1608,8 +1608,8 @@ readlicense_oo	docs\readme\readme.xrm	0	readmeitem	Welcome	Welcome			0	is	Lesefn
 readlicense_oo	docs\readme\readme.xrm	0	readmeitem	LatestUpdates	LatestUpdates			0	is	For latest updates to this readme file, see <a href="https://www.openoffice.org/welcome/readme.html">https://www.openoffice.org/welcome/readme.html</a>				20181231 09:50:43
 readlicense_oo	docs\readme\readme.xrm	0	readmeitem	A6	A6			0	is	Þetta skjal inniheldur mikilvægar upplýsingar um hugbúnaðinn. Endilega lestu þær gaumgæfilega áður en þú byrjar að vinna með hann.				20181231 09:50:43
 readlicense_oo	docs\readme\readme.xrm	0	readmeitem	A7	A7			0	is	The Apache OpenOffice Community, responsible for the development of this product, would like to invite you to participate as a community member. As a new user, you can check out the ${PRODUCTNAME} community site with helpful information at <a href="https://openoffice.apache.org">https://openoffice.apache.org</a>				20181231 09:50:43
-readlicense_oo	docs\readme\readme.xrm	0	readmeitem	A9	A9			0	is	Also read the sections below about getting involved in the Apache OpenOffice project.				20181231 09:50:43
-readlicense_oo	docs\readme\readme.xrm	0	readmeitem	A10	A10			0	is	Is ${PRODUCTNAME} really free for any user?				20181231 09:50:43
+readlicense_oo	docs\readme\readme.xrm	0	readmeitem	A9	A9			0	is	Einnig ættirðu að lesa textana hér að neðan um hvernig þú gætir tekið þátt í Apache OpenOffice verkefninu.				20181231 09:50:43
+readlicense_oo	docs\readme\readme.xrm	0	readmeitem	A10	A10			0	is	Er ${PRODUCTNAME} í alvörunni ókeypis fyrir alla?				20181231 09:50:43
 readlicense_oo	docs\readme\readme.xrm	0	readmeitem	A11	A11			0	is	${PRODUCTNAME} is free for use by everybody. You may take this copy of ${PRODUCTNAME} and install it on as many computers as you like, and use it for any purpose you like (including commercial, government, public administration and educational use). For further details see the license text delivered together with ${PRODUCTNAME} or <a href="https://www.openoffice.org/license.html">https://www.openoffice.org/license.html</a>				20181231 09:50:43
 readlicense_oo	docs\readme\readme.xrm	0	readmeitem	A12	A12			0	is	Hversvegna er ${PRODUCTNAME} ókeypis fyrir alla?				20181231 09:50:43
 readlicense_oo	docs\readme\readme.xrm	0	readmeitem	A13	A13			0	is	Þú getur í dag notað þetta eintak af ${PRODUCTNAME} án nokkurs endurgjalds vegna þess að einstaklingar og fyrirtæki hafa hannað, þróað, prófað, þýtt, skrifað um, stutt við, kynnt og hjálpað til við á marga vegu við að gera ${PRODUCTNAME} að því sem það er í dag - heimsins fremsti opni skrifstofuhugbúnaðurinn.				20181231 09:50:43
@@ -1617,12 +1617,12 @@ readlicense_oo	docs\readme\readme.xrm	0	readmeitem	A13b	A13b			0	is	If you appre
 readlicense_oo	docs\readme\readme.xrm	0	readmeitem	rr3fgf42r	rr3fgf42r			0	is	Athugasemdir um uppsetningu				20181231 09:50:43
 readlicense_oo	docs\readme\readme.xrm	0	readmeitem	javaneeded	javaneeded			0	is	${PRODUCTNAME} requires a recent version of JAVA for full functionality; JAVA can be downloaded from <a href="https://java.com">https://java.com</a>.				20181231 09:50:43
 readlicense_oo	docs\readme\readme.xrm	0	readmeitem	sdfsdfgf42r	sdfsdfgf42r			0	is	Kerfiskröfur				20181231 09:50:43
-readlicense_oo	docs\readme\readme.xrm	0	readmeitem	macxiOSX	macxiOSX			0	is	MacOSX 10.7 (Lion) or higher				20181231 09:50:43
+readlicense_oo	docs\readme\readme.xrm	0	readmeitem	macxiOSX	macxiOSX			0	is	MacOSX 10.7 (Lion) eða hærra				20181231 09:50:43
 readlicense_oo	docs\readme\readme.xrm	0	readmeitem	macxicpu	macxicpu			0	is	Intel örgjörvi				20181231 09:50:43
 readlicense_oo	docs\readme\readme.xrm	0	readmeitem	macxiRAM	macxiRAM			0	is	512 MB RAM				20181231 09:50:43
 readlicense_oo	docs\readme\readme.xrm	0	readmeitem	macxHardDiksSpace	macxHardDiksSpace			0	is	Allt að 1.5 GB laust pláss á hörðum diski				20181231 09:50:43
 readlicense_oo	docs\readme\readme.xrm	0	readmeitem	macxivideo	macxivideo			0	is	1024x768 skjákort með 256 litadýpt (mælt með hærri upplausn)				20181231 09:50:43
-readlicense_oo	docs\readme\readme.xrm	0	readmeitem	s2s3sdf2	s2s3sdf2			0	is	Microsoft Windows XP, Vista, Windows 7, Windows 8 or Windows 10				20181231 09:50:43
+readlicense_oo	docs\readme\readme.xrm	0	readmeitem	s2s3sdf2	s2s3sdf2			0	is	Microsoft Windows XP, Vista, Windows 7, Windows 8 eða Windows 10				20181231 09:50:43
 readlicense_oo	docs\readme\readme.xrm	0	readmeitem	utzu6	utzu6			0	is	Pentium III or later processor				20181231 09:50:43
 readlicense_oo	docs\readme\readme.xrm	0	readmeitem	ghuj67	ghuj67			0	is	256 MB RAM vinnsluminni (mælt með a.m.k. 512 MB RAM)				20181231 09:50:43
 readlicense_oo	docs\readme\readme.xrm	0	readmeitem	jzjtzu6	jzjtzu6			0	is	Allt að 1.5 GB laust pláss á hörðum diski				20181231 09:50:43
@@ -2265,14 +2265,14 @@ scp2	source\ooo\module_headless.ulf	0	LngText	STR_NAME_MODULE_OPTIONAL_HEADLESS	
 scp2	source\ooo\module_headless.ulf	0	LngText	STR_DESC_MODULE_OPTIONAL_HEADLESS				0	is	Eining sem gerir kleift að nota %PRODUCTNAME án skjás				20181231 09:50:43
 scp2	source\ooo\folderitem_ooo.ulf	0	LngText	STR_FI_NAME_FROMTEMPLATE				0	is	Eftir sniðskrá				20181231 09:50:43
 scp2	source\ooo\folderitem_ooo.ulf	0	LngText	STR_FI_NAME_OPENDOCUMENT				0	is	Opna skjal				20181231 09:50:43
-scp2	source\ooo\folderitem_ooo.ulf	0	LngText	STR_FI_TOOLTIP_SOFFICE				0	is	The office productivity suite compatible to the open and standardized ODF document format. Supported by The Apache Software Foundation.				20181231 09:50:43
+scp2	source\ooo\folderitem_ooo.ulf	0	LngText	STR_FI_TOOLTIP_SOFFICE				0	is	Skrifstofuvinnslupakki sem styður opið og staðlað ODF skjalasniðið. Stutt af Apache Software Foundation.				20181231 09:50:43
 scp2	source\ooo\registryitem_ooo.ulf	0	LngText	STR_REG_VAL_NEW				0	is	&Ný				20181231 09:50:43
 scp2	source\ooo\registryitem_ooo.ulf	0	LngText	STR_REG_VAL_INSTALL				0	is	&Setja upp				20181231 09:50:43
 scp2	source\ooo\registryitem_ooo.ulf	0	LngText	STR_REG_VAL_SO60_CONFIGFILE				0	is	OpenOffice.org 1.1 Configuration File				20181231 09:50:43
 scp2	source\ooo\registryitem_ooo.ulf	0	LngText	STR_REG_VAL_SO50_TEMPLATE_OOO				0	is	StarOffice 5.0 sniðmát				20181231 09:50:43
 scp2	source\ooo\registryitem_ooo.ulf	0	LngText	STR_REG_VAL_APPCAPABILITY_DESCRIPTION_OOO				0	is	office productivity suite based on Apache OpenOffice project				20181231 09:50:43
 scp2	source\gnome\module_gnome.ulf	0	LngText	STR_NAME_MODULE_OPTIONAL_GNOME				0	is	GNOME samþætting				20181231 09:50:43
-scp2	source\gnome\module_gnome.ulf	0	LngText	STR_DESC_MODULE_OPTIONAL_GNOME				0	is	System integration of %PRODUCTNAME %PRODUCTVERSION into GNOME Desktop Environment.				20181231 09:50:43
+scp2	source\gnome\module_gnome.ulf	0	LngText	STR_DESC_MODULE_OPTIONAL_GNOME				0	is	Kerfissamþætting á %PRODUCTNAME %PRODUCTVERSION í GNOME skjáborðsumhverfið.				20181231 09:50:43
 scp2	source\activex\module_activex.ulf	0	LngText	STR_NAME_MODULE_OPTIONAL_ACTIVEXCONTROL				0	is	ActiveX stýring				20181231 09:50:43
 scp2	source\activex\module_activex.ulf	0	LngText	STR_DESC_MODULE_OPTIONAL_ACTIVEXCONTROL				0	is	Partur sem leyfir Microsoft Internet Explorer að birta %PRODUCTNAME skjöl.				20181231 09:50:43
 scp2	source\python\module_python.ulf	0	LngText	STR_NAME_MODULE_OPTIONAL_PYTHON				0	is	Python-UNO brú				20181231 09:50:43
@@ -4656,6 +4656,24 @@ svx	source\form\fmexpl.src	0	menuitem	RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTT
 svx	source\form\fmexpl.src	0	groupbox	RID_SVXDLG_SETFORM	GB_PATH			188	is	Slóð				20181231 09:50:43
 svx	source\form\fmexpl.src	0	modaldialog	RID_SVXDLG_SETFORM				200	is	Velja eyðublað				20181231 09:50:43
 svx	source\form\fmexpl.src	0	dockingwindow	RID_SVX_FMEXPLORER				200	is	Gagnastýring				20181231 09:50:43
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_EDIT	CMD_SID_FM_CONVERTTO_EDIT		0	is	~Textareitur				20181231 09:50:43
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_BUTTON	CMD_SID_FM_CONVERTTO_BUTTON		0	is	~Hnappur				20181231 09:50:43
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_FIXEDTEXT	CMD_SID_FM_CONVERTTO_FIXEDTEXT		0	is	Texta~miði				20181231 09:50:43
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_GROUPBOX	CMD_SID_FM_CONVERTTO_GROUPBOX		0	is	Hóp~rammi				20181231 09:50:43
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_LISTBOX	CMD_SID_FM_CONVERTTO_LISTBOX		0	is	L~istareitur				20181231 09:50:43
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_CHECKBOX	CMD_SID_FM_CONVERTTO_CHECKBOX		0	is	Ha~kreitur				20181231 09:50:43
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_RADIOBUTTON	CMD_SID_FM_CONVERTTO_RADIOBUTTON		0	is	Einvals~reitur				20181231 09:50:43
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_COMBOBOX	CMD_SID_FM_CONVERTTO_COMBOBOX		0	is	~Fjölvalsreitur				20181231 09:50:43
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_IMAGEBUTTON	CMD_SID_FM_CONVERTTO_IMAGEBUTTON		0	is	~Myndhnappur				20181231 09:50:43
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_FILECONTROL	CMD_SID_FM_CONVERTTO_FILECONTROL		0	is	~Skráarval				20181231 09:50:43
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_DATE	CMD_SID_FM_CONVERTTO_DATE		0	is	~Dagsetningareitur				20181231 09:50:43
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_TIME	CMD_SID_FM_CONVERTTO_TIME		0	is	Tímar~eitur				20181231 09:50:43
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_NUMERIC	CMD_SID_FM_CONVERTTO_NUMERIC		0	is	Tö~lureitur				20181231 09:50:43
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_CURRENCY	CMD_SID_FM_CONVERTTO_CURRENCY		0	is	G~jaldmiðlareitur				20181231 09:50:43
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_PATTERN	CMD_SID_FM_CONVERTTO_PATTERN		0	is	M~ynsturreitur				20181231 09:50:43
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_IMAGECONTROL	CMD_SID_FM_CONVERTTO_IMAGECONTROL		0	is	~Myndstýring				20181231 09:50:43
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_FORMATTED	CMD_SID_FM_CONVERTTO_FORMATTED		0	is	Fo~rsniðinn gagnareitur				20181231 09:50:43
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_SCROLLBAR	CMD_SID_FM_CONVERTTO_SCROLLBAR		0	is	Skrunslá				20181231 09:50:43
 svx	source\accessibility\accessibility.src	0	string	RID_SVXSTR_A11Y_3D_MATERIAL_COLOR				0	is	Litur þrívíddarefnis				20181231 09:50:43
 svx	source\accessibility\accessibility.src	0	string	RID_SVXSTR_A11Y_TEXT_COLOR				0	is	Litur á letri				20181231 09:50:43
 svx	source\accessibility\accessibility.src	0	string	RID_SVXSTR_A11Y_BACKGROUND_COLOR				0	is	Bakgrunnslitur				20181231 09:50:43
@@ -7244,7 +7262,7 @@ sw	source\ui\config\mailconfigpage.src	0	fixedtext	TP_MAILCONFIG	FT_PORT			24	is
 sw	source\ui\config\mailconfigpage.src	0	checkbox	TP_MAILCONFIG	CB_SECURE			242	is	~Nota örugga tengingu (SSL)				20181231 09:50:43
 sw	source\ui\config\mailconfigpage.src	0	pushbutton	TP_MAILCONFIG	PB_AUTHENTICATION			105	is	~Auðkenning miðlara				20181231 09:50:43
 sw	source\ui\config\mailconfigpage.src	0	pushbutton	TP_MAILCONFIG	PB_TEST			105	is	~Prófa stillingar...				20181231 09:50:43
-sw	source\ui\config\mailconfigpage.src	0	tabpage	TP_MAILCONFIG		HID_TP_MAILCONFIG		260	is	Mail Merge e-mail				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	tabpage	TP_MAILCONFIG		HID_TP_MAILCONFIG		260	is	Tölvupóstfang póstsameiningar				20181231 09:50:43
 sw	source\ui\config\mailconfigpage.src	0	fixedtext	DLG_MM_TESTACCOUNTSETTINGS	FI_INFO			238	is	%PRODUCTNAME er að prófa stillingar tölvupóstreikningsins...				20181231 09:50:43
 sw	source\ui\config\mailconfigpage.src	0	fixedtext	DLG_MM_TESTACCOUNTSETTINGS	FI_ERROR			238	is	Villur				20181231 09:50:43
 sw	source\ui\config\mailconfigpage.src	0	pushbutton	DLG_MM_TESTACCOUNTSETTINGS	PB_STOP			50	is	~Stöðva				20181231 09:50:43
@@ -7271,6 +7289,26 @@ sw	source\ui\config\mailconfigpage.src	0	radiobutton	DLG_MM_SERVERAUTHENTICATION
 sw	source\ui\config\mailconfigpage.src	0	fixedtext	DLG_MM_SERVERAUTHENTICATION	FT_INUSERNAME			53	is	~Notandanafn				20181231 09:50:43
 sw	source\ui\config\mailconfigpage.src	0	fixedtext	DLG_MM_SERVERAUTHENTICATION	FT_INPASSWORD			53	is	~Lykilorð				20181231 09:50:43
 sw	source\ui\config\mailconfigpage.src	0	modaldialog	DLG_MM_SERVERAUTHENTICATION		HID_MM_SERVERAUTHENTICATION		250	is	Auðkenni miðlara				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	string	DLG_MM_TESTACCOUNTSETTINGS	ST_TASK			0	is	Verk				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	string	DLG_MM_TESTACCOUNTSETTINGS	ST_STATUS			0	is	Staða				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	string	DLG_MM_TESTACCOUNTSETTINGS	ST_ESTABLISH			0	is	Koma á nettengingu				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	string	DLG_MM_TESTACCOUNTSETTINGS	ST_FINDSERVER			0	is	Finna póstsendimiðlara				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	string	DLG_MM_TESTACCOUNTSETTINGS	ST_COMPLETED			0	is	Tókst				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	string	DLG_MM_TESTACCOUNTSETTINGS	ST_FAILED			0	is	Mistókst				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	string	DLG_MM_TESTACCOUNTSETTINGS	ST_ERROR_SERVER			0	is	%PRODUCTNAME tókst ekki að tengjast póstsendimiðlaranum. Athugaðu stillingar bæði í stýrikerfinu og í %PRODUCTNAME. Athugaðu nafn miðlarans, gáttirnar og stillingar fyrir öruggar tengingar				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	modaldialog	DLG_MM_TESTACCOUNTSETTINGS	DLG_MM_SERVERAUTHENTICATION	HID_MM_SERVERAUTHENTICATION		250	is	Auðkenni miðlara				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	checkbox	CB_AUTHENTICATION				238	is	Pós~tsendimiðlarinn (SMTP) krefst auðkenningar				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	radiobutton	RB_SEP_AUTHENTICATION				232	is	Pó~stsendimiðlarinn (SMTP) krefst sérstakrar auðkenningar				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	fixedtext	FT_OUTGOINGSERVER				200	is	Þjónn fyrir útsendan póst:				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	fixedtext	FT_USERNAME				53	is	~Notandanafn				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	fixedtext	FT_OUTPASSWORD				53	is	~Lykilorð				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	radiobutton	RB_SMTPAFTERPOP				232	is	Póstsendimiðlarinn notar sömu auðkenningu og póstmóttökumiðlarinn. Settu ~inn stillingar fyrir póstmóttökumiðlarann.				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	fixedtext	FT_INCOMINGSERVER				230	is	Þjónn fyrir aðsendan póst:				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	fixedtext	FT_SERVER				53	is	~Nafn miðlara				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	fixedtext	FT_PORT				20	is	Gá~tt				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	fixedtext	FT_PROTOCOL				53	is	Tegund				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	fixedtext	FT_INUSERNAME				53	is	~Notandanafn				20181231 09:50:43
+sw	source\ui\config\mailconfigpage.src	0	fixedtext	FT_INPASSWORD				53	is	~Lykilorð				20181231 09:50:43
 sw	source\ui\utlui\unotools.src	0	fixedtext	DLG_RENAME_XNAMED	FT_NEW_NAME			50	is	Nýtt heiti				20181231 09:50:43
 sw	source\ui\utlui\unotools.src	0	fixedline	DLG_RENAME_XNAMED	FL_NAME			152	is	Breyta nafni				20181231 09:50:43
 sw	source\ui\utlui\unotools.src	0	modaldialog	DLG_RENAME_XNAMED		HID_RENAME_XNAMED		220	is	Endurnefna hlut: 				20181231 09:50:43
@@ -8443,13 +8481,13 @@ svl	source\misc\mediatyp.src	0	string	STR_SVT_MIMETYPE_INET_MULTI_DIGEST				0	is
 svl	source\misc\mediatyp.src	0	string	STR_SVT_MIMETYPE_INET_MULTI_PARALLEL				0	is	multipart/parallel				20181231 09:50:43
 svl	source\misc\mediatyp.src	0	string	STR_SVT_MIMETYPE_INET_MULTI_RELATED				0	is	multipart/related				20181231 09:50:43
 svl	source\misc\mediatyp.src	0	string	STR_SVT_MIMETYPE_INET_MULTI_MIXED				0	is	multipart/mixed				20181231 09:50:43
-svl	source\misc\mediatyp.src	0	string	STR_SVT_MIMETYPE_APP_SXCALC				0	is	%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet				20181231 09:50:43
-svl	source\misc\mediatyp.src	0	string	STR_SVT_MIMETYPE_APP_SXCHART				0	is	%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Chart				20181231 09:50:43
-svl	source\misc\mediatyp.src	0	string	STR_SVT_MIMETYPE_APP_SXDRAW				0	is	%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Drawing				20181231 09:50:43
-svl	source\misc\mediatyp.src	0	string	STR_SVT_MIMETYPE_APP_SXMATH				0	is	%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Formula				20181231 09:50:43
-svl	source\misc\mediatyp.src	0	string	STR_SVT_MIMETYPE_APP_SXWRITER				0	is	%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Text Document				20181231 09:50:43
-svl	source\misc\mediatyp.src	0	string	STR_SVT_MIMETYPE_APP_SXIMPRESS				0	is	%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Presentation				20181231 09:50:43
-svl	source\misc\mediatyp.src	0	string	STR_SVT_MIMETYPE_APP_SXGLOBAL				0	is	%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Master Document				20181231 09:50:43
+svl	source\misc\mediatyp.src	0	string	STR_SVT_MIMETYPE_APP_SXCALC				0	is	%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION töflureiknir				20181231 09:50:43
+svl	source\misc\mediatyp.src	0	string	STR_SVT_MIMETYPE_APP_SXCHART				0	is	%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION línurit				20181231 09:50:43
+svl	source\misc\mediatyp.src	0	string	STR_SVT_MIMETYPE_APP_SXDRAW				0	is	%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION teikning				20181231 09:50:43
+svl	source\misc\mediatyp.src	0	string	STR_SVT_MIMETYPE_APP_SXMATH				0	is	%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION formúla				20181231 09:50:43
+svl	source\misc\mediatyp.src	0	string	STR_SVT_MIMETYPE_APP_SXWRITER				0	is	%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION textaskjal				20181231 09:50:43
+svl	source\misc\mediatyp.src	0	string	STR_SVT_MIMETYPE_APP_SXIMPRESS				0	is	%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION kynning				20181231 09:50:43
+svl	source\misc\mediatyp.src	0	string	STR_SVT_MIMETYPE_APP_SXGLOBAL				0	is	%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION stýriskjal				20181231 09:50:43
 svl	source\misc\mediatyp.src	0	string	STR_SVT_MIMETYPE_APP_SXIPACKED				0	is	%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Presentation (packed)				20181231 09:50:43
 svl	source\items\cstitem.src	0	string	STR_COLUM_DT_AUTO				0	is	sjálfvirkt				20181231 09:50:43
 sc	source\ui\docshell\tpstat.src	0	fixedtext	RID_SCPAGE_STAT	FT_TABLES_LBL			90	is	Fjöldi blaða:				20181231 09:50:43
@@ -15850,6 +15888,7 @@ officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..G
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Popups..uno:TransliterateMenu	Label			0	is	~Breyta stafstöðu				20181231 09:50:43
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Popups..uno:ViewMenu	Label			0	is	~View				20181231 09:50:43
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Popups..uno:WindowList	Label			0	is	~Window				20181231 09:50:43
+officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:Substract	Label			0	is	D~raga frá				20181231 09:50:43
 officecfg	registry\data\org\openoffice\Office\UI\DbQueryWindowState.xcu	0	value	..DbQueryWindowState.UIElements.States.private:resource/toolbar/designobjectbar	UIName			0	is	Hanna				20181231 09:50:43
 officecfg	registry\data\org\openoffice\Office\UI\DbQueryWindowState.xcu	0	value	..DbQueryWindowState.UIElements.States.private:resource/toolbar/sqlobjectbar	UIName			0	is	SQL				20181231 09:50:43
 officecfg	registry\data\org\openoffice\Office\UI\DbQueryWindowState.xcu	0	value	..DbQueryWindowState.UIElements.States.private:resource/toolbar/toolbar	UIName			0	is	Fyrirspurnahönnun				20181231 09:50:43
@@ -16218,7 +16257,7 @@ officecfg	registry\data\org\openoffice\Office\UI\MathCommands.xcu	0	value	..Math
 officecfg	registry\data\org\openoffice\Office\UI\MathCommands.xcu	0	value	..MathCommands.UserInterface.Commands..uno:ToolBox	Label			0	is	Einindi				20181231 09:50:43
 officecfg	registry\data\org\openoffice\Office\UI\MathCommands.xcu	0	value	..MathCommands.UserInterface.Commands..uno:View100	Label			0	is	Aðdráttur 100%				20181231 09:50:43
 officecfg	registry\data\org\openoffice\Office\UI\MathCommands.xcu	0	value	..MathCommands.UserInterface.Commands..uno:View200	Label			0	is	Aðdráttur 200%				20181231 09:50:43
-officecfg	registry\data\org\openoffice\Office\UI\MathCommands.xcu	0	value	..MathCommands.UserInterface.Commands..uno:View50	Label			0	is	0.5				20181231 09:50:43
+officecfg	registry\data\org\openoffice\Office\UI\MathCommands.xcu	0	value	..MathCommands.UserInterface.Commands..uno:View50	Label			0	is	Aðdráttur 50%				20181231 09:50:43
 officecfg	registry\data\org\openoffice\Office\UI\DrawImpressCommands.xcu	0	value	..DrawImpressCommands.UserInterface.Commands..uno:ActionMode	Label			0	is	Leyfa víxlverkun				20181231 09:50:43
 officecfg	registry\data\org\openoffice\Office\UI\DrawImpressCommands.xcu	0	value	..DrawImpressCommands.UserInterface.Commands..uno:AdvancedMode	Label			0	is	Brellur				20181231 09:50:43
 officecfg	registry\data\org\openoffice\Office\UI\DrawImpressCommands.xcu	0	value	..DrawImpressCommands.UserInterface.Commands..uno:AnimationEffects	Label			0	is	~Víxlverkun...				20181231 09:50:43
@@ -17294,12 +17333,12 @@ wizards	source\template\template.src	0	string	Newsletter + 11				0	is	Einhliða	
 wizards	source\template\template.src	0	string	Newsletter + 12				0	is	Báðum megin				20181231 09:50:43
 wizards	source\euro\euro.src	0	string	STEP_ZERO				0	is	~Hætta við				20181231 09:50:43
 wizards	source\euro\euro.src	0	string	STEP_ZERO + 1				0	is	~Hjálp				20181231 09:50:43
-wizards	source\euro\euro.src	0	string	STEP_ZERO + 2				0	is	<< ~Back				20181231 09:50:43
+wizards	source\euro\euro.src	0	string	STEP_ZERO + 2				0	is	<< ~Til baka				20181231 09:50:43
 wizards	source\euro\euro.src	0	string	STEP_ZERO + 3				0	is	~Umbreyta				20181231 09:50:43
 wizards	source\euro\euro.src	0	string	STEP_ZERO + 4				0	is	Athugaðu: Upphæðum gjaldmiðla sem koma úr ytri tilvísunum og gengishlutföllum úr formúlum er ekki hægt að umbreyta.				20181231 09:50:43
 wizards	source\euro\euro.src	0	string	STEP_ZERO + 5				0	is	Áður, afvernda öll blöð.				20181231 09:50:43
 wizards	source\euro\euro.src	0	string	STEP_ZERO + 6				0	is	Gjaldmiðlar:				20181231 09:50:43
-wizards	source\euro\euro.src	0	string	STEP_ZERO + 7				0	is	C~ontinue >>				20181231 09:50:43
+wizards	source\euro\euro.src	0	string	STEP_ZERO + 7				0	is	Hal~da áfram >>				20181231 09:50:43
 wizards	source\euro\euro.src	0	string	STEP_ZERO + 8				0	is	~Loka				20181231 09:50:43
 wizards	source\euro\euro.src	0	string	STEP_CONVERTER				0	is	Allt skj~alið				20181231 09:50:43
 wizards	source\euro\euro.src	0	string	STEP_CONVERTER + 1				0	is	Val				20181231 09:50:43
@@ -17396,7 +17435,7 @@ desktop	source\app\desktop.src	0	string	STR_CONFIG_ERR_RIGHTS_MISSING				0	is	Ek
 desktop	source\app\desktop.src	0	string	STR_CONFIG_ERR_ACCESS_GENERAL				0	is	Almenn villa kom upp þegar reynt var að nálgast miðlægar stillingar. 				20181231 09:50:43
 desktop	source\app\desktop.src	0	string	STR_CONFIG_ERR_NO_WRITE_ACCESS				0	is	Breytingar á þínum stillingum tókst ekki að geyma miðlægt vegna ónógra aðgangsheimilda. 				20181231 09:50:43
 desktop	source\app\desktop.src	0	string	STR_BOOTSTRAP_ERR_CFG_DATAACCESS				0	is	Ekki var hægt að ræsa %PRODUCTNAME vegna villu við að nálgast stillingagögn %PRODUCTNAME.\n\nHafðu samband við kerfisstjórann þinn.				20181231 09:50:43
-desktop	source\app\desktop.src	0	string	STR_INTERNAL_ERRMSG				0	is	The following internal error has occurred : 				20181231 09:50:43
+desktop	source\app\desktop.src	0	string	STR_INTERNAL_ERRMSG				0	is	Eftirfarandi innri villa kom upp: 				20181231 09:50:43
 desktop	source\app\desktop.src	0	querybox	QBX_USERDATALOCKED				0	is	Annað hvort er annað eintak af %PRODUCTNAME að sækja í þínar stillingar eða þínar stillingar eru læstar.\nSamtímaaðgangur að stillingunum skapar misræmi. Áður en haldið er áfram skaltu ganga úr skugga um að notandi '$u' loki %PRODUCTNAME á tölvunni '$h'.\n\nViltu virkilega halda áfram?				20181231 09:50:43
 desktop	source\app\desktop.src	0	string	STR_TITLE_USERDATALOCKED				0	is	%PRODUCTNAME %PRODUCTVERSION				20181231 09:50:43
 desktop	source\app\desktop.src	0	errorbox	EBX_ERR_PRINTDISABLED				275	is	Prentun er óvirk. Ekki er hægt að prenta nein skjöl.				20181231 09:50:43
@@ -17447,8 +17486,8 @@ desktop	source\migration\wizard.src	0	radiobutton	TP_REGISTRATION	RB_REGISTRATIO
 desktop	source\migration\wizard.src	0	radiobutton	TP_REGISTRATION	RB_REGISTRATION_NEVER			0	is	Ég ætla ~ekki að skrá mig				20181231 09:50:43
 desktop	source\migration\wizard.src	0	fixedtext	TP_REGISTRATION	FT_REGISTRATION_END			0	is	Við vonum að þú njótir þess að vinna með %PRODUCTNAME.\n\nTil að hætta í álfinum, smelltu á 'Ljúka'.				20181231 09:50:43
 desktop	source\deployment\misc\dp_misc.src	0	string	RID_DEPLYOMENT_DEPENDENCIES_UNKNOWN				0	is	Óþekkt				20181231 09:50:43
-desktop	source\deployment\misc\dp_misc.src	0	string	RID_DEPLYOMENT_DEPENDENCIES_MIN				0	is	Extension requires at least Apache OpenOffice %VERSION				20181231 09:50:43
-desktop	source\deployment\misc\dp_misc.src	0	string	RID_DEPLYOMENT_DEPENDENCIES_MAX				0	is	Extension doesn't support versions greater than: Apache OpenOffice %VERSION				20181231 09:50:43
+desktop	source\deployment\misc\dp_misc.src	0	string	RID_DEPLYOMENT_DEPENDENCIES_MIN				0	is	Viðbótin krefst að minnsta kosti Apache OpenOffice %VERSION				20181231 09:50:43
+desktop	source\deployment\misc\dp_misc.src	0	string	RID_DEPLYOMENT_DEPENDENCIES_MAX				0	is	Viðbótin styður ekki útgáfur nýrri en: Apache OpenOffice %VERSION				20181231 09:50:43
 desktop	source\deployment\manager\dp_manager.src	0	string	RID_STR_COPYING_PACKAGE				0	is	Afrita: 				20181231 09:50:43
 desktop	source\deployment\manager\dp_manager.src	0	string	RID_STR_ERROR_WHILE_ADDING				0	is	Villa við að bæta við: 				20181231 09:50:43
 desktop	source\deployment\manager\dp_manager.src	0	string	RID_STR_ERROR_WHILE_REMOVING				0	is	Villa við að fjarlægja: 				20181231 09:50:43
@@ -17518,7 +17557,7 @@ desktop	source\deployment\gui\dp_gui_updatedialog.src	0	string	RID_DLG_UPDATE	RI
 desktop	source\deployment\gui\dp_gui_updatedialog.src	0	string	RID_DLG_UPDATE	RID_DLG_UPDATE_UNKNOWNERROR			0	is	Óþekkt villa.				20181231 09:50:43
 desktop	source\deployment\gui\dp_gui_updatedialog.src	0	string	RID_DLG_UPDATE	RID_DLG_UPDATE_NODESCRIPTION			0	is	Engar nánari upplýsingar eru tiltækar fyrir þessa uppfærslu.				20181231 09:50:43
 desktop	source\deployment\gui\dp_gui_updatedialog.src	0	string	RID_DLG_UPDATE	RID_DLG_UPDATE_NOINSTALL			0	is	Ekki var hægt að uppfæra viðbótina vegna:				20181231 09:50:43
-desktop	source\deployment\gui\dp_gui_updatedialog.src	0	string	RID_DLG_UPDATE	RID_DLG_UPDATE_NODEPENDENCY			0	is	Required Apache OpenOffice version doesn't match:				20181231 09:50:43
+desktop	source\deployment\gui\dp_gui_updatedialog.src	0	string	RID_DLG_UPDATE	RID_DLG_UPDATE_NODEPENDENCY			0	is	Útgáfa Apache OpenOffice sem krafist er, samsvarar ekki:				20181231 09:50:43
 desktop	source\deployment\gui\dp_gui_updatedialog.src	0	string	RID_DLG_UPDATE	RID_DLG_UPDATE_NODEPENDENCY_CUR_VER			0	is	You have Apache OpenOffice %VERSION				20181231 09:50:43
 desktop	source\deployment\gui\dp_gui_updatedialog.src	0	string	RID_DLG_UPDATE	RID_DLG_UPDATE_BROWSERBASED			0	is	uppfærsla með vafra				20181231 09:50:43
 desktop	source\deployment\gui\dp_gui_updatedialog.src	0	string	RID_DLG_UPDATE	RID_DLG_UPDATE_VERSION			0	is	Útgáfa				20181231 09:50:43
@@ -17808,7 +17847,7 @@ starmath	source\toolbox.src	0	toolboxitem	RID_TOOLBOXWINDOW.TOOLBOX_CAT_C	RID_XN
 starmath	source\toolbox.src	0	toolboxitem	RID_TOOLBOXWINDOW.TOOLBOX_CAT_C	RID_XNSUPSETEQY	HID_SMA_XNSUPSETEQY		0	is	Ekki yfirmengi eða jafnt				20181231 09:50:43
 starmath	source\toolbox.src	0	toolboxitem	RID_TOOLBOXWINDOW.TOOLBOX_CAT_C	RID_SETN	HID_SMA_SETN		0	is	Mengi náttúrulegra talna				20181231 09:50:43
 starmath	source\toolbox.src	0	toolboxitem	RID_TOOLBOXWINDOW.TOOLBOX_CAT_C	RID_SETZ	HID_SMA_SETZ		0	is	Mengi heiltalna				20181231 09:50:43
-starmath	source\toolbox.src	0	toolboxitem	RID_TOOLBOXWINDOW.TOOLBOX_CAT_C	RID_SETQ	HID_SMA_SETQ		0	is	Mengi ræðra talna				20181231 09:50:43
+starmath	source\toolbox.src	0	toolboxitem	RID_TOOLBOXWINDOW.TOOLBOX_CAT_C	RID_SETQ	HID_SMA_SETQ		0	is	Mengi náttúrulegra talna				20181231 09:50:43
 starmath	source\toolbox.src	0	toolboxitem	RID_TOOLBOXWINDOW.TOOLBOX_CAT_C	RID_SETR	HID_SMA_SETR		0	is	Mengi fleytitalna				20181231 09:50:43
 starmath	source\toolbox.src	0	toolboxitem	RID_TOOLBOXWINDOW.TOOLBOX_CAT_C	RID_SETC	HID_SMA_SETC		0	is	Mengi tvinntalna				20181231 09:50:43
 starmath	source\toolbox.src	0	toolboxitem	RID_TOOLBOXWINDOW.TOOLBOX_CAT_D	RID_EX	HID_SMA_EX		0	is	Veldisfall				20181231 09:50:43
@@ -18031,9 +18070,9 @@ starmath	source\smres.src	0	querybox	RID_DEFAULTSAVEQUERY				365	is	Á að vista
 starmath	source\smres.src	0	string	RID_FONTREGULAR				365	is	Venjulegt				20181231 09:50:43
 starmath	source\smres.src	0	string	RID_FONTITALIC				365	is	Skáletrað				20181231 09:50:43
 starmath	source\smres.src	0	string	RID_FONTBOLD				365	is	Feitletrað				20181231 09:50:43
-starmath	source\smres.src	0	menuitem	RID_VIEWMENU	SID_VIEW050	CMD_SID_VIEW050		0	is	~View 50 %				20181231 09:50:43
-starmath	source\smres.src	0	menuitem	RID_VIEWMENU	SID_VIEW100	CMD_SID_VIEW100		0	is	View ~100 %				20181231 09:50:43
-starmath	source\smres.src	0	menuitem	RID_VIEWMENU	SID_VIEW200	CMD_SID_VIEW200		0	is	View ~200 %				20181231 09:50:43
+starmath	source\smres.src	0	menuitem	RID_VIEWMENU	SID_VIEW050	CMD_SID_VIEW050		0	is	~Skoða 50%				20181231 09:50:43
+starmath	source\smres.src	0	menuitem	RID_VIEWMENU	SID_VIEW100	CMD_SID_VIEW100		0	is	Skoða ~100%				20181231 09:50:43
+starmath	source\smres.src	0	menuitem	RID_VIEWMENU	SID_VIEW200	CMD_SID_VIEW200		0	is	Skoða ~200%				20181231 09:50:43
 starmath	source\smres.src	0	menuitem	RID_VIEWMENU	SID_ZOOMIN	CMD_SID_ZOOMIN		0	is	~Renna að				20181231 09:50:43
 starmath	source\smres.src	0	menuitem	RID_VIEWMENU	SID_ZOOMOUT	CMD_SID_ZOOMOUT		0	is	Renna ~frá				20181231 09:50:43
 starmath	source\smres.src	0	menuitem	RID_VIEWMENU	SID_ADJUST	CMD_SID_ADJUST		0	is	~Sýna allt				20181231 09:50:43
@@ -19793,7 +19832,7 @@ sd	source\filter\html\pubdlg.src	0	cancelbutton	DLG_DESIGNNAME	BTN_NOSAVE			50	i
 sd	source\filter\html\pubdlg.src	0	modaldialog	DLG_DESIGNNAME		HID_SD_HTMLEXPORT_DLG_DNAME		160	is	Nefna HTML-hönnun				20181231 09:50:43
 crashrep	source\all\crashrep.ulf	0	LngText	%WELCOME_CAPTION%				0	is	%PRODUCTNAME% %PRODUCTVERSION% villuskýrsla				20181231 09:50:43
 crashrep	source\all\crashrep.ulf	0	LngText	%WELCOME_HEADER%				0	is	Velkominn í villuskýrslutól %PRODUCTNAME% %PRODUCTVERSION%				20181231 09:50:43
-crashrep	source\all\crashrep.ulf	0	LngText	%WELCOME_BODY1%				0	is	This error report tool gathers information about how %PRODUCTNAME% is working and sends it to Apache OpenOffice to help improve future versions.\n\n				20181231 09:50:43
+crashrep	source\all\crashrep.ulf	0	LngText	%WELCOME_BODY1%				0	is	Þetta villuskýrslutól safnar upplýsingum um hvernig %PRODUCTNAME% er að vinna, sendir til Apache OpenOffice og hjálpar við að bæta komandi útgáfur.\n\n				20181231 09:50:43
 crashrep	source\all\crashrep.ulf	0	LngText	%WELCOME_BODY2%				0	is	Auðvelt - sendu skýrsluna án tafar með því að smella á 'Senda' í næstu valmynd eða þú getur stuttlega lýst villunni sem upp kom og smellt síðan á 'Senda'. Ef þú vilt skoða skýrsluna, smelltu þá á 'Sýna skýrslu' takkann. Engin gögn verða send ef þú smellir á 'Ekki senda'.\n\n				20181231 09:50:43
 crashrep	source\all\crashrep.ulf	0	LngText	%WELCOME_BODY3%				0	is	Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n				20181231 09:50:43
 crashrep	source\all\crashrep.ulf	0	LngText	%PRIVACY_URL%				0	is	http://www.openoffice.org/privacy.html				20181231 09:50:43
@@ -19804,7 +19843,7 @@ crashrep	source\all\crashrep.ulf	0	LngText	%REPORT_CAPTION%				0	is	%PRODUCTNAME
 crashrep	source\all\crashrep.ulf	0	LngText	%REPORT_HEADER%				0	is	Villa kom upp við keyrslu %PRODUCTNAME% %PRODUCTVERSION%				20181231 09:50:43
 crashrep	source\all\crashrep.ulf	0	LngText	%REPORT_BODY%				0	is	The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information that could help Apache OpenOffice improve %PRODUCTNAME%.\nIn the spaces below, you can enter a title for your crash report and describe the action you were trying to carry out when the error occurred. Then click 'Send'.\n				20181231 09:50:43
 crashrep	source\all\crashrep.ulf	0	LngText	%ENTER_TITLE%				0	is	Hvaða tegund skjals (t.d. kynning) varst þú að vinna í þegar villan kom upp?				20181231 09:50:43
-crashrep	source\all\crashrep.ulf	0	LngText	%ALLOW_CONTACT%				0	is	~I allow Apache OpenOffice to contact me regarding this report.				20181231 09:50:43
+crashrep	source\all\crashrep.ulf	0	LngText	%ALLOW_CONTACT%				0	is	É~g veiti Apache OpenOffice leyfi til að hafa samband við mig varðandi efni þessarar skýrslu.				20181231 09:50:43
 crashrep	source\all\crashrep.ulf	0	LngText	%ENTER_EMAIL%				0	is	Sláðu inn tölvupóstfang þitt.				20181231 09:50:43
 crashrep	source\all\crashrep.ulf	0	LngText	%ENTER_DESCRIPTION%				0	is	Við ~hvaða kringumstæðu varstu að nota %PRODUCTNAME% þegar villan kom upp ?				20181231 09:50:43
 crashrep	source\all\crashrep.ulf	0	LngText	%BACK_BUTTON%				0	is	 << ~Til baka				20181231 09:50:43
@@ -19830,7 +19869,7 @@ crashrep	source\all\crashrep.ulf	0	LngText	%PROXY_SETTINGS_DESCRIPTION%				0	is	
 crashrep	source\all\crashrep.ulf	0	LngText	%SENDING_REPORT_HEADER%				0	is	Sendi villuskýrslu				20181231 09:50:43
 crashrep	source\all\crashrep.ulf	0	LngText	%SENDING_REPORT_STATUS%				0	is	Staða: Sendi villuskýrslu				20181231 09:50:43
 crashrep	source\all\crashrep.ulf	0	LngText	%SENDING_REPORT_STATUS_FINISHED%				0	is	Staða: Villuskýrslan var send án vandkvæða.				20181231 09:50:43
-crashrep	source\all\crashrep.ulf	0	LngText	%ERROR_MSG_NOEMAILADDRESS%				0	is	You have marked the option 'I allow Apache OpenOffice to contact me regarding this report.'\nPlease enter your e-mail address.				20181231 09:50:43
+crashrep	source\all\crashrep.ulf	0	LngText	%ERROR_MSG_NOEMAILADDRESS%				0	is	Þú hefur hakað við 'Ég veiti Apache OpenOffice leyfi til að hafa samband við mig varðandi þessa skýrslu.'\nVinsamlega sláðu inn netfangið þitt.				20181231 09:50:43
 crashrep	source\all\crashrep.ulf	0	LngText	%MSG_CMDLINE_USAGE%				0	is	Notkun:				20181231 09:50:43
 crashrep	source\all\crashrep.ulf	0	LngText	%MSG_PARAM_PROCESSID%				0	is	-p <auðkenni forrits>				20181231 09:50:43
 crashrep	source\all\crashrep.ulf	0	LngText	%MSG_PARAM_PROCESSID_DESCRIPTION%				0	is	Hengir auðkenni %PRODUCTNAME% forritsins (PID) við villuskýrslutólið				20181231 09:50:43
@@ -22060,7 +22099,7 @@ filter	source\config\fragments\filters\Text__encoded__ui.xcu	0	value	Text (encod
 filter	source\config\fragments\filters\MS_Word_95_Vorlage_ui.xcu	0	value	MS Word 95 Vorlage	UIName			0	is	Microsoft Word 95 sniðmát				20181231 09:50:43
 filter	source\config\fragments\filters\Text__encoded___StarWriter_Web__ui.xcu	0	value	Text (encoded) (StarWriter/Web)	UIName			0	is	Textakóðað (%productname% Writer/Web)				20181231 09:50:43
 filter	source\config\fragments\filters\MS_Word_97_Vorlage_ui.xcu	0	value	MS Word 97 Vorlage	UIName			0	is	Microsoft Word 97/2000/XP sniðmát				20181231 09:50:43
-filter	source\config\fragments\filters\impress_StarOffice_XML_Draw_ui.xcu	0	value	impress_StarOffice_XML_Draw	UIName			0	is	%oooxmlformatname% %oooxmlformatversion% Drawing (%productname% Impress)				20181231 09:50:43
+filter	source\config\fragments\filters\impress_StarOffice_XML_Draw_ui.xcu	0	value	impress_StarOffice_XML_Draw	UIName			0	is	%oooxmlformatname% %oooxmlformatversion% teikning (%productname% Impress)				20181231 09:50:43
 filter	source\config\fragments\filters\MS_Excel_5_0_95_Vorlage_Template_ui.xcu	0	value	MS Excel 5.0/95 Vorlage/Template	UIName			0	is	Microsoft Excel 5.0 sniðmát				20181231 09:50:43
 filter	source\config\fragments\filters\HTML__StarWriter__ui.xcu	0	value	HTML (StarWriter)	UIName			0	is	HTML skjal (%productname% Writer)				20181231 09:50:43
 filter	source\config\fragments\filters\StarDraw_3_0_Vorlage__StarImpress__ui.xcu	0	value	StarDraw 3.0 Vorlage (StarImpress)	UIName			0	is	StarDraw 3.0 sniðmát (%productname% Impress)				20181231 09:50:43
@@ -22082,7 +22121,7 @@ filter	source\config\fragments\filters\calc_StarOffice_XML_Calc_Template_ui.xcu	
 filter	source\config\fragments\filters\math8_ui.xcu	0	value	math8	UIName			0	is	ODF formúla				20181231 09:50:43
 filter	source\config\fragments\filters\MS_Excel_2003_XML_ui.xcu	0	value	MS Excel 2003 XML	UIName			0	is	Microsoft Excel 2003 XML				20181231 09:50:43
 filter	source\config\fragments\filters\writer_globaldocument_StarOffice_XML_Writer_GlobalDocument_ui.xcu	0	value	writer_globaldocument_StarOffice_XML_Writer_GlobalDocument	UIName			0	is	%oooxmlformatname% %oooxmlformatversion% Master Document				20181231 09:50:43
-filter	source\config\fragments\filters\writer_web_StarOffice_XML_Writer_ui.xcu	0	value	writer_web_StarOffice_XML_Writer	UIName			0	is	%oooxmlformatname% %oooxmlformatversion% Text Document (%productname% Writer/Web)				20181231 09:50:43
+filter	source\config\fragments\filters\writer_web_StarOffice_XML_Writer_ui.xcu	0	value	writer_web_StarOffice_XML_Writer	UIName			0	is	%oooxmlformatname% %oooxmlformatversion% textaskjal (%productname% Writer/Web)				20181231 09:50:43
 filter	source\config\fragments\filters\calc_MS_Excel_2007_Binary_ui.xcu	0	value	Calc MS Excel 2007 Binary	UIName			0	is	Microsoft Excel 2007 tvíundakerfisskrá				20181231 09:50:43
 filter	source\config\fragments\filters\StarWriter_Web_4_0_Vorlage_Template_ui.xcu	0	value	StarWriter/Web 4.0 Vorlage/Template	UIName			0	is	StarWriter/Web 4.0 sniðmát				20181231 09:50:43
 filter	source\config\fragments\filters\StarCalc_4_0_Vorlage_Template_ui.xcu	0	value	StarCalc 4.0 Vorlage/Template	UIName			0	is	StarCalc 4.0 sniðmát				20181231 09:50:43
@@ -22142,9 +22181,9 @@ avmedia	source\framework\mediacontrol.src	0	string	AVMEDIA_STR_STOP				0	is	Stö
 avmedia	source\framework\mediacontrol.src	0	string	AVMEDIA_STR_ENDLESS				0	is	Endurtaka				20181231 09:50:43
 avmedia	source\framework\mediacontrol.src	0	string	AVMEDIA_STR_MUTE				0	is	Hljóðdeyfa				20181231 09:50:43
 avmedia	source\framework\mediacontrol.src	0	string	AVMEDIA_STR_ZOOM				0	is	Skoða				20181231 09:50:43
-avmedia	source\framework\mediacontrol.src	0	string	AVMEDIA_STR_ZOOM_50				0	is	50 %				20181231 09:50:43
-avmedia	source\framework\mediacontrol.src	0	string	AVMEDIA_STR_ZOOM_100				0	is	100 %				20181231 09:50:43
-avmedia	source\framework\mediacontrol.src	0	string	AVMEDIA_STR_ZOOM_200				0	is	200 %				20181231 09:50:43
+avmedia	source\framework\mediacontrol.src	0	string	AVMEDIA_STR_ZOOM_50				0	is	50%				20181231 09:50:43
+avmedia	source\framework\mediacontrol.src	0	string	AVMEDIA_STR_ZOOM_100				0	is	100%				20181231 09:50:43
+avmedia	source\framework\mediacontrol.src	0	string	AVMEDIA_STR_ZOOM_200				0	is	200%				20181231 09:50:43
 avmedia	source\framework\mediacontrol.src	0	string	AVMEDIA_STR_ZOOM_FIT				0	is	Skalað				20181231 09:50:43
 avmedia	source\framework\mediacontrol.src	0	string	AVMEDIA_STR_MEDIAPLAYER				0	is	Margmiðlunarspilari				20181231 09:50:43
 avmedia	source\viewer\mediawindow.src	0	string	AVMEDIA_STR_INSERTMEDIA_DLG				0	is	Setja inn myndband eða hljóðskrá				20181231 09:50:43
@@ -22499,9 +22538,9 @@ vcl	source\src\print.src	0	itemlist	RID_STR_PAPERNAMES	16			0	is	C6 umslag				20
 vcl	source\src\print.src	0	itemlist	RID_STR_PAPERNAMES	17			0	is	C6/5 umslag				20181231 09:50:43
 vcl	source\src\print.src	0	itemlist	RID_STR_PAPERNAMES	18			0	is	DL umslag				20181231 09:50:43
 vcl	source\src\print.src	0	itemlist	RID_STR_PAPERNAMES	19			0	is	Litskyggna				20181231 09:50:43
-vcl	source\src\print.src	0	itemlist	RID_STR_PAPERNAMES	20			0	is	Screen (4:3)				20181231 09:50:43
-vcl	source\src\print.src	0	itemlist	RID_STR_PAPERNAMES	21			0	is	Screen (16:9)				20181231 09:50:43
-vcl	source\src\print.src	0	itemlist	RID_STR_PAPERNAMES	22			0	is	Screen (16:10)				20181231 09:50:43
+vcl	source\src\print.src	0	itemlist	RID_STR_PAPERNAMES	20			0	is	Skjár (4:3)				20181231 09:50:43
+vcl	source\src\print.src	0	itemlist	RID_STR_PAPERNAMES	21			0	is	Skjár (16:9)				20181231 09:50:43
+vcl	source\src\print.src	0	itemlist	RID_STR_PAPERNAMES	22			0	is	Skjár (16:10)				20181231 09:50:43
 vcl	source\src\print.src	0	itemlist	RID_STR_PAPERNAMES	23			0	is	C				20181231 09:50:43
 vcl	source\src\print.src	0	itemlist	RID_STR_PAPERNAMES	24			0	is	D				20181231 09:50:43
 vcl	source\src\print.src	0	itemlist	RID_STR_PAPERNAMES	25			0	is	E				20181231 09:50:43
@@ -68944,7 +68983,7 @@ cui	source\dialogs\about.src	0	string	RID_DEFAULTABOUT	RID_CUI_ABOUT_STR_COPYRIG
 cui	source\dialogs\about.src	0	string	RID_DEFAULTABOUT	RID_CUI_ABOUT_STR_CREATED			0	is	This product was created by the OpenOffice community.				20181231 09:50:43
 cui	source\dialogs\about.src	0	string	RID_DEFAULTABOUT	RID_CUI_ABOUT_STR_CREATED_VENDOR			0	is	This product was created by %OOOVENDOR, based on Apache OpenOffice.				20181231 09:50:43
 cui	source\dialogs\about.src	0	string	RID_DEFAULTABOUT	RID_CUI_ABOUT_STR_ACKNOWLEDGE			0	is	The OpenOffice community acknowledges all contributing members, especially those mentioned at				20181231 09:50:43
-cui	source\dialogs\about.src	0	modaldialog	RID_DEFAULTABOUT				200	is	About %FULLPRODUCTNAME				20181231 09:50:43
+cui	source\dialogs\about.src	0	modaldialog	RID_DEFAULTABOUT				200	is	Um %FULLPRODUCTNAME				20181231 09:50:43
 cui	source\dialogs\about.src	0	pageitem	RID_CUI_README_DLG.RID_CUI_README_TBCTL	RID_CUI_READMEPAGE			0	is	Readme				20181231 09:50:43
 cui	source\dialogs\about.src	0	pageitem	RID_CUI_README_DLG.RID_CUI_README_TBCTL	RID_CUI_LICENSEPAGE			0	is	License				20181231 09:50:43
 cui	source\dialogs\about.src	0	pageitem	RID_CUI_README_DLG.RID_CUI_README_TBCTL	RID_CUI_NOTICEPAGE			0	is	Notice				20181231 09:50:43
@@ -69695,7 +69734,7 @@ cui	source\options\optfltr.src	0	string	RID_OFAPAGE_MSFILTEROPT2	ST_HEADER2			24
 cui	source\options\optfltr.src	0	fixedtext	RID_OFAPAGE_MSFILTEROPT2	FT_HEADER1_EXPLANATION			248	is	[L]: Hlaða inn og umbreyta hlutnum				20181231 09:50:43
 cui	source\options\optfltr.src	0	fixedtext	RID_OFAPAGE_MSFILTEROPT2	FT_HEADER2_EXPLANATION			248	is	[S]: Umbreyta og vista hlutinn				20181231 09:50:43
 cui	source\options\optfltr.src	0	string	RID_OFAPAGE_MSFILTEROPT2	ST_CHG_MATH			248	is	MathType til %PRODUCTNAME Math eða öfugt				20181231 09:50:43
-cui	source\options\optfltr.src	0	string	RID_OFAPAGE_MSFILTEROPT2	ST_CHG_WRITER			248	is	Word to %PRODUCTNAME Writer or reverse				20181231 09:50:43
+cui	source\options\optfltr.src	0	string	RID_OFAPAGE_MSFILTEROPT2	ST_CHG_WRITER			248	is	Word til %PRODUCTNAME Writer eða öfugt				20181231 09:50:43
 cui	source\options\optfltr.src	0	string	RID_OFAPAGE_MSFILTEROPT2	ST_CHG_CALC			248	is	Excel til %PRODUCTNAME Calc eða öfugt				20181231 09:50:43
 cui	source\options\optfltr.src	0	string	RID_OFAPAGE_MSFILTEROPT2	ST_CHG_IMPRESS			248	is	PowerPoint til %PRODUCTNAME Impress eða öfugt				20181231 09:50:43
 cui	source\options\optaccessibility.src	0	fixedline	RID_SVXPAGE_ACCESSIBILITYCONFIG	FL_MISCELLANEOUS			0	is	Ýmsir valkostir				20181231 09:50:43
@@ -70760,9 +70799,9 @@ cui	source\tabpages\page.src	0	itemlist	RID_SVXSTRARY_PAPERSIZE_DRAW	24			0	is	C
 cui	source\tabpages\page.src	0	itemlist	RID_SVXSTRARY_PAPERSIZE_DRAW	25			0	is	C5 umslag				20181231 09:50:43
 cui	source\tabpages\page.src	0	itemlist	RID_SVXSTRARY_PAPERSIZE_DRAW	26			0	is	C4 umslag				20181231 09:50:43
 cui	source\tabpages\page.src	0	itemlist	RID_SVXSTRARY_PAPERSIZE_DRAW	27			0	is	Litskyggna				20181231 09:50:43
-cui	source\tabpages\page.src	0	itemlist	RID_SVXSTRARY_PAPERSIZE_DRAW	28			0	is	Screen (4:3)				20181231 09:50:43
-cui	source\tabpages\page.src	0	itemlist	RID_SVXSTRARY_PAPERSIZE_DRAW	29			0	is	Screen (16:9)				20181231 09:50:43
-cui	source\tabpages\page.src	0	itemlist	RID_SVXSTRARY_PAPERSIZE_DRAW	30			0	is	Screen (16:10)				20181231 09:50:43
+cui	source\tabpages\page.src	0	itemlist	RID_SVXSTRARY_PAPERSIZE_DRAW	28			0	is	Skjár (4:3)				20181231 09:50:43
+cui	source\tabpages\page.src	0	itemlist	RID_SVXSTRARY_PAPERSIZE_DRAW	29			0	is	Skjár (16:9)				20181231 09:50:43
+cui	source\tabpages\page.src	0	itemlist	RID_SVXSTRARY_PAPERSIZE_DRAW	30			0	is	Skjár (16:10)				20181231 09:50:43
 cui	source\tabpages\paragrph.src	0	fixedtext	RID_SVXPAGE_STD_PARAGRAPH	FT_LEFTINDENT			120	is	Á undan texta				20181231 09:50:43
 cui	source\tabpages\paragrph.src	0	fixedtext	RID_SVXPAGE_STD_PARAGRAPH	FT_RIGHTINDENT			120	is	Á eftir texta				20181231 09:50:43
 cui	source\tabpages\paragrph.src	0	fixedtext	RID_SVXPAGE_STD_PARAGRAPH	FT_FLINEINDENT			120	is	~Fyrsta lína				20181231 09:50:43
@@ -71149,7 +71188,7 @@ cui	source\tabpages\autocdlg.src	0	string	RID_OFAPAGE_AUTOCORR_EXCEPT	STR_PB_SGL
 cui	source\tabpages\autocdlg.src	0	string	RID_OFAPAGE_AUTOCORR_EXCEPT	STR_PB_DBL_END			111	is	Endagæsalöpp fyrir tvöfaldar gæsalappir				20181231 09:50:43
 cui	source\tabpages\autocdlg.src	0	string	RID_OFAPAGE_AUTOCORR_QUOTE	STR_HEADER1			252	is	[M]				20181231 09:50:43
 cui	source\tabpages\autocdlg.src	0	string	RID_OFAPAGE_AUTOCORR_QUOTE	STR_HEADER2			252	is	[T]				20181231 09:50:43
-cui	source\tabpages\autocdlg.src	0	string	RID_OFAPAGE_AUTOCORR_QUOTE	ST_NON_BREAK_SPACE			252	is	Add non breaking space before specific punctuation marks in French text				20181231 09:50:43
+cui	source\tabpages\autocdlg.src	0	string	RID_OFAPAGE_AUTOCORR_QUOTE	ST_NON_BREAK_SPACE			252	is	Bæta við órjúfanlegu bili fyrir framan sérstök greinarmerki í frönskum texta				20181231 09:50:43
 cui	source\tabpages\autocdlg.src	0	string	RID_OFAPAGE_AUTOCORR_QUOTE	ST_ORDINAL			252	is	Sníða til endingar á raðtölum (1st -> 1^st)				20181231 09:50:43
 cui	source\tabpages\autocdlg.src	0	fixedline	RID_OFAPAGE_AUTOCORR_QUOTE	FL_SINGLE			122	is	Einfaldar gæsalappir				20181231 09:50:43
 cui	source\tabpages\autocdlg.src	0	checkbox	RID_OFAPAGE_AUTOCORR_QUOTE	CB_SGL_TYPO			86	is	~Skipta út				20181231 09:50:43
@@ -71931,6 +71970,15 @@ dbaccess	source\ui\browser\sbabrw.src	0	string	STR_LOADING_TABLE				0	is	Hleð i
 dbaccess	source\ui\browser\sbabrw.src	0	string	STR_NO_TABLE_FORMAT_INSIDE				0	is	Engin töflusnið fundust.				20181231 09:50:43
 dbaccess	source\ui\browser\sbabrw.src	0	string	STR_COULDNOTCONNECT_DATASOURCE				0	is	Tókst ekki að tengjast við "$name$" gagnagjafann.				20181231 09:50:43
 dbaccess	source\ui\browser\sbabrw.src	0	menuitem	RID_MENU_REFRESH_DATA	ID_BROWSER_REFRESH_REBUILD			0	is	Endurbyggja				20181231 09:50:43
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_TITLE_CONFIRM_DELETION			0	is	Staðfesta eyðingu				20181231 09:50:43
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_QUERY_DELETE_TABLE			0	is	Viltu eyða töflunni '%1'?				20181231 09:50:43
+dbaccess	source\ui\browser\sbabrw.src	0	querybox	MENU_BROWSER_DEFAULTCONTEXT	QUERY_BRW_DELETE_QUERY_CONFIRM			0	is	Fyrirspurnin er þegar til. Viltu eyða henni?				20181231 09:50:43
+dbaccess	source\ui\browser\sbabrw.src	0	querybox	MENU_BROWSER_DEFAULTCONTEXT	QUERY_CONNECTION_LOST			0	is	Tengingin við gagnagrunnin slitnaði. Viltu tengjast aftur?				20181231 09:50:43
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_OPENTABLES_WARNINGS			0	is	Viðvaranir komu upp				20181231 09:50:43
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_OPENTABLES_WARNINGS_DETAILS			0	is	Þegar náð var í tölurnar komu upp viðvaranir frá gagnagrunnstengingunni.				20181231 09:50:43
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_NO_TABLE_FORMAT_INSIDE			0	is	Engin töflusnið fundust.				20181231 09:50:43
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_COULDNOTCONNECT_DATASOURCE			0	is	Tókst ekki að tengjast við "$name$" gagnagjafann.				20181231 09:50:43
+dbaccess	source\ui\browser\sbabrw.src	0	menuitem	MENU_BROWSER_DEFAULTCONTEXT.RID_MENU_REFRESH_DATA	ID_BROWSER_REFRESH_REBUILD			0	is	Endurbyggja				20181231 09:50:43
 dbaccess	source\ui\uno\copytablewizard.src	0	string	STR_CTW_NO_VIEWS_SUPPORT				0	is	Viðtökugrunnur styður ekki sýnir.				20181231 09:50:43
 dbaccess	source\ui\uno\copytablewizard.src	0	string	STR_CTW_NO_PRIMARY_KEY_SUPPORT				0	is	Viðtökugrunnur styður ekki aðallykla.				20181231 09:50:43
 dbaccess	source\ui\uno\copytablewizard.src	0	string	STR_CTW_INVALID_DATA_ACCESS_DESCRIPTOR				0	is	fann ekki upplýsingar fyrir gögn, eða það fundust ekki nægjanlegar upplýsingar fyrir gögn				20181231 09:50:43
@@ -72298,10 +72346,10 @@ dbaccess	source\ui\dlg\UserAdmin.src	0	pushbutton	TAB_PAGE_USERADMIN	PB_DELETEUS
 dbaccess	source\ui\dlg\UserAdmin.src	0	fixedline	TAB_PAGE_USERADMIN	FL_TABLE_GRANTS			0	is	Aðgangsheimildir fyrir valinn notanda				20181231 09:50:43
 dbaccess	source\ui\dlg\UserAdmin.src	0	querybox	QUERY_USERADMIN_DELETE_USER				0	is	Viltu örugglega eyða notandanum?				20181231 09:50:43
 dbaccess	source\ui\dlg\UserAdmin.src	0	string	STR_USERADMIN_NOT_AVAILABLE				0	is	Gagnagrunnurinn styður ekki notendastjórnun.				20181231 09:50:43
-dbaccess	source\ui\dlg\UserAdmin.src	0	fixedline	DLG_PASSWORD	FL_USER			0	is	User "$name$: $"				20181231 09:50:43
+dbaccess	source\ui\dlg\UserAdmin.src	0	fixedline	DLG_PASSWORD	FL_USER			0	is	Notandi "$name$: $"				20181231 09:50:43
 dbaccess	source\ui\dlg\UserAdmin.src	0	fixedtext	DLG_PASSWORD	FT_OLDPASSWORD			0	is	~Gamalt aðgangsorð				20181231 09:50:43
 dbaccess	source\ui\dlg\UserAdmin.src	0	fixedtext	DLG_PASSWORD	FT_PASSWORD			0	is	~Lykilorð				20181231 09:50:43
-dbaccess	source\ui\dlg\UserAdmin.src	0	fixedtext	DLG_PASSWORD	FT_PASSWORD_REPEAT			0	is	~Confirm password				20181231 09:50:43
+dbaccess	source\ui\dlg\UserAdmin.src	0	fixedtext	DLG_PASSWORD	FT_PASSWORD_REPEAT			0	is	~Staðfesta lykilorð				20181231 09:50:43
 dbaccess	source\ui\dlg\UserAdmin.src	0	modaldialog	DLG_PASSWORD		HID_DLG_PASSWORD		0	is	Breyta lykilorði				20181231 09:50:43
 dbaccess	source\ui\dlg\UserAdmin.src	0	string	STR_ERROR_PASSWORDS_NOT_IDENTICAL				0	is	Lykilorðin stemma ekki. Settu þau aftur inn.				20181231 09:50:43
 dbaccess	source\ui\dlg\queryfilter.src	0	stringlist	DLG_FILTERCRIT.LB_WHERECOND2	1			0	is	OG				20181231 09:50:43
