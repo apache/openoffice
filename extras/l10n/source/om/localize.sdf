@@ -304,7 +304,7 @@ editeng	source\items\svxitems.src	0	string	RID_SVXITEMS_UL_DASHDOTDOT				0	om	Ja
 editeng	source\items\svxitems.src	0	string	RID_SVXITEMS_UL_SMALLWAVE				0	om	Jalmuruu (dambalii xiqqa)				20200411 15:09:53
 editeng	source\items\svxitems.src	0	string	RID_SVXITEMS_UL_WAVE				0	om	Jalmuruu (dambalii)				20200411 15:09:53
 editeng	source\items\svxitems.src	0	string	RID_SVXITEMS_UL_DOUBLEWAVE				0	om	Jalmuruu (dambalii dachaa)				20200411 15:09:53
-editeng	source\items\svxitems.src	0	string	RID_SVXITEMS_UL_BOLD				0	om	Halluu jalmuraa (Bold)				20200411 15:09:53
+editeng	source\items\svxitems.src	0	string	RID_SVXITEMS_UL_BOLD				0	om	Halluu jalamuraa				20200411 15:09:53
 editeng	source\items\svxitems.src	0	string	RID_SVXITEMS_UL_BOLDDOTTED				0	om	Tuqaa jalmuruu (Yabbuu)				20200411 15:09:53
 editeng	source\items\svxitems.src	0	string	RID_SVXITEMS_UL_BOLDDASH				0	om	Jalmuruu (Mursaa yabbuu)				20200411 15:09:53
 editeng	source\items\svxitems.src	0	string	RID_SVXITEMS_UL_BOLDLONGDASH				0	om	Jalmuruu (mursaa dheeraa, yabbuu)				20200411 15:09:53
@@ -562,7 +562,7 @@ uui	source\ids.src	0	string	RID_UUI_ERRHDL	(ERRCODE_UUI_IO_ABORT & ERRCODE_RES_M
 uui	source\ids.src	0	string	RID_UUI_ERRHDL	(ERRCODE_UUI_IO_ACCESSDENIED & ERRCODE_RES_MASK)			0	om	Gara $(ARG1) gahuun dhorkamaadha.				20200411 15:09:53
 uui	source\ids.src	0	string	RID_UUI_ERRHDL	(ERRCODE_UUI_IO_ALREADYEXISTS & ERRCODE_RES_MASK)			0	om	$(ARG1) durumayyuu jira.				20200411 15:09:53
 uui	source\ids.src	0	string	RID_UUI_ERRHDL	(ERRCODE_UUI_IO_TARGETALREADYEXISTS & ERRCODE_RES_MASK)			0	om	Galteen durumayyuu jira.				20200411 15:09:53
-uui	source\ids.src	0	string	RID_UUI_ERRHDL	(ERRCODE_UUI_IO_MODULESIZEEXCEEDED & ERRCODE_RES_MASK)			0	om	Galmee beezikii ittisaan hayyifame kan                            muraawwan \n$(ARG1)\nof keessaa qabu olkaa'uuf/alerguuf deemta. Muraawwan kanas dhangii lameetin olkaa'uuf baay'ee gurguddoo dha. Yoo fayyadamtootni ittisa hin qabne galmee kana keessaa maakiroowwan akka kaasan barbaadde muraawwan sana gara muraa xixinnoo hedduutti addabaasuu qabda. Mana galmee kana keesstti olkaa'uu/alerguu itti fufuu ni feetaa?				20200411 15:09:53
+uui	source\ids.src	0	string	RID_UUI_ERRHDL	(ERRCODE_UUI_IO_MODULESIZEEXCEEDED & ERRCODE_RES_MASK)			0	om	Galmee beezikii ittisaan hayyifame kan muraawwan \n$(ARG1)\nof keessaa qabu olkaa'uuf/alerguuf deemta. Muraawwan kanas dhangii lameetin olkaa'uuf baay'ee gurguddoo dha. Yoo fayyadamtootni ittisa hin qabne galmee kana keessaa maakiroowwan akka kaasan barbaadde muraawwan sana gara muraa xixinnoo hedduutti addabaasuu qabda. Mana galmee kana keesstti olkaa'uu/alerguu itti fufuu ni feetaa?				20200411 15:09:53
 uui	source\ids.src	0	string	RID_UUI_ERRHDL	(ERRCODE_UUI_IO_BADCRC & ERRCODE_RES_MASK)			0	om	Deetaan $(ARG1) irraaa ida'a mirkaneessaa dogoggoraa qaba.				20200411 15:09:53
 uui	source\ids.src	0	string	RID_UUI_ERRHDL	(ERRCODE_UUI_IO_CANTCREATE & ERRCODE_RES_MASK)			0	om	Wanti $(ARG1) galeeloo $(ARG2) keessatti uumamuu hin danda'u.				20200411 15:09:53
 uui	source\ids.src	0	string	RID_UUI_ERRHDL	(ERRCODE_UUI_IO_CANTREAD & ERRCODE_RES_MASK)			0	om	Deetaan $(ARG1) dubbifamuu hin danda'u.				20200411 15:09:53
@@ -571,7 +571,7 @@ uui	source\ids.src	0	string	RID_UUI_ERRHDL	(ERRCODE_UUI_IO_CANTTELL & ERRCODE_RE
 uui	source\ids.src	0	string	RID_UUI_ERRHDL	(ERRCODE_UUI_IO_CANTWRITE & ERRCODE_RES_MASK)			0	om	Deetaan $(ARG1) barreeffamuu hin danda'u.				20200411 15:09:53
 uui	source\ids.src	0	string	RID_UUI_ERRHDL	(ERRCODE_UUI_IO_CURRENTDIR & ERRCODE_RES_MASK)			0	om	Gocha hin danda'amne: $(ARG1) galeeloo ammeeti.				20200411 15:09:53
 uui	source\ids.src	0	string	RID_UUI_ERRHDL	(ERRCODE_UUI_IO_NOTREADY & ERRCODE_RES_MASK)			0	om	$(ARG1) qopha'aaa miti.				20200411 15:09:53
-uui	source\ids.src	0	string	RID_UUI_ERRHDL	(ERRCODE_UUI_IO_NOTSAMEDEVICE & ERRCODE_RES_MASK)			0	om	Gocha hin danda'amne: $(ARG1) fi $(ARG2) mi'oota garagaraati (drives).				20200411 15:09:53
+uui	source\ids.src	0	string	RID_UUI_ERRHDL	(ERRCODE_UUI_IO_NOTSAMEDEVICE & ERRCODE_RES_MASK)			0	om	Gocha hin danda'amne: $(ARG1) fi $(ARG2) mi'oota garagaraati.				20200411 15:09:53
 uui	source\ids.src	0	string	RID_UUI_ERRHDL	(ERRCODE_UUI_IO_GENERAL & ERRCODE_RES_MASK)			0	om	Dogongora sirnaa naqaa/bahaa yommuu gahiinsa $(ARG1).				20200411 15:09:53
 uui	source\ids.src	0	string	RID_UUI_ERRHDL	(ERRCODE_UUI_IO_INVALIDACCESS & ERRCODE_RES_MASK)			0	om	$(ARG1) gahuuf yaalii karaa maleetu taasifame.				20200411 15:09:53
 uui	source\ids.src	0	string	RID_UUI_ERRHDL	(ERRCODE_UUI_IO_INVALIDCHAR & ERRCODE_RES_MASK)			0	om	$(ARG1) arfiilee iddoo malee taa'an of keessaa qaba.				20200411 15:09:53
@@ -2139,7 +2139,7 @@ scp2	source\ooo\module_langpack.ulf	0	LngText	STR_NAME_MODULE_LANGPACK_DA				0	o
 scp2	source\ooo\module_langpack.ulf	0	LngText	STR_DESC_MODULE_LANGPACK_DA				0	om	%PRODUCTNAME %PRODUCTVERSION keessatti deeggarsa Afaan Deenimaarkii ijaara				20200411 15:09:53
 scp2	source\ooo\module_langpack.ulf	0	LngText	STR_NAME_MODULE_LANGPACK_FI				0	om	Afaan Fiinlandii				20200411 15:09:53
 scp2	source\ooo\module_langpack.ulf	0	LngText	STR_DESC_MODULE_LANGPACK_FI				0	om	%PRODUCTNAME %PRODUCTVERSION keessatti deeggarsa Afaan Fiinlandii ijaara				20200411 15:09:53
-scp2	source\ooo\module_langpack.ulf	0	LngText	STR_NAME_MODULE_LANGPACK_HE				0	om	Afaan Hiibiruu				20200411 15:09:53
+scp2	source\ooo\module_langpack.ulf	0	LngText	STR_NAME_MODULE_LANGPACK_HE				0	om	Afaan Ibiraayisixi (Ibiraayisixi)				20200411 15:09:53
 scp2	source\ooo\module_langpack.ulf	0	LngText	STR_DESC_MODULE_LANGPACK_HE				0	om	%PRODUCTNAME %PRODUCTVERSION keessatti deeggarsa Afaan Hiibiruu ijaara				20200411 15:09:53
 scp2	source\ooo\module_langpack.ulf	0	LngText	STR_NAME_MODULE_LANGPACK_IS				0	om	Afaan Aayislaandii				20200411 15:09:53
 scp2	source\ooo\module_langpack.ulf	0	LngText	STR_DESC_MODULE_LANGPACK_IS				0	om	%PRODUCTNAME %PRODUCTVERSION keessatti deeggarsa Afaan Aayislaandii ijaara				20200411 15:09:53
@@ -2266,7 +2266,7 @@ scp2	source\ooo\module_langpack.ulf	0	LngText	STR_DESC_MODULE_LANGPACK_AM				0	o
 scp2	source\ooo\module_langpack.ulf	0	LngText	STR_NAME_MODULE_LANGPACK_AST				0	om	Afaan Oostiriyaa				20200411 15:09:53
 scp2	source\ooo\module_langpack.ulf	0	LngText	STR_DESC_MODULE_LANGPACK_AST				0	om	%PRODUCTNAME %PRODUCTVERSION keessatti deeggarsa Afaan OOstiryaa ijaara				20200411 15:09:53
 scp2	source\ooo\module_langpack.ulf	0	LngText	STR_NAME_MODULE_LANGPACK_GD				0	om	Afaan Gaa'elii (Skootilaandi)				20200411 15:09:53
-scp2	source\ooo\module_langpack.ulf	0	LngText	STR_DESC_MODULE_LANGPACK_GD				0	om	%PRODUCTNAME %PRODUCTVERSION keessatti deeggarsa Afaan (Scotland) ijaara				20200411 15:09:53
+scp2	source\ooo\module_langpack.ulf	0	LngText	STR_DESC_MODULE_LANGPACK_GD				0	om	%PRODUCTNAME %PRODUCTVERSION keessatti deeggarsa Afaan Gaa'elii ijaara				20200411 15:09:53
 scp2	source\ooo\folderitem_ooo.ulf	0	LngText	STR_FI_NAME_FROMTEMPLATE				0	om	Qajojii Irraa				20200411 15:09:53
 scp2	source\ooo\folderitem_ooo.ulf	0	LngText	STR_FI_NAME_OPENDOCUMENT				0	om	Galmee Bani				20200411 15:09:53
 scp2	source\ooo\folderitem_ooo.ulf	0	LngText	STR_FI_TOOLTIP_SOFFICE				0	om	Gartuu sirna offisii gulantaa banaan walsimatee fi ODF fayyadamu. Barruun Faawundeeshiniin kan deeggaramu.				20200411 15:09:53
@@ -2388,7 +2388,7 @@ svx	inc\globlmn_tmpl.hrc	0	#define	ITEM_INSERT_HYPERLINK_INSERT			!defined _GLOB
 svx	inc\globlmn_tmpl.hrc	0	#define	ITEM_INSERT_INSERT_GRAPHIC			!defined _GLOBLMN_HRC	0	om	Saxaatoo...				20200411 15:09:53
 svx	inc\globlmn_tmpl.hrc	0	menuitem	ITEM_INSERT_TWAIN_SELECT	SID_TWAIN_SELECT		!defined _GLOBLMN_HRC	0	om	Madda Fili...				20200411 15:09:53
 svx	inc\globlmn_tmpl.hrc	0	menuitem	ITEM_INSERT_TWAIN_TRANSFER	SID_TWAIN_TRANSFER		!defined _GLOBLMN_HRC	0	om	Gaafadhu...				20200411 15:09:53
-svx	inc\globlmn_tmpl.hrc	0	menuitem	ITEM_INSERT_TWAIN_MENU	SID_SCAN		!defined _GLOBLMN_HRC	0	om	Kaastu				20200411 15:09:53
+svx	inc\globlmn_tmpl.hrc	0	menuitem	ITEM_INSERT_TWAIN_MENU	SID_SCAN		!defined _GLOBLMN_HRC	0	om	Ciminaan barbaadi(Ilaali)				20200411 15:09:53
 svx	inc\globlmn_tmpl.hrc	0	#define	ITEM_INSERT_INSERT_DIAGRAM			!defined _GLOBLMN_HRC	0	om	Taattoo...				20200411 15:09:53
 svx	inc\globlmn_tmpl.hrc	0	#define	ITEM_INSERT_GALLERY			!defined _GLOBLMN_HRC	0	om	Kuusaa faayaa				20200411 15:09:53
 svx	inc\globlmn_tmpl.hrc	0	#define	ITEM_INSERT_INSERTDOC			!defined _GLOBLMN_HRC	0	om	Faayilii...				20200411 15:09:53
@@ -2608,7 +2608,7 @@ svx	source\dialog\docrecovery.src	0	fixedtext	RID_SVX_MDLG_DOCRECOVERY_BROKEN	FT
 svx	source\dialog\docrecovery.src	0	fixedtext	RID_SVX_MDLG_DOCRECOVERY_BROKEN	FT_BROKEN_FILELIST			0	om	Galmeewwan				20200411 15:09:53
 svx	source\dialog\docrecovery.src	0	fixedtext	RID_SVX_MDLG_DOCRECOVERY_BROKEN	FT_BROKEN_SAVEDIR			0	om	Kanatti olkaa'i				20200411 15:09:53
 svx	source\dialog\docrecovery.src	0	pushbutton	RID_SVX_MDLG_DOCRECOVERY_BROKEN	BTN_BROKEN_SAVEDIR			0	om	Jijjiiri...				20200411 15:09:53
-svx	source\dialog\docrecovery.src	0	okbutton	RID_SVX_MDLG_DOCRECOVERY_BROKEN	BTN_BROKEN_OK			0	om	~Olkaa'i				20200411 15:09:53
+svx	source\dialog\docrecovery.src	0	okbutton	RID_SVX_MDLG_DOCRECOVERY_BROKEN	BTN_BROKEN_OK			0	om	 Olkaa'i				20200411 15:09:53
 svx	source\dialog\docrecovery.src	0	fixedtext	RID_SVXPAGE_ERR_REP_WELCOME	FT_RECOV_TITLE			0	om	Baga Gabaasa Dogoggoraa %PRODUCTNAME %PRODUCTVERSION tti nagaan dhufte				20200411 15:09:53
 svx	source\dialog\docrecovery.src	0	fixedtext	RID_SVXPAGE_ERR_REP_WELCOME	FT_RECOV_DESCR			0	om	Meeshaan gabaasa doggogoraa kun odeeffannoo waa'ee %PRODUCTNAME akkamitti akka hojjatuu fi fooyya'oota fuulduraa fooyyessuuf akka gargaaru akkamitti akka Sun Microsystemsitti ergu walitti sassaaba.\n\nSalphaadha - carraaqa gama keetii dabalataa malee qaaqa ittaanurratti 'Ergi' cuqaasuun gabaasa ergi, ykn dogoggorrichi akkamitti akka uumame gabaabumatti ibsuudhaan 'Ergi' cuqaasi. Gabaasicha yoo ilaaluu barbaadde, qabduu 'Gabaasa Agarsiisi' cuqaasi. 'Hin Ergin' yoo cuqaaste deetaa homtuu hin ergamu.\n\nMateenga Maamilaa\nOdeeffannoon sassaabame deetaa haala %PRODUCTNAME %PRODUCTVERSION yammuu dogoggorri uumameetti daangeeffama. Odeeffannoon biroo waa'ee iggitootaa fi qabeentoota galmee hin sassaabamu.\n\nOdeeffannoon kun qulqullina %PRODUCTNAME fooyyessuuf qofa waan fayyaduuf qaama sadaffaadhaaf hin qoodamu.\nOdeeffannoo dabalataa poolisii matayyaa Sun Microsystemsiitiif, saphaphuu kana ilaali\nhttp://www.openoffice.org/privacy.html				20200411 15:09:53
 svx	source\dialog\docrecovery.src	0	pushbutton	RID_SVXPAGE_ERR_REP_WELCOME	BTN_RECOV_PREV			0	om	< Duubatti				20200411 15:09:53
@@ -2618,7 +2618,7 @@ svx	source\dialog\docrecovery.src	0	fixedtext	RID_SVXPAGE_ERR_REP_SEND	FT_RECOV_
 svx	source\dialog\docrecovery.src	0	fixedtext	RID_SVXPAGE_ERR_REP_SEND	FT_ERRSEND_DOCTYPE			0	om	Yammuu dogoggorri umame akaakuu galmee kam (fkn dhiheessa) fayyadamaa turte?				20200411 15:09:53
 svx	source\dialog\docrecovery.src	0	fixedtext	RID_SVXPAGE_ERR_REP_SEND	FT_ERRSEND_USING			0	om	Yammuu dogoggorri umame %PRODUCTNAME akkamitti fayyadamaa turte? (dirqalee)				20200411 15:09:53
 svx	source\dialog\docrecovery.src	0	pushbutton	RID_SVXPAGE_ERR_REP_SEND	BTN_ERRSEND_SHOWREP			0	om	Gabaasa Mul'isi				20200411 15:09:53
-svx	source\dialog\docrecovery.src	0	pushbutton	RID_SVXPAGE_ERR_REP_SEND	BTN_ERRSEND_OPT			0	om	~Dirqala...				20200411 15:09:53
+svx	source\dialog\docrecovery.src	0	pushbutton	RID_SVXPAGE_ERR_REP_SEND	BTN_ERRSEND_OPT			0	om	 Dirqala...				20200411 15:09:53
 svx	source\dialog\docrecovery.src	0	checkbox	RID_SVXPAGE_ERR_REP_SEND	CB_ERRSEND_CONTACT			0	om	~I allow Apache OpenOffice to contact me regarding this report.				20200411 15:09:53
 svx	source\dialog\docrecovery.src	0	fixedtext	RID_SVXPAGE_ERR_REP_SEND	FT_ERRSEND_EMAILADDR			0	om	Mee teessoo ergaa-e kee galchi				20200411 15:09:53
 svx	source\dialog\docrecovery.src	0	pushbutton	RID_SVXPAGE_ERR_REP_SEND	BTN_RECOV_PREV			0	om	< Duubatti				20200411 15:09:53
@@ -2711,7 +2711,7 @@ svx	source\dialog\optgrid.src	0	checkbox	RID_SVXPAGE_GRID	CBX_SNAP_BORDER			106	
 svx	source\dialog\optgrid.src	0	checkbox	RID_SVXPAGE_GRID	CBX_SNAP_FRAME			106	om	Gara goodayyaa waantaatti				20200411 15:09:53
 svx	source\dialog\optgrid.src	0	checkbox	RID_SVXPAGE_GRID	CBX_SNAP_POINTS			106	om	Gara tuqaalee waantaatti				20200411 15:09:53
 svx	source\dialog\optgrid.src	0	fixedtext	RID_SVXPAGE_GRID	FT_SNAP_AREA			69	om	~Daangaa ariitii				20200411 15:09:53
-svx	source\dialog\optgrid.src	0	metricfield	RID_SVXPAGE_GRID	MTR_FLD_SNAP_AREA			35	om	 Piksilii				20200411 15:09:53
+svx	source\dialog\optgrid.src	0	metricfield	RID_SVXPAGE_GRID	MTR_FLD_SNAP_AREA			35	om	Piksilii				20200411 15:09:53
 svx	source\dialog\optgrid.src	0	fixedline	RID_SVXPAGE_GRID	GRP_ORTHO			124	om	Qubannoo ariitii				20200411 15:09:53
 svx	source\dialog\optgrid.src	0	checkbox	RID_SVXPAGE_GRID	CBX_ORTHO			112	om	~Yeroo waantota uumuu yookiin deemsisuu				20200411 15:09:53
 svx	source\dialog\optgrid.src	0	checkbox	RID_SVXPAGE_GRID	CBX_BIGORTHO			112	om	~Rogawwan babal'isi				20200411 15:09:53
@@ -3691,7 +3691,7 @@ svx	source\engine3d\float3d.src	0	fixedline	RID_SVXFLOAT_3D	FL_GEOMETRIE			83	om
 svx	source\engine3d\float3d.src	0	fixedtext	RID_SVXFLOAT_3D	FT_PERCENT_DIAGONAL			0	om	Qarreewwan naannawoo				20200411 15:09:53
 svx	source\engine3d\float3d.src	0	fixedtext	RID_SVXFLOAT_3D	FT_BACKSCALE			0	om	Lixxaa madaalame				20200411 15:09:53
 svx	source\engine3d\float3d.src	0	fixedtext	RID_SVXFLOAT_3D	FT_END_ANGLE			0	om	Kofa Marsaa				20200411 15:09:53
-svx	source\engine3d\float3d.src	0	metricfield	RID_SVXFLOAT_3D	MTR_END_ANGLE			50	om	 digirii (lee)				20200411 15:09:53
+svx	source\engine3d\float3d.src	0	metricfield	RID_SVXFLOAT_3D	MTR_END_ANGLE			50	om	 digirii				20200411 15:09:53
 svx	source\engine3d\float3d.src	0	fixedtext	RID_SVXFLOAT_3D	FT_DEPTH			0	om	Liixxaa				20200411 15:09:53
 svx	source\engine3d\float3d.src	0	fixedline	RID_SVXFLOAT_3D	FL_SEGMENTS			50	om	Keeyatoota				20200411 15:09:53
 svx	source\engine3d\float3d.src	0	fixedtext	RID_SVXFLOAT_3D	FT_HORIZONTAL			40	om	Sardala				20200411 15:09:53
@@ -4543,6 +4543,24 @@ svx	source\form\fmexpl.src	0	menuitem	RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTT
 svx	source\form\fmexpl.src	0	groupbox	RID_SVXDLG_SETFORM	GB_PATH			188	om	Xurree				20200411 15:09:53
 svx	source\form\fmexpl.src	0	modaldialog	RID_SVXDLG_SETFORM				200	om	Unka fili				20200411 15:09:53
 svx	source\form\fmexpl.src	0	dockingwindow	RID_SVX_FMEXPLORER				200	om	Naanna'aa Unkaa				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_EDIT	CMD_SID_FM_CONVERTTO_EDIT		0	om	Sanduuqa Barruu				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_BUTTON	CMD_SID_FM_CONVERTTO_BUTTON		0	om	Qabduu				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_FIXEDTEXT	CMD_SID_FM_CONVERTTO_FIXEDTEXT		0	om	Dirree asxaa				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_GROUPBOX	CMD_SID_FM_CONVERTTO_GROUPBOX		0	om	Sanduuqa Gurmuu				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_LISTBOX	CMD_SID_FM_CONVERTTO_LISTBOX		0	om	Sanduuqa Tarree				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_CHECKBOX	CMD_SID_FM_CONVERTTO_CHECKBOX		0	om	Sanduuqa Filannoo				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_RADIOBUTTON	CMD_SID_FM_CONVERTTO_RADIOBUTTON		0	om	Qabduu Raadiyoo				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_COMBOBOX	CMD_SID_FM_CONVERTTO_COMBOBOX		0	om	Sanduuqa Komboo				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_IMAGEBUTTON	CMD_SID_FM_CONVERTTO_IMAGEBUTTON		0	om	Qabduu Fakkaattii				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_FILECONTROL	CMD_SID_FM_CONVERTTO_FILECONTROL		0	om	Filannoo Faayilii				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_DATE	CMD_SID_FM_CONVERTTO_DATE		0	om	Dirree Guyyaa				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_TIME	CMD_SID_FM_CONVERTTO_TIME		0	om	Dirree Sa'aatii				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_NUMERIC	CMD_SID_FM_CONVERTTO_NUMERIC		0	om	Dirree Lakkoofsaa				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_CURRENCY	CMD_SID_FM_CONVERTTO_CURRENCY		0	om	Dirree Maallaqaa				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_PATTERN	CMD_SID_FM_CONVERTTO_PATTERN		0	om	Dirree Sarxaa				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_IMAGECONTROL	CMD_SID_FM_CONVERTTO_IMAGECONTROL		0	om	Too'annaa Fakkaattii				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_FORMATTED	CMD_SID_FM_CONVERTTO_FORMATTED		0	om	Dirree Dhangeeffame				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_SCROLLBAR	CMD_SID_FM_CONVERTTO_SCROLLBAR		0	om	Kabala marfataa				20200411 15:09:53
 svx	source\form\filtnav.src	0	menuitem	RID_FM_FILTER_MENU	SID_FM_DELETE	HID_FM_DELETE		0	om	Haqi				20200411 15:09:53
 svx	source\form\filtnav.src	0	menuitem	RID_FM_FILTER_MENU	SID_FM_FILTER_EDIT	HID_FM_FILTER_EDIT		0	om	Gulaali				20200411 15:09:53
 svx	source\form\filtnav.src	0	menuitem	RID_FM_FILTER_MENU	SID_FM_FILTER_IS_NULL	HID_FM_FILTER_IS_NULL		0	om	Dhabilee Dha				20200411 15:09:53
@@ -5038,8 +5056,8 @@ xmlsecurity	source\dialogs\certificateviewer.src	0	string	RID_XMLSECTP_DETAILS	S
 xmlsecurity	source\dialogs\certificateviewer.src	0	string	RID_XMLSECTP_DETAILS	STR_SIGALGORITHM			0	om	Seermurtoo Mallattoo				20200411 15:09:53
 xmlsecurity	source\dialogs\certificateviewer.src	0	string	RID_XMLSECTP_DETAILS	STR_ISSUER			0	om	Kennaa				20200411 15:09:53
 xmlsecurity	source\dialogs\certificateviewer.src	0	string	RID_XMLSECTP_DETAILS	STR_ISSUER_ID			0	om	Addeessaa Addataa Kennaa				20200411 15:09:53
-xmlsecurity	source\dialogs\certificateviewer.src	0	string	RID_XMLSECTP_DETAILS	STR_VALIDFROM			0	om	Gataa'aa Irraa				20200411 15:09:53
-xmlsecurity	source\dialogs\certificateviewer.src	0	string	RID_XMLSECTP_DETAILS	STR_VALIDTO			0	om	Gataa'aa hanga				20200411 15:09:53
+xmlsecurity	source\dialogs\certificateviewer.src	0	string	RID_XMLSECTP_DETAILS	STR_VALIDFROM			0	om	Gataa'aa (Irraa)				20200411 15:09:53
+xmlsecurity	source\dialogs\certificateviewer.src	0	string	RID_XMLSECTP_DETAILS	STR_VALIDTO			0	om	Gataa'aa (hanga)				20200411 15:09:53
 xmlsecurity	source\dialogs\certificateviewer.src	0	string	RID_XMLSECTP_DETAILS	STR_SUBJECT			0	om	Dhimma				20200411 15:09:53
 xmlsecurity	source\dialogs\certificateviewer.src	0	string	RID_XMLSECTP_DETAILS	STR_SUBJECT_ID			0	om	Addeessaa Addataa Dhimmaa				20200411 15:09:53
 xmlsecurity	source\dialogs\certificateviewer.src	0	string	RID_XMLSECTP_DETAILS	STR_SUBJECT_PUBKEY_ALGO			0	om	Seermurtoo Dhimmaa				20200411 15:09:53
@@ -5077,7 +5095,7 @@ xmlsecurity	source\dialogs\digitalsignaturesdialog.src	0	okbutton	RID_XMLSECDLG_
 xmlsecurity	source\dialogs\digitalsignaturesdialog.src	0	modaldialog	RID_XMLSECDLG_DIGSIG		HID_XMLSEC_DLG_DIGSIG		249	om	Mallattoolee Dijitaalii				20200411 15:09:53
 xmlsecurity	source\dialogs\digitalsignaturesdialog.src	0	errorbox	RID_XMLSECDLG_OLD_ODF_FORMAT				249	om	Galmeen kun mallattoolee dhangii akka ODF 1.1 of keessaa qaba. Galmee akka %PRODUCTNAME %PRODUCTVERSION mallatteessuuf dhangii ODF 1.2 barbaada. Kanaafuu galmee kanatti mallattoo kamiyyuu dabaluus ta'ee irraa haquun hin danda'amu.\n\nGalmee kana dhangii ODF 1.2 olkaa'itii mallattoolee barbaadaman mara itti dabali.				20200411 15:09:53
 xmlsecurity	source\dialogs\digitalsignaturesdialog.src	0	querybox	MSG_XMLSECDLG_QUERY_REMOVEDOCSIGNBEFORESIGN				249	om	Mallattoo maakiroo dabaluun ykn haquun mallattoolee galmee dura jiran mara balleessa.\nDhuguma ittifufuu feetaa?				20200411 15:09:53
-mysqlc	source\registry\data\org\openoffice\Office\DataAccess\Drivers.xcu	0	value	.Drivers.Installed.sdbc:mysqlc:*	DriverTypeDisplayName			0	om	MySQL (Walitti hituu/OOo)				20200411 15:09:53
+mysqlc	source\registry\data\org\openoffice\Office\DataAccess\Drivers.xcu	0	value	.Drivers.Installed.sdbc:mysqlc:*	DriverTypeDisplayName			0	om	MySQL Walitti hituu				20200411 15:09:53
 sw	source\ui\ribbar\workctrl.src	0	menuitem	RID_INSERT_FIELD_CTRL	FN_INSERT_FLD_DATE	CMD_FN_INSERT_FLD_DATE		0	om	Guyyaa				20200411 15:09:53
 sw	source\ui\ribbar\workctrl.src	0	menuitem	RID_INSERT_FIELD_CTRL	FN_INSERT_FLD_TIME	CMD_FN_INSERT_FLD_TIME		0	om	Sa'aatii				20200411 15:09:53
 sw	source\ui\ribbar\workctrl.src	0	menuitem	RID_INSERT_FIELD_CTRL	FN_INSERT_FLD_PGNUMBER	CMD_FN_INSERT_FLD_PGNUMBER		0	om	Lakkoofsa Fuulaa				20200411 15:09:53
@@ -5276,7 +5294,7 @@ sw	source\ui\misc\srtdlg.src	0	fixedline	DLG_SORTING	FL_SORT_2			200	om	Ulaagaa 
 sw	source\ui\misc\srtdlg.src	0	radiobutton	DLG_SORTING	RB_COL			38	om	Tarjaalee				20200411 15:09:53
 sw	source\ui\misc\srtdlg.src	0	radiobutton	DLG_SORTING	RB_ROW			34	om	Tarreewwan				20200411 15:09:53
 sw	source\ui\misc\srtdlg.src	0	fixedline	DLG_SORTING	FL_DIR			95	om	Kallattii				20200411 15:09:53
-sw	source\ui\misc\srtdlg.src	0	radiobutton	DLG_SORTING	RB_TAB			44	om	~Caancaloota				20200411 15:09:53
+sw	source\ui\misc\srtdlg.src	0	radiobutton	DLG_SORTING	RB_TAB			44	om	 Caancaloota				20200411 15:09:53
 sw	source\ui\misc\srtdlg.src	0	radiobutton	DLG_SORTING	RB_TABCH			38	om	Arfii				20200411 15:09:53
 sw	source\ui\misc\srtdlg.src	0	fixedline	DLG_SORTING	FL_DELIM			99	om	Foo'aa				20200411 15:09:53
 sw	source\ui\misc\srtdlg.src	0	string	DLG_SORTING	STR_ROW			99	om	Tarreewwan				20200411 15:09:53
@@ -5992,7 +6010,7 @@ sw	source\ui\frmdlg\frmui.src	0	string	STR_CHAR_BOTTOM				0	om	Jala arfii				202
 sw	source\ui\frmdlg\frmui.src	0	string	STR_CHAR_CENTER				0	om	Wiirtuu arfii 				20200411 15:09:53
 sw	source\ui\frmdlg\frmui.src	0	string	STR_OLE_INSERT				0	om	Wanta saagi				20200411 15:09:53
 sw	source\ui\frmdlg\frmui.src	0	string	STR_OLE_EDIT				0	om	Wanata gulaali				20200411 15:09:53
-sw	source\ui\frmdlg\frmui.src	0	string	STR_COLL_HEADER				0	om	 (Qajojii: 				20200411 15:09:53
+sw	source\ui\frmdlg\frmui.src	0	string	STR_COLL_HEADER				0	om	(Qajojii: 				20200411 15:09:53
 sw	source\ui\frmdlg\frmui.src	0	string	STR_FRMUI_BORDER				0	om	Handaarota				20200411 15:09:53
 sw	source\ui\frmdlg\frmui.src	0	string	STR_FRMUI_PATTERN				0	om	Duubee				20200411 15:09:53
 sw	source\ui\frmdlg\frmui.src	0	string	STR_FRMUI_WRAP				0	om	Mari				20200411 15:09:53
@@ -6392,7 +6410,7 @@ sw	source\ui\fldui\fldui.src	0	string	STR_DOCINFOFLD				0	om	Odeeffannoo Galmee	
 sw	source\ui\fldui\fldui.src	0	string	FLD_DATE_STD				0	om	Guyyaa				20200411 15:09:53
 sw	source\ui\fldui\fldui.src	0	string	FLD_DATE_FIX				0	om	Guyyaa (dhaabbii)				20200411 15:09:53
 sw	source\ui\fldui\fldui.src	0	string	FLD_TIME_STD				0	om	Sa'aatii				20200411 15:09:53
-sw	source\ui\fldui\fldui.src	0	string	FLD_TIME_FIX				0	om	Sa'aatii (fixed)				20200411 15:09:53
+sw	source\ui\fldui\fldui.src	0	string	FLD_TIME_FIX				0	om	Sa'aatii (dhaabbii				20200411 15:09:53
 sw	source\ui\fldui\fldui.src	0	string	FLD_STAT_TABLE				0	om	Gabateewwan				20200411 15:09:53
 sw	source\ui\fldui\fldui.src	0	string	FLD_STAT_CHAR				0	om	Arfiilee				20200411 15:09:53
 sw	source\ui\fldui\fldui.src	0	string	FLD_STAT_WORD				0	om	Jechoota				20200411 15:09:53
@@ -6946,25 +6964,25 @@ sw	source\ui\chrdlg\ccoll.src	0	itemlist	TP_CONDCOLL.STR_REGIONS	5			0	om	Miilja
 sw	source\ui\chrdlg\ccoll.src	0	itemlist	TP_CONDCOLL.STR_REGIONS	6			0	om	Ibsa Dabalataa				20200411 15:09:53
 sw	source\ui\chrdlg\ccoll.src	0	itemlist	TP_CONDCOLL.STR_REGIONS	7			0	om	Irraantoo				20200411 15:09:53
 sw	source\ui\chrdlg\ccoll.src	0	itemlist	TP_CONDCOLL.STR_REGIONS	8			0	om	Jalaantoo				20200411 15:09:53
-sw	source\ui\chrdlg\ccoll.src	0	itemlist	TP_CONDCOLL.STR_REGIONS	9			0	om	 Sadarkaa Toorii 1ffaa				20200411 15:09:53
-sw	source\ui\chrdlg\ccoll.src	0	itemlist	TP_CONDCOLL.STR_REGIONS	10			0	om	 Sadarkaa Toorii 2ffaa				20200411 15:09:53
-sw	source\ui\chrdlg\ccoll.src	0	itemlist	TP_CONDCOLL.STR_REGIONS	11			0	om	 Sadarkaa Toorii 3ffaa				20200411 15:09:53
-sw	source\ui\chrdlg\ccoll.src	0	itemlist	TP_CONDCOLL.STR_REGIONS	12			0	om	 Sadarkaa Toorii 4ffaa				20200411 15:09:53
-sw	source\ui\chrdlg\ccoll.src	0	itemlist	TP_CONDCOLL.STR_REGIONS	13			0	om	 Sadarkaa Toorii 5ffaa				20200411 15:09:53
-sw	source\ui\chrdlg\ccoll.src	0	itemlist	TP_CONDCOLL.STR_REGIONS	14			0	om	 Sadarkaa Toorii 6ffaa				20200411 15:09:53
-sw	source\ui\chrdlg\ccoll.src	0	itemlist	TP_CONDCOLL.STR_REGIONS	15			0	om	 Sadarkaa Toorii 7ffaa				20200411 15:09:53
-sw	source\ui\chrdlg\ccoll.src	0	itemlist	TP_CONDCOLL.STR_REGIONS	16			0	om	 Sadarkaa Toorii 8ffaa				20200411 15:09:53
-sw	source\ui\chrdlg\ccoll.src	0	itemlist	TP_CONDCOLL.STR_REGIONS	17			0	om	 Sadarkaa Toorii 9ffaa				20200411 15:09:53
+sw	source\ui\chrdlg\ccoll.src	0	itemlist	TP_CONDCOLL.STR_REGIONS	9			0	om	Sadarkaa Toorii  1ffaa				20200411 15:09:53
+sw	source\ui\chrdlg\ccoll.src	0	itemlist	TP_CONDCOLL.STR_REGIONS	10			0	om	Sadarkaa Toorii  2ffaa				20200411 15:09:53
+sw	source\ui\chrdlg\ccoll.src	0	itemlist	TP_CONDCOLL.STR_REGIONS	11			0	om	Sadarkaa Toorii  3ffaa				20200411 15:09:53
+sw	source\ui\chrdlg\ccoll.src	0	itemlist	TP_CONDCOLL.STR_REGIONS	12			0	om	Sadarkaa Toorii  4ffaa				20200411 15:09:53
+sw	source\ui\chrdlg\ccoll.src	0	itemlist	TP_CONDCOLL.STR_REGIONS	13			0	om	Sadarkaa Toorii 5ffaa				20200411 15:09:53
+sw	source\ui\chrdlg\ccoll.src	0	itemlist	TP_CONDCOLL.STR_REGIONS	14			0	om	Sadarkaa Toorii  6ffaa				20200411 15:09:53
+sw	source\ui\chrdlg\ccoll.src	0	itemlist	TP_CONDCOLL.STR_REGIONS	15			0	om	Sadarkaa Toorii  7ffaa				20200411 15:09:53
+sw	source\ui\chrdlg\ccoll.src	0	itemlist	TP_CONDCOLL.STR_REGIONS	16			0	om	Sadarkaa Toorii  8ffaa				20200411 15:09:53
+sw	source\ui\chrdlg\ccoll.src	0	itemlist	TP_CONDCOLL.STR_REGIONS	17			0	om	Sadarkaa Toorii  9ffaa				20200411 15:09:53
 sw	source\ui\chrdlg\ccoll.src	0	itemlist	TP_CONDCOLL.STR_REGIONS	18			0	om	Sadarkaa Toorii 10ffaa				20200411 15:09:53
-sw	source\ui\chrdlg\ccoll.src	0	itemlist	TP_CONDCOLL.STR_REGIONS	19			0	om	 Sadarkaa Lakkaawwii 1ffaa				20200411 15:09:53
-sw	source\ui\chrdlg\ccoll.src	0	itemlist	TP_CONDCOLL.STR_REGIONS	20			0	om	 Sadarkaa Lakkaawwii 2ffaa				20200411 15:09:53
-sw	source\ui\chrdlg\ccoll.src	0	itemlist	TP_CONDCOLL.STR_REGIONS	21			0	om	 Sadarkaa Lakkaawwii 3ffaa				20200411 15:09:53
-sw	source\ui\chrdlg\ccoll.src	0	itemlist	TP_CONDCOLL.STR_REGIONS	22			0	om	 Sadarkaa Lakkaawwii 4ffaa				20200411 15:09:53
-sw	source\ui\chrdlg\ccoll.src	0	itemlist	TP_CONDCOLL.STR_REGIONS	23			0	om	 Sadarkaa Lakkaawwii 5ffaa				20200411 15:09:53
-sw	source\ui\chrdlg\ccoll.src	0	itemlist	TP_CONDCOLL.STR_REGIONS	24			0	om	 Sadarkaa Lakkaawwii 6ffaa				20200411 15:09:53
-sw	source\ui\chrdlg\ccoll.src	0	itemlist	TP_CONDCOLL.STR_REGIONS	25			0	om	 Sadarkaa Lakkaawwii 7ffaa				20200411 15:09:53
-sw	source\ui\chrdlg\ccoll.src	0	itemlist	TP_CONDCOLL.STR_REGIONS	26			0	om	 Sadarkaa Lakkaawwii 8ffaa				20200411 15:09:53
-sw	source\ui\chrdlg\ccoll.src	0	itemlist	TP_CONDCOLL.STR_REGIONS	27			0	om	 Sadarkaa Lakkaawwii 9ffaa				20200411 15:09:53
+sw	source\ui\chrdlg\ccoll.src	0	itemlist	TP_CONDCOLL.STR_REGIONS	19			0	om	Sadarkaa Lakkaawwii  1ffaa				20200411 15:09:53
+sw	source\ui\chrdlg\ccoll.src	0	itemlist	TP_CONDCOLL.STR_REGIONS	20			0	om	Sadarkaa Lakkaawwii  2ffaa				20200411 15:09:53
+sw	source\ui\chrdlg\ccoll.src	0	itemlist	TP_CONDCOLL.STR_REGIONS	21			0	om	Sadarkaa Lakkaawwii  3ffaa				20200411 15:09:53
+sw	source\ui\chrdlg\ccoll.src	0	itemlist	TP_CONDCOLL.STR_REGIONS	22			0	om	Sadarkaa Lakkaawwii  4ffaa				20200411 15:09:53
+sw	source\ui\chrdlg\ccoll.src	0	itemlist	TP_CONDCOLL.STR_REGIONS	23			0	om	Sadarkaa Lakkaawwii  5ffaa				20200411 15:09:53
+sw	source\ui\chrdlg\ccoll.src	0	itemlist	TP_CONDCOLL.STR_REGIONS	24			0	om	Sadarkaa Lakkaawwii  6ffaa				20200411 15:09:53
+sw	source\ui\chrdlg\ccoll.src	0	itemlist	TP_CONDCOLL.STR_REGIONS	25			0	om	Sadarkaa Lakkaawwii  7ffaa				20200411 15:09:53
+sw	source\ui\chrdlg\ccoll.src	0	itemlist	TP_CONDCOLL.STR_REGIONS	26			0	om	Sadarkaa Lakkaawwii  8ffaa				20200411 15:09:53
+sw	source\ui\chrdlg\ccoll.src	0	itemlist	TP_CONDCOLL.STR_REGIONS	27			0	om	Sadarkaa Lakkaawwii  9ffaa				20200411 15:09:53
 sw	source\ui\chrdlg\ccoll.src	0	itemlist	TP_CONDCOLL.STR_REGIONS	28			0	om	Sadarkaa Lakkaawwii 10ffaa				20200411 15:09:53
 sw	source\ui\chrdlg\ccoll.src	0	string	TP_CONDCOLL	STR_NOTEMPL			50	om	<homaa>				20200411 15:09:53
 sw	source\ui\chrdlg\chrdlg.src	0	string	STR_TEXTCOLL_HEADER				0	om	 (Haalata Keewwataa: 				20200411 15:09:53
@@ -7012,7 +7030,7 @@ sw	source\ui\chrdlg\swbreak.src	0	radiobutton	DLG_BREAK	RB_COL			69	om	Qurxaa ta
 sw	source\ui\chrdlg\swbreak.src	0	fixedline	DLG_BREAK	FL_BREAK			93	om	Akaakuu				20200411 15:09:53
 sw	source\ui\chrdlg\swbreak.src	0	fixedtext	DLG_BREAK	FT_COLL			69	om	Haalata				20200411 15:09:53
 sw	source\ui\chrdlg\swbreak.src	0	stringlist	DLG_BREAK.LB_COLL	1			0	om	[Homaa]				20200411 15:09:53
-sw	source\ui\chrdlg\swbreak.src	0	checkbox	DLG_BREAK	CB_PAGENUM			84	om	Lakkoofsa fuulaa jijjiiri				20200411 15:09:53
+sw	source\ui\chrdlg\swbreak.src	0	checkbox	DLG_BREAK	CB_PAGENUM			84	om	 Lakkoofsa fuulaa jijjiiri				20200411 15:09:53
 sw	source\ui\chrdlg\swbreak.src	0	modaldialog	DLG_BREAK		CMD_FN_INSERT_BREAK_DLG		161	om	Qurxaa Saagi				20200411 15:09:53
 sw	source\ui\config\redlopt.src	0	fixedline	TP_REDLINE_OPT	FL_TE			248	om	Agarsiisa barruu				20200411 15:09:53
 sw	source\ui\config\redlopt.src	0	fixedtext	TP_REDLINE_OPT	FT_CHG_INSERT			70	om	Saagamtoota				20200411 15:09:53
@@ -7489,7 +7507,7 @@ sw	source\ui\utlui\initui.src	0	string	RID_SW_SHELLRES	STR_GETREFFLD_REFITEMNOTF
 sw	source\ui\utlui\initui.src	0	string	RID_SW_SHELLRES	STR_ALLPAGE_HEADFOOT			0	om	Mara				20200411 15:09:53
 sw	source\ui\utlui\initui.src	0	string	RID_SW_SHELLRES	STR_TEMPLATE_NONE			0	om	Homaa				20200411 15:09:53
 sw	source\ui\utlui\initui.src	0	string	RID_SW_SHELLRES	STR_FIELD_FIXED			0	om	(dhaabbii)				20200411 15:09:53
-sw	source\ui\utlui\initui.src	0	string	RID_SW_SHELLRES	STR_DURATION_FORMAT			0	om	 Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6				20200411 15:09:53
+sw	source\ui\utlui\initui.src	0	string	RID_SW_SHELLRES	STR_DURATION_FORMAT			0	om	Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6				20200411 15:09:53
 sw	source\ui\utlui\initui.src	0	string	RID_SW_SHELLRES	STR_TOI			0	om	Tarreefaama kasaa				20200411 15:09:53
 sw	source\ui\utlui\initui.src	0	string	RID_SW_SHELLRES	STR_TOU			0	om	Moggaasa-Fayyadamaa				20200411 15:09:53
 sw	source\ui\utlui\initui.src	0	string	RID_SW_SHELLRES	STR_TOC			0	om	Gabatee Qabeentaa				20200411 15:09:53
@@ -8085,7 +8103,7 @@ sw	source\ui\dbui\mmoutputpage.src	0	fixedtext	DLG_MM_COPYTO	FT_CC			30	om	Cc			
 sw	source\ui\dbui\mmoutputpage.src	0	fixedtext	DLG_MM_COPYTO	FT_BCC			30	om	Bcc				20200411 15:09:53
 sw	source\ui\dbui\mmoutputpage.src	0	fixedtext	DLG_MM_COPYTO	FI_NOTE			204	om	Yaadannoo:\nTeessoowwan eerga-e buufata xinnaa (;) dhan gargarbaasi.				20200411 15:09:53
 sw	source\ui\dbui\mmoutputpage.src	0	modaldialog	DLG_MM_COPYTO		HID_MM_COPYTO		250	om	Itti garagalcha				20200411 15:09:53
-sw	source\ui\dbui\mmoutputpage.src	0	fixedtext	DLG_MM_SAVEWARNING	FI_WARNING			150	om	Maqaa '%1' kanan galmeen duuran jiraa. Galmee kan maqaa biraattin olkaa'i.				20200411 15:09:53
+sw	source\ui\dbui\mmoutputpage.src	0	fixedtext	DLG_MM_SAVEWARNING	FI_WARNING			150	om	 '%1' Maqaa kanan galmeen duuran jiraa. Galmee kan maqaa biraattin olkaa'i.				20200411 15:09:53
 sw	source\ui\dbui\mmoutputpage.src	0	fixedtext	DLG_MM_SAVEWARNING	FT_FILENAME			154	om	Maqaa galmee haaraa				20200411 15:09:53
 sw	source\ui\dbui\mailmergewizard.src	0	string	DLG_MAILMERGEWIZARD	ST_STARTING			0	om	Galmee jalqabamee fili				20200411 15:09:53
 sw	source\ui\dbui\mailmergewizard.src	0	string	DLG_MAILMERGEWIZARD	ST_DOCUMETNTYPE			0	om	Akakuu galmee fili				20200411 15:09:53
@@ -8117,7 +8135,7 @@ sw	source\ui\dbui\mailmergechildwindow.src	0	string	ST_TASK				250	om	Hojii				2
 sw	source\ui\dbui\mailmergechildwindow.src	0	string	ST_STATUS				250	om	Haalojii				20200411 15:09:53
 sw	source\ui\dbui\mailmergechildwindow.src	0	string	ST_SENDINGTO				250	om	Gara %1: ergi jiraa				20200411 15:09:53
 sw	source\ui\dbui\mailmergechildwindow.src	0	string	ST_COMPLETED				250	om	Milkaawaan ergameraa				20200411 15:09:53
-sw	source\ui\dbui\mailmergechildwindow.src	0	string	ST_FAILED				250	om	Erguun dadhabbeera (invalid address)				20200411 15:09:53
+sw	source\ui\dbui\mailmergechildwindow.src	0	string	ST_FAILED				250	om	Erguun dadhabbeera				20200411 15:09:53
 sw	source\ui\dbui\mailmergechildwindow.src	0	string	ST_TERMINATEQUERY				250	om	amma'uu dhaamsi ergaan-e Kergaa kee %PRODUCTNAME keessa jiraa.\nBahu ni barbaada? 				20200411 15:09:53
 sw	source\ui\dbui\mailmergechildwindow.src	0	fixedtext	DLG_MM_SENDWARNING	FI_WARNING			170	om	Dogongorri armaan gadii uumameera:				20200411 15:09:53
 sw	source\ui\dbui\mailmergechildwindow.src	0	fixedtext	DLG_MM_SENDWARNING	FT_DETAILS			174	om	Odeeffannoo bal'ina				20200411 15:09:53
@@ -8421,8 +8439,8 @@ svl	source\misc\mediatyp.src	0	string	STR_SVT_MIMETYPE_CNT_FIX_VOL				0	om	Oofaa
 svl	source\misc\mediatyp.src	0	string	STR_SVT_MIMETYPE_CNT_REM_VOL				0	om	Walindhaa cimdaa				20200411 15:09:53
 svl	source\misc\mediatyp.src	0	string	STR_SVT_MIMETYPE_CNT_RAM_VOL				0	om	Geengoo RAM				20200411 15:09:53
 svl	source\misc\mediatyp.src	0	string	STR_SVT_MIMETYPE_CNT_CDROM				0	om	Oofaa CD-ROM				20200411 15:09:53
-svl	source\misc\mediatyp.src	0	string	STR_SVT_MIMETYPE_CNT_DISK_35				0	om	3.5 Oofaa				20200411 15:09:53
-svl	source\misc\mediatyp.src	0	string	STR_SVT_MIMETYPE_CNT_DISK_525				0	om	5.25 Geengoo				20200411 15:09:53
+svl	source\misc\mediatyp.src	0	string	STR_SVT_MIMETYPE_CNT_DISK_35				0	om	3.5" Oofaa				20200411 15:09:53
+svl	source\misc\mediatyp.src	0	string	STR_SVT_MIMETYPE_CNT_DISK_525				0	om	5.25" Geengoo				20200411 15:09:53
 svl	source\misc\mediatyp.src	0	string	STR_SVT_MIMETYPE_CNT_TAPEDRIVE				0	om	Geengoo maramaa				20200411 15:09:53
 svl	source\misc\mediatyp.src	0	string	STR_SVT_MIMETYPE_APP_GAL				0	om	Kuusaa Faayaa				20200411 15:09:53
 svl	source\misc\mediatyp.src	0	string	STR_SVT_MIMETYPE_APP_GAL_THEME				0	om	Miidhaksa Kuusa Faayaa				20200411 15:09:53
@@ -8865,7 +8883,7 @@ sc	source\ui\src\scfuncs.src	0	string	RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_N	
 sc	source\ui\src\scfuncs.src	0	string	RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_N	2			0	om	gatii				20200411 15:09:53
 sc	source\ui\src\scfuncs.src	0	string	RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_N	3			0	om	Gatii akka lakkoofsaatti fudhatamuu qabu.				20200411 15:09:53
 sc	source\ui\src\scfuncs.src	0	string	RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_NO_VALUE	1			0	om	Hin jiru. Gatii dogoggoraa #N/A kenna.				20200411 15:09:53
-sc	source\ui\src\scfuncs.src	0	string	RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TYPE	1			0	om	Akaakuu deetaa gatii murteessa (1 = number, 2 = text, 4 = Boolean value, 8 = formula, 16 = error value, 64 = array).				20200411 15:09:53
+sc	source\ui\src\scfuncs.src	0	string	RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TYPE	1			0	om	Akaakuu deetaa gatii murteessa.				20200411 15:09:53
 sc	source\ui\src\scfuncs.src	0	string	RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TYPE	2			0	om	gatii				20200411 15:09:53
 sc	source\ui\src\scfuncs.src	0	string	RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TYPE	3			0	om	Gatii akaakuun deetaa murtaa'uufii qabu.				20200411 15:09:53
 sc	source\ui\src\scfuncs.src	0	string	RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_CELL	1			0	om	Odeeffannoo waa'ee teessoo, dhangeessaa fi qabeentoota man'ee murteessa.				20200411 15:09:53
@@ -9743,7 +9761,7 @@ sc	source\ui\src\scfuncs.src	0	string	RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GE
 sc	source\ui\src\scfuncs.src	0	string	RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GET_PIVOT_DATA	5			0	om	Wabii man'ee ykn hangii gabatee qiinxaa keessaa.				20200411 15:09:53
 sc	source\ui\src\scfuncs.src	0	string	RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GET_PIVOT_DATA	6			0	om	Maqaa / Maalimaa Dirree				20200411 15:09:53
 sc	source\ui\src\scfuncs.src	0	string	RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GET_PIVOT_DATA	7			0	om	Cimdii maqaa/gatii dirree deetaa galtee gingilchuuf.				20200411 15:09:53
-sc	source\ui\src\scfuncs.src	0	string	RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BAHTTEXT	1			0	om	Lakkoofsa barruutti jijjiira (Baht).				20200411 15:09:53
+sc	source\ui\src\scfuncs.src	0	string	RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BAHTTEXT	1			0	om	Lakkoofsa barruutti jijjiira.				20200411 15:09:53
 sc	source\ui\src\scfuncs.src	0	string	RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BAHTTEXT	2			0	om	Lakkoofsa				20200411 15:09:53
 sc	source\ui\src\scfuncs.src	0	string	RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BAHTTEXT	3			0	om	Lakkoofsa jijjiiramu.				20200411 15:09:53
 sc	source\ui\src\scfuncs.src	0	string	RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_JIS	1			0	om	Arfiilee ASCII fi katakaanaa dalgee-walakkaa dalgee-guutuutti jijjiira.				20200411 15:09:53
@@ -10128,7 +10146,7 @@ sc	source\ui\src\globstr.src	0	string	RID_GLOBSTR	STR_MSSG_SOLVE_2			0	om	) man'
 sc	source\ui\src\globstr.src	0	string	RID_GLOBSTR	STR_MSSG_SOLVE_3			0	om	Barbaachi Galchii hinmilkoofne.\n				20200411 15:09:53
 sc	source\ui\src\globstr.src	0	string	RID_GLOBSTR	STR_MSSG_SOLVE_4			0	om	Gatii sirriin hinargamne. \n				20200411 15:09:53
 sc	source\ui\src\globstr.src	0	string	RID_GLOBSTR	STR_MSSG_SOLVE_5			0	om	Gatiin (				20200411 15:09:53
-sc	source\ui\src\globstr.src	0	string	RID_GLOBSTR	STR_MSSG_SOLVE_6			0	om	)?				20200411 15:09:53
+sc	source\ui\src\globstr.src	0	string	RID_GLOBSTR	STR_MSSG_SOLVE_6			0	om	)tti dhihaatu haa saagamuu?				20200411 15:09:53
 sc	source\ui\src\globstr.src	0	string	RID_GLOBSTR	STR_TABLE_GESAMTERGEBNIS			0	om	Ida'ama dimshaashaa				20200411 15:09:53
 sc	source\ui\src\globstr.src	0	string	RID_GLOBSTR	STR_TABLE_ERGEBNIS			0	om	Bu'aa				20200411 15:09:53
 sc	source\ui\src\globstr.src	0	string	RID_GLOBSTR	STR_UNDO_SPELLING			0	om	To'annaaqubeeffannoo				20200411 15:09:53
@@ -10258,7 +10276,7 @@ sc	source\ui\src\globstr.src	0	string	RID_GLOBSTR	STR_REQUIRED			0	om	(barbaachi
 sc	source\ui\src\globstr.src	0	string	RID_GLOBSTR	STR_INVALID			0	om	fashala				20200411 15:09:53
 sc	source\ui\src\globstr.src	0	string	RID_GLOBSTR	STR_EDITFUNCTION			0	om	Fankishinii Gulaali				20200411 15:09:53
 sc	source\ui\src\globstr.src	0	string	RID_GLOBSTR	STR_NOTES			0	om	Yaadota				20200411 15:09:53
-sc	source\ui\src\globstr.src	0	string	RID_GLOBSTR	STR_QUERY_DELTAB			0	om	Mudata(totta) yaadaa filame haquu barbaaddaa? 				20200411 15:09:53
+sc	source\ui\src\globstr.src	0	string	RID_GLOBSTR	STR_QUERY_DELTAB			0	om	Mudata yaadaa filame haquu barbaaddaa?				20200411 15:09:53
 sc	source\ui\src\globstr.src	0	string	RID_GLOBSTR	STR_QUERY_DELSCENARIO			0	om	Mudata yaadaa filame haquu barbaaddaa?				20200411 15:09:53
 sc	source\ui\src\globstr.src	0	string	RID_GLOBSTR	STR_EXPORT_ASCII_WARNING			0	om	Tarreen moggoolee hin jiru				20200411 15:09:53
 sc	source\ui\src\globstr.src	0	string	RID_GLOBSTR	STR_IMPORT_ERROR			0	om	To'annaaqubeeffannoon hin jiru				20200411 15:09:53
@@ -11060,7 +11078,7 @@ sc	source\ui\src\optdlg.src	0	fixedtext	RID_SCPAGE_CALC	FT_EPS			58	om	Jijjiiram
 sc	source\ui\src\optdlg.src	0	fixedline	RID_SCPAGE_CALC	GB_ZREFS			121	om	Wabiilee marsaa				20200411 15:09:53
 sc	source\ui\src\optdlg.src	0	radiobutton	RID_SCPAGE_CALC	BTN_DATESTD			112	om	12/30/1899 (durtii)		Gatiin 0 12/30/1899n walgita		20200411 15:09:53
 sc	source\ui\src\optdlg.src	0	radiobutton	RID_SCPAGE_CALC	BTN_DATESC10			112	om	01/01/1900 (Star~Calc 1.0)		Gatiin 0 01/01/1900n walgita		20200411 15:09:53
-sc	source\ui\src\optdlg.src	0	radiobutton	RID_SCPAGE_CALC	BTN_DATE1904			112	om	01/01/1904		0 walsima 01/01/1904 tti		20200411 15:09:53
+sc	source\ui\src\optdlg.src	0	radiobutton	RID_SCPAGE_CALC	BTN_DATE1904			112	om	01/01/1904		0(zeeroo)n 01/01/1904 walsima		20200411 15:09:53
 sc	source\ui\src\optdlg.src	0	fixedline	RID_SCPAGE_CALC	GB_DATE			121	om	Adu'u				20200411 15:09:53
 sc	source\ui\src\optdlg.src	0	checkbox	RID_SCPAGE_CALC	BTN_CASE			130	om	Qub-suukanaawaa				20200411 15:09:53
 sc	source\ui\src\optdlg.src	0	checkbox	RID_SCPAGE_CALC	BTN_CALC			239	om	Sirreenyi akka mul'atetti				20200411 15:09:53
@@ -11935,7 +11953,7 @@ sc	source\core\src\compiler.src	0	string	RID_FUNCTION_CATEGORIES	10			0	om	Barru
 sc	source\core\src\compiler.src	0	string	RID_FUNCTION_CATEGORIES	11			0	om	Idaatuu				20200411 15:09:53
 swext	mediawiki\help\wikiformats.xhp	0	help	tit				0	om	Dhangiiwwan MiidiyaaWiki				20200411 15:09:53
 swext	mediawiki\help\wikiformats.xhp	0	help	hd_id3743095				0	om	Dhangiiwwan MiidiyaaWiki				20200411 15:09:53
-swext	mediawiki\help\wikiformats.xhp	0	help	par_id8654133				0	om	Tarreen armaan gadii dhangiiwwan barruu kaadimaa @WIKIEXTENSIONPRODUCTNAME@ tti olfe'amuu danda'anii agarsiisa.				20200411 15:09:53
+swext	mediawiki\help\wikiformats.xhp	0	help	par_id8654133				0	om	Tarreen armaan gadii dhangiiwwan barruu kaadimaa @WIKIEXTENSIONPRODUCTNAME@tti olfe'amuu danda'anii agarsiisa.				20200411 15:09:53
 swext	mediawiki\help\wikiformats.xhp	0	help	par_id5630664				0	om	Dhangiin OpenDocument Barreessaa fi dhangiin WikiMiidiyaa garagarummaa guddaa qaba. Amaloota mara keessaa muraasa qofatu dhangii tokkoa irraa gara kaanitti dabarfamuu danda'a.				20200411 15:09:53
 swext	mediawiki\help\wikiformats.xhp	0	help	hd_id7178868				0	om	Matadureewwan				20200411 15:09:53
 swext	mediawiki\help\wikiformats.xhp	0	help	par_id508133				0	om	Matadureewwan galmee barreessaa kee keessatti haalata mataduree keewwataa fayyadami. Wikichi haalata mataduree sadarkaa walfakkaatuu fi dhangii injinii Wikichaan murtaayee agarsiisa.				20200411 15:09:53
@@ -12072,13 +12090,13 @@ chart2	source\controller\dialogs\Strings_AdditionalControls.src	0	string	STR_3DS
 chart2	source\controller\dialogs\Strings_AdditionalControls.src	0	string	STR_3DSCHEME_REALISTIC				0	om	Dhugee				20200411 15:09:53
 chart2	source\controller\dialogs\Strings_AdditionalControls.src	0	string	STR_3DSCHEME_CUSTOM				0	om	Maamiloo				20200411 15:09:53
 chart2	source\controller\dialogs\Strings_AdditionalControls.src	0	string	STR_BAR_GEOMETRY				0	om	Boca				20200411 15:09:53
-chart2	source\controller\dialogs\Strings_AdditionalControls.src	0	string	STR_NUMBER_OF_LINES				0	om	~Lakkoofsa sararootaa				20200411 15:09:53
+chart2	source\controller\dialogs\Strings_AdditionalControls.src	0	string	STR_NUMBER_OF_LINES				0	om	Lakkoofsa sararootaa				20200411 15:09:53
 chart2	source\controller\dialogs\Strings_AdditionalControls.src	0	string	STR_TEXT_SEPARATOR				0	om	Foo'aa				20200411 15:09:53
 chart2	source\controller\dialogs\dlg_DataSource.src	0	tabdialog	DLG_DATA_SOURCE		HID_SCH_DLG_RANGES		0	om	Hangii Deetaa				20200411 15:09:53
-chart2	source\controller\dialogs\tp_TitleRotation.src	0	tristatebox	TP_ALIGNMENT	BTN_TXTSTACKED	HID_SCH_ALIGNMENT_STACKED		116	om	~Sarjinan walirra naqame				20200411 15:09:53
-chart2	source\controller\dialogs\tp_TitleRotation.src	0	fixedtext	TP_ALIGNMENT	FT_DEGREES			162	om	~Digirii				20200411 15:09:53
+chart2	source\controller\dialogs\tp_TitleRotation.src	0	tristatebox	TP_ALIGNMENT	BTN_TXTSTACKED	HID_SCH_ALIGNMENT_STACKED		116	om	Sarjinan walirra naqame				20200411 15:09:53
+chart2	source\controller\dialogs\tp_TitleRotation.src	0	fixedtext	TP_ALIGNMENT	FT_DEGREES			162	om	Digirii				20200411 15:09:53
 chart2	source\controller\dialogs\tp_TitleRotation.src	0	fixedline	TP_ALIGNMENT	FL_ALIGN			248	om	Teessuma barruu				20200411 15:09:53
-chart2	source\controller\dialogs\tp_TitleRotation.src	0	fixedtext	TP_ALIGNMENT	FT_TEXTDIR			64	om	~Kallattii barruu				20200411 15:09:53
+chart2	source\controller\dialogs\tp_TitleRotation.src	0	fixedtext	TP_ALIGNMENT	FT_TEXTDIR			64	om	Qixa barruu				20200411 15:09:53
 chart2	source\controller\dialogs\Strings_ChartTypes.src	0	string	STR_TYPE_COLUMN				0	om	Tarjaa				20200411 15:09:53
 chart2	source\controller\dialogs\Strings_ChartTypes.src	0	string	STR_TYPE_BAR				0	om	Kabala				20200411 15:09:53
 chart2	source\controller\dialogs\Strings_ChartTypes.src	0	string	STR_TYPE_AREA				0	om	Naannoo				20200411 15:09:53
@@ -12110,45 +12128,45 @@ chart2	source\controller\dialogs\Strings_ChartTypes.src	0	string	STR_TYPE_BUBBLE
 chart2	source\controller\dialogs\Strings_ChartTypes.src	0	string	STR_BUBBLE_1				0	om	Taattoo Qoffoo				20200411 15:09:53
 chart2	source\controller\dialogs\dlg_View3D.src	0	tabdialog	DLG_3D_VIEW		HID_3D_VIEW		0	om	Mul'annoo G3				20200411 15:09:53
 chart2	source\controller\dialogs\tp_Location.src	0	fixedline	TP_LOCATION	FL_TABLE			0	om	Taattoo olkaa'i				20200411 15:09:53
-chart2	source\controller\dialogs\tp_Location.src	0	fixedtext	TP_LOCATION	FT_TABLE			0	om	Wardii irrati ~saagi				20200411 15:09:53
+chart2	source\controller\dialogs\tp_Location.src	0	fixedtext	TP_LOCATION	FT_TABLE			0	om	Wardii irrati saagi				20200411 15:09:53
 chart2	source\controller\dialogs\tp_SeriesToAxis.src	0	fixedline	TP_OPTIONS	1			248	om	Walfaannee deetaa kanatti hiriirsi				20200411 15:09:53
 chart2	source\controller\dialogs\tp_SeriesToAxis.src	0	radiobutton	TP_OPTIONS	RBT_OPT_AXIS_1			80	om	Siiqqee Y Dursaa				20200411 15:09:53
 chart2	source\controller\dialogs\tp_SeriesToAxis.src	0	radiobutton	TP_OPTIONS	RBT_OPT_AXIS_2			80	om	Siiqqee Y Lammataa				20200411 15:09:53
 chart2	source\controller\dialogs\tp_SeriesToAxis.src	0	fixedline	TP_OPTIONS	GB_BAR			248	om	Qindaa'inoota				20200411 15:09:53
-chart2	source\controller\dialogs\tp_SeriesToAxis.src	0	fixedtext	TP_OPTIONS	FT_OVERLAP			47	om	~Walirra				20200411 15:09:53
-chart2	source\controller\dialogs\tp_SeriesToAxis.src	0	fixedtext	TP_OPTIONS	FT_GAP			47	om	Addaan ~fageenya				20200411 15:09:53
+chart2	source\controller\dialogs\tp_SeriesToAxis.src	0	fixedtext	TP_OPTIONS	FT_OVERLAP			47	om	Walirra				20200411 15:09:53
+chart2	source\controller\dialogs\tp_SeriesToAxis.src	0	fixedtext	TP_OPTIONS	FT_GAP			47	om	Addaan fageenya				20200411 15:09:53
 chart2	source\controller\dialogs\tp_SeriesToAxis.src	0	checkbox	TP_OPTIONS	CB_CONNECTOR			200	om	Sararoota walindhaa				20200411 15:09:53
-chart2	source\controller\dialogs\tp_SeriesToAxis.src	0	checkbox	TP_OPTIONS	CB_BARS_SIDE_BY_SIDE			200	om	~Kabaloota walcinaa mul'isi				20200411 15:09:53
+chart2	source\controller\dialogs\tp_SeriesToAxis.src	0	checkbox	TP_OPTIONS	CB_BARS_SIDE_BY_SIDE			200	om	Kabaloota walcinaa mul'isi				20200411 15:09:53
 chart2	source\controller\dialogs\tp_SeriesToAxis.src	0	fixedline	TP_OPTIONS	FL_PLOT_OPTIONS			248	om	Dirqalaalee kaasi				20200411 15:09:53
 chart2	source\controller\dialogs\tp_SeriesToAxis.src	0	fixedtext	TP_OPTIONS	FT_MISSING_VALUES			80	om	Gatiiwwan badan kaasi				20200411 15:09:53
-chart2	source\controller\dialogs\tp_SeriesToAxis.src	0	radiobutton	TP_OPTIONS	RB_DONT_PAINT			80	om	Iddoo ~duwwaa dhiisi				20200411 15:09:53
-chart2	source\controller\dialogs\tp_SeriesToAxis.src	0	radiobutton	TP_OPTIONS	RB_ASSUME_ZERO			80	om	~Zeeroo yaali				20200411 15:09:53
-chart2	source\controller\dialogs\tp_SeriesToAxis.src	0	radiobutton	TP_OPTIONS	RB_CONTINUE_LINE			80	om	~Sarara itti fufi				20200411 15:09:53
-chart2	source\controller\dialogs\tp_SeriesToAxis.src	0	checkbox	TP_OPTIONS	CB_INCLUDE_HIDDEN_CELLS			200	om	~Man'ee dhokatoo tahan irraa gatiilee dabali				20200411 15:09:53
+chart2	source\controller\dialogs\tp_SeriesToAxis.src	0	radiobutton	TP_OPTIONS	RB_DONT_PAINT			80	om	Iddoo duwwaa dhiisi				20200411 15:09:53
+chart2	source\controller\dialogs\tp_SeriesToAxis.src	0	radiobutton	TP_OPTIONS	RB_ASSUME_ZERO			80	om	Zeeroo yaali				20200411 15:09:53
+chart2	source\controller\dialogs\tp_SeriesToAxis.src	0	radiobutton	TP_OPTIONS	RB_CONTINUE_LINE			80	om	Sarara itti fufi				20200411 15:09:53
+chart2	source\controller\dialogs\tp_SeriesToAxis.src	0	checkbox	TP_OPTIONS	CB_INCLUDE_HIDDEN_CELLS			200	om	Man'ee dhokatoo tahan irraa gatiilee dabali				20200411 15:09:53
 chart2	source\controller\dialogs\tp_3D_SceneGeometry.src	0	#define	CUSTOMUNITTEXT_DEGREE				0	om	 digiroota				20200411 15:09:53
-chart2	source\controller\dialogs\tp_3D_SceneGeometry.src	0	checkbox	TP_3D_SCENEGEOMETRY	CBX_RIGHT_ANGLED_AXES			0	om	~Siiqqota kofa mirgaa				20200411 15:09:53
+chart2	source\controller\dialogs\tp_3D_SceneGeometry.src	0	checkbox	TP_3D_SCENEGEOMETRY	CBX_RIGHT_ANGLED_AXES			0	om	Siiqqota kofa mirgaa				20200411 15:09:53
 chart2	source\controller\dialogs\tp_3D_SceneGeometry.src	0	fixedtext	TP_3D_SCENEGEOMETRY	FT_X_ROTATION			0	om	Marsaa ~X				20200411 15:09:53
 chart2	source\controller\dialogs\tp_3D_SceneGeometry.src	0	fixedtext	TP_3D_SCENEGEOMETRY	FT_Y_ROTATION			0	om	Marsaa ~Y				20200411 15:09:53
 chart2	source\controller\dialogs\tp_3D_SceneGeometry.src	0	fixedtext	TP_3D_SCENEGEOMETRY	FT_Z_ROTATION			0	om	Marsaa ~Z				20200411 15:09:53
-chart2	source\controller\dialogs\tp_3D_SceneGeometry.src	0	checkbox	TP_3D_SCENEGEOMETRY	CBX_PERSPECTIVE			0	om	~Yaadaan				20200411 15:09:53
+chart2	source\controller\dialogs\tp_3D_SceneGeometry.src	0	checkbox	TP_3D_SCENEGEOMETRY	CBX_PERSPECTIVE			0	om	Yaadaan				20200411 15:09:53
 chart2	source\controller\dialogs\res_BarGeometry.src	0	stringlist	LB_BAR_GEOMETRY	1			0	om	Sanduuqa				20200411 15:09:53
 chart2	source\controller\dialogs\res_BarGeometry.src	0	stringlist	LB_BAR_GEOMETRY	2			0	om	Akmooyyee				20200411 15:09:53
 chart2	source\controller\dialogs\res_BarGeometry.src	0	stringlist	LB_BAR_GEOMETRY	3			0	om	Luggee				20200411 15:09:53
 chart2	source\controller\dialogs\res_BarGeometry.src	0	stringlist	LB_BAR_GEOMETRY	4			0	om	Sadakara				20200411 15:09:53
 chart2	source\controller\dialogs\tp_ChartType.src	0	fixedtext	TP_CHARTTYPE	FT_CHARTTYPE			0	om	Akaakuu taattoo fili				20200411 15:09:53
 chart2	source\controller\dialogs\tp_ChartType.src	0	checkbox	TP_CHARTTYPE	CB_X_AXIS_CATEGORIES			150	om	Siiqqee X Gosootaan				20200411 15:09:53
-chart2	source\controller\dialogs\tp_ChartType.src	0	checkbox	TP_CHARTTYPE	CB_3D_LOOK			0	om	Mul'annoo ~3D				20200411 15:09:53
-chart2	source\controller\dialogs\tp_ChartType.src	0	checkbox	TP_CHARTTYPE	CB_STACKED			150	om	~Walfaannee walirra-naqaa				20200411 15:09:53
+chart2	source\controller\dialogs\tp_ChartType.src	0	checkbox	TP_CHARTTYPE	CB_3D_LOOK			0	om	Mul'annoo G3				20200411 15:09:53
+chart2	source\controller\dialogs\tp_ChartType.src	0	checkbox	TP_CHARTTYPE	CB_STACKED			150	om	Walfaannee walirra-naqaa				20200411 15:09:53
 chart2	source\controller\dialogs\tp_ChartType.src	0	radiobutton	TP_CHARTTYPE	RB_STACK_Y			80	om	Irra				20200411 15:09:53
 chart2	source\controller\dialogs\tp_ChartType.src	0	radiobutton	TP_CHARTTYPE	RB_STACK_Y_PERCENT			80	om	Dhibbeentaa				20200411 15:09:53
 chart2	source\controller\dialogs\tp_ChartType.src	0	radiobutton	TP_CHARTTYPE	RB_STACK_Z			80	om	Gadfagoo				20200411 15:09:53
-chart2	source\controller\dialogs\tp_ChartType.src	0	checkbox	TP_CHARTTYPE	CB_SPLINES			150	om	Sararoota ~bosaa'oo				20200411 15:09:53
+chart2	source\controller\dialogs\tp_ChartType.src	0	checkbox	TP_CHARTTYPE	CB_SPLINES			150	om	Sararoota bosaa'oo				20200411 15:09:53
 chart2	source\controller\dialogs\tp_ChartType.src	0	pushbutton	TP_CHARTTYPE	PB_SPLINE_DIALOG			12	om	Amaloota...				20200411 15:09:53
-chart2	source\controller\dialogs\tp_ChartType.src	0	checkbox	TP_CHARTTYPE	CB_XVALUE_SORTING			0	om	~Gatiilee X tiin tartiiba qabiinsaa				20200411 15:09:53
+chart2	source\controller\dialogs\tp_ChartType.src	0	checkbox	TP_CHARTTYPE	CB_XVALUE_SORTING			0	om	Gatiilee Xtiin tartiiba qabiinsaa				20200411 15:09:53
 chart2	source\controller\dialogs\tp_ChartType.src	0	radiobutton	DLG_SPLINE_PROPERTIES	RB_SPLINES_CUBIC			0	om	Spilaaynii kiyuubikii				20200411 15:09:53
 chart2	source\controller\dialogs\tp_ChartType.src	0	radiobutton	DLG_SPLINE_PROPERTIES	RB_SPLINES_B			0	om	Spilaaynii-B				20200411 15:09:53
-chart2	source\controller\dialogs\tp_ChartType.src	0	fixedtext	DLG_SPLINE_PROPERTIES	FT_SPLINE_RESOLUTION			0	om	~Rukkina				20200411 15:09:53
-chart2	source\controller\dialogs\tp_ChartType.src	0	fixedtext	DLG_SPLINE_PROPERTIES	FT_SPLINE_ORDER			0	om	~Ajaja tuqaalee deetaa				20200411 15:09:53
+chart2	source\controller\dialogs\tp_ChartType.src	0	fixedtext	DLG_SPLINE_PROPERTIES	FT_SPLINE_RESOLUTION			0	om	Rukkina				20200411 15:09:53
+chart2	source\controller\dialogs\tp_ChartType.src	0	fixedtext	DLG_SPLINE_PROPERTIES	FT_SPLINE_ORDER			0	om	Ajaja tuqaalee deetaa				20200411 15:09:53
 chart2	source\controller\dialogs\dlg_DataEditor.src	0	toolboxitem	DLG_DIAGRAM_DATA.TBX_DATA	TBI_DATA_INSERT_ROW	HID_SCH_TBI_DATA_INSERT_ROW		0	om	Tarree Saagi				20200411 15:09:53
 chart2	source\controller\dialogs\dlg_DataEditor.src	0	toolboxitem	DLG_DIAGRAM_DATA.TBX_DATA	TBI_DATA_INSERT_COL	HID_SCH_TBI_DATA_INSERT_COL		0	om	Walfaannee Saagi				20200411 15:09:53
 chart2	source\controller\dialogs\dlg_DataEditor.src	0	toolboxitem	DLG_DIAGRAM_DATA.TBX_DATA	TBI_DATA_INSERT_TEXT_COL	HID_SCH_TBI_DATA_INSERT_TEXT_COL		0	om	Tarjaa Barruu Galchi				20200411 15:09:53
@@ -12158,11 +12176,11 @@ chart2	source\controller\dialogs\dlg_DataEditor.src	0	toolboxitem	DLG_DIAGRAM_DA
 chart2	source\controller\dialogs\dlg_DataEditor.src	0	toolboxitem	DLG_DIAGRAM_DATA.TBX_DATA	TBI_DATA_SWAP_ROW	HID_SCH_TBI_DATA_SWAP_ROW		0	om	Tarree Gadi Siqsi				20200411 15:09:53
 chart2	source\controller\dialogs\dlg_DataEditor.src	0	modaldialog	DLG_DIAGRAM_DATA		HID_DIAGRAM_DATA		244	om	Gabatee Deetaa				20200411 15:09:53
 chart2	source\controller\dialogs\tp_RangeChooser.src	0	fixedtext	TP_RANGECHOOSER	FT_CAPTION_FOR_WIZARD			238	om	Hangii deetaa fili				20200411 15:09:53
-chart2	source\controller\dialogs\tp_RangeChooser.src	0	fixedtext	TP_RANGECHOOSER	FT_RANGE			236	om	~Hangii deetaa				20200411 15:09:53
-chart2	source\controller\dialogs\tp_RangeChooser.src	0	radiobutton	TP_RANGECHOOSER	RB_DATAROWS			236	om	Walfaannee deetaa ~tarroota keessaa				20200411 15:09:53
-chart2	source\controller\dialogs\tp_RangeChooser.src	0	radiobutton	TP_RANGECHOOSER	RB_DATACOLS			236	om	Walfaannee deetaa ~tarjaalee keessaa				20200411 15:09:53
-chart2	source\controller\dialogs\tp_RangeChooser.src	0	checkbox	TP_RANGECHOOSER	CB_FIRST_ROW_ASLABELS			236	om	Tarree ~tokkoffaa aka asxaati				20200411 15:09:53
-chart2	source\controller\dialogs\tp_RangeChooser.src	0	checkbox	TP_RANGECHOOSER	CB_FIRST_COLUMN_ASLABELS			236	om	Tarjaa tokk~offaa aka asxaati				20200411 15:09:53
+chart2	source\controller\dialogs\tp_RangeChooser.src	0	fixedtext	TP_RANGECHOOSER	FT_RANGE			236	om	Hangii deetaa				20200411 15:09:53
+chart2	source\controller\dialogs\tp_RangeChooser.src	0	radiobutton	TP_RANGECHOOSER	RB_DATAROWS			236	om	Walfaannee deetaa tarroota keessaa				20200411 15:09:53
+chart2	source\controller\dialogs\tp_RangeChooser.src	0	radiobutton	TP_RANGECHOOSER	RB_DATACOLS			236	om	Walfaannee deetaa tarjaalee keessaa				20200411 15:09:53
+chart2	source\controller\dialogs\tp_RangeChooser.src	0	checkbox	TP_RANGECHOOSER	CB_FIRST_ROW_ASLABELS			236	om	Tarree tokkoffaa aka asxaati				20200411 15:09:53
+chart2	source\controller\dialogs\tp_RangeChooser.src	0	checkbox	TP_RANGECHOOSER	CB_FIRST_COLUMN_ASLABELS			236	om	Tarjaa tokkoffaa aka asxaati				20200411 15:09:53
 chart2	source\controller\dialogs\dlg_ShapeFont.src	0	pageitem	DLG_SHAPE_FONT.1	RID_SVXPAGE_CHAR_NAME			0	om	Bocquu				20200411 15:09:53
 chart2	source\controller\dialogs\dlg_ShapeFont.src	0	pageitem	DLG_SHAPE_FONT.1	RID_SVXPAGE_CHAR_EFFECTS			0	om	Galteewwan Bocquu				20200411 15:09:53
 chart2	source\controller\dialogs\dlg_ShapeFont.src	0	pageitem	DLG_SHAPE_FONT.1	RID_SVXPAGE_CHAR_POSITION			0	om	Qubannoo Bocquu				20200411 15:09:53
@@ -12297,7 +12315,7 @@ chart2	source\controller\dialogs\Strings.src	0	string	STR_TEXT_DIRECTION_LTR				
 chart2	source\controller\dialogs\Strings.src	0	string	STR_TEXT_DIRECTION_RTL				0	om	Mirgaa-gara-bitaa				20200411 15:09:53
 chart2	source\controller\dialogs\Strings.src	0	string	STR_TEXT_DIRECTION_SUPER				0	om	Qindaa'inoota wantaa ol'aanoo fayyadami				20200411 15:09:53
 chart2	source\controller\dialogs\tp_AxisPositions.src	0	fixedline	TP_AXIS_POSITIONS	FL_AXIS_LINE			248	om	Sarara siqqee				20200411 15:09:53
-chart2	source\controller\dialogs\tp_AxisPositions.src	0	fixedtext	TP_AXIS_POSITIONS	FT_CROSSES_OTHER_AXIS_AT			0	om	Siiqqee ~biroo asitti qaxxaamuri				20200411 15:09:53
+chart2	source\controller\dialogs\tp_AxisPositions.src	0	fixedtext	TP_AXIS_POSITIONS	FT_CROSSES_OTHER_AXIS_AT			0	om	Siiqqee biroo asitti qaxxaamuri				20200411 15:09:53
 chart2	source\controller\dialogs\tp_AxisPositions.src	0	stringlist	TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT	1			0	om	Eegali				20200411 15:09:53
 chart2	source\controller\dialogs\tp_AxisPositions.src	0	stringlist	TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT	2			0	om	Xumuri				20200411 15:09:53
 chart2	source\controller\dialogs\tp_AxisPositions.src	0	stringlist	TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT	3			0	om	Gatii				20200411 15:09:53
@@ -14962,10 +14980,10 @@ officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..G
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:ChooseMacro	Label			0	om	Maakroo fili				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:ChoosePolygon	Label			0	om	Filannoo Mallattoo				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:Circle	Label			0	om	Geengoo				20200411 15:09:53
-officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:CircleArc	Label			0	om	Geengoo Golboo				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:CircleArc	Label			0	om	Geengoo (Golboo)				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:CircleCut	Label			0	om	Kuta Geengoo				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:CircleCut_Unfilled	Label			0	om	Baqqaana Geengoo, Hinguutamne				20200411 15:09:53
-officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:CirclePie	Label			0	om	Geengoo Deloo				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:CirclePie	Label			0	om	Geengoo (Deloo)				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:CirclePie_Unfilled	Label			0	om	Geengoo Deloo, Hinguutamne				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:Circle_Unfilled	Label			0	om	Geengoo, Hinguutamne				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:ClearHistory	Label			0	om	Seenaa Haqi				20200411 15:09:53
@@ -18160,16 +18178,16 @@ starmath	source\toolbox.src	0	toolboxitem	RID_TOOLBOXWINDOW.TOOLBOX_CAT_G	RID_LR
 starmath	source\toolbox.src	0	toolboxitem	RID_TOOLBOXWINDOW.TOOLBOX_CAT_G	RID_LRANGLEX	HID_SMA_LRANGLEX		0	om	Sadallaawwan Kofaa				20200411 15:09:53
 starmath	source\toolbox.src	0	toolboxitem	RID_TOOLBOXWINDOW.TOOLBOX_CAT_G	RID_LMRANGLEXY	HID_SMA_LMRANGLEXY		0	om	Sadallaawwan Ogeejjii				20200411 15:09:53
 starmath	source\toolbox.src	0	toolboxitem	RID_TOOLBOXWINDOW.TOOLBOX_CAT_G	RID_LRGROUPX	HID_SMA_LRGROUPX		0	om	Sadallaawwan Gurmeessi				20200411 15:09:53
-starmath	source\toolbox.src	0	toolboxitem	RID_TOOLBOXWINDOW.TOOLBOX_CAT_G	RID_SLRPARENTX	HID_SMA_SLRPARENTX		0	om	Sadallaawwan Kolboo (Scalable)				20200411 15:09:53
-starmath	source\toolbox.src	0	toolboxitem	RID_TOOLBOXWINDOW.TOOLBOX_CAT_G	RID_SLRBRACKETX	HID_SMA_SLRBRACKETX		0	om	Sadallaawwan Iskuweerii (Scalable)				20200411 15:09:53
-starmath	source\toolbox.src	0	toolboxitem	RID_TOOLBOXWINDOW.TOOLBOX_CAT_G	RID_SLRDBRACKETX	HID_SMA_SLRDBRACKETX		0	om	Sadallaawwan Iskuweerii Dachaa (Scalable)				20200411 15:09:53
-starmath	source\toolbox.src	0	toolboxitem	RID_TOOLBOXWINDOW.TOOLBOX_CAT_G	RID_SLRLINEX	HID_SMA_SLRLINEX		0	om	Sarara Tokkee (Scalable)				20200411 15:09:53
-starmath	source\toolbox.src	0	toolboxitem	RID_TOOLBOXWINDOW.TOOLBOX_CAT_G	RID_SLRDLINEX	HID_SMA_SLRDLINEX		0	om	Sarara Dachaa (Scalable)				20200411 15:09:53
-starmath	source\toolbox.src	0	toolboxitem	RID_TOOLBOXWINDOW.TOOLBOX_CAT_G	RID_SLRBRACEX	HID_SMA_SLRBRACEX		0	om	Sadalgoo (Scalable)				20200411 15:09:53
-starmath	source\toolbox.src	0	toolboxitem	RID_TOOLBOXWINDOW.TOOLBOX_CAT_G	RID_SLRANGLEX	HID_SMA_SLRANGLEX		0	om	Sadallaawwan Kofaa (Scalable)				20200411 15:09:53
-starmath	source\toolbox.src	0	toolboxitem	RID_TOOLBOXWINDOW.TOOLBOX_CAT_G	RID_SLMRANGLEXY	HID_SMA_SLMRANGLEXY		0	om	Sadallaawwan Ogeejjii (Scalable)				20200411 15:09:53
-starmath	source\toolbox.src	0	toolboxitem	RID_TOOLBOXWINDOW.TOOLBOX_CAT_G	RID_XOVERBRACEY	HID_SMA_XOVERBRACEY		0	om	Gubbaa Ogeejjiiwwanii (Scalable)				20200411 15:09:53
-starmath	source\toolbox.src	0	toolboxitem	RID_TOOLBOXWINDOW.TOOLBOX_CAT_G	RID_XUNDERBRACEY	HID_SMA_XUNDERBRACEY		0	om	Jala Ogeejjiiwwanii (Scalable)				20200411 15:09:53
+starmath	source\toolbox.src	0	toolboxitem	RID_TOOLBOXWINDOW.TOOLBOX_CAT_G	RID_SLRPARENTX	HID_SMA_SLRPARENTX		0	om	Sadallaawwan Kolboo				20200411 15:09:53
+starmath	source\toolbox.src	0	toolboxitem	RID_TOOLBOXWINDOW.TOOLBOX_CAT_G	RID_SLRBRACKETX	HID_SMA_SLRBRACKETX		0	om	Sadallaawwan Iskuweerii				20200411 15:09:53
+starmath	source\toolbox.src	0	toolboxitem	RID_TOOLBOXWINDOW.TOOLBOX_CAT_G	RID_SLRDBRACKETX	HID_SMA_SLRDBRACKETX		0	om	Sadallaawwan Iskuweerii Dachaa				20200411 15:09:53
+starmath	source\toolbox.src	0	toolboxitem	RID_TOOLBOXWINDOW.TOOLBOX_CAT_G	RID_SLRLINEX	HID_SMA_SLRLINEX		0	om	Sarara Tokkee				20200411 15:09:53
+starmath	source\toolbox.src	0	toolboxitem	RID_TOOLBOXWINDOW.TOOLBOX_CAT_G	RID_SLRDLINEX	HID_SMA_SLRDLINEX		0	om	Sarara Dachaa				20200411 15:09:53
+starmath	source\toolbox.src	0	toolboxitem	RID_TOOLBOXWINDOW.TOOLBOX_CAT_G	RID_SLRBRACEX	HID_SMA_SLRBRACEX		0	om	Sadalgoo				20200411 15:09:53
+starmath	source\toolbox.src	0	toolboxitem	RID_TOOLBOXWINDOW.TOOLBOX_CAT_G	RID_SLRANGLEX	HID_SMA_SLRANGLEX		0	om	Sadallaawwan Kofaa				20200411 15:09:53
+starmath	source\toolbox.src	0	toolboxitem	RID_TOOLBOXWINDOW.TOOLBOX_CAT_G	RID_SLMRANGLEXY	HID_SMA_SLMRANGLEXY		0	om	Sadallaawwan Ogeejjii				20200411 15:09:53
+starmath	source\toolbox.src	0	toolboxitem	RID_TOOLBOXWINDOW.TOOLBOX_CAT_G	RID_XOVERBRACEY	HID_SMA_XOVERBRACEY		0	om	Gubbaa Ogeejjiiwwanii				20200411 15:09:53
+starmath	source\toolbox.src	0	toolboxitem	RID_TOOLBOXWINDOW.TOOLBOX_CAT_G	RID_XUNDERBRACEY	HID_SMA_XUNDERBRACEY		0	om	Jala Ogeejjiiwwanii				20200411 15:09:53
 starmath	source\toolbox.src	0	toolboxitem	RID_TOOLBOXWINDOW.TOOLBOX_CAT_H	RID_LSUPX	HID_SMA_LSUPX		0	om	Bitaa Irrarfii				20200411 15:09:53
 starmath	source\toolbox.src	0	toolboxitem	RID_TOOLBOXWINDOW.TOOLBOX_CAT_H	RID_CSUPX	HID_SMA_CSUPX		0	om	Gubbaa Irrarfii				20200411 15:09:53
 starmath	source\toolbox.src	0	toolboxitem	RID_TOOLBOXWINDOW.TOOLBOX_CAT_H	RID_RSUPX	HID_SMA_RSUPX		0	om	Mirga Irrarfii				20200411 15:09:53
@@ -18374,65 +18392,65 @@ basctl	source\basicide\basidesh.src	0	string	RID_STR_DLGIMP_MISMATCH_OMIT				80	
 basctl	source\basicide\basidesh.src	0	string	RID_STR_DLGIMP_MISMATCH_TITLE				80	om	Alaaga Qaaqaa - Walsima Dhaba Afaanii				20200411 15:09:53
 basctl	source\basicide\basidesh.src	0	string	RID_STR_DLGIMP_MISMATCH_TEXT				80	om	Qaaqni alaagamu afaanota biroo manbarroo galteetiin alaa deeggara.\n\nQabeenyota afaanii dabalataa qaaqichaan laataman kaa'uuf afaanota kanneen manbarrootti ida'i ykn afaanota manbarroo ammaa waliin turuuf jara kana balleessi.\n\nYaadannoo: Afaanota qaaqichaan hin deeggaramneef qaabeenyonni afaan durtii qaaqaa ni fayyadamu.\n				20200411 15:09:53
 basctl	source\basicide\basicprint.src	0	itemlist	RID_PRINTDLG_STRLIST	1			0	om	Hamma maxxansaa				20200411 15:09:53
-basctl	source\basicide\basicprint.src	0	itemlist	RID_PRINTDLG_STRLIST	2			0	om	~Fuulota Mara				20200411 15:09:53
-basctl	source\basicide\basicprint.src	0	itemlist	RID_PRINTDLG_STRLIST	3			0	om	~Fuulota				20200411 15:09:53
+basctl	source\basicide\basicprint.src	0	itemlist	RID_PRINTDLG_STRLIST	2			0	om	Fuula hunda				20200411 15:09:53
+basctl	source\basicide\basicprint.src	0	itemlist	RID_PRINTDLG_STRLIST	3			0	om	Fuulota				20200411 15:09:53
 basctl	source\basicide\brkdlg.src	0	pushbutton	RID_BASICIDE_BREAKPOINTDLG	RID_PB_NEW			50	om	Haaraa				20200411 15:09:53
 basctl	source\basicide\brkdlg.src	0	pushbutton	RID_BASICIDE_BREAKPOINTDLG	RID_PB_DEL			50	om	Haqi				20200411 15:09:53
 basctl	source\basicide\brkdlg.src	0	checkbox	RID_BASICIDE_BREAKPOINTDLG	RID_CHKB_ACTIVE			40	om	Ka'aa				20200411 15:09:53
 basctl	source\basicide\brkdlg.src	0	fixedtext	RID_BASICIDE_BREAKPOINTDLG	RID_FT_PASS			75	om	Lakkoofsa Darbaa:				20200411 15:09:53
 basctl	source\basicide\brkdlg.src	0	fixedtext	RID_BASICIDE_BREAKPOINTDLG	RID_FT_BRKPOINTS			110	om	Sarqurxaalee				20200411 15:09:53
 basctl	source\basicide\brkdlg.src	0	modaldialog	RID_BASICIDE_BREAKPOINTDLG				178	om	Sarqurxaalee Taliigi				20200411 15:09:53
-basctl	source\basicide\macrodlg.src	0	fixedtext	RID_MACROCHOOSER	RID_TXT_MACROSIN			100	om	~Maakroota as keessa jiran:				20200411 15:09:53
-basctl	source\basicide\macrodlg.src	0	fixedtext	RID_MACROCHOOSER	RID_TXT_MACRONAME			100	om	~Maqaa maakroo				20200411 15:09:53
-basctl	source\basicide\macrodlg.src	0	fixedtext	RID_MACROCHOOSER	RID_TXT_MACROFROM			100	om	~Irraa maakroo				20200411 15:09:53
-basctl	source\basicide\macrodlg.src	0	fixedtext	RID_MACROCHOOSER	RID_TXT_SAVEMACRO			100	om	Keessa ~maakroo olkaa'i				20200411 15:09:53
-basctl	source\basicide\macrodlg.src	0	fixedtext	RID_MACROCHOOSER	RID_TXT_DESCRIPTION			100	om	Mal~mallee				20200411 15:09:53
-basctl	source\basicide\macrodlg.src	0	pushbutton	RID_MACROCHOOSER	RID_PB_RUN			50	om	~Kaasi				20200411 15:09:53
+basctl	source\basicide\macrodlg.src	0	fixedtext	RID_MACROCHOOSER	RID_TXT_MACROSIN			100	om	Maakroota as keessa jiran:				20200411 15:09:53
+basctl	source\basicide\macrodlg.src	0	fixedtext	RID_MACROCHOOSER	RID_TXT_MACRONAME			100	om	Maqaa maakroo				20200411 15:09:53
+basctl	source\basicide\macrodlg.src	0	fixedtext	RID_MACROCHOOSER	RID_TXT_MACROFROM			100	om	Irraa maakroo				20200411 15:09:53
+basctl	source\basicide\macrodlg.src	0	fixedtext	RID_MACROCHOOSER	RID_TXT_SAVEMACRO			100	om	Keessa maakroo olkaa'i				20200411 15:09:53
+basctl	source\basicide\macrodlg.src	0	fixedtext	RID_MACROCHOOSER	RID_TXT_DESCRIPTION			100	om	Ibsa				20200411 15:09:53
+basctl	source\basicide\macrodlg.src	0	pushbutton	RID_MACROCHOOSER	RID_PB_RUN			50	om	Ka'iinsa				20200411 15:09:53
 basctl	source\basicide\macrodlg.src	0	cancelbutton	RID_MACROCHOOSER	RID_PB_CLOSE			50	om	Cufi				20200411 15:09:53
-basctl	source\basicide\macrodlg.src	0	pushbutton	RID_MACROCHOOSER	RID_PB_ASSIGN			50	om	~Ramadi...				20200411 15:09:53
-basctl	source\basicide\macrodlg.src	0	pushbutton	RID_MACROCHOOSER	RID_PB_EDIT			50	om	~Gulaali				20200411 15:09:53
-basctl	source\basicide\macrodlg.src	0	pushbutton	RID_MACROCHOOSER	RID_PB_NEWLIB			50	om	~Manbarroo Haaraa				20200411 15:09:53
-basctl	source\basicide\macrodlg.src	0	pushbutton	RID_MACROCHOOSER	RID_PB_NEWMOD			50	om	~Muraa Haaraa				20200411 15:09:53
-basctl	source\basicide\macrodlg.src	0	pushbutton	RID_MACROCHOOSER	RID_PB_DEL			50	om	Ha~qi				20200411 15:09:53
-basctl	source\basicide\macrodlg.src	0	pushbutton	RID_MACROCHOOSER	RID_PB_ORG			50	om	Qin~deessituu...				20200411 15:09:53
+basctl	source\basicide\macrodlg.src	0	pushbutton	RID_MACROCHOOSER	RID_PB_ASSIGN			50	om	Ramadi...				20200411 15:09:53
+basctl	source\basicide\macrodlg.src	0	pushbutton	RID_MACROCHOOSER	RID_PB_EDIT			50	om	Gulaali				20200411 15:09:53
+basctl	source\basicide\macrodlg.src	0	pushbutton	RID_MACROCHOOSER	RID_PB_NEWLIB			50	om	Manbarroo Haaraa				20200411 15:09:53
+basctl	source\basicide\macrodlg.src	0	pushbutton	RID_MACROCHOOSER	RID_PB_NEWMOD			50	om	Moojuulii Haaraa				20200411 15:09:53
+basctl	source\basicide\macrodlg.src	0	pushbutton	RID_MACROCHOOSER	RID_PB_DEL			50	om	Haqi				20200411 15:09:53
+basctl	source\basicide\macrodlg.src	0	pushbutton	RID_MACROCHOOSER	RID_PB_ORG			50	om	Qindeessituu...				20200411 15:09:53
 basctl	source\basicide\macrodlg.src	0	modaldialog	RID_MACROCHOOSER				287	om	Maakroota Bu'uuraa %PRODUCTNAME				20200411 15:09:53
 basctl	source\basicide\macrodlg.src	0	string	RID_STR_STDMACRONAME				287	om	Maakroo				20200411 15:09:53
-basctl	source\basicide\macrodlg.src	0	string	RID_STR_BTNDEL				287	om	Ha~qi				20200411 15:09:53
-basctl	source\basicide\macrodlg.src	0	string	RID_STR_BTNNEW				287	om	~Haaraa				20200411 15:09:53
+basctl	source\basicide\macrodlg.src	0	string	RID_STR_BTNDEL				287	om	Haqi				20200411 15:09:53
+basctl	source\basicide\macrodlg.src	0	string	RID_STR_BTNNEW				287	om	Haaraa				20200411 15:09:53
 basctl	source\basicide\macrodlg.src	0	string	RID_STR_CLOSE				287	om	Cufi				20200411 15:09:53
 basctl	source\basicide\macrodlg.src	0	string	RID_STR_CHOOSE				287	om	Fili				20200411 15:09:53
 basctl	source\basicide\macrodlg.src	0	string	RID_STR_RUN				287	om	Ka'iinsa				20200411 15:09:53
-basctl	source\basicide\macrodlg.src	0	string	RID_STR_RECORD				287	om	~Olkaa'i				20200411 15:09:53
+basctl	source\basicide\macrodlg.src	0	string	RID_STR_RECORD				287	om	Olkaa'i				20200411 15:09:53
 basctl	source\basicide\moduldlg.src	0	pageitem	RID_TD_ORGANIZE.RID_TC_ORGANIZE	RID_TP_MOD			0	om	Muroota				20200411 15:09:53
 basctl	source\basicide\moduldlg.src	0	pageitem	RID_TD_ORGANIZE.RID_TC_ORGANIZE	RID_TP_DLG			0	om	Qaaqota				20200411 15:09:53
 basctl	source\basicide\moduldlg.src	0	pageitem	RID_TD_ORGANIZE.RID_TC_ORGANIZE	RID_TP_LIB			0	om	Manbarroota				20200411 15:09:53
 basctl	source\basicide\moduldlg.src	0	tabdialog	RID_TD_ORGANIZE				0	om	Qindeessituu Maakroo Bu'uuraa %PRODUCTNAME				20200411 15:09:53
-basctl	source\basicide\moduldlg.src	0	fixedtext	RID_TP_MODULS	RID_STR_LIB			130	om	M~oojuulii				20200411 15:09:53
-basctl	source\basicide\moduldlg.src	0	pushbutton	RID_TP_MODULS	RID_PB_EDIT			60	om	~Gulaali				20200411 15:09:53
+basctl	source\basicide\moduldlg.src	0	fixedtext	RID_TP_MODULS	RID_STR_LIB			130	om	Moojuulii				20200411 15:09:53
+basctl	source\basicide\moduldlg.src	0	pushbutton	RID_TP_MODULS	RID_PB_EDIT			60	om	Gulaali				20200411 15:09:53
 basctl	source\basicide\moduldlg.src	0	cancelbutton	RID_TP_MODULS	RID_PB_CLOSE			60	om	Cufi				20200411 15:09:53
-basctl	source\basicide\moduldlg.src	0	pushbutton	RID_TP_MODULS	RID_PB_NEWMOD			60	om	~Haaraa...				20200411 15:09:53
-basctl	source\basicide\moduldlg.src	0	pushbutton	RID_TP_MODULS	RID_PB_NEWDLG			60	om	~Haaraa...				20200411 15:09:53
-basctl	source\basicide\moduldlg.src	0	pushbutton	RID_TP_MODULS	RID_PB_DELETE			60	om	Ha~qi				20200411 15:09:53
+basctl	source\basicide\moduldlg.src	0	pushbutton	RID_TP_MODULS	RID_PB_NEWMOD			60	om	Haaraa...				20200411 15:09:53
+basctl	source\basicide\moduldlg.src	0	pushbutton	RID_TP_MODULS	RID_PB_NEWDLG			60	om	Haaraa...				20200411 15:09:53
+basctl	source\basicide\moduldlg.src	0	pushbutton	RID_TP_MODULS	RID_PB_DELETE			60	om	Haqi				20200411 15:09:53
 basctl	source\basicide\moduldlg.src	0	fixedtext	RID_TP_DLGS	RID_STR_LIB			130	om	Qaaqa				20200411 15:09:53
-basctl	source\basicide\moduldlg.src	0	pushbutton	RID_TP_DLGS	RID_PB_EDIT			60	om	~Gulaali				20200411 15:09:53
+basctl	source\basicide\moduldlg.src	0	pushbutton	RID_TP_DLGS	RID_PB_EDIT			60	om	Gulaali				20200411 15:09:53
 basctl	source\basicide\moduldlg.src	0	cancelbutton	RID_TP_DLGS	RID_PB_CLOSE			60	om	Cufi				20200411 15:09:53
-basctl	source\basicide\moduldlg.src	0	pushbutton	RID_TP_DLGS	RID_PB_NEWMOD			60	om	~Haaraa...				20200411 15:09:53
-basctl	source\basicide\moduldlg.src	0	pushbutton	RID_TP_DLGS	RID_PB_NEWDLG			60	om	~Haaraa...				20200411 15:09:53
-basctl	source\basicide\moduldlg.src	0	pushbutton	RID_TP_DLGS	RID_PB_DELETE			60	om	Ha~qi				20200411 15:09:53
-basctl	source\basicide\moduldlg.src	0	fixedtext	RID_TP_LIBS	RID_STR_BASICS			130	om	~Iddoo				20200411 15:09:53
-basctl	source\basicide\moduldlg.src	0	fixedtext	RID_TP_LIBS	RID_STR_LIB			130	om	Man~barroo				20200411 15:09:53
-basctl	source\basicide\moduldlg.src	0	pushbutton	RID_TP_LIBS	RID_PB_EDIT			60	om	~Gulaali				20200411 15:09:53
+basctl	source\basicide\moduldlg.src	0	pushbutton	RID_TP_DLGS	RID_PB_NEWMOD			60	om	Haaraa...				20200411 15:09:53
+basctl	source\basicide\moduldlg.src	0	pushbutton	RID_TP_DLGS	RID_PB_NEWDLG			60	om	Haaraa...				20200411 15:09:53
+basctl	source\basicide\moduldlg.src	0	pushbutton	RID_TP_DLGS	RID_PB_DELETE			60	om	Haqi				20200411 15:09:53
+basctl	source\basicide\moduldlg.src	0	fixedtext	RID_TP_LIBS	RID_STR_BASICS			130	om	Iddoo				20200411 15:09:53
+basctl	source\basicide\moduldlg.src	0	fixedtext	RID_TP_LIBS	RID_STR_LIB			130	om	Manbarroo				20200411 15:09:53
+basctl	source\basicide\moduldlg.src	0	pushbutton	RID_TP_LIBS	RID_PB_EDIT			60	om	Gulaali				20200411 15:09:53
 basctl	source\basicide\moduldlg.src	0	cancelbutton	RID_TP_LIBS	RID_PB_CLOSE			60	om	Cufi				20200411 15:09:53
-basctl	source\basicide\moduldlg.src	0	pushbutton	RID_TP_LIBS	RID_PB_PASSWORD			60	om	Iggi~taa...				20200411 15:09:53
-basctl	source\basicide\moduldlg.src	0	pushbutton	RID_TP_LIBS	RID_PB_NEWLIB			60	om	~Haaraa...				20200411 15:09:53
-basctl	source\basicide\moduldlg.src	0	pushbutton	RID_TP_LIBS	RID_PB_APPEND			60	om	~Alaagi...				20200411 15:09:53
-basctl	source\basicide\moduldlg.src	0	pushbutton	RID_TP_LIBS	RID_PB_EXPORT			60	om	Ale~rgii...				20200411 15:09:53
-basctl	source\basicide\moduldlg.src	0	pushbutton	RID_TP_LIBS	RID_PB_DELETE			60	om	Ha~qi				20200411 15:09:53
+basctl	source\basicide\moduldlg.src	0	pushbutton	RID_TP_LIBS	RID_PB_PASSWORD			60	om	Iggitaa...				20200411 15:09:53
+basctl	source\basicide\moduldlg.src	0	pushbutton	RID_TP_LIBS	RID_PB_NEWLIB			60	om	Haaraa...				20200411 15:09:53
+basctl	source\basicide\moduldlg.src	0	pushbutton	RID_TP_LIBS	RID_PB_APPEND			60	om	Alaagi...				20200411 15:09:53
+basctl	source\basicide\moduldlg.src	0	pushbutton	RID_TP_LIBS	RID_PB_EXPORT			60	om	Alergii...				20200411 15:09:53
+basctl	source\basicide\moduldlg.src	0	pushbutton	RID_TP_LIBS	RID_PB_DELETE			60	om	Haqi				20200411 15:09:53
 basctl	source\basicide\moduldlg.src	0	fixedline	RID_DLG_LIBS	RID_FL_OPTIONS			156	om	Dirqalaalee				20200411 15:09:53
 basctl	source\basicide\moduldlg.src	0	checkbox	RID_DLG_LIBS	RID_CB_REF			146	om	Akka wabiitti saagi (dubbisqofaa)				20200411 15:09:53
 basctl	source\basicide\moduldlg.src	0	checkbox	RID_DLG_LIBS	RID_CB_REPL			146	om	Manbarroota jiran bakka buusi				20200411 15:09:53
-basctl	source\basicide\moduldlg.src	0	fixedtext	RID_DLG_NEWLIB	RID_FT_NEWLIB			100	om	~Maqaa:				20200411 15:09:53
-basctl	source\basicide\moduldlg.src	0	radiobutton	RID_DLG_EXPORT	RB_EXPORTASPACKAGE			103	om	Aka ~dheertootti alergi				20200411 15:09:53
+basctl	source\basicide\moduldlg.src	0	fixedtext	RID_DLG_NEWLIB	RID_FT_NEWLIB			100	om	Maqaa:				20200411 15:09:53
+basctl	source\basicide\moduldlg.src	0	radiobutton	RID_DLG_EXPORT	RB_EXPORTASPACKAGE			103	om	Aka dheertootti alergi				20200411 15:09:53
 basctl	source\basicide\moduldlg.src	0	radiobutton	RID_DLG_EXPORT	RB_EXPORTASBASIC			103	om	Akka manbarroo BASIC alergi				20200411 15:09:53
 basctl	source\basicide\moduldlg.src	0	modaldialog	RID_DLG_EXPORT				115	om	Manbarroo Basic alergi				20200411 15:09:53
 basctl	source\basicide\moduldlg.src	0	string	RID_STR_EXPORTPACKAGE				115	om	Manbarroo akka dheertootti alergi				20200411 15:09:53
@@ -18449,12 +18467,12 @@ basctl	source\dlged\managelang.src	0	pushbutton	RID_DLG_MANAGE_LANGUAGE	PB_ADD_L
 basctl	source\dlged\managelang.src	0	pushbutton	RID_DLG_MANAGE_LANGUAGE	PB_DEL_LANG			0	om	Haqi				20200411 15:09:53
 basctl	source\dlged\managelang.src	0	pushbutton	RID_DLG_MANAGE_LANGUAGE	PB_MAKE_DEFAULT			0	om	Durtii				20200411 15:09:53
 basctl	source\dlged\managelang.src	0	fixedtext	RID_DLG_MANAGE_LANGUAGE	FT_INFO			0	om	Gitoo-biyyaa walqunnama fayyadamaaf biyyoomni yoo hin jiraanne, afaan durtii faayidaarra oola. Dabalatees, diroonni afaan durtiirraa marti qabeenya afaan haaraa ida'ameetti gargalfamu.				20200411 15:09:53
-basctl	source\dlged\managelang.src	0	okbutton	RID_DLG_MANAGE_LANGUAGE	PB_CLOSE			0	om	~Cufi				20200411 15:09:53
+basctl	source\dlged\managelang.src	0	okbutton	RID_DLG_MANAGE_LANGUAGE	PB_CLOSE			0	om	Cufi				20200411 15:09:53
 basctl	source\dlged\managelang.src	0	string	RID_DLG_MANAGE_LANGUAGE	STR_DEF_LANG			0	om	[Afaan Durtii]				20200411 15:09:53
-basctl	source\dlged\managelang.src	0	string	RID_DLG_MANAGE_LANGUAGE	STR_DELETE			0	om	Ha~qi				20200411 15:09:53
+basctl	source\dlged\managelang.src	0	string	RID_DLG_MANAGE_LANGUAGE	STR_DELETE			0	om	Haqi				20200411 15:09:53
 basctl	source\dlged\managelang.src	0	string	RID_DLG_MANAGE_LANGUAGE	STR_CREATE_LANG			0	om	<Qabeenyota afaanii uumuuf 'Ida'i' dhiibi>				20200411 15:09:53
 basctl	source\dlged\managelang.src	0	modaldialog	RID_DLG_MANAGE_LANGUAGE		HID_BASICIDE_MANAGE_LANGUAGE		0	om	Afaanota walquunnama fayyadamaa taliigi [$1]				20200411 15:09:53
-basctl	source\dlged\managelang.src	0	querybox	RID_QRYBOX_LANGUAGE				0	om	Qabeenyota afaan filatamee haquuf deemta. Diroonni walquunnama fayyadamaa afaan kanaa marti ni haqamu.\n\nQabeenya afaan filatamee haquu ni barbaaddaa?			Qabeenya afaannii haqi	20200411 15:09:53
+basctl	source\dlged\managelang.src	0	querybox	RID_QRYBOX_LANGUAGE				0	om	Qabeenyota afaan(ota) filatamee(anii) haquuf deemta. Diroonni walquunnama fayyadamaa afaan(ota) kanaa marti ni haqamu.\n\nQabeenya afaan(ota) filatamee(anii) haquu ni barbaaddaa?			Qabeenya afaannii haqi	20200411 15:09:53
 basctl	source\dlged\managelang.src	0	fixedtext	RID_DLG_SETDEF_LANGUAGE	FT_DEF_LANGUAGE			0	om	Afaan durtii				20200411 15:09:53
 basctl	source\dlged\managelang.src	0	fixedtext	RID_DLG_SETDEF_LANGUAGE	FT_DEF_INFO			0	om	Afaan walquunnama fayyadamaa durtii ibsuuf afaan tokko filadhu. Diroonni amma jiran marti qabeenyota afaan filatameef uumamaniif ramadamu.				20200411 15:09:53
 basctl	source\dlged\managelang.src	0	string	RID_DLG_SETDEF_LANGUAGE	STR_ADDLANG_TITLE			0	om	Afaanota Walquunnama Fayyadamaa Ida'i				20200411 15:09:53
@@ -18697,7 +18715,7 @@ sd	source\ui\app\strings.src	0	string	STR_STRING_NOTFOUND				175	om	Furtuun barb
 sd	source\ui\app\strings.src	0	string	STR_PLAY				175	om	Taphachiisi				20200411 15:09:53
 sd	source\ui\app\strings.src	0	string	STR_STOP				175	om	Dhaabi				20200411 15:09:53
 sd	source\ui\app\strings.src	0	string	STR_UNDO_ORIGINALSIZE				175	om	Hammamtaa xabboo				20200411 15:09:53
-sd	source\ui\app\strings.src	0	string	STR_PRINT_DRAWING				175	om	 (Fakkasa)				20200411 15:09:53
+sd	source\ui\app\strings.src	0	string	STR_PRINT_DRAWING				175	om	(Fakkasa)				20200411 15:09:53
 sd	source\ui\app\strings.src	0	string	STR_PRINT_NOTES				175	om	 (Yaadannoolee)				20200411 15:09:53
 sd	source\ui\app\strings.src	0	string	STR_PRINT_HANDOUT				175	om	 (Hirtaa)				20200411 15:09:53
 sd	source\ui\app\strings.src	0	string	STR_PRINT_OUTLINE				175	om	 (Toorii)				20200411 15:09:53
@@ -19692,7 +19710,7 @@ sd	source\ui\animations\SlideTransitionPane.src	0	checkbox	DLG_SLIDE_TRANSITION_
 sd	source\ui\animations\SlideTransitionPane.src	0	fixedline	DLG_SLIDE_TRANSITION_PANE	FL_ADVANCE_SLIDE			1	om	Islaayidii olaansi				20200411 15:09:53
 sd	source\ui\animations\SlideTransitionPane.src	0	radiobutton	DLG_SLIDE_TRANSITION_PANE	RB_ADVANCE_ON_MOUSE	HID_SD_SLIDETRANSITIONPANE_RB_ADVANCE_ON_MOUSE		1	om	Ogguu cuqaasa hantuuttee				20200411 15:09:53
 sd	source\ui\animations\SlideTransitionPane.src	0	radiobutton	DLG_SLIDE_TRANSITION_PANE	RB_ADVANCE_AUTO	HID_SD_SLIDETRANSITIONPANE_RB_ADVANCE_AUTO		1	om	Ofumaa kana booda				20200411 15:09:53
-sd	source\ui\animations\SlideTransitionPane.src	0	metricfield	DLG_SLIDE_TRANSITION_PANE	MF_ADVANCE_AUTO_AFTER	HID_SD_SLIDETRANSITIONPANE_MF_ADVANCE_AUTO_AFTER		1	om	 sec				20200411 15:09:53
+sd	source\ui\animations\SlideTransitionPane.src	0	metricfield	DLG_SLIDE_TRANSITION_PANE	MF_ADVANCE_AUTO_AFTER	HID_SD_SLIDETRANSITIONPANE_MF_ADVANCE_AUTO_AFTER		1	om	sec				20200411 15:09:53
 sd	source\ui\animations\SlideTransitionPane.src	0	pushbutton	DLG_SLIDE_TRANSITION_PANE	PB_APPLY_TO_ALL	HID_SD_SLIDETRANSITIONPANE_PB_APPLY_TO_ALL		1	om	Apply to All Slides				20200411 15:09:53
 sd	source\ui\animations\SlideTransitionPane.src	0	pushbutton	DLG_SLIDE_TRANSITION_PANE	PB_PLAY	HID_SD_SLIDETRANSITIONPANE_PB_PLAY		1	om	Play				20200411 15:09:53
 sd	source\ui\animations\SlideTransitionPane.src	0	pushbutton	DLG_SLIDE_TRANSITION_PANE	PB_SLIDE_SHOW	HID_SD_SLIDETRANSITIONPANE_PB_SLIDE_SHOW		1	om	Slide Show				20200411 15:09:53
@@ -19726,7 +19744,7 @@ sd	source\ui\animations\CustomAnimationDialog.src	0	stringlist	RID_TP_CUSTOMANIM
 sd	source\ui\animations\CustomAnimationDialog.src	0	stringlist	RID_TP_CUSTOMANIMATION_DURATION.LB_START	2			0	om	Kan darbe waliin				20200411 15:09:53
 sd	source\ui\animations\CustomAnimationDialog.src	0	stringlist	RID_TP_CUSTOMANIMATION_DURATION.LB_START	3			0	om	Kan darbetti aanee				20200411 15:09:53
 sd	source\ui\animations\CustomAnimationDialog.src	0	fixedtext	RID_TP_CUSTOMANIMATION_DURATION	FT_START_DELAY			0	om	Turiinsa				20200411 15:09:53
-sd	source\ui\animations\CustomAnimationDialog.src	0	metricfield	RID_TP_CUSTOMANIMATION_DURATION	MF_START_DELAY			0	om	 sec				20200411 15:09:53
+sd	source\ui\animations\CustomAnimationDialog.src	0	metricfield	RID_TP_CUSTOMANIMATION_DURATION	MF_START_DELAY			0	om	sec				20200411 15:09:53
 sd	source\ui\animations\CustomAnimationDialog.src	0	fixedtext	RID_TP_CUSTOMANIMATION_DURATION	FT_DURATION			0	om	saffisa				20200411 15:09:53
 sd	source\ui\animations\CustomAnimationDialog.src	0	fixedtext	RID_TP_CUSTOMANIMATION_DURATION	FT_REPEAT			0	om	Irradeebi'i				20200411 15:09:53
 sd	source\ui\animations\CustomAnimationDialog.src	0	checkbox	RID_TP_CUSTOMANIMATION_DURATION	CBX_REWIND			0	om	Ogguu tahani dhume irra deebi'i				20200411 15:09:53
@@ -19743,7 +19761,7 @@ sd	source\ui\animations\CustomAnimationDialog.src	0	stringlist	RID_TP_CUSTOMANIM
 sd	source\ui\animations\CustomAnimationDialog.src	0	stringlist	RID_TP_CUSTOMANIMATION_TEXT.LB_GROUP_TEXT	6			0	om	Keewwatoota sadarkaa 4ffaatin				20200411 15:09:53
 sd	source\ui\animations\CustomAnimationDialog.src	0	stringlist	RID_TP_CUSTOMANIMATION_TEXT.LB_GROUP_TEXT	7			0	om	Keewwatoota sadarkaa 5ffaatin				20200411 15:09:53
 sd	source\ui\animations\CustomAnimationDialog.src	0	checkbox	RID_TP_CUSTOMANIMATION_TEXT	CBX_GROUP_AUTO			0	om	Ofuma kana booda				20200411 15:09:53
-sd	source\ui\animations\CustomAnimationDialog.src	0	metricfield	RID_TP_CUSTOMANIMATION_TEXT	MF_GROUP_AUTO			0	om	 sec				20200411 15:09:53
+sd	source\ui\animations\CustomAnimationDialog.src	0	metricfield	RID_TP_CUSTOMANIMATION_TEXT	MF_GROUP_AUTO			0	om	sec				20200411 15:09:53
 sd	source\ui\animations\CustomAnimationDialog.src	0	checkbox	RID_TP_CUSTOMANIMATION_TEXT	CBX_ANIMATE_FORM			0	om	Boca miiltoo sochoosi				20200411 15:09:53
 sd	source\ui\animations\CustomAnimationDialog.src	0	checkbox	RID_TP_CUSTOMANIMATION_TEXT	CBX_REVERSE			0	om	Tartiiba garagalchi				20200411 15:09:53
 sd	source\ui\animations\CustomAnimationDialog.src	0	tabpage	RID_TP_CUSTOMANIMATION_TEXT				0	om	Sochii Barruu				20200411 15:09:53
@@ -20442,7 +20460,7 @@ extensions	source\dbpilots\listcombopages.src	0	fixedtext	RID_PAGE_LCW_FIELDLINK
 extensions	source\dbpilots\listcombopages.src	0	tabpage	RID_PAGE_LCW_FIELDLINK				0	om	Geessituu Dirree				20200411 15:09:53
 extensions	source\dbpilots\listcombopages.src	0	string	RID_STR_COMBOWIZ_DBFIELD				0	om	Gatii saanduqa makaa dirree kuusdeetaa keessa olkaa'uu ykn faayidaa agrasiisaaf fayyadamuu ni dandeessa.				20200411 15:09:53
 extensions	source\dbpilots\commonpagesdbp.src	0	fixedline	RID_PAGE_TABLESELECTION	FL_DATA			0	om	Deetaa				20200411 15:09:53
-extensions	source\dbpilots\commonpagesdbp.src	0	fixedtext	RID_PAGE_TABLESELECTION	FT_EXPLANATION			0	om	Ammaaf, unki to'annaa qabaatu madda deetaatti hin kornyanne.                  \n\nMee madda deetaa fi gabatee fili.\n\n\nQindaa'inoonni fuula kanarratti godhaman akkuma fuulichi dhiifameen hojiirra akka oolan yaadadhu.				20200411 15:09:53
+extensions	source\dbpilots\commonpagesdbp.src	0	fixedtext	RID_PAGE_TABLESELECTION	FT_EXPLANATION			0	om	Ammaaf, unki to'annaa qabaatu madda deetaatti hin kornyanne.\n\nMee madda deetaa fi gabatee fili.\n\n\nQindaa'inoonni fuula kanarratti godhaman akkuma fuulichi dhiifameen hojiirra akka oolan yaadadhu.				20200411 15:09:53
 extensions	source\dbpilots\commonpagesdbp.src	0	fixedtext	RID_PAGE_TABLESELECTION	FT_DATASOURCE			0	om	Madda Deetaa:				20200411 15:09:53
 extensions	source\dbpilots\commonpagesdbp.src	0	pushbutton	RID_PAGE_TABLESELECTION	PB_FORMDATASOURCE			14	om	~...				20200411 15:09:53
 extensions	source\dbpilots\commonpagesdbp.src	0	fixedtext	RID_PAGE_TABLESELECTION	FT_TABLE			0	om	Gabatee / Gaafata:				20200411 15:09:53
@@ -21209,10 +21227,10 @@ svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE
 svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_GERMAN_AUSTRIAN			0	om	Afaan Jarmanii (Awustraaliyaa)				20200411 15:09:53
 svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_GERMAN_LUXEMBOURG			0	om	Afaan Jarmanii (Luksanbargi)				20200411 15:09:53
 svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_GERMAN_LIECHTENSTEIN			0	om	Afaan Jarmanii (Luteeniyaa)				20200411 15:09:53
-svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_GREEK			0	om	Afaan Giriikii				20200411 15:09:53
-svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_GUJARATI			0	om	Afaan Gujarati				20200411 15:09:53
-svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_HEBREW			0	om	Afaan Hiibiruu				20200411 15:09:53
-svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_HINDI			0	om	Afaan Hindii				20200411 15:09:53
+svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_GREEK			0	om	Afaan Giriikii (Giriik)				20200411 15:09:53
+svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_GUJARATI			0	om	Afaan Gujarati (Gujarati)				20200411 15:09:53
+svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_HEBREW			0	om	Afaan Ibiraayisixi (Ibiraayisixi)				20200411 15:09:53
+svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_HINDI			0	om	Afaan Hindii (Hindi)				20200411 15:09:53
 svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_HUNGARIAN			0	om	Afaan Hangaarii				20200411 15:09:53
 svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_ICELANDIC			0	om	Afaan Ayisilaandii				20200411 15:09:53
 svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_INDONESIAN			0	om	Afaan Indooneeziyaa				20200411 15:09:53
@@ -21224,16 +21242,16 @@ svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE
 svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_KASHMIRI_INDIA			0	om	Afaan Kaashimiir (Hindi)				20200411 15:09:53
 svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_KAZAK			0	om	Afaan Kaazaak				20200411 15:09:53
 svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_KONKANI			0	om	Afaan Konkanii				20200411 15:09:53
-svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_KOREAN			0	om	Afaan Kooriyaa (RoK)				20200411 15:09:53
+svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_KOREAN			0	om	Afaan Kooriyaa				20200411 15:09:53
 svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_LATVIAN			0	om	Afaan Laativiyaa				20200411 15:09:53
 svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_LITHUANIAN			0	om	Afaan Luteeniyaa				20200411 15:09:53
 svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_MACEDONIAN			0	om	Afaan Meeqodeeniyaa				20200411 15:09:53
-svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_MALAY_MALAYSIA			0	om	Afaan Maaleziyaa (Malaysia)				20200411 15:09:53
+svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_MALAY_MALAYSIA			0	om	Afaan Maaleziyaa				20200411 15:09:53
 svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_MALAY_BRUNEI_DARUSSALAM			0	om	Afaan Maalii (Burunee Daarusalaami)				20200411 15:09:53
 svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_MALAYALAM			0	om	Afaan Malayaalaa				20200411 15:09:53
 svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_MANIPURI			0	om	Afaan Maaniipuurii				20200411 15:09:53
 svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_MARATHI			0	om	Afaan Maaraat				20200411 15:09:53
-svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_NEPALI			0	om	Afaan Neeppaal (Nepal)				20200411 15:09:53
+svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_NEPALI			0	om	Afaan Neeppaal				20200411 15:09:53
 svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_NEPALI_INDIA			0	om	Afaan Neeppaal (Hindi)				20200411 15:09:53
 svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_NORWEGIAN_BOKMAL			0	om	Afaan Noorweey Bokamaal				20200411 15:09:53
 svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_NORWEGIAN_NYNORSK			0	om	Afaan Noorweey Ninorsik				20200411 15:09:53
@@ -21274,7 +21292,7 @@ svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE
 svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_SPANISH_HONDURAS			0	om	Afaan Ispaanyi (Hunduraas)				20200411 15:09:53
 svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_SPANISH_NICARAGUA			0	om	Afaan Ispaanyi (Nikuwaaraagaa)				20200411 15:09:53
 svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_SPANISH_PUERTO_RICO			0	om	Afaan Ispaanyi (Poortoo Riikoo)				20200411 15:09:53
-svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_SWAHILI			0	om	Afaan Suwaahilii (Kenya)				20200411 15:09:53
+svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_SWAHILI			0	om	Afaan Suwaahilii				20200411 15:09:53
 svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_SWEDISH			0	om	Afaan Siwiidiinii (Siwiidiini)				20200411 15:09:53
 svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_SWEDISH_FINLAND			0	om	Afaan Siwiidiinii (Fiinlaandi)				20200411 15:09:53
 svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_TAJIK			0	om	Afaan Taaj				20200411 15:09:53
@@ -21342,12 +21360,12 @@ svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE
 svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_USER_LUXEMBOURGISH			0	om	Afaan Luuksanbargi				20200411 15:09:53
 svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_USER_FRIULIAN			0	om	Afaan Firiilii				20200411 15:09:53
 svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_USER_FIJIAN			0	om	Afaan Fijii				20200411 15:09:53
-svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_USER_AFRIKAANS_NAMIBIA			0	om	Afaan Afirikaa (Namibia)				20200411 15:09:53
+svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_USER_AFRIKAANS_NAMIBIA			0	om	Afaan Afirikaa				20200411 15:09:53
 svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_USER_ENGLISH_NAMIBIA			0	om	Afaan Ingiliizii (Naamiibiyaa)				20200411 15:09:53
 svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_USER_WALLOON			0	om	Afaan Walloo				20200411 15:09:53
 svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_USER_COPTIC			0	om	Afaan Kooptiik				20200411 15:09:53
-svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_TIGRIGNA_ERITREA			0	om	Afaan Tigiree (Eritrea)				20200411 15:09:53
-svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_TIGRIGNA_ETHIOPIA			0	om	Afaan Tigiree (Ethiopia)				20200411 15:09:53
+svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_TIGRIGNA_ERITREA			0	om	Afaan Tigiree				20200411 15:09:53
+svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_TIGRIGNA_ETHIOPIA			0	om	Afaan Tigiree				20200411 15:09:53
 svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_AMHARIC_ETHIOPIA			0	om	Afaan Amaaraa				20200411 15:09:53
 svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_KIRGHIZ			0	om	Afaan Kirgii				20200411 15:09:53
 svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_USER_GERMAN_BELGIUM			0	om	Afaan Jarmani (Beeljiyami)				20200411 15:09:53
@@ -21370,7 +21388,7 @@ svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE
 svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_USER_QUECHUA_NORTH_BOLIVIA			0	om	Afaan Kuwechuwaa (Booliviyaa Kaaba)				20200411 15:09:53
 svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_USER_QUECHUA_SOUTH_BOLIVIA			0	om	Afaan Kuwechuwaa (Booliviyaa Kibba)				20200411 15:09:53
 svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_SOMALI			0	om	Afaan Somaalii				20200411 15:09:53
-svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_SAMI_INARI			0	om	Afaan Saamii Inaarii (Finland)				20200411 15:09:53
+svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_SAMI_INARI			0	om	Afaan Saamii Inaarii Fiinlaandi				20200411 15:09:53
 svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_SAMI_LULE_NORWAY			0	om	Afaan Saamii Lulee (Norweey)				20200411 15:09:53
 svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_SAMI_LULE_SWEDEN			0	om	Afaan Saamii Lulee (Siwiidiini)				20200411 15:09:53
 svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_SAMI_NORTHERN_FINLAND			0	om	Afaan Saamii Kaabaa (Fiinlaandi)				20200411 15:09:53
@@ -21414,7 +21432,7 @@ svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE
 svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_YORUBA			0	om	Yoruba				20200411 15:09:53
 svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_USER_RUSYN_UKRAINE			0	om	Rusyn (Ukraine)				20200411 15:09:53
 svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_USER_RUSYN_SLOVAKIA			0	om	Rusyn (Slovakia)				20200411 15:09:53
-svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_USER_YIDDISH_US			0	om	Afaan Yiddiish (USA)				20200411 15:09:53
+svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_USER_YIDDISH_US			0	om	Afaan Yiddiish				20200411 15:09:53
 svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_HAWAIIAN_UNITED_STATES			0	om	Afaan Gaaliki				20200411 15:09:53
 svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_USER_LIMBU			0	om	Afaan Limbu				20200411 15:09:53
 svtools	source\misc\langtab.src	0	pairedlist	STR_ARR_SVT_LANGUAGE_TABLE	LANGUAGE_USER_LOJBAN			0	om	Afaan Lojban				20200411 15:09:53
@@ -21614,7 +21632,7 @@ svtools	source\dialogs\formats.src	0	string	STR_FORMAT_ID_STARMATH				0	om	Wanta
 svtools	source\dialogs\formats.src	0	string	STR_FORMAT_ID_STARMATH_40				0	om	Wanta StarMath 4.0				20200411 15:09:53
 svtools	source\dialogs\formats.src	0	string	STR_FORMAT_ID_STARMATH_50				0	om	Wanta StarMath 5.0				20200411 15:09:53
 svtools	source\dialogs\formats.src	0	string	STR_FORMAT_ID_STAROBJECT_PAINTDOC				0	om	Wanta StarObject Paint				20200411 15:09:53
-svtools	source\dialogs\formats.src	0	string	STR_FORMAT_ID_HTML				0	om	HTML (HyperText Markup Language)				20200411 15:09:53
+svtools	source\dialogs\formats.src	0	string	STR_FORMAT_ID_HTML				0	om	HTML				20200411 15:09:53
 svtools	source\dialogs\formats.src	0	string	STR_FORMAT_ID_HTML_SIMPLE				0	om	Dhangii HTML				20200411 15:09:53
 svtools	source\dialogs\formats.src	0	string	STR_FORMAT_ID_BIFF_5				0	om	Biff5 (Microsoft Excel 5.0/95)				20200411 15:09:53
 svtools	source\dialogs\formats.src	0	string	STR_FORMAT_ID_BIFF_8				0	om	Biff8 (Microsoft Excel 97/2000/XP)				20200411 15:09:53
@@ -22193,7 +22211,7 @@ sccomp	source\solver\solver.src	0	string	RID_PROPERTY_TIMEOUT				0	om	Limitii ye
 sccomp	source\solver\solver.src	0	string	RID_PROPERTY_EPSILONLEVEL				0	om	Sadarkaa Episiloon  (0-3)				20200411 15:09:53
 sccomp	source\solver\solver.src	0	string	RID_PROPERTY_LIMITBBDEPTH				0	om	Limitii branch-and-bound depth				20200411 15:09:53
 sccomp	source\solver\solver.src	0	string	RID_PROPERTY_NONLINEARTEST				0	om	Run strict linearity checks				20200411 15:09:53
-sccomp	source\solver\solver.src	0	string	RID_ERROR_NONLINEAR				0	om	Ilaallatni kun sorooroo miti (see options).				20200411 15:09:53
+sccomp	source\solver\solver.src	0	string	RID_ERROR_NONLINEAR				0	om	Ilaallatni kun sorooroo miti.				20200411 15:09:53
 sccomp	source\solver\solver.src	0	string	RID_ERROR_EPSILONLEVEL				0	om	Sadarkaan episiloon fashala dha.				20200411 15:09:53
 sccomp	source\solver\solver.src	0	string	RID_ERROR_INFEASIBLE				0	om	Ilaallatni kun kan gahamu miti. Haalota murteessoo mirkaneeffadhu.				20200411 15:09:53
 sccomp	source\solver\solver.src	0	string	RID_ERROR_UNBOUNDED				0	om	Ilaallata dannaba'aa miti.				20200411 15:09:53
@@ -67597,7 +67615,7 @@ helpcontent2	source\text\swriter\01\04090001.xhp	0	help	par_id3154340	25			0	om	
 helpcontent2	source\text\swriter\01\04090001.xhp	0	help	par_id3154631	26			0	om	Dirreewwan armaan gadii saagamuu kan danda'u, yoo Akaakuun dirree walgitaanii tarree \<emph\>Akaakuu \</emph\> keessatti filatame qofa.				20200411 15:09:53
 helpcontent2	source\text\swriter\01\04090001.xhp	0	help	hd_id3150660	27			0	om	Fili				20200411 15:09:53
 helpcontent2	source\text\swriter\01\04090001.xhp	0	help	par_id3150678	28			0	om	\<ahelp hid=\"SW:LISTBOX:TP_FLD_DOK:LB_DOKSELECTION\"\>Dirreewwan jiraan kan Akaakuu dirree tarree \<emph\>Akaakuu \</emph\> keessatti filatamee tarreessa. Dirree saaguuf, dirricha cuqaasitii, kana booda, \<emph\>Saagi\</emph\>cuqaasi.\</ahelp\>				20200411 15:09:53
-helpcontent2	source\text\swriter\01\04090001.xhp	0	help	par_id3155537	53			0	om	To quickly insert a field from the list, hold down \<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command \</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\> and double-click the field.				20200411 15:09:53
+helpcontent2	source\text\swriter\01\04090001.xhp	0	help	par_id3155537	53			0	om	Atatattamman tarree irraa dirree tokko saaguudhaaf, \<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Ajaja \</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\> dhiibitii, dirricha irra lama-cuqaasi.				20200411 15:09:53
 helpcontent2	source\text\swriter\01\04090001.xhp	0	help	par_id3155359	30			0	om	Dirreewwan				20200411 15:09:53
 helpcontent2	source\text\swriter\01\04090001.xhp	0	help	par_id3154220	31			0	om	Dalaga				20200411 15:09:53
 helpcontent2	source\text\swriter\01\04090001.xhp	0	help	par_id3145107	32			0	om	Fuulaa duranii				20200411 15:09:53
@@ -68994,14 +69012,14 @@ cui	source\dialogs\scriptdlg.src	0	modaldialog	RID_DLG_NEWLIB				160	om	Laayibra
 cui	source\dialogs\scriptdlg.src	0	string	RID_SVXSTR_DELQUERY				160	om	Wanta armaan gadii balleesuu feetaa?				20200411 15:09:53
 cui	source\dialogs\scriptdlg.src	0	string	RID_SVXSTR_DELQUERY_TITLE				160	om	Haqiinsa Dhugoomsi				20200411 15:09:53
 cui	source\dialogs\scriptdlg.src	0	string	RID_SVXSTR_DELFAILED				160	om	Wanti filame balleeffamuu hin danda'u.				20200411 15:09:53
-cui	source\dialogs\scriptdlg.src	0	string	RID_SVXSTR_DELFAILEDPERM				160	om	 Wanta kana balleessuuf hayyama hin qabdu.				20200411 15:09:53
+cui	source\dialogs\scriptdlg.src	0	string	RID_SVXSTR_DELFAILEDPERM				160	om	Wanta kana balleessuuf hayyama hin qabdu.				20200411 15:09:53
 cui	source\dialogs\scriptdlg.src	0	string	RID_SVXSTR_DELFAILED_TITLE				160	om	Dogoggora Wanta Balleessuu				20200411 15:09:53
 cui	source\dialogs\scriptdlg.src	0	string	RID_SVXSTR_CREATEFAILED				160	om	Wanta uumuun hin danda'amne.				20200411 15:09:53
-cui	source\dialogs\scriptdlg.src	0	string	RID_SVXSTR_CREATEFAILEDDUP				160	om	 Wanti maqaa walfakkaatun durumayyuu jira.				20200411 15:09:53
-cui	source\dialogs\scriptdlg.src	0	string	RID_SVXSTR_CREATEFAILEDPERM				160	om	 Wanta kana uumuuf hayyama hin qabdu.				20200411 15:09:53
+cui	source\dialogs\scriptdlg.src	0	string	RID_SVXSTR_CREATEFAILEDDUP				160	om	Wanti maqaa walfakkaatun durumayyuu jira.				20200411 15:09:53
+cui	source\dialogs\scriptdlg.src	0	string	RID_SVXSTR_CREATEFAILEDPERM				160	om	Wanta kana uumuuf hayyama hin qabdu.				20200411 15:09:53
 cui	source\dialogs\scriptdlg.src	0	string	RID_SVXSTR_CREATEFAILED_TITLE				160	om	Dogoggora Wanta Uumuu				20200411 15:09:53
 cui	source\dialogs\scriptdlg.src	0	string	RID_SVXSTR_RENAMEFAILED				160	om	Maqaa wantaa jijiiruuun hin danda'amne.				20200411 15:09:53
-cui	source\dialogs\scriptdlg.src	0	string	RID_SVXSTR_RENAMEFAILEDPERM				160	om	 Maqaa wanta kanaa jijjiiruuf hayyama hin qabdu.				20200411 15:09:53
+cui	source\dialogs\scriptdlg.src	0	string	RID_SVXSTR_RENAMEFAILEDPERM				160	om	Maqaa wanta kanaa jijjiiruuf hayyama hin qabdu.				20200411 15:09:53
 cui	source\dialogs\scriptdlg.src	0	string	RID_SVXSTR_RENAMEFAILED_TITLE				160	om	Dogoggora Maqaa Wantaa Jijjiiruu 				20200411 15:09:53
 cui	source\dialogs\scriptdlg.src	0	string	RID_SVXSTR_ERROR_TITLE				160	om	Dogoggora %PRODUCTNAME				20200411 15:09:53
 cui	source\dialogs\scriptdlg.src	0	string	RID_SVXSTR_ERROR_LANG_NOT_SUPPORTED				160	om	Iskiriptiin lakkaddaa %LANGUAGENAME hin deeggaramu.				20200411 15:09:53
@@ -69648,7 +69666,7 @@ cui	source\customize\acccfg.src	0	fixedline	RID_SVXPAGE_KEYBOARD	GRP_ACC_KEYBOAR
 cui	source\customize\acccfg.src	0	fixedtext	RID_SVXPAGE_KEYBOARD	TXT_ACC_KEY			80	om	Furtoota				20200411 15:09:53
 cui	source\customize\acccfg.src	0	string	RID_SVXPAGE_KEYBOARD	STR_LOADACCELCONFIG			75	om	Qindaa'ina Gabatee Cuqoo Fe'i				20200411 15:09:53
 cui	source\customize\acccfg.src	0	string	RID_SVXPAGE_KEYBOARD	STR_SAVEACCELCONFIG			75	om	Qindaa'ina Gabatee Cuqoo Olkaa'i				20200411 15:09:53
-cui	source\customize\acccfg.src	0	string	RID_SVXPAGE_KEYBOARD	STR_FILTERNAME_CFG			75	om	Qindaa'ina (*.cfg)				20200411 15:09:53
+cui	source\customize\acccfg.src	0	string	RID_SVXPAGE_KEYBOARD	STR_FILTERNAME_CFG			75	om	Qindaa'ina				20200411 15:09:53
 cui	source\customize\acccfg.src	0	string	RID_SVXPAGE_CONFIGGROUPBOX	STR_MYMACROS			75	om	Maakroota Koo				20200411 15:09:53
 cui	source\customize\acccfg.src	0	string	RID_SVXPAGE_CONFIGGROUPBOX	STR_PRODMACROS			75	om	Maakroowwan %PRODUCTNAME				20200411 15:09:53
 cui	source\customize\acccfg.src	0	string	RID_SVXPAGE_CONFIGGROUPBOX	STR_BASICMACROS			75	om	Maakroowwan BASIC				20200411 15:09:53
@@ -69825,7 +69843,7 @@ cui	source\options\optupdt.src	0	checkbox	RID_SVXPAGE_ONLINEUPDATE	CB_AUTOCHECK	
 cui	source\options\optupdt.src	0	radiobutton	RID_SVXPAGE_ONLINEUPDATE	RB_EVERYDAY			160	om	Guyyaa mara				20200411 15:09:53
 cui	source\options\optupdt.src	0	radiobutton	RID_SVXPAGE_ONLINEUPDATE	RB_EVERYWEEK			160	om	Torban mara				20200411 15:09:53
 cui	source\options\optupdt.src	0	radiobutton	RID_SVXPAGE_ONLINEUPDATE	RB_EVERYMONTH			160	om	Ji'a mara				20200411 15:09:53
-cui	source\options\optupdt.src	0	fixedtext	RID_SVXPAGE_ONLINEUPDATE	FT_LASTCHECKED			160	om	Yeroo dhumaaf too'atame: %DATE%, %TIME%				20200411 15:09:53
+cui	source\options\optupdt.src	0	fixedtext	RID_SVXPAGE_ONLINEUPDATE	FT_LASTCHECKED			160	om	 %DATE%, %TIME%:Yeroo dhumaaf too'atame				20200411 15:09:53
 cui	source\options\optupdt.src	0	pushbutton	RID_SVXPAGE_ONLINEUPDATE	PB_CHECKNOW			50	om	Amma dhugoomsi				20200411 15:09:53
 cui	source\options\optupdt.src	0	checkbox	RID_SVXPAGE_ONLINEUPDATE	CB_AUTODOWNLOAD			160	om	~Wantaa haara ofumaan kuusi				20200411 15:09:53
 cui	source\options\optupdt.src	0	fixedtext	RID_SVXPAGE_ONLINEUPDATE	FT_DESTPATHLABEL			150	om	Iddoo kuusa:				20200411 15:09:53
@@ -70042,7 +70060,7 @@ cui	source\options\optctl.src	0	stringlist	RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS	4
 cui	source\options\optctl.src	0	tabpage	RID_SVXPAGE_OPTIONS_CTL		HID_OPTIONS_CTL		260	om	Teessuma barruu walxaxaa				20200411 15:09:53
 cui	source\options\optjava.src	0	fixedline	RID_SVXPAGE_OPTIONS_JAVA	FL_JAVA			248	om	Dirqalaalee Jaavaa				20200411 15:09:53
 cui	source\options\optjava.src	0	checkbox	RID_SVXPAGE_OPTIONS_JAVA	CB_JAVA_ENABLE			242	om	JRE fayyadami				20200411 15:09:53
-cui	source\options\optjava.src	0	fixedtext	RID_SVXPAGE_OPTIONS_JAVA	FT_JAVA_FOUND			233	om	~Java (JRE) durumayyuu ijaaramee jira:				20200411 15:09:53
+cui	source\options\optjava.src	0	fixedtext	RID_SVXPAGE_OPTIONS_JAVA	FT_JAVA_FOUND			233	om	JREn durumayyuu ijaaramee jira:				20200411 15:09:53
 cui	source\options\optjava.src	0	pushbutton	RID_SVXPAGE_OPTIONS_JAVA	PB_ADD			50	om	Dabali...				20200411 15:09:53
 cui	source\options\optjava.src	0	pushbutton	RID_SVXPAGE_OPTIONS_JAVA	PB_PARAMETER			50	om	Ulaagaalee...				20200411 15:09:53
 cui	source\options\optjava.src	0	pushbutton	RID_SVXPAGE_OPTIONS_JAVA	PB_CLASSPATH			50	om	Xurree Class...				20200411 15:09:53
@@ -70262,7 +70280,7 @@ cui	source\options\optpath.src	0	string	RID_SVXSTR_KEY_CONFIG_DIR				260	om	Qind
 cui	source\options\optpath.src	0	string	RID_SVXSTR_KEY_WORK_PATH				260	om	Galmee Koo				20200411 15:09:53
 cui	source\options\optpath.src	0	string	RID_SVXSTR_KEY_GRAPHICS_PATH				260	om	Saxaatoo				20200411 15:09:53
 cui	source\options\optpath.src	0	string	RID_SVXSTR_KEY_BITMAP_PATH				260	om	Sajoota				20200411 15:09:53
-cui	source\options\optpath.src	0	string	RID_SVXSTR_KEY_PALETTE_PATH				260	om	Dhaaba Dibdoo Fakkii				20200411 15:09:53
+cui	source\options\optpath.src	0	string	RID_SVXSTR_KEY_PALETTE_PATH				260	om	DDF (Dhaaba Dibdoo Fakkii)				20200411 15:09:53
 cui	source\options\optpath.src	0	string	RID_SVXSTR_KEY_BACKUP_PATH				260	om	Dilbiilee				20200411 15:09:53
 cui	source\options\optpath.src	0	string	RID_SVXSTR_KEY_MODULES_PATH				260	om	Mojuulota				20200411 15:09:53
 cui	source\options\optpath.src	0	string	RID_SVXSTR_KEY_TEMPLATE_PATH				260	om	Qajojiilee				20200411 15:09:53
@@ -70370,9 +70388,9 @@ cui	source\tabpages\transfrm.src	0	stringlist	RID_SVXPAGE_POSITION_SIZE.LB_ORIEN
 cui	source\tabpages\transfrm.src	0	stringlist	RID_SVXPAGE_POSITION_SIZE.LB_ORIENT	2			0	om	Gubbaa				20200411 15:09:53
 cui	source\tabpages\transfrm.src	0	stringlist	RID_SVXPAGE_POSITION_SIZE.LB_ORIENT	3			0	om	Wiirtuu				20200411 15:09:53
 cui	source\tabpages\transfrm.src	0	stringlist	RID_SVXPAGE_POSITION_SIZE.LB_ORIENT	4			0	om	Jala				20200411 15:09:53
-cui	source\tabpages\transfrm.src	0	stringlist	RID_SVXPAGE_POSITION_SIZE.LB_ORIENT	5			0	om	Qubee Gubbaa				20200411 15:09:53
-cui	source\tabpages\transfrm.src	0	stringlist	RID_SVXPAGE_POSITION_SIZE.LB_ORIENT	6			0	om	Qubee Jidduu 				20200411 15:09:53
-cui	source\tabpages\transfrm.src	0	stringlist	RID_SVXPAGE_POSITION_SIZE.LB_ORIENT	7			0	om	Qubee Jala				20200411 15:09:53
+cui	source\tabpages\transfrm.src	0	stringlist	RID_SVXPAGE_POSITION_SIZE.LB_ORIENT	5			0	om	Gubbaa arfii (qubee)				20200411 15:09:53
+cui	source\tabpages\transfrm.src	0	stringlist	RID_SVXPAGE_POSITION_SIZE.LB_ORIENT	6			0	om	Jidduu arfii (qubee)				20200411 15:09:53
+cui	source\tabpages\transfrm.src	0	stringlist	RID_SVXPAGE_POSITION_SIZE.LB_ORIENT	7			0	om	Jala arfii (qubee)				20200411 15:09:53
 cui	source\tabpages\transfrm.src	0	stringlist	RID_SVXPAGE_POSITION_SIZE.LB_ORIENT	8			0	om	Gubbaa sararaa				20200411 15:09:53
 cui	source\tabpages\transfrm.src	0	stringlist	RID_SVXPAGE_POSITION_SIZE.LB_ORIENT	9			0	om	Jidduu sararaa				20200411 15:09:53
 cui	source\tabpages\transfrm.src	0	stringlist	RID_SVXPAGE_POSITION_SIZE.LB_ORIENT	10			0	om	Jala sararaa				20200411 15:09:53
@@ -70473,7 +70491,7 @@ cui	source\tabpages\tabline.src	0	string	RID_SVXPAGE_LINE_DEF	STR_START_TYPE			2
 cui	source\tabpages\tabline.src	0	string	RID_SVXPAGE_LINE_DEF	STR_END_TYPE			248	om	Bareessu xumurii				20200411 15:09:53
 cui	source\tabpages\tabline.src	0	string	RID_SVXPAGE_LINE_DEF	STR_START_NUM			248	om	Lakkoofsa eegali				20200411 15:09:53
 cui	source\tabpages\tabline.src	0	string	RID_SVXPAGE_LINE_DEF	STR_END_NUM			248	om	Lakkoofsa xumurii				20200411 15:09:53
-cui	source\tabpages\tabline.src	0	string	RID_SVXPAGE_LINE_DEF	STR_START_LENGTH			248	om	Dheerina Jalqabaa				20200411 15:09:53
+cui	source\tabpages\tabline.src	0	string	RID_SVXPAGE_LINE_DEF	STR_START_LENGTH			248	om	 Dheerina Jalqabaa				20200411 15:09:53
 cui	source\tabpages\tabline.src	0	string	RID_SVXPAGE_LINE_DEF	STR_END_LENGTH			248	om	Dheerina xumuraa				20200411 15:09:53
 cui	source\tabpages\tabline.src	0	tabpage	RID_SVXPAGE_LINE_DEF		HID_LINE_DEF		260	om	Haalota sararaa qindeessi				20200411 15:09:53
 cui	source\tabpages\tabline.src	0	fixedline	RID_SVXPAGE_LINEEND_DEF	FL_TIP			248	om	Haalatoota xiyyaa 				20200411 15:09:53
@@ -70779,7 +70797,7 @@ cui	source\tabpages\numpages.src	0	fixedline	RID_SVXPAGE_PICK_SINGLE_NUM	FL_VALU
 cui	source\tabpages\numpages.src	0	fixedline	RID_SVXPAGE_PICK_NUM	FL_VALUES			248	om	Filannoo				20200411 15:09:53
 cui	source\tabpages\numpages.src	0	fixedline	RID_SVXPAGE_PICK_BMP	FL_VALUES			248	om	Filannoo				20200411 15:09:53
 cui	source\tabpages\numpages.src	0	checkbox	RID_SVXPAGE_PICK_BMP	CB_LINKED			100	om	~Saxaatoo Geessituu				20200411 15:09:53
-cui	source\tabpages\numpages.src	0	fixedtext	RID_SVXPAGE_PICK_BMP	FT_ERROR			242	om	Saxaaton hin Jiru (no graphics).				20200411 15:09:53
+cui	source\tabpages\numpages.src	0	fixedtext	RID_SVXPAGE_PICK_BMP	FT_ERROR			242	om	Saxaaton hin Jiru				20200411 15:09:53
 cui	source\tabpages\numpages.src	0	fixedtext	RID_SVXPAGE_NUM_OPTIONS	FT_LEVEL			50	om	Sadarkaa				20200411 15:09:53
 cui	source\tabpages\numpages.src	0	fixedline	RID_SVXPAGE_NUM_OPTIONS	FL_FORMAT			248	om	Dhangii				20200411 15:09:53
 cui	source\tabpages\numpages.src	0	fixedtext	RID_SVXPAGE_NUM_OPTIONS	FT_FMT			50	om	~Lakkaawwii				20200411 15:09:53
@@ -71952,6 +71970,15 @@ dbaccess	source\ui\browser\sbabrw.src	0	string	STR_LOADING_TABLE				0	om	Gabatee
 dbaccess	source\ui\browser\sbabrw.src	0	string	STR_NO_TABLE_FORMAT_INSIDE				0	om	Dhangii gabatee homtuu hin argamne.				20200411 15:09:53
 dbaccess	source\ui\browser\sbabrw.src	0	string	STR_COULDNOTCONNECT_DATASOURCE				0	om	Walindhaan madda deetaa "$name$" ijaaramuu hin dandeenye.				20200411 15:09:53
 dbaccess	source\ui\browser\sbabrw.src	0	menuitem	RID_MENU_REFRESH_DATA	ID_BROWSER_REFRESH_REBUILD			0	om	Lamuu ijaari				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_TITLE_CONFIRM_DELETION			0	om	Haqiinsa Dhugoomsi				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_QUERY_DELETE_TABLE			0	om	Gabatee '%1' haquu ni barbaaddaa?				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	querybox	MENU_BROWSER_DEFAULTCONTEXT	QUERY_BRW_DELETE_QUERY_CONFIRM			0	om	Gaafataan kanaan dura jira. Haquunii barbaaddaa?				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	querybox	MENU_BROWSER_DEFAULTCONTEXT	QUERY_CONNECTION_LOST			0	om	Walindhaan kuusdeetaa addaan citeera. Lamuu walindhuu barbaaddaa?				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_OPENTABLES_WARNINGS			0	om	Ofeeggannoowwan mudatan				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_OPENTABLES_WARNINGS_DETAILS			0	om	Gabateewwan osoo kebaafatuu, ofeeggannoowwan walindhaa kuusdeetaatiin gabaasamaniiru.				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_NO_TABLE_FORMAT_INSIDE			0	om	Dhangii gabatee homtuu hin argamne.				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_COULDNOTCONNECT_DATASOURCE			0	om	Walindhaan madda deetaa "$name$" ijaaramuu hin dandeenye.				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	menuitem	MENU_BROWSER_DEFAULTCONTEXT.RID_MENU_REFRESH_DATA	ID_BROWSER_REFRESH_REBUILD			0	om	Lamuu ijaari				20200411 15:09:53
 dbaccess	source\ui\browser\sbagrid.src	0	menuitem	RID_SBA_GRID_COLCTXMENU	ID_BROWSER_COLATTRSET	HID_BROWSER_COLUMNFORMAT		0	om	Dhangii Tarjaa...				20200411 15:09:53
 dbaccess	source\ui\browser\sbagrid.src	0	menuitem	RID_SBA_GRID_COLCTXMENU	ID_BROWSER_COLUMNINFO	HID_BROWSER_COLUMNINFO		0	om	Ibsa Tarjaa Garagalchi				20200411 15:09:53
 dbaccess	source\ui\browser\sbagrid.src	0	menuitem	RID_SBA_GRID_ROWCTXMENU	ID_BROWSER_TABLEATTR	HID_BROWSER_TABLEFORMAT		0	om	Dhangii Gabatee...				20200411 15:09:53
@@ -71980,7 +72007,7 @@ dbaccess	source\ui\uno\copytablewizard.src	0	string	STR_CTW_ERROR_DURING_INITIAL
 dbaccess	source\ui\uno\copytablewizard.src	0	string	STR_CTW_ERROR_UNSUPPORTED_SETTING				0	om	Qindaa'ina hin deeggaramne, ibsaa burqaa:  $name$.				20200411 15:09:53
 dbaccess	source\ui\uno\copytablewizard.src	0	string	STR_CTW_ERROR_NO_QUERY				0	om	Gaafta garagalchuuf, walindhaan kee gaafattu erguu danda'uu qaba.				20200411 15:09:53
 dbaccess	source\ui\uno\copytablewizard.src	0	string	STR_CTW_ERROR_INVALID_INTERACTIONHANDLER				0	om	To'aatan gochaa kenaame sirrii miti.				20200411 15:09:53
-dbaccess	source\ui\tabledesign\table.src	0	string	STR_TABLEDESIGN_DBFIELDTYPES				0	om	Hinbeekamu;Barruu;Lakkoofsa;Guyyaa/Yeroo;Guyyaa;Yeroo;Eeyyeen/Lakki;Maallaqa;Yaadannoo;Lakkaa'aa;Fakkaattii;Barruu(suphi);Kurnyee;Lamee(suphi);Lamee;IntGuddaa;Dachaa;Bololi'aa;Waliigala;Itiijara;Iniijara Xiqqaa;Intiijara Bucuree;Homaa SQL;Wanta;Addata;Caasaa;Dirree;BLOB;CLOB;REF;OTHER;Bit(suphi)				20200411 15:09:53
+dbaccess	source\ui\tabledesign\table.src	0	string	STR_TABLEDESIGN_DBFIELDTYPES				0	om	Hinbeekamu;Barruu;Lakkoofsa;Guyyaa/Yeroo;Guyyaa;Yeroo;Eeyyeen/Lakki;Maallaqa;Yaadannoo;Lakkaa'aa;Fakkaattii;Barruu(suphi);Kurnyee;Lamee(suphi);Lamee;IntGuddaa;Dachaa;Bololi'aa;Waliigala;Itiijara;Iniijara Xiqqaa;Intiijara Bucuree;Homaa SQL;Wanta;Addata;Caasaa;Dirree;BLOB;CLOB;REF;OTHER				20200411 15:09:53
 dbaccess	source\ui\tabledesign\table.src	0	string	STR_TABLEDESIGN_UNDO_PRIMKEY				0	om	Furtuu dursaa saagi/balleessi				20200411 15:09:53
 dbaccess	source\ui\tabledesign\table.src	0	string	STR_VALUE_YES				0	om	Eeyyee				20200411 15:09:53
 dbaccess	source\ui\tabledesign\table.src	0	string	STR_VALUE_NO				0	om	Lakki				20200411 15:09:53
@@ -72182,7 +72209,7 @@ dbaccess	source\ui\dlg\dbadminsetup.src	0	fixedtext	PAGE_DBWIZARD_MYSQL_NATIVE	F
 dbaccess	source\ui\dlg\dbadminsetup.src	0	string	PAGE_DBWIZARD_DBASE	STR_DBASE_HEADERTEXT			0	om	Walindhaa faayiloota dBASE qindeessi				20200411 15:09:53
 dbaccess	source\ui\dlg\dbadminsetup.src	0	string	PAGE_DBWIZARD_DBASE	STR_DBASE_HELPTEXT			0	om	Ukaankaa faayiloonni dBASE irratti kuufaman fili.				20200411 15:09:53
 dbaccess	source\ui\dlg\dbadminsetup.src	0	string	PAGE_DBWIZARD_TEXT	STR_TEXT_HEADERTEXT			0	om	Walindhaa faayiloota barruu qindeessi				20200411 15:09:53
-dbaccess	source\ui\dlg\dbadminsetup.src	0	string	PAGE_DBWIZARD_TEXT	STR_TEXT_HELPTEXT			0	om	Ukaankaa faayiloonni barruu CSV (Comma Separated Values) irratti kuufaman fili.  %PRODUCTNAME Base faayiloota kana haalata dubbisqofaan bana.				20200411 15:09:53
+dbaccess	source\ui\dlg\dbadminsetup.src	0	string	PAGE_DBWIZARD_TEXT	STR_TEXT_HELPTEXT			0	om	Ukaankaa faayiloonni barruu CSV irratti kuufaman fili. %PRODUCTNAME Base faayiloota kana haalata dubbisqofaan bana.				20200411 15:09:53
 dbaccess	source\ui\dlg\dbadminsetup.src	0	string	PAGE_DBWIZARD_TEXT	STR_TEXT_PATH_OR_FILE			0	om	Xurree faayiloota barruu				20200411 15:09:53
 dbaccess	source\ui\dlg\dbadminsetup.src	0	string	PAGE_DBWIZARD_MSACCESS	STR_MSACCESS_HEADERTEXT			0	om	Walindhaa kuusdeetaa Maaykiroosooft Aksasii qindeessi				20200411 15:09:53
 dbaccess	source\ui\dlg\dbadminsetup.src	0	string	PAGE_DBWIZARD_MSACCESS	STR_MSACCESS_HELPTEXT			0	om	Faayilii Maaykiroosooft Aksasii itti fayyadamuu barbaaddu fili.				20200411 15:09:53
