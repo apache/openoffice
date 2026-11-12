@@ -607,7 +607,7 @@ sal_uInt32 ImplEESdrWriter::ImplWriteShape( ImplEESdrObject& rObj,
 				if( rObj.ImplGetText() )
 				{
 					/* SJ #i34951#: because M. documents are not allowing GraphicObjects containing text, we
-					   have to create a simpe Rectangle with fill bitmap instead (while not allowing BitmapMode_Repeat).
+					   have to create a simple Rectangle with fill bitmap instead (while not allowing BitmapMode_Repeat).
 					*/
 					ADD_SHAPE( ESCHER_ShpInst_Rectangle, 0xa00 );			// Flags: Connector | HasSpt
 					if ( aPropOpt.CreateGraphicProperties( rObj.mXPropSet, String( RTL_CONSTASCII_USTRINGPARAM( "GraphicURL" ) ), sal_True,  sal_True, sal_False ) )

@@ -804,7 +804,7 @@ static sal_Bool lcl_IsAnyXMLFilter( const SfxFilter* pFilter )
 
     if ( nIndexOfInputStream == -1 && xStream.is() )
     {
-        // if input stream wasn't part of the descriptor, now it should be, otherwise the content would be opend twice
+        // if input stream wasn't part of the descriptor, now it should be, otherwise the content would be opened twice
         lDescriptor.realloc( nPropertyCount + 1 );
         lDescriptor[nPropertyCount].Name = ::rtl::OUString::createFromAscii("InputStream");
         lDescriptor[nPropertyCount].Value <<= xStream;
@@ -813,7 +813,7 @@ static sal_Bool lcl_IsAnyXMLFilter( const SfxFilter* pFilter )
 
     if ( nIndexOfContent == -1 && xContent.is() )
     {
-        // if input stream wasn't part of the descriptor, now it should be, otherwise the content would be opend twice
+        // if input stream wasn't part of the descriptor, now it should be, otherwise the content would be opened twice
         lDescriptor.realloc( nPropertyCount + 1 );
         lDescriptor[nPropertyCount].Name = ::rtl::OUString::createFromAscii("UCBContent");
         lDescriptor[nPropertyCount].Value <<= xContent;
