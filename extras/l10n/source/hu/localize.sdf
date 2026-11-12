@@ -4543,6 +4543,24 @@ svx	source\form\fmexpl.src	0	menuitem	RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTT
 svx	source\form\fmexpl.src	0	groupbox	RID_SVXDLG_SETFORM	GB_PATH			188	hu	Útvonal				20200411 15:09:53
 svx	source\form\fmexpl.src	0	modaldialog	RID_SVXDLG_SETFORM				200	hu	Űrlap kiválasztása				20200411 15:09:53
 svx	source\form\fmexpl.src	0	dockingwindow	RID_SVX_FMEXPLORER				200	hu	Űrlapnavigátor				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_EDIT	CMD_SID_FM_CONVERTTO_EDIT		42916	hu	~Szövegdoboz				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_BUTTON	CMD_SID_FM_CONVERTTO_BUTTON		42916	hu	~Gomb				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_FIXEDTEXT	CMD_SID_FM_CONVERTTO_FIXEDTEXT		42916	hu	~Címkemező				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_GROUPBOX	CMD_SID_FM_CONVERTTO_GROUPBOX		42916	hu	~Csoportpanel				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_LISTBOX	CMD_SID_FM_CONVERTTO_LISTBOX		42916	hu	L~istapanel				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_CHECKBOX	CMD_SID_FM_CONVERTTO_CHECKBOX		42916	hu	~Jelölőnégyzet				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_RADIOBUTTON	CMD_SID_FM_CONVERTTO_RADIOBUTTON		42916	hu	~Rádiógomb				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_COMBOBOX	CMD_SID_FM_CONVERTTO_COMBOBOX		42916	hu	~Kombinált lista				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_IMAGEBUTTON	CMD_SID_FM_CONVERTTO_IMAGEBUTTON		42916	hu	Képgo~mb				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_FILECONTROL	CMD_SID_FM_CONVERTTO_FILECONTROL		42916	hu	~Fájlválasztás				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_DATE	CMD_SID_FM_CONVERTTO_DATE		42916	hu	~Dátummező				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_TIME	CMD_SID_FM_CONVERTTO_TIME		42916	hu	~Időmező				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_NUMERIC	CMD_SID_FM_CONVERTTO_NUMERIC		42916	hu	~Számmező				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_CURRENCY	CMD_SID_FM_CONVERTTO_CURRENCY		42916	hu	~Pénznemmező				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_PATTERN	CMD_SID_FM_CONVERTTO_PATTERN		42916	hu	~Maszkolt mező				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_IMAGECONTROL	CMD_SID_FM_CONVERTTO_IMAGECONTROL		42916	hu	~Kép-vezérlőelem				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_FORMATTED	CMD_SID_FM_CONVERTTO_FORMATTED		42916	hu	Fo~rmázott mező				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_SCROLLBAR	CMD_SID_FM_CONVERTTO_SCROLLBAR		42916	hu	Görgetősáv				20200411 15:09:53
 svx	source\form\filtnav.src	0	menuitem	RID_FM_FILTER_MENU	SID_FM_DELETE	HID_FM_DELETE		0	hu	~Törlés				20200411 15:09:53
 svx	source\form\filtnav.src	0	menuitem	RID_FM_FILTER_MENU	SID_FM_FILTER_EDIT	HID_FM_FILTER_EDIT		0	hu	~Szerkesztés				20200411 15:09:53
 svx	source\form\filtnav.src	0	menuitem	RID_FM_FILTER_MENU	SID_FM_FILTER_IS_NULL	HID_FM_FILTER_IS_NULL		0	hu	~NULL				20200411 15:09:53
@@ -15672,6 +15690,7 @@ officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..G
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Popups..uno:TransliterateMenu	Label			0	hu	Kisbetű - nagybetű				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Popups..uno:ViewMenu	Label			0	hu	~View				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Popups..uno:WindowList	Label			0	hu	~Window				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:Substract	Label			0	hu	Kivonás				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:AcceptChange	Label			0	hu	Módosítás elfogadása				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:AcceptTracedChange	Label			0	hu	Módosítás elfogadása				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:AcceptTrackedChanges	Label			0	hu	Változtatások ~elfogadása vagy elutasítása...				20200411 15:09:53
@@ -71953,6 +71972,15 @@ dbaccess	source\ui\browser\sbabrw.src	0	string	STR_LOADING_TABLE				0	hu	$name$ 
 dbaccess	source\ui\browser\sbabrw.src	0	string	STR_NO_TABLE_FORMAT_INSIDE				0	hu	Semmilyen táblaformátum nem található.				20200411 15:09:53
 dbaccess	source\ui\browser\sbabrw.src	0	string	STR_COULDNOTCONNECT_DATASOURCE				0	hu	Nem hozható létre kapcsolat a következő adatforrással: „$name$”.				20200411 15:09:53
 dbaccess	source\ui\browser\sbabrw.src	0	menuitem	RID_MENU_REFRESH_DATA	ID_BROWSER_REFRESH_REBUILD			0	hu	Újraépítés				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_TITLE_CONFIRM_DELETION			7527	hu	Törlés jóváhagyása				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_QUERY_DELETE_TABLE			7527	hu	Biztosan törli a következő táblát: „%1”?				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	querybox	MENU_BROWSER_DEFAULTCONTEXT	QUERY_BRW_DELETE_QUERY_CONFIRM			7527	hu	A lekérdezés már létezik. Szeretné törölni?				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	querybox	MENU_BROWSER_DEFAULTCONTEXT	QUERY_CONNECTION_LOST			7527	hu	Az adatbázis-kapcsolat megszakadt. Újra szeretne csatlakozni?				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_OPENTABLES_WARNINGS			7527	hu	Kapott figyelmeztetések				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_OPENTABLES_WARNINGS_DETAILS			7527	hu	A táblák letöltése alatt figyelmeztetéseket küldött az adatbázis-kapcsolat.				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_NO_TABLE_FORMAT_INSIDE			7527	hu	Semmilyen táblaformátum nem található.				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_COULDNOTCONNECT_DATASOURCE			7527	hu	Nem hozható létre kapcsolat a következő adatforrással: „$name$”.				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	menuitem	MENU_BROWSER_DEFAULTCONTEXT.RID_MENU_REFRESH_DATA	ID_BROWSER_REFRESH_REBUILD			25336	hu	Újraépítés				20200411 15:09:53
 dbaccess	source\ui\browser\sbagrid.src	0	menuitem	RID_SBA_GRID_COLCTXMENU	ID_BROWSER_COLATTRSET	HID_BROWSER_COLUMNFORMAT		0	hu	~Oszlopformátum...				20200411 15:09:53
 dbaccess	source\ui\browser\sbagrid.src	0	menuitem	RID_SBA_GRID_COLCTXMENU	ID_BROWSER_COLUMNINFO	HID_BROWSER_COLUMNINFO		0	hu	~Oszlopleírás másolása				20200411 15:09:53
 dbaccess	source\ui\browser\sbagrid.src	0	menuitem	RID_SBA_GRID_ROWCTXMENU	ID_BROWSER_TABLEATTR	HID_BROWSER_TABLEFORMAT		0	hu	Táblaformátum...				20200411 15:09:53
@@ -72918,3 +72946,16 @@ padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_TXT			14
 padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_USER_TXT			60	hu	~Felhasználó				20200411 15:09:53
 padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_PASS_TXT			60	hu	~Jelszó				20200411 15:09:53
 padmin	source\rtsetup.src	0	modaldialog	RID_RTS_PWDIALOG				150	hu	Hitelesítési kérés				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10652				0	hu	\<ahelp hid=\".\" visibility=\"hidden\"\>Megnyitja a Mintaoldalak lapot, ahol alkalmazhat egy mintaoldalt (hátteret) az összes diára (bal kattintás) vagy a kijelölt diákra (jobb kattintás).\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1067D				0	hu	\<ahelp hid=\".\" visibility=\"hidden\"\>Felsorolja a jelenleg használt mintaoldalakat.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106A8				0	hu	\<ahelp hid=\".\" visibility=\"hidden\"\>Felsorolja a nemrég használt mintaoldalakat.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106D3				0	hu	\<ahelp hid=\".\" visibility=\"hidden\"\>Felsorolja az összes rendelkezésre álló mintaoldalt.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106FA				0	hu	\<ahelp hid=\".\" visibility=\"hidden\"\>A bal kattintás hatására a mintaoldal az összes diára alkalmazódik. A jobb kattintás felhozza a helyi menüt.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10747				0	hu	\<ahelp hid=\".\" visibility=\"hidden\"\>A mintaoldal alkalmazása az összes diára.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10762				0	hu	\<ahelp hid=\".\" visibility=\"hidden\"\>A mintaoldal vagy diaterv alkalmazása a kijelölt diákra.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10785				0	hu	\<ahelp hid=\".\" visibility=\"hidden\"\>A mintaoldal előnézetének méretét szabályozza.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107B4				0	hu	\<ahelp hid=\".\" visibility=\"hidden\"\>Megnyitja az Elrendezések lapot, ahol alkalmazhatja a diatervet a kijelölt diára vagy diákra.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107CB				0	hu	\<ahelp hid=\".\" visibility=\"hidden\"\>Kattintson, ha minden kijelölt diára alkalmazni akarja a diatervet. A jobb kattintás felhozza a helyi menüt.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1080E				0	hu	\<ahelp hid=\".\" visibility=\"hidden\"\>Megnyitja az Egyéni animáció lapot, ahol hatásokat rendelhet hozzá a dia kijelölt objektumaihoz.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10839				0	hu	\<ahelp hid=\".\" visibility=\"hidden\"\>Megnyitja a Diaátmenet lapot, ahol átmeneti hatásokat rendelhet hozzá a kijelölt diákhoz.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_id0916200812240344				0	hu	\<ahelp hid=\".\" visibility=\"hidden\"\>Megnyitja a Táblatervezést. Kattintson duplán egy előnézetre új táblázat beszúrásához.\</ahelp\>				20200411 15:09:53

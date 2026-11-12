@@ -4543,6 +4543,24 @@ svx	source\form\fmexpl.src	0	menuitem	RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTT
 svx	source\form\fmexpl.src	0	groupbox	RID_SVXDLG_SETFORM	GB_PATH			188	sr	Путања				20200411 15:09:53
 svx	source\form\fmexpl.src	0	modaldialog	RID_SVXDLG_SETFORM				200	sr	Образац за избор				20200411 15:09:53
 svx	source\form\fmexpl.src	0	dockingwindow	RID_SVX_FMEXPLORER				200	sr	Навигатор обрасца				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_EDIT	CMD_SID_FM_CONVERTTO_EDIT		42916	sr	~Поље за текст				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_BUTTON	CMD_SID_FM_CONVERTTO_BUTTON		42916	sr	~Дугме				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_FIXEDTEXT	CMD_SID_FM_CONVERTTO_FIXEDTEXT		42916	sr	Поље ~ознаке				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_GROUPBOX	CMD_SID_FM_CONVERTTO_GROUPBOX		42916	sr	Г~рупни оквир				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_LISTBOX	CMD_SID_FM_CONVERTTO_LISTBOX		42916	sr	~Листа				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_CHECKBOX	CMD_SID_FM_CONVERTTO_CHECKBOX		42916	sr	Поље за ~потврду				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_RADIOBUTTON	CMD_SID_FM_CONVERTTO_RADIOBUTTON		42916	sr	~Дугме за опцију				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_COMBOBOX	CMD_SID_FM_CONVERTTO_COMBOBOX		42916	sr	Ком~бинована листа				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_IMAGEBUTTON	CMD_SID_FM_CONVERTTO_IMAGEBUTTON		42916	sr	Дугме са ~сликом				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_FILECONTROL	CMD_SID_FM_CONVERTTO_FILECONTROL		42916	sr	Избор ~датотеке				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_DATE	CMD_SID_FM_CONVERTTO_DATE		42916	sr	Поље са ~датумом				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_TIME	CMD_SID_FM_CONVERTTO_TIME		42916	sr	Поље са ~временом				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_NUMERIC	CMD_SID_FM_CONVERTTO_NUMERIC		42916	sr	~Нумеричко поље				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_CURRENCY	CMD_SID_FM_CONVERTTO_CURRENCY		42916	sr	Поље са ~валутом				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_PATTERN	CMD_SID_FM_CONVERTTO_PATTERN		42916	sr	Поље са ~маском				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_IMAGECONTROL	CMD_SID_FM_CONVERTTO_IMAGECONTROL		42916	sr	Контрола с~лике				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_FORMATTED	CMD_SID_FM_CONVERTTO_FORMATTED		42916	sr	~Форматирано поље				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_SCROLLBAR	CMD_SID_FM_CONVERTTO_SCROLLBAR		42916	sr	Трака за померање				20200411 15:09:53
 svx	source\form\filtnav.src	0	menuitem	RID_FM_FILTER_MENU	SID_FM_DELETE	HID_FM_DELETE		0	sr	~Обриши				20200411 15:09:53
 svx	source\form\filtnav.src	0	menuitem	RID_FM_FILTER_MENU	SID_FM_FILTER_EDIT	HID_FM_FILTER_EDIT		0	sr	~Уреди				20200411 15:09:53
 svx	source\form\filtnav.src	0	menuitem	RID_FM_FILTER_MENU	SID_FM_FILTER_IS_NULL	HID_FM_FILTER_IS_NULL		0	sr	~Је ништа				20200411 15:09:53
@@ -15672,6 +15690,7 @@ officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..G
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Popups..uno:TransliterateMenu	Label			0	sr	~Замена малих и ВЕЛИКИХ слова				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Popups..uno:ViewMenu	Label			0	sr	~View				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Popups..uno:WindowList	Label			0	sr	~Window				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:Substract	Label			0	sr	~Одузми				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:AcceptChange	Label			0	sr	Прихвати измену				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:AcceptTracedChange	Label			0	sr	Прихвати измену				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:AcceptTrackedChanges	Label			0	sr	~Прихвати или одбаци...				20200411 15:09:53
@@ -71951,6 +71970,15 @@ dbaccess	source\ui\browser\sbabrw.src	0	string	STR_LOADING_TABLE				0	sr	Учи�
 dbaccess	source\ui\browser\sbabrw.src	0	string	STR_NO_TABLE_FORMAT_INSIDE				0	sr	Не могу да пронађем формат табеле.				20200411 15:09:53
 dbaccess	source\ui\browser\sbabrw.src	0	string	STR_COULDNOTCONNECT_DATASOURCE				0	sr	Не могу да успоставим везу са извором података „$name$“.				20200411 15:09:53
 dbaccess	source\ui\browser\sbabrw.src	0	menuitem	RID_MENU_REFRESH_DATA	ID_BROWSER_REFRESH_REBUILD			0	sr	Поново направи				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_TITLE_CONFIRM_DELETION			7527	sr	Потврди брисање				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_QUERY_DELETE_TABLE			7527	sr	Желите ли да избришете табелу „%1“?				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	querybox	MENU_BROWSER_DEFAULTCONTEXT	QUERY_BRW_DELETE_QUERY_CONFIRM			7527	sr	Овај упит већ постоји. Да ли желите да га избришете?				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	querybox	MENU_BROWSER_DEFAULTCONTEXT	QUERY_CONNECTION_LOST			7527	sr	Веза са базом података је изгубљена. Да ли желите да поново успоставите везу?				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_OPENTABLES_WARNINGS			7527	sr	Појавила су се упозорења				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_OPENTABLES_WARNINGS_DETAILS			7527	sr	Приликом прикупљања табела веза са базом података је пријавила грешку.				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_NO_TABLE_FORMAT_INSIDE			7527	sr	Не могу да пронађем формат табеле.				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_COULDNOTCONNECT_DATASOURCE			7527	sr	Не могу да успоставим везу са извором података „$name$“.				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	menuitem	MENU_BROWSER_DEFAULTCONTEXT.RID_MENU_REFRESH_DATA	ID_BROWSER_REFRESH_REBUILD			25336	sr	Поново направи				20200411 15:09:53
 dbaccess	source\ui\browser\sbagrid.src	0	menuitem	RID_SBA_GRID_COLCTXMENU	ID_BROWSER_COLATTRSET	HID_BROWSER_COLUMNFORMAT		0	sr	Формат ~колоне...				20200411 15:09:53
 dbaccess	source\ui\browser\sbagrid.src	0	menuitem	RID_SBA_GRID_COLCTXMENU	ID_BROWSER_COLUMNINFO	HID_BROWSER_COLUMNINFO		0	sr	Копирај ~опис колоне				20200411 15:09:53
 dbaccess	source\ui\browser\sbagrid.src	0	menuitem	RID_SBA_GRID_ROWCTXMENU	ID_BROWSER_TABLEATTR	HID_BROWSER_TABLEFORMAT		0	sr	Формат табеле...				20200411 15:09:53

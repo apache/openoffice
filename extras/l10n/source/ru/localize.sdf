@@ -736,7 +736,7 @@ instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ER
 instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_65				0	ru	Ошибка доступа. Пожалуйста, убедитесь что Windows Installer сконфигурирован правильно и попытайтесь произвести инсталляцию снова.				20200411 15:09:53
 instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_66				0	ru	Пользователь [2] уже произвёл установку продукта [3]. Тому пользователю необходимо запустить установку ещё раз перед использованием продукта. Ваша установка будет продолжена.				20200411 15:09:53
 instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_67				0	ru	Пользователь [2] уже произвёл установку продукта [3]. Тому пользователю необходимо запустить установку ещё раз перед использованием продукта.				20200411 15:09:53
-instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_68				0	ru	Out of disk space -- Volume: '[2]'; required space: [3] KB; available space: [4] KB. Free some disk space and retry.				20200411 15:09:53
+instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_68				0	ru	Нет места на диске -- том: «[2]»; требуется места [3] Кбайт; доступно: [4] Кбайт. Освободите место на диске и повторите снова.				20200411 15:09:53
 instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_69				0	ru	Вы уверены, что хотите отменить?				20200411 15:09:53
 instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_70				0	ru	Файл [2][3] уже используется {процесс: Имя: [4], ID: [5], Заголовок окна: [6]}. Закройте указанное приложение и повторите снова.				20200411 15:09:53
 instsetoo_native	inc_openoffice\windows\msi_languages\Error.ulf	0	LngText	OOO_ERROR_71				0	ru	Установленный продукт [2] препятствует текущей установке. Эти два продукта несовместимы.				20200411 15:09:53
@@ -10760,7 +10760,7 @@ sc	source\ui\src\optsolver.src	0	imagebutton	RID_SCDLG_OPTSOLVER	IB_OBJECTIVECEL
 sc	source\ui\src\optsolver.src	0	fixedtext	RID_SCDLG_OPTSOLVER	FT_DIRECTION			86	ru	Результат				20200411 15:09:53
 sc	source\ui\src\optsolver.src	0	radiobutton	RID_SCDLG_OPTSOLVER	RB_MAX			50	ru	Максимум				20200411 15:09:53
 sc	source\ui\src\optsolver.src	0	radiobutton	RID_SCDLG_OPTSOLVER	RB_MIN			50	ru	Минимум				20200411 15:09:53
-sc	source\ui\src\optsolver.src	0	radiobutton	RID_SCDLG_OPTSOLVER	RB_VALUE			42	ru	Value				20200411 15:09:53
+sc	source\ui\src\optsolver.src	0	radiobutton	RID_SCDLG_OPTSOLVER	RB_VALUE			42	ru	Значение				20200411 15:09:53
 sc	source\ui\src\optsolver.src	0	imagebutton	RID_SCDLG_OPTSOLVER	IB_TARGET			13	ru	-		Свернуть/Развернуть		20200411 15:09:53
 sc	source\ui\src\optsolver.src	0	fixedtext	RID_SCDLG_OPTSOLVER	FT_VARIABLECELLS			86	ru	~Изменяя ячейки				20200411 15:09:53
 sc	source\ui\src\optsolver.src	0	imagebutton	RID_SCDLG_OPTSOLVER	IB_VARIABLECELLS			13	ru	-		Свернуть/Развернуть		20200411 15:09:53
@@ -11603,7 +11603,7 @@ sc	source\ui\navipi\navipi.src	0	window	RID_SCDLG_NAVIGATOR		HID_SC_NAVIGATOR		1
 sc	source\ui\navipi\navipi.src	0	string	SCSTR_CONTENT_ROOT				115	ru	Содержимое				20200411 15:09:53
 sc	source\ui\navipi\navipi.src	0	string	SCSTR_CONTENT_TABLE				115	ru	Листы				20200411 15:09:53
 sc	source\ui\navipi\navipi.src	0	string	SCSTR_CONTENT_RANGENAME				115	ru	Названия диапазона				20200411 15:09:53
-sc	source\ui\navipi\navipi.src	0	string	SCSTR_CONTENT_DBAREA				115	ru	Database ranges				20200411 15:09:53
+sc	source\ui\navipi\navipi.src	0	string	SCSTR_CONTENT_DBAREA				115	ru	Диапазоны базы данных				20200411 15:09:53
 sc	source\ui\navipi\navipi.src	0	string	SCSTR_CONTENT_GRAPHIC				115	ru	Изображения				20200411 15:09:53
 sc	source\ui\navipi\navipi.src	0	string	SCSTR_CONTENT_OLEOBJECT				115	ru	OLE-объекты				20200411 15:09:53
 sc	source\ui\navipi\navipi.src	0	string	SCSTR_CONTENT_NOTE				115	ru	Примечания				20200411 15:09:53
@@ -11719,7 +11719,7 @@ sc	source\ui\styleui\styledlg.src	0	tabdialog	RID_SCDLG_STYLES_PAGE				280	ru	С
 sc	source\ui\formdlg\dwfunctr.src	0	stringlist	FID_FUNCTION_BOX.CB_CAT	1			0	ru	Последние использовавшиеся				20200411 15:09:53
 sc	source\ui\formdlg\dwfunctr.src	0	stringlist	FID_FUNCTION_BOX.CB_CAT	2			0	ru	Все				20200411 15:09:53
 sc	source\ui\formdlg\dwfunctr.src	0	stringlist	FID_FUNCTION_BOX.CB_CAT	3			0	ru	База данных				20200411 15:09:53
-sc	source\ui\formdlg\dwfunctr.src	0	stringlist	FID_FUNCTION_BOX.CB_CAT	4			0	ru	Date & Time				20200411 15:09:53
+sc	source\ui\formdlg\dwfunctr.src	0	stringlist	FID_FUNCTION_BOX.CB_CAT	4			0	ru	Дата и время				20200411 15:09:53
 sc	source\ui\formdlg\dwfunctr.src	0	stringlist	FID_FUNCTION_BOX.CB_CAT	5			0	ru	Финансовые				20200411 15:09:53
 sc	source\ui\formdlg\dwfunctr.src	0	stringlist	FID_FUNCTION_BOX.CB_CAT	6			0	ru	Информация				20200411 15:09:53
 sc	source\ui\formdlg\dwfunctr.src	0	stringlist	FID_FUNCTION_BOX.CB_CAT	7			0	ru	Логические				20200411 15:09:53
@@ -13845,7 +13845,7 @@ officecfg	registry\data\org\openoffice\Office\DataAccess.xcu	0	value	..DataAcces
 officecfg	registry\data\org\openoffice\Office\DataAccess.xcu	0	value	..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases	Custom3			0	ru	Пользователь 3				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\DataAccess.xcu	0	value	..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases	Custom4			0	ru	Пользователь 4				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\DataAccess.xcu	0	value	..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases	Notes			0	ru	Примечания				20200411 15:09:53
-officecfg	registry\data\org\openoffice\Office\UI\DbRelationWindowState.xcu	0	value	..DbRelationWindowState.UIElements.States.private:resource/toolbar/toolbar	UIName			0	ru	Standard				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\DbRelationWindowState.xcu	0	value	..DbRelationWindowState.UIElements.States.private:resource/toolbar/toolbar	UIName			0	ru	Стандартная				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\MathCommands.xcu	0	value	..MathCommands.UserInterface.Commands..uno:Adjust	Label			0	ru	Показать все				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\MathCommands.xcu	0	value	..MathCommands.UserInterface.Commands..uno:ChangeAlignment	Label			0	ru	Выравнивание...				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\MathCommands.xcu	0	value	..MathCommands.UserInterface.Commands..uno:ChangeDistance	Label			0	ru	Интервалы...				20200411 15:09:53
@@ -13878,17 +13878,17 @@ officecfg	registry\data\org\openoffice\Office\UI\BibliographyCommands.xcu	0	valu
 officecfg	registry\data\org\openoffice\Office\UI\BibliographyCommands.xcu	0	value	..BibliographyCommands.UserInterface.Commands..uno:Bib/Mapping	Label			0	ru	Расположение столбцов...				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\BibliographyCommands.xcu	0	value	..BibliographyCommands.UserInterface.Commands..uno:Bib/autoFilter	Label			0	ru	Автофильтр				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\BibliographyCommands.xcu	0	value	..BibliographyCommands.UserInterface.Commands..uno:Bib/query	Label			0	ru	Искомое понятие				20200411 15:09:53
-officecfg	registry\data\org\openoffice\Office\UI\BibliographyCommands.xcu	0	value	..BibliographyCommands.UserInterface.Commands..uno:Bib/removeFilter	Label			0	ru	Remove Filter				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\BibliographyCommands.xcu	0	value	..BibliographyCommands.UserInterface.Commands..uno:Bib/removeFilter	Label			0	ru	Удалить фильтр				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\BibliographyCommands.xcu	0	value	..BibliographyCommands.UserInterface.Commands..uno:Bib/sdbsource	Label			0	ru	Источник данных...				20200411 15:09:53
-officecfg	registry\data\org\openoffice\Office\UI\BibliographyCommands.xcu	0	value	..BibliographyCommands.UserInterface.Commands..uno:Bib/source	Label			0	ru	Table				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\BibliographyCommands.xcu	0	value	..BibliographyCommands.UserInterface.Commands..uno:Bib/source	Label			0	ru	Таблица				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\BibliographyCommands.xcu	0	value	..BibliographyCommands.UserInterface.Commands..uno:Bib/standardFilter	Label			0	ru	Фильтр...				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\DbQueryWindowState.xcu	0	value	..DbQueryWindowState.UIElements.States.private:resource/toolbar/designobjectbar	UIName			0	ru	Дизайн				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\DbQueryWindowState.xcu	0	value	..DbQueryWindowState.UIElements.States.private:resource/toolbar/sqlobjectbar	UIName			0	ru	SQL				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\DbQueryWindowState.xcu	0	value	..DbQueryWindowState.UIElements.States.private:resource/toolbar/toolbar	UIName			0	ru	Конструктор запросов				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\CalcWindowState.xcu	0	value	..CalcWindowState.UIElements.States.private:resource/toolbar/graffilterbar	UIName			0	ru	Графический фильтр				20200411 15:09:53
-officecfg	registry\data\org\openoffice\Office\UI\CalcWindowState.xcu	0	value	..CalcWindowState.UIElements.States.private:resource/toolbar/graphicobjectbar	UIName			0	ru	Picture				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\CalcWindowState.xcu	0	value	..CalcWindowState.UIElements.States.private:resource/toolbar/graphicobjectbar	UIName			0	ru	Изображение				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\CalcWindowState.xcu	0	value	..CalcWindowState.UIElements.States.private:resource/toolbar/drawobjectbar	UIName			0	ru	Свойства рисунка				20200411 15:09:53
-officecfg	registry\data\org\openoffice\Office\UI\CalcWindowState.xcu	0	value	..CalcWindowState.UIElements.States.private:resource/toolbar/previewbar	UIName			0	ru	Page Preview				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\CalcWindowState.xcu	0	value	..CalcWindowState.UIElements.States.private:resource/toolbar/previewbar	UIName			0	ru	Предварительный просмотр				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\CalcWindowState.xcu	0	value	..CalcWindowState.UIElements.States.private:resource/toolbar/extrusionobjectbar	UIName			0	ru	Настройки 3D				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\CalcWindowState.xcu	0	value	..CalcWindowState.UIElements.States.private:resource/toolbar/formtextobjectbar	UIName			0	ru	Форматирование текстового поля				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\CalcWindowState.xcu	0	value	..CalcWindowState.UIElements.States.private:resource/toolbar/formsfilterbar	UIName			0	ru	Фильтр форм				20200411 15:09:53
@@ -13903,11 +13903,11 @@ officecfg	registry\data\org\openoffice\Office\UI\CalcWindowState.xcu	0	value	..C
 officecfg	registry\data\org\openoffice\Office\UI\CalcWindowState.xcu	0	value	..CalcWindowState.UIElements.States.private:resource/toolbar/findbar	UIName			0	ru	Найти				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\CalcWindowState.xcu	0	value	..CalcWindowState.UIElements.States.private:resource/toolbar/textobjectbar	UIName			0	ru	Форматирование текста				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\CalcWindowState.xcu	0	value	..CalcWindowState.UIElements.States.private:resource/toolbar/toolbar	UIName			0	ru	Сервис				20200411 15:09:53
-officecfg	registry\data\org\openoffice\Office\UI\CalcWindowState.xcu	0	value	..CalcWindowState.UIElements.States.private:resource/toolbar/fullscreenbar	UIName			0	ru	Full Screen				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\CalcWindowState.xcu	0	value	..CalcWindowState.UIElements.States.private:resource/toolbar/fullscreenbar	UIName			0	ru	Во весь экран				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\CalcWindowState.xcu	0	value	..CalcWindowState.UIElements.States.private:resource/toolbar/viewerbar	UIName			0	ru	Стандартная (режим просмотра)				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\CalcWindowState.xcu	0	value	..CalcWindowState.UIElements.States.private:resource/toolbar/drawbar	UIName			0	ru	Рисование				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\CalcWindowState.xcu	0	value	..CalcWindowState.UIElements.States.private:resource/toolbar/mediaobjectbar	UIName			0	ru	Мультимедиа				20200411 15:09:53
-officecfg	registry\data\org\openoffice\Office\UI\CalcWindowState.xcu	0	value	..CalcWindowState.UIElements.States.private:resource/toolbar/colorbar	UIName			0	ru	Color				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\CalcWindowState.xcu	0	value	..CalcWindowState.UIElements.States.private:resource/toolbar/colorbar	UIName			0	ru	Цвет				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\CalcWindowState.xcu	0	value	..CalcWindowState.UIElements.States.private:resource/toolbar/alignmentbar	UIName			0	ru	Выравнивание				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\CalcWindowState.xcu	0	value	..CalcWindowState.UIElements.States.private:resource/toolbar/basicshapes	UIName			0	ru	Основные фигуры				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\CalcWindowState.xcu	0	value	..CalcWindowState.UIElements.States.private:resource/toolbar/arrowshapes	UIName			0	ru	Стрелки				20200411 15:09:53
@@ -13915,7 +13915,7 @@ officecfg	registry\data\org\openoffice\Office\UI\CalcWindowState.xcu	0	value	..C
 officecfg	registry\data\org\openoffice\Office\UI\CalcWindowState.xcu	0	value	..CalcWindowState.UIElements.States.private:resource/toolbar/starshapes	UIName			0	ru	Звёзды и свитки				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\CalcWindowState.xcu	0	value	..CalcWindowState.UIElements.States.private:resource/toolbar/symbolshapes	UIName			0	ru	Фигуры-символы				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\CalcWindowState.xcu	0	value	..CalcWindowState.UIElements.States.private:resource/toolbar/calloutshapes	UIName			0	ru	Выноски				20200411 15:09:53
-officecfg	registry\data\org\openoffice\Office\UI\CalcWindowState.xcu	0	value	..CalcWindowState.UIElements.States.private:resource/toolbar/fontworkobjectbar	UIName			0	ru	Fontwork				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\CalcWindowState.xcu	0	value	..CalcWindowState.UIElements.States.private:resource/toolbar/fontworkobjectbar	UIName			0	ru	Текстовые эффекты				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\CalcWindowState.xcu	0	value	..CalcWindowState.UIElements.States.private:resource/toolbar/fontworkshapetype	UIName			0	ru	Форма текстового эффекта				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterFormWindowState.xcu	0	value	..WriterFormWindowState.UIElements.States.private:resource/toolbar/standardbar	UIName			0	ru	Стандартная				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterFormWindowState.xcu	0	value	..WriterFormWindowState.UIElements.States.private:resource/toolbar/textobjectbar	UIName			0	ru	Форматирование				20200411 15:09:53
@@ -13974,7 +13974,7 @@ officecfg	registry\data\org\openoffice\Office\UI\Effects.xcu	0	value	..Effects.U
 officecfg	registry\data\org\openoffice\Office\UI\Effects.xcu	0	value	..Effects.UserInterface.Effects.ooo-entrance-plus	Label			0	ru	Крест				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\Effects.xcu	0	value	..Effects.UserInterface.Effects.ooo-entrance-random-bars	Label			0	ru	Случайные полосы				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\Effects.xcu	0	value	..Effects.UserInterface.Effects.ooo-entrance-spiral-in	Label			0	ru	Спираль				20200411 15:09:53
-officecfg	registry\data\org\openoffice\Office\UI\Effects.xcu	0	value	..Effects.UserInterface.Effects.ooo-entrance-split	Label			0	ru	Split				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\Effects.xcu	0	value	..Effects.UserInterface.Effects.ooo-entrance-split	Label			0	ru	Разбить				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\Effects.xcu	0	value	..Effects.UserInterface.Effects.ooo-entrance-stretchy	Label			0	ru	Растяжение				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\Effects.xcu	0	value	..Effects.UserInterface.Effects.ooo-entrance-diagonal-squares	Label			0	ru	Страница				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\Effects.xcu	0	value	..Effects.UserInterface.Effects.ooo-entrance-swivel	Label			0	ru	Вращение				20200411 15:09:53
@@ -14009,7 +14009,7 @@ officecfg	registry\data\org\openoffice\Office\UI\Effects.xcu	0	value	..Effects.U
 officecfg	registry\data\org\openoffice\Office\UI\Effects.xcu	0	value	..Effects.UserInterface.Effects.ooo-entrance-fade-in-and-zoom	Label			0	ru	Затенение и масштаб				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\Effects.xcu	0	value	..Effects.UserInterface.Effects.ooo-entrance-glide	Label			0	ru	Смывание				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\Effects.xcu	0	value	..Effects.UserInterface.Effects.ooo-entrance-expand	Label			0	ru	Раскрыть				20200411 15:09:53
-officecfg	registry\data\org\openoffice\Office\UI\Effects.xcu	0	value	..Effects.UserInterface.Effects.ooo-entrance-flip	Label			0	ru	Flip				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\Effects.xcu	0	value	..Effects.UserInterface.Effects.ooo-entrance-flip	Label			0	ru	Отразить				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\Effects.xcu	0	value	..Effects.UserInterface.Effects.ooo-entrance-fold	Label			0	ru	Свертывание				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\Effects.xcu	0	value	..Effects.UserInterface.Effects.ooo-emphasis-fill-color	Label			0	ru	Изменить цвет заливки				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\Effects.xcu	0	value	..Effects.UserInterface.Effects.ooo-emphasis-font	Label			0	ru	Изменить гарнитуру				20200411 15:09:53
@@ -14119,7 +14119,7 @@ officecfg	registry\data\org\openoffice\Office\UI\Effects.xcu	0	value	..Effects.U
 officecfg	registry\data\org\openoffice\Office\UI\Effects.xcu	0	value	..Effects.UserInterface.Effects.ooo-motionpath-bounce-left	Label			0	ru	Выскакивание влево				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\Effects.xcu	0	value	..Effects.UserInterface.Effects.ooo-motionpath-bounce-right	Label			0	ru	Выскакивание вправо				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\Effects.xcu	0	value	..Effects.UserInterface.Effects.ooo-motionpath-curvy-left	Label			0	ru	Влево по кривой				20200411 15:09:53
-officecfg	registry\data\org\openoffice\Office\UI\Effects.xcu	0	value	..Effects.UserInterface.Effects.ooo-motionpath-left	Label			0	ru	Left				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\Effects.xcu	0	value	..Effects.UserInterface.Effects.ooo-motionpath-left	Label			0	ru	По левому краю				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\Effects.xcu	0	value	..Effects.UserInterface.Effects.ooo-motionpath-right	Label			0	ru	По правому краю				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\Effects.xcu	0	value	..Effects.UserInterface.Effects.ooo-motionpath-spiral-left	Label			0	ru	Влево по спирали				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\Effects.xcu	0	value	..Effects.UserInterface.Effects.ooo-motionpath-spiral-right	Label			0	ru	Вправо по спирали				20200411 15:09:53
@@ -14233,7 +14233,7 @@ officecfg	registry\data\org\openoffice\Office\UI\Effects.xcu	0	value	..Effects.U
 officecfg	registry\data\org\openoffice\Office\UI\Effects.xcu	0	value	..Effects.UserInterface.Transitions.cover-left-up	Label			0	ru	Наплыв влево-вверх				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\Effects.xcu	0	value	..Effects.UserInterface.Transitions.cover-right-down	Label			0	ru	Наплыв вправо-вниз				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\Effects.xcu	0	value	..Effects.UserInterface.Transitions.cover-right-up	Label			0	ru	Наплыв вправо-вверх				20200411 15:09:53
-officecfg	registry\data\org\openoffice\Office\UI\Effects.xcu	0	value	..Effects.UserInterface.Transitions.cut	Label			0	ru	Cut				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\Effects.xcu	0	value	..Effects.UserInterface.Transitions.cut	Label			0	ru	Вырезать				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\Effects.xcu	0	value	..Effects.UserInterface.Transitions.cut-through-black	Label			0	ru	Прорезание через чёрное				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\Effects.xcu	0	value	..Effects.UserInterface.Transitions.dissolve	Label			0	ru	Появление				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\Effects.xcu	0	value	..Effects.UserInterface.Transitions.fade-smoothly	Label			0	ru	Плавное угасание				20200411 15:09:53
@@ -14366,7 +14366,7 @@ officecfg	registry\data\org\openoffice\Office\UI\CalcCommands.xcu	0	value	..Calc
 officecfg	registry\data\org\openoffice\Office\UI\CalcCommands.xcu	0	value	..CalcCommands.UserInterface.Commands..uno:DeleteCell	Label			0	ru	Удалить ячейки...				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\CalcCommands.xcu	0	value	..CalcCommands.UserInterface.Commands..uno:DeleteColumnbreak	Label			0	ru	Удалить разрыв по столбцу				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\CalcCommands.xcu	0	value	..CalcCommands.UserInterface.Commands..uno:DeleteColumnbreak	ContextLabel			0	ru	Разрыв по столбцу				20200411 15:09:53
-officecfg	registry\data\org\openoffice\Office\UI\CalcCommands.xcu	0	value	..CalcCommands.UserInterface.Commands..uno:DeleteNote	Label			0	ru	Delete Comment				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\CalcCommands.xcu	0	value	..CalcCommands.UserInterface.Commands..uno:DeleteNote	Label			0	ru	Удалить примечание				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\CalcCommands.xcu	0	value	..CalcCommands.UserInterface.Commands..uno:DeletePivotTable	Label			0	ru	Удалить сводную таблицу				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\CalcCommands.xcu	0	value	..CalcCommands.UserInterface.Commands..uno:DeletePivotTable	ContextLabel			0	ru	Удалить				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\CalcCommands.xcu	0	value	..CalcCommands.UserInterface.Commands..uno:DeletePrintArea	Label			0	ru	Удалить диапазон печати				20200411 15:09:53
@@ -14609,7 +14609,7 @@ officecfg	registry\data\org\openoffice\Office\UI\ImpressWindowState.xcu	0	value	
 officecfg	registry\data\org\openoffice\Office\UI\ImpressWindowState.xcu	0	value	..ImpressWindowState.UIElements.States.private:resource/toolbar/alignmentbar	UIName			0	ru	Выравнивание				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\ImpressWindowState.xcu	0	value	..ImpressWindowState.UIElements.States.private:resource/toolbar/arrowsbar	UIName			0	ru	Стрелки				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\ImpressWindowState.xcu	0	value	..ImpressWindowState.UIElements.States.private:resource/toolbar/choosemodebar	UIName			0	ru	Операции				20200411 15:09:53
-officecfg	registry\data\org\openoffice\Office\UI\ImpressWindowState.xcu	0	value	..ImpressWindowState.UIElements.States.private:resource/toolbar/commontaskbar	UIName			0	ru	Presentation				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\ImpressWindowState.xcu	0	value	..ImpressWindowState.UIElements.States.private:resource/toolbar/commontaskbar	UIName			0	ru	Презентация				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\ImpressWindowState.xcu	0	value	..ImpressWindowState.UIElements.States.private:resource/toolbar/connectorsbar	UIName			0	ru	Соединительная линия				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\ImpressWindowState.xcu	0	value	..ImpressWindowState.UIElements.States.private:resource/toolbar/fullscreenbar	UIName			0	ru	Во весь экран				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\ImpressWindowState.xcu	0	value	..ImpressWindowState.UIElements.States.private:resource/toolbar/ellipsesbar	UIName			0	ru	Круги и овалы				20200411 15:09:53
@@ -14635,7 +14635,7 @@ officecfg	registry\data\org\openoffice\Office\UI\ImpressWindowState.xcu	0	value	
 officecfg	registry\data\org\openoffice\Office\UI\ImpressWindowState.xcu	0	value	..ImpressWindowState.UIElements.States.private:resource/toolbar/optionsbar	UIName			0	ru	Параметры				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\ImpressWindowState.xcu	0	value	..ImpressWindowState.UIElements.States.private:resource/toolbar/rectanglesbar	UIName			0	ru	Прямоугольники				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\ImpressWindowState.xcu	0	value	..ImpressWindowState.UIElements.States.private:resource/toolbar/positionbar	UIName			0	ru	Положение				20200411 15:09:53
-officecfg	registry\data\org\openoffice\Office\UI\ImpressWindowState.xcu	0	value	..ImpressWindowState.UIElements.States.private:resource/toolbar/slideviewtoolbar	UIName			0	ru	Slide Sorter				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\ImpressWindowState.xcu	0	value	..ImpressWindowState.UIElements.States.private:resource/toolbar/slideviewtoolbar	UIName			0	ru	Сортировщик слайдов				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\ImpressWindowState.xcu	0	value	..ImpressWindowState.UIElements.States.private:resource/toolbar/slideviewobjectbar	UIName			0	ru	Слайды				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\ImpressWindowState.xcu	0	value	..ImpressWindowState.UIElements.States.private:resource/toolbar/standardbar	UIName			0	ru	Стандартная				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\ImpressWindowState.xcu	0	value	..ImpressWindowState.UIElements.States.private:resource/toolbar/textbar	UIName			0	ru	Текст				20200411 15:09:53
@@ -14648,7 +14648,7 @@ officecfg	registry\data\org\openoffice\Office\UI\ImpressWindowState.xcu	0	value	
 officecfg	registry\data\org\openoffice\Office\UI\ImpressWindowState.xcu	0	value	..ImpressWindowState.UIElements.States.private:resource/toolbar/viewerbar	UIName			0	ru	Стандартная (режим просмотра)				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\ImpressWindowState.xcu	0	value	..ImpressWindowState.UIElements.States.private:resource/toolbar/mediaobjectbar	UIName			0	ru	Мультимедиа				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\ImpressWindowState.xcu	0	value	..ImpressWindowState.UIElements.States.private:resource/toolbar/colorbar	UIName			0	ru	Цвет				20200411 15:09:53
-officecfg	registry\data\org\openoffice\Office\UI\ImpressWindowState.xcu	0	value	..ImpressWindowState.UIElements.States.private:resource/toolbar/commentsbar	UIName			0	ru	Comments				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\ImpressWindowState.xcu	0	value	..ImpressWindowState.UIElements.States.private:resource/toolbar/commentsbar	UIName			0	ru	Примечания				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\ImpressWindowState.xcu	0	value	..ImpressWindowState.UIElements.States.private:resource/toolbar/masterviewtoolbar	UIName			0	ru	Режим фона				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\ImpressWindowState.xcu	0	value	..ImpressWindowState.UIElements.States.private:resource/toolbar/optimizetablebar	UIName			0	ru	Автоподбор				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\ImpressWindowState.xcu	0	value	..ImpressWindowState.UIElements.States.private:resource/toolbar/findbar	UIName			0	ru	Найти				20200411 15:09:53
@@ -14703,12 +14703,12 @@ officecfg	registry\data\org\openoffice\Office\UI\DbuCommands.xcu	0	value	..DbuCo
 officecfg	registry\data\org\openoffice\Office\UI\DbuCommands.xcu	0	value	..DbuCommands.UserInterface.Commands..uno:DBConvertToView	Label			0	ru	Создать как запрос				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\DbuCommands.xcu	0	value	..DbuCommands.UserInterface.Commands..uno:DBDSAdvancedSettings	Label			0	ru	Расширенные настройки...				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\DbuCommands.xcu	0	value	..DbuCommands.UserInterface.Commands..uno:DBDSConnectionType	Label			0	ru	Тип подключения...				20200411 15:09:53
-officecfg	registry\data\org\openoffice\Office\UI\DbuCommands.xcu	0	value	..DbuCommands.UserInterface.Commands..uno:DBDSProperties	Label			0	ru	Properties...				20200411 15:09:53
-officecfg	registry\data\org\openoffice\Office\UI\DbuCommands.xcu	0	value	..DbuCommands.UserInterface.Commands..uno:DBDelete	Label			0	ru	Delete				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\DbuCommands.xcu	0	value	..DbuCommands.UserInterface.Commands..uno:DBDSProperties	Label			0	ru	Свойства...				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\DbuCommands.xcu	0	value	..DbuCommands.UserInterface.Commands..uno:DBDelete	Label			0	ru	Удалить				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\DbuCommands.xcu	0	value	..DbuCommands.UserInterface.Commands..uno:DBDirectSQL	Label			0	ru	SQL...				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\DbuCommands.xcu	0	value	..DbuCommands.UserInterface.Commands..uno:DBDisablePreview	Label			0	ru	Пусто				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\DbuCommands.xcu	0	value	..DbuCommands.UserInterface.Commands..uno:DBDistinctValues	Label			0	ru	Однозначные значения				20200411 15:09:53
-officecfg	registry\data\org\openoffice\Office\UI\DbuCommands.xcu	0	value	..DbuCommands.UserInterface.Commands..uno:DBEdit	Label			0	ru	Edit...				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\DbuCommands.xcu	0	value	..DbuCommands.UserInterface.Commands..uno:DBEdit	Label			0	ru	Изменить...				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\DbuCommands.xcu	0	value	..DbuCommands.UserInterface.Commands..uno:DBEditSqlView	Label			0	ru	Редактировать в режиме SQL...				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\DbuCommands.xcu	0	value	..DbuCommands.UserInterface.Commands..uno:DBFormDelete	Label			0	ru	Удалить				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\DbuCommands.xcu	0	value	..DbuCommands.UserInterface.Commands..uno:DBFormEdit	Label			0	ru	Правка...				20200411 15:09:53
@@ -14717,7 +14717,7 @@ officecfg	registry\data\org\openoffice\Office\UI\DbuCommands.xcu	0	value	..DbuCo
 officecfg	registry\data\org\openoffice\Office\UI\DbuCommands.xcu	0	value	..DbuCommands.UserInterface.Commands..uno:DBIndexDesign	Label			0	ru	Проектирование индекса...				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\DbuCommands.xcu	0	value	..DbuCommands.UserInterface.Commands..uno:DBMigrateScripts	Label			0	ru	Перенос макросов ...				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\DbuCommands.xcu	0	value	..DbuCommands.UserInterface.Commands..uno:DBNewFolder	Label			0	ru	Папка...				20200411 15:09:53
-officecfg	registry\data\org\openoffice\Office\UI\DbuCommands.xcu	0	value	..DbuCommands.UserInterface.Commands..uno:DBNewForm	Label			0	ru	Form...				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\DbuCommands.xcu	0	value	..DbuCommands.UserInterface.Commands..uno:DBNewForm	Label			0	ru	Форма...				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\DbuCommands.xcu	0	value	..DbuCommands.UserInterface.Commands..uno:DBNewFormAutoPilot	Label			0	ru	Мастер форм...				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\DbuCommands.xcu	0	value	..DbuCommands.UserInterface.Commands..uno:DBNewFormAutoPilotWithPreSelection	Label			0	ru	Мастер форм...				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\DbuCommands.xcu	0	value	..DbuCommands.UserInterface.Commands..uno:DBNewQuery	Label			0	ru	Запрос (дизайн)...				20200411 15:09:53
@@ -14743,7 +14743,7 @@ officecfg	registry\data\org\openoffice\Office\UI\DbuCommands.xcu	0	value	..DbuCo
 officecfg	registry\data\org\openoffice\Office\UI\DbuCommands.xcu	0	value	..DbuCommands.UserInterface.Commands..uno:DBReportEdit	Label			0	ru	Правка...				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\DbuCommands.xcu	0	value	..DbuCommands.UserInterface.Commands..uno:DBReportOpen	Label			0	ru	Открыть объект базы данных...				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\DbuCommands.xcu	0	value	..DbuCommands.UserInterface.Commands..uno:DBReportRename	Label			0	ru	Переименовать...				20200411 15:09:53
-officecfg	registry\data\org\openoffice\Office\UI\DbuCommands.xcu	0	value	..DbuCommands.UserInterface.Commands..uno:DBSelectAll	Label			0	ru	Select All				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\DbuCommands.xcu	0	value	..DbuCommands.UserInterface.Commands..uno:DBSelectAll	Label			0	ru	Выделить всё				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\DbuCommands.xcu	0	value	..DbuCommands.UserInterface.Commands..uno:DBSendReportAsMail	Label			0	ru	Отчёт эл. почтой...				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\DbuCommands.xcu	0	value	..DbuCommands.UserInterface.Commands..uno:DBSendReportToWriter	Label			0	ru	Отчёт в текстовый документ...				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\DbuCommands.xcu	0	value	..DbuCommands.UserInterface.Commands..uno:DBShowDocInfoPreview	Label			0	ru	Информация о документе				20200411 15:09:53
@@ -14799,11 +14799,11 @@ officecfg	registry\data\org\openoffice\Office\UI\Sidebar.xcu	0	value	..Sidebar.C
 officecfg	registry\data\org\openoffice\Office\UI\Sidebar.xcu	0	value	..Sidebar.Content.PanelList.Impress6	Title			0	ru	Смена слайда				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\Sidebar.xcu	0	value	..Sidebar.Content.PanelList.Impress7	Title			0	ru	Дизайн таблицы				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\Sidebar.xcu	0	value	..Sidebar.Content.PanelList.EmptyPanel	Title			0	ru	Пусто				20200411 15:09:53
-officecfg	registry\data\org\openoffice\Office\UI\Sidebar.xcu	0	value	..Sidebar.Content.PanelList.AlignmentPropertyPanel	Title			0	ru	Alignment				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\Sidebar.xcu	0	value	..Sidebar.Content.PanelList.AlignmentPropertyPanel	Title			0	ru	Выравнивание				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\Sidebar.xcu	0	value	..Sidebar.Content.PanelList.CellAppearancePropertyPanel	Title			0	ru	Внешний вид ячейки				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\Sidebar.xcu	0	value	..Sidebar.Content.PanelList.NumberFormatPropertyPanel	Title			0	ru	Числовой формат				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\Sidebar.xcu	0	value	..Sidebar.Content.PanelList.ParaPropertyPanel	Title			0	ru	Абзац				20200411 15:09:53
-officecfg	registry\data\org\openoffice\Office\UI\Sidebar.xcu	0	value	..Sidebar.Content.PanelList.WrapPropertyPanel	Title			0	ru	Wrap				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\Sidebar.xcu	0	value	..Sidebar.Content.PanelList.WrapPropertyPanel	Title			0	ru	Обтекание				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\Sidebar.xcu	0	value	..Sidebar.Content.PanelList.SwNavigatorPanel	Title			0	ru	Навигатор				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\Sidebar.xcu	0	value	..Sidebar.Content.PanelList.ScNavigatorPanel	Title			0	ru	Навигатор				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\Sidebar.xcu	0	value	..Sidebar.Content.PanelList.SdNavigatorPanel	Title			0	ru	Навигатор				20200411 15:09:53
@@ -15011,7 +15011,7 @@ officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..G
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:CommonAlignLeft	Label			0	ru	По ~левому краю				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:CommonAlignRight	Label			0	ru	По ~правому краю				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:CommonAlignTop	Label			0	ru	По ~верхнему краю				20200411 15:09:53
-officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:CommonAlignVerticalCenter	Label			0	ru	Center				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:CommonAlignVerticalCenter	Label			0	ru	По се~редине				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:CommonAlignVerticalDefault	Label			0	ru	По у~молчанию				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:CommonTaskBarVisible	Label			0	ru	Презентация				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:CompareDocuments	Label			0	ru	Сравнить документы...				20200411 15:09:53
@@ -15060,13 +15060,13 @@ officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..G
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:DefaultBullet	Label			0	ru	Маркированный список				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:DefaultNumbering	Label			0	ru	Нумерованный список				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:Delete	Label			0	ru	Удалить содержимое...				20200411 15:09:53
-officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:DeleteAllNotes	Label			0	ru	Delete All Comments				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:DeleteAllNotes	Label			0	ru	Удалить все примечания				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:DeleteAuthor	Label			0	ru	Удалить все примечания данного автора				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:DeleteColumns	Label			0	ru	Удалить столбцы				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:DeleteColumns	ContextLabel			0	ru	Столбцы				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:DeleteComment	Label			0	ru	Удалить примечание				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:DeleteFrame	Label			0	ru	Удалить рамку				20200411 15:09:53
-officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:DeleteRecord	Label			0	ru	Delete Record				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:DeleteRecord	Label			0	ru	Удалить запись				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:DeleteRows	Label			0	ru	Удалить строки				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:DeleteRows	ContextLabel			0	ru	Строки				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:DesignerDialog	Label			0	ru	Стили				20200411 15:09:53
@@ -15113,7 +15113,7 @@ officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..G
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:FillStyle	Label			0	ru	Стиль/заливка области				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:FillFloatTransparence	Label			0	ru	Прозрачность градиентной заливки				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:FillTransparence	Label			0	ru	Прозрачность заливки				20200411 15:09:53
-officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:FilterCrit	Label			0	ru	Standard Filter...				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:FilterCrit	Label			0	ru	Фильтр по умолчанию...				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:FindText	Label			0	ru	Найти				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:FirstRecord	Label			0	ru	Первая запись				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:Flash	Label			0	ru	Сверкать				20200411 15:09:53
@@ -15187,7 +15187,7 @@ officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..G
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:FormDesignTools	Label			0	ru	Дизайн формы				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:FormFilter	Label			0	ru	Фильтр				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:FormFilterExecute	Label			0	ru	Применить фильтр				20200411 15:09:53
-officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:FormFilterExit	Label			0	ru	Close				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:FormFilterExit	Label			0	ru	Закрыть				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:FormFilterNavigator	Label			0	ru	Навигатор фильтров				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:FormFiltered	Label			0	ru	Применить фильтр				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:FormProperties	Label			0	ru	Форма...				20200411 15:09:53
@@ -15366,7 +15366,7 @@ officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..G
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:MatchGroup	Label			0	ru	Найти скобку				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:MenuBarVisible	Label			0	ru	Меню				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:Merge	Label			0	ru	Объединить				20200411 15:09:53
-officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:MergeCells	Label			0	ru	Merge Cells				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:MergeCells	Label			0	ru	Объединить ячейки				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:MergeDocuments	Label			0	ru	~Объединить исправления...				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:ModifiedStatus	Label			0	ru	Документ изменён				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:ModifyFrame	Label			0	ru	Свойства рамки				20200411 15:09:53
@@ -15409,7 +15409,7 @@ officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..G
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:OptimizeTable	Label			0	ru	Автоподбор				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:OptionBarVisible	Label			0	ru	Панель параметров				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:OptionsTreeDialog	Label			0	ru	~Параметры...				20200411 15:09:53
-officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:OrderCrit	Label			0	ru	Sort...				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:OrderCrit	Label			0	ru	Сортировать...				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:Organizer	Label			0	ru	Управление...				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:OutlineBullet	Label			0	ru	Маркеры и нумерация...				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:OutlineCollapse	Label			0	ru	Скрыть подабзацы				20200411 15:09:53
@@ -15426,7 +15426,7 @@ officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..G
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:PageDialog	Label			0	ru	Параметры страницы				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:PageDialog	ContextLabel			0	ru	Страница...				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:ParaLeftToRight	Label			0	ru	Слева направо				20200411 15:09:53
-officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:ParaRightToLeft	Label			0	ru	Right-To-Left				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:ParaRightToLeft	Label			0	ru	Справа налево				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:ParagraphDialog	Label			0	ru	Абзац...				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:Paste	Label			0	ru	Вставить				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:PasteSpecial	Label			0	ru	Вставить как...				20200411 15:09:53
@@ -15452,7 +15452,7 @@ officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..G
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:RecFromText	Label			0	ru	Текст -> Запись				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:RecSave	Label			0	ru	Сохранить запись				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:RecSearch	Label			0	ru	Найти запись...				20200411 15:09:53
-officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:RecText	Label			0	ru	Record				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:RecText	Label			0	ru	Запись				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:RecTotal	Label			0	ru	Общее количество записей				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:RecUndo	Label			0	ru	Отменить: ввод данных				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:RecentFileList	Label			0	ru	Предыдущие ~документы				20200411 15:09:53
@@ -15462,7 +15462,7 @@ officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..G
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:Rect_Rounded_Unfilled	Label			0	ru	Скруглённый прямоугольник, без заливки				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:Rect_Unfilled	Label			0	ru	Прямоугольник, без заливки				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:Redo	Label			0	ru	Невозможно вернуть				20200411 15:09:53
-officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:Refresh	Label			0	ru	Refresh				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:Refresh	Label			0	ru	Обновить				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:RefreshFormControl	Label			0	ru	Управление обновлением				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:Reload	Label			0	ru	Перезагрузить				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:RemoveFilter	Label			0	ru	Удалить фильтр				20200411 15:09:53
@@ -15615,7 +15615,7 @@ officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..G
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:TextdirectionLeftToRight	Label			0	ru	Направление текста слева направо				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:TextdirectionTopToBottom	Label			0	ru	Направление текста сверху вниз				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:ThesaurusDialog	Label			0	ru	Те~заурус...				20200411 15:09:53
-officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:TimeField	Label			0	ru	Time Field				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:TimeField	Label			0	ru	Поле времени				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:ToggleAnchorType	Label			0	ru	Изменить привязку				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:ToggleBreakPoint	Label			0	ru	Точка останова				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:ToggleBreakPointEnabled	Label			0	ru	Включение/отключение точки останова				20200411 15:09:53
@@ -15653,14 +15653,14 @@ officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..G
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:Zoom	Label			0	ru	Масштаб...				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:Zoom100Percent	Label			0	ru	Масштаб 100%				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:ZoomIn	Label			0	ru	Увеличить масштаб				20200411 15:09:53
-officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:ZoomMinus	Label			0	ru	Zoom Out				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:ZoomMinus	Label			0	ru	Уменьшить масштаб				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:ZoomNext	Label			0	ru	Следующий масштаб				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:ZoomObjects	Label			0	ru	Масштаб объекта				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:ZoomOptimal	Label			0	ru	Оптимально				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:ZoomOut	Label			0	ru	Уменьшить масштаб				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:ZoomPage	Label			0	ru	На всю страницу				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:ZoomPageWidth	Label			0	ru	По ширине страницы				20200411 15:09:53
-officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:ZoomPlus	Label			0	ru	Zoom In				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:ZoomPlus	Label			0	ru	Увеличить масштаб				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:ZoomPrevious	Label			0	ru	Предыдущий масштаб				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:ZoomToolBox	Label			0	ru	Масштаб				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands.service:com.sun.star.deployment.ui.PackageManagerDialog	Label			0	ru	Управление расширениями...				20200411 15:09:53
@@ -15761,7 +15761,7 @@ officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..Wr
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:ExpandGlossary	Label			0	ru	Записать автотекст				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:FieldDialog	Label			0	ru	Поля...				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:Fieldnames	Label			0	ru	Названия полей				20200411 15:09:53
-officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:Fields	Label			0	ru	Fields				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:Fields	Label			0	ru	Поля				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:FootnoteDialog	Label			0	ru	Сноски...				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:FormatColumns	Label			0	ru	Стол~бцы...				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:FormatDropcap	Label			0	ru	Буквица				20200411 15:09:53
@@ -15807,7 +15807,7 @@ officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..Wr
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:GotoNextSentenceSel	Label			0	ru	Выделить до следующего предложения				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:GotoNextTableFormula	Label			0	ru	Перейти к следующей формуле таблицы				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:GotoNextWrongTableFormula	Label			0	ru	Перейти к следующей ошибочной формуле таблицы				20200411 15:09:53
-officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:GotoPage	Label			0	ru	To Page				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:GotoPage	Label			0	ru	На страницу				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:GotoPrevIndexMark	Label			0	ru	Перейти к предыдущей метке указателя				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:GotoPrevInputField	Label			0	ru	До предыдущего поля ввода				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:GotoPrevObject	Label			0	ru	До предыдущего объекта				20200411 15:09:53
@@ -15816,7 +15816,7 @@ officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..Wr
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:GotoPrevTableFormula	Label			0	ru	Перейти к предыдущей формуле таблицы				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:GotoPrevWrongTableFormula	Label			0	ru	Перейти к предыдущей ошибочной формуле таблицы				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:Graphic	Label			0	ru	Графические объекты				20200411 15:09:53
-officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:GraphicDialog	Label			0	ru	Picture...				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:GraphicDialog	Label			0	ru	Изображение...				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:GraphicDialog	ContextLabel			0	ru	Изображение...				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:HScroll	Label			0	ru	Горизонтальная полоса прокрутки				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:HeadingRowsRepeat	Label			0	ru	Повторять заголовки столбцов				20200411 15:09:53
@@ -15902,7 +15902,7 @@ officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..Wr
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:PageColumnType	Label			0	ru	Тип столбца страницы				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:PageDown	Label			0	ru	Следующая страница				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:PageDownSel	Label			0	ru	Выделить до следующей страницы				20200411 15:09:53
-officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:PageOffsetDialog	Label			0	ru	Page Number				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:PageOffsetDialog	Label			0	ru	Номер страницы				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:PageStyleApply	Label			0	ru	Применить стиль страницы				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:PageStyleName	Label			0	ru	Стиль страницы				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:PageUp	Label			0	ru	Предыдущая страница				20200411 15:09:53
@@ -15948,7 +15948,7 @@ officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..Wr
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:SetMultiSelection	Label			0	ru	Вкл. групповое выделение				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:SetOptimalColumnWidth	Label			0	ru	Оптимальная ширина столбца				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:SetOptimalRowHeight	Label			0	ru	Оптимальная высота строки				20200411 15:09:53
-officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:SetRowHeight	Label			0	ru	Row Height...				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:SetRowHeight	Label			0	ru	Высота строк...				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:ShadowCursor	Label			0	ru	Свободный курсор				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:ShiftBackspace	Label			0	ru	Клавиша Backspace				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:ShowBookview	Label			0	ru	Предварительный просмотр книги				20200411 15:09:53
@@ -15958,7 +15958,7 @@ officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..Wr
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:ShowTwoPages	Label			0	ru	Предварительный просмотр: две страницы				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:SortDialog	Label			0	ru	Сортировать...				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:SplitTable	Label			0	ru	Разбить таблицу				20200411 15:09:53
-officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:StartAutoCorrect	Label			0	ru	AutoCorrect				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:StartAutoCorrect	Label			0	ru	Автозамена				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:StartOfDocumentSel	Label			0	ru	Выделить до начала документа				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:StartOfLineSel	Label			0	ru	Выделить до начала строки				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:StartOfParaSel	Label			0	ru	Выделить до начала абзаца				20200411 15:09:53
@@ -16179,7 +16179,7 @@ officecfg	registry\data\org\openoffice\Office\UI\DrawImpressCommands.xcu	0	value
 officecfg	registry\data\org\openoffice\Office\UI\DrawImpressCommands.xcu	0	value	..DrawImpressCommands.UserInterface.Commands..uno:NormalMultiPaneGUI	Label			0	ru	Обычный				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\DrawImpressCommands.xcu	0	value	..DrawImpressCommands.UserInterface.Commands..uno:NotesMasterPage	Label			0	ru	Мастер заметок				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\DrawImpressCommands.xcu	0	value	..DrawImpressCommands.UserInterface.Commands..uno:NotesMode	Label			0	ru	Страница заметок				20200411 15:09:53
-officecfg	registry\data\org\openoffice\Office\UI\DrawImpressCommands.xcu	0	value	..DrawImpressCommands.UserInterface.Commands..uno:ObjectPosition	Label			0	ru	Arrange				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\DrawImpressCommands.xcu	0	value	..DrawImpressCommands.UserInterface.Commands..uno:ObjectPosition	Label			0	ru	Расположить				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\DrawImpressCommands.xcu	0	value	..DrawImpressCommands.UserInterface.Commands..uno:Objects3DToolbox	Label			0	ru	Трёхмерные объекты				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\DrawImpressCommands.xcu	0	value	..DrawImpressCommands.UserInterface.Commands..uno:OutlineMode	Label			0	ru	Контур				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\DrawImpressCommands.xcu	0	value	..DrawImpressCommands.UserInterface.Commands..uno:OutputQualityBlackWhite	Label			0	ru	Чёрно-белый				20200411 15:09:53
@@ -16488,7 +16488,7 @@ officecfg	registry\data\org\openoffice\Office\UI\GenericCategories.xcu	0	value	.
 officecfg	registry\data\org\openoffice\Office\UI\GenericCategories.xcu	0	value	..GenericCategories.Commands.Categories.8	Name			0	ru	Навигация				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCategories.xcu	0	value	..GenericCategories.Commands.Categories.9	Name			0	ru	Вставить				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCategories.xcu	0	value	..GenericCategories.Commands.Categories.10	Name			0	ru	Формат				20200411 15:09:53
-officecfg	registry\data\org\openoffice\Office\UI\GenericCategories.xcu	0	value	..GenericCategories.Commands.Categories.11	Name			0	ru	Templates				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\GenericCategories.xcu	0	value	..GenericCategories.Commands.Categories.11	Name			0	ru	Шаблоны				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCategories.xcu	0	value	..GenericCategories.Commands.Categories.12	Name			0	ru	Текстовые				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCategories.xcu	0	value	..GenericCategories.Commands.Categories.13	Name			0	ru	Врезка				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCategories.xcu	0	value	..GenericCategories.Commands.Categories.14	Name			0	ru	Графический объект				20200411 15:09:53
@@ -18926,7 +18926,7 @@ sd	source\ui\app\popup.src	0	menuitem	MN_DIAMODE	SID_DIAMODE	CMD_SID_DIAMODE		0	
 sd	source\ui\app\popup.src	0	menuitem	MN_PRESENTATION	SID_PRESENTATION	CMD_SID_PRESENTATION		0	ru	Демонстрация				20200411 15:09:53
 sd	source\ui\app\popup.src	0	menuitem	MN_CAPTUREPOINT	SID_CAPTUREPOINT	CMD_SID_CAPTUREPOINT		0	ru	Вставить точку захвата/направляющую...				20200411 15:09:53
 sd	source\ui\app\popup.src	0	menuitem	MN_SET_SNAPITEM	SID_SET_SNAPITEM	CMD_SID_SET_SNAPITEM		0	ru	Правка...				20200411 15:09:53
-sd	source\ui\app\popup.src	0	menuitem	MN_DELETE_SNAPITEM	SID_DELETE_SNAPITEM	CMD_SID_DELETE_SNAPITEM		0	ru	~Delete				20200411 15:09:53
+sd	source\ui\app\popup.src	0	menuitem	MN_DELETE_SNAPITEM	SID_DELETE_SNAPITEM	CMD_SID_DELETE_SNAPITEM		0	ru	Удалить				20200411 15:09:53
 sd	source\ui\app\popup.src	0	menuitem	MN_MODIFY_PAGE	SID_MODIFYPAGE	CMD_SID_MODIFYPAGE		0	ru	Макеты слайдов				20200411 15:09:53
 sd	source\ui\app\popup.src	0	menuitem	MN_FORMAT_PAGE	SID_PAGESETUP	CMD_SID_PAGESETUP		0	ru	Параметры страницы...				20200411 15:09:53
 sd	source\ui\app\popup.src	0	menuitem	MN_INSERT_SLIDE	SID_INSERTPAGE	CMD_SID_INSERTPAGE		0	ru	Новый слайд				20200411 15:09:53
@@ -18936,7 +18936,7 @@ sd	source\ui\app\popup.src	0	menuitem	MN_INSERT_PAGE.MN_SELECT_BACKGROUND	SID_SE
 sd	source\ui\app\popup.src	0	menuitem	MN_INSERT_PAGE.MN_SELECT_BACKGROUND.MN_DISPLAY_MASTER_BACKGROUND	SID_DISPLAY_MASTER_BACKGROUND	CMD_SID_DISPLAY_MASTER_BACKGROUND		0	ru	Показывать фон мастера				20200411 15:09:53
 sd	source\ui\app\popup.src	0	menuitem	MN_INSERT_PAGE.MN_SELECT_BACKGROUND.MN_DISPLAY_MASTER_BACKGROUND.MN_DISPLAY_MASTER_OBJECTS	SID_DISPLAY_MASTER_OBJECTS	CMD_SID_DISPLAY_MASTER_OBJECTS		0	ru	Показывать объекты из мастера				20200411 15:09:53
 sd	source\ui\app\popup.src	0	menuitem	MN_PAGE_MENU	DUMMY+3			0	ru	Страница				20200411 15:09:53
-sd	source\ui\app\popup.src	0	menuitem	MN_SLIDE_MENU	DUMMY+8			0	ru	Slid~e				20200411 15:09:53
+sd	source\ui\app\popup.src	0	menuitem	MN_SLIDE_MENU	DUMMY+8			0	ru	Слайд				20200411 15:09:53
 sd	source\ui\app\popup.src	0	menuitem	MN_RENAME_LAYER	SID_RENAMELAYER	CMD_SID_RENAMELAYER		0	ru	Переименовать слой...				20200411 15:09:53
 sd	source\ui\app\popup.src	0	menuitem	MN_DELETE_SLIDE	SID_DELETE_PAGE	CMD_SID_DELETE_PAGE		0	ru	Удалить слайд				20200411 15:09:53
 sd	source\ui\app\popup.src	0	menuitem	MN_DELETE_MASTER	SID_DELETE_MASTER_PAGE	CMD_SID_DELETE_MASTER_PAGE		0	ru	Удалить мастер				20200411 15:09:53
@@ -18947,14 +18947,14 @@ sd	source\ui\app\popup.src	0	menuitem	MN_RENAME_PAGE	SID_RENAMEPAGE	CMD_SID_RENA
 sd	source\ui\app\popup.src	0	menuitem	MN_LINE	SID_ATTRIBUTES_LINE	CMD_SID_ATTRIBUTES_LINE		0	ru	Линия...				20200411 15:09:53
 sd	source\ui\app\popup.src	0	menuitem	MN_AREA	SID_ATTRIBUTES_AREA	CMD_SID_ATTRIBUTES_AREA		0	ru	Область...				20200411 15:09:53
 sd	source\ui\app\popup.src	0	menuitem	MN_TEXTATTR	SID_TEXTATTR_DLG	CMD_SID_TEXTATTR_DLG		0	ru	Текст...				20200411 15:09:53
-sd	source\ui\app\popup.src	0	menuitem	MN_CONNECTION	SID_CONNECTION_DLG	CMD_SID_CONNECTION_DLG		0	ru	~Connector...				20200411 15:09:53
+sd	source\ui\app\popup.src	0	menuitem	MN_CONNECTION	SID_CONNECTION_DLG	CMD_SID_CONNECTION_DLG		0	ru	Соединительная линия...				20200411 15:09:53
 sd	source\ui\app\popup.src	0	menuitem	MN_NEW_ROUTING	SID_CONNECTION_NEW_ROUTING	CMD_SID_CONNECTION_NEW_ROUTING		0	ru	Восстановить направление линии				20200411 15:09:53
-sd	source\ui\app\popup.src	0	menuitem	MN_MEASURE	SID_MEASURE_DLG	CMD_SID_MEASURE_DLG		0	ru	Dimen~sions...				20200411 15:09:53
+sd	source\ui\app\popup.src	0	menuitem	MN_MEASURE	SID_MEASURE_DLG	CMD_SID_MEASURE_DLG		0	ru	Размеры...				20200411 15:09:53
 sd	source\ui\app\popup.src	0	menuitem	MN_TRANSFORM	SID_ATTR_TRANSFORM	CMD_SID_ATTR_TRANSFORM		0	ru	Положение и размер...				20200411 15:09:53
 sd	source\ui\app\popup.src	0	menuitem	MN_EDIT_POINTS	SID_BEZIER_EDIT	CMD_SID_BEZIER_EDIT		0	ru	Редактировать точки				20200411 15:09:53
 sd	source\ui\app\popup.src	0	menuitem	MN_POSITION.SID_POSITION	SID_FRAME_TO_TOP	CMD_SID_FRAME_TO_TOP		0	ru	На ~передний план				20200411 15:09:53
-sd	source\ui\app\popup.src	0	menuitem	MN_POSITION.SID_POSITION	SID_MOREFRONT	CMD_SID_MOREFRONT		0	ru	Bring ~Forward				20200411 15:09:53
-sd	source\ui\app\popup.src	0	menuitem	MN_POSITION.SID_POSITION	SID_MOREBACK	CMD_SID_MOREBACK		0	ru	Send Back~ward				20200411 15:09:53
+sd	source\ui\app\popup.src	0	menuitem	MN_POSITION.SID_POSITION	SID_MOREFRONT	CMD_SID_MOREFRONT		0	ru	Переместить ~вперёд				20200411 15:09:53
+sd	source\ui\app\popup.src	0	menuitem	MN_POSITION.SID_POSITION	SID_MOREBACK	CMD_SID_MOREBACK		0	ru	Переместить ~назад				20200411 15:09:53
 sd	source\ui\app\popup.src	0	menuitem	MN_POSITION.SID_POSITION	SID_FRAME_TO_BOTTOM	CMD_SID_FRAME_TO_BOTTOM		0	ru	На ~задний план				20200411 15:09:53
 sd	source\ui\app\popup.src	0	menuitem	MN_POSITION.SID_POSITION	SID_BEFORE_OBJ	CMD_SID_BEFORE_OBJ		0	ru	П~еред объектом				20200411 15:09:53
 sd	source\ui\app\popup.src	0	menuitem	MN_POSITION.SID_POSITION	SID_BEHIND_OBJ	CMD_SID_BEHIND_OBJ		0	ru	П~озади объекта				20200411 15:09:53
@@ -18986,10 +18986,10 @@ sd	source\ui\app\popup.src	0	menuitem	MN_OBJECT_ALIGN.SID_OBJECT_ALIGN	SID_OBJEC
 sd	source\ui\app\popup.src	0	menuitem	MN_OBJECT_ALIGN.SID_OBJECT_ALIGN	SID_OBJECT_ALIGN_CENTER	CMD_SID_OBJECT_ALIGN_CENTER		0	ru	По центру				20200411 15:09:53
 sd	source\ui\app\popup.src	0	menuitem	MN_OBJECT_ALIGN.SID_OBJECT_ALIGN	SID_OBJECT_ALIGN_RIGHT	CMD_SID_OBJECT_ALIGN_RIGHT		0	ru	По правому краю				20200411 15:09:53
 sd	source\ui\app\popup.src	0	menuitem	MN_OBJECT_ALIGN.SID_OBJECT_ALIGN	SID_OBJECT_ALIGN_UP	CMD_SID_OBJECT_ALIGN_UP		0	ru	По ~верху				20200411 15:09:53
-sd	source\ui\app\popup.src	0	menuitem	MN_OBJECT_ALIGN.SID_OBJECT_ALIGN	SID_OBJECT_ALIGN_MIDDLE	CMD_SID_OBJECT_ALIGN_MIDDLE		0	ru	C~enter				20200411 15:09:53
+sd	source\ui\app\popup.src	0	menuitem	MN_OBJECT_ALIGN.SID_OBJECT_ALIGN	SID_OBJECT_ALIGN_MIDDLE	CMD_SID_OBJECT_ALIGN_MIDDLE		0	ru	По се~редине				20200411 15:09:53
 sd	source\ui\app\popup.src	0	menuitem	MN_OBJECT_ALIGN.SID_OBJECT_ALIGN	SID_OBJECT_ALIGN_DOWN	CMD_SID_OBJECT_ALIGN_DOWN		0	ru	По ~низу				20200411 15:09:53
 sd	source\ui\app\popup.src	0	menuitem	MN_OBJECT_ALIGN	SID_OBJECT_ALIGN	CMD_SID_OBJECT_ALIGN		0	ru	Вырав~нивание				20200411 15:09:53
-sd	source\ui\app\popup.src	0	menuitem	MN_CLOSE_OBJECT	SID_OBJECT_CLOSE	CMD_SID_OBJECT_CLOSE		0	ru	Close ~Object				20200411 15:09:53
+sd	source\ui\app\popup.src	0	menuitem	MN_CLOSE_OBJECT	SID_OBJECT_CLOSE	CMD_SID_OBJECT_CLOSE		0	ru	Замкнуть объект				20200411 15:09:53
 sd	source\ui\app\popup.src	0	menuitem	MN_BEZIER	SID_BEZIER_EDIT	CMD_SID_BEZIER_EDIT		0	ru	Редактирование точек				20200411 15:09:53
 sd	source\ui\app\popup.src	0	menuitem	MN_BEZIER	SID_BEZIER_MOVE	CMD_SID_BEZIER_MOVE		0	ru	Переместить точки				20200411 15:09:53
 sd	source\ui\app\popup.src	0	menuitem	MN_BEZIER	SID_BEZIER_INSERT	CMD_SID_BEZIER_INSERT		0	ru	Вставить узлы				20200411 15:09:53
@@ -19057,21 +19057,21 @@ sd	source\ui\app\popup.src	0	menuitem	MN_STYLEDT	SID_STYLE_EDIT	CMD_SID_STYLE_ED
 sd	source\ui\app\popup.src	0	menuitem	MN_EDIT_HYPERLINK	SID_EDIT_HYPERLINK	CMD_SID_EDIT_HYPERLINK		0	ru	Гиперссылка...				20200411 15:09:53
 sd	source\ui\app\popup.src	0	menuitem	MN_POINT_EDITMODE	SID_BEZIER_EDIT	CMD_SID_BEZIER_EDIT		0	ru	Точки				20200411 15:09:53
 sd	source\ui\app\popup.src	0	menuitem	MN_GLUE_EDITMODE	SID_GLUE_EDITMODE	CMD_SID_GLUE_EDITMODE		0	ru	Точки соединения				20200411 15:09:53
-sd	source\ui\app\popup.src	0	menuitem	MN_LAYER_EDITMODE.DUMMY+7	SID_INSERTLAYER	CMD_SID_INSERTLAYER		0	ru	~Insert				20200411 15:09:53
-sd	source\ui\app\popup.src	0	menuitem	MN_LAYER_EDITMODE.DUMMY+7	SID_MODIFYLAYER	CMD_SID_MODIFYLAYER		0	ru	~Modify				20200411 15:09:53
+sd	source\ui\app\popup.src	0	menuitem	MN_LAYER_EDITMODE.DUMMY+7	SID_INSERTLAYER	CMD_SID_INSERTLAYER		0	ru	Вставить				20200411 15:09:53
+sd	source\ui\app\popup.src	0	menuitem	MN_LAYER_EDITMODE.DUMMY+7	SID_MODIFYLAYER	CMD_SID_MODIFYLAYER		0	ru	Изменить				20200411 15:09:53
 sd	source\ui\app\popup.src	0	menuitem	MN_LAYER_EDITMODE.DUMMY+7	SID_DELETE_LAYER	CMD_SID_DELETE_LAYER		0	ru	Удалить				20200411 15:09:53
 sd	source\ui\app\popup.src	0	menuitem	MN_LAYER_EDITMODE.DUMMY+7	SID_RENAMELAYER	CMD_SID_RENAMELAYER		0	ru	Переименовать				20200411 15:09:53
-sd	source\ui\app\popup.src	0	menuitem	MN_LAYER_EDITMODE	DUMMY+7			0	ru	La~yer				20200411 15:09:53
+sd	source\ui\app\popup.src	0	menuitem	MN_LAYER_EDITMODE	DUMMY+7			0	ru	Слой				20200411 15:09:53
 sd	source\ui\app\popup.src	0	menuitem	RID_DRAW_TABLE_POPUP	SID_FORMAT_TABLE_DLG	CMD_SID_FORMAT_TABLE_DLG		0	ru	Та~блица...				20200411 15:09:53
-sd	source\ui\app\popup.src	0	menuitem	RID_DRAW_TABLE_POPUP.DUMMY+10	SID_TABLE_MERGE_CELLS	CMD_SID_TABLE_MERGE_CELLS		0	ru	~Merge				20200411 15:09:53
-sd	source\ui\app\popup.src	0	menuitem	RID_DRAW_TABLE_POPUP.DUMMY+10	SID_TABLE_SPLIT_CELLS	CMD_SID_TABLE_SPLIT_CELLS		0	ru	~Split...				20200411 15:09:53
+sd	source\ui\app\popup.src	0	menuitem	RID_DRAW_TABLE_POPUP.DUMMY+10	SID_TABLE_MERGE_CELLS	CMD_SID_TABLE_MERGE_CELLS		0	ru	Объединить				20200411 15:09:53
+sd	source\ui\app\popup.src	0	menuitem	RID_DRAW_TABLE_POPUP.DUMMY+10	SID_TABLE_SPLIT_CELLS	CMD_SID_TABLE_SPLIT_CELLS		0	ru	Разбить...				20200411 15:09:53
 sd	source\ui\app\popup.src	0	menuitem	RID_DRAW_TABLE_POPUP.DUMMY+10	SID_TABLE_VERT_NONE	CMD_SID_TABLE_VERT_NONE		0	ru	По ~верхнему краю				20200411 15:09:53
 sd	source\ui\app\popup.src	0	menuitem	RID_DRAW_TABLE_POPUP.DUMMY+10	SID_TABLE_VERT_CENTER	CMD_SID_TABLE_VERT_CENTER		0	ru	По се~редине				20200411 15:09:53
 sd	source\ui\app\popup.src	0	menuitem	RID_DRAW_TABLE_POPUP.DUMMY+10	SID_TABLE_VERT_BOTTOM	CMD_SID_TABLE_VERT_BOTTOM		0	ru	По ~нижнему краю				20200411 15:09:53
 sd	source\ui\app\popup.src	0	menuitem	RID_DRAW_TABLE_POPUP	DUMMY+10			0	ru	~Ячейка				20200411 15:09:53
-sd	source\ui\app\popup.src	0	menuitem	RID_DRAW_TABLE_POPUP.DUMMY+11	SID_TABLE_DISTRIBUTE_ROWS	CMD_SID_TABLE_DISTRIBUTE_ROWS		0	ru	Space ~Equally				20200411 15:09:53
-sd	source\ui\app\popup.src	0	menuitem	RID_DRAW_TABLE_POPUP.DUMMY+11	SID_TABLE_SELECT_ROW	CMD_SID_TABLE_SELECT_ROW		0	ru	~Select				20200411 15:09:53
-sd	source\ui\app\popup.src	0	menuitem	RID_DRAW_TABLE_POPUP.DUMMY+11	SID_TABLE_INSERT_ROW_DLG	CMD_SID_TABLE_INSERT_ROW_DLG		0	ru	~Insert...				20200411 15:09:53
+sd	source\ui\app\popup.src	0	menuitem	RID_DRAW_TABLE_POPUP.DUMMY+11	SID_TABLE_DISTRIBUTE_ROWS	CMD_SID_TABLE_DISTRIBUTE_ROWS		0	ru	Равномерно				20200411 15:09:53
+sd	source\ui\app\popup.src	0	menuitem	RID_DRAW_TABLE_POPUP.DUMMY+11	SID_TABLE_SELECT_ROW	CMD_SID_TABLE_SELECT_ROW		0	ru	Выделить				20200411 15:09:53
+sd	source\ui\app\popup.src	0	menuitem	RID_DRAW_TABLE_POPUP.DUMMY+11	SID_TABLE_INSERT_ROW_DLG	CMD_SID_TABLE_INSERT_ROW_DLG		0	ru	Вставить...				20200411 15:09:53
 sd	source\ui\app\popup.src	0	menuitem	RID_DRAW_TABLE_POPUP.DUMMY+11	SID_TABLE_DELETE_ROW	CMD_SID_TABLE_DELETE_ROW		0	ru	Удалить				20200411 15:09:53
 sd	source\ui\app\popup.src	0	menuitem	RID_DRAW_TABLE_POPUP	DUMMY+11			0	ru	С~трока				20200411 15:09:53
 sd	source\ui\app\popup.src	0	menuitem	RID_DRAW_TABLE_POPUP.DUMMY+12	SID_TABLE_DISTRIBUTE_COLUMNS	CMD_SID_TABLE_DISTRIBUTE_COLUMNS		0	ru	Равномерно				20200411 15:09:53
@@ -22536,7 +22536,7 @@ vcl	source\src\btntext.src	0	string	SV_BUTTONTEXT_YES				0	ru	Да				20200411 1
 vcl	source\src\btntext.src	0	string	SV_BUTTONTEXT_NO				0	ru	Нет				20200411 15:09:53
 vcl	source\src\btntext.src	0	string	SV_BUTTONTEXT_RETRY				0	ru	Повторить				20200411 15:09:53
 vcl	source\src\btntext.src	0	string	SV_BUTTONTEXT_HELP				0	ru	~Справка				20200411 15:09:53
-vcl	source\src\btntext.src	0	string	SV_BUTTONTEXT_MORE				0	ru	~More				20200411 15:09:53
+vcl	source\src\btntext.src	0	string	SV_BUTTONTEXT_MORE				0	ru	Е~щё				20200411 15:09:53
 vcl	source\src\btntext.src	0	string	SV_BUTTONTEXT_LESS				0	ru	Скрыть				20200411 15:09:53
 vcl	source\src\btntext.src	0	string	SV_BUTTONTEXT_IGNORE				0	ru	Пропустить				20200411 15:09:53
 vcl	source\src\btntext.src	0	string	SV_BUTTONTEXT_ABORT				0	ru	Отмена				20200411 15:09:53
@@ -72956,3 +72956,16 @@ padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_TXT			14
 padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_USER_TXT			60	ru	Пользователь				20200411 15:09:53
 padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_PASS_TXT			60	ru	Пароль				20200411 15:09:53
 padmin	source\rtsetup.src	0	modaldialog	RID_RTS_PWDIALOG				150	ru	Требуется аутентификация				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10652				0	ru	\<ahelp hid=\".\" visibility=\"hidden\"\>Открытие страницы "Страницы шаблона", на которой можно применить шаблон (фон) ко всем слайдам (щелчок левой кнопкой) или к выделенным слайдам (щелчок правой кнопкой).\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1067D				0	ru	\<ahelp hid=\".\" visibility=\"hidden\"\>Выводится список текущих используемых страниц шаблонов.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106A8				0	ru	\<ahelp hid=\".\" visibility=\"hidden\"\>Выводится список последних использованных страниц шаблонов.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106D3				0	ru	\<ahelp hid=\".\" visibility=\"hidden\"\>Выводится список всех доступных страниц шаблонов.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106FA				0	ru	\<ahelp hid=\".\" visibility=\"hidden\"\>Щелчок левой кнопкой применяет шаблон ко всем слайдам. Щелчок правой кнопкой мыши открывает подменю.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10747				0	ru	\<ahelp hid=\".\" visibility=\"hidden\"\>Применяет шаблон ко всем слайдам.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10762				0	ru	\<ahelp hid=\".\" visibility=\"hidden\"\>Применяет страницу шаблона или шаблон оформления слайда к выделенным слайдам.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10785				0	ru	\<ahelp hid=\".\" visibility=\"hidden\"\>Изменение размера предварительного просмотра мастер-страниц.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107B4				0	ru	\<ahelp hid=\".\" visibility=\"hidden\"\>Открытие страницы "Разметки", на которой можно применить шаблон оформления слайда к выделенному слайду или слайдам.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107CB				0	ru	\<ahelp hid=\".\" visibility=\"hidden\"\>Щелкните, чтобы применить шаблон оформления слайда ко всем выделенным слайдам. Щелчок правой кнопкой мыши открывает подменю.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1080E				0	ru	\<ahelp hid=\".\" visibility=\"hidden\"\>Открытие страницы "Настройка анимации", на которой можно применить эффекты к выделенным объектам на слайде.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10839				0	ru	\<ahelp hid=\".\" visibility=\"hidden\"\>Открытие страницы "Смена слайда", на которой можно применить эффекты перехода к выделенным слайдам.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_id0916200812240344				0	ru	\<ahelp hid=\".\" visibility=\"hidden\"\>Открытие Конструктора таблиц Дважды щелкните по предварительному просмотру для вставки новой таблицы.\</ahelp\>				20200411 15:09:53

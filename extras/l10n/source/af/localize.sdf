@@ -8497,7 +8497,7 @@ sc	source\ui\src\scstring.src	0	string	SCSTR_NEWTABLE				0	af	- new sheet -				2
 sc	source\ui\src\scstring.src	0	string	SCSTR_ALL				0	af	- all -				20181231 09:50:43
 sc	source\ui\src\scstring.src	0	string	SCSTR_STDFILTER				0	af	Standard Filter...				20181231 09:50:43
 sc	source\ui\src\scstring.src	0	string	SCSTR_TOP10FILTER				0	af	Top 10				20181231 09:50:43
-sc	source\ui\src\scstring.src	0	string	SCSTR_NONAME				0	af	unnamed				20181231 09:50:43
+sc	source\ui\src\scstring.src	0	string	SCSTR_NONAME				0	af	onbenoem				20181231 09:50:43
 sc	source\ui\src\scstring.src	0	string	SCSTR_COLUMN				0	af	Column				20181231 09:50:43
 sc	source\ui\src\scstring.src	0	string	SCSTR_ROW				0	af	Row				20181231 09:50:43
 sc	source\ui\src\scstring.src	0	string	SCSTR_NEW				0	af	~New				20181231 09:50:43
@@ -9111,7 +9111,7 @@ sc	source\ui\src\globstr.src	0	string	RID_GLOBSTR	STR_UNDO_PRINTSCALE			0	af	Cha
 sc	source\ui\src\globstr.src	0	string	RID_GLOBSTR	STR_UNDO_DRAG_BREAK			0	af	Move Page Break				20181231 09:50:43
 sc	source\ui\src\globstr.src	0	string	RID_GLOBSTR	STR_UNDO_RANGENAMES			0	af	Edit range names				20181231 09:50:43
 sc	source\ui\src\globstr.src	0	string	RID_GLOBSTR	STR_UNDO_TRANSLITERATE			0	af	Case/Characters				20181231 09:50:43
-sc	source\ui\src\globstr.src	0	string	RID_GLOBSTR	STR_DB_NONAME			0	af	unnamed				20181231 09:50:43
+sc	source\ui\src\globstr.src	0	string	RID_GLOBSTR	STR_DB_NONAME			0	af	onbenoem				20181231 09:50:43
 sc	source\ui\src\globstr.src	0	string	RID_GLOBSTR	STR_DBNAME_IMPORT			0	af	Import				20181231 09:50:43
 sc	source\ui\src\globstr.src	0	string	RID_GLOBSTR	STR_MSSG_DOSUBTOTALS_0			0	af	%PRODUCTNAME Calc				20181231 09:50:43
 sc	source\ui\src\globstr.src	0	string	RID_GLOBSTR	STR_MSSG_DOSUBTOTALS_1			0	af	Delete data?				20181231 09:50:43
@@ -18249,25 +18249,25 @@ basctl	source\basicide\brkdlg.src	0	modaldialog	RID_BASICIDE_BREAKPOINTDLG				17
 basctl	source\basicide\moduldlg.src	0	pageitem	RID_TD_ORGANIZE.RID_TC_ORGANIZE	RID_TP_MOD			0	af	Modules				20181231 09:50:43
 basctl	source\basicide\moduldlg.src	0	pageitem	RID_TD_ORGANIZE.RID_TC_ORGANIZE	RID_TP_DLG			0	af	Dialogs				20181231 09:50:43
 basctl	source\basicide\moduldlg.src	0	pageitem	RID_TD_ORGANIZE.RID_TC_ORGANIZE	RID_TP_LIB			0	af	Libraries				20181231 09:50:43
-basctl	source\basicide\moduldlg.src	0	tabdialog	RID_TD_ORGANIZE				0	af	%PRODUCTNAME Basic Macro Organizer				20181231 09:50:43
+basctl	source\basicide\moduldlg.src	0	tabdialog	RID_TD_ORGANIZE				0	af	%PRODUCTNAME Basic-makro-organiseerder				20181231 09:50:43
 basctl	source\basicide\moduldlg.src	0	fixedtext	RID_TP_MODULS	RID_STR_LIB			130	af	M~odule				20181231 09:50:43
 basctl	source\basicide\moduldlg.src	0	pushbutton	RID_TP_MODULS	RID_PB_EDIT			60	af	~Edit				20181231 09:50:43
 basctl	source\basicide\moduldlg.src	0	cancelbutton	RID_TP_MODULS	RID_PB_CLOSE			60	af	Close				20181231 09:50:43
-basctl	source\basicide\moduldlg.src	0	pushbutton	RID_TP_MODULS	RID_PB_NEWMOD			60	af	~New...				20181231 09:50:43
-basctl	source\basicide\moduldlg.src	0	pushbutton	RID_TP_MODULS	RID_PB_NEWDLG			60	af	~New...				20181231 09:50:43
+basctl	source\basicide\moduldlg.src	0	pushbutton	RID_TP_MODULS	RID_PB_NEWMOD			60	af	~Nuwe...				20181231 09:50:43
+basctl	source\basicide\moduldlg.src	0	pushbutton	RID_TP_MODULS	RID_PB_NEWDLG			60	af	~Nuwe...				20181231 09:50:43
 basctl	source\basicide\moduldlg.src	0	pushbutton	RID_TP_MODULS	RID_PB_DELETE			60	af	~Delete				20181231 09:50:43
 basctl	source\basicide\moduldlg.src	0	fixedtext	RID_TP_DLGS	RID_STR_LIB			130	af	Dialog				20181231 09:50:43
 basctl	source\basicide\moduldlg.src	0	pushbutton	RID_TP_DLGS	RID_PB_EDIT			60	af	~Edit				20181231 09:50:43
 basctl	source\basicide\moduldlg.src	0	cancelbutton	RID_TP_DLGS	RID_PB_CLOSE			60	af	Close				20181231 09:50:43
-basctl	source\basicide\moduldlg.src	0	pushbutton	RID_TP_DLGS	RID_PB_NEWMOD			60	af	~New...				20181231 09:50:43
-basctl	source\basicide\moduldlg.src	0	pushbutton	RID_TP_DLGS	RID_PB_NEWDLG			60	af	~New...				20181231 09:50:43
+basctl	source\basicide\moduldlg.src	0	pushbutton	RID_TP_DLGS	RID_PB_NEWMOD			60	af	~Nuwe...				20181231 09:50:43
+basctl	source\basicide\moduldlg.src	0	pushbutton	RID_TP_DLGS	RID_PB_NEWDLG			60	af	~Nuwe...				20181231 09:50:43
 basctl	source\basicide\moduldlg.src	0	pushbutton	RID_TP_DLGS	RID_PB_DELETE			60	af	~Delete				20181231 09:50:43
 basctl	source\basicide\moduldlg.src	0	fixedtext	RID_TP_LIBS	RID_STR_BASICS			130	af	L~ocation				20181231 09:50:43
 basctl	source\basicide\moduldlg.src	0	fixedtext	RID_TP_LIBS	RID_STR_LIB			130	af	~Library				20181231 09:50:43
 basctl	source\basicide\moduldlg.src	0	pushbutton	RID_TP_LIBS	RID_PB_EDIT			60	af	~Edit				20181231 09:50:43
 basctl	source\basicide\moduldlg.src	0	cancelbutton	RID_TP_LIBS	RID_PB_CLOSE			60	af	Close				20181231 09:50:43
 basctl	source\basicide\moduldlg.src	0	pushbutton	RID_TP_LIBS	RID_PB_PASSWORD			60	af	~Password...				20181231 09:50:43
-basctl	source\basicide\moduldlg.src	0	pushbutton	RID_TP_LIBS	RID_PB_NEWLIB			60	af	~New...				20181231 09:50:43
+basctl	source\basicide\moduldlg.src	0	pushbutton	RID_TP_LIBS	RID_PB_NEWLIB			60	af	~Nuwe...				20181231 09:50:43
 basctl	source\basicide\moduldlg.src	0	pushbutton	RID_TP_LIBS	RID_PB_APPEND			60	af	~Import...				20181231 09:50:43
 basctl	source\basicide\moduldlg.src	0	pushbutton	RID_TP_LIBS	RID_PB_EXPORT			60	af	E~xport...				20181231 09:50:43
 basctl	source\basicide\moduldlg.src	0	pushbutton	RID_TP_LIBS	RID_PB_DELETE			60	af	~Delete				20181231 09:50:43
@@ -18394,7 +18394,7 @@ basctl	source\basicide\macrodlg.src	0	cancelbutton	RID_MACROCHOOSER	RID_PB_CLOSE
 basctl	source\basicide\macrodlg.src	0	pushbutton	RID_MACROCHOOSER	RID_PB_ASSIGN			50	af	~Assign...				20181231 09:50:43
 basctl	source\basicide\macrodlg.src	0	pushbutton	RID_MACROCHOOSER	RID_PB_EDIT			50	af	~Edit				20181231 09:50:43
 basctl	source\basicide\macrodlg.src	0	pushbutton	RID_MACROCHOOSER	RID_PB_NEWLIB			50	af	New ~Library				20181231 09:50:43
-basctl	source\basicide\macrodlg.src	0	pushbutton	RID_MACROCHOOSER	RID_PB_NEWMOD			50	af	New M~odule				20181231 09:50:43
+basctl	source\basicide\macrodlg.src	0	pushbutton	RID_MACROCHOOSER	RID_PB_NEWMOD			50	af	Nuwe mo~dule				20181231 09:50:43
 basctl	source\basicide\macrodlg.src	0	pushbutton	RID_MACROCHOOSER	RID_PB_DEL			50	af	~Delete				20181231 09:50:43
 basctl	source\basicide\macrodlg.src	0	pushbutton	RID_MACROCHOOSER	RID_PB_ORG			50	af	~Organizer...				20181231 09:50:43
 basctl	source\basicide\macrodlg.src	0	modaldialog	RID_MACROCHOOSER				287	af	%PRODUCTNAME Basic Macros				20181231 09:50:43
@@ -20622,8 +20622,8 @@ sfx2	source\doc\doctempl.src	0	itemlist	TEMPLATE_LONG_NAMES_ARY	8			0	af	Present
 sfx2	source\doc\doctempl.src	0	itemlist	TEMPLATE_LONG_NAMES_ARY	9			0	af	Presentations				20181231 09:50:43
 sfx2	source\doc\doctempl.src	0	itemlist	TEMPLATE_LONG_NAMES_ARY	10			0	af	Miscellaneous				20181231 09:50:43
 sfx2	source\doc\doctempl.src	0	string	RID_CNT_STR_WAITING				0	af	The templates are being initialized for first-time usage.				20181231 09:50:43
-sfx2	source\bastyp\fltfnc.src	0	string	STR_FILTER_NOT_INSTALLED				0	af	The selected filter $(FILTER) has not been installed.\nWould you like to do this now?				20181231 09:50:43
-sfx2	source\bastyp\fltfnc.src	0	string	STR_FILTER_CONSULT_SERVICE				0	af	The selected filter $(FILTER) is not included in your edition.\nYou can find information about orders on our homepage.				20181231 09:50:43
+sfx2	source\bastyp\fltfnc.src	0	string	STR_FILTER_NOT_INSTALLED				0	af	Die filter $(FILTER) wat u gekies het, is nie geïnstalleer nie.\nWil u dit nou installeer?				20181231 09:50:43
+sfx2	source\bastyp\fltfnc.src	0	string	STR_FILTER_CONSULT_SERVICE				0	af	Die filter $(FILTER) wat u gekies het is nie in u weergawe ingesluit nie.\nU kan inligting oor bestellings op ons tuisblad kry.				20181231 09:50:43
 sfx2	source\dialog\versdlg.src	0	fixedline	DLG_VERSIONS	GB_NEWVERSIONS			272	af	New versions				20181231 09:50:43
 sfx2	source\dialog\versdlg.src	0	pushbutton	DLG_VERSIONS	PB_SAVE			90	af	Save ~New Version				20181231 09:50:43
 sfx2	source\dialog\versdlg.src	0	checkbox	DLG_VERSIONS	CB_SAVEONCLOSE			164	af	~Always save a version on closing				20181231 09:50:43
@@ -20874,7 +20874,7 @@ sfx2	source\dialog\passwd.src	0	fixedtext	DLG_PASSWD	FT_PASSWD_CONFIRM2			42	af	
 sfx2	source\dialog\passwd.src	0	string	DLG_PASSWD	TEXT_PASSWD			50	af	Password				20181231 09:50:43
 sfx2	source\dialog\passwd.src	0	modaldialog	DLG_PASSWD		HID_PASSWD		200	af	Enter Password				20181231 09:50:43
 sfx2	source\appl\sfx.src	0	string	STR_ACCTITLE_PRODUCTIVITYTOOLS				0	af	%PRODUCTNAME				20181231 09:50:43
-sfx2	source\appl\app.src	0	string	STR_NONAME				0	af	Untitled				20181231 09:50:43
+sfx2	source\appl\app.src	0	string	STR_NONAME				0	af	Titelloos				20181231 09:50:43
 sfx2	source\appl\app.src	0	string	STR_CLOSE				0	af	Close				20181231 09:50:43
 sfx2	source\appl\app.src	0	string	STR_STYLE_FILTER_AUTO				0	af	Automatic				20181231 09:50:43
 sfx2	source\appl\app.src	0	string	STR_STANDARD_SHORTCUT				0	af	Standard				20181231 09:50:43
@@ -20886,9 +20886,9 @@ sfx2	source\appl\app.src	0	querybox	MSG_QUERY_LASTVERSION				0	af	Cancel all cha
 sfx2	source\appl\app.src	0	infobox	RID_DOCALREADYLOADED_DLG				0	af	Document already open.				20181231 09:50:43
 sfx2	source\appl\app.src	0	errorbox	MSG_ERR_NO_WEBBROWSER_FOUND				0	af	%PRODUCTNAME could not find a web browser on your system. Please check your desktop preferences or install a web browser (for example, Mozilla) in the default location requested during the browser installation.				20181231 09:50:43
 sfx2	source\appl\app.src	0	string	GID_INTERN				0	af	Internal				20181231 09:50:43
-sfx2	source\appl\app.src	0	string	GID_APPLICATION				0	af	Application				20181231 09:50:43
-sfx2	source\appl\app.src	0	string	GID_VIEW				0	af	View				20181231 09:50:43
-sfx2	source\appl\app.src	0	string	GID_DOCUMENT				0	af	Documents				20181231 09:50:43
+sfx2	source\appl\app.src	0	string	GID_APPLICATION				0	af	Toepassing				20181231 09:50:43
+sfx2	source\appl\app.src	0	string	GID_VIEW				0	af	Bekyk				20181231 09:50:43
+sfx2	source\appl\app.src	0	string	GID_DOCUMENT				0	af	Dokumente				20181231 09:50:43
 sfx2	source\appl\app.src	0	string	GID_EDIT				0	af	Edit				20181231 09:50:43
 sfx2	source\appl\app.src	0	string	GID_MACRO				0	af	BASIC				20181231 09:50:43
 sfx2	source\appl\app.src	0	string	GID_OPTIONS				0	af	Options				20181231 09:50:43
@@ -20965,7 +20965,7 @@ sfx2	source\appl\newhelp.src	0	checkbox	TP_HELP_SEARCH	CB_SCOPE			128	af	Find in
 sfx2	source\appl\newhelp.src	0	pushbutton	TP_HELP_SEARCH	PB_OPEN_SEARCH			50	af	~Display				20181231 09:50:43
 sfx2	source\appl\newhelp.src	0	fixedtext	TP_HELP_BOOKMARKS	FT_BOOKMARKS			108	af	~Bookmarks				20181231 09:50:43
 sfx2	source\appl\newhelp.src	0	pushbutton	TP_HELP_BOOKMARKS	PB_BOOKMARKS			50	af	~Display				20181231 09:50:43
-sfx2	source\appl\newhelp.src	0	string	STR_HELP_WINDOW_TITLE				120	af	%PRODUCTNAME Help				20181231 09:50:43
+sfx2	source\appl\newhelp.src	0	string	STR_HELP_WINDOW_TITLE				120	af	%PRODUCTNAME-hulp				20181231 09:50:43
 sfx2	source\appl\newhelp.src	0	string	STR_HELP_BUTTON_INDEX_ON				120	af	Show Navigation Pane				20181231 09:50:43
 sfx2	source\appl\newhelp.src	0	string	STR_HELP_BUTTON_INDEX_OFF				120	af	Hide Navigation Pane				20181231 09:50:43
 sfx2	source\appl\newhelp.src	0	string	STR_HELP_BUTTON_START				120	af	First Page				20181231 09:50:43
@@ -20975,7 +20975,7 @@ sfx2	source\appl\newhelp.src	0	string	STR_HELP_BUTTON_PRINT				120	af	Print...		
 sfx2	source\appl\newhelp.src	0	string	STR_HELP_BUTTON_ADDBOOKMARK				120	af	Add to Bookmarks...				20181231 09:50:43
 sfx2	source\appl\newhelp.src	0	string	STR_HELP_BUTTON_SEARCHDIALOG				120	af	Find on this Page...				20181231 09:50:43
 sfx2	source\appl\newhelp.src	0	string	STR_HELP_BUTTON_SOURCEVIEW				120	af	HTML Source				20181231 09:50:43
-sfx2	source\appl\newhelp.src	0	string	STR_HELP_FIRST_MESSAGE				120	af	The Help is being started...				20181231 09:50:43
+sfx2	source\appl\newhelp.src	0	string	STR_HELP_FIRST_MESSAGE				120	af	Die hulp word begin...				20181231 09:50:43
 sfx2	source\appl\newhelp.src	0	string	STR_HELP_MENU_TEXT_SELECTION_MODE				120	af	Select Text				20181231 09:50:43
 sfx2	source\appl\newhelp.src	0	string	STR_HELP_MENU_TEXT_COPY				120	af	~Copy				20181231 09:50:43
 sfx2	source\appl\newhelp.src	0	fixedtext	DLG_HELP_ADDBOOKMARK	FT_BOOKMARK_TITLE			140	af	Bookmark:				20181231 09:50:43
@@ -69637,7 +69637,7 @@ cui	source\customize\cfg.src	0	string	BUTTON_STR_DOWN				200	af	Down				20181231
 cui	source\options\readonlyimage.src	0	string	RID_SVXSTR_READONLY_CONFIG_TIP				0	af	This setting is protected by the Administrator				20181231 09:50:43
 cui	source\options\optpath.src	0	fixedtext	RID_SFXPAGE_PATH	FT_TYPE			40	af	Type				20181231 09:50:43
 cui	source\options\optpath.src	0	fixedtext	RID_SFXPAGE_PATH	FT_PATH			40	af	Path				20181231 09:50:43
-cui	source\options\optpath.src	0	pushbutton	RID_SFXPAGE_PATH	BTN_PATH			65	af	~Edit...				20181231 09:50:43
+cui	source\options\optpath.src	0	pushbutton	RID_SFXPAGE_PATH	BTN_PATH			65	af	~Redigeer...				20181231 09:50:43
 cui	source\options\optpath.src	0	pushbutton	RID_SFXPAGE_PATH	BTN_STANDARD			65	af	~Default				20181231 09:50:43
 cui	source\options\optpath.src	0	fixedline	RID_SFXPAGE_PATH	GB_STD			248	af	Paths used by %PRODUCTNAME				20181231 09:50:43
 cui	source\options\optpath.src	0	string	RID_SFXPAGE_PATH	STR_MULTIPATHDLG			248	af	Edit Paths: %1				20181231 09:50:43
@@ -69662,9 +69662,9 @@ cui	source\options\optpath.src	0	string	RID_SVXSTR_KEY_FAVORITES_DIR				260	af	F
 cui	source\options\optpath.src	0	string	RID_SVXSTR_KEY_FILTER_PATH				260	af	Filters				20181231 09:50:43
 cui	source\options\optpath.src	0	string	RID_SVXSTR_KEY_ADDINS_PATH				260	af	Add-ins				20181231 09:50:43
 cui	source\options\optpath.src	0	string	RID_SVXSTR_KEY_USERCONFIG_PATH				260	af	User Configuration				20181231 09:50:43
-cui	source\options\optpath.src	0	string	RID_SVXSTR_KEY_USERDICTIONARY_DIR				260	af	User-defined dictionaries				20181231 09:50:43
+cui	source\options\optpath.src	0	string	RID_SVXSTR_KEY_USERDICTIONARY_DIR				260	af	Gebruikergedefinieerde woordeboeke				20181231 09:50:43
 cui	source\options\optpath.src	0	string	RID_SVXSTR_KEY_AUTOCORRECT_DIR				260	af	AutoCorrect				20181231 09:50:43
-cui	source\options\optpath.src	0	string	RID_SVXSTR_KEY_LINGUISTIC_DIR				260	af	Writing aids				20181231 09:50:43
+cui	source\options\optpath.src	0	string	RID_SVXSTR_KEY_LINGUISTIC_DIR				260	af	Skryfhulpmiddels				20181231 09:50:43
 cui	source\options\optctl.src	0	fixedline	RID_SVXPAGE_OPTIONS_CTL	FL_SEQUENCECHECKING			248	af	Sequence checking				20181231 09:50:43
 cui	source\options\optctl.src	0	checkbox	RID_SVXPAGE_OPTIONS_CTL	CB_SEQUENCECHECKING			236	af	Use se~quence checking				20181231 09:50:43
 cui	source\options\optctl.src	0	checkbox	RID_SVXPAGE_OPTIONS_CTL	CB_RESTRICTED			236	af	Restricted				20181231 09:50:43
@@ -69745,20 +69745,20 @@ cui	source\options\optlingu.src	0	pushbutton	RID_SVXDLG_EDIT_MODULES	PB_EDIT_MOD
 cui	source\options\optlingu.src	0	fixedtext	RID_SVXDLG_EDIT_MODULES	FT_EDIT_MODULES_NEWDICTSLINK			169	af	~Get more dictionaries online...				20181231 09:50:43
 cui	source\options\optlingu.src	0	okbutton	RID_SVXDLG_EDIT_MODULES	PB_OK			0	af	Close				20181231 09:50:43
 cui	source\options\optlingu.src	0	string	RID_SVXDLG_EDIT_MODULES	ST_SPELL			0	af	Spelling				20181231 09:50:43
-cui	source\options\optlingu.src	0	string	RID_SVXDLG_EDIT_MODULES	ST_HYPH			0	af	Hyphenation				20181231 09:50:43
+cui	source\options\optlingu.src	0	string	RID_SVXDLG_EDIT_MODULES	ST_HYPH			0	af	Woordafbreking				20181231 09:50:43
 cui	source\options\optlingu.src	0	string	RID_SVXDLG_EDIT_MODULES	ST_THES			0	af	Thesaurus				20181231 09:50:43
 cui	source\options\optlingu.src	0	string	RID_SVXDLG_EDIT_MODULES	ST_GRAMMAR			0	af	Grammar				20181231 09:50:43
 cui	source\options\optlingu.src	0	modaldialog	RID_SVXDLG_EDIT_MODULES		HID_EDIT_MODULES		240	af	Edit Modules				20181231 09:50:43
-cui	source\options\optlingu.src	0	string	RID_SVXDLG_LNG_ED_NUM_PREBREAK	STR_NUM_PRE_BREAK_DLG			31	af	Characters before break				20181231 09:50:43
-cui	source\options\optlingu.src	0	string	RID_SVXDLG_LNG_ED_NUM_PREBREAK	STR_NUM_POST_BREAK_DLG			31	af	Characters after break				20181231 09:50:43
-cui	source\options\optlingu.src	0	string	RID_SVXDLG_LNG_ED_NUM_PREBREAK	STR_NUM_MIN_WORDLEN_DLG			31	af	Minimal word length				20181231 09:50:43
-cui	source\options\optlingu.src	0	modaldialog	RID_SVXDLG_LNG_ED_NUM_PREBREAK		HID_LNGDLG_NUM_PREBREAK		155	af	Hyphenation				20181231 09:50:43
-cui	source\options\optlingu.src	0	fixedline	RID_SFXPAGE_LINGU	FL_LINGUISTIC			248	af	Writing aids				20181231 09:50:43
-cui	source\options\optlingu.src	0	fixedtext	RID_SFXPAGE_LINGU	FT_LINGU_MODULES			175	af	Available language modules				20181231 09:50:43
-cui	source\options\optlingu.src	0	pushbutton	RID_SFXPAGE_LINGU	PB_LINGU_MODULES_EDIT			50	af	~Edit...				20181231 09:50:43
-cui	source\options\optlingu.src	0	fixedtext	RID_SFXPAGE_LINGU	FT_LINGU_DICS			175	af	User-defined dictionaries				20181231 09:50:43
+cui	source\options\optlingu.src	0	string	RID_SVXDLG_LNG_ED_NUM_PREBREAK	STR_NUM_PRE_BREAK_DLG			31	af	Karakters voor breuk				20181231 09:50:43
+cui	source\options\optlingu.src	0	string	RID_SVXDLG_LNG_ED_NUM_PREBREAK	STR_NUM_POST_BREAK_DLG			31	af	Karakters na breuk				20181231 09:50:43
+cui	source\options\optlingu.src	0	string	RID_SVXDLG_LNG_ED_NUM_PREBREAK	STR_NUM_MIN_WORDLEN_DLG			31	af	Minimale woordlengte				20181231 09:50:43
+cui	source\options\optlingu.src	0	modaldialog	RID_SVXDLG_LNG_ED_NUM_PREBREAK		HID_LNGDLG_NUM_PREBREAK		155	af	Woordafbreking				20181231 09:50:43
+cui	source\options\optlingu.src	0	fixedline	RID_SFXPAGE_LINGU	FL_LINGUISTIC			248	af	Skryfhulpmiddels				20181231 09:50:43
+cui	source\options\optlingu.src	0	fixedtext	RID_SFXPAGE_LINGU	FT_LINGU_MODULES			175	af	Beskikbare taalmodules				20181231 09:50:43
+cui	source\options\optlingu.src	0	pushbutton	RID_SFXPAGE_LINGU	PB_LINGU_MODULES_EDIT			50	af	~Redigeer...				20181231 09:50:43
+cui	source\options\optlingu.src	0	fixedtext	RID_SFXPAGE_LINGU	FT_LINGU_DICS			175	af	Gebruikergedefinieerde woordeboeke				20181231 09:50:43
 cui	source\options\optlingu.src	0	pushbutton	RID_SFXPAGE_LINGU	PB_LINGU_DICS_NEW_DIC			50	af	~New...				20181231 09:50:43
-cui	source\options\optlingu.src	0	pushbutton	RID_SFXPAGE_LINGU	PB_LINGU_DICS_EDIT_DIC			50	af	Ed~it...				20181231 09:50:43
+cui	source\options\optlingu.src	0	pushbutton	RID_SFXPAGE_LINGU	PB_LINGU_DICS_EDIT_DIC			50	af	~Redigeer...				20181231 09:50:43
 cui	source\options\optlingu.src	0	pushbutton	RID_SFXPAGE_LINGU	PB_LINGU_DICS_DEL_DIC			50	af	~Delete				20181231 09:50:43
 cui	source\options\optlingu.src	0	fixedtext	RID_SFXPAGE_LINGU	FT_LINGU_OPTIONS			175	af	~Options				20181231 09:50:43
 cui	source\options\optlingu.src	0	pushbutton	RID_SFXPAGE_LINGU	PB_LINGU_OPTIONS_EDIT			50	af	Edi~t...				20181231 09:50:43
@@ -69891,7 +69891,7 @@ cui	source\options\treeopt.src	0	string	RID_RIDER_SLL_PERSONAL				0	af	Personal 
 cui	source\options\dbregister.src	0	fixedtext	RID_SFXPAGE_DBREGISTER	FT_TYPE			40	af	Registered name				20181231 09:50:43
 cui	source\options\dbregister.src	0	fixedtext	RID_SFXPAGE_DBREGISTER	FT_PATH			40	af	Database file				20181231 09:50:43
 cui	source\options\dbregister.src	0	pushbutton	RID_SFXPAGE_DBREGISTER	BTN_NEW			65	af	~New...				20181231 09:50:43
-cui	source\options\dbregister.src	0	pushbutton	RID_SFXPAGE_DBREGISTER	BTN_EDIT			65	af	~Edit...				20181231 09:50:43
+cui	source\options\dbregister.src	0	pushbutton	RID_SFXPAGE_DBREGISTER	BTN_EDIT			65	af	~Redigeer...				20181231 09:50:43
 cui	source\options\dbregister.src	0	pushbutton	RID_SFXPAGE_DBREGISTER	BTN_DELETE			65	af	~Delete				20181231 09:50:43
 cui	source\options\dbregister.src	0	fixedline	RID_SFXPAGE_DBREGISTER	GB_STD			248	af	Registered databases				20181231 09:50:43
 cui	source\options\dbregister.src	0	tabpage	RID_SFXPAGE_DBREGISTER				260	af	Registered databases				20181231 09:50:43
@@ -69900,7 +69900,7 @@ cui	source\options\optchart.src	0	fixedline	RID_OPTPAGE_CHART_DEFCOLORS	FL_COLOR
 cui	source\options\optchart.src	0	pushbutton	RID_OPTPAGE_CHART_DEFCOLORS	PB_RESET_TO_DEFAULT			50	af	~Default				20181231 09:50:43
 cui	source\options\optchart.src	0	tabpage	RID_OPTPAGE_CHART_DEFCOLORS		HID_OPTIONS_CHART_DEFCOLORS		260	af	Default Colors				20181231 09:50:43
 cui	source\options\optchart.src	0	string	RID_SVXSTR_DIAGRAM_ROW				260	af	Data Series $(ROW)				20181231 09:50:43
-cui	source\options\optspell.src	0	pushbutton	RID_SFXPAGE_SPELL	BTN_BOOK			50	af	~Edit...				20181231 09:50:43
+cui	source\options\optspell.src	0	pushbutton	RID_SFXPAGE_SPELL	BTN_BOOK			50	af	~Redigeer...				20181231 09:50:43
 cui	source\options\optspell.src	0	fixedline	RID_SFXPAGE_SPELL	GB_BOOK			115	af	Dictionaries				20181231 09:50:43
 cui	source\options\optspell.src	0	checkbox	RID_SFXPAGE_SPELL	BTN_CAPS			103	af	~Capital words				20181231 09:50:43
 cui	source\options\optspell.src	0	checkbox	RID_SFXPAGE_SPELL	BTN_NUMS			103	af	~Words with numbers 				20181231 09:50:43

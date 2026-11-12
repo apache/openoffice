@@ -4543,6 +4543,24 @@ svx	source\form\fmexpl.src	0	menuitem	RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTT
 svx	source\form\fmexpl.src	0	groupbox	RID_SVXDLG_SETFORM	GB_PATH			188	da	Sti				20200411 15:09:53
 svx	source\form\fmexpl.src	0	modaldialog	RID_SVXDLG_SETFORM				200	da	Vælg formular				20200411 15:09:53
 svx	source\form\fmexpl.src	0	dockingwindow	RID_SVX_FMEXPLORER				200	da	Formularnavigator				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_EDIT	CMD_SID_FM_CONVERTTO_EDIT		42916	da	~Tekstfelt				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_BUTTON	CMD_SID_FM_CONVERTTO_BUTTON		42916	da	~Knap				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_FIXEDTEXT	CMD_SID_FM_CONVERTTO_FIXEDTEXT		42916	da	~Etiketfelt				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_GROUPBOX	CMD_SID_FM_CONVERTTO_GROUPBOX		42916	da	Gruppefelt				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_LISTBOX	CMD_SID_FM_CONVERTTO_LISTBOX		42916	da	Rulleliste				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_CHECKBOX	CMD_SID_FM_CONVERTTO_CHECKBOX		42916	da	~Afkrydsningsfelt				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_RADIOBUTTON	CMD_SID_FM_CONVERTTO_RADIOBUTTON		42916	da	~Alternativknap				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_COMBOBOX	CMD_SID_FM_CONVERTTO_COMBOBOX		42916	da	~Kombinationsfelt				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_IMAGEBUTTON	CMD_SID_FM_CONVERTTO_IMAGEBUTTON		42916	da	Grafisk knap				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_FILECONTROL	CMD_SID_FM_CONVERTTO_FILECONTROL		42916	da	~Filvalg				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_DATE	CMD_SID_FM_CONVERTTO_DATE		42916	da	~Datofelt				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_TIME	CMD_SID_FM_CONVERTTO_TIME		42916	da	Klokkeslætsfelt				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_NUMERIC	CMD_SID_FM_CONVERTTO_NUMERIC		42916	da	~Numerisk felt				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_CURRENCY	CMD_SID_FM_CONVERTTO_CURRENCY		42916	da	Val~utafelt				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_PATTERN	CMD_SID_FM_CONVERTTO_PATTERN		42916	da	~Felt med mønster				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_IMAGECONTROL	CMD_SID_FM_CONVERTTO_IMAGECONTROL		42916	da	~Grafisk kontrolelement				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_FORMATTED	CMD_SID_FM_CONVERTTO_FORMATTED		42916	da	Fo~rmateret felt				20200411 15:09:53
+svx	source\form\fmexpl.src	0	menuitem	RID_FMEXPLORER_POPUPMENU.RID_FMSHELL_CONVERSIONMENU	SID_FM_CONVERTTO_SCROLLBAR	CMD_SID_FM_CONVERTTO_SCROLLBAR		42916	da	Rullebjælke				20200411 15:09:53
 svx	source\form\filtnav.src	0	menuitem	RID_FM_FILTER_MENU	SID_FM_DELETE	HID_FM_DELETE		0	da	~Slet				20200411 15:09:53
 svx	source\form\filtnav.src	0	menuitem	RID_FM_FILTER_MENU	SID_FM_FILTER_EDIT	HID_FM_FILTER_EDIT		0	da	~Rediger				20200411 15:09:53
 svx	source\form\filtnav.src	0	menuitem	RID_FM_FILTER_MENU	SID_FM_FILTER_IS_NULL	HID_FM_FILTER_IS_NULL		0	da	~Er Null				20200411 15:09:53
@@ -14852,7 +14870,7 @@ officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..G
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:ArrowShapes.up-right-down-arrow	Label			0	da	Pil op, mod højre og nedad				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:AutoControlFocus	Label			0	da	Automatisk kontrolelement-fokus				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:AutoCorrectDlg	Label			0	da	~Autokorrekturindstillinger...				20200411 15:09:53
-officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:AutoFilter	Label			0	da	AutoFilter				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:AutoFilter	Label			0	da	Autofilter				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:AutoFormat	Label			0	da	Auto~format...				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:AutoPilotAddressDataSource	Label			0	da	Autopilot: Adressedatakilde				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:AutoPilotAgenda	Label			0	da	Autopilot: Dagsorden				20200411 15:09:53
@@ -15652,6 +15670,7 @@ officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..G
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Popups..uno:TransliterateMenu	Label			0	da	~STORE/små bogstaver				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Popups..uno:ViewMenu	Label			0	da	~View				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Popups..uno:WindowList	Label			0	da	~Window				20200411 15:09:53
+officecfg	registry\data\org\openoffice\Office\UI\GenericCommands.xcu	0	value	..GenericCommands.UserInterface.Commands..uno:Substract	Label			0	da	~Træk fra				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:AcceptChange	Label			0	da	Accepter ændring				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:AcceptTracedChange	Label			0	da	Accepter ændring				20200411 15:09:53
 officecfg	registry\data\org\openoffice\Office\UI\WriterCommands.xcu	0	value	..WriterCommands.UserInterface.Commands..uno:AcceptTrackedChanges	Label			0	da	~Accepter eller afvis...				20200411 15:09:53
@@ -20271,7 +20290,7 @@ extensions	source\scanner\grid.src	0	string	GRID_DIALOG	RESET_TYPE_RESET			50	da
 extensions	source\scanner\grid.src	0	string	GRID_DIALOG	RESET_TYPE_EXPONENTIAL			50	da	Eksponentiel vækst				20200411 15:09:53
 extensions	source\bibliography\toolbar.src	0	toolboxitem	RID_BIB_TOOLBAR	TBC_FT_SOURCE			0	da	Tabel				20200411 15:09:53
 extensions	source\bibliography\toolbar.src	0	toolboxitem	RID_BIB_TOOLBAR	TBC_FT_QUERY			0	da	Søgeord				20200411 15:09:53
-extensions	source\bibliography\toolbar.src	0	toolboxitem	RID_BIB_TOOLBAR	TBC_BT_AUTOFILTER	HID_BIB_TBX_AUTOFILTER		0	da	AutoFilter				20200411 15:09:53
+extensions	source\bibliography\toolbar.src	0	toolboxitem	RID_BIB_TOOLBAR	TBC_BT_AUTOFILTER	HID_BIB_TBX_AUTOFILTER		0	da	Autofilter				20200411 15:09:53
 extensions	source\bibliography\toolbar.src	0	toolboxitem	RID_BIB_TOOLBAR	TBC_BT_FILTERCRIT			0	da	Standardfilter				20200411 15:09:53
 extensions	source\bibliography\toolbar.src	0	toolboxitem	RID_BIB_TOOLBAR	TBC_BT_REMOVEFILTER			0	da	Fjern filter				20200411 15:09:53
 extensions	source\bibliography\toolbar.src	0	toolboxitem	RID_BIB_TOOLBAR	TBC_BT_COL_ASSIGN	HID_BIB_MAPPINGDLG		0	da	Kolonnetildeling				20200411 15:09:53
@@ -70370,7 +70389,7 @@ cui	source\tabpages\transfrm.src	0	fixedtext	RID_SVXPAGE_ANGLE	FT_ANGLEPRESETS		
 cui	source\tabpages\transfrm.src	0	control	RID_SVXPAGE_ANGLE	CTL_ANGLE	HID_TPROTATION_CTRL2		70	da	_		Rotations vinkel		20200411 15:09:53
 cui	source\tabpages\transfrm.src	0	tabpage	RID_SVXPAGE_ANGLE		HID_TRANS_ANGLE		260	da	Vinkel				20200411 15:09:53
 cui	source\tabpages\transfrm.src	0	fixedline	RID_SVXPAGE_SLANT	FL_RADIUS			248	da	Hjørneradius:				20200411 15:09:53
-cui	source\tabpages\transfrm.src	0	fixedtext	RID_SVXPAGE_SLANT	FT_RADIUS			40	da	~Radius				20200411 15:09:53
+cui	source\tabpages\transfrm.src	0	fixedtext	RID_SVXPAGE_SLANT	FT_RADIUS			40	da	Radius				20200411 15:09:53
 cui	source\tabpages\transfrm.src	0	fixedline	RID_SVXPAGE_SLANT	FL_SLANT			248	da	Hældning				20200411 15:09:53
 cui	source\tabpages\transfrm.src	0	fixedtext	RID_SVXPAGE_SLANT	FT_ANGLE			40	da	Vinkel				20200411 15:09:53
 cui	source\tabpages\transfrm.src	0	metricfield	RID_SVXPAGE_SLANT	MTR_FLD_ANGLE			54	da	grader				20200411 15:09:53
@@ -71933,6 +71952,15 @@ dbaccess	source\ui\browser\sbabrw.src	0	string	STR_LOADING_TABLE				0	da	Indlæs
 dbaccess	source\ui\browser\sbabrw.src	0	string	STR_NO_TABLE_FORMAT_INSIDE				0	da	Det var ikke muligt at finde noget tabelformat.				20200411 15:09:53
 dbaccess	source\ui\browser\sbabrw.src	0	string	STR_COULDNOTCONNECT_DATASOURCE				0	da	Der kunne ikke oprettes forbindelse til datakilden "$name$".				20200411 15:09:53
 dbaccess	source\ui\browser\sbabrw.src	0	menuitem	RID_MENU_REFRESH_DATA	ID_BROWSER_REFRESH_REBUILD			0	da	Genopbyg				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_TITLE_CONFIRM_DELETION			7527	da	Bekræft sletning				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_QUERY_DELETE_TABLE			7527	da	Skal tabellen '%1' slettes?				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	querybox	MENU_BROWSER_DEFAULTCONTEXT	QUERY_BRW_DELETE_QUERY_CONFIRM			7527	da	Forespørgslen findes allerede. Skal den slettes?				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	querybox	MENU_BROWSER_DEFAULTCONTEXT	QUERY_CONNECTION_LOST			7527	da	Forbindelsen til databasen er tabt! Skal den genoprettes?				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_OPENTABLES_WARNINGS			7527	da	Advarsler foreligger				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_OPENTABLES_WARNINGS_DETAILS			7527	da	Ved modtagelse af tabellerne blev der modtaget advarsler fra databaseforbindelsen.				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_NO_TABLE_FORMAT_INSIDE			7527	da	Det var ikke muligt at finde noget tabelformat.				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	string	MENU_BROWSER_DEFAULTCONTEXT	STR_COULDNOTCONNECT_DATASOURCE			7527	da	Der kunne ikke oprettes forbindelse til datakilden "$name$".				20200411 15:09:53
+dbaccess	source\ui\browser\sbabrw.src	0	menuitem	MENU_BROWSER_DEFAULTCONTEXT.RID_MENU_REFRESH_DATA	ID_BROWSER_REFRESH_REBUILD			25336	da	Genopbyg				20200411 15:09:53
 dbaccess	source\ui\browser\sbagrid.src	0	menuitem	RID_SBA_GRID_COLCTXMENU	ID_BROWSER_COLATTRSET	HID_BROWSER_COLUMNFORMAT		0	da	Kolonne~format...				20200411 15:09:53
 dbaccess	source\ui\browser\sbagrid.src	0	menuitem	RID_SBA_GRID_COLCTXMENU	ID_BROWSER_COLUMNINFO	HID_BROWSER_COLUMNINFO		0	da	Kopier kolonneb~eskrivelse				20200411 15:09:53
 dbaccess	source\ui\browser\sbagrid.src	0	menuitem	RID_SBA_GRID_ROWCTXMENU	ID_BROWSER_TABLEATTR	HID_BROWSER_TABLEFORMAT		0	da	Tabelformatering...				20200411 15:09:53
@@ -72898,3 +72926,16 @@ padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_TXT			14
 padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_USER_TXT			60	da	~Bruger				20200411 15:09:53
 padmin	source\rtsetup.src	0	fixedtext	RID_RTS_PWDIALOG	RID_RTS_PWDIALOG_PASS_TXT			60	da	~Adgangskode				20200411 15:09:53
 padmin	source\rtsetup.src	0	modaldialog	RID_RTS_PWDIALOG				150	da	Anmodning om godkendelse				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10652				0	da	\<ahelp hid=\".\" visibility=\"hidden\"\>Åbner fanebladet Mastersider, hvor du tildeler en masterside (baggrund) til alle dias (venstreklik) eller til det valgte dias (højreklik).\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1067D				0	da	\<ahelp hid=\".\" visibility=\"hidden\"\>Lister de aktuelt anvendte mastersider.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106A8				0	da	\<ahelp hid=\".\" visibility=\"hidden\"\>Lister de nyligt anvendte mastersider.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106D3				0	da	\<ahelp hid=\".\" visibility=\"hidden\"\>Lister alle tilgængelig mastersider.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN106FA				0	da	\<ahelp hid=\".\" visibility=\"hidden\"\>Venstreklik for at tildele mastersiden til alle dias. Højreklik for en undermenu.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10747				0	da	\<ahelp hid=\".\" visibility=\"hidden\"\>Tildeler mastersiden til alle dias.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10762				0	da	\<ahelp hid=\".\" visibility=\"hidden\"\>Tildeler hovedsiden eller diasdesignet til de valgte dias.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10785				0	da	\<ahelp hid=\".\" visibility=\"hidden\"\>Tilpasser størrelsen for forhåndsvisning af hovedsiderne.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107B4				0	da	\<ahelp hid=\".\" visibility=\"hidden\"\>Åbner fanebladet Layout, hvor du tildeler et diasdesign til de valgte dias.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN107CB				0	da	\<ahelp hid=\".\" visibility=\"hidden\"\>Klik for at tildele et diasdesign til alle valgte dias. Højreklik for en undermenu.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN1080E				0	da	\<ahelp hid=\".\" visibility=\"hidden\"\>Åbner fanebladet Brugerdefineret animation, hvor du tildeler effekter til de valgte objekter på et dias.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_idN10839				0	da	\<ahelp hid=\".\" visibility=\"hidden\"\>Åbner fanebladet Diasovergang, hvor du tildeler overgangseffekter til de valgte dias.\</ahelp\>				20200411 15:09:53
+helpcontent2	source\text\simpress\01\sidebar.xhp	0	help	par_id0916200812240344				0	da	\<ahelp hid=\".\" visibility=\"hidden\"\>Åbner Tabeldesign. Dobbeltklik en forhåndsvisning for at indsætte en ny tabel.\</ahelp\>				20200411 15:09:53
