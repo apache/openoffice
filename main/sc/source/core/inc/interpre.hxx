@@ -640,6 +640,7 @@ void ScBase();
 void ScDecimal();
 void ScConvert();
 void ScEuroConvert();
+void ScDateDif();
 
 //----------------------- Finanzfunktionen ------------------------------------
 void ScNPV();
