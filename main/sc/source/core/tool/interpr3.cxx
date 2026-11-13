@@ -3057,6 +3057,21 @@ bool ScInterpreter::CalculateSkew(double& fSum,double& fCount,double& vSum,std::
                 }
             }
             break;
+            case formula::svString:
+            {
+                // Skip text values (consistent with range/matrix handling;
+                // NumberSequence excludes text).
+                PopString();
+            }
+            break;
+            case formula::svError:
+            {
+                // Propagate the original error code instead of replacing it
+                // with errIllegalParameter.
+                PopError();
+                return false;
+            }
+            break;
             default :
                 SetError(errIllegalParameter);
             break;
@@ -3101,6 +3116,47 @@ void ScInterpreter::ScSkew()
     }
 
     PushDouble(((xcube * fCount) / (fCount - 1.0)) / (fCount - 2.0));
+}
+
+void ScInterpreter::ScSkewP()
+{
+    RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScSkewP" );
+    double fSum,fCount,vSum;
+    std::vector<double> values;
+    if ( !CalculateSkew(fSum,fCount,vSum,values) )
+        return;
+
+    // Population skewness requires at least one numeric observation.
+    if (fCount < 1.0)
+    {
+        PushIllegalArgument();
+        return;
+    }
+
+    double fMean = fSum / fCount;
+
+    for (size_t i = 0; i < values.size(); i++)
+        vSum += (values[i] - fMean) * (values[i] - fMean);
+
+    // Population standard deviation: sigma = sqrt( sum((xi-mean)^2) / N )
+    double fSigma = sqrt(vSum / fCount);
+
+    // Zero variance (including a single observation) is undefined.
+    if (fSigma == 0.0)
+    {
+        PushIllegalArgument();
+        return;
+    }
+
+    double xcube = 0.0;
+    for (size_t i = 0; i < values.size(); i++)
+    {
+        double dx = (values[i] - fMean) / fSigma;
+        xcube = xcube + (dx * dx * dx);
+    }
+
+    // Population skewness: (1/N) * sum( ((xi-mean)/sigma)^3 )
+    PushDouble(xcube / fCount);
 }
 
 double ScInterpreter::GetMedian( vector<double> & rArray )

@@ -1,0 +1,327 @@
+Function	StandardName	ODFVersion	Opcode	OpcodeValue	SourceFile_Implementation	SourceFile_CompilerMapping	SourceFile_Resource	Status	Notes
+IF	IF	ODF 1.2	ocIf	6	main/sc/source/core/tool/interpr1.cxx	compiler.cxx	core_resource.src:31	FULL	Standard.
+CHOOSE	CHOOSE	ODF 1.2	ocChose	7	interpr1.cxx	compiler.cxx	core_resource.src:32	FULL	Standard.
+(	(	ODF 1.2	ocOpen	8	-	compiler.cxx	core_resource.src:33	FULL	Parenthesis.
+)	)	ODF 1.2	ocClose	9	-	compiler.cxx	core_resource.src:34	FULL	Parenthesis.
+{	{	ODF 1.2	ocArrayOpen	20	-	compiler.cxx	core_resource.src:35	FULL	Inline array open.
+}	}	ODF 1.2	ocArrayClose	21	-	compiler.cxx	core_resource.src:36	FULL	Inline array close.
+|	|	ODF 1.2	ocArrayRowSep	22	-	compiler.cxx	core_resource.src:37	FULL	Array row sep.
+;	;	ODF 1.2	ocArrayColSep / ocSep	23/10	-	compiler.cxx	core_resource.src:38/39	FULL	Array col sep / arg sep.
+%	%	ODF 1.2	ocPercentSign	19	interpr1.cxx:ScPercentSign	compiler.cxx	core_resource.src:40	FULL	Postfix divide by 100.
++	+	ODF 1.2	ocAdd	40	interpr5.cxx:ScAdd	compiler.cxx	core_resource.src:41	FULL	Addition.
+-	-	ODF 1.2	ocSub / ocNegSub	41/62	interpr5.cxx:ScSub	compiler.cxx	core_resource.src:42/61	FULL	Subtraction / neg-sub.
+*	*	ODF 1.2	ocMul	42	interpr5.cxx:ScMul	compiler.cxx	core_resource.src:43	FULL	Multiplication.
+/	/	ODF 1.2	ocDiv	43	interpr5.cxx:ScDiv	compiler.cxx	core_resource.src:44	FULL	Division.
+&	&	ODF 1.2	ocAmpersand	44	interpr5.cxx:ScAmpersand	compiler.cxx	core_resource.src:45	FULL	Concatenation.
+^	^	ODF 1.2	ocPow	45	interpr5.cxx:ScPow	compiler.cxx	core_resource.src:46	FULL	Power.
+=	=	ODF 1.2	ocEqual	46	interpr1.cxx:ScEqual	compiler.cxx	core_resource.src:47	FULL	Equal.
+<>	<>	ODF 1.2	ocNotEqual	47	interpr1.cxx:ScNotEqual	compiler.cxx	core_resource.src:48	FULL	Not equal.
+<	<	ODF 1.2	ocLess	48	interpr1.cxx:ScLess	compiler.cxx	core_resource.src:49	FULL	Less.
+>	>	ODF 1.2	ocGreater	49	interpr1.cxx:ScGreater	compiler.cxx	core_resource.src:50	FULL	Greater.
+<=	<=	ODF 1.2	ocLessEqual	50	interpr1.cxx:ScLessEqual	compiler.cxx	core_resource.src:51	FULL	Less equal.
+>=	>=	ODF 1.2	ocGreaterEqual	51	interpr1.cxx:ScGreaterEqual	compiler.cxx	core_resource.src:52	FULL	Greater equal.
+AND	AND	ODF 1.2	ocAnd	52	interpr1.cxx:ScAnd	compiler.cxx	core_resource.src:53	FULL	Logical AND.
+OR	OR	ODF 1.2	ocOr	53	interpr1.cxx:ScOr	compiler.cxx	core_resource.src:54	FULL	Logical OR.
+XOR	XOR	ODF 1.2	ocXor	396	interpr1.cxx:ScXor	compiler.cxx	core_resource.src:55	FULL	Logical XOR.
+!	!	ODF 1.2	ocIntersect	54	interpr1.cxx:ScIntersect	compiler.cxx	core_resource.src:56	FULL	Reference intersection.
+~	~	ODF 1.2	ocUnion	55	interpr1.cxx:ScUnionFunc	compiler.cxx	core_resource.src:57	FULL	Reference union.
+:	:	ODF 1.2	ocRange	56	interpr1.cxx:ScRangeFunc	compiler.cxx	core_resource.src:58	FULL	Reference range.
+NOT	NOT	ODF 1.2	ocNot	60	interpr1.cxx:ScNot	compiler.cxx	core_resource.src:59	FULL	Logical NOT.
+NEG	NEG	ODF 1.2	ocNeg	61	interpr1.cxx:ScNeg	compiler.cxx	core_resource.src:60/61	FULL	Unary negation.
+PI	PI	ODF 1.2	ocPi	65	interpr1.cxx:ScPi	compiler.cxx	core_resource.src:62	FULL	Pi constant.
+RAND	RAND	ODF 1.2	ocRandom	66	interpr1.cxx:ScRandom	compiler.cxx	core_resource.src:63	FULL	Random.
+TRUE	TRUE	ODF 1.2	ocTrue	67	interpr1.cxx:ScTrue	compiler.cxx	core_resource.src:64	FULL	True constant.
+FALSE	FALSE	ODF 1.2	ocFalse	68	interpr1.cxx:ScFalse	compiler.cxx	core_resource.src:65	FULL	False constant.
+TODAY	TODAY	ODF 1.2	ocGetActDate	69	interpr2.cxx:ScGetActDate	compiler.cxx	core_resource.src:66	FULL	Current date.
+NOW	NOW	ODF 1.2	ocGetActTime	70	interpr2.cxx:ScGetActTime	compiler.cxx	core_resource.src:67	FULL	Current datetime.
+NA	NA	ODF 1.2	ocNotAvail	71	interpr1.cxx (via ScNA)	compiler.cxx	core_resource.src:68	FULL	#N/A error.
+CURRENT	ORG.OPENOFFICE.CURRENT	ODF 1.2 Ext	AOO ext	ocCurrent	72	interpr2.cxx:ScCurrent	compiler.cxx	core_resource.src:69	MAPPING	AOO extension, not standard name.
+DEGREES	DEGREES	ODF 1.2	ocDeg	80	interpr2.cxx:ScDeg	compiler.cxx	core_resource.src:70	FULL	Standard.
+RADIANS	RADIANS	ODF 1.2	ocRad	81	interpr2.cxx:ScRad	compiler.cxx	core_resource.src:71	FULL	Standard.
+SIN	SIN	ODF 1.2	ocSin	82	interpr1.cxx:ScSin	compiler.cxx	core_resource.src:72	FULL	Standard.
+COS	COS	ODF 1.2	ocCos	83	interpr1.cxx:ScCos	compiler.cxx	core_resource.src:73	FULL	Standard.
+TAN	TAN	ODF 1.2	ocTan	84	interpr1.cxx:ScTan	compiler.cxx	core_resource.src:74	FULL	Standard.
+COT	COT	ODF 1.2	ocCot	85	interpr1.cxx:ScCot	compiler.cxx	core_resource.src:75	FULL	Standard.
+ASIN	ASIN	ODF 1.2	ocArcSin	86	interpr1.cxx:ScArcSin	compiler.cxx	core_resource.src:76	FULL	Standard.
+ACOS	ACOS	ODF 1.2	ocArcCos	87	interpr1.cxx:ScArcCos	compiler.cxx	core_resource.src:77	FULL	Standard.
+ATAN	ATAN	ODF 1.2	ocArcTan	88	interpr1.cxx:ScArcTan	compiler.cxx	core_resource.src:78	FULL	Standard.
+ACOT	ACOT	ODF 1.2	ocArcCot	89	interpr1.cxx:ScArcCot	compiler.cxx	core_resource.src:79	FULL	Standard.
+SINH	SINH	ODF 1.2	ocSinHyp	90	interpr1.cxx:ScSinHyp	compiler.cxx	core_resource.src:80	FULL	Standard.
+COSH	COSH	ODF 1.2	ocCosHyp	91	interpr1.cxx:ScCosHyp	compiler.cxx	core_resource.src:81	FULL	Standard.
+TANH	TANH	ODF 1.2	ocTanHyp	92	interpr1.cxx:ScTanHyp	compiler.cxx	core_resource.src:82	FULL	Standard.
+COTH	COTH	ODF 1.2	ocCotHyp	93	interpr1.cxx:ScCotHyp	compiler.cxx	core_resource.src:83	FULL	Standard.
+ASINH	ASINH	ODF 1.2	ocArcSinHyp	94	interpr1.cxx:ScArcSinHyp	compiler.cxx	core_resource.src:84	FULL	Standard.
+ACOSH	ACOSH	ODF 1.2	ocArcCosHyp	95	interpr1.cxx:ScArcCosHyp	compiler.cxx	core_resource.src:85	FULL	Standard.
+ATANH	ATANH	ODF 1.2	ocArcTanHyp	96	interpr1.cxx:ScArcTanHyp	compiler.cxx	core_resource.src:86	FULL	Standard.
+ACOTH	ACOTH	ODF 1.2	ocArcCotHyp	97	interpr1.cxx:ScArcCotHyp	compiler.cxx	core_resource.src:87	FULL	Standard.
+CSC	CSC	ODF 1.2	ocCosecant	98	interpr1.cxx:ScCosecant	compiler.cxx	core_resource.src:88	FULL	Standard.
+SEC	SEC	ODF 1.2	ocSecant	99	interpr1.cxx:ScSecant	compiler.cxx	core_resource.src:89	FULL	Standard.
+CSCH	CSCH	ODF 1.2	ocCosecantHyp	100	interpr1.cxx:ScCosecantHyp	compiler.cxx	core_resource.src:90	FULL	Standard.
+SECH	SECH	ODF 1.2	ocSecantHyp	101	interpr1.cxx:ScSecantHyp	compiler.cxx	core_resource.src:91	FULL	Standard.
+EXP	EXP	ODF 1.2	ocExp	102	interpr1.cxx:ScExp	compiler.cxx	core_resource.src:92	FULL	Standard.
+LN	LN	ODF 1.2	ocLn	103	interpr1.cxx:ScLn	compiler.cxx	core_resource.src:93	FULL	Standard.
+SQRT	SQRT	ODF 1.2	ocSqrt	104	interpr1.cxx:ScSqrt	compiler.cxx	core_resource.src:94	FULL	Standard.
+FACT	FACT	ODF 1.2	ocFact	105	interpr3.cxx:ScFact	compiler.cxx	core_resource.src:95	FULL	Standard.
+YEAR	YEAR	ODF 1.2	ocGetYear	106	interpr2.cxx:ScGetYear	compiler.cxx	core_resource.src:96	FULL	Standard.
+MONTH	MONTH	ODF 1.2	ocGetMonth	107	interpr2.cxx:ScGetMonth	compiler.cxx	core_resource.src:97	FULL	Standard.
+DAY	DAY	ODF 1.2	ocGetDay	108	interpr2.cxx:ScGetDay	compiler.cxx	core_resource.src:98	FULL	Standard.
+HOUR	HOUR	ODF 1.2	ocGetHour	109	interpr2.cxx:ScGetHour	compiler.cxx	core_resource.src:99	FULL	Standard.
+MINUTE	MINUTE	ODF 1.2	ocGetMin	110	interpr2.cxx:ScGetMin	compiler.cxx	core_resource.src:100	FULL	Standard.
+SECOND	SECOND	ODF 1.2	ocGetSec	111	interpr2.cxx:ScGetSec	compiler.cxx	core_resource.src:101	FULL	Standard.
+SIGN	SIGN	ODF 1.2	ocPlusMinus	112	interpr2.cxx:ScPlusMinus	compiler.cxx	core_resource.src:102	FULL	Standard.
+ABS	ABS	ODF 1.2	ocAbs	113	interpr1.cxx:ScAbs	compiler.cxx	core_resource.src:103	FULL	Standard.
+INT	INT	ODF 1.2	ocInt	114	interpr2.cxx:ScInt	compiler.cxx	core_resource.src:104	FULL	Standard.
+PHI	PHI	ODF 1.2	ocPhi	115	interpr3.cxx:ScPhi	compiler.cxx	core_resource.src:105	FULL	Standard.
+GAUSS	GAUSS	ODF 1.2	ocGauss	116	interpr3.cxx:ScGauss	compiler.cxx	core_resource.src:106	FULL	Standard.
+ISBLANK	ISBLANK	ODF 1.2	ocIsEmpty	117	interpr1.cxx:ScIsEmpty	compiler.cxx	core_resource.src:107	FULL	ODF 1.4: empty-cell semantics (see semantics audit).
+ISTEXT	ISTEXT	ODF 1.2	ocIsString	118	interpr1.cxx:ScIsString	compiler.cxx	core_resource.src:108	FULL	Standard.
+ISNONTEXT	ISNONTEXT	ODF 1.2	ocIsNonString	119	interpr1.cxx:ScIsNonString	compiler.cxx	core_resource.src:109	FULL	Standard.
+ISLOGICAL	ISLOGICAL	ODF 1.2	ocIsLogical	120	interpr1.cxx:ScIsLogical	compiler.cxx	core_resource.src:110	FULL	ODF 1.4: complex-number case impl-defined.
+TYPE	TYPE	ODF 1.2	ocType	121	interpr1.cxx:ScType	compiler.cxx	core_resource.src:111	FULL	Standard.
+CELL	CELL	ODF 1.2	ocCell	122	interpr1.cxx:ScCell	compiler.cxx	core_resource.src:112	FULL	Standard.
+ISREF	ISREF	ODF 1.2	ocIsRef	123	interpr1.cxx:ScIsRef	compiler.cxx	core_resource.src:113	FULL	Standard.
+ISNUMBER	ISNUMBER	ODF 1.2	ocIsValue	124	interpr1.cxx:ScIsValue	compiler.cxx	core_resource.src:114	FULL	ODF 1.4: complex-number case impl-defined.
+ISFORMULA	ISFORMULA	ODF 1.2	ocIsFormula	125	interpr1.cxx:ScIsFormula	compiler.cxx	core_resource.src:115	FULL	ODF 1.4: non-reference case impl-defined.
+ISNA	ISNA	ODF 1.2	ocIsNA	126	interpr1.cxx:ScIsNV	compiler.cxx	core_resource.src:116	FULL	Standard.
+ISERR	ISERR	ODF 1.2	ocIsErr	127	interpr1.cxx:ScIsErr	compiler.cxx	core_resource.src:117	FULL	Standard.
+ISERROR	ISERROR	ODF 1.2	ocIsError	128	interpr1.cxx:ScIsError	compiler.cxx	core_resource.src:118	FULL	Standard.
+ISEVEN	ISEVEN	ODF 1.2	ocIsEven	129	interpr1.cxx:ScIsEven	compiler.cxx	core_resource.src:119	FULL	ODF 1.4: logical case impl-defined.
+ISODD	ISODD	ODF 1.2	ocIsOdd	130	interpr1.cxx:ScIsOdd	compiler.cxx	core_resource.src:120	FULL	ODF 1.4: logical case impl-defined.
+N	N	ODF 1.2	ocN	131	interpr1.cxx:ScN	compiler.cxx	core_resource.src:121	FULL	ODF 1.4: text case impl-defined.
+DATEVALUE	DATEVALUE	ODF 1.2	ocGetDateValue	132	interpr2.cxx:ScGetDateValue	compiler.cxx	core_resource.src:122	FULL	Standard.
+TIMEVALUE	TIMEVALUE	ODF 1.2	ocGetTimeValue	133	interpr2.cxx:ScGetTimeValue	compiler.cxx	core_resource.src:123	FULL	Standard.
+CODE	CODE	ODF 1.2	ocCode	134	interpr1.cxx:ScCode	compiler.cxx	core_resource.src:124	FULL	ODF 1.4: >127 impl-defined.
+TRIM	TRIM	ODF 1.2	ocTrim	135	interpr1.cxx:ScTrim	compiler.cxx	core_resource.src:125	FULL	Standard.
+UPPER	UPPER	ODF 1.2	ocUpper	136	interpr1.cxx:ScUpper	compiler.cxx	core_resource.src:126	FULL	Locale-sensitive.
+PROPER	PROPER	ODF 1.2	ocPropper	137	interpr1.cxx:ScPropper	compiler.cxx	core_resource.src:127	FULL	Locale-sensitive.
+LOWER	LOWER	ODF 1.2	ocLower	138	interpr1.cxx:ScLower	compiler.cxx	core_resource.src:128	FULL	Locale-sensitive.
+LEN	LEN	ODF 1.2	ocLen	139	interpr1.cxx:ScLen	compiler.cxx	core_resource.src:129	FULL	Standard.
+T	T	ODF 1.2	ocT	140	interpr1.cxx:ScT	compiler.cxx	core_resource.src:130	FULL	Standard.
+VALUE	VALUE	ODF 1.2	ocValue	141	interpr1.cxx:ScValue	compiler.cxx	core_resource.src:131	FULL	ODF 1.4: non-text impl-defined.
+CLEAN	CLEAN	ODF 1.2	ocClean	142	interpr1.cxx:ScClean	compiler.cxx	core_resource.src:132	FULL	Standard.
+CHAR	CHAR	ODF 1.2	ocChar	143	interpr1.cxx:ScChar	compiler.cxx	core_resource.src:133	FULL	Standard.
+JIS	JIS	ODF 1.2	ocJis	157	interpr1.cxx:ScJis	compiler.cxx	core_resource.src:134	FULL	Standard.
+ASC	ASC	ODF 1.2	ocAsc	158	interpr1.cxx:ScAsc	compiler.cxx	core_resource.src:135	FULL	Standard.
+UNICODE	UNICODE	ODF 1.2	ocUnicode	159	interpr1.cxx:ScUnicode	compiler.cxx	core_resource.src:136	FULL	Standard.
+UNICHAR	UNICHAR	ODF 1.2	ocUnichar	160	interpr1.cxx:ScUnichar	compiler.cxx	core_resource.src:137	FULL	Standard.
+LOG10	LOG10	ODF 1.2	ocLog10	143	interpr1.cxx:ScLog10	compiler.cxx	core_resource.src:138	FULL	Standard.
+EVEN	EVEN	ODF 1.2	ocEven	144	interpr2.cxx:ScEven	compiler.cxx	core_resource.src:139	FULL	Standard.
+ODD	ODD	ODF 1.2	ocOdd	145	interpr2.cxx:ScOdd	compiler.cxx	core_resource.src:140	FULL	Standard.
+LEGACY.NORMSDIST	NORMSDIST	ODF 1.2	ocStdNormDist	146	interpr3.cxx:ScStdNormDist	compiler.cxx	core_resource.src:141	MAPPING	Standard name NORMSDIST; AOO writes LEGACY.NORMSDIST.
+FISHER	FISHER	ODF 1.2	ocFisher	147	interpr3.cxx:ScFisher	compiler.cxx	core_resource.src:142	FULL	Standard.
+FISHERINV	FISHERINV	ODF 1.2	ocFisherInv	148	interpr3.cxx:ScFisherInv	compiler.cxx	core_resource.src:143	FULL	Standard.
+LEGACY.NORMSINV	NORMSINV	ODF 1.2	ocSNormInv	149	interpr3.cxx:ScSNormInv	compiler.cxx	core_resource.src:144	MAPPING	Standard name NORMSINV; AOO writes LEGACY.NORMSINV.
+GAMMALN	GAMMALN	ODF 1.2	ocGammaLn	150	interpr3.cxx:ScLogGamma	compiler.cxx	core_resource.src:145	FULL	Standard.
+ORG.OPENOFFICE.ERRORTYPE	ERROR.TYPE	ODF 1.2 Ext	AOO ext	ocErrorType	151	interpr1.cxx:ScErrorType	compiler.cxx	core_resource.src:146	MAPPING	AOO writes ORG.OPENOFFICE.ERRORTYPE, not ERROR.TYPE.
+ZellError	ZellError	ODF 1.1 legacy	ocErrCell	152	interpr1.cxx:ScErrCell	compiler.cxx	core_resource.src:147	MAPPING	Ancient legacy only.
+FORMULA	FORMULA	ODF 1.2	ocFormula	153	interpr1.cxx:ScFormula	compiler.cxx	core_resource.src:148	FULL	Standard.
+ATAN2	ATAN2	ODF 1.2	ocArcTan2	201	interpr2.cxx:ScArcTan2	compiler.cxx	core_resource.src:149	FULL	ODF 1.4: ATAN2(0,0) impl-defined.
+CEILING	CEILING	ODF 1.2	ocCeil	202	interpr2.cxx:ScCeil	compiler.cxx	core_resource.src:150	FULL	Standard.
+FLOOR	FLOOR	ODF 1.2	ocFloor	203	interpr2.cxx:ScFloor	compiler.cxx	core_resource.src:151	FULL	Standard.
+ROUND	ROUND	ODF 1.2	ocRound	204	interpr2.cxx:ScRound	compiler.cxx	core_resource.src:152	FULL	Standard.
+ROUNDUP	ROUNDUP	ODF 1.2	ocRoundUp	205	interpr2.cxx:ScRoundUp	compiler.cxx	core_resource.src:153	FULL	Standard.
+ROUNDDOWN	ROUNDDOWN	ODF 1.2	ocRoundDown	206	interpr2.cxx:ScRoundDown	compiler.cxx	core_resource.src:154	FULL	Standard.
+TRUNC	TRUNC	ODF 1.2	ocTrunc	207	interpr2.cxx:ScTrunc	compiler.cxx	core_resource.src:155	FULL	Standard.
+LOG	LOG	ODF 1.2	ocLog	208	interpr2.cxx:ScLog	compiler.cxx	core_resource.src:156	FULL	Standard.
+POWER	POWER	ODF 1.2	ocPower	209	interpr2.cxx:ScPower	compiler.cxx	core_resource.src:157	FULL	ODF 1.4: POWER(0,0) and negative base impl-defined.
+GCD	GCD	ODF 1.2	ocGCD	210	interpr5.cxx:ScGCD	compiler.cxx	core_resource.src:158	FULL	ODF 1.4: GCD of zeros impl-defined.
+LCM	LCM	ODF 1.2	ocLCM	211	interpr5.cxx:ScLCM	compiler.cxx	core_resource.src:159	FULL	Standard.
+MOD	MOD	ODF 1.2	ocMod	212	interpr5.cxx:ScMod	compiler.cxx	core_resource.src:160	FULL	Standard.
+SUMPRODUCT	SUMPRODUCT	ODF 1.2	ocSumProduct	213	interpr5.cxx:ScSumProduct	compiler.cxx	core_resource.src:161	FULL	Array evaluation.
+SUMSQ	SUMSQ	ODF 1.2	ocSumSQ	214	interpr1.cxx:ScSumSQ	compiler.cxx	core_resource.src:162	FULL	Standard.
+SUMX2MY2	SUMX2MY2	ODF 1.2	ocSumX2MY2	215	interpr5.cxx:ScSumX2MY2	compiler.cxx	core_resource.src:163	FULL	Standard.
+SUMX2PY2	SUMX2PY2	ODF 1.2	ocSumX2DY2	216	interpr5.cxx:ScSumX2DY2	compiler.cxx	core_resource.src:164	MAPPING	Opcode SUM_X2DY2 but resource text "SUMX2PY2"; name mapping consistent.
+SUMXMY2	SUMXMY2	ODF 1.2	ocSumXMY2	217	interpr5.cxx:ScSumXMY2	compiler.cxx	core_resource.src:165	FULL	Standard.
+DATE	DATE	ODF 1.2	ocGetDate	218	interpr2.cxx:ScGetDate	compiler.cxx	core_resource.src:166	FULL	ODF 1.4: pre-1583 impl-defined (#VALUE! before 1582-10-15).
+TIME	TIME	ODF 1.2	ocGetTime	219	interpr2.cxx:ScGetTime	compiler.cxx	core_resource.src:167	FULL	Standard.
+DAYS	DAYS	ODF 1.2	ocGetDiffDate	220	interpr2.cxx:ScGetDiffDate	compiler.cxx	core_resource.src:168	FULL	Standard.
+DAYS360	DAYS360	ODF 1.2	ocGetDiffDate360	221	interpr2.cxx:ScGetDiffDate360	compiler.cxx	core_resource.src:169	FULL	Standard.
+MIN	MIN	ODF 1.2	ocMin	222	interpr1.cxx:ScMin	compiler.cxx	core_resource.src:170	FULL	ODF 1.4: 0 parameters impl-defined.
+MINA	MINA	ODF 1.2	ocMinA	373	interpr1.cxx:ScMin(sal_True)	compiler.cxx	core_resource.src:171	FULL	Standard.
+MAX	MAX	ODF 1.2	ocMax	223	interpr1.cxx:ScMax	compiler.cxx	core_resource.src:172	FULL	ODF 1.4: 0 parameters impl-defined.
+MAXA	MAXA	ODF 1.2	ocMaxA	374	interpr1.cxx:ScMax(sal_True)	compiler.cxx	core_resource.src:173	FULL	Standard.
+SUM	SUM	ODF 1.2	ocSum	224	interpr1.cxx:ScSum	compiler.cxx	core_resource.src:174	FULL	Standard.
+PRODUCT	PRODUCT	ODF 1.2	ocProduct	225	interpr1.cxx:ScProduct	compiler.cxx	core_resource.src:175	FULL	Standard.
+AVERAGE	AVERAGE	ODF 1.2	ocAverage	226	interpr1.cxx:ScAverage	compiler.cxx	core_resource.src:176	FULL	Standard.
+AVERAGEA	AVERAGEA	ODF 1.2	ocAverageA	383	interpr1.cxx:ScAverage(sal_True)	compiler.cxx	core_resource.src:177	FULL	Standard.
+COUNT	COUNT	ODF 1.2	ocCount	227	interpr1.cxx:ScCount	compiler.cxx	core_resource.src:178	FULL	Standard.
+COUNTA	COUNTA	ODF 1.2	ocCount2	228	interpr1.cxx:ScCount2	compiler.cxx	core_resource.src:179	FULL	ODF 1.4: empty-cell semantics changed (see ODF 1.3/1.4 diff).
+NPV	NPV	ODF 1.2	ocNPV	229	interpr2.cxx:ScNPV	compiler.cxx	core_resource.src:180	FULL	ODF 1.4 migration candidate.
+IRR	IRR	ODF 1.2	ocIRR	230	interpr2.cxx:ScIRR	compiler.cxx	core_resource.src:181	FULL	Standard.
+MIRR	MIRR	ODF 1.2	ocMIRR	384	interpr2.cxx:ScMIRR	compiler.cxx	core_resource.src:182	FULL	Standard.
+ISPMT	ISPMT	ODF 1.2	ocISPMT	386	interpr2.cxx:ScISPMT	compiler.cxx	core_resource.src:183	FULL	Standard.
+VAR	VAR	ODF 1.2	ocVar	231	interpr3.cxx (via Iterate)	compiler.cxx	core_resource.src:184	FULL	Standard.
+VARA	VARA	ODF 1.2	ocVarA	378	interpr3.cxx	compiler.cxx	core_resource.src:185	FULL	ODF 1.4: string constants impl-defined.
+VARP	VARP	ODF 1.2	ocVarP	232	interpr3.cxx	compiler.cxx	core_resource.src:186	FULL	Standard.
+VARPA	VARPA	ODF 1.2	ocVarPA	379	interpr3.cxx	compiler.cxx	core_resource.src:187	FULL	ODF 1.4: string constants impl-defined.
+STDEV	STDEV	ODF 1.2	ocStDev	233	interpr3.cxx	compiler.cxx	core_resource.src:188	FULL	Standard.
+STDEVA	STDEVA	ODF 1.2	ocStDevA	376	interpr3.cxx	compiler.cxx	core_resource.src:189	FULL	ODF 1.4: string constants impl-defined.
+STDEVP	STDEVP	ODF 1.2	ocStDevP	234	interpr3.cxx	compiler.cxx	core_resource.src:190	FULL	Standard.
+STDEVPA	STDEVPA	ODF 1.2	ocStDevPA	377	interpr3.cxx	compiler.cxx	core_resource.src:191	FULL	ODF 1.4: string constants impl-defined.
+B	B	ODF 1.2	ocB	235	interpr3.cxx:ScB	compiler.cxx	core_resource.src:192	FULL	ODF 1.4: renamed BINOM.DIST.RANGE; AOO writes legacy "B".
+NORMDIST	NORMDIST	ODF 1.2	ocNormDist	236	interpr3.cxx:ScNormDist	compiler.cxx	core_resource.src:193	FULL	Standard.
+EXPONDIST	EXPONDIST	ODF 1.2	ocExpDist	237	interpr3.cxx:ScExpDist	compiler.cxx	core_resource.src:194	FULL	Standard.
+BINOMDIST	BINOMDIST	ODF 1.2	ocBinomDist	238	interpr3.cxx:ScBinomDist	compiler.cxx	core_resource.src:195	FULL	Standard.
+POISSON	POISSON	ODF 1.2	ocPoissonDist	239	interpr3.cxx:ScPoissonDist	compiler.cxx	core_resource.src:196	FULL	Standard.
+COMBIN	COMBIN	ODF 1.2	ocKombin	240	interpr3.cxx:ScKombin	compiler.cxx	core_resource.src:197	FULL	Standard.
+COMBINA	COMBINA	ODF 1.2	ocKombin2	241	interpr3.cxx:ScKombin2	compiler.cxx	core_resource.src:198	FULL	Standard.
+PERMUT	PERMUT	ODF 1.2	ocVariationen	242	interpr3.cxx:ScVariationen	compiler.cxx	core_resource.src:199	FULL	Standard.
+PERMUTATIONA	PERMUTATIONA	ODF 1.2	ocVariationen2	243	interpr3.cxx:ScVariationen2	compiler.cxx	core_resource.src:200	FULL	Standard.
+PV	PV	ODF 1.2	ocBW	244	interpr2.cxx:ScBW	compiler.cxx	core_resource.src:201	FULL	Standard.
+SYD	SYD	ODF 1.2	ocDIA	245	interpr2.cxx:ScDIA	compiler.cxx	core_resource.src:202	FULL	Standard.
+DDB	DDB	ODF 1.2	ocGDA	246	interpr2.cxx:ScGDA	compiler.cxx	core_resource.src:203	FULL	Standard.
+DB	DB	ODF 1.2	ocGDA2	247	interpr2.cxx:ScGDA2	compiler.cxx	core_resource.src:204	FULL	Standard.
+VDB	VDB	ODF 1.2	ocVBD	248	interpr2.cxx:ScVDB	compiler.cxx	core_resource.src:205	FULL	Standard.
+PDURATION	PDURATION	ODF 1.3	ocLaaufz	249	interpr2.cxx:ScLaufz	compiler.cxx	core_resource.src:206	FULL	ODF 1.3 addition.
+SLN	SLN	ODF 1.2	ocLIA	250	interpr2.cxx:ScLIA	compiler.cxx	core_resource.src:207	FULL	Standard.
+PMT	PMT	ODF 1.2	ocRMZ	251	interpr2.cxx:ScRMZ	compiler.cxx	core_resource.src:208	FULL	ODF 1.4 migration candidate.
+COLUMNS	COLUMNS	ODF 1.2	ocColumns	252	interpr1.cxx:ScColumns	compiler.cxx	core_resource.src:209	FULL	Standard.
+ROWS	ROWS	ODF 1.2	ocRows	253	interpr1.cxx:ScRows	compiler.cxx	core_resource.src:210	FULL	Standard.
+SHEETS	SHEETS	ODF 1.2	ocTables	372	interpr1.cxx:ScTables	compiler.cxx	core_resource.src:211	FULL	Standard.
+COLUMN	COLUMN	ODF 1.2	ocColumn	254	interpr1.cxx:ScColumn	compiler.cxx	core_resource.src:212	FULL	Standard.
+ROW	ROW	ODF 1.2	ocRow	255	interpr1.cxx:ScRow	compiler.cxx	core_resource.src:213	FULL	Standard.
+SHEET	SHEET	ODF 1.2	ocTable	371	interpr1.cxx:ScTable	compiler.cxx	core_resource.src:214	FULL	Standard.
+RRI	RRI	ODF 1.3	ocZGZ	256	interpr2.cxx (ZGZ)	compiler.cxx	core_resource.src:215	FULL	ODF 1.3 addition; maps to RRI.
+FV	FV	ODF 1.2	ocZW	257	interpr2.cxx:ScZW	compiler.cxx	core_resource.src:216	FULL	Standard.
+NPER	NPER	ODF 1.2	ocZZR	258	interpr2.cxx:ScZZR	compiler.cxx	core_resource.src:217	FULL	ODF 1.4 migration candidate; trailing-empty-param rule.
+RATE	RATE	ODF 1.2	ocZins	259	interpr2.cxx:ScZins	compiler.cxx	core_resource.src:218	FULL	Standard.
+IPMT	IPMT	ODF 1.2	ocZinsZ	260	interpr2.cxx:ScZinsZ	compiler.cxx	core_resource.src:219	FULL	Standard.
+PPMT	PPMT	ODF 1.2	ocKapz	261	interpr2.cxx:ScKapz	compiler.cxx	core_resource.src:220	FULL	Standard.
+CUMIPMT	CUMIPMT	ODF 1.2	ocKumZinsZ	262	interpr2.cxx:ScKumZinsZ	compiler.cxx	core_resource.src:221	FULL	Standard.
+CUMPRINC	CUMPRINC	ODF 1.2	ocKumKapZ	263	interpr2.cxx:ScKumKapZ	compiler.cxx	core_resource.src:222	FULL	Standard.
+EFFECT	EFFECT	ODF 1.2	ocEffektiv	264	interpr2.cxx:ScEffektiv	compiler.cxx	core_resource.src:223	FULL	ODF 1.2: writes EFFECTIVE (ENUS), EFFECT (ODFF).
+NOMINAL	NOMINAL	ODF 1.2	ocNominal	265	interpr2.cxx:ScNominal	compiler.cxx	core_resource.src:224	FULL	Standard.
+SUBTOTAL	SUBTOTAL	ODF 1.2	ocSubTotal	266	interpr1.cxx:ScSubTotal	compiler.cxx	core_resource.src:225	FULL	Standard.
+DSUM	DSUM	ODF 1.2	ocDBSum	267	interpr1.cxx:ScDBSum	compiler.cxx	core_resource.src:226	FULL	Standard.
+DCOUNT	DCOUNT	ODF 1.2	ocDBCount	268	interpr1.cxx:ScDBCount	compiler.cxx	core_resource.src:227	FULL	Standard.
+DCOUNTA	DCOUNTA	ODF 1.2	ocDBCount2	269	interpr1.cxx:ScDBCount2	compiler.cxx	core_resource.src:228	FULL	Standard.
+DAVERAGE	DAVERAGE	ODF 1.2	ocDBAverage	270	interpr1.cxx:ScDBAverage	compiler.cxx	core_resource.src:229	FULL	Standard.
+DGET	DGET	ODF 1.2	ocDBGet	271	interpr1.cxx:ScDBGet	compiler.cxx	core_resource.src:230	FULL	Standard.
+DMAX	DMAX	ODF 1.2	ocDBMax	272	interpr1.cxx:ScDBMax	compiler.cxx	core_resource.src:231	FULL	Standard.
+DMIN	DMIN	ODF 1.2	ocDBMin	273	interpr1.cxx:ScDBMin	compiler.cxx	core_resource.src:232	FULL	Standard.
+DPRODUCT	DPRODUCT	ODF 1.2	ocDBProduct	274	interpr1.cxx:ScDBProduct	compiler.cxx	core_resource.src:233	FULL	Standard.
+DSTDEV	DSTDEV	ODF 1.2	ocDBStdDev	275	interpr1.cxx:ScDBStdDev	compiler.cxx	core_resource.src:234	FULL	Standard.
+DSTDEVP	DSTDEVP	ODF 1.2	ocDBStdDevP	276	interpr1.cxx:ScDBStdDevP	compiler.cxx	core_resource.src:235	FULL	Standard.
+DVAR	DVAR	ODF 1.2	ocDBVar	277	interpr1.cxx:ScDBVar	compiler.cxx	core_resource.src:236	FULL	Standard.
+DVARP	DVARP	ODF 1.2	ocDBVarP	278	interpr1.cxx:ScDBVarP	compiler.cxx	core_resource.src:237	FULL	Standard.
+INDIRECT	INDIRECT	ODF 1.2	ocIndirect	279	interpr1.cxx:ScIndirect	compiler.cxx	core_resource.src:238	FULL	Standard.
+ADDRESS	ADDRESS	ODF 1.2	ocAddress	280	interpr1.cxx:ScAddressFunc	compiler.cxx	core_resource.src:239	FULL	Standard.
+MATCH	MATCH	ODF 1.2	ocMatch	281	interpr1.cxx:ScMatch	compiler.cxx	core_resource.src:240	FULL	Standard.
+COUNTBLANK	COUNTBLANK	ODF 1.2	ocCountEmptyCells	282	interpr1.cxx:ScCountEmptyCells	compiler.cxx	core_resource.src:241	FULL	ODF 1.4: "" case impl-defined.
+COUNTIF	COUNTIF	ODF 1.2	ocCountIf	283	interpr1.cxx:ScCountIf	compiler.cxx	core_resource.src:242	FULL	Standard.
+SUMIF	SUMIF	ODF 1.2	ocSumIf	284	interpr1.cxx:ScSumIf	compiler.cxx	core_resource.src:243	FULL	Standard.
+AVERAGEIF	AVERAGEIF	ODF 1.2	ocAverageIf	395	interpr1.cxx:ScAverageIf	compiler.cxx	core_resource.src:244	FULL	Standard.
+SUMIFS	SUMIFS	ODF 1.2	ocSumIfs	397	interpr1.cxx:ScSumIfs	compiler.cxx	core_resource.src:245	FULL	Standard.
+AVERAGEIFS	AVERAGEIFS	ODF 1.2	ocAverageIfs	398	interpr1.cxx:ScAverageIfs	compiler.cxx	core_resource.src:246	FULL	Standard.
+COUNTIFS	COUNTIFS	ODF 1.2	ocCountIfs	399	interpr1.cxx:ScCountIfs	compiler.cxx	core_resource.src:247	FULL	Standard.
+LOOKUP	LOOKUP	ODF 1.2	ocLookup	285	interpr1.cxx:ScLookup	compiler.cxx	core_resource.src:248	FULL	Standard.
+VLOOKUP	VLOOKUP	ODF 1.2	ocVLookup	286	interpr1.cxx:ScVLookup	compiler.cxx	core_resource.src:249	FULL	ODF 1.4: unsorted data impl-defined.
+HLOOKUP	HLOOKUP	ODF 1.2	ocHLookup	287	interpr1.cxx:ScHLookup	compiler.cxx	core_resource.src:250	FULL	ODF 1.4: unsorted data impl-defined.
+MULTIRANGE	ORG.OPENOFFICE.MULTIRANGE	ODF 1.1 legacy	ocMultiArea	288	interpr1.cxx:ScMultiArea	compiler.cxx	core_resource.src:251	MAPPING	Legacy union; AOO writes MULTIRANGE not standard "~".
+OFFSET	OFFSET	ODF 1.2	ocOffset	289	interpr1.cxx:ScOffset	compiler.cxx	core_resource.src:252	FULL	Standard.
+INDEX	INDEX	ODF 1.2	ocIndex	290	interpr1.cxx:ScIndex	compiler.cxx	core_resource.src:253	FULL	ODF 1.4: row-vector single-arg now error (was column).
+AREAS	AREAS	ODF 1.2	ocAreas	291	interpr1.cxx:ScAreas	compiler.cxx	core_resource.src:254	FULL	Standard.
+DOLLAR	DOLLAR	ODF 1.2	ocCurrency	292	interpr1.cxx:ScCurrency	compiler.cxx	core_resource.src:255	FULL	Locale-sensitive.
+REPLACE	REPLACE	ODF 1.2	ocReplace	293	interpr1.cxx:ScReplace	compiler.cxx	core_resource.src:256	FULL	Standard.
+FIXED	FIXED	ODF 1.2	ocFixed	294	interpr1.cxx:ScFixed	compiler.cxx	core_resource.src:257	FULL	Locale-sensitive.
+FIND	FIND	ODF 1.2	ocFind	295	interpr1.cxx:ScFind	compiler.cxx	core_resource.src:258	FULL	Standard.
+EXACT	EXACT	ODF 1.2	ocExact	296	interpr1.cxx:ScExact	compiler.cxx	core_resource.src:259	FULL	Standard.
+LEFT	LEFT	ODF 1.2	ocLeft	297	interpr1.cxx:ScLeft	compiler.cxx	core_resource.src:260	FULL	Standard.
+RIGHT	RIGHT	ODF 1.2	ocRight	298	interpr1.cxx:ScRight	compiler.cxx	core_resource.src:261	FULL	Standard.
+SEARCH	SEARCH	ODF 1.2	ocSearch	299	interpr1.cxx:ScSearch	compiler.cxx	core_resource.src:262	FULL	Locale-sensitive / RegExp option.
+MID	MID	ODF 1.2	ocMid	300	interpr1.cxx:ScMid	compiler.cxx	core_resource.src:263	FULL	Standard.
+LENB	LENB	ODF 1.2	ocLenB	400	interpr3.cxx:ScLenB	compiler.cxx	core_resource.src:264	FULL	Standard.
+RIGHTB	RIGHTB	ODF 1.2	ocRightB	401	interpr3.cxx:ScRightB	compiler.cxx	core_resource.src:265	FULL	Standard.
+LEFTB	LEFTB	ODF 1.2	ocLeftB	402	interpr1.cxx / interpr3.cxx	compiler.cxx	core_resource.src:266	FULL	Standard.
+MIDB	MIDB	ODF 1.2	ocMidB	403	interpr3.cxx:ScMidB	compiler.cxx	core_resource.src:267	FULL	Standard.
+TEXT	TEXT	ODF 1.2	ocText	301	interpr1.cxx:ScText	compiler.cxx	core_resource.src:268	FULL	ODF 1.4: format-code meaning impl-defined / locale.
+SUBSTITUTE	SUBSTITUTE	ODF 1.2	ocSubstitute	302	interpr1.cxx:ScSubstitute	compiler.cxx	core_resource.src:269	FULL	Standard.
+REPT	REPT	ODF 1.2	ocRept	303	interpr1.cxx:ScRept	compiler.cxx	core_resource.src:270	FULL	Standard.
+CONCATENATE	CONCATENATE	ODF 1.2	ocConcat	304	interpr1.cxx:ScConcat	compiler.cxx	core_resource.src:271	FULL	Standard.
+MVALUE	MVALUE	ODF 1.2 legacy	ocMatValue	305	interpr5.cxx:ScMatValue	compiler.cxx	core_resource.src:272	FULL	Legacy matrix value.
+MDETERM	MDETERM	ODF 1.2	ocMatDet	306	interpr5.cxx:ScMatDet	compiler.cxx	core_resource.src:273	FULL	Standard.
+MINVERSE	MINVERSE	ODF 1.2	ocMatInv	307	interpr5.cxx:ScMatInv	compiler.cxx	core_resource.src:274	FULL	Standard.
+MMULT	MMULT	ODF 1.2	ocMatMult	308	interpr5.cxx:ScMatMult	compiler.cxx	core_resource.src:275	FULL	Array evaluation.
+TRANSPOSE	TRANSPOSE	ODF 1.2	ocMatTrans	309	interpr5.cxx:ScMatTrans	compiler.cxx	core_resource.src:276	FULL	Array evaluation.
+MUNIT	MUNIT	ODF 1.2	ocMatrixUnit	310	interpr5.cxx (unit matrix)	compiler.cxx	core_resource.src:277	FULL	Standard.
+GOALSEEK	GOALSEEK	ODF 1.2 legacy	ocBackSolver	311	interpr2.cxx:ScBackSolver	compiler.cxx	core_resource.src:278	FULL	Legacy name.
+HYPGEOMDIST	HYPGEOMDIST	ODF 1.2	ocHypGeomDist	312	interpr3.cxx:ScHypGeomDist	compiler.cxx	core_resource.src:279	FULL	Standard.
+LOGNORMDIST	LOGNORMDIST	ODF 1.2	ocLogNormDist	313	interpr3.cxx:ScLogNormDist	compiler.cxx	core_resource.src:280	FULL	Standard.
+TDIST	TDIST	ODF 1.2	ocTDist	314	interpr3.cxx:ScTDist	compiler.cxx	core_resource.src:281	FULL	Standard.
+LEGACY.FDIST	FDIST	ODF 1.2	ocFDist	315	interpr3.cxx:ScFDist	compiler.cxx	core_resource.src:282	MAPPING	Standard name FDIST; AOO writes LEGACY.FDIST.
+LEGACY.CHIDIST	CHIDIST	ODF 1.2	ocChiDist	316	interpr3.cxx:ScChiDist	compiler.cxx	core_resource.src:283	MAPPING	Standard name CHIDIST; AOO writes LEGACY.CHIDIST.
+WEIBULL	WEIBULL	ODF 1.2	ocWeibull	317	interpr3.cxx:ScWeibull	compiler.cxx	core_resource.src:284	FULL	Standard.
+NEGBINOMDIST	NEGBINOMDIST	ODF 1.2	ocNegBinomVert	318	interpr3.cxx:ScNegBinomDist	compiler.cxx	core_resource.src:285	FULL	Standard.
+CRITBINOM	CRITBINOM	ODF 1.2	ocKritBinom	319	interpr3.cxx:ScCritBinom	compiler.cxx	core_resource.src:286	FULL	Standard.
+KURT	KURT	ODF 1.2	ocKurt	320	interpr3.cxx:ScKurt	compiler.cxx	core_resource.src:287	FULL	Standard.
+HARMEAN	HARMEAN	ODF 1.2	ocHarMean	321	interpr3.cxx:ScHarMean	compiler.cxx	core_resource.src:288	FULL	Standard.
+GEOMEAN	GEOMEAN	ODF 1.2	ocGeoMean	322	interpr3.cxx:ScGeoMean	compiler.cxx	core_resource.src:289	FULL	Standard.
+STANDARDIZE	STANDARDIZE	ODF 1.2	ocStandard	323	interpr3.cxx:ScStandard	compiler.cxx	core_resource.src:290	FULL	Standard.
+AVEDEV	AVEDEV	ODF 1.2	ocAveDev	324	interpr3.cxx:ScAveDev	compiler.cxx	core_resource.src:291	FULL	Standard.
+SKEW	SKEW	ODF 1.2	ocSchiefe	325	interpr3.cxx:ScSkew	compiler.cxx	core_resource.src:292	FULL	Sample skewness; distinct from SKEWP.
+DEVSQ	DEVSQ	ODF 1.2	ocDevSq	326	interpr3.cxx:ScDevSq	compiler.cxx	core_resource.src:293	FULL	Standard.
+MEDIAN	MEDIAN	ODF 1.2	ocMedian	327	interpr3.cxx:ScMedian	compiler.cxx	core_resource.src:294	FULL	Standard.
+MODE	MODE	ODF 1.2	ocModalValue	328	interpr3.cxx:ScModalValue	compiler.cxx	core_resource.src:295	FULL	Standard.
+ZTEST	ZTEST	ODF 1.2	ocZTest	329	interpr3.cxx:ScZTest	compiler.cxx	core_resource.src:296	FULL	Standard.
+TTEST	TTEST	ODF 1.2	ocTTest	330	interpr3.cxx:ScTTest	compiler.cxx	core_resource.src:297	FULL	Standard.
+RANK	RANK	ODF 1.2	ocRank	331	interpr3.cxx:ScRank	compiler.cxx	core_resource.src:298	FULL	Standard.
+PERCENTILE	PERCENTILE	ODF 1.2	ocPercentile	332	interpr3.cxx:ScPercentile	compiler.cxx	core_resource.src:299	FULL	Standard.
+PERCENTRANK	PERCENTRANK	ODF 1.2	ocPercentrank	333	interpr3.cxx:ScPercentrank	compiler.cxx	core_resource.src:300	FULL	Standard.
+LARGE	LARGE	ODF 1.2	ocLarge	334	interpr3.cxx:ScLarge	compiler.cxx	core_resource.src:301	FULL	Standard.
+SMALL	SMALL	ODF 1.2	ocSmall	335	interpr3.cxx:ScSmall	compiler.cxx	core_resource.src:302	FULL	Standard.
+FREQUENCY	FREQUENCY	ODF 1.2	ocFrequency	336	interpr3.cxx:ScFrequency	compiler.cxx	core_resource.src:303	FULL	Standard.
+QUARTILE	QUARTILE	ODF 1.2	ocQuartile	337	interpr3.cxx:ScQuartile	compiler.cxx	core_resource.src:304	FULL	Standard.
+NORMINV	NORMINV	ODF 1.2	ocNormInv	338	interpr3.cxx:ScNormInv	compiler.cxx	core_resource.src:305	FULL	Standard.
+CONFIDENCE	CONFIDENCE	ODF 1.2	ocConfidence	339	interpr3.cxx:ScConfidence	compiler.cxx	core_resource.src:306	FULL	Standard.
+FTEST	FTEST	ODF 1.2	ocFTest	340	interpr3.cxx:ScFTest	compiler.cxx	core_resource.src:307	FULL	Standard.
+TRIMMEAN	TRIMMEAN	ODF 1.2	ocTrimMean	341	interpr3.cxx:ScTrimMean	compiler.cxx	core_resource.src:308	FULL	Standard.
+PROB	PROB	ODF 1.2	ocProb	342	interpr3.cxx:ScProbability	compiler.cxx	core_resource.src:309	FULL	Standard.
+CORREL	CORREL	ODF 1.2	ocCorrel	343	interpr3.cxx:ScCorrel	compiler.cxx	core_resource.src:310	FULL	Standard.
+COVAR	COVAR	ODF 1.2	ocCovar	344	interpr3.cxx:ScCovar	compiler.cxx	core_resource.src:311	FULL	Standard.
+PEARSON	PEARSON	ODF 1.2	ocPearson	345	interpr3.cxx:ScPearson	compiler.cxx	core_resource.src:312	FULL	Standard.
+RSQ	RSQ	ODF 1.2	ocRSQ	346	interpr3.cxx:ScRSQ	compiler.cxx	core_resource.src:313	FULL	Standard.
+STEYX	STEYX	ODF 1.2	ocSTEYX	347	interpr3.cxx:ScSTEXY	compiler.cxx	core_resource.src:314	FULL	Standard.
+SLOPE	SLOPE	ODF 1.2	ocSlope	348	interpr3.cxx:ScSlope	compiler.cxx	core_resource.src:315	FULL	Standard.
+INTERCEPT	INTERCEPT	ODF 1.2	ocIntercept	349	interpr2.cxx:ScIntercept	compiler.cxx	core_resource.src:316	FULL	Standard.
+TREND	TREND	ODF 1.2	ocTrend	350	interpr5.cxx:CalculateTrendGrowth	compiler.cxx	core_resource.src:317	FULL	Standard.
+GROWTH	GROWTH	ODF 1.2	ocGrowth	351	interpr5.cxx:CalculateTrendGrowth	compiler.cxx	core_resource.src:318	FULL	Standard.
+LINEST	LINEST	ODF 1.2	ocRGP	352	interpr5.cxx:ScRGP	compiler.cxx	core_resource.src:319	FULL	Standard.
+LOGEST	LOGEST	ODF 1.2	ocRKP	353	interpr5.cxx:ScRKP	compiler.cxx	core_resource.src:320	FULL	Standard.
+FORECAST	FORECAST	ODF 1.2	ocForecast	354	interpr5.cxx:ScForecast	compiler.cxx	core_resource.src:321	FULL	Standard.
+LEGACY.CHIINV	CHIINV	ODF 1.2	ocChiInv	355	interpr3.cxx:ScChiInv	compiler.cxx	core_resource.src:322	MAPPING	Standard name CHIINV; AOO writes LEGACY.CHIINV.
+GAMMADIST	GAMMADIST	ODF 1.2	ocGammaDist	356	interpr3.cxx:ScGammaDist	compiler.cxx	core_resource.src:323	FULL	Standard.
+GAMMAINV	GAMMAINV	ODF 1.2	ocGammaInv	357	interpr3.cxx:ScGammaInv	compiler.cxx	core_resource.src:324	FULL	Standard.
+TINV	TINV	ODF 1.2	ocTInv	358	interpr3.cxx:ScTInv	compiler.cxx	core_resource.src:325	FULL	Standard.
+LEGACY.FINV	FINV	ODF 1.2	ocFInv	359	interpr3.cxx:ScFInv	compiler.cxx	core_resource.src:326	MAPPING	Standard name FINV; AOO writes LEGACY.FINV.
+LEGACY.CHITEST	CHITEST	ODF 1.2	ocChiTest	360	interpr3.cxx:ScChiTest	compiler.cxx	core_resource.src:327	MAPPING	Standard name CHITEST; AOO writes LEGACY.CHITEST.
+LOGINV	LOGINV	ODF 1.2	ocLogInv	361	interpr3.cxx (LogInv)	compiler.cxx	core_resource.src:328	FULL	Standard.
+MULTIPLE.OPERATIONS	MULTIPLE.OPERATIONS	ODF 1.2	ocTableOp	362	interpr1.cxx:ScTableOp	compiler.cxx	core_resource.src:329	FULL	Standard.
+BETADIST	BETADIST	ODF 1.2	ocBetaDist	363	interpr3.cxx:ScBetaDist	compiler.cxx	core_resource.src:330	FULL	Standard.
+BETAINV	BETAINV	ODF 1.2	ocBetaInv	364	interpr3.cxx:ScBetaInv	compiler.cxx	core_resource.src:331	FULL	Standard.
+ISOWEEKNUM	ISOWEEKNUM	ODF 1.2	ocWeek	365	interpr2.cxx:ScGetWeekOfYear	compiler.cxx	core_resource.src:332	FULL	Standard.
+EASTERSUNDAY	EASTERSUNDAY	ODF 1.3/1.4	ocEasterSunday	380	interpr2.cxx:ScEasterSunday	compiler.cxx:2542	core_resource.src:333	FULL	ODF 1.4 6.10.8; year 1583-9956; ORG.OPENOFFICE.EASTERSUNDAY legacy read-alias (compiler.cxx:2542).
+WEEKDAY	WEEKDAY	ODF 1.2	ocGetDayOfWeek	366	interpr2.cxx:ScGetDayOfWeek	compiler.cxx	core_resource.src:334	FULL	Standard.
+#NAME!	#NAME!	ODF 1.2	ocNoName	367	-	compiler.cxx	core_resource.src:335	FULL	Error constant.
+ORG.OPENOFFICE.STYLE	STYLE	ODF 1.2 Ext	AOO ext	ocStyle	368	interpr1.cxx:ScStyle	compiler.cxx	core_resource.src:336	MAPPING	AOO writes ORG.OPENOFFICE.STYLE.
+DDE	DDE	ODF 1.2	ocDde	369	interpr2.cxx:ScDde	compiler.cxx	core_resource.src:337	FULL	Standard.
+BASE	BASE	ODF 1.2	ocBase	370	interpr2.cxx:ScBase	compiler.cxx	core_resource.src:338	FULL	Standard.
+DECIMAL	DECIMAL	ODF 1.3	ocDecimal	381	interpr2.cxx:ScDecimal	compiler.cxx	core_resource.src:339	FULL	ODF 1.3 addition.
+CONVERT	CONVERT	ODF 1.2	ocConvert	382	interpr2.cxx:ScConvert	compiler.cxx	core_resource.src:340	FULL	ODF 1.4: unit table changed (atm 101325 Pa vs 1.0132510E+5).
+ROMAN	ROMAN	ODF 1.2	ocRoman	383	interpr2.cxx:ScRoman	compiler.cxx	core_resource.src:341	FULL	Standard.
+ARABIC	ARABIC	ODF 1.2	ocArabic	154	interpr1.cxx:ScArabic	compiler.cxx	core_resource.src:342	FULL	Standard.
+HYPERLINK	HYPERLINK	ODF 1.2	ocHyperLink	387	interpr1.cxx:ScHyperLink	compiler.cxx	core_resource.src:343	FULL	ODF 1.4: text syntax impl-defined.
+INFO	INFO	ODF 1.2	ocInfo	155	interpr3.cxx:ScInfo	compiler.cxx	core_resource.src:344	FULL	Standard.
+COM.MICROSOFT.BAHTTEXT	BAHTTEXT	ODF 1.2 MS ext	ocBahtText	156	interpr1.cxx:ScBahtText	compiler.cxx	core_resource.src:345	MAPPING	Microsoft extension name.
+GETPIVOTDATA	GETPIVOTDATA	ODF 1.2	ocGetPivotData	390	interpr1.cxx:ScGetPivotData	compiler.cxx	core_resource.src:346	FULL	Standard.
+EUROCONVERT	EUROCONVERT	ODF 1.2	ocEuroConvert	391	interpr2.cxx:ScEuroConvert	compiler.cxx	core_resource.src:347	FULL	Standard.
+NUMBERVALUE	NUMBERVALUE	ODF 1.3	ocNumberValue	392	interpr1.cxx (via ScValue path)	compiler.cxx	core_resource.src:348	FULL	ODF 1.3 addition; locale-sensitive.
+GAMMA	GAMMA	ODF 1.3	ocGamma	161	interpr3.cxx:ScGamma	compiler.cxx	core_resource.src:349	FULL	ODF 1.3 addition.
+CHISQDIST	CHISQDIST	ODF 1.2	ocChiSqDist	393	interpr3.cxx:ScChiSqDist	compiler.cxx	core_resource.src:350	FULL	Standard.
+CHISQINV	CHISQINV	ODF 1.2	ocChiSqInv	394	interpr3.cxx:ScChiSqInv	compiler.cxx	core_resource.src:351	FULL	Standard.
+BITAND	BITAND	ODF 1.2	ocBitAnd	404	interpr1.cxx:ScBitAnd	compiler.cxx	core_resource.src:352	FULL	Exactly 2 params enforced; ODF 1.4 semantics verify.
+BITOR	BITOR	ODF 1.2	ocBitOr	405	interpr1.cxx:ScBitOr	compiler.cxx	core_resource.src:353	FULL	Exactly 2 params enforced; ODF 1.4 semantics verify.
+BITXOR	BITXOR	ODF 1.2	ocBitXor	406	interpr1.cxx:ScBitXor	compiler.cxx	core_resource.src:354	FULL	Exactly 2 params enforced; ODF 1.4 semantics verify.
+BITLSHIFT	BITLSHIFT	ODF 1.2	ocBitLShift	407	interpr1.cxx:ScBitLShift	compiler.cxx	core_resource.src:355	FULL	Negative shift handling inverted in interpr1.cxx:1231-1234 (verify vs ODF 1.4).
+BITRSHIFT	BITRSHIFT	ODF 1.2	ocBitRShift	408	interpr1.cxx:ScBitRShift	compiler.cxx	core_resource.src:356	FULL	Negative shift handling inverted in interpr1.cxx:1231-1234 (verify vs ODF 1.4).
+IFNA	IFNA	ODF 1.3	ocIfna	409	main/sc/source/core/tool/interpr1.cxx:ScIfna	main/formula/source/core/api/FormulaCompiler.cxx:ocIfna	main/formula/source/core/resource/core_resource.src:357 / main/sc/source/ui/src/scfuncs.src:1027	IMPLEMENTED	Implemented Milestone B; ODF 1.3/1.4 §6.15.6; Large Group only, not Small Group; Excel-filter stub replaced with real opcode at xlformula.cxx.
+SKEWP	SKEWP	ODF 1.3	ocSkewP	410	main/sc/source/core/tool/interpr3.cxx:ScSkewP	main/formula/source/core/api/FormulaCompiler.cxx:ocSkewP	main/formula/source/core/resource/core_resource.src:358 / main/sc/source/ui/src/scfuncs.src:5300	IMPLEMENTED	Implemented Milestone B; ODF 1.3/1.4 §6.18.68; Medium Group, not Small Group; Excel-filter stub replaced with real opcode at xlformula.cxx.
