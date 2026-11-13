@@ -33,12 +33,12 @@ Therefore **no conformance level (Small/Medium/Large) may be claimed for AOO Cal
 
 | ReqID | Requirement | Status | Source Evidence | Runtime Verified |
 |-------|-------------|--------|-----------------|-------------------|
-| SG-BL-001 | Formula length >= 1024 characters | **UNVERIFIED** | FormulaCompiler parses token arrays dynamically; no fixed 1024-char limit found in source. E.1 test corrected to 1026-char expression (`=1`+`+1`*512, result 513). | No |
-| SG-BL-002 | >= 30 parameters per function | **UNVERIFIED** | MustHaveParamCount validates exact counts; no 30-param cap found | No |
-| SG-BL-003 | Strings up to 32767 ASCII chars | **UNVERIFIED** | OUString used for strings; no specific 32767 limit found | No |
-| SG-BL-004 | >= 7 nesting levels of functions | **UNVERIFIED** | No nesting depth limit found in compiler/interpreter. E.1 test corrected to 7 genuinely nested IF levels with balanced parens. | No |
+| SG-BL-001 | Formula length >= 1024 characters | **MET** | The compiler limit was 512 tokens, too few for 1024 characters of `1+1+...`; it is now 2048 (`MAXCODE`). Calcval `SG.BL-001-1024chars` (1026 characters, result 513) matches on a Linux aarch64 build. | Yes |
+| SG-BL-002 | >= 30 parameters per function | **MET** | `SG.BL-002-30params` (MAX with 30 arguments) matches on a Linux aarch64 build; a call with more than 255 arguments is an error. | Yes |
+| SG-BL-003 | Strings up to 32767 ASCII chars | **PARTIAL** | Strings produced at run time reach 32767 characters (`SG.BL-003-32767chars`, `LEN(REPT("a";32767))`, matches). A string literal in a formula is limited by `MAXSTRLEN` (1024): literals of 1022 characters or more give Err:513. Not fixed. | Partly |
+| SG-BL-004 | >= 7 nesting levels of functions | **MET** | No nesting depth limit found. `SG.BL-004-7nesting` (7 nested IF levels) matches on a Linux aarch64 build. | Yes |
 
-**Finding:** The absence of hard-coded limits in source does **not** prove conformance. All four Basic Limits requirements are marked UNVERIFIED pending actual runtime tests.
+**Finding:** the four limits were run on Linux aarch64. Formula length, parameter count and nesting meet the requirement. For strings only run-time results reach 32767 characters; string literals stop at about 1021 (open).
 
 ---
 
