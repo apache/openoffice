@@ -59,9 +59,10 @@ const ScParameterClassification::RawData ScParameterClassification::pRawData[] =
 
     // IF() and CHOOSE() are somewhat special, since the ScJumpMatrix is
     // created inside those functions and ConvertMatrixParameters() is not
-    // called for them.
+    // called for them. The same goes for IFNA().
     { ocIf,              {{ Array, Reference, Reference                          }, 0 }},
     { ocChose,           {{ Array, Reference                                     }, 1 }},
+    { ocIfna,            {{ Reference, Reference                                 }, 0 }},
     // Other specials.
     { ocOpen,            {{ Bounds                                               }, 0 }},
     { ocClose,           {{ Bounds                                               }, 0 }},
