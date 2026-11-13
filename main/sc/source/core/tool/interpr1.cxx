@@ -6876,30 +6876,10 @@ void ScInterpreter::ScDBCount()
     if (pQueryParam.get())
     {
         sal_uLong nCount = 0;
-        if ( bMissingField && pQueryParam->GetType() == ScDBQueryParamBase::INTERNAL )
-        {   // count all matching records
-            // TODO: currently the QueryIterators only return cell pointers of
-            // existing cells, so if a query matches an empty cell there's
-            // nothing returned, and therefor not counted!
-            // Since this has ever been the case and this code here only came
-            // into existence to fix #i6899 and it never worked before we'll
-            // have to live with it until we reimplement the iterators to also
-            // return empty cells, which would mean to adapt all callers of
-            // iterators.
-            ScDBQueryParamInternal* p = static_cast<ScDBQueryParamInternal*>(pQueryParam.get());
-            SCTAB nTab = p->nTab;
-            // ScQueryCellIterator doesn't make use of ScDBQueryParamBase::mnField,
-            // so the source range has to be restricted, like before the introduction
-            // of ScDBQueryParamBase.
-            p->nCol1 = p->nCol2 = p->mnField;
-            ScQueryCellIterator aCellIter( pDok, nTab, *p);
-            if ( aCellIter.GetFirst() )
-            {
-                do
-                {
-                    nCount++;
-                } while ( aCellIter.GetNext() );
-            }
+        if ( bMissingField )
+        {   // count all matching records, whatever their cells contain
+            ScDBQueryDataIterator aRecIter( pDok, pQueryParam.release());
+            nCount = aRecIter.CountRecords();
         }
         else
         {   // count only matching records with a value in the "result" field
@@ -6930,6 +6910,12 @@ void ScInterpreter::ScDBCount2()
     if (pQueryParam.get())
     {
         sal_uLong nCount = 0;
+        if ( bMissingField )
+        {   // count all matching records, whatever their cells contain
+            ScDBQueryDataIterator aRecIter( pDok, pQueryParam.release());
+            PushDouble( aRecIter.CountRecords() );
+            return;
+        }
         pQueryParam->mbSkipString = false;
         ScDBQueryDataIterator aValIter( pDok, pQueryParam.release());
         ScDBQueryDataIterator::Value aValue;

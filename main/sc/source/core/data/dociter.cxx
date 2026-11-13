@@ -682,6 +682,21 @@ bool ScDBQueryDataIterator::DataAccessInternal::getNext(Value& rValue)
     return getCurrent(rValue);
 }
 
+SCSIZE ScDBQueryDataIterator::DataAccessInternal::countRecords()
+{
+    // A record can match with an empty cell in a query column ("=", "<>5"),
+    // getCurrent() only visits rows that have a cell in column nCol.
+    ScQueryParam aParam(*mpParam);
+    SCROW nFirstRow = mpParam->bHasHeader ? mpParam->nRow1 + 1 : mpParam->nRow1;
+    SCSIZE nCount = 0;
+    for (SCROW nR = nFirstRow; nR <= mpParam->nRow2; ++nR)
+    {
+        if (ScDBQueryDataIterator::IsQueryValid(*mpDoc, aParam, nTab, nR, NULL))
+            ++nCount;
+    }
+    return nCount;
+}
+
 // ----------------------------------------------------------------------------
 
 ScDBQueryDataIterator::DataAccessMatrix::DataAccessMatrix(const ScDBQueryDataIterator* pParent, ScDBQueryParamMatrix* pParam) :
@@ -735,6 +750,18 @@ bool ScDBQueryDataIterator::DataAccessMatrix::getNext(Value& rValue)
 {
     ++mnCurRow;
     return getCurrent(rValue);
+}
+
+SCSIZE ScDBQueryDataIterator::DataAccessMatrix::countRecords()
+{
+    const ScMatrix& rMat = *mpParam->mpMatrix;
+    SCSIZE nCount = 0;
+    for (SCROW nR = mpParam->bHasHeader ? 1 : 0; nR < mnRows; ++nR)
+    {
+        if (isValidQuery(nR, rMat))
+            ++nCount;
+    }
+    return nCount;
 }
 
 namespace {
@@ -956,6 +983,11 @@ bool ScDBQueryDataIterator::GetFirst(Value& rValue)
 bool ScDBQueryDataIterator::GetNext(Value& rValue)
 {
     return mpData->getNext(rValue);
+}
+
+SCSIZE ScDBQueryDataIterator::CountRecords()
+{
+    return mpData->countRecords();
 }
 
 // ============================================================================

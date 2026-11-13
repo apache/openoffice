@@ -143,6 +143,13 @@ def setup_data(doc):
     for addr, f in (("AM1", "=NA()"), ("AM2", "=1/0"), ("AM3", '=""'), ("AN1", "5"), ("AN2", "=NA()"), ("AN4", "=NA()"), ("AN5", "7"), ("AN6", "=1/0")):
         sh.getCellRangeByName(addr).setFormula(f)
     sh.getCellRangeByName("AN3").setString("x")
+    put("AP1", [["Score"], ["<>5"]])
+    put("AQ1", [["Score"], ["="]])
+    put("AR1", [["Score", "Age"], ["=", ">=30"]])
+    put("AT1", [["Age", "Score"], [">=30", "="]])
+    put("AV1", [["Score", "Age"], ["25", None], [None, "50"]])
+    put("AX11", [["K", "V"], ["a", 1], ["b", 2], ["c", 3]])
+    put("AZ11", [["K"], [None]])
     return sh
 
 

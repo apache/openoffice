@@ -164,6 +164,23 @@ COUNTBLANK.empty	=COUNTBLANK(D6:D7)	cell	2	6.13.8 COUNTBLANK: truly empty cells 
 COUNTBLANK.emptystr	=COUNTBLANK(AM3)	cell	1	6.13.8 a cell whose formula returns "" (AM3): implementation-defined whether it is blank; AOO counts it
 DATE.pre1583	=DATE(1500;1;1)	cell	#ERR	6.10.2 DATE(1500;1;1) outside constraints (Year>=1904); impl-defined/diagnostic per ODF 1.4 — NOT mandatory #ERR. THIS CALCVAL ASSERTION IS AOO-SPECIFIC DIAGNOSTIC ONLY (observed #VALUE!), not an ODF conformance assertion.
 SYN-001-criteria	=DCOUNT(R1:T6;;V1:V2)	cell	4	6.x Criteria syntax §4.11.11 via DCOUNT against existing R1:T6 database and V1:V2 criteria fixtures (Age>=30 → B,C,D,E)
+DB.DCOUNT.nf.ne	=DCOUNT(R1:T6;;AP1:AP2)	cell	4	6.9.3 Field omitted: count of the records that satisfy the criteria. AP1:AP2 Score <>5; 4.11.8: <> with a value matches everything else, empty cells included: B,C,D,E (D's Score is empty)
+DB.DCOUNTA.nf.ne	=DCOUNTA(R1:T6;;AP1:AP2)	cell	4	6.9.4 Field omitted: same record count as DCOUNT: B,C,D,E
+DB.DCOUNT.f.ne	=DCOUNT(R1:T6;"Score";AP1:AP2)	cell	2	6.9.3 with a field: COUNT over Score of B,C,D,E (n/a,15,empty,25) = 2
+DB.DCOUNTA.f.ne	=DCOUNTA(R1:T6;"Score";AP1:AP2)	cell	3	6.9.4 with a field: COUNTA over Score of B,C,D,E (n/a,15,empty,25) = 3; the empty cell is not counted
+DB.DCOUNT.nf.eq	=DCOUNT(R1:T6;;AQ1:AQ2)	cell	1	6.9.3 Field omitted; AQ1:AQ2 Score "="; 4.11.8: = with an empty value matches empty cells: D
+DB.DCOUNTA.nf.eq	=DCOUNTA(R1:T6;;AQ1:AQ2)	cell	1	6.9.4 Field omitted; Score "=" matches D
+DB.DCOUNT.f.eq	=DCOUNT(R1:T6;"Score";AQ1:AQ2)	cell	0	6.9.3 with a field: D matches but its Score is empty, COUNT 0
+DB.DCOUNT.nf.and	=DCOUNT(R1:T6;;AR1:AS2)	cell	1	6.9.3/4.11.11 one criteria row, all expressions must match: Score "=" and Age >=30: D
+DB.DCOUNT.nf.and2	=DCOUNT(R1:T6;;AT1:AU2)	cell	1	Same criteria as DB.DCOUNT.nf.and with the columns swapped (Age first): D; the result must not depend on column order
+DB.DCOUNTA.nf.and	=DCOUNTA(R1:T6;;AR1:AS2)	cell	1	6.9.4 Field omitted; Score "=" and Age >=30: D
+DB.DCOUNT.nf.or	=DCOUNT(R1:T6;;AV1:AW3)	cell	2	6.9.3/4.11.11 two criteria rows (or): Score 25, or Age 50: E and D (D's Score is empty)
+DB.DCOUNTA.nf.or	=DCOUNTA(R1:T6;;AV1:AW3)	cell	2	6.9.4 Field omitted; Score 25 or Age 50: E and D
+DB.DCOUNT.f.or	=DCOUNT(R1:T6;"Age";AV1:AW3)	cell	2	6.9.3 with a field: COUNT over Age of D and E = 2
+DB.DCOUNT.nf.inline	=DCOUNT({"Name";"Age";"Score"|"A";20;5|"B";30;"n/a"|"C";40;15|"D";50;"x"|"E";60;25};;Y1:Y2)	cell	1	6.9.3 Field omitted, inline array as the database (4.11.9 requires only ranges; AOO accepts arrays): Name A matches one record
+DB.DCOUNTA.nf.inline	=DCOUNTA({"Name";"Age";"Score"|"A";20;5|"B";30;"n/a"|"C";40;15|"D";50;"x"|"E";60;25};;Y1:Y2)	cell	1	6.9.4 Field omitted, inline array as the database: Name A matches one record
+DB.DCOUNT.nf.nocrit	=DCOUNT(AX11:AY14;;AZ11:AZ12)	cell	-	Field omitted, criteria cell empty (AZ12). 4.11.11 reads an empty criterion as 0 (no match); AOO ignores empty criteria (known deviation, see DCOUNT.emptycrit). Record only
+DB.DCOUNT.f.nocrit	=DCOUNT(AX11:AY14;"V";AZ11:AZ12)	cell	-	Same as DB.DCOUNT.nf.nocrit with field V. Record only
 BITAND.3params	=BITAND(6;3;1)	cell	#ERR	6.6.2 BITAND exactly 2 params enforced
 
 # OpenFormula Small Group: basic limits, syntax, operators and conversions (ODF 1.4 Part 4 sections 3.7, 5, 6.3, 6.4).
