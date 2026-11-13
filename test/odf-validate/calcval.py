@@ -140,6 +140,8 @@ def setup_data(doc):
     put("AI1", [[v] for v in (1, 3, 5)])
     put("AJ1", [[v] for v in (2, 4, 7, 9)])
     put("AK1", [[v] for v in (2, 4, 7, 9)])
+    for addr, f in (("AM1", "=NA()"), ("AM2", "=1/0"), ("AM3", '=""')):
+        sh.getCellRangeByName(addr).setFormula(f)
     return sh
 
 
