@@ -89,6 +89,9 @@ When a direct error argument (e.g. `1/0`) was passed, `svError` fell into
 `CalculateSkew()`'s `default` → `SetError(errIllegalParameter)`, replacing
 the original error (e.g. `#DIV/0!`) with a generic "illegal parameter" error.
 
+**Update:** both `CalculateSkew()` changes were taken out again later. Direct text is an
+error, which ODF 1.4 allows, and `SKEW(1/0)` returns `#DIV/0!` without the `svError` case.
+
 ## 4. Files Changed and Purpose
 
 | File | Change | Purpose |

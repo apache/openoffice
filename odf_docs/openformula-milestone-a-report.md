@@ -127,6 +127,9 @@ Result table (ODF 1.4, §6.14.6), using the sheet data documented in the test fi
 
 ## 5. INDEX compatibility findings and decision
 
+**Update:** this decision was reversed later. `ScIndex` keeps the legacy row-vector rule,
+`INDEX(H1:L1;3)` returns 30 again, and the case is listed as a known deviation.
+
 **Finding:** AOO retains no document/formula-version information that `INDEX` evaluation
 can branch on. `ScDocOptions` (docoptio.hxx) tracks only formula-related toggles such as
 `bFormulaRegexEnabled`; there is no ODF 1.2 / 1.3 / 1.4 formula conformance setting per

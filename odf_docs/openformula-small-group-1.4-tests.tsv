@@ -24,7 +24,7 @@ SG-SYN-003	5.3	SYN-003-sci	=1.5e2	150	-	UNVERIFIED	Scientific notation literal
 SG-SYN-004	5.4	SYN-004-string	="hello"	s:hello	-	UNVERIFIED	String literal
 SG-SYN-004	5.4	SYN-004-quote	="he said ""hi"""	s:he said "hi"	-	UNVERIFIED	Quote escaping in string
 SG-SYN-005	5.5	SYN-005-precedence	=2+3*4	14	-	UNVERIFIED	Operator precedence: * before +
-SG-SYN-005	5.5	SYN-005-power	=2^3^2	512	-	UNVERIFIED	Power operator right-associativity
+SG-SYN-005	5.5	SYN-005-power	=2^3^2	64	-	UNVERIFIED	Power operator left-associativity (5.5 Note 1)
 SG-SYN-006	5.6	SYN-006-func	=ABS(-5)	5	-	UNVERIFIED	Function call with argument
 SG-SYN-007	5.7	SYN-007-nonstandard	=NONEXISTENT()	#ERR	-	UNVERIFIED	Nonstandard function name error
 SG-SYN-008	5.8	SYN-008-ref	=D1	10	-	UNVERIFIED	Cell reference resolves value (D1=10 per calcval fixture)
@@ -56,7 +56,7 @@ SG-OP-014	6.4.11	OP-014-range	=SUM(D1:D3)	60	-	UNVERIFIED	Reference range (D1:D3
 # ===== Implicit Conversions (§6.3) =====
 SG-CONV-001	6.3.14	CONV-001-text	=TEXT(123;"0")	s:123	-	UNVERIFIED	Number to text conversion
 SG-CONV-002	6.3.5	CONV-002-number	=VALUE("123")	123	-	UNVERIFIED	Text to number conversion
-SG-CONV-003	4.8	CONV-003-ref	=N(A1)	10	-	UNVERIFIED	Reference to scalar conversion (A1=10)
+SG-CONV-003	4.8	CONV-003-ref	=N(D1)	10	-	UNVERIFIED	Reference to scalar conversion (D1=10)
 SG-CONV-004	6.3.12	CONV-004-logical	=N(TRUE)	1	-	UNVERIFIED	Logical to number conversion
 SG-CONV-004	6.3.12	CONV-004-logical2	=IF(0;TRUE;FALSE)	FALSE	-	UNVERIFIED	Number to logical conversion (0 = FALSE)
 SG-CONV-005	5.12	CONV-005-error	=ISERR(1/0)	TRUE	-	UNVERIFIED	Error propagation: division by zero
