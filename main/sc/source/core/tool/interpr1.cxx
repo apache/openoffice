@@ -4678,13 +4678,28 @@ void ScInterpreter::ScMatch()
 }
 
 
+// A formula cell returning the empty string counts as blank, as in other spreadsheets.
+static bool lcl_IsCountBlankEmpty( ScBaseCell* pCell )
+{
+    CellType eCellType = pCell ? pCell->GetCellType() : CELLTYPE_NONE;
+    if (eCellType == CELLTYPE_NONE || eCellType == CELLTYPE_NOTE)
+        return true;
+    if (eCellType != CELLTYPE_FORMULA)
+        return false;
+    ScFormulaCell* pFCell = static_cast<ScFormulaCell*>(pCell);
+    if (pFCell->GetErrCode() || pFCell->IsValue())
+        return false;
+    String aStr;
+    pFCell->GetString( aStr );
+    return aStr.Len() == 0;
+}
+
 void ScInterpreter::ScCountEmptyCells()
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScCountEmptyCells" );
     if ( MustHaveParamCount( GetByte(), 1 ) )
     {
         sal_uLong nMaxCount = 0, nCount = 0;
-        CellType eCellType;
         switch (GetStackType())
         {
             case svSingleRef :
@@ -4692,8 +4707,7 @@ void ScInterpreter::ScCountEmptyCells()
                 nMaxCount = 1;
                 ScAddress aAdr;
                 PopSingleRef( aAdr );
-                eCellType = GetCellType( GetCell( aAdr ) );
-                if (eCellType != CELLTYPE_NONE && eCellType != CELLTYPE_NOTE)
+                if (!lcl_IsCountBlankEmpty( GetCell( aAdr ) ))
                     nCount = 1;
             }
             break;
@@ -4716,8 +4730,7 @@ void ScInterpreter::ScCountEmptyCells()
                     {
                         do
                         {
-                            if ((eCellType = pCell->GetCellType()) != CELLTYPE_NONE
-                                    && eCellType != CELLTYPE_NOTE)
+                            if (!lcl_IsCountBlankEmpty( pCell ))
                                 nCount++;
                         } while ( (pCell = aDocIter.GetNext()) != NULL );
                     }
@@ -7523,6 +7536,7 @@ void ScInterpreter::ScIndex()
                     SCCOL nCol2 = 0;
                     SCROW nRow2 = 0;
                     SCTAB nTab2 = 0;
+                    sal_Bool bRowArray = sal_False;
                     if (GetStackType() == svRefList)
                     {
                         FormulaTokenRef xRef = PopToken();
@@ -7534,14 +7548,19 @@ void ScInterpreter::ScIndex()
                         ScRange aRange( ScAddress::UNINITIALIZED);
                         DoubleRefToRange( (*(static_cast<ScToken*>(xRef.get())->GetRefList()))[nArea-1], aRange);
                         aRange.GetVars( nCol1, nRow1, nTab1, nCol2, nRow2, nTab2);
+                        if ( nParamCount == 2 && nRow1 == nRow2 )
+                            bRowArray = sal_True;
                     }
                     else
                     {
                         PopDoubleRef( nCol1, nRow1, nTab1, nCol2, nRow2, nTab2);
+                        if ( nParamCount == 2 && nRow1 == nRow2 )
+                            bRowArray = sal_True;
                     }
                     if ( nTab1 != nTab2 ||
                             (nCol > 0 && nCol1+nCol-1 > nCol2) ||
-                            (nRow > 0 && nRow1+nRow-1 > nRow2 ))
+                            (nRow > 0 && nRow1+nRow-1 > nRow2 && !bRowArray ) ||
+                            ( nRow > nCol2 - nCol1 + 1 && bRowArray ))
                         PushIllegalArgument();
                     else if (nCol == 0 && nRow == 0)
                     {
@@ -7562,6 +7581,12 @@ void ScInterpreter::ScIndex()
                     {
                         if ( nCol1 == nCol2 )
                             PushSingleRef( nCol1, nRow1+nRow-1, nTab1 );
+                        else if ( bRowArray )
+                        {
+                            nCol =(SCCOL) nRow;
+                            nRow = 1;
+                            PushSingleRef( nCol1+nCol-1, nRow1+nRow-1, nTab1);
+                        }
                         else
                             PushDoubleRef( nCol1, nRow1+nRow-1, nTab1,
                                     nCol2, nRow1+nRow-1, nTab1);
