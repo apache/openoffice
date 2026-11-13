@@ -69,6 +69,7 @@ class ScJumpMatrix
             SCSIZE              nResMatCols;
             SCSIZE              nResMatRows;
             bool                bStarted;
+            bool                bKeepNoPath;
 
                                 // not implemented, prevent usage
                                 ScJumpMatrix( const ScJumpMatrix& );
@@ -86,6 +87,7 @@ public:
                                         , nResMatCols( nColsP )
                                         , nResMatRows( nRowsP )
                                         , bStarted( false )
+                                        , bKeepNoPath( false )
                                     {
                                         // Initialize result matrix in case of
                                         // a premature end of the interpreter
@@ -154,6 +156,9 @@ public:
                                                     nNext, nStop);
                                         }
                                     }
+            /// Elements without a jump path keep the value already in the result matrix.
+            void                SetKeepNoPath() { bKeepNoPath = true; }
+            bool                IsKeepNoPath() const { return bKeepNoPath; }
             void                SetJumpParameters( ScTokenVec* p )
                                     { pParams = p; }
             const ScTokenVec*   GetJumpParameters() const { return pParams; }
