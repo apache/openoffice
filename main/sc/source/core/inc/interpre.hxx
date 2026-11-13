@@ -90,7 +90,7 @@ private:
 
 class ScToken;
 
-#define MAXSTACK      (4096 / sizeof(formula::FormulaToken*))
+#define MAXSTACK      (16384 / sizeof(formula::FormulaToken*))
 
 class ScTokenStack
 {

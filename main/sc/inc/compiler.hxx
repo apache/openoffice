@@ -56,7 +56,7 @@
 
 // constants and data types also for external modules (ScInterpreter et al)
 
-#define MAXCODE      512    /* maximum number of tokens in formula */
+#define MAXCODE      2048   /* maximum number of tokens in formula */
 #define MAXSTRLEN    1024   /* maximum length of input string of one symbol */
 #define MAXJUMPCOUNT 32     /* maximum number of jumps (ocChose) */
 

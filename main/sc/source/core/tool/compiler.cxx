@@ -3970,6 +3970,14 @@ ScTokenArray* ScCompiler::CompileString( const String& rFormula )
                 aCorrectedFormula += mxSymbols->getSymbol(ocClose);
         }
     }
+    if ( aArr.GetLen() >= MAXCODE )
+    {
+        // keep the whole text, the tokens that fit would be written back as a shorter formula
+        aArr.Clear();
+        aArr.AddBad( aFormula.Copy( nForced ) );
+        aArr.SetCodeError( errCodeOverflow );
+        bCorrected = sal_False;     // the corrected text stops where the tokens did
+    }
     if ( nForced >= 2 )
         pArr->SetRecalcModeForced();
 

@@ -1050,7 +1050,10 @@ void FormulaCompiler::Factor()
                 nSepCount++;
                 while ( (eOp == ocSep) && (!pArr->GetCodeError() || bIgnoreErrors) )
                 {
-                    nSepCount++;
+                    if ( nSepCount == 255 )
+                        SetError( errCodeOverflow );    // the count is kept in a byte
+                    else
+                        nSepCount++;
                     NextToken();
                     eOp = Expression();
                 }

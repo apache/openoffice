@@ -38,6 +38,7 @@
 #include "formula/token.hxx"
 #include "formula/tokenarray.hxx"
 #include "formula/FormulaCompiler.hxx"
+#include "formula/errorcodes.hxx"
 #include <formula/compiler.hrc>
 //#include "rechead.hxx"
 //#include "parclass.hxx"
@@ -323,6 +324,9 @@ bool FormulaTokenArray::Fill(const uno::Sequence< sheet::FormulaToken >& _aSeque
     {
         bError |= AddFormulaToken( _aSequence[nPos] ,_pRef);
     }
+    // Add() drops what does not fit; without an error the shorter formula would be calculated
+    if ( nLen >= MAXCODE )
+        SetCodeError( errCodeOverflow );
     return bError;
 }
 //////////////////////////////////////////////////////////////////////////
