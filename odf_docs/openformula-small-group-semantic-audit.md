@@ -227,7 +227,7 @@ Name mapping: `main/formula/source/core/resource/core_resource.src:227-228` (`DC
 ```
 This means DCOUNT without a field may undercount when matching records have empty cells in the result column.
 
-**Update:** fixed. DCOUNT and DCOUNTA without a field now test every record of the range against the criteria (`ScDBQueryDataIterator::CountRecords`). Records with an empty cell in a criteria column are counted. With an empty criteria cell the count is now all records (`DB.DCOUNT.nf.nocrit` gives 3, was 0). Covered by the `DB.*` cases in `calcval-cases14.tsv`.
+**Update:** fixed. DCOUNT and DCOUNTA without a field now test every row of the range that has content against the criteria (`ScDBQueryDataIterator::CountRecords`); a row with no content is not a record. Records with an empty cell in a criteria column are counted. With an empty criteria cell the count is now all records (`DB.DCOUNT.nf.nocrit` gives 3, was 0). Covered by the `DB.*` cases in `calcval-cases14.tsv`.
 
 ### Conformance Classification
 
