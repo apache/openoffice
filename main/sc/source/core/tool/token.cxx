@@ -160,6 +160,10 @@ void ScRawToken::SetOpCode( OpCode e )
             eType = svJump;
             nJump[ 0 ] = MAXJUMPCOUNT+1;
             break;
+        case ocIfna:
+            eType = svJump;
+            nJump[ 0 ] = 2; // Fallback, Behind
+            break;
         case ocMissing:
             eType = svMissing;
             break;

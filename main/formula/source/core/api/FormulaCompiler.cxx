@@ -1011,43 +1011,8 @@ void FormulaCompiler::Factor()
             PutCode( pFacToken );
             eOp = NextToken();
         }
-        else if (eOp == ocIfna)
-        {
-            // IFNA(value; value_if_na): lazy evaluation of the second argument.
-            // jump[0] = 2  (value path, fallback path, behind)
-            pFacToken = pToken;
-            pFacToken->GetJump()[ 0 ] = 2;
-            eOp = NextToken();
-            if (eOp == ocOpen)
-            {
-                NextToken();
-                eOp = Expression();
-            }
-            else
-                SetError(errPairExpected);
-            short nJumpCount = 0;
-            PutCode( pFacToken );
-            if ( ++nJumpCount <= 2 )
-                pFacToken->GetJump()[nJumpCount] = pc-1;  // fallback starts here
-            NextToken();
-            if ( pToken->GetOpCode() == ocSep )
-            {
-                NextToken();
-                eOp = Expression();
-            }
-            else
-                SetError(errPairExpected);
-            if (eOp != ocClose)
-                SetError(errPairExpected);
-            else
-            {
-                eOp = NextToken();
-                if ( ++nJumpCount <= 2 )
-                    pFacToken->GetJump()[ nJumpCount ] = pc-1;  // behind
-                pFacToken->GetJump()[ 0 ] = nJumpCount;
-            }
-        }
-        else if ((SC_OPCODE_START_2_PAR <= eOp && eOp < SC_OPCODE_STOP_2_PAR)
+        else if ((SC_OPCODE_START_2_PAR <= eOp && eOp < SC_OPCODE_STOP_2_PAR
+                    && (eOp != ocIfna || bCompileForFAP))
                 || eOp == ocExternal
                 || eOp == ocMacro
                 || eOp == ocAnd
@@ -1106,12 +1071,14 @@ void FormulaCompiler::Factor()
                 pArr->SetRecalcModeAlways();
             PutCode( pFacToken );
         }
-        else if (eOp == ocIf || eOp == ocChose)
+        else if (eOp == ocIf || eOp == ocChose || eOp == ocIfna)
         {
             // the PC counters are -1
             pFacToken = pToken;
             if ( eOp == ocIf )
                 pFacToken->GetJump()[ 0 ] = 3;  // if, else, behind
+            else if ( eOp == ocIfna )
+                pFacToken->GetJump()[ 0 ] = 2;  // fallback, behind
             else
                 pFacToken->GetJump()[ 0 ] = MAXJUMPCOUNT+1;
             eOp = NextToken();
@@ -1129,7 +1096,8 @@ void FormulaCompiler::Factor()
             // ScRawToken::Clone() allocates the JumpBuffer according to
             // nJump[0]*2+2, which is 3*2+2 on ocIf.
             const short nJumpMax =
-                (pFacToken->GetOpCode() == ocIf ? 3 : MAXJUMPCOUNT);
+                (pFacToken->GetOpCode() == ocIf ? 3 :
+                 (pFacToken->GetOpCode() == ocIfna ? 2 : MAXJUMPCOUNT));
             while ( (nJumpCount < (MAXJUMPCOUNT - 1)) && (eOp == ocSep)
                     && (!pArr->GetCodeError() || bIgnoreErrors) )
             {
@@ -1156,6 +1124,7 @@ void FormulaCompiler::Factor()
                 if ( ++nJumpCount <= nJumpMax )
                     pFacToken->GetJump()[ nJumpCount ] = pc-1;
                 if ((pFacToken->GetOpCode() == ocIf && (nJumpCount > 3)) ||
+                        (pFacToken->GetOpCode() == ocIfna && (nJumpCount != 2)) ||
                                  (nJumpCount >= MAXJUMPCOUNT))
                     SetError(errIllegalParameter);
                 else
