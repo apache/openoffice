@@ -214,7 +214,7 @@ Name mapping: `main/formula/source/core/resource/core_resource.src:227-228` (`DC
 | Wildcards / RegExp | Required | `bRegExp` via `MayBeRegExp` | Yes |
 | Empty criteria field | Field may be omitted (count all matching) | `bMissingField` path in ScDBCount | Yes |
 | Criteria range with multiple rows | AND across rows | ScQueryParamBase entries | Yes |
-| DCOUNT without field counts all matching records | Required | ScDBCount: bMissingField + INTERNAL type → counts all matching | Yes, with TODO limitation |
+| DCOUNT without field counts all matching records | Required | ScDBCount: bMissingField + INTERNAL type → counts all matching | Yes; the empty-cell undercount is fixed, see calcval `DB.DCOUNT.*` |
 | DCOUNT with field counts values in field | Required | ScDBQueryDataIterator over field column | Yes |
 
 ### Known Limitations
@@ -226,6 +226,8 @@ Name mapping: `main/formula/source/core/resource/core_resource.src:227-228` (`DC
 // nothing returned, and therefor not counted!
 ```
 This means DCOUNT without a field may undercount when matching records have empty cells in the result column.
+
+**Update:** fixed. DCOUNT and DCOUNTA without a field now test every record of the range against the criteria (`ScDBQueryDataIterator::CountRecords`). Records with an empty cell in a criteria column are counted. With an empty criteria cell the count is now all records (`DB.DCOUNT.nf.nocrit` gives 3, was 0). Covered by the `DB.*` cases in `calcval-cases14.tsv`.
 
 ### Conformance Classification
 

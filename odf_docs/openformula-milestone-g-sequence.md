@@ -41,7 +41,7 @@ These items require no production source modification and can be completed immed
 
 ## Phase G.2 — Investigation Complete: Criteria Syntax Empty-Cell Fix (ScDBCount)
 
-**STATUS: INVESTIGATED — implementation requires build/test environment**
+**STATUS: DONE — DCOUNT and DCOUNTA without a field count every matching record; calcval `DB.*` cases**
 
 This is a targeted fix with a clear TODO in source and contained blast radius. The root cause is confirmed: `ScQueryCellIterator` ("run through all not empty cells") skips empty cells, and `ScDBQueryDataIterator` skips `CELLTYPE_NONE` via `default` case at `dociter.cxx:655-657`. Per ODF 1.4 §6.9.3, DCOUNT without a field should count ALL matching rows including those with empty result cells.
 
