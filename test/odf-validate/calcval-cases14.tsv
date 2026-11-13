@@ -139,6 +139,9 @@ SKEWP.err	=SKEWP(1/0)	cell	#ERR	6.x error value propagates
 IFNA.ref	=IFNA(D1;10)	cell	10	6.x cell reference containing a value (D1 = 10), returned unchanged
 IFNA.ref.text	=IFNA(A1;10)	cell	s:y	6.x cell reference containing text (A1 = y), returned unchanged
 IFNA.range	=IFNA(D1:D3;99)	cell	10	6.x range reference, implicit intersection takes first cell (D1 = 10)
+IFNA.ref.na	=IFNA(AM1;99)	cell	99	6.x cell reference containing #N/A (AM1 = NA()), fallback returned
+IFNA.ref.err	=IFNA(AM2;99)	cell	#ERR	6.x cell reference containing another error (AM2 = 1/0), error propagated
+IFNA.ref.empty	=IFNA(AM4;99)	cell	0	6.x reference to an empty cell (AM4 unset) is not #N/A; the empty cell shows as 0
 SKEWP.two	=SKEWP(1;2)	cell	0	6.x two observations, non-constant, zero skewness
 SKEW.text	=SKEW(1;"text";2)	cell	-	6.3.7 a direct Text argument converts as in 6.3.5, implementation-defined (0 or an Error); AOO returns an Error
 SKEW.err	=SKEW(1/0)	cell	#ERR	6.x regression: error argument propagates
@@ -147,6 +150,7 @@ COUNTA.empty	=COUNTA(D6:D7)	cell	0	6.13.7 COUNTA: truly empty cells are not coun
 COUNTA.emptystr	=COUNTA(1;"";"x")	cell	3	6.13.7 COUNTA: empty string "" is non-blank and counted
 COUNTBLANK.range	=COUNTBLANK(D1:D3)	cell	0	6.13.8 COUNTBLANK over range with no empty cells
 COUNTBLANK.empty	=COUNTBLANK(D6:D7)	cell	2	6.13.8 COUNTBLANK: truly empty cells are counted (D6:D7 unset)
+COUNTBLANK.emptystr	=COUNTBLANK(AM3)	cell	1	6.13.8 a cell whose formula returns "" (AM3): implementation-defined whether it is blank; AOO counts it
 DATE.pre1583	=DATE(1500;1;1)	cell	#ERR	6.10.2 DATE(1500;1;1) outside constraints (Year>=1904); impl-defined/diagnostic per ODF 1.4 — NOT mandatory #ERR. THIS CALCVAL ASSERTION IS AOO-SPECIFIC DIAGNOSTIC ONLY (observed #VALUE!), not an ODF conformance assertion.
 SYN-001-criteria	=DCOUNT(R1:T6;;V1:V2)	cell	4	6.x Criteria syntax §4.11.11 via DCOUNT against existing R1:T6 database and V1:V2 criteria fixtures (Age>=30 → B,C,D,E)
 BITAND.3params	=BITAND(6;3;1)	cell	#ERR	6.6.2 BITAND exactly 2 params enforced
