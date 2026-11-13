@@ -54,7 +54,7 @@ Each calcval case has 5 tab-separated columns:
 |----------|------|------------|-----------|
 | 1 | COUNTA/COUNTBLANK empty cells / empty string | `COUNTA.empty`, `COUNTA.emptystr`, `COUNTBLANK.empty`, `COUNTBLANK.range` (calcval14) and corresponding SG tests | ODF 1.4 §6.13.7 counts `""` as non-blank; §6.13.8 `""`-in-cell is impl-defined and not directly reproducible with current calcval fixtures |
 | 2 | DATE out-of-constraint/pre-1583 | `DATE.pre1583` / `FN-016-DATE-pre1583` | §6.10.2 constrains Year>=1904; `DATE(1500;1;1)` is impl-defined/diagnostic (not mandatory `#ERR`) |
-| 3 | INDEX row-vector | `INDEX.rowvec.single`, `INDEX.rowvec.colarg`, `INDEX.row.outrange` | Milestone A fix; regression risk for legacy documents |
+| 3 | INDEX row-vector | `INDEX.row.rowonly`, `INDEX.row.empty`, `INDEX.row.outrange` | Legacy rule kept as a known deviation (Milestone A change reverted) |
 | 4 | Bitwise functions | `BITLSHIFT.neg`, `BITRSHIFT.neg`, `BITAND.3params` | Parameter count and negative shift behavior |
 | 5 | Parser/operators | `SYN-005-precedence`, `SYN-005-power`, `OP-006-div0` | Operator precedence and associativity |
 

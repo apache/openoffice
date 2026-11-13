@@ -55,7 +55,7 @@ AOO does not claim the Small Group. However, the Small Group audit (`openformula
 |------|-------------|----------------|--------|
 | DATE pre-1583 | #VALUE! before 15 Oct 1582 | impl-defined (§7.4) | IMPLEMENTATION-DEFINED:155; KNOWN-LIMITATIONS:74 |
 | CONVERT atm | Fixed: 101325.1 Pa | Matches ODF 1.4 table | Fixed in Milestone C; KNOWN-LIMITATIONS:72 |
-| INDEX row-vector single-arg | Fixed: error per ODF 1.4 | Error (ODF 1.4 removed rule) | Fixed in Milestone A; KNOWN-LIMITATIONS:71 |
+| INDEX row-vector single-arg | Returns the column (legacy rule kept) | Error (ODF 1.4 removed rule) | Known deviation; the Milestone A change was reverted; KNOWN-LIMITATIONS:71 |
 | Trailing empty param (`NPER(;;)`) | error except IF | ODF 1.4 rule | KNOWN-LIMITATIONS:73 |
 | Error cells on save | written as `office:value-type="string"` | ODF 1.4 adds `error` type (no `office:error` attr) | KNOWN-LIMITATIONS producer:2 |
 
@@ -63,7 +63,7 @@ AOO does not claim the Small Group. However, the Small Group audit (`openformula
 
 - **Claimed conformance group: none.** AOO does not claim Small/Medium/Large.
 - **Confirmed missing functions: none.** All 110 Small Group functions (§2.3.2.E) are implemented. IFNA (Large Group) and SKEWP (Medium Group) were implemented in Milestone B.
-- **Confirmed semantic discrepancies vs ODF 1.4:** INDEX row-vector rule (corrected in Milestone A), CONVERT `atm` (corrected in Milestone C), EASTERSUNDAY naming alias (behavior correct).
+- **Confirmed semantic discrepancies vs ODF 1.4:** INDEX row-vector rule (kept as a known deviation; the Milestone A change was reverted), CONVERT `atm` (corrected in Milestone C), EASTERSUNDAY naming alias (behavior correct).
 - **Cannot certify any group** without runtime testing every mandatory requirement against the ODF 1.4 Part 4 normative text.
 
 ## 8. Recommended next step for conformance

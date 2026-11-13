@@ -1,6 +1,6 @@
 # OpenFormula Modernization Plan — Apache OpenOffice Calc
 
-AUDIT ONLY — no production code changes authorized in this phase. This plan is a prioritized roadmap derived from source evidence. Priority is by interoperability impact, not implementation convenience.
+Written as an audit-only plan; later milestones did change production code, see the milestone reports. This plan is a prioritized roadmap derived from source evidence. Priority is by interoperability impact, not implementation convenience.
 
 Source-of-truth: `openformula-functions.tsv`, `openformula-operators.tsv`, `openformula-semantics.md`, `openformula-odf13-14-diff.md`, `openformula-conformance.md`, `openformula-test-gap-analysis.md`.
 
@@ -23,11 +23,11 @@ Source-of-truth: `openformula-functions.tsv`, `openformula-operators.tsv`, `open
 - Files: `main/scaddins/source/analysis/analysishelper.cxx`.
 - Status: Complete.
 
-**P2.2 INDEX row-vector single-argument** — Fixed in Milestone A.
-- AOO previously returned column (legacy); ODF 1.4 requires error for single-arg row vector.
+**P2.2 INDEX row-vector single-argument** — Milestone A change reverted.
+- AOO returns the column (legacy); ODF 1.4 requires error for single-arg row vector.
 - Work: Regression-test against existing document corpus; consider compatibility option if needed.
 - Files: `main/sc/source/core/tool/interpr1.cxx` (ScIndex).
-- Status: Implemented; regression risk documented.
+- Status: Not changed. AOO keeps the legacy rule (returns the column), listed as a known deviation.
 
 **P2.3 BITAND/BITOR/BITXOR variadic & BITLSHIFT/BITRSHIFT negative shift**
 - Gap: `ScBitArithmeticOps` enforces exactly 2 params (`interpr1.cxx:1180`); `ScBitShiftOps` handles negative shift counts.
