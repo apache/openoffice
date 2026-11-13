@@ -142,6 +142,17 @@ IFNA.range	=IFNA(D1:D3;99)	cell	10	6.x range reference, implicit intersection ta
 IFNA.ref.na	=IFNA(AM1;99)	cell	99	6.x cell reference containing #N/A (AM1 = NA()), fallback returned
 IFNA.ref.err	=IFNA(AM2;99)	cell	#ERR	6.x cell reference containing another error (AM2 = 1/0), error propagated
 IFNA.ref.empty	=IFNA(AM4;99)	cell	0	6.x reference to an empty cell (AM4 unset) is not #N/A; the empty cell shows as 0
+IFNA.arr.sub	=IFNA(AN1:AN6;99)	array:1x6	5|99|s:x|99|7|#ERR	6.x array argument: each #N/A element is replaced (AN1:AN6 = 5, #N/A, x, #N/A, 7, 1/0), other errors stay
+IFNA.arr.fallback	=IFNA(AN1:AN4;D1:D4)	array:1x4	5|20|s:x|40	6.x array fallback is taken element by element (D1:D4 = 10, 20, 30, 40)
+IFNA.arr.text	=IFNA(AN1:AN4;"n")	array:1x4	5|s:n|s:x|s:n	6.x text fallback
+IFNA.arr.none	=IFNA(D1:D3;99)	array:1x3	10|20|30	6.x array without #N/A is returned unchanged
+IFNA.arr.lazy	=IFNA(D1:D3;1/0)	array:1x3	10|20|30	6.x fallback not evaluated when no element is #N/A
+IFNA.arr.fallerr	=IFNA(AN1:AN2;1/0)	array:1x2	5|#ERR	6.x fallback evaluated only for the #N/A element
+IFNA.arr.inline	=IFNA({1;2|3;4};9)	array:2x2	1|2|3|4	6.x inline array without #N/A
+IFNA.arr.sum	=SUM(IFNA(AN1:AN4;0))	array	5	6.x IFNA inside SUM in an array formula; the text element is ignored by SUM
+IFNA.arr.nested	=IFNA(IFNA(AN1:AN4;AN1:AN4);0)	array:1x4	5|0|s:x|0	6.x nested: the inner fallback is #N/A again and the outer IFNA replaces it
+IFNA.arr.inif	=IF(D1:D3>15;IFNA(AN2:AN4;1);0)	array:1x3	0|s:x|1	6.x IFNA array in an IF path (AN2:AN4 = #N/A, x, #N/A)
+IFNA.arr.sumprod	=SUMPRODUCT(IFNA(AN1:AN2+0;100))	cell	-	6.x record only: whether the force-array context reaches the operator inside IFNA
 SKEWP.two	=SKEWP(1;2)	cell	0	6.x two observations, non-constant, zero skewness
 SKEW.text	=SKEW(1;"text";2)	cell	-	6.3.7 a direct Text argument converts as in 6.3.5, implementation-defined (0 or an Error); AOO returns an Error
 SKEW.err	=SKEW(1/0)	cell	#ERR	6.x regression: error argument propagates

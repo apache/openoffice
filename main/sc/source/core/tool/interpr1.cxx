@@ -349,9 +349,70 @@ void ScInterpreter::ScIfna()
         }
         break;
         case svRefList :
-        case svMatrix :
             // No per-element #N/A substitution, the value passes through.
         break;
+        case svMatrix :
+        {
+            ScMatrixRef pMat = PopMatrix();
+            SCSIZE nCols = 0, nRows = 0;
+            if ( pMat )
+                pMat->GetDimensions( nCols, nRows );
+            if ( !nCols || !nRows )
+            {
+                PushIllegalParameter();
+                aCode.Jump( pJump[ 2 ], pJump[ 2 ] );
+                return;
+            }
+            FormulaTokenRef xNew;
+            ScTokenMatrixMap::const_iterator aMapIter;
+            if ( pTokenMatrixMap && ((aMapIter = pTokenMatrixMap->find( pCur )) != pTokenMatrixMap->end()) )
+                xNew = (*aMapIter).second;
+            else
+            {
+                bool bAnyNA = false;
+                for ( SCSIZE nC = 0; nC < nCols && !bAnyNA; ++nC )
+                    for ( SCSIZE nR = 0; nR < nRows && !bAnyNA; ++nR )
+                        bAnyNA = pMat->IsValue( nC, nR ) && pMat->GetError( nC, nR ) == NOTAVAILABLE;
+                if ( !bAnyNA )
+                {
+                    // nothing to substitute, the fallback is not evaluated
+                    PushMatrix( pMat );
+                    aCode.Jump( pJump[ 2 ], pJump[ 2 ] );
+                    return;
+                }
+                // DoubleError handled by JumpMatrix
+                pMat->SetErrorInterpreter( NULL );
+                ScJumpMatrix* pJumpMat = new ScJumpMatrix( nCols, nRows );
+                pJumpMat->SetKeepNoPath();
+                ScMatrix* pRes = pJumpMat->GetResultMatrix();
+                for ( SCSIZE nC = 0; nC < nCols; ++nC )
+                {
+                    for ( SCSIZE nR = 0; nR < nRows; ++nR )
+                    {
+                        if ( pMat->IsValue( nC, nR ) && pMat->GetError( nC, nR ) == NOTAVAILABLE )
+                            pJumpMat->SetJump( nC, nR, 1.0, pJump[ 1 ], pJump[ 2 ] );
+                        else
+                        {
+                            ScMatValType nType = 0;
+                            const ScMatrixValue* pMatVal = pMat->Get( nC, nR, nType );
+                            if ( ScMatrix::IsValueType( nType ) )
+                                pRes->PutDouble( pMatVal->fVal, nC, nR );
+                            else if ( ScMatrix::IsRealStringType( nType ) )
+                                pRes->PutString( pMat->GetString( nC, nR ), nC, nR );
+                            else
+                                pRes->PutEmpty( nC, nR );
+                            pJumpMat->SetJump( nC, nR, 1.0, pJump[ 2 ], pJump[ 2 ] );
+                        }
+                    }
+                }
+                xNew = new ScJumpMatrixToken( pJumpMat );
+                GetTokenMatrixMap().insert( ScTokenMatrixMap::value_type( pCur, xNew ) );
+            }
+            PushTempToken( xNew );
+            // set endpoint of path for main code line
+            aCode.Jump( pJump[ 2 ], pJump[ 2 ] );
+            return;
+        }
         default:
             if ( nGlobalError == NOTAVAILABLE || (GetStackType() == svError &&
                         pStack[ sp - 1 ]->GetError() == NOTAVAILABLE) )
@@ -636,7 +697,9 @@ bool ScInterpreter::JumpMatrix( short nStackLevel )
             if ( pResMat )
             {
                 // a sal_False without path results in an empty path value
-                if ( fBool == 0.0 )
+                if ( pJumpMatrix->IsKeepNoPath() )
+                    ;   // result already in place
+                else if ( fBool == 0.0 )
                     pResMat->PutEmptyPath( nC, nR );
                 else
                     pResMat->PutDouble( fBool, nC, nR );
