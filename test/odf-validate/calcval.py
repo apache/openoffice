@@ -150,6 +150,8 @@ def setup_data(doc):
     put("AV1", [["Score", "Age"], ["25", None], [None, "50"]])
     put("AX11", [["K", "V"], ["a", 1], ["b", 2], ["c", 3]])
     put("AZ11", [["K"], [None]])
+    put("BB1", [["K", "V"], ["a", 1], [None, 2], [None, None], ["c", 3]])
+    put("BD1", [["K"], ["="]])
     return sh
 
 

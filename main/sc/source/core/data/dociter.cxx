@@ -688,10 +688,28 @@ SCSIZE ScDBQueryDataIterator::DataAccessInternal::countRecords()
     // getCurrent() only visits rows that have a cell in column nCol.
     ScQueryParam aParam(*mpParam);
     SCROW nFirstRow = mpParam->bHasHeader ? mpParam->nRow1 + 1 : mpParam->nRow1;
-    SCSIZE nCount = 0;
-    for (SCROW nR = nFirstRow; nR <= mpParam->nRow2; ++nR)
+    SCROW nLastRow = mpParam->nRow2;
+    if (nFirstRow > nLastRow)
+        return 0;
+    // A row without any content in the database columns is not a record.
+    ::std::vector<bool> aHasContent(nLastRow - nFirstRow + 1, false);
+    for (SCCOL nC = mpParam->nCol1; nC <= mpParam->nCol2; ++nC)
     {
-        if (ScDBQueryDataIterator::IsQueryValid(*mpDoc, aParam, nTab, nR, NULL))
+        SCSIZE nCellCount = mpDoc->GetCellCount(nTab, nC);
+        for (SCSIZE i = ScDBQueryDataIterator::SearchColEntryIndex(*mpDoc, nTab, nFirstRow, nC); i < nCellCount; ++i)
+        {
+            SCROW nThisRow = ScDBQueryDataIterator::GetRowByColEntryIndex(*mpDoc, nTab, nC, i);
+            if (nThisRow > nLastRow)
+                break;
+            ScBaseCell* pCell = ScDBQueryDataIterator::GetCellByColEntryIndex(*mpDoc, nTab, nC, i);
+            if (nThisRow >= nFirstRow && pCell && pCell->GetCellType() != CELLTYPE_NOTE)
+                aHasContent[nThisRow - nFirstRow] = true;
+        }
+    }
+    SCSIZE nCount = 0;
+    for (SCROW nR = nFirstRow; nR <= nLastRow; ++nR)
+    {
+        if (aHasContent[nR - nFirstRow] && ScDBQueryDataIterator::IsQueryValid(*mpDoc, aParam, nTab, nR, NULL))
             ++nCount;
     }
     return nCount;
@@ -758,7 +776,10 @@ SCSIZE ScDBQueryDataIterator::DataAccessMatrix::countRecords()
     SCSIZE nCount = 0;
     for (SCROW nR = mpParam->bHasHeader ? 1 : 0; nR < mnRows; ++nR)
     {
-        if (isValidQuery(nR, rMat))
+        bool bHasContent = false;
+        for (SCCOL nC = 0; nC < mnCols && !bHasContent; ++nC)
+            bHasContent = !rMat.IsEmpty(nC, nR);
+        if (bHasContent && isValidQuery(nR, rMat))
             ++nCount;
     }
     return nCount;
