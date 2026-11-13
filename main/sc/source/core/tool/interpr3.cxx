@@ -3057,21 +3057,6 @@ bool ScInterpreter::CalculateSkew(double& fSum,double& fCount,double& vSum,std::
                 }
             }
             break;
-            case formula::svString:
-            {
-                // Skip text values (consistent with range/matrix handling;
-                // NumberSequence excludes text).
-                PopString();
-            }
-            break;
-            case formula::svError:
-            {
-                // Propagate the original error code instead of replacing it
-                // with errIllegalParameter.
-                PopError();
-                return false;
-            }
-            break;
             default :
                 SetError(errIllegalParameter);
             break;
