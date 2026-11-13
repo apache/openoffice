@@ -181,6 +181,11 @@ DB.DCOUNT.nf.inline	=DCOUNT({"Name";"Age";"Score"|"A";20;5|"B";30;"n/a"|"C";40;1
 DB.DCOUNTA.nf.inline	=DCOUNTA({"Name";"Age";"Score"|"A";20;5|"B";30;"n/a"|"C";40;15|"D";50;"x"|"E";60;25};;Y1:Y2)	cell	1	6.9.4 Field omitted, inline array as the database: Name A matches one record
 DB.DCOUNT.nf.nocrit	=DCOUNT(AX11:AY14;;AZ11:AZ12)	cell	-	Field omitted, criteria cell empty (AZ12). 4.11.11 reads an empty criterion as 0 (no match); AOO ignores empty criteria (known deviation, see DCOUNT.emptycrit). Record only
 DB.DCOUNT.f.nocrit	=DCOUNT(AX11:AY14;"V";AZ11:AZ12)	cell	-	Same as DB.DCOUNT.nf.nocrit with field V. Record only
+DB.DCOUNT.nf.ne.blank	=DCOUNT(R1:T10;;AP1:AP2)	cell	4	6.9.3 Field omitted; R1:T10 has four blank rows below the data; a row with no content is not a record: B,C,D,E
+DB.DCOUNT.nf.eq.blank	=DCOUNT(R1:T10;;AQ1:AQ2)	cell	1	6.9.3 Field omitted; Score "=" matches D, not the blank rows
+DB.DCOUNTA.nf.ne.blank	=DCOUNTA(R1:T10;;AP1:AP2)	cell	4	6.9.4 Field omitted; same record count with blank rows
+DB.DCOUNT.nf.ne.col	=DCOUNT(R1:T1048576;;AP1:AP2)	cell	4	6.9.3 Field omitted; whole-column database range, the blank rows below the data are not records
+DB.DCOUNT.nf.eq.gap	=DCOUNT(BB1:BC5;;BD1:BD2)	cell	1	6.9.3 Field omitted; K "="; row 3 has K empty and V 2 (a record), row 4 is blank (not a record)
 BITAND.3params	=BITAND(6;3;1)	cell	#ERR	6.6.2 BITAND exactly 2 params enforced
 
 # OpenFormula Small Group: basic limits, syntax, operators and conversions (ODF 1.4 Part 4 sections 3.7, 5, 6.3, 6.4).
