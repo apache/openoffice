@@ -325,84 +325,51 @@ void ScInterpreter::ScIfna()
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScIfna" );
     const short* pJump = pCur->GetJump();
+    bool bIsNA = false;
+    MatrixDoubleRefToMatrix();
+    // the value path keeps the format of the value
+    nFuncFmtType = nCurFmtType;
+    nFuncFmtIndex = nCurFmtIndex;
 
     switch ( GetStackType() )
     {
-        case formula::svError:
+        case svSingleRef :
+        case svDoubleRef :
         {
-            // Direct error value on stack (e.g. NA() or 1/0).
-            // Peek without popping: if #N/A, discard and jump to fallback;
-            // otherwise leave on stack and jump to end (propagate error).
-            if ( pStack[sp-1]->GetError() == NOTAVAILABLE )
-            {
-                --sp;  // discard #N/A without touching nGlobalError
-                aCode.Jump( pJump[ 1 ], pJump[ 2 ] );
-            }
-            else
-            {
-                aCode.Jump( pJump[ 2 ], pJump[ 2 ] );
-            }
-        }
-        break;
-
-        case formula::svSingleRef :
-        case formula::svDoubleRef :
-        {
-            // Reference: resolve to a single cell (implicit intersection for
-            // ranges) and check whether the cell contains #N/A.
             ScAddress aAdr;
-            if ( !PopDoubleRefOrSingleRef( aAdr ) )
-            {
-                // Reference resolution failed: propagate error, jump to end.
-                aCode.Jump( pJump[ 2 ], pJump[ 2 ] );
-            }
+            PopDoubleRefOrSingleRef( aAdr );
+            if ( nGlobalError == NOTAVAILABLE )
+                bIsNA = true;
             else if ( nGlobalError )
-            {
-                // Error resolving reference: propagate, jump to end.
-                aCode.Jump( pJump[ 2 ], pJump[ 2 ] );
-            }
+                PushError( nGlobalError );
+            else if ( GetCellErrCode( GetCell( aAdr ) ) == NOTAVAILABLE )
+                bIsNA = true;
             else
-            {
-                ScBaseCell* pCell = GetCell( aAdr );
-                sal_uInt16 nErr = GetCellErrCode( pCell );
-                if ( nErr == NOTAVAILABLE )
-                {
-                    // Cell contains #N/A: jump to fallback.
-                    aCode.Jump( pJump[ 1 ], pJump[ 2 ] );
-                }
-                else if ( nErr )
-                {
-                    // Cell contains another error: push it, jump to end.
-                    PushError( nErr );
-                    aCode.Jump( pJump[ 2 ], pJump[ 2 ] );
-                }
-                else
-                {
-                    // Cell has a value: push it, jump to end.
-                    PushCellResultToken( true, aAdr, NULL, NULL );
-                    aCode.Jump( pJump[ 2 ], pJump[ 2 ] );
-                }
-            }
+                PushCellResultToken( false, aAdr, &nFuncFmtType, &nFuncFmtIndex );
         }
         break;
-
-        case formula::svRefList :
-        case formula::svMatrix:
-        {
-            // Reference list or matrix input: IFNA is not an array-forcing
-            // function.  Return the value as-is; per-element #N/A
-            // substitution is not implemented.  This is a documented
-            // limitation (see openformula-milestone-b-report.md).
-            aCode.Jump( pJump[ 2 ], pJump[ 2 ] );
-        }
+        case svRefList :
+        case svMatrix :
+            // No per-element #N/A substitution, the value passes through.
         break;
-
         default:
-        {
-            // Regular value (double, string, logical, etc.): not #N/A.
-            aCode.Jump( pJump[ 2 ], pJump[ 2 ] );
-        }
+            if ( nGlobalError == NOTAVAILABLE || (GetStackType() == svError &&
+                        pStack[ sp - 1 ]->GetError() == NOTAVAILABLE) )
+            {
+                Pop();
+                bIsNA = true;
+            }
     }
+
+    if ( bIsNA )
+    {
+        nGlobalError = 0;
+        nFuncFmtType = NUMBERFORMAT_NUMBER;
+        nFuncFmtIndex = 0;
+        aCode.Jump( pJump[ 1 ], pJump[ 2 ] );
+    }
+    else
+        aCode.Jump( pJump[ 2 ], pJump[ 2 ] );
 }
 
 void lcl_AdjustJumpMatrix( ScJumpMatrix* pJumpM, ScMatrixRef& pResMat, SCSIZE nParmCols, SCSIZE nParmRows )
