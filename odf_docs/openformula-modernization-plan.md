@@ -102,5 +102,5 @@ Source-of-truth: `openformula-functions.tsv`, `openformula-operators.tsv`, `open
 
 - Corrected Small Group Basic Limits tests: `SG-BL-001` uses a 1026-char formula expression (expected 513), `SG-BL-004` uses 7 genuinely nested IF levels.
 - Added `SG-SYN-001` (Criteria syntax §4.11.11) and documented `SG-SYN-009` named-expression harness dependency (`MYNAME`).
-- Updated COUNTA/COUNTBLANK and DATE out-of-constraint fixtures/classifications in `openformula-small-group-1.4.tsv`, `test/odf-validate/openformula-small-group-1.4.tsv`, and `test/odf-validate/calcval-cases14.tsv`.
+- Updated COUNTA/COUNTBLANK and DATE out-of-constraint fixtures/classifications in `openformula-small-group-1.4.tsv`, `odf_docs/openformula-small-group-1.4-tests.tsv`, and `test/odf-validate/calcval-cases14.tsv`.
 - No runtime verification performed (no build; calcval macOS-only).

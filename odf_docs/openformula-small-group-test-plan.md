@@ -10,7 +10,7 @@ milestones are complete. No production evaluator changes are made in this milest
 
 | File | Purpose |
 |------|---------|
-| `test/odf-validate/openformula-small-group-1.4.tsv` | Requirement-referenced test inventory (148 ReqIDs; includes E.1 corrections and added `SG-SYN-001` criteria test) |
+| `odf_docs/openformula-small-group-1.4-tests.tsv` | Requirement-referenced test inventory (148 ReqIDs; includes E.1 corrections and added `SG-SYN-001` criteria test) |
 | `test/odf-validate/calcval-cases14.tsv` | Existing calcval cases, extended with Small Group semantic tests |
 | `openformula-small-group-test-plan.md` | This document: execution instructions and outstanding runtime requirements |
 
