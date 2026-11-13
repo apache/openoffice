@@ -4034,7 +4034,12 @@ StackVar ScInterpreter::Interpret()
         nRetFmtIndex = 0;
 
     if (nGlobalError && GetStackType() != svError )
+    {
+        // after errStackOverflow the push would fail and a stale value become the result
+        if ( sp >= MAXSTACK )
+            Pop();
         PushError( nGlobalError);
+    }
 
     // THE final result.
     xResult = PopToken();

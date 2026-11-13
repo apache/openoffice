@@ -41,7 +41,7 @@
 
 
 #define MAXJUMPCOUNT 32     /* maximum number of jumps (ocChose) */
-#define MAXCODE      512    /* maximum number of tokens in formula */
+#define MAXCODE      2048   /* maximum number of tokens in formula */
 
 
 namespace com { namespace sun { namespace star {
