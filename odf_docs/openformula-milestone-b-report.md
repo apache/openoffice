@@ -167,6 +167,11 @@ At runtime, `ScInterpreter::ScIfna()` (`interpr1.cxx:324`):
 
 ### Documented limitation: matrix handling
 
+**Update:** a matrix argument is now substituted per element through a jump matrix, so
+`{=IFNA(A1:A3;0)}` and `{=SUM(IFNA(A1:A3;0))}` work. A plain range outside an array
+formula, e.g. `SUMPRODUCT(IFNA(A1:A3;0))`, still takes the first cell. The text below is the
+original limitation.
+
 IFNA is not an array-forcing function in OpenFormula 1.4. When `value` is a
 matrix, the current implementation returns the matrix as-is without
 per-element #N/A substitution. Implementing full element-wise IFNA would
