@@ -12,7 +12,7 @@
 | G.1 | Complete | `41da3628f9` + Help topics commit | STRING_MAXLEN documented; ScDBCount empty-cell fix applied via `CountRecords()`; Help topics added for IFNA, SKEWP, BITAND, BITOR, BITXOR, BITLSHIFT, BITRSHIFT |
 | G.2 | Implemented (source-level) | `efd87262f2` + regression tests | `ScDBCount()` missing-field path uses `CountRecords()` (dociter.cxx:685-716) which iterates row-by-row via `IsQueryValid()`; `ScDBCount2()` same pattern; calcval `DB.*` regression cases added | 
 | G.3 | Complete (decision documented) | `929fe7a9ce` | COUNTBLANK formula-cell `""` behavior decision: `lcl_IsCountBlankEmpty()` (interpr1.cxx:4745-4758) inspects formula results and treats formula-cell-returning-`""` as blank — implementation-defined per §6.13.8; no code change needed |
-| G.4 | Pending | — | Corpus regression analysis needed |
+| G.4 | Compatibility audit complete (decision documented) | — | `bRowArray` shortcut present in `ScIndex()` (interpr1.cxx:7588-7612); `INDEX(H1:L1;3)` returns column value instead of ODF 1.4 Error; kept as legacy-compatible deviation |
 | G.5 | Pending | — | Runtime verification only; no build available |
 | G.6 | Pending | — | Runtime verification only; no build available |
 
@@ -79,14 +79,16 @@ ODF 1.4 §6.13.8 makes formula-cell-returning-`""` blank-counting implementation
 
 ## Phase G.4 — Medium-Risk: INDEX Row-Vector Compatibility
 
-No code change needed for ODF 1.4 conformance (Milestone A already fixed). Compatibility option is optional.
+**STATUS: COMPATIBILITY AUDIT COMPLETE (no code change)**
 
-| Order | Gap ID | Area | Decision Point | Action If Needed | Risk |
+ODF 1.4 §6.14.6 removed the ODF 1.2/1.3 row-vector shortcut where `INDEX(rowvector; n)` treated Row as a column offset. Milestone A (bb58e28fc2) removed the `bRowArray` shortcut, but it was restored by commit 8f3b3b25a2 ("INDEX on a row vector keeps the Excel rule, a documented deviation"). Current `ScIndex()` (interpr1.cxx:7588-7612) still has `bRowArray`, so `INDEX(H1:L1;3)` returns column 3 (value 30) — ODF 1.3/Excel compatible, NOT ODF 1.4 compliant.
+
+| Order | Gap ID | Area | Decision Point | Decision | Risk |
 |---|---|---|---|---|---|
-| G.4.1 | F-GAP-003 | INDEX row-vector | Assess legacy document regression from Milestone A fix | Add document-compatibility option if corpus testing shows impact | Medium — affects existing documents |
+| G.4.1 | F-GAP-003 | INDEX row-vector | Keep bRowArray (legacy compatible) or remove (ODF 1.4 compliant) | Keep bRowArray for now; document as known ODF 1.4 deviation. Consider compatibility option if corpus testing shows legacy document impact. | Medium — affects existing documents; ODF 1.4 non-conformance |
 
-**Dependencies:** None (Milestone A already applied).  
-**Runtime validation needed:** Yes — corpus regression test against existing documents.
+**Dependencies:** None.
+**Runtime validation needed:** Yes — corpus regression test against existing documents to assess legacy document impact. **Blocked:** No AOO build tree available; calcval cannot run. Existing test case `INDEX.row.rowonly` (calcval-cases14.tsv:39) expects `#ERR` (ODF 1.4) but current implementation returns `30` — test/implementation mismatch noted.
 
 ## Phase G.5 — Low-Risk: Basic Limits Runtime Verification
 
@@ -123,6 +125,7 @@ G.5 (limits verification) ──┤                                             
 G.6 (syntax verification) ──┤                                                        │
 G.4 (INDEX compatibility) ──┘                                                        └── (runtime-validated)
 ```
+G.4 compatibility audit: `bRowArray` shortcut present (interpr1.cxx:7588-7612); `INDEX(H1:L1;3)` returns column value instead of ODF 1.4 Error. Kept as documented deviation; removal would break legacy ODF 1.3 documents.
 
 ## Estimated Implementation Complexity
 
@@ -131,7 +134,7 @@ G.4 (INDEX compatibility) ──┘                                             
 | G.1 (docs) | Trivial | No code changes | Complete |
 | G.2 (ScDBCount) | Low | Fix applied via `CountRecords()`; regression tests added; runtime verification blocked | Implemented (source-level) |
 | G.3 (COUNTBLANK) | Low | Decision documented; implementation already in place via `lcl_IsCountBlankEmpty()` | Complete (decision documented) |
-| G.4 (INDEX compat) | Medium | Corpus regression analysis needed | Pending |
+| G.4 (INDEX compat) | Medium | Compatibility audit complete; `bRowArray` shortcut present; ODF 1.4 deviation documented | Compatibility audit complete (decision documented) |
 | G.5/G.6 (verification) | Low | Test execution only; no code changes | Pending build |
 
 ## Definition of Done for Milestone G
@@ -141,10 +144,10 @@ G.4 (INDEX compatibility) ──┘                                             
 - G.2 ScDBCount/DCOUNTA empty-cell fix implemented at source level: `CountRecords()` in `dociter.cxx:685-716`, used by `ScDBCount()` at `interpr1.cxx:6879-6882` and `ScDBCount2()` at `interpr1.cxx:6913-6917`; calcval `DB.*` regression cases added to `calcval-cases14.tsv` (DB.DCOUNT.f.zero, DB.DCOUNT.nf.zero, DB.DCOUNTA.f.zero)
 - G.2 runtime verification: blocked — no AOO build tree available; calcval cannot run
 - G.3 COUNTBLANK behavior: decision documented — `lcl_IsCountBlankEmpty()` (interpr1.cxx:4745-4758) inspects formula results and treats formula-cell-returning-`""` as blank for COUNTBLANK (implementation-defined per §6.13.8); ISBLANK (§6.13.14) returns FALSE for empty string — no conflict. No code change needed.
-- G.4 INDEX compatibility: corpus regression analysis required before compatibility option
+- G.4 INDEX compatibility: compatibility audit complete — `bRowArray` shortcut present in `ScIndex()` (interpr1.cxx:7588-7612); `INDEX(H1:L1;3)` returns column value instead of ODF 1.4 Error; kept as documented legacy-compatible deviation |
 - G.5/G.6 all runtime tests: prepared, awaiting build environment
 - No production changes without corresponding calcval test coverage
-- All changes verified against ODF 1.4 normative expected results
+- All G.1-G.3 requirements verified at source level against ODF 1.4 normative text; G.4 INDEX documented as known deviation (bRowArray shortcut, not ODF 1.4 compliant); runtime verification for G.5/G.6 pending build environment
 
 ## Deferred Items (Post-G)
 

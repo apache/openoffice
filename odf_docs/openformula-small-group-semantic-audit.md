@@ -103,11 +103,23 @@ None required for ODF 1.4 conformance. The implementation-defined behavior for f
 
 ### Normative Requirement
 
-ODF 1.4 §6.14.6: `INDEX` with a single row argument on a single-row range (row vector) returns an error. The ODF 1.3 rule allowing the Row argument to act as a column offset for row vectors was removed.
+**ODF 1.4 §6.14.6:** `INDEX( ReferenceList|Array DataSource ; [ Integer Row ] [ ; [ Integer Column ] ] [ ; Integer AreaNumber = 1 ] )`. Row and Column are 1-based, relative to the top-left of DataSource. If Row is omitted/empty/0, an entire column is returned. If Column is omitted/empty/0, an entire row is returned. If Row or Column exceeds the dimension of the area, an Error is returned. There is NO special row-vector shortcut: `INDEX(H1:L1;3)` (Row=3 on a 1-row range) returns an Error.
+
+**ODF 1.2 (§6.14.6):** Had an explicit row-vector shortcut: "If DataSource is a one-dimensional row vector, Row is optional, which effectively makes Row act as the column offset into the vector." This text was deleted in ODF 1.4 (OASIS issue OFFICE-4144, fixed in ODF 1.4).
+
+**ODF 1.3 (§6.14.6):** "If DataSource is a one-dimensional row vector, Row is optional, which effectively makes Row act as the column offset into the vector." Retained the ODF 1.2 row-vector shortcut. Confirmed via direct ODF 1.3 spec text.
+
+**Version comparison:**
+
+| Specification | Relevant rule | `INDEX(H1:L1;3)` interpretation | Evidence |
+|---|---|---|---|
+| ODF 1.2 | Row acts as column offset on single-row range | Returns column 3 (value 30) | OFFICE-4144 "Delete" text (ODF 1.2 §6.14.6) |
+| ODF 1.3 | "If DataSource is a one-dimensional row vector, Row is optional, which effectively makes Row act as the column offset into the vector" | Returns column 3 (value 30) | ODF 1.3 §6.14.6 (§6.14.6 INDEX, part 4-formula) |
+| ODF 1.4 | Row and Column both 1-based; Row > dimension → Error | Error (Row=3 > 1 row dimension) | ODF 1.4 §6.14.6 (lines 7637-7639 of spec) |
 
 ### AOO Implementation Location
 
-- `ScIndex()` — `main/sc/source/core/tool/interpr1.cxx:7419`
+- `ScIndex()` — `main/sc/source/core/tool/interpr1.cxx:7448`
 - Dispatch: `interpr4.cxx:3650` (ocIndex → ScIndex)
 - Declaration: `main/sc/source/core/inc/interpre.hxx:564`
 - Parameter class: `main/sc/source/core/tool/parclass.cxx:123` (`ocIndex: {{ Reference, Value, Value, Value }, 0}`)
@@ -129,38 +141,42 @@ Then `switch(GetStackType())`:
 | `svSingleRef` | `if (nCol > 1 || nRow > 1) PushIllegalArgument();` — single cell, only row/col 0 or 1 valid |
 | `svDoubleRef` / `svRefList` | Full range bounds checking; returns sub-reference or single cell |
 
-### Before and After Milestone A (commit bb58e28fc2)
+### Historical Implementation — bRowArray Shortcut
 
-**Before Milestone A:** A `bRowArray` flag was set when `nParamCount == 2 && nRow1 == nRow2` (single-row range with row argument). This caused:
-- Row bounds check to be skipped: `(nRow > 0 && nRow1+nRow-1 > nRow2 && !bRowArray)`
+**Milestone A** (commit bb58e28fc2): Removed the `bRowArray` shortcut from `ScIndex()`, making `INDEX(H1:L1;3)` return an error per ODF 1.4.
+
+**Undo** (commit 8f3b3b25a2): Restored the `bRowArray` shortcut, with commit message "INDEX on a row vector keeps the Excel rule, a documented deviation."
+
+**Current state:** `bRowArray` IS present in `main/sc/source/core/tool/interpr1.cxx:7588-7612`. When `nParamCount == 2 && nRow1 == nRow2` (single-row range with row argument):
+- Row bounds check is skipped: `(nRow > 0 && nRow1+nRow-1 > nRow2 && !bRowArray)`
 - Alternative row bounds: `(nRow > nCol2 - nCol1 + 1 && bRowArray)` — checked against column width
 - Row argument reinterpreted as column: `nCol = (SCCOL) nRow; nRow = 1;`
 
-Effect: `INDEX(H1:L1;3)` returned the 3rd column (value 30) instead of an error.
-
-**After Milestone A:** All `bRowArray` logic removed. `INDEX(H1:L1;3)` now:
-- nCol=0, nRow=3
-- svDoubleRef path: `(nRow > 0 && nRow1+nRow-1 > nRow2)` → `(3 > 0 && 1+3-1 > 1)` → true → `PushIllegalArgument()` → error
-
-This matches ODF 1.4 §6.14.6.
+Effect: `INDEX(H1:L1;3)` returns the 3rd column (value 30) — ODF 1.3/Excel compatible, NOT ODF 1.4 compliant.
 
 ### Conformance Classification
 
-**Required by ODF 1.4** — Fixed in Milestone A. `INDEX(H1:L1;3)` returns error as required.
+**Required by ODF 1.4** — NOT currently conformant. `bRowArray` shortcut was removed in Milestone A (bb58e28fc2) but restored in the undo commit (8f3b3b25a2). `INDEX(H1:L1;3)` returns a value (30) instead of an Error as required by ODF 1.4 §6.14.6.
 
 ### Known Compatibility Risks
 
-- Legacy ODF 1.3 documents relying on `INDEX(rowvector; n)` returning column n will now get an error. Regression risk for document compatibility.
-- Compatibility handling can be isolated: the fix is localized to `ScIndex()`; no other code paths depend on `bRowArray`.
+- **ODF 1.4 non-conformance:** `INDEX(H1:L1;3)` returns column 3 value instead of Error.
+- **Legacy ODF 1.3 documents:** Documents relying on `INDEX(rowvector; n)` returning column n will break if bRowArray is removed.
+- **Test mismatch:** calcval test `INDEX.row.rowonly` expects `#ERR` (ODF 1.4) but current implementation returns `30` (ODF 1.3) via bRowArray.
 
 ### Recommended Implementation Changes
 
-None needed for ODF 1.4 conformance. Consider a document-compatibility option if legacy document regression is observed (out of scope for this milestone).
+None for this milestone (compatibility audit only). Two options exist:
+
+1. **Remove bRowArray** — ODF 1.4 compliant, breaks legacy ODF 1.3 documents using `INDEX(rowvector; n)`.
+2. **Keep bRowArray** — Legacy compatible, but not ODF 1.4 conformant; document as a known deviation.
+
+A document-compatibility option (version-aware or import-time handling) could be considered if corpus testing shows significant legacy document impact. This is out of scope for G.4.
 
 ### Suggested Regression Tests
 
-- `INDEX(H1:L1;3)` → error (single-arg row vector)
-- `INDEX(H1:L1;;3)` → column value (column-only arg)
+- `INDEX(H1:L1;3)` → value 30 (current bRowArray behavior) / error (ODF 1.4)
+- `INDEX(H1:L1;;3)` → column value 30 (column-only arg)
 - `INDEX(D1:D5;6)` → error (row out of range)
 - `INDEX(D1:F3;2;3)` → 2D result
 
@@ -308,7 +324,7 @@ None required. The ScDBCount empty-cell fix (F-GAP-004) is implemented at source
 | Basic Limits (§3.7) | 4 | Unverifiable statically; no hard limits found |
 | Syntax (§5) | 11 | Implementation present; runtime-unverified |
 | COUNTA/COUNTBLANK (§6.13.7-8) | 2 | Fully matches; formula-cell `""` treated as blank per implementation-defined choice (§6.13.8) |
-| INDEX (§6.14.6) | 1 | ODF 1.4 compliant after Milestone A; regression risk |
+| INDEX (§6.14.6) | 1 | NOT ODF 1.4 compliant — bRowArray shortcut present (undone by commit 8f3b3b25a2); INDEX(H1:L1;3) returns value instead of Error |
 | Criteria Syntax (§4.11.11) | 1 | Implemented; ScDBCount empty-cell fix applied (source-level; runtime-unverified) |
 | Operators (§6.4) | 14 | Implementation present; runtime-unverified |
 | Functions (§2.3.2.E) | 110 | Implementation present; runtime-unverified |
