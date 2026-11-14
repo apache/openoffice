@@ -153,6 +153,11 @@ FALSE is returned if the result of this addition is 0.<comment>UFI: first try to
 <paragraph xml-lang="en-US" id="par_id3155371K" role="paragraph" l10n="U"><item type="input">=XOR(12&lt;11;13&gt;22;10)</item> returns TRUE since this converts to (1+0+10) mod 2 = 0</paragraph>
 <paragraph xml-lang="en-US" id="par_id3158412K" role="paragraph" l10n="U"><item type="input">=XOR(FALSE;TRUE)</item> returns TRUE.</paragraph>
 </section>
+<section id="ifna">
+<paragraph role="paragraph" id="par_idIFNA01" xml-lang="en-US" l10n="NEW">
+<embedvar href="text/scalc/01/func_ifna.xhp#ifna"/>
+</paragraph>
+</section>
 </sort>
 <section id="relatedtopics">
 <embed href="text/scalc/01/04060100.xhp#drking"/>

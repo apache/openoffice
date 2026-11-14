@@ -191,6 +191,11 @@ XHPFILES = \
    12120200.xhp \
    12120300.xhp \
    format_graphic.xhp \
+   func_bitand.xhp \
+   func_bitlshift.xhp \
+   func_bitor.xhp \
+   func_bitrshift.xhp \
+   func_bitxor.xhp \
    func_date.xhp \
    func_datevalue.xhp \
    func_day.xhp \
@@ -200,11 +205,13 @@ XHPFILES = \
    func_edate.xhp \
    func_eomonth.xhp \
    func_hour.xhp \
+   func_ifna.xhp \
    func_minute.xhp \
    func_month.xhp \
    func_networkdays.xhp \
    func_now.xhp \
    func_second.xhp \
+   func_skewp.xhp \
    func_time.xhp \
    func_timevalue.xhp \
    func_today.xhp \
