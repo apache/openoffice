@@ -236,6 +236,13 @@ LINKLINKFILES= \
    text$/scalc$/01$/func_workday.xhp \
    text$/scalc$/01$/func_year.xhp \
    text$/scalc$/01$/func_yearfrac.xhp \
+   text$/scalc$/01$/func_bitand.xhp \
+   text$/scalc$/01$/func_bitlshift.xhp \
+   text$/scalc$/01$/func_bitrshift.xhp \
+   text$/scalc$/01$/func_bitor.xhp \
+   text$/scalc$/01$/func_bitxor.xhp \
+   text$/scalc$/01$/func_ifna.xhp \
+   text$/scalc$/01$/func_skewp.xhp \
    text$/scalc$/01$/solver.xhp \
    text$/scalc$/01$/solver_options.xhp \
    text$/scalc$/01$/text2columns.xhp \

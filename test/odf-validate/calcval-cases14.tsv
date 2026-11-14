@@ -186,6 +186,9 @@ DB.DCOUNT.nf.eq.blank	=DCOUNT(R1:T10;;AQ1:AQ2)	cell	1	6.9.3 Field omitted; Score
 DB.DCOUNTA.nf.ne.blank	=DCOUNTA(R1:T10;;AP1:AP2)	cell	4	6.9.4 Field omitted; same record count with blank rows
 DB.DCOUNT.nf.ne.col	=DCOUNT(R1:T1048576;;AP1:AP2)	cell	4	6.9.3 Field omitted; whole-column database range, the blank rows below the data are not records
 DB.DCOUNT.nf.eq.gap	=DCOUNT(BB1:BC5;;BD1:BD2)	cell	1	6.9.3 Field omitted; K "="; row 3 has K empty and V 2 (a record), row 4 is blank (not a record)
+DB.DCOUNT.f.zero	=DCOUNT({"Name";"Score"|"A";0|"B";|"C";15};"Score";{"Name";"A"|"Name";"B"})	cell	1	6.9.3 with field; numeric zero vs empty: A=0 counts as number via COUNT, B empty does not; Name=A or Name=B matches both records
+DB.DCOUNT.nf.zero	=DCOUNT({"Name";"Score"|"A";0|"B";|"C";15};;{"Name";"A"|"Name";"B"|"Name";"C"})	cell	3	6.9.3 Field omitted; numeric zero vs empty: A=0, B empty, C=15 all count as records; multi-row criteria selects all three records
+DB.DCOUNTA.f.zero	=DCOUNTA({"Name";"Score"|"A";0|"B";|"C";15};"Score";{"Name";"A"|"Name";"B"})	cell	1	6.9.4 with field; numeric zero vs empty: A=0 counts as non-empty via COUNTA, B empty does not; Name=A or Name=B matches both records
 BITAND.3params	=BITAND(6;3;1)	cell	#ERR	6.6.2 BITAND exactly 2 params enforced
 
 # OpenFormula Small Group: basic limits, syntax, operators and conversions (ODF 1.4 Part 4 sections 3.7, 5, 6.3, 6.4).

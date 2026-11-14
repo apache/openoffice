@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--***********************************************************
+ *
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ *
+ ***********************************************************-->
+
+<helpdocument version="1.0">
+<meta>
+<topic id="textscalc01func_bitlshiftxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">BITLSHIFT</title>
+<filename>/text/scalc/01/func_bitlshift.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3160501">
+<bookmark_value>BITLSHIFT function</bookmark_value>
+<bookmark_value>bitwise left shift</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_BITLSHIFT" id="bm_id3160502" localize="false"/>
+<paragraph role="heading" id="hd_id3160501" xml-lang="en-US" level="2" l10n="U"><variable id="bitlshift"><link href="text/scalc/01/func_bitlshift.xhp">BITLSHIFT</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3160503" xml-lang="en-US" l10n="U"><ahelp hid="HID_FUNC_BITLSHIFT">Bitwise left shift of an integer value.</ahelp> The bits of <emph>Number</emph> are shifted to the left by <emph>Shift</emph> positions, equivalent to multiplying by 2 raised to the power of <emph>Shift</emph>.</paragraph>
+<paragraph role="heading" id="hd_id3160504" xml-lang="en-US" level="3" l10n="U">Syntax</paragraph>
+<paragraph role="code" id="par_id3160505" xml-lang="en-US" l10n="U">BITLSHIFT(Number; Shift)</paragraph>
+<paragraph role="paragraph" id="par_id3160506" xml-lang="en-US" l10n="U"><emph>Number</emph> is the integer value to be shifted. It must be greater than or equal to 0 and less than 2^48 (281474976710656).</paragraph>
+<paragraph role="paragraph" id="par_id3160507" xml-lang="en-US" l10n="U"><emph>Shift</emph> is the number of bit positions to shift. A positive value shifts left; a negative value shifts right (the direction is reversed).</paragraph>
+<paragraph role="heading" id="hd_id3160508" xml-lang="en-US" level="3" l10n="U">Remarks</paragraph>
+<paragraph role="paragraph" id="par_id3160509" xml-lang="en-US" l10n="U">If <emph>Shift</emph> is 0, <emph>Number</emph> is returned unchanged.</paragraph>
+<paragraph role="paragraph" id="par_id3160510" xml-lang="en-US" l10n="U">If <emph>Shift</emph> is greater than or equal to 64 (or less than or equal to -64), the result is 0.</paragraph>
+<paragraph role="paragraph" id="par_id3160511" xml-lang="en-US" l10n="U"><emph>Number</emph> is truncated to an integer before the operation. Non-integer, negative, or out-of-range values for <emph>Number</emph>, or non-finite values for <emph>Shift</emph>, return an error (Err:502).</paragraph>
+<paragraph role="paragraph" id="par_id3160512" xml-lang="en-US" l10n="U">Example: decimal 1 is binary <quote>1</quote>. BITLSHIFT(1; 2) shifts left by 2, giving binary <quote>100</quote>, which is decimal 4.</paragraph>
+<paragraph role="heading" id="hd_id3160513" xml-lang="en-US" level="3" l10n="U">Example</paragraph>
+<paragraph role="paragraph" id="par_id3160514" xml-lang="en-US" l10n="U"><item type="input">=BITLSHIFT(1; 2)</item> returns 4.</paragraph>
+<paragraph role="paragraph" id="par_id3160515" xml-lang="en-US" l10n="U"><item type="input">=BITLSHIFT(1; -2)</item> returns 0 because a negative shift reverses direction and the value is shifted right, shifting the only bit out.</paragraph>
+<embed href="text/shared/00/00000001.xhp#siehe"/>
+<paragraph role="paragraph" id="par_id3160516" xml-lang="en-US" l10n="U"><link href="text/scalc/01/func_bitrshift.xhp" name="BITRSHIFT">BITRSHIFT</link>.</paragraph>
+</body>
+</helpdocument>
