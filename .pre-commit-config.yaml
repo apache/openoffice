@@ -56,7 +56,7 @@ repos:
         description: ensures that links to vcs websites are permalinks
       - id: end-of-file-fixer
         description: makes sure files end in a newline and only a newline
-        files: (m|M)akefile$|\.(asm|asp|bas|bat|c|cl|cmd|common|component|cpp|cs|cxx|dtd|dxp|el|h|hrc|hxx|idl|in|ini|java|js|lst|m|m4|map|md|mk|mm|mod|old|pas|php|pl|pm|pmk|properties|props|py|rc|rdf|rng|s|sdi|sh|src|template|ulf|vbs|xba|xcs|xcu|xdl|xhp|xlb|xmi|xml|xsd|xslt?|ya?ml)$|^ext_libraries/.*$|^test/.*$
+        files: (m|M)akefile$|\.(asm|asp|bas|bat|c|cl|cmd|common|component|cpp|cs|cxx|dtd|dxp|el|h|hrc|html|hxx|idl|in|ini|java|js|lst|m|m4|map|md|mk|mm|mod|old|pas|php|pl|pm|pmk|properties|props|py|rc|rdf|rng|s|sdi|sh|src|template|ulf|vbs|xba|xcs|xcu|xdl|xhp|xlb|xmi|xml|xsd|xslt?|ya?ml)$|^ext_libraries/.*$|^test/.*$
       - id: fix-byte-order-marker
         description: removes UTF-8 byte order marker
       - id: mixed-line-ending
