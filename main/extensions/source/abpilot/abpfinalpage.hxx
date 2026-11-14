@@ -57,7 +57,7 @@ namespace abp
 		StringBag		m_aInvalidDataSourceNames;
 
 	public:
-		FinalPage( OAddessBookSourcePilot* _pParent );
+		FinalPage( OAddressBookSourcePilot* _pParent );
 
 	protected:
 		// OWizardPage overridables

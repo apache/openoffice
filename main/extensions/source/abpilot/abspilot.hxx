@@ -36,10 +36,10 @@ namespace abp
 //.........................................................................
 
 	//=====================================================================
-	//= OAddessBookSourcePilot
+	//= OAddressBookSourcePilot
 	//=====================================================================
-	typedef ::svt::RoadmapWizard OAddessBookSourcePilot_Base;
-	class OAddessBookSourcePilot : public OAddessBookSourcePilot_Base
+	typedef ::svt::RoadmapWizard OAddressBookSourcePilot_Base;
+	class OAddressBookSourcePilot : public OAddressBookSourcePilot_Base
 	{
 	protected:
 		::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >
@@ -51,7 +51,7 @@ namespace abp
 
 	public:
 		/// ctor
-		OAddessBookSourcePilot(
+		OAddressBookSourcePilot(
 			Window* _pParent,
 			const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& _rxORB);
 
@@ -65,7 +65,7 @@ namespace abp
 
 		sal_Bool				connectToDataSource( sal_Bool _bForceReConnect );
 
-		void					travelNext( ) { OAddessBookSourcePilot_Base::travelNext(); }
+		void					travelNext( ) { OAddressBookSourcePilot_Base::travelNext(); }
 
         /// to be called when the selected type changed
         void                    typeSelectionChanged( AddressSourceType _eType );
