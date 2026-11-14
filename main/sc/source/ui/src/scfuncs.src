@@ -9509,7 +9509,7 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		String 3 // Description of Parameter 1
 		{
-			Text [ en-US ] = "Positive integer less than 2^48." ;
+			Text [ en-US ] = "Integer greater than or equal to 0 and less than 2^48 (281474976710656)." ;
 		};
 		String 4 // Name of Parameter 2
 		{
@@ -9517,7 +9517,7 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		String 5 // Description of Parameter 2
 		{
-			Text [ en-US ] = "Positive integer less than 2^48." ;
+			Text [ en-US ] = "Integer greater than or equal to 0 and less than 2^48 (281474976710656)." ;
 		};
 	};
 
@@ -9542,7 +9542,7 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		String 3 // Description of Parameter 1
 		{
-			Text [ en-US ] = "Positive integer less than 2^48." ;
+			Text [ en-US ] = "Integer greater than or equal to 0 and less than 2^48 (281474976710656)." ;
 		};
 		String 4 // Name of Parameter 2
 		{
@@ -9550,7 +9550,7 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		String 5 // Description of Parameter 2
 		{
-			Text [ en-US ] = "Positive integer less than 2^48." ;
+			Text [ en-US ] = "Integer greater than or equal to 0 and less than 2^48 (281474976710656)." ;
 		};
 	};
 
@@ -9575,7 +9575,7 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		String 3 // Description of Parameter 1
 		{
-			Text [ en-US ] = "Positive integer less than 2^48." ;
+			Text [ en-US ] = "Integer greater than or equal to 0 and less than 2^48 (281474976710656)." ;
 		};
 		String 4 // Name of Parameter 2
 		{
@@ -9583,7 +9583,7 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		String 5 // Description of Parameter 2
 		{
-			Text [ en-US ] = "Positive integer less than 2^48." ;
+			Text [ en-US ] = "Integer greater than or equal to 0 and less than 2^48 (281474976710656)." ;
 		};
 	};
 
@@ -9607,7 +9607,7 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		String 3 // Description of Parameter 1
 		{
-			Text [ en-US ] = "The value to be shifted. Positive integer." ;
+			Text [ en-US ] = "The value to be shifted. Integer greater than or equal to 0 and less than 2^48 (281474976710656)." ;
 		};
 		String 4 // Name of Parameter 2
 		{
@@ -9615,7 +9615,7 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		String 5 // Description of Parameter 2
 		{
-			Text [ en-US ] = "The number of bits the first argument is to be shifted by." ;
+			Text [ en-US ] = "The number of bit positions the first argument is shifted by. A positive value shifts left; a negative value shifts right." ;
 		};
 	};
 
@@ -9639,7 +9639,7 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		String 3 // Description of Parameter 1
 		{
-			Text [ en-US ] = "The value to be shifted. Positive integer." ;
+			Text [ en-US ] = "The value to be shifted. Integer greater than or equal to 0 and less than 2^48 (281474976710656)." ;
 		};
 		String 4 // Name of Parameter 2
 		{
@@ -9647,7 +9647,7 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		String 5 // Description of Parameter 2
 		{
-			Text [ en-US ] = "The number of bits the first argument is to be shifted by." ;
+			Text [ en-US ] = "The number of bit positions the first argument is shifted by. A positive value shifts right; a negative value shifts left." ;
 		};
 	};
 

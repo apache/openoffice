@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--***********************************************************
+ *
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ *
+ ***********************************************************-->
+
+<helpdocument version="1.0">
+<meta>
+<topic id="textscalc01func_bitandxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">BITAND</title>
+<filename>/text/scalc/01/func_bitand.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3160201">
+<bookmark_value>BITAND function</bookmark_value>
+<bookmark_value>bitwise AND</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_BITAND" id="bm_id3160202" localize="false"/>
+<paragraph role="heading" id="hd_id3160201" xml-lang="en-US" level="2" l10n="U"><variable id="bitand"><link href="text/scalc/01/func_bitand.xhp">BITAND</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3160203" xml-lang="en-US" l10n="U"><ahelp hid="HID_FUNC_BITAND">Returns the bitwise AND of two integers.</ahelp> Each bit of the result is 1 only if the corresponding bit of both arguments is 1.</paragraph>
+<paragraph role="heading" id="hd_id3160204" xml-lang="en-US" level="3" l10n="U">Syntax</paragraph>
+<paragraph role="code" id="par_id3160205" xml-lang="en-US" l10n="U">BITAND(Number1; Number2)</paragraph>
+<paragraph role="paragraph" id="par_id3160206" xml-lang="en-US" l10n="U"><emph>Number1</emph> and <emph>Number2</emph> are integers greater than or equal to 0 and less than 2^48 (281474976710656).</paragraph>
+<paragraph role="heading" id="hd_id3160207" xml-lang="en-US" level="3" l10n="U">Remarks</paragraph>
+<paragraph role="paragraph" id="par_id3160208" xml-lang="en-US" l10n="U">Arguments are truncated to integers before the operation. Non-integer, negative, or out-of-range values return an error (Err:502).</paragraph>
+<paragraph role="paragraph" id="par_id3160209" xml-lang="en-US" l10n="U">Example: decimal 6 is binary <quote>110</quote>, decimal 3 is binary <quote>011</quote>. BITAND(6; 3) returns 2 (binary <quote>010</quote>).</paragraph>
+<paragraph role="heading" id="hd_id3160210" xml-lang="en-US" level="3" l10n="U">Example</paragraph>
+<paragraph role="paragraph" id="par_id3160211" xml-lang="en-US" l10n="U"><item type="input">=BITAND(6; 3)</item> returns 2.</paragraph>
+<embed href="text/shared/00/00000001.xhp#siehe"/>
+<paragraph role="paragraph" id="par_id3160212" xml-lang="en-US" l10n="U"><link href="text/scalc/01/func_bitor.xhp" name="BITOR">BITOR</link>, <link href="text/scalc/01/func_bitxor.xhp" name="BITXOR">BITXOR</link>.</paragraph>
+</body>
+</helpdocument>

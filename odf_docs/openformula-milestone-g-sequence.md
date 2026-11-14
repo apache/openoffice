@@ -9,7 +9,7 @@
 
 | Phase | Status | Commit | Notes |
 |---|---|---|---|
-| G.1 | Complete | `41da3628f9` | STRING_MAXLEN documented; ScDBCount empty-cell TODO investigated |
+| G.1 | Complete | `41da3628f9` + Help topics commit | STRING_MAXLEN documented; ScDBCount empty-cell TODO investigated; Help topics added for IFNA, SKEWP, BITAND, BITOR, BITXOR, BITLSHIFT, BITRSHIFT |
 | G.2 | Investigated (not implemented) | — | Fix approach documented; requires AOO build/test environment |
 | G.3 | Pending | — | Decision record needed before any code change |
 | G.4 | Pending | — | Corpus regression analysis needed |
@@ -38,6 +38,7 @@ These items require no production source modification and can be completed immed
 | G.1.1 | F-GAP-008 | Basic Limits — strings | Locate `STRING_MAXLEN` definition; confirm value >= 32767 or document actual limit | Static lookup; no code change | Complete — `main/tools/inc/tools/string.hxx:110-120`; default `STRING_MAXLEN = 65,535` (0xFFFF without STRING32), exceeds ODF 1.4 32,767 minimum |
 | G.1.2 | F-GAP-012 | Syntax — named expressions | Document named expression test requirement (pre-defined `MYNAME` not available in calcval harness) | Test infrastructure note | Complete — documented in F-GAP-012; SYN-009-named marked not directly executable |
 | G.1.3 | F-GAP-015 | COUNTA/COUNTBLANK | Document scalar `""` vs formula-cell `""` distinction as implementation-defined | Audit documentation | Complete — documented in F-GAP-001, F-GAP-002, F-GAP-015 |
+| G.1.4 | — | Help documentation | Add Help topics for IFNA, SKEWP, BITAND, BITOR, BITXOR, BITLSHIFT, BITRSHIFT; verify HID_FUNC_* → topic mapping | `main/helpcontent2/source/text/scalc/01/func_*.xhp` (7 files) + `scfuncs.src` metadata | Complete — Help topics created, Function Wizard HIDs resolve, scfuncs.src descriptions corrected |
 
 ## Phase G.2 — Investigation Complete: Criteria Syntax Empty-Cell Fix (ScDBCount)
 
@@ -125,7 +126,8 @@ G.4 (INDEX compatibility) ──┘                                        └�
 
 ## Definition of Done for Milestone G
 
-- All G.1 documentation items complete (committed at `41da3628f9`)
+- All G.1 documentation items complete (committed at `41da3628f9`; Help topics for 7 functions committed separately)
+- G.1 Help topics: IFNA, SKEWP, BITAND, BITOR, BITXOR, BITLSHIFT, BITRSHIFT — all HID_FUNC_* IDs resolve to topics, discoverable via Help index/search
 - G.2 ScDBCount empty-cell fix approach documented (blocked: no build/test environment)
 - G.3 COUNTBLANK behavior: decision record required before any code change
 - G.4 INDEX compatibility: corpus regression analysis required before compatibility option
