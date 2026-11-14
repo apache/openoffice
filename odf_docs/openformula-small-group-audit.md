@@ -33,12 +33,12 @@ Therefore **no conformance level (Small/Medium/Large) may be claimed for AOO Cal
 
 | ReqID | Requirement | Status | Source Evidence | Runtime Verified |
 |-------|-------------|--------|-----------------|-------------------|
-| SG-BL-001 | Formula length >= 1024 characters | **RUNTIME_PENDING** | No formula-text length limit; MAXCODE=2048 tokens (compiler.hxx:59), MAXSTRLEN=1024 per symbol (compiler.hxx:60). 1026-char formula needs ~1025 tokens < 2048. Single string literal limited to 1023 chars (MAXSTRLEN). | No |
-| SG-BL-002 | >= 30 parameters per function | **RUNTIME_PENDING** | No global 30-param cap; MAX uses MustHaveParamCountMin(nParamCount, 1) (interpr1.cxx:3396-3400). SUM supports 255 args (calcval SG.BL-255args). Param count via GetByte() supports up to 255; MAXCODE=2048 tokens is practical ceiling. | No |
-| SG-BL-003 | Strings up to 32767 ASCII chars | **RUNTIME_PENDING** | STRING_MAXLEN=65,535 (string.hxx:119, STRING32 not defined) > 32,767. CheckStringResultLen enforces at concatenation (interpre.hxx:930-936). REPT("a";32767) creates 32,767-char string at runtime. String literals limited to 1023 chars (MAXSTRLEN=1024). | No |
-| SG-BL-004 | >= 7 nesting levels of functions | **RUNTIME_PENDING** | No nesting depth limit found (no MAXNEST or recursion depth guard). Parser uses recursive descent without depth guard (compiler.cxx:4134). Evaluator stack-based without depth limit. MAXCODE=2048 tokens is practical ceiling. | No |
+| SG-BL-001 | Formula length >= 1024 characters | **MET** | The compiler limit was 512 tokens, too few for 1024 characters of `1+1+...`; it is now 2048 (`MAXCODE`, compiler.hxx:59). Calcval `SG.BL-001-1024chars` (1026 characters, result 513) matches on a Linux aarch64 build. | Yes |
+| SG-BL-002 | >= 30 parameters per function | **MET** | `SG.BL-002-30params` (MAX with 30 arguments) matches on a Linux aarch64 build; a call with more than 255 arguments is an error. | Yes |
+| SG-BL-003 | Strings up to 32767 ASCII chars | **PARTIAL** | Strings produced at run time reach 32767 characters (`SG.BL-003-32767chars`, `LEN(REPT("a";32767))`, matches). A string literal in a formula is limited by `MAXSTRLEN` (1024): literals of 1022 characters or more give Err:513. Not fixed. | Partly |
+| SG-BL-004 | >= 7 nesting levels of functions | **MET** | `SG.BL-004-7nesting` (7 nested IF levels) matches on a Linux aarch64 build. The parser has a recursion guard of 42 (`nRecursionMax`, FormulaCompiler.cxx:782 and :1341). | Yes |
 
-**Finding:** All four Basic Limits requirements have source-level evidence supporting compliance, but none have been runtime-verified. No blocking limitations identified. STRING_MAXLEN=65,535 exceeds ODF's 32,767 minimum; MAXCODE=2048 tokens supports formulas with 1024+ characters when composed of short tokens.
+**Finding:** the four limits were run on Linux aarch64. Formula length, parameter count and nesting meet the requirement. For strings only run-time results reach 32767 characters; string literals stop at about 1021 (open).
 
 ---
 
@@ -174,14 +174,14 @@ The Small Group requires 110 functions (§2.3.2.E). All 110 have opcodes and imp
 
 - **SG-BL-001**: corrected to formula expression length 1026 chars (`=1` + `+1`*512), expected 513 (replaces `REPT("a";1024)` which measured string length, not formula length).
 - **SG-BL-004**: corrected to 7 genuinely nested function levels (`IF(TRUE;IF(...IF(TRUE;1;2)...))`, 7 nested IF calls), balanced parens, deterministic result 1.
-- **All 4 Basic Limits (§3.7)**: Reclassified from MET/PARTIAL to RUNTIME_PENDING based on G.5 source audit. Source evidence supports compliance for all four requirements (no formula-text cap, no 30-param cap, STRING_MAXLEN=65,535 > 32,767, no nesting depth limit), but runtime verification blocked (no AOO build tree; calcval macOS-only).
+- **All 4 Basic Limits (§3.7)**: run on a Linux aarch64 build; results are in the status table above.
 - **SG-SYN-001**: added Criteria syntax §4.11.11 test `SYN-001-criteria` (`=DCOUNT(R1:T6;;V1:V2)`, expected 4) using existing calcval database/criteria fixtures.
 - **SG-SYN-009**: marked not directly executable in calcval harness (requires pre-defined named expression `MYNAME`); test remains UNVERIFIED with explicit note.
 - **SG-FN-013/COUNTA**: fixtures added for truly empty cells and empty string "" per §6.13.7 (empty string non-blank). Harness-expressible via inline args; empty-cell cases use unset D6:D7.
 - **SG-FN-014/COUNTBLANK**: FN-014-COUNTBLANK-empty-cells (=COUNTBLANK(D6:D7), expected 2) covers truly empty cells. FN-014-COUNTBLANK-empty-string is retained as diagnostic only with expected - — it uses =COUNTBLANK(D6:D7) (genuinely empty cells, not ""), clearly labeled as NOT testing a cell containing ""; the required ""-in-cell fixture cannot be established by calcval harness (scratch cleared each case; no pre-populated "" data cells). ""-in-cell blankness is impl-defined per §6.13.8.
 - **SG-FN-016/FN-016-DATE-pre1583**: reclassified as implementation-defined/diagnostic (out-of-constraint Year < 1904), not mandatory #ERR. Normative expected value is - (not an ODF conformance error assertion). The calcval DATE.pre1583 row retains #ERR only as an explicitly identified AOO-specific diagnostic assertion (AOO observed #VALUE!), clearly labeled as not an ODF conformance assertion.
 - **BITAND arity**: confirmed `BITAND.3params` (`=BITAND(6;3;1)` expected `#ERR`) remains valid per §6.6.2 (`BITAND(Integer X; Integer Y)`); no classification change.
-- **Runtime verification**: not performed (no AOO build tree; calcval harness macOS-only). Only static/syntax/fixture checks applied.
+- **Runtime verification**: the Basic Limits results are in the status table above (Linux aarch64).
 
 ## 10. Runtime-Verification Limitations
 

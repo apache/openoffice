@@ -3,7 +3,7 @@
 **Branch:** `openformula`  
 **Baseline:** `9c42008d93`  
 **Scope:** Audit and report only. No production code modifications.  
-**Method:** Source-level static inspection only. No runtime verification possible (no AOO build tree; calcval harness macOS-only).
+**Method:** Source-level static inspection. Items marked RUNTIME_PENDING have not been run; the Basic Limits results from the Linux aarch64 build are in `openformula-small-group-audit.md`.
 
 ## Normative Source
 
@@ -190,8 +190,8 @@ ODF 1.4 §4.11.11: Criteria syntax supported in database functions (DCOUNT, DCOU
 
 ### AOO Implementation Locations
 
-- `GetDBParams()` — `main/sc/source/core/tool/interpr1.cxx:6621` (parses database + field + criteria range)
-- `DBIterator()` — `main/sc/source/core/tool/interpr1.cxx:6760` (iterates matching records for DBSum, DBAverage, DBMax, DBMin, DBProduct)
+- `GetDBParams()` — `main/sc/source/core/tool/interpr1.cxx:6664` (parses database + field + criteria range)
+- `DBIterator()` — `main/sc/source/core/tool/interpr1.cxx:6803` (iterates matching records for DBSum, DBAverage, DBMax, DBMin, DBProduct)
 - `ScDBCount()` — `main/sc/source/core/tool/interpr1.cxx:6828` (DCOUNT)
 - `ScDBCount2()` — `main/sc/source/core/tool/interpr1.cxx:6882` (DCOUNTA)
 - `ScDBSum()` — `main/sc/source/core/tool/interpr1.cxx:6821` (DSUM)
@@ -255,7 +255,7 @@ None for database function empty-cell matching. The ScDBCount empty-cell limitat
 
 ### Recommended Implementation Changes
 
-None required. The ScDBCount empty-cell fix (F-GAP-004) is implemented at source level; runtime verification pending (no AOO build tree available).
+None required. The ScDBCount empty-cell fix (F-GAP-004) is in (commits b5a1b43b5b and 30877e2746). With an empty criteria cell the count is now all records (`DB.DCOUNT.nf.nocrit` gives 3, was 0).
 
 ### Suggested Regression Tests
 
@@ -326,9 +326,8 @@ None required. The ScDBCount empty-cell fix (F-GAP-004) is implemented at source
 #### Nesting Depth — at least 7 levels
 
 **Source finding:**
-- No nesting depth limit (no MAXNEST, recursion depth counter, or nDepth equivalent) found in `main/sc/source/core/tool/compiler.cxx` or `main/sc/source/core/tool/interpr1.cxx`.
-- `main/sc/source/core/tool/compiler.cxx:4134`: Comment "RPN creation by recursion" — parser uses recursive descent without a depth guard.
-- `main/sc/inc/compiler.hxx:61`: `MAXJUMPCOUNT = 32` — limits CHOOSE function jump targets, not general nesting.
+- The recursive-descent parser is in `main/formula/source/core/api/FormulaCompiler.cxx`. `GetToken()` (:782) and `Expression()` (:1341) stop with errStackOverflow once the recursion count passes `nRecursionMax = 42`.
+- `main/sc/inc/compiler.hxx:61`: `MAXJUMPCOUNT = 32` — limits the jump targets of CHOOSE; IF and IFNA use the same table with at most 3 and 2 jump targets (FormulaCompiler.cxx:1101-1103).
 - Evaluator is stack-based (`ScInterpreter::Push()`/`Pop()`) with no explicit evaluation depth limit beyond MAXCODE=2048 total tokens.
 - 7 nested `IF` levels uses ~15 tokens, well under MAXCODE=2048.
 - `test/odf-validate/calcval-cases14.tsv:198`: `SG.BL-004-7nesting` — 7 nested `IF` calls, expected result 1.
@@ -348,11 +347,11 @@ None required. The ScDBCount empty-cell fix (F-GAP-004) is implemented at source
 | Constant Strings | §5.4 | `String ::= '"' ([^"#x00] | '""')* '"'`. Double-quote escaped by duplication. | `main/sc/source/core/tool/compiler.cxx:2682` (IsString), :2689-2691 (string literal overflow at MAXSTRLEN-1) | RUNTIME_PENDING |
 | Operators | §5.5 | PrefixOp '+', '-'; PostfixOp '%'; InfixOp: ArithmeticOp (+-*/^), ComparisonOp (=<> <> < > <= >=), StringOp (&), ReferenceOp (! ~ :). Precedence per Table 1: ! > : > prefix +,- > ^ > *,/ > +,- > & > comparison. | `main/sc/source/core/tool/compiler.cxx` RangeLine → IntersectionLine → RangeLine → UnaryLine → binary ops; `main/sc/inc/compiler.hxx:61` (MAXJUMPCOUNT=32, CHOOSE only) | RUNTIME_PENDING |
 | Functions and Function Parameters | §5.6 | `FunctionName ::= LetterXML (LetterXML | DigitXML | '_' | '.' | CombiningCharXML)*`. Case-insensitive. Semicolon ';' separator. Empty parameters allowed (considered 0 params, not one empty param). | `main/sc/source/core/tool/compiler.cxx:3648` (function name detection), :3661-3668 (must be followed by '('); `main/sc/source/core/inc/interpre.hxx:897-927` (MustHaveParamCount family) | RUNTIME_PENDING |
-| Nonstandard Function Names | §5.7 | Function names not in spec need prefix (e.g., COM.FOO.BAR). Unknown functions → Error value other than #N/A. | `main/sc/source/core/tool/compiler.cxx:3741,:4029,:4072,:4091,:4101,:5493,:5501` (errNoName); `main/sc/source/core/tool/interpr4.cxx:3106,:3205` (PushError(errNoName)) | RUNTIME_PENDING |
+| Nonstandard Function Names | §5.7 | Function names not in spec need prefix (e.g., COM.FOO.BAR). Unknown functions → Error value other than #N/A. | `main/sc/source/core/tool/compiler.cxx:3741,:4029,:4072,:4091,:4101,:5493,:5501` (errNoName); `main/formula/source/core/api/FormulaCompiler.cxx:891-895` (unknown name followed by '(' gives errNoName) | RUNTIME_PENDING |
 | References | §5.8 | `Reference ::= '[' (Source? RangeAddress) | ReferenceError ']'`. RangeAddress supports cell, row, column, whole-row, whole-column. References begin with '[' to disambiguate from function names. | `main/sc/source/core/tool/compiler.cxx` (IsReference, PopDoubleRef/PopSingleRef); `main/sc/inc/compiler.hxx` | RUNTIME_PENDING |
 | Simple Named Expressions | §5.11 | `SimpleNamedExpression ::= Identifier | '$$' (Identifier | SingleQuoted)`. Global scope, case-consistent matching. | `main/sc/source/core/tool/compiler.cxx` (NameLine, ocName opcode); `main/sc/source/core/inc/interpre.hxx` | RUNTIME_PENDING |
-| Constant Errors | §5.12 | `#N/A` required; other Errors optional. Error syntax: `'#' [A-Z0-9]+ ([!?] | ('/' ([A-Z] | ([0-9] [!?])))`. Functions propagate Errors unless stated otherwise. | `main/formula/inc/formula/compiler.hrc:30-36` (SC_OPCODE_ERROR_NULL through SC_OPCODE_ERROR_NA); `main/sc/source/core/tool/interpr4.cxx` (PushError, NOTAVAILABLE) | RUNTIME_PENDING |
-| Whitespace | §5.14 | Whitespace ::= #x20 \| #x09 \| #x0a \| #x0d. Ignored outside strings, around operators, before/after =, before function names (but not between name and '('). | `main/sc/source/core/tool/compiler.cxx:3583-3593` (NextNewToken generates ocSpaces), :3655-3667 (whitespace before '(' for function names) | RUNTIME_PENDING |
+| Constant Errors | §5.12 | `#N/A` required; other Errors optional. Error syntax: `'#' [A-Z0-9]+ ([!?] | ('/' ([A-Z] | ([0-9] [!?])))`. Functions propagate Errors unless stated otherwise. | `main/formula/inc/formula/compiler.hrc:58-64` (SC_OPCODE_ERROR_NULL through SC_OPCODE_ERROR_NA); `main/sc/source/core/tool/interpr4.cxx` (PushError, NOTAVAILABLE) | RUNTIME_PENDING |
+| Whitespace | §5.14 | Whitespace ::= #x20 \| #x09 \| #x0a \| #x0d. Ignored outside strings, around operators, before/after =, before function names (but not between name and '('). | `main/sc/source/core/tool/compiler.cxx:3583-3593` (NextNewToken generates ocSpaces), :3655-3667 (whitespace before '(' for function names). Only #x20 is set as whitespace in the compiler character table (`compiler.cxx:448`); #x09, #x0a and #x0d are unverified. | RUNTIME_PENDING |
 
 ### Coverage note: Criteria §4.11.11
 
@@ -370,7 +369,7 @@ Criteria syntax (§4.11.11) is also required by §2.3.2.B but is covered under *
 
 | Category | Count | Status |
 |---|---|---|
-| Basic Limits (§3.7) | 4 | RUNTIME_PENDING — source capable for all 4; runtime verification blocked (no build tree) |
+| Basic Limits (§3.7) | 4 | Run on Linux aarch64: 3 MET, 1 PARTIAL (string literals stop at about 1021 characters) |
 | Syntax (§5) | 11 | RUNTIME_PENDING — implementation present for all 11; runtime verification blocked (no build tree) |
 | COUNTA/COUNTBLANK (§6.13.7-8) | 2 | Fully matches; formula-cell `""` treated as blank per implementation-defined choice (§6.13.8) |
 | INDEX (§6.14.6) | 1 | NOT ODF 1.4 compliant — bRowArray shortcut present (undone by commit 8f3b3b25a2); INDEX(H1:L1;3) returns value instead of Error |

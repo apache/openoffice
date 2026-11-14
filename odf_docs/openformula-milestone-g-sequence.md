@@ -10,13 +10,13 @@
 | Phase | Status | Commit | Notes |
 |---|---|---|---|
 | G.1 | Complete | `41da3628f9` + Help topics commit | STRING_MAXLEN documented; ScDBCount empty-cell fix applied via `CountRecords()`; Help topics added for IFNA, SKEWP, BITAND, BITOR, BITXOR, BITLSHIFT, BITRSHIFT |
-| G.2 | Implemented (source-level) | `efd87262f2` + regression tests | `ScDBCount()` missing-field path uses `CountRecords()` (dociter.cxx:685-716) which iterates row-by-row via `IsQueryValid()`; `ScDBCount2()` same pattern; calcval `DB.*` regression cases added | 
-| G.3 | Complete (decision documented) | `929fe7a9ce` | COUNTBLANK formula-cell `""` behavior decision: `lcl_IsCountBlankEmpty()` (interpr1.cxx:4745-4758) inspects formula results and treats formula-cell-returning-`""` as blank — implementation-defined per §6.13.8; no code change needed |
-| G.4 | Compatibility audit complete (decision documented) | — | `bRowArray` shortcut present in `ScIndex()` (interpr1.cxx:7588-7612); `INDEX(H1:L1;3)` returns column value instead of ODF 1.4 Error; kept as legacy-compatible deviation |
-| G.5 | Complete (source-level audit) | `fb522d42ea` | All 4 ODF 1.4 §3.7 Basic Limits source-audited; no blocking limits found; all classified RUNTIME_PENDING. Formula length: no cap (MAXCODE=2048 tokens). Parameters: no 30-param cap (MAX uses MustHaveParamCountMin(1)). String length: STRING_MAXLEN=65,535 > 32,767. Nesting depth: no depth limit. Runtime verification blocked (no build tree) |
-| G.6 | Complete (source-level audit) | `fb522d42ea` | All 11 ODF 1.4 §2.3.2.B syntax requirements source-audited; implementation present for all; no blocking limits; all classified RUNTIME_PENDING. Includes Basic Expressions, Constant Numbers, Constant Strings, Operators, Functions, Nonstandard Function Names, References, Simple Named Expressions, Errors, Whitespace. Runtime verification blocked (no build tree) |
+| G.2 | Fixed | `b5a1b43b5b`, `30877e2746` (fix); `ad46309f51` (docs, 3 test rows) | `ScDBCount()` missing-field path uses `CountRecords()` (dociter.cxx:685-716) which iterates row-by-row via `IsQueryValid()`; `ScDBCount2()` same pattern; calcval `DB.*` regression cases added. `DB.DCOUNT.nf.nocrit` gives 3 (was 0) | 
+| G.3 | Complete (decision documented) | `7e6ad45c82` | COUNTBLANK formula-cell `""` behavior decision: `lcl_IsCountBlankEmpty()` (interpr1.cxx:4745-4758) inspects formula results and treats formula-cell-returning-`""` as blank — implementation-defined per §6.13.8; no code change needed |
+| G.4 | Compatibility audit complete (decision documented) | `ac2d06a54a` | `bRowArray` shortcut present in `ScIndex()` (interpr1.cxx:7588-7612); `INDEX(H1:L1;3)` returns column value instead of ODF 1.4 Error; kept as legacy-compatible deviation |
+| G.5 | Run on Linux aarch64 | `1ac0d2f4ee`, `fb522d42ea` (source audit); results in `openformula-small-group-audit.md` | Formula length, parameter count and nesting: MET. String length: PARTIAL, string literals stop at about 1021 characters (Err:513), run-time strings reach 32767. Formula limit raised from 512 to 2048 tokens |
+| G.6 | Complete (source-level audit) | `551759aef8` | All 11 ODF 1.4 §2.3.2.B syntax requirements source-audited; implementation present for all; no blocking limits; all classified RUNTIME_PENDING. Includes Basic Expressions, Constant Numbers, Constant Strings, Operators, Functions, Nonstandard Function Names, References, Simple Named Expressions, Errors, Whitespace. Runtime verification blocked (no build tree) |
 
-**Blocker:** No configured AOO build tree; `sc`/`scaddins` not built; calcval harness cannot run. Runtime verification deferred to consolidated Calc testing phase. All G.1-G.6 source-level work is complete; runtime verification for G.2-G.6 awaits build environment.
+**Runtime results:** the Basic Limits (G.5) rows were run on a Linux aarch64 build. Items marked RUNTIME_PENDING have no recorded run.
 
 
 ## Principles
@@ -25,7 +25,7 @@
 2. **Dependency-ordered:** Changes with no dependencies first; dependent changes after.
 3. **Risk-ordered:** Lower-risk, self-contained changes before higher-risk behavior changes.
 4. **No LibreOffice code:** All fixes derived from AOO source inspection only.
-5. **No production changes without runtime validation:** All changes deferred until a configured AOO build tree exists and calcval can run (currently macOS-only).
+5. **No production changes without runtime validation.**
 
 ## Phase G.1 — Zero-Risk Documentation & Test Harness (No Code Changes)
 
@@ -42,7 +42,7 @@ These items require no production source modification and can be completed immed
 
 ## Phase G.2 — Investigation Complete: Criteria Syntax Empty-Cell Fix (ScDBCount)
 
-**STATUS: IMPLEMENTED (source-level)** — DCOUNT and DCOUNTA without a field count every matching record via `CountRecords()`; calcval `DB.*` regression cases added. Runtime verification blocked: no AOO build tree available.
+**STATUS: FIXED** (`b5a1b43b5b`, `30877e2746`) — DCOUNT and DCOUNTA without a field count every matching record via `CountRecords()`; calcval `DB.*` regression cases added. `DB.DCOUNT.nf.nocrit` gives 3 (was 0).
 
 The root cause is confirmed: `ScQueryCellIterator` ("run through all not empty cells") skips empty cells, and `ScDBQueryDataIterator::getCurrent()` skips `CELLTYPE_NONE` via `default` case at `dociter.cxx:655-657`. Per ODF 1.4 §6.9.3, DCOUNT without a field should count ALL matching rows including those with empty result cells.
 
@@ -61,7 +61,7 @@ The root cause is confirmed: `ScQueryCellIterator` ("run through all not empty c
 | G.2.1 | F-GAP-004 | Criteria — DCOUNT empty-cell matching | `interpr1.cxx:6838-6845` (was) → `interpr1.cxx:6879-6882` + `dociter.cxx:685-716` | ScDBCount missing-field path previously used `ScQueryCellIterator` which skips empty cells; DCOUNT undercounted when matching rows had empty result cells | Replaced with row-by-row `CountRecords()` using `IsQueryValid()` per row; counts all matching rows regardless of cell emptiness | Low — isolated to DCOUNT/DCOUNTA without field; documented TODO already resolved |
 
 **Dependencies:** None.  
-**Runtime validation needed:** Yes — DCOUNT/DCOUNTA with empty result cells. **Blocked:** No AOO build tree available; cannot build/test.
+**Runtime validation needed:** the three `DB.*.zero` rows (numeric zero vs empty result cell).
 
 ## Phase G.3 — Medium-Risk: COUNTA/COUNTBLANK Behavior Review
 
@@ -92,19 +92,19 @@ ODF 1.4 §6.14.6 removed the ODF 1.2/1.3 row-vector shortcut where `INDEX(rowvec
 
 ## Phase G.5 — Low-Risk: Basic Limits Source Audit
 
-**STATUS: COMPLETE (source-level audit; runtime verification pending)**
+**STATUS: RUN on Linux aarch64** (results in `openformula-small-group-audit.md`)
 
-ODF 1.4 §3.7 requires: (1) formulas up to at least 1024 characters, (2) at least 30 parameters per function, (3) strings up to 32,767 ASCII characters, (4) at least 7 nesting levels of functions. Source audit found no blocking limits for any requirement. All four classified as RUNTIME_PENDING.
+ODF 1.4 §3.7 requires: (1) formulas up to at least 1024 characters, (2) at least 30 parameters per function, (3) strings up to 32,767 ASCII characters, (4) at least 7 nesting levels of functions. Three are MET and one is PARTIAL.
 
 | Order | Gap ID | Area | Source Finding | Classification |
 |---|---|---|---|---|
-| G.5.1 | F-GAP-006 | Formula length | No formula-text cap; MAXCODE=2048 tokens (compiler.hxx:59), MAXSTRLEN=1024 per symbol (compiler.hxx:60). 1026-char formula needs ~1025 tokens < 2048. | RUNTIME_PENDING |
-| G.5.2 | F-GAP-007 | Parameter count | No global 30-param cap; MAX uses MustHaveParamCountMin(1) (interpr1.cxx:3396-3400); SUM supports 255 args (calcval SG.BL-255args). | RUNTIME_PENDING |
-| G.5.3 | F-GAP-008 | String length | STRING_MAXLEN=65,535 (string.hxx:119, STRING32 not defined) > 32,767. CheckStringResultLen enforces at concatenation (interpre.hxx:930-936). String literals limited to 1023 chars (MAXSTRLEN=1024). | RUNTIME_PENDING |
-| G.5.4 | F-GAP-009 | Nesting depth | No nesting depth limit (no MAXNEST or recursion depth guard). Parser uses recursive descent without depth guard (compiler.cxx:4134). | RUNTIME_PENDING |
+| G.5.1 | F-GAP-006 | Formula length | The compiler limit was 512 tokens; it is now 2048 (MAXCODE, compiler.hxx:59). MAXSTRLEN=1024 per symbol (compiler.hxx:60). `SG.BL-001-1024chars` matches. | MET |
+| G.5.2 | F-GAP-007 | Parameter count | No global 30-param cap; MAX uses MustHaveParamCountMin(1) (interpr1.cxx:3396-3400). `SG.BL-002-30params` matches; more than 255 arguments is an error. | MET |
+| G.5.3 | F-GAP-008 | String length | STRING_MAXLEN=65,535 (string.hxx:119, STRING32 not defined) > 32,767; `SG.BL-003-32767chars` matches. A string literal of 1022 characters or more gives Err:513 (MAXSTRLEN=1024). | PARTIAL |
+| G.5.4 | F-GAP-009 | Nesting depth | The parser stops at a recursion count of 42 (nRecursionMax, FormulaCompiler.cxx:782 and :1341). `SG.BL-004-7nesting` matches. | MET |
 
 **Dependencies:** None.  
-**Runtime validation needed:** Yes — all four calcval tests (SG.BL-001 through SG.BL-004). **Blocked:** No AOO build tree available; calcval cannot run. Source audit complete; no production code changes needed.
+**Open:** string literals stop at about 1021 characters; not fixed.
 
 ## Phase G.6 — Low-Risk: Syntax Verification
 
@@ -117,13 +117,13 @@ ODF 1.4 §2.3.2.B requires Small Group Evaluators to implement syntax from 11 se
 | G.6.1 | F-GAP-016 | Basic Expressions §5.2 | `Formula ::= Intro? Expression`; Expression supports Number, String, Array, PrefixOp, InfixOp, parenthesized, function call, Reference, QuotedLabel, AutomaticIntersection, NamedExpression, Error (`compiler.cxx:3570`, :3780) | RUNTIME_PENDING |
 | G.6.2 | F-GAP-017 | Constant Numbers §5.3 | `Number ::= StandardNumber | '.' [0-9]+ ([eE] [-+]? [0-9]+)?`; decimal '.', scientific E/e (`compiler.cxx:2650+`) | RUNTIME_PENDING |
 | G.6.3 | F-GAP-018 | Constant Strings §5.4 | `String ::= '"' ([^"#x00] | '""')* '"'`; double-quote escaped by duplication (`compiler.cxx:2682`) | RUNTIME_PENDING |
-| G.6.4 | F-GAP-010 | Operators §5.5 | PrefixOp '+', '-'; PostfixOp '%'; InfixOp: Arithmetic, Comparison, String, Reference. Precedence: ! > : > prefix +,- > ^ > *,/ > +,- > & > comparison (`compiler.cxx` RangeLine→binary ops; `compiler.hxx:61` MAXJUMPCOUNT=32 CHOOSE only) | RUNTIME_PENDING |
+| G.6.4 | F-GAP-010 | Operators §5.5 | PrefixOp '+', '-'; PostfixOp '%'; InfixOp: Arithmetic, Comparison, String, Reference. Precedence: ! > : > prefix +,- > ^ > *,/ > +,- > & > comparison (`compiler.cxx` RangeLine→binary ops; `compiler.hxx:61` MAXJUMPCOUNT=32, the jump targets of CHOOSE, IF and IFNA) | RUNTIME_PENDING |
 | G.6.5 | F-GAP-019 | Functions §5.6 | `FunctionName ::= LetterXML (LetterXML | DigitXML | '_' | '.' | CombiningCharXML)*`; case-insensitive; ';' separator; empty params allowed (`compiler.cxx:3648`, `interpre.hxx:897-927`) | RUNTIME_PENDING |
-| G.6.6 | F-GAP-020 | Nonstandard Function Names §5.7 | Unknown functions → Error other than #N/A; names need prefix (`compiler.cxx` errNoName; `interpr4.cxx:3106`, :3205) | RUNTIME_PENDING |
+| G.6.6 | F-GAP-020 | Nonstandard Function Names §5.7 | Unknown functions → Error other than #N/A; names need prefix (`compiler.cxx` errNoName; `FormulaCompiler.cxx:891-895`) | RUNTIME_PENDING |
 | G.6.7 | F-GAP-011 | References §5.8 | `Reference ::= '[' (Source? RangeAddress) \| ReferenceError ']'`; supports cell, row, column, whole-row, whole-column (`compiler.cxx` IsReference, PopDoubleRef/PopSingleRef) | RUNTIME_PENDING |
 | G.6.8 | F-GAP-012 | Simple Named Expressions §5.11 | `SimpleNamedExpression ::= Identifier | '$$' (Identifier | SingleQuoted)`; global scope, case-consistent (`compiler.cxx` NameLine/ocName) | RUNTIME_PENDING |
-| G.6.9 | F-GAP-013 | Constant Errors §5.12 | `#N/A` required; others optional; Error syntax `'#' [A-Z0-9]+ ...` (`compiler.hrc:30-36`; `interpr4.cxx` PushError) | RUNTIME_PENDING |
-| G.6.10 | F-GAP-014 | Whitespace §5.14 | Whitespace ::= #x20 | #x09 | #x0a | #x0d; ignored outside strings, around operators, before/after =, before function names (`compiler.cxx:3583-3593`, :3655-3667) | RUNTIME_PENDING |
+| G.6.9 | F-GAP-013 | Constant Errors §5.12 | `#N/A` required; others optional; Error syntax `'#' [A-Z0-9]+ ...` (`compiler.hrc:58-64`; `interpr4.cxx` PushError) | RUNTIME_PENDING |
+| G.6.10 | F-GAP-014 | Whitespace §5.14 | Whitespace ::= #x20 | #x09 | #x0a | #x0d; ignored outside strings, around operators, before/after =, before function names (`compiler.cxx:3583-3593`, :3655-3667); only #x20 is set as whitespace in the compiler character table (`compiler.cxx:448`), so #x09, #x0a and #x0d are unverified | RUNTIME_PENDING |
 
 **Dependencies:** None.  
 **Runtime validation needed:** Yes — all syntax tests (SYN-001 through SYN-011). **Blocked:** No AOO build tree available; calcval cannot run. Source audit complete; no production code changes needed.
@@ -132,8 +132,8 @@ ODF 1.4 §2.3.2.B requires Small Group Evaluators to implement syntax from 11 se
 
 ```
 G.1 (docs, COMPLETE) ──┐
-                        ├── G.2 (ScDBCount empty-cell, IMPLEMENTED source-level) ──┐
-G.5 (limits audit, COMPLETE source-level) ──┤                                        ├── G.3 (COUNTBLANK decision, COMPLETE)
+                        ├── G.2 (ScDBCount empty-cell, FIXED) ──┐
+G.5 (limits audit, RUN on Linux aarch64) ──┤                                        ├── G.3 (COUNTBLANK decision, COMPLETE)
 G.6 (syntax audit, COMPLETE source-level) ──┤                                        │
 G.4 (INDEX compatibility) ──┘                                                        └── (runtime-validated)
 ```
@@ -144,25 +144,25 @@ G.4 compatibility audit: `bRowArray` shortcut present (interpr1.cxx:7588-7612); 
 | Phase | Complexity | Rationale | Status |
 |---|---|---|---|
 | G.1 (docs) | Trivial | No code changes | Complete |
-| G.2 (ScDBCount) | Low | Fix applied via `CountRecords()`; regression tests added; runtime verification blocked | Implemented (source-level) |
+| G.2 (ScDBCount) | Low | Fix applied via `CountRecords()`; regression tests added | Fixed |
 | G.3 (COUNTBLANK) | Low | Decision documented; implementation already in place via `lcl_IsCountBlankEmpty()` | Complete (decision documented) |
 | G.4 (INDEX compat) | Medium | Compatibility audit complete; `bRowArray` shortcut present; ODF 1.4 deviation documented | Compatibility audit complete (decision documented) |
-| G.5 (limits audit) | Low | Source audit complete; no blocking limits found; all 4 classified RUNTIME_PENDING | Complete (source-level) |
+| G.5 (limits audit) | Low | Run on Linux aarch64: 3 MET, 1 PARTIAL (string literals stop at about 1021 characters) | Run |
 | G.6 (syntax audit) | Low | Source audit complete; implementation present for all 11 syntax requirements; no blocking limits; all classified RUNTIME_PENDING | Complete (source-level) |
 
 ## Definition of Done for Milestone G
 
 - All G.1 documentation items complete (committed at `41da3628f9`; Help topics for 7 functions committed separately)
 - G.1 Help topics: IFNA, SKEWP, BITAND, BITOR, BITXOR, BITLSHIFT, BITRSHIFT — all HID_FUNC_* IDs resolve to topics, discoverable via Help index/search
-- G.2 ScDBCount/DCOUNTA empty-cell fix implemented at source level: `CountRecords()` in `dociter.cxx:685-716`, used by `ScDBCount()` at `interpr1.cxx:6879-6882` and `ScDBCount2()` at `interpr1.cxx:6913-6917`; calcval `DB.*` regression cases added to `calcval-cases14.tsv` (DB.DCOUNT.f.zero, DB.DCOUNT.nf.zero, DB.DCOUNTA.f.zero)
-- G.2 runtime verification: blocked — no AOO build tree available; calcval cannot run
-- G.3 COUNTBLANK behavior: decision documented — `lcl_IsCountBlankEmpty()` (interpr1.cxx:4745-4758) inspects formula results and treats formula-cell-returning-`""` as blank for COUNTBLANK (implementation-defined per §6.13.8); ISBLANK (§6.13.14) returns FALSE for empty string — no conflict. No code change needed.
+- G.2 ScDBCount/DCOUNTA empty-cell fix (`b5a1b43b5b`, `30877e2746`): `CountRecords()` in `dociter.cxx:685-716`, used by `ScDBCount()` at `interpr1.cxx:6879-6882` and `ScDBCount2()` at `interpr1.cxx:6913-6917`; calcval `DB.*` regression cases added to `calcval-cases14.tsv` (DB.DCOUNT.f.zero, DB.DCOUNT.nf.zero, DB.DCOUNTA.f.zero)
+- G.2 result: `DB.DCOUNT.nf.nocrit` gives 3 (was 0); the three `DB.*.zero` rows are not yet recorded as run
+- G.3 COUNTBLANK behavior: decision documented — `lcl_IsCountBlankEmpty()` (interpr1.cxx:4745-4758) inspects formula results and treats formula-cell-returning-`""` as blank for COUNTBLANK (implementation-defined per §6.13.8); ISBLANK (§6.13.14) returns FALSE for empty string — the two differ, which §6.13.8 allows. No code change needed.
 - G.4 INDEX compatibility: compatibility audit complete — `bRowArray` shortcut present in `ScIndex()` (interpr1.cxx:7588-7612); `INDEX(H1:L1;3)` returns column value instead of ODF 1.4 Error; kept as documented legacy-compatible deviation |
-- G.5 Basic Limits: source audit complete — no blocking limits found for any of the 4 ODF 1.4 §3.7 requirements. All classified RUNTIME_PENDING. Formula length: no formula-text cap (MAXCODE=2048 tokens, MAXSTRLEN=1024 per symbol). Parameters: no global 30-param cap (MAX uses MustHaveParamCountMin(1)). String length: STRING_MAXLEN=65,535 > 32,767 minimum. Nesting depth: no depth limit found. Runtime verification blocked (no build tree).
+- G.5 Basic Limits: run on Linux aarch64 — formula length, parameter count and nesting MET; string length PARTIAL (string literals stop at about 1021 characters, run-time strings reach 32767). Formula limit raised from 512 to 2048 tokens (MAXCODE).
 - G.6 Syntax Verification: source audit complete — implementation present for all 11 ODF 1.4 §2.3.2.B syntax requirements (Basic Expressions, Constant Numbers, Constant Strings, Operators, Functions, Nonstandard Function Names, References, Simple Named Expressions, Errors, Whitespace) plus Criteria §4.11.11 (covered under F-GAP-004). All classified RUNTIME_PENDING. Runtime verification blocked (no build tree).
-- G.5/G.6 runtime tests: prepared, awaiting build environment
+- G.6 runtime tests: prepared, not yet run
 - No production changes without corresponding calcval test coverage
-- All G.1-G.3 requirements verified at source level against ODF 1.4 normative text; G.4 INDEX documented as known deviation (bRowArray shortcut, not ODF 1.4 compliant); runtime verification for G.5/G.6 pending build environment
+- All G.1-G.3 requirements verified at source level against ODF 1.4 normative text; G.4 INDEX documented as known deviation (bRowArray shortcut, not ODF 1.4 compliant); G.6 runtime verification pending
 
 ## Deferred Items (Post-G)
 
