@@ -90,19 +90,21 @@ ODF 1.4 §6.14.6 removed the ODF 1.2/1.3 row-vector shortcut where `INDEX(rowvec
 **Dependencies:** None.
 **Runtime validation needed:** Yes — corpus regression test against existing documents to assess legacy document impact. **Blocked:** No AOO build tree available; calcval cannot run. Existing test case `INDEX.row.rowonly` (calcval-cases14.tsv:39) expects `#ERR` (ODF 1.4) but current implementation returns `30` — test/implementation mismatch noted.
 
-## Phase G.5 — Low-Risk: Basic Limits Runtime Verification
+## Phase G.5 — Low-Risk: Basic Limits Source Audit
 
-No code changes expected (no hard limits found). Verification only.
+**STATUS: COMPLETE (source-level audit; runtime verification pending)**
 
-| Order | Gap ID | Area | Test | Expected Result |
+ODF 1.4 §3.7 requires: (1) formulas up to at least 1024 characters, (2) at least 30 parameters per function, (3) strings up to 32,767 ASCII characters, (4) at least 7 nesting levels of functions. Source audit found no blocking limits for any requirement. All four classified as RUNTIME_PENDING.
+
+| Order | Gap ID | Area | Source Finding | Classification |
 |---|---|---|---|---|
-| G.5.1 | F-GAP-006 | Formula length | 1024+ char formula (1026-char `=1+1+...+1`) | Accepted, result 513 |
-| G.5.2 | F-GAP-007 | Parameter count | 30-parameter MAX call | Accepted, result 30 |
-| G.5.3 | F-GAP-008 | String length | 32767-char string (after STRING_MAXLEN confirmed) | Accepted |
-| G.5.4 | F-GAP-009 | Nesting depth | 7 nested IFs | Accepted, result 1 |
+| G.5.1 | F-GAP-006 | Formula length | No formula-text cap; MAXCODE=2048 tokens (compiler.hxx:59), MAXSTRLEN=1024 per symbol (compiler.hxx:60). 1026-char formula needs ~1025 tokens < 2048. | RUNTIME_PENDING |
+| G.5.2 | F-GAP-007 | Parameter count | No global 30-param cap; MAX uses MustHaveParamCountMin(1) (interpr1.cxx:3396-3400); SUM supports 255 args (calcval SG.BL-255args). | RUNTIME_PENDING |
+| G.5.3 | F-GAP-008 | String length | STRING_MAXLEN=65,535 (string.hxx:119, STRING32 not defined) > 32,767. CheckStringResultLen enforces at concatenation (interpre.hxx:930-936). String literals limited to 1023 chars (MAXSTRLEN=1024). | RUNTIME_PENDING |
+| G.5.4 | F-GAP-009 | Nesting depth | No nesting depth limit (no MAXNEST or recursion depth guard). Parser uses recursive descent without depth guard (compiler.cxx:4134). | RUNTIME_PENDING |
 
 **Dependencies:** None.  
-**Runtime validation needed:** Yes — all four tests.
+**Runtime validation needed:** Yes — all four calcval tests (SG.BL-001 through SG.BL-004). **Blocked:** No AOO build tree available; calcval cannot run. Source audit complete; no production code changes needed.
 
 ## Phase G.6 — Low-Risk: Syntax Verification
 
@@ -121,7 +123,7 @@ No code changes expected (no hard limits found). Verification only.
 ```
 G.1 (docs, COMPLETE) ──┐
                         ├── G.2 (ScDBCount empty-cell, IMPLEMENTED source-level) ──┐
-G.5 (limits verification) ──┤                                                        ├── G.3 (COUNTBLANK decision, COMPLETE)
+G.5 (limits audit, COMPLETE source-level) ──┤                                        ├── G.3 (COUNTBLANK decision, COMPLETE)
 G.6 (syntax verification) ──┤                                                        │
 G.4 (INDEX compatibility) ──┘                                                        └── (runtime-validated)
 ```
@@ -135,7 +137,8 @@ G.4 compatibility audit: `bRowArray` shortcut present (interpr1.cxx:7588-7612); 
 | G.2 (ScDBCount) | Low | Fix applied via `CountRecords()`; regression tests added; runtime verification blocked | Implemented (source-level) |
 | G.3 (COUNTBLANK) | Low | Decision documented; implementation already in place via `lcl_IsCountBlankEmpty()` | Complete (decision documented) |
 | G.4 (INDEX compat) | Medium | Compatibility audit complete; `bRowArray` shortcut present; ODF 1.4 deviation documented | Compatibility audit complete (decision documented) |
-| G.5/G.6 (verification) | Low | Test execution only; no code changes | Pending build |
+| G.5 (limits audit) | Low | Source audit complete; no blocking limits found; all 4 classified RUNTIME_PENDING | Complete (source-level) |
+| G.6 (syntax verification) | Low | Test execution only; no code changes | Pending build |
 
 ## Definition of Done for Milestone G
 
@@ -145,7 +148,8 @@ G.4 compatibility audit: `bRowArray` shortcut present (interpr1.cxx:7588-7612); 
 - G.2 runtime verification: blocked — no AOO build tree available; calcval cannot run
 - G.3 COUNTBLANK behavior: decision documented — `lcl_IsCountBlankEmpty()` (interpr1.cxx:4745-4758) inspects formula results and treats formula-cell-returning-`""` as blank for COUNTBLANK (implementation-defined per §6.13.8); ISBLANK (§6.13.14) returns FALSE for empty string — no conflict. No code change needed.
 - G.4 INDEX compatibility: compatibility audit complete — `bRowArray` shortcut present in `ScIndex()` (interpr1.cxx:7588-7612); `INDEX(H1:L1;3)` returns column value instead of ODF 1.4 Error; kept as documented legacy-compatible deviation |
-- G.5/G.6 all runtime tests: prepared, awaiting build environment
+- G.5 Basic Limits: source audit complete — no blocking limits found for any of the 4 ODF 1.4 §3.7 requirements. All classified RUNTIME_PENDING. Formula length: no formula-text cap (MAXCODE=2048 tokens, MAXSTRLEN=1024 per symbol). Parameters: no global 30-param cap (MAX uses MustHaveParamCountMin(1)). String length: STRING_MAXLEN=65,535 > 32,767 minimum. Nesting depth: no depth limit found. Runtime verification blocked (no build tree).
+- G.5/G.6 runtime tests: prepared, awaiting build environment
 - No production changes without corresponding calcval test coverage
 - All G.1-G.3 requirements verified at source level against ODF 1.4 normative text; G.4 INDEX documented as known deviation (bRowArray shortcut, not ODF 1.4 compliant); runtime verification for G.5/G.6 pending build environment
 

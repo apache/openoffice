@@ -270,29 +270,72 @@ None required. The ScDBCount empty-cell fix (F-GAP-004) is implemented at source
 
 ### F.4.1 Basic Limits (§3.7)
 
+**Normative reference:** ODF 1.4 §3.7 — "Evaluators which claim to support 'basic limits' shall support at least the following limits:
+1. formulas up to at least 1024 characters long
+2. at least 30 parameters per function when the function prototype permits a list of parameters
+3. permit strings of ASCII characters of up to 32,767 (2^15-1) characters
+4. support at least 7 nesting levels of functions"
+
+---
+
 #### Formula Length — at least 1024 characters
 
-**Source finding:** No explicit formula length limit (MAXFORMULA or equivalent) found in `main/sc/source/core/tool/interpr1.cxx`, `main/sc/source/core/inc/interpre.hxx`, or `main/formula/source/core/api/FormulaCompiler.cxx`. The FormulaCompiler parses token arrays dynamically.
+**Source finding:**
+- No explicit formula text length limit (no MAXFORMULA or equivalent check on total formula characters).
+- `main/sc/inc/compiler.hxx:59`: `MAXCODE = 2048` — maximum number of **tokens** in a formula.
+- `main/sc/inc/compiler.hxx:60`: `MAXSTRLEN = 1024` — maximum length of **one symbol** (individual token/string literal), not the formula as a whole.
+- `main/sc/source/core/tool/compiler.cxx:3973-3978`: Token array overflow (`errCodeOverflow`) triggers when `aArr.GetLen() >= MAXCODE`.
+- `main/sc/source/core/tool/compiler.cxx:2689-2691`: String literal overflow (`errStringOverflow`) when a single symbol exceeds `MAXSTRLEN-1` (1023 chars).
+- A 1026-character formula like `=1+1+...+1` (512 `+1` repetitions) requires ~1025 tokens, well under MAXCODE=2048. Each token (`1` or `+`) is well under MAXSTRLEN=1024.
+- **Limitation:** A single string literal in a formula cannot exceed 1023 characters (excluding quotes) due to MAXSTRLEN=1024. This does not prevent a 1024+ character formula composed of short tokens.
 
-**Classification:** Unverifiable by static inspection. Absence of a hard limit does not prove conformance. Runtime test required.
+**Classification:** RUNTIME_PENDING — Source appears capable (no formula-text cap; MAXCODE=2048 tokens supports 1024+ char formulas with short tokens), but runtime test `SG.BL-001-1024chars` not executed.
+
+---
 
 #### Function Parameters — at least 30
 
-**Source finding:** `MustHaveParamCount()` family (`interpre.hxx:897-927`) enforces per-function min/max parameter counts. No global 30-parameter cap found. Individual functions like MAX use `MustHaveParamCountMin` or exact counts.
+**Source finding:**
+- `main/sc/source/core/inc/interpre.hxx:897-927`: `MustHaveParamCount()` family enforces per-function min/max parameter counts.
+- `main/sc/source/core/tool/interpr1.cxx:3396-3400` (`ScMax`): Uses `MustHaveParamCountMin(nParamCount, 1)` — minimum 1 parameter, **no upper cap** specified.
+- `main/sc/source/core/tool/interpr1.cxx:1290-1294` (`ScMin`): Uses `MustHaveParamCount(nParamCount, NUMBER_OF_ARGUMENTS)` — exact count.
+- `main/sc/source/core/tool/interpr1.cxx:2292-2293`: Functions like `ScAbs` use `MustHaveParamCount(nParamCount, 1, 2)` — bounded 1-2.
+- No global 30-parameter cap found anywhere in source.
+- Parameter count is read via `GetByte()` (`sal_uInt8`), theoretically supporting up to 255 parameters per call. MAXCODE=2048 tokens is the practical ceiling (30 params ≈ 59 tokens).
+- `test/odf-validate/calcval-cases14.tsv:201`: `SG.BL-255args` (`=SUM(1;1;...;255 times)`) expects 255 — confirms AOO accepts 255 args.
+- `test/odf-validate/calcval-cases14.tsv:202`: `SG.BL-256args` expects `#ERR` — AOO guard, not ODF-mandated.
 
-**Classification:** Unverifiable by static inspection. No cap found, but runtime test required.
+**Classification:** RUNTIME_PENDING — Source supports ≥30 parameters for functions whose prototypes permit lists (MAX uses `MustHaveParamCountMin`, no upper cap). Runtime test `SG.BL-002-30params` not executed.
+
+---
 
 #### ASCII Strings — at least 32767 characters
 
-**Source finding:** `CheckStringResultLen()` (`interpre.hxx:930-936`) checks string concatenation against `STRING_MAXLEN`. The `STRING_MAXLEN` definition was not located in the sc module headers during this audit.
+**Source finding:**
+- `main/tools/inc/tools/string.hxx:110-120`: `STRING_MAXLEN` definition. `STRING32` is **not defined** anywhere in the codebase, so default applies: `STRING_MAXLEN = 0xFFFF = 65,535` (> 32,767 ODF minimum).
+- `main/sc/source/core/inc/interpre.hxx:930-936`: `CheckStringResultLen()` enforces STRING_MAXLEN at string concatenation (REPT, `&` operator, etc.).
+- `main/sc/source/core/tool/compiler.cxx:2689-2691`: MAXSTRLEN=1024 limits individual **string literals** in formulas to 1023 chars (excluding quotes).
+- `main/sc/source/core/tool/interpr1.cxx:7777-7790` (REPT), `:8296` (CONCATENATE), `:8324`: Use STRING_MAXLEN for result length checks.
+- `LEN(REPT("a";32767))` — the "a" literal is 1 char (well under MAXSTRLEN), REPT creates 32,767-char string at runtime (under STRING_MAXLEN=65,535).
+- **Limitation:** A direct 32,767-character string literal like `="aaa...a"` in a formula would fail at compile time due to MAXSTRLEN=1024. But ODF §3.7 requires strings of up to 32,767 characters to be *permitted*, which REPT demonstrates.
 
-**Classification:** Unverifiable by static inspection. STRING_MAXLEN value not confirmed.
+**Classification:** RUNTIME_PENDING — Source supports runtime strings ≥32,767 chars (STRING_MAXLEN=65,535; REPT creates them). String literals limited to 1023 chars does not violate ODF §3.7 (which concerns string values, not literal syntax). Runtime test `SG.BL-003-32767chars` not executed.
+
+---
 
 #### Nesting Depth — at least 7 levels
 
-**Source finding:** No nesting depth limit (MAXNEST or equivalent) found in FormulaCompiler or ScInterpreter source. No recursion depth enforcement found.
+**Source finding:**
+- No nesting depth limit (no MAXNEST, recursion depth counter, or nDepth equivalent) found in `main/sc/source/core/tool/compiler.cxx` or `main/sc/source/core/tool/interpr1.cxx`.
+- `main/sc/source/core/tool/compiler.cxx:4134`: Comment "RPN creation by recursion" — parser uses recursive descent without a depth guard.
+- `main/sc/inc/compiler.hxx:61`: `MAXJUMPCOUNT = 32` — limits CHOOSE function jump targets, not general nesting.
+- Evaluator is stack-based (`ScInterpreter::Push()`/`Pop()`) with no explicit evaluation depth limit beyond MAXCODE=2048 total tokens.
+- 7 nested `IF` levels uses ~15 tokens, well under MAXCODE=2048.
+- `test/odf-validate/calcval-cases14.tsv:198`: `SG.BL-004-7nesting` — 7 nested `IF` calls, expected result 1.
 
-**Classification:** Unverifiable by static inspection. Absence of limit does not prove conformance.
+**Classification:** RUNTIME_PENDING — Source has no nesting depth limit; parser recursion and evaluator stack have no depth guard. Runtime test `SG.BL-004-7nesting` not executed.
+
+---
 
 ### F.4.2 Remaining Syntax Requirements (§5)
 
@@ -313,7 +356,7 @@ None required. The ScDBCount empty-cell fix (F-GAP-004) is implemented at source
 
 ### Cross-Cutting Finding
 
-**Static source tracing confirms implementation presence, not semantic equivalence.** All Small Group syntax and basic limits infrastructure exists in source, but none has been verified against ODF 1.4 normative expected results at runtime. This is consistent with the E.1/E.1.1 finding that all requirements are UNVERIFIED pending runtime execution.
+**Static source tracing confirms implementation presence and absence of blocking limits, not semantic equivalence.** All Small Group syntax and basic limits infrastructure exists in source, with no hard limits found that would prevent meeting ODF 1.4 §3.7 requirements. None has been verified against ODF 1.4 normative expected results at runtime. This is consistent with the E.1/E.1.1 finding that all requirements are RUNTIME_PENDING pending runtime execution.
 
 ---
 
@@ -321,7 +364,7 @@ None required. The ScDBCount empty-cell fix (F-GAP-004) is implemented at source
 
 | Category | Count | Status |
 |---|---|---|
-| Basic Limits (§3.7) | 4 | Unverifiable statically; no hard limits found |
+| Basic Limits (§3.7) | 4 | RUNTIME_PENDING — source capable for all 4; runtime verification blocked (no build tree) |
 | Syntax (§5) | 11 | Implementation present; runtime-unverified |
 | COUNTA/COUNTBLANK (§6.13.7-8) | 2 | Fully matches; formula-cell `""` treated as blank per implementation-defined choice (§6.13.8) |
 | INDEX (§6.14.6) | 1 | NOT ODF 1.4 compliant — bRowArray shortcut present (undone by commit 8f3b3b25a2); INDEX(H1:L1;3) returns value instead of Error |
