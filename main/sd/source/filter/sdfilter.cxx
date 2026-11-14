@@ -26,9 +26,11 @@
 #include <com/sun/star/task/XStatusIndicatorFactory.hpp>
 
 #include <memory>
+#include <set>
 
 #include <tools/debug.hxx>
 #include <osl/module.hxx>
+#include <osl/mutex.hxx>
 #include <sfx2/docfile.hxx>
 #include <sfx2/viewfrm.hxx>
 #include <sfx2/progress.hxx>
@@ -87,9 +89,26 @@ extern "C" { static void SAL_CALL thisModule() {} }
 
 ::osl::Module* SdFilter::OpenLibrary( const ::rtl::OUString& rLibraryName ) const
 {
+    const ::rtl::OUString aFullName( ImplGetFullLibraryName( rLibraryName ) );
     std::auto_ptr< osl::Module > mod(new osl::Module);
-    return mod->loadRelative(&thisModule, ImplGetFullLibraryName(rLibraryName))
-        ? mod.release() : 0;
+    if ( !mod->loadRelative( &thisModule, aFullName ) )
+        return 0;
+
+    // Callers delete the returned Module, which unloads the library.  But an
+    // import leaves objects in the document whose virtual-function tables live
+    // in the filter library or in a library it pulls in (sdfilt -> msfilter):
+    // once that is unloaded, the next virtual call on such an object jumps into
+    // unmapped memory.  Opening a .ppt as the first document crashed that way
+    // in SdrObjListIter right after the import; with any document opened
+    // before, msfilter was still held by another component and survived.
+    // Take one extra reference per library and never release it, so a filter
+    // library stays loaded for the rest of the process once it has been used.
+    static std::set< ::rtl::OUString > aPinned;
+    ::osl::MutexGuard aGuard( ::osl::Mutex::getGlobalMutex() );
+    if ( aPinned.insert( aFullName ).second )
+        osl_loadModuleRelative( &thisModule, aFullName.pData, SAL_LOADMODULE_DEFAULT );
+
+    return mod.release();
 }
 
 // -----------------------------------------------------------------------------
