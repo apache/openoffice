@@ -237,6 +237,7 @@ ReadyToInstall	DlgTitle3	Text	13	6	257	25	65538		OOO_CONTROL_172
 ReadyToInstall	InstallNow	PushButton	230	243	66	17	3		OOO_CONTROL_173	Cancel	
 ReadyToInstall	DesktopLink	CheckBox	21	100	300	10	3	CREATEDESKTOPLINK	OOO_CONTROL_319		
 ReadyToInstall	UpdateCheckBox	CheckBox	21	120	200	10	3	REMOVEOLDPRODUCTS	OOO_CONTROL_320		
+ReadyToInstall	ResetProfile	CheckBox	21	140	330	10	3	RESETUSERPROFILE	OOO_CONTROL_321		
 ReadyToRemove	Back	PushButton	164	243	66	17	3		OOO_CONTROL_174	RemoveNow	
 ReadyToRemove	Banner	Bitmap	0	0	374	44	1048577		BannerBmp		
 ReadyToRemove	BannerLine	Line	0	44	376	0	1				
