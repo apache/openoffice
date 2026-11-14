@@ -302,8 +302,8 @@ None required. The ScDBCount empty-cell fix (F-GAP-004) is implemented at source
 - `main/sc/source/core/tool/interpr1.cxx:2292-2293`: Functions like `ScAbs` use `MustHaveParamCount(nParamCount, 1, 2)` — bounded 1-2.
 - No global 30-parameter cap found anywhere in source.
 - Parameter count is read via `GetByte()` (`sal_uInt8`), theoretically supporting up to 255 parameters per call. MAXCODE=2048 tokens is the practical ceiling (30 params ≈ 59 tokens).
-- `test/odf-validate/calcval-cases14.tsv:201`: `SG.BL-255args` (`=SUM(1;1;...;255 times)`) expects 255 — confirms AOO accepts 255 args.
-- `test/odf-validate/calcval-cases14.tsv:202`: `SG.BL-256args` expects `#ERR` — AOO guard, not ODF-mandated.
+- `test/odf-validate/calcval-cases14.tsv:201`: `SG.BL-255args` (`=SUM(1;1;...;255 times)`) — expected result 255 (unverified; no runtime execution possible).
+- `test/odf-validate/calcval-cases14.tsv:202`: `SG.BL-256args` — expected `#ERR` (unverified; described in TSV as an AOO guard, not ODF-mandated).
 
 **Classification:** RUNTIME_PENDING — Source supports ≥30 parameters for functions whose prototypes permit lists (MAX uses `MustHaveParamCountMin`, no upper cap). Runtime test `SG.BL-002-30params` not executed.
 
