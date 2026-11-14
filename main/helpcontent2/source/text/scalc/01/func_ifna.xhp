@@ -47,7 +47,7 @@
 <paragraph role="paragraph" id="par_id3160010" xml-lang="en-US" l10n="U">When <emph>Value</emph> is a matrix, only matrix elements containing #N/A are replaced by <emph>Alternative</emph>; all other elements pass through unchanged.</paragraph>
 <paragraph role="heading" id="hd_id3160011" xml-lang="en-US" level="3" l10n="U">Example</paragraph>
 <paragraph role="paragraph" id="par_id3160012" xml-lang="en-US" l10n="U"><item type="input">=IFNA(VLOOKUP("zzz";A1:B10;2;0); "Not found")</item> returns <quote>Not found</quote> when the lookup value is not present and produces #N/A.</paragraph>
-<paragraph role="paragraph" id="par_id3160013" xml-lang="en-US" l10n="U"><item type="input">=IFNA(1/0; 0)</item> returns Err:502 (division by zero) because IFNA does not catch errors other than #N/A.</paragraph>
+<paragraph role="paragraph" id="par_id3160013" xml-lang="en-US" l10n="U"><item type="input">=IFNA(1/0; 0)</item> returns #DIV/0! because IFNA does not catch errors other than #N/A.</paragraph>
 <embed href="text/shared/00/00000001.xhp#siehe"/>
 <paragraph role="paragraph" id="par_id3160014" xml-lang="en-US" l10n="U"><link href="text/scalc/01/04060104.xhp#isna" name="ISNA">ISNA</link>.</paragraph>
 </body>

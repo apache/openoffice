@@ -44,7 +44,7 @@
 <paragraph role="heading" id="hd_id3160608" xml-lang="en-US" level="3" l10n="U">Remarks</paragraph>
 <paragraph role="paragraph" id="par_id3160609" xml-lang="en-US" l10n="U">If <emph>Shift</emph> is 0, <emph>Number</emph> is returned unchanged.</paragraph>
 <paragraph role="paragraph" id="par_id3160610" xml-lang="en-US" l10n="U">If <emph>Shift</emph> is greater than or equal to 64 (or less than or equal to -64), the result is 0.</paragraph>
-<paragraph role="paragraph" id="par_id3160611" xml-lang="en-US" l10n="U"><emph>Number</emph> is truncated to an integer before the operation. Non-integer, negative, or out-of-range values for <emph>Number</emph>, or non-finite values for <emph>Shift</emph>, return an error (Err:502).</paragraph>
+<paragraph role="paragraph" id="par_id3160611" xml-lang="en-US" l10n="U"><emph>Number</emph> and <emph>Shift</emph> are rounded down to integers before the operation. A <emph>Number</emph> that is negative after rounding down, greater than 2^48 - 1, or not finite returns an error (Err:502), as does a <emph>Shift</emph> that is not finite.</paragraph>
 <paragraph role="paragraph" id="par_id3160612" xml-lang="en-US" l10n="U">Example: decimal 8 is binary <quote>1000</quote>. BITRSHIFT(8; 2) shifts right by 2, giving binary <quote>10</quote>, which is decimal 2.</paragraph>
 <paragraph role="heading" id="hd_id3160613" xml-lang="en-US" level="3" l10n="U">Example</paragraph>
 <paragraph role="paragraph" id="par_id3160614" xml-lang="en-US" l10n="U"><item type="input">=BITRSHIFT(8; 2)</item> returns 2.</paragraph>

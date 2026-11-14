@@ -41,7 +41,7 @@
 <paragraph role="code" id="par_id3160305" xml-lang="en-US" l10n="U">BITOR(Number1; Number2)</paragraph>
 <paragraph role="paragraph" id="par_id3160306" xml-lang="en-US" l10n="U"><emph>Number1</emph> and <emph>Number2</emph> are integers greater than or equal to 0 and less than 2^48 (281474976710656).</paragraph>
 <paragraph role="heading" id="hd_id3160307" xml-lang="en-US" level="3" l10n="U">Remarks</paragraph>
-<paragraph role="paragraph" id="par_id3160308" xml-lang="en-US" l10n="U">Arguments are truncated to integers before the operation. Non-integer, negative, or out-of-range values return an error (Err:502).</paragraph>
+<paragraph role="paragraph" id="par_id3160308" xml-lang="en-US" l10n="U">Arguments are rounded down to integers before the operation. Values that are negative after rounding down, greater than 2^48 - 1, or not finite return an error (Err:502).</paragraph>
 <paragraph role="paragraph" id="par_id3160309" xml-lang="en-US" l10n="U">Example: decimal 6 is binary <quote>110</quote>, decimal 3 is binary <quote>011</quote>. BITOR(6; 3) returns 7 (binary <quote>111</quote>).</paragraph>
 <paragraph role="heading" id="hd_id3160310" xml-lang="en-US" level="3" l10n="U">Example</paragraph>
 <paragraph role="paragraph" id="par_id3160311" xml-lang="en-US" l10n="U"><item type="input">=BITOR(6; 3)</item> returns 7.</paragraph>
