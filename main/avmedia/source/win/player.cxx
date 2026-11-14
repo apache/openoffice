@@ -50,7 +50,7 @@ namespace avmedia { namespace win {
 
 LRESULT CALLBACK MediaPlayerWndProc_2( HWND hWnd,UINT nMsg, WPARAM nPar1, LPARAM nPar2 )
 {
-    Player* pPlayer = (Player*) ::GetWindowLong( hWnd, 0 );
+    Player* pPlayer = reinterpret_cast< Player* >( ::GetWindowLongPtr( hWnd, 0 ) );
     bool    bProcessed = true;
 
     if( pPlayer )
@@ -277,7 +277,7 @@ void SAL_CALL Player::start(  )
 
 				memset( mpWndClass, 0, sizeof( *mpWndClass ) );
 				mpWndClass->hInstance = GetModuleHandle( NULL );
-				mpWndClass->cbWndExtra = sizeof( DWORD );
+				mpWndClass->cbWndExtra = sizeof( LONG_PTR );
 				mpWndClass->lpfnWndProc = MediaPlayerWndProc_2;
 				mpWndClass->lpszClassName = "com_sun_star_media_Sound_Player";
 				mpWndClass->hbrBackground = (HBRUSH) ::GetStockObject( BLACK_BRUSH );
@@ -294,7 +294,7 @@ void SAL_CALL Player::start(  )
 				if ( mnFrameWnd )
 				{
 					::ShowWindow((HWND) mnFrameWnd, SW_HIDE);
-					::SetWindowLong( (HWND) mnFrameWnd, 0, (DWORD) this );
+					::SetWindowLongPtr( (HWND) mnFrameWnd, 0, reinterpret_cast< LONG_PTR >( this ) );
 					// mpVW->put_Owner( (OAHWND) mnFrameWnd );
 					setNotifyWnd( mnFrameWnd );
 				}

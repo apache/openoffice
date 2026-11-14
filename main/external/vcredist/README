@@ -11,12 +11,16 @@ desktop/win32/source/setup/setup.cpp all refer to the vcredist_* spelling.
 
 Which ones
 ----------
-The Visual C++ v14 Redistributable (Visual Studio 2015-2022), latest version:
+The Visual C++ v14 Redistributable that ships with the Visual Studio 2019
+build tools used to compile the office (14.29.x, VS2019 16.11).  It is
+already on the build machine:
 
-    x86  https://aka.ms/vc14/vc_redist.x86.exe
-    x64  https://aka.ms/vc14/vc_redist.x64.exe
+    <VS2019>/VC/Redist/MSVC/14.29.30133/vc_redist.x86.exe
+    <VS2019>/VC/Redist/MSVC/14.29.30133/vc_redist.x64.exe
 
-These are permalinks that always resolve to the current v14 release.
+Do NOT take the "latest" permalinks (https://aka.ms/vc14/vc_redist.x64.exe):
+the current v14 releases no longer install on Windows 7 SP1, which is this
+build's floor -- see below.
 
 The rule is that the redistributable must be the same version as, or newer
 than, the MSVC build tools used to compile the office.  A v14 redistributable
@@ -34,11 +38,20 @@ runtime.
 
 Supported Windows versions
 --------------------------
-The current v14 redistributable supports Windows 10 and 11, and Windows Server
-2016 / 2019 / 2022 / 2025 -- it does not install on anything older.  That is
-what sets the minimum Windows version for a build made with a modern toolset;
-it is not an independent choice.
+The office is built for Windows 7 SP1 (WINVER/_WIN32_WINNT 0x0601), and both
+setup.exe and the MSI launch condition enforce that floor.  The bundled
+redistributable must therefore install on Windows 7 SP1 too.
 
-If an older floor is ever needed, an older v14 servicing release has to be
-pinned here explicitly, and its own supported-OS list checked -- the v14 line
-has raised its floor over time.
+The current v14 redistributable supports only Windows 10 and 11 and Windows
+Server 2016 and later -- it does not install on anything older.  The VS2019
+16.11 redistributable (14.29.x) still supports Windows 7 SP1, and because it
+matches the toolset it also satisfies "same version or newer".  If the
+toolset is ever raised, the redistributable has to move with it, and the new
+release's supported-OS list has to be checked against the floor -- the v14
+line has raised its floor over time.
+
+Check what is in this directory before building: the file version of
+vcredist_x64.exe must start with 14., not 9.0.  setup.exe runs it with the v14
+switches "/install /quiet /norestart"; the 2008 package does not understand
+them, fails, and setup.exe stops with "The Microsoft Visual C++ runtime could
+not be installed".

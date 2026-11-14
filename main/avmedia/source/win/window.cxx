@@ -75,7 +75,7 @@ static ::osl::Mutex& ImplGetOwnStaticMutex()
 
 LRESULT CALLBACK MediaPlayerWndProc( HWND hWnd,UINT nMsg, WPARAM nPar1, LPARAM nPar2 )
 {
-    Window* pWindow = (Window*) ::GetWindowLong( hWnd, 0 );
+    Window* pWindow = reinterpret_cast< Window* >( ::GetWindowLongPtr( hWnd, 0 ) );
     bool    bProcessed = true;
 
     if( pWindow )
@@ -184,7 +184,7 @@ WNDCLASS* lcl_getWndClass()
 
         memset( s_pWndClass, 0, sizeof( *s_pWndClass ) );
         s_pWndClass->hInstance = GetModuleHandle( NULL );
-        s_pWndClass->cbWndExtra = sizeof( DWORD );
+        s_pWndClass->cbWndExtra = sizeof( LONG_PTR );
         s_pWndClass->lpfnWndProc = MediaPlayerWndProc;
         s_pWndClass->lpszClassName = "com_sun_star_media_PlayerWnd";
         s_pWndClass->hbrBackground = (HBRUSH) ::GetStockObject( BLACK_BRUSH );
@@ -342,7 +342,7 @@ bool Window::create( const uno::Sequence< uno::Any >& rArguments )
 
         if( mnFrameWnd )
         {
-            ::SetWindowLong( (HWND) mnFrameWnd, 0, (DWORD) this );
+            ::SetWindowLongPtr( (HWND) mnFrameWnd, 0, reinterpret_cast< LONG_PTR >( this ) );
 
 #ifdef DDRAW_TEST_OUTPUT
             IDirectDraw7*           pDDraw;
