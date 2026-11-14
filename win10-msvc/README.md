@@ -274,11 +274,11 @@ property of the overlay no longer covers these three defines.
 
 Kept as they were, on purpose:
 
-- **The GUI subsystem version** stays pinned to 5.02 (x64) / 5.01 (x86) in
+* **The GUI subsystem version** stays pinned to 5.02 (x64) / 5.01 (x86) in
   `wntmsc14.mk`. It is *not* a floor setting: 6.00 makes Windows route drops
   through the brokered drag-and-drop path, which AOO's drop targets fail
   (drag-and-drop dead in Gallery, Calc and Draw).
-- **Modules that state their own value.** `fpicker` and
+* **Modules that state their own value.** `fpicker` and
   `sal/systools/win32/kill` replace it with `-U`/`-D`, `shell` adds a second
   `-D`, `openssl` builds with its own flags — all lower than the floor, so
   their code keeps using only what it did.
