@@ -1392,7 +1392,7 @@ INT_PTR CALLBACK DialogProc( HWND hwndDlg, UINT uMsg, WPARAM wParam, LPARAM lPar
 			HINSTANCE	hInstance = (HINSTANCE)GetWindowLongPtr(hwndDlg, GWLP_HINSTANCE );
 			TCHAR		szBuffer[FORMATBUFSIZE];
 
-			SetWindowLongPtr( hwndDlg, GWLP_USERDATA, (LONG)lParam );
+			SetWindowLongPtr( hwndDlg, GWLP_USERDATA, (LONG_PTR)lParam );
 			hwndPages[0] = CreateDialog(
 				hInstance,
 				MAKEINTRESOURCE(IDD_WELCOME_PAGE),
