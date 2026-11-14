@@ -525,6 +525,15 @@ sub get_fileversion
         {
             $vendornumber = $allvariables->{'VENDORPATCHVERSION'};
         }
+		# Windows Installer stores each field of a file version in 16 bits, so a
+		# build id above 65535 produces a package that every Windows machine
+		# rejects at InstallValidate with "Internal Error 2725 -- Invalid
+		# database tables".  The failure gives no hint of its cause, so refuse to
+		# build such a package rather than shipping one that cannot be installed.
+		if (( $installer::globals::buildid =~ /^\d+$/ ) && ( $installer::globals::buildid > 65535 ))
+		{
+			installer::exiter::exit_program("ERROR: build id $installer::globals::buildid exceeds 65535, the largest value Windows Installer accepts in a version field. Lower BUILD in solenv/inc/minor.mk.", "get_fileversion");
+		}
 		$fileversion = $libraryversion . "\." . $installer::globals::buildid . "\." . $vendornumber;
 		if ( $onefile->{'FileVersion'} )
         {

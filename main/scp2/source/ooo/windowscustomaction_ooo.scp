@@ -234,6 +234,20 @@ WindowsCustomAction gid_Customaction_Check_Install_Directory
 	Assignment3 = ("ControlEvent", "CustomSetup", "Next", "DoAction", "CheckInstallDirectory", "Not Installed", "2");
 End
 
+// "Reset my user profile" on the ReadyToInstall dialog (or RESETUSERPROFILE=1
+// on the command line).  Immediate and after InstallFinalize, so it runs only
+// after a successful install and impersonated as the installing user, whose
+// AppDataFolder holds the profile.  Return value ignored: a profile that
+// cannot be moved must not fail an install that has already succeeded.
+WindowsCustomAction gid_Customaction_ResetUserProfile
+	Name = "ResetUserProfile";
+	Typ = "65";
+	Source = "shlxtmsi.dll";
+	Target = "ResetUserProfile";
+	Inbinarytable = 1;
+	Assignment1 = ("InstallExecuteSequence", "RESETUSERPROFILE=\"1\" And Not REMOVE=\"ALL\"", "behind_InstallFinalize");
+End
+
 WindowsCustomAction gid_Customaction_Dotnetcheck
 	Name = "DotNetCheck";
 	Typ = "321";
