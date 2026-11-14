@@ -339,24 +339,30 @@ None required. The ScDBCount empty-cell fix (F-GAP-004) is implemented at source
 
 ### F.4.2 Remaining Syntax Requirements (§5)
 
-| Requirement | Section | AOO Implementation | Status |
-|---|---|---|---|
-| Parenthesized expressions | §5.2 | FormulaCompiler.cxx handles via RangeLine/IntersectionLine/UnaryLine | Present, runtime-unverified |
-| Constant Numbers | §5.3 | FormulaCompiler.cxx tokenizes numeric literals | Present, runtime-unverified |
-| Constant Strings with quote escaping | §5.4 | FormulaCompiler.cxx tokenizes string literals | Present, runtime-unverified |
-| Operator precedence (Table 1) | §5.5 | Parser: UnionLine → IntersectionLine → RangeLine → UnaryLine → binary ops | Present, runtime-unverified |
-| Functions and parameters | §5.6 | FormulaCompiler.cxx compiles function calls | Present, runtime-unverified |
-| Nonstandard function names as errors | §5.7 | ocNoName opcode; xlformula.cxx stubs | Present, runtime-unverified |
-| Cell and range references | §5.8 | compiler.cxx PopDoubleRef/PopSingleRef | Present, runtime-unverified |
-| Simple Named Expressions | §5.11 | compiler.cxx:NameLine (ocName opcode) | Present; requires pre-defined name |
-| Error constants and propagation | §5.12 | ocErrNull-ocErrNA in compiler.hrc; nGlobalError/SetError in interpre.hxx | Present, runtime-unverified |
-| Whitespace handling | §5.14 | ocSpaces → ocIntersect at FormulaCompiler.cxx:830-831 | Present, runtime-unverified |
-| Reference intersection `!` | §6.4.12 | interpr1.cxx:ScIntersect | Present, runtime-unverified |
-| Reference range `:` | §6.4.11 | interpr1.cxx:ScRangeFunc | Present, runtime-unverified |
+**Normative reference:** ODF 1.4 §2.3.2.B requires Small Group Evaluators to implement syntax from: Criteria §4.11.11; Basic Expressions §5.2; Constant Numbers §5.3; Constant Strings §5.4; Operators §5.5; Functions and Function Parameters §5.6; Nonstandard Function Names §5.7; References §5.8; Simple Named Expressions §5.11; Errors §5.12; Whitespace §5.14.
+
+| Requirement | Section | AOO Implementation | Source Location | Status |
+|---|---|---|---|---|
+| Parenthesized expressions / Expression grammar | §5.2 | Formula ::= Intro? Expression; Expression ::= Number \| String \| Array \| PrefixOp Expression \| Expression PostfixOp \| Expression InfixOp Expression \| '(' Expression ')' \| FunctionName '(' ParameterList ')' \| Reference \| QuotedLabel \| AutomaticIntersection \| NamedExpression \| Error | `main/sc/source/core/tool/compiler.cxx:3570` (NextNewToken), :3780 (CompileString) | RUNTIME_PENDING |
+| Constant Numbers | §5.3 | `Number ::= StandardNumber | '.' [0-9]+ ([eE] [-+]? [0-9]+)?`, `StandardNumber ::= [0-9]+ ('.' [0-9]+)? ([eE] [-+]? [0-9]+)?`. Decimal separator '.', scientific notation E/e. Negative numbers are prefix '-' on positive numbers. | `main/sc/source/core/tool/compiler.cxx:2650+` (IsValue, number parsing) | RUNTIME_PENDING |
+| Constant Strings | §5.4 | `String ::= '"' ([^"#x00] | '""')* '"'`. Double-quote escaped by duplication. | `main/sc/source/core/tool/compiler.cxx:2682` (IsString), :2689-2691 (string literal overflow at MAXSTRLEN-1) | RUNTIME_PENDING |
+| Operators | §5.5 | PrefixOp '+', '-'; PostfixOp '%'; InfixOp: ArithmeticOp (+-*/^), ComparisonOp (=<> <> < > <= >=), StringOp (&), ReferenceOp (! ~ :). Precedence per Table 1: ! > : > prefix +,- > ^ > *,/ > +,- > & > comparison. | `main/sc/source/core/tool/compiler.cxx` RangeLine → IntersectionLine → RangeLine → UnaryLine → binary ops; `main/sc/inc/compiler.hxx:61` (MAXJUMPCOUNT=32, CHOOSE only) | RUNTIME_PENDING |
+| Functions and Function Parameters | §5.6 | `FunctionName ::= LetterXML (LetterXML | DigitXML | '_' | '.' | CombiningCharXML)*`. Case-insensitive. Semicolon ';' separator. Empty parameters allowed (considered 0 params, not one empty param). | `main/sc/source/core/tool/compiler.cxx:3648` (function name detection), :3661-3668 (must be followed by '('); `main/sc/source/core/inc/interpre.hxx:897-927` (MustHaveParamCount family) | RUNTIME_PENDING |
+| Nonstandard Function Names | §5.7 | Function names not in spec need prefix (e.g., COM.FOO.BAR). Unknown functions → Error value other than #N/A. | `main/sc/source/core/tool/compiler.cxx:3741,:4029,:4072,:4091,:4101,:5493,:5501` (errNoName); `main/sc/source/core/tool/interpr4.cxx:3106,:3205` (PushError(errNoName)) | RUNTIME_PENDING |
+| References | §5.8 | `Reference ::= '[' (Source? RangeAddress) | ReferenceError ']'`. RangeAddress supports cell, row, column, whole-row, whole-column. References begin with '[' to disambiguate from function names. | `main/sc/source/core/tool/compiler.cxx` (IsReference, PopDoubleRef/PopSingleRef); `main/sc/inc/compiler.hxx` | RUNTIME_PENDING |
+| Simple Named Expressions | §5.11 | `SimpleNamedExpression ::= Identifier | '$$' (Identifier | SingleQuoted)`. Global scope, case-consistent matching. | `main/sc/source/core/tool/compiler.cxx` (NameLine, ocName opcode); `main/sc/source/core/inc/interpre.hxx` | RUNTIME_PENDING |
+| Constant Errors | §5.12 | `#N/A` required; other Errors optional. Error syntax: `'#' [A-Z0-9]+ ([!?] | ('/' ([A-Z] | ([0-9] [!?])))`. Functions propagate Errors unless stated otherwise. | `main/formula/inc/formula/compiler.hrc:30-36` (SC_OPCODE_ERROR_NULL through SC_OPCODE_ERROR_NA); `main/sc/source/core/tool/interpr4.cxx` (PushError, NOTAVAILABLE) | RUNTIME_PENDING |
+| Whitespace | §5.14 | Whitespace ::= #x20 \| #x09 \| #x0a \| #x0d. Ignored outside strings, around operators, before/after =, before function names (but not between name and '('). | `main/sc/source/core/tool/compiler.cxx:3583-3593` (NextNewToken generates ocSpaces), :3655-3667 (whitespace before '(' for function names) | RUNTIME_PENDING |
+
+### Coverage note: Criteria §4.11.11
+
+Criteria syntax (§4.11.11) is also required by §2.3.2.B but is covered under **F-GAP-004** (G.4 — DCOUNT/ScDBCount empty-cell fix) rather than G.6, because its primary interface is through database functions rather than general expression syntax. See the Criteria Syntax section in F-GAP-004.
+
+---
 
 ### Cross-Cutting Finding
 
-**Static source tracing confirms implementation presence and absence of blocking limits, not semantic equivalence.** All Small Group syntax and basic limits infrastructure exists in source, with no hard limits found that would prevent meeting ODF 1.4 §3.7 requirements. None has been verified against ODF 1.4 normative expected results at runtime. This is consistent with the E.1/E.1.1 finding that all requirements are RUNTIME_PENDING pending runtime execution.
+**Static source tracing confirms implementation presence and absence of blocking limits, not semantic equivalence.** All Small Group syntax infrastructure exists in source with correct grammar structure for all 11 §2.3.2.B syntax requirements plus Criteria §4.11.11. None has been verified against ODF 1.4 normative expected results at runtime. All syntax requirements are RUNTIME_PENDING pending runtime execution.
 
 ---
 
@@ -365,7 +371,7 @@ None required. The ScDBCount empty-cell fix (F-GAP-004) is implemented at source
 | Category | Count | Status |
 |---|---|---|
 | Basic Limits (§3.7) | 4 | RUNTIME_PENDING — source capable for all 4; runtime verification blocked (no build tree) |
-| Syntax (§5) | 11 | Implementation present; runtime-unverified |
+| Syntax (§5) | 11 | RUNTIME_PENDING — implementation present for all 11; runtime verification blocked (no build tree) |
 | COUNTA/COUNTBLANK (§6.13.7-8) | 2 | Fully matches; formula-cell `""` treated as blank per implementation-defined choice (§6.13.8) |
 | INDEX (§6.14.6) | 1 | NOT ODF 1.4 compliant — bRowArray shortcut present (undone by commit 8f3b3b25a2); INDEX(H1:L1;3) returns value instead of Error |
 | Criteria Syntax (§4.11.11) | 1 | Implemented; ScDBCount empty-cell fix applied (source-level; runtime-unverified) |
