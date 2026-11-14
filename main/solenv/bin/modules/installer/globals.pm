@@ -113,7 +113,10 @@ BEGIN
 	$destdir = "";
 	$rootpath = "";
 
-	$required_dotnet_version = "2.0.0.0";
+	# The CLI-UNO assemblies are built for the .NET 4 runtime (CLR 4.0.30319).
+	# Below that, DotNetCheck sets DOTNET_SUFFICIENT=0 and the assembly
+	# components are skipped instead of failing the GAC install (error 1304).
+	$required_dotnet_version = "4.0.0.0";
 	$productextension = "";
 	$languageproduct = undef;
 	$build = "";
