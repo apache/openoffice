@@ -9,14 +9,14 @@
 
 | Phase | Status | Commit | Notes |
 |---|---|---|---|
-| G.1 | Complete | `41da3628f9` + Help topics commit | STRING_MAXLEN documented; ScDBCount empty-cell TODO investigated; Help topics added for IFNA, SKEWP, BITAND, BITOR, BITXOR, BITLSHIFT, BITRSHIFT |
-| G.2 | Investigated (not implemented) | — | Fix approach documented; requires AOO build/test environment |
+| G.1 | Complete | `41da3628f9` + Help topics commit | STRING_MAXLEN documented; ScDBCount empty-cell fix applied via `CountRecords()`; Help topics added for IFNA, SKEWP, BITAND, BITOR, BITXOR, BITLSHIFT, BITRSHIFT |
+| G.2 | Implemented (source-level) | `efd87262f2` + regression tests | `ScDBCount()` missing-field path uses `CountRecords()` (dociter.cxx:685-716) which iterates row-by-row via `IsQueryValid()`; `ScDBCount2()` same pattern; calcval `DB.*` regression cases added | 
 | G.3 | Pending | — | Decision record needed before any code change |
 | G.4 | Pending | — | Corpus regression analysis needed |
 | G.5 | Pending | — | Runtime verification only; no build available |
 | G.6 | Pending | — | Runtime verification only; no build available |
 
-**Blocker:** No configured AOO build tree; `sc`/`scaddins` not built; calcval harness macOS-only. Runtime verification deferred to consolidated Calc testing phase.
+**Blocker:** No configured AOO build tree; `sc`/`scaddins` not built; calcval harness cannot run. Runtime verification deferred to consolidated Calc testing phase. G.2 source-level fix is complete and verified statically; runtime verification awaits build environment.
 
 
 ## Principles
@@ -42,18 +42,26 @@ These items require no production source modification and can be completed immed
 
 ## Phase G.2 — Investigation Complete: Criteria Syntax Empty-Cell Fix (ScDBCount)
 
-**STATUS: DONE — DCOUNT and DCOUNTA without a field count every matching record; calcval `DB.*` cases**
+**STATUS: IMPLEMENTED (source-level)** — DCOUNT and DCOUNTA without a field count every matching record via `CountRecords()`; calcval `DB.*` regression cases added. Runtime verification blocked: no AOO build tree available.
 
-This is a targeted fix with a clear TODO in source and contained blast radius. The root cause is confirmed: `ScQueryCellIterator` ("run through all not empty cells") skips empty cells, and `ScDBQueryDataIterator` skips `CELLTYPE_NONE` via `default` case at `dociter.cxx:655-657`. Per ODF 1.4 §6.9.3, DCOUNT without a field should count ALL matching rows including those with empty result cells.
+The root cause is confirmed: `ScQueryCellIterator` ("run through all not empty cells") skips empty cells, and `ScDBQueryDataIterator::getCurrent()` skips `CELLTYPE_NONE` via `default` case at `dociter.cxx:655-657`. Per ODF 1.4 §6.9.3, DCOUNT without a field should count ALL matching rows including those with empty result cells.
 
-| Order | Gap ID | Area | File | Finding | Fix Approach | Risk |
+**Fix applied** (trunk commits rebased onto `openformula`):
+- `main/sc/source/core/data/dociter.cxx:685-716` — `ScDBQueryDataIterator::DataAccessInternal::countRecords()` iterates row-by-row from `nRow1` to `nRow2`, checking `aHasContent` (row has any non-NOTE cell in any database column) and `IsQueryValid()` per row. Counts all matching records regardless of cell emptiness in the field column.
+- `main/sc/source/core/tool/interpr1.cxx:6871-6902` — `ScDBCount()` missing-field path calls `aRecIter.CountRecords()` instead of `ScQueryCellIterator` iteration.
+- `main/sc/source/core/tool/interpr1.cxx:6905-6935` — `ScDBCount2()` (DCOUNTA) missing-field path calls `aRecIter.CountRecords()`.
+
+**Regression tests added** to `test/odf-validate/calcval-cases14.tsv`:
+- `DB.DCOUNT.f.zero` — DCOUNT with field, numeric zero vs empty: A=0 counts via COUNT, B empty does not
+- `DB.DCOUNT.nf.zero` — DCOUNT without field: all matching records count regardless of cell content
+- `DB.DCOUNTA.f.zero` — DCOUNTA with field, numeric zero vs empty: A=0 counts as non-empty via COUNTA, B empty does not
+
+| Order | Gap ID | Area | File | Finding | Fix | Risk |
 |---|---|---|---|---|---|---|
-| G.2.1 | F-GAP-004 | Criteria — DCOUNT empty-cell matching | `main/sc/source/core/tool/interpr1.cxx:6838-6845` | ScDBCount missing-field path uses `ScQueryCellIterator` which skips empty cells; DCOUNT undercounts when matching rows have empty result cells | Replace `ScQueryCellIterator` iteration with row-by-row iteration using `ScDBQueryDataIterator::IsQueryValid()` per row, counting all matching rows regardless of cell emptiness; keep fix isolated to ScDBCount missing-field path | Low — isolated to DCOUNT without field; documented TODO already exists |
-
-**Implementation detail:** The fix would iterate `nRow` from `nRow1` to `nRow2`, calling `IsQueryValid(*pDok, *pQueryParam, nTab, nRow, pCell)` for each row (with `pCell` possibly NULL for empty cells), and incrementing `nCount` for each valid match. This differs from current `ScQueryCellIterator` approach which only visits rows with non-empty cells.
+| G.2.1 | F-GAP-004 | Criteria — DCOUNT empty-cell matching | `interpr1.cxx:6838-6845` (was) → `interpr1.cxx:6879-6882` + `dociter.cxx:685-716` | ScDBCount missing-field path previously used `ScQueryCellIterator` which skips empty cells; DCOUNT undercounted when matching rows had empty result cells | Replaced with row-by-row `CountRecords()` using `IsQueryValid()` per row; counts all matching rows regardless of cell emptiness | Low — isolated to DCOUNT/DCOUNTA without field; documented TODO already resolved |
 
 **Dependencies:** None.  
-**Runtime validation needed:** Yes — DCOUNT with empty result cells. **Blocked:** No AOO build tree available; cannot build/test.
+**Runtime validation needed:** Yes — DCOUNT/DCOUNTA with empty result cells. **Blocked:** No AOO build tree available; cannot build/test.
 
 ## Phase G.3 — Medium-Risk: COUNTA/COUNTBLANK Behavior Review
 
@@ -108,10 +116,10 @@ No code changes expected (no hard limits found). Verification only.
 
 ```
 G.1 (docs, COMPLETE) ──┐
-                       ├── G.2 (ScDBCount empty-cell, INVESTIGATED) ──┐
-G.5 (limits verification) ──┤                                        ├── G.3 (COUNTBLANK decision)
-G.6 (syntax verification) ──┤                                        │
-G.4 (INDEX compatibility) ──┘                                        └── (runtime-validated)
+                        ├── G.2 (ScDBCount empty-cell, IMPLEMENTED source-level) ──┐
+G.5 (limits verification) ──┤                                                        ├── G.3 (COUNTBLANK decision)
+G.6 (syntax verification) ──┤                                                        │
+G.4 (INDEX compatibility) ──┘                                                        └── (runtime-validated)
 ```
 
 ## Estimated Implementation Complexity
@@ -119,7 +127,7 @@ G.4 (INDEX compatibility) ──┘                                        └�
 | Phase | Complexity | Rationale | Status |
 |---|---|---|---|
 | G.1 (docs) | Trivial | No code changes | Complete |
-| G.2 (ScDBCount) | Low | Isolated TODO; contained scope | Investigated — blocked on build |
+| G.2 (ScDBCount) | Low | Fix applied via `CountRecords()`; regression tests added; runtime verification blocked | Implemented (source-level) |
 | G.3 (COUNTBLANK) | Medium | Behavior decision; may need compatibility option | Pending decision record |
 | G.4 (INDEX compat) | Medium | Corpus regression analysis needed | Pending |
 | G.5/G.6 (verification) | Low | Test execution only; no code changes | Pending build |
@@ -128,7 +136,8 @@ G.4 (INDEX compatibility) ──┘                                        └�
 
 - All G.1 documentation items complete (committed at `41da3628f9`; Help topics for 7 functions committed separately)
 - G.1 Help topics: IFNA, SKEWP, BITAND, BITOR, BITXOR, BITLSHIFT, BITRSHIFT — all HID_FUNC_* IDs resolve to topics, discoverable via Help index/search
-- G.2 ScDBCount empty-cell fix approach documented (blocked: no build/test environment)
+- G.2 ScDBCount/DCOUNTA empty-cell fix implemented at source level: `CountRecords()` in `dociter.cxx:685-716`, used by `ScDBCount()` at `interpr1.cxx:6879-6882` and `ScDBCount2()` at `interpr1.cxx:6913-6917`; calcval `DB.*` regression cases added to `calcval-cases14.tsv` (DB.DCOUNT.f.zero, DB.DCOUNT.nf.zero, DB.DCOUNTA.f.zero)
+- G.2 runtime verification: blocked — no AOO build tree available; calcval cannot run
 - G.3 COUNTBLANK behavior: decision record required before any code change
 - G.4 INDEX compatibility: corpus regression analysis required before compatibility option
 - G.5/G.6 all runtime tests: prepared, awaiting build environment

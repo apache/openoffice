@@ -72,7 +72,6 @@ OASIS Open Document Format for Office Applications (OpenDocument) Version 1.4, P
 
 ### Known Compatibility Risks
 
-- A `ScDBCount` TODO comment (interpr1.cxx:6838-6845) notes that `ScQueryCellIterator` only returns pointers to existing cells, so empty cells matched by a query are not counted. This affects DCOUNT without a field, not COUNTA/COUNTBLANK directly.
 - Changing COUNTBLANK to inspect formula results (treating `""`-returning formulas as blank) would be a behavior change affecting existing documents.
 
 ### Recommended Implementation Changes
@@ -214,28 +213,20 @@ Name mapping: `main/formula/source/core/resource/core_resource.src:227-228` (`DC
 | Wildcards / RegExp | Required | `bRegExp` via `MayBeRegExp` | Yes |
 | Empty criteria field | Field may be omitted (count all matching) | `bMissingField` path in ScDBCount | Yes |
 | Criteria range with multiple rows | AND across rows | ScQueryParamBase entries | Yes |
-| DCOUNT without field counts all matching records | Required | ScDBCount: bMissingField + INTERNAL type → counts all matching | Yes; the empty-cell undercount is fixed, see calcval `DB.DCOUNT.*` |
+| DCOUNT without field counts all matching records | Required | ScDBCount: bMissingField + INTERNAL type → counts all matching | Yes; the empty-cell undercount is fixed via CountRecords() (dociter.cxx:685-716), see calcval `DB.DCOUNT.*` |
 | DCOUNT with field counts values in field | Required | ScDBQueryDataIterator over field column | Yes |
 
 ### Known Limitations
 
-**ScDBCount empty-cell limitation (interpr1.cxx:6838-6845):**
-```
-// TODO: currently the QueryIterators only return cell pointers of
-// existing cells, so if a query matches an empty cell there's
-// nothing returned, and therefor not counted!
-```
-This means DCOUNT without a field may undercount when matching records have empty cells in the result column.
-
-**Update:** fixed. DCOUNT and DCOUNTA without a field now test every row of the range that has content against the criteria (`ScDBQueryDataIterator::CountRecords`); a row with no content is not a record. Records with an empty cell in a criteria column are counted. With an empty criteria cell the count is now all records (`DB.DCOUNT.nf.nocrit` gives 3, was 0). Covered by the `DB.*` cases in `calcval-cases14.tsv`.
+None for database function empty-cell matching. The ScDBCount empty-cell limitation was fixed: `ScDBCount()` (interpr1.cxx:6871-6902) and `ScDBCount2()` (interpr1.cxx:6905-6935) now use `ScDBQueryDataIterator::CountRecords()` (dociter.cxx:685-716), which tests every row against the criteria using `IsQueryValid()`. Rows with no content are not records; rows with an empty cell in a criteria column are counted.
 
 ### Conformance Classification
 
-**Required by ODF 1.4** — Criteria syntax parsing and database function evaluation are implemented. The empty-cell matching limitation in ScDBCount is a known gap.
+**Required by ODF 1.4** — Criteria syntax parsing and database function evaluation are implemented, including empty-cell matching for DCOUNT/DCOUNTA without a field.
 
 ### Recommended Implementation Changes
 
-Address the ScDBCount TODO (empty-cell matching) if DCOUNT without field is used with empty result cells. This is a targeted fix, not a broad change.
+None required. The ScDBCount empty-cell fix (F-GAP-004) is implemented at source level; runtime verification pending (no AOO build tree available).
 
 ### Suggested Regression Tests
 
@@ -305,7 +296,7 @@ Address the ScDBCount TODO (empty-cell matching) if DCOUNT without field is used
 | Syntax (§5) | 11 | Implementation present; runtime-unverified |
 | COUNTA/COUNTBLANK (§6.13.7-8) | 2 | Partially matches; formula-cell `""` is implementation-defined |
 | INDEX (§6.14.6) | 1 | ODF 1.4 compliant after Milestone A; regression risk |
-| Criteria Syntax (§4.11.11) | 1 | Implemented; ScDBCount empty-cell TODO limitation |
+| Criteria Syntax (§4.11.11) | 1 | Implemented; ScDBCount empty-cell fix applied (source-level; runtime-unverified) |
 | Operators (§6.4) | 14 | Implementation present; runtime-unverified |
 | Functions (§2.3.2.E) | 110 | Implementation present; runtime-unverified |
 
