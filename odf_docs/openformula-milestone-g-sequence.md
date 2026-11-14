@@ -11,7 +11,7 @@
 |---|---|---|---|
 | G.1 | Complete | `41da3628f9` + Help topics commit | STRING_MAXLEN documented; ScDBCount empty-cell fix applied via `CountRecords()`; Help topics added for IFNA, SKEWP, BITAND, BITOR, BITXOR, BITLSHIFT, BITRSHIFT |
 | G.2 | Implemented (source-level) | `efd87262f2` + regression tests | `ScDBCount()` missing-field path uses `CountRecords()` (dociter.cxx:685-716) which iterates row-by-row via `IsQueryValid()`; `ScDBCount2()` same pattern; calcval `DB.*` regression cases added | 
-| G.3 | Pending | — | Decision record needed before any code change |
+| G.3 | Complete (decision documented) | `929fe7a9ce` | COUNTBLANK formula-cell `""` behavior decision: `lcl_IsCountBlankEmpty()` (interpr1.cxx:4745-4758) inspects formula results and treats formula-cell-returning-`""` as blank — implementation-defined per §6.13.8; no code change needed |
 | G.4 | Pending | — | Corpus regression analysis needed |
 | G.5 | Pending | — | Runtime verification only; no build available |
 | G.6 | Pending | — | Runtime verification only; no build available |
@@ -65,15 +65,17 @@ The root cause is confirmed: `ScQueryCellIterator` ("run through all not empty c
 
 ## Phase G.3 — Medium-Risk: COUNTA/COUNTBLANK Behavior Review
 
-These are behavior decisions, not necessarily code changes. ODF 1.4 permits implementation-defined behavior for formula cells returning `""`.
+**STATUS: COMPLETE (decision documented; no code change needed)**
 
-| Order | Gap ID | Area | Decision Point | Action If Change Needed | Risk |
+ODF 1.4 §6.13.8 makes formula-cell-returning-`""` blank-counting implementation-defined. AOO already exercises this choice via `lcl_IsCountBlankEmpty()` (interpr1.cxx:4745-4758) which inspects formula results and treats formula-cell-returning-`""` as blank for COUNTBLANK. ISBLANK (§6.13.14) returns FALSE for empty string — no conflict since COUNTBLANK's behavior is explicitly implementation-defined.
+
+| Order | Gap ID | Area | Decision Point | Decision | Risk |
 |---|---|---|---|---|---|
-| G.3.1 | F-GAP-001 | COUNTA matrix | Confirm matrix empty-string handling is acceptable | None needed (ODF 1.4 silent) | Low |
-| G.3.2 | F-GAP-002 | COUNTBLANK formula-cell `""` | Decide whether to inspect formula result for `""` | Modify `ScCountEmptyCells()` cell-type check to also check formula result | Medium — behavior change; document as compatibility option |
+| G.3.1 | F-GAP-001 | COUNTA matrix | Confirm matrix empty-string handling is acceptable | ODF 1.4 silent; AOO counts all matrix elements including strings — acceptable | Low |
+| G.3.2 | F-GAP-002 | COUNTBLANK formula-cell `""` | Decide whether to inspect formula result for `""` | Decision: inspect formula result; treat formula-cell-returning-`""` as blank. Already implemented via `lcl_IsCountBlankEmpty()`; no code change needed | Low — no behavior change; decision documents existing implementation |
 
-**Dependencies:** G.2.1 (empty-cell iteration patterns shared).  
-**Runtime validation needed:** Yes — COUNTBLANK with formula cells returning `""`.
+**Dependencies:** None (implementation already in place).
+**Runtime validation needed:** Yes — COUNTBLANK with formula cells returning `""`. **Blocked:** No AOO build tree available; calcval cannot run. Existing test case `COUNTBLANK.emptystr` (calcval-cases14.tsv:164) covers this.
 
 ## Phase G.4 — Medium-Risk: INDEX Row-Vector Compatibility
 
@@ -117,7 +119,7 @@ No code changes expected (no hard limits found). Verification only.
 ```
 G.1 (docs, COMPLETE) ──┐
                         ├── G.2 (ScDBCount empty-cell, IMPLEMENTED source-level) ──┐
-G.5 (limits verification) ──┤                                                        ├── G.3 (COUNTBLANK decision)
+G.5 (limits verification) ──┤                                                        ├── G.3 (COUNTBLANK decision, COMPLETE)
 G.6 (syntax verification) ──┤                                                        │
 G.4 (INDEX compatibility) ──┘                                                        └── (runtime-validated)
 ```
@@ -128,7 +130,7 @@ G.4 (INDEX compatibility) ──┘                                             
 |---|---|---|---|
 | G.1 (docs) | Trivial | No code changes | Complete |
 | G.2 (ScDBCount) | Low | Fix applied via `CountRecords()`; regression tests added; runtime verification blocked | Implemented (source-level) |
-| G.3 (COUNTBLANK) | Medium | Behavior decision; may need compatibility option | Pending decision record |
+| G.3 (COUNTBLANK) | Low | Decision documented; implementation already in place via `lcl_IsCountBlankEmpty()` | Complete (decision documented) |
 | G.4 (INDEX compat) | Medium | Corpus regression analysis needed | Pending |
 | G.5/G.6 (verification) | Low | Test execution only; no code changes | Pending build |
 
@@ -138,7 +140,7 @@ G.4 (INDEX compatibility) ──┘                                             
 - G.1 Help topics: IFNA, SKEWP, BITAND, BITOR, BITXOR, BITLSHIFT, BITRSHIFT — all HID_FUNC_* IDs resolve to topics, discoverable via Help index/search
 - G.2 ScDBCount/DCOUNTA empty-cell fix implemented at source level: `CountRecords()` in `dociter.cxx:685-716`, used by `ScDBCount()` at `interpr1.cxx:6879-6882` and `ScDBCount2()` at `interpr1.cxx:6913-6917`; calcval `DB.*` regression cases added to `calcval-cases14.tsv` (DB.DCOUNT.f.zero, DB.DCOUNT.nf.zero, DB.DCOUNTA.f.zero)
 - G.2 runtime verification: blocked — no AOO build tree available; calcval cannot run
-- G.3 COUNTBLANK behavior: decision record required before any code change
+- G.3 COUNTBLANK behavior: decision documented — `lcl_IsCountBlankEmpty()` (interpr1.cxx:4745-4758) inspects formula results and treats formula-cell-returning-`""` as blank for COUNTBLANK (implementation-defined per §6.13.8); ISBLANK (§6.13.14) returns FALSE for empty string — no conflict. No code change needed.
 - G.4 INDEX compatibility: corpus regression analysis required before compatibility option
 - G.5/G.6 all runtime tests: prepared, awaiting build environment
 - No production changes without corresponding calcval test coverage

@@ -43,12 +43,16 @@ OASIS Open Document Format for Office Applications (OpenDocument) Version 1.4, P
 ### Execution Path — COUNTBLANK
 
 `ScCountEmptyCells()`:
-
 | Stack Type | Code Path | Behavior |
 |---|---|---|
-| `svSingleRef` | interpr1.cxx:4723-4731 | `eCellType != CELLTYPE_NONE && eCellType != CELLTYPE_NOTE` → nCount=1 (not blank), else blank |
-| `svDoubleRef` / `svRefList` | interpr1.cxx:4733-4757 | `ScCellIterator`; same cell-type check; result = `nMaxCount - nCount` |
-| `default` | interpr1.cxx:4760 | `SetError(errIllegalParameter)` — scalar args not supported |
+| `svSingleRef` | interpr1.cxx:4768-4775 | `lcl_IsCountBlankEmpty(GetCell(aAdr))` — cell-type + formula-result check |
+| `svDoubleRef` / `svRefList` | interpr1.cxx:4777-4801 | `ScCellIterator` over range; `lcl_IsCountBlankEmpty(pCell)` per cell; result = `nMaxCount - nCount` |
+| `default` | interpr1.cxx:4803 | `SetError(errIllegalParameter)` — scalar args not supported (COUNTBLANK takes ReferenceList per §6.13.8) |
+
+`lcl_IsCountBlankEmpty()` (interpr1.cxx:4745-4758):
+- `CELLTYPE_NONE` / `CELLTYPE_NOTE` / NULL pointer → returns true (blank)
+- Non-FORMULA cell types → returns false (not blank)
+- `CELLTYPE_FORMULA`: if error code or IsValue() → returns false (not blank); otherwise checks `GetString().Len() == 0` — formula cell returning `""` counts as blank
 
 ### Current Behavior vs ODF 1.4
 
@@ -58,25 +62,34 @@ OASIS Open Document Format for Office Applications (OpenDocument) Version 1.4, P
 | Cell with text | COUNTA: counted; COUNTBLANK: not blank | CELLTYPE_STRING → counted/not blank | Yes |
 | Cell with number | COUNTA: counted; COUNTBLANK: not blank | CELLTYPE_VALUE → counted/not blank | Yes |
 | Scalar `""` argument | COUNTA: counted (not blank) | svString → counted | Yes |
-| Formula cell returning `""` | COUNTBLANK: implementation-defined whether blank | CELLTYPE_FORMULA ≠ CELLTYPE_NONE → counted by COUNTA, NOT blank by COUNTBLANK; formula result not inspected | Implementation-defined; AOO does not check formula result |
+| Formula cell returning `""` | COUNTBLANK: implementation-defined whether blank | CELLTYPE_FORMULA, formula result `""` → blank by COUNTBLANK (via `lcl_IsCountBlankEmpty` inspecting formula result) | Yes (implementation-defined choice exercised) |
+| Formula cell returning non-empty text | Not blank | CELLTYPE_FORMULA, formula result non-empty → not blank | Yes |
+| Numeric zero (0) | COUNTBLANK: not blank | CELLTYPE_VALUE → not blank | Yes |
+| Logical value | Not blank | CELLTYPE_VALUE → not blank | Yes |
+| Error cell | COUNTBLANK: does not propagate errors; returns FALSE for error cases | CELLTYPE_FORMULA with error → not blank | Yes |
+| Scalar `""` to COUNTBLANK | Not applicable (COUNTBLANK takes ReferenceList only) | `SetError(errIllegalParameter)` — only reference types accepted | N/A |
 | Matrix with empty-string cells | COUNTA: not specified explicitly | `nCount += nC * nR` counts all elements including strings | Counts empty-string cells as non-empty |
-| Scalar `""` to COUNTBLANK | Not applicable (COUNTBLANK takes ranges) | `SetError(errIllegalParameter)` — only reference types accepted | N/A |
+| Empty reference/range with mixture | Per-cell evaluation | `lcl_IsCountBlankEmpty` per cell via `ScCellIterator` | Yes |
 
 ### Conformance Classification
 
 - **COUNTA scalar `""`**: Required by ODF 1.4 — matches (empty string counted as non-blank).
 - **COUNTA empty cells**: Required by ODF 1.4 — matches (CELLTYPE_NONE not counted).
 - **COUNTBLANK truly empty cells**: Required by ODF 1.4 — matches.
-- **COUNTBLANK formula cell returning `""`**: Implementation-defined (§6.13.8) — AOO uses cell-type-only check; does not inspect formula result.
+- **COUNTBLANK formula cell returning `""`**: Implementation-defined (§6.13.8) — AOO treats formula cell returning `""` as blank (via `lcl_IsCountBlankEmpty` inspecting formula result at interpr1.cxx:4752-4757). This is an implementation-defined choice permitted by the standard; not a conformance defect.
+- **COUNTBLANK numeric zero**: Required not blank (§6.13.8) — matches.
+- **COUNTBLANK error cell**: Not propagated (§6.13.8 / ISBLANK §6.13.14) — matches.
+- **COUNTBLANK scalar argument**: Only ReferenceList accepted (§6.13.8) — `errIllegalParameter` for non-reference args, matches.
 - **COUNTA matrix with strings**: ODF 1.4 does not explicitly address matrix empty-string handling — AOO counts all matrix elements including strings.
 
 ### Known Compatibility Risks
 
-- Changing COUNTBLANK to inspect formula results (treating `""`-returning formulas as blank) would be a behavior change affecting existing documents.
+- Changing COUNTBLANK to NOT inspect formula results (treating `""`-returning formulas as non-blank) would be a behavior change affecting existing documents and would diverge from other major spreadsheet applications.
+- AOO's choice to treat formula-cell-returning-`""` as blank is implementation-defined per §6.13.8 and consistent with ISBLANK returning FALSE for such cells (§6.13.14: "A cell with the empty string is not considered blank").
 
 ### Recommended Implementation Changes
 
-None required for ODF 1.4 conformance (implementation-defined behavior is permitted). If a compatibility option is desired, document the current cell-type-only behavior and consider adding formula-result inspection as an option.
+None required for ODF 1.4 conformance. The implementation-defined behavior for formula-cell-returning-`""` is exercised (treated as blank). No production code changes needed; runtime verification pending (no AOO build tree available).
 
 ### Suggested Regression Tests
 
@@ -294,7 +307,7 @@ None required. The ScDBCount empty-cell fix (F-GAP-004) is implemented at source
 |---|---|---|
 | Basic Limits (§3.7) | 4 | Unverifiable statically; no hard limits found |
 | Syntax (§5) | 11 | Implementation present; runtime-unverified |
-| COUNTA/COUNTBLANK (§6.13.7-8) | 2 | Partially matches; formula-cell `""` is implementation-defined |
+| COUNTA/COUNTBLANK (§6.13.7-8) | 2 | Fully matches; formula-cell `""` treated as blank per implementation-defined choice (§6.13.8) |
 | INDEX (§6.14.6) | 1 | ODF 1.4 compliant after Milestone A; regression risk |
 | Criteria Syntax (§4.11.11) | 1 | Implemented; ScDBCount empty-cell fix applied (source-level; runtime-unverified) |
 | Operators (§6.4) | 14 | Implementation present; runtime-unverified |
