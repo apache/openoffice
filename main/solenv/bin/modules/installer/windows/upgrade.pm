@@ -57,16 +57,22 @@ sub create_upgrade_table
 	push(@upgradetable, $newline);
 
 	# Setting all products, that must be removed.
-	$newline = $installer::globals::upgradecode . "\t" . $installer::globals::msimajorproductversion . "\t" . $installer::globals::msiproductversion . "\t" . "\t" . "257" . "\t" . "\t" . "OLDPRODUCTSSAMEMAJOR" . "\n";
+	# 257 = MigrateFeatures | VersionMinInclusive.  Outside patches the current
+	# version is included as well (+512 VersionMaxInclusive): every build gets a
+	# new product code, so another build of the SAME version is a different
+	# product, and it is replaced like an older one.  FindRelatedProducts never
+	# lists the package's own product code, so re-running the identical package
+	# still gets the normal maintenance dialog (modify / repair / remove).
+	# This used to be a SAMEPRODUCTS row whose SameProductFound action aborted
+	# with "The same version of ... is already installed".
+	my $samemajorattributes = $installer::globals::patch ? "257" : "769";
+	$newline = $installer::globals::upgradecode . "\t" . $installer::globals::msimajorproductversion . "\t" . $installer::globals::msiproductversion . "\t" . "\t" . $samemajorattributes . "\t" . "\t" . "OLDPRODUCTSSAMEMAJOR" . "\n";
 	push(@upgradetable, $newline);
 
 	if ( ! $installer::globals::patch )
 	{
 		# preventing downgrading
 		$newline = $installer::globals::upgradecode . "\t" . $installer::globals::msiproductversion . "\t" . $ooomaxnew . "\t" . "\t" . "2" . "\t" . "\t" . "NEWPRODUCTS" . "\n";
-		push(@upgradetable, $newline);
-
-		$newline = $installer::globals::upgradecode . "\t" . $installer::globals::msiproductversion . "\t" . $ooomaxnew . "\t" . "\t" . "258" . "\t" . "\t" . "SAMEPRODUCTS" . "\n";
 		push(@upgradetable, $newline);
 
 		if ( $include_ooo_fix )
