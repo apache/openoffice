@@ -134,7 +134,7 @@ OTableWindow::~OTableWindow()
 	if (m_pListBox)
 	{
 		OSL_ENSURE(m_pListBox->GetEntryCount()==0,"Forgot to call EmptyListbox()!");
-		::std::auto_ptr<Window> aTemp(m_pListBox);
+		::std::unique_ptr<Window> aTemp(m_pListBox);
 		m_pListBox = NULL;
 	} // if (m_pListBox)
     if ( m_pContainerListener.is() )

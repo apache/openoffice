@@ -42,7 +42,7 @@
 #include "scmatrix.hxx"
 #endif
 
-#include <hash_map>
+#include <unordered_map>
 
 
 class String;
@@ -52,7 +52,7 @@ class ScMatrix;
 class ScFuncDesc;
 
 
-typedef ::std::hash_map< String, const ScUnoAddInFuncData*, ScStringHashCode, ::std::equal_to< String > > ScAddInHashMap;
+typedef ::std::unordered_map< String, const ScUnoAddInFuncData*, ScStringHashCode, ::std::equal_to< String > > ScAddInHashMap;
 
 
 enum ScAddInArgumentType

@@ -72,9 +72,12 @@ tDoubleVectorPair
 }
 
 
-class isValid : public ::std::binary_function< double, double, bool >
+class isValid
 {
 public:
+    typedef double first_argument_type;
+    typedef double second_argument_type;
+    typedef bool result_type;
     inline bool operator()( double x, double y )
     { return ! ( ::rtl::math::isNan( x ) ||
                  ::rtl::math::isNan( y ) ||
@@ -83,9 +86,12 @@ public:
     }
 };
 
-class isValidAndXPositive : public ::std::binary_function< double, double, bool >
+class isValidAndXPositive
 {
 public:
+    typedef double first_argument_type;
+    typedef double second_argument_type;
+    typedef bool result_type;
     inline bool operator()( double x, double y )
     { return ! ( ::rtl::math::isNan( x ) ||
                  ::rtl::math::isNan( y ) ||
@@ -95,9 +101,12 @@ public:
     }
 };
 
-class isValidAndYPositive : public ::std::binary_function< double, double, bool >
+class isValidAndYPositive
 {
 public:
+    typedef double first_argument_type;
+    typedef double second_argument_type;
+    typedef bool result_type;
     inline bool operator()( double x, double y )
     { return ! ( ::rtl::math::isNan( x ) ||
                  ::rtl::math::isNan( y ) ||
@@ -107,9 +116,12 @@ public:
     }
 };
 
-class isValidAndBothPositive : public ::std::binary_function< double, double, bool >
+class isValidAndBothPositive
 {
 public:
+    typedef double first_argument_type;
+    typedef double second_argument_type;
+    typedef bool result_type;
     inline bool operator()( double x, double y )
     { return ! ( ::rtl::math::isNan( x ) ||
                  ::rtl::math::isNan( y ) ||

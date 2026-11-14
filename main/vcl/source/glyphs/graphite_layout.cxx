@@ -866,7 +866,7 @@ bool GraphiteLayout::LayoutGlyphs(ImplLayoutArgs& rArgs, gr::Segment * pSegment)
             {
                 // not needed for adjacent differences, but for mouse clicks to char
                 std::transform(mvCharDxs.begin(), mvCharDxs.end(), mvCharDxs.begin(),
-                    std::bind1st(std::minus<long>(), mnWidth));
+                    std::bind(std::minus<long>(), mnWidth, std::placeholders::_1));
                 // fixup last dx to ensure it always equals the width
                 mvCharDxs[mvCharDxs.size() - 1] = mnWidth;
             }

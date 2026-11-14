@@ -65,7 +65,7 @@ public:
 
 private:
     bool                            m_bReadOnly;
-    ::std::auto_ptr< DataBrowser >  m_apBrwData;
+    ::std::unique_ptr< DataBrowser >  m_apBrwData;
     ToolBox                         m_aTbxData;
     ::com::sun::star::uno::Reference<
             ::com::sun::star::chart2::XChartDocument > m_xChartDoc;

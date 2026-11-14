@@ -70,7 +70,7 @@ struct hash
 	}
 };
 
-typedef std::hash_map< Reference< XCell >, rtl::Reference< AccessibleCell >, hash > AccessibleCellMap;
+typedef std::unordered_map< Reference< XCell >, rtl::Reference< AccessibleCell >, hash > AccessibleCellMap;
 
 //-----------------------------------------------------------------------------
 // AccessibleTableShapeImpl

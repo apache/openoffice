@@ -50,8 +50,8 @@ private:
     virtual SvStream*   ImplQueryPictureStream();
 
 private:
-    ::std::auto_ptr< ::utl::TempFile > mxPicTempFile;
-    ::std::auto_ptr< SvStream > mxPicStrm;
+    ::std::unique_ptr< ::utl::TempFile > mxPicTempFile;
+    ::std::unique_ptr< SvStream > mxPicStrm;
 };
 
 // ============================================================================

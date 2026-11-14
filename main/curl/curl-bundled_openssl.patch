@@ -1,29 +1,28 @@
---- misc/build/curl-8.7.1/configure	2024-04-21 19:20:02.487331000 +0200
-+++ misc/build/curl-8.7.1/configure	2024-04-21 19:20:26.529989000 +0200
-@@ -26416,7 +26416,7 @@
-     fi
+--- misc/build/curl-8.23.0/configure
++++ misc/build/curl-8.23.0/configure
+@@ -27437,14 +27437,14 @@
+       fi
  
-     if test "$PKGTEST" != "yes"; then
--      if test ! -f "$PREFIX_OPENSSL/include/openssl/ssl.h"; then
-+      if test ! -f "$PREFIX_OPENSSL/inc/external/openssl/ssl.h"; then
+       if test "$PKGTEST" != "yes" &&
+-         test ! -f "$PREFIX_OPENSSL/include/openssl/ssl.h"; then
++         test ! -f "$PREFIX_OPENSSL/inc/external/openssl/ssl.h"; then
          as_fn_error $? "$PREFIX_OPENSSL is a bad --with-openssl prefix!" "$LINENO" 5
        fi
-     fi
-@@ -26424,7 +26424,7 @@
-             LIB_OPENSSL="$PREFIX_OPENSSL/lib$libsuff"
-     if test "$PREFIX_OPENSSL" != "/usr" ; then
-       SSL_LDFLAGS="-L$LIB_OPENSSL"
--      SSL_CPPFLAGS="-I$PREFIX_OPENSSL/include"
-+      SSL_CPPFLAGS="-I$PREFIX_OPENSSL/inc/external"
-     fi
-     ;;
+ 
+                   LIB_OPENSSL="$PREFIX_OPENSSL/lib$libsuff"
+       if test "$PREFIX_OPENSSL" != "/usr"; then
+         SSL_LDFLAGS="-L$LIB_OPENSSL"
+-        SSL_CPPFLAGS="-I$PREFIX_OPENSSL/include"
++        SSL_CPPFLAGS="-I$PREFIX_OPENSSL/inc/external"
+       fi
+       ;;
    esac
-@@ -26655,7 +26655,7 @@
-      fi
-      if test "$PKGCONFIG" = "no" -a -n "$PREFIX_OPENSSL" ; then
-        # only set this if pkg-config wasn't used
--       CPPFLAGS="$CLEANCPPFLAGS -I$PREFIX_OPENSSL/include"
-+       CPPFLAGS="$CLEANCPPFLAGS -I$PREFIX_OPENSSL/inc/external"
-      fi
-      # Linking previously failed, try extra paths from --with-openssl or
-      # pkg-config.  Use a different function name to avoid reusing the earlier
+@@ -27792,7 +27792,7 @@
+       LDFLAGSPC="$CLEANLDFLAGSPC -L$LIB_OPENSSL"
+     fi
+     if test "$PKGCONFIG" = "no" && test -n "$PREFIX_OPENSSL"; then
+-            CPPFLAGS="$CLEANCPPFLAGS -I$PREFIX_OPENSSL/include"
++            CPPFLAGS="$CLEANCPPFLAGS -I$PREFIX_OPENSSL/inc/external"
+     fi
+                 { printf "%s\n" "$as_me:${as_lineno-$LINENO}: checking for HMAC_Init_ex in -lcrypto" >&5
+ printf %s "checking for HMAC_Init_ex in -lcrypto... " >&6; }

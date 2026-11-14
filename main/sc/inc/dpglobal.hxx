@@ -168,12 +168,14 @@ public:
 	virtual sal_Int32 getDataId( const ScDPItemData& aData );
 	virtual sal_Int32 insertData( const ScDPItemData& aData );
 protected:
-	struct DataHashFunc : public std::unary_function< const ScDPItemData &, size_t >
+	struct DataHashFunc
 	{
+		typedef const ScDPItemData & argument_type;
+		typedef size_t result_type;
 		size_t operator() (const ScDPItemData &rData) const { return rData.Hash(); }
 	};
 
-	typedef ::std::hash_multimap< ScDPItemData, sal_Int32, DataHashFunc > DataHash;
+	typedef ::std::unordered_multimap< ScDPItemData, sal_Int32, DataHashFunc > DataHash;
 
 	::std::vector< ScDPItemData > maItems;
 	DataHash  maItemIds;

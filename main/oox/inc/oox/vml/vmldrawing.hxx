@@ -188,8 +188,8 @@ public:
 
 private:
     typedef ::std::vector< sal_Int32 >                      BlockIdVector;
-    typedef ::std::auto_ptr< ::oox::ole::EmbeddedForm >     EmbeddedFormPtr;
-    typedef ::std::auto_ptr< ShapeContainer >               ShapeContainerPtr;
+    typedef ::std::unique_ptr< ::oox::ole::EmbeddedForm >     EmbeddedFormPtr;
+    typedef ::std::unique_ptr< ShapeContainer >               ShapeContainerPtr;
     typedef ::std::map< ::rtl::OUString, OleObjectInfo >    OleObjectInfoMap;
     typedef ::std::map< ::rtl::OUString, ControlInfo >      ControlInfoMap;
 

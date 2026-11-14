@@ -282,7 +282,7 @@ namespace toolkitform
     /** creates a PDF compatible control descriptor for the given control
     */
     void TOOLKIT_DLLPUBLIC describePDFControl( const Reference< XControl >& _rxControl,
-        ::std::auto_ptr< ::vcl::PDFWriter::AnyWidget >& _rpDescriptor, ::vcl::PDFExtOutDevData& i_pdfExportData ) SAL_THROW(())
+        ::std::unique_ptr< ::vcl::PDFWriter::AnyWidget >& _rpDescriptor, ::vcl::PDFExtOutDevData& i_pdfExportData ) SAL_THROW(())
     {
         _rpDescriptor.reset();
         OSL_ENSURE( _rxControl.is(), "describePDFControl: invalid (NULL) control!" );

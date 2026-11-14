@@ -75,8 +75,8 @@ namespace rptui
 	class OReportSectionUndo : public OSectionUndo
 	{
 		OReportHelper								m_aReportHelper;
-		::std::mem_fun_t< ::com::sun::star::uno::Reference< ::com::sun::star::report::XSection >
-									,OReportHelper> m_pMemberFunction;
+		::std::function< ::com::sun::star::uno::Reference< ::com::sun::star::report::XSection >
+									(OReportHelper*)> m_pMemberFunction;
 
 		void    implReInsert( );
 		void    implReRemove( );
@@ -87,8 +87,8 @@ namespace rptui
 		//OReportSectionUndo(	 const ::com::sun::star::uno::Reference< ::com::sun::star::report::XSection >& _xSection
 		OReportSectionUndo(	OReportModel& rMod
 							,sal_uInt16 _nSlot
-							,::std::mem_fun_t< ::com::sun::star::uno::Reference< ::com::sun::star::report::XSection >
-							    ,OReportHelper> _pMemberFunction
+							,::std::function< ::com::sun::star::uno::Reference< ::com::sun::star::report::XSection >
+							    (OReportHelper*)> _pMemberFunction
 							,const ::com::sun::star::uno::Reference< ::com::sun::star::report::XReportDefinition >& _xReport
 							,Action _eAction
 							,sal_uInt16 nCommentID);
@@ -100,8 +100,8 @@ namespace rptui
 	class OGroupSectionUndo : public OSectionUndo
 	{
 		OGroupHelper								m_aGroupHelper;
-		::std::mem_fun_t< ::com::sun::star::uno::Reference< ::com::sun::star::report::XSection >
-									,OGroupHelper> m_pMemberFunction;
+		::std::function< ::com::sun::star::uno::Reference< ::com::sun::star::report::XSection >
+									(OGroupHelper*)> m_pMemberFunction;
 
         mutable ::rtl::OUString                     m_sName;
 
@@ -114,8 +114,8 @@ namespace rptui
 		//OGroupSectionUndo(	 const ::com::sun::star::uno::Reference< ::com::sun::star::report::XSection >& _xSection
 		OGroupSectionUndo(	OReportModel& rMod
 							,sal_uInt16 _nSlot
-							,::std::mem_fun_t< ::com::sun::star::uno::Reference< ::com::sun::star::report::XSection >
-											,OGroupHelper> _pMemberFunction
+							,::std::function< ::com::sun::star::uno::Reference< ::com::sun::star::report::XSection >
+											(OGroupHelper*)> _pMemberFunction
 							,const ::com::sun::star::uno::Reference< ::com::sun::star::report::XGroup >& _xGroup
 							,Action _eAction
 							,sal_uInt16 nCommentID);

@@ -59,10 +59,10 @@ executeFilterDialog(
     {
         vos::OGuard aGuard(Application::GetSolarMutex());
 
-        std::auto_ptr< ResMgr > xManager(
+        std::unique_ptr< ResMgr > xManager(
             ResMgr::CreateResMgr(CREATEVERSIONRESMGR_NAME(uui)));
 
-        std::auto_ptr< uui::FilterDialog > xDialog(
+        std::unique_ptr< uui::FilterDialog > xDialog(
             new uui::FilterDialog(pParent, xManager.get()));
 
         xDialog->SetURL(rURL);

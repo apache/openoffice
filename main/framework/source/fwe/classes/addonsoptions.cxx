@@ -43,7 +43,7 @@
 #include <vcl/graph.hxx>
 #include <svtools/filter.hxx>
 #include <vcl/dibtools.hxx>
-#include <hash_map>
+#include <unordered_map>
 #include <algorithm>
 #include <vector>
 
@@ -330,10 +330,10 @@ class AddonsOptions_Impl : public ConfigItem
             Image   aImageBigHCNoScale;
 		};
 
-		typedef std::hash_map< ::rtl::OUString, ImageEntry, rtl::OUStringHash, ::std::equal_to< ::rtl::OUString > > ImageManager;
-        typedef std::hash_map< ::rtl::OUString, sal_uInt32, rtl::OUStringHash, ::std::equal_to< ::rtl::OUString > > StringToIndexMap;
+		typedef std::unordered_map< ::rtl::OUString, ImageEntry, rtl::OUStringHash, ::std::equal_to< ::rtl::OUString > > ImageManager;
+        typedef std::unordered_map< ::rtl::OUString, sal_uInt32, rtl::OUStringHash, ::std::equal_to< ::rtl::OUString > > StringToIndexMap;
         typedef std::vector< Sequence< Sequence< PropertyValue > > > AddonToolBars;
-        typedef ::std::hash_map< ::rtl::OUString, MergeToolbarInstructionContainer, rtl::OUStringHash, ::std::equal_to< ::rtl::OUString > > ToolbarMergingInstructions;
+        typedef ::std::unordered_map< ::rtl::OUString, MergeToolbarInstructionContainer, rtl::OUStringHash, ::std::equal_to< ::rtl::OUString > > ToolbarMergingInstructions;
 
         enum ImageSize
         {

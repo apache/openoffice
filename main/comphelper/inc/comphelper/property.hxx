@@ -46,8 +46,11 @@ namespace comphelper
 
 /** compare two properties by name
 */
-	struct PropertyStringLessFunctor : ::std::binary_function< ::com::sun::star::beans::Property, ::rtl::OUString, bool >
+	struct PropertyStringLessFunctor
 	{
+		typedef ::com::sun::star::beans::Property first_argument_type;
+		typedef ::rtl::OUString second_argument_type;
+		typedef bool result_type;
 		// ................................................................
 		inline bool operator()( const ::com::sun::star::beans::Property& lhs, const ::rtl::OUString& rhs ) const
 		{
@@ -61,8 +64,11 @@ namespace comphelper
 	};
 	//--------------------------------------------------------------------------
 	// comparing two property instances
-	struct PropertyCompareByName : public ::std::binary_function< ::com::sun::star::beans::Property, ::com::sun::star::beans::Property, bool >
+	struct PropertyCompareByName
 	{
+		typedef ::com::sun::star::beans::Property first_argument_type;
+		typedef ::com::sun::star::beans::Property second_argument_type;
+		typedef bool result_type;
 		bool operator() (const ::com::sun::star::beans::Property& x, const ::com::sun::star::beans::Property& y) const
 		{
 			return x.Name.compareTo(y.Name) < 0;// ? true : false;
@@ -72,8 +78,11 @@ namespace comphelper
 	//--------------------------------------------------------------------------
     /** compare two properties by name
      */
-	struct PropertyStringEqualFunctor : ::std::binary_function< ::com::sun::star::beans::Property, ::rtl::OUString, bool >
+	struct PropertyStringEqualFunctor
 	{
+		typedef ::com::sun::star::beans::Property first_argument_type;
+		typedef ::rtl::OUString second_argument_type;
+		typedef bool result_type;
 		// ................................................................
 		inline bool operator()( const ::com::sun::star::beans::Property& lhs, const ::rtl::OUString& rhs ) const
 		{
@@ -87,8 +96,11 @@ namespace comphelper
 	};
 	//--------------------------------------------------------------------------
 	// comparing two property instances
-	struct PropertyEqualByName : public ::std::binary_function< ::com::sun::star::beans::Property, ::com::sun::star::beans::Property, bool >
+	struct PropertyEqualByName
 	{
+		typedef ::com::sun::star::beans::Property first_argument_type;
+		typedef ::com::sun::star::beans::Property second_argument_type;
+		typedef bool result_type;
 		bool operator() (const ::com::sun::star::beans::Property& x, const ::com::sun::star::beans::Property& y) const
 		{
 			return x.Name.compareTo(y.Name) == 0;

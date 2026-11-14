@@ -83,7 +83,7 @@ public:
     void setInsertFromBack(bool bInsertFromBack);
 
 private:
-    ::std::auto_ptr<ScFlatBoolSegmentsImpl> mpImpl;
+    ::std::unique_ptr<ScFlatBoolSegmentsImpl> mpImpl;
 };
 
 // ============================================================================
@@ -112,7 +112,7 @@ public:
     void setInsertFromBack(bool bInsertFromBack);
 
 private:
-    ::std::auto_ptr<ScFlatBoolSegmentsImpl> mpImpl;
+    ::std::unique_ptr<ScFlatBoolSegmentsImpl> mpImpl;
 };
 
 // ============================================================================
@@ -162,7 +162,7 @@ public:
     void setInsertFromBack(bool bInsertFromBack);
 
 private:
-    ::std::auto_ptr<ScFlatUInt16SegmentsImpl> mpImpl;
+    ::std::unique_ptr<ScFlatUInt16SegmentsImpl> mpImpl;
 };
 
 #endif

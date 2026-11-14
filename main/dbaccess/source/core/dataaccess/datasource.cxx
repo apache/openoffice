@@ -316,8 +316,11 @@ class OSharedConnectionManager : public OConnectionHelper_BASE
 	} TConnectionHolder;
 
 	// the less-compare functor, used for the stl::map
-	struct TDigestLess : public ::std::binary_function< TDigestHolder, TDigestHolder, bool>
+	struct TDigestLess
 	{
+		typedef TDigestHolder first_argument_type;
+		typedef TDigestHolder second_argument_type;
+		typedef bool result_type;
 		bool operator() (const TDigestHolder& x, const TDigestHolder& y) const
 		{
 			sal_uInt32 i;
@@ -490,8 +493,10 @@ namespace
     typedef ::std::map< ::rtl::OUString, sal_Int32 > PropertyAttributeCache;
 
     //------------------------------------------------------------------
-    struct IsDefaultAndNotRemoveable : public ::std::unary_function< PropertyValue, bool >
+    struct IsDefaultAndNotRemoveable
     {
+        typedef PropertyValue argument_type;
+        typedef bool result_type;
     private:
         const PropertyAttributeCache& m_rAttribs;
 
@@ -907,8 +912,10 @@ sal_Bool ODatabaseSource::convertFastPropertyValue(Any & rConvertedValue, Any & 
 //------------------------------------------------------------------------------
 namespace
 {
-    struct SelectPropertyName : public ::std::unary_function< PropertyValue, ::rtl::OUString >
+    struct SelectPropertyName
     {
+        typedef PropertyValue argument_type;
+        typedef ::rtl::OUString result_type;
     public:
         const ::rtl::OUString& operator()( const PropertyValue& _lhs )
         {

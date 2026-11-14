@@ -54,7 +54,7 @@ namespace frm
     private:
         ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatchProviderInterceptor >
                                             m_xFirstDispatchInterceptor;
-        ::std::auto_ptr< UrlTransformer >   m_pUrlTransformer;
+        ::std::unique_ptr< UrlTransformer >   m_pUrlTransformer;
 
     public:
         /** retrieves our URL transformer, so our clients may use it, too

@@ -57,7 +57,7 @@
 #include <vcl/edit.hxx>
 #include <vos/mutex.hxx>
 
-#include <hash_map>
+#include <unordered_map>
 
 using namespace osl;
 using namespace cppu;
@@ -106,7 +106,7 @@ static DispatchInfo SupportedCommandsArray[] =
     { 0                         ,   0                               , sal_False }
 };
 
-typedef ::std::hash_map< ::rtl::OUString, CacheDispatchInfo, rtl::OUStringHash, ::std::equal_to< ::rtl::OUString > > CmdToInfoCache;
+typedef ::std::unordered_map< ::rtl::OUString, CacheDispatchInfo, rtl::OUStringHash, ::std::equal_to< ::rtl::OUString > > CmdToInfoCache;
 
 SV_IMPL_PTRARR( BibStatusDispatchArr, BibStatusDispatchPtr );
 

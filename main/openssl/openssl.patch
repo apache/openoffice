@@ -1,5 +1,5 @@
---- misc/build/openssl-3.0.20/crypto/bio/bio_sock2.c
-+++ misc/build/openssl-3.0.20/crypto/bio/bio_sock2.c
+--- misc/build/openssl-3.0.21/crypto/bio/bio_sock2.c
++++ misc/build/openssl-3.0.21/crypto/bio/bio_sock2.c
 @@ -268,6 +268,10 @@
           * Therefore we always have to use setsockopt here.
           */
@@ -11,8 +11,8 @@
          if (setsockopt(sock, IPPROTO_IPV6, IPV6_V6ONLY,
                  (const void *)&on, sizeof(on))
              != 0) {
---- misc/build/openssl-3.0.20/crypto/init.c
-+++ misc/build/openssl-3.0.20/crypto/init.c
+--- misc/build/openssl-3.0.21/crypto/init.c
++++ misc/build/openssl-3.0.21/crypto/init.c
 @@ -133,7 +133,7 @@
 
  #if !defined(OPENSSL_USE_NODELETE) \
@@ -31,8 +31,8 @@
          HMODULE handle = NULL;
          BOOL ret;
          union {
---- misc/build/openssl-3.0.20/crypto/threads_win.c
-+++ misc/build/openssl-3.0.20/crypto/threads_win.c
+--- misc/build/openssl-3.0.21/crypto/threads_win.c
++++ misc/build/openssl-3.0.21/crypto/threads_win.c
 @@ -54,7 +54,7 @@
          return NULL;
      }

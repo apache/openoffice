@@ -28,7 +28,7 @@
 #endif
 
 #include <stdio.h>
-#include <hash_map>
+#include <unordered_map>
 
 #include <sfx2/docfile.hxx>
 #include <sfx2/objsh.hxx>
@@ -319,7 +319,7 @@ void SAL_CALL LayoutManagerListener::layoutEvent(
 
 //====================================================================
 
-typedef std::hash_map< sal_Int32, rtl::OUString > ToolBarResIdToResourceURLMap;
+typedef std::unordered_map< sal_Int32, rtl::OUString > ToolBarResIdToResourceURLMap;
 
 static sal_Bool bMapInitialized = sal_False;
 static ToolBarResIdToResourceURLMap aResIdToResourceURLMap;

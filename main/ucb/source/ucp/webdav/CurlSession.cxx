@@ -24,7 +24,7 @@
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_webdav.hxx"
 
-#include <hash_map>
+#include <unordered_map>
 #include <vector>
 #include <string.h>
 #include <rtl/string.h>

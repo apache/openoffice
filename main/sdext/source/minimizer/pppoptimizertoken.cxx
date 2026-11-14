@@ -24,10 +24,10 @@
 
 #include "pppoptimizertoken.hxx"
 #include <osl/mutex.hxx>
-#include <hash_map>
+#include <unordered_map>
 #include <rtl/string.hxx>
 
-typedef std::hash_map< const char*, PPPOptimizerTokenEnum, rtl::CStringHash, rtl::CStringEqual> TypeNameHashMap;
+typedef std::unordered_map< const char*, PPPOptimizerTokenEnum, rtl::CStringHash, rtl::CStringEqual> TypeNameHashMap;
 static TypeNameHashMap* pHashMap = NULL;
 static ::osl::Mutex& getHashMapMutex()
 {

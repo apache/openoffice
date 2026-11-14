@@ -106,11 +106,11 @@ OTableBorderWindow::~OTableBorderWindow()
 	m_pFieldDescWin->Hide();
 
 	{
-		::std::auto_ptr<Window> aTemp(m_pEditorCtrl);
+		::std::unique_ptr<Window> aTemp(m_pEditorCtrl);
 		m_pEditorCtrl = NULL;
 	}
 	{
-		::std::auto_ptr<Window> aTemp(m_pFieldDescWin);
+		::std::unique_ptr<Window> aTemp(m_pFieldDescWin);
 		m_pFieldDescWin = NULL;
 	}
 
@@ -244,7 +244,7 @@ OTableDesignView::~OTableDesignView()
 	m_pWin->Hide();
 
 	{
-		::std::auto_ptr<Window> aTemp(m_pWin);
+		::std::unique_ptr<Window> aTemp(m_pWin);
 		m_pWin = NULL;
 	}
 }

@@ -29,7 +29,7 @@
   *************************************************************************/
 
 #include <list>
-#include <hash_map>
+#include <unordered_map>
 #include <osl/diagnose.h>
 #include <rtl/ustrbuf.hxx>
 #include <cppuhelper/interfacecontainer.hxx>
@@ -125,7 +125,7 @@ struct hashString_Impl
 //
 //=========================================================================
 
-typedef std::hash_map
+typedef std::unordered_map
 <
 	OUString,
 	PersistentPropertySet*,

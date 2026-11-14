@@ -134,6 +134,7 @@
 #include <rtl/logfile.hxx>
 
 #include <memory>
+#include <functional>
 
 using namespace ::com::sun::star::uno;
 using namespace ::com::sun::star::awt;
@@ -286,7 +287,7 @@ Sequence< Type > SAL_CALL SbaTableQueryBrowser::getTypes(  )
             aTypes.getConstArray(),
             aTypes.getConstArray() + aTypes.getLength(),
             aStrippedTypes.getArray(),
-            ::std::bind2nd( ::std::equal_to< Type >(), XScriptInvocationContext::static_type() )
+            ::std::bind( ::std::equal_to< Type >(), ::std::placeholders::_1, XScriptInvocationContext::static_type() )
         );
         aTypes = aStrippedTypes;
     }
@@ -329,7 +330,7 @@ void SAL_CALL SbaTableQueryBrowser::disposing()
 	clearTreeModel();
 	// clear the tree model
 	{
-		::std::auto_ptr<SvLBoxTreeList> aTemp(m_pTreeModel);
+		::std::unique_ptr<SvLBoxTreeList> aTemp(m_pTreeModel);
 		m_pTreeModel = NULL;
 	}
 
@@ -421,8 +422,10 @@ sal_Bool SbaTableQueryBrowser::Construct(Window* pParent)
 namespace
 {
     // -----------------------------------------------------------------------------------------------------------------
-    struct SelectValueByName : public ::std::unary_function< ::rtl::OUString, Any >
+    struct SelectValueByName
     {
+        typedef ::rtl::OUString argument_type;
+        typedef Any result_type;
         const Any& operator()( ::rtl::OUString const& i_name ) const
         {
             return m_rCollection.get( i_name );
@@ -2212,7 +2215,7 @@ void SbaTableQueryBrowser::populateTree(const Reference<XNameAccess>& _xNameAcce
 //------------------------------------------------------------------------------
 SvLBoxEntry* SbaTableQueryBrowser::implAppendEntry( SvLBoxEntry* _pParent, const String& _rName, void* _pUserData, EntryType _eEntryType )
 {
-    ::std::auto_ptr< ImageProvider > pImageProvider( getImageProviderFor( _pParent ) );
+    ::std::unique_ptr< ImageProvider > pImageProvider( getImageProviderFor( _pParent ) );
 
     Image aImage, aImageHC;
     pImageProvider->getImages( _rName, getDatabaseObjectType( _eEntryType ), aImage, aImageHC );
@@ -3375,9 +3378,9 @@ sal_Bool SbaTableQueryBrowser::ensureConnection(SvLBoxEntry* _pAnyEntry, SharedC
 }
 
 // -----------------------------------------------------------------------------
-::std::auto_ptr< ImageProvider > SbaTableQueryBrowser::getImageProviderFor( SvLBoxEntry* _pAnyEntry )
+::std::unique_ptr< ImageProvider > SbaTableQueryBrowser::getImageProviderFor( SvLBoxEntry* _pAnyEntry )
 {
-    ::std::auto_ptr< ImageProvider > pImageProvider( new ImageProvider );
+    ::std::unique_ptr< ImageProvider > pImageProvider( new ImageProvider );
     SharedConnection xConnection;
     if ( getExistentConnectionFor( _pAnyEntry, xConnection ) )
         pImageProvider.reset( new ImageProvider( xConnection ) );

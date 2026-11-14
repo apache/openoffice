@@ -225,7 +225,7 @@ void SAL_CALL ScriptProtocolHandler::dispatchWithNotification(
             Sequence< sal_Int16 > outIndex;
 
             // attempt to protect the document against the script tampering with its Undo Context
-            ::std::auto_ptr< ::framework::DocumentUndoGuard > pUndoGuard;
+            ::std::unique_ptr< ::framework::DocumentUndoGuard > pUndoGuard;
             if ( bIsDocumentScript )
                 pUndoGuard.reset( new ::framework::DocumentUndoGuard( m_xScriptInvocation ) );
 

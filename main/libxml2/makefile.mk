@@ -86,6 +86,10 @@ xml2_CFLAGS+=$(ARCH_FLAGS) $(C_RESTRICTIONFLAGS)
 .ENDIF			# "$(COMNAME)"=="sunpro5"
 xml2_LDFLAGS+=-L$(SYSBASE)$/usr$/lib
 .ENDIF			# "$(SYSBASE)"!=""
+.IF "$(HAVE_LD_UNDEFINED_VERSION)"=="TRUE"
+# lld rejects libxml2.syms entries for symbols the configure options leave out
+xml2_LDFLAGS+=-Wl,--undefined-version
+.ENDIF
 
 # --without-iconv: no OpenOffice code calls iconv, and libxml2-configure.patch
 # has always meant to turn it off -- it patches the generated xmlversion.h,
@@ -102,7 +106,7 @@ CONFIGURE_FLAGS=--enable-ipv6=no --without-python --without-zlib --without-lzma 
 # main/xmlsecurity/util/makefile.mk and main/forms/util/makefile.mk for
 # the consumer side of this.
 CONFIGURE_ACTION=.$/configure
-CONFIGURE_FLAGS=--enable-ipv6=no --without-python --without-zlib --without-lzma --without-iconv --enable-static=yes --enable-shared=no --with-sax1=yes ADDCFLAGS="$(xml2_CFLAGS) $(EXTRA_CFLAGS)" LDFLAGS="$(xml2_LDFLAGS) $(EXTRA_LINKFLAGS)"
+CONFIGURE_FLAGS=--enable-ipv6=no --without-python --without-zlib --without-lzma --without-iconv --without-icu --without-readline --without-history --enable-static=yes --enable-shared=no --with-sax1=yes ADDCFLAGS="$(xml2_CFLAGS) $(EXTRA_CFLAGS)" LDFLAGS="$(xml2_LDFLAGS) $(EXTRA_LINKFLAGS)"
 .ELSE
 CONFIGURE_ACTION=.$/configure
 CONFIGURE_FLAGS=--enable-ipv6=no --without-python --without-zlib --without-lzma --without-iconv --enable-static=no --with-sax1=yes ADDCFLAGS="$(xml2_CFLAGS) $(EXTRA_CFLAGS)" LDFLAGS="$(xml2_LDFLAGS) $(EXTRA_LINKFLAGS)"

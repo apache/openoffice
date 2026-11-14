@@ -246,7 +246,7 @@ private:
     ::osl::Mutex &   m_rMutex;
 
     /// pImpl idiom implementation
-    ::std::auto_ptr< impl::ImplOPropertySet > m_pImplProperties;
+    ::std::unique_ptr< impl::ImplOPropertySet > m_pImplProperties;
     bool m_bSetNewValuesExplicitlyEvenIfTheyEqualDefault;
 };
 

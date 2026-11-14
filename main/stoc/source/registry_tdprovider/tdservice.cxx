@@ -223,7 +223,7 @@ ServiceTypeDescriptionImpl::getProperties()
         _aBytes.getConstArray(), _aBytes.getLength(), false, TYPEREG_VERSION_1);
 
     sal_uInt16 nFields = (sal_uInt16)aReader.getFieldCount();
-    std::auto_ptr< Sequence< Reference< XPropertyTypeDescription > > >
+    std::unique_ptr< Sequence< Reference< XPropertyTypeDescription > > >
         pTempProps(
             new Sequence< Reference< XPropertyTypeDescription > >(nFields));
     Reference< XPropertyTypeDescription > * pProps = pTempProps->getArray();
@@ -291,7 +291,7 @@ ServiceTypeDescriptionImpl::getProperties()
 
     MutexGuard guard(getMutex());
     if (_pProps.get() == 0) {
-        _pProps = pTempProps;
+        _pProps = std::move(pTempProps);
     }
     return *_pProps;
 }
@@ -316,7 +316,7 @@ ServiceTypeDescriptionImpl::getConstructors() {
             _aBytes.getConstArray(), _aBytes.getLength(), false,
             TYPEREG_VERSION_1);
         sal_uInt16 ctorCount = reader.getMethodCount();
-        std::auto_ptr< Sequence< Reference< XServiceConstructorDescription > > >
+        std::unique_ptr< Sequence< Reference< XServiceConstructorDescription > > >
             ctors(
                 new Sequence< Reference< XServiceConstructorDescription > >(
                     ctorCount));
@@ -338,7 +338,7 @@ ServiceTypeDescriptionImpl::getConstructors() {
             (*ctors)[i] = new Constructor(
                 _xTDMgr, reader.getMethodName(i), _aBytes, i);
         }
-        _pCtors = ctors;
+        _pCtors = std::move(ctors);
     }
     return *_pCtors;
 }

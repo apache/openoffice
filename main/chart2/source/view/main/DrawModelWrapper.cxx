@@ -119,7 +119,7 @@ DrawModelWrapper::DrawModelWrapper(
         , m_pChartItemPool(0)
         , m_xMainDrawPage(0)
         , m_xHiddenDrawPage(0)
-        , m_apRefDevice(0)
+        , m_apRefDevice()
 {
     m_pChartItemPool = ChartItemPool::CreateChartItemPool();
 
@@ -177,7 +177,7 @@ DrawModelWrapper::DrawModelWrapper(
     OutputDevice* pDefaultDevice = rOutliner.GetRefDevice();
     if( !pDefaultDevice )
         pDefaultDevice = Application::GetDefaultDevice();
-    m_apRefDevice = std::auto_ptr< OutputDevice >( new VirtualDevice( *pDefaultDevice ) );
+    m_apRefDevice = std::unique_ptr< OutputDevice >( new VirtualDevice( *pDefaultDevice ) );
     MapMode aMapMode = m_apRefDevice->GetMapMode();
     aMapMode.SetMapUnit(MAP_100TH_MM);
     m_apRefDevice->SetMapMode(aMapMode);

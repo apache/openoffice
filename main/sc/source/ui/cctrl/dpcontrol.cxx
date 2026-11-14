@@ -52,8 +52,8 @@ using ::com::sun::star::accessibility::XAccessibleContext;
 using ::rtl::OUString;
 using ::rtl::OUStringHash;
 using ::std::vector;
-using ::std::hash_map;
-using ::std::auto_ptr;
+using ::std::unordered_map;
+using ::std::unique_ptr;
 
 ScDPFieldButton::ScDPFieldButton(OutputDevice* pOutDev, const StyleSettings* pStyle, const Fraction* pZoomX, const Fraction* pZoomY, ScDocument* pDoc) :
     mpDoc(pDoc),
@@ -985,8 +985,8 @@ ScDPFieldPopupWindow::ScDPFieldPopupWindow(Window* pParent, ScDocument* pDoc) :
     maBtnOk(this),
     maBtnCancel(this),
     mnCurTabStop(0),
-    mpExtendedData(NULL),
-    mpOKAction(NULL),
+    mpExtendedData(),
+    mpOKAction(),
     maWndSize(240, 330),
     mePrevToggleAllState(STATE_DONTKNOW)
 {
@@ -1380,9 +1380,9 @@ const Size& ScDPFieldPopupWindow::getWindowSize() const
     return maWndSize;
 }
 
-void ScDPFieldPopupWindow::getResult(hash_map<OUString, bool, OUStringHash>& rResult)
+void ScDPFieldPopupWindow::getResult(unordered_map<OUString, bool, OUStringHash>& rResult)
 {
-    typedef hash_map<OUString, bool, OUStringHash> ResultMap;
+    typedef unordered_map<OUString, bool, OUStringHash> ResultMap;
     ResultMap aResult;
     size_t n = maMembers.size();
     for (size_t i = 0; i < n; ++i)

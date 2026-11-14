@@ -160,11 +160,11 @@ struct OOO_DLLPUBLIC_CHARTTOOLS PropertyNameLess
     }
 };
 
-struct OOO_DLLPUBLIC_CHARTTOOLS PropertyLess : public ::std::binary_function<
-        ::com::sun::star::beans::Property,
-        ::com::sun::star::beans::Property,
-        bool >
+struct OOO_DLLPUBLIC_CHARTTOOLS PropertyLess
 {
+    typedef ::com::sun::star::beans::Property first_argument_type;
+    typedef ::com::sun::star::beans::Property second_argument_type;
+    typedef bool result_type;
     bool operator() ( const ::com::sun::star::beans::Property & rFirst,
                       const ::com::sun::star::beans::Property & rSecond )
     {
@@ -172,8 +172,10 @@ struct OOO_DLLPUBLIC_CHARTTOOLS PropertyLess : public ::std::binary_function<
     }
 };
 
-struct OOO_DLLPUBLIC_CHARTTOOLS PropertyValueNameEquals : public ::std::unary_function< ::com::sun::star::beans::PropertyValue, bool >
+struct OOO_DLLPUBLIC_CHARTTOOLS PropertyValueNameEquals
 {
+    typedef ::com::sun::star::beans::PropertyValue argument_type;
+    typedef bool result_type;
     explicit PropertyValueNameEquals( const ::rtl::OUString & rName ) :
             m_aName( rName )
     {}

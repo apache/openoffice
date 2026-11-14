@@ -94,7 +94,7 @@ private:
     virtual SvStream*   ImplQueryPictureStream();
 
 private:
-    ::std::auto_ptr< SvStream > mxPicStrm;
+    ::std::unique_ptr< SvStream > mxPicStrm;
 };
 
 class SwBasicEscherEx : public EscherEx

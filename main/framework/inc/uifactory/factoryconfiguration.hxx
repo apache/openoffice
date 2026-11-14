@@ -89,7 +89,7 @@ private:
         ControllerInfo(const ::rtl::OUString& _aImplementationName,const ::rtl::OUString& _aValue) : m_aImplementationName(_aImplementationName),m_aValue(_aValue){}
         ControllerInfo(){}
     };
-    class MenuControllerMap : public std::hash_map< rtl::OUString,
+    class MenuControllerMap : public std::unordered_map< rtl::OUString,
                                                          ControllerInfo,
                                                          rtl::OUStringHash,
                                                          ::std::equal_to< ::rtl::OUString > >

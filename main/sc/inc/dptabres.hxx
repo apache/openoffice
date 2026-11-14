@@ -31,8 +31,8 @@
 #include <com/sun/star/uno/Sequence.hxx>
 #include "global.hxx"		// enum ScSubTotalFunc
 #include "dpcachetable.hxx"
-#include <hash_map>
-#include <hash_set>
+#include <unordered_map>
+#include <unordered_set>
 #include <vector>
 #include <memory>
 
@@ -236,8 +236,10 @@ class ScDPDataMember;
 // Wang Xu Ming -- 2009-8-17
 // DataPilot Migration - Cache&&Performance
 
-struct MemberHashIndexFunc : public std::unary_function< const SCROW &, size_t >
+struct MemberHashIndexFunc
 {
+	typedef const SCROW & argument_type;
+	typedef size_t result_type;
 	size_t operator() (const SCROW &rDataIndex) const { return rDataIndex; }
 };
 
@@ -254,7 +256,7 @@ public:
 };
 
 typedef std::vector <ScDPParentDimData *>                 DimMemberArray;
-typedef std::hash_map < SCROW, ScDPParentDimData *, MemberHashIndexFunc>  DimMemberHash;
+typedef std::unordered_map < SCROW, ScDPParentDimData *, MemberHashIndexFunc>  DimMemberHash;
 
 class ResultMembers
 {
@@ -723,8 +725,8 @@ private:
     {
         size_t operator()(const ScDPItemData& r) const;
     };
-    typedef ::std::hash_set<ScDPItemData, MemberHash> VisibleMemberType;
-    typedef ::std::hash_map<String, VisibleMemberType, ScStringHashCode> DimMemberType;
+    typedef ::std::unordered_set<ScDPItemData, MemberHash> VisibleMemberType;
+    typedef ::std::unordered_map<String, VisibleMemberType, ScStringHashCode> DimMemberType;
     DimMemberType maDimensions;
 
     ScDPSource* mpSource;

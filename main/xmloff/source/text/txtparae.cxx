@@ -34,7 +34,7 @@
 #include <sal/types.h>
 #include <vector>
 #include <list>
-#include <hash_map>
+#include <unordered_map>
 #include <iterator>
 #include <com/sun/star/lang/XServiceInfo.hpp>
 #include <com/sun/star/container/XEnumerationAccess.hpp>
@@ -154,8 +154,10 @@ namespace
     };
 
     struct FrameRefHash
-        : public unary_function<Reference<XTextFrame>, size_t>
+
     {
+        typedef Reference<XTextFrame> argument_type;
+        typedef size_t result_type;
         size_t operator()(const Reference<XTextFrame> xFrame) const
             { return sal::static_int_cast<size_t>(reinterpret_cast<sal_uIntPtr>(xFrame.get())); }
     };
@@ -209,7 +211,7 @@ namespace
             };
 
         private:
-            typedef hash_map<
+            typedef unordered_map<
                 Reference<XTextFrame>,
                 TextContentSet,
                 FrameRefHash> framebound_map_t;
@@ -255,10 +257,10 @@ namespace xmloff
             const BoundFrames* GetShapes() const
                 { return m_pShapes.get(); };
         private:
-            auto_ptr<BoundFrames> m_pTexts;
-            auto_ptr<BoundFrames> m_pGraphics;
-            auto_ptr<BoundFrames> m_pEmbeddeds;
-            auto_ptr<BoundFrames> m_pShapes;
+            unique_ptr<BoundFrames> m_pTexts;
+            unique_ptr<BoundFrames> m_pGraphics;
+            unique_ptr<BoundFrames> m_pEmbeddeds;
+            unique_ptr<BoundFrames> m_pShapes;
     };
 }
 
@@ -376,19 +378,19 @@ BoundFrameSets::BoundFrameSets(const Reference<XInterface> xModel)
     const Reference<XTextEmbeddedObjectsSupplier> xEOS(xModel, UNO_QUERY);
     const Reference<XDrawPageSupplier> xDPS(xModel, UNO_QUERY);
     if(xTFS.is())
-        m_pTexts = auto_ptr<BoundFrames>(new BoundFrames(
+        m_pTexts = unique_ptr<BoundFrames>(new BoundFrames(
             Reference<XEnumerationAccess>(xTFS->getTextFrames(), UNO_QUERY),
             &lcl_TextContentsUnfiltered));
     if(xGOS.is())
-        m_pGraphics = auto_ptr<BoundFrames>(new BoundFrames(
+        m_pGraphics = unique_ptr<BoundFrames>(new BoundFrames(
             Reference<XEnumerationAccess>(xGOS->getGraphicObjects(), UNO_QUERY),
             &lcl_TextContentsUnfiltered));
     if(xEOS.is())
-        m_pEmbeddeds = auto_ptr<BoundFrames>(new BoundFrames(
+        m_pEmbeddeds = unique_ptr<BoundFrames>(new BoundFrames(
             Reference<XEnumerationAccess>(xEOS->getEmbeddedObjects(), UNO_QUERY),
             &lcl_TextContentsUnfiltered));
     if(xDPS.is())
-        m_pShapes = auto_ptr<BoundFrames>(new BoundFrames(
+        m_pShapes = unique_ptr<BoundFrames>(new BoundFrames(
             Reference<XEnumerationAccess>(xDPS->getDrawPage(), UNO_QUERY),
             &lcl_ShapeFilter));
 };

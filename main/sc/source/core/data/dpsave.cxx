@@ -65,15 +65,15 @@ using namespace ScDPGlobal;
 using namespace com::sun::star::sheet;
 // End Comments
 
-#include <hash_map>
+#include <unordered_map>
 
 using namespace com::sun::star;
 using ::com::sun::star::uno::Reference;
 using ::com::sun::star::uno::Any;
 using ::rtl::OUString;
 using ::rtl::OUStringHash;
-using ::std::hash_map;
-using ::std::auto_ptr;
+using ::std::unordered_map;
+using ::std::unique_ptr;
 
 // -----------------------------------------------------------------------
 
@@ -95,7 +95,7 @@ void lcl_SetBoolProperty( const uno::Reference<beans::XPropertySet>& xProp,
 
 ScDPSaveMember::ScDPSaveMember(const String& rName) :
 	aName( rName ),
-    mpLayoutName(NULL),
+    mpLayoutName(),
 	nVisibleMode( SC_DPSAVEMODE_DONTKNOW ),
 	nShowDetailsMode( SC_DPSAVEMODE_DONTKNOW )
 {
@@ -103,7 +103,7 @@ ScDPSaveMember::ScDPSaveMember(const String& rName) :
 
 ScDPSaveMember::ScDPSaveMember(const ScDPSaveMember& r) :
 	aName( r.aName ),
-    mpLayoutName(NULL),
+    mpLayoutName(),
 	nVisibleMode( r.nVisibleMode ),
 	nShowDetailsMode( r.nShowDetailsMode )
 {
@@ -197,8 +197,8 @@ void ScDPSaveMember::WriteToSource( const uno::Reference<uno::XInterface>& xMemb
 ScDPSaveDimension::ScDPSaveDimension(const String& rName, sal_Bool bDataLayout) :
 	aName( rName ),
 	pSelectedPage( NULL ),
-	mpLayoutName(NULL),
-	mpSubtotalName(NULL),
+	mpLayoutName(),
+	mpSubtotalName(),
 	bIsDataLayout( bDataLayout ),
 	bDupFlag( sal_False ),
 	nOrientation( sheet::DataPilotFieldOrientation_HIDDEN ),
@@ -217,8 +217,8 @@ ScDPSaveDimension::ScDPSaveDimension(const String& rName, sal_Bool bDataLayout) 
 
 ScDPSaveDimension::ScDPSaveDimension(const ScDPSaveDimension& r) :
 	aName( r.aName ),
-	mpLayoutName(NULL),
-	mpSubtotalName(NULL),
+	mpLayoutName(),
+	mpSubtotalName(),
 	bIsDataLayout( r.bIsDataLayout ),
 	bDupFlag( r.bDupFlag ),
 	nOrientation( r.nOrientation ),
@@ -714,9 +714,9 @@ void ScDPSaveDimension::WriteToSource( const uno::Reference<uno::XInterface>& xD
         ScUnoHelpFunctions::SetOptionalPropertyValue(xDimProp, SC_UNO_HAS_HIDDEN_MEMBER, bHasHiddenMember);
 }
 
-void ScDPSaveDimension::UpdateMemberVisibility(const hash_map<OUString, bool, OUStringHash>& rData)
+void ScDPSaveDimension::UpdateMemberVisibility(const unordered_map<OUString, bool, OUStringHash>& rData)
 {
-    typedef hash_map<OUString, bool, OUStringHash> DataMap;
+    typedef unordered_map<OUString, bool, OUStringHash> DataMap;
     MemberList::iterator itrMem = maMemberList.begin(), itrMemEnd = maMemberList.end();
     for (; itrMem != itrMemEnd; ++itrMem)
     {
@@ -755,7 +755,7 @@ ScDPSaveData::ScDPSaveData() :
     mnCacheId( -1),
     // End Comments
     mbDimensionMembersBuilt(false),
-    mpGrandTotalName(NULL)
+    mpGrandTotalName()
 {
 }
 
@@ -771,7 +771,7 @@ ScDPSaveData::ScDPSaveData(const ScDPSaveData& r) :
     mnCacheId(  r.mnCacheId ),
     // End Comments
     mbDimensionMembersBuilt(r.mbDimensionMembersBuilt),
-    mpGrandTotalName(NULL)
+    mpGrandTotalName()
 {
     if ( r.pDimensionData )
         pDimensionData = new ScDPDimensionSaveData( *r.pDimensionData );
@@ -1235,7 +1235,7 @@ void ScDPSaveData::BuildAllDimensionMembers(ScDPTableData* pData)
         return;
 
     // First, build a dimension name-to-index map.
-    typedef hash_map<OUString, long, ::rtl::OUStringHash> NameIndexMap;
+    typedef unordered_map<OUString, long, ::rtl::OUStringHash> NameIndexMap;
     NameIndexMap aMap;
     long nColCount = pData->GetColumnCount();
     for (long i = 0; i < nColCount; ++i)
@@ -1268,7 +1268,7 @@ void ScDPSaveData::BuildAllDimensionMembers(ScDPTableData* pData)
                 // this member instance already exists.  nothing to do.
                 continue;
 
-            auto_ptr<ScDPSaveMember> pNewMember(new ScDPSaveMember(aMemName));
+            unique_ptr<ScDPSaveMember> pNewMember(new ScDPSaveMember(aMemName));
             pNewMember->SetIsVisible(true);
             pDim->AddMember(pNewMember.release());
         }
@@ -1292,7 +1292,7 @@ void ScDPSaveData::BuildAllDimensionMembersFromSource( ScDPObject* pDPObj )
     uno::Sequence<OUString> aDimNames = xDimsName->getElementNames();
 
     // First, build a dimension name-to-index map.
-    typedef hash_map<OUString, long, ::rtl::OUStringHash> NameIndexMap;
+    typedef unordered_map<OUString, long, ::rtl::OUStringHash> NameIndexMap;
     NameIndexMap aMap;
     long nColCount = aDimNames.getLength();
     for (long i = 0; i < nColCount; ++i)
@@ -1325,7 +1325,7 @@ void ScDPSaveData::BuildAllDimensionMembersFromSource( ScDPObject* pDPObj )
                 // this member instance already exists.  nothing to do.
                 continue;
 
-            auto_ptr<ScDPSaveMember> pNewMember(new ScDPSaveMember(aMemName));
+            unique_ptr<ScDPSaveMember> pNewMember(new ScDPSaveMember(aMemName));
             pNewMember->SetIsVisible(true);
             pDim->AddMember(pNewMember.release());
         }

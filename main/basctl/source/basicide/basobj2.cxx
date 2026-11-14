@@ -247,13 +247,13 @@ namespace
         (void)pThis;
         ENSURE_OR_RETURN( i_pData, "wrong MacroExecutionData", 0L );
         // take ownership of the data
-        ::std::auto_ptr< MacroExecutionData > pData( i_pData );
+        ::std::unique_ptr< MacroExecutionData > pData( i_pData );
 
         DBG_ASSERT( pData->xMethod->GetParent()->GetFlags() & SBX_EXTSEARCH, "Kein EXTSEARCH!" );
 
         // in case this is a document-local macro, try to protect the document's Undo Manager from
         // flawed scripts
-        ::std::auto_ptr< ::framework::DocumentUndoGuard > pUndoGuard;
+        ::std::unique_ptr< ::framework::DocumentUndoGuard > pUndoGuard;
         if ( pData->aDocument.isDocument() )
             pUndoGuard.reset( new ::framework::DocumentUndoGuard( pData->aDocument.getDocument() ) );
 
@@ -277,7 +277,7 @@ namespace
     sal_Bool bError = sal_False;
     SbMethod* pMethod = NULL;
 
-    ::std::auto_ptr< MacroChooser > pChooser( new MacroChooser( NULL, sal_True ) );
+    ::std::unique_ptr< MacroChooser > pChooser( new MacroChooser( NULL, sal_True ) );
 	if ( bChooseOnly || !SvtModuleOptions().IsBasicIDE() )
         pChooser->SetMode( MACROCHOOSER_CHOOSEONLY );
 

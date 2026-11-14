@@ -69,7 +69,7 @@
 #endif
 #include <memory>
 #include <queue>
-#include <hash_map>
+#include <unordered_map>
 
 class TextEngine;
 class TextView;
@@ -343,7 +343,7 @@ private:
 };
 
 
-typedef ::std::hash_map< ::rtl::OUString,
+typedef ::std::unordered_map< ::rtl::OUString,
                          ::css::beans::PropertyValue,
                          ::rtl::OUStringHash,
                          ::std::equal_to< ::rtl::OUString > > tPropValMap;
@@ -615,7 +615,7 @@ private:
 
     // All the following members have valid values only after calling init:
 
-    ::std::auto_ptr< Paragraphs > m_xParagraphs;
+    ::std::unique_ptr< Paragraphs > m_xParagraphs;
 
     // m_nViewOffset is from the start of the document (0) to the start of the
     // current view, and m_nViewHeight is the height of the view:

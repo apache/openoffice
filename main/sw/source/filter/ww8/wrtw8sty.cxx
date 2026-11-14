@@ -841,7 +841,7 @@ void wwFontHelper::WriteFontTable(SvStream *pTableStream, WW8Fib& rFib)
      * Write them all to pTableStream
      */
     ::std::for_each(aFontList.begin(), aFontList.end(),
-        ::std::bind2nd(::std::mem_fun(&wwFont::Write),pTableStream));
+        ::std::bind(::std::mem_fn(&wwFont::Write), ::std::placeholders::_1,pTableStream));
 
     /*
      * Write the position and len in the FIB
@@ -862,7 +862,7 @@ void wwFontHelper::WriteFontTable( const DocxAttributeOutput& rAttrOutput )
     ::std::vector<const wwFont *> aFontList( AsVector() );
 
     ::std::for_each( aFontList.begin(), aFontList.end(),
-        ::std::bind2nd( ::std::mem_fun( &wwFont::WriteDocx ), &rAttrOutput ) );
+        ::std::bind( ::std::mem_fn( &wwFont::WriteDocx ), ::std::placeholders::_1, &rAttrOutput ) );
 }
 #endif
 
@@ -871,7 +871,7 @@ void wwFontHelper::WriteFontTable( const RtfAttributeOutput& rAttrOutput )
     ::std::vector<const wwFont *> aFontList( AsVector() );
 
     ::std::for_each( aFontList.begin(), aFontList.end(),
-        ::std::bind2nd( ::std::mem_fun( &wwFont::WriteRtf ), &rAttrOutput ) );
+        ::std::bind( ::std::mem_fn( &wwFont::WriteRtf ), ::std::placeholders::_1, &rAttrOutput ) );
 }
 
 /* */

@@ -458,11 +458,11 @@ void PieChart::createShapes()
 
                 //---------------------------
                 //point color:
-                std::auto_ptr< tPropertyNameValueMap > apOverwritePropertiesMap(0);
+                std::unique_ptr< tPropertyNameValueMap > apOverwritePropertiesMap;
                 {
                     if(!pSeries->hasPointOwnColor(nPointIndex) && m_xColorScheme.is())
                     {
-                        apOverwritePropertiesMap = std::auto_ptr< tPropertyNameValueMap >( new tPropertyNameValueMap() );
+                        apOverwritePropertiesMap = std::unique_ptr< tPropertyNameValueMap >( new tPropertyNameValueMap() );
                         (*apOverwritePropertiesMap)[C2U("FillColor")] = uno::makeAny(
                             m_xColorScheme->getColorByIndex( nPointIndex ));
                     }

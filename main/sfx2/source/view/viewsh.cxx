@@ -306,7 +306,7 @@ SfxViewShell_Impl::SfxViewShell_Impl(sal_uInt16 const nFlags)
 ,   m_eScroll(SCROLLING_DEFAULT)
 ,   m_nFamily(0xFFFF)   // undefined, default set by TemplateDialog
 ,   m_pController(0)
-,   m_pAccExec(0)
+,   m_pAccExec()
 {}
 
 //=========================================================================

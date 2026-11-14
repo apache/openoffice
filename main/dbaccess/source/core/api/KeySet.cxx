@@ -154,10 +154,10 @@ OKeySet::OKeySet(const connectivity::OSQLTable& _xTable,
                  sal_Int32& o_nRowCount)
             :OCacheSet(i_nMaxRows)
             ,m_aParameterValueForCache(_aParameterValueForCache)
-            ,m_pKeyColumnNames(NULL)
-			,m_pColumnNames(NULL)
-            ,m_pParameterNames(NULL)
-            ,m_pForeignColumnNames(NULL)
+            ,m_pKeyColumnNames()
+			,m_pColumnNames()
+            ,m_pParameterNames()
+            ,m_pForeignColumnNames()
 			,m_xTable(_xTable)
             ,m_xTableKeys(_xTableKeys)
 			,m_xComposer(_xComposer)
@@ -201,7 +201,7 @@ void OKeySet::findTableColumnsMatching_throw(   const Any& i_aTable,
                                                 const ::rtl::OUString& i_rUpdateTableName,
                                                 const Reference<XDatabaseMetaData>& i_xMeta,
                                                 const Reference<XNameAccess>& i_xQueryColumns,
-                                                ::std::auto_ptr<SelectColumnsMetaData>& o_pKeyColumnNames)
+                                                ::std::unique_ptr<SelectColumnsMetaData>& o_pKeyColumnNames)
 {
     // first ask the database itself for the best columns which can be used
     Sequence< ::rtl::OUString> aBestColumnNames;

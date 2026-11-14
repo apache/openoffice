@@ -26,7 +26,7 @@
 #include <algorithm>
 #include "drawdoc.hxx"
 #include "sdpage.hxx"
-#include <hash_map>
+#include <unordered_map>
 #include <set>
 #include <vector>
 #include <iterator>
@@ -86,7 +86,7 @@ private:
         size_t operator()(SdDrawDocument* argument) const
         { return reinterpret_cast<unsigned long>(argument); }
     };
-    typedef ::std::hash_map<SdDrawDocument*,
+    typedef ::std::unordered_map<SdDrawDocument*,
                             MasterPageObserver::MasterPageNameSet,
                             DrawDocHash>
         MasterPageContainer;
@@ -117,7 +117,7 @@ MasterPageObserver&  MasterPageObserver::Instance (void)
         {
             MasterPageObserver* pInstance = new MasterPageObserver ();
             SdGlobalResourceContainer::Instance().AddResource (
-                ::std::auto_ptr<SdGlobalResource>(pInstance));
+                ::std::unique_ptr<SdGlobalResource>(pInstance));
             OSL_DOUBLE_CHECKED_LOCKING_MEMORY_BARRIER();
             Implementation::mpInstance = pInstance;
         }

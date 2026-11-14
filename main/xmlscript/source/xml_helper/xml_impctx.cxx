@@ -38,7 +38,7 @@
 #include "com/sun/star/uno/XComponentContext.hpp"
 
 #include <vector>
-#include <hash_map>
+#include <unordered_map>
 
 #include <memory>
 
@@ -66,8 +66,8 @@ OUString getImplementationName_DocumentHandlerImpl()
                          "com.sun.star.comp.xml.input.SaxDocumentHandler") );
 }
 
-typedef ::std::hash_map< OUString, sal_Int32, OUStringHash > t_OUString2LongMap;
-typedef ::std::hash_map< sal_Int32, OUString > t_Long2OUStringMap;
+typedef ::std::unordered_map< OUString, sal_Int32, OUStringHash > t_OUString2LongMap;
+typedef ::std::unordered_map< sal_Int32, OUString > t_Long2OUStringMap;
 
 struct PrefixEntry
 {
@@ -77,7 +77,7 @@ struct PrefixEntry
         { m_Uids.reserve( 4 ); }
 };
 
-typedef ::std::hash_map<
+typedef ::std::unordered_map<
     OUString, PrefixEntry *, OUStringHash > t_OUString2PrefixMap;
 
 struct ElementEntry
@@ -516,7 +516,7 @@ void DocumentHandlerImpl::startElement(
     Reference< xml::input::XAttributes > xAttributes;
     sal_Int32 nUid;
     OUString aLocalName;
-    ::std::auto_ptr< ElementEntry > elementEntry( new ElementEntry );
+    ::std::unique_ptr< ElementEntry > elementEntry( new ElementEntry );
 
     { // guard start:
     MGuard aGuard( m_pMutex );

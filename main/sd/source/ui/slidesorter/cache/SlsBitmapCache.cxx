@@ -100,7 +100,7 @@ public:
 };
 
 class BitmapCache::CacheBitmapContainer
-    : public ::std::hash_map<CacheKey, CacheEntry, CacheHash>
+    : public ::std::unordered_map<CacheKey, CacheEntry, CacheHash>
 {
 public:
     CacheBitmapContainer (void) {}
@@ -457,7 +457,7 @@ void BitmapCache::Recycle (const BitmapCache& rCache)
 
 
 
-::std::auto_ptr<BitmapCache::CacheIndex> BitmapCache::GetCacheIndex (
+::std::unique_ptr<BitmapCache::CacheIndex> BitmapCache::GetCacheIndex (
     bool bIncludePrecious,
     bool bIncludeNoPreview) const
 {
@@ -485,7 +485,7 @@ void BitmapCache::Recycle (const BitmapCache& rCache)
     ::std::sort(aSortedContainer.begin(), aSortedContainer.end(), AccessTimeComparator());
 
     // Return a list with the keys of the sorted entries.
-    ::std::auto_ptr<CacheIndex> pIndex(new CacheIndex());
+    ::std::unique_ptr<CacheIndex> pIndex(new CacheIndex());
     SortableBitmapContainer::iterator iIndexEntry;
     pIndex->reserve(aSortedContainer.size());
     for (iIndexEntry=aSortedContainer.begin(); iIndexEntry!=aSortedContainer.end(); ++iIndexEntry)

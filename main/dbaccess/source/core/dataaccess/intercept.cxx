@@ -192,7 +192,7 @@ void SAL_CALL OInterceptor::dispatch( const URL& _URL,const Sequence<PropertyVal
 
 IMPL_LINK( OInterceptor, OnDispatch, void*, _pDispatcher )
 {
-    ::std::auto_ptr<DispatchHelper> pHelper( reinterpret_cast< DispatchHelper* >( _pDispatcher ) );
+    ::std::unique_ptr<DispatchHelper> pHelper( reinterpret_cast< DispatchHelper* >( _pDispatcher ) );
 	try
 	{
         if ( m_pContentHolder && m_pContentHolder->prepareClose() && m_xSlaveDispatchProvider.is() )

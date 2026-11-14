@@ -297,7 +297,7 @@ static void myftoa( double nNum, char * pBuf, short nPrec, short nExpWidth,
 	short nExp = 0;						// Exponent
 	short nDig = nPrec + 1;				// Anzahl Digits in Zahl
 	short nDec;							// Anzahl Vorkommastellen
-	register int i, digit;
+	int i, digit;
 
 	// Komma besorgen
 	sal_Unicode cDecimalSep, cThousandSep;

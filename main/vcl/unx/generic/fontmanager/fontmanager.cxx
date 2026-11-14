@@ -67,7 +67,7 @@
 #include "sal/alloca.h"
 
 #include <set>
-#include <hash_set>
+#include <unordered_set>
 #include <algorithm>
 
 #include "adobeenc.tab" // get encoding table for AFM metrics
@@ -485,8 +485,8 @@ bool PrintFontManager::TrueTypeFontFile::queryMetricPage( int nPage, MultiAtomPr
             if( pImplTTFont->nkern && pImplTTFont->kerntype == KT_MICROSOFT )
             {
                 // create a glyph -> character mapping
-                ::std::hash_map< sal_uInt16, sal_Unicode > aGlyphMap;
-                ::std::hash_map< sal_uInt16, sal_Unicode >::iterator left, right;
+                ::std::unordered_map< sal_uInt16, sal_Unicode > aGlyphMap;
+                ::std::unordered_map< sal_uInt16, sal_Unicode >::iterator left, right;
                 for( i = 21; i < 0xfffd; i++ )
                 {
                     sal_uInt16 nGlyph = MapChar( pTTFont, (sal_Unicode)i, 0 ); // kerning for horz only
@@ -585,8 +585,8 @@ bool PrintFontManager::TrueTypeFontFile::queryMetricPage( int nPage, MultiAtomPr
             if( pImplTTFont->nkern && pImplTTFont->kerntype == KT_APPLE_NEW )
             {
                 // create a glyph -> character mapping
-                ::std::hash_map< sal_uInt16, sal_Unicode > aGlyphMap;
-                ::std::hash_map< sal_uInt16, sal_Unicode >::iterator left, right;
+                ::std::unordered_map< sal_uInt16, sal_Unicode > aGlyphMap;
+                ::std::unordered_map< sal_uInt16, sal_Unicode >::iterator left, right;
                 for( i = 21; i < 0xfffd; i++ )
                 {
                     sal_uInt16 nGlyph = MapChar( pTTFont, (sal_Unicode)i, 0 ); // kerning for horz only
@@ -729,7 +729,7 @@ bool PrintFontManager::TrueTypeFontFile::queryMetricPage( int nPage, MultiAtomPr
 */
 static bool familyNameOverride( const OUString& i_rPSname, OUString& o_rFamilyName )
 {
-    static std::hash_map< OUString, OUString, OUStringHash > aPSNameToFamily( 16 );
+    static std::unordered_map< OUString, OUString, OUStringHash > aPSNameToFamily( 16 );
     if( aPSNameToFamily.empty() ) // initialization
     {
         aPSNameToFamily[ OUString( RTL_CONSTASCII_USTRINGPARAM( "Helvetica-Narrow" ) ) ] =
@@ -741,7 +741,7 @@ static bool familyNameOverride( const OUString& i_rPSname, OUString& o_rFamilyNa
         aPSNameToFamily[ OUString( RTL_CONSTASCII_USTRINGPARAM( "Helvetica-Narrow-Oblique" ) ) ] =
                          OUString( RTL_CONSTASCII_USTRINGPARAM( "Helvetica Narrow" ) );
     }
-    std::hash_map<OUString,OUString,OUStringHash>::const_iterator it =
+    std::unordered_map<OUString,OUString,OUStringHash>::const_iterator it =
        aPSNameToFamily.find( i_rPSname );
     bool bReplaced = (it != aPSNameToFamily.end() );
     if( bReplaced )
@@ -1081,8 +1081,8 @@ bool PrintFontManager::PrintFont::readAfmMetrics( const OString& rFileName, Mult
                 }
                 else if( pChar->code != -1 )
                 {
-                    ::std::pair< ::std::hash_multimap< sal_uInt8, sal_Unicode >::const_iterator,
-                          ::std::hash_multimap< sal_uInt8, sal_Unicode >::const_iterator >
+                    ::std::pair< ::std::unordered_multimap< sal_uInt8, sal_Unicode >::const_iterator,
+                          ::std::unordered_multimap< sal_uInt8, sal_Unicode >::const_iterator >
                           aCodes = rManager.getUnicodeFromAdobeCode( pChar->code );
                     while( aCodes.first != aCodes.second )
                     {
@@ -1189,12 +1189,12 @@ PrintFontManager::PrintFontManager() :
 {
     for( unsigned int i = 0; i < sizeof( aAdobeCodes )/sizeof( aAdobeCodes[0] ); i++ )
     {
-        m_aUnicodeToAdobename.insert( ::std::hash_multimap< sal_Unicode, ::rtl::OString >::value_type( aAdobeCodes[i].aUnicode, aAdobeCodes[i].pAdobename ) );
-        m_aAdobenameToUnicode.insert( ::std::hash_multimap< ::rtl::OString, sal_Unicode, ::rtl::OStringHash >::value_type( aAdobeCodes[i].pAdobename, aAdobeCodes[i].aUnicode ) );
+        m_aUnicodeToAdobename.insert( ::std::unordered_multimap< sal_Unicode, ::rtl::OString >::value_type( aAdobeCodes[i].aUnicode, aAdobeCodes[i].pAdobename ) );
+        m_aAdobenameToUnicode.insert( ::std::unordered_multimap< ::rtl::OString, sal_Unicode, ::rtl::OStringHash >::value_type( aAdobeCodes[i].pAdobename, aAdobeCodes[i].aUnicode ) );
         if( aAdobeCodes[i].aAdobeStandardCode )
         {
-            m_aUnicodeToAdobecode.insert( ::std::hash_multimap< sal_Unicode, sal_uInt8 >::value_type( aAdobeCodes[i].aUnicode, aAdobeCodes[i].aAdobeStandardCode ) );
-            m_aAdobecodeToUnicode.insert( ::std::hash_multimap< sal_uInt8, sal_Unicode >::value_type( aAdobeCodes[i].aAdobeStandardCode, aAdobeCodes[i].aUnicode ) );
+            m_aUnicodeToAdobecode.insert( ::std::unordered_multimap< sal_Unicode, sal_uInt8 >::value_type( aAdobeCodes[i].aUnicode, aAdobeCodes[i].aAdobeStandardCode ) );
+            m_aAdobecodeToUnicode.insert( ::std::unordered_multimap< sal_uInt8, sal_Unicode >::value_type( aAdobeCodes[i].aAdobeStandardCode, aAdobeCodes[i].aUnicode ) );
         }
 #if 0
         m_aUnicodeToAdobename[ aAdobeCodes[i].aUnicode ] = aAdobeCodes[i].pAdobename;
@@ -1213,7 +1213,7 @@ PrintFontManager::PrintFontManager() :
 PrintFontManager::~PrintFontManager()
 {
     deinitFontconfig();
-    for( ::std::hash_map< fontID, PrintFont* >::const_iterator it = m_aFonts.begin(); it != m_aFonts.end(); ++it )
+    for( ::std::unordered_map< fontID, PrintFont* >::const_iterator it = m_aFonts.begin(); it != m_aFonts.end(); ++it )
         delete (*it).second;
     delete m_pAtoms;
     if( m_pFontCache )
@@ -1224,7 +1224,7 @@ PrintFontManager::~PrintFontManager()
 
 const OString& PrintFontManager::getDirectory( int nAtom ) const
 {
-    ::std::hash_map< int, OString >::const_iterator it( m_aAtomToDir.find( nAtom ) );
+    ::std::unordered_map< int, OString >::const_iterator it( m_aAtomToDir.find( nAtom ) );
     return it != m_aAtomToDir.end() ? it->second : s_aEmptyOString;
 }
 
@@ -1233,7 +1233,7 @@ const OString& PrintFontManager::getDirectory( int nAtom ) const
 int PrintFontManager::getDirectoryAtom( const OString& rDirectory, bool bCreate )
 {
     int nAtom = 0;
-    ::std::hash_map< OString, int, OStringHash >::const_iterator it
+    ::std::unordered_map< OString, int, OStringHash >::const_iterator it
           ( m_aDirToAtom.find( rDirectory ) );
     if( it != m_aDirToAtom.end() )
         nAtom = it->second;
@@ -1417,7 +1417,7 @@ bool PrintFontManager::analyzeFontFile( int nDirID, const OString& rFontFile, co
 fontID PrintFontManager::findFontBuiltinID( int nPSNameAtom ) const
 {
     fontID nID = 0;
-    ::std::hash_map< fontID, PrintFont* >::const_iterator it;
+    ::std::unordered_map< fontID, PrintFont* >::const_iterator it;
     for( it = m_aFonts.begin(); nID == 0 && it != m_aFonts.end(); ++it )
     {
         if( it->second->m_eType == fonttype::Builtin &&
@@ -1433,12 +1433,12 @@ fontID PrintFontManager::findFontFileID( int nDirID, const OString& rFontFile ) 
 {
     fontID nID = 0;
 
-    ::std::hash_map< OString, ::std::set< fontID >, OStringHash >::const_iterator set_it = m_aFontFileToFontID.find( rFontFile );
+    ::std::unordered_map< OString, ::std::set< fontID >, OStringHash >::const_iterator set_it = m_aFontFileToFontID.find( rFontFile );
     if( set_it != m_aFontFileToFontID.end() )
     {
         for( ::std::set< fontID >::const_iterator font_it = set_it->second.begin(); font_it != set_it->second.end() && ! nID; ++font_it )
         {
-            ::std::hash_map< fontID, PrintFont* >::const_iterator it = m_aFonts.find( *font_it );
+            ::std::unordered_map< fontID, PrintFont* >::const_iterator it = m_aFonts.find( *font_it );
             if( it != m_aFonts.end() )
             {
                 switch( it->second->m_eType )
@@ -2100,7 +2100,7 @@ void PrintFontManager::initialize()
 
     // initialize may be called twice in the future
     {
-        for( ::std::hash_map< fontID, PrintFont* >::const_iterator it = m_aFonts.begin(); it != m_aFonts.end(); ++it )
+        for( ::std::unordered_map< fontID, PrintFont* >::const_iterator it = m_aFonts.begin(); it != m_aFonts.end(); ++it )
             delete (*it).second;
         m_nNextFontID = 1;
         m_aFonts.clear();
@@ -2152,7 +2152,7 @@ void PrintFontManager::initialize()
     }
 
     // protect against duplicate paths
-    std::hash_map< OString, int, OStringHash > visited_dirs;
+    std::unordered_map< OString, int, OStringHash > visited_dirs;
 
     // now that all global and local font dirs are known to fontconfig
     // check that there are fonts actually managed by fontconfig
@@ -2218,7 +2218,7 @@ void PrintFontManager::initialize()
         if( pDIR )
         {
             // read fonts.dir if possible
-            ::std::hash_map< OString, ::std::list<OString>, OStringHash > aFontsDir;
+            ::std::unordered_map< OString, ::std::list<OString>, OStringHash > aFontsDir;
             int nDirID = getDirectoryAtom( aPath, true );
             // #i38367# no fonts.dir in our own directories anymore
             std::list< int >::const_iterator priv_dir;
@@ -2266,7 +2266,7 @@ void PrintFontManager::initialize()
                     if( findFontFileID( nDirID, aFileName ) == 0 )
                     {
                         ::std::list<OString> aXLFDs;
-                        ::std::hash_map< OString, ::std::list<OString>, OStringHash >::const_iterator it =
+                        ::std::unordered_map< OString, ::std::list<OString>, OStringHash >::const_iterator it =
                               aFontsDir.find( aFileName );
                         if( it != aFontsDir.end() )
                             aXLFDs = (*it).second;
@@ -2397,10 +2397,10 @@ void PrintFontManager::initialize()
 #endif
 
     // part three - fill in family styles
-    ::std::hash_map< fontID, PrintFont* >::iterator font_it;
+    ::std::unordered_map< fontID, PrintFont* >::iterator font_it;
     for (font_it = m_aFonts.begin(); font_it != m_aFonts.end(); ++font_it)
     {
-        ::std::hash_map< int, family::type >::const_iterator it =
+        ::std::unordered_map< int, family::type >::const_iterator it =
               m_aFamilyTypes.find( font_it->second->m_nFamilyName );
         if (it != m_aFamilyTypes.end())
             continue;
@@ -2498,7 +2498,7 @@ namespace {
 void PrintFontManager::getFontList( ::std::list< fontID >& rFontIDs, const PPDParser* pParser, bool bUseOverrideMetrics )
 {
     rFontIDs.clear();
-    std::hash_map< fontID, PrintFont* >::const_iterator it;
+    std::unordered_map< fontID, PrintFont* >::const_iterator it;
 
     /*
     * Note: there are two easy steps making this faster:
@@ -2520,7 +2520,7 @@ void PrintFontManager::getFontList( ::std::list< fontID >& rFontIDs, const PPDPa
     if( pParser )
     {
         std::set<int> aBuiltinPSNames;
-        std::hash_set< BuiltinFontIdentifier,
+        std::unordered_set< BuiltinFontIdentifier,
                        BuiltinFontIdentifierHash
                        > aBuiltinFonts;
 
@@ -2531,7 +2531,7 @@ void PrintFontManager::getFontList( ::std::list< fontID >& rFontIDs, const PPDPa
             for( std::vector<fontID>::const_iterator over = m_aOverrideFonts.begin();
                  over != m_aOverrideFonts.end(); ++over )
             {
-                std::hash_map<fontID,PrintFont*>::const_iterator font_it = m_aFonts.find( *over );
+                std::unordered_map<fontID,PrintFont*>::const_iterator font_it = m_aFonts.find( *over );
                 DBG_ASSERT( font_it != m_aFonts.end(), "override to nonexistant font" );
                 if( font_it != m_aFonts.end() )
                     aOverridePSNames[ font_it->second->m_nPSName ] = *over;
@@ -2621,7 +2621,7 @@ void PrintFontManager::getFontList( ::std::list< fontID >& rFontIDs, const PPDPa
 
 void PrintFontManager::fillPrintFontInfo( PrintFont* pFont, FastPrintFontInfo& rInfo ) const
 {
-    ::std::hash_map< int, family::type >::const_iterator style_it =
+    ::std::unordered_map< int, family::type >::const_iterator style_it =
           m_aFamilyTypes.find( pFont->m_nFamilyName );
     rInfo.m_eType           = pFont->m_eType;
     rInfo.m_aFamilyName     = m_pAtoms->getString( ATOM_FAMILYNAME, pFont->m_nFamilyName );
@@ -2838,7 +2838,7 @@ family::type PrintFontManager::getFontFamilyType( fontID nFontID ) const
     if( !pFont )
         return family::Unknown;
 
-    ::std::hash_map< int, family::type >::const_iterator it =
+    ::std::unordered_map< int, family::type >::const_iterator it =
           m_aFamilyTypes.find( pFont->m_nFamilyName );
     return (it != m_aFamilyTypes.end()) ? it->second : family::Unknown;
 }
@@ -2892,7 +2892,7 @@ OString PrintFontManager::getFontFile( PrintFont* pFont ) const
     if( pFont && pFont->m_eType == fonttype::Type1 )
     {
         Type1FontFile* pPSFont = static_cast< Type1FontFile* >(pFont);
-        ::std::hash_map< int, OString >::const_iterator it = m_aAtomToDir.find( pPSFont->m_nDirectory );
+        ::std::unordered_map< int, OString >::const_iterator it = m_aAtomToDir.find( pPSFont->m_nDirectory );
         aPath = it->second;
         aPath += "/";
         aPath += pPSFont->m_aFontFile;
@@ -2900,7 +2900,7 @@ OString PrintFontManager::getFontFile( PrintFont* pFont ) const
     else if( pFont && pFont->m_eType == fonttype::TrueType )
     {
         TrueTypeFontFile* pTTFont = static_cast< TrueTypeFontFile* >(pFont);
-        ::std::hash_map< int, OString >::const_iterator it = m_aAtomToDir.find( pTTFont->m_nDirectory );
+        ::std::unordered_map< int, OString >::const_iterator it = m_aAtomToDir.find( pTTFont->m_nDirectory );
         aPath = it->second;
         aPath += "/";
         aPath += pTTFont->m_aFontFile;
@@ -3014,7 +3014,7 @@ void PrintFontManager::hasVerticalSubstitutions( fontID nFontID,
             if( ! pFont->m_pMetrics ||
                 ! ( pFont->m_pMetrics->m_aPages[ code >> 11 ] & ( 1 << ( ( code >> 8 ) & 7 ) ) ) )
                 pFont->queryMetricPage( code >> 8, m_pAtoms );
-            ::std::hash_map< sal_Unicode, bool >::const_iterator it = pFont->m_pMetrics->m_bVerticalSubstitutions.find( code );
+            ::std::unordered_map< sal_Unicode, bool >::const_iterator it = pFont->m_pMetrics->m_bVerticalSubstitutions.find( code );
             pHasSubst[i] = it != pFont->m_pMetrics->m_bVerticalSubstitutions.end();
         }
     }
@@ -3119,7 +3119,7 @@ bool PrintFontManager::getMetrics( fontID nFontID, const sal_Unicode* pString, i
         {
             int effectiveCode = pString[i];
             effectiveCode |= bVertical ? 1 << 16 : 0;
-            ::std::hash_map< int, CharacterMetric >::const_iterator it =
+            ::std::unordered_map< int, CharacterMetric >::const_iterator it =
                   pFont->m_pMetrics->m_aMetrics.find( effectiveCode );
 	    // if no vertical metrics are available assume rotated horizontal metrics
 	    if( bVertical && (it == pFont->m_pMetrics->m_aMetrics.end()) )
@@ -3164,7 +3164,7 @@ bool PrintFontManager::getMetrics( fontID nFontID, sal_Unicode minCharacter, sal
         {
             int effectiveCode = code;
             effectiveCode |= bVertical ? 1 << 16 : 0;
-            ::std::hash_map< int, CharacterMetric >::const_iterator it =
+            ::std::unordered_map< int, CharacterMetric >::const_iterator it =
                   pFont->m_pMetrics->m_aMetrics.find( effectiveCode );
             // if no vertical metrics are available assume rotated horizontal metrics
             if( bVertical && (it == pFont->m_pMetrics->m_aMetrics.end()) )
@@ -3323,7 +3323,7 @@ int PrintFontManager::importFonts( const ::std::list< OString >& rFiles, bool bL
             {
                 // remove all fonts for the same file
                 // discarding their font ids
-                ::std::hash_map< fontID, PrintFont* >::iterator current, next;
+                ::std::unordered_map< fontID, PrintFont* >::iterator current, next;
                 current = m_aFonts.begin();
                 OString aFileName( OUStringToOString( aTo.GetName(), aEncoding ) );
                 while( current != m_aFonts.end() )
@@ -3479,7 +3479,7 @@ bool PrintFontManager::getFileDuplicates( fontID nFont, ::std::list< fontID >& r
     if( ! aFile.getLength() )
         return false;
 
-    for( ::std::hash_map< fontID, PrintFont* >::const_iterator it = m_aFonts.begin(); it != m_aFonts.end(); ++it )
+    for( ::std::unordered_map< fontID, PrintFont* >::const_iterator it = m_aFonts.begin(); it != m_aFonts.end(); ++it )
     {
         if( nFont != it->first )
         {
@@ -3502,7 +3502,7 @@ bool PrintFontManager::removeFonts( const ::std::list< fontID >& rFonts )
     ::std::list< fontID > aDuplicates;
     for( ::std::list< fontID >::const_iterator it = rFonts.begin(); it != rFonts.end(); ++it )
     {
-        ::std::hash_map< fontID, PrintFont* >::const_iterator haveFont = m_aFonts.find( *it );
+        ::std::unordered_map< fontID, PrintFont* >::const_iterator haveFont = m_aFonts.find( *it );
         if( haveFont == m_aFonts.end() )
             continue;
 
@@ -3838,7 +3838,7 @@ void PrintFontManager::getGlyphWidths( fontID nFont,
             rUnicodeEnc.clear();
             rWidths.clear();
             rWidths.reserve( pFont->m_pMetrics->m_aMetrics.size() );
-            for( std::hash_map< int, CharacterMetric >::const_iterator it =
+            for( std::unordered_map< int, CharacterMetric >::const_iterator it =
                  pFont->m_pMetrics->m_aMetrics.begin();
                  it != pFont->m_pMetrics->m_aMetrics.end(); ++it )
             {
@@ -3875,8 +3875,8 @@ const std::map< sal_Unicode, sal_Int32 >* PrintFontManager::getEncodingMap( font
 
 std::list< OString > PrintFontManager::getAdobeNameFromUnicode( sal_Unicode aChar ) const
 {
-    std::pair< std::hash_multimap< sal_Unicode, rtl::OString >::const_iterator,
-        std::hash_multimap< sal_Unicode, rtl::OString >::const_iterator > range
+    std::pair< std::unordered_multimap< sal_Unicode, rtl::OString >::const_iterator,
+        std::unordered_multimap< sal_Unicode, rtl::OString >::const_iterator > range
         =  m_aUnicodeToAdobename.equal_range( aChar );
 
     std::list< OString > aRet;
@@ -3896,8 +3896,8 @@ std::list< OString > PrintFontManager::getAdobeNameFromUnicode( sal_Unicode aCha
 // -------------------------------------------------------------------------
 std::list< sal_Unicode >  PrintFontManager::getUnicodeFromAdobeName( const rtl::OString& rName ) const
 {
-    std::pair< std::hash_multimap< rtl::OString, sal_Unicode, rtl::OStringHash >::const_iterator,
-        std::hash_multimap< rtl::OString, sal_Unicode, rtl::OStringHash >::const_iterator > range
+    std::pair< std::unordered_multimap< rtl::OString, sal_Unicode, rtl::OStringHash >::const_iterator,
+        std::unordered_multimap< rtl::OString, sal_Unicode, rtl::OStringHash >::const_iterator > range
         =  m_aAdobenameToUnicode.equal_range( rName );
 
     std::list< sal_Unicode > aRet;

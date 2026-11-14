@@ -34,11 +34,15 @@
 
 namespace dbaui
 {
-	template <class T> class OUnaryRefFunctor : public ::std::unary_function< ::vos::ORef<T> ,void>
+	template <class T> class OUnaryRefFunctor
 	{
-		::std::mem_fun_t<bool,T> m_aFunction;
 	public:
-		OUnaryRefFunctor(const ::std::mem_fun_t<bool,T>& _aFunc) : m_aFunction(_aFunc)
+		typedef ::vos::ORef<T> argument_type;
+		typedef void result_type;
+	private:
+		::std::function<bool(T*)> m_aFunction;
+	public:
+		OUnaryRefFunctor(const ::std::function<bool(T*)>& _aFunc) : m_aFunction(_aFunc)
 		{}
 		inline void operator()(const ::vos::ORef<T>& _aType) const
 		{

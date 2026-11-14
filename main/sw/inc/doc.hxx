@@ -78,7 +78,7 @@ class SwList;
 #include <com/sun/star/script/vba/XVBAEventProcessor.hpp>
 #endif
 
-#include <hash_map>
+#include <unordered_map>
 #include <stringhash.hxx>
 
 #include <svtools/embedhlp.hxx>
@@ -363,10 +363,10 @@ class SW_DLLPUBLIC SwDoc :
     mutable SwNumRuleTbl    *pNumRuleTbl;           // Liste aller benannten NumRules
 
     // Hash map to find numrules by name
-    mutable std::hash_map<String, SwNumRule *, StringHash> maNumRuleMap;
+    mutable std::unordered_map<String, SwNumRule *, StringHash> maNumRuleMap;
 
     // --> OD 2008-03-12 #refactorlists#
-    typedef std::hash_map< String, SwList*, StringHash > tHashMapForLists;
+    typedef std::unordered_map< String, SwList*, StringHash > tHashMapForLists;
     // container to hold the lists of the text document
     tHashMapForLists maLists;
     // relation between list style and its default list
@@ -414,7 +414,7 @@ private:
     tImplSortedNodeNumList* mpListItemsList;
     // <--
 
-    ::std::auto_ptr< ::sfx2::IXmlIdRegistry > m_pXmlIdRegistry;
+    ::std::unique_ptr< ::sfx2::IXmlIdRegistry > m_pXmlIdRegistry;
 
 	// -------------------------------------------------------------------
 	// sonstige

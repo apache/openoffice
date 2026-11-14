@@ -54,7 +54,7 @@ CSubmissionGet::CSubmissionGet(const rtl::OUString& aURL, const CSS::uno::Refere
 CSubmission::SubmissionResult CSubmissionGet::submit(const CSS::uno::Reference< CSS::task::XInteractionHandler >& aInteractionHandler)
 {
     // GET always uses application/x-www-formurlencoded
-    auto_ptr< CSerialization > apSerialization(new CSerializationURLEncoded());
+    unique_ptr< CSerialization > apSerialization(new CSerializationURLEncoded());
     apSerialization->setSource(m_aFragment);
     apSerialization->serialize();
 

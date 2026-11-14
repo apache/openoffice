@@ -54,7 +54,7 @@
 #include <rtl/ustring.hxx>
 #include <svl/itemprop.hxx>
 
-#include <hash_set>
+#include <unordered_set>
 #include <list>
 #include <vector>
 #include <memory>
@@ -330,14 +330,14 @@ private:
         virtual void notify(sal_uInt16 nFileId, ScExternalRefManager::LinkUpdateType eType);
         void addFileId(sal_uInt16 nFileId);
         void removeFileId(sal_uInt16 nFileId);
-        const ::std::hash_set<sal_uInt16>& getAllFileIds();
+        const ::std::unordered_set<sal_uInt16>& getAllFileIds();
 
     private:
         ExternalRefListener();
         ExternalRefListener(const ExternalRefListener& r);
 
         ScChart2DataSequence&       mrParent;
-        ::std::hash_set<sal_uInt16> maFileIds;
+        ::std::unordered_set<sal_uInt16> maFileIds;
         ScDocument*                 mpDoc;
     };
 
@@ -398,9 +398,9 @@ private:
     sal_Bool                    m_bIncludeHiddenCells;
 
     // internals
-    typedef ::std::auto_ptr< ::std::vector<ScSharedTokenRef> >  TokenListPtr;
-    typedef ::std::auto_ptr< ::std::vector<sal_uInt32> >        RangeIndexMapPtr;
-    typedef ::std::auto_ptr<ExternalRefListener>                ExtRefListenerPtr;
+    typedef ::std::unique_ptr< ::std::vector<ScSharedTokenRef> >  TokenListPtr;
+    typedef ::std::unique_ptr< ::std::vector<sal_uInt32> >        RangeIndexMapPtr;
+    typedef ::std::unique_ptr<ExternalRefListener>                ExtRefListenerPtr;
 
     sal_Int64                   m_nObjectId;
     ScDocument*                 m_pDocument;
@@ -410,7 +410,7 @@ private:
     com::sun::star::uno::Reference < com::sun::star::chart2::data::XDataProvider > m_xDataProvider;
 	SfxItemPropertySet		    m_aPropSet;
 
-    ::std::auto_ptr<HiddenRangeListener> m_pHiddenListener;
+    ::std::unique_ptr<HiddenRangeListener> m_pHiddenListener;
     ScLinkListener*             m_pValueListener;
     XModifyListenerArr_Impl     m_aValueListeners;
 

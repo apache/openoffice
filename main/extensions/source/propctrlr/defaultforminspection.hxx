@@ -46,7 +46,7 @@ namespace pcr
         bool                                        m_bConstructed;
 
         /// access to property meta data
-        ::std::auto_ptr< OPropertyInfoService >     m_pInfoService;
+        ::std::unique_ptr< OPropertyInfoService >     m_pInfoService;
 
     protected:
         ~DefaultFormComponentInspectorModel();

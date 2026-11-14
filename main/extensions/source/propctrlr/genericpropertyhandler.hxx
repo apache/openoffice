@@ -45,8 +45,11 @@ namespace pcr
 {
 //........................................................................
 
-    struct TypeLess : ::std::binary_function< ::com::sun::star::uno::Type, ::com::sun::star::uno::Type, bool >
+    struct TypeLess
     {
+        typedef ::com::sun::star::uno::Type first_argument_type;
+        typedef ::com::sun::star::uno::Type second_argument_type;
+        typedef bool result_type;
         bool operator()( const ::com::sun::star::uno::Type& _rLHS, const ::com::sun::star::uno::Type& _rRHS ) const
         {
             return _rLHS.getTypeName() < _rRHS.getTypeName();

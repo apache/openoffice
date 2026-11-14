@@ -911,8 +911,8 @@ StreamStr::MoveData( char *        i_pStart,
 {
     if (i_nDiff > 0)
     {
-        register const char * pSrc  = i_pEnd;
-        register char * pDest = i_pEnd + i_nDiff;
+        const char * pSrc  = i_pEnd;
+        char * pDest = i_pEnd + i_nDiff;
         for ( ; pSrc != i_pStart; --pSrc, --pDest )
         {
             *pDest = *pSrc;

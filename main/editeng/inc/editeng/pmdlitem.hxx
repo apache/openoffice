@@ -47,6 +47,7 @@ public:
     inline SvxPageModelItem( const String& rModel, sal_Bool bA /*= sal_False*/,
                              sal_uInt16 nWh  );
 	inline SvxPageModelItem& operator=( const SvxPageModelItem& rModel );
+	SvxPageModelItem(const SvxPageModelItem&) = default;
 
 	virtual SfxPoolItem*    Clone( SfxItemPool *pPool = 0 ) const;
 

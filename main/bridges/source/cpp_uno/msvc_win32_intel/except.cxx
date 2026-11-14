@@ -25,7 +25,7 @@
 #include "precompiled_bridges.hxx"
 
 #pragma warning( disable : 4237 )
-#include <hash_map>
+#include <unordered_map>
 #include <sal/config.h>
 #include <malloc.h>
 // <typeinfo.h> was a Microsoft compatibility header, removed in VS2015+.
@@ -100,7 +100,7 @@ static inline OUString toRTTIname( OUString const & rUNOname ) throw ()
 //##################################################################################################
 
 
-typedef hash_map< OUString, void *, OUStringHash, equal_to< OUString > > t_string2PtrMap;
+typedef std::unordered_map< OUString, void *, OUStringHash, equal_to< OUString > > t_string2PtrMap;
 
 //==================================================================================================
 class RTTInfos

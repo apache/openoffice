@@ -95,7 +95,7 @@ namespace dbaui
 	{
 		friend class OTableListBoxControl;
 
-        ::std::auto_ptr< ::svt::ListBoxControl> m_pListCell;
+        ::std::unique_ptr< ::svt::ListBoxControl> m_pListCell;
 		TTableConnectionData::value_type		m_pConnData;
 		const OJoinTableView::OTableWindowMap*	m_pTableMap;
 		OTableListBoxControl*					m_pBoxControl;
@@ -456,7 +456,7 @@ namespace dbaui
 				OConnectionLineDataVec* pLines = m_pConnData->GetConnLineDataList();
 				::std::for_each(pLines->begin(),
 								pLines->end(),
-								OUnaryRefFunctor<OConnectionLineData>( ::std::mem_fun(&OConnectionLineData::Reset))
+								OUnaryRefFunctor<OConnectionLineData>( ::std::mem_fn(&OConnectionLineData::Reset))
 								);
 
 				m_pConnData->setReferencingTable(_pSource->GetData());

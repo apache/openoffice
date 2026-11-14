@@ -42,7 +42,7 @@ class SchLegendPosTabPage : public SfxTabPage
 private:
 	FixedLine	aGrpLegend;
 
-    ::std::auto_ptr< LegendPositionResources >   m_apLegendPositionResources;
+    ::std::unique_ptr< LegendPositionResources >   m_apLegendPositionResources;
 
     FixedLine           m_aFlTextOrient;
     FixedText               m_aFtTextDirection;

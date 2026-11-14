@@ -30,7 +30,7 @@
 #include <svl/listener.hxx>
 #include <tools/string.hxx>
 
-#include <hash_map>
+#include <unordered_map>
 
 class ScDocument;
 
@@ -236,7 +236,7 @@ private:
         }
     };
 
-    typedef ::std::hash_map< QueryKey, QueryCriteriaAndResult, QueryKey::Hash, ::std::equal_to< QueryKey > > QueryMap;
+    typedef ::std::unordered_map< QueryKey, QueryCriteriaAndResult, QueryKey::Hash, ::std::equal_to< QueryKey > > QueryMap;
     QueryMap        maQueryMap;
     ScRange         maRange;
     ScDocument *    mpDoc;
@@ -248,6 +248,6 @@ private:
 };
 
 
-typedef ::std::hash_map< ScRange, ScLookupCache*, ScLookupCache::Hash, ::std::equal_to< ScRange > > ScLookupCacheMap;
+typedef ::std::unordered_map< ScRange, ScLookupCache*, ScLookupCache::Hash, ::std::equal_to< ScRange > > ScLookupCacheMap;
 
 #endif

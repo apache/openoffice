@@ -127,7 +127,7 @@ ODbTypeWizDialog::ODbTypeWizDialog(Window* _pParent
 	,m_bUIEnabled( sal_True )
 {
 	DBG_CTOR(ODbTypeWizDialog,NULL);
-	m_pImpl = ::std::auto_ptr<ODbDataSourceAdministrationHelper>(new ODbDataSourceAdministrationHelper(_rxORB,this,this));
+	m_pImpl = ::std::unique_ptr<ODbDataSourceAdministrationHelper>(new ODbDataSourceAdministrationHelper(_rxORB,this,this));
 	m_pImpl->setDataSourceOrName(_aDataSourceName);
 	Reference< XPropertySet > xDatasource = m_pImpl->getCurrentDataSource();
 	m_pOutSet = new SfxItemSet( *_pItems->GetPool(), _pItems->GetRanges() );

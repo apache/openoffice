@@ -56,7 +56,7 @@ class PackageManagerImpl : private ::dp_misc::MutexHolder, public t_pm_helper
 
     ::rtl::OUString m_activePackages;
     ::rtl::OUString m_activePackages_expanded;
-    ::std::auto_ptr< ActivePackages > m_activePackagesDB;
+    ::std::unique_ptr< ActivePackages > m_activePackagesDB;
     //This mutex is only used for synchronization in addPackage
     ::osl::Mutex m_addMutex;
     css::uno::Reference<css::ucb::XProgressHandler> m_xLogFile;

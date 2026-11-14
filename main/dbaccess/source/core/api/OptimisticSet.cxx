@@ -129,7 +129,7 @@ void OptimisticSet::construct(const Reference< XResultSet>& _xDriverSet,const ::
     const ::rtl::OUString* pTableNameEnd = pTableNameIter + aTableNames.getLength();
     for( ; pTableNameIter != pTableNameEnd ; ++pTableNameIter)
     {
-        ::std::auto_ptr<SelectColumnsMetaData> pKeyColumNames(new SelectColumnsMetaData(bCase));
+        ::std::unique_ptr<SelectColumnsMetaData> pKeyColumNames(new SelectColumnsMetaData(bCase));
         findTableColumnsMatching_throw(xTables->getByName(*pTableNameIter),*pTableNameIter,xMeta,xQueryColumns,pKeyColumNames);
         m_pKeyColumnNames->insert(pKeyColumNames->begin(),pKeyColumNames->end());
     }
@@ -148,7 +148,7 @@ void OptimisticSet::construct(const Reference< XResultSet>& _xDriverSet,const ::
 	xAnalyzer->setElementaryQuery(xSourceComposer->getElementaryQuery());
     // check for joins
     ::rtl::OUString aErrorMsg;
-    ::std::auto_ptr<OSQLParseNode> pStatementNode( m_aSqlParser.parseTree( aErrorMsg, sQuery ) );
+    ::std::unique_ptr<OSQLParseNode> pStatementNode( m_aSqlParser.parseTree( aErrorMsg, sQuery ) );
     m_aSqlIterator.setParseTree( pStatementNode.get() );
 	m_aSqlIterator.traverseAll();
     fillJoinedColumns_throw(m_aSqlIterator.getJoinConditions());
@@ -571,8 +571,10 @@ void OptimisticSet::mergeColumnValues(sal_Int32 i_nColumnIndex,ORowSetValueVecto
 }
 namespace
 {
-    struct PositionFunctor : ::std::unary_function<SelectColumnsMetaData::value_type,bool>
+    struct PositionFunctor
     {
+	    typedef SelectColumnsMetaData::value_type argument_type;
+	    typedef bool result_type;
 	    sal_Int32 m_nPos;
 	    PositionFunctor(sal_Int32 i_nPos)
 		    : m_nPos(i_nPos)
@@ -584,8 +586,10 @@ namespace
             return m_nPos == _aType.second.nPosition;
 	    }
     };
-    struct TableNameFunctor : ::std::unary_function<SelectColumnsMetaData::value_type,bool>
+    struct TableNameFunctor
     {
+	    typedef SelectColumnsMetaData::value_type argument_type;
+	    typedef bool result_type;
 	    ::rtl::OUString m_sTableName;
 	    TableNameFunctor(const ::rtl::OUString& i_sTableName)
 		    : m_sTableName(i_sTableName)

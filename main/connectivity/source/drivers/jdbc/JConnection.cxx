@@ -696,11 +696,11 @@ void java_sql_Connection::loadDriverFromProperties( const ::rtl::OUString& _sDri
             {
                 m_aLogger.log( LogLevel::INFO, STR_LOG_LOADING_DRIVER, _sDriverClass );
                 // the driver manager holds the class of the driver for later use
-                ::std::auto_ptr< java_lang_Class > pDrvClass;
+                ::std::unique_ptr< java_lang_Class > pDrvClass;
                 if ( !_sDriverClassPath.getLength() )
                 {
 					// if forName didn't find the class it will throw an exception
-					pDrvClass = ::std::auto_ptr< java_lang_Class >(java_lang_Class::forName(_sDriverClass));
+					pDrvClass = ::std::unique_ptr< java_lang_Class >(java_lang_Class::forName(_sDriverClass));
                 }
                 else
                 {

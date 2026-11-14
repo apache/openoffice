@@ -26,7 +26,7 @@
 #include <vector>
 #include <algorithm>
 #include <memory>
-#include <hash_map>
+#include <unordered_map>
 
 #include "migration.hxx"
 
@@ -59,7 +59,7 @@ struct install_info
 };
 
 typedef std::vector< rtl::OUString > strings_v;
-typedef std::auto_ptr< strings_v > strings_vr;
+typedef std::unique_ptr< strings_v > strings_vr;
 
 struct migration_step
 {
@@ -81,7 +81,7 @@ struct supported_migration
 };
 
 typedef std::vector< migration_step > migrations_v;
-typedef std::auto_ptr< migrations_v > migrations_vr;
+typedef std::unique_ptr< migrations_v > migrations_vr;
 typedef std::vector< supported_migration > migrations_available;
 
 //__________________________________________
@@ -133,7 +133,7 @@ struct MigrationItem
 	::rtl::OUString GetPrevSibling() const { return m_sPrevSibling; }
 };
 
-typedef ::std::hash_map< ::rtl::OUString,
+typedef ::std::unordered_map< ::rtl::OUString,
 						 ::std::vector< MigrationItem >,
 						 ::rtl::OUStringHash,
 						 ::std::equal_to< ::rtl::OUString > > MigrationHashMap;

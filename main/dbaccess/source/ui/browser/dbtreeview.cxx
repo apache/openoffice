@@ -76,7 +76,7 @@ DBTreeView::~DBTreeView()
 			m_pTreeListBox->GetModel()->RemoveView(m_pTreeListBox);
 			m_pTreeListBox->DisconnectFromModel();
 		}
-		::std::auto_ptr<Window> aTemp(m_pTreeListBox);
+		::std::unique_ptr<Window> aTemp(m_pTreeListBox);
 		m_pTreeListBox = NULL;
 	}
 }

@@ -46,7 +46,7 @@
 
 #include "com/sun/star/uno/Reference.hxx"
 
-#include <hash_map>
+#include <unordered_map>
 
 namespace com {
 namespace sun {
@@ -373,7 +373,7 @@ struct ImplSVData
     com::sun::star::uno::Reference< com::sun::star::frame::XSessionManagerClient > xSMClient;
     ::vcl::SettingsConfigItem*			mpSettingsConfigItem;
     std::list< vcl::DeleteOnDeinitBase* >*   mpDeinitDeleteList;
-    std::hash_map< int, rtl::OUString >*     mpPaperNames;
+    std::unordered_map< int, rtl::OUString >*     mpPaperNames;
 };
 
 void        ImplInitSVData();

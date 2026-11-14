@@ -64,6 +64,7 @@ public:
 			SetValue( rAutoKern.GetValue() );
 			return *this;
 		}
+	SvxAutoKernItem(const SvxAutoKernItem&) = default;
 };
 
 #endif

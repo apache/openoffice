@@ -518,8 +518,12 @@ librdf_QuerySelectResult::hasMoreElements()
     return !librdf_query_results_finished(m_pQueryResult.get());
 }
 
-class NodeArrayDeleter : public std::unary_function<librdf_node**, void>
+class NodeArrayDeleter
 {
+public:
+    typedef librdf_node** argument_type;
+    typedef void result_type;
+private:
     const int m_Count;
 
 public:

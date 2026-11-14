@@ -201,7 +201,7 @@ Image TemplatePreviewProvider::operator() (
 	BitmapEx aThumbnail;
 	if (xIStream.is())
 	{
-		::std::auto_ptr<SvStream> pStream (
+		::std::unique_ptr<SvStream> pStream (
 			::utl::UcbStreamHelper::CreateStream (xIStream));
 		::vcl::PNGReader aReader (*pStream);
 		aThumbnail = aReader.Read ();

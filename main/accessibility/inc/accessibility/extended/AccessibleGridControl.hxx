@@ -177,7 +177,7 @@ protected:
 
 private:
     // members ----------------------------------------------------------------
-	::std::auto_ptr< AccessibleGridControl_Impl > m_pImpl;
+	::std::unique_ptr< AccessibleGridControl_Impl > m_pImpl;
 };
 
 // ============================================================================

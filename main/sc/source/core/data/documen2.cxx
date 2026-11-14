@@ -153,9 +153,9 @@ ScDocument::ScDocument( ScDocumentMode	eMode,
 		pChangeViewSettings( NULL ),
 		pScriptTypeData( NULL ),
         pCacheFieldEditEngine( NULL ),
-        pDocProtection( NULL ),
-        mpClipParam( NULL),
-        pExternalRefMgr( NULL ),
+        pDocProtection(),
+        mpClipParam(),
+        pExternalRefMgr(),
 		pViewOptions( NULL ),
 		pDocOptions( NULL ),
 		pExtDocOptions( NULL ),
@@ -256,7 +256,7 @@ ScDocument::ScDocument( ScDocumentMode	eMode,
 	pDBCollection = new ScDBCollection( 4, 4, sal_False, this );
 	pSelectionAttr = NULL;
 	pChartCollection = new ScChartCollection;
-    apTemporaryChartLock = std::auto_ptr< ScTemporaryChartLock >( new ScTemporaryChartLock(this) );
+    apTemporaryChartLock = std::unique_ptr< ScTemporaryChartLock >( new ScTemporaryChartLock(this) );
 	xColNameRanges = new ScRangePairList;
 	xRowNameRanges = new ScRangePairList;
 	ImplCreateOptions();

@@ -46,7 +46,7 @@ public:
 private:
     ::com::sun::star::uno::Reference<
             ::com::sun::star::frame::XModel >   m_xModel;
-    std::auto_ptr< ControllerLockGuard >        m_apControllerLockGuard;
+    std::unique_ptr< ControllerLockGuard >        m_apControllerLockGuard;
     AutoTimer       m_aTimer;
 
     DECL_LINK( TimerTimeout, void* );

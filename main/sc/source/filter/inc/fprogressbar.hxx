@@ -158,7 +158,7 @@ private:
     /** Contains all data of a segment of the progress bar. */
     struct ScfProgressSegment
     {
-        typedef ::std::auto_ptr< ScfProgressBar > ScfProgressBarPtr;
+        typedef ::std::unique_ptr< ScfProgressBar > ScfProgressBarPtr;
 
         ScfProgressBarPtr   mxProgress;     /// Pointer to sub progress bar for this segment.
         sal_Size            mnSize;         /// Size of this segment.
@@ -168,7 +168,7 @@ private:
                             ~ScfProgressSegment();
     };
 
-    typedef ::std::auto_ptr< ScProgress >       ScProgressPtr;
+    typedef ::std::unique_ptr< ScProgress >       ScProgressPtr;
     typedef ScfDelList< ScfProgressSegment >    ScfSegmentList;
 
     ScfSegmentList      maSegments;         /// List of progress segments.
@@ -227,7 +227,7 @@ private:
     void                Init( SfxObjectShell* pDocShell, const String& rText );
 
 private:
-    typedef ::std::auto_ptr< ScfSimpleProgressBar > ScfSimpleProgressBarPtr;
+    typedef ::std::unique_ptr< ScfSimpleProgressBar > ScfSimpleProgressBarPtr;
 
     ScfSimpleProgressBarPtr mxProgress; /// The used progress bar.
     SvStream&           mrStrm;         /// The used stream.

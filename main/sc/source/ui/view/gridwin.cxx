@@ -24,7 +24,7 @@
 
 #include "scitems.hxx"
 
-#include <memory> //auto_ptr
+#include <memory> //unique_ptr
 #include <editeng/adjitem.hxx>
 #include <svx/algitem.hxx>
 #include <svx/dbexch.hrc>
@@ -409,8 +409,8 @@ ScGridWindow::ScGridWindow( Window* pParent, ScViewData* pData, ScSplitPos eWhic
 			pNoteMarker( NULL ),
 			pFilterBox( NULL ),
 			pFilterFloat( NULL ),
-			mpDPFieldPopup(NULL),
-			mpFilterButton(NULL),
+			mpDPFieldPopup(),
+			mpFilterButton(),
 			nCursorHideCount( 0 ),
 			bMarking( sal_False ),
 			nButtonDown( 0 ),
@@ -5018,7 +5018,7 @@ sal_Bool ScGridWindow::GetEditUrlOrError( sal_Bool bSpellErr, const Point& rPos,
 		aPaperSize.Width() = nThisColLogic;
 	aEngine.SetPaperSize( aPaperSize );
 
-	::std::auto_ptr< EditTextObject > pTextObj;
+	::std::unique_ptr< EditTextObject > pTextObj;
 	const EditTextObject* pData;
 	if(pCell->GetCellType() == CELLTYPE_EDIT)
 	{

@@ -234,10 +234,12 @@ public:
     const SwFmtDrop& GetSwFmtDrop() const { return mrSwFmtDrop; }
 };
 
-class sortswflys :
-    public std::binary_function<const sw::Frame&, const sw::Frame&, bool>
+class sortswflys
 {
 public:
+    typedef const sw::Frame& first_argument_type;
+    typedef const sw::Frame& second_argument_type;
+    typedef bool result_type;
     bool operator()(const sw::Frame &rOne, const sw::Frame &rTwo) const
     {
         return rOne.GetPosition() < rTwo.GetPosition();
@@ -287,7 +289,7 @@ WW8SwAttrIter::WW8SwAttrIter(MSWordExportBase& rWr, const SwTxtNode& rTxtNd) :
     if (rWr.HackIsWW8OrHigher() && rWr.bInWriteEscher)
     {
         std::for_each(maFlyFrms.begin(), maFlyFrms.end(),
-            std::mem_fun_ref(&sw::Frame::ForceTreatAsInline));
+            std::mem_fn(&sw::Frame::ForceTreatAsInline));
     }
 
     maFlyIter = maFlyFrms.begin();
@@ -1705,9 +1707,12 @@ bool MSWordExportBase::GetBookmarks(
     return ( rArr.size() > 0 );
 }
 
-class CompareMarksEnd : public std::binary_function < const IMark *, const IMark *, bool >
+class CompareMarksEnd
 {
 public:
+    typedef const IMark * first_argument_type;
+    typedef const IMark * second_argument_type;
+    typedef bool result_type;
     inline bool operator() ( const IMark * pOneB, const IMark * pTwoB ) const
     {
         xub_StrLen nOEnd = pOneB->GetMarkEnd().nContent.GetIndex();

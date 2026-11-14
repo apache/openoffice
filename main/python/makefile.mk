@@ -48,6 +48,11 @@ PATCH_FILES=\
 	python-solver-before-std.patch \
 	python-$(PYVERSION)-sysbase.patch \
 	python-$(PYVERSION)-nohardlink.patch
+.IF "$(OS)"=="MACOSX"
+# Drops setup.py's /usr/local search paths and disables the modules that
+# would link host or SDK libraries (readline, curses, sqlite3, bz2, lzma, ...).
+PATCH_FILES+=python-$(PYVERSION)-selfcontained.patch
+.ENDIF
 # python-freebsd.patch: all hunks obsolete in Python 3.11 (upstream fixes).
 # python-ssl.patch: dropped. Python 3.11's setup.py finds the bundled OpenSSL
 #   through the compiler include/lib search paths instead of the old hard-coded
@@ -99,6 +104,34 @@ MYCWD=$(shell @pwd)/$(INPATH)/misc/build
 # undefined at import time.
 python_CFLAGS+=-I$(MYCWD)$/$(TARFILE_NAME)$/Modules$/expat
 
+.IF "$(OS)"=="MACOSX"
+# Self-contained build: configure and setup.py must see only the bundled zlib
+# and OpenSSL, never a copy that happens to be installed on the build machine
+# (pkg-config, /usr/local, /opt/local, the SDK). The bundled libraries are
+# delivered as external/zlib/zlib.h, external/openssl/ and libzlib.a, libssl.a,
+# libcrypto.a, so give configure a private prefix where they have the names it
+# looks for. OpenSSL is linked statically into _ssl and _hashlib; the shared
+# libraries carry a packaging-time install name that cannot be loaded here, and
+# lib-dynload could not find them next to the office libraries anyway.
+PY_SHIM=$(MYCWD)$/py-shim
+python_prep=mkdir -p $(PY_SHIM)/include $(PY_SHIM)/lib &&
+python_CFLAGS+=-I$(PY_SHIM)/include
+python_LDFLAGS+=-L$(PY_SHIM)/lib
+python_env=PKG_CONFIG_PATH= PKG_CONFIG_LIBDIR=/dev/null
+# Use the copies of expat and libmpdec that come with CPython. _ctypes still
+# links the OS libffi; the OS copy is always present.
+python_conf=--without-system-expat --without-system-libmpdec --without-system-ffi
+.IF "$(SYSTEM_ZLIB)"!="YES"
+python_prep+=ln -sf $(SOLARINCDIR)/external/zlib/zlib.h $(PY_SHIM)/include/zlib.h && ln -sf $(SOLARINCDIR)/external/zlib/zconf.h $(PY_SHIM)/include/zconf.h && ln -sf $(SOLARLIBDIR)/libzlib.a $(PY_SHIM)/lib/libz.a &&
+# Given directly because configure's fallback probe looks for gzread, which the
+# bundled zlib does not contain; the zlib module itself does not use it.
+python_conf+=ZLIB_CFLAGS="-I$(PY_SHIM)/include" ZLIB_LIBS="-L$(PY_SHIM)/lib -lz"
+.ENDIF
+.IF "$(SYSTEM_OPENSSL)"!="YES"
+python_prep+=ln -sfn $(SOLARINCDIR)/external/openssl $(PY_SHIM)/include/openssl && ln -sf $(SOLARLIBDIR)/libssl.a $(PY_SHIM)/lib/libssl.a && ln -sf $(SOLARLIBDIR)/libcrypto.a $(PY_SHIM)/lib/libcrypto.a &&
+python_conf+=--with-openssl=$(PY_SHIM)
+.ENDIF
+.ELSE
 # Point Python's setup.py at the bundled OpenSSL delivered to the solver.
 # (Replaces the old python-ssl.patch: Python 3.11 discovers _ssl/_hashlib via
 # the C compiler include/lib search paths, so feeding the solver's external
@@ -107,6 +140,7 @@ python_CFLAGS+=-I$(MYCWD)$/$(TARFILE_NAME)$/Modules$/expat
 # that setup.py's "openssl/ssl.h" probe resolves.)
 python_CFLAGS+=-I$(SOLARINCDIR)$/external
 python_LDFLAGS+=-L$(SOLARLIBDIR)
+.ENDIF
 
 # CLFLAGS get overwritten in Makefile.pre.in
 .IF "$(SYSBASE)"!=""
@@ -122,7 +156,7 @@ CC+:=$(ARCH_FLAGS)
 python_LDFLAGS+=$(ARCH_FLAGS)
 .ENDIF
 
-CONFIGURE_ACTION=$(AUGMENT_LIBRARY_PATH) ./configure --prefix=$(MYCWD)/python-inst --enable-shared CFLAGS="$(python_CFLAGS)" LDFLAGS="$(python_LDFLAGS)"
+CONFIGURE_ACTION=$(python_prep) $(AUGMENT_LIBRARY_PATH) $(python_env) ./configure --prefix=$(MYCWD)/python-inst --enable-shared $(python_conf) CFLAGS="$(python_CFLAGS)" LDFLAGS="$(python_LDFLAGS)"
 .IF "$(OS)$(CPU)" == "SOLARISI"
 CONFIGURE_ACTION += --disable-ipv6
 .ENDIF

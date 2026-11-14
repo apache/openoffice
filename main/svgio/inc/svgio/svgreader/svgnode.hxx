@@ -29,7 +29,7 @@
 #include <basegfx/matrix/b2dhommatrix.hxx>
 #include <com/sun/star/xml/sax/XAttributeList.hpp>
 #include <vector>
-#include <hash_map>
+#include <unordered_map>
 
 //////////////////////////////////////////////////////////////////////////////
 // predefines

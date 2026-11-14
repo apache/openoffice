@@ -670,10 +670,10 @@ namespace svx
 
         SfxItemPool* pPool = EditEngine::CreatePool();
         pPool->FreezeIdRanges();
-        ::std::auto_ptr< SfxItemSet > pPureItems( new SfxItemSet( *pPool ) );
+        ::std::unique_ptr< SfxItemSet > pPureItems( new SfxItemSet( *pPool ) );
 
         // put the current states of the items into the set
-        ::std::auto_ptr< SfxAllItemSet > pCurrentItems( new SfxAllItemSet( *pPureItems ) );
+        ::std::unique_ptr< SfxAllItemSet > pCurrentItems( new SfxAllItemSet( *pPureItems ) );
         transferFeatureStatesToItemSet( m_aControlFeatures, *pCurrentItems );
 
         // additional items, which we are not responsible for at the SfxShell level,
@@ -682,7 +682,7 @@ namespace svx
         fillFeatureDispatchers( m_xActiveControl, pDialogSlots, aAdditionalFestures );
         transferFeatureStatesToItemSet( aAdditionalFestures, *pCurrentItems, true );
 
-        ::std::auto_ptr< SfxTabDialog > pDialog ( _eSet == eCharAttribs
+        ::std::unique_ptr< SfxTabDialog > pDialog ( _eSet == eCharAttribs
                                                 ? static_cast< SfxTabDialog* >( new TextControlCharAttribDialog( NULL, *pCurrentItems, *pFontList ) )
                                                 : static_cast< SfxTabDialog* >( new TextControlParaAttribDialog( NULL, *pCurrentItems ) ) );
         if ( RET_OK == pDialog->Execute() )

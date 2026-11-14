@@ -31,7 +31,7 @@
 #include <cppuhelper/interfacecontainer.h>
 #include <tools/string.hxx>
 
-#include <hash_map>
+#include <unordered_map>
 #include <set>
 #include <memory>
 #include "linguistic/misc.hxx"
@@ -68,12 +68,12 @@ struct StrEQ
     }
 };
 
-typedef std::hash_multimap< const rtl::OUString, rtl::OUString,
+typedef std::unordered_multimap< const rtl::OUString, rtl::OUString,
                        const rtl::OUStringHash, StrEQ > ConvMap;
 
 typedef std::set< rtl::OUString, StrLT > ConvMapKeySet;
 
-typedef std::hash_multimap< const rtl::OUString, sal_Int16,
+typedef std::unordered_multimap< const rtl::OUString, sal_Int16,
                        rtl::OUStringHash, StrEQ > PropTypeMap;
 
 ///////////////////////////////////////////////////////////////////////////
@@ -94,9 +94,9 @@ protected:
     ::cppu::OInterfaceContainerHelper       aFlushListeners;
 
     ConvMap                         aFromLeft;
-    std::auto_ptr< ConvMap >        pFromRight;     // only available for bidirectional conversion dictionaries
+    std::unique_ptr< ConvMap >        pFromRight;     // only available for bidirectional conversion dictionaries
 
-    std::auto_ptr< PropTypeMap >    pConvPropType;
+    std::unique_ptr< PropTypeMap >    pConvPropType;
 
     String          aMainURL;   // URL to file
     rtl::OUString   aName;

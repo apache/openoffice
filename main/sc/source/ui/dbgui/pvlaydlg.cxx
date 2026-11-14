@@ -334,7 +334,7 @@ void ScPivotLayoutDlg::NotifyDoubleClick( ScPivotFieldWindow& rSourceWindow )
 
     if( rSourceWindow.GetType() == PIVOTFIELDTYPE_DATA )
     {
-        ::std::auto_ptr< AbstractScDPFunctionDlg > xDlg( pFactory->CreateScDPFunctionDlg(
+        ::std::unique_ptr< AbstractScDPFunctionDlg > xDlg( pFactory->CreateScDPFunctionDlg(
             this, RID_SCDLG_DPDATAFIELD, maLabelData, *pLabelData, *pFuncData ) );
         if( xDlg->Execute() == RET_OK )
         {
@@ -352,7 +352,7 @@ void ScPivotLayoutDlg::NotifyDoubleClick( ScPivotFieldWindow& rSourceWindow )
         // allow to modify layout options for row fields, if multiple data fields exist, or if it is not the last row field
         bool bLayout = (rSourceWindow.GetType() == PIVOTFIELDTYPE_ROW) && ((aDataFieldNames.size() > 1) || (rSourceWindow.GetSelectedIndex() + 1 < rSourceWindow.GetFieldCount()));
 
-        ::std::auto_ptr< AbstractScDPSubtotalDlg > xDlg( pFactory->CreateScDPSubtotalDlg(
+        ::std::unique_ptr< AbstractScDPSubtotalDlg > xDlg( pFactory->CreateScDPSubtotalDlg(
             this, RID_SCDLG_PIVOTSUBT, *mxDlgDPObject, *pLabelData, *pFuncData, aDataFieldNames, bLayout ) );
         if( xDlg->Execute() == RET_OK )
         {

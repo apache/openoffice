@@ -48,6 +48,7 @@
 
 #include <comphelper/containermultiplexer.hxx>
 #include "cppuhelper/basemutex.hxx"
+#include <functional>
 #include <algorithm>
 
 // slot ids
@@ -206,7 +207,7 @@ void TableListFacade::updateTableObjectList( bool _bAllowViews )
 		    const ::rtl::OUString* pViewEnd	  = pViewBegin + sViews.getLength();
 		    ::comphelper::TStringMixEqualFunctor aEqualFunctor;
 		    for(;pViewBegin != pViewEnd;++pViewBegin)
-			    aTables.erase(::std::remove_if(aTables.begin(),aTables.end(),::std::bind2nd(aEqualFunctor,*pViewBegin)),aTables.end());
+			    aTables.erase(::std::remove_if(aTables.begin(),aTables.end(),::std::bind(aEqualFunctor, ::std::placeholders::_1,*pViewBegin)),aTables.end());
 		    ::rtl::OUString* pTables = aTables.empty() ? 0 : &aTables[0];
 		    sTables = Sequence< ::rtl::OUString>(pTables, aTables.size());
 		    sViews = Sequence< ::rtl::OUString>();

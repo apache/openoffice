@@ -49,14 +49,14 @@ using namespace ::com::sun::star;
 
 namespace sw {
 
-UndoManager::UndoManager(::std::auto_ptr<SwNodes> pUndoNodes,
+UndoManager::UndoManager(::std::unique_ptr<SwNodes> pUndoNodes,
             IDocumentDrawModelAccess & rDrawModelAccess,
             IDocumentRedlineAccess & rRedlineAccess,
             IDocumentState & rState)
     :   m_rDrawModelAccess(rDrawModelAccess)
     ,   m_rRedlineAccess(rRedlineAccess)
     ,   m_rState(rState)
-    ,   m_pUndoNodes(pUndoNodes)
+    ,   m_pUndoNodes(std::move(pUndoNodes))
     ,   m_bGroupUndo(true)
     ,   m_bDrawUndo(true)
     ,   m_bLockUndoNoModifiedPosition(false)

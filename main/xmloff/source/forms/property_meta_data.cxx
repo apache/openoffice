@@ -32,7 +32,7 @@
 #include <tools/diagnose_ex.h>
 #include <tools/debug.hxx>
 
-#include <hash_map>
+#include <unordered_map>
 
 //......................................................................................................................
 namespace xmloff { namespace metadata
@@ -80,7 +80,7 @@ namespace xmloff { namespace metadata
         // for some attribute or property, and otherwise delegate to the next instance.
 
 	    //..............................................................................................................
-        typedef ::std::hash_map< ::rtl::OUString, const PropertyDescription*, ::rtl::OUStringHash > DescriptionsByName;
+        typedef ::std::unordered_map< ::rtl::OUString, const PropertyDescription*, ::rtl::OUStringHash > DescriptionsByName;
 
 	    //..............................................................................................................
         const DescriptionsByName& lcl_getPropertyDescriptions()
@@ -121,7 +121,7 @@ namespace xmloff { namespace metadata
         }
 
         //..............................................................................................................
-        typedef ::std::hash_map< ::rtl::OUString, XMLTokenEnum, ::rtl::OUStringHash > ReverseTokenLookup;
+        typedef ::std::unordered_map< ::rtl::OUString, XMLTokenEnum, ::rtl::OUStringHash > ReverseTokenLookup;
 
         //..............................................................................................................
         const ReverseTokenLookup& getReverseTokenLookup()
@@ -141,8 +141,10 @@ namespace xmloff { namespace metadata
         }
 
         //..............................................................................................................
-        struct AttributeHash : public ::std::unary_function< AttributeDescription, size_t >
+        struct AttributeHash
         {
+            typedef AttributeDescription argument_type;
+            typedef size_t result_type;
             size_t operator()( const AttributeDescription& i_attribute ) const
             {
                 return size_t( i_attribute.attributeToken * 100 ) + size_t( i_attribute.namespacePrefix );
@@ -150,7 +152,7 @@ namespace xmloff { namespace metadata
         };
 
         //..............................................................................................................
-        typedef ::std::hash_multimap< AttributeDescription, PropertyGroup, AttributeHash > AttributeGroups;
+        typedef ::std::unordered_multimap< AttributeDescription, PropertyGroup, AttributeHash > AttributeGroups;
 
         //..............................................................................................................
         const AttributeGroups& lcl_getAttributeGroups()
@@ -171,7 +173,7 @@ namespace xmloff { namespace metadata
         }
 
         //..............................................................................................................
-        typedef ::std::hash_map< AttributeDescription, PropertyGroups, AttributeHash > AttributesWithoutGroup;
+        typedef ::std::unordered_map< AttributeDescription, PropertyGroups, AttributeHash > AttributesWithoutGroup;
 
         //..............................................................................................................
         const AttributesWithoutGroup& lcl_getAttributesWithoutGroups()

@@ -523,7 +523,7 @@ void ZipPackage::parseContentType()
 //--------------------------------------------------------
 void ZipPackage::getZipFileContents()
 {
-	auto_ptr < ZipEnumeration > pEnum ( m_pZipFile->entries() );
+	unique_ptr < ZipEnumeration > pEnum ( m_pZipFile->entries() );
 	ZipPackageStream *pPkgStream;
 	ZipPackageFolder *pPkgFolder, *pCurrent;
 	OUString sTemp, sDirName;

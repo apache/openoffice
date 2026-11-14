@@ -64,9 +64,11 @@ using ::std::vector;
 
 namespace {
 
-class AddRemoveEventListener : public ::std::unary_function<void, Reference<XAccessible> >
+class AddRemoveEventListener
 {
 public:
+    typedef Reference<XAccessible> argument_type;
+    typedef void result_type;
     explicit AddRemoveEventListener(const Reference<XAccessibleEventListener>& rListener, bool bAdd) :
         mxListener(rListener), mbAdd(bAdd) {}
 

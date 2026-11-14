@@ -78,6 +78,7 @@
 #include <istyleaccess.hxx>
 #include <SwUndoFmt.hxx>
 #include <docsh.hxx>
+#include <functional>
 
 using namespace ::com::sun::star::i18n;
 using namespace ::com::sun::star::lang;
@@ -393,7 +394,7 @@ void SwDoc::ResetAttrs( const SwPaM &rRg,
 
     // --> OD 2008-11-28 #i96644#
 //    SwDataChanged aTmp( *pPam, 0 );
-    std::auto_ptr< SwDataChanged > pDataChanged;
+    std::unique_ptr< SwDataChanged > pDataChanged;
     if ( bSendDataChangedEvents )
     {
         pDataChanged.reset( new SwDataChanged( *pPam, 0 ) );
@@ -1746,7 +1747,7 @@ sal_Bool lcl_SetTxtFmtColl( const SwNodePtr& rpNode, void* pArgs )
 
                 if ( bChangeOfListStyleAtParagraph )
                 {
-                    std::auto_ptr< SwRegHistory > pRegH;
+                    std::unique_ptr< SwRegHistory > pRegH;
                     if ( pPara->pHistory )
                     {
                         pRegH.reset( new SwRegHistory( pTNd, *pTNd, pPara->pHistory ) );
@@ -2206,7 +2207,7 @@ void SwDoc::CopyPageDesc( const SwPageDesc& rSrcDesc, SwPageDesc& rDstDesc,
 	if( bNotifyLayout && pTmpRoot )
 	{
 		std::set<SwRootFrm*> aAllLayouts = GetAllLayouts();//swmod 080225
-		std::for_each( aAllLayouts.begin(), aAllLayouts.end(),std::mem_fun(&SwRootFrm::AllCheckPageDescs));//swmod 080226
+		std::for_each( aAllLayouts.begin(), aAllLayouts.end(),std::mem_fn(&SwRootFrm::AllCheckPageDescs));//swmod 080226
 	}
 
 	//Wenn sich FussnotenInfo veraendert, so werden die Seiten

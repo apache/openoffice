@@ -56,6 +56,7 @@ public:
 	  nColumn = rRef.nColumn;
 	  return *this;
 	}
+	SvIdlError(const SvIdlError&) = default;
 };
 #endif
 

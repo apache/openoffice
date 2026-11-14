@@ -24,7 +24,7 @@
 #ifndef _HIERARCHYPROVIDER_HXX
 #define _HIERARCHYPROVIDER_HXX
 
-#include <hash_map>
+#include <unordered_map>
 #include <ucbhelper/providerhelper.hxx>
 #include <com/sun/star/lang/XInitialization.hpp>
 
@@ -84,7 +84,7 @@ struct hashString
     }
 };
 
-typedef std::hash_map
+typedef std::unordered_map
 <
     rtl::OUString,  // servcie specifier
     ConfigProviderMapEntry,

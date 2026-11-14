@@ -159,6 +159,7 @@ public:
 		@param Pipe
 	*/
     inline StreamPipe(const StreamPipe& Pipe);
+    StreamPipe& operator=(const StreamPipe&) = default;
 
 	/** Creates a pipe.
 		@param strName

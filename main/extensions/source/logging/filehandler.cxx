@@ -101,7 +101,7 @@ namespace logging
         ::comphelper::ComponentContext  m_aContext;
         LogHandlerHelper                m_aHandlerHelper;
         ::rtl::OUString                 m_sFileURL;
-        ::std::auto_ptr< ::osl::File >  m_pFile;
+        ::std::unique_ptr< ::osl::File >  m_pFile;
         FileValidity                    m_eFileValidity;
 
     protected:

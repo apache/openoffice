@@ -169,13 +169,13 @@ SdDrawDocument::SdDrawDocument(DocumentType eType, SfxObjectShell* pDrDocSh)
 , meDocType(eType)
 , mpCharClass(NULL)
 , mpLocale(NULL)
-, mpDrawPageListWatcher(0)
-, mpMasterPageListWatcher(0)
+, mpDrawPageListWatcher()
+, mpMasterPageListWatcher()
 {
 	// #109538#
-	mpDrawPageListWatcher = ::std::auto_ptr<ImpDrawPageListWatcher>(
+	mpDrawPageListWatcher = ::std::unique_ptr<ImpDrawPageListWatcher>(
 		new ImpDrawPageListWatcher(*this));
-	mpMasterPageListWatcher = ::std::auto_ptr<ImpMasterPageListWatcher>(
+	mpMasterPageListWatcher = ::std::unique_ptr<ImpMasterPageListWatcher>(
 		new ImpMasterPageListWatcher(*this));
 
 	SetObjectShell(pDrDocSh);		// for the VCDrawModel

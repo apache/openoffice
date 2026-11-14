@@ -35,7 +35,7 @@
 
 #include <boost/shared_ptr.hpp>
 #include <memory>
-#include <hash_map>
+#include <unordered_map>
 
 namespace com { namespace sun { namespace star {
 
@@ -277,7 +277,7 @@ public:
 
     const Size& getWindowSize() const;
 
-    void getResult(::std::hash_map< ::rtl::OUString, bool, ::rtl::OUStringHash>& rResult);
+    void getResult(::std::unordered_map< ::rtl::OUString, bool, ::rtl::OUStringHash>& rResult);
     void close(bool bOK);
 
     /**
@@ -349,8 +349,8 @@ private:
     size_t                          mnCurTabStop;
 
     ::std::vector<Member>           maMembers;
-    ::std::auto_ptr<ExtendedData>   mpExtendedData;
-    ::std::auto_ptr<Action>         mpOKAction;
+    ::std::unique_ptr<ExtendedData>   mpExtendedData;
+    ::std::unique_ptr<Action>         mpOKAction;
 
     const Size      maWndSize;  /// hard-coded window size.
     TriState mePrevToggleAllState;

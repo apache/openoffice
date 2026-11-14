@@ -99,7 +99,7 @@ struct TTabPageInfo
         css::uno::Sequence< css::beans::NamedValue >  m_lProperties;
 };
 
-typedef ::std::hash_map< ::sal_Int32                    ,
+typedef ::std::unordered_map< ::sal_Int32                    ,
                          TTabPageInfo                   ,
                          Int32HashCode                  ,
                          ::std::equal_to< ::sal_Int32 > > TTabPageInfoHash;

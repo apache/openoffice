@@ -386,7 +386,7 @@ class XMLOFF_DLLPUBLIC XMLTextImportHelper : public UniRefBase,
 {
 private:
     struct Impl;
-    ::std::auto_ptr<Impl> m_pImpl;
+    ::std::unique_ptr<Impl> m_pImpl;
     /// ugly, but implementation of this is in XMLPropertyBackpatcher.cxx
     struct BackpatcherImpl;
     ::boost::shared_ptr<BackpatcherImpl> m_pBackpatcherImpl;

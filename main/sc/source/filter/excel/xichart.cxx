@@ -3916,12 +3916,12 @@ void XclImpChChart::Convert( Reference< XChartDocument > xChartDoc,
     ScDocument& rDoc = GetRoot().GetDoc();
     if( ScChartListenerCollection* pChartCollection = rDoc.GetChartListenerCollection() )
     {
-        ::std::auto_ptr< ::std::vector< ScSharedTokenRef > > xRefTokens( new ::std::vector< ScSharedTokenRef > );
+        ::std::unique_ptr< ::std::vector< ScSharedTokenRef > > xRefTokens( new ::std::vector< ScSharedTokenRef > );
         for( XclImpChSeriesVec::const_iterator aIt = maSeries.begin(), aEnd = maSeries.end(); aIt != aEnd; ++aIt )
             (*aIt)->FillAllSourceLinks( *xRefTokens );
         if( !xRefTokens->empty() )
         {
-            ::std::auto_ptr< ScChartListener > xListener( new ScChartListener( rObjName, &rDoc, xRefTokens.release() ) );
+            ::std::unique_ptr< ScChartListener > xListener( new ScChartListener( rObjName, &rDoc, xRefTokens.release() ) );
             xListener->SetUsed( true );
             xListener->StartListeningTo();
             pChartCollection->Insert( xListener.release() );

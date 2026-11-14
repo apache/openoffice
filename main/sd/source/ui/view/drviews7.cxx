@@ -96,10 +96,10 @@ using namespace ::com::sun::star::linguistic2;
     current clipboard content and the DrawViewShell.
     The list is stored in a new instance of SvxClipboardFmtItem.
 */
-::std::auto_ptr<SvxClipboardFmtItem> GetSupportedClipboardFormats (
+::std::unique_ptr<SvxClipboardFmtItem> GetSupportedClipboardFormats (
     TransferableDataHelper& rDataHelper)
 {
-    ::std::auto_ptr<SvxClipboardFmtItem> pResult (
+    ::std::unique_ptr<SvxClipboardFmtItem> pResult (
         new SvxClipboardFmtItem(SID_CLIPBOARD_FORMAT_ITEMS));
 
     sal_uInt32 nFormatCount (rDataHelper.GetFormatCount());
@@ -193,10 +193,10 @@ IMPL_LINK( DrawViewShell, ClipboardChanged, TransferableDataHelper*, pDataHelper
         // exit immediately.
         TransferableDataHelper aDataHelper (
             TransferableDataHelper::CreateFromSystemClipboard(GetActiveWindow()));
-        ::std::auto_ptr<SvxClipboardFmtItem> pFormats (GetSupportedClipboardFormats(aDataHelper));
+        ::std::unique_ptr<SvxClipboardFmtItem> pFormats (GetSupportedClipboardFormats(aDataHelper));
         if (mpDrawView == NULL)
             return 0;
-        mpCurrentClipboardFormats = pFormats;
+        mpCurrentClipboardFormats = std::move(pFormats);
 
 		SfxBindings& rBindings = GetViewFrame()->GetBindings();
 		rBindings.Invalidate( SID_PASTE );

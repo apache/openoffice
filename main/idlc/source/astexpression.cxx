@@ -31,7 +31,7 @@
 
 #include <limits.h>
 #include <float.h>
-#include <memory> // auto_ptr<>
+#include <memory> // unique_ptr<>
 
 #undef	MAXCHAR
 #define MAXCHAR         127
@@ -947,7 +947,7 @@ AstExprValue* AstExpression::eval_bin_op(EvalKind ek)
 	if (m_subExpr2->getExprValue() == NULL)
 		return NULL;
 
-    std::auto_ptr< AstExprValue > retval(new AstExprValue());
+    std::unique_ptr< AstExprValue > retval(new AstExprValue());
 	retval->et = eType;
 
 	switch (m_combOperator)
@@ -997,7 +997,7 @@ AstExprValue* AstExpression::eval_bit_op(EvalKind ek)
 	if (m_subExpr2->getExprValue() == NULL)
 		return NULL;
 
-    std::auto_ptr< AstExprValue	> retval(new AstExprValue());
+    std::unique_ptr< AstExprValue	> retval(new AstExprValue());
 	retval->et = ET_long;
 
 	switch (m_combOperator)
@@ -1040,7 +1040,7 @@ AstExprValue* AstExpression::eval_un_op(EvalKind ek)
 	if (m_subExpr1->getExprValue() == NULL)
 		return NULL;
 
-    std::auto_ptr< AstExprValue	> retval(new AstExprValue());
+    std::unique_ptr< AstExprValue	> retval(new AstExprValue());
 	retval->et = ET_double;
 
 	switch (m_combOperator)

@@ -1580,7 +1580,7 @@ SwInsertSectionTabDialog::SwInsertSectionTabDialog(
 			Window* pParent, const SfxItemSet& rSet, SwWrtShell& rSh) :
 	SfxTabDialog( pParent, SW_RES(DLG_INSERT_SECTION), &rSet ),
     rWrtSh(rSh)
-    , m_pSectionData(0)
+    , m_pSectionData()
 {
 	String sInsert(SW_RES(ST_INSERT));
 	GetOKButton().SetText(sInsert);

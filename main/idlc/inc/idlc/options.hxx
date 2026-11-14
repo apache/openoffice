@@ -28,7 +28,7 @@
 #include <idlc/idlctypes.hxx>
 #endif
 
-typedef	::std::hash_map< ::rtl::OString,
+typedef	::std::unordered_map< ::rtl::OString,
 						 ::rtl::OString,
 						 HashString,
 						 EqualString > OptionMap;

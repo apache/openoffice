@@ -22,7 +22,7 @@
 #include "vbafont.hxx"
 #include <com/sun/star/awt/FontUnderline.hpp>
 #include <ooo/vba/word/WdUnderline.hpp>
-#include <hash_map>
+#include <unordered_map>
 #include <ooo/vba/word/WdColorIndex.hpp>
 
 using namespace ::ooo::vba;
@@ -58,7 +58,7 @@ static MapPair UnderLineTable[] = {
         { word::WdUnderline::wdUnderlineDashLongHeavy, com::sun::star::awt::FontUnderline::BOLDLONGDASH },
 };
 
-typedef std::hash_map< sal_Int32, sal_Int32 > ConstToConst;
+typedef std::unordered_map< sal_Int32, sal_Int32 > ConstToConst;
 class UnderLineMapper
 {
     ConstToConst MSO2OOO;

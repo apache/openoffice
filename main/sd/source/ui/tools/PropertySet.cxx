@@ -131,8 +131,8 @@ void SAL_CALL PropertySet::removePropertyChangeListener (
             aRange.first,
             aRange.second,
             std::compose1(
-                std::bind1st(std::equal_to<Reference<beans::XPropertyChangeListener> >(),
-                    rxListener),
+                std::bind(std::equal_to<Reference<beans::XPropertyChangeListener> >(),
+                    rxListener, std::placeholders::_1),
                 std::select2nd<ChangeListenerContainer::value_type>())));
     if (iListener != mpChangeListeners->end())
     {

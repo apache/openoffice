@@ -735,15 +735,15 @@ sal_Bool SwView::ExecSpellPopup(const Point& rPt)
 
 				bRet = sal_True;
 				pWrtShell->SttSelect();
-                std::auto_ptr< SwSpellPopup > pPopup;
+                std::unique_ptr< SwSpellPopup > pPopup;
                 if (bUseGrammarContext)
                 {
                     sal_Int32 nPos = aPoint.nContent.GetIndex();
 					(void) nPos;
-                    pPopup = std::auto_ptr< SwSpellPopup >(new SwSpellPopup( pWrtShell, aGrammarCheckRes, nErrorInResult, aSuggestions, aParaText ));
+                    pPopup = std::unique_ptr< SwSpellPopup >(new SwSpellPopup( pWrtShell, aGrammarCheckRes, nErrorInResult, aSuggestions, aParaText ));
                 }
                 else
-                    pPopup = std::auto_ptr< SwSpellPopup >(new SwSpellPopup( pWrtShell, xAlt, aParaText ));
+                    pPopup = std::unique_ptr< SwSpellPopup >(new SwSpellPopup( pWrtShell, xAlt, aParaText ));
                 ui::ContextMenuExecuteEvent aEvent;
                 const Point aPixPos = GetEditWin().LogicToPixel( rPt );
 

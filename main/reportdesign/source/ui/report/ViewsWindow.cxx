@@ -52,6 +52,7 @@
 #include <toolkit/helper/convert.hxx>
 #include <algorithm>
 #include <numeric>
+#include <functional>
 
 namespace rptui
 {
@@ -803,8 +804,8 @@ void OViewsWindow::alignMarkedObjects(sal_Int32 _nControlModification,bool _bAli
 
     bool bMove = true;
 
-    ::std::mem_fun_t<long&,Rectangle> aGetFun       = ::std::mem_fun<long&,Rectangle>(&Rectangle::Bottom);
-    ::std::mem_fun_t<long&,Rectangle> aRefFun       = ::std::mem_fun<long&,Rectangle>(&Rectangle::Top);
+    ::std::function<long&(Rectangle*)> aGetFun       = static_cast<long&(Rectangle::*)()>(&Rectangle::Bottom);
+    ::std::function<long&(Rectangle*)> aRefFun       = static_cast<long&(Rectangle::*)()>(&Rectangle::Top);
     TRectangleMap::iterator aRectIter = aSortRectangles.begin();
     TRectangleMap::iterator aRectEnd = aSortRectangles.end();
 	for (;aRectIter != aRectEnd ; ++aRectIter)
@@ -823,8 +824,8 @@ void OViewsWindow::alignMarkedObjects(sal_Int32 _nControlModification,bool _bAli
 			switch(_nControlModification)
             {
 				case ControlModification::TOP   :
-                    aGetFun  = ::std::mem_fun<long&,Rectangle>(&Rectangle::Top);
-                    aRefFun  = ::std::mem_fun<long&,Rectangle>(&Rectangle::Bottom);
+                    aGetFun  = static_cast<long&(Rectangle::*)()>(&Rectangle::Top);
+                    aRefFun  = static_cast<long&(Rectangle::*)()>(&Rectangle::Bottom);
                     pValue = &nYMov;
                     break;
 				case ControlModification::BOTTOM:
@@ -837,16 +838,16 @@ void OViewsWindow::alignMarkedObjects(sal_Int32 _nControlModification,bool _bAli
                     bMove = false;
                     break;
 				case ControlModification::RIGHT :
-                    aGetFun  = ::std::mem_fun<long&,Rectangle>(&Rectangle::Right);
-                    aRefFun  = ::std::mem_fun<long&,Rectangle>(&Rectangle::Left);
+                    aGetFun  = static_cast<long&(Rectangle::*)()>(&Rectangle::Right);
+                    aRefFun  = static_cast<long&(Rectangle::*)()>(&Rectangle::Left);
                     break;
 				case ControlModification::CENTER_HORIZONTAL:
                     nXMov = aCenter.X() - aObjRect.Center().X();
                     bMove = false;
                     break;
                 case ControlModification::LEFT  :
-                    aGetFun  = ::std::mem_fun<long&,Rectangle>(&Rectangle::Left);
-                    aRefFun  = ::std::mem_fun<long&,Rectangle>(&Rectangle::Right);
+                    aGetFun  = static_cast<long&(Rectangle::*)()>(&Rectangle::Left);
+                    aRefFun  = static_cast<long&(Rectangle::*)()>(&Rectangle::Right);
                     break;
                 default:
                     bMove = false;
@@ -987,8 +988,12 @@ namespace
         eForceToAnotherPage,
         eBreakAction
     };
-    class ApplySectionViewAction : public ::std::unary_function< OViewsWindow::TSectionsMap::value_type, void >
+    class ApplySectionViewAction
     {
+    public:
+        typedef OViewsWindow::TSectionsMap::value_type argument_type;
+        typedef void result_type;
+    private:
     private:
         SectionViewAction   m_eAction;
         sal_Bool            m_bCopy;

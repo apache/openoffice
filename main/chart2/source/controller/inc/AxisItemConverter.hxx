@@ -52,8 +52,8 @@ public:
             ::com::sun::star::chart2::XChartDocument > & xChartDoc,
         ExplicitScaleData * pScale = NULL,
         ExplicitIncrementData * pIncrement = NULL,
-        ::std::auto_ptr< ::com::sun::star::awt::Size > pRefSize =
-            ::std::auto_ptr< ::com::sun::star::awt::Size >() );
+        ::std::unique_ptr< ::com::sun::star::awt::Size > pRefSize =
+            ::std::unique_ptr< ::com::sun::star::awt::Size >() );
     virtual ~AxisItemConverter();
 
     virtual void FillItemSet( SfxItemSet & rOutItemSet ) const;

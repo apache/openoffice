@@ -331,12 +331,12 @@ RDFaInserter::MakeResource( ::rtl::OUString const & i_rResource)
     }
 }
 
-/** i wrote this because c++ implementations cannot agree on which variant
-    of boost::bind and std::mem_fun_ref applied to Reference::is compiles */
-class ref_is_null :
-    public ::std::unary_function<sal_Bool, const uno::Reference<rdf::XURI> & >
+/** Predicate used to discard invalid URI references. */
+class ref_is_null
 {
 public:
+    typedef const uno::Reference<rdf::XURI> & argument_type;
+    typedef sal_Bool result_type;
     sal_Bool operator() (const uno::Reference<rdf::XURI> & i_rRef)
     {
         return !i_rRef.is();
@@ -371,12 +371,6 @@ void RDFaInserter::InsertRDFaEntry(
             ::boost::bind(&RDFaInserter::MakeURI, this, _1)),
         ::std::back_inserter(predicates),
         ref_is_null() );
-        // compiles only on wntmsci12
-//        ::boost::bind( ::std::logical_not<sal_Bool>(), ::boost::bind<sal_Bool>(&uno::Reference<rdf::XURI>::is, _1)));
-        // compiles on unxsoli4, wntsci12, but not unxlngi6
-//        ::boost::bind( ::std::logical_not<sal_Bool>(), ::boost::bind<sal_Bool, com::sun::star::uno::Reference<rdf::XURI> >(&uno::Reference<rdf::XURI>::is, _1)));
-        // compiles on unxsoli4, unxlngi6, but not wntsci12
-//        ::std::not1( ::std::mem_fun_ref(&uno::Reference<rdf::XURI>::is)) );
 
     if (!predicates.size())
     {

@@ -796,7 +796,7 @@ void FmFormShell::Execute(SfxRequest &rReq)
 				DBG_ASSERT( pFact, "no dialog factory!" );
 				if ( pFact )
 				{
-					::std::auto_ptr< AbstractFmInputRecordNoDialog > dlg( pFact->CreateFmInputRecordNoDialog( NULL ) );
+					::std::unique_ptr< AbstractFmInputRecordNoDialog > dlg( pFact->CreateFmInputRecordNoDialog( NULL ) );
 					DBG_ASSERT( dlg.get(), "Dialogdiet fail!" );
 					dlg->SetValue( rController->getCursor()->getRow() );
 					if ( dlg->Execute() == RET_OK )
@@ -1421,9 +1421,9 @@ namespace
 }
 
 //------------------------------------------------------------------------
-::std::auto_ptr< ::svx::ISdrObjectFilter > FmFormShell::CreateFocusableControlFilter( const SdrView& i_rView, const OutputDevice& i_rDevice ) const
+::std::unique_ptr< ::svx::ISdrObjectFilter > FmFormShell::CreateFocusableControlFilter( const SdrView& i_rView, const OutputDevice& i_rDevice ) const
 {
-	::std::auto_ptr< ::svx::ISdrObjectFilter > pFilter;
+	::std::unique_ptr< ::svx::ISdrObjectFilter > pFilter;
 
 	if ( !i_rView.IsDesignMode() )
 		pFilter.reset( new FocusableControlsFilter( i_rView, i_rDevice ) );

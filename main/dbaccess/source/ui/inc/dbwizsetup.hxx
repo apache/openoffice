@@ -75,7 +75,7 @@ class ODbTypeWizDialogSetup : public svt::RoadmapWizard , public IItemSetHelper,
 
 private:
 	OModuleClient m_aModuleClient;
-	::std::auto_ptr<ODbDataSourceAdministrationHelper>	m_pImpl;
+	::std::unique_ptr<ODbDataSourceAdministrationHelper>	m_pImpl;
 	SfxItemSet*				m_pOutSet;
 	::rtl::OUString         m_sURL;
     ::rtl::OUString         m_sOldURL;

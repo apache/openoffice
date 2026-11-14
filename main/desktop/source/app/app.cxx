@@ -162,7 +162,7 @@
 #include "com/sun/star/task/XInteractionApprove.hpp"
 #include "com/sun/star/task/XInteractionAbort.hpp"
 #include "cppuhelper/compbase3.hxx"
-#include <hash_set>
+#include <unordered_set>
 
 #include "com/sun/star/deployment/VersionException.hpp"
 #include <dp_gui_handleversionexception.hxx>
@@ -1808,8 +1808,8 @@ struct ExecuteGlobals
 	Reference < css::document::XEventListener > xGlobalBroadcaster;
 	sal_Bool bRestartRequested;
 	sal_Bool bUseSystemFileDialog;
-	std::auto_ptr<SvtLanguageOptions> pLanguageOptions;
-    std::auto_ptr<SvtPathOptions> pPathOptions;
+	std::unique_ptr<SvtLanguageOptions> pLanguageOptions;
+    std::unique_ptr<SvtPathOptions> pPathOptions;
 
     ExecuteGlobals()
     : bRestartRequested( sal_False )

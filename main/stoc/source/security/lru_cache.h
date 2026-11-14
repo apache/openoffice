@@ -23,7 +23,7 @@
 #ifndef _STOC_SEC_LRU_CACHE_H_
 #define _STOC_SEC_LRU_CACHE_H_
 
-#include <hash_map>
+#include <unordered_map>
 
 // __CACHE_DIAGNOSE works only for OUString keys
 #ifdef __CACHE_DIAGNOSE
@@ -49,7 +49,7 @@ class lru_cache
         Entry * m_pred;
         Entry * m_succ;
     };
-    typedef ::std::hash_map< t_key, Entry *, t_hashKey, t_equalKey > t_key2element;
+    typedef ::std::unordered_map< t_key, Entry *, t_hashKey, t_equalKey > t_key2element;
     t_key2element m_key2element;
     ::std::size_t m_size;
 

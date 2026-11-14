@@ -26,7 +26,7 @@
 #include <com/sun/star/sheet/XSpreadsheetDocument.hpp>
 #include <vbahelper/vbacollectionimpl.hxx>
 #include "excelvbahelper.hxx"
-#include <hash_map>
+#include <unordered_map>
 
 typedef CollTestImplHelper< ov::excel::XCharts > Charts_BASE;
 

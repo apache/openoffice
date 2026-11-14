@@ -496,8 +496,12 @@ sal_uInt8* WW8ListManager::GrpprlHasSprm(sal_uInt16 nId, sal_uInt8& rSprms,
     return 0;                           // Sprm not found
 }
 
-class ListWithId : public std::unary_function<const WW8LSTInfo *, bool>
+class ListWithId
 {
+public:
+    typedef const WW8LSTInfo * argument_type;
+    typedef bool result_type;
+private:
 private:
     sal_uInt32 mnIdLst;
 public:

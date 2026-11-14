@@ -80,6 +80,7 @@ public:
 			SetProp( rSize.GetProp(), ePropUnit );
 			return *this;
 		}
+	SvxFontHeightItem(const SvxFontHeightItem&) = default;
 
 	void SetHeight( sal_uInt32 nNewHeight, const sal_uInt16 nNewProp = 100,
 					 SfxMapUnit eUnit = SFX_MAPUNIT_RELATIVE );

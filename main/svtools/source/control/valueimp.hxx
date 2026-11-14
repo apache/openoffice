@@ -106,11 +106,11 @@ DECLARE_LIST( ValueItemList, ValueSetItem* )
 
 struct ValueSet_Impl
 {
-    ::std::auto_ptr< ValueItemList >    mpItemList;
+    ::std::unique_ptr< ValueItemList >    mpItemList;
     bool                                mbIsTransientChildrenDisabled;
 	Link								maHighlightHdl;
 
-    ValueSet_Impl() :   mpItemList( ::std::auto_ptr< ValueItemList >( new ValueItemList() ) ),
+    ValueSet_Impl() :   mpItemList( ::std::unique_ptr< ValueItemList >( new ValueItemList() ) ),
                         mbIsTransientChildrenDisabled( false )
     {
     }

@@ -32,8 +32,8 @@
 #include <algorithm>
 #include <vector>
 #include <set>
-#include <hash_map>
-#include <hash_set>
+#include <unordered_map>
+#include <unordered_set>
 
 #include <tools/debug.hxx>
 #include <rtl/math.hxx>
@@ -72,8 +72,8 @@
 using namespace com::sun::star;
 using ::std::vector;
 using ::std::set;
-using ::std::hash_map;
-using ::std::hash_set;
+using ::std::unordered_map;
+using ::std::unordered_set;
 using ::com::sun::star::uno::Reference;
 using ::com::sun::star::uno::Sequence;
 using ::com::sun::star::uno::Any;
@@ -137,7 +137,7 @@ ScDPSource::ScDPSource( ScDPTableData* pD ) :
 	pRowResults( NULL ),
 	bResultOverflow( sal_False ),
     bPageFiltered( false ),
-    mpGrandTotalName(NULL)
+    mpGrandTotalName()
 {
 	pData->SetEmptyFlags( bIgnoreEmptyRows, bRepeatIfEmpty );
 }
@@ -442,7 +442,7 @@ Sequence< Sequence<Any> > SAL_CALL ScDPSource::getDrillDownData(const Sequence<s
 {
     long nColumnCount = GetData()->GetColumnCount();
 
-    typedef hash_map<String, long, ScStringHashCode> FieldNameMapType;
+    typedef unordered_map<String, long, ScStringHashCode> FieldNameMapType;
     FieldNameMapType aFieldNames;
     for (long i = 0; i < nColumnCount; ++i)
     {
@@ -485,7 +485,7 @@ Sequence< Sequence<Any> > SAL_CALL ScDPSource::getDrillDownData(const Sequence<s
     aResVisData.fillFieldFilters(aFilterCriteria);
 
     Sequence< Sequence<Any> > aTabData;
-    hash_set<sal_Int32> aCatDims;
+    unordered_set<sal_Int32> aCatDims;
     GetCategoryDimensionIndices(aCatDims);
     pData->GetDrillDownData(aFilterCriteria, aCatDims, aTabData);
     return aTabData;
@@ -706,9 +706,9 @@ void ScDPSource::FillCalcInfo(bool bIsRow, ScDPTableData::CalcInfo& rInfo, bool 
     }
 }
 
-void ScDPSource::GetCategoryDimensionIndices(hash_set<sal_Int32>& rCatDims)
+void ScDPSource::GetCategoryDimensionIndices(unordered_set<sal_Int32>& rCatDims)
 {
-    hash_set<sal_Int32> aCatDims;
+    unordered_set<sal_Int32> aCatDims;
     for (long i = 0; i < nColDimCount; ++i)
     {
         sal_Int32 nDim = static_cast<sal_Int32>(nColDims[i]);
@@ -791,7 +791,7 @@ void ScDPSource::FilterCacheTableByPageDimensions()
     }
     if (!aCriteria.empty())
     {
-        hash_set<sal_Int32> aCatDims;
+        unordered_set<sal_Int32> aCatDims;
         GetCategoryDimensionIndices(aCatDims);
         pData->FilterCacheTable(aCriteria, aCatDims);
         bPageFiltered = true;
@@ -1372,8 +1372,8 @@ ScDPDimension::ScDPDimension( ScDPSource* pSrc, long nD ) :
 	pHierarchies( NULL ),
 	nUsedHier( 0 ),
 	nFunction( SUBTOTAL_FUNC_SUM ),		// sum is default
-    mpLayoutName(NULL),
-    mpSubtotalName(NULL),
+    mpLayoutName(),
+    mpSubtotalName(),
 	nSourceDim( -1 ),
 	bHasSelectedPage( sal_False ),
 	pSelectedData( NULL ),
@@ -2654,7 +2654,7 @@ ScDPMember::ScDPMember( ScDPSource* pSrc, long nD, long nH, long nL,
 	nHier( nH ),
 	nLev( nL ),
     mnDataId( nIndex ),
-    mpLayoutName(NULL),
+    mpLayoutName(),
     nPosition( -1 ),
 	bVisible( sal_True ),
 	bShowDet( sal_True )

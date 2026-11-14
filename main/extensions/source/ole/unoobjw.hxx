@@ -84,7 +84,7 @@ struct MemberInfo
 	OUString name;
 };
 
-typedef hash_map
+typedef unordered_map
 <
 	OUString,
 	DISPID,
@@ -92,7 +92,7 @@ typedef hash_map
 	equalOUString_Impl
 > NameToIdMap;
 
-typedef hash_map
+typedef unordered_map
 <
 	OUString,
 	sal_Bool,
@@ -100,7 +100,7 @@ typedef hash_map
 	equalOUString_Impl
 > BadNameMap;
 
-typedef hash_map
+typedef unordered_map
 <
 	DISPID,
 	MemberInfo

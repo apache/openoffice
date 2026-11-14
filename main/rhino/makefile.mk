@@ -44,13 +44,13 @@ all:
 
 #.IF "$(DISABLE_RHINO)" == ""
 
-TARFILE_NAME=rhino1_7_7_2
-TARFILE_MD5=afcf570784ebd919c1d484a6d0d3fcd6
-TARFILE_ROOTDIR=rhino1.7.7.2
+TARFILE_NAME=rhino-1.7.15.1
+TARFILE_MD5=b98c6c3ec884277f253028abf91d257b
+TARFILE_ROOTDIR=rhino1.7.15.1
 
 ADDITIONAL_FILES=
 
-PATCH_FILES=rhino1_7_7_2.patch rhino-1.7.7.2-definingclassloader.patch rhino1_7_7_2-java-version.patch rhino-1.7.7.2-main.patch rhino-1.7.7.2-xxe-fix.patch rhino-1.7.7.2-tofixed-fix.patch
+PATCH_FILES=rhino1_7_15_1.patch
 
 .IF "$(JAVACISGCJ)"=="yes"
 JAVA_HOME=

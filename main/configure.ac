@@ -240,6 +240,13 @@ AC_ARG_ENABLE(symbols,
                           Enabling symbols disables the stripping of the solver
                           (--disable-strip-solver).
 ],,)
+AC_ARG_ENABLE(sanitizer,
+[  --enable-sanitizer       Enables -fsanitize=address compiler flag.
+                          Works with GCC and Clang.
+                          
+                          It is suggested to add --enable-symbols so that the
+                          address sanitizer can give more detailed information.
+],,)
 AC_ARG_ENABLE(strip-solver,
 [  --disable-strip-solver  Disable the stripping of the solver.
                           By default the solver is stripped unless a build with
@@ -936,6 +943,12 @@ AC_ARG_WITH(alloc,
 
                           Note that on FreeBSD/NetBSD system==jemalloc
 ],,)
+AC_ARG_ENABLE(jemalloc,
+[  --enable-jemalloc       Download, build and bundle jemalloc and use it as the
+                          allocator (Linux and macOS only). Use
+                          --with-alloc=jemalloc instead to link a jemalloc
+                          already installed on the system.
+],,)
 AC_ARG_ENABLE(verbose,
 [  --enable-verbose        Increase build verbosity.
   --disable-verbose       Decrease build verbosity.
@@ -1056,8 +1069,7 @@ AC_PROG_EGREP
 if test -z "$GREP"; then
 GREP=$EGREP
 fi
-AC_PROG_AWK
-AC_PATH_PROG( AWK, $AWK)
+AC_PATH_PROG(AWK, gawk)
 
 dnl ===================================================================
 dnl  A space in $AWK is fatal, so take the 8.3 form when there is one
@@ -1093,12 +1105,12 @@ volume; several checks below will fail on the space otherwise.])
    ;;
 esac
 if test -z "$AWK"; then
-   AC_MSG_ERROR([install awk to run this script])
+   AC_MSG_ERROR([install GNU awk to build Apache OpenOffice])
 fi
 
 AC_PATH_PROGS(SED, sed )
 if test -z "$SED"; then
-   AC_MSG_ERROR([install sed to run this script])
+   AC_MSG_ERROR([install sed to build Apache OpenOffice])
 fi
 
 AC_MSG_CHECKING([for solenv environment])
@@ -1518,6 +1530,19 @@ else
    AC_MSG_RESULT([no])
 fi
 AC_SUBST(ENABLE_SYMBOLS)
+
+dnl ===================================================================
+dnl Set the ENABLE_SANITIZER variable. (Activate --enable-sanitizer)
+dnl ===================================================================
+AC_MSG_CHECKING([whether to enable address sanitizer])
+if test -n "$enable_sanitizer" && test "$enable_sanitizer" != "no"; then
+   ENABLE_SANITIZER="TRUE"
+   AC_MSG_RESULT([yes])
+else
+   ENABLE_SANITIZER="FALSE"
+   AC_MSG_RESULT([no])
+fi
+AC_SUBST(ENABLE_SANITIZER)
 
 dnl ===================================================================
 dnl Determine if the solver is to be stripped or not.
@@ -2982,13 +3007,7 @@ dnl ===================================================================
 dnl Check if stdc headers are available excluding Windows.
 dnl ===================================================================
 if test "$_os" != "WINNT" -o "$WITH_MINGWIN" = "yes"; then
-   m4_warn([obsolete],
-[The preprocessor macro 'STDC_HEADERS' is obsolete.
-  Except in unusual embedded environments, you can safely include all
-  C89 headers unconditionally.])dnl
-# Autoupdate added the next two lines to ensure that your configure
-# script's behavior did not change.  They are probably safe to remove.
-AC_CHECK_INCLUDES_DEFAULT
+   AC_CHECK_INCLUDES_DEFAULT
 AC_PROG_EGREP
 
 fi
@@ -3015,7 +3034,7 @@ fi
 AC_CHECK_SIZEOF(long)
 SIZEOF_LONG=$ac_cv_sizeof_long
 AC_SUBST(SIZEOF_LONG)
-AC_C_BIGENDIAN
+AC_C_BIGENDIAN([], [], [], [:])
 WORDS_BIGENDIAN=$ac_cv_c_bigendian
 AC_SUBST(WORDS_BIGENDIAN)
 
@@ -3474,6 +3493,20 @@ dnl ===================================================================
 dnl allocator
 dnl ===================================================================
 AC_MSG_CHECKING([which memory allocator to use])
+if test "$enable_jemalloc" = "yes"; then
+    case "$_os" in
+    Linux|Darwin) ;;
+    *) AC_MSG_ERROR([--enable-jemalloc is only supported on Linux and macOS]) ;;
+    esac
+    if test -n "$with_alloc" -a "$with_alloc" != "jemalloc"; then
+        AC_MSG_ERROR([--enable-jemalloc cannot be combined with --with-alloc=$with_alloc])
+    fi
+    AC_MSG_RESULT([jemalloc (bundled)])
+    ALLOC="JEMALLOC"
+    ENABLE_JEMALLOC=YES
+    BUILD_TYPE="$BUILD_TYPE JEMALLOC"
+    with_alloc="bundled-jemalloc"
+fi
 if test "$with_alloc" = "system"; then
     AC_MSG_RESULT([system])
     ALLOC="SYS_ALLOC";
@@ -3507,6 +3540,7 @@ if test "$with_alloc" = "internal" -o -z "$with_alloc"; then
    AC_MSG_RESULT([internal])
 fi
 AC_SUBST(ALLOC)
+AC_SUBST(ENABLE_JEMALLOC)
 
 dnl ===================================================================
 dnl Custom build version
@@ -4456,8 +4490,7 @@ dnl ===================================================================
 dnl Check for system libxslt
 dnl ===================================================================
 AC_MSG_CHECKING([which libxslt to use])
-if test -n "$with_system_libxslt" -o -n "$with_system_libs" -o \
-       "$_os" = "Darwin" && \
+if test -n "$with_system_libxslt" -o -n "$with_system_libs" && \
    test "$with_system_libxslt" != "no"; then
    AC_MSG_RESULT([external])
    SYSTEM_LIBXSLT=YES
@@ -4504,8 +4537,7 @@ dnl ===================================================================
 dnl Check for system libxml
 dnl ===================================================================
 AC_MSG_CHECKING([which libxml to use])
-if test -n "$with_system_libxml" -o -n "$with_system_libs" -o \
-            "$_os" = "Darwin" && \
+if test -n "$with_system_libxml" -o -n "$with_system_libs" && \
 	test "$with_system_libxml" != "no"; then
     AC_MSG_RESULT([external])
     SYSTEM_LIBXML=YES
@@ -4648,7 +4680,9 @@ dnl ===================================================================
 dnl Check for system python
 dnl ===================================================================
 AC_MSG_CHECKING([which python to use])
-if test "$_os" = "Darwin" && test "$with_system_python" != "no"; then
+if test "$_os" = "Darwin" && \
+   test -n "$with_system_python" -o -n "$with_system_libs" && \
+   test "$with_system_python" != "no"; then
    with_system_python=yes
 
    dnl Recent macOS releases no longer ship a usable Python under /usr/bin,
@@ -5209,14 +5243,7 @@ AC_SUBST(COINMP_LIBS)
 dnl ===================================================================
 dnl Check for system curl
 dnl ===================================================================
-dnl Darwin always treats curl as external (see the "-o \"$_os\" = \"Darwin\""
-dnl clause below), regardless of whether --with-system-curl was actually
-dnl given a directory -- capture the as-given value first, before it gets
-dnl forced to a bare "yes", so a real --with-system-curl=DIR isn't lost.
 with_system_curl_dir="$with_system_curl"
-if test "$_os" = "Darwin" && test "$with_system_curl" != "no"; then
-   with_system_curl=yes
-fi
 AC_MSG_CHECKING([which curl to use])
 if test -n "$with_system_curl" -o -n "$with_system_libs" && \
 	test "$with_system_curl" != "no"; then

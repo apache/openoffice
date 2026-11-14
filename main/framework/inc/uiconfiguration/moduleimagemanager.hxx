@@ -30,7 +30,7 @@
 */
 #include <vector>
 #include <list>
-#include <hash_map>
+#include <unordered_map>
 #include <memory>
 
 //_________________________________________________________________________________________________________________
@@ -112,7 +112,7 @@ namespace framework
             virtual sal_Bool SAL_CALL isReadOnly();
 
         private:
-            ::std::auto_ptr<ImageManagerImpl>                                               m_pImpl;
+            ::std::unique_ptr<ImageManagerImpl>                                               m_pImpl;
    };
 }
 

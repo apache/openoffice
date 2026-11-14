@@ -72,11 +72,11 @@ OQueryViewSwitch::~OQueryViewSwitch()
 {
 	DBG_DTOR(OQueryViewSwitch,NULL);
 	{
-		::std::auto_ptr<Window> aTemp(m_pTextView);
+		::std::unique_ptr<Window> aTemp(m_pTextView);
 		m_pTextView = NULL;
 	}
 	{
-		::std::auto_ptr<Window> aTemp(m_pDesignView);
+		::std::unique_ptr<Window> aTemp(m_pDesignView);
 		m_pDesignView = NULL;
 	}
 }

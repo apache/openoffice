@@ -60,6 +60,7 @@ public:
 			SetValue( rLB.GetValue() );
 			return *this;
 		}
+	SvxNoLinebreakItem(const SvxNoLinebreakItem&) = default;
 };
 
 

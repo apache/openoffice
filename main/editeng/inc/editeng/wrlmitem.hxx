@@ -65,6 +65,7 @@ public:
 			SetValue( rWLM.GetValue() );
 			return *this;
 		}
+	SvxWordLineModeItem(const SvxWordLineModeItem&) = default;
 };
 
 #endif

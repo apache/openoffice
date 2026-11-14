@@ -92,8 +92,10 @@ namespace frm
     namespace
     {
         //--------------------------------------------------------------------------
-        struct RowSetValueToString : public ::std::unary_function< ORowSetValue, ::rtl::OUString >
+        struct RowSetValueToString
         {
+            typedef ORowSetValue argument_type;
+            typedef ::rtl::OUString result_type;
             ::rtl::OUString operator()( const ORowSetValue& _value ) const
             {
                 return _value.getString();
@@ -101,8 +103,10 @@ namespace frm
         };
 
         //--------------------------------------------------------------------------
-        struct AppendRowSetValueString : public ::std::unary_function< ::rtl::OUString, void >
+        struct AppendRowSetValueString
         {
+            typedef ::rtl::OUString argument_type;
+            typedef void result_type;
             AppendRowSetValueString( ::rtl::OUString& _string )
                 :m_string( _string )
             {
@@ -415,11 +419,11 @@ namespace frm
         const ::rtl::OUString* pEndPos   = _rPropertyNames.getConstArray() + _rPropertyNames.getLength();
         const ::rtl::OUString* pSelectedItemsPos = ::std::find_if(
             pStartPos, pEndPos,
-             ::std::bind2nd( ::std::equal_to< ::rtl::OUString >(), PROPERTY_SELECT_SEQ )
+             ::std::bind( ::std::equal_to< ::rtl::OUString >(), ::std::placeholders::_1, static_cast< ::rtl::OUString >( PROPERTY_SELECT_SEQ ) )
         );
         const ::rtl::OUString* pStringItemListPos = ::std::find_if(
             pStartPos, pEndPos,
-             ::std::bind2nd( ::std::equal_to< ::rtl::OUString >(), PROPERTY_STRINGITEMLIST )
+             ::std::bind( ::std::equal_to< ::rtl::OUString >(), ::std::placeholders::_1, static_cast< ::rtl::OUString >( PROPERTY_STRINGITEMLIST ) )
         );
         if ( ( pSelectedItemsPos != pEndPos ) && ( pStringItemListPos != pEndPos ) )
         {
@@ -1234,8 +1238,10 @@ namespace frm
     namespace
     {
         //................................................................
-        struct ExtractStringFromSequence_Safe : public ::std::unary_function< sal_Int16, ::rtl::OUString >
+        struct ExtractStringFromSequence_Safe
         {
+            typedef sal_Int16 argument_type;
+            typedef ::rtl::OUString result_type;
         protected:
             const Sequence< ::rtl::OUString >&  m_rList;
 

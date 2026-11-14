@@ -243,8 +243,8 @@ namespace dbaccess
 			@return
 				<TRUE/> if movement was successful.
 		*/
-		sal_Bool SAL_CALL move(	::std::mem_fun_t<sal_Bool,ORowSetBase>& _aCheckFunctor,
-								::std::mem_fun_t<sal_Bool,ORowSetCache>& _aMovementFunctor);
+		sal_Bool SAL_CALL move(	::std::function<sal_Bool(ORowSetBase*)>& _aCheckFunctor,
+								::std::function<sal_Bool(ORowSetCache*)>& _aMovementFunctor);
 
 		/** same meaning as isFirst. Only need by mem_fun
 			@return
@@ -402,7 +402,7 @@ namespace dbaccess
 	class ORowSetNotifier
 	{
 	private:
-        ::std::auto_ptr<ORowSetNotifierImpl> m_pImpl;
+        ::std::unique_ptr<ORowSetNotifierImpl> m_pImpl;
 		ORowSetBase*	m_pRowSet;
 			// not acquired! This is not necessary because this class here is to be used on the stack within
 			// a method of ORowSetBase (or derivees)

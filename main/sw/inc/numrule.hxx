@@ -34,7 +34,7 @@
 #include <errhdl.hxx>
 #include <error.h>
 #include <hints.hxx>
-#include <hash_map>
+#include <unordered_map>
 #include <stringhash.hxx>
 #include <SwNumberTreeTypes.hxx>
 #include <vector>
@@ -142,9 +142,9 @@ private:
 
     // #i36749#
     /**
-       hash_map containing "name->rule" relation
+       unordered_map containing "name->rule" relation
      */
-    std::hash_map<String, SwNumRule *, StringHash> * pNumRuleMap;
+    std::unordered_map<String, SwNumRule *, StringHash> * pNumRuleMap;
 
 	String sName;
 	SwNumRuleType eRuleType;
@@ -239,7 +239,7 @@ public:
        @param pNumRuleMap      map to register in
      */
     void SetNumRuleMap(
-                std::hash_map<String, SwNumRule *, StringHash>* pNumRuleMap );
+                std::unordered_map<String, SwNumRule *, StringHash>* pNumRuleMap );
 
 	static char* GetOutlineRuleName() { return pDefOutlineName; }
 

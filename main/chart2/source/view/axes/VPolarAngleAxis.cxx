@@ -180,7 +180,7 @@ void VPolarAngleAxis::createLabels()
     {
         //-----------------------------------------
         //get the transformed screen values for all tickmarks in aAllTickInfos
-        std::auto_ptr< TickFactory > apTickFactory( this->createTickFactory() );
+        std::unique_ptr< TickFactory > apTickFactory( this->createTickFactory() );
 
         //create tick mark text shapes
         //@todo: iterate through all tick depth which should be labeled

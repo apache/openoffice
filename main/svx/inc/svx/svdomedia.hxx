@@ -83,7 +83,7 @@ protected:
 private:
 
 		::avmedia::MediaItem		maMediaProperties;
-        ::std::auto_ptr< Graphic >  mapGraphic;
+        ::std::unique_ptr< Graphic >  mapGraphic;
 };
 
 #endif //_SVDOMEDIA_HXX

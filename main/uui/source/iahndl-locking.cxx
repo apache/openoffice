@@ -76,7 +76,7 @@ handleLockedDocumentRequest_(
     try
     {
         vos::OGuard aGuard(Application::GetSolarMutex());
-        std::auto_ptr< ResMgr > xManager(
+        std::unique_ptr< ResMgr > xManager(
             ResMgr::CreateResMgr(CREATEVERSIONRESMGR_NAME(uui)));
         if (!xManager.get())
             return;
@@ -97,7 +97,7 @@ handleLockedDocumentRequest_(
             aMessage = UUIInteractionHelper::replaceMessageWithArguments(
                 aMessage, aArguments );
 
-            std::auto_ptr< OpenLockedQueryBox > xDialog(new OpenLockedQueryBox(
+            std::unique_ptr< OpenLockedQueryBox > xDialog(new OpenLockedQueryBox(
                             pParent, xManager.get(), aMessage ) );
             nResult = xDialog->Execute();
         }
@@ -112,7 +112,7 @@ handleLockedDocumentRequest_(
             aMessage = UUIInteractionHelper::replaceMessageWithArguments(
                 aMessage, aArguments );
 
-            std::auto_ptr< TryLaterQueryBox > xDialog(
+            std::unique_ptr< TryLaterQueryBox > xDialog(
                 new TryLaterQueryBox( pParent, xManager.get(), aMessage ) );
             nResult = xDialog->Execute();
         }
@@ -127,7 +127,7 @@ handleLockedDocumentRequest_(
             aMessage = UUIInteractionHelper::replaceMessageWithArguments(
                 aMessage, aArguments );
 
-            std::auto_ptr< AlreadyOpenQueryBox > xDialog(
+            std::unique_ptr< AlreadyOpenQueryBox > xDialog(
                 new AlreadyOpenQueryBox( pParent,
                                          xManager.get(),
                                          aMessage,
@@ -166,12 +166,12 @@ handleChangedByOthersRequest_(
     try
     {
         vos::OGuard aGuard(Application::GetSolarMutex());
-        std::auto_ptr< ResMgr > xManager(
+        std::unique_ptr< ResMgr > xManager(
             ResMgr::CreateResMgr(CREATEVERSIONRESMGR_NAME(uui)));
         if (!xManager.get())
             return;
 
-        std::auto_ptr< FileChangedQueryBox > xDialog(
+        std::unique_ptr< FileChangedQueryBox > xDialog(
             new FileChangedQueryBox( pParent, xManager.get() ) );
         sal_Int32 nResult = xDialog->Execute();
 
@@ -204,12 +204,12 @@ handleLockFileIgnoreRequest_(
     try
     {
         vos::OGuard aGuard(Application::GetSolarMutex());
-        std::auto_ptr< ResMgr > xManager(
+        std::unique_ptr< ResMgr > xManager(
             ResMgr::CreateResMgr(CREATEVERSIONRESMGR_NAME(uui)));
         if (!xManager.get())
             return;
 
-        std::auto_ptr< LockFailedQueryBox > xDialog(
+        std::unique_ptr< LockFailedQueryBox > xDialog(
             new LockFailedQueryBox( pParent, xManager.get() ) );
         sal_Int32 nResult = xDialog->Execute();
 

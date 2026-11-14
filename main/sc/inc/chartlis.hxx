@@ -35,7 +35,7 @@
 #include <memory>
 #include <vector>
 #include <list>
-#include <hash_set>
+#include <unordered_set>
 
 class ScDocument;
 class ScChartUnoData;
@@ -53,21 +53,21 @@ public:
         virtual void notify(sal_uInt16 nFileId, ScExternalRefManager::LinkUpdateType eType);
         void addFileId(sal_uInt16 nFileId);
         void removeFileId(sal_uInt16 nFileId);
-        ::std::hash_set<sal_uInt16>& getAllFileIds();
+        ::std::unordered_set<sal_uInt16>& getAllFileIds();
 
     private:
         ExternalRefListener();
         ExternalRefListener(const ExternalRefListener& r);
 
         ScChartListener& mrParent;
-        ::std::hash_set<sal_uInt16> maFileIds;
+        ::std::unordered_set<sal_uInt16> maFileIds;
         ScDocument*                 mpDoc;
     };
 
 private:
 
-    ::std::auto_ptr<ExternalRefListener>                mpExtRefListener;
-    ::std::auto_ptr< ::std::vector<ScSharedTokenRef> >  mpTokens;
+    ::std::unique_ptr<ExternalRefListener>                mpExtRefListener;
+    ::std::unique_ptr< ::std::vector<ScSharedTokenRef> >  mpTokens;
 
 	ScChartUnoData*	pUnoData;
 	ScDocument* 	pDoc;

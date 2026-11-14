@@ -158,7 +158,7 @@ public:
 private:
     ::com::sun::star::uno::Reference<
             ::com::sun::star::chart2::XChartDocument > m_xChartDoc;
-    ::std::auto_ptr< DataBrowserModel > m_apDataBrowserModel;
+    ::std::unique_ptr< DataBrowserModel > m_apDataBrowserModel;
 
     typedef ::std::vector< ::boost::shared_ptr< impl::SeriesHeader > > tSeriesHeaderContainer;
     tSeriesHeaderContainer m_aSeriesHeaders;

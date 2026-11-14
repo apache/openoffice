@@ -34,6 +34,7 @@
 #include <basegfx/polygon/b2dpolygontools.hxx>
 #include <basegfx/polygon/b2dpolygon.hxx>
 #include <algorithm>
+#include <functional>
 #include <svx/xtextit.hxx>
 #include <svx/xftshtit.hxx>
 #include <vcl/virdev.hxx>
@@ -512,7 +513,7 @@ namespace
 									double fDXOffset= *(pCandidate->getDoubleDXArray().begin() + (nPortionIndex - 1));
 									::std::transform(
 										aNewDXArray.begin(), aNewDXArray.end(),
-										aNewDXArray.begin(), ::std::bind2nd(::std::minus<double>(), fDXOffset));
+										aNewDXArray.begin(), ::std::bind(::std::minus<double>(), ::std::placeholders::_1, fDXOffset));
 								}
 
 								if(bAutosizeScale)
@@ -520,7 +521,7 @@ namespace
 									// when autosize scaling, adapt to DXArray, too
 									::std::transform(
 										aNewDXArray.begin(), aNewDXArray.end(),
-										aNewDXArray.begin(), ::std::bind2nd(::std::multiplies<double>(), fAutosizeScaleFactor));
+										aNewDXArray.begin(), ::std::bind(::std::multiplies<double>(), ::std::placeholders::_1, fAutosizeScaleFactor));
 								}
 							}
 

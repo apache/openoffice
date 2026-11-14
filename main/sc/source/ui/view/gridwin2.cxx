@@ -57,13 +57,13 @@
 #include "scabstdlg.hxx" //CHINA001
 
 #include <vector>
-#include <hash_map>
+#include <unordered_map>
 
 using namespace com::sun::star;
 using ::com::sun::star::sheet::DataPilotFieldOrientation;
 using ::std::vector;
-using ::std::auto_ptr;
-using ::std::hash_map;
+using ::std::unique_ptr;
+using ::std::unordered_map;
 using ::rtl::OUString;
 using ::rtl::OUStringHash;
 
@@ -470,7 +470,7 @@ void ScGridWindow::DPLaunchFieldPopupMenu(
     const Point& rScrPos, const Size& rScrSize, const ScAddress& rPos, ScDPObject* pDPObj)
 {
     // We need to get the list of field members.
-    auto_ptr<DPFieldPopupData> pDPData(new DPFieldPopupData);
+    unique_ptr<DPFieldPopupData> pDPData(new DPFieldPopupData);
     pDPObj->FillLabelData(pDPData->maDPParam);
     pDPData->mpDPObj = pDPObj;
 
@@ -557,8 +557,8 @@ void ScGridWindow::DPLaunchFieldPopupMenu(
 
 void ScGridWindow::UpdateDPFromFieldPopupMenu()
 {
-    typedef hash_map<OUString, OUString, OUStringHash> MemNameMapType;
-    typedef hash_map<OUString, bool, OUStringHash> MemVisibilityType;
+    typedef unordered_map<OUString, OUString, OUStringHash> MemNameMapType;
+    typedef unordered_map<OUString, bool, OUStringHash> MemVisibilityType;
 
     if (!mpDPFieldPopup.get())
         return;

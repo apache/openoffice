@@ -158,9 +158,9 @@ if (SOLAR_JAVA==TRUE)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (SYSTEM_OPENSSL!=YES)
-    MD5 = fabdcf86f3f54e27689253f85b738959
-    name = openssl-3.0.20.tar.gz
-    URL1 = https://github.com/openssl/openssl/releases/download/openssl-3.0.20/$(name)
+    MD5 = 4e59f265667c74aa82d426b016e194c9
+    name = openssl-3.0.21.tar.gz
+    URL1 = https://github.com/openssl/openssl/releases/download/openssl-3.0.21/$(name)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 # On Windows, we need Strawberry Perl to build OpenSSL 3:
@@ -208,15 +208,28 @@ if (SYSTEM_VIGRA != YES)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (SYSTEM_EXPAT != YES)
-    MD5 = 5e9974d422dc4b157f300568ad28ebf6
-    name = expat-2.5.0.tar.bz2
-    URL1 = https://github.com/libexpat/libexpat/releases/download/R_2_5_0/$(name)
+    MD5 = 0e4b4a4fc77940a8d46194d57780f840
+    name = expat-2.8.1.tar.bz2
+    URL1 = https://github.com/libexpat/libexpat/releases/download/R_2_8_1/$(name)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
-if (SYSTEM_CURL != YES)
+if (SYSTEM_CURL != YES && GUI != WNT)
+    MD5 = d45ab886d8224c77c91d7161ddc179c1
+    name = curl-8.23.0.tar.gz
+    URL1 = https://curl.se/download/$(name)
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+# curl 8.23.0 dropped winbuild/, which curl-wnt.patch and the nmake build need
+if (SYSTEM_CURL != YES && GUI == WNT)
     MD5 = 92f7a11836678b725e2cb59fef10c273
     name = curl-8.7.1.tar.gz
-    URL1 = https://curl.haxx.se/download/$(name)
+    URL1 = https://curl.se/download/$(name)
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+if (ENABLE_JEMALLOC == YES)
+    MD5 = e9abfa20270beb35e54043240ba37369
+    name = jemalloc-5.4.0.tar.bz2
+    URL1 = https://github.com/jemalloc/jemalloc/releases/download/5.4.0/$(name)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (WITH_CATA_FONTS == YES)
@@ -250,9 +263,9 @@ if (RAT_JAR_HOME==BUILD)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (SOLAR_JAVA==TRUE && SYSTEM_BSH!=YES)
-    MD5 = f75fbfe6d5ce3568704f89ec5c3b34a7
-    name = bsh-2.1.1-src.zip
-    URL1 = https://github.com/beanshell/beanshell/releases/download/2.1.1/$(name)
+    MD5 = 3623feb40cb7e4fb26e02d8921ef86fa
+    name = bsh-3.0.0RC3.jar
+    URL1 = https://github.com/beanshell/beanshell/releases/download/3.0.0RC3/$(name)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 ###############################################################################
@@ -292,9 +305,9 @@ if (ENABLE_CATEGORY_B==YES && SYSTEM_HUNSPELL!=YES)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (ENABLE_CATEGORY_B==YES && SOLAR_JAVA==TRUE && ENABLE_JAVASCRIPT==YES)
-    MD5 = afcf570784ebd919c1d484a6d0d3fcd6
-    name = rhino1_7_7_2.zip
-    URL1 = https://github.com/mozilla/rhino/releases/download/Rhino1_7_7_2_Release/rhino-1.7.7.2.zip
+    MD5 = b98c6c3ec884277f253028abf91d257b
+    name = rhino-1.7.15.1.zip
+    URL1 = https://github.com/mozilla/rhino/releases/download/Rhino1_7_15_1_Release/rhino-1.7.15.1.zip
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (ENABLE_CATEGORY_B==YES && ENABLE_NSS_MODULE==YES)

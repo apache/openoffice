@@ -38,10 +38,10 @@ TARGET=openssl
 .ENDIF
 
 
-OPENSSL_NAME=openssl-3.0.20
+OPENSSL_NAME=openssl-3.0.21
 
 TARFILE_NAME=$(OPENSSL_NAME)
-TARFILE_MD5=fabdcf86f3f54e27689253f85b738959
+TARFILE_MD5=4e59f265667c74aa82d426b016e194c9
 
 CONFIGURE_DIR=.
 CONFIGURE_ACTION=config
@@ -75,6 +75,8 @@ UNAME=$(shell uname)
 	.ELIF "$(BUILD64)" == "1"
 		.IF "$(UNAME)" == "GNU/kFreeBSD"
 			CONFIGURE_ACTION=Configure debian-kfreebsd-amd64 no-dso no-shared $(NO_ASM)
+		.ELIF "$(UNAME)" == "FreeBSD" && "$(CPUNAME)" == "AARCH64"
+			CONFIGURE_ACTION=Configure BSD-aarch64 no-dso no-shared $(NO_ASM)
 		.ELIF "$(UNAME)" == "FreeBSD"
 			CONFIGURE_ACTION=Configure BSD-x86_64 no-dso no-shared $(NO_ASM)
 		.ELIF "$(UNAME)" == "Linux" && "$(CPUNAME)" == "AARCH64"

@@ -90,6 +90,7 @@ class PathSettings : public  css::lang::XTypeProvider             ,
             {
                 takeOver(rCopy);
             }
+            PathInfo& operator=(const PathInfo&) = default;
 
             void takeOver(const PathInfo& rCopy)
             {

@@ -65,6 +65,7 @@ struct XMLPropertyState
 		: mnIndex( nIndex ), maValue( rValue ) {}
 	XMLPropertyState( const XMLPropertyState& rPropState )
 		: mnIndex( rPropState.mnIndex ), maValue( rPropState.maValue ) {}
+	XMLPropertyState& operator=(const XMLPropertyState&) = default;
 };
 
 #endif // _XMLOFF_PROPMAPPINGTYPES_HXX

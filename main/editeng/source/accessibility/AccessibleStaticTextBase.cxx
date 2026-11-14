@@ -33,6 +33,7 @@
 #include <limits.h>
 #include <vector>
 #include <algorithm>
+#include <functional>
 #include <boost/bind.hpp>
 #include <vos/mutex.hxx>
 #include <vcl/window.hxx>
@@ -73,9 +74,12 @@ namespace accessibility
 {
     typedef ::comphelper::SequenceAsVector< beans::PropertyValue > PropertyValueVector;
 
-    class PropertyValueEqualFunctor : public ::std::binary_function< beans::PropertyValue, beans::PropertyValue, bool >
+    class PropertyValueEqualFunctor
     {
     public:
+        typedef beans::PropertyValue first_argument_type;
+        typedef beans::PropertyValue second_argument_type;
+        typedef bool result_type;
         PropertyValueEqualFunctor()
         {}
         bool operator() ( const beans::PropertyValue& lhs, const beans::PropertyValue& rhs ) const
@@ -133,7 +137,7 @@ sal_Unicode cNewLine(0x0a);
 
             return maEditSource;
         }
-        void SetEditSource( ::std::auto_ptr< SvxEditSource > pEditSource );
+        void SetEditSource( ::std::unique_ptr< SvxEditSource > pEditSource );
 
         void SetEventSource( const uno::Reference< XAccessible >& rInterface )
         {
@@ -246,11 +250,11 @@ sal_Unicode cNewLine(0x0a);
         DBG_DTOR( AccessibleStaticTextBase_Impl, NULL );
     }
 
-    void AccessibleStaticTextBase_Impl::SetEditSource( ::std::auto_ptr< SvxEditSource > pEditSource )
+    void AccessibleStaticTextBase_Impl::SetEditSource( ::std::unique_ptr< SvxEditSource > pEditSource )
     {
         DBG_CHKTHIS( AccessibleStaticTextBase_Impl, NULL );
 
-        maEditSource.SetEditSource( pEditSource );
+        maEditSource.SetEditSource( std::move(pEditSource) );
         if( mpTextParagraph )
             mpTextParagraph->SetEditSource( &maEditSource );
     }
@@ -534,12 +538,12 @@ sal_Unicode cNewLine(0x0a);
 	//
 	//------------------------------------------------------------------------
 
-    AccessibleStaticTextBase::AccessibleStaticTextBase( ::std::auto_ptr< SvxEditSource > 		pEditSource ) :
+    AccessibleStaticTextBase::AccessibleStaticTextBase( ::std::unique_ptr< SvxEditSource > 		pEditSource ) :
         mpImpl( new AccessibleStaticTextBase_Impl() )
     {
         ::vos::OGuard aGuard( Application::GetSolarMutex() );
 
-        SetEditSource( pEditSource );
+        SetEditSource( std::move(pEditSource) );
     }
 
     AccessibleStaticTextBase::~AccessibleStaticTextBase()
@@ -561,7 +565,7 @@ sal_Unicode cNewLine(0x0a);
 #endif
     }
 
-    void AccessibleStaticTextBase::SetEditSource( ::std::auto_ptr< SvxEditSource > pEditSource )
+    void AccessibleStaticTextBase::SetEditSource( ::std::unique_ptr< SvxEditSource > pEditSource )
     {
 #ifdef DBG_UTIL
         // precondition: solar mutex locked
@@ -573,7 +577,7 @@ sal_Unicode cNewLine(0x0a);
 
         mpImpl->CheckInvariants();
 #else
-        mpImpl->SetEditSource( pEditSource );
+        mpImpl->SetEditSource( std::move(pEditSource) );
 #endif
     }
 
@@ -1102,7 +1106,7 @@ sal_Unicode cNewLine(0x0a);
             {
                 const beans::PropertyValue* pItr = aSeq.getConstArray();
                 const beans::PropertyValue* pEnd  = pItr + aSeq.getLength();
-                const beans::PropertyValue* pFind = ::std::find_if( pItr, pEnd, ::std::bind2nd( PropertyValueEqualFunctor(), boost::cref( *aItr ) ) );
+                const beans::PropertyValue* pFind = ::std::find_if( pItr, pEnd, ::std::bind( PropertyValueEqualFunctor(), ::std::placeholders::_1, boost::cref( *aItr ) ) );
                 if ( pFind != pEnd )
                 {
                     aIntersectionVec.push_back( *pFind );
@@ -1140,7 +1144,7 @@ sal_Unicode cNewLine(0x0a);
         {
             const beans::PropertyValue* pItr = aIntersectionSeq.getConstArray();
             const beans::PropertyValue* pEnd  = pItr + aIntersectionSeq.getLength();
-            const beans::PropertyValue* pFind = ::std::find_if( pItr, pEnd, ::std::bind2nd( PropertyValueEqualFunctor(), boost::cref( pDefAttr[i] ) ) );
+            const beans::PropertyValue* pFind = ::std::find_if( pItr, pEnd, ::std::bind( PropertyValueEqualFunctor(), ::std::placeholders::_1, boost::cref( pDefAttr[i] ) ) );
             if ( pFind == pEnd && pDefAttr[i].Handle != 0)
             {
                 aDiffVec.push_back( pDefAttr[i] );

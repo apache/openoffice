@@ -358,7 +358,7 @@ void ScAccessibleEditObject::CreateTextHelper()
 {
 	if (!mpTextHelper)
 	{
-        ::std::auto_ptr < ScAccessibleTextData > pAccessibleTextData;
+        ::std::unique_ptr < ScAccessibleTextData > pAccessibleTextData;
         if (meObjectType == CellInEditMode || meObjectType == EditControl)
         {
             pAccessibleTextData.reset
@@ -370,8 +370,8 @@ void ScAccessibleEditObject::CreateTextHelper()
 			    (new ScAccessibleEditLineTextData(NULL, mpWindow));
         }
 
-        ::std::auto_ptr< SvxEditSource > pEditSource (new ScAccessibilityEditSource(pAccessibleTextData));
-        mpTextHelper = new ::accessibility::AccessibleTextHelper(pEditSource );
+        ::std::unique_ptr< SvxEditSource > pEditSource (new ScAccessibilityEditSource(::std::move(pAccessibleTextData)));
+        mpTextHelper = new ::accessibility::AccessibleTextHelper(std::move(pEditSource) );
         mpTextHelper->SetEventSource(this);
         mpTextHelper->SetFocus(mbHasFocus);
 

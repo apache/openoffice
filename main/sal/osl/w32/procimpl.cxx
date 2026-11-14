@@ -75,9 +75,11 @@ namespace /* private */
        The comparison is in upper case and returns true
        if the first of both strings is less than the
        second one. */
-    struct less_environment_variable :
-        public std::binary_function<rtl::OUString, rtl::OUString, bool>
+    struct less_environment_variable
     {
+        typedef rtl::OUString first_argument_type;
+        typedef rtl::OUString second_argument_type;
+        typedef bool result_type;
         bool operator() (const rtl::OUString& lhs, const rtl::OUString& rhs) const
         {
             OSL_ENSURE((lhs.indexOf(NAME_VALUE_SEPARATOR) > -1) && \

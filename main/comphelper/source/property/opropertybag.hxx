@@ -52,8 +52,10 @@ namespace comphelper
 {
 //........................................................................
 
-    struct SAL_DLLPRIVATE UnoTypeLess : public ::std::unary_function< ::com::sun::star::uno::Type, bool >
+    struct SAL_DLLPRIVATE UnoTypeLess
     {
+        typedef ::com::sun::star::uno::Type argument_type;
+        typedef bool result_type;
         inline bool operator()( const ::com::sun::star::uno::Type& _rLHS, const ::com::sun::star::uno::Type& _rRHS ) const
         {
             return rtl_ustr_compare(
@@ -88,7 +90,7 @@ namespace comphelper
                         m_aContext;
 
         /// our IPropertyArrayHelper implementation
-        ::std::auto_ptr< ::cppu::OPropertyArrayHelper >
+        ::std::unique_ptr< ::cppu::OPropertyArrayHelper >
                         m_pArrayHelper;
         ::comphelper::PropertyBag
                         m_aDynamicProperties;

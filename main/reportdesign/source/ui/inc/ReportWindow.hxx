@@ -61,7 +61,7 @@ namespace rptui
 		OScrollWindowHelper*	m_pParent;
 		OViewsWindow			m_aViewsWindow;
         ::rtl::Reference< comphelper::OPropertyChangeMultiplexer>	m_pReportListener;
-        ::std::auto_ptr<DlgEdFactory>
+        ::std::unique_ptr<DlgEdFactory>
                                 m_pObjFac;
 
 		void ImplInitSettings();

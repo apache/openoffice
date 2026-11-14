@@ -24,7 +24,7 @@
 #ifndef BASIC_NAMECONTAINER_HXX
 #define BASIC_NAMECONTAINER_HXX
 
-#include <hash_map>
+#include <unordered_map>
 
 #include <com/sun/star/lang/XSingleServiceFactory.hpp>
 #include <com/sun/star/uno/XComponentContext.hpp>
@@ -76,7 +76,7 @@ typedef ::cppu::WeakImplHelper3<
 
 class NameContainer : public ::cppu::BaseMutex, public NameContainer_BASE
 {
-    typedef std::hash_map< ::rtl::OUString, sal_Int32, ::rtl::OUStringHash > NameContainerNameMap;
+    typedef std::unordered_map< ::rtl::OUString, sal_Int32, ::rtl::OUStringHash > NameContainerNameMap;
 
 	NameContainerNameMap mHashMap;
 	::com::sun::star::uno::Sequence< ::rtl::OUString > mNames;

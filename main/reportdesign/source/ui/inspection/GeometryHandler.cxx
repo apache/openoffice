@@ -111,6 +111,7 @@
 #include "dlgpage.hxx"
 #include "helpids.hrc"
 #include <toolkit/helper/convert.hxx>
+#include <functional>
 
 #define DATA_OR_FORMULA     0
 #define FUNCTION            1
@@ -126,8 +127,11 @@ using namespace ::com::sun::star;
 //using namespace formula;
 
 // comparing two property instances
-struct PropertyCompare : public ::std::binary_function< beans::Property, ::rtl::OUString , bool >
+struct PropertyCompare
 {
+	typedef beans::Property first_argument_type;
+	typedef ::rtl::OUString second_argument_type;
+	typedef bool result_type;
 	bool operator() (const beans::Property& x, const ::rtl::OUString& y) const
 	{
 		return x.Name.equals(y);// ? true : false;
@@ -923,7 +927,7 @@ beans::Property GeometryHandler::getProperty(const ::rtl::OUString & PropertyNam
     uno::Sequence< beans::Property > aProps = getSupportedProperties();
     const beans::Property* pIter = aProps.getConstArray();
     const beans::Property* pEnd  = pIter + aProps.getLength();
-    const beans::Property* pFind = ::std::find_if(pIter,pEnd,::std::bind2nd(PropertyCompare(),boost::cref(PropertyName)));
+    const beans::Property* pFind = ::std::find_if(pIter,pEnd,::std::bind(PropertyCompare(), ::std::placeholders::_1,boost::cref(PropertyName)));
     if ( pFind == pEnd )
         return beans::Property();
     return *pFind;
@@ -1313,7 +1317,7 @@ uno::Sequence< beans::Property > SAL_CALL GeometryHandler::getSupportedPropertie
     {
         const beans::Property* pIter = aSeq.getConstArray();
         const beans::Property* pEnd  = pIter + aSeq.getLength();
-        const beans::Property* pFind = ::std::find_if(pIter,pEnd,::std::bind2nd(PropertyCompare(),boost::cref(pIncludeProperties[i])));
+        const beans::Property* pFind = ::std::find_if(pIter,pEnd,::std::bind(PropertyCompare(), ::std::placeholders::_1,boost::cref(pIncludeProperties[i])));
         if ( pFind != pEnd )
         {
             // special case for controls which contain a data field

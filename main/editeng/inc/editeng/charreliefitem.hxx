@@ -70,6 +70,7 @@ public:
 		SetValue( rItem.GetValue() );
 		return *this;
 	}
+	SvxCharReliefItem(const SvxCharReliefItem&) = default;
 };
 
 #endif

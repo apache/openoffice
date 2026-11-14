@@ -1256,7 +1256,7 @@ public:
     void                FillToItemSet( SfxItemSet& rItemSet ) const;
 
 private:
-    typedef ::std::auto_ptr< SvMemoryStream > SvMemoryStreamPtr;
+    typedef ::std::unique_ptr< SvMemoryStream > SvMemoryStreamPtr;
 
     SvMemoryStream      maDummyStrm;    /// Dummy DGG stream for DFF manager.
     XclImpSimpleDffConverter maDffConv; /// DFF converter used to resolve palette colors.

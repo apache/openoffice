@@ -655,7 +655,7 @@ uno::Reference< io::XStream > getAdditionalStream( const rtl::OUString&         
                 if( pTrailer && pTrailer->m_pDict )
                 {
                     // search document checksum entry
-                    std::hash_map< rtl::OString,
+                    std::unordered_map< rtl::OString,
                                    pdfparse::PDFEntry*,
                                    rtl::OStringHash >::iterator chk;
                     chk = pTrailer->m_pDict->m_aMap.find( "DocChecksum" );
@@ -672,7 +672,7 @@ uno::Reference< io::XStream > getAdditionalStream( const rtl::OUString&         
                     }
 
                     // search for AdditionalStreams entry
-                    std::hash_map< rtl::OString,
+                    std::unordered_map< rtl::OString,
                                    pdfparse::PDFEntry*,
                                    rtl::OStringHash >::iterator add_stream;
                     add_stream = pTrailer->m_pDict->m_aMap.find( "AdditionalStreams" );

@@ -25,7 +25,7 @@
 
 #include "com/sun/star/ucb/XSimpleFileAccess.hpp"
 
-#include <hash_map>
+#include <unordered_map>
 #include <rtl/string.hxx>
 
 namespace helpdatafileproxy {
@@ -78,8 +78,8 @@ namespace helpdatafileproxy {
 			{ return rName.hashCode(); }
 	};
 
-	typedef std::hash_map< rtl::OString,std::pair<int,int>,ha,eq >	StringToValPosMap;
-	typedef std::hash_map< rtl::OString,rtl::OString,ha,eq >		StringToDataMap;
+	typedef std::unordered_map< rtl::OString,std::pair<int,int>,ha,eq >	StringToValPosMap;
+	typedef std::unordered_map< rtl::OString,rtl::OString,ha,eq >		StringToDataMap;
 
 	class Hdf : hdf_internal::Noncopyable
 	{

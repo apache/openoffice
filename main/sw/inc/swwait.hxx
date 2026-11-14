@@ -26,7 +26,7 @@
 #include <tools/solar.h>
 #include "swdllapi.h"
 
-#include <hash_set>
+#include <unordered_set>
 
 class SwDocShell;
 class SfxDispatcher;

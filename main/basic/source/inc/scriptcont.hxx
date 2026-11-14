@@ -126,7 +126,7 @@ class SfxScriptLibrary : public SfxLibrary, public SfxScriptLibrary_BASE
 {
     friend class SfxScriptLibraryContainer;
 
-    typedef std::hash_map< ::rtl::OUString, ::com::sun::star::script::ModuleInfo, ::rtl::OUStringHash > ModuleInfoMap;
+    typedef std::unordered_map< ::rtl::OUString, ::com::sun::star::script::ModuleInfo, ::rtl::OUStringHash > ModuleInfoMap;
 
 	sal_Bool mbLoadedSource;
 	sal_Bool mbLoadedBinary;

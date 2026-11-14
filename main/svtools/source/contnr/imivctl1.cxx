@@ -336,7 +336,7 @@ void SvxIconChoiceCtrl_Impl::InsertEntry( SvxIconChoiceCtrlEntry* pEntry, sal_uL
 
 void SvxIconChoiceCtrl_Impl::CreateAutoMnemonics( MnemonicGenerator* _pGenerator )
 {
-    ::std::auto_ptr< MnemonicGenerator > pAutoDeleteOwnGenerator;
+    ::std::unique_ptr< MnemonicGenerator > pAutoDeleteOwnGenerator;
     if ( !_pGenerator )
     {
         _pGenerator = new MnemonicGenerator;

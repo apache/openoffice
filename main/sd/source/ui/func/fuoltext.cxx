@@ -248,7 +248,7 @@ sal_Bool FuOutlineText::KeyInput(const KeyEvent& rKEvt)
 	{
 		mpWindow->GrabFocus();
 
-		std::auto_ptr< OutlineViewModelChangeGuard > aGuard;
+		std::unique_ptr< OutlineViewModelChangeGuard > aGuard;
 
 		if( (nKeyGroup != KEYGROUP_CURSOR) && (nKeyGroup != KEYGROUP_FKEYS) )
 			aGuard.reset( new OutlineViewModelChangeGuard( *pOutlineView ) );

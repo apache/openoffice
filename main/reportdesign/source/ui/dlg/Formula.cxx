@@ -98,7 +98,7 @@ FormulaDialog::~FormulaDialog()
         SvtViewOptions aDlgOpt( E_WINDOW, String::CreateFromAscii( HID_RPT_FIELD_SEL_WIN ) );
         aDlgOpt.SetWindowState( ::rtl::OUString::createFromAscii( m_pAddField->GetWindowState((WINDOWSTATE_MASK_X | WINDOWSTATE_MASK_Y | WINDOWSTATE_MASK_STATE | WINDOWSTATE_MASK_MINIMIZED)).GetBuffer() ) );
 
-        ::std::auto_ptr<Window> aTemp2(m_pAddField);
+        ::std::unique_ptr<Window> aTemp2(m_pAddField);
 		m_pAddField = NULL;
     }
 }
@@ -258,9 +258,9 @@ table::CellAddress FormulaDialog::getReferencePosition() const
     return table::CellAddress();
 }
 // -----------------------------------------------------------------------------
-::std::auto_ptr<formula::FormulaTokenArray> FormulaDialog::convertToTokenArray(const uno::Sequence< sheet::FormulaToken >& _aTokenList)
+::std::unique_ptr<formula::FormulaTokenArray> FormulaDialog::convertToTokenArray(const uno::Sequence< sheet::FormulaToken >& _aTokenList)
 {
-    ::std::auto_ptr<formula::FormulaTokenArray> pArray(new FormulaTokenArray());
+    ::std::unique_ptr<formula::FormulaTokenArray> pArray(new FormulaTokenArray());
     pArray->Fill(_aTokenList, NULL);
     return pArray;
 }

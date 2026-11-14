@@ -117,7 +117,7 @@ def normalise(root, cnt, strict, is_old):
                 kids = [c.tag for c in tb]
                 if kids == [q("table", "table-columns"), q("table", "table-rows")] and len(list(tb.iter(q("table", "table-cell")))) == 1 and not tb.attrib.get(q("table", "name")) is None and False: pass
                 if kids == [q("table", "table-columns"), q("table", "table-rows")] and len(list(tb.iter(q("table", "table-cell")))) == 1 and not "".join(tb.itertext()).strip() and len(list(tb.iter())) == 6 and not any(x.attrib for x in tb.iter(q("table", "table-cell"))):
-                    e.remove(tb); bump("f8ad6c41e5 dde-link wrapper table"); 
+                    e.remove(tb); bump("f8ad6c41e5 dde-link wrapper table");
         if t == q("chart", "symbol-image") and q("xlink", "href") not in a: parent[e].remove(e); bump("d6bd426c78 empty symbol-image")
         if t in (q("table", "table-columns"), q("table", "table-rows")) and len(e) == 0 and parent.get(e) is not None and parent[e].tag == q("table", "table") and root.tag.endswith("document-content"):
             # chart internal data (empty wrappers)

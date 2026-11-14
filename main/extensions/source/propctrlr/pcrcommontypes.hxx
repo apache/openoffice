@@ -29,14 +29,14 @@
 /** === end UNO includes === **/
 #include <rtl/ustring.hxx>
 
-#include <hash_map>
+#include <unordered_map>
 
 //........................................................................
 namespace pcr
 {
 //........................................................................
 
-    typedef ::std::hash_map< ::rtl::OUString, ::com::sun::star::beans::Property, ::rtl::OUStringHash >
+    typedef ::std::unordered_map< ::rtl::OUString, ::com::sun::star::beans::Property, ::rtl::OUStringHash >
         PropertyMap;
 
 //........................................................................

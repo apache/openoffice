@@ -351,7 +351,7 @@ namespace pcr
     class EventHolder : public EventHolder_Base
     {
     private:
-        typedef ::std::hash_map< ::rtl::OUString, ScriptEventDescriptor, ::rtl::OUStringHash >  EventMap;
+        typedef ::std::unordered_map< ::rtl::OUString, ScriptEventDescriptor, ::rtl::OUStringHash >  EventMap;
         typedef ::std::map< EventId, EventMap::iterator >                                       EventMapIndexAccess;
 
         EventMap            m_aEventNameAccess;
@@ -924,7 +924,7 @@ namespace pcr
         if ( !pFactory )
             return InteractiveSelectionResult_Cancelled;
 
-        ::std::auto_ptr< VclAbstractDialog > pDialog( pFactory->CreateSvxMacroAssignDlg(
+        ::std::unique_ptr< VclAbstractDialog > pDialog( pFactory->CreateSvxMacroAssignDlg(
             PropertyHandlerHelper::getDialogParentWindow( m_aContext ),
             impl_getContextFrame_nothrow(),
             m_bIsDialogElement,

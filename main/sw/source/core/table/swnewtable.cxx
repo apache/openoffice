@@ -821,7 +821,7 @@ bool SwTable::PrepareMerge( const SwPaM& rPam, SwSelBoxes& rBoxes,
     }
     CHECK_TABLE( *this )
     // We have to assert a "rectangular" box selection before we start to merge
-    std::auto_ptr< SwBoxSelection > pSel( CollectBoxSelection( rPam ) );
+    std::unique_ptr< SwBoxSelection > pSel( CollectBoxSelection( rPam ) );
     if( !pSel.get() || pSel->isEmpty() )
         return false;
     // Now we should have a rectangle of boxes,

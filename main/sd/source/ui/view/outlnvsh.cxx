@@ -506,7 +506,7 @@ void OutlineViewShell::FuSupport(SfxRequest &rReq)
 	sal_Bool bPreviewState = sal_False;
 	sal_uLong nSlot = rReq.GetSlot();
 
-	std::auto_ptr< OutlineViewModelChangeGuard > aGuard;
+	std::unique_ptr< OutlineViewModelChangeGuard > aGuard;
 	if( pOlView && (
         (nSlot == SID_TRANSLITERATE_SENTENCE_CASE) ||
         (nSlot == SID_TRANSLITERATE_TITLE_CASE) ||

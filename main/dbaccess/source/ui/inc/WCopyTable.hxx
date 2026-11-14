@@ -46,10 +46,11 @@
 namespace dbaui
 {
 
-	typedef ::std::unary_function< ::rtl::OUString,bool> TColumnFindFunctorType;
-	class TColumnFindFunctor : public TColumnFindFunctorType
+	class TColumnFindFunctor
 	{
 	public:
+		typedef ::rtl::OUString argument_type;
+		typedef bool result_type;
 		virtual bool operator()(const ::rtl::OUString& _sColumnName) const = 0;
 	};
 
@@ -81,7 +82,7 @@ namespace dbaui
 		inline bool operator()(const ::rtl::OUString& _sColumnName)	const
 		{
 			return ::std::find_if(m_pVector->begin(),m_pVector->end(),
-				::std::bind2nd(m_aCase, _sColumnName)) != m_pVector->end();
+				::std::bind(m_aCase, ::std::placeholders::_1, _sColumnName)) != m_pVector->end();
 		}
     };
 

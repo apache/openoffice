@@ -77,7 +77,7 @@ namespace connectivity
 		struct ConnectionSettings
 		{
 			rtl_TextEncoding encoding;
-			std::auto_ptr<sql::Connection> cppConnection;
+			std::unique_ptr<sql::Connection> cppConnection;
 			OUString schema;
 			OUString quoteIdentifier;
             OUString connectionURL;

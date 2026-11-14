@@ -26,7 +26,7 @@
 
 #include "IdentityMapping.hxx"
 
-#include <hash_map>
+#include <unordered_map>
 #include <set>
 #include <algorithm>
 
@@ -125,21 +125,25 @@ struct MappingEntry
 		{}
 };
 //--------------------------------------------------------------------------------------------------
-struct FctOUStringHash : public unary_function< const OUString &, size_t >
+struct FctOUStringHash
 {
+	typedef const OUString & argument_type;
+	typedef size_t result_type;
 	size_t operator()( const OUString & rKey ) const SAL_THROW( () )
 		{ return (size_t)rKey.hashCode(); }
 };
 //--------------------------------------------------------------------------------------------------
-struct FctPtrHash : public unary_function< uno_Mapping *, size_t >
+struct FctPtrHash
 {
+	typedef uno_Mapping * argument_type;
+	typedef size_t result_type;
 	size_t operator()( uno_Mapping * pKey ) const SAL_THROW( () )
 		{ return (size_t)pKey; }
 };
 
-typedef hash_map<
+typedef unordered_map<
     OUString, MappingEntry *, FctOUStringHash, equal_to< OUString > > t_OUString2Entry;
-typedef hash_map<
+typedef unordered_map<
     uno_Mapping *, MappingEntry *, FctPtrHash, equal_to< uno_Mapping * > > t_Mapping2Entry;
 
 typedef set< uno_getMappingFunc > t_CallbackSet;

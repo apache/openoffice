@@ -157,7 +157,7 @@ public:
 
 private:
     oslInterlockedCount m_refCount;
-    ::std::auto_ptr< ColoredPanelWindow >
+    ::std::unique_ptr< ColoredPanelWindow >
                         m_pWindow;
     ::rtl::OUString     m_aPanelName;
     BitmapEx            m_aPanelIcon;

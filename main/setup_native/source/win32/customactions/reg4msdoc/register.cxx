@@ -44,7 +44,7 @@
 #pragma warning(disable: 4350)
 #endif
 
-typedef std::auto_ptr<Registrar> RegistrarPtr;
+typedef std::unique_ptr<Registrar> RegistrarPtr;
 
 namespace /* private */
 {

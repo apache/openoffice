@@ -1787,8 +1787,10 @@ uno::Sequence< rtl::OUString > VSeriesPlotter::getSeriesNames() const
 
 namespace
 {
-struct lcl_setRefSizeAtSeriesGroup : public ::std::unary_function< VDataSeriesGroup, void >
+struct lcl_setRefSizeAtSeriesGroup
 {
+    typedef VDataSeriesGroup argument_type;
+    typedef void result_type;
     lcl_setRefSizeAtSeriesGroup( awt::Size aRefSize ) : m_aRefSize( aRefSize ) {}
     void operator()( VDataSeriesGroup & rGroup )
     {

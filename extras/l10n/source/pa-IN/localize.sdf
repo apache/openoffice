@@ -5574,8 +5574,8 @@ formula	source\ui\dlg\formdlgs.src	0	string	RID_FORMULADLG_FORMULA	STR_TITLE2			
 formula	source\ui\dlg\formdlgs.src	0	string	RID_FORMULADLG_FORMULA	STR_END			45	pa-IN	ਅੰਤ(~e)				2002-02-02 02:02:02
 formula	source\ui\dlg\parawin.src	0	#define	RB_ARGBLOCK( y )				13	pa-IN	-		ਚੁਣੋ		2002-02-02 02:02:02
 formula	source\ui\dlg\parawin.src	0	fixedtext	RID_FORMULATAB_PARAMETER	FT_EDITDESC			198	pa-IN	ਫੰਕਸ਼ਨ ਜਾਣਿਆ ਨਹੀਂ ਹੈ				2002-02-02 02:02:02
-formula	source\ui\dlg\parawin.src	0	string	RID_FORMULATAB_PARAMETER	STR_OPTIONAL			8	pa-IN	(ਚੋਣਵਾਂ)				2002-02-02 02:02:02
-formula	source\ui\dlg\parawin.src	0	string	RID_FORMULATAB_PARAMETER	STR_REQUIRED			8	pa-IN	(ਲੋੜੀਦਾ)				2002-02-02 02:02:02
+formula	source\ui\dlg\parawin.src	0	string	RID_FORMULATAB_PARAMETER.FT_ARG1.FT_ARG2.FT_ARG3.FT_ARG4	STR_OPTIONAL			8	pa-IN	(ਚੋਣਵਾਂ)				2002-02-02 02:02:02
+formula	source\ui\dlg\parawin.src	0	string	RID_FORMULATAB_PARAMETER.FT_ARG1.FT_ARG2.FT_ARG3.FT_ARG4	STR_REQUIRED			8	pa-IN	(ਲੋੜੀਦਾ)				2002-02-02 02:02:02
 dbaccess	source\ui\inc\toolbox_tmpl.hrc	0	#define	MID_SBA_QRY_REFRESH			!defined DBAUI_TOOLBOX_HXX	13691	pa-IN	ਤਾਜ਼ਾ				2002-02-02 02:02:02
 dbaccess	source\ui\inc\toolbox_tmpl.hrc	0	#define	MID_NEW_VIEW_DESIGN		HID_BROWSER_VIEW_CREATE_DESIGN	!defined DBAUI_TOOLBOX_HXX	13691	pa-IN	ਨਵਾਂ ਵਿਊ ਡਿਜ਼ਾਈਨ(~V)				2002-02-02 02:02:02
 dbaccess	source\ui\inc\toolbox_tmpl.hrc	0	#define	MID_NEW_TABLE_DESIGN		HID_BROWSER_TABLE_CREATE_DESIGN	!defined DBAUI_TOOLBOX_HXX	13691	pa-IN	ਨਵਾਂ ਸਾਰਣੀ ਡਿਜ਼ਾਇਨ(~T)				2002-02-02 02:02:02
@@ -8026,18 +8026,18 @@ connectivity	source\resource\conn_shared_res.src	0	string	STR_NO_TABLENAME				13
 connectivity	source\resource\conn_shared_res.src	0	string	STR_NO_DOCUMENTUI				13691	pa-IN	ਦਿੱਤਾ DocumentUI NULL ਹੋਣਾ ਮਨਜ਼ੂਰ ਨਹੀਂ ਹੈ।				2002-02-02 02:02:02
 connectivity	source\drivers\jdbc\jdbc.xcu	0	value	.Drivers.Installed.jdbc:*	DriverTypeDisplayName			0	pa-IN	JDBC				2002-02-02 02:02:02
 connectivity	source\drivers\jdbc\jdbc.xcu	0	value	.Drivers.Installed.jdbc:oracle:thin:*	DriverTypeDisplayName			0	pa-IN	ਓਰੇਕਲ JDBC				2002-02-02 02:02:02
-connectivity	source\drivers\dbase\dbase.xcu	0	value	.Drivers.Installed.sdbc:dbase:*	DriverTypeDisplayName			0	pa-IN	dBASE				2002-02-02 02:02:02
-connectivity	source\drivers\odbc\odbc.xcu	0	value	.Drivers.Installed.sdbc:odbc:*	DriverTypeDisplayName			0	pa-IN	ODBC				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\dbase.xcu	0	value	.Drivers.Installed.sdbc:dbase:*	DriverTypeDisplayName			0	pa-IN	dBASE				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\odbc.xcu	0	value	.Drivers.Installed.sdbc:odbc:*	DriverTypeDisplayName			0	pa-IN	ODBC				2002-02-02 02:02:02
 connectivity	source\drivers\kab\kab.xcu	0	value	.Drivers.Installed.sdbc:address:kab	DriverTypeDisplayName			0	pa-IN	KDE ਐਡਰੈੱਸ ਬੁੱਕ				2002-02-02 02:02:02
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:local	DriverTypeDisplayName			0	pa-IN	ਈਵੇਲੂਸ਼ਨ ਲੋਕਲ				2002-02-02 02:02:02
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:ldap	DriverTypeDisplayName			0	pa-IN	ਈਵੇਲੂਸ਼ਨ LDAP				2002-02-02 02:02:02
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:groupwise	DriverTypeDisplayName			0	pa-IN	ਗਰੁੱਪਵਾਈਜ਼				2002-02-02 02:02:02
-connectivity	source\drivers\hsqldb\hsqldb.xcu	0	value	.Drivers.Installed.sdbc:embedded:hsqldb	DriverTypeDisplayName			0	pa-IN	HSQL ਡਾਟਾਬੇਸ ਇੰਜਣ				2002-02-02 02:02:02
-connectivity	source\drivers\macab\macab.xcu	0	value	.Drivers.Installed.sdbc:address:macab	DriverTypeDisplayName			0	pa-IN	Mac OS X ਐਡਰੈੱਸ ਬੁੱਕ				2002-02-02 02:02:02
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:*	DriverTypeDisplayName			0	pa-IN	ADO				2002-02-02 02:02:02
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:PROVIDER=Microsoft.Jet.OLEDB.4.0;DATA SOURCE=*	DriverTypeDisplayName			0	pa-IN	ਮਾਈਕਰੋਸਾਫਟ ਅਸੈੱਸ				2002-02-02 02:02:02
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:Provider=Microsoft.ACE.OLEDB.12.0;DATA SOURCE=*	DriverTypeDisplayName			0	pa-IN	ਮਾਈਕਰੋਸਾਫਟ ਅਸੈੱਸ ੨੦੦੭				2002-02-02 02:02:02
-connectivity	source\drivers\flat\flat.xcu	0	value	.Drivers.Installed.sdbc:flat:*	DriverTypeDisplayName			0	pa-IN	ਟੈਕਸਟ				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:local	DriverTypeDisplayName			0	pa-IN	ਈਵੇਲੂਸ਼ਨ ਲੋਕਲ				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:ldap	DriverTypeDisplayName			0	pa-IN	ਈਵੇਲੂਸ਼ਨ LDAP				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:groupwise	DriverTypeDisplayName			0	pa-IN	ਗਰੁੱਪਵਾਈਜ਼				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\hsqldb.xcu	0	value	.Drivers.Installed.sdbc:embedded:hsqldb	DriverTypeDisplayName			0	pa-IN	HSQL ਡਾਟਾਬੇਸ ਇੰਜਣ				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\macab.xcu	0	value	.Drivers.Installed.sdbc:address:macab	DriverTypeDisplayName			0	pa-IN	Mac OS X ਐਡਰੈੱਸ ਬੁੱਕ				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:*	DriverTypeDisplayName			0	pa-IN	ADO				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:PROVIDER=Microsoft.Jet.OLEDB.4.0;DATA SOURCE=*	DriverTypeDisplayName			0	pa-IN	ਮਾਈਕਰੋਸਾਫਟ ਅਸੈੱਸ				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:Provider=Microsoft.ACE.OLEDB.12.0;DATA SOURCE=*	DriverTypeDisplayName			0	pa-IN	ਮਾਈਕਰੋਸਾਫਟ ਅਸੈੱਸ ੨੦੦੭				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\flat.xcu	0	value	.Drivers.Installed.sdbc:flat:*	DriverTypeDisplayName			0	pa-IN	ਟੈਕਸਟ				2002-02-02 02:02:02
 connectivity	source\drivers\mozab\mozab.xcu	0	value	.Drivers.Installed.sdbc:address:outlook	DriverTypeDisplayName			0	pa-IN	ਮਾਈਕਰੋਸਾਫਟ ਆਉਟਲੁੱਕ ਐਡਰੈੱਸ ਬੁੱਕ				2002-02-02 02:02:02
 connectivity	source\drivers\mozab\mozab.xcu	0	value	.Drivers.Installed.sdbc:address:outlookexp	DriverTypeDisplayName			0	pa-IN	ਮਾਈਕਰੋਸਾਫਟ ਵਿੰਡੋਜ਼ ਐਡਰੈੱਸ ਬੁੱਕ				2002-02-02 02:02:02
 connectivity	source\drivers\mozab\mozab.xcu	0	value	.Drivers.Installed.sdbc:address:mozilla:	DriverTypeDisplayName			0	pa-IN	ਮੋਜ਼ੀਲਾ ਐਡਰੈੱਸ ਬੁੱਕ				2002-02-02 02:02:02
@@ -8046,13 +8046,13 @@ connectivity	source\drivers\mozab\mozab.xcu	0	value	.Drivers.Installed.sdbc:addr
 connectivity	source\drivers\mozab\mozab2.xcu	0	value	.Drivers.Installed.sdbc:address:mozilla:	DriverTypeDisplayName			0	pa-IN	ਮੋਜ਼ੀਲਾ ਐਡਰੈੱਸ ਬੁੱਕ				2002-02-02 02:02:02
 connectivity	source\drivers\mozab\mozab2.xcu	0	value	.Drivers.Installed.sdbc:address:thunderbird:	DriverTypeDisplayName			0	pa-IN	ਥੰਡਰਬਰਡ ਐਡਰੈੱਸ ਬੁੱਕ				2002-02-02 02:02:02
 connectivity	source\drivers\mozab\mozab2.xcu	0	value	.Drivers.Installed.sdbc:address:ldap:*	DriverTypeDisplayName			0	pa-IN	LDAP ਐਡਰੈੱਸ ਬੁੱਕ				2002-02-02 02:02:02
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:jdbc:*	DriverTypeDisplayName			0	pa-IN	MySQL (JDBC)				2002-02-02 02:02:02
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:odbc:*	DriverTypeDisplayName			0	pa-IN	MySQL (ODBC)				2002-02-02 02:02:02
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:mysqlc:*	DriverTypeDisplayName			0	pa-IN	MySQL (ਨੇਟਿਵ)				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:jdbc:*	DriverTypeDisplayName			0	pa-IN	MySQL (JDBC)				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:odbc:*	DriverTypeDisplayName			0	pa-IN	MySQL (ODBC)				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:mysqlc:*	DriverTypeDisplayName			0	pa-IN	MySQL (ਨੇਟਿਵ)				2002-02-02 02:02:02
 connectivity	source\drivers\calc\calc.xcu	0	value	.Drivers.Installed.sdbc:calc:*	DriverTypeDisplayName			0	pa-IN	ਸਪਰੈੱਡਸ਼ੀਟ				2002-02-02 02:02:02
 connectivity	source\drivers\evoab\evoab.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:ldap	DriverTypeDisplayName			0	pa-IN	ਈਵੇਲੂਸ਼ਨ LDAP				2002-02-02 02:02:02
 connectivity	source\drivers\evoab\evoab.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:groupwise	DriverTypeDisplayName			0	pa-IN	ਗਰੁੱਪਵਾਈਜ਼				2002-02-02 02:02:02
-connectivity	source\drivers\adabas\adabas.xcu	0	value	.Drivers.Installed.sdbc:adabas:*	DriverTypeDisplayName			0	pa-IN	Adabas D				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\adabas.xcu	0	value	.Drivers.Installed.sdbc:adabas:*	DriverTypeDisplayName			0	pa-IN	Adabas D				2002-02-02 02:02:02
 accessibility	source\helper\accessiblestrings.src	0	string	RID_STR_ACC_NAME_BROWSEBUTTON				13691	pa-IN	ਝਲਕ				2002-02-02 02:02:02
 accessibility	source\helper\accessiblestrings.src	0	string	RID_STR_ACC_DESC_PANELDECL_TABBAR				13691	pa-IN	ਪੈਨਲ ਡੈੱਕ ਟੈਬ ਪੱਟੀ				2002-02-02 02:02:02
 reportbuilder	registry\data\org\openoffice\Office\ExtendedColorScheme.xcu	0	value	.ExtendedColorScheme.EntryNames.SunReportBuilder	DisplayName			0	pa-IN	ਓਰੇਕਲ ਰਿਪੋਰਟ ਬਿਲਡਰ				2002-02-02 02:02:02
@@ -8708,77 +8708,77 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_FAXWIZARDROADMAP_START + 2		
 wizards	source\formwizard\dbwizres.src	0	string	RID_FAXWIZARDROADMAP_START + 3				13691	pa-IN	ਭੇਜਣ ਵਾਲਾ ਤੇ ਪ੍ਰਾਪਤ ਕਰਤਾ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_FAXWIZARDROADMAP_START + 4				13691	pa-IN	ਫੁੱਟਰ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_FAXWIZARDROADMAP_START + 5				13691	pa-IN	ਨਾਂ ਅਤੇ ਟਿਕਾਣਾ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +1				13691	pa-IN	ਵੈੱਬ ਸਹਾਇਕ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +2				13691	pa-IN	ਇਹ ਵੈੱਬ ਸਹਾਇਕ ਤੁਹਾਨੂੰ ਇੰਟਰਨੈੱਟ ਉੱਤੇ ਡੌਕੂਮੈਂਟ ਪਰਿੰਟ ਲਈ ਸਹਾਇਕ ਹੈ।\n\nਇਹ ਡੌਕੂਮੈਂਟ ਨੂੰ ਇਸ ਢੰਗ ਨਾਲ ਤਬਦੀਲ ਕਰਦਾ ਹੈ ਤਾਂ ਕਿ ਉਹ ਵੈੱਬ ਬਰਾਊਜ਼ਰ ਵਿੱਚ ਠੀਕ ਤਰਾਂ ਵੇਖੇ ਜਾ ਸਕਣ। ਇਸ ਤੋਂ ਬਿਨਾਂ, ਡੌਕੂਮੈਂਟ ਨੂੰ ਆਸਾਨੀ ਨਾਲ ਵਰਤਣ ਲਈ ਇਹ ਤੱਤਾਂ ਦੀ ਸਾਰਣੀ ਤਿਆਰ ਕਰਦਾ ਹੈ। ਵੈੱਬ ਸਹਾਇਕ ਤੁਹਾਨੂੰ ਆਪਣੀ ਸਾਈਟ ਦੇ ਡਿਜ਼ਾਈਨ ਤੇ ਖਾਤੇ ਵਿੱਚ ਆਪਣੀ ਲੋੜ ਮੁਤਾਬਕ ਤਬਦੀਲੀਆਂ ਕਰਨ ਲਈ ਸਹਾਇਕ ਹੈ।\n\nਵੈੱਬ ਤੇ ਪ੍ਰਕਾਸ਼ਤ ਡੌਕੂਮੈਂਟ ਨੂੰ ਤੁਸੀਂ ਬੜੀ ਆਸਾਨੀ ਨਾਲ ਅੱਪਡੇਟ ਅਤੇ ਸ਼ਾਮਿਲ ਜਾਂ ਹਟਾ ਸਕਦੇ ਹੋ।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +4				13691	pa-IN	ਹਟਾਓ(~D)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +5				13691	pa-IN	ਜਾਣ ਪਛਾਣ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +6				13691	pa-IN	ਡੌਕੂਮੈਂਟ, ਜੋ ਕਿ ਤੁਸੀਂ ਪ੍ਰਕਾਸ਼ਤ ਕਰਨੇ ਚਾਹੁੰਦੇ ਹੋ, ਨੂੰ ਚੁਣੋ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +8				13691	pa-IN	ਡੌਕੂਮੈਂਟ ਜਾਣਕਾਰੀ 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +9				13691	pa-IN	ਟਾਈਟਲ(~t):				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +10				13691	pa-IN	ਸੰਖੇਪ(~S): 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +11				13691	pa-IN	ਲੇਖਕ(~T): 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +12				13691	pa-IN	ਫਾਇਲ ਫਾਰਮੈਟ ਲਈ ਐਕਸਪੋਰਟ(~E):				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +13				13691	pa-IN	ਆਪਣੀ ਵੈੱਬ ਸਾਇਟ ਬਾਰੇ ਸਧਾਰਨ ਜਾਣਕਾਰੀ ਦਿਓ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 1				13691	pa-IN	ਵੈੱਬ ਸਹਾਇਕ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 2				13691	pa-IN	ਇਹ ਵੈੱਬ ਸਹਾਇਕ ਤੁਹਾਨੂੰ ਇੰਟਰਨੈੱਟ ਉੱਤੇ ਡੌਕੂਮੈਂਟ ਪਰਿੰਟ ਲਈ ਸਹਾਇਕ ਹੈ।\n\nਇਹ ਡੌਕੂਮੈਂਟ ਨੂੰ ਇਸ ਢੰਗ ਨਾਲ ਤਬਦੀਲ ਕਰਦਾ ਹੈ ਤਾਂ ਕਿ ਉਹ ਵੈੱਬ ਬਰਾਊਜ਼ਰ ਵਿੱਚ ਠੀਕ ਤਰਾਂ ਵੇਖੇ ਜਾ ਸਕਣ। ਇਸ ਤੋਂ ਬਿਨਾਂ, ਡੌਕੂਮੈਂਟ ਨੂੰ ਆਸਾਨੀ ਨਾਲ ਵਰਤਣ ਲਈ ਇਹ ਤੱਤਾਂ ਦੀ ਸਾਰਣੀ ਤਿਆਰ ਕਰਦਾ ਹੈ। ਵੈੱਬ ਸਹਾਇਕ ਤੁਹਾਨੂੰ ਆਪਣੀ ਸਾਈਟ ਦੇ ਡਿਜ਼ਾਈਨ ਤੇ ਖਾਤੇ ਵਿੱਚ ਆਪਣੀ ਲੋੜ ਮੁਤਾਬਕ ਤਬਦੀਲੀਆਂ ਕਰਨ ਲਈ ਸਹਾਇਕ ਹੈ।\n\nਵੈੱਬ ਤੇ ਪ੍ਰਕਾਸ਼ਤ ਡੌਕੂਮੈਂਟ ਨੂੰ ਤੁਸੀਂ ਬੜੀ ਆਸਾਨੀ ਨਾਲ ਅੱਪਡੇਟ ਅਤੇ ਸ਼ਾਮਿਲ ਜਾਂ ਹਟਾ ਸਕਦੇ ਹੋ।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 4				13691	pa-IN	ਹਟਾਓ(~D)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 5				13691	pa-IN	ਜਾਣ ਪਛਾਣ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 6				13691	pa-IN	ਡੌਕੂਮੈਂਟ, ਜੋ ਕਿ ਤੁਸੀਂ ਪ੍ਰਕਾਸ਼ਤ ਕਰਨੇ ਚਾਹੁੰਦੇ ਹੋ, ਨੂੰ ਚੁਣੋ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 8				13691	pa-IN	ਡੌਕੂਮੈਂਟ ਜਾਣਕਾਰੀ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 9				13691	pa-IN	ਟਾਈਟਲ(~t):				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 10				13691	pa-IN	ਸੰਖੇਪ(~S): 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 11				13691	pa-IN	ਲੇਖਕ(~T): 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 12				13691	pa-IN	ਫਾਇਲ ਫਾਰਮੈਟ ਲਈ ਐਕਸਪੋਰਟ(~E):				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 13				13691	pa-IN	ਆਪਣੀ ਵੈੱਬ ਸਾਇਟ ਬਾਰੇ ਸਧਾਰਨ ਜਾਣਕਾਰੀ ਦਿਓ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +14				13691	pa-IN	ਟਾਈਟਲ:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +16				13691	pa-IN	ਵੇਰਵਾ:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +18				13691	pa-IN	ਨਿਰਮਾਣ:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +20				13691	pa-IN	ਈ-ਮੇਲ:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +21				13691	pa-IN	ਕਾਪੀਰਾਈਟ ਜਾਣਕਾਰੀ:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +22				13691	pa-IN	ਸੋਧ: 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +24				13691	pa-IN	ਝਲਕ(~P)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +25				13691	pa-IN	ਤੁਸੀਂ ਆਪਣੀ ਵੈੱਬ ਸਾਇਟ ਨੂੰ ਕਿੱਥੇ ਪ੍ਰਕਾਸ਼ਤ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +26				13691	pa-IN	ਨਵੀਂ ਵੈੱਬ ਸਾਇਟ ਪ੍ਰਕਾਸ਼ਤ ਕਰੋ:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +27				13691	pa-IN	ਲੋਕਲ ਫੋਲਡਰ ਲਈ(~L)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 16				13691	pa-IN	ਵੇਰਵਾ:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 18				13691	pa-IN	ਨਿਰਮਾਣ:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 20				13691	pa-IN	ਈ-ਮੇਲ:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 21				13691	pa-IN	ਕਾਪੀਰਾਈਟ ਜਾਣਕਾਰੀ:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 22				13691	pa-IN	ਸੋਧ: 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 24				13691	pa-IN	ਝਲਕ(~P)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 25				13691	pa-IN	ਤੁਸੀਂ ਆਪਣੀ ਵੈੱਬ ਸਾਇਟ ਨੂੰ ਕਿੱਥੇ ਪ੍ਰਕਾਸ਼ਤ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 26				13691	pa-IN	ਨਵੀਂ ਵੈੱਬ ਸਾਇਟ ਪ੍ਰਕਾਸ਼ਤ ਕਰੋ:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 27				13691	pa-IN	ਲੋਕਲ ਫੋਲਡਰ ਲਈ(~L)				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +28				13691	pa-IN	...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +29				13691	pa-IN	FTP ਰਾਹੀਂ ਵੈੱਬ ਸਰਵਰ ਤੇ(~W)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +31				13691	pa-IN	ਸੰਰਚਨਾ(~C)...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +32				13691	pa-IN	ZIP ਅਕਾਇਵ ਲਈ(~A)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 29				13691	pa-IN	FTP ਰਾਹੀਂ ਵੈੱਬ ਸਰਵਰ ਤੇ(~W)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 31				13691	pa-IN	ਸੰਰਚਨਾ(~C)...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 32				13691	pa-IN	ZIP ਅਕਾਇਵ ਲਈ(~A)				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +33				13691	pa-IN	...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +34				13691	pa-IN	ਸੈਟਿੰਗ ਸੰਭਾਲੋ (ਸਿਫਾਰਸ਼ੀ)(~S)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +35				13691	pa-IN	ਇੰਜ ਸੰਭਾਲੋ(~A):				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +36				13691	pa-IN	ਵੈੱਬ ਸਹਾਇਕ ਤੋਂ ਸੈਟਿੰਗ ਚੁਣੋ(~C)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +37				13691	pa-IN	ਵੈੱਬ ਸਾਈਟ ਸਮੱਗਰੀ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +38				13691	pa-IN	ਸ਼ਾਮਿਲ(~A)...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +39				13691	pa-IN	ਹਟਾਓ(~V)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +40				13691	pa-IN	ਆਪਣੀ ਵੈੱਬਸਾਈਟ ਲਈ ਸਮੱਗਰੀ ਟੇਬਲ ਲਈ ਲੇਆਉਟ ਚੁਣੋ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +41				13691	pa-IN	ਸਮੱਗਰੀ ਟੇਬਲ ਪੇਜ਼ ਦਾ ਇੱਕ ਸਟਾਈਲ ਚੁਣੋ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +42				13691	pa-IN	ਸਟਾਈਲ(~S):				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +48				13691	pa-IN	ਲੇਆਉਟ(~L): 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +50				13691	pa-IN	ਵੇਰਵਾ(~D)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +51				13691	pa-IN	ਲੇਖਕ(~A)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +52				13691	pa-IN	ਨਿਰਮਾਣ ਮਿਤੀ(~E)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +53				13691	pa-IN	ਆਖਰੀ ਮਿਤੀ ਤਬਦੀਲ(~L)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +54				13691	pa-IN	ਫਾਇਲ ਨਾਂ(~F)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +55				13691	pa-IN	ਫਾਇਲ ਫਾਰਮੈਟ(~T)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +56				13691	pa-IN	ਫਾਇਲ ਫਾਰਮੈਟ ਆਈਕਾਨ(~i)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +57				13691	pa-IN	ਪੇਜ਼ਾਂ ਦੇ ਨੰਬਰ(~O)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +58				13691	pa-IN	ਆਕਾਰ KB ਵਿੱਚ(~S)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +59				13691	pa-IN	ਆਪਣੇ ਡਿਫਾਲਟ ਬਰਾਊਜ਼ਰ ਨਾਲ ਵੇਖਣ ਲਈ 'ਝਲਕ' ਨੂੰ ਦਬਾਓ:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +60				13691	pa-IN	ਚੁਣਿਆ ਲੇਆਉਟ ਕਸਟਮਾਈਜ਼				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +61				13691	pa-IN	ਸਾਰਣੀ ਵਿੱਚ ਹਰ ਡੌਕੂਮੈਂਟ ਲਈ ਹੇਠ ਦਿੱਤੀ ਜਾਣਕਾਰੀ ਸ਼ਾਮਿਲ ਕਰੋ:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +62				13691	pa-IN	ਸਕਰੀਨ ਰੈਜ਼ੋਲੂਸ਼ਨ ਲਈ ਲੇਆਉਟ ਅਨੁਕੂਲ:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +64				13691	pa-IN	~640x480				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +65				13691	pa-IN	~800x600				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +66				13691	pa-IN	~1024x768				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +70				13691	pa-IN	ਆਪਣੀ ਵੈੱਬ ਸਾਈਟ ਤਿਆਰ ਕਰੋ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +71				13691	pa-IN	%START - %END/%TOTAL				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +72				13691	pa-IN	ਮੇਰੀ ਵੈੱਬਸਾਈਟ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +73				13691	pa-IN	FTP ਨਿਯਤ '%FILENAME' ਫਾਇਲ ਨਾਂ ਹੈ।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +74				13691	pa-IN	ਲੋਕਲ ਟਿਕਾਣਾ '%FILENAME' ਇੱਕ ਫਾਇਲ ਹੈ।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +75				13691	pa-IN	ਜ਼ਿਪ ਟਿਕਾਣਾ '%FILENAME' ਪਹਿਲਾਂ ਹੀ ਮੌਜੂਦ ਹੈ। ਕੀ ਤੁਸੀਂ ਟਿਕਾਣੇ ਉੱਤੇ ਹੀ ਲਿਖਣਾ ਚਾਹੁੰਦੇ ਹੋ?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +76				13691	pa-IN	FTP ਟਾਰਗੇਟ ਡਾਇਰੈਕਟਰੀ '%FILENAME' ਖਾਲੀ ਨਹੀਂ ਹੈ। ਕੁਝ ਫਾਇਲਾਂ ਉੱਤੇ ਲਿਖਿਆ ਜਾ ਜਾਵੇਗਾ। ਕੀ ਤੁਸੀਂ ਜਾਰੀ ਰੱਖਣਾ ਚਾਹੁੰਦੇ ਹੋ?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +77				13691	pa-IN	ਲੋਕਲ ਡਾਇਰੈਕਟਰੀ '%FILENAME' ਖਾਲੀ ਨਹੀਂ ਹੈ। ਕੁਝ ਫਾਇਲ ਦੇ ਉੱਤੇ ਲਿਖਿਆ ਜਾਵੇਗਾ। ਕੀ ਤੁਸੀਂ ਜਾਰੀ ਰੱਖਣਾ ਚਾਹੁੰਦੇ ਹੋ?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +78				13691	pa-IN	ਦਿੱਤੇ ਨਾਂ ਨਾਲ ਸੈਟਿੰਗ ਪਹਿਲਾਂ ਹੀ ਮੌਜੂਦ ਹੈ। ਕੀ ਤੁਸੀਂ ਮੌਜੂਦਾ ਸੈਟਿੰਗ ਦੇ ਉੱਤੇ ਹੀ ਲਿਖਣਾ ਚਾਹੁੰਦੇ ਹੋ? 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +79				13691	pa-IN	ਡੌਕੂਮੈਂਟ ਐਕਸਪੋਰਟ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +80				13691	pa-IN	ਐਕਸਪੋਰਟ ਕਰਨ ਲਈ ਤਿਆਰੀ...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +81				13691	pa-IN	ਲੇਆਉਟ ਫਾਈਲਾਂ ਕਾਪੀ ਕੀਤੀ ਜਾ ਰਹੀਆਂ ਹਨ...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +82				13691	pa-IN	ਤਤਰਾ ਤਿਆਰ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +83				13691	pa-IN	ਤਤਕਰਾ ਬਣਾਇਆ ਜਾ ਰਿਹਾ ਹੈ...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +84				13691	pa-IN	ਸ਼ੁਰੂ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +86				13691	pa-IN	ਪ੍ਰਕਾਸ਼ਤ ਕਰਨ ਲਈ ਤਿਆਰ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +87				13691	pa-IN	ਲੋਕਲ ਡਾਇਰੈਕਟਰੀ ਵਿੱਚ ਪ੍ਰਕਾਸ਼ਤ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +88				13691	pa-IN	FTP ਟਿਕਾਣੇ ਉੱਤ ਪਰਕਾਸ਼ਿਤ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +89				13691	pa-IN	ZIP ਅਕਾਇਵ ਪਰਕਾਸ਼ਿਤ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 34				13691	pa-IN	ਸੈਟਿੰਗ ਸੰਭਾਲੋ (ਸਿਫਾਰਸ਼ੀ)(~S)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 35				13691	pa-IN	ਇੰਜ ਸੰਭਾਲੋ(~A):				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 36				13691	pa-IN	ਵੈੱਬ ਸਹਾਇਕ ਤੋਂ ਸੈਟਿੰਗ ਚੁਣੋ(~C)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 37				13691	pa-IN	ਵੈੱਬ ਸਾਈਟ ਸਮੱਗਰੀ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 38				13691	pa-IN	ਸ਼ਾਮਿਲ(~A)...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 39				13691	pa-IN	ਹਟਾਓ(~V)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 40				13691	pa-IN	ਆਪਣੀ ਵੈੱਬਸਾਈਟ ਲਈ ਸਮੱਗਰੀ ਟੇਬਲ ਲਈ ਲੇਆਉਟ ਚੁਣੋ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 41				13691	pa-IN	ਸਮੱਗਰੀ ਟੇਬਲ ਪੇਜ਼ ਦਾ ਇੱਕ ਸਟਾਈਲ ਚੁਣੋ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 42				13691	pa-IN	ਸਟਾਈਲ(~S):				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 48				13691	pa-IN	ਲੇਆਉਟ(~L): 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 50				13691	pa-IN	ਵੇਰਵਾ(~D)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 51				13691	pa-IN	ਲੇਖਕ(~A)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 52				13691	pa-IN	ਨਿਰਮਾਣ ਮਿਤੀ(~E)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 53				13691	pa-IN	ਆਖਰੀ ਮਿਤੀ ਤਬਦੀਲ(~L)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 54				13691	pa-IN	ਫਾਇਲ ਨਾਂ(~F)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 55				13691	pa-IN	ਫਾਇਲ ਫਾਰਮੈਟ(~T)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 56				13691	pa-IN	ਫਾਇਲ ਫਾਰਮੈਟ ਆਈਕਾਨ(~i)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 57				13691	pa-IN	ਪੇਜ਼ਾਂ ਦੇ ਨੰਬਰ(~O)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 58				13691	pa-IN	ਆਕਾਰ KB ਵਿੱਚ(~S)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 59				13691	pa-IN	ਆਪਣੇ ਡਿਫਾਲਟ ਬਰਾਊਜ਼ਰ ਨਾਲ ਵੇਖਣ ਲਈ 'ਝਲਕ' ਨੂੰ ਦਬਾਓ:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 60				13691	pa-IN	ਚੁਣਿਆ ਲੇਆਉਟ ਕਸਟਮਾਈਜ਼				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 61				13691	pa-IN	ਸਾਰਣੀ ਵਿੱਚ ਹਰ ਡੌਕੂਮੈਂਟ ਲਈ ਹੇਠ ਦਿੱਤੀ ਜਾਣਕਾਰੀ ਸ਼ਾਮਿਲ ਕਰੋ:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 62				13691	pa-IN	ਸਕਰੀਨ ਰੈਜ਼ੋਲੂਸ਼ਨ ਲਈ ਲੇਆਉਟ ਅਨੁਕੂਲ:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 64				13691	pa-IN	~640x480				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 65				13691	pa-IN	~800x600				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 66				13691	pa-IN	~1024x768				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 70				13691	pa-IN	ਆਪਣੀ ਵੈੱਬ ਸਾਈਟ ਤਿਆਰ ਕਰੋ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 71				13691	pa-IN	%START - %END/%TOTAL				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 72				13691	pa-IN	ਮੇਰੀ ਵੈੱਬਸਾਈਟ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 73				13691	pa-IN	FTP ਨਿਯਤ '%FILENAME' ਫਾਇਲ ਨਾਂ ਹੈ।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 74				13691	pa-IN	ਲੋਕਲ ਟਿਕਾਣਾ '%FILENAME' ਇੱਕ ਫਾਇਲ ਹੈ।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 75				13691	pa-IN	ਜ਼ਿਪ ਟਿਕਾਣਾ '%FILENAME' ਪਹਿਲਾਂ ਹੀ ਮੌਜੂਦ ਹੈ। ਕੀ ਤੁਸੀਂ ਟਿਕਾਣੇ ਉੱਤੇ ਹੀ ਲਿਖਣਾ ਚਾਹੁੰਦੇ ਹੋ?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 76				13691	pa-IN	FTP ਟਾਰਗੇਟ ਡਾਇਰੈਕਟਰੀ '%FILENAME' ਖਾਲੀ ਨਹੀਂ ਹੈ। ਕੁਝ ਫਾਇਲਾਂ ਉੱਤੇ ਲਿਖਿਆ ਜਾ ਜਾਵੇਗਾ। ਕੀ ਤੁਸੀਂ ਜਾਰੀ ਰੱਖਣਾ ਚਾਹੁੰਦੇ ਹੋ?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 77				13691	pa-IN	ਲੋਕਲ ਡਾਇਰੈਕਟਰੀ '%FILENAME' ਖਾਲੀ ਨਹੀਂ ਹੈ। ਕੁਝ ਫਾਇਲ ਦੇ ਉੱਤੇ ਲਿਖਿਆ ਜਾਵੇਗਾ। ਕੀ ਤੁਸੀਂ ਜਾਰੀ ਰੱਖਣਾ ਚਾਹੁੰਦੇ ਹੋ?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 78				13691	pa-IN	ਦਿੱਤੇ ਨਾਂ ਨਾਲ ਸੈਟਿੰਗ ਪਹਿਲਾਂ ਹੀ ਮੌਜੂਦ ਹੈ। ਕੀ ਤੁਸੀਂ ਮੌਜੂਦਾ ਸੈਟਿੰਗ ਦੇ ਉੱਤੇ ਹੀ ਲਿਖਣਾ ਚਾਹੁੰਦੇ ਹੋ? 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 79				13691	pa-IN	ਡੌਕੂਮੈਂਟ ਐਕਸਪੋਰਟ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 80				13691	pa-IN	ਐਕਸਪੋਰਟ ਕਰਨ ਲਈ ਤਿਆਰੀ...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 81				13691	pa-IN	ਲੇਆਉਟ ਫਾਈਲਾਂ ਕਾਪੀ ਕੀਤੀ ਜਾ ਰਹੀਆਂ ਹਨ...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 82				13691	pa-IN	ਤਤਰਾ ਤਿਆਰ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 83				13691	pa-IN	ਤਤਕਰਾ ਬਣਾਇਆ ਜਾ ਰਿਹਾ ਹੈ...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 84				13691	pa-IN	ਸ਼ੁਰੂ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 86				13691	pa-IN	ਪ੍ਰਕਾਸ਼ਤ ਕਰਨ ਲਈ ਤਿਆਰ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 87				13691	pa-IN	ਲੋਕਲ ਡਾਇਰੈਕਟਰੀ ਵਿੱਚ ਪ੍ਰਕਾਸ਼ਤ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 88				13691	pa-IN	FTP ਟਿਕਾਣੇ ਉੱਤ ਪਰਕਾਸ਼ਿਤ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 89				13691	pa-IN	ZIP ਅਕਾਇਵ ਪਰਕਾਸ਼ਿਤ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ...				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 90				13691	pa-IN	ਮੁਕੰਮਲ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ...				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 94				13691	pa-IN	ਗਰਾਫਿਕਸ ਫਾਇਲਾਂ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 95				13691	pa-IN	ਸਭ ਫਾਇਲਾਂ				2002-02-02 02:02:02
@@ -8787,98 +8787,98 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 98		
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 99				13691	pa-IN	ਬੈਕਗਰਾਊਂਡ ਚਿੱਤਰ ਚੁਣੋ: 				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 100				13691	pa-IN	ਆਈਕਾਨ ਸੈੱਟ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 101				13691	pa-IN	ਆਈਕਾਨ ਸੈੱਟ ਚੁਣੋ:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +102				13691	pa-IN	ਹੋਰ...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +103				13691	pa-IN	ਕੋਈ ਨਹੀਂ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +104				13691	pa-IN	ਤੁਹਾਡੀ ਵੈੱਬਸਾਈਟ ਸਫਲਤਾਪੂਰਕ ਬਣਾਈ ਗਈ: %FILENAME				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +105				13691	pa-IN	ਵੈੱਬ ਸਾਈਟ ਤਿਆਰ ਕਰਨ ਦੌਰਾਨ ਇੱਕ ਜਾਂ ਹੋਰ ਗਲਤੀਆਂ ਆਈਆਂ ਹਨ।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +106				13691	pa-IN	ਤਤਕਰਾ ਪੇਜ਼ ਬਣਾਉਣ ਦੌਰਾਨ ਗਲਤੀ ਆਈ ਹੈ।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +107				13691	pa-IN	ਲੇਆਉਟ ਫਾਇਲਾਂ ਦੀ ਕਾਪੀ ਕਰਨ ਦੌਰਾਨ ਗਲਤੀ ਆਈ ਹੈ। 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +108				13691	pa-IN	'%FILENAME' ਲਈ ਡੌਕੂਮੈਂਟ ਜਾਣਕਾਰੀ ਪ੍ਰਾਪਤ ਕਰਨ ਦੌਰਾਨ ਗਲਤੀ ਆਈ ਹੈ।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +109				13691	pa-IN	ਡੌਕੂਮੈਂਟ '%FILENAME' ਨੂੰ ਐਕਸਪੋਰਟ ਕਰਨ ਦੌਰਾਨ ਗਲਤੀ ਆਈ ਹੈ।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +110				13691	pa-IN	ਡੌਕੂਮੈਂਟ '%FILENAME' ਨੂੰ ਐਕਸਪੋਰਟ ਕਰਨ ਲਈ ਡਾਇਰੈਕਟਰੀ ਬਣਾਉਣ ਦੌਰਾਨ ਗਲਤੀ ਆਈ ਹੈ।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +111				13691	pa-IN	ਡੌਕੂਮੈਂਟ '%FILENAME' ਨੂੰ ਐਕਸਪੋਰਟ ਕਰਨ ਦੌਰਾਨ ਸੁਰੱਖਿਆ ਗਲਤੀ ਆਈ ਹੈ।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +112				13691	pa-IN	ਡੌਕੂਮੈਂਟ '%FILENAME' ਨੂੰ ਐਕਸਪੋਰਟ ਕਰਨ ਦੌਰਾਨ ਇੰਪੁੱਟ/ਆਉਟਪੁੱਟ ਗਲਤੀ ਆਈ ਹੈ।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +113				13691	pa-IN	ਮਾਧਿਅਮ ਫਾਇਲਾਂ ਨੂੰ ਆਰਜ਼ੀ ਡਾਇਰੈਕਟਰੀ ਵਿੱਚ ਕਾਪੀ ਕਰਨ ਦੌਰਾਨ ਗਲਤੀ ਆਈ ਹੈ।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +114				13691	pa-IN	ਵੈੱਬਸਾਈਟ ਅੱਗੇ ਦਿੱਤੇ ਟਿਕਾਣੇ ਲਈ ਖੋਲੀ ਨਹੀਂ ਜਾ ਸਕੀ: %URL				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +115				13691	pa-IN	ਅਣਜਾਣੀ ਗਲਤੀ ਆਈ ਹੈ:%ERROR				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +116				13691	pa-IN	ਫਾਇਲ ਨਾਂ ਲੈਣ ਦੌਰਾਨ ਅਣਜਾਣੀ ਗਲਤੀ ਆਈ ਹੈ: '%FILENAME' 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +117				13691	pa-IN	%FILENAME' ਇੱਕ ਫੋਲਡਰ ਹੈ।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +118				13691	pa-IN	ਵੈੱਬ ਸਹਾਇਕ ਸੈਟਿੰਗ ਲੋਡ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +119				13691	pa-IN	ਅਣਜਾਣੀ ਗਲਤੀ ਆਈ ਹੈ।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +120				13691	pa-IN	ਡੌਕੂਮੈਂਟ ਠੀਕ ਹੋਣ ਦੀ ਜਾਂਚ ਜਾਰੀ...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +121				13691	pa-IN	ਮੇਰਾ ਅਕਾਇਵ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +122				13691	pa-IN	ਜਾਣ ਪਛਾਣ 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +123				13691	pa-IN	ਡੌਕੂਮੈਂਟ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +124				13691	pa-IN	ਮੇਨ ਲੇਆਉਟ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +125				13691	pa-IN	ਲੇਆਉਟ ਵੇਰਵਾ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +126				13691	pa-IN	ਸਟਾਈਲ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +127				13691	pa-IN	ਵੈੱਬ ਸਾਈਟ ਜਾਣਕਾਰੀ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +128				13691	pa-IN	ਝਲਕ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +130				13691	pa-IN	ਚੁਣੇ ਸੈਟਿੰਗ ਨੂੰ ਹਟਾਇਆ ਜਾਵੇਗਾ।\n\nਕੀ ਤੁਸੀਂ ਇਹ ਸੈਟਿੰਗ ਨੂੰ ਹਟਾਉਣਾ ਹੀ ਚਾਹੁੰਦੇ ਹੋ? 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +131				13691	pa-IN	%NUMBER ਪੇਜ਼				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +132				13691	pa-IN	%NUMBER ਸਲਾਈਡਾਂ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +133				13691	pa-IN	ਨਿਰਮਾਣ: %DATE				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +134				13691	pa-IN	ਆਖਰੀ ਸੋਧ: %DATE				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +135				13691	pa-IN	ਵੈੱਬ ਸਹਾਇਕ ਸੈਟਿੰਗ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +136				13691	pa-IN	ਬੈਕਗਰਾਊਡ ਚਿੱਤਰ:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +137				13691	pa-IN	ਆਈਕਾਨ ਸੈੱਟ:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +138				13691	pa-IN	ਆਈਕਾਨ ਸੈੱਟ ਨੂੰ HTML ਫਾਰਮੈਟ ਵਿੱਚ ਪਰਜੈੱਟੇਸ਼ਨ ਬਣਾਉਣ ਲਈ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +139				13691	pa-IN	HTML ਮੇਟਾਡਾਟਾ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 102				13691	pa-IN	ਹੋਰ...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 103				13691	pa-IN	ਕੋਈ ਨਹੀਂ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 104				13691	pa-IN	ਤੁਹਾਡੀ ਵੈੱਬਸਾਈਟ ਸਫਲਤਾਪੂਰਕ ਬਣਾਈ ਗਈ: %FILENAME				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 105				13691	pa-IN	ਵੈੱਬ ਸਾਈਟ ਤਿਆਰ ਕਰਨ ਦੌਰਾਨ ਇੱਕ ਜਾਂ ਹੋਰ ਗਲਤੀਆਂ ਆਈਆਂ ਹਨ।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 106				13691	pa-IN	ਤਤਕਰਾ ਪੇਜ਼ ਬਣਾਉਣ ਦੌਰਾਨ ਗਲਤੀ ਆਈ ਹੈ।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 107				13691	pa-IN	ਲੇਆਉਟ ਫਾਇਲਾਂ ਦੀ ਕਾਪੀ ਕਰਨ ਦੌਰਾਨ ਗਲਤੀ ਆਈ ਹੈ। 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 108				13691	pa-IN	'%FILENAME' ਲਈ ਡੌਕੂਮੈਂਟ ਜਾਣਕਾਰੀ ਪ੍ਰਾਪਤ ਕਰਨ ਦੌਰਾਨ ਗਲਤੀ ਆਈ ਹੈ।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 109				13691	pa-IN	ਡੌਕੂਮੈਂਟ '%FILENAME' ਨੂੰ ਐਕਸਪੋਰਟ ਕਰਨ ਦੌਰਾਨ ਗਲਤੀ ਆਈ ਹੈ।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 110				13691	pa-IN	ਡੌਕੂਮੈਂਟ '%FILENAME' ਨੂੰ ਐਕਸਪੋਰਟ ਕਰਨ ਲਈ ਡਾਇਰੈਕਟਰੀ ਬਣਾਉਣ ਦੌਰਾਨ ਗਲਤੀ ਆਈ ਹੈ।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 111				13691	pa-IN	ਡੌਕੂਮੈਂਟ '%FILENAME' ਨੂੰ ਐਕਸਪੋਰਟ ਕਰਨ ਦੌਰਾਨ ਸੁਰੱਖਿਆ ਗਲਤੀ ਆਈ ਹੈ।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 112				13691	pa-IN	ਡੌਕੂਮੈਂਟ '%FILENAME' ਨੂੰ ਐਕਸਪੋਰਟ ਕਰਨ ਦੌਰਾਨ ਇੰਪੁੱਟ/ਆਉਟਪੁੱਟ ਗਲਤੀ ਆਈ ਹੈ।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 113				13691	pa-IN	ਮਾਧਿਅਮ ਫਾਇਲਾਂ ਨੂੰ ਆਰਜ਼ੀ ਡਾਇਰੈਕਟਰੀ ਵਿੱਚ ਕਾਪੀ ਕਰਨ ਦੌਰਾਨ ਗਲਤੀ ਆਈ ਹੈ।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 114				13691	pa-IN	ਵੈੱਬਸਾਈਟ ਅੱਗੇ ਦਿੱਤੇ ਟਿਕਾਣੇ ਲਈ ਖੋਲੀ ਨਹੀਂ ਜਾ ਸਕੀ: %URL				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 115				13691	pa-IN	ਅਣਜਾਣੀ ਗਲਤੀ ਆਈ ਹੈ:%ERROR				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 116				13691	pa-IN	ਫਾਇਲ ਨਾਂ ਲੈਣ ਦੌਰਾਨ ਅਣਜਾਣੀ ਗਲਤੀ ਆਈ ਹੈ: '%FILENAME' 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 117				13691	pa-IN	%FILENAME' ਇੱਕ ਫੋਲਡਰ ਹੈ।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 118				13691	pa-IN	ਵੈੱਬ ਸਹਾਇਕ ਸੈਟਿੰਗ ਲੋਡ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 119				13691	pa-IN	ਅਣਜਾਣੀ ਗਲਤੀ ਆਈ ਹੈ।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 120				13691	pa-IN	ਡੌਕੂਮੈਂਟ ਠੀਕ ਹੋਣ ਦੀ ਜਾਂਚ ਜਾਰੀ...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 121				13691	pa-IN	ਮੇਰਾ ਅਕਾਇਵ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 122				13691	pa-IN	ਜਾਣ ਪਛਾਣ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 123				13691	pa-IN	ਡੌਕੂਮੈਂਟ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 124				13691	pa-IN	ਮੇਨ ਲੇਆਉਟ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 125				13691	pa-IN	ਲੇਆਉਟ ਵੇਰਵਾ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 126				13691	pa-IN	ਸਟਾਈਲ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 127				13691	pa-IN	ਵੈੱਬ ਸਾਈਟ ਜਾਣਕਾਰੀ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 128				13691	pa-IN	ਝਲਕ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 130				13691	pa-IN	ਚੁਣੇ ਸੈਟਿੰਗ ਨੂੰ ਹਟਾਇਆ ਜਾਵੇਗਾ।\n\nਕੀ ਤੁਸੀਂ ਇਹ ਸੈਟਿੰਗ ਨੂੰ ਹਟਾਉਣਾ ਹੀ ਚਾਹੁੰਦੇ ਹੋ? 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 131				13691	pa-IN	%NUMBER ਪੇਜ਼				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 132				13691	pa-IN	%NUMBER ਸਲਾਈਡਾਂ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 133				13691	pa-IN	ਨਿਰਮਾਣ: %DATE				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 134				13691	pa-IN	ਆਖਰੀ ਸੋਧ: %DATE				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 135				13691	pa-IN	ਵੈੱਬ ਸਹਾਇਕ ਸੈਟਿੰਗ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 136				13691	pa-IN	ਬੈਕਗਰਾਊਡ ਚਿੱਤਰ:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 137				13691	pa-IN	ਆਈਕਾਨ ਸੈੱਟ:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 138				13691	pa-IN	ਆਈਕਾਨ ਸੈੱਟ ਨੂੰ HTML ਫਾਰਮੈਟ ਵਿੱਚ ਪਰਜੈੱਟੇਸ਼ਨ ਬਣਾਉਣ ਲਈ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 139				13691	pa-IN	HTML ਮੇਟਾਡਾਟਾ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +140				13691	pa-IN	ਚੁਣੋ...				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +141				13691	pa-IN	ਚੁਣੋ...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +142				13691	pa-IN	<default>				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +143				13691	pa-IN	FTP ਪਰਾਕਸੀ ਰਾਹੀਂ ਪ੍ਰਕਾਸ਼ਨ ਲਈ ਸਹਾਇਕ ਹੈ।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +144				13691	pa-IN	<ਬੈਕਗਰਾਊਂਡ ਚਿੱਤਰ ਨਹੀਂ>				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +145				13691	pa-IN	<ਆਈਕਾਨ ਸੈੱਟ ਨਹੀਂ>				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +146				13691	pa-IN	FTP ਡਾਇਰੈਕਟਰੀ '%FILENAME' ਨੂੰ ਬਣਾਇਆ ਨਹੀਂ ਜਾ ਸਕਦਾ ਹੈ।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 142				13691	pa-IN	<default>				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 143				13691	pa-IN	FTP ਪਰਾਕਸੀ ਰਾਹੀਂ ਪ੍ਰਕਾਸ਼ਨ ਲਈ ਸਹਾਇਕ ਹੈ।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 144				13691	pa-IN	<ਬੈਕਗਰਾਊਂਡ ਚਿੱਤਰ ਨਹੀਂ>				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 145				13691	pa-IN	<ਆਈਕਾਨ ਸੈੱਟ ਨਹੀਂ>				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 146				13691	pa-IN	FTP ਡਾਇਰੈਕਟਰੀ '%FILENAME' ਨੂੰ ਬਣਾਇਆ ਨਹੀਂ ਜਾ ਸਕਦਾ ਹੈ।				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +147				13691	pa-IN	FTP ਡਾਇਰੈਕਟਰੀ '%FILENAME' ਮੌਜੂਦ ਨਹੀਂ ਹੈ।\nਡਾਇਰੈਕਟਰੀ ਹੁਣੇ ਬਣਾਉਣੀ ਹੈ?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +148				13691	pa-IN	ਜ਼ਿਪ ਫਾਇਲ '%FILENAME' ਨੂੰ ਬਣਾਇਆ ਨਹੀਂ ਜਾ ਸਕਦਾ ਹੈ: ਇਸ ਨਾਂ ਨਾਲ ਡਾਇਰੈਕਟਰੀ ਪਹਿਲਾਂ ਹੀ ਮੌਜੂਦ ਹੈ।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 148				13691	pa-IN	ਜ਼ਿਪ ਫਾਇਲ '%FILENAME' ਨੂੰ ਬਣਾਇਆ ਨਹੀਂ ਜਾ ਸਕਦਾ ਹੈ: ਇਸ ਨਾਂ ਨਾਲ ਡਾਇਰੈਕਟਰੀ ਪਹਿਲਾਂ ਹੀ ਮੌਜੂਦ ਹੈ।				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +149				13691	pa-IN	ਲੋਕਲ ਡਾਇਰੈਕਟਰੀ '%FILENAME' ਬਣਾਈ ਨਹੀਂ ਜਾ ਸਕੀ ਹੈ।\nਕਿਰਪਾ ਕਰਕੇ ਆਪਣੇ ਲਿਖਣ ਅਧਿਕਾਰਾਂ ਦੀ ਪੜਤਾਲ ਕਰੋ।				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +150				13691	pa-IN	ਲੋਕਲ ਡਾਇਰੈਕਟਰੀ '%FILENAME' ਮੌਜੂਦ ਨਹੀਂ ਹੈ।\nਕੀ ਡਾਇਰੈਕਟਰੀ ਹੁਣੇ ਬਣਾਉਣੀ ਹੈ?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +151				13691	pa-IN	ਸਾਈਜ਼: %NUMBERKB				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +152				13691	pa-IN	ਫਾਇਲ ਨਹੀਂ ਲੱਭੀ ਹੈ। ਕੀ ਤੁਸੀਂ ਨਵਾਂ ਫਾਇਲ ਟਿਕਾਣਾ ਦੇਣਾ ਚਾਹੋਗੇ?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +0				13691	pa-IN	FTP ਕੁਨੈਕਸ਼ਨ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +1				13691	pa-IN	ਯੂਜ਼ਰ ਨਾਂ(~U):				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +2				13691	pa-IN	ਪਾਸਵਰਡ(~P):				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +3				13691	pa-IN	ਕੁਨੈਕਟ ਕਰੋ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +4				13691	pa-IN	1. FTP ਕੁਨੈਕਸ਼ਨ ਜਾਣਕਾਰੀ ਦਿਓ।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +5				13691	pa-IN	ਸਰਵਰ ਨਾਂ ਜਾਂ IP ਐਡਰੈੱਸ(~S):				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +6				13691	pa-IN	2. ਸਰਵਰ ਨਾਲ ਕੁਨੈਕਟ ਕਰੋ।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +7				13691	pa-IN	3.  ਰਿਮੋਟ ਡਾਇਰੈਕਟਰੀ ਚੁਣੋ (ਚੋਣਵੀਂ)।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 151				13691	pa-IN	ਸਾਈਜ਼: %NUMBERKB				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 152				13691	pa-IN	ਫਾਇਲ ਨਹੀਂ ਲੱਭੀ ਹੈ। ਕੀ ਤੁਸੀਂ ਨਵਾਂ ਫਾਇਲ ਟਿਕਾਣਾ ਦੇਣਾ ਚਾਹੋਗੇ?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 0				13691	pa-IN	FTP ਕੁਨੈਕਸ਼ਨ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 1				13691	pa-IN	ਯੂਜ਼ਰ ਨਾਂ(~U):				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 2				13691	pa-IN	ਪਾਸਵਰਡ(~P):				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 3				13691	pa-IN	ਕੁਨੈਕਟ ਕਰੋ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 4				13691	pa-IN	1. FTP ਕੁਨੈਕਸ਼ਨ ਜਾਣਕਾਰੀ ਦਿਓ।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 5				13691	pa-IN	ਸਰਵਰ ਨਾਂ ਜਾਂ IP ਐਡਰੈੱਸ(~S):				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 6				13691	pa-IN	2. ਸਰਵਰ ਨਾਲ ਕੁਨੈਕਟ ਕਰੋ।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 7				13691	pa-IN	3.  ਰਿਮੋਟ ਡਾਇਰੈਕਟਰੀ ਚੁਣੋ (ਚੋਣਵੀਂ)।				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +8				13691	pa-IN	...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +9				13691	pa-IN	ਕੁਨੈਕਸ਼ਨ ਹਾਲਤ ਅਣਜਾਣੀ ਹੈ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +10				13691	pa-IN	ਕੁਨੈਕਸ਼ਨ ਸਫਲਤਾਪੂਰਕ ਬਣਾਇਆ ਗਿਆ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +11				13691	pa-IN	ਯੂਜ਼ਰ-ਨਾਂ ਜਾਂ ਪਾਸਵਰਡ ਗਲਤ ਹੈ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +12				13691	pa-IN	ਸਰਵਰ ਨਾਂ ਹੱਲ਼ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +13				13691	pa-IN	ਤੁਹਾਨੂੰ ਲੋੜੀਦੇ ਯੂਜ਼ਰ ਅਧਿਕਾਰ ਨਹੀਂ ਹਨ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +14				13691	pa-IN	ਸਰਵਰ ਨਾਲ ਕੁਨੈਕਟ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +15				13691	pa-IN	ਅਚਾਨਕ ਗਲਤੀ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +16				13691	pa-IN	FTP ਪਰਕਾਸ਼ਨ ਡਾਇਰੈਕਟਰੀ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +17				13691	pa-IN	ਇਹ FTP ਫੋਲਡਰ ਨਹੀਂ ਹੈ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +18				13691	pa-IN	ਕੁਨੈਕਟ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +1				13691	pa-IN	ਏਜੰਡਾ ਸਹਾਇਕ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +2				13691	pa-IN	ਇਸ ਏਜੰਡਾ ਟੈਪਲੇਟ ਲਈ ਦਸਤੀ ਤਬਦੀਲੀਆਂ ਕਰੋ(~m)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 9				13691	pa-IN	ਕੁਨੈਕਸ਼ਨ ਹਾਲਤ ਅਣਜਾਣੀ ਹੈ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 10				13691	pa-IN	ਕੁਨੈਕਸ਼ਨ ਸਫਲਤਾਪੂਰਕ ਬਣਾਇਆ ਗਿਆ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 11				13691	pa-IN	ਯੂਜ਼ਰ-ਨਾਂ ਜਾਂ ਪਾਸਵਰਡ ਗਲਤ ਹੈ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 12				13691	pa-IN	ਸਰਵਰ ਨਾਂ ਹੱਲ਼ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 13				13691	pa-IN	ਤੁਹਾਨੂੰ ਲੋੜੀਦੇ ਯੂਜ਼ਰ ਅਧਿਕਾਰ ਨਹੀਂ ਹਨ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 14				13691	pa-IN	ਸਰਵਰ ਨਾਲ ਕੁਨੈਕਟ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 15				13691	pa-IN	ਅਚਾਨਕ ਗਲਤੀ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 16				13691	pa-IN	FTP ਪਰਕਾਸ਼ਨ ਡਾਇਰੈਕਟਰੀ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 17				13691	pa-IN	ਇਹ FTP ਫੋਲਡਰ ਨਹੀਂ ਹੈ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 18				13691	pa-IN	ਕੁਨੈਕਟ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 1				13691	pa-IN	ਏਜੰਡਾ ਸਹਾਇਕ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 2				13691	pa-IN	ਇਸ ਏਜੰਡਾ ਟੈਪਲੇਟ ਲਈ ਦਸਤੀ ਤਬਦੀਲੀਆਂ ਕਰੋ(~m)				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +3				13691	pa-IN	ਟੈਪਲੇਟ ਨਾਂ:				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 4				13691	pa-IN	ਟਿਕਾਣਾ ਅਤੇ ਫਾਇਲ ਨਾਂ:				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +5				13691	pa-IN	ਤੁਸੀਂ ਅੱਗੇ ਕੀ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +6				13691	pa-IN	ਕਿਰਪਾ ਕਰਕੇ ਏਜੰਡੇ ਲਈ ਪੇਜ਼ ਡਿਜ਼ਾਈਨ ਚੁਣੋ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +7				13691	pa-IN	ਕਿਰਪਾ ਕਰਕੇ ਟਾਈਟਲ ਚੁਣੋ, ਜਿਸ ਨੂੰ ਆਪਣੇ ਏਜੰਡਾ ਟੈਪਲੇਟ ਵਿੱਚ ਸ਼ਾਮਿਲ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +8				13691	pa-IN	ਕਿਰਪਾ ਕਰਕੇ ਘਟਨਾ ਲਈ ਸਧਾਰਨ ਜਾਣਕਾਰੀ ਦਿਓ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +9				13691	pa-IN	ਕਿਰਪਾ ਕਰਕੇ ਏਜੰਡੇ ਲਈ ਆਈਟਮਾਂ ਦਿਓ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +10				13691	pa-IN	ਕਿਰਪਾ ਕਰਕੇ ਨਾਂ ਚੁਣੋ, ਜਿਹਨਾਂ ਨੂੰ ਤੁਸੀਂ ਆਪਣੇ ਏਜੰਡਾ ਟੈਪਲੇਟ ਵਿੱਚ ਸ਼ਾਮਿਲ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 6				13691	pa-IN	ਕਿਰਪਾ ਕਰਕੇ ਏਜੰਡੇ ਲਈ ਪੇਜ਼ ਡਿਜ਼ਾਈਨ ਚੁਣੋ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 7				13691	pa-IN	ਕਿਰਪਾ ਕਰਕੇ ਟਾਈਟਲ ਚੁਣੋ, ਜਿਸ ਨੂੰ ਆਪਣੇ ਏਜੰਡਾ ਟੈਪਲੇਟ ਵਿੱਚ ਸ਼ਾਮਿਲ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 8				13691	pa-IN	ਕਿਰਪਾ ਕਰਕੇ ਘਟਨਾ ਲਈ ਸਧਾਰਨ ਜਾਣਕਾਰੀ ਦਿਓ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 9				13691	pa-IN	ਕਿਰਪਾ ਕਰਕੇ ਏਜੰਡੇ ਲਈ ਆਈਟਮਾਂ ਦਿਓ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 10				13691	pa-IN	ਕਿਰਪਾ ਕਰਕੇ ਨਾਂ ਚੁਣੋ, ਜਿਹਨਾਂ ਨੂੰ ਤੁਸੀਂ ਆਪਣੇ ਏਜੰਡਾ ਟੈਪਲੇਟ ਵਿੱਚ ਸ਼ਾਮਿਲ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ।				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +11				13691	pa-IN	ਟੈਪਲੇਟ ਲਈ ਨਾਂ ਦਿਓ ਅਤੇ ਸੰਭਾਲੋ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +12				13691	pa-IN	ਰਿਕਾਰਡ ਮਿੰਟ ਲਈ ਫਾਰਮ ਸ਼ਾਮਿਲ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +13				13691	pa-IN	ਇਹ ਸਹਾਇਕ ਤੁਹਾਨੂੰ ਇੱਕ ਏਜੰਡਾ ਟੈਪਲੇਟ ਬਣਾਉਣ ਲਈ ਸਹਾਇਕ ਹੈ। ਟੈਪਲੇਟ ਨੂੰ ਬਾਅਦ ਵਿੱਚ ਲੋੜ ਸਮੇਂ ਏਜੰਡਾ ਬਣਾਉਣ ਲਈ ਵਰਤਿਆ ਜਾ ਸਕਦਾ ਹੈ।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +14				13691	pa-IN	ਟਾਈਮ:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 12				13691	pa-IN	ਰਿਕਾਰਡ ਮਿੰਟ ਲਈ ਫਾਰਮ ਸ਼ਾਮਿਲ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 13				13691	pa-IN	ਇਹ ਸਹਾਇਕ ਤੁਹਾਨੂੰ ਇੱਕ ਏਜੰਡਾ ਟੈਪਲੇਟ ਬਣਾਉਣ ਲਈ ਸਹਾਇਕ ਹੈ। ਟੈਪਲੇਟ ਨੂੰ ਬਾਅਦ ਵਿੱਚ ਲੋੜ ਸਮੇਂ ਏਜੰਡਾ ਬਣਾਉਣ ਲਈ ਵਰਤਿਆ ਜਾ ਸਕਦਾ ਹੈ।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 14				13691	pa-IN	ਟਾਈਮ:				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +15				13691	pa-IN	ਨਾਂ:				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 16				13691	pa-IN	ਟਿਕਾਣਾ:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +17				13691	pa-IN	ਖਾਲੀ ਖੇਤਰਾਂ ਲਈ ਥਾਂ ਵਰਤੇ ਜਾਣਗੇ। ਤੁਸੀਂ ਥਾਂਵਾਂ ਨਾਲ ਪਾਠ ਬਾਅਦ ਵਿੱਚ ਇਸਤੇਮਾਲ ਕਰ ਸਕਦੇ ਹੋ।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 17				13691	pa-IN	ਖਾਲੀ ਖੇਤਰਾਂ ਲਈ ਥਾਂ ਵਰਤੇ ਜਾਣਗੇ। ਤੁਸੀਂ ਥਾਂਵਾਂ ਨਾਲ ਪਾਠ ਬਾਅਦ ਵਿੱਚ ਇਸਤੇਮਾਲ ਕਰ ਸਕਦੇ ਹੋ।				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +18				13691	pa-IN	...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +19				13691	pa-IN	ਇਸ ਟੈਪਲੇਟ ਤੋਂ ਨਵਾਂ ਏਜੰਡਾ ਬਣਾਓ(~a)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +20				13691	pa-IN	ਟੈਪਲੇਟ ਤੋਂ ਨਵਾਂ ਏਜੰਡਾ ਬਣਾਉਣ ਲਈ, ਟੈਪਲੇਟ ਦੇ ਟਿਕਾਣੇ ਤੇ ਜਾਓ ਅਤੇ ਫਾਇਲ ਨੂੰ ਦੋ ਵਾਰ ਦਬਾਓ।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +21				13691	pa-IN	ਏਜੰਡਾ ਆਈਟਮ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +22				13691	pa-IN	ਜ਼ਿੰਮੇਵਾਰ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +23				13691	pa-IN	ਅੰਤਰਾਲ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 19				13691	pa-IN	ਇਸ ਟੈਪਲੇਟ ਤੋਂ ਨਵਾਂ ਏਜੰਡਾ ਬਣਾਓ(~a)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 20				13691	pa-IN	ਟੈਪਲੇਟ ਤੋਂ ਨਵਾਂ ਏਜੰਡਾ ਬਣਾਉਣ ਲਈ, ਟੈਪਲੇਟ ਦੇ ਟਿਕਾਣੇ ਤੇ ਜਾਓ ਅਤੇ ਫਾਇਲ ਨੂੰ ਦੋ ਵਾਰ ਦਬਾਓ।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 21				13691	pa-IN	ਏਜੰਡਾ ਆਈਟਮ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 22				13691	pa-IN	ਜ਼ਿੰਮੇਵਾਰ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 23				13691	pa-IN	ਅੰਤਰਾਲ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +24				13691	pa-IN	ਮੀਟਿੰਗ ਸੱਦੀ ਹੈ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +25				13691	pa-IN	ਚੇਅਰਮੈਨ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +26				13691	pa-IN	ਮਿੰਟ ਕੀਪਰ				2002-02-02 02:02:02
@@ -8886,30 +8886,30 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +27
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +28				13691	pa-IN	ਪ੍ਰਤੀਨਿਧ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +29				13691	pa-IN	ਦਰਸ਼ਕ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +30				13691	pa-IN	ਅਮਲਾ ਸਹੂਲਤ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +31				13691	pa-IN	ਏਜੰਡਾ ਟੈਪਲੇਟ ਚੁਣੇ ਲੋਕਾਂ ਦੇ ਨਾਂ ਕਿਸੇ ਥਾਂ ਵਿੱਚ ਸ਼ਾਮਿਲ ਕਰ ਸਕਦਾ ਹੈ। ਜਦੋਂ ਟੈਪਲੇਟ ਤੋਂ ਏਜੰਡਾ ਤੁਸੀਂ ਬਣਾਉਣਾ ਹੋਵੇ ਤਾਂ ਤੁਸੀਂ ਇਹਨਾਂ ਥਾਵਾਂ ਨੂੰ ਠੀਕ ਨਾਂਵਾਂ ਨਾਲ ਤਬਦੀਲ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 31				13691	pa-IN	ਏਜੰਡਾ ਟੈਪਲੇਟ ਚੁਣੇ ਲੋਕਾਂ ਦੇ ਨਾਂ ਕਿਸੇ ਥਾਂ ਵਿੱਚ ਸ਼ਾਮਿਲ ਕਰ ਸਕਦਾ ਹੈ। ਜਦੋਂ ਟੈਪਲੇਟ ਤੋਂ ਏਜੰਡਾ ਤੁਸੀਂ ਬਣਾਉਣਾ ਹੋਵੇ ਤਾਂ ਤੁਸੀਂ ਇਹਨਾਂ ਥਾਵਾਂ ਨੂੰ ਠੀਕ ਨਾਂਵਾਂ ਨਾਲ ਤਬਦੀਲ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +32				13691	pa-IN	ਮੀਟਿੰਗ ਦੀ ਟਾਈਪ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +33				13691	pa-IN	ਪੜ੍ਹੋ ਜੀ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +34				13691	pa-IN	ਲਿਆਓ ਜੀ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +35				13691	pa-IN	ਨੋਟਿਸ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +36				13691	pa-IN	ਚੁਣੀਆਂ ਆਈਟਮਾਂ ਲਈ ਏਜੰਡਾ ਟੈਪਲੇਟ ਨੂੰ ਥਾਂ-ਟਿਕਾਣੇ ਲਈ ਸ਼ਾਮਿਲ ਕੀਤਾ ਜਾਵੇਗਾ।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 36				13691	pa-IN	ਚੁਣੀਆਂ ਆਈਟਮਾਂ ਲਈ ਏਜੰਡਾ ਟੈਪਲੇਟ ਨੂੰ ਥਾਂ-ਟਿਕਾਣੇ ਲਈ ਸ਼ਾਮਿਲ ਕੀਤਾ ਜਾਵੇਗਾ।				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +38				13691	pa-IN	ਮਿਤੀ:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +39				13691	pa-IN	ਇਹ ਸਹਾਇਕ ਤੁਹਾਨੂੰ ਟੈਪਲੇਟ ਏਜੰਡਾ ਬਣਾਉਣ ਲਈ ਸਹਾਇਕ ਹੈ, ਜੋ ਕਿ ਤੁਹਾਨੂੰ ਇੱਕੋ ਜਿਹੇ ਢਾਂਚੇ ਵਾਲੇ ਅਤੇ ਸੈਟਿੰਗ ਵਾਲੇ ਟੈਪਲੇਟ ਬਣਾਉਣ ਲਈ ਸਹਾਇਕ ਹੈ।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +40				13691	pa-IN	ਪੇਜ਼ ਡਿਜ਼ਾਈਨ:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +41				13691	pa-IN	myAgendaTemplate.stw				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +42				13691	pa-IN	ਮੇਰਾ ਏਜੰਡਾ ਟੈਪਲੇਟ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +43				13691	pa-IN	ਏਜੰਡਾ ਟੈਪਲੇਟ ਸੰਭਾਲਣ ਦੌਰਾਨ ਗਲਤੀ ਆਈ ਹੈ।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +44				13691	pa-IN	ਨਾਂ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +45				13691	pa-IN	ਮਿਤੀ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +46				13691	pa-IN	ਟਾਈਮ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 39				13691	pa-IN	ਇਹ ਸਹਾਇਕ ਤੁਹਾਨੂੰ ਟੈਪਲੇਟ ਏਜੰਡਾ ਬਣਾਉਣ ਲਈ ਸਹਾਇਕ ਹੈ, ਜੋ ਕਿ ਤੁਹਾਨੂੰ ਇੱਕੋ ਜਿਹੇ ਢਾਂਚੇ ਵਾਲੇ ਅਤੇ ਸੈਟਿੰਗ ਵਾਲੇ ਟੈਪਲੇਟ ਬਣਾਉਣ ਲਈ ਸਹਾਇਕ ਹੈ।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 40				13691	pa-IN	ਪੇਜ਼ ਡਿਜ਼ਾਈਨ:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 41				13691	pa-IN	myAgendaTemplate.stw				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 42				13691	pa-IN	ਮੇਰਾ ਏਜੰਡਾ ਟੈਪਲੇਟ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 43				13691	pa-IN	ਏਜੰਡਾ ਟੈਪਲੇਟ ਸੰਭਾਲਣ ਦੌਰਾਨ ਗਲਤੀ ਆਈ ਹੈ।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 44				13691	pa-IN	ਨਾਂ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 45				13691	pa-IN	ਮਿਤੀ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 46				13691	pa-IN	ਟਾਈਮ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 47				13691	pa-IN	ਟਿਕਾਣਾ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +48				13691	pa-IN	ਇਹ ਟੈਕਸਟ ਤਬਦੀਲ ਕਰਨ ਲਈ ਦਬਾਓ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 48				13691	pa-IN	ਇਹ ਟੈਕਸਟ ਤਬਦੀਲ ਕਰਨ ਲਈ ਦਬਾਓ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +50				13691	pa-IN	ਪੇਜ਼ ਡਿਜ਼ਾਈਨ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +51				13691	pa-IN	ਸਧਾਰਨ ਜਾਣਕਾਰੀ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +52				13691	pa-IN	ਸ਼ਾਮਿਲ ਕਰਨ ਲਈ ਹੈਡਿੰਗ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +53				13691	pa-IN	ਨਾਂ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +54				13691	pa-IN	ਏਜੰਡਾ ਆਈਟਮਾਂ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 51				13691	pa-IN	ਸਧਾਰਨ ਜਾਣਕਾਰੀ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 52				13691	pa-IN	ਸ਼ਾਮਿਲ ਕਰਨ ਲਈ ਹੈਡਿੰਗ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 53				13691	pa-IN	ਨਾਂ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 54				13691	pa-IN	ਏਜੰਡਾ ਆਈਟਮਾਂ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +55				13691	pa-IN	ਨਾਂ ਅਤੇ ਟਿਕਾਣਾ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +56				13691	pa-IN	ਏਜੰਡਾ ਟੈਪਲੇਟ ਖੋਲਣ ਦੌਰਾਨ ਅਣਜਾਣੀ ਗਲਤੀ ਆਈ ਹੈ।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 56				13691	pa-IN	ਏਜੰਡਾ ਟੈਪਲੇਟ ਖੋਲਣ ਦੌਰਾਨ ਅਣਜਾਣੀ ਗਲਤੀ ਆਈ ਹੈ।				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +57				13691	pa-IN	ਮੀਟਿੰਗ ਦੀ ਟਾਈਪ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +58				13691	pa-IN	ਲਿਆਓ ਜੀ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +59				13691	pa-IN	ਪੜ੍ਹੋ ਜੀ				2002-02-02 02:02:02
@@ -8921,10 +8921,10 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +64
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +65				13691	pa-IN	ਮਾਡਰੇਟਰ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +66				13691	pa-IN	ਦਰਸ਼ਕ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +67				13691	pa-IN	ਅਮਲਾ ਸਹੂਲਤ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +68				13691	pa-IN	ਸ਼ਾਮਿਲ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +69				13691	pa-IN	ਹਟਾਓ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +70				13691	pa-IN	ਉੱਤੇ ਭੇਜੋ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +71				13691	pa-IN	ਹੇਠਾਂ ਭੇਜੋ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 68				13691	pa-IN	ਸ਼ਾਮਿਲ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 69				13691	pa-IN	ਹਟਾਓ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 70				13691	pa-IN	ਉੱਤੇ ਭੇਜੋ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 71				13691	pa-IN	ਹੇਠਾਂ ਭੇਜੋ				2002-02-02 02:02:02
 wizards	source\schedule\schedule.src	0	string	dlgCalTitle				13691	pa-IN	%PRODUCTNAME ਕੈਲੰਡਰ				2002-02-02 02:02:02
 wizards	source\schedule\schedule.src	0	string	dlgCalTitleBack				13691	pa-IN	ਪਿੱਛੇ				2002-02-02 02:02:02
 wizards	source\schedule\schedule.src	0	string	dlgCalTitleOwnData				13691	pa-IN	ਨਿੱਜੀ ਡਾਟਾ				2002-02-02 02:02:02
@@ -9046,8 +9046,8 @@ wizards	source\euro\euro.src	0	string	CURRENCIES + 12				13691	pa-IN	ਸਲੋ�
 wizards	source\euro\euro.src	0	string	CURRENCIES + 13				13691	pa-IN	Cypriot Pound				2002-02-02 02:02:02
 wizards	source\euro\euro.src	0	string	CURRENCIES + 14				13691	pa-IN	Maltese Lira				2002-02-02 02:02:02
 wizards	source\euro\euro.src	0	string	CURRENCIES + 15				13691	pa-IN	Slovak Koruna				2002-02-02 02:02:02
-wizards	source\euro\euro.src	0	string	CURRENCIES + 16				13691	pa-IN	ਡੌਕੂਮੈਟ ਲਈ ਮੁਦਰਾ ਸੈੱਟ ਯੂਰਪੀ ਮੁਦਰਾ ਨਹੀਂ ਹੈ!				2002-02-02 02:02:02
-wizards	source\euro\euro.src	0	string	CURRENCIES + 17				13691	pa-IN	ਤੁਹਾਡੇ ਓਪਰੇਟਿੰਗ ਸਿਸਟਮ ਲਈ ਭਾਸ਼ਾ ਸੈੱਟ ਉਹ ਨਹੀਂ ਹੈ, ਜੋ ਕਿ ਯੂਰਪੀ ਮੁਦਰਾ ਯੂਨੀਅਨ ਦੀ ਭਾਸ਼ਾ ਹੈ।				2002-02-02 02:02:02
+wizards	source\euro\euro.src	0	string	CURRENCIES + 21				13691	pa-IN	ਡੌਕੂਮੈਟ ਲਈ ਮੁਦਰਾ ਸੈੱਟ ਯੂਰਪੀ ਮੁਦਰਾ ਨਹੀਂ ਹੈ!				2002-02-02 02:02:02
+wizards	source\euro\euro.src	0	string	CURRENCIES + 22				13691	pa-IN	ਤੁਹਾਡੇ ਓਪਰੇਟਿੰਗ ਸਿਸਟਮ ਲਈ ਭਾਸ਼ਾ ਸੈੱਟ ਉਹ ਨਹੀਂ ਹੈ, ਜੋ ਕਿ ਯੂਰਪੀ ਮੁਦਰਾ ਯੂਨੀਅਨ ਦੀ ਭਾਸ਼ਾ ਹੈ।				2002-02-02 02:02:02
 wizards	source\euro\euro.src	0	string	STEP_LASTPAGE				13691	pa-IN	ਤਰੱਕੀ				2002-02-02 02:02:02
 wizards	source\euro\euro.src	0	string	STEP_LASTPAGE + 1				13691	pa-IN	ਅਨੁਸਾਰੀ ਡੌਕੂਮੈਂਟਾਂ ਨੂੰ ਪ੍ਰਾਪਤ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ...				2002-02-02 02:02:02
 wizards	source\euro\euro.src	0	string	STEP_LASTPAGE + 2				13691	pa-IN	ਡੌਕੂਮੈਂਟ ਤਬਦੀਲ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ...				2002-02-02 02:02:02
@@ -19799,11 +19799,11 @@ sw	source\ui\ribbar\inputwin.src	0	toolboxitem	TB_INPUT	FN_FORMULA_CALC	FN_FORMU
 sw	source\ui\ribbar\inputwin.src	0	toolboxitem	TB_INPUT	FN_FORMULA_CANCEL	FN_FORMULA_CANCEL		13691	pa-IN	ਰੱਦ ਕਰੋ				2002-02-02 02:02:02
 sw	source\ui\ribbar\inputwin.src	0	toolboxitem	TB_INPUT	FN_FORMULA_APPLY	FN_FORMULA_APPLY		13691	pa-IN	ਲਾਗੂ ਕਰੋ				2002-02-02 02:02:02
 sw	source\ui\ribbar\tblctrl.src	0	floatingwindow	RID_TBL_OPT_CTRL		HID_TBL_OPT_CTRL		13691	pa-IN	ਅਨੁਕੂਲ				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_PAGE			13691	pa-IN	ਪੇਜ਼				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_PARAGRAPH			13691	pa-IN	ਪ੍ਹੈਰਾ				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_AT_CHAR			13691	pa-IN	ਅੱਖਰ ਤੋਂ				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_CHAR			13691	pa-IN	ਅੱਖਰ ਵਾਂਗ				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_FRAME			13691	pa-IN	ਫਰੇਮ				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_PAGE			13691	pa-IN	ਪੇਜ਼				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_PARAGRAPH			13691	pa-IN	ਪ੍ਹੈਰਾ				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_AT_CHAR			13691	pa-IN	ਅੱਖਰ ਤੋਂ				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_CHAR			13691	pa-IN	ਅੱਖਰ ਵਾਂਗ				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_FRAME			13691	pa-IN	ਫਰੇਮ				2002-02-02 02:02:02
 sw	source\ui\ribbar\workctrl.src	0	floatingwindow	RID_INSERT_CTRL		HID_INSERT_CTRL		13691	pa-IN	ਸ਼ਾਮਲ				2002-02-02 02:02:02
 sw	source\ui\ribbar\workctrl.src	0	floatingwindow	RID_INSERT_OBJ_CTRL		HID_INSERT_OBJ_CTRL		13691	pa-IN	ਇਕਾਈ ਸ਼ਾਮਲ				2002-02-02 02:02:02
 sw	source\ui\ribbar\workctrl.src	0	menuitem	RID_INSERT_FIELD_CTRL	FN_INSERT_FLD_DATE	FN_INSERT_FLD_DATE		13691	pa-IN	ਮਿਤੀ				2002-02-02 02:02:02
@@ -21181,7 +21181,7 @@ sw	source\ui\app\app.src	0	string	STR_WRITER_DOCUMENT_FULLTYPE				13691	pa-IN	%P
 sw	source\ui\app\app.src	0	string	STR_CANTOPEN				13691	pa-IN	ਡੌਕੂਮੈਂਟ ਨੂੰ ਖੋਲਿਆ ਨਹੀਂ ਜਾ ਸਕਦਾ ਹੈ।				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_CANTCREATE				13691	pa-IN	ਡੌਕੂਮੈਂਟ ਬਣਾਇਆ ਨਹੀਂ ਜਾ ਸਕਦਾ ਹੈ।				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_DLLNOTFOUND				13691	pa-IN	ਫਿਲਟਰ ਨਹੀਂ ਲੱਭਾ ਹੈ।				2002-02-02 02:02:02
-sw	source\ui\app\app.src	0	string	STR_UNBENANNT				13691	pa-IN	ਬਿਨਾਂ ਨਾਂ				2002-02-02 02:02:02
+sw	source\ui\app\app.src	0	string	STR_UNTITLED				13691	pa-IN	ਬਿਨਾਂ ਨਾਂ				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_LOAD_GLOBAL_DOC				13691	pa-IN	ਮਾਸਟਰ ਡੌਕੂਮੈਂਟ ਦਾ ਨਾਂ ਤੇ ਮਾਰਗ				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_LOAD_HTML_DOC				13691	pa-IN	HTML ਡੌਕੂਮੈਂਟ ਦਾ ਨਾਂ ਤੇ ਪਾਥ				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	infobox	MSG_ERROR_SEND_MAIL				13691	pa-IN	ਪੱਤਰ ਭੇਜਣ ਦੌਰਾਨ ਗਲਤੀ ਹੈ।				2002-02-02 02:02:02
@@ -22515,7 +22515,7 @@ sw	source\ui\docvw\docvw.src	0	string	STR_REDLINE_FORMAT				13691	pa-IN	ਫਾ�
 sw	source\ui\docvw\docvw.src	0	string	STR_REDLINE_TABLE				13691	pa-IN	ਟੇਬਲ ਤਬਦੀਲ				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_REDLINE_FMTCOLL				13691	pa-IN	ਪ੍ਹੈਰਾ ਸਟਾਈਲ ਲਾਗੂ				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_ENDNOTE				13691	pa-IN	ਅੰਤਲੇਖ: 				2002-02-02 02:02:02
-sw	source\ui\docvw\docvw.src	0	string	STR_FTNNOTE				13691	pa-IN	ਫੁੱਟਨੋਟ: 				2002-02-02 02:02:02
+sw	source\ui\docvw\docvw.src	0	string	STR_FOOTNOTE				13691	pa-IN	ਫੁੱਟਨੋਟ: 				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	infobox	MSG_READONLY_CONTENT				13691	pa-IN	ਪੜਨਯੋਗ ਸਮੱਗਰੀ ਤਬਦੀਲ ਨਹੀਂ ਕੀਤੀ ਜਾ ਸਕਦੀ ਹੈ।\nਕਈ ਤਬਦੀਲੀ ਸਵੀਕਾਰ ਨਹੀਂ ਕੀਤੀ ਜਾਵੇਗੀ।				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_TABLE_COL_ADJUST				13691	pa-IN	ਟੇਬਲ ਕਾਲਮ ਅਨੁਕੂਲ				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_TABLE_ROW_ADJUST				13691	pa-IN	ਟੇਬਲ ਕਤਾਰ ਅਨੁਕੂਲ				2002-02-02 02:02:02

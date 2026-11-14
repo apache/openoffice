@@ -31,7 +31,7 @@
 #include <com/sun/star/uno/Reference.hxx>
 #include "scdllapi.h"
 
-#include <hash_map>
+#include <unordered_map>
 
 class ImageList;
 class Bitmap;

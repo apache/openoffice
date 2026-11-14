@@ -57,9 +57,9 @@ executeCookieDialog(Window * pParent, CntHTTPCookieRequest & rRequest)
     {
         vos::OGuard aGuard(Application::GetSolarMutex());
 
-        std::auto_ptr< ResMgr > xManager(
+        std::unique_ptr< ResMgr > xManager(
             ResMgr::CreateResMgr(CREATEVERSIONRESMGR_NAME(uui)));
-        std::auto_ptr< CookiesDialog > xDialog(
+        std::unique_ptr< CookiesDialog > xDialog(
             new CookiesDialog(pParent, &rRequest, xManager.get()));
         xDialog->Execute();
     }
@@ -83,7 +83,7 @@ handleCookiesRequest_(
     {
         try
         {
-            std::auto_ptr< CntHTTPCookie > xCookie(new CntHTTPCookie);
+            std::unique_ptr< CntHTTPCookie > xCookie(new CntHTTPCookie);
             xCookie->m_aName = UniString(rRequest.Cookies[i].Name);
             xCookie->m_aValue = UniString(rRequest.Cookies[i].Value);
             xCookie->m_aDomain = UniString(rRequest.Cookies[i].Domain);

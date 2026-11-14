@@ -1,3 +1,22 @@
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License.
+-->
+
 # ODF validation harness
 
 This harness has OpenOffice save a corpus of documents as ODF, checks every
@@ -35,6 +54,7 @@ The schemas are not committed because they carry OASIS copyright terms.
     python3 -I report.py runs/base_strict/val.json baseline/strict.kinds.json 12
 
 The steps:
+
 - `make-jobs.sh` collects the test documents under `main/` (doc, docx, rtf,
   xls, ppt, sx*, od*).
 - `drive.sh <ext|strict> <port> <jobs> <done>` saves them in ODF
@@ -145,6 +165,8 @@ that ran passed.
   without an export change (volatile Calc formulas, redline timestamps, the
   `0238` loader order, the intermittent Basic library loss of `0048`). A new
   entry needs a reason.
+- `baseline/` holds kinds for `ext`, `strict`, `x14` and an empty `v14`; there is none for `v13` or `x13`, so a first gate
+  with those modes needs `--prev`.
 - The first fixtures run has nothing to compare with: its mismatch pattern is
   only recorded. By design, strict, ODF 1.0 and ODF 1.1 mode fail the 14
   reload rows that need gradient or transparency fills.

@@ -77,7 +77,7 @@ public:
 private:
     const cssu::Reference<cssdf::XResourceId> mxResourceId;
     // Using auto_ptr because it has release(), what scoped_ptr doesn't.
-    ::std::auto_ptr< ::Window> mpControl;
+    ::std::unique_ptr< ::Window> mpControl;
 
     DECL_LINK(WindowEventHandler,VclWindowEvent*);
 };

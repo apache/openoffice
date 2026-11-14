@@ -37,7 +37,7 @@
 #include <com/sun/star/ucb/XSimpleFileAccess.hpp>
 #include <osl/process.h>
 #include <rtl/string.hxx>
-#include <hash_set>
+#include <unordered_set>
 #include <assert.h>
 #include <cppuhelper/implbase2.hxx>
 #include <com/sun/star/embed/XTransactedObject.hpp>
@@ -70,7 +70,7 @@ struct ScannerTestServiceHelper
 	}
 };
 
-typedef ::std::hash_set< ::rtl::OString, ScannerTestServiceHelper, ScannerTestServiceHelper > ScannerTestServiceTokenMap;
+typedef ::std::unordered_set< ::rtl::OString, ScannerTestServiceHelper, ScannerTestServiceHelper > ScannerTestServiceTokenMap;
 
 class MyRtfScannerHandler : public writerfilter::rtftok::RTFScannerHandler
 {

@@ -230,7 +230,7 @@ namespace basctl
         Reference< XModel >             m_xDocument;
         Reference< XModifiable >        m_xDocModify;
         Reference< XEmbeddedScripts >   m_xScriptAccess;
-        ::std::auto_ptr< DocumentEventNotifier >
+        ::std::unique_ptr< DocumentEventNotifier >
                                         m_pDocListener;
 
     public:
@@ -1190,8 +1190,11 @@ namespace basctl
     //--------------------------------------------------------------------
     namespace
     {
-        struct DocumentTitleLess : public ::std::binary_function< ScriptDocument, ScriptDocument, bool >
+        struct DocumentTitleLess
         {
+            typedef ScriptDocument first_argument_type;
+            typedef ScriptDocument second_argument_type;
+            typedef bool result_type;
             DocumentTitleLess( const CollatorWrapper& _rCollator )
                 :m_aCollator( _rCollator )
             {

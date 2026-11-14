@@ -406,7 +406,7 @@ private:
 
 	css::uno::Reference< css::media::XPlayer > mxPlayer;
 
-	::std::auto_ptr<PaneHider> mpPaneHider;
+	::std::unique_ptr<PaneHider> mpPaneHider;
 
 	sal_uLong	mnEndShowEvent;
 	sal_uLong	mnContextMenuEvent;

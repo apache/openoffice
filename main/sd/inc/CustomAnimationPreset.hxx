@@ -35,12 +35,12 @@
 #endif
 #include <CustomAnimationEffect.hxx>
 
-#include <hash_map>
+#include <unordered_map>
 
 namespace sd {
 
-typedef std::hash_map< rtl::OUString, CustomAnimationEffectPtr, comphelper::UStringHash, comphelper::UStringEqual > EffectsSubTypeMap;
-typedef std::hash_map< rtl::OUString, rtl::OUString, comphelper::UStringHash, comphelper::UStringEqual > UStringMap;
+typedef std::unordered_map< rtl::OUString, CustomAnimationEffectPtr, comphelper::UStringHash, comphelper::UStringEqual > EffectsSubTypeMap;
+typedef std::unordered_map< rtl::OUString, rtl::OUString, comphelper::UStringHash, comphelper::UStringEqual > UStringMap;
 typedef std::vector< rtl::OUString > UStringList;
 
 class CustomAnimationPreset
@@ -79,7 +79,7 @@ private:
 };
 
 typedef boost::shared_ptr< CustomAnimationPreset > CustomAnimationPresetPtr;
-typedef std::hash_map<rtl::OUString, CustomAnimationPresetPtr, comphelper::UStringHash, comphelper::UStringEqual> EffectDescriptorMap;
+typedef std::unordered_map<rtl::OUString, CustomAnimationPresetPtr, comphelper::UStringHash, comphelper::UStringEqual> EffectDescriptorMap;
 typedef std::vector< CustomAnimationPresetPtr > EffectDescriptorList;
 
 struct PresetCategory

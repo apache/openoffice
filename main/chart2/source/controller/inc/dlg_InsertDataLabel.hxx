@@ -48,7 +48,7 @@ private:
 	OKButton			m_aBtnOK;
 	CancelButton		m_aBtnCancel;
 	HelpButton			m_aBtnHelp;
-    ::std::auto_ptr< DataLabelResources >    m_apDataLabelResources;
+    ::std::unique_ptr< DataLabelResources >    m_apDataLabelResources;
 
 	const SfxItemSet&	m_rInAttrs;
 

@@ -31,7 +31,9 @@ namespace comphelper {
 /// @internal
 namespace detail {
 /// @internal
-template <typename T> struct ReleaseFunc : ::std::unary_function<T *, void> {
+template <typename T> struct ReleaseFunc {
+    typedef T * argument_type;
+    typedef void result_type;
     void operator()( T * p ) const { p->release(); }
 };
 } // namespace detail

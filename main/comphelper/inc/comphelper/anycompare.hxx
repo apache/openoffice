@@ -54,8 +54,11 @@ namespace comphelper
 	//==================================================================================================================
 	//= LessPredicateAdapter
 	//==================================================================================================================
-    struct LessPredicateAdapter : public ::std::binary_function< ::com::sun::star::uno::Any, ::com::sun::star::uno::Any, bool >
+    struct LessPredicateAdapter
     {
+        typedef ::com::sun::star::uno::Any first_argument_type;
+        typedef ::com::sun::star::uno::Any second_argument_type;
+        typedef bool result_type;
         LessPredicateAdapter( const IKeyPredicateLess& _predicate )
             :m_predicate( _predicate )
         {
@@ -210,7 +213,7 @@ namespace comphelper
             a default implementation of IKeyPredicateLess, which is able to compare values of the given type. If no
             such default implementation is known for the given type, then <NULL/> is returned.
     */
-    ::std::auto_ptr< IKeyPredicateLess > COMPHELPER_DLLPUBLIC
+    ::std::unique_ptr< IKeyPredicateLess > COMPHELPER_DLLPUBLIC
         getStandardLessPredicate(
             ::com::sun::star::uno::Type const & i_type,
             ::com::sun::star::uno::Reference< ::com::sun::star::i18n::XCollator > const & i_collator

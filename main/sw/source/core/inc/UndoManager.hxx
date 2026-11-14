@@ -40,7 +40,7 @@ class UndoManager
 {
 public:
 
-    UndoManager(::std::auto_ptr<SwNodes> pUndoNodes,
+    UndoManager(::std::unique_ptr<SwNodes> pUndoNodes,
         IDocumentDrawModelAccess & rDrawModelAccess,
         IDocumentRedlineAccess & rRedlineAccess,
         IDocumentState & rState);
@@ -94,7 +94,7 @@ private:
     IDocumentState & m_rState;
 
     /// Undo nodes array: content not currently in document
-    ::std::auto_ptr<SwNodes> m_pUndoNodes;
+    ::std::unique_ptr<SwNodes> m_pUndoNodes;
 
     bool m_bGroupUndo       : 1;    // TRUE: Undo grouping enabled
     bool m_bDrawUndo        : 1;    // TRUE: Draw Undo enabled

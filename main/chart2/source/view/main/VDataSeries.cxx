@@ -191,16 +191,16 @@ VDataSeries::VDataSeries( const uno::Reference< XDataSeries >& xDataSeries )
 
     , m_nGlobalSeriesIndex(0)
 
-    , m_apLabel_Series(NULL)
-    , m_apLabelPropNames_Series(NULL)
-    , m_apLabelPropValues_Series(NULL)
-    , m_apSymbolProperties_Series(NULL)
+    , m_apLabel_Series()
+    , m_apLabelPropNames_Series()
+    , m_apLabelPropValues_Series()
+    , m_apSymbolProperties_Series()
 
-    , m_apLabel_AttributedPoint(NULL)
-    , m_apLabelPropNames_AttributedPoint(NULL)
-    , m_apLabelPropValues_AttributedPoint(NULL)
-    , m_apSymbolProperties_AttributedPoint(NULL)
-    , m_apSymbolProperties_InvisibleSymbolForSelection(NULL)
+    , m_apLabel_AttributedPoint()
+    , m_apLabelPropNames_AttributedPoint()
+    , m_apLabelPropValues_AttributedPoint()
+    , m_apSymbolProperties_AttributedPoint()
+    , m_apSymbolProperties_InvisibleSymbolForSelection()
     , m_nCurrentAttributedPoint(-1)
     , m_nMissingValueTreatment(::com::sun::star::chart::MissingValueTreatment::LEAVE_GAP)
     , m_bAllowPercentValueInDataLabel(false)
@@ -738,10 +738,10 @@ double VDataSeries::getYMeanValue() const
     return m_fYMeanValue;
 }
 
-::std::auto_ptr< Symbol > getSymbolPropertiesFromPropertySet(
+::std::unique_ptr< Symbol > getSymbolPropertiesFromPropertySet(
         const uno::Reference< beans::XPropertySet >& xProp )
 {
-    ::std::auto_ptr< Symbol > apSymbolProps( new Symbol() );
+    ::std::unique_ptr< Symbol > apSymbolProps( new Symbol() );
     try
     {
         if( xProp->getPropertyValue( C2U( "Symbol" ) ) >>= *apSymbolProps )
@@ -780,7 +780,7 @@ Symbol* VDataSeries::getSymbolProperties( sal_Int32 index ) const
             {
                 if(!m_apSymbolProperties_InvisibleSymbolForSelection.get())
                 {
-                    m_apSymbolProperties_InvisibleSymbolForSelection = ::std::auto_ptr< Symbol >( new Symbol() );
+                    m_apSymbolProperties_InvisibleSymbolForSelection = ::std::unique_ptr< Symbol >( new Symbol() );
                     m_apSymbolProperties_InvisibleSymbolForSelection->Style = SymbolStyle_STANDARD;
                     m_apSymbolProperties_InvisibleSymbolForSelection->StandardSymbol = 0;//square
                     m_apSymbolProperties_InvisibleSymbolForSelection->Size = m_apSymbolProperties_Series->Size;
@@ -872,10 +872,10 @@ uno::Reference< beans::XPropertySet > VDataSeries::getPropertiesOfSeries() const
     return  uno::Reference<beans::XPropertySet>(m_xDataSeries, uno::UNO_QUERY );
 }
 
-::std::auto_ptr< DataPointLabel > getDataPointLabelFromPropertySet(
+::std::unique_ptr< DataPointLabel > getDataPointLabelFromPropertySet(
         const uno::Reference< beans::XPropertySet >& xProp )
 {
-    ::std::auto_ptr< DataPointLabel > apLabel( new DataPointLabel() );
+    ::std::unique_ptr< DataPointLabel > apLabel( new DataPointLabel() );
     try
     {
         if( !(xProp->getPropertyValue( C2U( "Label" ) ) >>= *apLabel) )
@@ -949,8 +949,8 @@ bool VDataSeries::getTextLabelMultiPropertyLists( sal_Int32 index
             pPropValues = new tAnySequence();
             xTextProp.set( this->getPropertiesOfPoint( index ));
             PropertyMapper::getTextLabelMultiPropertyLists( xTextProp, *pPropNames, *pPropValues );
-            m_apLabelPropNames_AttributedPoint = ::std::auto_ptr< tNameSequence >(pPropNames);
-            m_apLabelPropValues_AttributedPoint = ::std::auto_ptr< tAnySequence >(pPropValues);
+            m_apLabelPropNames_AttributedPoint = ::std::unique_ptr< tNameSequence >(pPropNames);
+            m_apLabelPropValues_AttributedPoint = ::std::unique_ptr< tAnySequence >(pPropValues);
             bDoDynamicFontResize = true;
         }
         pPropNames = m_apLabelPropNames_AttributedPoint.get();
@@ -964,8 +964,8 @@ bool VDataSeries::getTextLabelMultiPropertyLists( sal_Int32 index
             pPropValues = new tAnySequence();
             xTextProp.set( this->getPropertiesOfPoint( index ));
             PropertyMapper::getTextLabelMultiPropertyLists( xTextProp, *pPropNames, *pPropValues );
-            m_apLabelPropNames_Series = ::std::auto_ptr< tNameSequence >(pPropNames);
-            m_apLabelPropValues_Series = ::std::auto_ptr< tAnySequence >(pPropValues);
+            m_apLabelPropNames_Series = ::std::unique_ptr< tNameSequence >(pPropNames);
+            m_apLabelPropValues_Series = ::std::unique_ptr< tAnySequence >(pPropValues);
             bDoDynamicFontResize = true;
         }
         pPropNames = m_apLabelPropNames_Series.get();

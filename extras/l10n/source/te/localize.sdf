@@ -4264,8 +4264,8 @@ formula	source\core\resource\core_resource.src	0	string	RID_STRLIST_FUNCTION_NAM
 formula	source\core\resource\core_resource.src	0	string	RID_STRLIST_FUNCTION_NAMES	SC_OPCODE_ERROR_NA			0	te	#N/A				2002-02-02 02:02:02
 formula	source\ui\dlg\parawin.src	0	#define	RB_ARGBLOCK( y )				13	te	-		ఎంపిక		2002-02-02 02:02:02
 formula	source\ui\dlg\parawin.src	0	fixedtext	RID_FORMULATAB_PARAMETER	FT_EDITDESC			198	te	కార్యము తెలియదు				2002-02-02 02:02:02
-formula	source\ui\dlg\parawin.src	0	string	RID_FORMULATAB_PARAMETER	STR_OPTIONAL			8	te	(ఇచ్ఛాపూర్వక)				2002-02-02 02:02:02
-formula	source\ui\dlg\parawin.src	0	string	RID_FORMULATAB_PARAMETER	STR_REQUIRED			8	te	(అవసరమైన)				2002-02-02 02:02:02
+formula	source\ui\dlg\parawin.src	0	string	RID_FORMULATAB_PARAMETER.FT_ARG1.FT_ARG2.FT_ARG3.FT_ARG4	STR_OPTIONAL			8	te	(ఇచ్ఛాపూర్వక)				2002-02-02 02:02:02
+formula	source\ui\dlg\parawin.src	0	string	RID_FORMULATAB_PARAMETER.FT_ARG1.FT_ARG2.FT_ARG3.FT_ARG4	STR_REQUIRED			8	te	(అవసరమైన)				2002-02-02 02:02:02
 formula	source\ui\dlg\formdlgs.src	0	stringlist	RID_FORMULATAB_FUNCTION.LB_CATEGORY	1			0	te	వెనుకగా వినియోగించినది				2002-02-02 02:02:02
 formula	source\ui\dlg\formdlgs.src	0	stringlist	RID_FORMULATAB_FUNCTION.LB_CATEGORY	2			0	te	అన్ని				2002-02-02 02:02:02
 formula	source\ui\dlg\formdlgs.src	0	fixedtext	RID_FORMULATAB_FUNCTION	FT_CATEGORY			84	te	విభాగము (~C)				2002-02-02 02:02:02
@@ -4372,8 +4372,8 @@ wizards	source\euro\euro.src	0	string	CURRENCIES + 12				0	te	సాల్వే
 wizards	source\euro\euro.src	0	string	CURRENCIES + 13				0	te	సైప్రియాట్ పౌండ్				2002-02-02 02:02:02
 wizards	source\euro\euro.src	0	string	CURRENCIES + 14				0	te	మాల్టీజ్ లిరా				2002-02-02 02:02:02
 wizards	source\euro\euro.src	0	string	CURRENCIES + 15				0	te	స్లోవక్ కౌరునా				2002-02-02 02:02:02
-wizards	source\euro\euro.src	0	string	CURRENCIES + 16				0	te	ఈ పత్రపు  ద్రవ్యం సమితి యూరోపియన్ ద్రవ్యం కాదు఍!				2002-02-02 02:02:02
-wizards	source\euro\euro.src	0	string	CURRENCIES + 17				0	te	మీ కార్యవ్యవస్థ యొక్క భాష యూరోపియన్ మానిటరి సంఘం భాష కాదు.				2002-02-02 02:02:02
+wizards	source\euro\euro.src	0	string	CURRENCIES + 21				0	te	ఈ పత్రపు  ద్రవ్యం సమితి యూరోపియన్ ద్రవ్యం కాదు఍!				2002-02-02 02:02:02
+wizards	source\euro\euro.src	0	string	CURRENCIES + 22				0	te	మీ కార్యవ్యవస్థ యొక్క భాష యూరోపియన్ మానిటరి సంఘం భాష కాదు.				2002-02-02 02:02:02
 wizards	source\euro\euro.src	0	string	STEP_LASTPAGE				0	te	పురోగమనము				2002-02-02 02:02:02
 wizards	source\euro\euro.src	0	string	STEP_LASTPAGE + 1				0	te	సంబదిత పత్రములను తీసుకొనుట...				2002-02-02 02:02:02
 wizards	source\euro\euro.src	0	string	STEP_LASTPAGE + 2				0	te	పత్రములను పరివర్తించుట...				2002-02-02 02:02:02
@@ -4819,77 +4819,77 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_FAXWIZARDROADMAP_START + 2		
 wizards	source\formwizard\dbwizres.src	0	string	RID_FAXWIZARDROADMAP_START + 3				0	te	పంపువాడు మరియు గ్రహీత				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_FAXWIZARDROADMAP_START + 4				0	te	భూమిక				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_FAXWIZARDROADMAP_START + 5				0	te	నామము మరియు స్థానము				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +1				0	te	వెబ్ విజార్డ్				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +2				0	te	ఈ వల విజార్డ్ ఇంటర్నెట్ నందు పత్రములను ప్రచురించుటకు మీకు సహాయపడును.\n\nఇది పత్రములను పరివర్తించును కావున ఇవి వల అన్వేషిణి ద్వారా చూడబడతాయి.ఇంకా, సారముల పట్టిక పుటమును జోడింపులతో సులువుగా పత్రములను ప్రవేశించునట్లు ఇది విడుదలచేయును.వల విజార్డ్ కూడా మీ వెబ్ సైట్ యొక్క నమూనాను మరియు కూర్పును మలుచుకొనుటకు అనుమతించును.\n\nఏ సమయములో అయిననూ మీ పత్రములను ఎప్పటికప్పుడు వెబ్ లో ప్రచురించుటకు మరియు పత్రములను కూడుటకు లేదా తొలగించుటకు సహకరించును.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +4				0	te	(~D) తొలగించుము				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +5				0	te	ఉపోద్ఘాతము				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +6				0	te	ప్రచురించు పత్రములను ఎంచుకో				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +8				0	te	పత్ర సమాచారము				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +9				0	te	శీర్షిక (~T):				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +10				0	te	సారాంశము (~S):				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +11				0	te	మూలకర్త (~t):				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +12				0	te	దస్త్ర రూపకముగా ఎగుమతి (~E):				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +13				0	te	మీ వెబ్ సైట్ కై సర్వసామాన్యమైన సమాచారమును ప్రవేశపెట్టు				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 1				0	te	వెబ్ విజార్డ్				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 2				0	te	ఈ వల విజార్డ్ ఇంటర్నెట్ నందు పత్రములను ప్రచురించుటకు మీకు సహాయపడును.\n\nఇది పత్రములను పరివర్తించును కావున ఇవి వల అన్వేషిణి ద్వారా చూడబడతాయి.ఇంకా, సారముల పట్టిక పుటమును జోడింపులతో సులువుగా పత్రములను ప్రవేశించునట్లు ఇది విడుదలచేయును.వల విజార్డ్ కూడా మీ వెబ్ సైట్ యొక్క నమూనాను మరియు కూర్పును మలుచుకొనుటకు అనుమతించును.\n\nఏ సమయములో అయిననూ మీ పత్రములను ఎప్పటికప్పుడు వెబ్ లో ప్రచురించుటకు మరియు పత్రములను కూడుటకు లేదా తొలగించుటకు సహకరించును.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 4				0	te	(~D) తొలగించుము				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 5				0	te	ఉపోద్ఘాతము				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 6				0	te	ప్రచురించు పత్రములను ఎంచుకో				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 8				0	te	పత్ర సమాచారము				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 9				0	te	శీర్షిక (~T):				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 10				0	te	సారాంశము (~S):				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 11				0	te	మూలకర్త (~t):				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 12				0	te	దస్త్ర రూపకముగా ఎగుమతి (~E):				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 13				0	te	మీ వెబ్ సైట్ కై సర్వసామాన్యమైన సమాచారమును ప్రవేశపెట్టు				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +14				0	te	శీర్షిక:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +16				0	te	వివరణ:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +18				0	te	నిర్మించబడినది:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +20				0	te	ఇ-తపాలా:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +21				0	te	నకలు హక్కు సూచన:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +22				0	te	మార్చబడినది:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +24				0	te	ఉపదర్శనం (~P)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +25				0	te	మీ వెబ్ సైట్ ను ఎక్కడ ప్రచురించాలనుకుంటున్నారు?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +26				0	te	కొత్త వెబ్ సైట్ ను ప్రచురించు:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +27				0	te	స్థానిక సంచయంనకు (~l)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 16				0	te	వివరణ:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 18				0	te	నిర్మించబడినది:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 20				0	te	ఇ-తపాలా:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 21				0	te	నకలు హక్కు సూచన:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 22				0	te	మార్చబడినది:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 24				0	te	ఉపదర్శనం (~P)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 25				0	te	మీ వెబ్ సైట్ ను ఎక్కడ ప్రచురించాలనుకుంటున్నారు?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 26				0	te	కొత్త వెబ్ సైట్ ను ప్రచురించు:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 27				0	te	స్థానిక సంచయంనకు (~l)				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +28				0	te	...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +29				0	te	వెబ్ సేవికకు వయా ఎఫ్ టి పి (~w)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +31				0	te	రూపకరణ... (~C)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +32				0	te	జిప్ సంగ్రహనకు (~a)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 29				0	te	వెబ్ సేవికకు వయా ఎఫ్ టి పి (~w)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 31				0	te	రూపకరణ... (~C)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 32				0	te	జిప్ సంగ్రహనకు (~a)				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +33				0	te	...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +34				0	te	అమరికలను దాచు(సిఫారసుచేయబడినది) (~S)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +35				0	te	దాచు (~a):				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +36				0	te	వెబ్ విజార్డ్ కై అమరికలను ఎంచుకో (~C)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +37				0	te	వెబ్ సైట్ సారం				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +38				0	te	జతచేయి... (~A)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +39				0	te	తీసివేయు (~v)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +40				0	te	మీ వెబ్ సైట్ యొక్క సారముల పట్టిక కై కూర్పును ఎంచుకో				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +41				0	te	సారముల పట్టిక పుటకై శైలిని ఎంచుకో				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +42				0	te	శైలి (~S):				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +48				0	te	కూర్పులు (~L):				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +50				0	te	వివరణ (~D)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +51				0	te	గ్రంథకర్త (~A)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +52				0	te	సృష్టించిన తేదీ (~e)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +53				0	te	ఆఖరిసారిగా మార్చిన తేదీ (~L)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +54				0	te	దస్త్రనామము (~F)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +55				0	te	దస్త్రరూపలావణ్యము (~t)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +56				0	te	దస్త్రరూపలావణ్య ప్రతిమ (~i)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +57				0	te	పుటల సంఖ్య (~o)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +58				0	te	పరిమాణము కేబీ లలో (~S)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +59				0	te	మీ అన్వేషిణిలో ఉపదర్శనం చూచుటకు 'ఉపదర్శనం'ను క్లిక్ చేయు:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +60				0	te	ఎంచుకున్న కూర్పును మలుచుకొనుట				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +61				0	te	సారముల పట్టికలోని ప్రతీ పత్రములో క్రింది సమాచారము కలిగియుండును:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +62				0	te	తెర  స్థైర్యముకై ఆశావాద కూర్పు:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +64				0	te	~640x480				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +65				0	te	~800x600				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +66				0	te	~1024x768				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +70				0	te	మీ వెబ్ సైట్ ను ఉత్పత్తిచేయు				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +71				0	te	%START - %END/%TOTAL				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +72				0	te	నా వెబ్ సైట్				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +73				0	te	ఎఫ్ టి పి లక్ష్యము'%FILENAME' అనేది దస్త్రము.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +74				0	te	స్థానిక లక్ష్యము'%FILENAME' అనేది దస్త్రము.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +75				0	te	జిప్ లక్ష్యము'%FILENAME' మునుపే కలదు.ఉన్నటువంటి లక్ష్యమును చెరిపిరాయాలనుకుంటున్నారా?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +76				0	te	ఎఫ్ టి పి లక్ష్యము'%FILENAME' ఖళీగా లేదు.కొన్ని దస్త్రములు చెరిపిరాయాబడినవి.మీరు కొనసాగాలనుకుంటున్నారా?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +77				0	te	స్థానిక లక్ష్యము'%FILENAME' ఖళీగా లేదు.కొన్ని దస్త్రములు చెరిపిరాయాబడినవి.మీరు కొనసాగాలనుకుంటున్నారా?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +78				0	te	ఇచ్చినటువంటి నామమునందు అమరికలు కలవు. ఉన్నటువంటి అమరికలు మీరు చెరిపిరాయాలనుకుంటున్నారా?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +79				0	te	ఎగుమతిచేయు పత్రములు...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +80				0	te	ఎగుమతికి సిద్దపరచు...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +81				0	te	కూర్పు దస్త్రములు నకలు...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +82				0	te	సారముల పట్టిక ఉత్పత్తిచేయుటకు సిద్దపరచు... 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +83				0	te	సారముల పట్టిక ఉత్పత్తిచేయు...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +84				0	te	సంసిద్ధపరుచట...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +86				0	te	ప్రచురణకు సిద్దపరచు...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +87				0	te	స్థానిక వివరణ ను ప్రచురణ...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +88				0	te	ఎఫ్ టి పి గమ్యమును ప్రచురణ...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +89				0	te	జిప్ పంగ్రహణమును ప్రచురణ...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 34				0	te	అమరికలను దాచు(సిఫారసుచేయబడినది) (~S)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 35				0	te	దాచు (~a):				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 36				0	te	వెబ్ విజార్డ్ కై అమరికలను ఎంచుకో (~C)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 37				0	te	వెబ్ సైట్ సారం				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 38				0	te	జతచేయి... (~A)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 39				0	te	తీసివేయు (~v)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 40				0	te	మీ వెబ్ సైట్ యొక్క సారముల పట్టిక కై కూర్పును ఎంచుకో				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 41				0	te	సారముల పట్టిక పుటకై శైలిని ఎంచుకో				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 42				0	te	శైలి (~S):				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 48				0	te	కూర్పులు (~L):				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 50				0	te	వివరణ (~D)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 51				0	te	గ్రంథకర్త (~A)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 52				0	te	సృష్టించిన తేదీ (~e)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 53				0	te	ఆఖరిసారిగా మార్చిన తేదీ (~L)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 54				0	te	దస్త్రనామము (~F)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 55				0	te	దస్త్రరూపలావణ్యము (~t)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 56				0	te	దస్త్రరూపలావణ్య ప్రతిమ (~i)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 57				0	te	పుటల సంఖ్య (~o)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 58				0	te	పరిమాణము కేబీ లలో (~S)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 59				0	te	మీ అన్వేషిణిలో ఉపదర్శనం చూచుటకు 'ఉపదర్శనం'ను క్లిక్ చేయు:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 60				0	te	ఎంచుకున్న కూర్పును మలుచుకొనుట				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 61				0	te	సారముల పట్టికలోని ప్రతీ పత్రములో క్రింది సమాచారము కలిగియుండును:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 62				0	te	తెర  స్థైర్యముకై ఆశావాద కూర్పు:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 64				0	te	~640x480				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 65				0	te	~800x600				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 66				0	te	~1024x768				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 70				0	te	మీ వెబ్ సైట్ ను ఉత్పత్తిచేయు				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 71				0	te	%START - %END/%TOTAL				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 72				0	te	నా వెబ్ సైట్				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 73				0	te	ఎఫ్ టి పి లక్ష్యము'%FILENAME' అనేది దస్త్రము.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 74				0	te	స్థానిక లక్ష్యము'%FILENAME' అనేది దస్త్రము.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 75				0	te	జిప్ లక్ష్యము'%FILENAME' మునుపే కలదు.ఉన్నటువంటి లక్ష్యమును చెరిపిరాయాలనుకుంటున్నారా?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 76				0	te	ఎఫ్ టి పి లక్ష్యము'%FILENAME' ఖళీగా లేదు.కొన్ని దస్త్రములు చెరిపిరాయాబడినవి.మీరు కొనసాగాలనుకుంటున్నారా?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 77				0	te	స్థానిక లక్ష్యము'%FILENAME' ఖళీగా లేదు.కొన్ని దస్త్రములు చెరిపిరాయాబడినవి.మీరు కొనసాగాలనుకుంటున్నారా?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 78				0	te	ఇచ్చినటువంటి నామమునందు అమరికలు కలవు. ఉన్నటువంటి అమరికలు మీరు చెరిపిరాయాలనుకుంటున్నారా?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 79				0	te	ఎగుమతిచేయు పత్రములు...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 80				0	te	ఎగుమతికి సిద్దపరచు...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 81				0	te	కూర్పు దస్త్రములు నకలు...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 82				0	te	సారముల పట్టిక ఉత్పత్తిచేయుటకు సిద్దపరచు... 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 83				0	te	సారముల పట్టిక ఉత్పత్తిచేయు...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 84				0	te	సంసిద్ధపరుచట...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 86				0	te	ప్రచురణకు సిద్దపరచు...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 87				0	te	స్థానిక వివరణ ను ప్రచురణ...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 88				0	te	ఎఫ్ టి పి గమ్యమును ప్రచురణ...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 89				0	te	జిప్ పంగ్రహణమును ప్రచురణ...				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 90				0	te	ముగింపు...				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 94				0	te	చిత్రరూప దస్త్రములు				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 95				0	te	అన్ని దస్త్రములు				2002-02-02 02:02:02
@@ -4898,98 +4898,98 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 98		
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 99				0	te	పూర్వ రంగపు చిత్రములను ఎంచుకో:				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 100				0	te	ప్రతిమల సమితులు				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 101				0	te	ప్రతిమల సమితిని ఎంచుకో:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +102				0	te	ఇతర...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +103				0	te	ఏదీ కాదు				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +104				0	te	మీ వెబ్ సైట్ విజయవంతముగా సృష్టించబడినది: %FILENAME				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +105				0	te	వెబ్ సైట్ ను ఉత్పత్తి చేయునపుడు ఒకటి లేదా ఎక్కువ దోషములు ఎదురైనవి.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +106				0	te	సారముల పట్టిక పుట(లు) ఉత్పత్తి చేయునపుడు దోషము ఎదురైనది.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +107				0	te	కూర్పు దస్త్రములను నకలు చేయునపుడు దోషము ఎదురైనది.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +108				0	te	'%FILENAME'కొరకు పత్ర సమాచారమును సేకరించునపుడు దోషము ఎదురైనది.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +109				0	te	'%FILENAME' అను పత్రమును ఎగుమతి చేయునపుడు దోషము ఎదురైనది.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +110				0	te	'%FILENAME'ను ఎగుమతిచేయుటకై వివరణను సృష్టించునపుడు దోషము ఎదురైనది.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +111				0	te	'%FILENAME'అను పత్రమును ఎగుమతిచేయునపుడు రక్షణా దోషము ఎదురైనది.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +112				0	te	'%FILENAME'అను పత్రమును ఎగుమతిచేయునపుడు ఎగుమతి/దిగుమతి దోషము ఎదురైనది.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +113				0	te	మాధ్యమిక దస్త్రములను తాత్కాలిక వివరణకు నకలు చేయునపుడు దోషము ఎదురైనది.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +114				0	te	వెబ్ సైట్ ఈ క్రింది గమ్యమునకు నకలుచేయబడదు:%URL				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +115				0	te	అనుకోని దోషము ఎదురైనది:%ERROR				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +116				0	te	'%FILENAME' అను దస్త్రమును విలువనిచ్చునపుడు అనుకోని దోషము ఎదురైనది				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +117				0	te	'%FILENAME' అనునది సంచయము.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +118				0	te	వెబ్ విజార్డ్ అమరికల దిగుమతి...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +119				0	te	అనుకోని దోషము ఎదురైనది.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +120				0	te	పత్రముల విలువగట్టు...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +121				0	te	నా సంగ్రహం				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +122				0	te	ఉపోద్ఘాతము				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +123				0	te	పత్రములు				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +124				0	te	ముఖ్య కూర్పు				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +125				0	te	కూర్పు వివరములు				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +126				0	te	శైలి				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +127				0	te	వెబ్ సైట్ సమాచారము				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +128				0	te	ఉపదర్శనం				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +130				0	te	ఎంచుకున్న అమరికలు తొలగించడమైనది.\n\nఈ అమరికలను నిజంగానే తొలగించాలనుకుంటున్నారా?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +131				0	te	%NUMBER పుటలు				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +132				0	te	%NUMBER స్లైడ్లు				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +133				0	te	సృష్టించిబడినది:%DATE				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +134				0	te	చివరిసారిగా మార్చబడినది:%DATE				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +135				0	te	వెబ్ విజార్డ్ ల అమరికలు				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +136				0	te	పూర్వరంగపు చిత్రము:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +137				0	te	ప్రతిమ సమితి:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +138				0	te	హెచ్  టిఎంఎల్ రూపకంలో సమర్పణల కొరకు  ప్రతిమ సమితి ఉపయోగపడును. 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +139				0	te	హెచ్  టిఎంఎల్  మెటాడాటా				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 102				0	te	ఇతర...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 103				0	te	ఏదీ కాదు				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 104				0	te	మీ వెబ్ సైట్ విజయవంతముగా సృష్టించబడినది: %FILENAME				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 105				0	te	వెబ్ సైట్ ను ఉత్పత్తి చేయునపుడు ఒకటి లేదా ఎక్కువ దోషములు ఎదురైనవి.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 106				0	te	సారముల పట్టిక పుట(లు) ఉత్పత్తి చేయునపుడు దోషము ఎదురైనది.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 107				0	te	కూర్పు దస్త్రములను నకలు చేయునపుడు దోషము ఎదురైనది.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 108				0	te	'%FILENAME'కొరకు పత్ర సమాచారమును సేకరించునపుడు దోషము ఎదురైనది.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 109				0	te	'%FILENAME' అను పత్రమును ఎగుమతి చేయునపుడు దోషము ఎదురైనది.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 110				0	te	'%FILENAME'ను ఎగుమతిచేయుటకై వివరణను సృష్టించునపుడు దోషము ఎదురైనది.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 111				0	te	'%FILENAME'అను పత్రమును ఎగుమతిచేయునపుడు రక్షణా దోషము ఎదురైనది.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 112				0	te	'%FILENAME'అను పత్రమును ఎగుమతిచేయునపుడు ఎగుమతి/దిగుమతి దోషము ఎదురైనది.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 113				0	te	మాధ్యమిక దస్త్రములను తాత్కాలిక వివరణకు నకలు చేయునపుడు దోషము ఎదురైనది.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 114				0	te	వెబ్ సైట్ ఈ క్రింది గమ్యమునకు నకలుచేయబడదు:%URL				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 115				0	te	అనుకోని దోషము ఎదురైనది:%ERROR				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 116				0	te	'%FILENAME' అను దస్త్రమును విలువనిచ్చునపుడు అనుకోని దోషము ఎదురైనది				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 117				0	te	'%FILENAME' అనునది సంచయము.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 118				0	te	వెబ్ విజార్డ్ అమరికల దిగుమతి...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 119				0	te	అనుకోని దోషము ఎదురైనది.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 120				0	te	పత్రముల విలువగట్టు...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 121				0	te	నా సంగ్రహం				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 122				0	te	ఉపోద్ఘాతము				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 123				0	te	పత్రములు				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 124				0	te	ముఖ్య కూర్పు				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 125				0	te	కూర్పు వివరములు				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 126				0	te	శైలి				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 127				0	te	వెబ్ సైట్ సమాచారము				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 128				0	te	ఉపదర్శనం				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 130				0	te	ఎంచుకున్న అమరికలు తొలగించడమైనది.\n\nఈ అమరికలను నిజంగానే తొలగించాలనుకుంటున్నారా?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 131				0	te	%NUMBER పుటలు				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 132				0	te	%NUMBER స్లైడ్లు				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 133				0	te	సృష్టించిబడినది:%DATE				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 134				0	te	చివరిసారిగా మార్చబడినది:%DATE				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 135				0	te	వెబ్ విజార్డ్ ల అమరికలు				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 136				0	te	పూర్వరంగపు చిత్రము:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 137				0	te	ప్రతిమ సమితి:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 138				0	te	హెచ్  టిఎంఎల్ రూపకంలో సమర్పణల కొరకు  ప్రతిమ సమితి ఉపయోగపడును. 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 139				0	te	హెచ్  టిఎంఎల్  మెటాడాటా				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +140				0	te	యెంచుకొను...				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +141				0	te	యెంచుకొను...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +142				0	te	<అప్రమేయం>				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +143				0	te	ప్రచురణ వయా ఎఫ్ టి పి ప్రాతినిధ్యత సహకరించదు.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +144				0	te	<పూర్వరంగ చిత్రములు లేవు>				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +145				0	te	<ప్రతిమ సమితి లేదు>				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +146				0	te	'%FILENAME' అను ఎఫ్ టి పి దస్త్రము సృష్టించబడదు				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 142				0	te	<అప్రమేయం>				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 143				0	te	ప్రచురణ వయా ఎఫ్ టి పి ప్రాతినిధ్యత సహకరించదు.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 144				0	te	<పూర్వరంగ చిత్రములు లేవు>				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 145				0	te	<ప్రతిమ సమితి లేదు>				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 146				0	te	'%FILENAME' అను ఎఫ్ టి పి దస్త్రము సృష్టించబడదు				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +147				0	te	'%FILENAME' అను ఎఫ్ టి పి దస్త్రము లేదు.\nవివరణను సృష్టించాలా?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +148				0	te	'%FILENAME' అను జిప్ దస్త్రము సృష్టించబడదు: అదే నామముతోగల వివరణ కలదు.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 148				0	te	'%FILENAME' అను జిప్ దస్త్రము సృష్టించబడదు: అదే నామముతోగల వివరణ కలదు.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +149				0	te	'%FILENAME' అను స్థానిక వివరణ సృష్టించబడదు.\nవ్రాత-అర్హతను తనిఖీ చేసుకో				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +150				0	te	'%FILENAME' అను స్థానిక వివరణ లేదు.\nవివరణను సృష్టించాలా?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +151				0	te	పరిమాణము:%NUMBERKB				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +152				0	te	దస్త్రము దొరకలేదు.కొత్త దస్త్రము స్థానమును నిర్దేశించెదరా?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +0				0	te	ఎఫ్ టి పి బంధం				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +1				0	te	వినియోగదారుని నామము (~U):				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +2				0	te	రహస్య పదం (~P):				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +3				0	te	కలుపుట				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +4				0	te	1.ఎఫ్ టి పి బంధం సమాచారమును ప్రవేశపెట్టుము.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +5				0	te	సేవిక నామము లేదా ఐపి చిరునామా (~S):				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +6				0	te	2.సేవికకు కలుపు.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +7				0	te	3. దూరముగానున్న వివరణను ఎంచుకో(ఇచ్ఛాపూర్వకం) (~C).				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 151				0	te	పరిమాణము:%NUMBERKB				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 152				0	te	దస్త్రము దొరకలేదు.కొత్త దస్త్రము స్థానమును నిర్దేశించెదరా?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 0				0	te	ఎఫ్ టి పి బంధం				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 1				0	te	వినియోగదారుని నామము (~U):				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 2				0	te	రహస్య పదం (~P):				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 3				0	te	కలుపుట				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 4				0	te	1.ఎఫ్ టి పి బంధం సమాచారమును ప్రవేశపెట్టుము.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 5				0	te	సేవిక నామము లేదా ఐపి చిరునామా (~S):				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 6				0	te	2.సేవికకు కలుపు.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 7				0	te	3. దూరముగానున్న వివరణను ఎంచుకో(ఇచ్ఛాపూర్వకం) (~C).				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +8				0	te	...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +9				0	te	బంధం స్థాయి తెలియనిది				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +10				0	te	బంధం విజయవంతముగా నిర్మించబడినది				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +11				0	te	వినియోగదారుని నామము లేదా రహస్య పదం తప్పు				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +12				0	te	సేవికా నామము పరిష్కరించబడదు				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +13				0	te	మీకు సరిపడు వినియోగదారుని అర్హతలు లేవు				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +14				0	te	సేవికకు బందించబడలేదు				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +15				0	te	అనుకోని దోషము				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +16				0	te	ఎఫ్ టి పి ప్రచురణా వివరణ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +17				0	te	ఇది ఎఫ్ టి పి సంచయం కాదు				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +18				0	te	భందించు...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +1				0	te	కార్యక్రమాల పట్టీ విజార్డ్				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +2				0	te	ఈ కార్యక్రమాల పట్టీ మాదిరి చేతిమార్పులు చేయుము (~m)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 9				0	te	బంధం స్థాయి తెలియనిది				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 10				0	te	బంధం విజయవంతముగా నిర్మించబడినది				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 11				0	te	వినియోగదారుని నామము లేదా రహస్య పదం తప్పు				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 12				0	te	సేవికా నామము పరిష్కరించబడదు				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 13				0	te	మీకు సరిపడు వినియోగదారుని అర్హతలు లేవు				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 14				0	te	సేవికకు బందించబడలేదు				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 15				0	te	అనుకోని దోషము				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 16				0	te	ఎఫ్ టి పి ప్రచురణా వివరణ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 17				0	te	ఇది ఎఫ్ టి పి సంచయం కాదు				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 18				0	te	భందించు...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 1				0	te	కార్యక్రమాల పట్టీ విజార్డ్				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 2				0	te	ఈ కార్యక్రమాల పట్టీ మాదిరి చేతిమార్పులు చేయుము (~m)				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +3				0	te	మాదిరి నామము:				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 4				0	te	స్థానము మరియు ఫైలు నామము:				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +5				0	te	మీరు తరువాత ఏమి చేద్దామని అనుకొనుచున్నారు?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +6				0	te	కార్యక్రమాల పట్టీ కై దయచేసి పుట నమూనాను ఎంచుకో				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +7				0	te	మీ కార్యక్రమాల పట్టీ మాదిరిలో ఎంచుకున్న పీఠికలను దయచేసి కలుపుకో				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +8				0	te	ఘటనకై సాధారణ సమాచారమును ప్రవేశపెట్టుము				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +9				0	te	కార్యక్రమాల పట్టీ కై దయచేసి అంశములను నిర్దేశించు				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +10				0	te	మీ కార్యక్రమాల పట్టీ మాదిరిలో ఎంచుకున్న నామములను దయచేసి కలుపుకో				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 6				0	te	కార్యక్రమాల పట్టీ కై దయచేసి పుట నమూనాను ఎంచుకో				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 7				0	te	మీ కార్యక్రమాల పట్టీ మాదిరిలో ఎంచుకున్న పీఠికలను దయచేసి కలుపుకో				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 8				0	te	ఘటనకై సాధారణ సమాచారమును ప్రవేశపెట్టుము				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 9				0	te	కార్యక్రమాల పట్టీ కై దయచేసి అంశములను నిర్దేశించు				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 10				0	te	మీ కార్యక్రమాల పట్టీ మాదిరిలో ఎంచుకున్న నామములను దయచేసి కలుపుకో				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +11				0	te	ఒక నామమును ఎంచుకొని మాదిరిని దాయుము.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +12				0	te	నిముషములను దాచుటకు ఫారమును కలుపుకొనవలెను				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +13				0	te	ఈ విజార్డ్ కార్యక్రమాల పట్టీ మాదిరిను సృష్టించుటకు సహాయపడును. అవసరమైనప్పుడు అంతా కార్యక్రమాల పట్టీను సృష్టించుటకు ఉపయోగపడును.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +14				0	te	సమయము:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 12				0	te	నిముషములను దాచుటకు ఫారమును కలుపుకొనవలెను				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 13				0	te	ఈ విజార్డ్ కార్యక్రమాల పట్టీ మాదిరిను సృష్టించుటకు సహాయపడును. అవసరమైనప్పుడు అంతా కార్యక్రమాల పట్టీను సృష్టించుటకు ఉపయోగపడును.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 14				0	te	సమయము:				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +15				0	te	నామము:				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 16				0	te	స్థానము:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +17				0	te	స్థల అధినేతలు ఖళీ క్షేత్రములలో ఉపయోగపడును.తరువాత మీరు స్థల అధినేతలను పాఠం తో పునఃస్థాపించ్చును				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 17				0	te	స్థల అధినేతలు ఖళీ క్షేత్రములలో ఉపయోగపడును.తరువాత మీరు స్థల అధినేతలను పాఠం తో పునఃస్థాపించ్చును				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +18				0	te	...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +19				0	te	ఈ మాదిరి నుండి కార్యక్రమాల పట్టీను సృష్టంచు (~a)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +20				0	te	మాదిరినుండి కాకుండా కొత్త కార్యక్రమాల పట్టీను నిర్మించుటకు, మీరు మాదిరిను బద్రపరిచిన స్థానముకు వెల్లుము మరియు దస్త్రమును రెండింతలు క్లిక్ చేయుము.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +21				0	te	కార్యక్రమాల పట్టీ అంశములు				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +22				0	te	ఉత్తరవాదిఅయిన				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +23				0	te	వ్యవధి				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 19				0	te	ఈ మాదిరి నుండి కార్యక్రమాల పట్టీను సృష్టంచు (~a)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 20				0	te	మాదిరినుండి కాకుండా కొత్త కార్యక్రమాల పట్టీను నిర్మించుటకు, మీరు మాదిరిను బద్రపరిచిన స్థానముకు వెల్లుము మరియు దస్త్రమును రెండింతలు క్లిక్ చేయుము.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 21				0	te	కార్యక్రమాల పట్టీ అంశములు				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 22				0	te	ఉత్తరవాదిఅయిన				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 23				0	te	వ్యవధి				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +24				0	te	వీరి ద్వారా పిలువబడిన సమావేశము				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +25				0	te	ముఖ్యవ్యక్తి				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +26				0	te	మైన్యూట్ కీపర్				2002-02-02 02:02:02
@@ -4997,30 +4997,30 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +27
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +28				0	te	హాజరైనవారు				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +29				0	te	గమనించువారు				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +30				0	te	సదుపాయాలు చూచువారు				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +31				0	te	ఎంచుకున్న ప్రజలకై స్థల అధినేతలు కలిగియున్న కార్యక్రమాల పట్టీ మాదిరి.ఎప్పుడయితే మాదిరి నుండి కార్యక్రమాల పటీను సృష్టించారు, సరిపోవు నామములతో స్థల అధినేతలను మార్చవచ్చు.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 31				0	te	ఎంచుకున్న ప్రజలకై స్థల అధినేతలు కలిగియున్న కార్యక్రమాల పట్టీ మాదిరి.ఎప్పుడయితే మాదిరి నుండి కార్యక్రమాల పటీను సృష్టించారు, సరిపోవు నామములతో స్థల అధినేతలను మార్చవచ్చు.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +32				0	te	సమావేశము రకము				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +33				0	te	దయచేసి చదువుము				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +34				0	te	దయచేసి తెచ్చుకొనుము				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +35				0	te	గమనికలు				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +36				0	te	కార్యక్రమాల పట్టీ మాదిరి ఎంచుకున్నటువంటి అంశములకు స్థల అధినేతలను కలుపుకొనును.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 36				0	te	కార్యక్రమాల పట్టీ మాదిరి ఎంచుకున్నటువంటి అంశములకు స్థల అధినేతలను కలుపుకొనును.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +38				0	te	తేది:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +39				0	te	ఈ విజార్డ్ కార్యక్రమాల పట్టీ నిర్మించును అది అదేవిధంగా ఉన్నటువంటి కూర్పు మరియు అమరికలు కల్గిన కార్యక్రమాల పట్టీ నిర్మించును.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +40				0	te	పుట నమూనా:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +41				0	te	నా కార్యక్రమాల పట్టీ మాదిరి.ఎస్ టిడబ్ల్యు				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +42				0	te	నా కార్యక్రమాల పట్టీ మాదిరి				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +43				0	te	కార్యక్రమాల పట్టీ మాదిరిని దాచునప్పుడు అనుకోని దోషము ఎదురైనది.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +44				0	te	నామము				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +45				0	te	తేది				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +46				0	te	సమయము				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 39				0	te	ఈ విజార్డ్ కార్యక్రమాల పట్టీ నిర్మించును అది అదేవిధంగా ఉన్నటువంటి కూర్పు మరియు అమరికలు కల్గిన కార్యక్రమాల పట్టీ నిర్మించును.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 40				0	te	పుట నమూనా:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 41				0	te	నా కార్యక్రమాల పట్టీ మాదిరి.ఎస్ టిడబ్ల్యు				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 42				0	te	నా కార్యక్రమాల పట్టీ మాదిరి				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 43				0	te	కార్యక్రమాల పట్టీ మాదిరిని దాచునప్పుడు అనుకోని దోషము ఎదురైనది.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 44				0	te	నామము				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 45				0	te	తేది				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 46				0	te	సమయము				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 47				0	te	ప్రదేశము				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +48				0	te	పాఠంను పునఃస్థాపించుటకు క్లిక్ చేయుము				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 48				0	te	పాఠంను పునఃస్థాపించుటకు క్లిక్ చేయుము				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +50				0	te	పుట డిజైన్				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +51				0	te	సర్వసామన్యమైన సమాచారము				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +52				0	te	పీఠికలను చేర్చుకొను				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +53				0	te	నామములు				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +54				0	te	కార్యక్రమాల పట్టీ  అంశములు				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 51				0	te	సర్వసామన్యమైన సమాచారము				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 52				0	te	పీఠికలను చేర్చుకొను				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 53				0	te	నామములు				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 54				0	te	కార్యక్రమాల పట్టీ  అంశములు				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +55				0	te	నామము మరియు స్థానము				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +56				0	te	కార్యక్రమాల పట్టీ మాదిరిని తెరచునప్పుడు అనుకోని దోషము ఎదురైనది.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 56				0	te	కార్యక్రమాల పట్టీ మాదిరిని తెరచునప్పుడు అనుకోని దోషము ఎదురైనది.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +57				0	te	సమావేశము రకము				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +58				0	te	దయచేసి తెచ్చుకొనుము				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +59				0	te	దయచేసి చదువుము				2002-02-02 02:02:02
@@ -5032,10 +5032,10 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +64
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +65				0	te	మధ్యవర్తి				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +66				0	te	గమనించువారు				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +67				0	te	సదుపాయాలు చూచువారు				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +68				0	te	ప్రవేశించు				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +69				0	te	తొలగించు				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +70				0	te	పైకి కదులు				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +71				0	te	క్రిందకు కదులు				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 68				0	te	ప్రవేశించు				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 69				0	te	తొలగించు				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 70				0	te	పైకి కదులు				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 71				0	te	క్రిందకు కదులు				2002-02-02 02:02:02
 wizards	source\schedule\schedule.src	0	string	dlgCalTitle				0	te	%PRODUCTNAME క్యాలెండర్				2002-02-02 02:02:02
 wizards	source\schedule\schedule.src	0	string	dlgCalTitleBack				0	te	వెనుకకు				2002-02-02 02:02:02
 wizards	source\schedule\schedule.src	0	string	dlgCalTitleOwnData				0	te	వ్యక్తిగతమైన దత్తాంశం				2002-02-02 02:02:02
@@ -11736,7 +11736,7 @@ sw	source\ui\docvw\docvw.src	0	string	STR_REDLINE_FORMAT				0	te	రూపలా
 sw	source\ui\docvw\docvw.src	0	string	STR_REDLINE_TABLE				0	te	పట్టిక మార్చబడినది				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_REDLINE_FMTCOLL				0	te	పేరాగ్రాఫ్ శైలులు అనుసంధించుట				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_ENDNOTE				0	te	చీటి చివర: 				2002-02-02 02:02:02
-sw	source\ui\docvw\docvw.src	0	string	STR_FTNNOTE				0	te	పాదపు గమనిక: 				2002-02-02 02:02:02
+sw	source\ui\docvw\docvw.src	0	string	STR_FOOTNOTE				0	te	పాదపు గమనిక: 				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	infobox	MSG_READONLY_CONTENT				0	te	 చదువుటకు మాత్రమే ఉన్న సారమును మార్చలేము.\nఏ మర్పులను ఆమోదించ లేము				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_TABLE_COL_ADJUST				0	te	నిలువుపట్టి పట్టికను సరిపరుచుము				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_TABLE_ROW_ADJUST				0	te	అడ్డపట్టి పట్టికను సరిపరుచుము				2002-02-02 02:02:02
@@ -11843,11 +11843,11 @@ sw	source\ui\ribbar\inputwin.src	0	string	STR_TBL_FORMULA				0	te	పాఠ స�
 sw	source\ui\ribbar\inputwin.src	0	toolboxitem	TB_INPUT	FN_FORMULA_CALC	HID_TBX_FORMULA_CALC		0	te	సూత్రం				2002-02-02 02:02:02
 sw	source\ui\ribbar\inputwin.src	0	toolboxitem	TB_INPUT	FN_FORMULA_CANCEL	HID_TBX_FORMULA_CANCEL		0	te	రద్దు				2002-02-02 02:02:02
 sw	source\ui\ribbar\inputwin.src	0	toolboxitem	TB_INPUT	FN_FORMULA_APPLY	HID_TBX_FORMULA_APPLY		0	te	అనుసంధించుట				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_PAGE			0	te	పుటకు				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_PARAGRAPH			0	te	పేరాకు				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_AT_CHAR			0	te	అక్షరము వరకు				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_CHAR			0	te	అక్షరము వలె				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_FRAME			0	te	చట్రమునకు				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_PAGE			0	te	పుటకు				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_PARAGRAPH			0	te	పేరాకు				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_AT_CHAR			0	te	అక్షరము వరకు				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_CHAR			0	te	అక్షరము వలె				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_FRAME			0	te	చట్రమునకు				2002-02-02 02:02:02
 sw	source\ui\wrtsh\wrtsh.src	0	string	STR_DDEERROR_APP1				0	te	కార్యక్షేత్రం [				2002-02-02 02:02:02
 sw	source\ui\wrtsh\wrtsh.src	0	string	STR_DDEERROR_APP2				0	te	] జవాబు ఇచ్చుటలేదు				2002-02-02 02:02:02
 sw	source\ui\wrtsh\wrtsh.src	0	string	STR_DDEERROR_DATA1				0	te	దత్తాంశం [				2002-02-02 02:02:02
@@ -12289,12 +12289,12 @@ sw	source\ui\app\mn.src	0	menuitem	MN_WRAP_DRAW.MN_WRAP	FN_FRAME_WRAPTHRU_TRANSP
 sw	source\ui\app\mn.src	0	menuitem	MN_WRAP_DRAW.MN_WRAP	FN_WRAP_ANCHOR_ONLY	CMD_FN_WRAP_ANCHOR_ONLY		0	te	మొదటి పరిచ్ఛేధం (~F)				2002-02-02 02:02:02
 sw	source\ui\app\mn.src	0	menuitem	MN_WRAP_DRAW.MN_WRAP	FN_DRAW_WRAP_DLG	CMD_FN_DRAW_WRAP_DLG		0	te	సరిచేయు... (~E)				2002-02-02 02:02:02
 sw	source\ui\app\mn.src	0	menuitem	MN_WRAP_DRAW	MN_WRAP			0	te	మడత (~W)				2002-02-02 02:02:02
-sw	source\ui\app\mn.src	0	menuitem	MN_AT_FRAME	FN_TOOL_ANKER_FRAME	CMD_FN_TOOL_ANKER_FRAME		0	te	చట్రముకు (~F)				2002-02-02 02:02:02
-sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANKER	FN_TOOL_ANKER_PAGE	CMD_FN_TOOL_ANKER_PAGE		0	te	పుటకు (~a)				2002-02-02 02:02:02
-sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANKER	FN_TOOL_ANKER_PARAGRAPH	CMD_FN_TOOL_ANKER_PARAGRAPH		0	te	పరిఛ్చేదముకు (~P)				2002-02-02 02:02:02
-sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANKER	FN_TOOL_ANKER_AT_CHAR	CMD_FN_TOOL_ANKER_AT_CHAR		0	te	అక్షరముకు (~C)				2002-02-02 02:02:02
-sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANKER	FN_TOOL_ANKER_CHAR	CMD_FN_TOOL_ANKER_CHAR		0	te	అక్షరం వలె (~h)				2002-02-02 02:02:02
-sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR	FN_TOOL_ANKER	CMD_FN_TOOL_ANKER		0	te	లంగరు (~c)				2002-02-02 02:02:02
+sw	source\ui\app\mn.src	0	menuitem	MN_AT_FRAME	FN_TOOL_ANCHOR_FRAME	CMD_FN_TOOL_ANCHOR_FRAME		0	te	చట్రముకు (~F)				2002-02-02 02:02:02
+sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANCHOR	FN_TOOL_ANCHOR_PAGE	CMD_FN_TOOL_ANCHOR_PAGE		0	te	పుటకు (~a)				2002-02-02 02:02:02
+sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANCHOR	FN_TOOL_ANCHOR_PARAGRAPH	CMD_FN_TOOL_ANCHOR_PARAGRAPH		0	te	పరిఛ్చేదముకు (~P)				2002-02-02 02:02:02
+sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANCHOR	FN_TOOL_ANCHOR_AT_CHAR	CMD_FN_TOOL_ANCHOR_AT_CHAR		0	te	అక్షరముకు (~C)				2002-02-02 02:02:02
+sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANCHOR	FN_TOOL_ANCHOR_CHAR	CMD_FN_TOOL_ANCHOR_CHAR		0	te	అక్షరం వలె (~h)				2002-02-02 02:02:02
+sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR	FN_TOOL_ANCHOR	CMD_FN_TOOL_ANCHOR		0	te	లంగరు (~c)				2002-02-02 02:02:02
 sw	source\ui\app\mn.src	0	string	MN_DRAWFORM_POPUPMENU				0	te	నియంత్రణ				2002-02-02 02:02:02
 sw	source\ui\app\mn.src	0	string	MN_DRWTXT_POPUPMENU				0	te	ఆబ్జక్టు పాఠ్యమును గీయుము				2002-02-02 02:02:02
 sw	source\ui\app\mn.src	0	menuitem	MN_REDCOMMENT	FN_DELETE_COMMENT	CMD_FN_DELETE_COMMENT		0	te	మార్పుల గమనికను తొలగించుము (~C)				2002-02-02 02:02:02
@@ -12391,7 +12391,7 @@ sw	source\ui\app\app.src	0	string	STR_WRITER_DOCUMENT_FULLTYPE				0	te	%PRODUCTN
 sw	source\ui\app\app.src	0	string	STR_CANTOPEN				0	te	పత్రమును తెరువబడదు.				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_CANTCREATE				0	te	పత్రం నిర్మించుటలేదు				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_DLLNOTFOUND				0	te	వడపోత దొరకలేదు				2002-02-02 02:02:02
-sw	source\ui\app\app.src	0	string	STR_UNBENANNT				0	te	శీర్షికలేని				2002-02-02 02:02:02
+sw	source\ui\app\app.src	0	string	STR_UNTITLED				0	te	శీర్షికలేని				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_LOAD_GLOBAL_DOC				0	te	ముఖ్య పత్రము నామం మరియుత్రోవ				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_LOAD_HTML_DOC				0	te	హెచ్  టిఎంఎల్  పత్రము నామం మరియుత్రోవ				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	infobox	MSG_ERROR_SEND_MAIL				0	te	తపాల పంపుటలో దోషం				2002-02-02 02:02:02
@@ -19796,32 +19796,32 @@ connectivity	source\resource\conn_error_message.src	0	string	256 + 2*304 + 0				
 connectivity	source\resource\conn_error_message.src	0	string	256 + 2*500 + 0				0	te	$1$ లేదు.				2002-02-02 02:02:02
 connectivity	source\resource\conn_error_message.src	0	string	256 + 2*550 + 0				0	te	పూర్తి పట్టిక సారమును ప్రదర్శించలేక పోతోంది. దయచేసి వడపోతను ఆపాదించుము.				2002-02-02 02:02:02
 connectivity	source\drivers\calc\calc.xcu	0	value	.Drivers.Installed.sdbc:calc:*	DriverTypeDisplayName			0	te	స్ర్పెడ్ షీట్				2002-02-02 02:02:02
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:local	DriverTypeDisplayName			0	te	Evolution Local				2002-02-02 02:02:02
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:ldap	DriverTypeDisplayName			0	te	ఎవాల్యూషన్ LDAP				2002-02-02 02:02:02
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:groupwise	DriverTypeDisplayName			0	te	సమూహపుతరహ				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:local	DriverTypeDisplayName			0	te	Evolution Local				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:ldap	DriverTypeDisplayName			0	te	ఎవాల్యూషన్ LDAP				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:groupwise	DriverTypeDisplayName			0	te	సమూహపుతరహ				2002-02-02 02:02:02
 connectivity	source\drivers\mozab\mozab.xcu	0	value	.Drivers.Installed.sdbc:address:outlook	DriverTypeDisplayName			0	te	Microsoft Outlook Address Book				2002-02-02 02:02:02
 connectivity	source\drivers\mozab\mozab.xcu	0	value	.Drivers.Installed.sdbc:address:outlookexp	DriverTypeDisplayName			0	te	Microsoft Windows Address Book				2002-02-02 02:02:02
 connectivity	source\drivers\mozab\mozab.xcu	0	value	.Drivers.Installed.sdbc:address:thunderbird:	DriverTypeDisplayName			0	te	Thunderbird Address Book				2002-02-02 02:02:02
 connectivity	source\drivers\mozab\mozab.xcu	0	value	.Drivers.Installed.sdbc:address:ldap:*	DriverTypeDisplayName			0	te	LDAP Address Book				2002-02-02 02:02:02
 connectivity	source\drivers\mozab\mozab2.xcu	0	value	.Drivers.Installed.sdbc:address:thunderbird:	DriverTypeDisplayName			0	te	Thunderbird Address Book				2002-02-02 02:02:02
 connectivity	source\drivers\mozab\mozab2.xcu	0	value	.Drivers.Installed.sdbc:address:ldap:*	DriverTypeDisplayName			0	te	LDAP Address Book				2002-02-02 02:02:02
-connectivity	source\drivers\flat\flat.xcu	0	value	.Drivers.Installed.sdbc:flat:*	DriverTypeDisplayName			0	te	పాఠం				2002-02-02 02:02:02
-connectivity	source\drivers\hsqldb\hsqldb.xcu	0	value	.Drivers.Installed.sdbc:embedded:hsqldb	DriverTypeDisplayName			0	te	HSQL database engine				2002-02-02 02:02:02
-connectivity	source\drivers\dbase\dbase.xcu	0	value	.Drivers.Installed.sdbc:dbase:*	DriverTypeDisplayName			0	te	dBASE				2002-02-02 02:02:02
-connectivity	source\drivers\macab\macab.xcu	0	value	.Drivers.Installed.sdbc:address:macab	DriverTypeDisplayName			0	te	Mac OS X Address Book				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\flat.xcu	0	value	.Drivers.Installed.sdbc:flat:*	DriverTypeDisplayName			0	te	పాఠం				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\hsqldb.xcu	0	value	.Drivers.Installed.sdbc:embedded:hsqldb	DriverTypeDisplayName			0	te	HSQL database engine				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\dbase.xcu	0	value	.Drivers.Installed.sdbc:dbase:*	DriverTypeDisplayName			0	te	dBASE				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\macab.xcu	0	value	.Drivers.Installed.sdbc:address:macab	DriverTypeDisplayName			0	te	Mac OS X Address Book				2002-02-02 02:02:02
 connectivity	source\drivers\jdbc\jdbc.xcu	0	value	.Drivers.Installed.jdbc:*	DriverTypeDisplayName			0	te	JDBC				2002-02-02 02:02:02
 connectivity	source\drivers\jdbc\jdbc.xcu	0	value	.Drivers.Installed.jdbc:oracle:thin:*	DriverTypeDisplayName			0	te	Oracle JDBC				2002-02-02 02:02:02
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:*	DriverTypeDisplayName			0	te	ADO				2002-02-02 02:02:02
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:PROVIDER=Microsoft.Jet.OLEDB.4.0;DATA SOURCE=*	DriverTypeDisplayName			0	te	Microsoft Access				2002-02-02 02:02:02
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:Provider=Microsoft.ACE.OLEDB.12.0;DATA SOURCE=*	DriverTypeDisplayName			0	te	Microsoft Access 2007				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:*	DriverTypeDisplayName			0	te	ADO				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:PROVIDER=Microsoft.Jet.OLEDB.4.0;DATA SOURCE=*	DriverTypeDisplayName			0	te	Microsoft Access				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:Provider=Microsoft.ACE.OLEDB.12.0;DATA SOURCE=*	DriverTypeDisplayName			0	te	Microsoft Access 2007				2002-02-02 02:02:02
 connectivity	source\drivers\evoab\evoab.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:ldap	DriverTypeDisplayName			0	te	ఎవాల్యూషన్ LDAP				2002-02-02 02:02:02
 connectivity	source\drivers\evoab\evoab.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:groupwise	DriverTypeDisplayName			0	te	సమూహపుతరహ				2002-02-02 02:02:02
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:jdbc:*	DriverTypeDisplayName			0	te	MySQL (JDBC)				2002-02-02 02:02:02
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:odbc:*	DriverTypeDisplayName			0	te	MySQL (ODBC)				2002-02-02 02:02:02
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:mysqlc:*	DriverTypeDisplayName			0	te	MySQL (Native)				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:jdbc:*	DriverTypeDisplayName			0	te	MySQL (JDBC)				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:odbc:*	DriverTypeDisplayName			0	te	MySQL (ODBC)				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:mysqlc:*	DriverTypeDisplayName			0	te	MySQL (Native)				2002-02-02 02:02:02
 connectivity	source\drivers\kab\kab.xcu	0	value	.Drivers.Installed.sdbc:address:kab	DriverTypeDisplayName			0	te	KDE Address Book				2002-02-02 02:02:02
-connectivity	source\drivers\adabas\adabas.xcu	0	value	.Drivers.Installed.sdbc:adabas:*	DriverTypeDisplayName			0	te	Adabas D				2002-02-02 02:02:02
-connectivity	source\drivers\odbc\odbc.xcu	0	value	.Drivers.Installed.sdbc:odbc:*	DriverTypeDisplayName			0	te	ODBC				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\adabas.xcu	0	value	.Drivers.Installed.sdbc:adabas:*	DriverTypeDisplayName			0	te	Adabas D				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\odbc.xcu	0	value	.Drivers.Installed.sdbc:odbc:*	DriverTypeDisplayName			0	te	ODBC				2002-02-02 02:02:02
 readlicense_oo	docs\readme\readme.xrm	0	readmeitem	Welcome	Welcome			0	te	${PRODUCTNAME} ${PRODUCTVERSION} రీడ్‌మీ				2002-02-02 02:02:02
 readlicense_oo	docs\readme\readme.xrm	0	readmeitem	A6	A6			0	te	ఈ దస్త్రం ముఖ్యమైన కార్యక్రమం సమాచారమును గురించి కలిగియన్నది.దయచేసి ఈ సమాచారమును  పనిని ప్రారంభించు ముందుగా చాల జాగ్రతగ చదువుము.				2002-02-02 02:02:02
 readlicense_oo	docs\readme\readme.xrm	0	readmeitem	A9	A9			0	te	ఇంకా తెలుసుకొనుటకు క్రింది భాగం లోని ఓపెన్ ఆఫీస్.ఒ ఆర్ జి పథకం లోని సెక్షనులను చదువుము.				2002-02-02 02:02:02

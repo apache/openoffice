@@ -34,7 +34,7 @@
 #include <cppuhelper/weakref.hxx>
 
 #ifndef __SGI_STL_HASH_MAP
-#include <hash_map>
+#include <unordered_map>
 #endif
 #include <tools/urlobj.hxx>
 #include <rtl/ustrbuf.hxx>

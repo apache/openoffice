@@ -128,8 +128,10 @@ namespace svx
     namespace
     {
         //................................................................
-        struct MatchFeatureDescriptionByURL : public ::std::unary_function< FeatureDescription, bool >
+        struct MatchFeatureDescriptionByURL
         {
+            typedef FeatureDescription argument_type;
+            typedef bool result_type;
             const ::rtl::OUString&  m_rURL;
             MatchFeatureDescriptionByURL( const ::rtl::OUString& _rURL ) :m_rURL( _rURL ) { }
 
@@ -140,8 +142,10 @@ namespace svx
         };
 
         //................................................................
-        struct MatchFeatureDescriptionBySlotId : public ::std::unary_function< FeatureDescription, bool >
+        struct MatchFeatureDescriptionBySlotId
         {
+            typedef FeatureDescription argument_type;
+            typedef bool result_type;
             sal_Int32   m_nSlotId;
             MatchFeatureDescriptionBySlotId( sal_Int32 _nSlotId ) :m_nSlotId( _nSlotId ) { }
 
@@ -152,8 +156,10 @@ namespace svx
         };
 
         //................................................................
-        struct MatchFeatureDescriptionByFormFeature : public ::std::unary_function< FeatureDescription, bool >
+        struct MatchFeatureDescriptionByFormFeature
         {
+            typedef FeatureDescription argument_type;
+            typedef bool result_type;
             sal_Int32   m_nFormFeature;
             MatchFeatureDescriptionByFormFeature( sal_Int32 _nFormFeature ) :m_nFormFeature( _nFormFeature ) { }
 
@@ -164,8 +170,10 @@ namespace svx
         };
 
         //................................................................
-        struct FormFeatureToSlotId : public ::std::unary_function< sal_Int16, sal_Int32 >
+        struct FormFeatureToSlotId
         {
+            typedef sal_Int16 argument_type;
+            typedef sal_Int32 result_type;
             sal_Int32 operator()( sal_Int16 _FormFeature )
             {
                 return FeatureSlotTranslation::getSlotIdForFormFeature( _FormFeature );

@@ -30,6 +30,7 @@
 #include <tools/debug.hxx>
 #include <tools/diagnose_ex.h>
 #include "corestrings.hrc"
+#include <functional>
 
 //........................................................................
 namespace rptui
@@ -129,7 +130,7 @@ void SAL_CALL OPropertyMediator::propertyChange( const PropertyChangeEvent& evt 
 								m_aNameMap.begin(),
 								m_aNameMap.end(),
 								::std::compose1(
-								::std::bind2nd(::std::equal_to< ::rtl::OUString >(), evt.PropertyName),
+								::std::bind(::std::equal_to< ::rtl::OUString >(), ::std::placeholders::_1, evt.PropertyName),
 									::std::compose1(::std::select1st<TPropertyConverter>(),::std::select2nd<TPropertyNamePair::value_type>())
 								)
 							);

@@ -62,6 +62,7 @@ public:
 			SetValue(rBlink.GetValue());
 			return *this;
 		}
+	SvxBlinkItem(const SvxBlinkItem&) = default;
 };
 
 #endif

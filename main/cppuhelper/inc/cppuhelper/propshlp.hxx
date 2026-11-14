@@ -610,7 +610,7 @@ protected:
 
     /** reserved for future use. finally, the future has arrived...
      */
-    const std::auto_ptr<Impl> m_pReserved;
+    const std::unique_ptr<Impl> m_pReserved;
 
 private:
 	OPropertySetHelper( const OPropertySetHelper & ) SAL_THROW( () );

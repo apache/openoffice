@@ -519,7 +519,7 @@ public:
     // ------------------------------------------------------------------------
 
 private:
-    typedef std::auto_ptr< ArrayImpl > ArrayImplPtr;
+    typedef std::unique_ptr< ArrayImpl > ArrayImplPtr;
 
     ArrayImplPtr        mxImpl;
 };

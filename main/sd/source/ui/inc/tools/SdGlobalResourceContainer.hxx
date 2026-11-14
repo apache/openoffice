@@ -72,7 +72,7 @@ public:
 
         When in doubt, use the shared_ptr variant of this method.
     */
-    void AddResource (::std::auto_ptr<SdGlobalResource> pResource);
+    void AddResource (::std::unique_ptr<SdGlobalResource> pResource);
 
     /** Add a resource to the container.  By using a shared_ptr and
         releasing it only when the SgGlobalResourceContainer is destroyed
@@ -90,10 +90,10 @@ public:
 
 protected:
     friend class ::SdModule;
-    friend class ::std::auto_ptr<SdGlobalResourceContainer>;
+    friend struct ::std::default_delete< SdGlobalResourceContainer >;
 
     class Implementation;
-    ::std::auto_ptr<Implementation> mpImpl;
+    ::std::unique_ptr<Implementation> mpImpl;
 
     SdGlobalResourceContainer (void);
     ~SdGlobalResourceContainer (void);

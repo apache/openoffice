@@ -38,8 +38,8 @@ all:
 
 # --- Files --------------------------------------------------------
 
-TARFILE_NAME=expat-2.5.0
-TARFILE_MD5=5e9974d422dc4b157f300568ad28ebf6
+TARFILE_NAME=expat-2.8.1
+TARFILE_MD5=0e4b4a4fc77940a8d46194d57780f840
 ADDITIONAL_FILES=lib$/makefile.mk
 PATCH_FILES=$(TARFILE_NAME).patch
 
@@ -47,7 +47,7 @@ CONFIGURE_DIR=
 .IF "$(OS)"=="WNT"
 CONFIGURE_ACTION=
 .ELSE
-CONFIGURE_ACTION=.$/configure --without-docbook
+CONFIGURE_ACTION=.$/configure --without-docbook --without-iconv
 .ENDIF
 
 BUILD_DIR=lib

@@ -23,7 +23,7 @@
 #ifndef _SFX_OBJSHIMP_HXX
 #define _SFX_OBJSHIMP_HXX
 
-//#include <hash_map>
+//#include <unordered_map>
 
 #include <com/sun/star/frame/XModel.hpp>
 #include <com/sun/star/uno/Sequence.hxx>

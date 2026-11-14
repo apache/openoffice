@@ -446,8 +446,11 @@ void SAL_CALL OConnection::clearWarnings(  )
 //--------------------------------------------------------------------------
 namespace
 {
-    struct CompareTypeByName : public ::std::binary_function< Type, Type, bool >
+    struct CompareTypeByName
     {
+        typedef Type first_argument_type;
+        typedef Type second_argument_type;
+        typedef bool result_type;
         bool operator() ( const Type& _rLHS, const Type& _rRHS ) const
         {
             return _rLHS.getTypeName() < _rRHS.getTypeName();

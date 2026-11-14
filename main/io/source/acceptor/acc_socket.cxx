@@ -25,7 +25,7 @@
 #include "precompiled_io.hxx"
 #include "acceptor.hxx"
 
-#include <hash_set>
+#include <unordered_set>
 #include <algorithm>
 
 #include <rtl/ustrbuf.hxx>
@@ -63,7 +63,7 @@ namespace io_acceptor {
 	};
 
 
-	typedef ::std::hash_set< ::com::sun::star::uno::Reference< ::com::sun::star::io::XStreamListener>,
+	typedef ::std::unordered_set< ::com::sun::star::uno::Reference< ::com::sun::star::io::XStreamListener>,
                              ReferenceHash< ::com::sun::star::io::XStreamListener>,
                              ReferenceEqual< ::com::sun::star::io::XStreamListener> >
 	        XStreamListener_hash_set;

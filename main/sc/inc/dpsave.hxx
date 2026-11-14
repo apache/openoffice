@@ -29,7 +29,7 @@
 #include <com/sun/star/sheet/XDimensionsSupplier.hpp>
 #include <com/sun/star/sheet/DataPilotFieldOrientation.hpp>
 #include "scdllapi.h"
-#include <hash_map>
+#include <unordered_map>
 #include <list>
 #include <memory>
 
@@ -54,7 +54,7 @@ class ScDPSaveMember
 {
 private:
 	String		aName;
-    ::std::auto_ptr<rtl::OUString> mpLayoutName; // custom name to be displayed in the table.
+    ::std::unique_ptr<rtl::OUString> mpLayoutName; // custom name to be displayed in the table.
 	sal_uInt16		nVisibleMode;
 	sal_uInt16		nShowDetailsMode;
 
@@ -93,8 +93,8 @@ class SC_DLLPUBLIC ScDPSaveDimension
 private:
 	String		aName;
 	String*		pSelectedPage;
-    ::std::auto_ptr<rtl::OUString> mpLayoutName;
-    ::std::auto_ptr<rtl::OUString> mpSubtotalName;
+    ::std::unique_ptr<rtl::OUString> mpLayoutName;
+    ::std::unique_ptr<rtl::OUString> mpSubtotalName;
 	sal_Bool		bIsDataLayout;
 	sal_Bool		bDupFlag;
 	sal_uInt16		nOrientation;
@@ -110,7 +110,7 @@ private:
     ::com::sun::star::sheet::DataPilotFieldLayoutInfo* pLayoutInfo;         // (level)
 
 public:
-    typedef	std::hash_map <String, ScDPSaveMember*, rtl::OUStringHash> MemberHash;
+    typedef	std::unordered_map <String, ScDPSaveMember*, rtl::OUStringHash> MemberHash;
     typedef	std::list <ScDPSaveMember*>                                MemberList;
 private:
     MemberHash maMemberHash;
@@ -180,7 +180,7 @@ public:
 									com::sun::star::sheet::XDimensionsSupplier>& xSource ,
 									const	std::list<String> & deletedDims);
 
-    void                    UpdateMemberVisibility(const ::std::hash_map< ::rtl::OUString, bool, ::rtl::OUStringHash>& rData);
+    void                    UpdateMemberVisibility(const ::std::unordered_map< ::rtl::OUString, bool, ::rtl::OUStringHash>& rData);
 
     bool                    HasInvisibleMember() const;
 };
@@ -206,7 +206,7 @@ private:
      *  created. */
     bool        mbDimensionMembersBuilt;
 
-    ::std::auto_ptr<rtl::OUString> mpGrandTotalName;
+    ::std::unique_ptr<rtl::OUString> mpGrandTotalName;
 
 public:
     SC_DLLPUBLIC						ScDPSaveData();

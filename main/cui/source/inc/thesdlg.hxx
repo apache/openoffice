@@ -38,7 +38,7 @@ struct SvxThesaurusDialog_Impl;
 
 class SvxThesaurusDialog : public SvxStandardDialog
 {
-    std::auto_ptr< SvxThesaurusDialog_Impl > m_pImpl;
+    std::unique_ptr< SvxThesaurusDialog_Impl > m_pImpl;
 
     SVX_DLLPRIVATE virtual void     Apply();
 

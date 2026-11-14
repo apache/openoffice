@@ -67,6 +67,7 @@
 #endif
 
 #include <algorithm>
+#include <functional>
 
 using namespace dbaui;
 using namespace ::com::sun::star::beans;
@@ -187,7 +188,7 @@ void OTableWindowTitle::MouseButtonDown( const MouseEvent& rEvt )
 				const ::std::vector<OTableConnection*>* pConns = pView->getTableConnections();
 				::std::for_each(pConns->begin(),
 								pConns->end(),
-								::std::mem_fun(&OTableConnection::RecalcLines));
+								::std::mem_fn(&OTableConnection::RecalcLines));
 
 				pView->InvalidateConnections();
 				pView->getDesignView()->getController().setModified(sal_True);

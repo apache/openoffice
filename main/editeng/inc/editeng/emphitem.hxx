@@ -72,6 +72,7 @@ public:
 		SetValue( rItem.GetValue() );
 		return *this;
 	}
+	SvxEmphasisMarkItem(const SvxEmphasisMarkItem&) = default;
 
 	// enum cast
 	FontEmphasisMark		GetEmphasisMark() const

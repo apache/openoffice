@@ -32,7 +32,7 @@
 
 /*
  * A ChainablePropertySetInfo is usually initialised with a pointer to the first element
- * of a null-terminated static table of PropertyInfo structs. This is placed in a hash_map
+ * of a null-terminated static table of PropertyInfo structs. This is placed in a unordered_map
  * for fast access
  *
  */

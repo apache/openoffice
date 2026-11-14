@@ -26,7 +26,7 @@
 
 #include <rtl/ustring.hxx>
 #include <comphelper/TypeGeneration.hxx>
-#include <hash_map>
+#include <unordered_map>
 namespace comphelper
 {
 	struct PropertyInfo
@@ -56,11 +56,11 @@ namespace comphelper
 	};
 }
 
-typedef std::hash_map < ::rtl::OUString,
+typedef std::unordered_map < ::rtl::OUString,
 						::comphelper::PropertyInfo*,
 						::rtl::OUStringHash,
 						::comphelper::eqFunc > PropertyInfoHash;
-typedef std::hash_map < ::rtl::OUString,
+typedef std::unordered_map < ::rtl::OUString,
 						::comphelper::PropertyData*,
 						::rtl::OUStringHash,
 						::comphelper::eqFunc > PropertyDataHash;

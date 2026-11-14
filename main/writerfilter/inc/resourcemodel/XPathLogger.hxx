@@ -23,7 +23,7 @@
 #ifndef INCLUDED_XPATH_LOGGER_HXX
 #define INCLUDED_XPATH_LOGGER_HXX
 
-#include <hash_map>
+#include <unordered_map>
 #include <stack>
 #include <string>
 #include <vector>
@@ -32,14 +32,14 @@
 
 namespace writerfilter
 {
-using ::std::hash_map;
+using ::std::unordered_map;
 using ::std::stack;
 using ::std::string;
 using ::std::vector;
 
 class WRITERFILTER_DLLPUBLIC XPathLogger
 {
-    typedef hash_map<string, unsigned int> TokenMap_t;
+    typedef unordered_map<string, unsigned int> TokenMap_t;
     typedef boost::shared_ptr<TokenMap_t> TokenMapPointer_t;
 
     TokenMapPointer_t mp_tokenMap;

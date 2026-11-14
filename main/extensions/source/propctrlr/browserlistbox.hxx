@@ -44,7 +44,7 @@
 
 #include <set>
 #include <vector>
-#include <hash_map>
+#include <unordered_map>
 #include <boost/shared_ptr.hpp>
 
 //............................................................................
@@ -75,7 +75,7 @@ namespace pcr
         {
         }
     };
-    typedef ::std::hash_map< ::rtl::OUString, ListBoxLine, ::rtl::OUStringHash >    ListBoxLines;
+    typedef ::std::unordered_map< ::rtl::OUString, ListBoxLine, ::rtl::OUStringHash >    ListBoxLines;
     typedef ::std::vector< ListBoxLines::iterator >                                 OrderedListBoxLines;
 
     //========================================================================
@@ -102,7 +102,7 @@ namespace pcr
     protected:
         Window                      m_aLinesPlayground;
         ScrollBar                   m_aVScroll;
-        ::std::auto_ptr< InspectorHelpWindow >
+        ::std::unique_ptr< InspectorHelpWindow >
                                     m_pHelpWindow;
         ListBoxLines                m_aLines;
         OrderedListBoxLines         m_aOrderedLines;

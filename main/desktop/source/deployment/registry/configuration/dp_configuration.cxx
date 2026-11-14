@@ -107,7 +107,7 @@ class BackendImpl : public ::dp_registry::backend::PackageRegistryBackend
 
     bool m_configmgrini_inited;
     bool m_configmgrini_modified;
-    std::auto_ptr<ConfigurationBackendDb> m_backendDb;
+    std::unique_ptr<ConfigurationBackendDb> m_backendDb;
 
     // PackageRegistryBackend
     virtual Reference<deployment::XPackage> bindPackage_(
@@ -115,7 +115,7 @@ class BackendImpl : public ::dp_registry::backend::PackageRegistryBackend
         OUString const & identifier,
         Reference<XCommandEnvironment> const & xCmdEnv );
 
-    ::std::auto_ptr<PersistentMap> m_registeredPackages;
+    ::std::unique_ptr<PersistentMap> m_registeredPackages;
         // for backwards compatibility
 
     virtual void SAL_CALL disposing();

@@ -133,8 +133,11 @@ namespace svxform
 	class ControlBorderManager
 	{
     private:
-        struct ControlDataCompare : public ::std::binary_function< ControlData, ControlData, bool >
+        struct ControlDataCompare
         {
+           typedef ControlData first_argument_type;
+           typedef ControlData second_argument_type;
+           typedef bool result_type;
            bool operator()( const ControlData& _rLHS, const ControlData& _rRHS ) const
            {
                return _rLHS.xControl.get() < _rRHS.xControl.get();

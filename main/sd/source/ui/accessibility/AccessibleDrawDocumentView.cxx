@@ -143,7 +143,7 @@ void AccessibleDrawDocumentView::Init (void)
             pPage->acquire();
             pPage->Init();
             mpChildrenManager->AddAccessibleShape (
-                std::auto_ptr<AccessibleShape>(pPage));
+                std::unique_ptr<AccessibleShape>(pPage));
             pPage->release();
             mpChildrenManager->Update ();
         }
@@ -373,7 +373,7 @@ void SAL_CALL
                 pPage->acquire();
                 pPage->Init();
                 mpChildrenManager->AddAccessibleShape (
-                    std::auto_ptr<AccessibleShape>(pPage));
+                    std::unique_ptr<AccessibleShape>(pPage));
                 mpChildrenManager->Update (false);
                 pPage->release();
             }
@@ -435,7 +435,7 @@ void SAL_CALL
                 pPage->acquire();
                 pPage->Init();
                 mpChildrenManager->AddAccessibleShape (
-                    std::auto_ptr<AccessibleShape>(pPage));
+                    std::unique_ptr<AccessibleShape>(pPage));
                 mpChildrenManager->Update (false);
                 pPage->release();
             }

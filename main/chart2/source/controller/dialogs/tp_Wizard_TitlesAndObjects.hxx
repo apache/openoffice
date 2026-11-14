@@ -66,8 +66,8 @@ protected:
     FixedText           m_aFT_TitleDescription;
     FixedLine           m_aFL_Vertical;
 
-    ::std::auto_ptr< TitleResources >            m_apTitleResources;
-    ::std::auto_ptr< LegendPositionResources >   m_apLegendPositionResources;
+    ::std::unique_ptr< TitleResources >            m_apTitleResources;
+    ::std::unique_ptr< LegendPositionResources >   m_apLegendPositionResources;
 
     FixedLine           m_aFL_Grids;
     CheckBox            m_aCB_Grid_X;

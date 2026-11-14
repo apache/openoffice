@@ -315,11 +315,11 @@ void XMLTextImportPropertyMapper::finished(
 
     XMLPropertyState* pAllParaMargin = 0;
     XMLPropertyState* pParaMargins[4] = { 0, 0, 0, 0 };
-    ::std::auto_ptr<XMLPropertyState> pNewParaMargins[4];
+    ::std::unique_ptr<XMLPropertyState> pNewParaMargins[4];
 
     XMLPropertyState* pAllMargin = 0;
     XMLPropertyState* pMargins[4] = { 0, 0, 0, 0 };
-    ::std::auto_ptr<XMLPropertyState> pNewMargins[4];
+    ::std::unique_ptr<XMLPropertyState> pNewMargins[4];
 
 	for( ::std::vector< XMLPropertyState >::iterator aIter = rProperties.begin();
 		 aIter != rProperties.end();

@@ -80,7 +80,7 @@ class BackendImpl : public ::dp_registry::backend::PackageRegistryBackend
     };
     friend class ExecutablePackageImpl;
 
-    typedef ::std::hash_map< OUString, Reference<XInterface>,
+    typedef ::std::unordered_map< OUString, Reference<XInterface>,
                              ::rtl::OUStringHash > t_string2object;
 
     // PackageRegistryBackend
@@ -93,7 +93,7 @@ class BackendImpl : public ::dp_registry::backend::PackageRegistryBackend
     void revokeEntryFromDb(OUString const & url);
 
     Reference<deployment::XPackageTypeInfo> m_xExecutableTypeInfo;
-    std::auto_ptr<ExecutableBackendDb> m_backendDb;
+    std::unique_ptr<ExecutableBackendDb> m_backendDb;
 public:
     BackendImpl( Sequence<Any> const & args,
                  Reference<XComponentContext> const & xComponentContext );

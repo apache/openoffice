@@ -92,7 +92,7 @@ void LotusFontBuffer::SetName( const sal_uInt16 nIndex, const String& rName )
 	DBG_ASSERT( nIndex < nSize, "*LotusFontBuffer::SetName(): Array zu klein!" );
 	if( nIndex < nSize )
 	{
-		register ENTRY*	pEntry = pData + nIndex;
+		ENTRY*	pEntry = pData + nIndex;
 		pEntry->TmpName( rName );
 
 		if( pEntry->nType >= 0 )
@@ -114,7 +114,7 @@ void LotusFontBuffer::SetType( const sal_uInt16 nIndex, const sal_uInt16 nType )
 	DBG_ASSERT( nIndex < nSize, "*LotusFontBuffer::SetType(): Array zu klein!" );
 	if( nIndex < nSize )
 	{
-		register ENTRY*	pEntry = pData + nIndex;
+		ENTRY*	pEntry = pData + nIndex;
 		pEntry->Type( nType );
 
 		if( pEntry->pTmpName )

@@ -57,7 +57,7 @@
 
 #include <memory>
 
-using ::std::auto_ptr;
+using ::std::unique_ptr;
 
 //------------------------------------------------------------------
 
@@ -655,7 +655,7 @@ void ScMyTables::DeleteTable()
 	{
 		uno::Sequence<sal_Int8> aPass;
 		SvXMLUnitConverter::decodeBase64(aPass, sPassword);
-        auto_ptr<ScTableProtection> pProtect(new ScTableProtection);
+        unique_ptr<ScTableProtection> pProtect(new ScTableProtection);
         pProtect->setProtected(bProtection);
         pProtect->setPasswordHash(aPass, PASSHASH_OOO);
         rImport.GetDocument()->SetTabProtection(static_cast<SCTAB>(nCurrentSheet), pProtect.get());

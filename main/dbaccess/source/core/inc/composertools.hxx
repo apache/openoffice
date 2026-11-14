@@ -41,8 +41,10 @@ namespace dbaccess
 	//====================================================================
 	//= TokenComposer
 	//====================================================================
-	struct TokenComposer : public ::std::unary_function< ::rtl::OUString, void >
+	struct TokenComposer
 	{
+        typedef ::rtl::OUString argument_type;
+        typedef void result_type;
     private:
         #ifdef DBG_UTIL
         bool                    m_bUsed;

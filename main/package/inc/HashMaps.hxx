@@ -25,7 +25,7 @@
 
 #include <ZipEntry.hxx>
 #include <vos/ref.hxx>
-#include <hash_map>
+#include <unordered_map>
 
 struct eqFunc
 {
@@ -41,17 +41,17 @@ namespace com { namespace sun { namespace star { namespace packages {
 class ContentInfo;
 } } } }
 
-typedef std::hash_map < rtl::OUString,
+typedef std::unordered_map < rtl::OUString,
 						ZipPackageFolder *,
 						::rtl::OUStringHash,
 						eqFunc > FolderHash;
 
-typedef std::hash_map < rtl::OUString,
+typedef std::unordered_map < rtl::OUString,
 						vos::ORef < com::sun::star::packages::ContentInfo >,
 						::rtl::OUStringHash,
 						eqFunc > ContentHash;
 
-typedef std::hash_map < rtl::OUString,
+typedef std::unordered_map < rtl::OUString,
 						ZipEntry,
 						rtl::OUStringHash,
 						eqFunc > EntryHash;

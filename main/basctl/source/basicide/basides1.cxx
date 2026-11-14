@@ -646,7 +646,7 @@ void __EXPORT BasicIDEShell::ExecuteGlobal( SfxRequest& rReq )
         break;
         case SID_BASICIDE_SHOWWINDOW:
         {
-            ::std::auto_ptr< ScriptDocument > pDocument;
+            ::std::unique_ptr< ScriptDocument > pDocument;
 
             SFX_REQUEST_ARG( rReq, pDocumentItem, SfxStringItem, SID_BASICIDE_ARG_DOCUMENT, sal_False );
 			if ( pDocumentItem )

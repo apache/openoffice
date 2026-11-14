@@ -58,7 +58,7 @@
 #include <com/sun/star/util/XCloseListener.hpp>
 #include "errobject.hxx"
 #include <map>
-#include <hash_map>
+#include <unordered_map>
 #include <vector>
 #include <algorithm>
 
@@ -1194,7 +1194,7 @@ struct ClassModuleRunInitItem
 // Derive from has_map type instead of typedef
 // to allow forward declaration in sbmod.hxx
 class ModuleInitDependencyMap : public
-	std::hash_map< ::rtl::OUString, ClassModuleRunInitItem,
+	std::unordered_map< ::rtl::OUString, ClassModuleRunInitItem,
 		::rtl::OUStringHash, ::std::equal_to< ::rtl::OUString > >
 {};
 
@@ -2069,7 +2069,7 @@ SbxInfoRef BasicCollection::xItemInfo = NULL;
 // Items may share a name (an item added without a key keeps the name of the
 // variable it was copied from), so each name maps to all of its holders.
 class CollectionNameMap : public
-	std::hash_map< ::rtl::OUString, std::vector< SbxVariable* >,
+	std::unordered_map< ::rtl::OUString, std::vector< SbxVariable* >,
 		::rtl::OUStringHash, ::std::equal_to< ::rtl::OUString > >
 {};
 

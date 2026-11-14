@@ -295,7 +295,7 @@ ostream & XMLTag::output(ostream & o, const string & sIndent) const
     return o;
 }
 
-typedef hash_map< const char*, TagLogger::Pointer_t, rtl::CStringHash, rtl::CStringEqual> TagLoggerHashMap_t;
+typedef unordered_map< const char*, TagLogger::Pointer_t, rtl::CStringHash, rtl::CStringEqual> TagLoggerHashMap_t;
 static TagLoggerHashMap_t * tagLoggers = NULL;
 
 TagLogger::TagLogger()

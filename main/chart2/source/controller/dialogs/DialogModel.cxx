@@ -69,9 +69,10 @@ namespace
 {
 const OUString lcl_aLabelRole( RTL_CONSTASCII_USTRINGPARAM( "label" ));
 
-struct lcl_ChartTypeToSeriesCnt : ::std::unary_function<
-        Reference< XChartType >, Reference< XDataSeriesContainer > >
+struct lcl_ChartTypeToSeriesCnt
 {
+    typedef Reference< XChartType > argument_type;
+    typedef Reference< XDataSeriesContainer > result_type;
     Reference< XDataSeriesContainer > operator() (
         const Reference< XChartType > & xChartType )
     {
@@ -117,8 +118,8 @@ OUString lcl_ConvertRole( const OUString & rRoleString, bool bFromInternalToUI )
     {
         tTranslationMap::const_iterator aIt(
             ::std::find_if( aTranslationMap.begin(), aTranslationMap.end(),
-                            ::std::compose1( ::std::bind2nd(
-                                                 ::std::equal_to< tTranslationMap::mapped_type >(),
+                            ::std::compose1( ::std::bind(
+                                                 ::std::equal_to< tTranslationMap::mapped_type >(), ::std::placeholders::_1,
                                                  rRoleString ),
                                              ::std::select2nd< tTranslationMap::value_type >())));
 
@@ -356,9 +357,11 @@ Reference< XDataSeries > lcl_CreateNewSeries(
     return xResult;
 }
 
-struct lcl_addSeriesNumber : public ::std::binary_function<
-        sal_Int32, Reference< XDataSeriesContainer >, sal_Int32 >
+struct lcl_addSeriesNumber
 {
+    typedef sal_Int32 first_argument_type;
+    typedef Reference< XDataSeriesContainer > second_argument_type;
+    typedef sal_Int32 result_type;
     sal_Int32 operator() ( sal_Int32 nCurrentNumber, const Reference< XDataSeriesContainer > & xCnt ) const
     {
         if( xCnt.is())

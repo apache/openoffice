@@ -86,9 +86,9 @@ executeLoginDialog(
         if (!bCanUseSysCreds)
             nFlags |= LF_NO_USESYSCREDS;
 
-        std::auto_ptr< ResMgr > xManager( ResMgr::CreateResMgr(CREATEVERSIONRESMGR_NAME(uui)));
+        std::unique_ptr< ResMgr > xManager( ResMgr::CreateResMgr(CREATEVERSIONRESMGR_NAME(uui)));
         UniString aRealm(rRealm);
-        std::auto_ptr< LoginDialog > xDialog(
+        std::unique_ptr< LoginDialog > xDialog(
                 new LoginDialog( pParent, nFlags, rInfo.GetServer(), &aRealm, xManager.get()));
         if (rInfo.GetErrorText().Len() != 0)
             xDialog->SetErrorText(rInfo.GetErrorText());
@@ -417,11 +417,11 @@ executeMasterPasswordDialog(
     {
         vos::OGuard aGuard(Application::GetSolarMutex());
 
-        std::auto_ptr< ResMgr > xManager(
+        std::unique_ptr< ResMgr > xManager(
             ResMgr::CreateResMgr(CREATEVERSIONRESMGR_NAME(uui)));
         if( nMode == task::PasswordRequestMode_PASSWORD_CREATE )
         {
-            std::auto_ptr< MasterPasswordCreateDialog > xDialog(
+            std::unique_ptr< MasterPasswordCreateDialog > xDialog(
                 new MasterPasswordCreateDialog(pParent, xManager.get()));
             rInfo.SetResult(xDialog->Execute()
                 == RET_OK ? ERRCODE_BUTTON_OK : ERRCODE_BUTTON_CANCEL);
@@ -430,7 +430,7 @@ executeMasterPasswordDialog(
         }
         else
         {
-            std::auto_ptr< MasterPasswordDialog > xDialog(
+            std::unique_ptr< MasterPasswordDialog > xDialog(
                 new MasterPasswordDialog(pParent, nMode, xManager.get()));
             rInfo.SetResult(xDialog->Execute()
                 == RET_OK ? ERRCODE_BUTTON_OK : ERRCODE_BUTTON_CANCEL);
@@ -518,13 +518,13 @@ executePasswordDialog(
     {
         vos::OGuard aGuard(Application::GetSolarMutex());
 
-        std::auto_ptr< ResMgr > xManager(
+        std::unique_ptr< ResMgr > xManager(
             ResMgr::CreateResMgr(CREATEVERSIONRESMGR_NAME(uui)));
         if( nMode == task::PasswordRequestMode_PASSWORD_CREATE )
         {
             if (bIsSimplePasswordRequest)
             {
-                std::auto_ptr< PasswordDialog > pDialog(
+                std::unique_ptr< PasswordDialog > pDialog(
                     new PasswordDialog( pParent, nMode, xManager.get(), aDocName,
                     bIsPasswordToModify, bIsSimplePasswordRequest ) );
                 pDialog->SetMinLen(0);
@@ -538,7 +538,7 @@ executePasswordDialog(
 
                 VclAbstractDialogFactory * pFact = VclAbstractDialogFactory::Create();
                 AbstractPasswordToOpenModifyDialog *pTmp = pFact->CreatePasswordToOpenModifyDialog( pParent, 0, nMaxPasswdLen, bIsPasswordToModify );
-                std::auto_ptr< AbstractPasswordToOpenModifyDialog > pDialog( pTmp );
+                std::unique_ptr< AbstractPasswordToOpenModifyDialog > pDialog( pTmp );
 
                 rInfo.SetResult( pDialog->Execute() == RET_OK ? ERRCODE_BUTTON_OK : ERRCODE_BUTTON_CANCEL );
                 rInfo.SetPassword( pDialog->GetPasswordToOpen() );
@@ -548,7 +548,7 @@ executePasswordDialog(
         }
         else // enter password or reenter password
         {
-            std::auto_ptr< PasswordDialog > pDialog(
+            std::unique_ptr< PasswordDialog > pDialog(
                 new PasswordDialog( pParent, nMode, xManager.get(), aDocName,
                 bIsPasswordToModify, bIsSimplePasswordRequest ) );
             pDialog->SetMinLen(0);

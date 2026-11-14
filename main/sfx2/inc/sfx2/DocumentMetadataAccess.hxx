@@ -163,7 +163,7 @@ public:
                 ::com::sun::star::beans::PropertyValue > & i_rMedium);
 
 private:
-    std::auto_ptr<DocumentMetadataAccess_Impl> m_pImpl;
+    std::unique_ptr<DocumentMetadataAccess_Impl> m_pImpl;
 };
 
 } // namespace sfx2

@@ -892,7 +892,7 @@ namespace sfx2
         DECL_LINK( OnToolboxClicked, ToolBox* );
         DECL_LINK( OnMenuItemSelected, Menu* );
         DECL_LINK( DockingChanged, TitledDockingWindow* );
-        ::std::auto_ptr< PopupMenu > impl_createPopupMenu() const;
+        ::std::unique_ptr< PopupMenu > impl_createPopupMenu() const;
 
         /// sets the given layout for the panel selector
         void    impl_setLayout( const PanelSelectorLayout i_eLayout, const bool i_bForce = false );
@@ -1018,7 +1018,7 @@ namespace sfx2
         {
             i_pToolBox->EndSelection();
 
-            ::std::auto_ptr< PopupMenu > pMenu = impl_createPopupMenu();
+            ::std::unique_ptr< PopupMenu > pMenu = impl_createPopupMenu();
             pMenu->SetSelectHdl( LINK( this, TaskPaneController_Impl, OnMenuItemSelected ) );
 
             // pass toolbox button rect so the menu can stay open on button up
@@ -1219,9 +1219,9 @@ namespace sfx2
     }
 
     // ---------------------------------------------------------------------------------------------------------------------
-    ::std::auto_ptr< PopupMenu > TaskPaneController_Impl::impl_createPopupMenu() const
+    ::std::unique_ptr< PopupMenu > TaskPaneController_Impl::impl_createPopupMenu() const
     {
-        ::std::auto_ptr<PopupMenu> pMenu( new PopupMenu );
+        ::std::unique_ptr<PopupMenu> pMenu( new PopupMenu );
         FloatingWindow* pMenuWindow = static_cast< FloatingWindow* >( pMenu->GetWindow() );
         if ( pMenuWindow != NULL )
         {

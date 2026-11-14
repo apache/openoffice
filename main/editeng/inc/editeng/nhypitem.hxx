@@ -58,6 +58,7 @@ public:
 			SetValue( rNHH.GetValue() );
 			return *this;
 		}
+	SvxNoHyphenItem(const SvxNoHyphenItem&) = default;
 };
 
 #endif

@@ -49,7 +49,7 @@ private:
     ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XDrawPage > m_xMainDrawPage;
     ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XDrawPage > m_xHiddenDrawPage;
 
-    std::auto_ptr< OutputDevice > m_apRefDevice;
+    std::unique_ptr< OutputDevice > m_apRefDevice;
 
 	//no default constructor
 	DrawModelWrapper();

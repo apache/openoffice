@@ -29,7 +29,7 @@
 #include <osl/mutex.hxx>
 #include "rtl/ustring.hxx"
 
-#include <hash_map>
+#include <unordered_map>
 
 /** Implementation of a least recently used (lru) cache.
 	<br>
@@ -45,7 +45,7 @@ class LRU_Cache
 		CacheEntry *		pPred;
 		CacheEntry *		pSucc;
 	};
-	typedef ::std::hash_map< t_Key, CacheEntry *, t_KeyHash, t_KeyEqual > t_Key2Element;
+	typedef ::std::unordered_map< t_Key, CacheEntry *, t_KeyHash, t_KeyEqual > t_Key2Element;
 
 	mutable ::osl::Mutex		_aCacheMutex;
 	sal_Int32					_nCachedElements;
@@ -224,8 +224,10 @@ inline void LRU_Cache< t_Key, t_Val, t_KeyHash, t_KeyEqual >::clear()
 }
 
 //==================================================================================================
-struct FctHashOUString : public ::std::unary_function< const ::rtl::OUString &, size_t >
+struct FctHashOUString
 {
+	typedef const ::rtl::OUString & argument_type;
+	typedef size_t result_type;
 	size_t operator()( const ::rtl::OUString & rKey ) const
 		{ return rKey.hashCode(); }
 };

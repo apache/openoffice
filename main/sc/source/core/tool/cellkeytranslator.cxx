@@ -35,7 +35,7 @@
 using ::com::sun::star::lang::Locale;
 using ::com::sun::star::uno::Sequence;
 using ::std::list;
-using ::std::hash_map;
+using ::std::unordered_map;
 using ::rtl::OUString;
 
 using namespace ::com::sun::star;
@@ -74,7 +74,7 @@ ScCellKeyword::ScCellKeyword(const sal_Char* pName, OpCode eOpCode, const Locale
 {
 }
 
-::std::auto_ptr<ScCellKeywordTranslator> ScCellKeywordTranslator::spInstance(NULL);
+::std::unique_ptr<ScCellKeywordTranslator> ScCellKeywordTranslator::spInstance;
 
 static void lclMatchKeyword(String& rName, const ScCellKeywordHashMap& aMap,
                             OpCode eOpCode = ocNone, const Locale* pLocale = NULL)

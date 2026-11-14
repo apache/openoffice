@@ -201,6 +201,7 @@ struct SectPageInformation
 	bool mbPageHdFtUsed;
 	SectPageInformation(const DocPageInformation &rDoc);
 	SectPageInformation(const SectPageInformation &rSect);
+	SectPageInformation& operator=(const SectPageInformation&) = default;
 };
 
 class rtfSection

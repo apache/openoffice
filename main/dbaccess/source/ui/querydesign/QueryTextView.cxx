@@ -91,7 +91,7 @@ OQueryTextView::OQueryTextView(OQueryContainerWindow* _pParent)
 OQueryTextView::~OQueryTextView()
 {
 	DBG_DTOR(OQueryTextView,NULL);
-	::std::auto_ptr<Window> aTemp(m_pEdit);
+	::std::unique_ptr<Window> aTemp(m_pEdit);
 	m_pEdit = NULL;
 }
 // -----------------------------------------------------------------------------

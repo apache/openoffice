@@ -64,27 +64,27 @@ namespace rptui
 	using namespace container;
 	using namespace report;
 //----------------------------------------------------------------------------
-::std::mem_fun_t<uno::Reference<report::XSection> , OGroupHelper> OGroupHelper::getMemberFunction(const Reference< XSection >& _xSection)
+::std::function<uno::Reference<report::XSection> (OGroupHelper*)> OGroupHelper::getMemberFunction(const Reference< XSection >& _xSection)
 {
-    ::std::mem_fun_t<uno::Reference<report::XSection> , OGroupHelper> pMemFunSection = ::std::mem_fun(&OGroupHelper::getFooter);
+    ::std::function<uno::Reference<report::XSection> (OGroupHelper*)> pMemFunSection = ::std::mem_fn(&OGroupHelper::getFooter);
     uno::Reference< report::XGroup> xGroup = _xSection->getGroup();
     if ( xGroup->getHeaderOn() && xGroup->getHeader() == _xSection )
-        pMemFunSection = ::std::mem_fun(&OGroupHelper::getHeader);
+        pMemFunSection = ::std::mem_fn(&OGroupHelper::getHeader);
     return pMemFunSection;
 }
 // -----------------------------------------------------------------------------
-::std::mem_fun_t<uno::Reference<report::XSection> , OReportHelper> OReportHelper::getMemberFunction(const Reference< XSection >& _xSection)
+::std::function<uno::Reference<report::XSection> (OReportHelper*)> OReportHelper::getMemberFunction(const Reference< XSection >& _xSection)
 {
     uno::Reference< report::XReportDefinition> xReportDefinition(_xSection->getReportDefinition());
-    ::std::mem_fun_t<uno::Reference<report::XSection> , OReportHelper> pMemFunSection = ::std::mem_fun(&OReportHelper::getReportFooter);
+    ::std::function<uno::Reference<report::XSection> (OReportHelper*)> pMemFunSection = ::std::mem_fn(&OReportHelper::getReportFooter);
     if ( xReportDefinition->getReportHeaderOn() && xReportDefinition->getReportHeader() == _xSection )
-        pMemFunSection = ::std::mem_fun(&OReportHelper::getReportHeader);
+        pMemFunSection = ::std::mem_fn(&OReportHelper::getReportHeader);
     else if ( xReportDefinition->getPageHeaderOn() && xReportDefinition->getPageHeader() == _xSection )
-        pMemFunSection = ::std::mem_fun(&OReportHelper::getPageHeader);
+        pMemFunSection = ::std::mem_fn(&OReportHelper::getPageHeader);
     else if ( xReportDefinition->getPageFooterOn() && xReportDefinition->getPageFooter() == _xSection )
-        pMemFunSection = ::std::mem_fun(&OReportHelper::getPageFooter);
+        pMemFunSection = ::std::mem_fn(&OReportHelper::getPageFooter);
     else if ( xReportDefinition->getDetail() == _xSection )
-        pMemFunSection = ::std::mem_fun(&OReportHelper::getDetail);
+        pMemFunSection = ::std::mem_fn(&OReportHelper::getDetail);
     return pMemFunSection;
 }
 
@@ -260,8 +260,8 @@ void OUndoContainerAction::Redo()
 // -----------------------------------------------------------------------------
 OUndoGroupSectionAction::OUndoGroupSectionAction(SdrModel& _rMod
 											 ,Action _eAction
-											 ,::std::mem_fun_t< uno::Reference< report::XSection >
-											        ,OGroupHelper> _pMemberFunction
+											 ,::std::function< uno::Reference< report::XSection >
+											        (OGroupHelper*)> _pMemberFunction
 									         ,const uno::Reference< report::XGroup >& _xGroup
 											 ,const Reference< XInterface > & xElem
                                              ,sal_uInt16 _nCommentId)
@@ -306,8 +306,8 @@ void OUndoGroupSectionAction::implReRemove( )
 //----------------------------------------------------------------------------
 OUndoReportSectionAction::OUndoReportSectionAction(SdrModel& _rMod
 											 ,Action _eAction
-											 ,::std::mem_fun_t< uno::Reference< report::XSection >
-											    ,OReportHelper> _pMemberFunction
+											 ,::std::function< uno::Reference< report::XSection >
+											    (OReportHelper*)> _pMemberFunction
 									         ,const uno::Reference< report::XReportDefinition >& _xReport
 											 ,const Reference< XInterface > & xElem
                                              ,sal_uInt16 _nCommentId)
@@ -408,8 +408,8 @@ String ORptUndoPropertyAction::GetComment() const
 // -----------------------------------------------------------------------------
 OUndoPropertyGroupSectionAction::OUndoPropertyGroupSectionAction(SdrModel& _rMod
 											 ,const PropertyChangeEvent& evt
-											 ,::std::mem_fun_t< uno::Reference< report::XSection >
-											        ,OGroupHelper> _pMemberFunction
+											 ,::std::function< uno::Reference< report::XSection >
+											        (OGroupHelper*)> _pMemberFunction
 									         ,const uno::Reference< report::XGroup >& _xGroup
                                              )
 :ORptUndoPropertyAction(_rMod,evt)
@@ -425,8 +425,8 @@ Reference< XPropertySet> OUndoPropertyGroupSectionAction::getObject()
 // -----------------------------------------------------------------------------
 OUndoPropertyReportSectionAction::OUndoPropertyReportSectionAction(SdrModel& _rMod
 											 ,const PropertyChangeEvent& evt
-											 ,::std::mem_fun_t< uno::Reference< report::XSection >
-											    ,OReportHelper> _pMemberFunction
+											 ,::std::function< uno::Reference< report::XSection >
+											    (OReportHelper*)> _pMemberFunction
 									         ,const uno::Reference< report::XReportDefinition >& _xReport
                                              )
 :ORptUndoPropertyAction(_rMod,evt)

@@ -27,7 +27,7 @@
 #include <rtl/alloc.h>
 #include <rtl/ustring.hxx>
 #include <osl/mutex.hxx>
-#include <hash_map>
+#include <unordered_map>
 
 #include <functional>
 #include <list>
@@ -151,7 +151,7 @@ struct hashModule
 	}
 };
 
-typedef std::hash_map<
+typedef std::unordered_map<
 	const oslModule,
 	std::pair<sal_uInt32, component_canUnloadFunc>,
 	hashModule,
@@ -299,7 +299,7 @@ struct hashListener
 	}
 };
 
-typedef std::hash_map<
+typedef std::unordered_map<
 	const sal_Int32,
 	std::pair<rtl_unloadingListenerFunc, void*>,
 	hashListener,

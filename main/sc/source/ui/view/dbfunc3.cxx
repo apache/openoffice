@@ -69,8 +69,8 @@
 #include "cell.hxx"
 #include "userlist.hxx"
 
-#include <hash_set>
-#include <hash_map>
+#include <unordered_set>
+#include <unordered_map>
 #include <memory>
 #include <list>
 #include <vector>
@@ -86,11 +86,11 @@ using ::com::sun::star::sheet::XDimensionsSupplier;
 using ::rtl::OUString;
 using ::rtl::OUStringHash;
 using ::rtl::OUStringBuffer;
-using ::std::auto_ptr;
+using ::std::unique_ptr;
 using ::std::list;
 using ::std::vector;
-using ::std::hash_map;
-using ::std::hash_set;
+using ::std::unordered_map;
+using ::std::unordered_set;
 
 // STATIC DATA -----------------------------------------------------------
 
@@ -1786,7 +1786,7 @@ bool ScDBFunc::DataPilotSort( const ScAddress& rPos, bool bAscending, sal_uInt16
 		typedef ScDPSaveDimension::MemberList MemList;
 		const MemList& rDimMembers = pSaveDim->GetMembers();
 		list<OUString> aMembers;
-		hash_set<OUString, ::rtl::OUStringHash> aMemberSet;
+		unordered_set<OUString, ::rtl::OUStringHash> aMemberSet;
 		size_t nMemberCount = 0;
 		for (MemList::const_iterator itr = rDimMembers.begin(), itrEnd = rDimMembers.end();
 			 itr != itrEnd; ++itr)
@@ -1803,7 +1803,7 @@ bool ScDBFunc::DataPilotSort( const ScAddress& rPos, bool bAscending, sal_uInt16
 
 		// Collect and rank those custom sort strings that also exist in the member name list.
 
-		typedef hash_map<OUString, sal_uInt16, OUStringHash> UserSortMap;
+		typedef unordered_map<OUString, sal_uInt16, OUStringHash> UserSortMap;
 		UserSortMap aSubStrs;
 		sal_uInt16 nSubCount = 0;
 		if (pUserListId)
@@ -1888,7 +1888,7 @@ bool ScDBFunc::DataPilotSort( const ScAddress& rPos, bool bAscending, sal_uInt16
 
 	// Update the datapilot with the newly sorted field members.
 
-	auto_ptr<ScDPObject> pNewObj(new ScDPObject(*pDPObj));
+	unique_ptr<ScDPObject> pNewObj(new ScDPObject(*pDPObj));
 	pNewObj->SetSaveData(aNewSaveData);
 	ScDBDocFunc aFunc(*GetViewData()->GetDocShell());
 
@@ -1907,7 +1907,7 @@ sal_Bool ScDBFunc::DataPilotMove( const ScRange& rSource, const ScAddress& rDest
 		bool bValid = ( aDestData.Dimension >= 0 ); // dropping onto a field
 
 		// look through the source range
-		std::hash_set< rtl::OUString, rtl::OUStringHash, std::equal_to<rtl::OUString> > aMembersSet; // for lookup
+		std::unordered_set< rtl::OUString, rtl::OUStringHash, std::equal_to<rtl::OUString> > aMembersSet; // for lookup
 		std::vector< rtl::OUString > aMembersVector; // members in original order, for inserting
 		aMembersVector.reserve( std::max( static_cast<SCSIZE>( rSource.aEnd.Col() - rSource.aStart.Col() + 1 ),
 										  static_cast<SCSIZE>( rSource.aEnd.Row() - rSource.aStart.Row() + 1 ) ) );
@@ -2143,7 +2143,7 @@ void ScDBFunc::ShowDataPilotSourceData( ScDPObject& rDPObj, const Sequence<sheet
 
 	SCTAB nNewTab = GetViewData()->GetTabNo();
 
-	auto_ptr<ScDocument> pInsDoc(new ScDocument(SCDOCMODE_CLIP));
+	unique_ptr<ScDocument> pInsDoc(new ScDocument(SCDOCMODE_CLIP));
 	pInsDoc->ResetClip( pDoc, nNewTab );
 	for (SCROW nRow = 0; nRow < nRowSize; ++nRow)
 	{

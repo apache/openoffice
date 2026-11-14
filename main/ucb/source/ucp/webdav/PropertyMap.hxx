@@ -24,7 +24,7 @@
 #ifndef _WEBDAV_UCP_PROPERTYMAP_HXX
 #define _WEBDAV_UCP_PROPERTYMAP_HXX
 
-#include <hash_set>
+#include <unordered_set>
 #include <com/sun/star/beans/Property.hpp>
 
 namespace http_dav_ucp {
@@ -48,7 +48,7 @@ struct hashPropertyName
 	}
 };
 
-typedef std::hash_set
+typedef std::unordered_set
 <
 	::com::sun::star::beans::Property,
 	hashPropertyName,

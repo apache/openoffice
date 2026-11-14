@@ -53,7 +53,7 @@ class ODbDataSourceAdministrationHelper;
 	//========================================================================
 	class OTableSubscriptionDialog : public SfxSingleTabDialog, public IItemSetHelper
 	{
-		::std::auto_ptr<ODbDataSourceAdministrationHelper>	m_pImpl;
+		::std::unique_ptr<ODbDataSourceAdministrationHelper>	m_pImpl;
 		sal_Bool m_bStopExecution; // set when the dialog should not be executed
 
 		DECL_LINK( OKClickHdl, OKButton* );

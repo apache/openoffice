@@ -40,6 +40,7 @@
 #include <comphelper/componentcontext.hxx>
 
 #include <memory>
+#include <functional>
 
 namespace com { namespace sun { namespace star { namespace util {
 	class XNumberFormatsSupplier;
@@ -80,7 +81,7 @@ namespace dbaccess
 			OrderColumns		= 2,
 			ParameterColumns	= 3
 		};
-        typedef ::std::const_mem_fun_t< const ::connectivity::OSQLParseNode*, ::connectivity::OSQLParseTreeIterator >
+        typedef ::std::function< const ::connectivity::OSQLParseNode*(const ::connectivity::OSQLParseTreeIterator*) >
                                                 TGetParseNode;
 		::connectivity::OSQLParser				m_aSqlParser;
 		::connectivity::OSQLParseTreeIterator	m_aSqlIterator;         // the iterator for the complete statement
@@ -138,7 +139,7 @@ namespace dbaccess
 
 		void setConditionByColumn( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& column
 								, sal_Bool andCriteria
-								,::std::mem_fun1_t<bool,OSingleSelectQueryComposer,::rtl::OUString>& _aSetFunctor
+								,::std::function<bool(OSingleSelectQueryComposer*,::rtl::OUString)>& _aSetFunctor
                                 ,sal_Int32 filterOperator);
 
 		/** getStructuredCondition returns the structured condition for the where or having clause

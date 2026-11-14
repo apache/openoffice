@@ -60,8 +60,11 @@ class SvNumberFormatter;
 namespace dbaui
 {
 	//------------------------------------------------------------------
-	struct SbaURLCompare : public ::std::binary_function< ::com::sun::star::util::URL, ::com::sun::star::util::URL, bool>
+	struct SbaURLCompare
 	{
+		typedef ::com::sun::star::util::URL first_argument_type;
+		typedef ::com::sun::star::util::URL second_argument_type;
+		typedef bool result_type;
 		bool operator() (const ::com::sun::star::util::URL& x, const ::com::sun::star::util::URL& y) const {return x.Complete == y.Complete ? true : false;}
 	};
 

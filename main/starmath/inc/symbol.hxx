@@ -132,8 +132,11 @@ typedef std::map< String, SmSym, lt_String >    SymbolMap_t;
 // vector of pointers to the actual symbols in the above container
 typedef std::vector< const SmSym * >            SymbolPtrVec_t;
 
-struct lt_SmSymPtr : public std::binary_function< const SmSym *, const SmSym *, bool >
+struct lt_SmSymPtr
 {
+    typedef const SmSym * first_argument_type;
+    typedef const SmSym * second_argument_type;
+    typedef bool result_type;
     bool operator() ( const SmSym *pSym1, const SmSym *pSym2 )
     {
         return pSym1->GetCharacter() < pSym2->GetCharacter();

@@ -214,8 +214,10 @@ XMLTag::Pointer_t PropertyMap::toTag() const
 
   -----------------------------------------------------------------------*/
 template<class T>
-    struct removeExistingElements : public ::std::unary_function<T, void>
+    struct removeExistingElements
 {
+  typedef T argument_type;
+  typedef void result_type;
   PropertyMap& rMap;
 
   removeExistingElements(PropertyMap& _rMap ) : rMap(_rMap) {}

@@ -110,7 +110,7 @@ Image MasterPageDescriptor::GetPreview (MasterPageContainer::PreviewSize eSize)
 
 
 
-::std::auto_ptr<std::vector<MasterPageContainerChangeEvent::EventType> >
+::std::unique_ptr<std::vector<MasterPageContainerChangeEvent::EventType> >
     MasterPageDescriptor::Update (
         const MasterPageDescriptor& rDescriptor)
 {
@@ -162,7 +162,7 @@ Image MasterPageDescriptor::GetPreview (MasterPageContainer::PreviewSize eSize)
      }
 
      // Prepare the list of event types that will be returned.
-     ::std::auto_ptr<std::vector<MasterPageContainerChangeEvent::EventType> > pResult;
+     ::std::unique_ptr<std::vector<MasterPageContainerChangeEvent::EventType> > pResult;
      if (bDataChanged || bIndexChanged || bPreviewChanged)
      {
          pResult.reset(new std::vector<MasterPageContainerChangeEvent::EventType>());

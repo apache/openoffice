@@ -24,7 +24,7 @@
 #ifndef __FRAMEWORK_UICONFIGURATION_IMAGETYPE_HXX_
 #define __FRAMEWORK_UICONFIGURATION_IMAGETYPE_HXX_
 
-#include <hash_map>
+#include <unordered_map>
 #include <rtl/ustring.hxx>
 
 namespace framework
@@ -39,11 +39,11 @@ enum ImageType
     ImageType_COUNT
 };
 
-typedef std::hash_map< rtl::OUString,
+typedef std::unordered_map< rtl::OUString,
                        rtl::OUString,
                        rtl::OUStringHash,
                        ::std::equal_to< ::rtl::OUString > > CommandToImageNameMap;
-typedef std::hash_map< rtl::OUString,
+typedef std::unordered_map< rtl::OUString,
                        bool,
                        rtl::OUStringHash,
                        ::std::equal_to< ::rtl::OUString > > CommandMap;

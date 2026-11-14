@@ -616,7 +616,7 @@ XclPTFieldExtInfo::XclPTFieldExtInfo() :
     mnSortField( EXC_SXVDEX_SORT_OWN ),
     mnShowField( EXC_SXVDEX_SHOW_NONE ),
     mnNumFmt(0),
-    mpFieldTotalName(NULL)
+    mpFieldTotalName()
 {
 }
 

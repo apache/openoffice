@@ -258,11 +258,11 @@ OFieldDescControl::~OFieldDescControl()
 	DBG_DTOR(OFieldDescControl,NULL);
 
 	{
-		::std::auto_ptr<Window> aTemp(m_pVertScroll);
+		::std::unique_ptr<Window> aTemp(m_pVertScroll);
 		m_pVertScroll	 = NULL;
 	}
 	{
-		::std::auto_ptr<Window> aTemp(m_pHorzScroll);
+		::std::unique_ptr<Window> aTemp(m_pHorzScroll);
 		m_pHorzScroll	 = NULL;
 	}
     if ( m_bAdded )

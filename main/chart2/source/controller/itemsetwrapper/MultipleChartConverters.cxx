@@ -55,7 +55,7 @@ AllAxisItemConverter::AllAxisItemConverter(
     SfxItemPool& rItemPool,
     SdrModel& rDrawModel,
     const uno::Reference< lang::XMultiServiceFactory > & /*xNamedPropertyContainerFactory*/,
-    ::std::auto_ptr< awt::Size > pRefSize )
+    ::std::unique_ptr< awt::Size > pRefSize )
         : MultipleItemConverter( rItemPool )
 {
     Reference< XDiagram > xDiagram( ChartModelHelper::findDiagram( xChartModel ) );
@@ -67,7 +67,7 @@ AllAxisItemConverter::AllAxisItemConverter(
             m_aConverters.push_back( new ::chart::wrapper::AxisItemConverter(
                                          xObjectProperties, rItemPool, rDrawModel,
                                          uno::Reference< chart2::XChartDocument >( xChartModel, uno::UNO_QUERY ), 0, 0,
-                                         ::std::auto_ptr< awt::Size >( new awt::Size( *pRefSize )) ));
+                                         ::std::unique_ptr< awt::Size >( new awt::Size( *pRefSize )) ));
         else
             m_aConverters.push_back( new ::chart::wrapper::AxisItemConverter(
                                          xObjectProperties, rItemPool, rDrawModel,
@@ -122,7 +122,7 @@ AllDataLabelItemConverter::AllDataLabelItemConverter(
     SfxItemPool& rItemPool,
     SdrModel& rDrawModel,
     const uno::Reference< lang::XMultiServiceFactory > & xNamedPropertyContainerFactory,
-    ::std::auto_ptr< awt::Size > pRefSize )
+    ::std::unique_ptr< awt::Size > pRefSize )
         : MultipleItemConverter( rItemPool )
 {
     ::std::vector< uno::Reference< chart2::XDataSeries > > aSeriesList(
@@ -143,7 +143,7 @@ AllDataLabelItemConverter::AllDataLabelItemConverter(
                                          xObjectProperties, *aIt, rItemPool, rDrawModel, NULL,
                                          xNamedPropertyContainerFactory,
                                          GraphicPropertyItemConverter::FILLED_DATA_POINT,
-                                         ::std::auto_ptr< awt::Size >( pRefSize.get() ? new awt::Size( *pRefSize ) : 0),
+                                         ::std::unique_ptr< awt::Size >( pRefSize.get() ? new awt::Size( *pRefSize ) : 0),
                                          true, /*bDataSeries*/
                                          false, /*bUseSpecialFillColor*/
                                          0, /*nSpecialFillColor*/
@@ -170,7 +170,7 @@ AllTitleItemConverter::AllTitleItemConverter(
     SfxItemPool& rItemPool,
     SdrModel& rDrawModel,
     const uno::Reference< lang::XMultiServiceFactory > & xNamedPropertyContainerFactory,
-    ::std::auto_ptr< awt::Size > pRefSize )
+    ::std::unique_ptr< awt::Size > pRefSize )
         : MultipleItemConverter( rItemPool )
 {
     for(sal_Int32 nTitle = TitleHelper::TITLE_BEGIN; nTitle < TitleHelper::NORMAL_TITLE_END; nTitle++ )
@@ -179,11 +179,11 @@ AllTitleItemConverter::AllTitleItemConverter(
         if(!xTitle.is())
             continue;
         uno::Reference< beans::XPropertySet > xObjectProperties( xTitle, uno::UNO_QUERY);
-        ::std::auto_ptr< awt::Size > pSingleRefSize(0);
+        ::std::unique_ptr< awt::Size > pSingleRefSize;
         if( pRefSize.get())
-            pSingleRefSize = ::std::auto_ptr< awt::Size >( new awt::Size( *pRefSize ));
+            pSingleRefSize = ::std::unique_ptr< awt::Size >( new awt::Size( *pRefSize ));
         m_aConverters.push_back( new ::chart::wrapper::TitleItemConverter(
-                                     xObjectProperties, rItemPool, rDrawModel, xNamedPropertyContainerFactory, pSingleRefSize ));
+                                     xObjectProperties, rItemPool, rDrawModel, xNamedPropertyContainerFactory, std::move(pSingleRefSize) ));
     }
 }
 

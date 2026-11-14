@@ -26,7 +26,7 @@
 #include <memory>
 #include <utility>
 #include <vector>
-#include <hash_map>
+#include <unordered_map>
 #include "com/sun/star/container/XNameAccess.hpp"
 #include "com/sun/star/io/XInputStream.hpp"
 #include "com/sun/star/lang/Locale.hpp"
@@ -67,7 +67,7 @@ rtl::OUString createPath(
     return b.makeStringAndClear();
 }
 
-std::auto_ptr< SvStream > wrapStream(
+std::unique_ptr< SvStream > wrapStream(
     css::uno::Reference< css::io::XInputStream > const & stream)
 {
     // This could use SvInputStream instead if that did not have a broken
@@ -75,7 +75,7 @@ std::auto_ptr< SvStream > wrapStream(
     // (cf. "@@@" at tags/DEV300_m37/svtools/source/misc1/strmadpt.cxx@264807
     // l. 593):
     OSL_ASSERT(stream.is());
-    std::auto_ptr< SvStream > s(new SvMemoryStream);
+    std::unique_ptr< SvStream > s(new SvMemoryStream);
     for (;;) {
         css::uno::Sequence< sal_Int8 > data;
         sal_Int32 const size = 30000;
@@ -93,7 +93,7 @@ void loadFromStream(
     css::uno::Reference< css::io::XInputStream > const & stream,
     rtl::OUString const & path, BitmapEx & bitmap)
 {
-    std::auto_ptr< SvStream > s(wrapStream(stream));
+    std::unique_ptr< SvStream > s(wrapStream(stream));
     if (path.endsWithAsciiL(RTL_CONSTASCII_STRINGPARAM(".png")))
 	{
 		vcl::PNGReader aPNGReader( *s );

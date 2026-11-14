@@ -419,7 +419,7 @@ protected: //member
     long m_nTimeResolution;
     Date m_aNullDate;
 
-    ::std::auto_ptr< NumberFormatterWrapper > m_apNumberFormatterWrapper;
+    ::std::unique_ptr< NumberFormatterWrapper > m_apNumberFormatterWrapper;
     AxesNumberFormats                         m_aAxesNumberFormats;//direct numberformats on axes, if empty ask the data series instead
 
     ::com::sun::star::uno::Reference<

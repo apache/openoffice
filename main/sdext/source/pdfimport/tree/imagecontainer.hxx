@@ -32,7 +32,7 @@
 #include <com/sun/star/awt/XBitmap.hpp>
 
 #include <vector>
-#include <hash_map>
+#include <unordered_map>
 
 namespace pdfi
 {

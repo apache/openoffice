@@ -57,7 +57,7 @@ public:
                             const OUString& rNamespace );
 
 private:
-    typedef ::std::hash_map< OUString, Reference< XSingleComponentFactory >, OUStringHash > FactoryMap;
+    typedef ::std::unordered_map< OUString, Reference< XSingleComponentFactory >, OUStringHash > FactoryMap;
 
     Reference< XComponentContext > mxContext;   /// Global component context.
     FactoryMap          maFactories;            /// All parser factories, mapped by formula namespace.

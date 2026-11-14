@@ -114,7 +114,7 @@ namespace dbmm
                     getCompleteLog() const;
 
     private:
-        ::std::auto_ptr< MigrationLog_Data >    m_pData;
+        ::std::unique_ptr< MigrationLog_Data >    m_pData;
 	};
 
 //........................................................................

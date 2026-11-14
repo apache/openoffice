@@ -212,7 +212,7 @@ class BackendImpl : public ImplBaseT
     const Reference<deployment::XPackageTypeInfo> m_xLegacyBundleTypeInfo;
     Sequence< Reference<deployment::XPackageTypeInfo> > m_typeInfos;
 
-    std::auto_ptr<ExtensionBackendDb> m_backendDb;
+    std::unique_ptr<ExtensionBackendDb> m_backendDb;
 
     void addDataToDb(OUString const & url, ExtensionBackendDb::Data const & data);
     ExtensionBackendDb::Data readDataFromDb(OUString const & url);
@@ -246,8 +246,12 @@ public:
 };
 
 //Used to find a XPackage with a particular URL
-class XPackage_eq : public std::unary_function<Reference<deployment::XPackage>, bool>
+class XPackage_eq
 {
+public:
+    typedef Reference<deployment::XPackage> argument_type;
+    typedef bool result_type;
+private:
     OUString m_URL;
 public:
     explicit XPackage_eq(const OUString & s) : m_URL(s) {}

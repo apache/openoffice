@@ -26,7 +26,7 @@
 
 #include <vcl/bitmapex.hxx>
 
-#include <hash_map>
+#include <unordered_map>
 
 // ----------------
 // - ImplImageBmp -
@@ -107,7 +107,7 @@ struct ImageAryData
 struct ImplImageList
 {
     typedef std::vector<ImageAryData *> ImageAryDataVec;
-    typedef std::hash_map< rtl::OUString, ImageAryData *, rtl::OUStringHash >
+    typedef std::unordered_map< rtl::OUString, ImageAryData *, rtl::OUStringHash >
         ImageAryDataNameHash;
 
     ImageAryDataVec             maImages;

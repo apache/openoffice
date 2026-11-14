@@ -75,7 +75,7 @@ namespace basctl
         DocumentSignature();        // not implemented
 
     private:
-        ::std::auto_ptr< DocumentSignature_Data >   m_pData;
+        ::std::unique_ptr< DocumentSignature_Data >   m_pData;
 	};
 
 //........................................................................

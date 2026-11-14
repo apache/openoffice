@@ -48,7 +48,7 @@
 
 #include "externalrefmgr.hxx"
 
-#include <hash_map>
+#include <unordered_map>
 #include <vector>
 
 class ScAreaLink;

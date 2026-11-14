@@ -113,9 +113,9 @@ OJoinDesignView::OJoinDesignView(Window* _pParent, OJoinController& _rController
 // -----------------------------------------------------------------------------
 OJoinDesignView::~OJoinDesignView()
 {
-	::std::auto_ptr<Window> aT3(m_pScrollWindow);
+	::std::unique_ptr<Window> aT3(m_pScrollWindow);
 	m_pScrollWindow = NULL;
-	::std::auto_ptr<Window> aT2(m_pTableView);
+	::std::unique_ptr<Window> aT2(m_pTableView);
 	m_pTableView = NULL;
 }
 // -------------------------------------------------------------------------

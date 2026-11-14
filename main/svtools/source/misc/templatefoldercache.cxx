@@ -202,11 +202,11 @@ namespace svt
 	//---------------------------------------------------------------------
 	/// compares two TemplateContent by URL
 	struct TemplateContentURLLess
-		:public ::std::binary_function	<	::vos::ORef< TemplateContent >
-										,	::vos::ORef< TemplateContent >
-										,	bool
-										>
+
 	{
+		typedef ::vos::ORef< TemplateContent > first_argument_type;
+		typedef ::vos::ORef< TemplateContent > second_argument_type;
+		typedef bool result_type;
 		bool operator() ( const ::vos::ORef< TemplateContent >& _rxLHS, const ::vos::ORef< TemplateContent >& _rxRHS ) const
 		{
 			return	_rxLHS->getURL() < _rxRHS->getURL()
@@ -217,8 +217,10 @@ namespace svt
 
 	//---------------------------------------------------------------------
 	/// sorts the sib contents of a TemplateFolderContent
-	struct SubContentSort : public ::std::unary_function< ::vos::ORef< TemplateContent >, void >
+	struct SubContentSort
 	{
+		typedef ::vos::ORef< TemplateContent > argument_type;
+		typedef void result_type;
 		void operator() ( TemplateFolderContent& _rFolder ) const
 		{
 			// sort the directory by name
@@ -248,11 +250,11 @@ namespace svt
 	/** does a deep compare of two template contents
 	*/
 	struct TemplateContentEqual
-		:public ::std::binary_function	<	::vos::ORef< TemplateContent >
-										,	::vos::ORef< TemplateContent >
-										,	bool
-										>
+
 	{
+		typedef ::vos::ORef< TemplateContent > first_argument_type;
+		typedef ::vos::ORef< TemplateContent > second_argument_type;
+		typedef bool result_type;
 		//.................................................................
 		bool operator() (const ::vos::ORef< TemplateContent >& _rLHS, const ::vos::ORef< TemplateContent >& _rRHS )
 		{
@@ -301,9 +303,10 @@ namespace svt
 	//---------------------------------------------------------------------
 	/// functor which allows storing a string
 	struct StoreString
-			:public ::std::unary_function< String, void >
-			,public StorageHelper
+			:public StorageHelper
 	{
+		typedef String argument_type;
+		typedef void result_type;
 		StoreString( SvStream& _rStorage ) : StorageHelper( _rStorage ) { }
 
 		void operator() ( const String& _rString ) const
@@ -315,9 +318,10 @@ namespace svt
 	//---------------------------------------------------------------------
 	/// functor which stores the local name of a TemplateContent
 	struct StoreLocalContentName
-			:public ::std::unary_function< ::vos::ORef< TemplateContent >, void >
-			,public StoreString
+			:public StoreString
 	{
+		typedef ::vos::ORef< TemplateContent > argument_type;
+		typedef void result_type;
 		StoreLocalContentName( SvStream& _rStorage ) : StoreString( _rStorage ) { }
 
 		void operator() ( const ::vos::ORef< TemplateContent >& _rxContent ) const
@@ -331,9 +335,10 @@ namespace svt
 
 	//---------------------------------------------------------------------
 	struct StoreContentURL
-			:public ::std::unary_function< ::vos::ORef< TemplateContent >, void >
-			,public StoreString
+			:public StoreString
 	{
+        typedef ::vos::ORef< TemplateContent > argument_type;
+        typedef void result_type;
         uno::Reference< util::XOfficeInstallationDirectories > m_xOfficeInstDirs;
 
         StoreContentURL( SvStream& _rStorage,
@@ -356,9 +361,10 @@ namespace svt
 	//---------------------------------------------------------------------
 	/// functor which stores the complete content of a TemplateContent
 	struct StoreFolderContent
-			:public ::std::unary_function< ::vos::ORef< TemplateContent >, void >
-			,public StorageHelper
+			:public StorageHelper
 	{
+        typedef ::vos::ORef< TemplateContent > argument_type;
+        typedef void result_type;
         uno::Reference< util::XOfficeInstallationDirectories > m_xOfficeInstDirs;
 
 	public:
@@ -404,9 +410,10 @@ namespace svt
 	//---------------------------------------------------------------------
 	/// functor which reads a complete TemplateContent instance
 	struct ReadFolderContent
-			:public ::std::unary_function< ::vos::ORef< TemplateContent >, void >
-			,public StorageHelper
+			:public StorageHelper
 	{
+        typedef ::vos::ORef< TemplateContent > argument_type;
+        typedef void result_type;
         uno::Reference< util::XOfficeInstallationDirectories > m_xOfficeInstDirs;
 
 		ReadFolderContent( SvStream& _rStorage,

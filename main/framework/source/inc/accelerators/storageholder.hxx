@@ -90,7 +90,7 @@ class StorageHolder : private ThreadHelpBase // attention! Must be the first bas
         };
 
         /** @short  TODO */
-        typedef ::std::hash_map< ::rtl::OUString                    ,
+        typedef ::std::unordered_map< ::rtl::OUString                    ,
                                  TStorageInfo                       ,
                                  ::rtl::OUStringHash                ,
                                  ::std::equal_to< ::rtl::OUString > > TPath2StorageInfo;

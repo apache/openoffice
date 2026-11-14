@@ -68,6 +68,9 @@ class SwSubFont : public SvxFont
 
 	sal_Bool operator==( const SwFont &rFnt ) const;
 	SwSubFont& operator=( const SwSubFont &rFont );
+public:
+	SwSubFont(const SwSubFont&) = default;
+private:
 
 	short _CheckKerning( );
 

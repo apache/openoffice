@@ -71,7 +71,7 @@
 #include "outdev.h"
 
 
-#include <hash_set>
+#include <unordered_set>
 
 #ifdef ENABLE_GRAPHITE
 #include <graphite_layout.hxx>

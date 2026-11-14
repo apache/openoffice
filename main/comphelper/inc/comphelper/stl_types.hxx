@@ -55,13 +55,19 @@ namespace comphelper
 // comparison functors
 
 //------------------------------------------------------------------------
-struct UStringLess : public ::std::binary_function< ::rtl::OUString, ::rtl::OUString, bool>
+struct UStringLess
 {
+    typedef ::rtl::OUString first_argument_type;
+    typedef ::rtl::OUString second_argument_type;
+    typedef bool result_type;
     bool operator() (const ::rtl::OUString& x, const ::rtl::OUString& y) const { return x < y ? true : false;}      // construct prevents a MSVC6 warning
 };
 //------------------------------------------------------------------------
-struct UStringMixLess : public ::std::binary_function< ::rtl::OUString, ::rtl::OUString, bool>
+struct UStringMixLess
 {
+    typedef ::rtl::OUString first_argument_type;
+    typedef ::rtl::OUString second_argument_type;
+    typedef bool result_type;
     bool m_bCaseSensitive;
 public:
     UStringMixLess(bool bCaseSensitive = true):m_bCaseSensitive(bCaseSensitive){}
@@ -107,8 +113,13 @@ public:
     sal_Bool isCaseSensitive() const {return m_bCaseSensitive;}
 };
 //------------------------------------------------------------------------
-class TStringMixEqualFunctor : public ::std::binary_function< ::rtl::OUString,::rtl::OUString,bool>
+class TStringMixEqualFunctor
 {
+public:
+    typedef ::rtl::OUString first_argument_type;
+    typedef ::rtl::OUString second_argument_type;
+    typedef bool result_type;
+private:
     sal_Bool m_bCaseSensitive;
 
 public:
@@ -122,9 +133,12 @@ public:
     sal_Bool isCaseSensitive() const {return m_bCaseSensitive;}
 };
 //------------------------------------------------------------------------
-class TPropertyValueEqualFunctor : public ::std::binary_function< ::com::sun::star::beans::PropertyValue,::rtl::OUString,bool>
+class TPropertyValueEqualFunctor
 {
 public:
+    typedef ::com::sun::star::beans::PropertyValue first_argument_type;
+    typedef ::rtl::OUString second_argument_type;
+    typedef bool result_type;
     TPropertyValueEqualFunctor()
 	{}
     bool operator() (const ::com::sun::star::beans::PropertyValue& lhs, const ::rtl::OUString& rhs) const
@@ -153,11 +167,11 @@ public:
 */
 template < class IAFCE >
 struct OInterfaceCompare
-	:public ::std::binary_function	<	::com::sun::star::uno::Reference< IAFCE >
-									,	::com::sun::star::uno::Reference< IAFCE >
-									,	bool
-									>
+
 {
+	typedef ::com::sun::star::uno::Reference< IAFCE > first_argument_type;
+	typedef ::com::sun::star::uno::Reference< IAFCE > second_argument_type;
+	typedef bool result_type;
 	bool operator() (const ::com::sun::star::uno::Reference< IAFCE >& lhs, const ::com::sun::star::uno::Reference< IAFCE >& rhs) const
 	{
 		return lhs.get() < rhs.get();
@@ -169,8 +183,13 @@ struct OInterfaceCompare
 };
 
 template <class _Tp, class _Arg>
-class mem_fun1_t : public ::std::binary_function<_Tp*,_Arg,void>
+class mem_fun1_t
 {
+public:
+	typedef _Tp* first_argument_type;
+	typedef _Arg second_argument_type;
+	typedef void result_type;
+private:
 	typedef void (_Tp::*_fun_type)(_Arg);
 public:
 	explicit mem_fun1_t(_fun_type __pf) : _M_f(__pf) {}

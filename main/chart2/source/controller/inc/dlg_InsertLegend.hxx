@@ -43,7 +43,7 @@ class LegendPositionResources;
 class SchLegendDlg : public ModalDialog
 {
 private:
-	::std::auto_ptr< LegendPositionResources >    m_apLegendPositionResources;
+	::std::unique_ptr< LegendPositionResources >    m_apLegendPositionResources;
 
 	OKButton		aBtnOK;
 	CancelButton	aBtnCancel;

@@ -27,7 +27,7 @@
 #include "tools/IconCache.hxx"
 
 #include "sdresid.hxx"
-#include <hash_map>
+#include <unordered_map>
 #include <osl/doublecheckedlocking.h>
 #include <osl/getglobalmutex.hxx>
 
@@ -46,7 +46,7 @@ private:
     */
     static IconCache* mpInstance;
 
-    typedef ::std::hash_map<sal_uInt16,Image> ImageContainer;
+    typedef ::std::unordered_map<sal_uInt16,Image> ImageContainer;
     ImageContainer maContainer;
 
     Image GetIcon (sal_uInt16 nResourceId);
@@ -87,7 +87,7 @@ IconCache& IconCache::Instance (void)
         {
             IconCache* pCache = new IconCache ();
             SdGlobalResourceContainer::Instance().AddResource (
-                ::std::auto_ptr<SdGlobalResource>(pCache));
+                ::std::unique_ptr<SdGlobalResource>(pCache));
             OSL_DOUBLE_CHECKED_LOCKING_MEMORY_BARRIER();
             Implementation::mpInstance = pCache;
         }

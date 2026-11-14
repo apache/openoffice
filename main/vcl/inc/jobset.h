@@ -27,7 +27,7 @@
 #include <tools/string.hxx>
 #include <vcl/sv.h>
 #include <vcl/prntypes.hxx>
-#include <hash_map>
+#include <unordered_map>
 #include <rtl/ustring.hxx>
 
 // ------------------
@@ -60,7 +60,7 @@ struct ImplJobSetup
 	long			mnPaperHeight;		// paper height (100th mm)
 	sal_uIntPtr			mnDriverDataLen;	// length of system specific data
 	sal_uInt8*			mpDriverData;		// system specific data (will be streamed a byte block)
-	::std::hash_map< ::rtl::OUString, ::rtl::OUString, ::rtl::OUStringHash >			maValueMap;
+	::std::unordered_map< ::rtl::OUString, ::rtl::OUString, ::rtl::OUStringHash >			maValueMap;
 
 					ImplJobSetup();
 					ImplJobSetup( const ImplJobSetup& rJobSetup );

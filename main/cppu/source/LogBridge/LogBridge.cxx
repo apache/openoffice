@@ -34,7 +34,7 @@
 #include "rtl/logfile.hxx"
 #include "uno/environment.hxx"
 #include <com/sun/star/uno/Type.hxx>
-#include <hash_map>
+#include <unordered_map>
 #include <memory>
 
 namespace
@@ -216,7 +216,7 @@ void LogProbe(
 	void                              * pArgs[],
 	uno_Any                          ** ppException )
 {
-    static ::std::auto_ptr< ::rtl::Logfile> pLogger;
+    static ::std::unique_ptr< ::rtl::Logfile> pLogger;
     ::rtl::OString sTemp;
     if ( pMemberType && pMemberType->pTypeName )
         sTemp = ::rtl::OUStringToOString(pMemberType->pTypeName,RTL_TEXTENCODING_ASCII_US);

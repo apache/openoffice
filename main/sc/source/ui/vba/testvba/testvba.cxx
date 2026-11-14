@@ -63,7 +63,7 @@ using ::com::sun::star::ucb::XSimpleFileAccess;
 using ::com::sun::star::document::XTypeDetection;
 using ::rtl::OUString;
 
-using ::std::auto_ptr;
+using ::std::unique_ptr;
 
 const OUString EXTN = rtl::OUString::createFromAscii(".xls");
 

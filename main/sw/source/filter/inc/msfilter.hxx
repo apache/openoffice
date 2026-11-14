@@ -394,6 +394,7 @@ namespace sw
             SwDoc &mrDoc;
         public:
             explicit SetInDocAndDelete(SwDoc &rDoc) : mrDoc(rDoc) {}
+            SetInDocAndDelete(const SetInDocAndDelete&) = default;
             void operator()(SwFltStackEntry *pEntry);
         private:
             //No assignment
@@ -410,6 +411,7 @@ namespace sw
             const SwPosition &mrPos;
         public:
             explicit CloseIfOpen(const SwPosition &rPos) : mrPos(rPos) {}
+            CloseIfOpen(const CloseIfOpen&) = default;
                 void operator()(SwFltStackEntry *pEntry) const
             {
                 if (pEntry->bLocked)
@@ -424,11 +426,12 @@ namespace sw
             @author
                 <a href="mailto:mmaher@openoffice.org">Martin Maher</a>
          */
-        class CompareRedlines:
-            public std::binary_function<const SwFltStackEntry*, const SwFltStackEntry*,
-            bool>
+        class CompareRedlines
         {
         public:
+            typedef const SwFltStackEntry* first_argument_type;
+            typedef const SwFltStackEntry* second_argument_type;
+            typedef bool result_type;
             bool operator()(const SwFltStackEntry *pOneE, const SwFltStackEntry *pTwoE)
                 const;
         };

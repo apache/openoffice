@@ -26,7 +26,7 @@
 
 
 // streams
-#include <hash_map>
+#include <unordered_map>
 #include <vector>
 
 #include <com/sun/star/io/XObjectInputStream.hpp>
@@ -876,7 +876,7 @@ struct hashObjectContainer_Impl
 	}
 };
 
-typedef hash_map
+typedef unordered_map
 <
 	Reference< XInterface >,
 	sal_Int32,

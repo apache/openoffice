@@ -281,7 +281,7 @@ private:
                             const ::com::sun::star::uno::Reference< ::com::sun::star::io::XStream >& rxOutStream ) const = 0;
 
 private:
-    ::std::auto_ptr< FilterBaseImpl > mxImpl;
+    ::std::unique_ptr< FilterBaseImpl > mxImpl;
 };
 
 // ============================================================================

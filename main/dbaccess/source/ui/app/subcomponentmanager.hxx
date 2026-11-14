@@ -123,7 +123,7 @@ namespace dbaui
                     );
 
     private:
-        ::std::auto_ptr< SubComponentManager_Data > m_pData;
+        ::std::unique_ptr< SubComponentManager_Data > m_pData;
 	};
 
 //........................................................................

@@ -25,7 +25,7 @@
 #define SC_DPTABSRC_HXX
 
 #include <vector>
-#include <hash_map>
+#include <unordered_map>
 // Wang Xu Ming -- 2009-8-17
 // DataPilot Migration - Cache&&Performance
 #include <list>
@@ -141,7 +141,7 @@ private:
 	sal_Bool					bResultOverflow;
     bool                    bPageFiltered;      // set if page field filters have been applied to cache table
 
-    ::std::auto_ptr<rtl::OUString> mpGrandTotalName;
+    ::std::unique_ptr<rtl::OUString> mpGrandTotalName;
 
 	void					CreateRes_Impl();
 	void					FillMemberResults();
@@ -152,7 +152,7 @@ private:
      * Compile a list of dimension indices that are either, column, row or
      * page dimensions (i.e. all but data dimensions).
      */
-    void                    GetCategoryDimensionIndices(::std::hash_set<sal_Int32>& rCatDims);
+    void                    GetCategoryDimensionIndices(::std::unordered_set<sal_Int32>& rCatDims);
 
     /**
      * Set visibilities of individual rows in the cache table based on the
@@ -314,8 +314,8 @@ private:
 	long				nUsedHier;
 	sal_uInt16				nFunction;			// enum GeneralFunction
 	String				aName;				// if empty, take from source
-    ::std::auto_ptr<rtl::OUString> mpLayoutName;
-    ::std::auto_ptr<rtl::OUString> mpSubtotalName;
+    ::std::unique_ptr<rtl::OUString> mpLayoutName;
+    ::std::unique_ptr<rtl::OUString> mpSubtotalName;
 	long				nSourceDim;			// >=0 if dup'ed
     ::com::sun::star::sheet::DataPilotFieldReference
                         aReferenceValue;    // settings for "show data as" / "displayed value"
@@ -593,7 +593,7 @@ public:
 };
 
 // hash map from name to index in the member array, for fast name access
-typedef ::std::hash_map< ::rtl::OUString, sal_Int32, ::rtl::OUStringHash > ScDPMembersHashMap;
+typedef ::std::unordered_map< ::rtl::OUString, sal_Int32, ::rtl::OUStringHash > ScDPMembersHashMap;
 
 class ScDPMembers : public cppu::WeakImplHelper2<
 							com::sun::star::container::XNameAccess,
@@ -656,7 +656,7 @@ private:
     SCROW       mnDataId;
     // End Comments
 //	String			aCaption;			// visible name (changeable by user)
-    ::std::auto_ptr<rtl::OUString> mpLayoutName;
+    ::std::unique_ptr<rtl::OUString> mpLayoutName;
 
     sal_Int32       nPosition;          // manual sorting
 	sal_Bool			bVisible;

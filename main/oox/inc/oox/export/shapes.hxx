@@ -29,7 +29,7 @@
 #include <oox/export/drawingml.hxx>
 #include <sax/fshelper.hxx>
 #include <vcl/mapmod.hxx>
-#include <hash_map>
+#include <unordered_map>
 
 namespace com { namespace sun { namespace star {
 namespace beans {
@@ -67,7 +67,7 @@ private:
         size_t operator()( const ::com::sun::star::uno::Reference < ::com::sun::star::drawing::XShape > ) const;
     };
 
-    typedef std::hash_map< const ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape>, sal_Int32, ShapeHash, ShapeCheck> ShapeHashMap;
+    typedef std::unordered_map< const ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape>, sal_Int32, ShapeHash, ShapeCheck> ShapeHashMap;
     ShapeHashMap maShapeMap;
 
 public:

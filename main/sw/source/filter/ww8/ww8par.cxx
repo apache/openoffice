@@ -27,7 +27,7 @@
 #include <com/sun/star/embed/ElementModes.hpp>
 #include <com/sun/star/embed/XStorage.hpp>
 
-#include <hash_set>
+#include <unordered_set>
 #include <unotools/ucbstreamhelper.hxx>
 #include <tools/solar.h>
 #include <rtl/tencinfo.h>
@@ -297,9 +297,9 @@ void SwWW8ImplReader::ReadEmbeddedData( SvMemoryStream& rStrm, SwDocShell* pDocS
     	rStrm >> nFlags;
 
     	sal_uInt16 nLevel = 0;                  // counter for level to climb down in path
-    	::std::auto_ptr< String > xLongName;    // link / file name
-    	::std::auto_ptr< String > xShortName;   // 8.3-representation of file name
-    	::std::auto_ptr< String > xTextMark;    // text mark
+    	::std::unique_ptr< String > xLongName;    // link / file name
+    	::std::unique_ptr< String > xShortName;   // 8.3-representation of file name
+    	::std::unique_ptr< String > xTextMark;    // text mark
 
    	// description (ignore)
     	if( ::get_flag( nFlags, WW8_HLINK_DESCR ) )
@@ -308,7 +308,7 @@ void SwWW8ImplReader::ReadEmbeddedData( SvMemoryStream& rStrm, SwDocShell* pDocS
    	// target frame
     	if( ::get_flag( nFlags, WW8_HLINK_FRAME ) )
 	{
-		::std::auto_ptr< String > FrmName;
+		::std::unique_ptr< String > FrmName;
 		FrmName.reset( new String );
 		lclAppendString32(*FrmName , rStrm , true);
 		hlStr.tarFrm = *FrmName;
@@ -1545,7 +1545,7 @@ void SwWW8ImplReader::Read_Tab(sal_uInt16 , const sal_uInt8* pData, short nLen)
     }
 
     bool bFound = false;
-	::std::hash_set<size_t> aLoopWatch;
+	::std::unordered_set<size_t> aLoopWatch;
     while (pSty && !bFound)
     {
         const SfxPoolItem* pTabs;
@@ -2257,8 +2257,12 @@ void wwSectionManager::SetHdFt(wwSection &rSection, int nSect,
 
 }
 
-class AttribHere : public std::unary_function<const xub_StrLen*, bool>
+class AttribHere
 {
+public:
+    typedef const xub_StrLen* argument_type;
+    typedef bool result_type;
+private:
 private:
     xub_StrLen nPosition;
 public:
@@ -5171,8 +5175,12 @@ sal_uLong SwWW8ImplReader::LoadThroughDecryption(SwPaM& rPaM ,WW8Glossary *pGlos
     return nErrRet;
 }
 
-class outlineeq : public std::unary_function<const SwTxtFmtColl*, bool>
+class outlineeq
 {
+public:
+    typedef const SwTxtFmtColl* argument_type;
+    typedef bool result_type;
+private:
 private:
     sal_uInt8 mnNum;
 public:

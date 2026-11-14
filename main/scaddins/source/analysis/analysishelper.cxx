@@ -572,7 +572,7 @@ double ConvertToDec( const STRING& aStr, sal_uInt16 nBase, sal_uInt16 nCharLim )
 
 	double			fVal = 0.0;
 
-	register const sal_Unicode*	p = aStr.getStr();
+	const sal_Unicode*	p = aStr.getStr();
 
 	sal_uInt16			nFirstDig = 0;
 	sal_Bool			bFirstDig = sal_True;

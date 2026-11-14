@@ -34,7 +34,6 @@
 #include <com/sun/star/embed/EmbedStates.hpp>
 
 #include <algorithm>                //std::swap
-#include <functional>               //std::binary_function
 #   include <svl/itemiter.hxx>  //SfxItemIter
 #   include <svx/svdobj.hxx>        //SdrObject
 #   include <svx/svdoole2.hxx>      //SdrOle2Obj
@@ -95,10 +94,12 @@ namespace
 
     // --> OD 2009-02-04 #i98791# - adjust sorting
     //Utility to sort SwTxtFmtColl's by their assigned outline style list level
-    class outlinecmp : public
-        std::binary_function<const SwTxtFmtColl*, const SwTxtFmtColl*, bool>
+    class outlinecmp
     {
     public:
+        typedef const SwTxtFmtColl* first_argument_type;
+        typedef const SwTxtFmtColl* second_argument_type;
+        typedef bool result_type;
         bool operator()(const SwTxtFmtColl *pA, const SwTxtFmtColl *pB) const
         {
             // --> OD 2009-02-04 #i98791#
@@ -167,8 +168,12 @@ namespace
     }
 
     //Utility to test if a frame is anchored at a given node index
-    class anchoredto: public std::unary_function<const sw::Frame&, bool>
+    class anchoredto
     {
+    public:
+        typedef const sw::Frame& argument_type;
+        typedef bool result_type;
+    private:
     private:
         sal_uLong mnNode;
     public:
@@ -785,9 +790,12 @@ namespace sw
         }
 
 
-        class SameOpenRedlineType :
-            public std::unary_function<const SwFltStackEntry*, bool>
+        class SameOpenRedlineType
         {
+        public:
+            typedef const SwFltStackEntry* argument_type;
+            typedef bool result_type;
+        private:
         private:
             RedlineType_t meType;
         public:

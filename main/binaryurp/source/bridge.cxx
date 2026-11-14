@@ -546,7 +546,7 @@ bool Bridge::makeCall(
     bool setter, std::vector< BinaryAny > const & inArguments,
     BinaryAny * returnValue, std::vector< BinaryAny > * outArguments)
 {
-    std::auto_ptr< IncomingReply > resp;
+    std::unique_ptr< IncomingReply > resp;
     {
         AttachThread att(threadPool_);
         PopOutgoingRequest pop(

@@ -20,7 +20,7 @@
  *************************************************************/
 
 #include <string>
-#include <hash_map>
+#include <unordered_map>
 #include <unicode/regex.h>
 
 using namespace std;
@@ -36,8 +36,8 @@ struct eqstr
     }
 };
 
-typedef std::hash_map< string , string > stringmap;
-typedef std::hash_map< string, stringmap* > INImap;
+typedef std::unordered_map< string , string > stringmap;
+typedef std::unordered_map< string, stringmap* > INImap;
 
 class INIreader
 {
@@ -59,7 +59,7 @@ class INIreader
             delete section_match;
             delete parameter_match;
         }
-        // open "filename", fill hash_map with sections / parameters
+        // open "filename", fill unordered_map with sections / parameters
         bool read( INImap& myMap , string& filename );
 
     private:

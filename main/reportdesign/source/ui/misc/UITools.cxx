@@ -277,7 +277,7 @@ namespace
                 const SfxPoolItem* pItem = _rItemSet.GetItem(aIt->nWID);
                 if ( pItem )
                 {
-                    ::std::auto_ptr<SfxPoolItem> pClone(pItem->Clone());
+                    ::std::unique_ptr<SfxPoolItem> pClone(pItem->Clone());
                     pClone->PutValue(_xShape->getPropertyValue(aIt->sName), aIt->nMemberId);
                     _rItemSet.Put(*pClone, aIt->nWID);
                 }
@@ -653,7 +653,7 @@ bool openCharDialog( const uno::Reference<report::XReportControlFormat >& _rxRep
         { SID_ATTR_CHAR_CTL_WEIGHT, SFX_ITEM_POOLABLE }
 	};
     Window* pParent = VCLUnoHelper::GetWindow( _rxParentWindow );
-	::std::auto_ptr<FontList> pFontList(new FontList( pParent ));
+	::std::unique_ptr<FontList> pFontList(new FontList( pParent ));
 	XColorListSharedPtr aColorTable(XPropertyListFactory::CreateSharedXColorList(SvtPathOptions().GetPalettePath()));
 	SfxPoolItem* pDefaults[] =
 	{
@@ -715,7 +715,7 @@ bool openCharDialog( const uno::Reference<report::XReportControlFormat >& _rxRep
     bool bSuccess = false;
 	try
 	{
-		::std::auto_ptr<SfxItemSet> pDescriptor( new SfxItemSet( *pPool, pRanges ) );
+		::std::unique_ptr<SfxItemSet> pDescriptor( new SfxItemSet( *pPool, pRanges ) );
         lcl_CharPropertiesToItems( _rxReportControlFormat, *pDescriptor );
 
 		{	// want the dialog to be destroyed before our set
@@ -764,13 +764,13 @@ bool openAreaDialog( const uno::Reference<report::XShape >& _xShape,const uno::R
 	try
 	{
         SfxItemPool& rItemPool = pModel->GetItemPool();
-        ::std::auto_ptr<SfxItemSet> pDescriptor( new SfxItemSet( rItemPool, rItemPool.GetFirstWhich(),rItemPool.GetLastWhich() ) );
+        ::std::unique_ptr<SfxItemSet> pDescriptor( new SfxItemSet( rItemPool, rItemPool.GetFirstWhich(),rItemPool.GetLastWhich() ) );
 
         lcl_fillShapeToItems(_xShape,*pDescriptor);
 
         {	// want the dialog to be destroyed before our set
             SvxAbstractDialogFactory* pFact = SvxAbstractDialogFactory::Create();
-            ::std::auto_ptr<AbstractSvxAreaTabDialog> pDialog(pFact->CreateSvxAreaTabDialog( pParent,pDescriptor.get(),pModel.get(), true));
+            ::std::unique_ptr<AbstractSvxAreaTabDialog> pDialog(pFact->CreateSvxAreaTabDialog( pParent,pDescriptor.get(),pModel.get(), true));
             bSuccess = ( RET_OK == pDialog->Execute() );
             if ( bSuccess )
             {

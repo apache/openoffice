@@ -58,7 +58,7 @@ OTableDesignHelpBar::OTableDesignHelpBar( Window* pParent ) :
 OTableDesignHelpBar::~OTableDesignHelpBar()
 {
 	DBG_DTOR(OTableDesignHelpBar,NULL);
-	::std::auto_ptr<Window> aTemp(m_pTextWin);
+	::std::unique_ptr<Window> aTemp(m_pTextWin);
 	m_pTextWin = NULL;
 }
 

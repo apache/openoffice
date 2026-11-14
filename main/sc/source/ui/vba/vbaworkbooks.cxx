@@ -57,7 +57,7 @@
 #include "vbaworkbooks.hxx"
 #include <vbahelper/vbahelper.hxx>
 
-#include <hash_map>
+#include <unordered_map>
 #include <vector>
 #include <osl/file.hxx>
 using namespace ::ooo::vba;

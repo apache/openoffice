@@ -304,11 +304,11 @@ void ScAccessiblePageHeaderArea::CreateTextHelper()
 {
 	if (!mpTextHelper)
 	{
-		::std::auto_ptr < ScAccessibleTextData > pAccessibleHeaderTextData
+		::std::unique_ptr < ScAccessibleTextData > pAccessibleHeaderTextData
 			(new ScAccessibleHeaderTextData(mpViewShell, mpEditObj, mbHeader, meAdjust));
-		::std::auto_ptr< SvxEditSource > pEditSource (new ScAccessibilityEditSource(pAccessibleHeaderTextData));
+		::std::unique_ptr< SvxEditSource > pEditSource (new ScAccessibilityEditSource(::std::move(pAccessibleHeaderTextData)));
 
-		mpTextHelper = new ::accessibility::AccessibleTextHelper(pEditSource );
+		mpTextHelper = new ::accessibility::AccessibleTextHelper(std::move(pEditSource) );
         mpTextHelper->SetEventSource(this);
 	}
 }

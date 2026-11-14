@@ -25,8 +25,8 @@
 
 #include <pyuno/pyuno.hxx>
 
-#include <hash_map>
-#include <hash_set>
+#include <unordered_map>
+#include <unordered_set>
 
 #include <com/sun/star/beans/XIntrospection.hpp>
 #include <com/sun/star/script/XTypeConverter.hpp>
@@ -34,6 +34,8 @@
 #include <com/sun/star/script/XInvocationAdapterFactory2.hpp>
 
 #include <com/sun/star/reflection/XIdlReflection.hpp>
+#include <com/sun/star/reflection/XIdlClass.hpp>
+#include <com/sun/star/reflection/XIdlMethod.hpp>
 
 #include <com/sun/star/container/XHierarchicalNameAccess.hpp>
 
@@ -86,7 +88,7 @@ static const sal_Int32 VAL2STR_MODE_SHALLOW = 1;
 rtl::OUString val2str( const void * pVal, typelib_TypeDescriptionReference * pTypeRef, sal_Int32 mode = VAL2STR_MODE_DEEP ) SAL_THROW( () );
 //--------------------------------------------------
 
-typedef ::std::hash_map
+typedef ::std::unordered_map
 <
     PyRef,
     com::sun::star::uno::WeakReference< com::sun::star::script::XInvocation >,
@@ -95,7 +97,7 @@ typedef ::std::hash_map
 > PyRef2Adapter;
 
 
-typedef ::std::hash_map
+typedef ::std::unordered_map
 <
 rtl::OUString,
 PyRef,
@@ -103,7 +105,7 @@ rtl::OUStringHash,
 std::equal_to<rtl::OUString>
 > ExceptionClassMap;
 
-typedef ::std::hash_map
+typedef ::std::unordered_map
 <
     rtl::OUString,
     com::sun::star::uno::Sequence< sal_Int16 >,
@@ -111,7 +113,7 @@ typedef ::std::hash_map
     std::equal_to< rtl::OUString >
 > MethodOutIndexMap;
 
-typedef ::std::hash_set< PyRef , PyRef::Hash , std::equal_to<PyRef> > ClassSet;
+typedef ::std::unordered_set< PyRef , PyRef::Hash , std::equal_to<PyRef> > ClassSet;
 
 PyObject* PyUNO_new(
     const com::sun::star::uno::Any & targetInterface,
@@ -123,7 +125,7 @@ PyObject* PyUNO_new_UNCHECKED (
 
 typedef struct
 {
-    com::sun::star::uno::Reference <com::sun::star::script::XInvocation2> xInvocation;
+    com::sun::star::uno::Reference <com::sun::star::script::XInvocation> xInvocation;
     com::sun::star::uno::Any wrappedObject;
 } PyUNOInternals;
 
@@ -149,9 +151,12 @@ void raiseInvocationTargetExceptionWhenNeeded( const Runtime &runtime );
 com::sun::star::uno::TypeClass StringToTypeClass (char* string);
 
 PyRef PyUNO_callable_new (
-    const com::sun::star::uno::Reference<com::sun::star::script::XInvocation2> &xInv,
+    const com::sun::star::uno::Reference<com::sun::star::script::XInvocation> &xInv,
     const rtl::OUString &methodName,
-    ConversionMode mode = REJECT_UNO_ANY );
+    ConversionMode mode = REJECT_UNO_ANY,
+    const com::sun::star::uno::Reference<com::sun::star::reflection::XIdlMethod> &xMethod
+        = com::sun::star::uno::Reference<com::sun::star::reflection::XIdlMethod>(),
+    const com::sun::star::uno::Any &target = com::sun::star::uno::Any() );
 
 PyObject* PyUNO_Type_new (const char *typeName , com::sun::star::uno::TypeClass t , const Runtime &r );
 PyObject* PyUNO_Enum_new( const char *enumBase, const char *enumValue, const Runtime &r );

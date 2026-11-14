@@ -30,7 +30,7 @@
 // ============================================================================
 
 ScfProgressBar::ScfProgressSegment::ScfProgressSegment( sal_Size nSize ) :
-    mxProgress( 0 ),
+    mxProgress(),
     mnSize( nSize ),
     mnPos( 0 )
 {

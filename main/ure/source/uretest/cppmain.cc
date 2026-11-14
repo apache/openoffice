@@ -93,11 +93,11 @@ private:
     (new salhelper::SimpleReferenceObject)->release(); // check for salhelper
     css::uno::getCurrentContext(); // check for cppu
     try { // check for cppuhelper
-        std::auto_ptr< cppu::UnoUrl > dummy(new cppu::UnoUrl(rtl::OUString()));
+        std::unique_ptr< cppu::UnoUrl > dummy(new cppu::UnoUrl(rtl::OUString()));
     } catch (rtl::MalformedUriException &) {}
     { // check for stlport
         osl::Mutex m;
-        std::auto_ptr< cppu::OMultiTypeInterfaceContainerHelperVar<
+        std::unique_ptr< cppu::OMultiTypeInterfaceContainerHelperVar<
             int, std::hash< int >, std::equal_to< int > > > dummy(
                 new cppu::OMultiTypeInterfaceContainerHelperVar<
                 int, std::hash< int >, std::equal_to< int > >(m));

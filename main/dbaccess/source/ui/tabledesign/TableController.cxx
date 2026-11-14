@@ -118,8 +118,11 @@ namespace
 		}
 	}
 	//------------------------------------------------------------------------------
-	struct OTableRowCompare : public ::std::binary_function<  ::boost::shared_ptr<OTableRow> , ::rtl::OUString, bool>
+	struct OTableRowCompare
 	{
+		typedef ::boost::shared_ptr<OTableRow> first_argument_type;
+		typedef ::rtl::OUString second_argument_type;
+		typedef bool result_type;
 		bool operator() (const  ::boost::shared_ptr<OTableRow>  lhs, const ::rtl::OUString& rhs) const
 		{
 			OFieldDescription* pField = lhs->GetActFieldDescr();

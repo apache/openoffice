@@ -177,7 +177,7 @@ namespace svt
                      GetComponentInterface( sal_Bool i_bCreate );
 
     private:
-        ::std::auto_ptr< ToolPanelDeck_Impl >   m_pImpl;
+        ::std::unique_ptr< ToolPanelDeck_Impl >   m_pImpl;
 
     private:
         using Window::GetAccessibleParentWindow;

@@ -692,7 +692,7 @@ static sal_Bool lcl_IsAnyXMLFilter( const SfxFilter* pFilter )
                             bSync = sal_True;
                             while( !rStr.IsEof() && bSync )
                             {
-                                register sal_uInt16 nMuster = *pSearch;
+                                sal_uInt16 nMuster = *pSearch;
 
                                 if( nMuster < 0x0100 )
                                 { //                                direkter Byte-Vergleich

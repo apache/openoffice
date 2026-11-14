@@ -138,7 +138,7 @@ ScBroadcastAreaSlot::~ScBroadcastAreaSlot()
         // deleted.
         ScBroadcastArea* pArea = *aIter;
         // Erase all so no hash will be accessed upon destruction of the
-        // hash_set.
+        // unordered_set.
         aBroadcastAreaTbl.erase( aIter++);
         if (!pArea->DecRef())
             delete pArea;

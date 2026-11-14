@@ -60,7 +60,7 @@ executeErrorDialog(
             //TODO! must be internationalized
     aText.append(rMessage);
 
-    std::auto_ptr< MessBox > xBox;
+    std::unique_ptr< MessBox > xBox;
     try
     {
         switch (eClassification)
@@ -177,7 +177,7 @@ UUIInteractionHelper::handleErrorHandlerRequest(
             SOURCE_UUI;
 
         vos::OGuard aGuard(Application::GetSolarMutex());
-        std::auto_ptr< ResMgr > xManager;
+        std::unique_ptr< ResMgr > xManager;
         xManager.reset(ResMgr::CreateResMgr(aManager[eSource]));
         if (!xManager.get())
             return;

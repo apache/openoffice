@@ -291,8 +291,8 @@ uno::Sequence< beans::Property > Content::getProperties(
     const uno::Reference< ucb::XCommandEnvironment > & xEnv )
 {
     sal_Bool bTransient;
-    std::auto_ptr< DAVResourceAccess > xResAccess;
-    std::auto_ptr< ContentProperties > xCachedProps;
+    std::unique_ptr< DAVResourceAccess > xResAccess;
+    std::unique_ptr< ContentProperties > xCachedProps;
     rtl::Reference< ContentProvider >  xProvider;
 
     {
@@ -492,7 +492,7 @@ uno::Sequence< beans::Property > Content::getProperties(
         const std::set< rtl::OUString >::const_iterator set_end
             = aPropSet.end();
 
-        const std::auto_ptr< PropertyValueMap > & xProps
+        const std::unique_ptr< PropertyValueMap > & xProps
             = xCachedProps->getProperties();
 
         PropertyValueMap::const_iterator       map_it  = xProps->begin();

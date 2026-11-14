@@ -154,8 +154,11 @@ namespace dbaui
                         >   SupportedFeatures;
 
 	// ....................................................................
-	struct CompareFeatureById : ::std::binary_function< SupportedFeatures::value_type, sal_Int32, bool >
+	struct CompareFeatureById
 	{
+		typedef SupportedFeatures::value_type first_argument_type;
+		typedef sal_Int32 second_argument_type;
+		typedef bool result_type;
 		// ................................................................
 		inline bool operator()( const SupportedFeatures::value_type& _aType, const sal_Int32& _nId ) const
 		{
@@ -176,8 +179,11 @@ namespace dbaui
 	typedef ::std::deque< FeatureListener > FeatureListeners;
 
 	// ....................................................................
-	struct FindFeatureListener : ::std::binary_function< FeatureListener, ::com::sun::star::uno::Reference< ::com::sun::star::frame::XStatusListener >, bool >
+	struct FindFeatureListener
 	{
+		typedef FeatureListener first_argument_type;
+		typedef ::com::sun::star::uno::Reference< ::com::sun::star::frame::XStatusListener > second_argument_type;
+		typedef bool result_type;
 		// ................................................................
 		inline bool operator()( const FeatureListener& lhs, const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XStatusListener >& rhs ) const
 		{
@@ -213,7 +219,7 @@ namespace dbaui
         ::comphelper::NamedValueCollection
                                         m_aInitParameters;
 
-        ::std::auto_ptr< OGenericUnoController_Data >
+        ::std::unique_ptr< OGenericUnoController_Data >
                                         m_pData;
 		ODataView*				        m_pView;				// our (VCL) "main window"
 

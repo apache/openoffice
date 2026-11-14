@@ -849,8 +849,8 @@ void SAL_CALL ORowSetBase::afterLast(  )
 	DBG_TRACE2("DBACCESS ORowSetBase::afterLast() Clone = %i ID = %i\n",m_bClone,osl_getThreadIdentifier(NULL));
 }
 // -----------------------------------------------------------------------------
-sal_Bool SAL_CALL ORowSetBase::move(	::std::mem_fun_t<sal_Bool,ORowSetBase>& _aCheckFunctor,
-										::std::mem_fun_t<sal_Bool,ORowSetCache>& _aMovementFunctor)
+sal_Bool SAL_CALL ORowSetBase::move(	::std::function<sal_Bool(ORowSetBase*)>& _aCheckFunctor,
+										::std::function<sal_Bool(ORowSetCache*)>& _aMovementFunctor)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "ORowSetBase::move" );
 	DBG_TRACE2("DBACCESS ORowSetBase::move() Clone = %i ID = %i\n",m_bClone,osl_getThreadIdentifier(NULL));
@@ -901,8 +901,8 @@ sal_Bool SAL_CALL ORowSetBase::first(  )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "ORowSetBase::first" );
 	DBG_TRACE2("DBACCESS ORowSetBase::first() Clone = %i ID = %i\n",m_bClone,osl_getThreadIdentifier(NULL));
-	::std::mem_fun_t<sal_Bool,ORowSetBase> ioF_tmp(&ORowSetBase::isOnFirst);
-	::std::mem_fun_t<sal_Bool,ORowSetCache> F_tmp(&ORowSetCache::first);
+	::std::function<sal_Bool(ORowSetBase*)> ioF_tmp(&ORowSetBase::isOnFirst);
+	::std::function<sal_Bool(ORowSetCache*)> F_tmp(&ORowSetCache::first);
 	return move(ioF_tmp,F_tmp);
 }
 // -------------------------------------------------------------------------
@@ -910,8 +910,8 @@ sal_Bool SAL_CALL ORowSetBase::last(  )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "ORowSetBase::last" );
 	DBG_TRACE2("DBACCESS ORowSetBase::last() Clone = %i ID = %i\n",m_bClone,osl_getThreadIdentifier(NULL));
-	::std::mem_fun_t<sal_Bool,ORowSetBase> ioL_tmp(&ORowSetBase::isOnLast);
-	::std::mem_fun_t<sal_Bool,ORowSetCache> L_tmp(&ORowSetCache::last);
+	::std::function<sal_Bool(ORowSetBase*)> ioL_tmp(&ORowSetBase::isOnLast);
+	::std::function<sal_Bool(ORowSetCache*)> L_tmp(&ORowSetCache::last);
 	return move(ioL_tmp,L_tmp);
 }
 // -------------------------------------------------------------------------

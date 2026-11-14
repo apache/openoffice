@@ -108,8 +108,10 @@ Sequence< uno::Any > lcl_StringToAnySequence( const Sequence< OUString >& aStrin
     return aResult;
 }
 
-struct lcl_setModified : public ::std::unary_function< lcl_tSequenceMap, void >
+struct lcl_setModified
 {
+    typedef lcl_tSequenceMap argument_type;
+    typedef void result_type;
     void operator() ( const lcl_tSequenceMap::value_type & rMapEntry )
     {
         // convert weak reference to reference
@@ -123,8 +125,10 @@ struct lcl_setModified : public ::std::unary_function< lcl_tSequenceMap, void >
     }
 };
 
-struct lcl_internalizeSeries : public ::std::unary_function< Reference< chart2::XDataSeries >, void >
+struct lcl_internalizeSeries
 {
+    typedef Reference< chart2::XDataSeries > argument_type;
+    typedef void result_type;
     lcl_internalizeSeries( InternalData & rInternalData,
                            InternalDataProvider & rProvider,
                            bool bConnectToModel, bool bDataInColumns ) :
@@ -202,8 +206,10 @@ private:
     bool                    m_bDataInColumns;
 };
 
-struct lcl_copyFromLevel : public ::std::unary_function< vector< uno::Any >, uno::Any >
+struct lcl_copyFromLevel
 {
+    typedef vector< uno::Any > argument_type;
+    typedef uno::Any result_type;
 public:
 
     explicit lcl_copyFromLevel( sal_Int32 nLevel ) : m_nLevel( nLevel )
@@ -221,8 +227,10 @@ private:
     sal_Int32 m_nLevel;
 };
 
-struct lcl_getStringFromLevelVector : public ::std::unary_function< vector< uno::Any >, OUString >
+struct lcl_getStringFromLevelVector
 {
+    typedef vector< uno::Any > argument_type;
+    typedef OUString result_type;
 public:
 
     explicit lcl_getStringFromLevelVector( sal_Int32 nLevel ) : m_nLevel( nLevel )
@@ -241,8 +249,11 @@ private:
 };
 
 
-struct lcl_setAnyAtLevel : public ::std::binary_function< vector< uno::Any >, uno::Any, vector< uno::Any > >
+struct lcl_setAnyAtLevel
 {
+    typedef vector< uno::Any > first_argument_type;
+    typedef uno::Any second_argument_type;
+    typedef vector< uno::Any > result_type;
 public:
 
     explicit lcl_setAnyAtLevel( sal_Int32 nLevel ) : m_nLevel( nLevel )
@@ -261,8 +272,11 @@ private:
     sal_Int32 m_nLevel;
 };
 
-struct lcl_setAnyAtLevelFromStringSequence : public ::std::binary_function< vector< uno::Any >, OUString, vector< uno::Any > >
+struct lcl_setAnyAtLevelFromStringSequence
 {
+    typedef vector< uno::Any > first_argument_type;
+    typedef OUString second_argument_type;
+    typedef vector< uno::Any > result_type;
 public:
 
     explicit lcl_setAnyAtLevelFromStringSequence( sal_Int32 nLevel ) : m_nLevel( nLevel )
@@ -281,8 +295,10 @@ private:
     sal_Int32 m_nLevel;
 };
 
-struct lcl_insertAnyAtLevel : public ::std::unary_function< vector< uno::Any >, void >
+struct lcl_insertAnyAtLevel
 {
+    typedef vector< uno::Any > argument_type;
+    typedef void result_type;
 public:
 
     explicit lcl_insertAnyAtLevel( sal_Int32 nLevel ) : m_nLevel( nLevel )
@@ -306,8 +322,10 @@ private:
     sal_Int32 m_nLevel;
 };
 
-struct lcl_removeAnyAtLevel : public ::std::unary_function< vector< uno::Any >, void >
+struct lcl_removeAnyAtLevel
 {
+    typedef vector< uno::Any > argument_type;
+    typedef void result_type;
 public:
 
     explicit lcl_removeAnyAtLevel( sal_Int32 nLevel ) : m_nLevel( nLevel )

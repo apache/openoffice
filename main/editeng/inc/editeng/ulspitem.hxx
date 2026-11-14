@@ -54,6 +54,7 @@ public:
 	SvxULSpaceItem( const sal_uInt16 nUp, const sal_uInt16 nLow,
                     const sal_uInt16 nId  );
 	inline SvxULSpaceItem& operator=( const SvxULSpaceItem &rCpy );
+	SvxULSpaceItem(const SvxULSpaceItem&) = default;
 
 	// "pure virtual Methoden" vom SfxPoolItem
 	virtual int 			 operator==( const SfxPoolItem& ) const;

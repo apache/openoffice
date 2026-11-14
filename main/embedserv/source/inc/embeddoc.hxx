@@ -34,7 +34,7 @@
 #include <oleidl.h>
 #include <objidl.h>
 
-#include <hash_map>
+#include <unordered_map>
 #include <com/sun/star/uno/Reference.h>
 #ifndef _COM_SUN_STAR_UNO_SEQUENCE_H_
 #include <com/sun/star/uno/SEQUENCE.h>
@@ -43,8 +43,8 @@
 #include "embeddocaccess.hxx"
 #include "docholder.hxx"
 
-typedef ::std::hash_map< DWORD, IAdviseSink* > AdviseSinkHashMap;
-typedef ::std::hash_map< DWORD, IAdviseSink* >::iterator AdviseSinkHashMapIterator;
+typedef ::std::unordered_map< DWORD, IAdviseSink* > AdviseSinkHashMap;
+typedef ::std::unordered_map< DWORD, IAdviseSink* >::iterator AdviseSinkHashMapIterator;
 
 class GDIMetaFile;
 class CIIAObj;

@@ -361,8 +361,10 @@ void SAL_CALL OInterfaceContainer::writeEvents(const Reference<XObjectOutputStre
 }
 
 //------------------------------------------------------------------------------
-struct TransformEventTo52Format : public ::std::unary_function< ScriptEventDescriptor, void >
+struct TransformEventTo52Format
 {
+	typedef ScriptEventDescriptor argument_type;
+	typedef void result_type;
 	void operator()( ScriptEventDescriptor& _rDescriptor )
 	{
 		if ( 0 == _rDescriptor.ScriptType.compareToAscii( "StarBasic" ) )
@@ -384,8 +386,10 @@ struct TransformEventTo52Format : public ::std::unary_function< ScriptEventDescr
 };
 
 //------------------------------------------------------------------------------
-struct TransformEventTo60Format : public ::std::unary_function< ScriptEventDescriptor, void >
+struct TransformEventTo60Format
 {
+	typedef ScriptEventDescriptor argument_type;
+	typedef void result_type;
 	void operator()( ScriptEventDescriptor& _rDescriptor )
 	{
 		if ( 0 == _rDescriptor.ScriptType.compareToAscii( "StarBasic" ) )
@@ -827,7 +831,7 @@ void OInterfaceContainer::implInsert(sal_Int32 _nIndex, const Reference< XProper
     // SYNCHRONIZED ----->
 	::osl::ClearableMutexGuard aGuard( m_rMutex );
 
-	::std::auto_ptr< ElementDescription > aAutoDeleteMetaData;
+	::std::unique_ptr< ElementDescription > aAutoDeleteMetaData;
 	ElementDescription* pElementMetaData = _pApprovalResult;
 	if ( !pElementMetaData )
 	{	// not yet approved by the caller -> do ourself
@@ -835,7 +839,7 @@ void OInterfaceContainer::implInsert(sal_Int32 _nIndex, const Reference< XProper
 		DBG_ASSERT( pElementMetaData, "OInterfaceContainer::implInsert: createElementMetaData returned nonsense!" );
 
 		// ensure that the meta data structure will be deleted later on
-		aAutoDeleteMetaData = ::std::auto_ptr< ElementDescription >( pElementMetaData );
+		aAutoDeleteMetaData = ::std::unique_ptr< ElementDescription >( pElementMetaData );
 
 		// will throw an exception if necessary
 		approveNewElement( _rxElement, pElementMetaData );
@@ -967,7 +971,7 @@ void OInterfaceContainer::implReplaceByIndex( const sal_Int32 _nIndex, const Any
 	OSL_PRECOND( ( _nIndex >= 0 ) && ( _nIndex < (sal_Int32)m_aItems.size() ), "OInterfaceContainer::implReplaceByIndex: precondition not met (index)!" );
 
 	// approve the new object
-	::std::auto_ptr< ElementDescription > aElementMetaData( createElementMetaData() );
+	::std::unique_ptr< ElementDescription > aElementMetaData( createElementMetaData() );
 	DBG_ASSERT( aElementMetaData.get(), "OInterfaceContainer::implReplaceByIndex: createElementMetaData returned nonsense!" );
 	{
 		Reference< XPropertySet > xElementProps;
@@ -1115,7 +1119,7 @@ void SAL_CALL OInterfaceContainer::insertByName(const ::rtl::OUString& _rName, c
 {
 	Reference< XPropertySet > xElementProps;
 
-	::std::auto_ptr< ElementDescription > aElementMetaData( createElementMetaData() );
+	::std::unique_ptr< ElementDescription > aElementMetaData( createElementMetaData() );
 	DBG_ASSERT( aElementMetaData.get(), "OInterfaceContainer::insertByName: createElementMetaData returned nonsense!" );
 
 	// ensure the correct name of the element

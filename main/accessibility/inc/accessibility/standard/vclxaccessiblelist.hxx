@@ -206,7 +206,7 @@ private:
 	*/
 	void clearItems();
 
-	void adjustEntriesIndexInParent(ListItems::iterator& _aBegin,::std::mem_fun_t<bool,VCLXAccessibleListItem>& _rMemFun);
+	void adjustEntriesIndexInParent(ListItems::iterator& _aBegin,::std::function<bool(VCLXAccessibleListItem*)>& _rMemFun);
 	void UpdateEntryRange_Impl (void);
 protected:
     void UpdateSelection_Impl (sal_uInt16 nPos = 0);

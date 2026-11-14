@@ -704,7 +704,7 @@ void SAL_CALL OfficeIPCThread::run()
             if(( aArguments.CompareTo( sc_aTerminationSequence, sc_nTSeqLength ) == COMPARE_EQUAL ) ||
                     mbDowning ) return;
             String           aEmpty;
-            std::auto_ptr< CommandLineArgs > aCmdLineArgs;
+            std::unique_ptr< CommandLineArgs > aCmdLineArgs;
             try
             {
                 Parser p( aArguments );

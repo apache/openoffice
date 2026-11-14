@@ -270,7 +270,7 @@ OJoinDesignView* OJoinController::getJoinView()
 void OJoinController::disposing()
 {
     {
-	    ::std::auto_ptr< Window > pEnsureDelete( m_pAddTableDialog );
+	    ::std::unique_ptr< Window > pEnsureDelete( m_pAddTableDialog );
 	    m_pAddTableDialog   = NULL;
     }
 

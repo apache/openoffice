@@ -26,7 +26,7 @@
 
 #include <rtl/ustring.hxx>
 #include <comphelper/stl_types.hxx>
-#include <hash_map>
+#include <unordered_map>
 #include <xmloff/xmltoken.hxx>
 #ifndef _XMLOFF_TRANSFORMERTOKENMAP_HXX
 #include "TransformerTokenMap.hxx"
@@ -35,7 +35,7 @@
 
 
 class XMLTransformerTokenMap :
-	public ::std::hash_map< ::rtl::OUString, ::xmloff::token::XMLTokenEnum,
+	public ::std::unordered_map< ::rtl::OUString, ::xmloff::token::XMLTokenEnum,
 						    ::rtl::OUStringHash, ::comphelper::UStringEqual >
 {
 public:

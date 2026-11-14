@@ -30,7 +30,7 @@
 #include "rtl/ustring.hxx"
 
 #include <vector>
-#include <hash_map>
+#include <unordered_map>
 
 struct SalPrinterQueueInfo;
 class QueueInfo;
@@ -56,7 +56,7 @@ struct ImplPrnQueueData
 class VCL_PLUGIN_PUBLIC ImplPrnQueueList
 {
 public:
-    std::hash_map< rtl::OUString, sal_Int32, rtl::OUStringHash >
+    std::unordered_map< rtl::OUString, sal_Int32, rtl::OUStringHash >
                                         m_aNameToIndex;
     std::vector< ImplPrnQueueData >     m_aQueueInfos;
     std::vector< rtl::OUString >        m_aPrinterList;

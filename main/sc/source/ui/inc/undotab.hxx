@@ -367,7 +367,7 @@ private:
 class ScUndoDocProtect : public ScSimpleUndo
 {
 public:
-                    ScUndoDocProtect(ScDocShell* pShell, ::std::auto_ptr<ScDocProtection> pProtectSettings);
+                    ScUndoDocProtect(ScDocShell* pShell, ::std::unique_ptr<ScDocProtection> pProtectSettings);
 	virtual			~ScUndoDocProtect();
 
 	virtual void	Undo();
@@ -378,7 +378,7 @@ public:
 	virtual String	GetComment() const;
 
 private:
-    ::std::auto_ptr<ScDocProtection> mpProtectSettings;
+    ::std::unique_ptr<ScDocProtection> mpProtectSettings;
 
 	void	DoProtect(bool bProtect);
 };
@@ -391,7 +391,7 @@ class ScUndoTabProtect : public ScSimpleUndo
 {
 public:
                     ScUndoTabProtect(ScDocShell* pShell, SCTAB nTab,
-                                     ::std::auto_ptr<ScTableProtection> pProtectSettings);
+                                     ::std::unique_ptr<ScTableProtection> pProtectSettings);
 	virtual			~ScUndoTabProtect();
 
 	virtual void	Undo();
@@ -403,7 +403,7 @@ public:
 
 private:
     SCTAB   mnTab;
-    ::std::auto_ptr<ScTableProtection> mpProtectSettings;
+    ::std::unique_ptr<ScTableProtection> mpProtectSettings;
 
 	void	DoProtect(bool bProtect);
 };

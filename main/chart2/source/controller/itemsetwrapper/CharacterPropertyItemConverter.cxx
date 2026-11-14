@@ -95,11 +95,11 @@ CharacterPropertyItemConverter::CharacterPropertyItemConverter(
 CharacterPropertyItemConverter::CharacterPropertyItemConverter(
     const uno::Reference< beans::XPropertySet > & rPropertySet,
     SfxItemPool& rItemPool,
-    ::std::auto_ptr< awt::Size > pRefSize,
+    ::std::unique_ptr< awt::Size > pRefSize,
     const ::rtl::OUString & rRefSizePropertyName,
     const uno::Reference< beans::XPropertySet > & rRefSizePropSet ) :
         ItemConverter( rPropertySet, rItemPool ),
-        m_pRefSize( pRefSize ),
+        m_pRefSize( std::move(pRefSize) ),
         m_aRefSizePropertyName( rRefSizePropertyName ),
         m_xRefSizePropSet( rRefSizePropSet.is() ? rRefSizePropSet : rPropertySet )
 {}

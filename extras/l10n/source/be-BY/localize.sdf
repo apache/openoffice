@@ -373,8 +373,8 @@ formula	source\core\resource\core_resource.src	0	string	RID_STRLIST_FUNCTION_NAM
 formula	source\core\resource\core_resource.src	0	string	RID_STRLIST_FUNCTION_NAMES	SC_OPCODE_ERROR_NA			0	be-BY	#N/A				2002-02-02 02:02:02
 formula	source\ui\dlg\parawin.src	0	#define	RB_ARGBLOCK( y )				13	be-BY	-		Выбраць		2002-02-02 02:02:02
 formula	source\ui\dlg\parawin.src	0	fixedtext	RID_FORMULATAB_PARAMETER	FT_EDITDESC			198	be-BY	Невядомая функцыя				2002-02-02 02:02:02
-formula	source\ui\dlg\parawin.src	0	string	RID_FORMULATAB_PARAMETER	STR_OPTIONAL			8	be-BY	(неабавязкова)				2002-02-02 02:02:02
-formula	source\ui\dlg\parawin.src	0	string	RID_FORMULATAB_PARAMETER	STR_REQUIRED			8	be-BY	(абавязкова)				2002-02-02 02:02:02
+formula	source\ui\dlg\parawin.src	0	string	RID_FORMULATAB_PARAMETER.FT_ARG1.FT_ARG2.FT_ARG3.FT_ARG4	STR_OPTIONAL			8	be-BY	(неабавязкова)				2002-02-02 02:02:02
+formula	source\ui\dlg\parawin.src	0	string	RID_FORMULATAB_PARAMETER.FT_ARG1.FT_ARG2.FT_ARG3.FT_ARG4	STR_REQUIRED			8	be-BY	(абавязкова)				2002-02-02 02:02:02
 formula	source\ui\dlg\formdlgs.src	0	stringlist	RID_FORMULATAB_FUNCTION.LB_CATEGORY	1			0	be-BY	Калі ўжывалася				2002-02-02 02:02:02
 formula	source\ui\dlg\formdlgs.src	0	stringlist	RID_FORMULATAB_FUNCTION.LB_CATEGORY	2			0	be-BY	Усе				2002-02-02 02:02:02
 formula	source\ui\dlg\formdlgs.src	0	fixedtext	RID_FORMULATAB_FUNCTION	FT_CATEGORY			84	be-BY	Катэгорыя				2002-02-02 02:02:02
@@ -6491,22 +6491,22 @@ connectivity	source\drivers\mozab\mozab2.xcu	0	value	.Drivers.Installed.sdbc:add
 connectivity	source\drivers\mozab\mozab2.xcu	0	value	.Drivers.Installed.sdbc:address:ldap:*	DriverTypeDisplayName			0	be-BY	Адрасная кніга LDAP				2002-02-02 02:02:02
 connectivity	source\drivers\evoab\evoab.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:ldap	DriverTypeDisplayName			0	be-BY	Evolution, LDAP				2002-02-02 02:02:02
 connectivity	source\drivers\evoab\evoab.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:groupwise	DriverTypeDisplayName			0	be-BY	Groupwise				2002-02-02 02:02:02
-connectivity	source\drivers\adabas\adabas.xcu	0	value	.Drivers.Installed.sdbc:adabas:*	DriverTypeDisplayName			0	be-BY	Adabas D				2002-02-02 02:02:02
-connectivity	source\drivers\macab\macab.xcu	0	value	.Drivers.Installed.sdbc:address:macab	DriverTypeDisplayName			0	be-BY	Адрасная кніга Mac OS X				2002-02-02 02:02:02
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:*	DriverTypeDisplayName			0	be-BY	ADO				2002-02-02 02:02:02
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:PROVIDER=Microsoft.Jet.OLEDB.4.0;DATA SOURCE=*	DriverTypeDisplayName			0	be-BY	Microsoft Access				2002-02-02 02:02:02
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:Provider=Microsoft.ACE.OLEDB.12.0;DATA SOURCE=*	DriverTypeDisplayName			0	be-BY	Microsoft Access 2007				2002-02-02 02:02:02
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:local	DriverTypeDisplayName			0	be-BY	Evolution, тутэйшая				2002-02-02 02:02:02
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:ldap	DriverTypeDisplayName			0	be-BY	Evolution, LDAP				2002-02-02 02:02:02
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:groupwise	DriverTypeDisplayName			0	be-BY	Groupwise				2002-02-02 02:02:02
-connectivity	source\drivers\dbase\dbase.xcu	0	value	.Drivers.Installed.sdbc:dbase:*	DriverTypeDisplayName			0	be-BY	dBASE				2002-02-02 02:02:02
-connectivity	source\drivers\odbc\odbc.xcu	0	value	.Drivers.Installed.sdbc:odbc:*	DriverTypeDisplayName			0	be-BY	ODBC				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\adabas.xcu	0	value	.Drivers.Installed.sdbc:adabas:*	DriverTypeDisplayName			0	be-BY	Adabas D				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\macab.xcu	0	value	.Drivers.Installed.sdbc:address:macab	DriverTypeDisplayName			0	be-BY	Адрасная кніга Mac OS X				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:*	DriverTypeDisplayName			0	be-BY	ADO				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:PROVIDER=Microsoft.Jet.OLEDB.4.0;DATA SOURCE=*	DriverTypeDisplayName			0	be-BY	Microsoft Access				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:Provider=Microsoft.ACE.OLEDB.12.0;DATA SOURCE=*	DriverTypeDisplayName			0	be-BY	Microsoft Access 2007				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:local	DriverTypeDisplayName			0	be-BY	Evolution, тутэйшая				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:ldap	DriverTypeDisplayName			0	be-BY	Evolution, LDAP				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:groupwise	DriverTypeDisplayName			0	be-BY	Groupwise				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\dbase.xcu	0	value	.Drivers.Installed.sdbc:dbase:*	DriverTypeDisplayName			0	be-BY	dBASE				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\odbc.xcu	0	value	.Drivers.Installed.sdbc:odbc:*	DriverTypeDisplayName			0	be-BY	ODBC				2002-02-02 02:02:02
 connectivity	source\drivers\calc\calc.xcu	0	value	.Drivers.Installed.sdbc:calc:*	DriverTypeDisplayName			0	be-BY	Разліковы аркуш				2002-02-02 02:02:02
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:jdbc:*	DriverTypeDisplayName			0	be-BY	MySQL (JDBC)				2002-02-02 02:02:02
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:odbc:*	DriverTypeDisplayName			0	be-BY	MySQL (ODBC)				2002-02-02 02:02:02
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:mysqlc:*	DriverTypeDisplayName			0	be-BY	MySQL (Native)				2002-02-02 02:02:02
-connectivity	source\drivers\hsqldb\hsqldb.xcu	0	value	.Drivers.Installed.sdbc:embedded:hsqldb	DriverTypeDisplayName			0	be-BY	Рухавік баз даных HSQL				2002-02-02 02:02:02
-connectivity	source\drivers\flat\flat.xcu	0	value	.Drivers.Installed.sdbc:flat:*	DriverTypeDisplayName			0	be-BY	Тэкст				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:jdbc:*	DriverTypeDisplayName			0	be-BY	MySQL (JDBC)				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:odbc:*	DriverTypeDisplayName			0	be-BY	MySQL (ODBC)				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:mysqlc:*	DriverTypeDisplayName			0	be-BY	MySQL (Native)				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\hsqldb.xcu	0	value	.Drivers.Installed.sdbc:embedded:hsqldb	DriverTypeDisplayName			0	be-BY	Рухавік баз даных HSQL				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\flat.xcu	0	value	.Drivers.Installed.sdbc:flat:*	DriverTypeDisplayName			0	be-BY	Тэкст				2002-02-02 02:02:02
 connectivity	source\drivers\kab\kab.xcu	0	value	.Drivers.Installed.sdbc:address:kab	DriverTypeDisplayName			0	be-BY	Адрасная кніга KDE				2002-02-02 02:02:02
 connectivity	source\drivers\jdbc\jdbc.xcu	0	value	.Drivers.Installed.jdbc:*	DriverTypeDisplayName			0	be-BY	JDBC				2002-02-02 02:02:02
 connectivity	source\drivers\jdbc\jdbc.xcu	0	value	.Drivers.Installed.jdbc:oracle:thin:*	DriverTypeDisplayName			0	be-BY	Oracle JDBC				2002-02-02 02:02:02
@@ -18415,11 +18415,11 @@ sw	source\ui\ribbar\inputwin.src	0	string	STR_TBL_FORMULA				0	be-BY	Тэкст�
 sw	source\ui\ribbar\inputwin.src	0	toolboxitem	TB_INPUT	FN_FORMULA_CALC	FN_FORMULA_CALC		0	be-BY	Формула				2002-02-02 02:02:02
 sw	source\ui\ribbar\inputwin.src	0	toolboxitem	TB_INPUT	FN_FORMULA_CANCEL	FN_FORMULA_CANCEL		0	be-BY	Нічога				2002-02-02 02:02:02
 sw	source\ui\ribbar\inputwin.src	0	toolboxitem	TB_INPUT	FN_FORMULA_APPLY	FN_FORMULA_APPLY		0	be-BY	Ужыць				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_PAGE			0	be-BY	Да старонкі				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_PARAGRAPH			0	be-BY	Да абзацу				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_AT_CHAR			0	be-BY	Да знаку				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_CHAR			0	be-BY	Як знак				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_FRAME			0	be-BY	Да рамкі				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_PAGE			0	be-BY	Да старонкі				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_PARAGRAPH			0	be-BY	Да абзацу				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_AT_CHAR			0	be-BY	Да знаку				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_CHAR			0	be-BY	Як знак				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_FRAME			0	be-BY	Да рамкі				2002-02-02 02:02:02
 sw	source\ui\ribbar\tblctrl.src	0	floatingwindow	RID_TBL_OPT_CTRL		HID_TBL_OPT_CTRL		0	be-BY	Аптымізаваць				2002-02-02 02:02:02
 sw	source\ui\dbui\mmgreetingspage.src	0	stringlist	_LB_FEMALECOLUMN	1			0	be-BY	< няма ў наяўнасці >				2002-02-02 02:02:02
 sw	source\ui\dbui\mmgreetingspage.src	0	checkbox	GREETINGS_BODY	CB_PERSONALIZED			226	be-BY	Уставіць персаналізаваную форму звароту				2002-02-02 02:02:02
@@ -19535,7 +19535,7 @@ sw	source\ui\docvw\docvw.src	0	string	STR_REDLINE_FORMAT				0	be-BY	Фармат
 sw	source\ui\docvw\docvw.src	0	string	STR_REDLINE_TABLE				0	be-BY	Табліца зменена				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_REDLINE_FMTCOLL				0	be-BY	Ужыты стылі абзацаў				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_ENDNOTE				0	be-BY	Затэкставая зноска: 				2002-02-02 02:02:02
-sw	source\ui\docvw\docvw.src	0	string	STR_FTNNOTE				0	be-BY	Зноска: 				2002-02-02 02:02:02
+sw	source\ui\docvw\docvw.src	0	string	STR_FOOTNOTE				0	be-BY	Зноска: 				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	infobox	MSG_READONLY_CONTENT				0	be-BY	Нельга правіць толькі-чытанае змесціва.\nУсе змены будуць адкінуты				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_TABLE_COL_ADJUST				0	be-BY	Узгадніць калонку табліцы				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_TABLE_ROW_ADJUST				0	be-BY	Узгадніць радок табліцы				2002-02-02 02:02:02
@@ -20927,7 +20927,7 @@ sw	source\ui\app\app.src	0	string	STR_WRITER_DOCUMENT_FULLTYPE				0	be-BY	Тэк
 sw	source\ui\app\app.src	0	string	STR_CANTOPEN				0	be-BY	Не ўдалося адкрыць дакумент.				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_CANTCREATE				0	be-BY	Не ўдалося стварыць дакумент.				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_DLLNOTFOUND				0	be-BY	Фільтр не знойдзены.				2002-02-02 02:02:02
-sw	source\ui\app\app.src	0	string	STR_UNBENANNT				0	be-BY	Без назвы				2002-02-02 02:02:02
+sw	source\ui\app\app.src	0	string	STR_UNTITLED				0	be-BY	Без назвы				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_LOAD_GLOBAL_DOC				0	be-BY	Назва і шлях Майстар-дакумента				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_LOAD_HTML_DOC				0	be-BY	Назва і шлях HTML дакумента				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	infobox	MSG_ERROR_SEND_MAIL				0	be-BY	Памылка адсылання пошты.				2002-02-02 02:02:02
@@ -21620,77 +21620,77 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_FAXWIZARDROADMAP_START + 2		
 wizards	source\formwizard\dbwizres.src	0	string	RID_FAXWIZARDROADMAP_START + 3				0	be-BY	Адпраўнік і атрымальнік				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_FAXWIZARDROADMAP_START + 4				0	be-BY	Калантытул ніжні				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_FAXWIZARDROADMAP_START + 5				0	be-BY	Імя і адрас				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +1				0	be-BY	Майстар Сеціва				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +2				0	be-BY	Гэты Майстар дапамагае публікаваць дакументы ў Сеціве.\n\nЁн ператворыць дакументы так, каб іх можна было аглядаць у сеціўных браўзерах. Таксама ён створыць старонку Зместу, з спасылкамі на паасобныя дакументы. Майстар дапаможа дапрацаваць дызайн і структуру вашай пляцоўкі.\n\nВы зможаце захоўваць адпаведнасць між арыгіналамі і апублікаваным у Сеціве, і, калі заўгодна, дадаваць ці выдаляць апублікаваныя дакументы.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +4				0	be-BY	Сцерці				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +5				0	be-BY	Уводзіны				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +6				0	be-BY	Выберыце дакументы, які хочаце апублікаваць				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +8				0	be-BY	Звесткі пра дакумент 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +9				0	be-BY	Загаловак:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +10				0	be-BY	Падсумаванне: 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +11				0	be-BY	Аўтар:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +12				0	be-BY	Экспартаваць у файл фармату:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +13				0	be-BY	Увядзіце агульныя звесткі пра вашу сеціўную пляцоўку				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 1				0	be-BY	Майстар Сеціва				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 2				0	be-BY	Гэты Майстар дапамагае публікаваць дакументы ў Сеціве.\n\nЁн ператворыць дакументы так, каб іх можна было аглядаць у сеціўных браўзерах. Таксама ён створыць старонку Зместу, з спасылкамі на паасобныя дакументы. Майстар дапаможа дапрацаваць дызайн і структуру вашай пляцоўкі.\n\nВы зможаце захоўваць адпаведнасць між арыгіналамі і апублікаваным у Сеціве, і, калі заўгодна, дадаваць ці выдаляць апублікаваныя дакументы.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 4				0	be-BY	Сцерці				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 5				0	be-BY	Уводзіны				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 6				0	be-BY	Выберыце дакументы, які хочаце апублікаваць				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 8				0	be-BY	Звесткі пра дакумент 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 9				0	be-BY	Загаловак:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 10				0	be-BY	Падсумаванне: 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 11				0	be-BY	Аўтар:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 12				0	be-BY	Экспартаваць у файл фармату:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 13				0	be-BY	Увядзіце агульныя звесткі пра вашу сеціўную пляцоўку				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +14				0	be-BY	Загаловак:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +16				0	be-BY	Апісанне:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +18				0	be-BY	Пачаты:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +20				0	be-BY	Эл.пошта:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +21				0	be-BY	Аўтарскія правы:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +22				0	be-BY	Зменена:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +24				0	be-BY	Перадпаказ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +25				0	be-BY	Дзе хочаце апублікаваць вашу пляцоўку?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +26				0	be-BY	Публікаваць новую пляцоўку:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +27				0	be-BY	У каталог на тутэйшым дыску				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 16				0	be-BY	Апісанне:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 18				0	be-BY	Пачаты:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 20				0	be-BY	Эл.пошта:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 21				0	be-BY	Аўтарскія правы:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 22				0	be-BY	Зменена:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 24				0	be-BY	Перадпаказ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 25				0	be-BY	Дзе хочаце апублікаваць вашу пляцоўку?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 26				0	be-BY	Публікаваць новую пляцоўку:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 27				0	be-BY	У каталог на тутэйшым дыску				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +28				0	be-BY	...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +29				0	be-BY	На сеціўны сервер цераз FTP				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +31				0	be-BY	Наставіць...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +32				0	be-BY	У архіўны файл ZIP				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 29				0	be-BY	На сеціўны сервер цераз FTP				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 31				0	be-BY	Наставіць...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 32				0	be-BY	У архіўны файл ZIP				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +33				0	be-BY	...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +34				0	be-BY	Замацаваць настаўленні (рэкамендуецца)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +35				0	be-BY	Запісаць як:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +36				0	be-BY	Абярыце настаўленні Майстра Сеціва				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +37				0	be-BY	Змесціва сеціўнай пляцоўкі				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +38				0	be-BY	Дадаць...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +39				0	be-BY	Сцерці				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +40				0	be-BY	Выберыце выклад зместу вашай пляцоўкі				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +41				0	be-BY	Выберыце стыль дзеля зместу вашай пляцоўкі				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +42				0	be-BY	Стыль:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +48				0	be-BY	Выклады: 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +50				0	be-BY	Апісанне				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +51				0	be-BY	Аўтар				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +52				0	be-BY	Дата стварэння				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +53				0	be-BY	Дата апошняй змены				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +54				0	be-BY	Назва файла				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +55				0	be-BY	Фармат файлу				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +56				0	be-BY	Значок фармату файла				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +57				0	be-BY	Колькасць старонак				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +58				0	be-BY	Аб'ём у КБ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +59				0	be-BY	Націсніце "Перадпаказ", каб убачыць гэта ў вашым браўзеры:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +60				0	be-BY	Дапрацаваць азначаны выклад				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +61				0	be-BY	Улучаць наступныя звесткі для кожнага дакумента ў змесце:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +62				0	be-BY	Аптымізаваць выклад дзеля экрану:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +64				0	be-BY	~640x480				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +65				0	be-BY	~800x600				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +66				0	be-BY	~1024x768				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +70				0	be-BY	Генеруецца ваша сеціўная пляцоўка				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +71				0	be-BY	%START - %END/%TOTAL				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +72				0	be-BY	myWebsite				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +73				0	be-BY	Мэта на FTP, '%FILENAME', з'яўляецца файлам.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +74				0	be-BY	Мэта на тутэйшым дыску, '%FILENAME', з'яўляецца файлам.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +75				0	be-BY	Мэтавы файл ZIP, '%FILENAME', ужо існуе. Ці хочаце запісаць паўзверх яго?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +76				0	be-BY	Мэтавы каталог FTP, '%FILENAME', не пусты. Магчыма, будуць сцёрты наяўныя там файлы. Ці хочаце працягваць?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +77				0	be-BY	Мэтавы каталог на тутэйшым дыску, '%FILENAME', не пусты. Магчыма, будуць сцёрты наяўныя там файлы. Ці хочаце працягваць?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +78				0	be-BY	Настаўленні з такой назвай ужо існуюць. Ці хочаце запісаць паўзверх наяўных настаўленняў?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +79				0	be-BY	Экспартуюцца дакументы...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +80				0	be-BY	Рыхтуецца экспартаванне...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +81				0	be-BY	Капіруюцца файлы выкладу...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +82				0	be-BY	Рыхтуецца генераванне зместу...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +83				0	be-BY	Генеруецца змест...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +84				0	be-BY	Ініцыялізуецца...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +86				0	be-BY	Рыхтуецца публікаванне...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +87				0	be-BY	Публікуецца ў тутэйшы каталог...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +88				0	be-BY	Публікуецца ў каталог FTP...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +89				0	be-BY	Публікуецца ў архіўны файл ZIP...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 34				0	be-BY	Замацаваць настаўленні (рэкамендуецца)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 35				0	be-BY	Запісаць як:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 36				0	be-BY	Абярыце настаўленні Майстра Сеціва				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 37				0	be-BY	Змесціва сеціўнай пляцоўкі				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 38				0	be-BY	Дадаць...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 39				0	be-BY	Сцерці				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 40				0	be-BY	Выберыце выклад зместу вашай пляцоўкі				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 41				0	be-BY	Выберыце стыль дзеля зместу вашай пляцоўкі				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 42				0	be-BY	Стыль:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 48				0	be-BY	Выклады: 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 50				0	be-BY	Апісанне				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 51				0	be-BY	Аўтар				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 52				0	be-BY	Дата стварэння				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 53				0	be-BY	Дата апошняй змены				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 54				0	be-BY	Назва файла				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 55				0	be-BY	Фармат файлу				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 56				0	be-BY	Значок фармату файла				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 57				0	be-BY	Колькасць старонак				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 58				0	be-BY	Аб'ём у КБ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 59				0	be-BY	Націсніце "Перадпаказ", каб убачыць гэта ў вашым браўзеры:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 60				0	be-BY	Дапрацаваць азначаны выклад				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 61				0	be-BY	Улучаць наступныя звесткі для кожнага дакумента ў змесце:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 62				0	be-BY	Аптымізаваць выклад дзеля экрану:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 64				0	be-BY	~640x480				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 65				0	be-BY	~800x600				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 66				0	be-BY	~1024x768				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 70				0	be-BY	Генеруецца ваша сеціўная пляцоўка				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 71				0	be-BY	%START - %END/%TOTAL				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 72				0	be-BY	myWebsite				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 73				0	be-BY	Мэта на FTP, '%FILENAME', з'яўляецца файлам.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 74				0	be-BY	Мэта на тутэйшым дыску, '%FILENAME', з'яўляецца файлам.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 75				0	be-BY	Мэтавы файл ZIP, '%FILENAME', ужо існуе. Ці хочаце запісаць паўзверх яго?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 76				0	be-BY	Мэтавы каталог FTP, '%FILENAME', не пусты. Магчыма, будуць сцёрты наяўныя там файлы. Ці хочаце працягваць?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 77				0	be-BY	Мэтавы каталог на тутэйшым дыску, '%FILENAME', не пусты. Магчыма, будуць сцёрты наяўныя там файлы. Ці хочаце працягваць?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 78				0	be-BY	Настаўленні з такой назвай ужо існуюць. Ці хочаце запісаць паўзверх наяўных настаўленняў?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 79				0	be-BY	Экспартуюцца дакументы...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 80				0	be-BY	Рыхтуецца экспартаванне...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 81				0	be-BY	Капіруюцца файлы выкладу...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 82				0	be-BY	Рыхтуецца генераванне зместу...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 83				0	be-BY	Генеруецца змест...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 84				0	be-BY	Ініцыялізуецца...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 86				0	be-BY	Рыхтуецца публікаванне...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 87				0	be-BY	Публікуецца ў тутэйшы каталог...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 88				0	be-BY	Публікуецца ў каталог FTP...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 89				0	be-BY	Публікуецца ў архіўны файл ZIP...				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 90				0	be-BY	Завершваецца...				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 94				0	be-BY	Графічныя файлы				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 95				0	be-BY	Усе файлы				2002-02-02 02:02:02
@@ -21699,98 +21699,98 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 98		
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 99				0	be-BY	Выберыце фонавую выяву: 				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 100				0	be-BY	Зборы значкоў				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 101				0	be-BY	Выберыце збор значкоў:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +102				0	be-BY	Іншае...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +103				0	be-BY	Няма				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +104				0	be-BY	Пляцоўка была паспяхова створана ў: %FILENAME				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +105				0	be-BY	Адна ці некалькі памылак пры генераванні пляцоўкі.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +106				0	be-BY	Памылка пры генераванні старонкі(-ак) зместу. 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +107				0	be-BY	Памылка пры капіраванні файлаў выкладу. 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +108				0	be-BY	Памылка пры збіранні звестак пра дакументы, у '%FILENAME'. 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +109				0	be-BY	Памылка пры экспартаванні дакумента '%FILENAME'.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +110				0	be-BY	Памылка пры стварэнні каталога для экспартавання '%FILENAME'.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +111				0	be-BY	Памылка ў бяспецы пры экспартаванні дакумента '%FILENAME'.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +112				0	be-BY	Памылка ўводу ці вываду пры экспартаванні дакумента '%FILENAME'.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +113				0	be-BY	Памылка пры капіраванні файлаў мультымедый у тымчасовы каталог.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +114				0	be-BY	Пляцоўка не можа быць скапіравана ў гэта мэтавае месца: %URL				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +115				0	be-BY	Нечаканая памылка: %ERROR				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +116				0	be-BY	Нечаканая памылка пры спраўджванні файла: '%FILENAME'				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +117				0	be-BY	'%FILENAME' з'яўляецца каталогам.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +118				0	be-BY	Чытаюцца настаўленні Майстра Сеціва...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +119				0	be-BY	Здарылася нечаканая памылка.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +120				0	be-BY	Спраўджваюцца дакументы...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +121				0	be-BY	Свой Архіў				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +122				0	be-BY	Уводзіны 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +123				0	be-BY	Дакументы 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +124				0	be-BY	Асноўны выклад				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +125				0	be-BY	Падрабязнасці выкладу				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +126				0	be-BY	Стыль				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +127				0	be-BY	Звесткі пра пляцоўку Сеціва				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +128				0	be-BY	Перадпаказ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +130				0	be-BY	Абраныя настаўленні будуць сцёрты.\n\nЦі сапраўды жадаеце сцерці гэтыя настаўленні? 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +131				0	be-BY	%NUMBER старонак				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +132				0	be-BY	%NUMBER слайдаў				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +133				0	be-BY	Створана: %DATE				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +134				0	be-BY	Апошні раз зменена: %DATE				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +135				0	be-BY	Настаўленні Майстра Сеціва				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +136				0	be-BY	Фонавая выява:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +137				0	be-BY	Збор значкоў:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +138				0	be-BY	Збор значкоў ужываецца ў прэзентацыях фармату HTML.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +139				0	be-BY	Метададзеныя HTML				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 102				0	be-BY	Іншае...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 103				0	be-BY	Няма				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 104				0	be-BY	Пляцоўка была паспяхова створана ў: %FILENAME				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 105				0	be-BY	Адна ці некалькі памылак пры генераванні пляцоўкі.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 106				0	be-BY	Памылка пры генераванні старонкі(-ак) зместу. 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 107				0	be-BY	Памылка пры капіраванні файлаў выкладу. 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 108				0	be-BY	Памылка пры збіранні звестак пра дакументы, у '%FILENAME'. 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 109				0	be-BY	Памылка пры экспартаванні дакумента '%FILENAME'.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 110				0	be-BY	Памылка пры стварэнні каталога для экспартавання '%FILENAME'.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 111				0	be-BY	Памылка ў бяспецы пры экспартаванні дакумента '%FILENAME'.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 112				0	be-BY	Памылка ўводу ці вываду пры экспартаванні дакумента '%FILENAME'.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 113				0	be-BY	Памылка пры капіраванні файлаў мультымедый у тымчасовы каталог.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 114				0	be-BY	Пляцоўка не можа быць скапіравана ў гэта мэтавае месца: %URL				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 115				0	be-BY	Нечаканая памылка: %ERROR				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 116				0	be-BY	Нечаканая памылка пры спраўджванні файла: '%FILENAME'				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 117				0	be-BY	'%FILENAME' з'яўляецца каталогам.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 118				0	be-BY	Чытаюцца настаўленні Майстра Сеціва...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 119				0	be-BY	Здарылася нечаканая памылка.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 120				0	be-BY	Спраўджваюцца дакументы...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 121				0	be-BY	Свой Архіў				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 122				0	be-BY	Уводзіны 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 123				0	be-BY	Дакументы 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 124				0	be-BY	Асноўны выклад				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 125				0	be-BY	Падрабязнасці выкладу				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 126				0	be-BY	Стыль				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 127				0	be-BY	Звесткі пра пляцоўку Сеціва				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 128				0	be-BY	Перадпаказ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 130				0	be-BY	Абраныя настаўленні будуць сцёрты.\n\nЦі сапраўды жадаеце сцерці гэтыя настаўленні? 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 131				0	be-BY	%NUMBER старонак				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 132				0	be-BY	%NUMBER слайдаў				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 133				0	be-BY	Створана: %DATE				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 134				0	be-BY	Апошні раз зменена: %DATE				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 135				0	be-BY	Настаўленні Майстра Сеціва				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 136				0	be-BY	Фонавая выява:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 137				0	be-BY	Збор значкоў:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 138				0	be-BY	Збор значкоў ужываецца ў прэзентацыях фармату HTML.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 139				0	be-BY	Метададзеныя HTML				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +140				0	be-BY	Выберыце...				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +141				0	be-BY	Выберыце...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +142				0	be-BY	<прадвызначана>				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +143				0	be-BY	Публікаванне цераз FTP проксі не падтрымліваецца.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +144				0	be-BY	<без фонавай выявы>				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +145				0	be-BY	<без збору значкоў>				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +146				0	be-BY	Не ўдалося стварыць каталог FTP '%FILENAME'.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 142				0	be-BY	<прадвызначана>				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 143				0	be-BY	Публікаванне цераз FTP проксі не падтрымліваецца.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 144				0	be-BY	<без фонавай выявы>				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 145				0	be-BY	<без збору значкоў>				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 146				0	be-BY	Не ўдалося стварыць каталог FTP '%FILENAME'.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +147				0	be-BY	Каталог FTP '%FILENAME' не існуе. \nЦі трэба стварыць яго зараз?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +148				0	be-BY	Немагчыма стварыць архіўны файл Zip '%FILENAME': ужо існуе каталог з такой самай назвай.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 148				0	be-BY	Немагчыма стварыць архіўны файл Zip '%FILENAME': ужо існуе каталог з такой самай назвай.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +149				0	be-BY	Немагчыма стварыць тутэйшы каталог '%FILENAME'. \nСпраўдзіце ваш дазвол на запіс.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +150				0	be-BY	Тутэйшы каталог '%FILENAME' не існуе. \nЦі трэба стварыць яго зараз?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +151				0	be-BY	Аб'ём: %NUMBERKB				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +152				0	be-BY	Не знойдзены файл. Ці хочаце вызначыць іншае месцазнаходжанне файла?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +0				0	be-BY	Далучэнне FTP				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +1				0	be-BY	Імя карыстальніка:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +2				0	be-BY	Пароль:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +3				0	be-BY	Далучыцца				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +4				0	be-BY	1. Увядзіце звесткі пра далучэнне FTP.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +5				0	be-BY	Назва сервера або адрас IP:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +6				0	be-BY	2. Далучыцеся да сервера.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +7				0	be-BY	3. Выберыце тамтэйшы каталог (неабавязкова).				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 151				0	be-BY	Аб'ём: %NUMBERKB				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 152				0	be-BY	Не знойдзены файл. Ці хочаце вызначыць іншае месцазнаходжанне файла?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 0				0	be-BY	Далучэнне FTP				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 1				0	be-BY	Імя карыстальніка:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 2				0	be-BY	Пароль:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 3				0	be-BY	Далучыцца				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 4				0	be-BY	1. Увядзіце звесткі пра далучэнне FTP.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 5				0	be-BY	Назва сервера або адрас IP:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 6				0	be-BY	2. Далучыцеся да сервера.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 7				0	be-BY	3. Выберыце тамтэйшы каталог (неабавязкова).				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +8				0	be-BY	...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +9				0	be-BY	Стан далучэння невядомы				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +10				0	be-BY	Далучэнне паспяхова наладжана				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +11				0	be-BY	Няправільнае імя карыстальніка або пароль				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +12				0	be-BY	Не ўдалося развязаць сімвалічны адрас сервера				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +13				0	be-BY	У вас няма патрэбных правоў карыстання				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +14				0	be-BY	Немагчыма далучыцца да сервера				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +15				0	be-BY	Нечаканая памылка				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +16				0	be-BY	Каталог FTP для публікавання				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +17				0	be-BY	Гэта не каталог FTP				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +18				0	be-BY	Далучаецца...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +1				0	be-BY	Майстар Парадку дня				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +2				0	be-BY	Зрабіць адвольныя змены ў гэтым шаблоне парадку дня				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 9				0	be-BY	Стан далучэння невядомы				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 10				0	be-BY	Далучэнне паспяхова наладжана				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 11				0	be-BY	Няправільнае імя карыстальніка або пароль				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 12				0	be-BY	Не ўдалося развязаць сімвалічны адрас сервера				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 13				0	be-BY	У вас няма патрэбных правоў карыстання				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 14				0	be-BY	Немагчыма далучыцца да сервера				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 15				0	be-BY	Нечаканая памылка				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 16				0	be-BY	Каталог FTP для публікавання				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 17				0	be-BY	Гэта не каталог FTP				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 18				0	be-BY	Далучаецца...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 1				0	be-BY	Майстар Парадку дня				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 2				0	be-BY	Зрабіць адвольныя змены ў гэтым шаблоне парадку дня				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +3				0	be-BY	Назва шаблону:				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 4				0	be-BY	Шлях і назва файла:				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +5				0	be-BY	Што будзеце рабіць далей?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +6				0	be-BY	Выберыце дызайн старонкі для парадку дня				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +7				0	be-BY	Выберыце загалоўкі, якія хочаце ўлучыць у ваш шаблон парадку дня				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +8				0	be-BY	Увядзіце агульныя звесткі пра падзею				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +9				0	be-BY	Вызначце пункты парадку дня				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +10				0	be-BY	Вызначце імёны, якія хочаце ўлучыць у ваш шаблон парадку дня				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 6				0	be-BY	Выберыце дызайн старонкі для парадку дня				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 7				0	be-BY	Выберыце загалоўкі, якія хочаце ўлучыць у ваш шаблон парадку дня				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 8				0	be-BY	Увядзіце агульныя звесткі пра падзею				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 9				0	be-BY	Вызначце пункты парадку дня				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 10				0	be-BY	Вызначце імёны, якія хочаце ўлучыць у ваш шаблон парадку дня				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +11				0	be-BY	Выберыце назву і запішыце шаблон				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +12				0	be-BY	Улучыць форму для запісу пратаколу				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +13				0	be-BY	Гэты Майстар дапамагае стварыць шаблон парадку дня. Маючы шаблон, зручна складаць парадак дня, калі заўгодна.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +14				0	be-BY	Час:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 12				0	be-BY	Улучыць форму для запісу пратаколу				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 13				0	be-BY	Гэты Майстар дапамагае стварыць шаблон парадку дня. Маючы шаблон, зручна складаць парадак дня, калі заўгодна.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 14				0	be-BY	Час:				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +15				0	be-BY	Назва:				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 16				0	be-BY	Месца:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +17				0	be-BY	У пустых палях будуць ужыты намеснікі. Іх можна замяніць на тэкст пазней.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 17				0	be-BY	У пустых палях будуць ужыты намеснікі. Іх можна замяніць на тэкст пазней.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +18				0	be-BY	...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +19				0	be-BY	Стварыць парадак дня з гэтага шаблона				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +20				0	be-BY	Каб стварыць новы парадак дня паводле шаблона, трэба адкрыць той каталог, дзе запісаны шаблон, і двойчы-«клікніце» мышкай на шаблоне.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +21				0	be-BY	Пункт парадку дня				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +22				0	be-BY	Адказны				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +23				0	be-BY	Працягласць				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 19				0	be-BY	Стварыць парадак дня з гэтага шаблона				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 20				0	be-BY	Каб стварыць новы парадак дня паводле шаблона, трэба адкрыць той каталог, дзе запісаны шаблон, і двойчы-«клікніце» мышкай на шаблоне.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 21				0	be-BY	Пункт парадку дня				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 22				0	be-BY	Адказны				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 23				0	be-BY	Працягласць				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +24				0	be-BY	Сустрэча склікана (кім)				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +25				0	be-BY	Старшыня сходу				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +26				0	be-BY	Пратакаліст				2002-02-02 02:02:02
@@ -21798,30 +21798,30 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +27
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +28				0	be-BY	Прысутныя				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +29				0	be-BY	Назіральнікі				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +30				0	be-BY	Тэхнічны персанал				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +31				0	be-BY	Шаблон парадку дня ўтрымлівае намеснікі для адпаведных імён. Пазней, ствараючы парадак дня паводле шаблона, можна замяняць гэтыя намеснікі на сапраўдныя імёны.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 31				0	be-BY	Шаблон парадку дня ўтрымлівае намеснікі для адпаведных імён. Пазней, ствараючы парадак дня паводле шаблона, можна замяняць гэтыя намеснікі на сапраўдныя імёны.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +32				0	be-BY	Тып сустрэчы				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +33				0	be-BY	Трэба прачытаць				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +34				0	be-BY	Трэба мець з сабой				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +35				0	be-BY	Заўвагі				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +36				0	be-BY	Шаблон парадку дня ўтрымлівае намеснікі для азначаных складнікаў.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 36				0	be-BY	Шаблон парадку дня ўтрымлівае намеснікі для азначаных складнікаў.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +38				0	be-BY	Дата:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +39				0	be-BY	Гэты Майстар стварае шаблон парадку дня, які дазваляе ствараць адвольную колькасць парадкаў дня з аднолькавым выкладам і настаўленнямі.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +40				0	be-BY	Дызайн старонкі:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +41				0	be-BY	myAgendaTemplate.stw				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +42				0	be-BY	Свой Шаблон парадку дня				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +43				0	be-BY	Нечаканая памылка пры запісванні шаблона парадку дня.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +44				0	be-BY	Назва				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +45				0	be-BY	Дата				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +46				0	be-BY	Час				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 39				0	be-BY	Гэты Майстар стварае шаблон парадку дня, які дазваляе ствараць адвольную колькасць парадкаў дня з аднолькавым выкладам і настаўленнямі.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 40				0	be-BY	Дызайн старонкі:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 41				0	be-BY	myAgendaTemplate.stw				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 42				0	be-BY	Свой Шаблон парадку дня				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 43				0	be-BY	Нечаканая памылка пры запісванні шаблона парадку дня.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 44				0	be-BY	Назва				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 45				0	be-BY	Дата				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 46				0	be-BY	Час				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 47				0	be-BY	Месца				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +48				0	be-BY	Каб замяніць гэты тэкст, «клікніце» мышкай				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 48				0	be-BY	Каб замяніць гэты тэкст, «клікніце» мышкай				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +50				0	be-BY	Дызайн старонкі				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +51				0	be-BY	Агульныя звесткі				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +52				0	be-BY	Загалоўкі для ўлучэння				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +53				0	be-BY	Назвы				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +54				0	be-BY	Пункты парадку дня				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 51				0	be-BY	Агульныя звесткі				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 52				0	be-BY	Загалоўкі для ўлучэння				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 53				0	be-BY	Назвы				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 54				0	be-BY	Пункты парадку дня				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +55				0	be-BY	Імя і адрас				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +56				0	be-BY	Нечаканая памылка пры адкрыванні шаблона парадку дня.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 56				0	be-BY	Нечаканая памылка пры адкрыванні шаблона парадку дня.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +57				0	be-BY	Тып сустрэчы				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +58				0	be-BY	Трэба мець з сабой				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +59				0	be-BY	Трэба прачытаць				2002-02-02 02:02:02
@@ -21833,10 +21833,10 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +64
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +65				0	be-BY	Мадэратар				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +66				0	be-BY	Назіральнікі				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +67				0	be-BY	Тэхнічны персанал				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +68				0	be-BY	Уставіць				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +69				0	be-BY	Сцерці				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +70				0	be-BY	Пасунуць уверх				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +71				0	be-BY	Пасунуць уніз				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 68				0	be-BY	Уставіць				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 69				0	be-BY	Сцерці				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 70				0	be-BY	Пасунуць уверх				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 71				0	be-BY	Пасунуць уніз				2002-02-02 02:02:02
 wizards	source\importwizard\importwi.src	0	string	sHelpButton				0	be-BY	Даведка				2002-02-02 02:02:02
 wizards	source\importwizard\importwi.src	0	string	sCancelButton				0	be-BY	Нічога				2002-02-02 02:02:02
 wizards	source\importwizard\importwi.src	0	string	sBackButton				0	be-BY	<< Назад				2002-02-02 02:02:02
@@ -21990,8 +21990,8 @@ wizards	source\euro\euro.src	0	string	CURRENCIES + 12				0	be-BY	Славенс�
 wizards	source\euro\euro.src	0	string	CURRENCIES + 13				0	be-BY	Кіпрыйскі фунт				2002-02-02 02:02:02
 wizards	source\euro\euro.src	0	string	CURRENCIES + 14				0	be-BY	Мальційская ліра				2002-02-02 02:02:02
 wizards	source\euro\euro.src	0	string	CURRENCIES + 15				0	be-BY	Славацкая коруна				2002-02-02 02:02:02
-wizards	source\euro\euro.src	0	string	CURRENCIES + 16				0	be-BY	Грашовая адзінка, настаўленая ў гэтым дакуменце, не ўваходзіць у лік еўрапейскіх валют!				2002-02-02 02:02:02
-wizards	source\euro\euro.src	0	string	CURRENCIES + 17				0	be-BY	Мова, настаўленая ў вашай сістэме, не ўваходзіць у лік моваў Еўрапейскага Манетарнага Саюзу.				2002-02-02 02:02:02
+wizards	source\euro\euro.src	0	string	CURRENCIES + 21				0	be-BY	Грашовая адзінка, настаўленая ў гэтым дакуменце, не ўваходзіць у лік еўрапейскіх валют!				2002-02-02 02:02:02
+wizards	source\euro\euro.src	0	string	CURRENCIES + 22				0	be-BY	Мова, настаўленая ў вашай сістэме, не ўваходзіць у лік моваў Еўрапейскага Манетарнага Саюзу.				2002-02-02 02:02:02
 wizards	source\euro\euro.src	0	string	STEP_LASTPAGE				0	be-BY	Зроблена				2002-02-02 02:02:02
 wizards	source\euro\euro.src	0	string	STEP_LASTPAGE + 1				0	be-BY	Чытаюцца неабходныя дакументы...				2002-02-02 02:02:02
 wizards	source\euro\euro.src	0	string	STEP_LASTPAGE + 2				0	be-BY	Канвертуюцца дакументы...				2002-02-02 02:02:02
@@ -23861,7 +23861,7 @@ svtools	workben\unodialog\roadmapskeleton.src	0	string	DLG_ROADMAP_SKELETON	STR_
 svtools	workben\unodialog\roadmapskeleton.src	0	modaldialog	DLG_ROADMAP_SKELETON				0	be-BY	Roadmap Skeleton Demo*				2002-02-02 02:02:02
 helpcontent2	source\text\swriter\main0103.xhp	0	help	tit				0	be-BY	Від				2002-02-02 02:02:02
 helpcontent2	source\text\swriter\main0100.xhp	0	help	tit				0	be-BY	Меню				2002-02-02 02:02:02
-helpcontent2	source\text\swriter\main0000.xhp	0	help	hd_id3147233	1			0	be-BY	Даведка %PRODUCTNAME Writer				2002-02-02 02:02:02
+helpcontent2	source\text\swriter\main0000.xhp	0	help	hd_id3147233				0	be-BY	Даведка %PRODUCTNAME Writer				2002-02-02 02:02:02
 helpcontent2	source\text\swriter\main0101.xhp	0	help	tit				0	be-BY	Файл				2002-02-02 02:02:02
 helpcontent2	source\text\smath\main0103.xhp	0	help	tit				0	be-BY	Від				2002-02-02 02:02:02
 helpcontent2	source\text\smath\main0105.xhp	0	help	tit				0	be-BY	Фармат				2002-02-02 02:02:02
@@ -23871,4 +23871,4 @@ helpcontent2	source\text\smath\main0200.xhp	0	help	tit				0	be-BY	Стужкі �
 helpcontent2	source\text\smath\main0107.xhp	0	help	tit				0	be-BY	Акно				2002-02-02 02:02:02
 helpcontent2	source\text\smath\main0100.xhp	0	help	tit				0	be-BY	Меню				2002-02-02 02:02:02
 helpcontent2	source\text\shared\01\02250000.xhp	0	help	tit				0	be-BY	База даных бібліяграфіі				2002-02-02 02:02:02
-helpcontent2	source\text\shared\01\02250000.xhp	0	help	hd_id3150999	1			0	be-BY	\<link href=\"text/shared/01/02250000.xhp\" name=\"Bibliography Database\"\>База даных бібліяграфіі\</link\>				2002-02-02 02:02:02
+helpcontent2	source\text\shared\01\02250000.xhp	0	help	hd_id3150999				0	be-BY	\<link href=\"text/shared/01/02250000.xhp\" name=\"Bibliography Database\"\>База даных бібліяграфіі\</link\>				2002-02-02 02:02:02

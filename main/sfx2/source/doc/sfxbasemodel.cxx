@@ -128,6 +128,7 @@
 #include <sfx2/DocumentMetadataAccess.hxx>
 
 #include <sfx2/sfxresid.hxx>
+#include <functional>
 
 //________________________________________________________________________________________________________
 // const
@@ -605,7 +606,7 @@ namespace
             io_rTypes.getConstArray(),
             io_rTypes.getConstArray() + io_rTypes.getLength(),
             aStrippedTypes.getArray(),
-            ::std::bind2nd( ::std::equal_to< Type >(), i_rTypeToStrip )
+            ::std::bind( ::std::equal_to< Type >(), ::std::placeholders::_1, i_rTypeToStrip )
         );
         io_rTypes = aStrippedTypes;
     }

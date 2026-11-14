@@ -32,7 +32,7 @@
 //#endif
 #include "filter/msfilter/msfilterdllapi.h"
 #include <vector>
-#include <hash_map>
+#include <unordered_map>
 
 namespace com{namespace sun{namespace star{
         namespace drawing{
@@ -513,7 +513,7 @@ class RBGroup
     std::vector<OCX_Control*> mpControls;
 };
 
-typedef ::std::hash_map < ::rtl::OUString, RBGroup*, ::rtl::OUStringHash,
+typedef ::std::unordered_map < ::rtl::OUString, RBGroup*, ::rtl::OUStringHash,
     ::std::equal_to< ::rtl::OUString > > RBGroupHash;
 typedef std::vector<RBGroup*>::iterator GroupIterator;
 

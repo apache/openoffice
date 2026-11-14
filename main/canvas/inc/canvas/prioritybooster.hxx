@@ -53,7 +53,7 @@ namespace canvas
 
         private:
             // also disables copy constructor and assignment operator
-            const ::std::auto_ptr< PriorityBooster_Impl > mpImpl;
+            const ::std::unique_ptr< PriorityBooster_Impl > mpImpl;
         };
     }
 }

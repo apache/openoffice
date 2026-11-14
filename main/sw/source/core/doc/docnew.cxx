@@ -224,7 +224,7 @@ SwDoc::SwDoc()
     pMarkManager(new ::sw::mark::MarkManager(*this)),
     m_pMetaFieldManager(new ::sw::MetaFieldManager()),
     m_pUndoManager(new ::sw::UndoManager(
-            ::std::auto_ptr<SwNodes>(new SwNodes(this)), *this, *this, *this)),
+            ::std::unique_ptr<SwNodes>(new SwNodes(this)), *this, *this, *this)),
 	pDfltFrmFmt( new SwFrmFmt( GetAttrPool(), sFrmFmtStr, 0 ) ),
 	pEmptyPageFmt( new SwFrmFmt( GetAttrPool(), sEmptyPageStr, pDfltFrmFmt ) ),
 	pColumnContFmt( new SwFrmFmt( GetAttrPool(), sColumnCntStr, pDfltFrmFmt ) ),
@@ -689,7 +689,7 @@ SwDoc::~SwDoc()
 
     // --> OD 2008-03-26 #refactorlists#
     {
-        for ( std::hash_map< String, SwList*, StringHash >::iterator
+        for ( std::unordered_map< String, SwList*, StringHash >::iterator
                                                     aListIter = maLists.begin();
               aListIter != maLists.end();
               ++aListIter )
@@ -873,7 +873,7 @@ void SwDoc::ClearDoc()
     pNumRuleTbl->DeleteAndDestroy( 0, pNumRuleTbl->Count() );
     // --> OD #i114725#,#i115828#
     {
-        for ( std::hash_map< String, SwList*, StringHash >::iterator
+        for ( std::unordered_map< String, SwList*, StringHash >::iterator
                                                     aListIter = maLists.begin();
               aListIter != maLists.end();
               ++aListIter )

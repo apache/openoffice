@@ -66,6 +66,7 @@ public:
 				SetValue( rHorJustify.GetValue() );
 				return *this;
 			}
+	SvxHorJustifyItem(const SvxHorJustifyItem&) = default;
 };
 
 
@@ -101,6 +102,7 @@ public:
 				SetValue( rVerJustify.GetValue() );
 				return *this;
 			}
+	SvxVerJustifyItem(const SvxVerJustifyItem&) = default;
 };
 
 
@@ -137,6 +139,7 @@ public:
 				SetValue( rOrientation.GetValue() );
 				return *this;
 			}
+	SvxOrientationItem(const SvxOrientationItem&) = default;
 
     /** Returns sal_True, if the item represents STACKED state. */
     sal_Bool                    IsStacked() const;

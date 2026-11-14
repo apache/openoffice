@@ -201,7 +201,7 @@ public:
 
     SvLBoxEntry*    AddEntry( const String& rText, const Image& rImage, const Image& rImageHC,
                               SvLBoxEntry* pParent, bool bChildrenOnDemand,
-                              std::auto_ptr< BasicEntry > aUserData );
+                              std::unique_ptr< BasicEntry > aUserData );
 
     String          GetRootEntryName( const ScriptDocument& rDocument, LibraryLocation eLocation ) const;
     void            GetRootEntryBitmaps( const ScriptDocument& rDocument, Image& rImage, Image& rImageHC );

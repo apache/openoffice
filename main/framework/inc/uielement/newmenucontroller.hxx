@@ -57,7 +57,7 @@
 #ifndef _VCL_MENU_HXX_
 #include <vcl/menu.hxx>
 #endif
-#include <hash_map>
+#include <unordered_map>
 
 namespace framework
 {
@@ -102,7 +102,7 @@ namespace framework
                 rtl::OUString aImageId;
             };
 
-            typedef ::std::hash_map< int, AddInfo > AddInfoForId;
+            typedef ::std::unordered_map< int, AddInfo > AddInfoForId;
 
             void fillPopupMenu( com::sun::star::uno::Reference< com::sun::star::awt::XPopupMenu >& rPopupMenu );
             void retrieveShortcutsFromConfiguration( const ::com::sun::star::uno::Reference< ::com::sun::star::ui::XAcceleratorConfiguration >& rAccelCfg,

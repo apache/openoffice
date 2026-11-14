@@ -119,7 +119,7 @@ public:
             const bool bFirstCell,
             const uno::Sequence< uno::Reference< text::XTextRange > > & rCell,
             ::std::vector<SwNodeRange> & rRowNodes,
-            ::std::auto_ptr< SwPaM > & rpFirstPaM,
+            ::std::unique_ptr< SwPaM > & rpFirstPaM,
             SwPaM & rLastPaM,
             bool & rbExcept);
 
@@ -1603,7 +1603,7 @@ SwXText::convertToTextFrame(
     }
     uno::Reference< text::XTextContent > xRet;
     SwUnoInternalPaM aStartPam(*GetDoc());
-    std::auto_ptr< SwUnoInternalPaM > pEndPam(new SwUnoInternalPaM(*GetDoc()));
+    std::unique_ptr< SwUnoInternalPaM > pEndPam(new SwUnoInternalPaM(*GetDoc()));
     if (!::sw::XTextRangeToSwPaM(aStartPam, xStart) ||
         !::sw::XTextRangeToSwPaM(*pEndPam, xEnd))
     {
@@ -1828,7 +1828,7 @@ void SwXText::Impl::ConvertCell(
     const bool bFirstCell,
     const uno::Sequence< uno::Reference< text::XTextRange > > & rCell,
     ::std::vector<SwNodeRange> & rRowNodes,
-    ::std::auto_ptr< SwPaM > & rpFirstPaM,
+    ::std::unique_ptr< SwPaM > & rpFirstPaM,
     SwPaM & rLastPaM,
     bool & rbExcept)
 {
@@ -2220,7 +2220,7 @@ SwXText::convertToTable(
     //at first collect the text ranges as SwPaMs
     const uno::Sequence< uno::Sequence< uno::Reference< text::XTextRange > > >*
         pTableRanges = rTableRanges.getConstArray();
-    std::auto_ptr < SwPaM > pFirstPaM;
+    std::unique_ptr < SwPaM > pFirstPaM;
     std::vector< std::vector<SwNodeRange> > aTableNodes;
     bool bExcept = false;
     SwPaM aLastPaM(m_pImpl->m_pDoc->GetNodes());
@@ -2584,11 +2584,11 @@ SwXBodyText::createEnumeration()
 
     SwNode& rNode = GetDoc()->GetNodes().GetEndOfContent();
     SwPosition aPos(rNode);
-    ::std::auto_ptr<SwUnoCrsr> pUnoCursor(
+    ::std::unique_ptr<SwUnoCrsr> pUnoCursor(
         GetDoc()->CreateUnoCrsr(aPos, sal_False));
     pUnoCursor->Move(fnMoveBackward, fnGoDoc);
     const uno::Reference< container::XEnumeration > xRet
-        = new SwXParagraphEnumeration(this, pUnoCursor, CURSOR_BODY);
+        = new SwXParagraphEnumeration(this, std::move(pUnoCursor), CURSOR_BODY);
     return xRet;
 }
 
@@ -2899,10 +2899,10 @@ SwXHeadFootText::createEnumeration()
     const SwFmtCntnt& rFlyCntnt = rHeadFootFmt.GetCntnt();
     const SwNode& rNode = rFlyCntnt.GetCntntIdx()->GetNode();
     SwPosition aPos(rNode);
-    ::std::auto_ptr<SwUnoCrsr> pUnoCursor(
+    ::std::unique_ptr<SwUnoCrsr> pUnoCursor(
         GetDoc()->CreateUnoCrsr(aPos, sal_False));
     pUnoCursor->Move(fnMoveForward, fnGoNode);
-    aRef = new SwXParagraphEnumeration(this, pUnoCursor,
+    aRef = new SwXParagraphEnumeration(this, std::move(pUnoCursor),
                 (m_pImpl->m_bIsHeader) ? CURSOR_HEADER : CURSOR_FOOTER);
 
 	return aRef;

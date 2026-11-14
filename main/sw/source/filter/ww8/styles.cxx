@@ -26,7 +26,6 @@
 
 #include "../inc/wwstyles.hxx"
 
-#include <functional>               //std::unary_function
 #include <algorithm>                //std::find_if
 #include <tools/string.hxx>         //do we have to...
 
@@ -35,8 +34,12 @@
 
 namespace
 {
-    class SameName: public std::unary_function<const sal_Char*, bool>
+    class SameName
     {
+    public:
+        typedef const sal_Char* argument_type;
+        typedef bool result_type;
+    private:
     private:
         const String &mrName;
     public:

@@ -190,7 +190,7 @@ void HTMLOption::GetNumbers( SvULongs &rLongs, sal_Bool bSpaceDelim ) const
 		sal_uLong nNum = 0;
 		for( xub_StrLen i=0; i<aValue.Len(); i++ )
 		{
-			register sal_Unicode c = aValue.GetChar( i );
+			sal_Unicode c = aValue.GetChar( i );
 			if( c>='0' && c<='9' )
 			{
 				nNum *= 10;
@@ -216,7 +216,7 @@ void HTMLOption::GetNumbers( SvULongs &rLongs, sal_Bool bSpaceDelim ) const
 		xub_StrLen nPos = 0;
 		while( nPos < aValue.Len() )
 		{
-			register sal_Unicode c;
+			sal_Unicode c;
 			while( nPos < aValue.Len() &&
 				   ((c=aValue.GetChar(nPos)) == ' ' || c == '\t' ||
 				   c == '\n' || c== '\r' ) )
@@ -268,7 +268,7 @@ void HTMLOption::GetColor( Color& rColor ) const
 			// maximal drei Zeichen, die kleiner als '0' sind werden
 			// ignoriert. Bug #40901# stimmt damit. Mal schauen, was sich
 			// irgendwelche HTML-Autoren noch so einfallen lassen...
-			register sal_Unicode c = nPos<aTmp.Len() ? aTmp.GetChar( nPos++ )
+			sal_Unicode c = nPos<aTmp.Len() ? aTmp.GetChar( nPos++ )
 													 : '0';
 			if( c < '0' )
 			{

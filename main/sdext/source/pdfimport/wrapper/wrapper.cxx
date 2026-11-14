@@ -64,7 +64,7 @@
 #include <boost/scoped_ptr.hpp>
 #include <boost/scoped_array.hpp>
 
-#include <hash_map>
+#include <unordered_map>
 #include <string.h>
 #include <stdlib.h>
 #include <ctype.h>
@@ -139,7 +139,7 @@ enum parseKey {
 
 class Parser
 {
-    typedef std::hash_map< sal_Int64,
+    typedef std::unordered_map< sal_Int64,
                            FontAttributes > FontMapType;
 
     const uno::Reference<uno::XComponentContext> m_xContext;
