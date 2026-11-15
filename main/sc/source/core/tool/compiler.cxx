@@ -1815,6 +1815,7 @@ ScCompiler::ScCompiler( ScDocument* pDocument, const ScAddress& rPos,ScTokenArra
         mbExtendedErrorDetection( false ),
         mbRewind( false )
 {
+    cSymbol = new sal_Unicode[ MAXSYMLEN ];
     nMaxTab = pDoc ? pDoc->GetTableCount() - 1 : 0;
 }
 
@@ -1831,7 +1832,13 @@ ScCompiler::ScCompiler( ScDocument* pDocument, const ScAddress& rPos)
         mbExtendedErrorDetection( false ),
         mbRewind( false )
 {
+    cSymbol = new sal_Unicode[ MAXSYMLEN ];
     nMaxTab = pDoc ? pDoc->GetTableCount() - 1 : 0;
+}
+
+ScCompiler::~ScCompiler()
+{
+    delete [] cSymbol;
 }
 
 void ScCompiler::CheckTabQuotes( String& rString,
@@ -1969,7 +1976,7 @@ sal_Unicode* lcl_UnicodeStrNCpy( sal_Unicode* pDst, const sal_Unicode* pSrc, xub
 
 xub_StrLen ScCompiler::NextSymbol(bool bInArray)
 {
-    cSymbol[MAXSTRLEN-1] = 0;       // Stopper
+    cSymbol[MAXSYMLEN-1] = 0;       // Stopper
     sal_Unicode* pSym = cSymbol;
     const sal_Unicode* const pStart = aFormula.GetBuffer();
     const sal_Unicode* pSrc = pStart + nSrcPos;
@@ -2239,7 +2246,7 @@ Label_MaskStateMachine:
                 }
                 if ( !bQuote )
                 {
-                    if( pSym == &cSymbol[ MAXSTRLEN-1 ] )
+                    if( pSym == &cSymbol[ MAXSYMLEN-1 ] )
                     {
                         SetError(errStringOverflow);
                         eState = ssSkipString;
@@ -2686,7 +2693,7 @@ sal_Bool ScCompiler::IsString()
         p++;
     xub_StrLen nLen = sal::static_int_cast<xub_StrLen>( p - cSymbol - 1 );
     sal_Bool bQuote = ((cSymbol[0] == '"') && (cSymbol[nLen] == '"'));
-    if ((bQuote ? nLen-2 : nLen) > MAXSTRLEN-1)
+    if ((bQuote ? nLen-1 > MAXSTRLITLEN : nLen >= MAXSTRLEN-1))
     {
         SetError(errStringOverflow);
         return sal_False;
@@ -2694,9 +2701,7 @@ sal_Bool ScCompiler::IsString()
     if ( bQuote )
     {
         cSymbol[nLen] = '\0';
-        ScRawToken aToken;
-        aToken.SetString( cSymbol+1 );
-        pRawToken = aToken.Clone();
+        pRawToken = ScRawToken::NewString( cSymbol+1, nLen ? nLen-1 : 0 );   // lone quote: nLen is 0
         return sal_True;
     }
     return sal_False;
@@ -3377,8 +3382,8 @@ void ScCompiler::AutoCorrectParsedSymbol()
                     ((GetCharTableFlags( aCorrectedSymbol.GetChar(nPos) ) &
                     (SC_COMPILER_C_WORD | SC_COMPILER_C_CHAR_DONTCARE)) == 0)) )
                 nPos--;
-            if ( nPos == MAXSTRLEN - 2 )
-                aCorrectedSymbol.SetChar( nPos, cQuote );   // '"' the 255th character
+            if ( nPos == MAXSYMLEN - 2 )
+                aCorrectedSymbol.SetChar( nPos, cQuote );   // '"' the last character
             else
                 aCorrectedSymbol.Insert( cQuote, nPos + 1 );
             bCorrected = sal_True;

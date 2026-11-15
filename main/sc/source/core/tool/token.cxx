@@ -385,6 +385,21 @@ ScRawToken* ScRawToken::Clone() const
 }
 
 
+ScRawToken* ScRawToken::NewString( const sal_Unicode* pStr, xub_StrLen nLen )
+{
+    static sal_uInt16 nOffset = lcl_ScRawTokenOffset();     // offset of sbyte and cStr
+    size_t n = nOffset + GetStrLenBytes( nLen ) + GetStrLenBytes( 1 );
+    ScRawToken* p = (ScRawToken*) new sal_uInt8[ n ];
+    p->eOp = ocPush;
+    p->eType = svString;
+    p->nRefCnt = 0;
+    p->bRaw = sal_False;
+    memcpy( p->cStr, pStr, GetStrLenBytes( nLen ) );
+    p->cStr[ nLen ] = 0;
+    return p;
+}
+
+
 FormulaToken* ScRawToken::CreateToken() const
 {
 #ifdef DBG_UTIL
