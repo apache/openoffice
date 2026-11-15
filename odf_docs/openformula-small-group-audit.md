@@ -35,10 +35,10 @@ Therefore **no conformance level (Small/Medium/Large) may be claimed for AOO Cal
 |-------|-------------|--------|-----------------|-------------------|
 | SG-BL-001 | Formula length >= 1024 characters | **MET** | The compiler limit was 512 tokens, too few for 1024 characters of `1+1+...`; it is now 2048 (`MAXCODE`, compiler.hxx:59). Calcval `SG.BL-001-1024chars` (1026 characters, result 513) matches on a Linux aarch64 build. | Yes |
 | SG-BL-002 | >= 30 parameters per function | **MET** | `SG.BL-002-30params` (MAX with 30 arguments) matches on a Linux aarch64 build; a call with more than 255 arguments is an error. | Yes |
-| SG-BL-003 | Strings up to 32767 ASCII chars | **PARTIAL** | Strings produced at run time reach 32767 characters (`SG.BL-003-32767chars`, `LEN(REPT("a";32767))`, matches). A string literal in a formula is limited by `MAXSTRLEN` (1024): literals of 1022 characters or more give Err:513. Not fixed. | Partly |
+| SG-BL-003 | Strings up to 32767 ASCII chars | **MET** | Run-time strings reach 32767 characters (`SG.BL-003-32767chars`, `LEN(REPT("a";32767))`) and so do string literals in a formula (`SG.BL-003-literal32767`; the limit is `MAXSTRLITLEN`, compiler.hxx). `SG.BL-003-literal1022` covers the old 1021-character limit. A literal of 32768 gives Err:513. All three match on a Linux aarch64 build. | Yes |
 | SG-BL-004 | >= 7 nesting levels of functions | **MET** | `SG.BL-004-7nesting` (7 nested IF levels) matches on a Linux aarch64 build. The parser has a recursion guard of 42 (`nRecursionMax`, FormulaCompiler.cxx:782 and :1341). | Yes |
 
-**Finding:** the four limits were run on Linux aarch64. Formula length, parameter count and nesting meet the requirement. For strings only run-time results reach 32767 characters; string literals stop at about 1021 (open).
+**Finding:** the four limits were run on Linux aarch64. Formula length, parameter count and nesting meet the requirement. String length also meets it: run-time strings and string literals both reach 32767 characters (literals stopped at 1021 before).
 
 ---
 

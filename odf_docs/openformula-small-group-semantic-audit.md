@@ -285,9 +285,9 @@ None required. The ScDBCount empty-cell fix (F-GAP-004) is in (commits b5a1b43b5
 - `main/sc/inc/compiler.hxx:59`: `MAXCODE = 2048` — maximum number of **tokens** in a formula.
 - `main/sc/inc/compiler.hxx:60`: `MAXSTRLEN = 1024` — maximum length of **one symbol** (individual token/string literal), not the formula as a whole.
 - `main/sc/source/core/tool/compiler.cxx:3973-3978`: Token array overflow (`errCodeOverflow`) triggers when `aArr.GetLen() >= MAXCODE`.
-- `main/sc/source/core/tool/compiler.cxx:2689-2691`: String literal overflow (`errStringOverflow`) when a single symbol exceeds `MAXSTRLEN-1` (1023 chars).
+- `main/sc/source/core/tool/compiler.cxx:2689-2691`: String literal overflow (`errStringOverflow`) when a symbol exceeds `MAXSTRLEN-1` (1023 chars); a string literal may now reach `MAXSTRLITLEN` (32767).
 - A 1026-character formula like `=1+1+...+1` (512 `+1` repetitions) requires ~1025 tokens, well under MAXCODE=2048. Each token (`1` or `+`) is well under MAXSTRLEN=1024.
-- **Limitation:** A single string literal in a formula cannot exceed 1023 characters (excluding quotes) due to MAXSTRLEN=1024. This does not prevent a 1024+ character formula composed of short tokens.
+- A single string literal could not exceed 1021 characters because of MAXSTRLEN=1024; `MAXSTRLITLEN` (32767) now applies to literals. Other symbols are still limited by MAXSTRLEN.
 
 **Classification:** RUNTIME_PENDING — Source appears capable (no formula-text cap; MAXCODE=2048 tokens supports 1024+ char formulas with short tokens), but runtime test `SG.BL-001-1024chars` not executed.
 
@@ -314,12 +314,12 @@ None required. The ScDBCount empty-cell fix (F-GAP-004) is in (commits b5a1b43b5
 **Source finding:**
 - `main/tools/inc/tools/string.hxx:110-120`: `STRING_MAXLEN` definition. `STRING32` is **not defined** anywhere in the codebase, so default applies: `STRING_MAXLEN = 0xFFFF = 65,535` (> 32,767 ODF minimum).
 - `main/sc/source/core/inc/interpre.hxx:930-936`: `CheckStringResultLen()` enforces STRING_MAXLEN at string concatenation (REPT, `&` operator, etc.).
-- `main/sc/source/core/tool/compiler.cxx:2689-2691`: MAXSTRLEN=1024 limits individual **string literals** in formulas to 1023 chars (excluding quotes).
+- `main/sc/source/core/tool/compiler.cxx:2689-2691`: string literals in formulas were limited by MAXSTRLEN=1024 to 1021 characters; they now use `MAXSTRLITLEN` (32767).
 - `main/sc/source/core/tool/interpr1.cxx:7777-7790` (REPT), `:8296` (CONCATENATE), `:8324`: Use STRING_MAXLEN for result length checks.
 - `LEN(REPT("a";32767))` — the "a" literal is 1 char (well under MAXSTRLEN), REPT creates 32,767-char string at runtime (under STRING_MAXLEN=65,535).
-- **Limitation:** A direct 32,767-character string literal like `="aaa...a"` in a formula would fail at compile time due to MAXSTRLEN=1024. But ODF §3.7 requires strings of up to 32,767 characters to be *permitted*, which REPT demonstrates.
+- A direct 32,767-character string literal like `="aaa...a"` used to fail at compile time (Err:513); it is now accepted.
 
-**Classification:** RUNTIME_PENDING — Source supports runtime strings ≥32,767 chars (STRING_MAXLEN=65,535; REPT creates them). String literals limited to 1023 chars does not violate ODF §3.7 (which concerns string values, not literal syntax). Runtime test `SG.BL-003-32767chars` not executed.
+**Classification:** RUNTIME_PENDING — Source supports runtime strings ≥32,767 chars (STRING_MAXLEN=65,535; REPT creates them). Since this audit, string literals were raised to 32767 chars; `SG.BL-003-32767chars`, `SG.BL-003-literal1022` and `SG.BL-003-literal32767` were run and match.
 
 ---
 

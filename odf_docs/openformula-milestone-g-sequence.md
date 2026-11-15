@@ -13,7 +13,7 @@
 | G.2 | Fixed | `b5a1b43b5b`, `30877e2746` (fix); `ad46309f51` (docs, 3 test rows) | `ScDBCount()` missing-field path uses `CountRecords()` (dociter.cxx:685-716) which iterates row-by-row via `IsQueryValid()`; `ScDBCount2()` same pattern; calcval `DB.*` regression cases added. `DB.DCOUNT.nf.nocrit` gives 3 (was 0) | 
 | G.3 | Complete (decision documented) | `7e6ad45c82` | COUNTBLANK formula-cell `""` behavior decision: `lcl_IsCountBlankEmpty()` (interpr1.cxx:4745-4758) inspects formula results and treats formula-cell-returning-`""` as blank — implementation-defined per §6.13.8; no code change needed |
 | G.4 | Compatibility audit complete (decision documented) | `ac2d06a54a` | `bRowArray` shortcut present in `ScIndex()` (interpr1.cxx:7588-7612); `INDEX(H1:L1;3)` returns column value instead of ODF 1.4 Error; kept as legacy-compatible deviation |
-| G.5 | Run on Linux aarch64 | `1ac0d2f4ee`, `fb522d42ea` (source audit); results in `openformula-small-group-audit.md` | Formula length, parameter count and nesting: MET. String length: PARTIAL, string literals stop at about 1021 characters (Err:513), run-time strings reach 32767. Formula limit raised from 512 to 2048 tokens |
+| G.5 | Run on Linux aarch64 | `1ac0d2f4ee`, `fb522d42ea` (source audit); results in `openformula-small-group-audit.md` | Formula length, parameter count and nesting: MET. String length: MET, string literals and run-time strings both reach 32767 (literals stopped at 1021 before). Formula limit raised from 512 to 2048 tokens |
 | G.6 | Complete (source-level audit) | `551759aef8` | All 11 ODF 1.4 §2.3.2.B syntax requirements source-audited; implementation present for all; no blocking limits; all classified RUNTIME_PENDING. Includes Basic Expressions, Constant Numbers, Constant Strings, Operators, Functions, Nonstandard Function Names, References, Simple Named Expressions, Errors, Whitespace. Runtime verification blocked (no build tree) |
 
 **Runtime results:** the Basic Limits (G.5) rows were run on a Linux aarch64 build. Items marked RUNTIME_PENDING have no recorded run.
@@ -100,11 +100,11 @@ ODF 1.4 §3.7 requires: (1) formulas up to at least 1024 characters, (2) at leas
 |---|---|---|---|---|
 | G.5.1 | F-GAP-006 | Formula length | The compiler limit was 512 tokens; it is now 2048 (MAXCODE, compiler.hxx:59). MAXSTRLEN=1024 per symbol (compiler.hxx:60). `SG.BL-001-1024chars` matches. | MET |
 | G.5.2 | F-GAP-007 | Parameter count | No global 30-param cap; MAX uses MustHaveParamCountMin(1) (interpr1.cxx:3396-3400). `SG.BL-002-30params` matches; more than 255 arguments is an error. | MET |
-| G.5.3 | F-GAP-008 | String length | STRING_MAXLEN=65,535 (string.hxx:119, STRING32 not defined) > 32,767; `SG.BL-003-32767chars` matches. A string literal of 1022 characters or more gives Err:513 (MAXSTRLEN=1024). | PARTIAL |
+| G.5.3 | F-GAP-008 | String length | STRING_MAXLEN=65,535 (string.hxx:119, STRING32 not defined) > 32,767; `SG.BL-003-32767chars` matches. A string literal of up to 32767 characters is accepted (`MAXSTRLITLEN`; `SG.BL-003-literal32767` matches), 32768 gives Err:513. | MET |
 | G.5.4 | F-GAP-009 | Nesting depth | The parser stops at a recursion count of 42 (nRecursionMax, FormulaCompiler.cxx:782 and :1341). `SG.BL-004-7nesting` matches. | MET |
 
 **Dependencies:** None.  
-**Open:** string literals stop at about 1021 characters; not fixed.
+String literals used to stop at about 1021 characters (Err:513); `MAXSTRLITLEN` now allows 32767.
 
 ## Phase G.6 — Low-Risk: Syntax Verification
 
@@ -147,7 +147,7 @@ G.4 compatibility audit: `bRowArray` shortcut present (interpr1.cxx:7588-7612); 
 | G.2 (ScDBCount) | Low | Fix applied via `CountRecords()`; regression tests added | Fixed |
 | G.3 (COUNTBLANK) | Low | Decision documented; implementation already in place via `lcl_IsCountBlankEmpty()` | Complete (decision documented) |
 | G.4 (INDEX compat) | Medium | Compatibility audit complete; `bRowArray` shortcut present; ODF 1.4 deviation documented | Compatibility audit complete (decision documented) |
-| G.5 (limits audit) | Low | Run on Linux aarch64: 3 MET, 1 PARTIAL (string literals stop at about 1021 characters) | Run |
+| G.5 (limits audit) | Low | Run on Linux aarch64: 4 MET (string literals raised from 1021 to 32767 characters) | Run |
 | G.6 (syntax audit) | Low | Source audit complete; implementation present for all 11 syntax requirements; no blocking limits; all classified RUNTIME_PENDING | Complete (source-level) |
 
 ## Definition of Done for Milestone G
@@ -158,7 +158,7 @@ G.4 compatibility audit: `bRowArray` shortcut present (interpr1.cxx:7588-7612); 
 - G.2 result: `DB.DCOUNT.nf.nocrit` gives 3 (was 0); the three `DB.*.zero` rows are not yet recorded as run
 - G.3 COUNTBLANK behavior: decision documented — `lcl_IsCountBlankEmpty()` (interpr1.cxx:4745-4758) inspects formula results and treats formula-cell-returning-`""` as blank for COUNTBLANK (implementation-defined per §6.13.8); ISBLANK (§6.13.14) returns FALSE for empty string — the two differ, which §6.13.8 allows. No code change needed.
 - G.4 INDEX compatibility: compatibility audit complete — `bRowArray` shortcut present in `ScIndex()` (interpr1.cxx:7588-7612); `INDEX(H1:L1;3)` returns column value instead of ODF 1.4 Error; kept as documented legacy-compatible deviation |
-- G.5 Basic Limits: run on Linux aarch64 — formula length, parameter count and nesting MET; string length PARTIAL (string literals stop at about 1021 characters, run-time strings reach 32767). Formula limit raised from 512 to 2048 tokens (MAXCODE).
+- G.5 Basic Limits: run on Linux aarch64 — formula length, parameter count and nesting MET; string length MET (string literals and run-time strings both reach 32767). Formula limit raised from 512 to 2048 tokens (MAXCODE).
 - G.6 Syntax Verification: source audit complete — implementation present for all 11 ODF 1.4 §2.3.2.B syntax requirements (Basic Expressions, Constant Numbers, Constant Strings, Operators, Functions, Nonstandard Function Names, References, Simple Named Expressions, Errors, Whitespace) plus Criteria §4.11.11 (covered under F-GAP-004). All classified RUNTIME_PENDING. Runtime verification blocked (no build tree).
 - G.6 runtime tests: prepared, not yet run
 - No production changes without corresponding calcval test coverage
