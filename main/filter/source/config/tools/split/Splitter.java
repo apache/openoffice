@@ -279,7 +279,7 @@ public class Splitter
 
         // delete simple files only; no directories!
         // Because this tool may run inside
-        // a cvs environment its not a godd idea to do so.
+        // a cvs environment its not a good idea to do so.
         boolean bFilesOnly = false;
         FileHelper.makeDirectoryEmpty(m_aDataSet.m_aOutDir, bFilesOnly);
 

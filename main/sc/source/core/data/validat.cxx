@@ -684,7 +684,7 @@ bool ScValidationData::GetSelectionFromFormula( TypedScStrCollection* pStrings,
         pValues = xMatRef;
     }
 
-    // which index matched.  We will want it eventually to pre-select that item.
+    // which index matched.  We will want it eventually to preselect that item.
     rMatch = -1;
 
     SvNumberFormatter* pFormatter = GetDocument()->GetFormatTable();

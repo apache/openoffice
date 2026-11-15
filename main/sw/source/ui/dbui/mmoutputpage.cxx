@@ -628,7 +628,7 @@ IMPL_LINK(SwMailMergeOutputPage, OutputTypeHdl_Impl, RadioButton*, pButton)
             if(aAssignment.getLength() > MM_PART_E_MAIL && aAssignment[MM_PART_E_MAIL].getLength())
                 sEMailColumn = aAssignment[MM_PART_E_MAIL];
             m_aMailToLB.SelectEntry(sEMailColumn);
-            // HTML format pre-selected
+            // HTML format preselected
             m_aSendAsLB.SelectEntryPos(3);
             SendTypeHdl_Impl(&m_aSendAsLB);
         }
