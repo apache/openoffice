@@ -181,7 +181,7 @@ bool AquaSalGraphics::CheckContext()
     {
         const unsigned int nWidth = mpFrame->maGeometry.nWidth;
         const unsigned int nHeight = mpFrame->maGeometry.nHeight;
-        const float fScale = [mpFrame->getNSWindow() backingScaleFactor];
+        const float fScale = mpFrame->getBackingScale();
         const int nOldWidth = mnWidth, nOldHeight = mnHeight;
 
         CGContextRef rReleaseContext = 0;
