@@ -1,12 +1,32 @@
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License.
+-->
+
 # OpenFormula 1.4 Small Group Audit — Apache OpenOffice Calc
 
 ## Methodology and Normative Source
 
 **Normative source:** OASIS Open Document Format for Office Applications (OpenDocument) Version 1.4, Part 4: Recalculated Formula (OpenFormula) Format, OASIS Standard, 6 October 2025.
 
-URL: https://docs.oasis-open.org/office/OpenDocument/v1.4/os/part4-formula/OpenDocument-v1.4-os-part4-formula.html
+URL: <https://docs.oasis-open.org/office/OpenDocument/v1.4/os/part4-formula/OpenDocument-v1.4-os-part4-formula.html>
 
 **Primary sections audited:**
+
 - §2.3.1 — OpenDocument Formula Evaluator
 - §2.3.2 — OpenDocument Formula Small Group Evaluator
 - §3.7 — Basic Limits
@@ -23,6 +43,7 @@ URL: https://docs.oasis-open.org/office/OpenDocument/v1.4/os/part4-formula/OpenD
 ## 1. Conformance Group Claim
 
 **[CONFIRMED] AOO claims NO Part 4 conformance group.**
+
 - `odf_docs/ODF14-IMPLEMENTATION-DEFINED-PUBLIC.md:134` (§4): "AOO does not claim the Part 4 evaluator groups (Small, Medium, Large)."
 
 Therefore **no conformance level (Small/Medium/Large) may be claimed for AOO Calc.** This audit reports implementation coverage only; it does not certify conformance.
@@ -59,6 +80,7 @@ Therefore **no conformance level (Small/Medium/Large) may be claimed for AOO Cal
 | SG-SYN-011 | 5.14 | Whitespace | **UNVERIFIED** | ocSpaces converted to intersection at FormulaCompiler.cxx:830-831 | No |
 
 **Specific unverified grammar cases:**
+
 - Operator precedence and associativity (e.g., `2+3*4`, `2^3^2`) — parser structure exists but no runtime verification of correct precedence
 - Automatic intersection (whitespace between references) — ocSpaces → ocIntersect conversion at FormulaCompiler.cxx:830-831 exists but runtime behavior unverified
 - Reference union `~` — NOT required for Small Group (§2.3.2.G), so absence is acceptable
@@ -88,8 +110,8 @@ Therefore **no conformance level (Small/Medium/Large) may be claimed for AOO Cal
 
 All operators required by §2.3.2.D (all operators except reference union `~`) are implemented:
 
-| ReqID | Section | Operator | Status | Source |
-|-------|---------|----------|--------|--------|
+| ReqID | Section | Operator | Status | Source | Runtime Verified |
+|-------|---------|----------|--------|--------|------------------|
 | SG-OP-001 | 6.4.9 | Ordered comparison (<, <=, >, >=) | **IMPLEMENTED_UNVERIFIED** | interpr1.cxx:ScLess/ScLessEqual/ScGreater/ScGreaterEqual | No |
 | SG-OP-002 | 6.4.10 | Concatenation (&) | **IMPLEMENTED_UNVERIFIED** | interpr5.cxx:ScAmpersand | No |
 | SG-OP-003 | 6.4.2 | Addition (+) | **IMPLEMENTED_UNVERIFIED** | interpr5.cxx:ScAdd | No |
@@ -168,8 +190,6 @@ The Small Group requires 110 functions (§2.3.2.E). All 110 have opcodes and imp
 
 ---
 
-
-
 ## E.1 Corrections (this milestone)
 
 - **SG-BL-001**: corrected to formula expression length 1026 chars (`=1` + `+1`*512), expected 513 (replaces `REPT("a";1024)` which measured string length, not formula length).
@@ -186,6 +206,7 @@ The Small Group requires 110 functions (§2.3.2.E). All 110 have opcodes and imp
 ## 10. Runtime-Verification Limitations
 
 The following could not be verified at runtime because no configured AOO build tree exists in this environment:
+
 - All 4 Basic Limits (§3.7) — source evidence supports compliance but runtime execution not performed
 - Runtime behavior of all 110 Small Group functions
 - Error propagation edge cases

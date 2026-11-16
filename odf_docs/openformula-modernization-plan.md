@@ -1,3 +1,22 @@
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License.
+-->
+
 # OpenFormula Modernization Plan — Apache OpenOffice Calc
 
 Written as an audit-only plan; later milestones did change production code, see the milestone reports. This plan is a prioritized roadmap derived from source evidence. Priority is by interoperability impact, not implementation convenience.
@@ -8,28 +27,41 @@ Source-of-truth: `openformula-functions.tsv`, `openformula-operators.tsv`, `open
 
 ### P1 — Interoperability-critical missing functions
 
-**P1.1 IFNA (ODF 1.3, Large Group)** — Implemented in Milestone B.
+#### P1.1 IFNA (ODF 1.3, Large Group)
+
+Implemented in Milestone B.
+
 - `SC_OPCODE_IFNA=409`, `ScIfna()` in `interpr1.cxx`, dispatch in `interpr4.cxx:3451`, `scfuncs.src`, `core_resource.src:357`, `xlformula.cxx` stub replaced.
 - Status: Complete.
 
-**P1.2 SKEWP (ODF 1.3, Medium Group)** — Implemented in Milestone B.
+#### P1.2 SKEWP (ODF 1.3, Medium Group)
+
+Implemented in Milestone B.
+
 - `SC_OPCODE_SKEWP=410`, `ScSkewP()` in `interpr3.cxx`, dispatch in `interpr4.cxx:3695`, `scfuncs.src`, `core_resource.src:358`, `xlformula.cxx` stub replaced.
 - Status: Complete.
 
 ### P2 — Semantic discrepancies vs ODF 1.4
 
-**P2.1 CONVERT `atm` unit value** — Corrected in Milestone C.
+#### P2.1 CONVERT `atm` unit value
+
+Corrected in Milestone C.
+
 - `atm` changed from 101324.996583 Pa to 101325.1 Pa per ODF 1.4 Table 24.
 - Files: `main/scaddins/source/analysis/analysishelper.cxx`.
 - Status: Complete.
 
-**P2.2 INDEX row-vector single-argument** — Milestone A change reverted.
+#### P2.2 INDEX row-vector single-argument
+
+Milestone A change reverted.
+
 - AOO returns the column (legacy); ODF 1.4 requires error for single-arg row vector.
 - Work: Regression-test against existing document corpus; consider compatibility option if needed.
 - Files: `main/sc/source/core/tool/interpr1.cxx` (ScIndex).
 - Status: Not changed. AOO keeps the legacy rule (returns the column), listed as a known deviation.
 
-**P2.3 BITAND/BITOR/BITXOR variadic & BITLSHIFT/BITRSHIFT negative shift**
+#### P2.3 BITAND/BITOR/BITXOR variadic & BITLSHIFT/BITRSHIFT negative shift
+
 - Gap: `ScBitArithmeticOps` enforces exactly 2 params (`interpr1.cxx:1180`); `ScBitShiftOps` handles negative shift counts.
 - Work: Verify ODF 1.4 parameter count; confirm shift direction correctness.
 - Files: `main/sc/source/core/tool/interpr1.cxx`.
@@ -37,26 +69,31 @@ Source-of-truth: `openformula-functions.tsv`, `openformula-operators.tsv`, `open
 
 ### P3 — Metadata / naming alignment
 
-**P3.1 EASTERSUNDAY alias documentation**
+#### P3.1 EASTERSUNDAY alias documentation
+
 - Behavior is correct under standard name `EASTERSUNDAY`; `ORG.OPENOFFICE.EASTERSUNDAY` is a legacy read-only alias (`compiler.cxx:2542`). Confirm standard name is written on export (`core_resource.src:333`); document alias.
 - Files: `main/sc/source/core/tool/compiler.cxx`, `main/formula/source/core/resource/core_resource.src`.
 
-**P3.2 Other AOO-extension names written instead of standard**
+#### P3.2 Other AOO-extension names written instead of standard
+
 - `ORG.OPENOFFICE.CURRENT` vs `CURRENT` (`core_resource.src:69` vs non-ODFF `:411`); `ORG.OPENOFFICE.ERRORTYPE` vs `ERROR.TYPE` (`:146` vs `:488`); `ORG.OPENOFFICE.STYLE` vs `STYLE` (`:336` vs `:678`); `ORG.OPENOFFICE.MULTIRANGE` vs `~` (`:251` vs `:257`); `COM.MICROSOFT.BAHTTEXT` vs `BAHTTEXT` (`:345` vs `:687`).
 - Work: Decide which names to write in strict ODF 1.4 mode vs extended; align export with ODF 1.4.
 
 ### P4 — Test infrastructure (non-production build)
 
-**P4.1 Versioned function inventories**
+#### P4.1 Versioned function inventories
+
 - Create `test/odf-validate/openformula-functions-1.4.txt` (and -1.3) from ODF 1.4 Part 4 chapter 6; keep current ODF 1.2 files as -1.2.
 - Wire `formulacheck.py` to select version.
 - Files: `test/odf-validate/`, `test/odf-validate/formulacheck.py`.
 
-**P4.2 Semantic and parser test cases**
+#### P4.2 Semantic and parser test cases
+
 - Add calcval cases for COUNTA empty cells, DATE pre-1583, INDEX row-vector regression, BIT ops, short-circuit AND/OR, operator precedence.
 - Do NOT add to normal production build (per audit constraint).
 
-**P4.3 Round-trip tests**
+#### P4.3 Round-trip tests
+
 - Function-name export/import aliases; error cell value type (`office:value-type="error"` vs string).
 
 ## 2. Dependencies between proposed changes
@@ -96,7 +133,6 @@ Source-of-truth: `openformula-functions.tsv`, `openformula-operators.tsv`, `open
 - INDEX row-vector: regression-tested against document corpus.
 - Versioned test inventories created (not in production build).
 - All findings documented with file:line references (this audit's deliverables).
-
 
 ## E.1 Test inventory corrections
 

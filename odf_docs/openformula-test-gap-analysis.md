@@ -1,3 +1,22 @@
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License.
+-->
+
 # OpenFormula Test Gap Analysis — Apache OpenOffice Calc
 
 Source-of-truth: `test/aoo-test/`, `test/odf-validate/`, and AOO source. Findings marked **[CONFIRMED]** have file:line evidence; **[UNVERIFIED]** require runtime execution.
@@ -5,12 +24,14 @@ Source-of-truth: `test/aoo-test/`, `test/odf-validate/`, and AOO source. Finding
 ## 1. Existing test inventories
 
 ### test/aoo-test/data/openformula-functions.txt
+
 - 414 lines: 391 function names after a 23-line license header. `test/odf-validate/openformula-functions.txt` has the same 391 names.
 - Header: "Names of the functions defined in OpenDocument 1.2 Part 2 (OpenFormula) chapter 6, one per line. Used by formulacheck.py to tell standard functions from nonstandard ones (Part 2 5.7)."
 - **[CONFIRMED]** Includes IFNA (line 183), SKEWP (line 350), BITAND/BITOR/BITXOR/BITLSHIFT/BITRSHIFT (lines 59-63).
 - **[CONFIRMED]** Does NOT include EASTERSUNDAY — despite EASTERSUNDAY being an implemented ODF 1.3/1.4 function (`interpr2.cxx:261`, `core_resource.src:333`).
 
 ### test/odf-validate/openformula-functions.txt
+
 - 393 lines.
 - Same header (ODF 1.2 Part 2 chapter 6).
 - **[CONFIRMED]** Includes IFNA (line 162), SKEWP (line 329), BIT functions.
@@ -19,19 +40,24 @@ Source-of-truth: `test/aoo-test/`, `test/odf-validate/`, and AOO source. Finding
 **[CONFIRMED] Both inventories are ODF 1.2-based baselines.** They are stale relative to ODF 1.4 (2025-10-06): EASTERSUNDAY (ODF 1.3/1.4) is absent from both. They list IFNA/SKEWP as "standard" — IFNA and SKEWP were implemented in Milestone B and are no longer missing, so this is no longer a false-negative for conformance.
 
 ### test/aoo-test/data/calcval-cases.tsv
+
 - Present (test/aoo-test/data/). Formula evaluation test cases.
 
 ### test/odf-validate/calcval-cases.tsv and calcval-cases14.tsv
+
 - Present. `calcval-cases14.tsv` is ODF 1.4-specific.
 
 ### test/odf-validate tooling
+
 - `formulacheck.py`, `calcval.py`, `cmp7.py`, `compare.py`, `diff7.py`, `dump7.py`, `dump14.py`, `roundtrip.py`, `cov_*.py`, `crosscheck.py`, `gate.py`, `report.py`.
 
 ## 2. Identified gaps
 
 ### Outdated specification inventories
+
 - Both `openformula-functions.txt` files are explicitly ODF 1.2 chapter 6. No ODF 1.3 or ODF 1.4 function inventory exists in test data.
 - **[GAP]** No machine-readable ODF 1.4 Part 4 function/operator/requirements inventory in `test/`.
+
 ### Missing function tests
 
 - **[CONFIRMED]** IFNA: listed in inventories; implemented in Milestone B (`SC_OPCODE_IFNA=409`, `ScIfna` in `interpr1.cxx`, dispatch in `interpr4.cxx:3451`). Regression tests added to `calcval-cases14.tsv` (IFNA.num, IFNA.text, IFNA.na.num, IFNA.na.text, IFNA.otherr, IFNA.lazy.ok, IFNA.lazy.err, IFNA.nested, IFNA.ref, IFNA.ref.text, IFNA.range).
@@ -39,6 +65,7 @@ Source-of-truth: `test/aoo-test/`, `test/odf-validate/`, and AOO source. Finding
 - **[CONFIRMED]** EASTERSUNDAY: implemented (`interpr2.cxx:261`) but NOT in either function inventory. No dedicated test coverage confirmed.
 
 **[CONFIRMED] IFNA and SKEWP are no longer missing functions.** Both were implemented in Milestone B. The test inventories list them as standard ODF functions, which is now correct. IFERROR, on the same lists, was missing until 2026-11-16 and is implemented now; the `IFERROR.*` calcval rows cover it.
+
 ### Missing semantic tests
 
 - No confirmed semantic test for CONVERT `atm` (fixed in Milestone C: 101325.1 Pa vs old 101324.996583 Pa).
@@ -48,13 +75,16 @@ Source-of-truth: `test/aoo-test/`, `test/odf-validate/`, and AOO source. Finding
 - No confirmed semantic test for short-circuit AND/OR.
 
 ### Missing parser tests
+
 - No confirmed parser test inventory for operator precedence/associativity (e.g. `2+3*4`, `2^3^2`).
 - No confirmed parser test for automatic intersection (whitespace), reference union `~`, intersection `!`, range `:`.
 - Quoted labels as implicit intersection (ODF 1.4 §3.9) — UNVERIFIED whether tested.
 
 ### Missing ODF round-trip tests
+
 - No confirmed round-trip test verifying function names written on ODF export (e.g. `ORG.OPENOFFICE.CURRENT` vs `CURRENT`, `ORG.OPENOFFICE.ERRORTYPE` vs `ERROR.TYPE`, `ORG.OPENOFFICE.EASTERSUNDAY` vs `EASTERSUNDAY`, `ORG.OPENOFFICE.STYLE` vs `STYLE`, `ORG.OPENOFFICE.MULTIRANGE` vs `~`, `MULTIRANGE` legacy).
 - `odf_docs/ODF14-KNOWN-LIMITATIONS-PUBLIC.md` notes formula cells with error results written as `office:value-type="string"` (ODF 1.4 adds `error` type) — no confirmed round-trip test for error value type.
+
 ### Existing tests that produce false confidence
 
 - `openformula-functions.txt` lists IFNA/SKEWP as standard ODF 1.2 functions; AOO now implements them (Milestone B), so this is no longer a false-negative for conformance.
@@ -88,7 +118,6 @@ Source-of-truth: `test/aoo-test/`, `test/odf-validate/`, and AOO source. Finding
 | Parser tests | Precedence, intersection, union, quoted labels | Medium |
 | Round-trip tests | Function-name export aliases, error value type | Medium |
 | False confidence | None — IFNA/SKEWP now implemented, matching inventory | None |
-
 
 ## E.1 Small Group corrections
 

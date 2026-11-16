@@ -1,3 +1,22 @@
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License.
+-->
+
 # Apache OpenOffice Calc — OpenFormula 1.4 Compliance and Modernization Audit — Final Report
 
 Scope: AUDIT ONLY. No production source code was modified. No dependencies introduced. No third-party formula engines. Reference = Apache OpenOffice's own implementation (main/sc, main/formula). ODF 1.4 Part 4 = OASIS Standard, 6 October 2025. Branch: `openformula` (created from repository default).
@@ -106,6 +125,7 @@ See section 3 table. The most significant for ODF 1.4 strict export: AOO's ODFF 
 ## 7. Calculation semantic discrepancies
 
 See `openformula-semantics.md` discrepancy table:
+
 - DATE pre-1583 (`#VALUE!` before 15 Oct 1582; ODF 1.4 requires support from 1583, earlier impl-defined) — documented.
 - CONVERT `atm` 1e-6 relative difference.
 - INDEX row-vector single-argument (returns column vs ODF 1.4 error).
@@ -116,6 +136,7 @@ See `openformula-semantics.md` discrepancy table:
 ## 8. ODF 1.4 migration gaps
 
 See `openformula-odf13-14-diff.md` gap table:
+
 - EASTERSUNDAY: FULL, standard name works; legacy alias documented — no gap.
 - CONVERT: `atm` unit mismatch — low gap.
 - COUNTA: empty-cell semantics unverified — medium gap.
@@ -128,6 +149,7 @@ See `openformula-odf13-14-diff.md` gap table:
 **[CONFIRMED] AOO claims NO Part 4 conformance group.** (`odf_docs/ODF14-IMPLEMENTATION-DEFINED-PUBLIC.md:134`.) Therefore no conformance level (Small/Medium/Large) can be claimed for AOO Calc.
 
 Coverage indicators by group (presence-based, NOT semantic certification):
+
 - Small: core logical/text/math/date/IS* functions present; IFNA/SKEWP missing (likely Medium/Large+).
 - Medium: arrays, statistics, lookups present; IFNA/SKEWP missing may block Medium if mandatory in ODF 1.4.
 - Large: financial, bitwise, complex, database present; IFNA/SKEWP missing.
@@ -138,7 +160,7 @@ Cannot certify any group without checking every mandatory requirement against th
 
 P1: implement IFNA and SKEWP (opcodes, interpreter, scfuncs, core_resource).
 P2: fix CONVERT `atm`, INDEX row-vector rule, BIT op param count / negative shift.
-P3: align export names (ORG.OPENOFFICE.* / LEGACY.* vs standard).
+P3: align export names (`ORG.OPENOFFICE.*` / `LEGACY.*` vs standard).
 P4: versioned test inventories (not in production build), semantic/parser/round-trip cases.
 
 Dependencies: single opcode-block allocation for IFNA+SKEWP; INDEX change needs corpus regression test before enabling.

@@ -1,3 +1,22 @@
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License.
+-->
+
 # OpenFormula Conformance Assessment — Apache OpenOffice Calc
 
 Source-of-truth: AOO source (main/sc) and `odf_docs/ODF14-IMPLEMENTATION-DEFINED-PUBLIC.md`. Findings marked **[CONFIRMED]** have source:line evidence; **[UNVERIFIED]** require the full ODF 1.4 Part 4 normative text and/or runtime testing.
@@ -5,6 +24,7 @@ Source-of-truth: AOO source (main/sc) and `odf_docs/ODF14-IMPLEMENTATION-DEFINED
 ## 1. Conformance-group claim
 
 **[CONFIRMED] AOO claims NO Part 4 conformance group.**
+
 - `odf_docs/ODF14-IMPLEMENTATION-DEFINED-PUBLIC.md:134` (§4, Part 4): "AOO does not claim the Part 4 evaluator groups (Small, Medium, Large), and Part 4 contains no requirement that a producer document these values; §2.4 only says applications 'should document all implementation-defined variances'. The 58 sections that contain the words are listed, with no AOO value except for §7.4. No Part 4 evaluator group is claimed, as for 1.3."
 
 Therefore **no conformance level (Small/Medium/Large) may be claimed for AOO Calc.** This audit reports implementation coverage only; it does not certify conformance.
@@ -18,6 +38,7 @@ Every baseline function has an opcode, an implementation in `interpr*.cxx`, `scf
 **[CONFIRMED 2026-11-16] IFERROR is implemented** (6f13be1d67, Excel filters ca287e3487): a jump function like IFNA that replaces any error value; the `IFERROR.*` rows of `test/odf-validate/calcval-cases14.tsv` cover it. Before that, `=IFERROR(7;5)` gave `#NAME?`. A runtime check the same day found seven more baseline names that AOO does not recognise under their ODF names: DATEDIF, FINDB, REPLACEB, SEARCHB, BINOM.DIST.RANGE, LEGACY.TDIST and ERROR.TYPE (AOO has it as ERRORTYPE). Method: AOO's ODFF function table (`FormulaOpCodeMapper`) plus its function descriptions compared with the baseline list, then each name typed into a cell. Those seven are not audited further. IFERROR is not part of the Small Group.
 
 **[CONFIRMED] IFNA and SKEWP are now implemented (Milestone B).**
+
 - IFNA: `SC_OPCODE_IFNA=409` in `compiler.hrc`, `ocIfna` in `opcode.hxx`, `ScInterpreter::ScIfna()` in `interpr1.cxx:392`, dispatch `case ocIfna` in `interpr4.cxx:3451`, `scfuncs.src:1027`, `core_resource.src:357`.
 - SKEWP: `SC_OPCODE_SKEWP=410` in `compiler.hrc`, `ocSkewP` in `opcode.hxx`, `ScInterpreter::ScSkewP()` in `interpr3.cxx`, dispatch `case ocSkewP` in `interpr4.cxx:3695`, `scfuncs.src:5300`, `core_resource.src:358`.
 
@@ -35,6 +56,7 @@ AOO does not claim the Small Group. However, the Small Group audit (`openformula
 ## 4. Medium Group
 
 **[UNVERIFIED]** Cannot certify Medium Group. AOO does not claim it. Coverage indicators:
+
 - Array functions (MMULT, MDETERM, MINVERSE, TRANSPOSE, MUNIT, SUMPRODUCT) present.
 - Statistical/distribution functions present.
 - Lookup/reference functions (VLOOKUP, HLOOKUP, INDEX, MATCH, OFFSET, INDIRECT) present.
@@ -43,6 +65,7 @@ AOO does not claim the Small Group. However, the Small Group audit (`openformula
 ## 5. Large Group
 
 **[UNVERIFIED]** Cannot certify Large Group. AOO does not claim it. Coverage indicators:
+
 - Financial functions (PV, FV, PMT, NPER, RATE, IPMT, PPMT, NPV, IRR, MIRR, etc.) present.
 - Engineering/bitwise (BITAND/BITOR/BITXOR/BITLSHIFT/BITRSHIFT) present.
 - Complex-number (IM*) functions present.

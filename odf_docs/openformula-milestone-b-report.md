@@ -1,3 +1,22 @@
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License.
+-->
+
 # Apache OpenOffice — OpenFormula Milestone B Report (with B.1 corrections)
 
 ## 1. Commit IDs
@@ -47,6 +66,7 @@ ref lists (via `ScValueIterator`), and matrices — skipping empty cells, text,
 and logical values, propagating errors via `nGlobalError`.
 
 **ScSkew formula** (sample skewness):
+
 ```
 mean = sum / N
 stdDev = sqrt( sum((xi-mean)^2) / (N-1) )     // sample, N-1
@@ -54,6 +74,7 @@ result = (xcube * N) / ((N-1) * (N-2))        // sample skewness
 ```
 
 **SKEWP formula** (population skewness, ODF 1.4 §6.18.63):
+
 ```
 mean = sum / N
 sigma = sqrt( sum((xi-mean)^2) / N )          // population, N
@@ -180,7 +201,7 @@ the fallback per element, which is beyond the scope of this milestone.
 
 ## 6. SKEWP Formula and Edge-Case Decisions
 
-### Population standard deviation (sigma, denominator N):
+### Population standard deviation (sigma, denominator N)
 
 ```
 sigma = sqrt( sum((xi - mean)^2) / N )
@@ -188,13 +209,13 @@ sigma = sqrt( sum((xi - mean)^2) / N )
 
 This differs from SKEW's sample standard deviation (denominator N−1).
 
-### Population skewness result:
+### Population skewness result
 
 ```
 result = (1/N) * sum( ((xi - mean) / sigma)^3 )
 ```
 
-### Edge cases:
+### Edge cases
 
 | Case | Behavior | Rationale |
 |------|----------|-----------|
@@ -216,6 +237,7 @@ avoids division by zero for zero-variance data.
 ### SKEW vs SKEWP difference
 
 For `{1, 1, 2}`:
+
 - SKEWP = 1/√2 ≈ 0.7071067812 (population)
 - SKEW = √3 ≈ 1.7320508076 (sample)
 They differ, confirming the formulas are distinct.
@@ -259,6 +281,7 @@ Added 6 cases to `test/odf-validate/calcval-cases14.tsv` in B.1 (total IFNA,
 SKEWP, and SKEW cases now 24):
 
 **IFNA (11 cases):**
+
 | ID | Formula | Expected | Purpose |
 |----|---------|----------|---------|
 | IFNA.num | `=IFNA(5;10)` | 5 | Numeric value returned unchanged |
@@ -274,6 +297,7 @@ SKEWP, and SKEW cases now 24):
 | IFNA.range | `=IFNA(D1:D3;99)` | 10 | Range reference, implicit intersection takes first cell |
 
 **SKEWP (11 cases):**
+
 | ID | Formula | Expected | Purpose |
 |----|---------|----------|---------|
 | SKEWP.sym | `=SKEWP(1;2;3;4;5)` | 0 | Symmetric → zero skewness |
@@ -289,12 +313,14 @@ SKEWP, and SKEW cases now 24):
 | SKEWP.err | `=SKEWP(1/0)` | #ERR | Error value propagates (original error preserved) |
 
 **SKEW regression (2 cases):**
+
 | ID | Formula | Expected | Purpose |
 |----|---------|----------|---------|
 | SKEW.text | `=SKEW(1;"text";2)` | 0 | Regression: direct scalar text skipped, {1,2} symmetric |
 | SKEW.err | `=SKEW(1/0)` | #ERR | Regression: error argument propagates |
 
 **Independent numerical verification (SKEWP):**
+
 - SKEWP({1,1,2}): mean=4/3, sigma²=2/9, sigma=√2/3
   standardized³ sum = 3/√2, result = (3/√2)/3 = 1/√2 ≈ 0.7071067812
 - SKEW({1,1,2}): sample stdDev=1/√3, result = √3 ≈ 1.7320508076
@@ -324,6 +350,7 @@ The calcval ODF 1.4 tests require a built office and (per `test/odf-validate/`
 README) run on macOS.
 
 **Static verification performed:**
+
 - Brace balance: 0 for all modified C++ files (`interpr1.cxx`, `interpr3.cxx`)
 - Opcode values: IFNA=409, SKEWP=410, LAST_OPCODE_ID=410, STOP_2_PAR=411 —
   all unique and consistent
@@ -333,6 +360,7 @@ README) run on macOS.
   in the respective function scopes
 
 **For validation in a configured build environment:**
+
 1. Configure AOO (run `autogen.sh`/`configure`, then `build.pl --all`)
 2. Build the `sc` module
 3. Run `test/odf-validate/start.sh calcval <port>` and

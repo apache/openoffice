@@ -1,3 +1,22 @@
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License.
+-->
+
 # Apache OpenOffice — OpenFormula Milestone C Report
 
 ## 1. Commit Information
@@ -5,7 +24,7 @@
 - Branch: `openformula` (rebased onto `trunk`)
 - Baseline commit: `fd13af33ac` (end of Milestone B.2)
 - Final commit: Milestone C changes (this commit)
-- Repository: https://github.com/pgiffuni/openoffice
+- Repository: <https://github.com/pgiffuni/openoffice>
 
 ## 2. Source-Mining Findings
 
@@ -53,6 +72,7 @@ Categories:
 ### Specific Unit Comparisons
 
 **Pressure (Table 24):**
+
 | Unit | ODF 1.4 Value | Before Fix | After Fix | Status |
 |------|--------------|------------|-----------|--------|
 | Pa | 1 Pa | 1.0 | 1.0 | Correct |
@@ -62,6 +82,7 @@ Categories:
 | Torr | 101325/760 Pa | 133.32237... Pa | 133.322368... Pa | Corrected |
 
 **Pica family (Table 24):**
+
 | Unit | Definition | Before | After |
 |------|-----------|--------|-------|
 | Pica / picapt | 1/72 inch | Present (Pica only) | Present + picapt alias |
@@ -73,14 +94,16 @@ Categories:
 
 ## 4. Constants Changed and Their Derivation
 
-### Pressure (factors are units per Pascal):
+### Pressure (factors are units per Pascal)
 
 **atm:** ODF 1.4 defines 1 atm = 101325.1 Pa.
+
 - Factor = 1/101325.1 = 9.86922292699439618e-06
 - Before: 9.8692329999819300E-06 (corresponds to 101324.996... Pa)
 - Relative error before fix: ~1.0e-06
 
 **Torr:** ODF 1.4 defines 1 Torr = 101325/760 Pa.
+
 - Factor = 760/101325 = 7.50061682704169716e-03
 - Before: 7.5006380000000000E-03
 - Relative error before fix: ~2.8e-06
@@ -90,9 +113,10 @@ Categories:
 ODF 1.4 marks `at` as deprecated and historically ambiguous; AOO retains the
 standard-atmosphere interpretation for compatibility.
 
-### Pica family (factors are units per base unit):
+### Pica family (factors are units per base unit)
 
 **Pica / picapt:** 1/72 inch = 0.0254/72 m.
+
 - Factor = 72/0.0254 = 2.83464566929133889e+03 per meter
 - Minor precision improvement from 2.8346456692913386E03.
 
@@ -100,6 +124,7 @@ standard-atmosphere interpretation for compatibility.
 **Pica³ / picapt³:** (1/72 in)³ per Liter = 2.27769904358706400e+07.
 
 **pica:** 1/6 inch = 0.0254/6 m.
+
 - Factor = 6/0.0254 = 2.36220472440944917e+02 per meter.
 
 **pica²:** (1/6 in)² per m² = 5.58001116002232156e+04.
@@ -126,11 +151,13 @@ classes. No changes needed.
 21 new test cases added:
 
 **Pressure (1 case):**
+
 | ID | Formula | Expected | Purpose |
 |----|---------|----------|---------|
 | CONVERT.Torr | =CONVERT(1;"Torr";"Pa") | 133.32236842105263 | Torr = 101325/760 Pa exactly |
 
 **Pica family (15 cases):**
+
 | ID | Formula | Expected | Purpose |
 |----|---------|----------|---------|
 | CONVERT.Pica.in | =CONVERT(1;"Pica";"in") | 0.013888888888888888 | Pica point = 1/72 in |
@@ -150,6 +177,7 @@ classes. No changes needed.
 | CONVERT.pica^3.in3 | =CONVERT(1;"pica^3";"in3") | 0.004629629629629629 | caret exponent spelling pica^3 |
 
 **Prefixes (3 cases):**
+
 | ID | Formula | Expected | Purpose |
 |----|---------|----------|---------|
 | CONVERT.km.m | =CONVERT(1;"km";"m") | 1000 | Decimal prefix |
@@ -157,6 +185,7 @@ classes. No changes needed.
 | CONVERT.Kibyte.bit | =CONVERT(1;"Kibyte";"bit") | 8192 | Binary prefix |
 
 **Invalid conversions (2 cases):**
+
 | ID | Formula | Expected | Purpose |
 |----|---------|----------|---------|
 | CONVERT.km.Pa | =CONVERT(1;"km";"Pa") | #ERR | Different unit groups |
@@ -175,12 +204,14 @@ classes. No changes needed.
 ## 8. Build and Test Status
 
 **No build or runtime tests were executed.** Per milestone instructions:
+
 - The AOO `sc` and `scaddins` modules are not configured for build in this
   environment (no `Module_*.mk` makefiles, no generated build tree).
 - `dmake` cannot build without the gbuild configure step.
 - The calcval test harness requires a built office and runs on macOS.
 
 **For validation in a configured AOO build environment:**
+
 1. Configure AOO (`autogen.sh`/`configure`, then `build.pl --all`)
 2. Build the `scaddins` module (Analysis Add-in)
 3. Run `test/odf-validate/start.sh calcval <port>` and
@@ -191,6 +222,7 @@ classes. No changes needed.
 
 The B.2 section of the Milestone B report previously stated that B.2 added six
 test cases. B.2 actually added four cases relative to B.1:
+
 - IFNA.ref.text, IFNA.range, SKEW.text, SKEW.err (4 cases, not 6).
 The B.1 baseline had IFNA.ref and SKEWP.two (2 cases).
 

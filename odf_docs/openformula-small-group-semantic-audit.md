@@ -1,3 +1,22 @@
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License.
+-->
+
 # OpenFormula 1.4 Small Group Semantic Conformance Audit
 
 **Branch:** `openformula`  
@@ -13,13 +32,13 @@ OASIS Open Document Format for Office Applications (OpenDocument) Version 1.4, P
 
 ## F.1 COUNTA / COUNTBLANK (§6.13.7–6.13.8)
 
-### Normative Requirement
+### F.1.1 Normative Requirement
 
 **COUNTA (§6.13.7):** Counts non-empty cells. Empty string `""` is not blank and is counted.
 
 **COUNTBLANK (§6.13.8):** Counts empty cells. Whether a cell returning `""` is blank is implementation-defined.
 
-### AOO Implementation Locations
+### F.1.2 AOO Implementation Locations
 
 - `ScCount2()` — `main/sc/source/core/tool/interpr1.cxx:3834`
 - `ScCountEmptyCells()` — `main/sc/source/core/tool/interpr1.cxx:4714`
@@ -27,7 +46,7 @@ OASIS Open Document Format for Office Applications (OpenDocument) Version 1.4, P
 - Dispatch: `interpr4.cxx:3591` (ocCount2 → ScCount2), `interpr4.cxx:3640` (ocCountEmptyCells → ScCountEmptyCells)
 - Declaration: `main/sc/source/core/inc/interpre.hxx:505` (ScCount2), `:526` (ScCountEmptyCells)
 
-### Execution Path — COUNTA
+### F.1.3 Execution Path — COUNTA
 
 `ScCount2()` calls `IterateParameters(ifCOUNT2)` which iterates over parameters via a `switch(GetStackType())`:
 
@@ -40,9 +59,10 @@ OASIS Open Document Format for Office Applications (OpenDocument) Version 1.4, P
 | `svMatrix` (array) | interpr1.cxx:3713-3760 | `nCount += nC * nR` — **counts ALL matrix elements** including strings (no `IsString` check for COUNT2) |
 | `svError` | interpr1.cxx:3762-3774 | `nCount++` — counts error values |
 
-### Execution Path — COUNTBLANK
+### F.1.4 Execution Path — COUNTBLANK
 
 `ScCountEmptyCells()`:
+
 | Stack Type | Code Path | Behavior |
 |---|---|---|
 | `svSingleRef` | interpr1.cxx:4768-4775 | `lcl_IsCountBlankEmpty(GetCell(aAdr))` — cell-type + formula-result check |
@@ -50,11 +70,12 @@ OASIS Open Document Format for Office Applications (OpenDocument) Version 1.4, P
 | `default` | interpr1.cxx:4803 | `SetError(errIllegalParameter)` — scalar args not supported (COUNTBLANK takes ReferenceList per §6.13.8) |
 
 `lcl_IsCountBlankEmpty()` (interpr1.cxx:4745-4758):
+
 - `CELLTYPE_NONE` / `CELLTYPE_NOTE` / NULL pointer → returns true (blank)
 - Non-FORMULA cell types → returns false (not blank)
 - `CELLTYPE_FORMULA`: if error code or IsValue() → returns false (not blank); otherwise checks `GetString().Len() == 0` — formula cell returning `""` counts as blank
 
-### Current Behavior vs ODF 1.4
+### F.1.5 Current Behavior vs ODF 1.4
 
 | Scenario | ODF 1.4 Normative | AOO Behavior | Match? |
 |---|---|---|---|
@@ -71,7 +92,7 @@ OASIS Open Document Format for Office Applications (OpenDocument) Version 1.4, P
 | Matrix with empty-string cells | COUNTA: not specified explicitly | `nCount += nC * nR` counts all elements including strings | Counts empty-string cells as non-empty |
 | Empty reference/range with mixture | Per-cell evaluation | `lcl_IsCountBlankEmpty` per cell via `ScCellIterator` | Yes |
 
-### Conformance Classification
+### F.1.6 Conformance Classification
 
 - **COUNTA scalar `""`**: Required by ODF 1.4 — matches (empty string counted as non-blank).
 - **COUNTA empty cells**: Required by ODF 1.4 — matches (CELLTYPE_NONE not counted).
@@ -82,16 +103,16 @@ OASIS Open Document Format for Office Applications (OpenDocument) Version 1.4, P
 - **COUNTBLANK scalar argument**: Only ReferenceList accepted (§6.13.8) — `errIllegalParameter` for non-reference args, matches.
 - **COUNTA matrix with strings**: ODF 1.4 does not explicitly address matrix empty-string handling — AOO counts all matrix elements including strings.
 
-### Known Compatibility Risks
+### F.1.7 Known Compatibility Risks
 
 - Changing COUNTBLANK to NOT inspect formula results (treating `""`-returning formulas as non-blank) would be a behavior change affecting existing documents and would diverge from other major spreadsheet applications.
 - AOO's choice to treat formula-cell-returning-`""` as blank is implementation-defined per §6.13.8 and consistent with ISBLANK returning FALSE for such cells (§6.13.14: "A cell with the empty string is not considered blank").
 
-### Recommended Implementation Changes
+### F.1.8 Recommended Implementation Changes
 
 None required for ODF 1.4 conformance. The implementation-defined behavior for formula-cell-returning-`""` is exercised (treated as blank). No production code changes needed; runtime verification pending (no AOO build tree available).
 
-### Suggested Regression Tests
+### F.1.9 Suggested Regression Tests
 
 - `COUNTA` over range with truly empty cells, text, numbers, and `""` scalar argument
 - `COUNTBLANK` over range with truly empty cells vs. cells containing text/numbers
@@ -101,7 +122,7 @@ None required for ODF 1.4 conformance. The implementation-defined behavior for f
 
 ## F.2 INDEX Row-Vector Behavior (§6.14.6)
 
-### Normative Requirement
+### F.2.1 Normative Requirement
 
 **ODF 1.4 §6.14.6:** `INDEX( ReferenceList|Array DataSource ; [ Integer Row ] [ ; [ Integer Column ] ] [ ; Integer AreaNumber = 1 ] )`. Row and Column are 1-based, relative to the top-left of DataSource. If Row is omitted/empty/0, an entire column is returned. If Column is omitted/empty/0, an entire row is returned. If Row or Column exceeds the dimension of the area, an Error is returned. There is NO special row-vector shortcut: `INDEX(H1:L1;3)` (Row=3 on a 1-row range) returns an Error.
 
@@ -117,14 +138,14 @@ None required for ODF 1.4 conformance. The implementation-defined behavior for f
 | ODF 1.3 | "If DataSource is a one-dimensional row vector, Row is optional, which effectively makes Row act as the column offset into the vector" | Returns column 3 (value 30) | ODF 1.3 §6.14.6 (§6.14.6 INDEX, part 4-formula) |
 | ODF 1.4 | Row and Column both 1-based; Row > dimension → Error | Error (Row=3 > 1 row dimension) | ODF 1.4 §6.14.6 (lines 7637-7639 of spec) |
 
-### AOO Implementation Location
+### F.2.2 AOO Implementation Location
 
 - `ScIndex()` — `main/sc/source/core/tool/interpr1.cxx:7448`
 - Dispatch: `interpr4.cxx:3650` (ocIndex → ScIndex)
 - Declaration: `main/sc/source/core/inc/interpre.hxx:564`
 - Parameter class: `main/sc/source/core/tool/parclass.cxx:123` (`ocIndex: {{ Reference, Value, Value, Value }, 0}`)
 
-### Execution Path — ScIndex
+### F.2.3 Execution Path — ScIndex
 
 ```
 nParamCount = GetByte()           // number of arguments
@@ -138,33 +159,34 @@ Then `switch(GetStackType())`:
 | Stack Type | Behavior |
 |---|---|
 | `svMatrix` | Bounds check against matrix dimensions; vector access when nCol==0 or nRow==0 |
-| `svSingleRef` | `if (nCol > 1 || nRow > 1) PushIllegalArgument();` — single cell, only row/col 0 or 1 valid |
+| `svSingleRef` | `if (nCol > 1 \|\| nRow > 1) PushIllegalArgument();` — single cell, only row/col 0 or 1 valid |
 | `svDoubleRef` / `svRefList` | Full range bounds checking; returns sub-reference or single cell |
 
-### Historical Implementation — bRowArray Shortcut
+### F.2.4 Historical Implementation — bRowArray Shortcut
 
 **Milestone A** (commit bb58e28fc2): Removed the `bRowArray` shortcut from `ScIndex()`, making `INDEX(H1:L1;3)` return an error per ODF 1.4.
 
 **Undo** (commit 8f3b3b25a2): Restored the `bRowArray` shortcut, with commit message "INDEX on a row vector keeps the Excel rule, a documented deviation."
 
 **Current state:** `bRowArray` IS present in `main/sc/source/core/tool/interpr1.cxx:7588-7612`. When `nParamCount == 2 && nRow1 == nRow2` (single-row range with row argument):
+
 - Row bounds check is skipped: `(nRow > 0 && nRow1+nRow-1 > nRow2 && !bRowArray)`
 - Alternative row bounds: `(nRow > nCol2 - nCol1 + 1 && bRowArray)` — checked against column width
 - Row argument reinterpreted as column: `nCol = (SCCOL) nRow; nRow = 1;`
 
 Effect: `INDEX(H1:L1;3)` returns the 3rd column (value 30) — ODF 1.3/Excel compatible, NOT ODF 1.4 compliant.
 
-### Conformance Classification
+### F.2.5 Conformance Classification
 
 **Required by ODF 1.4** — NOT currently conformant. `bRowArray` shortcut was removed in Milestone A (bb58e28fc2) but restored in the undo commit (8f3b3b25a2). `INDEX(H1:L1;3)` returns a value (30) instead of an Error as required by ODF 1.4 §6.14.6.
 
-### Known Compatibility Risks
+### F.2.6 Known Compatibility Risks
 
 - **ODF 1.4 non-conformance:** `INDEX(H1:L1;3)` returns column 3 value instead of Error.
 - **Legacy ODF 1.3 documents:** Documents relying on `INDEX(rowvector; n)` returning column n will break if bRowArray is removed.
 - **Test mismatch:** calcval test `INDEX.row.rowonly` expects `#ERR` (ODF 1.4) but current implementation returns `30` (ODF 1.3) via bRowArray.
 
-### Recommended Implementation Changes
+### F.2.7 Recommended Implementation Changes
 
 None for this milestone (compatibility audit only). Two options exist:
 
@@ -173,7 +195,7 @@ None for this milestone (compatibility audit only). Two options exist:
 
 A document-compatibility option (version-aware or import-time handling) could be considered if corpus testing shows significant legacy document impact. This is out of scope for G.4.
 
-### Suggested Regression Tests
+### F.2.8 Suggested Regression Tests
 
 - `INDEX(H1:L1;3)` → value 30 (current bRowArray behavior) / error (ODF 1.4)
 - `INDEX(H1:L1;;3)` → column value 30 (column-only arg)
@@ -184,11 +206,11 @@ A document-compatibility option (version-aware or import-time handling) could be
 
 ## F.3 Criteria Syntax (§4.11.11) — Database Functions
 
-### Normative Requirement
+### F.3.1 Normative Requirement
 
 ODF 1.4 §4.11.11: Criteria syntax supported in database functions (DCOUNT, DCOUNTA, DSUM, DAVERAGE, DMAX, DMIN, etc.). Criteria support comparison operators (`<`, `<=`, `>`, `>=`, `=`, `<>`), text criteria, wildcards, and criteria ranges.
 
-### AOO Implementation Locations
+### F.3.2 AOO Implementation Locations
 
 - `GetDBParams()` — `main/sc/source/core/tool/interpr1.cxx:6664` (parses database + field + criteria range)
 - `DBIterator()` — `main/sc/source/core/tool/interpr1.cxx:6803` (iterates matching records for DBSum, DBAverage, DBMax, DBMin, DBProduct)
@@ -202,7 +224,7 @@ ODF 1.4 §4.11.11: Criteria syntax supported in database functions (DCOUNT, DCOU
 - `ScQueryEntry` struct — `main/sc/inc/global.hxx:797`
 - `ScQueryOp` enum — `main/sc/inc/global.hxx:733-740` (SC_EQUAL, SC_LESS, SC_GREATER, SC_LESS_EQUAL, SC_GREATER_EQUAL, SC_NOT_EQUAL)
 
-### Function-to-Opcode Mapping
+### F.3.3 Function-to-Opcode Mapping
 
 | Function | Opcode | Implementation |
 |---|---|---|
@@ -215,7 +237,7 @@ ODF 1.4 §4.11.11: Criteria syntax supported in database functions (DCOUNT, DCOU
 
 Name mapping: `main/formula/source/core/resource/core_resource.src:227-228` (`DCOUNT` → SC_OPCODE_DB_COUNT, `DCOUNTA` → SC_OPCODE_DB_COUNT_2)
 
-### Criteria Parsing Execution Path
+### F.3.4 Criteria Parsing Execution Path
 
 1. Formula compiler parses `DCOUNT(database, field, criteria)` into opcodes with three Reference parameters.
 2. `GetDBParams()` pops:
@@ -233,7 +255,7 @@ Name mapping: `main/formula/source/core/resource/core_resource.src:227-228` (`DC
 5. `bRegExp` set via `MayBeRegExp()` (GetDBParams :6748) — enables wildcard/RegExp matching
 6. `DBIterator()` iterates matching records using `ScDBQueryDataIterator`
 
-### Current Behavior vs ODF 1.4
+### F.3.5 Current Behavior vs ODF 1.4
 
 | Requirement | ODF 1.4 Normative | AOO Behavior | Match? |
 |---|---|---|---|
@@ -245,19 +267,19 @@ Name mapping: `main/formula/source/core/resource/core_resource.src:227-228` (`DC
 | DCOUNT without field counts all matching records | Required | ScDBCount: bMissingField + INTERNAL type → counts all matching | Yes; the empty-cell undercount is fixed via CountRecords() (dociter.cxx:685-716), see calcval `DB.DCOUNT.*` |
 | DCOUNT with field counts values in field | Required | ScDBQueryDataIterator over field column | Yes |
 
-### Known Limitations
+### F.3.6 Known Limitations
 
 None for database function empty-cell matching. The ScDBCount empty-cell limitation was fixed: `ScDBCount()` (interpr1.cxx:6871-6902) and `ScDBCount2()` (interpr1.cxx:6905-6935) now use `ScDBQueryDataIterator::CountRecords()` (dociter.cxx:685-716), which tests every row against the criteria using `IsQueryValid()`. Rows with no content are not records; rows with an empty cell in a criteria column are counted.
 
-### Conformance Classification
+### F.3.7 Conformance Classification
 
 **Required by ODF 1.4** — Criteria syntax parsing and database function evaluation are implemented, including empty-cell matching for DCOUNT/DCOUNTA without a field.
 
-### Recommended Implementation Changes
+### F.3.8 Recommended Implementation Changes
 
 None required. The ScDBCount empty-cell fix (F-GAP-004) is in (commits b5a1b43b5b and 30877e2746). With an empty criteria cell the count is now all records (`DB.DCOUNT.nf.nocrit` gives 3, was 0).
 
-### Suggested Regression Tests
+### F.3.9 Suggested Regression Tests
 
 - `DCOUNT(R1:T6;;V1:V2)` with `Age>=30` → 4 (B,C,D,E)
 - `DSUM` with criteria
@@ -271,6 +293,7 @@ None required. The ScDBCount empty-cell fix (F-GAP-004) is in (commits b5a1b43b5
 ### F.4.1 Basic Limits (§3.7)
 
 **Normative reference:** ODF 1.4 §3.7 — "Evaluators which claim to support 'basic limits' shall support at least the following limits:
+
 1. formulas up to at least 1024 characters long
 2. at least 30 parameters per function when the function prototype permits a list of parameters
 3. permit strings of ASCII characters of up to 32,767 (2^15-1) characters
@@ -281,6 +304,7 @@ None required. The ScDBCount empty-cell fix (F-GAP-004) is in (commits b5a1b43b5
 #### Formula Length — at least 1024 characters
 
 **Source finding:**
+
 - No explicit formula text length limit (no MAXFORMULA or equivalent check on total formula characters).
 - `main/sc/inc/compiler.hxx:59`: `MAXCODE = 2048` — maximum number of **tokens** in a formula.
 - `main/sc/inc/compiler.hxx:60`: `MAXSTRLEN = 1024` — maximum length of **one symbol** (individual token/string literal), not the formula as a whole.
@@ -296,6 +320,7 @@ None required. The ScDBCount empty-cell fix (F-GAP-004) is in (commits b5a1b43b5
 #### Function Parameters — at least 30
 
 **Source finding:**
+
 - `main/sc/source/core/inc/interpre.hxx:897-927`: `MustHaveParamCount()` family enforces per-function min/max parameter counts.
 - `main/sc/source/core/tool/interpr1.cxx:3396-3400` (`ScMax`): Uses `MustHaveParamCountMin(nParamCount, 1)` — minimum 1 parameter, **no upper cap** specified.
 - `main/sc/source/core/tool/interpr1.cxx:1290-1294` (`ScMin`): Uses `MustHaveParamCount(nParamCount, NUMBER_OF_ARGUMENTS)` — exact count.
@@ -312,6 +337,7 @@ None required. The ScDBCount empty-cell fix (F-GAP-004) is in (commits b5a1b43b5
 #### ASCII Strings — at least 32767 characters
 
 **Source finding:**
+
 - `main/tools/inc/tools/string.hxx:110-120`: `STRING_MAXLEN` definition. `STRING32` is **not defined** anywhere in the codebase, so default applies: `STRING_MAXLEN = 0xFFFF = 65,535` (> 32,767 ODF minimum).
 - `main/sc/source/core/inc/interpre.hxx:930-936`: `CheckStringResultLen()` enforces STRING_MAXLEN at string concatenation (REPT, `&` operator, etc.).
 - `main/sc/source/core/tool/compiler.cxx:2689-2691`: string literals in formulas were limited by MAXSTRLEN=1024 to 1021 characters; they now use `MAXSTRLITLEN` (32767).
@@ -326,6 +352,7 @@ None required. The ScDBCount empty-cell fix (F-GAP-004) is in (commits b5a1b43b5
 #### Nesting Depth — at least 7 levels
 
 **Source finding:**
+
 - The recursive-descent parser is in `main/formula/source/core/api/FormulaCompiler.cxx`. `GetToken()` (:782) and `Expression()` (:1341) stop with errStackOverflow once the recursion count passes `nRecursionMax = 42`.
 - `main/sc/inc/compiler.hxx:61`: `MAXJUMPCOUNT = 32` — limits the jump targets of CHOOSE; IF and IFNA use the same table with at most 3 and 2 jump targets (FormulaCompiler.cxx:1101-1103).
 - Evaluator is stack-based (`ScInterpreter::Push()`/`Pop()`) with no explicit evaluation depth limit beyond MAXCODE=2048 total tokens.
@@ -343,14 +370,14 @@ None required. The ScDBCount empty-cell fix (F-GAP-004) is in (commits b5a1b43b5
 | Requirement | Section | AOO Implementation | Source Location | Status |
 |---|---|---|---|---|
 | Parenthesized expressions / Expression grammar | §5.2 | Formula ::= Intro? Expression; Expression ::= Number \| String \| Array \| PrefixOp Expression \| Expression PostfixOp \| Expression InfixOp Expression \| '(' Expression ')' \| FunctionName '(' ParameterList ')' \| Reference \| QuotedLabel \| AutomaticIntersection \| NamedExpression \| Error | `main/sc/source/core/tool/compiler.cxx:3570` (NextNewToken), :3780 (CompileString) | RUNTIME_PENDING |
-| Constant Numbers | §5.3 | `Number ::= StandardNumber | '.' [0-9]+ ([eE] [-+]? [0-9]+)?`, `StandardNumber ::= [0-9]+ ('.' [0-9]+)? ([eE] [-+]? [0-9]+)?`. Decimal separator '.', scientific notation E/e. Negative numbers are prefix '-' on positive numbers. | `main/sc/source/core/tool/compiler.cxx:2650+` (IsValue, number parsing) | RUNTIME_PENDING |
-| Constant Strings | §5.4 | `String ::= '"' ([^"#x00] | '""')* '"'`. Double-quote escaped by duplication. | `main/sc/source/core/tool/compiler.cxx:2682` (IsString), :2689-2691 (string literal overflow at MAXSTRLEN-1) | RUNTIME_PENDING |
-| Operators | §5.5 | PrefixOp '+', '-'; PostfixOp '%'; InfixOp: ArithmeticOp (+-*/^), ComparisonOp (=<> <> < > <= >=), StringOp (&), ReferenceOp (! ~ :). Precedence per Table 1: ! > : > prefix +,- > ^ > *,/ > +,- > & > comparison. | `main/sc/source/core/tool/compiler.cxx` RangeLine → IntersectionLine → RangeLine → UnaryLine → binary ops; `main/sc/inc/compiler.hxx:61` (MAXJUMPCOUNT=32, CHOOSE only) | RUNTIME_PENDING |
-| Functions and Function Parameters | §5.6 | `FunctionName ::= LetterXML (LetterXML | DigitXML | '_' | '.' | CombiningCharXML)*`. Case-insensitive. Semicolon ';' separator. Empty parameters allowed (considered 0 params, not one empty param). | `main/sc/source/core/tool/compiler.cxx:3648` (function name detection), :3661-3668 (must be followed by '('); `main/sc/source/core/inc/interpre.hxx:897-927` (MustHaveParamCount family) | RUNTIME_PENDING |
+| Constant Numbers | §5.3 | `Number ::= StandardNumber \| '.' [0-9]+ ([eE] [-+]? [0-9]+)?`, `StandardNumber ::= [0-9]+ ('.' [0-9]+)? ([eE] [-+]? [0-9]+)?`. Decimal separator '.', scientific notation E/e. Negative numbers are prefix '-' on positive numbers. | `main/sc/source/core/tool/compiler.cxx:2650+` (IsValue, number parsing) | RUNTIME_PENDING |
+| Constant Strings | §5.4 | `String ::= '"' ([^"#x00] \| '""')* '"'`. Double-quote escaped by duplication. | `main/sc/source/core/tool/compiler.cxx:2682` (IsString), :2689-2691 (string literal overflow at MAXSTRLEN-1) | RUNTIME_PENDING |
+| Operators | §5.5 | PrefixOp '+', '-'; PostfixOp '%'; InfixOp: ArithmeticOp (+-\*/^), ComparisonOp (=<> <> < > <= >=), StringOp (&), ReferenceOp (! ~ :). Precedence per Table 1: ! > : > prefix +,- > ^ > \*,/ > +,- > & > comparison. | `main/sc/source/core/tool/compiler.cxx` RangeLine → IntersectionLine → RangeLine → UnaryLine → binary ops; `main/sc/inc/compiler.hxx:61` (MAXJUMPCOUNT=32, CHOOSE only) | RUNTIME_PENDING |
+| Functions and Function Parameters | §5.6 | `FunctionName ::= LetterXML (LetterXML \| DigitXML \| '_' \| '.' \| CombiningCharXML)*`. Case-insensitive. Semicolon ';' separator. Empty parameters allowed (considered 0 params, not one empty param). | `main/sc/source/core/tool/compiler.cxx:3648` (function name detection), :3661-3668 (must be followed by '('); `main/sc/source/core/inc/interpre.hxx:897-927` (MustHaveParamCount family) | RUNTIME_PENDING |
 | Nonstandard Function Names | §5.7 | Function names not in spec need prefix (e.g., COM.FOO.BAR). Unknown functions → Error value other than #N/A. | `main/sc/source/core/tool/compiler.cxx:3741,:4029,:4072,:4091,:4101,:5493,:5501` (errNoName); `main/formula/source/core/api/FormulaCompiler.cxx:891-895` (unknown name followed by '(' gives errNoName) | RUNTIME_PENDING |
-| References | §5.8 | `Reference ::= '[' (Source? RangeAddress) | ReferenceError ']'`. RangeAddress supports cell, row, column, whole-row, whole-column. References begin with '[' to disambiguate from function names. | `main/sc/source/core/tool/compiler.cxx` (IsReference, PopDoubleRef/PopSingleRef); `main/sc/inc/compiler.hxx` | RUNTIME_PENDING |
-| Simple Named Expressions | §5.11 | `SimpleNamedExpression ::= Identifier | '$$' (Identifier | SingleQuoted)`. Global scope, case-consistent matching. | `main/sc/source/core/tool/compiler.cxx` (NameLine, ocName opcode); `main/sc/source/core/inc/interpre.hxx` | RUNTIME_PENDING |
-| Constant Errors | §5.12 | `#N/A` required; other Errors optional. Error syntax: `'#' [A-Z0-9]+ ([!?] | ('/' ([A-Z] | ([0-9] [!?])))`. Functions propagate Errors unless stated otherwise. | `main/formula/inc/formula/compiler.hrc:58-64` (SC_OPCODE_ERROR_NULL through SC_OPCODE_ERROR_NA); `main/sc/source/core/tool/interpr4.cxx` (PushError, NOTAVAILABLE) | RUNTIME_PENDING |
+| References | §5.8 | `Reference ::= '[' (Source? RangeAddress) \| ReferenceError ']'`. RangeAddress supports cell, row, column, whole-row, whole-column. References begin with '[' to disambiguate from function names. | `main/sc/source/core/tool/compiler.cxx` (IsReference, PopDoubleRef/PopSingleRef); `main/sc/inc/compiler.hxx` | RUNTIME_PENDING |
+| Simple Named Expressions | §5.11 | `SimpleNamedExpression ::= Identifier \| '$$' (Identifier \| SingleQuoted)`. Global scope, case-consistent matching. | `main/sc/source/core/tool/compiler.cxx` (NameLine, ocName opcode); `main/sc/source/core/inc/interpre.hxx` | RUNTIME_PENDING |
+| Constant Errors | §5.12 | `#N/A` required; other Errors optional. Error syntax: `'#' [A-Z0-9]+ ([!?] \| ('/' ([A-Z] \| ([0-9] [!?])))`. Functions propagate Errors unless stated otherwise. | `main/formula/inc/formula/compiler.hrc:58-64` (SC_OPCODE_ERROR_NULL through SC_OPCODE_ERROR_NA); `main/sc/source/core/tool/interpr4.cxx` (PushError, NOTAVAILABLE) | RUNTIME_PENDING |
 | Whitespace | §5.14 | Whitespace ::= #x20 \| #x09 \| #x0a \| #x0d. Ignored outside strings, around operators, before/after =, before function names (but not between name and '('). | `main/sc/source/core/tool/compiler.cxx:3583-3593` (NextNewToken generates ocSpaces), :3655-3667 (whitespace before '(' for function names). Only #x20 is set as whitespace in the compiler character table (`compiler.cxx:448`); #x09, #x0a and #x0d are unverified. | RUNTIME_PENDING |
 
 ### Coverage note: Criteria §4.11.11
