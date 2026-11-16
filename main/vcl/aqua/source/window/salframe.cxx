@@ -25,6 +25,8 @@
 #include "precompiled_vcl.hxx"
 
 #include <string>
+#include <cmath>
+#include <cstdlib>
 
 #include "rtl/ustrbuf.hxx"
 
@@ -257,9 +259,25 @@ void AquaSalFrame::VCLToCocoa( NSPoint& io_rPoint, bool bRelativeToScreen )
 
 // -----------------------------------------------------------------------
 
+// SAL_AQUA_BACKING_SCALE=1 on a Retina screen (or =2 on a 1x one) tests the other scale
+static float getBackingScaleOverride()
+{
+    const char* pEnvStr = getenv( "SAL_AQUA_BACKING_SCALE" );
+    if( !pEnvStr )
+        return 0;
+    char* pEnd = NULL;
+    const double fValue = strtod( pEnvStr, &pEnd );
+    if( pEnd == pEnvStr || *pEnd || !std::isfinite( fValue ) || fValue <= 0 )
+        return 0;
+    return static_cast<float>(fValue);
+}
+
 bool AquaSalFrame::UpdateBackingScale()
 {
-    const float fScale = mpNSWindow ? [mpNSWindow backingScaleFactor] : 1.0f;
+    static const float fOverride = getBackingScaleOverride();
+    float fScale = mpNSWindow ? [mpNSWindow backingScaleFactor] : 1.0f;
+    if( fOverride > 0 )
+        fScale = fOverride;
     if( fScale == mfBackingScale )
         return false;
     mfBackingScale = fScale;
