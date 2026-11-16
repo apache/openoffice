@@ -3398,7 +3398,7 @@ StackVar ScInterpreter::Interpret()
             // RPN code push without error
             PushWithoutError( (FormulaToken&) *pCur );
         }
-        else if (pTokenMatrixMap && !(eOp == ocIf || eOp == ocChose) &&
+        else if (pTokenMatrixMap && !(eOp == ocIf || eOp == ocChose || eOp == ocIfna || eOp == ocIfError) &&
                 ((aTokenMatrixMapIter = pTokenMatrixMap->find( pCur)) !=
                  pTokenMatrixMap->end()) &&
                 (*aTokenMatrixMapIter).second->GetType() != svJumpMatrix)
@@ -3419,7 +3419,7 @@ StackVar ScInterpreter::Interpret()
             nFuncFmtType = NUMBERFORMAT_NUMBER;
             nFuncFmtIndex = 0;
 
-            if ( eOp == ocIf || eOp == ocChose )
+            if ( eOp == ocIf || eOp == ocChose || eOp == ocIfna || eOp == ocIfError )
                 nStackBase = sp;        // don't mess around with the jumps
             else
             {
@@ -3448,6 +3448,8 @@ StackVar ScInterpreter::Interpret()
 // separated    case ocPush             : Push( (ScToken&) *pCur );     break;
                 case ocExternalRef      : ScExternalRef();              break;
                 case ocIf               : ScIfJump();                   break;
+                case ocIfna             : ScIfna();                     break;
+                case ocIfError          : ScIfError();                  break;
                 case ocChose            : ScChoseJump();                break;
                 case ocAdd              : ScAdd();                      break;
                 case ocSub              : ScSub();                      break;
@@ -3691,6 +3693,7 @@ StackVar ScInterpreter::Interpret()
                 case ocDevSq            : ScDevSq();                    break;
                 case ocKurt             : ScKurt();                     break;
                 case ocSchiefe          : ScSkew();                     break;
+                case ocSkewP            : ScSkewP();                    break;
                 case ocModalValue       : ScModalValue();               break;
                 case ocMedian           : ScMedian();                   break;
                 case ocGeoMean          : ScGeoMean();                  break;
@@ -3852,6 +3855,8 @@ StackVar ScInterpreter::Interpret()
     case ocIsEmpty : \
     case ocIsErr : \
     case ocIsError : \
+    case ocIfna : \
+    case ocIfError : \
     case ocIsFormula : \
     case ocIsLogical : \
     case ocIsNA : \
@@ -4031,7 +4036,12 @@ StackVar ScInterpreter::Interpret()
         nRetFmtIndex = 0;
 
     if (nGlobalError && GetStackType() != svError )
+    {
+        // after errStackOverflow the push would fail and a stale value become the result
+        if ( sp >= MAXSTACK )
+            Pop();
         PushError( nGlobalError);
+    }
 
     // THE final result.
     xResult = PopToken();

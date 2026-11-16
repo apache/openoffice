@@ -723,11 +723,18 @@ static const FunctionData saFuncTableOox[] =
     { 0,                        "CUBEKPIMEMBER",        477,    NOID,   3,  4,  V, { VR }, 0 },
     { 0,                        "CUBESET",              478,    NOID,   2,  5,  V, { VR, RX, VR }, 0 },
     { 0,                        "CUBESETCOUNT",         479,    NOID,   1,  1,  V, { VR }, 0 },
-    { 0,                        "IFERROR",              480,    NOID,   2,  2,  V, { VO, RO }, 0 },
+    { "IFERROR",                "IFERROR",              480,    NOID,   2,  2,  V, { VO, RO }, 0 },
     { "COUNTIFS",               "COUNTIFS",             481,    NOID,   2,  MX, V, { RO, VR }, FUNCFLAG_MACROCALL | FUNCFLAG_PARAMPAIRS },
     { "SUMIFS",                 "SUMIFS",               482,    NOID,   3,  MX, V, { RO, RO, VR }, FUNCFLAG_MACROCALL | FUNCFLAG_PARAMPAIRS },
     { "AVERAGEIF",              "AVERAGEIF",            483,    NOID,   2,  3,  V, { RO, VR, RO }, FUNCFLAG_MACROCALL },
-    { "AVERAGEIFS",             "AVERAGEIFS",           484,    NOID,   3,  MX, V, { RO, RO, VR }, FUNCFLAG_MACROCALL | FUNCFLAG_PARAMPAIRS }
+    { "AVERAGEIFS",             "AVERAGEIFS",           484,    NOID,   3,  MX, V, { RO, RO, VR }, FUNCFLAG_MACROCALL | FUNCFLAG_PARAMPAIRS },
+    { "IFNA",                   "IFNA",                 NOID,   NOID,   2,  2,  V, { VR, RO }, FUNCFLAG_MACROCALL },
+    { "SKEWP",                  "SKEW.P",               NOID,   NOID,   1,  MX, V, { RX }, FUNCFLAG_MACROCALL },
+    { "BITAND",                 "BITAND",               NOID,   NOID,   2,  2,  V, { VR }, FUNCFLAG_MACROCALL },
+    { "BITOR",                  "BITOR",                NOID,   NOID,   2,  2,  V, { VR }, FUNCFLAG_MACROCALL },
+    { "BITXOR",                 "BITXOR",               NOID,   NOID,   2,  2,  V, { VR }, FUNCFLAG_MACROCALL },
+    { "BITLSHIFT",              "BITLSHIFT",            NOID,   NOID,   2,  2,  V, { VR }, FUNCFLAG_MACROCALL },
+    { "BITRSHIFT",              "BITRSHIFT",            NOID,   NOID,   2,  2,  V, { VR }, FUNCFLAG_MACROCALL }
 };
 
 /** Functions defined by OpenFormula, but not supported by Calc or by Excel. */
@@ -736,11 +743,6 @@ static const FunctionData saFuncTableOdf[] =
     { "ARABIC",                 0,                      NOID,   NOID,   1,  1,  V, { VR }, FUNCFLAG_MACROCALLODF },
     { "B",                      0,                      NOID,   NOID,   3,  4,  V, { VR }, FUNCFLAG_MACROCALLODF },
     { "BASE",                   0,                      NOID,   NOID,   2,  3,  V, { VR }, FUNCFLAG_MACROCALLODF },
-    { "BITAND",                 0,                      NOID,   NOID,   2,  2,  V, { VR }, FUNCFLAG_MACROCALLODF },
-    { "BITLSHIFT",              0,                      NOID,   NOID,   2,  2,  V, { VR }, FUNCFLAG_MACROCALLODF },
-    { "BITOR",                  0,                      NOID,   NOID,   2,  2,  V, { VR }, FUNCFLAG_MACROCALLODF },
-    { "BITRSHIFT",              0,                      NOID,   NOID,   2,  2,  V, { VR }, FUNCFLAG_MACROCALLODF },
-    { "BITXOR",                 0,                      NOID,   NOID,   2,  2,  V, { VR }, FUNCFLAG_MACROCALLODF },
     { "CHISQDIST",              0,                      NOID,   NOID,   2,  3,  V, { VR }, FUNCFLAG_MACROCALLODF },
     { "CHISQINV",               0,                      NOID,   NOID,   2,  2,  V, { VR }, FUNCFLAG_MACROCALLODF },
     { "COMBINA",                0,                      NOID,   NOID,   2,  2,  V, { VR }, FUNCFLAG_MACROCALLODF },
@@ -751,7 +753,6 @@ static const FunctionData saFuncTableOdf[] =
     { "FORMULA",                0,                      NOID,   NOID,   1,  1,  V, { RO }, FUNCFLAG_MACROCALLODF },
     { "GAMMA",                  0,                      NOID,   NOID,   1,  1,  V, { VR }, FUNCFLAG_MACROCALLODF },
     { "GAUSS",                  0,                      NOID,   NOID,   1,  1,  V, { VR }, FUNCFLAG_MACROCALLODF },
-    { "IFNA",                   0,                      NOID,   NOID,   2,  2,  V, { VR, RO }, FUNCFLAG_MACROCALLODF },
     { "ISFORMULA",              0,                      NOID,   NOID,   1,  1,  V, { RO }, FUNCFLAG_MACROCALLODF },
     { "ISOWEEKNUM",             0,                      NOID,   NOID,   1,  2,  V, { VR }, FUNCFLAG_MACROCALLODF },
     { "MUNIT",                  0,                      NOID,   NOID,   1,  1,  A, { VR }, FUNCFLAG_MACROCALLODF },
@@ -762,7 +763,6 @@ static const FunctionData saFuncTableOdf[] =
     { "RRI",                    0,                      NOID,   NOID,   3,  3,  V, { VR }, FUNCFLAG_MACROCALLODF },
     { "SHEET",                  0,                      NOID,   NOID,   0,  1,  V, { RO }, FUNCFLAG_MACROCALLODF },
     { "SHEETS",                 0,                      NOID,   NOID,   0,  1,  V, { RO }, FUNCFLAG_MACROCALLODF },
-    { "SKEWP",                  0,                      NOID,   NOID,   1,  MX, V, { RX }, FUNCFLAG_MACROCALLODF },
     { "UNICHAR",                0,                      NOID,   NOID,   1,  1,  V, { VR }, FUNCFLAG_MACROCALLODF },
     { "UNICODE",                0,                      NOID,   NOID,   1,  1,  V, { VR }, FUNCFLAG_MACROCALLODF },
     { "XOR",                    0,                      NOID,   NOID,   1,  MX, V, { RX }, FUNCFLAG_MACROCALLODF }
@@ -1243,6 +1243,12 @@ bool OpCodeProviderImpl::initFuncOpCode( FunctionInfo& orFuncInfo, const ApiToke
                 aEntry.Name = orFuncInfo.maOoxFuncName;
                 aEntry.Token = aIt->second;
                 maParserMap.push_back( aEntry );
+                // cell formulas spell macro call functions with the prefix
+                if( orFuncInfo.maBiffMacroName.getLength() > 0 )
+                {
+                    aEntry.Name = orFuncInfo.maBiffMacroName;
+                    maParserMap.push_back( aEntry );
+                }
             }
         }
         else
