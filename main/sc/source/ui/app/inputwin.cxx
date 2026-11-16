@@ -233,7 +233,7 @@ __EXPORT ScInputWindow::~ScInputWindow()
 	if ( !bDown )
 	{
 		TypeId aScType = TYPE(ScTabViewShell);
-		SfxViewShell* pSh = SfxViewShell::GetFirst( &aScType );
+		SfxViewShell* pSh = SfxViewShell::GetFirst( &aScType, sal_False );
 		while ( pSh )
 		{
 			ScInputHandler* pHdl = ((ScTabViewShell*)pSh)->GetInputHandler();
@@ -242,7 +242,7 @@ __EXPORT ScInputWindow::~ScInputWindow()
 				pHdl->SetInputWindow( NULL );
                 pHdl->StopInputWinEngine( sal_False );  // #125841# reset pTopView pointer
             }
-			pSh = SfxViewShell::GetNext( *pSh, &aScType );
+			pSh = SfxViewShell::GetNext( *pSh, &aScType, sal_False );
 		}
 	}
 
