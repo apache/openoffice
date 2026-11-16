@@ -3398,7 +3398,7 @@ StackVar ScInterpreter::Interpret()
             // RPN code push without error
             PushWithoutError( (FormulaToken&) *pCur );
         }
-        else if (pTokenMatrixMap && !(eOp == ocIf || eOp == ocChose || eOp == ocIfna) &&
+        else if (pTokenMatrixMap && !(eOp == ocIf || eOp == ocChose || eOp == ocIfna || eOp == ocIfError) &&
                 ((aTokenMatrixMapIter = pTokenMatrixMap->find( pCur)) !=
                  pTokenMatrixMap->end()) &&
                 (*aTokenMatrixMapIter).second->GetType() != svJumpMatrix)
@@ -3419,7 +3419,7 @@ StackVar ScInterpreter::Interpret()
             nFuncFmtType = NUMBERFORMAT_NUMBER;
             nFuncFmtIndex = 0;
 
-            if ( eOp == ocIf || eOp == ocChose || eOp == ocIfna )
+            if ( eOp == ocIf || eOp == ocChose || eOp == ocIfna || eOp == ocIfError )
                 nStackBase = sp;        // don't mess around with the jumps
             else
             {
@@ -3449,6 +3449,7 @@ StackVar ScInterpreter::Interpret()
                 case ocExternalRef      : ScExternalRef();              break;
                 case ocIf               : ScIfJump();                   break;
                 case ocIfna             : ScIfna();                     break;
+                case ocIfError          : ScIfError();                  break;
                 case ocChose            : ScChoseJump();                break;
                 case ocAdd              : ScAdd();                      break;
                 case ocSub              : ScSub();                      break;
@@ -3855,6 +3856,7 @@ StackVar ScInterpreter::Interpret()
     case ocIsErr : \
     case ocIsError : \
     case ocIfna : \
+    case ocIfError : \
     case ocIsFormula : \
     case ocIsLogical : \
     case ocIsNA : \

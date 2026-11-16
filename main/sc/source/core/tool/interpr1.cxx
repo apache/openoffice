@@ -321,9 +321,24 @@ void ScInterpreter::ScChoseJump()
         aCode.Jump( pJump[ nJumpCount ], pJump[ nJumpCount ] );
 }
 
+static bool lcl_IsIfnaHit( sal_uInt16 nErr, bool bAnyError )
+{
+    return bAnyError ? (nErr != 0) : (nErr == NOTAVAILABLE);
+}
+
 void ScInterpreter::ScIfna()
 {
-    RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScIfna" );
+    ScIfnaOrError( false );
+}
+
+void ScInterpreter::ScIfError()
+{
+    ScIfnaOrError( true );
+}
+
+void ScInterpreter::ScIfnaOrError( bool bAnyError )
+{
+    RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScIfnaOrError" );
     const short* pJump = pCur->GetJump();
     bool bIsNA = false;
     MatrixDoubleRefToMatrix();
@@ -338,11 +353,11 @@ void ScInterpreter::ScIfna()
         {
             ScAddress aAdr;
             PopDoubleRefOrSingleRef( aAdr );
-            if ( nGlobalError == NOTAVAILABLE )
+            if ( lcl_IsIfnaHit( nGlobalError, bAnyError ) )
                 bIsNA = true;
             else if ( nGlobalError )
                 PushError( nGlobalError );
-            else if ( GetCellErrCode( GetCell( aAdr ) ) == NOTAVAILABLE )
+            else if ( lcl_IsIfnaHit( GetCellErrCode( GetCell( aAdr ) ), bAnyError ) )
                 bIsNA = true;
             else
                 PushCellResultToken( false, aAdr, &nFuncFmtType, &nFuncFmtIndex );
@@ -372,7 +387,7 @@ void ScInterpreter::ScIfna()
                 bool bAnyNA = false;
                 for ( SCSIZE nC = 0; nC < nCols && !bAnyNA; ++nC )
                     for ( SCSIZE nR = 0; nR < nRows && !bAnyNA; ++nR )
-                        bAnyNA = pMat->IsValue( nC, nR ) && pMat->GetError( nC, nR ) == NOTAVAILABLE;
+                        bAnyNA = pMat->IsValue( nC, nR ) && lcl_IsIfnaHit( pMat->GetError( nC, nR ), bAnyError );
                 if ( !bAnyNA )
                 {
                     // nothing to substitute, the fallback is not evaluated
@@ -389,7 +404,7 @@ void ScInterpreter::ScIfna()
                 {
                     for ( SCSIZE nR = 0; nR < nRows; ++nR )
                     {
-                        if ( pMat->IsValue( nC, nR ) && pMat->GetError( nC, nR ) == NOTAVAILABLE )
+                        if ( pMat->IsValue( nC, nR ) && lcl_IsIfnaHit( pMat->GetError( nC, nR ), bAnyError ) )
                             pJumpMat->SetJump( nC, nR, 1.0, pJump[ 1 ], pJump[ 2 ] );
                         else
                         {
@@ -414,8 +429,8 @@ void ScInterpreter::ScIfna()
             return;
         }
         default:
-            if ( nGlobalError == NOTAVAILABLE || (GetStackType() == svError &&
-                        pStack[ sp - 1 ]->GetError() == NOTAVAILABLE) )
+            if ( lcl_IsIfnaHit( nGlobalError, bAnyError ) || (GetStackType() == svError &&
+                        lcl_IsIfnaHit( pStack[ sp - 1 ]->GetError(), bAnyError )) )
             {
                 Pop();
                 bIsNA = true;

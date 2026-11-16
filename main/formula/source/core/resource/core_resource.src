@@ -355,6 +355,7 @@ Resource RID_STRLIST_FUNCTION_NAMES_ENGLISH_ODFF
     String SC_OPCODE_BITLSHIFT { Text= "BITLSHIFT" ; };
     String SC_OPCODE_BITRSHIFT { Text= "BITRSHIFT" ; };
     String SC_OPCODE_IFNA { Text = "IFNA" ; };
+    String SC_OPCODE_IFERROR { Text = "IFERROR" ; };
     String SC_OPCODE_SKEWP { Text = "SKEWP" ; };
 
     /* BEGIN defined ERROR.TYPE() values. */
@@ -699,6 +700,7 @@ Resource RID_STRLIST_FUNCTION_NAMES_ENGLISH
     String SC_OPCODE_BITLSHIFT { Text= "BITLSHIFT" ; };
     String SC_OPCODE_BITRSHIFT { Text= "BITRSHIFT" ; };
     String SC_OPCODE_IFNA { Text = "IFNA" ; };
+    String SC_OPCODE_IFERROR { Text = "IFERROR" ; };
     String SC_OPCODE_SKEWP { Text = "SKEWP" ; };
 
     /* BEGIN defined ERROR.TYPE() values. */
@@ -1951,6 +1953,10 @@ Resource RID_STRLIST_FUNCTION_NAMES
     String SC_OPCODE_IFNA
     {
         Text [ en-US ] = "IFNA";
+    };
+    String SC_OPCODE_IFERROR
+    {
+        Text [ en-US ] = "IFERROR";
     };
     /* BEGIN defined ERROR.TYPE() values. */
     /* ERROR.TYPE( #NULL! ) == 1 */

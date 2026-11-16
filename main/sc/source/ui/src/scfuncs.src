@@ -1056,6 +1056,38 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 			Text [ en-US ] = "The value to be returned if Value is an #N/A error." ;
 		};
 	};
+	// -=*# Resource for function IFERROR #*=-
+	Resource SC_OPCODE_IFERROR
+	{
+		String 1 // Description
+		{
+			Text [ en-US ] = "Returns the value if it is not an error value, otherwise it returns the alternative value." ;
+		};
+		ExtraData =
+		{
+			0;
+			ID_FUNCTION_GRP_LOGIC;
+			U2S( HID_FUNC_IFERROR );
+			2;	0;	0;
+			0;
+		};
+		String 2 // Name of Parameter 1
+		{
+			Text [ en-US ] = "Value" ;
+		};
+		String 3 // Description of Parameter 1
+		{
+			Text [ en-US ] = "The value to be checked for an error value." ;
+		};
+		String 4 // Name of Parameter 2
+		{
+			Text [ en-US ] = "Alternative" ;
+		};
+		String 5 // Description of Parameter 2
+		{
+			Text [ en-US ] = "The value to be returned if Value is an error value." ;
+		};
+	};
 	// -=*# Resource for function BW #*=-
 	Resource SC_OPCODE_BW
 	{

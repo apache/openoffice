@@ -793,6 +793,8 @@ void ScStandard();
 void ScSkew();
 void ScSkewP();
 void ScIfna();
+void ScIfError();
+void ScIfnaOrError( bool bAnyError );
 void ScMedian();
 double GetMedian( ::std::vector<double> & rArray );
 double GetPercentile( ::std::vector<double> & rArray, double fPercentile );

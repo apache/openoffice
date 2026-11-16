@@ -1012,7 +1012,7 @@ void FormulaCompiler::Factor()
             eOp = NextToken();
         }
         else if ((SC_OPCODE_START_2_PAR <= eOp && eOp < SC_OPCODE_STOP_2_PAR
-                    && (eOp != ocIfna || bCompileForFAP))
+                    && ((eOp != ocIfna && eOp != ocIfError) || bCompileForFAP))
                 || eOp == ocExternal
                 || eOp == ocMacro
                 || eOp == ocAnd
@@ -1074,13 +1074,13 @@ void FormulaCompiler::Factor()
                 pArr->SetRecalcModeAlways();
             PutCode( pFacToken );
         }
-        else if (eOp == ocIf || eOp == ocChose || eOp == ocIfna)
+        else if (eOp == ocIf || eOp == ocChose || eOp == ocIfna || eOp == ocIfError)
         {
             // the PC counters are -1
             pFacToken = pToken;
             if ( eOp == ocIf )
                 pFacToken->GetJump()[ 0 ] = 3;  // if, else, behind
-            else if ( eOp == ocIfna )
+            else if ( eOp == ocIfna || eOp == ocIfError )
                 pFacToken->GetJump()[ 0 ] = 2;  // fallback, behind
             else
                 pFacToken->GetJump()[ 0 ] = MAXJUMPCOUNT+1;
@@ -1100,7 +1100,7 @@ void FormulaCompiler::Factor()
             // nJump[0]*2+2, which is 3*2+2 on ocIf.
             const short nJumpMax =
                 (pFacToken->GetOpCode() == ocIf ? 3 :
-                 (pFacToken->GetOpCode() == ocIfna ? 2 : MAXJUMPCOUNT));
+                 ((pFacToken->GetOpCode() == ocIfna || pFacToken->GetOpCode() == ocIfError) ? 2 : MAXJUMPCOUNT));
             while ( (nJumpCount < (MAXJUMPCOUNT - 1)) && (eOp == ocSep)
                     && (!pArr->GetCodeError() || bIgnoreErrors) )
             {
@@ -1127,7 +1127,7 @@ void FormulaCompiler::Factor()
                 if ( ++nJumpCount <= nJumpMax )
                     pFacToken->GetJump()[ nJumpCount ] = pc-1;
                 if ((pFacToken->GetOpCode() == ocIf && (nJumpCount > 3)) ||
-                        (pFacToken->GetOpCode() == ocIfna && (nJumpCount != 2)) ||
+                        ((pFacToken->GetOpCode() == ocIfna || pFacToken->GetOpCode() == ocIfError) && (nJumpCount != 2)) ||
                                  (nJumpCount >= MAXJUMPCOUNT))
                     SetError(errIllegalParameter);
                 else

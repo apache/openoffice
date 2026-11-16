@@ -125,7 +125,7 @@ sal_uInt8 FormulaToken::GetParamCount() const
         return 0;           // no parameter
     else if (SC_OPCODE_START_1_PAR <= eOp && eOp < SC_OPCODE_STOP_1_PAR)
         return 1;           // one parameter
-    else if ( eOp == ocIf || eOp == ocChose || eOp == ocIfna )
+    else if ( eOp == ocIf || eOp == ocChose || eOp == ocIfna || eOp == ocIfError )
         return 1;           // only the condition counts as parameter
     else
         return 0;           // all the rest, no Parameter, or
@@ -846,7 +846,7 @@ sal_Bool FormulaTokenArray::HasMatrixDoubleRefOps()
             }
             if ( eOp == ocPush || lcl_IsReference( eOp, t->GetType() )  )
                 pStack[sp++] = t;
-            else if ( eOp == ocIf || eOp == ocChose || eOp == ocIfna )
+            else if ( eOp == ocIf || eOp == ocChose || eOp == ocIfna || eOp == ocIfError )
             {   // Jumps ignorieren, vorheriges Result (Condition) poppen
                 if ( sp )
                     --sp;
@@ -1199,9 +1199,10 @@ FormulaToken* FormulaTokenArray::AddOpCode( OpCode eOp )
         case ocIf:
         case ocChose:
         case ocIfna:
+        case ocIfError:
             {
                 short nJump[MAXJUMPCOUNT + 1];
-                nJump[ 0 ] = ocIf == eOp ? 3 : (ocIfna == eOp ? 2 : MAXJUMPCOUNT+1);
+                nJump[ 0 ] = ocIf == eOp ? 3 : ((ocIfna == eOp || ocIfError == eOp) ? 2 : MAXJUMPCOUNT+1);
                 pRet = new FormulaJumpToken( eOp, (short*)nJump );
             }
             break;

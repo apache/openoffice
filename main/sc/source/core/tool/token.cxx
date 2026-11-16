@@ -161,6 +161,7 @@ void ScRawToken::SetOpCode( OpCode e )
             nJump[ 0 ] = MAXJUMPCOUNT+1;
             break;
         case ocIfna:
+        case ocIfError:
             eType = svJump;
             nJump[ 0 ] = 2; // Fallback, Behind
             break;

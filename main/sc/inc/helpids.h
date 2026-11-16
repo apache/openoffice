@@ -780,4 +780,5 @@
 #define HID_FUNC_BITLSHIFT                                      "SC_HID_FUNC_BITLSHIFT"
 #define HID_FUNC_BITRSHIFT                                      "SC_HID_FUNC_BITRSHIFT"
 #define HID_FUNC_IFNA                                           "SC_HID_FUNC_IFNA"
+#define HID_FUNC_IFERROR                                        "SC_HID_FUNC_IFERROR"
 #define HID_FUNC_SKEWP                                          "SC_HID_FUNC_SKEWP"

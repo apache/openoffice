@@ -63,6 +63,7 @@ const ScParameterClassification::RawData ScParameterClassification::pRawData[] =
     { ocIf,              {{ Array, Reference, Reference                          }, 0 }},
     { ocChose,           {{ Array, Reference                                     }, 1 }},
     { ocIfna,            {{ Reference, Reference                                 }, 0 }},
+    { ocIfError,         {{ Reference, Reference                                 }, 0 }},
     // Other specials.
     { ocOpen,            {{ Bounds                                               }, 0 }},
     { ocClose,           {{ Bounds                                               }, 0 }},
