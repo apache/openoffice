@@ -723,7 +723,7 @@ static const FunctionData saFuncTableOox[] =
     { 0,                        "CUBEKPIMEMBER",        477,    NOID,   3,  4,  V, { VR }, 0 },
     { 0,                        "CUBESET",              478,    NOID,   2,  5,  V, { VR, RX, VR }, 0 },
     { 0,                        "CUBESETCOUNT",         479,    NOID,   1,  1,  V, { VR }, 0 },
-    { 0,                        "IFERROR",              480,    NOID,   2,  2,  V, { VO, RO }, 0 },
+    { "IFERROR",                "IFERROR",              480,    NOID,   2,  2,  V, { VO, RO }, 0 },
     { "COUNTIFS",               "COUNTIFS",             481,    NOID,   2,  MX, V, { RO, VR }, FUNCFLAG_MACROCALL | FUNCFLAG_PARAMPAIRS },
     { "SUMIFS",                 "SUMIFS",               482,    NOID,   3,  MX, V, { RO, RO, VR }, FUNCFLAG_MACROCALL | FUNCFLAG_PARAMPAIRS },
     { "AVERAGEIF",              "AVERAGEIF",            483,    NOID,   2,  3,  V, { RO, VR, RO }, FUNCFLAG_MACROCALL },

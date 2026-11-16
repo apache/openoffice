@@ -376,6 +376,8 @@ static const XclFunctionInfo saFuncTable_Oox[] =
     { ocAverageIfs,         255,    4,  MX, V, { RO_E, RO, RO, VR }, EXC_FUNCFLAG_EXPORTONLY|EXC_FUNCFLAG_PARAMPAIRS, EXC_FUNCNAME( "AVERAGEIFS" ) },
     { ocIfna,               NOID,   2,  2,  V, { VR }, EXC_FUNCFLAG_IMPORTONLY, EXC_FUNCNAME( "IFNA" ) },
     { ocIfna,               255,    3,  3,  V, { RO_E, VO, RO }, EXC_FUNCFLAG_EXPORTONLY, EXC_FUNCNAME( "IFNA" ) },
+    { ocIfError,            NOID,   2,  2,  V, { VR }, EXC_FUNCFLAG_IMPORTONLY, EXC_FUNCNAME( "IFERROR" ) },
+    { ocIfError,            255,    3,  3,  V, { RO_E, VO, RO }, EXC_FUNCFLAG_EXPORTONLY, EXC_FUNCNAME( "IFERROR" ) },
     { ocSkewP,              NOID,   1,  MX, V, { VR }, EXC_FUNCFLAG_IMPORTONLY, EXC_FUNCNAME( "SKEW.P" ) },
     { ocSkewP,              255,    2,  MX, V, { RO_E, RO }, EXC_FUNCFLAG_EXPORTONLY, EXC_FUNCNAME( "SKEW.P" ) },
     { ocBitAnd,             NOID,   2,  2,  V, { VR }, EXC_FUNCFLAG_IMPORTONLY, EXC_FUNCNAME( "BITAND" ) },
