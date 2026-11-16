@@ -11,7 +11,7 @@ Therefore **no conformance level (Small/Medium/Large) may be claimed for AOO Cal
 
 ## 2. Coverage of mandatory functions by group
 
-The ODF 1.2 function baseline (used by AOO's own `test/aoo-test/data/openformula-functions.txt` and `test/odf-validate/openformula-functions.txt`, titled "OpenDocument 1.2 Part 2 chapter 6") lists 414 function names. AOO's opcode map (`main/formula/inc/formula/compiler.hrc`, last opcode id 410 = SKEWP) covers all of those except IFERROR, which has no opcode. IFNA (opcode 409) and SKEWP (opcode 410) were implemented in Milestone B and are no longer missing.
+The ODF 1.2 function baseline (used by AOO's own `test/aoo-test/data/openformula-functions.txt` and `test/odf-validate/openformula-functions.txt`, titled "OpenDocument 1.2 Part 2 chapter 6") lists 391 function names. AOO's opcode map (`main/formula/inc/formula/compiler.hrc`, last opcode id 410 = SKEWP) covers all of those except IFERROR, which has no opcode. IFNA (opcode 409) and SKEWP (opcode 410) were implemented in Milestone B and are no longer missing.
 
 Every baseline function except IFERROR has an opcode, an implementation in `interpr*.cxx`, `scfuncs.src` metadata, and a `core_resource.src` name mapping (see `openformula-functions.tsv`).
 

@@ -5,7 +5,7 @@ Source-of-truth: `test/aoo-test/`, `test/odf-validate/`, and AOO source. Finding
 ## 1. Existing test inventories
 
 ### test/aoo-test/data/openformula-functions.txt
-- 414 lines (414 function names + header comments).
+- 414 lines: 391 function names after a 23-line license header. `test/odf-validate/openformula-functions.txt` has the same 391 names.
 - Header: "Names of the functions defined in OpenDocument 1.2 Part 2 (OpenFormula) chapter 6, one per line. Used by formulacheck.py to tell standard functions from nonstandard ones (Part 2 5.7)."
 - **[CONFIRMED]** Includes IFNA (line 183), SKEWP (line 350), BITAND/BITOR/BITXOR/BITLSHIFT/BITRSHIFT (lines 59-63).
 - **[CONFIRMED]** Does NOT include EASTERSUNDAY — despite EASTERSUNDAY being an implemented ODF 1.3/1.4 function (`interpr2.cxx:261`, `core_resource.src:333`).
