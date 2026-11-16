@@ -2370,7 +2370,7 @@ void AquaSalGraphics::SetXORMode( bool bSet, bool bInvertOnly )
 	if( !mpXorEmulation )
 	{
 		mpXorEmulation = new XorEmulation();
-		mpXorEmulation->SetTarget( mnWidth, mnHeight, mnBitmapDepth, mrContext, mxLayer, mfScale );
+		mpXorEmulation->SetTarget( mnWidth, mnHeight, mnBitmapDepth, mrContext, mxLayer );
 	}
 
 	// change the XOR mode
@@ -2424,7 +2424,7 @@ XorEmulation::~XorEmulation()
 // -----------------------------------------------------------------------
 
 void XorEmulation::SetTarget( int nWidth, int nHeight, int nTargetDepth,
-	CGContextRef xTargetContext, CGLayerRef xTargetLayer, float fScale )
+	CGContextRef xTargetContext, CGLayerRef xTargetLayer )
 {
 	// prepare to replace old mask+temp context
 	if( mxMaskContext )
@@ -2452,6 +2452,14 @@ void XorEmulation::SetTarget( int nWidth, int nHeight, int nTargetDepth,
 	// retarget drawing operations to the XOR mask
 	mxTargetLayer = xTargetLayer;
 	mxTargetContext = xTargetContext;
+
+	// XOR per layer pixel, which is more than one per point on a HiDPI layer
+	if( xTargetLayer )
+	{
+		const CGSize aPixels = CGLayerGetSize( xTargetLayer );
+		nWidth = static_cast<int>(aPixels.width);
+		nHeight = static_cast<int>(aPixels.height);
+	}
 
 	// prepare creation of matching CGBitmaps
 	CGColorSpaceRef aCGColorSpace = GetSalData()->mxRGBSpace;
@@ -2502,11 +2510,9 @@ void XorEmulation::SetTarget( int nWidth, int nHeight, int nTargetDepth,
 		CGContextSetBlendMode( mxMaskContext, kCGBlendModeDifference );
 
 	// initialize the transformation matrix to the drawing target
-	const CGAffineTransform aCTM = CGAffineTransformConcat( CGContextGetCTM( xTargetContext ),
-		CGAffineTransformMakeScale( 1.0 / fScale, 1.0 / fScale ) );
+	// the temp context keeps identity: it copies target pixels 1:1
+	const CGAffineTransform aCTM = CGContextGetCTM( xTargetContext );
 	CGContextConcatCTM( mxMaskContext, aCTM );
-	if( mxTempContext )
-		CGContextConcatCTM( mxTempContext, aCTM );
 
 	// initialize the default XorMask graphics state
 	CGContextSaveGState( mxMaskContext );
@@ -2540,7 +2546,10 @@ bool XorEmulation::UpdateTarget()
 		const int nHeight = (int)CGImageGetHeight( xXorImage );
 		// TODO: update minimal changerect
 		const CGRect aFullRect = CGRectMake( 0, 0, nWidth, nHeight);
+		CGContextSaveGState( mxTargetContext );
+		CGContextConcatCTM( mxTargetContext, CGAffineTransformInvert( CGContextGetCTM( mxTargetContext ) ) );
 		CGContextDrawImage( mxTargetContext, aFullRect, xXorImage );
+		CGContextRestoreGState( mxTargetContext );
 		CGImageRelease( xXorImage );
 	}
 
