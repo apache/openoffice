@@ -321,6 +321,133 @@ void ScInterpreter::ScChoseJump()
         aCode.Jump( pJump[ nJumpCount ], pJump[ nJumpCount ] );
 }
 
+static bool lcl_IsIfnaHit( sal_uInt16 nErr, bool bAnyError )
+{
+    return bAnyError ? (nErr != 0) : (nErr == NOTAVAILABLE);
+}
+
+void ScInterpreter::ScIfna()
+{
+    ScIfnaOrError( false );
+}
+
+void ScInterpreter::ScIfError()
+{
+    ScIfnaOrError( true );
+}
+
+void ScInterpreter::ScIfnaOrError( bool bAnyError )
+{
+    RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScIfnaOrError" );
+    const short* pJump = pCur->GetJump();
+    bool bIsNA = false;
+    MatrixDoubleRefToMatrix();
+    // the value path keeps the format of the value
+    nFuncFmtType = nCurFmtType;
+    nFuncFmtIndex = nCurFmtIndex;
+
+    switch ( GetStackType() )
+    {
+        case svSingleRef :
+        case svDoubleRef :
+        {
+            ScAddress aAdr;
+            PopDoubleRefOrSingleRef( aAdr );
+            if ( lcl_IsIfnaHit( nGlobalError, bAnyError ) )
+                bIsNA = true;
+            else if ( nGlobalError )
+                PushError( nGlobalError );
+            else if ( lcl_IsIfnaHit( GetCellErrCode( GetCell( aAdr ) ), bAnyError ) )
+                bIsNA = true;
+            else
+                PushCellResultToken( false, aAdr, &nFuncFmtType, &nFuncFmtIndex );
+        }
+        break;
+        case svRefList :
+            // No per-element #N/A substitution, the value passes through.
+        break;
+        case svMatrix :
+        {
+            ScMatrixRef pMat = PopMatrix();
+            SCSIZE nCols = 0, nRows = 0;
+            if ( pMat )
+                pMat->GetDimensions( nCols, nRows );
+            if ( !nCols || !nRows )
+            {
+                PushIllegalParameter();
+                aCode.Jump( pJump[ 2 ], pJump[ 2 ] );
+                return;
+            }
+            FormulaTokenRef xNew;
+            ScTokenMatrixMap::const_iterator aMapIter;
+            if ( pTokenMatrixMap && ((aMapIter = pTokenMatrixMap->find( pCur )) != pTokenMatrixMap->end()) )
+                xNew = (*aMapIter).second;
+            else
+            {
+                bool bAnyNA = false;
+                for ( SCSIZE nC = 0; nC < nCols && !bAnyNA; ++nC )
+                    for ( SCSIZE nR = 0; nR < nRows && !bAnyNA; ++nR )
+                        bAnyNA = pMat->IsValue( nC, nR ) && lcl_IsIfnaHit( pMat->GetError( nC, nR ), bAnyError );
+                if ( !bAnyNA )
+                {
+                    // nothing to substitute, the fallback is not evaluated
+                    PushMatrix( pMat );
+                    aCode.Jump( pJump[ 2 ], pJump[ 2 ] );
+                    return;
+                }
+                // DoubleError handled by JumpMatrix
+                pMat->SetErrorInterpreter( NULL );
+                ScJumpMatrix* pJumpMat = new ScJumpMatrix( nCols, nRows );
+                pJumpMat->SetKeepNoPath();
+                ScMatrix* pRes = pJumpMat->GetResultMatrix();
+                for ( SCSIZE nC = 0; nC < nCols; ++nC )
+                {
+                    for ( SCSIZE nR = 0; nR < nRows; ++nR )
+                    {
+                        if ( pMat->IsValue( nC, nR ) && lcl_IsIfnaHit( pMat->GetError( nC, nR ), bAnyError ) )
+                            pJumpMat->SetJump( nC, nR, 1.0, pJump[ 1 ], pJump[ 2 ] );
+                        else
+                        {
+                            ScMatValType nType = 0;
+                            const ScMatrixValue* pMatVal = pMat->Get( nC, nR, nType );
+                            if ( ScMatrix::IsValueType( nType ) )
+                                pRes->PutDouble( pMatVal->fVal, nC, nR );
+                            else if ( ScMatrix::IsRealStringType( nType ) )
+                                pRes->PutString( pMat->GetString( nC, nR ), nC, nR );
+                            else
+                                pRes->PutEmpty( nC, nR );
+                            pJumpMat->SetJump( nC, nR, 1.0, pJump[ 2 ], pJump[ 2 ] );
+                        }
+                    }
+                }
+                xNew = new ScJumpMatrixToken( pJumpMat );
+                GetTokenMatrixMap().insert( ScTokenMatrixMap::value_type( pCur, xNew ) );
+            }
+            PushTempToken( xNew );
+            // set endpoint of path for main code line
+            aCode.Jump( pJump[ 2 ], pJump[ 2 ] );
+            return;
+        }
+        default:
+            if ( lcl_IsIfnaHit( nGlobalError, bAnyError ) || (GetStackType() == svError &&
+                        lcl_IsIfnaHit( pStack[ sp - 1 ]->GetError(), bAnyError )) )
+            {
+                Pop();
+                bIsNA = true;
+            }
+    }
+
+    if ( bIsNA )
+    {
+        nGlobalError = 0;
+        nFuncFmtType = NUMBERFORMAT_NUMBER;
+        nFuncFmtIndex = 0;
+        aCode.Jump( pJump[ 1 ], pJump[ 2 ] );
+    }
+    else
+        aCode.Jump( pJump[ 2 ], pJump[ 2 ] );
+}
+
 void lcl_AdjustJumpMatrix( ScJumpMatrix* pJumpM, ScMatrixRef& pResMat, SCSIZE nParmCols, SCSIZE nParmRows )
 {
     SCSIZE nJumpCols, nJumpRows;
@@ -585,7 +712,9 @@ bool ScInterpreter::JumpMatrix( short nStackLevel )
             if ( pResMat )
             {
                 // a sal_False without path results in an empty path value
-                if ( fBool == 0.0 )
+                if ( pJumpMatrix->IsKeepNoPath() )
+                    ;   // result already in place
+                else if ( fBool == 0.0 )
                     pResMat->PutEmptyPath( nC, nR );
                 else
                     pResMat->PutDouble( fBool, nC, nR );
@@ -1174,34 +1303,43 @@ void ScInterpreter::ScBitArithmeticOps(bitOperations::bitArithmetic bitOp)
 {
     nFuncFmtType = NUMBERFORMAT_NUMBER;
     short nParamCount = GetByte();
-    static const sal_uInt64 max_val = SAL_CONST_UINT64( 281474976710656 );
+    static const sal_uInt64 max_val = SAL_CONST_UINT64( 281474976710655 );
     static const int NUMBER_OF_ARGUMENTS = 2;
 
     if ( MustHaveParamCount( nParamCount, NUMBER_OF_ARGUMENTS ) )
     {
         double *arguments = new double[NUMBER_OF_ARGUMENTS];
+        sal_Bool bValid = sal_True;
 
         for (int i=0; i<NUMBER_OF_ARGUMENTS; i++)
         {
             arguments[i] = ::rtl::math::approxFloor( GetDouble() );
-            if ( arguments[i] < 0 || arguments[i] > max_val )
+            if ( !::rtl::math::isFinite( arguments[i] )
+                 || arguments[i] < 0
+                 || arguments[i] > max_val )
             {
-                PushIllegalArgument();
+                bValid = sal_False;
             }
         }
 
-        sal_uInt64 res = 0;
-        sal_Bool first = sal_True;
-
-
-        for (int i=0; i<NUMBER_OF_ARGUMENTS; i++)
+        if ( bValid )
         {
-            doOperation( ( sal_uInt64 )arguments[i], bitOp, res, first );
+            sal_uInt64 res = 0;
+            sal_Bool first = sal_True;
+
+            for (int i=0; i<NUMBER_OF_ARGUMENTS; i++)
+            {
+                doOperation( ( sal_uInt64 )arguments[i], bitOp, res, first );
+            }
+
+            delete[] arguments;
+            PushDouble( (double) res );
         }
-
-        delete[] arguments;
-        PushDouble( (double) res );
-
+        else
+        {
+            delete[] arguments;
+            PushIllegalArgument();
+        }
     }
 }
 
@@ -1219,29 +1357,44 @@ void ScInterpreter::ScBitShiftOps(bitOperations::bitShift bitOp) {
         double n = ::rtl::math::approxFloor( GetDouble() );
         double val = ::rtl::math::approxFloor( GetDouble() );
 
-        if ( val < 0 )
+        static const sal_uInt64 max_val = SAL_CONST_UINT64( 281474976710655 );
+
+        if ( !::rtl::math::isFinite( n )
+             || !::rtl::math::isFinite( val )
+             || val < 0.0
+             || static_cast<double>( max_val ) < val )
         {
             PushIllegalArgument();
         }
         else
         {
             double result;
-            if (n < 0)
+            const sal_uInt64 uVal = static_cast<sal_uInt64>( val );
+            const sal_uInt64 nShift = ( n >= 64.0 || n <= -64.0 )
+                ? SAL_CONST_UINT64( 64 )
+                : ( n < 0.0 ? static_cast<sal_uInt64>( -n )
+                            : static_cast<sal_uInt64>( n ) );
+            if ( nShift == 0 )
             {
-                if (bitOp == bitOperations::BITLSHIFT)
-                    result = (sal_uInt64) val >> (sal_uInt64) -n;
-                else
-                    result = (sal_uInt64) val << (sal_uInt64) -n;
+                result = static_cast<double>( uVal );
             }
-            else if( n == 0)
-                result = val;
+            else if ( nShift >= 64 )
+            {
+                result = 0.0;
+            }
+            else if ( n < 0.0 )
+            {
+                if ( bitOp == bitOperations::BITLSHIFT )
+                    result = static_cast<double>( uVal >> nShift );
+                else
+                    result = static_cast<double>( uVal << nShift );
+            }
             else
             {
-                if (bitOp == bitOperations::BITLSHIFT)
-                    result = (sal_uInt64) val << (sal_uInt64) n;
+                if ( bitOp == bitOperations::BITLSHIFT )
+                    result = static_cast<double>( uVal << nShift );
                 else
-                    result = (sal_uInt64) val >> (sal_uInt64) n;
-
+                    result = static_cast<double>( uVal >> nShift );
             }
             PushDouble( result );
         }
@@ -4603,13 +4756,28 @@ void ScInterpreter::ScMatch()
 }
 
 
+// A formula cell returning the empty string counts as blank, as in other spreadsheets.
+static bool lcl_IsCountBlankEmpty( ScBaseCell* pCell )
+{
+    CellType eCellType = pCell ? pCell->GetCellType() : CELLTYPE_NONE;
+    if (eCellType == CELLTYPE_NONE || eCellType == CELLTYPE_NOTE)
+        return true;
+    if (eCellType != CELLTYPE_FORMULA)
+        return false;
+    ScFormulaCell* pFCell = static_cast<ScFormulaCell*>(pCell);
+    if (pFCell->GetErrCode() || pFCell->IsValue())
+        return false;
+    String aStr;
+    pFCell->GetString( aStr );
+    return aStr.Len() == 0;
+}
+
 void ScInterpreter::ScCountEmptyCells()
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScCountEmptyCells" );
     if ( MustHaveParamCount( GetByte(), 1 ) )
     {
         sal_uLong nMaxCount = 0, nCount = 0;
-        CellType eCellType;
         switch (GetStackType())
         {
             case svSingleRef :
@@ -4617,8 +4785,7 @@ void ScInterpreter::ScCountEmptyCells()
                 nMaxCount = 1;
                 ScAddress aAdr;
                 PopSingleRef( aAdr );
-                eCellType = GetCellType( GetCell( aAdr ) );
-                if (eCellType != CELLTYPE_NONE && eCellType != CELLTYPE_NOTE)
+                if (!lcl_IsCountBlankEmpty( GetCell( aAdr ) ))
                     nCount = 1;
             }
             break;
@@ -4641,8 +4808,7 @@ void ScInterpreter::ScCountEmptyCells()
                     {
                         do
                         {
-                            if ((eCellType = pCell->GetCellType()) != CELLTYPE_NONE
-                                    && eCellType != CELLTYPE_NOTE)
+                            if (!lcl_IsCountBlankEmpty( pCell ))
                                 nCount++;
                         } while ( (pCell = aDocIter.GetNext()) != NULL );
                     }
@@ -6725,30 +6891,10 @@ void ScInterpreter::ScDBCount()
     if (pQueryParam.get())
     {
         sal_uLong nCount = 0;
-        if ( bMissingField && pQueryParam->GetType() == ScDBQueryParamBase::INTERNAL )
-        {   // count all matching records
-            // TODO: currently the QueryIterators only return cell pointers of
-            // existing cells, so if a query matches an empty cell there's
-            // nothing returned, and therefor not counted!
-            // Since this has ever been the case and this code here only came
-            // into existence to fix #i6899 and it never worked before we'll
-            // have to live with it until we reimplement the iterators to also
-            // return empty cells, which would mean to adapt all callers of
-            // iterators.
-            ScDBQueryParamInternal* p = static_cast<ScDBQueryParamInternal*>(pQueryParam.get());
-            SCTAB nTab = p->nTab;
-            // ScQueryCellIterator doesn't make use of ScDBQueryParamBase::mnField,
-            // so the source range has to be restricted, like before the introduction
-            // of ScDBQueryParamBase.
-            p->nCol1 = p->nCol2 = p->mnField;
-            ScQueryCellIterator aCellIter( pDok, nTab, *p);
-            if ( aCellIter.GetFirst() )
-            {
-                do
-                {
-                    nCount++;
-                } while ( aCellIter.GetNext() );
-            }
+        if ( bMissingField )
+        {   // count all matching records, whatever their cells contain
+            ScDBQueryDataIterator aRecIter( pDok, pQueryParam.release());
+            nCount = aRecIter.CountRecords();
         }
         else
         {   // count only matching records with a value in the "result" field
@@ -6779,6 +6925,12 @@ void ScInterpreter::ScDBCount2()
     if (pQueryParam.get())
     {
         sal_uLong nCount = 0;
+        if ( bMissingField )
+        {   // count all matching records, whatever their cells contain
+            ScDBQueryDataIterator aRecIter( pDok, pQueryParam.release());
+            PushDouble( aRecIter.CountRecords() );
+            return;
+        }
         pQueryParam->mbSkipString = false;
         ScDBQueryDataIterator aValIter( pDok, pQueryParam.release());
         ScDBQueryDataIterator::Value aValue;

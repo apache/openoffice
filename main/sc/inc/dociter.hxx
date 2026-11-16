@@ -155,6 +155,7 @@ private:
         virtual bool getCurrent(Value& rValue) = 0;
         virtual bool getFirst(Value& rValue) = 0;
         virtual bool getNext(Value& rValue) = 0;
+        virtual SCSIZE countRecords() = 0;
     protected:
         const ScDBQueryDataIterator* mpParent;
     };
@@ -167,6 +168,7 @@ private:
         virtual bool getCurrent(Value& rValue);
         virtual bool getFirst(Value& rValue);
         virtual bool getNext(Value& rValue);
+        virtual SCSIZE countRecords();
 
     private:
         ScDBQueryParamInternal* mpParam;
@@ -191,6 +193,7 @@ private:
         virtual bool getCurrent(Value& rValue);
         virtual bool getFirst(Value& rValue);
         virtual bool getNext(Value& rValue);
+        virtual SCSIZE countRecords();
 
     private:
         bool isValidQuery(SCROW mnRow, const ScMatrix& rMat) const;
@@ -210,6 +213,8 @@ public:
     bool            GetFirst(Value& rValue);
     /// Does NOT reset rValue if no value found!
     bool            GetNext(Value& rValue);
+    /// Number of records matching the query, whatever their cells contain.
+    SCSIZE          CountRecords();
 };
 
 // ============================================================================

@@ -525,6 +525,24 @@ void ScViewFunc::EnterData( SCCOL nCol, SCROW nRow, SCTAB nTab, const String& rS
 					}
 				}
 			} while ( bAgain );
+			if ( pArr->GetCodeError() == errCodeOverflow )
+			{
+				// refuse a formula that cannot be held, as other spreadsheets do
+				delete pArr;
+				if ( bRecord )
+				{
+					for ( SCTAB k = 0; k < nUndoPos; k++ )
+						if ( ppOldCells[k] )
+							ppOldCells[k]->Delete();
+					delete[] ppOldCells;
+					delete[] pHasFormat;
+					delete[] pOldFormats;
+					delete[] pTabs;
+					delete pUndoData;
+				}
+				ErrorMessage( STR_LONG_ERR_CODE_OVF );
+				return;
+			}
 			// um in mehreren Tabellen eingesetzt zu werden, muss die Formel
 			// via ScFormulaCell copy-ctor evtl. wegen RangeNames neu kompiliert
 			// werden, gleiches Code-Array fuer alle Zellen geht nicht.

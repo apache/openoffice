@@ -140,6 +140,18 @@ def setup_data(doc):
     put("AI1", [[v] for v in (1, 3, 5)])
     put("AJ1", [[v] for v in (2, 4, 7, 9)])
     put("AK1", [[v] for v in (2, 4, 7, 9)])
+    for addr, f in (("AM1", "=NA()"), ("AM2", "=1/0"), ("AM3", '=""'), ("AN1", "5"), ("AN2", "=NA()"), ("AN4", "=NA()"), ("AN5", "7"), ("AN6", "=1/0")):
+        sh.getCellRangeByName(addr).setFormula(f)
+    sh.getCellRangeByName("AN3").setString("x")
+    put("AP1", [["Score"], ["<>5"]])
+    put("AQ1", [["Score"], ["="]])
+    put("AR1", [["Score", "Age"], ["=", ">=30"]])
+    put("AT1", [["Age", "Score"], [">=30", "="]])
+    put("AV1", [["Score", "Age"], ["25", None], [None, "50"]])
+    put("AX11", [["K", "V"], ["a", 1], ["b", 2], ["c", 3]])
+    put("AZ11", [["K"], [None]])
+    put("BB1", [["K", "V"], ["a", 1], [None, 2], [None, None], ["c", 3]])
+    put("BD1", [["K"], ["="]])
     return sh
 
 

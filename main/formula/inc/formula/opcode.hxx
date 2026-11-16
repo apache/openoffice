@@ -399,6 +399,9 @@ enum OpCodeEnum
 		ocBitXor			= SC_OPCODE_BITXOR,
 		ocBitLShift         = SC_OPCODE_BITLSHIFT,
 		ocBitRShift         = SC_OPCODE_BITRSHIFT,
+		ocIfna				= SC_OPCODE_IFNA,
+		ocSkewP				= SC_OPCODE_SKEWP,
+		ocIfError			= SC_OPCODE_IFERROR,
 	// internal stuff
 		ocInternalBegin		= SC_OPCODE_INTERNAL_BEGIN,
 		ocTTT				= SC_OPCODE_TTT,
