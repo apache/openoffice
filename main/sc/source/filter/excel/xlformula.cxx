@@ -375,9 +375,19 @@ static const XclFunctionInfo saFuncTable_Oox[] =
     { ocAverageIfs,         NOID,   3,  MX, V, { RO, RO, VR }, EXC_FUNCFLAG_IMPORTONLY|EXC_FUNCFLAG_PARAMPAIRS, EXC_FUNCNAME( "AVERAGEIFS" ) },
     { ocAverageIfs,         255,    4,  MX, V, { RO_E, RO, RO, VR }, EXC_FUNCFLAG_EXPORTONLY|EXC_FUNCFLAG_PARAMPAIRS, EXC_FUNCNAME( "AVERAGEIFS" ) },
     { ocIfna,               NOID,   2,  2,  V, { VR }, EXC_FUNCFLAG_IMPORTONLY, EXC_FUNCNAME( "IFNA" ) },
-    { ocIfna,               255,    3,  3,  V, { RO_E, RO }, EXC_FUNCFLAG_EXPORTONLY, EXC_FUNCNAME( "IFNA" ) },
+    { ocIfna,               255,    3,  3,  V, { RO_E, VO, RO }, EXC_FUNCFLAG_EXPORTONLY, EXC_FUNCNAME( "IFNA" ) },
     { ocSkewP,              NOID,   1,  MX, V, { VR }, EXC_FUNCFLAG_IMPORTONLY, EXC_FUNCNAME( "SKEW.P" ) },
-    { ocSkewP,              255,    2,  MX, V, { RO_E, RO }, EXC_FUNCFLAG_EXPORTONLY, EXC_FUNCNAME( "SKEW.P" ) }
+    { ocSkewP,              255,    2,  MX, V, { RO_E, RO }, EXC_FUNCFLAG_EXPORTONLY, EXC_FUNCNAME( "SKEW.P" ) },
+    { ocBitAnd,             NOID,   2,  2,  V, { VR }, EXC_FUNCFLAG_IMPORTONLY, EXC_FUNCNAME( "BITAND" ) },
+    { ocBitAnd,             255,    3,  3,  V, { RO_E, RO }, EXC_FUNCFLAG_EXPORTONLY, EXC_FUNCNAME( "BITAND" ) },
+    { ocBitOr,              NOID,   2,  2,  V, { VR }, EXC_FUNCFLAG_IMPORTONLY, EXC_FUNCNAME( "BITOR" ) },
+    { ocBitOr,              255,    3,  3,  V, { RO_E, RO }, EXC_FUNCFLAG_EXPORTONLY, EXC_FUNCNAME( "BITOR" ) },
+    { ocBitXor,             NOID,   2,  2,  V, { VR }, EXC_FUNCFLAG_IMPORTONLY, EXC_FUNCNAME( "BITXOR" ) },
+    { ocBitXor,             255,    3,  3,  V, { RO_E, RO }, EXC_FUNCFLAG_EXPORTONLY, EXC_FUNCNAME( "BITXOR" ) },
+    { ocBitLShift,          NOID,   2,  2,  V, { VR }, EXC_FUNCFLAG_IMPORTONLY, EXC_FUNCNAME( "BITLSHIFT" ) },
+    { ocBitLShift,          255,    3,  3,  V, { RO_E, RO }, EXC_FUNCFLAG_EXPORTONLY, EXC_FUNCNAME( "BITLSHIFT" ) },
+    { ocBitRShift,          NOID,   2,  2,  V, { VR }, EXC_FUNCFLAG_IMPORTONLY, EXC_FUNCNAME( "BITRSHIFT" ) },
+    { ocBitRShift,          255,    3,  3,  V, { RO_E, RO }, EXC_FUNCFLAG_EXPORTONLY, EXC_FUNCNAME( "BITRSHIFT" ) }
 };
 
 #define EXC_FUNCENTRY_ODF( opcode, minparam, maxparam, flags, asciiname ) \
@@ -390,11 +400,6 @@ static const XclFunctionInfo saFuncTable_Odf[] =
     EXC_FUNCENTRY_ODF( ocArabic,        1,  1,  0,  "ARABIC" ),
     EXC_FUNCENTRY_ODF( ocB,             3,  4,  0,  "B" ),
     EXC_FUNCENTRY_ODF( ocBase,          2,  3,  0,  "BASE" ),
-    EXC_FUNCENTRY_ODF( ocNoName,        2,  2,  0,  "BITAND" ),
-    EXC_FUNCENTRY_ODF( ocNoName,        2,  2,  0,  "BITLSHIFT" ),
-    EXC_FUNCENTRY_ODF( ocNoName,        2,  2,  0,  "BITOR" ),
-    EXC_FUNCENTRY_ODF( ocNoName,        2,  2,  0,  "BITRSHIFT" ),
-    EXC_FUNCENTRY_ODF( ocNoName,        2,  2,  0,  "BITXOR" ),
     EXC_FUNCENTRY_ODF( ocChiSqDist,     2,  3,  0,  "CHISQDIST" ),
     EXC_FUNCENTRY_ODF( ocChiSqInv,      2,  2,  0,  "CHISQINV" ),
     EXC_FUNCENTRY_ODF( ocKombin2,       2,  2,  0,  "COMBINA" ),
