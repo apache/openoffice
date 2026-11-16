@@ -423,7 +423,7 @@ public:
 					XorEmulation();
 	/*final*/		~XorEmulation();
 
-	void			SetTarget( int nWidth, int nHeight, int nBitmapDepth, CGContextRef, CGLayerRef, float fScale = 1.0f );
+	void			SetTarget( int nWidth, int nHeight, int nBitmapDepth, CGContextRef, CGLayerRef );
 	bool			UpdateTarget();
 	void			Enable()			{ mbIsEnabled = true; }
 	void			Disable()			{ mbIsEnabled = false; }

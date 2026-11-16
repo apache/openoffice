@@ -118,7 +118,7 @@ void AquaSalGraphics::SetVirDevGraphics( CGLayerRef xLayer, CGContextRef xContex
 	// re-enable XorEmulation for the new context
 	if( mpXorEmulation )
 	{
-		mpXorEmulation->SetTarget( mnWidth, mnHeight, mnBitmapDepth, mrContext, mxLayer, mfScale );
+		mpXorEmulation->SetTarget( mnWidth, mnHeight, mnBitmapDepth, mrContext, mxLayer );
 		if( mpXorEmulation->IsEnabled() )
 			mrContext = mpXorEmulation->GetMaskContext();
 	}
@@ -226,7 +226,7 @@ bool AquaSalGraphics::CheckContext()
 
 				// re-enable XOR emulation for the new context
 				if( mpXorEmulation )
-					mpXorEmulation->SetTarget( mnWidth, mnHeight, mnBitmapDepth, mrContext, mxLayer, mfScale );
+					mpXorEmulation->SetTarget( mnWidth, mnHeight, mnBitmapDepth, mrContext, mxLayer );
             }
         }
 
