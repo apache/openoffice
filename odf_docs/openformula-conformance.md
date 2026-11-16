@@ -11,9 +11,11 @@ Therefore **no conformance level (Small/Medium/Large) may be claimed for AOO Cal
 
 ## 2. Coverage of mandatory functions by group
 
-The ODF 1.2 function baseline (used by AOO's own `test/aoo-test/data/openformula-functions.txt` and `test/odf-validate/openformula-functions.txt`, titled "OpenDocument 1.2 Part 2 chapter 6") lists 414 function names. AOO's opcode map (`main/formula/inc/formula/compiler.hrc`, last opcode id 410 = SKEWP) covers all of those. IFNA (opcode 409) and SKEWP (opcode 410) were implemented in Milestone B and are no longer missing.
+The ODF 1.2 function baseline (used by AOO's own `test/aoo-test/data/openformula-functions.txt` and `test/odf-validate/openformula-functions.txt`, titled "OpenDocument 1.2 Part 2 chapter 6") lists 414 function names. AOO's opcode map (`main/formula/inc/formula/compiler.hrc`, last opcode id 410 = SKEWP) covers all of those except IFERROR, which has no opcode. IFNA (opcode 409) and SKEWP (opcode 410) were implemented in Milestone B and are no longer missing.
 
-All 414 baseline functions have opcodes, implementations in `interpr*.cxx`, `scfuncs.src` metadata, and `core_resource.src` name mappings (see `openformula-functions.tsv`).
+Every baseline function except IFERROR has an opcode, an implementation in `interpr*.cxx`, `scfuncs.src` metadata, and a `core_resource.src` name mapping (see `openformula-functions.tsv`).
+
+**[CONFIRMED 2026-11-16] IFERROR is not implemented.** `=IFERROR(7;5)` gives `#NAME?`, and an xls file that uses `_xlfn.IFERROR` loads with an unresolved name (xlsx not tested). The same run found seven more baseline names that AOO does not recognise under their ODF names: DATEDIF, FINDB, REPLACEB, SEARCHB, BINOM.DIST.RANGE, LEGACY.TDIST and ERROR.TYPE (AOO has it as ERRORTYPE). Method: AOO's ODFF function table (`FormulaOpCodeMapper`) plus its function descriptions compared with the baseline list, then each name typed into a cell. Those seven are not audited further. IFERROR is not part of the Small Group.
 
 **[CONFIRMED] IFNA and SKEWP are now implemented (Milestone B).**
 - IFNA: `SC_OPCODE_IFNA=409` in `compiler.hrc`, `ocIfna` in `opcode.hxx`, `ScInterpreter::ScIfna()` in `interpr1.cxx:392`, dispatch `case ocIfna` in `interpr4.cxx:3451`, `scfuncs.src:1027`, `core_resource.src:357`.
@@ -62,7 +64,7 @@ AOO does not claim the Small Group. However, the Small Group audit (`openformula
 ## 7. Conformance conclusion
 
 - **Claimed conformance group: none.** AOO does not claim Small/Medium/Large.
-- **Confirmed missing functions: none.** All 110 Small Group functions (§2.3.2.E) are implemented. IFNA (Large Group) and SKEWP (Medium Group) were implemented in Milestone B.
+- **Confirmed missing functions in the Small Group: none** (outside it, IFERROR is missing, see section 2). All 110 Small Group functions (§2.3.2.E) are implemented. IFNA (Large Group) and SKEWP (Medium Group) were implemented in Milestone B.
 - **Confirmed semantic discrepancies vs ODF 1.4:** INDEX row-vector rule (kept as a known deviation; the Milestone A change was reverted), CONVERT `atm` (corrected in Milestone C), EASTERSUNDAY naming alias (behavior correct).
 - **Cannot certify any group** without runtime testing every mandatory requirement against the ODF 1.4 Part 4 normative text.
 

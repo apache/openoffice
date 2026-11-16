@@ -28,7 +28,7 @@ Scope: AUDIT ONLY. No production source code was modified. No dependencies intro
 
 ### Confirmed present (FULL) — opcodes + implementation + scfuncs + core_resource mapping
 
-All ODF 1.2 baseline functions in `test/aoo-test/data/openformula-functions.txt` have opcodes and implementations EXCEPT IFNA and SKEWP. Notable present functions (representative, full list in `openformula-functions.tsv`):
+All ODF 1.2 baseline functions in `test/aoo-test/data/openformula-functions.txt` have opcodes and implementations EXCEPT IFNA, SKEWP and IFERROR (IFERROR added 2026-11-16, see section 4). Notable present functions (representative, full list in `openformula-functions.tsv`):
 
 - Logical: AND, OR, XOR, NOT, IF, CHOOSE, TRUE, FALSE, NA.
 - IS*: ISBLANK, ISTEXT, ISNONTEXT, ISLOGICAL, ISREF, ISNUMBER, ISFORMULA, ISNA, ISERR, ISERROR, ISEVEN, ISODD, TYPE, CELL, N, ERROR.TYPE.
@@ -50,6 +50,7 @@ All ODF 1.2 baseline functions in `test/aoo-test/data/openformula-functions.txt`
 |----------|-------------|----------|
 | IFNA | ODF 1.3 | No opcode (`compiler.hrc` max = 408 = BITRSHIFT), no `ScIfNA` in any `interpr*.cxx`, no `scfuncs.src` entry, no `core_resource.src` entry. Only `main/sc/source/filter/excel/xlformula.cxx:404` `EXC_FUNCENTRY_ODF( ocNoName, 2, 2, 0, "IFNA" )` — an Excel-filter stub with `ocNoName` (no opcode). |
 | SKEWP | ODF 1.3 | No opcode/implementation/metadata. Only `xlformula.cxx:415` `EXC_FUNCENTRY_ODF( ocNoName, 1, MX, 0, "SKEWP" )`. `SKEW` (sample skewness, `SC_OPCODE_SCHIEFE=325`, `interpr3.cxx:793`) is present; SKEWP (population) is not. |
+| IFERROR | ODF 1.2 baseline list | No opcode, no `scfuncs.src` or `core_resource.src` entry. Checked 2026-11-16: `=IFERROR(7;5)` gives `#NAME?`. The Excel filters carry it only as `oox/source/xls/formulabase.cxx` row `{ 0, "IFERROR", 480, ... }` with no Calc function behind it. |
 
 ### Partial implementations / semantic discrepancies
 
@@ -90,7 +91,9 @@ AOO writes non-standard names for some functions (ODF 1.4 strict mode should use
 1. **IFNA** (ODF 1.3) — absent from opcode map, interpreter, `scfuncs.src`, `core_resource.src`; only Excel-filter `ocNoName` stub (`xlformula.cxx:404`).
 2. **SKEWP** (ODF 1.3) — absent from opcode map/interpreter/`scfuncs.src`/`core_resource.src`; only Excel-filter `ocNoName` stub (`xlformula.cxx:415`). Sample `SKEW` present.
 
-No other function in the ODF 1.2 baseline is missing from AOO's opcode map.
+3. **IFERROR** (ODF 1.2 baseline list) — no opcode, interpreter, `scfuncs.src` or `core_resource.src` entry (added 2026-11-16).
+
+The earlier sentence here, that no other function in the ODF 1.2 baseline is missing from the opcode map, was wrong for IFERROR. A runtime check on 2026-11-16 also found DATEDIF, FINDB, REPLACEB, SEARCHB, BINOM.DIST.RANGE, LEGACY.TDIST and ERROR.TYPE (present as ERRORTYPE) not recognised under their ODF names; these are not audited further (see `openformula-conformance.md` section 2).
 
 ## 5. Partial implementations
 
