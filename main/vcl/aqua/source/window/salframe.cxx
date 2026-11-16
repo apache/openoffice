@@ -479,6 +479,10 @@ void AquaSalFrame::Show(sal_Bool bVisible, sal_Bool bNoActivate)
         else
             [mpNSWindow makeKeyAndOrderFront: NSApp];
 
+        // a window first shown on another screen need not report a backing change
+        if( UpdateBackingScale() )
+            SendPaintEvent();
+
         if( mpParent )
         {
             /* #i92674# #i96433# we do not want an invisible parent to show up (which adding a visible
