@@ -57,8 +57,6 @@ AquaSalVirtualDevice::AquaSalVirtualDevice( AquaSalGraphics* pGraphic, long nDX,
 :	mbGraphicsUsed( false )
 ,	mxBitmapContext( NULL )
 ,	mnBitmapDepth( 0 )
-,	mxLayer( NULL )
-,	mfScale( 1.0f )
 {
     if( pGraphic && pData && pData->rCGContext )
 	{
@@ -66,7 +64,7 @@ AquaSalVirtualDevice::AquaSalVirtualDevice( AquaSalGraphics* pGraphic, long nDX,
         // We ignore nDx and nDY, as the desired size comes from the SystemGraphicsData
         mbForeignContext = true;        // the mxContext is from pData
 	    mpGraphics = new AquaSalGraphics( /*pGraphic*/ );
-	    mpGraphics->SetVirDevGraphics( mxLayer, pData->rCGContext );
+	    mpGraphics->SetVirDevGraphics( ScaledLayer(), pData->rCGContext );
 	}
 	else
 	{
@@ -99,7 +97,7 @@ AquaSalVirtualDevice::~AquaSalVirtualDevice()
 {
 	if( mpGraphics )
 	{
-		mpGraphics->SetVirDevGraphics( NULL, NULL );
+		mpGraphics->SetVirDevGraphics( ScaledLayer(), NULL );
 		delete mpGraphics;
 		mpGraphics = 0;
 	}
@@ -112,16 +110,16 @@ void AquaSalVirtualDevice::Destroy()
 {
     if( mbForeignContext ) {
         // Do not delete mxContext that we have received from outside VCL
-		mxLayer = NULL;
+		maLayer = ScaledLayer();
         return;
     }
 
-	if( mxLayer )
+	if( maLayer.get() )
 	{
 		if( mpGraphics )
-			mpGraphics->SetVirDevGraphics( NULL, NULL );
-		CGLayerRelease( mxLayer );
-		mxLayer = NULL;
+			mpGraphics->SetVirDevGraphics( ScaledLayer(), NULL );
+		CGLayerRelease( maLayer.get() );
+		maLayer = ScaledLayer();
 	}
 
 	if( mxBitmapContext )
@@ -161,10 +159,10 @@ sal_Bool AquaSalVirtualDevice::SetSize( long nDX, long nDY )
         return true;
     }
 
-    if( mxLayer )
+    if( maLayer.get() )
     {
-    	const CGSize aSize = CGLayerGetSize( mxLayer );
-        if( (nDX * mfScale == aSize.width) && (nDY * mfScale == aSize.height) )
+    	const CGSize aSize = maLayer.getPixelSize();
+        if( CGSizeEqualToSize( maLayer.toPixels( nDX, nDY ), aSize ) )
 	    {
 	        // Yay, we do not have to do anything :)
 			return true;
@@ -172,7 +170,7 @@ sal_Bool AquaSalVirtualDevice::SetSize( long nDX, long nDY )
     }
 
     Destroy();
-    mfScale = 1.0f;
+    float fScale = 1.0f;
 
 	// create a Quartz layer matching to the intended virdev usage
 	CGContextRef xCGContext = NULL;
@@ -212,7 +210,7 @@ sal_Bool AquaSalVirtualDevice::SetSize( long nDX, long nDY )
                 // a layer made from the window's context records a display list instead of pixels
                 xRefContext = CGBitmapContextCreate( NULL, 1, 1, 8, 4, GetSalData()->mxRGBSpace, kCGImageAlphaNoneSkipFirst );
                 xCGContext = xRefContext;
-                mfScale = pSalFrame->getBackingScale();
+                fScale = pSalFrame->getBackingScale();
             }
             else
             {
@@ -232,30 +230,30 @@ sal_Bool AquaSalVirtualDevice::SetSize( long nDX, long nDY )
 
 	DBG_ASSERT( xCGContext, "no context" );
 
-	const CGSize aNewSize = CGSizeMake( nDX * mfScale, nDY * mfScale);
-	mxLayer = CGLayerCreateWithContext( xCGContext, aNewSize, NULL );
+	const CGSize aNewSize = ScaledLayer::toPixels( nDX, nDY, fScale );
+	maLayer = ScaledLayer( CGLayerCreateWithContext( xCGContext, aNewSize, NULL ), fScale );
 	if( xRefContext )
 		CGContextRelease( xRefContext );
 
-	if( mxLayer && mpGraphics )
+	if( maLayer.get() && mpGraphics )
 	{
 		// get the matching Quartz context
-		CGContextRef xDrawContext = CGLayerGetContext( mxLayer );
-		mpGraphics->SetVirDevGraphics( mxLayer, xDrawContext, mnBitmapDepth, mfScale );
+		CGContextRef xDrawContext = CGLayerGetContext( maLayer.get() );
+		mpGraphics->SetVirDevGraphics( maLayer, xDrawContext, mnBitmapDepth );
 	}
 
-	return (mxLayer != NULL);
+	return (maLayer.get() != NULL);
 }
 
 // -----------------------------------------------------------------------
 
 void AquaSalVirtualDevice::GetSize( long& rWidth, long& rHeight )
 {
-	if( mxLayer )
+	if( maLayer.get() )
 	{
-    	const CGSize aSize = CGLayerGetSize( mxLayer );
-		rWidth = static_cast<long>(aSize.width / mfScale);
-		rHeight = static_cast<long>(aSize.height / mfScale);
+    	const CGSize aSize = maLayer.getPointSize();
+		rWidth = static_cast<long>(aSize.width);
+		rHeight = static_cast<long>(aSize.height);
 	}
 	else
 	{
