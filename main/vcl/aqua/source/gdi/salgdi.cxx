@@ -2356,6 +2356,14 @@ void AquaSalGraphics::SetXORMode( bool bSet, bool bInvertOnly )
         mnXorMode = 2;
         return;
     }
+    else if( bSet && mnXorMode == 2 )
+    {
+        if( bInvertOnly )
+            return;
+        // the XOR write-back must not be blended with Difference
+        CGContextSetBlendMode( mrContext, kCGBlendModeNormal );
+        mnXorMode = 0;
+    }
 
 	if( (mpXorEmulation == NULL) && !bSet )
 		return;
