@@ -37,6 +37,7 @@
 -(void)windowDidBecomeKey: (NSNotification*)pNotification;
 -(void)windowDidResignKey: (NSNotification*)pNotification;
 -(void)windowDidChangeScreen: (NSNotification*)pNotification;
+-(void)windowDidChangeBackingProperties: (NSNotification*)pNotification;
 -(void)windowDidMove: (NSNotification*)pNotification;
 -(void)windowDidResize: (NSNotification*)pNotification;
 -(void)windowDidMiniaturize: (NSNotification*)pNotification;

@@ -271,6 +271,16 @@ static AquaSalFrame* getMouseContainerFrame()
         mpFrame->screenParametersChanged();
 }
 
+-(void)windowDidChangeBackingProperties: (NSNotification*)pNotification
+{
+    (void)pNotification;
+    YIELD_GUARD;
+
+    // the graphics makes a layer at the new scale on its next draw
+    if( mpFrame && AquaSalFrame::isAlive( mpFrame ) && mpFrame->UpdateBackingScale() )
+        mpFrame->SendPaintEvent();
+}
+
 -(void)windowDidMove: (NSNotification*)pNotification
 {
     (void)pNotification;

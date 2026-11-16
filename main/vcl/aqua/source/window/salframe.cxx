@@ -85,6 +85,7 @@ AquaSalFrame::AquaSalFrame( SalFrame* pParent, sal_uLong salFrameStyle ) :
     mnExtStyle( 0 ),
     mePointerStyle( POINTER_ARROW ),
     mnTrackingRectTag( 0 ),
+    mfBackingScale( 1.0f ),
     mrClippingPath( 0 ),
     mnICOptions( 0 )
 {
@@ -208,6 +209,7 @@ void AquaSalFrame::initWindowAndView()
         [mpNSWindow setAcceptsMouseMovedEvents: YES];
     [mpNSWindow setHasShadow: YES];
     [mpNSWindow setDelegate: static_cast<id<NSWindowDelegate> >(mpNSWindow)];
+    UpdateBackingScale();
 
     const NSRect aRect = { NSZeroPoint, NSMakeSize( maGeometry.nWidth, maGeometry.nHeight )};
     mnTrackingRectTag = [mpNSView addTrackingRect: aRect owner: mpNSView userData: nil assumeInside: NO];
@@ -251,6 +253,17 @@ void AquaSalFrame::VCLToCocoa( NSPoint& io_rPoint, bool bRelativeToScreen )
         io_rPoint.y = maScreenRect.size.height - io_rPoint.y;
     else
         io_rPoint.y = maGeometry.nHeight - io_rPoint.y;
+}
+
+// -----------------------------------------------------------------------
+
+bool AquaSalFrame::UpdateBackingScale()
+{
+    const float fScale = mpNSWindow ? [mpNSWindow backingScaleFactor] : 1.0f;
+    if( fScale == mfBackingScale )
+        return false;
+    mfBackingScale = fScale;
+    return true;
 }
 
 // -----------------------------------------------------------------------

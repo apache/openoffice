@@ -87,6 +87,8 @@ public:
 
     NSTrackingRectTag               mnTrackingRectTag;      // used to get enter/leave messages
 
+    float                           mfBackingScale;         // window pixels per point
+
     CGMutablePathRef                mrClippingPath;         // used for "shaping"
     std::vector< CGRect >           maClippingRects;
 
@@ -176,6 +178,9 @@ public:
     static AquaSalFrame* GetCaptureFrame() { return s_pCaptureFrame; }
 
     NSWindow* getNSWindow() const { return mpNSWindow; }
+    float getBackingScale() const { return mfBackingScale; }
+    // returns true if the scale changed
+    bool UpdateBackingScale();
     NSView* getNSView() const { return mpNSView; }
     unsigned int getStyleMask() const { return mnStyleMask; }
 

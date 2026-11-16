@@ -212,7 +212,7 @@ sal_Bool AquaSalVirtualDevice::SetSize( long nDX, long nDY )
                 // a layer made from the window's context records a display list instead of pixels
                 xRefContext = CGBitmapContextCreate( NULL, 1, 1, 8, 4, GetSalData()->mxRGBSpace, kCGImageAlphaNoneSkipFirst );
                 xCGContext = xRefContext;
-                mfScale = [pNSWindow backingScaleFactor];
+                mfScale = pSalFrame->getBackingScale();
             }
             else
             {
