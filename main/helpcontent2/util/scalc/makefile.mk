@@ -241,6 +241,7 @@ LINKLINKFILES= \
    text$/scalc$/01$/func_bitrshift.xhp \
    text$/scalc$/01$/func_bitor.xhp \
    text$/scalc$/01$/func_bitxor.xhp \
+   text$/scalc$/01$/func_iferror.xhp \
    text$/scalc$/01$/func_ifna.xhp \
    text$/scalc$/01$/func_skewp.xhp \
    text$/scalc$/01$/solver.xhp \

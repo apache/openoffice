@@ -205,6 +205,7 @@ XHPFILES = \
    func_edate.xhp \
    func_eomonth.xhp \
    func_hour.xhp \
+   func_iferror.xhp \
    func_ifna.xhp \
    func_minute.xhp \
    func_month.xhp \
