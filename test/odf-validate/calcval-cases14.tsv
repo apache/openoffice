@@ -86,6 +86,12 @@ CONVERT.cm2.m2	=CONVERT(1;"cm2";"m2")	cell	0.0001	6.16.18 Table 25: centi prefix
 CONVERT.Kibyte.bit	=CONVERT(1;"Kibyte";"bit")	cell	8192	6.16.18 Table 26: kibi prefix on byte to bit
 CONVERT.km.Pa	=CONVERT(1;"km";"Pa")	cell	#ERR	invalid conversion: different unit groups
 CONVERT.ATM.Pa	=CONVERT(1;"ATM";"Pa")	cell	#ERR	invalid conversion: case-sensitive unit names
+CONVERT.Pa.atm	=CONVERT(101325.1;"Pa";"atm")	cell	1	6.16.18 Table 24: Pa to standard atmosphere round-trip
+CONVERT.Pa.SI_at	=CONVERT(98066.5;"Pa";"SI_at")	cell	1	6.16.18 Table 24: Pa to technical atmosphere round-trip
+CONVERT.Pa.Torr	=CONVERT(133.32236842105263;"Pa";"Torr")	cell	1	6.16.18 Table 24: Pa to Torr round-trip
+CONVERT.atm.Torr	=CONVERT(1;"atm";"Torr")	cell	760.0007500616828	6.16.18 Table 24: atm to Torr cross-conversion
+CONVERT.SI_at.atm	=CONVERT(1;"SI_at";"atm")	cell	0.9678401501700961	6.16.18 Table 24: SI_at to atm cross-conversion
+CONVERT.Torr.SI_at	=CONVERT(1;"Torr";"SI_at")	cell	0.001359509806315639	6.16.18 Table 24: Torr to SI_at cross-conversion
 EASTER.mid	=EASTERSUNDAY(1000)	cell	#ERR	6.10.8 constraint 1583 <= Year (100 to 1582)
 EASTER.neg	=EASTERSUNDAY(-1)	cell	#ERR	6.10.8 constraint 1583 <= Year (negative years used to wrap)
 EASTER.wrap	=EASTERSUNDAY(67536)	cell	#ERR	6.10.8 constraint Year <= 9956 (67536 used to wrap to 2000)
