@@ -269,6 +269,7 @@ AquaSalGraphics::AquaSalGraphics()
     , mnWidth( 0 )
     , mnHeight( 0 )
     , mnBitmapDepth( 0 )
+    , mfScale( 1.0f )
     , mnRealDPIX( 0 )
     , mnRealDPIY( 0 )
     , mfFakeDPIScale( 1.0 )
@@ -1143,7 +1144,7 @@ void AquaSalGraphics::copyBits( const SalTwoRect& rPosAry, SalGraphics *pSrcGrap
 	    if( pSrc->IsFlipped() )
 		    { CGContextTranslateCTM( xCopyContext, 0, +mnHeight ); CGContextScaleCTM( xCopyContext, +1, -1 ); }
 	    // TODO: pSrc->size() != this->size()
-		    ::CGContextDrawLayerAtPoint( xCopyContext, aDstPoint, pSrc->mxLayer );
+		    ::CGContextDrawLayerInRect( xCopyContext, CGRectMake( aDstPoint.x, aDstPoint.y, pSrc->mnWidth, pSrc->mnHeight ), pSrc->mxLayer );
 	    CGContextRestoreGState( xCopyContext );
 	    // mark the destination rectangle as updated
    	    RefreshRect( aDstRect );
@@ -1201,9 +1202,10 @@ void AquaSalGraphics::copyArea( long nDstX, long nDstY,long nSrcX, long nSrcY, l
 	CGLayerRef xSrcLayer = mxLayer;
 	// TODO: if( mnBitmapDepth > 0 )
 	{
-		const CGSize aSrcSize = CGSizeMake( nSrcWidth, nSrcHeight);
+		const CGSize aSrcSize = CGSizeMake( nSrcWidth * mfScale, nSrcHeight * mfScale);
 		xSrcLayer = ::CGLayerCreateWithContext( xCopyContext, aSrcSize, NULL );
 		const CGContextRef xSrcContext = CGLayerGetContext( xSrcLayer );
+		::CGContextScaleCTM( xSrcContext, mfScale, mfScale );
 		CGPoint aSrcPoint = CGPointMake( -nSrcX, -nSrcY);
 		if( IsFlipped() )
 		{
@@ -1211,12 +1213,12 @@ void AquaSalGraphics::copyArea( long nDstX, long nDstY,long nSrcX, long nSrcY, l
 			::CGContextScaleCTM( xSrcContext, +1, -1 );
 			aSrcPoint.y = (nSrcY + nSrcHeight) - mnHeight;
 		}
-		::CGContextDrawLayerAtPoint( xSrcContext, aSrcPoint, mxLayer );
+		::CGContextDrawLayerInRect( xSrcContext, CGRectMake( aSrcPoint.x, aSrcPoint.y, mnWidth, mnHeight ), mxLayer );
 	}
 
 	// draw at new destination
 	const CGPoint aDstPoint = CGPointMake( +nDstX, +nDstY);
-	::CGContextDrawLayerAtPoint( xCopyContext, aDstPoint, xSrcLayer );
+	::CGContextDrawLayerInRect( xCopyContext, CGRectMake( aDstPoint.x, aDstPoint.y, nSrcWidth, nSrcHeight ), xSrcLayer );
 
 	// cleanup
 	if( xSrcLayer != mxLayer )
@@ -1299,7 +1301,7 @@ SalBitmap* AquaSalGraphics::getBitmap( long  nX, long  nY, long  nDX, long  nDY 
 	ApplyXorContext();
 
 	AquaSalBitmap* pBitmap = new AquaSalBitmap;
-	if( !pBitmap->Create( mxLayer, mnBitmapDepth, nX, nY, nDX, nDY, !mbWindow ) )
+	if( !pBitmap->Create( mxLayer, mnBitmapDepth, nX, nY, nDX, nDY, !mbWindow, mfScale ) )
 	{
 		delete pBitmap;
 		pBitmap = NULL;
@@ -1339,7 +1341,7 @@ SalColor AquaSalGraphics::getPixel( long nX, long nY )
 	if( IsFlipped() )
 		nY = mnHeight - nY;
 	const CGPoint aCGPoint = CGPointMake( -nX, -nY);
-	CGContextDrawLayerAtPoint( xOnePixelContext, aCGPoint, mxLayer );
+	CGContextDrawLayerInRect( xOnePixelContext, CGRectMake( aCGPoint.x, aCGPoint.y, mnWidth, mnHeight ), mxLayer );
 	CGContextRelease( xOnePixelContext );
 
 	SalColor nSalColor = MAKE_SALCOLOR( aPixel.r, aPixel.g, aPixel.b );
@@ -2368,7 +2370,7 @@ void AquaSalGraphics::SetXORMode( bool bSet, bool bInvertOnly )
 	if( !mpXorEmulation )
 	{
 		mpXorEmulation = new XorEmulation();
-		mpXorEmulation->SetTarget( mnWidth, mnHeight, mnBitmapDepth, mrContext, mxLayer );
+		mpXorEmulation->SetTarget( mnWidth, mnHeight, mnBitmapDepth, mrContext, mxLayer, mfScale );
 	}
 
 	// change the XOR mode
@@ -2422,7 +2424,7 @@ XorEmulation::~XorEmulation()
 // -----------------------------------------------------------------------
 
 void XorEmulation::SetTarget( int nWidth, int nHeight, int nTargetDepth,
-	CGContextRef xTargetContext, CGLayerRef xTargetLayer )
+	CGContextRef xTargetContext, CGLayerRef xTargetLayer, float fScale )
 {
 	// prepare to replace old mask+temp context
 	if( mxMaskContext )
@@ -2500,7 +2502,8 @@ void XorEmulation::SetTarget( int nWidth, int nHeight, int nTargetDepth,
 		CGContextSetBlendMode( mxMaskContext, kCGBlendModeDifference );
 
 	// initialize the transformation matrix to the drawing target
-	const CGAffineTransform aCTM = CGContextGetCTM( xTargetContext );
+	const CGAffineTransform aCTM = CGAffineTransformConcat( CGContextGetCTM( xTargetContext ),
+		CGAffineTransformMakeScale( 1.0 / fScale, 1.0 / fScale ) );
 	CGContextConcatCTM( mxMaskContext, aCTM );
 	if( mxTempContext )
 		CGContextConcatCTM( mxTempContext, aCTM );
@@ -2518,7 +2521,8 @@ bool XorEmulation::UpdateTarget()
 
 	// update the temp bitmap buffer if needed
 	if( mxTempContext )
-		CGContextDrawLayerAtPoint( mxTempContext, CGPointZero, mxTargetLayer );
+		CGContextDrawLayerInRect( mxTempContext, CGRectMake( 0, 0, CGBitmapContextGetWidth( mxTempContext ),
+			CGBitmapContextGetHeight( mxTempContext ) ), mxTargetLayer );
 
 	// do a manual XOR with the XorMask
 	// this approach suffices for simple color manipulations
