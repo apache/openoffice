@@ -2344,8 +2344,17 @@ Label_MaskStateMachine:
                                 // invalid later.
                                 if (eState != ssSkipReference)
                                 {
-                                    *pSym++ = c;
-                                    *pSym++ = *pSrc++;
+                                    if (pSym > &cSymbol[ MAXSTRLEN-3 ])
+                                    {
+                                        // two characters would step past the overflow test above
+                                        SetError( errStringOverflow);
+                                        eState = ssSkipReference;
+                                    }
+                                    else
+                                    {
+                                        *pSym++ = c;
+                                        *pSym++ = *pSrc++;
+                                    }
                                 }
                                 bAddToSymbol = false;
                             }
