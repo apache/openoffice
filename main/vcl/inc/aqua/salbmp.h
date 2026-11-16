@@ -97,7 +97,7 @@ private:
 									   sal_uInt16 nSrcBits, sal_uInt32 nSrcBytesPerRow, const BitmapPalette& rSrcPalette, sal_uInt8* pSrcData );
 
 public:
-	bool			Create( CGLayerRef xLayer, int nBitCount, int nX, int nY, int nWidth, int nHeight, bool bMirrorVert = true );
+	bool			Create( CGLayerRef xLayer, int nBitCount, int nX, int nY, int nWidth, int nHeight, bool bMirrorVert = true, float fScale = 1.0f );
 
 public:
 	CGImageRef		CreateWithMask( const AquaSalBitmap& rMask, int nX, int nY, int nWidth, int nHeight ) const;

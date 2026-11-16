@@ -58,6 +58,7 @@ AquaSalVirtualDevice::AquaSalVirtualDevice( AquaSalGraphics* pGraphic, long nDX,
 ,	mxBitmapContext( NULL )
 ,	mnBitmapDepth( 0 )
 ,	mxLayer( NULL )
+,	mfScale( 1.0f )
 {
     if( pGraphic && pData && pData->rCGContext )
 	{
@@ -163,7 +164,7 @@ sal_Bool AquaSalVirtualDevice::SetSize( long nDX, long nDY )
     if( mxLayer )
     {
     	const CGSize aSize = CGLayerGetSize( mxLayer );
-        if( (nDX == aSize.width) && (nDY == aSize.height) )
+        if( (nDX * mfScale == aSize.width) && (nDY * mfScale == aSize.height) )
 	    {
 	        // Yay, we do not have to do anything :)
 			return true;
@@ -171,9 +172,11 @@ sal_Bool AquaSalVirtualDevice::SetSize( long nDX, long nDY )
     }
 
     Destroy();
+    mfScale = 1.0f;
 
 	// create a Quartz layer matching to the intended virdev usage
 	CGContextRef xCGContext = NULL;
+	CGContextRef xRefContext = NULL;
 	if( mnBitmapDepth && (mnBitmapDepth < 16) )
 	{
 		mnBitmapDepth = 8;  // TODO: are 1bit vdevs worth it?
@@ -206,9 +209,10 @@ sal_Bool AquaSalVirtualDevice::SetSize( long nDX, long nDY )
             NSWindow* pNSWindow = pSalFrame->getNSWindow();
             if ( pNSWindow )
             {
-                NSGraphicsContext* pNSContext = [NSGraphicsContext graphicsContextWithWindow: pNSWindow];
-                if( pNSContext )
-                    xCGContext = reinterpret_cast<CGContextRef>([pNSContext graphicsPort]);
+                // a layer made from the window's context records a display list instead of pixels
+                xRefContext = CGBitmapContextCreate( NULL, 1, 1, 8, 4, GetSalData()->mxRGBSpace, kCGImageAlphaNoneSkipFirst );
+                xCGContext = xRefContext;
+                mfScale = [pNSWindow backingScaleFactor];
             }
             else
             {
@@ -228,14 +232,16 @@ sal_Bool AquaSalVirtualDevice::SetSize( long nDX, long nDY )
 
 	DBG_ASSERT( xCGContext, "no context" );
 
-	const CGSize aNewSize = CGSizeMake( nDX, nDY);
+	const CGSize aNewSize = CGSizeMake( nDX * mfScale, nDY * mfScale);
 	mxLayer = CGLayerCreateWithContext( xCGContext, aNewSize, NULL );
+	if( xRefContext )
+		CGContextRelease( xRefContext );
 
 	if( mxLayer && mpGraphics )
 	{
 		// get the matching Quartz context
 		CGContextRef xDrawContext = CGLayerGetContext( mxLayer );
-		mpGraphics->SetVirDevGraphics( mxLayer, xDrawContext, mnBitmapDepth );
+		mpGraphics->SetVirDevGraphics( mxLayer, xDrawContext, mnBitmapDepth, mfScale );
 	}
 
 	return (mxLayer != NULL);
@@ -248,8 +254,8 @@ void AquaSalVirtualDevice::GetSize( long& rWidth, long& rHeight )
 	if( mxLayer )
 	{
     	const CGSize aSize = CGLayerGetSize( mxLayer );
-		rWidth = static_cast<long>(aSize.width);
-		rHeight = static_cast<long>(aSize.height);
+		rWidth = static_cast<long>(aSize.width / mfScale);
+		rHeight = static_cast<long>(aSize.height / mfScale);
 	}
 	else
 	{

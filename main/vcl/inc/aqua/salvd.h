@@ -70,6 +70,7 @@ private:
     CGContextRef mxBitmapContext;
     int mnBitmapDepth;
 	CGLayerRef mxLayer;              // Quartz layer
+	float mfScale;                   // layer pixels per point
 	AquaSalGraphics* mpGraphics;     // current VirDev graphics
 
 	void Destroy();

@@ -156,6 +156,7 @@ protected:
 	int										mnWidth;
 	int										mnHeight;
 	int										mnBitmapDepth;	// zero unless bitmap
+	float										mfScale;		// layer pixels per point
     /// device resolution of this graphics
     long                                    mnRealDPIX;
 	long                                    mnRealDPIY;
@@ -198,7 +199,7 @@ public:
 
     void                SetWindowGraphics( AquaSalFrame* pFrame );
     void                SetPrinterGraphics( CGContextRef, long nRealDPIX, long nRealDPIY, double fFakeScale );
-    void                SetVirDevGraphics( CGLayerRef, CGContextRef, int nBitDepth = 0 );
+    void                SetVirDevGraphics( CGLayerRef, CGContextRef, int nBitDepth = 0, float fScale = 1.0f );
 
     void                initResolution( NSWindow* );
     void                copyResolution( AquaSalGraphics& );
@@ -422,7 +423,7 @@ public:
 					XorEmulation();
 	/*final*/		~XorEmulation();
 
-	void			SetTarget( int nWidth, int nHeight, int nBitmapDepth, CGContextRef, CGLayerRef );
+	void			SetTarget( int nWidth, int nHeight, int nBitmapDepth, CGContextRef, CGLayerRef, float fScale = 1.0f );
 	bool			UpdateTarget();
 	void			Enable()			{ mbIsEnabled = true; }
 	void			Disable()			{ mbIsEnabled = false; }

@@ -80,7 +80,7 @@ void AquaSalGraphics::SetPrinterGraphics( CGContextRef xContext, long nDPIX, lon
 }
 
 void AquaSalGraphics::SetVirDevGraphics( CGLayerRef xLayer, CGContextRef xContext,
-	int nBitmapDepth )
+	int nBitmapDepth, float fScale )
 {
     mbWindow    = false;
     mbPrinter   = false;
@@ -90,6 +90,7 @@ void AquaSalGraphics::SetVirDevGraphics( CGLayerRef xLayer, CGContextRef xContex
 	mxLayer	= xLayer;
 	mrContext = xContext;
 	mnBitmapDepth = nBitmapDepth;
+	mfScale = xLayer ? fScale : 1.0f;
 
 	// return early if the virdev is being destroyed
     if( !xContext )
@@ -104,8 +105,9 @@ void AquaSalGraphics::SetVirDevGraphics( CGLayerRef xLayer, CGContextRef xContex
     else
     {
 		const CGSize aSize = CGLayerGetSize( mxLayer );
-		mnWidth = static_cast<int>(aSize.width);
-		mnHeight = static_cast<int>(aSize.height);
+		mnWidth = static_cast<int>(aSize.width / mfScale);
+		mnHeight = static_cast<int>(aSize.height / mfScale);
+		CGContextScaleCTM( mrContext, mfScale, mfScale );
     }
 
 	// prepare graphics for drawing
@@ -116,7 +118,7 @@ void AquaSalGraphics::SetVirDevGraphics( CGLayerRef xLayer, CGContextRef xContex
 	// re-enable XorEmulation for the new context
 	if( mpXorEmulation )
 	{
-		mpXorEmulation->SetTarget( mnWidth, mnHeight, mnBitmapDepth, mrContext, mxLayer );
+		mpXorEmulation->SetTarget( mnWidth, mnHeight, mnBitmapDepth, mrContext, mxLayer, mfScale );
 		if( mpXorEmulation->IsEnabled() )
 			mrContext = mpXorEmulation->GetMaskContext();
 	}
@@ -179,15 +181,18 @@ bool AquaSalGraphics::CheckContext()
     {
         const unsigned int nWidth = mpFrame->maGeometry.nWidth;
         const unsigned int nHeight = mpFrame->maGeometry.nHeight;
+        const float fScale = [mpFrame->getNSWindow() backingScaleFactor];
+        const int nOldWidth = mnWidth, nOldHeight = mnHeight;
 
         CGContextRef rReleaseContext = 0;
         CGLayerRef   rReleaseLayer = NULL;
 
 		// check if a new drawing context is needed (e.g. after a resize)
-		if( (unsigned(mnWidth) != nWidth) || (unsigned(mnHeight) != nHeight) )
+		if( (unsigned(mnWidth) != nWidth) || (unsigned(mnHeight) != nHeight) || (mfScale != fScale) )
 		{
 			mnWidth = nWidth;
 			mnHeight = nHeight;
+			mfScale = fScale;
 			// prepare to release the corresponding resources
 			rReleaseContext = mrContext;
 			rReleaseLayer   = mxLayer;
@@ -197,18 +202,20 @@ bool AquaSalGraphics::CheckContext()
 
         if( !mrContext )
         {
-	        const CGSize aLayerSize = CGSizeMake( nWidth, nHeight);
-	        NSGraphicsContext* pNSGContext = [NSGraphicsContext graphicsContextWithWindow: mpFrame->getNSWindow()];
-	        CGContextRef xCGContext = reinterpret_cast<CGContextRef>([pNSGContext graphicsPort]);
+	        const CGSize aLayerSize = CGSizeMake( nWidth * mfScale, nHeight * mfScale);
+	        // a layer made from the window's context records a display list instead of pixels
+	        CGContextRef xCGContext = CGBitmapContextCreate( NULL, 1, 1, 8, 4, GetSalData()->mxRGBSpace, kCGImageAlphaNoneSkipFirst );
     	    mxLayer = CGLayerCreateWithContext( xCGContext, aLayerSize, NULL );
+	        CGContextRelease( xCGContext );
 			if( mxLayer )
 				mrContext = CGLayerGetContext( mxLayer );
 
             if( mrContext )
             {
+                CGContextScaleCTM( mrContext, mfScale, mfScale );
                 // copy original layer to resized layer
                 if( rReleaseLayer )
-                	CGContextDrawLayerAtPoint( mrContext, CGPointZero, rReleaseLayer );
+                	CGContextDrawLayerInRect( mrContext, CGRectMake( 0, 0, nOldWidth, nOldHeight ), rReleaseLayer );
 
                 CGContextTranslateCTM( mrContext, 0, nHeight );
                 CGContextScaleCTM( mrContext, 1.0, -1.0 );
@@ -219,7 +226,7 @@ bool AquaSalGraphics::CheckContext()
 
 				// re-enable XOR emulation for the new context
 				if( mpXorEmulation )
-					mpXorEmulation->SetTarget( mnWidth, mnHeight, mnBitmapDepth, mrContext, mxLayer );
+					mpXorEmulation->SetTarget( mnWidth, mnHeight, mnBitmapDepth, mrContext, mxLayer, mfScale );
             }
         }
 
@@ -289,7 +296,7 @@ void AquaSalGraphics::UpdateWindow( NSRect& )
         }
 
 		ApplyXorContext();
-		CGContextDrawLayerAtPoint( rCGContext, CGPointZero, mxLayer );
+		CGContextDrawLayerInRect( rCGContext, CGRectMake( 0, 0, mnWidth, mnHeight ), mxLayer );
         if( rClip ) // cleanup clipping
             CGContextRestoreGState( rCGContext );
 	}
