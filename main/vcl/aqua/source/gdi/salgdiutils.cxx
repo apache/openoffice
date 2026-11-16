@@ -224,7 +224,14 @@ bool AquaSalGraphics::CheckContext()
 
 				// re-enable XOR emulation for the new context
 				if( mpXorEmulation )
+				{
 					mpXorEmulation->SetTarget( mnWidth, mnHeight, mnBitmapDepth, mrContext, maLayer.get() );
+					if( mpXorEmulation->IsEnabled() )
+					{
+						mrContext = mpXorEmulation->GetMaskContext();
+						SetState();
+					}
+				}
             }
         }
 
