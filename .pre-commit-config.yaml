@@ -32,7 +32,7 @@ repos:
         name: run gitleaks
         description: check for secrets with gitleaks
   - repo: https://github.com/Lucas-C/pre-commit-hooks
-    rev: v1.5.5
+    rev: v1.5.6
     hooks:
       - id: insert-license
         name: add license for all Markdown files
@@ -75,7 +75,7 @@ repos:
         args: [--ignore-words=.github/linters/codespell.txt]
         exclude: ^(extras/|test/odf-validate/fixtures/.*\.json$)
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.47.0
+    rev: v0.50.0
     hooks:
       - id: markdownlint
         name: run markdownlint
