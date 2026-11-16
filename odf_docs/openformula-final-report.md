@@ -28,7 +28,7 @@ Scope: AUDIT ONLY. No production source code was modified. No dependencies intro
 
 ### Confirmed present (FULL) — opcodes + implementation + scfuncs + core_resource mapping
 
-All ODF 1.2 baseline functions in `test/aoo-test/data/openformula-functions.txt` have opcodes and implementations EXCEPT IFNA, SKEWP and IFERROR (IFERROR added 2026-11-16, see section 4). Notable present functions (representative, full list in `openformula-functions.tsv`):
+All ODF 1.2 baseline functions in `test/aoo-test/data/openformula-functions.txt` have opcodes and implementations EXCEPT IFNA, SKEWP and IFERROR (IFERROR added 2026-11-16, see section 4; all three are implemented now). Notable present functions (representative, full list in `openformula-functions.tsv`):
 
 - Logical: AND, OR, XOR, NOT, IF, CHOOSE, TRUE, FALSE, NA.
 - IS*: ISBLANK, ISTEXT, ISNONTEXT, ISLOGICAL, ISREF, ISNUMBER, ISFORMULA, ISNA, ISERR, ISERROR, ISEVEN, ISODD, TYPE, CELL, N, ERROR.TYPE.
@@ -91,7 +91,7 @@ AOO writes non-standard names for some functions (ODF 1.4 strict mode should use
 1. **IFNA** (ODF 1.3) — absent from opcode map, interpreter, `scfuncs.src`, `core_resource.src`; only Excel-filter `ocNoName` stub (`xlformula.cxx:404`).
 2. **SKEWP** (ODF 1.3) — absent from opcode map/interpreter/`scfuncs.src`/`core_resource.src`; only Excel-filter `ocNoName` stub (`xlformula.cxx:415`). Sample `SKEW` present.
 
-3. **IFERROR** (ODF 1.2 baseline list) — no opcode, interpreter, `scfuncs.src` or `core_resource.src` entry (added 2026-11-16).
+3. **IFERROR** (ODF 1.2 baseline list) — no opcode, interpreter, `scfuncs.src` or `core_resource.src` entry (added 2026-11-16). Implemented the same day as opcode 411 (6f13be1d67), with xls and xlsx support (ca287e3487).
 
 The earlier sentence here, that no other function in the ODF 1.2 baseline is missing from the opcode map, was wrong for IFERROR. A runtime check on 2026-11-16 also found DATEDIF, FINDB, REPLACEB, SEARCHB, BINOM.DIST.RANGE, LEGACY.TDIST and ERROR.TYPE (present as ERRORTYPE) not recognised under their ODF names; these are not audited further (see `openformula-conformance.md` section 2).
 

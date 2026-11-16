@@ -38,7 +38,7 @@ Source-of-truth: `test/aoo-test/`, `test/odf-validate/`, and AOO source. Finding
 - **[CONFIRMED]** SKEWP: listed in inventories; implemented in Milestone B (`SC_OPCODE_SKEWP=410`, `ScSkewP` in `interpr3.cxx`, dispatch in `interpr4.cxx:3695`). Regression tests added to `calcval-cases14.tsv` (SKEWP.sym, SKEWP.pos, SKEWP.neg, SKEWP.vs.skew, SKEWP.one, SKEWP.zero, SKEWP.two, SKEWP.range, SKEWP.array, SKEWP.mixed, SKEWP.err).
 - **[CONFIRMED]** EASTERSUNDAY: implemented (`interpr2.cxx:261`) but NOT in either function inventory. No dedicated test coverage confirmed.
 
-**[CONFIRMED] IFNA and SKEWP are no longer missing functions.** Both were implemented in Milestone B. The test inventories list them as standard ODF functions, which is now correct. IFERROR is on the same lists but is not implemented (checked 2026-11-16).
+**[CONFIRMED] IFNA and SKEWP are no longer missing functions.** Both were implemented in Milestone B. The test inventories list them as standard ODF functions, which is now correct. IFERROR, on the same lists, was missing until 2026-11-16 and is implemented now; the `IFERROR.*` calcval rows cover it.
 ### Missing semantic tests
 
 - No confirmed semantic test for CONVERT `atm` (fixed in Milestone C: 101325.1 Pa vs old 101324.996583 Pa).
@@ -82,7 +82,7 @@ Source-of-truth: `test/aoo-test/`, `test/odf-validate/`, and AOO source. Finding
 | Category | Gap | Severity |
 |----------|-----|----------|
 | Spec inventory | No ODF 1.3/1.4 function/operator inventory in test/ | High |
-| Missing functions | IFERROR (not implemented); IFNA and SKEWP were implemented in Milestone B | Medium |
+| Missing functions | None — IFNA and SKEWP implemented in Milestone B, IFERROR on 2026-11-16 | None |
 | Implemented but uninventoried | EASTERSUNDAY not in either test inventory | Medium |
 | Semantic tests | CONVERT atm (fixed Milestone C), INDEX row-vector (fixed Milestone A), DATE pre-1583, bit ops, short-circuit | High |
 | Parser tests | Precedence, intersection, union, quoted labels | Medium |
