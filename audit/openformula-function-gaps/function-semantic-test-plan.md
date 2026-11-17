@@ -194,27 +194,28 @@ Purpose: Confirm validation gaps in RRI implementation.
 
 ODF 1.4: Returns error number (1=#NULL!, 2=#DIV/0!, ..., 7=#N/A).
 
-Test cases:
-  a) =ERROR.TYPE(#DIV/0!) — expected: 2
+Test cases (implemented as `SG.ERRTYPE-*` in `test/odf-validate/calcval-cases14.tsv`):
+  a) =ERROR.TYPE(1/0) — expected: 2 (#DIV/0!)
   b) =ERROR.TYPE(#VALUE!) — expected: 3
   c) =ERROR.TYPE(#REF!) — expected: 4
-  d) =ERROR.TYPE(#NAME!) — expected: 5
+  d) =ERROR.TYPE(#NAME?) — expected: 5
   e) =ERROR.TYPE(#NUM!) — expected: 6
   f) =ERROR.TYPE(#N/A) — expected: 7
   g) =ERROR.TYPE(#NULL!) — expected: 1
-  h) =ERROR.TYPE(5) — no error → NA error
+  h) =ERROR.TYPE(5) — non-error → #N/A error
   i) =ERROR.TYPE(A1) where A1 contains #DIV/0! — reference to error cell (2)
-  j) =ERROR.TYPE(A1:B2) — multiple refs → errNoValue
+  j) =ERROR.TYPE(A1:B2) — multiple refs → #N/A error
   k) =ERROR.TYPE() — wrong arg count (error)
-  l) =ERROR.TYPE(ORG.OPENOFFICE.ERRORTYPE(#DIV/0!)) — ODF namespace name
+  l) =ERROR.TYPE(ORG.OPENOFFICE.ERRORTYPE(1/0)) — ODF namespace name
 
-Expected: ScErrorType() (interpr1.cxx:8377) pushes internal error code
-  as double. The mapping from internal error codes to ODF ERROR.TYPE
-  return values (1–7) is NOT evident in source. Tests (a)–(g) verify
-  whether the mapping is correct. Test (j) verifies multi-ref handling.
+Fixed: ScErrorType() (interpr1.cxx:8574) now maps internal AOO error codes
+  to ODF ERROR.TYPE return values via MapErrorType():
+  errNoCode(521)→1, errDivisionByZero(532)→2, errNoValue(519)→3,
+  errNoRef(524)→4, errNoName(525)→5, errIllegalFPOperation(503)→6,
+  NOTAVAILABLE(32767)→7. Other error codes / no error → #N/A.
 
-Purpose: Confirm error-code mapping to ODF return values. This is the
-  primary semantic gap for ERROR.TYPE.
+Purpose: Validate error-code mapping to ODF return values. Semantic gap
+  resolved in H.4; runtime validation pending build availability.
 
 
 11. NUMBERVALUE

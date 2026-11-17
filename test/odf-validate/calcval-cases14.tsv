@@ -340,3 +340,15 @@ SG.DATEDIF-038-multi-year	=DATEDIF(DATE(2020;6;15);DATE(2024;8;20);"y")	cell	4	6
 SG.DATEDIF-039-multi-year-m	=DATEDIF(DATE(2020;6;15);DATE(2024;8;20);"m")	cell	50	6.10.3 complete months over multi-year span
 SG.DATEDIF-040-multi-year-ym	=DATEDIF(DATE(2020;6;15);DATE(2024;8;20);"ym")	cell	2	6.10.3 months ignoring years over multi-year span
 SG.DATEDIF-041-case-format	=DATEDIF(DATE(2024;1;1);DATE(2024;12;31);"D")	cell	#ERR	6.10.3 format string is case-sensitive
+SG.ERRTYPE-01-div0	=ERROR.TYPE(1/0)	cell	2	6.13.x ERROR.TYPE of #DIV/0!
+SG.ERRTYPE-02-value	=ERROR.TYPE(#VALUE!)	cell	3	6.13.x ERROR.TYPE of #VALUE!
+SG.ERRTYPE-03-ref	=ERROR.TYPE(#REF!)	cell	4	6.13.x ERROR.TYPE of #REF!
+SG.ERRTYPE-04-name	=ERROR.TYPE(#NAME?)	cell	5	6.13.x ERROR.TYPE of #NAME?
+SG.ERRTYPE-05-num	=ERROR.TYPE(#NUM!)	cell	6	6.13.x ERROR.TYPE of #NUM!
+SG.ERRTYPE-06-na	=ERROR.TYPE(#N/A)	cell	7	6.13.x ERROR.TYPE of #N/A
+SG.ERRTYPE-07-null	=ERROR.TYPE(IF(FALSE();A1;B1))	cell	1	6.13.x ERROR.TYPE of #NULL! (empty intersection)
+SG.ERRTYPE-08-no-error	=ERROR.TYPE(5)	cell	#N/A	6.13.x ERROR.TYPE of non-error returns #N/A
+SG.ERRTYPE-09-ref-error	=ERROR.TYPE(A1)	cell	2	6.13.x ERROR.TYPE of cell with #DIV/0! (needs A1=1/0 setup)
+SG.ERRTYPE-10-multi-ref	=ERROR.TYPE(A1:B2)	cell	#N/A	6.13.x ERROR.TYPE of multi-ref returns #N/A (not error value)
+SG.ERRTYPE-11-wrong-args	=ERROR.TYPE()	cell	#ERR	6.13.x ERROR.TYPE wrong arg count
+SG.ERRTYPE-12-odf-name	=ERROR.TYPE(ORG.OPENOFFICE.ERRORTYPE(1/0))	cell	2	6.13.x ERROR.TYPE with ODF namespace name

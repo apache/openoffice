@@ -205,6 +205,7 @@ XHPFILES = \
    func_eastersunday.xhp \
    func_edate.xhp \
    func_eomonth.xhp \
+   func_errortype.xhp \
    func_hour.xhp \
    func_iferror.xhp \
    func_ifna.xhp \

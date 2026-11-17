@@ -8571,6 +8571,29 @@ void ScInterpreter::ScConcat()
 }
 
 
+static sal_uInt16 MapErrorType( sal_uInt16 nInternalErr )
+{
+    switch ( nInternalErr )
+    {
+        case errNoCode:              // 521 → #NULL!
+            return 1;
+        case errDivisionByZero:      // 532 → #DIV/0!
+            return 2;
+        case errNoValue:             // 519 → #VALUE!
+            return 3;
+        case errNoRef:               // 524 → #REF!
+            return 4;
+        case errNoName:              // 525 → #NAME?
+            return 5;
+        case errIllegalFPOperation:  // 503 → #NUM!
+            return 6;
+        case NOTAVAILABLE:           // 0x7fff → #N/A
+            return 7;
+        default:
+            return 0; // Unknown error type → will produce #N/A error
+    }
+}
+
 void ScInterpreter::ScErrorType()
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScErrorType" );
@@ -8640,10 +8663,11 @@ void ScInterpreter::ScErrorType()
             PopError();
             nErr = nGlobalError;
     }
-    if ( nErr )
+    sal_uInt16 nErrorType = MapErrorType( nErr );
+    if ( nErrorType )
     {
         nGlobalError = 0;
-        PushDouble( nErr );
+        PushDouble( nErrorType );
     }
     else
     {

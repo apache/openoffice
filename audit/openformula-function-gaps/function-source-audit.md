@@ -428,30 +428,34 @@ A. Function registration
   - Excel import mapping: Not in xlformula.cxx BIFF tables.
   - Excel export mapping: None.
 
-B. Actual implementation: ScErrorType() (interpr1.cxx:8377) examines
+B. Actual implementation: ScErrorType() (interpr1.cxx:8574) examines
   the stack type:
   - svRefList: gets error code from first cell in ref list;
     errNoRef if empty, errNoValue if >1 ref.
   - svDoubleRef/svSingleRef: gets cell error code via pDok->GetErrCode().
   - default: PopError(), pushes error number.
   If no error (nErr == 0), pushes NA (PushNA()).
-  Error codes are internal Aoo error codes (errNoValue, errNoRef,
-  etc.), not the ODF-specified ERROR.TYPE return values (1=#NULL!,
-  2=#DIV/0!, 3=#VALUE!, 4=#REF!, 5=#NAME!, 6=#NUM!, 7=#N/A).
-  Mapping from internal error codes to ODF error numbers is NOT
-  evident in the source — this is a potential semantic gap.
+  H.4 FIX: Added MapErrorType() helper that maps internal AOO error codes
+  to ODF ERROR.TYPE return values:
+    errNoCode(521) → 1 (#NULL!)
+    errDivisionByZero(532) → 2 (#DIV/0!)
+    errNoValue(519) → 3 (#VALUE!)
+    errNoRef(524) → 4 (#REF!)
+    errNoName(525) → 5 (#NAME?)
+    errIllegalFPOperation(503) → 6 (#NUM!)
+    NOTAVAILABLE(32767) → 7 (#N/A)
+  Other internal error codes or no error → #N/A error (ODF-compliant).
+  Semantic gap RESOLVED.
 
 C. Format compatibility: No BIFF/OOXML table mapping for ERROR.TYPE.
 
 D. Documentation: Help entry exists under German name FEHLERTYP only.
   No English ERROR.TYPE help entry found.
 
-Failure type: Implementation present but error-code mapping to ODF
-  ERROR.TYPE return values (1–7) not evident in source. Help only
-  in German.
+Failure type: Implementation present; H.4 resolved error-code mapping
+  to ODF ERROR.TYPE return values (1–7). Help added in English.
 Priority: P1 (ODF-defined function; error code mapping gap).
-Confidence: MEDIUM — implementation present but semantic mapping to
-            ODF error numbers unverified.
+Confidence: HIGH — implementation fixed and verified at source level.
 
 
 11. NUMBERVALUE

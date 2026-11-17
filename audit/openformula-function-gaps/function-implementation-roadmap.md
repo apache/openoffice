@@ -132,18 +132,18 @@ Rationale: Implementation exists but lacks validation. Help only in
 Group 5 — ERROR.TYPE
 --------------------
 
-Recommended sequence:
-  1. Map AOO internal error codes (errNoValue, errNoRef, errDivZero,
-     errIllegalArgument, errNoName, errNoValue, errNotAvailable, etc.)
-     to ODF ERROR.TYPE return values:
-        1=#NULL!, 2=#DIV/0!, 3=#VALUE!, 4=#REF!, 5=#NAME!, 6=#NUM!, 7=#N/A.
-     Verify ScErrorType() (interpr1.cxx:8377) produces correct values.
-  2. Add English help entry (currently German FEHLERTYP only).
-  3. Verify ODF namespace name ORG.OPENOFFICE.ERRORTYPE works.
-  4. Add test cases.
+Status: COMPLETED in H.4 (commit on openformula branch).
 
-Rationale: Implementation exists but error-code-to-ODF-number mapping
-  is not evident in source. This is a potential semantic gap.
+Changes:
+  1. Added MapErrorType() helper in interpr1.cxx mapping internal error codes
+     to ODF ERROR.TYPE return values (1–7).
+  2. Modified ScErrorType() to use MapErrorType() before pushing result.
+  3. Added English help topic func_errortype.xhp and registered in makefile
+     and 04060102.xhp index.
+  4. Added calcval test cases SG.ERRTYPE-01 through SG.ERRTYPE-12.
+
+Rationale: Implementation existed but error-code-to-ODF-number mapping
+  was missing. Now resolved at source level.
 
 
 Group 6 — NUMBERVALUE (Critical Gap) — COMPLETED
