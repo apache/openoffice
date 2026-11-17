@@ -12,7 +12,7 @@ Summary table of all 15 audited functions.
 | FINDB | Present | ocFinDB (412) | ScFindB() | Yes (HID_FUNC_FINDB) | No | N/A | No | No | No | No | None — implementation complete at source level | Resolved (was P1) | HIGH |
 | REPLACEB | Present | ocReplaceB (414) | ScReplaceB() | Yes (HID_FUNC_REPLACEB) | No | N/A | No | No | No | No | None — implementation complete at source level | Resolved (was P1) | HIGH |
 | SEARCHB | Present | ocSearchB (413) | ScSearchB() | Yes (HID_FUNC_SEARCHB) | No | N/A | No | No | No | No | None — implementation complete at source level | Resolved (was P1) | HIGH |
-| DATEDIF | Present | ocDateDif (415) | ScDateDif() | Yes (HID_FUNC_DATEDIF) | Yes | Large Group | Yes(BIFF5/7,ID351,→#NAME!) | No | No | No | None — implementation complete at source level | Resolved (was P1) | HIGH |
+| DATEDIF | Present | ocDateDif (415) | ScDateDif() | Yes (HID_FUNC_DATEDIF) | Yes | Large Group | Yes(BIFF5/7,ID351,ocDateDif) | No | No | No | None — implementation complete at source level | Resolved (was P1) | HIGH |
 | ISOWEEKNUM | Partial (wrong semantics) | ocWeek | ScGetWeekOfYear() | German only (KALENDERWOCHE) | No | N/A | No | Yes (ODF table, import-only) | No | _xlfnodf.ISOWEEKNUM | ISO 8601 semantics not implemented (only SUN/MON start) | P1 | MEDIUM |
 | DDE | Present (platform-dependent) | ocDde (369) | ScDde() | Yes (HID_FUNC_DDE) | No | N/A | No | No | No | No | Platform-dependent; no file-format mapping | DEFER | HIGH |
 | ODDFPRICE | Present (AddIn) | None | getOddfprice() (AddIn) | Yes (HID_AAI_FUNC_ODDFPRICE) | No | N/A | No | No | No | No | Analysis AddIn, not native | P2 | HIGH |
@@ -40,3 +40,38 @@ Notes:
   spec/security questions.
 - Confidence: HIGH = direct source evidence; MEDIUM = source evidence
   exists but runtime behavior unverified.
+
+BIFF Compatibility
+------------------
+
+See audit/openformula-function-gaps/biff-function-mapping-audit.md for the
+detailed BIFF import/export mapping audit and
+audit/openformula-function-gaps/biff-function-mapping.tsv for the
+machine-readable inventory.
+
+Key findings:
+- DATEDIF BIFF5 ID 351 was mapped to ocNoName (→ #NAME! on import) and
+  was fixed to ocDateDif in commit a330cbd51b. DATEDIF is import-only
+  (BIFF export intentionally unsupported).
+- FINDB, SEARCHB, REPLACEB have native evaluators but no BIFF function ID
+  in any AOO table (classification: unclear — confirmed absent from
+  saFuncTable_2/3/4/5/8, saFuncTable_Oox, saFuncTable_Odf; LEFTB/RIGHTB/
+  MIDB/LENB have BIFF2 IDs 208-211 but the find/replace/search variants
+  do not).
+- DDE has a native opcode and evaluator but no BIFF mapping (intentional
+  limitation — DDE is not a BIFF function).
+- ODDFPRICE and ODDFYIELD are Analysis AddIn functions with no native
+  opcode and no BIFF mapping (intentional limitation).
+- All other inventoried functions have correct BIFF mappings where BIFF
+  function IDs exist.
+- OOXML future functions (IFNA, IFERROR, SKEWP, BITAND, BITOR, BITXOR,
+  BITLSHIFT, BITRSHIFT) and ODF namespace functions (ISOWEEKNUM,
+  NUMBERVALUE, RRI, FDIST, FINV) use _xlfn./_xlfnodf. prefix names with
+  NOID/255 BIFF IDs — no BIFF import, future-function export only.
+
+Classification summary (27 functions):
+- Correct: 21
+- Intentional limitations: 3 (DDE, ODDFPRICE, ODDFYIELD)
+- Unclear: 3 (FINDB, SEARCHB, REPLACEB)
+- Import defects: 0 (DATEDIF ocNoName defect fixed before this audit)
+- Export defects: 0

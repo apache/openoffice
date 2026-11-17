@@ -339,7 +339,7 @@ static const XclFunctionInfo saFuncTable_5[] =
     { ocCountIf,            346,    2,  2,  V, { RO, VR }, 0, 0 },
     { ocCountEmptyCells,    347,    1,  1,  V, { RO }, 0, 0 },
     { ocISPMT,              350,    4,  4,  V, { VR }, 0, 0 },
-    { ocNoName,             351,    3,  3,  V, { VR }, EXC_FUNCFLAG_IMPORTONLY, 0 },    // DATEDIF
+    { ocDateDif,              351,    3,  3,  V, { VR }, EXC_FUNCFLAG_IMPORTONLY, 0 },    // DATEDIF
     { ocNoName,             352,    1,  1,  V, { VR }, EXC_FUNCFLAG_IMPORTONLY, 0 },    // DATESTRING
     { ocNoName,             353,    2,  2,  V, { VR }, EXC_FUNCFLAG_IMPORTONLY, 0 },    // NUMBERSTRING
     { ocRoman,              354,    1,  2,  V, { VR }, 0, 0 }

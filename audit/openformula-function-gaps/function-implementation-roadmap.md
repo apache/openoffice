@@ -69,6 +69,10 @@ Changes:
   8. Added 15 regression test cases to calcval-cases14.tsv covering
      basic days/months/years, same date, month boundaries, leap year dates,
      component formats (md/ym/yd), reverse dates, and invalid formats.
+  9. Fixed BIFF5/BIFF7 import mapping in xlformula.cxx line 342:
+     changed `ocNoName` → `ocDateDif` for function ID 351 (DATEDIF),
+     preserving EXC_FUNCFLAG_IMPORTONLY flag. BIFF import now resolves
+     DATEDIF to the native evaluator instead of producing #NAME!.
 
 Semantic design: See datedif-semantic-design.md for detailed algorithm
 specification including reverse-date policy, time fraction handling, and

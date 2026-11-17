@@ -160,10 +160,11 @@ A. Function registration
   - Help entry: HID_FUNC_DATEDIF (helpids.h line 768+, hidother.src).
   - ODF formula namespace mapping: DATEDIF in ODF section of
     core_resource.src.
-  - Excel import mapping: BIFF5/BIFF7 function ID 351 still mapped to
-    ocNoName in xlformula.cxx line 342 (import-only, produces #NAME!).
-    Native opcode not yet wired to BIFF import table.
-  - Excel export mapping: None.
+  - Excel import mapping: BIFF5/BIFF7 function ID 351 now maps to
+    ocDateDif in xlformula.cxx line 342 (import-only). BIFF import
+    resolves DATEDIF to the native evaluator instead of ocNoName.
+    BIFF8 table (saFuncTable_8) does not include DATEDIF.
+  - Excel export mapping: None (import-only policy unchanged).
 
 B. Actual implementation: ScInterpreter::ScDateDif() at interpr2.cxx:443.
   Implements ODF 1.4 §6.10.3 with all six formats (y, m, d, md, ym, yd).
@@ -175,8 +176,8 @@ B. Actual implementation: ScInterpreter::ScDateDif() at interpr2.cxx:443.
   Detailed algorithm in audit/openformula-function-gaps/datedif-semantic-design.md.
 
 C. Format compatibility
-  - XLS import: BIFF5/BIFF7 function ID 351 maps to ocNoName → #NAME!.
-    Native opcode not yet wired to BIFF import table.
+  - XLS import: BIFF5/BIFF7 function ID 351 maps to ocDateDif.
+    Import resolves DATEDIF to the native evaluator. Import-only.
   - XLS import (BIFF8): Not in saFuncTable_8. Not recognized.
   - XLSX import: Not in saFuncTable_Oox. Not recognized.
   - XLS export: None.
