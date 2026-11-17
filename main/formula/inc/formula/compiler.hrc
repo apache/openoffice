@@ -405,10 +405,13 @@
 #define SC_OPCODE_IFNA              409
 #define SC_OPCODE_SKEWP             410
 #define SC_OPCODE_IFERROR           411
+#define SC_OPCODE_FINDB             412
+#define SC_OPCODE_SEARCHB           413
+#define SC_OPCODE_REPLACEB          414
 
-#define SC_OPCODE_STOP_2_PAR        412
+#define SC_OPCODE_STOP_2_PAR        415
 
-#define SC_OPCODE_LAST_OPCODE_ID    411      /* last OpCode */
+#define SC_OPCODE_LAST_OPCODE_ID    414      /* last OpCode */
 
 /*** Interna ***/
 #define SC_OPCODE_INTERNAL_BEGIN   9999

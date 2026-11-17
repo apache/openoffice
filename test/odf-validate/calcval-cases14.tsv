@@ -92,6 +92,32 @@ CONVERT.Pa.Torr	=CONVERT(133.32236842105263;"Pa";"Torr")	cell	1	6.16.18 Table 24
 CONVERT.atm.Torr	=CONVERT(1;"atm";"Torr")	cell	760.0007500616828	6.16.18 Table 24: atm to Torr cross-conversion
 CONVERT.SI_at.atm	=CONVERT(1;"SI_at";"atm")	cell	0.9678401501700961	6.16.18 Table 24: SI_at to atm cross-conversion
 CONVERT.Torr.SI_at	=CONVERT(1;"Torr";"SI_at")	cell	0.001359509806315639	6.16.18 Table 24: Torr to SI_at cross-conversion
+NUMBERVALUE.basic	=NUMBERVALUE("1.234";".";",")	cell	1.234	6.13.28 basic decimal conversion
+NUMBERVALUE.european	=NUMBERVALUE("1.234,56";",";".")	cell	1234.56	6.13.28 European decimal/comma separators
+NUMBERVALUE.space.group	=NUMBERVALUE("1 234.56";".";" ")	cell	1234.56	6.13.28 space group separator
+NUMBERVALUE.empty	=NUMBERVALUE("";".";",")	cell	#ERR	6.13.28 empty text is an error
+NUMBERVALUE.whitespace	=NUMBERVALUE("  123  ";".";",")	cell	123	6.13.28 whitespace removed before conversion
+NUMBERVALUE.percent	=NUMBERVALUE("123%";".";",")	cell	1.23	6.13.28 trailing percent divides by 100
+NUMBERVALUE.double.percent	=NUMBERVALUE("10%%";".";",")	cell	0.001	6.13.28 two percent signs divide by 10000
+NUMBERVALUE.decimal.percent	=NUMBERVALUE(".5%";".";",")	cell	0.005	6.13.28 decimal value with percent sign
+NUMBERVALUE.repeated.decimal	=NUMBERVALUE("1.2.3";".";",")	cell	#ERR	6.13.28 repeated decimal separator is an error
+NUMBERVALUE.negative	=NUMBERVALUE("-123.45";".";",")	cell	-123.45	6.13.28 negative number
+NUMBERVALUE.scientific	=NUMBERVALUE("1.5e2";".";",")	cell	150	6.13.28 scientific notation
+NUMBERVALUE.omitted.seps	=NUMBERVALUE("123")	cell	123	6.13.28 omitted separators use locale defaults
+FINDB.basic	=FINDB("b";"abc")	cell	2	6.7.x case-sensitive byte search
+FINDB.case	=FINDB("B";"abc")	cell	#ERR	6.7.x case-sensitive: uppercase not found
+FINDB.start	=FINDB("b";"abc";2)	cell	2	6.7.x start at byte position 2
+FINDB.notfound	=FINDB("x";"abc")	cell	#ERR	6.7.x not found returns error
+FINDB.empty	=FINDB("";"abc")	cell	1	6.7.x empty find text returns 1
+SEARCHB.basic	=SEARCHB("b";"abc")	cell	2	6.7.x case-insensitive byte search
+SEARCHB.case	=SEARCHB("B";"abc")	cell	2	6.7.x case-insensitive: finds lowercase
+SEARCHB.upper	=SEARCHB("b";"ABC")	cell	1	6.7.x case-insensitive: finds uppercase
+SEARCHB.start	=SEARCHB("b";"abc";2)	cell	2	6.7.x start at byte position 2
+REPLACEB.basic	=REPLACEB("abc";2;1;"X")	cell	aXc	6.7.x replace 1 byte at position 2
+REPLACEB.start1	=REPLACEB("abc";1;2;"XY")	cell	XYc	6.7.x replace 2 bytes at position 1
+REPLACEB.append	=REPLACEB("abc";4;1;"X")	cell	abcX	6.7.x start beyond length appends
+REPLACEB.truncate	=REPLACEB("abc";2;10;"X")	cell	aX	6.7.x count exceeds remaining truncates
+REPLACEB.zero	=REPLACEB("abc";2;0;"X")	cell	aXbc	6.7.x zero count inserts
 EASTER.mid	=EASTERSUNDAY(1000)	cell	#ERR	6.10.8 constraint 1583 <= Year (100 to 1582)
 EASTER.neg	=EASTERSUNDAY(-1)	cell	#ERR	6.10.8 constraint 1583 <= Year (negative years used to wrap)
 EASTER.wrap	=EASTERSUNDAY(67536)	cell	#ERR	6.10.8 constraint Year <= 9956 (67536 used to wrap to 2000)

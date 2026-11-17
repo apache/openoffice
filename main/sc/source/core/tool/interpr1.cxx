@@ -8112,6 +8112,203 @@ void ScInterpreter::ScMidB()
     }
 }
 
+// Convert 1-based byte position to 0-based character index.
+// If the byte position falls inside a DBCS character, returns the index
+// of that character (the caller must handle partial-character boundaries).
+static xub_StrLen lcl_BytePosToCharIndex(const String& aStr, sal_Int32 nBytePos)
+{
+    sal_Int32 nByteCount = 0;
+    xub_StrLen nCharIndex = 0;
+    while (nCharIndex < aStr.Len())
+    {
+        if (IsDBCS(aStr.GetChar(nCharIndex)))
+        {
+            if (nBytePos <= nByteCount + 2)
+                return nCharIndex;
+            nByteCount += 2;
+        }
+        else
+        {
+            if (nBytePos <= nByteCount + 1)
+                return nCharIndex;
+            nByteCount += 1;
+        }
+        ++nCharIndex;
+    }
+    return aStr.Len(); // beyond end
+}
+
+// Convert 0-based character index to 1-based byte position.
+static sal_Int32 lcl_CharIndexToBytePos(const String& aStr, xub_StrLen nCharIndex)
+{
+    sal_Int32 nBytePos = 0;
+    for (xub_StrLen i = 0; i < nCharIndex && i < aStr.Len(); ++i)
+    {
+        if (IsDBCS(aStr.GetChar(i)))
+            nBytePos += 2;
+        else
+            nBytePos += 1;
+    }
+    return nBytePos + 1; // 1-based
+}
+
+void ScInterpreter::ScFindB()
+{
+    RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScFindB" );
+    sal_uInt8 nParamCount = GetByte();
+    if ( MustHaveParamCount( nParamCount, 2, 3 ) )
+    {
+        double fStart = 1.0;
+        if (nParamCount == 3)
+        {
+            fStart = ::rtl::math::approxFloor(GetDouble());
+            if ( fStart < 1.0 )
+            {
+                PushNoValue();
+                return;
+            }
+        }
+        String aFindText = GetString();
+        String aWithinText = GetString();
+
+        sal_Int32 nByteLen = getLengthB(aWithinText);
+        if ( fStart > static_cast<double>(nByteLen) )
+        {
+            PushNoValue();
+            return;
+        }
+
+        // Convert start byte position to character index
+        xub_StrLen nStartChar = lcl_BytePosToCharIndex(aWithinText, (sal_Int32)fStart);
+
+        // Case-sensitive search
+        xub_StrLen nPos = aWithinText.Search( aFindText, nStartChar );
+        if (nPos == STRING_NOTFOUND)
+            PushNoValue();
+        else
+        {
+            // Convert character position to byte position
+            sal_Int32 nBytePos = lcl_CharIndexToBytePos(aWithinText, nPos);
+            PushDouble((double)nBytePos);
+        }
+    }
+}
+
+void ScInterpreter::ScSearchB()
+{
+    RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScSearchB" );
+    sal_uInt8 nParamCount = GetByte();
+    if ( MustHaveParamCount( nParamCount, 2, 3 ) )
+    {
+        double fStart = 1.0;
+        if (nParamCount == 3)
+        {
+            fStart = ::rtl::math::approxFloor(GetDouble());
+            if ( fStart < 1.0 )
+            {
+                PushNoValue();
+                return;
+            }
+        }
+        String aFindText = GetString();
+        String aWithinText = GetString();
+
+        sal_Int32 nByteLen = getLengthB(aWithinText);
+        if ( fStart > static_cast<double>(nByteLen) )
+        {
+            PushNoValue();
+            return;
+        }
+
+        // Convert start byte position to character index
+        xub_StrLen nStartChar = lcl_BytePosToCharIndex(aWithinText, (sal_Int32)fStart);
+        xub_StrLen nEndPos = aWithinText.Len();
+        if ( nStartChar >= nEndPos )
+        {
+            PushNoValue();
+            return;
+        }
+
+        // Case-insensitive search using TextSearch (same as ScSearch)
+        utl::SearchParam::SearchType eSearchType =
+            (MayBeRegExp( aFindText, pDok ) ?
+            utl::SearchParam::SRCH_REGEXP : utl::SearchParam::SRCH_NORMAL);
+        utl::SearchParam sPar(aFindText, eSearchType, sal_False, sal_False, sal_False);
+        utl::TextSearch sT( sPar, *ScGlobal::pCharClass );
+        int nBool = sT.SearchFrwrd(aWithinText, &nStartChar, &nEndPos);
+        if (!nBool)
+            PushNoValue();
+        else
+        {
+            // Convert character position to byte position
+            sal_Int32 nBytePos = lcl_CharIndexToBytePos(aWithinText, nStartChar);
+            PushDouble((double)nBytePos);
+        }
+    }
+}
+
+void ScInterpreter::ScReplaceB()
+{
+    RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScReplaceB" );
+    if ( MustHaveParamCount( GetByte(), 4 ) )
+    {
+        String aNewStr( GetString() );
+        double fCount = ::rtl::math::approxFloor( GetDouble());
+        double fPos   = ::rtl::math::approxFloor( GetDouble());
+        String aOldStr( GetString() );
+
+        if ( fPos < 1.0 || fPos > static_cast<double>(STRING_MAXLEN)
+                || fCount < 0.0 || fCount > static_cast<double>(STRING_MAXLEN) )
+        {
+            PushIllegalArgument();
+            return;
+        }
+
+        sal_Int32 nByteLen = getLengthB(aOldStr);
+        sal_Int32 nStartByte = (sal_Int32) fPos;
+
+        // Clamp start position to end of string + 1 (append at end)
+        if (nStartByte > nByteLen + 1)
+            nStartByte = nByteLen + 1;
+
+        // Convert start byte position to character index
+        xub_StrLen nStartChar = lcl_BytePosToCharIndex(aOldStr, nStartByte);
+
+        // Determine how many bytes from start position to end of string
+        sal_Int32 nBytesFromStart = nByteLen - lcl_CharIndexToBytePos(aOldStr, nStartChar) + 1;
+
+        // Clamp count to available bytes
+        sal_Int32 nCountBytes = (sal_Int32) fCount;
+        if (nCountBytes > nBytesFromStart)
+            nCountBytes = nBytesFromStart;
+
+        // Convert byte count to character count by scanning forward
+        xub_StrLen nCountChars = 0;
+        sal_Int32 nByteCount = 0;
+        xub_StrLen nCharIndex = nStartChar;
+        while (nCharIndex < aOldStr.Len() && nByteCount < nCountBytes)
+        {
+            if (IsDBCS(aOldStr.GetChar(nCharIndex)))
+            {
+                if (nByteCount + 2 > nCountBytes)
+                    break; // would split a DBCS character
+                nByteCount += 2;
+            }
+            else
+            {
+                nByteCount += 1;
+            }
+            ++nCountChars;
+            ++nCharIndex;
+        }
+
+        aOldStr.Erase( nStartChar, nCountChars );
+        if ( CheckStringResultLen( aOldStr, aNewStr ) )
+            aOldStr.Insert( aNewStr, nStartChar );
+        PushString( aOldStr );
+    }
+}
+
 void ScInterpreter::ScRight()
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScRight" );
