@@ -299,3 +299,18 @@ SG.CONV-003-ref	=N(D1)	cell	10	6.13.26 N dereferences a Reference to a scalar (D
 SG.CONV-004-logical	=N(TRUE())	cell	1	6.13.26 N of TRUE is 1
 SG.CONV-004-logical2	=IF(0;TRUE();FALSE())	cell	0	6.3.12 the Number 0 converts to FALSE
 SG.CONV-005-error	=ISERR(1/0)	cell	1	6.13.15 ISERR of a division by zero (TRUE)
+SG.DATEDIF-001-d-days	=DATEDIF(DATE(2024;1;1);DATE(2024;12;31);"d")	cell	365	6.10.3 days between Jan 1 and Dec 31 in leap year
+SG.DATEDIF-002-m-months	=DATEDIF(DATE(2024;1;1);DATE(2025;1;1);"m")	cell	12	6.10.3 complete months between same day consecutive years
+SG.DATEDIF-003-y-years	=DATEDIF(DATE(2024;1;1);DATE(2025;1;1);"y")	cell	1	6.10.3 complete years between same day consecutive years
+SG.DATEDIF-004-same-date	=DATEDIF(DATE(2024;1;1);DATE(2024;1;1);"d")	cell	0	6.10.3 zero interval returns 0
+SG.DATEDIF-005-m-jan-feb	=DATEDIF(DATE(2024;1;1);DATE(2024;2;1);"m")	cell	1	6.10.3 one complete month Jan to Feb
+SG.DATEDIF-006-d-jan-feb29	=DATEDIF(DATE(2024;1;1);DATE(2024;2;29);"d")	cell	59	6.10.3 days from Jan 1 to Feb 29 in leap year
+SG.DATEDIF-007-d-feb29-mar1	=DATEDIF(DATE(2024;2;29);DATE(2024;3;1);"d")	cell	1	6.10.3 one day from Feb 29 to Mar 1 in leap year
+SG.DATEDIF-008-m-jan-jun	=DATEDIF(DATE(2024;1;1);DATE(2024;6;1);"m")	cell	5	6.10.3 five complete months Jan to Jun
+SG.DATEDIF-009-d-jan-jun	=DATEDIF(DATE(2024;1;1);DATE(2024;6;1);"d")	cell	152	6.10.3 days from Jan 1 to Jun 1 in leap year
+SG.DATEDIF-010-md	=DATEDIF(DATE(2024;1;15);DATE(2024;3;10);"md")	cell	24	6.10.3 days ignoring months/years: 10+29-15=24
+SG.DATEDIF-011-ym	=DATEDIF(DATE(2024;1;15);DATE(2024;3;10);"ym")	cell	2	6.10.3 months ignoring years: Mar-Jan=2
+SG.DATEDIF-012-yd	=DATEDIF(DATE(2024;1;15);DATE(2024;3;10);"yd")	cell	55	6.10.3 days ignoring years: day 70 - day 15 = 55
+SG.DATEDIF-013-reverse-d	=DATEDIF(DATE(2024;12;31);DATE(2024;1;1);"d")	cell	-365	6.10.3 reverse date negates forward result
+SG.DATEDIF-014-invalid-format	=DATEDIF(DATE(2024;1;1);DATE(2024;12;31);"x")	cell	#ERR	6.10.3 invalid format string is an error
+SG.DATEDIF-015-empty-format	=DATEDIF(DATE(2024;1;1);DATE(2024;12;31);"")	cell	#ERR	6.10.3 empty format string is an error

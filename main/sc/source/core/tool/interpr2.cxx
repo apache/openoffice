@@ -440,6 +440,156 @@ void ScInterpreter::ScGetDiffDate360()
     }
 }
 
+void ScInterpreter::ScDateDif()
+{
+    RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScDateDif" );
+    if ( MustHaveParamCount( GetByte(), 3 ) )
+    {
+        // Arguments are popped in reverse order: Format, EndDate, StartDate
+        String aFormat = GetString();
+        double nEndDate = GetDouble();
+        double nStartDate = GetDouble();
+
+        if ( nGlobalError )
+        {
+            PushError( nGlobalError );
+            return;
+        }
+
+        // Floor to calendar dates (discard time fractions)
+        nStartDate = ::rtl::math::approxFloor( nStartDate );
+        nEndDate = ::rtl::math::approxFloor( nEndDate );
+
+        const Date* pNullDate = pFormatter->GetNullDate();
+        Date aStart = *pNullDate;
+        aStart += (long) nStartDate;
+        Date aEnd = *pNullDate;
+        aEnd += (long) nEndDate;
+
+        if ( !aStart.IsValid() || !aEnd.IsValid() )
+        {
+            PushIllegalArgument();
+            return;
+        }
+
+        double fResult = 0.0;
+        bool bValidFormat = true;
+
+        if ( aFormat == "d" )
+        {
+            // Calendar day difference
+            fResult = (double)(aEnd - aStart);
+        }
+        else if ( aFormat == "m" )
+        {
+            // Complete calendar months
+            sal_uInt32 nYear1 = aStart.GetYear();
+            sal_uInt32 nMonth1 = aStart.GetMonth();
+            sal_uInt32 nDay1 = aStart.GetDay();
+            sal_uInt32 nYear2 = aEnd.GetYear();
+            sal_uInt32 nMonth2 = aEnd.GetMonth();
+            sal_uInt32 nDay2 = aEnd.GetDay();
+
+            long nMonths = (long)(nYear2 - nYear1) * 12 + (long)(nMonth2 - nMonth1);
+            if ( nDay2 < nDay1 &&
+                 !(aStart.GetDay() == aStart.GetDaysInMonth() &&
+                   aEnd.GetDay() == aEnd.GetDaysInMonth()) )
+                nMonths--;
+            fResult = (double)nMonths;
+        }
+        else if ( aFormat == "y" )
+        {
+            // Complete calendar years
+            sal_uInt32 nYear1 = aStart.GetYear();
+            sal_uInt32 nMonth1 = aStart.GetMonth();
+            sal_uInt32 nDay1 = aStart.GetDay();
+            sal_uInt32 nYear2 = aEnd.GetYear();
+            sal_uInt32 nMonth2 = aEnd.GetMonth();
+            sal_uInt32 nDay2 = aEnd.GetDay();
+
+            long nYears = (long)(nYear2 - nYear1);
+            if ( nMonth2 < nMonth1 || (nMonth2 == nMonth1 && nDay2 < nDay1) )
+                nYears--;
+            fResult = (double)nYears;
+        }
+        else if ( aFormat == "md" )
+        {
+            // Days ignoring months and years
+            sal_uInt32 nDay1 = aStart.GetDay();
+            sal_uInt32 nDay2 = aEnd.GetDay();
+
+            long nDays;
+            if ( nDay2 < nDay1 )
+            {
+                // Borrow days from the previous month
+                sal_uInt32 nPrevMonth = aEnd.GetMonth() - 1;
+                sal_uInt32 nPrevYear = aEnd.GetYear();
+                if ( nPrevMonth < 1 )
+                {
+                    nPrevMonth = 12;
+                    nPrevYear--;
+                }
+                Date aPrevMonth( 1, (sal_uInt16)nPrevMonth, (sal_uInt16)nPrevYear );
+                sal_uInt16 nPrevDays = aPrevMonth.GetDaysInMonth();
+                nDays = (long)nDay2 + (long)nPrevDays - (long)nDay1;
+            }
+            else
+            {
+                nDays = (long)nDay2 - (long)nDay1;
+            }
+            fResult = (double)nDays;
+        }
+        else if ( aFormat == "ym" )
+        {
+            // Months ignoring years
+            sal_uInt32 nMonth1 = aStart.GetMonth();
+            sal_uInt32 nMonth2 = aEnd.GetMonth();
+
+            long nMonths = (long)nMonth2 - (long)nMonth1;
+            if ( nMonths < 0 )
+                nMonths += 12;
+            fResult = (double)nMonths;
+        }
+        else if ( aFormat == "yd" )
+        {
+            // Days ignoring years (day-of-year difference)
+            sal_uInt16 nDoy1 = aStart.GetDayOfYear();
+            sal_uInt16 nDoy2 = aEnd.GetDayOfYear();
+
+            long nDays = (long)nDoy2 - (long)nDoy1;
+            fResult = (double)nDays;
+        }
+        else
+        {
+            bValidFormat = false;
+        }
+
+        if ( !bValidFormat )
+        {
+            PushIllegalArgument();
+            return;
+        }
+
+        // Handle reverse dates (start > end)
+        if ( aStart > aEnd )
+        {
+            if ( aFormat == "md" || aFormat == "ym" || aFormat == "yd" )
+            {
+                // Component formats: absolute difference (Excel compatibility)
+                if ( fResult < 0.0 )
+                    fResult = -fResult;
+            }
+            else
+            {
+                // Forward formats: negate the forward result
+                fResult = -fResult;
+            }
+        }
+
+        PushDouble( fResult );
+    }
+}
+
 void ScInterpreter::ScGetTimeValue()
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScGetTimeValue" );

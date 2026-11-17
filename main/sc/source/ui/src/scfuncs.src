@@ -9528,6 +9528,47 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 	};
 
+	// -=*# Resource for function DATEDIF #*=-
+	Resource SC_OPCODE_DATEDIF
+	{
+		String 1 // Description
+		{
+			Text [ en-US ] = "Calculates the difference between two dates in years, months, or days." ;
+		};
+		ExtraData =
+		{
+			0;
+			ID_FUNCTION_GRP_DATETIME;
+			U2S( HID_FUNC_DATEDIF );
+			3;	0;	0;	0;
+			0;
+		};
+		String 2 // Name of Parameter 1
+		{
+			Text [ en-US ] = "Start_date" ;
+		};
+		String 3 // Description of Parameter 1
+		{
+			Text [ en-US ] = "The start date of the interval." ;
+		};
+		String 4 // Name of Parameter 2
+		{
+			Text [ en-US ] = "End_date" ;
+		};
+		String 5 // Description of Parameter 2
+		{
+			Text [ en-US ] = "The end date of the interval." ;
+		};
+		String 6 // Name of Parameter 3
+		{
+			Text [ en-US ] = "Format" ;
+		};
+		String 7 // Description of Parameter 3
+		{
+			Text [ en-US ] = "The unit for the result: \"y\" years, \"m\" months, \"d\" days, \"md\" days ignoring months and years, \"ym\" months ignoring years, \"yd\" days ignoring years." ;
+		};
+	};
+
 	// -=*# Resource for function FINDB #*=-
 	Resource SC_OPCODE_FINDB
 	{

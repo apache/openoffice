@@ -3772,6 +3772,7 @@ StackVar ScInterpreter::Interpret()
 				case ocFindB            : ScFindB();                    break;
 				case ocSearchB          : ScSearchB();                  break;
 				case ocReplaceB         : ScReplaceB();                 break;
+				case ocDateDif          : ScDateDif();                  break;
                 case ocUnicode          : ScUnicode();                  break;
                 case ocUnichar          : ScUnichar();                  break;
                 case ocTTT              : ScTTT();                      break;

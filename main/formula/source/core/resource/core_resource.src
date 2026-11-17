@@ -268,6 +268,7 @@ Resource RID_STRLIST_FUNCTION_NAMES_ENGLISH_ODFF
 	String SC_OPCODE_FINDB         { Text = "FINDB" ; };
 	String SC_OPCODE_SEARCHB       { Text = "SEARCHB" ; };
 	String SC_OPCODE_REPLACEB      { Text = "REPLACEB" ; };
+	String SC_OPCODE_DATEDIF       { Text = "DATEDIF" ; };
 	String SC_OPCODE_TEXT { Text = "TEXT" ; };
 	String SC_OPCODE_SUBSTITUTE { Text = "SUBSTITUTE" ; };
 	String SC_OPCODE_REPT { Text = "REPT" ; };
@@ -616,6 +617,7 @@ Resource RID_STRLIST_FUNCTION_NAMES_ENGLISH
 	String SC_OPCODE_FINDB { Text = "FINDB" ; };
 	String SC_OPCODE_SEARCHB { Text = "SEARCHB" ; };
 	String SC_OPCODE_REPLACEB { Text = "REPLACEB" ; };
+	String SC_OPCODE_DATEDIF { Text = "DATEDIF" ; };
 	String SC_OPCODE_TEXT { Text = "TEXT" ; };
 	String SC_OPCODE_SUBSTITUTE { Text = "SUBSTITUTE" ; };
 	String SC_OPCODE_REPT { Text = "REPT" ; };
@@ -1611,6 +1613,10 @@ Resource RID_STRLIST_FUNCTION_NAMES
 	String SC_OPCODE_REPLACEB
     {
         Text [ en-US ] = "REPLACEB" ;
+    };
+	String SC_OPCODE_DATEDIF
+    {
+        Text [ en-US ] = "DATEDIF" ;
     };
 	String SC_OPCODE_TEXT
     {

@@ -49,32 +49,46 @@ Rationale: These three functions were entirely missing from the byte-
   B-function patterns.
 
 
-Group 2 — Date/Time Compatibility (DATEDIF, ISOWEEKNUM)
--------------------------------------------------------
+Group 2 — Date/Time Compatibility (DATEDIF, ISOWEEKNUM) — DATEDIF COMPLETED
+--------------------------------------------------------------------------------
 
-Recommended sequence:
-  1. DATEDIF:
-     a. Add SC_OPCODE_DATEDIF to compiler.hrc, core_resource.src.
-     b. Implement ScDateDif() in interpr*.cxx with full unit code
-        support ("d", "m", "y", "md", "yd", "ym") and edge cases
-        (Feb 29, month boundaries, end<start).
-     c. Register help entry (English name).
-     d. Add Excel BIFF/OOXML import/export mappings.
-     e. Add test cases.
-  2. ISOWEEKNUM:
-     a. Verify ScGetWeekOfYear() (interpr2.cxx:227) does NOT implement
-        ISO 8601 (only SUN/MON start via Date::GetWeekOfYear()).
-     b. Implement ISO 8601 week numbering (week 1 = first Thursday,
-        Monday start, 52/53 week years) — either in ScGetWeekOfYear()
-        with mode=21 or as a separate code path.
-     c. Add English help entry (currently only German KALENDERWOCHE).
-     d. Verify Excel BIFF import mapping (currently not in BIFF tables).
-     e. Add test cases.
+DATEDIF Status: Implemented in H.3.
 
-Rationale: DATEDIF is entirely missing. ISOWEEKNUM has an opcode but
-  wrong semantics (not ISO 8601). These belong together as a date/time
-  compatibility group. DATEDIF is not ODF-defined but is an ODF Large
-  Group equivalent (Excel function).
+Changes:
+  1. Added SC_OPCODE_DATEDIF = 415 to compiler.hrc. Moved STOP_2_PAR to 416
+     and LAST_OPCODE_ID to 415. Existing opcodes unchanged.
+  2. Added ocDateDif to opcode.hxx enum.
+  3. Registered "DATEDIF" name in core_resource.src (ODF and Excel sections,
+     plus localized en-US text).
+  4. Added HID_FUNC_DATEDIF to helpids.h and hidother.src.
+  5. Added dispatch case in interpr4.cxx (line 3775).
+  6. Implemented ScInterpreter::ScDateDif() in interpr2.cxx (line 443)
+     implementing ODF 1.4 §6.10.3 with all six formats (y, m, d, md, ym, yd).
+  7. Added Function Wizard entry in scfuncs.src (Start_date, End_date, Format
+     parameters, ID_FUNCTION_GRP_DATETIME group).
+  8. Added 15 regression test cases to calcval-cases14.tsv covering
+     basic days/months/years, same date, month boundaries, leap year dates,
+     component formats (md/ym/yd), reverse dates, and invalid formats.
+
+Semantic design: See datedif-semantic-design.md for detailed algorithm
+specification including reverse-date policy, time fraction handling, and
+month/year boundary semantics.
+
+ISOWEEKNUM: Still pending (see below).
+
+Recommended sequence for ISOWEEKNUM:
+  1. Verify ScGetWeekOfYear() (interpr2.cxx:227) does NOT implement
+     ISO 8601 (only SUN/MON start via Date::GetWeekOfYear()).
+  2. Implement ISO 8601 week numbering (week 1 = first Thursday,
+     Monday start, 52/53 week years) — either in ScGetWeekOfYear()
+     with mode=21 or as a separate code path.
+  3. Add English help entry (currently only German KALENDERWOCHE).
+  4. Verify Excel BIFF import mapping (currently not in BIFF tables).
+  5. Add test cases.
+
+Rationale: DATEDIF was entirely missing from the date/time compatibility
+  group. Now implemented following ODF 1.4 §6.10.3 with documented
+  Excel-compatibility edge cases. ISOWEEKNUM remains pending.
 
 
 Group 3 — Financial Odd-Period Functions (ODDFPRICE, ODDFYIELD)
@@ -229,11 +243,10 @@ P1 (Critical — ODF-required behavior missing):
   - ERROR.TYPE: Error-code mapping to ODF return values unverified
   - NUMBERVALUE: RESOLVED — evaluator implemented in H.1.1
   - FINDB/REPLACEB/SEARCHB: RESOLVED — evaluators implemented in H.2
-  - NUMBERVALUE: RESOLVED — evaluator implemented in H.1.1
+  - DATEDIF: RESOLVED — evaluator implemented in H.3
 
 P1 (High — semantic gaps):
   - ISOWEEKNUM: ISO 8601 week numbering not implemented
-  - DATEDIF: Entirely missing (import → #NAME!)
 
 P2 (Excel compatibility):
   - ODDFPRICE/ODDFYIELD: Analysis AddIn only, not native

@@ -144,49 +144,53 @@ Confidence: HIGH — source evidence complete; runtime verification
 4. DATEDIF
 ----------
 
-ODF 1.4: Not defined by ODF 1.4 Part 4. Excel-specific function.
-ODF group: Not applicable (Excel Large Group equivalent).
+ODF 1.4: Defined by ODF 1.4 Part 4, Section 6.10.3.
+ODF group: Large Group (Excel compatibility function).
 
 A. Function registration
-  - Native opcode: NONE. No SC_OPCODE_DATEDIF in compiler.hrc.
-  - Parser name: None registered as a native function.
-  - Function-name-to-opcode mapping: Mapped to ocNoName in
-    main/sc/source/filter/excel/xlformula.cxx line 342:
-      { ocNoName, 351, 3, 3, V, { VR }, EXC_FUNCFLAG_IMPORTONLY, 0 },  // DATEDIF
-    This is in saFuncTable_5 (BIFF5/BIFF7), marked IMPORTONLY.
-  - Evaluator implementation: None. No ScDateDif() in interpr*.cxx.
-  - Function parameter metadata: None (native).
-  - Help entry: None. No HID_FUNC_DATEDIF.
-  - ODF formula namespace mapping: None.
-  - Excel import mapping: BIFF5/BIFF7 import only, function ID 351,
-    import-only flag. The comment at xlformula.cxx:324 states:
-    "Unsupported functions: DATEDIF, DATESTRING, NUMBERSTRING."
-  - Excel export mapping: None (import-only).
+  - Native opcode: SC_OPCODE_DATEDIF = 415 (compiler.hrc line 415).
+  - Parser name: "DATEDIF" registered in core_resource.src (ODF and
+    Excel sections).
+  - Function-name-to-opcode mapping: ocDateDif → DATEDIF (opcode.hxx
+    line 309).
+  - Evaluator implementation: ScInterpreter::ScDateDif() at
+    main/sc/source/core/tool/interpr2.cxx:443. Dispatch via
+    `case ocDateDif : ScDateDif();` at interpr4.cxx:3775.
+  - Function parameter metadata: Via native function resource.
+  - Help entry: HID_FUNC_DATEDIF (helpids.h line 768+, hidother.src).
+  - ODF formula namespace mapping: DATEDIF in ODF section of
+    core_resource.src.
+  - Excel import mapping: BIFF5/BIFF7 function ID 351 still mapped to
+    ocNoName in xlformula.cxx line 342 (import-only, produces #NAME!).
+    Native opcode not yet wired to BIFF import table.
+  - Excel export mapping: None.
 
-B. Actual implementation: Absent. Import maps to ocNoName which
-  produces #NAME! error at evaluation time.
+B. Actual implementation: ScInterpreter::ScDateDif() at interpr2.cxx:443.
+  Implements ODF 1.4 §6.10.3 with all six formats (y, m, d, md, ym, yd).
+  Uses pFormatter->GetNullDate() for document-aware serial conversion.
+  Calendar arithmetic (not day-count approximation) for month/year
+  computations. Floor-based handling of time fractions. Case-sensitive
+  format matching. Reverse-date handling: y/m/d negated, md/ym/yd
+  absolute (Excel compatibility policy).
+  Detailed algorithm in audit/openformula-function-gaps/datedif-semantic-design.md.
 
 C. Format compatibility
-  - XLS import: Recognized in BIFF5/BIFF7 as function ID 351 but
-    mapped to ocNoName → #NAME! error. Not evaluated.
+  - XLS import: BIFF5/BIFF7 function ID 351 maps to ocNoName → #NAME!.
+    Native opcode not yet wired to BIFF import table.
   - XLS import (BIFF8): Not in saFuncTable_8. Not recognized.
   - XLSX import: Not in saFuncTable_Oox. Not recognized.
-  - XLS export: None (import-only).
+  - XLS export: None.
   - XLSX export: None.
 
-D. Documentation: Absent.
+D. Documentation: Help entry exists (HID_FUNC_DATEDIF).
+  Function Wizard entry exists in main/sc/source/ui/src/scfuncs.src
+  (SC_OPCODE_DATEDIF resource block with parameter names and descriptions).
+  Help topic not yet added under main/helpcontent2/.
 
-Related infrastructure: AOO has date difference AddIn functions
-  registered in odffmap.cxx lines 32–37:
-    WEEKS, MONTHS, YEARS (ORG.OPENOFFICE.* namespace) via
-    DateFunctions AddIn (getDiffWeeks, getDiffMonths, getDiffYears).
-  These are not DATEDIF but provide related date-difference
-  functionality. DAYS (ocGetDiffDate) and DAYS360
-  (ocGetDiffDate360) are native.
-
-Failure type: Function entirely missing; import produces #NAME!.
-Priority: P1 (ODF Large Group equivalent; Excel compatibility gap).
-Confidence: HIGH.
+Failure type: None — implementation complete at source level.
+Priority: Resolved (was P1).
+Confidence: HIGH — source evidence complete; runtime verification
+            deferred (no build available).
 
 
 5. ISOWEEKNUM
