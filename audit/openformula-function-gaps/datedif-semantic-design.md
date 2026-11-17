@@ -193,3 +193,44 @@ Files to Modify
 8. main/sc/util/hidother.src — Register Help ID
 9. test/odf-validate/calcval-cases14.tsv — Regression tests
 10. audit/openformula-function-gaps/ — Update audit records
+
+
+H.3.1 Implementation/Review Notes (2026-11-17)
+----------------------------------------------
+Implementation: `ScInterpreter::ScDateDif()` in
+`main/sc/source/core/tool/interpr2.cxx`, declared in
+`main/sc/source/core/inc/interpre.hxx`, dispatched from
+`main/sc/source/core/tool/interpr4.cxx` (`ocDateDif`), with resources/help IDs
+registered and BIFF5/7 import mapped import-only (`EXC_FUNCFLAG_IMPORTONLY`) in
+`main/sc/source/filter/excel/xlformula.cxx` (ID 351 → `ocDateDif`).
+
+Semantics as implemented (ODF 1.4 §6.10.3):
+- Exactly 3 arguments: StartDate, EndDate, Format (popped Format, EndDate,
+  StartDate).
+- Date serials floored to calendar dates via `::rtl::math::approxFloor()`; time
+  fractions discarded. Calendar conversion uses `pFormatter->GetNullDate()`.
+- Invalid/unsupported date serials (`Date::IsValid() == false`) → illegal
+  argument error.
+- Format is case-sensitive: only `y`, `m`, `d`, `md`, `ym`, `yd` accepted;
+  any other value (including `Y/M/D` and empty string) → illegal argument error.
+- Forward intervals (`StartDate <= EndDate`): `d` = calendar day difference;
+  `y` = complete calendar years; `m` = complete calendar months with
+  end-of-month substitution when the start day is the last day of its month;
+  `ym` = `m - y*12` (months remaining after complete years);
+  `md` = day difference ignoring months/years, borrowing from the start date's
+  month when end day < start day;
+  `yd` = days from the anniversary (start date shifted forward by complete
+  years, adjusted for Feb 29 in non-leap anniversary years) to end date.
+- Reverse intervals (`StartDate > EndDate`): computed on the swapped forward
+  interval. `y`, `m`, `d` return the negated forward result; `md`, `ym`, `yd`
+  return a non-negative component value (Excel-compatible policy; ODF 1.4 does
+  not define reverse intervals). This is an implementation constraint/policy,
+  not a normative ODF requirement.
+
+Validation notes:
+- Source-level review/static verification only in this environment; Calc and
+  calcval runtime tests cannot be executed because `libsot.so` / `sc`/`scaddins`
+  are not built (GCC 15.2 vs AOO 510 ABI mismatch, no older GCC, no sudo).
+- `SG.DATEDIF-010-md` expected value corrected to `26` (borrow from start
+  month January: `10 + 31 - 15`) and DATEDIF regression coverage expanded in
+  `test/odf-validate/calcval-cases14.tsv`.

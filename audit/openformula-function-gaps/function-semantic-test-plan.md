@@ -64,25 +64,28 @@ Purpose: Confirm function is entirely absent.
 4. DATEDIF
 ----------
 
-Not defined by ODF 1.4. Excel function for date differences.
+ODF 1.4 Part 4 §6.10.3. Excel-compatible date difference function.
 
-Test cases:
+Test cases (implemented as `SG.DATEDIF-*` in `test/odf-validate/calcval-cases14.tsv`):
   a) =DATEDIF(DATE(2024;1;1);DATE(2024;12;31);"d") — days difference (365)
   b) =DATEDIF(DATE(2024;1;1);DATE(2025;1;1);"m") — months difference (12)
   c) =DATEDIF(DATE(2024;1;1);DATE(2025;1;1);"y") — years difference (1)
-  d) =DATEDIF(DATE(2024;2;28);DATE(2024;3;1);"d") — 2 days (leap year)
-  e) =DATEDIF(DATE(2024;3;1);DATE(2024;2;28);"d") — end before start (error expected)
-  f) =DATEDIF(DATE(2024;1;1);DATE(2024;1;1);"d") — same date (0)
-  g) =DATEDIF(DATE(2024;1;1);DATE(2024;12;31);"yd") — days ignoring years (364)
-  h) =DATEDIF(DATE(2024;1;1);DATE(2024;12;31);"ym") — months ignoring years (11)
-  i) =DATEDIF(DATE(2024;1;1);DATE(2024;12;31);"md") — days ignoring months/years (30)
+  d) =DATEDIF(DATE(2024;2;29);DATE(2024;3;1);"d") — leap-day interval
+  e) =DATEDIF(DATE(2024;12;31);DATE(2024;1;1);"d") — reverse interval → -365 (y/m/d negated)
+  f) =DATEDIF(DATE(2024;1;1);DATE(2024;1;1);"d"/"m"/"y"/"md"/"ym"/"yd") — same date (0)
+  g) =DATEDIF(DATE(2024;1;15);DATE(2024;3;10);"md") — days ignoring months/years with borrow (26)
+  h) =DATEDIF(DATE(2024;1;15);DATE(2024;3;10);"ym") — months ignoring years after complete months (1)
+  i) =DATEDIF(DATE(2024;1;15);DATE(2024;3;10);"yd") — days ignoring years from anniversary (55)
   j) =DATEDIF(DATE(2024;1;1);DATE(2024;12;31);"x") — invalid unit string (error)
-  k) =DATEDIF(DATE(2024;1;1);DATE(2024;12;31)) — wrong arg count (error)
-  l) XLS import (BIFF5/7) of DATEDIF — import maps to ocNoName → #NAME! (confirmed by source)
-  m) XLS import (BIFF8) of DATEDIF — import failure (not in BIFF8 table)
-  n) XLSX import of DATEDIF — import failure (not in OOXML table)
+  k) =DATEDIF(DATE(2024;1;1);DATE(2024;12;31);"") — empty format (error)
+  l) =DATEDIF(DATE(2024;1;1);DATE(2024;12;31);"D") — case-sensitive format (error)
+  m) end-of-month / leap-anniversary / multi-year / reverse-component / time-fraction edge cases
+  n) BIFF5/7 import of DATEDIF — maps to `ocDateDif` (import-only, ID 351); BIFF8/OOXML not mapped
+  o) wrong arg count / invalid date serials — error (reviewed in code)
 
-Purpose: Confirm DATEDIF is entirely missing; BIFF5/7 import produces #NAME!.
+Purpose: Validate implemented DATEDIF semantics and reverse-interval policy.
+Source-level review completed in H.3.1; runtime execution pending build
+availability (`sc`/`scaddins` not built in this environment).
 
 
 5. ISOWEEKNUM

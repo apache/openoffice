@@ -633,6 +633,7 @@ void ScGetDate();
 void ScGetTime();
 void ScGetDiffDate();
 void ScGetDiffDate360();
+void ScDateDif();
 void ScCurrent();
 void ScStyle();
 void ScDde();

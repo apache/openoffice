@@ -472,66 +472,60 @@ void ScInterpreter::ScDateDif()
             return;
         }
 
+        // Work forward for calculation; apply sign for reverse intervals at end.
+        bool bReverse = (aStart > aEnd);
+        Date aFrom = bReverse ? aEnd : aStart;
+        Date aTo = bReverse ? aStart : aEnd;
+
+        sal_uInt32 nYear1  = aFrom.GetYear();
+        sal_uInt32 nMonth1 = aFrom.GetMonth();
+        sal_uInt32 nDay1   = aFrom.GetDay();
+        sal_uInt32 nYear2  = aTo.GetYear();
+        sal_uInt32 nMonth2 = aTo.GetMonth();
+        sal_uInt32 nDay2   = aTo.GetDay();
+
+        // Complete calendar years (ODF 1.4 §6.10.3 "y")
+        long nYears = (long)nYear2 - (long)nYear1;
+        if ( nMonth2 < nMonth1 || (nMonth2 == nMonth1 && nDay2 < nDay1) )
+            nYears--;
+
+        // Complete calendar months (ODF 1.4 §6.10.3 "m")
+        long nMonths = ((long)nYear2 - (long)nYear1) * 12
+                     + ((long)nMonth2 - (long)nMonth1);
+        if ( nDay2 < nDay1 )
+        {
+            // If start is the last day of its month, treat the end month as
+            // reached (end-of-month substitution); otherwise decrement.
+            if ( nDay1 != aFrom.GetDaysInMonth() )
+                nMonths--;
+        }
+
         double fResult = 0.0;
         bool bValidFormat = true;
 
         if ( aFormat == "d" )
         {
-            // Calendar day difference
-            fResult = (double)(aEnd - aStart);
+            // Calendar day difference (ODF 1.4 §6.10.3)
+            fResult = (double)(aTo - aFrom);
         }
         else if ( aFormat == "m" )
         {
-            // Complete calendar months
-            sal_uInt32 nYear1 = aStart.GetYear();
-            sal_uInt32 nMonth1 = aStart.GetMonth();
-            sal_uInt32 nDay1 = aStart.GetDay();
-            sal_uInt32 nYear2 = aEnd.GetYear();
-            sal_uInt32 nMonth2 = aEnd.GetMonth();
-            sal_uInt32 nDay2 = aEnd.GetDay();
-
-            long nMonths = (long)(nYear2 - nYear1) * 12 + (long)(nMonth2 - nMonth1);
-            if ( nDay2 < nDay1 &&
-                 !(aStart.GetDay() == aStart.GetDaysInMonth() &&
-                   aEnd.GetDay() == aEnd.GetDaysInMonth()) )
-                nMonths--;
             fResult = (double)nMonths;
         }
         else if ( aFormat == "y" )
         {
-            // Complete calendar years
-            sal_uInt32 nYear1 = aStart.GetYear();
-            sal_uInt32 nMonth1 = aStart.GetMonth();
-            sal_uInt32 nDay1 = aStart.GetDay();
-            sal_uInt32 nYear2 = aEnd.GetYear();
-            sal_uInt32 nMonth2 = aEnd.GetMonth();
-            sal_uInt32 nDay2 = aEnd.GetDay();
-
-            long nYears = (long)(nYear2 - nYear1);
-            if ( nMonth2 < nMonth1 || (nMonth2 == nMonth1 && nDay2 < nDay1) )
-                nYears--;
             fResult = (double)nYears;
         }
         else if ( aFormat == "md" )
         {
-            // Days ignoring months and years
-            sal_uInt32 nDay1 = aStart.GetDay();
-            sal_uInt32 nDay2 = aEnd.GetDay();
-
+            // Days ignoring months and years (ODF 1.4 §6.10.3).
+            // If the end day is before the start day, borrow days from the
+            // start date's month (Excel-compatible / common ODF interpretation).
             long nDays;
             if ( nDay2 < nDay1 )
             {
-                // Borrow days from the previous month
-                sal_uInt32 nPrevMonth = aEnd.GetMonth() - 1;
-                sal_uInt32 nPrevYear = aEnd.GetYear();
-                if ( nPrevMonth < 1 )
-                {
-                    nPrevMonth = 12;
-                    nPrevYear--;
-                }
-                Date aPrevMonth( 1, (sal_uInt16)nPrevMonth, (sal_uInt16)nPrevYear );
-                sal_uInt16 nPrevDays = aPrevMonth.GetDaysInMonth();
-                nDays = (long)nDay2 + (long)nPrevDays - (long)nDay1;
+                sal_uInt16 nStartDays = aFrom.GetDaysInMonth();
+                nDays = (long)nDay2 + (long)nStartDays - (long)nDay1;
             }
             else
             {
@@ -541,23 +535,24 @@ void ScInterpreter::ScDateDif()
         }
         else if ( aFormat == "ym" )
         {
-            // Months ignoring years
-            sal_uInt32 nMonth1 = aStart.GetMonth();
-            sal_uInt32 nMonth2 = aEnd.GetMonth();
-
-            long nMonths = (long)nMonth2 - (long)nMonth1;
-            if ( nMonths < 0 )
-                nMonths += 12;
-            fResult = (double)nMonths;
+            // Months ignoring years (ODF 1.4 §6.10.3): complete months
+            // remaining after subtracting complete years.
+            long nYM = nMonths - nYears * 12;
+            if ( nYM < 0 )
+                nYM = 0;
+            fResult = (double)nYM;
         }
         else if ( aFormat == "yd" )
         {
-            // Days ignoring years (day-of-year difference)
-            sal_uInt16 nDoy1 = aStart.GetDayOfYear();
-            sal_uInt16 nDoy2 = aEnd.GetDayOfYear();
-
-            long nDays = (long)nDoy2 - (long)nDoy1;
-            fResult = (double)nDays;
+            // Days ignoring years (ODF 1.4 §6.10.3): days between the start
+            // date shifted forward by the number of complete years and the end
+            // date, in the end date's year context.
+            sal_uInt16 nAnnYear = (sal_uInt16)((long)nYear2 - nYears);
+            Date aAnniversary( (sal_uInt16)nDay1, (sal_uInt16)nMonth1, nAnnYear );
+            // Handle anniversary like Feb 29 in a non-leap anniversary year.
+            if ( !aAnniversary.IsValid() && nMonth1 == 2 && nDay1 == 29 )
+                aAnniversary = Date( 28, 2, nAnnYear );
+            fResult = (double)(aTo - aAnniversary);
         }
         else
         {
@@ -570,18 +565,17 @@ void ScInterpreter::ScDateDif()
             return;
         }
 
-        // Handle reverse dates (start > end)
-        if ( aStart > aEnd )
+        // ODF 1.4 §6.10.3 does not define reverse intervals; apply
+        // Excel-compatible policy: negate y/m/d, keep md/ym/yd non-negative.
+        if ( bReverse )
         {
             if ( aFormat == "md" || aFormat == "ym" || aFormat == "yd" )
             {
-                // Component formats: absolute difference (Excel compatibility)
                 if ( fResult < 0.0 )
                     fResult = -fResult;
             }
             else
             {
-                // Forward formats: negate the forward result
                 fResult = -fResult;
             }
         }

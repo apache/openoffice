@@ -201,6 +201,7 @@ XHPFILES = \
    func_day.xhp \
    func_days.xhp \
    func_days360.xhp \
+   func_datedif.xhp \
    func_eastersunday.xhp \
    func_edate.xhp \
    func_eomonth.xhp \

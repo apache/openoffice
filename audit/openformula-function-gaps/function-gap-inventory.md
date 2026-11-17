@@ -12,7 +12,7 @@ Summary table of all 15 audited functions.
 | FINDB | Present | ocFinDB (412) | ScFindB() | Yes (HID_FUNC_FINDB) | No | N/A | No | No | No | No | None — implementation complete at source level | Resolved (was P1) | HIGH |
 | REPLACEB | Present | ocReplaceB (414) | ScReplaceB() | Yes (HID_FUNC_REPLACEB) | No | N/A | No | No | No | No | None — implementation complete at source level | Resolved (was P1) | HIGH |
 | SEARCHB | Present | ocSearchB (413) | ScSearchB() | Yes (HID_FUNC_SEARCHB) | No | N/A | No | No | No | No | None — implementation complete at source level | Resolved (was P1) | HIGH |
-| DATEDIF | Present | ocDateDif (415) | ScDateDif() | Yes (HID_FUNC_DATEDIF) | Yes | Large Group | Yes(BIFF5/7,ID351,ocDateDif) | No | No | No | None — implementation complete at source level | Resolved (was P1) | HIGH |
+| DATEDIF | Present | ocDateDif (415) | ScDateDif() | Yes (HID_FUNC_DATEDIF) | Yes | Large Group | Yes(BIFF5/7,ID351,ocDateDif,import-only) | No | No | No | Reverse-interval/component policy Excel-compatible (ODF undefined); runtime validation pending (no sc build) | Resolved/H.3.1 reviewed (was P1) | HIGH |
 | ISOWEEKNUM | Partial (wrong semantics) | ocWeek | ScGetWeekOfYear() | German only (KALENDERWOCHE) | No | N/A | No | Yes (ODF table, import-only) | No | _xlfnodf.ISOWEEKNUM | ISO 8601 semantics not implemented (only SUN/MON start) | P1 | MEDIUM |
 | DDE | Present (platform-dependent) | ocDde (369) | ScDde() | Yes (HID_FUNC_DDE) | No | N/A | No | No | No | No | Platform-dependent; no file-format mapping | DEFER | HIGH |
 | ODDFPRICE | Present (AddIn) | None | getOddfprice() (AddIn) | Yes (HID_AAI_FUNC_ODDFPRICE) | No | N/A | No | No | No | No | Analysis AddIn, not native | P2 | HIGH |
