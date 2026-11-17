@@ -100,47 +100,38 @@ Rationale: ISOWEEKNUM needed separate opcode and evaluator for ISO 8601
 Group 3 — Financial Odd-Period Functions (ODDFPRICE, ODDFYIELD)
 ---------------------------------------------------------------
 
-Status: COMPLETED in H.7 (commit 405b9d3120).
+Status: DEFERRED — pending financial function registration policy.
 
-Changes:
-  1. Removed THROW_RTE from GetOddfprice and GetOddfyield (analysishelper.cxx).
-  2. Implemented ODDFPRICE per ODF 1.2 §6.12.31:
-     - Short first period (dfc < e): T1+T2+T3-T4 formula
-     - Long first period (dfc >= e): quasi-coupon walk backwards from first coupon
-     - Fixed memory management (no new[]/delete mismatch)
-     - Fixed quasi-coupon walk direction (backwards from first coupon)
-     - Added fRedemp > 0 validation
-  3. Implemented ODDFYIELD per ODF 1.2 §6.12.32:
-     - Bracketed secant/Illinois method with 1e-12 tolerance
-     - Proper bracket expansion for yields > 100%
-     - Removed 1% price tolerance
-  4. Added fRedemp > 0 validation in UNO entry point (financial.cxx).
-  5. Preserved Analysis AddIn mechanism; no native opcode added yet.
+Rationale: H.6.1 opcode registration was reverted (commit c4aad856fa).
+  A broader financial function registration policy must be established
+  before allocating native opcodes to ODDFPRICE/ODDFYIELD. This includes:
+  1. Inventory of native vs AddIn-only financial functions.
+  2. Consistent criteria for opcode allocation, import/export,
+     Function Wizard, and help registration.
+  3. Decision on whether ODDFPRICE/ODDFYIELD should receive native
+     implementations or remain AddIn-only.
 
-Rationale: The original implementations were disabled with THROW_RTE (#87380).
-  The commented code had critical defects (memory management, wrong walk direction,
-  1% tolerance). Now functional for short first period; long period needs
-  quasi-coupon overlap completion.
+Current state: Implemented as Analysis AddIn only
+  (financial.cxx:404–426, analysishelper.cxx:1011–1188).
+  No native opcode, no Function Wizard, no English help.
 
-PRIORITY: P2 (Excel compatibility gap) — RESOLVED for short first period.
+PRIORITY: P2 (Excel compatibility gap). DEFERRED until policy defined.
 
 
 Group 4 — RRI (Rate of Return)
 ------------------------------
 
-Status: RECLASSIFIED — no implementation defect.
+Recommended sequence:
+  1. Review ScZGZ() (interpr2.cxx:1198) for missing validation:
+     zero/negative present value, zero periods, overflow/underflow.
+  2. Add input validation (PushIllegalArgument for invalid inputs).
+  3. Add English help entry (currently German ZGZ only).
+  4. Verify Excel import/export mapping (_xlfnodf.RRI may cause
+     Excel compatibility issues — Excel has RRI natively).
+  5. Add test cases.
 
-Finding: Prior validation concerns (zero/negative PV, zero periods, overflow)
-  were traced to a test-data/spreadsheet error, not an implementation defect.
-  ScZGZ() (interpr2.cxx:1198) correctly implements pow(fV/fP, 1/n) - 1.
-
-Remaining separate audit items:
-  1. English help entry (currently German ZGZ only).
-  2. Export naming (_xlfnodf.RRI vs Excel native RRI).
-  3. Test cases to confirm correct behavior.
-
-Rationale: Implementation is correct; prior discrepancy was test-data error.
-  Only documentation and interoperability gaps remain.
+Rationale: Implementation exists but lacks validation. Help only in
+  German. Export naming may cause Excel compatibility issues.
 
 
 Group 5 — ERROR.TYPE
@@ -267,8 +258,8 @@ P1 (High — semantic gaps):
   - ISOWEEKNUM: RESOLVED in H.5
 
 P2 (Excel compatibility):
-  - ODDFPRICE/ODDFYIELD: RESOLVED in H.7 (AddIn implementation fixed)
-  - RRI: No implementation defect; German help and export naming remain
+  - ODDFPRICE/ODDFYIELD: DEFERRED — pending financial registration policy
+  - RRI: Validation gaps, German help only
   - GETPIVOTDATA: XLSX mapping missing
   - FDIST/FINV: Export naming (_xlfnodf), param count (FDIST)
 
