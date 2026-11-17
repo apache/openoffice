@@ -308,8 +308,6 @@ enum OpCodeEnum
 		ocReplaceB          = SC_OPCODE_REPLACEB,
 		ocDateDif           = SC_OPCODE_DATEDIF,
 		ocIsoWeekNum        = SC_OPCODE_ISOWEEKNUM,
-		ocOddfprice         = SC_OPCODE_ODDFPRICE,
-		ocOddfyield         = SC_OPCODE_ODDFYIELD,
 	// Matrix functions
 		ocMatValue			= SC_OPCODE_MAT_VALUE,
 		ocMatDet			= SC_OPCODE_MAT_DET,
