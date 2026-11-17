@@ -221,6 +221,7 @@ XHPFILES = \
    func_weekday.xhp \
    func_weeknum.xhp \
    func_weeknumadd.xhp \
+   func_isoweeknum.xhp \
    func_workday.xhp \
    func_year.xhp \
    func_yearfrac.xhp \

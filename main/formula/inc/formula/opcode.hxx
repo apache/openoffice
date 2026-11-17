@@ -307,6 +307,7 @@ enum OpCodeEnum
 		ocSearchB           = SC_OPCODE_SEARCHB,
 		ocReplaceB          = SC_OPCODE_REPLACEB,
 		ocDateDif           = SC_OPCODE_DATEDIF,
+		ocIsoWeekNum        = SC_OPCODE_ISOWEEKNUM,
 	// Matrix functions
 		ocMatValue			= SC_OPCODE_MAT_VALUE,
 		ocMatDet			= SC_OPCODE_MAT_DET,

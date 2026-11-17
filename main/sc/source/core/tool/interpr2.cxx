@@ -237,6 +237,24 @@ void ScInterpreter::ScGetWeekOfYear()
     }
 }
 
+void ScInterpreter::ScIsoWeekNum()
+{
+    RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScIsoWeekNum" );
+    if ( MustHaveParamCount( GetByte(), 1 ) )
+    {
+        Date aDate = *(pFormatter->GetNullDate());
+        aDate += (long)::rtl::math::approxFloor(GetDouble());
+        if ( !aDate.IsValid() )
+        {
+            PushIllegalArgument();
+            return;
+        }
+        // ISO 8601: Monday=1, week 1 = week containing Jan 4 (first Thursday)
+        // Use GetWeekOfYear with MONDAY start and 4 days minimum in first week
+        PushInt( (int) aDate.GetWeekOfYear( MONDAY, 4 ) );
+    }
+}
+
 static void lcl_EasterSunday( sal_Int16 nYear, sal_Int16& rDay, sal_Int16& rMonth )
 {
     // don't worry, be happy :)

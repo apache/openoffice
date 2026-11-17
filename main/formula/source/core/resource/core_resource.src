@@ -334,6 +334,7 @@ Resource RID_STRLIST_FUNCTION_NAMES_ENGLISH_ODFF
 	String SC_OPCODE_BETA_DIST { Text = "BETADIST" ; };
 	String SC_OPCODE_BETA_INV { Text = "BETAINV" ; };
 	String SC_OPCODE_WEEK { Text = "ISOWEEKNUM" ; };
+	String SC_OPCODE_ISOWEEKNUM { Text = "ISOWEEKNUM" ; };
 	String SC_OPCODE_EASTERSUNDAY { Text = "EASTERSUNDAY" ; };
 	String SC_OPCODE_GET_DAY_OF_WEEK { Text = "WEEKDAY" ; };
 	String SC_OPCODE_NO_NAME { Text = "#NAME!" ; };
@@ -683,6 +684,7 @@ Resource RID_STRLIST_FUNCTION_NAMES_ENGLISH
 	String SC_OPCODE_BETA_DIST { Text = "BETADIST" ; };
 	String SC_OPCODE_BETA_INV { Text = "BETAINV" ; };
 	String SC_OPCODE_WEEK { Text = "WEEKNUM" ; };
+	String SC_OPCODE_ISOWEEKNUM { Text = "ISOWEEKNUM" ; };
 	String SC_OPCODE_EASTERSUNDAY { Text = "EASTERSUNDAY" ; };
 	String SC_OPCODE_GET_DAY_OF_WEEK { Text = "WEEKDAY" ; };
 	String SC_OPCODE_NO_NAME { Text = "#NAME!" ; };
@@ -1617,6 +1619,10 @@ Resource RID_STRLIST_FUNCTION_NAMES
 	String SC_OPCODE_DATEDIF
     {
         Text [ en-US ] = "DATEDIF" ;
+    };
+	String SC_OPCODE_ISOWEEKNUM
+    {
+        Text [ en-US ] = "ISOWEEKNUM" ;
     };
 	String SC_OPCODE_TEXT
     {

@@ -91,26 +91,30 @@ availability (`sc`/`scaddins` not built in this environment).
 5. ISOWEEKNUM
 -------------
 
-ODF 1.4: Not confirmed as ODF-defined (verify against final spec).
-ISO 8601 week numbering: Monday first, week 1 = first Thursday.
+ODF 1.4: Defined by ODF 1.4 Part 4. ISO 8601 week numbering.
 
-Test cases:
+Test cases (implemented as `SG.ISO-*` in `test/odf-validate/calcval-cases14.tsv`):
   a) =ISOWEEKNUM(DATE(2024;1;1)) — Monday 2024-01-01 is ISO week 1 (expected: 1)
-  b) =ISOWEEKNUM(DATE(2024;12;30)) — ISO week 53 (expected: 53)
+  b) =ISOWEEKNUM(DATE(2024;12;30)) — ISO week 1 of 2025 (expected: 1)
   c) =ISOWEEKNUM(DATE(2024;12;31)) — ISO week 1 of 2025 (expected: 1)
   d) =ISOWEEKNUM(DATE(2025;12;29)) — ISO week 1 of 2026 (expected: 1)
-  e) =ISOWEEKNUM(DATE(2024;1;1);1) — 2 args with mode flag (current impl supports SUN/MON only)
-  f) =ISOWEEKNUM("not a date") — invalid input (error)
-  g) =ISOWEEKNUM() — wrong arg count (error)
-  h) =ISOWEEKNUM(DATE(2024;6;15);21) — ISO mode (21) if supported; current impl ignores mode value beyond SUN/MON
+  e) =ISOWEEKNUM(DATE(2024;6;15)) — mid-year week 24
+  f) =ISOWEEKNUM(DATE(2020;12;31)) — ISO week 53 (year with 53 weeks)
+  g) =ISOWEEKNUM(DATE(2021;12;31)) — ISO week 52 (year with 52 weeks)
+  h) =ISOWEEKNUM(DATE(2024;2;29)) — leap day week 9
+  i) =ISOWEEKNUM(DATE(2000;1;1)) — century boundary week 52
+  j) =ISOWEEKNUM(DATE(2024;6;15)+0.5) — time fraction ignored (floor)
+  k) =ISOWEEKNUM("not a date") — invalid input (error)
+  l) =ISOWEEKNUM() — wrong arg count (error)
 
-Expected: Current implementation ScGetWeekOfYear() (interpr2.cxx:227)
-  only supports SUNDAY (flag=1) or MONDAY (flag!=1) via
-  Date::GetWeekOfYear(). ISO 8601 week numbering (week 1 = first
-  Thursday) is NOT implemented. Tests (a)-(d) will produce incorrect
-  results for dates near year boundaries.
+Fixed: Added separate opcode SC_OPCODE_ISOWEEKNUM (416) and
+  ScIsoWeekNum() (interpr2.cxx) implementing ISO 8601 via
+  Date::GetWeekOfYear(MONDAY, 4). Takes exactly 1 argument (date).
+  Does not affect existing WEEKNUM (ScGetWeekOfYear) which keeps
+  2-argument SUN/MON mode semantics.
 
-Purpose: Confirm ISO 8601 semantic gap.
+Purpose: Validate ISO 8601 week numbering at year boundaries,
+  leap years, century boundaries, and time fractions.
 
 
 6. DDE

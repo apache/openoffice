@@ -610,6 +610,7 @@ void ScGetMonth();
 void ScGetDay();
 void ScGetDayOfWeek();
 void ScGetWeekOfYear();
+void ScIsoWeekNum();
 void ScEasterSunday();
 void ScGetHour();
 void ScGetMin();

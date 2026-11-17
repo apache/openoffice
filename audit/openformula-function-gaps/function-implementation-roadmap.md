@@ -78,21 +78,23 @@ Semantic design: See datedif-semantic-design.md for detailed algorithm
 specification including reverse-date policy, time fraction handling, and
 month/year boundary semantics.
 
-ISOWEEKNUM: Still pending (see below).
+ISOWEEKNUM: COMPLETED in H.5 (commit on openformula branch).
 
-Recommended sequence for ISOWEEKNUM:
-  1. Verify ScGetWeekOfYear() (interpr2.cxx:227) does NOT implement
-     ISO 8601 (only SUN/MON start via Date::GetWeekOfYear()).
-  2. Implement ISO 8601 week numbering (week 1 = first Thursday,
-     Monday start, 52/53 week years) — either in ScGetWeekOfYear()
-     with mode=21 or as a separate code path.
-  3. Add English help entry (currently only German KALENDERWOCHE).
-  4. Verify Excel BIFF import mapping (currently not in BIFF tables).
-  5. Add test cases.
+Changes:
+  1. Added SC_OPCODE_ISOWEEKNUM = 416 (compiler.hrc, opcode.hxx).
+  2. Added ScIsoWeekNum() in interpr2.cxx using Date::GetWeekOfYear(MONDAY, 4).
+  3. Added dispatch case ocIsoWeekNum in interpr4.cxx.
+  4. Registered ISOWEEKNUM name in core_resource.src (ODF and Excel namespaces).
+  5. Added function wizard resource in scfuncs.src (1 argument, no mode).
+  6. Added HID_FUNC_ISOWEEKNUM in helpids.h and hidother.src.
+  7. Added help topic func_isoweeknum.xhp, registered in makefile and 04060102.xhp.
+  8. Added calcval test cases SG.ISO-01 through SG.ISO-25 covering year
+     boundaries, week 53, leap years, century boundaries, time fractions,
+     and error cases.
+  9. WEEKNUM (ScGetWeekOfYear) unchanged: retains 2-arg SUN/MON mode.
 
-Rationale: DATEDIF was entirely missing from the date/time compatibility
-  group. Now implemented following ODF 1.4 §6.10.3 with documented
-  Excel-compatibility edge cases. ISOWEEKNUM remains pending.
+Rationale: ISOWEEKNUM needed separate opcode and evaluator for ISO 8601
+  compliance (1 arg, Monday start, week 1 = first Thursday). Now resolved.
 
 
 Group 3 — Financial Odd-Period Functions (ODDFPRICE, ODDFYIELD)

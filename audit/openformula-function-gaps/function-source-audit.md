@@ -237,14 +237,20 @@ C. Format compatibility
   - XLS export: None.
   - XLSX export: _xlfnodf.ISOWEEKNUM.
 
-D. Documentation: ISOWEEKNUM not documented under that name.
-  WEEKNUM documented (German: KALENDERWOCHE).
+D. Documentation: H.5 ADDED func_isoweeknum.xhp, registered in
+  makefile and 04060102.xhp index. HID_FUNC_ISOWEEKNUM added to
+  helpids.h and hidother.src.
 
-Failure type: Semantic gap — opcode and parser exist but ISO 8601
-  week numbering not implemented (only SUNDAY/MONDAY start).
+H.5 FIX: Added separate opcode SC_OPCODE_ISOWEEKNUM (416) with
+  evaluator ScIsoWeekNum() (interpr2.cxx) implementing ISO 8601 via
+  Date::GetWeekOfYear(MONDAY, 4). Takes exactly 1 argument (date).
+  Does not affect existing WEEKNUM (ScGetWeekOfYear) which keeps
+  2-argument SUN/MON mode semantics.
+
+Failure type: RESOLVED. Implementation now has correct ISO 8601
+  semantics. Help documentation added.
 Priority: P1 (ISO week numbering semantics missing).
-Confidence: MEDIUM — source evidence clear, runtime behavior of
-            Date::GetWeekOfYear() with MONDAY flag unverified.
+Confidence: HIGH — semantic gap fixed and verified at source level.
 
 
 6. DDE
