@@ -25,40 +25,73 @@ claimed as verified.
 1. FINDB
 --------
 
-Not defined by ODF 1.4. Excel-specific byte-oriented find.
+Not defined by ODF 1.4. Excel-specific byte-oriented find (DBCS model).
 
-Test cases:
-  a) =FINDB("abc";"a") — parser rejection expected (unknown function)
-  b) =FINDB("abc";"b";1) — unknown function
-  c) XLS import of workbook containing FINDB — import failure expected
-  d) XLSX export of workbook containing FINDB — export failure expected
+Test cases (implemented as `SG.FINDB-*` in `test/odf-validate/calcval-cases14.tsv`):
+  a) =FINDB("b";"abc") — basic byte position (2)
+  b) =FINDB("b";"abc";2) — start position (2)
+  c) =FINDB("x";"abc") — not found (#VALUE!)
+  d) =FINDB("B";"abc") — case-sensitive (#VALUE!)
+  e) =FINDB("a";"abc";0) — start < 1 (#VALUE!)
+  f) =FINDB("a";"abc";10) — start > len (#VALUE!)
+  g) =FINDB("中";"中国") — DBCS first char (1, byte pos 1)
+  h) =FINDB("国";"中国") — DBCS second char (3)
+  i) =FINDB("b";"a中b") — mixed ASCII/DBCS (4)
+  j) =FINDB("国";"中国";3) — DBCS boundary start (3)
 
-Purpose: Confirm function is entirely absent (no opcode, no parser,
-         no evaluator).
+Implemented: ScFindB() (interpr1.cxx:8155) uses AOO DBCS byte model
+  (DBCS=2 bytes, ASCII=1) via getLengthB, lcl_BytePosToCharIndex,
+  lcl_CharIndexToBytePos. Case-sensitive, no wildcards.
+
+Purpose: Confirm FINDB byte-position semantics and DBCS handling.
 
 
 2. REPLACEB
 -----------
 
-Not defined by ODF 1.4. Excel-specific byte-oriented replace.
+Not defined by ODF 1.4. Excel-specific byte-oriented replace (DBCS model).
 
-Test cases:
-  a) =REPLACEB("abc";2;1;"x") — parser rejection expected
-  b) XLS import of workbook containing REPLACEB — import failure expected
+Test cases (implemented as `SG.REPLACEB-*` in `test/odf-validate/calcval-cases14.tsv`):
+  a) =REPLACEB("abc";2;1;"x") — basic replace (axc)
+  b) =REPLACEB("abc";4;0;"d") — append at end (abcd)
+  c) =REPLACEB("abcdef";2;2;"xy") — multi-byte (axydef)
+  d) =REPLACEB("中国";1;2;"中") — DBCS replace first char
+  e) =REPLACEB("abc";0;1;"x") — start < 1 (#VALUE!)
+  f) =REPLACEB("abc";2;-1;"x") — negative count (#VALUE!)
+  g) =REPLACEB("abc";10;1;"x") — start > len clamps (abcx)
+  h) =REPLACEB("中国";3;2;"国") — DBCS boundary (中国)
+  i) =REPLACEB("abc";1;3;"xyz") — replace all (xyz)
+  j) =REPLACEB("abc";2;0;"x") — zero count inserts (axbc)
 
-Purpose: Confirm function is entirely absent.
+Implemented: ScReplaceB() (interpr1.cxx:8250) uses AOO DBCS byte model
+  via getLengthB, lcl_BytePosToCharIndex, lcl_CharIndexToBytePos.
+  Clamps position/count, handles DBCS boundaries.
+
+Purpose: Confirm REPLACEB byte-position replace and boundary handling.
 
 
 3. SEARCHB
 ----------
 
-Not defined by ODF 1.4. Excel-specific byte-oriented search.
+Not defined by ODF 1.4. Excel-specific byte-oriented search (DBCS model).
 
-Test cases:
-  a) =SEARCHB("b";"abc") — parser rejection expected
-  b) XLS import of workbook containing SEARCHB — import failure expected
+Test cases (implemented as `SG.SEARCHB-*` in `test/odf-validate/calcval-cases14.tsv`):
+  a) =SEARCHB("b";"abc") — basic byte position (2)
+  b) =SEARCHB("B";"abc") — case-insensitive (2)
+  c) =SEARCHB("a?c";"abc") — wildcard ? (1)
+  d) =SEARCHB("a*c";"abc") — wildcard * (1)
+  e) =SEARCHB("b";"abc";2) — start position (2)
+  f) =SEARCHB("x";"abc") — not found (#VALUE!)
+  g) =SEARCHB("中";"中国") — DBCS first char (1)
+  h) =SEARCHB("国";"中国") — DBCS second char (3)
+  i) =SEARCHB("b";"a中b") — mixed ASCII/DBCS (4)
+  j) =SEARCHB("a.c";"abc") — regex dot (1)
 
-Purpose: Confirm function is entirely absent.
+Implemented: ScSearchB() (interpr1.cxx:8197) uses AOO DBCS byte model
+  via getLengthB, lcl_BytePosToCharIndex, lcl_CharIndexToBytePos.
+  Case-insensitive, supports wildcards/regex via utl::TextSearch.
+
+Purpose: Confirm SEARCHB byte-position search and wildcard behavior.
 
 
 4. DATEDIF
