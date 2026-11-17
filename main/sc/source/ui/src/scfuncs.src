@@ -9394,14 +9394,14 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		{
 			Text [ en-US ] = "Converts text to a number using explicitly specified decimal and group separators." ;
 		};
-		ExtraData =
-		{
-			1; // TODO: implementation and unsuppress
-			ID_FUNCTION_GRP_TEXT;
-			U2S( HID_FUNC_NUMBERVALUE );
-			3;	0;	0;
-			0;
-		};
+ExtraData =
+	{
+		0;
+		ID_FUNCTION_GRP_TEXT;
+		U2S( HID_FUNC_NUMBERVALUE );
+		3;	0;	0;
+		0;
+	};
 		String 2 // Name of Parameter 1
 		{
 			Text [ en-US ] = "text" ;

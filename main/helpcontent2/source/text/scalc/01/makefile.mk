@@ -207,6 +207,7 @@ XHPFILES = \
    func_eomonth.xhp \
    func_errortype.xhp \
    func_hour.xhp \
+   func_numbervalue.xhp \
    func_iferror.xhp \
    func_ifna.xhp \
    func_minute.xhp \
@@ -214,6 +215,9 @@ XHPFILES = \
    func_networkdays.xhp \
    func_now.xhp \
    func_second.xhp \
+   func_findb.xhp \
+   func_replaceb.xhp \
+   func_searchb.xhp \
    func_skewp.xhp \
    func_time.xhp \
    func_timevalue.xhp \
