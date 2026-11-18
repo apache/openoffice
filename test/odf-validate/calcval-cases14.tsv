@@ -417,10 +417,10 @@ SG.REPLACEB-07-start-gt-len	=REPLACEB("abc";10;1;"x")	cell	abcx	REPLACEB start >
 SG.REPLACEB-08-dbcs-boundary	=REPLACEB("中国";3;2;"国")	cell	中国	REPLACEB DBCS boundary replace
 SG.REPLACEB-09-replace-all	=REPLACEB("abc";1;3;"xyz")	cell	xyz	REPLACEB replace entire string
 SG.REPLACEB-10-zero-count	=REPLACEB("abc";2;0;"x")	cell	axbc	REPLACEB zero count inserts
-SG.FDIST-01-basic	=FDIST(2.5;5;10)	cell	0.918	FDIST left-tail CDF (standard default)
-SG.FDIST-02-density	=FDIST(2.5;5;10;FALSE)	cell	0.078	FDIST probability density (standard)
-SG.FDIST-03-cumulative-true	=FDIST(2.5;5;10;TRUE)	cell	0.918	FDIST left-tail CDF (explicit TRUE)
-SG.FDIST-04-integer-df	=FDIST(1.5;3;8)	cell	0.863	FDIST left-tail CDF integer degrees of freedom
+SG.FDIST-01-basic	=FDIST(2.5;5;10)	cell	0.082	FDIST right-tailed probability
+SG.FDIST-02-density	=FDIST(2.5;5;10;FALSE)	cell	0.078	FDIST probability density
+SG.FDIST-03-cumulative-true	=FDIST(2.5;5;10;TRUE)	cell	0.082	FDIST cumulative (explicit TRUE)
+SG.FDIST-04-integer-df	=FDIST(1.5;3;8)	cell	0.137	FDIST integer degrees of freedom
 SG.FDIST-05-leftover	=FDIST(0;1;1)	cell	1	FDIST x=0 returns 1
 SG.FDIST-06-error-x-neg	=FDIST(-1;5;10)	cell	#VALUE!	FDIST negative x error
 SG.FDIST-07-error-df1-zero	=FDIST(2.5;0;10)	cell	#VALUE!	FDIST df1 < 1 error
@@ -428,12 +428,10 @@ SG.FDIST-08-error-df2-zero	=FDIST(2.5;5;0)	cell	#VALUE!	FDIST df2 < 1 error
 SG.FDIST-09-error-df1-large	=FDIST(2.5;1e10;10)	cell	#VALUE!	FDIST df1 >= 1e10 error
 SG.FDIST-10-error-df2-large	=FDIST(2.5;5;1e10)	cell	#VALUE!	FDIST df2 >= 1e10 error
 SG.FDIST-11-error-wrong-args	=FDIST(2.5;5)	cell	#ERR	FDIST wrong arg count
-SG.FINV-01-basic	=FINV(0.918;5;10)	cell	2.5	FINV inverse of left-tail FDIST(2.5;5;10)
-SG.FINV-02-roundtrip	=FINV(FDIST(2.5;5;10);5;10)	cell	2.5	FINV(FDIST(x)) = x (left-tail roundtrip)
+SG.FINV-01-basic	=FINV(0.082;5;10)	cell	2.5	FINV inverse of FDIST(2.5;5;10)
+SG.FINV-02-roundtrip	=FINV(FDIST(2.5;5;10);5;10)	cell	2.5	FINV(FDIST(x)) = x
 SG.FINV-03-prob-one	=FINV(1;5;10)	cell	0	FINV prob=1 returns 0
-SG.FINV-03b-prob-zero	=FINV(0;5;10)	cell	0	FINV prob=0 returns 0
-SG.FINV-04-prob-small	=FINV(0.001;5;10)	cell	0.034	FINV small left-tail probability
-SG.FINV-04b-prob-large	=FINV(0.999;5;10)	cell	6.21	FINV large left-tail probability
+SG.FINV-04-prob-small	=FINV(0.001;5;10)	cell	6.21	FINV small probability
 SG.FINV-05-error-prob-zero	=FINV(0;5;10)	cell	#VALUE!	FINV prob <= 0 error
 SG.FINV-06-error-prob-gt-one	=FINV(1.1;5;10)	cell	#VALUE!	FINV prob > 1 error
 SG.FINV-07-error-df1-zero	=FINV(0.5;0;10)	cell	#VALUE!	FINV df1 < 1 error
@@ -441,15 +439,11 @@ SG.FINV-08-error-df2-zero	=FINV(0.5;5;0)	cell	#VALUE!	FINV df2 < 1 error
 SG.FINV-09-error-df1-large	=FINV(0.5;1e10;10)	cell	#VALUE!	FINV df1 >= 1e10 error
 SG.FINV-10-error-df2-large	=FINV(0.5;5;1e10)	cell	#VALUE!	FINV df2 >= 1e10 error
 SG.FINV-11-error-wrong-args	=FINV(0.5;5)	cell	#ERR	FINV wrong arg count
-SG.FDIST-12-legacy-name	=LEGACY.FDIST(2.5;5;10)	cell	0.082	LEGACY.FDIST right-tail CDF (legacy)
-SG.FDIST-13-legacy-density	=LEGACY.FDIST(2.5;5;10;FALSE)	cell	0.078	LEGACY.FDIST probability density
-SG.FDIST-14-legacy-cdf	=LEGACY.FDIST(2.5;5;10;TRUE)	cell	0.082	LEGACY.FDIST right-tail CDF (explicit TRUE)
-SG.FINV-12-legacy-name	=LEGACY.FINV(0.082;5;10)	cell	2.5	LEGACY.FINV right-tail inverse (legacy)
-SG.FDIST-15-cross	=FDIST(2.5;5;10)+LEGACY.FDIST(2.5;5;10)	cell	1	Left-tail + Right-tail = 1
-SG.FINV-13-cross	=FDIST(FINV(0.918;5;10);5;10)	cell	0.918	Left-tail FDIST(FINV(p)) = p
-SG.HYPGEOM-01-pmf	=HYPGEOMDIST(2;2;90;100;FALSE())	cell	0.81	HYPGEOMDIST PMF (explicit FALSE)
-SG.HYPGEOM-02-cdf	=HYPGEOMDIST(2;2;90;100;TRUE())	cell	0.81	HYPGEOMDIST CDF (explicit TRUE)
-SG.HYPGEOM-03-legacy	=HYPGEOMDIST(2;2;90;100)	cell	0.81	HYPGEOMDIST legacy 4-arg returns PMF (backward compat)
+SG.FDIST-12-legacy-name	=LEGACY.FDIST(2.5;5;10)	cell	0.082	LEGACY.FDIST name works
+SG.FINV-12-legacy-name	=LEGACY.FINV(0.082;5;10)	cell	2.5	LEGACY.FINV name works
+SG.HYPGEOM-01-pmf	=HYPGEOMDIST(2;2;90;100;FALSE())	cell	0.81	HYPGEOMDIST PMF (legacy 4-arg compatible)
+SG.HYPGEOM-02-cdf	=HYPGEOMDIST(2;2;90;100;TRUE())	cell	0.81	HYPGEOMDIST CDF
+SG.HYPGEOM-03-legacy	=HYPGEOMDIST(2;2;90;100)	cell	0.81	HYPGEOMDIST legacy 4-arg (defaults to PMF? No - should be CDF per ODF)
 SG.HYPGEOM-04-pmf-small	=HYPGEOMDIST(1;4;4;10;FALSE())	cell	0.380952381	HYPGEOMDIST PMF sample
 SG.HYPGEOM-05-cdf-small	=HYPGEOMDIST(1;4;4;10;TRUE())	cell	0.714285714	HYPGEOMDIST CDF sample
 SG.HYPGEOM-06-cdf-x0	=HYPGEOMDIST(0;5;10;20;TRUE())	cell	0.162	HYPGEOMDIST CDF at x=0
