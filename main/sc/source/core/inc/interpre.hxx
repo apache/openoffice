@@ -782,12 +782,14 @@ void ScLogNormDist();
 void ScLogNormInv();
 void ScTDist();
 void ScFDist();
+void ScLegacyFDist();
 void ScChiDist();   // for LEGACY.CHIDIST, returns right tail
 void ScChiSqDist(); // returns left tail or density
 void ScChiSqInv(); //invers to CHISQDIST
 void ScWeibull();
 void ScBetaDist();
 void ScFInv();
+void ScLegacyFInv();
 void ScTInv();
 void ScChiInv();
 void ScBetaInv();

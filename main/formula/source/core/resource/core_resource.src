@@ -283,7 +283,8 @@ Resource RID_STRLIST_FUNCTION_NAMES_ENGLISH_ODFF
 	String SC_OPCODE_HYP_GEOM_DIST { Text = "HYPGEOMDIST" ; };
 	String SC_OPCODE_LOG_NORM_DIST { Text = "LOGNORMDIST" ; };
 	String SC_OPCODE_T_DIST { Text = "TDIST" ; };
-	String SC_OPCODE_F_DIST { Text = "LEGACY.FDIST" ; };
+	String SC_OPCODE_F_DIST { Text = "FDIST" ; };
+	String SC_OPCODE_LEGACY_F_DIST { Text = "LEGACY.FDIST" ; };
 	String SC_OPCODE_CHI_DIST { Text = "LEGACY.CHIDIST" ; };
 	String SC_OPCODE_WEIBULL { Text = "WEIBULL" ; };
 	String SC_OPCODE_NEG_BINOM_VERT { Text = "NEGBINOMDIST" ; };
@@ -327,7 +328,8 @@ Resource RID_STRLIST_FUNCTION_NAMES_ENGLISH_ODFF
 	String SC_OPCODE_GAMMA_DIST { Text = "GAMMADIST" ; };
 	String SC_OPCODE_GAMMA_INV { Text = "GAMMAINV" ; };
 	String SC_OPCODE_T_INV { Text = "TINV" ; };
-	String SC_OPCODE_F_INV { Text = "LEGACY.FINV" ; };
+	String SC_OPCODE_F_INV { Text = "FINV" ; };
+	String SC_OPCODE_LEGACY_F_INV { Text = "LEGACY.FINV" ; };
 	String SC_OPCODE_CHI_TEST { Text = "LEGACY.CHITEST" ; };
 	String SC_OPCODE_LOG_INV { Text = "LOGINV" ; };
 	String SC_OPCODE_TABLE_OP { Text = "MULTIPLE.OPERATIONS" ; };
@@ -1696,6 +1698,10 @@ Resource RID_STRLIST_FUNCTION_NAMES
 	{
 		Text [ en-US ] = "FDIST" ;
 	};
+	String SC_OPCODE_LEGACY_F_DIST
+	{
+		Text [ en-US ] = "LEGACY.FDIST" ;
+	};
 	String SC_OPCODE_CHI_DIST
 	{
 		Text [ en-US ] = "CHIDIST" ;
@@ -1875,6 +1881,10 @@ Resource RID_STRLIST_FUNCTION_NAMES
 	String SC_OPCODE_F_INV
 	{
 		Text [ en-US ] = "FINV" ;
+	};
+	String SC_OPCODE_LEGACY_F_INV
+	{
+		Text [ en-US ] = "LEGACY.FINV" ;
 	};
 	String SC_OPCODE_CHI_TEST
 	{

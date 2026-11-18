@@ -370,6 +370,8 @@ enum OpCodeEnum
 		ocGammaInv			= SC_OPCODE_GAMMA_INV,
 		ocTInv				= SC_OPCODE_T_INV,
 		ocFInv				= SC_OPCODE_F_INV,
+		ocLegacyFDist		= SC_OPCODE_LEGACY_F_DIST,
+		ocLegacyFInv		= SC_OPCODE_LEGACY_F_INV,
 		ocChiTest			= SC_OPCODE_CHI_TEST,
 		ocLogInv			= SC_OPCODE_LOG_INV,
 		ocTableOp			= SC_OPCODE_TABLE_OP,
