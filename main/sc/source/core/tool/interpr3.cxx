@@ -669,11 +669,22 @@ double ScInterpreter::GetFDist(double x, double fF1, double fF2)
     double alpha = fF2/2.0;
     double beta = fF1/2.0;
     return (GetBetaDist(arg, alpha, beta));
-/*
-    double Z = (pow(fF,1.0/3.0)*(1.0-2.0/(9.0*fF2)) - (1.0-2.0/(9.0*fF1))) /
-               sqrt(2.0/(9.0*fF1) + pow(fF,2.0/3.0)*2.0/(9.0*fF2));
-    return (0.5-gauss(Z));
-*/
+}
+
+double ScInterpreter::GetFDistDens(double x, double fF1, double fF2)
+{
+    RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::GetFDistDens" );
+    // F-distribution PDF:
+    // f(x; d1, d2) = (d1/d2)^(d1/2) * x^(d1/2 - 1) * (1 + (d1/d2)*x)^(-(d1+d2)/2) / B(d1/2, d2/2)
+    if (x <= 0.0)
+        return 0.0;
+    double d1 = fF1;
+    double d2 = fF2;
+    double log_pdf = (d1/2.0) * log(d1/d2)
+                   + (d1/2.0 - 1.0) * log(x)
+                   - ((d1 + d2)/2.0) * log(1.0 + (d1/d2)*x)
+                   - log(GetBeta(d1/2.0, d2/2.0));
+    return exp(log_pdf);
 }
 
 double ScInterpreter::GetTDist(double T, double fDF)
@@ -1588,17 +1599,29 @@ void ScInterpreter::ScTDist()
 void ScInterpreter::ScFDist()
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScFDist" );
-    if ( !MustHaveParamCount( GetByte(), 3 ) )
+    if ( !MustHaveParamCount( GetByte(), 3, 4 ) )
         return;
     double fF2 = ::rtl::math::approxFloor(GetDouble());
     double fF1 = ::rtl::math::approxFloor(GetDouble());
     double fF  = GetDouble();
+    double fCum = 1.0; // default to cumulative = TRUE
+    if (GetByte() == 4)
+        fCum = GetDouble();
     if (fF < 0.0 || fF1 < 1.0 || fF2 < 1.0 || fF1 >= 1.0E10 || fF2 >= 1.0E10)
     {
         PushIllegalArgument();
         return;
     }
-    PushDouble(GetFDist(fF, fF1, fF2));
+    if (fCum == 0.0)
+    {
+        // Probability density function
+        PushDouble(GetFDistDens(fF, fF1, fF2));
+    }
+    else
+    {
+        // Cumulative distribution function (default)
+        PushDouble(GetFDist(fF, fF1, fF2));
+    }
 }
 
 void ScInterpreter::ScChiDist()

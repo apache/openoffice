@@ -39,14 +39,14 @@
 </bookmark><comment>mw added one entry</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_FINV" id="bm_id3146113" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3145388" role="heading" level="2" l10n="U">FINV</paragraph>
-<paragraph xml-lang="en-US" id="par_id3155089" role="paragraph" l10n="U"><ahelp hid="HID_FUNC_FINV">Returns the inverse of the F probability distribution.</ahelp> The F distribution is used for F tests in order to set the relation between two differing data sets.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3155089" role="paragraph" l10n="U"><ahelp hid="HID_FUNC_FINV">Returns the inverse of the right-tailed F probability distribution.</ahelp></paragraph>
 <paragraph xml-lang="en-US" id="hd_id3153816" role="heading" level="3" l10n="U">Syntax</paragraph>
 <paragraph xml-lang="en-US" id="par_id3153068" role="code" l10n="U">FINV(Number; DegreesFreedom1; DegreesFreedom2)</paragraph>
-<paragraph xml-lang="en-US" id="par_id3146866" role="paragraph" l10n="U"><emph>Number</emph> is probability value for which the inverse F distribution is to be calculated.</paragraph>
-<paragraph xml-lang="en-US" id="par_id3153914" role="paragraph" l10n="U"><emph>DegreesFreedom1</emph> is the number of degrees of freedom in the numerator of the F distribution.</paragraph>
-<paragraph xml-lang="en-US" id="par_id3148607" role="paragraph" l10n="U"><emph>DegreesFreedom2</emph> is the number of degrees of freedom in the denominator of the F distribution.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3146866" role="paragraph" l10n="U"><emph>Number</emph> is the probability value for which the inverse F distribution is to be calculated. Must be > 0 and <= 1.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3153914" role="paragraph" l10n="U"><emph>DegreesFreedom1</emph> is the degrees of freedom in the numerator of the F distribution. Must be an integer >= 1.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3148607" role="paragraph" l10n="U"><emph>DegreesFreedom2</emph> is the degrees of freedom in the denominator of the F distribution. Must be an integer >= 1.</paragraph>
 <paragraph xml-lang="en-US" id="hd_id3156021" role="heading" level="3" l10n="U">Example</paragraph>
-<paragraph xml-lang="en-US" id="par_id3145073" role="paragraph" l10n="U"><item type="input">=FINV(0.5;5;10)</item> yields 0.93.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3145073" role="paragraph" l10n="U"><item type="input">=FINV(0.082; 5; 10)</item> returns 2.5.</paragraph>
 </section>
 <section id="fisher">
 <bookmark xml-lang="en-US" branch="index" id="bm_id3150888">
@@ -93,16 +93,18 @@
 <bookmark xml-lang="en-US" branch="index" id="bm_id3150372">
 <bookmark_value>FDIST function</bookmark_value>
 </bookmark>
-<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_FVERT" id="bm_id3149722" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_FDIST" id="bm_id3149722" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3150372" role="heading" level="2" l10n="U">FDIST</paragraph>
-<paragraph xml-lang="en-US" id="par_id3152981" role="paragraph" l10n="U"><ahelp hid="HID_FUNC_FVERT">Calculates the values of an F distribution.</ahelp></paragraph>
+<paragraph xml-lang="en-US" id="par_id3152981" role="paragraph" l10n="U"><ahelp hid="HID_FUNC_FDIST">Returns the right-tailed probability of the F distribution.</ahelp></paragraph>
 <paragraph xml-lang="en-US" id="hd_id3150484" role="heading" level="3" l10n="U">Syntax</paragraph>
-<paragraph xml-lang="en-US" id="par_id3145826" role="code" l10n="U">FDIST(Number; DegreesFreedom1; DegreesFreedom2)</paragraph>
-<paragraph xml-lang="en-US" id="par_id3150461" role="paragraph" l10n="U"><emph>Number</emph> is the value for which the F distribution is to be calculated.</paragraph>
-<paragraph xml-lang="en-US" id="par_id3150029" role="paragraph" l10n="U"><emph>degreesFreedom1</emph> is the degrees of freedom in the numerator in the F distribution.</paragraph>
-<paragraph xml-lang="en-US" id="par_id3146877" role="paragraph" l10n="U"><emph>degreesFreedom2</emph> is the degrees of freedom in the denominator in the F distribution.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3145826" role="code" l10n="U">FDIST(Number; DegreesFreedom1; DegreesFreedom2 [; Cumulative])</paragraph>
+<paragraph xml-lang="en-US" id="par_id3150461" role="paragraph" l10n="U"><emph>Number</emph> is the value for which the F distribution is to be calculated. Must be non-negative.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3150029" role="paragraph" l10n="U"><emph>DegreesFreedom1</emph> is the degrees of freedom in the numerator of the F distribution. Must be an integer >= 1.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3146877" role="paragraph" l10n="U"><emph>DegreesFreedom2</emph> is the degrees of freedom in the denominator of the F distribution. Must be an integer >= 1.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3155709" role="paragraph" l10n="U"><emph>Cumulative</emph> (optional) is a logical value that determines the form of the function. If TRUE (default), FDIST returns the cumulative distribution function; if FALSE, it returns the probability density function.</paragraph>
 <paragraph xml-lang="en-US" id="hd_id3147423" role="heading" level="3" l10n="U">Example</paragraph>
-<paragraph xml-lang="en-US" id="par_id3150696" role="paragraph" l10n="U"><item type="input">=FDIST(0.8;8;12)</item> yields 0.61.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3150696" role="paragraph" l10n="U"><item type="input">=FDIST(2.5; 5; 10)</item> returns 0.082.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3155712" role="paragraph" l10n="U"><item type="input">=FDIST(2.5; 5; 10; FALSE)</item> returns the probability density at 2.5.</paragraph>
 </section>
 <section id="gamma">
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_GAMMA" id="bm_id0119200903221254" localize="false"/>

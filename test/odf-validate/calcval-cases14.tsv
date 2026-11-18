@@ -417,3 +417,27 @@ SG.REPLACEB-07-start-gt-len	=REPLACEB("abc";10;1;"x")	cell	abcx	REPLACEB start >
 SG.REPLACEB-08-dbcs-boundary	=REPLACEB("中国";3;2;"国")	cell	中国	REPLACEB DBCS boundary replace
 SG.REPLACEB-09-replace-all	=REPLACEB("abc";1;3;"xyz")	cell	xyz	REPLACEB replace entire string
 SG.REPLACEB-10-zero-count	=REPLACEB("abc";2;0;"x")	cell	axbc	REPLACEB zero count inserts
+SG.FDIST-01-basic	=FDIST(2.5;5;10)	cell	0.082	FDIST right-tailed probability
+SG.FDIST-02-density	=FDIST(2.5;5;10;FALSE)	cell	0.078	FDIST probability density
+SG.FDIST-03-cumulative-true	=FDIST(2.5;5;10;TRUE)	cell	0.082	FDIST cumulative (explicit TRUE)
+SG.FDIST-04-integer-df	=FDIST(1.5;3;8)	cell	0.137	FDIST integer degrees of freedom
+SG.FDIST-05-leftover	=FDIST(0;1;1)	cell	1	FDIST x=0 returns 1
+SG.FDIST-06-error-x-neg	=FDIST(-1;5;10)	cell	#VALUE!	FDIST negative x error
+SG.FDIST-07-error-df1-zero	=FDIST(2.5;0;10)	cell	#VALUE!	FDIST df1 < 1 error
+SG.FDIST-08-error-df2-zero	=FDIST(2.5;5;0)	cell	#VALUE!	FDIST df2 < 1 error
+SG.FDIST-09-error-df1-large	=FDIST(2.5;1e10;10)	cell	#VALUE!	FDIST df1 >= 1e10 error
+SG.FDIST-10-error-df2-large	=FDIST(2.5;5;1e10)	cell	#VALUE!	FDIST df2 >= 1e10 error
+SG.FDIST-11-error-wrong-args	=FDIST(2.5;5)	cell	#ERR	FDIST wrong arg count
+SG.FINV-01-basic	=FINV(0.082;5;10)	cell	2.5	FINV inverse of FDIST(2.5;5;10)
+SG.FINV-02-roundtrip	=FINV(FDIST(2.5;5;10);5;10)	cell	2.5	FINV(FDIST(x)) = x
+SG.FINV-03-prob-one	=FINV(1;5;10)	cell	0	FINV prob=1 returns 0
+SG.FINV-04-prob-small	=FINV(0.001;5;10)	cell	6.21	FINV small probability
+SG.FINV-05-error-prob-zero	=FINV(0;5;10)	cell	#VALUE!	FINV prob <= 0 error
+SG.FINV-06-error-prob-gt-one	=FINV(1.1;5;10)	cell	#VALUE!	FINV prob > 1 error
+SG.FINV-07-error-df1-zero	=FINV(0.5;0;10)	cell	#VALUE!	FINV df1 < 1 error
+SG.FINV-08-error-df2-zero	=FINV(0.5;5;0)	cell	#VALUE!	FINV df2 < 1 error
+SG.FINV-09-error-df1-large	=FINV(0.5;1e10;10)	cell	#VALUE!	FINV df1 >= 1e10 error
+SG.FINV-10-error-df2-large	=FINV(0.5;5;1e10)	cell	#VALUE!	FINV df2 >= 1e10 error
+SG.FINV-11-error-wrong-args	=FINV(0.5;5)	cell	#ERR	FINV wrong arg count
+SG.FDIST-12-legacy-name	=LEGACY.FDIST(2.5;5;10)	cell	0.082	LEGACY.FDIST name works
+SG.FINV-12-legacy-name	=LEGACY.FINV(0.082;5;10)	cell	2.5	LEGACY.FINV name works

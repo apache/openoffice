@@ -749,6 +749,7 @@ double GetChiDist(double fChi, double fDF);     // for LEGACY.CHIDIST, returns r
 double GetChiSqDistCDF(double fX, double fDF);  // for CHISQDIST, returns left tail
 double GetChiSqDistPDF(double fX, double fDF);  // probability density function
 double GetFDist(double x, double fF1, double fF2);
+double GetFDistDens(double x, double fF1, double fF2);
 double GetTDist(double T, double fDF);
 double Fakultaet(double x);
 double BinomKoeff(double n, double k);
