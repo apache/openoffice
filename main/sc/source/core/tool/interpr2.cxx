@@ -1357,9 +1357,9 @@ void ScInterpreter::ScRMZ()
     PushDouble(ScGetRmz(nZins, nZzr, nBw, nZw, nFlag));
 }
 
-void ScInterpreter::ScZGZ()
+void ScInterpreter::ScRRI()
 {
-    RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScZGZ" );
+    RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScRRI" );
     nFuncFmtType = NUMBERFORMAT_PERCENT;
     if ( MustHaveParamCount( GetByte(), 3 ) )
     {

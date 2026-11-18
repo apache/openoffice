@@ -526,6 +526,7 @@
 #define HID_FUNC_IKV                                            "SC_HID_FUNC_IKV"
 #define HID_FUNC_LAUFZEIT                                       "SC_HID_FUNC_LAUFZEIT"
 #define HID_FUNC_ZGZ                                            "SC_HID_FUNC_ZGZ"
+#define HID_FUNC_RRI                                            "SC_HID_FUNC_RRI"
 #define HID_FUNC_QIKV                                           "SC_HID_FUNC_QIKV"
 #define HID_FUNC_ISPMT                                          "SC_HID_FUNC_ISPMT"
 

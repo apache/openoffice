@@ -571,8 +571,8 @@ void ScParameterClassification::GenerateDocumentation()
             aStr += ")";
             switch ( eOp )
             {
-                case ocZGZ:
-                    aStr += "   // RRI in English resource, but ZGZ in English-only section";
+                case ocRRI:
+                    aStr += "   // RRI in English resource";
                 break;
                 case ocMultiArea:
                     aStr += "   // e.g. combined first parameter of INDEX() function, not a real function";

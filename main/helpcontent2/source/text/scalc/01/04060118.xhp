@@ -258,18 +258,18 @@
 <bookmark_value>calculating;rates of return</bookmark_value>
 <bookmark_value>RRI function</bookmark_value>
 </bookmark>
-<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ZGZ" id="bm_id3146996" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_RRI" id="bm_id3146996" localize="false"/>
 <paragraph role="heading" id="hd_id3148822" xml-lang="en-US" level="2">RRI</paragraph>
-<paragraph role="paragraph" id="par_id3154293" xml-lang="en-US" l10n="U"><ahelp hid="HID_FUNC_ZGZ">Calculates the interest rate resulting from the profit (return) of an investment.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3154293" xml-lang="en-US" l10n="U"><ahelp hid="HID_FUNC_RRI">Calculates the equivalent interest rate for the growth of an investment.</ahelp></paragraph>
 <paragraph role="heading" id="hd_id3148444" xml-lang="en-US" level="3" l10n="U">Syntax</paragraph>
 <paragraph role="code" id="par_id3148804" xml-lang="en-US" l10n="U">RRI(P; PV; FV)</paragraph>
-<paragraph role="paragraph" id="par_id3154901" xml-lang="en-US" l10n="U"><emph>P</emph> is the number of periods needed for calculating the interest rate.</paragraph>
-<paragraph role="paragraph" id="par_id3159149" xml-lang="en-US" l10n="U"><emph>PV</emph> is the present (current) value. The cash value is the deposit of cash or the current cash value of an allowance in kind. As a deposit value a positive value must be entered; the deposit must not be 0 or &lt;0.</paragraph>
-<paragraph role="paragraph" id="par_id3149771" xml-lang="en-US" l10n="U"><emph>FV</emph> determines what is desired as the cash value of the deposit.</paragraph>
+<paragraph role="paragraph" id="par_id3154901" xml-lang="en-US" l10n="U"><emph>P</emph> is the number of periods.</paragraph>
+<paragraph role="paragraph" id="par_id3159149" xml-lang="en-US" l10n="U"><emph>PV</emph> is the present value of the investment. Must be greater than 0.</paragraph>
+<paragraph role="paragraph" id="par_id3149771" xml-lang="en-US" l10n="U"><emph>FV</emph> is the future value of the investment.</paragraph>
 <paragraph role="heading" id="hd_id3148941" xml-lang="en-US" level="3" l10n="U">Example</paragraph>
-<paragraph role="paragraph" id="par_id3154212" xml-lang="en-US" l10n="U">For four periods (years) and a cash value of 7,500 currency units, the interest rate of the return is to be calculated if the future value is 10,000 currency units.</paragraph>
+<paragraph role="paragraph" id="par_id3154212" xml-lang="en-US" l10n="U">For four periods and a present value of 7,500 currency units, the interest rate is calculated for a future value of 10,000 currency units.</paragraph>
 <paragraph role="paragraph" id="par_id3150775" xml-lang="en-US" l10n="U"><item type="input">=RRI(4;7500;10000)</item> = 7.46%</paragraph>
-<paragraph role="paragraph" id="par_id3145413" xml-lang="en-US" l10n="U">The interest rate must be 7.46% so that 7,500 currency units will become 10,000 currency units.</paragraph>
+<paragraph role="paragraph" id="par_id3145413" xml-lang="en-US" l10n="U">The interest rate must be 7.46% for 7,500 currency units to grow to 10,000 currency units in four periods.</paragraph>
 </section>
 <section id="rate">
 <bookmark xml-lang="en-US" branch="index" id="bm_id3154267">

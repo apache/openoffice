@@ -112,7 +112,7 @@ short lcl_GetRetFormat( OpCode eOpCode )
         case ocZins:
         case ocIRR:
         case ocMIRR:
-        case ocZGZ:
+        case ocRRI:
         case ocEffektiv:
         case ocNominal:
         case ocPercentSign:
@@ -620,6 +620,8 @@ void lcl_fillNativeSymbols(FormulaCompiler::NonConstOpCodeMapPtr& _xMap,bool _de
         OModuleClient aModuleClient;
         OpCodeList aOpCodeListNative( RID_STRLIST_FUNCTION_NAMES, s_SymbolMap );
         // No AddInMap for native core mapping.
+        // Add ZGZ as alias for RRI (ocRRI) for backward compatibility
+        s_SymbolMap->putOpCode(String::CreateFromAscii("ZGZ"), ocRRI);
     } // if ( !s_SymbolMap.get() )
     _xMap = s_SymbolMap;
 }
@@ -658,6 +660,9 @@ void FormulaCompiler::InitSymbolsEnglish() const
 	static NonConstOpCodeMapPtr s_sSymbol;
 	if ( !s_sSymbol.get() )
     	loadSymbols(RID_STRLIST_FUNCTION_NAMES_ENGLISH,FormulaGrammar::GRAM_ENGLISH,s_sSymbol);
+	// Add ZGZ as alias for RRI (ocRRI) for backward compatibility
+	if (s_sSymbol.get())
+		s_sSymbol->putOpCode(String::CreateFromAscii("ZGZ"), ocRRI);
 	mxSymbolsEnglish = s_sSymbol;
 }
 // -----------------------------------------------------------------------------
@@ -666,6 +671,9 @@ void FormulaCompiler::InitSymbolsPODF() const
 	static NonConstOpCodeMapPtr s_sSymbol;
 	if ( !s_sSymbol.get() )
     	loadSymbols(RID_STRLIST_FUNCTION_NAMES_ENGLISH,FormulaGrammar::GRAM_PODF,s_sSymbol);
+	// Add ZGZ as alias for RRI (ocRRI) for backward compatibility
+	if (s_sSymbol.get())
+		s_sSymbol->putOpCode(String::CreateFromAscii("ZGZ"), ocRRI);
 	mxSymbolsPODF = s_sSymbol;
 }
 // -----------------------------------------------------------------------------
@@ -674,6 +682,9 @@ void FormulaCompiler::InitSymbolsODFF() const
 	static NonConstOpCodeMapPtr s_sSymbol;
 	if ( !s_sSymbol.get() )
     	loadSymbols(RID_STRLIST_FUNCTION_NAMES_ENGLISH_ODFF,FormulaGrammar::GRAM_ODFF,s_sSymbol);
+	// Add ZGZ as alias for RRI (ocRRI) for backward compatibility
+	if (s_sSymbol.get())
+		s_sSymbol->putOpCode(String::CreateFromAscii("ZGZ"), ocRRI);
 	mxSymbolsODFF = s_sSymbol;
 }
 // -----------------------------------------------------------------------------
