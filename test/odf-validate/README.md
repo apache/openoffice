@@ -185,6 +185,10 @@ solver into the app copy:
 `roundtrip.py <port> <file> <checks.json>` loads a document and compares UNO
 expressions with expected values; `--capture <out.json>` records them instead.
 
+`isoweeknum_rt.py <port> <outdir>` saves ISOWEEKNUM and WEEKNUM formulas to an
+ODS, checks the saved `table:formula` strings, reloads it and checks that each
+formula and value comes back unchanged.
+
 ## Formula evaluation baseline (calcval)
 
     ./start.sh calcval 2792
