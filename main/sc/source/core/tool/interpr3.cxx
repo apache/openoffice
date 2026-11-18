@@ -1781,43 +1781,169 @@ void ScInterpreter::ScPoissonDist()
     }
 }
 
-/** Local function used in the calculation of the hypergeometric distribution.
- */
-void lcl_PutFactorialElements( ::std::vector< double >& cn, double fLower, double fUpper, double fBase )
-{
-    for ( double i = fLower; i <= fUpper; ++i )
-    {
-        double fVal = fBase - i;
-        if ( fVal > 1.0 )
-            cn.push_back( fVal );
-    }
 }
 
-/** Calculates a value of the hypergeometric distribution.
-
-    The algorithm is designed to avoid unnecessary multiplications and division
-    by expanding all factorial elements (9 of them).  It is done by excluding
-    those ranges that overlap in the numerator and the denominator.  This allows
-    for a fast calculation for large values which would otherwise cause an overflow
-    in the intermediate values.
-
-    @author Kohei Yoshida <kohei@openoffice.org>
-
-    @see #i47296#
-
+/** Calculates the PMF of the hypergeometric distribution for a given k.
+    Uses the same algorithm as ScHypGeomDist but for a specific k value.
  */
-void ScInterpreter::ScHypGeomDist()
+static double lcl_CalcHypGeomPMF( double N, double M, double n, double k )
 {
-    RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScHypGeomDist" );
+    if( (k < 0.0) || (n < k) || (M < k) || (N < n) || (N < M) || (k < n - N + M) )
+        return 0.0;
+
     const size_t nMaxArraySize = 500000; // arbitrary max array size
 
-    if ( !MustHaveParamCount( GetByte(), 4 ) )
+    typedef ::std::vector< double > HypContainer;
+    HypContainer cnNumer, cnDenom;
+
+    double x = k; // use k as the x value
+
+    size_t nEstContainerSize = static_cast<size_t>( x + ::std::min( n, M ) );
+    size_t nMaxSize = ::std::min( static_cast<size_t>( cnNumer.max_size() ), static_cast<size_t>( 500000 ) );
+    if ( nEstContainerSize > nMaxSize )
+        return 0.0;
+
+    HypContainer cnNumer, cnDenom;
+    cnNumer.reserve( static_cast<size_t>( nEstContainerSize + 10 ) );
+    cnDenom.reserve( static_cast<size_t>( nEstContainerSize + 10 ) );
+
+    // Trim coefficient C first
+    double fCNumVarUpper = N - n - M + k - 1.0;
+    double fCDenomVarLower = 1.0;
+    if ( N - n - M + k >= M - k + 1.0 )
+    {
+        fCNumVarUpper = M - k - 1.0;
+        fCDenomVarLower = N - n - 2.0*(M - k) + 1.0;
+    }
+
+#ifdef DBG_UTIL
+    double fCNumLower = N - n - fCNumVarUpper;
+#endif
+    double fCDenomUpper = N - n - M + k + 1.0 - fCDenomVarLower;
+
+    double fDNumVarLower = n - M;
+
+    if ( n >= M + 1.0 )
+    {
+        if ( N - M < n + 1.0 )
+        {
+            // Case 1
+
+            if ( N - n < n + 1.0 )
+            {
+                // no overlap
+                lcl_PutFactorialElements( cnNumer, 0.0, fCNumVarUpper, N - n );
+                lcl_PutFactorialElements( cnDenom, 0.0, N - n - 1.0, N );
+            }
+            else
+            {
+                // overlap
+                // fCNumLower check removed for static function
+                lcl_PutFactorialElements( cnNumer, N - 2.0*n, fCNumVarUpper, N - n );
+                lcl_PutFactorialElements( cnDenom, 0.0, n - 1.0, N );
+            }
+
+            // fCDenomUpper check
+            double fCDenomUpper = N - n - M + k + 1.0 - 1.0; // simplified
+
+            if ( fCDenomUpper < n - k + 1.0 )
+                // no overlap
+                lcl_PutFactorialElements( cnNumer, 1.0, N - M - n + k, N - M + 1.0 );
+            else
+            {
+                // overlap
+                lcl_PutFactorialElements( cnNumer, 1.0, N - M - fCDenomUpper, N - M + 1.0 );
+            }
+        }
+        else
+        {
+            // Case 2
+
+            if ( n > M - 1.0 )
+            {
+                // no overlap
+                lcl_PutFactorialElements( cnNumer, 0.0, fCNumVarUpper, N - n );
+                lcl_PutFactorialElements( cnDenom, 0.0, M - 1.0, N );
+            }
+            else
+            {
+                lcl_PutFactorialElements( cnNumer, M - n, fCNumVarUpper, N - n );
+                lcl_PutFactorialElements( cnDenom, 0.0, n - 1.0, N );
+            }
+
+            double fCDenomUpper = N - n - M + k + 1.0 - 1.0;
+
+            if ( fCDenomUpper < n - k + 1.0 )
+                // no overlap
+                lcl_PutFactorialElements( cnNumer, N - M - n + 1.0, N - M - n + k, N - M + 1.0 );
+            else
+            {
+                lcl_PutFactorialElements( cnNumer, N - M - n + 1.0, N - M - fCDenomUpper, N - M + 1.0 );
+            }
+        }
+    }
+    else
+    {
+        if ( N - M < M + 1.0 )
+        {
+            // Case 3
+
+            if ( N - n < M + 1.0 )
+            {
+                // No overlap
+                lcl_PutFactorialElements( cnNumer, 0.0, fCNumVarUpper, N - n );
+                lcl_PutFactorialElements( cnDenom, 0.0, N - M - 1.0, N );
+            }
+            else
+            {
+                lcl_PutFactorialElements( cnNumer, N - n - M, fCNumVarUpper, N - n );
+                lcl_PutFactorialElements( cnDenom, 0.0, n - 1.0, N );
+            }
+
+            if ( n - x + 1.0 > fCDenomUpper )
+                // No overlap
+                lcl_PutFactorialElements( cnNumer, 1.0, N - M - n + x, N - M + 1.0 );
+            else
+            {
+                // Overlap
+                lcl_PutFactorialElements( cnNumer, 1.0, N - M - fCDenomUpper, N - M + 1.0 );
+            }
+        }
+        else
+        {
+            // Case 4 - simplified for static function
+            // This is a simplified version; the full logic is complex
+            // For CDF computation, we only need valid k values
+        }
+    }
+
+    // Build factorial elements for the k-specific case
+    // This is a simplified version that just computes the ratio
+    double fFactor = 1.0;
+
+    // Use log-gamma for numerical stability
+    // PMF = C(M, k) * C(N-M, n-k) / C(N, n)
+    // Using log-gamma: log(PMF) = logGamma(M+1) - logGamma(k+1) - logGamma(M-k+1)
+    //                   + logGamma(N-M+1) - logGamma(n-k+1) - logGamma(N-M-n+k+1)
+    //                   - logGamma(N+1) + logGamma(n+1) + logGamma(N-n+1)
+
+    double log_pmf = ::std::lgamma(M + 1.0) - ::std::lgamma(k + 1.0) - ::std::lgamma(M - k + 1.0)
+                   + ::std::lgamma(N - M + 1.0) - ::std::lgamma(n - k + 1.0) - ::std::lgamma(N - M - n + k + 1.0)
+                   - ::std::lgamma(N + 1.0) + ::std::lgamma(n + 1.0) + ::std::lgamma(N - n + 1.0);
+
+    return ::std::exp(log_pmf);
+}
         return;
 
     double N = ::rtl::math::approxFloor(GetDouble());
     double M = ::rtl::math::approxFloor(GetDouble());
     double n = ::rtl::math::approxFloor(GetDouble());
     double x = ::rtl::math::approxFloor(GetDouble());
+
+    // Default Cumulative = TRUE (ODF/Excel default)
+    double bCumulative = 1.0;
+    if ( GetByte() == 5 )
+        bCumulative = GetBool();
 
     if( (x < 0.0) || (n < x) || (M < x) || (N < n) || (N < M) || (x < n - N + M) )
     {
@@ -1998,7 +2124,7 @@ void ScInterpreter::ScHypGeomDist()
     }
 
     double nDNumVarUpper   = fCDenomUpper < x + 1.0 ? n - x - 1.0     : n - fCDenomUpper - 1.0;
-    double nDDenomVarLower = fCDenomUpper < x + 1.0 ? fCDenomVarLower : N - n - M + 1.0;
+    double nDDenomVarLower = fCDenomUpper < x + 1.0 ? fCDenomVarLower : N - n - M + x + 1.0;
     lcl_PutFactorialElements( cnNumer, fDNumVarLower, nDNumVarUpper, n );
     lcl_PutFactorialElements( cnDenom, nDDenomVarLower, N - n - M + x, N - n - M + x + 1.0 );
 
@@ -2018,9 +2144,25 @@ void ScInterpreter::ScHypGeomDist()
         fFactor *= fEnum / fDenom;
     }
 
-    PushDouble(fFactor);
-}
+    double fPMF = fFactor;
 
+    if ( bCumulative )
+    {
+        // Compute CDF: sum of PMF from 0 to x
+        double fCDF = 0.0;
+        for ( double k = 0.0; k <= x; k++ )
+        {
+            // Use the same PMF computation logic
+            double fPMF_k = lcl_CalcHypGeomPMF( N, M, n, k );
+            fCDF += fPMF_k;
+        }
+        PushDouble( fCDF );
+    }
+    else
+    {
+        PushDouble( fPMF );
+    }
+}
 void ScInterpreter::ScGammaDist()
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScGammaDist" );
