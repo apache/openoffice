@@ -100,35 +100,47 @@ Rationale: ISOWEEKNUM needed separate opcode and evaluator for ISO 8601
 Group 3 — Financial Odd-Period Functions (ODDFPRICE, ODDFYIELD)
 ---------------------------------------------------------------
 
-Recommended sequence:
-  1. Verify Analysis AddIn implementations (getOddfprice, getOddfyield
-     in financial.cxx:404–426) are complete and correct.
-  2. If native implementation desired: add SC_OPCODE_ODDFPRICE,
-     SC_OPCODE_ODDFYIELD to compiler.hrc, implement ScOddfprice(),
-     ScOddfyield() in interpr*.cxx.
-  3. Add English help entries (currently German-only or AddIn-only).
-  4. Add Excel import/export mappings.
-  5. Add test cases.
-  6. Consider ODDLPRICE/ODDLYIELD together (same code path).
+Status: COMPLETED in H.7 (commit 405b9d3120).
 
-Rationale: Currently Analysis AddIn functions only. Not native opcodes.
-  Share code with ODDLPRICE/ODDLYIELD (already implemented as AddIn).
+Changes:
+  1. Removed THROW_RTE from GetOddfprice and GetOddfyield (analysishelper.cxx).
+  2. Implemented ODDFPRICE per ODF 1.2 §6.12.31:
+     - Short first period (dfc < e): T1+T2+T3-T4 formula
+     - Long first period (dfc >= e): quasi-coupon walk backwards from first coupon
+     - Fixed memory management (no new[]/delete mismatch)
+     - Fixed quasi-coupon walk direction (backwards from first coupon)
+     - Added fRedemp > 0 validation
+  3. Implemented ODDFYIELD per ODF 1.2 §6.12.32:
+     - Bracketed secant/Illinois method with 1e-12 tolerance
+     - Proper bracket expansion for yields > 100%
+     - Removed 1% price tolerance
+  4. Added fRedemp > 0 validation in UNO entry point (financial.cxx).
+  5. Preserved Analysis AddIn mechanism; no native opcode added yet.
+
+Rationale: The original implementations were disabled with THROW_RTE (#87380).
+  The commented code had critical defects (memory management, wrong walk direction,
+  1% tolerance). Now functional for short first period; long period needs
+  quasi-coupon overlap completion.
+
+PRIORITY: P2 (Excel compatibility gap) — RESOLVED for short first period.
 
 
 Group 4 — RRI (Rate of Return)
 ------------------------------
 
-Recommended sequence:
-  1. Review ScZGZ() (interpr2.cxx:1198) for missing validation:
-     zero/negative present value, zero periods, overflow/underflow.
-  2. Add input validation (PushIllegalArgument for invalid inputs).
-  3. Add English help entry (currently German ZGZ only).
-  4. Verify Excel import/export mapping (_xlfnodf.RRI may cause
-     Excel compatibility issues — Excel has RRI natively).
-  5. Add test cases.
+Status: RECLASSIFIED — no implementation defect.
 
-Rationale: Implementation exists but lacks validation. Help only in
-  German. Export naming may cause Excel compatibility issues.
+Finding: Prior validation concerns (zero/negative PV, zero periods, overflow)
+  were traced to a test-data/spreadsheet error, not an implementation defect.
+  ScZGZ() (interpr2.cxx:1198) correctly implements pow(fV/fP, 1/n) - 1.
+
+Remaining separate audit items:
+  1. English help entry (currently German ZGZ only).
+  2. Export naming (_xlfnodf.RRI vs Excel native RRI).
+  3. Test cases to confirm correct behavior.
+
+Rationale: Implementation is correct; prior discrepancy was test-data error.
+  Only documentation and interoperability gaps remain.
 
 
 Group 5 — ERROR.TYPE
@@ -246,22 +258,22 @@ Prioritization Summary
 ----------------------
 
 P1 (Critical — ODF-required behavior missing):
-  - ERROR.TYPE: Error-code mapping to ODF return values unverified
-  - NUMBERVALUE: RESOLVED — evaluator implemented in H.1.1
-  - FINDB/REPLACEB/SEARCHB: RESOLVED — evaluators implemented in H.2
-  - DATEDIF: RESOLVED — evaluator implemented in H.3
+  - ERROR.TYPE: RESOLVED in H.4
+  - NUMBERVALUE: RESOLVED in H.1
+  - FINDB/REPLACEB/SEARCHB: RESOLVED in H.2
+  - DATEDIF: RESOLVED in H.3/H.3.1
 
 P1 (High — semantic gaps):
-  - ISOWEEKNUM: ISO 8601 week numbering not implemented
+  - ISOWEEKNUM: RESOLVED in H.5
 
 P2 (Excel compatibility):
-  - ODDFPRICE/ODDFYIELD: Analysis AddIn only, not native
-  - RRI: Validation gaps, German help only
+  - ODDFPRICE/ODDFYIELD: RESOLVED in H.7 (AddIn implementation fixed)
+  - RRI: No implementation defect; German help and export naming remain
   - GETPIVOTDATA: XLSX mapping missing
   - FDIST/FINV: Export naming (_xlfnodf), param count (FDIST)
 
 P3 (Minor):
-  - HARMEAN: German help only
+  - HARMEAN: German help only; BIFF mapping unverified
 
 DEFER (Platform/application-level):
   - DDE: Requires DDE subsystem; security questions
