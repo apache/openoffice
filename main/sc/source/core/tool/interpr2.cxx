@@ -463,141 +463,76 @@ void ScInterpreter::ScDateDif()
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScDateDif" );
     if ( MustHaveParamCount( GetByte(), 3 ) )
     {
-        // Arguments are popped in reverse order: Format, EndDate, StartDate
-        String aFormat = GetString();
-        double nEndDate = GetDouble();
-        double nStartDate = GetDouble();
-
+        String aFormat( GetString() );
+        double fEnd   = ::rtl::math::approxFloor( GetDouble() );
+        double fStart = ::rtl::math::approxFloor( GetDouble() );
         if ( nGlobalError )
         {
             PushError( nGlobalError );
             return;
         }
-
-        // Floor to calendar dates (discard time fractions)
-        nStartDate = ::rtl::math::approxFloor( nStartDate );
-        nEndDate = ::rtl::math::approxFloor( nEndDate );
-
-        const Date* pNullDate = pFormatter->GetNullDate();
-        Date aStart = *pNullDate;
-        aStart += (long) nStartDate;
-        Date aEnd = *pNullDate;
-        aEnd += (long) nEndDate;
-
-        if ( !aStart.IsValid() || !aEnd.IsValid() )
+        if ( fStart > fEnd )
         {
             PushIllegalArgument();
             return;
         }
 
-        // Work forward for calculation; apply sign for reverse intervals at end.
-        bool bReverse = (aStart > aEnd);
-        Date aFrom = bReverse ? aEnd : aStart;
-        Date aTo = bReverse ? aStart : aEnd;
-
-        sal_uInt32 nYear1  = aFrom.GetYear();
-        sal_uInt32 nMonth1 = aFrom.GetMonth();
-        sal_uInt32 nDay1   = aFrom.GetDay();
-        sal_uInt32 nYear2  = aTo.GetYear();
-        sal_uInt32 nMonth2 = aTo.GetMonth();
-        sal_uInt32 nDay2   = aTo.GetDay();
-
-        // Complete calendar years (ODF 1.4 §6.10.3 "y")
-        long nYears = (long)nYear2 - (long)nYear1;
-        if ( nMonth2 < nMonth1 || (nMonth2 == nMonth1 && nDay2 < nDay1) )
-            nYears--;
-
-        // Complete calendar months (ODF 1.4 §6.10.3 "m")
-        long nMonths = ((long)nYear2 - (long)nYear1) * 12
-                     + ((long)nMonth2 - (long)nMonth1);
-        if ( nDay2 < nDay1 )
+        Date aFrom = *(pFormatter->GetNullDate());
+        aFrom += (long) fStart;
+        Date aTo = *(pFormatter->GetNullDate());
+        aTo += (long) fEnd;
+        if ( !aFrom.IsValid() || !aTo.IsValid() )
         {
-            // If start is the last day of its month, treat the end month as
-            // reached (end-of-month substitution); otherwise decrement.
-            if ( nDay1 != aFrom.GetDaysInMonth() )
-                nMonths--;
+            PushIllegalArgument();
+            return;
         }
 
-        double fResult = 0.0;
-        bool bValidFormat = true;
+        // Complete months: the end day must reach the start day.
+        long nMonths = ((long)aTo.GetYear() - (long)aFrom.GetYear()) * 12
+                     + ((long)aTo.GetMonth() - (long)aFrom.GetMonth());
+        if ( aTo.GetDay() < aFrom.GetDay() )
+            --nMonths;
 
-        if ( aFormat == "d" )
-        {
-            // Calendar day difference (ODF 1.4 §6.10.3)
+        aFormat.ToLowerAscii();
+        double fResult;
+        if ( aFormat.EqualsAscii( "d" ) )
             fResult = (double)(aTo - aFrom);
-        }
-        else if ( aFormat == "m" )
-        {
+        else if ( aFormat.EqualsAscii( "m" ) )
             fResult = (double)nMonths;
-        }
-        else if ( aFormat == "y" )
+        else if ( aFormat.EqualsAscii( "y" ) )
+            fResult = (double)(nMonths / 12);
+        else if ( aFormat.EqualsAscii( "ym" ) )
+            fResult = (double)(nMonths % 12);
+        else if ( aFormat.EqualsAscii( "md" ) )
         {
-            fResult = (double)nYears;
-        }
-        else if ( aFormat == "md" )
-        {
-            // Days ignoring months and years (ODF 1.4 §6.10.3).
-            // If the end day is before the start day, borrow days from the
-            // start date's month (Excel-compatible / common ODF interpretation).
-            long nDays;
-            if ( nDay2 < nDay1 )
+            // As Excel: borrow the length of the month before the end month,
+            // which gives a negative result for some month ends.
+            long nDays = (long)aTo.GetDay() - (long)aFrom.GetDay();
+            if ( nDays < 0 )
             {
-                sal_uInt16 nStartDays = aFrom.GetDaysInMonth();
-                nDays = (long)nDay2 + (long)nStartDays - (long)nDay1;
-            }
-            else
-            {
-                nDays = (long)nDay2 - (long)nDay1;
+                Date aPrev( 1, aTo.GetMonth(), aTo.GetYear() );
+                aPrev -= 1;
+                nDays += aPrev.GetDaysInMonth();
             }
             fResult = (double)nDays;
         }
-        else if ( aFormat == "ym" )
+        else if ( aFormat.EqualsAscii( "yd" ) )
         {
-            // Months ignoring years (ODF 1.4 §6.10.3): complete months
-            // remaining after subtracting complete years.
-            long nYM = nMonths - nYears * 12;
-            if ( nYM < 0 )
-                nYM = 0;
-            fResult = (double)nYM;
-        }
-        else if ( aFormat == "yd" )
-        {
-            // Days ignoring years (ODF 1.4 §6.10.3): days between the start
-            // date shifted forward by the number of complete years and the end
-            // date, in the end date's year context.
-            sal_uInt16 nAnnYear = (sal_uInt16)((long)nYear2 - nYears);
-            Date aAnniversary( (sal_uInt16)nDay1, (sal_uInt16)nMonth1, nAnnYear );
-            // Handle anniversary like Feb 29 in a non-leap anniversary year.
-            if ( !aAnniversary.IsValid() && nMonth1 == 2 && nDay1 == 29 )
-                aAnniversary = Date( 28, 2, nAnnYear );
-            fResult = (double)(aTo - aAnniversary);
+            // As Excel: move the end date into the first year that does not put it
+            // before the start date; February 29 becomes March 1 in other years.
+            sal_uInt16 nYear = aFrom.GetYear();
+            if ( aTo.GetMonth() < aFrom.GetMonth() ||
+                    (aTo.GetMonth() == aFrom.GetMonth() && aTo.GetDay() < aFrom.GetDay()) )
+                ++nYear;
+            Date aEnd( 1, aTo.GetMonth(), nYear );
+            aEnd += (long)aTo.GetDay() - 1;
+            fResult = (double)(aEnd - aFrom);
         }
         else
-        {
-            bValidFormat = false;
-        }
-
-        if ( !bValidFormat )
         {
             PushIllegalArgument();
             return;
         }
-
-        // ODF 1.4 §6.10.3 does not define reverse intervals; apply
-        // Excel-compatible policy: negate y/m/d, keep md/ym/yd non-negative.
-        if ( bReverse )
-        {
-            if ( aFormat == "md" || aFormat == "ym" || aFormat == "yd" )
-            {
-                if ( fResult < 0.0 )
-                    fResult = -fResult;
-            }
-            else
-            {
-                fResult = -fResult;
-            }
-        }
-
         PushDouble( fResult );
     }
 }
@@ -1357,9 +1292,9 @@ void ScInterpreter::ScRMZ()
     PushDouble(ScGetRmz(nZins, nZzr, nBw, nZw, nFlag));
 }
 
-void ScInterpreter::ScRRI()
+void ScInterpreter::ScZGZ()
 {
-    RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScRRI" );
+    RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScZGZ" );
     nFuncFmtType = NUMBERFORMAT_PERCENT;
     if ( MustHaveParamCount( GetByte(), 3 ) )
     {

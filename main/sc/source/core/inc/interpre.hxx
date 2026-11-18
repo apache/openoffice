@@ -138,6 +138,7 @@ class ScInterpreter
     friend class ScBetaDistFunction;
     friend class ScTDistFunction;
     friend class ScFDistFunction;
+    friend class ScFDistLeftFunction;
     friend class ScChiDistFunction;
     friend class ScChiSqDistFunction;
 
@@ -582,7 +583,7 @@ void ScMissing();
 void ScMacro();
 sal_Bool SetSbxVariable( SbxVariable* pVar, const ScAddress& );
 sal_Bool SetSbxVariable( SbxVariable* pVar, SCCOL nCol, SCROW nRow, SCTAB nTab );
-void ScErrorType();
+void ScErrorType( bool bODF = false );
 void ScDBArea();
 void ScColRowNameAuto();
 void ScExternalRef();
@@ -669,7 +670,7 @@ void ScLIA();
 double ScGetRmz(double fZins, double fZzr, double fBw,
                        double fZw, double fF);
 void ScRMZ();
-void ScRRI();
+void ScZGZ();
 double ScGetZw(double fZins, double fZzr, double fRmz,
                       double fBw, double fF);
 void ScZW();
@@ -749,7 +750,7 @@ double GetChiDist(double fChi, double fDF);     // for LEGACY.CHIDIST, returns r
 double GetChiSqDistCDF(double fX, double fDF);  // for CHISQDIST, returns left tail
 double GetChiSqDistPDF(double fX, double fDF);  // probability density function
 double GetFDist(double x, double fF1, double fF2);
-double GetFDistDens(double x, double fF1, double fF2);
+double GetHypGeomDist( double x, double n, double M, double N );
 double GetTDist(double T, double fDF);
 double Fakultaet(double x);
 double BinomKoeff(double n, double k);
@@ -782,14 +783,14 @@ void ScLogNormDist();
 void ScLogNormInv();
 void ScTDist();
 void ScFDist();
-void ScLegacyFDist();
+void ScFDistLeft();
 void ScChiDist();   // for LEGACY.CHIDIST, returns right tail
 void ScChiSqDist(); // returns left tail or density
 void ScChiSqInv(); //invers to CHISQDIST
 void ScWeibull();
 void ScBetaDist();
 void ScFInv();
-void ScLegacyFInv();
+void ScFInvLeft();
 void ScTInv();
 void ScChiInv();
 void ScBetaInv();

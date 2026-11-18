@@ -669,22 +669,11 @@ double ScInterpreter::GetFDist(double x, double fF1, double fF2)
     double alpha = fF2/2.0;
     double beta = fF1/2.0;
     return (GetBetaDist(arg, alpha, beta));
-}
-
-double ScInterpreter::GetFDistDens(double x, double fF1, double fF2)
-{
-    RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::GetFDistDens" );
-    // F-distribution PDF:
-    // f(x; d1, d2) = (d1/d2)^(d1/2) * x^(d1/2 - 1) * (1 + (d1/d2)*x)^(-(d1+d2)/2) / B(d1/2, d2/2)
-    if (x <= 0.0)
-        return 0.0;
-    double d1 = fF1;
-    double d2 = fF2;
-    double log_pdf = (d1/2.0) * log(d1/d2)
-                   + (d1/2.0 - 1.0) * log(x)
-                   - ((d1 + d2)/2.0) * log(1.0 + (d1/d2)*x)
-                   - log(GetBeta(d1/2.0, d2/2.0));
-    return exp(log_pdf);
+/*
+    double Z = (pow(fF,1.0/3.0)*(1.0-2.0/(9.0*fF2)) - (1.0-2.0/(9.0*fF1))) /
+               sqrt(2.0/(9.0*fF1) + pow(fF,2.0/3.0)*2.0/(9.0*fF2));
+    return (0.5-gauss(Z));
+*/
 }
 
 double ScInterpreter::GetTDist(double T, double fDF)
@@ -1599,83 +1588,46 @@ void ScInterpreter::ScTDist()
 void ScInterpreter::ScFDist()
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScFDist" );
-    if ( !MustHaveParamCount( GetByte(), 3, 4 ) )
-        return;
-    double fF2 = ::rtl::math::approxFloor(GetDouble());
-    double fF1 = ::rtl::math::approxFloor(GetDouble());
-    double fF  = GetDouble();
-    double fCum = 1.0; // default to cumulative = TRUE (left-tail CDF for standard)
-    if (GetByte() == 4)
-        fCum = GetDouble();
-    if (fF < 0.0 || fF1 < 1.0 || fF2 < 1.0 || fF1 >= 1.0E10 || fF2 >= 1.0E10)
-    {
-        PushIllegalArgument();
-        return;
-    }
-    if (fCum == 0.0)
-    {
-        // Probability density function (same as legacy)
-        PushDouble(GetFDistDens(fF, fF1, fF2));
-    }
-    else
-    {
-        // Cumulative distribution function: LEFT-TAIL (standard)
-        // Left-tail = 1 - Right-tail
-        double fRightTail = GetFDist(fF, fF1, fF2);
-        PushDouble(1.0 - fRightTail);
-    }
-}
-
-}
-
-void ScInterpreter::ScLegacyFDist()
-{
-    RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScLegacyFDist" );
-    if ( !MustHaveParamCount( GetByte(), 3, 4 ) )
-        return;
-    double fF2 = ::rtl::math::approxFloor(GetDouble());
-    double fF1 = ::rtl::math::approxFloor(GetDouble());
-    double fF  = GetDouble();
-    double fCum = 1.0; // default to cumulative = TRUE (right-tail CDF for legacy)
-    if (GetByte() == 4)
-        fCum = GetDouble();
-    if (fF < 0.0 || fF1 < 1.0 || fF2 < 1.0 || fF1 >= 1.0E10 || fF2 >= 1.0E10)
-    {
-        PushIllegalArgument();
-        return;
-    }
-    if (fCum == 0.0)
-    {
-        // Probability density function (same as standard)
-        PushDouble(GetFDistDens(fF, fF1, fF2));
-    }
-    else
-    {
-        // Cumulative distribution function: RIGHT-TAIL (legacy)
-        PushDouble(GetFDist(fF, fF1, fF2));
-    }
-}
-
-void ScInterpreter::ScLegacyFInv()
-{
-    RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScLegacyFInv" );
     if ( !MustHaveParamCount( GetByte(), 3 ) )
         return;
     double fF2 = ::rtl::math::approxFloor(GetDouble());
     double fF1 = ::rtl::math::approxFloor(GetDouble());
-    double fP  = GetDouble();
-    if (fP <= 0.0 || fF1 < 1.0 || fF2 < 1.0 || fF1 >= 1.0E10 || fF2 >= 1.0E10 || fP > 1.0)
+    double fF  = GetDouble();
+    if (fF < 0.0 || fF1 < 1.0 || fF2 < 1.0 || fF1 >= 1.0E10 || fF2 >= 1.0E10)
     {
         PushIllegalArgument();
         return;
     }
+    PushDouble(GetFDist(fF, fF1, fF2));
+}
 
-    bool bConvError;
-    ScFDistFunction aFunc( *this, fP, fF1, fF2 );
-    double fVal = lcl_IterateInverse( aFunc, fF1*0.5, fF1, bConvError );
-    if (bConvError)
-        SetError(errNoConvergence);
-    PushDouble(fVal);
+void ScInterpreter::ScFDistLeft()
+{
+    RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScFDistLeft" );
+    sal_uInt8 nParamCount = GetByte();
+    if ( !MustHaveParamCount( nParamCount, 3, 4 ) )
+        return;
+    bool bCumulative = ( nParamCount == 4 ? GetBool() : true );
+    double fF2 = ::rtl::math::approxFloor(GetDouble());
+    double fF1 = ::rtl::math::approxFloor(GetDouble());
+    double fF  = GetDouble();
+    if (fF1 < 1.0 || fF2 < 1.0 || fF1 >= 1.0E10 || fF2 >= 1.0E10)
+    {
+        PushIllegalArgument();
+        return;
+    }
+    if (fF < 0.0)
+    {
+        PushDouble(0.0);
+        return;
+    }
+    // F(x;r1;r2) is Beta(r1/2;r2/2) at y = r1*x/(r1*x+r2).
+    double fDenom = fF1 * fF + fF2;
+    double fY = fF1 * fF / fDenom;
+    if (bCumulative)
+        PushDouble( GetBetaDist( fY, fF1 / 2.0, fF2 / 2.0));
+    else
+        PushDouble( GetBetaDistPDF( fY, fF1 / 2.0, fF2 / 2.0) * fF1 * fF2 / (fDenom * fDenom));
 }
 
 void ScInterpreter::ScChiDist()
@@ -1781,389 +1733,103 @@ void ScInterpreter::ScPoissonDist()
     }
 }
 
-}
+/** Calculates a value of the hypergeometric distribution.
 
-/** Calculates the PMF of the hypergeometric distribution for a given k.
-    Uses the same algorithm as ScHypGeomDist but for a specific k value.
+    C(M,x) * C(N-M,n-x) / C(N,n) is the product of the x factors of C(n,x),
+    which are at least 1, and of n ratios, which are at most 1. Taking a
+    ratio whenever the product has reached 1 and a factor otherwise keeps it
+    from overflowing on the way to a result of at most 1.
  */
-static double lcl_CalcHypGeomPMF( double N, double M, double n, double k )
+double ScInterpreter::GetHypGeomDist( double x, double n, double M, double N )
 {
-    if( (k < 0.0) || (n < k) || (M < k) || (N < n) || (N < M) || (k < n - N + M) )
-        return 0.0;
-
-    const size_t nMaxArraySize = 500000; // arbitrary max array size
-
-    typedef ::std::vector< double > HypContainer;
-    HypContainer cnNumer, cnDenom;
-
-    double x = k; // use k as the x value
-
-    size_t nEstContainerSize = static_cast<size_t>( x + ::std::min( n, M ) );
-    size_t nMaxSize = ::std::min( static_cast<size_t>( cnNumer.max_size() ), static_cast<size_t>( 500000 ) );
-    if ( nEstContainerSize > nMaxSize )
-        return 0.0;
-
-    HypContainer cnNumer, cnDenom;
-    cnNumer.reserve( static_cast<size_t>( nEstContainerSize + 10 ) );
-    cnDenom.reserve( static_cast<size_t>( nEstContainerSize + 10 ) );
-
-    // Trim coefficient C first
-    double fCNumVarUpper = N - n - M + k - 1.0;
-    double fCDenomVarLower = 1.0;
-    if ( N - n - M + k >= M - k + 1.0 )
+    if( (x < 0.0) || (n < x) || (M < x) || (N < n) || (N < M) || (x < n - N + M) )
     {
-        fCNumVarUpper = M - k - 1.0;
-        fCDenomVarLower = N - n - 2.0*(M - k) + 1.0;
+        SetError(errIllegalArgument);
+        return 0.0;
+    }
+    if ( x + ::std::min( n, M ) > 500000.0 )    // arbitrary limit, as before
+    {
+        SetError(errNoValue);
+        return 0.0;
     }
 
-#ifdef DBG_UTIL
-    double fCNumLower = N - n - fCNumVarUpper;
-#endif
-    double fCDenomUpper = N - n - M + k + 1.0 - fCDenomVarLower;
-
-    double fDNumVarLower = n - M;
-
-    if ( n >= M + 1.0 )
+    // The same value with the fewest factors: the drawn and the remaining
+    // items swap roles, and so do the sample and the successes.
+    if ( n > N - n )
     {
-        if ( N - M < n + 1.0 )
+        x = M - x;
+        n = N - n;
+    }
+    if ( n > M )
+        ::std::swap( n, M );
+
+    double fRes = 1.0;
+    double fFactors = 0.0;
+    double fRatios = 0.0;
+    while ( fFactors < x || fRatios < n )
+    {
+        if ( fFactors < x && (fRes < 1.0 || fRatios >= n) )
         {
-            // Case 1
-
-            if ( N - n < n + 1.0 )
-            {
-                // no overlap
-                lcl_PutFactorialElements( cnNumer, 0.0, fCNumVarUpper, N - n );
-                lcl_PutFactorialElements( cnDenom, 0.0, N - n - 1.0, N );
-            }
-            else
-            {
-                // overlap
-                // fCNumLower check removed for static function
-                lcl_PutFactorialElements( cnNumer, N - 2.0*n, fCNumVarUpper, N - n );
-                lcl_PutFactorialElements( cnDenom, 0.0, n - 1.0, N );
-            }
-
-            // fCDenomUpper check
-            double fCDenomUpper = N - n - M + k + 1.0 - 1.0; // simplified
-
-            if ( fCDenomUpper < n - k + 1.0 )
-                // no overlap
-                lcl_PutFactorialElements( cnNumer, 1.0, N - M - n + k, N - M + 1.0 );
-            else
-            {
-                // overlap
-                lcl_PutFactorialElements( cnNumer, 1.0, N - M - fCDenomUpper, N - M + 1.0 );
-            }
+            fFactors += 1.0;
+            fRes *= (n - x + fFactors) / fFactors;
         }
         else
         {
-            // Case 2
-
-            if ( n > M - 1.0 )
-            {
-                // no overlap
-                lcl_PutFactorialElements( cnNumer, 0.0, fCNumVarUpper, N - n );
-                lcl_PutFactorialElements( cnDenom, 0.0, M - 1.0, N );
-            }
+            if ( fRatios < x )
+                fRes *= (M - fRatios) / (N - fRatios);
             else
-            {
-                lcl_PutFactorialElements( cnNumer, M - n, fCNumVarUpper, N - n );
-                lcl_PutFactorialElements( cnDenom, 0.0, n - 1.0, N );
-            }
-
-            double fCDenomUpper = N - n - M + k + 1.0 - 1.0;
-
-            if ( fCDenomUpper < n - k + 1.0 )
-                // no overlap
-                lcl_PutFactorialElements( cnNumer, N - M - n + 1.0, N - M - n + k, N - M + 1.0 );
-            else
-            {
-                lcl_PutFactorialElements( cnNumer, N - M - n + 1.0, N - M - fCDenomUpper, N - M + 1.0 );
-            }
+                fRes *= (N - M - fRatios + x) / (N - fRatios);
+            fRatios += 1.0;
         }
     }
-    else
-    {
-        if ( N - M < M + 1.0 )
-        {
-            // Case 3
-
-            if ( N - n < M + 1.0 )
-            {
-                // No overlap
-                lcl_PutFactorialElements( cnNumer, 0.0, fCNumVarUpper, N - n );
-                lcl_PutFactorialElements( cnDenom, 0.0, N - M - 1.0, N );
-            }
-            else
-            {
-                lcl_PutFactorialElements( cnNumer, N - n - M, fCNumVarUpper, N - n );
-                lcl_PutFactorialElements( cnDenom, 0.0, n - 1.0, N );
-            }
-
-            if ( n - x + 1.0 > fCDenomUpper )
-                // No overlap
-                lcl_PutFactorialElements( cnNumer, 1.0, N - M - n + x, N - M + 1.0 );
-            else
-            {
-                // Overlap
-                lcl_PutFactorialElements( cnNumer, 1.0, N - M - fCDenomUpper, N - M + 1.0 );
-            }
-        }
-        else
-        {
-            // Case 4 - simplified for static function
-            // This is a simplified version; the full logic is complex
-            // For CDF computation, we only need valid k values
-        }
-    }
-
-    // Build factorial elements for the k-specific case
-    // This is a simplified version that just computes the ratio
-    double fFactor = 1.0;
-
-    // Use log-gamma for numerical stability
-    // PMF = C(M, k) * C(N-M, n-k) / C(N, n)
-    // Using log-gamma: log(PMF) = logGamma(M+1) - logGamma(k+1) - logGamma(M-k+1)
-    //                   + logGamma(N-M+1) - logGamma(n-k+1) - logGamma(N-M-n+k+1)
-    //                   - logGamma(N+1) + logGamma(n+1) + logGamma(N-n+1)
-
-    double log_pmf = ::std::lgamma(M + 1.0) - ::std::lgamma(k + 1.0) - ::std::lgamma(M - k + 1.0)
-                   + ::std::lgamma(N - M + 1.0) - ::std::lgamma(n - k + 1.0) - ::std::lgamma(N - M - n + k + 1.0)
-                   - ::std::lgamma(N + 1.0) + ::std::lgamma(n + 1.0) + ::std::lgamma(N - n + 1.0);
-
-    return ::std::exp(log_pmf);
+    return fRes;
 }
+
+void ScInterpreter::ScHypGeomDist()
+{
+    RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScHypGeomDist" );
+    sal_uInt8 nParamCount = GetByte();
+    if ( !MustHaveParamCount( nParamCount, 4, 5 ) )
         return;
 
+    bool bCumulative = ( nParamCount == 5 ? GetBool() : false );
     double N = ::rtl::math::approxFloor(GetDouble());
     double M = ::rtl::math::approxFloor(GetDouble());
     double n = ::rtl::math::approxFloor(GetDouble());
     double x = ::rtl::math::approxFloor(GetDouble());
 
-    // Default Cumulative = FALSE (PMF) for 4-arg legacy compatibility
-    // 5-arg calls use explicit Cumulative flag
-    double bCumulative = 0.0;
-    if ( GetByte() == 5 )
-        bCumulative = GetBool();
-
-    if( (x < 0.0) || (n < x) || (M < x) || (N < n) || (N < M) || (x < n - N + M) )
+    double fVal = GetHypGeomDist( x, n, M, N );
+    if (bCumulative && !nGlobalError)
     {
-        PushIllegalArgument();
-        return;
-    }
-
-    typedef ::std::vector< double > HypContainer;
-    HypContainer cnNumer, cnDenom;
-
-    size_t nEstContainerSize = static_cast<size_t>( x + ::std::min( n, M ) );
-    size_t nMaxSize = ::std::min( cnNumer.max_size(), nMaxArraySize );
-    if ( nEstContainerSize > nMaxSize )
-    {
-        PushNoValue();
-        return;
-    }
-    cnNumer.reserve( nEstContainerSize + 10 );
-    cnDenom.reserve( nEstContainerSize + 10 );
-
-    // Trim coefficient C first
-    double fCNumVarUpper = N - n - M + x - 1.0;
-    double fCDenomVarLower = 1.0;
-    if ( N - n - M + x >= M - x + 1.0 )
-    {
-        fCNumVarUpper = M - x - 1.0;
-        fCDenomVarLower = N - n - 2.0*(M - x) + 1.0;
-    }
-
-#ifdef DBG_UTIL
-    double fCNumLower = N - n - fCNumVarUpper;
-#endif
-    double fCDenomUpper = N - n - M + x + 1.0 - fCDenomVarLower;
-
-    double fDNumVarLower = n - M;
-
-    if ( n >= M + 1.0 )
-    {
-        if ( N - M < n + 1.0 )
+        // Sum the smaller tail with the term ratios, walking away from the
+        // mode so the terms only shrink and the summed value stays accurate.
+        double fMode = ::rtl::math::approxFloor( (n + 1.0) * (M + 1.0) / (N + 2.0));
+        double fSum = 0.0;
+        double fTerm = fVal;
+        if (x < fMode)
         {
-            // Case 1
-
-            if ( N - n < n + 1.0 )
+            double fLow = ::std::max( 0.0, n - N + M);
+            for (double k = x; k > fLow; --k)
             {
-                // no overlap
-                lcl_PutFactorialElements( cnNumer, 0.0, fCNumVarUpper, N - n );
-                lcl_PutFactorialElements( cnDenom, 0.0, N - n - 1.0, N );
+                fSum += fTerm;
+                fTerm *= k * (N - M - n + k) / ((M - k + 1.0) * (n - k + 1.0));
             }
-            else
-            {
-                // overlap
-                DBG_ASSERT( fCNumLower < n + 1.0, "ScHypGeomDist: wrong assertion" );
-                lcl_PutFactorialElements( cnNumer, N - 2.0*n, fCNumVarUpper, N - n );
-                lcl_PutFactorialElements( cnDenom, 0.0, n - 1.0, N );
-            }
-
-            DBG_ASSERT( fCDenomUpper <= N - M, "ScHypGeomDist: wrong assertion" );
-
-            if ( fCDenomUpper < n - x + 1.0 )
-                // no overlap
-                lcl_PutFactorialElements( cnNumer, 1.0, N - M - n + x, N - M + 1.0 );
-            else
-            {
-                // overlap
-                lcl_PutFactorialElements( cnNumer, 1.0, N - M - fCDenomUpper, N - M + 1.0 );
-
-                fCDenomUpper = n - x;
-                fCDenomVarLower = N - M - 2.0*(n - x) + 1.0;
-            }
+            fVal = fSum + fTerm;
         }
         else
         {
-            // Case 2
-
-            if ( n > M - 1.0 )
+            double fHigh = ::std::min( n, M);
+            for (double k = x; k < fHigh; ++k)
             {
-                // no overlap
-                lcl_PutFactorialElements( cnNumer, 0.0, fCNumVarUpper, N - n );
-                lcl_PutFactorialElements( cnDenom, 0.0, M - 1.0, N );
+                fTerm *= (M - k) * (n - k) / ((k + 1.0) * (N - M - n + k + 1.0));
+                fSum += fTerm;
             }
-            else
-            {
-                lcl_PutFactorialElements( cnNumer, M - n, fCNumVarUpper, N - n );
-                lcl_PutFactorialElements( cnDenom, 0.0, n - 1.0, N );
-            }
-
-            DBG_ASSERT( fCDenomUpper <= n, "ScHypGeomDist: wrong assertion" );
-
-            if ( fCDenomUpper < n - x + 1.0 )
-                // no overlap
-                lcl_PutFactorialElements( cnNumer, N - M - n + 1.0, N - M - n + x, N - M + 1.0 );
-            else
-            {
-                lcl_PutFactorialElements( cnNumer, N - M - n + 1.0, N - M - fCDenomUpper, N - M + 1.0 );
-                fCDenomUpper = n - x;
-                fCDenomVarLower = N - M - 2.0*(n - x) + 1.0;
-            }
+            fVal = 1.0 - fSum;
         }
-
-        DBG_ASSERT( fCDenomUpper <= M, "ScHypGeomDist: wrong assertion" );
     }
-    else
-    {
-        if ( N - M < M + 1.0 )
-        {
-            // Case 3
-
-            if ( N - n < M + 1.0 )
-            {
-                // No overlap
-                lcl_PutFactorialElements( cnNumer, 0.0, fCNumVarUpper, N - n );
-                lcl_PutFactorialElements( cnDenom, 0.0, N - M - 1.0, N );
-            }
-            else
-            {
-                lcl_PutFactorialElements( cnNumer, N - n - M, fCNumVarUpper, N - n );
-                lcl_PutFactorialElements( cnDenom, 0.0, n - 1.0, N );
-            }
-
-            if ( n - x + 1.0 > fCDenomUpper )
-                // No overlap
-                lcl_PutFactorialElements( cnNumer, 1.0, N - M - n + x, N - M + 1.0 );
-            else
-            {
-                // Overlap
-                lcl_PutFactorialElements( cnNumer, 1.0, N - M - fCDenomUpper, N - M + 1.0 );
-
-                fCDenomVarLower = N - M - 2.0*(n - x) + 1.0;
-                fCDenomUpper = n - x;
-            }
-        }
-        else
-        {
-            // Case 4
-
-            DBG_ASSERT( M >= n - x, "ScHypGeomDist: wrong assertion" );
-            DBG_ASSERT( M - x <= N - M + 1.0, "ScHypGeomDist: wrong assertion" );
-
-            if ( N - n < N - M + 1.0 )
-            {
-                // No overlap
-                lcl_PutFactorialElements( cnNumer, 0.0, fCNumVarUpper, N - n );
-                lcl_PutFactorialElements( cnDenom, 0.0, M - 1.0, N );
-            }
-            else
-            {
-                // Overlap
-                DBG_ASSERT( fCNumLower <= N - M + 1.0, "ScHypGeomDist: wrong assertion" );
-
-                lcl_PutFactorialElements( cnNumer, M - n, fCNumVarUpper, N - n );
-                lcl_PutFactorialElements( cnDenom, 0.0, n - 1.0, N );
-            }
-
-            if ( n - x + 1.0 > fCDenomUpper )
-                // No overlap
-                lcl_PutFactorialElements( cnNumer, N - 2.0*M + 1.0, N - M - n + x, N - M + 1.0 );
-            else if ( M >= fCDenomUpper )
-            {
-                lcl_PutFactorialElements( cnNumer, N - 2.0*M + 1.0, N - M - fCDenomUpper, N - M + 1.0 );
-
-                fCDenomUpper = n - x;
-                fCDenomVarLower = N - M - 2.0*(n - x) + 1.0;
-            }
-            else
-            {
-                DBG_ASSERT( M <= fCDenomUpper, "ScHypGeomDist: wrong assertion" );
-                lcl_PutFactorialElements( cnDenom, fCDenomVarLower, N - n - 2.0*M + x,
-                        N - n - M + x + 1.0 );
-
-                fCDenomUpper = n - x;
-                fCDenomVarLower = N - M - 2.0*(n - x) + 1.0;
-            }
-        }
-
-        DBG_ASSERT( fCDenomUpper <= n, "ScHypGeomDist: wrong assertion" );
-
-        fDNumVarLower = 0.0;
-    }
-
-    double nDNumVarUpper   = fCDenomUpper < x + 1.0 ? n - x - 1.0     : n - fCDenomUpper - 1.0;
-    double nDDenomVarLower = fCDenomUpper < x + 1.0 ? fCDenomVarLower : N - n - M + x + 1.0;
-    lcl_PutFactorialElements( cnNumer, fDNumVarLower, nDNumVarUpper, n );
-    lcl_PutFactorialElements( cnDenom, nDDenomVarLower, N - n - M + x, N - n - M + x + 1.0 );
-
-    ::std::sort( cnNumer.begin(), cnNumer.end() );
-    ::std::sort( cnDenom.begin(), cnDenom.end() );
-    HypContainer::reverse_iterator it1 = cnNumer.rbegin(), it1End = cnNumer.rend();
-    HypContainer::reverse_iterator it2 = cnDenom.rbegin(), it2End = cnDenom.rend();
-
-    double fFactor = 1.0;
-    for ( ; it1 != it1End || it2 != it2End; )
-    {
-        double fEnum = 1.0, fDenom = 1.0;
-        if ( it1 != it1End )
-            fEnum  = *it1++;
-        if ( it2 != it2End )
-            fDenom = *it2++;
-        fFactor *= fEnum / fDenom;
-    }
-
-    double fPMF = fFactor;
-
-    if ( bCumulative )
-    {
-        // Compute CDF: sum of PMF from 0 to x
-        double fCDF = 0.0;
-        for ( double k = 0.0; k <= x; k++ )
-        {
-            // Use the same PMF computation logic
-            double fPMF_k = lcl_CalcHypGeomPMF( N, M, n, k );
-            fCDF += fPMF_k;
-        }
-        PushDouble( fCDF );
-    }
-    else
-    {
-        PushDouble( fPMF );
-    }
+    PushDouble( fVal);
 }
+
 void ScInterpreter::ScGammaDist()
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScGammaDist" );
@@ -2359,6 +2025,18 @@ void ScInterpreter::ScTInv()
     PushDouble(fVal);
 }
 
+class ScFDistLeftFunction : public ScDistFunc
+{
+    ScInterpreter&  rInt;
+    double          fp, fF1, fF2;
+
+public:
+            ScFDistLeftFunction( ScInterpreter& rI, double fpVal, double fF1Val, double fF2Val ) :
+                rInt(rI), fp(fpVal), fF1(fF1Val), fF2(fF2Val) {}
+
+    double  GetValue( double x ) const  { return fp - rInt.GetBetaDist( fF1 * x / (fF1 * x + fF2), fF1 / 2.0, fF2 / 2.0); }
+};
+
 class ScFDistFunction : public ScDistFunc
 {
     ScInterpreter&  rInt;
@@ -2369,20 +2047,6 @@ public:
                 rInt(rI), fp(fpVal), fF1(fF1Val), fF2(fF2Val) {}
 
     double  GetValue( double x ) const  { return fp - rInt.GetFDist(x, fF1, fF2); }
-};
-
-class ScStandardFDistFunction : public ScDistFunc
-{
-    ScInterpreter&  rInt;
-    double          fp, fF1, fF2;
-
-public:
-            ScStandardFDistFunction( ScInterpreter& rI, double fpVal, double fF1Val, double fF2Val ) :
-                rInt(rI), fp(fpVal), fF1(fF1Val), fF2(fF2Val) {}
-
-    // Left-tail CDF: 1 - right-tail CDF
-    // We want: left-tail = fp => 1 - right-tail = fp => right-tail = 1 - fp
-    double  GetValue( double x ) const  { return (1.0 - fp) - rInt.GetFDist(x, fF1, fF2); }
 };
 
 void ScInterpreter::ScFInv()
@@ -2400,7 +2064,34 @@ void ScInterpreter::ScFInv()
     }
 
     bool bConvError;
-    ScStandardFDistFunction aFunc( *this, fP, fF1, fF2 );
+    ScFDistFunction aFunc( *this, fP, fF1, fF2 );
+    double fVal = lcl_IterateInverse( aFunc, fF1*0.5, fF1, bConvError );
+    if (bConvError)
+        SetError(errNoConvergence);
+    PushDouble(fVal);
+}
+
+void ScInterpreter::ScFInvLeft()
+{
+    RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScFInvLeft" );
+    if ( !MustHaveParamCount( GetByte(), 3 ) )
+        return;
+    double fF2 = ::rtl::math::approxFloor(GetDouble());
+    double fF1 = ::rtl::math::approxFloor(GetDouble());
+    double fP  = GetDouble();
+    if (fP < 0.0 || fP >= 1.0 || fF1 < 1.0 || fF2 < 1.0 || fF1 >= 1.0E10 || fF2 >= 1.0E10)
+    {
+        PushIllegalArgument();
+        return;
+    }
+    if (fP == 0.0)
+    {
+        PushDouble(0.0);
+        return;
+    }
+
+    bool bConvError;
+    ScFDistLeftFunction aFunc( *this, fP, fF1, fF2 );
     double fVal = lcl_IterateInverse( aFunc, fF1*0.5, fF1, bConvError );
     if (bConvError)
         SetError(errNoConvergence);

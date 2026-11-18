@@ -112,7 +112,7 @@ short lcl_GetRetFormat( OpCode eOpCode )
         case ocZins:
         case ocIRR:
         case ocMIRR:
-        case ocRRI:
+        case ocZGZ:
         case ocEffektiv:
         case ocNominal:
         case ocPercentSign:
@@ -497,6 +497,12 @@ void FormulaCompiler::OpCodeMap::putOpCode( const String & rStr, const OpCode eO
         mpHashMap->insert( OpCodeHashMap::value_type( rStr, eOp));
     }
 }
+void FormulaCompiler::OpCodeMap::putOpCodeAlias( const String & rStr, const OpCode eOp )
+{
+    DBG_ASSERT( 0 < eOp && sal_uInt16(eOp) < mnSymbols, "OpCodeMap::putOpCodeAlias: OpCode out of range");
+    if (0 < eOp && sal_uInt16(eOp) < mnSymbols)
+        mpHashMap->insert( OpCodeHashMap::value_type( rStr, eOp));
+}
 // -----------------------------------------------------------------------------
 // class FormulaCompiler
 // -----------------------------------------------------------------------------
@@ -620,8 +626,6 @@ void lcl_fillNativeSymbols(FormulaCompiler::NonConstOpCodeMapPtr& _xMap,bool _de
         OModuleClient aModuleClient;
         OpCodeList aOpCodeListNative( RID_STRLIST_FUNCTION_NAMES, s_SymbolMap );
         // No AddInMap for native core mapping.
-        // Add ZGZ as alias for RRI (ocRRI) for backward compatibility
-        s_SymbolMap->putOpCode(String::CreateFromAscii("ZGZ"), ocRRI);
     } // if ( !s_SymbolMap.get() )
     _xMap = s_SymbolMap;
 }
@@ -660,9 +664,6 @@ void FormulaCompiler::InitSymbolsEnglish() const
 	static NonConstOpCodeMapPtr s_sSymbol;
 	if ( !s_sSymbol.get() )
     	loadSymbols(RID_STRLIST_FUNCTION_NAMES_ENGLISH,FormulaGrammar::GRAM_ENGLISH,s_sSymbol);
-	// Add ZGZ as alias for RRI (ocRRI) for backward compatibility
-	if (s_sSymbol.get())
-		s_sSymbol->putOpCode(String::CreateFromAscii("ZGZ"), ocRRI);
 	mxSymbolsEnglish = s_sSymbol;
 }
 // -----------------------------------------------------------------------------
@@ -671,9 +672,6 @@ void FormulaCompiler::InitSymbolsPODF() const
 	static NonConstOpCodeMapPtr s_sSymbol;
 	if ( !s_sSymbol.get() )
     	loadSymbols(RID_STRLIST_FUNCTION_NAMES_ENGLISH,FormulaGrammar::GRAM_PODF,s_sSymbol);
-	// Add ZGZ as alias for RRI (ocRRI) for backward compatibility
-	if (s_sSymbol.get())
-		s_sSymbol->putOpCode(String::CreateFromAscii("ZGZ"), ocRRI);
 	mxSymbolsPODF = s_sSymbol;
 }
 // -----------------------------------------------------------------------------
@@ -682,9 +680,6 @@ void FormulaCompiler::InitSymbolsODFF() const
 	static NonConstOpCodeMapPtr s_sSymbol;
 	if ( !s_sSymbol.get() )
     	loadSymbols(RID_STRLIST_FUNCTION_NAMES_ENGLISH_ODFF,FormulaGrammar::GRAM_ODFF,s_sSymbol);
-	// Add ZGZ as alias for RRI (ocRRI) for backward compatibility
-	if (s_sSymbol.get())
-		s_sSymbol->putOpCode(String::CreateFromAscii("ZGZ"), ocRRI);
 	mxSymbolsODFF = s_sSymbol;
 }
 // -----------------------------------------------------------------------------
@@ -696,6 +691,8 @@ void FormulaCompiler::loadSymbols(sal_uInt16 _nSymbols,FormulaGrammar::Grammar _
         _xMap.reset( new OpCodeMap( SC_OPCODE_LAST_OPCODE_ID + 1, _eGrammar != FormulaGrammar::GRAM_ODFF, _eGrammar ));
         OModuleClient aModuleClient;
         OpCodeList aOpCodeList( _nSymbols, _xMap );
+        // Files and API callers before RRI got its ODF name used ZGZ.
+        _xMap->putOpCodeAlias( String::CreateFromAscii("ZGZ"), ocZGZ);
 
         fillFromAddInMap( _xMap, _eGrammar);
         // Fill from collection for AddIns not already present.
@@ -1080,6 +1077,10 @@ void FormulaCompiler::Factor()
                 pFacToken = new FormulaFAPToken( pFacToken->GetOpCode(), nSepCount, pFacToken );
             else
                 pFacToken->SetByte( nSepCount );
+            // ODF ISOWEEKNUM has one argument; AOO wrote WEEKNUM to ODF as
+            // ISOWEEKNUM with two, so only the two argument form stays ocWeek.
+            if ( nSepCount == 1 && pFacToken->GetOpCode() == ocWeek && mxSymbols->isODFF() )
+                pFacToken->NewOpCode( ocIsoWeekNum, FormulaToken::PrivateAccess());
             // EASTERSUNDAY() without a year depends on today's date
             if ( bNoParam && pFacToken->GetOpCode() == ocEasterSunday )
                 pArr->SetRecalcModeAlways();

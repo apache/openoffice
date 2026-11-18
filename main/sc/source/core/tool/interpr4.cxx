@@ -61,8 +61,6 @@
 #include "externalrefmgr.hxx"
 #include "doubleref.hxx"
 #include "token.hxx"
-#include "stringutil.hxx"
-#include <rtl/ustrbuf.hxx>
 
 #include <math.h>
 #include <float.h>
@@ -3515,7 +3513,7 @@ StackVar ScInterpreter::Interpret()
                 case ocGetDay           : ScGetDay();                   break;
                 case ocGetDayOfWeek     : ScGetDayOfWeek();             break;
                 case ocWeek             : ScGetWeekOfYear();            break;
-                case ocIsoWeekNum       : ScIsoWeekNum();             break;
+                case ocIsoWeekNum       : ScIsoWeekNum();               break;
                 case ocEasterSunday     : ScEasterSunday();             break;
                 case ocGetHour          : ScGetHour();                  break;
                 case ocGetMin           : ScGetMin();                   break;
@@ -3616,7 +3614,7 @@ StackVar ScInterpreter::Interpret()
                 case ocColumn           : ScColumn();                   break;
                 case ocRow              : ScRow();                      break;
                 case ocTable            : ScTable();                    break;
-                case ocRRI              : ScRRI();                      break;
+                case ocZGZ              : ScZGZ();                      break;
                 case ocZW               : ScZW();                       break;
                 case ocZZR              : ScZZR();                      break;
                 case ocZins             : ScZins();                     break;
@@ -3690,7 +3688,7 @@ StackVar ScInterpreter::Interpret()
                 case ocLogNormDist      : ScLogNormDist();              break;
                 case ocTDist            : ScTDist();                    break;
                 case ocFDist            : ScFDist();                    break;
-                case ocLegacyFDist      : ScLegacyFDist();              break;
+                case ocFDistLeft        : ScFDistLeft();                break;
                 case ocChiDist          : ScChiDist();                  break;
                 case ocChiSqDist        : ScChiSqDist();                break;
                 case ocStandard         : ScStandard();                 break;
@@ -3744,7 +3742,7 @@ StackVar ScInterpreter::Interpret()
                 case ocChiSqInv         : ScChiSqInv();                 break;
                 case ocTInv             : ScTInv();                     break;
                 case ocFInv             : ScFInv();                     break;
-                case ocLegacyFInv       : ScLegacyFInv();                 break;
+                case ocFInvLeft         : ScFInvLeft();                 break;
                 case ocLogInv           : ScLogNormInv();               break;
                 case ocBetaDist         : ScBetaDist();                 break;
                 case ocBetaInv          : ScBetaInv();                  break;
@@ -3753,6 +3751,7 @@ StackVar ScInterpreter::Interpret()
 //              case ocErrCell          : ScErrCell();                  break;
                 case ocStop :                                           break;
                 case ocErrorType        : ScErrorType();                break;
+                case ocErrorTypeODF     : ScErrorType( true );          break;
                 case ocCurrent          : ScCurrent();                  break;
                 case ocStyle            : ScStyle();                    break;
                 case ocDde              : ScDde();                      break;
@@ -3862,6 +3861,7 @@ StackVar ScInterpreter::Interpret()
     case ocCount : \
     case ocCount2 : \
     case ocErrorType : \
+    case ocErrorTypeODF : \
     case ocIsEmpty : \
     case ocIsErr : \
     case ocIsError : \
@@ -4069,132 +4069,4 @@ StackVar ScInterpreter::Interpret()
         // interpreters.
         static_cast<ScToken*>(xResult.operator->())->GetMatrix()->SetImmutable( true);
     return eType;
-}
-
-void ScInterpreter::ScNumberValue()
-{
-    RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScNumberValue" );
-    sal_uInt8 nParamCount = GetByte();
-    if ( MustHaveParamCount( nParamCount, 1, 3 ) )
-    {
-        // Parameters are popped in reverse order: group_sep, decimal_sep, text
-        sal_Unicode dsep = 0;
-        sal_Unicode gsep = 0;
-
-        if (nParamCount >= 3)
-        {
-            String aGroupSep = GetString();
-            if (aGroupSep.Len() > 0)
-                gsep = aGroupSep.GetChar(0);
-        }
-        if (nParamCount >= 2)
-        {
-            String aDecSep = GetString();
-            if (aDecSep.Len() > 0)
-                dsep = aDecSep.GetChar(0);
-        }
-
-        String aText = GetString();
-
-        // Use locale defaults for omitted or empty separators
-        if (dsep == 0)
-        {
-            const String& rDefDecSep = pFormatter->GetNumDecimalSep();
-            if (rDefDecSep.Len() > 0)
-                dsep = rDefDecSep.GetChar(0);
-        }
-        if (gsep == 0)
-        {
-            const String& rDefThousandSep = pFormatter->GetNumThousandSep();
-            if (rDefThousandSep.Len() > 0)
-                gsep = rDefThousandSep.GetChar(0);
-        }
-
-        // ODF 1.4 §6.13.28 transformation steps:
-        // 1. Remove all whitespace characters
-        // 2. Count and strip trailing percent signs (each divides by 100)
-        // 3. Remove all group separator characters (lenient, no 3-digit check)
-        // 4. Replace decimal separator with ASCII period for parsing
-        // 5. Parse as number, verify entire string consumed
-        // 6. Divide by 100 for each percent sign
-
-        ::rtl::OUString aOUText(aText);
-        sal_Int32 nLen = aOUText.getLength();
-
-        // Step 1: Remove all whitespace
-        ::rtl::OUStringBuffer aBuf;
-        aBuf.reserve(nLen);
-        const sal_Unicode* p = aOUText.getStr();
-        for (sal_Int32 i = 0; i < nLen; ++i)
-        {
-            sal_Unicode c = p[i];
-            if (c != sal_Unicode(' ') && c != sal_Unicode('\t') &&
-                c != sal_Unicode('\n') && c != sal_Unicode('\r'))
-                aBuf.append(c);
-        }
-        aOUText = aBuf.makeStringAndClear();
-        nLen = aOUText.getLength();
-
-        if (nLen == 0)
-        {
-            PushIllegalArgument();
-            return;
-        }
-
-        // Step 2: Count trailing percent signs
-        sal_Int32 nPercentCount = 0;
-        const sal_Unicode* pStr = aOUText.getStr();
-        while (nLen > 0 && pStr[nLen - 1] == sal_Unicode('%'))
-        {
-            ++nPercentCount;
-            --nLen;
-        }
-
-        // Step 3: Remove group separators (skip if same as decimal separator)
-        ::rtl::OUStringBuffer aBuf2;
-        aBuf2.reserve(nLen);
-        p = aOUText.getStr();
-        for (sal_Int32 i = 0; i < nLen; ++i)
-        {
-            sal_Unicode c = p[i];
-            if (gsep != 0 && c == gsep && (dsep == 0 || c != dsep))
-                continue;
-            aBuf2.append(c);
-        }
-        aOUText = aBuf2.makeStringAndClear();
-        nLen = aOUText.getLength();
-
-        // Step 4: Replace decimal separator with ASCII period
-        ::rtl::OUStringBuffer aBuf3;
-        aBuf3.reserve(nLen);
-        p = aOUText.getStr();
-        for (sal_Int32 i = 0; i < nLen; ++i)
-        {
-            sal_Unicode c = p[i];
-            if (dsep != 0 && c == dsep)
-                aBuf3.append(sal_Unicode('.'));
-            else
-                aBuf3.append(c);
-        }
-        ::rtl::OUString aParsable = aBuf3.makeStringAndClear();
-
-        // Step 5: Parse as number, verify entire string consumed
-        rtl_math_ConversionStatus eStatus;
-        sal_Int32 nParseEnd = 0;
-        double fVal = ::rtl::math::stringToDouble(aParsable, '.', 0,
-                                                  &eStatus, &nParseEnd);
-
-        if (eStatus != rtl_math_ConversionStatus_Ok ||
-            nParseEnd != (sal_Int32)aParsable.getLength())
-        {
-            PushIllegalArgument();
-            return;
-        }
-
-        // Step 6: Apply percent signs
-        for (sal_Int32 i = 0; i < nPercentCount; ++i)
-            fVal /= 100.0;
-
-        PushDouble(fVal);
-    }
 }

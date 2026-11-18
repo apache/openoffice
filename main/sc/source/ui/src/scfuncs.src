@@ -1012,7 +1012,7 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 			0;
 			ID_FUNCTION_GRP_DATETIME;
 			U2S( HID_FUNC_ISOWEEKNUM );
-			1;	0;	0;
+			1;	0;
 			0;
 		};
 		String 2 // Name of Parameter 1
@@ -2184,18 +2184,18 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 			Text [ en-US ] = "The future value of the investment." ;
 		};
 	};
-	// -=*# Resource for function RRI #*=-
-	Resource SC_OPCODE_RRI
+	// -=*# Resource for function ZGZ #*=-
+	Resource SC_OPCODE_ZGZ
 	{
 		String 1 // Description
 		{
-			Text [ en-US ] = "Calculates the equivalent interest rate for the growth of an investment." ;
+			Text [ en-US ] = "Interest. Calculates the interest rate which represents the rate of return from an investment." ;
 		};
 		ExtraData =
 		{
 			0;
 			ID_FUNCTION_GRP_FINANZ;
-			U2S( HID_FUNC_RRI );
+			U2S( HID_FUNC_ZGZ );
 			3;	0;	0;	0;
 			0;
 		};
@@ -2205,23 +2205,23 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		String 3 // Description of Parameter 1
 		{
-			Text [ en-US ] = "The number of periods." ;
+			Text [ en-US ] = "The number of periods used in the calculation." ;
 		};
 		String 4 // Name of Parameter 2
 		{
-			Text [ en-US ] = "PV" ;
+			Text [ en-US ] = "pv" ;
 		};
 		String 5 // Description of Parameter 2
 		{
-			Text [ en-US ] = "Present value of the investment." ;
+			Text [ en-US ] = "Present value. The current value of the investment." ;
 		};
 		String 6 // Name of Parameter 3
 		{
-			Text [ en-US ] = "Fv" ;
+			Text [ en-US ] = "FV" ;
 		};
 		String 7 // Description of Parameter 3
 		{
-			Text [ en-US ] = "Future value of the investment." ;
+			Text [ en-US ] = "The future value of the investment." ;
 		};
 	};
 	// -=*# Resource for function ISTBEZUG #*=-
@@ -6671,7 +6671,7 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_HYPGEOMVERT );
-			5;	0;	0;	0;	0;
+			5;	0;	0;	0;	0;	1;
 			0;
 		};
 		String 2 // Name of Parameter 1
@@ -6712,7 +6712,7 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		String 11 // Description of Parameter 5
 		{
-			Text [ en-US ] = "If TRUE (default), returns the cumulative distribution function; if FALSE, returns the probability mass function." ;
+			Text [ en-US ] = "0 or FALSE or omitted calculates the probability mass function. Any other value or TRUE calculates the cumulative distribution function." ;
 		};
 	};
 	// -=*# Resource for function TVERT #*=-
@@ -6798,8 +6798,8 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		{
 			0;
 			ID_FUNCTION_GRP_STATISTIC;
-			U2S( HID_FUNC_FDIST );
-			4;	0;	0;	0;
+			U2S( HID_FUNC_FVERT );
+			3;	0;	0;	0;
 			0;
 		};
 		String 2 // Name of Parameter 1
@@ -6825,14 +6825,6 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		String 7 // Description of Parameter 3
 		{
 			Text [ en-US ] = "The degrees of freedom in the denominator of the F distribution." ;
-		};
-		String 8 // Name of Parameter 4
-		{
-			Text [ en-US ] = "cumulative" ;
-		};
-		String 9 // Description of Parameter 4
-		{
-			Text [ en-US ] = "If TRUE, the cumulative distribution function is returned; if FALSE, the probability density function is returned. Default is TRUE." ;
 		};
 	};
 	// -=*# Resource for function FINV #*=-
@@ -6875,19 +6867,19 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 			Text [ en-US ] = "The degrees of freedom in the denominator of the F distribution." ;
 		};
 	};
-	// -=*# Resource for function LEGACY.FDIST #*=-
-	Resource SC_OPCODE_LEGACY_F_DIST
+	// -=*# Resource for function F.DIST #*=-
+	Resource SC_OPCODE_F_DIST_LEFT
 	{
 		String 1 // Description
 		{
-			Text [ en-US ] = "Values of the right-tailed F probability distribution (legacy)." ;
+			Text [ en-US ] = "Values of the left-tailed F probability distribution." ;
 		};
 		ExtraData =
 		{
 			0;
 			ID_FUNCTION_GRP_STATISTIC;
-			U2S( HID_FUNC_LEGACY_FDIST );
-			4;	0;	0;	0;
+			U2S( HID_FUNC_F_DIST_LEFT );
+			4;	0;	0;	0;	1;
 			0;
 		};
 		String 2 // Name of Parameter 1
@@ -6916,25 +6908,25 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		String 8 // Name of Parameter 4
 		{
-			Text [ en-US ] = "cumulative" ;
+			Text [ en-US ] = "Cumulative" ;
 		};
 		String 9 // Description of Parameter 4
 		{
-			Text [ en-US ] = "If TRUE (default), the right-tailed cumulative distribution function is returned; if FALSE, the probability density function is returned." ;
+			Text [ en-US ] = "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function." ;
 		};
 	};
-	// -=*# Resource for function LEGACY.FINV #*=-
-	Resource SC_OPCODE_LEGACY_F_INV
+	// -=*# Resource for function F.INV #*=-
+	Resource SC_OPCODE_F_INV_LEFT
 	{
 		String 1 // Description
 		{
-			Text [ en-US ] = "Values of the inverse right-tailed F probability distribution (legacy)." ;
+			Text [ en-US ] = "Values of the inverse left-tailed F distribution." ;
 		};
 		ExtraData =
 		{
 			0;
 			ID_FUNCTION_GRP_STATISTIC;
-			U2S( HID_FUNC_LEGACY_FINV );
+			U2S( HID_FUNC_F_INV_LEFT );
 			3;	0;	0;	0;
 			0;
 		};
@@ -6944,7 +6936,7 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		String 3 // Description of Parameter 1
 		{
-			Text [ en-US ] = "The probability value for which the inverse right-tailed F distribution is to be calculated." ;
+			Text [ en-US ] = "The probability value for which the inverse left-tailed F distribution is to be calculated." ;
 		};
 		String 4 // Name of Parameter 2
 		{
@@ -8256,6 +8248,30 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 			Text [ en-US ] = "The reference (cell) in which the error occurred." ;
 		};
 	};
+	// -=*# Resource for function ERROR.TYPE #*=-
+	Resource SC_OPCODE_ERROR_TYPE_ODF
+	{
+		String 1 // Description
+		{
+			Text [ en-US ] = "Returns a number from 1 to 7 for the kind of error value" ;
+		};
+		ExtraData =
+		{
+			0;
+			ID_FUNCTION_GRP_TABLE;
+			U2S( HID_FUNC_ERROR_TYPE_ODF );
+			1;	0;
+			0;
+		};
+		String 2 // Name of Parameter 1
+		{
+			Text [ en-US ] = "reference" ;
+		};
+		String 3 // Description of Parameter 1
+		{
+			Text [ en-US ] = "The reference (cell) in which the error occurred." ;
+		};
+	};
 	// -=*# Resource for function VORLAGE #*=-
 	Resource SC_OPCODE_STYLE
 	{
@@ -9496,16 +9512,16 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 	{
 		String 1 // Description
 		{
-			Text [ en-US ] = "Converts text to a number using explicitly specified decimal and group separators." ;
+			Text [ en-US ] = "Converts text to a number, in a locale-independent way." ;
 		};
-ExtraData =
-	{
-		0;
-		ID_FUNCTION_GRP_TEXT;
-		U2S( HID_FUNC_NUMBERVALUE );
-		3;	0;	0;
-		0;
-	};
+		ExtraData =
+		{
+			0;
+			ID_FUNCTION_GRP_TEXT;
+			U2S( HID_FUNC_NUMBERVALUE );
+			3;	0;	1;	1;
+			0;
+		};
 		String 2 // Name of Parameter 1
 		{
 			Text [ en-US ] = "text" ;
@@ -9516,11 +9532,11 @@ ExtraData =
 		};
 		String 4 // Name of Parameter 2
 		{
-			Text [ en-US ] = "decimal_separator" ;
+			Text [ en-US ] = "decimal_point" ;
 		};
 		String 5 // Description of Parameter 2
 		{
-			Text [ en-US ] = "Defines the character used as the decimal separator." ;
+			Text [ en-US ] = "Defines the character used as the decimal point." ;
 		};
 		String 6 // Name of Parameter 3
 		{
@@ -9528,7 +9544,7 @@ ExtraData =
 		};
 		String 7 // Description of Parameter 3
 		{
-			Text [ en-US ] = "Defines the character used as the group (thousands) separator." ;
+			Text [ en-US ] = "Defines the characters used as group separators." ;
 		};
 	};
 	Resource SC_OPCODE_LENB

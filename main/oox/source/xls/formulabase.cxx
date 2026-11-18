@@ -439,9 +439,9 @@ static const FunctionData saFuncTableBiff3[] =
     { "GROWTH",                 "GROWTH",               52,     52,     1,  4,  A, { RA, RA, RA, VV }, 0 },             // BIFF2: 1-3, BIFF3: 1-4
     { "TRUNC",                  "TRUNC",                197,    197,    1,  2,  V, { VR }, 0 },                      // BIFF2: 1,   BIFF3: 1-2
     { "DOLLAR",                 "USDOLLAR",             204,    204,    1,  2,  V, { VR }, FUNCFLAG_IMPORTONLY },
-    { 0/*"FIND"*/,              "FINDB",                205,    205,    2,  3,  V, { VR }, 0 },
-    { 0/*"SEARCH"*/,            "SEARCHB",              206,    206,    2,  3,  V, { VR }, 0 },
-    { 0/*"REPLACE"*/,           "REPLACEB",             207,    207,    4,  4,  V, { VR }, 0 },
+    { "FINDB",                  "FINDB",                205,    205,    2,  3,  V, { VR }, 0 },
+    { "SEARCHB",                "SEARCHB",              206,    206,    2,  3,  V, { VR }, 0 },
+    { "REPLACEB",               "REPLACEB",             207,    207,    4,  4,  V, { VR }, 0 },
     { "LEFTB",                  "LEFTB",                208,    208,    1,  2,  V, { VR }, 0 },
     { "RIGHTB",                 "RIGHTB",               209,    209,    1,  2,  V, { VR }, 0 },
     { "MIDB",                   "MIDB",                 210,    210,    3,  3,  V, { VR }, 0 },
@@ -483,7 +483,7 @@ static const FunctionData saFuncTableBiff4[] =
     { "RANK",                   "RANK",                 216,    216,    2,  3,  V, { VR, RO, VR }, 0 },
     { "DB",                     "DB",                   247,    247,    4,  5,  V, { VR }, 0 },
     { "FREQUENCY",              "FREQUENCY",            252,    252,    2,  2,  A, { RA }, 0 },
-    { "ORG.OPENOFFICE.ERRORTYPE","ERROR.TYPE",          261,    261,    1,  1,  V, { VR }, 0 },
+    { "ERROR.TYPE",             "ERROR.TYPE",           261,    261,    1,  1,  V, { VR }, 0 },
     { "AVEDEV",                 "AVEDEV",               269,    269,    1,  MX, V, { RX }, 0 },
     { "BETADIST",               "BETADIST",             270,    270,    3,  5,  V, { VR }, 0 },
     { "GAMMALN",                "GAMMALN",              271,    271,    1,  1,  V, { VR }, 0 },
@@ -668,7 +668,7 @@ static const FunctionData saFuncTableBiff5[] =
     { "COUNTIF",                "COUNTIF",              346,    346,    2,  2,  V, { RO, VR }, 0 },
     { "COUNTBLANK",             "COUNTBLANK",           347,    347,    1,  1,  V, { RO }, 0 },
     { "ISPMT",                  "ISPMT",                350,    350,    4,  4,  V, { VR }, 0 },
-    { 0,                        "DATEDIF",              351,    351,    3,  3,  V, { VR }, FUNCFLAG_IMPORTONLY },   // not supported in Calc
+    { "DATEDIF",                "DATEDIF",              351,    351,    3,  3,  V, { VR }, FUNCFLAG_IMPORTONLY },
     { 0,                        "DATESTRING",           352,    352,    1,  1,  V, { VR }, FUNCFLAG_IMPORTONLY },   // not supported in Calc, missing in OOXML spec
     { 0,                        "NUMBERSTRING",         353,    353,    2,  2,  V, { VR }, FUNCFLAG_IMPORTONLY },   // not supported in Calc, missing in OOXML spec
     { "ROMAN",                  "ROMAN",                354,    354,    1,  2,  V, { VR }, 0 },
@@ -748,15 +748,13 @@ static const FunctionData saFuncTableOdf[] =
     { "COMBINA",                0,                      NOID,   NOID,   2,  2,  V, { VR }, FUNCFLAG_MACROCALLODF },
     { "DAYS",                   0,                      NOID,   NOID,   2,  2,  V, { VR }, FUNCFLAG_MACROCALLODF },
     { "DECIMAL",                0,                      NOID,   NOID,   2,  2,  V, { VR }, FUNCFLAG_MACROCALLODF },
-    { "FDIST",                  0,                      NOID,   NOID,   3,  4,  V, { VR }, FUNCFLAG_MACROCALLODF },
-    { "FINV",                   0,                      NOID,   NOID,   3,  3,  V, { VR }, FUNCFLAG_MACROCALLODF },
     { "FORMULA",                0,                      NOID,   NOID,   1,  1,  V, { RO }, FUNCFLAG_MACROCALLODF },
     { "GAMMA",                  0,                      NOID,   NOID,   1,  1,  V, { VR }, FUNCFLAG_MACROCALLODF },
     { "GAUSS",                  0,                      NOID,   NOID,   1,  1,  V, { VR }, FUNCFLAG_MACROCALLODF },
     { "ISFORMULA",              0,                      NOID,   NOID,   1,  1,  V, { RO }, FUNCFLAG_MACROCALLODF },
     { "ISOWEEKNUM",             0,                      NOID,   NOID,   1,  2,  V, { VR }, FUNCFLAG_MACROCALLODF },
     { "MUNIT",                  0,                      NOID,   NOID,   1,  1,  A, { VR }, FUNCFLAG_MACROCALLODF },
-    { "NUMBERVALUE",            0,                      NOID,   NOID,   2,  2,  V, { VR }, FUNCFLAG_MACROCALLODF },
+    { "NUMBERVALUE",            0,                      NOID,   NOID,   1,  3,  V, { VR }, FUNCFLAG_MACROCALLODF },
     { "PDURATION",              0,                      NOID,   NOID,   3,  3,  V, { VR }, FUNCFLAG_MACROCALLODF },
     { "PERMUTATIONA",           0,                      NOID,   NOID,   2,  2,  V, { VR }, FUNCFLAG_MACROCALLODF },
     { "PHI",                    0,                      NOID,   NOID,   1,  1,  V, { VR }, FUNCFLAG_MACROCALLODF },
@@ -1154,7 +1152,8 @@ bool OpCodeProviderImpl::fillFuncTokenMaps( ApiTokenMap& orIntFuncTokenMap, ApiT
         const FormulaOpCodeMapEntry* pEntry = orEntrySeq.getConstArray();
         const FormulaOpCodeMapEntry* pEntryEnd = pEntry + orEntrySeq.getLength();
         for( ; pEntry != pEntryEnd; ++pEntry )
-            ((pEntry->Token.OpCode == OPCODE_EXTERNAL) ? orExtFuncTokenMap : orIntFuncTokenMap)[ pEntry->Name ] = pEntry->Token;
+            // first entry wins, as in the formula compiler (ISOWEEKNUM names two opcodes)
+            ((pEntry->Token.OpCode == OPCODE_EXTERNAL) ? orExtFuncTokenMap : orIntFuncTokenMap).insert( ApiTokenMap::value_type( pEntry->Name, pEntry->Token ) );
     }
     return orEntrySeq.hasElements();
 }

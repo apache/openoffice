@@ -3068,6 +3068,111 @@ void ScInterpreter::ScT()
 }
 
 
+// Lexical form of xsd:float without INF and NaN.
+static bool lcl_IsPlainFloat( const String& rStr )
+{
+    xub_StrLen n = rStr.Len(), i = 0;
+    if ( i < n && (rStr.GetChar(i) == '+' || rStr.GetChar(i) == '-') )
+        ++i;
+    xub_StrLen nDigits = 0;
+    while ( i < n && rStr.GetChar(i) >= '0' && rStr.GetChar(i) <= '9' )
+        ++i, ++nDigits;
+    if ( i < n && rStr.GetChar(i) == '.' )
+    {
+        ++i;
+        while ( i < n && rStr.GetChar(i) >= '0' && rStr.GetChar(i) <= '9' )
+            ++i, ++nDigits;
+    }
+    if ( !nDigits )
+        return false;
+    if ( i < n && (rStr.GetChar(i) == 'e' || rStr.GetChar(i) == 'E') )
+    {
+        ++i;
+        if ( i < n && (rStr.GetChar(i) == '+' || rStr.GetChar(i) == '-') )
+            ++i;
+        xub_StrLen nExp = 0;
+        while ( i < n && rStr.GetChar(i) >= '0' && rStr.GetChar(i) <= '9' )
+            ++i, ++nExp;
+        if ( !nExp )
+            return false;
+    }
+    return i == n;
+}
+
+void ScInterpreter::ScNumberValue()
+{
+    RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScNumberValue" );
+    sal_uInt8 nParamCount = GetByte();
+    if ( !MustHaveParamCount( nParamCount, 1, 3 ) )
+        return;
+
+    String aGroupSep, aDecSep;
+    if ( nParamCount == 3 )
+        aGroupSep = GetString();
+    if ( nParamCount >= 2 )
+        aDecSep = GetString();
+    else
+        aDecSep = pFormatter->GetNumDecimalSep();
+    if ( nParamCount < 3 )
+    {
+        aGroupSep = pFormatter->GetNumThousandSep();
+        // The locale's group separator must not cancel an explicit decimal separator.
+        if ( aDecSep.Len() == 1 && aGroupSep.Search( aDecSep.GetChar(0) ) != STRING_NOTFOUND )
+            aGroupSep.Erase();
+    }
+    String aText = GetString();
+    if ( nGlobalError )
+    {
+        PushError( nGlobalError );
+        return;
+    }
+    if ( aDecSep.Len() != 1 || aGroupSep.Search( aDecSep.GetChar(0) ) != STRING_NOTFOUND )
+    {
+        PushIllegalArgument();
+        return;
+    }
+
+    // ODF 1.2 6.13.28: group separators before the decimal separator go, the
+    // first decimal separator becomes '.', whitespace goes, then trailing '%'.
+    sal_Unicode cDecSep = aDecSep.GetChar(0);
+    String aNum;
+    bool bDecimal = false;
+    for ( xub_StrLen i = 0; i < aText.Len(); ++i )
+    {
+        sal_Unicode c = aText.GetChar(i);
+        if ( !bDecimal && c == cDecSep )
+        {
+            bDecimal = true;
+            aNum.Append( sal_Unicode('.') );
+        }
+        else if ( !bDecimal && aGroupSep.Search( c ) != STRING_NOTFOUND )
+            ;
+        else if ( c != ' ' && c != '\t' && c != '\n' && c != '\r' )
+            aNum.Append( c );
+    }
+    int nPercent = 0;
+    while ( aNum.Len() && aNum.GetChar( aNum.Len() - 1 ) == '%' )
+    {
+        aNum.Erase( aNum.Len() - 1 );
+        ++nPercent;
+    }
+    if ( !lcl_IsPlainFloat( aNum ) )
+    {
+        PushIllegalArgument();
+        return;
+    }
+    rtl_math_ConversionStatus eStatus;
+    double fVal = ::rtl::math::stringToDouble( aNum, '.', 0, &eStatus, NULL );
+    if ( eStatus != rtl_math_ConversionStatus_Ok )
+    {
+        PushIllegalArgument();
+        return;
+    }
+    while ( nPercent-- > 0 )
+        fVal /= 100.0;
+    PushDouble( fVal );
+}
+
 void ScInterpreter::ScValue()
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScValue" );
@@ -8168,8 +8273,8 @@ void ScInterpreter::ScFindB()
                 return;
             }
         }
-        String aFindText = GetString();
         String aWithinText = GetString();
+        String aFindText = GetString();
 
         sal_Int32 nByteLen = getLengthB(aWithinText);
         if ( fStart > static_cast<double>(nByteLen) )
@@ -8210,8 +8315,8 @@ void ScInterpreter::ScSearchB()
                 return;
             }
         }
-        String aFindText = GetString();
         String aWithinText = GetString();
+        String aFindText = GetString();
 
         sal_Int32 nByteLen = getLengthB(aWithinText);
         if ( fStart > static_cast<double>(nByteLen) )
@@ -8571,32 +8676,35 @@ void ScInterpreter::ScConcat()
 }
 
 
-static sal_uInt16 MapErrorType( sal_uInt16 nInternalErr )
+// ODF ERROR.TYPE numbers, as the Excel export writes these errors.
+static sal_uInt16 lcl_ErrorTypeODF( sal_uInt16 nErr )
 {
-    switch ( nInternalErr )
+    switch ( nErr )
     {
-        case errNoCode:              // 521 → #NULL!
-            return 1;
-        case errDivisionByZero:      // 532 → #DIV/0!
-            return 2;
-        case errNoValue:             // 519 → #VALUE!
-            return 3;
-        case errNoRef:               // 524 → #REF!
-            return 4;
-        case errNoName:              // 525 → #NAME?
-            return 5;
-        case errIllegalFPOperation:  // 503 → #NUM!
-            return 6;
-        case NOTAVAILABLE:           // 0x7fff → #N/A
-            return 7;
-        default:
-            return 0; // Unknown error type → will produce #N/A error
+        case errNoCode:             return 1;   // #NULL!
+        case errDivisionByZero:     return 2;   // #DIV/0!
+        case errNoValue:
+        case errIllegalArgument:
+        case errIllegalParameter:
+        case errPairExpected:
+        case errOperatorExpected:
+        case errVariableExpected:
+        case errParameterExpected:
+        case errCircularReference:  return 3;   // #VALUE!
+        case errNoRef:              return 4;   // #REF!
+        case errNoName:
+        case errNoAddin:
+        case errNoMacro:            return 5;   // #NAME?
+        case errIllegalFPOperation: return 6;   // #NUM!
     }
+    return 7;                                   // #N/A
 }
 
-void ScInterpreter::ScErrorType()
+void ScInterpreter::ScErrorType( bool bODF )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScErrorType" );
+    if ( bODF && !MustHaveParamCount( GetByte(), 1 ) )
+        return;
     sal_uInt16 nErr;
     sal_uInt16 nOldError = nGlobalError;
     nGlobalError = 0;
@@ -8663,11 +8771,12 @@ void ScInterpreter::ScErrorType()
             PopError();
             nErr = nGlobalError;
     }
-    sal_uInt16 nErrorType = MapErrorType( nErr );
-    if ( nErrorType )
+    if ( nErr && bODF )
+        nErr = lcl_ErrorTypeODF( nErr );
+    if ( nErr )
     {
         nGlobalError = 0;
-        PushDouble( nErrorType );
+        PushDouble( nErr );
     }
     else
     {
