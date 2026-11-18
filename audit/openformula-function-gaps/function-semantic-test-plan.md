@@ -231,7 +231,7 @@ Test cases:
   e) =RRI(10;-100;200) — negative Pv (not run)
   f) =RRI(10;100) — wrong arg count (error)
   g) xls: `_xlfnodf.RRI` (AOO reads it back, Excel #NAME?); xlsx
-     `_xlfn.RRI` gives #NAME?
+     `_xlfn.RRI` is read
 
 Expected: ScZGZ() (interpr2.cxx) computes pow(Fv/Pv, 1/N) - 1
   with NO validation. c) to e) are not checked by the code.

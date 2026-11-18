@@ -171,8 +171,8 @@ mappings, not as a real BIFF function ID for import purposes.
 
 The xlsx import is a separate table in oox/source/xls/formulabase.cxx. Since
 2026-11-18 it reads FINDB, SEARCHB, REPLACEB, DATEDIF and ERROR.TYPE (run
-with a hand-made xlsx); `_xlfn.ISOWEEKNUM`, `_xlfn.F.DIST`,
-`_xlfn.NUMBERVALUE` and `_xlfn.RRI` still give #NAME? (run).
+with a hand-made xlsx); `_xlfn.F.DIST`, `_xlfn.F.INV`, `_xlfn.NUMBERVALUE` and `_xlfn.RRI` are read too
+(run, hand-made xlsx); `_xlfn.ISOWEEKNUM` still gives #NAME? (run).
 
 Defects Found
 -------------

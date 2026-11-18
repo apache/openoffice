@@ -64,6 +64,7 @@ As-of 2026-11-18.
 - xls and xlsx: ERROR.TYPE in an Excel file is read as ERROR.TYPE. It used to be read as ERRORTYPE and gave the internal error number. ERRORTYPE is still saved as ERROR.TYPE, so in an xls it comes back as ERROR.TYPE.
 - xlsx: we read DATEDIF, FINDB, SEARCHB and REPLACEB.
 - xlsx: we read `_xlfn.BITAND` and plain `BITAND`, and the same for the other four bit functions. They gave #NAME? before.
+- xlsx: we read `_xlfn.F.DIST`, `_xlfn.F.INV`, `_xlfn.NUMBERVALUE` and `_xlfn.RRI`. They gave #NAME? before.
 
 ## Known limitations
 
@@ -73,7 +74,7 @@ As-of 2026-11-18.
 - SKEWP of symmetric data can return a tiny leftover like 3.7E-17 instead of 0.
 - DCOUNT and DCOUNTA with field 0 count all the matching records instead of giving an error. An empty criteria cell is ignored, so `DCOUNT(R1:T6;"Age";W1:W2)` counts all 5 records.
 - xls: HYPGEOMDIST with five arguments is saved as `NA()`; the xls function only takes four. NUMBERVALUE and RRI are saved under ODF names that we read back but Excel shows as #NAME?. F.DIST with three arguments is saved as `_xlfn.F.DIST`, which Excel shows as #N/A because it wants four.
-- xlsx: `_xlfn.ISOWEEKNUM`, `_xlfn.F.DIST`, `_xlfn.F.INV`, `_xlfn.NUMBERVALUE` and `_xlfn.RRI` give #NAME?.
+- xlsx: `_xlfn.ISOWEEKNUM` gives #NAME?.
 - ERROR.TYPE gives an `Err:` error the number Excel gets when the file is saved as xls, so `ERROR.TYPE(SQRT(-1))` is 3 (`Err:502` becomes #VALUE!). Excel gives 6.
 - NUMBERVALUE of empty text is an error, as ODF says; Excel gives 0. An empty GroupSeparator is fine here and an error in Excel.
 - DATEDIF "yd" from February 29, 2020 to March 1, 2023 gives 1; Excel gives 0.

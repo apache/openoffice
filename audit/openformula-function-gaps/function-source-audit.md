@@ -438,7 +438,7 @@ C. Format compatibility
 
 - ODF: of:RRI written; of:ZGZ and of:RRI read (run).
 - XLS: `_xlfnodf.RRI`; AOO reads it back, Excel shows #NAME? (run).
-- XLSX import: `_xlfn.RRI` gives #NAME? (run).
+- XLSX import: `_xlfn.RRI` is read (run, 2026-11-18).
 
 D. Documentation: English help (04060118.xhp, unchanged from trunk).
 
@@ -542,7 +542,7 @@ B. Actual implementation: the ODF steps in order: group separators
 C. Format compatibility
 
 - XLS: `_xlfnodf.NUMBERVALUE`; AOO reads it back, Excel shows #NAME? (run).
-- XLSX import: `_xlfn.NUMBERVALUE` gives #NAME? (run).
+- XLSX import: `_xlfn.NUMBERVALUE` is read (run, 2026-11-18).
 
 D. Documentation: func_numbervalue.xhp (rules added 2026-11-18).
 
@@ -636,7 +636,7 @@ C. Format compatibility
 
 - ODF: of:FDIST ↔ F.DIST, of:LEGACY.FDIST ↔ FDIST (run, round trip).
 - XLS: FDIST as 281 (run); F.DIST as `_xlfn.F.DIST`, Excel calculates the 4-argument form (run); `_xlfnodf.FDIST` from an older xls reads as FDIST (run).
-- XLSX: FDIST (281) read (run); `_xlfn.F.DIST` gives #NAME? (run).
+- XLSX: FDIST (281) read (run); `_xlfn.F.DIST` is read (run, 2026-11-18).
 
 D. Documentation: FDIST help as on trunk; F.DIST section added.
 

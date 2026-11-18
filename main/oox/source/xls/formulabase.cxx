@@ -734,7 +734,11 @@ static const FunctionData saFuncTableOox[] =
     { "BITOR",                  "BITOR",                NOID,   NOID,   2,  2,  V, { VR }, FUNCFLAG_MACROCALL },
     { "BITXOR",                 "BITXOR",               NOID,   NOID,   2,  2,  V, { VR }, FUNCFLAG_MACROCALL },
     { "BITLSHIFT",              "BITLSHIFT",            NOID,   NOID,   2,  2,  V, { VR }, FUNCFLAG_MACROCALL },
-    { "BITRSHIFT",              "BITRSHIFT",            NOID,   NOID,   2,  2,  V, { VR }, FUNCFLAG_MACROCALL }
+    { "BITRSHIFT",              "BITRSHIFT",            NOID,   NOID,   2,  2,  V, { VR }, FUNCFLAG_MACROCALL },
+    { "FDIST",                  "F.DIST",               NOID,   NOID,   4,  4,  V, { VR }, FUNCFLAG_MACROCALL },
+    { "FINV",                   "F.INV",                NOID,   NOID,   3,  3,  V, { VR }, FUNCFLAG_MACROCALL },
+    { "NUMBERVALUE",            "NUMBERVALUE",          NOID,   NOID,   1,  3,  V, { VR }, FUNCFLAG_MACROCALL },
+    { "RRI",                    "RRI",                  NOID,   NOID,   3,  3,  V, { VR }, FUNCFLAG_MACROCALL }
 };
 
 /** Functions defined by OpenFormula, but not supported by Calc or by Excel. */
