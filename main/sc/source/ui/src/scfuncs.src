@@ -2189,7 +2189,7 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 	{
 		String 1 // Description
 		{
-			Text [ en-US ] = "Interest. Calculates the interest rate which represents the rate of return from an investment." ;
+			Text [ en-US ] = "Calculates the equivalent interest rate for the growth of an investment." ;
 		};
 		ExtraData =
 		{
@@ -2205,7 +2205,7 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		String 3 // Description of Parameter 1
 		{
-			Text [ en-US ] = "The number of periods used in the calculation." ;
+			Text [ en-US ] = "The number of periods." ;
 		};
 		String 4 // Name of Parameter 2
 		{
@@ -2213,15 +2213,15 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 		};
 		String 5 // Description of Parameter 2
 		{
-			Text [ en-US ] = "Present value. The current value of the investment." ;
+			Text [ en-US ] = "Present value of the investment." ;
 		};
 		String 6 // Name of Parameter 3
 		{
-			Text [ en-US ] = "FV" ;
+			Text [ en-US ] = "Fv" ;
 		};
 		String 7 // Description of Parameter 3
 		{
-			Text [ en-US ] = "The future value of the investment." ;
+			Text [ en-US ] = "Future value of the investment." ;
 		};
 	};
 	// -=*# Resource for function ISTBEZUG #*=-
