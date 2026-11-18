@@ -244,6 +244,13 @@ LINKLINKFILES= \
    text$/scalc$/01$/func_iferror.xhp \
    text$/scalc$/01$/func_ifna.xhp \
    text$/scalc$/01$/func_skewp.xhp \
+   text$/scalc$/01$/func_datedif.xhp \
+   text$/scalc$/01$/func_errortype.xhp \
+   text$/scalc$/01$/func_findb.xhp \
+   text$/scalc$/01$/func_isoweeknum.xhp \
+   text$/scalc$/01$/func_numbervalue.xhp \
+   text$/scalc$/01$/func_replaceb.xhp \
+   text$/scalc$/01$/func_searchb.xhp \
    text$/scalc$/01$/solver.xhp \
    text$/scalc$/01$/solver_options.xhp \
    text$/scalc$/01$/text2columns.xhp \

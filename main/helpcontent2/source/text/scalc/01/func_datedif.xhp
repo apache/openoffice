@@ -41,7 +41,7 @@
 <paragraph role="code" id="par_id3155515" xml-lang="en-US" l10n="U">DATEDIF(StartDate; EndDate; Format)</paragraph>
 <paragraph role="paragraph" id="par_id3155516" xml-lang="en-US" l10n="U"><emph>StartDate</emph> is the start date of the interval.</paragraph>
 <paragraph role="paragraph" id="par_id3155517" xml-lang="en-US" l10n="U"><emph>EndDate</emph> is the end date of the interval. Time fractions are ignored.</paragraph>
-<paragraph role="paragraph" id="par_id3155518" xml-lang="en-US" l10n="U"><emph>Format</emph> is a text value that specifies the unit of the result. The format is case-sensitive.</paragraph>
+<paragraph role="paragraph" id="par_id3155518" xml-lang="en-US" l10n="U"><emph>Format</emph> is a text value that specifies the unit of the result. Upper and lower case letters are equivalent.</paragraph>
 <table id="tbl_id3155519">
 <tablerow>
 <tablecell>
@@ -80,7 +80,7 @@
 <paragraph role="tablecontent" id="par_id3155528" xml-lang="en-US" l10n="U">"md"</paragraph>
 </tablecell>
 <tablecell>
-<paragraph role="tablecontent" id="par_id3155529" xml-lang="en-US" l10n="U">Days, ignoring months and years.</paragraph>
+<paragraph role="tablecontent" id="par_id3155529" xml-lang="en-US" l10n="U">Days, ignoring months and years. As in Microsoft Excel, the days of the month before the month of <emph>EndDate</emph> are borrowed, so the result can be negative: from January 31 to March 1, 2024 it is -1.</paragraph>
 </tablecell>
 </tablerow>
 <tablerow>
@@ -96,11 +96,11 @@
 <paragraph role="tablecontent" id="par_id3155532" xml-lang="en-US" l10n="U">"yd"</paragraph>
 </tablecell>
 <tablecell>
-<paragraph role="tablecontent" id="par_id3155533" xml-lang="en-US" l10n="U">Days, ignoring years.</paragraph>
+<paragraph role="tablecontent" id="par_id3155533" xml-lang="en-US" l10n="U">Days, ignoring years. As in Microsoft Excel, <emph>EndDate</emph> is moved into the year of <emph>StartDate</emph>, or into the next year if it would come before <emph>StartDate</emph>.</paragraph>
 </tablecell>
 </tablerow>
 </table>
-<paragraph role="paragraph" id="par_id3155534" xml-lang="en-US" l10n="U">If <emph>StartDate</emph> is later than <emph>EndDate</emph>, the result for formats "d", "m", and "y" is negative. The component formats "md", "ym", and "yd" return a non-negative value.</paragraph>
+<paragraph role="paragraph" id="par_id3155534" xml-lang="en-US" l10n="U">If <emph>StartDate</emph> is later than <emph>EndDate</emph>, the result is an error.</paragraph>
 <paragraph role="heading" id="hd_id3155535" xml-lang="en-US" level="3" l10n="U">Examples</paragraph>
 <paragraph role="paragraph" id="par_id3155536" xml-lang="en-US" l10n="U"><item type="input">=DATEDIF("2024-01-01";"2024-12-31";"d")</item> returns 365.</paragraph>
 <paragraph role="paragraph" id="par_id3155537" xml-lang="en-US" l10n="U"><item type="input">=DATEDIF("2024-01-01";"2025-01-01";"y")</item> returns 1.</paragraph>

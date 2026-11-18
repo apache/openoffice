@@ -40,8 +40,9 @@
 <paragraph role="heading" id="hd_id3155594" xml-lang="en-US" level="3" l10n="U">Syntax</paragraph>
 <paragraph role="code" id="par_id3155595" xml-lang="en-US" l10n="U">NUMBERVALUE(Text; DecimalSeparator; GroupSeparator)</paragraph>
 <paragraph role="paragraph" id="par_id3155596" xml-lang="en-US" l10n="U"><emph>Text</emph> is the text to be converted to a number.</paragraph>
-<paragraph role="paragraph" id="par_id3155597" xml-lang="en-US" l10n="U"><emph>DecimalSeparator</emph> is the character used as the decimal separator. If omitted, the system locale default is used.</paragraph>
-<paragraph role="paragraph" id="par_id3155598" xml-lang="en-US" l10n="U"><emph>GroupSeparator</emph> is the character used as the group (thousands) separator. If omitted, the system locale default is used.</paragraph>
+<paragraph role="paragraph" id="par_id3155597" xml-lang="en-US" l10n="U"><emph>DecimalSeparator</emph> (optional) is the character used as the decimal separator. If omitted, the decimal separator of the locale is used.</paragraph>
+<paragraph role="paragraph" id="par_id3155598" xml-lang="en-US" l10n="U"><emph>GroupSeparator</emph> (optional) holds the characters used as group (thousands) separators. If omitted, the group separator of the locale is used, unless it is the decimal separator.</paragraph>
+<paragraph role="paragraph" id="par_id3155603" xml-lang="en-US" l10n="NEW">Group separators are removed only before the decimal separator, spaces are ignored, and each percent sign at the end divides the result by 100. What remains must be a plain number, which may have an exponent. <emph>DecimalSeparator</emph> must be a single character that does not occur in <emph>GroupSeparator</emph>.</paragraph>
 <paragraph role="heading" id="hd_id3155599" xml-lang="en-US" level="3" l10n="U">Examples</paragraph>
 <paragraph role="paragraph" id="par_id3155600" xml-lang="en-US" l10n="U"><item type="input">=NUMBERVALUE("1.234";".";",")</item> returns 1.234.</paragraph>
 <paragraph role="paragraph" id="par_id3155601" xml-lang="en-US" l10n="U"><item type="input">=NUMBERVALUE("1.234,56";",";".")</item> returns 1234.56.</paragraph>
