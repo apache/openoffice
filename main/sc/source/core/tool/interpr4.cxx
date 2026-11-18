@@ -3690,6 +3690,7 @@ StackVar ScInterpreter::Interpret()
                 case ocLogNormDist      : ScLogNormDist();              break;
                 case ocTDist            : ScTDist();                    break;
                 case ocFDist            : ScFDist();                    break;
+                case ocLegacyFDist      : ScLegacyFDist();              break;
                 case ocChiDist          : ScChiDist();                  break;
                 case ocChiSqDist        : ScChiSqDist();                break;
                 case ocStandard         : ScStandard();                 break;
@@ -3743,6 +3744,7 @@ StackVar ScInterpreter::Interpret()
                 case ocChiSqInv         : ScChiSqInv();                 break;
                 case ocTInv             : ScTInv();                     break;
                 case ocFInv             : ScFInv();                     break;
+                case ocLegacyFInv       : ScLegacyFInv();                 break;
                 case ocLogInv           : ScLogNormInv();               break;
                 case ocBetaDist         : ScBetaDist();                 break;
                 case ocBetaInv          : ScBetaInv();                  break;

@@ -407,13 +407,15 @@
 #define SC_OPCODE_IFERROR           411
 #define SC_OPCODE_FINDB             412
 #define SC_OPCODE_SEARCHB           413
-#define SC_OPCODE_REPLACEB          414
+#define SC_OPCODE_REPLACEB           414
 #define SC_OPCODE_DATEDIF           415
 #define SC_OPCODE_ISOWEEKNUM        416
+#define SC_OPCODE_LEGACY_F_DIST     417
+#define SC_OPCODE_LEGACY_F_INV      418
 
-#define SC_OPCODE_STOP_2_PAR        417
+#define SC_OPCODE_STOP_2_PAR        419
 
-#define SC_OPCODE_LAST_OPCODE_ID    416      /* last OpCode */
+#define SC_OPCODE_LAST_OPCODE_ID    418      /* last OpCode */
 
 /*** Interna ***/
 #define SC_OPCODE_INTERNAL_BEGIN   9999

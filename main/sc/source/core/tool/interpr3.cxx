@@ -1604,7 +1604,7 @@ void ScInterpreter::ScFDist()
     double fF2 = ::rtl::math::approxFloor(GetDouble());
     double fF1 = ::rtl::math::approxFloor(GetDouble());
     double fF  = GetDouble();
-    double fCum = 1.0; // default to cumulative = TRUE
+    double fCum = 1.0; // default to cumulative = TRUE (left-tail CDF for standard)
     if (GetByte() == 4)
         fCum = GetDouble();
     if (fF < 0.0 || fF1 < 1.0 || fF2 < 1.0 || fF1 >= 1.0E10 || fF2 >= 1.0E10)
@@ -1614,14 +1614,68 @@ void ScInterpreter::ScFDist()
     }
     if (fCum == 0.0)
     {
-        // Probability density function
+        // Probability density function (same as legacy)
         PushDouble(GetFDistDens(fF, fF1, fF2));
     }
     else
     {
-        // Cumulative distribution function (default)
+        // Cumulative distribution function: LEFT-TAIL (standard)
+        // Left-tail = 1 - Right-tail
+        double fRightTail = GetFDist(fF, fF1, fF2);
+        PushDouble(1.0 - fRightTail);
+    }
+}
+
+}
+
+void ScInterpreter::ScLegacyFDist()
+{
+    RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScLegacyFDist" );
+    if ( !MustHaveParamCount( GetByte(), 3, 4 ) )
+        return;
+    double fF2 = ::rtl::math::approxFloor(GetDouble());
+    double fF1 = ::rtl::math::approxFloor(GetDouble());
+    double fF  = GetDouble();
+    double fCum = 1.0; // default to cumulative = TRUE (right-tail CDF for legacy)
+    if (GetByte() == 4)
+        fCum = GetDouble();
+    if (fF < 0.0 || fF1 < 1.0 || fF2 < 1.0 || fF1 >= 1.0E10 || fF2 >= 1.0E10)
+    {
+        PushIllegalArgument();
+        return;
+    }
+    if (fCum == 0.0)
+    {
+        // Probability density function (same as standard)
+        PushDouble(GetFDistDens(fF, fF1, fF2));
+    }
+    else
+    {
+        // Cumulative distribution function: RIGHT-TAIL (legacy)
         PushDouble(GetFDist(fF, fF1, fF2));
     }
+}
+
+void ScInterpreter::ScLegacyFInv()
+{
+    RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScLegacyFInv" );
+    if ( !MustHaveParamCount( GetByte(), 3 ) )
+        return;
+    double fF2 = ::rtl::math::approxFloor(GetDouble());
+    double fF1 = ::rtl::math::approxFloor(GetDouble());
+    double fP  = GetDouble();
+    if (fP <= 0.0 || fF1 < 1.0 || fF2 < 1.0 || fF1 >= 1.0E10 || fF2 >= 1.0E10 || fP > 1.0)
+    {
+        PushIllegalArgument();
+        return;
+    }
+
+    bool bConvError;
+    ScFDistFunction aFunc( *this, fP, fF1, fF2 );
+    double fVal = lcl_IterateInverse( aFunc, fF1*0.5, fF1, bConvError );
+    if (bConvError)
+        SetError(errNoConvergence);
+    PushDouble(fVal);
 }
 
 void ScInterpreter::ScChiDist()
@@ -2174,6 +2228,20 @@ public:
     double  GetValue( double x ) const  { return fp - rInt.GetFDist(x, fF1, fF2); }
 };
 
+class ScStandardFDistFunction : public ScDistFunc
+{
+    ScInterpreter&  rInt;
+    double          fp, fF1, fF2;
+
+public:
+            ScStandardFDistFunction( ScInterpreter& rI, double fpVal, double fF1Val, double fF2Val ) :
+                rInt(rI), fp(fpVal), fF1(fF1Val), fF2(fF2Val) {}
+
+    // Left-tail CDF: 1 - right-tail CDF
+    // We want: left-tail = fp => 1 - right-tail = fp => right-tail = 1 - fp
+    double  GetValue( double x ) const  { return (1.0 - fp) - rInt.GetFDist(x, fF1, fF2); }
+};
+
 void ScInterpreter::ScFInv()
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScFInv" );
@@ -2189,7 +2257,7 @@ void ScInterpreter::ScFInv()
     }
 
     bool bConvError;
-    ScFDistFunction aFunc( *this, fP, fF1, fF2 );
+    ScStandardFDistFunction aFunc( *this, fP, fF1, fF2 );
     double fVal = lcl_IterateInverse( aFunc, fF1*0.5, fF1, bConvError );
     if (bConvError)
         SetError(errNoConvergence);
