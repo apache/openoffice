@@ -57,7 +57,8 @@ def read_cases(path):
 
 # Analysis add-in functions are not known by their English names to setFormula;
 # the case formulas keep the ODF names and are rewritten to the programmatic names.
-ADDIN = {"RECEIVED": "getReceived", "BESSELK": "getBesselk", "BESSELY": "getBessely", "CONVERT": "getConvert"}
+ADDIN = {"RECEIVED": "getReceived", "BESSELK": "getBesselk", "BESSELY": "getBessely", "CONVERT": "getConvert",
+         "ODDFPRICE": "getOddfprice", "ODDFYIELD": "getOddfyield"}
 
 
 def api_formula(f):
