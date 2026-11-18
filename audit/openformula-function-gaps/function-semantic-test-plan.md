@@ -1,3 +1,22 @@
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License.
+-->
+
 OpenFormula Function Compatibility Gap Audit — Semantic Test Plan
 =================================================================
 
@@ -5,8 +24,16 @@ Branch: openformula
 Starting commit: 6a2f742073
 Audit type: Read-only source inspection (tests prepared, NOT executed)
 
+Updated 2026-11-18 to match the code after the post-merge review. The SG.*
+rows were replaced by 99 rows at the end of
+test/odf-validate/calcval-cases14.tsv, checked against Excel 16 where Excel
+has the function and run on macOS and Linux builds (all match). Expected
+values below that were wrong are corrected; where AOO and Excel differ on
+purpose, the row note says so.
+
 This document provides a test matrix for all 15 audited functions.
 Tests are designed but not run. Each test distinguishes:
+
   1. Formula parser rejection
   2. Unknown function
   3. Wrong argument count
@@ -21,137 +48,124 @@ Expected results are derived from ODF 1.4 Part 4 (where applicable)
 or independently calculated mathematical examples. No test result is
 claimed as verified.
 
-
-1. FINDB
+1\. FINDB
 --------
 
-Not defined by ODF 1.4. Excel-specific byte-oriented find (DBCS model).
+Defined by ODF 1.2 and 1.4 (§6.7.2: "The same as FIND, but using byte
+positions"). Byte model: DBCS (CJK characters count 2 bytes).
 
-Test cases (implemented as `SG.FINDB-*` in `test/odf-validate/calcval-cases14.tsv`):
+Test cases (rows `FINDB.*` in `test/odf-validate/calcval-cases14.tsv`):
   a) =FINDB("b";"abc") — basic byte position (2)
-  b) =FINDB("b";"abc";2) — start position (2)
+  b) =FINDB("b";"abcb";3) — start position (4)
   c) =FINDB("x";"abc") — not found (#VALUE!)
   d) =FINDB("B";"abc") — case-sensitive (#VALUE!)
   e) =FINDB("a";"abc";0) — start < 1 (#VALUE!)
-  f) =FINDB("a";"abc";10) — start > len (#VALUE!)
-  g) =FINDB("中";"中国") — DBCS first char (1, byte pos 1)
-  h) =FINDB("国";"中国") — DBCS second char (3)
-  i) =FINDB("b";"a中b") — mixed ASCII/DBCS (4)
-  j) =FINDB("国";"中国";3) — DBCS boundary start (3)
+  f) =FINDB("a";"abc";4) — start past the text (#VALUE!)
+  g) =FINDB("国";"中国") — DBCS second char (3)
+  h) =FINDB("b";"a中b") — mixed ASCII/DBCS (4)
 
-Implemented: ScFindB() (interpr1.cxx:8155) uses AOO DBCS byte model
+Implemented: ScFindB() (interpr1.cxx) uses the AOO DBCS byte model
   (DBCS=2 bytes, ASCII=1) via getLengthB, lcl_BytePosToCharIndex,
-  lcl_CharIndexToBytePos. Case-sensitive, no wildcards.
+  lcl_CharIndexToBytePos. Case-sensitive, no wildcards. The two text
+  arguments were popped in the wrong order until 2026-11-18.
+  Excel 16 counts a CJK character as 1 byte unless a DBCS language is set,
+  so g) and h) give 2 and 3 there.
 
 Purpose: Confirm FINDB byte-position semantics and DBCS handling.
 
-
-2. REPLACEB
+2\. REPLACEB
 -----------
 
-Not defined by ODF 1.4. Excel-specific byte-oriented replace (DBCS model).
+Defined by ODF 1.2 and 1.4 (§6.7.6: "As REPLACE, but using byte
+positions").
 
-Test cases (implemented as `SG.REPLACEB-*` in `test/odf-validate/calcval-cases14.tsv`):
-  a) =REPLACEB("abc";2;1;"x") — basic replace (axc)
-  b) =REPLACEB("abc";4;0;"d") — append at end (abcd)
-  c) =REPLACEB("abcdef";2;2;"xy") — multi-byte (axydef)
-  d) =REPLACEB("中国";1;2;"中") — DBCS replace first char
-  e) =REPLACEB("abc";0;1;"x") — start < 1 (#VALUE!)
-  f) =REPLACEB("abc";2;-1;"x") — negative count (#VALUE!)
-  g) =REPLACEB("abc";10;1;"x") — start > len clamps (abcx)
-  h) =REPLACEB("中国";3;2;"国") — DBCS boundary (中国)
-  i) =REPLACEB("abc";1;3;"xyz") — replace all (xyz)
-  j) =REPLACEB("abc";2;0;"x") — zero count inserts (axbc)
+Test cases (rows `REPLACEB.*` in `test/odf-validate/calcval-cases14.tsv`):
+  a) =REPLACEB("abc";2;1;"X") — basic replace (aXc)
+  b) =REPLACEB("abc";2;0;"X") — zero count inserts (aXbc)
+  c) =REPLACEB("abc";4;1;"X") — start after the end appends (abcX)
+  d) =REPLACEB("abc";2;10;"X") — count past the end (aX)
+  e) =REPLACEB("abc";0;1;"X") — start < 1 (error)
+  f) =REPLACEB("abc";2;-1;"X") — negative count (error)
+  g) =REPLACEB("中国";3;2;"日") — second DBCS character (中日)
 
-Implemented: ScReplaceB() (interpr1.cxx:8250) uses AOO DBCS byte model
+Implemented: ScReplaceB() (interpr1.cxx) uses the AOO DBCS byte model
   via getLengthB, lcl_BytePosToCharIndex, lcl_CharIndexToBytePos.
   Clamps position/count, handles DBCS boundaries.
 
 Purpose: Confirm REPLACEB byte-position replace and boundary handling.
 
-
-3. SEARCHB
+3\. SEARCHB
 ----------
 
-Not defined by ODF 1.4. Excel-specific byte-oriented search (DBCS model).
+Defined by ODF 1.2 and 1.4 (§6.7.8: "As SEARCH, but using byte
+positions").
 
-Test cases (implemented as `SG.SEARCHB-*` in `test/odf-validate/calcval-cases14.tsv`):
-  a) =SEARCHB("b";"abc") — basic byte position (2)
-  b) =SEARCHB("B";"abc") — case-insensitive (2)
-  c) =SEARCHB("a?c";"abc") — wildcard ? (1)
-  d) =SEARCHB("a*c";"abc") — wildcard * (1)
-  e) =SEARCHB("b";"abc";2) — start position (2)
-  f) =SEARCHB("x";"abc") — not found (#VALUE!)
-  g) =SEARCHB("中";"中国") — DBCS first char (1)
-  h) =SEARCHB("国";"中国") — DBCS second char (3)
-  i) =SEARCHB("b";"a中b") — mixed ASCII/DBCS (4)
-  j) =SEARCHB("a.c";"abc") — regex dot (1)
+Test cases (rows `SEARCHB.*` in `test/odf-validate/calcval-cases14.tsv`):
+  a) =SEARCHB("B";"abc") — case-insensitive (2)
+  b) =SEARCHB("b";"abcb";3) — start position (4)
+  c) =SEARCHB("x";"abc") — not found (#VALUE!)
+  d) =SEARCHB("国";"中国") — DBCS second char (3)
 
-Implemented: ScSearchB() (interpr1.cxx:8197) uses AOO DBCS byte model
+Implemented: ScSearchB() (interpr1.cxx) uses the AOO DBCS byte model
   via getLengthB, lcl_BytePosToCharIndex, lcl_CharIndexToBytePos.
-  Case-insensitive, supports wildcards/regex via utl::TextSearch.
+  Case-insensitive like SEARCH; regular expressions when the Calc option
+  for them is on. AOO 4 has no ? and * wildcards, so the earlier wildcard
+  cases (=SEARCHB("a?c";"abc") expected 1) were wrong. The two text
+  arguments were popped in the wrong order until 2026-11-18.
 
-Purpose: Confirm SEARCHB byte-position search and wildcard behavior.
+Purpose: Confirm SEARCHB byte-position search.
 
-
-4. DATEDIF
+4\. DATEDIF
 ----------
 
 ODF 1.4 Part 4 §6.10.3. Excel-compatible date difference function.
 
-Test cases (implemented as `SG.DATEDIF-*` in `test/odf-validate/calcval-cases14.tsv`):
+Test cases (rows `DATEDIF.*` in `test/odf-validate/calcval-cases14.tsv`):
   a) =DATEDIF(DATE(2024;1;1);DATE(2024;12;31);"d") — days difference (365)
-  b) =DATEDIF(DATE(2024;1;1);DATE(2025;1;1);"m") — months difference (12)
-  c) =DATEDIF(DATE(2024;1;1);DATE(2025;1;1);"y") — years difference (1)
-  d) =DATEDIF(DATE(2024;2;29);DATE(2024;3;1);"d") — leap-day interval
-  e) =DATEDIF(DATE(2024;12;31);DATE(2024;1;1);"d") — reverse interval → -365 (y/m/d negated)
-  f) =DATEDIF(DATE(2024;1;1);DATE(2024;1;1);"d"/"m"/"y"/"md"/"ym"/"yd") — same date (0)
-  g) =DATEDIF(DATE(2024;1;15);DATE(2024;3;10);"md") — days ignoring months/years with borrow (26)
-  h) =DATEDIF(DATE(2024;1;15);DATE(2024;3;10);"ym") — months ignoring years after complete months (1)
-  i) =DATEDIF(DATE(2024;1;15);DATE(2024;3;10);"yd") — days ignoring years from anniversary (55)
-  j) =DATEDIF(DATE(2024;1;1);DATE(2024;12;31);"x") — invalid unit string (error)
-  k) =DATEDIF(DATE(2024;1;1);DATE(2024;12;31);"") — empty format (error)
-  l) =DATEDIF(DATE(2024;1;1);DATE(2024;12;31);"D") — case-sensitive format (error)
-  m) end-of-month / leap-anniversary / multi-year / reverse-component / time-fraction edge cases
-  n) BIFF5/7 import of DATEDIF — maps to `ocDateDif` (import-only, ID 351); BIFF8/OOXML not mapped
-  o) wrong arg count / invalid date serials — error (reviewed in code)
+  b) =DATEDIF(DATE(2024;1;15);DATE(2024;6;14);"m") — complete months (4)
+  c) =DATEDIF(DATE(2024;1;31);DATE(2024;2;29);"m") — no complete month (0)
+  d) =DATEDIF(DATE(2020;6;15);DATE(2024;6;14);"y") — complete years (3)
+  e) =DATEDIF(DATE(2024;2;29);DATE(2025;2;28);"y") — leap-day anniversary (0)
+  f) =DATEDIF(DATE(2024;1;15);DATE(2024;3;10);"md") — Excel borrow from the
+     month before the end month (24; the old expectation 26 was wrong)
+  g) =DATEDIF(DATE(2024;1;31);DATE(2024;3;1);"md") — Excel gives -1, so does AOO
+  h) =DATEDIF(DATE(1995;5;3);DATE(2009;4;28);"yd") — 361, as Excel
+  i) =DATEDIF(DATE(2024;12;31);DATE(2024;1;1);"d") — start after end (error, as Excel)
+  j) =DATEDIF(DATE(2024;1;1);DATE(2024;12;31);"D") — upper case accepted (365)
+  k) "x" and "" formats (error); time fractions ignored
+  l) xls: written and read (BIFF 351); xlsx: read
 
-Purpose: Validate implemented DATEDIF semantics and reverse-interval policy.
-Source-level review completed in H.3.1; runtime execution pending build
-availability (`sc`/`scaddins` not built in this environment).
+Purpose: Validate DATEDIF semantics; see datedif-semantic-design.md.
+Run 2026-11-18 on macOS and Linux builds and against Excel 16 (630 cases,
+one difference, documented there).
 
-
-5. ISOWEEKNUM
+5\. ISOWEEKNUM
 -------------
 
 ODF 1.4: Defined by ODF 1.4 Part 4. ISO 8601 week numbering.
 
-Test cases (implemented as `SG.ISO-*` in `test/odf-validate/calcval-cases14.tsv`):
-  a) =ISOWEEKNUM(DATE(2024;1;1)) — Monday 2024-01-01 is ISO week 1 (expected: 1)
-  b) =ISOWEEKNUM(DATE(2024;12;30)) — ISO week 1 of 2025 (expected: 1)
-  c) =ISOWEEKNUM(DATE(2024;12;31)) — ISO week 1 of 2025 (expected: 1)
-  d) =ISOWEEKNUM(DATE(2025;12;29)) — ISO week 1 of 2026 (expected: 1)
-  e) =ISOWEEKNUM(DATE(2024;6;15)) — mid-year week 24
-  f) =ISOWEEKNUM(DATE(2020;12;31)) — ISO week 53 (year with 53 weeks)
-  g) =ISOWEEKNUM(DATE(2021;12;31)) — ISO week 52 (year with 52 weeks)
-  h) =ISOWEEKNUM(DATE(2024;2;29)) — leap day week 9
-  i) =ISOWEEKNUM(DATE(2000;1;1)) — century boundary week 52
-  j) =ISOWEEKNUM(DATE(2024;6;15)+0.5) — time fraction ignored (floor)
-  k) =ISOWEEKNUM("not a date") — invalid input (error)
-  l) =ISOWEEKNUM() — wrong arg count (error)
+Test cases (rows `ISOWEEKNUM.*` in `test/odf-validate/calcval-cases14.tsv`):
+  a) =ISOWEEKNUM(DATE(2024;12;29)) — Sunday, week 52
+  b) =ISOWEEKNUM(DATE(2024;12;30)) — ISO week 1 of 2025 (1)
+  c) =ISOWEEKNUM(DATE(2020;12;31)) — ISO week 53
+  d) =ISOWEEKNUM(DATE(2021;1;3)) — still week 53 of 2020
+  e) =ISOWEEKNUM(DATE(2026;1;1)) — Thursday, week 1 (an earlier row expected 53)
+  f) =ISOWEEKNUM() — wrong arg count (error)
+  g) =WEEKNUM(DATE(2024;12;30)) — WEEKNUM still needs two arguments (error)
 
 Fixed: Added separate opcode SC_OPCODE_ISOWEEKNUM (416) and
   ScIsoWeekNum() (interpr2.cxx) implementing ISO 8601 via
   Date::GetWeekOfYear(MONDAY, 4). Takes exactly 1 argument (date).
   Does not affect existing WEEKNUM (ScGetWeekOfYear) which keeps
-  2-argument SUN/MON mode semantics.
+  2-argument SUN/MON mode semantics. On ODF import, ISOWEEKNUM with one
+  argument becomes ocIsoWeekNum (FormulaCompiler::Factor); with two it
+  stays WEEKNUM (checked with an .ods holding both forms).
 
-Purpose: Validate ISO 8601 week numbering at year boundaries,
-  leap years, century boundaries, and time fractions.
+Purpose: Validate ISO 8601 week numbering at year boundaries. 300 random
+  dates matched Excel 16.
 
-
-6. DDE
-----
+6\. DDE
+------
 
 Application-level DDE function. Platform-dependent.
 
@@ -166,124 +180,119 @@ Test cases:
 Purpose: Confirm DDE works where platform supports it, fails gracefully
   otherwise. Not a pure formula test — requires DDE subsystem.
 
-
-7. ODDFPRICE
+7\. ODDFPRICE
 ------------
 
-Analysis AddIn function. Odd-period bond price.
+Analysis AddIn function. Odd-period bond price. ODF 1.2/1.4 §6.12.31.
 
-Test cases:
-  a) =ODDFPRICE(DATE(2024;3;15);DATE(2024;6;30);DATE(2023;11;15);DATE(2028;12;31);0.05;0.06;100;2) — price calculation
-  b) =ODDFPRICE(DATE(2024;3;15);DATE(2024;6;30);DATE(2023;11;15);DATE(2028;12;31);-0.05;0.06;100;2) — negative rate (error)
-  c) =ODDFPRICE(DATE(2024;3;15);DATE(2024;6;30);DATE(2023;11;15);DATE(2028;12;31);0.05;0.06;100;0) — invalid frequency (error)
-  d) =ODDFPRICE() — wrong arg count (error)
-  e) XLS import of ODDFPRICE — import failure (not in BIFF tables)
-  f) XLSX import of ODDFPRICE — import failure (not in OOXML table)
+Test cases (rows `ODDFPRICE.*` in `test/odf-validate/calcval-cases14.tsv`):
+  a) Excel's short odd first period example: 113.597717474079
+  b) long odd first periods, semiannual and annual
+  c) first coupon not on the maturity's coupon schedule (error, as Excel)
+  d) redemption 0 (error)
+  e) XLS/XLSX: no mapping (add-in function)
 
-Expected: AnalysisAddIn::getOddfprice() (financial.cxx:404) validates
-  inputs and delegates to GetOddfprice(). Implementation present as
-  AddIn but not as native function.
+Implemented 2026-11-18 in analysishelper.cxx GetOddfprice() (trunk threw
+  #87380#). Checked against Excel 16 on random cases with all bases and
+  frequencies, short and long periods, many month ends: see
+  function-implementation-roadmap.md, Group 3, for the 14 differences in
+  4524 ODDFPRICE/ODDFYIELD cases.
 
-Purpose: Confirm AddIn implementation works; confirm not native.
+Purpose: Confirm the add-in matches Excel.
 
-
-8. ODDFYIELD
+8\. ODDFYIELD
 ------------
 
-Analysis AddIn function. Odd-period bond yield.
+Analysis AddIn function. Odd-period bond yield. ODF 1.2/1.4 §6.12.32.
+
+Test cases (rows `ODDFYIELD.*`):
+  a) Excel's example: 0.0772455415978 (Excel 0.077245541597)
+  b) ODDFYIELD of an ODDFPRICE result gives the yield back (0.1492)
+  c) redemption 0 (error)
+
+Implemented 2026-11-18: bracketed Illinois iteration on GetOddfprice().
+  In the 222 cases where the two yields differed, feeding both to Excel's
+  ODDFPRICE gave back the price within 1e-10 for AOO's yield and within
+  1.8e-7 for Excel's.
+
+Purpose: Confirm the add-in matches Excel.
+
+9\. RRI
+------
+
+Rate of return per period: RRI(N; Pv; Fv) = (Fv/Pv)^(1/N) - 1.
+ODF 1.2/1.4 §6.12.44, constraint N > 0.
 
 Test cases:
-  a) =ODDFYIELD(DATE(2024;3;15);DATE(2024;6;30);DATE(2023;11;15);DATE(2028;12;31);0.05;95;100;2) — yield calculation
-  b) =ODDFYIELD(...;0.05;0;100;2) — zero price (error)
-  c) =ODDFYIELD() — wrong arg count (error)
+  a) =RRI(10;100;200) — 0.0717734625362931 (row RRI.basic; Excel the same)
+  b) =ZGZ(10;100;200) — old name still read (row RRI.zgz)
+  c) =RRI(0;100;200) — N = 0 (ODF: error; not run)
+  d) =RRI(-5;100;200) — N < 0 (ODF: error; not run)
+  e) =RRI(10;-100;200) — negative Pv (not run)
+  f) =RRI(10;100) — wrong arg count (error)
+  g) xls: `_xlfnodf.RRI` (AOO reads it back, Excel #NAME?); xlsx
+     `_xlfn.RRI` gives #NAME?
 
-Expected: AnalysisAddIn::getOddfyield() (financial.cxx:416).
-
-Purpose: Confirm AddIn implementation works.
-
-
-9. RRI
-----
-
-Rate of return per period: RRI = (fV/pV)^(1/n) - 1.
-
-Test cases:
-  a) =RRI(100;50;5) — (100/50)^(1/5) - 1 = 2^(0.2) - 1 ≈ 0.1487
-  b) =RRI(100;50;0) — zero periods (division by zero → error)
-  c) =RRI(100;-50;5) — negative present value (invalid sign → error expected)
-  d) =RRI(0;50;5) — zero future value (−1 = -100%)
-  e) =RRI(100;50;-5) — negative periods (error)
-  f) =RRI(100;50) — wrong arg count (error)
-  g) =RRI(1e300;1;5) — overflow test
-  h) XLSX import of RRI — import-only via ODF table (_xlfnodf.RRI)
-  i) XLSX export of RRI — _xlfnodf.RRI
-
-Expected: ScZGZ() (interpr2.cxx:1198) computes pow(fV/fP, 1/n) - 1
-  with NO validation for zero/negative PV, zero periods, or overflow.
-  Tests (b), (c), (e), (g) may produce undefined results instead of
-  proper errors.
+Expected: ScZGZ() (interpr2.cxx) computes pow(Fv/Pv, 1/N) - 1
+  with NO validation. c) to e) are not checked by the code.
 
 Purpose: Confirm validation gaps in RRI implementation.
 
-
-10. ERROR.TYPE
+10\. ERROR.TYPE
 --------------
 
 ODF 1.4: Returns error number (1=#NULL!, 2=#DIV/0!, ..., 7=#N/A).
 
-Test cases (implemented as `SG.ERRTYPE-*` in `test/odf-validate/calcval-cases14.tsv`):
-  a) =ERROR.TYPE(1/0) — expected: 2 (#DIV/0!)
-  b) =ERROR.TYPE(#VALUE!) — expected: 3
-  c) =ERROR.TYPE(#REF!) — expected: 4
-  d) =ERROR.TYPE(#NAME?) — expected: 5
-  e) =ERROR.TYPE(#NUM!) — expected: 6
-  f) =ERROR.TYPE(#N/A) — expected: 7
-  g) =ERROR.TYPE(#NULL!) — expected: 1
-  h) =ERROR.TYPE(5) — non-error → #N/A error
-  i) =ERROR.TYPE(A1) where A1 contains #DIV/0! — reference to error cell (2)
-  j) =ERROR.TYPE(A1:B2) — multiple refs → #N/A error
-  k) =ERROR.TYPE() — wrong arg count (error)
-  l) =ERROR.TYPE(ORG.OPENOFFICE.ERRORTYPE(1/0)) — ODF namespace name
+Test cases (rows `ERROR.TYPE.*` and `ERRORTYPE.*`):
+  a) =ERROR.TYPE(1/0) — 2
+  b) =ERROR.TYPE(NA()) — 7
+  c) =ERROR.TYPE(AM1), AM1 = NA() — 7; =ERROR.TYPE(AM2), AM2 = 1/0 — 2
+  d) =ERROR.TYPE(SQRT(-1)) — 3 (AOO gives Err:502, which the xls export
+     writes as #VALUE!; Excel gives 6)
+  e) =ERROR.TYPE(5), =ERROR.TYPE("t") — non-error → #N/A
+  f) =ERROR.TYPE() — wrong arg count (error)
+  g) =ERRORTYPE(1/0) — 532 and =ERRORTYPE(NA()) — 32767 (legacy, unchanged)
 
-Fixed: ScErrorType() (interpr1.cxx:8574) now maps internal AOO error codes
-  to ODF ERROR.TYPE return values via MapErrorType():
-  errNoCode(521)→1, errDivisionByZero(532)→2, errNoValue(519)→3,
-  errNoRef(524)→4, errNoName(525)→5, errIllegalFPOperation(503)→6,
-  NOTAVAILABLE(32767)→7. Other error codes / no error → #N/A.
+  The old cases with error literals (=ERROR.TYPE(#REF!) etc.) do not parse
+  in AOO's English API grammar (Err:511/520), so they were dropped.
 
-Purpose: Validate error-code mapping to ODF return values. Semantic gap
-  resolved in H.4; runtime validation pending build availability.
+Fixed 2026-11-18: ERROR.TYPE is its own opcode (ocErrorTypeODF, 419);
+  ScErrorType( true ) maps with lcl_ErrorTypeODF() like
+  XclTools::GetXclErrorCode (unlisted errors give 7). H.4 had changed
+  ERRORTYPE instead; that is undone.
 
+Purpose: Validate error-code mapping to ODF return values.
 
-11. NUMBERVALUE
+11\. NUMBERVALUE
 ---------------
 
 ODF 1.4: Converts text to number using explicit separators.
 
-Test cases:
-  a) =NUMBERVALUE("1.234";".";",") — expected: 1.234
-  b) =NUMBERVALUE("1.234,56";",";";") — European format: expected: 1234.56
-  c) =NUMBERVALUE("1 234.56";".";" ") — space grouping sep: expected: 1234.56
-  d) =NUMBERVALUE("";".";",") — empty string (error expected)
-  e) =NUMBERVALUE("  123  ";".";",") — leading/trailing whitespace
-  f) =NUMBERVALUE("123%";".";",") — percent sign handling
-  g) =NUMBERVALUE("1.2.3";".";",") — repeated decimal sep (error)
-  h) =NUMBERVALUE("1,,2";",";",") — repeated grouping sep (error)
-  i) =NUMBERVALUE("1.5e2";".";",") — scientific notation
-  j) =NUMBERVALUE("123";".";",") — no grouping sep needed
-  k) =NUMBERVALUE("123";".") — omitted optional grouping sep (2 args)
-  l) =NUMBERVALUE("123") — wrong arg count (needs at least 2)
+Test cases (rows `NUMBERVALUE.*`):
+  a) =NUMBERVALUE("1.234";".";",") — 1.234
+  b) =NUMBERVALUE("1.234,56";",";".") — 1234.56
+  c) =NUMBERVALUE("1 234.56";".";" ") — space grouping sep: 1234.56
+  d) =NUMBERVALUE("1.234,5";".";",") — group sep after the decimal sep (error)
+  e) =NUMBERVALUE("  1 2 3  ";".";",") — whitespace removed: 123
+  f) =NUMBERVALUE("12%";".";",") — 0.12; "1.5%%" — 0.00015
+  g) =NUMBERVALUE(".5";".";",") — 0.5; "-1.5e3" — -1500; "1e" (error)
+  h) =NUMBERVALUE("1.2.3";".";",") — second decimal sep (error)
+  i) =NUMBERVALUE("";".";",") — error (Excel 0)
+  j) =NUMBERVALUE("1,5";",,";".") — DecimalSeparator longer than 1 (error;
+     Excel uses the first character)
+  k) =NUMBERVALUE("1,5";",";",.") — DecimalSeparator in GroupSeparator (error)
+  l) =NUMBERVALUE("1234.5";".";"") — no group separator (1234.5; Excel error)
+  m) =NUMBERVALUE("1,5";",") — locale group sep dropped when it equals the
+     decimal sep (1.5)
 
-Expected: NUMBERVALUE has opcode (SC_OPCODE_NUMBERVALUE=392) and
-  name registration but NO evaluator implementation. All tests are
-  expected to fail at evaluation time (no ScNumberValue function,
-  no case ocNumberValue in interpr4.cxx switch).
+Expected: ScNumberValue() (interpr1.cxx) implements the ODF steps (see
+  function-implementation-roadmap.md, Group 6). Before H.1 there was no
+  evaluator; the H.1 version removed group separators everywhere and
+  replaced every decimal separator.
 
-Purpose: Confirm the opcode-without-evaluator gap. This is a
-  critical P1 gap — the function appears to exist but does not work.
+Purpose: Confirm the ODF transformation steps.
 
-
-12. GETPIVOTDATA
+12\. GETPIVOTDATA
 ----------------
 
 Extracts data from a DataPilot (pivot) table.
@@ -297,61 +306,58 @@ Test cases:
   f) =GETPIVOTDATA() — wrong arg count (error)
   g) =GETPIVOTDATA("Sales";A1:C10;"Region";"West") — odd arg count (error)
   h) XLS import (BIFF8) of GETPIVOTDATA — recognized (function ID 358)
-  i) XLSX import of GETPIVOTDATA — import failure (not in OOXML table)
-  j) XLSX export of GETPIVOTDATA — export failure (not in OOXML table)
+  i) XLSX import of GETPIVOTDATA — formulabase.cxx has an import-only row
+     (not run)
+  j) XLSX export — there is no xlsx export
   k) Refresh pivot table then recalc — DataPilot dependency test
 
-Expected: ScGetPivotData() (interpr2.cxx:2972) uses
-  pDok->GetDPAtBlock() to locate DataPilot object. XLSX import/export
-  mapping missing (only BIFF8/XLS).
+Expected: ScGetPivotData() (interpr2.cxx) uses
+  pDok->GetDPAtBlock() to locate DataPilot object.
 
-Purpose: Confirm DataPilot dependency and XLSX mapping gap.
+Purpose: Confirm DataPilot dependency.
 
-
-13. FDIST
+13\. FDIST
 ---------
 
-F-distribution probability (legacy Excel function).
+ODF FDIST (§6.18.22) is the left tail with an optional Cumulative; AOO's
+FDIST is ODF LEGACY.FDIST (§6.18.23, right tail). Since 2026-11-18 the ODF
+function is F.DIST in AOO (ocFDistLeft, 417); FDIST is unchanged.
 
-Test cases:
-  a) =FDIST(2.5;5;10) — F-distribution probability
-  b) =FDIST(-1;5;10) — negative x (error: illegal argument)
-  c) =FDIST(2.5;0;10) — zero df1 (error: df1 < 1)
-  d) =FDIST(2.5;5;0) — zero df2 (error: df2 < 1)
-  e) =FDIST(2.5;5) — wrong arg count (needs exactly 3)
-  f) =FDIST(2.5;5;10;1) — 4 args — current impl enforces exactly 3,
-     ODF allows 3–4 with cumulative flag (semantic gap)
-  g) =FDIST(1e11;5;10) — df too large (>=1E10 → error)
+Test cases (rows `F.DIST.*`, `FDIST.*`):
+  a) =F.DIST(2.5;5;10) — 0.8979977233557302 (Excel F.DIST the same)
+  b) =F.DIST(2.5;5;10;0) — density 0.0935947544496855
+  c) =F.DIST(-1;5;10) — 0 (ODF; Excel #NUM!)
+  d) =F.DIST(0;1;5;0) — pole (error); =F.DIST(0;2;5;0) — 1
+  e) =F.DIST(2.5;0;10) — r1 < 1 (error)
+  f) =F.DIST(2.5;5;10)+FDIST(2.5;5;10) — 1
+  g) =FDIST(2.5;5;10) — 0.10200227664427 (legacy right tail)
+  h) =FDIST(2.5;5;10;1) — legacy takes three arguments (error)
 
-Expected: ScFDist() (interpr3.cxx:1588) enforces exactly 3 params,
-  validates ranges, calls GetFDist(). ODF allows optional 4th
-  cumulative parameter — not supported.
+Expected: ScFDistLeft() and ScFDist() (interpr3.cxx). xls: F.DIST as
+  `_xlfn.F.DIST` (Excel calculates 4 arguments), FDIST as BIFF 281, and
+  `_xlfnodf.FDIST` from an older xls reads as FDIST.
 
-Purpose: Confirm parameter count limitation (3 vs 3–4) and
-  _xlfnodf.FDIST export naming.
+Purpose: Confirm left and right tail.
 
+14\. FINV
+--------
 
-14. FINV
-------
+ODF FINV (§6.18.24) is the inverse of the left tail; AOO's FINV is ODF
+LEGACY.FINV (§6.18.25). Since 2026-11-18 the ODF function is F.INV in AOO
+(ocFInvLeft, 418); FINV is unchanged.
 
-Inverse F-distribution (legacy Excel function).
+Test cases (rows `F.INV.*`, `FINV.*`):
+  a) =F.INV(0.5;5;10) — 0.931933160851048
+  b) =F.INV(0;5;10) — 0; =F.INV(1;5;10) — error
+  c) =F.INV(F.DIST(2.5;5;10);5;10) — 2.5
+  d) =FINV(0.1;5;10) — 2.52164068620962 (legacy)
 
-Test cases:
-  a) =FINV(0.05;5;10) — inverse F probability
-  b) =FINV(0;5;10) — zero probability (error: fP <= 0)
-  c) =FINV(1.5;5;10) — probability > 1 (error: fP > 1)
-  d) =FINV(0.05;0;10) — zero df1 (error: df1 < 1)
-  e) =FINV(0.05;5;0) — zero df2 (error: df2 < 1)
-  f) =FINV(0.05;5) — wrong arg count (needs exactly 3)
+Expected: ScFInvLeft() uses ScFDistLeftFunction + lcl_IterateInverse;
+  ScFInv() unchanged.
 
-Expected: ScFInv() (interpr3.cxx:2154) validates inputs, uses
-  ScFDistFunction + lcl_IterateInverse for numerical inversion.
+Purpose: Confirm the inverses.
 
-Purpose: Confirm _xlfnodf.FINV export naming (Excel has FINV natively
-  without _xlfn prefix).
-
-
-15. HARMEAN
+15\. HARMEAN
 -----------
 
 Harmonic mean: H = n / Σ(1/xᵢ), counting only positive values.
@@ -365,30 +371,25 @@ Test cases:
   f) =HARMEAN(A1:A5) where A1:A5 contains text — text cells skipped
   g) =HARMEAN(A1:A5) where A1:A5 contains error — error propagates
 
-Expected: ScHarMean() (interpr3.cxx:2712) counts only x > 0 values,
+Expected: ScHarMean() (interpr3.cxx) counts only x > 0 values,
   sets errIllegalArgument for x <= 0, skips empty/text cells.
 
-Purpose: Confirm implementation is correct. Minor gap: German help
-  only (HARMITTEL).
+Purpose: Confirm implementation is correct. English help exists
+  (04060182.xhp; HARMITTEL is only the help ID name). Not run.
 
 Cross-Function Test: Byte-Oriented Text Family
 ----------------------------------------------
 
-Related missing functions: FINDB, SEARCHB, REPLACEB.
-Existing: LENB, RIGHTB, LEFTB, MIDB (opcodes 400–403).
+FINDB, SEARCHB, REPLACEB (412–414) join LENB, RIGHTB, LEFTB, MIDB
+(400–403). All seven are written to xls as Excel's own functions (BIFF
+205–211).
 
-Test cases:
-  a) =LENB("abc") — existing function, should work
-  b) =FINDB("b";"abc") — missing function (parser rejection)
-  c) =SEARCHB("b";"abc") — missing function (parser rejection)
-  d) =REPLACEB("abc";2;1;"x") — missing function (parser rejection)
-
-Purpose: Confirm partial implementation of byte-oriented text family.
-
+Purpose: Confirm the whole byte-oriented text family works.
 
 Test Execution Note
 -------------------
 
-All tests above are designed but NOT executed. No build or runtime
-verification was performed. Test results marked "expected" are
-hypotheses based on source inspection only.
+Originally designed but not executed. Since 2026-11-18 the rows named
+above are run by test/odf-validate/calcval.py on macOS and Linux builds;
+cases marked "not run" are still hypotheses. DDE, GETPIVOTDATA and HARMEAN
+were not run.

@@ -1,3 +1,22 @@
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License.
+-->
+
 OpenFormula Function Compatibility Gap Audit — Source-Level Findings
 =====================================================================
 
@@ -10,73 +29,85 @@ This document records source-level findings for 15 Calc functions.
 All file paths and line numbers are relative to the repository root
 (/home/pedro/projects/aoo).
 
+Updated 2026-11-18 to match the code after the post-merge review. Line
+numbers are those of the 2026-11-18 working tree. "Run" means the working
+tree was built on macOS and Linux and the case was run; "Excel 16" means it
+was also compared with Excel. Sections 6, 12 and 15 were only re-read.
 
-1. FINDB
+1\. FINDB
 --------
 
-ODF 1.4: Not defined by ODF 1.4 Part 4. Excel-specific function.
-ODF group: Not applicable (Excel-only).
+ODF 1.4: Defined (§6.7.2 in ODF 1.2 and 1.4: "The same as FIND, but using
+  byte positions"). Byte positions are implementation-dependent.
+ODF group: not checked.
 
 A. Function registration
-  - Native opcode: SC_OPCODE_FINDB = 412 (compiler.hrc line 412).
-  - Parser name: "FINDB" registered in core_resource.src (ODF and
-    Excel sections).
-  - Function-name-to-opcode mapping: ocFinDB → FINDB (opcode.hxx
-    line 306).
-  - Evaluator implementation: ScInterpreter::ScFindB() at
-    main/sc/source/core/tool/interpr1.cxx:8155. Dispatch via
-    `case ocFinDB : ScFindB();` at interpr4.cxx:3772.
-  - Function parameter metadata: Via native function resource.
-  - Help entry: HID_FUNC_FINDB (helpids.h line 764+, hidother.src).
-  - ODF formula namespace mapping: FINDB in ODF section of
-    core_resource.src.
-  - Excel import mapping: None (not in xlformula.cxx BIFF tables).
-  - Excel export mapping: None.
 
-B. Actual implementation: ScInterpreter::ScFindB() at interpr1.cxx:8155.
+- Native opcode: SC_OPCODE_FINDB = 412 (compiler.hrc line 408).
+- Parser name: "FINDB" registered in core_resource.src (ODF and
+    Excel sections).
+- Function-name-to-opcode mapping: ocFindB → FINDB (opcode.hxx
+    line 307).
+- Evaluator implementation: ScInterpreter::ScFindB() at
+    main/sc/source/core/tool/interpr1.cxx:8260. Dispatch via
+    `case ocFindB : ScFindB();` at interpr4.cxx:3774.
+- Function parameter metadata: Via native function resource.
+- Help entry: HID_FUNC_FINDB (helpids.h line 769, hidother.src);
+    topic func_findb.xhp.
+- ODF formula namespace mapping: FINDB in ODF section of
+    core_resource.src.
+- Excel import/export mapping: BIFF2 ID 205 (xlformula.cxx line 211),
+    added 2026-11-18. xlsx: ODF name FINDB (formulabase.cxx line 442).
+
+B. Actual implementation: ScInterpreter::ScFindB() at interpr1.cxx:8260.
   Implements case-sensitive byte-oriented search using DBCS byte
   semantics (1 byte for ASCII/non-DBCS, 2 bytes for DBCS characters
   per IsDBCS()). Uses lcl_BytePosToCharIndex() and
   lcl_CharIndexToBytePos() helpers to convert between byte positions
   (1-based) and character indices (0-based). Returns byte position
-  of match, or #N/A (PushNoValue) if not found or start_num invalid.
+  of match, or #VALUE! (PushNoValue) if not found or start invalid.
+  Until 2026-11-18 the two text arguments were popped in the wrong
+  order, so FINDB("b";"abc") searched "b" for "abc".
 
-C. Format compatibility: Not recognized on XLS or XLSX import
-  (no BIFF/OOXML table mapping). Not exported on XLS or XLSX.
+C. Format compatibility: XLS read and written as BIFF 205; an AOO xls
+  opens in Excel 16 with the value (run). XLSX read (run, hand-made
+  file). AOO has no xlsx export.
 
-D. Documentation: Help entry exists (HID_FUNC_FINDB).
+D. Documentation: Help topic func_findb.xhp, reachable through its help
+  ID since helpcontent2/util/scalc/makefile.mk lists it (2026-11-18).
   Function Wizard entry exists in main/sc/source/ui/src/scfuncs.src
   (SC_OPCODE_FINDB resource block with parameter names and descriptions).
 
-Failure type: None — implementation complete at source level.
+Failure type: None.
 Priority: Resolved (was P1).
-Confidence: HIGH — source evidence complete; runtime verification
-            deferred (no build available).
+Confidence: HIGH — run; ASCII cases match Excel 16 (Excel counts CJK as
+            1 byte unless a DBCS language is set; AOO always 2).
 
-
-2. REPLACEB
+2\. REPLACEB
 -----------
 
-ODF 1.4: Not defined by ODF 1.4 Part 4. Excel-specific function.
-ODF group: Not applicable.
+ODF 1.4: Defined (§6.7.6: "As REPLACE, but using byte positions").
+ODF group: not checked.
 
 A. Function registration
-  - Native opcode: SC_OPCODE_REPLACEB = 414 (compiler.hrc line 414).
-  - Parser name: "REPLACEB" registered in core_resource.src (ODF and
-    Excel sections).
-  - Function-name-to-opcode mapping: ocReplaceB → REPLACEB
-    (opcode.hxx line 308).
-  - Evaluator implementation: ScInterpreter::ScReplaceB() at
-    interpr1.cxx:8250. Dispatch via
-    `case ocReplaceB : ScReplaceB();` at interpr4.cxx:3774.
-  - Function parameter metadata: Via native function resource.
-  - Help entry: HID_FUNC_REPLACEB (helpids.h line 766+, hidother.src).
-  - ODF formula namespace mapping: REPLACEB in ODF section of
-    core_resource.src.
-  - Excel import mapping: None (not in xlformula.cxx BIFF tables).
-  - Excel export mapping: None.
 
-B. Actual implementation: ScInterpreter::ScReplaceB() at interpr1.cxx:8250.
+- Native opcode: SC_OPCODE_REPLACEB = 414 (compiler.hrc line 410).
+- Parser name: "REPLACEB" registered in core_resource.src (ODF and
+    Excel sections).
+- Function-name-to-opcode mapping: ocReplaceB → REPLACEB
+    (opcode.hxx line 309).
+- Evaluator implementation: ScInterpreter::ScReplaceB() at
+    interpr1.cxx:8355. Dispatch via
+    `case ocReplaceB : ScReplaceB();` at interpr4.cxx:3776.
+- Function parameter metadata: Via native function resource.
+- Help entry: HID_FUNC_REPLACEB (helpids.h line 771, hidother.src);
+    topic func_replaceb.xhp.
+- ODF formula namespace mapping: REPLACEB in ODF section of
+    core_resource.src.
+- Excel import/export mapping: BIFF2 ID 207 (xlformula.cxx line 213),
+    added 2026-11-18. xlsx: formulabase.cxx line 444.
+
+B. Actual implementation: ScInterpreter::ScReplaceB() at interpr1.cxx:8355.
   Implements byte-oriented replacement using DBCS byte semantics.
   Converts start byte position to character index, counts bytes
   forward to determine character count to erase (avoiding splitting
@@ -85,193 +116,177 @@ B. Actual implementation: ScInterpreter::ScReplaceB() at interpr1.cxx:8250.
   count to available bytes. Returns PushIllegalArgument() for invalid
   inputs.
 
-C. Format compatibility: Not recognized on XLS or XLSX import
-  (no BIFF/OOXML table mapping). Not exported on XLS or XLSX.
+C. Format compatibility: XLS read and written as BIFF 207 (source).
+  XLSX read (run).
 
-D. Documentation: Help entry exists (HID_FUNC_REPLACEB).
-  Function Wizard entry exists in main/sc/source/ui/src/scfuncs.src
-  (SC_OPCODE_REPLACEB resource block with parameter names and descriptions).
+D. Documentation: Help topic func_replaceb.xhp (help ID resolves since
+  2026-11-18). Function Wizard entry exists in scfuncs.src.
 
-Failure type: None — implementation complete at source level.
+Failure type: None.
 Priority: Resolved (was P1).
-Confidence: HIGH — source evidence complete; runtime verification
-            deferred (no build available).
+Confidence: HIGH — run; ASCII cases match Excel 16.
 
-
-3. SEARCHB
+3\. SEARCHB
 ----------
 
-ODF 1.4: Not defined by ODF 1.4 Part 4. Excel-specific function.
-ODF group: Not applicable.
+ODF 1.4: Defined (§6.7.8: "As SEARCH, but using byte positions").
+ODF group: not checked.
 
 A. Function registration
-  - Native opcode: SC_OPCODE_SEARCHB = 413 (compiler.hrc line 413).
-  - Parser name: "SEARCHB" registered in core_resource.src (ODF and
-    Excel sections).
-  - Function-name-to-opcode mapping: ocSearchB → SEARCHB
-    (opcode.hxx line 307).
-  - Evaluator implementation: ScInterpreter::ScSearchB() at
-    interpr1.cxx:8197. Dispatch via
-    `case ocSearchB : ScSearchB();` at interpr4.cxx:3773.
-  - Function parameter metadata: Via native function resource.
-  - Help entry: HID_FUNC_SEARCHB (helpids.h line 765+, hidother.src).
-  - ODF formula namespace mapping: SEARCHB in ODF section of
-    core_resource.src.
-  - Excel import mapping: None (not in xlformula.cxx BIFF tables).
-  - Excel export mapping: None.
 
-B. Actual implementation: ScInterpreter::ScSearchB() at interpr1.cxx:8197.
+- Native opcode: SC_OPCODE_SEARCHB = 413 (compiler.hrc line 409).
+- Parser name: "SEARCHB" registered in core_resource.src (ODF and
+    Excel sections).
+- Function-name-to-opcode mapping: ocSearchB → SEARCHB
+    (opcode.hxx line 308).
+- Evaluator implementation: ScInterpreter::ScSearchB() at
+    interpr1.cxx:8302. Dispatch via
+    `case ocSearchB : ScSearchB();` at interpr4.cxx:3775.
+- Function parameter metadata: Via native function resource.
+- Help entry: HID_FUNC_SEARCHB (helpids.h line 770, hidother.src);
+    topic func_searchb.xhp.
+- ODF formula namespace mapping: SEARCHB in ODF section of
+    core_resource.src.
+- Excel import/export mapping: BIFF2 ID 206 (xlformula.cxx line 212),
+    added 2026-11-18. xlsx: formulabase.cxx line 443.
+
+B. Actual implementation: ScInterpreter::ScSearchB() at interpr1.cxx:8302.
   Implements case-insensitive byte-oriented search using DBCS byte
   semantics, following the same pattern as ScSearch() (utl::TextSearch
-  with case-insensitive flag). Converts byte positions to/from character
+  with case-insensitive flag; regular expressions when enabled, no ? or *
+  wildcards). Converts byte positions to/from character
   indices using lcl_BytePosToCharIndex() and lcl_CharIndexToBytePos().
-  Returns byte position of match, or #N/A (PushNoValue) if not found
-  or start_num invalid.
+  Returns byte position of match, or #VALUE! (PushNoValue) if not found
+  or start invalid. The text arguments were popped in the wrong order
+  until 2026-11-18, as in FINDB.
 
-C. Format compatibility: Not recognized on XLS or XLSX import
-  (no BIFF/OOXML table mapping). Not exported on XLS or XLSX.
+C. Format compatibility: XLS read and written as BIFF 206 (source).
+  XLSX read (run).
 
-D. Documentation: Help entry exists (HID_FUNC_SEARCHB).
-  Function Wizard entry exists in main/sc/source/ui/src/scfuncs.src
-  (SC_OPCODE_SEARCHB resource block with parameter names and descriptions).
+D. Documentation: Help topic func_searchb.xhp (the wildcard claim and its
+  example were removed 2026-11-18). Function Wizard entry exists in
+  scfuncs.src.
 
-Failure type: None — implementation complete at source level.
+Failure type: None.
 Priority: Resolved (was P1).
-Confidence: HIGH — source evidence complete; runtime verification
-            deferred (no build available).
+Confidence: HIGH — run; ASCII cases match Excel 16.
 
-
-4. DATEDIF
+4\. DATEDIF
 ----------
 
 ODF 1.4: Defined by ODF 1.4 Part 4, Section 6.10.3.
-ODF group: Large Group (Excel compatibility function).
+ODF group: Large Group (Excel compatibility function; not rechecked).
 
 A. Function registration
-  - Native opcode: SC_OPCODE_DATEDIF = 415 (compiler.hrc line 415).
-  - Parser name: "DATEDIF" registered in core_resource.src (ODF and
-    Excel sections).
-  - Function-name-to-opcode mapping: ocDateDif → DATEDIF (opcode.hxx
-    line 309).
-  - Evaluator implementation: ScInterpreter::ScDateDif() at
-    main/sc/source/core/tool/interpr2.cxx:443. Dispatch via
-    `case ocDateDif : ScDateDif();` at interpr4.cxx:3775.
-  - Function parameter metadata: Via native function resource.
-  - Help entry: HID_FUNC_DATEDIF (helpids.h line 768+, hidother.src).
-  - ODF formula namespace mapping: DATEDIF in ODF section of
-    core_resource.src.
-  - Excel import mapping: BIFF5/BIFF7 function ID 351 now maps to
-    ocDateDif in xlformula.cxx line 342 (import-only). BIFF import
-    resolves DATEDIF to the native evaluator instead of ocNoName.
-    BIFF8 table (saFuncTable_8) does not include DATEDIF.
-  - Excel export mapping: None (import-only policy unchanged).
 
-B. Actual implementation: ScInterpreter::ScDateDif() at interpr2.cxx:443.
+- Native opcode: SC_OPCODE_DATEDIF = 415 (compiler.hrc line 411).
+- Parser name: "DATEDIF" registered in core_resource.src (ODF and
+    Excel sections).
+- Function-name-to-opcode mapping: ocDateDif → DATEDIF (opcode.hxx
+    line 310).
+- Evaluator implementation: ScInterpreter::ScDateDif() at
+    main/sc/source/core/tool/interpr2.cxx:461. Dispatch via
+    `case ocDateDif : ScDateDif();` at interpr4.cxx:3777.
+- Function parameter metadata: Via native function resource.
+- Help entry: HID_FUNC_DATEDIF (helpids.h line 772, hidother.src);
+    topic func_datedif.xhp.
+- ODF formula namespace mapping: DATEDIF in ODF section of
+    core_resource.src.
+- Excel import/export mapping: BIFF5/BIFF7 function ID 351 maps to
+    ocDateDif both ways (xlformula.cxx line 346; the import-only flag
+    was dropped 2026-11-18). xlsx: formulabase.cxx line 671.
+
+B. Actual implementation: ScInterpreter::ScDateDif() at interpr2.cxx:461.
   Implements ODF 1.4 §6.10.3 with all six formats (y, m, d, md, ym, yd).
-  Uses pFormatter->GetNullDate() for document-aware serial conversion.
-  Calendar arithmetic (not day-count approximation) for month/year
-  computations. Floor-based handling of time fractions. Case-sensitive
-  format matching. Reverse-date handling: y/m/d negated, md/ym/yd
-  absolute (Excel compatibility policy).
+  Since 2026-11-18 (Jim's decision) it follows Excel where ODF is
+  silent: start after end is an error, the format ignores case, "md"
+  borrows the month before the end month and "yd" moves the end date into
+  the start year. The H.3 version negated reverse intervals, was
+  case-sensitive and computed "yd" wrongly.
   Detailed algorithm in audit/openformula-function-gaps/datedif-semantic-design.md.
 
 C. Format compatibility
-  - XLS import: BIFF5/BIFF7 function ID 351 maps to ocDateDif.
-    Import resolves DATEDIF to the native evaluator. Import-only.
-  - XLS import (BIFF8): Not in saFuncTable_8. Not recognized.
-  - XLSX import: Not in saFuncTable_Oox. Not recognized.
-  - XLS export: None.
-  - XLSX export: None.
 
-D. Documentation: Help entry exists (HID_FUNC_DATEDIF).
-  Function Wizard entry exists in main/sc/source/ui/src/scfuncs.src
-  (SC_OPCODE_DATEDIF resource block with parameter names and descriptions).
-  Help topic not yet added under main/helpcontent2/.
+- XLS import and export: BIFF ID 351 (run; Excel 16 calculates an AOO
+    xls).
+- XLSX import: read (run).
+- XLSX export: AOO has none.
 
-Failure type: None — implementation complete at source level.
+D. Documentation: Help topic func_datedif.xhp (rewritten 2026-11-18).
+  Function Wizard entry exists in main/sc/source/ui/src/scfuncs.src.
+
+Failure type: None. One Excel difference ("yd" from Feb 29, 2020 to
+  Mar 1, 2023).
 Priority: Resolved (was P1).
-Confidence: HIGH — source evidence complete; runtime verification
-            deferred (no build available).
+Confidence: HIGH — run; 630 cases compared with Excel 16.
 
-
-5. ISOWEEKNUM
+5\. ISOWEEKNUM
 -------------
 
-ODF 1.4: Not explicitly listed as ODF 1.4 Large Group requirement
-  per task instructions (verify against final spec). Excel function.
-ODF group: Not applicable (Excel-specific).
+ODF 1.4: Defined (ODF 1.2 §6.10.11, ODF 1.4 §6.10.12): one argument,
+  ISO 8601 week. No Mode parameter in either version.
+ODF group: not checked.
 
 A. Function registration
-  - Native opcode: SC_OPCODE_WEEK exists (compiler.hrc). The opcode
-    is shared with WEEKNUM.
-  - Parser name: "ISOWEEKNUM" mapped in
-    xlformula.cxx line 416 (saFuncTable_Odf):
-      EXC_FUNCENTRY_ODF( ocWeek, 1, 2, 0, "ISOWEEKNUM" )
-  - Function-name-to-opcode mapping: ocWeek → ISOWEEKNUM (ODF
-    namespace), ocWeek → WEEKNUM (Excel namespace, core_resource.src
-    line 677).
-  - Evaluator implementation: ScGetWeekOfYear() at
-    interpr2.cxx:227–238. Takes 2 params (date, flag). Flag==1 →
-    SUNDAY start, otherwise → MONDAY start. Calls
-    Date::GetWeekOfYear().
-  - Function parameter metadata: Via native function resource.
-  - Help entry: No HID_FUNC_ISOWEEKNUM. WEEKNUM help exists as
-    HID_AAI_FUNC_WEEKNUM (Analysis add-in, hidother.src:380) and
-    HID_FUNC_KALENDERWOCHE (native German, helpids.h:505).
-  - ODF formula namespace mapping: ISOWEEKNUM in ODF section of
-    core_resource.src line 332.
-  - Excel import mapping: saFuncTable_Odf line 416, import-only.
-  - Excel export mapping: _xlfnodf.ISOWEEKNUM (export-only).
 
-B. Actual implementation: ScGetWeekOfYear() supports only two
-  week-start modes (SUNDAY or MONDAY) via Date::GetWeekOfYear().
-  ISO 8601 week numbering requires: week 1 contains the first
-  Thursday, Monday as first day, years with 52 or 53 weeks. The
-  existing implementation does NOT implement ISO 8601 semantics —
-  it only shifts the start day of the week. This is a semantic gap.
+- Native opcode: SC_OPCODE_ISOWEEKNUM = 416 (compiler.hrc line 412),
+    added in H.5. WEEKNUM is SC_OPCODE_WEEK.
+- Function-name-to-opcode mapping: ocIsoWeekNum → ISOWEEKNUM
+    (opcode.hxx line 311; core_resource.src lines 340, 693 and 1635).
+    The ODF list also maps ocWeek to "ISOWEEKNUM" (line 339), which is
+    how AOO has always written WEEKNUM(d;mode) to ODF; when reading, the
+    first entry wins, so FormulaCompiler::Factor (FormulaCompiler.cxx
+    line 1083) turns an ODF ISOWEEKNUM with one argument into
+    ocIsoWeekNum (2026-11-18). With two arguments it stays WEEKNUM.
+- Evaluator implementation: ScIsoWeekNum() at interpr2.cxx:240,
+    Date::GetWeekOfYear(MONDAY, 4). WEEKNUM is ScGetWeekOfYear() at
+    interpr2.cxx:227 and still takes exactly 2 arguments.
+- Help entry: HID_FUNC_ISOWEEKNUM (helpids.h line 506, hidother.src);
+    topic func_isoweeknum.xhp.
+- Excel mapping: `_xlfn.ISOWEEKNUM` in saFuncTable_Oox (xlformula.cxx
+    lines 385-386), added 2026-11-18. WEEKNUM keeps the
+    `_xlfnodf.ISOWEEKNUM` entry (line 422).
+
+B. Actual implementation: ISO 8601 (Monday start, week 1 holds the
+  first Thursday). The Function Wizard resource had one ExtraData number
+  too many; fixed 2026-11-18.
 
 C. Format compatibility
-  - XLS import: Not in BIFF tables (saFuncTable, saFuncTable_5,
-    saFuncTable_8). Not recognized on legacy XLS import.
-  - XLSX import: saFuncTable_Odf import-only, mapped to ocWeek.
-  - XLS export: None.
-  - XLSX export: _xlfnodf.ISOWEEKNUM.
 
-D. Documentation: H.5 ADDED func_isoweeknum.xhp, registered in
-  makefile and 04060102.xhp index. HID_FUNC_ISOWEEKNUM added to
-  helpids.h and hidother.src.
+- ODF: one-argument form read and written as ISOWEEKNUM; old files'
+    two-argument form read as WEEKNUM (run, .ods round trip).
+- XLS: written as `_xlfn.ISOWEEKNUM` and read back; Excel 16 calculates
+    it (run).
+- XLSX import: `_xlfn.ISOWEEKNUM` gives #NAME? (run).
 
-H.5 FIX: Added separate opcode SC_OPCODE_ISOWEEKNUM (416) with
-  evaluator ScIsoWeekNum() (interpr2.cxx) implementing ISO 8601 via
-  Date::GetWeekOfYear(MONDAY, 4). Takes exactly 1 argument (date).
-  Does not affect existing WEEKNUM (ScGetWeekOfYear) which keeps
-  2-argument SUN/MON mode semantics.
+D. Documentation: func_isoweeknum.xhp, embedded in 04060102.xhp; help
+  ID resolves since 2026-11-18.
 
-Failure type: RESOLVED. Implementation now has correct ISO 8601
-  semantics. Help documentation added.
-Priority: P1 (ISO week numbering semantics missing).
-Confidence: HIGH — semantic gap fixed and verified at source level.
+Failure type: None (xlsx import gap above).
+Priority: Resolved (was P1).
+Confidence: HIGH — run; 300 dates compared with Excel 16.
 
+6\. DDE
+------
 
-6. DDE
-----
-
-ODF 1.4: Not defined by ODF 1.4 Part 4. Excel-specific / application-level.
+ODF 1.4: Not defined by ODF 1.4 Part 4 (not rechecked). Excel-specific /
+  application-level.
 ODF group: Not applicable.
 
 A. Function registration
-  - Native opcode: SC_OPCODE_DDE = 369 (compiler.hrc line 365).
-  - Parser name: "DDE" in core_resource.src lines 337 (ODF) and 682 (Excel).
-  - Function-name-to-opcode mapping: ocDde → DDE.
-  - Evaluator implementation: ScDde() at interpr2.cxx:2150–2208+.
-    Takes 3–4 params: Item, Topic, Appl, [Mode].
-  - Function parameter metadata: Via native function resource.
-  - Help entry: HID_FUNC_DDE (hidother.src:326, helpids.h).
-  - ODF formula namespace mapping: DDE in both ODF and Excel sections.
-  - Excel import mapping: Not in xlformula.cxx BIFF tables.
-  - Excel export mapping: None.
 
-B. Actual implementation: ScDde() (interpr2.cxx:2150) creates or
+- Native opcode: SC_OPCODE_DDE = 369 (compiler.hrc line 365).
+- Parser name: "DDE" in core_resource.src lines 345 (ODF) and 698 (Excel).
+- Function-name-to-opcode mapping: ocDde → DDE.
+- Evaluator implementation: ScDde() at interpr2.cxx:2247.
+    Takes 3–4 params: Item, Topic, Appl, [Mode].
+- Function parameter metadata: Via native function resource.
+- Help entry: HID_FUNC_DDE (hidother.src:330, helpids.h:738).
+- ODF formula namespace mapping: DDE in both ODF and Excel sections.
+- Excel import mapping: Not in xlformula.cxx BIFF tables.
+- Excel export mapping: None.
+
+B. Actual implementation: ScDde() (interpr2.cxx:2247) creates or
   finds an ScDdeLink via sfx2::LinkManager. Requires a document shell
   with a LinkManager (fails with PushNoValue() for temporary documents
   without DocShell). Sets recalc mode on load. Disables idle during
@@ -297,388 +312,392 @@ Priority: DEFER — requires DDE service platform support; security
 Confidence: HIGH — source evidence clear; implementation exists but
             is platform-dependent.
 
-
-7. ODDFPRICE
+7\. ODDFPRICE
 ------------
 
-ODF 1.4: Not defined by ODF 1.4 Part 4. Excel Analysis ToolPak function.
-ODF group: Not applicable.
+ODF 1.4: Defined (§6.12.31 in ODF 1.2 and 1.4). The spec gives no formula.
+ODF group: not checked.
 
 A. Function registration
-  - Native opcode: NONE. Not a native Calc opcode.
-  - Parser name: "ODDFPRICE" registered as AddIn in
+
+- Native opcode: NONE. Not a native Calc opcode (H.6.1 added one and
+    f4f3de4f92 reverted it).
+- Parser name: "ODDFPRICE" registered as AddIn in
     odffmap.cxx line 127:
       { "ODDFPRICE", "ODDFPRICE", false,
         "com.sun.star.sheet.addin.Analysis.getOddfprice",
         "COM.SUN.STAR.SHEET.ADDIN.ANALYSIS.GETODDFPRICE" }
-  - Function-name-to-opcode mapping: Via AddIn map, not native opcode.
-  - Evaluator implementation: AnalysisAddIn::getOddfprice() at
-    scaddins/source/analysis/financial.cxx:404–413. Validates
+- Function-name-to-opcode mapping: Via AddIn map, not native opcode.
+- Evaluator implementation: AnalysisAddIn::getOddfprice() at
+    scaddins/source/analysis/financial.cxx:404. Validates
     fRate>=0, fYield>=0, fRedemp>0, frequency, nMat>nFirstCoup>nSettle>nIssue.
-    Delegates to GetOddfprice() helper (H.7 FIXED).
-  - Function parameter metadata: Via AddIn collection (ScUnoAddInCollection).
-  - Help entry: HID_AAI_FUNC_ODDFPRICE (hidother.src:406, helpids.h:318).
-  - ODF formula namespace mapping: None (AddIn, not ODF namespace).
-  - Excel import mapping: Not in xlformula.cxx BIFF tables.
-  - Excel export mapping: None.
+    Delegates to GetOddfprice() (analysishelper.cxx:1038).
+- Function parameter metadata: Via AddIn collection (ScUnoAddInCollection).
+- Help entry: HID_AAI_FUNC_ODDFPRICE (hidother.src:414, helpids.h:318);
+    English topic in 04060118.xhp.
+- ODF formula namespace mapping: None (AddIn, not ODF namespace).
+- Excel import mapping: Not in xlformula.cxx BIFF tables.
+- Excel export mapping: None.
 
-B. Actual implementation: H.7 FIXED (commit 405b9d3120).
-  GetOddfprice() (analysishelper.cxx:1011) — THROW_RTE removed:
-  - Short first period (dfc < e): T1+T2+T3-T4 formula per ODF 1.2 §6.12.31.
-  - Long first period (dfc >= e): quasi-coupon walk BACKWARDS from first coupon.
-  - Fixed: memory management (no new[]/delete mismatch), walk direction,
-    fNC truncation, fDSC_E denominator.
-  - Added fRedemp > 0 validation in financial.cxx:405.
-  - Shares infrastructure with ODDFYIELD, ODDLPRICE, ODDLYIELD.
+B. Actual implementation: on trunk GetOddfprice() threw (THROW_RTE,
+  #87380#). 8ce50c3485 (message "No production code changes") brought in
+  an unfinished version: the long-period terms were multiplied by 0 and a
+  placeholder line did not compile. Jim chose to finish it; the
+  2026-11-18 version:
+
+- Requires the first coupon to be on the maturity's coupon schedule
+    (lcl_GetCouppcd), as Excel does (#NUM! otherwise).
+- Short first period (DFC < E): Excel's short formula, DSC, A and DFC
+    counted with ScaDate::getDiff().
+- Long first period: Excel's long formula, summed per quasi-coupon
+    period; a whole quasi-coupon period inside the odd period counts as 1,
+    the quasi-coupon dates are stepped back by plain months, and Nq follows
+    Excel's count for month-end first coupons
+    (lcl_GetOddfQuasiPeriods()).
+  These rules were found by comparing with Excel 16, not taken from a
+  spec.
 
 C. Format compatibility: AddIn function; not part of BIFF/OOXML
   function tables. Import/export via AddIn mechanism only.
 
 D. Documentation: Help entry exists (AAI = Analysis AddIn).
 
-Failure type: RESOLVED in H.7 (was: throws unconditionally).
-Priority: P2 (Excel compatibility gap).
-Confidence: HIGH — short period working; long period quasi-coupon overlap needs completion.
+Failure type: RESOLVED 2026-11-18 (was: throws unconditionally on trunk).
+  4524 random ODDFPRICE/ODDFYIELD cases compared with Excel 16: 14
+  differences in 4 classes (DFC equal to E where Excel gives #NUM!: 4;
+  annual 30/360 US bonds with Feb-end coupons, 2/360 of a coupon: 5;
+  Excel's yield less exact: 4; Excel's yield wrong: 1).
+Priority: P2 (native opcode deferred).
+Confidence: HIGH — run, Excel 16.
 
-
-8. ODDFYIELD
+8\. ODDFYIELD
 ------------
 
-ODF 1.4: Not defined by ODF 1.4 Part 4. Excel Analysis ToolPak function.
-ODF group: Not applicable.
+ODF 1.4: Defined (§6.12.32 in ODF 1.2 and 1.4).
+ODF group: not checked.
 
 A. Function registration
-  - Native opcode: NONE.
-  - Parser name: "ODDFYIELD" registered as AddIn in odffmap.cxx line 128:
+
+- Native opcode: NONE.
+- Parser name: "ODDFYIELD" registered as AddIn in odffmap.cxx line 128:
       { "ODDFYIELD", "ODDFYIELD", false,
         "com.sun.star.sheet.addin.Analysis.getOddfyield", ... }
-  - Evaluator implementation: AnalysisAddIn::getOddfyield() at
-    financial.cxx:416–426. Validates fRate>=0, fPrice>0, fRedemp>0, frequency,
-    nMat>nFirstCoup>nSettle>nIssue. Delegates to GetOddfyield() (H.7 FIXED).
-  - Help entry: HID_AAI_FUNC_ODDFYIELD (hidother.src:407, helpids.h:319).
+- Evaluator implementation: AnalysisAddIn::getOddfyield() at
+    financial.cxx:416. Validates fRate>=0, fPrice>0, fRedemp>0 (added
+    2026-11-18), frequency, nMat>nFirstCoup>nSettle>nIssue. Delegates to
+    GetOddfyield() (analysishelper.cxx:1177).
+- Help entry: HID_AAI_FUNC_ODDFYIELD (hidother.src:415, helpids.h:319).
 
-B. Actual Implementation: H.7 FIXED (commit 405b9d3120).
-  GetOddfyield() (analysishelper.cxx:1159) — THROW_RTE removed:
-  - Bracketed secant/Illinois method with 1e-12 tolerance.
-  - Bracket expansion for yields > 100%.
-  - Removed 1% price tolerance (was: fabs(fPrice-fPriceN) > fPrice/100).
-  - Uses GetOddfprice() for price evaluation.
-  - Same pattern as ODDFPRICE. Analysis add-in.
+B. Actual Implementation: 2026-11-18. The price falls as the yield
+  rises, so GetOddfyield() brackets the yield (above -frequency) and
+  narrows it with the Illinois variant of regula falsi, stopping when the
+  price is within 1e-12 relative. No bracket or no convergence: #NUM!.
 
 C. Format compatibility: AddIn only; no BIFF/OOXML table mapping.
 
 D. Documentation: Help entry exists.
 
-Failure type: RESOLVED in H.7 (was: throws unconditionally).
-Priority: P2 (Excel compatibility gap).
-Confidence: HIGH — solver uses Illinois method with 1e-12 tolerance.
+Failure type: RESOLVED 2026-11-18 (was: throws unconditionally on trunk).
+  See ODDFPRICE for the Excel comparison; where the yields differ,
+  AOO's reproduces the price within 1e-10 in Excel's own ODDFPRICE,
+  Excel's within 1.8e-7.
+Priority: P2 (native opcode deferred).
+Confidence: HIGH — run, Excel 16.
 
+9\. RRI
+------
 
-9. RRI
-----
-
-ODF 1.4: Not explicitly listed as ODF 1.4 Large Group per task
-  instructions (verify against final spec). Excel function.
-ODF group: Not applicable.
+ODF 1.4: Defined (§6.12.44 in ODF 1.2 and 1.4; constraint N > 0).
+ODF group: not checked.
 
 A. Function registration
-  - Native opcode: SC_OPCODE_ZGZ exists (compiler.hrc). "ZGZ" is the
-    German name (core_resource.src line 215).
-  - Parser name: "RRI" mapped in xlformula.cxx line 422 (saFuncTable_Odf):
-      EXC_FUNCENTRY_ODF( ocZGZ, 3, 3, 0, "RRI" )
-  - Function-name-to-opcode mapping: ocZGZ → RRI (ODF/Excel section),
-    ocZGZ → ZGZ (German section, core_resource.src line 215).
-  - Evaluator implementation: ScZGZ() at interpr2.cxx:1198–1209.
-    Takes exactly 3 params: future value, present value, periods.
-    Computes pow(fV/fP, 1/n) - 1. Format: percent.
-  - Function parameter metadata: Via native function resource.
-  - Help entry: HID_FUNC_ZGZ (hidother.src:135, helpids.h:527). German
-    name only; no English HID_FUNC_RRI found.
-  - ODF formula namespace mapping: ZGZ in ODF section
-    (core_resource.src line 215), RRI in Excel section
-    (core_resource.src line 671).
-  - Excel import mapping: saFuncTable_Odf line 422, import-only.
-  - Excel export mapping: _xlfnodf.RRI (export-only).
 
-B. Actual implementation: ScZGZ() computes pow(fV/fP, 1/n) - 1.
-  **RECLASSIFIED**: Prior validation concerns (zero/negative PV, zero
-  periods, overflow) were traced to a test-data/spreadsheet error,
-  not an implementation defect. The formula is correct for valid inputs.
-  MustHaveParamCount(3) enforces exactly 3 args. Edge cases (negative
-  PV with even root) produce NaN as expected mathematically.
+- Native opcode: SC_OPCODE_ZGZ = 256 (compiler.hrc line 252).
+- Parser names: "RRI" in the ODF and English lists since 2026-11-18
+    (core_resource.src lines 216 and 569; trunk had "ZGZ" there, so
+    older ODF files hold of:ZGZ). "ZGZ" is still read through
+    OpCodeMap::putOpCodeAlias() (FormulaCompiler.cxx line 695), which adds
+    the name for input only. The UI name is RRI in en-US and ZGZ in
+    German (translation keyed on SC_OPCODE_ZGZ).
+- The RRI commit (6fefc3f19c) had renamed ocZGZ, SC_OPCODE_ZGZ, ScZGZ()
+    and HID_FUNC_ZGZ and added the alias with putOpCode(), which also
+    replaced the name AOO writes; both were undone 2026-11-18.
+- Excel mapping: saFuncTable_Odf line 428, `_xlfnodf.RRI`.
+- Evaluator implementation: ScZGZ() at interpr2.cxx:1295.
+    Takes exactly 3 params: periods, present value, future value.
+    Computes pow(Fv/Pv, 1/N) - 1. Format: percent.
+- Help entry: HID_FUNC_ZGZ (hidother.src:136, helpids.h:528); English
+    RRI topic in 04060118.xhp.
+
+B. Actual implementation: ScZGZ() computes pow(Fv/Pv, 1/N) - 1 and
+  checks nothing; ODF requires N > 0. 8ce50c3485 reclassified the earlier
+  validation concern as a test-data error. The formula itself is right:
+  RRI(10;100;200) = 0.0717734625362931, as Excel 16.
 
 C. Format compatibility
-  - XLS import: Not in BIFF tables. Not recognized on legacy XLS.
-  - XLSX import: saFuncTable_Odf import-only.
-  - XLS export: None.
-  - XLSX export: _xlfnodf.RRI.
 
-D. Documentation: Help entry exists under German name ZGZ only.
-  No English RRI help entry found.
+- ODF: of:RRI written; of:ZGZ and of:RRI read (run).
+- XLS: `_xlfnodf.RRI`; AOO reads it back, Excel shows #NAME? (run).
+- XLSX import: `_xlfn.RRI` gives #NAME? (run).
 
-Failure type: **No implementation defect** — prior discrepancy traced
-  to test-data error. Remaining gaps: German help only; export naming
-  _xlfnodf.RRI vs Excel native RRI.
-Priority: No defect (was P2).
-Confidence: HIGH — implementation correct; only documentation/interoperability gaps remain.
+D. Documentation: English help (04060118.xhp, unchanged from trunk).
 
+Failure type: No N > 0 check; xls/xlsx naming.
+Priority: P3.
+Confidence: HIGH — run.
 
-10. ERROR.TYPE
--------------
+10\. ERROR.TYPE
+--------------
 
-ODF 1.4: Defined by ODF 1.4 Part 4 (§6.13.x error handling).
+ODF 1.4: Defined (§6.13.11 in ODF 1.2 and 1.4). Not propagating; a
+  non-error gives an error; #NULL!..#N/A are 1..7.
 ODF group: Verify against final spec (likely Large Group).
 
 A. Function registration
-  - Native opcode: SC_OPCODE_ERROR_TYPE = 151 (compiler.hrc line 182).
-  - Parser names:
-    * "ORG.OPENOFFICE.ERRORTYPE" (ODF namespace,
-      core_resource.src line 146)
-    * "ERRORTYPE" (Excel namespace, core_resource.src line 491)
-  - Function-name-to-opcode mapping: ocErrorType → both names.
-  - Evaluator implementation: ScErrorType() at interpr1.cxx:8377–8456.
-    Handles svRefList, svDoubleRef, svSingleRef, and error values.
-    Pushes error number as double, or NA if no error.
-  - Function parameter metadata: Via native function resource.
-  - Help entry: HID_FUNC_FEHLERTYP (hidother.src:324, helpids.h:732).
-    German name only ("Fehlertyp"). No English HID_FUNC_ERROR_TYPE found.
-  - ODF formula namespace mapping: ORG.OPENOFFICE.ERRORTYPE (ODF),
-    ERRORTYPE (Excel).
-  - Excel import mapping: Not in xlformula.cxx BIFF tables.
-  - Excel export mapping: None.
 
-B. Actual implementation: ScErrorType() (interpr1.cxx:8574) examines
-  the stack type:
-  - svRefList: gets error code from first cell in ref list;
+- Native opcode: SC_OPCODE_ERROR_TYPE_ODF = 419 (compiler.hrc line
+    415), ocErrorTypeODF (opcode.hxx line 177), since 2026-11-18. The
+    legacy SC_OPCODE_ERROR_TYPE = 151 (line 182) stays ERRORTYPE.
+- Parser names:
+  - ERROR.TYPE: "ERROR.TYPE" in ODF, English and UI lists
+      (core_resource.src lines 147, 500, 1129)
+  - ERRORTYPE: "ORG.OPENOFFICE.ERRORTYPE" (ODF, line 146), "ERRORTYPE"
+      (English, line 499; UI, line 1125)
+- Evaluator implementation: ScErrorType( bool bODF ) at
+    interpr1.cxx:8703. Both opcodes are in CASE_OCERRFUNC
+    (interpr4.cxx:3863-3864), so an error argument reaches them.
+- Help entry: HID_FUNC_ERROR_TYPE_ODF (helpids.h:736, hidother.src:328),
+    topic func_errortype.xhp embedded in 04060109.xhp next to ERRORTYPE
+    (HID_FUNC_FEHLERTYP). H.4's topic had reused HID_FUNC_FEHLERTYP and
+    was embedded in the date functions page.
+- Excel mapping: BIFF4 ID 261 (xlformula.cxx lines 260-261): import to
+    ocErrorTypeODF, export from both. xlsx: ERROR.TYPE (formulabase.cxx
+    line 486).
+
+B. Actual implementation: ScErrorType() examines the stack type:
+
+- svRefList: gets error code from first cell in ref list;
     errNoRef if empty, errNoValue if >1 ref.
-  - svDoubleRef/svSingleRef: gets cell error code via pDok->GetErrCode().
-  - default: PopError(), pushes error number.
+- svDoubleRef/svSingleRef: gets cell error code via pDok->GetErrCode().
+- default: PopError(), pushes error number.
   If no error (nErr == 0), pushes NA (PushNA()).
-  H.4 FIX: Added MapErrorType() helper that maps internal AOO error codes
-  to ODF ERROR.TYPE return values:
-    errNoCode(521) → 1 (#NULL!)
-    errDivisionByZero(532) → 2 (#DIV/0!)
-    errNoValue(519) → 3 (#VALUE!)
-    errNoRef(524) → 4 (#REF!)
-    errNoName(525) → 5 (#NAME?)
-    errIllegalFPOperation(503) → 6 (#NUM!)
-    NOTAVAILABLE(32767) → 7 (#N/A)
-  Other internal error codes or no error → #N/A error (ODF-compliant).
-  Semantic gap RESOLVED.
+  For ERROR.TYPE, lcl_ErrorTypeODF() (interpr1.cxx:8680) maps the code as
+  XclTools::GetXclErrorCode does: errNoCode 1; errDivisionByZero 2;
+  errNoValue, errIllegalArgument, errIllegalParameter, errPairExpected,
+  errOperatorExpected, errVariableExpected, errParameterExpected,
+  errCircularReference 3; errNoRef 4; errNoName, errNoAddin, errNoMacro 5;
+  errIllegalFPOperation 6; everything else 7.
+  ERROR.TYPE is in the multi-argument opcode range, so it checks for exactly
+  one argument itself (MustHaveParamCount); `=ERROR.TYPE()` is an error
+  (calcval row ERROR.TYPE.args, run).
+  H.4 had changed ScErrorType() itself, so ERRORTYPE returned 1-7 and
+  lost the internal codes its help documents (Err:518 gives 518); Jim's
+  decision: separate function, ERRORTYPE as on trunk.
 
-C. Format compatibility: No BIFF/OOXML table mapping for ERROR.TYPE.
+C. Format compatibility: xls ERROR.TYPE reads as ERROR.TYPE; ERRORTYPE
+  is written as ERROR.TYPE and comes back as ERROR.TYPE (run). xlsx
+  ERROR.TYPE read (run).
 
-D. Documentation: Help entry exists under German name FEHLERTYP only.
-  No English ERROR.TYPE help entry found.
+D. Documentation: English topics for both functions.
 
-Failure type: Implementation present; H.4 resolved error-code mapping
-  to ODF ERROR.TYPE return values (1–7). Help added in English.
-Priority: P1 (ODF-defined function; error code mapping gap).
-Confidence: HIGH — implementation fixed and verified at source level.
+Failure type: None. ERROR.TYPE(SQRT(-1)) is 3 in AOO (Err:502) and 6 in
+  Excel.
+Priority: Resolved (was P1).
+Confidence: HIGH — run, Excel 16.
 
-
-11. NUMBERVALUE
+11\. NUMBERVALUE
 ---------------
 
-ODF 1.4: Defined by ODF 1.4 Part 4 (§6.13.x text-to-number).
+ODF 1.4: Defined (§6.13.28 in ODF 1.2 and 1.4).
 ODF group: Verify against final spec (likely Large Group).
 
 A. Function registration
-  - Native opcode: SC_OPCODE_NUMBERVALUE = 392 (compiler.hrc line 388).
-  - Parser name: "NUMBERVALUE" in core_resource.src lines 348 (ODF)
-    and 693 (Excel).
-  - Function-name-to-opcode mapping: ocNumberValue → NUMBERVALUE.
-  - Evaluator implementation: ScInterpreter::ScNumberValue() at
-    main/sc/source/core/tool/interpr4.cxx:4066+. Dispatch via
-    `case ocNumberValue : ScNumberValue();` at interpr4.cxx:3559.
-    Implements ODF 1.4 §6.13.28 transformation steps:
-    whitespace removal, trailing percent handling, group separator
-    removal, decimal separator replacement, numeric parsing, percent
-    adjustment. Locale defaults used for omitted/empty separators.
-  - Function parameter metadata: Via native function resource.
-  - Help entry: HID_FUNC_NUMBERVALUE (hidother.src:370, helpids.h:776).
-  - ODF formula namespace mapping: NUMBERVALUE in both ODF (line 348)
-    and Excel (line 693) sections of core_resource.src.
-  - Excel import mapping: saFuncTable_Odf line 418:
-      EXC_FUNCENTRY_ODF( ocNumberValue, 2, 2, 0, "NUMBERVALUE" )
-  - Excel export mapping: _xlfnodf.NUMBERVALUE (export-only).
 
-B. Actual implementation: ScInterpreter::ScNumberValue() at
-  interpr4.cxx:4066+. The opcode (392) is dispatched via the interpreter
-  switch statement. Implements ODF 1.4 §6.13.28 with explicit-separator
-  parsing, whitespace removal, percent handling, and locale-default
-  fallbacks for omitted separators.
+- Native opcode: SC_OPCODE_NUMBERVALUE = 392 (compiler.hrc line 388).
+- Parser name: "NUMBERVALUE" in core_resource.src lines 356 (ODF)
+    and 709 (Excel).
+- Function-name-to-opcode mapping: ocNumberValue → NUMBERVALUE.
+- Evaluator implementation: ScInterpreter::ScNumberValue() at
+    main/sc/source/core/tool/interpr1.cxx:3102 (moved from interpr4.cxx
+    2026-11-18). Dispatch via `case ocNumberValue : ScNumberValue();` at
+    interpr4.cxx:3558.
+- Function parameter metadata: Function Wizard resource with 3
+    parameters, 2 and 3 optional (the H.1 block had one flag too few).
+- Help entry: HID_FUNC_NUMBERVALUE (hidother.src:378, helpids.h:784);
+    topic func_numbervalue.xhp.
+- Excel mapping: saFuncTable_Odf line 424:
+      EXC_FUNCENTRY_ODF( ocNumberValue, 1, 3, 0, "NUMBERVALUE" )
+    (was 2, 2).
+
+B. Actual implementation: the ODF steps in order: group separators
+  removed only before the first decimal separator, that separator turned
+  into '.', whitespace removed, trailing percent signs stripped (each
+  divides by 100), and the rest must be a plain xsd:float without INF/NaN
+  (lcl_IsPlainFloat(), interpr1.cxx:3072). LEN(DecimalSeparator) must be 1
+  and it must not occur in GroupSeparator; omitted separators come from
+  the locale, and the locale group separator is dropped when it equals
+  the given decimal separator. The H.1 version removed group separators
+  everywhere and replaced every decimal separator.
 
 C. Format compatibility
-  - XLS import: Not in BIFF tables. Not recognized on legacy XLS.
-  - XLSX import: saFuncTable_Odf import-only, mapped to ocNumberValue.
-  - XLS export: None.
-  - XLSX export: _xlfnodf.NUMBERVALUE.
 
-D. Documentation: Help entry exists (HID_FUNC_NUMBERVALUE).
-  Function Wizard entry exists in main/sc/source/ui/src/scfuncs.src
-  (SC_OPCODE_NUMBERVALUE resource block, updated with decimal_separator
-  and group_separator parameters).
+- XLS: `_xlfnodf.NUMBERVALUE`; AOO reads it back, Excel shows #NAME? (run).
+- XLSX import: `_xlfn.NUMBERVALUE` gives #NAME? (run).
 
-Failure type: None — implementation complete at source level.
+D. Documentation: func_numbervalue.xhp (rules added 2026-11-18).
+
+Failure type: None. Differences from Excel 16 on purpose: empty text is
+  an error (Excel 0), an empty GroupSeparator is accepted (Excel error),
+  a two-character DecimalSeparator is an error (Excel uses the first).
 Priority: Resolved (was P1).
-Confidence: HIGH — source evidence complete; runtime verification
-            deferred (no build available).
+Confidence: HIGH — run, Excel 16.
 
-
-12. GETPIVOTDATA
+12\. GETPIVOTDATA
 ----------------
 
 ODF 1.4: Not defined by ODF 1.4 Part 4. Excel-specific function.
 ODF group: Not applicable.
 
 A. Function registration
-  - Native opcode: SC_OPCODE_GET_PIVOT_DATA = 390 (compiler.hrc line 386).
-  - Parser name: "GETPIVOTDATA" in core_resource.src lines 346 (ODF)
-    and 691 (Excel).
-  - Function-name-to-opcode mapping: ocGetPivotData → GETPIVOTDATA.
-  - Evaluator implementation: ScGetPivotData() at interpr2.cxx:2972–3051+.
+
+- Native opcode: SC_OPCODE_GET_PIVOT_DATA = 390 (compiler.hrc line 386).
+- Parser name: "GETPIVOTDATA" in core_resource.src lines 354 (ODF)
+    and 707 (Excel).
+- Function-name-to-opcode mapping: ocGetPivotData → GETPIVOTDATA.
+- Evaluator implementation: ScGetPivotData() at interpr2.cxx:3069.
     Takes 2–30 params (must be even count). Supports old syntax
     (constraint string) and new syntax (field/item pairs). Uses
     pDok->GetDPAtBlock() to find the DataPilot object.
-  - Function parameter metadata: Via native function resource.
-  - Help entry: HID_FUNC_GETPIVOTDATA (hidother.src:330, helpids.h:738).
-  - ODF formula namespace mapping: GETPIVOTDATA in both sections.
-  - Excel import mapping: saFuncTable_8 line 351 (BIFF8):
+- Function parameter metadata: Via native function resource.
+- Help entry: HID_FUNC_GETPIVOTDATA (hidother.src:334, helpids.h:742).
+- ODF formula namespace mapping: GETPIVOTDATA in both sections.
+- Excel import mapping: saFuncTable_8 line 355 (BIFF8):
       { ocGetPivotData, 358, 2, MX, V, { RR, RR, VR }, 0, 0 }
-  - Excel export mapping: BIFF8 export (same table entry, no importonly/exportonly flag).
+- Excel export mapping: BIFF8 export (same table entry, no importonly/exportonly flag).
 
 B. Actual implementation: ScGetPivotData() parses target field name
   and field/item filter pairs, locates the DataPilot table via
   ScDPObject, calls GetPivotData(). Comment at interpr2.cxx:3035–3036
   notes: "MS Excel docs claim to use the 'most recent' which is not
-  exactly the same as what we do in ScDocument::GetDPAtBlock." The
+  exactly the same as what we do in ScDocument::GetDPAtBlock." (not
+  re-read 2026-11-18) The
   function depends entirely on the DataPilot subsystem
   (dptablecache.cxx:517 mentions GETPIVOTDATA disabling nested
   formula interpretation).
 
 C. Format compatibility
-  - XLS import: BIFF8 (function ID 358), recognized and mapped.
-  - XLSX import: Not in saFuncTable_Oox. May not be recognized on
-    XLSX import (OOXML table lacks GETPIVOTDATA).
-  - XLS export: BIFF8 export supported.
-  - XLSX export: None (not in OOXML table).
+
+- XLS import: BIFF8 (function ID 358), recognized and mapped.
+- XLSX import: oox/source/xls/formulabase.cxx line 692 has an
+    import-only GETPIVOTDATA row (xlsx import does not use
+    saFuncTable_Oox, which is xls-only). Not run.
+- XLS export: BIFF8 export supported.
+- XLSX export: AOO has no xlsx export.
 
 D. Documentation: Help entry exists.
 
-Failure type: Implementation present but XLSX import/export mapping
-  missing (only BIFF8/XLS). DataPilot dependency makes it
+Failure type: Implementation present. DataPilot dependency makes it
   application-level.
-Priority: P2 (Excel compatibility gap; XLSX mapping missing).
+Priority: P3.
 Confidence: HIGH — source evidence clear; runtime unverified.
 
+13\. FDIST
+---------
 
-13. FDIST
--------
-
-ODF 1.4: Not defined by ODF 1.4 Part 4 (legacy Excel function; replaced
-  by F.DIST/F.DIST.RT in ODF). ODF group: Not applicable.
-
-A. Function registration
-  - Native opcode: SC_OPCODE_F_DIST = 315 (compiler.hrc line 311).
-  - Parser names:
-    * "LEGACY.FDIST" (ODF namespace, core_resource.src line 282)
-    * "FDIST" (Excel namespace, core_resource.src line 667)
-  - Function-name-to-opcode mapping: ocFDist → both names.
-  - Evaluator implementation: ScFDist() at interpr3.cxx:1588–1620.
-    H.8 FIXED: Supports 3-4 params (x, df1, df2, [cumulative]).
-    Validates x>=0, df1>=1, df2>=1, df1<1E10, df2<1E10.
-    Calls GetFDist() for cumulative, GetFDistDens() for density.
-    Defaults to cumulative=TRUE.
-  - Function parameter metadata: Via Function Wizard resource.
-  - Help entry: HID_FUNC_FDIST (hidother.src:283, helpids.h:687).
-    English name; HID_FUNC_FDIST added.
-  - ODF formula namespace mapping: LEGACY.FDIST (ODF), FDIST (Excel).
-  - Excel import mapping: saFuncTable_Odf line 410:
-      EXC_FUNCENTRY_ODF( ocFDist, 3, 4, 0, "FDIST" )
-  - Excel export mapping: _xlfnodf.FDIST (export-only).
-
-B. Actual implementation: H.8 FIXED. ScFDist() (interpr3.cxx:1588)
-  supports 3-4 params per ODF 1.2 §6.17.9. Added GetFDistDens()
-  for probability density function (cumulative=FALSE).
-  Defaults to cumulative=TRUE.
-
-C. Format compatibility
-  - XLS import: Not in BIFF tables. Not recognized on legacy XLS.
-  - XLSX import: saFuncTable_Odf import-only.
-  - XLS export: None.
-  - XLSX export: _xlfnodf.FDIST.
-
-D. Documentation: Help entry updated to English HID_FUNC_FDIST.
-  Help content in 04060182.xhp updated with 4-param syntax and examples.
-  Test cases SG.FDIST-01..12 added.
-
-Failure type: RESOLVED in H.8 (was: param count gap, German help).
-Priority: P2 (was P2).
-Confidence: HIGH — source evidence clear, tests added.
-
-
-14. FINV
-------
-
-ODF 1.4: Not defined by ODF 1.4 Part 4 (legacy Excel function).
+ODF 1.4: ODF FDIST (§6.18.22) is the left tail with optional Cumulative
+  (default TRUE; 0 for x < 0; density error only at x = 0, r1 = 1).
+  LEGACY.FDIST (§6.18.23) is the right tail, three arguments.
 ODF group: Not applicable.
 
 A. Function registration
-  - Native opcode: SC_OPCODE_F_INV = 359 (compiler.hrc line 355).
-  - Parser names:
-    * "LEGACY.FINV" (ODF namespace, core_resource.src line 326)
-    * "FINV" (Excel namespace, core_resource.src line 671)
-  - Function-name-to-opcode mapping: ocFInv → both names.
-  - Evaluator implementation: ScFInv() at interpr3.cxx:2154–2171+.
-    Takes exactly 3 params (probability, df1, df2). Validates
-    0<p<=1, 1<=df<1E10. Uses ScFDistFunction + lcl_IterateInverse
-    for numerical inversion.
-  - Function parameter metadata: Via native function resource.
-  - Help entry: HID_FUNC_FINV (hidother.src:284, helpids.h:688).
-  - ODF formula namespace mapping: LEGACY.FINV (ODF), FINV (Excel).
-  - Excel import mapping: saFuncTable_Odf line 411:
-      EXC_FUNCENTRY_ODF( ocFInv, 3, 3, 0, "FINV" )
-  - Excel export mapping: _xlfnodf.FINV (export-only).
 
-B. Actual implementation: ScFInv() performs numerical inverse of
-  F-distribution via iteration (lcl_IterateInverse). Validation
-  present. Shares GetFDist with ScFDist.
+- AOO FDIST = ODF LEGACY.FDIST: SC_OPCODE_F_DIST = 315 (compiler.hrc
+    line 311), ocFDist, ScFDist() at interpr3.cxx:1588, three arguments,
+    unchanged from trunk. Names: "LEGACY.FDIST" (ODF, core_resource.src
+    line 287), "FDIST" (English line 640, UI line 1695). xls BIFF4 281.
+    Help HID_FUNC_FVERT.
+- AOO F.DIST = ODF FDIST, since 2026-11-18: SC_OPCODE_F_DIST_LEFT = 417
+    (compiler.hrc line 413), ocFDistLeft (opcode.hxx line 372),
+    ScFDistLeft() at interpr3.cxx:1604. Names: "FDIST" (ODF, line 288),
+    "F.DIST" (English line 641, UI line 1699). xls: saFuncTable_Oox
+    lines 385-386, `_xlfn.F.DIST`; `_xlfnodf.FDIST` imports as FDIST
+    (line 421). Help HID_FUNC_F_DIST_LEFT (helpids.h:689,
+    hidother.src:285), F.DIST section in 04060182.xhp.
 
-C. Format compatibility: Same as FDIST — _xlfnodf.FINV export.
+B. History: H.8/H.8.1 changed ocFDist itself into the left tail (with a
+  4th argument popped after the others) and added ocLegacyFDist. That
+  changed FDIST typed in every UI language, in macros and in .sxc files,
+  and f4f3de4f92 then dropped the SC_OPCODE_LEGACY_F_* defines, so the
+  branch did not build. Jim's decision: keep FDIST, add F.DIST.
+  ScFDistLeft() computes the left tail with GetBetaDist() at
+  r1*x/(r1*x+r2) and the density with GetBetaDistPDF().
 
-D. Documentation: Help entry exists (HID_FUNC_FINV).
-  Help content in 04060182.xhp updated with improved examples.
-  Test cases SG.FINV-01..12 added.
+C. Format compatibility
 
-Failure type: RESOLVED in H.8 (was: export naming compatibility).
-Priority: P2 (was P2).
-Confidence: HIGH — tests added.
+- ODF: of:FDIST ↔ F.DIST, of:LEGACY.FDIST ↔ FDIST (run, round trip).
+- XLS: FDIST as 281 (run); F.DIST as `_xlfn.F.DIST`, Excel calculates the 4-argument form (run); `_xlfnodf.FDIST` from an older xls reads as FDIST (run).
+- XLSX: FDIST (281) read (run); `_xlfn.F.DIST` gives #NAME? (run).
 
+D. Documentation: FDIST help as on trunk; F.DIST section added.
 
-15. HARMEAN
----------
+Failure type: None.
+Priority: Resolved.
+Confidence: HIGH — run; F.DIST and FDIST match Excel 16 on 300 and 263
+            random cases.
+
+14\. FINV
+--------
+
+ODF 1.4: ODF FINV (§6.18.24) inverts FDIST (left tail); LEGACY.FINV
+  (§6.18.25) inverts LEGACY.FDIST.
+ODF group: Not applicable.
+
+A. Function registration
+
+- AOO FINV = ODF LEGACY.FINV: SC_OPCODE_F_INV = 359 (compiler.hrc line
+    355), ScFInv() at interpr3.cxx:2052, unchanged. Names "LEGACY.FINV"
+    (ODF, line 332), "FINV" (English line 685, UI line 1879). xls BIFF4
+    282.
+- AOO F.INV = ODF FINV, since 2026-11-18: SC_OPCODE_F_INV_LEFT = 418
+    (compiler.hrc line 414), ocFInvLeft, ScFInvLeft() at
+    interpr3.cxx:2074, using ScFDistLeftFunction + lcl_IterateInverse.
+    Names "FINV" (ODF, line 333), "F.INV" (English line 686, UI line
+    1883). xls `_xlfnodf.FINV` (saFuncTable_Odf line 417). Help
+    HID_FUNC_F_INV_LEFT, F.INV section in 04060182.xhp.
+
+B. Actual implementation: F.INV accepts 0 <= p < 1 (0 gives 0).
+
+C. Format compatibility: as FDIST/F.DIST.
+
+D. Documentation: FINV help as on trunk; F.INV section added.
+
+Failure type: None.
+Priority: Resolved.
+Confidence: HIGH — run; FINV matches Excel 16 on 300 random cases, F.INV
+            on 298 (the other two within 3e-10 at p = 0.999, r2 = 1).
+
+15\. HARMEAN
+-----------
 
 ODF 1.4: Defined by ODF 1.4 Part 4 (statistical function).
 ODF group: Verify against final spec (likely Large Group).
 
 A. Function registration
-  - Native opcode: SC_OPCODE_HAR_MEAN = 321 (compiler.hrc line 317).
-  - Parser name: "HARMEAN" in core_resource.src lines 288 (ODF)
-    and 679 (Excel).
-  - Function-name-to-opcode mapping: ocHarmMean → HARMEAN.
-  - Evaluator implementation: ScHarMean() at interpr3.cxx:2712–2751+.
+
+- Native opcode: SC_OPCODE_HAR_MEAN = 321 (compiler.hrc line 317).
+- Parser name: "HARMEAN" in core_resource.src lines 294 (ODF)
+    and 647 (Excel).
+- Function-name-to-opcode mapping: ocHarMean → HARMEAN.
+- Evaluator implementation: ScHarMean() at interpr3.cxx:2637.
     Iterates over params, accumulates 1/x for x>0, counts values.
     Sets errIllegalArgument for x<=0. Skips empty cells.
-  - Function parameter metadata: Via native function resource.
-  - Help entry: HID_FUNC_HARMITTEL (hidother.src:247, helpids.h:651).
-    German name "HarMittel"; no English HID_FUNC_HARMEAN found.
-  - ODF formula namespace mapping: HARMEAN in both sections.
-  - Excel import mapping: Not in xlformula.cxx BIFF tables (HARMEAN
-    is a native Excel function, may be in the main function table
-    not reviewed in detail).
-  - Excel export mapping: Not in saFuncTable_Odf (HARMEAN is not
-    listed there). May be in main saFuncTable (not reviewed).
+- Function parameter metadata: Via native function resource.
+- Help entry: HID_FUNC_HARMITTEL (hidother.src:248, helpids.h:652).
+    The help ID name is German; the help text (04060182.xhp) is English.
+- ODF formula namespace mapping: HARMEAN in both sections.
+- Excel import/export mapping: BIFF4 ID 320 both ways
+    (xlformula.cxx line 313, saFuncTable_4); xlsx 320
+    (formulabase.cxx line 538).
 
 B. Actual implementation: ScHarMean() implements H = n / Σ(1/xᵢ)
   counting only positive values. Zero or negative values trigger
@@ -686,23 +705,18 @@ B. Actual implementation: ScHarMean() implements H = n / Σ(1/xᵢ)
   (handled by the switch's default case / HasCellValueData check).
   Error values propagate via nGlobalError.
 
-C. Format compatibility: Not found in xlformula.cxx BIFF/OOXML
-  tables reviewed. May be in the main saFuncTable (pre-BIFF5).
+C. Format compatibility: BIFF 320 and xlsx (source; not run).
 
-D. Documentation: Help entry under German name HARMITTEL only.
+D. Documentation: English help in 04060182.xhp.
 
-Failure type: Implementation present but help only in German.
-  Need to verify BIFF main table mapping.
-Priority: P3 (minor — documentation/alias issue).
-Confidence: HIGH — implementation present; help language gap confirmed.
-
+Failure type: None found.
+Priority: P3.
+Confidence: HIGH — source.
 
 Cross-Cutting Observation: LENB/RIGHTB/LEFTB/MIDB Opcodes
 ----------------------------------------------------------
 
 compiler.hrc defines SC_OPCODE_LENB=400, SC_OPCODE_RIGHTB=401,
-SC_OPCODE_LEFTB=402, SC_OPCODE_MIDB=403. These byte-oriented text
-function opcodes exist but FINDB/SEARCHB/REPLACEB do not. This
-confirms the byte-oriented text function family is partially
-implemented (extract/length functions present, find/replace/search
-absent).
+SC_OPCODE_LEFTB=402, SC_OPCODE_MIDB=403, and since H.2
+SC_OPCODE_FINDB=412, SC_OPCODE_SEARCHB=413, SC_OPCODE_REPLACEB=414.
+All seven map to Excel's BIFF IDs 205-211.
