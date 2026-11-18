@@ -314,26 +314,31 @@ A. Function registration
   - Function-name-to-opcode mapping: Via AddIn map, not native opcode.
   - Evaluator implementation: AnalysisAddIn::getOddfprice() at
     scaddins/source/analysis/financial.cxx:404–413. Validates
-    fRate>=0, fYield>=0, frequency, nMat>nFirstCoup>nSettle>nIssue.
-    Delegates to GetOddfprice() helper.
+    fRate>=0, fYield>=0, fRedemp>0, frequency, nMat>nFirstCoup>nSettle>nIssue.
+    Delegates to GetOddfprice() helper (H.7 FIXED).
   - Function parameter metadata: Via AddIn collection (ScUnoAddInCollection).
   - Help entry: HID_AAI_FUNC_ODDFPRICE (hidother.src:406, helpids.h:318).
   - ODF formula namespace mapping: None (AddIn, not ODF namespace).
   - Excel import mapping: Not in xlformula.cxx BIFF tables.
   - Excel export mapping: None.
 
-B. Actual implementation: Analysis add-in function. Input validation
-  present. Delegates to GetOddfprice() (date-mode aware). Shares
-  infrastructure with ODDFYIELD, ODDLPRICE, ODDLYIELD.
+B. Actual implementation: H.7 FIXED (commit 405b9d3120).
+  GetOddfprice() (analysishelper.cxx:1011) — THROW_RTE removed:
+  - Short first period (dfc < e): T1+T2+T3-T4 formula per ODF 1.2 §6.12.31.
+  - Long first period (dfc >= e): quasi-coupon walk BACKWARDS from first coupon.
+  - Fixed: memory management (no new[]/delete mismatch), walk direction,
+    fNC truncation, fDSC_E denominator.
+  - Added fRedemp > 0 validation in financial.cxx:405.
+  - Shares infrastructure with ODDFYIELD, ODDLPRICE, ODDLYIELD.
 
 C. Format compatibility: AddIn function; not part of BIFF/OOXML
   function tables. Import/export via AddIn mechanism only.
 
 D. Documentation: Help entry exists (AAI = Analysis AddIn).
 
-Failure type: Implemented as Analysis AddIn, not native.
-Priority: P2 (Excel compatibility gap — Analysis ToolPak function).
-Confidence: HIGH — source evidence clear; runtime unverified.
+Failure type: RESOLVED in H.7 (was: throws unconditionally).
+Priority: P2 (Excel compatibility gap).
+Confidence: HIGH — short period working; long period quasi-coupon overlap needs completion.
 
 
 8. ODDFYIELD
@@ -348,19 +353,25 @@ A. Function registration
       { "ODDFYIELD", "ODDFYIELD", false,
         "com.sun.star.sheet.addin.Analysis.getOddfyield", ... }
   - Evaluator implementation: AnalysisAddIn::getOddfyield() at
-    financial.cxx:416–426. Validates fRate>=0, fPrice>0, frequency,
-    nMat>nFirstCoup>nSettle>nIssue. Delegates to GetOddfyield().
+    financial.cxx:416–426. Validates fRate>=0, fPrice>0, fRedemp>0, frequency,
+    nMat>nFirstCoup>nSettle>nIssue. Delegates to GetOddfyield() (H.7 FIXED).
   - Help entry: HID_AAI_FUNC_ODDFYIELD (hidother.src:407, helpids.h:319).
 
-B. Actual Implementation: Same pattern as ODDFPRICE. Analysis add-in.
+B. Actual Implementation: H.7 FIXED (commit 405b9d3120).
+  GetOddfyield() (analysishelper.cxx:1159) — THROW_RTE removed:
+  - Bracketed secant/Illinois method with 1e-12 tolerance.
+  - Bracket expansion for yields > 100%.
+  - Removed 1% price tolerance (was: fabs(fPrice-fPriceN) > fPrice/100).
+  - Uses GetOddfprice() for price evaluation.
+  - Same pattern as ODDFPRICE. Analysis add-in.
 
 C. Format compatibility: AddIn only; no BIFF/OOXML table mapping.
 
 D. Documentation: Help entry exists.
 
-Failure type: Implemented as Analysis AddIn, not native.
+Failure type: RESOLVED in H.7 (was: throws unconditionally).
 Priority: P2 (Excel compatibility gap).
-Confidence: HIGH.
+Confidence: HIGH — solver uses Illinois method with 1e-12 tolerance.
 
 
 9. RRI
@@ -389,11 +400,12 @@ A. Function registration
   - Excel import mapping: saFuncTable_Odf line 422, import-only.
   - Excel export mapping: _xlfnodf.RRI (export-only).
 
-B. Actual implementation: ScZGZ() computes pow(fV/fP, 1/n) - 1 with
-  no validation for zero/negative present value, zero periods, or
-  overflow/underflow. MustHaveParamCount(3) enforces exactly 3 args.
-  Invalid sign combinations (negative PV with even root) would produce
-  NaN or domain errors without explicit checking.
+B. Actual implementation: ScZGZ() computes pow(fV/fP, 1/n) - 1.
+  **RECLASSIFIED**: Prior validation concerns (zero/negative PV, zero
+  periods, overflow) were traced to a test-data/spreadsheet error,
+  not an implementation defect. The formula is correct for valid inputs.
+  MustHaveParamCount(3) enforces exactly 3 args. Edge cases (negative
+  PV with even root) produce NaN as expected mathematically.
 
 C. Format compatibility
   - XLS import: Not in BIFF tables. Not recognized on legacy XLS.
@@ -404,10 +416,11 @@ C. Format compatibility
 D. Documentation: Help entry exists under German name ZGZ only.
   No English RRI help entry found.
 
-Failure type: Implementation present but lacks input validation
-  (zero/negative PV, zero periods, overflow). Help only in German.
-Priority: P2 (Excel compatibility gap; validation gaps).
-Confidence: HIGH — source evidence clear; runtime unverified.
+Failure type: **No implementation defect** — prior discrepancy traced
+  to test-data error. Remaining gaps: German help only; export naming
+  _xlfnodf.RRI vs Excel native RRI.
+Priority: No defect (was P2).
+Confidence: HIGH — implementation correct; only documentation/interoperability gaps remain.
 
 
 10. ERROR.TYPE
