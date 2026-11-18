@@ -1015,7 +1015,7 @@ double GetOddfprice( sal_Int32 nNullDate, sal_Int32 nSettle, sal_Int32 nMat, sal
     // #87380# - Implementation restored per ODF 1.2 §6.12.31
 
     // Input validation (from financial.cxx + ODF 1.2 constraints)
-    if (fRate < 0 || fYield < 0 || fRedemp <= 0)
+    if (fRate < 0 || fYield < 0 || fRedemp <= 0 || nFreq != 1 && nFreq != 2 && nFreq != 4 || nBase < 0 || nBase > 4)
         THROW_IAE;
 
     // Days in normal coupon period
@@ -1125,11 +1125,78 @@ double GetOddfprice( sal_Int32 nNullDate, sal_Int32 nSettle, sal_Int32 nMat, sal
         double p1 = x;
         double p3 = pow( x, y + nq + n );
         double fT1 = fRedemp / p3;
-        double fT2 = f100RateFreq * 0.0 / pow( x, nq + y ); // fDcnl
+
+        // Long first coupon: compute fDcnl and fAnl properly
+        // fDcnl = sum of (dci/nl)/x^(nq + y + (i-1)) for i=1..nNC
+        // fAnl = sum of (a/nl)/x^(nq + y + (i-1)) for i=1..nNC
+        // where nNC = fNC (number of quasi-coupons)
+        double fDcnl = 0.0;
+        double fAnl = 0.0;
+        double x_val = 1.0 + fYield / nFreq;
+        double nNC = GetCoupnum( nNullDate, nIssue, nFirstCoup, nFreq, nBase );
+        sal_uInt32 nNC = sal_uInt32( nNC ); // truncate as per spec
+
+        sal_Int32 nLateCoup = nFirstCoup;
+        sal_Int32 nMonthDelta = 12 / nFreq;
+
+        for (sal_uInt32 i = 1; i <= nNC; ++i)
+        {
+            // Step BACKWARDS to previous quasi-coupon
+            ScaDate aLateCoup( nNullDate, nLateCoup, nBase );
+            ScaDate aEarlyCoup( aLateCoup );
+            aEarlyCoup.addMonths( -12 / nFreq );
+
+            // nl = days in quasi-coupon period
+            double nl;
+            if (nBase == 1)
+                nl = GetDiffDate( nNullDate,
+                    aEarlyCoup.getDate( nNullDate ), aLateCoup.getDate( nNullDate ), nBase );
+            else
+                nl = GetCoupdays( nNullDate,
+                    aEarlyCoup.getDate( nNullDate ), aLateCoup.getDate( nNullDate ),
+                    nFreq, nBase );
+
+            // dci = days from issue to late_coupon (or early_coupon to late_coupon for i>1)
+            double dci;
+            if (i > 1)
+                dci = nl;
+            else
+                dci = GetDiffDate( nNullDate, nIssue, nLateCoup, nBase );
+
+            // a = days in quasi-coupon before settlement (overlap)
+            double a = 0.0;
+            ScaDate aIssue( nNullDate, nIssue, nBase );
+            ScaDate aSettle( nNullDate, nSettle, nBase );
+            // Overlap of [issue, settlement] with [early_coupon, late_coupon]
+            if (aSettle > aEarlyCoup && aIssue < aLateCoup)
+            {
+                sal_Int32 overlapStart = aEarlyCoup > aIssue ? aEarlyCoup.getDate( nNullDate ) : aIssue.getDate( nNullDate );
+                sal_Int32 overlapEnd = aSettle < aLateCoup ? aSettle.getDate( nNullDate ) : aLateCoup.getDate( nNullDate );
+                if (overlapEnd > overlapStart)
+                    a = static_cast<double>(overlapEnd - overlapStart);
+            }
+
+            // Accumulate with proper discounting
+            double discountFactor = pow( 1.0 + fYield / nFreq, nq + y + (i - 1) );
+            fDcnl += (dci / nl) / discountFactor;
+            fAnl += (a / nl) / discountFactor;
+
+            // Update for next iteration
+            nLateCoup = aEarlyCoup.getDate( nNullDate );
+        }
+
+        double nq = GetCoupnum( nNullDate, nFirstCoup, nSettle, nFreq, nBase );
+        double n = GetCoupnum( nNullDate, nFirstCoup, nMat, nFreq, nBase );
+        double x = 1.0 + fYield / nFreq;
+        double y = dsc / e;
+        double p1 = x;
+        double p3 = pow( x, y + nq + n );
+        double fT1 = fRedemp / p3;
+        double fT2 = f100RateFreq * fDcnl / pow( x, nq + y );
         double fT3 = 0.0;
         for (double k = 1.0; k <= n; k++)
             fT3 += 100.0 * fRate / nFreq / pow( x, k + nq + y );
-        double fT4 = f100RateFreq * 0.0; // fAnl
+        double fT4 = f100RateFreq * fAnl;
 
         return fT1 + fT2 + fT3 - fT4;
     }
@@ -1218,7 +1285,7 @@ double GetOddfyield( sal_Int32 nNullDate, sal_Int32 nSettle, sal_Int32 nMat, sal
     // #87380# - Implementation restored per ODF 1.2 §6.12.32
 
     // Input validation
-    if (fRate < 0 || fPrice <= 0 || fRedemp <= 0)
+    if (fRate < 0 || fPrice <= 0 || fRedemp <= 0 || nFreq != 1 && nFreq != 2 && nFreq != 4 || nBase < 0 || nBase > 4)
         THROW_IAE;
 
     // Solve for yield using bracketed secant/Illinois method
