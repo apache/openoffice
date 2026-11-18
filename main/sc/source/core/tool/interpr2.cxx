@@ -1301,6 +1301,11 @@ void ScInterpreter::ScZGZ()
         double nZukunftswert = GetDouble();
         double nGegenwartswert = GetDouble();
         double nZeitraum = GetDouble();
+        if (nZeitraum <= 0.0)
+        {
+            PushIllegalArgument();
+            return;
+        }
         PushDouble(pow(nZukunftswert / nGegenwartswert, 1.0 / nZeitraum) - 1.0);
     }
 }

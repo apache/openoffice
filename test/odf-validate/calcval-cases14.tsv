@@ -340,6 +340,9 @@ F.DIST.pole	=F.DIST(0;1;5;0)	cell	#ERR	6.18.22 density error for r1 = 1 at x = 0
 F.DIST.zero.r1.2	=F.DIST(0;2;5;0)	cell	1	density at x = 0 for r1 = 2
 F.DIST.bad.df	=F.DIST(2.5;0;10)	cell	#ERR	6.18.22 r1 must be positive
 F.DIST.plus.legacy	=F.DIST(2.5;5;10)+FDIST(2.5;5;10)	cell	1	left and right tails add up to 1
+F.DIST.huge.x.cdf	=F.DIST(1E308;5;10)	cell	1	r1*x overflows; must not give NaN
+F.DIST.huge.x.pdf	=F.DIST(1E308;5;10;0)	cell	0	density underflows to 0
+F.DIST.y.rounds.to.1	=F.DIST(1E17;5;1;0)	cell	1.20042175487614E-26	r2 = 1: y rounds to 1, density must not be an error
 F.INV.mid	=F.INV(0.5;5;10)	cell	0.9319331608510479	6.18.24 FINV left tail
 F.INV.zero	=F.INV(0;5;10)	cell	0	6.18.24 p = 0
 F.INV.one	=F.INV(1;5;10)	cell	#ERR	6.18.24 p = 1 has no finite x
@@ -367,6 +370,8 @@ ERRORTYPE.legacy	=ERRORTYPE(1/0)	cell	532	ORG.OPENOFFICE.ERRORTYPE keeps the int
 ERRORTYPE.legacy.na	=ERRORTYPE(NA())	cell	32767	ORG.OPENOFFICE.ERRORTYPE keeps the internal code
 RRI.basic	=RRI(10;100;200)	cell	0.07177346253629313	6.12.44 (Fv/Pv)^(1/N) - 1
 RRI.zgz	=ZGZ(10;100;200)	cell	0.07177346253629313	old name ZGZ still read
+RRI.nper.zero	=RRI(0;100;100)	cell	#ERR	Nper must be greater than 0
+RRI.nper.negative	=RRI(-2;100;200)	cell	#ERR	Nper must be greater than 0
 ODDFPRICE.short	=ODDFPRICE(DATE(2008;11;11);DATE(2021;3;1);DATE(2008;10;15);DATE(2009;3;1);0.0785;0.0625;100;2;1)	cell	113.59771747407883	6.12.31 short odd first period (Excel example)
 ODDFPRICE.long	=ODDFPRICE(DATE(2022;8;2);DATE(2028;4;5);DATE(2021;11;16);DATE(2023;10;5);0.0764;0.1492;100;2;2)	cell	71.46287909084108	6.12.31 long odd first period
 ODDFPRICE.long.monthend	=ODDFPRICE(DATE(2011;9;19);DATE(2031;11;14);DATE(2010;4;28);DATE(2012;11;14);0.0569;0.0035;95.5;1;2)	cell	199.43997530092304	6.12.31 long odd first period, annual

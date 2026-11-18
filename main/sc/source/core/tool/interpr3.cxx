@@ -1601,6 +1601,13 @@ void ScInterpreter::ScFDist()
     PushDouble(GetFDist(fF, fF1, fF2));
 }
 
+// r1*x/(r1*x+r2) without forming inf/inf when r1*x overflows.
+static double lcl_FDistLeftBetaArg( double fF1, double fF2, double fX )
+{
+    double fR = fF1 * fX;
+    return ::rtl::math::isFinite( fR ) ? fR / (fR + fF2) : 1.0;
+}
+
 void ScInterpreter::ScFDistLeft()
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScFDistLeft" );
@@ -1623,9 +1630,18 @@ void ScInterpreter::ScFDistLeft()
     }
     // F(x;r1;r2) is Beta(r1/2;r2/2) at y = r1*x/(r1*x+r2).
     double fDenom = fF1 * fF + fF2;
-    double fY = fF1 * fF / fDenom;
+    double fY = lcl_FDistLeftBetaArg( fF1, fF2, fF );
     if (bCumulative)
         PushDouble( GetBetaDist( fY, fF1 / 2.0, fF2 / 2.0));
+    else if (fY >= 1.0 || fDenom > 1.0E150)
+    {
+        // y has rounded to 1 or denom^2 would overflow: use the density in log form
+        double fA = fF1 / 2.0;
+        double fB = fF2 / 2.0;
+        double fLogDenom = log( fF1) + log( fF) + std::log1p( fF2 / (fF1 * fF));
+        PushDouble( exp( (fA - 1.0) * log( fF) + fA * log( fF1) + fB * log( fF2)
+                         - GetLogBeta( fA, fB) - (fA + fB) * fLogDenom));
+    }
     else
         PushDouble( GetBetaDistPDF( fY, fF1 / 2.0, fF2 / 2.0) * fF1 * fF2 / (fDenom * fDenom));
 }
@@ -2034,7 +2050,7 @@ public:
             ScFDistLeftFunction( ScInterpreter& rI, double fpVal, double fF1Val, double fF2Val ) :
                 rInt(rI), fp(fpVal), fF1(fF1Val), fF2(fF2Val) {}
 
-    double  GetValue( double x ) const  { return fp - rInt.GetBetaDist( fF1 * x / (fF1 * x + fF2), fF1 / 2.0, fF2 / 2.0); }
+    double  GetValue( double x ) const  { return fp - rInt.GetBetaDist( lcl_FDistLeftBetaArg( fF1, fF2, x), fF1 / 2.0, fF2 / 2.0); }
 };
 
 class ScFDistFunction : public ScDistFunc
