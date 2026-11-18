@@ -669,7 +669,7 @@ void ScLIA();
 double ScGetRmz(double fZins, double fZzr, double fBw,
                        double fZw, double fF);
 void ScRMZ();
-void ScZGZ();
+void ScRRI();
 double ScGetZw(double fZins, double fZzr, double fRmz,
                       double fBw, double fF);
 void ScZW();
