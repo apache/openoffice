@@ -21,8 +21,8 @@ Summary table of all 15 audited functions.
 | ERROR.TYPE | Present | ocErrorType (151) | ScErrorType() | Yes (HID_FUNC_FEHLERTYP) | Yes | Large Group | Yes(BIFF4,ID261,ocErrorType) | No | No | No | H.4 fixed: MapErrorType() maps internal codes to ODF 1–7 | Resolved/H.4 (was P1) | HIGH |
 | NUMBERVALUE | Present | ocNumberValue (392) | ScNumberValue() | Yes (HID_FUNC_NUMBERVALUE) | Yes | Verify (likely Large Group) | No | Yes (ODF table, import-only) | No | _xlfnodf.NUMBERVALUE | None — implementation complete at source level | Resolved (was P1) | HIGH |
 | GETPIVOTDATA | Present | ocGetPivotData (390) | ScGetPivotData() | Yes (HID_FUNC_GETPIVOTDATA) | No | N/A | Yes (BIFF8, ID 358) | No | Yes (BIFF8) | No | DataPilot-dependent; XLSX import/export mapping missing | P2 | HIGH |
-| FDIST | Present | ocFDist (315) | ScFDist() | German only (FVERT) | No | N/A | No | Yes (ODF table, import-only) | No | _xlfnodf.FDIST | Param count (3 vs ODF 3–4); German help only; _xlfnodf export naming | P2 | HIGH |
-| FINV | Present | ocFInv (359) | ScFInv() | Yes (HID_FUNC_FINV) | No | N/A | No | Yes (ODF table, import-only) | No | _xlfnodf.FINV | _xlfnodf export naming (Excel has FINV natively) | P2 | HIGH |
+| FDIST | Present | ocFDist (315) | ScFDist() | Yes (HID_FUNC_FDIST) | Yes | N/A | No | Yes (ODF table, import-only) | No | _xlfnodf.FDIST | H.8 fixed: 4th param (cumulative), English help, tests added; export naming | Resolved/H.8 (was P2) | HIGH |
+| FINV | Present | ocFInv (359) | ScFInv() | Yes (HID_FUNC_FINV) | Yes | N/A | No | Yes (ODF table, import-only) | No | _xlfnodf.FINV | H.8 fixed: English help, tests added; export naming | Resolved/H.8 (was P2) | HIGH |
 | HARMEAN | Present | ocHarmMean (321) | ScHarMean() | German only (HARMITTEL) | Yes | Verify (likely Large Group) | Not in reviewed tables | Not in reviewed tables | Not in reviewed tables | Not in reviewed tables | German help only; BIFF main-table mapping unverified | P3 | HIGH |
 
 Notes:

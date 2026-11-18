@@ -6790,8 +6790,8 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		{
 			0;
 			ID_FUNCTION_GRP_STATISTIC;
-			U2S( HID_FUNC_FVERT );
-			3;	0;	0;	0;
+			U2S( HID_FUNC_FDIST );
+			4;	0;	0;	0;
 			0;
 		};
 		String 2 // Name of Parameter 1
@@ -6817,6 +6817,14 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		String 7 // Description of Parameter 3
 		{
 			Text [ en-US ] = "The degrees of freedom in the denominator of the F distribution." ;
+		};
+		String 8 // Name of Parameter 4
+		{
+			Text [ en-US ] = "cumulative" ;
+		};
+		String 9 // Description of Parameter 4
+		{
+			Text [ en-US ] = "If TRUE, the cumulative distribution function is returned; if FALSE, the probability density function is returned. Default is TRUE." ;
 		};
 	};
 	// -=*# Resource for function FINV #*=-

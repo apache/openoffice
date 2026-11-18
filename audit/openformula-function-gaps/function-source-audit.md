@@ -572,21 +572,23 @@ A. Function registration
     * "LEGACY.FDIST" (ODF namespace, core_resource.src line 282)
     * "FDIST" (Excel namespace, core_resource.src line 667)
   - Function-name-to-opcode mapping: ocFDist → both names.
-  - Evaluator implementation: ScFDist() at interpr3.cxx:1588–1602.
-    Takes exactly 3 params (x, df1, df2). Validates x>=0, df1>=1,
-    df2>=1, df1<1E10, df2<1E10. Calls GetFDist(x, fF1, fF2).
-  - Function parameter metadata: Via native function resource.
-  - Help entry: HID_FUNC_FVERT (hidother.src:283, helpids.h:687).
-    German name "FVerteilt"; no English HID_FUNC_FDIST found.
+  - Evaluator implementation: ScFDist() at interpr3.cxx:1588–1620.
+    H.8 FIXED: Supports 3-4 params (x, df1, df2, [cumulative]).
+    Validates x>=0, df1>=1, df2>=1, df1<1E10, df2<1E10.
+    Calls GetFDist() for cumulative, GetFDistDens() for density.
+    Defaults to cumulative=TRUE.
+  - Function parameter metadata: Via Function Wizard resource.
+  - Help entry: HID_FUNC_FDIST (hidother.src:283, helpids.h:687).
+    English name; HID_FUNC_FDIST added.
   - ODF formula namespace mapping: LEGACY.FDIST (ODF), FDIST (Excel).
   - Excel import mapping: saFuncTable_Odf line 410:
       EXC_FUNCENTRY_ODF( ocFDist, 3, 4, 0, "FDIST" )
   - Excel export mapping: _xlfnodf.FDIST (export-only).
 
-B. Actual implementation: ScFDist() enforces exactly 3 parameters
-  (ODF allows 3–4 with cumulative flag). Calls GetFDist()
-  (interpr3.cxx:665). Uses ScDistFunc/FDistFunction class hierarchy.
-  Validation: PushIllegalArgument() for out-of-range inputs.
+B. Actual implementation: H.8 FIXED. ScFDist() (interpr3.cxx:1588)
+  supports 3-4 params per ODF 1.2 §6.17.9. Added GetFDistDens()
+  for probability density function (cumulative=FALSE).
+  Defaults to cumulative=TRUE.
 
 C. Format compatibility
   - XLS import: Not in BIFF tables. Not recognized on legacy XLS.
@@ -594,15 +596,13 @@ C. Format compatibility
   - XLS export: None.
   - XLSX export: _xlfnodf.FDIST.
 
-D. Documentation: Help entry under German name FVERT only.
+D. Documentation: Help entry updated to English HID_FUNC_FDIST.
+  Help content in 04060182.xhp updated with 4-param syntax and examples.
+  Test cases SG.FDIST-01..12 added.
 
-Failure type: Implementation present but parameter count (3 vs ODF
-  3–4) and help (German only) are gaps. Exported as _xlfnodf.FDIST
-  which Excel may not recognize natively (Excel has FDIST without
-  _xlfn prefix).
-Priority: P2 (legacy Excel function; export naming may cause
-          Excel compatibility issues).
-Confidence: HIGH.
+Failure type: RESOLVED in H.8 (was: param count gap, German help).
+Priority: P2 (was P2).
+Confidence: HIGH — source evidence clear, tests added.
 
 
 14. FINV
@@ -635,11 +635,12 @@ B. Actual implementation: ScFInv() performs numerical inverse of
 C. Format compatibility: Same as FDIST — _xlfnodf.FINV export.
 
 D. Documentation: Help entry exists (HID_FUNC_FINV).
+  Help content in 04060182.xhp updated with improved examples.
+  Test cases SG.FINV-01..12 added.
 
-Failure type: Implementation present but exported as _xlfnodf.FINV
-  (Excel has FINV natively without _xlfn prefix).
-Priority: P2 (export naming compatibility).
-Confidence: HIGH.
+Failure type: RESOLVED in H.8 (was: export naming compatibility).
+Priority: P2 (was P2).
+Confidence: HIGH — tests added.
 
 
 15. HARMEAN

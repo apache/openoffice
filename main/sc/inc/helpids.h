@@ -686,6 +686,7 @@
 #define HID_FUNC_TVERT                                          "SC_HID_FUNC_TVERT"
 #define HID_FUNC_TINV                                           "SC_HID_FUNC_TINV"
 #define HID_FUNC_FVERT                                          "SC_HID_FUNC_FVERT"
+#define HID_FUNC_FDIST                                          "SC_HID_FUNC_FDIST"
 #define HID_FUNC_FINV                                           "SC_HID_FUNC_FINV"
 #define HID_FUNC_CHIVERT                                        "SC_HID_FUNC_CHIVERT"
 #define HID_FUNC_CHIINV                                         "SC_HID_FUNC_CHIINV"
