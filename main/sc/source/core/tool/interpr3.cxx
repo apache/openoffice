@@ -1940,8 +1940,9 @@ static double lcl_CalcHypGeomPMF( double N, double M, double n, double k )
     double n = ::rtl::math::approxFloor(GetDouble());
     double x = ::rtl::math::approxFloor(GetDouble());
 
-    // Default Cumulative = TRUE (ODF/Excel default)
-    double bCumulative = 1.0;
+    // Default Cumulative = FALSE (PMF) for 4-arg legacy compatibility
+    // 5-arg calls use explicit Cumulative flag
+    double bCumulative = 0.0;
     if ( GetByte() == 5 )
         bCumulative = GetBool();
 
