@@ -257,7 +257,7 @@ C. Format compatibility
     two-argument form read as WEEKNUM (run, .ods round trip).
 - XLS: written as `_xlfn.ISOWEEKNUM` and read back; Excel 16 calculates
     it (run).
-- XLSX import: `_xlfn.ISOWEEKNUM` gives #NAME? (run).
+- XLSX import: `_xlfn.ISOWEEKNUM` is read (run, 2026-11-18).
 
 D. Documentation: func_isoweeknum.xhp, embedded in 04060102.xhp; help
   ID resolves since 2026-11-18.

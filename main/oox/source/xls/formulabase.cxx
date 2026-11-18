@@ -221,6 +221,7 @@ const sal_uInt16 FUNCFLAG_MACROFUNC         = 0x0040;   /// Function is a macro-
 const sal_uInt16 FUNCFLAG_MACROCMD          = 0x0080;   /// Function is a macro-sheet command.
 const sal_uInt16 FUNCFLAG_ALWAYSVAR         = 0x0100;   /// Function is always represented by a tFuncVar token.
 const sal_uInt16 FUNCFLAG_PARAMPAIRS        = 0x0200;   /// Optional parameters are expected to appear in pairs.
+const sal_uInt16 FUNCFLAG_LASTOPCODE        = 0x0400;   /// The ODF name is shared by two opcodes, use the last one.
 
 /// Converts a function library index (value of enum FunctionLibraryType) to function flags.
 #define FUNCLIB_TO_FUNCFLAGS( funclib_index ) static_cast< sal_uInt16 >( static_cast< sal_uInt8 >( funclib_index ) << 12 )
@@ -738,7 +739,8 @@ static const FunctionData saFuncTableOox[] =
     { "FDIST",                  "F.DIST",               NOID,   NOID,   4,  4,  V, { VR }, FUNCFLAG_MACROCALL },
     { "FINV",                   "F.INV",                NOID,   NOID,   3,  3,  V, { VR }, FUNCFLAG_MACROCALL },
     { "NUMBERVALUE",            "NUMBERVALUE",          NOID,   NOID,   1,  3,  V, { VR }, FUNCFLAG_MACROCALL },
-    { "RRI",                    "RRI",                  NOID,   NOID,   3,  3,  V, { VR }, FUNCFLAG_MACROCALL }
+    { "RRI",                    "RRI",                  NOID,   NOID,   3,  3,  V, { VR }, FUNCFLAG_MACROCALL },
+    { "ISOWEEKNUM",             "ISOWEEKNUM",           NOID,   NOID,   1,  1,  V, { VR }, FUNCFLAG_MACROCALL | FUNCFLAG_LASTOPCODE }
 };
 
 /** Functions defined by OpenFormula, but not supported by Calc or by Excel. */
@@ -925,6 +927,7 @@ void FunctionProviderImpl::initFunc( const FunctionData& rFuncData, sal_uInt8 nM
     bool bMacroCmd = getFlag( rFuncData.mnFlags, FUNCFLAG_MACROCMD );
     xFuncInfo->mbMacroFunc = bMacroCmd || getFlag( rFuncData.mnFlags, FUNCFLAG_MACROFUNC );
     xFuncInfo->mbVarParam = bMacroCmd || (rFuncData.mnMinParamCount != rFuncData.mnMaxParamCount) || getFlag( rFuncData.mnFlags, FUNCFLAG_ALWAYSVAR );
+    xFuncInfo->mbLastOpCode = getFlag( rFuncData.mnFlags, FUNCFLAG_LASTOPCODE );
 
     setFlag( xFuncInfo->mnBiff12FuncId, BIFF_TOK_FUNCVAR_CMD, bMacroCmd );
     setFlag( xFuncInfo->mnBiffFuncId, BIFF_TOK_FUNCVAR_CMD, bMacroCmd );
@@ -1027,7 +1030,7 @@ private:
 
     static bool         fillEntrySeq( OpCodeEntrySequence& orEntrySeq, const Reference< XFormulaOpCodeMapper >& rxMapper, sal_Int32 nMapGroup );
     static bool         fillTokenMap( ApiTokenMap& orTokenMap, OpCodeEntrySequence& orEntrySeq, const Reference< XFormulaOpCodeMapper >& rxMapper, sal_Int32 nMapGroup );
-    bool                fillFuncTokenMaps( ApiTokenMap& orIntFuncTokenMap, ApiTokenMap& orExtFuncTokenMap, OpCodeEntrySequence& orEntrySeq, const Reference< XFormulaOpCodeMapper >& rxMapper ) const;
+    bool                fillFuncTokenMaps( ApiTokenMap& orIntFuncTokenMap, ApiTokenMap& orLastFuncTokenMap, ApiTokenMap& orExtFuncTokenMap, OpCodeEntrySequence& orEntrySeq, const Reference< XFormulaOpCodeMapper >& rxMapper ) const;
 
     static bool         initOpCode( sal_Int32& ornOpCode, const OpCodeEntrySequence& rEntrySeq, sal_Int32 nSpecialId );
     bool                initOpCode( sal_Int32& ornOpCode, const ApiTokenMap& rTokenMap, const OUString& rOdfName, const OUString& rOoxName );
@@ -1035,7 +1038,7 @@ private:
     bool                initOpCode( sal_Int32& ornOpCode, const ApiTokenMap& rTokenMap, sal_Unicode cOdfName, sal_Unicode cOoxName );
 
     bool                initFuncOpCode( FunctionInfo& orFuncInfo, const ApiTokenMap& rFuncTokenMap );
-    bool                initFuncOpCodes( const ApiTokenMap& rIntFuncTokenMap, const ApiTokenMap& rExtFuncTokenMap, const FunctionInfoVector& rFuncInfos );
+    bool                initFuncOpCodes( const ApiTokenMap& rIntFuncTokenMap, const ApiTokenMap& rLastFuncTokenMap, const ApiTokenMap& rExtFuncTokenMap, const FunctionInfoVector& rFuncInfos );
 };
 
 // ----------------------------------------------------------------------------
@@ -1056,7 +1059,7 @@ OpCodeProviderImpl::OpCodeProviderImpl( const FunctionInfoVector& rFuncInfos,
         using namespace ::com::sun::star::sheet::FormulaMapGroupSpecialOffset;
 
         OpCodeEntrySequence aEntrySeq;
-        ApiTokenMap aTokenMap, aExtFuncTokenMap;
+        ApiTokenMap aTokenMap, aLastFuncTokenMap, aExtFuncTokenMap;
         bool bIsValid =
             // special
             fillEntrySeq( aEntrySeq, xMapper, SPECIAL ) &&
@@ -1103,8 +1106,8 @@ OpCodeProviderImpl::OpCodeProviderImpl( const FunctionInfoVector& rFuncInfos,
             initOpCode( OPCODE_LIST,          aTokenMap, '~',  ','  ) &&
             initOpCode( OPCODE_RANGE,         aTokenMap, ':',  ':'  ) &&
             // functions
-            fillFuncTokenMaps( aTokenMap, aExtFuncTokenMap, aEntrySeq, xMapper ) &&
-            initFuncOpCodes( aTokenMap, aExtFuncTokenMap, rFuncInfos ) &&
+            fillFuncTokenMaps( aTokenMap, aLastFuncTokenMap, aExtFuncTokenMap, aEntrySeq, xMapper ) &&
+            initFuncOpCodes( aTokenMap, aLastFuncTokenMap, aExtFuncTokenMap, rFuncInfos ) &&
             initOpCode( OPCODE_DDE,           aTokenMap, "DDE", 0 );
 
         OSL_ENSURE( bIsValid, "OpCodeProviderImpl::OpCodeProviderImpl - opcodes not initialized" );
@@ -1147,17 +1150,22 @@ bool OpCodeProviderImpl::fillTokenMap( ApiTokenMap& orTokenMap, OpCodeEntrySeque
     return orEntrySeq.hasElements();
 }
 
-bool OpCodeProviderImpl::fillFuncTokenMaps( ApiTokenMap& orIntFuncTokenMap, ApiTokenMap& orExtFuncTokenMap, OpCodeEntrySequence& orEntrySeq, const Reference< XFormulaOpCodeMapper >& rxMapper ) const
+bool OpCodeProviderImpl::fillFuncTokenMaps( ApiTokenMap& orIntFuncTokenMap, ApiTokenMap& orLastFuncTokenMap, ApiTokenMap& orExtFuncTokenMap, OpCodeEntrySequence& orEntrySeq, const Reference< XFormulaOpCodeMapper >& rxMapper ) const
 {
     orIntFuncTokenMap.clear();
+    orLastFuncTokenMap.clear();
     orExtFuncTokenMap.clear();
     if( fillEntrySeq( orEntrySeq, rxMapper, ::com::sun::star::sheet::FormulaMapGroup::FUNCTIONS ) )
     {
         const FormulaOpCodeMapEntry* pEntry = orEntrySeq.getConstArray();
         const FormulaOpCodeMapEntry* pEntryEnd = pEntry + orEntrySeq.getLength();
         for( ; pEntry != pEntryEnd; ++pEntry )
+        {
             // first entry wins, as in the formula compiler (ISOWEEKNUM names two opcodes)
             ((pEntry->Token.OpCode == OPCODE_EXTERNAL) ? orExtFuncTokenMap : orIntFuncTokenMap).insert( ApiTokenMap::value_type( pEntry->Name, pEntry->Token ) );
+            if( pEntry->Token.OpCode != OPCODE_EXTERNAL )
+                orLastFuncTokenMap[ pEntry->Name ] = pEntry->Token;
+        }
     }
     return orEntrySeq.hasElements();
 }
@@ -1276,14 +1284,14 @@ bool OpCodeProviderImpl::initFuncOpCode( FunctionInfo& orFuncInfo, const ApiToke
     return bIsValid;
 }
 
-bool OpCodeProviderImpl::initFuncOpCodes( const ApiTokenMap& rIntFuncTokenMap, const ApiTokenMap& rExtFuncTokenMap, const FunctionInfoVector& rFuncInfos )
+bool OpCodeProviderImpl::initFuncOpCodes( const ApiTokenMap& rIntFuncTokenMap, const ApiTokenMap& rLastFuncTokenMap, const ApiTokenMap& rExtFuncTokenMap, const FunctionInfoVector& rFuncInfos )
 {
     bool bIsValid = true;
     for( FunctionInfoVector::const_iterator aIt = rFuncInfos.begin(), aEnd = rFuncInfos.end(); aIt != aEnd; ++aIt )
     {
         FunctionInfoRef xFuncInfo = *aIt;
         // set API opcode from ODF function name
-        bIsValid &= initFuncOpCode( *xFuncInfo, xFuncInfo->mbExternal ? rExtFuncTokenMap : rIntFuncTokenMap );
+        bIsValid &= initFuncOpCode( *xFuncInfo, xFuncInfo->mbExternal ? rExtFuncTokenMap : (xFuncInfo->mbLastOpCode ? rLastFuncTokenMap : rIntFuncTokenMap) );
         // insert the function info into the maps
         if( (xFuncInfo->mnApiOpCode != OPCODE_NONAME) && (xFuncInfo->mnApiOpCode != OPCODE_BAD) )
         {

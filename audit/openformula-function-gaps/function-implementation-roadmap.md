@@ -129,7 +129,7 @@ Changes:
   8. Calcval rows ISOWEEKNUM.* (rewritten 2026-11-18; several SG.ISO
      expectations were wrong, e.g. week 1 for Sunday 2024-12-29).
      xls: written as `_xlfn.ISOWEEKNUM` (2026-11-18). xlsx `_xlfn.ISOWEEKNUM`
-     still gives #NAME?.
+     is read too (2026-11-18).
   9. WEEKNUM (ScGetWeekOfYear) unchanged: retains 2-arg SUN/MON mode.
 
 Rationale: ISOWEEKNUM needed separate opcode and evaluator for ISO 8601
