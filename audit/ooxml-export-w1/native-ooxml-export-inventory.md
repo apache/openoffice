@@ -1,3 +1,22 @@
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License.
+-->
+
 # Native OOXML Export Capability Inventory — Milestone W.1
 
 **Project:** Apache OpenOffice  
@@ -51,6 +70,7 @@ ScDocShell::ConvertTo()                          [main/sc/source/ui/docshell/doc
 ```
 
 **Transition conditions:**
+
 - `ScExportExcel5()` rejects formats other than `ExpBiff5`, `ExpBiff8`, `Exp2007Xml` → returns `eERR_NI` [excel.cxx:287-288]
 - `lcl_ExportExcel2007Xml()` sets `meOutput = EXC_OUTPUT_XML_2007` unconditionally [excel.cxx:275]
 - `ExportXml2007::Write()` requires `pDocShell`, `xRootStrg`, and optionally `bWriteBasicStrg` (from `SvtFilterOptions::IsLoadExcelBasicStorage()`) for VBA [expop2.cxx:176-188]
@@ -85,6 +105,7 @@ ScDocShell::ConvertTo()                          [main/sc/source/ui/docshell/doc
 **`ExcTable::FillAsXmlTable()`** [excdoc.cxx:548-635] vs **binary path** [excdoc.cxx:442-512]:
 
 **Constructed exclusively for XML:**
+
 - `XclExpTabViewSettings` [excdoc.cxx:568]
 - `XclExpComments` wrapping NOTE records [excdoc.cxx:588-591]
 - `XclExpWebQueryBuffer` [excdoc.cxx:594]
@@ -92,22 +113,27 @@ ScDocShell::ConvertTo()                          [main/sc/source/ui/docshell/doc
 - `XclCodename` [excdoc.cxx:604-606]
 
 **Binary-oriented records intentionally omitted in XML:**
+
 - `ExcBof` (BIFF5/7 only), `ExcBof8` is used instead
 - `EXC_ID_EXTERNSHEET` for BIFF<=5 [excdoc.cxx:484-485]
 - `XclExpProtection` + sheet protection bool records [excdoc.cxx:474-480] — NOT in XML path
 - `lcl_AddScenariosAndFilters` IS in both paths [excdoc.cxx:488, 596]
 
 **XML records missing (per ooxml-export-TODO.txt):**
+
 - autoFilter, cellSmartTag, cellWatch, cfRule/cfvo, chartsheet, colorScale, dataBar, iconSet, ignoredError, legacyDrawing, oleObject, outlinePr, pageSetup, picture, pivotArea, pivotSelection, protectedRange, sheetCalcPr, sheetFormatPr, sheetPr, sheetView, sheetViews, smartTags, sortCondition, sortState, tabColor, tablePart, webPublishItem
 
 **Features in binary but not XML:**
+
 - Sheet protection (XclExpProtection) [excdoc.cxx:474-480, absent from XML path]
 - DFF/Escher drawing group (commented out in XML) [excdoc.cxx:576-582]
 
 **XML-specific structures built but never serialized:**
+
 - None identified — all XML structures in FillAsXmlTable are serialized via `aRecList.SaveXml()`.
 
 **Commented/disabled DFF export path** [excdoc.cxx:576-582]:
+
 ```cpp
 // DFF not needed in MSOOXML export
 //    GetObjectManager().AddSdrPage();
@@ -117,6 +143,7 @@ ScDocShell::ConvertTo()                          [main/sc/source/ui/docshell/doc
 //    // all MSODRAWING and OBJ stuff of this sheet goes here
 //    Add( rR.pObjRecs );
 ```
+
 **Practical consequences:** Charts, shapes, drawings, text boxes, and embedded graphics are completely omitted from XLSX export. The Escher/DFF infrastructure exists in `xeescher.cxx` but is not wired into the XML export path.
 
 ### 2.4 XLSX Feature Inventory
@@ -151,15 +178,18 @@ ScDocShell::ConvertTo()                          [main/sc/source/ui/docshell/doc
 ### 2.5 Filter Exposure (confirmed)
 
 **`main/filter/source/config/fragments/filters/calc_MS_Excel_2007_XML.xcu`:**
+
 - Flags: `IMPORT ALIEN 3RDPARTYFILTER PREFERRED` — **no EXPORT flag**
 - FilterService: `com.sun.star.comp.oox.xls.ExcelFilter`
 - Type: `MS Excel 2007 XML`
 - DocumentService: `com.sun.star.sheet.SpreadsheetDocument`
 
 **`main/filter/source/config/fragments/filters/calc_MS_Excel_2007_XML_ui.xcu`:**
+
 - UIName: `Microsoft Excel 2007 XML` — UI entry exists
 
 **`main/sc/source/ui/docshell/docsh.cxx`:**
+
 - Line 163: `pFilterEx07Xml = "MS Excel 2007 XML"`
 - Line 199: `SFX2_FILTER_ENTRY(MS Excel 2007 XML)` — registered in SFX framework
 - Line 2133: ConvertTo matches `pFilterEx07Xml`
@@ -167,12 +197,14 @@ ScDocShell::ConvertTo()                          [main/sc/source/ui/docshell/doc
 - Line 2177: calls `ScExportExcel5()`
 
 **`main/oox/util/oox.component`:**
+
 - `com.sun.star.comp.oox.xls.ExcelFilter` registered as both `ImportFilter` and `ExportFilter` service [lines 49-52]
 - But `ExcelFilter::exportDocument()` returns `false` [excelfilter.cxx:131-134]
 
 **Assessment:** The export code path is complete and reachable via `ScDocShell::ConvertTo()` (Save As). However, the xcu filter configuration lacks the `EXPORT` flag, which means the filter registry may not list it as an export-capable filter. The exact consequence (whether Save As dialog shows it) requires runtime verification. The code path itself is functional.
 
 **Changes required to expose export (not made):**
+
 1. Add `EXPORT` to Flags in `calc_MS_Excel_2007_XML.xcu`
 2. Verify `ExcelFilter::exportDocument()` is not the blocking factor (it isn't — the sc path bypasses it)
 
@@ -203,6 +235,7 @@ SwDocShell::ConvertTo()                               [main/sw/source/ui/app/doc
 ```
 
 **Relationship between WriterFilter, DocxExportFilter and DocxExport:**
+
 - `WriterFilter` (`com.sun.star.comp.Writer.WriterFilter`) — registered as both ImportFilter and ExportFilter in `writerfilter.component`. The xcu config (`MS_Word_2007_XML.xcu`) points FilterService to this. It is primarily an import filter.
 - `DocxExportFilter` (`com.sun.star.comp.Writer.DocxExport`) — standalone export filter class, registers as `ExportFilter` service only [docxexportfilter.cxx:106-111]. Not referenced by the xcu config.
 - `DocxExport` — the actual export engine, instantiated by `DocxExportFilter::exportDocument()`.
@@ -300,24 +333,28 @@ SwDocShell::ConvertTo()                               [main/sw/source/ui/app/doc
 | Document properties (`docProps/core.xml`) | Generated | `WriteProperties()` [docxexport.cxx:582] |
 | Media | Partially | DrawingML used for images [docxexport.cxx:653] |
 | Relationships | Generated | `AddRelation()`/`addRelation()` [docxexport.cxx:154,645] |
-| Content types | Partially | set via `openOutputStreamWithSerializer` media types | docxexport.cxx:399,403,558 |
+| Content types | Partially | set via `openOutputStreamWithSerializer` media types [docxexport.cxx:399,403,558] |
 
 ### 3.5 DOCX Filter Exposure (confirmed)
 
 **`main/filter/source/config/fragments/filters/MS_Word_2007_XML.xcu`:**
+
 - Flags: `IMPORT ALIEN 3RDPARTYFILTER` — **no EXPORT flag**
 - FilterService: `com.sun.star.comp.Writer.WriterFilter` (not DocxExportFilter)
 - UserData: `OXML`
 - Type: `writer_MS_Word_2007`
 
 **`main/filter/source/config/fragments/filters/MS_Word_2007_XML_ui.xcu`:**
+
 - UIName: `Microsoft Word 2007 XML` — UI entry exists
 
 **`main/writerutil/writerfilter.component`:**
+
 - `com.sun.star.comp.Writer.WriterFilter` registered as both `ExportFilter` and `ImportFilter`
 - `com.sun.star.comp.Writer.RtfFilter` registered as both
 
 **`DocxExportFilter`** (`com.sun.star.comp.Writer.DocxExport`):
+
 - Registers as `ExportFilter` service only [docxexportfilter.cxx:108]
 - `exportDocument()` is fully implemented [docxexportfilter.cxx:46-88]
 - NOT referenced by any xcu config
@@ -325,6 +362,7 @@ SwDocShell::ConvertTo()                               [main/sw/source/ui/app/doc
 **Assessment:** DOCX export code exists and is functional, but the filter configuration does not expose it for export. The xcu points to `WriterFilter` (import-only in practice for DOCX) without EXPORT flag. `DocxExportFilter` exists as a standalone UNO service but is not wired into the filter registry.
 
 **Changes required to expose export (not made):**
+
 1. Add `EXPORT` to Flags in `MS_Word_2007_XML.xcu`
 2. Either change FilterService to `com.sun.star.comp.Writer.DocxExport` or register `DocxExportFilter` as an additional export filter for this type
 
@@ -377,10 +415,11 @@ The following package parts have NO generating code:
 | Content types (`[Content_Types].xml`) | Absent | No content types writer |
 | Slide size and ordering | Absent | No slide dimension writer |
 | Transitions | Absent | No transition writer |
-| Animations and timings | Absent | `sd/source/filter/eppt/pptexanimations.cxx` exists (import) | 
+| Animations and timings | Absent | `sd/source/filter/eppt/pptexanimations.cxx` exists (import) |
 | Embedded objects | Absent | No OLE writer for PPTX |
 
 **Reusable AOO infrastructure:**
+
 - OPC packaging: `main/package/source/` (ZipPackage, ZipStorage)
 - Relationships: `oox::core::XmlFilterBase::addRelation()`
 - XML serialization: `sax_fastparser::FSHelper`
@@ -390,6 +429,7 @@ The following package parts have NO generating code:
 ### 4.4 Proposed Architecture (not implemented)
 
 A native Impress-to-PPTX exporter would require:
+
 1. A top-level `PptxExportFilter` (UNO ExportFilter service) analogous to `DocxExportFilter`
 2. A `PptxExport` class orchestrating package part creation
 3. Slide iteration from `SdDrawDocument`/`SdPage`, converting to PresentationML
@@ -417,6 +457,7 @@ A native Impress-to-PPTX exporter would require:
 | `xmlns:r` | `http://schemas.openxmlformats.org/officeDocument/2006/relationships` | `docxexport.cxx:607` | `WriteMainText()` |
 
 **Strict OOXML support:** None of the existing export paths can emit Strict OOXML. All namespaces, relationship types, and content types are hardcoded to Transitional. Strict requires:
+
 - `http://purl.oclc.org/ooxml/wordprocessingml/main` (instead of 2006/main)
 - Strict relationship type URIs (`.../2010/relationships/...`)
 - Strict content types
@@ -425,6 +466,7 @@ A native Impress-to-PPTX exporter would require:
 ### 5.2 Recommended Abstraction (future milestone)
 
 A centralized `OoxmlConformance` abstraction should provide:
+
 - Namespace URI by conformance level (Transitional vs Strict)
 - Relationship type URI by part kind and conformance level
 - Content type by part kind and conformance level
@@ -447,6 +489,7 @@ This avoids scattered conditionals throughout serializers. Strict support should
 | ODF validate fixtures (docx) | `test/odf-validate/fixtures/*.docx` | ODF validation | Import/validation only | No |
 
 **No export tests exist.** There are no unit tests that:
+
 - Export an AOO document to DOCX/XLSX/PPTX and inspect the package
 - Validate OOXML package integrity after export
 - Test filter registration for export
@@ -505,12 +548,14 @@ XLSX. The full native export path is implemented and reachable via `ScDocShell::
 XLSX. Adding `EXPORT` to the filter config flags (one line) exposes a working exporter. Remaining gaps (charts, drawings) are isolated to the commented-out DFF path.
 
 **Which features are the most serious causes of data loss?**
+
 1. **Charts, shapes, drawings, embedded graphics** (XLSX) — DFF path completely commented out [excdoc.cxx:576-582]
 2. **OLE objects** (DOCX) — `OutputOLENode()` is a TODO stub [docxexport.cxx:357]
 3. **Ruby text, drop caps** (DOCX) — TODO stubs [docxattributeoutput.cxx:773,985]
 4. **Tables/autofilters** (XLSX) — listed as unimplemented in TODO
 
 **What is the minimum work required to expose DOCX and XLSX export?**
+
 - XLSX: Add `EXPORT` flag to `calc_MS_Excel_2007_XML.xcu` Flags; verify Save As dialog exposure (runtime verification)
 - DOCX: Add `EXPORT` flag to `MS_Word_2007_XML.xcu`; wire FilterService to `com.sun.star.comp.Writer.DocxExport` or register DocxExportFilter as an additional export filter
 

@@ -1,3 +1,22 @@
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License.
+-->
+
 # Native OOXML Export Gaps — Milestone W.1
 
 **Source:** Source audit only. Every gap includes file:line evidence.  
@@ -12,6 +31,7 @@
 **Gap:** Charts, shapes, drawings, text boxes, and embedded graphics are not exported to XLSX.
 
 **Evidence:** `main/sc/source/filter/excel/excdoc.cxx:576-582` — the entire DFF/Escher drawing export block in `FillAsXmlTable()` is commented out:
+
 ```cpp
 // DFF not needed in MSOOXML export
 //    GetObjectManager().AddSdrPage();
@@ -83,6 +103,7 @@
 **Gap:** `DocxExport::OutputOLENode()` is a no-op stub.
 
 **Evidence:** `main/sw/source/filter/ww8/docxexport.cxx:357-359`:
+
 ```cpp
 void DocxExport::OutputOLENode( const SwOLENode& )
 {
@@ -97,6 +118,7 @@ void DocxExport::OutputOLENode( const SwOLENode& )
 **Gap:** `StartRuby()` and `EndRuby()` are no-op stubs.
 
 **Evidence:** `main/sw/source/filter/ww8/docxattributeoutput.cxx:773,778`:
+
 ```cpp
 void DocxAttributeOutput::StartRuby( const SwTxtNode& /*rNode*/, const SwFmtRuby& /*rRuby*/ )
 {
@@ -111,6 +133,7 @@ void DocxAttributeOutput::StartRuby( const SwTxtNode& /*rNode*/, const SwFmtRuby
 **Gap:** `FormatDrop()` is a no-op stub.
 
 **Evidence:** `main/sw/source/filter/ww8/docxattributeoutput.cxx:985-987`:
+
 ```cpp
 void DocxAttributeOutput::FormatDrop( const SwTxtNode& /*rNode*/, const SwFmtDrop& /*rSwFmtDrop*/, ... )
 {
@@ -133,6 +156,7 @@ void DocxAttributeOutput::FormatDrop( const SwTxtNode& /*rNode*/, const SwFmtDro
 **Gap:** `WriteFormData()`, `DoComboBox()`, `DoFormText()` are stubs.
 
 **Evidence:** `main/sw/source/filter/ww8/docxexport.cxx:215,220,275`:
+
 ```cpp
 void DocxExport::WriteFormData( const ::sw::mark::IFieldmark& /*rFieldmark*/ )
 {
@@ -175,6 +199,7 @@ void DocxExport::WriteFormData( const ::sw::mark::IFieldmark& /*rFieldmark*/ )
 **Gap:** There is no Impress-to-PresentationML export path at all.
 
 **Evidence:**
+
 - `main/oox/source/export/` contains only `drawingml.cxx`, `shapes.cxx`, `vmlexport.cxx` — DrawingML infrastructure, no PresentationML writer
 - `main/oox/source/ppt/pptimport.cxx` — PPTX **import** only
 - `main/sd/source/filter/eppt/` — legacy **binary PPT** exporter only (`eppt.cxx:268` `PPTWriter`), NOT PPTX
@@ -209,6 +234,7 @@ All of the following have zero generating code:
 **Gap:** `calc_MS_Excel_2007_XML.xcu` Flags lacks `EXPORT`.
 
 **Evidence:** `main/filter/source/config/fragments/filters/calc_MS_Excel_2007_XML.xcu:22`:
+
 ```xml
 <prop oor:name="Flags"><value>IMPORT ALIEN 3RDPARTYFILTER PREFERRED</value></prop>
 ```
@@ -220,6 +246,7 @@ All of the following have zero generating code:
 **Gap:** `MS_Word_2007_XML.xcu` Flags lacks `EXPORT`; FilterService points to `WriterFilter` (import-oriented), not `DocxExportFilter`.
 
 **Evidence:** `main/filter/source/config/fragments/filters/MS_Word_2007_XML.xcu:22-28`:
+
 ```xml
 <prop oor:name="Flags"><value>IMPORT ALIEN 3RDPARTYFILTER</value></prop>
 <prop oor:name="FilterService"><value>com.sun.star.comp.Writer.WriterFilter</value></prop>
@@ -236,6 +263,7 @@ All of the following have zero generating code:
 **Gap:** All serializers hardcode Transitional namespaces, relationship types, and content types.
 
 **Evidence:**
+
 - SpreadsheetML: `http://schemas.openxmlformats.org/spreadsheetml/2006/main` [excdoc.cxx:793]
 - WordprocessingML: `http://schemas.openxmlformats.org/wordprocessingml/2006/main` [docxexport.cxx:609]
 - Relationship types: `.../officeDocument/2006/relationships/...` [docxexport.cxx:399,403,558,645]

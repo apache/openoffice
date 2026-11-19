@@ -1,3 +1,22 @@
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License.
+-->
+
 # Native OOXML Strict vs Transitional Export — Milestone W.1
 
 **Source:** Source audit only.  
@@ -45,6 +64,7 @@ Strict OOXML uses the same SpreadsheetML namespace URI (`.../spreadsheetml/2006/
 | OfficeDocument relationship type | `.../2006/relationships/officeDocument` | `docxexport.cxx:645` | `DocxExport()` constructor |
 
 Strict OOXML uses:
+
 - WordprocessingML namespace: `http://purl.oclc.org/ooxml/wordprocessingml/main` (instead of `.../2006/main`)
 - Relationship types: `.../officeDocument/2010/relationships/...` (instead of `.../2006/relationships/...`)
 - Strict content types with `strict` marker
@@ -113,6 +133,7 @@ public:
 **Usage pattern:** Serializers call `conformance->getNamespace(NS_WORDPROCESSINGML)` instead of hardcoding the URI. This centralizes all Transitional/Strict differences in one class.
 
 **Files to modify (future work):**
+
 - `main/sc/source/filter/excel/excdoc.cxx:793` — workbook namespace
 - `main/sw/source/filter/ww8/docxexport.cxx:605-612` — all document namespaces
 - `main/sw/source/filter/ww8/docxexport.cxx:399,403,422,443,500,515,558,559,645,646` — relationship types
