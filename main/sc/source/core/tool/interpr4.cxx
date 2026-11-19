@@ -3398,7 +3398,7 @@ StackVar ScInterpreter::Interpret()
             // RPN code push without error
             PushWithoutError( (FormulaToken&) *pCur );
         }
-        else if (pTokenMatrixMap && !(eOp == ocIf || eOp == ocChose) &&
+        else if (pTokenMatrixMap && !(eOp == ocIf || eOp == ocChose || eOp == ocIfna || eOp == ocIfError) &&
                 ((aTokenMatrixMapIter = pTokenMatrixMap->find( pCur)) !=
                  pTokenMatrixMap->end()) &&
                 (*aTokenMatrixMapIter).second->GetType() != svJumpMatrix)
@@ -3419,7 +3419,7 @@ StackVar ScInterpreter::Interpret()
             nFuncFmtType = NUMBERFORMAT_NUMBER;
             nFuncFmtIndex = 0;
 
-            if ( eOp == ocIf || eOp == ocChose )
+            if ( eOp == ocIf || eOp == ocChose || eOp == ocIfna || eOp == ocIfError )
                 nStackBase = sp;        // don't mess around with the jumps
             else
             {
@@ -3448,6 +3448,8 @@ StackVar ScInterpreter::Interpret()
 // separated    case ocPush             : Push( (ScToken&) *pCur );     break;
                 case ocExternalRef      : ScExternalRef();              break;
                 case ocIf               : ScIfJump();                   break;
+                case ocIfna             : ScIfna();                     break;
+                case ocIfError          : ScIfError();                  break;
                 case ocChose            : ScChoseJump();                break;
                 case ocAdd              : ScAdd();                      break;
                 case ocSub              : ScSub();                      break;
@@ -3511,6 +3513,7 @@ StackVar ScInterpreter::Interpret()
                 case ocGetDay           : ScGetDay();                   break;
                 case ocGetDayOfWeek     : ScGetDayOfWeek();             break;
                 case ocWeek             : ScGetWeekOfYear();            break;
+                case ocIsoWeekNum       : ScIsoWeekNum();               break;
                 case ocEasterSunday     : ScEasterSunday();             break;
                 case ocGetHour          : ScGetHour();                  break;
                 case ocGetMin           : ScGetMin();                   break;
@@ -3552,6 +3555,7 @@ StackVar ScInterpreter::Interpret()
                 case ocT                : ScT();                        break;
                 case ocClean            : ScClean();                    break;
                 case ocValue            : ScValue();                    break;
+                case ocNumberValue      : ScNumberValue();              break;
                 case ocChar             : ScChar();                     break;
                 case ocArcTan2          : ScArcTan2();                  break;
                 case ocMod              : ScMod();                      break;
@@ -3684,6 +3688,7 @@ StackVar ScInterpreter::Interpret()
                 case ocLogNormDist      : ScLogNormDist();              break;
                 case ocTDist            : ScTDist();                    break;
                 case ocFDist            : ScFDist();                    break;
+                case ocFDistLeft        : ScFDistLeft();                break;
                 case ocChiDist          : ScChiDist();                  break;
                 case ocChiSqDist        : ScChiSqDist();                break;
                 case ocStandard         : ScStandard();                 break;
@@ -3691,6 +3696,7 @@ StackVar ScInterpreter::Interpret()
                 case ocDevSq            : ScDevSq();                    break;
                 case ocKurt             : ScKurt();                     break;
                 case ocSchiefe          : ScSkew();                     break;
+                case ocSkewP            : ScSkewP();                    break;
                 case ocModalValue       : ScModalValue();               break;
                 case ocMedian           : ScMedian();                   break;
                 case ocGeoMean          : ScGeoMean();                  break;
@@ -3736,6 +3742,7 @@ StackVar ScInterpreter::Interpret()
                 case ocChiSqInv         : ScChiSqInv();                 break;
                 case ocTInv             : ScTInv();                     break;
                 case ocFInv             : ScFInv();                     break;
+                case ocFInvLeft         : ScFInvLeft();                 break;
                 case ocLogInv           : ScLogNormInv();               break;
                 case ocBetaDist         : ScBetaDist();                 break;
                 case ocBetaInv          : ScBetaInv();                  break;
@@ -3744,6 +3751,7 @@ StackVar ScInterpreter::Interpret()
 //              case ocErrCell          : ScErrCell();                  break;
                 case ocStop :                                           break;
                 case ocErrorType        : ScErrorType();                break;
+                case ocErrorTypeODF     : ScErrorType( true );          break;
                 case ocCurrent          : ScCurrent();                  break;
                 case ocStyle            : ScStyle();                    break;
                 case ocDde              : ScDde();                      break;
@@ -3763,6 +3771,10 @@ StackVar ScInterpreter::Interpret()
 				case ocRightB           : ScRightB();                   break;
 				case ocLeftB            : ScLeftB();                    break;
 				case ocMidB             : ScMidB();                     break;
+				case ocFindB            : ScFindB();                    break;
+				case ocSearchB          : ScSearchB();                  break;
+				case ocReplaceB         : ScReplaceB();                 break;
+				case ocDateDif          : ScDateDif();                  break;
                 case ocUnicode          : ScUnicode();                  break;
                 case ocUnichar          : ScUnichar();                  break;
                 case ocTTT              : ScTTT();                      break;
@@ -3849,9 +3861,12 @@ StackVar ScInterpreter::Interpret()
     case ocCount : \
     case ocCount2 : \
     case ocErrorType : \
+    case ocErrorTypeODF : \
     case ocIsEmpty : \
     case ocIsErr : \
     case ocIsError : \
+    case ocIfna : \
+    case ocIfError : \
     case ocIsFormula : \
     case ocIsLogical : \
     case ocIsNA : \
@@ -4031,7 +4046,12 @@ StackVar ScInterpreter::Interpret()
         nRetFmtIndex = 0;
 
     if (nGlobalError && GetStackType() != svError )
+    {
+        // after errStackOverflow the push would fail and a stale value become the result
+        if ( sp >= MAXSTACK )
+            Pop();
         PushError( nGlobalError);
+    }
 
     // THE final result.
     xResult = PopToken();

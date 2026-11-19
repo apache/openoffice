@@ -1,0 +1,149 @@
+ReqID	Section	Requirement Description	Mandatory/Optional	Conformance Group	ODF Version Introduced/Changed	Suggested Test	Status
+SG-BL-001	3.7	Formula length: at least 1024 characters long as measured in OpenDocument interchange format	Mandatory	Small	ODF 1.4	Parse formula expression >=1024 chars (e.g. =1+1+...+1, 1026 chars, result 513); verify accepted.	UNVERIFIED
+SG-BL-002	3.7	At least 30 parameters per function when prototype permits parameter list	Mandatory	Small	ODF 1.4	Call function with 30 parameters; verify accepted.	UNVERIFIED
+SG-BL-003	3.7	Permit strings of ASCII characters up to 32767 (2^15-1) characters	Mandatory	Small	ODF 1.4	Parse/return 32767-character string; verify accepted.	UNVERIFIED
+SG-BL-004	3.7	Support at least 7 nesting levels of functions	Mandatory	Small	ODF 1.4	Nest >=7 genuinely nested function levels with balanced parens and deterministic result (e.g. 7 nested IFs); verify accepted.	UNVERIFIED
+SG-SYN-001	4.11.11	Criteria syntax (§4.11.11) supported	Mandatory	Small	ODF 1.4	Use criteria in database functions (e.g. DCOUNT with criteria range); verify parsed/evaluated correctly.	UNVERIFIED
+SG-SYN-002	5.2	Basic Expressions syntax supported	Mandatory	Small	ODF 1.4	Parse parenthesized expressions; verify evaluation.	UNVERIFIED
+SG-SYN-003	5.3	Constant Numbers syntax supported	Mandatory	Small	ODF 1.4	Parse numeric literals including decimals, scientific notation; verify.	UNVERIFIED
+SG-SYN-004	5.4	Constant Strings syntax supported	Mandatory	Small	ODF 1.4	Parse string literals with quote escaping; verify.	UNVERIFIED
+SG-SYN-005	5.5	Operators syntax supported (precedence per Table 1)	Mandatory	Small	ODF 1.4	Evaluate 2+3*4 and 2^3^2; verify correct precedence.	UNVERIFIED
+SG-SYN-006	5.6	Functions and Function Parameters syntax supported	Mandatory	Small	ODF 1.4	Call functions with various argument counts; verify.	UNVERIFIED
+SG-SYN-007	5.7	Nonstandard Function Names recognized as errors	Mandatory	Small	ODF 1.4	Use unknown function name; verify error result.	UNVERIFIED
+SG-SYN-008	5.8	References syntax supported	Mandatory	Small	ODF 1.4	Use cell and range references; verify resolution.	UNVERIFIED
+SG-SYN-009	5.11	Simple Named Expressions supported	Mandatory	Small	ODF 1.4	Define and use a simple named expression; verify. Requires pre-defined name in test environment (not expressible as plain calcval cell formula without name setup).	UNVERIFIED
+SG-SYN-010	5.12	Errors syntax supported	Mandatory	Small	ODF 1.4	Use error constants (#N/A, etc.); verify propagation.	UNVERIFIED
+SG-SYN-011	5.14	Whitespace handling per specification	Mandatory	Small	ODF 1.4	Insert whitespace in formula; verify identical result.	UNVERIFIED
+SG-CONV-001	6.3.14	Conversion to Text implemented	Mandatory	Small	ODF 1.4	Convert number/date/logical to text; verify result.	IMPLEMENTED_UNVERIFIED
+SG-CONV-002	6.3.5	Conversion to Number implemented	Mandatory	Small	ODF 1.4	Convert text to number; verify result.	IMPLEMENTED_UNVERIFIED
+SG-CONV-003	4.8	Reference conversion implemented	Mandatory	Small	ODF 1.4	Convert reference to scalar value; verify result.	IMPLEMENTED_UNVERIFIED
+SG-CONV-004	6.3.12	Conversion to Logical implemented	Mandatory	Small	ODF 1.4	Convert number to logical; verify result.	IMPLEMENTED_UNVERIFIED
+SG-CONV-005	5.12	Error propagation when expression returns Error	Mandatory	Small	ODF 1.4	Pass error as argument; verify error propagates.	IMPLEMENTED_UNVERIFIED
+SG-OP-001	6.4.9	Infix Operator Ordered Comparison (<, <=, >, >=) implemented	Mandatory	Small	ODF 1.4	Evaluate comparisons; verify results.	IMPLEMENTED_UNVERIFIED
+SG-OP-002	6.4.10	Infix Operator "&" (concatenation) implemented	Mandatory	Small	ODF 1.4	Evaluate "a"&"b"; verify "ab".	IMPLEMENTED_UNVERIFIED
+SG-OP-003	6.4.2	Infix Operator "+" implemented	Mandatory	Small	ODF 1.4	Evaluate 2+3; verify 5.	IMPLEMENTED_UNVERIFIED
+SG-OP-004	6.4.3	Infix Operator "-" implemented	Mandatory	Small	ODF 1.4	Evaluate 5-3; verify 2.	IMPLEMENTED_UNVERIFIED
+SG-OP-005	6.4.4	Infix Operator "*" implemented	Mandatory	Small	ODF 1.4	Evaluate 2*3; verify 6.	IMPLEMENTED_UNVERIFIED
+SG-OP-006	6.4.5	Infix Operator "/" implemented	Mandatory	Small	ODF 1.4	Evaluate 6/3; verify 2.	IMPLEMENTED_UNVERIFIED
+SG-OP-007	6.4.6	Infix Operator "^" implemented	Mandatory	Small	ODF 1.4	Evaluate 2^3; verify 8.	IMPLEMENTED_UNVERIFIED
+SG-OP-008	6.4.7	Infix Operator "=" implemented	Mandatory	Small	ODF 1.4	Evaluate 2=2; verify TRUE.	IMPLEMENTED_UNVERIFIED
+SG-OP-009	6.4.8	Infix Operator "<>" implemented	Mandatory	Small	ODF 1.4	Evaluate 2<>3; verify TRUE.	IMPLEMENTED_UNVERIFIED
+SG-OP-010	6.4.14	Postfix Operator "%" implemented	Mandatory	Small	ODF 1.4	Evaluate 50%; verify 0.5.	IMPLEMENTED_UNVERIFIED
+SG-OP-011	6.4.15	Prefix Operator "+" implemented	Mandatory	Small	ODF 1.4	Evaluate +5; verify 5.	IMPLEMENTED_UNVERIFIED
+SG-OP-012	6.4.16	Prefix Operator "-" implemented	Mandatory	Small	ODF 1.4	Evaluate -5; verify -5.	IMPLEMENTED_UNVERIFIED
+SG-OP-013	6.4.12	Infix Operator Reference Intersection ("!") implemented	Mandatory	Small	ODF 1.4	Evaluate numeric range intersection (e.g. SUM(D1:F3!E1:F2)); verify intersection.	IMPLEMENTED_UNVERIFIED
+SG-OP-014	6.4.11	Infix Operator Range (":") implemented	Mandatory	Small	ODF 1.4	Evaluate SUM(A1:A3); verify range.	IMPLEMENTED_UNVERIFIED
+SG-FN-001	6.16.2	ABS	Mandatory	Small	ODF 1.2	Evaluate ABS(-3); verify 3.	IMPLEMENTED_UNVERIFIED
+SG-FN-002	6.16.3	ACOS	Mandatory	Small	ODF 1.2	Evaluate ACOS(0); verify pi/2.	IMPLEMENTED_UNVERIFIED
+SG-FN-003	6.15.2	AND	Mandatory	Small	ODF 1.2	Evaluate AND(TRUE,TRUE); verify TRUE.	IMPLEMENTED_UNVERIFIED
+SG-FN-004	6.16.7	ASIN	Mandatory	Small	ODF 1.2	Evaluate ASIN(0); verify 0.	IMPLEMENTED_UNVERIFIED
+SG-FN-005	6.16.9	ATAN	Mandatory	Small	ODF 1.2	Evaluate ATAN(0); verify 0.	IMPLEMENTED_UNVERIFIED
+SG-FN-006	6.16.10	ATAN2	Mandatory	Small	ODF 1.2	Evaluate ATAN2(1,1); verify pi/4.	IMPLEMENTED_UNVERIFIED
+SG-FN-007	6.18.3	AVERAGE	Mandatory	Small	ODF 1.2	Evaluate AVERAGE(1,2,3); verify 2.	IMPLEMENTED_UNVERIFIED
+SG-FN-008	6.18.5	AVERAGEIF	Mandatory	Small	ODF 1.2	Evaluate AVERAGEIF(range,criteria); verify average.	IMPLEMENTED_UNVERIFIED
+SG-FN-009	6.14.3	CHOOSE	Mandatory	Small	ODF 1.2	Evaluate CHOOSE(2,"a","b","c"); verify "b".	IMPLEMENTED_UNVERIFIED
+SG-FN-010	6.13.5	COLUMNS	Mandatory	Small	ODF 1.2	Evaluate COLUMNS(A1:C1); verify 3.	IMPLEMENTED_UNVERIFIED
+SG-FN-011	6.16.19	COS	Mandatory	Small	ODF 1.2	Evaluate COS(0); verify 1.	IMPLEMENTED_UNVERIFIED
+SG-FN-012	6.13.6	COUNT	Mandatory	Small	ODF 1.2	Evaluate COUNT(1,2,"x"); verify 2.	IMPLEMENTED_UNVERIFIED
+SG-FN-013	6.13.7	COUNTA	Mandatory	Small	ODF 1.2	Evaluate COUNTA over numbers, text, empty cells, and empty string ""; verify non-blank count per §6.13.7.	IMPLEMENTED_UNVERIFIED
+SG-FN-014	6.13.8	COUNTBLANK	Mandatory	Small	ODF 1.2	Evaluate COUNTBLANK over truly empty cells; ""-in-cell blankness is implementation-defined per §6.13.8.	IMPLEMENTED_UNVERIFIED
+SG-FN-015	6.13.9	COUNTIF	Mandatory	Small	ODF 1.2	Evaluate COUNTIF(range,criteria); verify count.	IMPLEMENTED_UNVERIFIED
+SG-FN-016	6.10.2	DATE	Mandatory	Small	ODF 1.2	Evaluate DATE(2025,1,1); verify serial. Values outside §6.10.2 constraints (e.g. year < 1904) are impl-defined/diagnostic.	IMPLEMENTED_UNVERIFIED
+SG-FN-017	6.9.2	DAVERAGE	Mandatory	Small	ODF 1.2	Evaluate DAVERAGE(database,field,criteria); verify average.	IMPLEMENTED_UNVERIFIED
+SG-FN-018	6.10.5	DAY	Mandatory	Small	ODF 1.2	Evaluate DAY(DATE(2025,3,15)); verify 15.	IMPLEMENTED_UNVERIFIED
+SG-FN-019	6.9.3	DCOUNT	Mandatory	Small	ODF 1.2	Evaluate DCOUNT(database,field,criteria); verify count.	IMPLEMENTED_UNVERIFIED
+SG-FN-020	6.9.4	DCOUNTA	Mandatory	Small	ODF 1.2	Evaluate DCOUNTA(database,field,criteria); verify count.	IMPLEMENTED_UNVERIFIED
+SG-FN-021	6.12.14	DDB	Mandatory	Small	ODF 1.2	Evaluate DDB(cost,salvage,life,period); verify depreciation.	IMPLEMENTED_UNVERIFIED
+SG-FN-022	6.16.25	DEGREES	Mandatory	Small	ODF 1.2	Evaluate DEGREES(PI()); verify 180.	IMPLEMENTED_UNVERIFIED
+SG-FN-023	6.9.5	DGET	Mandatory	Small	ODF 1.2	Evaluate DGET(database,field,criteria); verify value.	IMPLEMENTED_UNVERIFIED
+SG-FN-024	6.9.6	DMAX	Mandatory	Small	ODF 1.2	Evaluate DMAX(database,field,criteria); verify max.	IMPLEMENTED_UNVERIFIED
+SG-FN-025	6.9.7	DMIN	Mandatory	Small	ODF 1.2	Evaluate DMIN(database,field,criteria); verify min.	IMPLEMENTED_UNVERIFIED
+SG-FN-026	6.9.8	DPRODUCT	Mandatory	Small	ODF 1.2	Evaluate DPRODUCT(database,field,criteria); verify product.	IMPLEMENTED_UNVERIFIED
+SG-FN-027	6.9.9	DSTDEV	Mandatory	Small	ODF 1.2	Evaluate DSTDEV(database,field,criteria); verify stddev.	IMPLEMENTED_UNVERIFIED
+SG-FN-028	6.9.10	DSTDEVP	Mandatory	Small	ODF 1.2	Evaluate DSTDEVP(database,field,criteria); verify stddevp.	IMPLEMENTED_UNVERIFIED
+SG-FN-029	6.9.11	DSUM	Mandatory	Small	ODF 1.2	Evaluate DSUM(database,field,criteria); verify sum.	IMPLEMENTED_UNVERIFIED
+SG-FN-030	6.9.12	DVAR	Mandatory	Small	ODF 1.2	Evaluate DVAR(database,field,criteria); verify variance.	IMPLEMENTED_UNVERIFIED
+SG-FN-031	6.9.13	DVARP	Mandatory	Small	ODF 1.2	Evaluate DVARP(database,field,criteria); verify variancep.	IMPLEMENTED_UNVERIFIED
+SG-FN-032	6.16.30	EVEN	Mandatory	Small	ODF 1.2	Evaluate EVEN(1.3); verify 2.	IMPLEMENTED_UNVERIFIED
+SG-FN-033	6.20.8	EXACT	Mandatory	Small	ODF 1.2	Evaluate EXACT("a","a"); verify TRUE.	IMPLEMENTED_UNVERIFIED
+SG-FN-034	6.16.31	EXP	Mandatory	Small	ODF 1.2	Evaluate EXP(1); verify e.	IMPLEMENTED_UNVERIFIED
+SG-FN-035	6.16.32	FACT	Mandatory	Small	ODF 1.2	Evaluate FACT(5); verify 120.	IMPLEMENTED_UNVERIFIED
+SG-FN-036	6.15.3	FALSE	Mandatory	Small	ODF 1.2	Evaluate FALSE(); verify FALSE.	IMPLEMENTED_UNVERIFIED
+SG-FN-037	6.20.9	FIND	Mandatory	Small	ODF 1.2	Evaluate FIND("b","abc"); verify 2.	IMPLEMENTED_UNVERIFIED
+SG-FN-038	6.12.20	FV	Mandatory	Small	ODF 1.2	Evaluate FV(rate,nper,pmt); verify future value.	IMPLEMENTED_UNVERIFIED
+SG-FN-039	6.14.5	HLOOKUP	Mandatory	Small	ODF 1.2	Evaluate HLOOKUP(value,table,row); verify result.	IMPLEMENTED_UNVERIFIED
+SG-FN-040	6.10.11	HOUR	Mandatory	Small	ODF 1.2	Evaluate HOUR(TIME(12,30,0)); verify 12.	IMPLEMENTED_UNVERIFIED
+SG-FN-041	6.15.4	IF	Mandatory	Small	ODF 1.2	Evaluate IF(TRUE,1,2); verify 1.	IMPLEMENTED_UNVERIFIED
+SG-FN-042	6.14.6	INDEX	Mandatory	Small	ODF 1.2	Evaluate INDEX(range,row,col); verify cell value.	IMPLEMENTED_UNVERIFIED
+SG-FN-043	6.17.2	INT	Mandatory	Small	ODF 1.2	Evaluate INT(1.9); verify 1.	IMPLEMENTED_UNVERIFIED
+SG-FN-044	6.12.24	IRR	Mandatory	Small	ODF 1.2	Evaluate IRR(values); verify internal rate of return.	IMPLEMENTED_UNVERIFIED
+SG-FN-045	6.13.14	ISBLANK	Mandatory	Small	ODF 1.2	Evaluate ISBLANK(cell); verify TRUE/FALSE.	IMPLEMENTED_UNVERIFIED
+SG-FN-046	6.13.15	ISERR	Mandatory	Small	ODF 1.2	Evaluate ISERR(1/0); verify TRUE.	IMPLEMENTED_UNVERIFIED
+SG-FN-047	6.13.16	ISERROR	Mandatory	Small	ODF 1.2	Evaluate ISERROR(1/0); verify TRUE.	IMPLEMENTED_UNVERIFIED
+SG-FN-048	6.13.19	ISLOGICAL	Mandatory	Small	ODF 1.2	Evaluate ISLOGICAL(TRUE); verify TRUE.	IMPLEMENTED_UNVERIFIED
+SG-FN-049	6.13.20	ISNA	Mandatory	Small	ODF 1.2	Evaluate ISNA(NA()); verify TRUE.	IMPLEMENTED_UNVERIFIED
+SG-FN-050	6.13.21	ISNONTEXT	Mandatory	Small	ODF 1.2	Evaluate ISNONTEXT(1); verify TRUE.	IMPLEMENTED_UNVERIFIED
+SG-FN-051	6.13.22	ISNUMBER	Mandatory	Small	ODF 1.2	Evaluate ISNUMBER(1); verify TRUE.	IMPLEMENTED_UNVERIFIED
+SG-FN-052	6.13.25	ISTEXT	Mandatory	Small	ODF 1.2	Evaluate ISTEXT("a"); verify TRUE.	IMPLEMENTED_UNVERIFIED
+SG-FN-053	6.20.12	LEFT	Mandatory	Small	ODF 1.2	Evaluate LEFT("abc",2); verify "ab".	IMPLEMENTED_UNVERIFIED
+SG-FN-054	6.20.13	LEN	Mandatory	Small	ODF 1.2	Evaluate LEN("abc"); verify 3.	IMPLEMENTED_UNVERIFIED
+SG-FN-055	6.16.39	LN	Mandatory	Small	ODF 1.2	Evaluate LN(1); verify 0.	IMPLEMENTED_UNVERIFIED
+SG-FN-056	6.16.40	LOG	Mandatory	Small	ODF 1.2	Evaluate LOG(100,10); verify 2.	IMPLEMENTED_UNVERIFIED
+SG-FN-057	6.16.41	LOG10	Mandatory	Small	ODF 1.2	Evaluate LOG10(100); verify 2.	IMPLEMENTED_UNVERIFIED
+SG-FN-058	6.20.14	LOWER	Mandatory	Small	ODF 1.2	Evaluate LOWER("ABC"); verify "abc".	IMPLEMENTED_UNVERIFIED
+SG-FN-059	6.14.9	MATCH	Mandatory	Small	ODF 1.2	Evaluate MATCH(value,range,type); verify position.	IMPLEMENTED_UNVERIFIED
+SG-FN-060	6.18.45	MAX	Mandatory	Small	ODF 1.2	Evaluate MAX(1,2,3); verify 3.	IMPLEMENTED_UNVERIFIED
+SG-FN-061	6.20.15	MID	Mandatory	Small	ODF 1.2	Evaluate MID("abc",2,1); verify "b".	IMPLEMENTED_UNVERIFIED
+SG-FN-062	6.18.48	MIN	Mandatory	Small	ODF 1.2	Evaluate MIN(1,2,3); verify 1.	IMPLEMENTED_UNVERIFIED
+SG-FN-063	6.10.13	MINUTE	Mandatory	Small	ODF 1.2	Evaluate MINUTE(TIME(12,30,0)); verify 30.	IMPLEMENTED_UNVERIFIED
+SG-FN-064	6.16.42	MOD	Mandatory	Small	ODF 1.2	Evaluate MOD(5,2); verify 1.	IMPLEMENTED_UNVERIFIED
+SG-FN-065	6.10.14	MONTH	Mandatory	Small	ODF 1.2	Evaluate MONTH(DATE(2025,3,15)); verify 3.	IMPLEMENTED_UNVERIFIED
+SG-FN-066	6.13.26	N	Mandatory	Small	ODF 1.2	Evaluate N(TRUE); verify 1.	IMPLEMENTED_UNVERIFIED
+SG-FN-067	6.13.27	NA	Mandatory	Small	ODF 1.2	Evaluate NA(); verify #N/A error.	IMPLEMENTED_UNVERIFIED
+SG-FN-068	6.15.7	NOT	Mandatory	Small	ODF 1.2	Evaluate NOT(TRUE); verify FALSE.	IMPLEMENTED_UNVERIFIED
+SG-FN-069	6.10.16	NOW	Mandatory	Small	ODF 1.2	Evaluate NOW(); verify current datetime.	IMPLEMENTED_UNVERIFIED
+SG-FN-070	6.12.29	NPER	Mandatory	Small	ODF 1.2	Evaluate NPER(rate,pmt,pv); verify periods.	IMPLEMENTED_UNVERIFIED
+SG-FN-071	6.12.30	NPV	Mandatory	Small	ODF 1.2	Evaluate NPV(rate,values); verify net present value.	IMPLEMENTED_UNVERIFIED
+SG-FN-072	6.16.44	ODD	Mandatory	Small	ODF 1.2	Evaluate ODD(1.3); verify 3.	IMPLEMENTED_UNVERIFIED
+SG-FN-073	6.15.8	OR	Mandatory	Small	ODF 1.2	Evaluate OR(FALSE,TRUE); verify TRUE.	IMPLEMENTED_UNVERIFIED
+SG-FN-074	6.16.45	PI	Mandatory	Small	ODF 1.2	Evaluate PI(); verify pi.	IMPLEMENTED_UNVERIFIED
+SG-FN-075	6.12.36	PMT	Mandatory	Small	ODF 1.2	Evaluate PMT(rate,nper,pv); verify payment.	IMPLEMENTED_UNVERIFIED
+SG-FN-076	6.16.46	POWER	Mandatory	Small	ODF 1.2	Evaluate POWER(2,3); verify 8.	IMPLEMENTED_UNVERIFIED
+SG-FN-077	6.16.47	PRODUCT	Mandatory	Small	ODF 1.2	Evaluate PRODUCT(2,3); verify 6.	IMPLEMENTED_UNVERIFIED
+SG-FN-078	6.20.16	PROPER	Mandatory	Small	ODF 1.2	Evaluate PROPER("abc"); verify "Abc".	IMPLEMENTED_UNVERIFIED
+SG-FN-079	6.12.41	PV	Mandatory	Small	ODF 1.2	Evaluate PV(rate,nper,pmt); verify present value.	IMPLEMENTED_UNVERIFIED
+SG-FN-080	6.16.49	RADIANS	Mandatory	Small	ODF 1.2	Evaluate RADIANS(180); verify pi.	IMPLEMENTED_UNVERIFIED
+SG-FN-081	6.12.42	RATE	Mandatory	Small	ODF 1.2	Evaluate RATE(nper,pmt,pv); verify rate.	IMPLEMENTED_UNVERIFIED
+SG-FN-082	6.20.17	REPLACE	Mandatory	Small	ODF 1.2	Evaluate REPLACE("abc",2,1,"x"); verify "axc".	IMPLEMENTED_UNVERIFIED
+SG-FN-083	6.20.18	REPT	Mandatory	Small	ODF 1.2	Evaluate REPT("a",3); verify "aaa".	IMPLEMENTED_UNVERIFIED
+SG-FN-084	6.20.19	RIGHT	Mandatory	Small	ODF 1.2	Evaluate RIGHT("abc",2); verify "bc".	IMPLEMENTED_UNVERIFIED
+SG-FN-085	6.17.5	ROUND	Mandatory	Small	ODF 1.2	Evaluate ROUND(1.6,0); verify 2.	IMPLEMENTED_UNVERIFIED
+SG-FN-086	6.13.30	ROWS	Mandatory	Small	ODF 1.2	Evaluate ROWS(A1:A3); verify 3.	IMPLEMENTED_UNVERIFIED
+SG-FN-087	6.10.17	SECOND	Mandatory	Small	ODF 1.2	Evaluate SECOND(TIME(12,30,45)); verify 45.	IMPLEMENTED_UNVERIFIED
+SG-FN-088	6.16.55	SIN	Mandatory	Small	ODF 1.2	Evaluate SIN(0); verify 0.	IMPLEMENTED_UNVERIFIED
+SG-FN-089	6.12.45	SLN	Mandatory	Small	ODF 1.2	Evaluate SLN(cost,salvage,life); verify depreciation.	IMPLEMENTED_UNVERIFIED
+SG-FN-090	6.16.58	SQRT	Mandatory	Small	ODF 1.2	Evaluate SQRT(4); verify 2.	IMPLEMENTED_UNVERIFIED
+SG-FN-091	6.18.72	STDEV	Mandatory	Small	ODF 1.2	Evaluate STDEV(values); verify sample stddev.	IMPLEMENTED_UNVERIFIED
+SG-FN-092	6.18.74	STDEVP	Mandatory	Small	ODF 1.2	Evaluate STDEVP(values); verify population stddev.	IMPLEMENTED_UNVERIFIED
+SG-FN-093	6.20.21	SUBSTITUTE	Mandatory	Small	ODF 1.2	Evaluate SUBSTITUTE("aaa","a","b"); verify "bbb".	IMPLEMENTED_UNVERIFIED
+SG-FN-094	6.16.61	SUM	Mandatory	Small	ODF 1.2	Evaluate SUM(1,2,3); verify 6.	IMPLEMENTED_UNVERIFIED
+SG-FN-095	6.16.62	SUMIF	Mandatory	Small	ODF 1.2	Evaluate SUMIF(range,criteria,sumrange); verify sum.	IMPLEMENTED_UNVERIFIED
+SG-FN-096	6.12.46	SYD	Mandatory	Small	ODF 1.2	Evaluate SYD(cost,salvage,life,period); verify depreciation.	IMPLEMENTED_UNVERIFIED
+SG-FN-097	6.20.22	T	Mandatory	Small	ODF 1.2	Evaluate T("abc"); verify "abc".	IMPLEMENTED_UNVERIFIED
+SG-FN-098	6.16.69	TAN	Mandatory	Small	ODF 1.2	Evaluate TAN(0); verify 0.	IMPLEMENTED_UNVERIFIED
+SG-FN-099	6.10.18	TIME	Mandatory	Small	ODF 1.2	Evaluate TIME(12,30,0); verify time serial.	IMPLEMENTED_UNVERIFIED
+SG-FN-100	6.10.20	TODAY	Mandatory	Small	ODF 1.2	Evaluate TODAY(); verify current date serial.	IMPLEMENTED_UNVERIFIED
+SG-FN-101	6.20.24	TRIM	Mandatory	Small	ODF 1.2	Evaluate TRIM(" a  b "); verify "a b".	IMPLEMENTED_UNVERIFIED
+SG-FN-102	6.15.9	TRUE	Mandatory	Small	ODF 1.2	Evaluate TRUE(); verify TRUE.	IMPLEMENTED_UNVERIFIED
+SG-FN-103	6.17.8	TRUNC	Mandatory	Small	ODF 1.2	Evaluate TRUNC(1.9); verify 1.	IMPLEMENTED_UNVERIFIED
+SG-FN-104	6.20.27	UPPER	Mandatory	Small	ODF 1.2	Evaluate UPPER("abc"); verify "ABC".	IMPLEMENTED_UNVERIFIED
+SG-FN-105	6.13.34	VALUE	Mandatory	Small	ODF 1.2	Evaluate VALUE("123"); verify 123.	IMPLEMENTED_UNVERIFIED
+SG-FN-106	6.18.82	VAR	Mandatory	Small	ODF 1.2	Evaluate VAR(values); verify sample variance.	IMPLEMENTED_UNVERIFIED
+SG-FN-107	6.18.84	VARP	Mandatory	Small	ODF 1.2	Evaluate VARP(values); verify population variance.	IMPLEMENTED_UNVERIFIED
+SG-FN-108	6.14.12	VLOOKUP	Mandatory	Small	ODF 1.2	Evaluate VLOOKUP(value,table,col,range); verify result.	IMPLEMENTED_UNVERIFIED
+SG-FN-109	6.10.21	WEEKDAY	Mandatory	Small	ODF 1.2	Evaluate WEEKDAY(date); verify day number.	IMPLEMENTED_UNVERIFIED
+SG-FN-110	6.10.24	YEAR	Mandatory	Small	ODF 1.2	Evaluate YEAR(DATE(2025,3,15)); verify 2025.	IMPLEMENTED_UNVERIFIED
+SG-ALW-001	2.3.2.F	References containing more than one area need not be evaluated	Optional	Small	ODF 1.4	Reference with multiple areas; may return error or partial result.	NOT_APPLICABLE
+SG-ALW-002	2.3.2.G	Inline arrays need not be implemented	Optional	Small	ODF 1.4	Use {1,2} inline array; may return error.	NOT_APPLICABLE
+SG-ALW-003	2.3.2.G	Complex numbers need not be implemented	Optional	Small	ODF 1.4	Use COMPLEX function; may return error.	NOT_APPLICABLE
+SG-ALW-004	2.3.2.G	Reference union operator (~) need not be implemented	Optional	Small	ODF 1.4	Use A1:B2~C3:D4; may return error.	NOT_APPLICABLE

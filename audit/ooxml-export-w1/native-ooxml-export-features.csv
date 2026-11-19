@@ -1,0 +1,41 @@
+Feature,Category,Status,Evidence,File,Method,Reached,PackagePart,Omitted,TODO_FIXME,Conditional,Confidence
+Workbook structure,Workbook,Partial,"ExcDocument::WriteXml writes workbookPr, calcPr, sheets",main/sc/source/filter/excel/excdoc.cxx,ExcDocument::WriteXml,Yes,xl/workbook.xml,fileRecoveryPr,fileSharing,functionGroups,oleSize,smartTagPr,webPublishing,externalReferences,"OOXTODO on workbookPr attributes",Yes,confirmed
+Worksheet structure,Worksheet,Partial,"FillAsXmlTable writes sheet XML",main/sc/source/filter/excel/excdoc.cxx,ExcTable::FillAsXmlTable,Yes,xl/worksheets/sheetN.xml,autoFilter,pageSetup,sheetPr,sheetView,tablePart,"Listed in ooxml-export-TODO.txt",Yes,confirmed
+Cells and formulas,Cells,Partial,"XclExpCellTable writes cells via SaveXml",main/sc/source/filter/excel/xetable.cxx,XclExpCellTable::WriteXml,Yes,xl/worksheets/sheetN.xml(sheetData),cellSmartTag,cellWatch,ignoredErrors,sortState,,Yes,confirmed
+Shared strings,Shared Strings,Partial,"XclExpSst::SaveXml writes SST",main/sc/source/filter/excel/xecontent.cxx,XclExpSstImpl::SaveXml,Yes,xl/sharedStrings.xml,phoneticPr,rPh,,Yes,confirmed
+Rich-text runs,Shared Strings,Partial,"XclExpString::WriteXml writes rich text runs",main/sc/source/filter/excel/xestring.cxx,XclExpString::WriteXml,Yes,xl/sharedStrings.xml,,,Yes,confirmed
+Styles,Styles,Partial,"XclExpXmlStyleSheet called in workbook globals",main/sc/source/filter/excel/excdoc.cxx,ExcDocument workbook globals (line 332),Yes,xl/styles.xml,dxf,gradientFill,scheme,mruColors,tableStyles,"DXF unsupported; listed in TODO",Yes,confirmed
+Number formats,Styles,Partial,"Part of XF/style serialization",main/sc/source/filter/excel/xestyle.cxx,XclExpXmlStyleSheet,Yes,xl/styles.xml,,,Yes,confirmed
+Fonts,Styles,Partial,"Part of XF/style serialization",main/sc/source/filter/excel/xestyle.cxx,XclExpXmlStyleSheet,Yes,xl/styles.xml,,,Yes,confirmed
+Fills and borders,Styles,Partial,"Part of XF/style serialization",main/sc/source/filter/excel/xestyle.cxx,XclExpXmlStyleSheet,Yes,xl/styles.xml,,,Yes,confirmed
+Merged cells,Cells,Yes,"XclExpMergedcells::SaveXml",main/sc/source/filter/excel/xecontent.cxx,XclExpMergedcells::SaveXml,Yes,xl/worksheets/sheetN.xml,,,Yes,confirmed
+Row properties,Rows/Columns,Partial,"XclExpRow via cell table",main/sc/source/filter/excel/xetable.cxx,XclExpRow::WriteCellList,Yes,xl/worksheets/sheetN.xml,,,Yes,confirmed
+Column properties,Rows/Columns,Partial,"XclExpColInfo via cell table",main/sc/source/filter/excel/xetable.cxx,XclExpColTable,Yes,xl/worksheets/sheetN.xml,,,Yes,confirmed
+Hidden rows/columns,Rows/Columns,Partial,"Outline via GUTS record",main/sc/source/filter/excel/excdoc.cxx,FillAsXmlTable (line 561),Yes,xl/worksheets/sheetN.xml,,,Yes,confirmed
+Grouped rows/columns,Rows/Columns,Partial,"Outline via GUTS record",main/sc/source/filter/excel/excdoc.cxx,FillAsXmlTable (line 561),Yes,xl/worksheets/sheetN.xml,,,Yes,confirmed
+Hyperlinks,Cells,Yes,"XclExpHyperlink::SaveXml wrapped in <hyperlinks>",main/sc/source/filter/excel/xecontent.cxx,XclExpHyperlink::SaveXml,Yes,xl/worksheets/sheetN.xml,,,Yes,confirmed
+Comments,Comments,Partial,"XclExpComments writes NOTE records; text only, no formatting",main/sc/source/filter/excel/excdoc.cxx,FillAsXmlTable (line 588-591),Yes,xl/comments.xml,text formatting missing,"TODO: text formatting; drawing object required for display",Yes,confirmed
+Named ranges,Defined Names,Yes,"XclExpNameManager::SaveXml",main/sc/source/filter/excel/xename.cxx,XclExpNameManager::SaveXml,Yes,xl/workbook.xml(definedNames),smartTagType,smartTagTypes,,Yes,confirmed
+Data validation,Data Validation,Yes,"XclExpDV::SaveXml / XClExpDval::SaveXml",main/sc/source/filter/excel/xecontent.cxx,XClExpDval::SaveXml,Yes,xl/worksheets/sheetN.xml,,,Yes,confirmed
+Conditional formatting,Conditional Formatting,Partial,"XclExpCondfmt::SaveXml",main/sc/source/filter/excel/xecontent.cxx,XclExpCondfmt::SaveXml,Yes,xl/worksheets/sheetN.xml,cfRule,cfvo,dataBar,colorScale,iconSet,"Listed as unimplemented in TODO",Yes,confirmed
+Charts and drawings,Graphics,Missing,"DFF path commented out: 'DFF not needed in MSOOXML export'",main/sc/source/filter/excel/excdoc.cxx,FillAsXmlTable (line 576-582),No,xl/drawings/drawingN.xml,ALL charts/shapes/drawings,"DFF path disabled",No,confirmed
+Images,Graphics,Missing,"DFF path commented out",main/sc/source/filter/excel/excdoc.cxx,FillAsXmlTable (line 576-582),No,xl/media/,ALL images,"DFF path disabled",No,confirmed
+Shapes and text boxes,Graphics,Missing,"DFF path commented out",main/sc/source/filter/excel/excdoc.cxx,FillAsXmlTable (line 576-582),No,xl/drawings/drawingN.xml,ALL shapes/text boxes,"DFF path disabled",No,confirmed
+Pivot tables,Pivot Tables,Yes,"GetPivotTableManager().CreatePivotTablesRecord()",main/sc/source/filter/excel/excdoc.cxx,FillAsXmlTable (line 585),Yes,xl/pivotTables/,pivotArea,pivotSelection,,Yes,confirmed
+Pivot caches,Pivot Tables,Yes,"CreatePivotCachesRecord()",main/sc/source/filter/excel/excdoc.cxx,ExcDocument workbook globals (line 358),Yes,xl/pivotCache/,,,Yes,confirmed
+External links,External Links,Partial,"externSheet/name records written",main/sc/source/filter/excel/excdoc.cxx,ExcDocument workbook globals (line 398-399),Yes,xl/externalLinks/,,,Yes,confirmed
+Tables and autofilters,Tables,Missing,"autoFilter, tablePart listed as unimplemented",main/sc/source/filter/excel/ooxml-export-TODO.txt,,No,xl/tables/,autoFilter,tablePart,tableColumn,tableStyleInfo,"Listed in TODO",No,confirmed
+Page setup,Page Setup,Partial,"XclExpPageSettings writes page setup",main/sc/source/filter/excel/xepage.cxx,XclExpPageSettings::SaveXml,Yes,xl/worksheets/sheetN.xml(pageSetup),evenFooter,evenHeader,firstFooter,firstHeader,legacyDrawingHF,,Yes,confirmed
+Print areas,Page Setup,Partial,"Part of page settings",main/sc/source/filter/excel/xepage.cxx,XclExpPageSettings::SaveXml,Yes,xl/worksheets/sheetN.xml,,,Yes,confirmed
+Headers and footers,Page Setup,Partial,"HeaderFooter records",main/sc/source/filter/excel/xepage.cxx,XclExpPageSettings::SaveXml,Yes,xl/worksheets/sheetN.xml,evenFooter,evenHeader,firstFooter,firstHeader,,Yes,confirmed
+VBA projects,Macros,Partial,"VBA storage via SvxImportMSVBasic::SaveOrDelMSVBAStorage",main/sc/source/filter/excel/expop2.cxx,ExportXml2007::Write (line 185),Yes,xl/vbaProject.bin,,,Yes,confirmed
+Workbook calculation settings,Calculation,Partial,"calcPr written",main/sc/source/filter/excel/excdoc.cxx,ExcDocument workbook globals (line 96-114),Yes,xl/workbook.xml(calcPr),calcChain,,Yes,confirmed
+Formula metadata,Calculation,Partial,"XclExpRecalcId written",main/sc/source/filter/excel/excdoc.cxx,ExcDocument workbook globals (line 404),Yes,xl/workbook.xml(calcPr),calcChain (c element),,,Yes,confirmed
+Sheet protection,Protection,Partial,"XclExpProtection in binary path only; absent from XML",main/sc/source/filter/excel/excdoc.cxx,FillAsTable binary path (line 474-480),No,xl/worksheets/sheetN.xml(sheetProtection),ALL,"Absent from FillAsXmlTable",Yes,confirmed
+Tab color,Sheet,Missing,"tabColor listed as unimplemented",main/sc/source/filter/excel/ooxml-export-TODO.txt,,No,xl/worksheets/sheetN.xml(sheetPr),tabColor,,No,confirmed
+Sort state,Sheet,Missing,"sortState listed as unimplemented",main/sc/source/filter/excel/ooxml-export-TODO.txt,,No,xl/worksheets/sheetN.xml,sortState,,No,confirmed
+Web queries,Web,Yes,"XClExpWebQueryBuffer written",main/sc/source/filter/excel/excdoc.cxx,FillAsXmlTable (line 594),Yes,xl/worksheets/sheetN.xml,,,Yes,confirmed
+Label ranges,Sheet,Yes,"XclExpLabelranges written",main/sc/source/filter/excel/excdoc.cxx,FillAsXmlTable (line 574),Yes,xl/worksheets/sheetN.xml,,,Yes,confirmed
+Scenarios and filters,Sheet,Yes,"lcl_AddScenariosAndFilters",main/sc/source/filter/excel/excdoc.cxx,FillAsXmlTable (line 596),Yes,xl/worksheets/sheetN.xml,,,Yes,confirmed
+Code names,Sheet,Yes,"XClCodename written",main/sc/source/filter/excel/excdoc.cxx,FillAsXmlTable (line 604-606),Yes,xl/workbook.xml(workbookPr codeName),,,Yes,confirmed
+Change tracking,Change Tracking,Partial,"XclExpUsersViewBegin/End written",main/sc/source/filter/excel/excdoc.cxx,FillAsXmlTable (line 624-631),Yes,xl/worksheets/sheetN.xml,,,Yes,confirmed

@@ -144,6 +144,7 @@ Resource RID_STRLIST_FUNCTION_NAMES_ENGLISH_ODFF
 	String SC_OPCODE_S_NORM_INV { Text = "LEGACY.NORMSINV" ; };
 	String SC_OPCODE_GAMMA_LN { Text = "GAMMALN" ; };
 	String SC_OPCODE_ERROR_TYPE { Text = "ORG.OPENOFFICE.ERRORTYPE" ; };
+	String SC_OPCODE_ERROR_TYPE_ODF { Text = "ERROR.TYPE" ; };
 	String SC_OPCODE_ERR_CELL { Text = "ZellError" ; };  // TODO: ancient legacy only, remove?
 	String SC_OPCODE_FORMULA { Text = "FORMULA"; };
 	String SC_OPCODE_ARC_TAN_2 { Text = "ATAN2" ; };
@@ -212,7 +213,7 @@ Resource RID_STRLIST_FUNCTION_NAMES_ENGLISH_ODFF
 	String SC_OPCODE_COLUMN { Text = "COLUMN" ; };
 	String SC_OPCODE_ROW { Text = "ROW" ; };
 	String SC_OPCODE_TABLE { Text = "SHEET" ; };
-	String SC_OPCODE_ZGZ { Text = "ZGZ" ; };
+	String SC_OPCODE_ZGZ { Text = "RRI" ; };
 	String SC_OPCODE_ZW { Text = "FV" ; };
 	String SC_OPCODE_ZZR { Text = "NPER" ; };
 	String SC_OPCODE_ZINS { Text = "RATE" ; };
@@ -265,6 +266,10 @@ Resource RID_STRLIST_FUNCTION_NAMES_ENGLISH_ODFF
     String SC_OPCODE_RIGHTB        { Text = "RIGHTB" ; };
     String SC_OPCODE_LEFTB         { Text = "LEFTB" ; };
     String SC_OPCODE_MIDB          { Text = "MIDB" ; };
+	String SC_OPCODE_FINDB         { Text = "FINDB" ; };
+	String SC_OPCODE_SEARCHB       { Text = "SEARCHB" ; };
+	String SC_OPCODE_REPLACEB      { Text = "REPLACEB" ; };
+	String SC_OPCODE_DATEDIF       { Text = "DATEDIF" ; };
 	String SC_OPCODE_TEXT { Text = "TEXT" ; };
 	String SC_OPCODE_SUBSTITUTE { Text = "SUBSTITUTE" ; };
 	String SC_OPCODE_REPT { Text = "REPT" ; };
@@ -280,6 +285,7 @@ Resource RID_STRLIST_FUNCTION_NAMES_ENGLISH_ODFF
 	String SC_OPCODE_LOG_NORM_DIST { Text = "LOGNORMDIST" ; };
 	String SC_OPCODE_T_DIST { Text = "TDIST" ; };
 	String SC_OPCODE_F_DIST { Text = "LEGACY.FDIST" ; };
+	String SC_OPCODE_F_DIST_LEFT { Text = "FDIST" ; };
 	String SC_OPCODE_CHI_DIST { Text = "LEGACY.CHIDIST" ; };
 	String SC_OPCODE_WEIBULL { Text = "WEIBULL" ; };
 	String SC_OPCODE_NEG_BINOM_VERT { Text = "NEGBINOMDIST" ; };
@@ -324,12 +330,14 @@ Resource RID_STRLIST_FUNCTION_NAMES_ENGLISH_ODFF
 	String SC_OPCODE_GAMMA_INV { Text = "GAMMAINV" ; };
 	String SC_OPCODE_T_INV { Text = "TINV" ; };
 	String SC_OPCODE_F_INV { Text = "LEGACY.FINV" ; };
+	String SC_OPCODE_F_INV_LEFT { Text = "FINV" ; };
 	String SC_OPCODE_CHI_TEST { Text = "LEGACY.CHITEST" ; };
 	String SC_OPCODE_LOG_INV { Text = "LOGINV" ; };
 	String SC_OPCODE_TABLE_OP { Text = "MULTIPLE.OPERATIONS" ; };
 	String SC_OPCODE_BETA_DIST { Text = "BETADIST" ; };
 	String SC_OPCODE_BETA_INV { Text = "BETAINV" ; };
 	String SC_OPCODE_WEEK { Text = "ISOWEEKNUM" ; };
+	String SC_OPCODE_ISOWEEKNUM { Text = "ISOWEEKNUM" ; };
 	String SC_OPCODE_EASTERSUNDAY { Text = "EASTERSUNDAY" ; };
 	String SC_OPCODE_GET_DAY_OF_WEEK { Text = "WEEKDAY" ; };
 	String SC_OPCODE_NO_NAME { Text = "#NAME!" ; };
@@ -354,6 +362,9 @@ Resource RID_STRLIST_FUNCTION_NAMES_ENGLISH_ODFF
     String SC_OPCODE_BITXOR { Text= "BITXOR" ; };
     String SC_OPCODE_BITLSHIFT { Text= "BITLSHIFT" ; };
     String SC_OPCODE_BITRSHIFT { Text= "BITRSHIFT" ; };
+    String SC_OPCODE_IFNA { Text = "IFNA" ; };
+    String SC_OPCODE_IFERROR { Text = "IFERROR" ; };
+    String SC_OPCODE_SKEWP { Text = "SKEWP" ; };
 
     /* BEGIN defined ERROR.TYPE() values. */
     String SC_OPCODE_ERROR_NULL    { Text = "#NULL!"  ; };
@@ -486,6 +497,7 @@ Resource RID_STRLIST_FUNCTION_NAMES_ENGLISH
 	String SC_OPCODE_S_NORM_INV { Text = "NORMSINV" ; };
 	String SC_OPCODE_GAMMA_LN { Text = "GAMMALN" ; };
 	String SC_OPCODE_ERROR_TYPE { Text = "ERRORTYPE" ; };
+	String SC_OPCODE_ERROR_TYPE_ODF { Text = "ERROR.TYPE" ; };
 	String SC_OPCODE_ERR_CELL { Text = "ZellError" ; };  // TODO: ancient legacy only, remove?
 	String SC_OPCODE_FORMULA { Text = "FORMULA"; };
 	String SC_OPCODE_ARC_TAN_2 { Text = "ATAN2" ; };
@@ -554,7 +566,7 @@ Resource RID_STRLIST_FUNCTION_NAMES_ENGLISH
 	String SC_OPCODE_COLUMN { Text = "COLUMN" ; };
 	String SC_OPCODE_ROW { Text = "ROW" ; };
 	String SC_OPCODE_TABLE { Text = "SHEET" ; };
-	String SC_OPCODE_ZGZ { Text = "ZGZ" ; };
+	String SC_OPCODE_ZGZ { Text = "RRI" ; };
 	String SC_OPCODE_ZW { Text = "FV" ; };
 	String SC_OPCODE_ZZR { Text = "NPER" ; };
 	String SC_OPCODE_ZINS { Text = "RATE" ; };
@@ -607,6 +619,10 @@ Resource RID_STRLIST_FUNCTION_NAMES_ENGLISH
     String SC_OPCODE_RIGHTB { Text = "RIGHTB" ; };
     String SC_OPCODE_LEFTB { Text = "LEFTB" ; };
     String SC_OPCODE_MIDB { Text = "MIDB" ; };
+	String SC_OPCODE_FINDB { Text = "FINDB" ; };
+	String SC_OPCODE_SEARCHB { Text = "SEARCHB" ; };
+	String SC_OPCODE_REPLACEB { Text = "REPLACEB" ; };
+	String SC_OPCODE_DATEDIF { Text = "DATEDIF" ; };
 	String SC_OPCODE_TEXT { Text = "TEXT" ; };
 	String SC_OPCODE_SUBSTITUTE { Text = "SUBSTITUTE" ; };
 	String SC_OPCODE_REPT { Text = "REPT" ; };
@@ -622,6 +638,7 @@ Resource RID_STRLIST_FUNCTION_NAMES_ENGLISH
 	String SC_OPCODE_LOG_NORM_DIST { Text = "LOGNORMDIST" ; };
 	String SC_OPCODE_T_DIST { Text = "TDIST" ; };
 	String SC_OPCODE_F_DIST { Text = "FDIST" ; };
+	String SC_OPCODE_F_DIST_LEFT { Text = "F.DIST" ; };
 	String SC_OPCODE_CHI_DIST { Text = "CHIDIST" ; };
 	String SC_OPCODE_WEIBULL { Text = "WEIBULL" ; };
 	String SC_OPCODE_NEG_BINOM_VERT { Text = "NEGBINOMDIST" ; };
@@ -666,12 +683,14 @@ Resource RID_STRLIST_FUNCTION_NAMES_ENGLISH
 	String SC_OPCODE_GAMMA_INV { Text = "GAMMAINV" ; };
 	String SC_OPCODE_T_INV { Text = "TINV" ; };
 	String SC_OPCODE_F_INV { Text = "FINV" ; };
+	String SC_OPCODE_F_INV_LEFT { Text = "F.INV" ; };
 	String SC_OPCODE_CHI_TEST { Text = "CHITEST" ; };
 	String SC_OPCODE_LOG_INV { Text = "LOGINV" ; };
 	String SC_OPCODE_TABLE_OP { Text = "TABLE" ; };
 	String SC_OPCODE_BETA_DIST { Text = "BETADIST" ; };
 	String SC_OPCODE_BETA_INV { Text = "BETAINV" ; };
 	String SC_OPCODE_WEEK { Text = "WEEKNUM" ; };
+	String SC_OPCODE_ISOWEEKNUM { Text = "ISOWEEKNUM" ; };
 	String SC_OPCODE_EASTERSUNDAY { Text = "EASTERSUNDAY" ; };
 	String SC_OPCODE_GET_DAY_OF_WEEK { Text = "WEEKDAY" ; };
 	String SC_OPCODE_NO_NAME { Text = "#NAME!" ; };
@@ -696,6 +715,9 @@ Resource RID_STRLIST_FUNCTION_NAMES_ENGLISH
     String SC_OPCODE_BITXOR { Text = "BITXOR" ; };
     String SC_OPCODE_BITLSHIFT { Text= "BITLSHIFT" ; };
     String SC_OPCODE_BITRSHIFT { Text= "BITRSHIFT" ; };
+    String SC_OPCODE_IFNA { Text = "IFNA" ; };
+    String SC_OPCODE_IFERROR { Text = "IFERROR" ; };
+    String SC_OPCODE_SKEWP { Text = "SKEWP" ; };
 
     /* BEGIN defined ERROR.TYPE() values. */
     String SC_OPCODE_ERROR_NULL    { Text = "#NULL!"  ; };
@@ -1101,6 +1123,10 @@ Resource RID_STRLIST_FUNCTION_NAMES
 	String SC_OPCODE_ERROR_TYPE
 	{
 		Text [ en-US ] = "ERRORTYPE" ;
+	};
+	String SC_OPCODE_ERROR_TYPE_ODF
+	{
+		Text [ en-US ] = "ERROR.TYPE" ;
 	};
 	String SC_OPCODE_ERR_CELL { Text = "ZellError" ; };  // TODO: ancient legacy only, remove?
 	String SC_OPCODE_FORMULA
@@ -1588,6 +1614,26 @@ Resource RID_STRLIST_FUNCTION_NAMES
     {
         Text [ en-US ] = "MIDB" ;
     };
+	String SC_OPCODE_FINDB
+    {
+        Text [ en-US ] = "FINDB" ;
+    };
+	String SC_OPCODE_SEARCHB
+    {
+        Text [ en-US ] = "SEARCHB" ;
+    };
+	String SC_OPCODE_REPLACEB
+    {
+        Text [ en-US ] = "REPLACEB" ;
+    };
+	String SC_OPCODE_DATEDIF
+    {
+        Text [ en-US ] = "DATEDIF" ;
+    };
+	String SC_OPCODE_ISOWEEKNUM
+    {
+        Text [ en-US ] = "ISOWEEKNUM" ;
+    };
 	String SC_OPCODE_TEXT
 	{
 		Text [ en-US ] = "TEXT" ;
@@ -1648,6 +1694,10 @@ Resource RID_STRLIST_FUNCTION_NAMES
 	{
 		Text [ en-US ] = "FDIST" ;
 	};
+	String SC_OPCODE_F_DIST_LEFT
+	{
+		Text [ en-US ] = "F.DIST" ;
+	};
 	String SC_OPCODE_CHI_DIST
 	{
 		Text [ en-US ] = "CHIDIST" ;
@@ -1687,6 +1737,10 @@ Resource RID_STRLIST_FUNCTION_NAMES
 	String SC_OPCODE_SCHIEFE
 	{
 		Text [ en-US ] = "SKEW" ;
+	};
+	String SC_OPCODE_SKEWP
+	{
+		Text [ en-US ] = "SKEWP" ;
 	};
 	String SC_OPCODE_DEV_SQ
 	{
@@ -1824,6 +1878,10 @@ Resource RID_STRLIST_FUNCTION_NAMES
 	{
 		Text [ en-US ] = "FINV" ;
 	};
+	String SC_OPCODE_F_INV_LEFT
+	{
+		Text [ en-US ] = "F.INV" ;
+	};
 	String SC_OPCODE_CHI_TEST
 	{
 		Text [ en-US ] = "CHITEST" ;
@@ -1938,7 +1996,15 @@ Resource RID_STRLIST_FUNCTION_NAMES
     };
     String SC_OPCODE_BITRSHIFT
     {
-    	Text [ en-US ] = "BITRSHIFT";
+        Text [ en-US ] = "BITRSHIFT";
+    };
+    String SC_OPCODE_IFNA
+    {
+        Text [ en-US ] = "IFNA";
+    };
+    String SC_OPCODE_IFERROR
+    {
+        Text [ en-US ] = "IFERROR";
     };
     /* BEGIN defined ERROR.TYPE() values. */
     /* ERROR.TYPE( #NULL! ) == 1 */

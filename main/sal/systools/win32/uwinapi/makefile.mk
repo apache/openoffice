@@ -43,6 +43,13 @@ CXXFLAGS+= $(LFS_CFLAGS)
 CFLAGSCXX+=-Wno-unused-parameter -Wno-return-type
 .ENDIF
 
+# The thunks define the psapi entry points under their classic names, which
+# uwinapi.dxp exports.  From _WIN32_WINNT 0x0601 on psapi.h defaults to
+# PSAPI_VERSION 2 and maps GetModuleFileNameExA/W to K32GetModuleFileNameExA/W,
+# so the definitions would land under the K32 names and the export would not
+# resolve (LNK2001).  Callers elsewhere keep the default and bind to kernel32.
+CDEFS+=-DPSAPI_VERSION=1
+
 .IF "$(COMEX)"=="9"
 .IF "$(PSDK_HOME)"!=""
 # Since the 02/2003 PSDK the "new" linker is needed here.

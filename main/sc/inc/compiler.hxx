@@ -56,8 +56,10 @@
 
 // constants and data types also for external modules (ScInterpreter et al)
 
-#define MAXCODE      512    /* maximum number of tokens in formula */
+#define MAXCODE      2048   /* maximum number of tokens in formula */
 #define MAXSTRLEN    1024   /* maximum length of input string of one symbol */
+#define MAXSTRLITLEN 32767  /* maximum length of a string literal in a formula */
+#define MAXSYMLEN    (MAXSTRLITLEN+3)   /* symbol buffer: quote, literal, quote, 0 */
 #define MAXJUMPCOUNT 32     /* maximum number of jumps (ocChose) */
 
 // flag values of CharTable
@@ -200,6 +202,8 @@ public:
     void SetExternal(const sal_Unicode* pStr);
 
     ScRawToken* Clone() const;      // real copy!
+    // Heap token sized to the string, so it may exceed MAXSTRLEN; free with Delete().
+    static ScRawToken* NewString( const sal_Unicode* pStr, xub_StrLen nLen );
     formula::FormulaToken* CreateToken() const;   // create typified token
     void Load( SvStream&, sal_uInt16 nVer );
 
@@ -310,7 +314,7 @@ private:
     // For CONV_XL_OOX, may be set via API by MOOXML filter.
     ::com::sun::star::uno::Sequence< const ::com::sun::star::sheet::ExternalLinkInfo > maExternalLinks;
 
-    sal_Unicode cSymbol[MAXSTRLEN];                 // current Symbol
+    sal_Unicode* cSymbol;                           // current Symbol, MAXSYMLEN characters
     String      aFormula;                           // formula source code
     xub_StrLen  nSrcPos;                            // tokenizer position (source code)
     ScRawTokenRef   pRawToken;
@@ -353,6 +357,12 @@ public:
     ScCompiler( ScDocument* pDocument, const ScAddress&);
 
     ScCompiler( ScDocument* pDocument, const ScAddress&,ScTokenArray& rArr);
+
+    virtual ~ScCompiler();
+
+private:
+    ScCompiler( const ScCompiler& );            // not implemented
+    ScCompiler& operator=( const ScCompiler& ); // not implemented
 
 public:
     static void DeInit();               /// all

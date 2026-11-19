@@ -4096,8 +4096,8 @@ formula	source\core\resource\core_resource.src	0	string	RID_STRLIST_FUNCTION_NAM
 formula	source\core\resource\core_resource.src	0	string	RID_STRLIST_FUNCTION_NAMES	SC_OPCODE_ERROR_NA			0	bn	#N/A				2002-02-02 02:02:02
 formula	source\ui\dlg\parawin.src	0	#define	RB_ARGBLOCK( y )				13	bn	-		নির্বাচন করুন		2002-02-02 02:02:02
 formula	source\ui\dlg\parawin.src	0	fixedtext	RID_FORMULATAB_PARAMETER	FT_EDITDESC			198	bn	ফাংশন জানা নয়				2002-02-02 02:02:02
-formula	source\ui\dlg\parawin.src	0	string	RID_FORMULATAB_PARAMETER	STR_OPTIONAL			8	bn	(ঐচ্ছিক)				2002-02-02 02:02:02
-formula	source\ui\dlg\parawin.src	0	string	RID_FORMULATAB_PARAMETER	STR_REQUIRED			8	bn	(প্রয়োজন)				2002-02-02 02:02:02
+formula	source\ui\dlg\parawin.src	0	string	RID_FORMULATAB_PARAMETER.FT_ARG1.FT_ARG2.FT_ARG3.FT_ARG4	STR_OPTIONAL			8	bn	(ঐচ্ছিক)				2002-02-02 02:02:02
+formula	source\ui\dlg\parawin.src	0	string	RID_FORMULATAB_PARAMETER.FT_ARG1.FT_ARG2.FT_ARG3.FT_ARG4	STR_REQUIRED			8	bn	(প্রয়োজন)				2002-02-02 02:02:02
 formula	source\ui\dlg\formdlgs.src	0	stringlist	RID_FORMULATAB_FUNCTION.LB_CATEGORY	1			0	bn	সর্বশেষ ব্যবহৃত				2002-02-02 02:02:02
 formula	source\ui\dlg\formdlgs.src	0	stringlist	RID_FORMULATAB_FUNCTION.LB_CATEGORY	2			0	bn	সব				2002-02-02 02:02:02
 formula	source\ui\dlg\formdlgs.src	0	fixedtext	RID_FORMULATAB_FUNCTION	FT_CATEGORY			84	bn	শ্রেণী (~C)				2002-02-02 02:02:02
@@ -4201,8 +4201,8 @@ wizards	source\euro\euro.src	0	string	CURRENCIES + 9				0	bn	অস্ট্র�
 wizards	source\euro\euro.src	0	string	CURRENCIES + 10				0	bn	ফিনিশ মার্ক				2002-02-02 02:02:02
 wizards	source\euro\euro.src	0	string	CURRENCIES + 11				0	bn	গ্রীক ড্রাচমা				2002-02-02 02:02:02
 wizards	source\euro\euro.src	0	string	CURRENCIES + 12				0	bn	স্লোভেনিয়ান টলার				2002-02-02 02:02:02
-wizards	source\euro\euro.src	0	string	CURRENCIES + 16				0	bn	এই নথিরর মুদ্রার সেট ইউরোপীয় মুদ্রা নয়!				2002-02-02 02:02:02
-wizards	source\euro\euro.src	0	string	CURRENCIES + 17				0	bn	আপনার অপারেটিং সিস্টেমের ভাষা সেট ইউরোপীয় মানিটারি ইউনিয়নের কোনো ভাষা নয়।				2002-02-02 02:02:02
+wizards	source\euro\euro.src	0	string	CURRENCIES + 21				0	bn	এই নথিরর মুদ্রার সেট ইউরোপীয় মুদ্রা নয়!				2002-02-02 02:02:02
+wizards	source\euro\euro.src	0	string	CURRENCIES + 22				0	bn	আপনার অপারেটিং সিস্টেমের ভাষা সেট ইউরোপীয় মানিটারি ইউনিয়নের কোনো ভাষা নয়।				2002-02-02 02:02:02
 wizards	source\euro\euro.src	0	string	STEP_LASTPAGE				0	bn	অগ্রগতি				2002-02-02 02:02:02
 wizards	source\euro\euro.src	0	string	STEP_LASTPAGE + 1				0	bn	প্রাসঙ্গিক নথিগুলো আহরন করা হচ্ছে...				2002-02-02 02:02:02
 wizards	source\euro\euro.src	0	string	STEP_LASTPAGE + 2				0	bn	নথিগুলো রূপান্তর করা হচ্ছে...				2002-02-02 02:02:02
@@ -4643,77 +4643,77 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_FAXWIZARDROADMAP_START + 2		
 wizards	source\formwizard\dbwizres.src	0	string	RID_FAXWIZARDROADMAP_START + 3				0	bn	প্রেরক ও প্রাপক				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_FAXWIZARDROADMAP_START + 4				0	bn	পাদটিকা				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_FAXWIZARDROADMAP_START + 5				0	bn	নাম ও অবস্থান				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +1				0	bn	ওয়েব উইজার্ড				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +2				0	bn	এই ওয়েব উইজার্ড আপনাকে নথিসমূহ ইন্টারনেটে প্রকাশ করতে সহায়তা করে।\n\nএটা নথিসমূহকে রুপান্তর করবে ফলে তাদেরকে ওয়েব ব্রাউজারে দেখা যাবে। আরও, নথিসমূহে সহজে প্রবেশ করার জন্য এটা সংযোগ সহ সূচি পৃষ্ঠা তৈরি করবে। ওয়েব উইজার্ডটি আপনাকে আপনার ওয়েব সাইটের নকশা ও বর্হিবিন্যাস পছন্দসই বিন্যাস করতে সমর্থন করে।\n\nআপনি এই তারিখ পর্যন্ত যেকোনো সময় ওয়েবে যে নথিসমূহ প্রকাশ এবং সংযুক্ত বা অপসারণ করেছেন তা আপনি সংরক্ষণ করে রাখতে পারবেন।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +4				0	bn	মুছে ফেলুন (~D)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +5				0	bn	সূচনা				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +6				0	bn	আপনি প্রকাশ করতে চান এমন নথি নির্বাচন করুন				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +8				0	bn	নথির তথ্য				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +9				0	bn	শিরোনাম: (~T)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +10				0	bn	সারাংশ: (~S)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +11				0	bn	লেখক: (~t)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +12				0	bn	ফাইল বিন্যাসে রপ্তানি করুন: (~E)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +13				0	bn	আপনার ওয়েব সাইটের জন্য সাধারণ তথ্য প্রবেশ করান				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 1				0	bn	ওয়েব উইজার্ড				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 2				0	bn	এই ওয়েব উইজার্ড আপনাকে নথিসমূহ ইন্টারনেটে প্রকাশ করতে সহায়তা করে।\n\nএটা নথিসমূহকে রুপান্তর করবে ফলে তাদেরকে ওয়েব ব্রাউজারে দেখা যাবে। আরও, নথিসমূহে সহজে প্রবেশ করার জন্য এটা সংযোগ সহ সূচি পৃষ্ঠা তৈরি করবে। ওয়েব উইজার্ডটি আপনাকে আপনার ওয়েব সাইটের নকশা ও বর্হিবিন্যাস পছন্দসই বিন্যাস করতে সমর্থন করে।\n\nআপনি এই তারিখ পর্যন্ত যেকোনো সময় ওয়েবে যে নথিসমূহ প্রকাশ এবং সংযুক্ত বা অপসারণ করেছেন তা আপনি সংরক্ষণ করে রাখতে পারবেন।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 4				0	bn	মুছে ফেলুন (~D)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 5				0	bn	সূচনা				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 6				0	bn	আপনি প্রকাশ করতে চান এমন নথি নির্বাচন করুন				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 8				0	bn	নথির তথ্য				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 9				0	bn	শিরোনাম: (~T)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 10				0	bn	সারাংশ: (~S)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 11				0	bn	লেখক: (~t)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 12				0	bn	ফাইল বিন্যাসে রপ্তানি করুন: (~E)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 13				0	bn	আপনার ওয়েব সাইটের জন্য সাধারণ তথ্য প্রবেশ করান				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +14				0	bn	শিরোনাম:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +16				0	bn	বর্ণনা:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +18				0	bn	তৈরিকৃত:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +20				0	bn	ই-মেইল:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +21				0	bn	কপিরাইট বিজ্ঞপ্তি:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +22				0	bn	পরিবর্তিত:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +24				0	bn	প্রাকদর্শন (~P)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +25				0	bn	আপনার ওয়েব সাইট কোথায় প্রকাশ করতে চান?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +26				0	bn	নতুন ওয়েব সাইটটি প্রকাশ করুন:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +27				0	bn	একটি স্থানীয় ফোল্ডারে (~l)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 16				0	bn	বর্ণনা:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 18				0	bn	তৈরিকৃত:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 20				0	bn	ই-মেইল:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 21				0	bn	কপিরাইট বিজ্ঞপ্তি:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 22				0	bn	পরিবর্তিত:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 24				0	bn	প্রাকদর্শন (~P)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 25				0	bn	আপনার ওয়েব সাইট কোথায় প্রকাশ করতে চান?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 26				0	bn	নতুন ওয়েব সাইটটি প্রকাশ করুন:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 27				0	bn	একটি স্থানীয় ফোল্ডারে (~l)				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +28				0	bn	...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +29				0	bn	এফটিপি হয়ে ওয়েব সার্ভারে (~w)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +31				0	bn	পছন্দসই বিন্যাস... (~C)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +32				0	bn	জিপ সংগ্রহশালায় (~a)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 29				0	bn	এফটিপি হয়ে ওয়েব সার্ভারে (~w)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 31				0	bn	পছন্দসই বিন্যাস... (~C)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 32				0	bn	জিপ সংগ্রহশালায় (~a)				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +33				0	bn	...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +34				0	bn	বিন্যাসনসমূহ সংরক্ষণ করুন (সুপারিশকৃত) (~S)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +35				0	bn	এইভাবে সংরক্ষণ করুন: (~a)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +36				0	bn	ওয়েব উইজার্ডটির জন্য বিন্যাসন পছন্দ করুন (~C) 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +37				0	bn	ওযেব সাইট বিষয়বস্তু				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +38				0	bn	সংযুক্ত করুন... (~A)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +39				0	bn	অপসারণ করুন (~v)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +40				0	bn	আপনার ওয়েব সাইটের সূচির জন্য বর্হিবিন্যাস পছন্দ করুন				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +41				0	bn	সূচি পৃষ্ঠার জন্য একটি শৈলী নির্বাচন করুন				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +42				0	bn	শৈলী: (~S)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +48				0	bn	বর্হিবিন্যাস: (~L)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +50				0	bn	বর্ণনা (~D)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +51				0	bn	লেখক (~A)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +52				0	bn	সৃষ্টির তারিখ (~e)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +53				0	bn	সর্বশেষ পরিবর্তন তারিখ (~L)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +54				0	bn	ফাইল নাম (~F)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +55				0	bn	ফাইল বিন্যাস (~t)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +56				0	bn	ফাইল বিন্যাস আইকন (~i)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +57				0	bn	পৃষ্ঠা সংখ্যা (~o)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +58				0	bn	আকার কিবা তে (~S)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +59				0	bn	আপনার ব্রাউজারে প্রাকদর্শন দেখতে 'প্রাকদর্শন' ক্লিক করুন:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +60				0	bn	নির্বাচিত বর্হিবিন্যাস পছন্দসই করুন				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +61				0	bn	সূচি প্রতিটি নথির জন্য নিম্নের তথ্য অন্তর্ভুক্ত করুন:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +62				0	bn	পর্দার রেসুলেশন জন্য বর্হিবিন্যাস মানানসই করুন:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +64				0	bn	৬৪০x৪৮০ (~6)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +65				0	bn	৮০০x৬০০ (~8)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +66				0	bn	১০২৪x৭৬৮ (~1)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +70				0	bn	আপনার ওয়েব সাইট তৈরি করছে				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +71				0	bn	%START - %END/%TOTAL				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +72				0	bn	আমার-ওয়েব-সাইট				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +73				0	bn	এফটিপি এর উদ্দিষ্ট '%FILENAME' একটি ফাইল।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +74				0	bn	স্থানীয় উদ্দিষ্ট '%FILENAME' একটি ফাইল।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +75				0	bn	জিপের উদ্দিষ্ট  '%FILENAME' ইতোমধ্যে বিদ্যমান। আপনি কি বিদ্যমান লক্ষটি উপরিলিখন করতে চান?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +76				0	bn	এফটিপি উদ্দিষ্ট নির্দেশিকা  '%FILENAME' খালি নয়। কিছু ফাইল উপরিলিখন হতে পারে। আপনি কি অব্যাহত রাখতে চান? 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +77				0	bn	স্থানীয় উদ্দিষ্ট নির্দেশিকা  '%FILENAME' খালি নয়। কিছু ফাইল উপরিলিখন হতে পারে। আপনি কি অব্যাহত রাখতে চান? 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +78				0	bn	বিন্যাসন প্রদত্ব নামের অধীনে ইতোমধ্যে বিদ্যমান। আপনি কি বিদ্যমান বিন্যাসনসমূহ উপরিলিখন করতে চান?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +79				0	bn	নথিসমূহ রপ্তানি করছে...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +80				0	bn	রপ্তানি প্রস্তুত করছে....				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +81				0	bn	বর্হিবিন্যাস ফাইলসমূহ অনুলিপি করছে...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +82				0	bn	সূচির উৎপাদন প্রস্তুত করছে...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +83				0	bn	সূচি তৈরি করছে...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +84				0	bn	প্রাথমিকীকরণ করছে...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +86				0	bn	প্রকাশ করতে প্রস্তুত করছে				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +87				0	bn	স্থানীয় নির্দেশিকায় প্রকাশ করছে...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +88				0	bn	এফটিপি গন্তব্যে প্রকাশ করছে				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +89				0	bn	জিপ সংগ্রহশালায় প্রকাশ করছে...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 34				0	bn	বিন্যাসনসমূহ সংরক্ষণ করুন (সুপারিশকৃত) (~S)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 35				0	bn	এইভাবে সংরক্ষণ করুন: (~a)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 36				0	bn	ওয়েব উইজার্ডটির জন্য বিন্যাসন পছন্দ করুন (~C) 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 37				0	bn	ওযেব সাইট বিষয়বস্তু				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 38				0	bn	সংযুক্ত করুন... (~A)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 39				0	bn	অপসারণ করুন (~v)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 40				0	bn	আপনার ওয়েব সাইটের সূচির জন্য বর্হিবিন্যাস পছন্দ করুন				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 41				0	bn	সূচি পৃষ্ঠার জন্য একটি শৈলী নির্বাচন করুন				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 42				0	bn	শৈলী: (~S)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 48				0	bn	বর্হিবিন্যাস: (~L)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 50				0	bn	বর্ণনা (~D)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 51				0	bn	লেখক (~A)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 52				0	bn	সৃষ্টির তারিখ (~e)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 53				0	bn	সর্বশেষ পরিবর্তন তারিখ (~L)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 54				0	bn	ফাইল নাম (~F)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 55				0	bn	ফাইল বিন্যাস (~t)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 56				0	bn	ফাইল বিন্যাস আইকন (~i)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 57				0	bn	পৃষ্ঠা সংখ্যা (~o)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 58				0	bn	আকার কিবা তে (~S)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 59				0	bn	আপনার ব্রাউজারে প্রাকদর্শন দেখতে 'প্রাকদর্শন' ক্লিক করুন:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 60				0	bn	নির্বাচিত বর্হিবিন্যাস পছন্দসই করুন				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 61				0	bn	সূচি প্রতিটি নথির জন্য নিম্নের তথ্য অন্তর্ভুক্ত করুন:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 62				0	bn	পর্দার রেসুলেশন জন্য বর্হিবিন্যাস মানানসই করুন:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 64				0	bn	৬৪০x৪৮০ (~6)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 65				0	bn	৮০০x৬০০ (~8)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 66				0	bn	১০২৪x৭৬৮ (~1)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 70				0	bn	আপনার ওয়েব সাইট তৈরি করছে				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 71				0	bn	%START - %END/%TOTAL				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 72				0	bn	আমার-ওয়েব-সাইট				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 73				0	bn	এফটিপি এর উদ্দিষ্ট '%FILENAME' একটি ফাইল।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 74				0	bn	স্থানীয় উদ্দিষ্ট '%FILENAME' একটি ফাইল।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 75				0	bn	জিপের উদ্দিষ্ট  '%FILENAME' ইতোমধ্যে বিদ্যমান। আপনি কি বিদ্যমান লক্ষটি উপরিলিখন করতে চান?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 76				0	bn	এফটিপি উদ্দিষ্ট নির্দেশিকা  '%FILENAME' খালি নয়। কিছু ফাইল উপরিলিখন হতে পারে। আপনি কি অব্যাহত রাখতে চান? 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 77				0	bn	স্থানীয় উদ্দিষ্ট নির্দেশিকা  '%FILENAME' খালি নয়। কিছু ফাইল উপরিলিখন হতে পারে। আপনি কি অব্যাহত রাখতে চান? 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 78				0	bn	বিন্যাসন প্রদত্ব নামের অধীনে ইতোমধ্যে বিদ্যমান। আপনি কি বিদ্যমান বিন্যাসনসমূহ উপরিলিখন করতে চান?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 79				0	bn	নথিসমূহ রপ্তানি করছে...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 80				0	bn	রপ্তানি প্রস্তুত করছে....				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 81				0	bn	বর্হিবিন্যাস ফাইলসমূহ অনুলিপি করছে...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 82				0	bn	সূচির উৎপাদন প্রস্তুত করছে...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 83				0	bn	সূচি তৈরি করছে...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 84				0	bn	প্রাথমিকীকরণ করছে...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 86				0	bn	প্রকাশ করতে প্রস্তুত করছে				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 87				0	bn	স্থানীয় নির্দেশিকায় প্রকাশ করছে...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 88				0	bn	এফটিপি গন্তব্যে প্রকাশ করছে				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 89				0	bn	জিপ সংগ্রহশালায় প্রকাশ করছে...				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 90				0	bn	শেষ করছে...				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 94				0	bn	নকশা ফাইল				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 95				0	bn	সকল ফাইল				2002-02-02 02:02:02
@@ -4722,97 +4722,97 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 98		
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 99				0	bn	প্রেক্ষাপট চিত্র পছন্দ করুন:				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 100				0	bn	আইকনের সমষ্টি				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 101				0	bn	একটি আইকন সমষ্টি পছন্দ করুন:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +102				0	bn	অন্যান্য...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +103				0	bn	একটিও না				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +104				0	bn	আপনার ওয়েব সাইট সফলভাবে তৈরি হয়েছে: %FILENAME				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +105				0	bn	ওয়েব সাইট প্রস্তুত করার সময় এক বা একাধিক ত্রুটি দেখা দিয়েছে।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +106				0	bn	সূচির পৃষ্ঠাসমূহ প্রস্তুত করার সময় একটি ত্রুটি দেখা দিয়েছে।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +107				0	bn	বর্হিবিন্যাস ফাইলসমূহ অনুলিপি করার সময় একটি ত্রুটি দেখা দিয়েছে।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +108				0	bn	'%FILENAME' এর জন্য নথির তথ্য সংগ্রহ করার সময় একটি ত্রুটি দেখা দিয়েছে।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +109				0	bn	নথি '%FILENAME' রপ্তানি করার সময় একটি ত্রুটি দেখা দিয়েছে।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +110				0	bn	'%FILENAME' রপ্তানি করার জন্য নির্দেশিকা তৈরি করার সময় একটি ত্রুটি দেখা দিয়েছে।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +112				0	bn	নথি '%FILENAME' রপ্তানি করার সময় একটি ইনপুট/আউটপুট ত্রুটি দেখা দিয়েছে।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +113				0	bn	অস্থায়ী নির্দেশিকায় মিডিয়া ফাইলসমূহ অনুলিপি করার সময় একটি ত্রুটি দেখা দিয়েছে।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +114				0	bn	ওয়েব সাইট নিম্নের গন্তব্যে অনুলিপি করা যায়নি: %URL				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +115				0	bn	একটি অপ্রত্যাশিত ত্রুটি ঘটেছে: %ERROR				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +116				0	bn	ফাইলটির বৈধতা যাচাই করার সময় একটি অপ্রত্যাশিত ত্রুটি ঘটেছে:  '%FILENAME'				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +117				0	bn	 '%FILENAME' হলো ফোল্ডার।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +118				0	bn	ওয়েব উইজার্ড বিন্যাসনসমূহ লোড করছে...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +119				0	bn	একটি অপ্রত্যাশিত ত্রুটি ঘটেছে।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +120				0	bn	নথিসমূহ যাচাই করছে...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +121				0	bn	আমার সংগ্রহশালা				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +122				0	bn	সূচনা				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +123				0	bn	নথিসমূহ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +124				0	bn	প্রধান বর্হিবিন্যাস				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +125				0	bn	বর্হিবিন্যাস বর্ণনা				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +126				0	bn	শৈলী				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +127				0	bn	ওয়েআ সাইট তথ্য				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +128				0	bn	প্রাকদর্শন				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +130				0	bn	নির্বাচিত বিন্যাসন মুছে যাবে।\n\nআপনি কি এইসব বিন্যাসন মুছে ফেলতে চান?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +131				0	bn	%NUMBER পৃষ্ঠা				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +132				0	bn	%NUMBER গুলো স্লাইড				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +133				0	bn	তৈরি: %DATE				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +134				0	bn	সর্বশেষ পরিবর্তিত: %DATE				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +135				0	bn	ওয়েব উইজার্ড বিন্যাসনসমূহ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +136				0	bn	প্রেক্ষাপট চিত্র:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +137				0	bn	আইকন সমষ্টি:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +138				0	bn	আইকন সমষ্টি এইচটিএমএল বিন্যাসে উপস্থাপনার জন্য ব্যবহৃত হয়।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +139				0	bn	এইচটিএমএল মেটাডাটা				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 102				0	bn	অন্যান্য...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 103				0	bn	একটিও না				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 104				0	bn	আপনার ওয়েব সাইট সফলভাবে তৈরি হয়েছে: %FILENAME				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 105				0	bn	ওয়েব সাইট প্রস্তুত করার সময় এক বা একাধিক ত্রুটি দেখা দিয়েছে।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 106				0	bn	সূচির পৃষ্ঠাসমূহ প্রস্তুত করার সময় একটি ত্রুটি দেখা দিয়েছে।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 107				0	bn	বর্হিবিন্যাস ফাইলসমূহ অনুলিপি করার সময় একটি ত্রুটি দেখা দিয়েছে।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 108				0	bn	'%FILENAME' এর জন্য নথির তথ্য সংগ্রহ করার সময় একটি ত্রুটি দেখা দিয়েছে।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 109				0	bn	নথি '%FILENAME' রপ্তানি করার সময় একটি ত্রুটি দেখা দিয়েছে।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 110				0	bn	'%FILENAME' রপ্তানি করার জন্য নির্দেশিকা তৈরি করার সময় একটি ত্রুটি দেখা দিয়েছে।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 112				0	bn	নথি '%FILENAME' রপ্তানি করার সময় একটি ইনপুট/আউটপুট ত্রুটি দেখা দিয়েছে।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 113				0	bn	অস্থায়ী নির্দেশিকায় মিডিয়া ফাইলসমূহ অনুলিপি করার সময় একটি ত্রুটি দেখা দিয়েছে।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 114				0	bn	ওয়েব সাইট নিম্নের গন্তব্যে অনুলিপি করা যায়নি: %URL				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 115				0	bn	একটি অপ্রত্যাশিত ত্রুটি ঘটেছে: %ERROR				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 116				0	bn	ফাইলটির বৈধতা যাচাই করার সময় একটি অপ্রত্যাশিত ত্রুটি ঘটেছে:  '%FILENAME'				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 117				0	bn	 '%FILENAME' হলো ফোল্ডার।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 118				0	bn	ওয়েব উইজার্ড বিন্যাসনসমূহ লোড করছে...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 119				0	bn	একটি অপ্রত্যাশিত ত্রুটি ঘটেছে।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 120				0	bn	নথিসমূহ যাচাই করছে...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 121				0	bn	আমার সংগ্রহশালা				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 122				0	bn	সূচনা				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 123				0	bn	নথিসমূহ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 124				0	bn	প্রধান বর্হিবিন্যাস				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 125				0	bn	বর্হিবিন্যাস বর্ণনা				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 126				0	bn	শৈলী				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 127				0	bn	ওয়েআ সাইট তথ্য				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 128				0	bn	প্রাকদর্শন				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 130				0	bn	নির্বাচিত বিন্যাসন মুছে যাবে।\n\nআপনি কি এইসব বিন্যাসন মুছে ফেলতে চান?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 131				0	bn	%NUMBER পৃষ্ঠা				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 132				0	bn	%NUMBER গুলো স্লাইড				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 133				0	bn	তৈরি: %DATE				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 134				0	bn	সর্বশেষ পরিবর্তিত: %DATE				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 135				0	bn	ওয়েব উইজার্ড বিন্যাসনসমূহ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 136				0	bn	প্রেক্ষাপট চিত্র:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 137				0	bn	আইকন সমষ্টি:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 138				0	bn	আইকন সমষ্টি এইচটিএমএল বিন্যাসে উপস্থাপনার জন্য ব্যবহৃত হয়।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 139				0	bn	এইচটিএমএল মেটাডাটা				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +140				0	bn	পছন্দ...				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +141				0	bn	পছন্দ...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +142				0	bn	<পূর্বনির্ধারিত>				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +143				0	bn	এফটিপি প্রক্সির মাধ্যমে প্রকাশ করা সমর্থিত নয়।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +144				0	bn	<কোনো প্রেক্ষাপট চিত্র নাই>				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +145				0	bn	<কোনো আইকন সমষ্টি নাই>				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +146				0	bn	'%FILENAME' এর এফটিপি নির্দেশিকা তৈরি করা যায়নি।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 142				0	bn	<পূর্বনির্ধারিত>				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 143				0	bn	এফটিপি প্রক্সির মাধ্যমে প্রকাশ করা সমর্থিত নয়।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 144				0	bn	<কোনো প্রেক্ষাপট চিত্র নাই>				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 145				0	bn	<কোনো আইকন সমষ্টি নাই>				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 146				0	bn	'%FILENAME' এর এফটিপি নির্দেশিকা তৈরি করা যায়নি।				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +147				0	bn	 '%FILENAME' এর এফটিপি নির্দেশিকা বিদ্যমান নয।\nনির্দেশিকাটি কি এখন তৈরি করবেন?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +148				0	bn	'%FILENAME' জিপ ফাইলটি তৈরি করা যায়নি: একই নামের একটি নির্দেশিকা ইতোমধ্যে বিদ্যমান।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 148				0	bn	'%FILENAME' জিপ ফাইলটি তৈরি করা যায়নি: একই নামের একটি নির্দেশিকা ইতোমধ্যে বিদ্যমান।				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +149				0	bn	'%FILENAME' এর স্থানীয় নির্দেশিকা তৈরি করা যায়নি।\nঅনুগ্রহ করে আপনার লিখন-অধিকার যাচাই করুন।				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +150				0	bn	 '%FILENAME' এর স্থানীয় নির্দেশিকা বিদ্যমান নয।\nনির্দেশিকাটি কি এখন তৈরি করবেন?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +151				0	bn	আকার: %NUMBERKB				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +152				0	bn	ফাইল খুঁজে পাওয়া যায়নি। আপনি কি একটি নতুন ফাইল অবস্থান সুনির্দিষ্ট করতে আগ্রহী?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +0				0	bn	এফটিপি সংযোগ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +1				0	bn	ব্যবহারকারীর নাম: (~U)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +2				0	bn	গুপ্তসংকেত: (~P)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +3				0	bn	সংযোগ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +4				0	bn	১। এফটিপি সংযোগ তথ্য প্রবেশ করান।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +5				0	bn	সার্ভার নাম বা আইপি ঠিকানা: (~S)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +6				0	bn	২। সার্ভারের সাথে সংযোগ দিন।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +7				0	bn	৩। একটি দূরবর্তী নির্দেশিকা পছন্দ করুন (ঐচ্ছিক)। (~C)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 151				0	bn	আকার: %NUMBERKB				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 152				0	bn	ফাইল খুঁজে পাওয়া যায়নি। আপনি কি একটি নতুন ফাইল অবস্থান সুনির্দিষ্ট করতে আগ্রহী?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 0				0	bn	এফটিপি সংযোগ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 1				0	bn	ব্যবহারকারীর নাম: (~U)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 2				0	bn	গুপ্তসংকেত: (~P)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 3				0	bn	সংযোগ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 4				0	bn	১। এফটিপি সংযোগ তথ্য প্রবেশ করান।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 5				0	bn	সার্ভার নাম বা আইপি ঠিকানা: (~S)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 6				0	bn	২। সার্ভারের সাথে সংযোগ দিন।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 7				0	bn	৩। একটি দূরবর্তী নির্দেশিকা পছন্দ করুন (ঐচ্ছিক)। (~C)				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +8				0	bn	...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +9				0	bn	সংযোগ অবস্থা অজানা				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +10				0	bn	সংযোগ সফলভাবে প্রতিষ্ঠিত				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +11				0	bn	ব্যবহারকারীর নাম বা গুপ্ত-সংকেত ভূল				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +12				0	bn	সার্ভার নাম সমাধান করা যায়নি				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +13				0	bn	আপনার পর্যাপ্ত ব্যবহারকারী অধিকার নাই				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +14				0	bn	সার্ভারের সাথে সংযোগ করতে পারে না				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +15				0	bn	অপ্রত্যাশিত ত্রুটি				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +16				0	bn	এফটিপি প্রকাশকরণ নির্দেশিকা				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +17				0	bn	এটা এফটিপি ফোল্ডার নয়				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +18				0	bn	সংযোগ করছে...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +1				0	bn	অলোচ্যসূচি উইজার্ড				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +2				0	bn	এই অলোচ্যসূচি খসড়ায় হস্তচালিত পরিবর্তন করুন (~m)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 9				0	bn	সংযোগ অবস্থা অজানা				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 10				0	bn	সংযোগ সফলভাবে প্রতিষ্ঠিত				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 11				0	bn	ব্যবহারকারীর নাম বা গুপ্ত-সংকেত ভূল				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 12				0	bn	সার্ভার নাম সমাধান করা যায়নি				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 13				0	bn	আপনার পর্যাপ্ত ব্যবহারকারী অধিকার নাই				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 14				0	bn	সার্ভারের সাথে সংযোগ করতে পারে না				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 15				0	bn	অপ্রত্যাশিত ত্রুটি				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 16				0	bn	এফটিপি প্রকাশকরণ নির্দেশিকা				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 17				0	bn	এটা এফটিপি ফোল্ডার নয়				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 18				0	bn	সংযোগ করছে...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 1				0	bn	অলোচ্যসূচি উইজার্ড				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 2				0	bn	এই অলোচ্যসূচি খসড়ায় হস্তচালিত পরিবর্তন করুন (~m)				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +3				0	bn	খসড়া নাম:				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 4				0	bn	অবস্থান ও ফাইল নাম:				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +5				0	bn	আপনি পরবর্তিতে কি করতে চান?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +6				0	bn	অনুগ্রহ করে অলোচ্যসূচির জন্য পৃষ্ঠা নকশা পছন্দ করুন				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +7				0	bn	আপনি আপনার অলোচ্যসূচির খসড়ায় যে শিরোনাম অন্তর্ভুক্ত করতে চান তা অনুগ্রহ করে নির্বাচন করুন				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +8				0	bn	অনুগ্রহ করে ঘটনার জন্য সাধারণ তথ্য প্রবেশ করান				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +9				0	bn	অনুগ্রহ করে অলোচ্যসূচির জন্য বিষয়োপকরণ সুনির্দিষ্ট করুন 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +10				0	bn	আপনি আপনার অলোচ্যসূচির খসড়ায় যে নামসমূহ অন্তর্ভুক্ত করতে চান তা অনুগ্রহ করে নির্বাচন করুন				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 6				0	bn	অনুগ্রহ করে অলোচ্যসূচির জন্য পৃষ্ঠা নকশা পছন্দ করুন				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 7				0	bn	আপনি আপনার অলোচ্যসূচির খসড়ায় যে শিরোনাম অন্তর্ভুক্ত করতে চান তা অনুগ্রহ করে নির্বাচন করুন				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 8				0	bn	অনুগ্রহ করে ঘটনার জন্য সাধারণ তথ্য প্রবেশ করান				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 9				0	bn	অনুগ্রহ করে অলোচ্যসূচির জন্য বিষয়োপকরণ সুনির্দিষ্ট করুন 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 10				0	bn	আপনি আপনার অলোচ্যসূচির খসড়ায় যে নামসমূহ অন্তর্ভুক্ত করতে চান তা অনুগ্রহ করে নির্বাচন করুন				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +11				0	bn	একটি নাম পছন্দ করুন এবং খসড়াটি সংরক্ষণ করুন				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +12				0	bn	মিনিট রেকর্ড করার জন্য ফর্ম অন্তর্ভুক্ত করুন				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +13				0	bn	এই উইজার্ডটি আপনাকে একটি অলোচ্যসূচির খসড়া তৈরি করতে সহায়তা করে। খসড়াটি অতঃপর প্রয়োজনানুযায়ী একটি অলোচ্যসূচি তৈরি করতে ব্যবহৃত হতে পারে।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +14				0	bn	সময়:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 12				0	bn	মিনিট রেকর্ড করার জন্য ফর্ম অন্তর্ভুক্ত করুন				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 13				0	bn	এই উইজার্ডটি আপনাকে একটি অলোচ্যসূচির খসড়া তৈরি করতে সহায়তা করে। খসড়াটি অতঃপর প্রয়োজনানুযায়ী একটি অলোচ্যসূচি তৈরি করতে ব্যবহৃত হতে পারে।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 14				0	bn	সময়:				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +15				0	bn	নাম:				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 16				0	bn	অবস্থান:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +17				0	bn	স্থানধারক ফাঁকা ক্ষেত্রে ব্যবহৃত হবে। আপনি পাঠ পত্র দ্বারা স্থানধারক প্রতিস্থাপন করতে পারেন।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 17				0	bn	স্থানধারক ফাঁকা ক্ষেত্রে ব্যবহৃত হবে। আপনি পাঠ পত্র দ্বারা স্থানধারক প্রতিস্থাপন করতে পারেন।				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +18				0	bn	...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +19				0	bn	এই খসড়া হতে একটি অলোচ্যসূচি তৈরি করুন (~a)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +20				0	bn	খসড়ার বাইরে একটি নতুন অলোচ্যসূচি তৈরি করতে, আপনি খসড়াটি যেখানে সংরক্ষণ করেছেন সেখানে যান এবং ফাইলটিতে দুইবার ক্লিক করুন।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +21				0	bn	অলোচ্যসূচির বিষয়োপকরণ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +22				0	bn	দ্বায়িত্ববান				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +23				0	bn	স্থায়িত্বকাল				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 19				0	bn	এই খসড়া হতে একটি অলোচ্যসূচি তৈরি করুন (~a)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 20				0	bn	খসড়ার বাইরে একটি নতুন অলোচ্যসূচি তৈরি করতে, আপনি খসড়াটি যেখানে সংরক্ষণ করেছেন সেখানে যান এবং ফাইলটিতে দুইবার ক্লিক করুন।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 21				0	bn	অলোচ্যসূচির বিষয়োপকরণ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 22				0	bn	দ্বায়িত্ববান				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 23				0	bn	স্থায়িত্বকাল				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +24				0	bn	সভা আহবায়ক				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +25				0	bn	সভাপতি				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +26				0	bn	মিনিট গণনায়ক				2002-02-02 02:02:02
@@ -4820,30 +4820,30 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +27
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +28				0	bn	অংশগ্রহণকারী				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +29				0	bn	পর্যবেক্ষক				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +30				0	bn	সুযোগ প্রদানকারী কর্মচারী				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +31				0	bn	অলোচ্যসূচি খসড়া নির্বাচিত ব্যাক্তির নামের জন্য স্থানধারক অন্তর্ভুক্ত করে। যখন খসড়া হতে অলোচ্যসূচি তৈরি করে, আপনি এইসব স্থানধারক যথাযথ নামসমূহ দ্বারা প্রতিস্থাপন করতে পারেন।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 31				0	bn	অলোচ্যসূচি খসড়া নির্বাচিত ব্যাক্তির নামের জন্য স্থানধারক অন্তর্ভুক্ত করে। যখন খসড়া হতে অলোচ্যসূচি তৈরি করে, আপনি এইসব স্থানধারক যথাযথ নামসমূহ দ্বারা প্রতিস্থাপন করতে পারেন।				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +32				0	bn	সভার ধরন				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +33				0	bn	অনুগ্রহ করে পড়ুন				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +34				0	bn	অনুগ্রহ করে আনুন				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +35				0	bn	নোটসমূহ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +36				0	bn	অলোচ্যসূচির খসড়া নির্বাচিত বিষয়োপকরণের জন্য স্থানধারকের অন্তর্ভুক্ত করে।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 36				0	bn	অলোচ্যসূচির খসড়া নির্বাচিত বিষয়োপকরণের জন্য স্থানধারকের অন্তর্ভুক্ত করে।				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +38				0	bn	তারিখ:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +39				0	bn	এই উইজার্ডটি এমন অলোচ্যসূচির খসড়া তৈরি করে যা আপনাকে একই বর্হিবিন্যাস ও বিন্যাসন দ্বারা বহুবিধ অলোচ্যসূচি তৈরি করতে সক্রিয় করে।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +40				0	bn	পৃষ্ঠা নকশা:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +41				0	bn	myAgendaTemplate.stw				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +42				0	bn	আমার অলোচ্যসূচি খসড়া				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +43				0	bn	অলোচ্যসূচির খসড়া সংরক্ষণ করার সময় একটি অপ্রত্যাশিত ত্রুটি ঘটেছে।				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +44				0	bn	নাম				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +45				0	bn	তারিখ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +46				0	bn	সময়				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 39				0	bn	এই উইজার্ডটি এমন অলোচ্যসূচির খসড়া তৈরি করে যা আপনাকে একই বর্হিবিন্যাস ও বিন্যাসন দ্বারা বহুবিধ অলোচ্যসূচি তৈরি করতে সক্রিয় করে।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 40				0	bn	পৃষ্ঠা নকশা:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 41				0	bn	myAgendaTemplate.stw				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 42				0	bn	আমার অলোচ্যসূচি খসড়া				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 43				0	bn	অলোচ্যসূচির খসড়া সংরক্ষণ করার সময় একটি অপ্রত্যাশিত ত্রুটি ঘটেছে।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 44				0	bn	নাম				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 45				0	bn	তারিখ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 46				0	bn	সময়				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 47				0	bn	অবস্থান				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +48				0	bn	এই পাঠ প্রতিস্থাপন করতে ক্লিক করুন				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 48				0	bn	এই পাঠ প্রতিস্থাপন করতে ক্লিক করুন				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +50				0	bn	পৃষ্ঠা নকশা 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +51				0	bn	সাধারণ তথ্য				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +52				0	bn	অন্তর্ভুক্তের শিরোনাম				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +53				0	bn	নামসমূহ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +54				0	bn	অলোচ্যসূচির বিষয়োপকরণসমূহ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 51				0	bn	সাধারণ তথ্য				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 52				0	bn	অন্তর্ভুক্তের শিরোনাম				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 53				0	bn	নামসমূহ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 54				0	bn	অলোচ্যসূচির বিষয়োপকরণসমূহ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +55				0	bn	নাম ও অবস্থান				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +56				0	bn	অলোচ্যসূচির খসড়া খোলার সময় একটি অপ্রত্যাশিত ত্রুটি ঘটেছে।				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 56				0	bn	অলোচ্যসূচির খসড়া খোলার সময় একটি অপ্রত্যাশিত ত্রুটি ঘটেছে।				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +57				0	bn	সভার ধরন				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +58				0	bn	অনুগ্রহ করে আনুন				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +59				0	bn	অনুগ্রহ করে পড়ুন				2002-02-02 02:02:02
@@ -4855,10 +4855,10 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +64
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +65				0	bn	সমন্বয়জ্ঞ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +66				0	bn	পর্যবেক্ষকগণ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +67				0	bn	সুবিধা প্রদায়ক কর্মচারী				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +68				0	bn	প্রবেশ করান				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +69				0	bn	অপসারণ করুন				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +70				0	bn	উপরে উঠান				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +71				0	bn	নীচে নামান				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 68				0	bn	প্রবেশ করান				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 69				0	bn	অপসারণ করুন				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 70				0	bn	উপরে উঠান				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 71				0	bn	নীচে নামান				2002-02-02 02:02:02
 wizards	source\schedule\schedule.src	0	string	dlgCalTitle				0	bn	%PRODUCTNAME বর্ষপঞ্জি				2002-02-02 02:02:02
 wizards	source\schedule\schedule.src	0	string	dlgCalTitleBack				0	bn	পিছনে				2002-02-02 02:02:02
 wizards	source\schedule\schedule.src	0	string	dlgCalTitleOwnData				0	bn	ব্যাক্তিগত তথ্য				2002-02-02 02:02:02
@@ -11094,7 +11094,7 @@ sw	source\ui\docvw\docvw.src	0	string	STR_REDLINE_FORMAT				0	bn	বিন্য
 sw	source\ui\docvw\docvw.src	0	string	STR_REDLINE_TABLE				0	bn	টেবিল পরিবর্তন করা হয়েছে				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_REDLINE_FMTCOLL				0	bn	প্রয়োগকৃত  অনুচ্ছেদ  শৈলী				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_ENDNOTE				0	bn	পাদটীকা				2002-02-02 02:02:02
-sw	source\ui\docvw\docvw.src	0	string	STR_FTNNOTE				0	bn	টীকা				2002-02-02 02:02:02
+sw	source\ui\docvw\docvw.src	0	string	STR_FOOTNOTE				0	bn	টীকা				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	infobox	MSG_READONLY_CONTENT				0	bn	শুধু পাঠযোগ্য বিষয়বস্তু পরিবর্তন করা যাবেনা।\nকোন পরিবর্তন গ্রহণ করা হবে না।				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_TABLE_COL_ADJUST				0	bn	টেবিলের কলাম বিন্যাস করুন				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_TABLE_ROW_ADJUST				0	bn	টেবিলের সারি বিন্যাস করুন				2002-02-02 02:02:02
@@ -11201,11 +11201,11 @@ sw	source\ui\ribbar\inputwin.src	0	string	STR_TBL_FORMULA				0	bn	টেক্�
 sw	source\ui\ribbar\inputwin.src	0	toolboxitem	TB_INPUT	FN_FORMULA_CALC	HID_TBX_FORMULA_CALC		0	bn	সূত্র				2002-02-02 02:02:02
 sw	source\ui\ribbar\inputwin.src	0	toolboxitem	TB_INPUT	FN_FORMULA_CANCEL	HID_TBX_FORMULA_CANCEL		0	bn	বাতিল				2002-02-02 02:02:02
 sw	source\ui\ribbar\inputwin.src	0	toolboxitem	TB_INPUT	FN_FORMULA_APPLY	HID_TBX_FORMULA_APPLY		0	bn	প্রয়োগ				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_PAGE			0	bn	পৃষ্ঠায়				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_PARAGRAPH			0	bn	অনুচ্ছেদে				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_AT_CHAR			0	bn	অক্ষর প্রতি				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_CHAR			0	bn	অক্ষর হিসাবে				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_FRAME			0	bn	কাঠামোতে				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_PAGE			0	bn	পৃষ্ঠায়				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_PARAGRAPH			0	bn	অনুচ্ছেদে				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_AT_CHAR			0	bn	অক্ষর প্রতি				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_CHAR			0	bn	অক্ষর হিসাবে				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_FRAME			0	bn	কাঠামোতে				2002-02-02 02:02:02
 sw	source\ui\wrtsh\wrtsh.src	0	string	STR_DDEERROR_APP1				0	bn	প্রযোগন [				2002-02-02 02:02:02
 sw	source\ui\wrtsh\wrtsh.src	0	string	STR_DDEERROR_APP2				0	bn	]কাজ করছে না।				2002-02-02 02:02:02
 sw	source\ui\wrtsh\wrtsh.src	0	string	STR_DDEERROR_DATA1				0	bn	তথ্য[				2002-02-02 02:02:02
@@ -11610,12 +11610,12 @@ sw	source\ui\app\mn.src	0	menuitem	MN_WRAP_DRAW.MN_WRAP	FN_FRAME_WRAPTHRU_TRANSP
 sw	source\ui\app\mn.src	0	menuitem	MN_WRAP_DRAW.MN_WRAP	FN_WRAP_ANCHOR_ONLY	CMD_FN_WRAP_ANCHOR_ONLY		0	bn	প্রথম অনুচ্ছেদ (~F)				2002-02-02 02:02:02
 sw	source\ui\app\mn.src	0	menuitem	MN_WRAP_DRAW.MN_WRAP	FN_DRAW_WRAP_DLG	CMD_FN_DRAW_WRAP_DLG		0	bn	সম্পাদনা... (~E)				2002-02-02 02:02:02
 sw	source\ui\app\mn.src	0	menuitem	MN_WRAP_DRAW	MN_WRAP			0	bn	মোড়ান (~W)				2002-02-02 02:02:02
-sw	source\ui\app\mn.src	0	menuitem	MN_AT_FRAME	FN_TOOL_ANKER_FRAME	CMD_FN_TOOL_ANKER_FRAME		0	bn	ফ্রেমে নাই (~F)				2002-02-02 02:02:02
-sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANKER	FN_TOOL_ANKER_PAGE	CMD_FN_TOOL_ANKER_PAGE		0	bn	পৃষ্টায় (~a)				2002-02-02 02:02:02
-sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANKER	FN_TOOL_ANKER_PARAGRAPH	CMD_FN_TOOL_ANKER_PARAGRAPH		0	bn	অনুচ্ছেদে (~P)				2002-02-02 02:02:02
-sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANKER	FN_TOOL_ANKER_AT_CHAR	CMD_FN_TOOL_ANKER_AT_CHAR		0	bn	বর্ণচিহ্নে (~C)				2002-02-02 02:02:02
-sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANKER	FN_TOOL_ANKER_CHAR	CMD_FN_TOOL_ANKER_CHAR		0	bn	বর্ণচিহ্ন হিসাবে (~h)				2002-02-02 02:02:02
-sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR	FN_TOOL_ANKER	CMD_FN_TOOL_ANKER		0	bn	উপস্থাপক (~c)				2002-02-02 02:02:02
+sw	source\ui\app\mn.src	0	menuitem	MN_AT_FRAME	FN_TOOL_ANCHOR_FRAME	CMD_FN_TOOL_ANCHOR_FRAME		0	bn	ফ্রেমে নাই (~F)				2002-02-02 02:02:02
+sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANCHOR	FN_TOOL_ANCHOR_PAGE	CMD_FN_TOOL_ANCHOR_PAGE		0	bn	পৃষ্টায় (~a)				2002-02-02 02:02:02
+sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANCHOR	FN_TOOL_ANCHOR_PARAGRAPH	CMD_FN_TOOL_ANCHOR_PARAGRAPH		0	bn	অনুচ্ছেদে (~P)				2002-02-02 02:02:02
+sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANCHOR	FN_TOOL_ANCHOR_AT_CHAR	CMD_FN_TOOL_ANCHOR_AT_CHAR		0	bn	বর্ণচিহ্নে (~C)				2002-02-02 02:02:02
+sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANCHOR	FN_TOOL_ANCHOR_CHAR	CMD_FN_TOOL_ANCHOR_CHAR		0	bn	বর্ণচিহ্ন হিসাবে (~h)				2002-02-02 02:02:02
+sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR	FN_TOOL_ANCHOR	CMD_FN_TOOL_ANCHOR		0	bn	উপস্থাপক (~c)				2002-02-02 02:02:02
 sw	source\ui\app\mn.src	0	string	MN_DRAWFORM_POPUPMENU				0	bn	নিয়ন্ত্রণ				2002-02-02 02:02:02
 sw	source\ui\app\mn.src	0	string	MN_DRWTXT_POPUPMENU				0	bn	অবজেক্ট পাঠ আকুন				2002-02-02 02:02:02
 sw	source\ui\app\mn.src	0	menuitem	MN_REDCOMMENT	FN_DELETE_COMMENT	CMD_FN_DELETE_COMMENT		0	bn	পরিবর্তিত নোট মুছুন (~C)				2002-02-02 02:02:02
@@ -11712,7 +11712,7 @@ sw	source\ui\app\app.src	0	string	STR_WRITER_DOCUMENT_FULLTYPE				0	bn	%PRODUCTN
 sw	source\ui\app\app.src	0	string	STR_CANTOPEN				0	bn	নথি খুলতে পারে না।				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_CANTCREATE				0	bn	নথি তৈরি করতে পারে না।				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_DLLNOTFOUND				0	bn	পরিশ্রুতক খুঁজে পাওয়া যায় নি।				2002-02-02 02:02:02
-sw	source\ui\app\app.src	0	string	STR_UNBENANNT				0	bn	শিরোনামহীন				2002-02-02 02:02:02
+sw	source\ui\app\app.src	0	string	STR_UNTITLED				0	bn	শিরোনামহীন				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_LOAD_GLOBAL_DOC				0	bn	মূল নথির নাম ও পথ। 				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_LOAD_HTML_DOC				0	bn	HTML নথির নাম ও পথ				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	infobox	MSG_ERROR_SEND_MAIL				0	bn	মেইল পাঠাতে ত্রুটি।				2002-02-02 02:02:02

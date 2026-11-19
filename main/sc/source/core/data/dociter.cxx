@@ -682,6 +682,39 @@ bool ScDBQueryDataIterator::DataAccessInternal::getNext(Value& rValue)
     return getCurrent(rValue);
 }
 
+SCSIZE ScDBQueryDataIterator::DataAccessInternal::countRecords()
+{
+    // A record can match with an empty cell in a query column ("=", "<>5"),
+    // getCurrent() only visits rows that have a cell in column nCol.
+    ScQueryParam aParam(*mpParam);
+    SCROW nFirstRow = mpParam->bHasHeader ? mpParam->nRow1 + 1 : mpParam->nRow1;
+    SCROW nLastRow = mpParam->nRow2;
+    if (nFirstRow > nLastRow)
+        return 0;
+    // A row without any content in the database columns is not a record.
+    ::std::vector<bool> aHasContent(nLastRow - nFirstRow + 1, false);
+    for (SCCOL nC = mpParam->nCol1; nC <= mpParam->nCol2; ++nC)
+    {
+        SCSIZE nCellCount = mpDoc->GetCellCount(nTab, nC);
+        for (SCSIZE i = ScDBQueryDataIterator::SearchColEntryIndex(*mpDoc, nTab, nFirstRow, nC); i < nCellCount; ++i)
+        {
+            SCROW nThisRow = ScDBQueryDataIterator::GetRowByColEntryIndex(*mpDoc, nTab, nC, i);
+            if (nThisRow > nLastRow)
+                break;
+            ScBaseCell* pCell = ScDBQueryDataIterator::GetCellByColEntryIndex(*mpDoc, nTab, nC, i);
+            if (nThisRow >= nFirstRow && pCell && pCell->GetCellType() != CELLTYPE_NOTE)
+                aHasContent[nThisRow - nFirstRow] = true;
+        }
+    }
+    SCSIZE nCount = 0;
+    for (SCROW nR = nFirstRow; nR <= nLastRow; ++nR)
+    {
+        if (aHasContent[nR - nFirstRow] && ScDBQueryDataIterator::IsQueryValid(*mpDoc, aParam, nTab, nR, NULL))
+            ++nCount;
+    }
+    return nCount;
+}
+
 // ----------------------------------------------------------------------------
 
 ScDBQueryDataIterator::DataAccessMatrix::DataAccessMatrix(const ScDBQueryDataIterator* pParent, ScDBQueryParamMatrix* pParam) :
@@ -735,6 +768,21 @@ bool ScDBQueryDataIterator::DataAccessMatrix::getNext(Value& rValue)
 {
     ++mnCurRow;
     return getCurrent(rValue);
+}
+
+SCSIZE ScDBQueryDataIterator::DataAccessMatrix::countRecords()
+{
+    const ScMatrix& rMat = *mpParam->mpMatrix;
+    SCSIZE nCount = 0;
+    for (SCROW nR = mpParam->bHasHeader ? 1 : 0; nR < mnRows; ++nR)
+    {
+        bool bHasContent = false;
+        for (SCCOL nC = 0; nC < mnCols && !bHasContent; ++nC)
+            bHasContent = !rMat.IsEmpty(nC, nR);
+        if (bHasContent && isValidQuery(nR, rMat))
+            ++nCount;
+    }
+    return nCount;
 }
 
 namespace {
@@ -956,6 +1004,11 @@ bool ScDBQueryDataIterator::GetFirst(Value& rValue)
 bool ScDBQueryDataIterator::GetNext(Value& rValue)
 {
     return mpData->getNext(rValue);
+}
+
+SCSIZE ScDBQueryDataIterator::CountRecords()
+{
+    return mpData->countRecords();
 }
 
 // ============================================================================

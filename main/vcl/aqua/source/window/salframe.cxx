@@ -25,6 +25,7 @@
 #include "precompiled_vcl.hxx"
 
 #include <string>
+#include <cstdlib>
 
 #include "rtl/ustrbuf.hxx"
 
@@ -85,6 +86,7 @@ AquaSalFrame::AquaSalFrame( SalFrame* pParent, sal_uLong salFrameStyle ) :
     mnExtStyle( 0 ),
     mePointerStyle( POINTER_ARROW ),
     mnTrackingRectTag( 0 ),
+    mfBackingScale( 1.0f ),
     mrClippingPath( 0 ),
     mnICOptions( 0 )
 {
@@ -208,6 +210,7 @@ void AquaSalFrame::initWindowAndView()
         [mpNSWindow setAcceptsMouseMovedEvents: YES];
     [mpNSWindow setHasShadow: YES];
     [mpNSWindow setDelegate: static_cast<id<NSWindowDelegate> >(mpNSWindow)];
+    UpdateBackingScale();
 
     const NSRect aRect = { NSZeroPoint, NSMakeSize( maGeometry.nWidth, maGeometry.nHeight )};
     mnTrackingRectTag = [mpNSView addTrackingRect: aRect owner: mpNSView userData: nil assumeInside: NO];
@@ -251,6 +254,34 @@ void AquaSalFrame::VCLToCocoa( NSPoint& io_rPoint, bool bRelativeToScreen )
         io_rPoint.y = maScreenRect.size.height - io_rPoint.y;
     else
         io_rPoint.y = maGeometry.nHeight - io_rPoint.y;
+}
+
+// -----------------------------------------------------------------------
+
+// SAL_AQUA_BACKING_SCALE=1 on a Retina screen (or =2 on a 1x one) tests the other scale
+// whole numbers only: CGLayer rounds a fractional pixel size up
+static float getBackingScaleOverride()
+{
+    const char* pEnvStr = getenv( "SAL_AQUA_BACKING_SCALE" );
+    if( !pEnvStr )
+        return 0;
+    char* pEnd = NULL;
+    const long nValue = strtol( pEnvStr, &pEnd, 10 );
+    if( pEnd == pEnvStr || *pEnd || nValue < 1 || nValue > 4 )
+        return 0;
+    return static_cast<float>(nValue);
+}
+
+bool AquaSalFrame::UpdateBackingScale()
+{
+    static const float fOverride = getBackingScaleOverride();
+    float fScale = mpNSWindow ? [mpNSWindow backingScaleFactor] : 1.0f;
+    if( fOverride > 0 )
+        fScale = fOverride;
+    if( fScale == mfBackingScale )
+        return false;
+    mfBackingScale = fScale;
+    return true;
 }
 
 // -----------------------------------------------------------------------
@@ -447,6 +478,10 @@ void AquaSalFrame::Show(sal_Bool bVisible, sal_Bool bNoActivate)
             [mpNSWindow orderFront: NSApp];
         else
             [mpNSWindow makeKeyAndOrderFront: NSApp];
+
+        // a window first shown on another screen need not report a backing change
+        if( UpdateBackingScale() )
+            SendPaintEvent();
 
         if( mpParent )
         {

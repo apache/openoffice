@@ -39,7 +39,6 @@
 #include <rtl/ustrbuf.hxx>
 #include <cppuhelper/factory.hxx>
 #include <vector>
-#include <hash_map>
 #include <unordered_map>
 #include <string>
 
@@ -112,7 +111,7 @@ struct ScSolverCellEqual
     }
 };
 
-typedef std::hash_map< table::CellAddress, std::vector<double>, ScSolverCellHash, ScSolverCellEqual > ScSolverCellHashMap;
+typedef std::unordered_map< table::CellAddress, std::vector<double>, ScSolverCellHash, ScSolverCellEqual > ScSolverCellHashMap;
 
 // -----------------------------------------------------------------------
 

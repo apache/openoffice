@@ -17989,7 +17989,7 @@ sw	source\ui\app\app.src	0	string	STR_STATSTR_TOX_UPDATE				1	sd	فهرست ۾ �
 sw	source\ui\app\app.src	0	string	STR_STATSTR_W4WREAD				1	sd	دستاويز جي آمد ڪرڻ۔۔۔				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_STATSTR_W4WWRITE				1	sd	دستاويز جي روانگي۔۔۔				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_TABLE_DEFNAME				1	sd	تختي				2002-02-02 02:02:02
-sw	source\ui\app\app.src	0	string	STR_UNBENANNT				1	sd	بنا عنوان وارو 				2002-02-02 02:02:02
+sw	source\ui\app\app.src	0	string	STR_UNTITLED				1	sd	بنا عنوان وارو 				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_WESTERN_FONT				1	sd	مغربي متن: 				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_WRITER_DOCUMENT_FULLTYPE				1	sd	%PRODUCTNAME %PRODUCTVERSION  متن جو دستاويز				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	warningbox	MSG_DATA_SOURCES_UNAVAILABLE		HID_DATA_SOURCES_UNAVAILABLE		202	sd	اڃا تائين سامگريءَ جو مول سيٽ اپ نہ ٿيو آهي۔ کيتر لاءِ سامگري موڪلڻ لاءِ (مثال طور نالا ۽ ايڊريسون) توهان کي سامگري مول جئن آڌار سامگريءَ جي ضرورت آهي۔				2002-02-02 02:02:02
@@ -18901,7 +18901,7 @@ sw	source\ui\docvw\docvw.src	0	string	STR_CHAIN_SOURCE_CHAINED				0	sd	مول ف
 sw	source\ui\docvw\docvw.src	0	string	STR_CHAIN_WRONG_AREA				0	sd	ڪڙيءَ لاءِ مقصد جو فريم نامنظور کيتر ۾ آهي 				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_ENDNOTE				0	sd	آخري ٽپڻي 				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_EXPORT_GRAFIK_TITLE				0	sd	اکري چٽن جي روانگي				2002-02-02 02:02:02
-sw	source\ui\docvw\docvw.src	0	string	STR_FTNNOTE				0	sd	صفحي هيٺان ٽپڻي 				2002-02-02 02:02:02
+sw	source\ui\docvw\docvw.src	0	string	STR_FOOTNOTE				0	sd	صفحي هيٺان ٽپڻي 				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_REDLINE_DELETE				0	sd	خارج ڪيل 				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_REDLINE_FMTCOLL				0	sd	لاڳو ڪيل فقري جا نمونا 				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_REDLINE_FORMAT				0	sd	رچيل 				2002-02-02 02:02:02
@@ -20008,11 +20008,11 @@ sw	source\ui\ribbar\inputwin.src	0	toolboxitem	TB_INPUT	FN_FORMULA_APPLY	FN_FORM
 sw	source\ui\ribbar\inputwin.src	0	toolboxitem	TB_INPUT	FN_FORMULA_CALC	FN_FORMULA_CALC		500	sd	نسخو				2002-02-02 02:02:02
 sw	source\ui\ribbar\inputwin.src	0	toolboxitem	TB_INPUT	FN_FORMULA_CANCEL	FN_FORMULA_CANCEL		500	sd	رد ڪريو 				2002-02-02 02:02:02
 sw	source\ui\ribbar\tblctrl.src	0	floatingwindow	RID_TBL_OPT_CTRL		HID_TBL_OPT_CTRL		0	sd	جوڳو بڻايو 				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_AT_CHAR			0	sd	اکر ۾ 				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_CHAR			0	sd	اکر جيان 				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_FRAME			0	sd	فريم 				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_PAGE			0	sd	صفحو 				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_PARAGRAPH			0	sd	فقرو				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_AT_CHAR			0	sd	اکر ۾ 				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_CHAR			0	sd	اکر جيان 				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_FRAME			0	sd	فريم 				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_PAGE			0	sd	صفحو 				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_PARAGRAPH			0	sd	فقرو				2002-02-02 02:02:02
 sw	source\ui\ribbar\workctrl.src	0	floatingwindow	RID_INSERT_CTRL		HID_INSERT_CTRL		0	sd	داخل ڪريو 				2002-02-02 02:02:02
 sw	source\ui\ribbar\workctrl.src	0	floatingwindow	RID_INSERT_OBJ_CTRL		HID_INSERT_OBJ_CTRL		0	sd	شئہ داخل ڪريو 				2002-02-02 02:02:02
 sw	source\ui\ribbar\workctrl.src	0	floatingwindow	RID_SCROLL_NAVIGATION_WIN		HID_INSERT_CTRL		0	sd	راهہ ڏيکارڻ 				2002-02-02 02:02:02
@@ -21091,21 +21091,21 @@ wizards	source\euro\euro.src	0	string	STEP_ZERO + 8				0	sd	بند ڪريو 				
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 16				1	sd	آسٿان				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 4				1	sd	آسٿان ۽ فائل جو نالو 				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 47				1	sd	آسٿان 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +1				1	sd	ايجنڊا ايجنڊا وِزارڊ 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +10				1	sd	مهرباني ڪري اُهي نالا چونڊيو جيڪي توهين پنہنجي ايجنڊا جي خاڪي ۾ شامل ڪرڻ چاهيو ٿا۔ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 1				1	sd	ايجنڊا ايجنڊا وِزارڊ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 10				1	sd	مهرباني ڪري اُهي نالا چونڊيو جيڪي توهين پنہنجي ايجنڊا جي خاڪي ۾ شامل ڪرڻ چاهيو ٿا۔ 				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +11				1	sd	نالو چونڊيو ۽ خاڪو سانڍيو 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +12				1	sd	رڪارڊ ڪرڻ جي منٽن لاءِ فارم شامل ڪريو۔				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +13				1	sd	هيءَ وزارڊ توهانجي ايجنڊا جو خاڪو خلقڻ ۾ مدد ڪري ٿو۔ اهو خاڪو تڏهن استعمال ڪري سگهبو جڏهن ڪو ايجنڊا خلقڻ جي ضرورت هوندي 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +14				1	sd	وقت:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 12				1	sd	رڪارڊ ڪرڻ جي منٽن لاءِ فارم شامل ڪريو۔				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 13				1	sd	هيءَ وزارڊ توهانجي ايجنڊا جو خاڪو خلقڻ ۾ مدد ڪري ٿو۔ اهو خاڪو تڏهن استعمال ڪري سگهبو جڏهن ڪو ايجنڊا خلقڻ جي ضرورت هوندي 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 14				1	sd	وقت:				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +15				1	sd	نالو: 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +17				1	sd	جڳهہ کي جهليندڙ خالي کيترن ۾ اِستعمال ڪيا ويندا۔ توهين پوءِ ڪڏهن بہ جڳهہ کي جهليندڙ مَٽائي سگهو ٿا				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 17				1	sd	جڳهہ کي جهليندڙ خالي کيترن ۾ اِستعمال ڪيا ويندا۔ توهين پوءِ ڪڏهن بہ جڳهہ کي جهليندڙ مَٽائي سگهو ٿا				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +18				1	sd	...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +19				1	sd	هن خاڪي مان ايجنڊا خلقيو۔ 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +2				1	sd	هن ايجنڊا خاڪي ۽ هٿ سان تبديليون ڪريو 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +20				1	sd	هن خاڪي مان نئٔن ايجنڊا خلقڻ لاءِ ان آسٿان تي وڃو جتي توهان اِهو خاڪو سانڍيو آهي ۽ فائم تي ٻ۽ دفعا ڪلڪ ڪريو 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +21				1	sd	ڪم جي ياداشت جي شئہ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +22				1	sd	جوابدار 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +23				1	sd	عرصو 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 19				1	sd	هن خاڪي مان ايجنڊا خلقيو۔ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 2				1	sd	هن ايجنڊا خاڪي ۽ هٿ سان تبديليون ڪريو 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 20				1	sd	هن خاڪي مان نئٔن ايجنڊا خلقڻ لاءِ ان آسٿان تي وڃو جتي توهان اِهو خاڪو سانڍيو آهي ۽ فائم تي ٻ۽ دفعا ڪلڪ ڪريو 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 21				1	sd	ڪم جي ياداشت جي شئہ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 22				1	sd	جوابدار 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 23				1	sd	عرصو 				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +24				1	sd	دواران ميٽنگ ڪوٺائي ويئي 				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +25				1	sd	صدرُ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +26				1	sd	تفصيل رکندڙ				2002-02-02 02:02:02
@@ -21114,34 +21114,34 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +28
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +29				1	sd	ٽپڻي ڪندڙ 				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +3				1	sd	خاڪي جو نالو 				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +30				1	sd	سهوليتون مليل شخص 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +31				1	sd	ڪم جي ياداشت جو خاڪو چونڊ شخصن جي نالن لاءِ جڳهہ جهليندڙ شامل ڪندو۔ ان خاڪي مان ڪم جي ياداشت خمقڻ وقت توهين جوڳن نالن سان اهي جڳهہ جهليندڙ مَٽي سگهو ٿا۔				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 31				1	sd	ڪم جي ياداشت جو خاڪو چونڊ شخصن جي نالن لاءِ جڳهہ جهليندڙ شامل ڪندو۔ ان خاڪي مان ڪم جي ياداشت خمقڻ وقت توهين جوڳن نالن سان اهي جڳهہ جهليندڙ مَٽي سگهو ٿا۔				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +32				1	sd	ميٽنگ جو قسم 				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +33				1	sd	مهرباني ڪري پڙهو 				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +34				1	sd	مهرباني ڪري آڻيو 				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +35				1	sd	ٽپڻيون 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +36				1	sd	چونڊ شين لاءِ ايجنڊآ جو خاڪو آسٿان جهليندڙ شامل ڪندو۔ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 36				1	sd	چونڊ شين لاءِ ايجنڊآ جو خاڪو آسٿان جهليندڙ شامل ڪندو۔ 				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +38				1	sd	تاريخ:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +39				1	sd	هي وزارڊ ايجندا جو اُهو خاڪو خلقي ٿو جيڪو ساڳئي ليئائوٽ ۽ طئہ ڪيل ترتيبن سان ٻهوقسمي ايجندا خلقڻ ۾ توهان کي سمرٿ بڻائي ٿو۔ 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +40				1	sd	صفحي جي ڊرائين: 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +41				1	sd	منهنجي ايجنڊا جو خاڪو stw				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +42				1	sd	منهنجي ايجنڊا جو خاڪو 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +43				1	sd	ايجنڊا جو خاڪو 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +44				1	sd	نالو 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +45				1	sd	تاريخ 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +46				1	sd	وقت				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +48				1	sd	هن متن کي مَٿڻ لاءِ ڪلڪ ڪريو 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 39				1	sd	هي وزارڊ ايجندا جو اُهو خاڪو خلقي ٿو جيڪو ساڳئي ليئائوٽ ۽ طئہ ڪيل ترتيبن سان ٻهوقسمي ايجندا خلقڻ ۾ توهان کي سمرٿ بڻائي ٿو۔ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 40				1	sd	صفحي جي ڊرائين: 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 41				1	sd	منهنجي ايجنڊا جو خاڪو stw				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 42				1	sd	منهنجي ايجنڊا جو خاڪو 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 43				1	sd	ايجنڊا جو خاڪو 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 44				1	sd	نالو 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 45				1	sd	تاريخ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 46				1	sd	وقت				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 48				1	sd	هن متن کي مَٿڻ لاءِ ڪلڪ ڪريو 				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +5				1	sd	اڳتي توهين ڇا ٿا ڪرڻ چاهيو؟ 				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +50				1	sd	صفحي جي ڊرائين 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +51				1	sd	عام معلومات 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +52				1	sd	شامل ڪرڻ جا سرا 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +53				1	sd	نالا 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +54				1	sd	ايجنڊا جون شيون				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 51				1	sd	عام معلومات 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 52				1	sd	شامل ڪرڻ جا سرا 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 53				1	sd	نالا 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 54				1	sd	ايجنڊا جون شيون				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +55				1	sd	نالو ۽ آسٿان 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +56				1	sd	ايجنڊا جو خاڪو کولڻ وقت اچانڪ چوڪ ٿي ويئي 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 56				1	sd	ايجنڊا جو خاڪو کولڻ وقت اچانڪ چوڪ ٿي ويئي 				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +57				1	sd	ميٽنگ جو قسم 				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +58				1	sd	مهرباني ڪري آڻيو 				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +59				1	sd	مهرباني ڪري پڙهو 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +6				1	sd	ايجنڊا لاءِ مهرباني ڪري صفحي جي ڊزائين چونڊيو 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 6				1	sd	ايجنڊا لاءِ مهرباني ڪري صفحي جي ڊزائين چونڊيو 				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +60				1	sd	ٽپڻيون 				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +61				1	sd	دواران ميٽنگ ڪوٺائي ويئي 				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +62				1	sd	صدرُ				2002-02-02 02:02:02
@@ -21150,13 +21150,13 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +64
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +65				1	sd	ٽيڪاڪارُ 				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +66				1	sd	ٽپڻي ڪندڙ 				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +67				1	sd	سهوليتون مليل شخص 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +68				1	sd	داخل ڪريو 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +69				1	sd	ڪڍي ڇڏيو 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +7				1	sd	مهرباني ڪري اُهي سرا چونڊيو، جيڪي توهين پنهنجي ايجنڊا جي خاڪي ۾ شامل ڪرڻ چاهيو ٿا۔ 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +70				1	sd	مٿي وڃو 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +71				1	sd	هيٺ وڃو 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +8				1	sd	واقعي لاءِ مهرباني ڪري عام معلومات داخل ڪريو 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +9				1	sd	ايجنڊآ لاءِ معرباني ڪري شين جا تفصيل ڄاڻايو 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 68				1	sd	داخل ڪريو 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 69				1	sd	ڪڍي ڇڏيو 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 7				1	sd	مهرباني ڪري اُهي سرا چونڊيو، جيڪي توهين پنهنجي ايجنڊا جي خاڪي ۾ شامل ڪرڻ چاهيو ٿا۔ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 70				1	sd	مٿي وڃو 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 71				1	sd	هيٺ وڃو 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 8				1	sd	واقعي لاءِ مهرباني ڪري عام معلومات داخل ڪريو 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 9				1	sd	ايجنڊآ لاءِ معرباني ڪري شين جا تفصيل ڄاڻايو 				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_COMMON_START + 0				1	sd	 '%1' هدايت نامو نہ خلقجي سگهيو۔ توهانجي هارڊ ڊسڪ ۾ بچيل جڳهہ ڪافي نہ هوندي۔ 				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_COMMON_START + 1				1	sd	متن جو دستاويز نہ خلقجي سگهيو۔ مهرباني چڪاسي ڏسو تہ 'PRODUCTNAME لائيٽر ماڊيول اِسٿاپٽ ڪيل آهي۔ 				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_COMMON_START + 10				1	sd	نہ				2002-02-02 02:02:02
@@ -21579,25 +21579,25 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_LETTERWIZARDROADMAP_START + 
 wizards	source\formwizard\dbwizres.src	0	string	RID_LETTERWIZARDSALUTATION_START + 1				1	sd	اهو ڪنهن سان بہ واسطي رکندو هجي 				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_LETTERWIZARDSALUTATION_START + 2				1	sd	پيارا سائين يا ميڊم 				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_LETTERWIZARDSALUTATION_START + 3				1	sd	ڪهڙو حال آهي 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +0				1	sd	FTP سنٻنڌ 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +1				1	sd	اِستعمال ڪندڙ جو نالو: 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +10				1	sd	سنٻنڌ ڪاميابيءَ سان قائم ڪيو ويو 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +11				1	sd	استعمال ڪندڙ جو نالو يا ڳجهو لفظ غلط آهي۔ 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +12				1	sd	Could not resolve server name				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +13				1	sd	توهان وٽ اِستعمال ڪندڙ جا پورا حق ناهن 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +14				1	sd	سرور سنٻنڌ قائم نٿو ٿي سگهي 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +15				1	sd	اَچانڪ چوڪ 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +16				1	sd	FTP ڇاپائڻ جو هدات نامو 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +17				1	sd	هي FTP فولڊر ناهي 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +18				1	sd	سنٻنڌ قائم ڪري پيو 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +2				1	sd	ڳجهو لفظ: 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +3				1	sd	سنٻنڌ قائم ڪريو 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +4				1	sd	1. FTP ." سنٻنڌ جي معلومات داخل ڪريو 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +5				1	sd	سرور جو نالو يا  IP ايڊريس 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +6				1	sd	2. سرور سان سنٻنڌ قائم ڪريو 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +7				1	sd	3. دور جو هدايت نامو چونڊيو (وڪلپي)۔ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 0				1	sd	FTP سنٻنڌ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 1				1	sd	اِستعمال ڪندڙ جو نالو: 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 10				1	sd	سنٻنڌ ڪاميابيءَ سان قائم ڪيو ويو 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 11				1	sd	استعمال ڪندڙ جو نالو يا ڳجهو لفظ غلط آهي۔ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 12				1	sd	Could not resolve server name				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 13				1	sd	توهان وٽ اِستعمال ڪندڙ جا پورا حق ناهن 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 14				1	sd	سرور سنٻنڌ قائم نٿو ٿي سگهي 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 15				1	sd	اَچانڪ چوڪ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 16				1	sd	FTP ڇاپائڻ جو هدات نامو 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 17				1	sd	هي FTP فولڊر ناهي 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 18				1	sd	سنٻنڌ قائم ڪري پيو 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 2				1	sd	ڳجهو لفظ: 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 3				1	sd	سنٻنڌ قائم ڪريو 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 4				1	sd	1. FTP ." سنٻنڌ جي معلومات داخل ڪريو 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 5				1	sd	سرور جو نالو يا  IP ايڊريس 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 6				1	sd	2. سرور سان سنٻنڌ قائم ڪريو 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 7				1	sd	3. دور جو هدايت نامو چونڊيو (وڪلپي)۔ 				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +8				1	sd	...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +9				1	sd	سنٻنڌ جي حالت نامعلوم آهي 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 9				1	sd	سنٻنڌ جي حالت نامعلوم آهي 				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 100				1	sd	آئڪان سيٽ 				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 101				1	sd	آئڪان جو سيٽ چونڊيو 				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 90				1	sd	پورو ڪرڻ۔۔۔				2002-02-02 02:02:02
@@ -21606,127 +21606,127 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 95		
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 96				1	sd	ZIP دفتر خاني جون فائلون 				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 98				1	sd	پس منظر جا عڪس 				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 99				1	sd	پس منظر جو عڪس چونڊيو 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +1				1	sd	ويب وزارڊ 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +10				1	sd	اختصار:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +102				1	sd	ٻيو۔۔۔				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +103				1	sd	ڪجهہ نہ 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +104				1	sd	توهانجي ويب سائٽ %FILENAME"  ۾ ڪاميابيءَ سان خلقي ويئي هئي 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +105				1	sd	ويب سائٽ جي رچنا ڪرڻ وقت هڪ يا ان کان وڌيڪ چوڪون ٿي وييون۔ 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +106				1	sd	موضعن جو صفحو (جا صفا) رچڻ وقت چوڪ ٿي ويئي۔ 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +107				1	sd	ليئائوٽ جي فائلن جو نقل ڪرڻ وقت چوڪ ٿي ويئي۔ 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +108				1	sd	'%FILENAME' جي روانگي ڪرڻ لاءِ هدايت نامو خلقڻ وقت چوڪ ٿي ويئي۔ 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +109				1	sd	'%FILENAME' جي روانگي ڪرڻ لاءِ هدايت نامو خلقڻ وقت چوڪ ٿي ويئي۔  				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +11				1	sd	ليکڪ:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +110				1	sd	An error occurred while creating a directory for exporting '%FILENAME'.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +111				1	sd	'%FILENAME' دستاويز جي روانگي ڪرڻ وقت سلامتيءَ جي چوڪ ٿي ويئي۔ 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +112				1	sd	'%FILENAME دستاويز جي روانگي ڪرڻ وقت ان پٽ/آئوٽ پٽ جي چوڪ ٿي ويئي۔ 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +113				1	sd	عارضي هدايت نامي ۾ ميڊيا جي فائلن جو نقل ڪرڻ وقت چوڪ ٿي ويئي۔ 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +114				1	sd	هيٺ ڏنل ٺڪاڻي تي ويب سائيٽ جو نقل نہ ٿي سگهيو: %URL"%				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +115				1	sd	 اَچانڪ چوڪ ٿي ويئي: %ERROR				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +116				1	sd	'%FILENAME' جي فائل جي ڪٿ ڪرڻ وقت اچانڪ چوڪ ٿي ويئي 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +117				1	sd	%FILENAME' فولڊر آهي .				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +118				1	sd	ويب وزارڊ جون طئہ ڪيل ترتيبون لوڊ ڪري پيو۔۔۔				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +119				1	sd	اَچانڪ چوڪ ٿي ويئي۔ 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +12				1	sd	فائل جي رچنا جي روانگي ڪريو: 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +120				1	sd	ڏستاويزن جي ڪٿ ڪرڻ 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +121				1	sd	منہنجو دفتر خالو 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +122				1	sd	واقفيت 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +123				1	sd	دستاويزَ 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +124				1	sd	مکيہ ليئائوٽ 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +125				1	sd	ليئائوٽ جا تفصيل 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +126				1	sd	نمونو 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +127				1	sd	ويب سائٽ جي معلومات 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +128				1	sd	اڳ منظر 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +13				1	sd	توهين پنهنجي ويب سائٽ لاءِ عام معلومات داخل ڪريو 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +130				1	sd	چونڊيل طئہ ڪيل ترتيبون خارج ٿي وينديون ڇا توهين سچ پچ اهي طءہ ڪيل ترتيبون خارج ڪرڻ چاهيو ٿا؟ 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +131				1	sd	%NUMBER صفحا 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +132				1	sd	%NUMBER سلائڊ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +133				1	sd	خلقيل : %DATE				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +134				1	sd	آخري ڦيرڦار ڪيل : %DATE				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +135				1	sd	ويب وزارڊ جون طئہ ڪيل ترتيبون 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +136				1	sd	پس منظر جو عڪس: 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +137				1	sd	آئڪان جو سيٽ: 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +138				1	sd	HTML " رچنا ۾ پيشڪشن لاءِ هي آئڪان سيٽ اِستعمال ڪيو ويو آهي۔				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +139				1	sd	HTML"  ميٽا سامگري 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 1				1	sd	ويب وزارڊ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 10				1	sd	اختصار:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 102				1	sd	ٻيو۔۔۔				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 103				1	sd	ڪجهہ نہ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 104				1	sd	توهانجي ويب سائٽ %FILENAME"  ۾ ڪاميابيءَ سان خلقي ويئي هئي 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 105				1	sd	ويب سائٽ جي رچنا ڪرڻ وقت هڪ يا ان کان وڌيڪ چوڪون ٿي وييون۔ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 106				1	sd	موضعن جو صفحو (جا صفا) رچڻ وقت چوڪ ٿي ويئي۔ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 107				1	sd	ليئائوٽ جي فائلن جو نقل ڪرڻ وقت چوڪ ٿي ويئي۔ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 108				1	sd	'%FILENAME' جي روانگي ڪرڻ لاءِ هدايت نامو خلقڻ وقت چوڪ ٿي ويئي۔ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 109				1	sd	'%FILENAME' جي روانگي ڪرڻ لاءِ هدايت نامو خلقڻ وقت چوڪ ٿي ويئي۔  				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 11				1	sd	ليکڪ:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 110				1	sd	An error occurred while creating a directory for exporting '%FILENAME'.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 111				1	sd	'%FILENAME' دستاويز جي روانگي ڪرڻ وقت سلامتيءَ جي چوڪ ٿي ويئي۔ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 112				1	sd	'%FILENAME دستاويز جي روانگي ڪرڻ وقت ان پٽ/آئوٽ پٽ جي چوڪ ٿي ويئي۔ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 113				1	sd	عارضي هدايت نامي ۾ ميڊيا جي فائلن جو نقل ڪرڻ وقت چوڪ ٿي ويئي۔ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 114				1	sd	هيٺ ڏنل ٺڪاڻي تي ويب سائيٽ جو نقل نہ ٿي سگهيو: %URL"%				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 115				1	sd	 اَچانڪ چوڪ ٿي ويئي: %ERROR				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 116				1	sd	'%FILENAME' جي فائل جي ڪٿ ڪرڻ وقت اچانڪ چوڪ ٿي ويئي 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 117				1	sd	%FILENAME' فولڊر آهي .				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 118				1	sd	ويب وزارڊ جون طئہ ڪيل ترتيبون لوڊ ڪري پيو۔۔۔				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 119				1	sd	اَچانڪ چوڪ ٿي ويئي۔ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 12				1	sd	فائل جي رچنا جي روانگي ڪريو: 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 120				1	sd	ڏستاويزن جي ڪٿ ڪرڻ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 121				1	sd	منہنجو دفتر خالو 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 122				1	sd	واقفيت 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 123				1	sd	دستاويزَ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 124				1	sd	مکيہ ليئائوٽ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 125				1	sd	ليئائوٽ جا تفصيل 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 126				1	sd	نمونو 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 127				1	sd	ويب سائٽ جي معلومات 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 128				1	sd	اڳ منظر 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 13				1	sd	توهين پنهنجي ويب سائٽ لاءِ عام معلومات داخل ڪريو 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 130				1	sd	چونڊيل طئہ ڪيل ترتيبون خارج ٿي وينديون ڇا توهين سچ پچ اهي طءہ ڪيل ترتيبون خارج ڪرڻ چاهيو ٿا؟ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 131				1	sd	%NUMBER صفحا 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 132				1	sd	%NUMBER سلائڊ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 133				1	sd	خلقيل : %DATE				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 134				1	sd	آخري ڦيرڦار ڪيل : %DATE				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 135				1	sd	ويب وزارڊ جون طئہ ڪيل ترتيبون 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 136				1	sd	پس منظر جو عڪس: 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 137				1	sd	آئڪان جو سيٽ: 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 138				1	sd	HTML " رچنا ۾ پيشڪشن لاءِ هي آئڪان سيٽ اِستعمال ڪيو ويو آهي۔				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 139				1	sd	HTML"  ميٽا سامگري 				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +14				1	sd	عنوان:				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +140				1	sd	چونڊيو...				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +141				1	sd	چونڊيو...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +142				1	sd	<default>				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +143				1	sd	FTP عيوضيءَ رستي ڇاپائڻ کي سمرٿن نہ مليو آهي۔ 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +144				1	sd	<no background image>				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +145				1	sd	<no background image>				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +146				1	sd	FTP هدايت نامو  '%FILENAME' نہ خلقجي سگهيو 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 142				1	sd	<default>				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 143				1	sd	FTP عيوضيءَ رستي ڇاپائڻ کي سمرٿن نہ مليو آهي۔ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 144				1	sd	<no background image>				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 145				1	sd	<no background image>				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 146				1	sd	FTP هدايت نامو  '%FILENAME' نہ خلقجي سگهيو 				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +147				1	sd	FTP هدايت نامو '%FILENAME مؤجود ناهي \n هاڻي اهيا هدايت نامو خلقيو؟ 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +148				1	sd	'%FILENAME' زپ فائل خلقي نٿي سگهجي: ساڳئي نالي سان هڪ هدايت نامو اڳ  ۾ ئي مؤجود آهي۔				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 148				1	sd	'%FILENAME' زپ فائل خلقي نٿي سگهجي: ساڳئي نالي سان هڪ هدايت نامو اڳ  ۾ ئي مؤجود آهي۔				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +149				1	sd	'%FILENAME'  مڪاني هدايت نامو نٿو خلقي سگهجي \n مهرباني ڪري پنهنجي لکيل داخل چڪاسيو 				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +150				1	sd	 '%FILENAME' مڪاني هدايت نامو مؤجود ناهي۔ \n اهو هدايت نامو هاڻي خلقيو؟ 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +151				1	sd	آڪار: %NUMBERKB				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +152				1	sd	فائل جو پتو نہ لڳو۔ ڇا توهين نئينءَ فائم جي آسٿان جا تفصيل ڏيڻ چاهيندا؟ 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +16				1	sd	بيان: 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +18				1	sd	خلقيل: 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +2				1	sd	هي ويب وزارڊ انٽرنيٽ تي دستاويزَ شايع ڪرڻ ۾ توهانجي مدد ڪرڻ لاءِ آهي۔ \n\n اهو دستاويزن کي بدلائيندو جئن اُهي ويب بسائوزر دواران نظر مان ڪڍي سگهجن ٿا۔ ان کان سواءِ، دستاويزن کي سولائيءَ سان داخل ڪرڻ لاءِ ڪڙين سان موفعن جي صفحي جي تختي خلقيندو۔ هي ويب وزارڊ توهان کي توهانجي ويب سائيٽ جي ڊرائين ۽ ليئائوٽ کي هليءَ چليءَ وارو بڻائڻ ۾ پن مدد ڪري ٿو۔ توهين ڪڏهن بہ سڌارو واڌارو ڪيم ويب تي شايع ڪيل دستاويز رڪي داخل ڪري يا ڪڍي سگهو ٿا۔ 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +20				1	sd	اي۔ميل 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +21				1	sd	حق واسطن جي سوچنا: 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +22				1	sd	ڦيرڦار ڪيل: 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +24				1	sd	اَڳ منظر 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +25				1	sd	توهين پنهنجي ويب سائٽ ڪٿي ڇاپائڻ چاهيو ٿا؟ 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +26				1	sd	نئين ويب سائٽ ڇاپايو: 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +27				1	sd	مڪاني فولڊر ڏانهن 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 151				1	sd	آڪار: %NUMBERKB				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 152				1	sd	فائل جو پتو نہ لڳو۔ ڇا توهين نئينءَ فائم جي آسٿان جا تفصيل ڏيڻ چاهيندا؟ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 16				1	sd	بيان: 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 18				1	sd	خلقيل: 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 2				1	sd	هي ويب وزارڊ انٽرنيٽ تي دستاويزَ شايع ڪرڻ ۾ توهانجي مدد ڪرڻ لاءِ آهي۔ \n\n اهو دستاويزن کي بدلائيندو جئن اُهي ويب بسائوزر دواران نظر مان ڪڍي سگهجن ٿا۔ ان کان سواءِ، دستاويزن کي سولائيءَ سان داخل ڪرڻ لاءِ ڪڙين سان موفعن جي صفحي جي تختي خلقيندو۔ هي ويب وزارڊ توهان کي توهانجي ويب سائيٽ جي ڊرائين ۽ ليئائوٽ کي هليءَ چليءَ وارو بڻائڻ ۾ پن مدد ڪري ٿو۔ توهين ڪڏهن بہ سڌارو واڌارو ڪيم ويب تي شايع ڪيل دستاويز رڪي داخل ڪري يا ڪڍي سگهو ٿا۔ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 20				1	sd	اي۔ميل 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 21				1	sd	حق واسطن جي سوچنا: 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 22				1	sd	ڦيرڦار ڪيل: 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 24				1	sd	اَڳ منظر 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 25				1	sd	توهين پنهنجي ويب سائٽ ڪٿي ڇاپائڻ چاهيو ٿا؟ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 26				1	sd	نئين ويب سائٽ ڇاپايو: 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 27				1	sd	مڪاني فولڊر ڏانهن 				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +28				1	sd	...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +29				1	sd	FTP" رستي ويب سرور ڏانهن 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +31				1	sd	رچنا ڪريو۔۔۔				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +32				1	sd	۔۔۔				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 29				1	sd	FTP" رستي ويب سرور ڏانهن 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 31				1	sd	رچنا ڪريو۔۔۔				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 32				1	sd	۔۔۔				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +33				1	sd	...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +34				1	sd	طئہ ڪيل ترتيبون سانڍيو (هدايت ڏنل) 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +35				1	sd	سانڍيو جئن: 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +36				1	sd	ويب وزارڊ لاءِ طئہ ڪيل ترتيبون چونڊيو 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +37				1	sd	ويب سائٽ جو موضوع 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +38				1	sd	شامل ڪريو۔۔۔				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +39				1	sd	ڪڍي ڇڏيو				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +4				1	sd	خارج ڪريو 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +40				1	sd	پنهنجي ويب سائٽ جي موصعن جي تختيءَ لاءِ ليئائوٽ چونڊيو 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +41				1	sd	موضعن جي صفحي جي تختيءَ لاءِ نمونو چونڊيو 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +42				1	sd	نمونو				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +48				1	sd	ليئائوٽس 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +5				1	sd	مهاڳ 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +50				1	sd	بيان 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +51				1	sd	ليکڪ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +52				1	sd	خلقڻ جي تاريخ 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +53				1	sd	آخري تبديل جي تاريخ 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +54				1	sd	فائل جو نالو 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +55				1	sd	فائل جي رچنا 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +56				1	sd	۔۔۔۔				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +57				1	sd	صفحن جو تعداد 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +58				1	sd	KB ۾ آڪار				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +59				1	sd	پنهنجي برائوز ۾ اڳ منظر ڏسڻ لاءِ اڳ منظر تي ڪلڪ ڪريو:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +6				1	sd	توهين جيڪي دستاويز ڇاپائڻ چاهيو ٿا اُهي چونڊيو 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +60				1	sd	چونڊيل ليئائوٽ کي هليءَ چليءَ وارو بڻايو 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +61				1	sd	موفعن جي تختيءَ ٰ هر دستاويز لاءِ هيٺين معلومات شامل ڪريو: 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +62				1	sd	۔۔۔				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +64				1	sd	~640x480				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +65				1	sd	~800x600				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +66				1	sd	~1024x768				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +70				1	sd	توهانجي ويب سائٽ جي رچنا ڪرڻ 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +71				1	sd	%START - %END/%TOTAL				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +72				1	sd	منہنجي ويب سائٽ 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +73				1	sd	FTP مقصد '%FILENAME' هڪ فائل آهي 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +74				1	sd	مڪاني مقصد  '%FILENAME' هڪ فائل آهي 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +75				1	sd	ZIP مقصد  '%FILENAME' اڳ ۾ ئي مؤجود آهي۔ ڇا توهين مؤجودهہ مقصد مٿا لکڻ چاهيو ٿا؟				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +76				1	sd	FTP مقصد هدايت نامو  '%FILENAME'  خالي ناهي۔ ڪجهہ فائلون مٿان لکجي وييون هونديون۔ ڇا توهين جاري رکڻ چاهيو ٿا؟ 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +77				1	sd	مڪاني مقصد هدايت نامو  '%FILENAME'  خالي ناهي۔ ڪجهہ فائلون مٿان لکجي وييون هونديون۔ ڇا توهين جاري رکڻ چاهيو ٿا؟ 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +78				1	sd	ڏنل نالي ۾ طئہ ڪيل ترتيبون اڳ ۾ ئي مؤجود آهن۔ ڇا توهين مؤجودہ طئہ ڪيل ترتيبن مٿان لکڻ چاهيو ٿا؟ 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +79				1	sd	دستاويزن جي روانگي ڪرڻ۔۔۔				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +8				1	sd	دستاويز جي معلومات 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +80				1	sd	روانگيءَ لاءِ تيار ڪرڻ۔۔۔				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +81				1	sd	ليئائوٽ فائلن جو نقل ڪرڻ۔۔۔				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +82				1	sd	موضعن رچڻ جي تختيءَ تيار ڪرڻ۔۔۔ 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +83				1	sd	موضعن جي تختيءَ جي رچنا ڪرڻ 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +84				1	sd	شروع ۾ آڻڻ۔۔۔				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +86				1	sd	ڇاپائڻ لاءِ تياري ڪرڻ۔۔۔۔				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +87				1	sd	ڇاپائڻ لاءِ تياري ڪرڻ۔۔۔۔				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +88				1	sd	FTP ٺڪاڻي تي شايو۔				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +89				1	sd	ZIP دفترخاني ۾ شايو ڪرڻ 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +9				1	sd	عنوان: 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 34				1	sd	طئہ ڪيل ترتيبون سانڍيو (هدايت ڏنل) 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 35				1	sd	سانڍيو جئن: 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 36				1	sd	ويب وزارڊ لاءِ طئہ ڪيل ترتيبون چونڊيو 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 37				1	sd	ويب سائٽ جو موضوع 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 38				1	sd	شامل ڪريو۔۔۔				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 39				1	sd	ڪڍي ڇڏيو				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 4				1	sd	خارج ڪريو 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 40				1	sd	پنهنجي ويب سائٽ جي موصعن جي تختيءَ لاءِ ليئائوٽ چونڊيو 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 41				1	sd	موضعن جي صفحي جي تختيءَ لاءِ نمونو چونڊيو 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 42				1	sd	نمونو				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 48				1	sd	ليئائوٽس 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 5				1	sd	مهاڳ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 50				1	sd	بيان 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 51				1	sd	ليکڪ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 52				1	sd	خلقڻ جي تاريخ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 53				1	sd	آخري تبديل جي تاريخ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 54				1	sd	فائل جو نالو 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 55				1	sd	فائل جي رچنا 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 56				1	sd	۔۔۔۔				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 57				1	sd	صفحن جو تعداد 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 58				1	sd	KB ۾ آڪار				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 59				1	sd	پنهنجي برائوز ۾ اڳ منظر ڏسڻ لاءِ اڳ منظر تي ڪلڪ ڪريو:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 6				1	sd	توهين جيڪي دستاويز ڇاپائڻ چاهيو ٿا اُهي چونڊيو 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 60				1	sd	چونڊيل ليئائوٽ کي هليءَ چليءَ وارو بڻايو 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 61				1	sd	موفعن جي تختيءَ ٰ هر دستاويز لاءِ هيٺين معلومات شامل ڪريو: 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 62				1	sd	۔۔۔				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 64				1	sd	~640x480				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 65				1	sd	~800x600				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 66				1	sd	~1024x768				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 70				1	sd	توهانجي ويب سائٽ جي رچنا ڪرڻ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 71				1	sd	%START - %END/%TOTAL				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 72				1	sd	منہنجي ويب سائٽ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 73				1	sd	FTP مقصد '%FILENAME' هڪ فائل آهي 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 74				1	sd	مڪاني مقصد  '%FILENAME' هڪ فائل آهي 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 75				1	sd	ZIP مقصد  '%FILENAME' اڳ ۾ ئي مؤجود آهي۔ ڇا توهين مؤجودهہ مقصد مٿا لکڻ چاهيو ٿا؟				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 76				1	sd	FTP مقصد هدايت نامو  '%FILENAME'  خالي ناهي۔ ڪجهہ فائلون مٿان لکجي وييون هونديون۔ ڇا توهين جاري رکڻ چاهيو ٿا؟ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 77				1	sd	مڪاني مقصد هدايت نامو  '%FILENAME'  خالي ناهي۔ ڪجهہ فائلون مٿان لکجي وييون هونديون۔ ڇا توهين جاري رکڻ چاهيو ٿا؟ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 78				1	sd	ڏنل نالي ۾ طئہ ڪيل ترتيبون اڳ ۾ ئي مؤجود آهن۔ ڇا توهين مؤجودہ طئہ ڪيل ترتيبن مٿان لکڻ چاهيو ٿا؟ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 79				1	sd	دستاويزن جي روانگي ڪرڻ۔۔۔				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 8				1	sd	دستاويز جي معلومات 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 80				1	sd	روانگيءَ لاءِ تيار ڪرڻ۔۔۔				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 81				1	sd	ليئائوٽ فائلن جو نقل ڪرڻ۔۔۔				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 82				1	sd	موضعن رچڻ جي تختيءَ تيار ڪرڻ۔۔۔ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 83				1	sd	موضعن جي تختيءَ جي رچنا ڪرڻ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 84				1	sd	شروع ۾ آڻڻ۔۔۔				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 86				1	sd	ڇاپائڻ لاءِ تياري ڪرڻ۔۔۔۔				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 87				1	sd	ڇاپائڻ لاءِ تياري ڪرڻ۔۔۔۔				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 88				1	sd	FTP ٺڪاڻي تي شايو۔				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 89				1	sd	ZIP دفترخاني ۾ شايو ڪرڻ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 9				1	sd	عنوان: 				2002-02-02 02:02:02
 wizards	source\importwizard\importwi.src	0	string	sBackButton				1	sd	<< پٺتي 				2002-02-02 02:02:02
 wizards	source\importwizard\importwi.src	0	string	sBeginButton				1	sd	بدلايو 				2002-02-02 02:02:02
 wizards	source\importwizard\importwi.src	0	string	sCancelButton				1	sd	رد ڪريو 				2002-02-02 02:02:02

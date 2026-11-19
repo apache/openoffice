@@ -160,6 +160,11 @@ void ScRawToken::SetOpCode( OpCode e )
             eType = svJump;
             nJump[ 0 ] = MAXJUMPCOUNT+1;
             break;
+        case ocIfna:
+        case ocIfError:
+            eType = svJump;
+            nJump[ 0 ] = 2; // Fallback, Behind
+            break;
         case ocMissing:
             eType = svMissing;
             break;
@@ -377,6 +382,21 @@ ScRawToken* ScRawToken::Clone() const
     }
     p->nRefCnt = 0;
     p->bRaw = sal_False;
+    return p;
+}
+
+
+ScRawToken* ScRawToken::NewString( const sal_Unicode* pStr, xub_StrLen nLen )
+{
+    static sal_uInt16 nOffset = lcl_ScRawTokenOffset();     // offset of sbyte and cStr
+    size_t n = nOffset + GetStrLenBytes( nLen ) + GetStrLenBytes( 1 );
+    ScRawToken* p = (ScRawToken*) new sal_uInt8[ n ];
+    p->eOp = ocPush;
+    p->eType = svString;
+    p->nRefCnt = 0;
+    p->bRaw = sal_False;
+    memcpy( p->cStr, pStr, GetStrLenBytes( nLen ) );
+    p->cStr[ nLen ] = 0;
     return p;
 }
 

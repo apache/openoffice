@@ -497,6 +497,12 @@ void FormulaCompiler::OpCodeMap::putOpCode( const String & rStr, const OpCode eO
         mpHashMap->insert( OpCodeHashMap::value_type( rStr, eOp));
     }
 }
+void FormulaCompiler::OpCodeMap::putOpCodeAlias( const String & rStr, const OpCode eOp )
+{
+    DBG_ASSERT( 0 < eOp && sal_uInt16(eOp) < mnSymbols, "OpCodeMap::putOpCodeAlias: OpCode out of range");
+    if (0 < eOp && sal_uInt16(eOp) < mnSymbols)
+        mpHashMap->insert( OpCodeHashMap::value_type( rStr, eOp));
+}
 // -----------------------------------------------------------------------------
 // class FormulaCompiler
 // -----------------------------------------------------------------------------
@@ -685,6 +691,8 @@ void FormulaCompiler::loadSymbols(sal_uInt16 _nSymbols,FormulaGrammar::Grammar _
         _xMap.reset( new OpCodeMap( SC_OPCODE_LAST_OPCODE_ID + 1, _eGrammar != FormulaGrammar::GRAM_ODFF, _eGrammar ));
         OModuleClient aModuleClient;
         OpCodeList aOpCodeList( _nSymbols, _xMap );
+        // Files and API callers before RRI got its ODF name used ZGZ.
+        _xMap->putOpCodeAlias( String::CreateFromAscii("ZGZ"), ocZGZ);
 
         fillFromAddInMap( _xMap, _eGrammar);
         // Fill from collection for AddIns not already present.
@@ -1011,7 +1019,8 @@ void FormulaCompiler::Factor()
             PutCode( pFacToken );
             eOp = NextToken();
         }
-        else if ((SC_OPCODE_START_2_PAR <= eOp && eOp < SC_OPCODE_STOP_2_PAR)
+        else if ((SC_OPCODE_START_2_PAR <= eOp && eOp < SC_OPCODE_STOP_2_PAR
+                    && ((eOp != ocIfna && eOp != ocIfError) || bCompileForFAP))
                 || eOp == ocExternal
                 || eOp == ocMacro
                 || eOp == ocAnd
@@ -1049,7 +1058,10 @@ void FormulaCompiler::Factor()
                 nSepCount++;
                 while ( (eOp == ocSep) && (!pArr->GetCodeError() || bIgnoreErrors) )
                 {
-                    nSepCount++;
+                    if ( nSepCount == 255 )
+                        SetError( errCodeOverflow );    // the count is kept in a byte
+                    else
+                        nSepCount++;
                     NextToken();
                     eOp = Expression();
                 }
@@ -1065,17 +1077,23 @@ void FormulaCompiler::Factor()
                 pFacToken = new FormulaFAPToken( pFacToken->GetOpCode(), nSepCount, pFacToken );
             else
                 pFacToken->SetByte( nSepCount );
+            // ODF ISOWEEKNUM has one argument; AOO wrote WEEKNUM to ODF as
+            // ISOWEEKNUM with two, so only the two argument form stays ocWeek.
+            if ( nSepCount == 1 && pFacToken->GetOpCode() == ocWeek && mxSymbols->isODFF() )
+                pFacToken->NewOpCode( ocIsoWeekNum, FormulaToken::PrivateAccess());
             // EASTERSUNDAY() without a year depends on today's date
             if ( bNoParam && pFacToken->GetOpCode() == ocEasterSunday )
                 pArr->SetRecalcModeAlways();
             PutCode( pFacToken );
         }
-        else if (eOp == ocIf || eOp == ocChose)
+        else if (eOp == ocIf || eOp == ocChose || eOp == ocIfna || eOp == ocIfError)
         {
             // the PC counters are -1
             pFacToken = pToken;
             if ( eOp == ocIf )
                 pFacToken->GetJump()[ 0 ] = 3;  // if, else, behind
+            else if ( eOp == ocIfna || eOp == ocIfError )
+                pFacToken->GetJump()[ 0 ] = 2;  // fallback, behind
             else
                 pFacToken->GetJump()[ 0 ] = MAXJUMPCOUNT+1;
             eOp = NextToken();
@@ -1093,7 +1111,8 @@ void FormulaCompiler::Factor()
             // ScRawToken::Clone() allocates the JumpBuffer according to
             // nJump[0]*2+2, which is 3*2+2 on ocIf.
             const short nJumpMax =
-                (pFacToken->GetOpCode() == ocIf ? 3 : MAXJUMPCOUNT);
+                (pFacToken->GetOpCode() == ocIf ? 3 :
+                 ((pFacToken->GetOpCode() == ocIfna || pFacToken->GetOpCode() == ocIfError) ? 2 : MAXJUMPCOUNT));
             while ( (nJumpCount < (MAXJUMPCOUNT - 1)) && (eOp == ocSep)
                     && (!pArr->GetCodeError() || bIgnoreErrors) )
             {
@@ -1120,6 +1139,7 @@ void FormulaCompiler::Factor()
                 if ( ++nJumpCount <= nJumpMax )
                     pFacToken->GetJump()[ nJumpCount ] = pc-1;
                 if ((pFacToken->GetOpCode() == ocIf && (nJumpCount > 3)) ||
+                        ((pFacToken->GetOpCode() == ocIfna || pFacToken->GetOpCode() == ocIfError) && (nJumpCount != 2)) ||
                                  (nJumpCount >= MAXJUMPCOUNT))
                     SetError(errIllegalParameter);
                 else

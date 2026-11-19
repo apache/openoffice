@@ -39,7 +39,7 @@ Function .onInit
     "DOWNLOADNAMEPLACEHOLDER options: $\n $\n \
     /S : Silent installation $\n \
     /D=<path> : NSIS installation directory (must be the last option!) $\n \
-    /EXTRACTONLY=ON : NSIS only extracts the PRODUCTNAMEPLACEHOLDER PRODUCTVERSIONPLACEHOLDER installation set $\n \
+    /EXTRACTONLY=ON : NSIS only extracts the PRODUCTNAMEPLACEHOLDER PRODUCTVERSIONPLACEHOLDER installation set (to the desktop) $\n \
     /INSTALLLOCATION=<path> : PRODUCTNAMEPLACEHOLDER PRODUCTVERSIONPLACEHOLDER installation directory $\n \
     /POSTREMOVE=ON : Removes the unpacked installation set after PRODUCTNAMEPLACEHOLDER PRODUCTVERSIONPLACEHOLDER installation $\n \
     /INSTALLJAVA=ON : Installs JRE located in sub directory java, if exists $\n \
@@ -63,11 +63,74 @@ Function .onInit
   GoTo onInitDone
 
   onInitNoSilent:
+    ; /EXTRACTONLY=ON keeps the visible folder on the desktop: the user
+    ; asked for the installation set itself.
+    Push $1
+    Push "/EXTRACTONLY="
+    Call GetOptions
+    Pop $2
+    StrCmp $2 "ON" onInitExtractOnly onInitKeepSource
+
+  onInitExtractOnly:
     StrCpy $INSTDIR "$DESKTOP\PRODUCTPATHPLACEHOLDER Installation Files"
+  GoTo onInitDone
+
+  onInitKeepSource:
+    ; Otherwise unpack without asking, into a folder under ProgramData
+    ; (hidden by default) that is kept.  setup.exe starts the MSI from
+    ; here, so Windows Installer records it as the installation source
+    ; and repair, modify and patching find the cabinet again without
+    ; prompting for the original download.
+    SetShellVarContext all
+    StrCpy $INSTDIR "$APPDATA\PRODUCTPATHPLACEHOLDER Installation Files"
+    SetShellVarContext current
   GoTo onInitDone
 
   onInitDone:
   pathset:
+
+FunctionEnd
+
+; Remove kept installation sets under ProgramData whose product is no longer
+; installed: the version a major upgrade has just replaced, or an install
+; that was cancelled.  The product is identified by the productcode in the
+; folder's setup.ini, never by the folder name, so a language pack or an
+; install for another user keeps its source.  Only INSTALLSTATE_UNKNOWN (-1)
+; deletes; installed (5), advertised (1) and other-user (2) all keep.
+Function CleanupStaleSources
+
+  Push $R0
+  Push $R1
+  Push $R2
+  Push $R3
+  Push $R4
+
+  SetOutPath "$TEMP"   ; do not hold $INSTDIR open as working directory
+
+  SetShellVarContext all
+  StrCpy $R4 "$APPDATA"
+  SetShellVarContext current
+
+  FindFirst $R0 $R1 "$R4\${PRODUCT_NAME} * Installation Files"
+  cleanuploop:
+    StrCmp $R1 "" cleanupdone
+    IfFileExists "$R4\$R1\setup.ini" 0 cleanupnext
+    ReadINIStr $R2 "$R4\$R1\setup.ini" "setup" "productcode"
+    StrCmp $R2 "" cleanupnext
+    System::Call 'msi::MsiQueryProductStateW(w R2) i .R3'
+    IntCmp $R3 -1 0 cleanupnext cleanupnext
+    RMDir /r "$R4\$R1"
+  cleanupnext:
+    FindNext $R0 $R1
+    Goto cleanuploop
+  cleanupdone:
+  FindClose $R0
+
+  Pop $R4
+  Pop $R3
+  Pop $R2
+  Pop $R1
+  Pop $R0
 
 FunctionEnd
 
@@ -219,9 +282,9 @@ FunctionEnd
 !define MUI_ABORTWARNING
 !define MUI_ICON "SETUPICOPLACEHOLDER"
 
-; Welcome page
-!insertmacro MUI_PAGE_WELCOME
-!insertmacro MUI_PAGE_DIRECTORY
+; No welcome or directory page: the MSI shows its own wizard, and the
+; unpack location is chosen in .onInit (override with /D=<path>).
+; Only the progress page of the unpacking remains.
 !insertmacro MUI_PAGE_INSTFILES
 
 !macro MUI_LANGUAGE_PACK LANGUAGE
@@ -385,6 +448,7 @@ Section -Post
         ExecWait '$INSTDIR\java\WINDOWSJAVAFILENAMEPLACEHOLDER /s /v"/qn REBOOT=Suppress"'
       dontinstalljava1:
       ExecWait "$INSTDIR\setup.exe -lang $LANGUAGE $3 $4 $5 $6 $7 -ignore_running" $0
+      Call CleanupStaleSources
       SetErrorLevel $0
       Quit
       GoTo onPostDone
@@ -394,6 +458,7 @@ Section -Post
         ExecWait '$INSTDIR\java\WINDOWSJAVAFILENAMEPLACEHOLDER /s /v"/qn REBOOT=Suppress"'
       dontinstalljava2:
       ExecWait "$INSTDIR\setup.exe -lang $LANGUAGE $3 $4 $5 $6 $7 -ignore_running" $0
+      Call CleanupStaleSources
       RMDir /r $INSTDIR
       RMDir $INSTDIR
       SetErrorLevel $0
@@ -409,7 +474,12 @@ Section -Post
 
     StrCmp $2 "ON" postremove nopostremove
     nopostremove:
-      Exec "$INSTDIR\setup.exe -lang $LANGUAGE $3 $4 $5 $6"
+      ; Wait for setup.exe (it waits for the MSI) so that the folders of
+      ; products the MSI has just upgraded away can be removed afterwards.
+      HideWindow
+      ExecWait "$INSTDIR\setup.exe -lang $LANGUAGE $3 $4 $5 $6" $0
+      Call CleanupStaleSources
+      SetErrorLevel $0
       Quit
       GoTo onPostDone
     postremove:
@@ -418,6 +488,7 @@ Section -Post
         ExecWait '$INSTDIR\java\WINDOWSJAVAFILENAMEPLACEHOLDER /s /v"/qr REBOOT=Suppress"'
       dontinstalljava3:
       ExecWait "$INSTDIR\setup.exe -lang $LANGUAGE $3 $4 $5 $6" $0
+      Call CleanupStaleSources
       RMDir /r $INSTDIR
       RMDir $INSTDIR
       SetErrorLevel $0

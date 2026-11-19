@@ -262,7 +262,6 @@ bool ImplMacFontData::HasCJKSupport( void ) const
 
 AquaSalGraphics::AquaSalGraphics()
     : mpFrame( NULL )
-    , mxLayer( NULL )
     , mrContext( NULL )
     , mpXorEmulation( NULL )
     , mnXorMode( 0 )
@@ -295,8 +294,8 @@ AquaSalGraphics::~AquaSalGraphics()
 	if( mpXorEmulation )
 		delete mpXorEmulation;
 
-	if( mxLayer )
-		CGLayerRelease( mxLayer );
+	if( maLayer.get() )
+		CGLayerRelease( maLayer.get() );
 	else if( mrContext && mbWindow )
 	{
 		// destroy backbuffer bitmap context that we created ourself
@@ -1121,7 +1120,7 @@ void AquaSalGraphics::copyBits( const SalTwoRect& rPosAry, SalGraphics *pSrcGrap
 	ApplyXorContext();
 	pSrc->ApplyXorContext();
 
-	DBG_ASSERT( pSrc->mxLayer!=NULL, "AquaSalGraphics::copyBits() from non-layered graphics" );
+	DBG_ASSERT( pSrc->maLayer.get()!=NULL, "AquaSalGraphics::copyBits() from non-layered graphics" );
 
 	const CGPoint aDstPoint = CGPointMake( +rPosAry.mnDestX - rPosAry.mnSrcX, rPosAry.mnDestY - rPosAry.mnSrcY);
 	if( (rPosAry.mnSrcWidth == rPosAry.mnDestWidth && rPosAry.mnSrcHeight == rPosAry.mnDestHeight) &&
@@ -1143,7 +1142,7 @@ void AquaSalGraphics::copyBits( const SalTwoRect& rPosAry, SalGraphics *pSrcGrap
 	    if( pSrc->IsFlipped() )
 		    { CGContextTranslateCTM( xCopyContext, 0, +mnHeight ); CGContextScaleCTM( xCopyContext, +1, -1 ); }
 	    // TODO: pSrc->size() != this->size()
-		    ::CGContextDrawLayerAtPoint( xCopyContext, aDstPoint, pSrc->mxLayer );
+		    ::CGContextDrawLayerInRect( xCopyContext, CGRectMake( aDstPoint.x, aDstPoint.y, pSrc->mnWidth, pSrc->mnHeight ), pSrc->maLayer.get() );
 	    CGContextRestoreGState( xCopyContext );
 	    // mark the destination rectangle as updated
    	    RefreshRect( aDstRect );
@@ -1186,7 +1185,7 @@ void AquaSalGraphics::copyArea( long nDstX, long nDstY,long nSrcX, long nSrcY, l
 		delete pBitmap;
 	}
 #else
-	DBG_ASSERT( mxLayer!=NULL, "AquaSalGraphics::copyArea() for non-layered graphics" );
+	DBG_ASSERT( maLayer.get()!=NULL, "AquaSalGraphics::copyArea() for non-layered graphics" );
 
 	// in XOR mode the drawing context is redirected to the XOR mask
 	// copyArea() always works on the target context though
@@ -1198,12 +1197,13 @@ void AquaSalGraphics::copyArea( long nDstX, long nDstY,long nSrcX, long nSrcY, l
 	// TODO: is it possible to get rid of this unneeded copy more often?
 	//       e.g. on OSX>=10.5 only this situation causes problems:
 	//			mnBitmapDepth && (aDstPoint.x + pSrc->mnWidth) > mnWidth
-	CGLayerRef xSrcLayer = mxLayer;
+	CGLayerRef xSrcLayer = maLayer.get();
 	// TODO: if( mnBitmapDepth > 0 )
 	{
-		const CGSize aSrcSize = CGSizeMake( nSrcWidth, nSrcHeight);
+		const CGSize aSrcSize = maLayer.toPixels( nSrcWidth, nSrcHeight );
 		xSrcLayer = ::CGLayerCreateWithContext( xCopyContext, aSrcSize, NULL );
 		const CGContextRef xSrcContext = CGLayerGetContext( xSrcLayer );
+		maLayer.scaleContext( xSrcContext );
 		CGPoint aSrcPoint = CGPointMake( -nSrcX, -nSrcY);
 		if( IsFlipped() )
 		{
@@ -1211,15 +1211,15 @@ void AquaSalGraphics::copyArea( long nDstX, long nDstY,long nSrcX, long nSrcY, l
 			::CGContextScaleCTM( xSrcContext, +1, -1 );
 			aSrcPoint.y = (nSrcY + nSrcHeight) - mnHeight;
 		}
-		::CGContextDrawLayerAtPoint( xSrcContext, aSrcPoint, mxLayer );
+		::CGContextDrawLayerInRect( xSrcContext, CGRectMake( aSrcPoint.x, aSrcPoint.y, mnWidth, mnHeight ), maLayer.get() );
 	}
 
 	// draw at new destination
 	const CGPoint aDstPoint = CGPointMake( +nDstX, +nDstY);
-	::CGContextDrawLayerAtPoint( xCopyContext, aDstPoint, xSrcLayer );
+	::CGContextDrawLayerInRect( xCopyContext, CGRectMake( aDstPoint.x, aDstPoint.y, nSrcWidth, nSrcHeight ), xSrcLayer );
 
 	// cleanup
-	if( xSrcLayer != mxLayer )
+	if( xSrcLayer != maLayer.get() )
 		CGLayerRelease( xSrcLayer );
 
 	// mark the destination rectangle as updated
@@ -1294,12 +1294,12 @@ void AquaSalGraphics::drawMask( const SalTwoRect& rPosAry, const SalBitmap& rSal
 
 SalBitmap* AquaSalGraphics::getBitmap( long  nX, long  nY, long  nDX, long  nDY )
 {
-	DBG_ASSERT( mxLayer, "AquaSalGraphics::getBitmap() with no layer" );
+	DBG_ASSERT( maLayer.get(), "AquaSalGraphics::getBitmap() with no layer" );
 
 	ApplyXorContext();
 
 	AquaSalBitmap* pBitmap = new AquaSalBitmap;
-	if( !pBitmap->Create( mxLayer, mnBitmapDepth, nX, nY, nDX, nDY, !mbWindow ) )
+	if( !pBitmap->Create( maLayer, mnBitmapDepth, nX, nY, nDX, nDY, !mbWindow ) )
 	{
 		delete pBitmap;
 		pBitmap = NULL;
@@ -1313,7 +1313,7 @@ SalBitmap* AquaSalGraphics::getBitmap( long  nX, long  nY, long  nDX, long  nDY 
 SalColor AquaSalGraphics::getPixel( long nX, long nY )
 {
 	// return default value on printers or when out of bounds
-	if( !mxLayer
+	if( !maLayer.get()
 	|| (nX < 0) || (nX >= mnWidth)
 	|| (nY < 0) || (nY >= mnHeight))
 		return COL_BLACK;
@@ -1339,7 +1339,7 @@ SalColor AquaSalGraphics::getPixel( long nX, long nY )
 	if( IsFlipped() )
 		nY = mnHeight - nY;
 	const CGPoint aCGPoint = CGPointMake( -nX, -nY);
-	CGContextDrawLayerAtPoint( xOnePixelContext, aCGPoint, mxLayer );
+	CGContextDrawLayerInRect( xOnePixelContext, CGRectMake( aCGPoint.x, aCGPoint.y, mnWidth, mnHeight ), maLayer.get() );
 	CGContextRelease( xOnePixelContext );
 
 	SalColor nSalColor = MAKE_SALCOLOR( aPixel.r, aPixel.g, aPixel.b );
@@ -2356,6 +2356,14 @@ void AquaSalGraphics::SetXORMode( bool bSet, bool bInvertOnly )
         mnXorMode = 2;
         return;
     }
+    else if( bSet && mnXorMode == 2 )
+    {
+        if( bInvertOnly )
+            return;
+        // the XOR write-back must not be blended with Difference
+        CGContextSetBlendMode( mrContext, kCGBlendModeNormal );
+        mnXorMode = 0;
+    }
 
 	if( (mpXorEmulation == NULL) && !bSet )
 		return;
@@ -2368,7 +2376,7 @@ void AquaSalGraphics::SetXORMode( bool bSet, bool bInvertOnly )
 	if( !mpXorEmulation )
 	{
 		mpXorEmulation = new XorEmulation();
-		mpXorEmulation->SetTarget( mnWidth, mnHeight, mnBitmapDepth, mrContext, mxLayer );
+		mpXorEmulation->SetTarget( mnWidth, mnHeight, mnBitmapDepth, mrContext, maLayer.get() );
 	}
 
 	// change the XOR mode
@@ -2451,6 +2459,14 @@ void XorEmulation::SetTarget( int nWidth, int nHeight, int nTargetDepth,
 	mxTargetLayer = xTargetLayer;
 	mxTargetContext = xTargetContext;
 
+	// XOR per layer pixel, which is more than one per point on a HiDPI layer
+	if( xTargetLayer )
+	{
+		const CGSize aPixels = CGLayerGetSize( xTargetLayer );
+		nWidth = static_cast<int>(aPixels.width);
+		nHeight = static_cast<int>(aPixels.height);
+	}
+
 	// prepare creation of matching CGBitmaps
 	CGColorSpaceRef aCGColorSpace = GetSalData()->mxRGBSpace;
 	CGBitmapInfo aCGBmpInfo = kCGImageAlphaNoneSkipFirst;
@@ -2500,10 +2516,9 @@ void XorEmulation::SetTarget( int nWidth, int nHeight, int nTargetDepth,
 		CGContextSetBlendMode( mxMaskContext, kCGBlendModeDifference );
 
 	// initialize the transformation matrix to the drawing target
+	// the temp context keeps identity: it copies target pixels 1:1
 	const CGAffineTransform aCTM = CGContextGetCTM( xTargetContext );
 	CGContextConcatCTM( mxMaskContext, aCTM );
-	if( mxTempContext )
-		CGContextConcatCTM( mxTempContext, aCTM );
 
 	// initialize the default XorMask graphics state
 	CGContextSaveGState( mxMaskContext );
@@ -2518,7 +2533,8 @@ bool XorEmulation::UpdateTarget()
 
 	// update the temp bitmap buffer if needed
 	if( mxTempContext )
-		CGContextDrawLayerAtPoint( mxTempContext, CGPointZero, mxTargetLayer );
+		CGContextDrawLayerInRect( mxTempContext, CGRectMake( 0, 0, CGBitmapContextGetWidth( mxTempContext ),
+			CGBitmapContextGetHeight( mxTempContext ) ), mxTargetLayer );
 
 	// do a manual XOR with the XorMask
 	// this approach suffices for simple color manipulations
@@ -2536,7 +2552,10 @@ bool XorEmulation::UpdateTarget()
 		const int nHeight = (int)CGImageGetHeight( xXorImage );
 		// TODO: update minimal changerect
 		const CGRect aFullRect = CGRectMake( 0, 0, nWidth, nHeight);
+		CGContextSaveGState( mxTargetContext );
+		CGContextConcatCTM( mxTargetContext, CGAffineTransformInvert( CGContextGetCTM( mxTargetContext ) ) );
 		CGContextDrawImage( mxTargetContext, aFullRect, xXorImage );
+		CGContextRestoreGState( mxTargetContext );
 		CGImageRelease( xXorImage );
 	}
 

@@ -18896,7 +18896,7 @@ sw	source\ui\app\app.src	0	string	STR_STATSTR_TOX_UPDATE				1	ks	فہرست اپ
 sw	source\ui\app\app.src	0	string	STR_STATSTR_W4WREAD				1	ks	دستاویزبرآمدکرنا۔۔۔				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_STATSTR_W4WWRITE				1	ks	دستاویزکودرآمدکرو۔۔۔‎				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_TABLE_DEFNAME				1	ks	جدول				2002-02-02 02:02:02
-sw	source\ui\app\app.src	0	string	STR_UNBENANNT				1	ks	بلاعنوان				2002-02-02 02:02:02
+sw	source\ui\app\app.src	0	string	STR_UNTITLED				1	ks	بلاعنوان				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_WESTERN_FONT				1	ks	مغربی متن:				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_WRITER_DOCUMENT_FULLTYPE				1	ks	%PRODUCTNAME %PRODUCTVERSION متن دستاویز				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	warningbox	MSG_DATA_SOURCES_UNAVAILABLE		HID_DATA_SOURCES_UNAVAILABLE		202	ks	کوئی ڈاٹا ماخذ اب تک سیٹ اپ نہیں ہوا ہے۔آپ کو ڈاٹا ماخذ کی ضرورت ہے، جیسے کہ ڈاٹا بیس،ڈاٹا فراہم کرنے کےلئے(مثال کے طور پر،نام اور ایڈریسیس)شعبے کے لئے۔				2002-02-02 02:02:02
@@ -19765,7 +19765,7 @@ sw	source\ui\docvw\docvw.src	0	string	STR_CHAIN_SOURCE_CHAINED				0	ks	ماخذ 
 sw	source\ui\docvw\docvw.src	0	string	STR_CHAIN_WRONG_AREA				0	ks	ٹارگیٹ فریم میں جوڑ نے کے لیے ایک غیر معتبر علاقہ ہے 				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_ENDNOTE				0	ks	اختتامیہ نوٹ				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_EXPORT_GRAFIK_TITLE				0	ks	ترسیموں کی درآمد				2002-02-02 02:02:02
-sw	source\ui\docvw\docvw.src	0	string	STR_FTNNOTE				0	ks	زیر ورق حاشیہ				2002-02-02 02:02:02
+sw	source\ui\docvw\docvw.src	0	string	STR_FOOTNOTE				0	ks	زیر ورق حاشیہ				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_REDLINE_DELETE				0	ks	خارج کیاگیا				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_REDLINE_FMTCOLL				0	ks	پیراگراف اسٹائل لاگوکیا				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_REDLINE_FORMAT				0	ks	وضع شدہ				2002-02-02 02:02:02
@@ -20867,11 +20867,11 @@ sw	source\ui\ribbar\inputwin.src	0	toolboxitem	TB_INPUT	FN_FORMULA_APPLY	FN_FORM
 sw	source\ui\ribbar\inputwin.src	0	toolboxitem	TB_INPUT	FN_FORMULA_CALC	FN_FORMULA_CALC		500	ks	ضابطہ				2002-02-02 02:02:02
 sw	source\ui\ribbar\inputwin.src	0	toolboxitem	TB_INPUT	FN_FORMULA_CANCEL	FN_FORMULA_CANCEL		500	ks	منسوخ				2002-02-02 02:02:02
 sw	source\ui\ribbar\tblctrl.src	0	floatingwindow	RID_TBL_OPT_CTRL		HID_TBL_OPT_CTRL		0	ks	مناسب کرنا				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_AT_CHAR			0	ks	لفظ میں				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_CHAR			0	ks	الفاظ جیسے				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_FRAME			0	ks	فریم				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_PAGE			0	ks	صفحہ				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_PARAGRAPH			0	ks	پیراگراف				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_AT_CHAR			0	ks	لفظ میں				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_CHAR			0	ks	الفاظ جیسے				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_FRAME			0	ks	فریم				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_PAGE			0	ks	صفحہ				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_PARAGRAPH			0	ks	پیراگراف				2002-02-02 02:02:02
 sw	source\ui\ribbar\workctrl.src	0	floatingwindow	RID_INSERT_CTRL		HID_INSERT_CTRL		0	ks	داخل کرو				2002-02-02 02:02:02
 sw	source\ui\ribbar\workctrl.src	0	floatingwindow	RID_INSERT_OBJ_CTRL		HID_INSERT_OBJ_CTRL		0	ks	شئےداخل کرو				2002-02-02 02:02:02
 sw	source\ui\ribbar\workctrl.src	0	floatingwindow	RID_SCROLL_NAVIGATION_WIN		HID_INSERT_CTRL		0	ks	نیویگیشن				2002-02-02 02:02:02
@@ -21923,21 +21923,21 @@ wizards	source\euro\euro.src	0	string	STEP_ZERO + 8				0	ks	بند				2002-02-02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 16				1	ks	جاے:				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 4				1	ks	 جاےتئ  فائل ناو:				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 47				1	ks	جاے				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +1				1	ks	ایجینڈا ویزارٹ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +10				1	ks	مہربئنی كریتھ ژئریو ناو یم تہئ ایجینڈا ٹیملیٹس منزاستیمال چھئوئ یژھان كرین				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 1				1	ks	ایجینڈا ویزارٹ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 10				1	ks	مہربئنی كریتھ ژئریو ناو یم تہئ ایجینڈا ٹیملیٹس منزاستیمال چھئوئ یژھان كرین				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +11				1	ks	ناو ژئریو تئ ٹیمپلیٹ تھئویو محوظ۔				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +12				1	ks	منٹس ریکارڈینگ   خعطرئ كریو فارم شئمل  				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +13				1	ks	یئ ویزارڈ چھُوئ تہئ مدد كران ایجینڈا ٹیمپلیٹ بناونس منز ۔ ٹیملیٹ ہیك۪ی استیمال گژیتھ نئو ایجینڈا بناون خعطرئ یل۪ی ضُرتھ پیی۔				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +14				1	ks	:وقت				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 12				1	ks	منٹس ریکارڈینگ   خعطرئ كریو فارم شئمل  				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 13				1	ks	یئ ویزارڈ چھُوئ تہئ مدد كران ایجینڈا ٹیمپلیٹ بناونس منز ۔ ٹیملیٹ ہیك۪ی استیمال گژیتھ نئو ایجینڈا بناون خعطرئ یل۪ی ضُرتھ پیی۔				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 14				1	ks	:وقت				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +15				1	ks	ناو:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +17				1	ks	پلیس ہولڈرس  ین استیمال كرنئ خئلی شعبن منز۔ تہئ ہیكیو پلیس ہولڈرس پتئ موادس سعتھ بدلئویتھ۔				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 17				1	ks	پلیس ہولڈرس  ین استیمال كرنئ خئلی شعبن منز۔ تہئ ہیكیو پلیس ہولڈرس پتئ موادس سعتھ بدلئویتھ۔				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +18				1	ks	...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +19				1	ks	یم۪ی ٹیمپلیٹ  پیٹھئ بنئویو ایجینڈا 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +2				1	ks	ی تھ  ایجینڈا ٹیمپلیٹس منز كریو مینیول تبدیلی				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +20				1	ks	ٹیمپلیٹ پیٹھئ نئو ایجنڈا بناونئ خعطرئ گژ ھیو لوكیشن منز یتتھ تہئ ٹیملیٹ چھُوئ محفوظ كرمُت تئ فایل كریو ڈبل كلیك۔				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +21				1	ks	ایجینڈا آئٹم				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +22				1	ks	ذمہ دار				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +23				1	ks	وقفۂ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 19				1	ks	یم۪ی ٹیمپلیٹ  پیٹھئ بنئویو ایجینڈا 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 2				1	ks	ی تھ  ایجینڈا ٹیمپلیٹس منز كریو مینیول تبدیلی				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 20				1	ks	ٹیمپلیٹ پیٹھئ نئو ایجنڈا بناونئ خعطرئ گژ ھیو لوكیشن منز یتتھ تہئ ٹیملیٹ چھُوئ محفوظ كرمُت تئ فایل كریو ڈبل كلیك۔				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 21				1	ks	ایجینڈا آئٹم				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 22				1	ks	ذمہ دار				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 23				1	ks	وقفۂ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +24				1	ks	میٹینگ آیی بلاونئ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +25				1	ks	چیئرپرسن				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +26				1	ks	منٹن  حساب تھئو ن ۄول 				2002-02-02 02:02:02
@@ -21946,34 +21946,34 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +28
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +29				1	ks	مشئہد كرئن وۄل				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +3				1	ks	 ٹیمپلیٹ  ناو:				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +30				1	ks	سہولت عملہ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +31				1	ks	ایجینڈا ٹیمپلیٹس منز آسن شئمل پلیس ہولڈرس ژعرمئتین لوكئن ہیندئ ناو خعطرئ۔     ٹیمپلیٹ پیٹھئ ایجنڈا چھئ بناوان ویز۪ی ہیكیو تہئ پلیس ہولدر بنوویتھ منئسب ناون سعتھ۔ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 31				1	ks	ایجینڈا ٹیمپلیٹس منز آسن شئمل پلیس ہولڈرس ژعرمئتین لوكئن ہیندئ ناو خعطرئ۔     ٹیمپلیٹ پیٹھئ ایجنڈا چھئ بناوان ویز۪ی ہیكیو تہئ پلیس ہولدر بنوویتھ منئسب ناون سعتھ۔ 				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +32				1	ks	میٹینگ ہیوند ٹایپ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +33				1	ks	مہربئنی كریتھ پریو				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +34				1	ks	مہربئنی كریتھ انیو				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +35				1	ks	نوٹس				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +36				1	ks	ایجینڈا ٹیمپلیٹ كر۪ی شئمل پلیس ہولڈرسن ژعرمئت۪ی  آیٹمن ہیندئ خعطرئ۔				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 36				1	ks	ایجینڈا ٹیمپلیٹ كر۪ی شئمل پلیس ہولڈرسن ژعرمئت۪ی  آیٹمن ہیندئ خعطرئ۔				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +38				1	ks	تئریخ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +39				1	ks	یئ ویزارڈ چھُ بناوان ایجینڈا ٹیمپلیٹ یس تہندئ خعطرئ ممكن چھُكران واریاح ایجیندا  بناون یتھ ہیشی سیٹینگس تئ لے آوٹ آس۪ی۔  				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +40				1	ks	:صفحہ ڈئزائن				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +41				1	ks	stwمیون ایجینڈا ٹیمپلیٹ۔				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +42				1	ks	میون ایجینڈا ٹیمپلیٹ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +43				1	ks	ایجینڈاٹیمپلیٹ محفوظ کرن ویز۪ی آی غئرمتوقع  غلطی				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +44				1	ks	ناو				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +45				1	ks	تئریخ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +46				1	ks	وقت				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +48				1	ks	یئ مواد بدلاونئ خئطرئ كریو  کلیک 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 39				1	ks	یئ ویزارڈ چھُ بناوان ایجینڈا ٹیمپلیٹ یس تہندئ خعطرئ ممكن چھُكران واریاح ایجیندا  بناون یتھ ہیشی سیٹینگس تئ لے آوٹ آس۪ی۔  				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 40				1	ks	:صفحہ ڈئزائن				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 41				1	ks	stwمیون ایجینڈا ٹیمپلیٹ۔				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 42				1	ks	میون ایجینڈا ٹیمپلیٹ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 43				1	ks	ایجینڈاٹیمپلیٹ محفوظ کرن ویز۪ی آی غئرمتوقع  غلطی				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 44				1	ks	ناو				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 45				1	ks	تئریخ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 46				1	ks	وقت				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 48				1	ks	یئ مواد بدلاونئ خئطرئ كریو  کلیک 				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +5				1	ks	تہئ كیاہ چھئوئ یژھان پتئ كرُن؟				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +50				1	ks	صفحہ ڈئزائن				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +51				1	ks	عام مولومات				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +52				1	ks	   عنوان كریو شئمل				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +53				1	ks	ناو				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +54				1	ks	ایجینڈا آئٹمس				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 51				1	ks	عام مولومات				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 52				1	ks	   عنوان كریو شئمل				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 53				1	ks	ناو				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 54				1	ks	ایجینڈا آئٹمس				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +55				1	ks	ناو تئ جاے				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +56				1	ks	ایجینڈاٹیمپلیٹ کھولنئ ویز۪ی آی   غئرمتوقع غلطی				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 56				1	ks	ایجینڈاٹیمپلیٹ کھولنئ ویز۪ی آی   غئرمتوقع غلطی				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +57				1	ks	میٹینگ ہیوند ٹایپ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +58				1	ks	مہربئنی كریتھ انیو				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +59				1	ks	مہربئنی كریتھ پریو				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +6				1	ks	 مہربئنی كریتھ ژعریو ایجینڈا خعطرئ صفحہ ڈئزائن   				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 6				1	ks	 مہربئنی كریتھ ژعریو ایجینڈا خعطرئ صفحہ ڈئزائن   				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +60				1	ks	نوٹس				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +61				1	ks	میٹینگ آیی بلاونئ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +62				1	ks	چیئرپرسن				2002-02-02 02:02:02
@@ -21982,13 +21982,13 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +64
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +65				1	ks	مئوڈیریٹر				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +66				1	ks	مشئہد كرئن وۄل				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +67				1	ks	سہولت عملہ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +68				1	ks	دئخل کریو				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +69				1	ks	ہٹئویو				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +7				1	ks	مہربئنی كریتھ ژعریو  عنوا  ن    یم تہئ شئمل چھئوئ یژھان كرُن  ایجینڈاٹیمپلیٹس منز				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +70				1	ks	ہیور كُن گژیو 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +71				1	ks	بْون كُن غژھیو				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +8				1	ks	 مہربئنی كریتھ كریو دئخل    عام مولومات  حئدسئ خعطرئ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +9				1	ks	 مہربئنی كریتھ كریو  ایجینڈا خعطرئ آئٹمس مختص  				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 68				1	ks	دئخل کریو				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 69				1	ks	ہٹئویو				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 7				1	ks	مہربئنی كریتھ ژعریو  عنوا  ن    یم تہئ شئمل چھئوئ یژھان كرُن  ایجینڈاٹیمپلیٹس منز				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 70				1	ks	ہیور كُن گژیو 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 71				1	ks	بْون كُن غژھیو				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 8				1	ks	 مہربئنی كریتھ كریو دئخل    عام مولومات  حئدسئ خعطرئ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 9				1	ks	 مہربئنی كریتھ كریو  ایجینڈا خعطرئ آئٹمس مختص  				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_COMMON_START + 0				1	ks	ڈائریکٹری '%1'ہیچ نئ بنئویتھ۔   <BR> تہندس ہارڈ ڈسكس پیٹھ آس۪ی  کئفی نئ جاے				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_COMMON_START + 1				1	ks	مواد  دستاویزہیوك نئ بنئویتھ۔  <BR> مہر بئنی كریتھ وچھیو موڈیول 'PRODUCTNAME Writer' چھا انسٹال كریتھ۔				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_COMMON_START + 10				1	ks	نئ				2002-02-02 02:02:02
@@ -22413,25 +22413,25 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_LETTERWIZARDROADMAP_START + 
 wizards	source\formwizard\dbwizres.src	0	string	RID_LETTERWIZARDSALUTATION_START + 1				1	ks	یمیس تئ متعلق یئ آس۪ی				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_LETTERWIZARDSALUTATION_START + 2				1	ks	محترم سر یامیڈم				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_LETTERWIZARDSALUTATION_START + 3				1	ks	آداب				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +0				1	ks	تعلقFTP 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +1				1	ks	استیمال كرن وۄل سُند ناو				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +10				1	ks	رئبتئ آو كامیئبی سان قئیم كرنئ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +11				1	ks	استیمال كرن وئل سند ناو  یاخفیہ لفظ چھُ غلط  				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +12				1	ks	سرورناو				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +13				1	ks	تہئ چھئوئ نئ  مطمئن بخش صارف حق  				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +14				1	ks	سرورہیكئو نئ جوڈیتھ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +15				1	ks	غیرمتوقع غلطی				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +16				1	ks	شایع كرن واجِن ڈا ئریکٹریFTP 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +17				1	ks	 یئ چھُنئ   FTP   فولڈر				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +18				1	ks	 واٹھ دیوان				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +2				1	ks	:خفیہ لفظ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +3				1	ks	واٹھ دیو				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +4				1	ks	سےمتعلق مولومات كریو دئخل  ۔FTP1۔				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +5				1	ks	:پتہ IPسرورناو یا				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +6				1	ks	سرور جوڑیو				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +7				1	ks	3۔ ریموٹ ڈائریکٹری ژعریو(آپشنل)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 0				1	ks	تعلقFTP 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 1				1	ks	استیمال كرن وۄل سُند ناو				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 10				1	ks	رئبتئ آو كامیئبی سان قئیم كرنئ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 11				1	ks	استیمال كرن وئل سند ناو  یاخفیہ لفظ چھُ غلط  				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 12				1	ks	سرورناو				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 13				1	ks	تہئ چھئوئ نئ  مطمئن بخش صارف حق  				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 14				1	ks	سرورہیكئو نئ جوڈیتھ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 15				1	ks	غیرمتوقع غلطی				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 16				1	ks	شایع كرن واجِن ڈا ئریکٹریFTP 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 17				1	ks	 یئ چھُنئ   FTP   فولڈر				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 18				1	ks	 واٹھ دیوان				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 2				1	ks	:خفیہ لفظ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 3				1	ks	واٹھ دیو				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 4				1	ks	سےمتعلق مولومات كریو دئخل  ۔FTP1۔				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 5				1	ks	:پتہ IPسرورناو یا				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 6				1	ks	سرور جوڑیو				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 7				1	ks	3۔ ریموٹ ڈائریکٹری ژعریو(آپشنل)				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +8				1	ks	...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +9				1	ks	رئبطئك معیار چھُ نامولوم				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 9				1	ks	رئبطئك معیار چھُ نامولوم				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 100				1	ks	آئیکن سیٹس				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 101				1	ks	 :آئیکن سیٹ كریو منتخب  				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 90				1	ks	مكلاوان۔۔۔				2002-02-02 02:02:02
@@ -22440,127 +22440,127 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 95		
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 96				1	ks	 آرکیومنزZIP				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 98				1	ks	پس منظرامیجیز				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 99				1	ks	:پس منظرامیج ژعریو				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +1				1	ks	ویب ویزارٹ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +10				1	ks	:خلاصہ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +102				1	ks	دیگر۔۔۔				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +103				1	ks	كہین نئ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +104				1	ks	تہنز  ویب سائٹ آی کامیابی سان بناونئ: %FILENAME				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +105				1	ks	ویب سائٹ  بناونئ ویزئ آی اكھ یا زیادئ غلطی۔				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +106				1	ks	موضوعئتی صفحن ہیوند جدول بناون ویز۪ی آی غلطی۔ 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +107				1	ks	لےآؤٹ فائلئ نقل کرنئ ویزئ آی غلطی۔ 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +108				1	ks	   '%FILENAMEخعطرئ دستاویزی مولومات جمع  کرنئ  ویزئ آی غلطی'۔				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +109				1	ks	 '%FILENAME' دستاویز برامد كرنئ ویزئ آی غلطی۔				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +11				1	ks	لكھٲر:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +110				1	ks	'%FILENAMEبرآمد كرنئ خعطرئ ڈائریکٹری بناون ویزئ آی غلطی    ۔				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +111				1	ks	%FILENAMEدستاویزبرآمد كرن ویزئ آی  حفاظتی غلطی    ۔				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +112				1	ks	%FILENAMEدستاویزبرآمد  کرن ویزئ آی ان پٹ/آؤٹ پٹ    غلطی۔"				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +113				1	ks	عارضی ڈائریکٹری میڈیافائلئ نقل  کرن ویزئ آی غلطی    ۔				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +114				1	ks	ویب سائٹ ہیچ مندرجہ ذیل ڈیسٹی نیشن  پیٹھ نقل كریتھ:%URL				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +115				1	ks	غئرمتوقع خئمی آی:%ERROR				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +116				1	ks	فائل تصدیق كرن ویزئ آی غئر متوقع غلطی : '%FILENAME'				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +117				1	ks	 '%FILENAME' چھُ فولڈ ر 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +118				1	ks	ویب ویزارڈ سیٹینگس لوڈکران۔۔۔				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +119				1	ks	غیرمتوقع  غلطی آی				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +12				1	ks	  فائل فارمیٹ كریو برآمد  				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +120				1	ks	دستاویزن تصدیق كران۔۔۔				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +121				1	ks	میون اركایو				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +122				1	ks	تعارف				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +123				1	ks	دستاویز				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +124				1	ks	مرکزی لےآؤٹ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +125				1	ks	لےآؤٹ تفصیلات  				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +126				1	ks	 سٹائل				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +127				1	ks	ویب سائٹ مولومات				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +128				1	ks	پیش منظر				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +13				1	ks	  ویب سائٹ خعطرئ كریوآم  مو لومات دئخل 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +130				1	ks	ژعرمژئ سیٹینگس ین   خئرج کرنئ۔\nتہئ چھئوئ یژھان  سیٹینگس خئرج کرن؟				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +131				1	ks	%NUMBERصفحن				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +132				1	ks	%NUMBERسلائڈس				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +133				1	ks	بناوئمژئ: %DATE				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +134				1	ks	ٲخری تبدیل : %DATE				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +135				1	ks	ویبویزارڈ  سیٹینگس				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +136				1	ks	:پس منظرامیج  				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +137				1	ks	 :آئیکن سیٹ  				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +138				1	ks	  آئيکن سیٹ چھُ استیمال كرنئ یوان  HTMLفارمیٹ پریزینٹیشن  خعطرئ۔				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +139				1	ks	میٹاڈاٹاHTML 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 1				1	ks	ویب ویزارٹ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 10				1	ks	:خلاصہ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 102				1	ks	دیگر۔۔۔				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 103				1	ks	كہین نئ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 104				1	ks	تہنز  ویب سائٹ آی کامیابی سان بناونئ: %FILENAME				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 105				1	ks	ویب سائٹ  بناونئ ویزئ آی اكھ یا زیادئ غلطی۔				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 106				1	ks	موضوعئتی صفحن ہیوند جدول بناون ویز۪ی آی غلطی۔ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 107				1	ks	لےآؤٹ فائلئ نقل کرنئ ویزئ آی غلطی۔ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 108				1	ks	   '%FILENAMEخعطرئ دستاویزی مولومات جمع  کرنئ  ویزئ آی غلطی'۔				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 109				1	ks	 '%FILENAME' دستاویز برامد كرنئ ویزئ آی غلطی۔				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 11				1	ks	لكھٲر:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 110				1	ks	'%FILENAMEبرآمد كرنئ خعطرئ ڈائریکٹری بناون ویزئ آی غلطی    ۔				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 111				1	ks	%FILENAMEدستاویزبرآمد كرن ویزئ آی  حفاظتی غلطی    ۔				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 112				1	ks	%FILENAMEدستاویزبرآمد  کرن ویزئ آی ان پٹ/آؤٹ پٹ    غلطی۔"				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 113				1	ks	عارضی ڈائریکٹری میڈیافائلئ نقل  کرن ویزئ آی غلطی    ۔				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 114				1	ks	ویب سائٹ ہیچ مندرجہ ذیل ڈیسٹی نیشن  پیٹھ نقل كریتھ:%URL				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 115				1	ks	غئرمتوقع خئمی آی:%ERROR				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 116				1	ks	فائل تصدیق كرن ویزئ آی غئر متوقع غلطی : '%FILENAME'				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 117				1	ks	 '%FILENAME' چھُ فولڈ ر 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 118				1	ks	ویب ویزارڈ سیٹینگس لوڈکران۔۔۔				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 119				1	ks	غیرمتوقع  غلطی آی				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 12				1	ks	  فائل فارمیٹ كریو برآمد  				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 120				1	ks	دستاویزن تصدیق كران۔۔۔				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 121				1	ks	میون اركایو				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 122				1	ks	تعارف				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 123				1	ks	دستاویز				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 124				1	ks	مرکزی لےآؤٹ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 125				1	ks	لےآؤٹ تفصیلات  				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 126				1	ks	 سٹائل				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 127				1	ks	ویب سائٹ مولومات				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 128				1	ks	پیش منظر				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 13				1	ks	  ویب سائٹ خعطرئ كریوآم  مو لومات دئخل 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 130				1	ks	ژعرمژئ سیٹینگس ین   خئرج کرنئ۔\nتہئ چھئوئ یژھان  سیٹینگس خئرج کرن؟				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 131				1	ks	%NUMBERصفحن				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 132				1	ks	%NUMBERسلائڈس				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 133				1	ks	بناوئمژئ: %DATE				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 134				1	ks	ٲخری تبدیل : %DATE				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 135				1	ks	ویبویزارڈ  سیٹینگس				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 136				1	ks	:پس منظرامیج  				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 137				1	ks	 :آئیکن سیٹ  				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 138				1	ks	  آئيکن سیٹ چھُ استیمال كرنئ یوان  HTMLفارمیٹ پریزینٹیشن  خعطرئ۔				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 139				1	ks	میٹاڈاٹاHTML 				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +14				1	ks	:عنوان				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +140				1	ks	ژعریو...				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +141				1	ks	ژعریو...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +142				1	ks	<غئرموجود>				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +143				1	ks	پبلیشینگvia FTP Proxy چھُنئ معاون ۔				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +144				1	ks	<كہین پسئ   منظرامیج چھئنئ>				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +145				1	ks	<كہین  آئيکن سیٹ چھُنئ>				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +146				1	ks	FTP ڈائریکٹری '%FILENAME'  ہیچ نئ بنئویتھ۔				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 142				1	ks	<غئرموجود>				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 143				1	ks	پبلیشینگvia FTP Proxy چھُنئ معاون ۔				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 144				1	ks	<كہین پسئ   منظرامیج چھئنئ>				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 145				1	ks	<كہین  آئيکن سیٹ چھُنئ>				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 146				1	ks	FTP ڈائریکٹری '%FILENAME'  ہیچ نئ بنئویتھ۔				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +147				1	ks	FTP ڈائریکٹری '%FILENAME'  چھئنئ موجود ۔ \nنئوڈائریکٹری بنئویو وئن  ۔				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +148				1	ks	  Zip فائل '%FILENAME' ہیچ نئ بنئویتھ  : اام۪ی ناویچ  ڈائریکٹری چھئ گڈئی موجود  ۔   				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 148				1	ks	  Zip فائل '%FILENAME' ہیچ نئ بنئویتھ  : اام۪ی ناویچ  ڈائریکٹری چھئ گڈئی موجود  ۔   				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +149				1	ks	مقئمی ڈائریکٹری  '%FILENAME' ہیكٲو نئ بنئویتھ۔   \nمہربئنی كریتھ وچھیو پنن رائٹ ایکسیس  ۔.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +150				1	ks	مقئمی ڈائریکٹری '%FILENAME'  چئنئ موجود    . \nڈائریکٹری بنئویو وئن؟				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +151				1	ks	%NUMBERKB:سائز				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +152				1	ks	فائل آی نئ اتھ۪ی۔تہئ چھئوئ یژھان نئو  فائل لوکیشن مختص کرین؟				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +16				1	ks	وضاحت				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +18				1	ks	بنئومُت				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +2				1	ks	یئ ویب ویزارڈ كروئ تہ۪ی مدد دستاویز انٹرنیٹس پیٹھ چھپاونس منز۔  \n\nیہ كر۪ی  دستاویزن   تبدیل یتھ تم  ویب براؤزر  س پیٹھ ین وچھنئ ۔سکے۔مزید، كر۪ی پئدئ  مشمولات صفحن ہیوند جدولس سعتھ  لنک تاكئ دستاویزس ہیكئو آسئنی سان وئتیتھ۔ ویب ویزارڈ  دیوئ تہئ اجازتھ  ڈیزیان تئ لے آوٹ تہندئ ویبسیاٹك كسٹمایز كرنئ خعطرئ  .\n .\n تہئ ہیكیو پنن  دستاویز یم تہئ چھپئومت چھئوئ ویبس پیٹھ تازئ ترین تھئویتھ یا ہیكییو  دستاویزكن۪ی تئ ویز۪ی جمع كریتھ یا ہٹئوویتھ۔				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +20				1	ks	:ای- میل				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +21				1	ks	حق تصنیف نوٹس:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +22				1	ks	تبدیل كرمُت				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +24				1	ks	۔پیش منظر				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +25				1	ks	تہ كت۪ی چھئوئ پنین ویبسایٹ چھپاوين یژھان؟				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +26				1	ks	:نئو ویب سائٹ  چھپئویو				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +27				1	ks	لوكل فولڈرس  				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 151				1	ks	%NUMBERKB:سائز				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 152				1	ks	فائل آی نئ اتھ۪ی۔تہئ چھئوئ یژھان نئو  فائل لوکیشن مختص کرین؟				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 16				1	ks	وضاحت				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 18				1	ks	بنئومُت				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 2				1	ks	یئ ویب ویزارڈ كروئ تہ۪ی مدد دستاویز انٹرنیٹس پیٹھ چھپاونس منز۔  \n\nیہ كر۪ی  دستاویزن   تبدیل یتھ تم  ویب براؤزر  س پیٹھ ین وچھنئ ۔سکے۔مزید، كر۪ی پئدئ  مشمولات صفحن ہیوند جدولس سعتھ  لنک تاكئ دستاویزس ہیكئو آسئنی سان وئتیتھ۔ ویب ویزارڈ  دیوئ تہئ اجازتھ  ڈیزیان تئ لے آوٹ تہندئ ویبسیاٹك كسٹمایز كرنئ خعطرئ  .\n .\n تہئ ہیكیو پنن  دستاویز یم تہئ چھپئومت چھئوئ ویبس پیٹھ تازئ ترین تھئویتھ یا ہیكییو  دستاویزكن۪ی تئ ویز۪ی جمع كریتھ یا ہٹئوویتھ۔				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 20				1	ks	:ای- میل				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 21				1	ks	حق تصنیف نوٹس:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 22				1	ks	تبدیل كرمُت				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 24				1	ks	۔پیش منظر				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 25				1	ks	تہ كت۪ی چھئوئ پنین ویبسایٹ چھپاوين یژھان؟				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 26				1	ks	:نئو ویب سائٹ  چھپئویو				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 27				1	ks	لوكل فولڈرس  				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +28				1	ks	...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +29				1	ks	ویب سرورس منزvia FTP				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +31				1	ks	۔ہیئت۔۔۔  				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +32				1	ks	 آرکیومنزZIP				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 29				1	ks	ویب سرورس منزvia FTP				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 31				1	ks	۔ہیئت۔۔۔  				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 32				1	ks	 آرکیومنزZIP				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +33				1	ks	...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +34				1	ks	سیٹینگس كریو محفوظ(مشورئ چھُوئ)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +35				1	ks	محفوظ تھئیویو  اِتھكئن				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +36				1	ks	ویب ویزارڈ خعطرئ ژعریوسیٹینگس  				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +37				1	ks	ویب سائٹ موضوع				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +38				1	ks	۔جمع ۔۔۔				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +39				1	ks	ہٹئویو				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +4				1	ks	خارج کرو				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +40				1	ks	پنئن۪ی ویب سائٹ كئ جدول کنٹینٹس خعطرئ ژعریولےآؤٹ 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +41				1	ks	 جدول کنٹینٹس صفحہ خعطرئ ژعریو سٹائل  				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +42				1	ks	: سٹائل				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +48				1	ks	۔لےآؤٹس:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +5				1	ks	تعاروف				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +50				1	ks	۔وضاحت				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +51				1	ks	۔مصنف				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +52				1	ks	تئریخ  بنئو یو				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +53				1	ks	ٲخری تبدیل تئریخ 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +54				1	ks	فائل  ہیوند نام				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +55				1	ks	فائل فارمیٹ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +56				1	ks	فائل فارمیٹ آئیکن				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +57				1	ks	صفن ہیوند    تعداد				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +58				1	ks	  سائزKB منز				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +59				1	ks	 Preview' كریو كلیك پنئنس براوزرس منز  پریویو وچھنئ خعطرئ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +6				1	ks	دستاویزات کاانتخاب کریں جوآپ اشاعت    کرناچاہتےہیں				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +60				1	ks	ژعرمُت  لےآؤٹ كریو كسٹمایز				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +61				1	ks	مندرجہ ذیل مولومات كریو دئخل ہر كن۪ی دستاویز خعطرئ جدول   کنٹینٹسن منز:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +62				1	ks	 سکرین ریزولیوشن خعطرئ كریو لے آؤٹ  آپٹیمایز:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +64				1	ks	640x480				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +65				1	ks	800x600				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +66				1	ks	1024x768				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +70				1	ks	تہنز ویبسایٹ بناوان				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +71				1	ks	%START - %END/%TOTAL				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +72				1	ks	میئن ویب سائٹ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +73				1	ks	FTPٹارگیٹ '%FILENAME' چھئ فائل  				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +74				1	ks	مقئمی ٹارگیٹ '%FILENAME' چھئ فائل  				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +75				1	ks	 ZIPٹارگیٹ '%FILENAME'چھئ گڈئی موجود ۔تہئ چھئوو یژھان موجودٹارگیٹس پیٹھ  اوررائٹ کرُن				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +76				1	ks	FTPٹارگیٹ ڈائریکٹری '%FILENAME' چھئنئ خئلی  ۔كیہں فایلئ ین  اووررایٹرن كرنئ۔تہئ چھئوئ یژھان جئری تھئوُن؟				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +77				1	ks	مقئمی ٹارگیٹ ڈائریکٹری  '%FILENAME' چھئنئ خئلی   ۔كیہں فائلئ گئیی اوورریٹ ۔تہئ چھئوئ یژھان جئری تھئوُن؟				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +78				1	ks	یم۪ی ناو چئ سیٹینگس چھئ گڈئی موجود۔تہئ چھئو ئ  یژھان موجودئ   سیٹینگسن پیٹھ اووررایٹ؟				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +79				1	ks	دستاویزبرآمدکران۔۔۔				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +8				1	ks	دستاویز مولومات				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +80				1	ks	برآمد رتیارکران				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +81				1	ks	لےآؤٹ فائلئ  نقل کران۔۔۔				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +82				1	ks	کنٹینٹس جنریشنك جدول تیارکران۔۔۔				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +83				1	ks	جدول موضوعات بنٲوان۔۔۔				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +84				1	ks	انیشیئلائزکران				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +86				1	ks	 شایع كرنئ  خعطرئ تیار كران۔۔۔				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +87				1	ks	مقئمی ڈائریکٹری پیٹھ   شایع كران۔۔۔				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +88				1	ks	FTPڈیسٹی نیشن منز  شایع  كران۔۔۔				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +89				1	ks	ZIP محفوظ خانس منز  شایع  كران۔۔۔				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +9				1	ks	:عنوان				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 34				1	ks	سیٹینگس كریو محفوظ(مشورئ چھُوئ)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 35				1	ks	محفوظ تھئیویو  اِتھكئن				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 36				1	ks	ویب ویزارڈ خعطرئ ژعریوسیٹینگس  				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 37				1	ks	ویب سائٹ موضوع				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 38				1	ks	۔جمع ۔۔۔				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 39				1	ks	ہٹئویو				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 4				1	ks	خارج کرو				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 40				1	ks	پنئن۪ی ویب سائٹ كئ جدول کنٹینٹس خعطرئ ژعریولےآؤٹ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 41				1	ks	 جدول کنٹینٹس صفحہ خعطرئ ژعریو سٹائل  				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 42				1	ks	: سٹائل				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 48				1	ks	۔لےآؤٹس:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 5				1	ks	تعاروف				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 50				1	ks	۔وضاحت				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 51				1	ks	۔مصنف				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 52				1	ks	تئریخ  بنئو یو				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 53				1	ks	ٲخری تبدیل تئریخ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 54				1	ks	فائل  ہیوند نام				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 55				1	ks	فائل فارمیٹ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 56				1	ks	فائل فارمیٹ آئیکن				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 57				1	ks	صفن ہیوند    تعداد				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 58				1	ks	  سائزKB منز				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 59				1	ks	 Preview' كریو كلیك پنئنس براوزرس منز  پریویو وچھنئ خعطرئ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 6				1	ks	دستاویزات کاانتخاب کریں جوآپ اشاعت    کرناچاہتےہیں				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 60				1	ks	ژعرمُت  لےآؤٹ كریو كسٹمایز				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 61				1	ks	مندرجہ ذیل مولومات كریو دئخل ہر كن۪ی دستاویز خعطرئ جدول   کنٹینٹسن منز:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 62				1	ks	 سکرین ریزولیوشن خعطرئ كریو لے آؤٹ  آپٹیمایز:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 64				1	ks	640x480				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 65				1	ks	800x600				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 66				1	ks	1024x768				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 70				1	ks	تہنز ویبسایٹ بناوان				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 71				1	ks	%START - %END/%TOTAL				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 72				1	ks	میئن ویب سائٹ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 73				1	ks	FTPٹارگیٹ '%FILENAME' چھئ فائل  				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 74				1	ks	مقئمی ٹارگیٹ '%FILENAME' چھئ فائل  				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 75				1	ks	 ZIPٹارگیٹ '%FILENAME'چھئ گڈئی موجود ۔تہئ چھئوو یژھان موجودٹارگیٹس پیٹھ  اوررائٹ کرُن				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 76				1	ks	FTPٹارگیٹ ڈائریکٹری '%FILENAME' چھئنئ خئلی  ۔كیہں فایلئ ین  اووررایٹرن كرنئ۔تہئ چھئوئ یژھان جئری تھئوُن؟				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 77				1	ks	مقئمی ٹارگیٹ ڈائریکٹری  '%FILENAME' چھئنئ خئلی   ۔كیہں فائلئ گئیی اوورریٹ ۔تہئ چھئوئ یژھان جئری تھئوُن؟				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 78				1	ks	یم۪ی ناو چئ سیٹینگس چھئ گڈئی موجود۔تہئ چھئو ئ  یژھان موجودئ   سیٹینگسن پیٹھ اووررایٹ؟				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 79				1	ks	دستاویزبرآمدکران۔۔۔				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 8				1	ks	دستاویز مولومات				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 80				1	ks	برآمد رتیارکران				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 81				1	ks	لےآؤٹ فائلئ  نقل کران۔۔۔				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 82				1	ks	کنٹینٹس جنریشنك جدول تیارکران۔۔۔				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 83				1	ks	جدول موضوعات بنٲوان۔۔۔				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 84				1	ks	انیشیئلائزکران				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 86				1	ks	 شایع كرنئ  خعطرئ تیار كران۔۔۔				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 87				1	ks	مقئمی ڈائریکٹری پیٹھ   شایع كران۔۔۔				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 88				1	ks	FTPڈیسٹی نیشن منز  شایع  كران۔۔۔				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 89				1	ks	ZIP محفوظ خانس منز  شایع  كران۔۔۔				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 9				1	ks	:عنوان				2002-02-02 02:02:02
 wizards	source\importwizard\importwi.src	0	string	sBackButton				1	ks	<< واپس 				2002-02-02 02:02:02
 wizards	source\importwizard\importwi.src	0	string	sBeginButton				1	ks	۔تیدیل کریو				2002-02-02 02:02:02
 wizards	source\importwizard\importwi.src	0	string	sCancelButton				1	ks	۔منسوخ				2002-02-02 02:02:02

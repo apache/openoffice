@@ -19232,7 +19232,7 @@ sw	source\ui\app\app.src	0	string	STR_STATSTR_TOX_UPDATE				1	mni	ইন্দ�
 sw	source\ui\app\app.src	0	string	STR_STATSTR_W4WREAD				1	mni	দোকুমেন্ত পুশিল্লক্লি...				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_STATSTR_W4WWRITE				1	mni	দোকুমেন্ত থাদোক্লি...				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_TABLE_DEFNAME				1	mni	তেবল				2002-02-02 02:02:02
-sw	source\ui\app\app.src	0	string	STR_UNBENANNT				1	mni	মিংথোন্দবা				2002-02-02 02:02:02
+sw	source\ui\app\app.src	0	string	STR_UNTITLED				1	mni	মিংথোন্দবা				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_WESTERN_FONT				1	mni	নোংচুপলোমগী তেক্স: 				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_WRITER_DOCUMENT_FULLTYPE				1	mni	%PRODUCTNAME %PRODUCTVERSION তেক্স দোকুমেন্ত				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	warningbox	MSG_DATA_SOURCES_UNAVAILABLE		HID_DATA_SOURCES_UNAVAILABLE		202	mni	দাতা হৌরকফম অমত্তা সেত অপ তৌদ্রি. অদোম্না দাতা হৌরকফম অমা দরকার ওই, খুদম ওইনা দাতাবেজ অমা, ফিল্দশিংগী দাতা পীনবা (খুদম ওইনা, মিংশিং অমসুং লৈফমশিং)				2002-02-02 02:02:02
@@ -20144,7 +20144,7 @@ sw	source\ui\docvw\docvw.src	0	string	STR_CHAIN_SOURCE_CHAINED				0	mni	হৌ�
 sw	source\ui\docvw\docvw.src	0	string	STR_CHAIN_WRONG_AREA				0	mni	মরীদুগীদমক তার্গেত ফ্ৰেমদু  শিজিন্নবা য়াদবা মফমদা লৈরে.				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_ENDNOTE				0	mni	ইন্দনোত: 				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_EXPORT_GRAFIK_TITLE				0	mni	গ্রাফিক্স থাদোকপা				2002-02-02 02:02:02
-sw	source\ui\docvw\docvw.src	0	string	STR_FTNNOTE				0	mni	ফুতনোত: 				2002-02-02 02:02:02
+sw	source\ui\docvw\docvw.src	0	string	STR_FOOTNOTE				0	mni	ফুতনোত: 				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_REDLINE_DELETE				0	mni	মুত্থতলে				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_REDLINE_FMTCOLL				0	mni	শিজিন্নরবা পেরেগ্ৰাফ স্তাইলশিং				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_REDLINE_FORMAT				0	mni	ফোর্মেত তৌরে				2002-02-02 02:02:02
@@ -21260,11 +21260,11 @@ sw	source\ui\ribbar\inputwin.src	0	toolboxitem	TB_INPUT	FN_FORMULA_APPLY	FN_FORM
 sw	source\ui\ribbar\inputwin.src	0	toolboxitem	TB_INPUT	FN_FORMULA_CALC	FN_FORMULA_CALC		500	mni	ফোর্মুলা				2002-02-02 02:02:02
 sw	source\ui\ribbar\inputwin.src	0	toolboxitem	TB_INPUT	FN_FORMULA_CANCEL	FN_FORMULA_CANCEL		500	mni	ককথতলু				2002-02-02 02:02:02
 sw	source\ui\ribbar\tblctrl.src	0	floatingwindow	RID_TBL_OPT_CTRL		HID_TBL_OPT_CTRL		0	mni	ওপ্তিমাইজ তৌ				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_AT_CHAR			0	mni	ময়েক্তা				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_CHAR			0	mni	ময়েক ওইনা				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_FRAME			0	mni	ফ্রেম				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_PAGE			0	mni	লমাই				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_PARAGRAPH			0	mni	পেরেগ্ৰাফ				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_AT_CHAR			0	mni	ময়েক্তা				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_CHAR			0	mni	ময়েক ওইনা				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_FRAME			0	mni	ফ্রেম				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_PAGE			0	mni	লমাই				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_PARAGRAPH			0	mni	পেরেগ্ৰাফ				2002-02-02 02:02:02
 sw	source\ui\ribbar\workctrl.src	0	floatingwindow	RID_INSERT_CTRL		HID_INSERT_CTRL		0	mni	হাপচিল্লু				2002-02-02 02:02:02
 sw	source\ui\ribbar\workctrl.src	0	floatingwindow	RID_INSERT_OBJ_CTRL		HID_INSERT_OBJ_CTRL		0	mni	পোত্শক হাপচিল্লু				2002-02-02 02:02:02
 sw	source\ui\ribbar\workctrl.src	0	floatingwindow	RID_SCROLL_NAVIGATION_WIN		HID_INSERT_CTRL		0	mni	নেভিগেসন্				2002-02-02 02:02:02
@@ -22347,21 +22347,21 @@ wizards	source\euro\euro.src	0	string	STEP_ZERO + 8				0	mni	লোয়শিল�
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 16				1	mni	লৈফম:				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 4				1	mni	লৈফম অমসুং ফাইলগী মমিং:				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 47				1	mni	লৈফম				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +1				1	mni	নৈনরোল ৱিজাৰ্দ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +10				1	mni	চানবিদুনা অদোম্না অদোদগী নোমুনাদা য়াওশিনবা পাম্বা মিংশিং খনবিয়ু				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 1				1	mni	নৈনরোল ৱিজাৰ্দ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 10				1	mni	চানবিদুনা অদোম্না অদোদগী নোমুনাদা য়াওশিনবা পাম্বা মিংশিং খনবিয়ু				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +11				1	mni	মিং অমা খল্লো অমসুং নোমুনাদু সেভ তৌরো				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +12				1	mni	মিনিতশিং রেকোৰ্দ তৌবগীদমক ফোৰ্ম য়াওশিল্লো				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +13				1	mni	মসিগী ৱিজার্দসিনা অদোমবু নৈনরোল নোমুনা অমা শেমগত্পদা মতেং পাংগনি.  অদুদগী নোমুনাদুনা নৈনরোল অমা শেমগতবগীদমক দরকার ওইরবা মতমদা শিজিন্নবা য়াগনি.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +14				1	mni	মতম:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 12				1	mni	মিনিতশিং রেকোৰ্দ তৌবগীদমক ফোৰ্ম য়াওশিল্লো				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 13				1	mni	মসিগী ৱিজার্দসিনা অদোমবু নৈনরোল নোমুনা অমা শেমগত্পদা মতেং পাংগনি.  অদুদগী নোমুনাদুনা নৈনরোল অমা শেমগতবগীদমক দরকার ওইরবা মতমদা শিজিন্নবা য়াগনি.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 14				1	mni	মতম:				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +15				1	mni	মিং:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +17				1	mni	অহাংবা ফিল্দশিংদা মফম কল্লিবশিং শিজিন্নরগনি. মতুংদা অদোম্না মফম কল্লিবশিং তেক্সতনা মহুত শিন্দোকপা য়াগনি.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 17				1	mni	অহাংবা ফিল্দশিংদা মফম কল্লিবশিং শিজিন্নরগনি. মতুংদা অদোম্না মফম কল্লিবশিং তেক্সতনা মহুত শিন্দোকপা য়াগনি.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +18				1	mni	...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +19				1	mni	মসিগী নোমুনাসিদগী নৈনরোল অমা শেম্মু				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +2				1	mni	মসিগী নৈনরোল নোমুনাদা খুতকী ওইবা অহোংবা শেম্মো				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +20				1	mni	নোমুনাগী ৱাংমদা অনৌবা নৈনরোল অমা শেমগতনবগীদমক, অদোম্না সেভ তৌখিবা নোমুনাদুদা চতলু অমসুং ফাইলদু ক্লিক অনীরক তৌরো.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +21				1	mni	নৈনরোল আইতেম 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +22				1	mni	দায়ত্য লৈবা				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +23				1	mni	মতম				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 19				1	mni	মসিগী নোমুনাসিদগী নৈনরোল অমা শেম্মু				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 2				1	mni	মসিগী নৈনরোল নোমুনাদা খুতকী ওইবা অহোংবা শেম্মো				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 20				1	mni	নোমুনাগী ৱাংমদা অনৌবা নৈনরোল অমা শেমগতনবগীদমক, অদোম্না সেভ তৌখিবা নোমুনাদুদা চতলু অমসুং ফাইলদু ক্লিক অনীরক তৌরো.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 21				1	mni	নৈনরোল আইতেম 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 22				1	mni	দায়ত্য লৈবা				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 23				1	mni	মতম				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +24				1	mni	... না কৌবা মীফম				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +25				1	mni	থৌবুরেল				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +26				1	mni	মিনিত ঙাক্লিবা				2002-02-02 02:02:02
@@ -22370,34 +22370,34 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +28
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +29				1	mni	য়েংশিল্লবশিং				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +3				1	mni	নোমুনাগী মমিং:				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +30				1	mni	শিন্মীশিংগী খুদোংচাবা				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +31				1	mni	নৈনরোল নোমুনানা খনগতলবা মীশিংগীদমক মফম কল্লিবশিং য়াওশিল্লগনি. নোমুনাদগী নৈনরোল অমা শেম্লিঙৈদা, অদোম্না মফম কল্লিবশিংসি চান্নবা মিংশিংনা মহুত শিন্দোকপা য়াই. 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 31				1	mni	নৈনরোল নোমুনানা খনগতলবা মীশিংগীদমক মফম কল্লিবশিং য়াওশিল্লগনি. নোমুনাদগী নৈনরোল অমা শেম্লিঙৈদা, অদোম্না মফম কল্লিবশিংসি চান্নবা মিংশিংনা মহুত শিন্দোকপা য়াই. 				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +32				1	mni	মীফমগী মখল				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +33				1	mni	চানবিদুনা পাবিয়ু				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +34				1	mni	চানবিদুনা পুবিরকউ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +35				1	mni	মরুওইবা ৱারোলশিং				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +36				1	mni	নৈনরোলগী নোমুনানা খল্লবা আইতেমশিংগীদমক মফম কল্লিবশিং য়াওশিল্লগনি. 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 36				1	mni	নৈনরোলগী নোমুনানা খল্লবা আইতেমশিংগীদমক মফম কল্লিবশিং য়াওশিল্লগনি. 				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +38				1	mni	তাং:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +39				1	mni	মসিগী ৱিজার্দসিনা নৈনরোল নোমুনা অমা শেমগল্লে মদুনা অদোম্বু চপ মান্নবা উত্থোকপা অমসুং সেত্তিংশিংগা লোয়ননা অয়াম্বা নৈনরোল শেমগত্পা ঙমহল্লি.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +40				1	mni	লমায়গী দিজাইন:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +41				1	mni	ঐগী নৈনরোল নোমুনা.stw				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +42				1	mni	ঐগী নৈনরোল নোমুনা				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +43				1	mni	নৈনরোল নোমুনাদু সেভ তৌরিঙৈদা থাজদবা অশোয়বা অমা থোক্লে.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +44				1	mni	মিং				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +45				1	mni	তাং				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +46				1	mni	মতম				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +48				1	mni	মসিগী তেক্সসি মহুত শিন্দোকনবা ক্লিক তৌরো				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 39				1	mni	মসিগী ৱিজার্দসিনা নৈনরোল নোমুনা অমা শেমগল্লে মদুনা অদোম্বু চপ মান্নবা উত্থোকপা অমসুং সেত্তিংশিংগা লোয়ননা অয়াম্বা নৈনরোল শেমগত্পা ঙমহল্লি.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 40				1	mni	লমায়গী দিজাইন:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 41				1	mni	ঐগী নৈনরোল নোমুনা.stw				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 42				1	mni	ঐগী নৈনরোল নোমুনা				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 43				1	mni	নৈনরোল নোমুনাদু সেভ তৌরিঙৈদা থাজদবা অশোয়বা অমা থোক্লে.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 44				1	mni	মিং				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 45				1	mni	তাং				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 46				1	mni	মতম				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 48				1	mni	মসিগী তেক্সসি মহুত শিন্দোকনবা ক্লিক তৌরো				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +5				1	mni	মসিগী মথংদা অদোম করি তৌবা পাম্বিবগে?				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +50				1	mni	লমায়গী দিজাইন				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +51				1	mni	ময়ামগী ওইবা ঈপাউ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +52				1	mni	য়াওগদবা মকোক্কী মমিং				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +53				1	mni	মিংশিং				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +54				1	mni	নৈনরোল আইতেমশিং				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 51				1	mni	ময়ামগী ওইবা ঈপাউ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 52				1	mni	য়াওগদবা মকোক্কী মমিং				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 53				1	mni	মিংশিং				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 54				1	mni	নৈনরোল আইতেমশিং				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +55				1	mni	মিং অমসুং মফম				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +56				1	mni	নৈনরোল ওইরিবা নোমুনাদু হাংবা মতমদা থাজদবা অশোয়বা অমা থোক্লে.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 56				1	mni	নৈনরোল ওইরিবা নোমুনাদু হাংবা মতমদা থাজদবা অশোয়বা অমা থোক্লে.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +57				1	mni	মীফমগী মখল				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +58				1	mni	চানবিদুনা পুবিরকউ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +59				1	mni	চানবিদুনা পাবিয়ু				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +6				1	mni	চানবিদুনা নৈনরোলগীদমক লমায়গী দিজাইনদু খনবিয়ু				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 6				1	mni	চানবিদুনা নৈনরোলগীদমক লমায়গী দিজাইনদু খনবিয়ু				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +60				1	mni	মরুওইবা ৱারোলশিং				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +61				1	mni	... না কৌবা মীফম				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +62				1	mni	থৌবুরেল				2002-02-02 02:02:02
@@ -22406,13 +22406,13 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +64
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +65				1	mni	মোদরেতর				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +66				1	mni	য়েংশিল্লবশিং				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +67				1	mni	শিন্মীশিংগী খুদোংচাবা				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +68				1	mni	হাপচিনবা				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +69				1	mni	লৌথোকপা				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +7				1	mni	চানবিদুনা অদোম্না অদোমগী নৈনরোল নোমুনাদা য়াওহনবা পাম্বা মিংথোলশিং খনবিয়ু				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +70				1	mni	মথক্তা কাখত্পা				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +71				1	mni	মখাদা কুমথবা				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +8				1	mni	চানবিদুনা থৌদোক্তুগীদমক ময়ামগী ওইবা ঈপাউ চংশিনবিয়ু				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +9				1	mni	চানবিদুনা নৈনরোলগীদমক আইতেমশিং শক্তাকউ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 68				1	mni	হাপচিনবা				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 69				1	mni	লৌথোকপা				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 7				1	mni	চানবিদুনা অদোম্না অদোমগী নৈনরোল নোমুনাদা য়াওহনবা পাম্বা মিংথোলশিং খনবিয়ু				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 70				1	mni	মথক্তা কাখত্পা				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 71				1	mni	মখাদা কুমথবা				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 8				1	mni	চানবিদুনা থৌদোক্তুগীদমক ময়ামগী ওইবা ঈপাউ চংশিনবিয়ু				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 9				1	mni	চানবিদুনা নৈনরোলগীদমক আইতেমশিং শক্তাকউ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_COMMON_START + 0				1	mni	 '%1' দাইরেক্তোরী শেম্বা ঙমদ্রে. <BR> অদোমগী হাৰ্দ দিস্কতা চপ চাবা অহাংবা মফম লৈত্রে.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_COMMON_START + 1				1	mni	তেক্স দোকুমেন্ত শেম্বা ঙমদ্রে.<BR> চানবিদুনা মোদ্যুল 'PRODUCTNAME রাইতর' ইনস্তোল তৌবরা য়েংশিনবিয়ু.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_COMMON_START + 10				1	mni	নত্তে				2002-02-02 02:02:02
@@ -22837,25 +22837,25 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_LETTERWIZARDROADMAP_START + 
 wizards	source\formwizard\dbwizres.src	0	string	RID_LETTERWIZARDSALUTATION_START + 1				1	mni	মসি কনাগা মরী লৈনৈ				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_LETTERWIZARDSALUTATION_START + 2				1	mni	ইকাইখুম্নজরিবা নত্রগা ইকাইখুম্নজরিবী				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_LETTERWIZARDSALUTATION_START + 3				1	mni	হল্লো				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +0				1	mni	 FTP শম্নবা				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +1				1	mni	~শিজিন্নরিবগী মিং:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +10				1	mni	শম্নবা অসি মায়পাকনা হৌরে				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +11				1	mni	শিজিন্নরিবগী মিং নত্রগা পাসৱাৰ্দ শোয়রে				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +12				1	mni	সৰ্ভরগী মিং লেপকপা ঙমদ্রে				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +13				1	mni	অদোম শিজিন্নবগী মপুংফাবা হকশিং লৈতে				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +14				1	mni	সৰ্ভরদা শম্নবা ঙমদ্রে				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +15				1	mni	থাজদবা অশোয়বা				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +16				1	mni	FTP ফোঙদোক্লিবা দাইরেক্তোরি 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +17				1	mni	মসি FTP ফোল্দর অমা নত্তে				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +18				1	mni	শম্নরিবা...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +2				1	mni	~পাসৱাৰ্দ:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +3				1	mni	শম্নৌ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +4				1	mni	1. FTP শম্নবগী ঈপাউ চংশিনবিয়ু.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +5				1	mni	~সৰ্ভরগী মমিং নত্রগা IP লৈফম:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +6				1	mni	2. সৰ্ভরদা শমনরো.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +7				1	mni	3. ~রিমোত দাইরেক্তোরি অমা খল্লো (অপাম্বা ওইবা).				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 0				1	mni	 FTP শম্নবা				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 1				1	mni	~শিজিন্নরিবগী মিং:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 10				1	mni	শম্নবা অসি মায়পাকনা হৌরে				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 11				1	mni	শিজিন্নরিবগী মিং নত্রগা পাসৱাৰ্দ শোয়রে				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 12				1	mni	সৰ্ভরগী মিং লেপকপা ঙমদ্রে				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 13				1	mni	অদোম শিজিন্নবগী মপুংফাবা হকশিং লৈতে				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 14				1	mni	সৰ্ভরদা শম্নবা ঙমদ্রে				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 15				1	mni	থাজদবা অশোয়বা				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 16				1	mni	FTP ফোঙদোক্লিবা দাইরেক্তোরি 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 17				1	mni	মসি FTP ফোল্দর অমা নত্তে				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 18				1	mni	শম্নরিবা...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 2				1	mni	~পাসৱাৰ্দ:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 3				1	mni	শম্নৌ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 4				1	mni	1. FTP শম্নবগী ঈপাউ চংশিনবিয়ু.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 5				1	mni	~সৰ্ভরগী মমিং নত্রগা IP লৈফম:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 6				1	mni	2. সৰ্ভরদা শমনরো.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 7				1	mni	3. ~রিমোত দাইরেক্তোরি অমা খল্লো (অপাম্বা ওইবা).				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +8				1	mni	...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +9				1	mni	শম্নবগী ফিবম অসি মশক খঙদে				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 9				1	mni	শম্নবগী ফিবম অসি মশক খঙদে				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 100				1	mni	আইকোন সেতশিং				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 101				1	mni	আইকোন সেত অমা খল্লো:				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 90				1	mni	লোয়শিল্লক্লিবা...				2002-02-02 02:02:02
@@ -22864,127 +22864,127 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 95		
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 96				1	mni	ZIP আৰ্কাইভ ফাইলশিং				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 98				1	mni	বেকগ্রাউনদ মমিশিং				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 99				1	mni	বেকগ্রাউনদ মমি অমা খল্লো: 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +1				1	mni	ৱেব ৱিজাৰ্দ 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +10				1	mni	~অশম্বা ৱারি:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +102				1	mni	অতোপ্পা...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +103				1	mni	অমত্তা নত্তে				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +104				1	mni	অদোমগী ৱেব সাইত্তু: %FILENAME দা মায়পাক্না শেম্লে				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +105				1	mni	ৱেব সাইত্তু শেম্লিঙৈদা অশোয়বা অমা নত্রগা অমদগী হেনবা থোক্লে.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +106				1	mni	হীরমশিংগী তেবল লামায়শিং শেম্লিঙৈদা অশোয়বা অমা থোক্লে.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +107				1	mni	শকওং ফাইলশিং শিল্লিঙৈদা অশোয়বা অমা থোক্লে.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +108				1	mni	'%FILENAME' গীদমক দোকুমেন্তকী ঈপাউ খোমজিল্লিঙৈদা অশোয়বা অমা থোক্লে.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +109				1	mni	'%FILENAME' দোকুমেন্ততু থাদোক্লিঙৈদা অশোয়বা অমা থোক্লে.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +11				1	mni	অইবা:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +110				1	mni	'%FILENAME' থাদোকনবগীদমক দাইরেক্তোরি অমা শেম্লিঙৈদা অশোয়বা অমা থোক্লে.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +111				1	mni	'%FILENAME' দোকুমেন্ততু থাদোক্লিঙৈদা সেক্যুরিতিগী অশোয়বা অমা থোক্লে.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +112				1	mni	'%FILENAME' দোকুমেন্ততু থাদোক্লিঙৈদা ইনপুত/আউতপুতকী অশোয়বা অমা থোক্লে.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +113				1	mni	মতম খরগী ওইবা দাইরেক্তোরিদা মেদিয়া ফাইলশিং শিনজিল্লিঙৈদা অশোয়বা অমা থোক্লে.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +114				1	mni	%URL: মখাগী পন্থুংমফম অসিদা ৱেব সাইত্তু শিনজিনবা ঙমদ্রে				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +115				1	mni	থাজদবা অশোয়বা অমা থোক্লে: %ERROR				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +116				1	mni	'%FILENAME' : ফাইলদু চুমথোক্লিঙৈদা থাজদবা অশোয়বা অমা থোক্লে				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +117				1	mni	%FILENAME' অসি ফোল্দর অমনি.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +118				1	mni	ৱেব ৱিজাৰ্দ সেত্তিংশিং লোদ তৌরি...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +119				1	mni	থাজদবা অশোয়বা অমা থোক্লে.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +12				1	mni	~ফাইল ফোর্মেত্তা পুথোকখিবা:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +120				1	mni	দোকুমেন্তশিং চুমথোকলি...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +121				1	mni	ঐগী আর্কাইভ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +122				1	mni	ৱাহৌদোক				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +123				1	mni	দোকুমেন্তশিং				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +124				1	mni	মরুওইবা শকওং				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +125				1	mni	শকওংগী মচাখায়বশিং				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +126				1	mni	মওং				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +127				1	mni	ৱেব সাইতকী ঈপাউ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +128				1	mni	অহানবা মীতয়েং				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +13				1	mni	অদোমগী ৱেব সাইতকীদমক ময়ামগী ওইবা ঈপাউ চংশিনবিয়ু				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +130				1	mni	খল্লবা সেত্তিংশিং মুত্থতলগনি.\n\nঅদোম্না মসিগী সেত্তিংশিংসি তশেংনা মুত্থত্পা পামব্রা? 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +131				1	mni	%NUMBER লমায়শিং				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +132				1	mni	%NUMBER স্লাইদশিং				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +133				1	mni	শেমগতলবা: %DATE				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +134				1	mni	অরোয়বা ওইনা শোমদোক্লবা: %DATE				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +135				1	mni	ৱেব ৱিজাৰ্দ সেত্তিংশিং				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +136				1	mni	বেকগ্রাউন্দগী মমি:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +137				1	mni	আইকোন সেত:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +138				1	mni	আইকোন সেত অসি HTML ফোর্মেত অউত্পগীদমক শিজিন্নরে.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +139				1	mni	HTML মেতাদাতা				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 1				1	mni	ৱেব ৱিজাৰ্দ 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 10				1	mni	~অশম্বা ৱারি:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 102				1	mni	অতোপ্পা...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 103				1	mni	অমত্তা নত্তে				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 104				1	mni	অদোমগী ৱেব সাইত্তু: %FILENAME দা মায়পাক্না শেম্লে				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 105				1	mni	ৱেব সাইত্তু শেম্লিঙৈদা অশোয়বা অমা নত্রগা অমদগী হেনবা থোক্লে.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 106				1	mni	হীরমশিংগী তেবল লামায়শিং শেম্লিঙৈদা অশোয়বা অমা থোক্লে.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 107				1	mni	শকওং ফাইলশিং শিল্লিঙৈদা অশোয়বা অমা থোক্লে.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 108				1	mni	'%FILENAME' গীদমক দোকুমেন্তকী ঈপাউ খোমজিল্লিঙৈদা অশোয়বা অমা থোক্লে.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 109				1	mni	'%FILENAME' দোকুমেন্ততু থাদোক্লিঙৈদা অশোয়বা অমা থোক্লে.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 11				1	mni	অইবা:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 110				1	mni	'%FILENAME' থাদোকনবগীদমক দাইরেক্তোরি অমা শেম্লিঙৈদা অশোয়বা অমা থোক্লে.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 111				1	mni	'%FILENAME' দোকুমেন্ততু থাদোক্লিঙৈদা সেক্যুরিতিগী অশোয়বা অমা থোক্লে.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 112				1	mni	'%FILENAME' দোকুমেন্ততু থাদোক্লিঙৈদা ইনপুত/আউতপুতকী অশোয়বা অমা থোক্লে.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 113				1	mni	মতম খরগী ওইবা দাইরেক্তোরিদা মেদিয়া ফাইলশিং শিনজিল্লিঙৈদা অশোয়বা অমা থোক্লে.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 114				1	mni	%URL: মখাগী পন্থুংমফম অসিদা ৱেব সাইত্তু শিনজিনবা ঙমদ্রে				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 115				1	mni	থাজদবা অশোয়বা অমা থোক্লে: %ERROR				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 116				1	mni	'%FILENAME' : ফাইলদু চুমথোক্লিঙৈদা থাজদবা অশোয়বা অমা থোক্লে				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 117				1	mni	%FILENAME' অসি ফোল্দর অমনি.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 118				1	mni	ৱেব ৱিজাৰ্দ সেত্তিংশিং লোদ তৌরি...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 119				1	mni	থাজদবা অশোয়বা অমা থোক্লে.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 12				1	mni	~ফাইল ফোর্মেত্তা পুথোকখিবা:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 120				1	mni	দোকুমেন্তশিং চুমথোকলি...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 121				1	mni	ঐগী আর্কাইভ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 122				1	mni	ৱাহৌদোক				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 123				1	mni	দোকুমেন্তশিং				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 124				1	mni	মরুওইবা শকওং				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 125				1	mni	শকওংগী মচাখায়বশিং				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 126				1	mni	মওং				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 127				1	mni	ৱেব সাইতকী ঈপাউ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 128				1	mni	অহানবা মীতয়েং				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 13				1	mni	অদোমগী ৱেব সাইতকীদমক ময়ামগী ওইবা ঈপাউ চংশিনবিয়ু				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 130				1	mni	খল্লবা সেত্তিংশিং মুত্থতলগনি.\n\nঅদোম্না মসিগী সেত্তিংশিংসি তশেংনা মুত্থত্পা পামব্রা? 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 131				1	mni	%NUMBER লমায়শিং				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 132				1	mni	%NUMBER স্লাইদশিং				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 133				1	mni	শেমগতলবা: %DATE				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 134				1	mni	অরোয়বা ওইনা শোমদোক্লবা: %DATE				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 135				1	mni	ৱেব ৱিজাৰ্দ সেত্তিংশিং				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 136				1	mni	বেকগ্রাউন্দগী মমি:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 137				1	mni	আইকোন সেত:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 138				1	mni	আইকোন সেত অসি HTML ফোর্মেত অউত্পগীদমক শিজিন্নরে.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 139				1	mni	HTML মেতাদাতা				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +14				1	mni	মিংথোল:				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +140				1	mni	খল্লো...				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +141				1	mni	খল্লো...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +142				1	mni	<দিফোল্ত>				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +143				1	mni	 FTP প্ৰোক্সিগী মতেংনা ফোঙবা তেংবাংদ্রে.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +144				1	mni	<বেকগ্রাউন্দগী মমি অমত্তা নত্তে>				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +145				1	mni	< আইকোন সেত নত্তে>				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +146				1	mni	 FTP দাইরেক্তোরি '%FILENAME' শেমগত্পা ঙমদ্রে.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 142				1	mni	<দিফোল্ত>				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 143				1	mni	 FTP প্ৰোক্সিগী মতেংনা ফোঙবা তেংবাংদ্রে.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 144				1	mni	<বেকগ্রাউন্দগী মমি অমত্তা নত্তে>				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 145				1	mni	< আইকোন সেত নত্তে>				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 146				1	mni	 FTP দাইরেক্তোরি '%FILENAME' শেমগত্পা ঙমদ্রে.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +147				1	mni	 FTP দাইরেক্তোরি '%FILENAME' লৈত্রে. \nহৌজিক দাইরেক্তোরিদু শেমগতকদ্রা?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +148				1	mni	'%FILENAME' জিপ ফাইল শেমগত্পা ঙমদ্রে: চপ মান্নবা দাইরেক্তোরি মিং অমা হাননা লৈরে.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 148				1	mni	'%FILENAME' জিপ ফাইল শেমগত্পা ঙমদ্রে: চপ মান্নবা দাইরেক্তোরি মিং অমা হাননা লৈরে.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +149				1	mni	'%FILENAME' লোকেল দাইরেক্তোরি শেমগত্পা ঙমদ্রে.\nচানবিদুনা অদোমগী রাইত-এক্সেস য়েংশিনবিয়ু.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +150				1	mni	'%FILENAME' লোকেল দাইরেক্তোরি লৈত্রে.        \nহৌজিক দাইরেক্তোরি শেমগতকদ্রা?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +151				1	mni	মচাও-মরাক: %NUMBERKB				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +152				1	mni	ফাইল ফংদ্রে. অদোম অনৌবা ফাইল অমগী লৈফম অক্কনবা উত্পা পাম্বিবরা?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +16				1	mni	শন্দোকনা তাকপা:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +18				1	mni	শেমগতলবা:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +2				1	mni	মসিগী ৱেব ৱিজাৰ্দনা অদোমবু ইন্তরনেত্তা দোকুমেন্ত ফোংবদা মতেং পাংনবগীদমক লৈ.\n\nই ডকুমেন্টবোৰ সলনি কৰিব যাতে সেইবোৰক এটা ৱেব ব্ৰউজাৰৰ দ্বাৰা প্ৰদৰ্শণ কৰিব পাৰি. লগতে, ডকুমেন্টবোৰলৈ সহজ প্ৰৱেশৰ বাবে ই সংযোগবোৰৰ সৈতে এটা বিষয়সূচীৰ পৃষ্ঠাৰ টেবুল  উত্পন্ন কৰিব. ৱেব ৱিজাৰ্ডটোৱে আপোনাৰ ৱেব ছাইটৰ ডিজাইন আৰু খচৰাৰ ব্যৱস্থা কৰিবলৈ অনুমতিও দিব.\n  \nআপুনি ৱেব আপ-টু-ডেটত মুদ্ৰণ কৰা ডকুমেন্টবোৰ ৰাখিবলৈ সক্ষম হব				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +20				1	mni	ই-মেইল:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +21				1	mni	কোপিরাইত তৌবগী খংহনবা:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +22				1	mni	শেমদোক্লবা:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +24				1	mni	~অহানবা মীতয়েং				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +25				1	mni	অদোম্না অদোমগী ৱেব সাইত্তু কদাইদা ফোংদোকপা পাম্বিবগে?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +26				1	mni	অনৌবা ৱেব সাইত্তু ফোংদোক্লো:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +27				1	mni	লোকেল ফোল্দর অমদা				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 151				1	mni	মচাও-মরাক: %NUMBERKB				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 152				1	mni	ফাইল ফংদ্রে. অদোম অনৌবা ফাইল অমগী লৈফম অক্কনবা উত্পা পাম্বিবরা?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 16				1	mni	শন্দোকনা তাকপা:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 18				1	mni	শেমগতলবা:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 2				1	mni	মসিগী ৱেব ৱিজাৰ্দনা অদোমবু ইন্তরনেত্তা দোকুমেন্ত ফোংবদা মতেং পাংনবগীদমক লৈ.\n\nই ডকুমেন্টবোৰ সলনি কৰিব যাতে সেইবোৰক এটা ৱেব ব্ৰউজাৰৰ দ্বাৰা প্ৰদৰ্শণ কৰিব পাৰি. লগতে, ডকুমেন্টবোৰলৈ সহজ প্ৰৱেশৰ বাবে ই সংযোগবোৰৰ সৈতে এটা বিষয়সূচীৰ পৃষ্ঠাৰ টেবুল  উত্পন্ন কৰিব. ৱেব ৱিজাৰ্ডটোৱে আপোনাৰ ৱেব ছাইটৰ ডিজাইন আৰু খচৰাৰ ব্যৱস্থা কৰিবলৈ অনুমতিও দিব.\n  \nআপুনি ৱেব আপ-টু-ডেটত মুদ্ৰণ কৰা ডকুমেন্টবোৰ ৰাখিবলৈ সক্ষম হব				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 20				1	mni	ই-মেইল:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 21				1	mni	কোপিরাইত তৌবগী খংহনবা:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 22				1	mni	শেমদোক্লবা:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 24				1	mni	~অহানবা মীতয়েং				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 25				1	mni	অদোম্না অদোমগী ৱেব সাইত্তু কদাইদা ফোংদোকপা পাম্বিবগে?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 26				1	mni	অনৌবা ৱেব সাইত্তু ফোংদোক্লো:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 27				1	mni	লোকেল ফোল্দর অমদা				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +28				1	mni	...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +29				1	mni	FTP গী মতেংনা ৱেব সৰ্ভর অমদা				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +31				1	mni	~কনফিগ্যুর তৌবা...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +32				1	mni	 ZIP আৰ্কাইভ অমদা				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 29				1	mni	FTP গী মতেংনা ৱেব সৰ্ভর অমদা				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 31				1	mni	~কনফিগ্যুর তৌবা...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 32				1	mni	 ZIP আৰ্কাইভ অমদা				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +33				1	mni	...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +34				1	mni	~সেত্তিংশিং সেভ তৌরো (য়ারবা)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +35				1	mni	...গুম্না সেভ তৌবা:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +36				1	mni	~ৱেব ৱিজাৰ্দকীদমক সেত্তিংশিং খল্লো				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +37				1	mni	ৱেব সাইতকী হীরম				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +38				1	mni	~তিনশিনবা...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +39				1	mni	লৌথোক্লো				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +4				1	mni	~মুত্থত্পা				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +40				1	mni	অদোমগী ৱেব সাইতকী হীরমশিংগী তেবলগীদমক শকওং অমা খল্লো				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +41				1	mni	হীরম লমাইগী তেবলগীদমক মওং অমা খল্লো				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +42				1	mni	~মওং:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +48				1	mni	~শকওংশিং:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +5				1	mni	ৱাহৌদোক				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +50				1	mni	~শন্দোকনা তাকপা				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +51				1	mni	~অইবা				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +52				1	mni	তাং শেম্বা				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +53				1	mni	~অরোয়বা হোংবগী তাং				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +54				1	mni	~ফাইলগী মমিং				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +55				1	mni	ফাইল ফোর্মেত				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +56				1	mni	ফাইল ফোর্মেত আইকোন				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +57				1	mni	লমায়গী মশিং				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +58				1	mni	KBদা মচাও-মরাক				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +59				1	mni	অদোমগী ব্ৰাউজরদা অহানবা মীতয়েং উননবগীদমক 'অহানবা মীতয়েং' দা ক্লিক তৌরো:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +6				1	mni	অদোম্না ফোংবা পাম্বা দোকুমেন্তশিং খল্লো				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +60				1	mni	খল্লবা শকওং কস্তমাইজ তৌরো				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +61				1	mni	হীরমগী তেবলদা দোকুমেন্ত খুদিংমক্কী মখাগী ঈপাউশিং য়াওরে:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +62				1	mni	স্ক্রিন রিজোলুসনগী শকওং ফগতহল্লো:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +64				1	mni	~640x480				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +65				1	mni	~800x600				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +66				1	mni	~1024x768				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +70				1	mni	অদোমগী ৱেব সাইত শেম্লি				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +71				1	mni	%START - %END/%TOTAL				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +72				1	mni	ঐগী ৱেবসাইত				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +73				1	mni	FTP পান্দম '%FILENAME' অসি ফাইল অমনি.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +74				1	mni	লোকেল পান্দম '%FILENAME' অসি ফাইল অমনি.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +75				1	mni	ZIP পান্দম '%FILENAME' হাননা লৈরে. অদোম্না লৈরিবা পান্দমসি মথক্তা হন্না ইশিনবা পাম্বিবরা? 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +76				1	mni	FTP পান্দম থম্লিবা দাইরেক্তোরি '%FILENAME' অসি অহাংবা নত্তে. ফাইল খরদি মথক্তা হন্না ইশিল্লম্বা য়াই. অদোম্না মখা চত্থবা পাম্বিবরা?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +77				1	mni	লোকেল পান্দম ওইবা দাইরেক্তোরি '%FILENAME' অসি অহাংবা নত্তে. ফাইল খরদি মথক্তা হন্না ইশিল্লম্বা য়াই. অদোম মখা চত্থবা পাম্বিবরা?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +78				1	mni	অপীবা মিংদুগী মখাদা সেত্তিংশিংদু হাননা লৈরে. অদোম্না লৈরিবা সেত্তিংশিংদু মথক্তা ইশিনবা পাম্বিবরা? 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +79				1	mni	পুথোক্লিবা দোকুমেন্তশিং...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +8				1	mni	দোকুমেন্তকী ঈপাউ				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +80				1	mni	পুথোকনবা শেম-শারি...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +81				1	mni	শকওংগী ফাইলশিং শিল্লি...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +82				1	mni	হীরম শেমগতনবগী তেবল শেম-শারি...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +83				1	mni	হীরমশিংগী তেবল শেমগতলি...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +84				1	mni	ইনিসিয়েলাইজিং...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +86				1	mni	ফোঙদোকনবা শেম-শারি...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +87				1	mni	লোকেল দাইরেক্তোরিদা ফোংলি...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +88				1	mni	FTP পন্থুংফম ফোংলি...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +89				1	mni	ZIP আৰ্কাইভ অমদা ফোংলি...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +9				1	mni	~মিংথোল:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 34				1	mni	~সেত্তিংশিং সেভ তৌরো (য়ারবা)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 35				1	mni	...গুম্না সেভ তৌবা:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 36				1	mni	~ৱেব ৱিজাৰ্দকীদমক সেত্তিংশিং খল্লো				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 37				1	mni	ৱেব সাইতকী হীরম				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 38				1	mni	~তিনশিনবা...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 39				1	mni	লৌথোক্লো				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 4				1	mni	~মুত্থত্পা				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 40				1	mni	অদোমগী ৱেব সাইতকী হীরমশিংগী তেবলগীদমক শকওং অমা খল্লো				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 41				1	mni	হীরম লমাইগী তেবলগীদমক মওং অমা খল্লো				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 42				1	mni	~মওং:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 48				1	mni	~শকওংশিং:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 5				1	mni	ৱাহৌদোক				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 50				1	mni	~শন্দোকনা তাকপা				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 51				1	mni	~অইবা				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 52				1	mni	তাং শেম্বা				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 53				1	mni	~অরোয়বা হোংবগী তাং				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 54				1	mni	~ফাইলগী মমিং				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 55				1	mni	ফাইল ফোর্মেত				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 56				1	mni	ফাইল ফোর্মেত আইকোন				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 57				1	mni	লমায়গী মশিং				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 58				1	mni	KBদা মচাও-মরাক				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 59				1	mni	অদোমগী ব্ৰাউজরদা অহানবা মীতয়েং উননবগীদমক 'অহানবা মীতয়েং' দা ক্লিক তৌরো:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 6				1	mni	অদোম্না ফোংবা পাম্বা দোকুমেন্তশিং খল্লো				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 60				1	mni	খল্লবা শকওং কস্তমাইজ তৌরো				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 61				1	mni	হীরমগী তেবলদা দোকুমেন্ত খুদিংমক্কী মখাগী ঈপাউশিং য়াওরে:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 62				1	mni	স্ক্রিন রিজোলুসনগী শকওং ফগতহল্লো:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 64				1	mni	~640x480				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 65				1	mni	~800x600				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 66				1	mni	~1024x768				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 70				1	mni	অদোমগী ৱেব সাইত শেম্লি				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 71				1	mni	%START - %END/%TOTAL				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 72				1	mni	ঐগী ৱেবসাইত				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 73				1	mni	FTP পান্দম '%FILENAME' অসি ফাইল অমনি.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 74				1	mni	লোকেল পান্দম '%FILENAME' অসি ফাইল অমনি.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 75				1	mni	ZIP পান্দম '%FILENAME' হাননা লৈরে. অদোম্না লৈরিবা পান্দমসি মথক্তা হন্না ইশিনবা পাম্বিবরা? 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 76				1	mni	FTP পান্দম থম্লিবা দাইরেক্তোরি '%FILENAME' অসি অহাংবা নত্তে. ফাইল খরদি মথক্তা হন্না ইশিল্লম্বা য়াই. অদোম্না মখা চত্থবা পাম্বিবরা?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 77				1	mni	লোকেল পান্দম ওইবা দাইরেক্তোরি '%FILENAME' অসি অহাংবা নত্তে. ফাইল খরদি মথক্তা হন্না ইশিল্লম্বা য়াই. অদোম মখা চত্থবা পাম্বিবরা?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 78				1	mni	অপীবা মিংদুগী মখাদা সেত্তিংশিংদু হাননা লৈরে. অদোম্না লৈরিবা সেত্তিংশিংদু মথক্তা ইশিনবা পাম্বিবরা? 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 79				1	mni	পুথোক্লিবা দোকুমেন্তশিং...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 8				1	mni	দোকুমেন্তকী ঈপাউ				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 80				1	mni	পুথোকনবা শেম-শারি...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 81				1	mni	শকওংগী ফাইলশিং শিল্লি...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 82				1	mni	হীরম শেমগতনবগী তেবল শেম-শারি...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 83				1	mni	হীরমশিংগী তেবল শেমগতলি...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 84				1	mni	ইনিসিয়েলাইজিং...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 86				1	mni	ফোঙদোকনবা শেম-শারি...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 87				1	mni	লোকেল দাইরেক্তোরিদা ফোংলি...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 88				1	mni	FTP পন্থুংফম ফোংলি...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 89				1	mni	ZIP আৰ্কাইভ অমদা ফোংলি...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 9				1	mni	~মিংথোল:				2002-02-02 02:02:02
 wizards	source\importwizard\importwi.src	0	string	sBackButton				1	mni	<<মতুং				2002-02-02 02:02:02
 wizards	source\importwizard\importwi.src	0	string	sBeginButton				1	mni	 ~ওন্থোকপা				2002-02-02 02:02:02
 wizards	source\importwizard\importwi.src	0	string	sCancelButton				1	mni	~ককথত্পা				2002-02-02 02:02:02

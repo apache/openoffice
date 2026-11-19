@@ -28,6 +28,9 @@
 
 #include <osl/thread.h>
 
+#include <algorithm>
+#include <vector>
+
 #include <com/sun/star/lang/XServiceInfo.hpp>
 #include <com/sun/star/lang/XTypeProvider.hpp>
 #include <com/sun/star/beans/XPropertySet.hpp>
@@ -54,7 +57,10 @@ using com::sun::star::lang::XSingleServiceFactory;
 using com::sun::star::lang::XServiceInfo;
 using com::sun::star::lang::XTypeProvider;
 using com::sun::star::script::XTypeConverter;
+using com::sun::star::script::XInvocation;
 using com::sun::star::script::XInvocation2;
+using com::sun::star::reflection::XIdlClass;
+using com::sun::star::reflection::XIdlMethod;
 using com::sun::star::beans::XMaterialHolder;
 
 namespace pyuno
@@ -334,6 +340,52 @@ PyObject *PyUNO_repr( PyObject  * self )
     return ret;
 }
 
+// An object with its own XInvocation (no XInvocation2 from Invocation_Impl) reports only the
+// members it chooses to, so its interface methods are found through reflection instead.
+static Sequence< Reference< XIdlClass > > getReflectedInterfaces( PyUNO *me, const Runtime &runtime )
+{
+    Sequence< Reference< XIdlClass > > ret;
+    Reference< XInvocation2 > inv2( me->members->xInvocation, UNO_QUERY );
+    if( inv2.is() )
+        return ret;
+    Reference< XTypeProvider > typeProvider( me->members->wrappedObject, UNO_QUERY );
+    if( ! typeProvider.is() )
+        return ret;
+
+    Sequence< Type > types( typeProvider->getTypes() );
+    ret.realloc( types.getLength() );
+    sal_Int32 n = 0;
+    for( sal_Int32 i = 0 ; i < types.getLength() ; i ++ )
+    {
+        Reference< XIdlClass > c(
+            runtime.getImpl()->cargo->xCoreReflection->forName( types[i].getTypeName() ) );
+        if( c.is() && c->getTypeClass() == com::sun::star::uno::TypeClass_INTERFACE )
+            ret[n++] = c;
+    }
+    ret.realloc( n );
+    return ret;
+}
+
+// acquire(), release() and queryInterface() must never be callable from Python
+static bool isXInterfaceMember( const Reference< XIdlMethod > &m )
+{
+    Reference< XIdlClass > decl( m->getDeclaringClass() );
+    return decl.is() && decl->getName().equalsAscii( "com.sun.star.uno.XInterface" );
+}
+
+static Reference< XIdlMethod > findReflectedMethod(
+    PyUNO *me, const OUString &name, const Runtime &runtime )
+{
+    Sequence< Reference< XIdlClass > > classes( getReflectedInterfaces( me, runtime ) );
+    for( sal_Int32 i = 0 ; i < classes.getLength() ; i ++ )
+    {
+        Reference< XIdlMethod > m( classes[i]->getMethod( name ) );
+        if( m.is() && ! isXInterfaceMember( m ) )
+            return m;
+    }
+    return Reference< XIdlMethod >();
+}
+
 PyObject *PyUNO_invoke( PyObject *object, const char *name , PyObject *args )
 {
     PyRef ret;
@@ -346,18 +398,30 @@ PyObject *PyUNO_invoke( PyObject *object, const char *name , PyObject *args )
         {
             PyUNO* me = (PyUNO*) object;
             OUString attrName = OUString::createFromAscii(name);
-            if (! me->members->xInvocation->hasMethod (attrName))
+            Reference< XIdlMethod > xMethod;
+            bool hasMethod = false;
             {
-                OUStringBuffer buf;
-                buf.appendAscii( "Attribute " );
-                buf.append( attrName );
-                buf.appendAscii( " unknown" );
-                throw RuntimeException( buf.makeStringAndClear(), Reference< XInterface > () );
+                PyThreadDetach antiguard;
+                hasMethod = me->members->xInvocation->hasMethod (attrName);
+            }
+            if (! hasMethod)
+            {
+                xMethod = findReflectedMethod( me, attrName, runtime );
+                if (! xMethod.is())
+                {
+                    OUStringBuffer buf;
+                    buf.appendAscii( "Attribute " );
+                    buf.append( attrName );
+                    buf.appendAscii( " unknown" );
+                    throw RuntimeException( buf.makeStringAndClear(), Reference< XInterface > () );
+                }
             }
             callable = PyUNO_callable_new (
                 me->members->xInvocation,
                 attrName,
-                ACCEPT_UNO_ANY);
+                ACCEPT_UNO_ANY,
+                xMethod,
+                me->members->wrappedObject);
             paras = args;
         }
         else
@@ -475,7 +539,15 @@ PyObject* PyUNO_getattr (PyObject* self, PyObject* attr_name)
 
         OUString attrName( OUString::createFromAscii( name ) );
         //We need to find out if it's a method...
-        if (me->members->xInvocation->hasMethod (attrName))
+        bool isMethod = false;
+        bool isProperty = false;
+        {
+            PyThreadDetach antiguard;
+            isMethod = me->members->xInvocation->hasMethod (attrName);
+            if (! isMethod)
+                isProperty = me->members->xInvocation->hasProperty (attrName);
+        }
+        if (isMethod)
         {
             //Create a callable object to invoke this...
             PyRef ret = PyUNO_callable_new (
@@ -487,7 +559,7 @@ PyObject* PyUNO_getattr (PyObject* self, PyObject* attr_name)
         }
 
         //or a property
-        if (me->members->xInvocation->hasProperty ( attrName))
+        if (isProperty)
         {
             //Return the value of the property
             Any anyRet;
@@ -496,6 +568,20 @@ PyObject* PyUNO_getattr (PyObject* self, PyObject* attr_name)
                 anyRet = me->members->xInvocation->getValue (attrName);
             }
             PyRef ret = runtime.any2PyObject(anyRet);
+            Py_XINCREF( ret.get() );
+            return ret.get();
+        }
+
+        //or a method of an interface that the object's own XInvocation does not report
+        Reference< XIdlMethod > xMethod( findReflectedMethod( me, attrName, runtime ) );
+        if( xMethod.is() )
+        {
+            PyRef ret = PyUNO_callable_new (
+                me->members->xInvocation,
+                attrName,
+                REJECT_UNO_ANY,
+                xMethod,
+                me->members->wrappedObject);
             Py_XINCREF( ret.get() );
             return ret.get();
         }
@@ -579,7 +665,45 @@ static PyObject *PyUNO_dir( PyObject *self, PyObject *that )
     Sequence<OUString> oo_member_list;
 
     me = (PyUNO*) self;
-    oo_member_list = me->members->xInvocation->getMemberNames ();
+    try
+    {
+        Reference< XInvocation2 > inv2( me->members->xInvocation, UNO_QUERY );
+        if( inv2.is() )
+        {
+            PyThreadDetach antiguard;
+            oo_member_list = inv2->getMemberNames ();
+        }
+        else
+        {
+            Runtime runtime;
+            std::vector< OUString > names;
+            Sequence< Reference< XIdlClass > > classes( getReflectedInterfaces( me, runtime ) );
+            for( sal_Int32 i = 0 ; i < classes.getLength() ; i ++ )
+            {
+                Sequence< Reference< XIdlMethod > > methods( classes[i]->getMethods() );
+                for( sal_Int32 j = 0 ; j < methods.getLength() ; j ++ )
+                {
+                    OUString n( methods[j]->getName() );
+                    if( ! isXInterfaceMember( methods[j] ) &&
+                        std::find( names.begin(), names.end(), n ) == names.end() )
+                        names.push_back( n );
+                }
+            }
+            oo_member_list.realloc( names.size() );
+            for( size_t k = 0 ; k < names.size() ; k ++ )
+                oo_member_list[k] = names[k];
+        }
+    }
+    catch( com::sun::star::uno::RuntimeException &e )
+    {
+        raisePyExceptionWithAny( makeAny( e ) );
+        return NULL;
+    }
+    catch( com::sun::star::uno::Exception &e )
+    {
+        raisePyExceptionWithAny( makeAny( e ) );
+        return NULL;
+    }
     member_list = PyList_New (oo_member_list.getLength ());
     for (int i = 0; i < oo_member_list.getLength (); i++)
     {
@@ -753,9 +877,16 @@ PyObject* PyUNO_new_UNCHECKED (
     {
         PyThreadDetach antiguard;
         tmp_interface = ssf->createInstanceWithArguments (arguments);
-        Reference<XInvocation2> tmp_invocation (tmp_interface, UNO_QUERY);
+        Reference<XInvocation> tmp_invocation (tmp_interface, UNO_QUERY);
         self->members->xInvocation = tmp_invocation;
         self->members->wrappedObject = targetInterface;
+    }
+    if( ! self->members->xInvocation.is() )
+    {
+        Py_DECREF( (PyObject*) self );
+        throw RuntimeException(
+            OUString( RTL_CONSTASCII_USTRINGPARAM( "pyuno: no XInvocation for the wrapped object" ) ),
+            Reference< XInterface >() );
     }
     return (PyObject*) self;
 }

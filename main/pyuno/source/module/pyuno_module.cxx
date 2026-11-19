@@ -61,7 +61,7 @@ using com::sun::star::uno::XComponentContext;
 using com::sun::star::container::NoSuchElementException;
 using com::sun::star::reflection::XIdlReflection;
 using com::sun::star::reflection::XIdlClass;
-using com::sun::star::script::XInvocation2;
+using com::sun::star::script::XInvocation;
 
 using namespace pyuno;
 
@@ -71,7 +71,7 @@ namespace {
    @ index of the next to be used member in the initializer list !
  */
 sal_Int32 fillStructWithInitializer(
-    const Reference< XInvocation2 > &inv,
+    const Reference< XInvocation > &inv,
     typelib_CompoundTypeDescription *pCompType,
     PyObject *initializer,
     const Runtime &runtime)

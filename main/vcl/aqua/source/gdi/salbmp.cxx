@@ -69,9 +69,10 @@ AquaSalBitmap::~AquaSalBitmap()
 
 // ------------------------------------------------------------------
 
-bool AquaSalBitmap::Create( CGLayerRef xLayer, int nBitmapBits,
+bool AquaSalBitmap::Create( const ScaledLayer& rLayer, int nBitmapBits,
 	int nX, int nY, int nWidth, int nHeight, bool /*bMirrorVert*/ )
 {
+	CGLayerRef xLayer = rLayer.get();
 	DBG_ASSERT( xLayer, "AquaSalBitmap::Create() from non-layered context" );
 
 	// sanitize input parameters
@@ -79,7 +80,7 @@ bool AquaSalBitmap::Create( CGLayerRef xLayer, int nBitmapBits,
 		nWidth += nX, nX = 0;
 	if( nY < 0 )
 		nHeight += nY, nY = 0;
-	const CGSize aLayerSize = CGLayerGetSize( xLayer );
+	const CGSize aLayerSize = rLayer.getPointSize();
 	if( nWidth >= (int)aLayerSize.width - nX )
 		nWidth = (int)aLayerSize.width - nX;
 	if( nHeight >= (int)aLayerSize.height - nY )
@@ -97,7 +98,7 @@ bool AquaSalBitmap::Create( CGLayerRef xLayer, int nBitmapBits,
 
 	// copy layer content into the bitmap buffer
 	const CGPoint aSrcPoint = CGPointMake( -nX, -nY);
-	::CGContextDrawLayerAtPoint( mxGraphicContext, aSrcPoint, xLayer );
+	::CGContextDrawLayerInRect( mxGraphicContext, CGRectMake( aSrcPoint.x, aSrcPoint.y, aLayerSize.width, aLayerSize.height ), xLayer );
 	return true;
 }
 

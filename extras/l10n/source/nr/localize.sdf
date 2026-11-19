@@ -4264,8 +4264,8 @@ formula	source\core\resource\core_resource.src	0	string	RID_STRLIST_FUNCTION_NAM
 formula	source\core\resource\core_resource.src	0	string	RID_STRLIST_FUNCTION_NAMES	SC_OPCODE_ERROR_NA			0	nr	#N/A				2002-02-02 02:02:02
 formula	source\ui\dlg\parawin.src	0	#define	RB_ARGBLOCK( y )				13	nr	-		Kies		2002-02-02 02:02:02
 formula	source\ui\dlg\parawin.src	0	fixedtext	RID_FORMULATAB_PARAMETER	FT_EDITDESC			198	nr	Funksie onbekend				2002-02-02 02:02:02
-formula	source\ui\dlg\parawin.src	0	string	RID_FORMULATAB_PARAMETER	STR_OPTIONAL			8	nr	(opsioneel)				2002-02-02 02:02:02
-formula	source\ui\dlg\parawin.src	0	string	RID_FORMULATAB_PARAMETER	STR_REQUIRED			8	nr	(vereiste)				2002-02-02 02:02:02
+formula	source\ui\dlg\parawin.src	0	string	RID_FORMULATAB_PARAMETER.FT_ARG1.FT_ARG2.FT_ARG3.FT_ARG4	STR_OPTIONAL			8	nr	(opsioneel)				2002-02-02 02:02:02
+formula	source\ui\dlg\parawin.src	0	string	RID_FORMULATAB_PARAMETER.FT_ARG1.FT_ARG2.FT_ARG3.FT_ARG4	STR_REQUIRED			8	nr	(vereiste)				2002-02-02 02:02:02
 formula	source\ui\dlg\formdlgs.src	0	stringlist	RID_FORMULATAB_FUNCTION.LB_CATEGORY	1			0	nr	Vorige gebruik				2002-02-02 02:02:02
 formula	source\ui\dlg\formdlgs.src	0	stringlist	RID_FORMULATAB_FUNCTION.LB_CATEGORY	2			0	nr	Almal				2002-02-02 02:02:02
 formula	source\ui\dlg\formdlgs.src	0	fixedtext	RID_FORMULATAB_FUNCTION	FT_CATEGORY			84	nr	~Kategorie				2002-02-02 02:02:02
@@ -4372,8 +4372,8 @@ wizards	source\euro\euro.src	0	string	CURRENCIES + 12				0	nr	Sloweense Tolar			
 wizards	source\euro\euro.src	0	string	CURRENCIES + 13				0	nr	Siprus-pond				2002-02-02 02:02:02
 wizards	source\euro\euro.src	0	string	CURRENCIES + 14				0	nr	Maltese lire				2002-02-02 02:02:02
 wizards	source\euro\euro.src	0	string	CURRENCIES + 15				0	nr	Slowaaks, Koruna				2002-02-02 02:02:02
-wizards	source\euro\euro.src	0	string	CURRENCIES + 16				0	nr	Die geldeenheid wat vir die dokument gestel is, is nie 'n Europese geldeenheid nie!				2002-02-02 02:02:02
-wizards	source\euro\euro.src	0	string	CURRENCIES + 17				0	nr	Die taal van u bedryfstelsel is nie 'n taal van die Europese Monetêre Unie nie.				2002-02-02 02:02:02
+wizards	source\euro\euro.src	0	string	CURRENCIES + 21				0	nr	Die geldeenheid wat vir die dokument gestel is, is nie 'n Europese geldeenheid nie!				2002-02-02 02:02:02
+wizards	source\euro\euro.src	0	string	CURRENCIES + 22				0	nr	Die taal van u bedryfstelsel is nie 'n taal van die Europese Monetêre Unie nie.				2002-02-02 02:02:02
 wizards	source\euro\euro.src	0	string	STEP_LASTPAGE				0	nr	Vordering				2002-02-02 02:02:02
 wizards	source\euro\euro.src	0	string	STEP_LASTPAGE + 1				0	nr	Besig om relevante dokumente op te roep...				2002-02-02 02:02:02
 wizards	source\euro\euro.src	0	string	STEP_LASTPAGE + 2				0	nr	Besig om dokumente om te skakel...				2002-02-02 02:02:02
@@ -4819,77 +4819,77 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_FAXWIZARDROADMAP_START + 2		
 wizards	source\formwizard\dbwizres.src	0	string	RID_FAXWIZARDROADMAP_START + 3				0	nr	Afsender en ontvanger				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_FAXWIZARDROADMAP_START + 4				0	nr	Voet				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_FAXWIZARDROADMAP_START + 5				0	nr	Naam en ligging				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +1				0	nr	Webslimmerd				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +2				0	nr	Hierdie webslimmerd help u om dokumente op die internet te publiseer.\n\nDit sal die dokumente omskakel sodat dit met 'n webblaaier bekyk kan word. Dit sal ook 'n inhoudsopgawe-bladsy skep met skakels vir maklike toegang na die dokumente. Die webslimmerd stel u ook in staat om die ontwerp en uitleg van u webwerf te pasmaak.\n\nU sal die dokumente wat u op die web gepubliseer het, op datum kan hou, en dokumente te eniger tyd kan byvoeg of weglaat.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +4				0	nr	~Skrap				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +5				0	nr	Inleiding				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +6				0	nr	Selekteer die dokumente wat u wil publiseer				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +8				0	nr	Dokumentinligting 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +9				0	nr	~Titel:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +10				0	nr	~Opsomming: 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +11				0	nr	Ou~teur:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +12				0	nr	~Voer uit na lêerformaat:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +13				0	nr	Tik algemene inligting vir u webwerf in				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 1				0	nr	Webslimmerd				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 2				0	nr	Hierdie webslimmerd help u om dokumente op die internet te publiseer.\n\nDit sal die dokumente omskakel sodat dit met 'n webblaaier bekyk kan word. Dit sal ook 'n inhoudsopgawe-bladsy skep met skakels vir maklike toegang na die dokumente. Die webslimmerd stel u ook in staat om die ontwerp en uitleg van u webwerf te pasmaak.\n\nU sal die dokumente wat u op die web gepubliseer het, op datum kan hou, en dokumente te eniger tyd kan byvoeg of weglaat.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 4				0	nr	~Skrap				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 5				0	nr	Inleiding				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 6				0	nr	Selekteer die dokumente wat u wil publiseer				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 8				0	nr	Dokumentinligting 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 9				0	nr	~Titel:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 10				0	nr	~Opsomming: 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 11				0	nr	Ou~teur:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 12				0	nr	~Voer uit na lêerformaat:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 13				0	nr	Tik algemene inligting vir u webwerf in				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +14				0	nr	Titel:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +16				0	nr	Beskrywing:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +18				0	nr	Geskep:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +20				0	nr	E-pos:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +21				0	nr	Kopiereg-kennisgewing:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +22				0	nr	Gewysig:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +24				0	nr	~Voorskou				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +25				0	nr	Waar wil u u webwerf publiseer?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +26				0	nr	Publiseer die nuwe webwerf:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +27				0	nr	In 'n ~plaaslike vouer				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 16				0	nr	Beskrywing:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 18				0	nr	Geskep:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 20				0	nr	E-pos:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 21				0	nr	Kopiereg-kennisgewing:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 22				0	nr	Gewysig:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 24				0	nr	~Voorskou				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 25				0	nr	Waar wil u u webwerf publiseer?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 26				0	nr	Publiseer die nuwe webwerf:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 27				0	nr	In 'n ~plaaslike vouer				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +28				0	nr	...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +29				0	nr	Op 'n ~webbediener via FTP				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +31				0	nr	~Stel op...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +32				0	nr	In 'n ZIP~argief				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 29				0	nr	Op 'n ~webbediener via FTP				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 31				0	nr	~Stel op...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 32				0	nr	In 'n ZIP~argief				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +33				0	nr	...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +34				0	nr	~Stoor instellings (aanbeveel)				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +35				0	nr	Stoor ~as:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +36				0	nr	~Kies instellings vir die webslimmerd				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +37				0	nr	Webwerfinhoud 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +38				0	nr	~Voeg by...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +39				0	nr	Verwy~der				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +40				0	nr	Kies 'n uitleg vir die inhoudsopgawe van u webwerf				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +41				0	nr	Kies 'n styl vir die inhoudsopgawe-bladsy				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +42				0	nr	~Styl:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +48				0	nr	~Uitlegte: 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +50				0	nr	~Beskrywing				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +51				0	nr	~Outeur				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +52				0	nr	Sk~eppingsdatum				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +53				0	nr	~Datum laas gewysig				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +54				0	nr	~Lêernaam				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +55				0	nr	Lêerformaa~t				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +56				0	nr	Lêerformaat-~ikoon				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +57				0	nr	Getal ~bladsye				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +58				0	nr	~Grootte in KB				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +59				0	nr	Kliek 'Voorskou' om 'n voorskou in u blaaier te sien:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +60				0	nr	Pasmaak die geselekteerde uitleg				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +61				0	nr	Sluit die volgende inligting vir elke dokument in die inhoudsopgawe in:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +62				0	nr	Optimeer die uitleg vir skermresolusie:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +64				0	nr	~640x480				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +65				0	nr	~800x600				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +66				0	nr	~1024x768				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +70				0	nr	Genereer u webwerf				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +71				0	nr	%START - %END/%TOTAL				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +72				0	nr	myWebwerf				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +73				0	nr	FTP-teiken '%FILENAME' is 'n lêer.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +74				0	nr	Die plaaslike teiken '%FILENAME' is 'n lêer.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +75				0	nr	Die ZIP-teiken '%FILENAME' bestaan reeds. Wil u die bestaande teiken oorheenskryf? 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +76				0	nr	Die FTP-teikengids '%FILENAME' is nie leeg nie. Sommige lêers mag oorheenskryf word. Wil u voortgaan?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +77				0	nr	Die plaaslike teikengids '%FILENAME' is nie leeg nie. Sommige lêers mag oorheenskryf word. Wil u voortgaan?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +78				0	nr	Instellings bestaan reeds onder die gegewe naam. Wil u die bestaande instellings oorheenskryf? 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +79				0	nr	Voer tans dokumente uit...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +80				0	nr	Berei uitvoer voor...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +81				0	nr	Kopieer tans uitleglêers...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +82				0	nr	Berei tans inhoudsopgawegenerering voor...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +83				0	nr	Genereer Inhoudsopgawe...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +84				0	nr	Inisialiseer tans...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +86				0	nr	Berei voor om te publiseer...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +87				0	nr	Publiseer tans na 'n plaaslike gids...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +88				0	nr	Publiseer tans na 'n FTP-bestemming...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +89				0	nr	Publiseer in 'n ZIP-argief...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 34				0	nr	~Stoor instellings (aanbeveel)				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 35				0	nr	Stoor ~as:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 36				0	nr	~Kies instellings vir die webslimmerd				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 37				0	nr	Webwerfinhoud 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 38				0	nr	~Voeg by...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 39				0	nr	Verwy~der				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 40				0	nr	Kies 'n uitleg vir die inhoudsopgawe van u webwerf				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 41				0	nr	Kies 'n styl vir die inhoudsopgawe-bladsy				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 42				0	nr	~Styl:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 48				0	nr	~Uitlegte: 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 50				0	nr	~Beskrywing				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 51				0	nr	~Outeur				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 52				0	nr	Sk~eppingsdatum				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 53				0	nr	~Datum laas gewysig				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 54				0	nr	~Lêernaam				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 55				0	nr	Lêerformaa~t				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 56				0	nr	Lêerformaat-~ikoon				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 57				0	nr	Getal ~bladsye				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 58				0	nr	~Grootte in KB				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 59				0	nr	Kliek 'Voorskou' om 'n voorskou in u blaaier te sien:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 60				0	nr	Pasmaak die geselekteerde uitleg				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 61				0	nr	Sluit die volgende inligting vir elke dokument in die inhoudsopgawe in:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 62				0	nr	Optimeer die uitleg vir skermresolusie:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 64				0	nr	~640x480				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 65				0	nr	~800x600				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 66				0	nr	~1024x768				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 70				0	nr	Genereer u webwerf				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 71				0	nr	%START - %END/%TOTAL				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 72				0	nr	myWebwerf				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 73				0	nr	FTP-teiken '%FILENAME' is 'n lêer.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 74				0	nr	Die plaaslike teiken '%FILENAME' is 'n lêer.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 75				0	nr	Die ZIP-teiken '%FILENAME' bestaan reeds. Wil u die bestaande teiken oorheenskryf? 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 76				0	nr	Die FTP-teikengids '%FILENAME' is nie leeg nie. Sommige lêers mag oorheenskryf word. Wil u voortgaan?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 77				0	nr	Die plaaslike teikengids '%FILENAME' is nie leeg nie. Sommige lêers mag oorheenskryf word. Wil u voortgaan?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 78				0	nr	Instellings bestaan reeds onder die gegewe naam. Wil u die bestaande instellings oorheenskryf? 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 79				0	nr	Voer tans dokumente uit...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 80				0	nr	Berei uitvoer voor...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 81				0	nr	Kopieer tans uitleglêers...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 82				0	nr	Berei tans inhoudsopgawegenerering voor...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 83				0	nr	Genereer Inhoudsopgawe...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 84				0	nr	Inisialiseer tans...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 86				0	nr	Berei voor om te publiseer...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 87				0	nr	Publiseer tans na 'n plaaslike gids...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 88				0	nr	Publiseer tans na 'n FTP-bestemming...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 89				0	nr	Publiseer in 'n ZIP-argief...				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 90				0	nr	Maak klaar...				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 94				0	nr	Grafiese lêers				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 95				0	nr	Alle lêers				2002-02-02 02:02:02
@@ -4898,97 +4898,97 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 98		
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 99				0	nr	Kies 'n agtergrondbeeld: 				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 100				0	nr	Ikoonstelle				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 101				0	nr	Kies 'n ikoonstel:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +102				0	nr	Ander...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +103				0	nr	Geen				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +104				0	nr	U webwerf is suksesvol gegenereer as: %FILENAME				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +105				0	nr	Een of meer foute het voorgekom toe die webwerf gegenereer is.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +106				0	nr	'n Fout het voorgekom terwyl die inhoudsopgawe-bladsy(e) gegenereer is. 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +107				0	nr	'n Fout het voorgekom terwyl die uitleglêers gekopieer is. 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +108				0	nr	'n Fout het voorgekom terwyl dokumentinligting vir '%FILENAME' versamel is. 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +109				0	nr	'n Fout het voorgekom terwyl die dokument '%FILENAME' uitgevoer is.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +110				0	nr	'n Fout het voorgekom terwyl 'n vouer geskep is vir die uitvoer van '%FILENAME'.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +112				0	nr	'n Toevoer/afvoer-fout het voorgekom terwyl die dokument '%FILENAME' uitgevoer is.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +113				0	nr	'n Fout het voorgekom terwyl die medialêers na 'n tydelike gids gekopieer is.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +114				0	nr	Die webwerf kon nie na die volgende bestemming gekopieer word nie: %URL				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +115				0	nr	'n Onverwagte fout het plaasgevind: %ERROR				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +116				0	nr	'n Onverwagte fout het plaasgevind terwyl die lêer gevalideer is: '%FILENAME'				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +117				0	nr	%FILENAME' is 'n vouer.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +118				0	nr	Laai tans webslimmerdinstellings...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +119				0	nr	'n Onverwagte fout het plaasgevind.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +120				0	nr	Valideer tans dokumente...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +121				0	nr	My argief				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +122				0	nr	Inleiding 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +123				0	nr	Dokumente 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +124				0	nr	Hoofuitleg				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +125				0	nr	Uitlegbesonderhede				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +126				0	nr	Styl				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +127				0	nr	Webwerfinligting				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +128				0	nr	Voorskou				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +130				0	nr	Die geselekteerde instellings sal geskrap word.\n\nWil u werklik hierdie instellings skrap? 				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +131				0	nr	%NUMBER bladsye				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +132				0	nr	%NUMBER skyfies				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +133				0	nr	Geskep: %DATE				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +134				0	nr	Laas gewysig: %DATE				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +135				0	nr	Webslimmerdinstellings				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +136				0	nr	Agtergrondbeeld:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +137				0	nr	Ikoonstel:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +138				0	nr	Die ikoonstel is gebruik vir voorleggings in HTML-formaat.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +139				0	nr	HTML-metadata				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 102				0	nr	Ander...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 103				0	nr	Geen				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 104				0	nr	U webwerf is suksesvol gegenereer as: %FILENAME				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 105				0	nr	Een of meer foute het voorgekom toe die webwerf gegenereer is.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 106				0	nr	'n Fout het voorgekom terwyl die inhoudsopgawe-bladsy(e) gegenereer is. 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 107				0	nr	'n Fout het voorgekom terwyl die uitleglêers gekopieer is. 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 108				0	nr	'n Fout het voorgekom terwyl dokumentinligting vir '%FILENAME' versamel is. 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 109				0	nr	'n Fout het voorgekom terwyl die dokument '%FILENAME' uitgevoer is.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 110				0	nr	'n Fout het voorgekom terwyl 'n vouer geskep is vir die uitvoer van '%FILENAME'.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 112				0	nr	'n Toevoer/afvoer-fout het voorgekom terwyl die dokument '%FILENAME' uitgevoer is.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 113				0	nr	'n Fout het voorgekom terwyl die medialêers na 'n tydelike gids gekopieer is.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 114				0	nr	Die webwerf kon nie na die volgende bestemming gekopieer word nie: %URL				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 115				0	nr	'n Onverwagte fout het plaasgevind: %ERROR				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 116				0	nr	'n Onverwagte fout het plaasgevind terwyl die lêer gevalideer is: '%FILENAME'				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 117				0	nr	%FILENAME' is 'n vouer.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 118				0	nr	Laai tans webslimmerdinstellings...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 119				0	nr	'n Onverwagte fout het plaasgevind.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 120				0	nr	Valideer tans dokumente...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 121				0	nr	My argief				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 122				0	nr	Inleiding 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 123				0	nr	Dokumente 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 124				0	nr	Hoofuitleg				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 125				0	nr	Uitlegbesonderhede				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 126				0	nr	Styl				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 127				0	nr	Webwerfinligting				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 128				0	nr	Voorskou				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 130				0	nr	Die geselekteerde instellings sal geskrap word.\n\nWil u werklik hierdie instellings skrap? 				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 131				0	nr	%NUMBER bladsye				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 132				0	nr	%NUMBER skyfies				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 133				0	nr	Geskep: %DATE				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 134				0	nr	Laas gewysig: %DATE				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 135				0	nr	Webslimmerdinstellings				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 136				0	nr	Agtergrondbeeld:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 137				0	nr	Ikoonstel:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 138				0	nr	Die ikoonstel is gebruik vir voorleggings in HTML-formaat.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 139				0	nr	HTML-metadata				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +140				0	nr	Kies...				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +141				0	nr	Kies...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +142				0	nr	<verstek>				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +143				0	nr	Publiseer via FTP-instaanbediener word nie ondersteun nie.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +144				0	nr	<geen agtergrondbeeld nie>				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +145				0	nr	<geen ikoonstel nie>				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +146				0	nr	Die FTP-gids '%FILENAME' kon nie geskep word nie.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 142				0	nr	<verstek>				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 143				0	nr	Publiseer via FTP-instaanbediener word nie ondersteun nie.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 144				0	nr	<geen agtergrondbeeld nie>				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 145				0	nr	<geen ikoonstel nie>				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 146				0	nr	Die FTP-gids '%FILENAME' kon nie geskep word nie.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +147				0	nr	Die FTP-gids '%FILENAME' bestaan nie. \nSkep die gids nou?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +148				0	nr	Die Zip-lêer '%FILENAME' kan nie geskep word nie: 'n gids met selfde naam bestaan reeds.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 148				0	nr	Die Zip-lêer '%FILENAME' kan nie geskep word nie: 'n gids met selfde naam bestaan reeds.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +149				0	nr	Die plaaslike gids '%FILENAME' kan nie geskep word nie. \nKontroleer u skryftoegang.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +150				0	nr	Die plaaslike gids '%FILENAME' bestaan nie. \nSkep die gids nou?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +151				0	nr	Grootte: %NUMBERKB				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START +152				0	nr	Lêer nie gevind nie. Wil u 'n nuwe lêerligging spesifiseer?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +0				0	nr	FTP-verbinding				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +1				0	nr	~Gebruikernaam:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +2				0	nr	~Wagwoord:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +3				0	nr	Verbind				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +4				0	nr	1. Tik FTP-verbinding-inligting in.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +5				0	nr	~Bedienernaam of IP-adres:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +6				0	nr	2. Koppel aan die bediener.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +7				0	nr	3. ~Kies 'n afgeleë gids (opsioneel).				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 151				0	nr	Grootte: %NUMBERKB				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_START + 152				0	nr	Lêer nie gevind nie. Wil u 'n nuwe lêerligging spesifiseer?				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 0				0	nr	FTP-verbinding				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 1				0	nr	~Gebruikernaam:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 2				0	nr	~Wagwoord:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 3				0	nr	Verbind				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 4				0	nr	1. Tik FTP-verbinding-inligting in.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 5				0	nr	~Bedienernaam of IP-adres:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 6				0	nr	2. Koppel aan die bediener.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 7				0	nr	3. ~Kies 'n afgeleë gids (opsioneel).				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +8				0	nr	...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +9				0	nr	Koppelstatus is onbekend				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +10				0	nr	Daar is suksesvol verbind				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +11				0	nr	Verkeerde gebruikernaam of wagwoord				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +12				0	nr	Kon nie die bedienernaam vind nie				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +13				0	nr	U het nie voldoende gebruikerregte nie				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +14				0	nr	Kan nie aan bediener koppel nie				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +15				0	nr	Onverwagte fout				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +16				0	nr	FTP-publiseergids				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +17				0	nr	Hierdie is nie 'n FTP-vouer nie				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP +18				0	nr	Besig om te koppel...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +1				0	nr	Agendaslimmerd				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +2				0	nr	Bring ~handmatige veranderinge aan hierdie agendasjabloon aan				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 9				0	nr	Koppelstatus is onbekend				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 10				0	nr	Daar is suksesvol verbind				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 11				0	nr	Verkeerde gebruikernaam of wagwoord				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 12				0	nr	Kon nie die bedienernaam vind nie				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 13				0	nr	U het nie voldoende gebruikerregte nie				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 14				0	nr	Kan nie aan bediener koppel nie				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 15				0	nr	Onverwagte fout				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 16				0	nr	FTP-publiseergids				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 17				0	nr	Hierdie is nie 'n FTP-vouer nie				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_WEBWIZARDDIALOG_FTP + 18				0	nr	Besig om te koppel...				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 1				0	nr	Agendaslimmerd				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 2				0	nr	Bring ~handmatige veranderinge aan hierdie agendasjabloon aan				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +3				0	nr	Sjabloonnaam:				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 4				0	nr	Ligging en lêernaam:				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +5				0	nr	Wat wil u volgende doen?				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +6				0	nr	Kies asseblief die soort bladsyontwerp vir die agenda				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +7				0	nr	Selekteer asseblief die opskrifte wat u in u agendasjabloon wil insluit				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +8				0	nr	Tik asseblief algemene inligting vir die gebeurtenis in				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +9				0	nr	Spesifiseer asseblief items vir die agenda				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +10				0	nr	Selekteer asseblief die name wat u in u agendasjabloon wil insluit				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 6				0	nr	Kies asseblief die soort bladsyontwerp vir die agenda				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 7				0	nr	Selekteer asseblief die opskrifte wat u in u agendasjabloon wil insluit				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 8				0	nr	Tik asseblief algemene inligting vir die gebeurtenis in				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 9				0	nr	Spesifiseer asseblief items vir die agenda				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 10				0	nr	Selekteer asseblief die name wat u in u agendasjabloon wil insluit				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +11				0	nr	Kies 'n naam en stoor die sjabloon				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +12				0	nr	Sluit vorm vir skryf van notule in				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +13				0	nr	Hierdie slimmerd help u om 'n agendasjabloon te skep. Die sjabloon kan dan gebruik word om 'n agenda te skep wanneer nodig.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +14				0	nr	Tyd:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 12				0	nr	Sluit vorm vir skryf van notule in				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 13				0	nr	Hierdie slimmerd help u om 'n agendasjabloon te skep. Die sjabloon kan dan gebruik word om 'n agenda te skep wanneer nodig.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 14				0	nr	Tyd:				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +15				0	nr	Naam:				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 16				0	nr	Ligging:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +17				0	nr	Plekhouers sal in leë velde gebruik word. U kan plekhouers later met teks vervang.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 17				0	nr	Plekhouers sal in leë velde gebruik word. U kan plekhouers later met teks vervang.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +18				0	nr	...				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +19				0	nr	Skep 'n ~agenda uit hierdie sjabloon				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +20				0	nr	Om nog 'n nuwe agenda uit die sjabloon te skep, gaan bloot na die ligging waar u die sjabloon gestoor het, en dubbekliek op die lêer.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +21				0	nr	Agenda-item				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +22				0	nr	Verantwoordelike				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +23				0	nr	Duur				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 19				0	nr	Skep 'n ~agenda uit hierdie sjabloon				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 20				0	nr	Om nog 'n nuwe agenda uit die sjabloon te skep, gaan bloot na die ligging waar u die sjabloon gestoor het, en dubbekliek op die lêer.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 21				0	nr	Agenda-item				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 22				0	nr	Verantwoordelike				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 23				0	nr	Duur				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +24				0	nr	Vergadering byeengeroep deur				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +25				0	nr	Voorsitter				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +26				0	nr	Notuleskrywer				2002-02-02 02:02:02
@@ -4996,30 +4996,30 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +27
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +28				0	nr	Bywonendes				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +29				0	nr	Observeerders				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +30				0	nr	Fasiliteitpersoneel				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +31				0	nr	Die agendasjabloon sluit plekhouers in vir die name van die geselekteerde mense. Wanneer u 'n agenda uit 'n sjabloon skep, kan u hierdie plekhouers met die betrokke name vervang.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 31				0	nr	Die agendasjabloon sluit plekhouers in vir die name van die geselekteerde mense. Wanneer u 'n agenda uit 'n sjabloon skep, kan u hierdie plekhouers met die betrokke name vervang.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +32				0	nr	Soort vergadering				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +33				0	nr	Lees asseblief				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +34				0	nr	Bring asseblief				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +35				0	nr	Notas				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +36				0	nr	Die agendasjabloon sluit plekhouers in vir die geselekteerde items in.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 36				0	nr	Die agendasjabloon sluit plekhouers in vir die geselekteerde items in.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +38				0	nr	Datum:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +39				0	nr	Hierdie slimmerd skep 'n agendasjabloon waarmee u meervoudige agendas met selfde uitleg en instellings kan skep.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +40				0	nr	Bladsyontwerp:				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +41				0	nr	myAgendaSjabloon.stw				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +42				0	nr	My Agenda-sjabloon				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +43				0	nr	'n Onverwagte fout het plaasgevind terwyl die agendasjabloon gestoor is.				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +44				0	nr	Naam				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +45				0	nr	Datum				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +46				0	nr	Tyd				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 39				0	nr	Hierdie slimmerd skep 'n agendasjabloon waarmee u meervoudige agendas met selfde uitleg en instellings kan skep.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 40				0	nr	Bladsyontwerp:				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 41				0	nr	myAgendaSjabloon.stw				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 42				0	nr	My Agenda-sjabloon				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 43				0	nr	'n Onverwagte fout het plaasgevind terwyl die agendasjabloon gestoor is.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 44				0	nr	Naam				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 45				0	nr	Datum				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 46				0	nr	Tyd				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 47				0	nr	Ligging				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +48				0	nr	Kliek om hierdie teks te vervang				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 48				0	nr	Kliek om hierdie teks te vervang				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +50				0	nr	Bladsyontwerp				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +51				0	nr	Algemene inligting				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +52				0	nr	Opskrifte om in te sluit				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +53				0	nr	Name				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +54				0	nr	Agenda-items				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 51				0	nr	Algemene inligting				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 52				0	nr	Opskrifte om in te sluit				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 53				0	nr	Name				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 54				0	nr	Agenda-items				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +55				0	nr	Naam en ligging				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +56				0	nr	'n Onverwagte fout het plaasgevind terwyl die agendasjabloon geopen is.				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 56				0	nr	'n Onverwagte fout het plaasgevind terwyl die agendasjabloon geopen is.				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +57				0	nr	Soort vergadering				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +58				0	nr	Bring asseblief				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +59				0	nr	Lees asseblief				2002-02-02 02:02:02
@@ -5031,10 +5031,10 @@ wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +64
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +65				0	nr	Moderator				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +66				0	nr	Observeerders				2002-02-02 02:02:02
 wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +67				0	nr	Fasiliteitpersoneel				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +68				0	nr	Voeg in				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +69				0	nr	Verwyder				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +70				0	nr	Skuif op				2002-02-02 02:02:02
-wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START +71				0	nr	Skuif ondertoe				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 68				0	nr	Voeg in				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 69				0	nr	Verwyder				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 70				0	nr	Skuif op				2002-02-02 02:02:02
+wizards	source\formwizard\dbwizres.src	0	string	RID_AGENDAWIZARDDIALOG_START + 71				0	nr	Skuif ondertoe				2002-02-02 02:02:02
 wizards	source\schedule\schedule.src	0	string	dlgCalTitle				0	nr	%PRODUCTNAME-kalender				2002-02-02 02:02:02
 wizards	source\schedule\schedule.src	0	string	dlgCalTitleBack				0	nr	Terug				2002-02-02 02:02:02
 wizards	source\schedule\schedule.src	0	string	dlgCalTitleOwnData				0	nr	Persoonlike data				2002-02-02 02:02:02
@@ -9678,7 +9678,7 @@ sw	source\ui\docvw\docvw.src	0	string	STR_REDLINE_FORMAT				0	nr	Geformateer				
 sw	source\ui\docvw\docvw.src	0	string	STR_REDLINE_TABLE				0	nr	Tabel is verander				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_REDLINE_FMTCOLL				0	nr	Toegepaste paragraafstyle				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_ENDNOTE				0	nr	Eindnota: 				2002-02-02 02:02:02
-sw	source\ui\docvw\docvw.src	0	string	STR_FTNNOTE				0	nr	Voetnota: 				2002-02-02 02:02:02
+sw	source\ui\docvw\docvw.src	0	string	STR_FOOTNOTE				0	nr	Voetnota: 				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	infobox	MSG_READONLY_CONTENT				0	nr	Leesalleeninhoud kan nie verander word nie.\nGeen wysigings sal aanvaar word nie				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_TABLE_COL_ADJUST				0	nr	Pas tabelkolom aan				2002-02-02 02:02:02
 sw	source\ui\docvw\docvw.src	0	string	STR_TABLE_ROW_ADJUST				0	nr	Pas tabelry aan				2002-02-02 02:02:02
@@ -9785,11 +9785,11 @@ sw	source\ui\ribbar\inputwin.src	0	string	STR_TBL_FORMULA				0	nr	Teksformule			
 sw	source\ui\ribbar\inputwin.src	0	toolboxitem	TB_INPUT	FN_FORMULA_CALC	HID_TBX_FORMULA_CALC		0	nr	Formule				2002-02-02 02:02:02
 sw	source\ui\ribbar\inputwin.src	0	toolboxitem	TB_INPUT	FN_FORMULA_CANCEL	HID_TBX_FORMULA_CANCEL		0	nr	Kanselleer				2002-02-02 02:02:02
 sw	source\ui\ribbar\inputwin.src	0	toolboxitem	TB_INPUT	FN_FORMULA_APPLY	HID_TBX_FORMULA_APPLY		0	nr	Pas toe				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_PAGE			0	nr	Na bladsy				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_PARAGRAPH			0	nr	Na paragraaf				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_AT_CHAR			0	nr	Na karakter				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_CHAR			0	nr	As karakter				2002-02-02 02:02:02
-sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANKER_FRAME			0	nr	Na raam				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_PAGE			0	nr	Na bladsy				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_PARAGRAPH			0	nr	Na paragraaf				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_AT_CHAR			0	nr	Na karakter				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_CHAR			0	nr	As karakter				2002-02-02 02:02:02
+sw	source\ui\ribbar\tbxanchr.src	0	menuitem	MN_ANCHOR_POPUP	FN_TOOL_ANCHOR_FRAME			0	nr	Na raam				2002-02-02 02:02:02
 sw	source\ui\wrtsh\wrtsh.src	0	string	STR_DDEERROR_APP1				0	nr	Toepassing [				2002-02-02 02:02:02
 sw	source\ui\wrtsh\wrtsh.src	0	string	STR_DDEERROR_APP2				0	nr	] reageer nie.				2002-02-02 02:02:02
 sw	source\ui\wrtsh\wrtsh.src	0	string	STR_DDEERROR_DATA1				0	nr	Data vir [				2002-02-02 02:02:02
@@ -10199,12 +10199,12 @@ sw	source\ui\app\mn.src	0	menuitem	MN_WRAP_DRAW.MN_WRAP	FN_FRAME_WRAPTHRU_TRANSP
 sw	source\ui\app\mn.src	0	menuitem	MN_WRAP_DRAW.MN_WRAP	FN_WRAP_ANCHOR_ONLY	CMD_FN_WRAP_ANCHOR_ONLY		0	nr	~Eerste paragraaf				2002-02-02 02:02:02
 sw	source\ui\app\mn.src	0	menuitem	MN_WRAP_DRAW.MN_WRAP	FN_DRAW_WRAP_DLG	CMD_FN_DRAW_WRAP_DLG		0	nr	~Redigeer...				2002-02-02 02:02:02
 sw	source\ui\app\mn.src	0	menuitem	MN_WRAP_DRAW	MN_WRAP			0	nr	~Omvou				2002-02-02 02:02:02
-sw	source\ui\app\mn.src	0	menuitem	MN_AT_FRAME	FN_TOOL_ANKER_FRAME	CMD_FN_TOOL_ANKER_FRAME		0	nr	Na ~Raam				2002-02-02 02:02:02
-sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANKER	FN_TOOL_ANKER_PAGE	CMD_FN_TOOL_ANKER_PAGE		0	nr	Na bl~adsy				2002-02-02 02:02:02
-sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANKER	FN_TOOL_ANKER_PARAGRAPH	CMD_FN_TOOL_ANKER_PARAGRAPH		0	nr	Na ~Paragraaf				2002-02-02 02:02:02
-sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANKER	FN_TOOL_ANKER_AT_CHAR	CMD_FN_TOOL_ANKER_AT_CHAR		0	nr	Na ~karakter				2002-02-02 02:02:02
-sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANKER	FN_TOOL_ANKER_CHAR	CMD_FN_TOOL_ANKER_CHAR		0	nr	As k~arakter				2002-02-02 02:02:02
-sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR	FN_TOOL_ANKER	CMD_FN_TOOL_ANKER		0	nr	An~ker				2002-02-02 02:02:02
+sw	source\ui\app\mn.src	0	menuitem	MN_AT_FRAME	FN_TOOL_ANCHOR_FRAME	CMD_FN_TOOL_ANCHOR_FRAME		0	nr	Na ~Raam				2002-02-02 02:02:02
+sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANCHOR	FN_TOOL_ANCHOR_PAGE	CMD_FN_TOOL_ANCHOR_PAGE		0	nr	Na bl~adsy				2002-02-02 02:02:02
+sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANCHOR	FN_TOOL_ANCHOR_PARAGRAPH	CMD_FN_TOOL_ANCHOR_PARAGRAPH		0	nr	Na ~Paragraaf				2002-02-02 02:02:02
+sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANCHOR	FN_TOOL_ANCHOR_AT_CHAR	CMD_FN_TOOL_ANCHOR_AT_CHAR		0	nr	Na ~karakter				2002-02-02 02:02:02
+sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR.FN_TOOL_ANCHOR	FN_TOOL_ANCHOR_CHAR	CMD_FN_TOOL_ANCHOR_CHAR		0	nr	As k~arakter				2002-02-02 02:02:02
+sw	source\ui\app\mn.src	0	menuitem	MN_ANCHOR	FN_TOOL_ANCHOR	CMD_FN_TOOL_ANCHOR		0	nr	An~ker				2002-02-02 02:02:02
 sw	source\ui\app\mn.src	0	string	MN_DRAWFORM_POPUPMENU				0	nr	Beheer				2002-02-02 02:02:02
 sw	source\ui\app\mn.src	0	string	MN_DRWTXT_POPUPMENU				0	nr	Tekenobjekteks				2002-02-02 02:02:02
 sw	source\ui\app\mn.src	0	menuitem	MN_REDCOMMENT	FN_DELETE_COMMENT	CMD_FN_DELETE_COMMENT		0	nr	Skrap ~veranderingenota				2002-02-02 02:02:02
@@ -10301,7 +10301,7 @@ sw	source\ui\app\app.src	0	string	STR_WRITER_DOCUMENT_FULLTYPE				0	nr	%PRODUCTN
 sw	source\ui\app\app.src	0	string	STR_CANTOPEN				0	nr	Kan nie dokument open nie.				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_CANTCREATE				0	nr	Kan nie dokument skep nie.				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_DLLNOTFOUND				0	nr	Filter kan nie gevind word nie.				2002-02-02 02:02:02
-sw	source\ui\app\app.src	0	string	STR_UNBENANNT				0	nr	Titelloos				2002-02-02 02:02:02
+sw	source\ui\app\app.src	0	string	STR_UNTITLED				0	nr	Titelloos				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_LOAD_GLOBAL_DOC				0	nr	Naam en pad van meesterdokument				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	string	STR_LOAD_HTML_DOC				0	nr	Naam en pad van HTML-dokument				2002-02-02 02:02:02
 sw	source\ui\app\app.src	0	infobox	MSG_ERROR_SEND_MAIL				0	nr	Fout met stuur van pos.				2002-02-02 02:02:02
@@ -17366,32 +17366,32 @@ connectivity	source\resource\conn_error_message.src	0	string	256 + 2*304 + 0				
 connectivity	source\resource\conn_error_message.src	0	string	256 + 2*500 + 0				0	nr	Geen $1$ bestaan nie.				2002-02-02 02:02:02
 connectivity	source\resource\conn_error_message.src	0	string	256 + 2*550 + 0				0	nr	Kon nie die volledige tabelinhoud wys nie. Pas asseblief 'n filter toe.				2002-02-02 02:02:02
 connectivity	source\drivers\calc\calc.xcu	0	value	.Drivers.Installed.sdbc:calc:*	DriverTypeDisplayName			0	nr	Sigblad				2002-02-02 02:02:02
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:local	DriverTypeDisplayName			0	nr	Evolution, plaaslik				2002-02-02 02:02:02
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:ldap	DriverTypeDisplayName			0	nr	Evolution LDAP				2002-02-02 02:02:02
-connectivity	source\drivers\evoab2\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:groupwise	DriverTypeDisplayName			0	nr	Groupwise				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:local	DriverTypeDisplayName			0	nr	Evolution, plaaslik				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:ldap	DriverTypeDisplayName			0	nr	Evolution LDAP				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\evoab2.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:groupwise	DriverTypeDisplayName			0	nr	Groupwise				2002-02-02 02:02:02
 connectivity	source\drivers\mozab\mozab.xcu	0	value	.Drivers.Installed.sdbc:address:outlook	DriverTypeDisplayName			0	nr	Microsoft Outlook-adresboek				2002-02-02 02:02:02
 connectivity	source\drivers\mozab\mozab.xcu	0	value	.Drivers.Installed.sdbc:address:outlookexp	DriverTypeDisplayName			0	nr	Microsoft Windows-adresboek				2002-02-02 02:02:02
 connectivity	source\drivers\mozab\mozab.xcu	0	value	.Drivers.Installed.sdbc:address:thunderbird:	DriverTypeDisplayName			0	nr	Thunderbird-adresboek				2002-02-02 02:02:02
 connectivity	source\drivers\mozab\mozab.xcu	0	value	.Drivers.Installed.sdbc:address:ldap:*	DriverTypeDisplayName			0	nr	LDAP-adresboek				2002-02-02 02:02:02
 connectivity	source\drivers\mozab\mozab2.xcu	0	value	.Drivers.Installed.sdbc:address:thunderbird:	DriverTypeDisplayName			0	nr	Thunderbird-adresboek				2002-02-02 02:02:02
 connectivity	source\drivers\mozab\mozab2.xcu	0	value	.Drivers.Installed.sdbc:address:ldap:*	DriverTypeDisplayName			0	nr	LDAP-adresboek				2002-02-02 02:02:02
-connectivity	source\drivers\flat\flat.xcu	0	value	.Drivers.Installed.sdbc:flat:*	DriverTypeDisplayName			0	nr	Teks				2002-02-02 02:02:02
-connectivity	source\drivers\hsqldb\hsqldb.xcu	0	value	.Drivers.Installed.sdbc:embedded:hsqldb	DriverTypeDisplayName			0	nr	HSQL-databasisenjin				2002-02-02 02:02:02
-connectivity	source\drivers\dbase\dbase.xcu	0	value	.Drivers.Installed.sdbc:dbase:*	DriverTypeDisplayName			0	nr	dBASE				2002-02-02 02:02:02
-connectivity	source\drivers\macab\macab.xcu	0	value	.Drivers.Installed.sdbc:address:macab	DriverTypeDisplayName			0	nr	Mac OS X-adresboek				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\flat.xcu	0	value	.Drivers.Installed.sdbc:flat:*	DriverTypeDisplayName			0	nr	Teks				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\hsqldb.xcu	0	value	.Drivers.Installed.sdbc:embedded:hsqldb	DriverTypeDisplayName			0	nr	HSQL-databasisenjin				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\dbase.xcu	0	value	.Drivers.Installed.sdbc:dbase:*	DriverTypeDisplayName			0	nr	dBASE				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\macab.xcu	0	value	.Drivers.Installed.sdbc:address:macab	DriverTypeDisplayName			0	nr	Mac OS X-adresboek				2002-02-02 02:02:02
 connectivity	source\drivers\jdbc\jdbc.xcu	0	value	.Drivers.Installed.jdbc:*	DriverTypeDisplayName			0	nr	JDBC				2002-02-02 02:02:02
 connectivity	source\drivers\jdbc\jdbc.xcu	0	value	.Drivers.Installed.jdbc:oracle:thin:*	DriverTypeDisplayName			0	nr	Oracle JDBC				2002-02-02 02:02:02
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:*	DriverTypeDisplayName			0	nr	ADO				2002-02-02 02:02:02
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:PROVIDER=Microsoft.Jet.OLEDB.4.0;DATA SOURCE=*	DriverTypeDisplayName			0	nr	Microsoft Access				2002-02-02 02:02:02
-connectivity	source\drivers\ado\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:Provider=Microsoft.ACE.OLEDB.12.0;DATA SOURCE=*	DriverTypeDisplayName			0	nr	Microsoft Access 2007				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:*	DriverTypeDisplayName			0	nr	ADO				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:PROVIDER=Microsoft.Jet.OLEDB.4.0;DATA SOURCE=*	DriverTypeDisplayName			0	nr	Microsoft Access				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\ado.xcu	0	value	.Drivers.Installed.sdbc:ado:access:Provider=Microsoft.ACE.OLEDB.12.0;DATA SOURCE=*	DriverTypeDisplayName			0	nr	Microsoft Access 2007				2002-02-02 02:02:02
 connectivity	source\drivers\evoab\evoab.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:ldap	DriverTypeDisplayName			0	nr	Evolution LDAP				2002-02-02 02:02:02
 connectivity	source\drivers\evoab\evoab.xcu	0	value	.Drivers.Installed.sdbc:address:evolution:groupwise	DriverTypeDisplayName			0	nr	Groupwise				2002-02-02 02:02:02
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:jdbc:*	DriverTypeDisplayName			0	nr	MySQL (JDBC)				2002-02-02 02:02:02
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:odbc:*	DriverTypeDisplayName			0	nr	MySQL (ODBC)				2002-02-02 02:02:02
-connectivity	source\drivers\mysql\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:mysqlc:*	DriverTypeDisplayName			0	nr	MySQL (eie)				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:jdbc:*	DriverTypeDisplayName			0	nr	MySQL (JDBC)				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:odbc:*	DriverTypeDisplayName			0	nr	MySQL (ODBC)				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\mysql.xcu	0	value	.Drivers.Installed.sdbc:mysql:mysqlc:*	DriverTypeDisplayName			0	nr	MySQL (eie)				2002-02-02 02:02:02
 connectivity	source\drivers\kab\kab.xcu	0	value	.Drivers.Installed.sdbc:address:kab	DriverTypeDisplayName			0	nr	KDE-adresboek				2002-02-02 02:02:02
-connectivity	source\drivers\adabas\adabas.xcu	0	value	.Drivers.Installed.sdbc:adabas:*	DriverTypeDisplayName			0	nr	Adabas D				2002-02-02 02:02:02
-connectivity	source\drivers\odbc\odbc.xcu	0	value	.Drivers.Installed.sdbc:odbc:*	DriverTypeDisplayName			0	nr	ODBC				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\adabas.xcu	0	value	.Drivers.Installed.sdbc:adabas:*	DriverTypeDisplayName			0	nr	Adabas D				2002-02-02 02:02:02
+connectivity	registry\org\openoffice\Office\DataAccess\odbc.xcu	0	value	.Drivers.Installed.sdbc:odbc:*	DriverTypeDisplayName			0	nr	ODBC				2002-02-02 02:02:02
 readlicense_oo	docs\readme\readme.xrm	0	readmeitem	Welcome	Welcome			0	nr	${PRODUCTNAME} ${PRODUCTVERSION} Leesmy				2002-02-02 02:02:02
 readlicense_oo	docs\readme\readme.xrm	0	readmeitem	A6	A6			0	nr	Hierdie lêer bevat belangrike inligting aangaande hierdie program. Lees asseblief hierdie inligting baie noukeurig deur voor u begin werk.				2002-02-02 02:02:02
 readlicense_oo	docs\readme\readme.xrm	0	readmeitem	A10	A10			0	nr	Is ${PRODUCTNAME} regtig gratis vir enige gebruiker? 				2002-02-02 02:02:02

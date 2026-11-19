@@ -37,15 +37,24 @@ using com::sun::star::uno::RuntimeException;
 using com::sun::star::uno::XComponentContext;
 using com::sun::star::lang::XSingleServiceFactory;
 using com::sun::star::script::XTypeConverter;
-using com::sun::star::script::XInvocation2;
+using com::sun::star::script::XInvocation;
+using com::sun::star::script::CannotConvertException;
+using com::sun::star::lang::IllegalArgumentException;
+using com::sun::star::reflection::XIdlClass;
+using com::sun::star::reflection::XIdlMethod;
+using com::sun::star::reflection::ParamInfo;
+using com::sun::star::reflection::ParamMode_IN;
+using com::sun::star::reflection::ParamMode_OUT;
 
 namespace pyuno
 {
 typedef struct
 {
-    Reference<XInvocation2> xInvocation;
+    Reference<XInvocation> xInvocation;
     OUString methodName;
     ConversionMode mode;
+    Reference<XIdlMethod> xMethod;  // set when the object's XInvocation does not know the method
+    Any target;
 } PyUNO_callable_Internals;
 
 typedef struct
@@ -63,6 +72,61 @@ void PyUNO_callable_del (PyObject* self)
     PyObject_Del (self);
 
     return;
+}
+
+// Same argument and out-parameter handling as Invocation_Impl::invoke() has for introspected objects.
+static Any invokeReflected(
+    RuntimeCargo *cargo, const Reference<XIdlMethod> &xMethod, const Any &target,
+    const Sequence<Any> &aParams, Sequence<sal_Int16> &aOutIndex, Sequence<Any> &aOutParam )
+{
+    Sequence<ParamInfo> infos = xMethod->getParameterInfos();
+    sal_Int32 nParams = infos.getLength();
+    if( nParams != aParams.getLength() )
+        throw IllegalArgumentException(
+            OUString( RTL_CONSTASCII_USTRINGPARAM(
+                          "incorrect number of parameters passed invoking function " ) )
+            + xMethod->getName(),
+            Reference<XInterface>(), (sal_Int16) 1 );
+
+    Sequence<Any> aInvoke( nParams );
+    aOutIndex.realloc( nParams );
+    sal_Int32 nOut = 0;
+    for( sal_Int32 i = 0 ; i < nParams ; i ++ )
+    {
+        try
+        {
+            const ParamInfo &info = infos[i];
+            if( info.aMode != ParamMode_OUT )
+            {
+                Reference<XIdlClass> src(
+                    cargo->xCoreReflection->forName( aParams[i].getValueType().getTypeName() ) );
+                if( src.is() && info.aType->isAssignableFrom( src ) )
+                    aInvoke[i] = aParams[i];
+                else
+                    aInvoke[i] = cargo->xTypeConverter->convertTo(
+                        aParams[i], Type( info.aType->getTypeClass(), info.aType->getName() ) );
+            }
+            if( info.aMode != ParamMode_IN )
+            {
+                aOutIndex[nOut++] = (sal_Int16) i;
+                if( info.aMode == ParamMode_OUT )
+                    info.aType->createObject( aInvoke[i] );
+            }
+        }
+        catch( CannotConvertException &e )
+        {
+            e.ArgumentIndex = (sal_Int16) i;
+            throw;
+        }
+    }
+
+    Any ret = xMethod->invoke( target, aInvoke );
+
+    aOutIndex.realloc( nOut );
+    aOutParam.realloc( nOut );
+    for( sal_Int32 j = 0 ; j < nOut ; j ++ )
+        aOutParam[j] = aInvoke[ aOutIndex[j] ];
+    return ret;
 }
 
 PyObject* PyUNO_callable_call (PyObject* self, PyObject* args, PyObject*)
@@ -107,8 +171,13 @@ PyObject* PyUNO_callable_call (PyObject* self, PyObject* args, PyObject*)
             }
 
             // do the call
-            ret_value = me->members->xInvocation->invoke (
-                me->members->methodName, aParams, aOutParamIndex, aOutParam);
+            if( me->members->xMethod.is() )
+                ret_value = invokeReflected(
+                    cargo, me->members->xMethod, me->members->target,
+                    aParams, aOutParamIndex, aOutParam );
+            else
+                ret_value = me->members->xInvocation->invoke (
+                    me->members->methodName, aParams, aOutParamIndex, aOutParam);
 
             // log the reply, if desired
             if( isLog( cargo, LogLevel::CALL ) )
@@ -239,9 +308,11 @@ static PyTypeObject PyUNO_callable_Type =
 };
 
 PyRef PyUNO_callable_new (
-    const Reference<XInvocation2> &my_inv,
+    const Reference<XInvocation> &my_inv,
     const OUString & methodName,
-    enum ConversionMode mode )
+    enum ConversionMode mode,
+    const Reference<XIdlMethod> &xMethod,
+    const Any &target )
 {
     PyUNO_callable* self;
 
@@ -253,6 +324,8 @@ PyRef PyUNO_callable_new (
     self->members->xInvocation = my_inv;
     self->members->methodName = methodName;
     self->members->mode = mode;
+    self->members->xMethod = xMethod;
+    self->members->target = target;
 
     return PyRef( (PyObject*)self, SAL_NO_ACQUIRE );
 }

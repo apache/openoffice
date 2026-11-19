@@ -31,6 +31,7 @@
 #include "postmac.h"
 
 #include "aqua/aquavcltypes.h"
+#include "aqua/scaledlayer.h"
 
 #include "outfont.hxx"
 #include "salgdi.hxx"
@@ -149,7 +150,7 @@ class AquaSalGraphics : public SalGraphics
     friend class CTLayout;
 protected:
     AquaSalFrame*                           mpFrame;
-	CGLayerRef								mxLayer;	// Quartz graphics layer
+	ScaledLayer								maLayer;	// Quartz graphics layer
 	CGContextRef		                    mrContext;	// Quartz drawing context
 	class XorEmulation*						mpXorEmulation;
     int                                     mnXorMode; // 0: off 1: on 2: invert only
@@ -198,7 +199,7 @@ public:
 
     void                SetWindowGraphics( AquaSalFrame* pFrame );
     void                SetPrinterGraphics( CGContextRef, long nRealDPIX, long nRealDPIY, double fFakeScale );
-    void                SetVirDevGraphics( CGLayerRef, CGContextRef, int nBitDepth = 0 );
+    void                SetVirDevGraphics( const ScaledLayer&, CGContextRef, int nBitDepth = 0 );
 
     void                initResolution( NSWindow* );
     void                copyResolution( AquaSalGraphics& );

@@ -1601,6 +1601,51 @@ void ScInterpreter::ScFDist()
     PushDouble(GetFDist(fF, fF1, fF2));
 }
 
+// r1*x/(r1*x+r2) without forming inf/inf when r1*x overflows.
+static double lcl_FDistLeftBetaArg( double fF1, double fF2, double fX )
+{
+    double fR = fF1 * fX;
+    return ::rtl::math::isFinite( fR ) ? fR / (fR + fF2) : 1.0;
+}
+
+void ScInterpreter::ScFDistLeft()
+{
+    RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScFDistLeft" );
+    sal_uInt8 nParamCount = GetByte();
+    if ( !MustHaveParamCount( nParamCount, 3, 4 ) )
+        return;
+    bool bCumulative = ( nParamCount == 4 ? GetBool() : true );
+    double fF2 = ::rtl::math::approxFloor(GetDouble());
+    double fF1 = ::rtl::math::approxFloor(GetDouble());
+    double fF  = GetDouble();
+    if (fF1 < 1.0 || fF2 < 1.0 || fF1 >= 1.0E10 || fF2 >= 1.0E10)
+    {
+        PushIllegalArgument();
+        return;
+    }
+    if (fF < 0.0)
+    {
+        PushDouble(0.0);
+        return;
+    }
+    // F(x;r1;r2) is Beta(r1/2;r2/2) at y = r1*x/(r1*x+r2).
+    double fDenom = fF1 * fF + fF2;
+    double fY = lcl_FDistLeftBetaArg( fF1, fF2, fF );
+    if (bCumulative)
+        PushDouble( GetBetaDist( fY, fF1 / 2.0, fF2 / 2.0));
+    else if (fY >= 1.0 || fDenom > 1.0E150)
+    {
+        // y has rounded to 1 or denom^2 would overflow: use the density in log form
+        double fA = fF1 / 2.0;
+        double fB = fF2 / 2.0;
+        double fLogDenom = log( fF1) + log( fF) + std::log1p( fF2 / (fF1 * fF));
+        PushDouble( exp( (fA - 1.0) * log( fF) + fA * log( fF1) + fB * log( fF2)
+                         - GetLogBeta( fA, fB) - (fA + fB) * fLogDenom));
+    }
+    else
+        PushDouble( GetBetaDistPDF( fY, fF1 / 2.0, fF2 / 2.0) * fF1 * fF2 / (fDenom * fDenom));
+}
+
 void ScInterpreter::ScChiDist()
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScChiDist" );
@@ -1704,244 +1749,101 @@ void ScInterpreter::ScPoissonDist()
     }
 }
 
-/** Local function used in the calculation of the hypergeometric distribution.
- */
-void lcl_PutFactorialElements( ::std::vector< double >& cn, double fLower, double fUpper, double fBase )
-{
-    for ( double i = fLower; i <= fUpper; ++i )
-    {
-        double fVal = fBase - i;
-        if ( fVal > 1.0 )
-            cn.push_back( fVal );
-    }
-}
-
 /** Calculates a value of the hypergeometric distribution.
 
-    The algorithm is designed to avoid unnecessary multiplications and division
-    by expanding all factorial elements (9 of them).  It is done by excluding
-    those ranges that overlap in the numerator and the denominator.  This allows
-    for a fast calculation for large values which would otherwise cause an overflow
-    in the intermediate values.
-
-    @author Kohei Yoshida <kohei@openoffice.org>
-
-    @see #i47296#
-
+    C(M,x) * C(N-M,n-x) / C(N,n) is the product of the x factors of C(n,x),
+    which are at least 1, and of n ratios, which are at most 1. Taking a
+    ratio whenever the product has reached 1 and a factor otherwise keeps it
+    from overflowing on the way to a result of at most 1.
  */
+double ScInterpreter::GetHypGeomDist( double x, double n, double M, double N )
+{
+    if( (x < 0.0) || (n < x) || (M < x) || (N < n) || (N < M) || (x < n - N + M) )
+    {
+        SetError(errIllegalArgument);
+        return 0.0;
+    }
+    if ( x + ::std::min( n, M ) > 500000.0 )    // arbitrary limit, as before
+    {
+        SetError(errNoValue);
+        return 0.0;
+    }
+
+    // The same value with the fewest factors: the drawn and the remaining
+    // items swap roles, and so do the sample and the successes.
+    if ( n > N - n )
+    {
+        x = M - x;
+        n = N - n;
+    }
+    if ( n > M )
+        ::std::swap( n, M );
+
+    double fRes = 1.0;
+    double fFactors = 0.0;
+    double fRatios = 0.0;
+    while ( fFactors < x || fRatios < n )
+    {
+        if ( fFactors < x && (fRes < 1.0 || fRatios >= n) )
+        {
+            fFactors += 1.0;
+            fRes *= (n - x + fFactors) / fFactors;
+        }
+        else
+        {
+            if ( fRatios < x )
+                fRes *= (M - fRatios) / (N - fRatios);
+            else
+                fRes *= (N - M - fRatios + x) / (N - fRatios);
+            fRatios += 1.0;
+        }
+    }
+    return fRes;
+}
+
 void ScInterpreter::ScHypGeomDist()
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScHypGeomDist" );
-    const size_t nMaxArraySize = 500000; // arbitrary max array size
-
-    if ( !MustHaveParamCount( GetByte(), 4 ) )
+    sal_uInt8 nParamCount = GetByte();
+    if ( !MustHaveParamCount( nParamCount, 4, 5 ) )
         return;
 
+    bool bCumulative = ( nParamCount == 5 ? GetBool() : false );
     double N = ::rtl::math::approxFloor(GetDouble());
     double M = ::rtl::math::approxFloor(GetDouble());
     double n = ::rtl::math::approxFloor(GetDouble());
     double x = ::rtl::math::approxFloor(GetDouble());
 
-    if( (x < 0.0) || (n < x) || (M < x) || (N < n) || (N < M) || (x < n - N + M) )
+    double fVal = GetHypGeomDist( x, n, M, N );
+    if (bCumulative && !nGlobalError)
     {
-        PushIllegalArgument();
-        return;
-    }
-
-    typedef ::std::vector< double > HypContainer;
-    HypContainer cnNumer, cnDenom;
-
-    size_t nEstContainerSize = static_cast<size_t>( x + ::std::min( n, M ) );
-    size_t nMaxSize = ::std::min( cnNumer.max_size(), nMaxArraySize );
-    if ( nEstContainerSize > nMaxSize )
-    {
-        PushNoValue();
-        return;
-    }
-    cnNumer.reserve( nEstContainerSize + 10 );
-    cnDenom.reserve( nEstContainerSize + 10 );
-
-    // Trim coefficient C first
-    double fCNumVarUpper = N - n - M + x - 1.0;
-    double fCDenomVarLower = 1.0;
-    if ( N - n - M + x >= M - x + 1.0 )
-    {
-        fCNumVarUpper = M - x - 1.0;
-        fCDenomVarLower = N - n - 2.0*(M - x) + 1.0;
-    }
-
-#ifdef DBG_UTIL
-    double fCNumLower = N - n - fCNumVarUpper;
-#endif
-    double fCDenomUpper = N - n - M + x + 1.0 - fCDenomVarLower;
-
-    double fDNumVarLower = n - M;
-
-    if ( n >= M + 1.0 )
-    {
-        if ( N - M < n + 1.0 )
+        // Sum the smaller tail with the term ratios, walking away from the
+        // mode so the terms only shrink and the summed value stays accurate.
+        double fMode = ::rtl::math::approxFloor( (n + 1.0) * (M + 1.0) / (N + 2.0));
+        double fSum = 0.0;
+        double fTerm = fVal;
+        if (x < fMode)
         {
-            // Case 1
-
-            if ( N - n < n + 1.0 )
+            double fLow = ::std::max( 0.0, n - N + M);
+            for (double k = x; k > fLow; --k)
             {
-                // no overlap
-                lcl_PutFactorialElements( cnNumer, 0.0, fCNumVarUpper, N - n );
-                lcl_PutFactorialElements( cnDenom, 0.0, N - n - 1.0, N );
+                fSum += fTerm;
+                fTerm *= k * (N - M - n + k) / ((M - k + 1.0) * (n - k + 1.0));
             }
-            else
-            {
-                // overlap
-                DBG_ASSERT( fCNumLower < n + 1.0, "ScHypGeomDist: wrong assertion" );
-                lcl_PutFactorialElements( cnNumer, N - 2.0*n, fCNumVarUpper, N - n );
-                lcl_PutFactorialElements( cnDenom, 0.0, n - 1.0, N );
-            }
-
-            DBG_ASSERT( fCDenomUpper <= N - M, "ScHypGeomDist: wrong assertion" );
-
-            if ( fCDenomUpper < n - x + 1.0 )
-                // no overlap
-                lcl_PutFactorialElements( cnNumer, 1.0, N - M - n + x, N - M + 1.0 );
-            else
-            {
-                // overlap
-                lcl_PutFactorialElements( cnNumer, 1.0, N - M - fCDenomUpper, N - M + 1.0 );
-
-                fCDenomUpper = n - x;
-                fCDenomVarLower = N - M - 2.0*(n - x) + 1.0;
-            }
+            fVal = fSum + fTerm;
         }
         else
         {
-            // Case 2
-
-            if ( n > M - 1.0 )
+            double fHigh = ::std::min( n, M);
+            for (double k = x; k < fHigh; ++k)
             {
-                // no overlap
-                lcl_PutFactorialElements( cnNumer, 0.0, fCNumVarUpper, N - n );
-                lcl_PutFactorialElements( cnDenom, 0.0, M - 1.0, N );
+                fTerm *= (M - k) * (n - k) / ((k + 1.0) * (N - M - n + k + 1.0));
+                fSum += fTerm;
             }
-            else
-            {
-                lcl_PutFactorialElements( cnNumer, M - n, fCNumVarUpper, N - n );
-                lcl_PutFactorialElements( cnDenom, 0.0, n - 1.0, N );
-            }
-
-            DBG_ASSERT( fCDenomUpper <= n, "ScHypGeomDist: wrong assertion" );
-
-            if ( fCDenomUpper < n - x + 1.0 )
-                // no overlap
-                lcl_PutFactorialElements( cnNumer, N - M - n + 1.0, N - M - n + x, N - M + 1.0 );
-            else
-            {
-                lcl_PutFactorialElements( cnNumer, N - M - n + 1.0, N - M - fCDenomUpper, N - M + 1.0 );
-                fCDenomUpper = n - x;
-                fCDenomVarLower = N - M - 2.0*(n - x) + 1.0;
-            }
+            fVal = 1.0 - fSum;
         }
-
-        DBG_ASSERT( fCDenomUpper <= M, "ScHypGeomDist: wrong assertion" );
     }
-    else
-    {
-        if ( N - M < M + 1.0 )
-        {
-            // Case 3
-
-            if ( N - n < M + 1.0 )
-            {
-                // No overlap
-                lcl_PutFactorialElements( cnNumer, 0.0, fCNumVarUpper, N - n );
-                lcl_PutFactorialElements( cnDenom, 0.0, N - M - 1.0, N );
-            }
-            else
-            {
-                lcl_PutFactorialElements( cnNumer, N - n - M, fCNumVarUpper, N - n );
-                lcl_PutFactorialElements( cnDenom, 0.0, n - 1.0, N );
-            }
-
-            if ( n - x + 1.0 > fCDenomUpper )
-                // No overlap
-                lcl_PutFactorialElements( cnNumer, 1.0, N - M - n + x, N - M + 1.0 );
-            else
-            {
-                // Overlap
-                lcl_PutFactorialElements( cnNumer, 1.0, N - M - fCDenomUpper, N - M + 1.0 );
-
-                fCDenomVarLower = N - M - 2.0*(n - x) + 1.0;
-                fCDenomUpper = n - x;
-            }
-        }
-        else
-        {
-            // Case 4
-
-            DBG_ASSERT( M >= n - x, "ScHypGeomDist: wrong assertion" );
-            DBG_ASSERT( M - x <= N - M + 1.0, "ScHypGeomDist: wrong assertion" );
-
-            if ( N - n < N - M + 1.0 )
-            {
-                // No overlap
-                lcl_PutFactorialElements( cnNumer, 0.0, fCNumVarUpper, N - n );
-                lcl_PutFactorialElements( cnDenom, 0.0, M - 1.0, N );
-            }
-            else
-            {
-                // Overlap
-                DBG_ASSERT( fCNumLower <= N - M + 1.0, "ScHypGeomDist: wrong assertion" );
-
-                lcl_PutFactorialElements( cnNumer, M - n, fCNumVarUpper, N - n );
-                lcl_PutFactorialElements( cnDenom, 0.0, n - 1.0, N );
-            }
-
-            if ( n - x + 1.0 > fCDenomUpper )
-                // No overlap
-                lcl_PutFactorialElements( cnNumer, N - 2.0*M + 1.0, N - M - n + x, N - M + 1.0 );
-            else if ( M >= fCDenomUpper )
-            {
-                lcl_PutFactorialElements( cnNumer, N - 2.0*M + 1.0, N - M - fCDenomUpper, N - M + 1.0 );
-
-                fCDenomUpper = n - x;
-                fCDenomVarLower = N - M - 2.0*(n - x) + 1.0;
-            }
-            else
-            {
-                DBG_ASSERT( M <= fCDenomUpper, "ScHypGeomDist: wrong assertion" );
-                lcl_PutFactorialElements( cnDenom, fCDenomVarLower, N - n - 2.0*M + x,
-                        N - n - M + x + 1.0 );
-
-                fCDenomUpper = n - x;
-                fCDenomVarLower = N - M - 2.0*(n - x) + 1.0;
-            }
-        }
-
-        DBG_ASSERT( fCDenomUpper <= n, "ScHypGeomDist: wrong assertion" );
-
-        fDNumVarLower = 0.0;
-    }
-
-    double nDNumVarUpper   = fCDenomUpper < x + 1.0 ? n - x - 1.0     : n - fCDenomUpper - 1.0;
-    double nDDenomVarLower = fCDenomUpper < x + 1.0 ? fCDenomVarLower : N - n - M + 1.0;
-    lcl_PutFactorialElements( cnNumer, fDNumVarLower, nDNumVarUpper, n );
-    lcl_PutFactorialElements( cnDenom, nDDenomVarLower, N - n - M + x, N - n - M + x + 1.0 );
-
-    ::std::sort( cnNumer.begin(), cnNumer.end() );
-    ::std::sort( cnDenom.begin(), cnDenom.end() );
-    HypContainer::reverse_iterator it1 = cnNumer.rbegin(), it1End = cnNumer.rend();
-    HypContainer::reverse_iterator it2 = cnDenom.rbegin(), it2End = cnDenom.rend();
-
-    double fFactor = 1.0;
-    for ( ; it1 != it1End || it2 != it2End; )
-    {
-        double fEnum = 1.0, fDenom = 1.0;
-        if ( it1 != it1End )
-            fEnum  = *it1++;
-        if ( it2 != it2End )
-            fDenom = *it2++;
-        fFactor *= fEnum / fDenom;
-    }
-
-    PushDouble(fFactor);
+    PushDouble( fVal);
 }
 
 void ScInterpreter::ScGammaDist()
@@ -2139,6 +2041,18 @@ void ScInterpreter::ScTInv()
     PushDouble(fVal);
 }
 
+class ScFDistLeftFunction : public ScDistFunc
+{
+    ScInterpreter&  rInt;
+    double          fp, fF1, fF2;
+
+public:
+            ScFDistLeftFunction( ScInterpreter& rI, double fpVal, double fF1Val, double fF2Val ) :
+                rInt(rI), fp(fpVal), fF1(fF1Val), fF2(fF2Val) {}
+
+    double  GetValue( double x ) const  { return fp - rInt.GetBetaDist( lcl_FDistLeftBetaArg( fF1, fF2, x), fF1 / 2.0, fF2 / 2.0); }
+};
+
 class ScFDistFunction : public ScDistFunc
 {
     ScInterpreter&  rInt;
@@ -2167,6 +2081,33 @@ void ScInterpreter::ScFInv()
 
     bool bConvError;
     ScFDistFunction aFunc( *this, fP, fF1, fF2 );
+    double fVal = lcl_IterateInverse( aFunc, fF1*0.5, fF1, bConvError );
+    if (bConvError)
+        SetError(errNoConvergence);
+    PushDouble(fVal);
+}
+
+void ScInterpreter::ScFInvLeft()
+{
+    RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScFInvLeft" );
+    if ( !MustHaveParamCount( GetByte(), 3 ) )
+        return;
+    double fF2 = ::rtl::math::approxFloor(GetDouble());
+    double fF1 = ::rtl::math::approxFloor(GetDouble());
+    double fP  = GetDouble();
+    if (fP < 0.0 || fP >= 1.0 || fF1 < 1.0 || fF2 < 1.0 || fF1 >= 1.0E10 || fF2 >= 1.0E10)
+    {
+        PushIllegalArgument();
+        return;
+    }
+    if (fP == 0.0)
+    {
+        PushDouble(0.0);
+        return;
+    }
+
+    bool bConvError;
+    ScFDistLeftFunction aFunc( *this, fP, fF1, fF2 );
     double fVal = lcl_IterateInverse( aFunc, fF1*0.5, fF1, bConvError );
     if (bConvError)
         SetError(errNoConvergence);
@@ -3101,6 +3042,47 @@ void ScInterpreter::ScSkew()
     }
 
     PushDouble(((xcube * fCount) / (fCount - 1.0)) / (fCount - 2.0));
+}
+
+void ScInterpreter::ScSkewP()
+{
+    RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScSkewP" );
+    double fSum,fCount,vSum;
+    std::vector<double> values;
+    if ( !CalculateSkew(fSum,fCount,vSum,values) )
+        return;
+
+    // Population skewness requires at least one numeric observation.
+    if (fCount < 1.0)
+    {
+        PushIllegalArgument();
+        return;
+    }
+
+    double fMean = fSum / fCount;
+
+    for (size_t i = 0; i < values.size(); i++)
+        vSum += (values[i] - fMean) * (values[i] - fMean);
+
+    // Population standard deviation: sigma = sqrt( sum((xi-mean)^2) / N )
+    double fSigma = sqrt(vSum / fCount);
+
+    // Zero variance (including a single observation) is undefined.
+    if (fSigma == 0.0)
+    {
+        PushIllegalArgument();
+        return;
+    }
+
+    double xcube = 0.0;
+    for (size_t i = 0; i < values.size(); i++)
+    {
+        double dx = (values[i] - fMean) / fSigma;
+        xcube = xcube + (dx * dx * dx);
+    }
+
+    // Population skewness: (1/N) * sum( ((xi-mean)/sigma)^3 )
+    PushDouble(xcube / fCount);
 }
 
 double ScInterpreter::GetMedian( vector<double> & rArray )

@@ -221,6 +221,7 @@ const sal_uInt16 FUNCFLAG_MACROFUNC         = 0x0040;   /// Function is a macro-
 const sal_uInt16 FUNCFLAG_MACROCMD          = 0x0080;   /// Function is a macro-sheet command.
 const sal_uInt16 FUNCFLAG_ALWAYSVAR         = 0x0100;   /// Function is always represented by a tFuncVar token.
 const sal_uInt16 FUNCFLAG_PARAMPAIRS        = 0x0200;   /// Optional parameters are expected to appear in pairs.
+const sal_uInt16 FUNCFLAG_LASTOPCODE        = 0x0400;   /// The ODF name is shared by two opcodes, use the last one.
 
 /// Converts a function library index (value of enum FunctionLibraryType) to function flags.
 #define FUNCLIB_TO_FUNCFLAGS( funclib_index ) static_cast< sal_uInt16 >( static_cast< sal_uInt8 >( funclib_index ) << 12 )
@@ -439,9 +440,9 @@ static const FunctionData saFuncTableBiff3[] =
     { "GROWTH",                 "GROWTH",               52,     52,     1,  4,  A, { RA, RA, RA, VV }, 0 },             // BIFF2: 1-3, BIFF3: 1-4
     { "TRUNC",                  "TRUNC",                197,    197,    1,  2,  V, { VR }, 0 },                      // BIFF2: 1,   BIFF3: 1-2
     { "DOLLAR",                 "USDOLLAR",             204,    204,    1,  2,  V, { VR }, FUNCFLAG_IMPORTONLY },
-    { 0/*"FIND"*/,              "FINDB",                205,    205,    2,  3,  V, { VR }, 0 },
-    { 0/*"SEARCH"*/,            "SEARCHB",              206,    206,    2,  3,  V, { VR }, 0 },
-    { 0/*"REPLACE"*/,           "REPLACEB",             207,    207,    4,  4,  V, { VR }, 0 },
+    { "FINDB",                  "FINDB",                205,    205,    2,  3,  V, { VR }, 0 },
+    { "SEARCHB",                "SEARCHB",              206,    206,    2,  3,  V, { VR }, 0 },
+    { "REPLACEB",               "REPLACEB",             207,    207,    4,  4,  V, { VR }, 0 },
     { "LEFTB",                  "LEFTB",                208,    208,    1,  2,  V, { VR }, 0 },
     { "RIGHTB",                 "RIGHTB",               209,    209,    1,  2,  V, { VR }, 0 },
     { "MIDB",                   "MIDB",                 210,    210,    3,  3,  V, { VR }, 0 },
@@ -483,7 +484,7 @@ static const FunctionData saFuncTableBiff4[] =
     { "RANK",                   "RANK",                 216,    216,    2,  3,  V, { VR, RO, VR }, 0 },
     { "DB",                     "DB",                   247,    247,    4,  5,  V, { VR }, 0 },
     { "FREQUENCY",              "FREQUENCY",            252,    252,    2,  2,  A, { RA }, 0 },
-    { "ORG.OPENOFFICE.ERRORTYPE","ERROR.TYPE",          261,    261,    1,  1,  V, { VR }, 0 },
+    { "ERROR.TYPE",             "ERROR.TYPE",           261,    261,    1,  1,  V, { VR }, 0 },
     { "AVEDEV",                 "AVEDEV",               269,    269,    1,  MX, V, { RX }, 0 },
     { "BETADIST",               "BETADIST",             270,    270,    3,  5,  V, { VR }, 0 },
     { "GAMMALN",                "GAMMALN",              271,    271,    1,  1,  V, { VR }, 0 },
@@ -668,7 +669,7 @@ static const FunctionData saFuncTableBiff5[] =
     { "COUNTIF",                "COUNTIF",              346,    346,    2,  2,  V, { RO, VR }, 0 },
     { "COUNTBLANK",             "COUNTBLANK",           347,    347,    1,  1,  V, { RO }, 0 },
     { "ISPMT",                  "ISPMT",                350,    350,    4,  4,  V, { VR }, 0 },
-    { 0,                        "DATEDIF",              351,    351,    3,  3,  V, { VR }, FUNCFLAG_IMPORTONLY },   // not supported in Calc
+    { "DATEDIF",                "DATEDIF",              351,    351,    3,  3,  V, { VR }, FUNCFLAG_IMPORTONLY },
     { 0,                        "DATESTRING",           352,    352,    1,  1,  V, { VR }, FUNCFLAG_IMPORTONLY },   // not supported in Calc, missing in OOXML spec
     { 0,                        "NUMBERSTRING",         353,    353,    2,  2,  V, { VR }, FUNCFLAG_IMPORTONLY },   // not supported in Calc, missing in OOXML spec
     { "ROMAN",                  "ROMAN",                354,    354,    1,  2,  V, { VR }, 0 },
@@ -723,11 +724,23 @@ static const FunctionData saFuncTableOox[] =
     { 0,                        "CUBEKPIMEMBER",        477,    NOID,   3,  4,  V, { VR }, 0 },
     { 0,                        "CUBESET",              478,    NOID,   2,  5,  V, { VR, RX, VR }, 0 },
     { 0,                        "CUBESETCOUNT",         479,    NOID,   1,  1,  V, { VR }, 0 },
-    { 0,                        "IFERROR",              480,    NOID,   2,  2,  V, { VO, RO }, 0 },
+    { "IFERROR",                "IFERROR",              480,    NOID,   2,  2,  V, { VO, RO }, 0 },
     { "COUNTIFS",               "COUNTIFS",             481,    NOID,   2,  MX, V, { RO, VR }, FUNCFLAG_MACROCALL | FUNCFLAG_PARAMPAIRS },
     { "SUMIFS",                 "SUMIFS",               482,    NOID,   3,  MX, V, { RO, RO, VR }, FUNCFLAG_MACROCALL | FUNCFLAG_PARAMPAIRS },
     { "AVERAGEIF",              "AVERAGEIF",            483,    NOID,   2,  3,  V, { RO, VR, RO }, FUNCFLAG_MACROCALL },
-    { "AVERAGEIFS",             "AVERAGEIFS",           484,    NOID,   3,  MX, V, { RO, RO, VR }, FUNCFLAG_MACROCALL | FUNCFLAG_PARAMPAIRS }
+    { "AVERAGEIFS",             "AVERAGEIFS",           484,    NOID,   3,  MX, V, { RO, RO, VR }, FUNCFLAG_MACROCALL | FUNCFLAG_PARAMPAIRS },
+    { "IFNA",                   "IFNA",                 NOID,   NOID,   2,  2,  V, { VR, RO }, FUNCFLAG_MACROCALL },
+    { "SKEWP",                  "SKEW.P",               NOID,   NOID,   1,  MX, V, { RX }, FUNCFLAG_MACROCALL },
+    { "BITAND",                 "BITAND",               NOID,   NOID,   2,  2,  V, { VR }, FUNCFLAG_MACROCALL },
+    { "BITOR",                  "BITOR",                NOID,   NOID,   2,  2,  V, { VR }, FUNCFLAG_MACROCALL },
+    { "BITXOR",                 "BITXOR",               NOID,   NOID,   2,  2,  V, { VR }, FUNCFLAG_MACROCALL },
+    { "BITLSHIFT",              "BITLSHIFT",            NOID,   NOID,   2,  2,  V, { VR }, FUNCFLAG_MACROCALL },
+    { "BITRSHIFT",              "BITRSHIFT",            NOID,   NOID,   2,  2,  V, { VR }, FUNCFLAG_MACROCALL },
+    { "FDIST",                  "F.DIST",               NOID,   NOID,   4,  4,  V, { VR }, FUNCFLAG_MACROCALL },
+    { "FINV",                   "F.INV",                NOID,   NOID,   3,  3,  V, { VR }, FUNCFLAG_MACROCALL },
+    { "NUMBERVALUE",            "NUMBERVALUE",          NOID,   NOID,   1,  3,  V, { VR }, FUNCFLAG_MACROCALL },
+    { "RRI",                    "RRI",                  NOID,   NOID,   3,  3,  V, { VR }, FUNCFLAG_MACROCALL },
+    { "ISOWEEKNUM",             "ISOWEEKNUM",           NOID,   NOID,   1,  1,  V, { VR }, FUNCFLAG_MACROCALL | FUNCFLAG_LASTOPCODE }
 };
 
 /** Functions defined by OpenFormula, but not supported by Calc or by Excel. */
@@ -736,33 +749,24 @@ static const FunctionData saFuncTableOdf[] =
     { "ARABIC",                 0,                      NOID,   NOID,   1,  1,  V, { VR }, FUNCFLAG_MACROCALLODF },
     { "B",                      0,                      NOID,   NOID,   3,  4,  V, { VR }, FUNCFLAG_MACROCALLODF },
     { "BASE",                   0,                      NOID,   NOID,   2,  3,  V, { VR }, FUNCFLAG_MACROCALLODF },
-    { "BITAND",                 0,                      NOID,   NOID,   2,  2,  V, { VR }, FUNCFLAG_MACROCALLODF },
-    { "BITLSHIFT",              0,                      NOID,   NOID,   2,  2,  V, { VR }, FUNCFLAG_MACROCALLODF },
-    { "BITOR",                  0,                      NOID,   NOID,   2,  2,  V, { VR }, FUNCFLAG_MACROCALLODF },
-    { "BITRSHIFT",              0,                      NOID,   NOID,   2,  2,  V, { VR }, FUNCFLAG_MACROCALLODF },
-    { "BITXOR",                 0,                      NOID,   NOID,   2,  2,  V, { VR }, FUNCFLAG_MACROCALLODF },
     { "CHISQDIST",              0,                      NOID,   NOID,   2,  3,  V, { VR }, FUNCFLAG_MACROCALLODF },
     { "CHISQINV",               0,                      NOID,   NOID,   2,  2,  V, { VR }, FUNCFLAG_MACROCALLODF },
     { "COMBINA",                0,                      NOID,   NOID,   2,  2,  V, { VR }, FUNCFLAG_MACROCALLODF },
     { "DAYS",                   0,                      NOID,   NOID,   2,  2,  V, { VR }, FUNCFLAG_MACROCALLODF },
     { "DECIMAL",                0,                      NOID,   NOID,   2,  2,  V, { VR }, FUNCFLAG_MACROCALLODF },
-    { "FDIST",                  0,                      NOID,   NOID,   3,  4,  V, { VR }, FUNCFLAG_MACROCALLODF },
-    { "FINV",                   0,                      NOID,   NOID,   3,  3,  V, { VR }, FUNCFLAG_MACROCALLODF },
     { "FORMULA",                0,                      NOID,   NOID,   1,  1,  V, { RO }, FUNCFLAG_MACROCALLODF },
     { "GAMMA",                  0,                      NOID,   NOID,   1,  1,  V, { VR }, FUNCFLAG_MACROCALLODF },
     { "GAUSS",                  0,                      NOID,   NOID,   1,  1,  V, { VR }, FUNCFLAG_MACROCALLODF },
-    { "IFNA",                   0,                      NOID,   NOID,   2,  2,  V, { VR, RO }, FUNCFLAG_MACROCALLODF },
     { "ISFORMULA",              0,                      NOID,   NOID,   1,  1,  V, { RO }, FUNCFLAG_MACROCALLODF },
     { "ISOWEEKNUM",             0,                      NOID,   NOID,   1,  2,  V, { VR }, FUNCFLAG_MACROCALLODF },
     { "MUNIT",                  0,                      NOID,   NOID,   1,  1,  A, { VR }, FUNCFLAG_MACROCALLODF },
-    { "NUMBERVALUE",            0,                      NOID,   NOID,   2,  2,  V, { VR }, FUNCFLAG_MACROCALLODF },
+    { "NUMBERVALUE",            0,                      NOID,   NOID,   1,  3,  V, { VR }, FUNCFLAG_MACROCALLODF },
     { "PDURATION",              0,                      NOID,   NOID,   3,  3,  V, { VR }, FUNCFLAG_MACROCALLODF },
     { "PERMUTATIONA",           0,                      NOID,   NOID,   2,  2,  V, { VR }, FUNCFLAG_MACROCALLODF },
     { "PHI",                    0,                      NOID,   NOID,   1,  1,  V, { VR }, FUNCFLAG_MACROCALLODF },
     { "RRI",                    0,                      NOID,   NOID,   3,  3,  V, { VR }, FUNCFLAG_MACROCALLODF },
     { "SHEET",                  0,                      NOID,   NOID,   0,  1,  V, { RO }, FUNCFLAG_MACROCALLODF },
     { "SHEETS",                 0,                      NOID,   NOID,   0,  1,  V, { RO }, FUNCFLAG_MACROCALLODF },
-    { "SKEWP",                  0,                      NOID,   NOID,   1,  MX, V, { RX }, FUNCFLAG_MACROCALLODF },
     { "UNICHAR",                0,                      NOID,   NOID,   1,  1,  V, { VR }, FUNCFLAG_MACROCALLODF },
     { "UNICODE",                0,                      NOID,   NOID,   1,  1,  V, { VR }, FUNCFLAG_MACROCALLODF },
     { "XOR",                    0,                      NOID,   NOID,   1,  MX, V, { RX }, FUNCFLAG_MACROCALLODF }
@@ -923,6 +927,7 @@ void FunctionProviderImpl::initFunc( const FunctionData& rFuncData, sal_uInt8 nM
     bool bMacroCmd = getFlag( rFuncData.mnFlags, FUNCFLAG_MACROCMD );
     xFuncInfo->mbMacroFunc = bMacroCmd || getFlag( rFuncData.mnFlags, FUNCFLAG_MACROFUNC );
     xFuncInfo->mbVarParam = bMacroCmd || (rFuncData.mnMinParamCount != rFuncData.mnMaxParamCount) || getFlag( rFuncData.mnFlags, FUNCFLAG_ALWAYSVAR );
+    xFuncInfo->mbLastOpCode = getFlag( rFuncData.mnFlags, FUNCFLAG_LASTOPCODE );
 
     setFlag( xFuncInfo->mnBiff12FuncId, BIFF_TOK_FUNCVAR_CMD, bMacroCmd );
     setFlag( xFuncInfo->mnBiffFuncId, BIFF_TOK_FUNCVAR_CMD, bMacroCmd );
@@ -1025,7 +1030,7 @@ private:
 
     static bool         fillEntrySeq( OpCodeEntrySequence& orEntrySeq, const Reference< XFormulaOpCodeMapper >& rxMapper, sal_Int32 nMapGroup );
     static bool         fillTokenMap( ApiTokenMap& orTokenMap, OpCodeEntrySequence& orEntrySeq, const Reference< XFormulaOpCodeMapper >& rxMapper, sal_Int32 nMapGroup );
-    bool                fillFuncTokenMaps( ApiTokenMap& orIntFuncTokenMap, ApiTokenMap& orExtFuncTokenMap, OpCodeEntrySequence& orEntrySeq, const Reference< XFormulaOpCodeMapper >& rxMapper ) const;
+    bool                fillFuncTokenMaps( ApiTokenMap& orIntFuncTokenMap, ApiTokenMap& orLastFuncTokenMap, ApiTokenMap& orExtFuncTokenMap, OpCodeEntrySequence& orEntrySeq, const Reference< XFormulaOpCodeMapper >& rxMapper ) const;
 
     static bool         initOpCode( sal_Int32& ornOpCode, const OpCodeEntrySequence& rEntrySeq, sal_Int32 nSpecialId );
     bool                initOpCode( sal_Int32& ornOpCode, const ApiTokenMap& rTokenMap, const OUString& rOdfName, const OUString& rOoxName );
@@ -1033,7 +1038,7 @@ private:
     bool                initOpCode( sal_Int32& ornOpCode, const ApiTokenMap& rTokenMap, sal_Unicode cOdfName, sal_Unicode cOoxName );
 
     bool                initFuncOpCode( FunctionInfo& orFuncInfo, const ApiTokenMap& rFuncTokenMap );
-    bool                initFuncOpCodes( const ApiTokenMap& rIntFuncTokenMap, const ApiTokenMap& rExtFuncTokenMap, const FunctionInfoVector& rFuncInfos );
+    bool                initFuncOpCodes( const ApiTokenMap& rIntFuncTokenMap, const ApiTokenMap& rLastFuncTokenMap, const ApiTokenMap& rExtFuncTokenMap, const FunctionInfoVector& rFuncInfos );
 };
 
 // ----------------------------------------------------------------------------
@@ -1054,7 +1059,7 @@ OpCodeProviderImpl::OpCodeProviderImpl( const FunctionInfoVector& rFuncInfos,
         using namespace ::com::sun::star::sheet::FormulaMapGroupSpecialOffset;
 
         OpCodeEntrySequence aEntrySeq;
-        ApiTokenMap aTokenMap, aExtFuncTokenMap;
+        ApiTokenMap aTokenMap, aLastFuncTokenMap, aExtFuncTokenMap;
         bool bIsValid =
             // special
             fillEntrySeq( aEntrySeq, xMapper, SPECIAL ) &&
@@ -1101,8 +1106,8 @@ OpCodeProviderImpl::OpCodeProviderImpl( const FunctionInfoVector& rFuncInfos,
             initOpCode( OPCODE_LIST,          aTokenMap, '~',  ','  ) &&
             initOpCode( OPCODE_RANGE,         aTokenMap, ':',  ':'  ) &&
             // functions
-            fillFuncTokenMaps( aTokenMap, aExtFuncTokenMap, aEntrySeq, xMapper ) &&
-            initFuncOpCodes( aTokenMap, aExtFuncTokenMap, rFuncInfos ) &&
+            fillFuncTokenMaps( aTokenMap, aLastFuncTokenMap, aExtFuncTokenMap, aEntrySeq, xMapper ) &&
+            initFuncOpCodes( aTokenMap, aLastFuncTokenMap, aExtFuncTokenMap, rFuncInfos ) &&
             initOpCode( OPCODE_DDE,           aTokenMap, "DDE", 0 );
 
         OSL_ENSURE( bIsValid, "OpCodeProviderImpl::OpCodeProviderImpl - opcodes not initialized" );
@@ -1145,16 +1150,22 @@ bool OpCodeProviderImpl::fillTokenMap( ApiTokenMap& orTokenMap, OpCodeEntrySeque
     return orEntrySeq.hasElements();
 }
 
-bool OpCodeProviderImpl::fillFuncTokenMaps( ApiTokenMap& orIntFuncTokenMap, ApiTokenMap& orExtFuncTokenMap, OpCodeEntrySequence& orEntrySeq, const Reference< XFormulaOpCodeMapper >& rxMapper ) const
+bool OpCodeProviderImpl::fillFuncTokenMaps( ApiTokenMap& orIntFuncTokenMap, ApiTokenMap& orLastFuncTokenMap, ApiTokenMap& orExtFuncTokenMap, OpCodeEntrySequence& orEntrySeq, const Reference< XFormulaOpCodeMapper >& rxMapper ) const
 {
     orIntFuncTokenMap.clear();
+    orLastFuncTokenMap.clear();
     orExtFuncTokenMap.clear();
     if( fillEntrySeq( orEntrySeq, rxMapper, ::com::sun::star::sheet::FormulaMapGroup::FUNCTIONS ) )
     {
         const FormulaOpCodeMapEntry* pEntry = orEntrySeq.getConstArray();
         const FormulaOpCodeMapEntry* pEntryEnd = pEntry + orEntrySeq.getLength();
         for( ; pEntry != pEntryEnd; ++pEntry )
-            ((pEntry->Token.OpCode == OPCODE_EXTERNAL) ? orExtFuncTokenMap : orIntFuncTokenMap)[ pEntry->Name ] = pEntry->Token;
+        {
+            // first entry wins, as in the formula compiler (ISOWEEKNUM names two opcodes)
+            ((pEntry->Token.OpCode == OPCODE_EXTERNAL) ? orExtFuncTokenMap : orIntFuncTokenMap).insert( ApiTokenMap::value_type( pEntry->Name, pEntry->Token ) );
+            if( pEntry->Token.OpCode != OPCODE_EXTERNAL )
+                orLastFuncTokenMap[ pEntry->Name ] = pEntry->Token;
+        }
     }
     return orEntrySeq.hasElements();
 }
@@ -1243,6 +1254,12 @@ bool OpCodeProviderImpl::initFuncOpCode( FunctionInfo& orFuncInfo, const ApiToke
                 aEntry.Name = orFuncInfo.maOoxFuncName;
                 aEntry.Token = aIt->second;
                 maParserMap.push_back( aEntry );
+                // cell formulas spell macro call functions with the prefix
+                if( orFuncInfo.maBiffMacroName.getLength() > 0 )
+                {
+                    aEntry.Name = orFuncInfo.maBiffMacroName;
+                    maParserMap.push_back( aEntry );
+                }
             }
         }
         else
@@ -1267,14 +1284,14 @@ bool OpCodeProviderImpl::initFuncOpCode( FunctionInfo& orFuncInfo, const ApiToke
     return bIsValid;
 }
 
-bool OpCodeProviderImpl::initFuncOpCodes( const ApiTokenMap& rIntFuncTokenMap, const ApiTokenMap& rExtFuncTokenMap, const FunctionInfoVector& rFuncInfos )
+bool OpCodeProviderImpl::initFuncOpCodes( const ApiTokenMap& rIntFuncTokenMap, const ApiTokenMap& rLastFuncTokenMap, const ApiTokenMap& rExtFuncTokenMap, const FunctionInfoVector& rFuncInfos )
 {
     bool bIsValid = true;
     for( FunctionInfoVector::const_iterator aIt = rFuncInfos.begin(), aEnd = rFuncInfos.end(); aIt != aEnd; ++aIt )
     {
         FunctionInfoRef xFuncInfo = *aIt;
         // set API opcode from ODF function name
-        bIsValid &= initFuncOpCode( *xFuncInfo, xFuncInfo->mbExternal ? rExtFuncTokenMap : rIntFuncTokenMap );
+        bIsValid &= initFuncOpCode( *xFuncInfo, xFuncInfo->mbExternal ? rExtFuncTokenMap : (xFuncInfo->mbLastOpCode ? rLastFuncTokenMap : rIntFuncTokenMap) );
         // insert the function info into the maps
         if( (xFuncInfo->mnApiOpCode != OPCODE_NONAME) && (xFuncInfo->mnApiOpCode != OPCODE_BAD) )
         {

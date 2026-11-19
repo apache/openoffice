@@ -64,7 +64,8 @@ SLOFILES = \
     $(SLO)$/vistaspecial.obj \
     $(SLO)$/checkrunningoffice.obj \
     $(SLO)$/checkpatches.obj \
-    $(SLO)$/copyextensiondata.obj
+    $(SLO)$/copyextensiondata.obj \
+    $(SLO)$/resetprofile.obj
 
 STDSHL += \
 	$(ADVAPI32LIB)\

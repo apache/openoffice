@@ -19,7 +19,14 @@
 #
 # *************************************************************
 RSCVERSION=510
-RSCREVISION=510m1(Build:99000)
-BUILD=99000
+# The build id ends up in the third field of every file's version in the
+# Windows installer (see get_fileversion() in
+# solenv/bin/modules/installer/windows/file.pm).  Windows Installer limits
+# each version field to 65535, and a package that exceeds it fails at
+# InstallValidate with "Internal Error 2725 -- Invalid database tables",
+# so BUILD must stay <= 65535.
+BUILD=9900
 LAST_MINOR=m1
+# Derived, so the build id is written in exactly one place.
+RSCREVISION=$(RSCVERSION)$(LAST_MINOR)(Build:$(BUILD))
 SOURCEVERSION=AOO510

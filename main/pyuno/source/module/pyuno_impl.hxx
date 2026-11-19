@@ -34,6 +34,8 @@
 #include <com/sun/star/script/XInvocationAdapterFactory2.hpp>
 
 #include <com/sun/star/reflection/XIdlReflection.hpp>
+#include <com/sun/star/reflection/XIdlClass.hpp>
+#include <com/sun/star/reflection/XIdlMethod.hpp>
 
 #include <com/sun/star/container/XHierarchicalNameAccess.hpp>
 
@@ -123,7 +125,7 @@ PyObject* PyUNO_new_UNCHECKED (
 
 typedef struct
 {
-    com::sun::star::uno::Reference <com::sun::star::script::XInvocation2> xInvocation;
+    com::sun::star::uno::Reference <com::sun::star::script::XInvocation> xInvocation;
     com::sun::star::uno::Any wrappedObject;
 } PyUNOInternals;
 
@@ -149,9 +151,12 @@ void raiseInvocationTargetExceptionWhenNeeded( const Runtime &runtime );
 com::sun::star::uno::TypeClass StringToTypeClass (char* string);
 
 PyRef PyUNO_callable_new (
-    const com::sun::star::uno::Reference<com::sun::star::script::XInvocation2> &xInv,
+    const com::sun::star::uno::Reference<com::sun::star::script::XInvocation> &xInv,
     const rtl::OUString &methodName,
-    ConversionMode mode = REJECT_UNO_ANY );
+    ConversionMode mode = REJECT_UNO_ANY,
+    const com::sun::star::uno::Reference<com::sun::star::reflection::XIdlMethod> &xMethod
+        = com::sun::star::uno::Reference<com::sun::star::reflection::XIdlMethod>(),
+    const com::sun::star::uno::Any &target = com::sun::star::uno::Any() );
 
 PyObject* PyUNO_Type_new (const char *typeName , com::sun::star::uno::TypeClass t , const Runtime &r );
 PyObject* PyUNO_Enum_new( const char *enumBase, const char *enumValue, const Runtime &r );
