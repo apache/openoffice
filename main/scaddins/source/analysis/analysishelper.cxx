@@ -2450,11 +2450,11 @@ ConvertDataList::ConvertDataList( void )
 
     // PRESSURE: 1 Pascal is...
     NEWDP( "Pa",    1.0000000000000000E00,  CDC_Pressure ); // Pascal
-    NEWDP( "atm",   9.8692329999819300E-06, CDC_Pressure ); // Atmosphere
-    NEWDP( "at",    9.8692329999819300E-06, CDC_Pressure ); // Atmosphere also
-    NEWDP( "SI_at", 1.0197162129779282E-05, CDC_Pressure ); // Technical atmosphere (ODF 1.4)
+    NEWDP( "atm",   9.86922292699439618E-06, CDC_Pressure ); // Atmosphere   1 atm = 101325.1 Pa (ODF 1.4 Table 24)
+    NEWDP( "at",    9.8692329999819300E-06, CDC_Pressure ); // Atmosphere also (deprecated)
+    NEWDP( "SI_at", 1.0197162129779282E-05, CDC_Pressure ); // Technical atmosphere (ODF 1.4) 1 SI_at = 98066.5 Pa
     NEWDP( "mmHg",  7.5006170799862700E-03, CDC_Pressure ); // mm Hg (Mercury)
-    NEWD( "Torr",   7.5006380000000000E-03, CDC_Pressure ); // *** Torr
+    NEWD( "Torr",   7.50061682704169716E-03, CDC_Pressure ); // Torr 1 Torr = 101325/760 Pa exactly (ODF 1.4 Table 24)
     NEWD( "psi",    1.4503770000000000E-04, CDC_Pressure ); // *** Psi
 
     // FORCE: 1 Newton is...
