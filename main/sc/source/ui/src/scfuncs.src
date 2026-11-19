@@ -1000,6 +1000,30 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS1
 			Text [ en-US ] = "Indicates the first day of the week (1 = Sunday, other values = Monday)." ;
 		};
 	};
+	// -=*# Resource for function ISOWEEKNUM #*=-
+	Resource SC_OPCODE_ISOWEEKNUM
+	{
+		String 1 // Description
+		{
+			Text [ en-US ] = "Returns the ISO 8601 week number of a date." ;
+		};
+		ExtraData =
+		{
+			0;
+			ID_FUNCTION_GRP_DATETIME;
+			U2S( HID_FUNC_ISOWEEKNUM );
+			1;	0;
+			0;
+		};
+		String 2 // Name of Parameter 1
+		{
+			Text [ en-US ] = "Number" ;
+		};
+		String 3 // Description of Parameter 1
+		{
+			Text [ en-US ] = "The internal number of the date." ;
+		};
+	};
 	// -=*# Resource for function OSTERSONNTAG #*=-
 	Resource SC_OPCODE_EASTERSUNDAY
 	{
@@ -6647,7 +6671,7 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 			0;
 			ID_FUNCTION_GRP_STATISTIC;
 			U2S( HID_FUNC_HYPGEOMVERT );
-			4;	0;	0;	0;	0;
+			5;	0;	0;	0;	0;	1;
 			0;
 		};
 		String 2 // Name of Parameter 1
@@ -6681,6 +6705,14 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		String 9 // Description of Parameter 4
 		{
 			Text [ en-US ] = "The population size." ;
+		};
+		String 10 // Name of Parameter 5
+		{
+			Text [ en-US ] = "Cumulative" ;
+		};
+		String 11 // Description of Parameter 5
+		{
+			Text [ en-US ] = "0 or FALSE or omitted calculates the probability mass function. Any other value or TRUE calculates the cumulative distribution function." ;
 		};
 	};
 	// -=*# Resource for function TVERT #*=-
@@ -6817,6 +6849,94 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		String 3 // Description of Parameter 1
 		{
 			Text [ en-US ] = "The probability value for which the inverse F distribution is to be calculated." ;
+		};
+		String 4 // Name of Parameter 2
+		{
+			Text [ en-US ] = "degrees_freedom_1" ;
+		};
+		String 5 // Description of Parameter 2
+		{
+			Text [ en-US ] = "The degrees of freedom in the numerator of the F distribution." ;
+		};
+		String 6 // Name of Parameter 3
+		{
+			Text [ en-US ] = "degrees_freedom_2" ;
+		};
+		String 7 // Description of Parameter 3
+		{
+			Text [ en-US ] = "The degrees of freedom in the denominator of the F distribution." ;
+		};
+	};
+	// -=*# Resource for function F.DIST #*=-
+	Resource SC_OPCODE_F_DIST_LEFT
+	{
+		String 1 // Description
+		{
+			Text [ en-US ] = "Values of the left-tailed F probability distribution." ;
+		};
+		ExtraData =
+		{
+			0;
+			ID_FUNCTION_GRP_STATISTIC;
+			U2S( HID_FUNC_F_DIST_LEFT );
+			4;	0;	0;	0;	1;
+			0;
+		};
+		String 2 // Name of Parameter 1
+		{
+			Text [ en-US ] = "Number" ;
+		};
+		String 3 // Description of Parameter 1
+		{
+			Text [ en-US ] = "The value for which the F distribution is to be calculated." ;
+		};
+		String 4 // Name of Parameter 2
+		{
+			Text [ en-US ] = "degrees_freedom_1" ;
+		};
+		String 5 // Description of Parameter 2
+		{
+			Text [ en-US ] = "The degrees of freedom in the numerator of the F distribution." ;
+		};
+		String 6 // Name of Parameter 3
+		{
+			Text [ en-US ] = "degrees_freedom_2" ;
+		};
+		String 7 // Description of Parameter 3
+		{
+			Text [ en-US ] = "The degrees of freedom in the denominator of the F distribution." ;
+		};
+		String 8 // Name of Parameter 4
+		{
+			Text [ en-US ] = "Cumulative" ;
+		};
+		String 9 // Description of Parameter 4
+		{
+			Text [ en-US ] = "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function." ;
+		};
+	};
+	// -=*# Resource for function F.INV #*=-
+	Resource SC_OPCODE_F_INV_LEFT
+	{
+		String 1 // Description
+		{
+			Text [ en-US ] = "Values of the inverse left-tailed F distribution." ;
+		};
+		ExtraData =
+		{
+			0;
+			ID_FUNCTION_GRP_STATISTIC;
+			U2S( HID_FUNC_F_INV_LEFT );
+			3;	0;	0;	0;
+			0;
+		};
+		String 2 // Name of Parameter 1
+		{
+			Text [ en-US ] = "number" ;
+		};
+		String 3 // Description of Parameter 1
+		{
+			Text [ en-US ] = "The probability value for which the inverse left-tailed F distribution is to be calculated." ;
 		};
 		String 4 // Name of Parameter 2
 		{
@@ -8128,6 +8248,30 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 			Text [ en-US ] = "The reference (cell) in which the error occurred." ;
 		};
 	};
+	// -=*# Resource for function ERROR.TYPE #*=-
+	Resource SC_OPCODE_ERROR_TYPE_ODF
+	{
+		String 1 // Description
+		{
+			Text [ en-US ] = "Returns a number from 1 to 7 for the kind of error value" ;
+		};
+		ExtraData =
+		{
+			0;
+			ID_FUNCTION_GRP_TABLE;
+			U2S( HID_FUNC_ERROR_TYPE_ODF );
+			1;	0;
+			0;
+		};
+		String 2 // Name of Parameter 1
+		{
+			Text [ en-US ] = "reference" ;
+		};
+		String 3 // Description of Parameter 1
+		{
+			Text [ en-US ] = "The reference (cell) in which the error occurred." ;
+		};
+	};
 	// -=*# Resource for function VORLAGE #*=-
 	Resource SC_OPCODE_STYLE
 	{
@@ -9372,10 +9516,10 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		};
 		ExtraData =
 		{
-			1; // TODO: implementation and unsuppress
+			0;
 			ID_FUNCTION_GRP_TEXT;
 			U2S( HID_FUNC_NUMBERVALUE );
-			2;	0;	0;
+			3;	0;	1;	1;
 			0;
 		};
 		String 2 // Name of Parameter 1
@@ -9393,6 +9537,14 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		String 5 // Description of Parameter 2
 		{
 			Text [ en-US ] = "Defines the character used as the decimal point." ;
+		};
+		String 6 // Name of Parameter 3
+		{
+			Text [ en-US ] = "group_separator" ;
+		};
+		String 7 // Description of Parameter 3
+		{
+			Text [ en-US ] = "Defines the characters used as group separators." ;
 		};
 	};
 	Resource SC_OPCODE_LENB
@@ -9517,6 +9669,178 @@ Resource RID_SC_FUNCTION_DESCRIPTIONS2
 		String 7 // Description of Parameter 3
 		{
 			Text [ en-US ] = "The number of characters for the text." ;
+		};
+	};
+
+	// -=*# Resource for function DATEDIF #*=-
+	Resource SC_OPCODE_DATEDIF
+	{
+		String 1 // Description
+		{
+			Text [ en-US ] = "Calculates the difference between two dates in years, months, or days." ;
+		};
+		ExtraData =
+		{
+			0;
+			ID_FUNCTION_GRP_DATETIME;
+			U2S( HID_FUNC_DATEDIF );
+			3;	0;	0;	0;
+			0;
+		};
+		String 2 // Name of Parameter 1
+		{
+			Text [ en-US ] = "Start_date" ;
+		};
+		String 3 // Description of Parameter 1
+		{
+			Text [ en-US ] = "The start date of the interval." ;
+		};
+		String 4 // Name of Parameter 2
+		{
+			Text [ en-US ] = "End_date" ;
+		};
+		String 5 // Description of Parameter 2
+		{
+			Text [ en-US ] = "The end date of the interval." ;
+		};
+		String 6 // Name of Parameter 3
+		{
+			Text [ en-US ] = "Format" ;
+		};
+		String 7 // Description of Parameter 3
+		{
+			Text [ en-US ] = "The unit for the result: \"y\" years, \"m\" months, \"d\" days, \"md\" days ignoring months and years, \"ym\" months ignoring years, \"yd\" days ignoring years." ;
+		};
+	};
+
+	// -=*# Resource for function FINDB #*=-
+	Resource SC_OPCODE_FINDB
+	{
+		String 1 // Description
+		{
+			Text [ en-US ] = "Finds a substring within a text string and returns its starting position (case sensitive)." ;
+		};
+		ExtraData =
+		{
+			0;
+			ID_FUNCTION_GRP_TEXT;
+			U2S( HID_FUNC_FINDB );
+			3;	0;	0;	1;
+			0;
+		};
+		String 2 // Name of Parameter 1
+		{
+			Text [ en-US ] = "find_text" ;
+		};
+		String 3 // Description of Parameter 1
+		{
+			Text [ en-US ] = "The text to be found." ;
+		};
+		String 4 // Name of Parameter 2
+		{
+			Text [ en-US ] = "text" ;
+		};
+		String 5 // Description of Parameter 2
+		{
+			Text [ en-US ] = "The text in which a search is to be made." ;
+		};
+		String 6 // Name of Parameter 3
+		{
+			Text [ en-US ] = "position" ;
+		};
+		String 7 // Description of Parameter 3
+		{
+			Text [ en-US ] = "The position in the text from which the search starts." ;
+		};
+	};
+
+	// -=*# Resource for function SEARCHB #*=-
+	Resource SC_OPCODE_SEARCHB
+	{
+		String 1 // Description
+		{
+			Text [ en-US ] = "Looks for one text value within another, not case-sensitive." ;
+		};
+		ExtraData =
+		{
+			0;
+			ID_FUNCTION_GRP_TEXT;
+			U2S( HID_FUNC_SEARCHB );
+			3;	0;	0;	1;
+			0;
+		};
+		String 2 // Name of Parameter 1
+		{
+			Text [ en-US ] = "find_text" ;
+		};
+		String 3 // Description of Parameter 1
+		{
+			Text [ en-US ] = "The text to be found." ;
+		};
+		String 4 // Name of Parameter 2
+		{
+			Text [ en-US ] = "text" ;
+		};
+		String 5 // Description of Parameter 2
+		{
+			Text [ en-US ] = "The text in which a search is to be made." ;
+		};
+		String 6 // Name of Parameter 3
+		{
+			Text [ en-US ] = "position" ;
+		};
+		String 7 // Description of Parameter 3
+		{
+			Text [ en-US ] = "The position in the text where the search is started." ;
+		};
+	};
+
+	// -=*# Resource for function REPLACEB #*=-
+	Resource SC_OPCODE_REPLACEB
+	{
+		String 1 // Description
+		{
+			Text [ en-US ] = "Replaces part of a text string using byte positions and byte counts." ;
+		};
+		ExtraData =
+		{
+			0;
+			ID_FUNCTION_GRP_TEXT;
+			U2S( HID_FUNC_REPLACEB );
+			4;	0;	0;	0;	0;
+			0;
+		};
+		String 2 // Name of Parameter 1
+		{
+			Text [ en-US ] = "Text" ;
+		};
+		String 3 // Description of Parameter 1
+		{
+			Text [ en-US ] = "The text in which some bytes are to be replaced." ;
+		};
+		String 4 // Name of Parameter 2
+		{
+			Text [ en-US ] = "position" ;
+		};
+		String 5 // Description of Parameter 2
+		{
+			Text [ en-US ] = "The byte position from which text is to be replaced." ;
+		};
+		String 6 // Name of Parameter 3
+		{
+			Text [ en-US ] = "length" ;
+		};
+		String 7 // Description of Parameter 3
+		{
+			Text [ en-US ] = "The number of bytes to be replaced." ;
+		};
+		String 8 // Name of Parameter 4
+		{
+			Text [ en-US ] = "new text" ;
+		};
+		String 9 // Description of Parameter 4
+		{
+			Text [ en-US ] = "The text to be inserted." ;
 		};
 	};
 

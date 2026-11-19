@@ -237,6 +237,24 @@ void ScInterpreter::ScGetWeekOfYear()
     }
 }
 
+void ScInterpreter::ScIsoWeekNum()
+{
+    RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScIsoWeekNum" );
+    if ( MustHaveParamCount( GetByte(), 1 ) )
+    {
+        Date aDate = *(pFormatter->GetNullDate());
+        aDate += (long)::rtl::math::approxFloor(GetDouble());
+        if ( !aDate.IsValid() )
+        {
+            PushIllegalArgument();
+            return;
+        }
+        // ISO 8601: Monday=1, week 1 = week containing Jan 4 (first Thursday)
+        // Use GetWeekOfYear with MONDAY start and 4 days minimum in first week
+        PushInt( (int) aDate.GetWeekOfYear( MONDAY, 4 ) );
+    }
+}
+
 static void lcl_EasterSunday( sal_Int16 nYear, sal_Int16& rDay, sal_Int16& rMonth )
 {
     // don't worry, be happy :)
@@ -437,6 +455,85 @@ void ScInterpreter::ScGetDiffDate360()
                  - (double) aDate1.GetDay() - (double) aDate1.GetMonth() * 30.0
                  - (double)aDate1.GetYear() * 360.0) );
         }
+    }
+}
+
+void ScInterpreter::ScDateDif()
+{
+    RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScDateDif" );
+    if ( MustHaveParamCount( GetByte(), 3 ) )
+    {
+        String aFormat( GetString() );
+        double fEnd   = ::rtl::math::approxFloor( GetDouble() );
+        double fStart = ::rtl::math::approxFloor( GetDouble() );
+        if ( nGlobalError )
+        {
+            PushError( nGlobalError );
+            return;
+        }
+        if ( fStart > fEnd )
+        {
+            PushIllegalArgument();
+            return;
+        }
+
+        Date aFrom = *(pFormatter->GetNullDate());
+        aFrom += (long) fStart;
+        Date aTo = *(pFormatter->GetNullDate());
+        aTo += (long) fEnd;
+        if ( !aFrom.IsValid() || !aTo.IsValid() )
+        {
+            PushIllegalArgument();
+            return;
+        }
+
+        // Complete months: the end day must reach the start day.
+        long nMonths = ((long)aTo.GetYear() - (long)aFrom.GetYear()) * 12
+                     + ((long)aTo.GetMonth() - (long)aFrom.GetMonth());
+        if ( aTo.GetDay() < aFrom.GetDay() )
+            --nMonths;
+
+        aFormat.ToLowerAscii();
+        double fResult;
+        if ( aFormat.EqualsAscii( "d" ) )
+            fResult = (double)(aTo - aFrom);
+        else if ( aFormat.EqualsAscii( "m" ) )
+            fResult = (double)nMonths;
+        else if ( aFormat.EqualsAscii( "y" ) )
+            fResult = (double)(nMonths / 12);
+        else if ( aFormat.EqualsAscii( "ym" ) )
+            fResult = (double)(nMonths % 12);
+        else if ( aFormat.EqualsAscii( "md" ) )
+        {
+            // As Excel: borrow the length of the month before the end month,
+            // which gives a negative result for some month ends.
+            long nDays = (long)aTo.GetDay() - (long)aFrom.GetDay();
+            if ( nDays < 0 )
+            {
+                Date aPrev( 1, aTo.GetMonth(), aTo.GetYear() );
+                aPrev -= 1;
+                nDays += aPrev.GetDaysInMonth();
+            }
+            fResult = (double)nDays;
+        }
+        else if ( aFormat.EqualsAscii( "yd" ) )
+        {
+            // As Excel: move the end date into the first year that does not put it
+            // before the start date; February 29 becomes March 1 in other years.
+            sal_uInt16 nYear = aFrom.GetYear();
+            if ( aTo.GetMonth() < aFrom.GetMonth() ||
+                    (aTo.GetMonth() == aFrom.GetMonth() && aTo.GetDay() < aFrom.GetDay()) )
+                ++nYear;
+            Date aEnd( 1, aTo.GetMonth(), nYear );
+            aEnd += (long)aTo.GetDay() - 1;
+            fResult = (double)(aEnd - aFrom);
+        }
+        else
+        {
+            PushIllegalArgument();
+            return;
+        }
+        PushDouble( fResult );
     }
 }
 
@@ -1204,6 +1301,11 @@ void ScInterpreter::ScZGZ()
         double nZukunftswert = GetDouble();
         double nGegenwartswert = GetDouble();
         double nZeitraum = GetDouble();
+        if (nZeitraum <= 0.0)
+        {
+            PushIllegalArgument();
+            return;
+        }
         PushDouble(pow(nZukunftswert / nGegenwartswert, 1.0 / nZeitraum) - 1.0);
     }
 }

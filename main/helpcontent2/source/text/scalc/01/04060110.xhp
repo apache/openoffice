@@ -258,6 +258,11 @@
 <paragraph xml-lang="en-US" id="par_id3156375" role="paragraph" l10n="U">
 <item type="input">=FIND(76;998877665544)</item> returns 6.</paragraph>
 </section>
+<section id="findb">
+<paragraph role="paragraph" id="par_id3155613" xml-lang="en-US" l10n="NEW">
+<embedvar href="text/scalc/01/func_findb.xhp#findb"/>
+</paragraph>
+</section>
 <section id="fixed">
 <bookmark xml-lang="en-US" branch="index" id="bm_id3149268">
 <bookmark_value>FIXED function</bookmark_value>
@@ -361,6 +366,11 @@
 <paragraph xml-lang="en-US" id="par_id3158407" role="paragraph" l10n="U">
 <item type="input">=MID("office";2;2)</item> returns ff.</paragraph>
 </section>
+<section id="numbervalue">
+<paragraph role="paragraph" id="par_id3155593" xml-lang="en-US" l10n="NEW">
+<embedvar href="text/scalc/01/func_numbervalue.xhp#numbervalue"/>
+</paragraph>
+</section>
 <section id="proper">
 <bookmark xml-lang="en-US" branch="index" id="bm_id3159143">
 <bookmark_value>PROPER function</bookmark_value>
@@ -397,6 +407,11 @@
 <paragraph xml-lang="en-US" id="hd_id3146958" role="heading" level="3" l10n="U">Example</paragraph>
 <paragraph xml-lang="en-US" id="par_id3154096" role="paragraph" l10n="U">
 <item type="input">=REPLACE("1234567";1;1;"444")</item> returns "444234567". One character at position 1 is replaced by the complete <item type="literal">NewText</item>.</paragraph>
+</section>
+<section id="replaceb">
+<paragraph role="paragraph" id="par_id3155653" xml-lang="en-US" l10n="NEW">
+<embedvar href="text/scalc/01/func_replaceb.xhp#replaceb"/>
+</paragraph>
 </section>
 <section id="rept">
 <bookmark xml-lang="en-US" branch="index" id="bm_id3149741">
@@ -479,6 +494,11 @@
 <paragraph xml-lang="en-US" id="hd_id3147322" role="heading" level="3" l10n="U">Example</paragraph>
 <paragraph xml-lang="en-US" id="par_id3154564" role="paragraph" l10n="U">
 <item type="input">=SEARCH(54;998877665544)</item> returns 10.</paragraph>
+</section>
+<section id="searchb">
+<paragraph role="paragraph" id="par_id3155633" xml-lang="en-US" l10n="NEW">
+<embedvar href="text/scalc/01/func_searchb.xhp#searchb"/>
+</paragraph>
 </section>
 <section id="substitute">
 <bookmark xml-lang="en-US" branch="index" id="bm_id3154830">

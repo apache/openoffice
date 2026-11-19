@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--***********************************************************
+ *
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ *
+ ***********************************************************-->
+
+<helpdocument version="1.0">
+<meta>
+<topic id="textscalc01func_isoweeknumxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">ISOWEEKNUM</title>
+<filename>/text/scalc/01/func_isoweeknum.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3155571">
+<bookmark_value>ISOWEEKNUM function</bookmark_value>
+<bookmark_value>week number; ISO 8601</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_ISOWEEKNUM" id="bm_id3155572" localize="false"/>
+<paragraph role="heading" id="hd_id3155570" xml-lang="en-US" level="2" l10n="U"><variable id="isoweeknum"><link href="text/scalc/01/func_isoweeknum.xhp">ISOWEEKNUM</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3155573" xml-lang="en-US" l10n="U"><ahelp hid="HID_FUNC_ISOWEEKNUM">Returns the ISO 8601 week number of the year for a given date.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3155574" xml-lang="en-US" level="3" l10n="U">Syntax</paragraph>
+<paragraph role="code" id="par_id3155575" xml-lang="en-US" l10n="U">ISOWEEKNUM(Number)</paragraph>
+<paragraph role="paragraph" id="par_id3155576" xml-lang="en-US" l10n="U"><emph>Number</emph> is the internal date number.</paragraph>
+<paragraph role="heading" id="hd_id3155577" xml-lang="en-US" level="3" l10n="U">Return value</paragraph>
+<paragraph role="paragraph" id="par_id3155578" xml-lang="en-US" l10n="U">Returns an integer between 1 and 53 representing the ISO 8601 week number.</paragraph>
+<paragraph role="paragraph" id="par_id3155579" xml-lang="en-US" l10n="U">ISO 8601 week numbering rules:</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="paragraph" id="par_id3155580" xml-lang="en-US" l10n="U">Weeks start on Monday.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id3155581" xml-lang="en-US" l10n="U">Week 1 is the week containing the year's first Thursday (equivalently, the week containing January 4).</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id3155582" xml-lang="en-US" l10n="U">December 29–31 may belong to week 1 of the following year.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id3155583" xml-lang="en-US" l10n="U">January 1–3 may belong to week 52 or 53 of the previous year.</paragraph>
+</listitem>
+</list>
+<paragraph role="heading" id="hd_id3155584" xml-lang="en-US" level="3" l10n="U">Examples</paragraph>
+<paragraph role="paragraph" id="par_id3155585" xml-lang="en-US" l10n="U"><item type="input">=ISOWEEKNUM("2024-01-01")</item> returns 1 (Monday, week containing first Thursday).</paragraph>
+<paragraph role="paragraph" id="par_id3155586" xml-lang="en-US" l10n="U"><item type="input">=ISOWEEKNUM("2024-12-30")</item> returns 1 (week 1 of 2025).</paragraph>
+<paragraph role="paragraph" id="par_id3155587" xml-lang="en-US" l10n="U"><item type="input">=ISOWEEKNUM("2020-12-31")</item> returns 53.</paragraph>
+</body>
+</helpdocument>

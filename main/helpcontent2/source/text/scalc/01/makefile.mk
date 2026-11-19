@@ -201,10 +201,13 @@ XHPFILES = \
    func_day.xhp \
    func_days.xhp \
    func_days360.xhp \
+   func_datedif.xhp \
    func_eastersunday.xhp \
    func_edate.xhp \
    func_eomonth.xhp \
+   func_errortype.xhp \
    func_hour.xhp \
+   func_numbervalue.xhp \
    func_iferror.xhp \
    func_ifna.xhp \
    func_minute.xhp \
@@ -212,6 +215,9 @@ XHPFILES = \
    func_networkdays.xhp \
    func_now.xhp \
    func_second.xhp \
+   func_findb.xhp \
+   func_replaceb.xhp \
+   func_searchb.xhp \
    func_skewp.xhp \
    func_time.xhp \
    func_timevalue.xhp \
@@ -219,6 +225,7 @@ XHPFILES = \
    func_weekday.xhp \
    func_weeknum.xhp \
    func_weeknumadd.xhp \
+   func_isoweeknum.xhp \
    func_workday.xhp \
    func_year.xhp \
    func_yearfrac.xhp \

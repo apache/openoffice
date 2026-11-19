@@ -1008,76 +1008,94 @@ double GetYieldmat( sal_Int32 nNullDate, sal_Int32 nSettle, sal_Int32 nMat, sal_
 }
 
 
-double GetOddfprice( sal_Int32 /*nNullDate*/, sal_Int32 /*nSettle*/, sal_Int32 /*nMat*/, sal_Int32 /*nIssue*/,
-	sal_Int32 /*nFirstCoup*/, double /*fRate*/, double /*fYield*/, double /*fRedemp*/, sal_Int32 /*nFreq*/,
-	sal_Int32 /*nBase*/ )
+void lcl_GetCouppcd( ScaDate& rDate, const ScaDate& rSettle, const ScaDate& rMat, sal_Int32 nFreq );
+
+// Excel counts the whole quasi-coupon periods before an end-of-month first coupon
+// in month ends from the settlement month on, and counts the settlement month's
+// own end too when the settlement is earlier in that month.
+static double lcl_GetOddfQuasiPeriods( sal_Int32 nNullDate, sal_Int32 nSettle, sal_Int32 nFirstCoup,
+    sal_Int32 nFreq, sal_Int32 nBase )
 {
-    THROW_RTE;  // #87380#
-/*
-	double		fN = GetCoupnum( nNullDate, nSettle, nMat, nFreq, nBase ) - 1.0;
-	double		fNq = GetCoupnum( nNullDate, nSettle, nFirstCoup, nFreq, nBase ) - 1.0;
-	double		fDSC = GetCoupdaysnc( nNullDate, nSettle, nFirstCoup, nFreq, nBase );
-	double		fDSC_E = fDSC / GetCoupdays( nNullDate, nSettle, nMat, nFreq, nBase );
-	double		fNC = GetCoupnum( nNullDate, nIssue, nFirstCoup, nFreq, nBase );
-	sal_uInt32	nNC = sal_uInt32( fNC );
-	sal_uInt16	nMonthDelta = 12 / sal_uInt16( nFreq );
+    sal_uInt16 nDay, nMonth, nYear;
+    DaysToDate( nNullDate + nFirstCoup, nDay, nMonth, nYear );
+    if( nDay < DaysInMonth( nMonth, nYear ) )
+        return GetCoupnum( nNullDate, nSettle, nFirstCoup, nFreq, nBase ) - 1.0;
 
-	sal_uInt32	i;
-	double		f1YieldFreq = 1.0 + fYield / double( nFreq );
-	double		f100RateFreq = 100.0 * fRate / double( nFreq );
+    DaysToDate( nNullDate + nSettle, nDay, nMonth, nYear );
+    double fCount = (nDay < DaysInMonth( nMonth, nYear )) ? 1.0 : 0.0;
+    sal_Int32 nIndex = sal_Int32( nYear ) * 12 + nMonth - 1;
+    for( ;; )
+    {
+        nIndex += 12 / nFreq;
+        sal_uInt16 nY = static_cast< sal_uInt16 >( nIndex / 12 );
+        sal_uInt16 nM = static_cast< sal_uInt16 >( nIndex % 12 + 1 );
+        if( DateToDays( DaysInMonth( nM, nY ), nM, nY ) - nNullDate >= nFirstCoup )
+            return fCount;
+        fCount += 1.0;
+    }
+}
 
-	double*		pDC = new double[ nNC + 1 ];
-	double*		pNL = new double[ nNC + 1 ];
-	double*		pA = new double[ nNC + 1 ];
+double GetOddfprice( sal_Int32 nNullDate, sal_Int32 nSettle, sal_Int32 nMat, sal_Int32 nIssue,
+	sal_Int32 nFirstCoup, double fRate, double fYield, double fRedemp, sal_Int32 nFreq,
+	sal_Int32 nBase )
+{
+    // Like Excel, require the first coupon to be on the maturity's coupon schedule.
+    ScaDate aFirstOnSchedule;
+    lcl_GetCouppcd( aFirstOnSchedule, ScaDate( nNullDate, nFirstCoup, nBase ), ScaDate( nNullDate, nMat, nBase ), nFreq );
+    if( aFirstOnSchedule.getDate( nNullDate ) != nFirstCoup )
+        THROW_IAE;
 
-	pDC[ 0 ] = pNL[ 0 ] = pA[ 0 ] = 1.0;
+    // Excel's formulas for a short and for a long odd first period.
+    double fE    = GetCoupdays( nNullDate, nSettle, nFirstCoup, nFreq, nBase );
+    double fN    = GetCoupnum( nNullDate, nFirstCoup, nMat, nFreq, nBase );
+    double fX    = 1.0 + fYield / nFreq;
+    double fCoup = 100.0 * fRate / nFreq;
+    ScaDate aIssue( nNullDate, nIssue, nBase );
+    ScaDate aSettle( nNullDate, nSettle, nBase );
+    ScaDate aFirst( nNullDate, nFirstCoup, nBase );
+    double fDFC  = ScaDate::getDiff( aIssue, aFirst );
 
-    ScaDate aStartDate( nNullDate, nSettle, nBase );
-    ScaDate aNextCoup( nNullDate, nFirstCoup, nBase );
-	if( nNC )
-	{
-        pDC[ 1 ] = ScaDate::GetDiff( aStartDate, aNextCoup );
-		pNL[ 1 ] = GetCoupdays( nNullDate, nSettle, nFirstCoup, nFreq, nBase );
-		pA[ 1 ] = pDC[ 1 ];
-        ScaDate aPre;
-		for( i = 1 ; i <= nNC ; i++ )
-		{
-			aPre = aStartDate;
-            aStartDate.addMonths( nMonthDelta );
-            aNextCoup.addMonths( nMonthDelta );
-            pDC[ i ] = ScaDate::GetDiff( aPre, aStartDate );
-			pNL[ i ] = GetCoupdays( nNullDate, aStartDate.GetDate( nNullDate ), aNextCoup.GetDate( nNullDate ),
-										nFreq, nBase );
-            pA[ i ] = ScaDate::GetDiff( aStartDate, aNextCoup );
-		}
-	}
+    double fNq, fDSC, fDCNL, fANL;
+    if( fDFC < fE )
+    {
+        fNq   = 0.0;
+        fDSC  = ScaDate::getDiff( aSettle, aFirst );
+        fDCNL = fDFC / fE;
+        fANL  = ScaDate::getDiff( aIssue, aSettle ) / fE;
+    }
+    else
+    {
+        fNq   = lcl_GetOddfQuasiPeriods( nNullDate, nSettle, nFirstCoup, nFreq, nBase );
+        fDSC  = GetCoupdaysnc( nNullDate, nSettle, nFirstCoup, nFreq, nBase );
+        // Each quasi-coupon period inside the odd period counts as one whole period.
+        // Excel steps back from one quasi-coupon date to the previous one by
+        // calendar months only, without keeping month ends.
+        fDCNL = fANL = 0.0;
+        sal_Int32 nLate = nFirstCoup;
+        while( nIssue < nLate )
+        {
+            sal_uInt16 nDay, nMonth, nYear;
+            DaysToDate( nNullDate + nLate, nDay, nMonth, nYear );
+            sal_Int32 nIndex = sal_Int32( nYear ) * 12 + nMonth - 1 - 12 / nFreq;
+            sal_uInt16 nY = static_cast< sal_uInt16 >( nIndex / 12 );
+            sal_uInt16 nM = static_cast< sal_uInt16 >( nIndex % 12 + 1 );
+            sal_Int32 nEarly = DateToDays( ::std::min( nDay, DaysInMonth( nM, nY ) ), nM, nY ) - nNullDate;
+            ScaDate aLate( nNullDate, nLate, nBase );
+            ScaDate aEarly( nNullDate, nEarly, nBase );
+            double fNL = (nBase == 1) ? static_cast< double >( ScaDate::getDiff( aEarly, aLate ) ) : fE;
+            const ScaDate& rStart = (nIssue > nEarly) ? aIssue : aEarly;
+            fDCNL += (nIssue > nEarly) ? ScaDate::getDiff( aIssue, aLate ) / fNL : 1.0;
+            if( rStart < aSettle )
+                fANL += ScaDate::getDiff( rStart, (nSettle < nLate) ? aSettle : aLate ) / fNL;
+            nLate = nEarly;
+        }
+    }
 
-	double		fT1 = fRedemp / pow( f1YieldFreq, fN + fNq + fDSC_E );
-
-	double		fT2 = 0.0;
-	for( i = 1 ; i <= nNC ; i++ )
-		fT2 += pDC[ i ] / pNL[ i ];
-	fT2 *= f100RateFreq / pow( f1YieldFreq, fNq + fDSC_E );
-
-	double		fT3 = 0.0;
-	for( double k = 2.0 ; k <= fN ; k++ )
-		fT3 += 1.0 / pow( f1YieldFreq, k - fNq + fDSC_E );
-	fT3 *= f100RateFreq;
-
-	double		fT4 = 0.0;
-	for( i = 1 ; i <= nNC ; i++ )
-		fT4 += pA[ i ] / pNL[ i ];
-	fT4 *= f100RateFreq;
-
-	if( nNC )
-	{
-		delete pDC;
-		delete pNL;
-		delete pA;
-	}
-
-	return fT1 + fT2 + fT3 - fT4;
-*/
+    double fDSCE = fDSC / fE;
+    double fRet = fRedemp / pow( fX, fN + fNq + fDSCE ) + fCoup * fDCNL / pow( fX, fNq + fDSCE ) - fCoup * fANL;
+    for( double k = 1.0 ; k <= fN ; k++ )
+        fRet += fCoup / pow( fX, k + fNq + fDSCE );
+    return fRet;
 }
 
 
@@ -1156,61 +1174,58 @@ double getPrice_( sal_Int32 nNullDate, sal_Int32 nSettle, sal_Int32 nMat, double
 }
 
 
-double GetOddfyield( sal_Int32 /*nNullDate*/, sal_Int32 /*nSettle*/, sal_Int32 /*nMat*/, sal_Int32 /*nIssue*/,
-	sal_Int32 /*nFirstCoup*/, double /*fRate*/, double /*fPrice*/, double /*fRedemp*/, sal_Int32 /*nFreq*/,
-	sal_Int32 /*nBase*/ )
+double GetOddfyield( sal_Int32 nNullDate, sal_Int32 nSettle, sal_Int32 nMat, sal_Int32 nIssue,
+	sal_Int32 nFirstCoup, double fRate, double fPrice, double fRedemp, sal_Int32 nFreq,
+	sal_Int32 nBase )
 {
-    THROW_RTE;  // #87380#
-/*
-	//GetOddfprice( sal_Int32 nNullDate, sal_Int32 nSettle, sal_Int32 nMat, sal_Int32 nIssue,
-	//sal_Int32 nFirstCoup, double fRate, double fYield, double fRedemp, sal_Int32 nFreq,
-	//sal_Int32 nBase )
-	double		fPriceN = 0.0;
-	double		fYield1 = 0.0;
-	double		fYield2 = 1.0;
-	double		fPrice1 = GetOddfprice( nNullDate, nSettle, nMat, nIssue, nFirstCoup, fRate, fYield1, fRedemp, nFreq, nBase );
-	double		fPrice2 = GetOddfprice( nNullDate, nSettle, nMat, nIssue, nFirstCoup, fRate, fYield2, fRedemp, nFreq, nBase );
-	double		fYieldN = ( fYield2 - fYield1 ) * 0.5;
+    // The price falls as the yield rises, and the yield must stay above -nFreq.
+    // Bracket the yield, then narrow it with the Illinois variant of regula falsi.
+    double fLow = 0.0;
+    double fHigh = 1.0;
+    double fDiffLow = GetOddfprice( nNullDate, nSettle, nMat, nIssue, nFirstCoup, fRate, fLow, fRedemp, nFreq, nBase ) - fPrice;
+    double fDiffHigh = GetOddfprice( nNullDate, nSettle, nMat, nIssue, nFirstCoup, fRate, fHigh, fRedemp, nFreq, nBase ) - fPrice;
+    for( int i = 0 ; i < 60 && fDiffHigh > 0.0 ; i++ )
+    {
+        fLow = fHigh;
+        fDiffLow = fDiffHigh;
+        fHigh *= 2.0;
+        fDiffHigh = GetOddfprice( nNullDate, nSettle, nMat, nIssue, nFirstCoup, fRate, fHigh, fRedemp, nFreq, nBase ) - fPrice;
+    }
+    for( int i = 0 ; i < 60 && fDiffLow < 0.0 ; i++ )
+    {
+        fHigh = fLow;
+        fDiffHigh = fDiffLow;
+        fLow = (fLow - nFreq) / 2.0;
+        fDiffLow = GetOddfprice( nNullDate, nSettle, nMat, nIssue, nFirstCoup, fRate, fLow, fRedemp, nFreq, nBase ) - fPrice;
+    }
+    if( fDiffLow < 0.0 || fDiffHigh > 0.0 )
+        THROW_IAE;
 
-	for( sal_uInt32 nIter = 0 ; nIter < 100 && fPriceN != fPrice ; nIter++ )
-	{
-		fPriceN = GetOddfprice( nNullDate, nSettle, nMat, nIssue, nFirstCoup, fRate, fYieldN, fRedemp, nFreq, nBase );
-
-		if( fPrice == fPrice1 )
-			return fYield1;
-		else if( fPrice == fPrice2 )
-			return fYield2;
-		else if( fPrice == fPriceN )
-			return fYieldN;
-		else if( fPrice < fPrice2 )
-		{
-			fYield2 *= 2.0;
-			fPrice2 = GetOddfprice( nNullDate, nSettle, nMat, nIssue, nFirstCoup, fRate, fYield2, fRedemp, nFreq, nBase );
-
-			fYieldN = ( fYield2 - fYield1 ) * 0.5;
-		}
-		else
-		{
-			if( fPrice < fPriceN )
-			{
-				fYield1 = fYieldN;
-				fPrice1 = fPriceN;
-			}
-			else
-			{
-				fYield2 = fYieldN;
-				fPrice2 = fPriceN;
-			}
-
-			fYieldN = fYield2 - ( fYield2 - fYield1 ) * ( ( fPrice - fPrice2 ) / ( fPrice1 - fPrice2 ) );
-		}
-	}
-
-	if( fabs( fPrice - fPriceN ) > fPrice / 100.0 )
-		THROW_IAE;		// result not precise enough
-
-	return fYieldN;
-*/
+    int nSide = 0;
+    for( int i = 0 ; i < 300 ; i++ )
+    {
+        double fYield = (fLow * fDiffHigh - fHigh * fDiffLow) / (fDiffHigh - fDiffLow);
+        double fDiff = GetOddfprice( nNullDate, nSettle, nMat, nIssue, nFirstCoup, fRate, fYield, fRedemp, nFreq, nBase ) - fPrice;
+        if( fabs( fDiff ) <= 1E-12 * fPrice || fHigh - fLow <= 1E-15 * (1.0 + fabs( fYield )) )
+            return fYield;
+        if( fDiff > 0.0 )
+        {
+            fLow = fYield;
+            fDiffLow = fDiff;
+            if( nSide == 1 )
+                fDiffHigh /= 2.0;
+            nSide = 1;
+        }
+        else
+        {
+            fHigh = fYield;
+            fDiffHigh = fDiff;
+            if( nSide == -1 )
+                fDiffLow /= 2.0;
+            nSide = -1;
+        }
+    }
+    THROW_IAE;      // no convergence
 }
 
 

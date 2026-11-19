@@ -497,6 +497,12 @@ void FormulaCompiler::OpCodeMap::putOpCode( const String & rStr, const OpCode eO
         mpHashMap->insert( OpCodeHashMap::value_type( rStr, eOp));
     }
 }
+void FormulaCompiler::OpCodeMap::putOpCodeAlias( const String & rStr, const OpCode eOp )
+{
+    DBG_ASSERT( 0 < eOp && sal_uInt16(eOp) < mnSymbols, "OpCodeMap::putOpCodeAlias: OpCode out of range");
+    if (0 < eOp && sal_uInt16(eOp) < mnSymbols)
+        mpHashMap->insert( OpCodeHashMap::value_type( rStr, eOp));
+}
 // -----------------------------------------------------------------------------
 // class FormulaCompiler
 // -----------------------------------------------------------------------------
@@ -685,6 +691,8 @@ void FormulaCompiler::loadSymbols(sal_uInt16 _nSymbols,FormulaGrammar::Grammar _
         _xMap.reset( new OpCodeMap( SC_OPCODE_LAST_OPCODE_ID + 1, _eGrammar != FormulaGrammar::GRAM_ODFF, _eGrammar ));
         OModuleClient aModuleClient;
         OpCodeList aOpCodeList( _nSymbols, _xMap );
+        // Files and API callers before RRI got its ODF name used ZGZ.
+        _xMap->putOpCodeAlias( String::CreateFromAscii("ZGZ"), ocZGZ);
 
         fillFromAddInMap( _xMap, _eGrammar);
         // Fill from collection for AddIns not already present.
@@ -1069,6 +1077,10 @@ void FormulaCompiler::Factor()
                 pFacToken = new FormulaFAPToken( pFacToken->GetOpCode(), nSepCount, pFacToken );
             else
                 pFacToken->SetByte( nSepCount );
+            // ODF ISOWEEKNUM has one argument; AOO wrote WEEKNUM to ODF as
+            // ISOWEEKNUM with two, so only the two argument form stays ocWeek.
+            if ( nSepCount == 1 && pFacToken->GetOpCode() == ocWeek && mxSymbols->isODFF() )
+                pFacToken->NewOpCode( ocIsoWeekNum, FormulaToken::PrivateAccess());
             // EASTERSUNDAY() without a year depends on today's date
             if ( bNoParam && pFacToken->GetOpCode() == ocEasterSunday )
                 pArr->SetRecalcModeAlways();
