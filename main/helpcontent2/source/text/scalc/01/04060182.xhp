@@ -48,6 +48,23 @@
 <paragraph xml-lang="en-US" id="hd_id3156021" role="heading" level="3" l10n="U">Example</paragraph>
 <paragraph xml-lang="en-US" id="par_id3145073" role="paragraph" l10n="U"><item type="input">=FINV(0.5;5;10)</item> yields 0.93.</paragraph>
 </section>
+<section id="f.inv">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3180001">
+<bookmark_value>F.INV function</bookmark_value>
+<bookmark_value>inverse F probability distribution; left tail</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_F_INV_LEFT" id="bm_id3180002" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3180001" role="heading" level="2" l10n="NEW">F.INV</paragraph>
+<paragraph xml-lang="en-US" id="par_id3180003" role="paragraph" l10n="NEW"><ahelp hid="HID_FUNC_F_INV_LEFT">Returns the inverse of the left-tailed F distribution: the value x for which F.DIST(x; DegreesFreedom1; DegreesFreedom2) is Number.</ahelp> FINV is the inverse of the right tail.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3180004" role="heading" level="3" l10n="NEW">Syntax</paragraph>
+<paragraph xml-lang="en-US" id="par_id3180005" role="code" l10n="NEW">F.INV(Number; DegreesFreedom1; DegreesFreedom2)</paragraph>
+<paragraph xml-lang="en-US" id="par_id3180006" role="paragraph" l10n="NEW"><emph>Number</emph> is the probability, from 0 up to but not including 1.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3180007" role="paragraph" l10n="NEW"><emph>DegreesFreedom1</emph> is the number of degrees of freedom in the numerator of the F distribution.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3180008" role="paragraph" l10n="NEW"><emph>DegreesFreedom2</emph> is the number of degrees of freedom in the denominator of the F distribution.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3180009" role="paragraph" l10n="NEW">In OpenDocument files this function is stored as FINV; the FINV function of %PRODUCTNAME is stored as LEGACY.FINV.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3180010" role="heading" level="3" l10n="NEW">Example</paragraph>
+<paragraph xml-lang="en-US" id="par_id3180011" role="paragraph" l10n="NEW"><item type="input">=F.INV(0.9;5;10)</item> yields 2.52.</paragraph>
+</section>
 <section id="fisher">
 <bookmark xml-lang="en-US" branch="index" id="bm_id3150888">
 <bookmark_value>FISHER function</bookmark_value>
@@ -103,6 +120,24 @@
 <paragraph xml-lang="en-US" id="par_id3146877" role="paragraph" l10n="U"><emph>degreesFreedom2</emph> is the degrees of freedom in the denominator in the F distribution.</paragraph>
 <paragraph xml-lang="en-US" id="hd_id3147423" role="heading" level="3" l10n="U">Example</paragraph>
 <paragraph xml-lang="en-US" id="par_id3150696" role="paragraph" l10n="U"><item type="input">=FDIST(0.8;8;12)</item> yields 0.61.</paragraph>
+</section>
+<section id="f.dist">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3180021">
+<bookmark_value>F.DIST function</bookmark_value>
+<bookmark_value>F distribution; left tail</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_F_DIST_LEFT" id="bm_id3180022" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3180021" role="heading" level="2" l10n="NEW">F.DIST</paragraph>
+<paragraph xml-lang="en-US" id="par_id3180023" role="paragraph" l10n="NEW"><ahelp hid="HID_FUNC_F_DIST_LEFT">Calculates the left tail or the density of the F distribution.</ahelp> FDIST returns the right tail.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3180024" role="heading" level="3" l10n="NEW">Syntax</paragraph>
+<paragraph xml-lang="en-US" id="par_id3180025" role="code" l10n="NEW">F.DIST(Number; DegreesFreedom1; DegreesFreedom2; Cumulative)</paragraph>
+<paragraph xml-lang="en-US" id="par_id3180026" role="paragraph" l10n="NEW"><emph>Number</emph> is the value for which the F distribution is to be calculated. For a Number below 0 the result is 0.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3180027" role="paragraph" l10n="NEW"><emph>DegreesFreedom1</emph> is the number of degrees of freedom in the numerator of the F distribution.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3180028" role="paragraph" l10n="NEW"><emph>DegreesFreedom2</emph> is the number of degrees of freedom in the denominator of the F distribution.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3180029" role="paragraph" l10n="NEW"><emph>Cumulative</emph> (optional): 0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3180030" role="paragraph" l10n="NEW">In OpenDocument files this function is stored as FDIST; the FDIST function of %PRODUCTNAME is stored as LEGACY.FDIST.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3180031" role="heading" level="3" l10n="NEW">Example</paragraph>
+<paragraph xml-lang="en-US" id="par_id3180032" role="paragraph" l10n="NEW"><item type="input">=F.DIST(2.5;5;10)</item> yields 0.90, and <item type="input">=FDIST(2.5;5;10)</item> yields the remaining 0.10.</paragraph>
 </section>
 <section id="gamma">
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_GAMMA" id="bm_id0119200903221254" localize="false"/>
@@ -243,13 +278,15 @@
 <paragraph xml-lang="en-US" id="hd_id3152801" role="heading" level="2" l10n="U">HYPGEOMDIST</paragraph>
 <paragraph xml-lang="en-US" id="par_id3159341" role="paragraph" l10n="U"><ahelp hid="HID_FUNC_HYPGEOMVERT">Returns the hypergeometric distribution.</ahelp></paragraph>
 <paragraph xml-lang="en-US" id="hd_id3154697" role="heading" level="3" l10n="U">Syntax</paragraph>
-<paragraph xml-lang="en-US" id="par_id3155388" role="code" l10n="U">HYPGEOMDIST(X; NSample; Successes; NPopulation)</paragraph>
+<paragraph xml-lang="en-US" id="par_id3155388" role="code" l10n="CHG">HYPGEOMDIST(X; NSample; Successes; NPopulation; Cumulative)</paragraph>
 <paragraph xml-lang="en-US" id="par_id3154933" role="paragraph" l10n="U"><emph>X</emph> is the number of results achieved in the random sample.</paragraph>
 <paragraph xml-lang="en-US" id="par_id3153106" role="paragraph" l10n="U"><emph>NSample</emph> is the size of the random sample.</paragraph>
 <paragraph xml-lang="en-US" id="par_id3146992" role="paragraph" l10n="U"><emph>Successes</emph> is the number of possible results in the total population.</paragraph>
 <paragraph xml-lang="en-US" id="par_id3148826" role="paragraph" l10n="U"><emph>NPopulation</emph> is the size of the total population.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3180041" role="paragraph" l10n="NEW"><emph>Cumulative</emph> (optional): 0 or FALSE or omitted calculates the probability of exactly X results. Any other value or TRUE calculates the probability of at most X results.</paragraph>
 <paragraph xml-lang="en-US" id="hd_id3150529" role="heading" level="3" l10n="U">Example</paragraph>
 <paragraph xml-lang="en-US" id="par_id3154904" role="paragraph" l10n="U"><item type="input">=HYPGEOMDIST(2;2;90;100)</item> yields 0.81. If 90 out of 100 pieces of buttered toast fall from the table and hit the floor with the buttered side first, then if 2 pieces of buttered toast are dropped from the table, the probability is 81%, that both will strike buttered side first.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3180042" role="paragraph" l10n="NEW"><item type="input">=HYPGEOMDIST(2;5;5;11;1)</item> yields 0.61, the probability of at most 2 successes.</paragraph>
 </section>
 </sort>
 <section id="relatedtopics">

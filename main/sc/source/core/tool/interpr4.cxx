@@ -3513,6 +3513,7 @@ StackVar ScInterpreter::Interpret()
                 case ocGetDay           : ScGetDay();                   break;
                 case ocGetDayOfWeek     : ScGetDayOfWeek();             break;
                 case ocWeek             : ScGetWeekOfYear();            break;
+                case ocIsoWeekNum       : ScIsoWeekNum();               break;
                 case ocEasterSunday     : ScEasterSunday();             break;
                 case ocGetHour          : ScGetHour();                  break;
                 case ocGetMin           : ScGetMin();                   break;
@@ -3554,6 +3555,7 @@ StackVar ScInterpreter::Interpret()
                 case ocT                : ScT();                        break;
                 case ocClean            : ScClean();                    break;
                 case ocValue            : ScValue();                    break;
+                case ocNumberValue      : ScNumberValue();              break;
                 case ocChar             : ScChar();                     break;
                 case ocArcTan2          : ScArcTan2();                  break;
                 case ocMod              : ScMod();                      break;
@@ -3686,6 +3688,7 @@ StackVar ScInterpreter::Interpret()
                 case ocLogNormDist      : ScLogNormDist();              break;
                 case ocTDist            : ScTDist();                    break;
                 case ocFDist            : ScFDist();                    break;
+                case ocFDistLeft        : ScFDistLeft();                break;
                 case ocChiDist          : ScChiDist();                  break;
                 case ocChiSqDist        : ScChiSqDist();                break;
                 case ocStandard         : ScStandard();                 break;
@@ -3739,6 +3742,7 @@ StackVar ScInterpreter::Interpret()
                 case ocChiSqInv         : ScChiSqInv();                 break;
                 case ocTInv             : ScTInv();                     break;
                 case ocFInv             : ScFInv();                     break;
+                case ocFInvLeft         : ScFInvLeft();                 break;
                 case ocLogInv           : ScLogNormInv();               break;
                 case ocBetaDist         : ScBetaDist();                 break;
                 case ocBetaInv          : ScBetaInv();                  break;
@@ -3747,6 +3751,7 @@ StackVar ScInterpreter::Interpret()
 //              case ocErrCell          : ScErrCell();                  break;
                 case ocStop :                                           break;
                 case ocErrorType        : ScErrorType();                break;
+                case ocErrorTypeODF     : ScErrorType( true );          break;
                 case ocCurrent          : ScCurrent();                  break;
                 case ocStyle            : ScStyle();                    break;
                 case ocDde              : ScDde();                      break;
@@ -3766,6 +3771,10 @@ StackVar ScInterpreter::Interpret()
 				case ocRightB           : ScRightB();                   break;
 				case ocLeftB            : ScLeftB();                    break;
 				case ocMidB             : ScMidB();                     break;
+				case ocFindB            : ScFindB();                    break;
+				case ocSearchB          : ScSearchB();                  break;
+				case ocReplaceB         : ScReplaceB();                 break;
+				case ocDateDif          : ScDateDif();                  break;
                 case ocUnicode          : ScUnicode();                  break;
                 case ocUnichar          : ScUnichar();                  break;
                 case ocTTT              : ScTTT();                      break;
@@ -3852,6 +3861,7 @@ StackVar ScInterpreter::Interpret()
     case ocCount : \
     case ocCount2 : \
     case ocErrorType : \
+    case ocErrorTypeODF : \
     case ocIsEmpty : \
     case ocIsErr : \
     case ocIsError : \

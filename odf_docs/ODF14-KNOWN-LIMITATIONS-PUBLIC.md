@@ -71,6 +71,7 @@ These are read without error and have no effect:
 - `INDEX` on a row vector with only a row argument returns the column, as in other spreadsheets. ODF 1.4 removed that rule and calls the call an error.
 - `CONVERT` with `atm` uses 101324.996583 Pa; the ODF 1.4 table gives 1.0132510E+5, a relative difference of 1.0e-6.
 - A trailing empty parameter before the closing bracket, as in `NPER(r;p;pv;;)`, is an error for every function except `IF`. An empty parameter in the middle works.
+- `WEEKNUM` with Mode 1 or 2 starts week 1 at the first week with at least four days in the year, as ISO 8601 does; `WEEKNUM(DATE(2026;1;1);1)` is 53. ODF 1.4 makes the week containing January 1 week 1. Every Mode other than 1 is a Monday start with the same four-day rule, so Modes 12 to 17 do not start on their own weekday, Modes 21 and 150 give the ISO week, and a Mode outside the ODF list is not an error. Mode can't be left out.
 - `DATE` gives an error for dates before 15 October 1582. ODF 1.4 requires support only from 1583 and makes earlier dates implementation-defined.
 
 ## Not verified

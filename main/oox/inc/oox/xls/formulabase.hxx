@@ -506,6 +506,7 @@ struct FunctionInfo
     bool                mbExternal;         /// True = external function in Calc.
     bool                mbMacroFunc;        /// True = macro sheet function or command.
     bool                mbVarParam;         /// True = use a tFuncVar token, also if min/max are equal.
+    bool                mbLastOpCode;       /// True = the ODF name is shared by two opcodes, use the last one.
 };
 
 typedef RefVector< FunctionInfo > FunctionInfoVector;
