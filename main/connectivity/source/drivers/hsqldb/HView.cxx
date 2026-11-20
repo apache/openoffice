@@ -175,8 +175,10 @@ namespace connectivity { namespace hsqldb
         try
         {
             ::rtl::OUStringBuffer aCommand;
-            aCommand.appendAscii( "SELECT VIEW_DEFINITION FROM INFORMATION_SCHEMA.SYSTEM_VIEWS " );
+            aCommand.appendAscii( "SELECT VIEW_DEFINITION FROM INFORMATION_SCHEMA.VIEWS " );
             HTools::appendTableFilterCrit( aCommand, m_CatalogName, m_SchemaName, m_Name, false );
+            // VIEWS also lists the INFORMATION_SCHEMA tables, so a view named TABLES or USERS matches two rows
+            aCommand.appendAscii( " AND TABLE_SCHEMA <> 'INFORMATION_SCHEMA'" );
             ::utl::SharedUNOComponent< XStatement > xStatement; xStatement.set( m_xConnection->createStatement(), UNO_QUERY_THROW );
             Reference< XResultSet > xResult( xStatement->executeQuery( aCommand.makeStringAndClear() ), UNO_QUERY_THROW );
             if ( !xResult->next() )

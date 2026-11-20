@@ -1,0 +1,11 @@
+--- misc/hsqldb/hsqldb-2.5.0/hsqldb/build/build.xml
++++ misc/build/hsqldb-2.5.0/hsqldb/build/build.xml
+@@ -595,7 +595,7 @@
+ 
+     <target name="hsqldb" depends="classes, -util, -prep-license-files"
+             description="Build the default hsqldb.jar">
+-      <jar jarfile="lib/hsqldb.jar" compress="true">
++      <jar jarfile="lib/hsqldb.jar" compress="true" duplicate="preserve">
+         <metainf dir="doc" includes="*_lic.txt"/>
+         <service type="java.sql.Driver" provider="org.hsqldb.jdbc.JDBCDriver"/>
+         <manifest>
