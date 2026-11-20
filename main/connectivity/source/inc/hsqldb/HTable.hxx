@@ -115,6 +115,7 @@ namespace connectivity
 			// some methods to alter table structures
 			void alterColumnType(sal_Int32 nNewType,const ::rtl::OUString& _rColName,const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& _xDescriptor);
 			void alterDefaultValue(const ::rtl::OUString& _sNewDefault,const ::rtl::OUString& _rColName);
+			void restartIdentityAfterMax(const ::rtl::OUString& _rColName);
 			void dropDefaultValue(const ::rtl::OUString& _sNewDefault);
 
 		};
