@@ -257,6 +257,10 @@ namespace connectivity
                     ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "CALL IDENTITY()" ) ) );
                 aProperties.put( "IgnoreDriverPrivileges", true );
 
+                // the Java JDBC bridge has no OMetaConnection to tunnel to (see below), so it reports this URL;
+                // without it dbaccess never finds our catalog and AutoValue columns get no IDENTITY
+                aProperties.put( "ReportedURL", url );
+
                 // don't want to expose HSQLDB's schema capabilities which exist since 1.8.0RC10
                 aProperties.put( "default_schema",
                     ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "true" ) ) );

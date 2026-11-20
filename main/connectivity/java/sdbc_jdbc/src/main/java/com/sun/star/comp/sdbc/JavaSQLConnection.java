@@ -361,6 +361,8 @@ public class JavaSQLConnection extends ComponentBase
         NamedValue[] systemProperties = new NamedValue[0];
 
         try {
+            // a wrapping driver (embedded HSQLDB) wants its own URL in getMetaData().getURL()
+            this.url = Tools.getOrDefault(info, "ReportedURL", url);
             driverClass = Tools.getOrDefault(info, "JavaDriverClass", driverClass);
             driverClassPath = Tools.getOrDefault(info, "JavaDriverClassPath", driverClassPath);
             if (driverClassPath.isEmpty()) {
@@ -519,7 +521,8 @@ public class JavaSQLConnection extends ComponentBase
                     !propertyValue.Name.equals("Authentication") &&
                     !propertyValue.Name.equals("PreferDosLikeLineEnds") &&
                     !propertyValue.Name.equals("PrimaryKeySupport") &&
-                    !propertyValue.Name.equals("RespectDriverResultSetType")) {
+                    !propertyValue.Name.equals("RespectDriverResultSetType") &&
+                    !propertyValue.Name.equals("ReportedURL")) {
                 properties.setProperty(propertyValue.Name, AnyConverter.toString(propertyValue.Value));
             }
         }
