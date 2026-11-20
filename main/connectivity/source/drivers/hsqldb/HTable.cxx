@@ -59,6 +59,45 @@ using namespace ::com::sun::star::sdbc;
 using namespace ::com::sun::star::container;
 using namespace ::com::sun::star::lang;
 
+namespace
+{
+    class OHSQLIndexes : public OIndexesHelper
+    {
+        OHSQLTable* m_pTable;
+    protected:
+        virtual void dropObject(sal_Int32 _nPos,const ::rtl::OUString _sElementName);
+    public:
+        OHSQLIndexes(OHSQLTable* _pTable,::osl::Mutex& _rMutex,const TStringVector& _rVector)
+            : OIndexesHelper(_pTable,_rMutex,_rVector)
+            , m_pTable(_pTable)
+        {
+        }
+    };
+
+    // HSQLDB 2.x rejects the generic DROP INDEX ... ON <table>: index names belong to the schema
+    void OHSQLIndexes::dropObject(sal_Int32 /*_nPos*/,const ::rtl::OUString _sElementName)
+    {
+        if ( m_pTable->isNew() )
+            return;
+
+        ::rtl::OUString aSchema,aName,sTemp;
+        sal_Int32 nLen = _sElementName.indexOf('.');
+        if ( nLen != -1 )
+            aSchema = _sElementName.copy(0,nLen);
+        aName = _sElementName.copy(nLen+1);
+
+        ::rtl::OUString aSql( RTL_CONSTASCII_USTRINGPARAM( "DROP INDEX " ) );
+        aSql += ::dbtools::composeTableName( m_pTable->getMetaData(), sTemp, aSchema, aName, sal_True, ::dbtools::eInIndexDefinitions );
+
+        Reference< XStatement > xStmt = m_pTable->getConnection()->createStatement();
+        if ( xStmt.is() )
+        {
+            xStmt->execute(aSql);
+            ::comphelper::disposeComponent(xStmt);
+        }
+    }
+}
+
 OHSQLTable::OHSQLTable(	sdbcx::OCollection* _pTables,
 						   const Reference<	XConnection >& _xConnection)
 	:OTableHelper(_pTables,_xConnection,sal_True)
@@ -128,7 +167,7 @@ sdbcx::OCollection* OHSQLTable::createKeys(const TStringVector& _rNames)
 // -----------------------------------------------------------------------------
 sdbcx::OCollection* OHSQLTable::createIndexes(const TStringVector& _rNames)
 {
-	return new OIndexesHelper(this,m_aMutex,_rNames);
+	return new OHSQLIndexes(this,m_aMutex,_rNames);
 }
 //--------------------------------------------------------------------------
 Sequence< sal_Int8 > OHSQLTable::getUnoTunnelImplementationId()
@@ -225,7 +264,6 @@ void SAL_CALL OHSQLTable::alterColumnByName( const ::rtl::OUString& colName, con
             ||  sOldTypeName != sNewTypeName
 			||	nOldPrec != nNewPrec
 			||	nOldScale != nNewScale
-			||	nNewNullable != nOldNullable
 			||	bOldAutoIncrement != bAutoIncrement )
 		{
 			// special handling because they change the type names to distinguish
@@ -235,6 +273,20 @@ void SAL_CALL OHSQLTable::alterColumnByName( const ::rtl::OUString& colName, con
 				/// TODO: insert special handling for auto increment "IDENTITY" and primary key
 			}
 			alterColumnType(nNewType,sNewColumnName,descriptor);
+			if ( bAutoIncrement && !bOldAutoIncrement )
+				restartIdentityAfterMax(sNewColumnName);
+		}
+
+		// HSQLDB 2.x only changes nullability with SET [NOT] NULL, not in a column definition
+		if ( nNewNullable != nOldNullable )
+		{
+			::rtl::OUString sSql = getAlterTableColumnPart();
+			sSql += ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(" ALTER COLUMN "));
+			sSql += ::dbtools::quoteName(getMetaData()->getIdentifierQuoteString(),sNewColumnName);
+			sSql += ( nNewNullable == ColumnValue::NO_NULLS )
+				? ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(" SET NOT NULL"))
+				: ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(" SET NULL"));
+			executeStatement(sSql);
 		}
 
 		// third: check the default values
@@ -242,14 +294,13 @@ void SAL_CALL OHSQLTable::alterColumnByName( const ::rtl::OUString& colName, con
 		xProp->getPropertyValue(rProp.getNameByIndex(PROPERTY_ID_DEFAULTVALUE))		>>= sOldDefault;
 		descriptor->getPropertyValue(rProp.getNameByIndex(PROPERTY_ID_DEFAULTVALUE)) >>= sNewDefault;
 
-		if(sOldDefault.getLength())
+		if ( sOldDefault != sNewDefault )
 		{
-			dropDefaultValue(colName);
-			if(sNewDefault.getLength() && sOldDefault != sNewDefault)
+			if ( sNewDefault.getLength() )
 				alterDefaultValue(sNewDefault,sNewColumnName);
+			else
+				dropDefaultValue(sNewColumnName);
 		}
-		else if(!sOldDefault.getLength() && sNewDefault.getLength())
-			alterDefaultValue(sNewDefault,sNewColumnName);
 
 		m_pColumns->refresh();
 	}
@@ -290,8 +341,47 @@ void OHSQLTable::alterColumnType(sal_Int32 nNewType,const ::rtl::OUString& _rCol
 	Reference<XPropertySet> xProp = pColumn;
 	::comphelper::copyProperties(_xDescriptor,xProp);
 	xProp->setPropertyValue(OMetaConnection::getPropMap().getNameByIndex(PROPERTY_ID_TYPE),makeAny(nNewType));
+	// 2.x rejects DEFAULT and NOT NULL here and keeps the existing ones; IDENTITY must stay or it is dropped
+	xProp->setPropertyValue(OMetaConnection::getPropMap().getNameByIndex(PROPERTY_ID_ISNULLABLE),makeAny(ColumnValue::NULLABLE));
+	xProp->setPropertyValue(OMetaConnection::getPropMap().getNameByIndex(PROPERTY_ID_DEFAULTVALUE),makeAny(::rtl::OUString()));
 
 	sSql += ::dbtools::createStandardColumnPart(xProp,getConnection());
+	executeStatement(sSql);
+}
+// -----------------------------------------------------------------------------
+// 2.x starts a new IDENTITY at 0, which collides with the rows already in the table
+void OHSQLTable::restartIdentityAfterMax(const ::rtl::OUString& _rColName)
+{
+	const ::rtl::OUString sQuote = getMetaData()->getIdentifierQuoteString(  );
+	const ::rtl::OUString sColumn = ::dbtools::quoteName(sQuote,_rColName);
+
+	::rtl::OUString sQuery( RTL_CONSTASCII_USTRINGPARAM( "SELECT MAX(" ) );
+	sQuery += sColumn;
+	sQuery += ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(") FROM "));
+	sQuery += ::dbtools::composeTableName( getMetaData(), m_CatalogName, m_SchemaName, m_Name, sal_True, ::dbtools::eInDataManipulation );
+
+	sal_Int64 nMax = 0;
+	bool bHaveRows = false;
+	Reference< XStatement > xStmt = getConnection()->createStatement(  );
+	if ( xStmt.is() )
+	{
+		Reference< XResultSet > xRes = xStmt->executeQuery(sQuery);
+		Reference< XRow > xRow(xRes,UNO_QUERY);
+		if ( xRes.is() && xRow.is() && xRes->next() )
+		{
+			nMax = xRow->getLong(1);
+			bHaveRows = !xRow->wasNull();
+		}
+		::comphelper::disposeComponent(xStmt);
+	}
+	if ( !bHaveRows )
+		return;
+
+	::rtl::OUString sSql = getAlterTableColumnPart();
+	sSql += ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(" ALTER COLUMN "));
+	sSql += sColumn;
+	sSql += ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(" RESTART WITH "));
+	sSql += ::rtl::OUString::valueOf( nMax + 1 );
 	executeStatement(sSql);
 }
 // -----------------------------------------------------------------------------
