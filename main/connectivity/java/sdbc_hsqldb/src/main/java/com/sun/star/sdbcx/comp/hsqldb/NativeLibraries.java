@@ -30,10 +30,16 @@ import java.net.URLClassLoader;
 final class NativeLibraries {
     public static void load() {
         if (System.getProperty( "os.name" ).startsWith("Windows")) {
-            loadLibrary("msvcr71");
+            // No CRT is preloaded: it is resolved through the side-by-side
+            // assembly named in each library's manifest.  The msvcr71 that used
+            // to be listed here is the Visual Studio 2003 runtime, which has not
+            // been the one AOO builds against for a very long time.
             loadLibrary("uwinapi");
             loadLibrary("sal3");
-            loadLibrary("dbtoolsmi");
+            // "dbtoolsmi" until now, which appends the DLLPOSTFIX of a much older
+            // Windows platform set.  DLLPOSTFIX is empty in every wntmsci*.mk, so
+            // the library has been dbtools.dll for as long as those have existed.
+            loadLibrary("dbtools");
         }
         loadLibrary("hsqldb");
     }
