@@ -44,7 +44,7 @@ namespace abp
 		sal_Bool		m_bSuccessfullyExecutedDialog;
 
 	public:
-		AdminDialogInvokationPage( OAddessBookSourcePilot* _pParent );
+		AdminDialogInvokationPage( OAddressBookSourcePilot* _pParent );
 
 	protected:
 		// TabDialog overridables

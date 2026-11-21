@@ -42,7 +42,7 @@ namespace abp
 		ListBox			m_aTableList;
 
 	public:
-		TableSelectionPage( OAddessBookSourcePilot* _pParent );
+		TableSelectionPage( OAddressBookSourcePilot* _pParent );
 
 	protected:
 		// OWizardPage overridables

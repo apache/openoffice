@@ -56,11 +56,11 @@ namespace abp
 	using namespace ::com::sun::star::lang;
 
 	//=====================================================================
-	//= OAddessBookSourcePilot
+	//= OAddressBookSourcePilot
 	//=====================================================================
 	//---------------------------------------------------------------------
-	OAddessBookSourcePilot::OAddessBookSourcePilot(Window* _pParent, const Reference< XMultiServiceFactory >& _rxORB)
-		:OAddessBookSourcePilot_Base( _pParent, ModuleRes( RID_DLG_ADDRESSBOOKSOURCEPILOT ),
+	OAddressBookSourcePilot::OAddressBookSourcePilot(Window* _pParent, const Reference< XMultiServiceFactory >& _rxORB)
+		:OAddressBookSourcePilot_Base( _pParent, ModuleRes( RID_DLG_ADDRESSBOOKSOURCEPILOT ),
 			WZB_HELP | WZB_FINISH | WZB_CANCEL | WZB_NEXT | WZB_PREVIOUS )
 		,m_xORB(_rxORB)
 		,m_aNewDataSource(_rxORB)
@@ -105,7 +105,7 @@ namespace abp
 		m_pFinish->SetHelpId(HID_ABSPILOT_FINISH);
 		m_pHelp->SetUniqueId(UID_ABSPILOT_HELP);
 
-		m_pCancel->SetClickHdl( LINK( this, OAddessBookSourcePilot, OnCancelClicked) );
+		m_pCancel->SetClickHdl( LINK( this, OAddressBookSourcePilot, OnCancelClicked) );
 
 		// some initial settings
 #ifdef MACOSX
@@ -131,7 +131,7 @@ namespace abp
 	}
 
 	//---------------------------------------------------------------------
-	String OAddessBookSourcePilot::getStateDisplayName( WizardState _nState ) const
+	String OAddressBookSourcePilot::getStateDisplayName( WizardState _nState ) const
 	{
 		sal_uInt16 nResId = 0;
 		switch ( _nState )
@@ -142,7 +142,7 @@ namespace abp
 			case STATE_MANUAL_FIELD_MAPPING: nResId = STR_MANUAL_FIELD_MAPPING; break;
 			case STATE_FINAL_CONFIRM:        nResId = STR_FINAL_CONFIRM; break;
 		}
-		DBG_ASSERT( nResId, "OAddessBookSourcePilot::getStateDisplayName: don't know this state!" );
+		DBG_ASSERT( nResId, "OAddressBookSourcePilot::getStateDisplayName: don't know this state!" );
 
 		String sDisplayName;
 		if ( nResId )
@@ -155,7 +155,7 @@ namespace abp
 	}
 
 	//---------------------------------------------------------------------
-	void OAddessBookSourcePilot::implCommitAll()
+	void OAddressBookSourcePilot::implCommitAll()
 	{
 		// in real, the data source already exists in the data source context
 		// Thus, if the user changed the name, we have to rename the data source
@@ -177,14 +177,14 @@ namespace abp
 	}
 
 	//---------------------------------------------------------------------
-	void OAddessBookSourcePilot::implCleanup()
+	void OAddressBookSourcePilot::implCleanup()
 	{
 		if ( m_aNewDataSource.isValid() )
 			m_aNewDataSource.remove();
 	}
 
 	//---------------------------------------------------------------------
-	IMPL_LINK( OAddessBookSourcePilot, OnCancelClicked, void*, /*NOTINTERESTEDIN*/ )
+	IMPL_LINK( OAddressBookSourcePilot, OnCancelClicked, void*, /*NOTINTERESTEDIN*/ )
 	{
 		// do cleanups
 		implCleanup();
@@ -198,17 +198,17 @@ namespace abp
 	}
 
 	//---------------------------------------------------------------------
-	sal_Bool OAddessBookSourcePilot::Close()
+	sal_Bool OAddressBookSourcePilot::Close()
 	{
 		implCleanup();
 
-		return OAddessBookSourcePilot_Base::Close();
+		return OAddressBookSourcePilot_Base::Close();
 	}
 
 	//---------------------------------------------------------------------
-	sal_Bool OAddessBookSourcePilot::onFinish()
+	sal_Bool OAddressBookSourcePilot::onFinish()
 	{
-		if ( !OAddessBookSourcePilot_Base::onFinish() )
+		if ( !OAddressBookSourcePilot_Base::onFinish() )
 			return sal_False;
 
 		implCommitAll();
@@ -219,7 +219,7 @@ namespace abp
 	}
 
 	//---------------------------------------------------------------------
-	void OAddessBookSourcePilot::enterState( WizardState _nState )
+	void OAddressBookSourcePilot::enterState( WizardState _nState )
 	{
 		switch ( _nState )
 		{
@@ -237,13 +237,13 @@ namespace abp
 				break;
 		}
 
-		OAddessBookSourcePilot_Base::enterState(_nState);
+		OAddressBookSourcePilot_Base::enterState(_nState);
 	}
 
 	//---------------------------------------------------------------------
-	sal_Bool OAddessBookSourcePilot::prepareLeaveCurrentState( CommitPageReason _eReason )
+	sal_Bool OAddressBookSourcePilot::prepareLeaveCurrentState( CommitPageReason _eReason )
 	{
-		if ( !OAddessBookSourcePilot_Base::prepareLeaveCurrentState( _eReason ) )
+		if ( !OAddressBookSourcePilot_Base::prepareLeaveCurrentState( _eReason ) )
 			return sal_False;
 
 		if ( _eReason == eTravelBackward )
@@ -295,7 +295,7 @@ namespace abp
 	}
 
 	//---------------------------------------------------------------------
-	void OAddessBookSourcePilot::implDefaultTableName()
+	void OAddressBookSourcePilot::implDefaultTableName()
 	{
 		const StringBag& rTableNames = getDataSource().getTableNames();
 		if ( rTableNames.end() != rTableNames.find( getSettings().sSelectedTable ) )
@@ -311,7 +311,7 @@ namespace abp
 			case AST_EVOLUTION_GROUPWISE:
 			case AST_EVOLUTION_LDAP     : pGuess = "Personal"; break;
 			default:
-				DBG_ERROR( "OAddessBookSourcePilot::implDefaultTableName: unhandled case!" );
+				DBG_ERROR( "OAddressBookSourcePilot::implDefaultTableName: unhandled case!" );
 				return;
 		}
 		const ::rtl::OUString sGuess = ::rtl::OUString::createFromAscii( pGuess );
@@ -320,15 +320,15 @@ namespace abp
 	}
 
 	//---------------------------------------------------------------------
-	void OAddessBookSourcePilot::implDoAutoFieldMapping()
+	void OAddressBookSourcePilot::implDoAutoFieldMapping()
 	{
-		DBG_ASSERT( !needManualFieldMapping( ), "OAddessBookSourcePilot::implDoAutoFieldMapping: invalid call!" );
+		DBG_ASSERT( !needManualFieldMapping( ), "OAddressBookSourcePilot::implDoAutoFieldMapping: invalid call!" );
 
 		fieldmapping::defaultMapping( getORB(), m_aSettings.aFieldMapping );
 	}
 
 	//---------------------------------------------------------------------
-	void OAddessBookSourcePilot::implCreateDataSource()
+	void OAddressBookSourcePilot::implCreateDataSource()
 	{
 		if (m_aNewDataSource.isValid())
 		{	// we already have a data source object
@@ -386,16 +386,16 @@ namespace abp
 				break;
 
 			case AST_INVALID:
-				DBG_ERROR( "OAddessBookSourcePilot::implCreateDataSource: illegal data source type!" );
+				DBG_ERROR( "OAddressBookSourcePilot::implCreateDataSource: illegal data source type!" );
 				break;
 		}
 		m_eNewDataSourceType = m_aSettings.eType;
 	}
 
 	//---------------------------------------------------------------------
-	sal_Bool OAddessBookSourcePilot::connectToDataSource( sal_Bool _bForceReConnect )
+	sal_Bool OAddressBookSourcePilot::connectToDataSource( sal_Bool _bForceReConnect )
 	{
-		DBG_ASSERT( m_aNewDataSource.isValid(), "OAddessBookSourcePilot::implConnect: invalid current data source!" );
+		DBG_ASSERT( m_aNewDataSource.isValid(), "OAddressBookSourcePilot::implConnect: invalid current data source!" );
 
 		WaitObject aWaitCursor( this );
 		if ( _bForceReConnect && m_aNewDataSource.isConnected( ) )
@@ -405,7 +405,7 @@ namespace abp
 	}
 
 	//---------------------------------------------------------------------
-	OWizardPage* OAddessBookSourcePilot::createPage(WizardState _nState)
+	OWizardPage* OAddressBookSourcePilot::createPage(WizardState _nState)
 	{
 		switch (_nState)
 		{
@@ -425,13 +425,13 @@ namespace abp
 				return new FinalPage( this );
 
 			default:
-				DBG_ERROR("OAddessBookSourcePilot::createPage: invalid state!");
+				DBG_ERROR("OAddressBookSourcePilot::createPage: invalid state!");
 				return NULL;
 		}
 	}
 
 	//---------------------------------------------------------------------
-	void OAddessBookSourcePilot::impl_updateRoadmap( AddressSourceType _eType )
+	void OAddressBookSourcePilot::impl_updateRoadmap( AddressSourceType _eType )
 	{
 		bool bSettingsPage = needAdminInvokationPage( _eType );
 		bool bTablesPage   = needTableSelection( _eType );
@@ -460,7 +460,7 @@ namespace abp
 	}
 
 	//---------------------------------------------------------------------
-	void OAddessBookSourcePilot::typeSelectionChanged( AddressSourceType _eType )
+	void OAddressBookSourcePilot::typeSelectionChanged( AddressSourceType _eType )
 	{
 		PathId nCurrentPathID( PATH_COMPLETE );
 		bool bSettingsPage = needAdminInvokationPage( _eType );

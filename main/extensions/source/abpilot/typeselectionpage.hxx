@@ -67,7 +67,7 @@ namespace abp
 		::std::vector< ButtonItem > m_aAllTypes;
 
 	public:
-		TypeSelectionPage( OAddessBookSourcePilot* _pParent );
+		TypeSelectionPage( OAddressBookSourcePilot* _pParent );
         ~TypeSelectionPage();
 
         // retrieves the currently selected type

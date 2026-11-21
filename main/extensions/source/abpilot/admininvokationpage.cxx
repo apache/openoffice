@@ -35,7 +35,7 @@ namespace abp
 	//=====================================================================
 	//= AdminDialogInvokationPage
 	//=====================================================================
-	AdminDialogInvokationPage::AdminDialogInvokationPage( OAddessBookSourcePilot* _pParent )
+	AdminDialogInvokationPage::AdminDialogInvokationPage( OAddressBookSourcePilot* _pParent )
 		:AddressBookSourcePage(_pParent, ModuleRes(RID_PAGE_ADMININVOKATION))
 		,m_aExplanation			(this, ModuleRes(FT_ADMINEXPLANATION))
 		,m_aInvokeAdminDialog	(this, ModuleRes(PB_INVOKE_ADMIN_DIALOG))

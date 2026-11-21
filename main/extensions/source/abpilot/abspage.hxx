@@ -37,7 +37,7 @@ namespace abp
 {
 //.........................................................................
 
-	class OAddessBookSourcePilot;
+	class OAddressBookSourcePilot;
 	struct AddressSettings;
 
 	//=====================================================================
@@ -48,12 +48,12 @@ namespace abp
 	class AddressBookSourcePage : public AddressBookSourcePage_Base
 	{
 	protected:
-		AddressBookSourcePage( OAddessBookSourcePilot* _pParent, const ResId& _rId );
+		AddressBookSourcePage( OAddressBookSourcePilot* _pParent, const ResId& _rId );
 
 	protected:
 		// helper
-		OAddessBookSourcePilot*	getDialog();
-		const OAddessBookSourcePilot*	getDialog() const;
+		OAddressBookSourcePilot*	getDialog();
+		const OAddressBookSourcePilot*	getDialog() const;
 		::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >
 								getORB();
 		AddressSettings&		getSettings();
