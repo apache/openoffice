@@ -1791,27 +1791,10 @@ AC_SUBST(THES_SYSTEM_DIR)
 if test $_os = "WINNT"; then
    AC_MSG_CHECKING([Windows build environment sanity])
    dnl ===================================================================
-   dnl Sanity check! Native Windows programs cannot use cygwin symlinks!
-   dnl ===================================================================
-   dnl As long as awk instead of $AWK is used somewhere in the sources,
-   dnl check for $AWK and awk. $AWK is pointing to gawk in cygwin.
-      dnl  Quoted: either side can be a path with a space in it, and an
-      dnl  unquoted one splits into "test: too many arguments" here.
-      if test -L "$AWK" -o -L "`which awk`" ; then
-         AC_MSG_ERROR([$AWK / awk is a cygwin symlink!
-Native Windows programs cannot use cygwin symlinks. Remove the symbolic
-link, and copy the program to the name of the link.])
-      fi
-      if test -L `which tar` ; then
-         AC_MSG_ERROR([tar is a cygwin symlink!
-Native Windows programs cannot use cygwin symlinks. Remove the symbolic
-link, and copy the program to the name of the link.])
-      fi
-      if test -L `which gunzip` ; then
-         AC_MSG_ERROR([gunzip is a cygwin symlink!
-Native Windows programs cannot use cygwin symlinks. Remove the symbolic
-link, and copy the program to the name of the link.])
-      fi
+   dnl No check for Cygwin symlinks on awk, tar or gunzip: it guarded a
+   dnl dmake built with MSVC that spawned them directly.  bootstrap.1 builds
+   dnl dmake with Cygwin gcc, so every recipe runs them through Cygwin,
+   dnl which follows symlinks (Cygwin's gawk package installs awk as one).
    dnl ===================================================================
    dnl Another sanity check! More a band-aid. winenv.* adds guw.exe to
    dnl CC and CXX but the configure checks here assume that guw.exe
