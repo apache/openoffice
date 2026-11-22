@@ -358,8 +358,7 @@ protected:
 //=========================================================================
 //-------------------------------------------------------------------------
 OOdbcManagement::OOdbcManagement( const Link& _rAsyncFinishCallback )
-    :m_pProcessWait( NULL )
-    ,m_aAsyncFinishCallback( _rAsyncFinishCallback )
+    :m_aAsyncFinishCallback( _rAsyncFinishCallback )
 {
 }
 
