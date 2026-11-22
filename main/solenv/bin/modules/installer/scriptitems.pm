@@ -568,7 +568,17 @@ sub add_bundled_extension_blobs
     If that variable is not defined then the content of main/extensions.lst defines
     the default set.
 
-    Preregistered extensions are placed in subdirectories of gid_Brand_Dir_Share_Prereg_Bundled.
+    The extensions are unpacked into subdirectories of gid_Brand_Dir_Share_Extensions,
+    i.e. $BUNDLED_EXTENSIONS, which is the folder the office's "bundled" repository
+    reads.  On first start the office finds them there and registers them for the user.
+
+    They used to go into gid_Brand_Dir_Share_Prereg_Bundled instead.  Setup's
+    "unopkg sync" does register an extension found there, and first start copies that
+    registration into the user profile, but the "bundled" repository lists only what is
+    in $BUNDLED_EXTENSIONS.  An extension installed that way therefore had its services
+    and configuration registered while the extension itself was unknown: it did not show
+    up in the Extension Manager, and XPackageInformationProvider::getPackageLocation()
+    returned nothing for it.
 
 =cut
 sub add_bundled_prereg_extensions
@@ -607,8 +617,8 @@ sub add_bundled_prereg_extensions
         $installer::logger::Info->printf("    %s\n", $filename);
     }
 
-    # Find the prereg directory entry so that we can create a new sub-directory.
-    my $parentdir_gid = "gid_Brand_Dir_Share_Prereg_Bundled";
+    # Find the bundled extensions directory entry so that we can create a new sub-directory.
+    my $parentdir_gid = "gid_Brand_Dir_Share_Extensions";
     my $parentdir = undef;
     foreach my $dir (@{$dirsref})
     {
