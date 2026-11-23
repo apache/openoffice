@@ -469,9 +469,6 @@ AC_ARG_WITH(system-python,
 AC_ARG_WITH(system-icu,
 [  --with-system-icu       Use icu already on system
 ],,)
-AC_ARG_WITH(system-poppler,
-[  --with-system-poppler   Use poppler already on system
-],,)
 AC_ARG_WITH(system-lucene,
 [  --with-system-lucene    Use lucene already on system
 ],,)
@@ -6912,33 +6909,31 @@ fi
 AC_SUBST(ENABLE_OPENGL)
 
 
+dnl ===================================================================
+dnl PDF Import extension.
+dnl
+dnl The backend is Apache PDFBox, which runs as a helper process; see
+dnl sdext/source/pdfimport/PROTOCOL.md.  It needs a JRE at run time and a JDK
+dnl to build the helper, so this follows Java rather than a native library.
+dnl
+dnl The poppler backend it replaces is GPLv2, which may not be linked into an
+dnl Apache-licensed soffice.bin.  That is why this extension used to demand
+dnl --with-system-poppler and switch itself off without it, so no release build
+dnl ever shipped PDF import.  Nothing here is licence-encumbered, so it is on
+dnl by default.
+dnl ===================================================================
 AC_MSG_CHECKING([whether to build the PDF Import extension])
-if test -n "$enable_pdfimport" -a "$enable_pdfimport" != "no"; then
-  AC_MSG_RESULT([yes])
-  ENABLE_PDFIMPORT=YES
-
-  dnl ===================================================================
-  dnl Check for system poppler
-  dnl ===================================================================
-  AC_MSG_CHECKING([whether to use system pdf backend])
-  if test -n "$with_system_poppler" -o -n "$with_system_libs" && \
-       test "$with_system_poppler" != "no"; then
-      AC_MSG_RESULT([external])
-      SYSTEM_POPPLER=YES
-      PKG_CHECK_MODULES( POPPLER, poppler >= 0.8.0 )
-  else
-      AC_MSG_RESULT([no])
-      SYSTEM_POPPLER=NO
-      ENABLE_PDFIMPORT=NO
-  fi
-else
+if test "$enable_pdfimport" = "no"; then
    AC_MSG_RESULT([no])
    ENABLE_PDFIMPORT=NO
+elif test "$WITH_JAVA" = "no"; then
+   AC_MSG_RESULT([no (requires Java)])
+   ENABLE_PDFIMPORT=NO
+else
+   AC_MSG_RESULT([yes])
+   ENABLE_PDFIMPORT=YES
 fi
 AC_SUBST(ENABLE_PDFIMPORT)
-AC_SUBST(SYSTEM_POPPLER)
-AC_SUBST(POPPLER_CFLAGS)
-AC_SUBST(POPPLER_LIBS)
 
 AC_MSG_CHECKING([whether to build the Wiki Publisher extension])
 if test -n "$enable_wiki_publisher" -a "$enable_wiki_publisher" != "no" && test "$WITH_JAVA" != "no"; then

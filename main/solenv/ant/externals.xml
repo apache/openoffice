@@ -49,6 +49,34 @@
         </sequential>
     </macrodef>
 
+    <!-- Apache PDFBox: the PDF Import extension's parsing backend, run as a
+         helper process.  Always internal, because these are official ASF
+         release jars fetched by external_deps.lst and there is no
+         system-pdfbox configure switch, so system-test can never match. -->
+    <define-external
+        name="pdfbox"
+        system-test="NO"
+        system-path=""
+        internal-filename="pdfbox-3.0.8.jar"/>
+
+    <define-external
+        name="pdfbox-io"
+        system-test="NO"
+        system-path=""
+        internal-filename="pdfbox-io-3.0.8.jar"/>
+
+    <define-external
+        name="fontbox"
+        system-test="NO"
+        system-path=""
+        internal-filename="fontbox-3.0.8.jar"/>
+
+    <define-external
+        name="commons-logging"
+        system-test="NO"
+        system-path=""
+        internal-filename="commons-logging-1.4.0.jar"/>
+
     <define-external
         name="hsqldb"
         system-test="${SYSTEM_HSQLDB}"

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--***********************************************************
+ *
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ *
+ ***********************************************************-->
+
+<!-- The PDF Import extension's parsing backend.
+
+     A plain program, not a UNO component: it is spawned as its own process and
+     speaks the protocol in ../PROTOCOL.md over stdout, so it links no UNO and
+     needs none of the office jars on its classpath.  Keeping it out of process
+     is what lets an Apache-licensed office use any engine, and what confines a
+     fault in it to one document.
+
+     The four PDFBox jars are placed from here rather than from makefile.mk
+     because they live under absolute paths: $(OUTDIR) and $(TARFILE_LOCATION)
+     both begin "C:", and dmake reads the colon in a target or prerequisite as
+     its rule separator.  Ant has no such trouble. -->
+
+<project name="pdfimport-pdfbox" default="main" basedir=".">
+
+    <property file="../../../../ant.properties"/>
+    <import file="${SRC_ROOT}/solenv/ant/aoo-ant.xml"/>
+
+    <!-- external_deps.lst stores every download under its checksum, as
+         "<md5>-<name>", the same convention TARFILE_MD5 follows in
+         solenv/inc/tg_ext.mk. -->
+    <property name="pdfbox.md5" value="92ed0441337f2ed1f43eeaa901bd7814"/>
+    <property name="pdfbox-io.md5" value="f45a2386cf4178b5955dda2807139745"/>
+    <property name="fontbox.md5" value="379e6faf6ea614ad3318eda879e4f423"/>
+    <property name="commons-logging.md5" value="954e27d33e55e587a4694d5952a0c5c6"/>
+
+    <target name="init-project" depends="place-externals">
+        <!-- Started as `java -jar`, so the four have to be reachable from this
+             jar's own Class-Path.  They are packed beside it in the extension,
+             so plain filenames resolve. -->
+        <property name="jar.classpath"
+                  value="${external.pdfbox.jarclasspath} ${external.pdfbox-io.jarclasspath} ${external.fontbox.jarclasspath} ${external.commons-logging.jarclasspath}"/>
+        <property name="jar.manifest" location="manifest.mf"/>
+
+        <path id="main.classpath">
+            <pathelement location="${external.pdfbox.path}"/>
+            <pathelement location="${external.pdfbox-io.path}"/>
+            <pathelement location="${external.fontbox.path}"/>
+            <pathelement location="${external.commons-logging.path}"/>
+        </path>
+    </target>
+
+    <!-- Put the downloads where externals.xml says they are, so the compile
+         classpath above resolves.  Nothing else owns these: unlike
+         apache-commons, which fetches source and builds it, they are official
+         ASF release artifacts with nothing to build. -->
+    <target name="place-externals">
+        <macrodef name="place-external">
+            <attribute name="name"/>
+            <attribute name="file"/>
+            <sequential>
+                <copy file="${TARFILE_LOCATION}/${@{name}.md5}-@{file}"
+                      tofile="${OUTDIR}/bin/@{file}"
+                      preservelastmodified="true"/>
+            </sequential>
+        </macrodef>
+
+        <place-external name="pdfbox" file="pdfbox-3.0.8.jar"/>
+        <place-external name="pdfbox-io" file="pdfbox-io-3.0.8.jar"/>
+        <place-external name="fontbox" file="fontbox-3.0.8.jar"/>
+        <place-external name="commons-logging" file="commons-logging-1.4.0.jar"/>
+    </target>
+
+    <!-- The extension packaging in ../makefile.mk copies every CONVERTER_FILE
+         out of the module's own bin directory, so all five jars have to land
+         there as well. -->
+    <target name="deliver-to-module-bin" depends="jar">
+        <copy todir="${pdfi.bin.dir}" preservelastmodified="true" flatten="true">
+            <fileset file="${jar.dir}/${ant.project.name}.jar"/>
+            <fileset file="${OUTDIR}/bin/pdfbox-3.0.8.jar"/>
+            <fileset file="${OUTDIR}/bin/pdfbox-io-3.0.8.jar"/>
+            <fileset file="${OUTDIR}/bin/fontbox-3.0.8.jar"/>
+            <fileset file="${OUTDIR}/bin/commons-logging-1.4.0.jar"/>
+        </copy>
+    </target>
+
+    <target name="main" depends="deliver-to-module-bin"/>
+
+</project>

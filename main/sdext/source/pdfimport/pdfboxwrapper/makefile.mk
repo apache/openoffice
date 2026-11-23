@@ -19,42 +19,37 @@
 #
 #**************************************************************
 
-
-
 PRJ=..$/..$/..
 
 PRJNAME=sdext
-TARGET=xpdfimport
-TARGETTYPE=CUI
-ENABLE_EXCEPTIONS=TRUE
-EXTERNAL_WARNINGS_NOT_ERRORS := TRUE
+TARGET=pdfimport-pdfbox
 
 # --- Settings -----------------------------------------------------
 
-.INCLUDE: settings.mk
+.IF "$(ENABLE_PDFIMPORT)" == "NO" || "$(SOLAR_JAVA)" == ""
 
-.IF "$(SYSTEM_ZLIB)" == "YES"
-CFLAGS+=-DSYSTEM_ZLIB
-.ENDIF
-
-.IF "$(ENABLE_PDFIMPORT)" == "NO" || "$(SYSTEM_POPPLER)" != "YES"
 @all:
 	@echo "PDF Import extension disabled."
-.ENDIF
 
-CFLAGS += $(POPPLER_CFLAGS)
+.ELSE
 
-# --- Files --------------------------------------------------------
-UWINAPILIB:=
-APP1TARGET=$(TARGET)
-APP1LIBSALCPPRT=
-APP1OBJS= \
-    $(OBJ)$/wrapper_gpl.obj $(OBJ)/pdfioutdev_gpl.obj $(OBJ)/pnghelper.obj
+# ant.mk, not antsettings.mk: it pulls in settings.mk and target.mk itself and
+# is what defines the ANTBUILD target.  antsettings.mk only sets variables, and
+# is for the BUILD_ACTION/tg_ext.mk route that unpacks a source tarball first --
+# apache-commons does that; there is nothing to unpack here.
+.INCLUDE : ant.mk
 
-APP1STDLIBS+=$(ZLIB3RDLIB)
-
-APP1STDLIBS+=$(POPPLER_LIBS)
+# build.xml does the file placement, not dmake.  $(OUTDIR) and
+# $(TARFILE_LOCATION) are absolute and begin "C:", and dmake reads that colon as
+# its rule separator, so neither can appear as a target or a prerequisite -- it
+# fails with "Multiply defined recipe for target C".  Ant is unaffected.
+#
+# $(BIN) is relative, so it survives the trip through -D as a plain value and
+# resolves against the build file's basedir, which is this directory.
+ANT_FLAGS+=-Dpdfi.bin.dir=$(BIN)
 
 # --- Targets ------------------------------------------------------
 
-.INCLUDE :  target.mk
+ALLTAR : ANTBUILD
+
+.ENDIF # ENABLE_PDFIMPORT
