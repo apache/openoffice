@@ -39,6 +39,7 @@ $(eval $(call gb_Library_add_api,writerfilter,\
 
 $(eval $(call gb_Library_set_include,writerfilter,\
 	$$(INCLUDE) \
+	-I$(SRCDIR)/oox/inc \
 	-I$(SRCDIR)/writerfilter/inc \
 	-I$(WORKDIR)/CustomTarget/writerfilter/source \
 	-I$(WORKDIR)/CustomTarget/writerfilter/source/ooxml \

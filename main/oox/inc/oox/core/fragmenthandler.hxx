@@ -36,6 +36,8 @@ namespace com { namespace sun { namespace star {
 namespace oox {
 namespace core {
 
+class MceAlternateContext;
+
 // ============================================================================
 
 /** Base data of a fragment.
@@ -89,6 +91,33 @@ public:
     inline ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastContextHandler >
                         getFastContextHandler() { return static_cast< ContextHandler* >( this ); }
 
+/** Namespace URI for Markup Compatibility (mc:). */
+    static const ::rtl::OUString& getMarkupCompatNamespace();
+
+    /** Namespace stack: each element on the stack is a map from prefix
+    to namespace URI. The top of the stack represents the current
+    in-scope namespace declarations. */
+    std::vector< std::pair< ::rtl::OUString, ::rtl::OUString > > maNamespaceStack;
+
+    /** Resolves a namespace prefix to a URI using the full namespace stack
+        (ancestor declarations are overridden by more local declarations). */
+    ::rtl::OUString resolvePrefix(
+        const ::rtl::OUString& rPrefix ) const;
+
+    /** Pushes namespace declarations from an element's attributes onto
+        the namespace stack. Called when entering an element. */
+    void pushNamespaces(
+        const ::com::sun::star::uno::Reference<
+            ::com::sun::star::xml::sax::XFastAttributeList >& rAttribs );
+
+    /** Pops the top namespace declaration set from the stack. Called when
+        leaving an element. */
+    void popNamespaces();
+
+protected:
+    friend class MceAlternateContext;
+
+public:
     // com.sun.star.xml.sax.XFastDocumentHandler interface --------------------
 
     virtual void SAL_CALL startDocument();

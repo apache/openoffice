@@ -20,7 +20,6 @@
  *************************************************************/
 
 
-
 #include <iostream>
 #include <boost/shared_ptr.hpp>
 #ifdef DEBUG_CONTEXT_HANDLER
@@ -33,6 +32,9 @@
 #include "OOXMLFastContextHandler.hxx"
 #include "OOXMLFastTokens.hxx"
 #include "OOXMLFactory.hxx"
+
+#include <oox/core/mcealternatecontext.hxx>
+#include <oox/token/tokens.hxx>
 
 namespace writerfilter {
 namespace ooxml
@@ -99,9 +101,9 @@ OOXMLFastDocumentHandler::getContextHandler() const
 }
 
 uno::Reference< xml::sax::XFastContextHandler > SAL_CALL
- OOXMLFastDocumentHandler::createFastChildContext
+OOXMLFastDocumentHandler::createFastChildContext
 (::sal_Int32 Element,
- const uno::Reference< xml::sax::XFastAttributeList > & /*Attribs*/)
+ const uno::Reference< xml::sax::XFastAttributeList > & rAttribs)
 {
 
     if ( mpStream == 0 && mpDocument == 0 )
@@ -109,6 +111,22 @@ uno::Reference< xml::sax::XFastContextHandler > SAL_CALL
         // document handler has been created as unknown child - see <OOXMLFastDocumentHandler::createUnknownChildContext(..)>
         // --> do not provide a child context
         return NULL;
+    }
+
+    // Phase 1 MCE: intercept mc:AlternateContent and delegate to MceAlternateContext
+    // for Choice/Fallback selection.
+    if ( Element == oox::XML_AlternateContent )
+    {
+        OOXMLFastContextHandler::Pointer_t pCtxHandler = getContextHandler();
+        if ( pCtxHandler.get() )
+        {
+            uno::Reference< xml::sax::XFastContextHandler > xDelegate(
+                new OOXMLFastContextHandler( *pCtxHandler.get() ) );
+            oox::core::MceAlternateContext* pMceCtx = new oox::core::MceAlternateContext( xDelegate );
+            pMceCtx->pushNamespaces( rAttribs );
+            return uno::Reference< xml::sax::XFastContextHandler >(
+                pMceCtx );
+        }
     }
 
     return OOXMLFactory::getInstance()->createFastChildContextFromStart(getContextHandler().get(), Element);
@@ -151,3 +169,4 @@ void OOXMLFastDocumentHandler::setIsSubstream( bool bSubstream )
 }
 
 }}
+

@@ -73,6 +73,8 @@ $(eval $(call gb_Library_add_exception_objects,oox,\
 	oox/source/core/filterdetect \
 	oox/source/core/fragmenthandler \
 	oox/source/core/fragmenthandler2 \
+	oox/source/core/mcealternatecontext \
+	oox/source/core/mceprocessor \
 	oox/source/core/recordparser \
 	oox/source/core/relations \
 	oox/source/core/relationshandler \

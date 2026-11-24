@@ -24,6 +24,8 @@
 #include "oox/core/fragmenthandler.hxx"
 
 #include "oox/core/xmlfilterbase.hxx"
+#include "oox/core/mcealternatecontext.hxx"
+#include "oox/token/tokens.hxx"
 
 namespace oox {
 namespace core {
@@ -35,6 +37,46 @@ using namespace ::com::sun::star::uno;
 using namespace ::com::sun::star::xml::sax;
 
 using ::rtl::OUString;
+
+// ============================================================================
+
+const ::rtl::OUString& FragmentHandler::getMarkupCompatNamespace()
+{
+    static const ::rtl::OUString aNamespace =
+        ::rtl::OUString::createFromAscii(
+            "http://schemas.openxmlformats.org/markup-compatibility/2006" );
+    return aNamespace;
+}
+
+void FragmentHandler::pushNamespaces(
+    const ::com::sun::star::uno::Reference<
+        ::com::sun::star::xml::sax::XFastAttributeList >& rAttribs )
+{
+    std::vector< std::pair< ::rtl::OUString, ::rtl::OUString > > aMap;
+    MceProcessor::extractNamespaceDeclarations( rAttribs, aMap );
+    maNamespaceStack.push_back( aMap );
+}
+
+void FragmentHandler::popNamespaces()
+{
+    if ( !maNamespaceStack.empty() )
+        maNamespaceStack.pop_back();
+}
+
+::rtl::OUString FragmentHandler::resolvePrefix(
+    const ::rtl::OUString& rPrefix ) const
+{
+    // Search from top of stack (most local) to bottom (most global).
+    for ( auto it = maNamespaceStack.rbegin(); it != maNamespaceStack.rend(); ++it )
+    {
+        for ( const auto& rPair : *it )
+        {
+            if ( rPair.first == rPrefix )
+                return rPair.second;
+        }
+    }
+    return ::rtl::OUString(); // Empty = unresolved
+}
 
 // ============================================================================
 
@@ -78,8 +120,9 @@ void FragmentHandler::setDocumentLocator( const Reference< XLocator >& rxLocator
 
 // com.sun.star.xml.sax.XFastContextHandler interface -------------------------
 
-void FragmentHandler::startFastElement( sal_Int32, const Reference< XFastAttributeList >& )
+void FragmentHandler::startFastElement( sal_Int32 Element, const Reference< XFastAttributeList >& rAttribs )
 {
+    pushNamespaces( rAttribs );
 }
 
 void FragmentHandler::startUnknownElement( const OUString&, const OUString&, const Reference< XFastAttributeList >& )
@@ -88,14 +131,26 @@ void FragmentHandler::startUnknownElement( const OUString&, const OUString&, con
 
 void FragmentHandler::endFastElement( sal_Int32 )
 {
+    popNamespaces();
 }
 
 void FragmentHandler::endUnknownElement( const OUString&, const OUString& )
 {
 }
 
-Reference< XFastContextHandler > FragmentHandler::createFastChildContext( sal_Int32, const Reference< XFastAttributeList >& )
+Reference< XFastContextHandler > FragmentHandler::createFastChildContext( sal_Int32 Element, const Reference< XFastAttributeList >& rAttribs )
 {
+    // Phase 1 MCE: intercept mc:AlternateContent and delegate to MceAlternateContext
+    // for Choice/Fallback selection. All other elements continue to
+    // return 0 (unchanged behavior).
+    if ( Element == XML_AlternateContent )
+    {
+        MceAlternateContext* pMceCtx = new MceAlternateContext(
+            getFastContextHandler() );
+        return Reference< XFastContextHandler >(
+            static_cast< XFastContextHandler* >( pMceCtx ) );
+    }
+
     return 0;
 }
 
