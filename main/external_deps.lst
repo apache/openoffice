@@ -39,9 +39,9 @@ if (BUILD_DMAKE == YES)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (BUILD_EPM == YES)
-    MD5 = 95ebbf8e6fa2e3940d5409f210ae7ba0
-    name = epm-5.1.0.tar.gz
-    URL1 = https://github.com/jimjag/epm/archive/v5.1.0/$(name)
+    MD5 = 78f80e9289ca0dac65a2e8cbe0a78abd
+    name = epm-5.1.1.tar.gz
+    URL1 = https://github.com/jimjag/epm/archive/v5.1.1/$(name)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 
